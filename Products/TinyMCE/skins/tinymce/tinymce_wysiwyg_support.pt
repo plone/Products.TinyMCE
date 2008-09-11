@@ -1,0 +1,101 @@
+<!doctype html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">
+
+<html i18n:domain="plone">
+  
+<!-- wysiwyg default widget -->
+<div metal:define-macro="wysiwygEditorBox">
+  <script type="text/javascript" charset="iso-8859-1" tal:attributes="src string:${portal_url}/jscripts/tiny_mce/tiny_mce_src.js"> </script>
+  <script type="text/javascript" charset="iso-8859-1" tal:attributes="src string:${portal_url}/jscripts/tiny_mce/tiny_mce_init.js"> </script>
+
+  <tal:block define="fname fieldName|inputname|nothing;
+                     fformat python:here.getContentType(fname);">
+  <textarea cols="80"
+            rows="25"
+            tabindex=""
+            name="description"
+            tal:content="inputvalue"
+            tal:attributes="name inputname;
+                            id inputname;
+                            onfocus onfocus|nothing;
+                            onblur onblur|nothing;
+                            tabindex tabindex|nothing;
+                            rows rows|default;
+                            cols cols|default;
+                            class python:test('html' in fformat, 'mce_editable', '')"></textarea>
+  </tal:block>
+</div>
+
+<div metal:define-macro="textFormatSelector">
+
+ <tal:block tal:define="wysiwyg python: here.portal_membership.getAuthenticatedMember().getProperty('wysiwyg_editor')!='None'">
+
+  <tal:block condition="wysiwyg">
+        <input type="hidden" 
+               name="text_format" 
+               value="html" id="Hidden1"/>
+  </tal:block>
+
+  <tal:block condition="not: wysiwyg">
+    <div class="row">
+      <div class="label">
+         <span i18n:translate="label_format">Format</span>
+         <div id="format_help"
+              i18n:translate="help_format" 
+              class="help" 
+              style="visibility:hidden">
+           Select which format you want to type the contents of this
+           document in. If you are unsure of which format to use, just
+           select Plain Text and type the document as you usually
+           do.
+         </div>
+      </div>
+      <div class="field"
+           tal:define="tabindex tabindex/next;
+                       text_format python:request.get('text_format', getattr(here,'text_format','structured-text'))">    
+        <input class="noborder" 
+               type="radio" 
+               name="text_format"
+               value="structured-text" 
+               tabindex=""
+               id="cb_structuredtext"
+               onfocus="formtooltip('format_help',1)" 
+               onblur="formtooltip('format_help',0)" 
+               tal:attributes="checked python:test(text_format=='structured-text', 1, '');
+                               tabindex tabindex;" 
+               />
+        <label for="cb_structuredtext" i18n:translate="structured_text">Structured Text</label> <br />
+
+        <input class="noborder" 
+               type="radio" 
+               name="text_format" 
+               value="html" 
+               tabindex=""
+               id="cb_html"
+               tal:attributes="checked python:test(text_format=='html', 1, '');
+                               tabindex tabindex;" 
+               onfocus="formtooltip('format_help',1)" 
+               onblur="formtooltip('format_help',0)" 
+               />    
+        <label for="cb_html" i18n:translate="html">HTML</label> <br />
+
+        <input class="noborder" 
+               type="radio" 
+               name="text_format"
+               value="plain" 
+               tabindex=""
+               id="cb_plain"
+               tal:attributes="checked python:test(text_format=='plain', 1, '');
+                               tabindex tabindex;" 
+               onfocus="formtooltip('format_help',1)" 
+               onblur="formtooltip('format_help',0)" 
+               />
+        <label for="cb_plain" i18n:translate="plain_text">Plain Text</label>
+      </div>
+    </div>
+  </tal:block>
+
+ </tal:block>
+
+</div>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html id="region-content" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{#paste.paste_text_desc}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="js/pastetext.js"></script>
+	<base target="_self" />
+</head>
+<body onresize="resizeInputs();" style="display:none; overflow:hidden;">
+	<div class="dialog-wrapper">
+		<form name="source" onsubmit="saveContent();return false;" action="#">
+			<fieldset>
+				<legend>{#paste.paste_text_desc}</legend>
+				<div class="field">
+					<label for="htmlSource">{#paste.paste_text_desc}</label>
+					<div class="formHelp">{#paste_dlg.text_title}</div>
+					<div class="widget">
+						<textarea name="htmlSource" id="htmlSource" rows="15" cols="100" style="" wrap="soft" class="mceFocus"></textarea>
+					</div>
+				</div>
+
+				<div class="field">
+					<div class="widget">
+						<input name="linebreaks" id="linebreaks" checked="checked" type="checkbox">
+						<label for="noshade">{#paste_dlg.text_linebreaks}</label>
+					</div>
+				</div>
+			</fieldset>
+
+			<div class="visualClear"><!-- --></div>
+
+			<div class="mceActionPanel formControls">
+				<span class="actionButtons">
+					<input type="submit" id="insert" class="context" name="insert" value="{#insert}" />
+					<input type="button" id="cancel" class="context" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+				</span>
+			</div>
+		</form>
+	</div>
+</body> 
+</html>
