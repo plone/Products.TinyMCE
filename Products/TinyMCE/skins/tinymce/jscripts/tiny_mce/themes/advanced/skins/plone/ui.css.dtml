@@ -1,0 +1,222 @@
+/* <dtml-with base_properties> */
+
+/* Reset */
+.ploneSkin table, .ploneSkin tbody, .ploneSkin a, .ploneSkin img, .ploneSkin tr, .ploneSkin div, .ploneSkin td, .ploneSkin iframe, .ploneSkin span, .ploneSkin *, .ploneSkin .mceText {border:0; margin:0; padding:0; background:transparent; white-space:nowrap; text-decoration:none; font-weight:normal; cursor:default; color:&dtml-fontColor;; vertical-align:baseline; width:auto; border-collapse:separate; text-align:left}
+#text_path_row {overflow:hidden; width:90%}
+.ploneSkin a:hover, .ploneSkin a:link, .ploneSkin a:visited, .ploneSkin a:active {text-decoration:none; font-weight:normal; cursor:default; color: &dtml-fontColor;}
+.ploneSkin table td {vertical-align:middle}
+
+/* Containers */
+#text_parent.ploneSkin table, #mce_fullscreen_parent.ploneSkin table {background:&dtml-contentViewBackgroundColor;}
+#text_parent.ploneSkin iframe, #mce_fullscreen_parent.ploneSkin iframe {display:block; background: &dtml-backgroundColor;}
+#text_parent.ploneSkin table.mceToolbar, #mce_fullscreen_parent.ploneSkin table.mceToolbar {height:26px; margin-bottom: 0px}
+#text_parent.ploneSkin .mceLeft, #mce_fullscreen_parent.ploneSkin .mceLeft {text-align:left}
+#text_parent.ploneSkin .mceRight, #mce_fullscreen_parent.ploneSkin .mceRight {text-align:right}
+
+/* External */
+.ploneSkin .mceExternalToolbar {position:absolute; border: &dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBorderColor;; border-bottom:0; display:none;}
+.ploneSkin .mceExternalToolbar td.mceToolbar {padding-right:13px;}
+.ploneSkin .mceExternalClose {position:absolute; top:3px; right:3px; width:7px; height:7px; background:url(../../img/icons.gif) -820px 0}
+
+/* Layout */
+.ploneSkin #text_tbl {<dtml-with portal_tinymce><dtml-if "_.string.find(editor_width,'%') != -1">width: <dtml-var editor_width> !important</dtml-if></dtml-with>}
+.ploneSkin table.mceLayout {border:0; border-left: &dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBorderColor;; border-right: &dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBorderColor;;}
+.ploneSkin table.mceLayout tr.mceFirst td {border-top: &dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBorderColor;}
+.ploneSkin table.mceLayout tr.mceLast td {border-bottom: &dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBorderColor;}
+.ploneSkin table.mceToolbar, .ploneSkin tr.mceFirst .mceToolbar tr td, .ploneSkin tr.mceLast .mceToolbar tr td {border:0; margin:0; padding:0;}
+.ploneSkin td.mceToolbar {padding-top:1px; vertical-align:top}
+.ploneSkin .mceIframeContainer {border-top: &dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBorderColor;; border-bottom: &dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBorderColor;}
+.ploneSkin .mceStatusbar {font-family:<dtml-var fontFamily>; font-size:100%; line-height:16px; overflow:visible; color: &dtml-contentViewBorderColor;; display:block; height:20px}
+.ploneSkin .mceStatusbar div {float:left; margin:2px; color: &dtml-contentViewBorderColor;}
+.ploneSkin .mceStatusbar div a {color: &dtml-contentViewBorderColor;}
+.ploneSkin .mceStatusbar a.mceResize {display:block; float:right; background:url(../../img/icons.gif) -800px 0; width:20px; height:20px; cursor:se-resize}
+.ploneSkin .mceStatusbar a:hover {text-decoration: &dtml-textTransform;}
+.ploneSkin table.mceToolbar {margin-left:3px}
+.ploneSkin span.mceIcon, .ploneSkin img.mceIcon {display:block; width:20px; height:20px}
+.ploneSkin .mceIcon {background:url(../../img/icons.gif) no-repeat 20px 20px}
+.ploneSkin td.mceCenter {text-align:center;}
+.ploneSkin td.mceCenter table {margin:0 auto; text-align:left;}
+.ploneSkin td.mceRight table {margin:0 0 0 auto;}
+
+/* Button */
+.ploneSkin .mceButton {display:block; border: &dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBackgroundColor;; width:20px; height:20px; margin-right:1px}
+.ploneSkin a.mceButtonEnabled:hover {border: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;; background-color: &dtml-globalBackgroundColor;}
+.ploneSkin a.mceButtonActive, .ploneSkin a.mceButtonSelected {border: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;; background-color: &dtml-globalBackgroundColor;}
+.ploneSkin .mceButtonDisabled .mceIcon {opacity:0.3; filter:alpha(opacity=30)}
+.ploneSkin .mceButtonLabeled {width:auto}
+.ploneSkin .mceButtonLabeled span.mceIcon {float:left}
+.ploneSkin span.mceButtonLabel {display:block; font-size:10px; padding:4px 6px 0 22px; font-family:<dtml-var fontFamily>}
+.ploneSkin .mceButtonDisabled .mceButtonLabel {color: &dtml-discreetColor;}
+
+/* Separator */
+.ploneSkin .mceSeparator {display:block; background:url(../../img/icons.gif) -182px 0; width:2px; height:20px; margin:2px 2px 0 4px}
+
+/* ListBox */
+#text_parent.ploneSkin table.mceListBox, #mce_fullscreen_parent.ploneSkin table.mceListBox {direction:ltr; margin-bottom: 0px}
+.ploneSkin table.mceListBox, .ploneSkin .mceListBox a {display:block}
+.ploneSkin table.mceListBox .mceText {padding-left:4px; width:70px; text-align:left; border:&dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBorderColor;; border-right:0; background:&dtml-backgroundColor;; font-family:<dtml-var fontFamily>; font-size:100%; height:20px; line-height:20px; overflow:hidden}
+.ploneSkin table.mceListBox .mceOpen {width:9px; height:20px; background:url(../../img/icons.gif) -741px 0; margin-right:2px; border:&dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBorderColor;}
+.ploneSkin table.mceListBoxEnabled:hover .mceText, .ploneSkin .mceListBoxHover .mceText, .ploneSkin .mceListBoxSelected .mceText {border:&dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;; border-right:0; background:&dtml-backgroundColor;}
+.ploneSkin table.mceListBoxEnabled:hover .mceOpen, .ploneSkin .mceListBoxHover .mceOpen, .ploneSkin .mceListBoxSelected .mceOpen {background-color:&dtml-globalBackgroundColor;; border:&dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;}
+.ploneSkin .mceListBoxDisabled a.mceText {color:&dtml-discreetColor;; background-color:transparent;}
+.ploneSkin .mceListBoxMenu {overflow:auto; overflow-x:hidden}
+.ploneSkin .mceOldBoxModel .mceListBox .mceText {height:22px}
+.ploneSkin .mceOldBoxModel .mceListBox .mceOpen {width:11px; height:22px;}
+.ploneSkin select.mceNativeListBox {font-family:<dtml-var fontFamily>; font-size:7pt; background: &dtml-globalBackgroundColor;; border:&dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;; margin-right:2px;}
+
+/* SplitButton */
+.ploneSkin .mceSplitButton {width:32px; height:20px; direction:ltr}
+.ploneSkin .mceSplitButton a, .ploneSkin .mceSplitButton span {height:20px; display:block}
+.ploneSkin .mceSplitButton a.mceAction {width:20px; border:&dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBackgroundColor;;border-right:0px}
+.ploneSkin .mceSplitButton span.mceAction {width:20px; background:url(../../img/icons.gif) 20px 20px;}
+.ploneSkin .mceSplitButton a.mceOpen {width:9px; border:&dtml-borderWidth; &dtml-borderStyle; transparent;}
+.ploneSkin .mceSplitButton span.mceOpen {width:9px; background:url(../../img/icons.gif) -741px 0;}
+.ploneSkin table.mceSplitButtonEnabled:hover a.mceAction, .ploneSkin .mceSplitButtonHover a.mceAction, .ploneSkin .mceSplitButtonSelected a.mceAction {border:&dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;; border-right:0; background-color: &dtml-globalBackgroundColor;}
+.ploneSkin table.mceSplitButtonEnabled:hover a.mceOpen, .ploneSkin .mceSplitButtonHover a.mceOpen, .ploneSkin .mceSplitButtonSelected a.mceOpen {border:&dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;;}
+.ploneSkin table.mceSplitButtonEnabled:hover span.mceOpen, .ploneSkin .mceSplitButtonHover span.mceOpen, .ploneSkin .mceSplitButtonSelected span.mceOpen {background-color: &dtml-globalBackgroundColor;}
+.ploneSkin .mceSplitButtonDisabled .mceAction, .ploneSkin .mceSplitButtonDisabled span.mceOpen {opacity:0.3; filter:alpha(opacity=30)}
+.ploneSkin .mceSplitButtonActive a.mceAction {border:&dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;; background-color:&dtml-globalBackgroundColor;}
+.ploneSkin .mceSplitButtonActive a.mceOpen {border-left:0;}
+
+/* ColorSplitButton */
+.ploneSkin div.mceColorSplitMenu table {background:&dtml-backgroundColor;; border:&dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;}
+.ploneSkin .mceColorSplitMenu td {padding:2px}
+.ploneSkin .mceColorSplitMenu a {display:block; width:9px; height:9px; overflow:hidden; border:&dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;}
+.ploneSkin .mceColorSplitMenu td.mceMoreColors {padding:1px 3px 1px 1px}
+.ploneSkin .mceColorSplitMenu a.mceMoreColors {width:100%; height:auto; text-align:center; font-family:<dtml-var fontFamily>; font-size:100%; line-height:20px; border:&dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;}
+.ploneSkin .mceColorSplitMenu a.mceMoreColors:hover {border:&dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;; background-color:&dtml-globalBackgroundColor;}
+.ploneSkin a.mceMoreColors:hover {border:&dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;}
+.ploneSkin .mceColorPreview {margin-left:2px; width:16px; height:4px; overflow:hidden; background:gray}
+.ploneSkin .mce_forecolor span.mceAction, .ploneSkin .mce_backcolor span.mceAction {overflow:hidden; height:16px}
+
+/* Menu */
+.ploneSkin .mceMenu {position:absolute; left:0; top:0; z-index:1000; border:&dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;}
+.ploneSkin .mceNoIcons span.mceIcon {width:0;}
+.ploneSkin .mceNoIcons a .mceText {padding-left:10px}
+.ploneSkin .mceMenu table {background:&dtml-backgroundColor;}
+.ploneSkin .mceMenu a, .ploneSkin .mceMenu span, .ploneSkin .mceMenu {display:block}
+.ploneSkin .mceMenu td {height:20px}
+.ploneSkin .mceMenu a {position:relative;padding:3px 0 4px 0}
+.ploneSkin .mceMenu .mceText {position:relative; display:block; font-family:<dtml-var fontFamily>; color:&dtml-fontColor;; cursor:default; margin:0; padding:0 25px 0 25px; display:block}
+.ploneSkin .mceMenu span.mceText, .ploneSkin .mceMenu .mcePreview {font-size:100%}
+.ploneSkin .mceMenu pre.mceText {font-family:Monospace}
+.ploneSkin .mceMenu .mceIcon {position:absolute; top:0; left:0; width:22px;}
+.ploneSkin .mceMenu .mceMenuItemEnabled a:hover, .ploneSkin .mceMenu .mceMenuItemActive {background-color:&dtml-globalBackgroundColor;}
+.ploneSkin td.mceMenuItemSeparator {background:&dtml-globalBorderColor;; height:&dtml-borderWidth;}
+.ploneSkin .mceMenuItemTitle a {border:0; background:&dtml-globalBackgroundColor;; border-bottom:&dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;}
+.ploneSkin .mceMenuItemTitle span.mceText {color:&dtml-fontColor;; font-weight:bold; padding-left:4px}
+.ploneSkin .mceMenuItemDisabled .mceText {color:&dtml-discreetColor;}
+.ploneSkin .mceMenuItemSelected .mceIcon {background:url(img/menu_check.gif)}
+.ploneSkin .mceNoIcons .mceMenuItemSelected a {background:url(img/menu_arrow.gif) no-repeat -6px center}
+.ploneSkin .mceMenu span.mceMenuLine {display:none}
+.ploneSkin .mceMenuItemSub a {background:url(img/menu_arrow.gif) no-repeat top right;}
+
+/* Progress,Resize */
+.ploneSkin .mceBlocker {position:absolute; left:0; top:0; z-index:1000; opacity:0.5; filter:alpha(opacity=50); background:&dtml-backgroundColor;}
+.ploneSkin .mceProgress {position:absolute; left:0; top:0; z-index:1001; background:url(img/progress.gif) no-repeat; width:32px; height:32px; margin:-16px 0 0 -16px}
+.ploneSkin .mcePlaceHolder {border:&dtml-borderWidth; dotted &dtml-contentViewBorderColor;}
+
+/* Formats */
+.ploneSkin .mce_formatPreview a {font-size:10px}
+.ploneSkin .mce_p span.mceText {}
+.ploneSkin .mce_address span.mceText {font-style:italic}
+.ploneSkin .mce_pre span.mceText {font-family:monospace}
+.ploneSkin .mce_h1 span.mceText {font-weight:bolder; font-size: 2em}
+.ploneSkin .mce_h2 span.mceText {font-weight:bolder; font-size: 1.5em}
+.ploneSkin .mce_h3 span.mceText {font-weight:bolder; font-size: 1.17em}
+.ploneSkin .mce_h4 span.mceText {font-weight:bolder; font-size: 1em}
+.ploneSkin .mce_h5 span.mceText {font-weight:bolder; font-size: .83em}
+.ploneSkin .mce_h6 span.mceText {font-weight:bolder; font-size: .75em}
+
+/* Theme */
+.ploneSkin span.mce_bold {background-position:0 0}
+.ploneSkin span.mce_italic {background-position:-60px 0}
+.ploneSkin span.mce_underline {background-position:-140px 0}
+.ploneSkin span.mce_strikethrough {background-position:-120px 0}
+.ploneSkin span.mce_undo {background-position:-160px 0}
+.ploneSkin span.mce_redo {background-position:-100px 0}
+.ploneSkin span.mce_cleanup {background-position:-40px 0}
+.ploneSkin span.mce_bullist {background-position:-20px 0}
+.ploneSkin span.mce_numlist {background-position:-80px 0}
+.ploneSkin span.mce_justifyleft {background-position:-460px 0}
+.ploneSkin span.mce_justifyright {background-position:-480px 0}
+.ploneSkin span.mce_justifycenter {background-position:-420px 0}
+.ploneSkin span.mce_justifyfull {background-position:-440px 0}
+.ploneSkin span.mce_anchor {background-position:-200px 0}
+.ploneSkin span.mce_indent {background-position:-400px 0}
+.ploneSkin span.mce_outdent {background-position:-540px 0}
+.ploneSkin span.mce_link {background-position:-500px 0}
+.ploneSkin span.mce_unlink {background-position:-640px 0}
+.ploneSkin span.mce_sub {background-position:-600px 0}
+.ploneSkin span.mce_sup {background-position:-620px 0}
+.ploneSkin span.mce_removeformat {background-position:-580px 0}
+.ploneSkin span.mce_newdocument {background-position:-520px 0}
+.ploneSkin span.mce_image {background-position:-380px 0}
+.ploneSkin span.mce_help {background-position:-340px 0}
+.ploneSkin span.mce_code {background-position:-260px 0}
+.ploneSkin span.mce_hr {background-position:-360px 0}
+.ploneSkin span.mce_visualaid {background-position:-660px 0}
+.ploneSkin span.mce_charmap {background-position:-240px 0}
+.ploneSkin span.mce_paste {background-position:-560px 0}
+.ploneSkin span.mce_copy {background-position:-700px 0}
+.ploneSkin span.mce_cut {background-position:-680px 0}
+.ploneSkin span.mce_blockquote {background-position:-220px 0}
+.ploneSkin .mce_forecolor span.mceAction {background-position:-720px 0}
+.ploneSkin .mce_backcolor span.mceAction {background-position:-760px 0}
+.ploneSkin span.mce_forecolorpicker {background-position:-720px 0}
+.ploneSkin span.mce_backcolorpicker {background-position:-760px 0}
+
+/* Plugins */
+.ploneSkin span.mce_advhr {background-position:-0px -20px}
+.ploneSkin span.mce_ltr {background-position:-20px -20px}
+.ploneSkin span.mce_rtl {background-position:-40px -20px}
+.ploneSkin span.mce_emotions {background-position:-60px -20px}
+.ploneSkin span.mce_fullpage {background-position:-80px -20px}
+.ploneSkin span.mce_fullscreen {background-position:-100px -20px}
+.ploneSkin span.mce_iespell {background-position:-120px -20px}
+.ploneSkin span.mce_insertdate {background-position:-140px -20px}
+.ploneSkin span.mce_inserttime {background-position:-160px -20px}
+.ploneSkin span.mce_absolute {background-position:-180px -20px}
+.ploneSkin span.mce_backward {background-position:-200px -20px}
+.ploneSkin span.mce_forward {background-position:-220px -20px}
+.ploneSkin span.mce_insert_layer {background-position:-240px -20px}
+.ploneSkin span.mce_insertlayer {background-position:-260px -20px}
+.ploneSkin span.mce_movebackward {background-position:-280px -20px}
+.ploneSkin span.mce_moveforward {background-position:-300px -20px}
+.ploneSkin span.mce_media {background-position:-320px -20px}
+.ploneSkin span.mce_nonbreaking {background-position:-340px -20px}
+.ploneSkin span.mce_pastetext {background-position:-360px -20px}
+.ploneSkin span.mce_pasteword {background-position:-380px -20px}
+.ploneSkin span.mce_selectall {background-position:-400px -20px}
+.ploneSkin span.mce_preview {background-position:-420px -20px}
+.ploneSkin span.mce_print {background-position:-440px -20px}
+.ploneSkin span.mce_cancel {background-position:-460px -20px}
+.ploneSkin span.mce_save {background-position:-480px -20px}
+.ploneSkin span.mce_replace {background-position:-500px -20px}
+.ploneSkin span.mce_search {background-position:-520px -20px}
+.ploneSkin span.mce_styleprops {background-position:-560px -20px}
+.ploneSkin span.mce_table {background-position:-580px -20px}
+.ploneSkin span.mce_cell_props {background-position:-600px -20px}
+.ploneSkin span.mce_delete_table {background-position:-620px -20px}
+.ploneSkin span.mce_delete_col {background-position:-640px -20px}
+.ploneSkin span.mce_delete_row {background-position:-660px -20px}
+.ploneSkin span.mce_col_after {background-position:-680px -20px}
+.ploneSkin span.mce_col_before {background-position:-700px -20px}
+.ploneSkin span.mce_row_after {background-position:-720px -20px}
+.ploneSkin span.mce_row_before {background-position:-740px -20px}
+.ploneSkin span.mce_merge_cells {background-position:-760px -20px}
+.ploneSkin span.mce_table_props {background-position:-980px -20px}
+.ploneSkin span.mce_row_props {background-position:-780px -20px}
+.ploneSkin span.mce_split_cells {background-position:-800px -20px}
+.ploneSkin span.mce_template {background-position:-820px -20px}
+.ploneSkin span.mce_visualchars {background-position:-840px -20px}
+.ploneSkin span.mce_abbr {background-position:-860px -20px}
+.ploneSkin span.mce_acronym {background-position:-880px -20px}
+.ploneSkin span.mce_attribs {background-position:-900px -20px}
+.ploneSkin span.mce_cite {background-position:-920px -20px}
+.ploneSkin span.mce_del {background-position:-940px -20px}
+.ploneSkin span.mce_ins {background-position:-960px -20px}
+.ploneSkin span.mce_pagebreak {background-position:0 -40px}
+.ploneSkin .mce_spellchecker span.mceAction {background-position:-540px -20px}
+
+/* </dtml-with> */

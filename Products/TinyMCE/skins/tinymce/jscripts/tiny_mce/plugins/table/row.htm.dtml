@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html id="region-content" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{#table_dlg.row_title}</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="../../utils/mctabs.js"></script>
+	<script type="text/javascript" src="../../utils/form_utils.js"></script>
+	<script type="text/javascript" src="../../utils/editable_selects.js"></script>
+	<script type="text/javascript" src="js/row.js"></script>
+	<base target="_self" />
+</head>
+<body id="tablerow" style="display: none">
+	<div class="dialog-wrapper">
+		<form onsubmit="updateAction();return false;">
+			<ul class="formTabs"><li id="general_tab" class="formTab firstFormTab"><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;" class="selected"><span>{#table_dlg.general_tab}</span></a></li><li id="advanced_tab" class="formTab lastFormTab"><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;"><span>{#table_dlg.advanced_tab}</span></a></li></ul>
+			<fieldset id="general_panel" class="formPanel">
+				<div class="field">
+					<label for="class">{#class_name}</label>
+					<div class="widget">
+						<select id="class" name="class">
+							<option value="" selected="selected">{#not_set}</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="field">
+					<label for="height">{#table_dlg.height}</label>
+					<div class="widget">
+						<input name="height" type="text" id="height" value="" size="4" maxlength="4" onchange="changedSize();" />
+					</div>
+				</div>
+
+				<div class="field">
+					<label for="align">{#table_dlg.align}</label>
+					<div class="widget">
+						<select id="align" name="align">
+							<option value="">{#not_set}</option>
+							<option value="center">{#table_dlg.align_middle}</option>
+							<option value="left">{#table_dlg.align_left}</option>
+							<option value="right">{#table_dlg.align_right}</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="field">
+					<label for="valign">{#table_dlg.valign}</label>
+					<div class="widget">
+						<select id="valign" name="valign">
+							<option value="">{#not_set}</option>
+							<option value="top">{#table_dlg.align_top}</option>
+							<option value="middle">{#table_dlg.align_middle}</option>
+							<option value="bottom">{#table_dlg.align_bottom}</option>
+						</select>
+					</div>
+				</div>
+			</fieldset>
+
+			<fieldset id="advanced_panel" class="formPanel" style="display: none;">
+				<div class="field">
+					<label for="rowtype">{#table_dlg.rowtype}</label>
+					<div class="widget">
+						<select id="rowtype" name="rowtype" class="mceFocus">
+							<option value="thead">{#table_dlg.thead}</option>
+							<option value="tbody">{#table_dlg.tbody}</option>
+							<option value="tfoot">{#table_dlg.tfoot}</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="field">
+					<label for="action">{#table_dlg.row_title}</label>
+					<div class="widget">
+						<select id="action" name="action">
+							<option value="row">{#table_dlg.row_row}</option>
+							<option value="odd">{#table_dlg.row_odd}</option>
+							<option value="even">{#table_dlg.row_even}</option>
+							<option value="all">{#table_dlg.row_all}</option>
+						</select>
+					</div>
+				</div>
+			</fieldset>
+
+			<div style="display: none;">
+				<input id="id" name="id" type="text" value="" />
+				<input type="text" id="style" name="style" value="" />
+				<select id="dir" name="dir"><option value="">{#not_set}</option></select>
+				<input id="lang" name="lang" type="text" value="" />
+				<input id="backgroundimage" name="backgroundimage" type="text" value="" />
+				<div id="backgroundimagebrowsercontainer"></div>
+				<input id="bgcolor" name="bgcolor" type="text" value="" />
+				<div id="bgcolor_pickcontainer"></div>
+			</div>
+
+			<div class="visualClear"><!-- --></div>
+	
+			<div class="mceActionPanel formControls">
+				<span class="actionButtons">
+					<input type="submit" id="insert" class="context" name="insert" value="{#update}" />
+					<input type="button" id="cancel" class="context" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+				</span>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

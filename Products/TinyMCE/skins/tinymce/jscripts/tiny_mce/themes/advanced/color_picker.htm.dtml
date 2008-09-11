@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html id="region-content" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{#advanced_dlg.colorpicker_title}</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="../../utils/mctabs.js"></script>
+	<script type="text/javascript" src="js/color_picker.js"></script>
+	<base target="_self" />
+</head>
+<body id="colorpicker" style="display: none">
+	<div class="dialog-wrapper">
+		<form onsubmit="insertAction();return false" action="#">
+			<ul class="formTabs"><li id="picker_tab" class="formTab firstFormTab"><a href="javascript:mcTabs.displayTab('picker_tab','picker_panel');" onmousedown="return false;" class="selected"><span>{#advanced_dlg.colorpicker_picker_tab}</span></a></li><li id="rgb_tab" class="formTab"><a href="javascript:;" onclick="generateWebColors();mcTabs.displayTab('rgb_tab','rgb_panel');" onmousedown="return false;"><span>{#advanced_dlg.colorpicker_palette_tab}</span></a></li><li id="named_tab" class="formTab lastFormTab"><a  href="javascript:;" onclick="generateNamedColors();javascript:mcTabs.displayTab('named_tab','named_panel');" onmousedown="return false;"><span>{#advanced_dlg.colorpicker_named_tab}</span></a></li></ul>
+
+			<fieldset id="picker_panel" class="formPanel">
+				<div class="field">
+					<label for="picker">{#advanced_dlg.colorpicker_picker_title}</label>
+					<div class="widget" id="picker">
+						<img id="colors" class="input-border" style="margin-right: 1em; float: left" src="img/colorpicker.jpg" onclick="computeColor(event)" onmousedown="isMouseDown = true;return false;" onmouseup="isMouseDown = false;" onmousemove="if (isMouseDown && isMouseOver) computeColor(event); return false;" onmouseover="isMouseOver=true;" onmouseout="isMouseOver=false;" />
+
+						<div id="light" class="input-border" style="float: left">
+							<!-- Will be filled with divs -->
+						</div>
+					</div>
+				</div>
+			</fieldset>
+
+			<fieldset id="rgb_panel" class="formPanel" style="display: none">
+				<div class="field">
+					<label for="webcolors">{#advanced_dlg.colorpicker_palette_title}</label>
+					<div class="widget" id="webcolors">
+						<!-- Gets filled with web safe colors-->
+					</div>
+				</div>
+			</fieldset>
+
+			<fieldset id="named_panel" class="formPanel" style="display: none">
+				<div class="field">
+					<label for="namedcolors">{#advanced_dlg.colorpicker_named_title}</label>
+					<div class="formHelp" id="colornamecontainer">
+						{#advanced_dlg.colorpicker_name} <span id="colorname"></span>
+					</div>
+					<div id="namedcolors" style="width: 240px">
+						<!-- Gets filled with named colors-->
+					</div>
+				</div>
+			</fieldset>
+
+			<div class="field">
+				<label for="color">{#advanced_dlg.colorpicker_color}</label>
+				<div class="widget">
+					<input id="color" type="text" size="8" maxlength="8" />
+					<input id="preview" type="text" style="background: transparent" size="8" maxlength="8" />
+					<!--div id="preview" style="float: left" class="input-border">test</div-->
+				</div>
+			</div>
+
+			<div class="mceActionPanel formControls">
+				<span class="actionButtons">
+					<input type="submit" class="context" id="insert" name="insert" value="{#apply}" />
+				</span>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

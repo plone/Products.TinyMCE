@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html id="region-content" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{#advanced_dlg.anchor_title}</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="js/anchor.js"></script>
+	<base target="_self" />
+</head>
+<body style="display: none">
+	<div class="dialog-wrapper">
+		<form onsubmit="AnchorDialog.update();return false;" action="#">
+			<fieldset>
+				<legend>{#advanced_dlg.anchor_title}</legend>
+				<div class="field">
+					<label for="anchorName">{#advanced_dlg.anchor_name}</label>
+					<span title="Required" class="fieldRequired">(Required)</span>
+					<div class="widget"><input id="anchorName" name="anchorName" type="text" class="mceFocus" value="" size="30"/></div>
+				</div>
+			</fieldset>
+		
+			<div class="visualClear"><!-- --></div>
+		
+			<div class="mceActionPanel formControls">
+				<span class="actionButtons">
+					<input type="submit" id="insert" class="context" name="insert" value="{#update}" />
+					<input type="button" id="cancel" class="context" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+				</span>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
