@@ -9,7 +9,7 @@ Feedback:
 
 Requirements:
 
-  TinyMCE is tested on Plone 3.1.2, please submit any compatibility issues you
+  TinyMCE is tested on Plone 3.1.5.1, please submit any compatibility issues you
   may encounter.
 
 Installation: 
@@ -24,7 +24,7 @@ Upgrading:
 
 Credits:
 
-  Editor: "TinyMCE":http://tinymce.moxiecode.com/ 3.1.0.1
+  Editor: "TinyMCE":http://tinymce.moxiecode.com/ 3.1.1
 
   Plone Adaptation by Mike Nalley and "Jacob Smith":mailto:turqmr2@gmail.com
   from "Metropolitan Sewer District of Greater Cincinnati":http://msdgc.org -

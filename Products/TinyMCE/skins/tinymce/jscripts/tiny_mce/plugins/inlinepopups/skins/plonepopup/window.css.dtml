@@ -8,9 +8,9 @@
 /* General */
 .plonepopup {position:absolute; direction:ltr}
 .plonepopup .mceWrapper {position:static}
-.mceEventBlocker {position:absolute; left:0; top:0; transparent; width:100%; height:100%}
+.mceEventBlocker {position:fixed; left:0; top:0; transparent; width:100%; height:100%}
 .plonepopup .mcePlaceHolder {border:1px solid #000; background:#888; top:0; left:0; opacity:0.5; filter:alpha(opacity=50)}
-.plonepopup_modalBlocker {position:absolute; left:0; top:0; width:100%; height:100%; background:#FFF; opacity:0.6; filter:alpha(opacity=60); display:none}
+.plonepopup_modalBlocker {position:fixed; left:0; top:0; width:100%; height:100%; background:#FFF; opacity:0.6; filter:alpha(opacity=60); display:none}
 
 /* Top */
 .plonepopup .mceTop, .plonepopup .mceTop div {top:0; width:100%; height:19px}
