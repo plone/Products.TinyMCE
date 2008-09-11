@@ -1,0 +1,374 @@
+/* <dtml-with portal_tinymce> */
+/* <dtml-call "REQUEST.set('portal_url', portal_url())"> */
+
+function plugin_regexrep_setup(editor_id, node) {
+  node.innerHTML = plugin_regexrep_replace(node.innerHTML, 'setupcontent_regex');
+}
+function plugin_regexrep_save(editor_id, content, node) {
+  return plugin_regexrep_replace(content, 'save_regex');
+}
+function plugin_regexrep_replace(content, tiny_param) {
+  var re_string = tinyMCE.activeEditor.getParam(tiny_param);
+  if (typeof(re_string) == "undefined" || re_string == "" || re_string == null) {
+    return;
+  }
+  var re_array = re_string.split(/[*][*]/g);
+  for (i=0; i<re_array.length; i++) {
+    if (typeof(re_array[i]) == "undefined" || re_array[i] == "" || re_array[i] == null) {
+      continue;
+    }
+    var tokens = re_array[i].split(/\+\+/g);
+    if (tokens[0] == null) { return; }
+    var replace = ((tokens[1] == null || typeof tokens[1] == "undefined") ? '' : tokens[1] );
+    var flags = ((tokens[2] == null || typeof tokens[2] == "undefined") ? 'g' : tokens[2] );
+    var re = new RegExp(tokens[0], flags);
+    content = content.replace(re, replace);
+  }
+  return content;
+}
+
+function GetButtonWidth(button) {
+	var result = 23;	// default width
+	switch (button) {
+		case 'formatselect':
+			result = 88;
+			break;
+		case 'styleselect':
+			result = 88;
+			break;
+		case 'forecolor':
+			result = 32;
+			break;
+		case 'backcolor':
+			result = 32;
+			break;
+		case 'tablecontrols':
+			result = 285;
+			break;
+	}
+	return result;
+}
+
+function GetBlockformats () {
+	var blockformats = "<dtml-in "blockformats.split('\n')"><dtml-var sequence-item>;</dtml-in>".split(";");
+	var result = new Array();
+	var field;
+	
+	for (var i=0; i < blockformats.length; i++) {
+		if (blockformats[i].length > 0) {
+			field = blockformats[i].split("|")
+			result.push (field[0] + "=" + field[1]);
+		}
+	}
+	
+	return result.join (";");
+}
+
+function GetStyles () {
+	var styles = "<dtml-in "styles.split('\n')"><dtml-var sequence-item>;</dtml-in>".split(";");
+	var result = new Array();
+	var field;
+	
+	for (var i=0; i < styles.length; i++) {
+		if (styles[i].length > 0) {
+			field = styles[i].split("|")
+			result.push (field[0] + "=" + field[1]);
+		}
+	}
+	
+	return result.join (";");
+}
+
+function GetTableStyles () {
+	var tablestyles = "<dtml-in "tablestyles.split('\n')"><dtml-var sequence-item>;</dtml-in>".split(";");
+	var result = new Array();
+	var field;
+	
+	for (var i=0; i < tablestyles.length; i++) {
+		if (tablestyles[i].length > 0) {
+			field = tablestyles[i].split("|")
+			result.push (field[0] + "=" + field[1]);
+		}
+	}
+	
+	return result.join (";");
+}
+
+function GetRowStyles () {
+	var rowstyles = "<dtml-in "rowstyles.split('\n')"><dtml-var sequence-item>;</dtml-in>".split(";");
+	var result = new Array();
+	var field;
+	
+	for (var i=0; i < rowstyles.length; i++) {
+		if (rowstyles[i].length > 0) {
+			field = rowstyles[i].split("|")
+			result.push (field[0] + "=" + field[1]);
+		}
+	}
+	
+	return result.join (";");
+}
+
+function GetCellStyles () {
+	var cellstyles = "<dtml-in "cellstyles.split('\n')"><dtml-var sequence-item>;</dtml-in>".split(";");
+	var result = new Array();
+	var field;
+	
+	for (var i=0; i < cellstyles.length; i++) {
+		if (cellstyles[i].length > 0) {
+			field = cellstyles[i].split("|")
+			result.push (field[0] + "=" + field[1]);
+		}
+	}
+	
+	return result.join (";");
+}
+
+function GetToolbars() {
+	var buttons = new Array();
+
+	<dtml-if toolbar_save>buttons.push('save');</dtml-if>
+
+	<dtml-if toolbar_cut>buttons.push('cut');</dtml-if>
+	<dtml-if toolbar_copy>buttons.push('copy');</dtml-if>
+	<dtml-if toolbar_paste>buttons.push('paste');</dtml-if>
+
+	<dtml-if toolbar_pastetext>buttons.push('pastetext');</dtml-if>
+	<dtml-if toolbar_pasteword>buttons.push('pasteword');</dtml-if>
+
+	<dtml-if toolbar_undo>buttons.push('undo');</dtml-if>
+	<dtml-if toolbar_redo>buttons.push('redo');</dtml-if>
+
+	<dtml-if toolbar_search>buttons.push('search');</dtml-if>
+	<dtml-if toolbar_replace>buttons.push('replace');</dtml-if>
+
+	<dtml-if toolbar_formatselect>buttons.push('formatselect');</dtml-if>
+	<dtml-if toolbar_styleselect>buttons.push('styleselect');</dtml-if>
+
+	<dtml-if toolbar_bold>buttons.push('bold');</dtml-if>
+	<dtml-if toolbar_italic>buttons.push('italic');</dtml-if>
+	<dtml-if toolbar_underline>buttons.push('underline');</dtml-if>
+	<dtml-if toolbar_strikethrough>buttons.push('strikethrough');</dtml-if>
+	<dtml-if toolbar_sub>buttons.push('sub');</dtml-if>
+	<dtml-if toolbar_sup>buttons.push('sup');</dtml-if>
+
+	<dtml-if toolbar_forecolor>buttons.push('forecolor');</dtml-if>
+	<dtml-if toolbar_backcolor>buttons.push('backcolor');</dtml-if>
+
+	<dtml-if toolbar_justifyleft>buttons.push('justifyleft');</dtml-if>
+	<dtml-if toolbar_justifycenter>buttons.push('justifycenter');</dtml-if>
+	<dtml-if toolbar_justifyright>buttons.push('justifyright');</dtml-if>
+	<dtml-if toolbar_justifyfull>buttons.push('justifyfull');</dtml-if>
+
+	<dtml-if toolbar_bullist>buttons.push('bullist');</dtml-if>
+	<dtml-if toolbar_numlist>buttons.push('numlist');</dtml-if>
+	<dtml-if toolbar_outdent>buttons.push('outdent');</dtml-if>
+	<dtml-if toolbar_indent>buttons.push('indent');</dtml-if>
+
+	<dtml-if toolbar_tablecontrols>buttons.push('tablecontrols');</dtml-if>
+
+	<dtml-if toolbar_link>buttons.push('link');</dtml-if>
+	<dtml-if toolbar_unlink>buttons.push('unlink');</dtml-if>
+	<dtml-if toolbar_anchor>buttons.push('anchor');</dtml-if>
+	<dtml-if toolbar_image>buttons.push('image');</dtml-if>
+	<dtml-if toolbar_media>buttons.push('media');</dtml-if>
+
+	<dtml-if toolbar_charmap>buttons.push('charmap');</dtml-if>
+	<dtml-if toolbar_hr>buttons.push('hr');</dtml-if>
+	<dtml-if toolbar_advhr>buttons.push('advhr');</dtml-if>
+	<dtml-if toolbar_insertdate>buttons.push('insertdate');</dtml-if>
+	<dtml-if toolbar_inserttime>buttons.push('inserttime');</dtml-if>
+	<dtml-if toolbar_emotions>buttons.push('emotions');</dtml-if>
+	<dtml-if toolbar_nonbreaking>buttons.push('nonbreaking');</dtml-if>
+	<dtml-if toolbar_pagebreak>buttons.push('pagebreak');</dtml-if>
+
+	<dtml-if toolbar_print>buttons.push('print');</dtml-if>
+	<dtml-if toolbar_preview>buttons.push('preview');</dtml-if>
+	<dtml-if toolbar_iespell>buttons.push('iespell');</dtml-if>
+	<dtml-if toolbar_removeformat>buttons.push('removeformat');</dtml-if>
+	<dtml-if toolbar_cleanup>buttons.push('cleanup');</dtml-if>
+	<dtml-if toolbar_visualaid>buttons.push('visualaid');</dtml-if>
+	<dtml-if toolbar_visualchars>buttons.push('visualchars');</dtml-if>
+	<dtml-if toolbar_code>buttons.push('code');</dtml-if>
+	<dtml-if toolbar_fullscreen>buttons.push('fullscreen');</dtml-if>
+
+	var result = new Array();
+	var toolbar_temp = [[],[],[],[]];
+
+	var toolbar_width = parseInt('<dtml-var toolbar_width>');
+	var cur_toolbar = 0;
+	var cur_x = 0;
+	var button_width;
+
+	for (var i = 0; i < buttons.length; i++) {
+		button_width = GetButtonWidth(buttons[i]);
+		if (cur_x + button_width > toolbar_width) {
+			cur_x = button_width;
+			cur_toolbar++;
+		} else {
+			cur_x += button_width;
+		}
+		if (cur_toolbar <= 3) {
+			toolbar_temp[cur_toolbar].push (buttons[i]);
+		}
+	}
+
+	result[0] = toolbar_temp[0].join(',');
+	result[1] = toolbar_temp[1].join(',');
+	result[2] = toolbar_temp[2].join(',');
+	result[3] = toolbar_temp[3].join(',');
+
+	return result;
+}
+
+function GetBase() {
+	var href_string = document.location.href;
+	var href_array = href_string.split('/');
+	if (href_string.indexOf('portal_factory') != -1) {
+		while (href_array[href_array.length-1] != 'portal_factory') {
+			href_array.pop();
+		}
+		href_array.pop();
+	} else {
+		href_array.pop();
+		href_array.pop();
+	}
+	return href_array.join('/') + '/';
+}
+var realBase = document.location.href.substring(0,document.location.href.length-5);
+
+/* Table Regular Expression (Mangles tables under IE)
+**(?:<(?!t[dhr]|a\\b)[^>]*?>)*(?=(?:(?!<t[dhr]\\b).)*?<\\/t[dh]>)++++ig
+*/
+var regexes="class\\s*=?\\s*\"?(?:Mso[^\"]*?)\"?++++gi**<![-]-.*?--\\s*>++++g";
+var toolbars = GetToolbars();
+
+tinyMCE.init({
+  // General options
+  mode:"specific_textareas",
+  editor_selector:"mce_editable",
+  theme:"advanced",
+  skin:"plone",
+  inlinepopups_skin : "plonepopup",
+  plugins : "safari,pagebreak,table,save,advhr,advimage,advlink,emotions,iespell,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups",
+
+  theme_advanced_styles: GetStyles(),
+  theme_advanced_blockformats: GetBlockformats(),
+  theme_advanced_buttons1 : toolbars[0],
+  theme_advanced_buttons2 : toolbars[1],
+  theme_advanced_buttons3 : toolbars[2],
+  theme_advanced_buttons4 : toolbars[3],
+  theme_advanced_toolbar_location:"top",
+  theme_advanced_toolbar_align:"left",
+  theme_advanced_path_location:"bottom",
+  theme_advanced_resizing: <dtml-if resizing>true<dtml-else>false</dtml-if>,
+  <dtml-if "_.string.find(editor_width,'%') != -1">theme_advanced_resize_horizontal : false,</dtml-if>
+
+  theme_advanced_source_editor_width: parseInt('<dtml-var editor_width>'),
+  theme_advanced_source_editor_height: parseInt('<dtml-var editor_height>'),
+  
+  table_styles: GetTableStyles(),
+  table_row_styles: GetRowStyles(),
+  table_cell_styles: GetCellStyles(),
+
+  directionality: "<dtml-if "directionality == 'rtl'">rtl<dtml-else>ltr</dtml-if>",
+
+  content_css: "<dtml-if content_css><dtml-var content_css><dtml-else><dtml-var portal_url>/portal_tinymce/tinymce-getstyle</dtml-if>",
+  body_class: "documentContent",
+
+  // Drop lists for link/image/media/template dialogs
+  // template_external_list_url : "lists/template_list.js",
+  // external_link_list_url : "lists/link_list.js",
+  // external_image_list_url : "lists/image_list.js",
+  // media_external_list_url : "lists/media_list.js",
+
+  // Replace values for the template plugin
+  template_replace_values : {
+    username : "Some User",
+    staffid : "991234"
+  },
+
+  document_base_url:GetBase(),
+  remove_linebreaks:true,
+  setupcontent_callback : "plugin_regexrep_setup",
+  save_callback : "plugin_regexrep_save",
+  setupcontent_regex : regexes,
+  save_regex : regexes,
+  valid_elements:""
+  +"a[class|href|id|name|tabindex|title|target],"
+  +"abbr[class|id|title],"
+  +"acronym[class|id|title],"
+  +"address[class|align|id|title],"
+  +"bdo[class|id|title]," 
+  +"big[class|id|title]," 
+  +"blockquote[dir|cite|class|id|title]," 
+  +"br[class|clear<all?left?none?right|id|title],"
+  +"button[accesskey|class|disabled<disabled|id|name|tabindex|title|type|value]," 
+  +"caption," 
+  +"center[class|id|title]," 
+  +"cite[class|id|title]," 
+  +"code[class|id|title]," 
+  +"col[off|class|id|span|title|valign<baseline?bottom?middle?top|width]," 
+  +"colgroup[off|class|id|span|title|valign<baseline?bottom?middle?top|width]," 
+  +"dd[class|id|title],"
+  +"del[cite|class|datetime|id|title],"
+  +"dfn[class|id|title],"
+  +"dir[class|compact<compact|id|title],"
+  +"div[align<center?right?justify|class|id|style|title]," 
+  +"dl[class|compact<compact|id|title]," 
+  +"dt[class|id|title]," 
+  +"em/i[class|id|title],"
+  +"fieldset[class|id|title]," 
+  +"form[accept|accept-charset|action|class|enctype|id|method<get?post|name|title|target]," 
+  +"h1[class|id|title]," 
+  +"h2[class|id|title]," 
+  +"h3[class|id|title]," 
+  +"h4[class|id|title]," 
+  +"h5[class|id|title]," 
+  +"h6[class|id|title]," 
+  +"hr[align<center?right|class|id|noshade<noshade|size|title|width]," 
+  +"iframe[align<bottom?left?middle?right?top|class|frameborder|height|id|longdesc|marginheight|marginwidth|name|scrolling<auto?no?yes|src|title|width]," 
+  +"img[alt|border|class|height|hspace|id|longdesc|name|src|title|width]," 
+  +"input[accept|accesskey|alt|checked<checked|class|disabled<disabled|id|maxlength|name|readonly<readonly|size|src|tabindex|title|type<button?checkbox?file?hidden?image?password?radio?reset?submit?text|value]," 
+  +"ins[cite|class|datetime|id|title],"
+  +"isindex[class|id|prompt|title],"
+  +"kbd[class|id|title],"
+  +"label[accesskey|class|for|id|title],"
+  +"legend[accesskey|class|id|title],"
+  +"li[class|id|title|type|value],"
+  +"link[class|href|hreflang|id|media|rel|rev|title|target|type],"
+  +"map[class|id|name|title],"
+  +"menu[class|compact<compact|id|title],"
+  +"noframes[class|id|title],"
+  +"noscript[class|id|title],"
+  +"ol[class|compact<compact|id|start|title|type],"
+  +"optgroup[class|disabled<disabled|id|label|title],"
+  +"option[class|disabled<disabled|id|label|selected<selected|title|value],"
+  +"p[align<center?right?justify|class|id|style|title],"
+  +"param[id|name|type|value|valuetype<DATA?OBJECT?REF],"
+  +"pre/listing/plaintext/xmp[align<center?right?justify|class|id|title|width],"
+  +"q[cite|class|id|title],"
+  +"s[class|id|title],"
+  +"samp[class|id|title],"
+  +"select[class|disabled<disabled|id|multiple<multiple|name|size|tabindex|title],"
+  +"small[class|id|title],"
+  +"span[align<center?right?justify|class|class|id|style|title],"
+  +"strike[class|class|id|title],"
+  +"strong/b,"
+  +"sub[class|id|title]," 
+  +"sup[class|id|title]," 
+  +"table[class|id|rules|summary|title]," 
+  +"tbody[class|id|title],"
+  +"td[class|colspan|id|rowspan|title|nowrap|valign|align|style],"
+  +"textarea[accesskey|class|cols|disabled<disabled|id|name|readonly<readonly|rows|tabindex|title]," 
+  +"tfoot[off|class|id|title|valign<baseline?bottom?middle?top],"
+  +"th[class|id|title|nowrap],"
+  +"thead[class|id|title],"
+  +"title[dir<ltr?rtl],"
+  +"tr[class|id|title],"
+  +"tt[class|id|title],"
+  +"u[class|id|title],"
+  +"ul[class|compact<compact|id|title|type]"
+});
+
+/* </dtml-with> */

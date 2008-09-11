@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!-- Change the value of these parameters to modify portal_skins behavior:
+     - allow_any: change it to True if you want users to be able to select the
+       skin to use from their personal preferences management page. In the
+       ZMI, this value is known as 'Skin flexibility'.
+     - cookie_persistence: change it to True if you want to make the skin cookie
+       persist indefinitely. In the ZMI, this value is known as 'Skin Cookie
+       persistence'.
+       -->
+<object name="portal_skins" meta_type="Plone Skins Tools">
+ <object name="tinymce"
+    meta_type="Filesystem Directory View"
+    directory="TinyMCE/skins/tinymce"/>
+
+ <skin-path name="*">
+
+  <!-- The definition of a layer accepts these parameters:
+       - name: quite self explanatory, the name of the layer.
+       - insert-before: name of the layer before which it must be added.
+       - insert-after: name of the layer after which it must be added.
+       Note: insert-before (and -after) accepts the value "*" which means
+       "all".
+       -->
+  <layer name="tinymce"
+     insert-before="kupu"/>
+ </skin-path>
+</object>
+

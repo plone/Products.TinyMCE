@@ -1,0 +1,9 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five">
+
+    <include package=".browser" />
+    <include package=".adapters" />
+    <include file="profiles.zcml" />
+
+</configure>
