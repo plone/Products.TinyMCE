@@ -448,7 +448,7 @@ var ImageDialog = {
 						html += '<div class="' + (i % 2 == 0 ? 'even' : 'odd') + '">';
 						if (data.items[i].is_folderish) {
 							html += '<img src="' + data.items[i].icon + '" border="0" style="margin-left: 17px" /> ';
-							html += '<a href="#" onclick="ImageDialog.getFolderListing(\'' + data.items[i].url + '\')">';
+							html += '<a href="javascript:ImageDialog.getFolderListing(\'' + data.items[i].url + '\')">';
 							html += data.items[i].title;
 							html += '</a>';
 						} else {
@@ -461,7 +461,7 @@ var ImageDialog = {
 				document.getElementById ('internallinkcontainer').innerHTML = html;
 				if (data.parent_url == "") {
 					document.getElementById ('uponelevel').style.display = 'none';
-					document.getElementById ('uponelevel').href = '#';
+					document.getElementById ('uponelevel').href = 'javascript:void(0)';
 				} else {
 					document.getElementById ('uponelevel').style.display = 'block';
 					document.getElementById ('uponelevel').href = 'javascript:ImageDialog.getFolderListing(\'' + data.parent_url + '\')';
@@ -475,7 +475,7 @@ var ImageDialog = {
 					if (i == data.path.length - 1) {
 						html += data.path[i].title;
 					} else {
-						html += '<a href="#" onclick="ImageDialog.getFolderListing(\'' + data.path[i].url + '\')">';
+						html += '<a href="javascript:ImageDialog.getFolderListing(\'' + data.path[i].url + '\')">';
 						html += data.path[i].title;
 						html += '</a>';
 					}

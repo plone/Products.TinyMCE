@@ -654,7 +654,7 @@ function getFolderListing(path) {
 				for (var i = 0; i < data.items.length; i++) {
 					html += '<div class="' + (i % 2 == 0 ? 'even' : 'odd') + '"><input onclick="setDetails(\'' + data.items[i].url + '\', \'\');" type="radio" class="noborder" name="internallink" value="' + data.items[i].url + '"/> <img src="' + data.items[i].icon + '" border="0"/> ';
 					if (data.items[i].is_folderish) {
-						html += '<a href="#" onclick="getFolderListing(\'' + data.items[i].url + '\')">';
+						html += '<a href="javascript:getFolderListing(\'' + data.items[i].url + '\')">';
 						html += data.items[i].title;
 						html += '</a>';
 					} else {
@@ -666,7 +666,7 @@ function getFolderListing(path) {
 			document.getElementById ('internallinkcontainer').innerHTML = html;
 			if (data.parent_url == "") {
 				document.getElementById ('uponelevel').style.display = 'none';
-				document.getElementById ('uponelevel').href = '#';
+				document.getElementById ('uponelevel').href = 'javascript:void(0)';
 			} else {
 				document.getElementById ('uponelevel').style.display = 'block';
 				document.getElementById ('uponelevel').href = 'javascript:getFolderListing(\'' + data.parent_url + '\')';
@@ -680,7 +680,7 @@ function getFolderListing(path) {
 				if (i == data.path.length - 1) {
 					html += data.path[i].title;
 				} else {
-					html += '<a href="#" onclick="getFolderListing(\'' + data.path[i].url + '\')">';
+					html += '<a href="javascript:getFolderListing(\'' + data.path[i].url + '\')">';
 					html += data.path[i].title;
 					html += '</a>';
 				}

@@ -20,17 +20,17 @@
 					<legend>Libraries</legend>
 		            <ul class="configlets">
 		                <li>
-							<a href="#" onclick="ImageDialog.displayPanel('internal_panel'); ImageDialog.getFolderListing('<dtml-var portal_url>');">
+							<a href="javascript:ImageDialog.displayPanel('internal_panel'); ImageDialog.getFolderListing('<dtml-var portal_url>');">
 							    <img alt="" src="<dtml-var portal_url>/logoIcon.gif"/> Home
 							</a>
 						</li>
 		                <li>
-							<a href="#" onclick="ImageDialog.displayPanel('internal_panel'); ImageDialog.getCurrentFolderListing();">
+							<a href="javascript:ImageDialog.displayPanel('internal_panel'); ImageDialog.getCurrentFolderListing();">
 							    <img alt="" src="<dtml-var portal_url>/site_icon.gif"/> Current Folder
 							</a>
 						</li>
 		                <!--li>
-							<a href="#" onclick="ImageDialog.displayPanel('internal_panel');">
+							<a href="javascript:ImageDialog.displayPanel('internal_panel');">
 							    <img alt="" src="<dtml-var portal_url>/popup_calendar.gif"/> Recent Items
 							</a>
 						</li-->
@@ -42,7 +42,7 @@
 					<div class="field">
 						<div id="internalpath" class="formHelp" style="text-align: right;"></div>
 						<label for="internallink">{#advimage_dlg.image_list}</label>
-						<a id="uponelevel" class="link-parent" style="line-height: 1em;" href="#"> Up one level </a>
+						<a id="uponelevel" class="link-parent" style="line-height: 1em;" href="javascript:void(0)"> Up one level </a>
 						<div id="internallinkcontainer" class="widget radioscrolllist input-border" style="height: 260px;">
 						</div>
 					</div>
