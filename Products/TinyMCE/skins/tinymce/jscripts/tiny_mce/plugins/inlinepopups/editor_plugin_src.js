@@ -257,8 +257,8 @@
 			if (t.count == 0 && t.editor.getParam('dialog_type', 'modal') == 'modal') {
 				DOM.add(DOM.doc.body, 'div', {
 					id : 'mceModalBlocker',
-					'class' : (t.editor.settings.inlinepopups_skin || 'clearlooks2') + '_modalBlocker',
-					style : {left : vp.x, top : vp.y, zIndex : t.zIndex - 1}
+					'class' : (t.editor.settings.inlinepopups_skin || 'plonepopup') + '_modalBlocker',
+					style : {zIndex : t.zIndex - 1}
 				});
 
 				DOM.show('mceModalBlocker'); // Reduces flicker in IE
@@ -351,8 +351,8 @@
 				// Setup event blocker
 				DOM.add(d.body, 'div', {
 					id : 'mceEventBlocker',
-					'class' : 'mceEventBlocker ' + (t.editor.settings.inlinepopups_skin || 'clearlooks2'),
-					style : {left : vp.x, top : vp.y, zIndex : t.zIndex + 1}
+					'class' : 'mceEventBlocker ' + (t.editor.settings.inlinepopups_skin || 'plonepopup'),
+					style : {zIndex : t.zIndex + 1}
 				});
 
 				if (tinymce.isIE6 || (tinymce.isIE && !DOM.boxModel))
