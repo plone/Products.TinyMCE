@@ -20,32 +20,32 @@
 					<legend>Libraries</legend>
 		            <ul class="configlets">
 		                <li>
-							<a href="#" onclick="displayPanel('internal_panel'); getFolderListing('<dtml-var portal_url>');">
+							<a href="javascript:displayPanel('internal_panel'); getFolderListing('<dtml-var portal_url>');">
 							    <img alt="" src="<dtml-var portal_url>/logoIcon.gif"/> Home
 							</a>
 						</li>
 		                <li>
-							<a href="#" onclick="displayPanel('internal_panel'); getCurrentFolderListing();">
+							<a href="javascript:displayPanel('internal_panel'); getCurrentFolderListing();">
 							    <img alt="" src="<dtml-var portal_url>/site_icon.gif"/> Current Folder
 							</a>
 						</li>
 		                <!-- li>
-							<a href="#" onclick="displayPanel('internal_panel');">
+							<a href="javascript:displayPanel('internal_panel');">
 							    <img alt="" src="<dtml-var portal_url>/popup_calendar.gif"/> Recent Items
 							</a>
 						</li -->
 		                <li>
-							<a href="#" onclick="displayPanel('external_panel');">
+							<a href="javascript:displayPanel('external_panel');">
 					            <img alt="" src="<dtml-var portal_url>/link_icon.gif"/> External
 		                    </a>
 		                </li>
 		                <li>
-							<a href="#" onclick="displayPanel('mail_panel');">
+							<a href="javascript:displayPanel('mail_panel');">
 					            <img alt="" src="<dtml-var portal_url>/mail_icon.gif"/> Mail
 		                    </a>
 		                </li>
 		                <li>
-							<a href="#" onclick="displayPanel('anchors_panel');">
+							<a href="javascript:displayPanel('anchors_panel');">
 					            <img alt="" src="<dtml-var portal_url>/arrowBottom.gif"/> Anchors
 		                    </a>
 		                </li>
@@ -57,7 +57,7 @@
 					<div class="field">
 						<div id="internalpath" class="formHelp" style="text-align: right;"></div>
 						<label for="internallink">{#advlink_dlg.list}</label>
-						<a id="uponelevel" class="link-parent" style="line-height: 1em;" href="#"> Up one level </a>
+						<a id="uponelevel" class="link-parent" style="line-height: 1em;" href="javascript:void(0)"> Up one level </a>
 						<div id="internallinkcontainer" class="widget radioscrolllist input-border" style="height: 260px;">
 						</div>
 					</div>
