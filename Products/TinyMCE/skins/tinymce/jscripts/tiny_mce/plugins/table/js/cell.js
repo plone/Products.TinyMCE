@@ -83,11 +83,10 @@ function updateAction() {
 							ed.nodeChanged();
 							inst.execCommand('mceEndUndoLevel');
 							tinyMCEPopup.close();
+							return;
 						}
 					});
 				}
-
-				return;
 			}
 
 			updateCell(tdElm);
