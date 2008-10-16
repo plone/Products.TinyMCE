@@ -5107,6 +5107,7 @@ tinymce.create('tinymce.ui.Separator:tinymce.ui.Control', {
 			}
 
 			DOM.setStyles(co, {left : x , top : y});
+
 			t.element.update();
 
 			t.isMenuVisible = 1;
@@ -5233,7 +5234,11 @@ tinymce.create('tinymce.ui.Separator:tinymce.ui.Control', {
 		renderNode : function() {
 			var t = this, s = t.settings, n, tb, co, w;
 
-			w = DOM.create('div', {id : 'menu_' + t.id, 'class' : s['class'], 'style' : 'position:absolute;left:0;top:0;z-index:200000'});
+			if (s['class'].indexOf ('mceListBoxMenu') != -1 && tinymce.EditorManager.settings.theme_advanced_toolbar_location == 'external') {
+				w = DOM.create('div', {id : 'menu_' + t.id, 'class' : s['class'], 'style' : 'position:fixed;_position:absolute;left:0;top:0;z-index:200000'});
+			} else {
+				w = DOM.create('div', {id : 'menu_' + t.id, 'class' : s['class'], 'style' : 'position:absolute;left:0;top:0;z-index:200000'});
+			}
 			co = DOM.add(w, 'div', {id : 'menu_' + t.id + '_co', 'class' : t.classPrefix + (s['class'] ? ' ' + s['class'] : '')});
 			t.element = new Element('menu_' + t.id, {blocker : 1, container : s.container});
 
@@ -6899,12 +6904,13 @@ var tinyMCE = window.tinyMCE = tinymce.EditorManager;
 				t.editorContainer = o.editorContainer;
 			}
 
-			
 			// Resize editor
-			DOM.setStyles(o.sizeContainer || o.editorContainer, {
-				width : w,
-				height : h
-			});
+			if (s.theme_advanced_toolbar_location != 'external') {
+				DOM.setStyles(o.sizeContainer || o.editorContainer, {
+					width : w,
+					height : h
+				});
+			}
 
 			h = (o.iframeHeight || h) + ((h + '').indexOf('%') == -1 ? (o.deltaHeight || 0) : '');
 			if (h < 100)
@@ -7060,8 +7066,13 @@ var tinyMCE = window.tinyMCE = tinymce.EditorManager;
 			if (s.nowrap)
 				t.getBody().style.whiteSpace = "nowrap";
 
-			if (s.auto_resize)
+			if (s.auto_resize) {
+				DOM.setStyle(t.getBody(), 'overflow', 'hidden');
 				t.onNodeChange.add(t.resizeToContent, t);
+				window.setTimeout(function() {
+					t.resizeToContent();
+				}, 1000);
+			}
 
 			if (s.custom_elements) {
 				function handleCustom(ed, o) {
@@ -7260,7 +7271,17 @@ var tinyMCE = window.tinyMCE = tinymce.EditorManager;
 					}, 100);
 				}
 			}, 1);
-	
+
+			// Changed behavior of the blur and focus event so it matches the api docs :XXX doesn't fully work yet
+			/*
+			Event.add(!isGecko ? t.getWin() : t.getDoc(), 'blur', function(e) {
+				t.onDeactivate.dispatch(t, e);
+			});
+			*/
+			Event.add(!isGecko ? t.getWin() : t.getDoc(), 'focus', function(e) {
+				t.onActivate.dispatch(t, e);
+			});
+
 			e = null;
 		},
 
@@ -7277,6 +7298,7 @@ var tinyMCE = window.tinyMCE = tinymce.EditorManager;
 
 							}
 
+			// Changed behavior of the blur and focus event so it matches the api docs
 			if (EditorManager.activeEditor != t) {
 				if ((oed = EditorManager.activeEditor) != null)
 					oed.onDeactivate.dispatch(oed, t);
@@ -7585,8 +7607,17 @@ var tinyMCE = window.tinyMCE = tinymce.EditorManager;
 
 		resizeToContent : function() {
 			var t = this;
-
-			DOM.setStyle(t.id + "_ifr", 'height', t.getBody().scrollHeight);
+			var h;
+			if (isIE) {
+				h = t.getBody().scrollHeight;
+			} else if (tinymce.isWebKit) {
+				h = t.getBody().clientHeight;
+			} else if (tinymce.isOpera) {
+				h = t.getDoc().documentElement.clientHeight;
+			} else {
+				h = t.getDoc().height;
+			}
+			DOM.setStyle(t.id + "_ifr", 'height', Math.max (parseInt(h), parseInt(t.settings.theme_advanced_source_editor_height)));
 		},
 
 		load : function(o) {
