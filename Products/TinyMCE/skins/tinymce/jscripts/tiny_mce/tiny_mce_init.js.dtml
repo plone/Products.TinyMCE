@@ -258,15 +258,17 @@ tinyMCE.init({
   theme_advanced_buttons2 : toolbars[1],
   theme_advanced_buttons3 : toolbars[2],
   theme_advanced_buttons4 : toolbars[3],
-  theme_advanced_toolbar_location:"top",
+  theme_advanced_toolbar_location:"<dtml-if toolbar_external>external<dtml-else>top</dtml-if>",
   theme_advanced_toolbar_align:"left",
-  theme_advanced_path_location:"bottom",
   theme_advanced_path : false,
-  theme_advanced_resizing: <dtml-if resizing>true<dtml-else>false</dtml-if>,
+  theme_advanced_resizing: <dtml-if autoresize>false<dtml-else><dtml-if resizing>true<dtml-else>false</dtml-if></dtml-if>,
+  theme_advanced_resizing_use_cookie: <dtml-if autoresize>false<dtml-else>true</dtml-if>,
   <dtml-if "_.string.find(editor_width,'%') != -1">theme_advanced_resize_horizontal : false,</dtml-if>
 
   theme_advanced_source_editor_width: parseInt('<dtml-var editor_width>'),
   theme_advanced_source_editor_height: parseInt('<dtml-var editor_height>'),
+  
+  auto_resize : <dtml-if autoresize>true<dtml-else>false</dtml-if>,
   
   table_styles: GetTableStyles(),
   table_row_styles: GetRowStyles(),

@@ -14,7 +14,7 @@
 #text_parent.ploneSkin .mceRight, #mce_fullscreen_parent.ploneSkin .mceRight {text-align:right}
 
 /* External */
-.ploneSkin .mceExternalToolbar {position:absolute; border: &dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBorderColor;; border-bottom:0; display:none;}
+.ploneSkin .mceExternalToolbar {position:absolute; border-width: 0pt 0pt &dtml-borderWidth; 0pt; border-style: &dtml-borderStyle;; border-color: &dtml-contentViewBorderColor;; display:none; top: 0px; left: 0px; position: fixed; _position: absolute; _top: expression(eval((document.body.scrollTop)?document.body.scrollTop:document.documentElement.scrollTop)); background-color: &dtml-contentViewBackgroundColor;; width: 100%; _width: expression(document.body.clientWidth); z-index: 3;}
 .ploneSkin .mceExternalToolbar td.mceToolbar {padding-right:13px;}
 .ploneSkin .mceExternalClose {position:absolute; top:3px; right:3px; width:7px; height:7px; background:url(../../img/icons.gif) -820px 0}
 
@@ -52,7 +52,7 @@
 .ploneSkin .mceSeparator {display:block; background:url(../../img/icons.gif) -182px 0; width:2px; height:20px; margin:2px 2px 0 4px}
 
 /* ListBox */
-#text_parent.ploneSkin table.mceListBox, #mce_fullscreen_parent.ploneSkin table.mceListBox {direction:ltr; margin-bottom: 0px}
+.ploneSkin table.mceListBox {direction:ltr; margin-bottom: 0px}
 .ploneSkin table.mceListBox, .ploneSkin .mceListBox a {display:block}
 .ploneSkin table.mceListBox .mceText {padding-left:4px; width:70px; text-align:left; border:&dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBorderColor;; border-right:0; background:&dtml-backgroundColor;; font-family:<dtml-var fontFamily>; font-size:100%; height:20px; line-height:20px; overflow:hidden}
 .ploneSkin table.mceListBox .mceOpen {width:9px; height:20px; background:url(../../img/icons.gif) -741px 0; margin-right:2px; border:&dtml-borderWidth; &dtml-borderStyle; &dtml-contentViewBorderColor;}

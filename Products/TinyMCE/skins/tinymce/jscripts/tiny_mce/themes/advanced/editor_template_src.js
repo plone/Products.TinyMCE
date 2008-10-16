@@ -432,7 +432,9 @@
 
 			// Resize iframe and container
 			DOM.setStyle(ifr, 'height', h - dh);
-			DOM.setStyles(e, {width : w, height : h});
+			
+			if (s.theme_advanced_toolbar_location != 'external')
+				DOM.setStyles(e, {width : w, height : h});
 		},
 
 		destroy : function() {
@@ -460,7 +462,7 @@
 
 			// Create external toolbar
 			if (lo == 'external') {
-				n = c = DOM.create('div', {style : 'position:relative'});
+				n = c = DOM.create('div');
 				n = DOM.add(n, 'div', {id : ed.id + '_external', 'class' : 'mceExternalToolbar'});
 				DOM.add(n, 'a', {id : ed.id + '_external_close', href : 'javascript:;', 'class' : 'mceExternalClose'});
 				n = DOM.add(n, 'table', {id : ed.id + '_tblext', cellSpacing : 0, cellPadding : 0});
@@ -473,7 +475,16 @@
 
 				t._addToolbars(etb, o);
 
-				ed.onMouseUp.add(function() {
+				Event.add(ed.id + '_external', 'click', function() {
+					alert ('click');
+				});
+
+				ed.onDeactivate.add(function(ed, e) {
+					DOM.hide(ed.id + '_external');
+					Event.remove(ed.id + '_external_close', 'click', f);
+				});
+
+				ed.onActivate.add(function() {
 					var e = DOM.get(ed.id + '_external');
 					DOM.show(e);
 
@@ -483,9 +494,6 @@
 						DOM.hide(ed.id + '_external');
 						Event.remove(ed.id + '_external_close', 'click', f);
 					});
-
-					DOM.show(e);
-					DOM.setStyle(e, 'top', 0 - DOM.getRect(ed.id + '_tblext').h - 1);
 
 					// Fixes IE rendering bug
 					DOM.hide(e);
@@ -547,7 +555,8 @@
 						to = cf.createToolbar("toolbar" + i);
 						t._addControls(v, to);
 						DOM.setHTML(n, to.renderHTML());
-						o.deltaHeight -= s.theme_advanced_row_height;
+						if (s.theme_advanced_toolbar_location != 'external')
+							o.deltaHeight -= s.theme_advanced_row_height;
 				}
 			});
 
@@ -649,7 +658,8 @@
 						if (s.theme_advanced_resize_horizontal)
 							c.style.width = Math.max(10, o.cw) + 'px';
 
-						c.style.height = Math.max(10, o.ch) + 'px';
+						if (s.theme_advanced_toolbar_location != 'external')
+							c.style.height = Math.max(10, o.ch) + 'px';
 						DOM.get(ed.id + '_ifr').style.height = Math.max(10, parseInt(o.ch) + t.deltaHeight) + 'px';
 					});
 				}
@@ -727,7 +737,9 @@
 							if (s.theme_advanced_resize_horizontal)
 								c.style.width = Math.max(10, r.w + r.dx) + 'px';
 
-							c.style.height = Math.max(10, r.h + r.dy) + 'px';
+							if (s.theme_advanced_toolbar_location != 'external')
+								c.style.height = Math.max(10, r.h + r.dy) + 'px';
+
 							ifr.style.height = Math.max(10, ifr.clientHeight + r.dy) + 'px';
 
 							if (s.theme_advanced_resizing_use_cookie) {

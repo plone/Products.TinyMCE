@@ -14,6 +14,12 @@ class ITinyMCELayout(Interface):
 		default=True,
 		required=False)
 
+	autoresize = schema.Bool(
+		title=_(u'label_autoresize', default=u"Enable auto resizing of the editor window."),
+		description=_(u"help_resizing", default=u"This option gives you the ability to enable/disable auto resizing the editor window depending on the content."),
+		default=False,
+		required=False)
+
 	editor_width = schema.TextLine(
 		title=_(u'label_editor_width', default=u'Editor width'),
 		description=_(u'help_editor_width', default=u"This option gives you the ability to specify the width of the editor in pixels or percent."),
@@ -22,7 +28,7 @@ class ITinyMCELayout(Interface):
 
 	editor_height = schema.TextLine(
 		title=_(u'label_editor_height', default=u'Editor height'),
-		description=_(u'help_editor_height', default=u"This option gives you the ability to specify the height of the editor in pixels."),
+		description=_(u'help_editor_height', default=u"This option gives you the ability to specify the height of the editor in pixels. If auto resize is enabled this value is used as minimum height."),
 		default=u'400',
 		required=False) 
 
@@ -77,6 +83,12 @@ class ITinyMCEToolbar(Interface):
 		title=_(u'label_toolbar_width', default=u'Toolbar width'),
 		description=_(u'help_toolbar_width', default=u"This option gives you the ability to specify the width of the toolbar in pixels."),
 		default=u'440',
+		required=False)
+
+	toolbar_external = schema.Bool(
+		title=_(u'label_toolbar_external', default=u"External"),
+		description=_(u"help_toolbar_external", default=u"This option enables the external toolbar which will be placed at the top of the page."),
+		default=False,
 		required=False)
 
 	toolbar_save = schema.Bool(

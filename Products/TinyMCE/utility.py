@@ -26,6 +26,7 @@ class TinyMCE(SimpleItem):
         )
 
     resizing = FieldProperty(ITinyMCELayout['resizing'])
+    autoresize = FieldProperty(ITinyMCELayout['autoresize'])
     editor_width = FieldProperty(ITinyMCELayout['editor_width'])
     editor_height = FieldProperty(ITinyMCELayout['editor_height'])
     directionality = FieldProperty(ITinyMCELayout['directionality'])
@@ -38,6 +39,8 @@ class TinyMCE(SimpleItem):
 
     toolbar_width = FieldProperty(ITinyMCEToolbar['toolbar_width'])
     
+    toolbar_external = FieldProperty(ITinyMCEToolbar['toolbar_external'])
+
     toolbar_save = FieldProperty(ITinyMCEToolbar['toolbar_save'])
 
     toolbar_cut = FieldProperty(ITinyMCEToolbar['toolbar_cut'])
