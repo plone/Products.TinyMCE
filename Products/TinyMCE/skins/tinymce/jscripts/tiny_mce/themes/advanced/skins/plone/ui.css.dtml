@@ -8,7 +8,9 @@
 /* Containers */
 .ploneSkin table {background:&dtml-contentViewBackgroundColor;}
 .ploneSkin iframe {display:block; background: &dtml-backgroundColor;}
-.ploneSkin table.mceToolbar {height:26px; margin-bottom: 0px}
+.ploneSkin table.mceToolbar {height:26px !important; margin-bottom: 0px !important}
+.ploneSkin table.mceListBox {margin-bottom: 0px !important}
+.ploneSkin .mceExternalToolbar table {width: auto !important; margin-bottom: 0px !important}
 .ploneSkin .mceLeft {text-align:left}
 .ploneSkin .mceRight {text-align:right}
 
