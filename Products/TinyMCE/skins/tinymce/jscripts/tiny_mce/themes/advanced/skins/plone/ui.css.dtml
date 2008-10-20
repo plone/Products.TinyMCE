@@ -17,7 +17,7 @@
 /* External */
 .ploneSkin .mceExternalToolbar {position:absolute; border-width: 0pt 0pt &dtml-borderWidth; 0pt; border-style: &dtml-borderStyle;; border-color: &dtml-globalBorderColor;; display:none; top: 0px; left: 0px; position: fixed; _position: absolute; _top: expression(eval((document.body.scrollTop)?document.body.scrollTop:document.documentElement.scrollTop)); background-color: &dtml-globalBackgroundColor;; width: 100%; _width: expression(document.body.clientWidth); z-index: 3;}
 .ploneSkin .mceExternalToolbar td.mceToolbar {padding-right:13px;}
-.ploneSkin .mceExternalClose {position:absolute; top:3px; right:3px; width:7px; height:7px; background:url(../../img/icons.gif) -820px 0}
+.ploneSkin .mceExternalClose {position:absolute; top:1px; right:0px; width:22px; height:17px; background:url(../../plugins/inlinepopups/skins/plonepopup/img/buttons.gif) -66px 0px}
 
 /* Layout */
 .ploneSkin table.mceLayout {border:0; <dtml-with portal_tinymce><dtml-if "_.string.find(editor_width,'%') != -1">width: <dtml-var editor_width> !important</dtml-if></dtml-with>}
