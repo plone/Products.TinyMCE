@@ -2,6 +2,7 @@ from zope.interface import implements
 from zope.schema.fieldproperty import FieldProperty
 from zope.component import getUtility
 from zope.interface import classProvides
+from AccessControl import ClassSecurityInfo
 
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.interfaces.utility import ITinyMCELayout
@@ -24,6 +25,7 @@ class TinyMCE(SimpleItem):
         ITinyMCELibraries,
         ITinyMCEResourceTypes
         )
+    security = ClassSecurityInfo()
 
     resizing = FieldProperty(ITinyMCELayout['resizing'])
     autoresize = FieldProperty(ITinyMCELayout['autoresize'])
@@ -109,3 +111,81 @@ class TinyMCE(SimpleItem):
     containsanchors = FieldProperty(ITinyMCEResourceTypes['containsanchors'])
     linkable = FieldProperty(ITinyMCEResourceTypes['linkable'])
     imageobjects = FieldProperty(ITinyMCEResourceTypes['imageobjects'])
+
+    security.declareProtected('View', 'isTinyMCEEnabled')
+    def isTinyMCEEnabled(self, useragent='', allowAnonymous=False, REQUEST=None, context=None, fieldName=None):
+        if not REQUEST:
+            REQUEST = self.REQUEST
+        def numerics(s):
+            """Convert a string into a tuple of all digit sequences"""
+            seq = ['']
+            for c in s:
+                if c.isdigit():
+                    seq[-1] = seq[-1] + c
+                elif seq[-1]:
+                    seq.append('')
+            return tuple([ int(val) for val in seq if val])
+
+        # First check whether the user actually wants kupu
+        pm = getToolByName(self, 'portal_membership')
+        if pm.isAnonymousUser() and not allowAnonymous:
+            return False
+
+        user = pm.getAuthenticatedMember()
+        if not pm.isAnonymousUser():
+            editor = user.getProperty('wysiwyg_editor')
+            if editor and editor.lower() != 'tinymce':
+                return False
+
+        # Then check whether the current content allows html
+        if context is not None and fieldName and hasattr(context, 'getWrappedField'):
+            field = context.getWrappedField(fieldName)
+            if field:
+                allowedTypes = getattr(field, 'allowable_content_types', None)
+                if allowedTypes is not None and not 'text/html' in [t.lower() for t in allowedTypes]:
+                    return False
+
+        # Then check whether their browser supports it.
+        if not useragent:
+            useragent = REQUEST['HTTP_USER_AGENT']
+
+        if 'BEOS' in useragent:
+            return False
+
+        def getver(s):
+            """Extract a version number given the string which precedes it"""
+            pos = useragent.find(s)
+            if pos >= 0:
+                tail = useragent[pos+len(s):].strip()
+                verno = numerics(tail.split(' ')[0])
+                return verno
+            return None
+
+        try:
+            v = getver('Opera/')
+            if not v:
+                v = getver('Opera ')
+            if v:
+                return v >= (9,0)
+
+            mozillaver = getver('Mozilla/')
+            if mozillaver > (5,0):
+                return True
+            elif mozillaver == (5,0):
+                verno = getver(' rv:')
+                if verno:
+                    return verno >= (1,3,1)
+                verno = getver(' AppleWebKit/')
+                if verno:
+                    return verno >= (525,1)
+                    verno = getver(' Safari/')
+                    if verno:
+                        return verno >= (522,12)
+
+            verno = getver('MSIE')
+            if verno:
+                return verno >= (5,5)
+        except:
+            # In case some weird browser makes the test code blow up.
+            pass
+        return False

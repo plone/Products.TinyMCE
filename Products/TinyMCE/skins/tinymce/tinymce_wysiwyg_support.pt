@@ -4,8 +4,10 @@
   
 <!-- wysiwyg default widget -->
 <div metal:define-macro="wysiwygEditorBox">
+<!--
   <script type="text/javascript" charset="iso-8859-1" tal:attributes="src string:${portal_url}/jscripts/tiny_mce/tiny_mce_src.js"> </script>
   <script type="text/javascript" charset="iso-8859-1" tal:attributes="src string:${portal_url}/jscripts/tiny_mce/tiny_mce_init.js"> </script>
+-->
 
   <tal:block define="fname fieldName|inputname|nothing;
                      fformat python:here.getContentType(fname);">

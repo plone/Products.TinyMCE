@@ -7273,11 +7273,9 @@ var tinyMCE = window.tinyMCE = tinymce.EditorManager;
 			}, 1);
 
 			// Changed behavior of the blur and focus event so it matches the api docs :XXX doesn't fully work yet
-			/*
 			Event.add(!isGecko ? t.getWin() : t.getDoc(), 'blur', function(e) {
 				t.onDeactivate.dispatch(t, e);
 			});
-			*/
 			Event.add(!isGecko ? t.getWin() : t.getDoc(), 'focus', function(e) {
 				t.onActivate.dispatch(t, e);
 			});
@@ -7299,12 +7297,14 @@ var tinyMCE = window.tinyMCE = tinymce.EditorManager;
 							}
 
 			// Changed behavior of the blur and focus event so it matches the api docs
+			/*
 			if (EditorManager.activeEditor != t) {
 				if ((oed = EditorManager.activeEditor) != null)
 					oed.onDeactivate.dispatch(oed, t);
 
 				t.onActivate.dispatch(t, oed);
 			}
+			*/
 
 			EditorManager._setActive(t);
 		},

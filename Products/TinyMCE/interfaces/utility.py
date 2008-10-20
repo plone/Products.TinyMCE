@@ -434,3 +434,6 @@ class ITinyMCE(
 	ITinyMCEResourceTypes
 	):
 	"""This interface defines the Utility."""
+
+	def isTinyMCEEnabled(useragent='', allowAnonymous=False, REQUEST=None, context=None, fieldName=None):
+		"""Is TinyMCE enabled for this combination of client browser, permissions, and field."""
