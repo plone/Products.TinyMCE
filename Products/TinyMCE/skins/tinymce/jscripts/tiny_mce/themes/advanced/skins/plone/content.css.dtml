@@ -2,6 +2,9 @@
 /* <dtml-call "REQUEST.set('portal_url', portal_url())"> */
 html { font-size: &dtml-fontBaseSize;; }
 body.mceForceColors {background:#FFF; color:#000;}
+body#tinymce {
+background: &dtml-backgroundColor; url(input_background.gif) repeat-x scroll 0% 0%}
+}
 
 .mceContentBody {
     background: transparent;

@@ -93,6 +93,13 @@
 					ed.dom.loadCSS(ed.baseURI.toAbsolute("themes/advanced/skins/" + ed.settings.skin + "/content.css"));
 			});
 
+			ed.onActivate.add(function(ed) {
+				DOM.addClass(DOM.get(ed.id + '_tbl'), 'mceEditorFocus');
+			});
+			ed.onDeactivate.add(function(ed) {
+				DOM.removeClass(DOM.get(ed.id + '_tbl'), 'mceEditorFocus');
+			});
+
 			ed.onSetProgressState.add(function(ed, b, ti) {
 				var co, id = ed.id, tb;
 
@@ -475,19 +482,9 @@
 
 				t._addToolbars(etb, o);
 
-				Event.add(ed.id + '_external', 'click', function() {
-					alert ('click');
-				});
-
-				ed.onDeactivate.add(function(ed, e) {
-					DOM.hide(ed.id + '_external');
-					Event.remove(ed.id + '_external_close', 'click', f);
-				});
-
-				ed.onActivate.add(function() {
+				ed.onMouseUp.add(function() {
 					var e = DOM.get(ed.id + '_external');
 					DOM.show(e);
-
 					DOM.hide(lastExtID);
 
 					var f = Event.add(ed.id + '_external_close', 'click', function() {
