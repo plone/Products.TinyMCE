@@ -4,6 +4,7 @@ from zope.component import getUtility
 from zope.interface import classProvides
 from AccessControl import ClassSecurityInfo
 
+from Products.TinyMCE.libs import json
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.interfaces.utility import ITinyMCELayout
 from Products.TinyMCE.interfaces.utility import ITinyMCEToolbar
@@ -189,3 +190,238 @@ class TinyMCE(SimpleItem):
             # In case some weird browser makes the test code blow up.
             pass
         return False
+
+    security.declarePrivate('getEnabledButtons')
+    def getEnabledButtons(self):
+        buttons = []
+
+        # Get enabled buttons from control panel
+        if self.toolbar_save:
+            buttons.append('save')
+
+        if self.toolbar_cut:
+            buttons.append('cut')
+        if self.toolbar_copy:
+            buttons.append('copy')
+        if self.toolbar_paste:
+            buttons.append('paste')
+
+        if self.toolbar_pastetext:
+            buttons.append('pastetext')
+        if self.toolbar_pasteword:
+            buttons.append('pasteword')
+
+        if self.toolbar_undo:
+            buttons.append('undo')
+        if self.toolbar_redo:
+            buttons.append('redo')
+
+        if self.toolbar_search:
+            buttons.append('search')
+        if self.toolbar_replace:
+            buttons.append('replace')
+
+        if self.toolbar_formatselect:
+            buttons.append('formatselect')
+        if self.toolbar_styleselect:
+            buttons.append('styleselect')
+
+        if self.toolbar_bold:
+            buttons.append('bold')
+        if self.toolbar_italic:
+            buttons.append('italic')
+        if self.toolbar_underline:
+            buttons.append('underline')
+        if self.toolbar_strikethrough:
+            buttons.append('strikethrough')
+        if self.toolbar_sub:
+            buttons.append('sub')
+        if self.toolbar_sup:
+            buttons.append('sup')
+
+        if self.toolbar_forecolor:
+            buttons.append('forecolor')
+        if self.toolbar_backcolor:
+            buttons.append('backcolor')
+
+        if self.toolbar_justifyleft:
+            buttons.append('justifyleft')
+        if self.toolbar_justifycenter:
+            buttons.append('justifycenter')
+        if self.toolbar_justifyright:
+            buttons.append('justifyright')
+        if self.toolbar_justifyfull:
+            buttons.append('justifyfull')
+
+        if self.toolbar_bullist:
+            buttons.append('bullist')
+        if self.toolbar_numlist:
+            buttons.append('numlist')
+        if self.toolbar_outdent:
+            buttons.append('outdent')
+        if self.toolbar_indent:
+            buttons.append('indent')
+
+        if self.toolbar_tablecontrols:
+            buttons.append('tablecontrols')
+
+        if self.toolbar_link:
+            buttons.append('link')
+        if self.toolbar_unlink:
+            buttons.append('unlink')
+        if self.toolbar_anchor:
+            buttons.append('anchor')
+        if self.toolbar_image:
+            buttons.append('image')
+        if self.toolbar_media:
+            buttons.append('media')
+
+        if self.toolbar_charmap:
+            buttons.append('charmap')
+        if self.toolbar_hr:
+            buttons.append('hr')
+        if self.toolbar_advhr:
+            buttons.append('advhr')
+        if self.toolbar_insertdate:
+            buttons.append('insertdate')
+        if self.toolbar_inserttime:
+            buttons.append('inserttime')
+        if self.toolbar_emotions:
+            buttons.append('emotions')
+        if self.toolbar_nonbreaking:
+            buttons.append('nonbreaking')
+        if self.toolbar_pagebreak:
+            buttons.append('pagebreak')
+
+        if self.toolbar_print:
+            buttons.append('print')
+        if self.toolbar_preview:
+            buttons.append('preview')
+        if self.toolbar_iespell:
+            buttons.append('iespell')
+        if self.toolbar_removeformat:
+            buttons.append('removeformat')
+        if self.toolbar_cleanup:
+            buttons.append('cleanup')
+        if self.toolbar_visualaid:
+            buttons.append('visualaid')
+        if self.toolbar_visualchars:
+            buttons.append('visualchars')
+        if self.toolbar_code:
+            buttons.append('code')
+        if self.toolbar_fullscreen:
+            buttons.append('fullscreen')
+
+        # Return the buttons
+        return buttons
+
+    security.declarePrivate ('translateButtonsFromKupu')
+    def translateButtonsFromKupu(self, buttons):
+
+        return_buttons = []
+        
+        for button in buttons:
+            if button == 'save-button':
+                return_buttons.append('save')
+            elif button == 'bg-basicmarkup':
+                pass
+            elif button == 'bold-button':
+                return_buttons.append('bold')
+            elif button == 'italic-button':
+                return_buttons.append('italic')
+            elif button == 'bg-supsuper-button':
+                pass
+            elif button == 'subscript':
+                return_buttons.append('sub')
+            elif button == 'supscript':
+                return_buttons.append('sup')
+            elif button == 'bg-colorchooser':
+                pass
+            elif button == 'forecolor-button':
+                return_buttons.append('forecolor')
+            elif button == 'hilitecolor-button':
+                return_buttons.append('backcolor')
+            elif button == 'bg-justify':
+                pass
+            elif button == 'justifyleft-button':
+                return_buttons.append('justifyleft')
+            elif button == 'justifycenter-button':
+                return_buttons.append('justifycenter')
+            elif button == 'justifyright-button':
+                return_buttons.append('justifyright')
+            elif button == 'bg-list':
+                pass
+            elif button == 'list-ol-addbutton':
+                return_buttons.append('numlist')
+            elif button == 'list-ul-addbutton':
+                return_buttons.append('bullist')
+            elif button == 'definitionlist':
+                pass
+            elif button == 'bg-indent':
+                pass
+            elif button == 'outdent-button':
+                return_buttons.append('outdent')
+            elif button == 'indent-button':
+                return_buttons.append('indent')
+            elif button == 'bg-drawers':
+                pass
+            elif button == 'imagelibdrawer-button':
+                return_buttons.append('image')
+            elif button == 'linklibdrawer-button' or button == 'linkdrawer-button' or button == 'anchors-button':
+                if 'link' not in return_buttons:
+                    return_buttons.append('link')
+            elif button == 'embed-tab':
+                return_buttons.append('media')
+            elif button == 'manage-anchors-tab':
+                return_buttons.append('anchor')
+            elif button == 'toc-tab':
+                pass
+            elif button == 'tabledrawer-button':
+                return_buttons.append('tablecontrols')
+            elif button == 'bg-remove':
+                pass
+            elif button == 'removeimage-button':
+                pass
+            elif button == 'removelink-button':
+                return_buttons.append('unlink')
+            elif button == 'bg-undo':
+                pass
+            elif button == 'undo-button':
+                return_buttons.append('undo')
+            elif button == 'redo-button':
+                return_buttons.append('redo')
+            elif button == 'spellchecker':
+                return_buttons.append('iespell')
+            elif button == 'source':
+                return_buttons.append('code')
+            elif button == 'styles' or button == 'ulstyles' or 'olstyles':
+                if 'format_select' not in return_buttons:
+                    return_buttons.append('format_select')
+                if 'style_select' not in return_buttons:
+                    return_buttons.append('style_select')
+            elif button == 'zoom':
+                return_buttons.append('fullscreen')
+            else:
+                if button not in return_buttons:
+                    return_buttons.append(button)
+        return return_buttons
+
+    security.declareProtected('View', 'isTinyMCEEnabled')
+    def getConfiguration(self, context=None, field=None):
+        results = {}
+
+        widget = getattr(field, 'widget', None)
+        filter_buttons = getattr(widget, 'filter_buttons', None)
+        allow_buttons = getattr(widget, 'allow_buttons', None)
+        
+        # Get buttons from control panel
+        results['buttons'] = self.getEnabledButtons()
+
+        if allow_buttons is not None:
+            allow_buttons = self.translateButtonsFromKupu(buttons=allow_buttons)
+            results['buttons'] = filter(lambda x:x in results['buttons'],allow_buttons)
+        if filter_buttons is not None:
+            filter_buttons = self.translateButtonsFromKupu(buttons=filter_buttons)
+            results['buttons'] = filter(lambda x:x not in filter_buttons, results['buttons'])
+
+        return json.write(results)

@@ -124,75 +124,16 @@ function GetCellStyles () {
 	return result.join (";");
 }
 
-function GetToolbars() {
-	var buttons = new Array();
+var toolbars = []
 
-	<dtml-if toolbar_save>buttons.push('save');</dtml-if>
+function GetToolbars(sId) {
+	var buttons = eval('(' + document.getElementById (sId).title + ')').buttons;
 
-	<dtml-if toolbar_cut>buttons.push('cut');</dtml-if>
-	<dtml-if toolbar_copy>buttons.push('copy');</dtml-if>
-	<dtml-if toolbar_paste>buttons.push('paste');</dtml-if>
+//	var kek = document.getElementById ('text');
+//	var kektitle = kek.title;
+//	var kekobject = eval('(' + kektitle + ')');
+//	alert (kekobject.toolbar_bold);
 
-	<dtml-if toolbar_pastetext>buttons.push('pastetext');</dtml-if>
-	<dtml-if toolbar_pasteword>buttons.push('pasteword');</dtml-if>
-
-	<dtml-if toolbar_undo>buttons.push('undo');</dtml-if>
-	<dtml-if toolbar_redo>buttons.push('redo');</dtml-if>
-
-	<dtml-if toolbar_search>buttons.push('search');</dtml-if>
-	<dtml-if toolbar_replace>buttons.push('replace');</dtml-if>
-
-	<dtml-if toolbar_formatselect>buttons.push('formatselect');</dtml-if>
-	<dtml-if toolbar_styleselect>buttons.push('styleselect');</dtml-if>
-
-	<dtml-if toolbar_bold>buttons.push('bold');</dtml-if>
-	<dtml-if toolbar_italic>buttons.push('italic');</dtml-if>
-	<dtml-if toolbar_underline>buttons.push('underline');</dtml-if>
-	<dtml-if toolbar_strikethrough>buttons.push('strikethrough');</dtml-if>
-	<dtml-if toolbar_sub>buttons.push('sub');</dtml-if>
-	<dtml-if toolbar_sup>buttons.push('sup');</dtml-if>
-
-	<dtml-if toolbar_forecolor>buttons.push('forecolor');</dtml-if>
-	<dtml-if toolbar_backcolor>buttons.push('backcolor');</dtml-if>
-
-	<dtml-if toolbar_justifyleft>buttons.push('justifyleft');</dtml-if>
-	<dtml-if toolbar_justifycenter>buttons.push('justifycenter');</dtml-if>
-	<dtml-if toolbar_justifyright>buttons.push('justifyright');</dtml-if>
-	<dtml-if toolbar_justifyfull>buttons.push('justifyfull');</dtml-if>
-
-	<dtml-if toolbar_bullist>buttons.push('bullist');</dtml-if>
-	<dtml-if toolbar_numlist>buttons.push('numlist');</dtml-if>
-	<dtml-if toolbar_outdent>buttons.push('outdent');</dtml-if>
-	<dtml-if toolbar_indent>buttons.push('indent');</dtml-if>
-
-	<dtml-if toolbar_tablecontrols>buttons.push('tablecontrols');</dtml-if>
-
-	<dtml-if toolbar_link>buttons.push('link');</dtml-if>
-	<dtml-if toolbar_unlink>buttons.push('unlink');</dtml-if>
-	<dtml-if toolbar_anchor>buttons.push('anchor');</dtml-if>
-	<dtml-if toolbar_image>buttons.push('image');</dtml-if>
-	<dtml-if toolbar_media>buttons.push('media');</dtml-if>
-
-	<dtml-if toolbar_charmap>buttons.push('charmap');</dtml-if>
-	<dtml-if toolbar_hr>buttons.push('hr');</dtml-if>
-	<dtml-if toolbar_advhr>buttons.push('advhr');</dtml-if>
-	<dtml-if toolbar_insertdate>buttons.push('insertdate');</dtml-if>
-	<dtml-if toolbar_inserttime>buttons.push('inserttime');</dtml-if>
-	<dtml-if toolbar_emotions>buttons.push('emotions');</dtml-if>
-	<dtml-if toolbar_nonbreaking>buttons.push('nonbreaking');</dtml-if>
-	<dtml-if toolbar_pagebreak>buttons.push('pagebreak');</dtml-if>
-
-	<dtml-if toolbar_print>buttons.push('print');</dtml-if>
-	<dtml-if toolbar_preview>buttons.push('preview');</dtml-if>
-	<dtml-if toolbar_iespell>buttons.push('iespell');</dtml-if>
-	<dtml-if toolbar_removeformat>buttons.push('removeformat');</dtml-if>
-	<dtml-if toolbar_cleanup>buttons.push('cleanup');</dtml-if>
-	<dtml-if toolbar_visualaid>buttons.push('visualaid');</dtml-if>
-	<dtml-if toolbar_visualchars>buttons.push('visualchars');</dtml-if>
-	<dtml-if toolbar_code>buttons.push('code');</dtml-if>
-	<dtml-if toolbar_fullscreen>buttons.push('fullscreen');</dtml-if>
-
-	var result = new Array();
 	var toolbar_temp = [[],[],[],[]];
 
 	var toolbar_width = parseInt('<dtml-var toolbar_width>');
@@ -213,12 +154,7 @@ function GetToolbars() {
 		}
 	}
 
-	result[0] = toolbar_temp[0].join(',');
-	result[1] = toolbar_temp[1].join(',');
-	result[2] = toolbar_temp[2].join(',');
-	result[3] = toolbar_temp[3].join(',');
-
-	return result;
+	toolbars = [toolbar_temp[0].join(','), toolbar_temp[1].join(','), toolbar_temp[2].join(','), toolbar_temp[3].join(',')];
 }
 
 function GetBase() {
@@ -241,12 +177,24 @@ var realBase = document.location.href.substring(0,document.location.href.length-
 **(?:<(?!t[dhr]|a\\b)[^>]*?>)*(?=(?:(?!<t[dhr]\\b).)*?<\\/t[dh]>)++++ig
 */
 var regexes="class\\s*=?\\s*\"?(?:Mso[^\"]*?)\"?++++gi**<![-]-.*?--\\s*>++++g";
-var toolbars = GetToolbars();
+
+//jq(document).ready (function () {
+//	GetToolbars ('text');
+
+tinymce.dom.Event.add (window, 'load', function () {
+
+var aInstances = tinymce.DOM.select('textarea');
+
+for (var i = 0; i < aInstances.length; i++) {
+
+if (tinymce.DOM.hasClass(aInstances[i], 'mce_editable')) {
+
+GetToolbars(aInstances[i].id);
 
 tinyMCE.init({
   // General options
-  mode:"specific_textareas",
-  editor_selector:"mce_editable",
+  mode:"exact",
+  elements:aInstances[i].id,
   theme:"advanced",
   skin:"plone",
   inlinepopups_skin : "plonepopup",
@@ -374,5 +322,8 @@ tinyMCE.init({
   +"u[class|id|title],"
   +"ul[class|compact<compact|id|title|type]"
 });
+}
+}
 
+});
 /* </dtml-with> */
