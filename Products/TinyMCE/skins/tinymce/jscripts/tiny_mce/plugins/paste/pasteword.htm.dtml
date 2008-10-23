@@ -7,7 +7,7 @@
 	<script type="text/javascript" src="js/pasteword.js"></script>
 	<base target="_self" />
 </head>
-<body onresize="resizeInputs();" style="display:none;">
+<body style="display:none;">
 	<div class="dialog-wrapper">
 		<form name="source" onsubmit="saveContent();" action="#">
 			<fieldset>

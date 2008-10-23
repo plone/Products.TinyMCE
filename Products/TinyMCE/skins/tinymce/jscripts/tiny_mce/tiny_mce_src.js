@@ -2636,9 +2636,10 @@ tinymce.create('static tinymce.util.XHR', {
 				return;
 			}
 
-			if (isIE && document.location.protocol != 'https:') {
+			// Plone: Fix error when https is used
+			if (isIE) { // && document.location.protocol != 'https:') {
 				// Fake DOMContentLoaded on IE
-				document.write('<script id=__ie_onload defer src=\'javascript:""\';><\/script>');
+				document.write('<script id=__ie_onload defer><\/script>');
 				DOM.get("__ie_onload").onreadystatechange = function() {
 					if (this.readyState == "complete") {
 						Event._pageInit();
@@ -6171,11 +6172,22 @@ tinymce.create('tinymce.ui.Toolbar:tinymce.ui.Container', {
 		preInit : function() {
 			var t = this, lo = window.location;
 
-			// Plone fix
-			var lo_array = lo.href.split('/');
-			lo_array.pop();
-			lo_array.pop();
-			tinymce.documentBaseURL = lo_array.join('/');
+            // Plone fix
+            var lo_array = lo.href.split('/');
+            if (lo.href.indexOf('portal_factory') != -1) {
+                while (lo_array[lo_array.length-1] != 'portal_factory') {
+                    lo_array.pop();
+                }
+                lo_array.pop();
+            } else {
+                if (lo_array.length > 4) {
+                    lo_array.pop();
+                }
+                if (lo_array.length > 4) {
+                    lo_array.pop();
+                }
+            }
+            tinymce.documentBaseURL = lo_array.join('/') + '/';
 
 			// Setup some URLs where the editor API is located and where the document is
 			/*

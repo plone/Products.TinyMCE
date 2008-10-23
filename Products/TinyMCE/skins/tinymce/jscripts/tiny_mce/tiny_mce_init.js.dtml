@@ -166,8 +166,12 @@ function GetBase() {
 		}
 		href_array.pop();
 	} else {
-		href_array.pop();
-		href_array.pop();
+		if (href_array.length > 4) {
+			href_array.pop();
+		}
+		if (href_array.length > 4) {
+			href_array.pop();
+		}
 	}
 	return href_array.join('/') + '/';
 }
@@ -287,13 +291,13 @@ tinyMCE.init({
   +"kbd[class|id|title],"
   +"label[accesskey|class|for|id|title],"
   +"legend[accesskey|class|id|title],"
-  +"li[class|id|title|type|value],"
+  +"li[class|id|title|type|value|align],"
   +"link[class|href|hreflang|id|media|rel|rev|title|target|type],"
   +"map[class|id|name|title],"
   +"menu[class|compact<compact|id|title],"
   +"noframes[class|id|title],"
   +"noscript[class|id|title],"
-  +"ol[class|compact<compact|id|start|title|type],"
+  +"ol[class|compact<compact|id|start|title|type|align],"
   +"optgroup[class|disabled<disabled|id|label|title],"
   +"option[class|disabled<disabled|id|label|selected<selected|title|value],"
   +"p[align<center?right?justify|class|id|style|title],"
@@ -314,13 +318,13 @@ tinyMCE.init({
   +"td[class|colspan|id|rowspan|title|nowrap|valign|align|style],"
   +"textarea[accesskey|class|cols|disabled<disabled|id|name|readonly<readonly|rows|tabindex|title]," 
   +"tfoot[off|class|id|title|valign<baseline?bottom?middle?top],"
-  +"th[class|id|title|nowrap],"
+  +"th[class|id|title|nowrap|align],"
   +"thead[class|id|title],"
   +"title[dir<ltr?rtl],"
   +"tr[class|id|title],"
   +"tt[class|id|title],"
   +"u[class|id|title],"
-  +"ul[class|compact<compact|id|title|type]"
+  +"ul[class|compact<compact|id|title|type|align]"
 });
 }
 }

@@ -7,7 +7,7 @@
 	<script type="text/javascript" src="js/pastetext.js"></script>
 	<base target="_self" />
 </head>
-<body onresize="resizeInputs();" style="display:none; overflow:hidden;">
+<body style="display:none; overflow:hidden;">
 	<div class="dialog-wrapper">
 		<form name="source" onsubmit="saveContent();return false;" action="#">
 			<fieldset>
@@ -16,7 +16,7 @@
 					<label for="htmlSource">{#paste.paste_text_desc}</label>
 					<div class="formHelp">{#paste_dlg.text_title}</div>
 					<div class="widget">
-						<textarea name="htmlSource" id="htmlSource" rows="15" cols="100" style="" wrap="soft" class="mceFocus"></textarea>
+						<textarea name="htmlSource" id="htmlSource" rows="15" cols="100" style="width: 398px; height: 230px;" wrap="soft" class="mceFocus"></textarea>
 					</div>
 				</div>
 
