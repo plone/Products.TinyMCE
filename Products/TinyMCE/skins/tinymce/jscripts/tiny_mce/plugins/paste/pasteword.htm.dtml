@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html id="region-content" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>{#paste.paste_word_desc}</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="js/pasteword.js"></script>
+	<base target="_self" />
+</head>
+<body onresize="resizeInputs();" style="display:none;">
+	<div class="dialog-wrapper">
+		<form name="source" onsubmit="saveContent();" action="#">
+			<fieldset>
+				<legend>{#paste.paste_word_desc}</legend>
+				<div class="field">
+					<label for="htmlSource">{#paste.paste_word_desc}</label>
+					<div class="formHelp">{#paste_dlg.word_title}</div>
+					<div class="widget">
+						<div id="iframecontainer"></div>
+					</div>
+				</div>
+
+			</fieldset>
+
+			<div class="visualClear"><!-- --></div>
+
+			<div class="mceActionPanel formControls">
+				<span class="actionButtons">
+					<input type="submit" id="insert" class="context" name="insert" value="{#insert}" onclick="saveContent();" />
+					<input type="button" id="cancel" class="context" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+				</span>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

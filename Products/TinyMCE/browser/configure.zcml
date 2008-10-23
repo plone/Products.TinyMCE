@@ -1,0 +1,42 @@
+<configure 
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="tinymce">
+
+    <browser:page
+        for="..interfaces.utility.ITinyMCE"
+        name="tinymce-controlpanel"
+        class=".controlpanel.TinyMCEControlPanelForm"
+        permission="cmf.ManagePortal"
+        />
+
+    <browser:page
+        for="..interfaces.utility.ITinyMCE"
+        name="tinymce-getstyle"
+        class=".style.TinyMCEStyle"
+		attribute="getStyle"
+        permission="zope2.View"
+        />
+
+	<browser:pages
+        for="*"
+        class=".browser.TinyMCEBrowserView"
+		permission="zope2.View">
+		<browser:page attribute="upload" name="tinymce-upload" /> 
+		<browser:page attribute="jsonLinkableFolderListing" name="tinymce-jsonlinkablefolderlisting" />
+		<browser:page attribute="jsonImageFolderListing" name="tinymce-jsonimagefolderlisting" />
+		<browser:page attribute="jsonDetails" name="tinymce-jsondetails" />
+	</browser:pages>
+
+	<browser:resourceDirectory
+		name="tinymce.images"
+		directory="images"
+		/>
+
+	<browser:resourceDirectory
+		name="tinymce.js"
+		directory="js"
+		/>
+	
+</configure>
+

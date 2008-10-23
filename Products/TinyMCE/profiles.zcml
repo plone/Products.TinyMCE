@@ -1,0 +1,14 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="tinymce">
+
+    <genericsetup:registerProfile
+        name="TinyMCE"
+        title="TinyMCE Editor Support"
+        directory="profiles/default"
+        description="Adds the TinyMCE editor to the site."
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+</configure>
