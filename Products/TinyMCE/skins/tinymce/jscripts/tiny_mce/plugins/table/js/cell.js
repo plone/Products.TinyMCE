@@ -16,14 +16,11 @@ function init() {
 	var st = ed.dom.parseStyle(ed.dom.getAttrib(tdElm, "style"));
 
 	// Get table cell data
-	var celltype = tdElm.nodeName.toLowerCase();
-	var align = ed.dom.getAttrib(tdElm, 'align');
 	var valign = ed.dom.getAttrib(tdElm, 'valign');
 	var width = trimSize(getStyle(tdElm, 'width', 'width'));
 	var height = trimSize(getStyle(tdElm, 'height', 'height'));
 	var bordercolor = convertRGBToHex(getStyle(tdElm, 'bordercolor', 'borderLeftColor'));
 	var bgcolor = convertRGBToHex(getStyle(tdElm, 'bgcolor', 'backgroundColor'));
-	var className = ed.dom.getAttrib(tdElm, 'class');
 	var backgroundimage = getStyle(tdElm, 'background', 'backgroundImage').replace(new RegExp("url\\('?([^']*)'?\\)", 'gi'), "$1");;
 	var id = ed.dom.getAttrib(tdElm, 'id');
 	var lang = ed.dom.getAttrib(tdElm, 'lang');
@@ -31,7 +28,6 @@ function init() {
 	var scope = ed.dom.getAttrib(tdElm, 'scope');
 
 	// Setup form
-	addClassesToList('class', 'table_cell_styles');
 	TinyMCE_EditableSelects.init();
 
 	formObj.bordercolor.value = bordercolor;
@@ -42,10 +38,7 @@ function init() {
 	formObj.id.value = id;
 	formObj.lang.value = lang;
 	formObj.style.value = ed.dom.serializeStyle(st);
-	selectByValue(formObj, 'align', align);
 	selectByValue(formObj, 'valign', valign);
-	selectByValue(formObj, 'class', className, true, true);
-	selectByValue(formObj, 'celltype', celltype);
 	selectByValue(formObj, 'dir', dir);
 	selectByValue(formObj, 'scope', scope);
 
@@ -70,24 +63,7 @@ function updateAction() {
 
 	switch (getSelectValue(formObj, 'action')) {
 		case "cell":
-			var celltype = getSelectValue(formObj, 'celltype');
 			var scope = getSelectValue(formObj, 'scope');
-
-			if (ed.getParam("accessibility_warnings", 1)) {
-				if (celltype == "th" && scope == "") {
-					tinyMCEPopup.confirm(ed.getLang('table_dlg.missing_scope', '', true), function(s) {
-						if (s) {
-							updateCell(tdElm);
-
-							ed.addVisual();
-							ed.nodeChanged();
-							inst.execCommand('mceEndUndoLevel');
-							tinyMCEPopup.close();
-							return;
-						}
-					});
-				}
-			}
 
 			updateCell(tdElm);
 			break;
@@ -139,21 +115,17 @@ function nextCell(elm) {
 function updateCell(td, skip_id) {
 	var inst = ed;
 	var formObj = document.forms[0];
-	var curCellType = td.nodeName.toLowerCase();
-	var celltype = getSelectValue(formObj, 'celltype');
 	var doc = inst.getDoc();
 	var dom = ed.dom;
 
 	if (!skip_id)
 		td.setAttribute('id', formObj.id.value);
 
-	td.setAttribute('align', formObj.align.value);
 	td.setAttribute('vAlign', formObj.valign.value);
 	td.setAttribute('lang', formObj.lang.value);
 	td.setAttribute('dir', getSelectValue(formObj, 'dir'));
 	td.setAttribute('style', ed.dom.serializeStyle(ed.dom.parseStyle(formObj.style.value)));
 	td.setAttribute('scope', formObj.scope.value);
-	ed.dom.setAttrib(td, 'class', getSelectValue(formObj, 'class'));
 
 	// Clear deprecated attributes
 	ed.dom.setAttrib(td, 'width', '');
@@ -178,20 +150,6 @@ function updateCell(td, skip_id) {
 		td.style.backgroundImage = "url('" + formObj.backgroundimage.value + "')";
 	else
 		td.style.backgroundImage = '';
-
-	if (curCellType != celltype) {
-		// changing to a different node type
-		var newCell = doc.createElement(celltype);
-
-		for (var c=0; c<td.childNodes.length; c++)
-			newCell.appendChild(td.childNodes[c].cloneNode(1));
-
-		for (var a=0; a<td.attributes.length; a++)
-			ed.dom.setAttrib(newCell, td.attributes[a].name, ed.dom.getAttrib(td, td.attributes[a].name));
-
-		td.parentNode.replaceChild(newCell, td);
-		td = newCell;
-	}
 
 	dom.setAttrib(td, 'style', dom.serializeStyle(dom.parseStyle(td.style.cssText)));
 

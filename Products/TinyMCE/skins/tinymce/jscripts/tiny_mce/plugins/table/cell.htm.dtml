@@ -15,15 +15,6 @@
 			<ul class="formTabs"><li id="general_tab" class="formTab firstFormTab"><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;" class="selected"><span>{#table_dlg.general_tab}</span></a></li><li id="advanced_tab" class="formTab lastFormTab"><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;"><span>{#table_dlg.advanced_tab}</span></a></li></ul>
 			<fieldset id="general_panel" class="formPanel">
 				<div class="field">
-					<label for="class">{#class_name}</label>
-					<div class="widget">
-						<select id="class" name="class">
-							<option value="" selected="selected">{#not_set}</option>
-						</select>
-					</div>
-				</div>
-
-				<div class="field">
 					<label for="width">{#table_dlg.width}</label>
 					<div class="widget">
 						<input id="width" name="width" type="text" value="" size="4" maxlength="4" onchange="changedSize();" />
@@ -34,18 +25,6 @@
 					<label for="height">{#table_dlg.height}</label>
 					<div class="widget">
 						<input id="height" name="height" type="text" value="" size="4" maxlength="4" onchange="changedSize();" />
-					</div>
-				</div>
-
-				<div class="field">
-					<label for="align">{#table_dlg.align}</label>
-					<div class="widget">
-						<select id="align" name="align">
-							<option value="">{#not_set}</option>
-							<option value="center">{#table_dlg.align_middle}</option>
-							<option value="left">{#table_dlg.align_left}</option>
-							<option value="right">{#table_dlg.align_right}</option>
-						</select>
 					</div>
 				</div>
 
@@ -63,16 +42,6 @@
 			</fieldset>
 
 			<fieldset id="advanced_panel" class="formPanel" style="display: none;">
-				<div class="field">
-					<label for="celltype">{#table_dlg.cell_type}</label>
-					<div class="widget">
-						<select id="celltype" name="celltype">
-							<option value="td">{#table_dlg.td}</option>
-							<option value="th">{#table_dlg.th}</option>
-						</select>
-					</div>
-				</div>
-
 				<div class="field">
 					<label for="action">{#table_dlg.cell_title}</label>
 					<div class="widget">

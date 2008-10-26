@@ -14,10 +14,8 @@ function init() {
 
 	// Get table row data
 	var rowtype = trElm.parentNode.nodeName.toLowerCase();
-	var align = dom.getAttrib(trElm, 'align');
 	var valign = dom.getAttrib(trElm, 'valign');
 	var height = trimSize(getStyle(trElm, 'height', 'height'));
-	var className = dom.getAttrib(trElm, 'class');
 	var bgcolor = convertRGBToHex(getStyle(trElm, 'bgcolor', 'backgroundColor'));
 	var backgroundimage = getStyle(trElm, 'background', 'backgroundImage').replace(new RegExp("url\\('?([^']*)'?\\)", 'gi'), "$1");;
 	var id = dom.getAttrib(trElm, 'id');
@@ -25,7 +23,6 @@ function init() {
 	var dir = dom.getAttrib(trElm, 'dir');
 
 	// Setup form
-	addClassesToList('class', 'table_row_styles');
 	TinyMCE_EditableSelects.init();
 
 	formObj.bgcolor.value = bgcolor;
@@ -34,9 +31,7 @@ function init() {
 	formObj.id.value = id;
 	formObj.lang.value = lang;
 	formObj.style.value = dom.serializeStyle(st);
-	selectByValue(formObj, 'align', align);
 	selectByValue(formObj, 'valign', valign);
-	selectByValue(formObj, 'class', className, true, true);
 	selectByValue(formObj, 'rowtype', rowtype);
 	selectByValue(formObj, 'dir', dir);
 
@@ -100,12 +95,10 @@ function updateRow(tr_elm, skip_id, skip_parent) {
 	if (!skip_id)
 		tr_elm.setAttribute('id', formObj.id.value);
 
-	tr_elm.setAttribute('align', getSelectValue(formObj, 'align'));
 	tr_elm.setAttribute('vAlign', getSelectValue(formObj, 'valign'));
 	tr_elm.setAttribute('lang', formObj.lang.value);
 	tr_elm.setAttribute('dir', getSelectValue(formObj, 'dir'));
 	tr_elm.setAttribute('style', dom.serializeStyle(dom.parseStyle(formObj.style.value)));
-	dom.setAttrib(tr_elm, 'class', getSelectValue(formObj, 'class'));
 
 	// Clear deprecated attributes
 	tr_elm.setAttribute('background', '');

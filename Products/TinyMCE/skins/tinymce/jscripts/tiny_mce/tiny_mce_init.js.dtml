@@ -31,7 +31,7 @@ function GetButtonWidth(button) {
 	var result = 23;	// default width
 	switch (button) {
 		case 'formatselect':
-			result = 88;
+			result = 150;
 			break;
 		case 'styleselect':
 			result = 88;
@@ -49,36 +49,6 @@ function GetButtonWidth(button) {
 	return result;
 }
 
-function GetBlockformats () {
-	var blockformats = "<dtml-in "blockformats.split('\n')"><dtml-var sequence-item>;</dtml-in>".split(";");
-	var result = new Array();
-	var field;
-	
-	for (var i=0; i < blockformats.length; i++) {
-		if (blockformats[i].length > 0) {
-			field = blockformats[i].split("|")
-			result.push (field[0] + "=" + field[1]);
-		}
-	}
-	
-	return result.join (";");
-}
-
-function GetStyles () {
-	var styles = "<dtml-in "styles.split('\n')"><dtml-var sequence-item>;</dtml-in>".split(";");
-	var result = new Array();
-	var field;
-	
-	for (var i=0; i < styles.length; i++) {
-		if (styles[i].length > 0) {
-			field = styles[i].split("|")
-			result.push (field[0] + "=" + field[1]);
-		}
-	}
-	
-	return result.join (";");
-}
-
 function GetTableStyles () {
 	var tablestyles = "<dtml-in "tablestyles.split('\n')"><dtml-var sequence-item>;</dtml-in>".split(";");
 	var result = new Array();
@@ -94,45 +64,100 @@ function GetTableStyles () {
 	return result.join (";");
 }
 
-function GetRowStyles () {
-	var rowstyles = "<dtml-in "rowstyles.split('\n')"><dtml-var sequence-item>;</dtml-in>".split(";");
-	var result = new Array();
-	var field;
-	
-	for (var i=0; i < rowstyles.length; i++) {
-		if (rowstyles[i].length > 0) {
-			field = rowstyles[i].split("|")
-			result.push (field[0] + "=" + field[1]);
-		}
-	}
-	
-	return result.join (";");
+var configuration = null;
+var toolbars = [];
+
+function GetConfiguration(sId) {
+	configuration = eval('(' + document.getElementById (sId).title + ')');
+	GetToolbars(sId);
 }
 
-function GetCellStyles () {
-	var cellstyles = "<dtml-in "cellstyles.split('\n')"><dtml-var sequence-item>;</dtml-in>".split(";");
-	var result = new Array();
-	var field;
-	
-	for (var i=0; i < cellstyles.length; i++) {
-		if (cellstyles[i].length > 0) {
-			field = cellstyles[i].split("|")
-			result.push (field[0] + "=" + field[1]);
+function GetStyles(sId) {
+
+	var styles = configuration.styles;
+	var h = {'Text': [], 'Selection': [], 'Tables': [], 'Lists': [], 'Print': []};
+	var styletype = "";
+
+	// Push title
+	h['Text'].push('{ title: "Text", tag: "", className: "-", type: "Text" }');
+	h['Selection'].push('{ title: "Selection", tag: "", className: "-", type: "Selection" }');
+	h['Tables'].push('{ title: "Tables", tag: "table", className: "-", type: "Tables" }');
+	h['Lists'].push('{ title: "Lists", tag: "ul", className: "-", type: "Lists" }');
+	h['Lists'].push('{ title: "Lists", tag: "ol", className: "-", type: "Lists" }');
+	h['Print'].push('{ title: "Print", tag: "", className: "-", type: "Print" }');
+
+	// Add defaults
+	h['Text'].push('{ title: "Normal paragraph", tag: "p", className: "", type: "Text" }');
+
+	h['Lists'].push('{ title: "Disc", tag: "ul", className: "", listType: "disc", type: "Lists" }');
+	h['Lists'].push('{ title: "Square", tag: "ul", className: "", listType: "square", type: "Lists" }');
+	h['Lists'].push('{ title: "Circle", tag: "ul", className: "", listType: "circle", type: "Lists" }');
+
+	h['Lists'].push('{ title: "Numbers", tag: "ol", className: "", listType: "1", type: "Lists" }');
+	h['Lists'].push('{ title: "Lower Alpha", tag: "ol", className: "", listType: "a", type: "Lists" }');
+	h['Lists'].push('{ title: "Upper Alpha", tag: "ol", className: "", listType: "A", type: "Lists" }');
+	h['Lists'].push('{ title: "Lower Roman", tag: "ol", className: "", listType: "i", type: "Lists" }');
+	h['Lists'].push('{ title: "Upper Roman", tag: "ol", className: "", listType: "I", type: "Lists" }');
+
+	for (var i = 0; i < styles.length; i++) {
+		e = styles[i].split('|');
+		if (e.length <= 2) {
+			e[2] = "";
+		}
+		switch (e[1].toLowerCase()) {
+			case 'span':
+				styletype = "Selection";
+				break;
+			case 'tr':
+			case 'td':
+			case 'th':
+			case 'table':
+				styletype = "Tables";
+				break;
+			default:
+				styletype = "Text";
+				break;
+		}
+		if (e[2] == "pageBreak") {
+			styletype = "Print";
+		}
+		h[styletype].push('{ title: "' + e[0] + '", tag: "' + e[1] + '", className: "' + e[2] + '", type: "' + styletype + '" }');
+	}
+	h['Selection'].push('{ title: "(remove style)", tag: "", className: "", type: "Selection" }');
+	h['Tables'].push('{ title: "Plain cell", tag: "td", className: "", type: "Tables" }');
+
+	// Add items to array
+	var a = [];
+	if (h['Text'].length > 1) {
+		for (var i = 0; i < h['Text'].length; i++) {
+			a.push(h['Text'][i]);
 		}
 	}
-	
-	return result.join (";");
+	if (h['Selection'].length > 1) {
+		for (var i = 0; i < h['Selection'].length; i++) {
+			a.push(h['Selection'][i]);
+		}
+	}
+	if (h['Tables'].length > 1) {
+		for (var i = 0; i < h['Tables'].length; i++) {
+			a.push(h['Tables'][i]);
+		}
+	}
+	if (h['Lists'].length > 1) {
+		for (var i = 0; i < h['Lists'].length; i++) {
+			a.push(h['Lists'][i]);
+		}
+	}
+	if (h['Print'].length > 1) {
+		for (var i = 0; i < h['Print'].length; i++) {
+			a.push(h['Print'][i]);
+		}
+	}
+	return '[' + a.join(',') + ']';
 }
-
-var toolbars = []
 
 function GetToolbars(sId) {
-	var buttons = eval('(' + document.getElementById (sId).title + ')').buttons;
-
-//	var kek = document.getElementById ('text');
-//	var kektitle = kek.title;
-//	var kekobject = eval('(' + kektitle + ')');
-//	alert (kekobject.toolbar_bold);
+	var buttons = configuration.buttons;
 
 	var toolbar_temp = [[],[],[],[]];
 
@@ -182,10 +207,7 @@ var realBase = document.location.href.substring(0,document.location.href.length-
 */
 var regexes="class\\s*=?\\s*\"?(?:Mso[^\"]*?)\"?++++gi**<![-]-.*?--\\s*>++++g";
 
-//jq(document).ready (function () {
-//	GetToolbars ('text');
-
-tinymce.dom.Event.add (window, 'load', function () {
+var InitTinyMCE = function () {
 
 var aInstances = tinymce.DOM.select('textarea');
 
@@ -193,7 +215,7 @@ for (var i = 0; i < aInstances.length; i++) {
 
 if (tinymce.DOM.hasClass(aInstances[i], 'mce_editable')) {
 
-GetToolbars(aInstances[i].id);
+GetConfiguration(aInstances[i].id);
 
 tinyMCE.init({
   // General options
@@ -202,10 +224,9 @@ tinyMCE.init({
   theme:"advanced",
   skin:"plone",
   inlinepopups_skin : "plonepopup",
-  plugins : "safari,pagebreak,table,save,advhr,advimage,advlink,emotions,iespell,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups",
+  plugins : "safari,pagebreak,table,save,advhr,advimage,advlink,emotions,iespell,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups,style",
 
   theme_advanced_styles: GetStyles(),
-  theme_advanced_blockformats: GetBlockformats(),
   theme_advanced_buttons1 : toolbars[0],
   theme_advanced_buttons2 : toolbars[1],
   theme_advanced_buttons3 : toolbars[2],
@@ -224,8 +245,6 @@ tinyMCE.init({
   auto_resize : <dtml-if autoresize>true<dtml-else>false</dtml-if>,
   
   table_styles: GetTableStyles(),
-  table_row_styles: GetRowStyles(),
-  table_cell_styles: GetCellStyles(),
 
   directionality: "<dtml-if "directionality == 'rtl'">rtl<dtml-else>ltr</dtml-if>",
 
@@ -329,5 +348,14 @@ tinyMCE.init({
 }
 }
 
+};
+
+tinymce.dom.Event.add (window, 'load', InitTinyMCE);
+
+kukit.actionsGlobalRegistry.register("init-tinymce", function(oper) {
+	InitTinyMCE();
+});
+kukit.actionsGlobalRegistry.register("save-tinymce", function(oper) {
+	tinymce.EditorManager.activeEditor.save();
 });
 /* </dtml-with> */

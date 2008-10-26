@@ -1,0 +1,6 @@
+form.inlineForm textarea.mce_editable:load {
+    action-client: init-tinymce;
+}
+form.inlineForm input[name=kss-save]:click {
+	action-client: save-tinymce;
+}

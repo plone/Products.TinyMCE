@@ -34,11 +34,8 @@ class TinyMCE(SimpleItem):
     editor_height = FieldProperty(ITinyMCELayout['editor_height'])
     directionality = FieldProperty(ITinyMCELayout['directionality'])
     content_css = FieldProperty(ITinyMCELayout['content_css'])
-    blockformats = FieldProperty(ITinyMCELayout['blockformats'])
     styles = FieldProperty(ITinyMCELayout['styles'])
     tablestyles = FieldProperty(ITinyMCELayout['tablestyles'])
-    rowstyles = FieldProperty(ITinyMCELayout['rowstyles'])
-    cellstyles = FieldProperty(ITinyMCELayout['cellstyles'])
 
     toolbar_width = FieldProperty(ITinyMCEToolbar['toolbar_width'])
     
@@ -58,8 +55,7 @@ class TinyMCE(SimpleItem):
     toolbar_search = FieldProperty(ITinyMCEToolbar['toolbar_search'])
     toolbar_replace = FieldProperty(ITinyMCEToolbar['toolbar_replace'])
 
-    toolbar_formatselect = FieldProperty(ITinyMCEToolbar['toolbar_formatselect'])
-    toolbar_styleselect = FieldProperty(ITinyMCEToolbar['toolbar_styleselect'])
+    toolbar_style = FieldProperty(ITinyMCEToolbar['toolbar_style'])
 
     toolbar_bold = FieldProperty(ITinyMCEToolbar['toolbar_bold'])
     toolbar_italic = FieldProperty(ITinyMCEToolbar['toolbar_italic'])
@@ -221,10 +217,8 @@ class TinyMCE(SimpleItem):
         if self.toolbar_replace:
             buttons.append('replace')
 
-        if self.toolbar_formatselect:
-            buttons.append('formatselect')
-        if self.toolbar_styleselect:
-            buttons.append('styleselect')
+        if self.toolbar_style:
+            buttons.append('style')
 
         if self.toolbar_bold:
             buttons.append('bold')
@@ -395,10 +389,8 @@ class TinyMCE(SimpleItem):
             elif button == 'source':
                 return_buttons.append('code')
             elif button == 'styles' or button == 'ulstyles' or 'olstyles':
-                if 'format_select' not in return_buttons:
-                    return_buttons.append('format_select')
-                if 'style_select' not in return_buttons:
-                    return_buttons.append('style_select')
+                if 'style' not in return_buttons:
+                    return_buttons.append('style')
             elif button == 'zoom':
                 return_buttons.append('fullscreen')
             else:
@@ -413,7 +405,19 @@ class TinyMCE(SimpleItem):
         widget = getattr(field, 'widget', None)
         filter_buttons = getattr(widget, 'filter_buttons', None)
         allow_buttons = getattr(widget, 'allow_buttons', None)
-        
+        redefine_parastyles = getattr (widget, 'redefine_parastyles', None)
+        parastyles = getattr (widget, 'parastyles', None)
+
+        results['styles'] = []
+        if redefine_parastyles is None or not redefine_parastyles:
+            for tablestyle in self.tablestyles.split('\n'):
+                tablestylefields = tablestyle.split('|');
+                results['styles'].append(tablestylefields[0] + '|table|' + tablestylefields[0]);
+            results['styles'].extend(self.styles.split('\n'))
+
+        if parastyles is not None:
+            results['styles'].extend(parastyles)
+
         # Get buttons from control panel
         results['buttons'] = self.getEnabledButtons()
 
