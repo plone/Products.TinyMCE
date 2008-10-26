@@ -14,31 +14,11 @@
 		<form onsubmit="updateAction();return false;">
 			<ul class="formTabs"><li id="general_tab" class="formTab firstFormTab"><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;" class="selected"><span>{#table_dlg.general_tab}</span></a></li><li id="advanced_tab" class="formTab lastFormTab"><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;"><span>{#table_dlg.advanced_tab}</span></a></li></ul>
 			<fieldset id="general_panel" class="formPanel">
-				<div class="field">
-					<label for="class">{#class_name}</label>
-					<div class="widget">
-						<select id="class" name="class">
-							<option value="" selected="selected">{#not_set}</option>
-						</select>
-					</div>
-				</div>
 
 				<div class="field">
 					<label for="height">{#table_dlg.height}</label>
 					<div class="widget">
 						<input name="height" type="text" id="height" value="" size="4" maxlength="4" onchange="changedSize();" />
-					</div>
-				</div>
-
-				<div class="field">
-					<label for="align">{#table_dlg.align}</label>
-					<div class="widget">
-						<select id="align" name="align">
-							<option value="">{#not_set}</option>
-							<option value="center">{#table_dlg.align_middle}</option>
-							<option value="left">{#table_dlg.align_left}</option>
-							<option value="right">{#table_dlg.align_right}</option>
-						</select>
 					</div>
 				</div>
 

@@ -55,7 +55,7 @@
 /* ListBox */
 .ploneSkin table.mceListBox {direction:ltr; margin-bottom: 0px}
 .ploneSkin table.mceListBox, .ploneSkin .mceListBox a {display:block}
-.ploneSkin table.mceListBox .mceText {padding-left:4px; width:70px; text-align:left; border:&dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;; border-right:0; background:&dtml-backgroundColor;; font-family:<dtml-var fontFamily>; font-size:100%; height:20px; line-height:20px; overflow:hidden}
+.ploneSkin table.mceListBox .mceText {padding-left:4px; width:131px; text-align:left; border:&dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;; border-right:0; background:&dtml-backgroundColor;; font-family:<dtml-var fontFamily>; font-size:100%; height:20px; line-height:20px; overflow:hidden}
 .ploneSkin table.mceListBox .mceOpen {width:9px; height:20px; background:url(../../img/icons.gif) -741px 0; margin-right:2px; border:&dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;}
 .ploneSkin table.mceListBoxEnabled:hover .mceText, .ploneSkin .mceListBoxHover .mceText, .ploneSkin .mceListBoxSelected .mceText {border:&dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;; border-right:0; background:&dtml-backgroundColor;}
 .ploneSkin table.mceListBoxEnabled:hover .mceOpen, .ploneSkin .mceListBoxHover .mceOpen, .ploneSkin .mceListBoxSelected .mceOpen {background-color:&dtml-globalBackgroundColor;; border:&dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;}
@@ -91,7 +91,7 @@
 .ploneSkin .mce_forecolor span.mceAction, .ploneSkin .mce_backcolor span.mceAction {overflow:hidden; height:16px}
 
 /* Menu */
-.ploneSkin .mceMenu {position:absolute; left:0; top:0; z-index:1000; border:&dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;}
+.ploneSkin .mceMenu {position:absolute; left:1px; top:0px; z-index:1000; border:&dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;}
 .ploneSkin .mceNoIcons span.mceIcon {width:0;}
 .ploneSkin .mceNoIcons a .mceText {padding-left:10px}
 .ploneSkin .mceMenu table {background:&dtml-backgroundColor;}
@@ -104,7 +104,8 @@
 .ploneSkin .mceMenu .mceIcon {position:absolute; top:0; left:0; width:22px;}
 .ploneSkin .mceMenu .mceMenuItemEnabled a:hover, .ploneSkin .mceMenu .mceMenuItemActive {background-color:&dtml-globalBackgroundColor;}
 .ploneSkin td.mceMenuItemSeparator {background:&dtml-globalBorderColor;; height:&dtml-borderWidth;}
-.ploneSkin .mceMenuItemTitle a {border:0; background:&dtml-globalBackgroundColor;; border-bottom:&dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;}
+.ploneSkin .mceMenuItemTitle a {border:0; background:&dtml-globalBackgroundColor;; border-bottom:&dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;; border-top:&dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;}
+.ploneSkin .mceFirst .mceMenuItemTitle a {border:0; background:&dtml-globalBackgroundColor;}
 .ploneSkin .mceMenuItemTitle span.mceText {color:&dtml-fontColor;; font-weight:bold; padding-left:4px}
 .ploneSkin .mceMenuItemDisabled .mceText {color:&dtml-discreetColor;}
 .ploneSkin .mceMenuItemSelected .mceIcon {background:url(img/menu_check.gif)}

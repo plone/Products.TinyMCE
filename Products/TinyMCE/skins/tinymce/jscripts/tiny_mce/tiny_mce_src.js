@@ -5509,7 +5509,7 @@ tinymce.create('tinymce.ui.Separator:tinymce.ui.Control', {
 				menu_line : 1,
 				'class' : t.classPrefix + 'Menu mceNoIcons',
 				max_width : 150,
-				max_height : 150
+				max_height : 500
 			});
 
 			m.onHideMenu.add(t.hideMenu, t);

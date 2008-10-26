@@ -46,34 +46,16 @@ class ITinyMCELayout(Interface):
 		default=u'',
 		required=False)
 
-	blockformats = schema.Text(
-		title=_(u'label_blockformats', default=u'Blockformats'),
-		description=_(u'help_blockformats', default=u"Enter a list of blockformats to appear in the format pulldown. Format is title|tag, one per line."),
-		default=u'Heading|h2\nSubheading|h3\nLiteral|pre\nParagraph|p',
-		required=False) 
-
 	styles = schema.Text(
 		title=_(u'label_styles', default=u'Styles'),
-		description=_(u'help_styles', default=u"Enter a list of styles to appear in the style pulldown. Format is title|class, one per line."),
-		default=u'Discreet|discreet\nPull-quote|pullquote\nCall-out|callout\nHighlight|visualHighlight',
+		description=_(u'help_styles', default=u"Enter a list of styles to appear in the style pulldown. Format is title|tag or title|tag|className, one per line."),
+		default=u'Heading|h2\nSubheading|h3\nLiteral|pre\nDiscreet|p|discreet\nPull-quote|div|pullquote\nCall-out|p|callout\nHighlight|span|visualHighlight\nOdd row|tr|odd\nEven row|tr|even\nHeading cell|th|\nPage break (print only)|div|pageBreak\nClear floats|div|visualClear',
 		required=False) 
 
 	tablestyles = schema.Text(
 		title=_(u'label_tablestyles', default=u'Table styles'),
 		description=_(u'help_tablestyles', default=u"Enter a list of styles to appear in the table style pulldown. Format is title|class, one per line."),
 		default=u'Subdued grid|plain\nInvisible grid|invisible\nFancy listing|listing\nFancy grid listing|grid listing\nFancy vertical listing|vertical listing',
-		required=False) 
-
-	rowstyles = schema.Text(
-		title=_(u'label_rowstyles', default=u'Row styles'),
-		description=_(u'help_rowstyles', default=u"Enter a list of styles to appear in the row style pulldown. Format is title|class, one per line."),
-		default=u'Odd row|odd\nEven row|even',
-		required=False) 
-
-	cellstyles = schema.Text(
-		title=_(u'label_cellstyles', default=u'Cell styles'),
-		description=_(u'help_cellstyles', default=u"Enter a list of styles to appear in the cell style pulldown. Format is title|class, one per line."),
-		default=u'Plain|',
 		required=False) 
 
 class ITinyMCEToolbar(Interface):
@@ -149,6 +131,12 @@ class ITinyMCEToolbar(Interface):
 		title=_(u'label_toolbar_replace', default=u"Find/Replace"),
 		description=_(u"help_toolbar_replace", default=u""),
 		default=False,
+		required=False)
+
+	toolbar_style = schema.Bool(
+		title=_(u'label_toolbar_style', default=u"Select Style"),
+		description=_(u"help_toolbar_style", default=u""),
+		default=True,
 		required=False)
 
 	toolbar_formatselect = schema.Bool(
