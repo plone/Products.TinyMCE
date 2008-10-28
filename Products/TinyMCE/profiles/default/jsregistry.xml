@@ -4,7 +4,7 @@
              compression="none"
              cookable="False"
              enabled="True"
-             expression=""
+             expression="python:portal.portal_tinymce.isTinyMCEEnabled(REQUEST=request)"
              id="jscripts/tiny_mce/tiny_mce_src.js"
              inline="False"/>
 
@@ -12,7 +12,7 @@
              compression="none"
              cookable="False"
              enabled="True"
-             expression=""
+             expression="python:portal.portal_tinymce.isTinyMCEEnabled(REQUEST=request)"
              id="jscripts/tiny_mce/tiny_mce_init.js"
              inline="False"/>
 </object>
