@@ -3,6 +3,7 @@ from zope.schema.fieldproperty import FieldProperty
 from zope.component import getUtility
 from zope.interface import classProvides
 from AccessControl import ClassSecurityInfo
+from Products.CMFCore.utils import getToolByName
 
 from Products.TinyMCE.libs import json
 from Products.TinyMCE.interfaces.utility import ITinyMCE
