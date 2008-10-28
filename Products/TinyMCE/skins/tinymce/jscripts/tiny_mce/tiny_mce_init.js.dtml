@@ -208,7 +208,16 @@ var realBase = document.location.href.substring(0,document.location.href.length-
 var regexes="class\\s*=?\\s*\"?(?:Mso[^\"]*?)\"?++++gi**<![-]-.*?--\\s*>++++g";
 
 var InitTinyMCE = function () {
+	LoadTinyMCE();
+	kukit.actionsGlobalRegistry.register("init-tinymce", function(oper) {
+		LoadTinyMCE();
+	});
+	kukit.actionsGlobalRegistry.register("save-tinymce", function(oper) {
+		tinymce.EditorManager.activeEditor.save();
+	});
+};
 
+function LoadTinyMCE () {
 var aInstances = tinymce.DOM.select('textarea');
 
 for (var i = 0; i < aInstances.length; i++) {
@@ -348,14 +357,8 @@ tinyMCE.init({
 }
 }
 
-};
+}
 
 tinymce.dom.Event.add (window, 'load', InitTinyMCE);
 
-kukit.actionsGlobalRegistry.register("init-tinymce", function(oper) {
-	InitTinyMCE();
-});
-kukit.actionsGlobalRegistry.register("save-tinymce", function(oper) {
-	tinymce.EditorManager.activeEditor.save();
-});
 /* </dtml-with> */
