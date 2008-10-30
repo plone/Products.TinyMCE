@@ -139,18 +139,6 @@ class ITinyMCEToolbar(Interface):
 		default=True,
 		required=False)
 
-	toolbar_formatselect = schema.Bool(
-		title=_(u'label_toolbar_formatselect', default=u"Select Format"),
-		description=_(u"help_toolbar_formatselect", default=u""),
-		default=True,
-		required=False)
-
-	toolbar_styleselect = schema.Bool(
-		title=_(u'label_toolbar_styleselect', default=u"Select Style"),
-		description=_(u"help_toolbar_styleselect", default=u""),
-		default=True,
-		required=False)
-
 	toolbar_bold = schema.Bool(
 		title=_(u'label_toolbar_bold', default=u"Bold"),
 		description=_(u"help_toolbar_bold", default=u""),
