@@ -399,6 +399,159 @@ class TinyMCE(SimpleItem):
                     return_buttons.append(button)
         return return_buttons
 
+    security.declarePrivate ('getValidElements')
+    def getValidElements(self):
+
+        XHTML_TAGS = set(
+            'a abbr acronym address area b base bdo big blockquote body br '
+            'button caption cite code col colgroup dd del div dfn dl dt em '
+            'fieldset form h1 h2 h3 h4 h5 h6 head hr html i img input ins kbd '
+            'label legend li link map meta noscript object ol optgroup option '
+            'p param pre q samp script select small span strong style sub sup '
+            'table tbody td textarea tfoot th thead title tr tt ul var'.split())
+
+        CORE_ATTRS = set(
+            'id title style class'.split())
+
+        I18N_ATTRS = set(
+            'lang dir'.split())
+
+        FOCUS_ATTRS = set(
+            'accesskey tabindex'.split())
+
+        COMMON_ATTRS = CORE_ATTRS | I18N_ATTRS
+
+        valid_elements = {
+            'a': COMMON_ATTRS | FOCUS_ATTRS | set('charset type name href hreflang rel rev shape coords target'.split()),
+            'abbr': COMMON_ATTRS.copy(),
+            'acronym': COMMON_ATTRS.copy(),
+            'address': COMMON_ATTRS.copy(),
+            'applet': CORE_ATTRS | set('codebase archive code object alt name width height align hspace vspace'.split()),
+            'area': COMMON_ATTRS | FOCUS_ATTRS | set('shape coords href nohref alt target'.split()),
+            'b': COMMON_ATTRS.copy(),
+            'base': set('id href target'.split()),
+            'bdo': CORE_ATTRS | set('lang dir'.split()),
+            'big': COMMON_ATTRS.copy(),
+            'blockquote': COMMON_ATTRS | set('cite'.split()),
+            'body': COMMON_ATTRS | set('background bgcolor text link vlink alink'.split()),
+            'br': CORE_ATTRS | set('clear'.split()),
+            'button': COMMON_ATTRS | FOCUS_ATTRS | set('name value type disabled'.split()),
+            'caption': COMMON_ATTRS | set('align'.split()),
+            'center': COMMON_ATTRS.copy(),
+            'cite': COMMON_ATTRS.copy(),
+            'code': COMMON_ATTRS.copy(),
+            'col': COMMON_ATTRS | set('span width align char charoff valign'.split()),
+            'colgroup': COMMON_ATTRS | set('span width align char charoff valign'.split()),
+            'dd': COMMON_ATTRS.copy(),
+            'del': COMMON_ATTRS | set('cite datetime'.split()),
+            'dfn': COMMON_ATTRS.copy(),
+            'div': COMMON_ATTRS | set('align'.split()),
+            'dl': COMMON_ATTRS | set('compact'.split()),
+            'dt': COMMON_ATTRS.copy(),
+            'em': COMMON_ATTRS.copy(),
+            'embed': '*',
+            'fieldset': COMMON_ATTRS.copy(),
+            'form': COMMON_ATTRS | set('action method name enctype accept accept-charset target'.split()),
+            'h1': COMMON_ATTRS | set('align'.split()),
+            'h2': COMMON_ATTRS | set('align'.split()),
+            'h3': COMMON_ATTRS | set('align'.split()),
+            'h4': COMMON_ATTRS | set('align'.split()),
+            'h5': COMMON_ATTRS | set('align'.split()),
+            'h6': COMMON_ATTRS | set('align'.split()),
+            'head': I18N_ATTRS | set('id profile'.split()),
+            'hr': COMMON_ATTRS | set('align noshade size width'.split()),
+            'html': I18N_ATTRS | set('id xmlns'.split()),
+            'i': COMMON_ATTRS.copy(),
+            'img': COMMON_ATTRS | set('src alt name longdesc height width usemap ismap align border hspace vspace'.split()),
+            'input': COMMON_ATTRS | FOCUS_ATTRS | set('type name value checked disabled readonly size maxlength src alt usemap accept align'.split()),
+            'ins': COMMON_ATTRS | set('cite datetime'.split()),
+            'kbd': COMMON_ATTRS.copy(),
+            'label': COMMON_ATTRS | FOCUS_ATTRS | set('for'.split()),
+            'legend': COMMON_ATTRS | set('accesskey align'.split()),
+            'li': COMMON_ATTRS | set('type value'.split()),
+            'link': COMMON_ATTRS | set('charset href hreflang type rel rev media target'.split()),
+            'map': I18N_ATTRS | set('id title name style class'.split()),
+            'meta': I18N_ATTRS | set('id http-equiv name content scheme'.split()),
+            'noscript': COMMON_ATTRS.copy(),
+            'object': COMMON_ATTRS | set('declare classid codebase data type codetype archive standby height width usemap name tabindex align border hspace vspace'.split()),
+            'ol': COMMON_ATTRS | set('compact type start'.split()),
+            'optgroup': COMMON_ATTRS | set('disabled label'.split()),
+            'option': COMMON_ATTRS | set('selected disabled label value'.split()),
+            'p': COMMON_ATTRS | set('align'.split()),
+            'param': set('id name value valuetype type'.split()),
+            'pre': COMMON_ATTRS | set('width'.split()),
+            'q': COMMON_ATTRS | set('cite'.split()),
+            'samp': COMMON_ATTRS.copy(),
+            'script': set('id charset type language src defer'.split()),
+            'select': COMMON_ATTRS | FOCUS_ATTRS | set('type name value checked disabled readonly size maxlength src alt usemap accept align multiple'.split()),
+            'small': COMMON_ATTRS.copy(),
+            'span': COMMON_ATTRS.copy(),
+            'strong': COMMON_ATTRS.copy(),
+            'style': I18N_ATTRS | set('id type media title'.split()),
+            'sub': COMMON_ATTRS.copy(),
+            'sup': COMMON_ATTRS.copy(),
+            'table': COMMON_ATTRS | set('summary width border frame rules cellspacing cellpadding align bgcolor'.split()),
+            'tbody': COMMON_ATTRS | set('align char charoff valign'.split()),
+            'td': COMMON_ATTRS | set('align char charoff valign bgcolor abbr axis headers scope rowspan colspan nowrap width height'.split()),
+            'textarea': COMMON_ATTRS | FOCUS_ATTRS | set('name rows cols disabled readonly'.split()),
+            'tfoot': COMMON_ATTRS | set('align char charoff valign'.split()),
+            'th': COMMON_ATTRS | set('align char charoff valign bgcolor abbr axis headers scope rowspan colspan nowrap width height'.split()),
+            'thead': COMMON_ATTRS | set('align char charoff valign'.split()),
+            'title': I18N_ATTRS | set('id'.split()),
+            'tr': COMMON_ATTRS | set('align char charoff valign bgcolor'.split()),
+            'tt': COMMON_ATTRS.copy(),
+            'ul': COMMON_ATTRS | set('compact type'.split()),
+            'var': COMMON_ATTRS.copy(),
+            }
+
+        # Get safe html transform
+        safe_html = getattr(getToolByName(self, 'portal_transforms'), 'safe_html')
+
+        # Get custom tags
+        valid_tags = set(safe_html.get_parameter_value('valid_tags'))
+        custom_tags = valid_tags - XHTML_TAGS
+
+        # Add custom tags
+        for custom_tag in custom_tags:
+            if not valid_elements.has_key(custom_tag):
+                valid_elements[custom_tag] = COMMON_ATTRS
+
+        # Get kupu library tool
+        kupu_library_tool = getToolByName(self, 'kupu_library_tool')
+
+        # Get stripped combinations
+        stripped_combinations = kupu_library_tool.get_stripped_combinations()
+
+        # Strip combinations
+        for (stripped_combination_tags, stripped_combination_attributes) in stripped_combinations:
+            stripped_combination_attributes_set = set(stripped_combination_attributes)
+            for stripped_combination_tag in stripped_combination_tags:
+                if valid_elements.has_key(stripped_combination_tag):
+                    valid_elements[stripped_combination_tag] -= stripped_combination_attributes_set
+
+        # Remove to be stripped attributes
+        stripped_attributes = set(kupu_library_tool.get_stripped_attributes())
+        style_whitelist = kupu_library_tool.getStyleWhitelist()
+        style_attribute = "style"
+        if len(style_whitelist) > 0:
+            style_attribute = 'style<' + '?'.join(style_whitelist)
+
+        # Remove elements which are not in valid_tags
+        for valid_element in valid_elements.keys():
+            if valid_element not in valid_tags:
+                del valid_elements[valid_element]
+            else:
+                valid_elements[valid_element] -= stripped_attributes
+                if 'style' in valid_elements[valid_element]:
+                    valid_elements[valid_element].remove('style')
+                    valid_elements[valid_element].add(style_attribute)
+
+        # Convert sets to lists
+        for valid_element in valid_elements.keys():
+            valid_elements[valid_element] = sorted(valid_elements[valid_element])
+
+        return valid_elements
+
     security.declareProtected('View', 'isTinyMCEEnabled')
     def getConfiguration(self, context=None, field=None):
         results = {}
@@ -428,5 +581,7 @@ class TinyMCE(SimpleItem):
         if filter_buttons is not None:
             filter_buttons = self.translateButtonsFromKupu(buttons=filter_buttons)
             results['buttons'] = filter(lambda x:x not in filter_buttons, results['buttons'])
+
+        results['valid_elements'] = self.getValidElements()
 
         return json.write(results)

@@ -72,7 +72,7 @@ function GetConfiguration(sId) {
 	GetToolbars(sId);
 }
 
-function GetStyles(sId) {
+function GetStyles() {
 
 	var styles = configuration.styles;
 	var h = {'Text': [], 'Selection': [], 'Tables': [], 'Lists': [], 'Print': []};
@@ -154,6 +154,22 @@ function GetStyles(sId) {
 		}
 	}
 	return '[' + a.join(',') + ']';
+}
+
+function GetValidElements() {
+	var valid_elements = configuration.valid_elements;
+
+	a = [];
+
+	for (var valid_element in valid_elements) {
+		var s = valid_element;
+		if (valid_elements[valid_element].length > 0) {
+			s += '[' + valid_elements[valid_element].join ('|') + ']';
+		}
+		a.push (s);
+	}
+	alert (a.join(','));
+	return a.join (',');
 }
 
 function GetToolbars(sId) {
@@ -278,7 +294,9 @@ tinyMCE.init({
   save_callback : "plugin_regexrep_save",
   setupcontent_regex : regexes,
   save_regex : regexes,
-  valid_elements:""
+  valid_elements: GetValidElements(),
+ /* 
+  ""
   +"a[class|href|id|name|tabindex|title|target],"
   +"abbr[class|id|title],"
   +"acronym[class|id|title],"
@@ -353,6 +371,7 @@ tinyMCE.init({
   +"tt[class|id|title],"
   +"u[class|id|title],"
   +"ul[class|compact<compact|id|title|type|align]"
+  */
 });
 }
 }
