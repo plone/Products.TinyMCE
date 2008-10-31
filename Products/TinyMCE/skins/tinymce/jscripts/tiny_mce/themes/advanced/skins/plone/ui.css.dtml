@@ -6,7 +6,7 @@
 .ploneSkin table td {vertical-align:middle}
 
 /* Containers */
-.ploneSkin table {background: &dtml-globalBackgroundColor;}
+.ploneSkin td.mceToolbar, .ploneSkin td.mceStatusbar {background: &dtml-globalBackgroundColor;}
 .ploneSkin iframe {display:block}
 .ploneSkin table.mceToolbar {height:26px !important; margin-bottom: 0px !important}
 .ploneSkin table.mceListBox {margin-bottom: 0px !important}
