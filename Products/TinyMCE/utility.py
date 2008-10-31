@@ -556,17 +556,21 @@ class TinyMCE(SimpleItem):
     def getConfiguration(self, context=None, field=None):
         results = {}
 
+        # Get widget attributes
         widget = getattr(field, 'widget', None)
         filter_buttons = getattr(widget, 'filter_buttons', None)
         allow_buttons = getattr(widget, 'allow_buttons', None)
         redefine_parastyles = getattr (widget, 'redefine_parastyles', None)
         parastyles = getattr (widget, 'parastyles', None)
 
+        # Add styles to results
         results['styles'] = []
+        results['table_styles'] = []
         if redefine_parastyles is None or not redefine_parastyles:
             for tablestyle in self.tablestyles.split('\n'):
                 tablestylefields = tablestyle.split('|');
                 results['styles'].append(tablestylefields[0] + '|table|' + tablestylefields[0]);
+                results['table_styles'].append(tablestylefields[0] + '=' + tablestylefields[0]);
             results['styles'].extend(self.styles.split('\n'))
 
         if parastyles is not None:
@@ -575,6 +579,7 @@ class TinyMCE(SimpleItem):
         # Get buttons from control panel
         results['buttons'] = self.getEnabledButtons()
 
+        # Filter buttons
         if allow_buttons is not None:
             allow_buttons = self.translateButtonsFromKupu(buttons=allow_buttons)
             results['buttons'] = filter(lambda x:x in results['buttons'],allow_buttons)
@@ -582,6 +587,54 @@ class TinyMCE(SimpleItem):
             filter_buttons = self.translateButtonsFromKupu(buttons=filter_buttons)
             results['buttons'] = filter(lambda x:x not in filter_buttons, results['buttons'])
 
+        # Get valid html elements
         results['valid_elements'] = self.getValidElements()
+
+        # Set toolbar_location
+        if self.toolbar_external:
+            results['toolbar_location'] = 'external'
+        else:
+            results['toolbar_location'] = 'top'
+
+        if self.autoresize:
+            results['path_location'] = 'none'
+            results['resizing_use_cookie'] = False
+            results['resizing'] = False
+            results['autoresize'] = True
+        else:
+            results['path_location'] = 'bottom'
+            results['resizing_use_cookie'] = True
+            if self.resizing:
+                results['resizing'] = True
+            else:
+                results['resizing'] = False
+            results['autoresize'] = False
+
+        if '%' in self.editor_width:
+            results['resize_horizontal'] = False
+        else:
+            results['resize_horizontal'] = True
+
+        try:
+            results['editor_width'] = int(self.editor_width)
+        except:
+            results['editor_width'] = 600
+
+        try:
+            results['editor_height'] = int(self.editor_height)
+        except:
+            results['editor_height'] = 400
+
+        try:
+            results['toolbar_width'] = int(self.toolbar_width)
+        except:
+            results['toolbar_width'] = 440
+
+        results['directionality'] = self.directionality
+
+        if self.content_css and self.content_css.strip() != "":
+            results['content_css'] = self.content_css
+        else:
+            results['content_css'] = self.absolute_url() + """/@@tinymce-getstyle"""
 
         return json.write(results)
