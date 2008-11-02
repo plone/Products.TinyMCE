@@ -1,9 +1,14 @@
 <?xml version="1.0"?>
 <import-steps>
-
   <import-step id="tinymce_various" version="20080428-01"
                handler="Products.TinyMCE.setuphandlers.importVarious"
                title="TinyMCE plug-in installation">
-  <dependency step="componentregistry"/>
- </import-step>
+    <dependency step="componentregistry"/>
+  </import-step>
+  <!--import-step id="tinymce_settings" version="20081031-01"
+               handler="Products.TinyMCE.exportimport.importTinyMCESettings"
+               title="TinyMCE Settings">
+    <dependency step="componentregistry"/>
+    Import TinyMCE Settings
+  </import-step-->
 </import-steps>
