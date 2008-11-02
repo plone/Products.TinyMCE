@@ -2,8 +2,15 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:five="http://namespaces.zope.org/five">
 
-    <include package=".browser" />
-    <include package=".adapters" />
-    <include file="profiles.zcml" />
+  <include package=".browser" />
+  <include package=".adapters" />
+  <include file="profiles.zcml" />
+
+  <adapter
+      factory=".exportimport.TinyMCESettingsXMLAdapter"
+      provides="Products.GenericSetup.interfaces.IBody"
+      for=".interfaces.utility.ITinyMCE
+           Products.GenericSetup.interfaces.ISetupEnviron"
+      />
 
 </configure>
