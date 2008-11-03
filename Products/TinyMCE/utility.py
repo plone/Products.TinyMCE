@@ -637,4 +637,9 @@ class TinyMCE(SimpleItem):
         else:
             results['content_css'] = self.absolute_url() + """/@@tinymce-getstyle"""
 
+        if context.REQUEST.has_key('LANGUAGE'):
+            results['language'] = context.REQUEST.LANGUAGE[:2]
+        else:
+            results['language'] = "en"
+
         return json.write(results)

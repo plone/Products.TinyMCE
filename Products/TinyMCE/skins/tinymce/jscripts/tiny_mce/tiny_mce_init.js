@@ -204,6 +204,10 @@ function TinyMCEConfig(id) {
 	this.getContentCSS = function () {
 		return this.widget_config.content_css;
 	};
+
+	this.getLanguage = function () {
+		return this.widget_config.language;
+	};
 }
 
 kukit.actionsGlobalRegistry.register("init-tinymce", function(oper) {
@@ -215,6 +219,7 @@ kukit.actionsGlobalRegistry.register("init-tinymce", function(oper) {
 		elements : oper.node.id,
 		strict_loading_mode : true,
 		theme : "advanced",
+		language : config.getLanguage(),
 		skin : "plone",
 		inlinepopups_skin : "plonepopup",
 		plugins : "safari,pagebreak,table,save,advhr,advimage,advlink,emotions,iespell,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups,style",
