@@ -1,0 +1,5 @@
+tinyMCE.addI18n('tw.paste_dlg',{
+text_title:"\u7528Ctrl+V\u8907\u5408\u9375\u5C07\u5167\u5BB9\u8CBC\u5165\u8996\u7A97\u4E2D.  ",
+text_linebreaks:"\u4FDD\u7559\u5206\u884C\u7B26\u865F\u865F",
+word_title:"\u7528Ctrl+V\u8907\u5408\u9375\u5C07\u5167\u5BB9\u8CBC\u5165\u8996\u7A97\u4E2D.  "
+});
