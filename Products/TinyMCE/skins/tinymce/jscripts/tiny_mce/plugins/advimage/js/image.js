@@ -42,7 +42,15 @@ var ImageDialog = {
 				}
 			}
 			var alt = dom.getAttrib(n, 'alt');
-			var classname = dom.getAttrib(n, 'class');
+			var classnames = dom.getAttrib(n, 'class').split(' ');
+			var classname = "";
+			for (var i = 0; i < classnames.length; i++) {
+				if (classnames[i] == 'captioned') {
+					f0.caption.checked = true;
+				} else {
+					classname = classnames[i];
+				}
+			}
 			nl0.alt.value = alt;
 			selectByValue(f0, 'classes', classname, true);
 			nl2.insert.value = ed.getLang('update');
@@ -99,7 +107,7 @@ var ImageDialog = {
 		args = {
 			src : href,
 			alt : nl0.alt.value,
-			'class' : this.getSelectValue(f0, 'classes')
+			'class' : this.getSelectValue(f0, 'classes') + (f0.elements['caption'].checked ? ' captioned' : '')
 		};
 
 		el = ed.selection.getNode();
