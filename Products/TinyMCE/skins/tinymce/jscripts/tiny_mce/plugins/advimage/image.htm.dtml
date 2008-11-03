@@ -69,11 +69,16 @@
 						<label id="alignlabel" for="align">{#advimage_dlg.align}</label>
 						<div class="widget">
 							<select id="classes" name="classes"> 
-								<option value="">{#not_set}</option> 
+								<option value="image-inline">Inline</option>
 								<option value="image-left">{#advimage_dlg.align_left}</option>
 								<option value="image-right">{#advimage_dlg.align_right}</option>
-								<option value="image-inline">Inline</option>
 							</select>
+						</div>
+					</div>
+
+					<div class="field">
+						<div class="widget">
+							<input type="checkbox" name="caption" id="caption"/> <label for="caption">Caption</label> 
 						</div>
 					</div>
 
