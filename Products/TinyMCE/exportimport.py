@@ -130,6 +130,24 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
         if self.environ.shouldPurge():
             self._purgeAttributes()
 
+        for categorynode in node.childNodes:
+            if categorynode.nodeName != '#text':
+                for fieldnode in categorynode.childNodes:
+                    if fieldnode.nodeName != '#text':
+                        if self.attributes[categorynode.nodeName][fieldnode.nodeName]['type'] == 'Bool':
+                            if fieldnode.hasAttribute('value'):
+                                setattr(self.context, fieldnode.nodeName, self._convertToBoolean(fieldnode.getAttribute('value')))
+                        elif self.attributes[categorynode.nodeName][fieldnode.nodeName]['type'] == 'Text':
+                            if fieldnode.hasAttribute('value'):
+                                setattr(self.context, fieldnode.nodeName, fieldnode.getAttribute('value'))
+                        elif self.attributes[categorynode.nodeName][fieldnode.nodeName]['type'] == 'List':
+                            items = []
+                            for element in fieldnode.childNodes:
+                                if element.nodeName != '#text':
+                                    items.append(element.getAttribute('value'))
+                            string = '\n'.join(items)
+                            setattr(self.context, fieldnode.nodeName, string.decode())
+
         self._logger.info('TinyMCE Settings imported.')
 
     def _purgeAttributes(self):
