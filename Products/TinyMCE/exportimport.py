@@ -141,7 +141,8 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
                             if fieldnode.hasAttribute('value'):
                                 setattr(self.context, fieldnode.nodeName, fieldnode.getAttribute('value'))
                         elif self.attributes[categorynode.nodeName][fieldnode.nodeName]['type'] == 'List':
-                            items = []
+                            field = getattr(self.context, fieldnode.nodeName)
+                            items = field.split('\n')
                             for element in fieldnode.childNodes:
                                 if element.nodeName != '#text':
                                     items.append(element.getAttribute('value'))
