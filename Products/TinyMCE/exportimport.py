@@ -83,6 +83,7 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
             'toolbar_fullscreen' : {'type' : 'Bool', 'default' : True},
         },
         'resourcetypes' : {
+            'link_using_uids' : {'type' : 'Bool', 'default' : False},
             'containsobjects' : {'type' : 'List', 'default' : 'ATFolder\nATBTreeFolder\nPlone Site'},
             'containsanchors' : {'type' : 'List', 'default' : 'ATEvent\nATNewsItem\nATDocument\nATRelativePathCriterion'},
             'linkable' : {'type' : 'List', 'default' : 'ATTopic\nATEvent\nATFile\nATFolder\nATImage\nATBTreeFolder\nATNewsItem\nATDocument'},

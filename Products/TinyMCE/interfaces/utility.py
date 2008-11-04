@@ -379,6 +379,12 @@ class ITinyMCELibraries(Interface):
 class ITinyMCEResourceTypes(Interface):
 	"""This interface defines the resource types properties."""
 
+	link_using_uids = schema.Bool(
+		title=_(u'label_link_using_uids', default=u"Link using UIDs"),
+		description=_(u"help_link_using_uids", default=u"Links to objects on this site can use unique object ids so that the links remain valid even if the target object is renamed or moved elsewhere on the site."),
+		default=False,
+		required=False)
+
 	containsobjects = schema.Text(
 		title=_(u'label_containsobjects', default=u'Contains Objects'),
 		description=_(u'help_containsobjects', default=u"Enter a list of content types which can contain other objects. Format is one contenttype per line."),

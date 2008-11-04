@@ -208,6 +208,10 @@ function TinyMCEConfig(id) {
 	this.getLanguage = function () {
 		return this.widget_config.language;
 	};
+
+	this.getLinkUsingUids = function () {
+		return this.widget_config.link_using_uids;
+	};
 }
 
 kukit.actionsGlobalRegistry.register("init-tinymce", function(oper) {
@@ -245,7 +249,8 @@ kukit.actionsGlobalRegistry.register("init-tinymce", function(oper) {
 		content_css : config.getContentCSS(),
 		body_class : "documentContent",
 		document_base_url : config.getBase(),
-		valid_elements : config.getValidElements()
+		valid_elements : config.getValidElements(),
+		link_using_uids : config.getLinkUsingUids()
 	});
 });
 
