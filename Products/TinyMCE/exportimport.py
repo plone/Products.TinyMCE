@@ -145,7 +145,8 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
                             items = field.split('\n')
                             for element in fieldnode.childNodes:
                                 if element.nodeName != '#text':
-                                    items.append(element.getAttribute('value'))
+                                    if element.getAttribute('value') not in items:
+                                        items.append(element.getAttribute('value'))
                             string = '\n'.join(items)
                             setattr(self.context, fieldnode.nodeName, string.decode())
 
