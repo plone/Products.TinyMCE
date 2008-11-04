@@ -105,6 +105,7 @@ class TinyMCE(SimpleItem):
     toolbar_code = FieldProperty(ITinyMCEToolbar['toolbar_code'])
     toolbar_fullscreen = FieldProperty(ITinyMCEToolbar['toolbar_fullscreen'])
     
+    link_using_uids = FieldProperty(ITinyMCEResourceTypes['link_using_uids'])
     containsobjects = FieldProperty(ITinyMCEResourceTypes['containsobjects'])
     containsanchors = FieldProperty(ITinyMCEResourceTypes['containsanchors'])
     linkable = FieldProperty(ITinyMCEResourceTypes['linkable'])
@@ -636,6 +637,11 @@ class TinyMCE(SimpleItem):
             results['content_css'] = self.content_css
         else:
             results['content_css'] = self.absolute_url() + """/@@tinymce-getstyle"""
+
+        if self.link_using_uids:
+            results['link_using_uids'] = True
+        else:
+            results['link_using_uids'] = False
 
         AVAILABLE_LANGUAGES = set(
             'ar bs ch da el es fa fr he hu ii it ko lv ms nl pl ro sc si sl sr'
