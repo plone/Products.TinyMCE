@@ -1,6 +1,7 @@
 var ImageDialog = {
 	current_path : "",
 	current_link : "",
+	current_url : "",
 	
 	preInit : function() {
 		var url;
@@ -55,9 +56,23 @@ var ImageDialog = {
 			selectByValue(f0, 'classes', classname, true);
 			nl2.insert.value = ed.getLang('update');
 
-			href = this.getAbsoluteUrl(tinyMCEPopup.editor.settings.document_base_url, href);
-			this.current_link = href;
-			this.getFolderListing(this.getParentUrl(href));
+
+			if (href.indexOf('resolveuid') != -1) {
+				current_uid = href.split('resolveuid/')[1];
+				tinymce.util.XHR.send({
+				    url : tinyMCEPopup.editor.settings.portal_url + '/portal_tinymce/tinymce-getpathbyuid?uid=' + current_uid,
+					type : 'GET',
+					success : function(text) {
+						ImageDialog.current_url = ImageDialog.getAbsoluteUrl(tinyMCEPopup.editor.settings.document_base_url, text);
+						ImageDialog.current_link = href;
+						ImageDialog.getFolderListing(ImageDialog.getParentUrl(ImageDialog.current_url));
+					}
+				});
+			} else {
+				href = this.getAbsoluteUrl(tinyMCEPopup.editor.settings.document_base_url, href);
+				this.current_link = href;
+				this.getFolderListing(this.getParentUrl(href));
+			}
 		} else {
 			this.getCurrentFolderListing();
 		}
@@ -460,7 +475,14 @@ var ImageDialog = {
 							html += data.items[i].title;
 							html += '</a>';
 						} else {
-							html += '<input onclick="ImageDialog.setDetails(\'' + data.items[i].url + '\');" type="radio" class="noborder" name="internallink" value="' + data.items[i].url + '"/> <img src="' + data.items[i].icon + '" border="0"/> ';
+							html += '<input onclick="ImageDialog.setDetails(\'';
+							html += data.items[i].url + '\');" type="radio" class="noborder" name="internallink" value="';
+							if (tinyMCEPopup.editor.settings.link_using_uids) {
+								html += "resolveuid/" + data.items[i].uid;
+							} else {
+								html += data.items[i].url;
+							}
+							html += '"/> <img src="' + data.items[i].icon + '" border="0"/> ';
 							html += data.items[i].title;
 						}
 						html += '</div>';
@@ -495,7 +517,11 @@ var ImageDialog = {
 				document.forms[1].action = ImageDialog.current_path + '/tinymce-upload';
 				ImageDialog.setRadioValue('internallink', ImageDialog.current_link, 0);
 				if (ImageDialog.current_link != "") {
-					ImageDialog.setDetails(ImageDialog.current_link);
+					if (ImageDialog.current_link.indexOf('resolveuid') != -1) {
+						ImageDialog.setDetails(ImageDialog.current_url);
+					} else {
+						ImageDialog.setDetails(ImageDialog.current_link);
+					}
 				}
 			}
 		});

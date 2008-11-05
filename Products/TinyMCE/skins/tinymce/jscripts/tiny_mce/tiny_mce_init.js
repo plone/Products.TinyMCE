@@ -212,6 +212,10 @@ function TinyMCEConfig(id) {
 	this.getLinkUsingUids = function () {
 		return this.widget_config.link_using_uids;
 	};
+
+	this.getPortalUrl = function () {
+		return this.widget_config.portal_url;
+	};
 }
 
 kukit.actionsGlobalRegistry.register("init-tinymce", function(oper) {
@@ -249,6 +253,7 @@ kukit.actionsGlobalRegistry.register("init-tinymce", function(oper) {
 		content_css : config.getContentCSS(),
 		body_class : "documentContent",
 		document_base_url : config.getBase(),
+		portal_url : config.getPortalUrl(),
 		valid_elements : config.getValidElements(),
 		link_using_uids : config.getLinkUsingUids()
 	});

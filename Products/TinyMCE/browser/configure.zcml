@@ -18,6 +18,14 @@
         permission="zope2.View"
         />
 
+    <browser:page
+        for="..interfaces.utility.ITinyMCE"
+        name="tinymce-getpathbyuid"
+        class=".url.TinyMCEUrl"
+		attribute="getPathByUID"
+        permission="zope2.View"
+        />
+
 	<browser:pages
         for="*"
         class=".browser.TinyMCEBrowserView"

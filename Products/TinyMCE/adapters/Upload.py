@@ -72,7 +72,7 @@ class Upload(object):
 			object = object.getParentNode()
 
 		context = self.context
-		request = context.REQUEST;
+		request = context.REQUEST
 		ctr_tool = getToolByName(self.context, 'content_type_registry')
 		id = request['uploadfile'].filename
 		
