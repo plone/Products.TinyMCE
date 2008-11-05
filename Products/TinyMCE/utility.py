@@ -190,12 +190,13 @@ class TinyMCE(SimpleItem):
         return False
 
     security.declarePrivate('getEnabledButtons')
-    def getEnabledButtons(self):
+    def getEnabledButtons(self, context):
         buttons = []
 
         # Get enabled buttons from control panel
         if self.toolbar_save:
-            buttons.append('save')
+            if not context.checkCreationFlag():
+                buttons.append('save')
 
         if self.toolbar_cut:
             buttons.append('cut')
@@ -312,13 +313,14 @@ class TinyMCE(SimpleItem):
         return buttons
 
     security.declarePrivate ('translateButtonsFromKupu')
-    def translateButtonsFromKupu(self, buttons):
+    def translateButtonsFromKupu(self, context, buttons):
 
         return_buttons = []
         
         for button in buttons:
             if button == 'save-button':
-                return_buttons.append('save')
+                if not context.checkCreationFlag():
+                    return_buttons.append('save')
             elif button == 'bg-basicmarkup':
                 pass
             elif button == 'bold-button':
@@ -578,14 +580,14 @@ class TinyMCE(SimpleItem):
             results['styles'].extend(parastyles)
 
         # Get buttons from control panel
-        results['buttons'] = self.getEnabledButtons()
+        results['buttons'] = self.getEnabledButtons(context=context)
 
         # Filter buttons
         if allow_buttons is not None:
-            allow_buttons = self.translateButtonsFromKupu(buttons=allow_buttons)
+            allow_buttons = self.translateButtonsFromKupu(context=context, buttons=allow_buttons)
             results['buttons'] = filter(lambda x:x in results['buttons'],allow_buttons)
         if filter_buttons is not None:
-            filter_buttons = self.translateButtonsFromKupu(buttons=filter_buttons)
+            filter_buttons = self.translateButtonsFromKupu(context=context, buttons=filter_buttons)
             results['buttons'] = filter(lambda x:x not in filter_buttons, results['buttons'])
 
         # Get valid html elements
