@@ -8,6 +8,7 @@ var templates = {
 
 var current_path;
 var current_link = "";
+var current_url = "";
 var current_pageanchor = "";
 
 function preinit() {
@@ -82,9 +83,22 @@ function init() {
 				current_pageanchor = href.split('#')[1];
 				href = href.split('#')[0];
 			}
-			href = getAbsoluteUrl(tinyMCEPopup.editor.settings.document_base_url, href);
-			current_link = href;
-			getFolderListing(getParentUrl(href));
+			if (href.indexOf('resolveuid') != -1) {
+				current_uid = href.split('resolveuid/')[1];
+				tinymce.util.XHR.send({
+				    url : tinyMCEPopup.editor.settings.portal_url + '/portal_tinymce/tinymce-getpathbyuid?uid=' + current_uid,
+					type : 'GET',
+					success : function(text) {
+						current_url = getAbsoluteUrl(tinyMCEPopup.editor.settings.document_base_url, text);
+						current_link = href;
+						getFolderListing(getParentUrl(current_url));
+					}
+				});
+			} else {
+				href = getAbsoluteUrl(tinyMCEPopup.editor.settings.document_base_url, href);
+				current_link = href;
+				getFolderListing(getParentUrl(href));
+			}
 		}
 
 		selectByValue(formAdvancedObj, 'targetlist', inst.dom.getAttrib(elm, 'target'), true);
@@ -652,7 +666,15 @@ function getFolderListing(path) {
 				html = "No items in this folder";
 			} else {
 				for (var i = 0; i < data.items.length; i++) {
-					html += '<div class="' + (i % 2 == 0 ? 'even' : 'odd') + '"><input onclick="setDetails(\'' + data.items[i].url + '\', \'\');" type="radio" class="noborder" name="internallink" value="' + data.items[i].url + '"/> <img src="' + data.items[i].icon + '" border="0"/> ';
+					html += '<div class="' + (i % 2 == 0 ? 'even' : 'odd');
+					html += '"><input onclick="setDetails(\'';
+					html += data.items[i].url + '\', \'\');" type="radio" class="noborder" name="internallink" value="';
+					if (tinyMCEPopup.editor.settings.link_using_uids) {
+						html += "resolveuid/" + data.items[i].uid;
+					} else {
+						html += data.items[i].url;
+					}
+					html += '"/> <img src="' + data.items[i].icon + '" border="0"/> ';
 					if (data.items[i].is_folderish) {
 						html += '<a href="javascript:getFolderListing(\'' + data.items[i].url + '\')">';
 						html += data.items[i].title;
@@ -692,7 +714,11 @@ function getFolderListing(path) {
 			document.forms[1].action = current_path + '/tinymce-upload';
 			setRadioValue('internallink', current_link, 0);
 			if (current_link != "") {
-				setDetails(current_link, current_pageanchor);
+				if (current_link.indexOf('resolveuid') != -1) {
+					setDetails(current_url, current_pageanchor);
+				} else {
+					setDetails(current_link, current_pageanchor);
+				}
 			}
 		}
 	});

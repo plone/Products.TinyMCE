@@ -48,6 +48,7 @@ class JSONFolderListing(object):
 		"""Gets information from a brain id, url, portal_type, title, icon, is_folderish"""
 
 		id = brain.getId;
+		uid = brain.UID;
 		url = brain.getURL();
 		portal_type = brain.portal_type;
 		title = brain.Title;
@@ -56,6 +57,7 @@ class JSONFolderListing(object):
 
 		return {
 		'id': id,
+		'uid': uid,
 		'url': url,
 		'portal_type': portal_type,
 		'title' : title,

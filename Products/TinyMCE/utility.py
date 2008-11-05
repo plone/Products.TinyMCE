@@ -643,6 +643,9 @@ class TinyMCE(SimpleItem):
         else:
             results['link_using_uids'] = False
 
+        portal_url = getToolByName(self, 'portal_url')
+        results['portal_url'] = portal_url()
+
         AVAILABLE_LANGUAGES = set(
             'ar bs ch da el es fa fr he hu ii it ko lv ms nl pl ro sc si sl sr'
             'tr tw vi bg ca cs de en et fi gl hr ia is ja lt mk nb nn pt ru se'
