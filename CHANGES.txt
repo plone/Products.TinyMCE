@@ -1,0 +1,55 @@
+=======
+HISTORY
+=======
+
+0.97.3.2.1 (2008-??-??)
+-----------------------
+
+- Upgrade to TinyMCE 3.2.1 (and new logo)
+- Merged blockformats and styles into one styles menu
+- Added support for parastyles in widget definition
+- Added link usings uids for images and internal links
+- Added the captioned images option
+- Get HTML Filtering settings from the control panel
+- Added integration tests
+- Added export/import of settings through GenericSetup (tinymce.xml)
+- Added i18n support + language packs
+- Fixed inline editing
+- Moved load/save events to kss
+- Fixed save button on the toolbar, now using an ajax method
+- Moved all configuration data to json structure in page template of the widget
+- Changed toolbar save user feedback from alert message to blinking field border
+  (idea by Danny)
+- Removed save button when creating a new object
+- Added condition to javascript files in portal registery
+- Fixed IE6 and 7 loading and dialog bugs
+- Fixed toolbar/statusbar backgroundcolor bug in IE6 and 7
+- Fixed width of file field in image and file upload dialog for Safari
+- Fixed inline style filtering
+- Fixed indenting/outdenting of lists
+
+0.96.3.1.1 (2008-10-23)
+-----------------------
+
+- Added external toolbar option
+- Autogrow option
+- Handling for allow and filter_buttons
+- Changed style of the editorfield so it matches the other widgets (gray
+  borders, blue toolbar, orange border when selected etc)
+- Added javascripts to portal registery
+- Fixed bug with multiple editors on one page (issue #7)
+- CSS fixes for NuPlone
+- Fixed issue with plone formgen style (issue #8)
+- Fixed tablecel bug (issue #6)
+- Removed dom path from location bar
+- Removed unused skins of popups
+- Fixed position of modal dialog blocker and move dialog window (backport from
+  TinyMCE 3.2)
+- Fixed "jumping" issues in the link and image dialog when using Safari
+
+0.95.3.1.1 (2008-09-11)
+-----------------------
+
+- Eggification of TinyMCE
+- Upgrade to TinyMCE 3.1.1
+- Minor table fixes
