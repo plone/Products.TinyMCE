@@ -4,15 +4,15 @@
     i18n_domain="tinymce">
 
 	<adapter
-    	for="Products.CMFCore.interfaces._content.IContentish"
-   		provides="..adapters.interfaces.JSONFolderListing.IJSONFolderListing"
-    	factory="..adapters.JSONFolderListing.JSONFolderListing"
-	    />		
-
-	<adapter
     	for="Products.CMFPlone.interfaces.siteroot.IPloneSiteRoot"
    		provides="..adapters.interfaces.JSONDetails.IJSONDetails"
     	factory="..adapters.JSONDetails.JSONDetails"
+	    />		
+
+	<adapter
+    	for="Products.CMFCore.interfaces._content.IContentish"
+   		provides="..adapters.interfaces.JSONFolderListing.IJSONFolderListing"
+    	factory="..adapters.JSONFolderListing.JSONFolderListing"
 	    />		
 
 	<adapter
@@ -37,6 +37,12 @@
     	for="Products.CMFPlone.interfaces.siteroot.IPloneSiteRoot"
    		provides="..adapters.interfaces.Upload.IUpload"
     	factory="..adapters.Upload.Upload"
+	    />		
+
+	<adapter
+    	for="Products.CMFCore.interfaces._content.IContentish"
+   		provides="..adapters.interfaces.Save.ISave"
+    	factory="..adapters.Save.Save"
 	    />		
 
 </configure>

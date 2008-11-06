@@ -30,10 +30,23 @@
         for="*"
         class=".browser.TinyMCEBrowserView"
 		permission="zope2.View">
-		<browser:page attribute="upload" name="tinymce-upload" /> 
 		<browser:page attribute="jsonLinkableFolderListing" name="tinymce-jsonlinkablefolderlisting" />
 		<browser:page attribute="jsonImageFolderListing" name="tinymce-jsonimagefolderlisting" />
 		<browser:page attribute="jsonDetails" name="tinymce-jsondetails" />
+	</browser:pages>
+
+	<browser:pages
+        for="*"
+        class=".browser.TinyMCEBrowserView"
+		permission="cmf.ModifyPortalContent">
+		<browser:page attribute="save" name="tinymce-save" /> 
+	</browser:pages>
+
+	<browser:pages
+        for="*"
+        class=".browser.TinyMCEBrowserView"
+		permission="cmf.AddPortalContent">
+		<browser:page attribute="upload" name="tinymce-upload" /> 
 	</browser:pages>
 
 	<browser:resourceDirectory

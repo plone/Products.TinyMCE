@@ -6,6 +6,7 @@ from Acquisition import aq_inner
 from Products.TinyMCE.adapters.interfaces.JSONFolderListing import IJSONFolderListing;
 from Products.TinyMCE.adapters.interfaces.JSONDetails import IJSONDetails;
 from Products.TinyMCE.adapters.interfaces.Upload import IUpload;
+from Products.TinyMCE.adapters.interfaces.Save import ISave;
 from Products.TinyMCE.browser.interfaces.browser import ITinyMCEBrowserView
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 
@@ -20,6 +21,13 @@ class TinyMCEBrowserView(BrowserView):
 		object = IUpload(self.context)
 		return object.upload()
 	
+	def save(self, text, fieldname):
+		"""Saves the specified richedit field"""
+
+		context = aq_inner(self.context)
+		object = ISave(self.context)
+		return object.save(text, fieldname)
+
 	def jsonLinkableFolderListing(self):
 		"""Returns the folderlisting of linkable objects in JSON"""
 

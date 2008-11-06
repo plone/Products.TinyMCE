@@ -13,14 +13,25 @@
 			t.editor = ed;
 
 			// Register commands
-			ed.addCommand('mceSave', t._save, t);
-			ed.addCommand('mceCancel', t._cancel, t);
+			ed.addCommand('mceSave', function() {
+				tinymce.util.XHR.send({
+				    url : ed.settings.document_url + '/tinymce-save',
+					content_type : "application/x-www-form-urlencoded",
+					type : "POST",
+					data : "text=" + encodeURIComponent(ed.getContent()) + "&fieldname=" + ed.id,
+					success : function( data, req, o ) {
+						alert (data);
+					}
+				});
+			});
+				
+			ed.addCommand('mceCancel', t._cancel);
 
 			// Register buttons
 			ed.addButton('save', {title : 'save.save_desc', cmd : 'mceSave'});
 			ed.addButton('cancel', {title : 'save.cancel_desc', cmd : 'mceCancel'});
 
-			ed.onNodeChange.add(t._nodeChange, t);
+			// ed.onNodeChange.add(t._nodeChange, t);
 			ed.addShortcut('ctrl+s', ed.getLang('save.save_desc'), 'mceSave');
 		},
 

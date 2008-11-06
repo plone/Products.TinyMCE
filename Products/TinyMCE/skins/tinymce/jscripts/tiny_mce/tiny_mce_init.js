@@ -146,6 +146,22 @@ function TinyMCEConfig(id) {
 		return a.join (',');
 	};
 
+	this.getDocumentUrl = function() {
+		var href_string = document.location.href;
+		var href_array = href_string.split('/');
+		if (href_string.indexOf('portal_factory') != -1) {
+			while (href_array[href_array.length-1] != 'portal_factory') {
+				href_array.pop();
+			}
+			href_array.pop();
+		} else {
+			if (href_array.length > 4) {
+				href_array.pop();
+			}
+		}
+		return href_array.join('/');
+	};
+
 	this.getBase = function() {
 		var href_string = document.location.href;
 		var href_array = href_string.split('/');
@@ -253,6 +269,7 @@ kukit.actionsGlobalRegistry.register("init-tinymce", function(oper) {
 		content_css : config.getContentCSS(),
 		body_class : "documentContent",
 		document_base_url : config.getBase(),
+		document_url : config.getDocumentUrl(),
 		portal_url : config.getPortalUrl(),
 		valid_elements : config.getValidElements(),
 		link_using_uids : config.getLinkUsingUids()

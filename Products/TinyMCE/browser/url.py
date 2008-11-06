@@ -16,7 +16,7 @@ class TinyMCEUrl(BrowserView):
 		request = context.REQUEST
 
 		if not hasattr(request, 'uid'):
-			return request
+			return ""
 
 		uid = request['uid']
 
@@ -26,4 +26,4 @@ class TinyMCEUrl(BrowserView):
 		if obj:
 			return obj.absolute_url()
 
-		return "no object for that uid"
+		return ""
