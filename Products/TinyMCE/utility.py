@@ -545,9 +545,9 @@ class TinyMCE(SimpleItem):
                 del valid_elements[valid_element]
             else:
                 valid_elements[valid_element] -= stripped_attributes
-                if 'style' in valid_elements[valid_element]:
-                    valid_elements[valid_element].remove('style')
-                    valid_elements[valid_element].add(style_attribute)
+                #if 'style' in valid_elements[valid_element]:
+                #    valid_elements[valid_element].remove('style')
+                #    valid_elements[valid_element].add(style_attribute)
 
         # Convert sets to lists
         for valid_element in valid_elements.keys():
@@ -555,7 +555,7 @@ class TinyMCE(SimpleItem):
 
         return valid_elements
 
-    security.declareProtected('View', 'isTinyMCEEnabled')
+    security.declareProtected('View', 'getConfiguration')
     def getConfiguration(self, context=None, field=None):
         results = {}
 
@@ -659,5 +659,16 @@ class TinyMCE(SimpleItem):
                 results['language'] = "en"
         else:
             results['language'] = "en"
+
+        results['document_url'] = context.absolute_url()
+
+        if context.checkCreationFlag():
+            parent = getattr(context.aq_inner, 'aq_parent', None)
+            parent = getattr(parent, 'aq_parent', None)
+            parent = getattr(parent, 'aq_parent', None)
+            results['parent'] = parent.absolute_url()
+        else:
+            results['parent'] = getattr(context.aq_inner, 'aq_parent', None).absolute_url()
+
 
         return json.write(results)
