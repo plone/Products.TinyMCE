@@ -44,7 +44,7 @@
 .ploneSkin .mceButton {display:block; border: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBackgroundColor;; width:20px; height:20px; margin-right:1px}
 .ploneSkin a.mceButtonEnabled:hover {border: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;; background-color: &dtml-globalBackgroundColor;}
 .ploneSkin a.mceButtonActive, .ploneSkin a.mceButtonSelected {border: &dtml-borderWidth; &dtml-borderStyle; &dtml-globalBorderColor;; background-color: &dtml-globalBackgroundColor;}
-.ploneSkin .mceButtonDisabled .mceIcon {opacity:0.3; filter:alpha(opacity=30)}
+.ploneSkin .mceButtonDisabled .mceIcon {opacity:0.3; -ms-filter:'alpha(opacity=30)'; filter:alpha(opacity=30)}
 .ploneSkin .mceButtonLabeled {width:auto}
 .ploneSkin .mceButtonLabeled span.mceIcon {float:left}
 .ploneSkin span.mceButtonLabel {display:block; font-size:10px; padding:4px 6px 0 22px; font-family:<dtml-var fontFamily>}
@@ -115,7 +115,7 @@
 .ploneSkin .mceMenuItemSub a {background:url(img/menu_arrow.gif) no-repeat top right;}
 
 /* Progress,Resize */
-.ploneSkin .mceBlocker {position:absolute; left:0; top:0; z-index:1000; opacity:0.5; filter:alpha(opacity=50); background:&dtml-backgroundColor;}
+.ploneSkin .mceBlocker {position:absolute; left:0; top:0; z-index:1000; opacity:0.5; filter:alpha(opacity=50); -ms-filter:'alpha(opacity=50)'; background:&dtml-backgroundColor;}
 .ploneSkin .mceProgress {position:absolute; left:0; top:0; z-index:1001; background:url(img/progress.gif) no-repeat; width:32px; height:32px; margin:-16px 0 0 -16px}
 .ploneSkin .mcePlaceHolder {border:&dtml-borderWidth; dotted &dtml-contentViewBorderColor;}
 
