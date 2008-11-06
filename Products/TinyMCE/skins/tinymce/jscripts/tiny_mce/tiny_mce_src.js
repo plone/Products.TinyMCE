@@ -7524,8 +7524,13 @@ var tinyMCE = window.tinyMCE = tinymce.EditorManager;
 			}
 
 			// Browser commands
+
+//		try {
 			t.getDoc().execCommand(cmd, ui, val);
 			t.onExecCommand.dispatch(t, cmd, ui, val, a);
+//		} catch (ex) {
+//			alert (t.getDoc().execCommand + "|" + ex + "|" + t + "|" + cmd + "|" + val + "|" + a);
+//		}
 		},
 
 		queryCommandState : function(c) {

@@ -5,6 +5,9 @@ class ITinyMCEBrowserView(Interface):
 
 	def upload(self):
 		"""Upload a file to the zodb"""
+
+	def save(self, text, fieldname):
+		"""Saves the specified richedit field"""
 	
 	def jsonLinkableFolderListing(self):
 		"""Returns the folderlisting of linkable objects in JSON"""
