@@ -147,38 +147,11 @@ function TinyMCEConfig(id) {
 	};
 
 	this.getDocumentUrl = function() {
-		var href_string = document.location.href;
-		var href_array = href_string.split('/');
-		if (href_string.indexOf('portal_factory') != -1) {
-			while (href_array[href_array.length-1] != 'portal_factory') {
-				href_array.pop();
-			}
-			href_array.pop();
-		} else {
-			if (href_array.length > 4) {
-				href_array.pop();
-			}
-		}
-		return href_array.join('/');
+		return this.widget_config.document_url;
 	};
 
 	this.getBase = function() {
-		var href_string = document.location.href;
-		var href_array = href_string.split('/');
-		if (href_string.indexOf('portal_factory') != -1) {
-			while (href_array[href_array.length-1] != 'portal_factory') {
-				href_array.pop();
-			}
-			href_array.pop();
-		} else {
-			if (href_array.length > 4) {
-				href_array.pop();
-			}
-			if (href_array.length > 4) {
-				href_array.pop();
-			}
-		}
-		return href_array.join('/') + '/';
+		return this.widget_config.parent;
 	};
 
 	this.getToolbarLocation = function () {
@@ -272,7 +245,8 @@ kukit.actionsGlobalRegistry.register("init-tinymce", function(oper) {
 		document_url : config.getDocumentUrl(),
 		portal_url : config.getPortalUrl(),
 		valid_elements : config.getValidElements(),
-		link_using_uids : config.getLinkUsingUids()
+		link_using_uids : config.getLinkUsingUids(),
+		fix_list_elements : false
 	});
 });
 
