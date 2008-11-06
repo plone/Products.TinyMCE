@@ -453,7 +453,7 @@ var ImageDialog = {
 	},
 
 	getCurrentFolderListing : function() {
-		this.getFolderListing(this.getParentUrl(tinyMCEPopup.editor.settings.document_base_url));
+		this.getFolderListing(tinyMCEPopup.editor.settings.document_base_url);
 	},
 	
 	getFolderListing : function(path) {
