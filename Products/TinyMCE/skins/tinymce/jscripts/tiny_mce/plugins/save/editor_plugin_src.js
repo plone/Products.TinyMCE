@@ -20,7 +20,12 @@
 					type : "POST",
 					data : "text=" + encodeURIComponent(ed.getContent()) + "&fieldname=" + ed.id,
 					success : function( data, req, o ) {
-						alert (data);
+						tinymce.DOM.addClass(tinymce.DOM.get(ed.id + '_tbl'), 'mceEditorSave');
+						window.setTimeout(function() {
+							tinymce.DOM.removeClass(tinymce.DOM.get(ed.id + '_tbl'), 'mceEditorSave');
+							tinymce.DOM.removeClass(tinymce.DOM.get(ed.id + '_tbl'), 'mceEditorFocus');
+							tinymce.DOM.addClass(tinymce.DOM.get(ed.id + '_tbl'), 'mceEditorFocus');
+						}, 500);
 					}
 				});
 			});

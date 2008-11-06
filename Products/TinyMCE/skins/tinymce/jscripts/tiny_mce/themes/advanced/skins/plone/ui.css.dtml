@@ -27,6 +27,7 @@
 .ploneSkin td.mceToolbar {padding-top:1px; vertical-align:top}
 .ploneSkin .mceIframeContainer {border-left: &dtml-borderWidth; &dtml-borderStyle; #666; border-top: &dtml-borderWidth; &dtml-borderStyle; #666; border-bottom: &dtml-borderWidth; &dtml-borderStyle; #ddd; border-right: &dtml-borderWidth; &dtml-borderStyle; #ddd}
 .ploneSkin .mceEditorFocus .mceIframeContainer {border: &dtml-borderWidth; &dtml-borderStyle; &dtml-notifyBorderColor;}
+.ploneSkin table.mceEditorSave .mceIframeContainer {border-left: &dtml-borderWidth; &dtml-borderStyle; #666; border-top: &dtml-borderWidth; &dtml-borderStyle; #666; border-bottom: &dtml-borderWidth; &dtml-borderStyle; #ddd; border-right: &dtml-borderWidth; &dtml-borderStyle; #ddd}
 .ploneSkin .mceStatusbar {font-family:<dtml-var fontFamily>; font-size:100%; line-height:16px; overflow:visible; color: &dtml-contentViewBorderColor;; display:block; height:20px}
 .ploneSkin .mceStatusbar div {float:left; margin:2px; color: &dtml-contentViewBorderColor;}
 .ploneSkin .mceStatusbar div a {color: &dtml-contentViewBorderColor;}
