@@ -1,32 +1,134 @@
-History:
+=======
+HISTORY
+=======
 
-  v0.96.3.1.1 - Added external toolbar option, autogrow option, handling for allow and filter_buttons and a lot of bugfixes
+0.97.3.2.1 (2008-??-??)
+-----------------------
 
-  v0.95.3.1.1 - Eggification of TinyMCE, Upgrade to TinyMCE 3.1.1 and some minor table fixes
+- Upgrade to TinyMCE 3.2.1 (and new logo)
+- Merged blockformats and styles into one styles menu
+- Added support for parastyles in widget definition
+- Added link usings uids for images and internal links
+- Added the captioned images option
+- Get HTML Filtering settings from the control panel
+- Added integration tests
+- Added export/import of settings through GenericSetup (tinymce.xml)
+- Added i18n support + language packs
+- Fixed inline editing
+- Moved load/save events to kss
+- Fixed save button on the toolbar, now using an ajax method
+- Moved all configuration data to json structure in page template of the widget
+- Changed toolbar save user feedback from alert message to blinking field border
+  (idea by Danny)
+- Removed save button when creating a new object
+- Added condition to javascript files in portal registery
+- Fixed IE6 and 7 loading and dialog bugs
+- Fixed toolbar/statusbar backgroundcolor bug in IE6 and 7
+- Fixed width of file field in image and file upload dialog for Safari
+- Fixed inline style filtering
+- Fixed indenting/outdenting of lists
 
-  v0.94.3.1.0.1 - Upgrade to TinyMCE 3.1.0.1, added support for NuPlone and some minor bugfixes
+0.96.3.1.1 (2008-10-23)
+-----------------------
 
-  v0.93.3.0.8 - Upgrade to TinyMCE 3.0.8 and Plone 3.1.1 and added control panel
-  
-  v0.92.2.0.6 - Upgrade to TinyMCE 2.0.6.1 and add separate language downloads
-  
-  v0.91.2.0.5 - Bugfix for linux systems
-  
-  v0.90.2.0.5 - Upgrade to TinyMCE 2.0.5.1 and fix bug with relative links
-  
-  v0.90.2.0.2 - Upgrade to TinyMCE 2.0.2 and use javascript_head_slot instead of editing the header template
-  
-  v0.81.1.45 - Upgrade to TinyMCE 1.45 (final), optimize javascript, update the instructions
-  
-  v0.80.1.45rc1 - Strip all languages except English, upgrade internally to 1.45rc1
-  
-  v0.80.1.44 - Allow cohabitation with Kupu and Epoz
-  
-  v0.75.1.44 - Write install documentation and notes
-  
-  v0.70.1.44 - Get the rest of the features and enable plugins
-  
-  v0.50.1.44 - Get installable product and some features
-  
-  v0.10.1.44 - Get minimal functionality
+- Added external toolbar option
+- Autogrow option
+- Handling for allow and filter_buttons
+- Changed style of the editorfield so it matches the other widgets (gray
+  borders, blue toolbar, orange border when selected etc)
+- Added javascripts to portal registery
+- Fixed bug with multiple editors on one page (issue #7)
+- CSS fixes for NuPlone
+- Fixed issue with plone formgen style (issue #8)
+- Fixed tablecel bug (issue #6)
+- Removed dom path from location bar
+- Removed unused skins of popups
+- Fixed position of modal dialog blocker and move dialog window (backport from
+  TinyMCE 3.2)
+- Fixed "jumping" issues in the link and image dialog when using Safari
 
+0.95.3.1.1 (2008-09-11)
+-----------------------
+
+- Eggification of TinyMCE
+- Upgrade to TinyMCE 3.1.1
+- Minor table fixes
+
+0.94.3.1.0.1 (2008-07-11)
+-------------------------
+
+- Upgrade to TinyMCE 3.1.0.1
+- Added support for NuPlone
+- Minor bugfixes
+
+0.93.3.0.8 (2008-05-17)
+-----------------------
+
+- Upgrade to TinyMCE 3.0.8
+- Upgrade to Plone 3.1.1
+- Added control panel
+
+0.92.2.0.6 (2006-06-02)
+-----------------------
+
+- Upgrade to TinyMCE 2.0.6.1
+- Add separate language downloads
+
+0.91.2.0.5
+----------
+
+- Bugfix for linux systems
+
+0.90.2.0.5 (2006-03-31)
+-----------------------
+
+- Upgrade to TinyMCE 2.0.5.1
+- Fix bug with relative links
+
+0.90.2.0.2 (2006-01-24)
+-----------------------
+
+- Upgrade to TinyMCE 2.0.2
+
+0.90.1.45 (2005-10-03)
+----------------------
+
+- Use javascript_head_slot instead of editing the header template
+
+0.81.1.45 (2005-08-23)
+----------------------
+
+- Upgrade to TinyMCE 1.45 (final)
+- Optimize javascript
+- Update the instructions
+
+0.80.1.45rc1 (2005-06-07)
+-------------------------
+
+- Strip all languages except English
+- Upgrade internally to 1.45rc1
+
+0.80.1.44
+---------
+
+- Allow cohabitation with Kupu and Epoz
+
+0.75.1.44
+---------
+
+- Write install documentation and notes
+
+0.70.1.44
+---------
+
+- Get the rest of the features and enable plugins
+
+0.50.1.44
+---------
+
+- Get installable product and some features
+
+0.10.1.44
+---------
+
+- Get minimal functionality

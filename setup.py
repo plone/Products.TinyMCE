@@ -1,13 +1,15 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.96.3.1.1'
+version = '0.97.3.2.1'
 
 setup(name='Products.TinyMCE',
       version=version,
       description="Adds support for TinyMCE, a platform independent web based Javascript HTML WYSIWYG editor, to Plone.",
-      long_description=open("README.txt").read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.txt")).read(),
+      long_description=open("README.txt").read() + "\n\n" +
+                       open(os.path.join("docs", "INSTALL.txt")).read() + "\n\n" +
+                       open(os.path.join("docs", "CHANGES.txt")).read() + "\n\n" +
+                       open(os.path.join("docs", "CONTRIBUTERS.txt")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
         "Framework :: Plone",
