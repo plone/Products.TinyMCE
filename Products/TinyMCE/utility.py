@@ -666,9 +666,9 @@ class TinyMCE(SimpleItem):
             parent = getattr(context.aq_inner, 'aq_parent', None)
             parent = getattr(parent, 'aq_parent', None)
             parent = getattr(parent, 'aq_parent', None)
-            results['parent'] = parent.absolute_url()
+            results['parent'] = parent.absolute_url() + "/"
         else:
-            results['parent'] = getattr(context.aq_inner, 'aq_parent', None).absolute_url()
+            results['parent'] = getattr(context.aq_inner, 'aq_parent', None).absolute_url() + "/"
 
 
         return json.write(results)
