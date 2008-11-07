@@ -10,6 +10,8 @@ from Products.CMFCore.utils import getToolByName
 from Products.TinyMCE.interfaces.utility import ITinyMCELayout
 from Products.TinyMCE.interfaces.utility import ITinyMCEToolbar
 from Products.TinyMCE.interfaces.utility import ITinyMCEResourceTypes
+from Products.TinyMCE.setuphandlers import register_transform_policy, TINYMCE_OUTPUT_TRANSFORMATION
+
 
 class TinyMCESettingsXMLAdapter(XMLAdapterBase):
 
@@ -150,7 +152,8 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
                                         items.append(element.getAttribute('value'))
                             string = '\n'.join(items)
                             setattr(self.context, fieldnode.nodeName, string.decode())
-
+        # TODO : check if policy transform is needed, and how to get the s
+        register_transform_policy(self.context, "text/x-html-safe", TINYMCE_OUTPUT_TRANSFORMATION)
         self._logger.info('TinyMCE Settings imported.')
 
     def _purgeAttributes(self):
