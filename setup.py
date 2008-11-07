@@ -8,7 +8,7 @@ setup(name='Products.TinyMCE',
       description="Adds support for TinyMCE, a platform independent web based Javascript HTML WYSIWYG editor, to Plone.",
       long_description=open("README.txt").read() + "\n\n" +
                        open(os.path.join("docs", "INSTALL.txt")).read() + "\n\n" +
-                       open(os.path.join("docs", "CHANGES.txt")).read() + "\n\n" +
+                       open("CHANGES.txt").read() + "\n\n" +
                        open(os.path.join("docs", "CONTRIBUTERS.txt")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
