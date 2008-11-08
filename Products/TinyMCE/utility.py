@@ -197,8 +197,11 @@ class TinyMCE(SimpleItem):
 
         # Get enabled buttons from control panel
         if self.toolbar_save:
-            if not context.checkCreationFlag():
-                buttons.append('save')
+            try:
+                if not context.checkCreationFlag():
+                    buttons.append('save')
+            except:
+                pass
 
         if self.toolbar_cut:
             buttons.append('cut')
@@ -321,8 +324,11 @@ class TinyMCE(SimpleItem):
         
         for button in buttons:
             if button == 'save-button':
-                if not context.checkCreationFlag():
-                    return_buttons.append('save')
+                try:
+                    if not context.checkCreationFlag():
+                        return_buttons.append('save')
+                except:
+                    pass
             elif button == 'bg-basicmarkup':
                 pass
             elif button == 'bold-button':
@@ -672,15 +678,17 @@ class TinyMCE(SimpleItem):
         else:
             results['language'] = "en"
 
-        results['document_url'] = context.absolute_url()
-
-        if context.checkCreationFlag():
-            parent = getattr(context.aq_inner, 'aq_parent', None)
-            parent = getattr(parent, 'aq_parent', None)
-            parent = getattr(parent, 'aq_parent', None)
-            results['parent'] = parent.absolute_url() + "/"
-        else:
-            results['parent'] = getattr(context.aq_inner, 'aq_parent', None).absolute_url() + "/"
-
+        try:
+            results['document_url'] = context.absolute_url()
+            if context.checkCreationFlag():
+                parent = getattr(context.aq_inner, 'aq_parent', None)
+                parent = getattr(parent, 'aq_parent', None)
+                parent = getattr(parent, 'aq_parent', None)
+                results['parent'] = parent.absolute_url() + "/"
+            else:
+                results['parent'] = getattr(context.aq_inner, 'aq_parent', None).absolute_url() + "/"
+        except:
+            results['parent'] = portal_url() + "/"
+            results['document_url'] = portal_url()
 
         return json.write(results)

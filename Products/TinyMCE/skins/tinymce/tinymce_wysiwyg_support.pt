@@ -4,8 +4,7 @@
   
 <!-- wysiwyg default widget -->
 <div metal:define-macro="wysiwygEditorBox">
-  <tal:block define="fname fieldName|inputname|nothing;
-                     fformat python:here.getContentType(fname);">
+  <tal:block define="field field|nothing;">
   <textarea cols="80"
             rows="25"
             tabindex=""
@@ -18,7 +17,7 @@
                             rows rows|default;
                             cols cols|default;
                             title python:here.portal_tinymce.getConfiguration (context=context, field=field);
-                            class python:test('html' in fformat, 'mce_editable', '')"></textarea>
+                            class string:mce_editable"></textarea>
   </tal:block>
 </div>
 
