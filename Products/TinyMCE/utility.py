@@ -31,6 +31,7 @@ class TinyMCE(SimpleItem):
 
     resizing = FieldProperty(ITinyMCELayout['resizing'])
     autoresize = FieldProperty(ITinyMCELayout['autoresize'])
+    autoresize_bottom_margin = FieldProperty(ITinyMCELayout['autoresize_bottom_margin'])
     editor_width = FieldProperty(ITinyMCELayout['editor_width'])
     editor_height = FieldProperty(ITinyMCELayout['editor_height'])
     directionality = FieldProperty(ITinyMCELayout['directionality'])
@@ -612,6 +613,11 @@ class TinyMCE(SimpleItem):
             else:
                 results['resizing'] = False
             results['autoresize'] = False
+
+        try:
+            results['autoresize_bottom_margin'] = int(self.autoresize_bottom_margin)
+        except:
+            results['autoresize_bottom_margin'] = 40
 
         if '%' in self.editor_width:
             results['resize_horizontal'] = False

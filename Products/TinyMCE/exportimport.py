@@ -23,6 +23,7 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
         'layout' : {
             'resizing' : {'type' : 'Bool', 'default' : True},
             'autoresize' : {'type' : 'Bool', 'default' : False},
+            'autoresize_bottom_margin' : {'type' : 'Text', 'default' : '40'},
             'editor_width' : {'type' : 'Text', 'default' : '100%'},
             'editor_height' : {'type' : 'Text', 'default' : '400'},
             'directionality' : {'type' : 'Text', 'default' : 'ltr'},

@@ -186,6 +186,10 @@ function TinyMCEConfig(id) {
 		return this.widget_config.autoresize;
 	};
 
+	this.getAutoresizeBottomMargin = function () {
+		return this.widget_config.autoresize_bottom_margin;
+	};
+
 	this.getDirectionality = function () {
 		return this.widget_config.directionality;
 	};
@@ -237,6 +241,7 @@ kukit.actionsGlobalRegistry.register("init-tinymce", function(oper) {
 		theme_advanced_source_editor_height : config.getEditorHeight(),
   
 		auto_resize : config.getAutoresize(),
+		auto_resize_bottom_margin : config.getAutoresizeBottomMargin(),
 		table_styles : config.getTableStyles(),
 		directionality : config.getDirectionality(),
 		content_css : config.getContentCSS(),
