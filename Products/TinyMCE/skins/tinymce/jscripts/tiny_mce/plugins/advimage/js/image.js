@@ -25,6 +25,10 @@ var ImageDialog = {
 
 		tinyMCEPopup.resizeToInnerSize();
 
+		if (!ed.settings.allow_captioned_images) {
+			document.getElementById ('caption').parentNode.parentNode.style.display = 'none';
+		}
+
 		if (n.nodeName == 'IMG') {
 			var href = dom.getAttrib(n, 'src');
 			if (href.indexOf('/')) {
@@ -47,7 +51,9 @@ var ImageDialog = {
 			var classname = "";
 			for (var i = 0; i < classnames.length; i++) {
 				if (classnames[i] == 'captioned') {
-					f0.caption.checked = true;
+					if (tinyMCEPopup.editor.settings.allow_captioned_images) {
+						f0.caption.checked = true;
+					}
 				} else {
 					classname = classnames[i];
 				}
@@ -122,7 +128,7 @@ var ImageDialog = {
 		args = {
 			src : href,
 			alt : nl0.alt.value,
-			'class' : this.getSelectValue(f0, 'classes') + (f0.elements['caption'].checked ? ' captioned' : '')
+			'class' : this.getSelectValue(f0, 'classes') + ((ed.settings.allow_captioned_images && f0.elements['caption'].checked) ? ' captioned' : '')
 		};
 
 		el = ed.selection.getNode();

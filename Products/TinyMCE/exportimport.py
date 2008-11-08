@@ -87,6 +87,7 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
         },
         'resourcetypes' : {
             'link_using_uids' : {'type' : 'Bool', 'default' : False},
+            'allow_captioned_images' : {'type' : 'Bool', 'default' : False},
             'containsobjects' : {'type' : 'List', 'default' : 'ATFolder\nATBTreeFolder\nPlone Site'},
             'containsanchors' : {'type' : 'List', 'default' : 'ATEvent\nATNewsItem\nATDocument\nATRelativePathCriterion'},
             'linkable' : {'type' : 'List', 'default' : 'ATTopic\nATEvent\nATFile\nATFolder\nATImage\nATBTreeFolder\nATNewsItem\nATDocument'},

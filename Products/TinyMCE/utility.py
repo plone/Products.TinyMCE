@@ -107,6 +107,7 @@ class TinyMCE(SimpleItem):
     toolbar_fullscreen = FieldProperty(ITinyMCEToolbar['toolbar_fullscreen'])
     
     link_using_uids = FieldProperty(ITinyMCEResourceTypes['link_using_uids'])
+    allow_captioned_images = FieldProperty(ITinyMCEResourceTypes['allow_captioned_images'])
     containsobjects = FieldProperty(ITinyMCEResourceTypes['containsobjects'])
     containsanchors = FieldProperty(ITinyMCEResourceTypes['containsanchors'])
     linkable = FieldProperty(ITinyMCEResourceTypes['linkable'])
@@ -650,6 +651,11 @@ class TinyMCE(SimpleItem):
             results['link_using_uids'] = True
         else:
             results['link_using_uids'] = False
+
+        if self.allow_captioned_images:
+            results['allow_captioned_images'] = True
+        else:
+            results['allow_captioned_images'] = False
 
         portal_url = getToolByName(self, 'portal_url')
         results['portal_url'] = portal_url()
