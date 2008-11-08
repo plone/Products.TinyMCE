@@ -8,7 +8,7 @@ from types import InstanceType
 
 TINYMCE_OUTPUT_TRANSFORMATION="html_to_tinymce_output_html"
 
-from Products.CMFPlone.utils import log 
+from Products.CMFPlone.utils import log
 
 def add_editor(site):
     """ add TinyMCE to 'my preferences' """

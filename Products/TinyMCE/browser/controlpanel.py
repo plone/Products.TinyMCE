@@ -23,28 +23,32 @@ from Products.TinyMCE.browser.interfaces.controlpanel import ITinyMCEControlPane
 _ = MessageFactory('tinymce')
 
 class TinyMCEControlPanelForm(ControlPanelForm):
-	"""TinyMCE Control Panel Form"""
-	implements(ITinyMCEControlPanelForm)
+    """TinyMCE Control Panel Form"""
+    implements(ITinyMCEControlPanelForm)
 
-	tinymcelayout = FormFieldsets(ITinyMCELayout)
-	tinymcelayout.id = 'tinymcelayout'
-	tinymcelayout.label = _(u'tinymcelayout', default=u'Layout')
+    tinymcelayout = FormFieldsets(ITinyMCELayout)
+    tinymcelayout.id = 'tinymcelayout'
+    tinymcelayout.label = _(u'tinymcelayout', default=u'Layout')
 
-	tinymcetoolbar = FormFieldsets(ITinyMCEToolbar)
-	tinymcetoolbar.id = 'tinymcetoolbar'
-	tinymcetoolbar.label = _(u'tinymcetoolbar', default=u'Toolbar')
+    tinymcetoolbar = FormFieldsets(ITinyMCEToolbar)
+    tinymcetoolbar.id = 'tinymcetoolbar'
+    tinymcetoolbar.label = _(u'tinymcetoolbar', default=u'Toolbar')
 
-	tinymcelibraries = FormFieldsets(ITinyMCELibraries)
-	tinymcelibraries.id = 'tinymcelibraries'
-	tinymcelibraries.label = _(u'tinymcelibraries', default=u'Libraries')
+    tinymcelibraries = FormFieldsets(ITinyMCELibraries)
+    tinymcelibraries.id = 'tinymcelibraries'
+    tinymcelibraries.label = _(u'tinymcelibraries', default=u'Libraries')
 
-	tinymceresourcetypes = FormFieldsets(ITinyMCEResourceTypes)
-	tinymceresourcetypes.id = 'tinymceresourcetypes'
-	tinymceresourcetypes.label = _(u'tinymceresourcetypes', default=u'Resource Types')
+    tinymceresourcetypes = FormFieldsets(ITinyMCEResourceTypes)
+    tinymceresourcetypes.id = 'tinymceresourcetypes'
+    tinymceresourcetypes.label = _(u'tinymceresourcetypes', default=u'Resource Types')
 
-	form_fields = FormFieldsets(tinymcelayout, tinymcetoolbar, tinymceresourcetypes) # tinymcelibraries
+    form_fields = FormFieldsets(tinymcelayout, tinymcetoolbar, tinymceresourcetypes) # tinymcelibraries
 
-	label = _(u"TinyMCE Settings")
-	description = _(u"Settings for the TinyMCE Wysiwyg editor.")
-	form_name = _("TinyMCE Settings")
+    label = _(u"TinyMCE Settings")
+    description = _(u"Settings for the TinyMCE Wysiwyg editor.")
+    form_name = _("TinyMCE Settings")
 
+    def _on_save(self, data=None):
+        """On save event handler"""
+
+        pass
