@@ -7829,7 +7829,7 @@ var tinyMCE = window.tinyMCE = tinymce.EditorManager;
 			} else {
 				h = t.getDoc().height;
 			}
-			DOM.setStyle(t.id + "_ifr", 'height', Math.max (parseInt(h + 100), parseInt(t.settings.theme_advanced_source_editor_height)));
+			DOM.setStyle(t.id + "_ifr", 'height', Math.max (parseInt(h + t.settings.auto_resize_bottom_margin), parseInt(t.settings.theme_advanced_source_editor_height + t.settings.auto_resize_bottom_margin)));
 		},
 
 		load : function(o) {

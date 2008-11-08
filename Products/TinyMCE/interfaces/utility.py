@@ -16,8 +16,14 @@ class ITinyMCELayout(Interface):
 
 	autoresize = schema.Bool(
 		title=_(u'label_autoresize', default=u"Enable auto resizing of the editor window."),
-		description=_(u"help_resizing", default=u"This option gives you the ability to enable/disable auto resizing the editor window depending on the content."),
+		description=_(u"help_autoresize", default=u"This option gives you the ability to enable/disable auto resizing the editor window depending on the content."),
 		default=False,
+		required=False)
+
+	autoresize_bottom_margin = schema.TextLine(
+		title=_(u'label_autoresize_bottom_margin', default=u"Bottom margin of the textfield when auto resizing is enabled."),
+		description=_(u"help_autoresize_bottom_margin", default=u"This option gives you the ability to specify the bottom margin (in pixels) of the textfield when auto resizing of the editor window is enabled."),
+		default=u'40',
 		required=False)
 
 	editor_width = schema.TextLine(
