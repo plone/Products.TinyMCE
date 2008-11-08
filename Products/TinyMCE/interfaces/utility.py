@@ -391,6 +391,12 @@ class ITinyMCEResourceTypes(Interface):
 		default=False,
 		required=False)
 
+	allow_captioned_images = schema.Bool(
+		title=_(u'label_allow_captioned_images', default=u"Allow captioned images"),
+		description=_(u"help_allow_captioned_images", default=u"Images will be automatically captioned."),
+		default=False,
+		required=False)
+
 	containsobjects = schema.Text(
 		title=_(u'label_containsobjects', default=u'Contains Objects'),
 		description=_(u'help_containsobjects', default=u"Enter a list of content types which can contain other objects. Format is one contenttype per line."),
