@@ -256,6 +256,7 @@ kukit.actionsGlobalRegistry.register("init-tinymce", function(oper) {
 		valid_elements : config.getValidElements(),
 		link_using_uids : config.getLinkUsingUids(),
 		allow_captioned_images : config.getAllowCaptionedImages(),
+		force_span_wrappers : true,
 		fix_list_elements : false
 	});
 });
