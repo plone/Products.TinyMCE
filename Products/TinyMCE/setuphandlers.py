@@ -1,10 +1,16 @@
+from Products.CMFCore.utils import getToolByName
+from Products.CMFCore.interfaces import IPropertiesTool
+from Products.PortalTransforms.interfaces import IPortalTransformsTool
+from Products.MimetypesRegistry.interfaces import IMimetypesRegistryTool
+
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.utility import TinyMCE
-from Products.CMFCore.utils import getToolByName
 from Products.TinyMCE.mimetypes import text_tinymce_output_html
 from Products.TinyMCE.transforms.html_to_tinymce_output_html import html_to_tinymce_output_html
 from Products.TinyMCE.transforms.tinymce_output_html_to_html import tinymce_output_html_to_html
 from types import InstanceType
+
+from zope.component import getUtility
 
 TINYMCE_OUTPUT_TRANSFORMATION="html_to_tinymce_output_html"
 
@@ -12,10 +18,11 @@ from Products.CMFPlone.utils import log
 
 def add_editor(site):
     """ add TinyMCE to 'my preferences' """
-    portal_props=getToolByName(site,'portal_properties')
+    #portal_props=getToolByName(site,'portal_properties')
+    portal_props = getUtility(IPropertiesTool)
     site_props=getattr(portal_props,'site_properties', None)
     attrname='available_editors'
-    if site_props is not None:
+    if not site_props is None:
         editors=list(site_props.getProperty(attrname))
         if 'TinyMCE' not in editors:
             editors.append('TinyMCE')
@@ -25,32 +32,30 @@ def register_mimetype(context, mimetype):
     """ register a mimetype with the MIMETypes registry """
     if type(mimetype) != InstanceType:
         mimetype = mimetype()
-    mimetypes_registry = getToolByName(context, 'mimetypes_registry')
+    mimetypes_registry = getUtility(IMimetypesRegistryTool) 
     mimetypes_registry.register(mimetype)
 
 def unregister_mimeType(context, mimetype):
     """ uregister a mimetype with the MIMETypes registry """
     if type(mimetype) != InstanceType:
         mimetype = mimetype()
-    mimetypes_registry = getToolByName(context, 'mimetypes_registry')
+    mimetypes_registry = getUtility(IMimetypesRegistryTool)
     mimetypes_registry.unregister(mimetype)
     
 def register_transform(context, transform):
     """ register a transform with the portal_transforms tool"""    
-    transform_tool = getToolByName(context, 'portal_transforms')
+    transform_tool = getUtility(IPortalTransformsTool)
     transform = transform()
     transform_tool.registerTransform(transform)
     
 def unregister_transform(context, transform):
     """ unregister a transform with the portal_transforms tool"""        
-    transform_tool = getToolByName(context, 'portal_transforms')
+    transform_tool = getUtility(IPortalTransformsTool)
     transform_tool.unregisterTransform(transform)
 
 def register_transform_policy(context, output_mimetype, required_transform):
     """ register a transform policy with the portal_transforms tool"""
-    transform_tool = getToolByName(context, 'portal_transforms')
-    log(context)
-    log(transform_tool)
+    transform_tool = getUtility(IPortalTransformsTool)
     policies = transform_tool.listPolicies()
     # this needs a rewrite, works for now
     install = True
