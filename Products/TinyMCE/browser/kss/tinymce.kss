@@ -4,3 +4,6 @@ textarea.mce_editable:load {
 form.inlineForm input[name=kss-save]:click {
 	action-client: save-tinymce;
 }
+div.fieldTextFormat:load {
+	action-client: checkhidetextformat-tinymce
+}

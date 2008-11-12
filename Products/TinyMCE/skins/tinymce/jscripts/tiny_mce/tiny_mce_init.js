@@ -264,3 +264,15 @@ kukit.actionsGlobalRegistry.register("init-tinymce", function(oper) {
 kukit.actionsGlobalRegistry.register("save-tinymce", function(oper) {
 	tinymce.EditorManager.activeEditor.save();
 });
+
+kukit.actionsGlobalRegistry.register("checkhidetextformat-tinymce", function(oper) {
+	var s = oper.node.getElementsByTagName('select')[0];
+	var o = s.getElementsByTagName('option');
+	if (o.length == 2) {
+		var v1 = tinymce.DOM.getAttrib(o[0], 'value');
+		var v2 = tinymce.DOM.getAttrib(o[1], 'value');
+		if ((v1 == 'text/html') && (v2 == 'text/x-tinymce-output-html')) {
+			tinymce.DOM.setStyle(oper.node, 'display', 'none');
+		}
+	}
+});
