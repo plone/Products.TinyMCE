@@ -12,10 +12,6 @@ from types import InstanceType
 
 from zope.component import getUtility
 
-TINYMCE_OUTPUT_TRANSFORMATION="html_to_tinymce_output_html"
-
-from Products.CMFPlone.utils import log
-
 def add_editor(site):
     """ add TinyMCE to 'my preferences' """
     #portal_props=getToolByName(site,'portal_properties')
@@ -35,7 +31,7 @@ def register_mimetype(context, mimetype):
     mimetypes_registry = getUtility(IMimetypesRegistryTool) 
     mimetypes_registry.register(mimetype)
 
-def unregister_mimeType(context, mimetype):
+def unregister_mimetype(context, mimetype):
     """ uregister a mimetype with the MIMETypes registry """
     if type(mimetype) != InstanceType:
         mimetype = mimetype()
@@ -51,27 +47,44 @@ def register_transform(context, transform):
 def unregister_transform(context, transform):
     """ unregister a transform with the portal_transforms tool"""        
     transform_tool = getUtility(IPortalTransformsTool)
-    transform_tool.unregisterTransform(transform)
+    # XXX How to check if transform exists?
+    if hasattr(transform_tool, transform):
+        transform_tool.unregisterTransform(transform)
 
 def register_transform_policy(context, output_mimetype, required_transform):
     """ register a transform policy with the portal_transforms tool"""
     transform_tool = getUtility(IPortalTransformsTool)
-    policies = transform_tool.listPolicies()
-    # this needs a rewrite, works for now
-    install = True
-    for policy in policies:
-        if policy[0] == output_mimetype:
-            install = False
-    if install:
-        transform_tool.manage_addPolicy(output_mimetype, [required_transform])    
+    policies = [mimetype for (mimetype, required) in transform_tool.listPolicies() if mimetype == output_mimetype]
+    if policies:
+        # There is a policy, we remove it for now
+        transform_tool.manage_delPolicies([output_mimetype])
+    transform_tool.manage_addPolicy(output_mimetype, [required_transform])    
+
+def unregister_transform_policy(context, output_mimetype):
+    """ unregister a transform policy with the portal_transforms tool"""
+    transform_tool = getUtility(IPortalTransformsTool)
+    policies = [mimetype for (mimetype, required) in transform_tool.listPolicies() if mimetype == output_mimetype]
+    if policies:
+        # There is a policy, remove it!
+        transform_tool.manage_delPolicies([output_mimetype])
+
+def install_mimetype_and_transforms(context):
+    """ register text/x-tinymce-output-html mimetype and transformations for captioned images """
+    register_mimetype(context, text_tinymce_output_html)
+    register_transform(context, tinymce_output_html_to_html)
+    register_transform(context, html_to_tinymce_output_html)
+    register_transform_policy(context, "text/x-html-safe", "html_to_tiny_output_html")
+    
+def uninstall_mimetype_and_transforms(context):
+    """ unregister text/x-tinymce-output-html mimetype and transformations for captioned images """
+    unregister_transform(context, "tinymce_output_html_to_html")
+    unregister_transform(context, "html_to_tinymce_output_html")
+    unregister_mimetype(context, text_tinymce_output_html)
+    unregister_transform_policy(context, "text/x-html-safe")
 
 def importVarious(context):
     if context.readDataFile('portal-tinymce.txt') is None:
         return
     site = context.getSite()
     add_editor(site)
-    # register text/x-tinymce-output-html mimetype and transformations for captioned images
-    register_mimetype(site, text_tinymce_output_html)
-    register_transform(site, tinymce_output_html_to_html)
-    register_transform(site, html_to_tinymce_output_html)
     
