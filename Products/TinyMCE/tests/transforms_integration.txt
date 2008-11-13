@@ -1,0 +1,59 @@
+======================
+An integration doctest
+======================
+
+Test the transforms that are included with the Products.TinyMCE package 
+
+Let's get the portal object
+
+    >>> self.portal
+    <PloneSite at ...>
+
+Ok, that works, let's get the transformation tool
+
+    >>> from zope.component import getUtility
+    >>> from Products.PortalTransforms.interfaces import IPortalTransformsTool
+    >>> transform_utility = getUtility(IPortalTransformsTool)
+    
+Test if TinyMCE is there
+
+    >>> from Products.TinyMCE.interfaces.utility import ITinyMCE
+    >>> tinymce_utility = getUtility(ITinyMCE)
+
+Register text/x-tinymce-output-html mimetype and transformations for captioned images and UID's
+
+    >>> from Products.TinyMCE.setuphandlers import install_mimetype_and_transforms
+    >>> install_mimetype_and_transforms(self.portal)
+
+Check if the transform policy is installed
+
+    >>> policies = [mimetype for (mimetype, required) in transform_utility.listPolicies() if mimetype == "text/x-html-safe"]
+    >>> print len(policies)
+    1
+
+Let's get the html-to-tinymce-output-html transform
+
+    >>> text = """<html>
+    ...             <head></head>
+    ...             <body>
+    ...                 <img src="resolveuid/943f469a781852145c7cddb3d99a5241" class="image-left captioned" width="200" style="border-width:1px" />
+    ...                 <p><img src="/plone/image.jpg" class="image-right captioned" width="200" style="border-width:1px" /></p>
+    ...              </body>
+    ...            </html>"""
+    >>> transformed_text = transform_utility.convert(name="html_to_tinymce_output_html", orig=text)
+
+If that works, let's uninstall the whole bunch again
+
+    >>> from Products.TinyMCE.setuphandlers import uninstall_mimetype_and_transforms
+    >>> uninstall_mimetype_and_transforms(self.portal)
+
+Let's uninstall it again, it should check if things exists before uninstalling
+
+    >>> from Products.TinyMCE.setuphandlers import uninstall_mimetype_and_transforms
+    >>> uninstall_mimetype_and_transforms(self.portal)
+
+And check if the transform policy is uninstalled
+
+    >>> policies = [mimetype for (mimetype, required) in transform_utility.listPolicies() if mimetype == "text/x-html-safe"]
+    >>> print len(policies)
+    0

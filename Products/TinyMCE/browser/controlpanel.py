@@ -19,6 +19,7 @@ from Products.TinyMCE.interfaces.utility import ITinyMCELibraries
 from Products.TinyMCE.interfaces.utility import ITinyMCEResourceTypes
 
 from Products.TinyMCE.browser.interfaces.controlpanel import ITinyMCEControlPanelForm
+from Products.TinyMCE.setuphandlers import install_mimetype_and_transforms, uninstall_mimetype_and_transforms
 
 _ = MessageFactory('tinymce')
 
@@ -50,5 +51,9 @@ class TinyMCEControlPanelForm(ControlPanelForm):
 
     def _on_save(self, data=None):
         """On save event handler"""
-
-        pass
+        if self.context.link_using_uids or self.context.allow_captioned_images:
+            # We need to register our mimetype and transforms for uid links and captioned_images
+            install_mimetype_and_transforms(self.context)
+        else:
+            # Unregister them
+            uninstall_mimetype_and_transforms(self.context)        

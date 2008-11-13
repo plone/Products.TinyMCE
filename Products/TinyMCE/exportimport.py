@@ -10,8 +10,7 @@ from Products.CMFCore.utils import getToolByName
 from Products.TinyMCE.interfaces.utility import ITinyMCELayout
 from Products.TinyMCE.interfaces.utility import ITinyMCEToolbar
 from Products.TinyMCE.interfaces.utility import ITinyMCEResourceTypes
-from Products.TinyMCE.setuphandlers import register_transform_policy, TINYMCE_OUTPUT_TRANSFORMATION
-
+from Products.TinyMCE.setuphandlers import install_mimetype_and_transforms, uninstall_mimetype_and_transforms
 
 class TinyMCESettingsXMLAdapter(XMLAdapterBase):
 
@@ -154,8 +153,12 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
                                         items.append(element.getAttribute('value'))
                             string = '\n'.join(items)
                             setattr(self.context, fieldnode.nodeName, string.decode())
-        # TODO : check if policy transform is needed, and how to get the s
-        register_transform_policy(self.context, "text/x-html-safe", TINYMCE_OUTPUT_TRANSFORMATION)
+        if self.context.link_using_uids or self.context.allow_captioned_images:
+            # We need to register our mimetype and transforms for uid links and captioned_images
+            install_mimetype_and_transforms(self.context)
+        else:
+            # Unregister them if they exist
+            uninstall_mimetype_and_transforms(self.context)
         self._logger.info('TinyMCE Settings imported.')
 
     def _purgeAttributes(self):
