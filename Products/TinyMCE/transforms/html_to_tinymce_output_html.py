@@ -1,5 +1,8 @@
 from Products.CMFPlone.utils import log
+from Products.CMFCore.utils import getToolByName
+from Products.CMFCore.interfaces import IURLTool, ISiteRoot
 from zope.interface import implements
+from zope.component import getUtility, getSiteManager
 try:
     from Products.PortalTransforms.z3.interfaces import ITransform
 except ImportError:
@@ -10,6 +13,8 @@ try:
     from celementtree import ElementTree
 except ImportError:
     from elementtree import ElementTree
+    
+from urlparse import urlsplit, urlunsplit
 
 class html_to_tinymce_output_html:
     """ transform which converts html to tiny output html"""    
@@ -26,48 +31,113 @@ class html_to_tinymce_output_html:
         }
         if name:
             self.__name__ = name
+            
+        log("__init__ called")
 
     def name(self):
         return self.__name__
 
+    def _makeUrlRelative(self, url, base):
+        """Make a link relative to base. This method assumes we have already checked that url and base have a common prefix. This is taken from Kupu"""
+        sheme, netloc, path, query, fragment = urlsplit(url)
+        _, _, basepath, _, _ = urlsplit(base)
+    
+        baseparts = basepath.split('/')
+        pathparts = path.split('/')
+    
+        basetail = baseparts.pop(-1)
+    
+        # Remove common elements
+        while pathparts and baseparts and baseparts[0]==pathparts[0]:
+            baseparts.pop(0)
+            pathparts.pop(0)
+    
+        for i in range(len(baseparts)):
+            pathparts.insert(0, '..')
+    
+        if not pathparts:
+            pathparts.insert(0, '.')
+        elif pathparts==[basetail]:
+            pathparts.pop(0)
+        return '/'.join(pathparts)
+
     def convert(self, orig, data, **kwargs):
         """converts captioned images, and convert uid's to real path's"""
-        root = ElementTree.fromstring(orig)
-        images = root.findall(".//img")
-        for image in images:
-            if image.get("class").find('captioned') != -1:
-                # We have captioned images, let's convert them
-                src = image.get('src')
-                classes = image.get("class")
-                width = image.get("width")
-                
-                if src.find('resolveuid') == 0:
-                    # search uid and put the actual path back
-                    # TODO: What to do when not found?
-                    src = src
-                    description = "This is my description"
-                else:
-                    description = "This is my description"
+        # get the context first, if None, don't do anything
+        log("calling transform")
+        orig = "<span>%s</span>" % orig
+        context = kwargs.get('context')
+        log(context)
+        if not context is None:
+            root = ElementTree.fromstring(orig)
+            images = root.findall(".//img")
+            for image in images:
+                    attributes = {}
+                    for (key, value) in image.items():
+                        attributes[key] = value
 
-                captioned_html = """
-                                    <dl class="%s" style="width:%spx;"> 
-                                    <dt style="width:%spx;">
-                                        <img src="%s" width="%s" />
-                                    </dt>
-                                    <dd class="image-caption">
-                                        %s
-                                    </dd>
-                                    </dl>""" % (classes, width, width, src, width, description)
-                dl = ElementTree.fromstring(captioned_html)
-                image.clear()
-                image.tag = "dl"
-                image[:] = [dl]
-        converted_html = ElementTree.tostring(root)
-        log(orig)
-        log("===")
-        log(converted_html)
-        data.setData(converted_html)
-        return data        
+                    src = ""
+                    description = ""
+                    if attributes.has_key("src"):
+                        src = image.get("src")
+
+                    if src.find('resolveuid') == 0:
+                        parts = src.split("/")
+                        # the uid
+                        uid = parts[1]
+                        appendix = ""
+                        if len(parts) > 2:
+                            # the appendix
+                            appendix = "/" + "/".join(parts[2:])
+                        reference_tool = getToolByName(context, 'reference_catalog')
+                        image_obj = reference_tool.lookupObject(uid)
+                        if image_obj:
+                            url_tool = getToolByName(context, 'portal_url')
+                            context_url = context.absolute_url()
+                            image_url = image_obj.absolute_url()
+                            log(image_url)
+                            log(context_url)
+                            log(self._makeUrlRelative(image_url, context_url) )
+                            src = self._makeUrlRelative(image_url, context_url) + appendix#url_tool.getRelativeUrl(image_obj) + appendix
+                            description = image_obj.Description()
+                            image.set("src", src)
+
+                    if image.get("class").find('captioned') != -1:
+                        # We have captioned images, let's convert them
+    
+                        classes = ""       
+                        if attributes.has_key("class"):
+                            classes = image.get("class")
+                        width_style = ""    
+                        if attributes.has_key("width"):
+                            width = image.get("width")
+                            width_style="style=\"width:%spx;\" " % width
+                        image_attributes = ""
+                        image_attributes = image_attributes.join(["%s %s=\"%s\"" % (image_attributes, key, value) for (key, value) in attributes.items() if not key in ["class", "src"]])
+                        captioned_html = """
+                                            <dl %sclass="%s"> 
+                                            <dt %s>
+                                                <img %s src="%s"/>
+                                            </dt>
+                                            <dd class="image-caption">
+                                                %s
+                                            </dd>
+                                            </dl>""" % (width_style, classes, width_style, image_attributes, src ,description)
+                        log("jow")
+                        log(captioned_html)
+                        dl = ElementTree.fromstring(captioned_html)
+                        image.clear()
+                        image.tag = "dl"
+                        image[:] = [dl]
+
+                    
+            converted_html = ElementTree.tostring(root)
+            #print(orig)
+            #print("===")
+            #print(converted_html)
+            # TODO : remove <span!>
+            data.setData(converted_html)
+            return data        
 
 def register():
     return html_to_tinymce_output_html()

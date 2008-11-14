@@ -73,7 +73,7 @@ def install_mimetype_and_transforms(context):
     register_mimetype(context, text_tinymce_output_html)
     register_transform(context, tinymce_output_html_to_html)
     register_transform(context, html_to_tinymce_output_html)
-    register_transform_policy(context, "text/x-html-safe", "html_to_tiny_output_html")
+    register_transform_policy(context, "text/x-html-safe", "html_to_tinymce_output_html")
     
 def uninstall_mimetype_and_transforms(context):
     """ unregister text/x-tinymce-output-html mimetype and transformations for captioned images """
