@@ -17,15 +17,6 @@ class TestUtility(TinyMCETestCase):
         isenabled = self.utility.isTinyMCEEnabled
         self.failUnless(isenabled)
 
-    def test_getEnabledButtons(self):
-        buttons = self.utility.getEnabledButtons()
-        self.failUnless(len(buttons) > 0)
-
-    def test_translateButtonsFromKupu(self):
-        kupubuttons = ['save-button', 'bold-button']
-        buttons = self.utility.translateButtonsFromKupu(kupubuttons)
-        self.failUnless(len(buttons) == 2)
-
 def test_suite():
     """Setup test suite"""
 
