@@ -1,8 +1,9 @@
 from Products.CMFPlone.utils import log
 from Products.CMFCore.utils import getToolByName
-from Products.CMFCore.interfaces import IURLTool, ISiteRoot
 from zope.interface import implements
-from zope.component import getUtility, getSiteManager
+from zope.component import getUtility
+from Products.TinyMCE.interfaces.utility import ITinyMCE
+
 try:
     from Products.PortalTransforms.z3.interfaces import ITransform
 except ImportError:
@@ -10,11 +11,12 @@ except ImportError:
 from Products.PortalTransforms.interfaces import itransform
 
 try:
-    from celementtree import ElementTree
+    from celementtree import ElementTree, HTMLTreeBuilder
 except ImportError:
-    from elementtree import ElementTree
-    
+    from elementtree import ElementTree, HTMLTreeBuilder    
 from urlparse import urlsplit, urlunsplit
+from sgmllib import SGMLParser
+
 
 class html_to_tinymce_output_html:
     """ transform which converts html to tiny output html"""    
@@ -63,80 +65,99 @@ class html_to_tinymce_output_html:
 
     def convert(self, orig, data, **kwargs):
         """converts captioned images, and convert uid's to real path's"""
-        # get the context first, if None, don't do anything
-        log("calling transform")
+        # TODO : check if elementtree failes
+        # TODO : remove span tags at the end
+        log("Content zoals hij binnen komt")
         orig = "<span>%s</span>" % orig
+        # Get the context first, if None, don't do anything
         context = kwargs.get('context')
-        log(context)
+
         if not context is None:
-            root = ElementTree.fromstring(orig)
-            images = root.findall(".//img")
-            for image in images:
-                    attributes = {}
-                    for (key, value) in image.items():
-                        attributes[key] = value
-
-                    src = ""
-                    description = ""
-                    if attributes.has_key("src"):
-                        src = image.get("src")
-
-                    if src.find('resolveuid') == 0:
-                        parts = src.split("/")
-                        # the uid
-                        uid = parts[1]
-                        appendix = ""
-                        if len(parts) > 2:
-                            # the appendix
-                            appendix = "/" + "/".join(parts[2:])
-                        reference_tool = getToolByName(context, 'reference_catalog')
-                        image_obj = reference_tool.lookupObject(uid)
-                        if image_obj:
-                            url_tool = getToolByName(context, 'portal_url')
-                            context_url = context.absolute_url()
-                            image_url = image_obj.absolute_url()
-                            log(image_url)
-                            log(context_url)
-                            log(self._makeUrlRelative(image_url, context_url) )
-                            src = self._makeUrlRelative(image_url, context_url) + appendix#url_tool.getRelativeUrl(image_obj) + appendix
-                            description = image_obj.Description()
-                            image.set("src", src)
-
-                    if image.get("class").find('captioned') != -1:
-                        # We have captioned images, let's convert them
+            log(orig)
+            if 1 == 0:
+                # disabled for now, rewrite going on with sgmllib                    
+                tree = HTMLTreeBuilder.TreeBuilder()
+                tree.feed(orig)
+                root = tree.close()
+                images = root.findall(".//img")
+                links = root.findall(".//a")
+                for image in images:
+                        attributes = {}
+                        for (key, value) in image.items():
+                            attributes[key] = value
+                        src = ""
+                        description = ""
+                        if attributes.has_key("src"):
+                            src = image.get("src")
     
-                        classes = ""       
-                        if attributes.has_key("class"):
-                            classes = image.get("class")
-                        width_style = ""    
-                        if attributes.has_key("width"):
-                            width = image.get("width")
-                            width_style="style=\"width:%spx;\" " % width
-                        image_attributes = ""
-                        image_attributes = image_attributes.join(["%s %s=\"%s\"" % (image_attributes, key, value) for (key, value) in attributes.items() if not key in ["class", "src"]])
-                        captioned_html = """
-                                            <dl %sclass="%s"> 
-                                            <dt %s>
-                                                <img %s src="%s"/>
-                                            </dt>
-                                            <dd class="image-caption">
-                                                %s
-                                            </dd>
-                                            </dl>""" % (width_style, classes, width_style, image_attributes, src ,description)
-                        log("jow")
-                        log(captioned_html)
-                        dl = ElementTree.fromstring(captioned_html)
-                        image.clear()
-                        image.tag = "dl"
-                        image[:] = [dl]
-
-                    
-            converted_html = ElementTree.tostring(root)
-            #print(orig)
-            #print("===")
-            #print(converted_html)
-            # TODO : remove <span!>
-            data.setData(converted_html)
+                        if src.find('resolveuid') == 0:
+                            parts = src.split("/")
+                            # Get the actual uid
+                            uid = parts[1]
+                            appendix = ""
+                            if len(parts) > 2:
+                                # There is more than just the uid, save it in appendix
+                                appendix = "/" + "/".join(parts[2:])
+                            reference_tool = getToolByName(context, 'reference_catalog')
+                            image_obj = reference_tool.lookupObject(uid)
+                            if image_obj:
+                                src = self._makeUrlRelative(image_obj.absolute_url(), context.absolute_url()) + appendix
+                                description = image_obj.Description()
+                                image.set("src", src)
+                        tinymce_utility = getUtility(ITinyMCE)
+                        if tinymce_utility.allow_captioned_images and image.get("class").find('captioned') != -1:
+                            # We have captioned images, and we need to convert them 
+                            classes = ""       
+                            if attributes.has_key("class"):
+                                classes = image.get("class")
+                            width_style = ""    
+                            if attributes.has_key("width"):
+                                width_style="style=\"width:%spx;\" " % image.get("width")
+                            image_attributes = ""
+                            image_attributes = image_attributes.join(["%s %s=\"%s\"" % (image_attributes, key, value) for (key, value) in attributes.items() if not key in ["class", "src"]])
+                            captioned_html = """
+                                                <dl %sclass="%s"> 
+                                                <dt %s>
+                                                    <img %s src="%s"/>
+                                                </dt>
+                                                <dd class="image-caption">
+                                                    %s
+                                                </dd>
+                                                </dl>""" % (width_style, classes, width_style, image_attributes, src ,description)
+                            log("jow")
+                            log(captioned_html)
+                            dl = ElementTree.fromstring(captioned_html)
+                            image.clear()
+                            image.tag = "dl"
+                            image[:] = [dl]
+                
+                for link in links:
+                    if link.get("href"):
+                        href = link.get("href")
+                        if href.find('resolveuid') == 0:
+                            parts = href.split("/")
+                            # Get the actual uid
+                            uid = parts[1]
+                            appendix = ""
+                            if len(parts) > 2:
+                                # There is more than just the uid, save it in appendix
+                                appendix = "/".join(parts[2:])
+                            reference_tool = getToolByName(context, 'reference_catalog')
+                            ref_obj = reference_tool.lookupObject(uid)
+                            if ref_obj:
+                                href = self._makeUrlRelative(ref_obj.absolute_url(), context.absolute_url()) + appendix
+                                link.set("href", href)                    
+                        
+                converted_html = ElementTree.tostring(root)
+                log("content na de transform")
+                log(converted_html)
+                #print(orig)
+                #print("===")
+                #print(converted_html)
+                # TODO : remove <span!>
+            else:
+                pass            
+            data.setData(orig)
             return data        
 
 def register():

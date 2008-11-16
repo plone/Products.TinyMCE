@@ -31,8 +31,21 @@ Check if the transform policy is installed
     >>> print len(policies)
     1
 
+We test the parser first: 
+    >>> text = """<html>
+    ...             <head></head>
+    ...             <body>
+    ...                 <img src="resolveuid/943f469a781852145c7cddb3d99a5241/image_thumb" class="image-left captioned" width="200" alt="My alt text" />
+    ...                 <p><img src="/plone/image.jpg" class="image-right captioned" width="200" style="border-width:1px" /></p>
+    ...              </body>
+    ...            </html>"""
+    >>> from Products.TinyMCE.transforms.parser import TinyMCEOutput
+    >>> parser = TinyMCEOutput(context=self.portal)
+    >>> parser.feed(text)
+    >>> parser.close()
+
 Let's get the html-to-tinymce-output-html transform and run it.
-This is not a full functional test as we don't add a document and image / link with captioned images or UID's yet...
+This is not a full functional test as we don't add a document and image / link with captioned images or UID's yet, it should leave the UID intact
 
     >>> text = """<html>
     ...             <head></head>
