@@ -31,7 +31,8 @@ Check if the transform policy is installed
     >>> print len(policies)
     1
 
-We test the parser first: 
+We test our SGML based parser first:
+
     >>> text = """<html>
     ...             <head></head>
     ...             <body>
