@@ -1,8 +1,10 @@
-from sgmllib import SGMLParser
 from Products.CMFCore.utils import getToolByName
-from urlparse import urlsplit, urlunsplit
 
-singleton_tags = ["img", "br", "hr", "input", "meta", "param", "col"] 
+from zope.component import getUtility
+from sgmllib import SGMLParser
+from urlparse import urlsplit, urlunsplit, urljoin
+
+singleton_tags = ["img", "br", "hr", "input", "meta", "param", "col"]
 
 class TinyMCEOutput(SGMLParser):
     """ Parser to convert UUID links and captioned images """
@@ -17,7 +19,7 @@ class TinyMCEOutput(SGMLParser):
 
     def _makeUrlRelative(self, url, base):
         """Make a link relative to base. This method assumes we have already checked that url and base have a common prefix. This is taken from Kupu"""
-        sheme, netloc, path, query, fragment = urlsplit(url)
+        scheme, netloc, path, query, fragment = urlsplit(url)
         _, _, basepath, _, _ = urlsplit(base)
     
         baseparts = basepath.split('/')
@@ -79,10 +81,12 @@ class TinyMCEOutput(SGMLParser):
             attributes = {}
             for (key, value) in attrs:
                 attributes[key] = value
+            
             if tag == 'a':
                 if attributes.has_key('href'):
                     href = attributes['href']
                     if href.find('resolveuid') == 0:
+                        # We should check if "Link using UIDs" is enabled in the TinyMCE tool, but then the kupu resolveuid is used, so let's always transform here
                         parts = href.split("/")
                         # Get the actual UUID
                         uid = parts[1]
@@ -115,9 +119,21 @@ class TinyMCEOutput(SGMLParser):
                     if image_obj:
                         # Only do something when the image is actually found in the reference_catalog
                         src = self._makeUrlRelative(image_obj.absolute_url(), self.context.absolute_url()) + appendix
-                        description = image_obj.Description()
-                        attributes['src'] = src
-                        
+                        if hasattr(image_obj, "Description"):
+                            description = image_obj.Description()                    
+                else:
+                    # It's a relative path, let's see if we can get the description from the portal catalog
+                    full_path = urljoin(self.context.absolute_url(), src)
+                    scheme, netloc, path, query, fragment = urlsplit(full_path)
+                    portal_catalog = getToolByName(self.context, "portal_catalog")
+                    # Check if we can find this in the portal catalog
+                    brains = portal_catalog({'path' : {'query':path}, 'type' : 'Image'})
+                    if len(brains) == 0:
+                        # Maybe omething like 'image_preview' is in the path, let's chop it
+                        query= {'path' : {'query' : "/".join(path.split('/')[:-1])}, 'type' : 'Image'}
+                        brains = portal_catalog(query)
+                    if len(brains) > 0:
+                        description = brains[0].Description
                 # Check if the image is a captioned image
                 classes = ""                       
                 if attributes.has_key("class"):
