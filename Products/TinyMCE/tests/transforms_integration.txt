@@ -61,14 +61,15 @@ If that works, let's uninstall the whole bunch again
 
     >>> from Products.TinyMCE.setuphandlers import uninstall_mimetype_and_transforms
     >>> uninstall_mimetype_and_transforms(self.portal)
-
-Let's uninstall it again, it should check if things exists before uninstalling
-
-    >>> from Products.TinyMCE.setuphandlers import uninstall_mimetype_and_transforms
-    >>> uninstall_mimetype_and_transforms(self.portal)
-
-And check if the transform policy is uninstalled
+    
+Check if the transform policy is uninstalled after this
 
     >>> policies = [mimetype for (mimetype, required) in transform_utility.listPolicies() if mimetype == "text/x-html-safe"]
     >>> print len(policies)
     0
+
+Let's uninstall it again, it should check if the transforms, mimetype and policy exist
+
+    >>> from Products.TinyMCE.setuphandlers import uninstall_mimetype_and_transforms
+    >>> uninstall_mimetype_and_transforms(self.portal)
+

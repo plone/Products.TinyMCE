@@ -1,5 +1,3 @@
-from Products.CMFPlone.utils import log
-from Products.CMFCore.utils import getToolByName
 from zope.interface import implements
 from zope.component import getUtility
 from Products.TinyMCE.interfaces.utility import ITinyMCE
@@ -32,8 +30,6 @@ class html_to_tinymce_output_html:
         if name:
             self.__name__ = name
             
-        log("__init__ called")
-
     def name(self):
         return self.__name__
 
@@ -48,8 +44,8 @@ class html_to_tinymce_output_html:
             parser.feed(orig)
             parser.close()
             data.setData(parser.getResult())
-            return data
-        data.setData(orig)
+        else:
+            data.setData(orig)
         return data
         
 def register():
