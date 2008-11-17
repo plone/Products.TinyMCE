@@ -145,14 +145,11 @@ class TinyMCEOutput(SGMLParser):
                         width_style="style=\"width:%spx;\" " % attributes["width"]
                     image_attributes = ""
                     image_attributes = image_attributes.join(["%s %s=\"%s\"" % (image_attributes, key, value) for (key, value) in attributes.items() if not key in ["class", "src"]])
-                    captioned_html = """
-                                        <dl %sclass="%s"> 
+                    captioned_html = """<dl %sclass="%s"> 
                                         <dt %s>
                                             <img %s src="%s"/>
                                         </dt>
-                                        <dd class="image-caption">
-                                            %s
-                                        </dd>
+                                        <dd class="image-caption">%s</dd>
                                         </dl>""" % (width_style, classes, width_style, image_attributes, src ,description)
                     self.append_data(captioned_html)
                     return True
