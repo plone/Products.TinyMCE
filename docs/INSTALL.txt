@@ -11,30 +11,32 @@ Products.TinyMCE is an egg. The installing steps are:
 buildout.cfg example
 --------------------
 
-[buildout]
-...
-eggs =
+For basic installation use the following section in your buildout
+::
+    [buildout]
     ...
-    Products.TinyMCE
+    eggs =
+        ...
+        Products.TinyMCE
 
 buildout.cfg example using svn egg from the trunk
 -------------------------------------------------
 
-If you want to help testing, please use the trunk version from the Collective.
-
-[buildout]
-...
-parts =
+If you want to help testing, please use the trunk version from the Collective
+::
+    [buildout]
     ...
-    eggcheckouts
-
-...
-eggs =
+    parts =
+        ...
+        eggcheckouts
+    
     ...
-    Products.TinyMCE
-
-[eggcheckouts]
-recipe = infrae.subversion
-urls = 
-    http://svn.plone.org/svn/collective/Products.TinyMCE/trunk Products.TinyMCE
-as_eggs = true
+    eggs =
+        ...
+        Products.TinyMCE
+    
+    [eggcheckouts]
+    recipe = infrae.subversion
+    urls = 
+        http://svn.plone.org/svn/collective/Products.TinyMCE/trunk Products.TinyMCE
+    as_eggs = true
