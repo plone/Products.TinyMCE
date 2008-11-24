@@ -17,7 +17,8 @@
                             rows rows|default;
                             cols cols|default;
                             title python:here.portal_tinymce.getConfiguration (context=context, field=field);
-                            class string:mce_editable"></textarea>
+                            class python:test('html' in fformat, 'mce_editable', '')"></textarea>
+
   </tal:block>
 </div>
 
