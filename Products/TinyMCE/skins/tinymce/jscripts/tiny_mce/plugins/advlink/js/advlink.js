@@ -724,6 +724,7 @@ function getFolderListing(path) {
 }
 
 function uploadOk(ok_msg) {
+	current_link = ok_msg;
 	displayPanel('internal_panel');
 	getFolderListing(current_path);
 }

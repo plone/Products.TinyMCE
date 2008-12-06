@@ -3,6 +3,8 @@ from zope.component import adapts;
 from Products.CMFCore.utils import getToolByName
 from Products.PythonScripts.standard import html_quote, newline_to_br
 
+from Products.TinyMCE.interfaces.utility import ITinyMCE
+from zope.component import getUtility
 from Products.TinyMCE.adapters.interfaces.Upload import IUpload
 from Products.CMFCore.interfaces._content import IContentish, IFolderish;
 from Products.CMFPlone.interfaces.siteroot import IPloneSiteRoot
@@ -111,4 +113,7 @@ class Upload(object):
 
 		obj.reindexObject()
 
-		return self.okMessage("File uploaded")
+		utility = getUtility(ITinyMCE)
+		if utility.link_using_uids:
+			return self.okMessage("resolveuid/%s" % (obj.UID()))
+		return self.okMessage("%s" % (obj.absolute_url()))

@@ -573,6 +573,7 @@ var ImageDialog = {
 };
 
 function uploadOk(ok_msg) {
+	ImageDialog.current_link = ok_msg;
 	ImageDialog.displayPanel('internal_panel');
 	ImageDialog.getFolderListing(ImageDialog.current_path);
 }
