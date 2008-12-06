@@ -77,7 +77,6 @@ function init() {
 				selectByValue(formGeneralObj, 'externalurlprefix', 'ftp://', true);
 				setFormValue('externalurl', href.split('ftp://')[1], 0);
 			}
-			previewExternalLink();
 		} else {
 			if (href.indexOf('#') != -1) {
 				current_pageanchor = href.split('#')[1];
