@@ -11,16 +11,11 @@
 	<base target="_self" />
 </head>
 <body style="display: none">
-    <form onsubmit="insertMedia();return false;" action="#">
-		<div class="tabs">
-			<ul><li id="general_tab" class="current"><span><a href="javascript:mcTabs.displayTab('general_tab','general_panel');generatePreview();" onmousedown="return false;">{#media_dlg.general}</a></span></li><li id="advanced_tab"><span><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;">{#media_dlg.advanced}</a></span></li></ul>
-		</div>
+	<div class="dialog-wrapper">
+		<form onsubmit="insertMedia();return false;" action="#">
+			<ul class="formTabs"><li id="general_tab" class="formTab firstFormTab"><a href="javascript:mcTabs.displayTab('general_tab','general_panel');generatePreview();" onmousedown="return false;" class="selected"><span>{#media_dlg.general}</span></a></li><li id="advanced_tab" class="formTab lastFormTab"><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;"><span>{#media_dlg.advanced}</span></a></li></ul>
 
-		<div class="panel_wrapper">
-			<div id="general_panel" class="panel current">
-				<fieldset>
-					<legend>{#media_dlg.general}</legend>
-
+				<fieldset id="general_panel" class="formPanel">
 					<table border="0" cellpadding="4" cellspacing="0">
 							<tr>
 								<td><label for="media_type">{#media_dlg.type}</label></td>
@@ -63,18 +58,12 @@
 								</td>
 							</tr>
 					</table>
-				</fieldset>
 
-				<fieldset>
-					<legend>{#media_dlg.preview}</legend>
+					<p>{#media_dlg.preview}</p>
 					<div id="prev"></div>
 				</fieldset>
-			</div>
 
-			<div id="advanced_panel" class="panel">
-				<fieldset>
-					<legend>{#media_dlg.advanced}</legend>
-
+				<fieldset id="advanced_panel" class="formPanel" style="display: none;">
 					<table border="0" cellpadding="4" cellspacing="0" width="100%">
 						<tr>
 							<td><label for="id">{#media_dlg.id}</label></td>
@@ -113,7 +102,6 @@
 							<td><input type="text" id="hspace" name="hspace" class="number" onchange="generatePreview();" /></td>
 						</tr>
 					</table>
-				</fieldset>
 
 				<fieldset id="flash_options">
 					<legend>{#media_dlg.flash_options}</legend>
@@ -803,18 +791,18 @@
 						</tr>
 					</table>
 				</fieldset>
-			</div>
-		</div>
+			</fieldset>
 
-		<div class="mceActionPanel">
-			<div style="float: left">
-				<input type="submit" id="insert" name="insert" value="{#insert}" />
-			</div>
 
-			<div style="float: right">
-				<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+			<div class="visualClear"><!-- --></div>
+
+			<div class="mceActionPanel formControls">
+				<span class="actionButtons">
+					<input type="submit" class="context" id="insert" name="insert" value="{#insert}" />
+					<input type="button" class="context" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+				</span>
 			</div>
-		</div>
-	</form>
+		</form>
+	</div>
 </body>
 </html>
