@@ -552,7 +552,8 @@ class TinyMCE(SimpleItem):
             if valid_element not in valid_tags:
                 del valid_elements[valid_element]
             else:
-                valid_elements[valid_element] -= stripped_attributes
+                if valid_elements[valid_element] != '*':
+                    valid_elements[valid_element] -= stripped_attributes
                 #if 'style' in valid_elements[valid_element]:
                 #    valid_elements[valid_element].remove('style')
                 #    valid_elements[valid_element].add(style_attribute)
