@@ -48,4 +48,4 @@ class JSONDetails(object):
 		else:
 			results['anchors'] = []
 
-		return json.write(results)
+		return json.write(obj=results, escaped_forward_slash=True);

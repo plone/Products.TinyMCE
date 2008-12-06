@@ -94,5 +94,5 @@ class JSONFolderListing(object):
 		results['items'] = catalog_results; 
 
 		# return results in JSON format
-		return json.write(results);
+		return json.write(obj=results, escaped_forward_slash=True);
 
