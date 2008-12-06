@@ -563,6 +563,12 @@ class TinyMCE(SimpleItem):
 
         return valid_elements
 
+    security.declareProtected('View', 'getContentType')
+    def getContentType(self, object=None, fieldname=None):
+        if hasattr(object, 'getContentType'):
+            return object.getContentType(fieldname)
+        return 'text/html'
+
     security.declareProtected('View', 'getConfiguration')
     def getConfiguration(self, context=None, field=None):
         results = {}

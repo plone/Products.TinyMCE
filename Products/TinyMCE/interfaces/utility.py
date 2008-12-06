@@ -432,5 +432,8 @@ class ITinyMCE(
 	def isTinyMCEEnabled(useragent='', allowAnonymous=False, REQUEST=None, context=None, fieldName=None):
 		"""Is TinyMCE enabled for this combination of client browser, permissions, and field."""
 
+	def getContentType(self, object=None, fieldname=None):
+		"""Get the content type of the field."""
+
 	def getConfiguration(self, context=None, field=None):
 		"""Get the configuration based on the control panel settings and the field settings."""
