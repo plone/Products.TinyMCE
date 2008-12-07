@@ -128,10 +128,14 @@
 			});
 
 			ed.onActivate.add(function(ed) {
-				DOM.addClass(DOM.get(ed.id + '_tbl'), 'mceEditorFocus');
+				if (!tinymce.isIE) {
+					DOM.addClass(DOM.get(ed.id + '_tbl'), 'mceEditorFocus');
+				}
 			});
 			ed.onDeactivate.add(function(ed) {
-				DOM.removeClass(DOM.get(ed.id + '_tbl'), 'mceEditorFocus');
+				if (!tinymce.isIE) {
+					DOM.removeClass(DOM.get(ed.id + '_tbl'), 'mceEditorFocus');
+				}
 			});
 
 			ed.onSetProgressState.add(function(ed, b, ti) {
