@@ -165,11 +165,14 @@ SXE.insertElement = function(element_name) {
 			for (var i=0; i<elementArray.length; i++) {
 				var elm = elementArray[i];
 
-				elm.id = '';
-				elm.setAttribute('id', '');
-				elm.removeAttribute('id');
+				if (SXE.inst.dom.getAttrib(elm, '_mce_new')) {
+					elm.id = '';
+					elm.setAttribute('id', '');
+					elm.removeAttribute('id');
+					elm.removeAttribute('_mce_new');
 
-				setAllCommonAttribs(elm);
+					setAllCommonAttribs(elm);
+				}
 			}
 		}
 	} else {
