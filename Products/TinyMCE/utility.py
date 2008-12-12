@@ -587,8 +587,8 @@ class TinyMCE(SimpleItem):
         if redefine_parastyles is None or not redefine_parastyles:
             for tablestyle in self.tablestyles.split('\n'):
                 tablestylefields = tablestyle.split('|');
-                results['styles'].append(tablestylefields[0] + '|table|' + tablestylefields[0]);
-                results['table_styles'].append(tablestylefields[0] + '=' + tablestylefields[0]);
+                results['styles'].append(tablestylefields[0] + '|table|' + tablestylefields[1]);
+                results['table_styles'].append(tablestylefields[0] + '=' + tablestylefields[1]);
             results['styles'].extend(self.styles.split('\n'))
 
         if parastyles is not None:
