@@ -177,7 +177,9 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
 def importTinyMCESettings(context):
     """Import TinyMCE Settings"""
     site = context.getSite()
-    tool = getToolByName(site, 'portal_tinymce')
+    tool = getToolByName(site, 'portal_tinymce', None)
+    if tool is None:
+        return
 
     importObjects(tool, '', context)
 
