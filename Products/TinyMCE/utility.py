@@ -473,7 +473,7 @@ class TinyMCE(SimpleItem):
             'hr': COMMON_ATTRS | set('align noshade size width'.split()),
             'html': I18N_ATTRS | set('id xmlns'.split()),
             'i': COMMON_ATTRS.copy(),
-            'img': COMMON_ATTRS | set('src alt name longdesc height width usemap ismap align border hspace vspace'.split()),
+            'img': COMMON_ATTRS | set('src alt name longdesc height width usemap ismap<ismap align border hspace vspace'.split()),
             'input': COMMON_ATTRS | FOCUS_ATTRS | set('type name value checked disabled readonly size maxlength src alt usemap accept align'.split()),
             'ins': COMMON_ATTRS | set('cite datetime'.split()),
             'kbd': COMMON_ATTRS.copy(),
