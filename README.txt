@@ -8,7 +8,7 @@ Feedback
 --------
 
 Please send any changes, improvements, or suggestions regarding this Plone
-product to "Four Digits":mailto:info@fourdigits.nl
+product to `Four Digits <mailto:info@fourdigits.nl>`_
 
 Requirements
 ------------
