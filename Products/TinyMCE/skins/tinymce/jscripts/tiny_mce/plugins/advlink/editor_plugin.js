@@ -20,7 +20,7 @@
 
 				ed.windowManager.open({
 					file : url + '/link.htm',
-					width : 780 + parseInt(ed.getLang('advlink.delta_width', 0)),
+					width : 820 + parseInt(ed.getLang('advlink.delta_width', 0)),
 					height : 470 + parseInt(ed.getLang('advlink.delta_height', 0)),
 					inline : 1
 				}, {
