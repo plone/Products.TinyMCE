@@ -122,6 +122,22 @@ function init() {
     }
 }
 
+function checkExternalUrl() {
+    var formGeneralObj = document.forms[0];
+    href = document.getElementById('externalurl').value;
+    if ((href.indexOf('http://') != -1) || (href.indexOf('https://') != -1) || (href.indexOf('ftp://') != -1)) {
+        if (href.indexOf('http://') != -1) {
+            selectByValue(formGeneralObj, 'externalurlprefix', 'http://', true);
+            setFormValue('externalurl', href.split('http://')[1], 0);
+        } else if (href.indexOf('https://') != -1) {
+            selectByValue(formGeneralObj, 'externalurlprefix', 'https://', true);
+            setFormValue('externalurl', href.split('https://')[1], 0);
+        } else if (href.indexOf('ftp://') != -1) {
+            selectByValue(formGeneralObj, 'externalurlprefix', 'ftp://', true);
+            setFormValue('externalurl', href.split('ftp://')[1], 0);
+        }
+    }
+}
 function getParentUrl(url) {
 	var url_array = url.split('/');
 	url_array.pop();
