@@ -89,7 +89,7 @@
 								<option value="https://">https://</option>
 								<option value="ftp://">ftp://</option>
 							</select>
-							<input type="text" name="externalurl" id="externalurl" value="" size="30" onchange="previewExternalLink();"/>
+							<input type="text" name="externalurl" id="externalurl" value="" onkeyup="checkExternalUrl();" size="30"/>
 							<input type="button" id="preview" class="context" name="preview" value="Preview" onclick="previewExternalLink();" />
 						</div>
 					</div>

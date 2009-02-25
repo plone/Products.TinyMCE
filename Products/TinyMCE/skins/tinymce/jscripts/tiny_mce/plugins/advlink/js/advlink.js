@@ -102,8 +102,24 @@ function init() {
 
 		selectByValue(formAdvancedObj, 'targetlist', inst.dom.getAttrib(elm, 'target'), true);
 	} else {
-		getCurrentFolderListing();
-	}
+
+        href = inst.selection.getContent();
+        if ((href.indexOf('http://') != -1) || (href.indexOf('https://') != -1) || (href.indexOf('ftp://') != -1)) {
+            displayPanel('external_panel');
+            if (href.indexOf('http://') != -1) {
+                selectByValue(formGeneralObj, 'externalurlprefix', 'http://', true);
+                setFormValue('externalurl', href.split('http://')[1], 0);
+            } else if (href.indexOf('https://') != -1) {
+                selectByValue(formGeneralObj, 'externalurlprefix', 'https://', true);
+                setFormValue('externalurl', href.split('https://')[1], 0);
+            } else if (href.indexOf('ftp://') != -1) {
+                selectByValue(formGeneralObj, 'externalurlprefix', 'ftp://', true);
+                setFormValue('externalurl', href.split('ftp://')[1], 0);
+            }
+        } else {
+            getCurrentFolderListing();
+        }
+    }
 }
 
 function getParentUrl(url) {
