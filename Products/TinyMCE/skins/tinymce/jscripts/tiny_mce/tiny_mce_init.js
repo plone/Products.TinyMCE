@@ -213,6 +213,14 @@ function TinyMCEConfig(id) {
 	this.getPortalUrl = function () {
 		return this.widget_config.portal_url;
 	};
+
+    this.getPlugins = function () {
+        var plugins = "safari,pagebreak,table,save,advhr,advimage,advlink,emotions,iespell,insertdatetime,preview,media,searchreplace,print,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups,style";
+        if (this.widget_config.contextmenu) {
+            plugins += ',contextmenu';
+        }
+        return plugins;
+    }
 }
 
 kukit.actionsGlobalRegistry.register("init-tinymce", function(oper) {
@@ -227,7 +235,7 @@ kukit.actionsGlobalRegistry.register("init-tinymce", function(oper) {
 		language : config.getLanguage(),
 		skin : "plone",
 		inlinepopups_skin : "plonepopup",
-		plugins : "safari,pagebreak,table,save,advhr,advimage,advlink,emotions,iespell,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups,style",
+		plugins : config.getPlugins(),
 
 		theme_advanced_styles : config.getStyles(),
 		theme_advanced_buttons1 : config.getToolbar(0),

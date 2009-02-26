@@ -35,6 +35,7 @@ class TinyMCE(SimpleItem):
     editor_width = FieldProperty(ITinyMCELayout['editor_width'])
     editor_height = FieldProperty(ITinyMCELayout['editor_height'])
     directionality = FieldProperty(ITinyMCELayout['directionality'])
+    contextmenu = FieldProperty(ITinyMCELayout['contextmenu'])
     content_css = FieldProperty(ITinyMCELayout['content_css'])
     styles = FieldProperty(ITinyMCELayout['styles'])
     tablestyles = FieldProperty(ITinyMCELayout['tablestyles'])
@@ -654,6 +655,10 @@ class TinyMCE(SimpleItem):
             results['toolbar_width'] = 440
 
         results['directionality'] = self.directionality
+        if self.contextmenu:
+            results['contextmenu'] = True
+        else:
+            results['contextmenu'] = False
 
         if self.content_css and self.content_css.strip() != "":
             results['content_css'] = self.content_css
