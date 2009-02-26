@@ -26,6 +26,7 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
             'editor_width' : {'type' : 'Text', 'default' : '100%'},
             'editor_height' : {'type' : 'Text', 'default' : '400'},
             'directionality' : {'type' : 'Text', 'default' : 'ltr'},
+            'contextmenu' : {'type' : 'Bool', 'default' : True},
             'content_css' : {'type' : 'Text', 'default' : ''},
             'styles' : {'type' : 'List', 'default' : 'Heading|h2\nSubheading|h3\nLiteral|pre\nDiscreet|p|discreet\nPull-quote|div|pullquote\nCall-out|p|callout\nHighlight|span|visualHighlight\nOdd row|tr|odd\nEven row|tr|even\nHeading cell|th|\nPage break (print only)|div|pageBreak\nClear floats|div|visualClear'},
             'tablestyles' : {'type' : 'List', 'default' : 'Subdued grid|plain\nInvisible grid|invisible\nFancy listing|listing\nFancy grid listing|grid listing\nFancy vertical listing|vertical listing'},

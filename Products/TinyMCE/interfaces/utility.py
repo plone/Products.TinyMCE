@@ -46,6 +46,12 @@ class ITinyMCELayout(Interface):
 		vocabulary=SimpleVocabulary([SimpleTerm('ltr', 'Left to right'), SimpleTerm('rtl', 'Right to left')]),
 		required=False)
 
+	contextmenu = schema.Bool(
+		title=_(u'label_contextmenu', default=u"Enable contextmenu."),
+		description=_(u"help_contextmenu", default=u"This option gives you the ability to enable/disable the use of the contextmenu."),
+		default=True,
+		required=False)
+
 	content_css = schema.TextLine(
 		title=_(u'label_content_css', default=u'Choose the Css used in Wysiwyg Editor Area'),
 		description=_(u'help_content_css', default=u"This option enables you to specify a custom CSS file that extends the theme content CSS. This CSS file is the one used within the editor (the editable area)."),
