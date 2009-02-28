@@ -82,6 +82,7 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
             'toolbar_cleanup' : {'type' : 'Bool', 'default' : False},
             'toolbar_visualaid' : {'type' : 'Bool', 'default' : False},
             'toolbar_visualchars' : {'type' : 'Bool', 'default' : False},
+            'toolbar_attribs' : {'type' : 'Bool', 'default' : False},
             'toolbar_code' : {'type' : 'Bool', 'default' : True},
             'toolbar_fullscreen' : {'type' : 'Bool', 'default' : True},
         },

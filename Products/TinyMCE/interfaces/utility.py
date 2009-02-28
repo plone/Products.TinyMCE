@@ -373,6 +373,12 @@ class ITinyMCEToolbar(Interface):
 		default=False,
 		required=False)
 
+	toolbar_attribs = schema.Bool(
+		title=_(u'label_toolbar_attribs', default=u"Insert/edit attributes"),
+		description=_(u"help_toolbar_attribs", default=u""),
+		default=False,
+		required=False)
+
 	toolbar_code = schema.Bool(
 		title=_(u'label_toolbar_code', default=u"Edit HTML Source"),
 		description=_(u"help_toolbar_code", default=u""),
