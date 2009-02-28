@@ -104,6 +104,7 @@ class TinyMCE(SimpleItem):
     toolbar_cleanup = FieldProperty(ITinyMCEToolbar['toolbar_cleanup'])
     toolbar_visualaid = FieldProperty(ITinyMCEToolbar['toolbar_visualaid'])
     toolbar_visualchars = FieldProperty(ITinyMCEToolbar['toolbar_visualchars'])
+    toolbar_attribs = FieldProperty(ITinyMCEToolbar['toolbar_attribs'])
     toolbar_code = FieldProperty(ITinyMCEToolbar['toolbar_code'])
     toolbar_fullscreen = FieldProperty(ITinyMCEToolbar['toolbar_fullscreen'])
     
@@ -310,6 +311,8 @@ class TinyMCE(SimpleItem):
             buttons.append('visualaid')
         if self.toolbar_visualchars:
             buttons.append('visualchars')
+        if self.toolbar_attribs:
+            buttons.append('attribs')
         if self.toolbar_code:
             buttons.append('code')
         if self.toolbar_fullscreen:
