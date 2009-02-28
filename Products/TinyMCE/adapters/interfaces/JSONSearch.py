@@ -1,16 +1,13 @@
 from zope.interface import Interface
 
-class IJSONFolderListing(Interface):
-	"""Returns a folderish like listing in JSON"""
+class IJSONSearch(Interface):
+	"""Returns a list of search results in JSON"""
 
 	def __init__(self, context):
 		"""Constructor"""
 
-	def getBreadcrums(self):
-		"""Get breadcrums"""
-
-	def getListing(self, filter_meta_types):
-		"""Returns the actual listing"""
+	def getSearchResults(self, filter_meta_types):
+		"""Returns the actual search results"""
 
 	def getInfoFromBrain(self, brain):
 		"""

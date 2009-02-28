@@ -71,13 +71,13 @@ var ImageDialog = {
 					success : function(text) {
 						ImageDialog.current_url = ImageDialog.getAbsoluteUrl(tinyMCEPopup.editor.settings.document_base_url, text);
 						ImageDialog.current_link = href;
-						ImageDialog.getFolderListing(ImageDialog.getParentUrl(ImageDialog.current_url));
+						ImageDialog.getFolderListing(ImageDialog.getParentUrl(ImageDialog.current_url), 'tinymce-jsonimagefolderlisting');
 					}
 				});
 			} else {
 				href = this.getAbsoluteUrl(tinyMCEPopup.editor.settings.document_base_url, href);
 				this.current_link = href;
-				this.getFolderListing(this.getParentUrl(href));
+				this.getFolderListing(this.getParentUrl(href), 'tinymce-jsonimagefolderlisting');
 			}
 		} else {
 			this.getCurrentFolderListing();
@@ -144,6 +144,12 @@ var ImageDialog = {
 
 		tinyMCEPopup.close();
 	},
+
+    checkSearch : function(e) {
+        if (e.keyCode == 13) {
+            ImageDialog.getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonimagesearch');
+        }
+    },
 
 	getAttrib : function(e, at) {
 		var ed = tinyMCEPopup.editor, dom = ed.dom, v, v2;
@@ -459,14 +465,16 @@ var ImageDialog = {
 	},
 
 	getCurrentFolderListing : function() {
-		this.getFolderListing(tinyMCEPopup.editor.settings.document_base_url);
+		this.getFolderListing(tinyMCEPopup.editor.settings.document_base_url, 'tinymce-jsonimagefolderlisting');
 	},
 	
-	getFolderListing : function(path) {
+	getFolderListing : function(path, method) {
 		// Sends a low level Ajax request
 		tinymce.util.XHR.send({
-		    url : path + '/tinymce-jsonimagefolderlisting',
+		    url : path + '/' + method,
+			content_type : "application/x-www-form-urlencoded",
 			type : 'POST',
+			data : "searchtext=" + document.getElementById('searchtext').value,
 			success : function(text) {
 				var html = "";
 				var data = eval('(' + text + ')');
@@ -477,7 +485,7 @@ var ImageDialog = {
 						html += '<div class="' + (i % 2 == 0 ? 'even' : 'odd') + '">';
 						if (data.items[i].is_folderish) {
 							html += '<img src="' + data.items[i].icon + '" border="0" style="margin-left: 17px" /> ';
-							html += '<a href="javascript:ImageDialog.getFolderListing(\'' + data.items[i].url + '\')">';
+							html += '<a href="javascript:ImageDialog.getFolderListing(\'' + data.items[i].url + '\',\'tinymce-jsonimagefolderlisting' + '\')">';
 							html += data.items[i].title;
 							html += '</a>';
 						} else {
@@ -500,7 +508,7 @@ var ImageDialog = {
 					document.getElementById ('uponelevel').href = 'javascript:void(0)';
 				} else {
 					document.getElementById ('uponelevel').style.display = 'block';
-					document.getElementById ('uponelevel').href = 'javascript:ImageDialog.getFolderListing(\'' + data.parent_url + '\')';
+					document.getElementById ('uponelevel').href = 'javascript:ImageDialog.getFolderListing(\'' + data.parent_url + '\',\'tinymce-jsonimagefolderlisting' + '\')';
 				}
 
 				html = "";
@@ -511,7 +519,7 @@ var ImageDialog = {
 					if (i == data.path.length - 1) {
 						html += data.path[i].title;
 					} else {
-						html += '<a href="javascript:ImageDialog.getFolderListing(\'' + data.path[i].url + '\')">';
+						html += '<a href="javascript:ImageDialog.getFolderListing(\'' + data.path[i].url + '\',\'tinymce-jsonimagefolderlisting' + '\')">';
 						html += data.path[i].title;
 						html += '</a>';
 					}
@@ -575,7 +583,7 @@ var ImageDialog = {
 function uploadOk(ok_msg) {
 	ImageDialog.current_link = ok_msg;
 	ImageDialog.displayPanel('internal_panel');
-	ImageDialog.getFolderListing(ImageDialog.current_path);
+	ImageDialog.getFolderListing(ImageDialog.current_path, 'tinymce-jsonimagefolderlisting');
 }
 
 function uploadError(error_msg) {

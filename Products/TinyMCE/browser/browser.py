@@ -4,6 +4,7 @@ from Products.Five.browser import BrowserView
 from Acquisition import aq_inner
 
 from Products.TinyMCE.adapters.interfaces.JSONFolderListing import IJSONFolderListing;
+from Products.TinyMCE.adapters.interfaces.JSONSearch import IJSONSearch;
 from Products.TinyMCE.adapters.interfaces.JSONDetails import IJSONDetails;
 from Products.TinyMCE.adapters.interfaces.Upload import IUpload;
 from Products.TinyMCE.adapters.interfaces.Save import ISave;
@@ -48,6 +49,27 @@ class TinyMCEBrowserView(BrowserView):
 		context = aq_inner(self.context)
 		object = IJSONFolderListing(self.context)
 		return object.getListing(image_meta_types)
+
+	def jsonLinkableSearch(self, searchtext):
+		"""Returns the search results of linkable objects in JSON"""
+
+		utility = getUtility(ITinyMCE)
+		linkable_meta_types = utility.linkable.split('\n')
+
+		context = aq_inner(self.context)
+		object = IJSONSearch(self.context)
+		return object.getSearchResults(linkable_meta_types, searchtext)
+	
+	def jsonImageSearch(self, searchtext):
+		"""Returns the search results of image objects in JSON"""
+
+		utility = getUtility(ITinyMCE)
+		image_meta_types = utility.imageobjects.split('\n')
+		image_meta_types.extend(utility.containsobjects.split('\n'))
+
+		context = aq_inner(self.context)
+		object = IJSONSearch(self.context)
+		return object.getSearchResults(image_meta_types, searchtext)
 
 	def jsonDetails(self):
 		"""Returns the details of an object in JSON"""

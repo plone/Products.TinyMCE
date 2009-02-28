@@ -90,13 +90,13 @@ function init() {
 					success : function(text) {
 						current_url = getAbsoluteUrl(tinyMCEPopup.editor.settings.document_base_url, text);
 						current_link = href;
-						getFolderListing(getParentUrl(current_url));
+						getFolderListing(getParentUrl(current_url), 'tinymce-jsonlinkablefolderlisting');
 					}
 				});
 			} else {
 				href = getAbsoluteUrl(tinyMCEPopup.editor.settings.document_base_url, href);
 				current_link = href;
-				getFolderListing(getParentUrl(href));
+				getFolderListing(getParentUrl(href), 'tinymce-jsonlinkablefolderlisting');
 			}
 		}
 
@@ -119,6 +119,12 @@ function init() {
         } else {
             getCurrentFolderListing();
         }
+    }
+}
+
+function checkSearch(e) {
+    if (e.keyCode == 13) {
+        getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonlinkablesearch');
     }
 }
 
@@ -682,14 +688,16 @@ function setDetails(path, pageanchor) {
 }
 
 function getCurrentFolderListing() {
-	getFolderListing(tinyMCEPopup.editor.settings.document_base_url); 
+	getFolderListing(tinyMCEPopup.editor.settings.document_base_url, 'tinymce-jsonlinkablefolderlisting'); 
 }
 
-function getFolderListing(path) {
+function getFolderListing(path, method) {
 	// Sends a low level Ajax request
 	tinymce.util.XHR.send({
-	    url : path + '/tinymce-jsonlinkablefolderlisting',
+		url : path + '/' + method,
+		content_type : "application/x-www-form-urlencoded",
 		type : 'POST',
+		data : "searchtext=" + document.getElementById('searchtext').value,
 		success : function(text) {
 			var html = "";
 			var data = eval('(' + text + ')');
@@ -707,7 +715,7 @@ function getFolderListing(path) {
 					}
 					html += '"/> <img src="' + data.items[i].icon + '" border="0"/> ';
 					if (data.items[i].is_folderish) {
-						html += '<a href="javascript:getFolderListing(\'' + data.items[i].url + '\')">';
+						html += '<a href="javascript:getFolderListing(\'' + data.items[i].url + '\',\'tinymce-jsonlinkablefolderlisting' + '\')">';
 						html += data.items[i].title;
 						html += '</a>';
 					} else {
@@ -722,7 +730,7 @@ function getFolderListing(path) {
 				document.getElementById ('uponelevel').href = 'javascript:void(0)';
 			} else {
 				document.getElementById ('uponelevel').style.display = 'block';
-				document.getElementById ('uponelevel').href = 'javascript:getFolderListing(\'' + data.parent_url + '\')';
+				document.getElementById ('uponelevel').href = 'javascript:getFolderListing(\'' + data.parent_url + '\',\'tinymce-jsonlinkablefolderlisting' + '\')';
 			}
 
 			html = "";
@@ -733,7 +741,7 @@ function getFolderListing(path) {
 				if (i == data.path.length - 1) {
 					html += data.path[i].title;
 				} else {
-					html += '<a href="javascript:getFolderListing(\'' + data.path[i].url + '\')">';
+					html += '<a href="javascript:getFolderListing(\'' + data.path[i].url + '\',\'tinymce-jsonlinkablefolderlisting' + '\')">';
 					html += data.path[i].title;
 					html += '</a>';
 				}
@@ -758,7 +766,7 @@ function getFolderListing(path) {
 function uploadOk(ok_msg) {
 	current_link = ok_msg;
 	displayPanel('internal_panel');
-	getFolderListing(current_path);
+	getFolderListing(current_path + '\',\'tinymce-jsonlinkablefolderlisting');
 }
 
 function uploadError(error_msg) {
