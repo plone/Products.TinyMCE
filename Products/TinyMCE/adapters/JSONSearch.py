@@ -1,4 +1,3 @@
-from Products.CMFPlone.utils import log
 from zope.interface import implements
 from zope.component import adapts
 from Products.TinyMCE.libs import json
@@ -45,16 +44,15 @@ class JSONSearch(object):
 	def getSearchResults(self, filter_meta_types, searchtext):
 		"""Returns the actual search result"""
 
-		log("searchtext: %s" % searchtext)
-
 		catalog_results = []
 		results = {}
 
 		results['parent_url'] = ''
 		results['path'] = []
 
-		for brain in self.context.portal_catalog.searchResults({'SearchableText':searchtext, 'meta_type':filter_meta_types, 'sort_on':'sortable_title'}):
-			catalog_results.append(self.getInfoFromBrain(brain));
+		if searchtext:
+			for brain in self.context.portal_catalog.searchResults({'SearchableText':'%s*' % searchtext, 'meta_type':filter_meta_types, 'sort_on':'sortable_title'}):
+				catalog_results.append(self.getInfoFromBrain(brain));
 
 		# add catalog_ressults
 		results['items'] = catalog_results; 
