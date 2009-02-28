@@ -1,5 +1,17 @@
 /* <dtml-with base_properties> */
 
+/* Save message */
+.mceSaveMessage {
+  color: white;
+  font-weight: bold;
+  background-color: red;
+  padding: 0.3em;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 999;
+}
+
 /* Reset */
 .ploneSkin table, .ploneSkin tbody, .ploneSkin a, .ploneSkin img, .ploneSkin tr, .ploneSkin div, .ploneSkin td, .ploneSkin iframe, .ploneSkin span, .ploneSkin *, .ploneSkin .mceText {border:0; margin:0; padding:0; background:transparent; white-space:nowrap; text-decoration:none; font-weight:normal; cursor:default; color:&dtml-fontColor;; vertical-align:baseline; width:auto; border-collapse:separate; text-align:left}
 .ploneSkin a:hover, .ploneSkin a:link, .ploneSkin a:visited, .ploneSkin a:active {text-decoration:none; font-weight:normal; cursor:default; color: &dtml-fontColor;}
