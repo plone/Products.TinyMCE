@@ -214,13 +214,13 @@ function TinyMCEConfig(id) {
 		return this.widget_config.portal_url;
 	};
 
-    this.getPlugins = function () {
-        var plugins = "safari,pagebreak,table,save,advhr,advimage,advlink,emotions,iespell,insertdatetime,preview,media,searchreplace,print,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups,style";
-        if (this.widget_config.contextmenu) {
-            plugins += ',contextmenu';
-        }
-        return plugins;
-    }
+	this.getPlugins = function () {
+		var plugins = "safari,pagebreak,table,save,advhr,advimage,advlink,emotions,iespell,insertdatetime,preview,media,searchreplace,print,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups,style";
+		if (this.widget_config.contextmenu) {
+			plugins += ',contextmenu';
+		}
+		return plugins;
+	}
 }
 
 kukit.actionsGlobalRegistry.register("init-tinymce", function(oper) {
@@ -251,7 +251,7 @@ kukit.actionsGlobalRegistry.register("init-tinymce", function(oper) {
 		theme_advanced_resize_horizontal : config.getResizeHorizontal(),
 		theme_advanced_source_editor_width : config.getEditorWidth(),
 		theme_advanced_source_editor_height : config.getEditorHeight(),
-  
+
 		auto_resize : config.getAutoresize(),
 		auto_resize_bottom_margin : config.getAutoresizeBottomMargin(),
 		table_styles : config.getTableStyles(),

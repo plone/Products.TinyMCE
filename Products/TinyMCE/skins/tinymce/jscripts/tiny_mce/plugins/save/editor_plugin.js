@@ -15,7 +15,7 @@
 			// Register commands
 			ed.addCommand('mceSave', function() {
 				tinymce.util.XHR.send({
-				    url : ed.settings.document_url + '/tinymce-save',
+					url : ed.settings.document_url + '/tinymce-save',
 					content_type : "application/x-www-form-urlencoded",
 					type : "POST",
 					data : "text=" + encodeURIComponent(ed.getContent()) + "&fieldname=" + ed.id,
@@ -28,6 +28,10 @@
 								tinymce.DOM.addClass(tinymce.DOM.get(ed.id + '_tbl'), 'mceEditorFocus');
 							}, 500);
 						}
+						tinymce.DOM.add(document.body, 'div', {id: 'mceSaveMessage', 'class' : 'mceSaveMessage'}, 'Document saved.');
+							window.setTimeout(function () {
+							tinymce.DOM.remove('mceSaveMessage');
+						}, 1000);
 					}
 				});
 			});
