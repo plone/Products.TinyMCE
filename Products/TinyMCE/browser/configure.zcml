@@ -32,6 +32,8 @@
 		permission="zope2.View">
 		<browser:page attribute="jsonLinkableFolderListing" name="tinymce-jsonlinkablefolderlisting" />
 		<browser:page attribute="jsonImageFolderListing" name="tinymce-jsonimagefolderlisting" />
+		<browser:page attribute="jsonLinkableSearch" name="tinymce-jsonlinkablesearch" />
+		<browser:page attribute="jsonImageSearch" name="tinymce-jsonimagesearch" />
 		<browser:page attribute="jsonDetails" name="tinymce-jsondetails" />
 	</browser:pages>
 

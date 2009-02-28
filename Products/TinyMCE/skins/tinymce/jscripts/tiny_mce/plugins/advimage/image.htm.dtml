@@ -20,7 +20,7 @@
 					<legend>Libraries</legend>
 		            <ul class="configlets">
 		                <li>
-							<a href="javascript:ImageDialog.displayPanel('internal_panel'); ImageDialog.getFolderListing('<dtml-var portal_url>');">
+							<a href="javascript:ImageDialog.displayPanel('internal_panel'); ImageDialog.getFolderListing('<dtml-var portal_url>', 'tinymce-jsonimagefolderlisting');">
 							    <img alt="" src="<dtml-var portal_url>/logoIcon.gif"/> Home
 							</a>
 						</li>
@@ -35,6 +35,12 @@
 							</a>
 						</li-->
 		            </ul>
+                <div class="field">
+                  <label for="searchtext">Search</label>
+                  <div class="widget">
+                    <input type="text" name="searchtext" id="searchtext" value="" onkeyup="ImageDialog.checkSearch(event);" size="12"/>
+                  </div>
+                </div>
 				</fieldset>
 
 				<fieldset id="internal_panel" class="subPanel column" style="width: 296px;">
