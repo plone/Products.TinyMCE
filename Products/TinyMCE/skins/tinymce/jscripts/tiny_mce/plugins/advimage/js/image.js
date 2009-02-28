@@ -146,9 +146,9 @@ var ImageDialog = {
 	},
 
     checkSearch : function(e) {
-        if (e.keyCode == 13) {
             ImageDialog.getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonimagesearch');
-        }
+        //if (e.keyCode == 13) {
+        //}
     },
 
 	getAttrib : function(e, at) {
