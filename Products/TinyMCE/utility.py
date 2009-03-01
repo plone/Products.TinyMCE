@@ -681,6 +681,13 @@ class TinyMCE(SimpleItem):
         portal_url = getToolByName(self, 'portal_url')
         results['portal_url'] = portal_url()
 
+        props = getToolByName(self, 'portal_properties')
+        livesearch = props.site_properties.getProperty('enable_livesearch', False)
+        if livesearch:
+            results['livesearch'] = True
+        else:
+            results['livesearch'] = False
+
         AVAILABLE_LANGUAGES = set(
             'ar bs ch da el es fa fr he hu ii it ko lv ms nl pl ro sc si sl sr'
             'tr tw vi bg ca cs de en et fi gl hr ia is ja lt mk nb nn pt ru se'

@@ -123,9 +123,9 @@ function init() {
 }
 
 function checkSearch(e) {
-    // if (e.keyCode == 13) {
+    if (tinyMCEPopup.editor.settings.livesearch || e.keyCode == 13) {
         getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonlinkablesearch');
-    // }
+    }
 }
 
 function checkExternalUrl() {
