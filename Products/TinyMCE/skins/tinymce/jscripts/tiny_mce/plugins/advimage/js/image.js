@@ -145,11 +145,11 @@ var ImageDialog = {
 		tinyMCEPopup.close();
 	},
 
-    checkSearch : function(e) {
-        if (tinyMCEPopup.editor.settings.livesearch || e.keyCode == 13) {
-            ImageDialog.getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonimagesearch');
-        } 
-    },
+	checkSearch : function(e) {
+		if (tinyMCEPopup.editor.settings.livesearch || e.keyCode == 13) {
+			ImageDialog.getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonimagesearch');
+		} 
+	},
 
 	getAttrib : function(e, at) {
 		var ed = tinyMCEPopup.editor, dom = ed.dom, v, v2;
