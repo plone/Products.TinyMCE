@@ -214,6 +214,10 @@ function TinyMCEConfig(id) {
 		return this.widget_config.portal_url;
 	};
 
+	this.getLivesearch = function () {
+		return this.widget_config.livesearch;
+	};
+
 	this.getPlugins = function () {
 		var plugins = "safari,pagebreak,table,save,advhr,advimage,advlink,emotions,iespell,insertdatetime,preview,media,searchreplace,print,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups,style";
 		if (this.widget_config.contextmenu) {
@@ -261,6 +265,7 @@ kukit.actionsGlobalRegistry.register("init-tinymce", function(oper) {
 		document_base_url : config.getBase(),
 		document_url : config.getDocumentUrl(),
 		portal_url : config.getPortalUrl(),
+		livesearch : config.getLivesearch(),
 		valid_elements : config.getValidElements(),
 		link_using_uids : config.getLinkUsingUids(),
 		allow_captioned_images : config.getAllowCaptionedImages(),
