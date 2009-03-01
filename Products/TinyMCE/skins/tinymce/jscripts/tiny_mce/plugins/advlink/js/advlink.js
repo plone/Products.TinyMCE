@@ -396,7 +396,7 @@ function previewExternalLink() {
 
 function getAnchorListHTML() {
 	var inst = tinyMCEPopup.editor;
-	var nodes = inst.dom.select('a.mceItemAnchor,img.mceItemAnchor'), name, i;
+	var nodes = inst.dom.select('a.mceItemAnchor,img.mceItemAnchor'), name, title, i;
 	var html = "";
 	var divclass ="even";
 
@@ -404,6 +404,20 @@ function getAnchorListHTML() {
 		if ((name = inst.dom.getAttrib(nodes[i], "name")) != "") {
 			html += '<div class="' + divclass + '"><input type="radio" class="noborder" name="anchorlink" value="#' + name + '"/> ' + name + '</div>';
 			divclass = divclass == "even" ? "odd" : "even";
+		}
+	}
+
+	nodes = inst.dom.select('h2,h3');
+	if (nodes.length > 0) {
+		for (i=0; i<nodes.length; i++) {
+			title = nodes[i].innerHTML;
+			title_match = title.match(/mceItemAnchor/);
+			if (title_match == null) {
+				name = title.toLowerCase();
+				name = name.replace(/[^a-z]/g, '-');
+				html += '<div class="' + divclass + '"><input type="radio" class="noborder" name="anchorlink" value="#mce-new-anchor-' + name + '"/> ' + title + '</div>';
+				divclass = divclass == "even" ? "odd" : "even";
+			}
 		}
 	}
 
@@ -452,8 +466,9 @@ function setRadioValue(name, value, formnr) {
 }
 
 function buildHref() {
-	var href = "";
-	
+	var href = "", name, title, i;
+	var inst = tinyMCEPopup.editor;
+
 	if (isVisible('external_panel')) {
 		var externalurlprefix = document.getElementById('externalurlprefix');
 		href = externalurlprefix.options[externalurlprefix.selectedIndex].value;
@@ -465,6 +480,19 @@ function buildHref() {
 		}
 	} else if (isVisible('anchors_panel')) {
 		href = getRadioValue('anchorlink', 0);
+		var url_match = href.match(/^#mce-new-anchor-(.*)$/);
+		if (url_match != null) {
+			nodes = inst.dom.select('h2,h3');
+			for (i=0; i<nodes.length; i++) {
+				title = nodes[i].innerHTML;
+				name = title.toLowerCase();
+				name = name.replace(/[^a-z]/g, '-');
+				if (name == url_match[1]) {
+					nodes[i].innerHTML = '<a name="' + name + '" class="mceItemAnchor"></a>' + nodes[i].innerHTML;
+				}
+			}
+			href = '#' + url_match[1];
+		}
 	} else if (isVisible('mail_panel')) {
 		var mailaddress = getInputValue('mailaddress', 0);
 		var mailsubject = getInputValue('mailsubject', 0);
@@ -519,7 +547,7 @@ function insertAction() {
 		setAllAttribs(elm);
 
 	// Don't move caret if selection was image
-	if (elm.childNodes.length != 1 || elm.firstChild.nodeName != 'IMG') {
+	if (elm && (elm.childNodes.length != 1 || elm.firstChild.nodeName != 'IMG')) {
 		inst.focus();
 		inst.selection.select(elm);
 		inst.selection.collapse(0);
