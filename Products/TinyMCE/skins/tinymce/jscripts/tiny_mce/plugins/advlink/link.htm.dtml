@@ -54,6 +54,7 @@
                   <label for="searchtext">Search</label>
                   <div class="widget">
                     <input type="text" name="searchtext" id="searchtext" value="" onkeyup="checkSearch(event);" size="12"/>
+                    <input type="button" style="margin-top: 4px;" value="Search" class="searchButton" onclick="getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonlinkablesearch');"/>
                   </div>
                 </div>
 				</fieldset>
