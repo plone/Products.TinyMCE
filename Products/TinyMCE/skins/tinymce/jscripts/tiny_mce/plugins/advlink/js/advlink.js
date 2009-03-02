@@ -452,13 +452,13 @@ function getRadioValue(name, formnr) {
 
 function setRadioValue(name, value, formnr) {
 	var elm = document.forms[formnr][name];
-	if (typeof(elm.value) == 'undefined') {
+	if (elm && typeof(elm.value) == 'undefined') {
 		for (var i = 0; i < elm.length; i++) {
 			if (elm[i].value == value) {
 				elm[i].checked = true;
 			}
 		}
-	} else {
+	} else if (elm) {
 		if (elm.value == value) {
 			elm.checked = true;
 		}
