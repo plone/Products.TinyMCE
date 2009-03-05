@@ -93,6 +93,7 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
             'containsanchors' : {'type' : 'List', 'default' : 'ATEvent\nATNewsItem\nATDocument\nATRelativePathCriterion'},
             'linkable' : {'type' : 'List', 'default' : 'ATTopic\nATEvent\nATFile\nATFolder\nATImage\nATBTreeFolder\nATNewsItem\nATDocument'},
             'imageobjects' : {'type' : 'List', 'default' : 'ATImage'},
+            'customplugins' : {'type' : 'List', 'default' : 'ATImage'},
         }
     }
 

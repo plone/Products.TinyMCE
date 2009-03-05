@@ -114,6 +114,7 @@ class TinyMCE(SimpleItem):
     containsanchors = FieldProperty(ITinyMCEResourceTypes['containsanchors'])
     linkable = FieldProperty(ITinyMCEResourceTypes['linkable'])
     imageobjects = FieldProperty(ITinyMCEResourceTypes['imageobjects'])
+    customplugins = FieldProperty(ITinyMCEResourceTypes['customplugins'])
 
     security.declareProtected('View', 'isTinyMCEEnabled')
     def isTinyMCEEnabled(self, useragent='', allowAnonymous=False, REQUEST=None, context=None, fieldName=None):
@@ -677,6 +678,10 @@ class TinyMCE(SimpleItem):
             results['allow_captioned_images'] = True
         else:
             results['allow_captioned_images'] = False
+
+        results['customplugins'] = []
+        if self.customplugins is not None:
+            results['customplugins'].extend(self.customplugins.split('\n'))
 
         portal_url = getToolByName(self, 'portal_url')
         results['portal_url'] = portal_url()

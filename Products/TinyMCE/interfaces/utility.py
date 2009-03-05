@@ -433,6 +433,12 @@ class ITinyMCEResourceTypes(Interface):
 		default=u'ATImage',
 		required=False) 
 
+	customplugins = schema.Text(
+		title=_(u'label_customplugins', default=u'Custom Plugins'),
+		description=_(u'help_customplugins', default=u"Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."),
+		default=u'',
+		required=False) 
+
 class ITinyMCE(
 	ITinyMCELayout,
 	ITinyMCEToolbar,

@@ -220,6 +220,11 @@ function TinyMCEConfig(id) {
 
 	this.getPlugins = function () {
 		var plugins = "safari,pagebreak,table,save,advhr,advimage,advlink,emotions,iespell,insertdatetime,preview,media,searchreplace,print,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups,style";
+		for (var i = 0; i < this.widget_config.customplugins.length; i++) {
+			if (this.widget_config.customplugins[i].indexOf('|') == -1) {
+				plugins += ',' + this.widget_config.customplugins[i];
+			}
+		}
 		if (this.widget_config.contextmenu) {
 			plugins += ',contextmenu';
 		}
@@ -235,6 +240,14 @@ kukit.actionsGlobalRegistry.register("init-tinymce", function(oper) {
 	if (format && format.tagName.toLowerCase() == 'input' && format.value.indexOf('html') == -1) {
 		return;
 	}
+
+	for (var i = 0; i < config.widget_config.customplugins.length; i++) {
+		if (config.widget_config.customplugins[i].indexOf('|') != -1) {
+			e = config.widget_config.customplugins[i].split('|');
+			tinymce.PluginManager.load(e[0], e[1]);
+		}
+	}
+
 	window.tinyMCE.init({
 		mode : "exact",
 		elements : oper.node.id,
