@@ -222,7 +222,7 @@ function TinyMCEConfig(id) {
 		var plugins = "safari,pagebreak,table,save,advhr,advimage,advlink,emotions,iespell,insertdatetime,preview,media,searchreplace,print,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups,style";
 		for (var i = 0; i < this.widget_config.customplugins.length; i++) {
 			if (this.widget_config.customplugins[i].indexOf('|') == -1) {
-				plugins += ',' + this.widget_config.customplugins[i];
+				plugins += ',-' + this.widget_config.customplugins[i];
 			}
 		}
 		if (this.widget_config.contextmenu) {
