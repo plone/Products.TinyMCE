@@ -4,6 +4,7 @@ from zope.component import getUtility
 from zope.interface import classProvides
 from AccessControl import ClassSecurityInfo
 from Products.CMFCore.utils import getToolByName
+from Products.CMFCore.interfaces._content import IContentish, IFolderish
 
 from Products.TinyMCE.libs import json
 from Products.TinyMCE.interfaces.utility import ITinyMCE
@@ -713,7 +714,10 @@ class TinyMCE(SimpleItem):
                 parent = getattr(parent, 'aq_parent', None)
                 results['parent'] = parent.absolute_url() + "/"
             else:
-                results['parent'] = getattr(context.aq_inner, 'aq_parent', None).absolute_url() + "/"
+                if IFolderish.providedBy(context):
+                    results['parent'] = context.absolute_url() + "/"
+                else:
+                    results['parent'] = getattr(context.aq_inner, 'aq_parent', None).absolute_url() + "/"
         except:
             results['parent'] = portal_url() + "/"
             results['document_url'] = portal_url()
