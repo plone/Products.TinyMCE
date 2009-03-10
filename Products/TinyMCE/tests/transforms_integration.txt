@@ -43,7 +43,18 @@ We test our SGML based parser first:
     >>> from Products.TinyMCE.transforms.parser import TinyMCEOutput
     >>> parser = TinyMCEOutput(context=self.portal)
     >>> parser.feed(text)
+    >>> print parser.getResult()
+    <html...>  
     >>> parser.close()
+
+Test if it preservers newlines which should not be filtered out 
+    >>> text = """<pre>This is line 1
+    ...                This is line 2</pre>"""
+    >>> from Products.TinyMCE.transforms.parser import TinyMCEOutput
+    >>> parser = TinyMCEOutput(context=self.portal)
+    >>> parser.feed(text)
+    >>> print parser.getResult().find('\n') != -1
+    True
 
 Let's get the html-to-tinymce-output-html transform and run it.
 This is not a full functional test as we don't add a document and image / link with captioned images or UID's yet, it should leave the UID intact
@@ -53,9 +64,15 @@ This is not a full functional test as we don't add a document and image / link w
     ...             <body>
     ...                 <img src="resolveuid/943f469a781852145c7cddb3d99a5241/image_thumb" class="image-left captioned" width="200" alt="My alt text" />
     ...                 <p><img src="/plone/image.jpg" class="image-right captioned" width="200" style="border-width:1px" /></p>
+    ...                 <pre>This is line 1
+    ...                       This is line 2</pre>
     ...              </body>
     ...            </html>"""
     >>> transformed_text = transform_utility.convert(name="html_to_tinymce_output_html", orig=text, context=self.portal)
+    >>> print transformed_text
+    <html...>
+
+
 
 If that works, let's uninstall the whole bunch again
 
