@@ -42,11 +42,8 @@ class TinyMCEOutput(SGMLParser):
         return '/'.join(pathparts)
         
     def append_data(self, data, add_eol=0):
-        """Append data to self.datas, add_eol won't remove the newline characters""" 
-        if not add_eol:
-            data = data.replace("\n", "") 
-            data = data.replace("\r", "")
-        else:
+        """Append data unmodified to self.data, add_eol adds a newline character""" 
+        if add_eol:
             data += '\n'    
         self.pieces.append(data)
 
@@ -160,13 +157,13 @@ class TinyMCEOutput(SGMLParser):
         # Add the tag to the result
         strattrs = "".join([' %s="%s"' % (key, value) for key, value in attrs])
         if tag in singleton_tags:
-            self.append_data("<%(tag)s%(strattrs)s />" % locals(), add_eol=1)
+            self.append_data("<%(tag)s%(strattrs)s />" % locals())
         else:
-            self.append_data("<%(tag)s%(strattrs)s>" % locals(), add_eol=1)
+            self.append_data("<%(tag)s%(strattrs)s>" % locals())
         
     def unknown_endtag(self, tag):
         """Add the endtag unmodified"""
-        self.append_data("</%(tag)s>" % locals(), add_eol=1) 
+        self.append_data("</%(tag)s>" % locals()) 
 
     def getResult(self):
         """Return the parsed result and flush it"""
