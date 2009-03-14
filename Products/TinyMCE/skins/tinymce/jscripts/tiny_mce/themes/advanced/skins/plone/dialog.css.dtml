@@ -37,6 +37,14 @@ text-align: center;
 vertical-align: middle;
 }
 
+.nowrap {
+white-space: nowrap;
+}
+
+a.pickcolor, a.browse {
+text-decoration:none;
+}
+
 .input-border {
 border-color:#666666 rgb(221, 221, 221) rgb(221, 221, 221) rgb(102, 102, 102);
 border-style:solid;

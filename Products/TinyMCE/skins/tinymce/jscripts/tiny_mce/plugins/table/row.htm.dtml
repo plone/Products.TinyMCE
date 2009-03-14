@@ -7,11 +7,10 @@
 	<script type="text/javascript" src="../../utils/form_utils.js"></script>
 	<script type="text/javascript" src="../../utils/editable_selects.js"></script>
 	<script type="text/javascript" src="js/row.js"></script>
-	<base target="_self" />
 </head>
 <body id="tablerow" style="display: none">
 	<div class="dialog-wrapper">
-		<form onsubmit="updateAction();return false;">
+		<form onsubmit="updateAction();return false;" action="#">
 			<ul class="formTabs"><li id="general_tab" class="formTab firstFormTab"><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;" class="selected"><span>{#table_dlg.general_tab}</span></a></li><li id="advanced_tab" class="formTab lastFormTab"><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;"><span>{#table_dlg.advanced_tab}</span></a></li></ul>
 			<fieldset id="general_panel" class="formPanel">
 

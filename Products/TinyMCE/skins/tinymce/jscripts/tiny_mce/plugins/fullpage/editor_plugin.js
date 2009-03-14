@@ -1,5 +1,5 @@
 /**
- * $Id: editor_plugin_src.js 920 2008-09-09 14:05:33Z spocke $
+ * $Id: editor_plugin_src.js 1029 2009-02-24 22:32:21Z spocke $
  *
  * @author Moxiecode
  * @copyright Copyright © 2004-2008, Moxiecode Systems AB, All rights reserved.
@@ -81,6 +81,9 @@
 
 		_setContent : function(ed, o) {
 			var t = this, sp, ep, c = o.content, v, st = '';
+
+			if (o.source_view && ed.getParam('fullpage_hide_in_source_view'))
+				return;
 
 			// Parse out head, body and footer
 			c = c.replace(/<(\/?)BODY/gi, '<$1body');

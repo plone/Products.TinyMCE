@@ -5,7 +5,6 @@
 	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
 	<script type="text/javascript" src="../../utils/mctabs.js"></script>
 	<script type="text/javascript" src="js/color_picker.js"></script>
-	<base target="_self" />
 </head>
 <body id="colorpicker" style="display: none">
 	<div class="dialog-wrapper">
@@ -16,7 +15,7 @@
 				<div class="field">
 					<label for="picker">{#advanced_dlg.colorpicker_picker_title}</label>
 					<div class="widget" id="picker">
-						<img id="colors" class="input-border" style="margin-right: 1em; float: left" src="img/colorpicker.jpg" onclick="computeColor(event)" onmousedown="isMouseDown = true;return false;" onmouseup="isMouseDown = false;" onmousemove="if (isMouseDown && isMouseOver) computeColor(event); return false;" onmouseover="isMouseOver=true;" onmouseout="isMouseOver=false;" />
+						<img id="colors" class="input-border" style="margin-right: 1em; float: left" src="img/colorpicker.jpg" onclick="computeColor(event)" onmousedown="isMouseDown = true;return false;" onmouseup="isMouseDown = false;" onmousemove="if (isMouseDown && isMouseOver) computeColor(event); return false;" onmouseover="isMouseOver=true;" onmouseout="isMouseOver=false;" alt=" " />
 
 						<div id="light" class="input-border" style="float: left">
 							<!-- Will be filled with divs -->
