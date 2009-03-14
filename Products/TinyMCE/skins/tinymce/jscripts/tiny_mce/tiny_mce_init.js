@@ -219,7 +219,7 @@ function TinyMCEConfig(id) {
 	};
 
 	this.getPlugins = function () {
-		var plugins = "safari,pagebreak,table,save,advhr,advimage,advlink,emotions,iespell,insertdatetime,preview,media,searchreplace,print,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups,style";
+		var plugins = "safari,pagebreak,table,save,advhr,advimage,advlink,emotions,iespell,insertdatetime,preview,media,searchreplace,print,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups,style,tabfocus";
 		for (var i = 0; i < this.widget_config.customplugins.length; i++) {
 			if (this.widget_config.customplugins[i].indexOf('|') == -1) {
 				plugins += ',-' + this.widget_config.customplugins[i];
