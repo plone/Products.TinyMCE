@@ -88,9 +88,9 @@ style:{
 desc:"\u05E2\u05D3\u05DB\u05D5\u05DF \u05D4\u05D2\u05D3\u05E8\u05D5\u05EA CSS"
 },
 paste:{
-paste_text_desc:"Paste as Plain Text",
-paste_word_desc:"Paste from Word",
-selectall_desc:"Select All"
+paste_text_desc:"\u05D4\u05D3\u05D1\u05E7 \u05DB\u05D8\u05E7\u05E1\u05D8 \u05DC\u05DC\u05D0 \u05E2\u05D9\u05E6\u05D5\u05D1",
+paste_word_desc:"\u05D4\u05D3\u05D1\u05E7 \u05DE-Word",
+selectall_desc:"\u05D1\u05D7\u05E8 \u05D4\u05DB\u05DC"
 },
 paste_dlg:{
 text_title:"Use CTRL+V on your keyboard to paste the text into the window.",
