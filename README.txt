@@ -13,5 +13,5 @@ product to `Four Digits <mailto:info@fourdigits.nl>`_
 Requirements
 ------------
 
-TinyMCE is tested on Plone 3.0 and 3.1, please submit any compatibility issues
+TinyMCE is tested on Plone 3, please submit any compatibility issues
 you may encounter.
