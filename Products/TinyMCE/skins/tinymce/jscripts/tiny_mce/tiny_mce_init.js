@@ -194,6 +194,10 @@ function TinyMCEConfig(id) {
 		return this.widget_config.directionality;
 	};
 
+	this.getEntityEncoding = function () {
+		return this.widget_config.entity_encoding;
+	};
+
 	this.getContentCSS = function () {
 		return this.widget_config.content_css;
 	};
@@ -277,6 +281,7 @@ kukit.actionsGlobalRegistry.register("init-tinymce", function(oper) {
 		auto_resize_bottom_margin : config.getAutoresizeBottomMargin(),
 		table_styles : config.getTableStyles(),
 		directionality : config.getDirectionality(),
+		entity_encoding : config.getEntityEncoding(),
 		content_css : config.getContentCSS(),
 		body_class : "documentContent",
 		document_base_url : config.getBase(),

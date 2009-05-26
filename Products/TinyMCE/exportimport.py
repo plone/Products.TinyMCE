@@ -94,6 +94,7 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
             'linkable' : {'type' : 'List', 'default' : 'ATTopic\nATEvent\nATFile\nATFolder\nATImage\nATBTreeFolder\nATNewsItem\nATDocument'},
             'imageobjects' : {'type' : 'List', 'default' : 'ATImage'},
             'customplugins' : {'type' : 'List', 'default' : 'ATImage'},
+            'entity_encoding' : {'type' : 'Text', 'default' : 'raw'},
         }
     }
 

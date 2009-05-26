@@ -439,6 +439,14 @@ class ITinyMCEResourceTypes(Interface):
 		default=u'',
 		required=False) 
 
+	entity_encoding = schema.Choice(
+		title=_(u'label_entity_encoding', default=u'Entity encoding'),
+		description=_(u'help_entity_encoding', default=u"This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"),
+		default=u'raw',
+		missing_value=set(),
+		vocabulary=SimpleVocabulary([SimpleTerm('named', 'Named'), SimpleTerm('numeric', 'Numeric'), SimpleTerm('raw', 'Raw')]),
+		required=False)
+
 class ITinyMCE(
 	ITinyMCELayout,
 	ITinyMCEToolbar,

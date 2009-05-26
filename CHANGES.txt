@@ -5,6 +5,21 @@ HISTORY
 1.1rc1 (2009-03-14)
 -------------------
 
+- Upgrade to TinyMCE 3.2.2
+- Updated language packs (7 new languages added)
+- Added search function to image and link drawers including live search
+- When a new link is inserted and the selected text contains an URL it is automatically prepopulated.
+- When a link is pasted the prefix is automatically stripped and put in the select box
+- Headings and subheadings are now automatically put in the anchor tab of the link selection dialog as an available option
+- Options to the control panel added to enable/disable the contextmenu
+- Added visual feedback to save as draft button
+- Added dialog to edit lang and dir attributes per tag
+- Option added to include custom plugins
+- Fixed issue when newlines were stripped in the transform
+- Fixed link dialog size in Firefox
+- Fixed blockquote insert tag
+- Fixed link and imagedrawer when current item is folderish
+- Fixed issue with language configuration
 
 1.0 (2009-01-18)
 ----------------
