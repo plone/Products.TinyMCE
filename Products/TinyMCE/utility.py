@@ -684,6 +684,8 @@ class TinyMCE(SimpleItem):
         if self.customplugins is not None:
             results['customplugins'].extend(self.customplugins.split('\n'))
 
+        results['entity_encoding'] = self.entity_encoding
+
         portal_url = getToolByName(self, 'portal_url')
         results['portal_url'] = portal_url()
 
