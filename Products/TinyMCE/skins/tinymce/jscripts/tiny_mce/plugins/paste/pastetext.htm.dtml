@@ -8,14 +8,14 @@
 </head>
 <body style="display:none; overflow:hidden;">
 	<div class="dialog-wrapper">
-		<form name="source" onsubmit="saveContent();return false;" action="#">
+		<form name="source" onsubmit="return PasteTextDialog.insert();" action="#">
 			<fieldset>
 				<legend>{#paste.paste_text_desc}</legend>
 				<div class="field">
 					<label for="htmlSource">{#paste.paste_text_desc}</label>
 					<div class="formHelp">{#paste_dlg.text_title}</div>
 					<div class="widget">
-						<textarea name="htmlSource" id="htmlSource" rows="15" cols="100" style="width: 398px; height: 230px;" wrap="soft" class="mceFocus"></textarea>
+						<textarea  id="content" name="content" rows="15" cols="100" style="width: 398px; height: 230px;" wrap="soft" class="mceFocus"></textarea>
 					</div>
 				</div>
 
