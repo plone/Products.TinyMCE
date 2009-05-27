@@ -8,7 +8,7 @@
 </head>
 <body style="display:none;">
 	<div class="dialog-wrapper">
-		<form name="source" onsubmit="saveContent();" action="#">
+		<form name="source" onsubmit="return PasteWordDialog.insert();" action="#">
 			<fieldset>
 				<legend>{#paste.paste_word_desc}</legend>
 				<div class="field">
@@ -25,7 +25,7 @@
 
 			<div class="mceActionPanel formControls">
 				<span class="actionButtons">
-					<input type="submit" id="insert" class="context" name="insert" value="{#insert}" onclick="saveContent();" />
+					<input type="submit" id="insert" class="context" name="insert" value="{#insert}" />
 					<input type="button" id="cancel" class="context" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
 				</span>
 			</div>
