@@ -4,6 +4,3 @@ textarea.mce_editable:load {
 .kssattr-macro-rich-field-view form.inlineForm input[name=kss-save]:click {
 	action-client: save-tinymce;
 }
-div.fieldTextFormat:load {
-	action-client: checkhidetextformat-tinymce
-}
