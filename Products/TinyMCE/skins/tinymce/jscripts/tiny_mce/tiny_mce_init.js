@@ -4,7 +4,78 @@ function TinyMCEConfig(id) {
 	this.toolbars = [];
 
 	this.init = function() {
+
+		// Check if already initialized
+		if (tinymce.EditorManager.get(this.id) != undefined) {
+			return;
+		}
+
 		this.initToolbars();
+		var format = document.getElementById(this.id + '_text_format');
+		if (format && format.tagName.toLowerCase() == 'input' && format.value.indexOf('html') == -1) {
+			return;
+		}
+
+		// Set textformat to html and hide selector
+		var node = tinymce.DOM.get(this.id);
+		node = tinymce.DOM.getParent(node, '.ArchetypesRichWidget');
+		if (node != null) {
+			node = tinymce.DOM.select('div.fieldTextFormat', node);
+			if (node.length > 0) {
+				tinymce.DOM.select('select', node[0])[0].value = 'text/html';
+				tinymce.DOM.setStyle(node[0], 'display', 'none');
+			}
+		}
+
+		for (var i = 0; i < this.widget_config.customplugins.length; i++) {
+			if (this.widget_config.customplugins[i].indexOf('|') != -1) {
+				e = this.widget_config.customplugins[i].split('|');
+				tinymce.PluginManager.load(e[0], e[1]);
+			}
+		}
+
+		window.tinyMCE.init({
+			mode : "exact",
+			elements : this.id,
+			strict_loading_mode : true,
+			theme : "advanced",
+			language : this.getLanguage(),
+			skin : "plone",
+			inlinepopups_skin : "plonepopup",
+			plugins : this.getPlugins(),
+
+			theme_advanced_styles : this.getStyles(),
+			theme_advanced_buttons1 : this.getToolbar(0),
+			theme_advanced_buttons2 : this.getToolbar(1),
+			theme_advanced_buttons3 : this.getToolbar(2),
+			theme_advanced_buttons4 : this.getToolbar(3),
+			theme_advanced_toolbar_location : this.getToolbarLocation(),
+			theme_advanced_toolbar_align : "left",
+			theme_advanced_path_location : this.getPathLocation(),
+			theme_advanced_path : false,
+			theme_advanced_resizing : this.getResizing(),
+			theme_advanced_resizing_use_cookie : this.getResizingUseCookie(),
+			theme_advanced_resize_horizontal : this.getResizeHorizontal(),
+			theme_advanced_source_editor_width : this.getEditorWidth(),
+			theme_advanced_source_editor_height : this.getEditorHeight(),
+
+			auto_resize : this.getAutoresize(),
+			auto_resize_bottom_margin : this.getAutoresizeBottomMargin(),
+			table_styles : this.getTableStyles(),
+			directionality : this.getDirectionality(),
+			entity_encoding : this.getEntityEncoding(),
+			content_css : this.getContentCSS(),
+			body_class : "documentContent",
+			document_base_url : this.getBase(),
+			document_url : this.getDocumentUrl(),
+			portal_url : this.getPortalUrl(),
+			livesearch : this.getLivesearch(),
+			valid_elements : this.getValidElements(),
+			link_using_uids : this.getLinkUsingUids(),
+			allow_captioned_images : this.getAllowCaptionedImages(),
+			force_span_wrappers : true,
+			fix_list_elements : false
+		});
 	};
 
 	this.getButtonWidth = function(b) {
@@ -236,72 +307,13 @@ function TinyMCEConfig(id) {
 	}
 }
 
-kukit.actionsGlobalRegistry.register("init-tinymce", function(oper) {
-	var config = new TinyMCEConfig(oper.node.id);
-	config.init();
-
-	var format = document.getElementById(oper.node.id + '_text_format');
-	if (format && format.tagName.toLowerCase() == 'input' && format.value.indexOf('html') == -1) {
-		return;
-	}
-
-	for (var i = 0; i < config.widget_config.customplugins.length; i++) {
-		if (config.widget_config.customplugins[i].indexOf('|') != -1) {
-			e = config.widget_config.customplugins[i].split('|');
-			tinymce.PluginManager.load(e[0], e[1]);
-		}
-	}
-
-	window.tinyMCE.init({
-		mode : "exact",
-		elements : oper.node.id,
-		strict_loading_mode : true,
-		theme : "advanced",
-		language : config.getLanguage(),
-		skin : "plone",
-		inlinepopups_skin : "plonepopup",
-		plugins : config.getPlugins(),
-
-		theme_advanced_styles : config.getStyles(),
-		theme_advanced_buttons1 : config.getToolbar(0),
-		theme_advanced_buttons2 : config.getToolbar(1),
-		theme_advanced_buttons3 : config.getToolbar(2),
-		theme_advanced_buttons4 : config.getToolbar(3),
-		theme_advanced_toolbar_location : config.getToolbarLocation(),
-		theme_advanced_toolbar_align : "left",
-		theme_advanced_path_location : config.getPathLocation(),
-		theme_advanced_path : false,
-		theme_advanced_resizing : config.getResizing(),
-		theme_advanced_resizing_use_cookie : config.getResizingUseCookie(),
-		theme_advanced_resize_horizontal : config.getResizeHorizontal(),
-		theme_advanced_source_editor_width : config.getEditorWidth(),
-		theme_advanced_source_editor_height : config.getEditorHeight(),
-
-		auto_resize : config.getAutoresize(),
-		auto_resize_bottom_margin : config.getAutoresizeBottomMargin(),
-		table_styles : config.getTableStyles(),
-		directionality : config.getDirectionality(),
-		entity_encoding : config.getEntityEncoding(),
-		content_css : config.getContentCSS(),
-		body_class : "documentContent",
-		document_base_url : config.getBase(),
-		document_url : config.getDocumentUrl(),
-		portal_url : config.getPortalUrl(),
-		livesearch : config.getLivesearch(),
-		valid_elements : config.getValidElements(),
-		link_using_uids : config.getLinkUsingUids(),
-		allow_captioned_images : config.getAllowCaptionedImages(),
-		force_span_wrappers : true,
-		fix_list_elements : false
+if (typeof(kukit) != "undefined") {
+	kukit.actionsGlobalRegistry.register("init-tinymce", function(oper) {
+		var config = new TinyMCEConfig(oper.node.id);
+		config.init();
 	});
-});
 
-kukit.actionsGlobalRegistry.register("save-tinymce", function(oper) {
-	tinymce.EditorManager.activeEditor.save();
-});
-
-kukit.actionsGlobalRegistry.register("checkhidetextformat-tinymce", function(oper) {
-	var s = oper.node.getElementsByTagName('select')[0];
-	s.value = 'text/html';
-	tinymce.DOM.setStyle(oper.node, 'display', 'none');
-});
+	kukit.actionsGlobalRegistry.register("save-tinymce", function(oper) {
+		tinymce.EditorManager.activeEditor.save();
+	});
+}

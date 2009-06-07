@@ -21,6 +21,10 @@
                             title python:here.portal_tinymce.getConfiguration (context=context, field=field);
                             class string:mce_editable"></textarea>
 
+  <script type="text/javascript"
+      tal:content="string:
+      tinymce.dom.Event.add(window, 'load', function(e) { var config = new TinyMCEConfig('${inputname}'); config.init(); });"></script>
+
   </tal:block>
 </div>
 
