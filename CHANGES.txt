@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.1rc2 (2009-??-??)
+1.1rc2 (2009-06-08)
 -------------------
 
 - Added entity encoding configuration option
@@ -75,29 +75,3 @@ HISTORY
 - Fixed width of file field in image and file upload dialog for Safari
 - Fixed inline style filtering
 - Fixed indenting/outdenting of lists
-
-0.96.3.1.1 (2008-10-23)
------------------------
-
-- Added external toolbar option
-- Autogrow option
-- Handling for allow and filter_buttons
-- Changed style of the editorfield so it matches the other widgets (gray
-  borders, blue toolbar, orange border when selected etc)
-- Added javascripts to portal registery
-- Fixed bug with multiple editors on one page (issue #7)
-- CSS fixes for NuPlone
-- Fixed issue with plone formgen style (issue #8)
-- Fixed tablecel bug (issue #6)
-- Removed dom path from location bar
-- Removed unused skins of popups
-- Fixed position of modal dialog blocker and move dialog window (backport from
-  TinyMCE 3.2)
-- Fixed "jumping" issues in the link and image dialog when using Safari
-
-0.95.3.1.1 (2008-09-11)
------------------------
-
-- Eggification of TinyMCE
-- Upgrade to TinyMCE 3.1.1
-- Minor table fixes
