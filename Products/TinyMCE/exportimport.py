@@ -150,7 +150,10 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
                                 setattr(self.context, fieldnode.nodeName, fieldnode.getAttribute('value'))
                         elif self.attributes[categorynode.nodeName][fieldnode.nodeName]['type'] == 'List':
                             field = getattr(self.context, fieldnode.nodeName)
-                            items = field.split('\n')
+                            if field is None:
+                                items = []
+                            else:
+                                items = field.split('\n')
                             for element in fieldnode.childNodes:
                                 if element.nodeName != '#text':
                                     if element.getAttribute('value') not in items:

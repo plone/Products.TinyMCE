@@ -2,7 +2,17 @@
 HISTORY
 =======
 
-1.1rc2 (2009-??-??)
+1.1rc3 (unreleased)
+-------------------
+
+- Fixed AttributeError: 'NoneType' object has no attribute 'split'
+  when reinstalling TinyMCE from 1.1rc1 to 1.1rc2: adding the
+  customplugins attribute fails as this attribute is not there yet
+  (isn't it ironic...).  I cannot reproduce the error in a fresh site,
+  but I have seen it in the wild.
+  [maurits]
+
+1.1rc2 (2009-06-08)
 -------------------
 
 - Added entity encoding configuration option
