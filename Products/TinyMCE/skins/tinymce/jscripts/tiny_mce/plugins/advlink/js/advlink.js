@@ -578,6 +578,22 @@ function setAllAttribs(elm) {
 		setAttrib(elm, 'target', target, 2);
 	}
 
+	var dom = tinyMCEPopup.editor.dom;
+    dom.removeClass(elm, 'internal-link');
+    dom.removeClass(elm, 'external-link');
+    dom.removeClass(elm, 'anchor-link');
+    dom.removeClass(elm, 'mail-link');
+
+	if (isVisible('external_panel')) {
+		dom.addClass(elm, 'external-link');
+	} else if (isVisible('anchors_panel')) {
+		dom.addClass(elm, 'anchor-link');
+	} else if (isVisible('mail_panel')) {
+		dom.addClass(elm, 'mail-link');
+	} else {
+		dom.addClass(elm, 'internal-link');
+	}
+
 	// Refresh in old MSIE
 	if (tinyMCE.isMSIE5)
 		elm.outerHTML = elm.outerHTML;
