@@ -406,7 +406,7 @@ class TinyMCE(SimpleItem):
                 return_buttons.append('iespell')
             elif button == 'source':
                 return_buttons.append('code')
-            elif button == 'styles' or button == 'ulstyles' or 'olstyles':
+            elif button == 'styles' or button == 'ulstyles' or button == 'olstyles':
                 if 'style' not in return_buttons:
                     return_buttons.append('style')
             elif button == 'zoom':
