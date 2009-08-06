@@ -27,6 +27,7 @@ setup(name='Products.TinyMCE',
       zip_safe=False,
       install_requires=[
           'setuptools',
+          'elementtree',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

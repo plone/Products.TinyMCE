@@ -11,7 +11,7 @@ from Products.CMFPlone import utils
 from Products.CMFCore.utils import getUtilityByInterfaceName
 from Products.CMFCore.utils import getToolByName
 from Acquisition import aq_inner
-	
+
 class JSONFolderListing(object):
 	"""Returns a folderish like listing in JSON"""
 	implements(IJSONFolderListing)
@@ -80,8 +80,7 @@ class JSONFolderListing(object):
 
 		# get all items from siteroot to context (title and url)
 		results['path'] = self.getBreadcrums();
-		
-		
+
 		# check if object is a folderish object, if not, get it's parent.
 		if not IFolderish.providedBy(object):
 			object = object.getParentNode();
