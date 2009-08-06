@@ -590,7 +590,7 @@ class TinyMCE(SimpleItem):
         # Add styles to results
         results['styles'] = []
         results['table_styles'] = []
-        if redefine_parastyles is None or not redefine_parastyles:
+        if not redefine_parastyles and isinstance(self.tablestyles, str):
             for tablestyle in self.tablestyles.split('\n'):
                 tablestylefields = tablestyle.split('|');
                 results['styles'].append(tablestylefields[0] + '|table|' + tablestylefields[1]);
