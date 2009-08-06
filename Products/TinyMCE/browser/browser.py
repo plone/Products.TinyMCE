@@ -55,6 +55,7 @@ class TinyMCEBrowserView(BrowserView):
 
 		utility = getUtility(ITinyMCE)
 		linkable_meta_types = utility.linkable.split('\n')
+		linkable_meta_types.extend(utility.containsobjects.split('\n'))
 
 		context = aq_inner(self.context)
 		object = IJSONSearch(self.context)

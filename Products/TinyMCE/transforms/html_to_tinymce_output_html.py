@@ -4,7 +4,10 @@ from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.transforms.parser import TinyMCEOutput
 
 try:
-    from Products.PortalTransforms.z3.interfaces import ITransform
+    try:
+        from Products.PortalTransforms.interfaces import ITransform
+    except ImportError:
+        from Products.PortalTransforms.z3.interfaces import ITransform
 except ImportError:
     ITransform = None
 from Products.PortalTransforms.interfaces import itransform

@@ -1,7 +1,11 @@
 from Products.CMFPlone.utils import log
 from zope.interface import implements
+
 try:
-    from Products.PortalTransforms.z3.interfaces import ITransform
+    try:
+        from Products.PortalTransforms.interfaces import ITransform
+    except ImportError:
+        from Products.PortalTransforms.z3.interfaces import ITransform
 except ImportError:
     ITransform = None
 from Products.PortalTransforms.interfaces import itransform
