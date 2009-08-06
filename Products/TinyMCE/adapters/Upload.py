@@ -19,101 +19,104 @@ TEMPLATE = """
 """
 
 class Upload(object):
-	"""Adds the uploaded file to the folder"""
-	implements(IUpload);
+    """Adds the uploaded file to the folder"""
+    implements(IUpload);
 
-	def __init__(self, context):
-		"""Constructor"""
+    def __init__(self, context):
+        """Constructor"""
 
-		self.context = context;
+        self.context = context;
 
-	def errorMessage(self, msg):
-		"""Returns an error message"""
-	
-		script = TEMPLATE % ("window.parent.uploadError('" + msg.replace("'", "\\'") + "');")
-		return script
-	
-	def okMessage(self, msg):
-		"""Returns an ok message"""
+    def errorMessage(self, msg):
+        """Returns an error message"""
 
-		script = TEMPLATE % ("window.parent.uploadOk('" + msg.replace("'", "\\'") + "');")
-		return script
+        script = TEMPLATE % ("window.parent.uploadError('" + msg.replace("'", "\\'") + "');")
+        return script
 
-	def cleanupFilename(self, name):
-		"""Generate a unique id which doesn't match	the system generated ids"""
+    def okMessage(self, msg):
+        """Returns an ok message"""
 
-		context = self.context
-		id = ''
-		name = name.replace('\\', '/') # Fixup Windows filenames
-		name = name.split('/')[-1] # Throw away any path part.
-		for c in name:
-			if c.isalnum() or c in '._':
-				id += c
+        script = TEMPLATE % ("window.parent.uploadOk('" + msg.replace("'", "\\'") + "');")
+        return script
 
-		# Raise condition here, but not a lot we can do about that
-		if context.check_id(id) is None and getattr(context,id,None) is None:
-			return id
+    def cleanupFilename(self, name):
+        """Generate a unique id which doesn't match	the system generated ids"""
 
-		# Now make the id unique
-		count = 1
-		while 1:
-			if count==1:
-				sc = ''
-			else:
-				sc = str(count)
-			newid = "copy%s_of_%s" % (sc, id)
-			if context.check_id(newid) is None and getattr(context,newid,None) is None:
-				return newid
-			count += 1
+        context = self.context
+        id = ''
+        name = name.replace('\\', '/') # Fixup Windows filenames
+        name = name.split('/')[-1] # Throw away any path part.
+        for c in name:
+            if c.isalnum() or c in '._':
+                id += c
 
-	def upload(self):
-		"""Adds uploaded file"""
+        # Raise condition here, but not a lot we can do about that
+        if context.check_id(id) is None and getattr(context,id,None) is None:
+            return id
 
-		object = aq_inner(self.context);
-		if not IFolderish.providedBy(object):
-			object = object.getParentNode()
+        # Now make the id unique
+        count = 1
+        while 1:
+            if count==1:
+                sc = ''
+            else:
+                sc = str(count)
+            newid = "copy%s_of_%s" % (sc, id)
+            if context.check_id(newid) is None and getattr(context,newid,None) is None:
+                return newid
+            count += 1
 
-		context = self.context
-		request = context.REQUEST
-		ctr_tool = getToolByName(self.context, 'content_type_registry')
-		id = request['uploadfile'].filename
-		
-		content_type = request['uploadfile'].headers["Content-Type"]
-		typename = ctr_tool.findTypeName(id, content_type, "")
-	
-		# Permission checks based on code by Danny Bloemendaal
+    def upload(self):
+        """Adds uploaded file"""
 
-		# 1) check if we are allowed to create an Image in folder 
-		if not typename in [t.id for t in context.getAllowedTypes()]: 
-			return self.errorMessage("Not allowed to upload a file of this type to this folder")
+        object = aq_inner(self.context);
+        if not IFolderish.providedBy(object):
+            object = object.getParentNode()
 
-		# 2) check if the current user has permissions to add stuff 
-		if not context.portal_membership.checkPermission('Add portal content',context): 
-			return self.errorMessage("You do not have permission to upload files in this folder")
+        context = self.context
+        request = context.REQUEST
+        ctr_tool = getToolByName(self.context, 'content_type_registry')
+        id = request['uploadfile'].filename
 
-		# Get an unused filename without path
-		id = self.cleanupFilename(id)
+        content_type = request['uploadfile'].headers["Content-Type"]
+        typename = ctr_tool.findTypeName(id, content_type, "")
 
-		newid = context.invokeFactory(type_name=typename, id=id,
-			title=request['uploadtitle'],
-			description=request['uploaddescription'],
-		)
+        # Permission checks based on code by Danny Bloemendaal
 
-		if newid is None or newid == '':
-			newid = id 
+        # 1) check if we are allowed to create an Image in folder 
+        if not typename in [t.id for t in context.getAllowedTypes()]: 
+            return self.errorMessage("Not allowed to upload a file of this type to this folder")
 
-		obj = getattr(context,newid, None)
-		if typename == 'Image':
-			obj.setImage(request['uploadfile'])
-		else:
-			obj.setFile(request['uploadfile'])
+        # 2) check if the current user has permissions to add stuff 
+        if not context.portal_membership.checkPermission('Add portal content',context): 
+            return self.errorMessage("You do not have permission to upload files in this folder")
 
-		if not obj:
-			return self.errorMessage("Could not upload the file")
+        # Get an unused filename without path
+        id = self.cleanupFilename(id)
+        title = request['uploadtitle']
+        if title == None or title == "":
+            title = id
 
-		obj.reindexObject()
+        newid = context.invokeFactory(type_name=typename, id=id,
+            title=title,
+            description=request['uploaddescription'],
+        )
 
-		utility = getUtility(ITinyMCE)
-		if utility.link_using_uids:
-			return self.okMessage("resolveuid/%s" % (obj.UID()))
-		return self.okMessage("%s" % (obj.absolute_url()))
+        if newid is None or newid == '':
+            newid = id 
+
+        obj = getattr(context,newid, None)
+        if typename == 'Image':
+            obj.setImage(request['uploadfile'])
+        else:
+            obj.setFile(request['uploadfile'])
+
+        if not obj:
+            return self.errorMessage("Could not upload the file")
+
+        obj.reindexObject()
+
+        utility = getUtility(ITinyMCE)
+        if utility.link_using_uids:
+            return self.okMessage("resolveuid/%s" % (obj.UID()))
+        return self.okMessage("%s" % (obj.absolute_url()))
