@@ -444,25 +444,27 @@ var ImageDialog = {
 		return elm.options[elm.selectedIndex].value;
 	},
 
-	setDetails : function(path) {
-		// Sends a low level Ajax request
-		tinymce.util.XHR.send({
-		    url : path + '/tinymce-jsondetails',
-			type : 'POST',
-			success : function(text) {
-				var html = "";
-				var data = eval('(' + text + ')');
-			
-				if (data.thumb == "") {
-					document.getElementById ('previewimagecontainer').innerHTML = data.description;
-				} else {
-					document.getElementById ('previewimagecontainer').innerHTML = '<img src="' + data.thumb + '" border="0" />';
-				}
-	
-				this.current_path = path;
-			}
-		});	
-	},
+    setDetails : function(path,title) {
+        // Sends a low level Ajax request
+        tinymce.util.XHR.send({
+            url : path + '/tinymce-jsondetails',
+            type : 'POST',
+            success : function(text) {
+                var html = "";
+                var data = eval('(' + text + ')');
+
+                if (data.thumb == "") {
+                    document.getElementById ('previewimagecontainer').innerHTML = data.description;
+                } else {
+                    document.getElementById ('previewimagecontainer').innerHTML = '<img src="' + data.thumb + '" border="0" />';
+                }
+                if (document.getElementById ('alt').value == "") {
+                    document.getElementById ('alt').value = title;
+                }
+                this.current_path = path;
+            }
+        });
+    },
 
 	getCurrentFolderListing : function() {
 		this.getFolderListing(tinyMCEPopup.editor.settings.document_base_url, 'tinymce-jsonimagefolderlisting');
@@ -490,7 +492,8 @@ var ImageDialog = {
 							html += '</a>';
 						} else {
 							html += '<input onclick="ImageDialog.setDetails(\'';
-							html += data.items[i].url + '\');" type="radio" class="noborder" name="internallink" value="';
+							html += data.items[i].url + '\',\'' + data.items[i].title + '\');"';
+							html += ' type="radio" class="noborder" name="internallink" value="';
 							if (tinyMCEPopup.editor.settings.link_using_uids) {
 								html += "resolveuid/" + data.items[i].uid;
 							} else {
@@ -532,9 +535,9 @@ var ImageDialog = {
 				ImageDialog.setRadioValue('internallink', ImageDialog.current_link, 0);
 				if (ImageDialog.current_link != "") {
 					if (ImageDialog.current_link.indexOf('resolveuid') != -1) {
-						ImageDialog.setDetails(ImageDialog.current_url);
+						ImageDialog.setDetails(ImageDialog.current_url,'');
 					} else {
-						ImageDialog.setDetails(ImageDialog.current_link);
+						ImageDialog.setDetails(ImageDialog.current_link,'');
 					}
 				}
 			}
