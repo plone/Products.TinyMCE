@@ -194,6 +194,14 @@ class TinyMCE(SimpleItem):
             # In case some weird browser makes the test code blow up.
             pass
         return False
+        
+    
+    def getImageSizes(self):
+        """Return the image sizes for the drawer"""
+        return [
+            { 'value': '', 'title':'Original'},
+            { 'value': 'thumb', 'title': 'Thumb (XXX x XXX)'}
+        ]
 
     security.declarePrivate('getEnabledButtons')
     def getEnabledButtons(self, context):
