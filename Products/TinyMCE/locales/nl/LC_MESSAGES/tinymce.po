@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 1.1\n"
 "POT-Creation-Date: 2009-08-07 16:19+0000\n"
-"PO-Revision-Date: 2009-08-07 16:19+0000\n"
-"Last-Translator: Rob Gietema <rob@fourdigits.nl>\n"
+"PO-Revision-Date: 2009-08-07 19:44+0100\n"
+"Last-Translator: ralph <ralph@fourdigits.nl>\n"
 "Language-Team: Rob Gietema <rob@fourdigits.nl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -20,97 +20,97 @@ msgstr "Instellingen voor de TinyMCE Wysiwyg editor"
 
 #: ./browser/controlpanel.py:48
 msgid "TinyMCE Settings"
-msgstr ""
+msgstr "TinyMCE instellingen"
 
 #. Default: "Images will be automatically captioned."
 #: ./interfaces/utility.py:414
 msgid "help_allow_captioned_images"
-msgstr ""
+msgstr "Afbeeldingen worden automatisch voorzien van een onderschrift."
 
 #. Default: "This option gives you the ability to enable/disable auto resizing the editor window depending on the content."
 #: ./interfaces/utility.py:19
 msgid "help_autoresize"
-msgstr ""
+msgstr "Deze optie geeft de mogelijk om het automatisch schalen van het editor scherm aan de hand van de inhoud aan en uit te zetten."
 
 #. Default: "This option gives you the ability to specify the bottom margin (in pixels) of the textfield when auto resizing of the editor window is enabled."
 #: ./interfaces/utility.py:25
 msgid "help_autoresize_bottom_margin"
-msgstr ""
+msgstr "Deze optie geeft je de mogelijkheid om de onderste marge te specificeren (in pixels) wanneer automatisch schalen van het editor scherm is ingeschakeld."
 
 #. Default: "Enter a list of content types which can contain anchors. Format is one contenttype per line."
 #: ./interfaces/utility.py:426
 msgid "help_containsanchors"
-msgstr ""
+msgstr "Geef een lijst van contenttypen die ankers kunnen bevatten op. Het formaat is één contenttype per regel."
 
 #. Default: "Enter a list of content types which can contain other objects. Format is one contenttype per line."
 #: ./interfaces/utility.py:420
 msgid "help_containsobjects"
-msgstr ""
+msgstr "Geef een lijst van contenttypen die objecten kunnen bevatten op. Het formaat is één contenttype per regel."
 
 #. Default: "This option enables you to specify a custom CSS file that extends the theme content CSS. This CSS file is the one used within the editor (the editable area)."
 #: ./interfaces/utility.py:57
 msgid "help_content_css"
-msgstr ""
+msgstr "Deze optie geeft je de mogelijkheid om een eigen CSS bestand toe te kennen dat een uitbreiding is op de het CSS bestand van het theme. Dit CSS bestand wordt gebruikt binnen het editor scherm."
 
 #. Default: "This option gives you the ability to enable/disable the use of the contextmenu."
 #: ./interfaces/utility.py:51
 msgid "help_contextmenu"
-msgstr ""
+msgstr "Deze optie geeft je mogelijk om het context menu aan of uit te zetten."
 
 #. Default: "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
 #: ./interfaces/utility.py:444
 msgid "help_customplugins"
-msgstr ""
+msgstr "Geef een lijst op van eigen plugins die gebruikt worden in de editor. Het formaat is de pluginnaam of pluginnaam|locatie, één per regel."
 
 #. Default: "Enter a list of custom toolbar buttons which will be loaded in the editor, one per line."
 #: ./interfaces/utility.py:396
 msgid "help_customtoolbarbuttons"
-msgstr ""
+msgstr "Geef een lijst op met eigen toolbar knoppen die geladen worden binnen de editor, één per regel."
 
 #. Default: "This option specifies the default writing direction, some languages (Like Hebrew, Arabic, Urdu...) write from right to left instead of left to right."
 #: ./interfaces/utility.py:43
 msgid "help_directionality"
-msgstr ""
+msgstr "Deze optie geeft je de mogelijk om de tekstrichting in te stellen. Sommige talen (zoals hebreeuws, arabisch, urdu...) schrijven van rechts naar links in plaats van links naar rechts."
 
 #. Default: "This option gives you the ability to specify the height of the editor in pixels. If auto resize is enabled this value is used as minimum height."
 #: ./interfaces/utility.py:37
 msgid "help_editor_height"
-msgstr ""
+msgstr "Deze optie geeft je mogelijkheid om de hoogte van het editor scherm in pixels of procenten in te stellen."
 
 #. Default: "This option gives you the ability to specify the width of the editor in pixels or percent."
 #: ./interfaces/utility.py:31
 msgid "help_editor_width"
-msgstr ""
+msgstr "Deze optie geeft je mogelijkheid om de breedte van het editor scherm in pixels of procenten in te stellen."
 
 #. Default: "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
 #: ./interfaces/utility.py:450
 msgid "help_entity_encoding"
-msgstr ""
+msgstr "Deze optie bepaald hoe entiteiten/karakters worden verwerkt. Named: Karakters worden geconverteerd in named entiteiten gebaseerd op de entiteiten optie. Numeriek: Karakters worden geconverteerd in numerieke karakters. Raw: Alle karakters worden opgeslagen in een non-entiteiten vorm behalve deze XML standaard entiteiten: amp lt gt quot."
 
 #. Default: "Links to objects on this site can use unique object ids so that the links remain valid even if the target object is renamed or moved elsewhere on the site."
 #: ./interfaces/utility.py:408
 msgid "help_link_using_uids"
-msgstr ""
+msgstr "Links naar objecten op deze site kunnen unieke object ids gebruiken zodat de links valide blijven wanneer het bron object hernoemd of verplaatst is op de site."
 
 #. Default: "Enter a list of content types which can be linked. Format is one contenttype per line."
 #: ./interfaces/utility.py:432
 msgid "help_linkable"
-msgstr ""
+msgstr "Geef een lijst op van contenttypes waar naar gelinkt kan worden. Het formaat is één contenttype per regel."
 
 #. Default: "This option gives you the ability to enable/disable resizing the editor window. If the editor width is set to a percentage only vertical resizing is enabled."
 #: ./interfaces/utility.py:13
 msgid "help_resizing"
-msgstr ""
+msgstr "Deze optie geeft je de mogelijkheid om het schalen van het editor scherm aan en uit te zetten. Als de editor breedte ingesteld is met percentages, is alleen verticale schaling mogelijk."
 
 #. Default: "Enter a list of styles to appear in the style pulldown. Format is title|tag or title|tag|className, one per line."
 #: ./interfaces/utility.py:63
 msgid "help_styles"
-msgstr ""
+msgstr "Geef een lijst van stijlen op die verschijnen in het stijlen menu. Het formaat is titel|class, één per regel"
 
 #. Default: "Enter a list of styles to appear in the table style pulldown. Format is title|class, one per line."
 #: ./interfaces/utility.py:69
 msgid "help_tablestyles"
-msgstr ""
+msgstr "Geef een lijst van stijlen op die verschijnen in het tabel stijlen menu. Het formaat is titel|class, één per regel"
 
 #: ./interfaces/utility.py:300
 msgid "help_toolbar_advhr"
@@ -163,7 +163,7 @@ msgstr ""
 #. Default: "This option enables the external toolbar which will be placed at the top of the page."
 #: ./interfaces/utility.py:84
 msgid "help_toolbar_external"
-msgstr ""
+msgstr "Deze optie geeft je de mogelijkheid om een externe toolbar aan te zetten die bovenaan de website wordt geplaatst."
 
 #: ./interfaces/utility.py:192
 msgid "help_toolbar_forecolor"
@@ -324,385 +324,385 @@ msgstr ""
 #. Default: "This option gives you the ability to specify the width of the toolbar in pixels."
 #: ./interfaces/utility.py:78
 msgid "help_toolbar_width"
-msgstr ""
+msgstr "Toolbar breedte"
 
 #. Default: "Allow captioned images"
 #: ./interfaces/utility.py:413
 msgid "label_allow_captioned_images"
-msgstr ""
+msgstr "Afbeelding onderschriften"
 
 #. Default: "Enable auto resizing of the editor window."
 #: ./interfaces/utility.py:18
 msgid "label_autoresize"
-msgstr ""
+msgstr "Automatisch schalen"
 
 #. Default: "Bottom margin of the textfield when auto resizing is enabled."
 #: ./interfaces/utility.py:24
 msgid "label_autoresize_bottom_margin"
-msgstr ""
+msgstr "Marge onderaan wanneer automatisch schalen is ingeschakeld van het tekstveld"
 
 #. Default: "Contains Anchors"
 #: ./interfaces/utility.py:425
 msgid "label_containsanchors"
-msgstr ""
+msgstr "Bevat ankers"
 
 #. Default: "Contains Objects"
 #: ./interfaces/utility.py:419
 msgid "label_containsobjects"
-msgstr ""
+msgstr "Bevat objecten"
 
 #. Default: "Choose the Css used in Wysiwyg Editor Area"
 #: ./interfaces/utility.py:56
 msgid "label_content_css"
-msgstr ""
+msgstr "Eigen CSS voor editor"
 
 #. Default: "Enable contextmenu."
 #: ./interfaces/utility.py:50
 msgid "label_contextmenu"
-msgstr ""
+msgstr "Contextmenu inschakelen"
 
 #. Default: "Custom Plugins"
 #: ./interfaces/utility.py:443
 msgid "label_customplugins"
-msgstr ""
+msgstr "Eigen plugins"
 
 #. Default: "Custom Toolbar Buttons"
 #: ./interfaces/utility.py:395
 msgid "label_customtoolbarbuttons"
-msgstr ""
+msgstr "Eigen toolbar knoppen"
 
 #. Default: "Writing direction"
 #: ./interfaces/utility.py:42
 msgid "label_directionality"
-msgstr ""
+msgstr "Tekst richting"
 
 #. Default: "Editor height"
 #: ./interfaces/utility.py:36
 msgid "label_editor_height"
-msgstr ""
+msgstr "Editor hoogte"
 
 #. Default: "Editor width"
 #: ./interfaces/utility.py:30
 msgid "label_editor_width"
-msgstr ""
+msgstr "Editor breedte"
 
 #. Default: "Entity encoding"
 #: ./interfaces/utility.py:449
 msgid "label_entity_encoding"
-msgstr ""
+msgstr "Codering"
 
 #. Default: "Image Objects"
 #: ./interfaces/utility.py:437
 msgid "label_imageobjects"
-msgstr ""
+msgstr "Afbeelding objecten"
 
 #. Default: "Link using UIDs"
 #: ./interfaces/utility.py:407
 msgid "label_link_using_uids"
-msgstr ""
+msgstr "Met uids linken"
 
 #. Default: "Linkable Objects"
 #: ./interfaces/utility.py:431
 msgid "label_linkable"
-msgstr ""
+msgstr "Linkbare objecten"
 
 #. Default: "Enable resizing the editor window."
 #: ./interfaces/utility.py:12
 msgid "label_resizing"
-msgstr ""
+msgstr "Editor venster schaalbaar maken"
 
 #. Default: "Styles"
 #: ./interfaces/utility.py:62
 msgid "label_styles"
-msgstr ""
+msgstr "Stijlen"
 
 #. Default: "Table styles"
 #: ./interfaces/utility.py:68
 msgid "label_tablestyles"
-msgstr ""
+msgstr "Tabelstijlen"
 
 #. Default: "Insert advanced horizontal ruler"
 #: ./interfaces/utility.py:299
 msgid "label_toolbar_advhr"
-msgstr ""
+msgstr "Scheidinglijn"
 
 #. Default: "Insert/edit anchor"
 #: ./interfaces/utility.py:269
 msgid "label_toolbar_anchor"
-msgstr ""
+msgstr "Anker"
 
 #. Default: "Insert/edit attributes"
 #: ./interfaces/utility.py:377
 msgid "label_toolbar_attribs"
-msgstr ""
+msgstr "Attributen"
 
 #. Default: "Backcolor"
 #: ./interfaces/utility.py:197
 msgid "label_toolbar_backcolor"
-msgstr ""
+msgstr "Achtergrondkleur"
 
 #. Default: "Bold"
 #: ./interfaces/utility.py:155
 msgid "label_toolbar_bold"
-msgstr ""
+msgstr "Vet"
 
 #. Default: "Unordered list"
 #: ./interfaces/utility.py:227
 msgid "label_toolbar_bullist"
-msgstr ""
+msgstr "Opsommingtekens"
 
 #. Default: "Insert custom character"
 #: ./interfaces/utility.py:287
 msgid "label_toolbar_charmap"
-msgstr ""
+msgstr "Symbool"
 
 #. Default: "Cleanup messy code"
 #: ./interfaces/utility.py:359
 msgid "label_toolbar_cleanup"
-msgstr ""
+msgstr "Code opruimen"
 
 #. Default: "Edit HTML Source"
 #: ./interfaces/utility.py:383
 msgid "label_toolbar_code"
-msgstr ""
+msgstr "HTML bron"
 
 #. Default: "Copy"
 #: ./interfaces/utility.py:101
 msgid "label_toolbar_copy"
-msgstr ""
+msgstr "Kopiëren"
 
 #. Default: "Cut"
 #: ./interfaces/utility.py:95
 msgid "label_toolbar_cut"
-msgstr ""
+msgstr "Knippen"
 
 #. Default: "Emotions"
 #: ./interfaces/utility.py:317
 msgid "label_toolbar_emotions"
-msgstr ""
+msgstr "Emoties"
 
 #. Default: "External"
 #: ./interfaces/utility.py:83
 msgid "label_toolbar_external"
-msgstr ""
+msgstr "Extern"
 
 #. Default: "Forecolor"
 #: ./interfaces/utility.py:191
 msgid "label_toolbar_forecolor"
-msgstr ""
+msgstr "Tekstkleur"
 
 #. Default: "Toggle fullscreen mode"
 #: ./interfaces/utility.py:389
 msgid "label_toolbar_fullscreen"
-msgstr ""
+msgstr "Volledig scherm"
 
 #. Default: "Insert horizontal ruler"
 #: ./interfaces/utility.py:293
 msgid "label_toolbar_hr"
-msgstr ""
+msgstr "Horizontale lijn"
 
 #. Default: "Spellchecker"
 #: ./interfaces/utility.py:347
 msgid "label_toolbar_iespell"
-msgstr ""
+msgstr "Spellingscontrole"
 
 #. Default: "Insert/edit image"
 #: ./interfaces/utility.py:275
 msgid "label_toolbar_image"
-msgstr ""
+msgstr "Afbeelding"
 
 #. Default: "Indent"
 #: ./interfaces/utility.py:245
 msgid "label_toolbar_indent"
-msgstr ""
+msgstr "Inspringen"
 
 #. Default: "Insert date"
 #: ./interfaces/utility.py:305
 msgid "label_toolbar_insertdate"
-msgstr ""
+msgstr "Datum"
 
 #. Default: "Insert time"
 #: ./interfaces/utility.py:311
 msgid "label_toolbar_inserttime"
-msgstr ""
+msgstr "Tijd"
 
 #. Default: "Italic"
 #: ./interfaces/utility.py:161
 msgid "label_toolbar_italic"
-msgstr ""
+msgstr "Cursief"
 
 #. Default: "Align center"
 #: ./interfaces/utility.py:209
 msgid "label_toolbar_justifycenter"
-msgstr ""
+msgstr "Centeren"
 
 #. Default: "Align full"
 #: ./interfaces/utility.py:221
 msgid "label_toolbar_justifyfull"
-msgstr ""
+msgstr "Volledig uitlijnen"
 
 #. Default: "Align left"
 #: ./interfaces/utility.py:203
 msgid "label_toolbar_justifyleft"
-msgstr ""
+msgstr "Links uitlijnen"
 
 #. Default: "Align right"
 #: ./interfaces/utility.py:215
 msgid "label_toolbar_justifyright"
-msgstr ""
+msgstr "Rechts uitlijnen"
 
 #. Default: "Insert/edit link"
 #: ./interfaces/utility.py:257
 msgid "label_toolbar_link"
-msgstr ""
+msgstr "Link"
 
 #. Default: "Insert/edit media"
 #: ./interfaces/utility.py:281
 msgid "label_toolbar_media"
-msgstr ""
+msgstr "Media"
 
 #. Default: "Insert non-breaking space character"
 #: ./interfaces/utility.py:323
 msgid "label_toolbar_nonbreaking"
-msgstr ""
+msgstr "Open ruimte"
 
 #. Default: "Ordered list"
 #: ./interfaces/utility.py:233
 msgid "label_toolbar_numlist"
-msgstr ""
+msgstr "Nummering"
 
 #. Default: "Outdent"
 #: ./interfaces/utility.py:239
 msgid "label_toolbar_outdent"
-msgstr ""
+msgstr "Inspringing verkleinen"
 
 #. Default: "Insert page break"
 #: ./interfaces/utility.py:329
 msgid "label_toolbar_pagebreak"
-msgstr ""
+msgstr "Pagina-einde"
 
 #. Default: "Paste"
 #: ./interfaces/utility.py:107
 msgid "label_toolbar_paste"
-msgstr ""
+msgstr "Plakken"
 
 #. Default: "Paste as Plain Text"
 #: ./interfaces/utility.py:113
 msgid "label_toolbar_pastetext"
-msgstr ""
+msgstr "Tekst plakken"
 
 #. Default: "Paste from Word"
 #: ./interfaces/utility.py:119
 msgid "label_toolbar_pasteword"
-msgstr ""
+msgstr "Plakken vanuit Word"
 
 #. Default: "Preview"
 #: ./interfaces/utility.py:341
 msgid "label_toolbar_preview"
-msgstr ""
+msgstr "Voorbeeld"
 
 #. Default: "Print"
 #: ./interfaces/utility.py:335
 msgid "label_toolbar_print"
-msgstr ""
+msgstr "Printen"
 
 #. Default: "Redo"
 #: ./interfaces/utility.py:131
 msgid "label_toolbar_redo"
-msgstr ""
+msgstr "Herhalen"
 
 #. Default: "Remove formatting"
 #: ./interfaces/utility.py:353
 msgid "label_toolbar_removeformat"
-msgstr ""
+msgstr "Verwijder opmaak"
 
 #. Default: "Find/Replace"
 #: ./interfaces/utility.py:143
 msgid "label_toolbar_replace"
-msgstr ""
+msgstr "Vervangen"
 
 #. Default: "Save"
 #: ./interfaces/utility.py:89
 msgid "label_toolbar_save"
-msgstr ""
+msgstr "Opslaan"
 
 #. Default: "Find"
 #: ./interfaces/utility.py:137
 msgid "label_toolbar_search"
-msgstr ""
+msgstr "Zoeken"
 
 #. Default: "Strikethrough"
 #: ./interfaces/utility.py:173
 msgid "label_toolbar_strikethrough"
-msgstr ""
+msgstr "Doorhalen"
 
 #. Default: "Select Style"
 #: ./interfaces/utility.py:149
 msgid "label_toolbar_style"
-msgstr ""
+msgstr "Stijlen"
 
 #. Default: "Subscript"
 #: ./interfaces/utility.py:179
 msgid "label_toolbar_sub"
-msgstr ""
+msgstr "Subscript"
 
 #. Default: "Superscript"
 #: ./interfaces/utility.py:185
 msgid "label_toolbar_sup"
-msgstr ""
+msgstr "Superscript"
 
 #. Default: "Table controls"
 #: ./interfaces/utility.py:251
 msgid "label_toolbar_tablecontrols"
-msgstr ""
+msgstr "Tabel instellingen"
 
 #. Default: "Underline"
 #: ./interfaces/utility.py:167
 msgid "label_toolbar_underline"
-msgstr ""
+msgstr "Onderstrepen"
 
 #. Default: "Undo"
 #: ./interfaces/utility.py:125
 msgid "label_toolbar_undo"
-msgstr ""
+msgstr "Ongedaan maken"
 
 #. Default: "Unlink"
 #: ./interfaces/utility.py:263
 msgid "label_toolbar_unlink"
-msgstr ""
+msgstr "Link verwijderen"
 
 #. Default: "Toggle guidelines/invisible objects"
 #: ./interfaces/utility.py:365
 msgid "label_toolbar_visualaid"
-msgstr ""
+msgstr "Hulplijnen/onzichtbare objecten aan/uit"
 
 #. Default: "Visual control characters on/off"
 #: ./interfaces/utility.py:371
 msgid "label_toolbar_visualchars"
-msgstr ""
+msgstr "Zichtbare symbolen"
 
 #. Default: "Toolbar width"
 #: ./interfaces/utility.py:77
 msgid "label_toolbar_width"
-msgstr ""
+msgstr "Toolbar breedte"
 
 #. Default: "Layout"
 #: ./browser/controlpanel.py:32
 msgid "tinymcelayout"
-msgstr ""
+msgstr "Layout"
 
 #. Default: "Libraries"
 #: ./browser/controlpanel.py:40
 msgid "tinymcelibraries"
-msgstr ""
+msgstr "Bilbiotheken"
 
 #. Default: "Resource Types"
 #: ./browser/controlpanel.py:44
 msgid "tinymceresourcetypes"
-msgstr ""
+msgstr "Resource Types"
 
 #. Default: "Toolbar"
 #: ./browser/controlpanel.py:36
 msgid "tinymcetoolbar"
-msgstr ""
+msgstr "Toolbar"
 
