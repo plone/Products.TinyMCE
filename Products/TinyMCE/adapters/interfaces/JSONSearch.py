@@ -6,7 +6,7 @@ class IJSONSearch(Interface):
 	def __init__(self, context):
 		"""Constructor"""
 
-	def getSearchResults(self, filter_meta_types):
+	def getSearchResults(self, filter_portal_types):
 		"""Returns the actual search results"""
 
 	def getInfoFromBrain(self, brain):

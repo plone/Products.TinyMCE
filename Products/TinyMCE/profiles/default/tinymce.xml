@@ -4,28 +4,28 @@
   <link_using_uids value="False"/>
   <allow_captioned_images value="False"/>
   <linkable>
-   <element value="ATTopic"/>
-   <element value="ATEvent"/>
-   <element value="ATFile"/>
-   <element value="ATFolder"/>
-   <element value="ATImage"/>
-   <element value="ATBTreeFolder"/>
-   <element value="ATNewsItem"/>
-   <element value="ATDocument"/>
+   <element value="Topic"/>
+   <element value="Event"/>
+   <element value="File"/>
+   <element value="Folder"/>
+   <element value="Image"/>
+   <element value="Large Plone Folder"/>
+   <element value="News Item"/>
+   <element value="Document"/>
   </linkable>
   <containsobjects>
-   <element value="ATFolder"/>
-   <element value="ATBTreeFolder"/>
+   <element value="Folder"/>
+   <element value="Large Plone Folder"/>
    <element value="Plone Site"/>
   </containsobjects>
   <containsanchors>
-   <element value="ATEvent"/>
-   <element value="ATNewsItem"/>
-   <element value="ATDocument"/>
+   <element value="Event"/>
+   <element value="News Item"/>
+   <element value="Document"/>
    <element value="ATRelativePathCriterion"/>
   </containsanchors>
   <imageobjects>
-   <element value="ATImage"/>
+   <element value="Image"/>
   </imageobjects>
   <customplugins>
   </customplugins>
