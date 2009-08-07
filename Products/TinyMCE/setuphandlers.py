@@ -12,9 +12,10 @@ from types import InstanceType
 
 from zope.component import getUtility
 
+import transaction
+
 def add_editor(site):
     """ add TinyMCE to 'my preferences' """
-    #portal_props=getToolByName(site,'portal_properties')
     portal_props = getUtility(IPropertiesTool)
     site_props=getattr(portal_props,'site_properties', None)
     attrname='available_editors'
@@ -22,6 +23,16 @@ def add_editor(site):
         editors=list(site_props.getProperty(attrname))
         if 'TinyMCE' not in editors:
             editors.append('TinyMCE')
+        site_props._updateProperty(attrname, editors)
+        
+def remove_editor(site):
+    """ Remove TinyMCE from 'my preferences' """
+    portal_props = getUtility(IPropertiesTool)
+    site_props=getattr(portal_props,'site_properties', None)
+    attrname='available_editors'
+    if not site_props is None:
+        editors=list(site_props.getProperty(attrname))
+        editors=[x for x in editors if x != 'TinyMCE']
         site_props._updateProperty(attrname, editors)
         
 def register_mimetype(context, mimetype):
@@ -88,3 +99,9 @@ def importVarious(context):
     site = context.getSite()
     add_editor(site)
     
+def unregisterUtility(context):
+    my_utility = getUtility(ITinyMCE)
+    context.getSiteManager().unregisterUtility(my_utility, ITinyMCE)
+    del my_utility
+    
+    transaction.commit()
