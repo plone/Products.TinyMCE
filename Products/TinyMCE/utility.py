@@ -108,7 +108,8 @@ class TinyMCE(SimpleItem):
     toolbar_attribs = FieldProperty(ITinyMCEToolbar['toolbar_attribs'])
     toolbar_code = FieldProperty(ITinyMCEToolbar['toolbar_code'])
     toolbar_fullscreen = FieldProperty(ITinyMCEToolbar['toolbar_fullscreen'])
-    
+    customtoolbarbuttons = FieldProperty(ITinyMCEToolbar['customtoolbarbuttons'])
+
     link_using_uids = FieldProperty(ITinyMCEResourceTypes['link_using_uids'])
     allow_captioned_images = FieldProperty(ITinyMCEResourceTypes['allow_captioned_images'])
     containsobjects = FieldProperty(ITinyMCEResourceTypes['containsobjects'])
@@ -319,6 +320,9 @@ class TinyMCE(SimpleItem):
             buttons.append('code')
         if self.toolbar_fullscreen:
             buttons.append('fullscreen')
+
+        if self.customtoolbarbuttons is not None:
+            buttons.extend(self.customtoolbarbuttons.split('\n'))
 
         # Return the buttons
         return buttons
