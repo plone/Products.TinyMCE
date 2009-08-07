@@ -23,21 +23,20 @@ class JSONDetails(object):
 		"""Returns the actual details"""
 
 		utility = getUtility(ITinyMCE)
-		anchor_meta_types = utility.containsanchors.split('\n')
-		image_meta_types = utility.imageobjects.split('\n')
+		anchor_portal_types = utility.containsanchors.split('\n')
+		image_portal_types = utility.imageobjects.split('\n')
 
 		results = {};
 		results['title'] = self.context.Title()
 		results['description'] = self.context.Description()
 
-		if self.context.meta_type in image_meta_types:
+		if self.context.portal_type in image_portal_types:
 			results['thumb'] = self.context.absolute_url() + "/image_thumb"
 		else:
 			results['thumb'] = ""
 
-		if self.context.meta_type in anchor_meta_types:
+		if self.context.portal_type in anchor_portal_types:
 			results['anchors'] = [];
-			# content = '<html><head></head><body><a name="tildeancor"></a></body></html>'
 			tree = HTMLTreeBuilder.TreeBuilder()
 			tree.feed('<root>%s</root>' % self.context.getText())
 			rootnode = tree.close()

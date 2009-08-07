@@ -33,44 +33,44 @@ class TinyMCEBrowserView(BrowserView):
 		"""Returns the folderlisting of linkable objects in JSON"""
 
 		utility = getUtility(ITinyMCE)
-		linkable_meta_types = utility.linkable.split('\n')
+		linkable_portal_types = utility.linkable.split('\n')
 
 		context = aq_inner(self.context)
 		object = IJSONFolderListing(self.context)
-		return object.getListing(linkable_meta_types)
+		return object.getListing(linkable_portal_types)
 	
 	def jsonImageFolderListing(self):
 		"""Returns the folderlisting of image objects in JSON"""
 
 		utility = getUtility(ITinyMCE)
-		image_meta_types = utility.imageobjects.split('\n')
-		image_meta_types.extend(utility.containsobjects.split('\n'))
+		image_portal_types = utility.imageobjects.split('\n')
+		image_portal_types.extend(utility.containsobjects.split('\n'))
 
 		context = aq_inner(self.context)
 		object = IJSONFolderListing(self.context)
-		return object.getListing(image_meta_types)
+		return object.getListing(image_portal_types)
 
 	def jsonLinkableSearch(self, searchtext):
 		"""Returns the search results of linkable objects in JSON"""
 
 		utility = getUtility(ITinyMCE)
-		linkable_meta_types = utility.linkable.split('\n')
-		linkable_meta_types.extend(utility.containsobjects.split('\n'))
+		linkable_portal_types = utility.linkable.split('\n')
+		linkable_portal_types.extend(utility.containsobjects.split('\n'))
 
 		context = aq_inner(self.context)
 		object = IJSONSearch(self.context)
-		return object.getSearchResults(linkable_meta_types, searchtext)
+		return object.getSearchResults(linkable_portal_types, searchtext)
 	
 	def jsonImageSearch(self, searchtext):
 		"""Returns the search results of image objects in JSON"""
 
 		utility = getUtility(ITinyMCE)
-		image_meta_types = utility.imageobjects.split('\n')
-		image_meta_types.extend(utility.containsobjects.split('\n'))
+		image_portal_types = utility.imageobjects.split('\n')
+		image_portal_types.extend(utility.containsobjects.split('\n'))
 
 		context = aq_inner(self.context)
 		object = IJSONSearch(self.context)
-		return object.getSearchResults(image_meta_types, searchtext)
+		return object.getSearchResults(image_portal_types, searchtext)
 
 	def jsonDetails(self):
 		"""Returns the details of an object in JSON"""

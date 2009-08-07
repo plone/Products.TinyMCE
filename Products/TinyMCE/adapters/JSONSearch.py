@@ -41,7 +41,7 @@ class JSONSearch(object):
 		'is_folderish' : is_folderish
 		}
 
-	def getSearchResults(self, filter_meta_types, searchtext):
+	def getSearchResults(self, filter_portal_types, searchtext):
 		"""Returns the actual search result"""
 
 		catalog_results = []
@@ -51,7 +51,7 @@ class JSONSearch(object):
 		results['path'] = []
 
 		if searchtext:
-			for brain in self.context.portal_catalog.searchResults({'SearchableText':'%s*' % searchtext, 'meta_type':filter_meta_types, 'sort_on':'sortable_title'}):
+			for brain in self.context.portal_catalog.searchResults({'SearchableText':'%s*' % searchtext, 'portal_type':filter_portal_types, 'sort_on':'sortable_title'}):
 				catalog_results.append(self.getInfoFromBrain(brain));
 
 		# add catalog_ressults

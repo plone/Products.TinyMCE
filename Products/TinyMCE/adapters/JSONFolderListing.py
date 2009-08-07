@@ -65,7 +65,7 @@ class JSONFolderListing(object):
 		'is_folderish' : is_folderish
 		}
 
-	def getListing(self, filter_meta_types):
+	def getListing(self, filter_portal_types):
 		"""Returns the actual listing"""
 
 		catalog_results = [];
@@ -85,8 +85,8 @@ class JSONFolderListing(object):
 		if not IFolderish.providedBy(object):
 			object = object.getParentNode();
 		
-		# get all meta types and get information from brains
-		for brain in object.getFolderContents({'meta_type':filter_meta_types, 'sort_on':'sortable_title'}):
+		# get all portal types and get information from brains
+		for brain in object.getFolderContents({'portal_type':filter_portal_types, 'sort_on':'sortable_title'}):
 			catalog_results.append(self.getInfoFromBrain(brain));
 
 		# add catalog_ressults

@@ -418,25 +418,25 @@ class ITinyMCEResourceTypes(Interface):
 	containsobjects = schema.Text(
 		title=_(u'label_containsobjects', default=u'Contains Objects'),
 		description=_(u'help_containsobjects', default=u"Enter a list of content types which can contain other objects. Format is one contenttype per line."),
-		default=u'ATFolder\nATBTreeFolder\nPlone Site',
+		default=u'',
 		required=False) 
 
 	containsanchors = schema.Text(
 		title=_(u'label_containsanchors', default=u'Contains Anchors'),
 		description=_(u'help_containsanchors', default=u"Enter a list of content types which can contain anchors. Format is one contenttype per line."),
-		default=u'ATEvent\nATNewsItem\nATDocument\nATRelativePathCriterion',
+		default=u'',
 		required=False) 
 
 	linkable = schema.Text(
 		title=_(u'label_linkable', default=u'Linkable Objects'),
 		description=_(u'help_linkable', default=u"Enter a list of content types which can be linked. Format is one contenttype per line."),
-		default=u'ATTopic\nATEvent\nATFile\nATFolder\nATImage\nATBTreeFolder\nATNewsItem\nATDocument',
+		default=u'',
 		required=False) 
 
 	imageobjects = schema.Text(
 		title=_(u'label_imageobjects', default=u'Image Objects'),
 		description=_(u'help_linkable', default=u"Enter a list of content types which can be used as images. Format is one contenttype per line."),
-		default=u'ATImage',
+		default=u'',
 		required=False) 
 
 	customplugins = schema.Text(
