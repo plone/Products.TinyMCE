@@ -30,7 +30,7 @@ function TinyMCEConfig(id) {
 		for (var i = 0; i < this.widget_config.customplugins.length; i++) {
 			if (this.widget_config.customplugins[i].indexOf('|') != -1) {
 				e = this.widget_config.customplugins[i].split('|');
-				tinymce.PluginManager.load(e[0], e[1]);
+				tinymce.PluginManager.load(e[0], config.getPortalUrl() + e[1]);
 			}
 		}
 
