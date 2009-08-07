@@ -24,17 +24,17 @@ class TinyMCEOutput(SGMLParser):
     
         baseparts = basepath.split('/')
         pathparts = path.split('/')
-    
+
         basetail = baseparts.pop(-1)
-    
+
         # Remove common elements
         while pathparts and baseparts and baseparts[0]==pathparts[0]:
             baseparts.pop(0)
             pathparts.pop(0)
-    
+
         for i in range(len(baseparts)):
             pathparts.insert(0, '..')
-    
+
         if not pathparts:
             pathparts.insert(0, '.')
         elif pathparts==[basetail]:
@@ -70,7 +70,7 @@ class TinyMCEOutput(SGMLParser):
     def handle_decl(self, text):
         """Handle declarations unmodified """
         self.append_data("<!%(text)s>" % locals())
-        
+
     def unknown_starttag(self, tag, attrs):
         """Here we've got the actual conversion of links and images. Convert UUID's to relative paths, and process captioned images to HTML"""
         if tag in ['a', 'img']:
@@ -78,7 +78,7 @@ class TinyMCEOutput(SGMLParser):
             attributes = {}
             for (key, value) in attrs:
                 attributes[key] = value
-            
+
             if tag == 'a':
                 if attributes.has_key('href'):
                     href = attributes['href']
@@ -116,8 +116,9 @@ class TinyMCEOutput(SGMLParser):
                     if image_obj:
                         # Only do something when the image is actually found in the reference_catalog
                         src = self._makeUrlRelative(image_obj.absolute_url(), self.context.absolute_url()) + appendix
+                        attributes["src"] = src
                         if hasattr(image_obj, "Description"):
-                            description = image_obj.Description()                    
+                            description = image_obj.Description()
                 else:
                     # It's a relative path, let's see if we can get the description from the portal catalog
                     full_path = urljoin(self.context.absolute_url(), src)
@@ -132,12 +133,12 @@ class TinyMCEOutput(SGMLParser):
                     if len(brains) > 0:
                         description = brains[0].Description
                 # Check if the image is a captioned image
-                classes = ""                       
+                classes = ""
                 if attributes.has_key("class"):
                     classes = attributes["class"]
                 if self.captioned_images and classes.find('captioned') != -1:
                     # We have captioned images, and we need to convert them, so let's do so
-                    width_style = ""    
+                    width_style = ""
                     if attributes.has_key("width"):
                         width_style="style=\"width:%spx;\" " % attributes["width"]
                     image_attributes = ""
@@ -153,7 +154,7 @@ class TinyMCEOutput(SGMLParser):
                 else:
                     # Nothing happens with the image, so add it normally
                     attrs = attributes.iteritems()
-                    
+
         # Add the tag to the result
         strattrs = "".join([' %s="%s"' % (key, value) for key, value in attrs])
         if tag in singleton_tags:
