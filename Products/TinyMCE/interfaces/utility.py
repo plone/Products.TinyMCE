@@ -391,6 +391,12 @@ class ITinyMCEToolbar(Interface):
 		default=True,
 		required=False)
 
+	customtoolbarbuttons = schema.Text(
+		title=_(u'label_customtoolbarbuttons', default=u'Custom Toolbar Buttons'),
+		description=_(u'help_customtoolbarbuttons', default=u"Enter a list of custom toolbar buttons which will be loaded in the editor, one per line."),
+		default=u'',
+		required=False) 
+
 class ITinyMCELibraries(Interface):
 	"""This interface defines the libraries properties."""
 

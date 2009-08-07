@@ -85,6 +85,7 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
             'toolbar_attribs' : {'type' : 'Bool', 'default' : False},
             'toolbar_code' : {'type' : 'Bool', 'default' : True},
             'toolbar_fullscreen' : {'type' : 'Bool', 'default' : True},
+            'customtoolbarbuttons' : {'type' : 'List', 'default' : ''},
         },
         'resourcetypes' : {
             'link_using_uids' : {'type' : 'Bool', 'default' : False},
@@ -93,7 +94,7 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
             'containsanchors' : {'type' : 'List', 'default' : 'ATEvent\nATNewsItem\nATDocument\nATRelativePathCriterion'},
             'linkable' : {'type' : 'List', 'default' : 'ATTopic\nATEvent\nATFile\nATFolder\nATImage\nATBTreeFolder\nATNewsItem\nATDocument'},
             'imageobjects' : {'type' : 'List', 'default' : 'ATImage'},
-            'customplugins' : {'type' : 'List', 'default' : 'ATImage'},
+            'customplugins' : {'type' : 'List', 'default' : ''},
             'entity_encoding' : {'type' : 'Text', 'default' : 'raw'},
         }
     }

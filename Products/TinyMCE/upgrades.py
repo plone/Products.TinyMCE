@@ -10,3 +10,6 @@ def upgrade_10_to_11(setuptool):
     
     # Add entity_encoding property
     tinymce.entity_encoding = u"raw"
+
+    # Add custom toolbar buttons property
+    tinymce.customtoolbarbuttons = ""
