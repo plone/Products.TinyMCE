@@ -1,5 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html id="region-conent" xmlns="http://www.w3.org/1999/xhtml">
+<dtml-with base_properties>
+<dtml-call "REQUEST.set('portal_url', portal_url())">
 <head>
 	<title>{#advimage_dlg.dialog_title}</title>
 	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
@@ -7,8 +9,7 @@
 	<script type="text/javascript" src="../../utils/form_utils.js"></script>
 	<script type="text/javascript" src="js/image.js"></script>
 </head>
-<body id="advimage" style="display: none"
-  tal:define="portal_url context/portal_url; portal_tinymce context/portal_tinymce;">
+<body id="advimage" style="display: none">
 	<div class="dialog-wrapper">
 		<fieldset id="general_panel">
 			<legend>{#advimage_dlg.dialog_title}</legend>
@@ -18,14 +19,13 @@
 					<legend>Libraries</legend>
 		            <ul class="configlets">
 		                <li>
-							<a href=""
-							  tal:attributes="href string:javascript:ImageDialog.displayPanel('internal_panel');; ImageDialog.getFolderListing('$portal_url', 'tinymce-jsonimagefolderlisting');;">
-							    <img alt="" tal:attributes="href string:$portal_url/logoIcon.gif"/> Home
+							<a href="javascript:ImageDialog.displayPanel('internal_panel'); ImageDialog.getFolderListing('<dtml-var portal_url>', 'tinymce-jsonimagefolderlisting');">
+							    <img alt="" src="<dtml-var portal_url>/logoIcon.gif"/> Home
 							</a>
 						</li>
 		                <li>
 							<a href="javascript:ImageDialog.displayPanel('internal_panel'); ImageDialog.getCurrentFolderListing();">
-							    <img alt="" tal:attributes="href string:$portal_url/site_icon.gif"/> Current Folder
+							    <img alt="" src="<dtml-var portal_url>/site_icon.gif"/> Current Folder
 							</a>
 						</li>
 		                <!--li>
@@ -92,8 +92,14 @@
 						<label id="dimensionslabel" for="dimensions">{#advimage_dlg.dimensions}</label>
 						<div class="widget">
 							<select id="dimensions" name="dimensions"> 
-							  <option tal:repeat="item portal_tinymce/getImageSizes" tal:attributes="value item/value"
-							    tal:content="item/title" />
+								<option value="">Original</option> 
+								<option value="image_large">Large (768x768)</option>
+								<option value="image_preview">Preview (400x400)</option>
+								<option value="image_mini">Mini (200x200)</option>
+								<option value="image_thumb">Thumb (128x128)</option>
+								<option value="image_tile">Tile (64x64)</option>
+								<option value="image_icon">Icon (32x32)</option>
+								<option value="image_listing">Listing (16x16)</option>
 							</select>
 						</div>
 					</div>
@@ -143,4 +149,5 @@
 		</form>
 	</div>
 </body>
+</dtml-with>
 </html> 
