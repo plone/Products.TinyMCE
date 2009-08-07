@@ -19,5 +19,13 @@
 		handler=".upgrades.upgrade_10_to_11"
 		sortkey="10"
 		profile="Products.TinyMCE:TinyMCE" />
+		
+    <genericsetup:registerProfile
+        name="uninstall"
+        title="Remove TinyMCE Editor Support"
+        directory="profiles/uninstall"
+        description="Removes the TinyMCE editor from the site."
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
 	
 </configure>
