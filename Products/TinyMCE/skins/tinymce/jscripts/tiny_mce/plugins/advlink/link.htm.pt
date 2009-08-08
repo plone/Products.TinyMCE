@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html id="region-content" xmlns="http://www.w3.org/1999/xhtml" i18n:domain="tinymce">
+<head>
+	<title>{#advlink_dlg.title}</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="../../utils/mctabs.js"></script>
+	<script type="text/javascript" src="../../utils/form_utils.js"></script>
+	<script type="text/javascript" src="js/advlink.js"></script>
+</head>
+<body id="advlink" style="display: none"
+  tal:define="portal_url context/portal_url">
+	<div class="dialog-wrapper">
+		<ul class="formTabs"><li id="general_tab" class="formTab firstFormTab"><a href="javascript:mcTabs.displayTab('general_tab','general_panel');setUploadVisibility();" onmousedown="return false;" class="selected"><span>{#advlink_dlg.general_tab}</span></a></li><li id="advanced_tab" class="formTab lastFormTab"><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');setUploadVisibility();" onmousedown="return false;"><span>{#advlink_dlg.advanced_tab}</span></a></li></ul>
+
+		<fieldset id="general_panel" class="formPanel" style="height: 362px; padding-top: 2em">
+			<form>
+				<input type="hidden" name="href" id="href"/>
+				<fieldset class="column" style="width: 120px;">
+					<legend i18n:translate="libraries">Libraries</legend>
+		            <ul class="configlets">
+		                <li>
+							<a href="javascript:displayPanel('internal_panel'); getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonlinkablefolderlisting');">
+							    <img alt="" tal:attributes="src string:$portal_url/logoIcon.gif"/> <span i18n:translate="home">Home</span>
+							</a>
+						</li>
+		                <li>
+							<a href="javascript:displayPanel('internal_panel'); getCurrentFolderListing();">
+							    <img alt="" tal:attributes="src string:$portal_url/site_icon.gif"/> <span i18n:translate="current_folder">Current Folder</span>
+							</a>
+						</li>
+		                <!-- li>
+							<a href="javascript:displayPanel('internal_panel');">
+							    <img alt="" tal:attributes="src string:$portal_url/popup_calendar.gif"/> <span i18n:translate="recent_items">Recent Items</span>
+							</a>
+						</li -->
+		                <li>
+							<a href="javascript:displayPanel('external_panel');">
+					            <img alt="" tal:attributes="src string:$portal_url/link_icon.gif"/> <span i18n:translate="external">External</span>
+		                    </a>
+		                </li>
+		                <li>
+							<a href="javascript:displayPanel('mail_panel');">
+					            <img alt="" tal:attributes="src string:$portal_url/mail_icon.gif"/> <span i18n:translate="mail">Mail</span>
+		                    </a>
+		                </li>
+		                <li>
+							<a href="javascript:displayPanel('anchors_panel');">
+					            <img alt="" tal:attributes="src string:$portal_url/arrowBottom.gif"/> <span i18n:translate="anchors">Anchors</span>
+		                    </a>
+		                </li>
+		            </ul>
+                <div class="field">
+                  <label for="searchtext" i18n:translate="search">Search</label>
+                  <div class="widget">
+                    <input type="text" name="searchtext" id="searchtext" value="" onkeyup="checkSearch(event);" size="12"/>
+                    <input type="button" style="margin-top: 4px;" value="Search" class="searchButton" onclick="getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonlinkablesearch');"/>
+                  </div>
+                </div>
+				</fieldset>
+
+				<fieldset id="internal_panel" class="subPanel column" style="width: 296px;">
+					<legend i18n:translate="internal_link">Internal link</legend>
+					<div class="field">
+						<div id="internalpath" class="formHelp" style="text-align: right;"></div>
+						<label for="internallink">{#advlink_dlg.list}</label>
+						<a id="uponelevel" class="link-parent" style="line-height: 1em;" href="javascript:void(0)"> Up one level </a>
+						<div id="internallinkcontainer" class="widget radioscrolllist input-border" style="height: 260px;">
+						</div>
+					</div>
+				</fieldset>
+
+				<fieldset id="internal_details_panel" class="subPanel column" style="width: 190px;">
+					<legend>Details</legend>
+					<div class="field">
+						<label id="internal_details_title"></label>
+						<p id="internal_details_description"></p>
+					</div>
+					<div class="field">
+						<label id="pageanchorlabel" for="pageanchor" style="display: none;">{#advlink_dlg.anchor_names}</label>
+						<div class="widget" id="pageanchorcontainer" style="display: none;">
+							<select id="pageanchor" name="pageanchor">
+								<option value="">top of page (default)</option>
+							</select>
+						</div>
+					</div>
+				</fieldset>
+
+				<fieldset id="external_panel" class="subPanel column" style="width:520px; display: none;">
+					<legend i18n:translate="external_link">External link</legend>
+					<div class="field">
+						<label for="externalurl">{#advlink_dlg.url}</label>
+						<div class="widget">
+							<select id="externalurlprefix" name="externalurlprefix">
+								<option value="http://">http://</option>
+								<option value="https://">https://</option>
+								<option value="ftp://">ftp://</option>
+							</select>
+							<input type="text" name="externalurl" id="externalurl" value="" onkeyup="checkExternalUrl();" size="30"/>
+							<input type="button" id="preview" class="context" name="preview" value="Preview" i18n:attributes="value preview" onclick="previewExternalLink();" />
+						</div>
+					</div>
+
+					<div class="field">
+						<label for="preview">{#preview.preview_desc}</label>
+						<div class="widget">
+							<iframe width="100%" height="242" frameborder="0" wrap="soft" dir="ltr" src="" class="input-border" name="previewexternal" id="previewexternal"></iframe>
+						</div>
+					</div>
+				</fieldset>
+
+				<fieldset id="mail_panel" class="subPanel column" style="width: 520px; display: none;">
+					<legend i18n:translate="mail">Mail</legend>
+					<div class="field">
+						<label for="mailaddress" i18n:translate="email">E-mail</label>
+						<div class="widget">
+							<input type="text" name="mailaddress" id="mailaddress" value="" size="30" />
+						</div>
+					</div>
+
+					<div class="field">
+						<label for="mailsubject" i18n:translate="subject">Subject</label>
+						<div class="widget">
+							<input type="text" name="mailsubject" id="mailsubject" value="" size="30" />
+						</div>
+					</div>
+				</fieldset>
+
+				<fieldset id="anchors_panel" class="subPanel column" style="width: 520px; display: none;">
+					<legend i18n:translate="link_to_anchor">Link to anchor</legend>
+					<div class="field">
+						<label>{#advlink_dlg.anchor_names}</label>
+						<div id="anchorlinkcontainer" class="widget radioscrolllist input-border" style="height: 280px;">
+						</div>
+					</div>
+				</fieldset>
+			</form>
+	
+			<fieldset id="upload_panel" class="subPanel column" style="width: 190px; display: none;">
+				<legend i18n:translate="upload_file">Upload file</legend>
+				<form name="upload_form" id="upload_form" method="post" target="upload_iframe" enctype="multipart/form-data">
+					<div class="field">
+						<label for="uploadfile" i18n:translate="file">File</label>
+						<div class="widget">
+							<input type="file" name="uploadfile" id="uploadfile" value="" style="width: 100%" size="15" />
+						</div>
+					</div>
+
+					<div class="field">
+						<label for="uploadtitle">{#advlink_dlg.titlefield}</label>
+						<div class="widget">
+							<input type="text" name="uploadtitle" id="uploadtitle" value="" size="25" />
+						</div>
+					</div>
+
+					<div class="field">
+						<label for="uploaddescription" i18n:translate="description">Description</label>
+						<div class="widget">
+							<textarea wrap="soft" cols="10" rows="6" id="uploaddescription" name="uploaddescription"></textarea>
+						</div>
+					</div>
+
+					<input type="button" id="uploadbutton" class="context" name="uploadbutton" value="Upload" i18n:attributes="value upload" onclick="document.forms[1].submit();"/>
+				</form>
+				<iframe style="display: none;" width="0" scrolling="off" height="0" frameborder="0" id="upload_iframe" name="upload_iframe" src="javascript:''"></iframe>
+			</fieldset>
+		</fieldset>
+
+		<fieldset id="advanced_panel" class="formPanel" style="display: none; height: 374px">
+			<form>
+				<div class="field">
+					<label id="targetlistlabel" for="targetlist">{#advlink_dlg.target}</label>
+					<div class="widget">
+						<select id="targetlist" name="targetlist" onchange="setPopupVisibility();">
+							<option value="_self">{#advlink_dlg.target_same}</option>
+							<option value="_blank">{#advlink_dlg.target_blank}</option>
+							<option value="_parent">{#advlink_dlg.target_parent}</option>
+							<option value="_top">{#advlink_dlg.target_top}</option>
+							<!--option value="popup">{#advlink_dlg.popup}</option-->
+						</select>
+					</div>
+				</div>
+			
+				<fieldset id="popup_panel" style="display: none;">
+					<legend>{#advlink_dlg.popup}</legend>
+					<div class="column">
+						<div class="field">
+							<label for="popupname">{#advlink_dlg.popup_name}</label>
+							<div class="widget">
+								<input type="text" name="popupname" id="popupname" value="" size="20" />
+							</div>
+						</div>
+	
+						<div class="field">
+							<label>{#advlink_dlg.popup_size}</label>
+							<div class="widget">
+								<input type="text" id="popupwidth" name="popupwidth" value="" size="4" /> x
+								<input type="text" id="popupheight" name="popupheight" value="" size="4" /> px
+							</div>
+						</div>
+
+						<div class="field">
+							<label>{#advlink_dlg.popup_position}</label>
+							<div class="widget">
+								<input type="text" id="popupleft" name="popupleft" value="" size="4" /> /                                
+								<input type="text" id="popuptop" name="popuptop" value="" size="4" /> (c / c = center)
+							</div>
+						</div>
+					</div>
+
+					<div class="column">
+						<div class="field">
+							<div class="widget">
+								<input type="checkbox" id="popuplocation" name="popuplocation" class="checkbox" />
+								<label id="popuplocationlabel" for="popuplocation">{#advlink_dlg.popup_location}</label>
+							</div>
+						</div>
+
+						<div class="field">
+							<div class="widget">
+								<input type="checkbox" id="popupscrollbars" name="popupscrollbars" class="checkbox" />
+								<label id="popupscrollbarslabel" for="popupscrollbars">{#advlink_dlg.popup_scrollbars}</label>
+							</div>
+						</div>
+
+						<div class="field">
+							<div class="widget">
+								<input type="checkbox" id="popupmenubar" name="popupmenubar" class="checkbox" />
+								<label id="popupmenubarlabel" for="popupmenubar">{#advlink_dlg.popup_menubar}</label>
+							</div>
+						</div>
+
+						<div class="field">
+							<div class="widget">
+								<input type="checkbox" id="popupresizable" name="popupresizable" class="checkbox" />
+								<label id="popupresizablelabel" for="popupresizable">{#advlink_dlg.popup_resizable}</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="column">
+						<div class="field">
+							<div class="widget">
+								<input type="checkbox" id="popuptoolbar" name="popuptoolbar" class="checkbox" />
+								<label id="popuptoolbarlabel" for="popuptoolbar">{#advlink_dlg.popup_toolbar}</label>
+							</div>
+						</div>
+
+						<div class="field">
+							<div class="widget">
+								<input type="checkbox" id="popupdependent" name="popupdependent" class="checkbox" />
+								<label id="popupdependentlabel" for="popupdependent">{#advlink_dlg.popup_dependent}</label>
+							</div>
+						</div>
+
+						<div class="field">
+							<div class="widget">
+								<input type="checkbox" id="popupstatus" name="popupstatus" class="checkbox" />
+								<label id="popupstatuslabel" for="popupstatus">{#advlink_dlg.popup_statusbar}</label>
+							</div>
+						</div>
+
+						<div class="field">
+							<div class="widget">
+								<input type="checkbox" id="popupreturn" name="popupreturn" class="checkbox" checked="checked" />
+								<label id="popupreturnlabel" for="popupreturn">{#advlink_dlg.popup_return}</label>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+
+				<div class="field">
+					<label for="title" i18n:translate="title">Title</label>
+					<div class="widget">
+						<input type="text" name="title" id="title" value="" size="30" />
+					</div>
+				</div>
+			</form>
+		</fieldset>
+
+		<div class="visualClear"><!-- --></div>
+		
+	    <form onsubmit="insertAction();return false;" action="#">
+			<div class="mceActionPanel formControls">
+				<span class="actionButtons">
+					<input type="submit" id="insert" class="context" name="insert" value="{#insert}" />
+					<input type="button" id="cancel" class="context" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+					<input type="button" id="upload" class="standalone" name="upload" value="Upload file" i18n:attributes="value upload_file" onclick="displayPanel('upload_panel');" />
+				</span>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

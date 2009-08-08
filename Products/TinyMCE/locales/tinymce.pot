@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-08-07 18:08+0000\n"
+"POT-Creation-Date: 2009-08-08 11:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,6 +23,41 @@ msgstr ""
 
 #: ./browser/controlpanel.py:48
 msgid "TinyMCE Settings"
+msgstr ""
+
+#. Default: "Anchors"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:48
+msgid "anchors"
+msgstr ""
+
+#. Default: "Current Folder"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:28
+msgid "current_folder"
+msgstr ""
+
+#. Default: "Description"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:156
+msgid "description"
+msgstr ""
+
+#. Default: "E-mail"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:114
+msgid "email"
+msgstr ""
+
+#. Default: "External"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:38
+msgid "external"
+msgstr ""
+
+#. Default: "External link"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:89
+msgid "external_link"
+msgstr ""
+
+#. Default: "File"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:142
+msgid "file"
 msgstr ""
 
 #. Default: "Images will be automatically captioned."
@@ -123,6 +158,16 @@ msgstr ""
 #. Default: "This option gives you the ability to specify the width of the toolbar in pixels."
 #: ./interfaces/utility.py:78
 msgid "help_toolbar_width"
+msgstr ""
+
+#. Default: "Home"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:23
+msgid "home"
+msgstr ""
+
+#. Default: "Internal link"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:62
+msgid "internal_link"
 msgstr ""
 
 #. Default: "Allow captioned images"
@@ -487,21 +532,61 @@ msgstr ""
 
 #. Default: "Layout"
 #: ./browser/controlpanel.py:32
-msgid "tinymcelayout"
+msgid "layout"
 msgstr ""
 
 #. Default: "Libraries"
-#: ./browser/controlpanel.py:40
-msgid "tinymcelibraries"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:19
+msgid "libraries"
+msgstr ""
+
+#. Default: "Link to anchor"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:129
+msgid "link_to_anchor"
+msgstr ""
+
+#. Default: "Mail"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:43
+msgid "mail"
+msgstr ""
+
+#. Default: "Preview"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:99
+msgid "preview"
 msgstr ""
 
 #. Default: "Resource Types"
 #: ./browser/controlpanel.py:44
-msgid "tinymceresourcetypes"
+msgid "resourcetypes"
+msgstr ""
+
+#. Default: "Search"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:53
+msgid "search"
+msgstr ""
+
+#. Default: "Subject"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:121
+msgid "subject"
+msgstr ""
+
+#. Default: "Title"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:272
+msgid "title"
 msgstr ""
 
 #. Default: "Toolbar"
 #: ./browser/controlpanel.py:36
-msgid "tinymcetoolbar"
+msgid "toolbar"
+msgstr ""
+
+#. Default: "Upload"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:162
+msgid "upload"
+msgstr ""
+
+#. Default: "Upload file"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:139
+msgid "upload_file"
 msgstr ""
 
