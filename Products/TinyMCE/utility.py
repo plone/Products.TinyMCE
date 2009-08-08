@@ -41,6 +41,7 @@ class TinyMCE(SimpleItem):
     content_css = FieldProperty(ITinyMCELayout['content_css'])
     styles = FieldProperty(ITinyMCELayout['styles'])
     tablestyles = FieldProperty(ITinyMCELayout['tablestyles'])
+    imagesizes = FieldProperty(ITinyMCELayout['imagesizes'])
 
     toolbar_width = FieldProperty(ITinyMCEToolbar['toolbar_width'])
     
@@ -196,6 +197,21 @@ class TinyMCE(SimpleItem):
             # In case some weird browser makes the test code blow up.
             pass
         return False
+
+    def getImageScales(self, primary_field=None):
+        """Return the image sizes for the drawer"""
+        if primary_field is None:
+            from Products.ATContentTypes.content.image import ATImage
+            primary_field = ATImage.schema['image']
+        sizes = primary_field.getAvailableSizes(primary_field)
+        field_name = primary_field.getName()
+        scales = [{'value':'', 'title':'Original', 'size':[0,0]}]
+        for key, value in sizes.items():
+            scales.append({'value': '%s_%s' % (field_name, key), 
+                           'size': [value[0], value[1]],
+                           'title':key.capitalize() })
+        scales.sort(lambda x,y: cmp(x['size'][0], y['size'][0]))
+        return scales
 
     security.declarePrivate('getEnabledButtons')
     def getEnabledButtons(self, context):
