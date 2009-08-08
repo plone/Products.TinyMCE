@@ -5,13 +5,20 @@ HISTORY
 1.1rc3 (unreleased)
 -------------------
 
+- Modified the image drawer to retrieve the actual image scales for the image
+  object selected.
+  The ALT text box is pre-populated with the image description or if that's empty
+  then the image title.
+  The upload / image details panels now toggle depending on the action you're
+  performing.
+  [Ben Mason (sparcd), Per Thulin (pthulin), James Guest, Owen]
+
 - Fixed AttributeError: 'NoneType' object has no attribute 'split'
   when reinstalling TinyMCE from 1.1rc1 to 1.1rc2: adding the
   customplugins attribute fails as this attribute is not there yet
   (isn't it ironic...).  I cannot reproduce the error in a fresh site,
   but I have seen it in the wild.
   [maurits]
-
 
 1.1rc2 (2009-06-08)
 -------------------

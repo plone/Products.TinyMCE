@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html id="region-content" xmlns="http://www.w3.org/1999/xhtml" i18n:domain="tinymce">
+<html id="region-content" xmlns="http://www.w3.org/1999/xhtml" i18n:domain="plone.tinymce">
 <head>
 	<title>{#advimage_dlg.dialog_title}</title>
 	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
@@ -8,7 +8,7 @@
 	<script type="text/javascript" src="js/image.js"></script>
 </head>
 <body id="advimage" style="display: none"
-  tal:define="portal_url context/portal_url">
+  tal:define="portal_url context/portal_url; portal_tinymce context/portal_tinymce;">
 	<div class="dialog-wrapper">
 		<fieldset id="general_panel">
 			<legend>{#advimage_dlg.dialog_title}</legend>
@@ -50,10 +50,11 @@
 						<a id="uponelevel" class="link-parent" style="line-height: 1em;" href="javascript:void(0)" i18n:translate="">Up one level</a>
 						<div id="internallinkcontainer" class="widget radioscrolllist input-border" style="height: 260px;">
 						</div>
+						<input style="margin-top:4px;" type="button" id="upload" class="context" name="upload" value="Upload file" i18n:attributes="value" onclick="ImageDialog.displayPanel('upload_panel');" />
 					</div>
 				</fieldset>
 
-				<fieldset id="internal_details_panel" class="subPanel column" style="width: 190px;">
+				<fieldset id="internal_details_panel" class="subPanel column" style="width: 190px; display: none;">
 					<legend i18n:translate="">Details</legend>
 					<div class="field">
 						<label>{#advimage_dlg.preview}</label>
@@ -90,15 +91,9 @@
 					<div class="field">
 						<label id="dimensionslabel" for="dimensions">{#advimage_dlg.dimensions}</label>
 						<div class="widget">
-							<select id="dimensions" name="dimensions"> 
-								<option value="">Original</option> 
-								<option value="image_large">Large (768x768)</option>
-								<option value="image_preview">Preview (400x400)</option>
-								<option value="image_mini">Mini (200x200)</option>
-								<option value="image_thumb">Thumb (128x128)</option>
-								<option value="image_tile">Tile (64x64)</option>
-								<option value="image_icon">Icon (32x32)</option>
-								<option value="image_listing">Listing (16x16)</option>
+							<select id="dimensions" name="dimensions">
+							  <option tal:repeat="item portal_tinymce/getImageScales" tal:attributes="value item/value"
+							    tal:content="item/title" />
 							</select>
 						</div>
 					</div>
@@ -141,8 +136,7 @@
 			<div class="mceActionPanel formControls">
 				<span class="actionButtons">
 					<input type="submit" id="insert" class="context" name="insert" value="{#insert}" />
-					<input type="button" id="cancel" class="context" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
-					<input type="button" id="upload" class="standalone" name="upload" value="Upload file" i18n:attributes="value" onclick="ImageDialog.displayPanel('upload_panel');" />
+					<input type="button" id="cancel" class="standalone" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
 				</span>
 			</div>
 		</form>

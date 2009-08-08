@@ -106,10 +106,10 @@ class Upload(object):
             newid = id 
 
         obj = getattr(context,newid, None)
-        if typename == 'Image':
-            obj.setImage(request['uploadfile'])
-        else:
-            obj.setFile(request['uploadfile'])
+
+        # set primary field
+        pf = obj.getPrimaryField()
+        pf.set(obj, request['uploadfile'])
 
         if not obj:
             return self.errorMessage("Could not upload the file")
