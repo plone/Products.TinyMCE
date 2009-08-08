@@ -1,0 +1,2261 @@
+# This is the Greek language pack (UTF-8) for TinyMCE.
+# Version 2.6
+#
+# Paraschos Vasilis (vaspar@vsite.gr)
+msgid ""
+msgstr ""
+"Project-Id-Version: Products.TinyMCE\n"
+"POT-Creation-Date: 2000-01-01 00:00+0000\n"
+"PO-Revision-Date: 2009-05-18 00:00+0000\n"
+"Last-Translator: Paraschos Vasilis (vaspar@vsite.gr)\n"
+"Language-Team: Paraschos Vasilis (vaspar@vsite.gr)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: el\n"
+"Language-Name: Greek\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: tinymce\n"
+
+msgid "common_edit_confirm"
+msgstr "Θέλετε να χρησιμοποιήσετε την λειτουργία WYSIWYG ;"
+
+msgid "common_apply"
+msgstr "Εφαρμογή"
+
+msgid "common_insert"
+msgstr "Εισαγωγή"
+
+msgid "common_update"
+msgstr "Ενημέρωση"
+
+msgid "common_cancel"
+msgstr "Άκυρο"
+
+msgid "common_close"
+msgstr "Κλείσιμο"
+
+msgid "common_browse"
+msgstr "Εύρεση"
+
+msgid "common_class_name"
+msgstr "Κλάση"
+
+msgid "common_not_set"
+msgstr "-- Μη ορισμένο --"
+
+msgid "common_clipboard_msg"
+msgstr "Οι λειτουργίες Αντιγραφή/Αποκοπή/Επικόλληση δεν είναι διαθέσιμες σε Mozilla και Firefox.\nΘέλετε περισσότερες πληροφορίες ;"
+
+msgid "common_clipboard_no_support"
+msgstr "Δεν υποστηρίζεται από τον φυλλομετρητή σας, χρησιμοποιήστε τις συντομεύσεις πληκτρολογίου."
+
+msgid "common_popup_blocked"
+msgstr "Ένα popup-blocker πρόγραμμα έχει απενεργοποιήσει ένα παράθυρο απαραίτητο για την εφαρμογή. Πρέπει να το απενεργοποιήσετε για την ιστοσελίδα αυτή για να χρησιμοποιήσετε πλήρως την εφαρμογή."
+
+msgid "common_invalid_data"
+msgstr "Error: Invalid values entered, these are marked in red."
+
+msgid "common_more_colors"
+msgstr "Περισσότερα χρώματα"
+
+msgid "simple_bold_desc"
+msgstr "Έντονα (Ctrl+B)"
+
+msgid "simple_italic_desc"
+msgstr "Πλάγια (Ctrl+I)"
+
+msgid "simple_underline_desc"
+msgstr "Υπογραμμισμένα (Ctrl+U)"
+
+msgid "simple_striketrough_desc"
+msgstr "Διαγραμμισμένα"
+
+msgid "simple_bullist_desc"
+msgstr "Λίστα χωρίς σειρά"
+
+msgid "simple_numlist_desc"
+msgstr "Λίστα με σειρά"
+
+msgid "simple_undo_desc"
+msgstr "Αναίρεση (Ctrl+Z)"
+
+msgid "simple_redo_desc"
+msgstr "Επανάληψη (Ctrl+Y)"
+
+msgid "simple_cleanup_desc"
+msgstr "Καθαρισμός μπερδεμένου κώδικα"
+
+msgid "advanced_style_select"
+msgstr "Στυλ"
+
+msgid "advanced_font_size"
+msgstr "Μέγεθος Γραμμάτων"
+
+msgid "advanced_fontdefault"
+msgstr "Γραμματοσειρά"
+
+msgid "advanced_block"
+msgstr "Μορφοποίηση"
+
+msgid "advanced_paragraph"
+msgstr "Παράγραφος"
+
+msgid "advanced_div"
+msgstr "Div"
+
+msgid "advanced_address"
+msgstr "Διεύθυνση"
+
+msgid "advanced_pre"
+msgstr "Pre"
+
+msgid "advanced_h1"
+msgstr "Επικεφαλίδα 1"
+
+msgid "advanced_h2"
+msgstr "Επικεφαλίδα 2"
+
+msgid "advanced_h3"
+msgstr "Επικεφαλίδα 3"
+
+msgid "advanced_h4"
+msgstr "Επικεφαλίδα 4"
+
+msgid "advanced_h5"
+msgstr "Επικεφαλίδα 5"
+
+msgid "advanced_h6"
+msgstr "Επικεφαλίδα 6"
+
+msgid "advanced_blockquote"
+msgstr "Blockquote"
+
+msgid "advanced_code"
+msgstr "Κώδικας"
+
+msgid "advanced_samp"
+msgstr "Δείγμα Κώδικα"
+
+msgid "advanced_dt"
+msgstr "Ορισμός"
+
+msgid "advanced_dd"
+msgstr "Περιγραφή Ορισμού"
+
+msgid "advanced_bold_desc"
+msgstr "Μαύρα (Ctrl+B)"
+
+msgid "advanced_italic_desc"
+msgstr "Πλάγια (Ctrl+I)"
+
+msgid "advanced_underline_desc"
+msgstr "Υπογραμμισμένα (Ctrl+U)"
+
+msgid "advanced_striketrough_desc"
+msgstr "Διαγραμμισμένα"
+
+msgid "advanced_justifyleft_desc"
+msgstr "Στοίχιση αριστερά"
+
+msgid "advanced_justifycenter_desc"
+msgstr "Στοίχιση κέντρο"
+
+msgid "advanced_justifyright_desc"
+msgstr "Στοίχιση δεξιά"
+
+msgid "advanced_justifyfull_desc"
+msgstr "Στοίχιση πλήρης"
+
+msgid "advanced_bullist_desc"
+msgstr "Λίστα χωρίς σειρά"
+
+msgid "advanced_numlist_desc"
+msgstr "Λίστα με σειρά"
+
+msgid "advanced_outdent_desc"
+msgstr "Προεξοχή"
+
+msgid "advanced_indent_desc"
+msgstr "Εσοχή"
+
+msgid "advanced_undo_desc"
+msgstr "Αναίρεση (Ctrl+Z)"
+
+msgid "advanced_redo_desc"
+msgstr "Επανάληψη (Ctrl+Y)"
+
+msgid "advanced_link_desc"
+msgstr "Εισαγωγή/επεξεργασία συνδέσμου"
+
+msgid "advanced_unlink_desc"
+msgstr "Κατάργηση συνδέσμου"
+
+msgid "advanced_image_desc"
+msgstr "Εισαγωγή/επεξεργασία εικόνας"
+
+msgid "advanced_cleanup_desc"
+msgstr "Καθαρισμός μπερδεμένου κώδικα"
+
+msgid "advanced_code_desc"
+msgstr "Επεξεργασία HTML Κώδικα"
+
+msgid "advanced_sub_desc"
+msgstr "Δείκτης"
+
+msgid "advanced_sup_desc"
+msgstr "Εκθέτης"
+
+msgid "advanced_hr_desc"
+msgstr "Εισαγωγή οριζόντιας γραμμής"
+
+msgid "advanced_removeformat_desc"
+msgstr "Αφαίρεση μορφοποίησης"
+
+msgid "advanced_custom1_desc"
+msgstr "Η περιγραφή σας εδώ"
+
+msgid "advanced_forecolor_desc"
+msgstr "Επιλογή χρώματος κειμένου"
+
+msgid "advanced_backcolor_desc"
+msgstr "Επιλογή χρώματος φόντου"
+
+msgid "advanced_charmap_desc"
+msgstr "Εισαγωγή χαρακτήρα"
+
+msgid "advanced_visualaid_desc"
+msgstr "Εμφάνιση/Απόκρυψη βοηθητικών γραμμών και αόρατων στοιχείων"
+
+msgid "advanced_anchor_desc"
+msgstr "Εισαγωγή/επεξεργασία anchor"
+
+msgid "advanced_cut_desc"
+msgstr "Αποκοπή"
+
+msgid "advanced_copy_desc"
+msgstr "Αντιγραφή"
+
+msgid "advanced_paste_desc"
+msgstr "Επικόλληση"
+
+msgid "advanced_image_props_desc"
+msgstr "Ιδιότητες εικόνας"
+
+msgid "advanced_newdocument_desc"
+msgstr "Νέο έγγραφο"
+
+msgid "advanced_help_desc"
+msgstr "Βοήθεια"
+
+msgid "advanced_blockquote_desc"
+msgstr "Blockquote"
+
+msgid "advanced_clipboard_msg"
+msgstr "Οι λειτουργίες Αντιγραφή/Αποκοπή/Επικόλληση δεν είναι διαθέσιμες σε Mozilla και Firefox.\nΘέλετε περισσότερες πληροφορίες ;"
+
+msgid "advanced_path"
+msgstr "Διαδρομή"
+
+msgid "advanced_newdocument"
+msgstr "Σιίγουρα θέλετε να καθαρίσετε όλο το περιεχόμενο ;"
+
+msgid "advanced_toolbar_focus"
+msgstr "Μετάβαση στα κουμπιά εργαλείων - Alt+Q, Μετάβαση στον επεξεργαστή κειμένου - Alt-Z, Μετάβαση στην διαδρομή του στοιχείου - Alt-X"
+
+msgid "advanced_more_colors"
+msgstr "Περισσότερα χρώματα"
+
+msgid "advanced_image_delta_width"
+msgstr ""
+
+msgid "advanced_image_delta_height"
+msgstr ""
+
+msgid "advanced_link_delta_width"
+msgstr ""
+
+msgid "advanced_link_delta_height"
+msgstr ""
+
+msgid "advanced_colorpicker_delta_width"
+msgstr ""
+
+msgid "advanced_colorpicker_delta_height"
+msgstr ""
+
+msgid "advanced_charmap_delta_width"
+msgstr ""
+
+msgid "advanced_charmap_delta_height"
+msgstr ""
+
+msgid "advanced_anchor_delta_width"
+msgstr ""
+
+msgid "advanced_anchor_delta_height"
+msgstr ""
+
+msgid "advanced_dlg_about_title"
+msgstr "Σχετικά με το TinyMCE"
+
+msgid "advanced_dlg_about_general"
+msgstr "Σχετικά"
+
+msgid "advanced_dlg_about_help"
+msgstr "Βοήθεια"
+
+msgid "advanced_dlg_about_license"
+msgstr "Άδεια"
+
+msgid "advanced_dlg_about_plugins"
+msgstr "Σχετικά με τα πρόσθετα"
+
+msgid "advanced_dlg_about_plugin"
+msgstr "Σχετικά με το πρόσθετο"
+
+msgid "advanced_dlg_about_author"
+msgstr "Συγγραφέας"
+
+msgid "advanced_dlg_about_version"
+msgstr "Έκδοση"
+
+msgid "advanced_dlg_about_loaded"
+msgstr "Φορτωμένα πρόσθετα"
+
+msgid "advanced_dlg_anchor_title"
+msgstr "Εισαγωγή/επεξεργασία anchor"
+
+msgid "advanced_dlg_anchor_name"
+msgstr "Όνομα anchor"
+
+msgid "advanced_dlg_code_title"
+msgstr "Επεξεργαστής κώδικα HTML"
+
+msgid "advanced_dlg_code_wordwrap"
+msgstr "Αναδίπλωση κειμένου"
+
+msgid "advanced_dlg_colorpicker_title"
+msgstr "Διαλέξτε χρώμα"
+
+msgid "advanced_dlg_colorpicker_picker_tab"
+msgstr "Επιλογή"
+
+msgid "advanced_dlg_colorpicker_picker_title"
+msgstr "Επιλογή χρώματος"
+
+msgid "advanced_dlg_colorpicker_palette_tab"
+msgstr "Παλέτα"
+
+msgid "advanced_dlg_colorpicker_palette_title"
+msgstr "Χρώματα παλέτας"
+
+msgid "advanced_dlg_colorpicker_named_tab"
+msgstr "Ονομαστικά"
+
+msgid "advanced_dlg_colorpicker_named_title"
+msgstr "Ονομαστικά χρώματα"
+
+msgid "advanced_dlg_colorpicker_color"
+msgstr "Χρώμα:"
+
+msgid "advanced_dlg_colorpicker_name"
+msgstr "Όνομα:"
+
+msgid "advanced_dlg_charmap_title"
+msgstr "Επιλογή χαρακτήρα"
+
+msgid "advanced_dlg_image_title"
+msgstr "Εισαγωγή/επεξεργασία εικόνας"
+
+msgid "advanced_dlg_image_src"
+msgstr "Διαδρομή URL Εικόνας"
+
+msgid "advanced_dlg_image_alt"
+msgstr "Περιγραφή εικόνας"
+
+msgid "advanced_dlg_image_list"
+msgstr "Λίστα εικόνων"
+
+msgid "advanced_dlg_image_border"
+msgstr "Πλαίσιο"
+
+msgid "advanced_dlg_image_dimensions"
+msgstr "Διαστάσεις"
+
+msgid "advanced_dlg_image_vspace"
+msgstr "Απόσταση κάθετη"
+
+msgid "advanced_dlg_image_hspace"
+msgstr "Απόσταση οριζόντια"
+
+msgid "advanced_dlg_image_align"
+msgstr "Στοίχιση"
+
+msgid "advanced_dlg_image_align_baseline"
+msgstr "Γραμμή στοίχισης γραμμάτων"
+
+msgid "advanced_dlg_image_align_top"
+msgstr "Επάνω"
+
+msgid "advanced_dlg_image_align_middle"
+msgstr "Μέση"
+
+msgid "advanced_dlg_image_align_bottom"
+msgstr "Κάτω"
+
+msgid "advanced_dlg_image_align_texttop"
+msgstr "Κέιμενο πάνω"
+
+msgid "advanced_dlg_image_align_textbottom"
+msgstr "Κείμενο κάτω"
+
+msgid "advanced_dlg_image_align_left"
+msgstr "Αριστερά"
+
+msgid "advanced_dlg_image_align_right"
+msgstr "Δεξιά"
+
+msgid "advanced_dlg_link_title"
+msgstr "Εισαγωγή/επεξεργασία συνδέσμου"
+
+msgid "advanced_dlg_link_url"
+msgstr "Διαδρομή URL συνδέσμου"
+
+msgid "advanced_dlg_link_target"
+msgstr "Στόχος"
+
+msgid "advanced_dlg_link_target_same"
+msgstr "Άνοιγμα στο ίδιο παράθυρο"
+
+msgid "advanced_dlg_link_target_blank"
+msgstr "Άνοιγμα σε νέο παράθυρο"
+
+msgid "advanced_dlg_link_titlefield"
+msgstr "Τίτλος"
+
+msgid "advanced_dlg_link_is_email"
+msgstr "Η διαδρομή URL που εισάγατε φαίνεται να είναι email, να προστεθεί το απαραίτητο mailto: ;"
+
+msgid "advanced_dlg_link_is_external"
+msgstr "Η διαδρομή URL που εισάγατε φαίνεται να είναι εξωτερικός σύνδεσμος, να προστεθεί το απαραίτητο http:// ;"
+
+msgid "advanced_dlg_link_list"
+msgstr "Λίστα συνδέσμων"
+
+msgid "contextmenu_align"
+msgstr "Στοίχιση"
+
+msgid "contextmenu_left"
+msgstr "Αριστερά"
+
+msgid "contextmenu_center"
+msgstr "Κέντρο"
+
+msgid "contextmenu_right"
+msgstr "Δεξιά"
+
+msgid "contextmenu_full"
+msgstr "Πλήρης"
+
+msgid "insertdatetime_date_fmt"
+msgstr "%Y-%m-%d"
+
+msgid "insertdatetime_time_fmt"
+msgstr "%H:%M:%S"
+
+msgid "insertdatetime_insertdate_desc"
+msgstr "Εισαγωγή ημέρας"
+
+msgid "insertdatetime_inserttime_desc"
+msgstr "Εισαγωγή ώρας"
+
+msgid "insertdatetime_months_long"
+msgstr "Ιανουάριος,Φεβρουάριος,Μάρτιος,Απρίλιος,Μάιος,Ιούνιος,Ιούλιος,Αύγουστος,Σεπτέμβριος,Οκτώβριος,Νοέμβριος,Δεκέμβριος"
+
+msgid "insertdatetime_months_short"
+msgstr "Ιαν,Φεβ,Μάρ,Απρ,Μάι,Ιούν,Ιούλ,Αύγ,Σεπ,Οκτ,Νοέ,Δεκ"
+
+msgid "insertdatetime_day_long"
+msgstr "Κυριακή,Δευτέρα,Τρίτη,Τετάρτη,Πέμπτη,Παρασκευή,Σάββατο"
+
+msgid "insertdatetime_day_short"
+msgstr "Κυ,Δε,Τρ,Τετ,Πέμ,Παρ,Σαβ"
+
+msgid "print_print_desc"
+msgstr "Εκτύπωση"
+
+msgid "preview_preview_desc"
+msgstr "Προεπισκόπηση"
+
+msgid "directionality_ltr_desc"
+msgstr "Κατεύθυνση αριστερά προς δεξιά"
+
+msgid "directionality_rtl_desc"
+msgstr "Κατεύθυνση δεξιά προς αριστερά"
+
+msgid "layer_insertlayer_desc"
+msgstr "Εισαγωγή νέου layer"
+
+msgid "layer_forward_desc"
+msgstr "Μετακίνηση στο προσκήνιο"
+
+msgid "layer_backward_desc"
+msgstr "Μετακίνηση στο παρασκήνιο"
+
+msgid "layer_absolute_desc"
+msgstr "Απόλυτη/Σχετική τοποθέτηση"
+
+msgid "layer_content"
+msgstr "Νέο layer..."
+
+msgid "save_save_desc"
+msgstr "Αποθήκευση"
+
+msgid "save_cancel_desc"
+msgstr "Ακύρωση όλων των αλλαγών"
+
+msgid "nonbreaking_nonbreaking_desc"
+msgstr "Εισαγωγή non-breaking κενού χαρακτήρα"
+
+msgid "iespell_iespell_desc"
+msgstr "Εκτέλεση ελέγχου ορθογραφίας"
+
+msgid "iespell_download"
+msgstr "Το ieSpell δεν βρέθηκε. Να κατέβει τώρα ;"
+
+msgid "advhr_advhr_desc"
+msgstr "Οριζόντια γραμμή"
+
+msgid "advhr_delta_width"
+msgstr ""
+
+msgid "advhr_delta_height"
+msgstr ""
+
+msgid "advhr_dlg_width"
+msgstr "Πλάτος"
+
+msgid "advhr_dlg_size"
+msgstr "Ύψος"
+
+msgid "advhr_dlg_noshade"
+msgstr "Χωρίς σκιά"
+
+msgid "emotions_emotions_desc"
+msgstr "Συναισθήματα"
+
+msgid "emotions_delta_width"
+msgstr ""
+
+msgid "emotions_delta_height"
+msgstr ""
+
+msgid "emotions_dlg_title"
+msgstr "Εισαγωγή συναισθήματος"
+
+msgid "emotions_dlg_desc"
+msgstr "Συναισθήματα"
+
+msgid "emotions_dlg_cool"
+msgstr "Άνετος"
+
+msgid "emotions_dlg_cry"
+msgstr "Δακρυσμένος"
+
+msgid "emotions_dlg_embarassed"
+msgstr "Αμήχανος"
+
+msgid "emotions_dlg_foot_in_mouth"
+msgstr "Κλωτσιά στο στόμα"
+
+msgid "emotions_dlg_frown"
+msgstr "Κατσουφιασμένος"
+
+msgid "emotions_dlg_innocent"
+msgstr "Αθώος"
+
+msgid "emotions_dlg_kiss"
+msgstr "Φιλί"
+
+msgid "emotions_dlg_laughing"
+msgstr "Γέλιο"
+
+msgid "emotions_dlg_money_mouth"
+msgstr "Λεφτά ως στόμα"
+
+msgid "emotions_dlg_sealed"
+msgstr "Σφραγισμένο στόμα"
+
+msgid "emotions_dlg_smile"
+msgstr "Χαμόγελο"
+
+msgid "emotions_dlg_surprised"
+msgstr "Έκπληκτος"
+
+msgid "emotions_dlg_tongue_out"
+msgstr "Γλώσσα έξω"
+
+msgid "emotions_dlg_undecided"
+msgstr "Αναποφάσιστος"
+
+msgid "emotions_dlg_wink"
+msgstr "Κλείσιμο ματιού"
+
+msgid "emotions_dlg_yell"
+msgstr "Φωνάζω"
+
+msgid "searchreplace_search_desc"
+msgstr "Εύρεση"
+
+msgid "searchreplace_replace_desc"
+msgstr "Εύρεση/Αντικατάσταση"
+
+msgid "searchreplace_delta_width"
+msgstr ""
+
+msgid "searchreplace_delta_height"
+msgstr ""
+
+msgid "searchreplace_dlg_searchnext_desc"
+msgstr "Εύρεση ξανά"
+
+msgid "searchreplace_dlg_notfound"
+msgstr "Η αναζήτηση τελείωσε. Το ζητούμενο κείμενο δεν βρέθηκε."
+
+msgid "searchreplace_dlg_search_title"
+msgstr "Εύρεση"
+
+msgid "searchreplace_dlg_replace_title"
+msgstr "Εύρεση/Αναζήτηση"
+
+msgid "searchreplace_dlg_allreplaced"
+msgstr "Όλες οι εμφανίσεις του ζητούμενου κειμένου αντικαταστάθηκαν."
+
+msgid "searchreplace_dlg_findwhat"
+msgstr "Εύρεση του"
+
+msgid "searchreplace_dlg_replacewith"
+msgstr "Αντικατάσταση με"
+
+msgid "searchreplace_dlg_direction"
+msgstr "Κατεύθυνση"
+
+msgid "searchreplace_dlg_up"
+msgstr "Πάνω"
+
+msgid "searchreplace_dlg_down"
+msgstr "Κάτω"
+
+msgid "searchreplace_dlg_mcase"
+msgstr "Ταίριασμα κεφαλαία/μικρά"
+
+msgid "searchreplace_dlg_findnext"
+msgstr "Βρες επόμενο"
+
+msgid "searchreplace_dlg_replace"
+msgstr "Αντικατάσταση"
+
+msgid "searchreplace_dlg_replaceall"
+msgstr "Αντικατ. όλων"
+
+msgid "advimage_image_desc"
+msgstr "Εισαγωγή/επεξεργασία εικόνας"
+
+msgid "advimage_delta_width"
+msgstr ""
+
+msgid "advimage_delta_height"
+msgstr ""
+
+msgid "advimage_dlg_tab_general"
+msgstr "Γενικά"
+
+msgid "advimage_dlg_tab_appearance"
+msgstr "Εμφάνιση"
+
+msgid "advimage_dlg_tab_advanced"
+msgstr "Για προχωρημένους"
+
+msgid "advimage_dlg_general"
+msgstr "Γενικά"
+
+msgid "advimage_dlg_title"
+msgstr "Τίτλος"
+
+msgid "advimage_dlg_preview"
+msgstr "Προεπισκόπηση"
+
+msgid "advimage_dlg_constrain_proportions"
+msgstr "Διατήρηση αναλογίας πλ. - ύψους"
+
+msgid "advimage_dlg_langdir"
+msgstr "Κατεύθυνση γλώσσας"
+
+msgid "advimage_dlg_langcode"
+msgstr "Κωδικός γλώσσας"
+
+msgid "advimage_dlg_long_desc"
+msgstr "Σύνδεσμος πλήρους περιγραφής"
+
+msgid "advimage_dlg_style"
+msgstr "Στυλ"
+
+msgid "advimage_dlg_classes"
+msgstr "Κλάσεις"
+
+msgid "advimage_dlg_ltr"
+msgstr "Αριστερά προς δεξιά"
+
+msgid "advimage_dlg_rtl"
+msgstr "Δεξιά προς αριστερά"
+
+msgid "advimage_dlg_id"
+msgstr "Id"
+
+msgid "advimage_dlg_map"
+msgstr "Χάρτης εικόνας"
+
+msgid "advimage_dlg_swap_image"
+msgstr "Ανταλλαγή εικόνας"
+
+msgid "advimage_dlg_alt_image"
+msgstr "Εναλλακτική εικόνα"
+
+msgid "advimage_dlg_mouseover"
+msgstr "για mouse over"
+
+msgid "advimage_dlg_mouseout"
+msgstr "για mouse out"
+
+msgid "advimage_dlg_misc"
+msgstr "Διάφορα"
+
+msgid "advimage_dlg_example_img"
+msgstr "Δοκιμαστική εικόνα"
+
+msgid "advimage_dlg_missing_alt"
+msgstr "Σίγουρα θέλετε να συνεχίσετε χωρίς περιγραφή εικόνας; Χωρίς αυτήνη εικόνα μπορεί να μην είναι προσβάσιμη σε κάποιους χρήστες με προβλήματα, ή σ'αυτούς που χρησιμοποιούν φυλλομετρητή κειμένου, ή βλέπουν το Ιντερνετ χωρίς εικόνες."
+
+msgid "advimage_dlg_dialog_title"
+msgstr "Εισαγωγή/επεξεργασία εικόνας"
+
+msgid "advimage_dlg_src"
+msgstr "Διαδρομή URL εικόνας"
+
+msgid "advimage_dlg_alt"
+msgstr "Περιγραφή εικόνας"
+
+msgid "advimage_dlg_list"
+msgstr "Λίστα εικόνων"
+
+msgid "advimage_dlg_border"
+msgstr "Πλαίσιο"
+
+msgid "advimage_dlg_dimensions"
+msgstr "Διαστάσεις"
+
+msgid "advimage_dlg_vspace"
+msgstr "Απόσταση κάθετη"
+
+msgid "advimage_dlg_hspace"
+msgstr "Απόσταση οριζόντια"
+
+msgid "advimage_dlg_align"
+msgstr "Στοίχιση"
+
+msgid "advimage_dlg_align_baseline"
+msgstr "Γραμμή στοίχισης γραμμάτων"
+
+msgid "advimage_dlg_align_top"
+msgstr "Πάνω"
+
+msgid "advimage_dlg_align_middle"
+msgstr "Μέση"
+
+msgid "advimage_dlg_align_bottom"
+msgstr "Κάτω"
+
+msgid "advimage_dlg_align_texttop"
+msgstr "Κείμενο πάνω"
+
+msgid "advimage_dlg_align_textbottom"
+msgstr "Κείμενο κάτω"
+
+msgid "advimage_dlg_align_left"
+msgstr "Αριστερά"
+
+msgid "advimage_dlg_align_right"
+msgstr "Δεξιά"
+
+msgid "advimage_dlg_image_list"
+msgstr "Λίστα εικόνων"
+
+msgid "advlink_link_desc"
+msgstr "Εισαγωγή/επεξεργασία συνδέσμου"
+
+msgid "advlink_delta_width"
+msgstr "50"
+
+msgid "advlink_delta_height"
+msgstr ""
+
+msgid "advlink_dlg_title"
+msgstr "Εισαγωγή/επεξεργασία συνδέσμου"
+
+msgid "advlink_dlg_url"
+msgstr "Διαδρομή URL συνδέσμου"
+
+msgid "advlink_dlg_target"
+msgstr "Στόχος"
+
+msgid "advlink_dlg_titlefield"
+msgstr "Τίτλος"
+
+msgid "advlink_dlg_is_email"
+msgstr "Η διαδρομή URL που εισάγατε φαίνεται να είναι email, να προστεθεί το απαραίτητο mailto: ;"
+
+msgid "advlink_dlg_is_external"
+msgstr "Η διαδρομή URL που εισάγατε φαίνεται να είναι εξωτερικός σύνδεσμος, να προστεθεί το απαραίτητο http:// ;"
+
+msgid "advlink_dlg_list"
+msgstr "Λίστα συνδέσμων"
+
+msgid "advlink_dlg_general_tab"
+msgstr "Γενικά"
+
+msgid "advlink_dlg_popup_tab"
+msgstr "Popup"
+
+msgid "advlink_dlg_events_tab"
+msgstr "Γεγονότα"
+
+msgid "advlink_dlg_advanced_tab"
+msgstr "Για προχωρημένους"
+
+msgid "advlink_dlg_general_props"
+msgstr "Γενικές ιδιότητες"
+
+msgid "advlink_dlg_popup_props"
+msgstr "Ιδιότητες Popup"
+
+msgid "advlink_dlg_event_props"
+msgstr "Γεγονότα"
+
+msgid "advlink_dlg_advanced_props"
+msgstr "Προχωρημένες ιδιότητες"
+
+msgid "advlink_dlg_popup_opts"
+msgstr "Επιλογές"
+
+msgid "advlink_dlg_anchor_names"
+msgstr "Anchors"
+
+msgid "advlink_dlg_target_same"
+msgstr "Άνοιγμα σε ίδιο παράθυρο / frame"
+
+msgid "advlink_dlg_target_parent"
+msgstr "Άνοιγμα στο γονικό window / frame"
+
+msgid "advlink_dlg_target_top"
+msgstr "Άνοιγμα στο πιο πάνω frame (αντικαθιστά όλα τα frames)"
+
+msgid "advlink_dlg_target_blank"
+msgstr "Άνοιγμα σε νέο παράθυρο"
+
+msgid "advlink_dlg_popup"
+msgstr "Javascript popup"
+
+msgid "advlink_dlg_popup_url"
+msgstr "Διαδρομή URL του Popup"
+
+msgid "advlink_dlg_popup_name"
+msgstr "Όνομα παραθύρου"
+
+msgid "advlink_dlg_popup_return"
+msgstr "Εισαγωγή 'return false'"
+
+msgid "advlink_dlg_popup_scrollbars"
+msgstr "Εμφάνιση ράβδων κύλισης"
+
+msgid "advlink_dlg_popup_statusbar"
+msgstr "Εμφάνιση γραμμής κατάστασης"
+
+msgid "advlink_dlg_popup_toolbar"
+msgstr "Εμφάνιση γραμμών εργαλείων"
+
+msgid "advlink_dlg_popup_menubar"
+msgstr "Εμφάνιση μενού"
+
+msgid "advlink_dlg_popup_location"
+msgstr "Εμφάνιση γραμμής τοποθεσίας"
+
+msgid "advlink_dlg_popup_resizable"
+msgstr "Να αλλάζουν οι διαστάσεις του παραθύρου"
+
+msgid "advlink_dlg_popup_dependent"
+msgstr "Εξαρτώμενο (μόνο για Mozilla/Firefox)"
+
+msgid "advlink_dlg_popup_size"
+msgstr "Μέγεθος"
+
+msgid "advlink_dlg_popup_position"
+msgstr "Θέση (X/Y)"
+
+msgid "advlink_dlg_id"
+msgstr "Id"
+
+msgid "advlink_dlg_style"
+msgstr "Στυλ"
+
+msgid "advlink_dlg_classes"
+msgstr "Κλάσεις"
+
+msgid "advlink_dlg_target_name"
+msgstr "Όνομα στόχου"
+
+msgid "advlink_dlg_langdir"
+msgstr "Κατεύθυνση γλώσσας"
+
+msgid "advlink_dlg_target_langcode"
+msgstr "Γλώσσα στόχου"
+
+msgid "advlink_dlg_langcode"
+msgstr "Κωδικός γλώσσας"
+
+msgid "advlink_dlg_encoding"
+msgstr "Κωδικοποίηση χαρακτήρων στόχου"
+
+msgid "advlink_dlg_mime"
+msgstr "Τύπος MIME στόχου"
+
+msgid "advlink_dlg_rel"
+msgstr "Σχέση σελίδας προς στόχο (REL)"
+
+msgid "advlink_dlg_rev"
+msgstr "Σχέση στόχου προς σελίδα (REV)"
+
+msgid "advlink_dlg_tabindex"
+msgstr "Tabindex"
+
+msgid "advlink_dlg_accesskey"
+msgstr "Πλήκτρο πρόσβασης"
+
+msgid "advlink_dlg_ltr"
+msgstr "Αριστερά προς δεξιά"
+
+msgid "advlink_dlg_rtl"
+msgstr "Δεξιά προς αριστερά"
+
+msgid "advlink_dlg_link_list"
+msgstr "Λίστα συνδέσμων"
+
+msgid "xhtmlxtras_cite_desc"
+msgstr "Citation"
+
+msgid "xhtmlxtras_abbr_desc"
+msgstr "Συντομογραφία"
+
+msgid "xhtmlxtras_acronym_desc"
+msgstr "Ακρονύμιο"
+
+msgid "xhtmlxtras_del_desc"
+msgstr "Διαγραφή"
+
+msgid "xhtmlxtras_ins_desc"
+msgstr "Εισαγωγή"
+
+msgid "xhtmlxtras_attribs_desc"
+msgstr "Εισαγωγή/επεξεργασία ιδιοτήτων"
+
+msgid "xhtmlxtras_cite_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_cite_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_abbr_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_abbr_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_acronym_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_acronym_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_del_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_del_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_ins_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_ins_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_attribs_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_attribs_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_dlg_attribute_label_title"
+msgstr "Τίτλος"
+
+msgid "xhtmlxtras_dlg_attribute_label_id"
+msgstr "ID"
+
+msgid "xhtmlxtras_dlg_attribute_label_class"
+msgstr "Κλάση"
+
+msgid "xhtmlxtras_dlg_attribute_label_style"
+msgstr "Στυλ"
+
+msgid "xhtmlxtras_dlg_attribute_label_cite"
+msgstr "Cite"
+
+msgid "xhtmlxtras_dlg_attribute_label_datetime"
+msgstr "Ημέρα/Ώρα"
+
+msgid "xhtmlxtras_dlg_attribute_label_langdir"
+msgstr "Κατεύθυνση κειμένου"
+
+msgid "xhtmlxtras_dlg_attribute_option_ltr"
+msgstr "Αριστερά προς δεξιά"
+
+msgid "xhtmlxtras_dlg_attribute_option_rtl"
+msgstr "Δεξιά προς αριστερά"
+
+msgid "xhtmlxtras_dlg_attribute_label_langcode"
+msgstr "Γλώσσα"
+
+msgid "xhtmlxtras_dlg_attribute_label_tabindex"
+msgstr "TabIndex"
+
+msgid "xhtmlxtras_dlg_attribute_label_accesskey"
+msgstr "Πλήκτρο πρόσβασης"
+
+msgid "xhtmlxtras_dlg_attribute_events_tab"
+msgstr "Γεγονότα"
+
+msgid "xhtmlxtras_dlg_attribute_attrib_tab"
+msgstr "Ιδιότητες"
+
+msgid "xhtmlxtras_dlg_general_tab"
+msgstr "Γενικά"
+
+msgid "xhtmlxtras_dlg_attrib_tab"
+msgstr "Ιδιότητες"
+
+msgid "xhtmlxtras_dlg_events_tab"
+msgstr "Γεγονότα"
+
+msgid "xhtmlxtras_dlg_fieldset_general_tab"
+msgstr "Γενικές Ρυθμίσεις"
+
+msgid "xhtmlxtras_dlg_fieldset_attrib_tab"
+msgstr "Ιδιότητες στοιχείου"
+
+msgid "xhtmlxtras_dlg_fieldset_events_tab"
+msgstr "Γεγονότα στοιχείου"
+
+msgid "xhtmlxtras_dlg_title_ins_element"
+msgstr "Εισαγωγή στοιχείου"
+
+msgid "xhtmlxtras_dlg_title_del_element"
+msgstr "Διαγραφή στοιχείου"
+
+msgid "xhtmlxtras_dlg_title_acronym_element"
+msgstr "Ακρονύμιο στοιχείου"
+
+msgid "xhtmlxtras_dlg_title_abbr_element"
+msgstr "Συντομογραφία στοιχείου"
+
+msgid "xhtmlxtras_dlg_title_cite_element"
+msgstr "Citation στοιχείου"
+
+msgid "xhtmlxtras_dlg_remove"
+msgstr "Αφαίρεση"
+
+msgid "xhtmlxtras_dlg_insert_date"
+msgstr "Εισαγωγή τρέχουσας ημέρας/ώρας"
+
+msgid "xhtmlxtras_dlg_option_ltr"
+msgstr "Αριστερά προς δεξιά"
+
+msgid "xhtmlxtras_dlg_option_rtl"
+msgstr "Δεξιά προς αριστερά"
+
+msgid "xhtmlxtras_dlg_attribs_title"
+msgstr "Εισαγωγή/επεξεργασία ιδιοτήτων"
+
+msgid "style_desc"
+msgstr "Επεξεργασία Στυλ CSS"
+
+msgid "style_delta_width"
+msgstr ""
+
+msgid "style_delta_height"
+msgstr ""
+
+msgid "style_dlg_title"
+msgstr "Επεξεργασία Στυλ CSS"
+
+msgid "style_dlg_apply"
+msgstr "Εφαρμογή"
+
+msgid "style_dlg_text_tab"
+msgstr "Κείμενο"
+
+msgid "style_dlg_background_tab"
+msgstr "Φόντο"
+
+msgid "style_dlg_block_tab"
+msgstr "Μπλοκ"
+
+msgid "style_dlg_box_tab"
+msgstr "Κουτί"
+
+msgid "style_dlg_border_tab"
+msgstr "Πλαίσιο"
+
+msgid "style_dlg_list_tab"
+msgstr "Λίστα"
+
+msgid "style_dlg_positioning_tab"
+msgstr "Τοποθέτηση"
+
+msgid "style_dlg_text_props"
+msgstr "Κείμενο"
+
+msgid "style_dlg_text_font"
+msgstr "Γραμματοσειρά"
+
+msgid "style_dlg_text_size"
+msgstr "Μέγεθος γραμμάτων"
+
+msgid "style_dlg_text_weight"
+msgstr "Βάρος"
+
+msgid "style_dlg_text_style"
+msgstr "Στυλ"
+
+msgid "style_dlg_text_variant"
+msgstr "Παραλλαγή"
+
+msgid "style_dlg_text_lineheight"
+msgstr "Ύψος γραμμής"
+
+msgid "style_dlg_text_case"
+msgstr "Κεφ./Μικρά"
+
+msgid "style_dlg_text_color"
+msgstr "Χρώμα"
+
+msgid "style_dlg_text_decoration"
+msgstr "Διακόσμηση"
+
+msgid "style_dlg_text_overline"
+msgstr "Υπεργράμμιση"
+
+msgid "style_dlg_text_underline"
+msgstr "Υπογράμμιση"
+
+msgid "style_dlg_text_striketrough"
+msgstr "Διαγράμμιση"
+
+msgid "style_dlg_text_blink"
+msgstr "Να αναβοσβήνει"
+
+msgid "style_dlg_text_none"
+msgstr "Καμία"
+
+msgid "style_dlg_background_color"
+msgstr "Χρώμα φόντου"
+
+msgid "style_dlg_background_image"
+msgstr "Εικόνα φόντου"
+
+msgid "style_dlg_background_repeat"
+msgstr "Επανάληψη"
+
+msgid "style_dlg_background_attachment"
+msgstr "Προσάρτημα"
+
+msgid "style_dlg_background_hpos"
+msgstr "Οριζόντια θέση"
+
+msgid "style_dlg_background_vpos"
+msgstr "Κατακόρυφη θέση"
+
+msgid "style_dlg_block_wordspacing"
+msgstr "Απόσταση λέξεων"
+
+msgid "style_dlg_block_letterspacing"
+msgstr "Απόσταση χαρακτήρων"
+
+msgid "style_dlg_block_vertical_alignment"
+msgstr "Κατακόρυφη στοίχιση"
+
+msgid "style_dlg_block_text_align"
+msgstr "Στοίχιση κειμένου"
+
+msgid "style_dlg_block_text_indent"
+msgstr "Εσοχή κειμένου"
+
+msgid "style_dlg_block_whitespace"
+msgstr "Κενός χώρος"
+
+msgid "style_dlg_block_display"
+msgstr "Εμφάνιση"
+
+msgid "style_dlg_box_width"
+msgstr "Πλάτος"
+
+msgid "style_dlg_box_height"
+msgstr "Ύψος"
+
+msgid "style_dlg_box_float"
+msgstr "Float"
+
+msgid "style_dlg_box_clear"
+msgstr "Clear"
+
+msgid "style_dlg_padding"
+msgstr "Γέμισμα"
+
+msgid "style_dlg_same"
+msgstr "Ίδιο για όλα"
+
+msgid "style_dlg_top"
+msgstr "Πάνω"
+
+msgid "style_dlg_right"
+msgstr "Δεξιά"
+
+msgid "style_dlg_bottom"
+msgstr "Κάτω"
+
+msgid "style_dlg_left"
+msgstr "Αριστερά"
+
+msgid "style_dlg_margin"
+msgstr "Περιθώριο"
+
+msgid "style_dlg_style"
+msgstr "Στυλ"
+
+msgid "style_dlg_width"
+msgstr "Πλάτος"
+
+msgid "style_dlg_height"
+msgstr "Ύψος"
+
+msgid "style_dlg_color"
+msgstr "Χρώμα"
+
+msgid "style_dlg_list_type"
+msgstr "Τύπος"
+
+msgid "style_dlg_bullet_image"
+msgstr "Εικόνα τελείας"
+
+msgid "style_dlg_position"
+msgstr "Θέση"
+
+msgid "style_dlg_positioning_type"
+msgstr "Τύπος"
+
+msgid "style_dlg_visibility"
+msgstr "Ορατότητα"
+
+msgid "style_dlg_zindex"
+msgstr "Z-index"
+
+msgid "style_dlg_overflow"
+msgstr "Υπερχείλιση"
+
+msgid "style_dlg_placement"
+msgstr "Τοποθέτηση"
+
+msgid "style_dlg_clip"
+msgstr "Clip"
+
+msgid "paste_paste_text_desc"
+msgstr "Επικόλληση ως απλό κείμενο"
+
+msgid "paste_paste_word_desc"
+msgstr "Επικόλληση από το Word"
+
+msgid "paste_selectall_desc"
+msgstr "Επιλογή όλων"
+
+msgid "paste_dlg_text_title"
+msgstr "Χρησιμοποιήστε CTRL+V για να κάνετε επικόλληση κειμένου στο παράθυρο."
+
+msgid "paste_dlg_text_linebreaks"
+msgstr "Να κρατηθούν τα linebreaks"
+
+msgid "paste_dlg_word_title"
+msgstr "Χρησιμοποιήστε CTRL+V για να κάνετε επικόλληση κειμένου στο παράθυρο."
+
+msgid "table_desc"
+msgstr "Εισαγωγή νέου πίνακα"
+
+msgid "table_row_before_desc"
+msgstr "Εισαγωγή γραμμής πριν"
+
+msgid "table_row_after_desc"
+msgstr "Εισαγωγή γραμμής μετά"
+
+msgid "table_delete_row_desc"
+msgstr "Διαγραφή γραμμής"
+
+msgid "table_col_before_desc"
+msgstr "Εισαγωγή στήλης πριν"
+
+msgid "table_col_after_desc"
+msgstr "Εισαγωγή στήλης μετά"
+
+msgid "table_delete_col_desc"
+msgstr "Διαγραφή στήλης"
+
+msgid "table_split_cells_desc"
+msgstr "Διαχωρισμός συγχωνευμένων κελιών πίνακα"
+
+msgid "table_merge_cells_desc"
+msgstr "Συγχώνευση κελιών πίνακα"
+
+msgid "table_row_desc"
+msgstr "Ιδιότητες γραμμής πίνακα"
+
+msgid "table_cell_desc"
+msgstr "Ιδιότητες κελιού πίνακα"
+
+msgid "table_props_desc"
+msgstr "Ιδιότητες πίνακα"
+
+msgid "table_paste_row_before_desc"
+msgstr "Επικόλληση γραμμής πίνακα πριν"
+
+msgid "table_paste_row_after_desc"
+msgstr "Επικόλληση γραμμής πίνακα μετά"
+
+msgid "table_cut_row_desc"
+msgstr "Αποκοπή γραμμής πίνακα"
+
+msgid "table_copy_row_desc"
+msgstr "Αντιγραφή γραμμής πίνακα"
+
+msgid "table_del"
+msgstr "Διαγραφή πίνακα"
+
+msgid "table_row"
+msgstr "Γραμμή"
+
+msgid "table_col"
+msgstr "Στήλη"
+
+msgid "table_cell"
+msgstr "Κελί"
+
+msgid "table_rowprops_delta_width"
+msgstr ""
+
+msgid "table_rowprops_delta_height"
+msgstr ""
+
+msgid "table_cellprops_delta_width"
+msgstr "60"
+
+msgid "table_cellprops_delta_height"
+msgstr ""
+
+msgid "table_table_delta_width"
+msgstr ""
+
+msgid "table_table_delta_height"
+msgstr ""
+
+msgid "table_merge_cells_delta_width"
+msgstr ""
+
+msgid "table_merge_cells_delta_height"
+msgstr ""
+
+msgid "table_dlg_general_tab"
+msgstr "Γενικά"
+
+msgid "table_dlg_advanced_tab"
+msgstr "Για προχωρημένους"
+
+msgid "table_dlg_general_props"
+msgstr "Γενικές ιδιότητες"
+
+msgid "table_dlg_advanced_props"
+msgstr "Προχωρημένες ιδιότητες"
+
+msgid "table_dlg_rowtype"
+msgstr "Γραμμή σε μέρος πίνακα"
+
+msgid "table_dlg_title"
+msgstr "Εισαγωγή/επεξεργασία πίνακα"
+
+msgid "table_dlg_width"
+msgstr "Πλάτος"
+
+msgid "table_dlg_height"
+msgstr "Ύψος"
+
+msgid "table_dlg_cols"
+msgstr "Στήλες"
+
+msgid "table_dlg_rows"
+msgstr "Γραμμές"
+
+msgid "table_dlg_cellspacing"
+msgstr "Απόσταση κελιών"
+
+msgid "table_dlg_cellpadding"
+msgstr "Γέμισμα κελιών"
+
+msgid "table_dlg_border"
+msgstr "Πλαίσιο"
+
+msgid "table_dlg_align"
+msgstr "Στοίχιση"
+
+msgid "table_dlg_align_default"
+msgstr "Προεπιλεγμένη"
+
+msgid "table_dlg_align_left"
+msgstr "Αριστερά"
+
+msgid "table_dlg_align_right"
+msgstr "Δεξιά"
+
+msgid "table_dlg_align_middle"
+msgstr "Κέντρο"
+
+msgid "table_dlg_row_title"
+msgstr "Ιδιότητες γραμμής πίνακα"
+
+msgid "table_dlg_cell_title"
+msgstr "Ιδιότητες κελιού πίνακα"
+
+msgid "table_dlg_cell_type"
+msgstr "Τύπος κελιού"
+
+msgid "table_dlg_valign"
+msgstr "Κατακόρυφη στοίχιση"
+
+msgid "table_dlg_align_top"
+msgstr "Πάνω"
+
+msgid "table_dlg_align_bottom"
+msgstr "Κάτω"
+
+msgid "table_dlg_bordercolor"
+msgstr "Χρώμα πλαισίου"
+
+msgid "table_dlg_bgcolor"
+msgstr "Χρώμα φόντου"
+
+msgid "table_dlg_merge_cells_title"
+msgstr "Συγχώνευση κελιών πίνακα"
+
+msgid "table_dlg_id"
+msgstr "Id"
+
+msgid "table_dlg_style"
+msgstr "Στυλ"
+
+msgid "table_dlg_langdir"
+msgstr "Κατεύθυνση γλώσσας"
+
+msgid "table_dlg_langcode"
+msgstr "Κωδικός γλώσσας"
+
+msgid "table_dlg_mime"
+msgstr "Τύπος MIME στόχου"
+
+msgid "table_dlg_ltr"
+msgstr "Αριστερά προς δεξιά"
+
+msgid "table_dlg_rtl"
+msgstr "Δεξιά προς αριστερά"
+
+msgid "table_dlg_bgimage"
+msgstr "Εικόνα φόντου"
+
+msgid "table_dlg_summary"
+msgstr "Περίληψη"
+
+msgid "table_dlg_td"
+msgstr "Δεδομένα"
+
+msgid "table_dlg_th"
+msgstr "Επικεφαλίδα"
+
+msgid "table_dlg_cell_cell"
+msgstr "Ενημέρωση τρέχοντος κελιού"
+
+msgid "table_dlg_cell_row"
+msgstr "Ενημέρωση όλων των κελιών της γραμμής"
+
+msgid "table_dlg_cell_all"
+msgstr "Ενημέρωση όλων των κελιών του πίνακα"
+
+msgid "table_dlg_row_row"
+msgstr "Ενημέρωση της τρέχουσας γραμμής"
+
+msgid "table_dlg_row_odd"
+msgstr "Ενημέρωση των μονών γραμμών του πίνακα"
+
+msgid "table_dlg_row_even"
+msgstr "Ενημέρωση των ζυγών γραμμών του πίνακα"
+
+msgid "table_dlg_row_all"
+msgstr "Ενημέρωση όλων των γραμμών του πίνακα"
+
+msgid "table_dlg_thead"
+msgstr "Κορυφή πίνακα"
+
+msgid "table_dlg_tbody"
+msgstr "Σώμα πίνακα"
+
+msgid "table_dlg_tfoot"
+msgstr "Βάση πίνακα"
+
+msgid "table_dlg_scope"
+msgstr "Εμβέλεια"
+
+msgid "table_dlg_rowgroup"
+msgstr "Ομάδα γραμμών"
+
+msgid "table_dlg_colgroup"
+msgstr "Ομάδα στηλών"
+
+msgid "table_dlg_col_limit"
+msgstr "Έχετε ξεπεράσει το όριο των στηλων που είναι {$cols}."
+
+msgid "table_dlg_row_limit"
+msgstr "Έχετε ξεπεράσει το όριο των γραμμών που είναι {$rows}."
+
+msgid "table_dlg_cell_limit"
+msgstr "Έχετε ξεπεράσει το όριο των κελιών που είναι {$cells}."
+
+msgid "table_dlg_missing_scope"
+msgstr "Σίγουρα θέλετε να συνεχίσετε χωρίς να έχετε καθορίσει την εμβέλεια του κελιού της κορυφής πίνακα. Χωρίς αυτή, μπορεί να είναι δύσκολο για κάποιους χρήστες με προβλήματα να καταλάβουν το περιεχόμενο του πίνακα."
+
+msgid "table_dlg_caption"
+msgstr "Επικεφαλίδα πίνακα"
+
+msgid "table_dlg_frame"
+msgstr "Frame"
+
+msgid "table_dlg_frame_none"
+msgstr "κανένα"
+
+msgid "table_dlg_frame_groups"
+msgstr "ομάδες"
+
+msgid "table_dlg_frame_rows"
+msgstr "γραμμές"
+
+msgid "table_dlg_frame_cols"
+msgstr "στήλες"
+
+msgid "table_dlg_frame_all"
+msgstr "όλα"
+
+msgid "table_dlg_rules"
+msgstr "Κανόνες"
+
+msgid "table_dlg_rules_void"
+msgstr "κενό"
+
+msgid "table_dlg_rules_above"
+msgstr "από πάνω"
+
+msgid "table_dlg_rules_below"
+msgstr "από κάτω"
+
+msgid "table_dlg_rules_hsides"
+msgstr "οριζόντιες πλευρές"
+
+msgid "table_dlg_rules_lhs"
+msgstr "αριστερή οριζόντια πλευρά"
+
+msgid "table_dlg_rules_rhs"
+msgstr "δεξιά οριζόντια πλευρά"
+
+msgid "table_dlg_rules_vsides"
+msgstr "κάθετες πλευρές"
+
+msgid "table_dlg_rules_box"
+msgstr "κουτί"
+
+msgid "table_dlg_rules_border"
+msgstr "πλαίσιο"
+
+msgid "autosave_unload_msg"
+msgstr "Οι αλλαγές που κάνατε θα χαθούν αν φύγετε σε άλλη σελίδα."
+
+msgid "fullscreen_desc"
+msgstr "Εναλλαγή πλήρους οθόνης"
+
+msgid "media_desc"
+msgstr "Εισαγωγή/επεξεργασία ενσωματωμένων media"
+
+msgid "media_edit"
+msgstr "Επεξεργασία ενσωματωμένων media"
+
+msgid "media_delta_width"
+msgstr "50"
+
+msgid "media_delta_height"
+msgstr ""
+
+msgid "media_dlg_title"
+msgstr "Εισαγωγή/επεξεργασία ενσωματωμένων media"
+
+msgid "media_dlg_general"
+msgstr "Γενικά"
+
+msgid "media_dlg_advanced"
+msgstr "Για προχωρημένους"
+
+msgid "media_dlg_file"
+msgstr "Αρχείο/URL"
+
+msgid "media_dlg_list"
+msgstr "Λίστα"
+
+msgid "media_dlg_size"
+msgstr "Διαστάσεις"
+
+msgid "media_dlg_preview"
+msgstr "Προεπισκόπηση"
+
+msgid "media_dlg_constrain_proportions"
+msgstr "Διατήρηση αναλογίας πλ. - ύψους"
+
+msgid "media_dlg_type"
+msgstr "Τύπος"
+
+msgid "media_dlg_id"
+msgstr "Id"
+
+msgid "media_dlg_name"
+msgstr "Όνομα"
+
+msgid "media_dlg_class_name"
+msgstr "Κλάση"
+
+msgid "media_dlg_vspace"
+msgstr "Απόσταση κάθετη"
+
+msgid "media_dlg_hspace"
+msgstr "Απόσταση οριζόντια"
+
+msgid "media_dlg_play"
+msgstr "Αυτόματο εκκίνηση"
+
+msgid "media_dlg_loop"
+msgstr "Επανάληψη"
+
+msgid "media_dlg_menu"
+msgstr "Εμφάνιση μενού"
+
+msgid "media_dlg_quality"
+msgstr "Ποιότητα"
+
+msgid "media_dlg_scale"
+msgstr "Κλίμακα"
+
+msgid "media_dlg_align"
+msgstr "Στοίχιση"
+
+msgid "media_dlg_salign"
+msgstr "SAlign"
+
+msgid "media_dlg_wmode"
+msgstr "WMode"
+
+msgid "media_dlg_bgcolor"
+msgstr "Φόντο"
+
+msgid "media_dlg_base"
+msgstr "Βάση"
+
+msgid "media_dlg_flashvars"
+msgstr "Μεταβλητές Flash"
+
+msgid "media_dlg_liveconnect"
+msgstr "SWLiveConnect"
+
+msgid "media_dlg_autohref"
+msgstr "AutoHREF"
+
+msgid "media_dlg_cache"
+msgstr "Μνήμη cache"
+
+msgid "media_dlg_hidden"
+msgstr "Κρυφό"
+
+msgid "media_dlg_controller"
+msgstr "Ελεγκτής"
+
+msgid "media_dlg_kioskmode"
+msgstr "Λειτουργία Kiosk"
+
+msgid "media_dlg_playeveryframe"
+msgstr "Παίξιμο όλων των καρέ"
+
+msgid "media_dlg_targetcache"
+msgstr "Μνήμη cache στόχου"
+
+msgid "media_dlg_correction"
+msgstr "Χωρίς διόρθωση"
+
+msgid "media_dlg_enablejavascript"
+msgstr "Ενεργοποίηση JavaScript"
+
+msgid "media_dlg_starttime"
+msgstr "Χρόνος έναρξης"
+
+msgid "media_dlg_endtime"
+msgstr "Χρόνος λήξης"
+
+msgid "media_dlg_href"
+msgstr "Href"
+
+msgid "media_dlg_qtsrcchokespeed"
+msgstr "Choke speed"
+
+msgid "media_dlg_target"
+msgstr "Στόχος"
+
+msgid "media_dlg_volume"
+msgstr "Ένταση"
+
+msgid "media_dlg_autostart"
+msgstr "Αυτόματη εκκίνηση"
+
+msgid "media_dlg_enabled"
+msgstr "Ενεργοποίηση"
+
+msgid "media_dlg_fullscreen"
+msgstr "Πλήρης οθόνη"
+
+msgid "media_dlg_invokeurls"
+msgstr "Κλήση URLs"
+
+msgid "media_dlg_mute"
+msgstr "Σίγαση"
+
+msgid "media_dlg_stretchtofit"
+msgstr "Επέκταση ώστε να χωρέσει"
+
+msgid "media_dlg_windowlessvideo"
+msgstr "Βίντεο χωρίς παράθυρο"
+
+msgid "media_dlg_balance"
+msgstr "Ισορροπία"
+
+msgid "media_dlg_baseurl"
+msgstr "URL βάσης"
+
+msgid "media_dlg_captioningid"
+msgstr "Captioning id"
+
+msgid "media_dlg_currentmarker"
+msgstr "Τρέχον σημάδι"
+
+msgid "media_dlg_currentposition"
+msgstr "Τρέχουσα θέση"
+
+msgid "media_dlg_defaultframe"
+msgstr "Προεπιλεγμένο καρέ"
+
+msgid "media_dlg_playcount"
+msgstr "Πόσες φορές θα παίξει"
+
+msgid "media_dlg_rate"
+msgstr "Ρυθμός"
+
+msgid "media_dlg_uimode"
+msgstr "Λειτουργία UI"
+
+msgid "media_dlg_flash_options"
+msgstr "Επιλογές Flash"
+
+msgid "media_dlg_qt_options"
+msgstr "Επιλογές Quicktime"
+
+msgid "media_dlg_wmp_options"
+msgstr "Επιλογές Windows media player"
+
+msgid "media_dlg_rmp_options"
+msgstr "Επιλογές Real media player"
+
+msgid "media_dlg_shockwave_options"
+msgstr "Επιλογές Shockwave"
+
+msgid "media_dlg_autogotourl"
+msgstr "Αυτόματη μετάβαση στο URL"
+
+msgid "media_dlg_center"
+msgstr "Κέντρο"
+
+msgid "media_dlg_imagestatus"
+msgstr "Κατάσταση εικόνας"
+
+msgid "media_dlg_maintainaspect"
+msgstr "Διατήρηση αναλογίας πλ. - ύψους"
+
+msgid "media_dlg_nojava"
+msgstr "Χωρίς java"
+
+msgid "media_dlg_prefetch"
+msgstr "Προφόρτωση"
+
+msgid "media_dlg_shuffle"
+msgstr "Τυχαία σειρά"
+
+msgid "media_dlg_console"
+msgstr "Κονσόλα"
+
+msgid "media_dlg_numloop"
+msgstr "Πόσες φορές θα παίξει"
+
+msgid "media_dlg_controls"
+msgstr "Χειριστήρια"
+
+msgid "media_dlg_scriptcallbacks"
+msgstr "Script callbacks"
+
+msgid "media_dlg_swstretchstyle"
+msgstr "Στυλ επέκτασης"
+
+msgid "media_dlg_swstretchhalign"
+msgstr "Οριζόντια επέκταση"
+
+msgid "media_dlg_swstretchvalign"
+msgstr "Κατακόρυφη επέκταση"
+
+msgid "media_dlg_sound"
+msgstr "Ήχος"
+
+msgid "media_dlg_progress"
+msgstr "Πρόοδος"
+
+msgid "media_dlg_qtsrc"
+msgstr "Πηγή αρχείου"
+
+msgid "media_dlg_qt_stream_warn"
+msgstr "Πηγές ροών rtsp θα πρέπει να προστεθούν στο πεδίο Πηγή QT κάτω από την καρτέλα Για προχωρημένους.\nΕπίσης καλό θα ήταν να προσθέσετε μια απλή (όχι ροής) πηγή.."
+
+msgid "media_dlg_align_top"
+msgstr "Πάνω"
+
+msgid "media_dlg_align_right"
+msgstr "Δεξιά"
+
+msgid "media_dlg_align_bottom"
+msgstr "Κάτω"
+
+msgid "media_dlg_align_left"
+msgstr "Αριστερά"
+
+msgid "media_dlg_align_center"
+msgstr "Κέντρο"
+
+msgid "media_dlg_align_top_left"
+msgstr "Πάνω αριστερά"
+
+msgid "media_dlg_align_top_right"
+msgstr "Πάνω δεξιά"
+
+msgid "media_dlg_align_bottom_left"
+msgstr "Κάτω αριστερά"
+
+msgid "media_dlg_align_bottom_right"
+msgstr "Κάτω δεξιά"
+
+msgid "media_dlg_flv_options"
+msgstr "Επιλογές βίντεο Flash"
+
+msgid "media_dlg_flv_scalemode"
+msgstr "Λειτουργία κλίμακας"
+
+msgid "media_dlg_flv_buffer"
+msgstr "Ενδιάμεση μνήμη"
+
+msgid "media_dlg_flv_startimage"
+msgstr "Εικόνα αρχής"
+
+msgid "media_dlg_flv_starttime"
+msgstr "Χρόνος έναρξης"
+
+msgid "media_dlg_flv_defaultvolume"
+msgstr "Προεπιλεγμένη ένταση"
+
+msgid "media_dlg_flv_hiddengui"
+msgstr "Κρυμμένο GUI"
+
+msgid "media_dlg_flv_autostart"
+msgstr "Αυτόματη εκκίνηση"
+
+msgid "media_dlg_flv_loop"
+msgstr "Επανάληψη"
+
+msgid "media_dlg_flv_showscalemodes"
+msgstr "Εμφάνιση λειτουργιών κλίμακας"
+
+msgid "media_dlg_flv_smoothvideo"
+msgstr "Ομαλοποίηση εικόνας βίντεο"
+
+msgid "media_dlg_flv_jscallback"
+msgstr "JS Callback"
+
+msgid "fullpage_desc"
+msgstr "Ιδιότητες εγγράφου"
+
+msgid "fullpage_delta_width"
+msgstr "140"
+
+msgid "fullpage_delta_height"
+msgstr ""
+
+msgid "fullpage_dlg_title"
+msgstr "Ιδιότητες εγγράφου"
+
+msgid "fullpage_dlg_meta_tab"
+msgstr "Γενικά"
+
+msgid "fullpage_dlg_appearance_tab"
+msgstr "Εμφάνιση"
+
+msgid "fullpage_dlg_advanced_tab"
+msgstr "Για προχωρημένους"
+
+msgid "fullpage_dlg_meta_props"
+msgstr "Μετα-πληροφορίες"
+
+msgid "fullpage_dlg_langprops"
+msgstr "Γλώσσα και κωδικοποίηση"
+
+msgid "fullpage_dlg_meta_title"
+msgstr "Τίτλος"
+
+msgid "fullpage_dlg_meta_keywords"
+msgstr "Λέξεις κλειδιά"
+
+msgid "fullpage_dlg_meta_description"
+msgstr "Περιγραφή"
+
+msgid "fullpage_dlg_meta_robots"
+msgstr "Ρομπότ"
+
+msgid "fullpage_dlg_doctypes"
+msgstr "Doctype"
+
+msgid "fullpage_dlg_langcode"
+msgstr "Κωδικός γλώσσας"
+
+msgid "fullpage_dlg_langdir"
+msgstr "Κατεύθυνση γλώσσας"
+
+msgid "fullpage_dlg_ltr"
+msgstr "Αριστερά προς δεξιά"
+
+msgid "fullpage_dlg_rtl"
+msgstr "Δεξιά προς αριστερά"
+
+msgid "fullpage_dlg_xml_pi"
+msgstr "Δήλωση XML"
+
+msgid "fullpage_dlg_encoding"
+msgstr "Κωδικοποίηση χαρακτήρων"
+
+msgid "fullpage_dlg_appearance_bgprops"
+msgstr "Ιδιότητες φόντου"
+
+msgid "fullpage_dlg_appearance_marginprops"
+msgstr "Περιθώρια σώματος"
+
+msgid "fullpage_dlg_appearance_linkprops"
+msgstr "Χρώματα συνδέσμων"
+
+msgid "fullpage_dlg_appearance_textprops"
+msgstr "Ιδιότητες κειμένου"
+
+msgid "fullpage_dlg_bgcolor"
+msgstr "Χρώμα φόντου"
+
+msgid "fullpage_dlg_bgimage"
+msgstr "Εικόνα φόντου"
+
+msgid "fullpage_dlg_left_margin"
+msgstr "Αριστερό περιθώριο"
+
+msgid "fullpage_dlg_right_margin"
+msgstr "Δεξιό περιθώριο"
+
+msgid "fullpage_dlg_top_margin"
+msgstr "Πάνω περιθώριο"
+
+msgid "fullpage_dlg_bottom_margin"
+msgstr "Κάτω περιθώριο"
+
+msgid "fullpage_dlg_text_color"
+msgstr "Χρώμα κειμένου"
+
+msgid "fullpage_dlg_font_size"
+msgstr "Μέγεθος γραμμάτων"
+
+msgid "fullpage_dlg_font_face"
+msgstr "Γραμματοσειρά"
+
+msgid "fullpage_dlg_link_color"
+msgstr "Χρώμα συνδέσμου"
+
+msgid "fullpage_dlg_hover_color"
+msgstr "Χρώμα συνδέσμου (Hover)"
+
+msgid "fullpage_dlg_visited_color"
+msgstr "Χρώμα συνδέσμου (Visited)"
+
+msgid "fullpage_dlg_active_color"
+msgstr "Χρώμα συνδέσμου (Active)"
+
+msgid "fullpage_dlg_textcolor"
+msgstr "Χρώμα"
+
+msgid "fullpage_dlg_fontsize"
+msgstr "Μέγεθος γραμμάτων"
+
+msgid "fullpage_dlg_fontface"
+msgstr "Γραμματοσειρά"
+
+msgid "fullpage_dlg_meta_index_follow"
+msgstr "Καταχώρηση και να ακολουθηθούν οι σύνδεσμοι"
+
+msgid "fullpage_dlg_meta_index_nofollow"
+msgstr "Καταχώρηση και να μην ακολουθηθούν οι σύνδεσμοι"
+
+msgid "fullpage_dlg_meta_noindex_follow"
+msgstr "Χωρίς καταχώρηση και να ακολουθηθούν οι σύνδεσμοι"
+
+msgid "fullpage_dlg_meta_noindex_nofollow"
+msgstr "Χωρίς καταχώρηση και να μην ακολουθηθούν οι σύνδεσμοι"
+
+msgid "fullpage_dlg_appearance_style"
+msgstr "Ιδιότητες στυλ και αρχείου στυλ"
+
+msgid "fullpage_dlg_stylesheet"
+msgstr "Αρχείο στυλ"
+
+msgid "fullpage_dlg_style"
+msgstr "Στυλ"
+
+msgid "fullpage_dlg_author"
+msgstr "Συγγραφέας"
+
+msgid "fullpage_dlg_copyright"
+msgstr "Δικαίωμα κατασκευαστή"
+
+msgid "fullpage_dlg_add"
+msgstr "Προσθήκη στοιχείου"
+
+msgid "fullpage_dlg_remove"
+msgstr "Αφαίρεση επιλεγμένου στοιχείου"
+
+msgid "fullpage_dlg_moveup"
+msgstr "Μετακίνηση επιλεγμένου στοιχείου πάνω"
+
+msgid "fullpage_dlg_movedown"
+msgstr "Μετακίνηση επιλεγμένου στοιχείου κάτω"
+
+msgid "fullpage_dlg_head_elements"
+msgstr "Στοιχεία κεφαλής"
+
+msgid "fullpage_dlg_info"
+msgstr "Πληροφορίες"
+
+msgid "fullpage_dlg_add_title"
+msgstr "Στοιχείο τίτλου"
+
+msgid "fullpage_dlg_add_meta"
+msgstr "Στοιχείο μετα-πληροφορίας"
+
+msgid "fullpage_dlg_add_script"
+msgstr "Στοιχείο Script"
+
+msgid "fullpage_dlg_add_style"
+msgstr "Στοιχείο στυλ"
+
+msgid "fullpage_dlg_add_link"
+msgstr "Στοιχείο συνδέσμου"
+
+msgid "fullpage_dlg_add_base"
+msgstr "Στοιχείο βάσης"
+
+msgid "fullpage_dlg_add_comment"
+msgstr "Κόμβος σχολίου"
+
+msgid "fullpage_dlg_title_element"
+msgstr "Στοιχείο τίτλου"
+
+msgid "fullpage_dlg_script_element"
+msgstr "Στοιχείο Script"
+
+msgid "fullpage_dlg_style_element"
+msgstr "Στοιχείο στυλ"
+
+msgid "fullpage_dlg_base_element"
+msgstr "Στοιχείο βάσης"
+
+msgid "fullpage_dlg_link_element"
+msgstr "Στοιχείο συνδέσμου"
+
+msgid "fullpage_dlg_meta_element"
+msgstr "Στοιχείο μετα-πληροφορίας"
+
+msgid "fullpage_dlg_comment_element"
+msgstr "Σχόλιο"
+
+msgid "fullpage_dlg_src"
+msgstr "Πηγή"
+
+msgid "fullpage_dlg_language"
+msgstr "Γλώσσα"
+
+msgid "fullpage_dlg_href"
+msgstr "Href"
+
+msgid "fullpage_dlg_target"
+msgstr "Στόχος"
+
+msgid "fullpage_dlg_type"
+msgstr "Τύπος"
+
+msgid "fullpage_dlg_charset"
+msgstr "Σετ χαρακτήρων"
+
+msgid "fullpage_dlg_defer"
+msgstr "Defer"
+
+msgid "fullpage_dlg_media"
+msgstr "Media"
+
+msgid "fullpage_dlg_properties"
+msgstr "Ιδιότητες"
+
+msgid "fullpage_dlg_name"
+msgstr "Όνομα"
+
+msgid "fullpage_dlg_value"
+msgstr "Τιμή"
+
+msgid "fullpage_dlg_content"
+msgstr "Περιεχόμενο"
+
+msgid "fullpage_dlg_rel"
+msgstr "Rel"
+
+msgid "fullpage_dlg_rev"
+msgstr "Rev"
+
+msgid "fullpage_dlg_hreflang"
+msgstr "Γλώσσα Href"
+
+msgid "fullpage_dlg_general_props"
+msgstr "Γενικά"
+
+msgid "fullpage_dlg_advanced_props"
+msgstr "Για προχωρημένους"
+
+msgid "template_desc"
+msgstr "Εισαγωγή περιεχομένου για προκαθορισμένο πρότυπο"
+
+msgid "template_dlg_title"
+msgstr "Πρότυπα"
+
+msgid "template_dlg_label"
+msgstr "Πρότυπο"
+
+msgid "template_dlg_desc_label"
+msgstr "Περιγραφή"
+
+msgid "template_dlg_desc"
+msgstr "Εισαγωγή περιεχομένου για προκαθορισμένο πρότυπο"
+
+msgid "template_dlg_select"
+msgstr "Επιλογή προτύπου"
+
+msgid "template_dlg_preview"
+msgstr "Προεπισκόπηση"
+
+msgid "template_dlg_warning"
+msgstr "Προσοχή : Ενημερώνοντας ένα πρότυπο με ένα άλλο, μπορεί να προκαλέσει απώλεια δεδομένων."
+
+msgid "template_dlg_mdate_format"
+msgstr "%Y-%m-%d %H:%M:%S"
+
+msgid "template_dlg_cdate_format"
+msgstr "%Y-%m-%d %H:%M:%S"
+
+msgid "template_dlg_months_long"
+msgstr "Ιανουάριος,Φεβρουάριος,Μάρτιος,Απρίλιος,Μάιος,Ιούνιος,Ιούλιος,Αύγουστος,Σεπτέμβριος,Οκτώβριος,Νοέμβριος,Δεκέμβριος"
+
+msgid "template_dlg_months_short"
+msgstr "Ιαν,Φεβ,Μάρ,Απρ,Μάι,Ιούν,Ιούλ,Αύγ,Σεπ,Οκτ,Νοέ,Δεκ"
+
+msgid "template_dlg_day_long"
+msgstr "Κυριακή,Δευτέρα,Τρίτη,Τετάρτη,Πέμπτη,Παρασκευή,Σάββατο"
+
+msgid "template_dlg_day_short"
+msgstr "Κυ,Δε,Τρ,Τετ,Πέμ,Παρ,Σαβ"
+
+msgid "visualchars_desc"
+msgstr "Οπτικοί χαρακτήρες ελέγχου ναι/όχι."
+
+msgid "spellchecker_desc"
+msgstr "Εναλλαγή ορθογραφικού ελέγχου"
+
+msgid "spellchecker_menu"
+msgstr "Ρυθμίσεις ορθογραφικού ελέγχου"
+
+msgid "spellchecker_ignore_word"
+msgstr "Παράβλεψη λέξης"
+
+msgid "spellchecker_ignore_words"
+msgstr "Παράβλεψη όλων"
+
+msgid "spellchecker_langs"
+msgstr "Γλώσσες"
+
+msgid "spellchecker_wait"
+msgstr "Παρακαλώ περιμένετε..."
+
+msgid "spellchecker_sug"
+msgstr "Προτάσεις"
+
+msgid "spellchecker_no_sug"
+msgstr "Χωρίς προτάσεις"
+
+msgid "spellchecker_no_mpell"
+msgstr "Σωστή ορθογρφία."
+
+msgid "pagebreak_desc"
+msgstr "Εισαγωγή αλλαγής σελίδας."
+

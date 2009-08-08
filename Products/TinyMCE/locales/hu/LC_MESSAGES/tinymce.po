@@ -1,271 +1,271 @@
-# This is the Dutch language pack for TinyMCE.
-# Version 10.5
+# Magyar fordítás a TinyMCE-hez.
+# Version 10.1
 #
-# janwalhof
+# Kovács Zsolt
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2009-08-06 00:00+0000\n"
-"Last-Translator: janwalhof\n"
-"Language-Team: janwalhof\n"
+"PO-Revision-Date: 2009-08-01 00:00+0000\n"
+"Last-Translator: Kovács Zsolt\n"
+"Language-Team: Kovács Zsolt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Language-Code: nl\n"
-"Language-Name: Dutch\n"
+"Language-Code: hu\n"
+"Language-Name: Hungarian\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: tinymce\n"
 
 msgid "common_edit_confirm"
-msgstr "Weet u zeker dat u tekst in WYSIWYG mode wilt bewerken in dit tekstveld?"
+msgstr "Használni akarja a WYSIWYG módot ebben a szövegdobozban?"
 
 msgid "common_apply"
-msgstr "Toepassen"
+msgstr "Alkalmaz"
 
 msgid "common_insert"
-msgstr "Invoegen"
+msgstr "Beszúr"
 
 msgid "common_update"
-msgstr "Bijwerken"
+msgstr "Frissít"
 
 msgid "common_cancel"
-msgstr "Annuleren"
+msgstr "Mégse"
 
 msgid "common_close"
-msgstr "Sluiten"
+msgstr "Bezár"
 
 msgid "common_browse"
-msgstr "Bladeren"
+msgstr "Tallóz"
 
 msgid "common_class_name"
-msgstr "Klasse"
+msgstr "Osztály"
 
 msgid "common_not_set"
-msgstr "- Standaard -"
+msgstr "-- Nincs megadva --"
 
 msgid "common_clipboard_msg"
-msgstr "Kopiëren/knippen/plakken is niet beschikbaar in Mozilla en Firefox.\nWilt u meer informatie over deze beperking?"
+msgstr "A Másolás/Kivágás/Beszúrás funkciók nem elérhetők Mozilla és Firefox alatt.\nKíván többet tudni erről a témáról?"
 
 msgid "common_clipboard_no_support"
-msgstr "Kopiëren/knippen/plakken wordt niet ondersteund door uw browser, gebruik hiervoor de sneltoetsen."
+msgstr "Jelenleg nem támogatja a böngészője, használja a billentyűkombinációkat helyette."
 
 msgid "common_popup_blocked"
-msgstr "U zult uw popup-blocker tijdelijk moeten uitschakelen voor deze website om gebruik te kunnen maken van alle functies van deze teksteditor."
+msgstr "A felugró ablakok tiltása miatt nem tudtunk megjeleníteni egy, az alkalmazáshoz szükséges ablakot. Engedélyezze a böngészőjében a felugró ablakokat, hogy minden funkciót használhasson."
 
 msgid "common_invalid_data"
-msgstr "Fout: Er zijn ongeldige waardes ingevoerd, deze zijn rood gemarkeerd."
+msgstr "Hiba: Érvénytelen adatok, pirossal jelölve."
 
 msgid "common_more_colors"
-msgstr "Meer kleuren"
+msgstr "Több szín"
 
 msgid "simple_bold_desc"
-msgstr "Vet (Ctrl+B)"
+msgstr "Félkövér (Ctrl+B)"
 
 msgid "simple_italic_desc"
-msgstr "Cursief (Ctrl+I)"
+msgstr "Dőlt (Ctrl+I)"
 
 msgid "simple_underline_desc"
-msgstr "Onderstrepen (Ctrl+U)"
+msgstr "Aláhúzott (Ctrl+U)"
 
 msgid "simple_striketrough_desc"
-msgstr "Doorhalen"
+msgstr "Áthúzott"
 
 msgid "simple_bullist_desc"
-msgstr "Opsommingstekens"
+msgstr "Felsorolásos lista"
 
 msgid "simple_numlist_desc"
-msgstr "Nummering"
+msgstr "Sorrendezett lista"
 
 msgid "simple_undo_desc"
-msgstr "Ongedaan maken (Ctrl+Z)"
+msgstr "Visszavon (Ctrl+Z)"
 
 msgid "simple_redo_desc"
-msgstr "Herhalen (Ctrl+Y)"
+msgstr "Mégis végrehajt (Ctrl+Y)"
 
 msgid "simple_cleanup_desc"
-msgstr "Code opruimen"
+msgstr "Rendetlen kód tisztítása"
 
 msgid "advanced_style_select"
-msgstr "Stijlen"
+msgstr "Stílusok"
 
 msgid "advanced_font_size"
-msgstr "Tekengrootte"
+msgstr "Betűméret"
 
 msgid "advanced_fontdefault"
-msgstr "Lettertype"
+msgstr "Betűtípus"
 
 msgid "advanced_block"
-msgstr "Opmaak"
+msgstr "Formátum"
 
 msgid "advanced_paragraph"
-msgstr "Alinea"
+msgstr "Bekezdés"
 
 msgid "advanced_div"
 msgstr "Div"
 
 msgid "advanced_address"
-msgstr "Adres"
+msgstr "Cím"
 
 msgid "advanced_pre"
-msgstr "Vaste opmaak"
+msgstr "Előformázott"
 
 msgid "advanced_h1"
-msgstr "Kop 1"
+msgstr "Címsor 1"
 
 msgid "advanced_h2"
-msgstr "Kop 2"
+msgstr "Címsor 2"
 
 msgid "advanced_h3"
-msgstr "Kop 3"
+msgstr "Címsor 3"
 
 msgid "advanced_h4"
-msgstr "Kop 4"
+msgstr "Címsor 4"
 
 msgid "advanced_h5"
-msgstr "Kop 5"
+msgstr "Címsor 5"
 
 msgid "advanced_h6"
-msgstr "Kop 6"
+msgstr "Címsor 6"
 
 msgid "advanced_blockquote"
-msgstr "Citaat"
+msgstr "Idézet"
 
 msgid "advanced_code"
-msgstr "Code"
+msgstr "Kód"
 
 msgid "advanced_samp"
-msgstr "Codevoorbeeld"
+msgstr "Kód minta"
 
 msgid "advanced_dt"
-msgstr "Definitieterm"
+msgstr "Definiált kifejezés a definíciós listában"
 
 msgid "advanced_dd"
-msgstr "Definitiebeschrijving"
+msgstr "Definíció a definíciós listában"
 
 msgid "advanced_bold_desc"
-msgstr "Vet (Ctrl+B)"
+msgstr "Félkövér (Ctrl+B)"
 
 msgid "advanced_italic_desc"
-msgstr "Cursief (Ctrl+I)"
+msgstr "Dőlt (Ctrl+I)"
 
 msgid "advanced_underline_desc"
-msgstr "Onderstrepen (Ctrl+U)"
+msgstr "Aláhúzott (Ctrl+U)"
 
 msgid "advanced_striketrough_desc"
-msgstr "Doorhalen"
+msgstr "Áthúzott"
 
 msgid "advanced_justifyleft_desc"
-msgstr "Links uitlijnen"
+msgstr "Balra zárt"
 
 msgid "advanced_justifycenter_desc"
-msgstr "Centreren"
+msgstr "Középre zárt"
 
 msgid "advanced_justifyright_desc"
-msgstr "Rechts uitlijnen"
+msgstr "Jobbra zárt"
 
 msgid "advanced_justifyfull_desc"
-msgstr "Uitvullen"
+msgstr "Sorkizárt"
 
 msgid "advanced_bullist_desc"
-msgstr "Opsommingstekens"
+msgstr "Rendezetlen lista"
 
 msgid "advanced_numlist_desc"
-msgstr "Nummering"
+msgstr "Rendezett lista"
 
 msgid "advanced_outdent_desc"
-msgstr "Inspringing verkleinen"
+msgstr "Behúzás csökkentése"
 
 msgid "advanced_indent_desc"
-msgstr "Inspringing vergroten"
+msgstr "Behúzás növelése"
 
 msgid "advanced_undo_desc"
-msgstr "Ongedaan maken (Ctrl+Z)"
+msgstr "Visszavon (Ctrl+Z)"
 
 msgid "advanced_redo_desc"
-msgstr "Herhalen (Ctrl+Y)"
+msgstr "Mégis végrehajt (Ctrl+Y)"
 
 msgid "advanced_link_desc"
-msgstr "Link invoegen/bewerken"
+msgstr "Link beszúrása/szerkesztése"
 
 msgid "advanced_unlink_desc"
-msgstr "Link verwijderen"
+msgstr "Link megszüntetése"
 
 msgid "advanced_image_desc"
-msgstr "Afbeelding invoegen/bewerken"
+msgstr "Kép beszúrása/szerkesztése"
 
 msgid "advanced_cleanup_desc"
-msgstr "Code opruimen"
+msgstr "Rendetlen kód takarítása"
 
 msgid "advanced_code_desc"
-msgstr "HTML bron bewerken"
+msgstr "HTML forrás szerkesztése"
 
 msgid "advanced_sub_desc"
-msgstr "Subscript"
+msgstr "Alsó index"
 
 msgid "advanced_sup_desc"
-msgstr "Superscript"
+msgstr "Felső index"
 
 msgid "advanced_hr_desc"
-msgstr "Scheidingslijn invoegen"
+msgstr "Vízszintes elválasztó beszúrása"
 
 msgid "advanced_removeformat_desc"
-msgstr "Opmaak verwijderen"
+msgstr "Formázás eltávolítása"
 
 msgid "advanced_custom1_desc"
-msgstr "Uw eigen beschrijving hier"
+msgstr "Az ön egyedi leírása"
 
 msgid "advanced_forecolor_desc"
-msgstr "Tekstkleur"
+msgstr "Szövegszín választása"
 
 msgid "advanced_backcolor_desc"
-msgstr "Tekstmarkeringskleur"
+msgstr "Háttérszín választása"
 
 msgid "advanced_charmap_desc"
-msgstr "Symbool invoegen"
+msgstr "Speciális karakter beszúrása"
 
 msgid "advanced_visualaid_desc"
-msgstr "Hulplijnen weergeven"
+msgstr "Vezetővonalak/nem látható elemek ki-/bekapcsolása"
 
 msgid "advanced_anchor_desc"
-msgstr "Anker invoegen/bewerken"
+msgstr "Horgony beszúrása/szerkesztése"
 
 msgid "advanced_cut_desc"
-msgstr "Knippen"
+msgstr "Kivágás"
 
 msgid "advanced_copy_desc"
-msgstr "Kopiëren"
+msgstr "Másolás"
 
 msgid "advanced_paste_desc"
-msgstr "Plakken"
+msgstr "Beszúrás"
 
 msgid "advanced_image_props_desc"
-msgstr "Afbeeldingseigenschappen"
+msgstr "Kép tulajdonságai"
 
 msgid "advanced_newdocument_desc"
-msgstr "Nieuw document"
+msgstr "Új dokumentum"
 
 msgid "advanced_help_desc"
-msgstr "Help"
+msgstr "Segítség"
 
 msgid "advanced_blockquote_desc"
-msgstr "Citaat"
+msgstr "Idézet"
 
 msgid "advanced_clipboard_msg"
-msgstr "Kopiëren/knippen/plakken is niet beschikbaar in Mozilla en Firefox.\nWilt u meer informatie over deze beperking?"
+msgstr "A Másolás/Kivágás/Beszúrás funkciók nem elérhetők Mozilla és Firefox alatt. Kíván többet tudni erről a témáról?"
 
 msgid "advanced_path"
-msgstr "Pad"
+msgstr "Útvonal"
 
 msgid "advanced_newdocument"
-msgstr "Weet u zeker dat u alle inhoud wilt wissen?"
+msgstr "Biztosan törli az eddigi tartalmat?"
 
 msgid "advanced_toolbar_focus"
-msgstr "Spring naar werkbalk - Alt+Q, Spring naar tekst - Alt-Z, Spring naar elementpad - Alt-X"
+msgstr "Eszközgombokra ugrás - Alt+Q, Szerkesztőhöz ugrás - Alt-Z, Elemútvonalhoz ugrás - Alt-X"
 
 msgid "advanced_more_colors"
-msgstr "Meer kleuren"
+msgstr "Több szín"
 
 msgid "advanced_image_delta_width"
 msgstr ""
@@ -298,235 +298,235 @@ msgid "advanced_anchor_delta_height"
 msgstr ""
 
 msgid "advanced_dlg_about_title"
-msgstr "Over TinyMCE"
+msgstr "A TinyMCE-ről"
 
 msgid "advanced_dlg_about_general"
-msgstr "Info"
+msgstr "Rólunk"
 
 msgid "advanced_dlg_about_help"
-msgstr "Help"
+msgstr "Segítség"
 
 msgid "advanced_dlg_about_license"
-msgstr "Licentie"
+msgstr "Licensz"
 
 msgid "advanced_dlg_about_plugins"
-msgstr "Invoegtoepassingen"
+msgstr "Pluginok"
 
 msgid "advanced_dlg_about_plugin"
-msgstr "Invoegtoepassing"
+msgstr "Plugin"
 
 msgid "advanced_dlg_about_author"
-msgstr "Auteur"
+msgstr "Szerző"
 
 msgid "advanced_dlg_about_version"
-msgstr "Versie"
+msgstr "Verzió"
 
 msgid "advanced_dlg_about_loaded"
-msgstr "Geladen Invoegtoepassingen"
+msgstr "Betöltött pluginok"
 
 msgid "advanced_dlg_anchor_title"
-msgstr "Anker invoegen/bewerken"
+msgstr "Horgony beszúrása/szerkesztése"
 
 msgid "advanced_dlg_anchor_name"
-msgstr "Ankernaam"
+msgstr "Horgonynév"
 
 msgid "advanced_dlg_code_title"
-msgstr "HTML Bron"
+msgstr "HTML forrás szerkesztése"
 
 msgid "advanced_dlg_code_wordwrap"
-msgstr "Automatische terugloop"
+msgstr "Szöveg tördelése"
 
 msgid "advanced_dlg_colorpicker_title"
-msgstr "Kleuren"
+msgstr "Színválasztás"
 
 msgid "advanced_dlg_colorpicker_picker_tab"
-msgstr "Alle kleuren"
+msgstr "Választó"
 
 msgid "advanced_dlg_colorpicker_picker_title"
-msgstr "Alle kleuren"
+msgstr "Színválasztó"
 
 msgid "advanced_dlg_colorpicker_palette_tab"
-msgstr "Palet"
+msgstr "Paletta"
 
 msgid "advanced_dlg_colorpicker_palette_title"
-msgstr "Paletkleuren"
+msgstr "Paletta színek"
 
 msgid "advanced_dlg_colorpicker_named_tab"
-msgstr "Benoemd"
+msgstr "Elnevezettek"
 
 msgid "advanced_dlg_colorpicker_named_title"
-msgstr "Benoemde kleuren"
+msgstr "Elnevezett színek"
 
 msgid "advanced_dlg_colorpicker_color"
-msgstr "Kleur:"
+msgstr "Szín:"
 
 msgid "advanced_dlg_colorpicker_name"
-msgstr "Naam:"
+msgstr "Név:"
 
 msgid "advanced_dlg_charmap_title"
-msgstr "Symbolen"
+msgstr "Egyedi karakter választása"
 
 msgid "advanced_dlg_image_title"
-msgstr "Afbeelding invoegen/bewerken"
+msgstr "Kép beszúrása/szerkesztése"
 
 msgid "advanced_dlg_image_src"
-msgstr "Bestand/URL"
+msgstr "Kép URL"
 
 msgid "advanced_dlg_image_alt"
-msgstr "Beschrijving"
+msgstr "Kép leírás"
 
 msgid "advanced_dlg_image_list"
-msgstr "Lijst"
+msgstr "Kép lista"
 
 msgid "advanced_dlg_image_border"
-msgstr "Rand"
+msgstr "Keret"
 
 msgid "advanced_dlg_image_dimensions"
-msgstr "Afmetingen"
+msgstr "Dimenziók"
 
 msgid "advanced_dlg_image_vspace"
-msgstr "Verticale ruimte"
+msgstr "Függőleges táv"
 
 msgid "advanced_dlg_image_hspace"
-msgstr "Horizontale ruimte"
+msgstr "Vízszintes táv"
 
 msgid "advanced_dlg_image_align"
-msgstr "Uitlijning"
+msgstr "Igazítás"
 
 msgid "advanced_dlg_image_align_baseline"
-msgstr "Basislijn"
+msgstr "Alapvonalhoz"
 
 msgid "advanced_dlg_image_align_top"
-msgstr "Boven"
+msgstr "Fentre"
 
 msgid "advanced_dlg_image_align_middle"
-msgstr "Midden"
+msgstr "Középre"
 
 msgid "advanced_dlg_image_align_bottom"
-msgstr "Onder"
+msgstr "Lentre"
 
 msgid "advanced_dlg_image_align_texttop"
-msgstr "Bovenkant tekst"
+msgstr "Szöveg tetejéhez"
 
 msgid "advanced_dlg_image_align_textbottom"
-msgstr "Onderkant tekst"
+msgstr "Szöveg aljához"
 
 msgid "advanced_dlg_image_align_left"
-msgstr "Links"
+msgstr "Balra"
 
 msgid "advanced_dlg_image_align_right"
-msgstr "Rechts"
+msgstr "Jobbra"
 
 msgid "advanced_dlg_link_title"
-msgstr "Link invoegen/bewerken"
+msgstr "Link beszúrása/szerkesztése"
 
 msgid "advanced_dlg_link_url"
-msgstr "URL"
+msgstr "Link URL"
 
 msgid "advanced_dlg_link_target"
-msgstr "Doel"
+msgstr "Target"
 
 msgid "advanced_dlg_link_target_same"
-msgstr "Link in hetzelfde venster openen"
+msgstr "Link azonos ablakba nyitása"
 
 msgid "advanced_dlg_link_target_blank"
-msgstr "Link in een nieuw venster openen"
+msgstr "Link új ablakba nyitása"
 
 msgid "advanced_dlg_link_titlefield"
-msgstr "Titel"
+msgstr "Cím"
 
 msgid "advanced_dlg_link_is_email"
-msgstr "De ingevoerde URL lijkt op een e-mailadres. Wilt u de vereiste mailto: tekst voorvoegen?"
+msgstr "A beírt URL e-mail címnek tűnik, kívánja a szükséges mailto:-t elé tenni?"
 
 msgid "advanced_dlg_link_is_external"
-msgstr "De ingevoerde URL lijkt op een externe link. Wilt u de vereiste http:// tekst voorvoegen?"
+msgstr "A beírt URL külső hivatkozásnak tűnik, kívánja a szükséges http://-t elé tenni?"
 
 msgid "advanced_dlg_link_list"
-msgstr "Link lijst"
+msgstr "Link lista"
 
 msgid "contextmenu_align"
-msgstr "Uitlijning"
+msgstr "Igazítás"
 
 msgid "contextmenu_left"
-msgstr "Links"
+msgstr "Balra"
 
 msgid "contextmenu_center"
-msgstr "Centreren"
+msgstr "Középre"
 
 msgid "contextmenu_right"
-msgstr "Rechts"
+msgstr "Jobbra"
 
 msgid "contextmenu_full"
-msgstr "Uitvullen"
+msgstr "Sorkizárás"
 
 msgid "insertdatetime_date_fmt"
-msgstr "%d-%m-%Y"
+msgstr "%Y.%m.%d."
 
 msgid "insertdatetime_time_fmt"
 msgstr "%H:%M:%S"
 
 msgid "insertdatetime_insertdate_desc"
-msgstr "Datum invoegen"
+msgstr "Dátum beszúrása"
 
 msgid "insertdatetime_inserttime_desc"
-msgstr "Tijd invoegen"
+msgstr "Idő beszúrása"
 
 msgid "insertdatetime_months_long"
-msgstr "Januari,Februari,Maart,April,Mei,Juni,Juli,Augustus,September,Oktober,November,December"
+msgstr "január,február,március,április,május,június,július,augusztus,szeptember,október,november,december"
 
 msgid "insertdatetime_months_short"
-msgstr "Jan,Feb,Mar,Apr,Mei,Jun,Jul,Aug,Sep,Okt,Nov,Dec"
+msgstr "jan,feb,már,ápr,máj,jún,júl,aug,szep,okt,nov,dec"
 
 msgid "insertdatetime_day_long"
-msgstr "Zondag,Maandag,Dinsdag,Woensdag,Donderdag,Vrijdag,Zaterdag,Zondag"
+msgstr "vasárnap,hétfő,kedd,szerda,csütörtök,péntek,szombat,vasárnap"
 
 msgid "insertdatetime_day_short"
-msgstr "zo,ma,di,wo,do,vr,za,zo"
+msgstr "V,H,K,Sze,Cs,P,Szo,V"
 
 msgid "print_print_desc"
-msgstr "Afdrukken"
+msgstr "Nyomtatás"
 
 msgid "preview_preview_desc"
-msgstr "Voorbeeld"
+msgstr "Előnézet"
 
 msgid "directionality_ltr_desc"
-msgstr "Van links naar rechts"
+msgstr "Balról jobbra"
 
 msgid "directionality_rtl_desc"
-msgstr "Van rechts naar links"
+msgstr "Jobbról balra"
 
 msgid "layer_insertlayer_desc"
-msgstr "Nieuwe laag invoegen"
+msgstr "Új réteg beszúrása"
 
 msgid "layer_forward_desc"
-msgstr "Volgende laag"
+msgstr "Mozgatás előre"
 
 msgid "layer_backward_desc"
-msgstr "Vorige laag"
+msgstr "Mozgatás hátra"
 
 msgid "layer_absolute_desc"
-msgstr "Absoluut positioneren inschakelen"
+msgstr "Abszolút pozíció ki-/bekapcsolása"
 
 msgid "layer_content"
-msgstr "Nieuwe laag..."
+msgstr "Új réteg..."
 
 msgid "save_save_desc"
-msgstr "Opslaan"
+msgstr "Mentés"
 
 msgid "save_cancel_desc"
-msgstr "Alle wijzigingen annuleren"
+msgstr "Összes változás visszavonása"
 
 msgid "nonbreaking_nonbreaking_desc"
-msgstr "Open ruimte invoegen"
+msgstr "Nemsortörő szóköz beszúrása"
 
 msgid "iespell_iespell_desc"
-msgstr "Spellingcontrole"
+msgstr "Helyesírás-ellenőrzés futtatása"
 
 msgid "iespell_download"
-msgstr "ieSpell niet gevonden. Wilt u deze nu installeren?"
+msgstr "ieSpell nem található. Telepíti most?"
 
 msgid "advhr_advhr_desc"
-msgstr "Scheidingslijn"
+msgstr "Vízszintes vonal"
 
 msgid "advhr_delta_width"
 msgstr ""
@@ -535,16 +535,16 @@ msgid "advhr_delta_height"
 msgstr ""
 
 msgid "advhr_dlg_width"
-msgstr "Breedte"
+msgstr "Szélesség"
 
 msgid "advhr_dlg_size"
-msgstr "Hoogte"
+msgstr "Magasság"
 
 msgid "advhr_dlg_noshade"
-msgstr "Geen schaduw"
+msgstr "Árnyék nélkül"
 
 msgid "emotions_emotions_desc"
-msgstr "Emoties"
+msgstr "Hangulatjelek"
 
 msgid "emotions_delta_width"
 msgstr ""
@@ -553,64 +553,64 @@ msgid "emotions_delta_height"
 msgstr ""
 
 msgid "emotions_dlg_title"
-msgstr "Emotie invoegen"
+msgstr "Hangulatjel beszúrása"
 
 msgid "emotions_dlg_desc"
-msgstr "Emoties"
+msgstr "Hangulatjelek"
 
 msgid "emotions_dlg_cool"
-msgstr "Stoer"
+msgstr "Király"
 
 msgid "emotions_dlg_cry"
-msgstr "Huilen"
+msgstr "Sírós"
 
 msgid "emotions_dlg_embarassed"
-msgstr "Schamen"
+msgstr "Zavarban van"
 
 msgid "emotions_dlg_foot_in_mouth"
-msgstr "Verstomd"
+msgstr "Láb a szájban"
 
 msgid "emotions_dlg_frown"
-msgstr "Wenkbrauw ophalen"
+msgstr "Rosszall"
 
 msgid "emotions_dlg_innocent"
-msgstr "Onschuldig"
+msgstr "Ártatlan"
 
 msgid "emotions_dlg_kiss"
-msgstr "Zoenen"
+msgstr "Csók"
 
 msgid "emotions_dlg_laughing"
-msgstr "Lachen"
+msgstr "Nevetés"
 
 msgid "emotions_dlg_money_mouth"
-msgstr "Hebberig"
+msgstr "Pénz beszél"
 
 msgid "emotions_dlg_sealed"
-msgstr "Afgesloten"
+msgstr "Lakat a száján"
 
 msgid "emotions_dlg_smile"
-msgstr "Lachen"
+msgstr "Vigyor"
 
 msgid "emotions_dlg_surprised"
-msgstr "Verrast"
+msgstr "Meglepett"
 
 msgid "emotions_dlg_tongue_out"
-msgstr "Tong uitsteken"
+msgstr "Nyelvöltés"
 
 msgid "emotions_dlg_undecided"
-msgstr "Onbeslist"
+msgstr "Határozatlan"
 
 msgid "emotions_dlg_wink"
-msgstr "Knipogen"
+msgstr "Kacsintás"
 
 msgid "emotions_dlg_yell"
-msgstr "Roepen"
+msgstr "Üvöltés"
 
 msgid "searchreplace_search_desc"
-msgstr "Zoeken"
+msgstr "Keresés"
 
 msgid "searchreplace_replace_desc"
-msgstr "Zoeken/Vervangen"
+msgstr "Keresés/Csere"
 
 msgid "searchreplace_delta_width"
 msgstr ""
@@ -619,49 +619,49 @@ msgid "searchreplace_delta_height"
 msgstr ""
 
 msgid "searchreplace_dlg_searchnext_desc"
-msgstr "Opnieuw zoeken"
+msgstr "Keresés megint"
 
 msgid "searchreplace_dlg_notfound"
-msgstr "Het doorzoeken is voltooid. De zoekterm kon niet meer worden gevonden."
+msgstr "A keresés véget ért. A keresett szövegrész nem található."
 
 msgid "searchreplace_dlg_search_title"
-msgstr "Zoeken"
+msgstr "Keresés"
 
 msgid "searchreplace_dlg_replace_title"
-msgstr "Zoeken/Vervangen"
+msgstr "Keresés/Csere"
 
 msgid "searchreplace_dlg_allreplaced"
-msgstr "Alle instanties van de zoekterm zijn vervangen."
+msgstr "A keresett részszöveg minden előfordulása cserélve lett."
 
 msgid "searchreplace_dlg_findwhat"
-msgstr "Zoeken naar"
+msgstr "Mit cserél"
 
 msgid "searchreplace_dlg_replacewith"
-msgstr "Vervangen door"
+msgstr "Mire cserél"
 
 msgid "searchreplace_dlg_direction"
-msgstr "Richting"
+msgstr "Irány"
 
 msgid "searchreplace_dlg_up"
-msgstr "Omhoog"
+msgstr "Fel"
 
 msgid "searchreplace_dlg_down"
-msgstr "Omlaag"
+msgstr "Le"
 
 msgid "searchreplace_dlg_mcase"
-msgstr "Identieke hoofdletters/kleine letters"
+msgstr "Kis- és nagybetűk megkülönböztetése"
 
 msgid "searchreplace_dlg_findnext"
-msgstr "Zoeken"
+msgstr "Keresés"
 
 msgid "searchreplace_dlg_replace"
-msgstr "Vervangen"
+msgstr "Csere"
 
 msgid "searchreplace_dlg_replaceall"
-msgstr "Alles verv."
+msgstr "Minden találat cseréje"
 
 msgid "advimage_image_desc"
-msgstr "Afbeelding invoegen/bewerken"
+msgstr "Kép beszúrása/szerkesztése"
 
 msgid "advimage_delta_width"
 msgstr ""
@@ -670,130 +670,130 @@ msgid "advimage_delta_height"
 msgstr ""
 
 msgid "advimage_dlg_tab_general"
-msgstr "Algemeen"
+msgstr "Általános"
 
 msgid "advimage_dlg_tab_appearance"
-msgstr "Weergave"
+msgstr "Megjelenés"
 
 msgid "advimage_dlg_tab_advanced"
-msgstr "Geavanceerd"
+msgstr "Haladó"
 
 msgid "advimage_dlg_general"
-msgstr "Algemeen"
+msgstr "Általános"
 
 msgid "advimage_dlg_title"
-msgstr "Titel"
+msgstr "Cím"
 
 msgid "advimage_dlg_preview"
-msgstr "Voorbeeld"
+msgstr "Előnézet"
 
 msgid "advimage_dlg_constrain_proportions"
-msgstr "Verhouding behouden"
+msgstr "Aránytartás"
 
 msgid "advimage_dlg_langdir"
-msgstr "Taalrichting"
+msgstr "Nyelv írás irány"
 
 msgid "advimage_dlg_langcode"
-msgstr "Taalcode"
+msgstr "Nyelv kód"
 
 msgid "advimage_dlg_long_desc"
-msgstr "Uitgebreide beschrijving"
+msgstr "Bővebb leírás link"
 
 msgid "advimage_dlg_style"
-msgstr "Stijl"
+msgstr "Style"
 
 msgid "advimage_dlg_classes"
-msgstr "Klasses"
+msgstr "Class-ok"
 
 msgid "advimage_dlg_ltr"
-msgstr "Van links naar rechts"
+msgstr "Balról jobbra"
 
 msgid "advimage_dlg_rtl"
-msgstr "Van rechts naar links"
+msgstr "Jobbról balra"
 
 msgid "advimage_dlg_id"
 msgstr "Id"
 
 msgid "advimage_dlg_map"
-msgstr "Afbeeldingsplattegrond"
+msgstr "Kép térkép"
 
 msgid "advimage_dlg_swap_image"
-msgstr "Afbeelding wisselen"
+msgstr "Képcsere"
 
 msgid "advimage_dlg_alt_image"
-msgstr "Alternatieve afbeeldingen"
+msgstr "Alternatív kép"
 
 msgid "advimage_dlg_mouseover"
-msgstr "Bij muis over"
+msgstr "Kép az egérkurzor fölévitelekor"
 
 msgid "advimage_dlg_mouseout"
-msgstr "Bij muis uit"
+msgstr "Kép az egérkurzor levételekor"
 
 msgid "advimage_dlg_misc"
-msgstr "Diversen"
+msgstr "Vegyes"
 
 msgid "advimage_dlg_example_img"
-msgstr "Voorbeeldweergave"
+msgstr "Előnézeti kép"
 
 msgid "advimage_dlg_missing_alt"
-msgstr "Wilt u de afbeelding zonder beschrijving invoegen? De afbeelding wordt dan mogelijk niet opgemerkt door mensen met een visuele handicap, of welke zonder afbeeldingen browsen."
+msgstr "Biztosan folytatja helyettesítő szöveg nélkül? Enélkül a korlátozással élők, szöveges böngészőt használók és a képek megjelenítését letiltó felhasználók hátrányban lesznek."
 
 msgid "advimage_dlg_dialog_title"
-msgstr "Afbeelding invoegen/bewerken"
+msgstr "Kép beszúrás/szerkesztés"
 
 msgid "advimage_dlg_src"
-msgstr "Bestand/URL"
+msgstr "Kép URL"
 
 msgid "advimage_dlg_alt"
-msgstr "Beschrijving"
+msgstr "Kép helyettesítő szövege"
 
 msgid "advimage_dlg_list"
-msgstr "Lijst"
+msgstr "Képlista"
 
 msgid "advimage_dlg_border"
-msgstr "Rand"
+msgstr "Keret"
 
 msgid "advimage_dlg_dimensions"
-msgstr "Afmetingen"
+msgstr "Dimenziók"
 
 msgid "advimage_dlg_vspace"
-msgstr "Verticale ruimte"
+msgstr "Függőleges távolság"
 
 msgid "advimage_dlg_hspace"
-msgstr "Horizontale ruimte"
+msgstr "Vízszintes távolság"
 
 msgid "advimage_dlg_align"
-msgstr "Uitlijning"
+msgstr "Igazítás"
 
 msgid "advimage_dlg_align_baseline"
-msgstr "Basislijn"
+msgstr "Alapvonalhoz"
 
 msgid "advimage_dlg_align_top"
-msgstr "Boven"
+msgstr "Fentre"
 
 msgid "advimage_dlg_align_middle"
-msgstr "Midden"
+msgstr "Középre"
 
 msgid "advimage_dlg_align_bottom"
-msgstr "Onder"
+msgstr "Lentre"
 
 msgid "advimage_dlg_align_texttop"
-msgstr "Bovenkant tekst"
+msgstr "Szöveg tetejéhez"
 
 msgid "advimage_dlg_align_textbottom"
-msgstr "Onderkant tekst"
+msgstr "Szöveg aljához"
 
 msgid "advimage_dlg_align_left"
-msgstr "Links"
+msgstr "Balra"
 
 msgid "advimage_dlg_align_right"
-msgstr "Rechts"
+msgstr "Jobbra"
 
 msgid "advimage_dlg_image_list"
-msgstr "Lijst"
+msgstr "Képlista"
 
 msgid "advlink_link_desc"
-msgstr "Link invoegen/bewerken"
+msgstr "Link beszúrása/szerkesztés"
 
 msgid "advlink_delta_width"
 msgstr ""
@@ -802,172 +802,172 @@ msgid "advlink_delta_height"
 msgstr ""
 
 msgid "advlink_dlg_title"
-msgstr "Link invoegen/bewerken"
+msgstr "Link beszúrás/szerkesztés"
 
 msgid "advlink_dlg_url"
-msgstr "URL"
+msgstr "Link URL"
 
 msgid "advlink_dlg_target"
-msgstr "Doel"
+msgstr "Target"
 
 msgid "advlink_dlg_titlefield"
-msgstr "Titel"
+msgstr "Cím"
 
 msgid "advlink_dlg_is_email"
-msgstr "De ingevoerde URL lijkt op een e-mailadres. Wilt u de vereiste mailto: tekst voorvoegen?"
+msgstr "A beírt URL e-mail címnek tűnik, kívánja a szükséges mailto:-t elé tenni?"
 
 msgid "advlink_dlg_is_external"
-msgstr "De ingevoerde URL lijkt op een externe link. Wilt u de vereiste http:// tekst voorvoegen?"
+msgstr "A beírt URL külső hivatkozásnak tűnik, kívánja a szükséges http://-t elé tenni?"
 
 msgid "advlink_dlg_list"
-msgstr "Lijst"
+msgstr "Link lista"
 
 msgid "advlink_dlg_general_tab"
-msgstr "Algemeen"
+msgstr "Általános"
 
 msgid "advlink_dlg_popup_tab"
-msgstr "Popup"
+msgstr "Felugró ablak"
 
 msgid "advlink_dlg_events_tab"
-msgstr "Gebeurtenissen"
+msgstr "Események"
 
 msgid "advlink_dlg_advanced_tab"
-msgstr "Geavanceerd"
+msgstr "Haladó"
 
 msgid "advlink_dlg_general_props"
-msgstr "Algemene eigenschappen"
+msgstr "Általános tulajdonságok"
 
 msgid "advlink_dlg_popup_props"
-msgstr "Popup eigenschappen"
+msgstr "Felugró ablak tulajdonságai"
 
 msgid "advlink_dlg_event_props"
-msgstr "Gebeurtenissen"
+msgstr "Események"
 
 msgid "advlink_dlg_advanced_props"
-msgstr "Geavanceerde eigenschappen"
+msgstr "Haladó tulajdonságok"
 
 msgid "advlink_dlg_popup_opts"
-msgstr "Opties"
+msgstr "Beállítások"
 
 msgid "advlink_dlg_anchor_names"
-msgstr "Ankers"
+msgstr "Horgonyok"
 
 msgid "advlink_dlg_target_same"
-msgstr "In dit venster / frame openen"
+msgstr "Azonos ablakban/keretben megnyitás"
 
 msgid "advlink_dlg_target_parent"
-msgstr "In bovenliggend venster / frame openen"
+msgstr "Szülő ablakban/keretben megnyitás"
 
 msgid "advlink_dlg_target_top"
-msgstr "In bovenste frame openen (vervangt gehele pagina)"
+msgstr "Azonos ablakban/keretben megnyitás legfelül"
 
 msgid "advlink_dlg_target_blank"
-msgstr "In nieuw venster openen"
+msgstr "Új ablakban megnyitás"
 
 msgid "advlink_dlg_popup"
-msgstr "Javascript popup"
+msgstr "JavaScript felugró ablak"
 
 msgid "advlink_dlg_popup_url"
-msgstr "Popup URL"
+msgstr "Felugró ablak URL"
 
 msgid "advlink_dlg_popup_name"
-msgstr "Venstertitel"
+msgstr "Ablaknév"
 
 msgid "advlink_dlg_popup_return"
-msgstr "'return false' invoegen"
+msgstr "'return false' beszúrása"
 
 msgid "advlink_dlg_popup_scrollbars"
-msgstr "Scrollbalken weergeven"
+msgstr "Görgetősávok mutatása"
 
 msgid "advlink_dlg_popup_statusbar"
-msgstr "Statusbalk weergeven"
+msgstr "Státuszsor mutatása"
 
 msgid "advlink_dlg_popup_toolbar"
-msgstr "Werkbalk weergeven"
+msgstr "Eszközsor mutatása"
 
 msgid "advlink_dlg_popup_menubar"
-msgstr "Menubalk weergeven"
+msgstr "Menüsor mutatása"
 
 msgid "advlink_dlg_popup_location"
-msgstr "Lokatiebalk weergeven"
+msgstr "Cím mező mutatása"
 
 msgid "advlink_dlg_popup_resizable"
-msgstr "Aanpasbaar venster"
+msgstr "Átméretezhető ablak"
 
 msgid "advlink_dlg_popup_dependent"
-msgstr "Afhankelijk (Alleen Mozilla/Firefox)"
+msgstr "Függő (csak Mozilla/Firefox)"
 
 msgid "advlink_dlg_popup_size"
-msgstr "Grootte"
+msgstr "Méret"
 
 msgid "advlink_dlg_popup_position"
-msgstr "Positie (X/Y)"
+msgstr "Pozíció (X/Y)"
 
 msgid "advlink_dlg_id"
 msgstr "Id"
 
 msgid "advlink_dlg_style"
-msgstr "Stijl"
+msgstr "Style"
 
 msgid "advlink_dlg_classes"
-msgstr "Klassen"
+msgstr "Class-ok"
 
 msgid "advlink_dlg_target_name"
-msgstr "Doel"
+msgstr "Cél neve"
 
 msgid "advlink_dlg_langdir"
-msgstr "Taalrichting"
+msgstr "Nyelv írás irány"
 
 msgid "advlink_dlg_target_langcode"
-msgstr "Taal"
+msgstr "Cél nyelv"
 
 msgid "advlink_dlg_langcode"
-msgstr "Taalcode"
+msgstr "Nyelv kód"
 
 msgid "advlink_dlg_encoding"
-msgstr "Taalcodering"
+msgstr "Cél karakterkódolás"
 
 msgid "advlink_dlg_mime"
-msgstr "MIME type"
+msgstr "Cél MIME típus"
 
 msgid "advlink_dlg_rel"
-msgstr "Relatie van pagina tot doel"
+msgstr "Oldal kapcsolata a céllal"
 
 msgid "advlink_dlg_rev"
-msgstr "Relatie van doel tot pagina"
+msgstr "Cél kapcsolata az oldallal"
 
 msgid "advlink_dlg_tabindex"
-msgstr "Tabvolgorde"
+msgstr "Tabindex"
 
 msgid "advlink_dlg_accesskey"
-msgstr "Toegangstoets"
+msgstr "Gyorsgomb"
 
 msgid "advlink_dlg_ltr"
-msgstr "Van links naar rechts"
+msgstr "Balról jobbra"
 
 msgid "advlink_dlg_rtl"
-msgstr "Van rechts naar links"
+msgstr "Jobbról balra"
 
 msgid "advlink_dlg_link_list"
-msgstr "Lijst"
+msgstr "Link lista"
 
 msgid "xhtmlxtras_cite_desc"
-msgstr "Citaat"
+msgstr "Idézet"
 
 msgid "xhtmlxtras_abbr_desc"
-msgstr "Afkorting"
+msgstr "Rövidítés"
 
 msgid "xhtmlxtras_acronym_desc"
-msgstr "Synoniem"
+msgstr "Betűszó"
 
 msgid "xhtmlxtras_del_desc"
-msgstr "Verwijderd"
+msgstr "Törölt"
 
 msgid "xhtmlxtras_ins_desc"
-msgstr "Ingevoegd"
+msgstr "Beszúrt"
 
 msgid "xhtmlxtras_attribs_desc"
-msgstr "Attributen invoegen/bewerken"
+msgstr "Tulajdonságok beszúrása/szerkesztése"
 
 msgid "xhtmlxtras_cite_delta_width"
 msgstr ""
@@ -1006,97 +1006,97 @@ msgid "xhtmlxtras_attribs_delta_height"
 msgstr ""
 
 msgid "xhtmlxtras_dlg_attribute_label_title"
-msgstr "Titel"
+msgstr "Cím"
 
 msgid "xhtmlxtras_dlg_attribute_label_id"
 msgstr "ID"
 
 msgid "xhtmlxtras_dlg_attribute_label_class"
-msgstr "Klasse"
+msgstr "Class"
 
 msgid "xhtmlxtras_dlg_attribute_label_style"
-msgstr "Stijl"
+msgstr "Style"
 
 msgid "xhtmlxtras_dlg_attribute_label_cite"
-msgstr "Citaat"
+msgstr "Idézet"
 
 msgid "xhtmlxtras_dlg_attribute_label_datetime"
-msgstr "Datum/Tijd"
+msgstr "Dátum/Idő"
 
 msgid "xhtmlxtras_dlg_attribute_label_langdir"
-msgstr "Tekstrichting"
+msgstr "Szöveg iránya"
 
 msgid "xhtmlxtras_dlg_attribute_option_ltr"
-msgstr "Van links naar rechts"
+msgstr "Balról jobbra"
 
 msgid "xhtmlxtras_dlg_attribute_option_rtl"
-msgstr "Van rechts naar links"
+msgstr "Jobbról balra"
 
 msgid "xhtmlxtras_dlg_attribute_label_langcode"
-msgstr "Taal"
+msgstr "Nyelv"
 
 msgid "xhtmlxtras_dlg_attribute_label_tabindex"
-msgstr "Tabvolgorde"
+msgstr "TabIndex"
 
 msgid "xhtmlxtras_dlg_attribute_label_accesskey"
-msgstr "Toegangstoets"
+msgstr "Gyorsbilentyű"
 
 msgid "xhtmlxtras_dlg_attribute_events_tab"
-msgstr "Gebeurtenissen"
+msgstr "Események"
 
 msgid "xhtmlxtras_dlg_attribute_attrib_tab"
-msgstr "Attributen"
+msgstr "Tulajdonságok"
 
 msgid "xhtmlxtras_dlg_general_tab"
-msgstr "Algemeen"
+msgstr "Általános"
 
 msgid "xhtmlxtras_dlg_attrib_tab"
-msgstr "Attributen"
+msgstr "Tulajdonságok"
 
 msgid "xhtmlxtras_dlg_events_tab"
-msgstr "Gebeurtenissen"
+msgstr "Események"
 
 msgid "xhtmlxtras_dlg_fieldset_general_tab"
-msgstr "Algemene instellingen"
+msgstr "Általános beállítások"
 
 msgid "xhtmlxtras_dlg_fieldset_attrib_tab"
-msgstr "Elementattributen"
+msgstr "Elem tulajdonságok"
 
 msgid "xhtmlxtras_dlg_fieldset_events_tab"
-msgstr "Element Gebeurtenissen"
+msgstr "Elem események"
 
 msgid "xhtmlxtras_dlg_title_ins_element"
-msgstr "Invoegingselement"
+msgstr "Beszúrt elem"
 
 msgid "xhtmlxtras_dlg_title_del_element"
-msgstr "Verwijderingselement"
+msgstr "Törölt elem"
 
 msgid "xhtmlxtras_dlg_title_acronym_element"
-msgstr "Synoniem"
+msgstr "Betűszó elem"
 
 msgid "xhtmlxtras_dlg_title_abbr_element"
-msgstr "Afkorting"
+msgstr "Rövidítés elem"
 
 msgid "xhtmlxtras_dlg_title_cite_element"
-msgstr "Citaat"
+msgstr "Idézet elem"
 
 msgid "xhtmlxtras_dlg_remove"
-msgstr "Verwijderen"
+msgstr "Eltávolítás"
 
 msgid "xhtmlxtras_dlg_insert_date"
-msgstr "Huidige datum/tijd invoegen"
+msgstr "Aktuális dátum/idő beszúrása"
 
 msgid "xhtmlxtras_dlg_option_ltr"
-msgstr "Van links naar rechts"
+msgstr "Balról jobra"
 
 msgid "xhtmlxtras_dlg_option_rtl"
-msgstr "Van rechts naar links"
+msgstr "Jobbról balra"
 
 msgid "xhtmlxtras_dlg_attribs_title"
-msgstr "Attributen Invoegen/bewerken"
+msgstr "Tulajdonságok beszúrása/szerkesztése"
 
 msgid "style_desc"
-msgstr "CSS Stijl bewerken"
+msgstr "CSS stílus szerkesztése"
 
 msgid "style_delta_width"
 msgstr ""
@@ -1105,265 +1105,265 @@ msgid "style_delta_height"
 msgstr ""
 
 msgid "style_dlg_title"
-msgstr "CSS Stijl bewerken"
+msgstr "CSS stílus szerkestése"
 
 msgid "style_dlg_apply"
-msgstr "Toepassen"
+msgstr "Alkalmaz"
 
 msgid "style_dlg_text_tab"
-msgstr "Tekst"
+msgstr "Szöveg"
 
 msgid "style_dlg_background_tab"
-msgstr "Achtergrond"
+msgstr "Háttér"
 
 msgid "style_dlg_block_tab"
-msgstr "Blok"
+msgstr "Blokk"
 
 msgid "style_dlg_box_tab"
-msgstr "Box"
+msgstr "Doboz"
 
 msgid "style_dlg_border_tab"
-msgstr "Rand"
+msgstr "Keret"
 
 msgid "style_dlg_list_tab"
-msgstr "Lijst"
+msgstr "Lista"
 
 msgid "style_dlg_positioning_tab"
-msgstr "Positionering"
+msgstr "Pozíció"
 
 msgid "style_dlg_text_props"
-msgstr "Tekst"
+msgstr "Szöveg"
 
 msgid "style_dlg_text_font"
-msgstr "Lettertype"
+msgstr "Betűtípus"
 
 msgid "style_dlg_text_size"
-msgstr "Tekengrootte"
+msgstr "Méret"
 
 msgid "style_dlg_text_weight"
-msgstr "Gewicht"
+msgstr "Szélesség"
 
 msgid "style_dlg_text_style"
-msgstr "Stijl"
+msgstr "Stílus"
 
 msgid "style_dlg_text_variant"
-msgstr "Variant"
+msgstr "Változat"
 
 msgid "style_dlg_text_lineheight"
-msgstr "Lijnhoogte"
+msgstr "Sormagasság"
 
 msgid "style_dlg_text_case"
-msgstr "Hoofdlettergebruik"
+msgstr "eset"
 
 msgid "style_dlg_text_color"
-msgstr "Kleur"
+msgstr "szín"
 
 msgid "style_dlg_text_decoration"
-msgstr "Decoratie"
+msgstr "dekoráció"
 
 msgid "style_dlg_text_overline"
-msgstr "Overhalen"
+msgstr "felülhúzás"
 
 msgid "style_dlg_text_underline"
-msgstr "Onderstrepen"
+msgstr "alulhúzás"
 
 msgid "style_dlg_text_striketrough"
-msgstr "Doorhalen"
+msgstr "áthúzás"
 
 msgid "style_dlg_text_blink"
-msgstr "Knipperen"
+msgstr "villogás"
 
 msgid "style_dlg_text_none"
-msgstr "Niets"
+msgstr "egyik sem"
 
 msgid "style_dlg_background_color"
-msgstr "Achtergrondkleur"
+msgstr "Háttérszín"
 
 msgid "style_dlg_background_image"
-msgstr "Achtergrondafbeelding"
+msgstr "Háttérkép"
 
 msgid "style_dlg_background_repeat"
-msgstr "Herhalen"
+msgstr "Ismétlés"
 
 msgid "style_dlg_background_attachment"
-msgstr "Bijlage"
+msgstr "Csatolmány"
 
 msgid "style_dlg_background_hpos"
-msgstr "Horizontale positie"
+msgstr "Vízszintes hely"
 
 msgid "style_dlg_background_vpos"
-msgstr "Verticale positie"
+msgstr "Függőleges hely"
 
 msgid "style_dlg_block_wordspacing"
-msgstr "Woordruimte"
+msgstr "Szótávolság"
 
 msgid "style_dlg_block_letterspacing"
-msgstr "Letterruimte"
+msgstr "Betűtávolság"
 
 msgid "style_dlg_block_vertical_alignment"
-msgstr "Verticale uitlijning"
+msgstr "Függőleges igazítás"
 
 msgid "style_dlg_block_text_align"
-msgstr "Tekstuitlijning"
+msgstr "Szöveg igazítása"
 
 msgid "style_dlg_block_text_indent"
-msgstr "Inspringen"
+msgstr "Szöveg behúzása"
 
 msgid "style_dlg_block_whitespace"
-msgstr "Witruimte"
+msgstr "Üres helyek"
 
 msgid "style_dlg_block_display"
-msgstr "Weergave"
+msgstr "Megjelenítés"
 
 msgid "style_dlg_box_width"
-msgstr "Breedte"
+msgstr "Szélesség"
 
 msgid "style_dlg_box_height"
-msgstr "Hoogte"
+msgstr "Magasság"
 
 msgid "style_dlg_box_float"
-msgstr "Zweven"
+msgstr "Lebegés (float)"
 
 msgid "style_dlg_box_clear"
-msgstr "Vrijhouden"
+msgstr "Lebegés (float) törlése"
 
 msgid "style_dlg_padding"
-msgstr "Opening"
+msgstr "Belső margó"
 
 msgid "style_dlg_same"
-msgstr "Alles hetzelfde"
+msgstr "Mindenhol ugyanaz"
 
 msgid "style_dlg_top"
-msgstr "Boven"
+msgstr "Felül"
 
 msgid "style_dlg_right"
-msgstr "Rechts"
+msgstr "Jobbra"
 
 msgid "style_dlg_bottom"
-msgstr "Onder"
+msgstr "Lent"
 
 msgid "style_dlg_left"
-msgstr "Links"
+msgstr "Balra"
 
 msgid "style_dlg_margin"
-msgstr "Marge"
+msgstr "Margó"
 
 msgid "style_dlg_style"
-msgstr "Stijl"
+msgstr "Stílus"
 
 msgid "style_dlg_width"
-msgstr "Breedte"
+msgstr "Szélesség"
 
 msgid "style_dlg_height"
-msgstr "Hoogte"
+msgstr "Magasság"
 
 msgid "style_dlg_color"
-msgstr "Kleur"
+msgstr "Szín"
 
 msgid "style_dlg_list_type"
-msgstr "Type"
+msgstr "Típus"
 
 msgid "style_dlg_bullet_image"
-msgstr "Opsommingsteken"
+msgstr "Elemkép"
 
 msgid "style_dlg_position"
-msgstr "Positie"
+msgstr "Pozíció"
 
 msgid "style_dlg_positioning_type"
-msgstr "Type"
+msgstr "Típus"
 
 msgid "style_dlg_visibility"
-msgstr "Zichtbaarheid"
+msgstr "Láthatóság"
 
 msgid "style_dlg_zindex"
 msgstr "Z-index"
 
 msgid "style_dlg_overflow"
-msgstr "Overvloeien"
+msgstr "Kifutás"
 
 msgid "style_dlg_placement"
-msgstr "Plaatsing"
+msgstr "Elhelyezés"
 
 msgid "style_dlg_clip"
-msgstr "Clip"
+msgstr "Levágás"
 
 msgid "paste_paste_text_desc"
-msgstr "Als platte tekst plakken"
+msgstr "Beszúrás szövegként"
 
 msgid "paste_paste_word_desc"
-msgstr "Vanuit Word plakken"
+msgstr "Beszúrás Wordből"
 
 msgid "paste_selectall_desc"
-msgstr "Alles selecteren"
+msgstr "Mindent kijelöl"
 
 msgid "paste_dlg_text_title"
-msgstr "Gebruik Ctrl+V om tekst in het venster te plakken."
+msgstr "Használja a Ctrl+V-t a billentyűzetén a beillesztéshez."
 
 msgid "paste_dlg_text_linebreaks"
-msgstr "Regelafbreking bewaren"
+msgstr "Sortörések megtartása"
 
 msgid "paste_dlg_word_title"
-msgstr "Gebruik Ctrl+V om tekst in het venster te plakken."
+msgstr "Használja a Ctrl+V-t a billentyűzetén a beillesztéshez."
 
 msgid "table_desc"
-msgstr "Nieuwe tabel invoegen"
+msgstr "Táblázat beszúrása/szerkesztése"
 
 msgid "table_row_before_desc"
-msgstr "Rij boven invoegen"
+msgstr "Sor beszúrása elé"
 
 msgid "table_row_after_desc"
-msgstr "Rij onder invoegen"
+msgstr "Sor beszúrása utána"
 
 msgid "table_delete_row_desc"
-msgstr "Rij verwijderen"
+msgstr "Sor törlése"
 
 msgid "table_col_before_desc"
-msgstr "Kolom links invoegen"
+msgstr "Oszlop beszúrása elé"
 
 msgid "table_col_after_desc"
-msgstr "Kolom rechts invoegen"
+msgstr "Oszlop beszúrása utána"
 
 msgid "table_delete_col_desc"
-msgstr "Kolom verwijderen"
+msgstr "Oszlop törlése"
 
 msgid "table_split_cells_desc"
-msgstr "Cellen splitsen"
+msgstr "Cellák felosztása"
 
 msgid "table_merge_cells_desc"
-msgstr "Cellen samenvoegen"
+msgstr "Cellák összevonása"
 
 msgid "table_row_desc"
-msgstr "Rij-eigenschappen"
+msgstr "Sor tulajdonságai"
 
 msgid "table_cell_desc"
-msgstr "Cel-eigenschappen"
+msgstr "Cella tulajdonságai"
 
 msgid "table_props_desc"
-msgstr "Tabeleigenschappen"
+msgstr "Táblázat tulajdonságai"
 
 msgid "table_paste_row_before_desc"
-msgstr "Rij boven plakken"
+msgstr "Sor bemásolása elé"
 
 msgid "table_paste_row_after_desc"
-msgstr "Rij onder plakken"
+msgstr "Sor bemásolása utána"
 
 msgid "table_cut_row_desc"
-msgstr "Rij knippen"
+msgstr "Sor kivágása"
 
 msgid "table_copy_row_desc"
-msgstr "Rij kopiëren"
+msgstr "Sor másolása"
 
 msgid "table_del"
-msgstr "Tabel verwijderen"
+msgstr "Táblázat törlése"
 
 msgid "table_row"
-msgstr "Rij"
+msgstr "Sor"
 
 msgid "table_col"
-msgstr "Kolom"
+msgstr "Oszlop"
 
 msgid "table_cell"
-msgstr "Cel"
+msgstr "Cella"
 
 msgid "table_rowprops_delta_width"
 msgstr ""
@@ -1390,232 +1390,232 @@ msgid "table_merge_cells_delta_height"
 msgstr ""
 
 msgid "table_dlg_general_tab"
-msgstr "Algemeen"
+msgstr "Általános"
 
 msgid "table_dlg_advanced_tab"
-msgstr "Geavanceerd"
+msgstr "Haladó"
 
 msgid "table_dlg_general_props"
-msgstr "Algemene eigenschappen"
+msgstr "Általános tulajdonságok"
 
 msgid "table_dlg_advanced_props"
-msgstr "Geavanceerde eigenschappen"
+msgstr "Haladó tulajdonságok"
 
 msgid "table_dlg_rowtype"
-msgstr "Rijtype"
+msgstr "Sor a táblában"
 
 msgid "table_dlg_title"
-msgstr "Tabel invoegen/bewerken"
+msgstr "Táblázat beszúrása/szerkesztése"
 
 msgid "table_dlg_width"
-msgstr "Breedte"
+msgstr "Szélesség"
 
 msgid "table_dlg_height"
-msgstr "Hoogte"
+msgstr "Magasság"
 
 msgid "table_dlg_cols"
-msgstr "Kolommen"
+msgstr "Oszlopok"
 
 msgid "table_dlg_rows"
-msgstr "Rijen"
+msgstr "Sorok"
 
 msgid "table_dlg_cellspacing"
-msgstr "Ruimte om cel"
+msgstr "Cellaköz"
 
 msgid "table_dlg_cellpadding"
-msgstr "Ruimte in cel"
+msgstr "Cella belsőköz"
 
 msgid "table_dlg_border"
-msgstr "Rand"
+msgstr "Keret"
 
 msgid "table_dlg_align"
-msgstr "Uitlijning"
+msgstr "Igazítás"
 
 msgid "table_dlg_align_default"
-msgstr "Standaard"
+msgstr "Alapértelmezett"
 
 msgid "table_dlg_align_left"
-msgstr "Links"
+msgstr "Balra"
 
 msgid "table_dlg_align_right"
-msgstr "Rechts"
+msgstr "Jobbra"
 
 msgid "table_dlg_align_middle"
-msgstr "Centreren"
+msgstr "Középre"
 
 msgid "table_dlg_row_title"
-msgstr "Rij-eigenschappen"
+msgstr "Sor tulajdonságai"
 
 msgid "table_dlg_cell_title"
-msgstr "Celeigenschappen"
+msgstr "Cella tulajdonságai"
 
 msgid "table_dlg_cell_type"
-msgstr "Celtype"
+msgstr "Cellatípus"
 
 msgid "table_dlg_valign"
-msgstr "Verticale uitlijning"
+msgstr "Függőleges igazítás"
 
 msgid "table_dlg_align_top"
-msgstr "Boven"
+msgstr "Fel"
 
 msgid "table_dlg_align_bottom"
-msgstr "Onder"
+msgstr "Le"
 
 msgid "table_dlg_bordercolor"
-msgstr "Randkleur"
+msgstr "Keretszín"
 
 msgid "table_dlg_bgcolor"
-msgstr "Achtergrondkleur"
+msgstr "Háttérszín"
 
 msgid "table_dlg_merge_cells_title"
-msgstr "Cellen samenvoegen"
+msgstr "Cellák összevonása"
 
 msgid "table_dlg_id"
 msgstr "Id"
 
 msgid "table_dlg_style"
-msgstr "Stijl"
+msgstr "Stílus"
 
 msgid "table_dlg_langdir"
-msgstr "Taalrichting"
+msgstr "Írás irány"
 
 msgid "table_dlg_langcode"
-msgstr "Taalcode"
+msgstr "Nyelvkód"
 
 msgid "table_dlg_mime"
-msgstr "Doel MIME type"
+msgstr "Cél MIME típus"
 
 msgid "table_dlg_ltr"
-msgstr "Van links naar rechts"
+msgstr "Balról jobbra"
 
 msgid "table_dlg_rtl"
-msgstr "Van rechts naar links"
+msgstr "Jobbról balra"
 
 msgid "table_dlg_bgimage"
-msgstr "Achtergrondafbeelding"
+msgstr "Háttérkép"
 
 msgid "table_dlg_summary"
-msgstr "Samenvatting"
+msgstr "Összegzés"
 
 msgid "table_dlg_td"
-msgstr "Gegevens"
+msgstr "Adat"
 
 msgid "table_dlg_th"
-msgstr "Kop"
+msgstr "Fejléc"
 
 msgid "table_dlg_cell_cell"
-msgstr "Huidige cel bijwerken"
+msgstr "Cella frissítése"
 
 msgid "table_dlg_cell_row"
-msgstr "Alle cellen in rij bijwerken"
+msgstr "Sor összes cellájának frissítése"
 
 msgid "table_dlg_cell_all"
-msgstr "Alle cellen in tabel bijwerken"
+msgstr "Táblázat összes cellájának frissítése"
 
 msgid "table_dlg_row_row"
-msgstr "Huidige rij bijwerken"
+msgstr "Sor frissítése"
 
 msgid "table_dlg_row_odd"
-msgstr "Oneven rijen bijwerken"
+msgstr "Páratlan sorok frissítése"
 
 msgid "table_dlg_row_even"
-msgstr "Even rijen bijwerken"
+msgstr "Páros sorok frissítése"
 
 msgid "table_dlg_row_all"
-msgstr "Alle rijen bijwerken"
+msgstr "Minden sor frissítése"
 
 msgid "table_dlg_thead"
-msgstr "Tabelkop"
+msgstr "Táblázat fej"
 
 msgid "table_dlg_tbody"
-msgstr "Tabellichaam"
+msgstr "Táblázat test"
 
 msgid "table_dlg_tfoot"
-msgstr "Tabelvoet"
+msgstr "Táblázat láb"
 
 msgid "table_dlg_scope"
-msgstr "Bereik"
+msgstr "Hatókör"
 
 msgid "table_dlg_rowgroup"
-msgstr "Rijgroep"
+msgstr "Sor csoport"
 
 msgid "table_dlg_colgroup"
-msgstr "Kolomgroep"
+msgstr "Oszlop csoport"
 
 msgid "table_dlg_col_limit"
-msgstr "U heeft het maximale aantal kolommen van {$cols} overschreden."
+msgstr "Túllépte a maximális oszlopszámot, ami {$cols}."
 
 msgid "table_dlg_row_limit"
-msgstr "U heeft hebt het maximale aantal rijen van {$rows} overschreden."
+msgstr "Túllépte a maximális sorszámot, ami {$rows}."
 
 msgid "table_dlg_cell_limit"
-msgstr "U heeft het maximale aantal cellen van {$cells} overschreden."
+msgstr "Túllépte a maximális cellaszámot, ami {$cells}."
 
 msgid "table_dlg_missing_scope"
-msgstr "Weet u zeker dat u door wilt gaan met het toewijzen van een kop zonder een bereik op te geven? Mensen met een visuele handicap kunnen hierdoor waarschijnlijk slecht bij de gegevens."
+msgstr "Biztosan folytatni akarja anélkül, hogy hatókört adna ennek a fejléccellának? Korlátozásokkal élők számára nehéz lesz megérteni a táblázat tartalmát."
 
 msgid "table_dlg_caption"
-msgstr "Tabelbeschrijving"
+msgstr "Címsor"
 
 msgid "table_dlg_frame"
-msgstr "Frame"
+msgstr "Keret"
 
 msgid "table_dlg_frame_none"
-msgstr "Geen"
+msgstr "nincs"
 
 msgid "table_dlg_frame_groups"
-msgstr "Groepen"
+msgstr "csoportok"
 
 msgid "table_dlg_frame_rows"
-msgstr "Rijen"
+msgstr "sorok"
 
 msgid "table_dlg_frame_cols"
-msgstr "Kolommen"
+msgstr "oszlopok"
 
 msgid "table_dlg_frame_all"
-msgstr "Alles"
+msgstr "mind"
 
 msgid "table_dlg_rules"
-msgstr "Hulplijnen"
+msgstr "Vonalak"
 
 msgid "table_dlg_rules_void"
-msgstr "Geen"
+msgstr "sehol"
 
 msgid "table_dlg_rules_above"
-msgstr "Boven"
+msgstr "fölötte"
 
 msgid "table_dlg_rules_below"
-msgstr "Onder"
+msgstr "alatta"
 
 msgid "table_dlg_rules_hsides"
-msgstr "Horizontale zijden"
+msgstr "v. oldalak"
 
 msgid "table_dlg_rules_lhs"
-msgstr "Linkerzijkant"
+msgstr "lhs"
 
 msgid "table_dlg_rules_rhs"
-msgstr "Rechterzijkant"
+msgstr "rhs"
 
 msgid "table_dlg_rules_vsides"
-msgstr "Verticale zijden"
+msgstr "f. oldalak"
 
 msgid "table_dlg_rules_box"
-msgstr "Box"
+msgstr "doboz"
 
 msgid "table_dlg_rules_border"
-msgstr "Rand"
+msgstr "keret"
 
 msgid "autosave_unload_msg"
-msgstr "De wijzigingen zullen verloren gaan als u nu deze pagina verlaat."
+msgstr "A módosítások nem lesznek mentve, ha elhagyja az oldalt."
 
 msgid "fullscreen_desc"
-msgstr "Volledig scherm"
+msgstr "Teljesképernyős mód ki-/bekapcsolása"
 
 msgid "media_desc"
-msgstr "Media invoegen/bewerken"
+msgstr "Beágyazott média beszúrása/szerkesztése"
 
 msgid "media_edit"
-msgstr "Media bewerken"
+msgstr "Beágyazott média szerkesztése"
 
 msgid "media_delta_width"
 msgstr ""
@@ -1624,79 +1624,79 @@ msgid "media_delta_height"
 msgstr ""
 
 msgid "media_dlg_title"
-msgstr "Media invoegen/bewerken"
+msgstr "Beágyazott média beszúrása/szerkesztése"
 
 msgid "media_dlg_general"
-msgstr "Algemeen"
+msgstr "Általános"
 
 msgid "media_dlg_advanced"
-msgstr "Geavanceerd"
+msgstr "Haladó"
 
 msgid "media_dlg_file"
-msgstr "Bestand/URL"
+msgstr "Fájl/URL"
 
 msgid "media_dlg_list"
-msgstr "Lijst"
+msgstr "Lista"
 
 msgid "media_dlg_size"
-msgstr "Afmetingen"
+msgstr "Dimenziók"
 
 msgid "media_dlg_preview"
-msgstr "Voorbeeld"
+msgstr "Előnézet"
 
 msgid "media_dlg_constrain_proportions"
-msgstr "Verhouding bewaren"
+msgstr "Aránytartás"
 
 msgid "media_dlg_type"
-msgstr "Type"
+msgstr "Típus"
 
 msgid "media_dlg_id"
 msgstr "Id"
 
 msgid "media_dlg_name"
-msgstr "Naam"
+msgstr "Név"
 
 msgid "media_dlg_class_name"
-msgstr "Klasse"
+msgstr "Osztály"
 
 msgid "media_dlg_vspace"
-msgstr "V-Ruimte"
+msgstr "F-táv"
 
 msgid "media_dlg_hspace"
-msgstr "H-Ruimte"
+msgstr "V-táv"
 
 msgid "media_dlg_play"
-msgstr "Automatisch afspelen"
+msgstr "Automatikus lejátszás"
 
 msgid "media_dlg_loop"
-msgstr "Herhalen"
+msgstr "Ismétlés"
 
 msgid "media_dlg_menu"
-msgstr "Menu Weergeven"
+msgstr "Menü mutatása"
 
 msgid "media_dlg_quality"
-msgstr "Kwaliteit"
+msgstr "Minőség"
 
 msgid "media_dlg_scale"
-msgstr "Schaal"
+msgstr "Nagyítás"
 
 msgid "media_dlg_align"
-msgstr "Uitlijning"
+msgstr "Elrendezés"
 
 msgid "media_dlg_salign"
-msgstr "Schaaluitlijning"
+msgstr "SElrendezés"
 
 msgid "media_dlg_wmode"
-msgstr "WMode"
+msgstr "WMód"
 
 msgid "media_dlg_bgcolor"
-msgstr "Achtergrond"
+msgstr "Háttér"
 
 msgid "media_dlg_base"
-msgstr "Basis"
+msgstr "Base"
 
 msgid "media_dlg_flashvars"
-msgstr "Variabelen"
+msgstr "Flashvars"
 
 msgid "media_dlg_liveconnect"
 msgstr "SWLiveConnect"
@@ -1708,226 +1708,226 @@ msgid "media_dlg_cache"
 msgstr "Cache"
 
 msgid "media_dlg_hidden"
-msgstr "Verborgen"
+msgstr "Rejtett"
 
 msgid "media_dlg_controller"
-msgstr "Controller"
+msgstr "Vezérlő"
 
 msgid "media_dlg_kioskmode"
-msgstr "Kioskmodus"
+msgstr "Kiosk mód"
 
 msgid "media_dlg_playeveryframe"
-msgstr "Elk frame afspelen"
+msgstr "Minden kocka lejátszása"
 
 msgid "media_dlg_targetcache"
-msgstr "Doelcache"
+msgstr "Cél cache"
 
 msgid "media_dlg_correction"
-msgstr "Geen correctie"
+msgstr "Nincs javítás"
 
 msgid "media_dlg_enablejavascript"
-msgstr "JavaScript Inschakelen"
+msgstr "JavaScript engedése"
 
 msgid "media_dlg_starttime"
-msgstr "Starttijd"
+msgstr "Kezdési idő"
 
 msgid "media_dlg_endtime"
-msgstr "Eindtijd"
+msgstr "Záró idő"
 
 msgid "media_dlg_href"
-msgstr "HREF"
+msgstr "Href"
 
 msgid "media_dlg_qtsrcchokespeed"
-msgstr "Chokesnelheid"
+msgstr "Folytás sebessége"
 
 msgid "media_dlg_target"
-msgstr "Doel"
+msgstr "Cél"
 
 msgid "media_dlg_volume"
-msgstr "Volume"
+msgstr "Hangerő"
 
 msgid "media_dlg_autostart"
-msgstr "Automatisch afspelen"
+msgstr "Automatikus kezdés"
 
 msgid "media_dlg_enabled"
-msgstr "Ingeschakeld"
+msgstr "Engedélyezve"
 
 msgid "media_dlg_fullscreen"
-msgstr "Volledig scherm"
+msgstr "Teljes képernyő"
 
 msgid "media_dlg_invokeurls"
-msgstr "URLs laden"
+msgstr "URL-ek bevonása"
 
 msgid "media_dlg_mute"
-msgstr "Geluid dempen"
+msgstr "Néma"
 
 msgid "media_dlg_stretchtofit"
-msgstr "Passend maken"
+msgstr "Nyújtva igazítás"
 
 msgid "media_dlg_windowlessvideo"
-msgstr "Video zonder venster"
+msgstr "Ablak nélküli videó"
 
 msgid "media_dlg_balance"
-msgstr "Balans"
+msgstr "Balance"
 
 msgid "media_dlg_baseurl"
-msgstr "BasisURL"
+msgstr "Base URL"
 
 msgid "media_dlg_captioningid"
-msgstr "Ondertiteling id"
+msgstr "Captioning id"
 
 msgid "media_dlg_currentmarker"
-msgstr "Huidige markering"
+msgstr "Aktuális marker"
 
 msgid "media_dlg_currentposition"
-msgstr "Huidige positie"
+msgstr "Aktuális pozíció"
 
 msgid "media_dlg_defaultframe"
-msgstr "Standaard frame"
+msgstr "Alapértelmezett frame"
 
 msgid "media_dlg_playcount"
-msgstr "Afspeelteller"
+msgstr "Lejátszásszám"
 
 msgid "media_dlg_rate"
-msgstr "Snelheid"
+msgstr "Rate"
 
 msgid "media_dlg_uimode"
-msgstr "UI Modus"
+msgstr "UI Mód"
 
 msgid "media_dlg_flash_options"
-msgstr "Flash opties"
+msgstr "Flash beállításai"
 
 msgid "media_dlg_qt_options"
-msgstr "Quicktime opties"
+msgstr "Quicktime beállításai"
 
 msgid "media_dlg_wmp_options"
-msgstr "Windows mediaspeler opties"
+msgstr "Windows media player beállításai"
 
 msgid "media_dlg_rmp_options"
-msgstr "Real mediaspeler opties"
+msgstr "Real media player beállításai"
 
 msgid "media_dlg_shockwave_options"
-msgstr "Shockwave opties"
+msgstr "Shockwave beállításai"
 
 msgid "media_dlg_autogotourl"
-msgstr "Automatisch naar URL"
+msgstr "Automatikus URL-re ugrás"
 
 msgid "media_dlg_center"
-msgstr "Centreren"
+msgstr "Középre"
 
 msgid "media_dlg_imagestatus"
-msgstr "Afbeeldingstatus"
+msgstr "Kép állapot"
 
 msgid "media_dlg_maintainaspect"
-msgstr "Verhouding bewaren"
+msgstr "Aránytartás"
 
 msgid "media_dlg_nojava"
-msgstr "Geen java"
+msgstr "Nincs java"
 
 msgid "media_dlg_prefetch"
-msgstr "Voorladen"
+msgstr "Előtöltés"
 
 msgid "media_dlg_shuffle"
-msgstr "Willekeurige volgorde"
+msgstr "Véletlenszerű"
 
 msgid "media_dlg_console"
 msgstr "Console"
 
 msgid "media_dlg_numloop"
-msgstr "Aantal herhalingen"
+msgstr "Ismétlésszám"
 
 msgid "media_dlg_controls"
-msgstr "Bediening"
+msgstr "Kezelők"
 
 msgid "media_dlg_scriptcallbacks"
 msgstr "Script callbacks"
 
 msgid "media_dlg_swstretchstyle"
-msgstr "Schaal"
+msgstr "Nyújtás stílus"
 
 msgid "media_dlg_swstretchhalign"
-msgstr "H-Schaal"
+msgstr "Nyújtás V-igazítás"
 
 msgid "media_dlg_swstretchvalign"
-msgstr "V-Schaal"
+msgstr "Nyújtás F-igazítás"
 
 msgid "media_dlg_sound"
-msgstr "Geluid"
+msgstr "Hang"
 
 msgid "media_dlg_progress"
-msgstr "Voortgang"
+msgstr "Folymat"
 
 msgid "media_dlg_qtsrc"
-msgstr "Quicktime bron"
+msgstr "QT Src"
 
 msgid "media_dlg_qt_stream_warn"
-msgstr "Gestreamde RTSP bronnen dienen op het tabblad geavanceerd bij Quicktime bron te worden opgegeven.\nDe niet-gestreamde versie kan dan bij het tabblad algemeen worden opgegeven."
+msgstr "Streamelt rtsp források a QT Src mezőbe valók a haladó lapon.\nHozzá kellene adnia egy nem streamelt verziót a Src mezőben."
 
 msgid "media_dlg_align_top"
-msgstr "Boven"
+msgstr "Fent"
 
 msgid "media_dlg_align_right"
-msgstr "Rechts"
+msgstr "Jobbra"
 
 msgid "media_dlg_align_bottom"
-msgstr "Onder"
+msgstr "Lent"
 
 msgid "media_dlg_align_left"
-msgstr "Links"
+msgstr "Balra"
 
 msgid "media_dlg_align_center"
-msgstr "Centreren"
+msgstr "Középen"
 
 msgid "media_dlg_align_top_left"
-msgstr "Linksboven"
+msgstr "Bal-fent"
 
 msgid "media_dlg_align_top_right"
-msgstr "Rechtsboven"
+msgstr "Jobb-fent"
 
 msgid "media_dlg_align_bottom_left"
-msgstr "Linksonder"
+msgstr "Bal-lent"
 
 msgid "media_dlg_align_bottom_right"
-msgstr "Rechtsonder"
+msgstr "Bal-jobbra"
 
 msgid "media_dlg_flv_options"
-msgstr "Flash video-opties"
+msgstr "Flash videó beállításai"
 
 msgid "media_dlg_flv_scalemode"
-msgstr "Schaalmodus"
+msgstr "Nagyítás mód"
 
 msgid "media_dlg_flv_buffer"
 msgstr "Buffer"
 
 msgid "media_dlg_flv_startimage"
-msgstr "Startafbeelding"
+msgstr "Start kép"
 
 msgid "media_dlg_flv_starttime"
-msgstr "Starttijd"
+msgstr "Start idő"
 
 msgid "media_dlg_flv_defaultvolume"
-msgstr "Standaard volume"
+msgstr "Alapértelmezett hangerő"
 
 msgid "media_dlg_flv_hiddengui"
-msgstr "GUI verbergen"
+msgstr "Rejtett GUI"
 
 msgid "media_dlg_flv_autostart"
-msgstr "Automatisch afspelen"
+msgstr "Autó start"
 
 msgid "media_dlg_flv_loop"
-msgstr "Herhalen"
+msgstr "Ismétlés"
 
 msgid "media_dlg_flv_showscalemodes"
-msgstr "Schaalmodus weergeven"
+msgstr "Nagyítási módok mutatása"
 
 msgid "media_dlg_flv_smoothvideo"
-msgstr "Soepele video"
+msgstr "Videó simítása"
 
 msgid "media_dlg_flv_jscallback"
 msgstr "JS Callback"
 
 msgid "fullpage_desc"
-msgstr "Documenteigenschappen"
+msgstr "Dokumentum tulajdonságai"
 
 msgid "fullpage_delta_width"
 msgstr ""
@@ -1936,238 +1936,238 @@ msgid "fullpage_delta_height"
 msgstr ""
 
 msgid "fullpage_dlg_title"
-msgstr "Documenteigenschappen"
+msgstr "Dokumentum tulajdonságai"
 
 msgid "fullpage_dlg_meta_tab"
-msgstr "Algemeen"
+msgstr "Általános"
 
 msgid "fullpage_dlg_appearance_tab"
-msgstr "Weergave"
+msgstr "Megjelenés"
 
 msgid "fullpage_dlg_advanced_tab"
-msgstr "Geavanceerd"
+msgstr "Haladó"
 
 msgid "fullpage_dlg_meta_props"
-msgstr "Meta informatie"
+msgstr "Meta információ"
 
 msgid "fullpage_dlg_langprops"
-msgstr "Taal en codering"
+msgstr "Nyelv és kódolás"
 
 msgid "fullpage_dlg_meta_title"
-msgstr "Titel"
+msgstr "Cím"
 
 msgid "fullpage_dlg_meta_keywords"
-msgstr "Sleutelwoorden"
+msgstr "Kulcsszavak"
 
 msgid "fullpage_dlg_meta_description"
-msgstr "Beschrijving"
+msgstr "Leírás"
 
 msgid "fullpage_dlg_meta_robots"
-msgstr "Robots"
+msgstr "Robotok"
 
 msgid "fullpage_dlg_doctypes"
 msgstr "Doctype"
 
 msgid "fullpage_dlg_langcode"
-msgstr "Taalcode"
+msgstr "Nyelvkód"
 
 msgid "fullpage_dlg_langdir"
-msgstr "Taalrichting"
+msgstr "Írás iránya"
 
 msgid "fullpage_dlg_ltr"
-msgstr "Van links naar rechts"
+msgstr "Balról jobra"
 
 msgid "fullpage_dlg_rtl"
-msgstr "Van rechts naar links"
+msgstr "Jobbról balra"
 
 msgid "fullpage_dlg_xml_pi"
-msgstr "XML toewijzing"
+msgstr "XML deklaráció"
 
 msgid "fullpage_dlg_encoding"
-msgstr "Karaktercodering"
+msgstr "Karakterkódolás"
 
 msgid "fullpage_dlg_appearance_bgprops"
-msgstr "Achtergrondeigenschappen"
+msgstr "Háttér tulajdonságai"
 
 msgid "fullpage_dlg_appearance_marginprops"
-msgstr "Bodymarge"
+msgstr "Test keret"
 
 msgid "fullpage_dlg_appearance_linkprops"
-msgstr "Linkkleuren"
+msgstr "Link színek"
 
 msgid "fullpage_dlg_appearance_textprops"
-msgstr "Teksteigenschappen"
+msgstr "Szöveg tulajdonságai"
 
 msgid "fullpage_dlg_bgcolor"
-msgstr "Achtergrondkleur"
+msgstr "Háttérszín"
 
 msgid "fullpage_dlg_bgimage"
-msgstr "Achtergrondafbeelding"
+msgstr "Háttérkép"
 
 msgid "fullpage_dlg_left_margin"
-msgstr "Linkermarge"
+msgstr "Bal margó"
 
 msgid "fullpage_dlg_right_margin"
-msgstr "Rechtermarge"
+msgstr "Jobb margó"
 
 msgid "fullpage_dlg_top_margin"
-msgstr "Bovenmarge"
+msgstr "Felső margó"
 
 msgid "fullpage_dlg_bottom_margin"
-msgstr "Ondermarge"
+msgstr "Alsó margó"
 
 msgid "fullpage_dlg_text_color"
-msgstr "Tekstkleur"
+msgstr "Szövegszín"
 
 msgid "fullpage_dlg_font_size"
-msgstr "Tekengrootte"
+msgstr "Betűméret"
 
 msgid "fullpage_dlg_font_face"
-msgstr "Lettertype"
+msgstr "Betűtípus"
 
 msgid "fullpage_dlg_link_color"
-msgstr "Linkkleur"
+msgstr "Link szín"
 
 msgid "fullpage_dlg_hover_color"
-msgstr "Hoverkleur"
+msgstr "Fölévitt szín"
 
 msgid "fullpage_dlg_visited_color"
-msgstr "Bezocht kleur"
+msgstr "Látogatva szín"
 
 msgid "fullpage_dlg_active_color"
-msgstr "Actieve kleur"
+msgstr "Aktív szín"
 
 msgid "fullpage_dlg_textcolor"
-msgstr "Kleur"
+msgstr "Szín"
 
 msgid "fullpage_dlg_fontsize"
-msgstr "Tekengrootte"
+msgstr "Betűméret"
 
 msgid "fullpage_dlg_fontface"
-msgstr "Lettertype"
+msgstr "Betűtípus"
 
 msgid "fullpage_dlg_meta_index_follow"
-msgstr "Links indexeren en volgen"
+msgstr "Indexel és követi a linkeket"
 
 msgid "fullpage_dlg_meta_index_nofollow"
-msgstr "Links indexeren maar niet volgen"
+msgstr "Indexel, de nem követi a linkeket"
 
 msgid "fullpage_dlg_meta_noindex_follow"
-msgstr "Links volgen maar niet indexeren"
+msgstr "Nem indexel, de követi a linkeket"
 
 msgid "fullpage_dlg_meta_noindex_nofollow"
-msgstr "Links niet indexeren en niet volgen"
+msgstr "Nem indexel és nem követi a linkeket"
 
 msgid "fullpage_dlg_appearance_style"
-msgstr "Stijlblad en stijleigenschappen"
+msgstr "Stylesheet és style tulajdonságok"
 
 msgid "fullpage_dlg_stylesheet"
-msgstr "Stijlblad"
+msgstr "Stylesheet"
 
 msgid "fullpage_dlg_style"
-msgstr "Stijl"
+msgstr "Style"
 
 msgid "fullpage_dlg_author"
-msgstr "Auteur"
+msgstr "Szerző"
 
 msgid "fullpage_dlg_copyright"
 msgstr "Copyright"
 
 msgid "fullpage_dlg_add"
-msgstr "Nieuw element toevoegen"
+msgstr "Új elem hozzáadása"
 
 msgid "fullpage_dlg_remove"
-msgstr "Geselecteerde elementen verwijderen"
+msgstr "Kijelölt elem törlése"
 
 msgid "fullpage_dlg_moveup"
-msgstr "Geselecteerde elementen omhoog verplaatsen"
+msgstr "Kijelölt elem felfelé mozgatása"
 
 msgid "fullpage_dlg_movedown"
-msgstr "Geselecteerde elementen omlaag verplaatsen"
+msgstr "Kijelölt elem lefelé mozgatása"
 
 msgid "fullpage_dlg_head_elements"
-msgstr "Kopelementen"
+msgstr "Fej elemek"
 
 msgid "fullpage_dlg_info"
-msgstr "Informatie"
+msgstr "Információ"
 
 msgid "fullpage_dlg_add_title"
-msgstr "Titelelement"
+msgstr "Cím elem"
 
 msgid "fullpage_dlg_add_meta"
-msgstr "Meta-element"
+msgstr "Meta elem"
 
 msgid "fullpage_dlg_add_script"
-msgstr "Scriptelement"
+msgstr "Script elem"
 
 msgid "fullpage_dlg_add_style"
-msgstr "Stijlelement"
+msgstr "Style elem"
 
 msgid "fullpage_dlg_add_link"
-msgstr "Linkelement"
+msgstr "Link elem"
 
 msgid "fullpage_dlg_add_base"
-msgstr "Basiselement"
+msgstr "Base elem"
 
 msgid "fullpage_dlg_add_comment"
-msgstr "Opmerkingknooppunt"
+msgstr "Comment elem"
 
 msgid "fullpage_dlg_title_element"
-msgstr "Titelelement"
+msgstr "Title elem"
 
 msgid "fullpage_dlg_script_element"
-msgstr "Scriptelement"
+msgstr "Script elem"
 
 msgid "fullpage_dlg_style_element"
-msgstr "Stijlelement"
+msgstr "Style elem"
 
 msgid "fullpage_dlg_base_element"
-msgstr "Basiselement"
+msgstr "Base elem"
 
 msgid "fullpage_dlg_link_element"
-msgstr "Linkelement"
+msgstr "Link elem"
 
 msgid "fullpage_dlg_meta_element"
-msgstr "Meta-element"
+msgstr "Meta elem"
 
 msgid "fullpage_dlg_comment_element"
-msgstr "Opmerking"
+msgstr "Megjegyzés"
 
 msgid "fullpage_dlg_src"
-msgstr "Bron"
+msgstr "Src"
 
 msgid "fullpage_dlg_language"
-msgstr "Taal"
+msgstr "Language"
 
 msgid "fullpage_dlg_href"
 msgstr "Href"
 
 msgid "fullpage_dlg_target"
-msgstr "Doel"
+msgstr "Target"
 
 msgid "fullpage_dlg_type"
 msgstr "Type"
 
 msgid "fullpage_dlg_charset"
-msgstr "Karakterset"
+msgstr "Charset"
 
 msgid "fullpage_dlg_defer"
-msgstr "Uitstellen"
+msgstr "Defer"
 
 msgid "fullpage_dlg_media"
 msgstr "Media"
 
 msgid "fullpage_dlg_properties"
-msgstr "Eigenschappen"
+msgstr "Properties"
 
 msgid "fullpage_dlg_name"
-msgstr "Naam"
+msgstr "Name"
 
 msgid "fullpage_dlg_value"
-msgstr "Waarde"
+msgstr "Value"
 
 msgid "fullpage_dlg_content"
-msgstr "Inhoud"
+msgstr "Content"
 
 msgid "fullpage_dlg_rel"
 msgstr "Rel"
@@ -2176,86 +2176,86 @@ msgid "fullpage_dlg_rev"
 msgstr "Rev"
 
 msgid "fullpage_dlg_hreflang"
-msgstr "Href taal"
+msgstr "Href lang"
 
 msgid "fullpage_dlg_general_props"
-msgstr "Algemeen"
+msgstr "Általános"
 
 msgid "fullpage_dlg_advanced_props"
-msgstr "Geavanceerd"
+msgstr "Haladó"
 
 msgid "template_desc"
-msgstr "Voorgedefinieerd sjabloon invoegen"
+msgstr "Sablon beillesztése"
 
 msgid "template_dlg_title"
-msgstr "Sjablonen"
+msgstr "Sablon beillesztése"
 
 msgid "template_dlg_label"
-msgstr "Sjabloon"
+msgstr "Sablon"
 
 msgid "template_dlg_desc_label"
-msgstr "Beschrijving"
+msgstr "Leírás"
 
 msgid "template_dlg_desc"
-msgstr "Voorgedefinieerd sjabloon invoegen"
+msgstr "Sablon beillesztése"
 
 msgid "template_dlg_select"
-msgstr "Selecteer een sjabloon"
+msgstr "Sablon választása"
 
 msgid "template_dlg_preview"
-msgstr "Voorbeeld"
+msgstr "Előnézet"
 
 msgid "template_dlg_warning"
-msgstr "Waarschuwing: het bijwerken van een sjabloon met een andere kan het verlies van informatie tot gevolg hebben."
+msgstr "Figyelem: Egy már alkalmazott sablon frissítése másikkal adatvesztéssel járhat."
 
 msgid "template_dlg_mdate_format"
-msgstr "%d-%m-%Y %H:%M:%S"
+msgstr "%Y.%m.%d. %H:%M:%S"
 
 msgid "template_dlg_cdate_format"
-msgstr "%d-%m-%Y %H:%M:%S"
+msgstr "%Y.%m.%d. %H:%M:%S"
 
 msgid "template_dlg_months_long"
-msgstr "Januari,Februari,Maart,April,Mei,Juni,Juli,Augustus,September,Oktober,November,December"
+msgstr "január,február,március,április,május,június,július,augusztus,szeptember,október,november,december"
 
 msgid "template_dlg_months_short"
-msgstr "Jan,Feb,Mar,Apr,Mei,Jun,Jul,Aug,Sep,Okt,Nov,Dec"
+msgstr "jan,feb,már,ápr,máj,jún,júl,aug,szep,okt,nov,dec"
 
 msgid "template_dlg_day_long"
-msgstr "Zondag,Maandag,Dinsdag,Woensdag,Donderdag,Vrijdag,Zaterdag,Zondag"
+msgstr "vasárnap,hétfő,kedd,szerda,csütörtök,péntek,szombat,vasárnap"
 
 msgid "template_dlg_day_short"
-msgstr "zo,ma,di,wo,do,vr,za,zo"
+msgstr "V,H,K,Sze,Cs,P,Szo,V"
 
 msgid "visualchars_desc"
-msgstr "Zichtbare symbolen"
+msgstr "Vizuális vezérlőkarakterek be/ki."
 
 msgid "spellchecker_desc"
-msgstr "Spellingcontrole"
+msgstr "Helyesírás-ellenőrző ki-/bekapcsolása"
 
 msgid "spellchecker_menu"
-msgstr "Instellingen spellingcontrole"
+msgstr "Helyesírás-ellenőrző tulajdonságai"
 
 msgid "spellchecker_ignore_word"
-msgstr "Woord negeren"
+msgstr "Szó kihagyása"
 
 msgid "spellchecker_ignore_words"
-msgstr "Alles negeren"
+msgstr "Mindet kihagy"
 
 msgid "spellchecker_langs"
-msgstr "Talen"
+msgstr "Nyelvek"
 
 msgid "spellchecker_wait"
-msgstr "Een ogenblik geduld…"
+msgstr "Kérem, várjon..."
 
 msgid "spellchecker_sug"
-msgstr "Suggesties"
+msgstr "Ajánlások"
 
 msgid "spellchecker_no_sug"
-msgstr "Geen suggesties"
+msgstr "Nincs ajánlás"
 
 msgid "spellchecker_no_mpell"
-msgstr "Geen spelfouten gevonden."
+msgstr "Nem találtam helyesírási hibát."
 
 msgid "pagebreak_desc"
-msgstr "Pagina-einde invoegen"
+msgstr "Oldaltörés beszúrása."
 

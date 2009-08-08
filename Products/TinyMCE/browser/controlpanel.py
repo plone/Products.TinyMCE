@@ -21,7 +21,7 @@ from Products.TinyMCE.interfaces.utility import ITinyMCEResourceTypes
 from Products.TinyMCE.browser.interfaces.controlpanel import ITinyMCEControlPanelForm
 from Products.TinyMCE.setuphandlers import install_mimetype_and_transforms, uninstall_mimetype_and_transforms
 
-_ = MessageFactory('tinymce')
+_ = MessageFactory('plone.tinymce')
 
 class TinyMCEControlPanelForm(ControlPanelForm):
     """TinyMCE Control Panel Form"""

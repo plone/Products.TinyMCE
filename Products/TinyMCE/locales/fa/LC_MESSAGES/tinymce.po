@@ -1,0 +1,2261 @@
+# This is the Persian language pack for TinyMCE.
+# Version 2.8
+#
+# Farhad Sakhaei (www.farsicms.com - farhad0@gmail.com)
+msgid ""
+msgstr ""
+"Project-Id-Version: Products.TinyMCE\n"
+"POT-Creation-Date: 2000-01-01 00:00+0000\n"
+"PO-Revision-Date: 2009-05-30 00:00+0000\n"
+"Last-Translator: Farhad Sakhaei (www.farsicms.com - farhad0@gmail.com)\n"
+"Language-Team: Farhad Sakhaei (www.farsicms.com - farhad0@gmail.com)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: fa\n"
+"Language-Name: Persian\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: tinymce\n"
+
+msgid "common_edit_confirm"
+msgstr "آیا شما مایلید تا از حالت ویرایشگر WYSIWYG برای این ناحیه متنی استفاده نمائید؟"
+
+msgid "common_apply"
+msgstr "بكارگیری"
+
+msgid "common_insert"
+msgstr "درج"
+
+msgid "common_update"
+msgstr "بروزرسانی"
+
+msgid "common_cancel"
+msgstr "انصراف"
+
+msgid "common_close"
+msgstr "بستن"
+
+msgid "common_browse"
+msgstr "مرور"
+
+msgid "common_class_name"
+msgstr "كلاس"
+
+msgid "common_not_set"
+msgstr "-- تنظیم نشده --"
+
+msgid "common_clipboard_msg"
+msgstr "كپی/برش (Cut)/چسباندن (Paste) در Mozilla و Firefox قابل دسترس نمی باشد.\nآیا شما اطلاعات بیشتری درباره این موضوع می خواهید؟"
+
+msgid "common_clipboard_no_support"
+msgstr "در حال حاضر توسط مرورگر شما پشتیبانی نمی شود ، به جای آن از میانبرهای (Shortcut) صفحه كلید استفاده نمائید."
+
+msgid "common_popup_blocked"
+msgstr "با عرض پوزش ، ما اطلاع داده بودیم كه مدافع پنجره باز شوی (Popup) شما ، پنجره ای را كه قابلیت برنامه كاربردی را ارائه می كرد ، غیر فعال كرده است. شما نیاز به غیر فعال كردن مدافع پنجره باز شو (Popup) در این سایت را دارید تا از این ابزار به صورت كامل استفاده نمائید."
+
+msgid "common_invalid_data"
+msgstr "خطا: مقادیر نامعتبر وارد شد ، آنها به رنگ قرمز علامت خورده اند."
+
+msgid "common_more_colors"
+msgstr "رنگ های بیشتر"
+
+msgid "simple_bold_desc"
+msgstr "ضخیم (Ctrl+B)"
+
+msgid "simple_italic_desc"
+msgstr "كج (Ctrl+I)"
+
+msgid "simple_underline_desc"
+msgstr "زیر خط (Ctrl+U)"
+
+msgid "simple_striketrough_desc"
+msgstr "خط وسط"
+
+msgid "simple_bullist_desc"
+msgstr "لیست نامرتب"
+
+msgid "simple_numlist_desc"
+msgstr "لیست مرتب"
+
+msgid "simple_undo_desc"
+msgstr "انجام عمل قبل (Ctrl+Z)"
+
+msgid "simple_redo_desc"
+msgstr "انجام عمل بعد (Ctrl+Y)"
+
+msgid "simple_cleanup_desc"
+msgstr "پاك سازی كد های بهم خورده"
+
+msgid "advanced_style_select"
+msgstr "استیل ها"
+
+msgid "advanced_font_size"
+msgstr "اندازه قلم"
+
+msgid "advanced_fontdefault"
+msgstr "خانواده قلم"
+
+msgid "advanced_block"
+msgstr "قالب"
+
+msgid "advanced_paragraph"
+msgstr "پاراگراف"
+
+msgid "advanced_div"
+msgstr "Div"
+
+msgid "advanced_address"
+msgstr "آدرس"
+
+msgid "advanced_pre"
+msgstr "قالب بندی شده از قبل"
+
+msgid "advanced_h1"
+msgstr "عنوان گذاری ۱"
+
+msgid "advanced_h2"
+msgstr "عنوان گذاری 2"
+
+msgid "advanced_h3"
+msgstr "عنوان گذاری 3"
+
+msgid "advanced_h4"
+msgstr "عنوان گذاری 4"
+
+msgid "advanced_h5"
+msgstr "عنوان گذاری 5"
+
+msgid "advanced_h6"
+msgstr "عنوان گذاری 6"
+
+msgid "advanced_blockquote"
+msgstr "بلوك نقل قول"
+
+msgid "advanced_code"
+msgstr "كد"
+
+msgid "advanced_samp"
+msgstr "نمونه كد"
+
+msgid "advanced_dt"
+msgstr "تعریف واژه "
+
+msgid "advanced_dd"
+msgstr "تعریف توضیح"
+
+msgid "advanced_bold_desc"
+msgstr "ضخیم (Ctrl+B)"
+
+msgid "advanced_italic_desc"
+msgstr "كج (Ctrl+I)"
+
+msgid "advanced_underline_desc"
+msgstr "زیر خط (Ctrl+U)"
+
+msgid "advanced_striketrough_desc"
+msgstr "خط وسط"
+
+msgid "advanced_justifyleft_desc"
+msgstr "تراز چپ"
+
+msgid "advanced_justifycenter_desc"
+msgstr "تراز وسط"
+
+msgid "advanced_justifyright_desc"
+msgstr "تراز راست"
+
+msgid "advanced_justifyfull_desc"
+msgstr "تراز كامل"
+
+msgid "advanced_bullist_desc"
+msgstr "لیست نامرتب"
+
+msgid "advanced_numlist_desc"
+msgstr "لیست مرتب"
+
+msgid "advanced_outdent_desc"
+msgstr "بیرون آمدگی"
+
+msgid "advanced_indent_desc"
+msgstr "تورفتگی"
+
+msgid "advanced_undo_desc"
+msgstr "انجام عمل قبل (Ctrl+Z)"
+
+msgid "advanced_redo_desc"
+msgstr "انجام عمل بعد (Ctrl+Y)"
+
+msgid "advanced_link_desc"
+msgstr "درج/ویرایش لینك"
+
+msgid "advanced_unlink_desc"
+msgstr "غیر لینك كردن"
+
+msgid "advanced_image_desc"
+msgstr "درج/ویرایش تصویر"
+
+msgid "advanced_cleanup_desc"
+msgstr "پاك سازی كد های بهم خورده"
+
+msgid "advanced_code_desc"
+msgstr "ویرایش سورس HTML"
+
+msgid "advanced_sub_desc"
+msgstr "پایین نویس"
+
+msgid "advanced_sup_desc"
+msgstr "بالا نویس"
+
+msgid "advanced_hr_desc"
+msgstr "درج خط افقی"
+
+msgid "advanced_removeformat_desc"
+msgstr "حذف قالب بندی"
+
+msgid "advanced_custom1_desc"
+msgstr "توضیح سفارشی شما در اینجا"
+
+msgid "advanced_forecolor_desc"
+msgstr "انتخاب رنگ متن"
+
+msgid "advanced_backcolor_desc"
+msgstr "انتخاب رنگ زمینه"
+
+msgid "advanced_charmap_desc"
+msgstr "درج كاراكتر سفارشی"
+
+msgid "advanced_visualaid_desc"
+msgstr "تعویض عناصر خطوط راهنما/غیر قابل نمایان"
+
+msgid "advanced_anchor_desc"
+msgstr "درج/ویرایش لنگر"
+
+msgid "advanced_cut_desc"
+msgstr "برش (Cut)"
+
+msgid "advanced_copy_desc"
+msgstr "كپی"
+
+msgid "advanced_paste_desc"
+msgstr "چسباندن (Paste)"
+
+msgid "advanced_image_props_desc"
+msgstr "مشخصات تصویر"
+
+msgid "advanced_newdocument_desc"
+msgstr "سند جدید"
+
+msgid "advanced_help_desc"
+msgstr "راهنمایی"
+
+msgid "advanced_blockquote_desc"
+msgstr "بلوك نقل قول"
+
+msgid "advanced_clipboard_msg"
+msgstr "كپی/برش (Cut)/چسباندن (Paste) در Mozilla و Firefox قابل دسترس نمی باشد.\r\nآیا شما اطلاعات بیشتری درباره این موضوع می خواهید؟"
+
+msgid "advanced_path"
+msgstr "مسیر"
+
+msgid "advanced_newdocument"
+msgstr "آیا شما می خواهید تا تمامی محتوا را پاك كنید؟"
+
+msgid "advanced_toolbar_focus"
+msgstr "پرش به دكمه های ابزار - Alt+Q ، پرش به ویرایشگر - Alt-Z ، پرش به مسیر عنصر - Alt-X"
+
+msgid "advanced_more_colors"
+msgstr "رنگهای بیشتر"
+
+msgid "advanced_image_delta_width"
+msgstr ""
+
+msgid "advanced_image_delta_height"
+msgstr ""
+
+msgid "advanced_link_delta_width"
+msgstr ""
+
+msgid "advanced_link_delta_height"
+msgstr ""
+
+msgid "advanced_colorpicker_delta_width"
+msgstr ""
+
+msgid "advanced_colorpicker_delta_height"
+msgstr ""
+
+msgid "advanced_charmap_delta_width"
+msgstr ""
+
+msgid "advanced_charmap_delta_height"
+msgstr ""
+
+msgid "advanced_anchor_delta_width"
+msgstr ""
+
+msgid "advanced_anchor_delta_height"
+msgstr ""
+
+msgid "advanced_dlg_about_title"
+msgstr "درباره TinyMCE"
+
+msgid "advanced_dlg_about_general"
+msgstr "درباره"
+
+msgid "advanced_dlg_about_help"
+msgstr "راهنمایی"
+
+msgid "advanced_dlg_about_license"
+msgstr "لیسانس"
+
+msgid "advanced_dlg_about_plugins"
+msgstr "الحاقات"
+
+msgid "advanced_dlg_about_plugin"
+msgstr "الحاقه"
+
+msgid "advanced_dlg_about_author"
+msgstr "مؤلف"
+
+msgid "advanced_dlg_about_version"
+msgstr "نسخه"
+
+msgid "advanced_dlg_about_loaded"
+msgstr "الحاقات بارگذاری شده"
+
+msgid "advanced_dlg_anchor_title"
+msgstr "درج/ویرایش لنگر (Anchor)"
+
+msgid "advanced_dlg_anchor_name"
+msgstr "نام لنگر (Anchor)"
+
+msgid "advanced_dlg_code_title"
+msgstr "ویرایش سورس HTML"
+
+msgid "advanced_dlg_code_wordwrap"
+msgstr "شكستن خطوط"
+
+msgid "advanced_dlg_colorpicker_title"
+msgstr "انتخاب یك رنگ"
+
+msgid "advanced_dlg_colorpicker_picker_tab"
+msgstr "انتخاب كننده"
+
+msgid "advanced_dlg_colorpicker_picker_title"
+msgstr "انتخاب كننده رنگ"
+
+msgid "advanced_dlg_colorpicker_palette_tab"
+msgstr "الگو"
+
+msgid "advanced_dlg_colorpicker_palette_title"
+msgstr "رنگ های الگو"
+
+msgid "advanced_dlg_colorpicker_named_tab"
+msgstr "نام دار"
+
+msgid "advanced_dlg_colorpicker_named_title"
+msgstr "رنگ های نام دار"
+
+msgid "advanced_dlg_colorpicker_color"
+msgstr "رنگ:"
+
+msgid "advanced_dlg_colorpicker_name"
+msgstr "نام:"
+
+msgid "advanced_dlg_charmap_title"
+msgstr "انتخاب كاراكتر سفارشی"
+
+msgid "advanced_dlg_image_title"
+msgstr "درج/ویرایش تصویر"
+
+msgid "advanced_dlg_image_src"
+msgstr "URL تصویر"
+
+msgid "advanced_dlg_image_alt"
+msgstr "توضیح تصویر"
+
+msgid "advanced_dlg_image_list"
+msgstr "لیست تصویر"
+
+msgid "advanced_dlg_image_border"
+msgstr "حاشیه"
+
+msgid "advanced_dlg_image_dimensions"
+msgstr "ابعاد"
+
+msgid "advanced_dlg_image_vspace"
+msgstr "فاصله عمودی"
+
+msgid "advanced_dlg_image_hspace"
+msgstr "فاصله افقی"
+
+msgid "advanced_dlg_image_align"
+msgstr "تراز"
+
+msgid "advanced_dlg_image_align_baseline"
+msgstr "خط پایه"
+
+msgid "advanced_dlg_image_align_top"
+msgstr "بالا"
+
+msgid "advanced_dlg_image_align_middle"
+msgstr "وسط"
+
+msgid "advanced_dlg_image_align_bottom"
+msgstr "پایین"
+
+msgid "advanced_dlg_image_align_texttop"
+msgstr "بالا متن"
+
+msgid "advanced_dlg_image_align_textbottom"
+msgstr "پایین متن"
+
+msgid "advanced_dlg_image_align_left"
+msgstr "چپ"
+
+msgid "advanced_dlg_image_align_right"
+msgstr "راست"
+
+msgid "advanced_dlg_link_title"
+msgstr "درج/ویرایش لینك"
+
+msgid "advanced_dlg_link_url"
+msgstr "URL لینك"
+
+msgid "advanced_dlg_link_target"
+msgstr "مقصد (Target)"
+
+msgid "advanced_dlg_link_target_same"
+msgstr "بازشدن لینك در همان پنجره"
+
+msgid "advanced_dlg_link_target_blank"
+msgstr "باز شدن لینك در یك پنجره جدید"
+
+msgid "advanced_dlg_link_titlefield"
+msgstr "عنوان"
+
+msgid "advanced_dlg_link_is_email"
+msgstr "URL ی كه شما وارد نموده اید به نظر می آید كه یك آدرس ایمیل می باشد ، آیا مایلید تا پیشوند اجباری لازمه :mailto را اضافه نمائید؟"
+
+msgid "advanced_dlg_link_is_external"
+msgstr "URL ی كه شما وارد نموده اید به نظر می آید كه لینك خارجی می باشد ، آیا مایلید تا پیشوند لازمه //:http را اضافه نمائید؟"
+
+msgid "advanced_dlg_link_list"
+msgstr "لیست لینك"
+
+msgid "contextmenu_align"
+msgstr "تراز"
+
+msgid "contextmenu_left"
+msgstr "چپ"
+
+msgid "contextmenu_center"
+msgstr "وسط"
+
+msgid "contextmenu_right"
+msgstr "راست"
+
+msgid "contextmenu_full"
+msgstr "كامل"
+
+msgid "insertdatetime_date_fmt"
+msgstr "%Y-%m-%d"
+
+msgid "insertdatetime_time_fmt"
+msgstr "%H:%M:%S"
+
+msgid "insertdatetime_insertdate_desc"
+msgstr "درج تاریخ"
+
+msgid "insertdatetime_inserttime_desc"
+msgstr "درج زمان"
+
+msgid "insertdatetime_months_long"
+msgstr "ژانویه,فوریه,مارس,آوریل,مه,ژوئن,ژوئیه,اوت,سپتامبر,اكتبر,نوامبر,دسامبر"
+
+msgid "insertdatetime_months_short"
+msgstr "ژانویه,فوریه,مارس,آوریل,مه,ژوئن,ژوئیه,اوت,سپتامبر,اكتبر,نوامبر,دسامبر"
+
+msgid "insertdatetime_day_long"
+msgstr "یكشنبه,دوشنبه,سه شنبه,چهارشنبه,پنج شنبه,جمعه,شنبه,یكشنبه"
+
+msgid "insertdatetime_day_short"
+msgstr "یكشنبه,دوشنبه,سه شنبه,چهارشنبه,پنج شنبه,جمعه,شنبه,یكشنبه"
+
+msgid "print_print_desc"
+msgstr "چاپ"
+
+msgid "preview_preview_desc"
+msgstr "پیش نمایش"
+
+msgid "directionality_ltr_desc"
+msgstr "جهت چپ به راست"
+
+msgid "directionality_rtl_desc"
+msgstr "جهت راست به چپ"
+
+msgid "layer_insertlayer_desc"
+msgstr "درج لایه جدید"
+
+msgid "layer_forward_desc"
+msgstr "انتقال به جلو"
+
+msgid "layer_backward_desc"
+msgstr "انتقال به پشت"
+
+msgid "layer_absolute_desc"
+msgstr "تعویض موقعیت مطلق"
+
+msgid "layer_content"
+msgstr "لایه جدید..."
+
+msgid "save_save_desc"
+msgstr "ذخیره"
+
+msgid "save_cancel_desc"
+msgstr "لغو تمامی تغییرات"
+
+msgid "nonbreaking_nonbreaking_desc"
+msgstr "درج كاراكتر فاصله بدون قطع شدگی"
+
+msgid "iespell_iespell_desc"
+msgstr "اجرای بررسی املاء"
+
+msgid "iespell_download"
+msgstr "ieSpell تشخیص داده نشد. آیا شما مایل به نصب آن هستید؟"
+
+msgid "advhr_advhr_desc"
+msgstr "خط افقی"
+
+msgid "advhr_delta_width"
+msgstr ""
+
+msgid "advhr_delta_height"
+msgstr ""
+
+msgid "advhr_dlg_width"
+msgstr "پهنا"
+
+msgid "advhr_dlg_size"
+msgstr "ارتفاع"
+
+msgid "advhr_dlg_noshade"
+msgstr "بدون سایه"
+
+msgid "emotions_emotions_desc"
+msgstr "شكلك"
+
+msgid "emotions_delta_width"
+msgstr ""
+
+msgid "emotions_delta_height"
+msgstr ""
+
+msgid "emotions_dlg_title"
+msgstr "درج شكلك"
+
+msgid "emotions_dlg_desc"
+msgstr "شكلك ها"
+
+msgid "emotions_dlg_cool"
+msgstr "آرام"
+
+msgid "emotions_dlg_cry"
+msgstr "گریه"
+
+msgid "emotions_dlg_embarassed"
+msgstr "خجالتی"
+
+msgid "emotions_dlg_foot_in_mouth"
+msgstr "پا در دهان"
+
+msgid "emotions_dlg_frown"
+msgstr "اخم"
+
+msgid "emotions_dlg_innocent"
+msgstr "بی تقصیر"
+
+msgid "emotions_dlg_kiss"
+msgstr "بوسه"
+
+msgid "emotions_dlg_laughing"
+msgstr "خنده"
+
+msgid "emotions_dlg_money_mouth"
+msgstr "پول در دهان"
+
+msgid "emotions_dlg_sealed"
+msgstr "مهر شده"
+
+msgid "emotions_dlg_smile"
+msgstr "لبخند"
+
+msgid "emotions_dlg_surprised"
+msgstr "متعجب"
+
+msgid "emotions_dlg_tongue_out"
+msgstr "زبان درازی"
+
+msgid "emotions_dlg_undecided"
+msgstr "مردد"
+
+msgid "emotions_dlg_wink"
+msgstr "چشمك"
+
+msgid "emotions_dlg_yell"
+msgstr "فریاد"
+
+msgid "searchreplace_search_desc"
+msgstr "جستجو"
+
+msgid "searchreplace_replace_desc"
+msgstr "جستجو/تعویض"
+
+msgid "searchreplace_delta_width"
+msgstr ""
+
+msgid "searchreplace_delta_height"
+msgstr ""
+
+msgid "searchreplace_dlg_searchnext_desc"
+msgstr "جستجوی مجدد"
+
+msgid "searchreplace_dlg_notfound"
+msgstr "جستجو كامل شد. رشته جستجو یافته نشد."
+
+msgid "searchreplace_dlg_search_title"
+msgstr "جستجو"
+
+msgid "searchreplace_dlg_replace_title"
+msgstr "جستجو/تعویض"
+
+msgid "searchreplace_dlg_allreplaced"
+msgstr "تمامی رشته جستجو های رخداده تعویض شدند."
+
+msgid "searchreplace_dlg_findwhat"
+msgstr "جستجوی چه چیزی"
+
+msgid "searchreplace_dlg_replacewith"
+msgstr "تعویض با"
+
+msgid "searchreplace_dlg_direction"
+msgstr "جهت"
+
+msgid "searchreplace_dlg_up"
+msgstr "بالا"
+
+msgid "searchreplace_dlg_down"
+msgstr "پایین"
+
+msgid "searchreplace_dlg_mcase"
+msgstr "همسان بودن حروف"
+
+msgid "searchreplace_dlg_findnext"
+msgstr "جستجوی بعدی"
+
+msgid "searchreplace_dlg_replace"
+msgstr "تعویض"
+
+msgid "searchreplace_dlg_replaceall"
+msgstr "تعویض همه"
+
+msgid "advimage_image_desc"
+msgstr "درج/ویرایش تصویر"
+
+msgid "advimage_delta_width"
+msgstr ""
+
+msgid "advimage_delta_height"
+msgstr ""
+
+msgid "advimage_dlg_tab_general"
+msgstr "عمومی"
+
+msgid "advimage_dlg_tab_appearance"
+msgstr "ظاهر"
+
+msgid "advimage_dlg_tab_advanced"
+msgstr "پیشرفته"
+
+msgid "advimage_dlg_general"
+msgstr "عمومی"
+
+msgid "advimage_dlg_title"
+msgstr "عنوان"
+
+msgid "advimage_dlg_preview"
+msgstr "پیش نمایش"
+
+msgid "advimage_dlg_constrain_proportions"
+msgstr "حفظ تناسب"
+
+msgid "advimage_dlg_langdir"
+msgstr "جهت زبان"
+
+msgid "advimage_dlg_langcode"
+msgstr "كد زبان"
+
+msgid "advimage_dlg_long_desc"
+msgstr "لینك توضیح طولانی"
+
+msgid "advimage_dlg_style"
+msgstr "استیل"
+
+msgid "advimage_dlg_classes"
+msgstr "كلاس ها"
+
+msgid "advimage_dlg_ltr"
+msgstr "چپ به راست"
+
+msgid "advimage_dlg_rtl"
+msgstr "راست به چپ"
+
+msgid "advimage_dlg_id"
+msgstr "شناسه"
+
+msgid "advimage_dlg_map"
+msgstr "نقشه تصویر"
+
+msgid "advimage_dlg_swap_image"
+msgstr "تعویض تصویر"
+
+msgid "advimage_dlg_alt_image"
+msgstr "تصویر جایگزین"
+
+msgid "advimage_dlg_mouseover"
+msgstr "برای آمدن موس"
+
+msgid "advimage_dlg_mouseout"
+msgstr "برای رفتن موس"
+
+msgid "advimage_dlg_misc"
+msgstr "متفرقه"
+
+msgid "advimage_dlg_example_img"
+msgstr "تصویر پیش نمایش ظاهر"
+
+msgid "advimage_dlg_missing_alt"
+msgstr "آیا شما از ادامه بدون شامل كردن یك توضیح تصویر اطمینان دارید؟ بدون آن ممكن نیست تصاویر برای برخی كاربرانی كه قبلیت مرور تصاویر را ندارند ، یا آنهایی كه از یك مرورگر متنی استفاده می كنند ، یا در حال مرور وب بدون تصویر می باشند ، قابل دستیابی باشد."
+
+msgid "advimage_dlg_dialog_title"
+msgstr "درج/ویرایش تصویر"
+
+msgid "advimage_dlg_src"
+msgstr "URL تصویر"
+
+msgid "advimage_dlg_alt"
+msgstr "توضیح تصویر"
+
+msgid "advimage_dlg_list"
+msgstr "لیست تصویر"
+
+msgid "advimage_dlg_border"
+msgstr "حاشیه"
+
+msgid "advimage_dlg_dimensions"
+msgstr "ابعاد"
+
+msgid "advimage_dlg_vspace"
+msgstr "فاصله عمودی"
+
+msgid "advimage_dlg_hspace"
+msgstr "فاصله افقی"
+
+msgid "advimage_dlg_align"
+msgstr "تراز"
+
+msgid "advimage_dlg_align_baseline"
+msgstr "خط پایه"
+
+msgid "advimage_dlg_align_top"
+msgstr "بالا"
+
+msgid "advimage_dlg_align_middle"
+msgstr "وسط"
+
+msgid "advimage_dlg_align_bottom"
+msgstr "پایین"
+
+msgid "advimage_dlg_align_texttop"
+msgstr "متن بالا"
+
+msgid "advimage_dlg_align_textbottom"
+msgstr "متن پایین"
+
+msgid "advimage_dlg_align_left"
+msgstr "چپ"
+
+msgid "advimage_dlg_align_right"
+msgstr "راست"
+
+msgid "advimage_dlg_image_list"
+msgstr "لیست تصویر"
+
+msgid "advlink_link_desc"
+msgstr "درج/ویرایش لینك"
+
+msgid "advlink_delta_width"
+msgstr ""
+
+msgid "advlink_delta_height"
+msgstr ""
+
+msgid "advlink_dlg_title"
+msgstr "درج/ویرایش لینك"
+
+msgid "advlink_dlg_url"
+msgstr "URL لینك"
+
+msgid "advlink_dlg_target"
+msgstr "مقصد (Target)"
+
+msgid "advlink_dlg_titlefield"
+msgstr "عنوان"
+
+msgid "advlink_dlg_is_email"
+msgstr "URL ی كه وارد كرده اید به نظر می آید كه یك آدرس ایمیل می باشد ، آیا مایلید تا پیشوند لازمه :mailto را اضافه نمائید؟"
+
+msgid "advlink_dlg_is_external"
+msgstr "URL ی كه وارد كرده اید به نظر می آید كه یك لینك خارجی می باشد ، آیا مایلید تا پیشوند لازمه //:http را اضافه نمائید؟"
+
+msgid "advlink_dlg_list"
+msgstr "لیست لینك"
+
+msgid "advlink_dlg_general_tab"
+msgstr "عمومی"
+
+msgid "advlink_dlg_popup_tab"
+msgstr "پنجره بازشو (Popup)"
+
+msgid "advlink_dlg_events_tab"
+msgstr "رویدادها"
+
+msgid "advlink_dlg_advanced_tab"
+msgstr "پیشرفته"
+
+msgid "advlink_dlg_general_props"
+msgstr "مشخصات عمومی"
+
+msgid "advlink_dlg_popup_props"
+msgstr "مشخصات پنجره بازشو (Popup)"
+
+msgid "advlink_dlg_event_props"
+msgstr "رویدادها"
+
+msgid "advlink_dlg_advanced_props"
+msgstr "مشخصات پیشرفته"
+
+msgid "advlink_dlg_popup_opts"
+msgstr "گزینه ها"
+
+msgid "advlink_dlg_anchor_names"
+msgstr "لنگرها (Anchor)"
+
+msgid "advlink_dlg_target_same"
+msgstr "بازشدن در این پنجره / قاب (Frame)"
+
+msgid "advlink_dlg_target_parent"
+msgstr "بازشدن در پنجره / قاب والد (Parent Frame)"
+
+msgid "advlink_dlg_target_top"
+msgstr "بازشدن در قاب بالا (Top Frame) (تمامی قاب ها را تعویض می كند)"
+
+msgid "advlink_dlg_target_blank"
+msgstr "بازشدن در پنجره جدید"
+
+msgid "advlink_dlg_popup"
+msgstr "پنجره بازشوی Javascript"
+
+msgid "advlink_dlg_popup_url"
+msgstr "URL پنجره بازشو (Popup)"
+
+msgid "advlink_dlg_popup_name"
+msgstr "نام پنجره"
+
+msgid "advlink_dlg_popup_return"
+msgstr "درج 'return false'"
+
+msgid "advlink_dlg_popup_scrollbars"
+msgstr "نمایش نوار پیمایش ها"
+
+msgid "advlink_dlg_popup_statusbar"
+msgstr "نمایش نوار وضعیت"
+
+msgid "advlink_dlg_popup_toolbar"
+msgstr "نمایش نوار ابزار"
+
+msgid "advlink_dlg_popup_menubar"
+msgstr "نمایش نوار منو"
+
+msgid "advlink_dlg_popup_location"
+msgstr "نمایش نوار مكان"
+
+msgid "advlink_dlg_popup_resizable"
+msgstr "ایجاد پنجره قابل اندازه بندی مجدد"
+
+msgid "advlink_dlg_popup_dependent"
+msgstr "وابسته (فقط Mozilla/Firefox)"
+
+msgid "advlink_dlg_popup_size"
+msgstr "اندازه"
+
+msgid "advlink_dlg_popup_position"
+msgstr "موقعیت (X/Y)"
+
+msgid "advlink_dlg_id"
+msgstr "شناسه"
+
+msgid "advlink_dlg_style"
+msgstr "استیل"
+
+msgid "advlink_dlg_classes"
+msgstr "كلاس ها"
+
+msgid "advlink_dlg_target_name"
+msgstr "نام مقصد (Target)"
+
+msgid "advlink_dlg_langdir"
+msgstr "جهت زبان"
+
+msgid "advlink_dlg_target_langcode"
+msgstr "زبان مقصد (Target)"
+
+msgid "advlink_dlg_langcode"
+msgstr "كد زبان"
+
+msgid "advlink_dlg_encoding"
+msgstr "رمزگذاری كاراكتر مقصد (Target)"
+
+msgid "advlink_dlg_mime"
+msgstr "نوع MIME مقصد (Target)"
+
+msgid "advlink_dlg_rel"
+msgstr "رابطه صفحه با مقصد (Target)"
+
+msgid "advlink_dlg_rev"
+msgstr "رابطه مقصد (Target) با صفحه"
+
+msgid "advlink_dlg_tabindex"
+msgstr "Tabindex"
+
+msgid "advlink_dlg_accesskey"
+msgstr "Accesskey"
+
+msgid "advlink_dlg_ltr"
+msgstr "چپ به راست"
+
+msgid "advlink_dlg_rtl"
+msgstr "راست به چپ"
+
+msgid "advlink_dlg_link_list"
+msgstr "لیست لینك"
+
+msgid "xhtmlxtras_cite_desc"
+msgstr "نقل قول"
+
+msgid "xhtmlxtras_abbr_desc"
+msgstr "اختصار"
+
+msgid "xhtmlxtras_acronym_desc"
+msgstr "مخفف"
+
+msgid "xhtmlxtras_del_desc"
+msgstr "حذف"
+
+msgid "xhtmlxtras_ins_desc"
+msgstr "درج"
+
+msgid "xhtmlxtras_attribs_desc"
+msgstr "درج/ویرایش صفات"
+
+msgid "xhtmlxtras_cite_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_cite_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_abbr_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_abbr_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_acronym_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_acronym_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_del_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_del_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_ins_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_ins_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_attribs_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_attribs_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_dlg_attribute_label_title"
+msgstr "عنوان"
+
+msgid "xhtmlxtras_dlg_attribute_label_id"
+msgstr "شناسه"
+
+msgid "xhtmlxtras_dlg_attribute_label_class"
+msgstr "كلاس"
+
+msgid "xhtmlxtras_dlg_attribute_label_style"
+msgstr "استیل"
+
+msgid "xhtmlxtras_dlg_attribute_label_cite"
+msgstr "اعلامیه"
+
+msgid "xhtmlxtras_dlg_attribute_label_datetime"
+msgstr "تاریخ/زمان"
+
+msgid "xhtmlxtras_dlg_attribute_label_langdir"
+msgstr "جهت متن"
+
+msgid "xhtmlxtras_dlg_attribute_option_ltr"
+msgstr "چپ به راست"
+
+msgid "xhtmlxtras_dlg_attribute_option_rtl"
+msgstr "راست به چپ"
+
+msgid "xhtmlxtras_dlg_attribute_label_langcode"
+msgstr "زبان"
+
+msgid "xhtmlxtras_dlg_attribute_label_tabindex"
+msgstr "TabIndex"
+
+msgid "xhtmlxtras_dlg_attribute_label_accesskey"
+msgstr "AccessKey"
+
+msgid "xhtmlxtras_dlg_attribute_events_tab"
+msgstr "رویدادها"
+
+msgid "xhtmlxtras_dlg_attribute_attrib_tab"
+msgstr "صفات"
+
+msgid "xhtmlxtras_dlg_general_tab"
+msgstr "عمومی"
+
+msgid "xhtmlxtras_dlg_attrib_tab"
+msgstr "صفات"
+
+msgid "xhtmlxtras_dlg_events_tab"
+msgstr "رویدادها"
+
+msgid "xhtmlxtras_dlg_fieldset_general_tab"
+msgstr "تنظیمات عمومی"
+
+msgid "xhtmlxtras_dlg_fieldset_attrib_tab"
+msgstr "صفات عنصر"
+
+msgid "xhtmlxtras_dlg_fieldset_events_tab"
+msgstr "رویدادهای عنصر"
+
+msgid "xhtmlxtras_dlg_title_ins_element"
+msgstr "عنصر درج"
+
+msgid "xhtmlxtras_dlg_title_del_element"
+msgstr "عنصر حذف"
+
+msgid "xhtmlxtras_dlg_title_acronym_element"
+msgstr "عنصر مخفف"
+
+msgid "xhtmlxtras_dlg_title_abbr_element"
+msgstr "عنصر اختصار"
+
+msgid "xhtmlxtras_dlg_title_cite_element"
+msgstr "عنصر نقل قول"
+
+msgid "xhtmlxtras_dlg_remove"
+msgstr "حذف"
+
+msgid "xhtmlxtras_dlg_insert_date"
+msgstr "درج تاریخ/زمان فعلی"
+
+msgid "xhtmlxtras_dlg_option_ltr"
+msgstr "چپ به راست"
+
+msgid "xhtmlxtras_dlg_option_rtl"
+msgstr "راست به چپ"
+
+msgid "xhtmlxtras_dlg_attribs_title"
+msgstr "درج/ویرایش صفات"
+
+msgid "style_desc"
+msgstr "ویرایش استیل CSS"
+
+msgid "style_delta_width"
+msgstr ""
+
+msgid "style_delta_height"
+msgstr ""
+
+msgid "style_dlg_title"
+msgstr "ویرایش استیل CSS"
+
+msgid "style_dlg_apply"
+msgstr "بكارگیری"
+
+msgid "style_dlg_text_tab"
+msgstr "متن"
+
+msgid "style_dlg_background_tab"
+msgstr "زمینه"
+
+msgid "style_dlg_block_tab"
+msgstr "بلوك"
+
+msgid "style_dlg_box_tab"
+msgstr "جعبه"
+
+msgid "style_dlg_border_tab"
+msgstr "حاشیه"
+
+msgid "style_dlg_list_tab"
+msgstr "لیست"
+
+msgid "style_dlg_positioning_tab"
+msgstr "موقعیت"
+
+msgid "style_dlg_text_props"
+msgstr "متن"
+
+msgid "style_dlg_text_font"
+msgstr "قلم"
+
+msgid "style_dlg_text_size"
+msgstr "اندازه"
+
+msgid "style_dlg_text_weight"
+msgstr "حالت"
+
+msgid "style_dlg_text_style"
+msgstr "استیل"
+
+msgid "style_dlg_text_variant"
+msgstr "نوع تغییر"
+
+msgid "style_dlg_text_lineheight"
+msgstr "بلندی خط"
+
+msgid "style_dlg_text_case"
+msgstr "حالت"
+
+msgid "style_dlg_text_color"
+msgstr "رنگ"
+
+msgid "style_dlg_text_decoration"
+msgstr "آرایش"
+
+msgid "style_dlg_text_overline"
+msgstr "بالا خط"
+
+msgid "style_dlg_text_underline"
+msgstr "زیر خط"
+
+msgid "style_dlg_text_striketrough"
+msgstr "خط وسط"
+
+msgid "style_dlg_text_blink"
+msgstr "چشمك زن"
+
+msgid "style_dlg_text_none"
+msgstr "هیچ كدام"
+
+msgid "style_dlg_background_color"
+msgstr "رنگ زمینه"
+
+msgid "style_dlg_background_image"
+msgstr "تصویر زمینه"
+
+msgid "style_dlg_background_repeat"
+msgstr "تكرار"
+
+msgid "style_dlg_background_attachment"
+msgstr "زمیمه"
+
+msgid "style_dlg_background_hpos"
+msgstr "موقعیت افقی"
+
+msgid "style_dlg_background_vpos"
+msgstr "موقعیت عمودی"
+
+msgid "style_dlg_block_wordspacing"
+msgstr "فاصله كلمات"
+
+msgid "style_dlg_block_letterspacing"
+msgstr "فاصله حروف"
+
+msgid "style_dlg_block_vertical_alignment"
+msgstr "تراز عمودی"
+
+msgid "style_dlg_block_text_align"
+msgstr "تراز متن"
+
+msgid "style_dlg_block_text_indent"
+msgstr "تورفتگی متن"
+
+msgid "style_dlg_block_whitespace"
+msgstr "فاصله سفید"
+
+msgid "style_dlg_block_display"
+msgstr "نمایش"
+
+msgid "style_dlg_box_width"
+msgstr "پهنا"
+
+msgid "style_dlg_box_height"
+msgstr "ارتفاع"
+
+msgid "style_dlg_box_float"
+msgstr "شناور"
+
+msgid "style_dlg_box_clear"
+msgstr "پاك سازی"
+
+msgid "style_dlg_padding"
+msgstr "لایه گذاری"
+
+msgid "style_dlg_same"
+msgstr "همسان برای همه"
+
+msgid "style_dlg_top"
+msgstr "بالا"
+
+msgid "style_dlg_right"
+msgstr "راست"
+
+msgid "style_dlg_bottom"
+msgstr "پایین"
+
+msgid "style_dlg_left"
+msgstr "چپ"
+
+msgid "style_dlg_margin"
+msgstr "حاشیه"
+
+msgid "style_dlg_style"
+msgstr "استیل"
+
+msgid "style_dlg_width"
+msgstr "پهنا"
+
+msgid "style_dlg_height"
+msgstr "ارتفاع"
+
+msgid "style_dlg_color"
+msgstr "رنگ"
+
+msgid "style_dlg_list_type"
+msgstr "نوع"
+
+msgid "style_dlg_bullet_image"
+msgstr "تصویر گلوله"
+
+msgid "style_dlg_position"
+msgstr "موقعیت"
+
+msgid "style_dlg_positioning_type"
+msgstr "نوع"
+
+msgid "style_dlg_visibility"
+msgstr "قابلیت رویت"
+
+msgid "style_dlg_zindex"
+msgstr "محور Z"
+
+msgid "style_dlg_overflow"
+msgstr "سر ریز"
+
+msgid "style_dlg_placement"
+msgstr "موقعیت مكانی"
+
+msgid "style_dlg_clip"
+msgstr "برش (Clip)"
+
+msgid "paste_paste_text_desc"
+msgstr "چسباندن (Paste) به عنوان متن ساده"
+
+msgid "paste_paste_word_desc"
+msgstr "چسباندن (Paste) از Word"
+
+msgid "paste_selectall_desc"
+msgstr "انتخاب همه"
+
+msgid "paste_dlg_text_title"
+msgstr "جهت چسباندن (Paste) كردن متن در پنجره از CTRL+V بر روی صفحه كلید خود استفاده نمائید."
+
+msgid "paste_dlg_text_linebreaks"
+msgstr "حفظ قطع خطوط"
+
+msgid "paste_dlg_word_title"
+msgstr "جهت چسباندن (Paste) كردن متن در پنجره از CTRL+V بر روی صفحه كلید خود استفاده نمائید."
+
+msgid "table_desc"
+msgstr "یك جدول جدید درج می كند"
+
+msgid "table_row_before_desc"
+msgstr "درج سطر در قبل"
+
+msgid "table_row_after_desc"
+msgstr "درج سطر در بعد"
+
+msgid "table_delete_row_desc"
+msgstr "حذف سطر"
+
+msgid "table_col_before_desc"
+msgstr "درج ستون در قبل"
+
+msgid "table_col_after_desc"
+msgstr "درج ستون در بعد"
+
+msgid "table_delete_col_desc"
+msgstr "حذف ستون"
+
+msgid "table_split_cells_desc"
+msgstr "تقسیم سلول های جدول ادغام شده"
+
+msgid "table_merge_cells_desc"
+msgstr "ادغام سلول های جدول"
+
+msgid "table_row_desc"
+msgstr "مشخصات سطر جدول"
+
+msgid "table_cell_desc"
+msgstr "مشخصات سلول جدول"
+
+msgid "table_props_desc"
+msgstr "مشخصات جدول"
+
+msgid "table_paste_row_before_desc"
+msgstr "چسباندن (Paste) سطر جدول در قبل"
+
+msgid "table_paste_row_after_desc"
+msgstr "چسباندن (Paste) سطر جدول در بعد"
+
+msgid "table_cut_row_desc"
+msgstr "برش (Cut) سطر جدول"
+
+msgid "table_copy_row_desc"
+msgstr "كپی  سطر جدول"
+
+msgid "table_del"
+msgstr "حذف جدول"
+
+msgid "table_row"
+msgstr "سطر"
+
+msgid "table_col"
+msgstr "ستون"
+
+msgid "table_cell"
+msgstr "سلول"
+
+msgid "table_rowprops_delta_width"
+msgstr ""
+
+msgid "table_rowprops_delta_height"
+msgstr ""
+
+msgid "table_cellprops_delta_width"
+msgstr ""
+
+msgid "table_cellprops_delta_height"
+msgstr ""
+
+msgid "table_table_delta_width"
+msgstr ""
+
+msgid "table_table_delta_height"
+msgstr ""
+
+msgid "table_merge_cells_delta_width"
+msgstr ""
+
+msgid "table_merge_cells_delta_height"
+msgstr ""
+
+msgid "table_dlg_general_tab"
+msgstr "عمومی"
+
+msgid "table_dlg_advanced_tab"
+msgstr "پیشرفته"
+
+msgid "table_dlg_general_props"
+msgstr "مشخصات عمومی"
+
+msgid "table_dlg_advanced_props"
+msgstr "مشخصات پیشرفته"
+
+msgid "table_dlg_rowtype"
+msgstr "سطر در بخش جدول"
+
+msgid "table_dlg_title"
+msgstr "درج/اصلاح جدول"
+
+msgid "table_dlg_width"
+msgstr "پهنا"
+
+msgid "table_dlg_height"
+msgstr "ارتفاع"
+
+msgid "table_dlg_cols"
+msgstr "ستون ها"
+
+msgid "table_dlg_rows"
+msgstr "سطرها"
+
+msgid "table_dlg_cellspacing"
+msgstr "فاصله سلول ها"
+
+msgid "table_dlg_cellpadding"
+msgstr "لایه گذاری سلول ها"
+
+msgid "table_dlg_border"
+msgstr "حاشیه"
+
+msgid "table_dlg_align"
+msgstr "تراز"
+
+msgid "table_dlg_align_default"
+msgstr "پیشفرض"
+
+msgid "table_dlg_align_left"
+msgstr "چپ"
+
+msgid "table_dlg_align_right"
+msgstr "راست"
+
+msgid "table_dlg_align_middle"
+msgstr "وسط"
+
+msgid "table_dlg_row_title"
+msgstr "مشخصات سطر جدول"
+
+msgid "table_dlg_cell_title"
+msgstr "مشخصات سلول جدول"
+
+msgid "table_dlg_cell_type"
+msgstr "نوع سلول"
+
+msgid "table_dlg_valign"
+msgstr "تراز عمودی"
+
+msgid "table_dlg_align_top"
+msgstr "بالا"
+
+msgid "table_dlg_align_bottom"
+msgstr "پایین"
+
+msgid "table_dlg_bordercolor"
+msgstr "رنگ حاشیه"
+
+msgid "table_dlg_bgcolor"
+msgstr "رنگ زمینه"
+
+msgid "table_dlg_merge_cells_title"
+msgstr "ادغام سلول های جدول"
+
+msgid "table_dlg_id"
+msgstr "شناسه"
+
+msgid "table_dlg_style"
+msgstr "استیل"
+
+msgid "table_dlg_langdir"
+msgstr "جهت زبان"
+
+msgid "table_dlg_langcode"
+msgstr "كد زبان"
+
+msgid "table_dlg_mime"
+msgstr "نوع MIME مقصد (Target)"
+
+msgid "table_dlg_ltr"
+msgstr "چپ به راست"
+
+msgid "table_dlg_rtl"
+msgstr "راست به چپ"
+
+msgid "table_dlg_bgimage"
+msgstr "تصویر زمینه"
+
+msgid "table_dlg_summary"
+msgstr "خلاصه"
+
+msgid "table_dlg_td"
+msgstr "داده"
+
+msgid "table_dlg_th"
+msgstr "سر جدول"
+
+msgid "table_dlg_cell_cell"
+msgstr "بروزرسانی سلول فعلی"
+
+msgid "table_dlg_cell_row"
+msgstr "بروزرسانی تمامی سلول های سطر"
+
+msgid "table_dlg_cell_all"
+msgstr "بروزرسانی تمامی سلول های جدول"
+
+msgid "table_dlg_row_row"
+msgstr "بروزرسانی سطر فعلی"
+
+msgid "table_dlg_row_odd"
+msgstr "بروزرسانی سطرهای فرد در جدول"
+
+msgid "table_dlg_row_even"
+msgstr "بروزرسانی سطرهای زوج در جدول"
+
+msgid "table_dlg_row_all"
+msgstr "بروزرسانی تمامی سطرها در جدول"
+
+msgid "table_dlg_thead"
+msgstr "بالای جدول"
+
+msgid "table_dlg_tbody"
+msgstr "بدنه جدول"
+
+msgid "table_dlg_tfoot"
+msgstr "پایین جدول"
+
+msgid "table_dlg_scope"
+msgstr "محدوده"
+
+msgid "table_dlg_rowgroup"
+msgstr "گروه سطر"
+
+msgid "table_dlg_colgroup"
+msgstr "گروه ستون"
+
+msgid "table_dlg_col_limit"
+msgstr "شما از تعداد حداكثر {$cols} ستون تجاوز كردید."
+
+msgid "table_dlg_row_limit"
+msgstr "شما از تعداد حداكثر {$rows} سطر تجاوز كردید."
+
+msgid "table_dlg_cell_limit"
+msgstr "شما از تعداد حداكثر {$cells} سلول تجاوز كردید."
+
+msgid "table_dlg_missing_scope"
+msgstr "آیا شما از ادامه دادن بدون تعیین محدوده برای این سلول بالای جدول اطمینان دارید؟. بدون آن ، ممكن است برای برخی كاربران عاجز از فهم محتوا یا در داده های نمایش داده شده جدول مشكلی پیش آید."
+
+msgid "table_dlg_caption"
+msgstr "عنوان جدول"
+
+msgid "table_dlg_frame"
+msgstr "قاب (Frame)"
+
+msgid "table_dlg_frame_none"
+msgstr "هیچ كدام"
+
+msgid "table_dlg_frame_groups"
+msgstr "گروه ها"
+
+msgid "table_dlg_frame_rows"
+msgstr "سطرها"
+
+msgid "table_dlg_frame_cols"
+msgstr "ستون ها"
+
+msgid "table_dlg_frame_all"
+msgstr "همه"
+
+msgid "table_dlg_rules"
+msgstr "خط ها"
+
+msgid "table_dlg_rules_void"
+msgstr "خالی"
+
+msgid "table_dlg_rules_above"
+msgstr "بالا"
+
+msgid "table_dlg_rules_below"
+msgstr "پایین"
+
+msgid "table_dlg_rules_hsides"
+msgstr "hsides"
+
+msgid "table_dlg_rules_lhs"
+msgstr "lhs"
+
+msgid "table_dlg_rules_rhs"
+msgstr "rhs"
+
+msgid "table_dlg_rules_vsides"
+msgstr "vsides"
+
+msgid "table_dlg_rules_box"
+msgstr "جعبه"
+
+msgid "table_dlg_rules_border"
+msgstr "حاشیه"
+
+msgid "autosave_unload_msg"
+msgstr "در صورتی كه شما از این صفحه به جای دیگری ناوبری (Navigate) كنید ، تغییراتی كه ایجاد نموده اید از دست خواهد رفت."
+
+msgid "fullscreen_desc"
+msgstr "تعویض به حالت صفحه كامل"
+
+msgid "media_desc"
+msgstr "درج / ویرایش رسانه جاسازی شده (Embeded Media)"
+
+msgid "media_edit"
+msgstr "ویرایش رسانه جاسازی شده (Embeded Media)"
+
+msgid "media_delta_width"
+msgstr ""
+
+msgid "media_delta_height"
+msgstr ""
+
+msgid "media_dlg_title"
+msgstr "درج / ویرایش رسانه جاسازی شده (Embeded Media)"
+
+msgid "media_dlg_general"
+msgstr "عمومی"
+
+msgid "media_dlg_advanced"
+msgstr "پیشرفته"
+
+msgid "media_dlg_file"
+msgstr "فایل/URL"
+
+msgid "media_dlg_list"
+msgstr "لیست"
+
+msgid "media_dlg_size"
+msgstr "ابعاد"
+
+msgid "media_dlg_preview"
+msgstr "پیش نمایش"
+
+msgid "media_dlg_constrain_proportions"
+msgstr "حفظ تناسب"
+
+msgid "media_dlg_type"
+msgstr "نوع"
+
+msgid "media_dlg_id"
+msgstr "شناسه"
+
+msgid "media_dlg_name"
+msgstr "نام"
+
+msgid "media_dlg_class_name"
+msgstr "كلاس"
+
+msgid "media_dlg_vspace"
+msgstr "فاصله عمودی"
+
+msgid "media_dlg_hspace"
+msgstr "فاصله افقی"
+
+msgid "media_dlg_play"
+msgstr "پخش اتوماتیك"
+
+msgid "media_dlg_loop"
+msgstr "حلقه (Loop)"
+
+msgid "media_dlg_menu"
+msgstr "نمایش منو"
+
+msgid "media_dlg_quality"
+msgstr "كیفیت"
+
+msgid "media_dlg_scale"
+msgstr "مقیاس"
+
+msgid "media_dlg_align"
+msgstr "تراز"
+
+msgid "media_dlg_salign"
+msgstr "SAlign"
+
+msgid "media_dlg_wmode"
+msgstr "WMode"
+
+msgid "media_dlg_bgcolor"
+msgstr "زمینه"
+
+msgid "media_dlg_base"
+msgstr "پایه (Base)"
+
+msgid "media_dlg_flashvars"
+msgstr "متغیرهای Flash"
+
+msgid "media_dlg_liveconnect"
+msgstr "ارتباط SWLive"
+
+msgid "media_dlg_autohref"
+msgstr "HREF اتوماتیك"
+
+msgid "media_dlg_cache"
+msgstr "كش"
+
+msgid "media_dlg_hidden"
+msgstr "مخفی"
+
+msgid "media_dlg_controller"
+msgstr "كنترل كننده"
+
+msgid "media_dlg_kioskmode"
+msgstr "حالت Kiosk"
+
+msgid "media_dlg_playeveryframe"
+msgstr "پخش هر فریم (Frame)"
+
+msgid "media_dlg_targetcache"
+msgstr "كش مقصد (Target Cache)"
+
+msgid "media_dlg_correction"
+msgstr "بدون تصحیح"
+
+msgid "media_dlg_enablejavascript"
+msgstr "فعال بودن JavaScript"
+
+msgid "media_dlg_starttime"
+msgstr "زمان شروع"
+
+msgid "media_dlg_endtime"
+msgstr "زمان پایان"
+
+msgid "media_dlg_href"
+msgstr "Href"
+
+msgid "media_dlg_qtsrcchokespeed"
+msgstr "سرعت Choke"
+
+msgid "media_dlg_target"
+msgstr "مقصد (Target)"
+
+msgid "media_dlg_volume"
+msgstr "بلندی صدا"
+
+msgid "media_dlg_autostart"
+msgstr "شروع اتوماتیك"
+
+msgid "media_dlg_enabled"
+msgstr "فعال شده"
+
+msgid "media_dlg_fullscreen"
+msgstr "تمام صفحه"
+
+msgid "media_dlg_invokeurls"
+msgstr "Invoke URLs"
+
+msgid "media_dlg_mute"
+msgstr "بی صدا"
+
+msgid "media_dlg_stretchtofit"
+msgstr "كشیدن جهت گنجاندن كامل"
+
+msgid "media_dlg_windowlessvideo"
+msgstr "ویدئوی كم پنجره"
+
+msgid "media_dlg_balance"
+msgstr "توازن (Balance)"
+
+msgid "media_dlg_baseurl"
+msgstr "URL پایه"
+
+msgid "media_dlg_captioningid"
+msgstr "شناسه عنوان"
+
+msgid "media_dlg_currentmarker"
+msgstr "نشانگر فعلی"
+
+msgid "media_dlg_currentposition"
+msgstr "موقعیت فعلی"
+
+msgid "media_dlg_defaultframe"
+msgstr "فریم پیشفرض"
+
+msgid "media_dlg_playcount"
+msgstr "تعداد پخش"
+
+msgid "media_dlg_rate"
+msgstr "نرخ"
+
+msgid "media_dlg_uimode"
+msgstr "حالت UI"
+
+msgid "media_dlg_flash_options"
+msgstr "تنظیمات فلش"
+
+msgid "media_dlg_qt_options"
+msgstr "تنظیمات Quicktime"
+
+msgid "media_dlg_wmp_options"
+msgstr "تنظیمات Windows media player"
+
+msgid "media_dlg_rmp_options"
+msgstr "تنظیمات Real media player"
+
+msgid "media_dlg_shockwave_options"
+msgstr "تنظیمات Shockwave"
+
+msgid "media_dlg_autogotourl"
+msgstr "رفتن اتوماتیك به URL"
+
+msgid "media_dlg_center"
+msgstr "وسط"
+
+msgid "media_dlg_imagestatus"
+msgstr "وضعیت تصویر"
+
+msgid "media_dlg_maintainaspect"
+msgstr "حفظ تناسب وجوه"
+
+msgid "media_dlg_nojava"
+msgstr "بدون java"
+
+msgid "media_dlg_prefetch"
+msgstr "پیش واكشی"
+
+msgid "media_dlg_shuffle"
+msgstr "در هم آمیختن"
+
+msgid "media_dlg_console"
+msgstr "كنسول"
+
+msgid "media_dlg_numloop"
+msgstr "تعداد حلقه ها"
+
+msgid "media_dlg_controls"
+msgstr "كنترل ها"
+
+msgid "media_dlg_scriptcallbacks"
+msgstr "اسكریپت Callbacks"
+
+msgid "media_dlg_swstretchstyle"
+msgstr "كشیدن استیل"
+
+msgid "media_dlg_swstretchhalign"
+msgstr "كشیدن تراز افقی"
+
+msgid "media_dlg_swstretchvalign"
+msgstr "كشیدن تراز عمودی"
+
+msgid "media_dlg_sound"
+msgstr "صدا"
+
+msgid "media_dlg_progress"
+msgstr "پیشرفت"
+
+msgid "media_dlg_qtsrc"
+msgstr "منبع QT"
+
+msgid "media_dlg_qt_stream_warn"
+msgstr "منابع Streamed rtsp باید در برگه (Tab) پیشرفته در فیلد منبع QT اضافه شود.\nشما باید همچنین یك نسخه غیر streamed را در فیلد منبع اضافه نمائید.."
+
+msgid "media_dlg_align_top"
+msgstr "بالا"
+
+msgid "media_dlg_align_right"
+msgstr "راست"
+
+msgid "media_dlg_align_bottom"
+msgstr "پایین"
+
+msgid "media_dlg_align_left"
+msgstr "چپ"
+
+msgid "media_dlg_align_center"
+msgstr "وسط"
+
+msgid "media_dlg_align_top_left"
+msgstr "بالا چپ"
+
+msgid "media_dlg_align_top_right"
+msgstr "بالا راست"
+
+msgid "media_dlg_align_bottom_left"
+msgstr "پایین چپ"
+
+msgid "media_dlg_align_bottom_right"
+msgstr "پایین راست"
+
+msgid "media_dlg_flv_options"
+msgstr "تنظیمات ویدئوی فلش"
+
+msgid "media_dlg_flv_scalemode"
+msgstr "حالت مقیاس"
+
+msgid "media_dlg_flv_buffer"
+msgstr "بافر (Buffer)"
+
+msgid "media_dlg_flv_startimage"
+msgstr "تصویر شروع"
+
+msgid "media_dlg_flv_starttime"
+msgstr "زمان شروع"
+
+msgid "media_dlg_flv_defaultvolume"
+msgstr "بلندی صدای پیشفرض"
+
+msgid "media_dlg_flv_hiddengui"
+msgstr "GUI مخفی"
+
+msgid "media_dlg_flv_autostart"
+msgstr "شروع اتوماتیك"
+
+msgid "media_dlg_flv_loop"
+msgstr "حلقه (Loop)"
+
+msgid "media_dlg_flv_showscalemodes"
+msgstr "نمایش حالت های مقیاس"
+
+msgid "media_dlg_flv_smoothvideo"
+msgstr "ویدئوی صاف"
+
+msgid "media_dlg_flv_jscallback"
+msgstr "JS Callback"
+
+msgid "fullpage_desc"
+msgstr "مشخصات سند"
+
+msgid "fullpage_delta_width"
+msgstr ""
+
+msgid "fullpage_delta_height"
+msgstr ""
+
+msgid "fullpage_dlg_title"
+msgstr "مشخصات سند"
+
+msgid "fullpage_dlg_meta_tab"
+msgstr "عمومی"
+
+msgid "fullpage_dlg_appearance_tab"
+msgstr "ظاهر"
+
+msgid "fullpage_dlg_advanced_tab"
+msgstr "پیشرفته"
+
+msgid "fullpage_dlg_meta_props"
+msgstr "اطلاعات متا (Meta)"
+
+msgid "fullpage_dlg_langprops"
+msgstr "زبان و رمزگذاری (Encoding)"
+
+msgid "fullpage_dlg_meta_title"
+msgstr "عنوان"
+
+msgid "fullpage_dlg_meta_keywords"
+msgstr "كلمات كلیدی"
+
+msgid "fullpage_dlg_meta_description"
+msgstr "توضیح"
+
+msgid "fullpage_dlg_meta_robots"
+msgstr "روبات ها (Robots)"
+
+msgid "fullpage_dlg_doctypes"
+msgstr "نوع سند"
+
+msgid "fullpage_dlg_langcode"
+msgstr "كد زبان"
+
+msgid "fullpage_dlg_langdir"
+msgstr "جهت زبان"
+
+msgid "fullpage_dlg_ltr"
+msgstr "چپ به راست"
+
+msgid "fullpage_dlg_rtl"
+msgstr "راست به چپ"
+
+msgid "fullpage_dlg_xml_pi"
+msgstr "اعلان XML"
+
+msgid "fullpage_dlg_encoding"
+msgstr "رمزگذاری (Encoding) كاراكتر"
+
+msgid "fullpage_dlg_appearance_bgprops"
+msgstr "مشخصات زمینه"
+
+msgid "fullpage_dlg_appearance_marginprops"
+msgstr "حاشیه های بدنه (Body)"
+
+msgid "fullpage_dlg_appearance_linkprops"
+msgstr "رنگ های لینك"
+
+msgid "fullpage_dlg_appearance_textprops"
+msgstr "مشخصات متن"
+
+msgid "fullpage_dlg_bgcolor"
+msgstr "رنگ زمینه"
+
+msgid "fullpage_dlg_bgimage"
+msgstr "تصویر زمینه"
+
+msgid "fullpage_dlg_left_margin"
+msgstr "حاشیه چپ"
+
+msgid "fullpage_dlg_right_margin"
+msgstr "حاشیه راست"
+
+msgid "fullpage_dlg_top_margin"
+msgstr "حاشیه بالا"
+
+msgid "fullpage_dlg_bottom_margin"
+msgstr "حاشیه پایین"
+
+msgid "fullpage_dlg_text_color"
+msgstr "رنگ متن"
+
+msgid "fullpage_dlg_font_size"
+msgstr "اندازه قلم"
+
+msgid "fullpage_dlg_font_face"
+msgstr "ظاهر قلم"
+
+msgid "fullpage_dlg_link_color"
+msgstr "رنگ قلم"
+
+msgid "fullpage_dlg_hover_color"
+msgstr "رنگ در حالت قرارگیری موس"
+
+msgid "fullpage_dlg_visited_color"
+msgstr "رنگ در حالت بازدید شده"
+
+msgid "fullpage_dlg_active_color"
+msgstr "رنگ در حالت فعال"
+
+msgid "fullpage_dlg_textcolor"
+msgstr "رنگ"
+
+msgid "fullpage_dlg_fontsize"
+msgstr "اندازه قلم"
+
+msgid "fullpage_dlg_fontface"
+msgstr "خانواده قلم"
+
+msgid "fullpage_dlg_meta_index_follow"
+msgstr "فهرست و دنباله روی لینك ها"
+
+msgid "fullpage_dlg_meta_index_nofollow"
+msgstr "فهرست و عدم دنباله روی لینك ها"
+
+msgid "fullpage_dlg_meta_noindex_follow"
+msgstr "عدم فهرست اما دنباله روی لینك ها"
+
+msgid "fullpage_dlg_meta_noindex_nofollow"
+msgstr "عدم فهرست و عدم دنباله روی لینك ها"
+
+msgid "fullpage_dlg_appearance_style"
+msgstr "ورقه استیل و مشخصات استیل"
+
+msgid "fullpage_dlg_stylesheet"
+msgstr "ورقه استیل"
+
+msgid "fullpage_dlg_style"
+msgstr "استیل"
+
+msgid "fullpage_dlg_author"
+msgstr "مؤلف"
+
+msgid "fullpage_dlg_copyright"
+msgstr "حق انحصاری"
+
+msgid "fullpage_dlg_add"
+msgstr "افزودن عنصر جدید"
+
+msgid "fullpage_dlg_remove"
+msgstr "حذف عنصر انتخاب شده"
+
+msgid "fullpage_dlg_moveup"
+msgstr "انتقال عنصر انتخاب شده به بالا"
+
+msgid "fullpage_dlg_movedown"
+msgstr "انتقال عنصر انتخاب شده به پایین"
+
+msgid "fullpage_dlg_head_elements"
+msgstr "عناصر سر (Head)"
+
+msgid "fullpage_dlg_info"
+msgstr "اطلاعات"
+
+msgid "fullpage_dlg_add_title"
+msgstr "عنصر عنوان"
+
+msgid "fullpage_dlg_add_meta"
+msgstr "عنصر متا (Meta)"
+
+msgid "fullpage_dlg_add_script"
+msgstr "عنصر اسكریپت (Script)"
+
+msgid "fullpage_dlg_add_style"
+msgstr "عنصر استیل (Style)"
+
+msgid "fullpage_dlg_add_link"
+msgstr "عنصر لینك (Link)"
+
+msgid "fullpage_dlg_add_base"
+msgstr "عنصر پایه (Base)"
+
+msgid "fullpage_dlg_add_comment"
+msgstr "گره توضیح"
+
+msgid "fullpage_dlg_title_element"
+msgstr "عنصر عنوان (Title)"
+
+msgid "fullpage_dlg_script_element"
+msgstr "عنصر اسكریپت (Script)"
+
+msgid "fullpage_dlg_style_element"
+msgstr "عنصر استیل (Style)"
+
+msgid "fullpage_dlg_base_element"
+msgstr "عنصر پایه"
+
+msgid "fullpage_dlg_link_element"
+msgstr "عنصر لینك"
+
+msgid "fullpage_dlg_meta_element"
+msgstr "عنصر متا (Meta)"
+
+msgid "fullpage_dlg_comment_element"
+msgstr "توضیح"
+
+msgid "fullpage_dlg_src"
+msgstr "منبع (Src)"
+
+msgid "fullpage_dlg_language"
+msgstr "زبان"
+
+msgid "fullpage_dlg_href"
+msgstr "آدرس (Href)"
+
+msgid "fullpage_dlg_target"
+msgstr "مقصد (Target)"
+
+msgid "fullpage_dlg_type"
+msgstr "نوع"
+
+msgid "fullpage_dlg_charset"
+msgstr "مجموعه كاراكتر (Charset)"
+
+msgid "fullpage_dlg_defer"
+msgstr "Defer"
+
+msgid "fullpage_dlg_media"
+msgstr "رسانه (Media)"
+
+msgid "fullpage_dlg_properties"
+msgstr "مشخصات"
+
+msgid "fullpage_dlg_name"
+msgstr "نام"
+
+msgid "fullpage_dlg_value"
+msgstr "مقدار"
+
+msgid "fullpage_dlg_content"
+msgstr "محتوا"
+
+msgid "fullpage_dlg_rel"
+msgstr "Rel"
+
+msgid "fullpage_dlg_rev"
+msgstr "Rev"
+
+msgid "fullpage_dlg_hreflang"
+msgstr "زبان Href"
+
+msgid "fullpage_dlg_general_props"
+msgstr "عمومی"
+
+msgid "fullpage_dlg_advanced_props"
+msgstr "پیشرفته"
+
+msgid "template_desc"
+msgstr "درج محتوای قالب از پیش تعریف شده"
+
+msgid "template_dlg_title"
+msgstr "قالب ها"
+
+msgid "template_dlg_label"
+msgstr "قالب"
+
+msgid "template_dlg_desc_label"
+msgstr "توضیح"
+
+msgid "template_dlg_desc"
+msgstr "درج محتوای قالب از پیش تعیین شده"
+
+msgid "template_dlg_select"
+msgstr "انتخاب یك قالب"
+
+msgid "template_dlg_preview"
+msgstr "پیش نمایش"
+
+msgid "template_dlg_warning"
+msgstr "هشدار: بروزرسانی یك قالب با یك نوع متفاوت دیگر ممكن است باعث از دست رفتن داده ها شود."
+
+msgid "template_dlg_mdate_format"
+msgstr "%Y-%m-%d %H:%M:%S"
+
+msgid "template_dlg_cdate_format"
+msgstr "%Y-%m-%d %H:%M:%S"
+
+msgid "template_dlg_months_long"
+msgstr "ژانویه,فوریه,مارس,آوریل,مه,ژوئن,ژوئیه,اوت,سپتامبر,اكتبر,نوامبر,دسامبر"
+
+msgid "template_dlg_months_short"
+msgstr "ژانویه,فوریه,مارس,آوریل,مه,ژوئن,ژوئیه,اوت,سپتامبر,اكتبر,نوامبر,دسامبر"
+
+msgid "template_dlg_day_long"
+msgstr "یكشنبه,دوشنبه,سه شنبه,چهارشنبه,پنج شنبه,جمعه,شنبه,یكشنبه"
+
+msgid "template_dlg_day_short"
+msgstr "یكشنبه,دوشنبه,سه شنبه,چهارشنبه,پنج شنبه,جمعه,شنبه,یكشنبه"
+
+msgid "visualchars_desc"
+msgstr "روشن/خاموش كردن كاراكتر های كنترل بصری (Visual)."
+
+msgid "spellchecker_desc"
+msgstr "تعویض بررسی كننده املاء"
+
+msgid "spellchecker_menu"
+msgstr "تنظیمات بررسی كننده املاء"
+
+msgid "spellchecker_ignore_word"
+msgstr "چشم پوشی از كلمه"
+
+msgid "spellchecker_ignore_words"
+msgstr "چشم پوشی از همه"
+
+msgid "spellchecker_langs"
+msgstr "زبان ها"
+
+msgid "spellchecker_wait"
+msgstr "لطفا منتظر بمانید..."
+
+msgid "spellchecker_sug"
+msgstr "پیشنهادات"
+
+msgid "spellchecker_no_sug"
+msgstr "بدون پیشنهاد"
+
+msgid "spellchecker_no_mpell"
+msgstr "هیچ خطای املائی یافته نشد."
+
+msgid "pagebreak_desc"
+msgstr "درج قطع صفحه."
+

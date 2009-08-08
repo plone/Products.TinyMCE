@@ -1,271 +1,271 @@
-# This is the Dutch language pack for TinyMCE.
-# Version 10.5
+# Toto je slovenský jazykový balík pro TinyMCE.
+# Version 4.4
 #
-# janwalhof
+# Pavel Gasparovic
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2009-08-06 00:00+0000\n"
-"Last-Translator: janwalhof\n"
-"Language-Team: janwalhof\n"
+"PO-Revision-Date: 2009-08-05 00:00+0000\n"
+"Last-Translator: Pavel Gasparovic\n"
+"Language-Team: Pavel Gasparovic\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Language-Code: nl\n"
-"Language-Name: Dutch\n"
+"Language-Code: sk\n"
+"Language-Name: Slovak\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: tinymce\n"
 
 msgid "common_edit_confirm"
-msgstr "Weet u zeker dat u tekst in WYSIWYG mode wilt bewerken in dit tekstveld?"
+msgstr "Chceš použiť WYSIWYG mód pre tento text?"
 
 msgid "common_apply"
-msgstr "Toepassen"
+msgstr "Použiť"
 
 msgid "common_insert"
-msgstr "Invoegen"
+msgstr "Vložiť"
 
 msgid "common_update"
-msgstr "Bijwerken"
+msgstr "Aktualizovať"
 
 msgid "common_cancel"
-msgstr "Annuleren"
+msgstr "Zrušiť"
 
 msgid "common_close"
-msgstr "Sluiten"
+msgstr "Zavrieť"
 
 msgid "common_browse"
-msgstr "Bladeren"
+msgstr "Prechádzať"
 
 msgid "common_class_name"
-msgstr "Klasse"
+msgstr "Trieda"
 
 msgid "common_not_set"
-msgstr "- Standaard -"
+msgstr "-- Nezadané --"
 
 msgid "common_clipboard_msg"
-msgstr "Kopiëren/knippen/plakken is niet beschikbaar in Mozilla en Firefox.\nWilt u meer informatie over deze beperking?"
+msgstr "Funkcie Kopírovať/vysrihnúť/vložiť nie su podporované prehliadačmi Mozilla a Firefox.\nChceš viac informácií o tomto probléme?"
 
 msgid "common_clipboard_no_support"
-msgstr "Kopiëren/knippen/plakken wordt niet ondersteund door uw browser, gebruik hiervoor de sneltoetsen."
+msgstr "Momentálne nie je podporované tvojím prehliadačom. Miesto toho použi klávesovú skratku."
 
 msgid "common_popup_blocked"
-msgstr "U zult uw popup-blocker tijdelijk moeten uitschakelen voor deze website om gebruik te kunnen maken van alle functies van deze teksteditor."
+msgstr "Ospravedlňujeme sa, ale blokovač vyskakovacích okien neumožnil otvoriť okno, ktoré zprostredkováva funkčnosť aplikáce. Musíš vypnuť blokovanie vyskakovacích okien na tomto webe, aby bolo možné využiť jeho plnú funkčnosť."
 
 msgid "common_invalid_data"
-msgstr "Fout: Er zijn ongeldige waardes ingevoerd, deze zijn rood gemarkeerd."
+msgstr "Chyba: Zadané neplatné hodnoty (zvýraznené červenou)"
 
 msgid "common_more_colors"
-msgstr "Meer kleuren"
+msgstr "Viac farieb"
 
 msgid "simple_bold_desc"
-msgstr "Vet (Ctrl+B)"
+msgstr "Tučný text (Ctrl+B)"
 
 msgid "simple_italic_desc"
-msgstr "Cursief (Ctrl+I)"
+msgstr "Šikmý text (kurzivá) (Ctrl+I)"
 
 msgid "simple_underline_desc"
-msgstr "Onderstrepen (Ctrl+U)"
+msgstr "Podčiarknutý text (Ctrl+U)"
 
 msgid "simple_striketrough_desc"
-msgstr "Doorhalen"
+msgstr "Preškrtnutý text"
 
 msgid "simple_bullist_desc"
-msgstr "Opsommingstekens"
+msgstr "Zoznam s odrážkami"
 
 msgid "simple_numlist_desc"
-msgstr "Nummering"
+msgstr "Číslovaný zoznam"
 
 msgid "simple_undo_desc"
-msgstr "Ongedaan maken (Ctrl+Z)"
+msgstr "Späť (Ctrl+Z)"
 
 msgid "simple_redo_desc"
-msgstr "Herhalen (Ctrl+Y)"
+msgstr "Znovu (Ctrl+Y)"
 
 msgid "simple_cleanup_desc"
-msgstr "Code opruimen"
+msgstr "Vyčistiť neupravený kód"
 
 msgid "advanced_style_select"
-msgstr "Stijlen"
+msgstr "- Štýly -"
 
 msgid "advanced_font_size"
-msgstr "Tekengrootte"
+msgstr "- Veľkosť písma  -"
 
 msgid "advanced_fontdefault"
-msgstr "Lettertype"
+msgstr "- Typ písma -"
 
 msgid "advanced_block"
-msgstr "Opmaak"
+msgstr "- Formát -"
 
 msgid "advanced_paragraph"
-msgstr "Alinea"
+msgstr "Odstavec [p]"
 
 msgid "advanced_div"
 msgstr "Div"
 
 msgid "advanced_address"
-msgstr "Adres"
+msgstr "Adresa [address]"
 
 msgid "advanced_pre"
-msgstr "Vaste opmaak"
+msgstr "Predformát [pre]"
 
 msgid "advanced_h1"
-msgstr "Kop 1"
+msgstr "Nadpis 1 [h1]"
 
 msgid "advanced_h2"
-msgstr "Kop 2"
+msgstr "Nadpis 2 [h2]"
 
 msgid "advanced_h3"
-msgstr "Kop 3"
+msgstr "Nadpis 3 [h3]"
 
 msgid "advanced_h4"
-msgstr "Kop 4"
+msgstr "Nadpis 4 [h4]"
 
 msgid "advanced_h5"
-msgstr "Kop 5"
+msgstr "Nadpis 5 [h5]"
 
 msgid "advanced_h6"
-msgstr "Kop 6"
+msgstr "Nadpis 6 [h6]"
 
 msgid "advanced_blockquote"
-msgstr "Citaat"
+msgstr "Odsadenie"
 
 msgid "advanced_code"
-msgstr "Code"
+msgstr "Kód"
 
 msgid "advanced_samp"
-msgstr "Codevoorbeeld"
+msgstr "Ukážka kódu"
 
 msgid "advanced_dt"
-msgstr "Definitieterm"
+msgstr "Definícia podmienky"
 
 msgid "advanced_dd"
-msgstr "Definitiebeschrijving"
+msgstr "Definícia popisu"
 
 msgid "advanced_bold_desc"
-msgstr "Vet (Ctrl+B)"
+msgstr "Tučný text (Ctrl+B)"
 
 msgid "advanced_italic_desc"
-msgstr "Cursief (Ctrl+I)"
+msgstr "Šikmý text (kurzivá) (Ctrl+I)"
 
 msgid "advanced_underline_desc"
-msgstr "Onderstrepen (Ctrl+U)"
+msgstr "Podčiarknutý text (Ctrl+U)"
 
 msgid "advanced_striketrough_desc"
-msgstr "Doorhalen"
+msgstr "Preškrtnutý text"
 
 msgid "advanced_justifyleft_desc"
-msgstr "Links uitlijnen"
+msgstr "Zarovnať vľavo"
 
 msgid "advanced_justifycenter_desc"
-msgstr "Centreren"
+msgstr "Zarovnať na stred"
 
 msgid "advanced_justifyright_desc"
-msgstr "Rechts uitlijnen"
+msgstr "Zarovnať vpravo"
 
 msgid "advanced_justifyfull_desc"
-msgstr "Uitvullen"
+msgstr "Zarovnať do bloku"
 
 msgid "advanced_bullist_desc"
-msgstr "Opsommingstekens"
+msgstr "Zoznam s odrážkami"
 
 msgid "advanced_numlist_desc"
-msgstr "Nummering"
+msgstr "Číslovaný zoznam"
 
 msgid "advanced_outdent_desc"
-msgstr "Inspringing verkleinen"
+msgstr "Zmenšiť odsadenie"
 
 msgid "advanced_indent_desc"
-msgstr "Inspringing vergroten"
+msgstr "Zväčšiť odsadenie"
 
 msgid "advanced_undo_desc"
-msgstr "Ongedaan maken (Ctrl+Z)"
+msgstr "Späť (Ctrl+Z)"
 
 msgid "advanced_redo_desc"
-msgstr "Herhalen (Ctrl+Y)"
+msgstr "Znovu (Ctrl+Y)"
 
 msgid "advanced_link_desc"
-msgstr "Link invoegen/bewerken"
+msgstr "Vložiť/upraviť odkaz"
 
 msgid "advanced_unlink_desc"
-msgstr "Link verwijderen"
+msgstr "Zrušiť odkaz"
 
 msgid "advanced_image_desc"
-msgstr "Afbeelding invoegen/bewerken"
+msgstr "Vložiť/upraviť obrázok"
 
 msgid "advanced_cleanup_desc"
-msgstr "Code opruimen"
+msgstr "Vyčistiť neusporiadaný kód"
 
 msgid "advanced_code_desc"
-msgstr "HTML bron bewerken"
+msgstr "Zobraziť HTML zdroj"
 
 msgid "advanced_sub_desc"
-msgstr "Subscript"
+msgstr "Dolný index"
 
 msgid "advanced_sup_desc"
-msgstr "Superscript"
+msgstr "Horný index"
 
 msgid "advanced_hr_desc"
-msgstr "Scheidingslijn invoegen"
+msgstr "Vložiť vodorovný oddeľovač"
 
 msgid "advanced_removeformat_desc"
-msgstr "Opmaak verwijderen"
+msgstr "Odstrániť formátovanie"
 
 msgid "advanced_custom1_desc"
-msgstr "Uw eigen beschrijving hier"
+msgstr "Ľubovolný popisok"
 
 msgid "advanced_forecolor_desc"
-msgstr "Tekstkleur"
+msgstr "Vyber farbu textu"
 
 msgid "advanced_backcolor_desc"
-msgstr "Tekstmarkeringskleur"
+msgstr "Vyber farbu pozadia"
 
 msgid "advanced_charmap_desc"
-msgstr "Symbool invoegen"
+msgstr "Vložiť vlastný znak"
 
 msgid "advanced_visualaid_desc"
-msgstr "Hulplijnen weergeven"
+msgstr "Zobraziť pomocné/skryté prvky"
 
 msgid "advanced_anchor_desc"
-msgstr "Anker invoegen/bewerken"
+msgstr "Vložiť/upraviť názov kotvy"
 
 msgid "advanced_cut_desc"
-msgstr "Knippen"
+msgstr "Vystrihnúť"
 
 msgid "advanced_copy_desc"
-msgstr "Kopiëren"
+msgstr "Kopírovať"
 
 msgid "advanced_paste_desc"
-msgstr "Plakken"
+msgstr "Vložiť"
 
 msgid "advanced_image_props_desc"
-msgstr "Afbeeldingseigenschappen"
+msgstr "Vlastnosti obrázka"
 
 msgid "advanced_newdocument_desc"
-msgstr "Nieuw document"
+msgstr "Nový dokument"
 
 msgid "advanced_help_desc"
-msgstr "Help"
+msgstr "Nápoveda"
 
 msgid "advanced_blockquote_desc"
-msgstr "Citaat"
+msgstr "Citovaný text"
 
 msgid "advanced_clipboard_msg"
-msgstr "Kopiëren/knippen/plakken is niet beschikbaar in Mozilla en Firefox.\nWilt u meer informatie over deze beperking?"
+msgstr "Funkcie Kopírovať/vysrihnúť/vložiť nie su podporované prehliadačmi Mozilla a Firefox. \nChceš viac informácií o tomto probléme?"
 
 msgid "advanced_path"
-msgstr "Pad"
+msgstr "Cesta"
 
 msgid "advanced_newdocument"
-msgstr "Weet u zeker dat u alle inhoud wilt wissen?"
+msgstr "Naozaj chceš vyčistiť všetok obsah?"
 
 msgid "advanced_toolbar_focus"
-msgstr "Spring naar werkbalk - Alt+Q, Spring naar tekst - Alt-Z, Spring naar elementpad - Alt-X"
+msgstr "Prejdi na nástrojové tlačidlá - Alt+Q, Prejdi na editor - Alt-Z, Prejdi na cestu elementov - Alt-X"
 
 msgid "advanced_more_colors"
-msgstr "Meer kleuren"
+msgstr "Viac farieb"
 
 msgid "advanced_image_delta_width"
 msgstr ""
@@ -298,235 +298,235 @@ msgid "advanced_anchor_delta_height"
 msgstr ""
 
 msgid "advanced_dlg_about_title"
-msgstr "Over TinyMCE"
+msgstr "O TinyMCE"
 
 msgid "advanced_dlg_about_general"
-msgstr "Info"
+msgstr "O Programe"
 
 msgid "advanced_dlg_about_help"
-msgstr "Help"
+msgstr "Nápoveda"
 
 msgid "advanced_dlg_about_license"
-msgstr "Licentie"
+msgstr "Licencia"
 
 msgid "advanced_dlg_about_plugins"
-msgstr "Invoegtoepassingen"
+msgstr "Pluginy"
 
 msgid "advanced_dlg_about_plugin"
-msgstr "Invoegtoepassing"
+msgstr "Plugin"
 
 msgid "advanced_dlg_about_author"
-msgstr "Auteur"
+msgstr "Autor"
 
 msgid "advanced_dlg_about_version"
-msgstr "Versie"
+msgstr "Verzia"
 
 msgid "advanced_dlg_about_loaded"
-msgstr "Geladen Invoegtoepassingen"
+msgstr "Načítané pluginy"
 
 msgid "advanced_dlg_anchor_title"
-msgstr "Anker invoegen/bewerken"
+msgstr "Vložiť/upraviť názov kotvy"
 
 msgid "advanced_dlg_anchor_name"
-msgstr "Ankernaam"
+msgstr "Názov kotvy"
 
 msgid "advanced_dlg_code_title"
-msgstr "HTML Bron"
+msgstr "Editor HTML kódu"
 
 msgid "advanced_dlg_code_wordwrap"
-msgstr "Automatische terugloop"
+msgstr "Zalamovať riadky"
 
 msgid "advanced_dlg_colorpicker_title"
-msgstr "Kleuren"
+msgstr "Vyber farbu"
 
 msgid "advanced_dlg_colorpicker_picker_tab"
-msgstr "Alle kleuren"
+msgstr "Miešač"
 
 msgid "advanced_dlg_colorpicker_picker_title"
-msgstr "Alle kleuren"
+msgstr "Miešač farieb"
 
 msgid "advanced_dlg_colorpicker_palette_tab"
-msgstr "Palet"
+msgstr "Paleta"
 
 msgid "advanced_dlg_colorpicker_palette_title"
-msgstr "Paletkleuren"
+msgstr "Paleta farieb"
 
 msgid "advanced_dlg_colorpicker_named_tab"
-msgstr "Benoemd"
+msgstr "Názvoslovia"
 
 msgid "advanced_dlg_colorpicker_named_title"
-msgstr "Benoemde kleuren"
+msgstr "Názvy farieb"
 
 msgid "advanced_dlg_colorpicker_color"
-msgstr "Kleur:"
+msgstr "Farba:"
 
 msgid "advanced_dlg_colorpicker_name"
-msgstr "Naam:"
+msgstr "Názov:"
 
 msgid "advanced_dlg_charmap_title"
-msgstr "Symbolen"
+msgstr "Vyber špeciálny znak"
 
 msgid "advanced_dlg_image_title"
-msgstr "Afbeelding invoegen/bewerken"
+msgstr "Vložiť/editovať obrázok"
 
 msgid "advanced_dlg_image_src"
-msgstr "Bestand/URL"
+msgstr "URL obrázka"
 
 msgid "advanced_dlg_image_alt"
-msgstr "Beschrijving"
+msgstr "Popis obrázka"
 
 msgid "advanced_dlg_image_list"
-msgstr "Lijst"
+msgstr "Zoznam obrázkov"
 
 msgid "advanced_dlg_image_border"
-msgstr "Rand"
+msgstr "Okraj"
 
 msgid "advanced_dlg_image_dimensions"
-msgstr "Afmetingen"
+msgstr "Rozmery"
 
 msgid "advanced_dlg_image_vspace"
-msgstr "Verticale ruimte"
+msgstr "Vertikálna medzera"
 
 msgid "advanced_dlg_image_hspace"
-msgstr "Horizontale ruimte"
+msgstr "Horizontálna medzera"
 
 msgid "advanced_dlg_image_align"
-msgstr "Uitlijning"
+msgstr "Usporiadanie"
 
 msgid "advanced_dlg_image_align_baseline"
-msgstr "Basislijn"
+msgstr "Základňa"
 
 msgid "advanced_dlg_image_align_top"
-msgstr "Boven"
+msgstr "Hore"
 
 msgid "advanced_dlg_image_align_middle"
-msgstr "Midden"
+msgstr "Uprostred"
 
 msgid "advanced_dlg_image_align_bottom"
-msgstr "Onder"
+msgstr "Dolu"
 
 msgid "advanced_dlg_image_align_texttop"
-msgstr "Bovenkant tekst"
+msgstr "Text hore"
 
 msgid "advanced_dlg_image_align_textbottom"
-msgstr "Onderkant tekst"
+msgstr "Text dolu"
 
 msgid "advanced_dlg_image_align_left"
-msgstr "Links"
+msgstr "Vľavo"
 
 msgid "advanced_dlg_image_align_right"
-msgstr "Rechts"
+msgstr "Vpravo"
 
 msgid "advanced_dlg_link_title"
-msgstr "Link invoegen/bewerken"
+msgstr "Vložiť/editovať odkaz"
 
 msgid "advanced_dlg_link_url"
-msgstr "URL"
+msgstr "URL odkazu"
 
 msgid "advanced_dlg_link_target"
-msgstr "Doel"
+msgstr "Cieľ odkazu"
 
 msgid "advanced_dlg_link_target_same"
-msgstr "Link in hetzelfde venster openen"
+msgstr "Otvoriť odkaz v rovnakom okne"
 
 msgid "advanced_dlg_link_target_blank"
-msgstr "Link in een nieuw venster openen"
+msgstr "Otvoriť odkaz v novom okne"
 
 msgid "advanced_dlg_link_titlefield"
-msgstr "Titel"
+msgstr "Názov"
 
 msgid "advanced_dlg_link_is_email"
-msgstr "De ingevoerde URL lijkt op een e-mailadres. Wilt u de vereiste mailto: tekst voorvoegen?"
+msgstr "Zdá sa, že zadaná URL je emailová adresa. Chceš vložiť povinný prefix mailto: ?"
 
 msgid "advanced_dlg_link_is_external"
-msgstr "De ingevoerde URL lijkt op een externe link. Wilt u de vereiste http:// tekst voorvoegen?"
+msgstr "Zdá sa, že zadaná URL je externý odkaz. Chceš vložiť povinný prefix http:// ?"
 
 msgid "advanced_dlg_link_list"
-msgstr "Link lijst"
+msgstr "Zoznam odkazov"
 
 msgid "contextmenu_align"
-msgstr "Uitlijning"
+msgstr "Umietnenie"
 
 msgid "contextmenu_left"
-msgstr "Links"
+msgstr "Vľavo"
 
 msgid "contextmenu_center"
-msgstr "Centreren"
+msgstr "Na stred"
 
 msgid "contextmenu_right"
-msgstr "Rechts"
+msgstr "Vpravo"
 
 msgid "contextmenu_full"
-msgstr "Uitvullen"
+msgstr "Do bloku"
 
 msgid "insertdatetime_date_fmt"
-msgstr "%d-%m-%Y"
+msgstr "%Y-%m-%d"
 
 msgid "insertdatetime_time_fmt"
 msgstr "%H:%M:%S"
 
 msgid "insertdatetime_insertdate_desc"
-msgstr "Datum invoegen"
+msgstr "Vložiť dátum"
 
 msgid "insertdatetime_inserttime_desc"
-msgstr "Tijd invoegen"
+msgstr "Vložiť čas"
 
 msgid "insertdatetime_months_long"
-msgstr "Januari,Februari,Maart,April,Mei,Juni,Juli,Augustus,September,Oktober,November,December"
+msgstr "Január,Február,Marec,Apríl,Máj,Jún,Júl,August,September,Október,November,December"
 
 msgid "insertdatetime_months_short"
-msgstr "Jan,Feb,Mar,Apr,Mei,Jun,Jul,Aug,Sep,Okt,Nov,Dec"
+msgstr "Jan,Feb,Mar,Apr,Máj,Jún,Júl,Aug,Sep,Okt,Nov,Dec"
 
 msgid "insertdatetime_day_long"
-msgstr "Zondag,Maandag,Dinsdag,Woensdag,Donderdag,Vrijdag,Zaterdag,Zondag"
+msgstr "Nedeľa,Pondelok,Utorok,Streda,Štvrtok,Piatok,Sobota,Nedeľa"
 
 msgid "insertdatetime_day_short"
-msgstr "zo,ma,di,wo,do,vr,za,zo"
+msgstr "Ned,Pon,Ut,Str,Štvr,Pia,Sob,Ned"
 
 msgid "print_print_desc"
-msgstr "Afdrukken"
+msgstr "Vytlačiť"
 
 msgid "preview_preview_desc"
-msgstr "Voorbeeld"
+msgstr "Náhľad"
 
 msgid "directionality_ltr_desc"
-msgstr "Van links naar rechts"
+msgstr "Smer z ľava do prava"
 
 msgid "directionality_rtl_desc"
-msgstr "Van rechts naar links"
+msgstr "Smer z prava do ľava"
 
 msgid "layer_insertlayer_desc"
-msgstr "Nieuwe laag invoegen"
+msgstr "Vložiť novú vrstvu"
 
 msgid "layer_forward_desc"
-msgstr "Volgende laag"
+msgstr "Posunúť dopredu"
 
 msgid "layer_backward_desc"
-msgstr "Vorige laag"
+msgstr "Posunúť dozadu"
 
 msgid "layer_absolute_desc"
-msgstr "Absoluut positioneren inschakelen"
+msgstr "Prepnúť na absolútne poziciovanie"
 
 msgid "layer_content"
-msgstr "Nieuwe laag..."
+msgstr "Nová vrstva..."
 
 msgid "save_save_desc"
-msgstr "Opslaan"
+msgstr "Uložiť"
 
 msgid "save_cancel_desc"
-msgstr "Alle wijzigingen annuleren"
+msgstr "Zrušiť všetky zmeny"
 
 msgid "nonbreaking_nonbreaking_desc"
-msgstr "Open ruimte invoegen"
+msgstr "Vložiť znak non-breaking space"
 
 msgid "iespell_iespell_desc"
-msgstr "Spellingcontrole"
+msgstr "Spustiť kontrolu pravopisu"
 
 msgid "iespell_download"
-msgstr "ieSpell niet gevonden. Wilt u deze nu installeren?"
+msgstr "ieSpell nebol nájdený. Chceš ho nainštalovať?"
 
 msgid "advhr_advhr_desc"
-msgstr "Scheidingslijn"
+msgstr "Horizontálny oddeľovač"
 
 msgid "advhr_delta_width"
 msgstr ""
@@ -535,16 +535,16 @@ msgid "advhr_delta_height"
 msgstr ""
 
 msgid "advhr_dlg_width"
-msgstr "Breedte"
+msgstr "Šírka"
 
 msgid "advhr_dlg_size"
-msgstr "Hoogte"
+msgstr "Výška"
 
 msgid "advhr_dlg_noshade"
-msgstr "Geen schaduw"
+msgstr "Bez tieňa"
 
 msgid "emotions_emotions_desc"
-msgstr "Emoties"
+msgstr "Emotikony"
 
 msgid "emotions_delta_width"
 msgstr ""
@@ -553,64 +553,64 @@ msgid "emotions_delta_height"
 msgstr ""
 
 msgid "emotions_dlg_title"
-msgstr "Emotie invoegen"
+msgstr "Vložiť emotikon"
 
 msgid "emotions_dlg_desc"
-msgstr "Emoties"
+msgstr "Emotikony"
 
 msgid "emotions_dlg_cool"
-msgstr "Stoer"
+msgstr "Cool"
 
 msgid "emotions_dlg_cry"
-msgstr "Huilen"
+msgstr "Cry"
 
 msgid "emotions_dlg_embarassed"
-msgstr "Schamen"
+msgstr "Embarassed"
 
 msgid "emotions_dlg_foot_in_mouth"
-msgstr "Verstomd"
+msgstr "Foot in mouth"
 
 msgid "emotions_dlg_frown"
-msgstr "Wenkbrauw ophalen"
+msgstr "Frown"
 
 msgid "emotions_dlg_innocent"
-msgstr "Onschuldig"
+msgstr "Innocent"
 
 msgid "emotions_dlg_kiss"
-msgstr "Zoenen"
+msgstr "Kiss"
 
 msgid "emotions_dlg_laughing"
-msgstr "Lachen"
+msgstr "Laughing"
 
 msgid "emotions_dlg_money_mouth"
-msgstr "Hebberig"
+msgstr "Money mouth"
 
 msgid "emotions_dlg_sealed"
-msgstr "Afgesloten"
+msgstr "Sealed"
 
 msgid "emotions_dlg_smile"
-msgstr "Lachen"
+msgstr "Smile"
 
 msgid "emotions_dlg_surprised"
-msgstr "Verrast"
+msgstr "Surprised"
 
 msgid "emotions_dlg_tongue_out"
-msgstr "Tong uitsteken"
+msgstr "Tongue out"
 
 msgid "emotions_dlg_undecided"
-msgstr "Onbeslist"
+msgstr "Undecided"
 
 msgid "emotions_dlg_wink"
-msgstr "Knipogen"
+msgstr "Wink"
 
 msgid "emotions_dlg_yell"
-msgstr "Roepen"
+msgstr "Yell"
 
 msgid "searchreplace_search_desc"
-msgstr "Zoeken"
+msgstr "Nájdi"
 
 msgid "searchreplace_replace_desc"
-msgstr "Zoeken/Vervangen"
+msgstr "Nájdi/Nahraď"
 
 msgid "searchreplace_delta_width"
 msgstr ""
@@ -619,49 +619,49 @@ msgid "searchreplace_delta_height"
 msgstr ""
 
 msgid "searchreplace_dlg_searchnext_desc"
-msgstr "Opnieuw zoeken"
+msgstr "Nájdi znova"
 
 msgid "searchreplace_dlg_notfound"
-msgstr "Het doorzoeken is voltooid. De zoekterm kon niet meer worden gevonden."
+msgstr "Vyhľadávanie ukončené. Reťazec nemusel byť nájdený."
 
 msgid "searchreplace_dlg_search_title"
-msgstr "Zoeken"
+msgstr "Nájdi"
 
 msgid "searchreplace_dlg_replace_title"
-msgstr "Zoeken/Vervangen"
+msgstr "Nájdi/Nahraď"
 
 msgid "searchreplace_dlg_allreplaced"
-msgstr "Alle instanties van de zoekterm zijn vervangen."
+msgstr "Všetky výskyty reťazca boly zmenené."
 
 msgid "searchreplace_dlg_findwhat"
-msgstr "Zoeken naar"
+msgstr "Nájdi výraz"
 
 msgid "searchreplace_dlg_replacewith"
-msgstr "Vervangen door"
+msgstr "Nahraď s"
 
 msgid "searchreplace_dlg_direction"
-msgstr "Richting"
+msgstr "Smer"
 
 msgid "searchreplace_dlg_up"
-msgstr "Omhoog"
+msgstr "Nahor"
 
 msgid "searchreplace_dlg_down"
-msgstr "Omlaag"
+msgstr "Dolu"
 
 msgid "searchreplace_dlg_mcase"
-msgstr "Identieke hoofdletters/kleine letters"
+msgstr "Presná zhoda"
 
 msgid "searchreplace_dlg_findnext"
-msgstr "Zoeken"
+msgstr "Nájdi ďalší"
 
 msgid "searchreplace_dlg_replace"
-msgstr "Vervangen"
+msgstr "Nahraď"
 
 msgid "searchreplace_dlg_replaceall"
-msgstr "Alles verv."
+msgstr "Nahradiť všetko"
 
 msgid "advimage_image_desc"
-msgstr "Afbeelding invoegen/bewerken"
+msgstr "Vložiť/editovať obrázok"
 
 msgid "advimage_delta_width"
 msgstr ""
@@ -670,130 +670,130 @@ msgid "advimage_delta_height"
 msgstr ""
 
 msgid "advimage_dlg_tab_general"
-msgstr "Algemeen"
+msgstr "Hlavné"
 
 msgid "advimage_dlg_tab_appearance"
-msgstr "Weergave"
+msgstr "Vzhľad"
 
 msgid "advimage_dlg_tab_advanced"
-msgstr "Geavanceerd"
+msgstr "Rozšírené"
 
 msgid "advimage_dlg_general"
-msgstr "Algemeen"
+msgstr "Hlavné nastavenia"
 
 msgid "advimage_dlg_title"
-msgstr "Titel"
+msgstr "Titulok"
 
 msgid "advimage_dlg_preview"
-msgstr "Voorbeeld"
+msgstr "Náhľad"
 
 msgid "advimage_dlg_constrain_proportions"
-msgstr "Verhouding behouden"
+msgstr "Zachovať pomer strán"
 
 msgid "advimage_dlg_langdir"
-msgstr "Taalrichting"
+msgstr "Smer textu"
 
 msgid "advimage_dlg_langcode"
-msgstr "Taalcode"
+msgstr "Kód jazyka"
 
 msgid "advimage_dlg_long_desc"
-msgstr "Uitgebreide beschrijving"
+msgstr "Dlhý popis obrázka"
 
 msgid "advimage_dlg_style"
-msgstr "Stijl"
+msgstr "CSS Štýl"
 
 msgid "advimage_dlg_classes"
-msgstr "Klasses"
+msgstr "CSS Trieda"
 
 msgid "advimage_dlg_ltr"
-msgstr "Van links naar rechts"
+msgstr "Z ľava do prava"
 
 msgid "advimage_dlg_rtl"
-msgstr "Van rechts naar links"
+msgstr "Z prava do ľava"
 
 msgid "advimage_dlg_id"
-msgstr "Id"
+msgstr "ID"
 
 msgid "advimage_dlg_map"
-msgstr "Afbeeldingsplattegrond"
+msgstr "Obrázková mapa"
 
 msgid "advimage_dlg_swap_image"
-msgstr "Afbeelding wisselen"
+msgstr "Zmena obrázka"
 
 msgid "advimage_dlg_alt_image"
-msgstr "Alternatieve afbeeldingen"
+msgstr "Alternatívny obrázok"
 
 msgid "advimage_dlg_mouseover"
-msgstr "Bij muis over"
+msgstr "ak je kurzor nad obrázkom"
 
 msgid "advimage_dlg_mouseout"
-msgstr "Bij muis uit"
+msgstr "ak kurzor odíde z obrázka"
 
 msgid "advimage_dlg_misc"
-msgstr "Diversen"
+msgstr "Rôzne"
 
 msgid "advimage_dlg_example_img"
-msgstr "Voorbeeldweergave"
+msgstr "Vzhľad náhľad obrázka"
 
 msgid "advimage_dlg_missing_alt"
-msgstr "Wilt u de afbeelding zonder beschrijving invoegen? De afbeelding wordt dan mogelijk niet opgemerkt door mensen met een visuele handicap, of welke zonder afbeeldingen browsen."
+msgstr "Naozaj chceš pokračovať bez vloženého popisu obrázka? Bez popisu sa bude obrázok nesprávne zobrazovať v textových prehliadačoch. Rovnako ak má užívateľ vypnuté zobrazenie obrázkov alebo ak je užívateľ nevidiaci, bude mať problémy rozpoznať obrázok."
 
 msgid "advimage_dlg_dialog_title"
-msgstr "Afbeelding invoegen/bewerken"
+msgstr "Vložiť/editovať obrázok"
 
 msgid "advimage_dlg_src"
-msgstr "Bestand/URL"
+msgstr "URL obrázka"
 
 msgid "advimage_dlg_alt"
-msgstr "Beschrijving"
+msgstr "Popis obrázku"
 
 msgid "advimage_dlg_list"
-msgstr "Lijst"
+msgstr "Zoznam obrázkov"
 
 msgid "advimage_dlg_border"
-msgstr "Rand"
+msgstr "Okraj"
 
 msgid "advimage_dlg_dimensions"
-msgstr "Afmetingen"
+msgstr "Rozmery"
 
 msgid "advimage_dlg_vspace"
-msgstr "Verticale ruimte"
+msgstr "Vertikálna medzera"
 
 msgid "advimage_dlg_hspace"
-msgstr "Horizontale ruimte"
+msgstr "Horizontálna medzera"
 
 msgid "advimage_dlg_align"
-msgstr "Uitlijning"
+msgstr "Usporiadanie"
 
 msgid "advimage_dlg_align_baseline"
-msgstr "Basislijn"
+msgstr "Základňa"
 
 msgid "advimage_dlg_align_top"
-msgstr "Boven"
+msgstr "Hore"
 
 msgid "advimage_dlg_align_middle"
-msgstr "Midden"
+msgstr "Uprostred"
 
 msgid "advimage_dlg_align_bottom"
-msgstr "Onder"
+msgstr "Dolu"
 
 msgid "advimage_dlg_align_texttop"
-msgstr "Bovenkant tekst"
+msgstr "Text hore"
 
 msgid "advimage_dlg_align_textbottom"
-msgstr "Onderkant tekst"
+msgstr "Text dolu"
 
 msgid "advimage_dlg_align_left"
-msgstr "Links"
+msgstr "Vľavo"
 
 msgid "advimage_dlg_align_right"
-msgstr "Rechts"
+msgstr "Vpravo"
 
 msgid "advimage_dlg_image_list"
-msgstr "Lijst"
+msgstr "Zoznam obrázkov"
 
 msgid "advlink_link_desc"
-msgstr "Link invoegen/bewerken"
+msgstr "Vložiť/editovať odkaz"
 
 msgid "advlink_delta_width"
 msgstr ""
@@ -802,172 +802,172 @@ msgid "advlink_delta_height"
 msgstr ""
 
 msgid "advlink_dlg_title"
-msgstr "Link invoegen/bewerken"
+msgstr "Vložiť/editovať odkaz"
 
 msgid "advlink_dlg_url"
-msgstr "URL"
+msgstr "URL odkazu"
 
 msgid "advlink_dlg_target"
-msgstr "Doel"
+msgstr "Cieľ"
 
 msgid "advlink_dlg_titlefield"
-msgstr "Titel"
+msgstr "Názov"
 
 msgid "advlink_dlg_is_email"
-msgstr "De ingevoerde URL lijkt op een e-mailadres. Wilt u de vereiste mailto: tekst voorvoegen?"
+msgstr "Zdá sa, že zadaná URL je emailová adresa. Chceš vložiť povinný prefix mailto: ?"
 
 msgid "advlink_dlg_is_external"
-msgstr "De ingevoerde URL lijkt op een externe link. Wilt u de vereiste http:// tekst voorvoegen?"
+msgstr "Zdá sa, že zadaná URL je externý odkaz. Chceš vložiť povinný prefix http:// ?"
 
 msgid "advlink_dlg_list"
-msgstr "Lijst"
+msgstr "Zoznam odkazov"
 
 msgid "advlink_dlg_general_tab"
-msgstr "Algemeen"
+msgstr "Hlavné"
 
 msgid "advlink_dlg_popup_tab"
 msgstr "Popup"
 
 msgid "advlink_dlg_events_tab"
-msgstr "Gebeurtenissen"
+msgstr "Akcie"
 
 msgid "advlink_dlg_advanced_tab"
-msgstr "Geavanceerd"
+msgstr "Rozšírené"
 
 msgid "advlink_dlg_general_props"
-msgstr "Algemene eigenschappen"
+msgstr "Hlavné nastavenia"
 
 msgid "advlink_dlg_popup_props"
-msgstr "Popup eigenschappen"
+msgstr "Vlastnosti popup okna"
 
 msgid "advlink_dlg_event_props"
-msgstr "Gebeurtenissen"
+msgstr "Akcie"
 
 msgid "advlink_dlg_advanced_props"
-msgstr "Geavanceerde eigenschappen"
+msgstr "Rozšírené vlastnosti"
 
 msgid "advlink_dlg_popup_opts"
-msgstr "Opties"
+msgstr "Vlastnosti"
 
 msgid "advlink_dlg_anchor_names"
-msgstr "Ankers"
+msgstr "Kotvy"
 
 msgid "advlink_dlg_target_same"
-msgstr "In dit venster / frame openen"
+msgstr "Otvoríť v rovnakom okne/ráme"
 
 msgid "advlink_dlg_target_parent"
-msgstr "In bovenliggend venster / frame openen"
+msgstr "Otvoríť v rodičovském okne/ráme"
 
 msgid "advlink_dlg_target_top"
-msgstr "In bovenste frame openen (vervangt gehele pagina)"
+msgstr "Otvoriť v najvyššom ráme (prepíše všetky rámy)"
 
 msgid "advlink_dlg_target_blank"
-msgstr "In nieuw venster openen"
+msgstr "Otvoríť v novom okne"
 
 msgid "advlink_dlg_popup"
-msgstr "Javascript popup"
+msgstr "JavaScript popup"
 
 msgid "advlink_dlg_popup_url"
 msgstr "Popup URL"
 
 msgid "advlink_dlg_popup_name"
-msgstr "Venstertitel"
+msgstr "Názov okna"
 
 msgid "advlink_dlg_popup_return"
-msgstr "'return false' invoegen"
+msgstr "Vložiť 'return false'"
 
 msgid "advlink_dlg_popup_scrollbars"
-msgstr "Scrollbalken weergeven"
+msgstr "Zobrazovať posúvníky"
 
 msgid "advlink_dlg_popup_statusbar"
-msgstr "Statusbalk weergeven"
+msgstr "Zobrazovať stavový riadok"
 
 msgid "advlink_dlg_popup_toolbar"
-msgstr "Werkbalk weergeven"
+msgstr "Zobrazovať ovládaciu lištu"
 
 msgid "advlink_dlg_popup_menubar"
-msgstr "Menubalk weergeven"
+msgstr "Zobrazovať menu"
 
 msgid "advlink_dlg_popup_location"
-msgstr "Lokatiebalk weergeven"
+msgstr "Zobrazovať lištu umiestnení"
 
 msgid "advlink_dlg_popup_resizable"
-msgstr "Aanpasbaar venster"
+msgstr "Povoliť zmenu veľksoti okna"
 
 msgid "advlink_dlg_popup_dependent"
-msgstr "Afhankelijk (Alleen Mozilla/Firefox)"
+msgstr "Závislosť (iba Mozilla/Firefox)"
 
 msgid "advlink_dlg_popup_size"
-msgstr "Grootte"
+msgstr "Veľkosť"
 
 msgid "advlink_dlg_popup_position"
-msgstr "Positie (X/Y)"
+msgstr "Pozícia (X/Y)"
 
 msgid "advlink_dlg_id"
-msgstr "Id"
+msgstr "ID"
 
 msgid "advlink_dlg_style"
-msgstr "Stijl"
+msgstr "CSS štýl"
 
 msgid "advlink_dlg_classes"
-msgstr "Klassen"
+msgstr "Trieda"
 
 msgid "advlink_dlg_target_name"
-msgstr "Doel"
+msgstr "Názov cieľa"
 
 msgid "advlink_dlg_langdir"
-msgstr "Taalrichting"
+msgstr "Smer textu"
 
 msgid "advlink_dlg_target_langcode"
-msgstr "Taal"
+msgstr "Jazyk cieľa"
 
 msgid "advlink_dlg_langcode"
-msgstr "Taalcode"
+msgstr "Kód jazyka cieľa"
 
 msgid "advlink_dlg_encoding"
-msgstr "Taalcodering"
+msgstr "Znakové kódovanie cieľa"
 
 msgid "advlink_dlg_mime"
-msgstr "MIME type"
+msgstr "MIME typ cieľa"
 
 msgid "advlink_dlg_rel"
-msgstr "Relatie van pagina tot doel"
+msgstr "Vzťah stránky k cieľu"
 
 msgid "advlink_dlg_rev"
-msgstr "Relatie van doel tot pagina"
+msgstr "Vzťah cieľa k stránke"
 
 msgid "advlink_dlg_tabindex"
-msgstr "Tabvolgorde"
+msgstr "Poradie pre tabulátor"
 
 msgid "advlink_dlg_accesskey"
-msgstr "Toegangstoets"
+msgstr "Klávesová skratka"
 
 msgid "advlink_dlg_ltr"
-msgstr "Van links naar rechts"
+msgstr "Z ľava do prava"
 
 msgid "advlink_dlg_rtl"
-msgstr "Van rechts naar links"
+msgstr "Z prava do ľava"
 
 msgid "advlink_dlg_link_list"
-msgstr "Lijst"
+msgstr "Zoznam odkazov"
 
 msgid "xhtmlxtras_cite_desc"
-msgstr "Citaat"
+msgstr "Citácia"
 
 msgid "xhtmlxtras_abbr_desc"
-msgstr "Afkorting"
+msgstr "Skratka"
 
 msgid "xhtmlxtras_acronym_desc"
-msgstr "Synoniem"
+msgstr "Acronym"
 
 msgid "xhtmlxtras_del_desc"
-msgstr "Verwijderd"
+msgstr "Zrušenie"
 
 msgid "xhtmlxtras_ins_desc"
-msgstr "Ingevoegd"
+msgstr "Vloženie"
 
 msgid "xhtmlxtras_attribs_desc"
-msgstr "Attributen invoegen/bewerken"
+msgstr "Vložiť/editovať atribúty"
 
 msgid "xhtmlxtras_cite_delta_width"
 msgstr ""
@@ -1006,97 +1006,97 @@ msgid "xhtmlxtras_attribs_delta_height"
 msgstr ""
 
 msgid "xhtmlxtras_dlg_attribute_label_title"
-msgstr "Titel"
+msgstr "Názov"
 
 msgid "xhtmlxtras_dlg_attribute_label_id"
 msgstr "ID"
 
 msgid "xhtmlxtras_dlg_attribute_label_class"
-msgstr "Klasse"
+msgstr "Trieda"
 
 msgid "xhtmlxtras_dlg_attribute_label_style"
-msgstr "Stijl"
+msgstr "Štýl"
 
 msgid "xhtmlxtras_dlg_attribute_label_cite"
-msgstr "Citaat"
+msgstr "Citácia"
 
 msgid "xhtmlxtras_dlg_attribute_label_datetime"
-msgstr "Datum/Tijd"
+msgstr "Dátum/čas"
 
 msgid "xhtmlxtras_dlg_attribute_label_langdir"
-msgstr "Tekstrichting"
+msgstr "Smer textu"
 
 msgid "xhtmlxtras_dlg_attribute_option_ltr"
-msgstr "Van links naar rechts"
+msgstr "Z ľava do prava"
 
 msgid "xhtmlxtras_dlg_attribute_option_rtl"
-msgstr "Van rechts naar links"
+msgstr "Z prava do ľava"
 
 msgid "xhtmlxtras_dlg_attribute_label_langcode"
-msgstr "Taal"
+msgstr "Jazyk"
 
 msgid "xhtmlxtras_dlg_attribute_label_tabindex"
-msgstr "Tabvolgorde"
+msgstr "TabIndex"
 
 msgid "xhtmlxtras_dlg_attribute_label_accesskey"
-msgstr "Toegangstoets"
+msgstr "AccessKey"
 
 msgid "xhtmlxtras_dlg_attribute_events_tab"
-msgstr "Gebeurtenissen"
+msgstr "Akcie"
 
 msgid "xhtmlxtras_dlg_attribute_attrib_tab"
-msgstr "Attributen"
+msgstr "Atribúty"
 
 msgid "xhtmlxtras_dlg_general_tab"
-msgstr "Algemeen"
+msgstr "Hlavné"
 
 msgid "xhtmlxtras_dlg_attrib_tab"
-msgstr "Attributen"
+msgstr "Attribúty"
 
 msgid "xhtmlxtras_dlg_events_tab"
-msgstr "Gebeurtenissen"
+msgstr "Akcie"
 
 msgid "xhtmlxtras_dlg_fieldset_general_tab"
-msgstr "Algemene instellingen"
+msgstr "Hlavné nastavenia"
 
 msgid "xhtmlxtras_dlg_fieldset_attrib_tab"
-msgstr "Elementattributen"
+msgstr "Prvok atribútov"
 
 msgid "xhtmlxtras_dlg_fieldset_events_tab"
-msgstr "Element Gebeurtenissen"
+msgstr "Prvok akcií"
 
 msgid "xhtmlxtras_dlg_title_ins_element"
-msgstr "Invoegingselement"
+msgstr "Prvok vloženia"
 
 msgid "xhtmlxtras_dlg_title_del_element"
-msgstr "Verwijderingselement"
+msgstr "Prvok zrušenia"
 
 msgid "xhtmlxtras_dlg_title_acronym_element"
-msgstr "Synoniem"
+msgstr "Prvok acronymu"
 
 msgid "xhtmlxtras_dlg_title_abbr_element"
-msgstr "Afkorting"
+msgstr "Prvok skratky"
 
 msgid "xhtmlxtras_dlg_title_cite_element"
-msgstr "Citaat"
+msgstr "Prvok citácie"
 
 msgid "xhtmlxtras_dlg_remove"
-msgstr "Verwijderen"
+msgstr "Odstrániť"
 
 msgid "xhtmlxtras_dlg_insert_date"
-msgstr "Huidige datum/tijd invoegen"
+msgstr "Vložiť aktuálny dátum/čas"
 
 msgid "xhtmlxtras_dlg_option_ltr"
-msgstr "Van links naar rechts"
+msgstr "Z ľava do prava"
 
 msgid "xhtmlxtras_dlg_option_rtl"
-msgstr "Van rechts naar links"
+msgstr "Z prava do ľava"
 
 msgid "xhtmlxtras_dlg_attribs_title"
-msgstr "Attributen Invoegen/bewerken"
+msgstr "Vložiť/editovať atribúty"
 
 msgid "style_desc"
-msgstr "CSS Stijl bewerken"
+msgstr "Editovať CSS Štýl"
 
 msgid "style_delta_width"
 msgstr ""
@@ -1105,265 +1105,265 @@ msgid "style_delta_height"
 msgstr ""
 
 msgid "style_dlg_title"
-msgstr "CSS Stijl bewerken"
+msgstr "Editovať CSS štýl"
 
 msgid "style_dlg_apply"
-msgstr "Toepassen"
+msgstr "Aplikovať"
 
 msgid "style_dlg_text_tab"
-msgstr "Tekst"
+msgstr "Text"
 
 msgid "style_dlg_background_tab"
-msgstr "Achtergrond"
+msgstr "Pozadie"
 
 msgid "style_dlg_block_tab"
-msgstr "Blok"
+msgstr "Block"
 
 msgid "style_dlg_box_tab"
 msgstr "Box"
 
 msgid "style_dlg_border_tab"
-msgstr "Rand"
+msgstr "Border"
 
 msgid "style_dlg_list_tab"
-msgstr "Lijst"
+msgstr "List"
 
 msgid "style_dlg_positioning_tab"
-msgstr "Positionering"
+msgstr "Positioning"
 
 msgid "style_dlg_text_props"
-msgstr "Tekst"
+msgstr "Text"
 
 msgid "style_dlg_text_font"
-msgstr "Lettertype"
+msgstr "Font"
 
 msgid "style_dlg_text_size"
-msgstr "Tekengrootte"
+msgstr "Veľkosť"
 
 msgid "style_dlg_text_weight"
-msgstr "Gewicht"
+msgstr "Weight"
 
 msgid "style_dlg_text_style"
-msgstr "Stijl"
+msgstr "Style"
 
 msgid "style_dlg_text_variant"
 msgstr "Variant"
 
 msgid "style_dlg_text_lineheight"
-msgstr "Lijnhoogte"
+msgstr "Line height"
 
 msgid "style_dlg_text_case"
-msgstr "Hoofdlettergebruik"
+msgstr "Case"
 
 msgid "style_dlg_text_color"
-msgstr "Kleur"
+msgstr "Farba"
 
 msgid "style_dlg_text_decoration"
-msgstr "Decoratie"
+msgstr "Decoration"
 
 msgid "style_dlg_text_overline"
-msgstr "Overhalen"
+msgstr "overline"
 
 msgid "style_dlg_text_underline"
-msgstr "Onderstrepen"
+msgstr "underline"
 
 msgid "style_dlg_text_striketrough"
-msgstr "Doorhalen"
+msgstr "strikethrough"
 
 msgid "style_dlg_text_blink"
-msgstr "Knipperen"
+msgstr "blink"
 
 msgid "style_dlg_text_none"
-msgstr "Niets"
+msgstr "none"
 
 msgid "style_dlg_background_color"
-msgstr "Achtergrondkleur"
+msgstr "Background color"
 
 msgid "style_dlg_background_image"
-msgstr "Achtergrondafbeelding"
+msgstr "Background image"
 
 msgid "style_dlg_background_repeat"
-msgstr "Herhalen"
+msgstr "Repeat"
 
 msgid "style_dlg_background_attachment"
-msgstr "Bijlage"
+msgstr "Attachment"
 
 msgid "style_dlg_background_hpos"
-msgstr "Horizontale positie"
+msgstr "Horizontal position"
 
 msgid "style_dlg_background_vpos"
-msgstr "Verticale positie"
+msgstr "Vertical position"
 
 msgid "style_dlg_block_wordspacing"
-msgstr "Woordruimte"
+msgstr "Word spacing"
 
 msgid "style_dlg_block_letterspacing"
-msgstr "Letterruimte"
+msgstr "Letter spacing"
 
 msgid "style_dlg_block_vertical_alignment"
-msgstr "Verticale uitlijning"
+msgstr "Vertical alignment"
 
 msgid "style_dlg_block_text_align"
-msgstr "Tekstuitlijning"
+msgstr "Text align"
 
 msgid "style_dlg_block_text_indent"
-msgstr "Inspringen"
+msgstr "Text indent"
 
 msgid "style_dlg_block_whitespace"
-msgstr "Witruimte"
+msgstr "Whitespace"
 
 msgid "style_dlg_block_display"
-msgstr "Weergave"
+msgstr "Display"
 
 msgid "style_dlg_box_width"
-msgstr "Breedte"
+msgstr "Šírka"
 
 msgid "style_dlg_box_height"
-msgstr "Hoogte"
+msgstr "Výška"
 
 msgid "style_dlg_box_float"
-msgstr "Zweven"
+msgstr "Float"
 
 msgid "style_dlg_box_clear"
-msgstr "Vrijhouden"
+msgstr "Clear"
 
 msgid "style_dlg_padding"
-msgstr "Opening"
+msgstr "Padding"
 
 msgid "style_dlg_same"
-msgstr "Alles hetzelfde"
+msgstr "Same for all"
 
 msgid "style_dlg_top"
-msgstr "Boven"
+msgstr "Top"
 
 msgid "style_dlg_right"
-msgstr "Rechts"
+msgstr "Right"
 
 msgid "style_dlg_bottom"
-msgstr "Onder"
+msgstr "Bottom"
 
 msgid "style_dlg_left"
-msgstr "Links"
+msgstr "Left"
 
 msgid "style_dlg_margin"
-msgstr "Marge"
+msgstr "Margin"
 
 msgid "style_dlg_style"
-msgstr "Stijl"
+msgstr "Style"
 
 msgid "style_dlg_width"
-msgstr "Breedte"
+msgstr "Šírka"
 
 msgid "style_dlg_height"
-msgstr "Hoogte"
+msgstr "Výška"
 
 msgid "style_dlg_color"
-msgstr "Kleur"
+msgstr "Farba"
 
 msgid "style_dlg_list_type"
 msgstr "Type"
 
 msgid "style_dlg_bullet_image"
-msgstr "Opsommingsteken"
+msgstr "Bullet image"
 
 msgid "style_dlg_position"
-msgstr "Positie"
+msgstr "Position"
 
 msgid "style_dlg_positioning_type"
 msgstr "Type"
 
 msgid "style_dlg_visibility"
-msgstr "Zichtbaarheid"
+msgstr "Visibility"
 
 msgid "style_dlg_zindex"
 msgstr "Z-index"
 
 msgid "style_dlg_overflow"
-msgstr "Overvloeien"
+msgstr "Overflow"
 
 msgid "style_dlg_placement"
-msgstr "Plaatsing"
+msgstr "Placement"
 
 msgid "style_dlg_clip"
 msgstr "Clip"
 
 msgid "paste_paste_text_desc"
-msgstr "Als platte tekst plakken"
+msgstr "Vložiť ako neformatovaný text"
 
 msgid "paste_paste_word_desc"
-msgstr "Vanuit Word plakken"
+msgstr "Vložiť text z aplikáce Word"
 
 msgid "paste_selectall_desc"
-msgstr "Alles selecteren"
+msgstr "Označiť všetko"
 
 msgid "paste_dlg_text_title"
-msgstr "Gebruik Ctrl+V om tekst in het venster te plakken."
+msgstr "Použi CTRL+V na klávesnici pre vloženie textu do okna."
 
 msgid "paste_dlg_text_linebreaks"
-msgstr "Regelafbreking bewaren"
+msgstr "Zachovať zalamovanie riadkov"
 
 msgid "paste_dlg_word_title"
-msgstr "Gebruik Ctrl+V om tekst in het venster te plakken."
+msgstr "Použi CTRL+V na klávesnici pre vloženie textu do okna."
 
 msgid "table_desc"
-msgstr "Nieuwe tabel invoegen"
+msgstr "Vložiť novú tabuľku"
 
 msgid "table_row_before_desc"
-msgstr "Rij boven invoegen"
+msgstr "Vložiť riadok pred"
 
 msgid "table_row_after_desc"
-msgstr "Rij onder invoegen"
+msgstr "Vložiť riadok za"
 
 msgid "table_delete_row_desc"
-msgstr "Rij verwijderen"
+msgstr "Odstrániť riadok"
 
 msgid "table_col_before_desc"
-msgstr "Kolom links invoegen"
+msgstr "Vložiť stĺpec pred"
 
 msgid "table_col_after_desc"
-msgstr "Kolom rechts invoegen"
+msgstr "Vložiť stĺpec za"
 
 msgid "table_delete_col_desc"
-msgstr "Kolom verwijderen"
+msgstr "Odstrániť stĺpec"
 
 msgid "table_split_cells_desc"
-msgstr "Cellen splitsen"
+msgstr "Rozdeliť zlúcené bunky"
 
 msgid "table_merge_cells_desc"
-msgstr "Cellen samenvoegen"
+msgstr "Zlúčiť bunky"
 
 msgid "table_row_desc"
-msgstr "Rij-eigenschappen"
+msgstr "Vlastnosti riadky tabuľky"
 
 msgid "table_cell_desc"
-msgstr "Cel-eigenschappen"
+msgstr "Vlastnosti bunky tabuľky"
 
 msgid "table_props_desc"
-msgstr "Tabeleigenschappen"
+msgstr "Vlastnosti tabuľky"
 
 msgid "table_paste_row_before_desc"
-msgstr "Rij boven plakken"
+msgstr "Vložiť riadok pred"
 
 msgid "table_paste_row_after_desc"
-msgstr "Rij onder plakken"
+msgstr "Vložiť riadok za"
 
 msgid "table_cut_row_desc"
-msgstr "Rij knippen"
+msgstr "Vystrihnúť riadok"
 
 msgid "table_copy_row_desc"
-msgstr "Rij kopiëren"
+msgstr "Kopírovať riadok"
 
 msgid "table_del"
-msgstr "Tabel verwijderen"
+msgstr "Zmazať tabuľku"
 
 msgid "table_row"
-msgstr "Rij"
+msgstr "Riadok"
 
 msgid "table_col"
-msgstr "Kolom"
+msgstr "Stĺpec"
 
 msgid "table_cell"
-msgstr "Cel"
+msgstr "Bunka"
 
 msgid "table_rowprops_delta_width"
 msgstr ""
@@ -1390,232 +1390,232 @@ msgid "table_merge_cells_delta_height"
 msgstr ""
 
 msgid "table_dlg_general_tab"
-msgstr "Algemeen"
+msgstr "Hlavné"
 
 msgid "table_dlg_advanced_tab"
-msgstr "Geavanceerd"
+msgstr "Rozšírené"
 
 msgid "table_dlg_general_props"
-msgstr "Algemene eigenschappen"
+msgstr "Hlavné vlastnosti"
 
 msgid "table_dlg_advanced_props"
-msgstr "Geavanceerde eigenschappen"
+msgstr "Rozšírené vlastnosti"
 
 msgid "table_dlg_rowtype"
-msgstr "Rijtype"
+msgstr "Row in table part"
 
 msgid "table_dlg_title"
-msgstr "Tabel invoegen/bewerken"
+msgstr "Vložiť/Upraviť tabuľku"
 
 msgid "table_dlg_width"
-msgstr "Breedte"
+msgstr "Šírka"
 
 msgid "table_dlg_height"
-msgstr "Hoogte"
+msgstr "Výška"
 
 msgid "table_dlg_cols"
-msgstr "Kolommen"
+msgstr "Stĺpce"
 
 msgid "table_dlg_rows"
-msgstr "Rijen"
+msgstr "Riadky"
 
 msgid "table_dlg_cellspacing"
-msgstr "Ruimte om cel"
+msgstr "Cellspacing"
 
 msgid "table_dlg_cellpadding"
-msgstr "Ruimte in cel"
+msgstr "Cellpadding"
 
 msgid "table_dlg_border"
-msgstr "Rand"
+msgstr "Rámček"
 
 msgid "table_dlg_align"
-msgstr "Uitlijning"
+msgstr "Poloha"
 
 msgid "table_dlg_align_default"
-msgstr "Standaard"
+msgstr "Predvolene"
 
 msgid "table_dlg_align_left"
-msgstr "Links"
+msgstr "Vľavo"
 
 msgid "table_dlg_align_right"
-msgstr "Rechts"
+msgstr "Vpravo"
 
 msgid "table_dlg_align_middle"
-msgstr "Centreren"
+msgstr "Na stred"
 
 msgid "table_dlg_row_title"
-msgstr "Rij-eigenschappen"
+msgstr "Vlastnosti riadkov tabuľky"
 
 msgid "table_dlg_cell_title"
-msgstr "Celeigenschappen"
+msgstr "Vlastnosti buniek tabuľky"
 
 msgid "table_dlg_cell_type"
-msgstr "Celtype"
+msgstr "Tyb bunky"
 
 msgid "table_dlg_valign"
-msgstr "Verticale uitlijning"
+msgstr "Vertikálna poloha"
 
 msgid "table_dlg_align_top"
-msgstr "Boven"
+msgstr "Hore"
 
 msgid "table_dlg_align_bottom"
-msgstr "Onder"
+msgstr "Dolu"
 
 msgid "table_dlg_bordercolor"
-msgstr "Randkleur"
+msgstr "Farba orámovania"
 
 msgid "table_dlg_bgcolor"
-msgstr "Achtergrondkleur"
+msgstr "Farba pozadia"
 
 msgid "table_dlg_merge_cells_title"
-msgstr "Cellen samenvoegen"
+msgstr "Zlúčiť bunky tabuľky"
 
 msgid "table_dlg_id"
-msgstr "Id"
+msgstr "ID"
 
 msgid "table_dlg_style"
-msgstr "Stijl"
+msgstr "CSS Štýl"
 
 msgid "table_dlg_langdir"
-msgstr "Taalrichting"
+msgstr "Smer textu"
 
 msgid "table_dlg_langcode"
-msgstr "Taalcode"
+msgstr "Kód jazyka"
 
 msgid "table_dlg_mime"
-msgstr "Doel MIME type"
+msgstr "Cieľový typ MIME"
 
 msgid "table_dlg_ltr"
-msgstr "Van links naar rechts"
+msgstr "Z ľava do prava"
 
 msgid "table_dlg_rtl"
-msgstr "Van rechts naar links"
+msgstr "Z prava do ľava"
 
 msgid "table_dlg_bgimage"
-msgstr "Achtergrondafbeelding"
+msgstr "Obrázok pozadia"
 
 msgid "table_dlg_summary"
-msgstr "Samenvatting"
+msgstr "Popis tabuľky"
 
 msgid "table_dlg_td"
-msgstr "Gegevens"
+msgstr "Dáta"
 
 msgid "table_dlg_th"
-msgstr "Kop"
+msgstr "Hlavčka"
 
 msgid "table_dlg_cell_cell"
-msgstr "Huidige cel bijwerken"
+msgstr "Aktualizovať aktuálnu bunku"
 
 msgid "table_dlg_cell_row"
-msgstr "Alle cellen in rij bijwerken"
+msgstr "Aktualizovať všetky bunky v riadku"
 
 msgid "table_dlg_cell_all"
-msgstr "Alle cellen in tabel bijwerken"
+msgstr "Aktualizovať všetky bunky v tebuľke"
 
 msgid "table_dlg_row_row"
-msgstr "Huidige rij bijwerken"
+msgstr "Aktualizovať aktuálny riadok"
 
 msgid "table_dlg_row_odd"
-msgstr "Oneven rijen bijwerken"
+msgstr "Aktualizovať odd rows in table"
 
 msgid "table_dlg_row_even"
-msgstr "Even rijen bijwerken"
+msgstr "Aktualizovať nepárne riadky v tabuľke"
 
 msgid "table_dlg_row_all"
-msgstr "Alle rijen bijwerken"
+msgstr "Aktualizovať všetky riadky v tabuľke"
 
 msgid "table_dlg_thead"
-msgstr "Tabelkop"
+msgstr "Hlavička tabuľky"
 
 msgid "table_dlg_tbody"
-msgstr "Tabellichaam"
+msgstr "Telo tabuľky"
 
 msgid "table_dlg_tfoot"
-msgstr "Tabelvoet"
+msgstr "Päta tabuľky"
 
 msgid "table_dlg_scope"
-msgstr "Bereik"
+msgstr "Scope"
 
 msgid "table_dlg_rowgroup"
-msgstr "Rijgroep"
+msgstr "Skupina riadkov"
 
 msgid "table_dlg_colgroup"
-msgstr "Kolomgroep"
+msgstr "Skupina stĺpcov"
 
 msgid "table_dlg_col_limit"
-msgstr "U heeft het maximale aantal kolommen van {$cols} overschreden."
+msgstr "Bol presiahnutý maximálny počet stĺpcov {$cols}."
 
 msgid "table_dlg_row_limit"
-msgstr "U heeft hebt het maximale aantal rijen van {$rows} overschreden."
+msgstr "Bol presiahnutý maximálny počet riadkov {$rows}."
 
 msgid "table_dlg_cell_limit"
-msgstr "U heeft het maximale aantal cellen van {$cells} overschreden."
+msgstr "Bol presiahnutý maximálny počet buniek {$cells}."
 
 msgid "table_dlg_missing_scope"
-msgstr "Weet u zeker dat u door wilt gaan met het toewijzen van een kop zonder een bereik op te geven? Mensen met een visuele handicap kunnen hierdoor waarschijnlijk slecht bij de gegevens."
+msgstr "Are you sure you want to continue without specifying a scope for this table header cell. Without it, it may be difficult for some users with disabilities to understand the content or data displayed of the table."
 
 msgid "table_dlg_caption"
-msgstr "Tabelbeschrijving"
+msgstr "Table caption"
 
 msgid "table_dlg_frame"
-msgstr "Frame"
+msgstr "Rámček"
 
 msgid "table_dlg_frame_none"
-msgstr "Geen"
+msgstr "žiadne"
 
 msgid "table_dlg_frame_groups"
-msgstr "Groepen"
+msgstr "groups"
 
 msgid "table_dlg_frame_rows"
-msgstr "Rijen"
+msgstr "riadky"
 
 msgid "table_dlg_frame_cols"
-msgstr "Kolommen"
+msgstr "stĺpce"
 
 msgid "table_dlg_frame_all"
-msgstr "Alles"
+msgstr "všetky"
 
 msgid "table_dlg_rules"
-msgstr "Hulplijnen"
+msgstr "Pravidlá"
 
 msgid "table_dlg_rules_void"
-msgstr "Geen"
+msgstr "void"
 
 msgid "table_dlg_rules_above"
-msgstr "Boven"
+msgstr "above"
 
 msgid "table_dlg_rules_below"
-msgstr "Onder"
+msgstr "below"
 
 msgid "table_dlg_rules_hsides"
-msgstr "Horizontale zijden"
+msgstr "hsides"
 
 msgid "table_dlg_rules_lhs"
-msgstr "Linkerzijkant"
+msgstr "lhs"
 
 msgid "table_dlg_rules_rhs"
-msgstr "Rechterzijkant"
+msgstr "rhs"
 
 msgid "table_dlg_rules_vsides"
-msgstr "Verticale zijden"
+msgstr "vsides"
 
 msgid "table_dlg_rules_box"
-msgstr "Box"
+msgstr "box"
 
 msgid "table_dlg_rules_border"
-msgstr "Rand"
+msgstr "okraj"
 
 msgid "autosave_unload_msg"
-msgstr "De wijzigingen zullen verloren gaan als u nu deze pagina verlaat."
+msgstr "Vykonané zmeny budú stratené, ak opustíš túto stránku."
 
 msgid "fullscreen_desc"
-msgstr "Volledig scherm"
+msgstr "Prepnúť zobrazenie na celej obrazovke"
 
 msgid "media_desc"
-msgstr "Media invoegen/bewerken"
+msgstr "Vložiť / editovať vnorené médiá"
 
 msgid "media_edit"
-msgstr "Media bewerken"
+msgstr "Editovať vnorené médiá"
 
 msgid "media_delta_width"
 msgstr ""
@@ -1624,79 +1624,79 @@ msgid "media_delta_height"
 msgstr ""
 
 msgid "media_dlg_title"
-msgstr "Media invoegen/bewerken"
+msgstr "Vloženie / editovanie vnorených médií"
 
 msgid "media_dlg_general"
-msgstr "Algemeen"
+msgstr "Základné"
 
 msgid "media_dlg_advanced"
-msgstr "Geavanceerd"
+msgstr "Pokročilé"
 
 msgid "media_dlg_file"
-msgstr "Bestand/URL"
+msgstr "Súbor/URL"
 
 msgid "media_dlg_list"
-msgstr "Lijst"
+msgstr "Zoznam"
 
 msgid "media_dlg_size"
-msgstr "Afmetingen"
+msgstr "Rozmery"
 
 msgid "media_dlg_preview"
-msgstr "Voorbeeld"
+msgstr "Náhľad"
 
 msgid "media_dlg_constrain_proportions"
-msgstr "Verhouding bewaren"
+msgstr "Zachovať proporcie"
 
 msgid "media_dlg_type"
-msgstr "Type"
+msgstr "Typ"
 
 msgid "media_dlg_id"
-msgstr "Id"
+msgstr "ID"
 
 msgid "media_dlg_name"
-msgstr "Naam"
+msgstr "Názov"
 
 msgid "media_dlg_class_name"
-msgstr "Klasse"
+msgstr "Trieda"
 
 msgid "media_dlg_vspace"
-msgstr "V-Ruimte"
+msgstr "Ver. medzera"
 
 msgid "media_dlg_hspace"
-msgstr "H-Ruimte"
+msgstr "Hor. medzera"
 
 msgid "media_dlg_play"
-msgstr "Automatisch afspelen"
+msgstr "Samospúšťanie"
 
 msgid "media_dlg_loop"
-msgstr "Herhalen"
+msgstr "Slučka"
 
 msgid "media_dlg_menu"
-msgstr "Menu Weergeven"
+msgstr "Zobraziť menu"
 
 msgid "media_dlg_quality"
-msgstr "Kwaliteit"
+msgstr "Kvalita"
 
 msgid "media_dlg_scale"
-msgstr "Schaal"
+msgstr "Mierka"
 
 msgid "media_dlg_align"
-msgstr "Uitlijning"
+msgstr "Zarovnať"
 
 msgid "media_dlg_salign"
-msgstr "Schaaluitlijning"
+msgstr "SAlign"
 
 msgid "media_dlg_wmode"
 msgstr "WMode"
 
 msgid "media_dlg_bgcolor"
-msgstr "Achtergrond"
+msgstr "Pozadie"
 
 msgid "media_dlg_base"
-msgstr "Basis"
+msgstr "Základ"
 
 msgid "media_dlg_flashvars"
-msgstr "Variabelen"
+msgstr "Flashvars"
 
 msgid "media_dlg_liveconnect"
 msgstr "SWLiveConnect"
@@ -1705,229 +1705,229 @@ msgid "media_dlg_autohref"
 msgstr "AutoHREF"
 
 msgid "media_dlg_cache"
-msgstr "Cache"
+msgstr "Záloha"
 
 msgid "media_dlg_hidden"
-msgstr "Verborgen"
+msgstr "Skrytý"
 
 msgid "media_dlg_controller"
 msgstr "Controller"
 
 msgid "media_dlg_kioskmode"
-msgstr "Kioskmodus"
+msgstr "Kiosk mode"
 
 msgid "media_dlg_playeveryframe"
-msgstr "Elk frame afspelen"
+msgstr "Prehrať každý frame"
 
 msgid "media_dlg_targetcache"
-msgstr "Doelcache"
+msgstr "Target cache"
 
 msgid "media_dlg_correction"
-msgstr "Geen correctie"
+msgstr "Bez opravy"
 
 msgid "media_dlg_enablejavascript"
-msgstr "JavaScript Inschakelen"
+msgstr "Povoliť JavaScript"
 
 msgid "media_dlg_starttime"
-msgstr "Starttijd"
+msgstr "Počiatočný čas"
 
 msgid "media_dlg_endtime"
-msgstr "Eindtijd"
+msgstr "Konečný čas"
 
 msgid "media_dlg_href"
-msgstr "HREF"
+msgstr "Href"
 
 msgid "media_dlg_qtsrcchokespeed"
-msgstr "Chokesnelheid"
+msgstr "Choke speed"
 
 msgid "media_dlg_target"
-msgstr "Doel"
+msgstr "Cieľ"
 
 msgid "media_dlg_volume"
-msgstr "Volume"
+msgstr "Hlasitosť zvuku"
 
 msgid "media_dlg_autostart"
-msgstr "Automatisch afspelen"
+msgstr "Samospúšťanie"
 
 msgid "media_dlg_enabled"
-msgstr "Ingeschakeld"
+msgstr "Povoliť"
 
 msgid "media_dlg_fullscreen"
-msgstr "Volledig scherm"
+msgstr "Celá obrazovka"
 
 msgid "media_dlg_invokeurls"
-msgstr "URLs laden"
+msgstr "Invoke URLs"
 
 msgid "media_dlg_mute"
-msgstr "Geluid dempen"
+msgstr "Umlčať"
 
 msgid "media_dlg_stretchtofit"
-msgstr "Passend maken"
+msgstr "Stretch to fit"
 
 msgid "media_dlg_windowlessvideo"
-msgstr "Video zonder venster"
+msgstr "Windowless video"
 
 msgid "media_dlg_balance"
-msgstr "Balans"
+msgstr "Rovnováha"
 
 msgid "media_dlg_baseurl"
-msgstr "BasisURL"
+msgstr "Základná URL"
 
 msgid "media_dlg_captioningid"
-msgstr "Ondertiteling id"
+msgstr "Captioning id"
 
 msgid "media_dlg_currentmarker"
-msgstr "Huidige markering"
+msgstr "Current marker"
 
 msgid "media_dlg_currentposition"
-msgstr "Huidige positie"
+msgstr "Current position"
 
 msgid "media_dlg_defaultframe"
-msgstr "Standaard frame"
+msgstr "Predvolený rámec"
 
 msgid "media_dlg_playcount"
-msgstr "Afspeelteller"
+msgstr "Počítadlo prehratí"
 
 msgid "media_dlg_rate"
-msgstr "Snelheid"
+msgstr "Pomer"
 
 msgid "media_dlg_uimode"
-msgstr "UI Modus"
+msgstr "UI Mode"
 
 msgid "media_dlg_flash_options"
-msgstr "Flash opties"
+msgstr "Vlastnosti Flash"
 
 msgid "media_dlg_qt_options"
-msgstr "Quicktime opties"
+msgstr "Vlastnosti Quicktime"
 
 msgid "media_dlg_wmp_options"
-msgstr "Windows mediaspeler opties"
+msgstr "Vlastnosti Windows media player"
 
 msgid "media_dlg_rmp_options"
-msgstr "Real mediaspeler opties"
+msgstr "Vlastnosti Real media player"
 
 msgid "media_dlg_shockwave_options"
-msgstr "Shockwave opties"
+msgstr "Vlastnosti Shockwave"
 
 msgid "media_dlg_autogotourl"
-msgstr "Automatisch naar URL"
+msgstr "Auto goto URL"
 
 msgid "media_dlg_center"
-msgstr "Centreren"
+msgstr "Center"
 
 msgid "media_dlg_imagestatus"
-msgstr "Afbeeldingstatus"
+msgstr "Image status"
 
 msgid "media_dlg_maintainaspect"
-msgstr "Verhouding bewaren"
+msgstr "Maintain aspect"
 
 msgid "media_dlg_nojava"
-msgstr "Geen java"
+msgstr "No java"
 
 msgid "media_dlg_prefetch"
-msgstr "Voorladen"
+msgstr "Prefetch"
 
 msgid "media_dlg_shuffle"
-msgstr "Willekeurige volgorde"
+msgstr "Shuffle"
 
 msgid "media_dlg_console"
-msgstr "Console"
+msgstr "Konzola"
 
 msgid "media_dlg_numloop"
-msgstr "Aantal herhalingen"
+msgstr "Num loops"
 
 msgid "media_dlg_controls"
-msgstr "Bediening"
+msgstr "Controls"
 
 msgid "media_dlg_scriptcallbacks"
 msgstr "Script callbacks"
 
 msgid "media_dlg_swstretchstyle"
-msgstr "Schaal"
+msgstr "Stretch style"
 
 msgid "media_dlg_swstretchhalign"
-msgstr "H-Schaal"
+msgstr "Stretch H-Align"
 
 msgid "media_dlg_swstretchvalign"
-msgstr "V-Schaal"
+msgstr "Stretch V-Align"
 
 msgid "media_dlg_sound"
-msgstr "Geluid"
+msgstr "Zvuk"
 
 msgid "media_dlg_progress"
-msgstr "Voortgang"
+msgstr "Progress"
 
 msgid "media_dlg_qtsrc"
-msgstr "Quicktime bron"
+msgstr "QT Src"
 
 msgid "media_dlg_qt_stream_warn"
-msgstr "Gestreamde RTSP bronnen dienen op het tabblad geavanceerd bij Quicktime bron te worden opgegeven.\nDe niet-gestreamde versie kan dan bij het tabblad algemeen worden opgegeven."
+msgstr "Streamed rtsp resources should be added to the QT Src field under the advanced tab.\nYou should also add a non streamed version to the Src field.."
 
 msgid "media_dlg_align_top"
-msgstr "Boven"
+msgstr "Top"
 
 msgid "media_dlg_align_right"
-msgstr "Rechts"
+msgstr "Right"
 
 msgid "media_dlg_align_bottom"
-msgstr "Onder"
+msgstr "Bottom"
 
 msgid "media_dlg_align_left"
-msgstr "Links"
+msgstr "Left"
 
 msgid "media_dlg_align_center"
-msgstr "Centreren"
+msgstr "Center"
 
 msgid "media_dlg_align_top_left"
-msgstr "Linksboven"
+msgstr "Top left"
 
 msgid "media_dlg_align_top_right"
-msgstr "Rechtsboven"
+msgstr "Top right"
 
 msgid "media_dlg_align_bottom_left"
-msgstr "Linksonder"
+msgstr "Bottom left"
 
 msgid "media_dlg_align_bottom_right"
-msgstr "Rechtsonder"
+msgstr "Bottom right"
 
 msgid "media_dlg_flv_options"
-msgstr "Flash video-opties"
+msgstr "Flash video options"
 
 msgid "media_dlg_flv_scalemode"
-msgstr "Schaalmodus"
+msgstr "Scale mode"
 
 msgid "media_dlg_flv_buffer"
 msgstr "Buffer"
 
 msgid "media_dlg_flv_startimage"
-msgstr "Startafbeelding"
+msgstr "Start image"
 
 msgid "media_dlg_flv_starttime"
-msgstr "Starttijd"
+msgstr "Start time"
 
 msgid "media_dlg_flv_defaultvolume"
-msgstr "Standaard volume"
+msgstr "Default volumne"
 
 msgid "media_dlg_flv_hiddengui"
-msgstr "GUI verbergen"
+msgstr "Hidden GUI"
 
 msgid "media_dlg_flv_autostart"
-msgstr "Automatisch afspelen"
+msgstr "Samospúšťanie"
 
 msgid "media_dlg_flv_loop"
-msgstr "Herhalen"
+msgstr "Slučka"
 
 msgid "media_dlg_flv_showscalemodes"
-msgstr "Schaalmodus weergeven"
+msgstr "Show scale modes"
 
 msgid "media_dlg_flv_smoothvideo"
-msgstr "Soepele video"
+msgstr "Smooth video"
 
 msgid "media_dlg_flv_jscallback"
 msgstr "JS Callback"
 
 msgid "fullpage_desc"
-msgstr "Documenteigenschappen"
+msgstr "Vlastnosti dokumentu"
 
 msgid "fullpage_delta_width"
 msgstr ""
@@ -1936,238 +1936,238 @@ msgid "fullpage_delta_height"
 msgstr ""
 
 msgid "fullpage_dlg_title"
-msgstr "Documenteigenschappen"
+msgstr "Vlastnosti dokumentu"
 
 msgid "fullpage_dlg_meta_tab"
-msgstr "Algemeen"
+msgstr "Hlavné"
 
 msgid "fullpage_dlg_appearance_tab"
-msgstr "Weergave"
+msgstr "Vzhľad"
 
 msgid "fullpage_dlg_advanced_tab"
-msgstr "Geavanceerd"
+msgstr "Rozšírené"
 
 msgid "fullpage_dlg_meta_props"
-msgstr "Meta informatie"
+msgstr "Meta informácie"
 
 msgid "fullpage_dlg_langprops"
-msgstr "Taal en codering"
+msgstr "Jazyk a kódovanie"
 
 msgid "fullpage_dlg_meta_title"
-msgstr "Titel"
+msgstr "Nádpis"
 
 msgid "fullpage_dlg_meta_keywords"
-msgstr "Sleutelwoorden"
+msgstr "Kľúč. slová"
 
 msgid "fullpage_dlg_meta_description"
-msgstr "Beschrijving"
+msgstr "Popis"
 
 msgid "fullpage_dlg_meta_robots"
-msgstr "Robots"
+msgstr "Roboty"
 
 msgid "fullpage_dlg_doctypes"
 msgstr "Doctype"
 
 msgid "fullpage_dlg_langcode"
-msgstr "Taalcode"
+msgstr "Kód jazyka"
 
 msgid "fullpage_dlg_langdir"
-msgstr "Taalrichting"
+msgstr "Smer textu"
 
 msgid "fullpage_dlg_ltr"
-msgstr "Van links naar rechts"
+msgstr "Z ľava do prava"
 
 msgid "fullpage_dlg_rtl"
-msgstr "Van rechts naar links"
+msgstr "Z prava do ľava"
 
 msgid "fullpage_dlg_xml_pi"
-msgstr "XML toewijzing"
+msgstr "Deklarácia XML"
 
 msgid "fullpage_dlg_encoding"
-msgstr "Karaktercodering"
+msgstr "Znaková sada"
 
 msgid "fullpage_dlg_appearance_bgprops"
-msgstr "Achtergrondeigenschappen"
+msgstr "Vlastnosti pozadia"
 
 msgid "fullpage_dlg_appearance_marginprops"
-msgstr "Bodymarge"
+msgstr "Odsadenie tela"
 
 msgid "fullpage_dlg_appearance_linkprops"
-msgstr "Linkkleuren"
+msgstr "Farba odkazov"
 
 msgid "fullpage_dlg_appearance_textprops"
-msgstr "Teksteigenschappen"
+msgstr "Vlastnosti textu"
 
 msgid "fullpage_dlg_bgcolor"
-msgstr "Achtergrondkleur"
+msgstr "Farba pozadia"
 
 msgid "fullpage_dlg_bgimage"
-msgstr "Achtergrondafbeelding"
+msgstr "Obrázok pozadia"
 
 msgid "fullpage_dlg_left_margin"
-msgstr "Linkermarge"
+msgstr "Odsadenie z ľava"
 
 msgid "fullpage_dlg_right_margin"
-msgstr "Rechtermarge"
+msgstr "Odsadenie z prava"
 
 msgid "fullpage_dlg_top_margin"
-msgstr "Bovenmarge"
+msgstr "Odsadenie z hora"
 
 msgid "fullpage_dlg_bottom_margin"
-msgstr "Ondermarge"
+msgstr "Odsadenie zo spodu"
 
 msgid "fullpage_dlg_text_color"
-msgstr "Tekstkleur"
+msgstr "Farba textu"
 
 msgid "fullpage_dlg_font_size"
-msgstr "Tekengrootte"
+msgstr "Veľkosť fontu"
 
 msgid "fullpage_dlg_font_face"
-msgstr "Lettertype"
+msgstr "Tvar fontu"
 
 msgid "fullpage_dlg_link_color"
-msgstr "Linkkleur"
+msgstr "Farba odkazu"
 
 msgid "fullpage_dlg_hover_color"
-msgstr "Hoverkleur"
+msgstr "Farba pri nabehnutí na odkaz"
 
 msgid "fullpage_dlg_visited_color"
-msgstr "Bezocht kleur"
+msgstr "Farba navštíveného odkazu"
 
 msgid "fullpage_dlg_active_color"
-msgstr "Actieve kleur"
+msgstr "Farba aktívneho odkazu"
 
 msgid "fullpage_dlg_textcolor"
-msgstr "Kleur"
+msgstr "Farba"
 
 msgid "fullpage_dlg_fontsize"
-msgstr "Tekengrootte"
+msgstr "Veľkosť fontu"
 
 msgid "fullpage_dlg_fontface"
-msgstr "Lettertype"
+msgstr "Rodina fontov"
 
 msgid "fullpage_dlg_meta_index_follow"
-msgstr "Links indexeren en volgen"
+msgstr "Index and follow the links"
 
 msgid "fullpage_dlg_meta_index_nofollow"
-msgstr "Links indexeren maar niet volgen"
+msgstr "Index and don't follow the links"
 
 msgid "fullpage_dlg_meta_noindex_follow"
-msgstr "Links volgen maar niet indexeren"
+msgstr "Do not index but follow the links"
 
 msgid "fullpage_dlg_meta_noindex_nofollow"
-msgstr "Links niet indexeren en niet volgen"
+msgstr "Do not index and don't follow the links"
 
 msgid "fullpage_dlg_appearance_style"
-msgstr "Stijlblad en stijleigenschappen"
+msgstr "Stylesheet and style properties"
 
 msgid "fullpage_dlg_stylesheet"
-msgstr "Stijlblad"
+msgstr "CSS Štýl"
 
 msgid "fullpage_dlg_style"
-msgstr "Stijl"
+msgstr "Štýl"
 
 msgid "fullpage_dlg_author"
-msgstr "Auteur"
+msgstr "Autor"
 
 msgid "fullpage_dlg_copyright"
-msgstr "Copyright"
+msgstr "Autorské práva"
 
 msgid "fullpage_dlg_add"
-msgstr "Nieuw element toevoegen"
+msgstr "Pridať nový prvok"
 
 msgid "fullpage_dlg_remove"
-msgstr "Geselecteerde elementen verwijderen"
+msgstr "Odstrániť označený prvok"
 
 msgid "fullpage_dlg_moveup"
-msgstr "Geselecteerde elementen omhoog verplaatsen"
+msgstr "Move selected element up"
 
 msgid "fullpage_dlg_movedown"
-msgstr "Geselecteerde elementen omlaag verplaatsen"
+msgstr "Move selected element down"
 
 msgid "fullpage_dlg_head_elements"
-msgstr "Kopelementen"
+msgstr "Prvky hlavičky"
 
 msgid "fullpage_dlg_info"
-msgstr "Informatie"
+msgstr "Informácie"
 
 msgid "fullpage_dlg_add_title"
-msgstr "Titelelement"
+msgstr "Title element"
 
 msgid "fullpage_dlg_add_meta"
-msgstr "Meta-element"
+msgstr "Meta element"
 
 msgid "fullpage_dlg_add_script"
-msgstr "Scriptelement"
+msgstr "Script element"
 
 msgid "fullpage_dlg_add_style"
-msgstr "Stijlelement"
+msgstr "Style element"
 
 msgid "fullpage_dlg_add_link"
-msgstr "Linkelement"
+msgstr "Link element"
 
 msgid "fullpage_dlg_add_base"
-msgstr "Basiselement"
+msgstr "Base element"
 
 msgid "fullpage_dlg_add_comment"
-msgstr "Opmerkingknooppunt"
+msgstr "Comment node"
 
 msgid "fullpage_dlg_title_element"
-msgstr "Titelelement"
+msgstr "Title element"
 
 msgid "fullpage_dlg_script_element"
-msgstr "Scriptelement"
+msgstr "Script element"
 
 msgid "fullpage_dlg_style_element"
-msgstr "Stijlelement"
+msgstr "Style element"
 
 msgid "fullpage_dlg_base_element"
-msgstr "Basiselement"
+msgstr "Base element"
 
 msgid "fullpage_dlg_link_element"
-msgstr "Linkelement"
+msgstr "Link element"
 
 msgid "fullpage_dlg_meta_element"
-msgstr "Meta-element"
+msgstr "Meta element"
 
 msgid "fullpage_dlg_comment_element"
-msgstr "Opmerking"
+msgstr "Poznámka"
 
 msgid "fullpage_dlg_src"
-msgstr "Bron"
+msgstr "Src"
 
 msgid "fullpage_dlg_language"
-msgstr "Taal"
+msgstr "Jazyk"
 
 msgid "fullpage_dlg_href"
 msgstr "Href"
 
 msgid "fullpage_dlg_target"
-msgstr "Doel"
+msgstr "Cieľ"
 
 msgid "fullpage_dlg_type"
-msgstr "Type"
+msgstr "Typ"
 
 msgid "fullpage_dlg_charset"
-msgstr "Karakterset"
+msgstr "Kódovanie"
 
 msgid "fullpage_dlg_defer"
-msgstr "Uitstellen"
+msgstr "Defer"
 
 msgid "fullpage_dlg_media"
 msgstr "Media"
 
 msgid "fullpage_dlg_properties"
-msgstr "Eigenschappen"
+msgstr "Vlastnosti"
 
 msgid "fullpage_dlg_name"
-msgstr "Naam"
+msgstr "Názov"
 
 msgid "fullpage_dlg_value"
-msgstr "Waarde"
+msgstr "Hodnota"
 
 msgid "fullpage_dlg_content"
-msgstr "Inhoud"
+msgstr "Content"
 
 msgid "fullpage_dlg_rel"
 msgstr "Rel"
@@ -2176,86 +2176,86 @@ msgid "fullpage_dlg_rev"
 msgstr "Rev"
 
 msgid "fullpage_dlg_hreflang"
-msgstr "Href taal"
+msgstr "Href lang"
 
 msgid "fullpage_dlg_general_props"
-msgstr "Algemeen"
+msgstr "Hlavné"
 
 msgid "fullpage_dlg_advanced_props"
-msgstr "Geavanceerd"
+msgstr "Rozšírené"
 
 msgid "template_desc"
-msgstr "Voorgedefinieerd sjabloon invoegen"
+msgstr "Vložiť obsah z preddefinovanej šablóny"
 
 msgid "template_dlg_title"
-msgstr "Sjablonen"
+msgstr "Šablóny"
 
 msgid "template_dlg_label"
-msgstr "Sjabloon"
+msgstr "Šablóna"
 
 msgid "template_dlg_desc_label"
-msgstr "Beschrijving"
+msgstr "Popis"
 
 msgid "template_dlg_desc"
-msgstr "Voorgedefinieerd sjabloon invoegen"
+msgstr "Vložiť obsah z preddefinovanej šablóny"
 
 msgid "template_dlg_select"
-msgstr "Selecteer een sjabloon"
+msgstr "Vyber šablónu"
 
 msgid "template_dlg_preview"
-msgstr "Voorbeeld"
+msgstr "Náhľad"
 
 msgid "template_dlg_warning"
-msgstr "Waarschuwing: het bijwerken van een sjabloon met een andere kan het verlies van informatie tot gevolg hebben."
+msgstr "Upozornenie: Aktualizáciou šablóny inou, sa spôsobí strata dát."
 
 msgid "template_dlg_mdate_format"
-msgstr "%d-%m-%Y %H:%M:%S"
+msgstr "%Y-%m-%d %H:%M:%S"
 
 msgid "template_dlg_cdate_format"
-msgstr "%d-%m-%Y %H:%M:%S"
+msgstr "%Y-%m-%d %H:%M:%S"
 
 msgid "template_dlg_months_long"
-msgstr "Januari,Februari,Maart,April,Mei,Juni,Juli,Augustus,September,Oktober,November,December"
+msgstr "Január,Február,Marec,Apríl,Máj,Jún,Júl,August,September,Október,November,December"
 
 msgid "template_dlg_months_short"
-msgstr "Jan,Feb,Mar,Apr,Mei,Jun,Jul,Aug,Sep,Okt,Nov,Dec"
+msgstr "Jan,Feb,Mar,Apr,Máj,Jún,Júl,Aug,Sep,Okt,Nov,Dec"
 
 msgid "template_dlg_day_long"
-msgstr "Zondag,Maandag,Dinsdag,Woensdag,Donderdag,Vrijdag,Zaterdag,Zondag"
+msgstr "Nedeľa,Pondelok,Utorok,Streda,Štvrtok,Piatok,Sobota,Nedeľa"
 
 msgid "template_dlg_day_short"
-msgstr "zo,ma,di,wo,do,vr,za,zo"
+msgstr "Ned,Pon,Ut,Str,Štvr,Pia,Sob,Ned"
 
 msgid "visualchars_desc"
-msgstr "Zichtbare symbolen"
+msgstr "Vizuálne ovládacie znaky zap/vyp."
 
 msgid "spellchecker_desc"
-msgstr "Spellingcontrole"
+msgstr "Prepnúť na kontrolu pravopisu"
 
 msgid "spellchecker_menu"
-msgstr "Instellingen spellingcontrole"
+msgstr "Nastavenia kontroly pravopisu"
 
 msgid "spellchecker_ignore_word"
-msgstr "Woord negeren"
+msgstr "Vynechať slovo"
 
 msgid "spellchecker_ignore_words"
-msgstr "Alles negeren"
+msgstr "Vynechať všetky"
 
 msgid "spellchecker_langs"
-msgstr "Talen"
+msgstr "Jazyky"
 
 msgid "spellchecker_wait"
-msgstr "Een ogenblik geduld…"
+msgstr "Čakaj prosím..."
 
 msgid "spellchecker_sug"
-msgstr "Suggesties"
+msgstr "Ponuky"
 
 msgid "spellchecker_no_sug"
-msgstr "Geen suggesties"
+msgstr "Žiadne ponuky"
 
 msgid "spellchecker_no_mpell"
-msgstr "Geen spelfouten gevonden."
+msgstr "Bez pravopisných chýb."
 
 msgid "pagebreak_desc"
-msgstr "Pagina-einde invoegen"
+msgstr "Vložiť zalomenie stránky."
 
