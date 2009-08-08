@@ -1,0 +1,2261 @@
+# Пакет русской локализации для TinyMCE
+# Version 56.1
+#
+# Kira Kononovich (konkira@yandex.ru)
+msgid ""
+msgstr ""
+"Project-Id-Version: Products.TinyMCE\n"
+"POT-Creation-Date: 2000-01-01 00:00+0000\n"
+"PO-Revision-Date: 2009-08-07 00:00+0000\n"
+"Last-Translator: Kira Kononovich (konkira@yandex.ru)\n"
+"Language-Team: Kira Kononovich (konkira@yandex.ru)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: ru\n"
+"Language-Name: Russian\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: tinymce\n"
+
+msgid "common_edit_confirm"
+msgstr "Хотите использовать для редактирования визуальный режим?"
+
+msgid "common_apply"
+msgstr "Сохранить"
+
+msgid "common_insert"
+msgstr "Вставить"
+
+msgid "common_update"
+msgstr "Обновить"
+
+msgid "common_cancel"
+msgstr "Отменить"
+
+msgid "common_close"
+msgstr "Закрыть"
+
+msgid "common_browse"
+msgstr "Обзор"
+
+msgid "common_class_name"
+msgstr "Класс"
+
+msgid "common_not_set"
+msgstr "-- Нет --"
+
+msgid "common_clipboard_msg"
+msgstr "Команды Копировать/Вырезать/Вставить не работают в Firefox. Пользуйтесь для копирования клавишами Ctrl+C, для вырезания - Ctrl+X, для вставки - Ctrl+V. Хотите узнать об этом подробнее?"
+
+msgid "common_clipboard_no_support"
+msgstr "Не поддерживается вашим браузером, используйте клавиатурные сокращения (для копирования - Ctrl+C, для вырезания - Ctrl+X, для вставки - Ctrl+V)."
+
+msgid "common_popup_blocked"
+msgstr "Ваш браузер заблокировал всплывающее окно, необходимое для работы приложения. Вам нужно отключить блокирование всплывающих окон на этом сайте, чтобы воспользоваться этим инструментом."
+
+msgid "common_invalid_data"
+msgstr "Ошибка: красным отмечены значения, введённые неправильно."
+
+msgid "common_more_colors"
+msgstr "Выбрать цвет"
+
+msgid "simple_bold_desc"
+msgstr "Полужирный (Ctrl+B)"
+
+msgid "simple_italic_desc"
+msgstr "Курсив (Ctrl+I)"
+
+msgid "simple_underline_desc"
+msgstr "Подчёркнутый (Ctrl+U)"
+
+msgid "simple_striketrough_desc"
+msgstr "Зачёркнутый"
+
+msgid "simple_bullist_desc"
+msgstr "Маркированный список"
+
+msgid "simple_numlist_desc"
+msgstr "Нумерованный список"
+
+msgid "simple_undo_desc"
+msgstr "Отменить (Ctrl+Z)"
+
+msgid "simple_redo_desc"
+msgstr "Повторить (Ctrl+Y)"
+
+msgid "simple_cleanup_desc"
+msgstr "Очистить"
+
+msgid "advanced_style_select"
+msgstr "Стили"
+
+msgid "advanced_font_size"
+msgstr "Размер"
+
+msgid "advanced_fontdefault"
+msgstr "Шрифт"
+
+msgid "advanced_block"
+msgstr "Формат"
+
+msgid "advanced_paragraph"
+msgstr "Абзац"
+
+msgid "advanced_div"
+msgstr "Раздел"
+
+msgid "advanced_address"
+msgstr "Адрес"
+
+msgid "advanced_pre"
+msgstr "Форматированный"
+
+msgid "advanced_h1"
+msgstr "Заголовок 1"
+
+msgid "advanced_h2"
+msgstr "Заголовок 2"
+
+msgid "advanced_h3"
+msgstr "Заголовок 3"
+
+msgid "advanced_h4"
+msgstr "Заголовок 4"
+
+msgid "advanced_h5"
+msgstr "Заголовок 5"
+
+msgid "advanced_h6"
+msgstr "Заголовок 6"
+
+msgid "advanced_blockquote"
+msgstr "Цитата"
+
+msgid "advanced_code"
+msgstr "Код"
+
+msgid "advanced_samp"
+msgstr "Пример кода"
+
+msgid "advanced_dt"
+msgstr "Термин"
+
+msgid "advanced_dd"
+msgstr "Определение"
+
+msgid "advanced_bold_desc"
+msgstr "Полужирный (Ctrl+B)"
+
+msgid "advanced_italic_desc"
+msgstr "Курсив (Ctrl+I)"
+
+msgid "advanced_underline_desc"
+msgstr "Подчёркнутый (Ctrl+U)"
+
+msgid "advanced_striketrough_desc"
+msgstr "Зачёркнутый"
+
+msgid "advanced_justifyleft_desc"
+msgstr "По левому краю"
+
+msgid "advanced_justifycenter_desc"
+msgstr "По центру"
+
+msgid "advanced_justifyright_desc"
+msgstr "По правому краю"
+
+msgid "advanced_justifyfull_desc"
+msgstr "По ширине"
+
+msgid "advanced_bullist_desc"
+msgstr "Маркированный список"
+
+msgid "advanced_numlist_desc"
+msgstr "Нумерованный список"
+
+msgid "advanced_outdent_desc"
+msgstr "Уменьшить отступ"
+
+msgid "advanced_indent_desc"
+msgstr "Увеличить отступ"
+
+msgid "advanced_undo_desc"
+msgstr "Отменить (Ctrl+Z)"
+
+msgid "advanced_redo_desc"
+msgstr "Повторить (Ctrl+Y)"
+
+msgid "advanced_link_desc"
+msgstr "Вставить/редактировать ссылку"
+
+msgid "advanced_unlink_desc"
+msgstr "Удалить ссылку"
+
+msgid "advanced_image_desc"
+msgstr "Вставить/редактировать изображение"
+
+msgid "advanced_cleanup_desc"
+msgstr "Очистить"
+
+msgid "advanced_code_desc"
+msgstr "Редактировать HTML-код"
+
+msgid "advanced_sub_desc"
+msgstr "Нижний индекс"
+
+msgid "advanced_sup_desc"
+msgstr "Верхний индекс"
+
+msgid "advanced_hr_desc"
+msgstr "Вставить горизонтальную линию"
+
+msgid "advanced_removeformat_desc"
+msgstr "Убрать форматирование"
+
+msgid "advanced_custom1_desc"
+msgstr "Введите описание"
+
+msgid "advanced_forecolor_desc"
+msgstr "Выбрать цвет текста"
+
+msgid "advanced_backcolor_desc"
+msgstr "Выбрать цвет фона"
+
+msgid "advanced_charmap_desc"
+msgstr "Вставить специальный символ"
+
+msgid "advanced_visualaid_desc"
+msgstr "Вкл/выкл направляющие и невидимые элементы"
+
+msgid "advanced_anchor_desc"
+msgstr "Вставить/редактировать якорь"
+
+msgid "advanced_cut_desc"
+msgstr "Вырезать"
+
+msgid "advanced_copy_desc"
+msgstr "Копировать"
+
+msgid "advanced_paste_desc"
+msgstr "Вставить"
+
+msgid "advanced_image_props_desc"
+msgstr "Свойства изображения"
+
+msgid "advanced_newdocument_desc"
+msgstr "Новый документ"
+
+msgid "advanced_help_desc"
+msgstr "Помощь"
+
+msgid "advanced_blockquote_desc"
+msgstr "Цитата"
+
+msgid "advanced_clipboard_msg"
+msgstr "Команды Копировать/Вырезать/Вставить не работают в Firefox. Хотите узнать об этом подробнее?"
+
+msgid "advanced_path"
+msgstr "Путь"
+
+msgid "advanced_newdocument"
+msgstr "Вы уверены, что хотите очистить содержимое?"
+
+msgid "advanced_toolbar_focus"
+msgstr "Перейти к кнопкам инструментов - Alt+Q, перейти к редактору - Alt+Z, перейти к пути элемента - Alt+X"
+
+msgid "advanced_more_colors"
+msgstr "Выбрать цвет"
+
+msgid "advanced_image_delta_width"
+msgstr ""
+
+msgid "advanced_image_delta_height"
+msgstr ""
+
+msgid "advanced_link_delta_width"
+msgstr ""
+
+msgid "advanced_link_delta_height"
+msgstr ""
+
+msgid "advanced_colorpicker_delta_width"
+msgstr ""
+
+msgid "advanced_colorpicker_delta_height"
+msgstr ""
+
+msgid "advanced_charmap_delta_width"
+msgstr ""
+
+msgid "advanced_charmap_delta_height"
+msgstr ""
+
+msgid "advanced_anchor_delta_width"
+msgstr ""
+
+msgid "advanced_anchor_delta_height"
+msgstr ""
+
+msgid "advanced_dlg_about_title"
+msgstr "О TinyMCE"
+
+msgid "advanced_dlg_about_general"
+msgstr "О программе"
+
+msgid "advanced_dlg_about_help"
+msgstr "Помощь"
+
+msgid "advanced_dlg_about_license"
+msgstr "Лицензия"
+
+msgid "advanced_dlg_about_plugins"
+msgstr "Дополнения"
+
+msgid "advanced_dlg_about_plugin"
+msgstr "Дополнение"
+
+msgid "advanced_dlg_about_author"
+msgstr "Автор"
+
+msgid "advanced_dlg_about_version"
+msgstr "Версия"
+
+msgid "advanced_dlg_about_loaded"
+msgstr "Загруженные дополнения"
+
+msgid "advanced_dlg_anchor_title"
+msgstr "Вставить/редактировать якорь"
+
+msgid "advanced_dlg_anchor_name"
+msgstr "Имя якоря"
+
+msgid "advanced_dlg_code_title"
+msgstr "Редактор HTML-кода"
+
+msgid "advanced_dlg_code_wordwrap"
+msgstr "Переносить по словам"
+
+msgid "advanced_dlg_colorpicker_title"
+msgstr "Выберите цвет"
+
+msgid "advanced_dlg_colorpicker_picker_tab"
+msgstr "Выбор"
+
+msgid "advanced_dlg_colorpicker_picker_title"
+msgstr "Выбор цвета"
+
+msgid "advanced_dlg_colorpicker_palette_tab"
+msgstr "Палитра"
+
+msgid "advanced_dlg_colorpicker_palette_title"
+msgstr "Цвета палитры"
+
+msgid "advanced_dlg_colorpicker_named_tab"
+msgstr "Стандартные"
+
+msgid "advanced_dlg_colorpicker_named_title"
+msgstr "Стандартные цвета"
+
+msgid "advanced_dlg_colorpicker_color"
+msgstr "Цвет"
+
+msgid "advanced_dlg_colorpicker_name"
+msgstr "Название"
+
+msgid "advanced_dlg_charmap_title"
+msgstr "Выберите специальный символ"
+
+msgid "advanced_dlg_image_title"
+msgstr "Вставить/редактировать изображение"
+
+msgid "advanced_dlg_image_src"
+msgstr "Адрес изображения"
+
+msgid "advanced_dlg_image_alt"
+msgstr "Описание изображения"
+
+msgid "advanced_dlg_image_list"
+msgstr "Список изображений"
+
+msgid "advanced_dlg_image_border"
+msgstr "Граница"
+
+msgid "advanced_dlg_image_dimensions"
+msgstr "Размеры"
+
+msgid "advanced_dlg_image_vspace"
+msgstr "Отступ по вертикали"
+
+msgid "advanced_dlg_image_hspace"
+msgstr "Отступ по горизонтали"
+
+msgid "advanced_dlg_image_align"
+msgstr "Выравнивание"
+
+msgid "advanced_dlg_image_align_baseline"
+msgstr "По базовой линии"
+
+msgid "advanced_dlg_image_align_top"
+msgstr "По верху"
+
+msgid "advanced_dlg_image_align_middle"
+msgstr "По центру"
+
+msgid "advanced_dlg_image_align_bottom"
+msgstr "По низу"
+
+msgid "advanced_dlg_image_align_texttop"
+msgstr "По верху текста"
+
+msgid "advanced_dlg_image_align_textbottom"
+msgstr "По низу текста"
+
+msgid "advanced_dlg_image_align_left"
+msgstr "Влево"
+
+msgid "advanced_dlg_image_align_right"
+msgstr "Вправо"
+
+msgid "advanced_dlg_link_title"
+msgstr "Вставить/редактировать ссылку"
+
+msgid "advanced_dlg_link_url"
+msgstr "Адрес ссылки"
+
+msgid "advanced_dlg_link_target"
+msgstr "Цель"
+
+msgid "advanced_dlg_link_target_same"
+msgstr "Открыть ссылку в том же окне"
+
+msgid "advanced_dlg_link_target_blank"
+msgstr "Открыть ссылку в новом окне"
+
+msgid "advanced_dlg_link_titlefield"
+msgstr "Название"
+
+msgid "advanced_dlg_link_is_email"
+msgstr "Введённый адрес похож на адрес электронной почты, хотите добавить префикс mailto:?"
+
+msgid "advanced_dlg_link_is_external"
+msgstr "Введённый адрес похож на внешнюю ссылку, хотите добавить префикс http://?"
+
+msgid "advanced_dlg_link_list"
+msgstr "Список ссылок"
+
+msgid "contextmenu_align"
+msgstr "Выравнивание"
+
+msgid "contextmenu_left"
+msgstr "По левому краю"
+
+msgid "contextmenu_center"
+msgstr "По центру"
+
+msgid "contextmenu_right"
+msgstr "По правому краю"
+
+msgid "contextmenu_full"
+msgstr "По ширине"
+
+msgid "insertdatetime_date_fmt"
+msgstr "%d.%m.%Y"
+
+msgid "insertdatetime_time_fmt"
+msgstr "%H:%M:%S"
+
+msgid "insertdatetime_insertdate_desc"
+msgstr "Вставить дату"
+
+msgid "insertdatetime_inserttime_desc"
+msgstr "Вставить время"
+
+msgid "insertdatetime_months_long"
+msgstr "января,февраля,марта,апреля,мая,июня,июля,августа,сентября,октября,ноября,декабря"
+
+msgid "insertdatetime_months_short"
+msgstr "янв,фев,мар,апр,май,июн,июл,авг,сен,окт,ноя,дек"
+
+msgid "insertdatetime_day_long"
+msgstr "воскресенье,понедельник,вторник,среда,четверг,пятница,суббота,воскресенье"
+
+msgid "insertdatetime_day_short"
+msgstr "вс,пн,вт,ср,чт,пт,сб,вс"
+
+msgid "print_print_desc"
+msgstr "Печать"
+
+msgid "preview_preview_desc"
+msgstr "Предварительный просмотр"
+
+msgid "directionality_ltr_desc"
+msgstr "Направление слева направо"
+
+msgid "directionality_rtl_desc"
+msgstr "Направление справа налево"
+
+msgid "layer_insertlayer_desc"
+msgstr "Вставить новый слой"
+
+msgid "layer_forward_desc"
+msgstr "На передний план"
+
+msgid "layer_backward_desc"
+msgstr "На задний план"
+
+msgid "layer_absolute_desc"
+msgstr "Вкл/выкл абсолютное позиционирование"
+
+msgid "layer_content"
+msgstr "Новый слой"
+
+msgid "save_save_desc"
+msgstr "Сохранить"
+
+msgid "save_cancel_desc"
+msgstr "Отменить"
+
+msgid "nonbreaking_nonbreaking_desc"
+msgstr "Вставить неразрывный пробел"
+
+msgid "iespell_iespell_desc"
+msgstr "Проверить орфографию"
+
+msgid "iespell_download"
+msgstr "Компонент проверки орфографии не обнаружен. Установить?"
+
+msgid "advhr_advhr_desc"
+msgstr "Горизонтальная линия"
+
+msgid "advhr_delta_width"
+msgstr ""
+
+msgid "advhr_delta_height"
+msgstr ""
+
+msgid "advhr_dlg_width"
+msgstr "Ширина"
+
+msgid "advhr_dlg_size"
+msgstr "Высота"
+
+msgid "advhr_dlg_noshade"
+msgstr "Без тени"
+
+msgid "emotions_emotions_desc"
+msgstr "Эмоции"
+
+msgid "emotions_delta_width"
+msgstr ""
+
+msgid "emotions_delta_height"
+msgstr ""
+
+msgid "emotions_dlg_title"
+msgstr "Вставить эмоцию"
+
+msgid "emotions_dlg_desc"
+msgstr "Смайлики"
+
+msgid "emotions_dlg_cool"
+msgstr "Суперрр"
+
+msgid "emotions_dlg_cry"
+msgstr "Ой-ой-ой"
+
+msgid "emotions_dlg_embarassed"
+msgstr "Ужасно стыдно"
+
+msgid "emotions_dlg_foot_in_mouth"
+msgstr "Обескуражен"
+
+msgid "emotions_dlg_frown"
+msgstr "Недоволен"
+
+msgid "emotions_dlg_innocent"
+msgstr "Невинный"
+
+msgid "emotions_dlg_kiss"
+msgstr "Целую"
+
+msgid "emotions_dlg_laughing"
+msgstr "Смешно"
+
+msgid "emotions_dlg_money_mouth"
+msgstr "Денег хочу!"
+
+msgid "emotions_dlg_sealed"
+msgstr "Молчу-молчу!"
+
+msgid "emotions_dlg_smile"
+msgstr "Улыбаюсь"
+
+msgid "emotions_dlg_surprised"
+msgstr "Удивлен"
+
+msgid "emotions_dlg_tongue_out"
+msgstr "Показать язык"
+
+msgid "emotions_dlg_undecided"
+msgstr "В нерешительности"
+
+msgid "emotions_dlg_wink"
+msgstr "Подмигиваю"
+
+msgid "emotions_dlg_yell"
+msgstr "Рву и мечу!"
+
+msgid "searchreplace_search_desc"
+msgstr "Найти"
+
+msgid "searchreplace_replace_desc"
+msgstr "Найти и заменить"
+
+msgid "searchreplace_delta_width"
+msgstr ""
+
+msgid "searchreplace_delta_height"
+msgstr ""
+
+msgid "searchreplace_dlg_searchnext_desc"
+msgstr "Найти далее"
+
+msgid "searchreplace_dlg_notfound"
+msgstr "Поиск закончен, строка не найдена"
+
+msgid "searchreplace_dlg_search_title"
+msgstr "Найти"
+
+msgid "searchreplace_dlg_replace_title"
+msgstr "Найти и заменить"
+
+msgid "searchreplace_dlg_allreplaced"
+msgstr "Все встречающиеся строки были заменены"
+
+msgid "searchreplace_dlg_findwhat"
+msgstr "Найти"
+
+msgid "searchreplace_dlg_replacewith"
+msgstr "Заменить на"
+
+msgid "searchreplace_dlg_direction"
+msgstr "Направление"
+
+msgid "searchreplace_dlg_up"
+msgstr "Вверх"
+
+msgid "searchreplace_dlg_down"
+msgstr "Вниз"
+
+msgid "searchreplace_dlg_mcase"
+msgstr "Учитывать регистр"
+
+msgid "searchreplace_dlg_findnext"
+msgstr "Найти далее"
+
+msgid "searchreplace_dlg_replace"
+msgstr "Заменить"
+
+msgid "searchreplace_dlg_replaceall"
+msgstr "Заменить все"
+
+msgid "advimage_image_desc"
+msgstr "Вставить/редактировать изображение"
+
+msgid "advimage_delta_width"
+msgstr ""
+
+msgid "advimage_delta_height"
+msgstr ""
+
+msgid "advimage_dlg_tab_general"
+msgstr "Общие"
+
+msgid "advimage_dlg_tab_appearance"
+msgstr "Оформление"
+
+msgid "advimage_dlg_tab_advanced"
+msgstr "Дополнительные"
+
+msgid "advimage_dlg_general"
+msgstr "Общие"
+
+msgid "advimage_dlg_title"
+msgstr "Название"
+
+msgid "advimage_dlg_preview"
+msgstr "Предварительный просмотр"
+
+msgid "advimage_dlg_constrain_proportions"
+msgstr "Сохранять пропорции"
+
+msgid "advimage_dlg_langdir"
+msgstr "Направление языка"
+
+msgid "advimage_dlg_langcode"
+msgstr "Код языка"
+
+msgid "advimage_dlg_long_desc"
+msgstr "Ссылка на подробное описание"
+
+msgid "advimage_dlg_style"
+msgstr "Стиль"
+
+msgid "advimage_dlg_classes"
+msgstr "Классы"
+
+msgid "advimage_dlg_ltr"
+msgstr "Слева направо"
+
+msgid "advimage_dlg_rtl"
+msgstr "Справа налево"
+
+msgid "advimage_dlg_id"
+msgstr "Идентификатор"
+
+msgid "advimage_dlg_map"
+msgstr "Карта"
+
+msgid "advimage_dlg_swap_image"
+msgstr "Замена изображения"
+
+msgid "advimage_dlg_alt_image"
+msgstr "Альтернативное изображение"
+
+msgid "advimage_dlg_mouseover"
+msgstr "При наведении курсора"
+
+msgid "advimage_dlg_mouseout"
+msgstr "При отведении курсора"
+
+msgid "advimage_dlg_misc"
+msgstr "Разное"
+
+msgid "advimage_dlg_example_img"
+msgstr "Предварительный просмотр оформления"
+
+msgid "advimage_dlg_missing_alt"
+msgstr "Вы уверены, что хотите продолжить без описания изображения? Без него изображение может быть недоступно некоторым пользователям."
+
+msgid "advimage_dlg_dialog_title"
+msgstr "Вставить/редактировать изображение"
+
+msgid "advimage_dlg_src"
+msgstr "Адрес изображения"
+
+msgid "advimage_dlg_alt"
+msgstr "Описание изображения"
+
+msgid "advimage_dlg_list"
+msgstr "Список изображений"
+
+msgid "advimage_dlg_border"
+msgstr "Граница"
+
+msgid "advimage_dlg_dimensions"
+msgstr "Размеры"
+
+msgid "advimage_dlg_vspace"
+msgstr "Вертикальный отступ"
+
+msgid "advimage_dlg_hspace"
+msgstr "Горизонтальный отступ"
+
+msgid "advimage_dlg_align"
+msgstr "Выравнивание"
+
+msgid "advimage_dlg_align_baseline"
+msgstr "По базовой линии"
+
+msgid "advimage_dlg_align_top"
+msgstr "По верху"
+
+msgid "advimage_dlg_align_middle"
+msgstr "По центру"
+
+msgid "advimage_dlg_align_bottom"
+msgstr "По низу"
+
+msgid "advimage_dlg_align_texttop"
+msgstr "По верху текста"
+
+msgid "advimage_dlg_align_textbottom"
+msgstr "По низу текста"
+
+msgid "advimage_dlg_align_left"
+msgstr "Влево"
+
+msgid "advimage_dlg_align_right"
+msgstr "Вправо"
+
+msgid "advimage_dlg_image_list"
+msgstr "Список изображений"
+
+msgid "advlink_link_desc"
+msgstr "Вставить/редактировать ссылку"
+
+msgid "advlink_delta_width"
+msgstr ""
+
+msgid "advlink_delta_height"
+msgstr ""
+
+msgid "advlink_dlg_title"
+msgstr "Вставить/редактировать ссылку"
+
+msgid "advlink_dlg_url"
+msgstr "Адрес ссылки"
+
+msgid "advlink_dlg_target"
+msgstr "Цель"
+
+msgid "advlink_dlg_titlefield"
+msgstr "Название"
+
+msgid "advlink_dlg_is_email"
+msgstr "Введенный адрес похож на эл. почту, вы хотите добавить префикс mailto:?"
+
+msgid "advlink_dlg_is_external"
+msgstr "Введенный адрес похож на внешнюю ссылку, вы хотите добавить префикс http://?"
+
+msgid "advlink_dlg_list"
+msgstr "Список ссылок"
+
+msgid "advlink_dlg_general_tab"
+msgstr "Общие"
+
+msgid "advlink_dlg_popup_tab"
+msgstr "Всплывающее окно"
+
+msgid "advlink_dlg_events_tab"
+msgstr "События"
+
+msgid "advlink_dlg_advanced_tab"
+msgstr "Дополнительные"
+
+msgid "advlink_dlg_general_props"
+msgstr "Общие свойства"
+
+msgid "advlink_dlg_popup_props"
+msgstr "Свойства всплывающего окна"
+
+msgid "advlink_dlg_event_props"
+msgstr "События"
+
+msgid "advlink_dlg_advanced_props"
+msgstr "Дополнительные свойства"
+
+msgid "advlink_dlg_popup_opts"
+msgstr "Параметры"
+
+msgid "advlink_dlg_anchor_names"
+msgstr "Якори"
+
+msgid "advlink_dlg_target_same"
+msgstr "Открыть в этом окне/фрейме"
+
+msgid "advlink_dlg_target_parent"
+msgstr "Открыть в родительском окне/фрейме"
+
+msgid "advlink_dlg_target_top"
+msgstr "Открыть в верхнем фрейме (замещает все остальные)"
+
+msgid "advlink_dlg_target_blank"
+msgstr "Открыть в новом окне"
+
+msgid "advlink_dlg_popup"
+msgstr "Всплывающее окно"
+
+msgid "advlink_dlg_popup_url"
+msgstr "Адрес всплывающего окна"
+
+msgid "advlink_dlg_popup_name"
+msgstr "Название окна"
+
+msgid "advlink_dlg_popup_return"
+msgstr "Вставить 'return false'"
+
+msgid "advlink_dlg_popup_scrollbars"
+msgstr "Показать полосы прокрутки"
+
+msgid "advlink_dlg_popup_statusbar"
+msgstr "Показать строку состояния"
+
+msgid "advlink_dlg_popup_toolbar"
+msgstr "Показать панели инструментов"
+
+msgid "advlink_dlg_popup_menubar"
+msgstr "Показать строку меню"
+
+msgid "advlink_dlg_popup_location"
+msgstr "Показать строку адреса"
+
+msgid "advlink_dlg_popup_resizable"
+msgstr "Сделать размер окна изменяемым"
+
+msgid "advlink_dlg_popup_dependent"
+msgstr "Зависимые (только Mozilla/Firefox)"
+
+msgid "advlink_dlg_popup_size"
+msgstr "Размер"
+
+msgid "advlink_dlg_popup_position"
+msgstr "Позиция (X/Y)"
+
+msgid "advlink_dlg_id"
+msgstr "Идентификатор"
+
+msgid "advlink_dlg_style"
+msgstr "Стиль"
+
+msgid "advlink_dlg_classes"
+msgstr "Классы"
+
+msgid "advlink_dlg_target_name"
+msgstr "Название цели"
+
+msgid "advlink_dlg_langdir"
+msgstr "Направление языка"
+
+msgid "advlink_dlg_target_langcode"
+msgstr "Целевой язык"
+
+msgid "advlink_dlg_langcode"
+msgstr "Код языка"
+
+msgid "advlink_dlg_encoding"
+msgstr "Целевая кодировка"
+
+msgid "advlink_dlg_mime"
+msgstr "Целевой MIME-тип"
+
+msgid "advlink_dlg_rel"
+msgstr "Отношение страница к цели"
+
+msgid "advlink_dlg_rev"
+msgstr "Отношение цель к странице"
+
+msgid "advlink_dlg_tabindex"
+msgstr "Индекс табуляции"
+
+msgid "advlink_dlg_accesskey"
+msgstr "Клавиша доступа"
+
+msgid "advlink_dlg_ltr"
+msgstr "Слева направо"
+
+msgid "advlink_dlg_rtl"
+msgstr "Справа налево"
+
+msgid "advlink_dlg_link_list"
+msgstr "Список ссылок"
+
+msgid "xhtmlxtras_cite_desc"
+msgstr "Цитата"
+
+msgid "xhtmlxtras_abbr_desc"
+msgstr "Аббревиатура"
+
+msgid "xhtmlxtras_acronym_desc"
+msgstr "Акроним"
+
+msgid "xhtmlxtras_del_desc"
+msgstr "Удаленный текст"
+
+msgid "xhtmlxtras_ins_desc"
+msgstr "Добавленный текст"
+
+msgid "xhtmlxtras_attribs_desc"
+msgstr "Вставить/редактировать атрибуты"
+
+msgid "xhtmlxtras_cite_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_cite_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_abbr_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_abbr_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_acronym_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_acronym_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_del_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_del_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_ins_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_ins_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_attribs_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_attribs_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_dlg_attribute_label_title"
+msgstr "Название"
+
+msgid "xhtmlxtras_dlg_attribute_label_id"
+msgstr "Идентификатор"
+
+msgid "xhtmlxtras_dlg_attribute_label_class"
+msgstr "Класс"
+
+msgid "xhtmlxtras_dlg_attribute_label_style"
+msgstr "Стиль"
+
+msgid "xhtmlxtras_dlg_attribute_label_cite"
+msgstr "Цитата"
+
+msgid "xhtmlxtras_dlg_attribute_label_datetime"
+msgstr "Дата/время"
+
+msgid "xhtmlxtras_dlg_attribute_label_langdir"
+msgstr "Направление текста"
+
+msgid "xhtmlxtras_dlg_attribute_option_ltr"
+msgstr "Слева направо"
+
+msgid "xhtmlxtras_dlg_attribute_option_rtl"
+msgstr "Справа налево"
+
+msgid "xhtmlxtras_dlg_attribute_label_langcode"
+msgstr "Язык"
+
+msgid "xhtmlxtras_dlg_attribute_label_tabindex"
+msgstr "Индекс табуляции"
+
+msgid "xhtmlxtras_dlg_attribute_label_accesskey"
+msgstr "Клавиша доступа"
+
+msgid "xhtmlxtras_dlg_attribute_events_tab"
+msgstr "События"
+
+msgid "xhtmlxtras_dlg_attribute_attrib_tab"
+msgstr "Атрибуты"
+
+msgid "xhtmlxtras_dlg_general_tab"
+msgstr "Общие"
+
+msgid "xhtmlxtras_dlg_attrib_tab"
+msgstr "Атрибуты"
+
+msgid "xhtmlxtras_dlg_events_tab"
+msgstr "События"
+
+msgid "xhtmlxtras_dlg_fieldset_general_tab"
+msgstr "Общие настройки"
+
+msgid "xhtmlxtras_dlg_fieldset_attrib_tab"
+msgstr "Атрибуты элемента"
+
+msgid "xhtmlxtras_dlg_fieldset_events_tab"
+msgstr "События элемента"
+
+msgid "xhtmlxtras_dlg_title_ins_element"
+msgstr "Элемент добавленного текста"
+
+msgid "xhtmlxtras_dlg_title_del_element"
+msgstr "Элемент удалённого текста"
+
+msgid "xhtmlxtras_dlg_title_acronym_element"
+msgstr "Элемент акронима"
+
+msgid "xhtmlxtras_dlg_title_abbr_element"
+msgstr "Элемент аббревиатуры"
+
+msgid "xhtmlxtras_dlg_title_cite_element"
+msgstr "Элемент цитаты"
+
+msgid "xhtmlxtras_dlg_remove"
+msgstr "Убрать"
+
+msgid "xhtmlxtras_dlg_insert_date"
+msgstr "Вставить текущую дату/время"
+
+msgid "xhtmlxtras_dlg_option_ltr"
+msgstr "Слева направо"
+
+msgid "xhtmlxtras_dlg_option_rtl"
+msgstr "Справа налево"
+
+msgid "xhtmlxtras_dlg_attribs_title"
+msgstr "Вставить/редактировать атрибуты"
+
+msgid "style_desc"
+msgstr "Стиль оформления"
+
+msgid "style_delta_width"
+msgstr "35"
+
+msgid "style_delta_height"
+msgstr ""
+
+msgid "style_dlg_title"
+msgstr "Стиль оформления"
+
+msgid "style_dlg_apply"
+msgstr "Применить"
+
+msgid "style_dlg_text_tab"
+msgstr "Текст"
+
+msgid "style_dlg_background_tab"
+msgstr "Фон"
+
+msgid "style_dlg_block_tab"
+msgstr "Блок"
+
+msgid "style_dlg_box_tab"
+msgstr "Контейнер"
+
+msgid "style_dlg_border_tab"
+msgstr "Граница"
+
+msgid "style_dlg_list_tab"
+msgstr "Список"
+
+msgid "style_dlg_positioning_tab"
+msgstr "Позиция"
+
+msgid "style_dlg_text_props"
+msgstr "Текст"
+
+msgid "style_dlg_text_font"
+msgstr "Шрифт"
+
+msgid "style_dlg_text_size"
+msgstr "Размер"
+
+msgid "style_dlg_text_weight"
+msgstr "Вес"
+
+msgid "style_dlg_text_style"
+msgstr "Стиль"
+
+msgid "style_dlg_text_variant"
+msgstr "Начертание"
+
+msgid "style_dlg_text_lineheight"
+msgstr "Высота строки"
+
+msgid "style_dlg_text_case"
+msgstr "Регистр"
+
+msgid "style_dlg_text_color"
+msgstr "Цвет"
+
+msgid "style_dlg_text_decoration"
+msgstr "Оформление"
+
+msgid "style_dlg_text_overline"
+msgstr "Надчеркнутый"
+
+msgid "style_dlg_text_underline"
+msgstr "Подчеркнутый"
+
+msgid "style_dlg_text_striketrough"
+msgstr "Зачеркнутый"
+
+msgid "style_dlg_text_blink"
+msgstr "Мигающий"
+
+msgid "style_dlg_text_none"
+msgstr "Отсутствует"
+
+msgid "style_dlg_background_color"
+msgstr "Цвет фона"
+
+msgid "style_dlg_background_image"
+msgstr "Фоновое изображение"
+
+msgid "style_dlg_background_repeat"
+msgstr "Повторение"
+
+msgid "style_dlg_background_attachment"
+msgstr "Прикрепление"
+
+msgid "style_dlg_background_hpos"
+msgstr "Горизонтальная позиция"
+
+msgid "style_dlg_background_vpos"
+msgstr "Вертикальная позиция"
+
+msgid "style_dlg_block_wordspacing"
+msgstr "Промежутки между словами"
+
+msgid "style_dlg_block_letterspacing"
+msgstr "Промежутки между символами"
+
+msgid "style_dlg_block_vertical_alignment"
+msgstr "Вертикальное выравнивание"
+
+msgid "style_dlg_block_text_align"
+msgstr "Выравнивание текста"
+
+msgid "style_dlg_block_text_indent"
+msgstr "Отступ текста"
+
+msgid "style_dlg_block_whitespace"
+msgstr "Пробел"
+
+msgid "style_dlg_block_display"
+msgstr "Отображение"
+
+msgid "style_dlg_box_width"
+msgstr "Ширина"
+
+msgid "style_dlg_box_height"
+msgstr "Высота"
+
+msgid "style_dlg_box_float"
+msgstr "Плавающий"
+
+msgid "style_dlg_box_clear"
+msgstr "Очистить"
+
+msgid "style_dlg_padding"
+msgstr "Отступ"
+
+msgid "style_dlg_same"
+msgstr "Одно значение"
+
+msgid "style_dlg_top"
+msgstr "Сверху"
+
+msgid "style_dlg_right"
+msgstr "Справа"
+
+msgid "style_dlg_bottom"
+msgstr "Снизу"
+
+msgid "style_dlg_left"
+msgstr "Слева"
+
+msgid "style_dlg_margin"
+msgstr "Поля"
+
+msgid "style_dlg_style"
+msgstr "Стиль"
+
+msgid "style_dlg_width"
+msgstr "Ширина"
+
+msgid "style_dlg_height"
+msgstr "Высота"
+
+msgid "style_dlg_color"
+msgstr "Цвет"
+
+msgid "style_dlg_list_type"
+msgstr "Тип"
+
+msgid "style_dlg_bullet_image"
+msgstr "Изображение маркера"
+
+msgid "style_dlg_position"
+msgstr "Позиция"
+
+msgid "style_dlg_positioning_type"
+msgstr "Тип"
+
+msgid "style_dlg_visibility"
+msgstr "Видимость"
+
+msgid "style_dlg_zindex"
+msgstr "Z-индекс"
+
+msgid "style_dlg_overflow"
+msgstr "Обтекание"
+
+msgid "style_dlg_placement"
+msgstr "Позиция"
+
+msgid "style_dlg_clip"
+msgstr "Кадрирование"
+
+msgid "paste_paste_text_desc"
+msgstr "Вставить только текст"
+
+msgid "paste_paste_word_desc"
+msgstr "Вставить из Word"
+
+msgid "paste_selectall_desc"
+msgstr "Выделить все"
+
+msgid "paste_dlg_text_title"
+msgstr "Используйте комбинацию клавиш Ctrl+V, чтобы вставить текст."
+
+msgid "paste_dlg_text_linebreaks"
+msgstr "Сохранять разрывы строк"
+
+msgid "paste_dlg_word_title"
+msgstr "Используйте комбинацию клавиш Ctrl+V, чтобы вставить текст."
+
+msgid "table_desc"
+msgstr "Вставить таблицу"
+
+msgid "table_row_before_desc"
+msgstr "Вставить строку до"
+
+msgid "table_row_after_desc"
+msgstr "Вставить строку после"
+
+msgid "table_delete_row_desc"
+msgstr "Удалить строку"
+
+msgid "table_col_before_desc"
+msgstr "Вставить столбец до"
+
+msgid "table_col_after_desc"
+msgstr "Вставить столбец после"
+
+msgid "table_delete_col_desc"
+msgstr "Удалить столбец"
+
+msgid "table_split_cells_desc"
+msgstr "Разделить ячейку"
+
+msgid "table_merge_cells_desc"
+msgstr "Объединить ячейки"
+
+msgid "table_row_desc"
+msgstr "Свойства строки"
+
+msgid "table_cell_desc"
+msgstr "Свойства ячейки"
+
+msgid "table_props_desc"
+msgstr "Свойства таблицы"
+
+msgid "table_paste_row_before_desc"
+msgstr "Вставить строку таблицы до"
+
+msgid "table_paste_row_after_desc"
+msgstr "Вставить строку таблицы после"
+
+msgid "table_cut_row_desc"
+msgstr "Вырезать строку"
+
+msgid "table_copy_row_desc"
+msgstr "Копировать строку"
+
+msgid "table_del"
+msgstr "Удалить таблицу"
+
+msgid "table_row"
+msgstr "Строка"
+
+msgid "table_col"
+msgstr "Столбец"
+
+msgid "table_cell"
+msgstr "Ячейка"
+
+msgid "table_rowprops_delta_width"
+msgstr ""
+
+msgid "table_rowprops_delta_height"
+msgstr ""
+
+msgid "table_cellprops_delta_width"
+msgstr ""
+
+msgid "table_cellprops_delta_height"
+msgstr ""
+
+msgid "table_table_delta_width"
+msgstr ""
+
+msgid "table_table_delta_height"
+msgstr ""
+
+msgid "table_merge_cells_delta_width"
+msgstr ""
+
+msgid "table_merge_cells_delta_height"
+msgstr ""
+
+msgid "table_dlg_general_tab"
+msgstr "Общие"
+
+msgid "table_dlg_advanced_tab"
+msgstr "Дополнительные"
+
+msgid "table_dlg_general_props"
+msgstr "Общие свойства"
+
+msgid "table_dlg_advanced_props"
+msgstr "Дополнительные свойства"
+
+msgid "table_dlg_rowtype"
+msgstr "Строка в части таблицы"
+
+msgid "table_dlg_title"
+msgstr "Вставить/изменить таблицу"
+
+msgid "table_dlg_width"
+msgstr "Ширина"
+
+msgid "table_dlg_height"
+msgstr "Высота"
+
+msgid "table_dlg_cols"
+msgstr "Столбцы"
+
+msgid "table_dlg_rows"
+msgstr "Строки"
+
+msgid "table_dlg_cellspacing"
+msgstr "Расстояние между ячейками"
+
+msgid "table_dlg_cellpadding"
+msgstr "Отступы в ячейках"
+
+msgid "table_dlg_border"
+msgstr "Граница"
+
+msgid "table_dlg_align"
+msgstr "Выравнивание"
+
+msgid "table_dlg_align_default"
+msgstr "По умолчанию"
+
+msgid "table_dlg_align_left"
+msgstr "Влево"
+
+msgid "table_dlg_align_right"
+msgstr "Вправо"
+
+msgid "table_dlg_align_middle"
+msgstr "По центру"
+
+msgid "table_dlg_row_title"
+msgstr "Свойства строки"
+
+msgid "table_dlg_cell_title"
+msgstr "Свойства ячейки"
+
+msgid "table_dlg_cell_type"
+msgstr "Тип ячейки"
+
+msgid "table_dlg_valign"
+msgstr "Вертикальное выравнивание"
+
+msgid "table_dlg_align_top"
+msgstr "По верху"
+
+msgid "table_dlg_align_bottom"
+msgstr "По низу"
+
+msgid "table_dlg_bordercolor"
+msgstr "Цвет границы"
+
+msgid "table_dlg_bgcolor"
+msgstr "Цвет фона"
+
+msgid "table_dlg_merge_cells_title"
+msgstr "Слить ячейки"
+
+msgid "table_dlg_id"
+msgstr "Идентификатор"
+
+msgid "table_dlg_style"
+msgstr "Стиль"
+
+msgid "table_dlg_langdir"
+msgstr "Направление языка"
+
+msgid "table_dlg_langcode"
+msgstr "Код языка"
+
+msgid "table_dlg_mime"
+msgstr "Целевой MIME-тип"
+
+msgid "table_dlg_ltr"
+msgstr "Слева направо"
+
+msgid "table_dlg_rtl"
+msgstr "Справа налево"
+
+msgid "table_dlg_bgimage"
+msgstr "Фоновое изображение"
+
+msgid "table_dlg_summary"
+msgstr "Сводка"
+
+msgid "table_dlg_td"
+msgstr "Данные"
+
+msgid "table_dlg_th"
+msgstr "Заголовок"
+
+msgid "table_dlg_cell_cell"
+msgstr "Обновить текущую ячейку"
+
+msgid "table_dlg_cell_row"
+msgstr "Обновить все ячейки в строке"
+
+msgid "table_dlg_cell_all"
+msgstr "Обновить все ячейки в таблице"
+
+msgid "table_dlg_row_row"
+msgstr "Обновить текущую строку"
+
+msgid "table_dlg_row_odd"
+msgstr "Обновить нечетные строки в таблице"
+
+msgid "table_dlg_row_even"
+msgstr "Обновить чётные строки в таблице"
+
+msgid "table_dlg_row_all"
+msgstr "Обновить все строки в таблице"
+
+msgid "table_dlg_thead"
+msgstr "Верхняя часть таблицы"
+
+msgid "table_dlg_tbody"
+msgstr "Основная часть таблицы"
+
+msgid "table_dlg_tfoot"
+msgstr "Нижняя часть таблицы"
+
+msgid "table_dlg_scope"
+msgstr "Пределы"
+
+msgid "table_dlg_rowgroup"
+msgstr "Группа строк"
+
+msgid "table_dlg_colgroup"
+msgstr "Группа столбцов"
+
+msgid "table_dlg_col_limit"
+msgstr "Вы превысили максимальное количество в {$cols} столбцов."
+
+msgid "table_dlg_row_limit"
+msgstr "Вы превысили максимальное количество в {$rows} строк."
+
+msgid "table_dlg_cell_limit"
+msgstr "Вы превысили максимальное количество в {$cells} ячеек."
+
+msgid "table_dlg_missing_scope"
+msgstr "Вы действительно хотите продолжить без указания области действия этой ячейки заголовка? Без этого некоторым пользователям с ограниченной трудоспособностью может быть трудно понять содержание или данные таблицы."
+
+msgid "table_dlg_caption"
+msgstr "Заголовок таблицы"
+
+msgid "table_dlg_frame"
+msgstr "Границы"
+
+msgid "table_dlg_frame_none"
+msgstr "отсутствует"
+
+msgid "table_dlg_frame_groups"
+msgstr "группы"
+
+msgid "table_dlg_frame_rows"
+msgstr "строки"
+
+msgid "table_dlg_frame_cols"
+msgstr "столбцы"
+
+msgid "table_dlg_frame_all"
+msgstr "все"
+
+msgid "table_dlg_rules"
+msgstr "Линейки"
+
+msgid "table_dlg_rules_void"
+msgstr "отсутствуют"
+
+msgid "table_dlg_rules_above"
+msgstr "сверху"
+
+msgid "table_dlg_rules_below"
+msgstr "снизу"
+
+msgid "table_dlg_rules_hsides"
+msgstr "горизонтальные"
+
+msgid "table_dlg_rules_lhs"
+msgstr "слева"
+
+msgid "table_dlg_rules_rhs"
+msgstr "справа"
+
+msgid "table_dlg_rules_vsides"
+msgstr "вертикальные"
+
+msgid "table_dlg_rules_box"
+msgstr "контейнер"
+
+msgid "table_dlg_rules_border"
+msgstr "граница"
+
+msgid "autosave_unload_msg"
+msgstr "Внесенные изменения будут потеряны, если вы уйдете с этой страницы."
+
+msgid "fullscreen_desc"
+msgstr "Вкл./выкл. полноэкранный режим"
+
+msgid "media_desc"
+msgstr "Вставить/редактировать медиа-объект"
+
+msgid "media_edit"
+msgstr "Редактировать медиа-объект"
+
+msgid "media_delta_width"
+msgstr ""
+
+msgid "media_delta_height"
+msgstr ""
+
+msgid "media_dlg_title"
+msgstr "Вставить/редактировать медиа-объект"
+
+msgid "media_dlg_general"
+msgstr "Общие"
+
+msgid "media_dlg_advanced"
+msgstr "Дополнительные"
+
+msgid "media_dlg_file"
+msgstr "Файл/адрес"
+
+msgid "media_dlg_list"
+msgstr "Список"
+
+msgid "media_dlg_size"
+msgstr "Размеры"
+
+msgid "media_dlg_preview"
+msgstr "Предварительный просмотр"
+
+msgid "media_dlg_constrain_proportions"
+msgstr "Сохранять пропорции"
+
+msgid "media_dlg_type"
+msgstr "Тип"
+
+msgid "media_dlg_id"
+msgstr "Идентификатор"
+
+msgid "media_dlg_name"
+msgstr "Название"
+
+msgid "media_dlg_class_name"
+msgstr "Класс"
+
+msgid "media_dlg_vspace"
+msgstr "Вертикальный отступ"
+
+msgid "media_dlg_hspace"
+msgstr "Горизонтальный отступ"
+
+msgid "media_dlg_play"
+msgstr "Проигрывать автоматически"
+
+msgid "media_dlg_loop"
+msgstr "Зациклить"
+
+msgid "media_dlg_menu"
+msgstr "Отобразить меню"
+
+msgid "media_dlg_quality"
+msgstr "Качество"
+
+msgid "media_dlg_scale"
+msgstr "Масштаб"
+
+msgid "media_dlg_align"
+msgstr "Выравнивание"
+
+msgid "media_dlg_salign"
+msgstr "SAlign"
+
+msgid "media_dlg_wmode"
+msgstr "WMode"
+
+msgid "media_dlg_bgcolor"
+msgstr "Фон"
+
+msgid "media_dlg_base"
+msgstr "Основа"
+
+msgid "media_dlg_flashvars"
+msgstr "Переменные Flash"
+
+msgid "media_dlg_liveconnect"
+msgstr "SWLiveConnect"
+
+msgid "media_dlg_autohref"
+msgstr "AutoHREF"
+
+msgid "media_dlg_cache"
+msgstr "Кеш"
+
+msgid "media_dlg_hidden"
+msgstr "Скрытое"
+
+msgid "media_dlg_controller"
+msgstr "Controller"
+
+msgid "media_dlg_kioskmode"
+msgstr "Kiosk mode"
+
+msgid "media_dlg_playeveryframe"
+msgstr "Play every frame"
+
+msgid "media_dlg_targetcache"
+msgstr "Target cache"
+
+msgid "media_dlg_correction"
+msgstr "No correction"
+
+msgid "media_dlg_enablejavascript"
+msgstr "Enable JavaScript"
+
+msgid "media_dlg_starttime"
+msgstr "Start time"
+
+msgid "media_dlg_endtime"
+msgstr "End time"
+
+msgid "media_dlg_href"
+msgstr "Href"
+
+msgid "media_dlg_qtsrcchokespeed"
+msgstr "Choke speed"
+
+msgid "media_dlg_target"
+msgstr "Target"
+
+msgid "media_dlg_volume"
+msgstr "Volume"
+
+msgid "media_dlg_autostart"
+msgstr "Auto start"
+
+msgid "media_dlg_enabled"
+msgstr "Enabled"
+
+msgid "media_dlg_fullscreen"
+msgstr "Fullscreen"
+
+msgid "media_dlg_invokeurls"
+msgstr "Invoke URLs"
+
+msgid "media_dlg_mute"
+msgstr "Mute"
+
+msgid "media_dlg_stretchtofit"
+msgstr "Stretch to fit"
+
+msgid "media_dlg_windowlessvideo"
+msgstr "Windowless video"
+
+msgid "media_dlg_balance"
+msgstr "Balance"
+
+msgid "media_dlg_baseurl"
+msgstr "Base URL"
+
+msgid "media_dlg_captioningid"
+msgstr "Captioning id"
+
+msgid "media_dlg_currentmarker"
+msgstr "Current marker"
+
+msgid "media_dlg_currentposition"
+msgstr "Current position"
+
+msgid "media_dlg_defaultframe"
+msgstr "Default frame"
+
+msgid "media_dlg_playcount"
+msgstr "Play count"
+
+msgid "media_dlg_rate"
+msgstr "Rate"
+
+msgid "media_dlg_uimode"
+msgstr "UI Mode"
+
+msgid "media_dlg_flash_options"
+msgstr "Flash options"
+
+msgid "media_dlg_qt_options"
+msgstr "Quicktime options"
+
+msgid "media_dlg_wmp_options"
+msgstr "Windows media player options"
+
+msgid "media_dlg_rmp_options"
+msgstr "Real media player options"
+
+msgid "media_dlg_shockwave_options"
+msgstr "Shockwave options"
+
+msgid "media_dlg_autogotourl"
+msgstr "Auto goto URL"
+
+msgid "media_dlg_center"
+msgstr "Center"
+
+msgid "media_dlg_imagestatus"
+msgstr "Image status"
+
+msgid "media_dlg_maintainaspect"
+msgstr "Maintain aspect"
+
+msgid "media_dlg_nojava"
+msgstr "No java"
+
+msgid "media_dlg_prefetch"
+msgstr "Prefetch"
+
+msgid "media_dlg_shuffle"
+msgstr "Shuffle"
+
+msgid "media_dlg_console"
+msgstr "Console"
+
+msgid "media_dlg_numloop"
+msgstr "Num loops"
+
+msgid "media_dlg_controls"
+msgstr "Controls"
+
+msgid "media_dlg_scriptcallbacks"
+msgstr "Script callbacks"
+
+msgid "media_dlg_swstretchstyle"
+msgstr "Stretch style"
+
+msgid "media_dlg_swstretchhalign"
+msgstr "Stretch H-Align"
+
+msgid "media_dlg_swstretchvalign"
+msgstr "Stretch V-Align"
+
+msgid "media_dlg_sound"
+msgstr "Sound"
+
+msgid "media_dlg_progress"
+msgstr "Progress"
+
+msgid "media_dlg_qtsrc"
+msgstr "QT Src"
+
+msgid "media_dlg_qt_stream_warn"
+msgstr "Streamed rtsp resources should be added to the QT Src field under the advanced tab.\nYou should also add a non streamed version to the Src field.."
+
+msgid "media_dlg_align_top"
+msgstr "Top"
+
+msgid "media_dlg_align_right"
+msgstr "Right"
+
+msgid "media_dlg_align_bottom"
+msgstr "Bottom"
+
+msgid "media_dlg_align_left"
+msgstr "Left"
+
+msgid "media_dlg_align_center"
+msgstr "Center"
+
+msgid "media_dlg_align_top_left"
+msgstr "Top left"
+
+msgid "media_dlg_align_top_right"
+msgstr "Top right"
+
+msgid "media_dlg_align_bottom_left"
+msgstr "Bottom left"
+
+msgid "media_dlg_align_bottom_right"
+msgstr "Bottom right"
+
+msgid "media_dlg_flv_options"
+msgstr "Flash video options"
+
+msgid "media_dlg_flv_scalemode"
+msgstr "Scale mode"
+
+msgid "media_dlg_flv_buffer"
+msgstr "Buffer"
+
+msgid "media_dlg_flv_startimage"
+msgstr "Start image"
+
+msgid "media_dlg_flv_starttime"
+msgstr "Start time"
+
+msgid "media_dlg_flv_defaultvolume"
+msgstr "Default volumne"
+
+msgid "media_dlg_flv_hiddengui"
+msgstr "Hidden GUI"
+
+msgid "media_dlg_flv_autostart"
+msgstr "Auto start"
+
+msgid "media_dlg_flv_loop"
+msgstr "Loop"
+
+msgid "media_dlg_flv_showscalemodes"
+msgstr "Show scale modes"
+
+msgid "media_dlg_flv_smoothvideo"
+msgstr "Smooth video"
+
+msgid "media_dlg_flv_jscallback"
+msgstr "JS Callback"
+
+msgid "fullpage_desc"
+msgstr "Свойства документа"
+
+msgid "fullpage_delta_width"
+msgstr ""
+
+msgid "fullpage_delta_height"
+msgstr ""
+
+msgid "fullpage_dlg_title"
+msgstr "Свойства документа"
+
+msgid "fullpage_dlg_meta_tab"
+msgstr "Основные"
+
+msgid "fullpage_dlg_appearance_tab"
+msgstr "Офомление"
+
+msgid "fullpage_dlg_advanced_tab"
+msgstr "Расширенные"
+
+msgid "fullpage_dlg_meta_props"
+msgstr "Мета информация"
+
+msgid "fullpage_dlg_langprops"
+msgstr "Язык и кодировка"
+
+msgid "fullpage_dlg_meta_title"
+msgstr "Заголовок"
+
+msgid "fullpage_dlg_meta_keywords"
+msgstr "Ключевые слова"
+
+msgid "fullpage_dlg_meta_description"
+msgstr "Описание"
+
+msgid "fullpage_dlg_meta_robots"
+msgstr "Роботы"
+
+msgid "fullpage_dlg_doctypes"
+msgstr "Тип документа"
+
+msgid "fullpage_dlg_langcode"
+msgstr "Код языка"
+
+msgid "fullpage_dlg_langdir"
+msgstr "Направление языка"
+
+msgid "fullpage_dlg_ltr"
+msgstr "Слева направо"
+
+msgid "fullpage_dlg_rtl"
+msgstr "Справа налево"
+
+msgid "fullpage_dlg_xml_pi"
+msgstr "Определения XML"
+
+msgid "fullpage_dlg_encoding"
+msgstr "Кодировка символов"
+
+msgid "fullpage_dlg_appearance_bgprops"
+msgstr "Свойства фона"
+
+msgid "fullpage_dlg_appearance_marginprops"
+msgstr "Поля страницы"
+
+msgid "fullpage_dlg_appearance_linkprops"
+msgstr "Цвета ссылок"
+
+msgid "fullpage_dlg_appearance_textprops"
+msgstr "Свойства текста"
+
+msgid "fullpage_dlg_bgcolor"
+msgstr "Цвет фона"
+
+msgid "fullpage_dlg_bgimage"
+msgstr "Фоновое изображение"
+
+msgid "fullpage_dlg_left_margin"
+msgstr "Левое поле"
+
+msgid "fullpage_dlg_right_margin"
+msgstr "Правле поле"
+
+msgid "fullpage_dlg_top_margin"
+msgstr "Верхнее поле"
+
+msgid "fullpage_dlg_bottom_margin"
+msgstr "Нижнее поле"
+
+msgid "fullpage_dlg_text_color"
+msgstr "Цвет текста"
+
+msgid "fullpage_dlg_font_size"
+msgstr "Размер шрифта"
+
+msgid "fullpage_dlg_font_face"
+msgstr "Гарнитура"
+
+msgid "fullpage_dlg_link_color"
+msgstr "Цвет ссылки"
+
+msgid "fullpage_dlg_hover_color"
+msgstr "Цвет при наведении"
+
+msgid "fullpage_dlg_visited_color"
+msgstr "Цвет посещенной"
+
+msgid "fullpage_dlg_active_color"
+msgstr "Цвет активной"
+
+msgid "fullpage_dlg_textcolor"
+msgstr "Цвет"
+
+msgid "fullpage_dlg_fontsize"
+msgstr "Размер шрифта"
+
+msgid "fullpage_dlg_fontface"
+msgstr "Гарнитура"
+
+msgid "fullpage_dlg_meta_index_follow"
+msgstr "Индексировать и следовать"
+
+msgid "fullpage_dlg_meta_index_nofollow"
+msgstr "Индексировать и не следовать"
+
+msgid "fullpage_dlg_meta_noindex_follow"
+msgstr "Не индексировать но следовать"
+
+msgid "fullpage_dlg_meta_noindex_nofollow"
+msgstr "Не индексировать и не следовать"
+
+msgid "fullpage_dlg_appearance_style"
+msgstr "Таблица стилей и свойства"
+
+msgid "fullpage_dlg_stylesheet"
+msgstr "Таблица стилей"
+
+msgid "fullpage_dlg_style"
+msgstr "Стиль"
+
+msgid "fullpage_dlg_author"
+msgstr "Автор"
+
+msgid "fullpage_dlg_copyright"
+msgstr "Права"
+
+msgid "fullpage_dlg_add"
+msgstr "Добавить элемент"
+
+msgid "fullpage_dlg_remove"
+msgstr "Удалить выделенный элемент"
+
+msgid "fullpage_dlg_moveup"
+msgstr "Поднять выделенный элемент"
+
+msgid "fullpage_dlg_movedown"
+msgstr "Опустить выделенный элемент"
+
+msgid "fullpage_dlg_head_elements"
+msgstr "Заголовочные элементы"
+
+msgid "fullpage_dlg_info"
+msgstr "Информация"
+
+msgid "fullpage_dlg_add_title"
+msgstr "Заголовок"
+
+msgid "fullpage_dlg_add_meta"
+msgstr "Мета-элемент"
+
+msgid "fullpage_dlg_add_script"
+msgstr "Скрипт"
+
+msgid "fullpage_dlg_add_style"
+msgstr "Стиль"
+
+msgid "fullpage_dlg_add_link"
+msgstr "Ссылка"
+
+msgid "fullpage_dlg_add_base"
+msgstr "Базовый элемент"
+
+msgid "fullpage_dlg_add_comment"
+msgstr "Комментарий"
+
+msgid "fullpage_dlg_title_element"
+msgstr "Заголовок"
+
+msgid "fullpage_dlg_script_element"
+msgstr "Скрипт"
+
+msgid "fullpage_dlg_style_element"
+msgstr "Стиль"
+
+msgid "fullpage_dlg_base_element"
+msgstr "Базовый элемент"
+
+msgid "fullpage_dlg_link_element"
+msgstr "Ссылка"
+
+msgid "fullpage_dlg_meta_element"
+msgstr "Мета-элемент"
+
+msgid "fullpage_dlg_comment_element"
+msgstr "Комментарий"
+
+msgid "fullpage_dlg_src"
+msgstr "Источник"
+
+msgid "fullpage_dlg_language"
+msgstr "Язык"
+
+msgid "fullpage_dlg_href"
+msgstr "Адрес ссылки"
+
+msgid "fullpage_dlg_target"
+msgstr "Цель"
+
+msgid "fullpage_dlg_type"
+msgstr "Тип"
+
+msgid "fullpage_dlg_charset"
+msgstr "Кодировка"
+
+msgid "fullpage_dlg_defer"
+msgstr "Defer"
+
+msgid "fullpage_dlg_media"
+msgstr "Медиа"
+
+msgid "fullpage_dlg_properties"
+msgstr "Свойства"
+
+msgid "fullpage_dlg_name"
+msgstr "Имя"
+
+msgid "fullpage_dlg_value"
+msgstr "Значение"
+
+msgid "fullpage_dlg_content"
+msgstr "Содержание"
+
+msgid "fullpage_dlg_rel"
+msgstr "Связь"
+
+msgid "fullpage_dlg_rev"
+msgstr "Рев."
+
+msgid "fullpage_dlg_hreflang"
+msgstr "Язык ссылки"
+
+msgid "fullpage_dlg_general_props"
+msgstr "Основные"
+
+msgid "fullpage_dlg_advanced_props"
+msgstr "Расширенные"
+
+msgid "template_desc"
+msgstr "Вставить готовый шаблон"
+
+msgid "template_dlg_title"
+msgstr "Шаблоны"
+
+msgid "template_dlg_label"
+msgstr "Шаблон"
+
+msgid "template_dlg_desc_label"
+msgstr "Описание"
+
+msgid "template_dlg_desc"
+msgstr "Вставить готовый шаблон"
+
+msgid "template_dlg_select"
+msgstr "Выберить шаблон"
+
+msgid "template_dlg_preview"
+msgstr "Просмотр"
+
+msgid "template_dlg_warning"
+msgstr "Внимание: замена одного шаблона другим может вызвать потерю данных."
+
+msgid "template_dlg_mdate_format"
+msgstr "%Y-%m-%d %H:%M:%S"
+
+msgid "template_dlg_cdate_format"
+msgstr "%Y-%m-%d %H:%M:%S"
+
+msgid "template_dlg_months_long"
+msgstr "Январь,Ферваль,Март,Апрель,Май,Июнь,Июль,Август,Сентябрь,Октябрь,Ноябрь,Декабрь"
+
+msgid "template_dlg_months_short"
+msgstr "Янв,Фев,Мар,Апр,Май,Июн,Июл,Авг,Сен,Окт,Ноя,Дек"
+
+msgid "template_dlg_day_long"
+msgstr "Воскресенье,Понедельник,Вторник,Среда,Четверг,Пятница,Суббота,Воскресенье"
+
+msgid "template_dlg_day_short"
+msgstr "Вс,Пн,Вт,Ср,Чт,Пт,Сб,Вс"
+
+msgid "visualchars_desc"
+msgstr "Символы визуального контроля вкл./выкл."
+
+msgid "spellchecker_desc"
+msgstr "Проверка орфографии"
+
+msgid "spellchecker_menu"
+msgstr "Параметры проверки орфографии"
+
+msgid "spellchecker_ignore_word"
+msgstr "Игнорировать слово"
+
+msgid "spellchecker_ignore_words"
+msgstr "Игнорировать все"
+
+msgid "spellchecker_langs"
+msgstr "Языки"
+
+msgid "spellchecker_wait"
+msgstr "Пожалуйста, подождите..."
+
+msgid "spellchecker_sug"
+msgstr "Варианты"
+
+msgid "spellchecker_no_sug"
+msgstr "Нет вариантов"
+
+msgid "spellchecker_no_mpell"
+msgstr "Ошибок не обнаружено."
+
+msgid "pagebreak_desc"
+msgstr "Вставить разделитель страницы."
+

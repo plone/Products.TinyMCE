@@ -1,271 +1,271 @@
-# This is the Dutch language pack for TinyMCE.
-# Version 10.5
+# This is the Danish language pack for TinyMCE.
+# Version 4.1
 #
-# janwalhof
+# Thomas Bertram Povlsen  - Ronny Buelund (update - January 2008) - Svend Grønlund, nov. 2008
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2009-08-06 00:00+0000\n"
-"Last-Translator: janwalhof\n"
-"Language-Team: janwalhof\n"
+"PO-Revision-Date: 2009-08-01 00:00+0000\n"
+"Last-Translator: Thomas Bertram Povlsen  - Ronny Buelund (update - January 2008) - Svend Grønlund, nov. 2008\n"
+"Language-Team: Thomas Bertram Povlsen  - Ronny Buelund (update - January 2008) - Svend Grønlund, nov. 2008\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Language-Code: nl\n"
-"Language-Name: Dutch\n"
+"Language-Code: da\n"
+"Language-Name: Danish\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: tinymce\n"
 
 msgid "common_edit_confirm"
-msgstr "Weet u zeker dat u tekst in WYSIWYG mode wilt bewerken in dit tekstveld?"
+msgstr "Vil du bruge den avancerede tekstredigering?"
 
 msgid "common_apply"
-msgstr "Toepassen"
+msgstr "Anvend"
 
 msgid "common_insert"
-msgstr "Invoegen"
+msgstr "Indsæt"
 
 msgid "common_update"
-msgstr "Bijwerken"
+msgstr "Opdater"
 
 msgid "common_cancel"
-msgstr "Annuleren"
+msgstr "Annuller"
 
 msgid "common_close"
-msgstr "Sluiten"
+msgstr "Luk"
 
 msgid "common_browse"
-msgstr "Bladeren"
+msgstr "Gennemse"
 
 msgid "common_class_name"
 msgstr "Klasse"
 
 msgid "common_not_set"
-msgstr "- Standaard -"
+msgstr "-- Ikke sat --"
 
 msgid "common_clipboard_msg"
-msgstr "Kopiëren/knippen/plakken is niet beschikbaar in Mozilla en Firefox.\nWilt u meer informatie over deze beperking?"
+msgstr "Kopier/Klip/indsæt er ikke muligt i Mozilla eller Firefox.\nVil du have mere information om dette emne?"
 
 msgid "common_clipboard_no_support"
-msgstr "Kopiëren/knippen/plakken wordt niet ondersteund door uw browser, gebruik hiervoor de sneltoetsen."
+msgstr "På nuværende tidspunkt ikke supporteret af din browser. Anvend i stedet genvejene på tastaturet."
 
 msgid "common_popup_blocked"
-msgstr "U zult uw popup-blocker tijdelijk moeten uitschakelen voor deze website om gebruik te kunnen maken van alle functies van deze teksteditor."
+msgstr "Undskyld, men vi har noteret os, at din popup-blocker har forhindret et vindue, der giver programmet funktionalitet, at åbne op. Hvis du vil have  den fulde funktionalitet, må du slå popup-blockeren fra for dette websted."
 
 msgid "common_invalid_data"
-msgstr "Fout: Er zijn ongeldige waardes ingevoerd, deze zijn rood gemarkeerd."
+msgstr "Fejl: Forkerte værdier indtastet i felter markeret med rød."
 
 msgid "common_more_colors"
-msgstr "Meer kleuren"
+msgstr "Flere farver"
 
 msgid "simple_bold_desc"
-msgstr "Vet (Ctrl+B)"
+msgstr "Fed (Ctrl+B)"
 
 msgid "simple_italic_desc"
-msgstr "Cursief (Ctrl+I)"
+msgstr "Kursiv (Ctrl+I)"
 
 msgid "simple_underline_desc"
-msgstr "Onderstrepen (Ctrl+U)"
+msgstr "Understreget (Ctrl+U)"
 
 msgid "simple_striketrough_desc"
-msgstr "Doorhalen"
+msgstr "Gennemstreget"
 
 msgid "simple_bullist_desc"
-msgstr "Opsommingstekens"
+msgstr "Unummereret punktopstilling"
 
 msgid "simple_numlist_desc"
-msgstr "Nummering"
+msgstr "Nummereret punktopstilling"
 
 msgid "simple_undo_desc"
-msgstr "Ongedaan maken (Ctrl+Z)"
+msgstr "Fortryd (Ctrl+Z)"
 
 msgid "simple_redo_desc"
-msgstr "Herhalen (Ctrl+Y)"
+msgstr "Gendan (Ctrl+Y)"
 
 msgid "simple_cleanup_desc"
-msgstr "Code opruimen"
+msgstr "Ryd op i uordentlig kode"
 
 msgid "advanced_style_select"
-msgstr "Stijlen"
+msgstr "Typografier"
 
 msgid "advanced_font_size"
-msgstr "Tekengrootte"
+msgstr "Skriftstørrelse"
 
 msgid "advanced_fontdefault"
-msgstr "Lettertype"
+msgstr "Skrifttype"
 
 msgid "advanced_block"
-msgstr "Opmaak"
+msgstr "Format"
 
 msgid "advanced_paragraph"
-msgstr "Alinea"
+msgstr "Afsnit"
 
 msgid "advanced_div"
 msgstr "Div"
 
 msgid "advanced_address"
-msgstr "Adres"
+msgstr "Adresse"
 
 msgid "advanced_pre"
-msgstr "Vaste opmaak"
+msgstr "Præformatteret"
 
 msgid "advanced_h1"
-msgstr "Kop 1"
+msgstr "Overskrift 1"
 
 msgid "advanced_h2"
-msgstr "Kop 2"
+msgstr "Overskrift 2"
 
 msgid "advanced_h3"
-msgstr "Kop 3"
+msgstr "Overskrift 3"
 
 msgid "advanced_h4"
-msgstr "Kop 4"
+msgstr "Overskrift 4"
 
 msgid "advanced_h5"
-msgstr "Kop 5"
+msgstr "Overskrift 5"
 
 msgid "advanced_h6"
-msgstr "Kop 6"
+msgstr "Overskrift 6"
 
 msgid "advanced_blockquote"
-msgstr "Citaat"
+msgstr "Blokcitat"
 
 msgid "advanced_code"
-msgstr "Code"
+msgstr "Kode"
 
 msgid "advanced_samp"
-msgstr "Codevoorbeeld"
+msgstr "Kodeeksempel"
 
 msgid "advanced_dt"
-msgstr "Definitieterm"
+msgstr "Definitionsterm "
 
 msgid "advanced_dd"
-msgstr "Definitiebeschrijving"
+msgstr "Definitionsbeskrivelse"
 
 msgid "advanced_bold_desc"
-msgstr "Vet (Ctrl+B)"
+msgstr "Fed (Ctrl+B)"
 
 msgid "advanced_italic_desc"
-msgstr "Cursief (Ctrl+I)"
+msgstr "Kursiv (Ctrl+I)"
 
 msgid "advanced_underline_desc"
-msgstr "Onderstrepen (Ctrl+U)"
+msgstr "Understreget (Ctrl+U)"
 
 msgid "advanced_striketrough_desc"
-msgstr "Doorhalen"
+msgstr "Gennemstreget"
 
 msgid "advanced_justifyleft_desc"
-msgstr "Links uitlijnen"
+msgstr "Venstrejusteret"
 
 msgid "advanced_justifycenter_desc"
-msgstr "Centreren"
+msgstr "Centreret"
 
 msgid "advanced_justifyright_desc"
-msgstr "Rechts uitlijnen"
+msgstr "Højrejusteret"
 
 msgid "advanced_justifyfull_desc"
-msgstr "Uitvullen"
+msgstr "Lige marginer"
 
 msgid "advanced_bullist_desc"
-msgstr "Opsommingstekens"
+msgstr "Unummereret punktopstilling"
 
 msgid "advanced_numlist_desc"
-msgstr "Nummering"
+msgstr "Nummereret punktopstilling"
 
 msgid "advanced_outdent_desc"
-msgstr "Inspringing verkleinen"
+msgstr "Formindsk indrykning"
 
 msgid "advanced_indent_desc"
-msgstr "Inspringing vergroten"
+msgstr "Øg indrykning"
 
 msgid "advanced_undo_desc"
-msgstr "Ongedaan maken (Ctrl+Z)"
+msgstr "Fortryd (Ctrl+Z)"
 
 msgid "advanced_redo_desc"
-msgstr "Herhalen (Ctrl+Y)"
+msgstr "Gendan (Ctrl+Y)"
 
 msgid "advanced_link_desc"
-msgstr "Link invoegen/bewerken"
+msgstr "Indsæt/rediger link"
 
 msgid "advanced_unlink_desc"
-msgstr "Link verwijderen"
+msgstr "Fjern link"
 
 msgid "advanced_image_desc"
-msgstr "Afbeelding invoegen/bewerken"
+msgstr "Indsæt/rediger billede"
 
 msgid "advanced_cleanup_desc"
-msgstr "Code opruimen"
+msgstr "Ryd op i uordentlig kode"
 
 msgid "advanced_code_desc"
-msgstr "HTML bron bewerken"
+msgstr "Rediger HTML-kilde"
 
 msgid "advanced_sub_desc"
-msgstr "Subscript"
+msgstr "Sænket skrift"
 
 msgid "advanced_sup_desc"
-msgstr "Superscript"
+msgstr "Hævet skrift"
 
 msgid "advanced_hr_desc"
-msgstr "Scheidingslijn invoegen"
+msgstr "Indsæt horisontal linie"
 
 msgid "advanced_removeformat_desc"
-msgstr "Opmaak verwijderen"
+msgstr "Fjern formatering"
 
 msgid "advanced_custom1_desc"
-msgstr "Uw eigen beschrijving hier"
+msgstr "Din egen beskrivelse her"
 
 msgid "advanced_forecolor_desc"
-msgstr "Tekstkleur"
+msgstr "Vælg tekstfarve"
 
 msgid "advanced_backcolor_desc"
-msgstr "Tekstmarkeringskleur"
+msgstr "Vælg baggrundsfarve"
 
 msgid "advanced_charmap_desc"
-msgstr "Symbool invoegen"
+msgstr "Indsæt specialtegn"
 
 msgid "advanced_visualaid_desc"
-msgstr "Hulplijnen weergeven"
+msgstr "Slå hjælp/synlige elementer til/fra"
 
 msgid "advanced_anchor_desc"
-msgstr "Anker invoegen/bewerken"
+msgstr "Indsæt/rediger anker"
 
 msgid "advanced_cut_desc"
-msgstr "Knippen"
+msgstr "Klip"
 
 msgid "advanced_copy_desc"
-msgstr "Kopiëren"
+msgstr "Kopier"
 
 msgid "advanced_paste_desc"
-msgstr "Plakken"
+msgstr "Indsæt"
 
 msgid "advanced_image_props_desc"
-msgstr "Afbeeldingseigenschappen"
+msgstr "Billedegenskaber"
 
 msgid "advanced_newdocument_desc"
-msgstr "Nieuw document"
+msgstr "Nyt dokument"
 
 msgid "advanced_help_desc"
-msgstr "Help"
+msgstr "Hjælp"
 
 msgid "advanced_blockquote_desc"
-msgstr "Citaat"
+msgstr "Blokcitat"
 
 msgid "advanced_clipboard_msg"
-msgstr "Kopiëren/knippen/plakken is niet beschikbaar in Mozilla en Firefox.\nWilt u meer informatie over deze beperking?"
+msgstr "Kopier/Klip/indsæt er ikke muligt i Mozilla og Firefox.\nVil du have mere information om dette emne?"
 
 msgid "advanced_path"
-msgstr "Pad"
+msgstr "Sti"
 
 msgid "advanced_newdocument"
-msgstr "Weet u zeker dat u alle inhoud wilt wissen?"
+msgstr "Er du sikker på du vil slette alt indhold?"
 
 msgid "advanced_toolbar_focus"
-msgstr "Spring naar werkbalk - Alt+Q, Spring naar tekst - Alt-Z, Spring naar elementpad - Alt-X"
+msgstr "Hop til værktøjsknapper - Alt+Q, Skift til redigering - Alt-Z, Skift til element sti - Alt-X"
 
 msgid "advanced_more_colors"
-msgstr "Meer kleuren"
+msgstr "Flere farver"
 
 msgid "advanced_image_delta_width"
 msgstr ""
@@ -298,235 +298,235 @@ msgid "advanced_anchor_delta_height"
 msgstr ""
 
 msgid "advanced_dlg_about_title"
-msgstr "Over TinyMCE"
+msgstr "Om TinyMCE"
 
 msgid "advanced_dlg_about_general"
-msgstr "Info"
+msgstr "Om"
 
 msgid "advanced_dlg_about_help"
-msgstr "Help"
+msgstr "Hjælp"
 
 msgid "advanced_dlg_about_license"
-msgstr "Licentie"
+msgstr "Licens"
 
 msgid "advanced_dlg_about_plugins"
-msgstr "Invoegtoepassingen"
+msgstr "Udvidelser"
 
 msgid "advanced_dlg_about_plugin"
-msgstr "Invoegtoepassing"
+msgstr "Udvidelse"
 
 msgid "advanced_dlg_about_author"
-msgstr "Auteur"
+msgstr "Forfatter"
 
 msgid "advanced_dlg_about_version"
-msgstr "Versie"
+msgstr "Version"
 
 msgid "advanced_dlg_about_loaded"
-msgstr "Geladen Invoegtoepassingen"
+msgstr "Indlæste udvidelser"
 
 msgid "advanced_dlg_anchor_title"
-msgstr "Anker invoegen/bewerken"
+msgstr "Indsæt/rediger anker"
 
 msgid "advanced_dlg_anchor_name"
-msgstr "Ankernaam"
+msgstr "Navn på anker"
 
 msgid "advanced_dlg_code_title"
-msgstr "HTML Bron"
+msgstr "HTML kildekode-redigering"
 
 msgid "advanced_dlg_code_wordwrap"
-msgstr "Automatische terugloop"
+msgstr "Tekstombrydning"
 
 msgid "advanced_dlg_colorpicker_title"
-msgstr "Kleuren"
+msgstr "Vælg en farve"
 
 msgid "advanced_dlg_colorpicker_picker_tab"
-msgstr "Alle kleuren"
+msgstr "Vælger"
 
 msgid "advanced_dlg_colorpicker_picker_title"
-msgstr "Alle kleuren"
+msgstr "Farvevælger"
 
 msgid "advanced_dlg_colorpicker_palette_tab"
-msgstr "Palet"
+msgstr "Palette"
 
 msgid "advanced_dlg_colorpicker_palette_title"
-msgstr "Paletkleuren"
+msgstr "Palette-farver"
 
 msgid "advanced_dlg_colorpicker_named_tab"
-msgstr "Benoemd"
+msgstr "Navngivet"
 
 msgid "advanced_dlg_colorpicker_named_title"
-msgstr "Benoemde kleuren"
+msgstr "Navngivet farve"
 
 msgid "advanced_dlg_colorpicker_color"
-msgstr "Kleur:"
+msgstr "Farve:"
 
 msgid "advanced_dlg_colorpicker_name"
-msgstr "Naam:"
+msgstr "Navn:"
 
 msgid "advanced_dlg_charmap_title"
-msgstr "Symbolen"
+msgstr "Vælg specialtegn"
 
 msgid "advanced_dlg_image_title"
-msgstr "Afbeelding invoegen/bewerken"
+msgstr "Indsæt/rediger billede"
 
 msgid "advanced_dlg_image_src"
-msgstr "Bestand/URL"
+msgstr "Billede URL"
 
 msgid "advanced_dlg_image_alt"
-msgstr "Beschrijving"
+msgstr "Billedbeskrivelse"
 
 msgid "advanced_dlg_image_list"
-msgstr "Lijst"
+msgstr "Liste over billeder"
 
 msgid "advanced_dlg_image_border"
-msgstr "Rand"
+msgstr "Kant"
 
 msgid "advanced_dlg_image_dimensions"
-msgstr "Afmetingen"
+msgstr "Dimensioner"
 
 msgid "advanced_dlg_image_vspace"
-msgstr "Verticale ruimte"
+msgstr "Vertikal afstand"
 
 msgid "advanced_dlg_image_hspace"
-msgstr "Horizontale ruimte"
+msgstr "Horisontal afstand"
 
 msgid "advanced_dlg_image_align"
-msgstr "Uitlijning"
+msgstr "Justering"
 
 msgid "advanced_dlg_image_align_baseline"
-msgstr "Basislijn"
+msgstr "Grundlinie"
 
 msgid "advanced_dlg_image_align_top"
-msgstr "Boven"
+msgstr "Toppen"
 
 msgid "advanced_dlg_image_align_middle"
-msgstr "Midden"
+msgstr "Centreret"
 
 msgid "advanced_dlg_image_align_bottom"
-msgstr "Onder"
+msgstr "Bunden"
 
 msgid "advanced_dlg_image_align_texttop"
-msgstr "Bovenkant tekst"
+msgstr "Tekst toppen"
 
 msgid "advanced_dlg_image_align_textbottom"
-msgstr "Onderkant tekst"
+msgstr "Tekst bunden"
 
 msgid "advanced_dlg_image_align_left"
-msgstr "Links"
+msgstr "Venstre"
 
 msgid "advanced_dlg_image_align_right"
-msgstr "Rechts"
+msgstr "Højre"
 
 msgid "advanced_dlg_link_title"
-msgstr "Link invoegen/bewerken"
+msgstr "Indsæt/rediger link"
 
 msgid "advanced_dlg_link_url"
-msgstr "URL"
+msgstr "Link URL"
 
 msgid "advanced_dlg_link_target"
-msgstr "Doel"
+msgstr "Target"
 
 msgid "advanced_dlg_link_target_same"
-msgstr "Link in hetzelfde venster openen"
+msgstr "Åben link i samme vindue"
 
 msgid "advanced_dlg_link_target_blank"
-msgstr "Link in een nieuw venster openen"
+msgstr "Åben link i nyt vindue"
 
 msgid "advanced_dlg_link_titlefield"
 msgstr "Titel"
 
 msgid "advanced_dlg_link_is_email"
-msgstr "De ingevoerde URL lijkt op een e-mailadres. Wilt u de vereiste mailto: tekst voorvoegen?"
+msgstr "Den URL, der er indtastet, ser ud til at være en emailadresse. Vil du have tilføjet det påkrævede mailto: foran?"
 
 msgid "advanced_dlg_link_is_external"
-msgstr "De ingevoerde URL lijkt op een externe link. Wilt u de vereiste http:// tekst voorvoegen?"
+msgstr "Den URL, der er indtastet, ser ud til at være et eksternt link. Vil du have tilføjet det påkrævede http:// foran?"
 
 msgid "advanced_dlg_link_list"
-msgstr "Link lijst"
+msgstr "Liste over links"
 
 msgid "contextmenu_align"
-msgstr "Uitlijning"
+msgstr "Justering"
 
 msgid "contextmenu_left"
-msgstr "Links"
+msgstr "Venstre"
 
 msgid "contextmenu_center"
-msgstr "Centreren"
+msgstr "Centreret"
 
 msgid "contextmenu_right"
-msgstr "Rechts"
+msgstr "Højre"
 
 msgid "contextmenu_full"
-msgstr "Uitvullen"
+msgstr "Lige marginer"
 
 msgid "insertdatetime_date_fmt"
-msgstr "%d-%m-%Y"
+msgstr "%Y-%m-%d"
 
 msgid "insertdatetime_time_fmt"
 msgstr "%H:%M:%S"
 
 msgid "insertdatetime_insertdate_desc"
-msgstr "Datum invoegen"
+msgstr "Indsæt dato"
 
 msgid "insertdatetime_inserttime_desc"
-msgstr "Tijd invoegen"
+msgstr "Indsæt klokkeslet"
 
 msgid "insertdatetime_months_long"
-msgstr "Januari,Februari,Maart,April,Mei,Juni,Juli,Augustus,September,Oktober,November,December"
+msgstr "Januar,Februar,Marts,April,Maj,Juni,Juli,August,September,Oktober,November,December"
 
 msgid "insertdatetime_months_short"
-msgstr "Jan,Feb,Mar,Apr,Mei,Jun,Jul,Aug,Sep,Okt,Nov,Dec"
+msgstr "Jan,Feb,Mar,Apr,Maj,Jun,Jul,Aug,Sep,Okt,Nov,Dec"
 
 msgid "insertdatetime_day_long"
-msgstr "Zondag,Maandag,Dinsdag,Woensdag,Donderdag,Vrijdag,Zaterdag,Zondag"
+msgstr "Søndag,Mandag,Tirsdag,Onsdag,Torsdag,Fredag,Lørdag,Søndag"
 
 msgid "insertdatetime_day_short"
-msgstr "zo,ma,di,wo,do,vr,za,zo"
+msgstr "Søn,Man,Tir,Ons,Tors,Fre,Lør,Søn"
 
 msgid "print_print_desc"
-msgstr "Afdrukken"
+msgstr "Udskriv"
 
 msgid "preview_preview_desc"
-msgstr "Voorbeeld"
+msgstr "Vis udskrift"
 
 msgid "directionality_ltr_desc"
-msgstr "Van links naar rechts"
+msgstr "Retning venstre mod højre"
 
 msgid "directionality_rtl_desc"
-msgstr "Van rechts naar links"
+msgstr "Retning højre mod venstre"
 
 msgid "layer_insertlayer_desc"
-msgstr "Nieuwe laag invoegen"
+msgstr "Indsæt nyt lag"
 
 msgid "layer_forward_desc"
-msgstr "Volgende laag"
+msgstr "Flyt fremad"
 
 msgid "layer_backward_desc"
-msgstr "Vorige laag"
+msgstr "Flyt bagud"
 
 msgid "layer_absolute_desc"
-msgstr "Absoluut positioneren inschakelen"
+msgstr "Slå absolut positionering til/fra"
 
 msgid "layer_content"
-msgstr "Nieuwe laag..."
+msgstr "Nyt lag..."
 
 msgid "save_save_desc"
-msgstr "Opslaan"
+msgstr "Gem"
 
 msgid "save_cancel_desc"
-msgstr "Alle wijzigingen annuleren"
+msgstr "Annuller alle ændringer"
 
 msgid "nonbreaking_nonbreaking_desc"
-msgstr "Open ruimte invoegen"
+msgstr "Indsæt et blanktegn"
 
 msgid "iespell_iespell_desc"
-msgstr "Spellingcontrole"
+msgstr "Udfør stavekontrol"
 
 msgid "iespell_download"
-msgstr "ieSpell niet gevonden. Wilt u deze nu installeren?"
+msgstr "ieSpell blev ikke fundet. Vil du installere det nu?"
 
 msgid "advhr_advhr_desc"
-msgstr "Scheidingslijn"
+msgstr "Horisontal linie"
 
 msgid "advhr_delta_width"
 msgstr ""
@@ -535,16 +535,16 @@ msgid "advhr_delta_height"
 msgstr ""
 
 msgid "advhr_dlg_width"
-msgstr "Breedte"
+msgstr "Bredde"
 
 msgid "advhr_dlg_size"
-msgstr "Hoogte"
+msgstr "Højde"
 
 msgid "advhr_dlg_noshade"
-msgstr "Geen schaduw"
+msgstr "Ingen skygge"
 
 msgid "emotions_emotions_desc"
-msgstr "Emoties"
+msgstr "Humørikoner"
 
 msgid "emotions_delta_width"
 msgstr ""
@@ -553,64 +553,64 @@ msgid "emotions_delta_height"
 msgstr ""
 
 msgid "emotions_dlg_title"
-msgstr "Emotie invoegen"
+msgstr "Indsæt humørikon"
 
 msgid "emotions_dlg_desc"
-msgstr "Emoties"
+msgstr "Humørikoner"
 
 msgid "emotions_dlg_cool"
-msgstr "Stoer"
+msgstr "Cool"
 
 msgid "emotions_dlg_cry"
-msgstr "Huilen"
+msgstr "Græde"
 
 msgid "emotions_dlg_embarassed"
-msgstr "Schamen"
+msgstr "Flov"
 
 msgid "emotions_dlg_foot_in_mouth"
-msgstr "Verstomd"
+msgstr "Fod i munden"
 
 msgid "emotions_dlg_frown"
-msgstr "Wenkbrauw ophalen"
+msgstr "Forskrækket"
 
 msgid "emotions_dlg_innocent"
-msgstr "Onschuldig"
+msgstr "Uskyldig"
 
 msgid "emotions_dlg_kiss"
-msgstr "Zoenen"
+msgstr "Kys"
 
 msgid "emotions_dlg_laughing"
-msgstr "Lachen"
+msgstr "Grine"
 
 msgid "emotions_dlg_money_mouth"
-msgstr "Hebberig"
+msgstr "Pengemund"
 
 msgid "emotions_dlg_sealed"
-msgstr "Afgesloten"
+msgstr "Lukket"
 
 msgid "emotions_dlg_smile"
-msgstr "Lachen"
+msgstr "Smil"
 
 msgid "emotions_dlg_surprised"
-msgstr "Verrast"
+msgstr "Overrasket"
 
 msgid "emotions_dlg_tongue_out"
-msgstr "Tong uitsteken"
+msgstr "Tunge ud"
 
 msgid "emotions_dlg_undecided"
-msgstr "Onbeslist"
+msgstr "Ubeslutsom"
 
 msgid "emotions_dlg_wink"
-msgstr "Knipogen"
+msgstr "Vink"
 
 msgid "emotions_dlg_yell"
-msgstr "Roepen"
+msgstr "Råbe"
 
 msgid "searchreplace_search_desc"
-msgstr "Zoeken"
+msgstr "Søg"
 
 msgid "searchreplace_replace_desc"
-msgstr "Zoeken/Vervangen"
+msgstr "Søg/erstat"
 
 msgid "searchreplace_delta_width"
 msgstr ""
@@ -619,49 +619,49 @@ msgid "searchreplace_delta_height"
 msgstr ""
 
 msgid "searchreplace_dlg_searchnext_desc"
-msgstr "Opnieuw zoeken"
+msgstr "Søg igen"
 
 msgid "searchreplace_dlg_notfound"
-msgstr "Het doorzoeken is voltooid. De zoekterm kon niet meer worden gevonden."
+msgstr "Søgningen gav intet resultat."
 
 msgid "searchreplace_dlg_search_title"
-msgstr "Zoeken"
+msgstr "Søg"
 
 msgid "searchreplace_dlg_replace_title"
-msgstr "Zoeken/Vervangen"
+msgstr "Søg / erstat"
 
 msgid "searchreplace_dlg_allreplaced"
-msgstr "Alle instanties van de zoekterm zijn vervangen."
+msgstr "Alle forekomster af søgestrengen er erstattet."
 
 msgid "searchreplace_dlg_findwhat"
-msgstr "Zoeken naar"
+msgstr "Søg efter"
 
 msgid "searchreplace_dlg_replacewith"
-msgstr "Vervangen door"
+msgstr "Erstat med"
 
 msgid "searchreplace_dlg_direction"
-msgstr "Richting"
+msgstr "Retning"
 
 msgid "searchreplace_dlg_up"
-msgstr "Omhoog"
+msgstr "Op"
 
 msgid "searchreplace_dlg_down"
-msgstr "Omlaag"
+msgstr "Ned"
 
 msgid "searchreplace_dlg_mcase"
-msgstr "Identieke hoofdletters/kleine letters"
+msgstr "Forskel på store og små bogstaver"
 
 msgid "searchreplace_dlg_findnext"
-msgstr "Zoeken"
+msgstr "Find næste"
 
 msgid "searchreplace_dlg_replace"
-msgstr "Vervangen"
+msgstr "Erstat"
 
 msgid "searchreplace_dlg_replaceall"
-msgstr "Alles verv."
+msgstr "Erstat alle"
 
 msgid "advimage_image_desc"
-msgstr "Afbeelding invoegen/bewerken"
+msgstr "Indsæt/rediger billede"
 
 msgid "advimage_delta_width"
 msgstr ""
@@ -670,199 +670,199 @@ msgid "advimage_delta_height"
 msgstr ""
 
 msgid "advimage_dlg_tab_general"
-msgstr "Algemeen"
+msgstr "Generelt"
 
 msgid "advimage_dlg_tab_appearance"
-msgstr "Weergave"
+msgstr "Udseende"
 
 msgid "advimage_dlg_tab_advanced"
-msgstr "Geavanceerd"
+msgstr "Avanceret"
 
 msgid "advimage_dlg_general"
-msgstr "Algemeen"
+msgstr "Generelt"
 
 msgid "advimage_dlg_title"
 msgstr "Titel"
 
 msgid "advimage_dlg_preview"
-msgstr "Voorbeeld"
+msgstr "Vis"
 
 msgid "advimage_dlg_constrain_proportions"
-msgstr "Verhouding behouden"
+msgstr "Bibehold proportioner"
 
 msgid "advimage_dlg_langdir"
-msgstr "Taalrichting"
+msgstr "Sprogretning"
 
 msgid "advimage_dlg_langcode"
-msgstr "Taalcode"
+msgstr "Sprogkode"
 
 msgid "advimage_dlg_long_desc"
-msgstr "Uitgebreide beschrijving"
+msgstr "Lang beskrivelseslink"
 
 msgid "advimage_dlg_style"
-msgstr "Stijl"
+msgstr "Stil"
 
 msgid "advimage_dlg_classes"
-msgstr "Klasses"
+msgstr "Klasser"
 
 msgid "advimage_dlg_ltr"
-msgstr "Van links naar rechts"
+msgstr "Venstre til højre"
 
 msgid "advimage_dlg_rtl"
-msgstr "Van rechts naar links"
+msgstr "Højre til venstre"
 
 msgid "advimage_dlg_id"
 msgstr "Id"
 
 msgid "advimage_dlg_map"
-msgstr "Afbeeldingsplattegrond"
+msgstr "Billede map"
 
 msgid "advimage_dlg_swap_image"
-msgstr "Afbeelding wisselen"
+msgstr "Byt billede"
 
 msgid "advimage_dlg_alt_image"
-msgstr "Alternatieve afbeeldingen"
+msgstr "Alternativt billede"
 
 msgid "advimage_dlg_mouseover"
-msgstr "Bij muis over"
+msgstr "for mus-over"
 
 msgid "advimage_dlg_mouseout"
-msgstr "Bij muis uit"
+msgstr "for mus-ud"
 
 msgid "advimage_dlg_misc"
-msgstr "Diversen"
+msgstr "Diverse"
 
 msgid "advimage_dlg_example_img"
-msgstr "Voorbeeldweergave"
+msgstr "Forhåndsvisning af billede"
 
 msgid "advimage_dlg_missing_alt"
-msgstr "Wilt u de afbeelding zonder beschrijving invoegen? De afbeelding wordt dan mogelijk niet opgemerkt door mensen met een visuele handicap, of welke zonder afbeeldingen browsen."
+msgstr "Er du sikker på, at du vil fortsætte uden at inkludere en billedebeskrivelse? Uden denne er billedet måske ikke tilgængeligt for nogle brugere med handicaps, eller for dem der bruger en tekstbrowser, eller som browser internettet med billeder slået fra."
 
 msgid "advimage_dlg_dialog_title"
-msgstr "Afbeelding invoegen/bewerken"
+msgstr "Indsæt/rediger billede"
 
 msgid "advimage_dlg_src"
-msgstr "Bestand/URL"
+msgstr "Billed-URL"
 
 msgid "advimage_dlg_alt"
-msgstr "Beschrijving"
+msgstr "Billedbeskrivelse"
 
 msgid "advimage_dlg_list"
-msgstr "Lijst"
+msgstr "Billedliste"
 
 msgid "advimage_dlg_border"
-msgstr "Rand"
+msgstr "Kant"
 
 msgid "advimage_dlg_dimensions"
-msgstr "Afmetingen"
+msgstr "Dimentioner"
 
 msgid "advimage_dlg_vspace"
-msgstr "Verticale ruimte"
+msgstr "Vertikal afstand"
 
 msgid "advimage_dlg_hspace"
-msgstr "Horizontale ruimte"
+msgstr "Horisontal afstand"
 
 msgid "advimage_dlg_align"
-msgstr "Uitlijning"
+msgstr "Justering"
 
 msgid "advimage_dlg_align_baseline"
-msgstr "Basislijn"
+msgstr "Grundlinje"
 
 msgid "advimage_dlg_align_top"
-msgstr "Boven"
+msgstr "Top"
 
 msgid "advimage_dlg_align_middle"
-msgstr "Midden"
+msgstr "Midte"
 
 msgid "advimage_dlg_align_bottom"
-msgstr "Onder"
+msgstr "Bund"
 
 msgid "advimage_dlg_align_texttop"
-msgstr "Bovenkant tekst"
+msgstr "Teksttop"
 
 msgid "advimage_dlg_align_textbottom"
-msgstr "Onderkant tekst"
+msgstr "Tekstbund"
 
 msgid "advimage_dlg_align_left"
-msgstr "Links"
+msgstr "Venstre"
 
 msgid "advimage_dlg_align_right"
-msgstr "Rechts"
+msgstr "Højre"
 
 msgid "advimage_dlg_image_list"
-msgstr "Lijst"
+msgstr "Billedliste"
 
 msgid "advlink_link_desc"
-msgstr "Link invoegen/bewerken"
+msgstr "Indsæt/rediger link"
 
 msgid "advlink_delta_width"
-msgstr ""
+msgstr "40"
 
 msgid "advlink_delta_height"
 msgstr ""
 
 msgid "advlink_dlg_title"
-msgstr "Link invoegen/bewerken"
+msgstr "Indsæt/rediger link"
 
 msgid "advlink_dlg_url"
-msgstr "URL"
+msgstr "Link URL"
 
 msgid "advlink_dlg_target"
-msgstr "Doel"
+msgstr "Mål"
 
 msgid "advlink_dlg_titlefield"
 msgstr "Titel"
 
 msgid "advlink_dlg_is_email"
-msgstr "De ingevoerde URL lijkt op een e-mailadres. Wilt u de vereiste mailto: tekst voorvoegen?"
+msgstr "Den URL, der er indtastet, ser ud til at være en emailadresse. Vil du have tilføjet det påkrævede mailto: foran?"
 
 msgid "advlink_dlg_is_external"
-msgstr "De ingevoerde URL lijkt op een externe link. Wilt u de vereiste http:// tekst voorvoegen?"
+msgstr "Den URL, der er indtastet, ser ud til at være et eksternt link. Vil du have tilføjet det påkrævede http:// foran?"
 
 msgid "advlink_dlg_list"
-msgstr "Lijst"
+msgstr "Liste over links"
 
 msgid "advlink_dlg_general_tab"
-msgstr "Algemeen"
+msgstr "Generelt"
 
 msgid "advlink_dlg_popup_tab"
 msgstr "Popup"
 
 msgid "advlink_dlg_events_tab"
-msgstr "Gebeurtenissen"
+msgstr "Hændelser"
 
 msgid "advlink_dlg_advanced_tab"
-msgstr "Geavanceerd"
+msgstr "Advanceret"
 
 msgid "advlink_dlg_general_props"
-msgstr "Algemene eigenschappen"
+msgstr "Generelle egenskaber"
 
 msgid "advlink_dlg_popup_props"
-msgstr "Popup eigenschappen"
+msgstr "Popup egenskaber"
 
 msgid "advlink_dlg_event_props"
-msgstr "Gebeurtenissen"
+msgstr "Hændelser"
 
 msgid "advlink_dlg_advanced_props"
-msgstr "Geavanceerde eigenschappen"
+msgstr "Avancerede egenskaber"
 
 msgid "advlink_dlg_popup_opts"
-msgstr "Opties"
+msgstr "Indstillinger"
 
 msgid "advlink_dlg_anchor_names"
-msgstr "Ankers"
+msgstr "Ankre"
 
 msgid "advlink_dlg_target_same"
-msgstr "In dit venster / frame openen"
+msgstr "Åben i dette vindue / ramme"
 
 msgid "advlink_dlg_target_parent"
-msgstr "In bovenliggend venster / frame openen"
+msgstr "Åben i overliggende vindue / ramme"
 
 msgid "advlink_dlg_target_top"
-msgstr "In bovenste frame openen (vervangt gehele pagina)"
+msgstr "Åben i øverste vindue / ramme (erstatter alle rammer)"
 
 msgid "advlink_dlg_target_blank"
-msgstr "In nieuw venster openen"
+msgstr "Åben i nyt vindue"
 
 msgid "advlink_dlg_popup"
 msgstr "Javascript popup"
@@ -871,103 +871,103 @@ msgid "advlink_dlg_popup_url"
 msgstr "Popup URL"
 
 msgid "advlink_dlg_popup_name"
-msgstr "Venstertitel"
+msgstr "Vinduesnavn"
 
 msgid "advlink_dlg_popup_return"
-msgstr "'return false' invoegen"
+msgstr "Indsæt 'return false'"
 
 msgid "advlink_dlg_popup_scrollbars"
-msgstr "Scrollbalken weergeven"
+msgstr "Vis rullepanel"
 
 msgid "advlink_dlg_popup_statusbar"
-msgstr "Statusbalk weergeven"
+msgstr "Vis statuslinje"
 
 msgid "advlink_dlg_popup_toolbar"
-msgstr "Werkbalk weergeven"
+msgstr "Vis værktøjslinjer"
 
 msgid "advlink_dlg_popup_menubar"
-msgstr "Menubalk weergeven"
+msgstr "Vis menulinje"
 
 msgid "advlink_dlg_popup_location"
-msgstr "Lokatiebalk weergeven"
+msgstr "Vis adresselinje"
 
 msgid "advlink_dlg_popup_resizable"
-msgstr "Aanpasbaar venster"
+msgstr "Lad det være muligt at ændre størrelsen på vinduet"
 
 msgid "advlink_dlg_popup_dependent"
-msgstr "Afhankelijk (Alleen Mozilla/Firefox)"
+msgstr "Afhængig (Kun Mozilla/Firefox)"
 
 msgid "advlink_dlg_popup_size"
-msgstr "Grootte"
+msgstr "Størrelse"
 
 msgid "advlink_dlg_popup_position"
-msgstr "Positie (X/Y)"
+msgstr "Position (X/Y)"
 
 msgid "advlink_dlg_id"
 msgstr "Id"
 
 msgid "advlink_dlg_style"
-msgstr "Stijl"
+msgstr "Stil"
 
 msgid "advlink_dlg_classes"
-msgstr "Klassen"
+msgstr "Klasser"
 
 msgid "advlink_dlg_target_name"
-msgstr "Doel"
+msgstr "Destinationsnavn"
 
 msgid "advlink_dlg_langdir"
-msgstr "Taalrichting"
+msgstr "Sprogretning"
 
 msgid "advlink_dlg_target_langcode"
-msgstr "Taal"
+msgstr "Destinationssprog"
 
 msgid "advlink_dlg_langcode"
-msgstr "Taalcode"
+msgstr "Sprogkode"
 
 msgid "advlink_dlg_encoding"
-msgstr "Taalcodering"
+msgstr "Destinationstegnsæt"
 
 msgid "advlink_dlg_mime"
-msgstr "MIME type"
+msgstr "Destinations-MIME-type"
 
 msgid "advlink_dlg_rel"
-msgstr "Relatie van pagina tot doel"
+msgstr "Relativ side til destination"
 
 msgid "advlink_dlg_rev"
-msgstr "Relatie van doel tot pagina"
+msgstr "Relativ destination til side"
 
 msgid "advlink_dlg_tabindex"
-msgstr "Tabvolgorde"
+msgstr "Tabindex"
 
 msgid "advlink_dlg_accesskey"
-msgstr "Toegangstoets"
+msgstr "Genvejstast"
 
 msgid "advlink_dlg_ltr"
-msgstr "Van links naar rechts"
+msgstr "Venstre mod højre"
 
 msgid "advlink_dlg_rtl"
-msgstr "Van rechts naar links"
+msgstr "Højre mod venstre"
 
 msgid "advlink_dlg_link_list"
-msgstr "Lijst"
+msgstr "Liste over links"
 
 msgid "xhtmlxtras_cite_desc"
-msgstr "Citaat"
+msgstr "Citat"
 
 msgid "xhtmlxtras_abbr_desc"
-msgstr "Afkorting"
+msgstr "Forkortelse"
 
 msgid "xhtmlxtras_acronym_desc"
-msgstr "Synoniem"
+msgstr "Akronym"
 
 msgid "xhtmlxtras_del_desc"
-msgstr "Verwijderd"
+msgstr "Sletning"
 
 msgid "xhtmlxtras_ins_desc"
-msgstr "Ingevoegd"
+msgstr "Indsættelse"
 
 msgid "xhtmlxtras_attribs_desc"
-msgstr "Attributen invoegen/bewerken"
+msgstr "Indsæt/rediger attributter"
 
 msgid "xhtmlxtras_cite_delta_width"
 msgstr ""
@@ -1015,88 +1015,88 @@ msgid "xhtmlxtras_dlg_attribute_label_class"
 msgstr "Klasse"
 
 msgid "xhtmlxtras_dlg_attribute_label_style"
-msgstr "Stijl"
+msgstr "Stil"
 
 msgid "xhtmlxtras_dlg_attribute_label_cite"
-msgstr "Citaat"
+msgstr "Citat"
 
 msgid "xhtmlxtras_dlg_attribute_label_datetime"
-msgstr "Datum/Tijd"
+msgstr "Dato/tid"
 
 msgid "xhtmlxtras_dlg_attribute_label_langdir"
-msgstr "Tekstrichting"
+msgstr "Tekstretning"
 
 msgid "xhtmlxtras_dlg_attribute_option_ltr"
-msgstr "Van links naar rechts"
+msgstr "Venstre mod højre"
 
 msgid "xhtmlxtras_dlg_attribute_option_rtl"
-msgstr "Van rechts naar links"
+msgstr "Højre mod venstre"
 
 msgid "xhtmlxtras_dlg_attribute_label_langcode"
-msgstr "Taal"
+msgstr "Sprog"
 
 msgid "xhtmlxtras_dlg_attribute_label_tabindex"
-msgstr "Tabvolgorde"
+msgstr "Tab-indeks"
 
 msgid "xhtmlxtras_dlg_attribute_label_accesskey"
-msgstr "Toegangstoets"
+msgstr "Adgangsnøgle"
 
 msgid "xhtmlxtras_dlg_attribute_events_tab"
-msgstr "Gebeurtenissen"
+msgstr "Hændelser"
 
 msgid "xhtmlxtras_dlg_attribute_attrib_tab"
-msgstr "Attributen"
+msgstr "Attributter"
 
 msgid "xhtmlxtras_dlg_general_tab"
-msgstr "Algemeen"
+msgstr "Generelt"
 
 msgid "xhtmlxtras_dlg_attrib_tab"
-msgstr "Attributen"
+msgstr "Attributter"
 
 msgid "xhtmlxtras_dlg_events_tab"
-msgstr "Gebeurtenissen"
+msgstr "Hændelser"
 
 msgid "xhtmlxtras_dlg_fieldset_general_tab"
-msgstr "Algemene instellingen"
+msgstr "Genererelle indstillinger"
 
 msgid "xhtmlxtras_dlg_fieldset_attrib_tab"
-msgstr "Elementattributen"
+msgstr "Element-attributter"
 
 msgid "xhtmlxtras_dlg_fieldset_events_tab"
-msgstr "Element Gebeurtenissen"
+msgstr "Element-hændelser"
 
 msgid "xhtmlxtras_dlg_title_ins_element"
-msgstr "Invoegingselement"
+msgstr "Indsætbart element"
 
 msgid "xhtmlxtras_dlg_title_del_element"
-msgstr "Verwijderingselement"
+msgstr "Sletteklart element"
 
 msgid "xhtmlxtras_dlg_title_acronym_element"
-msgstr "Synoniem"
+msgstr "Akronym element"
 
 msgid "xhtmlxtras_dlg_title_abbr_element"
-msgstr "Afkorting"
+msgstr "Forkortet element"
 
 msgid "xhtmlxtras_dlg_title_cite_element"
-msgstr "Citaat"
+msgstr "Citationselement"
 
 msgid "xhtmlxtras_dlg_remove"
-msgstr "Verwijderen"
+msgstr "Slet"
 
 msgid "xhtmlxtras_dlg_insert_date"
-msgstr "Huidige datum/tijd invoegen"
+msgstr "Indsæt nuværende dato/tid"
 
 msgid "xhtmlxtras_dlg_option_ltr"
-msgstr "Van links naar rechts"
+msgstr "Venstre mod højre"
 
 msgid "xhtmlxtras_dlg_option_rtl"
-msgstr "Van rechts naar links"
+msgstr "Højre mod venstre"
 
 msgid "xhtmlxtras_dlg_attribs_title"
-msgstr "Attributen Invoegen/bewerken"
+msgstr "Indsæt/rediger attributter"
 
 msgid "style_desc"
-msgstr "CSS Stijl bewerken"
+msgstr "Rediger CSS stil"
 
 msgid "style_delta_width"
 msgstr ""
@@ -1105,28 +1105,28 @@ msgid "style_delta_height"
 msgstr ""
 
 msgid "style_dlg_title"
-msgstr "CSS Stijl bewerken"
+msgstr "Rediger CSS stil"
 
 msgid "style_dlg_apply"
-msgstr "Toepassen"
+msgstr "Anvend"
 
 msgid "style_dlg_text_tab"
 msgstr "Tekst"
 
 msgid "style_dlg_background_tab"
-msgstr "Achtergrond"
+msgstr "Baggrund"
 
 msgid "style_dlg_block_tab"
 msgstr "Blok"
 
 msgid "style_dlg_box_tab"
-msgstr "Box"
+msgstr "Boks"
 
 msgid "style_dlg_border_tab"
-msgstr "Rand"
+msgstr "Kant"
 
 msgid "style_dlg_list_tab"
-msgstr "Lijst"
+msgstr "Liste"
 
 msgid "style_dlg_positioning_tab"
 msgstr "Positionering"
@@ -1135,235 +1135,235 @@ msgid "style_dlg_text_props"
 msgstr "Tekst"
 
 msgid "style_dlg_text_font"
-msgstr "Lettertype"
+msgstr "Skrifttype"
 
 msgid "style_dlg_text_size"
-msgstr "Tekengrootte"
+msgstr "Størrelse"
 
 msgid "style_dlg_text_weight"
-msgstr "Gewicht"
+msgstr "Vægt"
 
 msgid "style_dlg_text_style"
-msgstr "Stijl"
+msgstr "Stil"
 
 msgid "style_dlg_text_variant"
 msgstr "Variant"
 
 msgid "style_dlg_text_lineheight"
-msgstr "Lijnhoogte"
+msgstr "Liniehøjde"
 
 msgid "style_dlg_text_case"
-msgstr "Hoofdlettergebruik"
+msgstr "Vesaltilstand"
 
 msgid "style_dlg_text_color"
-msgstr "Kleur"
+msgstr "Farve"
 
 msgid "style_dlg_text_decoration"
-msgstr "Decoratie"
+msgstr "Dekoration"
 
 msgid "style_dlg_text_overline"
-msgstr "Overhalen"
+msgstr "overstreget"
 
 msgid "style_dlg_text_underline"
-msgstr "Onderstrepen"
+msgstr "understreget"
 
 msgid "style_dlg_text_striketrough"
-msgstr "Doorhalen"
+msgstr "gennemstreget"
 
 msgid "style_dlg_text_blink"
-msgstr "Knipperen"
+msgstr "blink"
 
 msgid "style_dlg_text_none"
-msgstr "Niets"
+msgstr "ingen"
 
 msgid "style_dlg_background_color"
-msgstr "Achtergrondkleur"
+msgstr "Baggrundsfarve"
 
 msgid "style_dlg_background_image"
-msgstr "Achtergrondafbeelding"
+msgstr "Baggrundsbillede"
 
 msgid "style_dlg_background_repeat"
-msgstr "Herhalen"
+msgstr "Gentag"
 
 msgid "style_dlg_background_attachment"
-msgstr "Bijlage"
+msgstr "Vedhæftede fil"
 
 msgid "style_dlg_background_hpos"
-msgstr "Horizontale positie"
+msgstr "Horisontal position"
 
 msgid "style_dlg_background_vpos"
-msgstr "Verticale positie"
+msgstr "Vertikal position"
 
 msgid "style_dlg_block_wordspacing"
-msgstr "Woordruimte"
+msgstr "Afstand mellem ord"
 
 msgid "style_dlg_block_letterspacing"
-msgstr "Letterruimte"
+msgstr "Afstand mellem bogstaver"
 
 msgid "style_dlg_block_vertical_alignment"
-msgstr "Verticale uitlijning"
+msgstr "Vertikal justering"
 
 msgid "style_dlg_block_text_align"
-msgstr "Tekstuitlijning"
+msgstr "Tekstjustering"
 
 msgid "style_dlg_block_text_indent"
-msgstr "Inspringen"
+msgstr "Tekstindrykning"
 
 msgid "style_dlg_block_whitespace"
-msgstr "Witruimte"
+msgstr "Mellemrum"
 
 msgid "style_dlg_block_display"
-msgstr "Weergave"
+msgstr "Vis"
 
 msgid "style_dlg_box_width"
-msgstr "Breedte"
+msgstr "Bredde"
 
 msgid "style_dlg_box_height"
-msgstr "Hoogte"
+msgstr "Højde"
 
 msgid "style_dlg_box_float"
-msgstr "Zweven"
+msgstr "Flydende"
 
 msgid "style_dlg_box_clear"
-msgstr "Vrijhouden"
+msgstr "Ryd"
 
 msgid "style_dlg_padding"
-msgstr "Opening"
+msgstr "Afstand til indhold"
 
 msgid "style_dlg_same"
-msgstr "Alles hetzelfde"
+msgstr "Ens for alle"
 
 msgid "style_dlg_top"
-msgstr "Boven"
+msgstr "Top"
 
 msgid "style_dlg_right"
-msgstr "Rechts"
+msgstr "Højre"
 
 msgid "style_dlg_bottom"
-msgstr "Onder"
+msgstr "Bund"
 
 msgid "style_dlg_left"
-msgstr "Links"
+msgstr "Venstre"
 
 msgid "style_dlg_margin"
-msgstr "Marge"
+msgstr "Margin"
 
 msgid "style_dlg_style"
-msgstr "Stijl"
+msgstr "Style"
 
 msgid "style_dlg_width"
-msgstr "Breedte"
+msgstr "Bredde"
 
 msgid "style_dlg_height"
-msgstr "Hoogte"
+msgstr "Højde"
 
 msgid "style_dlg_color"
-msgstr "Kleur"
+msgstr "Farve"
 
 msgid "style_dlg_list_type"
 msgstr "Type"
 
 msgid "style_dlg_bullet_image"
-msgstr "Opsommingsteken"
+msgstr "Punktopstillings-billede"
 
 msgid "style_dlg_position"
-msgstr "Positie"
+msgstr "Position"
 
 msgid "style_dlg_positioning_type"
 msgstr "Type"
 
 msgid "style_dlg_visibility"
-msgstr "Zichtbaarheid"
+msgstr "Synlighed"
 
 msgid "style_dlg_zindex"
 msgstr "Z-index"
 
 msgid "style_dlg_overflow"
-msgstr "Overvloeien"
+msgstr "Overløb"
 
 msgid "style_dlg_placement"
-msgstr "Plaatsing"
+msgstr "Placering"
 
 msgid "style_dlg_clip"
-msgstr "Clip"
+msgstr "Klip"
 
 msgid "paste_paste_text_desc"
-msgstr "Als platte tekst plakken"
+msgstr "Indsæt ikke-formatteret tekst"
 
 msgid "paste_paste_word_desc"
-msgstr "Vanuit Word plakken"
+msgstr "Indsæt fra  Word"
 
 msgid "paste_selectall_desc"
-msgstr "Alles selecteren"
+msgstr "Vælg alle"
 
 msgid "paste_dlg_text_title"
-msgstr "Gebruik Ctrl+V om tekst in het venster te plakken."
+msgstr "Anvend CTRL+V på tastaturet for at indsætte teksten."
 
 msgid "paste_dlg_text_linebreaks"
-msgstr "Regelafbreking bewaren"
+msgstr "Bevar linieskift"
 
 msgid "paste_dlg_word_title"
-msgstr "Gebruik Ctrl+V om tekst in het venster te plakken."
+msgstr "Anvend CTRL+V på tastaturet for at indsætte teksten."
 
 msgid "table_desc"
-msgstr "Nieuwe tabel invoegen"
+msgstr "Indsæt tabel"
 
 msgid "table_row_before_desc"
-msgstr "Rij boven invoegen"
+msgstr "Indsæt række før"
 
 msgid "table_row_after_desc"
-msgstr "Rij onder invoegen"
+msgstr "Indsæt række efter"
 
 msgid "table_delete_row_desc"
-msgstr "Rij verwijderen"
+msgstr "Slet række"
 
 msgid "table_col_before_desc"
-msgstr "Kolom links invoegen"
+msgstr "Indsæt kolonne før"
 
 msgid "table_col_after_desc"
-msgstr "Kolom rechts invoegen"
+msgstr "Indsæt kolonne efter"
 
 msgid "table_delete_col_desc"
-msgstr "Kolom verwijderen"
+msgstr "Slet kolonne"
 
 msgid "table_split_cells_desc"
-msgstr "Cellen splitsen"
+msgstr "Opdel flettede celler"
 
 msgid "table_merge_cells_desc"
-msgstr "Cellen samenvoegen"
+msgstr "Flet celler"
 
 msgid "table_row_desc"
-msgstr "Rij-eigenschappen"
+msgstr "Rækkeegenskaber"
 
 msgid "table_cell_desc"
-msgstr "Cel-eigenschappen"
+msgstr "Celleegenskaber"
 
 msgid "table_props_desc"
-msgstr "Tabeleigenschappen"
+msgstr "Tabelegenskaber"
 
 msgid "table_paste_row_before_desc"
-msgstr "Rij boven plakken"
+msgstr "Indsæt række før"
 
 msgid "table_paste_row_after_desc"
-msgstr "Rij onder plakken"
+msgstr "Indsæt række efter"
 
 msgid "table_cut_row_desc"
-msgstr "Rij knippen"
+msgstr "Klip række"
 
 msgid "table_copy_row_desc"
-msgstr "Rij kopiëren"
+msgstr "Kopier række"
 
 msgid "table_del"
-msgstr "Tabel verwijderen"
+msgstr "Slet tabel"
 
 msgid "table_row"
-msgstr "Rij"
+msgstr "Række"
 
 msgid "table_col"
-msgstr "Kolom"
+msgstr "Kolonne"
 
 msgid "table_cell"
-msgstr "Cel"
+msgstr "Celle"
 
 msgid "table_rowprops_delta_width"
 msgstr ""
@@ -1390,232 +1390,232 @@ msgid "table_merge_cells_delta_height"
 msgstr ""
 
 msgid "table_dlg_general_tab"
-msgstr "Algemeen"
+msgstr "Generelt"
 
 msgid "table_dlg_advanced_tab"
-msgstr "Geavanceerd"
+msgstr "Avanceret"
 
 msgid "table_dlg_general_props"
-msgstr "Algemene eigenschappen"
+msgstr "Generelle egenskaber"
 
 msgid "table_dlg_advanced_props"
-msgstr "Geavanceerde eigenschappen"
+msgstr "Avancerede egenskaber"
 
 msgid "table_dlg_rowtype"
-msgstr "Rijtype"
+msgstr "Row in table part"
 
 msgid "table_dlg_title"
-msgstr "Tabel invoegen/bewerken"
+msgstr "Indsæt/rediger tabel"
 
 msgid "table_dlg_width"
-msgstr "Breedte"
+msgstr "Bredde"
 
 msgid "table_dlg_height"
-msgstr "Hoogte"
+msgstr "Højde"
 
 msgid "table_dlg_cols"
-msgstr "Kolommen"
+msgstr "Kolonner"
 
 msgid "table_dlg_rows"
-msgstr "Rijen"
+msgstr "Rækker"
 
 msgid "table_dlg_cellspacing"
-msgstr "Ruimte om cel"
+msgstr "Afstand mellem celler"
 
 msgid "table_dlg_cellpadding"
-msgstr "Ruimte in cel"
+msgstr "Afstand til celleindhold"
 
 msgid "table_dlg_border"
-msgstr "Rand"
+msgstr "Kant"
 
 msgid "table_dlg_align"
-msgstr "Uitlijning"
+msgstr "Justering"
 
 msgid "table_dlg_align_default"
-msgstr "Standaard"
+msgstr "Standard"
 
 msgid "table_dlg_align_left"
-msgstr "Links"
+msgstr "Venstre"
 
 msgid "table_dlg_align_right"
-msgstr "Rechts"
+msgstr "Højre"
 
 msgid "table_dlg_align_middle"
-msgstr "Centreren"
+msgstr "Centreret"
 
 msgid "table_dlg_row_title"
-msgstr "Rij-eigenschappen"
+msgstr "Rækkeegenskaber"
 
 msgid "table_dlg_cell_title"
-msgstr "Celeigenschappen"
+msgstr "Celleegenskaber"
 
 msgid "table_dlg_cell_type"
-msgstr "Celtype"
+msgstr "Celletype"
 
 msgid "table_dlg_valign"
-msgstr "Verticale uitlijning"
+msgstr "Vertikal justering"
 
 msgid "table_dlg_align_top"
-msgstr "Boven"
+msgstr "Top"
 
 msgid "table_dlg_align_bottom"
-msgstr "Onder"
+msgstr "Bund"
 
 msgid "table_dlg_bordercolor"
-msgstr "Randkleur"
+msgstr "Kantfarve"
 
 msgid "table_dlg_bgcolor"
-msgstr "Achtergrondkleur"
+msgstr "Baggrundsfarve"
 
 msgid "table_dlg_merge_cells_title"
-msgstr "Cellen samenvoegen"
+msgstr "Flet celler"
 
 msgid "table_dlg_id"
 msgstr "Id"
 
 msgid "table_dlg_style"
-msgstr "Stijl"
+msgstr "Style"
 
 msgid "table_dlg_langdir"
-msgstr "Taalrichting"
+msgstr "Sprogretning"
 
 msgid "table_dlg_langcode"
-msgstr "Taalcode"
+msgstr "Sprogkode"
 
 msgid "table_dlg_mime"
-msgstr "Doel MIME type"
+msgstr "Destinations-MIME-type"
 
 msgid "table_dlg_ltr"
-msgstr "Van links naar rechts"
+msgstr "Venstre mod højre"
 
 msgid "table_dlg_rtl"
-msgstr "Van rechts naar links"
+msgstr "Højre mod venstre"
 
 msgid "table_dlg_bgimage"
-msgstr "Achtergrondafbeelding"
+msgstr "Baggrundsbillede"
 
 msgid "table_dlg_summary"
-msgstr "Samenvatting"
+msgstr "Beskrivelse"
 
 msgid "table_dlg_td"
-msgstr "Gegevens"
+msgstr "Data"
 
 msgid "table_dlg_th"
-msgstr "Kop"
+msgstr "Hoved"
 
 msgid "table_dlg_cell_cell"
-msgstr "Huidige cel bijwerken"
+msgstr "Opdater aktuelle celle"
 
 msgid "table_dlg_cell_row"
-msgstr "Alle cellen in rij bijwerken"
+msgstr "Opdater alle celler i rækken"
 
 msgid "table_dlg_cell_all"
-msgstr "Alle cellen in tabel bijwerken"
+msgstr "Opdater alle celler i tabellen"
 
 msgid "table_dlg_row_row"
-msgstr "Huidige rij bijwerken"
+msgstr "Opdater aktuelle celle"
 
 msgid "table_dlg_row_odd"
-msgstr "Oneven rijen bijwerken"
+msgstr "Opdater ulige rækker"
 
 msgid "table_dlg_row_even"
-msgstr "Even rijen bijwerken"
+msgstr "Opdater lige rækker"
 
 msgid "table_dlg_row_all"
-msgstr "Alle rijen bijwerken"
+msgstr "Opdater alle rækker"
 
 msgid "table_dlg_thead"
-msgstr "Tabelkop"
+msgstr "Tabelhoved"
 
 msgid "table_dlg_tbody"
-msgstr "Tabellichaam"
+msgstr "Tabelkrop"
 
 msgid "table_dlg_tfoot"
-msgstr "Tabelvoet"
+msgstr "Tabelfod"
 
 msgid "table_dlg_scope"
-msgstr "Bereik"
+msgstr "Forklaring"
 
 msgid "table_dlg_rowgroup"
-msgstr "Rijgroep"
+msgstr "Rækkegruppe"
 
 msgid "table_dlg_colgroup"
-msgstr "Kolomgroep"
+msgstr "Kolonnegruppe"
 
 msgid "table_dlg_col_limit"
-msgstr "U heeft het maximale aantal kolommen van {$cols} overschreden."
+msgstr "Du har overskredet antallet af tilladte kolonner på {$cols}."
 
 msgid "table_dlg_row_limit"
-msgstr "U heeft hebt het maximale aantal rijen van {$rows} overschreden."
+msgstr "Du har overskredet antallet af tilladte rækker på {$rows}."
 
 msgid "table_dlg_cell_limit"
-msgstr "U heeft het maximale aantal cellen van {$cells} overschreden."
+msgstr "Du har overskredet antallet af tilladte celler på {$cells}."
 
 msgid "table_dlg_missing_scope"
-msgstr "Weet u zeker dat u door wilt gaan met het toewijzen van een kop zonder een bereik op te geven? Mensen met een visuele handicap kunnen hierdoor waarschijnlijk slecht bij de gegevens."
+msgstr "Er du sikker på, du vil fortsætte uden at angive forklaring for denne overskriftscelle? Uden forklaring vil være svært for f.ek.s blinde at læse og forstå indholdet i tabellen."
 
 msgid "table_dlg_caption"
-msgstr "Tabelbeschrijving"
+msgstr "Tabeloverskrift"
 
 msgid "table_dlg_frame"
-msgstr "Frame"
+msgstr "Ramme"
 
 msgid "table_dlg_frame_none"
-msgstr "Geen"
+msgstr "ingen"
 
 msgid "table_dlg_frame_groups"
-msgstr "Groepen"
+msgstr "grupper"
 
 msgid "table_dlg_frame_rows"
-msgstr "Rijen"
+msgstr "rækker"
 
 msgid "table_dlg_frame_cols"
-msgstr "Kolommen"
+msgstr "kolonner"
 
 msgid "table_dlg_frame_all"
-msgstr "Alles"
+msgstr "alle"
 
 msgid "table_dlg_rules"
-msgstr "Hulplijnen"
+msgstr "Regler"
 
 msgid "table_dlg_rules_void"
-msgstr "Geen"
+msgstr "void"
 
 msgid "table_dlg_rules_above"
-msgstr "Boven"
+msgstr "over"
 
 msgid "table_dlg_rules_below"
-msgstr "Onder"
+msgstr "under"
 
 msgid "table_dlg_rules_hsides"
-msgstr "Horizontale zijden"
+msgstr "hsides"
 
 msgid "table_dlg_rules_lhs"
-msgstr "Linkerzijkant"
+msgstr "lhs"
 
 msgid "table_dlg_rules_rhs"
-msgstr "Rechterzijkant"
+msgstr "rhs"
 
 msgid "table_dlg_rules_vsides"
-msgstr "Verticale zijden"
+msgstr "vsides"
 
 msgid "table_dlg_rules_box"
-msgstr "Box"
+msgstr "boks"
 
 msgid "table_dlg_rules_border"
-msgstr "Rand"
+msgstr "kant"
 
 msgid "autosave_unload_msg"
-msgstr "De wijzigingen zullen verloren gaan als u nu deze pagina verlaat."
+msgstr "Har du foretaget nogle ændringer, vil de gå tabt, hvis du navigerer væk fra denne side."
 
 msgid "fullscreen_desc"
-msgstr "Volledig scherm"
+msgstr "Vis/skjul fuldskærmstilstand"
 
 msgid "media_desc"
-msgstr "Media invoegen/bewerken"
+msgstr "Indsæt/rediger indlejret mediefil"
 
 msgid "media_edit"
-msgstr "Media bewerken"
+msgstr "Rediger indlejret mediefil"
 
 msgid "media_delta_width"
 msgstr ""
@@ -1624,28 +1624,28 @@ msgid "media_delta_height"
 msgstr ""
 
 msgid "media_dlg_title"
-msgstr "Media invoegen/bewerken"
+msgstr "Indsæt/rediger indlejret mediefil"
 
 msgid "media_dlg_general"
-msgstr "Algemeen"
+msgstr "Generelt"
 
 msgid "media_dlg_advanced"
-msgstr "Geavanceerd"
+msgstr "Advanceret"
 
 msgid "media_dlg_file"
-msgstr "Bestand/URL"
+msgstr "Fil/URL"
 
 msgid "media_dlg_list"
-msgstr "Lijst"
+msgstr "Liste"
 
 msgid "media_dlg_size"
-msgstr "Afmetingen"
+msgstr "Dimensioner"
 
 msgid "media_dlg_preview"
-msgstr "Voorbeeld"
+msgstr "Vis udskrift"
 
 msgid "media_dlg_constrain_proportions"
-msgstr "Verhouding bewaren"
+msgstr "Bevar proportioner"
 
 msgid "media_dlg_type"
 msgstr "Type"
@@ -1654,49 +1654,49 @@ msgid "media_dlg_id"
 msgstr "Id"
 
 msgid "media_dlg_name"
-msgstr "Naam"
+msgstr "Navn"
 
 msgid "media_dlg_class_name"
 msgstr "Klasse"
 
 msgid "media_dlg_vspace"
-msgstr "V-Ruimte"
+msgstr "V-afstand"
 
 msgid "media_dlg_hspace"
-msgstr "H-Ruimte"
+msgstr "H-afstand"
 
 msgid "media_dlg_play"
-msgstr "Automatisch afspelen"
+msgstr "Start"
 
 msgid "media_dlg_loop"
-msgstr "Herhalen"
+msgstr "Gentag"
 
 msgid "media_dlg_menu"
-msgstr "Menu Weergeven"
+msgstr "Vis menu"
 
 msgid "media_dlg_quality"
-msgstr "Kwaliteit"
+msgstr "Kvalitet"
 
 msgid "media_dlg_scale"
-msgstr "Schaal"
+msgstr "Skaler"
 
 msgid "media_dlg_align"
-msgstr "Uitlijning"
+msgstr "Juster"
 
 msgid "media_dlg_salign"
-msgstr "Schaaluitlijning"
+msgstr "SAlign"
 
 msgid "media_dlg_wmode"
 msgstr "WMode"
 
 msgid "media_dlg_bgcolor"
-msgstr "Achtergrond"
+msgstr "Baggrund"
 
 msgid "media_dlg_base"
-msgstr "Basis"
+msgstr "Base"
 
 msgid "media_dlg_flashvars"
-msgstr "Variabelen"
+msgstr "Flashvars"
 
 msgid "media_dlg_liveconnect"
 msgstr "SWLiveConnect"
@@ -1708,226 +1708,226 @@ msgid "media_dlg_cache"
 msgstr "Cache"
 
 msgid "media_dlg_hidden"
-msgstr "Verborgen"
+msgstr "Skjul"
 
 msgid "media_dlg_controller"
 msgstr "Controller"
 
 msgid "media_dlg_kioskmode"
-msgstr "Kioskmodus"
+msgstr "Kiosk-tilstand"
 
 msgid "media_dlg_playeveryframe"
-msgstr "Elk frame afspelen"
+msgstr "Afsplil alle rammer"
 
 msgid "media_dlg_targetcache"
-msgstr "Doelcache"
+msgstr "Mål-cache"
 
 msgid "media_dlg_correction"
-msgstr "Geen correctie"
+msgstr "Ingen korrektion"
 
 msgid "media_dlg_enablejavascript"
-msgstr "JavaScript Inschakelen"
+msgstr "Tillad JavaScript"
 
 msgid "media_dlg_starttime"
-msgstr "Starttijd"
+msgstr "Starttidspunkt"
 
 msgid "media_dlg_endtime"
-msgstr "Eindtijd"
+msgstr "Sluttidspunkt"
 
 msgid "media_dlg_href"
-msgstr "HREF"
+msgstr "Href"
 
 msgid "media_dlg_qtsrcchokespeed"
-msgstr "Chokesnelheid"
+msgstr "Choke-hastighed"
 
 msgid "media_dlg_target"
-msgstr "Doel"
+msgstr "Mål"
 
 msgid "media_dlg_volume"
-msgstr "Volume"
+msgstr "Lydstyrke"
 
 msgid "media_dlg_autostart"
-msgstr "Automatisch afspelen"
+msgstr "Afspil automatisk"
 
 msgid "media_dlg_enabled"
-msgstr "Ingeschakeld"
+msgstr "Valgt"
 
 msgid "media_dlg_fullscreen"
-msgstr "Volledig scherm"
+msgstr "Fulsskærm"
 
 msgid "media_dlg_invokeurls"
-msgstr "URLs laden"
+msgstr "Aktiver URL'er"
 
 msgid "media_dlg_mute"
-msgstr "Geluid dempen"
+msgstr "Lydløs"
 
 msgid "media_dlg_stretchtofit"
-msgstr "Passend maken"
+msgstr "Stræk for at tilpasse"
 
 msgid "media_dlg_windowlessvideo"
-msgstr "Video zonder venster"
+msgstr "Vinduesløs video"
 
 msgid "media_dlg_balance"
-msgstr "Balans"
+msgstr "Balance"
 
 msgid "media_dlg_baseurl"
-msgstr "BasisURL"
+msgstr "Base URL"
 
 msgid "media_dlg_captioningid"
-msgstr "Ondertiteling id"
+msgstr "Captioning id"
 
 msgid "media_dlg_currentmarker"
-msgstr "Huidige markering"
+msgstr "Aktuel markør"
 
 msgid "media_dlg_currentposition"
-msgstr "Huidige positie"
+msgstr "Aktuel position"
 
 msgid "media_dlg_defaultframe"
-msgstr "Standaard frame"
+msgstr "Standard ramme"
 
 msgid "media_dlg_playcount"
-msgstr "Afspeelteller"
+msgstr "Afspil indhold"
 
 msgid "media_dlg_rate"
-msgstr "Snelheid"
+msgstr "Vurder"
 
 msgid "media_dlg_uimode"
-msgstr "UI Modus"
+msgstr "UI-tilstand"
 
 msgid "media_dlg_flash_options"
-msgstr "Flash opties"
+msgstr "Flash egenskaber"
 
 msgid "media_dlg_qt_options"
-msgstr "Quicktime opties"
+msgstr "Quicktime egenskaber"
 
 msgid "media_dlg_wmp_options"
-msgstr "Windows mediaspeler opties"
+msgstr "Windows media player egenskaber"
 
 msgid "media_dlg_rmp_options"
-msgstr "Real mediaspeler opties"
+msgstr "Real media player egenskaber"
 
 msgid "media_dlg_shockwave_options"
-msgstr "Shockwave opties"
+msgstr "Shockwave options"
 
 msgid "media_dlg_autogotourl"
-msgstr "Automatisch naar URL"
+msgstr "Auto gå til URL"
 
 msgid "media_dlg_center"
-msgstr "Centreren"
+msgstr "Center"
 
 msgid "media_dlg_imagestatus"
-msgstr "Afbeeldingstatus"
+msgstr "Billedstatus"
 
 msgid "media_dlg_maintainaspect"
-msgstr "Verhouding bewaren"
+msgstr "Bevar aspekt"
 
 msgid "media_dlg_nojava"
-msgstr "Geen java"
+msgstr "Ingen java"
 
 msgid "media_dlg_prefetch"
-msgstr "Voorladen"
+msgstr "Forhåndshent"
 
 msgid "media_dlg_shuffle"
-msgstr "Willekeurige volgorde"
+msgstr "Bland"
 
 msgid "media_dlg_console"
-msgstr "Console"
+msgstr "Konsol"
 
 msgid "media_dlg_numloop"
-msgstr "Aantal herhalingen"
+msgstr "Antal loops"
 
 msgid "media_dlg_controls"
-msgstr "Bediening"
+msgstr "Kontroller"
 
 msgid "media_dlg_scriptcallbacks"
 msgstr "Script callbacks"
 
 msgid "media_dlg_swstretchstyle"
-msgstr "Schaal"
+msgstr "Stræk stil"
 
 msgid "media_dlg_swstretchhalign"
-msgstr "H-Schaal"
+msgstr "Stræk H-justering"
 
 msgid "media_dlg_swstretchvalign"
-msgstr "V-Schaal"
+msgstr "Stræk V-justering"
 
 msgid "media_dlg_sound"
-msgstr "Geluid"
+msgstr "Lyd"
 
 msgid "media_dlg_progress"
-msgstr "Voortgang"
+msgstr "Fremskridt"
 
 msgid "media_dlg_qtsrc"
-msgstr "Quicktime bron"
+msgstr "QT Src"
 
 msgid "media_dlg_qt_stream_warn"
-msgstr "Gestreamde RTSP bronnen dienen op het tabblad geavanceerd bij Quicktime bron te worden opgegeven.\nDe niet-gestreamde versie kan dan bij het tabblad algemeen worden opgegeven."
+msgstr "Streamede rtsp resourcer skal tilføjes til QT Src feltet under tabben avanceret.\nDu skal også tilføje en ikke streamet version til Src feltet.."
 
 msgid "media_dlg_align_top"
-msgstr "Boven"
+msgstr "Top"
 
 msgid "media_dlg_align_right"
-msgstr "Rechts"
+msgstr "Højret"
 
 msgid "media_dlg_align_bottom"
-msgstr "Onder"
+msgstr "Bund"
 
 msgid "media_dlg_align_left"
-msgstr "Links"
+msgstr "Venstre"
 
 msgid "media_dlg_align_center"
-msgstr "Centreren"
+msgstr "Centreret"
 
 msgid "media_dlg_align_top_left"
-msgstr "Linksboven"
+msgstr "Øverste venstre hjørne"
 
 msgid "media_dlg_align_top_right"
-msgstr "Rechtsboven"
+msgstr "Øverste højre hjørne"
 
 msgid "media_dlg_align_bottom_left"
-msgstr "Linksonder"
+msgstr "Nederste venstre hjørne"
 
 msgid "media_dlg_align_bottom_right"
-msgstr "Rechtsonder"
+msgstr "Øverste højre hjørne"
 
 msgid "media_dlg_flv_options"
-msgstr "Flash video-opties"
+msgstr "Flash video egenskaber"
 
 msgid "media_dlg_flv_scalemode"
-msgstr "Schaalmodus"
+msgstr "Skaleringstilstand"
 
 msgid "media_dlg_flv_buffer"
 msgstr "Buffer"
 
 msgid "media_dlg_flv_startimage"
-msgstr "Startafbeelding"
+msgstr "Startbillede"
 
 msgid "media_dlg_flv_starttime"
-msgstr "Starttijd"
+msgstr "Starttidspunkt"
 
 msgid "media_dlg_flv_defaultvolume"
-msgstr "Standaard volume"
+msgstr "Standard lydstyrke"
 
 msgid "media_dlg_flv_hiddengui"
-msgstr "GUI verbergen"
+msgstr "Skjul skærmbillede"
 
 msgid "media_dlg_flv_autostart"
-msgstr "Automatisch afspelen"
+msgstr "Autostart"
 
 msgid "media_dlg_flv_loop"
-msgstr "Herhalen"
+msgstr "Gentag"
 
 msgid "media_dlg_flv_showscalemodes"
-msgstr "Schaalmodus weergeven"
+msgstr "Vis skaleringstilstande"
 
 msgid "media_dlg_flv_smoothvideo"
-msgstr "Soepele video"
+msgstr "Smooth video"
 
 msgid "media_dlg_flv_jscallback"
 msgstr "JS Callback"
 
 msgid "fullpage_desc"
-msgstr "Documenteigenschappen"
+msgstr "Dokumentegenskaber"
 
 msgid "fullpage_delta_width"
 msgstr ""
@@ -1936,31 +1936,31 @@ msgid "fullpage_delta_height"
 msgstr ""
 
 msgid "fullpage_dlg_title"
-msgstr "Documenteigenschappen"
+msgstr "Dokumentegenskaber"
 
 msgid "fullpage_dlg_meta_tab"
-msgstr "Algemeen"
+msgstr "Generelt"
 
 msgid "fullpage_dlg_appearance_tab"
-msgstr "Weergave"
+msgstr "Udseende"
 
 msgid "fullpage_dlg_advanced_tab"
-msgstr "Geavanceerd"
+msgstr "Advanceret"
 
 msgid "fullpage_dlg_meta_props"
-msgstr "Meta informatie"
+msgstr "Meta-information"
 
 msgid "fullpage_dlg_langprops"
-msgstr "Taal en codering"
+msgstr "Sprog og kodning"
 
 msgid "fullpage_dlg_meta_title"
 msgstr "Titel"
 
 msgid "fullpage_dlg_meta_keywords"
-msgstr "Sleutelwoorden"
+msgstr "Nøgleord"
 
 msgid "fullpage_dlg_meta_description"
-msgstr "Beschrijving"
+msgstr "Beskrivelse"
 
 msgid "fullpage_dlg_meta_robots"
 msgstr "Robots"
@@ -1969,127 +1969,127 @@ msgid "fullpage_dlg_doctypes"
 msgstr "Doctype"
 
 msgid "fullpage_dlg_langcode"
-msgstr "Taalcode"
+msgstr "Sprogkode"
 
 msgid "fullpage_dlg_langdir"
-msgstr "Taalrichting"
+msgstr "Sprogretning"
 
 msgid "fullpage_dlg_ltr"
-msgstr "Van links naar rechts"
+msgstr "Venstre mod højre"
 
 msgid "fullpage_dlg_rtl"
-msgstr "Van rechts naar links"
+msgstr "Højre md venstre"
 
 msgid "fullpage_dlg_xml_pi"
-msgstr "XML toewijzing"
+msgstr "XML declaration"
 
 msgid "fullpage_dlg_encoding"
-msgstr "Karaktercodering"
+msgstr "Tegnsæt"
 
 msgid "fullpage_dlg_appearance_bgprops"
-msgstr "Achtergrondeigenschappen"
+msgstr "Baggrundsegenskaber"
 
 msgid "fullpage_dlg_appearance_marginprops"
-msgstr "Bodymarge"
+msgstr "Body margins"
 
 msgid "fullpage_dlg_appearance_linkprops"
-msgstr "Linkkleuren"
+msgstr "Link farver"
 
 msgid "fullpage_dlg_appearance_textprops"
-msgstr "Teksteigenschappen"
+msgstr "Tekstegenskaber"
 
 msgid "fullpage_dlg_bgcolor"
-msgstr "Achtergrondkleur"
+msgstr "Baggrundsfarve"
 
 msgid "fullpage_dlg_bgimage"
-msgstr "Achtergrondafbeelding"
+msgstr "Baggrundsbillede"
 
 msgid "fullpage_dlg_left_margin"
-msgstr "Linkermarge"
+msgstr "Venstre margin"
 
 msgid "fullpage_dlg_right_margin"
-msgstr "Rechtermarge"
+msgstr "Højre margin"
 
 msgid "fullpage_dlg_top_margin"
-msgstr "Bovenmarge"
+msgstr "Topmargin"
 
 msgid "fullpage_dlg_bottom_margin"
-msgstr "Ondermarge"
+msgstr "Bundmargin"
 
 msgid "fullpage_dlg_text_color"
-msgstr "Tekstkleur"
+msgstr "Tekstfarve"
 
 msgid "fullpage_dlg_font_size"
-msgstr "Tekengrootte"
+msgstr "Skriftstørrelse"
 
 msgid "fullpage_dlg_font_face"
-msgstr "Lettertype"
+msgstr "Skrifttype"
 
 msgid "fullpage_dlg_link_color"
-msgstr "Linkkleur"
+msgstr "Linkfarve"
 
 msgid "fullpage_dlg_hover_color"
-msgstr "Hoverkleur"
+msgstr "Farve ved aktivering"
 
 msgid "fullpage_dlg_visited_color"
-msgstr "Bezocht kleur"
+msgstr "Farve efter museklik"
 
 msgid "fullpage_dlg_active_color"
-msgstr "Actieve kleur"
+msgstr "Farve ved museklik"
 
 msgid "fullpage_dlg_textcolor"
-msgstr "Kleur"
+msgstr "Farve"
 
 msgid "fullpage_dlg_fontsize"
-msgstr "Tekengrootte"
+msgstr "Skriftstørrelse"
 
 msgid "fullpage_dlg_fontface"
-msgstr "Lettertype"
+msgstr "Skrifttype"
 
 msgid "fullpage_dlg_meta_index_follow"
-msgstr "Links indexeren en volgen"
+msgstr "Indeks og følg links"
 
 msgid "fullpage_dlg_meta_index_nofollow"
-msgstr "Links indexeren maar niet volgen"
+msgstr "Indeks og følg ikke links"
 
 msgid "fullpage_dlg_meta_noindex_follow"
-msgstr "Links volgen maar niet indexeren"
+msgstr "Ingen indeks, men følg links"
 
 msgid "fullpage_dlg_meta_noindex_nofollow"
-msgstr "Links niet indexeren en niet volgen"
+msgstr "Ingen indeks og følg ikke links"
 
 msgid "fullpage_dlg_appearance_style"
-msgstr "Stijlblad en stijleigenschappen"
+msgstr "Stylesheet og style-egenskaber"
 
 msgid "fullpage_dlg_stylesheet"
-msgstr "Stijlblad"
+msgstr "Stylesheet"
 
 msgid "fullpage_dlg_style"
-msgstr "Stijl"
+msgstr "Style"
 
 msgid "fullpage_dlg_author"
-msgstr "Auteur"
+msgstr "Forfatter"
 
 msgid "fullpage_dlg_copyright"
 msgstr "Copyright"
 
 msgid "fullpage_dlg_add"
-msgstr "Nieuw element toevoegen"
+msgstr "Tilføj nyt element"
 
 msgid "fullpage_dlg_remove"
-msgstr "Geselecteerde elementen verwijderen"
+msgstr "Slet valgte element"
 
 msgid "fullpage_dlg_moveup"
-msgstr "Geselecteerde elementen omhoog verplaatsen"
+msgstr "Flyt valgte element op"
 
 msgid "fullpage_dlg_movedown"
-msgstr "Geselecteerde elementen omlaag verplaatsen"
+msgstr "Flyt valgte element ned"
 
 msgid "fullpage_dlg_head_elements"
-msgstr "Kopelementen"
+msgstr "Hovedelement"
 
 msgid "fullpage_dlg_info"
-msgstr "Informatie"
+msgstr "Information"
 
 msgid "fullpage_dlg_add_title"
 msgstr "Titelelement"
@@ -2098,76 +2098,76 @@ msgid "fullpage_dlg_add_meta"
 msgstr "Meta-element"
 
 msgid "fullpage_dlg_add_script"
-msgstr "Scriptelement"
+msgstr "Script-element"
 
 msgid "fullpage_dlg_add_style"
-msgstr "Stijlelement"
+msgstr "Style-element"
 
 msgid "fullpage_dlg_add_link"
-msgstr "Linkelement"
+msgstr "Link-element"
 
 msgid "fullpage_dlg_add_base"
-msgstr "Basiselement"
+msgstr "Base-element"
 
 msgid "fullpage_dlg_add_comment"
-msgstr "Opmerkingknooppunt"
+msgstr "Kommentar-node"
 
 msgid "fullpage_dlg_title_element"
 msgstr "Titelelement"
 
 msgid "fullpage_dlg_script_element"
-msgstr "Scriptelement"
+msgstr "Script-element"
 
 msgid "fullpage_dlg_style_element"
-msgstr "Stijlelement"
+msgstr "Style-element"
 
 msgid "fullpage_dlg_base_element"
-msgstr "Basiselement"
+msgstr "Base-element"
 
 msgid "fullpage_dlg_link_element"
-msgstr "Linkelement"
+msgstr "Link-element"
 
 msgid "fullpage_dlg_meta_element"
 msgstr "Meta-element"
 
 msgid "fullpage_dlg_comment_element"
-msgstr "Opmerking"
+msgstr "Kommentar"
 
 msgid "fullpage_dlg_src"
-msgstr "Bron"
+msgstr "Src"
 
 msgid "fullpage_dlg_language"
-msgstr "Taal"
+msgstr "Sprog"
 
 msgid "fullpage_dlg_href"
 msgstr "Href"
 
 msgid "fullpage_dlg_target"
-msgstr "Doel"
+msgstr "Destination"
 
 msgid "fullpage_dlg_type"
 msgstr "Type"
 
 msgid "fullpage_dlg_charset"
-msgstr "Karakterset"
+msgstr "Tegnsæt"
 
 msgid "fullpage_dlg_defer"
-msgstr "Uitstellen"
+msgstr "Defer"
 
 msgid "fullpage_dlg_media"
 msgstr "Media"
 
 msgid "fullpage_dlg_properties"
-msgstr "Eigenschappen"
+msgstr "Egenskaber"
 
 msgid "fullpage_dlg_name"
-msgstr "Naam"
+msgstr "Navn"
 
 msgid "fullpage_dlg_value"
-msgstr "Waarde"
+msgstr "Værdi"
 
 msgid "fullpage_dlg_content"
-msgstr "Inhoud"
+msgstr "Indhold"
 
 msgid "fullpage_dlg_rel"
 msgstr "Rel"
@@ -2176,86 +2176,86 @@ msgid "fullpage_dlg_rev"
 msgstr "Rev"
 
 msgid "fullpage_dlg_hreflang"
-msgstr "Href taal"
+msgstr "Href lang"
 
 msgid "fullpage_dlg_general_props"
-msgstr "Algemeen"
+msgstr "Generelt"
 
 msgid "fullpage_dlg_advanced_props"
-msgstr "Geavanceerd"
+msgstr "Advanceret"
 
 msgid "template_desc"
-msgstr "Voorgedefinieerd sjabloon invoegen"
+msgstr "Indsæt prædefineret skabelonindhold"
 
 msgid "template_dlg_title"
-msgstr "Sjablonen"
+msgstr "Skabeloner"
 
 msgid "template_dlg_label"
-msgstr "Sjabloon"
+msgstr "Skabelon"
 
 msgid "template_dlg_desc_label"
-msgstr "Beschrijving"
+msgstr "Beskrivelse"
 
 msgid "template_dlg_desc"
-msgstr "Voorgedefinieerd sjabloon invoegen"
+msgstr "Indsæt prædefineret skabelonindhold"
 
 msgid "template_dlg_select"
-msgstr "Selecteer een sjabloon"
+msgstr "Vælg en skabelon"
 
 msgid "template_dlg_preview"
-msgstr "Voorbeeld"
+msgstr "Vis udskrift"
 
 msgid "template_dlg_warning"
-msgstr "Waarschuwing: het bijwerken van een sjabloon met een andere kan het verlies van informatie tot gevolg hebben."
+msgstr "Advarsel: Opdatering af en skabelon med en anden kan betyde datatab."
 
 msgid "template_dlg_mdate_format"
-msgstr "%d-%m-%Y %H:%M:%S"
+msgstr "%Y-%m-%d %H:%M:%S"
 
 msgid "template_dlg_cdate_format"
-msgstr "%d-%m-%Y %H:%M:%S"
+msgstr "%Y-%m-%d %H:%M:%S"
 
 msgid "template_dlg_months_long"
-msgstr "Januari,Februari,Maart,April,Mei,Juni,Juli,Augustus,September,Oktober,November,December"
+msgstr "Januar,Februar,Marts,April,Maj,Juni,Juli,August,September,Oktober,November,December"
 
 msgid "template_dlg_months_short"
-msgstr "Jan,Feb,Mar,Apr,Mei,Jun,Jul,Aug,Sep,Okt,Nov,Dec"
+msgstr "Jan,Feb,Mar,Apr,Maj,Jun,Jul,Aug,Sep,Okt,Nov,Dec"
 
 msgid "template_dlg_day_long"
-msgstr "Zondag,Maandag,Dinsdag,Woensdag,Donderdag,Vrijdag,Zaterdag,Zondag"
+msgstr "Søndag,Mandag,Tirsdag,Onsdag,Torsdag,Fredag,Lørdag,Søndag"
 
 msgid "template_dlg_day_short"
-msgstr "zo,ma,di,wo,do,vr,za,zo"
+msgstr "Søn,Man,Tirs,Ons,Tors,Fre,Lør,Søn"
 
 msgid "visualchars_desc"
-msgstr "Zichtbare symbolen"
+msgstr "Vis/Skjul visuelle kontroltegn."
 
 msgid "spellchecker_desc"
-msgstr "Spellingcontrole"
+msgstr "Vis/skjul stavekontrol"
 
 msgid "spellchecker_menu"
-msgstr "Instellingen spellingcontrole"
+msgstr "Indstillinger for stavekontrol"
 
 msgid "spellchecker_ignore_word"
-msgstr "Woord negeren"
+msgstr "Ignorer ord"
 
 msgid "spellchecker_ignore_words"
-msgstr "Alles negeren"
+msgstr "Ignorer alle"
 
 msgid "spellchecker_langs"
-msgstr "Talen"
+msgstr "Sprog"
 
 msgid "spellchecker_wait"
-msgstr "Een ogenblik geduld…"
+msgstr "Vent venligst..."
 
 msgid "spellchecker_sug"
-msgstr "Suggesties"
+msgstr "Forslag"
 
 msgid "spellchecker_no_sug"
-msgstr "Geen suggesties"
+msgstr "Ingen forslag"
 
 msgid "spellchecker_no_mpell"
-msgstr "Geen spelfouten gevonden."
+msgstr "Ingen stavefejl fundet."
 
 msgid "pagebreak_desc"
-msgstr "Pagina-einde invoegen"
+msgstr "Indsæt sideskift."
 

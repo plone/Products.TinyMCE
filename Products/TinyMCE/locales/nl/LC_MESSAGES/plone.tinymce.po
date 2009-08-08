@@ -1,508 +1,505 @@
-# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
-# SOME DESCRIPTIVE TITLE.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: 1.1\n"
 "POT-Creation-Date: 2009-08-08 13:22+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2009-08-08 18:10+0100\n"
+"Last-Translator: Rob Gietema <rob@fourdigits.nl>\n"
+"Language-Team: Rob Gietema <rob@fourdigits.nl>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"Language-Code: en\n"
-"Language-Name: English\n"
+"Language-Code: nl\n"
+"Language-Name: Dutch\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: tinymce\n"
+"Domain: plone.tinymce\n"
 
 #: ./interfaces/utility.py:189
 msgid "Align center"
-msgstr ""
+msgstr "Centreren"
 
 #: ./interfaces/utility.py:199
 msgid "Align full"
-msgstr ""
+msgstr "Volledig uitlijnen"
 
 #: ./interfaces/utility.py:184
 msgid "Align left"
-msgstr ""
+msgstr "Links uitlijnen"
 
 #: ./interfaces/utility.py:194
 msgid "Align right"
-msgstr ""
+msgstr "Rechts uitlijnen"
 
 #: ./interfaces/utility.py:362
 msgid "Allow captioned images"
-msgstr ""
+msgstr "Afbeelding onderschriften"
 
 #. Default: "Anchors"
 #: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:48
 msgid "Anchors"
-msgstr ""
+msgstr "Ankers"
 
 #: ./interfaces/utility.py:179
 msgid "Backcolor"
-msgstr ""
+msgstr "Achtergrondkleur"
 
 #: ./interfaces/utility.py:144
 msgid "Bold"
-msgstr ""
+msgstr "Vet"
 
 #: ./interfaces/utility.py:24
 msgid "Bottom margin of the textfield when auto resizing is enabled."
-msgstr ""
+msgstr "Marge onderaan wanneer automatisch schalen is ingeschakeld van het tekstveld"
 
 #: ./interfaces/utility.py:56
 msgid "Choose the Css used in Wysiwyg Editor Area"
-msgstr ""
+msgstr "Eigen CSS voor editor"
 
 #: ./interfaces/utility.py:314
 msgid "Cleanup messy code"
-msgstr ""
+msgstr "Code opruimen"
 
 #: ./interfaces/utility.py:374
 msgid "Contains Anchors"
-msgstr ""
+msgstr "Bevat ankers"
 
 #: ./interfaces/utility.py:368
 msgid "Contains Objects"
-msgstr ""
+msgstr "Bevat objecten"
 
 #: ./interfaces/utility.py:99
 msgid "Copy"
-msgstr ""
+msgstr "Kopiëren"
 
 #. Default: "Current Folder"
 #: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:27
 msgid "Current Folder"
-msgstr ""
+msgstr "Huidige map"
 
 #: ./interfaces/utility.py:392
 msgid "Custom Plugins"
-msgstr ""
+msgstr "Eigen plugins"
 
 #: ./interfaces/utility.py:344
 msgid "Custom Toolbar Buttons"
-msgstr ""
+msgstr "Eigen toolbar knoppen"
 
 #: ./interfaces/utility.py:94
 msgid "Cut"
-msgstr ""
+msgstr "Knippen"
 
 #. Default: "Description"
 #: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:126
 msgid "Description"
-msgstr ""
+msgstr "Omschrijving"
 
 #. Default: "Details"
 #: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:57
 msgid "Details"
-msgstr ""
+msgstr "Details"
 
 #. Default: "E-mail"
 #: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:114
 msgid "E-mail"
-msgstr ""
+msgstr "E-mail"
 
 #: ./interfaces/utility.py:334
 msgid "Edit HTML Source"
-msgstr ""
+msgstr "HTML bron"
 
 #: ./interfaces/utility.py:36
 msgid "Editor height"
-msgstr ""
+msgstr "Editor hoogte"
 
 #: ./interfaces/utility.py:30
 msgid "Editor width"
-msgstr ""
+msgstr "Editor breedte"
 
 #: ./interfaces/utility.py:279
 msgid "Emotions"
-msgstr ""
+msgstr "Emoties"
 
 #: ./interfaces/utility.py:18
 msgid "Enable auto resizing of the editor window."
-msgstr ""
+msgstr "Automatisch schalen"
 
 #: ./interfaces/utility.py:50
 msgid "Enable contextmenu."
-msgstr ""
+msgstr "Contextmenu inschakelen"
 
 #: ./interfaces/utility.py:12
 msgid "Enable resizing the editor window."
-msgstr ""
+msgstr "Editor venster schaalbaar maken"
 
 #: ./interfaces/utility.py:381
 msgid "Enter a list of content types which can be linked. Format is one contenttype per line."
-msgstr ""
+msgstr "Geef een lijst op van contenttypes waar naar gelinkt kan worden. Het formaat is één contenttype per regel."
 
 #: ./interfaces/utility.py:387
 msgid "Enter a list of content types which can be used as images. Format is one contenttype per line."
-msgstr ""
+msgstr "Geef een lijst op van contenttypes welke gebruikt kunnen worden als afbeeldingen. Het formaat is één contenttype per regel."
 
 #: ./interfaces/utility.py:375
 msgid "Enter a list of content types which can contain anchors. Format is one contenttype per line."
-msgstr ""
+msgstr "Geef een lijst van contenttypen die ankers kunnen bevatten op. Het formaat is één contenttype per regel."
 
 #: ./interfaces/utility.py:369
 msgid "Enter a list of content types which can contain other objects. Format is one contenttype per line."
-msgstr ""
+msgstr "Geef een lijst van contenttypen die objecten kunnen bevatten op. Het formaat is één contenttype per regel."
 
 #: ./interfaces/utility.py:393
 msgid "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
-msgstr ""
+msgstr "Geef een lijst op van eigen plugins die gebruikt worden in de editor. Het formaat is de pluginnaam of pluginnaam|locatie, één per regel."
 
 #: ./interfaces/utility.py:345
 msgid "Enter a list of custom toolbar buttons which will be loaded in the editor, one per line."
-msgstr ""
+msgstr "Geef een lijst op met eigen toolbar knoppen die geladen worden binnen de editor, één per regel."
 
 #: ./interfaces/utility.py:63
 msgid "Enter a list of styles to appear in the style pulldown. Format is title|tag or title|tag|className, one per line."
-msgstr ""
+msgstr "Geef een lijst van stijlen op die verschijnen in het stijlen menu. Het formaat is titel|class, één per regel."
 
 #: ./interfaces/utility.py:69
 msgid "Enter a list of styles to appear in the table style pulldown. Format is title|class, one per line."
-msgstr ""
+msgstr "Geef een lijst van stijlen op die verschijnen in het tabel stijlen menu. Het formaat is titel|class, één per regel."
 
 #: ./interfaces/utility.py:398
 msgid "Entity encoding"
-msgstr ""
+msgstr "Codering"
 
 #. Default: "External"
 #: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:38
 msgid "External"
-msgstr ""
+msgstr "Extern"
 
 #. Default: "External link"
 #: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:89
 msgid "External link"
-msgstr ""
+msgstr "Externe link"
 
 #. Default: "File"
 #: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:112
 msgid "File"
-msgstr ""
+msgstr "Bestand"
 
 #: ./interfaces/utility.py:129
 msgid "Find"
-msgstr ""
+msgstr "Zoeken"
 
 #: ./interfaces/utility.py:134
 msgid "Find/Replace"
-msgstr ""
+msgstr "Zoeken/Vervangen"
 
 #: ./interfaces/utility.py:174
 msgid "Forecolor"
-msgstr ""
+msgstr "Tekstkleur"
 
 #. Default: "Home"
 #: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:22
 msgid "Home"
-msgstr ""
+msgstr "Home"
 
 #: ./interfaces/utility.py:386
 msgid "Image Objects"
-msgstr ""
+msgstr "Afbeelding objecten"
 
 #: ./interfaces/utility.py:363
 msgid "Images will be automatically captioned."
-msgstr ""
+msgstr "Afbeeldingen worden automatisch voorzien van een onderschrift."
 
 #: ./interfaces/utility.py:219
 msgid "Indent"
-msgstr ""
+msgstr "Inspringen"
 
 #. Default: "Inline"
 #: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:77
 msgid "Inline"
-msgstr ""
+msgstr "Inline"
 
 #: ./interfaces/utility.py:264
 msgid "Insert advanced horizontal ruler"
-msgstr ""
+msgstr "Geavanceerde scheidinglijn invoegen"
 
 #: ./interfaces/utility.py:254
 msgid "Insert custom character"
-msgstr ""
+msgstr "Symbool invoegen"
 
 #: ./interfaces/utility.py:269
 msgid "Insert date"
-msgstr ""
+msgstr "Datum invoegen"
 
 #: ./interfaces/utility.py:259
 msgid "Insert horizontal ruler"
-msgstr ""
+msgstr "Scheidingslijn invoegen"
 
 #: ./interfaces/utility.py:284
 msgid "Insert non-breaking space character"
-msgstr ""
+msgstr "Open ruimte invoegen"
 
 #: ./interfaces/utility.py:289
 msgid "Insert page break"
-msgstr ""
+msgstr "Pagina-einde invoegen"
 
 #: ./interfaces/utility.py:274
 msgid "Insert time"
-msgstr ""
+msgstr "Tijd invoegen"
 
 #: ./interfaces/utility.py:239
 msgid "Insert/edit anchor"
-msgstr ""
+msgstr "Anker invoegen/wijzigen"
 
 #: ./interfaces/utility.py:329
 msgid "Insert/edit attributes"
-msgstr ""
+msgstr "Attributen invoegen/wijzigen"
 
 #: ./interfaces/utility.py:244
 msgid "Insert/edit image"
-msgstr ""
+msgstr "Afbeelding invoegen/wijzigen"
 
 #: ./interfaces/utility.py:229
 msgid "Insert/edit link"
-msgstr ""
+msgstr "Link invoegen/wijzigen"
 
 #: ./interfaces/utility.py:249
 msgid "Insert/edit media"
-msgstr ""
+msgstr "Media invoegen/wijzigen"
 
 #. Default: "Internal link"
 #: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:62
 msgid "Internal link"
-msgstr ""
+msgstr "Interne link"
 
 #: ./interfaces/utility.py:149
 msgid "Italic"
-msgstr ""
+msgstr "Cursief"
 
 #: ./browser/controlpanel.py:32
 msgid "Layout"
-msgstr ""
+msgstr "Layout"
 
 #. Default: "Libraries"
 #: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:18
 msgid "Libraries"
-msgstr ""
+msgstr "Bilbiotheken"
 
 #. Default: "Link to anchor"
 #: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:129
 msgid "Link to anchor"
-msgstr ""
+msgstr "Link naar anker"
 
 #: ./interfaces/utility.py:356
 msgid "Link using UIDs"
-msgstr ""
+msgstr "Met uids linken"
 
 #: ./interfaces/utility.py:380
 msgid "Linkable Objects"
-msgstr ""
+msgstr "Linkbare objecten"
 
 #: ./interfaces/utility.py:357
 msgid "Links to objects on this site can use unique object ids so that the links remain valid even if the target object is renamed or moved elsewhere on the site."
-msgstr ""
+msgstr "Links naar objecten op deze site kunnen unieke object ids gebruiken zodat de links valide blijven wanneer het bron object hernoemd of verplaatst is op de site."
 
 #. Default: "Mail"
 #: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:43
 msgid "Mail"
-msgstr ""
+msgstr "Mail"
 
 #: ./interfaces/utility.py:209
 msgid "Ordered list"
-msgstr ""
+msgstr "Nummering"
 
 #: ./interfaces/utility.py:214
 msgid "Outdent"
-msgstr ""
+msgstr "Inspringing verkleinen"
 
 #: ./interfaces/utility.py:104
 msgid "Paste"
-msgstr ""
+msgstr "Plakken"
 
 #: ./interfaces/utility.py:109
 msgid "Paste as Plain Text"
-msgstr ""
+msgstr "Tekst plakken"
 
 #: ./interfaces/utility.py:114
 msgid "Paste from Word"
-msgstr ""
+msgstr "Plakken vanuit Word"
 
 #. Default: "Preview"
 #: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:99
 msgid "Preview"
-msgstr ""
+msgstr "Voorbeeld"
 
 #: ./interfaces/utility.py:294
 msgid "Print"
-msgstr ""
+msgstr "Printen"
 
 #: ./interfaces/utility.py:124
 msgid "Redo"
-msgstr ""
+msgstr "Herhalen"
 
 #: ./interfaces/utility.py:309
 msgid "Remove formatting"
-msgstr ""
+msgstr "Verwijder opmaak"
 
 #: ./browser/controlpanel.py:44
 msgid "Resource Types"
-msgstr ""
+msgstr "Resource Typen"
 
 #: ./interfaces/utility.py:89
 msgid "Save"
-msgstr ""
+msgstr "Opslaan"
 
 #. Default: "Search"
 #: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:37
 msgid "Search"
-msgstr ""
+msgstr "Zoeken"
 
 #: ./interfaces/utility.py:139
 msgid "Select Style"
-msgstr ""
+msgstr "Stijl selecteren"
 
 #: ./browser/controlpanel.py:49
 msgid "Settings for the TinyMCE Wysiwyg editor."
-msgstr ""
+msgstr "Instellingen voor de TinyMCE Wysiwyg editor"
 
 #: ./interfaces/utility.py:304
 msgid "Spellchecker"
-msgstr ""
+msgstr "Spellingschecker"
 
 #: ./interfaces/utility.py:159
 msgid "Strikethrough"
-msgstr ""
+msgstr "Doorhalen"
 
 #: ./interfaces/utility.py:62
 msgid "Styles"
-msgstr ""
+msgstr "Stijlen"
 
 #. Default: "Subject"
 #: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:121
 msgid "Subject"
-msgstr ""
+msgstr "Onderwerp"
 
 #: ./interfaces/utility.py:164
 msgid "Subscript"
-msgstr ""
+msgstr "Subscript"
 
 #: ./interfaces/utility.py:169
 msgid "Superscript"
-msgstr ""
+msgstr "Superscript"
 
 #: ./interfaces/utility.py:224
 msgid "Table controls"
-msgstr ""
+msgstr "Tabel instellingen"
 
 #: ./interfaces/utility.py:68
 msgid "Table styles"
-msgstr ""
+msgstr "Tabel stijlen"
 
 #: ./interfaces/utility.py:399
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
-msgstr ""
+msgstr "Deze optie bepaald hoe entiteiten/karakters worden verwerkt. Named: Karakters worden geconverteerd in named entiteiten gebaseerd op de entiteiten optie. Numeriek: Karakters worden geconverteerd in numerieke karakters. Raw: Alle karakters worden opgeslagen in een non-entiteiten vorm behalve deze XML standaard entiteiten: amp lt gt quot."
 
 #: ./interfaces/utility.py:84
 msgid "This option enables the external toolbar which will be placed at the top of the page."
-msgstr ""
+msgstr "Deze optie geeft je de mogelijkheid om een externe toolbar aan te zetten die bovenaan de website wordt geplaatst."
 
 #: ./interfaces/utility.py:57
 msgid "This option enables you to specify a custom CSS file that extends the theme content CSS. This CSS file is the one used within the editor (the editable area)."
-msgstr ""
+msgstr "Deze optie geeft je de mogelijkheid om een eigen CSS bestand toe te kennen dat een uitbreiding is op de het CSS bestand van het theme. Dit CSS bestand wordt gebruikt binnen het editor scherm."
 
 #: ./interfaces/utility.py:19
 msgid "This option gives you the ability to enable/disable auto resizing the editor window depending on the content."
-msgstr ""
+msgstr "Deze optie geeft de mogelijk om het automatisch schalen van het editor scherm aan de hand van de inhoud aan en uit te zetten."
 
 #: ./interfaces/utility.py:13
 msgid "This option gives you the ability to enable/disable resizing the editor window. If the editor width is set to a percentage only vertical resizing is enabled."
-msgstr ""
+msgstr "Deze optie geeft je de mogelijkheid om het schalen van het editor scherm aan en uit te zetten. Als de editor breedte ingesteld is met percentages, is alleen verticale schaling mogelijk."
 
 #: ./interfaces/utility.py:51
 msgid "This option gives you the ability to enable/disable the use of the contextmenu."
-msgstr ""
+msgstr "Deze optie geeft je mogelijk om het context menu aan of uit te zetten."
 
 #: ./interfaces/utility.py:25
 msgid "This option gives you the ability to specify the bottom margin (in pixels) of the textfield when auto resizing of the editor window is enabled."
-msgstr ""
+msgstr "Deze optie geeft je de mogelijkheid om de onderste marge te specificeren (in pixels) wanneer automatisch schalen van het editor scherm is ingeschakeld."
 
 #: ./interfaces/utility.py:37
 msgid "This option gives you the ability to specify the height of the editor in pixels. If auto resize is enabled this value is used as minimum height."
-msgstr ""
+msgstr "Deze optie geeft je de mogelijkheid om de hoogte van het editor scherm in pixels of procenten in te stellen."
 
 #: ./interfaces/utility.py:31
 msgid "This option gives you the ability to specify the width of the editor in pixels or percent."
-msgstr ""
+msgstr "Deze optie geeft je de mogelijkheid om de breedte van het editor scherm in pixels of procenten in te stellen."
 
 #: ./interfaces/utility.py:78
 msgid "This option gives you the ability to specify the width of the toolbar in pixels."
-msgstr ""
+msgstr "Deze optie geeft je de mogelijkheid om de breedte van de toolbar in te stellen in pixels."
 
 #: ./interfaces/utility.py:43
 msgid "This option specifies the default writing direction, some languages (Like Hebrew, Arabic, Urdu...) write from right to left instead of left to right."
-msgstr ""
+msgstr "Deze optie geeft je de mogelijk om de tekstrichting in te stellen. Sommige talen (zoals hebreeuws, arabisch, urdu...) schrijven van rechts naar links in plaats van links naar rechts."
 
 #: ./browser/controlpanel.py:48
 msgid "TinyMCE Settings"
-msgstr ""
+msgstr "TinyMCE instellingen"
 
 #. Default: "Title"
 #: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:272
 msgid "Title"
-msgstr ""
+msgstr "Titel"
 
 #: ./interfaces/utility.py:339
 msgid "Toggle fullscreen mode"
-msgstr ""
+msgstr "Volledig scherm in-/uitschakelen"
 
 #: ./interfaces/utility.py:319
 msgid "Toggle guidelines/invisible objects"
-msgstr ""
+msgstr "Hulplijnen/onzichtbare objecten aan/uit"
 
 #: ./browser/controlpanel.py:36
 msgid "Toolbar"
-msgstr ""
+msgstr "Toolbar"
 
 #: ./interfaces/utility.py:77
 msgid "Toolbar width"
-msgstr ""
+msgstr "Toolbar breedte"
 
 #: ./interfaces/utility.py:154
 msgid "Underline"
-msgstr ""
+msgstr "Onderstrepen"
 
 #: ./interfaces/utility.py:119
 msgid "Undo"
-msgstr ""
+msgstr "Ongedaan maken"
 
 #: ./interfaces/utility.py:234
 msgid "Unlink"
-msgstr ""
+msgstr "Link verwijderen"
 
 #: ./interfaces/utility.py:204
 msgid "Unordered list"
-msgstr ""
+msgstr "Opsommingtekens"
 
 #. Default: "Up one level"
 #: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:50
 msgid "Up one level"
-msgstr ""
+msgstr "Eén niveau hoger"
 
 #. Default: "Upload"
 #: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:132
 msgid "Upload"
-msgstr ""
+msgstr "Upload"
 
 #. Default: "Upload file"
 #: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:109
 msgid "Upload file"
-msgstr ""
+msgstr "Bestand uploaden"
 
 #: ./interfaces/utility.py:324
 msgid "Visual control characters on/off"
-msgstr ""
+msgstr "Zichtbare symbolen aan/uit"
 
 #: ./interfaces/utility.py:42
 msgid "Writing direction"
-msgstr ""
+msgstr "Tekst richting"
 

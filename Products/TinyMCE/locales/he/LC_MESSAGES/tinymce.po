@@ -1,271 +1,271 @@
-# This is the Dutch language pack for TinyMCE.
-# Version 10.5
+# This is the Hebrew language pack for TinyMCE
+# Version 5.8
 #
-# janwalhof
+# Gidon Junge, Ilana Tamir
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2009-08-06 00:00+0000\n"
-"Last-Translator: janwalhof\n"
-"Language-Team: janwalhof\n"
+"PO-Revision-Date: 2009-05-29 00:00+0000\n"
+"Last-Translator: Gidon Junge, Ilana Tamir\n"
+"Language-Team: Gidon Junge, Ilana Tamir\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Language-Code: nl\n"
-"Language-Name: Dutch\n"
+"Language-Code: he\n"
+"Language-Name: Hebrew\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: tinymce\n"
 
 msgid "common_edit_confirm"
-msgstr "Weet u zeker dat u tekst in WYSIWYG mode wilt bewerken in dit tekstveld?"
+msgstr "ברצונך להשתמש בעורך המתקדם?"
 
 msgid "common_apply"
-msgstr "Toepassen"
+msgstr "אישור"
 
 msgid "common_insert"
-msgstr "Invoegen"
+msgstr "הוספה"
 
 msgid "common_update"
-msgstr "Bijwerken"
+msgstr "עדכון"
 
 msgid "common_cancel"
-msgstr "Annuleren"
+msgstr "ביטול"
 
 msgid "common_close"
-msgstr "Sluiten"
+msgstr "סגירה"
 
 msgid "common_browse"
-msgstr "Bladeren"
+msgstr "עיון"
 
 msgid "common_class_name"
-msgstr "Klasse"
+msgstr "מחלקה"
 
 msgid "common_not_set"
-msgstr "- Standaard -"
+msgstr "-- לא הוגדר --"
 
 msgid "common_clipboard_msg"
-msgstr "Kopiëren/knippen/plakken is niet beschikbaar in Mozilla en Firefox.\nWilt u meer informatie over deze beperking?"
+msgstr "        העתקה/גזירה והדבקה אינם זמינים ב Mozilla וב-Firefox.\n        האם ברצונך לקבל מידע נוסף על הנושא?\n      "
 
 msgid "common_clipboard_no_support"
-msgstr "Kopiëren/knippen/plakken wordt niet ondersteund door uw browser, gebruik hiervoor de sneltoetsen."
+msgstr "כרגע לא נתמך על ידי הדפדפן שלך. השתמש בקיצורי המקלדת."
 
 msgid "common_popup_blocked"
-msgstr "U zult uw popup-blocker tijdelijk moeten uitschakelen voor deze website om gebruik te kunnen maken van alle functies van deze teksteditor."
+msgstr "חוסם פריטים מוקפצים מנע מחלון חשוב מלהפתח,אם ברצונך להשתמש בכלי זה עליך לבטל את חוסם הפריטים"
 
 msgid "common_invalid_data"
-msgstr "Fout: Er zijn ongeldige waardes ingevoerd, deze zijn rood gemarkeerd."
+msgstr "Error: Invalid values entered, these are marked in red."
 
 msgid "common_more_colors"
-msgstr "Meer kleuren"
+msgstr "עוד צבעים"
 
 msgid "simple_bold_desc"
-msgstr "Vet (Ctrl+B)"
+msgstr "מודגש (Ctrl+B)"
 
 msgid "simple_italic_desc"
-msgstr "Cursief (Ctrl+I)"
+msgstr "נטוי (Ctrl+I)"
 
 msgid "simple_underline_desc"
-msgstr "Onderstrepen (Ctrl+U)"
+msgstr "קו תחתון (Ctrl+U)"
 
 msgid "simple_striketrough_desc"
-msgstr "Doorhalen"
+msgstr "קו חוצה"
 
 msgid "simple_bullist_desc"
-msgstr "Opsommingstekens"
+msgstr "תבליטים"
 
 msgid "simple_numlist_desc"
-msgstr "Nummering"
+msgstr "מספור"
 
 msgid "simple_undo_desc"
-msgstr "Ongedaan maken (Ctrl+Z)"
+msgstr "ביטול פעולה (Ctrl+Z)"
 
 msgid "simple_redo_desc"
-msgstr "Herhalen (Ctrl+Y)"
+msgstr " (Ctrl+Y)"
 
 msgid "simple_cleanup_desc"
-msgstr "Code opruimen"
+msgstr "נקה קוד"
 
 msgid "advanced_style_select"
-msgstr "Stijlen"
+msgstr "סגנונות"
 
 msgid "advanced_font_size"
-msgstr "Tekengrootte"
+msgstr "גודל גופן"
 
 msgid "advanced_fontdefault"
-msgstr "Lettertype"
+msgstr "גופן"
 
 msgid "advanced_block"
-msgstr "Opmaak"
+msgstr "עיצוב"
 
 msgid "advanced_paragraph"
-msgstr "Alinea"
+msgstr "פסקה"
 
 msgid "advanced_div"
 msgstr "Div"
 
 msgid "advanced_address"
-msgstr "Adres"
+msgstr "כתובת"
 
 msgid "advanced_pre"
-msgstr "Vaste opmaak"
+msgstr "Preformatted"
 
 msgid "advanced_h1"
-msgstr "Kop 1"
+msgstr "כותרת 1"
 
 msgid "advanced_h2"
-msgstr "Kop 2"
+msgstr "כותרת 2"
 
 msgid "advanced_h3"
-msgstr "Kop 3"
+msgstr "כותרת 3"
 
 msgid "advanced_h4"
-msgstr "Kop 4"
+msgstr "כותרת 4"
 
 msgid "advanced_h5"
-msgstr "Kop 5"
+msgstr "כותרת 5"
 
 msgid "advanced_h6"
-msgstr "Kop 6"
+msgstr "כותרת 6"
 
 msgid "advanced_blockquote"
-msgstr "Citaat"
+msgstr "ציטוט קטע"
 
 msgid "advanced_code"
-msgstr "Code"
+msgstr "קוד"
 
 msgid "advanced_samp"
-msgstr "Codevoorbeeld"
+msgstr "דוגמת קוד"
 
 msgid "advanced_dt"
-msgstr "Definitieterm"
+msgstr "מושג"
 
 msgid "advanced_dd"
-msgstr "Definitiebeschrijving"
+msgstr "הגדרת המושג"
 
 msgid "advanced_bold_desc"
-msgstr "Vet (Ctrl+B)"
+msgstr "מודגש (Ctrl+B)"
 
 msgid "advanced_italic_desc"
-msgstr "Cursief (Ctrl+I)"
+msgstr "נטוי (Ctrl+I)"
 
 msgid "advanced_underline_desc"
-msgstr "Onderstrepen (Ctrl+U)"
+msgstr "קו תחתון (Ctrl+U)"
 
 msgid "advanced_striketrough_desc"
-msgstr "Doorhalen"
+msgstr "קו חוצה"
 
 msgid "advanced_justifyleft_desc"
-msgstr "Links uitlijnen"
+msgstr "יישור טקסט לשמאל"
 
 msgid "advanced_justifycenter_desc"
-msgstr "Centreren"
+msgstr "מירכוז טקסט"
 
 msgid "advanced_justifyright_desc"
-msgstr "Rechts uitlijnen"
+msgstr "יישור טקסט לימין"
 
 msgid "advanced_justifyfull_desc"
-msgstr "Uitvullen"
+msgstr "יישור לשני הצדדים"
 
 msgid "advanced_bullist_desc"
-msgstr "Opsommingstekens"
+msgstr "תבליטים"
 
 msgid "advanced_numlist_desc"
-msgstr "Nummering"
+msgstr "מספור"
 
 msgid "advanced_outdent_desc"
-msgstr "Inspringing verkleinen"
+msgstr "הגדלת כניסה"
 
 msgid "advanced_indent_desc"
-msgstr "Inspringing vergroten"
+msgstr "הקטנת כניסה"
 
 msgid "advanced_undo_desc"
-msgstr "Ongedaan maken (Ctrl+Z)"
+msgstr "ביטול פעולה (Ctrl+Z)"
 
 msgid "advanced_redo_desc"
-msgstr "Herhalen (Ctrl+Y)"
+msgstr "חזרה על פעולה (Ctrl+Y)"
 
 msgid "advanced_link_desc"
-msgstr "Link invoegen/bewerken"
+msgstr "הוספת/עריכת קישור"
 
 msgid "advanced_unlink_desc"
-msgstr "Link verwijderen"
+msgstr "הסרת קישור"
 
 msgid "advanced_image_desc"
-msgstr "Afbeelding invoegen/bewerken"
+msgstr "הוספה/עריכת דף תמונה"
 
 msgid "advanced_cleanup_desc"
-msgstr "Code opruimen"
+msgstr "ניקוי קוד"
 
 msgid "advanced_code_desc"
-msgstr "HTML bron bewerken"
+msgstr "עריכת קוד HTML"
 
 msgid "advanced_sub_desc"
-msgstr "Subscript"
+msgstr "כתב עילי"
 
 msgid "advanced_sup_desc"
-msgstr "Superscript"
+msgstr "כתב תחתי"
 
 msgid "advanced_hr_desc"
-msgstr "Scheidingslijn invoegen"
+msgstr "הוספת קו מפריד"
 
 msgid "advanced_removeformat_desc"
-msgstr "Opmaak verwijderen"
+msgstr "הסרת עיצוב"
 
 msgid "advanced_custom1_desc"
-msgstr "Uw eigen beschrijving hier"
+msgstr "התאור שלך כאו"
 
 msgid "advanced_forecolor_desc"
-msgstr "Tekstkleur"
+msgstr "בחירת צבע גופן"
 
 msgid "advanced_backcolor_desc"
-msgstr "Tekstmarkeringskleur"
+msgstr "בחירת צבע רקע"
 
 msgid "advanced_charmap_desc"
-msgstr "Symbool invoegen"
+msgstr "הוספת סימן"
 
 msgid "advanced_visualaid_desc"
-msgstr "Hulplijnen weergeven"
+msgstr "הצגה או הסתרה של סימוני עיצוב"
 
 msgid "advanced_anchor_desc"
-msgstr "Anker invoegen/bewerken"
+msgstr "הוספת/עריכת סימניה"
 
 msgid "advanced_cut_desc"
-msgstr "Knippen"
+msgstr "גזירה"
 
 msgid "advanced_copy_desc"
-msgstr "Kopiëren"
+msgstr "העתקה"
 
 msgid "advanced_paste_desc"
-msgstr "Plakken"
+msgstr "הדבקה"
 
 msgid "advanced_image_props_desc"
-msgstr "Afbeeldingseigenschappen"
+msgstr "מאפייני התמונה"
 
 msgid "advanced_newdocument_desc"
-msgstr "Nieuw document"
+msgstr "מסמך חדש"
 
 msgid "advanced_help_desc"
-msgstr "Help"
+msgstr "עזרה"
 
 msgid "advanced_blockquote_desc"
-msgstr "Citaat"
+msgstr "ציטוט"
 
 msgid "advanced_clipboard_msg"
-msgstr "Kopiëren/knippen/plakken is niet beschikbaar in Mozilla en Firefox.\nWilt u meer informatie over deze beperking?"
+msgstr "העתק/גזור/הדבק לא זמינים ב Mozilla וב-Firefox.\n      האם ברצונך לקבל מידע נוסף על הנושא?"
 
 msgid "advanced_path"
-msgstr "Pad"
+msgstr "path"
 
 msgid "advanced_newdocument"
-msgstr "Weet u zeker dat u alle inhoud wilt wissen?"
+msgstr "האם ברצונך למחוק את כל התוכן?"
 
 msgid "advanced_toolbar_focus"
-msgstr "Spring naar werkbalk - Alt+Q, Spring naar tekst - Alt-Z, Spring naar elementpad - Alt-X"
+msgstr "העברה לסרגל הכלים - Alt+Q, העברה למעבד תמלילים - Alt-Z, העברה לנתיב האלמטים - Alt-X"
 
 msgid "advanced_more_colors"
-msgstr "Meer kleuren"
+msgstr "עוד צבעים"
 
 msgid "advanced_image_delta_width"
 msgstr ""
@@ -298,166 +298,166 @@ msgid "advanced_anchor_delta_height"
 msgstr ""
 
 msgid "advanced_dlg_about_title"
-msgstr "Over TinyMCE"
+msgstr "אודות TinyMCE"
 
 msgid "advanced_dlg_about_general"
-msgstr "Info"
+msgstr "אודות"
 
 msgid "advanced_dlg_about_help"
-msgstr "Help"
+msgstr "עזרה"
 
 msgid "advanced_dlg_about_license"
-msgstr "Licentie"
+msgstr "רשיון"
 
 msgid "advanced_dlg_about_plugins"
-msgstr "Invoegtoepassingen"
+msgstr "תוספות"
 
 msgid "advanced_dlg_about_plugin"
-msgstr "Invoegtoepassing"
+msgstr "תוספת"
 
 msgid "advanced_dlg_about_author"
-msgstr "Auteur"
+msgstr "יוצר"
 
 msgid "advanced_dlg_about_version"
-msgstr "Versie"
+msgstr "גירסה"
 
 msgid "advanced_dlg_about_loaded"
-msgstr "Geladen Invoegtoepassingen"
+msgstr "תוספות פעילות"
 
 msgid "advanced_dlg_anchor_title"
-msgstr "Anker invoegen/bewerken"
+msgstr "הוספה/עריכת סימניה"
 
 msgid "advanced_dlg_anchor_name"
-msgstr "Ankernaam"
+msgstr "שם הסימניה"
 
 msgid "advanced_dlg_code_title"
-msgstr "HTML Bron"
+msgstr "עורך ה-HTML"
 
 msgid "advanced_dlg_code_wordwrap"
-msgstr "Automatische terugloop"
+msgstr "גלישת טקסט"
 
 msgid "advanced_dlg_colorpicker_title"
-msgstr "Kleuren"
+msgstr "בחירת צבע"
 
 msgid "advanced_dlg_colorpicker_picker_tab"
-msgstr "Alle kleuren"
+msgstr "בורר"
 
 msgid "advanced_dlg_colorpicker_picker_title"
-msgstr "Alle kleuren"
+msgstr "בורר הצבעים"
 
 msgid "advanced_dlg_colorpicker_palette_tab"
-msgstr "Palet"
+msgstr "לוח צבעים"
 
 msgid "advanced_dlg_colorpicker_palette_title"
-msgstr "Paletkleuren"
+msgstr "לוח צבעים"
 
 msgid "advanced_dlg_colorpicker_named_tab"
-msgstr "Benoemd"
+msgstr "צבעים בעלי שמות"
 
 msgid "advanced_dlg_colorpicker_named_title"
-msgstr "Benoemde kleuren"
+msgstr "צבעים בעלי שמות"
 
 msgid "advanced_dlg_colorpicker_color"
-msgstr "Kleur:"
+msgstr "צבע:"
 
 msgid "advanced_dlg_colorpicker_name"
-msgstr "Naam:"
+msgstr "שם:"
 
 msgid "advanced_dlg_charmap_title"
-msgstr "Symbolen"
+msgstr "בחירת סימן"
 
 msgid "advanced_dlg_image_title"
-msgstr "Afbeelding invoegen/bewerken"
+msgstr "הוספה/עריכת תמונה"
 
 msgid "advanced_dlg_image_src"
-msgstr "Bestand/URL"
+msgstr "כתובת:"
 
 msgid "advanced_dlg_image_alt"
-msgstr "Beschrijving"
+msgstr "תיאור"
 
 msgid "advanced_dlg_image_list"
-msgstr "Lijst"
+msgstr "רשימה"
 
 msgid "advanced_dlg_image_border"
-msgstr "Rand"
+msgstr "גבול"
 
 msgid "advanced_dlg_image_dimensions"
-msgstr "Afmetingen"
+msgstr "גודל"
 
 msgid "advanced_dlg_image_vspace"
-msgstr "Verticale ruimte"
+msgstr "רווח אנכי"
 
 msgid "advanced_dlg_image_hspace"
-msgstr "Horizontale ruimte"
+msgstr "רווח אופקי"
 
 msgid "advanced_dlg_image_align"
-msgstr "Uitlijning"
+msgstr "יישור"
 
 msgid "advanced_dlg_image_align_baseline"
-msgstr "Basislijn"
+msgstr "קו ההתחלה"
 
 msgid "advanced_dlg_image_align_top"
-msgstr "Boven"
+msgstr "קצה העליון"
 
 msgid "advanced_dlg_image_align_middle"
-msgstr "Midden"
+msgstr "אמצע"
 
 msgid "advanced_dlg_image_align_bottom"
-msgstr "Onder"
+msgstr "קצה התחתון"
 
 msgid "advanced_dlg_image_align_texttop"
-msgstr "Bovenkant tekst"
+msgstr "קצה העליון של הטקסט"
 
 msgid "advanced_dlg_image_align_textbottom"
-msgstr "Onderkant tekst"
+msgstr "קצה התחתון של הטקסט"
 
 msgid "advanced_dlg_image_align_left"
-msgstr "Links"
+msgstr "שמאל"
 
 msgid "advanced_dlg_image_align_right"
-msgstr "Rechts"
+msgstr "ימין"
 
 msgid "advanced_dlg_link_title"
-msgstr "Link invoegen/bewerken"
+msgstr "הוספה/עריכת קישור"
 
 msgid "advanced_dlg_link_url"
-msgstr "URL"
+msgstr "כתובת הקישור"
 
 msgid "advanced_dlg_link_target"
-msgstr "Doel"
+msgstr "יעד"
 
 msgid "advanced_dlg_link_target_same"
-msgstr "Link in hetzelfde venster openen"
+msgstr "פתח קישור באותו חלון"
 
 msgid "advanced_dlg_link_target_blank"
-msgstr "Link in een nieuw venster openen"
+msgstr "פתח קישור בחלון חדש"
 
 msgid "advanced_dlg_link_titlefield"
-msgstr "Titel"
+msgstr "כותרת"
 
 msgid "advanced_dlg_link_is_email"
-msgstr "De ingevoerde URL lijkt op een e-mailadres. Wilt u de vereiste mailto: tekst voorvoegen?"
+msgstr "כתובת ה-URL שהוכנסה היא ככל הנראה כתובת מייל האם ברצונך להוסיף את הקידומת MAILTO הנדרשת?"
 
 msgid "advanced_dlg_link_is_external"
-msgstr "De ingevoerde URL lijkt op een externe link. Wilt u de vereiste http:// tekst voorvoegen?"
+msgstr "כתובת ה-URL שהוכנסה היא ככל הנראה קישור חיצוני האם ברצונך להוסיף את הקידומת http:// הנדרשת?"
 
 msgid "advanced_dlg_link_list"
-msgstr "Link lijst"
+msgstr "רשימת קישורים"
 
 msgid "contextmenu_align"
-msgstr "Uitlijning"
+msgstr "יישור"
 
 msgid "contextmenu_left"
-msgstr "Links"
+msgstr "שמאל"
 
 msgid "contextmenu_center"
-msgstr "Centreren"
+msgstr "אמצע"
 
 msgid "contextmenu_right"
-msgstr "Rechts"
+msgstr "ימין"
 
 msgid "contextmenu_full"
-msgstr "Uitvullen"
+msgstr "שני הצדדים"
 
 msgid "insertdatetime_date_fmt"
 msgstr "%d-%m-%Y"
@@ -466,67 +466,67 @@ msgid "insertdatetime_time_fmt"
 msgstr "%H:%M:%S"
 
 msgid "insertdatetime_insertdate_desc"
-msgstr "Datum invoegen"
+msgstr "הוספת תאריך"
 
 msgid "insertdatetime_inserttime_desc"
-msgstr "Tijd invoegen"
+msgstr "הוספת זמן"
 
 msgid "insertdatetime_months_long"
-msgstr "Januari,Februari,Maart,April,Mei,Juni,Juli,Augustus,September,Oktober,November,December"
+msgstr "ינואר,פברואר,מרץ,אפריל,מאי,יונע,יולי,אוגוסט,ספטמבר,אוקטובר,נובמבר,דצמבר"
 
 msgid "insertdatetime_months_short"
-msgstr "Jan,Feb,Mar,Apr,Mei,Jun,Jul,Aug,Sep,Okt,Nov,Dec"
+msgstr "ינואר,פברואר,מרץ,אפריל,מאי,יונע,יולי,אוגוסט,ספטמבר,אוקטובר,נובמבר,דצמבר"
 
 msgid "insertdatetime_day_long"
-msgstr "Zondag,Maandag,Dinsdag,Woensdag,Donderdag,Vrijdag,Zaterdag,Zondag"
+msgstr "יום ראשון,יום שני,יום שלישי,יום רביעי,יום חמישי,יום שיש,יום שבת,יום ראשון"
 
 msgid "insertdatetime_day_short"
-msgstr "zo,ma,di,wo,do,vr,za,zo"
+msgstr "יום א',יום ב',יום ג',יום ד',יום ה',יום ו',שבת,יום א'"
 
 msgid "print_print_desc"
-msgstr "Afdrukken"
+msgstr "הדפסה"
 
 msgid "preview_preview_desc"
-msgstr "Voorbeeld"
+msgstr "תצוגה מקדימה"
 
 msgid "directionality_ltr_desc"
-msgstr "Van links naar rechts"
+msgstr "כיוון טקסט משמאל לימין"
 
 msgid "directionality_rtl_desc"
-msgstr "Van rechts naar links"
+msgstr "כיוון טקסט מימין לשמאל"
 
 msgid "layer_insertlayer_desc"
-msgstr "Nieuwe laag invoegen"
+msgstr "הוספת שכבה חדשה"
 
 msgid "layer_forward_desc"
-msgstr "Volgende laag"
+msgstr "העברה קדימה"
 
 msgid "layer_backward_desc"
-msgstr "Vorige laag"
+msgstr "העברה אחורה"
 
 msgid "layer_absolute_desc"
-msgstr "Absoluut positioneren inschakelen"
+msgstr "בחירת מיקום מוחלט"
 
 msgid "layer_content"
-msgstr "Nieuwe laag..."
+msgstr "שכבה חדשה..."
 
 msgid "save_save_desc"
-msgstr "Opslaan"
+msgstr "שמירה"
 
 msgid "save_cancel_desc"
-msgstr "Alle wijzigingen annuleren"
+msgstr "ביטול כל השינוים"
 
 msgid "nonbreaking_nonbreaking_desc"
-msgstr "Open ruimte invoegen"
+msgstr "הוספת רווח"
 
 msgid "iespell_iespell_desc"
-msgstr "Spellingcontrole"
+msgstr "בדיקת איות באנגלית"
 
 msgid "iespell_download"
-msgstr "ieSpell niet gevonden. Wilt u deze nu installeren?"
+msgstr " לא נמצא ieSpell. האם ברצונך להתקין?"
 
 msgid "advhr_advhr_desc"
-msgstr "Scheidingslijn"
+msgstr "קו אופקי"
 
 msgid "advhr_delta_width"
 msgstr ""
@@ -535,16 +535,16 @@ msgid "advhr_delta_height"
 msgstr ""
 
 msgid "advhr_dlg_width"
-msgstr "Breedte"
+msgstr "רוחב"
 
 msgid "advhr_dlg_size"
-msgstr "Hoogte"
+msgstr "גובה"
 
 msgid "advhr_dlg_noshade"
-msgstr "Geen schaduw"
+msgstr "ללא צל"
 
 msgid "emotions_emotions_desc"
-msgstr "Emoties"
+msgstr "סמיילים"
 
 msgid "emotions_delta_width"
 msgstr ""
@@ -553,64 +553,64 @@ msgid "emotions_delta_height"
 msgstr ""
 
 msgid "emotions_dlg_title"
-msgstr "Emotie invoegen"
+msgstr "הוספת סמיילי"
 
 msgid "emotions_dlg_desc"
-msgstr "Emoties"
+msgstr "סמיילים"
 
 msgid "emotions_dlg_cool"
-msgstr "Stoer"
+msgstr "מגניב"
 
 msgid "emotions_dlg_cry"
-msgstr "Huilen"
+msgstr "בוכה"
 
 msgid "emotions_dlg_embarassed"
-msgstr "Schamen"
+msgstr "נבוך"
 
 msgid "emotions_dlg_foot_in_mouth"
-msgstr "Verstomd"
+msgstr "רגל בפה"
 
 msgid "emotions_dlg_frown"
-msgstr "Wenkbrauw ophalen"
+msgstr "מזעיף את הפה"
 
 msgid "emotions_dlg_innocent"
-msgstr "Onschuldig"
+msgstr "תמים"
 
 msgid "emotions_dlg_kiss"
-msgstr "Zoenen"
+msgstr "נשיקה"
 
 msgid "emotions_dlg_laughing"
-msgstr "Lachen"
+msgstr "צוחק"
 
 msgid "emotions_dlg_money_mouth"
-msgstr "Hebberig"
+msgstr "כסף"
 
 msgid "emotions_dlg_sealed"
-msgstr "Afgesloten"
+msgstr "אטום"
 
 msgid "emotions_dlg_smile"
-msgstr "Lachen"
+msgstr "חיוך"
 
 msgid "emotions_dlg_surprised"
-msgstr "Verrast"
+msgstr "מופתע"
 
 msgid "emotions_dlg_tongue_out"
-msgstr "Tong uitsteken"
+msgstr "לשון בחוץ"
 
 msgid "emotions_dlg_undecided"
-msgstr "Onbeslist"
+msgstr "הסנני"
 
 msgid "emotions_dlg_wink"
-msgstr "Knipogen"
+msgstr "קריצה"
 
 msgid "emotions_dlg_yell"
-msgstr "Roepen"
+msgstr "צעקה"
 
 msgid "searchreplace_search_desc"
-msgstr "Zoeken"
+msgstr "חיפוש"
 
 msgid "searchreplace_replace_desc"
-msgstr "Zoeken/Vervangen"
+msgstr "החלפה"
 
 msgid "searchreplace_delta_width"
 msgstr ""
@@ -619,49 +619,49 @@ msgid "searchreplace_delta_height"
 msgstr ""
 
 msgid "searchreplace_dlg_searchnext_desc"
-msgstr "Opnieuw zoeken"
+msgstr "חיפוש הבא"
 
 msgid "searchreplace_dlg_notfound"
-msgstr "Het doorzoeken is voltooid. De zoekterm kon niet meer worden gevonden."
+msgstr "החיפוש הסתיים. פריט החיפוש לא נמצא."
 
 msgid "searchreplace_dlg_search_title"
-msgstr "Zoeken"
+msgstr "חיפוש"
 
 msgid "searchreplace_dlg_replace_title"
-msgstr "Zoeken/Vervangen"
+msgstr "חיפוש והחלפה"
 
 msgid "searchreplace_dlg_allreplaced"
-msgstr "Alle instanties van de zoekterm zijn vervangen."
+msgstr "כל פריטי החיפוש הוחלפו"
 
 msgid "searchreplace_dlg_findwhat"
-msgstr "Zoeken naar"
+msgstr "לחפש את"
 
 msgid "searchreplace_dlg_replacewith"
-msgstr "Vervangen door"
+msgstr "להחליף ב"
 
 msgid "searchreplace_dlg_direction"
-msgstr "Richting"
+msgstr "כיוון"
 
 msgid "searchreplace_dlg_up"
-msgstr "Omhoog"
+msgstr "למעלה"
 
 msgid "searchreplace_dlg_down"
-msgstr "Omlaag"
+msgstr "למטה"
 
 msgid "searchreplace_dlg_mcase"
-msgstr "Identieke hoofdletters/kleine letters"
+msgstr "התאם אותיות רישיות"
 
 msgid "searchreplace_dlg_findnext"
-msgstr "Zoeken"
+msgstr "חפש את הבא"
 
 msgid "searchreplace_dlg_replace"
-msgstr "Vervangen"
+msgstr "החלפה"
 
 msgid "searchreplace_dlg_replaceall"
-msgstr "Alles verv."
+msgstr "החלפת הכל"
 
 msgid "advimage_image_desc"
-msgstr "Afbeelding invoegen/bewerken"
+msgstr "הוספה/עריכת תמונה"
 
 msgid "advimage_delta_width"
 msgstr ""
@@ -670,130 +670,130 @@ msgid "advimage_delta_height"
 msgstr ""
 
 msgid "advimage_dlg_tab_general"
-msgstr "Algemeen"
+msgstr "כללי"
 
 msgid "advimage_dlg_tab_appearance"
-msgstr "Weergave"
+msgstr "מראה"
 
 msgid "advimage_dlg_tab_advanced"
-msgstr "Geavanceerd"
+msgstr "מתקדם"
 
 msgid "advimage_dlg_general"
-msgstr "Algemeen"
+msgstr "כללי"
 
 msgid "advimage_dlg_title"
-msgstr "Titel"
+msgstr "כותרת"
 
 msgid "advimage_dlg_preview"
-msgstr "Voorbeeld"
+msgstr "תצוגה מקדימה"
 
 msgid "advimage_dlg_constrain_proportions"
-msgstr "Verhouding behouden"
+msgstr "שמירה על פרופורציות"
 
 msgid "advimage_dlg_langdir"
-msgstr "Taalrichting"
+msgstr "כיוון השפה"
 
 msgid "advimage_dlg_langcode"
-msgstr "Taalcode"
+msgstr "קוד השפה"
 
 msgid "advimage_dlg_long_desc"
-msgstr "Uitgebreide beschrijving"
+msgstr "תיאור קישור ארוך"
 
 msgid "advimage_dlg_style"
-msgstr "Stijl"
+msgstr "סגנון"
 
 msgid "advimage_dlg_classes"
-msgstr "Klasses"
+msgstr "Classes"
 
 msgid "advimage_dlg_ltr"
-msgstr "Van links naar rechts"
+msgstr "משמאל לימין"
 
 msgid "advimage_dlg_rtl"
-msgstr "Van rechts naar links"
+msgstr "מימין לשמאל"
 
 msgid "advimage_dlg_id"
 msgstr "Id"
 
 msgid "advimage_dlg_map"
-msgstr "Afbeeldingsplattegrond"
+msgstr "Image map"
 
 msgid "advimage_dlg_swap_image"
-msgstr "Afbeelding wisselen"
+msgstr "החלפת תמונה"
 
 msgid "advimage_dlg_alt_image"
-msgstr "Alternatieve afbeeldingen"
+msgstr "תמונה חליפית"
 
 msgid "advimage_dlg_mouseover"
-msgstr "Bij muis over"
+msgstr "בעת מעבר הסמן על התמונה"
 
 msgid "advimage_dlg_mouseout"
-msgstr "Bij muis uit"
+msgstr "הסמן עבר את התמונה"
 
 msgid "advimage_dlg_misc"
-msgstr "Diversen"
+msgstr "שונות"
 
 msgid "advimage_dlg_example_img"
-msgstr "Voorbeeldweergave"
+msgstr "תצוגה מקדימה של התמונה"
 
 msgid "advimage_dlg_missing_alt"
-msgstr "Wilt u de afbeelding zonder beschrijving invoegen? De afbeelding wordt dan mogelijk niet opgemerkt door mensen met een visuele handicap, of welke zonder afbeeldingen browsen."
+msgstr "להמשיך מבלי להוסיף תיאור לתמונה?"
 
 msgid "advimage_dlg_dialog_title"
-msgstr "Afbeelding invoegen/bewerken"
+msgstr "הוספה/עריכת תמונה"
 
 msgid "advimage_dlg_src"
-msgstr "Bestand/URL"
+msgstr "URL של התמונה"
 
 msgid "advimage_dlg_alt"
-msgstr "Beschrijving"
+msgstr "תיאור התמונה"
 
 msgid "advimage_dlg_list"
-msgstr "Lijst"
+msgstr "רשימת תמונות"
 
 msgid "advimage_dlg_border"
-msgstr "Rand"
+msgstr "גבול"
 
 msgid "advimage_dlg_dimensions"
-msgstr "Afmetingen"
+msgstr "מימדים"
 
 msgid "advimage_dlg_vspace"
-msgstr "Verticale ruimte"
+msgstr "קו אנכי"
 
 msgid "advimage_dlg_hspace"
-msgstr "Horizontale ruimte"
+msgstr "קו אופקי"
 
 msgid "advimage_dlg_align"
-msgstr "Uitlijning"
+msgstr "ישור"
 
 msgid "advimage_dlg_align_baseline"
-msgstr "Basislijn"
+msgstr "קו בסיסי"
 
 msgid "advimage_dlg_align_top"
-msgstr "Boven"
+msgstr "עליון"
 
 msgid "advimage_dlg_align_middle"
-msgstr "Midden"
+msgstr "אמצע"
 
 msgid "advimage_dlg_align_bottom"
-msgstr "Onder"
+msgstr "תחתית"
 
 msgid "advimage_dlg_align_texttop"
-msgstr "Bovenkant tekst"
+msgstr "טקסט עליון"
 
 msgid "advimage_dlg_align_textbottom"
-msgstr "Onderkant tekst"
+msgstr "טקסט תחתון"
 
 msgid "advimage_dlg_align_left"
-msgstr "Links"
+msgstr "לשמאל"
 
 msgid "advimage_dlg_align_right"
-msgstr "Rechts"
+msgstr "Right"
 
 msgid "advimage_dlg_image_list"
-msgstr "Lijst"
+msgstr "רשימת תמונות"
 
 msgid "advlink_link_desc"
-msgstr "Link invoegen/bewerken"
+msgstr "הוספת/עריכת קישור"
 
 msgid "advlink_delta_width"
 msgstr ""
@@ -802,172 +802,172 @@ msgid "advlink_delta_height"
 msgstr ""
 
 msgid "advlink_dlg_title"
-msgstr "Link invoegen/bewerken"
+msgstr "הוספה/עריכת קישור"
 
 msgid "advlink_dlg_url"
-msgstr "URL"
+msgstr "כתובת הקישור"
 
 msgid "advlink_dlg_target"
-msgstr "Doel"
+msgstr "יעד"
 
 msgid "advlink_dlg_titlefield"
-msgstr "Titel"
+msgstr "כותרת הקישור"
 
 msgid "advlink_dlg_is_email"
-msgstr "De ingevoerde URL lijkt op een e-mailadres. Wilt u de vereiste mailto: tekst voorvoegen?"
+msgstr "כתובת ה-URL שהוכנסה היא ככל הנראה כתובת מייל האם ברצונך להוסיף את הקידומת MAILTO הנדרשת?"
 
 msgid "advlink_dlg_is_external"
-msgstr "De ingevoerde URL lijkt op een externe link. Wilt u de vereiste http:// tekst voorvoegen?"
+msgstr "כתובת ה-URL שהוכנסה היא ככל הנראה קישור חיצוני האם ברצונך להוסיף את הקידומת http:// הנדרשת?"
 
 msgid "advlink_dlg_list"
-msgstr "Lijst"
+msgstr "רשימת קישורים"
 
 msgid "advlink_dlg_general_tab"
-msgstr "Algemeen"
+msgstr "כללי"
 
 msgid "advlink_dlg_popup_tab"
-msgstr "Popup"
+msgstr "חלון מוקפץ"
 
 msgid "advlink_dlg_events_tab"
-msgstr "Gebeurtenissen"
+msgstr "ארועים"
 
 msgid "advlink_dlg_advanced_tab"
-msgstr "Geavanceerd"
+msgstr "מתקדם"
 
 msgid "advlink_dlg_general_props"
-msgstr "Algemene eigenschappen"
+msgstr "תכונות כלליות"
 
 msgid "advlink_dlg_popup_props"
-msgstr "Popup eigenschappen"
+msgstr "תכונות חלון מוקפץ"
 
 msgid "advlink_dlg_event_props"
-msgstr "Gebeurtenissen"
+msgstr "מאורעות"
 
 msgid "advlink_dlg_advanced_props"
-msgstr "Geavanceerde eigenschappen"
+msgstr "תכונות מתקדמות"
 
 msgid "advlink_dlg_popup_opts"
-msgstr "Opties"
+msgstr "אפשרויות"
 
 msgid "advlink_dlg_anchor_names"
-msgstr "Ankers"
+msgstr "קישור לסימניה"
 
 msgid "advlink_dlg_target_same"
-msgstr "In dit venster / frame openen"
+msgstr "פתיחה בחלון חדש/חלון בן"
 
 msgid "advlink_dlg_target_parent"
-msgstr "In bovenliggend venster / frame openen"
+msgstr "פתיחה בלון האבא/חלון בן"
 
 msgid "advlink_dlg_target_top"
-msgstr "In bovenste frame openen (vervangt gehele pagina)"
+msgstr "פתיחה בחלון הבן הראשי(מחליף את כל חלונות הבנים)"
 
 msgid "advlink_dlg_target_blank"
-msgstr "In nieuw venster openen"
+msgstr "פתיחה בחלון חדש"
 
 msgid "advlink_dlg_popup"
-msgstr "Javascript popup"
+msgstr "חלון מוקפץ javascript"
 
 msgid "advlink_dlg_popup_url"
-msgstr "Popup URL"
+msgstr "חלון מוקפץ URL"
 
 msgid "advlink_dlg_popup_name"
-msgstr "Venstertitel"
+msgstr "שם החלון"
 
 msgid "advlink_dlg_popup_return"
-msgstr "'return false' invoegen"
+msgstr "יש להכניס 'return false'"
 
 msgid "advlink_dlg_popup_scrollbars"
-msgstr "Scrollbalken weergeven"
+msgstr "הצגת פס גלילה"
 
 msgid "advlink_dlg_popup_statusbar"
-msgstr "Statusbalk weergeven"
+msgstr "הצגת שורת סטאטוס"
 
 msgid "advlink_dlg_popup_toolbar"
-msgstr "Werkbalk weergeven"
+msgstr "הצגת סרגלי כלים"
 
 msgid "advlink_dlg_popup_menubar"
-msgstr "Menubalk weergeven"
+msgstr "הצגת תפריט"
 
 msgid "advlink_dlg_popup_location"
-msgstr "Lokatiebalk weergeven"
+msgstr "הצגת location bar "
 
 msgid "advlink_dlg_popup_resizable"
-msgstr "Aanpasbaar venster"
+msgstr "חלון דינאמי(resizable)"
 
 msgid "advlink_dlg_popup_dependent"
-msgstr "Afhankelijk (Alleen Mozilla/Firefox)"
+msgstr "Dependent (Mozilla/Firefox only)"
 
 msgid "advlink_dlg_popup_size"
-msgstr "Grootte"
+msgstr "גודל"
 
 msgid "advlink_dlg_popup_position"
-msgstr "Positie (X/Y)"
+msgstr "מיקום (X/Y)"
 
 msgid "advlink_dlg_id"
-msgstr "Id"
+msgstr "מספר סידורי"
 
 msgid "advlink_dlg_style"
-msgstr "Stijl"
+msgstr "סגנון"
 
 msgid "advlink_dlg_classes"
-msgstr "Klassen"
+msgstr "Classes"
 
 msgid "advlink_dlg_target_name"
-msgstr "Doel"
+msgstr "Target name"
 
 msgid "advlink_dlg_langdir"
-msgstr "Taalrichting"
+msgstr "כיוון השפה"
 
 msgid "advlink_dlg_target_langcode"
-msgstr "Taal"
+msgstr "Target language"
 
 msgid "advlink_dlg_langcode"
-msgstr "Taalcode"
+msgstr "קוד השפה"
 
 msgid "advlink_dlg_encoding"
-msgstr "Taalcodering"
+msgstr "Target character encoding"
 
 msgid "advlink_dlg_mime"
-msgstr "MIME type"
+msgstr "Target MIME type"
 
 msgid "advlink_dlg_rel"
-msgstr "Relatie van pagina tot doel"
+msgstr "Relationship page to target"
 
 msgid "advlink_dlg_rev"
-msgstr "Relatie van doel tot pagina"
+msgstr "Relationship target to page"
 
 msgid "advlink_dlg_tabindex"
-msgstr "Tabvolgorde"
+msgstr "Tabindex"
 
 msgid "advlink_dlg_accesskey"
-msgstr "Toegangstoets"
+msgstr "Accesskey"
 
 msgid "advlink_dlg_ltr"
-msgstr "Van links naar rechts"
+msgstr "משמאל לימין"
 
 msgid "advlink_dlg_rtl"
-msgstr "Van rechts naar links"
+msgstr "מימין לשמאל"
 
 msgid "advlink_dlg_link_list"
-msgstr "Lijst"
+msgstr "Link list"
 
 msgid "xhtmlxtras_cite_desc"
-msgstr "Citaat"
+msgstr "Citation"
 
 msgid "xhtmlxtras_abbr_desc"
-msgstr "Afkorting"
+msgstr "Abbreviation"
 
 msgid "xhtmlxtras_acronym_desc"
-msgstr "Synoniem"
+msgstr "Acronym"
 
 msgid "xhtmlxtras_del_desc"
-msgstr "Verwijderd"
+msgstr "Deletion"
 
 msgid "xhtmlxtras_ins_desc"
-msgstr "Ingevoegd"
+msgstr "Insertion"
 
 msgid "xhtmlxtras_attribs_desc"
-msgstr "Attributen invoegen/bewerken"
+msgstr "Insert/Edit Attributes"
 
 msgid "xhtmlxtras_cite_delta_width"
 msgstr ""
@@ -1006,97 +1006,97 @@ msgid "xhtmlxtras_attribs_delta_height"
 msgstr ""
 
 msgid "xhtmlxtras_dlg_attribute_label_title"
-msgstr "Titel"
+msgstr "כותרת"
 
 msgid "xhtmlxtras_dlg_attribute_label_id"
 msgstr "ID"
 
 msgid "xhtmlxtras_dlg_attribute_label_class"
-msgstr "Klasse"
+msgstr "Class"
 
 msgid "xhtmlxtras_dlg_attribute_label_style"
-msgstr "Stijl"
+msgstr "Style"
 
 msgid "xhtmlxtras_dlg_attribute_label_cite"
-msgstr "Citaat"
+msgstr "ציטוט"
 
 msgid "xhtmlxtras_dlg_attribute_label_datetime"
-msgstr "Datum/Tijd"
+msgstr "תאריך/זמן"
 
 msgid "xhtmlxtras_dlg_attribute_label_langdir"
-msgstr "Tekstrichting"
+msgstr "כיוון הטקסט"
 
 msgid "xhtmlxtras_dlg_attribute_option_ltr"
-msgstr "Van links naar rechts"
+msgstr "משמאל לימין"
 
 msgid "xhtmlxtras_dlg_attribute_option_rtl"
-msgstr "Van rechts naar links"
+msgstr "מימין לשמאל"
 
 msgid "xhtmlxtras_dlg_attribute_label_langcode"
-msgstr "Taal"
+msgstr "שפה"
 
 msgid "xhtmlxtras_dlg_attribute_label_tabindex"
-msgstr "Tabvolgorde"
+msgstr "TabIndex"
 
 msgid "xhtmlxtras_dlg_attribute_label_accesskey"
-msgstr "Toegangstoets"
+msgstr "AccessKey"
 
 msgid "xhtmlxtras_dlg_attribute_events_tab"
-msgstr "Gebeurtenissen"
+msgstr "אירועים"
 
 msgid "xhtmlxtras_dlg_attribute_attrib_tab"
-msgstr "Attributen"
+msgstr "תכונות"
 
 msgid "xhtmlxtras_dlg_general_tab"
-msgstr "Algemeen"
+msgstr "כללי"
 
 msgid "xhtmlxtras_dlg_attrib_tab"
-msgstr "Attributen"
+msgstr "תכונות"
 
 msgid "xhtmlxtras_dlg_events_tab"
-msgstr "Gebeurtenissen"
+msgstr "אירועים"
 
 msgid "xhtmlxtras_dlg_fieldset_general_tab"
-msgstr "Algemene instellingen"
+msgstr "הגדרות כלליות"
 
 msgid "xhtmlxtras_dlg_fieldset_attrib_tab"
-msgstr "Elementattributen"
+msgstr " תכונות האלמנט"
 
 msgid "xhtmlxtras_dlg_fieldset_events_tab"
-msgstr "Element Gebeurtenissen"
+msgstr "אירועי האלמנט"
 
 msgid "xhtmlxtras_dlg_title_ins_element"
-msgstr "Invoegingselement"
+msgstr "הכנסת אלמנט"
 
 msgid "xhtmlxtras_dlg_title_del_element"
-msgstr "Verwijderingselement"
+msgstr "מחיקת אלמנט"
 
 msgid "xhtmlxtras_dlg_title_acronym_element"
-msgstr "Synoniem"
+msgstr "ראשי תיבות האלמנט"
 
 msgid "xhtmlxtras_dlg_title_abbr_element"
-msgstr "Afkorting"
+msgstr "קיצור אלמנט"
 
 msgid "xhtmlxtras_dlg_title_cite_element"
-msgstr "Citaat"
+msgstr "ציטוט אלמנט"
 
 msgid "xhtmlxtras_dlg_remove"
-msgstr "Verwijderen"
+msgstr "הסר"
 
 msgid "xhtmlxtras_dlg_insert_date"
-msgstr "Huidige datum/tijd invoegen"
+msgstr "הכנסת זמן/תאריך נוכחי"
 
 msgid "xhtmlxtras_dlg_option_ltr"
-msgstr "Van links naar rechts"
+msgstr "משמאל לימין"
 
 msgid "xhtmlxtras_dlg_option_rtl"
-msgstr "Van rechts naar links"
+msgstr "מימין לשמאל"
 
 msgid "xhtmlxtras_dlg_attribs_title"
-msgstr "Attributen Invoegen/bewerken"
+msgstr "הכנסת/עדכון תכונות"
 
 msgid "style_desc"
-msgstr "CSS Stijl bewerken"
+msgstr "עדכון הגדרות CSS"
 
 msgid "style_delta_width"
 msgstr ""
@@ -1105,265 +1105,265 @@ msgid "style_delta_height"
 msgstr ""
 
 msgid "style_dlg_title"
-msgstr "CSS Stijl bewerken"
+msgstr "עדכון הגדרות CSS"
 
 msgid "style_dlg_apply"
-msgstr "Toepassen"
+msgstr "החל"
 
 msgid "style_dlg_text_tab"
-msgstr "Tekst"
+msgstr "Text"
 
 msgid "style_dlg_background_tab"
-msgstr "Achtergrond"
+msgstr "רקע"
 
 msgid "style_dlg_block_tab"
-msgstr "Blok"
+msgstr "חסום"
 
 msgid "style_dlg_box_tab"
-msgstr "Box"
+msgstr "קופסא"
 
 msgid "style_dlg_border_tab"
-msgstr "Rand"
+msgstr "גבול"
 
 msgid "style_dlg_list_tab"
-msgstr "Lijst"
+msgstr "רשימה"
 
 msgid "style_dlg_positioning_tab"
-msgstr "Positionering"
+msgstr "מיקום"
 
 msgid "style_dlg_text_props"
-msgstr "Tekst"
+msgstr "Text"
 
 msgid "style_dlg_text_font"
-msgstr "Lettertype"
+msgstr "פונט"
 
 msgid "style_dlg_text_size"
-msgstr "Tekengrootte"
+msgstr "גודל"
 
 msgid "style_dlg_text_weight"
-msgstr "Gewicht"
+msgstr "Weight"
 
 msgid "style_dlg_text_style"
-msgstr "Stijl"
+msgstr "סגנון"
 
 msgid "style_dlg_text_variant"
 msgstr "Variant"
 
 msgid "style_dlg_text_lineheight"
-msgstr "Lijnhoogte"
+msgstr "גובה שורה"
 
 msgid "style_dlg_text_case"
-msgstr "Hoofdlettergebruik"
+msgstr "Case"
 
 msgid "style_dlg_text_color"
-msgstr "Kleur"
+msgstr "צבע"
 
 msgid "style_dlg_text_decoration"
-msgstr "Decoratie"
+msgstr "עיצוב"
 
 msgid "style_dlg_text_overline"
-msgstr "Overhalen"
+msgstr "שורה מעל"
 
 msgid "style_dlg_text_underline"
-msgstr "Onderstrepen"
+msgstr "שורה מתחת"
 
 msgid "style_dlg_text_striketrough"
-msgstr "Doorhalen"
+msgstr "strikethrough"
 
 msgid "style_dlg_text_blink"
-msgstr "Knipperen"
+msgstr "blink"
 
 msgid "style_dlg_text_none"
-msgstr "Niets"
+msgstr "none"
 
 msgid "style_dlg_background_color"
-msgstr "Achtergrondkleur"
+msgstr "צבע רקע"
 
 msgid "style_dlg_background_image"
-msgstr "Achtergrondafbeelding"
+msgstr "תמונת רקע"
 
 msgid "style_dlg_background_repeat"
-msgstr "Herhalen"
+msgstr "חזור"
 
 msgid "style_dlg_background_attachment"
-msgstr "Bijlage"
+msgstr "קבצים מצורפים"
 
 msgid "style_dlg_background_hpos"
-msgstr "Horizontale positie"
+msgstr "מיקום אופקי"
 
 msgid "style_dlg_background_vpos"
-msgstr "Verticale positie"
+msgstr "מיקום רוחבי"
 
 msgid "style_dlg_block_wordspacing"
-msgstr "Woordruimte"
+msgstr "מרחק בין מילים"
 
 msgid "style_dlg_block_letterspacing"
-msgstr "Letterruimte"
+msgstr "מרחק בין אותיות"
 
 msgid "style_dlg_block_vertical_alignment"
-msgstr "Verticale uitlijning"
+msgstr "Vertical alignment"
 
 msgid "style_dlg_block_text_align"
-msgstr "Tekstuitlijning"
+msgstr "מיקום טקסט"
 
 msgid "style_dlg_block_text_indent"
-msgstr "Inspringen"
+msgstr "Text indent"
 
 msgid "style_dlg_block_whitespace"
-msgstr "Witruimte"
+msgstr "Whitespace"
 
 msgid "style_dlg_block_display"
-msgstr "Weergave"
+msgstr "הצג"
 
 msgid "style_dlg_box_width"
-msgstr "Breedte"
+msgstr "רוחב"
 
 msgid "style_dlg_box_height"
-msgstr "Hoogte"
+msgstr "גובה"
 
 msgid "style_dlg_box_float"
-msgstr "Zweven"
+msgstr "Float"
 
 msgid "style_dlg_box_clear"
-msgstr "Vrijhouden"
+msgstr "נקה"
 
 msgid "style_dlg_padding"
-msgstr "Opening"
+msgstr "Padding"
 
 msgid "style_dlg_same"
-msgstr "Alles hetzelfde"
+msgstr "אותו דבר עבור כולם"
 
 msgid "style_dlg_top"
-msgstr "Boven"
+msgstr "עליון"
 
 msgid "style_dlg_right"
-msgstr "Rechts"
+msgstr "ימין"
 
 msgid "style_dlg_bottom"
-msgstr "Onder"
+msgstr "תחתית"
 
 msgid "style_dlg_left"
-msgstr "Links"
+msgstr "שמאל"
 
 msgid "style_dlg_margin"
-msgstr "Marge"
+msgstr "Margin"
 
 msgid "style_dlg_style"
-msgstr "Stijl"
+msgstr "סגנון"
 
 msgid "style_dlg_width"
-msgstr "Breedte"
+msgstr "רוחב"
 
 msgid "style_dlg_height"
-msgstr "Hoogte"
+msgstr "גובה"
 
 msgid "style_dlg_color"
-msgstr "Kleur"
+msgstr "צבע"
 
 msgid "style_dlg_list_type"
-msgstr "Type"
+msgstr "סוג"
 
 msgid "style_dlg_bullet_image"
-msgstr "Opsommingsteken"
+msgstr "Bullet image"
 
 msgid "style_dlg_position"
-msgstr "Positie"
+msgstr "מיקום"
 
 msgid "style_dlg_positioning_type"
-msgstr "Type"
+msgstr "סוג"
 
 msgid "style_dlg_visibility"
-msgstr "Zichtbaarheid"
+msgstr "Visibility"
 
 msgid "style_dlg_zindex"
 msgstr "Z-index"
 
 msgid "style_dlg_overflow"
-msgstr "Overvloeien"
+msgstr "Overflow"
 
 msgid "style_dlg_placement"
-msgstr "Plaatsing"
+msgstr "מיקום"
 
 msgid "style_dlg_clip"
-msgstr "Clip"
+msgstr "קליפ"
 
 msgid "paste_paste_text_desc"
-msgstr "Als platte tekst plakken"
+msgstr "הדבקה כטקסט בלבד"
 
 msgid "paste_paste_word_desc"
-msgstr "Vanuit Word plakken"
+msgstr "הדבקה מ-WORD"
 
 msgid "paste_selectall_desc"
-msgstr "Alles selecteren"
+msgstr "בחר הכל"
 
 msgid "paste_dlg_text_title"
-msgstr "Gebruik Ctrl+V om tekst in het venster te plakken."
+msgstr "הדביקו בחלון זה את הטקסט באמצעות המקשים CTRL+V."
 
 msgid "paste_dlg_text_linebreaks"
-msgstr "Regelafbreking bewaren"
+msgstr "השאר את שורות הרווח"
 
 msgid "paste_dlg_word_title"
-msgstr "Gebruik Ctrl+V om tekst in het venster te plakken."
+msgstr "הדביקו בחלון זה את הטקסט באמצעות המקשים CTRL+V."
 
 msgid "table_desc"
-msgstr "Nieuwe tabel invoegen"
+msgstr "הכנסת טבלה חדשה"
 
 msgid "table_row_before_desc"
-msgstr "Rij boven invoegen"
+msgstr "הכנסת שורה מעל"
 
 msgid "table_row_after_desc"
-msgstr "Rij onder invoegen"
+msgstr "הכנסת שורה מתחת"
 
 msgid "table_delete_row_desc"
-msgstr "Rij verwijderen"
+msgstr "מחיקת שורה"
 
 msgid "table_col_before_desc"
-msgstr "Kolom links invoegen"
+msgstr "הכנסת עמודה מימין"
 
 msgid "table_col_after_desc"
-msgstr "Kolom rechts invoegen"
+msgstr "הכנסת עמודה משמאל"
 
 msgid "table_delete_col_desc"
-msgstr "Kolom verwijderen"
+msgstr "הסרת עמודה"
 
 msgid "table_split_cells_desc"
-msgstr "Cellen splitsen"
+msgstr "פיצול תאים בטבלה"
 
 msgid "table_merge_cells_desc"
-msgstr "Cellen samenvoegen"
+msgstr "איחוד תאים בטבלה"
 
 msgid "table_row_desc"
-msgstr "Rij-eigenschappen"
+msgstr "תכונות שורה בטבלה"
 
 msgid "table_cell_desc"
-msgstr "Cel-eigenschappen"
+msgstr "תכונות תא בטבלה"
 
 msgid "table_props_desc"
-msgstr "Tabeleigenschappen"
+msgstr "תכונות הטבלה"
 
 msgid "table_paste_row_before_desc"
-msgstr "Rij boven plakken"
+msgstr "הדבקת שורה בטבלה לפני"
 
 msgid "table_paste_row_after_desc"
-msgstr "Rij onder plakken"
+msgstr "הדבקת שורה בטבלה אחרי"
 
 msgid "table_cut_row_desc"
-msgstr "Rij knippen"
+msgstr "גזירת שורה בטבלה"
 
 msgid "table_copy_row_desc"
-msgstr "Rij kopiëren"
+msgstr "העתקת שורה בטבלה"
 
 msgid "table_del"
-msgstr "Tabel verwijderen"
+msgstr "מחיקת טבלה"
 
 msgid "table_row"
-msgstr "Rij"
+msgstr "שורה"
 
 msgid "table_col"
-msgstr "Kolom"
+msgstr "עמודה"
 
 msgid "table_cell"
-msgstr "Cel"
+msgstr "תא"
 
 msgid "table_rowprops_delta_width"
 msgstr ""
@@ -1390,232 +1390,232 @@ msgid "table_merge_cells_delta_height"
 msgstr ""
 
 msgid "table_dlg_general_tab"
-msgstr "Algemeen"
+msgstr "כללי"
 
 msgid "table_dlg_advanced_tab"
-msgstr "Geavanceerd"
+msgstr "מתקדם"
 
 msgid "table_dlg_general_props"
-msgstr "Algemene eigenschappen"
+msgstr "תכונות כלליות"
 
 msgid "table_dlg_advanced_props"
-msgstr "Geavanceerde eigenschappen"
+msgstr "תכונות מתקדמות"
 
 msgid "table_dlg_rowtype"
-msgstr "Rijtype"
+msgstr "סוג השורה בטבלה"
 
 msgid "table_dlg_title"
-msgstr "Tabel invoegen/bewerken"
+msgstr "הוספת/עריכת טבלה"
 
 msgid "table_dlg_width"
-msgstr "Breedte"
+msgstr "רוחב"
 
 msgid "table_dlg_height"
-msgstr "Hoogte"
+msgstr "גובה"
 
 msgid "table_dlg_cols"
-msgstr "Kolommen"
+msgstr "עמודות"
 
 msgid "table_dlg_rows"
-msgstr "Rijen"
+msgstr "שורות"
 
 msgid "table_dlg_cellspacing"
-msgstr "Ruimte om cel"
+msgstr "Cellspacing"
 
 msgid "table_dlg_cellpadding"
-msgstr "Ruimte in cel"
+msgstr "Cellpadding"
 
 msgid "table_dlg_border"
-msgstr "Rand"
+msgstr "גבול"
 
 msgid "table_dlg_align"
-msgstr "Uitlijning"
+msgstr "ישור אופקי"
 
 msgid "table_dlg_align_default"
-msgstr "Standaard"
+msgstr "Default"
 
 msgid "table_dlg_align_left"
-msgstr "Links"
+msgstr "לשמאל"
 
 msgid "table_dlg_align_right"
-msgstr "Rechts"
+msgstr "לימין"
 
 msgid "table_dlg_align_middle"
-msgstr "Centreren"
+msgstr "אמצע"
 
 msgid "table_dlg_row_title"
-msgstr "Rij-eigenschappen"
+msgstr "תכונות שורה בטבלה"
 
 msgid "table_dlg_cell_title"
-msgstr "Celeigenschappen"
+msgstr "תכונות תא בטבלה"
 
 msgid "table_dlg_cell_type"
-msgstr "Celtype"
+msgstr "סגנון התא"
 
 msgid "table_dlg_valign"
-msgstr "Verticale uitlijning"
+msgstr "ישור אנכי"
 
 msgid "table_dlg_align_top"
-msgstr "Boven"
+msgstr "עליון"
 
 msgid "table_dlg_align_bottom"
-msgstr "Onder"
+msgstr "תחתית"
 
 msgid "table_dlg_bordercolor"
-msgstr "Randkleur"
+msgstr "צבע הגבול"
 
 msgid "table_dlg_bgcolor"
-msgstr "Achtergrondkleur"
+msgstr "צבע הרקע"
 
 msgid "table_dlg_merge_cells_title"
-msgstr "Cellen samenvoegen"
+msgstr "אחד תאים בטבלה"
 
 msgid "table_dlg_id"
 msgstr "Id"
 
 msgid "table_dlg_style"
-msgstr "Stijl"
+msgstr "Style"
 
 msgid "table_dlg_langdir"
-msgstr "Taalrichting"
+msgstr "כיוון השפה"
 
 msgid "table_dlg_langcode"
-msgstr "Taalcode"
+msgstr "קוד השפה"
 
 msgid "table_dlg_mime"
-msgstr "Doel MIME type"
+msgstr "Target MIME type"
 
 msgid "table_dlg_ltr"
-msgstr "Van links naar rechts"
+msgstr "משמאל לימין"
 
 msgid "table_dlg_rtl"
-msgstr "Van rechts naar links"
+msgstr "מימין לשמאל"
 
 msgid "table_dlg_bgimage"
-msgstr "Achtergrondafbeelding"
+msgstr "תמונת רקע"
 
 msgid "table_dlg_summary"
-msgstr "Samenvatting"
+msgstr "תמצית"
 
 msgid "table_dlg_td"
-msgstr "Gegevens"
+msgstr "תא מידע"
 
 msgid "table_dlg_th"
-msgstr "Kop"
+msgstr "כותרת"
 
 msgid "table_dlg_cell_cell"
-msgstr "Huidige cel bijwerken"
+msgstr "עדכון תא נוכחי"
 
 msgid "table_dlg_cell_row"
-msgstr "Alle cellen in rij bijwerken"
+msgstr "עדכון כל תאי השורה"
 
 msgid "table_dlg_cell_all"
-msgstr "Alle cellen in tabel bijwerken"
+msgstr "עדכון כל תאי הטבלה"
 
 msgid "table_dlg_row_row"
-msgstr "Huidige rij bijwerken"
+msgstr "עדכון שורה נוכחית"
 
 msgid "table_dlg_row_odd"
-msgstr "Oneven rijen bijwerken"
+msgstr "עדכון שורות אי-זוגיות בטבלה"
 
 msgid "table_dlg_row_even"
-msgstr "Even rijen bijwerken"
+msgstr "עדכון שורות זוגיות בטבלה"
 
 msgid "table_dlg_row_all"
-msgstr "Alle rijen bijwerken"
+msgstr "עדכוןכל השורות בטבלה"
 
 msgid "table_dlg_thead"
-msgstr "Tabelkop"
+msgstr "שורת כותרת"
 
 msgid "table_dlg_tbody"
-msgstr "Tabellichaam"
+msgstr "שורה רגילה"
 
 msgid "table_dlg_tfoot"
-msgstr "Tabelvoet"
+msgstr "שורה תחתית"
 
 msgid "table_dlg_scope"
-msgstr "Bereik"
+msgstr "Scope"
 
 msgid "table_dlg_rowgroup"
-msgstr "Rijgroep"
+msgstr "Row Group"
 
 msgid "table_dlg_colgroup"
-msgstr "Kolomgroep"
+msgstr "Col Group"
 
 msgid "table_dlg_col_limit"
-msgstr "U heeft het maximale aantal kolommen van {$cols} overschreden."
+msgstr "חריגה ממספר העמודות המקסימאלי של {$cols}."
 
 msgid "table_dlg_row_limit"
-msgstr "U heeft hebt het maximale aantal rijen van {$rows} overschreden."
+msgstr "חריגה ממספר המקסימאלי של השורות של {$rows}."
 
 msgid "table_dlg_cell_limit"
-msgstr "U heeft het maximale aantal cellen van {$cells} overschreden."
+msgstr "חריגה ממספר המקסימאלי של התאים בטבלה של {$cells}."
 
 msgid "table_dlg_missing_scope"
-msgstr "Weet u zeker dat u door wilt gaan met het toewijzen van een kop zonder een bereik op te geven? Mensen met een visuele handicap kunnen hierdoor waarschijnlijk slecht bij de gegevens."
+msgstr "Are you sure you want to continue without specifying a scope for this table header cell. Without it, it may be difficult for some users with disabilities to understand the content or data displayed of the table."
 
 msgid "table_dlg_caption"
-msgstr "Tabelbeschrijving"
+msgstr "כותרת הטבלה"
 
 msgid "table_dlg_frame"
 msgstr "Frame"
 
 msgid "table_dlg_frame_none"
-msgstr "Geen"
+msgstr "none"
 
 msgid "table_dlg_frame_groups"
-msgstr "Groepen"
+msgstr "קבוצות"
 
 msgid "table_dlg_frame_rows"
-msgstr "Rijen"
+msgstr "שורות"
 
 msgid "table_dlg_frame_cols"
-msgstr "Kolommen"
+msgstr "עמודות"
 
 msgid "table_dlg_frame_all"
-msgstr "Alles"
+msgstr "הכול"
 
 msgid "table_dlg_rules"
-msgstr "Hulplijnen"
+msgstr "חוקים"
 
 msgid "table_dlg_rules_void"
-msgstr "Geen"
+msgstr "void"
 
 msgid "table_dlg_rules_above"
-msgstr "Boven"
+msgstr "מעל"
 
 msgid "table_dlg_rules_below"
-msgstr "Onder"
+msgstr "מתחת"
 
 msgid "table_dlg_rules_hsides"
-msgstr "Horizontale zijden"
+msgstr "hsides"
 
 msgid "table_dlg_rules_lhs"
-msgstr "Linkerzijkant"
+msgstr "lhs"
 
 msgid "table_dlg_rules_rhs"
-msgstr "Rechterzijkant"
+msgstr "rhs"
 
 msgid "table_dlg_rules_vsides"
-msgstr "Verticale zijden"
+msgstr "vsides"
 
 msgid "table_dlg_rules_box"
-msgstr "Box"
+msgstr "box"
 
 msgid "table_dlg_rules_border"
-msgstr "Rand"
+msgstr "גבול"
 
 msgid "autosave_unload_msg"
-msgstr "De wijzigingen zullen verloren gaan als u nu deze pagina verlaat."
+msgstr "השינויים שביצעת לא ישמרו אם תעבור מדף זה"
 
 msgid "fullscreen_desc"
-msgstr "Volledig scherm"
+msgstr "מעבר למסך מלא/חלקי"
 
 msgid "media_desc"
-msgstr "Media invoegen/bewerken"
+msgstr "הוספת/עריכת סרטון"
 
 msgid "media_edit"
-msgstr "Media bewerken"
+msgstr "עריכת סרטון"
 
 msgid "media_delta_width"
 msgstr ""
@@ -1624,79 +1624,79 @@ msgid "media_delta_height"
 msgstr ""
 
 msgid "media_dlg_title"
-msgstr "Media invoegen/bewerken"
+msgstr "הוספת/עריכת סרטון"
 
 msgid "media_dlg_general"
-msgstr "Algemeen"
+msgstr "כללי"
 
 msgid "media_dlg_advanced"
-msgstr "Geavanceerd"
+msgstr "מתקדם"
 
 msgid "media_dlg_file"
-msgstr "Bestand/URL"
+msgstr "כתובת הקובץ"
 
 msgid "media_dlg_list"
-msgstr "Lijst"
+msgstr "רשימה"
 
 msgid "media_dlg_size"
-msgstr "Afmetingen"
+msgstr "רוחב וגובה"
 
 msgid "media_dlg_preview"
-msgstr "Voorbeeld"
+msgstr "תצוגה מקדימה"
 
 msgid "media_dlg_constrain_proportions"
-msgstr "Verhouding bewaren"
+msgstr "שמור על פרופורציות"
 
 msgid "media_dlg_type"
-msgstr "Type"
+msgstr "סוג"
 
 msgid "media_dlg_id"
 msgstr "Id"
 
 msgid "media_dlg_name"
-msgstr "Naam"
+msgstr "Name"
 
 msgid "media_dlg_class_name"
-msgstr "Klasse"
+msgstr "Class"
 
 msgid "media_dlg_vspace"
-msgstr "V-Ruimte"
+msgstr "רווח אנכי"
 
 msgid "media_dlg_hspace"
-msgstr "H-Ruimte"
+msgstr "רווח אופקי"
 
 msgid "media_dlg_play"
-msgstr "Automatisch afspelen"
+msgstr "נגינה אוטומטית עם הטעינה"
 
 msgid "media_dlg_loop"
-msgstr "Herhalen"
+msgstr "נגינה מחזורית"
 
 msgid "media_dlg_menu"
-msgstr "Menu Weergeven"
+msgstr "הצגת תפריט"
 
 msgid "media_dlg_quality"
-msgstr "Kwaliteit"
+msgstr "איכות הסרטון"
 
 msgid "media_dlg_scale"
-msgstr "Schaal"
+msgstr "Scale"
 
 msgid "media_dlg_align"
-msgstr "Uitlijning"
+msgstr "Align"
 
 msgid "media_dlg_salign"
-msgstr "Schaaluitlijning"
+msgstr "SAlign"
 
 msgid "media_dlg_wmode"
 msgstr "WMode"
 
 msgid "media_dlg_bgcolor"
-msgstr "Achtergrond"
+msgstr "צבע רקע"
 
 msgid "media_dlg_base"
-msgstr "Basis"
+msgstr "Base"
 
 msgid "media_dlg_flashvars"
-msgstr "Variabelen"
+msgstr "Flashvars"
 
 msgid "media_dlg_liveconnect"
 msgstr "SWLiveConnect"
@@ -1708,226 +1708,226 @@ msgid "media_dlg_cache"
 msgstr "Cache"
 
 msgid "media_dlg_hidden"
-msgstr "Verborgen"
+msgstr "Hidden"
 
 msgid "media_dlg_controller"
 msgstr "Controller"
 
 msgid "media_dlg_kioskmode"
-msgstr "Kioskmodus"
+msgstr "Kiosk mode"
 
 msgid "media_dlg_playeveryframe"
-msgstr "Elk frame afspelen"
+msgstr "Play every frame"
 
 msgid "media_dlg_targetcache"
-msgstr "Doelcache"
+msgstr "Target cache"
 
 msgid "media_dlg_correction"
-msgstr "Geen correctie"
+msgstr "No correction"
 
 msgid "media_dlg_enablejavascript"
-msgstr "JavaScript Inschakelen"
+msgstr "Enable JavaScript"
 
 msgid "media_dlg_starttime"
-msgstr "Starttijd"
+msgstr "Start time"
 
 msgid "media_dlg_endtime"
-msgstr "Eindtijd"
+msgstr "End time"
 
 msgid "media_dlg_href"
-msgstr "HREF"
+msgstr "Href"
 
 msgid "media_dlg_qtsrcchokespeed"
-msgstr "Chokesnelheid"
+msgstr "Choke speed"
 
 msgid "media_dlg_target"
-msgstr "Doel"
+msgstr "Target"
 
 msgid "media_dlg_volume"
 msgstr "Volume"
 
 msgid "media_dlg_autostart"
-msgstr "Automatisch afspelen"
+msgstr "Auto start"
 
 msgid "media_dlg_enabled"
-msgstr "Ingeschakeld"
+msgstr "Enabled"
 
 msgid "media_dlg_fullscreen"
-msgstr "Volledig scherm"
+msgstr "Fullscreen"
 
 msgid "media_dlg_invokeurls"
-msgstr "URLs laden"
+msgstr "Invoke URLs"
 
 msgid "media_dlg_mute"
-msgstr "Geluid dempen"
+msgstr "Mute"
 
 msgid "media_dlg_stretchtofit"
-msgstr "Passend maken"
+msgstr "Stretch to fit"
 
 msgid "media_dlg_windowlessvideo"
-msgstr "Video zonder venster"
+msgstr "Windowless video"
 
 msgid "media_dlg_balance"
-msgstr "Balans"
+msgstr "Balance"
 
 msgid "media_dlg_baseurl"
-msgstr "BasisURL"
+msgstr "Base URL"
 
 msgid "media_dlg_captioningid"
-msgstr "Ondertiteling id"
+msgstr "Captioning id"
 
 msgid "media_dlg_currentmarker"
-msgstr "Huidige markering"
+msgstr "Current marker"
 
 msgid "media_dlg_currentposition"
-msgstr "Huidige positie"
+msgstr "Current position"
 
 msgid "media_dlg_defaultframe"
-msgstr "Standaard frame"
+msgstr "Default frame"
 
 msgid "media_dlg_playcount"
-msgstr "Afspeelteller"
+msgstr "Play count"
 
 msgid "media_dlg_rate"
-msgstr "Snelheid"
+msgstr "Rate"
 
 msgid "media_dlg_uimode"
-msgstr "UI Modus"
+msgstr "UI Mode"
 
 msgid "media_dlg_flash_options"
-msgstr "Flash opties"
+msgstr "אפשרויות פלאש"
 
 msgid "media_dlg_qt_options"
-msgstr "Quicktime opties"
+msgstr "אפשרויות Quicktime"
 
 msgid "media_dlg_wmp_options"
-msgstr "Windows mediaspeler opties"
+msgstr "אפשרויות מדיה פלייר"
 
 msgid "media_dlg_rmp_options"
-msgstr "Real mediaspeler opties"
+msgstr "אפשרויות נגן Real Media"
 
 msgid "media_dlg_shockwave_options"
-msgstr "Shockwave opties"
+msgstr "אפשרויות Shockwave"
 
 msgid "media_dlg_autogotourl"
-msgstr "Automatisch naar URL"
+msgstr "Auto goto URL"
 
 msgid "media_dlg_center"
-msgstr "Centreren"
+msgstr "מרכז"
 
 msgid "media_dlg_imagestatus"
-msgstr "Afbeeldingstatus"
+msgstr "Image status"
 
 msgid "media_dlg_maintainaspect"
-msgstr "Verhouding bewaren"
+msgstr "Maintain aspect"
 
 msgid "media_dlg_nojava"
-msgstr "Geen java"
+msgstr "No java"
 
 msgid "media_dlg_prefetch"
-msgstr "Voorladen"
+msgstr "Prefetch"
 
 msgid "media_dlg_shuffle"
-msgstr "Willekeurige volgorde"
+msgstr "Shuffle"
 
 msgid "media_dlg_console"
 msgstr "Console"
 
 msgid "media_dlg_numloop"
-msgstr "Aantal herhalingen"
+msgstr "Num loops"
 
 msgid "media_dlg_controls"
-msgstr "Bediening"
+msgstr "Controls"
 
 msgid "media_dlg_scriptcallbacks"
 msgstr "Script callbacks"
 
 msgid "media_dlg_swstretchstyle"
-msgstr "Schaal"
+msgstr "Stretch style"
 
 msgid "media_dlg_swstretchhalign"
-msgstr "H-Schaal"
+msgstr "Stretch H-Align"
 
 msgid "media_dlg_swstretchvalign"
-msgstr "V-Schaal"
+msgstr "Stretch V-Align"
 
 msgid "media_dlg_sound"
-msgstr "Geluid"
+msgstr "צליל"
 
 msgid "media_dlg_progress"
-msgstr "Voortgang"
+msgstr "Progress"
 
 msgid "media_dlg_qtsrc"
-msgstr "Quicktime bron"
+msgstr "QT Src"
 
 msgid "media_dlg_qt_stream_warn"
-msgstr "Gestreamde RTSP bronnen dienen op het tabblad geavanceerd bij Quicktime bron te worden opgegeven.\nDe niet-gestreamde versie kan dan bij het tabblad algemeen worden opgegeven."
+msgstr "Streamed rtsp resources should be added to the QT Src field under the advanced tab.\nYou should also add a non streamed version to the Src field.."
 
 msgid "media_dlg_align_top"
-msgstr "Boven"
+msgstr "Top"
 
 msgid "media_dlg_align_right"
-msgstr "Rechts"
+msgstr "Right"
 
 msgid "media_dlg_align_bottom"
-msgstr "Onder"
+msgstr "Bottom"
 
 msgid "media_dlg_align_left"
-msgstr "Links"
+msgstr "לשמאל"
 
 msgid "media_dlg_align_center"
-msgstr "Centreren"
+msgstr "Center"
 
 msgid "media_dlg_align_top_left"
-msgstr "Linksboven"
+msgstr "Top left"
 
 msgid "media_dlg_align_top_right"
-msgstr "Rechtsboven"
+msgstr "Top right"
 
 msgid "media_dlg_align_bottom_left"
-msgstr "Linksonder"
+msgstr "Bottom left"
 
 msgid "media_dlg_align_bottom_right"
-msgstr "Rechtsonder"
+msgstr "Bottom right"
 
 msgid "media_dlg_flv_options"
-msgstr "Flash video-opties"
+msgstr "Flash video options"
 
 msgid "media_dlg_flv_scalemode"
-msgstr "Schaalmodus"
+msgstr "Scale mode"
 
 msgid "media_dlg_flv_buffer"
 msgstr "Buffer"
 
 msgid "media_dlg_flv_startimage"
-msgstr "Startafbeelding"
+msgstr "Start image"
 
 msgid "media_dlg_flv_starttime"
-msgstr "Starttijd"
+msgstr "Start time"
 
 msgid "media_dlg_flv_defaultvolume"
-msgstr "Standaard volume"
+msgstr "Default volumne"
 
 msgid "media_dlg_flv_hiddengui"
-msgstr "GUI verbergen"
+msgstr "Hidden GUI"
 
 msgid "media_dlg_flv_autostart"
-msgstr "Automatisch afspelen"
+msgstr "Auto start"
 
 msgid "media_dlg_flv_loop"
-msgstr "Herhalen"
+msgstr "Loop"
 
 msgid "media_dlg_flv_showscalemodes"
-msgstr "Schaalmodus weergeven"
+msgstr "Show scale modes"
 
 msgid "media_dlg_flv_smoothvideo"
-msgstr "Soepele video"
+msgstr "Smooth video"
 
 msgid "media_dlg_flv_jscallback"
 msgstr "JS Callback"
 
 msgid "fullpage_desc"
-msgstr "Documenteigenschappen"
+msgstr "Document properties"
 
 msgid "fullpage_delta_width"
 msgstr ""
@@ -1936,31 +1936,31 @@ msgid "fullpage_delta_height"
 msgstr ""
 
 msgid "fullpage_dlg_title"
-msgstr "Documenteigenschappen"
+msgstr "Document properties"
 
 msgid "fullpage_dlg_meta_tab"
-msgstr "Algemeen"
+msgstr "כללי"
 
 msgid "fullpage_dlg_appearance_tab"
-msgstr "Weergave"
+msgstr "Appearance"
 
 msgid "fullpage_dlg_advanced_tab"
-msgstr "Geavanceerd"
+msgstr "Advanced"
 
 msgid "fullpage_dlg_meta_props"
-msgstr "Meta informatie"
+msgstr "Meta information"
 
 msgid "fullpage_dlg_langprops"
-msgstr "Taal en codering"
+msgstr "Language and encoding"
 
 msgid "fullpage_dlg_meta_title"
-msgstr "Titel"
+msgstr "כותרת"
 
 msgid "fullpage_dlg_meta_keywords"
-msgstr "Sleutelwoorden"
+msgstr "Keywords"
 
 msgid "fullpage_dlg_meta_description"
-msgstr "Beschrijving"
+msgstr "Description"
 
 msgid "fullpage_dlg_meta_robots"
 msgstr "Robots"
@@ -1969,205 +1969,205 @@ msgid "fullpage_dlg_doctypes"
 msgstr "Doctype"
 
 msgid "fullpage_dlg_langcode"
-msgstr "Taalcode"
+msgstr "קוד השפה"
 
 msgid "fullpage_dlg_langdir"
-msgstr "Taalrichting"
+msgstr "כיוון השפה"
 
 msgid "fullpage_dlg_ltr"
-msgstr "Van links naar rechts"
+msgstr "משמאל לימין"
 
 msgid "fullpage_dlg_rtl"
-msgstr "Van rechts naar links"
+msgstr "מימין לשמאל"
 
 msgid "fullpage_dlg_xml_pi"
-msgstr "XML toewijzing"
+msgstr "XML declaration"
 
 msgid "fullpage_dlg_encoding"
-msgstr "Karaktercodering"
+msgstr "Character encoding"
 
 msgid "fullpage_dlg_appearance_bgprops"
-msgstr "Achtergrondeigenschappen"
+msgstr "Background properties"
 
 msgid "fullpage_dlg_appearance_marginprops"
-msgstr "Bodymarge"
+msgstr "Body margins"
 
 msgid "fullpage_dlg_appearance_linkprops"
-msgstr "Linkkleuren"
+msgstr "Link colors"
 
 msgid "fullpage_dlg_appearance_textprops"
-msgstr "Teksteigenschappen"
+msgstr "Text properties"
 
 msgid "fullpage_dlg_bgcolor"
-msgstr "Achtergrondkleur"
+msgstr "צבע רקע"
 
 msgid "fullpage_dlg_bgimage"
-msgstr "Achtergrondafbeelding"
+msgstr "תמונת רקע"
 
 msgid "fullpage_dlg_left_margin"
-msgstr "Linkermarge"
+msgstr "Left margin"
 
 msgid "fullpage_dlg_right_margin"
-msgstr "Rechtermarge"
+msgstr "Right margin"
 
 msgid "fullpage_dlg_top_margin"
-msgstr "Bovenmarge"
+msgstr "Top margin"
 
 msgid "fullpage_dlg_bottom_margin"
-msgstr "Ondermarge"
+msgstr "Bottom margin"
 
 msgid "fullpage_dlg_text_color"
-msgstr "Tekstkleur"
+msgstr "צבע טקסט"
 
 msgid "fullpage_dlg_font_size"
-msgstr "Tekengrootte"
+msgstr "גודל גופן"
 
 msgid "fullpage_dlg_font_face"
-msgstr "Lettertype"
+msgstr "סוג גופן"
 
 msgid "fullpage_dlg_link_color"
-msgstr "Linkkleur"
+msgstr "צבע קישור"
 
 msgid "fullpage_dlg_hover_color"
-msgstr "Hoverkleur"
+msgstr "Hover color"
 
 msgid "fullpage_dlg_visited_color"
-msgstr "Bezocht kleur"
+msgstr "Visited color"
 
 msgid "fullpage_dlg_active_color"
-msgstr "Actieve kleur"
+msgstr "Active color"
 
 msgid "fullpage_dlg_textcolor"
-msgstr "Kleur"
+msgstr "צבע"
 
 msgid "fullpage_dlg_fontsize"
-msgstr "Tekengrootte"
+msgstr "גודל גופן"
 
 msgid "fullpage_dlg_fontface"
-msgstr "Lettertype"
+msgstr "גופן"
 
 msgid "fullpage_dlg_meta_index_follow"
-msgstr "Links indexeren en volgen"
+msgstr "Index and follow the links"
 
 msgid "fullpage_dlg_meta_index_nofollow"
-msgstr "Links indexeren maar niet volgen"
+msgstr "Index and don't follow the links"
 
 msgid "fullpage_dlg_meta_noindex_follow"
-msgstr "Links volgen maar niet indexeren"
+msgstr "Do not index but follow the links"
 
 msgid "fullpage_dlg_meta_noindex_nofollow"
-msgstr "Links niet indexeren en niet volgen"
+msgstr "Do not index and don't follow the links"
 
 msgid "fullpage_dlg_appearance_style"
-msgstr "Stijlblad en stijleigenschappen"
+msgstr "Stylesheet and style properties"
 
 msgid "fullpage_dlg_stylesheet"
-msgstr "Stijlblad"
+msgstr "Stylesheet"
 
 msgid "fullpage_dlg_style"
-msgstr "Stijl"
+msgstr "Style"
 
 msgid "fullpage_dlg_author"
-msgstr "Auteur"
+msgstr "Author"
 
 msgid "fullpage_dlg_copyright"
 msgstr "Copyright"
 
 msgid "fullpage_dlg_add"
-msgstr "Nieuw element toevoegen"
+msgstr "Add new element"
 
 msgid "fullpage_dlg_remove"
-msgstr "Geselecteerde elementen verwijderen"
+msgstr "Remove selected element"
 
 msgid "fullpage_dlg_moveup"
-msgstr "Geselecteerde elementen omhoog verplaatsen"
+msgstr "Move selected element up"
 
 msgid "fullpage_dlg_movedown"
-msgstr "Geselecteerde elementen omlaag verplaatsen"
+msgstr "Move selected element down"
 
 msgid "fullpage_dlg_head_elements"
-msgstr "Kopelementen"
+msgstr "Head elements"
 
 msgid "fullpage_dlg_info"
-msgstr "Informatie"
+msgstr "Information"
 
 msgid "fullpage_dlg_add_title"
-msgstr "Titelelement"
+msgstr "Title element"
 
 msgid "fullpage_dlg_add_meta"
-msgstr "Meta-element"
+msgstr "Meta element"
 
 msgid "fullpage_dlg_add_script"
-msgstr "Scriptelement"
+msgstr "Script element"
 
 msgid "fullpage_dlg_add_style"
-msgstr "Stijlelement"
+msgstr "Style element"
 
 msgid "fullpage_dlg_add_link"
-msgstr "Linkelement"
+msgstr "Link element"
 
 msgid "fullpage_dlg_add_base"
-msgstr "Basiselement"
+msgstr "Base element"
 
 msgid "fullpage_dlg_add_comment"
-msgstr "Opmerkingknooppunt"
+msgstr "Comment node"
 
 msgid "fullpage_dlg_title_element"
-msgstr "Titelelement"
+msgstr "Title element"
 
 msgid "fullpage_dlg_script_element"
-msgstr "Scriptelement"
+msgstr "Script element"
 
 msgid "fullpage_dlg_style_element"
-msgstr "Stijlelement"
+msgstr "Style element"
 
 msgid "fullpage_dlg_base_element"
-msgstr "Basiselement"
+msgstr "Base element"
 
 msgid "fullpage_dlg_link_element"
-msgstr "Linkelement"
+msgstr "Link element"
 
 msgid "fullpage_dlg_meta_element"
-msgstr "Meta-element"
+msgstr "Meta element"
 
 msgid "fullpage_dlg_comment_element"
-msgstr "Opmerking"
+msgstr "Comment"
 
 msgid "fullpage_dlg_src"
-msgstr "Bron"
+msgstr "Src"
 
 msgid "fullpage_dlg_language"
-msgstr "Taal"
+msgstr "שפה"
 
 msgid "fullpage_dlg_href"
 msgstr "Href"
 
 msgid "fullpage_dlg_target"
-msgstr "Doel"
+msgstr "יעד"
 
 msgid "fullpage_dlg_type"
 msgstr "Type"
 
 msgid "fullpage_dlg_charset"
-msgstr "Karakterset"
+msgstr "Charset"
 
 msgid "fullpage_dlg_defer"
-msgstr "Uitstellen"
+msgstr "Defer"
 
 msgid "fullpage_dlg_media"
 msgstr "Media"
 
 msgid "fullpage_dlg_properties"
-msgstr "Eigenschappen"
+msgstr "Properties"
 
 msgid "fullpage_dlg_name"
-msgstr "Naam"
+msgstr "Name"
 
 msgid "fullpage_dlg_value"
-msgstr "Waarde"
+msgstr "ערך"
 
 msgid "fullpage_dlg_content"
-msgstr "Inhoud"
+msgstr "Content"
 
 msgid "fullpage_dlg_rel"
 msgstr "Rel"
@@ -2176,86 +2176,86 @@ msgid "fullpage_dlg_rev"
 msgstr "Rev"
 
 msgid "fullpage_dlg_hreflang"
-msgstr "Href taal"
+msgstr "Href lang"
 
 msgid "fullpage_dlg_general_props"
-msgstr "Algemeen"
+msgstr "כללי"
 
 msgid "fullpage_dlg_advanced_props"
-msgstr "Geavanceerd"
+msgstr "מתקדם"
 
 msgid "template_desc"
-msgstr "Voorgedefinieerd sjabloon invoegen"
+msgstr "Insert predefined template content"
 
 msgid "template_dlg_title"
-msgstr "Sjablonen"
+msgstr "Templates"
 
 msgid "template_dlg_label"
-msgstr "Sjabloon"
+msgstr "Template"
 
 msgid "template_dlg_desc_label"
-msgstr "Beschrijving"
+msgstr "תיאור"
 
 msgid "template_dlg_desc"
-msgstr "Voorgedefinieerd sjabloon invoegen"
+msgstr "Insert predefined template content"
 
 msgid "template_dlg_select"
-msgstr "Selecteer een sjabloon"
+msgstr "Select a template"
 
 msgid "template_dlg_preview"
-msgstr "Voorbeeld"
+msgstr "תצוגה מקדימה"
 
 msgid "template_dlg_warning"
-msgstr "Waarschuwing: het bijwerken van een sjabloon met een andere kan het verlies van informatie tot gevolg hebben."
+msgstr "Warning: Updating a template with a different one may cause data loss."
 
 msgid "template_dlg_mdate_format"
-msgstr "%d-%m-%Y %H:%M:%S"
+msgstr "%Y-%m-%d %H:%M:%S"
 
 msgid "template_dlg_cdate_format"
-msgstr "%d-%m-%Y %H:%M:%S"
+msgstr "%Y-%m-%d %H:%M:%S"
 
 msgid "template_dlg_months_long"
-msgstr "Januari,Februari,Maart,April,Mei,Juni,Juli,Augustus,September,Oktober,November,December"
+msgstr "January,February,March,April,May,June,July,August,September,October,November,December"
 
 msgid "template_dlg_months_short"
-msgstr "Jan,Feb,Mar,Apr,Mei,Jun,Jul,Aug,Sep,Okt,Nov,Dec"
+msgstr "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec"
 
 msgid "template_dlg_day_long"
-msgstr "Zondag,Maandag,Dinsdag,Woensdag,Donderdag,Vrijdag,Zaterdag,Zondag"
+msgstr "ראשון,שני,שלישי,רביעי,חמישי,שישי,שבת"
 
 msgid "template_dlg_day_short"
-msgstr "zo,ma,di,wo,do,vr,za,zo"
+msgstr "ראשון,שני,שלישי,רביעי,חמישי,שישי,שבת"
 
 msgid "visualchars_desc"
-msgstr "Zichtbare symbolen"
+msgstr "Visual control characters on/off."
 
 msgid "spellchecker_desc"
-msgstr "Spellingcontrole"
+msgstr "הפעלת בודק איות"
 
 msgid "spellchecker_menu"
-msgstr "Instellingen spellingcontrole"
+msgstr "הגדרות בודק איות"
 
 msgid "spellchecker_ignore_word"
-msgstr "Woord negeren"
+msgstr "להתעלם מהמילה"
 
 msgid "spellchecker_ignore_words"
-msgstr "Alles negeren"
+msgstr "להתעלם מהכל"
 
 msgid "spellchecker_langs"
-msgstr "Talen"
+msgstr "שפות"
 
 msgid "spellchecker_wait"
-msgstr "Een ogenblik geduld…"
+msgstr "נא להמתין.."
 
 msgid "spellchecker_sug"
-msgstr "Suggesties"
+msgstr "הצעות"
 
 msgid "spellchecker_no_sug"
-msgstr "Geen suggesties"
+msgstr "אין הצעות"
 
 msgid "spellchecker_no_mpell"
-msgstr "Geen spelfouten gevonden."
+msgstr "לא נמצאו שגיאות איות"
 
 msgid "pagebreak_desc"
-msgstr "Pagina-einde invoegen"
+msgstr "הוספת מעבר דף"
 

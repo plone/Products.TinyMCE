@@ -1,271 +1,271 @@
-# This is the Dutch language pack for TinyMCE.
-# Version 10.5
+# This is the Japanese language pack for TinyMCE.
+# Version 12.9
 #
-# janwalhof
+# Hisaya Nishide
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2009-08-06 00:00+0000\n"
-"Last-Translator: janwalhof\n"
-"Language-Team: janwalhof\n"
+"PO-Revision-Date: 2009-08-07 00:00+0000\n"
+"Last-Translator: Hisaya Nishide\n"
+"Language-Team: Hisaya Nishide\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"Language-Code: nl\n"
-"Language-Name: Dutch\n"
+"Language-Code: ja\n"
+"Language-Name: Japanese\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: tinymce\n"
 
 msgid "common_edit_confirm"
-msgstr "Weet u zeker dat u tekst in WYSIWYG mode wilt bewerken in dit tekstveld?"
+msgstr "WYSIWYGモードに切り替えますか？"
 
 msgid "common_apply"
-msgstr "Toepassen"
+msgstr "適用"
 
 msgid "common_insert"
-msgstr "Invoegen"
+msgstr "挿入"
 
 msgid "common_update"
-msgstr "Bijwerken"
+msgstr "更新"
 
 msgid "common_cancel"
-msgstr "Annuleren"
+msgstr "キャンセル"
 
 msgid "common_close"
-msgstr "Sluiten"
+msgstr "閉じる"
 
 msgid "common_browse"
-msgstr "Bladeren"
+msgstr "参照"
 
 msgid "common_class_name"
-msgstr "Klasse"
+msgstr "クラス"
 
 msgid "common_not_set"
-msgstr "- Standaard -"
+msgstr "-- 未設定 --"
 
 msgid "common_clipboard_msg"
-msgstr "Kopiëren/knippen/plakken is niet beschikbaar in Mozilla en Firefox.\nWilt u meer informatie over deze beperking?"
+msgstr "コピー/切り取り/貼り付けはFirefoxおよびMozillaでは使用できません。\n詳細はこちら"
 
 msgid "common_clipboard_no_support"
-msgstr "Kopiëren/knippen/plakken wordt niet ondersteund door uw browser, gebruik hiervoor de sneltoetsen."
+msgstr "クリップボード操作はお使いのブラウザでは対応していません。代わりにキーボードのショートカットキーをお使い下さい。"
 
 msgid "common_popup_blocked"
-msgstr "U zult uw popup-blocker tijdelijk moeten uitschakelen voor deze website om gebruik te kunnen maken van alle functies van deze teksteditor."
+msgstr "ポップアップがブロックされました。すべての機能を利用するためにポップアップを許可して下さい。"
 
 msgid "common_invalid_data"
-msgstr "Fout: Er zijn ongeldige waardes ingevoerd, deze zijn rood gemarkeerd."
+msgstr "エラー: 入力に誤りがあります。（赤字の項目）"
 
 msgid "common_more_colors"
-msgstr "Meer kleuren"
+msgstr "その他の色"
 
 msgid "simple_bold_desc"
-msgstr "Vet (Ctrl+B)"
+msgstr "太字 (Ctrl+B)"
 
 msgid "simple_italic_desc"
-msgstr "Cursief (Ctrl+I)"
+msgstr "斜体 (Ctrl+I)"
 
 msgid "simple_underline_desc"
-msgstr "Onderstrepen (Ctrl+U)"
+msgstr "下線 (Ctrl+U)"
 
 msgid "simple_striketrough_desc"
-msgstr "Doorhalen"
+msgstr "打消し線"
 
 msgid "simple_bullist_desc"
-msgstr "Opsommingstekens"
+msgstr "番号なしリスト"
 
 msgid "simple_numlist_desc"
-msgstr "Nummering"
+msgstr "番号つきリスト"
 
 msgid "simple_undo_desc"
-msgstr "Ongedaan maken (Ctrl+Z)"
+msgstr "元に戻す (Ctrl+Z)"
 
 msgid "simple_redo_desc"
-msgstr "Herhalen (Ctrl+Y)"
+msgstr "やり直す (Ctrl+Y)"
 
 msgid "simple_cleanup_desc"
-msgstr "Code opruimen"
+msgstr "コード整形"
 
 msgid "advanced_style_select"
-msgstr "Stijlen"
+msgstr "スタイル"
 
 msgid "advanced_font_size"
-msgstr "Tekengrootte"
+msgstr "フォントサイズ"
 
 msgid "advanced_fontdefault"
-msgstr "Lettertype"
+msgstr "フォント"
 
 msgid "advanced_block"
-msgstr "Opmaak"
+msgstr "フォーマット"
 
 msgid "advanced_paragraph"
-msgstr "Alinea"
+msgstr "段落"
 
 msgid "advanced_div"
 msgstr "Div"
 
 msgid "advanced_address"
-msgstr "Adres"
+msgstr "連絡先"
 
 msgid "advanced_pre"
-msgstr "Vaste opmaak"
+msgstr "整形済み"
 
 msgid "advanced_h1"
-msgstr "Kop 1"
+msgstr "見出し1"
 
 msgid "advanced_h2"
-msgstr "Kop 2"
+msgstr "見出し2"
 
 msgid "advanced_h3"
-msgstr "Kop 3"
+msgstr "見出し3"
 
 msgid "advanced_h4"
-msgstr "Kop 4"
+msgstr "見出し4"
 
 msgid "advanced_h5"
-msgstr "Kop 5"
+msgstr "見出し5"
 
 msgid "advanced_h6"
-msgstr "Kop 6"
+msgstr "見出し6"
 
 msgid "advanced_blockquote"
-msgstr "Citaat"
+msgstr "引用"
 
 msgid "advanced_code"
-msgstr "Code"
+msgstr "ソースコード"
 
 msgid "advanced_samp"
-msgstr "Codevoorbeeld"
+msgstr "コードサンプル"
 
 msgid "advanced_dt"
-msgstr "Definitieterm"
+msgstr "語句定義"
 
 msgid "advanced_dd"
-msgstr "Definitiebeschrijving"
+msgstr "語句説明"
 
 msgid "advanced_bold_desc"
-msgstr "Vet (Ctrl+B)"
+msgstr "太字 (Ctrl+B)"
 
 msgid "advanced_italic_desc"
-msgstr "Cursief (Ctrl+I)"
+msgstr "斜体 (Ctrl+I)"
 
 msgid "advanced_underline_desc"
-msgstr "Onderstrepen (Ctrl+U)"
+msgstr "下線 (Ctrl+U)"
 
 msgid "advanced_striketrough_desc"
-msgstr "Doorhalen"
+msgstr "打消し線"
 
 msgid "advanced_justifyleft_desc"
-msgstr "Links uitlijnen"
+msgstr "左揃え"
 
 msgid "advanced_justifycenter_desc"
-msgstr "Centreren"
+msgstr "中央揃え"
 
 msgid "advanced_justifyright_desc"
-msgstr "Rechts uitlijnen"
+msgstr "右揃え"
 
 msgid "advanced_justifyfull_desc"
-msgstr "Uitvullen"
+msgstr "均等割付"
 
 msgid "advanced_bullist_desc"
-msgstr "Opsommingstekens"
+msgstr "番号なしリスト"
 
 msgid "advanced_numlist_desc"
-msgstr "Nummering"
+msgstr "番号つきリスト"
 
 msgid "advanced_outdent_desc"
-msgstr "Inspringing verkleinen"
+msgstr "インデント解除"
 
 msgid "advanced_indent_desc"
-msgstr "Inspringing vergroten"
+msgstr "インデント"
 
 msgid "advanced_undo_desc"
-msgstr "Ongedaan maken (Ctrl+Z)"
+msgstr "元に戻す (Ctrl+Z)"
 
 msgid "advanced_redo_desc"
-msgstr "Herhalen (Ctrl+Y)"
+msgstr "やり直す (Ctrl+Y)"
 
 msgid "advanced_link_desc"
-msgstr "Link invoegen/bewerken"
+msgstr "リンクの挿入/編集"
 
 msgid "advanced_unlink_desc"
-msgstr "Link verwijderen"
+msgstr "リンク解除"
 
 msgid "advanced_image_desc"
-msgstr "Afbeelding invoegen/bewerken"
+msgstr "画像の挿入/編集"
 
 msgid "advanced_cleanup_desc"
-msgstr "Code opruimen"
+msgstr "コード整形"
 
 msgid "advanced_code_desc"
-msgstr "HTML bron bewerken"
+msgstr "HTMLソース編集"
 
 msgid "advanced_sub_desc"
-msgstr "Subscript"
+msgstr "下付き"
 
 msgid "advanced_sup_desc"
-msgstr "Superscript"
+msgstr "上付き"
 
 msgid "advanced_hr_desc"
-msgstr "Scheidingslijn invoegen"
+msgstr "水平線"
 
 msgid "advanced_removeformat_desc"
-msgstr "Opmaak verwijderen"
+msgstr "フォーマット解除"
 
 msgid "advanced_custom1_desc"
-msgstr "Uw eigen beschrijving hier"
+msgstr "説明文を入力してください。"
 
 msgid "advanced_forecolor_desc"
-msgstr "Tekstkleur"
+msgstr "文字色"
 
 msgid "advanced_backcolor_desc"
-msgstr "Tekstmarkeringskleur"
+msgstr "背景色"
 
 msgid "advanced_charmap_desc"
-msgstr "Symbool invoegen"
+msgstr "特殊文字"
 
 msgid "advanced_visualaid_desc"
-msgstr "Hulplijnen weergeven"
+msgstr "ガイドラインと非表示項目の表示切替"
 
 msgid "advanced_anchor_desc"
-msgstr "Anker invoegen/bewerken"
+msgstr "アンカーの挿入/編集"
 
 msgid "advanced_cut_desc"
-msgstr "Knippen"
+msgstr "切り取り"
 
 msgid "advanced_copy_desc"
-msgstr "Kopiëren"
+msgstr "コピー"
 
 msgid "advanced_paste_desc"
-msgstr "Plakken"
+msgstr "貼り付け"
 
 msgid "advanced_image_props_desc"
-msgstr "Afbeeldingseigenschappen"
+msgstr "画像のプロパティ"
 
 msgid "advanced_newdocument_desc"
-msgstr "Nieuw document"
+msgstr "新規作成"
 
 msgid "advanced_help_desc"
-msgstr "Help"
+msgstr "ヘルプ"
 
 msgid "advanced_blockquote_desc"
-msgstr "Citaat"
+msgstr "引用"
 
 msgid "advanced_clipboard_msg"
-msgstr "Kopiëren/knippen/plakken is niet beschikbaar in Mozilla en Firefox.\nWilt u meer informatie over deze beperking?"
+msgstr "コピー/切り取り/貼り付けはMozilla及びFirefoxでは使用できません。\n詳細はこちら"
 
 msgid "advanced_path"
-msgstr "Pad"
+msgstr "パス"
 
 msgid "advanced_newdocument"
-msgstr "Weet u zeker dat u alle inhoud wilt wissen?"
+msgstr "編集中のデータを破棄してもよろしいですか？"
 
 msgid "advanced_toolbar_focus"
-msgstr "Spring naar werkbalk - Alt+Q, Spring naar tekst - Alt-Z, Spring naar elementpad - Alt-X"
+msgstr "ツールボタンへジャンプ - Alt+Q, エディタにジャンプ - Alt-Z, エレメントパスへジャンプ - Alt-X"
 
 msgid "advanced_more_colors"
-msgstr "Meer kleuren"
+msgstr "その他の色"
 
 msgid "advanced_image_delta_width"
 msgstr ""
@@ -298,235 +298,235 @@ msgid "advanced_anchor_delta_height"
 msgstr ""
 
 msgid "advanced_dlg_about_title"
-msgstr "Over TinyMCE"
+msgstr "TinyMCEについて"
 
 msgid "advanced_dlg_about_general"
-msgstr "Info"
+msgstr "詳細"
 
 msgid "advanced_dlg_about_help"
-msgstr "Help"
+msgstr "ヘルプ"
 
 msgid "advanced_dlg_about_license"
-msgstr "Licentie"
+msgstr "ライセンス"
 
 msgid "advanced_dlg_about_plugins"
-msgstr "Invoegtoepassingen"
+msgstr "プラグイン"
 
 msgid "advanced_dlg_about_plugin"
-msgstr "Invoegtoepassing"
+msgstr "プラグイン"
 
 msgid "advanced_dlg_about_author"
-msgstr "Auteur"
+msgstr "作者"
 
 msgid "advanced_dlg_about_version"
-msgstr "Versie"
+msgstr "バージョン"
 
 msgid "advanced_dlg_about_loaded"
-msgstr "Geladen Invoegtoepassingen"
+msgstr "読込済みプラグイン"
 
 msgid "advanced_dlg_anchor_title"
-msgstr "Anker invoegen/bewerken"
+msgstr "アンカーの挿入/編集"
 
 msgid "advanced_dlg_anchor_name"
-msgstr "Ankernaam"
+msgstr "アンカー名"
 
 msgid "advanced_dlg_code_title"
-msgstr "HTML Bron"
+msgstr "HTMLソースエディタ"
 
 msgid "advanced_dlg_code_wordwrap"
-msgstr "Automatische terugloop"
+msgstr "折り返し"
 
 msgid "advanced_dlg_colorpicker_title"
-msgstr "Kleuren"
+msgstr "色の選択"
 
 msgid "advanced_dlg_colorpicker_picker_tab"
-msgstr "Alle kleuren"
+msgstr "カラーピッカー"
 
 msgid "advanced_dlg_colorpicker_picker_title"
-msgstr "Alle kleuren"
+msgstr "カラーピッカー"
 
 msgid "advanced_dlg_colorpicker_palette_tab"
-msgstr "Palet"
+msgstr "パレット"
 
 msgid "advanced_dlg_colorpicker_palette_title"
-msgstr "Paletkleuren"
+msgstr "パレット"
 
 msgid "advanced_dlg_colorpicker_named_tab"
-msgstr "Benoemd"
+msgstr "既定色"
 
 msgid "advanced_dlg_colorpicker_named_title"
-msgstr "Benoemde kleuren"
+msgstr "既定色"
 
 msgid "advanced_dlg_colorpicker_color"
-msgstr "Kleur:"
+msgstr "カラー:"
 
 msgid "advanced_dlg_colorpicker_name"
-msgstr "Naam:"
+msgstr "名前:"
 
 msgid "advanced_dlg_charmap_title"
-msgstr "Symbolen"
+msgstr "特殊文字"
 
 msgid "advanced_dlg_image_title"
-msgstr "Afbeelding invoegen/bewerken"
+msgstr "画像の挿入/編集"
 
 msgid "advanced_dlg_image_src"
-msgstr "Bestand/URL"
+msgstr "画像URL"
 
 msgid "advanced_dlg_image_alt"
-msgstr "Beschrijving"
+msgstr "画像の説明"
 
 msgid "advanced_dlg_image_list"
-msgstr "Lijst"
+msgstr "一覧から選ぶ"
 
 msgid "advanced_dlg_image_border"
-msgstr "Rand"
+msgstr "枠線"
 
 msgid "advanced_dlg_image_dimensions"
-msgstr "Afmetingen"
+msgstr "サイズ"
 
 msgid "advanced_dlg_image_vspace"
-msgstr "Verticale ruimte"
+msgstr "上下余白"
 
 msgid "advanced_dlg_image_hspace"
-msgstr "Horizontale ruimte"
+msgstr "左右余白"
 
 msgid "advanced_dlg_image_align"
-msgstr "Uitlijning"
+msgstr "配置"
 
 msgid "advanced_dlg_image_align_baseline"
-msgstr "Basislijn"
+msgstr "ベースライン"
 
 msgid "advanced_dlg_image_align_top"
-msgstr "Boven"
+msgstr "上端揃え"
 
 msgid "advanced_dlg_image_align_middle"
-msgstr "Midden"
+msgstr "中央揃え"
 
 msgid "advanced_dlg_image_align_bottom"
-msgstr "Onder"
+msgstr "下揃え"
 
 msgid "advanced_dlg_image_align_texttop"
-msgstr "Bovenkant tekst"
+msgstr "テキストの上端"
 
 msgid "advanced_dlg_image_align_textbottom"
-msgstr "Onderkant tekst"
+msgstr "テキストの下端"
 
 msgid "advanced_dlg_image_align_left"
-msgstr "Links"
+msgstr "左寄せ"
 
 msgid "advanced_dlg_image_align_right"
-msgstr "Rechts"
+msgstr "右寄せ"
 
 msgid "advanced_dlg_link_title"
-msgstr "Link invoegen/bewerken"
+msgstr "リンクの挿入/編集"
 
 msgid "advanced_dlg_link_url"
-msgstr "URL"
+msgstr "リンクURL"
 
 msgid "advanced_dlg_link_target"
-msgstr "Doel"
+msgstr "ターゲット"
 
 msgid "advanced_dlg_link_target_same"
-msgstr "Link in hetzelfde venster openen"
+msgstr "同じウインドウで開く"
 
 msgid "advanced_dlg_link_target_blank"
-msgstr "Link in een nieuw venster openen"
+msgstr "新しいウインドウで開く"
 
 msgid "advanced_dlg_link_titlefield"
-msgstr "Titel"
+msgstr "タイトル"
 
 msgid "advanced_dlg_link_is_email"
-msgstr "De ingevoerde URL lijkt op een e-mailadres. Wilt u de vereiste mailto: tekst voorvoegen?"
+msgstr "メールアドレスが入力されました。リンクにmailto:を付加しますか？"
 
 msgid "advanced_dlg_link_is_external"
-msgstr "De ingevoerde URL lijkt op een externe link. Wilt u de vereiste http:// tekst voorvoegen?"
+msgstr "リンクにhttp://を付加しますか？"
 
 msgid "advanced_dlg_link_list"
-msgstr "Link lijst"
+msgstr "一覧から選ぶ"
 
 msgid "contextmenu_align"
-msgstr "Uitlijning"
+msgstr "配置"
 
 msgid "contextmenu_left"
-msgstr "Links"
+msgstr "左揃え"
 
 msgid "contextmenu_center"
-msgstr "Centreren"
+msgstr "中央揃え"
 
 msgid "contextmenu_right"
-msgstr "Rechts"
+msgstr "右揃え"
 
 msgid "contextmenu_full"
-msgstr "Uitvullen"
+msgstr "均等割付"
 
 msgid "insertdatetime_date_fmt"
-msgstr "%d-%m-%Y"
+msgstr "%Y-%m-%d"
 
 msgid "insertdatetime_time_fmt"
 msgstr "%H:%M:%S"
 
 msgid "insertdatetime_insertdate_desc"
-msgstr "Datum invoegen"
+msgstr "日付の挿入"
 
 msgid "insertdatetime_inserttime_desc"
-msgstr "Tijd invoegen"
+msgstr "時刻の挿入"
 
 msgid "insertdatetime_months_long"
-msgstr "Januari,Februari,Maart,April,Mei,Juni,Juli,Augustus,September,Oktober,November,December"
+msgstr "1月,2月,3月,4月,5月,6月,7月,8月,9月,10月,11月,12月"
 
 msgid "insertdatetime_months_short"
-msgstr "Jan,Feb,Mar,Apr,Mei,Jun,Jul,Aug,Sep,Okt,Nov,Dec"
+msgstr "1,2,3,4,5,6,7,8,9,10,11,12"
 
 msgid "insertdatetime_day_long"
-msgstr "Zondag,Maandag,Dinsdag,Woensdag,Donderdag,Vrijdag,Zaterdag,Zondag"
+msgstr "日曜日,月曜日,火曜日,水曜日,木曜日,金曜日,土曜日,日曜日"
 
 msgid "insertdatetime_day_short"
-msgstr "zo,ma,di,wo,do,vr,za,zo"
+msgstr "(日),(月),(火),(水),(木),(金),(土),(日)"
 
 msgid "print_print_desc"
-msgstr "Afdrukken"
+msgstr "印刷"
 
 msgid "preview_preview_desc"
-msgstr "Voorbeeld"
+msgstr "プレビュー"
 
 msgid "directionality_ltr_desc"
-msgstr "Van links naar rechts"
+msgstr "左から右"
 
 msgid "directionality_rtl_desc"
-msgstr "Van rechts naar links"
+msgstr "右から左"
 
 msgid "layer_insertlayer_desc"
-msgstr "Nieuwe laag invoegen"
+msgstr "新規レイヤーの挿入"
 
 msgid "layer_forward_desc"
-msgstr "Volgende laag"
+msgstr "前面へ移動"
 
 msgid "layer_backward_desc"
-msgstr "Vorige laag"
+msgstr "背面へ移動"
 
 msgid "layer_absolute_desc"
-msgstr "Absoluut positioneren inschakelen"
+msgstr "絶対位置指定の切替"
 
 msgid "layer_content"
-msgstr "Nieuwe laag..."
+msgstr "新規レイヤー"
 
 msgid "save_save_desc"
-msgstr "Opslaan"
+msgstr "保存"
 
 msgid "save_cancel_desc"
-msgstr "Alle wijzigingen annuleren"
+msgstr "全ての変更を破棄"
 
 msgid "nonbreaking_nonbreaking_desc"
-msgstr "Open ruimte invoegen"
+msgstr "改行なしスペースの挿入"
 
 msgid "iespell_iespell_desc"
-msgstr "Spellingcontrole"
+msgstr "スペルチェック"
 
 msgid "iespell_download"
-msgstr "ieSpell niet gevonden. Wilt u deze nu installeren?"
+msgstr "ieSpellが見つかりません。今インストールしますか？"
 
 msgid "advhr_advhr_desc"
-msgstr "Scheidingslijn"
+msgstr "水平線"
 
 msgid "advhr_delta_width"
 msgstr ""
@@ -535,16 +535,16 @@ msgid "advhr_delta_height"
 msgstr ""
 
 msgid "advhr_dlg_width"
-msgstr "Breedte"
+msgstr "幅"
 
 msgid "advhr_dlg_size"
-msgstr "Hoogte"
+msgstr "高さ"
 
 msgid "advhr_dlg_noshade"
-msgstr "Geen schaduw"
+msgstr "影なし"
 
 msgid "emotions_emotions_desc"
-msgstr "Emoties"
+msgstr "スマイリー"
 
 msgid "emotions_delta_width"
 msgstr ""
@@ -553,64 +553,64 @@ msgid "emotions_delta_height"
 msgstr ""
 
 msgid "emotions_dlg_title"
-msgstr "Emotie invoegen"
+msgstr "スマイリーの挿入"
 
 msgid "emotions_dlg_desc"
-msgstr "Emoties"
+msgstr "スマイリー"
 
 msgid "emotions_dlg_cool"
-msgstr "Stoer"
+msgstr "Cool"
 
 msgid "emotions_dlg_cry"
-msgstr "Huilen"
+msgstr "Cry"
 
 msgid "emotions_dlg_embarassed"
-msgstr "Schamen"
+msgstr "Embarassed"
 
 msgid "emotions_dlg_foot_in_mouth"
-msgstr "Verstomd"
+msgstr "Foot in mouth"
 
 msgid "emotions_dlg_frown"
-msgstr "Wenkbrauw ophalen"
+msgstr "Frown"
 
 msgid "emotions_dlg_innocent"
-msgstr "Onschuldig"
+msgstr "Innocent"
 
 msgid "emotions_dlg_kiss"
-msgstr "Zoenen"
+msgstr "Kiss"
 
 msgid "emotions_dlg_laughing"
-msgstr "Lachen"
+msgstr "Laughing"
 
 msgid "emotions_dlg_money_mouth"
-msgstr "Hebberig"
+msgstr "Money mouth"
 
 msgid "emotions_dlg_sealed"
-msgstr "Afgesloten"
+msgstr "Sealed"
 
 msgid "emotions_dlg_smile"
-msgstr "Lachen"
+msgstr "Smile"
 
 msgid "emotions_dlg_surprised"
-msgstr "Verrast"
+msgstr "Surprised"
 
 msgid "emotions_dlg_tongue_out"
-msgstr "Tong uitsteken"
+msgstr "Tongue out"
 
 msgid "emotions_dlg_undecided"
-msgstr "Onbeslist"
+msgstr "Undecided"
 
 msgid "emotions_dlg_wink"
-msgstr "Knipogen"
+msgstr "Wink"
 
 msgid "emotions_dlg_yell"
-msgstr "Roepen"
+msgstr "Yell"
 
 msgid "searchreplace_search_desc"
-msgstr "Zoeken"
+msgstr "検索"
 
 msgid "searchreplace_replace_desc"
-msgstr "Zoeken/Vervangen"
+msgstr "検索/置換"
 
 msgid "searchreplace_delta_width"
 msgstr ""
@@ -619,49 +619,49 @@ msgid "searchreplace_delta_height"
 msgstr ""
 
 msgid "searchreplace_dlg_searchnext_desc"
-msgstr "Opnieuw zoeken"
+msgstr "再検索"
 
 msgid "searchreplace_dlg_notfound"
-msgstr "Het doorzoeken is voltooid. De zoekterm kon niet meer worden gevonden."
+msgstr "最後まで検索しましたが、検索文字列が見つかりませんでした。"
 
 msgid "searchreplace_dlg_search_title"
-msgstr "Zoeken"
+msgstr "検索"
 
 msgid "searchreplace_dlg_replace_title"
-msgstr "Zoeken/Vervangen"
+msgstr "検索/置換"
 
 msgid "searchreplace_dlg_allreplaced"
-msgstr "Alle instanties van de zoekterm zijn vervangen."
+msgstr "全て置換されました。"
 
 msgid "searchreplace_dlg_findwhat"
-msgstr "Zoeken naar"
+msgstr "検索文字列"
 
 msgid "searchreplace_dlg_replacewith"
-msgstr "Vervangen door"
+msgstr "置換文字列"
 
 msgid "searchreplace_dlg_direction"
-msgstr "Richting"
+msgstr "方向"
 
 msgid "searchreplace_dlg_up"
-msgstr "Omhoog"
+msgstr "上へ"
 
 msgid "searchreplace_dlg_down"
-msgstr "Omlaag"
+msgstr "下へ"
 
 msgid "searchreplace_dlg_mcase"
-msgstr "Identieke hoofdletters/kleine letters"
+msgstr "大文字/小文字を区別する"
 
 msgid "searchreplace_dlg_findnext"
-msgstr "Zoeken"
+msgstr "次へ"
 
 msgid "searchreplace_dlg_replace"
-msgstr "Vervangen"
+msgstr "置換"
 
 msgid "searchreplace_dlg_replaceall"
-msgstr "Alles verv."
+msgstr "全て置換"
 
 msgid "advimage_image_desc"
-msgstr "Afbeelding invoegen/bewerken"
+msgstr "画像の挿入/編集"
 
 msgid "advimage_delta_width"
 msgstr ""
@@ -670,130 +670,130 @@ msgid "advimage_delta_height"
 msgstr ""
 
 msgid "advimage_dlg_tab_general"
-msgstr "Algemeen"
+msgstr "一般"
 
 msgid "advimage_dlg_tab_appearance"
-msgstr "Weergave"
+msgstr "表示"
 
 msgid "advimage_dlg_tab_advanced"
-msgstr "Geavanceerd"
+msgstr "高度な設定"
 
 msgid "advimage_dlg_general"
-msgstr "Algemeen"
+msgstr "一般"
 
 msgid "advimage_dlg_title"
-msgstr "Titel"
+msgstr "タイトル"
 
 msgid "advimage_dlg_preview"
-msgstr "Voorbeeld"
+msgstr "プレビュー"
 
 msgid "advimage_dlg_constrain_proportions"
-msgstr "Verhouding behouden"
+msgstr "縦横比の保存"
 
 msgid "advimage_dlg_langdir"
-msgstr "Taalrichting"
+msgstr "文章の方向"
 
 msgid "advimage_dlg_langcode"
-msgstr "Taalcode"
+msgstr "言語コード"
 
 msgid "advimage_dlg_long_desc"
-msgstr "Uitgebreide beschrijving"
+msgstr "詳細説明リンク"
 
 msgid "advimage_dlg_style"
-msgstr "Stijl"
+msgstr "スタイル"
 
 msgid "advimage_dlg_classes"
-msgstr "Klasses"
+msgstr "クラス"
 
 msgid "advimage_dlg_ltr"
-msgstr "Van links naar rechts"
+msgstr "左から右"
 
 msgid "advimage_dlg_rtl"
-msgstr "Van rechts naar links"
+msgstr "右から左"
 
 msgid "advimage_dlg_id"
 msgstr "Id"
 
 msgid "advimage_dlg_map"
-msgstr "Afbeeldingsplattegrond"
+msgstr "イメージマップ"
 
 msgid "advimage_dlg_swap_image"
-msgstr "Afbeelding wisselen"
+msgstr "ロールオーバー効果"
 
 msgid "advimage_dlg_alt_image"
-msgstr "Alternatieve afbeeldingen"
+msgstr "画像切替を行う"
 
 msgid "advimage_dlg_mouseover"
-msgstr "Bij muis over"
+msgstr "マウスオーバー時"
 
 msgid "advimage_dlg_mouseout"
-msgstr "Bij muis uit"
+msgstr "マウスアウト時"
 
 msgid "advimage_dlg_misc"
-msgstr "Diversen"
+msgstr "その他"
 
 msgid "advimage_dlg_example_img"
-msgstr "Voorbeeldweergave"
+msgstr "Appearance preview image"
 
 msgid "advimage_dlg_missing_alt"
-msgstr "Wilt u de afbeelding zonder beschrijving invoegen? De afbeelding wordt dan mogelijk niet opgemerkt door mensen met een visuele handicap, of welke zonder afbeeldingen browsen."
+msgstr "画像の説明文が入力されていません。テキストブラウザを利用されている方へ配慮し、説明文の入力をお薦めします。"
 
 msgid "advimage_dlg_dialog_title"
-msgstr "Afbeelding invoegen/bewerken"
+msgstr "画像の挿入/編集"
 
 msgid "advimage_dlg_src"
-msgstr "Bestand/URL"
+msgstr "画像URL"
 
 msgid "advimage_dlg_alt"
-msgstr "Beschrijving"
+msgstr "画像の説明"
 
 msgid "advimage_dlg_list"
-msgstr "Lijst"
+msgstr "一覧から選ぶ"
 
 msgid "advimage_dlg_border"
-msgstr "Rand"
+msgstr "枠線"
 
 msgid "advimage_dlg_dimensions"
-msgstr "Afmetingen"
+msgstr "サイズ"
 
 msgid "advimage_dlg_vspace"
-msgstr "Verticale ruimte"
+msgstr "上下余白"
 
 msgid "advimage_dlg_hspace"
-msgstr "Horizontale ruimte"
+msgstr "左右余白"
 
 msgid "advimage_dlg_align"
-msgstr "Uitlijning"
+msgstr "配置"
 
 msgid "advimage_dlg_align_baseline"
-msgstr "Basislijn"
+msgstr "ベースライン"
 
 msgid "advimage_dlg_align_top"
-msgstr "Boven"
+msgstr "上端揃え"
 
 msgid "advimage_dlg_align_middle"
-msgstr "Midden"
+msgstr "中央揃え"
 
 msgid "advimage_dlg_align_bottom"
-msgstr "Onder"
+msgstr "下端揃え"
 
 msgid "advimage_dlg_align_texttop"
-msgstr "Bovenkant tekst"
+msgstr "テキストの上端"
 
 msgid "advimage_dlg_align_textbottom"
-msgstr "Onderkant tekst"
+msgstr "テキストの下端"
 
 msgid "advimage_dlg_align_left"
-msgstr "Links"
+msgstr "左寄せ"
 
 msgid "advimage_dlg_align_right"
-msgstr "Rechts"
+msgstr "右寄せ"
 
 msgid "advimage_dlg_image_list"
-msgstr "Lijst"
+msgstr "一覧から選ぶ"
 
 msgid "advlink_link_desc"
-msgstr "Link invoegen/bewerken"
+msgstr "リンクの挿入/編集"
 
 msgid "advlink_delta_width"
 msgstr ""
@@ -802,172 +802,172 @@ msgid "advlink_delta_height"
 msgstr ""
 
 msgid "advlink_dlg_title"
-msgstr "Link invoegen/bewerken"
+msgstr "リンクの挿入/編集"
 
 msgid "advlink_dlg_url"
-msgstr "URL"
+msgstr "リンクURL"
 
 msgid "advlink_dlg_target"
-msgstr "Doel"
+msgstr "ターゲット"
 
 msgid "advlink_dlg_titlefield"
-msgstr "Titel"
+msgstr "タイトル"
 
 msgid "advlink_dlg_is_email"
-msgstr "De ingevoerde URL lijkt op een e-mailadres. Wilt u de vereiste mailto: tekst voorvoegen?"
+msgstr "メールアドレスが入力されました。リンクにmailto:を付加しますか？"
 
 msgid "advlink_dlg_is_external"
-msgstr "De ingevoerde URL lijkt op een externe link. Wilt u de vereiste http:// tekst voorvoegen?"
+msgstr "リンクにhttp://を付加しますか？"
 
 msgid "advlink_dlg_list"
-msgstr "Lijst"
+msgstr "一覧から選ぶ"
 
 msgid "advlink_dlg_general_tab"
-msgstr "Algemeen"
+msgstr "一般"
 
 msgid "advlink_dlg_popup_tab"
-msgstr "Popup"
+msgstr "ポップアップ"
 
 msgid "advlink_dlg_events_tab"
-msgstr "Gebeurtenissen"
+msgstr "イベント"
 
 msgid "advlink_dlg_advanced_tab"
-msgstr "Geavanceerd"
+msgstr "高度な設定"
 
 msgid "advlink_dlg_general_props"
-msgstr "Algemene eigenschappen"
+msgstr "一般"
 
 msgid "advlink_dlg_popup_props"
-msgstr "Popup eigenschappen"
+msgstr "ポップアップ"
 
 msgid "advlink_dlg_event_props"
-msgstr "Gebeurtenissen"
+msgstr "イベント"
 
 msgid "advlink_dlg_advanced_props"
-msgstr "Geavanceerde eigenschappen"
+msgstr "高度な設定"
 
 msgid "advlink_dlg_popup_opts"
-msgstr "Opties"
+msgstr "オプション"
 
 msgid "advlink_dlg_anchor_names"
-msgstr "Ankers"
+msgstr "アンカー"
 
 msgid "advlink_dlg_target_same"
-msgstr "In dit venster / frame openen"
+msgstr "このウインドウ/フレームで開く"
 
 msgid "advlink_dlg_target_parent"
-msgstr "In bovenliggend venster / frame openen"
+msgstr "親ウインドウ/親フレームで開く"
 
 msgid "advlink_dlg_target_top"
-msgstr "In bovenste frame openen (vervangt gehele pagina)"
+msgstr "トップのフレームで開く"
 
 msgid "advlink_dlg_target_blank"
-msgstr "In nieuw venster openen"
+msgstr "新しいウインドウで開く"
 
 msgid "advlink_dlg_popup"
-msgstr "Javascript popup"
+msgstr "JavaScriptポップアップ"
 
 msgid "advlink_dlg_popup_url"
-msgstr "Popup URL"
+msgstr "ポップアップURL"
 
 msgid "advlink_dlg_popup_name"
-msgstr "Venstertitel"
+msgstr "ウインドウ名"
 
 msgid "advlink_dlg_popup_return"
-msgstr "'return false' invoegen"
+msgstr "'return false'を挿入する"
 
 msgid "advlink_dlg_popup_scrollbars"
-msgstr "Scrollbalken weergeven"
+msgstr "スクロールバーを表示"
 
 msgid "advlink_dlg_popup_statusbar"
-msgstr "Statusbalk weergeven"
+msgstr "ステータスバーを表示"
 
 msgid "advlink_dlg_popup_toolbar"
-msgstr "Werkbalk weergeven"
+msgstr "ツールバーを表示"
 
 msgid "advlink_dlg_popup_menubar"
-msgstr "Menubalk weergeven"
+msgstr "メニューバーを表示"
 
 msgid "advlink_dlg_popup_location"
-msgstr "Lokatiebalk weergeven"
+msgstr "アドレスバーを表示"
 
 msgid "advlink_dlg_popup_resizable"
-msgstr "Aanpasbaar venster"
+msgstr "ウインドウのサイズ変更を許可する"
 
 msgid "advlink_dlg_popup_dependent"
-msgstr "Afhankelijk (Alleen Mozilla/Firefox)"
+msgstr "Dependent (Mozilla/Firefoxのみ)"
 
 msgid "advlink_dlg_popup_size"
-msgstr "Grootte"
+msgstr "サイズ"
 
 msgid "advlink_dlg_popup_position"
-msgstr "Positie (X/Y)"
+msgstr "位置 (X/Y)"
 
 msgid "advlink_dlg_id"
-msgstr "Id"
+msgstr "ID"
 
 msgid "advlink_dlg_style"
-msgstr "Stijl"
+msgstr "スタイル"
 
 msgid "advlink_dlg_classes"
-msgstr "Klassen"
+msgstr "クラス"
 
 msgid "advlink_dlg_target_name"
-msgstr "Doel"
+msgstr "ターゲット名"
 
 msgid "advlink_dlg_langdir"
-msgstr "Taalrichting"
+msgstr "文章の方向"
 
 msgid "advlink_dlg_target_langcode"
-msgstr "Taal"
+msgstr "ターゲットの言語"
 
 msgid "advlink_dlg_langcode"
-msgstr "Taalcode"
+msgstr "言語コード"
 
 msgid "advlink_dlg_encoding"
-msgstr "Taalcodering"
+msgstr "ターゲットの文字エンコーディング"
 
 msgid "advlink_dlg_mime"
-msgstr "MIME type"
+msgstr "ターゲットのMIMEタイプ"
 
 msgid "advlink_dlg_rel"
-msgstr "Relatie van pagina tot doel"
+msgstr "このページのターゲットに対する関係"
 
 msgid "advlink_dlg_rev"
-msgstr "Relatie van doel tot pagina"
+msgstr "ターゲットのこのページに対する関係"
 
 msgid "advlink_dlg_tabindex"
-msgstr "Tabvolgorde"
+msgstr "タブインデックス"
 
 msgid "advlink_dlg_accesskey"
-msgstr "Toegangstoets"
+msgstr "アクセスキー"
 
 msgid "advlink_dlg_ltr"
-msgstr "Van links naar rechts"
+msgstr "左から右"
 
 msgid "advlink_dlg_rtl"
-msgstr "Van rechts naar links"
+msgstr "右から左"
 
 msgid "advlink_dlg_link_list"
-msgstr "Lijst"
+msgstr "一覧から選ぶ"
 
 msgid "xhtmlxtras_cite_desc"
-msgstr "Citaat"
+msgstr "引用"
 
 msgid "xhtmlxtras_abbr_desc"
-msgstr "Afkorting"
+msgstr "略語"
 
 msgid "xhtmlxtras_acronym_desc"
-msgstr "Synoniem"
+msgstr "頭字語"
 
 msgid "xhtmlxtras_del_desc"
-msgstr "Verwijderd"
+msgstr "削除"
 
 msgid "xhtmlxtras_ins_desc"
-msgstr "Ingevoegd"
+msgstr "挿入"
 
 msgid "xhtmlxtras_attribs_desc"
-msgstr "Attributen invoegen/bewerken"
+msgstr "属性の挿入/編集"
 
 msgid "xhtmlxtras_cite_delta_width"
 msgstr ""
@@ -1006,97 +1006,97 @@ msgid "xhtmlxtras_attribs_delta_height"
 msgstr ""
 
 msgid "xhtmlxtras_dlg_attribute_label_title"
-msgstr "Titel"
+msgstr "タイトル"
 
 msgid "xhtmlxtras_dlg_attribute_label_id"
 msgstr "ID"
 
 msgid "xhtmlxtras_dlg_attribute_label_class"
-msgstr "Klasse"
+msgstr "クラス"
 
 msgid "xhtmlxtras_dlg_attribute_label_style"
-msgstr "Stijl"
+msgstr "スタイル"
 
 msgid "xhtmlxtras_dlg_attribute_label_cite"
-msgstr "Citaat"
+msgstr "引用"
 
 msgid "xhtmlxtras_dlg_attribute_label_datetime"
-msgstr "Datum/Tijd"
+msgstr "日付/時刻"
 
 msgid "xhtmlxtras_dlg_attribute_label_langdir"
-msgstr "Tekstrichting"
+msgstr "文章の方向"
 
 msgid "xhtmlxtras_dlg_attribute_option_ltr"
-msgstr "Van links naar rechts"
+msgstr "左から右"
 
 msgid "xhtmlxtras_dlg_attribute_option_rtl"
-msgstr "Van rechts naar links"
+msgstr "右から左"
 
 msgid "xhtmlxtras_dlg_attribute_label_langcode"
-msgstr "Taal"
+msgstr "言語"
 
 msgid "xhtmlxtras_dlg_attribute_label_tabindex"
-msgstr "Tabvolgorde"
+msgstr "タブインデックス"
 
 msgid "xhtmlxtras_dlg_attribute_label_accesskey"
-msgstr "Toegangstoets"
+msgstr "アクセスキー"
 
 msgid "xhtmlxtras_dlg_attribute_events_tab"
-msgstr "Gebeurtenissen"
+msgstr "イベント"
 
 msgid "xhtmlxtras_dlg_attribute_attrib_tab"
-msgstr "Attributen"
+msgstr "属性"
 
 msgid "xhtmlxtras_dlg_general_tab"
-msgstr "Algemeen"
+msgstr "一般"
 
 msgid "xhtmlxtras_dlg_attrib_tab"
-msgstr "Attributen"
+msgstr "属性"
 
 msgid "xhtmlxtras_dlg_events_tab"
-msgstr "Gebeurtenissen"
+msgstr "イベント"
 
 msgid "xhtmlxtras_dlg_fieldset_general_tab"
-msgstr "Algemene instellingen"
+msgstr "一般"
 
 msgid "xhtmlxtras_dlg_fieldset_attrib_tab"
-msgstr "Elementattributen"
+msgstr "エレメントの属性"
 
 msgid "xhtmlxtras_dlg_fieldset_events_tab"
-msgstr "Element Gebeurtenissen"
+msgstr "エレメントのイベント"
 
 msgid "xhtmlxtras_dlg_title_ins_element"
-msgstr "Invoegingselement"
+msgstr "エレメントを挿入"
 
 msgid "xhtmlxtras_dlg_title_del_element"
-msgstr "Verwijderingselement"
+msgstr "エレメントを削除"
 
 msgid "xhtmlxtras_dlg_title_acronym_element"
-msgstr "Synoniem"
+msgstr "頭字語エレメント"
 
 msgid "xhtmlxtras_dlg_title_abbr_element"
-msgstr "Afkorting"
+msgstr "略語エレメント"
 
 msgid "xhtmlxtras_dlg_title_cite_element"
-msgstr "Citaat"
+msgstr "引用エレメント"
 
 msgid "xhtmlxtras_dlg_remove"
-msgstr "Verwijderen"
+msgstr "Remove"
 
 msgid "xhtmlxtras_dlg_insert_date"
-msgstr "Huidige datum/tijd invoegen"
+msgstr "現在の日付/時刻を挿入"
 
 msgid "xhtmlxtras_dlg_option_ltr"
-msgstr "Van links naar rechts"
+msgstr "左から右"
 
 msgid "xhtmlxtras_dlg_option_rtl"
-msgstr "Van rechts naar links"
+msgstr "右から左"
 
 msgid "xhtmlxtras_dlg_attribs_title"
-msgstr "Attributen Invoegen/bewerken"
+msgstr "属性の挿入/削除"
 
 msgid "style_desc"
-msgstr "CSS Stijl bewerken"
+msgstr "CSS編集"
 
 msgid "style_delta_width"
 msgstr ""
@@ -1105,265 +1105,265 @@ msgid "style_delta_height"
 msgstr ""
 
 msgid "style_dlg_title"
-msgstr "CSS Stijl bewerken"
+msgstr "CSS編集"
 
 msgid "style_dlg_apply"
-msgstr "Toepassen"
+msgstr "適用"
 
 msgid "style_dlg_text_tab"
-msgstr "Tekst"
+msgstr "文字"
 
 msgid "style_dlg_background_tab"
-msgstr "Achtergrond"
+msgstr "背景"
 
 msgid "style_dlg_block_tab"
-msgstr "Blok"
+msgstr "ブロック"
 
 msgid "style_dlg_box_tab"
-msgstr "Box"
+msgstr "ボックス"
 
 msgid "style_dlg_border_tab"
-msgstr "Rand"
+msgstr "枠線"
 
 msgid "style_dlg_list_tab"
-msgstr "Lijst"
+msgstr "リスト"
 
 msgid "style_dlg_positioning_tab"
-msgstr "Positionering"
+msgstr "ポジション"
 
 msgid "style_dlg_text_props"
-msgstr "Tekst"
+msgstr "Text"
 
 msgid "style_dlg_text_font"
-msgstr "Lettertype"
+msgstr "フォント"
 
 msgid "style_dlg_text_size"
-msgstr "Tekengrootte"
+msgstr "サイズ"
 
 msgid "style_dlg_text_weight"
-msgstr "Gewicht"
+msgstr "太さ"
 
 msgid "style_dlg_text_style"
-msgstr "Stijl"
+msgstr "スタイル"
 
 msgid "style_dlg_text_variant"
-msgstr "Variant"
+msgstr "変形"
 
 msgid "style_dlg_text_lineheight"
-msgstr "Lijnhoogte"
+msgstr "行高さ"
 
 msgid "style_dlg_text_case"
-msgstr "Hoofdlettergebruik"
+msgstr "大文字/小文字"
 
 msgid "style_dlg_text_color"
-msgstr "Kleur"
+msgstr "色"
 
 msgid "style_dlg_text_decoration"
-msgstr "Decoratie"
+msgstr "装飾"
 
 msgid "style_dlg_text_overline"
-msgstr "Overhalen"
+msgstr "上線"
 
 msgid "style_dlg_text_underline"
-msgstr "Onderstrepen"
+msgstr "下線"
 
 msgid "style_dlg_text_striketrough"
-msgstr "Doorhalen"
+msgstr "打消し線"
 
 msgid "style_dlg_text_blink"
-msgstr "Knipperen"
+msgstr "点滅"
 
 msgid "style_dlg_text_none"
-msgstr "Niets"
+msgstr "なし"
 
 msgid "style_dlg_background_color"
-msgstr "Achtergrondkleur"
+msgstr "背景色"
 
 msgid "style_dlg_background_image"
-msgstr "Achtergrondafbeelding"
+msgstr "背景画像"
 
 msgid "style_dlg_background_repeat"
-msgstr "Herhalen"
+msgstr "繰り返し"
 
 msgid "style_dlg_background_attachment"
-msgstr "Bijlage"
+msgstr "Attachment"
 
 msgid "style_dlg_background_hpos"
-msgstr "Horizontale positie"
+msgstr "水平位置"
 
 msgid "style_dlg_background_vpos"
-msgstr "Verticale positie"
+msgstr "垂直位置"
 
 msgid "style_dlg_block_wordspacing"
-msgstr "Woordruimte"
+msgstr "単語間隔"
 
 msgid "style_dlg_block_letterspacing"
-msgstr "Letterruimte"
+msgstr "文字間隔"
 
 msgid "style_dlg_block_vertical_alignment"
-msgstr "Verticale uitlijning"
+msgstr "垂直配置"
 
 msgid "style_dlg_block_text_align"
-msgstr "Tekstuitlijning"
+msgstr "水平配置"
 
 msgid "style_dlg_block_text_indent"
-msgstr "Inspringen"
+msgstr "インデント"
 
 msgid "style_dlg_block_whitespace"
-msgstr "Witruimte"
+msgstr "空白文字"
 
 msgid "style_dlg_block_display"
-msgstr "Weergave"
+msgstr "ディスプレイ"
 
 msgid "style_dlg_box_width"
-msgstr "Breedte"
+msgstr "幅"
 
 msgid "style_dlg_box_height"
-msgstr "Hoogte"
+msgstr "高さ"
 
 msgid "style_dlg_box_float"
-msgstr "Zweven"
+msgstr "回り込み"
 
 msgid "style_dlg_box_clear"
-msgstr "Vrijhouden"
+msgstr "回り込み解除"
 
 msgid "style_dlg_padding"
-msgstr "Opening"
+msgstr "パディング"
 
 msgid "style_dlg_same"
-msgstr "Alles hetzelfde"
+msgstr "全て同じにする"
 
 msgid "style_dlg_top"
-msgstr "Boven"
+msgstr "上"
 
 msgid "style_dlg_right"
-msgstr "Rechts"
+msgstr "右"
 
 msgid "style_dlg_bottom"
-msgstr "Onder"
+msgstr "下"
 
 msgid "style_dlg_left"
-msgstr "Links"
+msgstr "左"
 
 msgid "style_dlg_margin"
-msgstr "Marge"
+msgstr "マージン"
 
 msgid "style_dlg_style"
-msgstr "Stijl"
+msgstr "スタイル"
 
 msgid "style_dlg_width"
-msgstr "Breedte"
+msgstr "幅"
 
 msgid "style_dlg_height"
-msgstr "Hoogte"
+msgstr "高さ"
 
 msgid "style_dlg_color"
-msgstr "Kleur"
+msgstr "色"
 
 msgid "style_dlg_list_type"
-msgstr "Type"
+msgstr "マーカー種類"
 
 msgid "style_dlg_bullet_image"
-msgstr "Opsommingsteken"
+msgstr "マーカー画像"
 
 msgid "style_dlg_position"
-msgstr "Positie"
+msgstr "マーカー表示位置"
 
 msgid "style_dlg_positioning_type"
-msgstr "Type"
+msgstr "配置方法"
 
 msgid "style_dlg_visibility"
-msgstr "Zichtbaarheid"
+msgstr "表示"
 
 msgid "style_dlg_zindex"
-msgstr "Z-index"
+msgstr "Z-Index"
 
 msgid "style_dlg_overflow"
-msgstr "Overvloeien"
+msgstr "オーバーフロー"
 
 msgid "style_dlg_placement"
-msgstr "Plaatsing"
+msgstr "位置"
 
 msgid "style_dlg_clip"
-msgstr "Clip"
+msgstr "切り抜き"
 
 msgid "paste_paste_text_desc"
-msgstr "Als platte tekst plakken"
+msgstr "テキストとして貼り付け"
 
 msgid "paste_paste_word_desc"
-msgstr "Vanuit Word plakken"
+msgstr "Wordから貼り付け"
 
 msgid "paste_selectall_desc"
-msgstr "Alles selecteren"
+msgstr "全て選択"
 
 msgid "paste_dlg_text_title"
-msgstr "Gebruik Ctrl+V om tekst in het venster te plakken."
+msgstr "キーボードでCTRL+Vと入力しテキストを貼り付けてください。"
 
 msgid "paste_dlg_text_linebreaks"
-msgstr "Regelafbreking bewaren"
+msgstr "改行を保持する"
 
 msgid "paste_dlg_word_title"
-msgstr "Gebruik Ctrl+V om tekst in het venster te plakken."
+msgstr "CTRL+Vで貼り付け(※基本的な書式と表組のみ)"
 
 msgid "table_desc"
-msgstr "Nieuwe tabel invoegen"
+msgstr "表を挿入"
 
 msgid "table_row_before_desc"
-msgstr "Rij boven invoegen"
+msgstr "行を上に挿入"
 
 msgid "table_row_after_desc"
-msgstr "Rij onder invoegen"
+msgstr "行を下に挿入"
 
 msgid "table_delete_row_desc"
-msgstr "Rij verwijderen"
+msgstr "行を削除"
 
 msgid "table_col_before_desc"
-msgstr "Kolom links invoegen"
+msgstr "列を左に挿入"
 
 msgid "table_col_after_desc"
-msgstr "Kolom rechts invoegen"
+msgstr "列を右に挿入"
 
 msgid "table_delete_col_desc"
-msgstr "Kolom verwijderen"
+msgstr "列を削除"
 
 msgid "table_split_cells_desc"
-msgstr "Cellen splitsen"
+msgstr "セルの結合を解除"
 
 msgid "table_merge_cells_desc"
-msgstr "Cellen samenvoegen"
+msgstr "セルを結合"
 
 msgid "table_row_desc"
-msgstr "Rij-eigenschappen"
+msgstr "行のプロパティ"
 
 msgid "table_cell_desc"
-msgstr "Cel-eigenschappen"
+msgstr "セルのプロパティ"
 
 msgid "table_props_desc"
-msgstr "Tabeleigenschappen"
+msgstr "表のプロパティ"
 
 msgid "table_paste_row_before_desc"
-msgstr "Rij boven plakken"
+msgstr "行を上に貼り付け"
 
 msgid "table_paste_row_after_desc"
-msgstr "Rij onder plakken"
+msgstr "行を下に貼り付け"
 
 msgid "table_cut_row_desc"
-msgstr "Rij knippen"
+msgstr "行の切り取り"
 
 msgid "table_copy_row_desc"
-msgstr "Rij kopiëren"
+msgstr "行のコピー"
 
 msgid "table_del"
-msgstr "Tabel verwijderen"
+msgstr "表を削除"
 
 msgid "table_row"
-msgstr "Rij"
+msgstr "行"
 
 msgid "table_col"
-msgstr "Kolom"
+msgstr "列"
 
 msgid "table_cell"
-msgstr "Cel"
+msgstr "セル"
 
 msgid "table_rowprops_delta_width"
 msgstr ""
@@ -1390,232 +1390,232 @@ msgid "table_merge_cells_delta_height"
 msgstr ""
 
 msgid "table_dlg_general_tab"
-msgstr "Algemeen"
+msgstr "一般"
 
 msgid "table_dlg_advanced_tab"
-msgstr "Geavanceerd"
+msgstr "高度な設定"
 
 msgid "table_dlg_general_props"
-msgstr "Algemene eigenschappen"
+msgstr "一般"
 
 msgid "table_dlg_advanced_props"
-msgstr "Geavanceerde eigenschappen"
+msgstr "高度な設定"
 
 msgid "table_dlg_rowtype"
-msgstr "Rijtype"
+msgstr "行"
 
 msgid "table_dlg_title"
-msgstr "Tabel invoegen/bewerken"
+msgstr "表の挿入/編集"
 
 msgid "table_dlg_width"
-msgstr "Breedte"
+msgstr "幅"
 
 msgid "table_dlg_height"
-msgstr "Hoogte"
+msgstr "高さ"
 
 msgid "table_dlg_cols"
-msgstr "Kolommen"
+msgstr "列"
 
 msgid "table_dlg_rows"
-msgstr "Rijen"
+msgstr "行"
 
 msgid "table_dlg_cellspacing"
-msgstr "Ruimte om cel"
+msgstr "Cellspacing"
 
 msgid "table_dlg_cellpadding"
-msgstr "Ruimte in cel"
+msgstr "Cellpadding"
 
 msgid "table_dlg_border"
-msgstr "Rand"
+msgstr "枠線"
 
 msgid "table_dlg_align"
-msgstr "Uitlijning"
+msgstr "配置"
 
 msgid "table_dlg_align_default"
-msgstr "Standaard"
+msgstr "デフォルト"
 
 msgid "table_dlg_align_left"
-msgstr "Links"
+msgstr "左揃え"
 
 msgid "table_dlg_align_right"
-msgstr "Rechts"
+msgstr "右揃え"
 
 msgid "table_dlg_align_middle"
-msgstr "Centreren"
+msgstr "中央揃え"
 
 msgid "table_dlg_row_title"
-msgstr "Rij-eigenschappen"
+msgstr "行のプロパティ"
 
 msgid "table_dlg_cell_title"
-msgstr "Celeigenschappen"
+msgstr "セルのプロパティ"
 
 msgid "table_dlg_cell_type"
-msgstr "Celtype"
+msgstr "セル種別"
 
 msgid "table_dlg_valign"
-msgstr "Verticale uitlijning"
+msgstr "垂直方向の配置"
 
 msgid "table_dlg_align_top"
-msgstr "Boven"
+msgstr "上端揃え"
 
 msgid "table_dlg_align_bottom"
-msgstr "Onder"
+msgstr "下端揃え"
 
 msgid "table_dlg_bordercolor"
-msgstr "Randkleur"
+msgstr "枠線の色"
 
 msgid "table_dlg_bgcolor"
-msgstr "Achtergrondkleur"
+msgstr "背景色"
 
 msgid "table_dlg_merge_cells_title"
-msgstr "Cellen samenvoegen"
+msgstr "セルの結合"
 
 msgid "table_dlg_id"
-msgstr "Id"
+msgstr "ID"
 
 msgid "table_dlg_style"
-msgstr "Stijl"
+msgstr "スタイル"
 
 msgid "table_dlg_langdir"
-msgstr "Taalrichting"
+msgstr "文章の方向"
 
 msgid "table_dlg_langcode"
-msgstr "Taalcode"
+msgstr "言語コード"
 
 msgid "table_dlg_mime"
-msgstr "Doel MIME type"
+msgstr "ターゲットのMIMEタイプ"
 
 msgid "table_dlg_ltr"
-msgstr "Van links naar rechts"
+msgstr "左から右"
 
 msgid "table_dlg_rtl"
-msgstr "Van rechts naar links"
+msgstr "右から左"
 
 msgid "table_dlg_bgimage"
-msgstr "Achtergrondafbeelding"
+msgstr "背景画像"
 
 msgid "table_dlg_summary"
-msgstr "Samenvatting"
+msgstr "サマリー"
 
 msgid "table_dlg_td"
-msgstr "Gegevens"
+msgstr "標準"
 
 msgid "table_dlg_th"
-msgstr "Kop"
+msgstr "ヘッダ"
 
 msgid "table_dlg_cell_cell"
-msgstr "Huidige cel bijwerken"
+msgstr "選択セルの更新"
 
 msgid "table_dlg_cell_row"
-msgstr "Alle cellen in rij bijwerken"
+msgstr "行内のセルの更新"
 
 msgid "table_dlg_cell_all"
-msgstr "Alle cellen in tabel bijwerken"
+msgstr "全てのセルの更新"
 
 msgid "table_dlg_row_row"
-msgstr "Huidige rij bijwerken"
+msgstr "選択行の更新"
 
 msgid "table_dlg_row_odd"
-msgstr "Oneven rijen bijwerken"
+msgstr "奇数行の更新"
 
 msgid "table_dlg_row_even"
-msgstr "Even rijen bijwerken"
+msgstr "偶数行の更新"
 
 msgid "table_dlg_row_all"
-msgstr "Alle rijen bijwerken"
+msgstr "全ての行の更新"
 
 msgid "table_dlg_thead"
-msgstr "Tabelkop"
+msgstr "表ヘッダ"
 
 msgid "table_dlg_tbody"
-msgstr "Tabellichaam"
+msgstr "表ボディ"
 
 msgid "table_dlg_tfoot"
-msgstr "Tabelvoet"
+msgstr "表フッタ"
 
 msgid "table_dlg_scope"
-msgstr "Bereik"
+msgstr "スコープ"
 
 msgid "table_dlg_rowgroup"
-msgstr "Rijgroep"
+msgstr "行グループ"
 
 msgid "table_dlg_colgroup"
-msgstr "Kolomgroep"
+msgstr "列グループ"
 
 msgid "table_dlg_col_limit"
-msgstr "U heeft het maximale aantal kolommen van {$cols} overschreden."
+msgstr "列の最大数を超えました。"
 
 msgid "table_dlg_row_limit"
-msgstr "U heeft hebt het maximale aantal rijen van {$rows} overschreden."
+msgstr "行の最大数を超えました。"
 
 msgid "table_dlg_cell_limit"
-msgstr "U heeft het maximale aantal cellen van {$cells} overschreden."
+msgstr "セルの最大数を超えました。"
 
 msgid "table_dlg_missing_scope"
-msgstr "Weet u zeker dat u door wilt gaan met het toewijzen van een kop zonder een bereik op te geven? Mensen met een visuele handicap kunnen hierdoor waarschijnlijk slecht bij de gegevens."
+msgstr "表のスコープ属性を設定していませんがよろしいですか？"
 
 msgid "table_dlg_caption"
-msgstr "Tabelbeschrijving"
+msgstr "表に見出しを付ける"
 
 msgid "table_dlg_frame"
-msgstr "Frame"
+msgstr "セル枠線"
 
 msgid "table_dlg_frame_none"
-msgstr "Geen"
+msgstr "なし"
 
 msgid "table_dlg_frame_groups"
-msgstr "Groepen"
+msgstr "グループごと"
 
 msgid "table_dlg_frame_rows"
-msgstr "Rijen"
+msgstr "行"
 
 msgid "table_dlg_frame_cols"
-msgstr "Kolommen"
+msgstr "列"
 
 msgid "table_dlg_frame_all"
-msgstr "Alles"
+msgstr "全て"
 
 msgid "table_dlg_rules"
-msgstr "Hulplijnen"
+msgstr "表の外枠"
 
 msgid "table_dlg_rules_void"
-msgstr "Geen"
+msgstr "なし"
 
 msgid "table_dlg_rules_above"
-msgstr "Boven"
+msgstr "上"
 
 msgid "table_dlg_rules_below"
-msgstr "Onder"
+msgstr "下"
 
 msgid "table_dlg_rules_hsides"
-msgstr "Horizontale zijden"
+msgstr "上下"
 
 msgid "table_dlg_rules_lhs"
-msgstr "Linkerzijkant"
+msgstr "左"
 
 msgid "table_dlg_rules_rhs"
-msgstr "Rechterzijkant"
+msgstr "右"
 
 msgid "table_dlg_rules_vsides"
-msgstr "Verticale zijden"
+msgstr "左右"
 
 msgid "table_dlg_rules_box"
-msgstr "Box"
+msgstr "上下左右(box)"
 
 msgid "table_dlg_rules_border"
-msgstr "Rand"
+msgstr "上下左右(border)"
 
 msgid "autosave_unload_msg"
-msgstr "De wijzigingen zullen verloren gaan als u nu deze pagina verlaat."
+msgstr "他のページへ移動すると編集内容はすべて破棄されます。"
 
 msgid "fullscreen_desc"
-msgstr "Volledig scherm"
+msgstr "フルスクリーン"
 
 msgid "media_desc"
-msgstr "Media invoegen/bewerken"
+msgstr "埋め込みメディアの挿入/編集"
 
 msgid "media_edit"
-msgstr "Media bewerken"
+msgstr "埋め込みメディアの編集"
 
 msgid "media_delta_width"
 msgstr ""
@@ -1624,310 +1624,310 @@ msgid "media_delta_height"
 msgstr ""
 
 msgid "media_dlg_title"
-msgstr "Media invoegen/bewerken"
+msgstr "埋め込みメディアの挿入/編集"
 
 msgid "media_dlg_general"
-msgstr "Algemeen"
+msgstr "一般"
 
 msgid "media_dlg_advanced"
-msgstr "Geavanceerd"
+msgstr "高度な設定"
 
 msgid "media_dlg_file"
-msgstr "Bestand/URL"
+msgstr "ファイル/URL"
 
 msgid "media_dlg_list"
-msgstr "Lijst"
+msgstr "一覧から選ぶ"
 
 msgid "media_dlg_size"
-msgstr "Afmetingen"
+msgstr "サイズ"
 
 msgid "media_dlg_preview"
-msgstr "Voorbeeld"
+msgstr "プレビュー"
 
 msgid "media_dlg_constrain_proportions"
-msgstr "Verhouding bewaren"
+msgstr "縦横比を保存"
 
 msgid "media_dlg_type"
-msgstr "Type"
+msgstr "タイプ"
 
 msgid "media_dlg_id"
-msgstr "Id"
+msgstr "ID"
 
 msgid "media_dlg_name"
-msgstr "Naam"
+msgstr "名前"
 
 msgid "media_dlg_class_name"
-msgstr "Klasse"
+msgstr "クラス"
 
 msgid "media_dlg_vspace"
-msgstr "V-Ruimte"
+msgstr "上下余白"
 
 msgid "media_dlg_hspace"
-msgstr "H-Ruimte"
+msgstr "左右余白"
 
 msgid "media_dlg_play"
-msgstr "Automatisch afspelen"
+msgstr "自動再生"
 
 msgid "media_dlg_loop"
-msgstr "Herhalen"
+msgstr "繰り返し再生"
 
 msgid "media_dlg_menu"
-msgstr "Menu Weergeven"
+msgstr "メニューを表示"
 
 msgid "media_dlg_quality"
-msgstr "Kwaliteit"
+msgstr "品質"
 
 msgid "media_dlg_scale"
-msgstr "Schaal"
+msgstr "伸縮"
 
 msgid "media_dlg_align"
-msgstr "Uitlijning"
+msgstr "配置"
 
 msgid "media_dlg_salign"
-msgstr "Schaaluitlijning"
+msgstr "SAlign"
 
 msgid "media_dlg_wmode"
 msgstr "WMode"
 
 msgid "media_dlg_bgcolor"
-msgstr "Achtergrond"
+msgstr "背景色"
 
 msgid "media_dlg_base"
-msgstr "Basis"
+msgstr "Base"
 
 msgid "media_dlg_flashvars"
-msgstr "Variabelen"
+msgstr "Flashvars"
 
 msgid "media_dlg_liveconnect"
 msgstr "SWLiveConnect"
 
 msgid "media_dlg_autohref"
-msgstr "AutoHREF"
+msgstr "自動読込"
 
 msgid "media_dlg_cache"
-msgstr "Cache"
+msgstr "キャッシュ"
 
 msgid "media_dlg_hidden"
-msgstr "Verborgen"
+msgstr "非表示"
 
 msgid "media_dlg_controller"
-msgstr "Controller"
+msgstr "コントローラ表示"
 
 msgid "media_dlg_kioskmode"
-msgstr "Kioskmodus"
+msgstr "Kioskモード"
 
 msgid "media_dlg_playeveryframe"
-msgstr "Elk frame afspelen"
+msgstr "全フレーム再生"
 
 msgid "media_dlg_targetcache"
-msgstr "Doelcache"
+msgstr "ターゲットキャッシュ"
 
 msgid "media_dlg_correction"
-msgstr "Geen correctie"
+msgstr "No correction"
 
 msgid "media_dlg_enablejavascript"
-msgstr "JavaScript Inschakelen"
+msgstr "JavaScriptを有効にする"
 
 msgid "media_dlg_starttime"
-msgstr "Starttijd"
+msgstr "開始フレーム"
 
 msgid "media_dlg_endtime"
-msgstr "Eindtijd"
+msgstr "終了フレーム"
 
 msgid "media_dlg_href"
-msgstr "HREF"
+msgstr "リンク先URL"
 
 msgid "media_dlg_qtsrcchokespeed"
-msgstr "Chokesnelheid"
+msgstr "再生データレート"
 
 msgid "media_dlg_target"
-msgstr "Doel"
+msgstr "ターゲット"
 
 msgid "media_dlg_volume"
-msgstr "Volume"
+msgstr "音量"
 
 msgid "media_dlg_autostart"
-msgstr "Automatisch afspelen"
+msgstr "自動再生"
 
 msgid "media_dlg_enabled"
-msgstr "Ingeschakeld"
+msgstr "有効にする"
 
 msgid "media_dlg_fullscreen"
-msgstr "Volledig scherm"
+msgstr "フルスクリーン"
 
 msgid "media_dlg_invokeurls"
-msgstr "URLs laden"
+msgstr "URLを開く"
 
 msgid "media_dlg_mute"
-msgstr "Geluid dempen"
+msgstr "ミュート"
 
 msgid "media_dlg_stretchtofit"
-msgstr "Passend maken"
+msgstr "自動サイズ変更"
 
 msgid "media_dlg_windowlessvideo"
-msgstr "Video zonder venster"
+msgstr "windowlessモード"
 
 msgid "media_dlg_balance"
-msgstr "Balans"
+msgstr "ステレオのバランス"
 
 msgid "media_dlg_baseurl"
-msgstr "BasisURL"
+msgstr "Base URL"
 
 msgid "media_dlg_captioningid"
-msgstr "Ondertiteling id"
+msgstr "キャプション表示要素ID"
 
 msgid "media_dlg_currentmarker"
-msgstr "Huidige markering"
+msgstr "マーカー番号"
 
 msgid "media_dlg_currentposition"
-msgstr "Huidige positie"
+msgstr "再生位置（秒単位）"
 
 msgid "media_dlg_defaultframe"
-msgstr "Standaard frame"
+msgstr "デフォルトフレーム"
 
 msgid "media_dlg_playcount"
-msgstr "Afspeelteller"
+msgstr "再生回数"
 
 msgid "media_dlg_rate"
-msgstr "Snelheid"
+msgstr "再生レート"
 
 msgid "media_dlg_uimode"
-msgstr "UI Modus"
+msgstr "UI表示モード"
 
 msgid "media_dlg_flash_options"
-msgstr "Flash opties"
+msgstr "Flashオプション"
 
 msgid "media_dlg_qt_options"
-msgstr "Quicktime opties"
+msgstr "Quicktimeオプション"
 
 msgid "media_dlg_wmp_options"
-msgstr "Windows mediaspeler opties"
+msgstr "Windows media playerオプション"
 
 msgid "media_dlg_rmp_options"
-msgstr "Real mediaspeler opties"
+msgstr "Real media playerオプション"
 
 msgid "media_dlg_shockwave_options"
-msgstr "Shockwave opties"
+msgstr "Shockwaveオプション"
 
 msgid "media_dlg_autogotourl"
-msgstr "Automatisch naar URL"
+msgstr "autogotourl"
 
 msgid "media_dlg_center"
-msgstr "Centreren"
+msgstr "センタリング"
 
 msgid "media_dlg_imagestatus"
-msgstr "Afbeeldingstatus"
+msgstr "ステータス表示"
 
 msgid "media_dlg_maintainaspect"
-msgstr "Verhouding bewaren"
+msgstr "縦横比保存"
 
 msgid "media_dlg_nojava"
-msgstr "Geen java"
+msgstr "Javaを禁止"
 
 msgid "media_dlg_prefetch"
-msgstr "Voorladen"
+msgstr "プリフェッチ"
 
 msgid "media_dlg_shuffle"
-msgstr "Willekeurige volgorde"
+msgstr "シャッフル"
 
 msgid "media_dlg_console"
-msgstr "Console"
+msgstr "コンソール"
 
 msgid "media_dlg_numloop"
-msgstr "Aantal herhalingen"
+msgstr "繰り返し回数"
 
 msgid "media_dlg_controls"
-msgstr "Bediening"
+msgstr "コントローラ表示"
 
 msgid "media_dlg_scriptcallbacks"
-msgstr "Script callbacks"
+msgstr "コールバックイベント"
 
 msgid "media_dlg_swstretchstyle"
-msgstr "Schaal"
+msgstr "伸縮"
 
 msgid "media_dlg_swstretchhalign"
-msgstr "H-Schaal"
+msgstr "水平位置"
 
 msgid "media_dlg_swstretchvalign"
-msgstr "V-Schaal"
+msgstr "垂直位置"
 
 msgid "media_dlg_sound"
-msgstr "Geluid"
+msgstr "サウンド"
 
 msgid "media_dlg_progress"
-msgstr "Voortgang"
+msgstr "Progress"
 
 msgid "media_dlg_qtsrc"
-msgstr "Quicktime bron"
+msgstr "QT Src"
 
 msgid "media_dlg_qt_stream_warn"
-msgstr "Gestreamde RTSP bronnen dienen op het tabblad geavanceerd bij Quicktime bron te worden opgegeven.\nDe niet-gestreamde versie kan dan bij het tabblad algemeen worden opgegeven."
+msgstr "rtspストリーミングリソースを「高度な設定」タブの「QT Src」欄に入力してください。\nまた、「Src」欄にはストリーミングではないバージョーンを入力してください。"
 
 msgid "media_dlg_align_top"
-msgstr "Boven"
+msgstr "上"
 
 msgid "media_dlg_align_right"
-msgstr "Rechts"
+msgstr "右"
 
 msgid "media_dlg_align_bottom"
-msgstr "Onder"
+msgstr "下"
 
 msgid "media_dlg_align_left"
-msgstr "Links"
+msgstr "左"
 
 msgid "media_dlg_align_center"
-msgstr "Centreren"
+msgstr "中央"
 
 msgid "media_dlg_align_top_left"
-msgstr "Linksboven"
+msgstr "左上"
 
 msgid "media_dlg_align_top_right"
-msgstr "Rechtsboven"
+msgstr "右上"
 
 msgid "media_dlg_align_bottom_left"
-msgstr "Linksonder"
+msgstr "左下"
 
 msgid "media_dlg_align_bottom_right"
-msgstr "Rechtsonder"
+msgstr "右下"
 
 msgid "media_dlg_flv_options"
-msgstr "Flash video-opties"
+msgstr "Flash videoオプション"
 
 msgid "media_dlg_flv_scalemode"
-msgstr "Schaalmodus"
+msgstr "伸縮モード"
 
 msgid "media_dlg_flv_buffer"
-msgstr "Buffer"
+msgstr "バッファ秒数"
 
 msgid "media_dlg_flv_startimage"
-msgstr "Startafbeelding"
+msgstr "初期画像URL"
 
 msgid "media_dlg_flv_starttime"
-msgstr "Starttijd"
+msgstr "開始フレーム"
 
 msgid "media_dlg_flv_defaultvolume"
-msgstr "Standaard volume"
+msgstr "音量"
 
 msgid "media_dlg_flv_hiddengui"
-msgstr "GUI verbergen"
+msgstr "コントローラ非表示"
 
 msgid "media_dlg_flv_autostart"
-msgstr "Automatisch afspelen"
+msgstr "自動再生"
 
 msgid "media_dlg_flv_loop"
-msgstr "Herhalen"
+msgstr "繰り返し再生"
 
 msgid "media_dlg_flv_showscalemodes"
-msgstr "Schaalmodus weergeven"
+msgstr "伸縮切替ボタン表示"
 
 msgid "media_dlg_flv_smoothvideo"
-msgstr "Soepele video"
+msgstr "スムージング"
 
 msgid "media_dlg_flv_jscallback"
-msgstr "JS Callback"
+msgstr "JSコールバック"
 
 msgid "fullpage_desc"
-msgstr "Documenteigenschappen"
+msgstr "ページ設定"
 
 msgid "fullpage_delta_width"
 msgstr ""
@@ -1936,238 +1936,238 @@ msgid "fullpage_delta_height"
 msgstr ""
 
 msgid "fullpage_dlg_title"
-msgstr "Documenteigenschappen"
+msgstr "ページ設定"
 
 msgid "fullpage_dlg_meta_tab"
-msgstr "Algemeen"
+msgstr "一般"
 
 msgid "fullpage_dlg_appearance_tab"
-msgstr "Weergave"
+msgstr "表示"
 
 msgid "fullpage_dlg_advanced_tab"
-msgstr "Geavanceerd"
+msgstr "高度な設定"
 
 msgid "fullpage_dlg_meta_props"
-msgstr "Meta informatie"
+msgstr "メタ情報"
 
 msgid "fullpage_dlg_langprops"
-msgstr "Taal en codering"
+msgstr "言語とエンコーディング"
 
 msgid "fullpage_dlg_meta_title"
-msgstr "Titel"
+msgstr "タイトル"
 
 msgid "fullpage_dlg_meta_keywords"
-msgstr "Sleutelwoorden"
+msgstr "キーワード"
 
 msgid "fullpage_dlg_meta_description"
-msgstr "Beschrijving"
+msgstr "説明"
 
 msgid "fullpage_dlg_meta_robots"
-msgstr "Robots"
+msgstr "検索ロボット制御"
 
 msgid "fullpage_dlg_doctypes"
-msgstr "Doctype"
+msgstr "DOCTYPE"
 
 msgid "fullpage_dlg_langcode"
-msgstr "Taalcode"
+msgstr "言語コード"
 
 msgid "fullpage_dlg_langdir"
-msgstr "Taalrichting"
+msgstr "文章の方向"
 
 msgid "fullpage_dlg_ltr"
-msgstr "Van links naar rechts"
+msgstr "左から右"
 
 msgid "fullpage_dlg_rtl"
-msgstr "Van rechts naar links"
+msgstr "右から左"
 
 msgid "fullpage_dlg_xml_pi"
-msgstr "XML toewijzing"
+msgstr "XML宣言"
 
 msgid "fullpage_dlg_encoding"
-msgstr "Karaktercodering"
+msgstr "文字エンコーディング"
 
 msgid "fullpage_dlg_appearance_bgprops"
-msgstr "Achtergrondeigenschappen"
+msgstr "背景のプロパティ"
 
 msgid "fullpage_dlg_appearance_marginprops"
-msgstr "Bodymarge"
+msgstr "余白"
 
 msgid "fullpage_dlg_appearance_linkprops"
-msgstr "Linkkleuren"
+msgstr "リンク色"
 
 msgid "fullpage_dlg_appearance_textprops"
-msgstr "Teksteigenschappen"
+msgstr "文字もプロパティ"
 
 msgid "fullpage_dlg_bgcolor"
-msgstr "Achtergrondkleur"
+msgstr "背景色"
 
 msgid "fullpage_dlg_bgimage"
-msgstr "Achtergrondafbeelding"
+msgstr "背景画像"
 
 msgid "fullpage_dlg_left_margin"
-msgstr "Linkermarge"
+msgstr "左余白"
 
 msgid "fullpage_dlg_right_margin"
-msgstr "Rechtermarge"
+msgstr "右余白"
 
 msgid "fullpage_dlg_top_margin"
-msgstr "Bovenmarge"
+msgstr "上余白"
 
 msgid "fullpage_dlg_bottom_margin"
-msgstr "Ondermarge"
+msgstr "下余白"
 
 msgid "fullpage_dlg_text_color"
-msgstr "Tekstkleur"
+msgstr "文字色"
 
 msgid "fullpage_dlg_font_size"
-msgstr "Tekengrootte"
+msgstr "文字サイズ"
 
 msgid "fullpage_dlg_font_face"
-msgstr "Lettertype"
+msgstr "フォント"
 
 msgid "fullpage_dlg_link_color"
-msgstr "Linkkleur"
+msgstr "リンク色"
 
 msgid "fullpage_dlg_hover_color"
-msgstr "Hoverkleur"
+msgstr "リンク色(hover)"
 
 msgid "fullpage_dlg_visited_color"
-msgstr "Bezocht kleur"
+msgstr "リンク色(visited)"
 
 msgid "fullpage_dlg_active_color"
-msgstr "Actieve kleur"
+msgstr "リンク色(active)"
 
 msgid "fullpage_dlg_textcolor"
-msgstr "Kleur"
+msgstr "色"
 
 msgid "fullpage_dlg_fontsize"
-msgstr "Tekengrootte"
+msgstr "文字サイズ"
 
 msgid "fullpage_dlg_fontface"
-msgstr "Lettertype"
+msgstr "フォント"
 
 msgid "fullpage_dlg_meta_index_follow"
-msgstr "Links indexeren en volgen"
+msgstr "このページとリンク先の巡回を許可"
 
 msgid "fullpage_dlg_meta_index_nofollow"
-msgstr "Links indexeren maar niet volgen"
+msgstr "このページの巡回を許可・リンク先の巡回を禁止"
 
 msgid "fullpage_dlg_meta_noindex_follow"
-msgstr "Links volgen maar niet indexeren"
+msgstr "このページの巡回を禁止・リンク先の巡回を許可"
 
 msgid "fullpage_dlg_meta_noindex_nofollow"
-msgstr "Links niet indexeren en niet volgen"
+msgstr "このページとリンク先の巡回を禁止"
 
 msgid "fullpage_dlg_appearance_style"
-msgstr "Stijlblad en stijleigenschappen"
+msgstr "スタイル設定"
 
 msgid "fullpage_dlg_stylesheet"
-msgstr "Stijlblad"
+msgstr "スタイルシート"
 
 msgid "fullpage_dlg_style"
-msgstr "Stijl"
+msgstr "スタイル"
 
 msgid "fullpage_dlg_author"
-msgstr "Auteur"
+msgstr "作者"
 
 msgid "fullpage_dlg_copyright"
-msgstr "Copyright"
+msgstr "コピーライト"
 
 msgid "fullpage_dlg_add"
-msgstr "Nieuw element toevoegen"
+msgstr "エレメント追加"
 
 msgid "fullpage_dlg_remove"
-msgstr "Geselecteerde elementen verwijderen"
+msgstr "選択要素の削除"
 
 msgid "fullpage_dlg_moveup"
-msgstr "Geselecteerde elementen omhoog verplaatsen"
+msgstr "選択要素を上へ移動"
 
 msgid "fullpage_dlg_movedown"
-msgstr "Geselecteerde elementen omlaag verplaatsen"
+msgstr "選択要素を下へ移動"
 
 msgid "fullpage_dlg_head_elements"
-msgstr "Kopelementen"
+msgstr "Head要素"
 
 msgid "fullpage_dlg_info"
-msgstr "Informatie"
+msgstr "インフォメーション"
 
 msgid "fullpage_dlg_add_title"
-msgstr "Titelelement"
+msgstr "Title要素"
 
 msgid "fullpage_dlg_add_meta"
-msgstr "Meta-element"
+msgstr "Meta要素"
 
 msgid "fullpage_dlg_add_script"
-msgstr "Scriptelement"
+msgstr "Script要素"
 
 msgid "fullpage_dlg_add_style"
-msgstr "Stijlelement"
+msgstr "Style要素"
 
 msgid "fullpage_dlg_add_link"
-msgstr "Linkelement"
+msgstr "Link要素"
 
 msgid "fullpage_dlg_add_base"
-msgstr "Basiselement"
+msgstr "Base要素"
 
 msgid "fullpage_dlg_add_comment"
-msgstr "Opmerkingknooppunt"
+msgstr "Commentノード"
 
 msgid "fullpage_dlg_title_element"
-msgstr "Titelelement"
+msgstr "Title要素"
 
 msgid "fullpage_dlg_script_element"
-msgstr "Scriptelement"
+msgstr "Script要素"
 
 msgid "fullpage_dlg_style_element"
-msgstr "Stijlelement"
+msgstr "Style要素"
 
 msgid "fullpage_dlg_base_element"
-msgstr "Basiselement"
+msgstr "Base要素"
 
 msgid "fullpage_dlg_link_element"
-msgstr "Linkelement"
+msgstr "Link要素"
 
 msgid "fullpage_dlg_meta_element"
-msgstr "Meta-element"
+msgstr "Meta要素"
 
 msgid "fullpage_dlg_comment_element"
-msgstr "Opmerking"
+msgstr "Comment"
 
 msgid "fullpage_dlg_src"
-msgstr "Bron"
+msgstr "src"
 
 msgid "fullpage_dlg_language"
-msgstr "Taal"
+msgstr "Language"
 
 msgid "fullpage_dlg_href"
 msgstr "Href"
 
 msgid "fullpage_dlg_target"
-msgstr "Doel"
+msgstr "Target"
 
 msgid "fullpage_dlg_type"
 msgstr "Type"
 
 msgid "fullpage_dlg_charset"
-msgstr "Karakterset"
+msgstr "Charset"
 
 msgid "fullpage_dlg_defer"
-msgstr "Uitstellen"
+msgstr "Defer"
 
 msgid "fullpage_dlg_media"
 msgstr "Media"
 
 msgid "fullpage_dlg_properties"
-msgstr "Eigenschappen"
+msgstr "Properties"
 
 msgid "fullpage_dlg_name"
-msgstr "Naam"
+msgstr "Name"
 
 msgid "fullpage_dlg_value"
-msgstr "Waarde"
+msgstr "Value"
 
 msgid "fullpage_dlg_content"
-msgstr "Inhoud"
+msgstr "Content"
 
 msgid "fullpage_dlg_rel"
 msgstr "Rel"
@@ -2176,86 +2176,86 @@ msgid "fullpage_dlg_rev"
 msgstr "Rev"
 
 msgid "fullpage_dlg_hreflang"
-msgstr "Href taal"
+msgstr "Href lang"
 
 msgid "fullpage_dlg_general_props"
-msgstr "Algemeen"
+msgstr "一般"
 
 msgid "fullpage_dlg_advanced_props"
-msgstr "Geavanceerd"
+msgstr "高度な設定"
 
 msgid "template_desc"
-msgstr "Voorgedefinieerd sjabloon invoegen"
+msgstr "テンプレートの挿入"
 
 msgid "template_dlg_title"
-msgstr "Sjablonen"
+msgstr "テンプレート"
 
 msgid "template_dlg_label"
-msgstr "Sjabloon"
+msgstr "テンプレート"
 
 msgid "template_dlg_desc_label"
-msgstr "Beschrijving"
+msgstr "説明"
 
 msgid "template_dlg_desc"
-msgstr "Voorgedefinieerd sjabloon invoegen"
+msgstr "テンプレートの挿入"
 
 msgid "template_dlg_select"
-msgstr "Selecteer een sjabloon"
+msgstr "テンプレートを選択"
 
 msgid "template_dlg_preview"
-msgstr "Voorbeeld"
+msgstr "プレビュー"
 
 msgid "template_dlg_warning"
-msgstr "Waarschuwing: het bijwerken van een sjabloon met een andere kan het verlies van informatie tot gevolg hebben."
+msgstr "警告：テンプレートを上書きすると以前のデータは失われます。"
 
 msgid "template_dlg_mdate_format"
-msgstr "%d-%m-%Y %H:%M:%S"
+msgstr "%Y/%m/%d %H:%M:%S"
 
 msgid "template_dlg_cdate_format"
-msgstr "%d-%m-%Y %H:%M:%S"
+msgstr "%Y/%m/%d %H:%M:%S"
 
 msgid "template_dlg_months_long"
-msgstr "Januari,Februari,Maart,April,Mei,Juni,Juli,Augustus,September,Oktober,November,December"
+msgstr "1月,2月,3月,4月,5月,6月,7月,8月,9月,10月,11月,12月"
 
 msgid "template_dlg_months_short"
-msgstr "Jan,Feb,Mar,Apr,Mei,Jun,Jul,Aug,Sep,Okt,Nov,Dec"
+msgstr "1,2,3,4,5,6,7,8,9,10,11,12"
 
 msgid "template_dlg_day_long"
-msgstr "Zondag,Maandag,Dinsdag,Woensdag,Donderdag,Vrijdag,Zaterdag,Zondag"
+msgstr "日曜日,月曜日,火曜日,水曜日,木曜日,金曜日,土曜日,日曜日"
 
 msgid "template_dlg_day_short"
-msgstr "zo,ma,di,wo,do,vr,za,zo"
+msgstr "(日),(月),(火),(水),(木),(金),(土),(日)"
 
 msgid "visualchars_desc"
-msgstr "Zichtbare symbolen"
+msgstr "制御文字の表示"
 
 msgid "spellchecker_desc"
-msgstr "Spellingcontrole"
+msgstr "スペルチェックOn/Off"
 
 msgid "spellchecker_menu"
-msgstr "Instellingen spellingcontrole"
+msgstr "スペルチェック設定"
 
 msgid "spellchecker_ignore_word"
-msgstr "Woord negeren"
+msgstr "この単語を無視"
 
 msgid "spellchecker_ignore_words"
-msgstr "Alles negeren"
+msgstr "全て無視"
 
 msgid "spellchecker_langs"
-msgstr "Talen"
+msgstr "言語"
 
 msgid "spellchecker_wait"
-msgstr "Een ogenblik geduld…"
+msgstr "しばらくお待ちください..."
 
 msgid "spellchecker_sug"
-msgstr "Suggesties"
+msgstr "候補"
 
 msgid "spellchecker_no_sug"
-msgstr "Geen suggesties"
+msgstr "候補がありません"
 
 msgid "spellchecker_no_mpell"
-msgstr "Geen spelfouten gevonden."
+msgstr "スペルミスはありません"
 
 msgid "pagebreak_desc"
-msgstr "Pagina-einde invoegen"
+msgstr "改ページ挿入"
 

@@ -3,7 +3,7 @@ from zope import schema
 from zope.i18nmessageid import MessageFactory
 from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
 
-_ = MessageFactory('tinymce')
+_ = MessageFactory('plone.tinymce')
 
 class ITinyMCELayout(Interface):
 	"""This interface defines the layout properties."""
