@@ -16,41 +16,41 @@
 			<form>
 				<input type="hidden" name="href" id="href"/>
 				<fieldset class="column" style="width: 120px;">
-					<legend i18n:translate="libraries">Libraries</legend>
+					<legend i18n:translate="">Libraries</legend>
 		            <ul class="configlets">
 		                <li>
 							<a href="javascript:displayPanel('internal_panel'); getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonlinkablefolderlisting');">
-							    <img alt="" tal:attributes="src string:$portal_url/logoIcon.gif"/> <span i18n:translate="home">Home</span>
+							    <img alt="" tal:attributes="src string:$portal_url/logoIcon.gif"/> <span i18n:translate="">Home</span>
 							</a>
 						</li>
 		                <li>
 							<a href="javascript:displayPanel('internal_panel'); getCurrentFolderListing();">
-							    <img alt="" tal:attributes="src string:$portal_url/site_icon.gif"/> <span i18n:translate="current_folder">Current Folder</span>
+							    <img alt="" tal:attributes="src string:$portal_url/site_icon.gif"/> <span i18n:translate="">Current Folder</span>
 							</a>
 						</li>
 		                <!-- li>
 							<a href="javascript:displayPanel('internal_panel');">
-							    <img alt="" tal:attributes="src string:$portal_url/popup_calendar.gif"/> <span i18n:translate="recent_items">Recent Items</span>
+							    <img alt="" tal:attributes="src string:$portal_url/popup_calendar.gif"/> <span i18n:translate="">Recent Items</span>
 							</a>
 						</li -->
 		                <li>
 							<a href="javascript:displayPanel('external_panel');">
-					            <img alt="" tal:attributes="src string:$portal_url/link_icon.gif"/> <span i18n:translate="external">External</span>
+					            <img alt="" tal:attributes="src string:$portal_url/link_icon.gif"/> <span i18n:translate="">External</span>
 		                    </a>
 		                </li>
 		                <li>
 							<a href="javascript:displayPanel('mail_panel');">
-					            <img alt="" tal:attributes="src string:$portal_url/mail_icon.gif"/> <span i18n:translate="mail">Mail</span>
+					            <img alt="" tal:attributes="src string:$portal_url/mail_icon.gif"/> <span i18n:translate="">Mail</span>
 		                    </a>
 		                </li>
 		                <li>
 							<a href="javascript:displayPanel('anchors_panel');">
-					            <img alt="" tal:attributes="src string:$portal_url/arrowBottom.gif"/> <span i18n:translate="anchors">Anchors</span>
+					            <img alt="" tal:attributes="src string:$portal_url/arrowBottom.gif"/> <span i18n:translate="">Anchors</span>
 		                    </a>
 		                </li>
 		            </ul>
                 <div class="field">
-                  <label for="searchtext" i18n:translate="search">Search</label>
+                  <label for="searchtext" i18n:translate="">Search</label>
                   <div class="widget">
                     <input type="text" name="searchtext" id="searchtext" value="" onkeyup="checkSearch(event);" size="12"/>
                     <input type="button" style="margin-top: 4px;" value="Search" class="searchButton" onclick="getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonlinkablesearch');"/>
@@ -59,7 +59,7 @@
 				</fieldset>
 
 				<fieldset id="internal_panel" class="subPanel column" style="width: 296px;">
-					<legend i18n:translate="internal_link">Internal link</legend>
+					<legend i18n:translate="">Internal link</legend>
 					<div class="field">
 						<div id="internalpath" class="formHelp" style="text-align: right;"></div>
 						<label for="internallink">{#advlink_dlg.list}</label>
@@ -86,7 +86,7 @@
 				</fieldset>
 
 				<fieldset id="external_panel" class="subPanel column" style="width:520px; display: none;">
-					<legend i18n:translate="external_link">External link</legend>
+					<legend i18n:translate="">External link</legend>
 					<div class="field">
 						<label for="externalurl">{#advlink_dlg.url}</label>
 						<div class="widget">
@@ -96,7 +96,7 @@
 								<option value="ftp://">ftp://</option>
 							</select>
 							<input type="text" name="externalurl" id="externalurl" value="" onkeyup="checkExternalUrl();" size="30"/>
-							<input type="button" id="preview" class="context" name="preview" value="Preview" i18n:attributes="value preview" onclick="previewExternalLink();" />
+							<input type="button" id="preview" class="context" name="preview" value="Preview" i18n:attributes="value" onclick="previewExternalLink();" />
 						</div>
 					</div>
 
@@ -109,16 +109,16 @@
 				</fieldset>
 
 				<fieldset id="mail_panel" class="subPanel column" style="width: 520px; display: none;">
-					<legend i18n:translate="mail">Mail</legend>
+					<legend i18n:translate="">Mail</legend>
 					<div class="field">
-						<label for="mailaddress" i18n:translate="email">E-mail</label>
+						<label for="mailaddress" i18n:translate="">E-mail</label>
 						<div class="widget">
 							<input type="text" name="mailaddress" id="mailaddress" value="" size="30" />
 						</div>
 					</div>
 
 					<div class="field">
-						<label for="mailsubject" i18n:translate="subject">Subject</label>
+						<label for="mailsubject" i18n:translate="">Subject</label>
 						<div class="widget">
 							<input type="text" name="mailsubject" id="mailsubject" value="" size="30" />
 						</div>
@@ -126,7 +126,7 @@
 				</fieldset>
 
 				<fieldset id="anchors_panel" class="subPanel column" style="width: 520px; display: none;">
-					<legend i18n:translate="link_to_anchor">Link to anchor</legend>
+					<legend i18n:translate="">Link to anchor</legend>
 					<div class="field">
 						<label>{#advlink_dlg.anchor_names}</label>
 						<div id="anchorlinkcontainer" class="widget radioscrolllist input-border" style="height: 280px;">
@@ -136,10 +136,10 @@
 			</form>
 	
 			<fieldset id="upload_panel" class="subPanel column" style="width: 190px; display: none;">
-				<legend i18n:translate="upload_file">Upload file</legend>
+				<legend i18n:translate="">Upload file</legend>
 				<form name="upload_form" id="upload_form" method="post" target="upload_iframe" enctype="multipart/form-data">
 					<div class="field">
-						<label for="uploadfile" i18n:translate="file">File</label>
+						<label for="uploadfile" i18n:translate="">File</label>
 						<div class="widget">
 							<input type="file" name="uploadfile" id="uploadfile" value="" style="width: 100%" size="15" />
 						</div>
@@ -153,13 +153,13 @@
 					</div>
 
 					<div class="field">
-						<label for="uploaddescription" i18n:translate="description">Description</label>
+						<label for="uploaddescription" i18n:translate="">Description</label>
 						<div class="widget">
 							<textarea wrap="soft" cols="10" rows="6" id="uploaddescription" name="uploaddescription"></textarea>
 						</div>
 					</div>
 
-					<input type="button" id="uploadbutton" class="context" name="uploadbutton" value="Upload" i18n:attributes="value upload" onclick="document.forms[1].submit();"/>
+					<input type="button" id="uploadbutton" class="context" name="uploadbutton" value="Upload" i18n:attributes="value" onclick="document.forms[1].submit();"/>
 				</form>
 				<iframe style="display: none;" width="0" scrolling="off" height="0" frameborder="0" id="upload_iframe" name="upload_iframe" src="javascript:''"></iframe>
 			</fieldset>
@@ -269,7 +269,7 @@
 				</fieldset>
 
 				<div class="field">
-					<label for="title" i18n:translate="title">Title</label>
+					<label for="title" i18n:translate="">Title</label>
 					<div class="widget">
 						<input type="text" name="title" id="title" value="" size="30" />
 					</div>
@@ -284,7 +284,7 @@
 				<span class="actionButtons">
 					<input type="submit" id="insert" class="context" name="insert" value="{#insert}" />
 					<input type="button" id="cancel" class="context" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
-					<input type="button" id="upload" class="standalone" name="upload" value="Upload file" i18n:attributes="value upload_file" onclick="displayPanel('upload_panel');" />
+					<input type="button" id="upload" class="standalone" name="upload" value="Upload file" i18n:attributes="value" onclick="displayPanel('upload_panel');" />
 				</span>
 			</div>
 		</form>

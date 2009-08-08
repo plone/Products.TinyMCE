@@ -29,19 +29,19 @@ class TinyMCEControlPanelForm(ControlPanelForm):
 
     tinymcelayout = FormFieldsets(ITinyMCELayout)
     tinymcelayout.id = 'tinymcelayout'
-    tinymcelayout.label = _(u'layout', default=u'Layout')
+    tinymcelayout.label = _(u'Layout')
 
     tinymcetoolbar = FormFieldsets(ITinyMCEToolbar)
     tinymcetoolbar.id = 'tinymcetoolbar'
-    tinymcetoolbar.label = _(u'toolbar', default=u'Toolbar')
+    tinymcetoolbar.label = _(u'Toolbar')
 
     tinymcelibraries = FormFieldsets(ITinyMCELibraries)
     tinymcelibraries.id = 'tinymcelibraries'
-    tinymcelibraries.label = _(u'libraries', default=u'Libraries')
+    tinymcelibraries.label = _(u'Libraries')
 
     tinymceresourcetypes = FormFieldsets(ITinyMCEResourceTypes)
     tinymceresourcetypes.id = 'tinymceresourcetypes'
-    tinymceresourcetypes.label = _(u'resourcetypes', default=u'Resource Types')
+    tinymceresourcetypes.label = _(u'Resource Types')
 
     form_fields = FormFieldsets(tinymcelayout, tinymcetoolbar, tinymceresourcetypes) # tinymcelibraries
 
