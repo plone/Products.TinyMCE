@@ -53,7 +53,7 @@
                   <label for="searchtext" i18n:translate="">Search</label>
                   <div class="widget">
                     <input type="text" name="searchtext" id="searchtext" value="" onkeyup="checkSearch(event);" size="12"/>
-                    <input type="button" style="margin-top: 4px;" value="Search" class="searchButton" onclick="getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonlinkablesearch');"/>
+                    <input type="button" style="margin-top: 4px;" value="Search" i18n:attributes="value" class="searchButton" onclick="getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonlinkablesearch');"/>
                   </div>
                 </div>
 				</fieldset>
@@ -63,7 +63,7 @@
 					<div class="field">
 						<div id="internalpath" class="formHelp" style="text-align: right;"></div>
 						<label for="internallink">{#advlink_dlg.list}</label>
-						<a id="uponelevel" class="link-parent" style="line-height: 1em;" href="javascript:void(0)"> Up one level </a>
+						<a id="uponelevel" class="link-parent" style="line-height: 1em;" href="javascript:void(0)" i18n:translate="">Up one level</a>
 						<div id="internallinkcontainer" class="widget radioscrolllist input-border" style="height: 260px;">
 						</div>
 					</div>
