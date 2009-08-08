@@ -1,7 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html id="region-conent" xmlns="http://www.w3.org/1999/xhtml">
-<dtml-with base_properties>
-<dtml-call "REQUEST.set('portal_url', portal_url())">
+<html id="region-content" xmlns="http://www.w3.org/1999/xhtml" i18n:domain="tinymce">
 <head>
 	<title>{#advimage_dlg.dialog_title}</title>
 	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
@@ -9,36 +7,37 @@
 	<script type="text/javascript" src="../../utils/form_utils.js"></script>
 	<script type="text/javascript" src="js/image.js"></script>
 </head>
-<body id="advimage" style="display: none">
+<body id="advimage" style="display: none"
+  tal:define="portal_url context/portal_url">
 	<div class="dialog-wrapper">
 		<fieldset id="general_panel">
 			<legend>{#advimage_dlg.dialog_title}</legend>
 			<form>
 
 				<fieldset class="column" style="width: 120px;">
-					<legend>Libraries</legend>
+					<legend i18n:translate="">Libraries</legend>
 		            <ul class="configlets">
 		                <li>
-							<a href="javascript:ImageDialog.displayPanel('internal_panel'); ImageDialog.getFolderListing('<dtml-var portal_url>', 'tinymce-jsonimagefolderlisting');">
-							    <img alt="" src="<dtml-var portal_url>/logoIcon.gif"/> Home
+							<a href="javascript:ImageDialog.displayPanel('internal_panel'); ImageDialog.getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonimagefolderlisting');">
+							    <img alt="" tal:attributes="src string:$portal_url/logoIcon.gif"/> <span i18n:translate="">Home</span>
 							</a>
 						</li>
 		                <li>
 							<a href="javascript:ImageDialog.displayPanel('internal_panel'); ImageDialog.getCurrentFolderListing();">
-							    <img alt="" src="<dtml-var portal_url>/site_icon.gif"/> Current Folder
+							    <img alt="" tal:attributes="src string:$portal_url/site_icon.gif"/> <span i18n:translate="">Current Folder</span>
 							</a>
 						</li>
 		                <!--li>
 							<a href="javascript:ImageDialog.displayPanel('internal_panel');">
-							    <img alt="" src="<dtml-var portal_url>/popup_calendar.gif"/> Recent Items
+							    <img alt="" tal:attributes="src string:$portal_url/popup_calendar.gif"/> Recent Items
 							</a>
 						</li-->
 		            </ul>
                 <div class="field">
-                  <label for="searchtext">Search</label>
+                  <label for="searchtext" i18n:translate="">Search</label>
                   <div class="widget">
                     <input type="text" name="searchtext" id="searchtext" value="" onkeyup="ImageDialog.checkSearch(event);" size="12"/>
-                    <input type="button" style="margin-top: 4px;" value="Search" class="searchButton" onclick="ImageDialog.getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonlinkablesearch');"/>
+                    <input type="button" style="margin-top: 4px;" value="Search" i18n:attributes="value" class="searchButton" onclick="ImageDialog.getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonlinkablesearch');"/>
                   </div>
                 </div>
 				</fieldset>
@@ -48,14 +47,14 @@
 					<div class="field">
 						<div id="internalpath" class="formHelp" style="text-align: right;"></div>
 						<label for="internallink">{#advimage_dlg.image_list}</label>
-						<a id="uponelevel" class="link-parent" style="line-height: 1em;" href="javascript:void(0)"> Up one level </a>
+						<a id="uponelevel" class="link-parent" style="line-height: 1em;" href="javascript:void(0)" i18n:translate="">Up one level</a>
 						<div id="internallinkcontainer" class="widget radioscrolllist input-border" style="height: 260px;">
 						</div>
 					</div>
 				</fieldset>
 
 				<fieldset id="internal_details_panel" class="subPanel column" style="width: 190px;">
-					<legend>Details</legend>
+					<legend i18n:translate="">Details</legend>
 					<div class="field">
 						<label>{#advimage_dlg.preview}</label>
 						<div class="widget">
@@ -75,7 +74,7 @@
 						<label id="alignlabel" for="align">{#advimage_dlg.align}</label>
 						<div class="widget">
 							<select id="classes" name="classes"> 
-								<option value="image-inline">Inline</option>
+								<option value="image-inline" i18n:translate="">Inline</option>
 								<option value="image-left">{#advimage_dlg.align_left}</option>
 								<option value="image-right">{#advimage_dlg.align_right}</option>
 							</select>
@@ -107,10 +106,10 @@
 			</form>
 	
 			<fieldset id="upload_panel" class="subPanel column" style="width: 190px; display: none;">
-				<legend>Upload file</legend>
+				<legend i18n:translate="">Upload file</legend>
 				<form name="upload_form" id="upload_form" method="post" target="upload_iframe" enctype="multipart/form-data">
 					<div class="field">
-						<label for="uploadfile">File</label>
+						<label for="uploadfile" i18n:translate="">File</label>
 						<div class="widget">
 							<input type="file" name="uploadfile" id="uploadfile" style="width: 100%" size="15" />
 						</div>
@@ -124,13 +123,13 @@
 					</div>
 
 					<div class="field">
-						<label for="uploaddescription">Description</label>
+						<label for="uploaddescription" i18n:translate="">Description</label>
 						<div class="widget">
 							<textarea wrap="soft" cols="10" rows="6" id="uploaddescription" name="uploaddescription"></textarea>
 						</div>
 					</div>
 
-					<input type="button" id="uploadbutton" class="context" name="uploadbutton" value="Upload" onclick="document.forms[1].submit();"/>
+					<input type="button" id="uploadbutton" class="context" name="uploadbutton" value="Upload" i18n:attributes="value" onclick="document.forms[1].submit();"/>
 				</form>
 				<iframe style="display: none;" width="0" scrolling="off" height="0" frameborder="0" id="upload_iframe" name="upload_iframe" src="javascript:"></iframe>
 			</fieldset>
@@ -143,11 +142,10 @@
 				<span class="actionButtons">
 					<input type="submit" id="insert" class="context" name="insert" value="{#insert}" />
 					<input type="button" id="cancel" class="context" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
-					<input type="button" id="upload" class="standalone" name="upload" value="Upload file" onclick="ImageDialog.displayPanel('upload_panel');" />
+					<input type="button" id="upload" class="standalone" name="upload" value="Upload file" i18n:attributes="value" onclick="ImageDialog.displayPanel('upload_panel');" />
 				</span>
 			</div>
 		</form>
 	</div>
 </body>
-</dtml-with>
 </html> 
