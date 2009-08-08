@@ -14,7 +14,7 @@
         for="..interfaces.utility.ITinyMCE"
         name="tinymce-getstyle"
         class=".style.TinyMCEStyle"
-		attribute="getStyle"
+        attribute="getStyle"
         permission="zope2.View"
         />
 
@@ -22,49 +22,43 @@
         for="..interfaces.utility.ITinyMCE"
         name="tinymce-getpathbyuid"
         class=".url.TinyMCEUrl"
-		attribute="getPathByUID"
+        attribute="getPathByUID"
         permission="zope2.View"
         />
 
-	<browser:pages
+    <browser:pages
         for="*"
         class=".browser.TinyMCEBrowserView"
-		permission="zope2.View">
-		<browser:page attribute="jsonLinkableFolderListing" name="tinymce-jsonlinkablefolderlisting" />
-		<browser:page attribute="jsonImageFolderListing" name="tinymce-jsonimagefolderlisting" />
-		<browser:page attribute="jsonLinkableSearch" name="tinymce-jsonlinkablesearch" />
-		<browser:page attribute="jsonImageSearch" name="tinymce-jsonimagesearch" />
-		<browser:page attribute="jsonDetails" name="tinymce-jsondetails" />
-	</browser:pages>
+        permission="zope2.View">
+        <browser:page attribute="jsonLinkableFolderListing" name="tinymce-jsonlinkablefolderlisting" />
+        <browser:page attribute="jsonImageFolderListing" name="tinymce-jsonimagefolderlisting" />
+        <browser:page attribute="jsonLinkableSearch" name="tinymce-jsonlinkablesearch" />
+        <browser:page attribute="jsonImageSearch" name="tinymce-jsonimagesearch" />
+        <browser:page attribute="jsonDetails" name="tinymce-jsondetails" />
+    </browser:pages>
 
-	<browser:pages
+    <browser:pages
         for="*"
         class=".browser.TinyMCEBrowserView"
-		permission="cmf.ModifyPortalContent">
-		<browser:page attribute="save" name="tinymce-save" /> 
-	</browser:pages>
+        permission="cmf.ModifyPortalContent">
+        <browser:page attribute="save" name="tinymce-save" /> 
+    </browser:pages>
 
-	<browser:pages
+    <browser:pages
         for="*"
         class=".browser.TinyMCEBrowserView"
-		permission="cmf.AddPortalContent">
-		<browser:page attribute="upload" name="tinymce-upload" /> 
-	</browser:pages>
+        permission="cmf.AddPortalContent">
+        <browser:page attribute="upload" name="tinymce-upload" /> 
+    </browser:pages>
 
-	<browser:resourceDirectory
-		name="tinymce.images"
-		directory="images"
-		/>
+    <browser:resourceDirectory
+        name="tinymce.images"
+        directory="images"
+        />
 
-	<browser:resourceDirectory
-		name="tinymce.js"
-		directory="js"
-		/>
+    <browser:resourceDirectory
+        name="tinymce.kss"
+        directory="kss"
+        />
 
-	<browser:resourceDirectory
-		name="tinymce.kss"
-		directory="kss"
-		/>
-	
 </configure>
-
