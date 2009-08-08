@@ -1,145 +1,145 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html id="region-content" xmlns="http://www.w3.org/1999/xhtml" i18n:domain="plone.tinymce">
+<html id="region-content" xmlns="http://www.w3.org/1999/xhtml" i18n:domain="tinymce">
 <head>
-	<title>{#advimage_dlg.dialog_title}</title>
-	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
-	<script type="text/javascript" src="../../utils/mctabs.js"></script>
-	<script type="text/javascript" src="../../utils/form_utils.js"></script>
-	<script type="text/javascript" src="js/image.js"></script>
+  <title i18n:translate="advimage_dlg_dialog_title"></title>
+  <script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+  <script type="text/javascript" src="../../utils/mctabs.js"></script>
+  <script type="text/javascript" src="../../utils/form_utils.js"></script>
+  <script type="text/javascript" src="js/image.js"></script>
 </head>
 <body id="advimage" style="display: none"
   tal:define="portal_url context/portal_url; portal_tinymce context/portal_tinymce;">
-	<div class="dialog-wrapper">
-		<fieldset id="general_panel">
-			<legend>{#advimage_dlg.dialog_title}</legend>
-			<form>
+  <div class="dialog-wrapper">
+    <fieldset id="general_panel">
+      <legend i18n:translate="advimage_dlg_dialog_title"></legend>
+      <form>
 
-				<fieldset class="column" style="width: 120px;">
-					<legend i18n:translate="">Libraries</legend>
-		            <ul class="configlets">
-		                <li>
-							<a href="javascript:ImageDialog.displayPanel('internal_panel'); ImageDialog.getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonimagefolderlisting');">
-							    <img alt="" tal:attributes="src string:$portal_url/logoIcon.gif"/> <span i18n:translate="">Home</span>
-							</a>
-						</li>
-		                <li>
-							<a href="javascript:ImageDialog.displayPanel('internal_panel'); ImageDialog.getCurrentFolderListing();">
-							    <img alt="" tal:attributes="src string:$portal_url/site_icon.gif"/> <span i18n:translate="">Current Folder</span>
-							</a>
-						</li>
-		                <!--li>
-							<a href="javascript:ImageDialog.displayPanel('internal_panel');">
-							    <img alt="" tal:attributes="src string:$portal_url/popup_calendar.gif"/> Recent Items
-							</a>
-						</li-->
-		            </ul>
+        <fieldset class="column" style="width: 120px;">
+          <legend i18n:domain="plone.tinymce" i18n:translate="">Libraries</legend>
+                <ul class="configlets">
+                    <li>
+              <a href="javascript:ImageDialog.displayPanel('internal_panel'); ImageDialog.getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonimagefolderlisting');">
+                  <img alt="" tal:attributes="src string:$portal_url/logoIcon.gif"/> <span i18n:domain="plone.tinymce" i18n:translate="">Home</span>
+              </a>
+            </li>
+                    <li>
+              <a href="javascript:ImageDialog.displayPanel('internal_panel'); ImageDialog.getCurrentFolderListing();">
+                  <img alt="" tal:attributes="src string:$portal_url/site_icon.gif"/> <span i18n:domain="plone.tinymce" i18n:translate="">Current Folder</span>
+              </a>
+            </li>
+                    <!--li>
+              <a href="javascript:ImageDialog.displayPanel('internal_panel');">
+                  <img alt="" tal:attributes="src string:$portal_url/popup_calendar.gif"/> Recent Items
+              </a>
+            </li-->
+                </ul>
                 <div class="field">
-                  <label for="searchtext" i18n:translate="">Search</label>
+                  <label for="searchtext" i18n:domain="plone.tinymce" i18n:translate="">Search</label>
                   <div class="widget">
                     <input type="text" name="searchtext" id="searchtext" value="" onkeyup="ImageDialog.checkSearch(event);" size="12"/>
-                    <input type="button" style="margin-top: 4px;" value="Search" i18n:attributes="value" class="searchButton" onclick="ImageDialog.getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonlinkablesearch');"/>
+                    <input type="button" style="margin-top: 4px;" value="Search" i18n:domain="plone.tinymce" i18n:attributes="value" class="searchButton" onclick="ImageDialog.getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonlinkablesearch');"/>
                   </div>
                 </div>
-				</fieldset>
+        </fieldset>
 
-				<fieldset id="internal_panel" class="subPanel column" style="width: 296px;">
-					<legend>{#advimage_dlg.image_list}</legend>
-					<div class="field">
-						<div id="internalpath" class="formHelp" style="text-align: right;"></div>
-						<label for="internallink">{#advimage_dlg.image_list}</label>
-						<a id="uponelevel" class="link-parent" style="line-height: 1em;" href="javascript:void(0)" i18n:translate="">Up one level</a>
-						<div id="internallinkcontainer" class="widget radioscrolllist input-border" style="height: 260px;">
-						</div>
-						<input style="margin-top:4px;" type="button" id="upload" class="context" name="upload" value="Upload file" i18n:attributes="value" onclick="ImageDialog.displayPanel('upload_panel');" />
-					</div>
-				</fieldset>
+        <fieldset id="internal_panel" class="subPanel column" style="width: 296px;">
+          <legend i18n:translate="advimage_dlg_image_list"></legend>
+          <div class="field">
+            <div id="internalpath" class="formHelp" style="text-align: right;"></div>
+            <label for="internallink" i18n:translate="advimage_dlg_image_list"></label>
+            <a id="uponelevel" class="link-parent" style="line-height: 1em;" href="javascript:void(0)" i18n:domain="plone.tinymce" i18n:translate="">Up one level</a>
+            <div id="internallinkcontainer" class="widget radioscrolllist input-border" style="height: 260px;">
+            </div>
+            <input style="margin-top:4px;" type="button" id="upload" class="context" name="upload" value="Upload file" i18n:domain="plone.tinymce" i18n:attributes="value" onclick="ImageDialog.displayPanel('upload_panel');" />
+          </div>
+        </fieldset>
 
-				<fieldset id="internal_details_panel" class="subPanel column" style="width: 190px; display: none;">
-					<legend i18n:translate="">Details</legend>
-					<div class="field">
-						<label>{#advimage_dlg.preview}</label>
-						<div class="widget">
-							<div id="previewimagecontainer">
-							</div>
-						</div>
-					</div>
+        <fieldset id="internal_details_panel" class="subPanel column" style="width: 190px; display: none;">
+          <legend i18n:domain="plone.tinymce" i18n:translate="">Details</legend>
+          <div class="field">
+            <label i18n:translate="advimage_dlg_preview"></label>
+            <div class="widget">
+              <div id="previewimagecontainer">
+              </div>
+            </div>
+          </div>
 
-					<div class="field">
-						<label id="altlabel" for="alt">{#advimage_dlg.alt}</label>
-						<div class="widget">
-							<input id="alt" name="alt" type="text" value="" size="20" />
-						</div>
-					</div>
-								
-					<div class="field">
-						<label id="alignlabel" for="align">{#advimage_dlg.align}</label>
-						<div class="widget">
-							<select id="classes" name="classes"> 
-								<option value="image-inline" i18n:translate="">Inline</option>
-								<option value="image-left">{#advimage_dlg.align_left}</option>
-								<option value="image-right">{#advimage_dlg.align_right}</option>
-							</select>
-						</div>
-					</div>
+          <div class="field">
+            <label id="altlabel" for="alt" i18n:translate="advimage_dlg_alt"></label>
+            <div class="widget">
+              <input id="alt" name="alt" type="text" value="" size="20" />
+            </div>
+          </div>
+                
+          <div class="field">
+            <label id="alignlabel" for="align" i18n:translate="advimage_dlg_align"></label>
+            <div class="widget">
+              <select id="classes" name="classes"> 
+                <option value="image-inline" i18n:domain="plone.tinymce" i18n:translate="">Inline</option>
+                <option value="image-left" i18n:translate="advimage_dlg_align_left"></option>
+                <option value="image-right" i18n:translate="advimage_dlg_align_right"></option>
+              </select>
+            </div>
+          </div>
 
-					<div class="field">
-						<div class="widget">
-							<input type="checkbox" name="caption" id="caption"/> <label for="caption">Caption</label> 
-						</div>
-					</div>
+          <div class="field">
+            <div class="widget">
+              <input type="checkbox" name="caption" id="caption"/> <label for="caption">Caption</label> 
+            </div>
+          </div>
 
-					<div class="field">
-						<label id="dimensionslabel" for="dimensions">{#advimage_dlg.dimensions}</label>
-						<div class="widget">
-							<select id="dimensions" name="dimensions">
-							  <option tal:repeat="item portal_tinymce/getImageScales" tal:attributes="value item/value"
-							    tal:content="item/title" />
-							</select>
-						</div>
-					</div>
-				</fieldset>
-			</form>
-	
-			<fieldset id="upload_panel" class="subPanel column" style="width: 190px; display: none;">
-				<legend i18n:translate="">Upload file</legend>
-				<form name="upload_form" id="upload_form" method="post" target="upload_iframe" enctype="multipart/form-data">
-					<div class="field">
-						<label for="uploadfile" i18n:translate="">File</label>
-						<div class="widget">
-							<input type="file" name="uploadfile" id="uploadfile" style="width: 100%" size="15" />
-						</div>
-					</div>
+          <div class="field">
+            <label id="dimensionslabel" for="dimensions" i18n:translate="advimage_dlg_dimensions"></label>
+            <div class="widget">
+              <select id="dimensions" name="dimensions">
+                <option tal:repeat="item portal_tinymce/getImageScales" tal:attributes="value item/value"
+                  tal:content="item/title" />
+              </select>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+  
+      <fieldset id="upload_panel" class="subPanel column" style="width: 190px; display: none;">
+        <legend i18n:domain="plone.tinymce" i18n:translate="">Upload file</legend>
+        <form name="upload_form" id="upload_form" method="post" target="upload_iframe" enctype="multipart/form-data">
+          <div class="field">
+            <label for="uploadfile" i18n:domain="plone.tinymce" i18n:translate="">File</label>
+            <div class="widget">
+              <input type="file" name="uploadfile" id="uploadfile" style="width: 100%" size="15" />
+            </div>
+          </div>
 
-					<div class="field">
-						<label for="uploadtitle">{#advimage_dlg.title}</label>
-						<div class="widget">
-							<input type="text" name="uploadtitle" id="uploadtitle" value="" size="25" />
-						</div>
-					</div>
+          <div class="field">
+            <label for="uploadtitle" i18n:translate="advimage_dlg_title"></label>
+            <div class="widget">
+              <input type="text" name="uploadtitle" id="uploadtitle" value="" size="25" />
+            </div>
+          </div>
 
-					<div class="field">
-						<label for="uploaddescription" i18n:translate="">Description</label>
-						<div class="widget">
-							<textarea wrap="soft" cols="10" rows="6" id="uploaddescription" name="uploaddescription"></textarea>
-						</div>
-					</div>
+          <div class="field">
+            <label for="uploaddescription" i18n:domain="plone.tinymce" i18n:translate="">Description</label>
+            <div class="widget">
+              <textarea wrap="soft" cols="10" rows="6" id="uploaddescription" name="uploaddescription"></textarea>
+            </div>
+          </div>
 
-					<input type="button" id="uploadbutton" class="context" name="uploadbutton" value="Upload" i18n:attributes="value" onclick="document.forms[1].submit();"/>
-				</form>
-				<iframe style="display: none;" width="0" scrolling="off" height="0" frameborder="0" id="upload_iframe" name="upload_iframe" src="javascript:"></iframe>
-			</fieldset>
-		</fieldset>
+          <input type="button" id="uploadbutton" class="context" name="uploadbutton" value="Upload" i18n:domain="plone.tinymce" i18n:attributes="value" onclick="document.forms[1].submit();"/>
+        </form>
+        <iframe style="display: none;" width="0" scrolling="off" height="0" frameborder="0" id="upload_iframe" name="upload_iframe" src="javascript:"></iframe>
+      </fieldset>
+    </fieldset>
 
-		<div class="visualClear"><!-- --></div>
-		
-	    <form onsubmit="ImageDialog.insert();return false;" action="#"> 
-			<div class="mceActionPanel formControls">
-				<span class="actionButtons">
-					<input type="submit" id="insert" class="context" name="insert" value="{#insert}" />
-					<input type="button" id="cancel" class="standalone" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
-				</span>
-			</div>
-		</form>
-	</div>
+    <div class="visualClear"><!-- --></div>
+    
+      <form onsubmit="ImageDialog.insert();return false;" action="#"> 
+      <div class="mceActionPanel formControls">
+        <span class="actionButtons">
+          <input type="submit" id="insert" class="context" name="insert" i18n:attributes="value common_insert" />
+          <input type="button" id="cancel" class="standalone" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
+        </span>
+      </div>
+    </form>
+  </div>
 </body>
 </html> 

@@ -728,6 +728,8 @@ function setDetails(path, pageanchor) {
 			}
 			current_path = path;
 			current_pageanchor = pageanchor;
+            document.getElementById('internal_details_panel').style.display = 'block';
+            document.getElementById('upload_panel').style.display = 'none';
 		}
 	});	
 }
