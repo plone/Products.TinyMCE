@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html id="region-content" xmlns="http://www.w3.org/1999/xhtml">
+<html id="region-content" xmlns="http://www.w3.org/1999/xhtml" i18n:domain="tinymce">
 <head>
-	<title>{#advhr.advhr_desc}</title>
+	<title i18n:translate="advhr_advhr_desc"></title>
 	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
 	<script type="text/javascript" src="js/rule.js"></script>
 	<script type="text/javascript" src="../../utils/mctabs.js"></script>
@@ -11,9 +11,9 @@
 	<div class="dialog-wrapper">
 		<form onsubmit="AdvHRDialog.update();return false;" action="#">
 			<fieldset>
-				<legend>{#advhr.advhr_desc}</legend>
+				<legend i18n:translate="advhr_advhr_desc"></legend>
 				<div class="field">
-					<label for="anchorName">{#advhr_dlg.width}</label>
+					<label for="anchorName" i18n:translate="advhr_dlg_width"></label>
 					<div class="widget">
 						<input id="width" name="width" type="text" class="mceFocus" value="" size="10"/>
 						<select name="width2" id="width2" size="1">
@@ -24,7 +24,7 @@
 				</div>
 
 				<div class="field">
-					<label for="anchorName">{#advhr_dlg.size}</label>
+					<label for="anchorName" i18n:translate="advhr_dlg_size"></label>
 					<div class="widget">
 						<select id="size" name="size">
 							<option value="">Normal</option>
@@ -40,7 +40,7 @@
 				<div class="field">
 					<div class="widget">
 						<input type="checkbox" name="noshade" id="noshade"/>
-						<label for="noshade">{#advhr_dlg.noshade}</label>
+						<label for="noshade" i18n:translate="advhr_dlg_noshade"></label>
 					</div>
 				</div>
 			</fieldset>
@@ -49,8 +49,8 @@
 		
 			<div class="mceActionPanel formControls">
 				<span class="actionButtons">
-					<input type="submit" id="insert" class="context" name="insert" value="{#insert}" />
-					<input type="button" id="cancel" class="context" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+					<input type="submit" id="insert" class="context" name="insert" i18n:attributes="value common_insert" />
+					<input type="button" id="cancel" class="standalone" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
 				</span>
 			</div>
 		</form>

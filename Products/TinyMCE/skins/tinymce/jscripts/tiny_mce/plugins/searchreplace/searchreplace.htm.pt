@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html id="region-content" xmlns="http://www.w3.org/1999/xhtml">
+<html id="region-content" xmlns="http://www.w3.org/1999/xhtml" i18n:domain="tinymce">
 <head>
-	<title>{#searchreplace_dlg.replace_title}</title>
+	<title i18n:translate="searchreplace_dlg_replace_title"></title>
 	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
 	<script type="text/javascript" src="../../utils/mctabs.js"></script>
 	<script type="text/javascript" src="../../utils/form_utils.js"></script>
@@ -10,25 +10,25 @@
 <body style="display:none;">
 	<div class="dialog-wrapper">
 		<form onsubmit="SearchReplaceDialog.searchNext('none');return false;" action="#">
-			<ul class="formTabs"><li id="search_tab" class="formTab firstFormTab"><a href="javascript:SearchReplaceDialog.switchMode('search');" onmousedown="return false;" class="selected"><span>{#searchreplace.search_desc}</span></a></li><li id="replace_tab" class="formTab lastFormTab"><a href="javascript:SearchReplaceDialog.switchMode('replace');" onmousedown="return false;"><span>{#searchreplace_dlg.replace}</span></a></li></ul>
+			<ul class="formTabs"><li id="search_tab" class="formTab firstFormTab"><a href="javascript:SearchReplaceDialog.switchMode('search');" onmousedown="return false;" class="selected"><span i18n:translate="searchreplace_search_desc"></span></a></li><li id="replace_tab" class="formTab lastFormTab"><a href="javascript:SearchReplaceDialog.switchMode('replace');" onmousedown="return false;"><span i18n:translate="searchreplace_dlg_replace"></span></a></li></ul>
 
 			<fieldset id="search_panel" class="formPanel">
 				<div class="field">
-					<label for="search_panel_searchstring">{#searchreplace_dlg.findwhat}</label>
+					<label for="search_panel_searchstring" i18n:translate="searchreplace_dlg_findwhat"></label>
 					<div class="widget">
 						<input id="search_panel_searchstring" name="search_panel_searchstring" type="text" value="" size="30"/>
 					</div>
 				</div>
 
 				<div class="field">
-					<label>{#searchreplace_dlg.direction}</label>
+					<label i18n:translate="searchreplace_dlg_direction"></label>
 					<div class="widget">
 						<input type="radio" id="search_panel_backwardsu" name="search_panel_backwards" class="noborder blurrable"/>
-						<label for="search_panel_backwardsu">{#searchreplace_dlg.up}</label>
+						<label for="search_panel_backwardsu" i18n:translate="searchreplace_dlg_up"></label>
 						<br/>
 				
 						<input type="radio" id="search_panel_backwardsd" name="search_panel_backwards" checked="checked" class="noborder blurrable"/>
-						<label for="search_panel_backwardsd">{#searchreplace_dlg.down}</label>
+						<label for="search_panel_backwardsd" i18n:translate="searchreplace_dlg_down"></label>
 						<br/>
 					</div>
 				</div>
@@ -36,35 +36,35 @@
 				<div class="field">
 					<div class="widget">
 						<input id="search_panel_casesensitivebox" name="search_panel_casesensitivebox" type="checkbox" />
-						<label for="search_panel_casesensitivebox">{#searchreplace_dlg.mcase}</label>
+						<label for="search_panel_casesensitivebox" i18n:translate="searchreplace_dlg_mcase"></label>
 					</div>
 				</div>
 			</fieldset>
 
 			<fieldset id="replace_panel" class="formPanel" style="display: none;">
 				<div class="field">
-					<label for="replace_panel_searchstring">{#searchreplace_dlg.findwhat}</label>
+					<label for="replace_panel_searchstring" i18n:translate="searchreplace_dlg_findwhat"></label>
 					<div class="widget">
 						<input id="replace_panel_searchstring" name="replace_panel_searchstring" type="text" value="" size="30"/>
 					</div>
 				</div>
 
 				<div class="field">
-					<label for="replace_panel_replacestring">{#searchreplace_dlg.replacewith}</label>
+					<label for="replace_panel_replacestring" i18n:translate="searchreplace_dlg_replacewith"></label>
 					<div class="widget">
 						<input id="replace_panel_replacestring" name="replace_panel_replacestring" type="text" value="" size="30"/>
 					</div>
 				</div>
 	
 				<div class="field">
-					<label>{#searchreplace_dlg.direction}</label>
+					<label i18n:translate="searchreplace_dlg_direction"></label>
 					<div class="widget">
 						<input type="radio" id="replace_panel_backwardsu" name="replace_panel_backwards" class="noborder blurrable"/>
-						<label for="replace_panel_backwardsu">{#searchreplace_dlg.up}</label>
+						<label for="replace_panel_backwardsu" i18n:translate="searchreplace_dlg_up"></label>
 						<br/>
 				
 						<input type="radio" id="replace_panel_backwardsd" name="replace_panel_backwards" checked="checked" class="noborder blurrable"/>
-						<label for="replace_panel_backwardsd">{#searchreplace_dlg.down}</label>
+						<label for="replace_panel_backwardsd" i18n:translate="searchreplace_dlg_down"></label>
 						<br/>
 					</div>
 				</div>
@@ -72,7 +72,7 @@
 				<div class="field">
 					<div class="widget">
 						<input id="replace_panel_casesensitivebox" name="replace_panel_casesensitivebox" type="checkbox" />
-						<label for="replace_panel_casesensitivebox">{#searchreplace_dlg.mcase}</label>
+						<label for="replace_panel_casesensitivebox" i18n:translate="searchreplace_dlg_mcase"></label>
 					</div>
 				</div>
 			</fieldset>
@@ -81,10 +81,10 @@
 
 			<div class="mceActionPanel formControls">
 				<span class="actionButtons">
-					<input type="submit" class="context" id="insert" name="insert" value="{#searchreplace_dlg.findnext}" />
-					<input type="button" class="context" id="replaceBtn" name="replaceBtn" value="{#searchreplace_dlg.replace}" onclick="SearchReplaceDialog.searchNext('current');" />
-					<input type="button" class="context" id="replaceAllBtn" name="replaceAllBtn" value="{#searchreplace_dlg.replaceall}" onclick="SearchReplaceDialog.searchNext('all');" />
-					<input type="button" class="context" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+					<input type="submit" class="context" id="insert" name="insert" i18n:attributes="value searchreplace_dlg_findnext" />
+					<input type="button" class="context" id="replaceBtn" name="replaceBtn" i18n:attributes="value searchreplace_dlg_replace" onclick="SearchReplaceDialog.searchNext('current');" />
+					<input type="button" class="context" id="replaceAllBtn" name="replaceAllBtn" i18n:attributes="value searchreplace_dlg_replaceall" onclick="SearchReplaceDialog.searchNext('all');" />
+					<input type="button" class="context" id="cancel" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
 				</span>
 			</div>
 		</form>

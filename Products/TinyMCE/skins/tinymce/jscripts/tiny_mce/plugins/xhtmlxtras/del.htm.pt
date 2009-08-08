@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" i18n:domain="tinymce">
 <head>
-	<title>{#xhtmlxtras_dlg.title_del_element}</title>
+	<title i18n:translate="xhtmlxtras_dlg_title_del_element"></title>
 	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
 	<script type="text/javascript" src="../../utils/mctabs.js"></script>
 	<script type="text/javascript" src="../../utils/form_utils.js"></script>
@@ -14,68 +14,68 @@
 <form onsubmit="insertDel();return false;" action="#">
 	<div class="tabs">
 		<ul>
-			<li id="general_tab" class="current"><span><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;">{#xhtmlxtras_dlg.general_tab}</a></span></li>
-			<!-- <li id="events_tab"><span><a href="javascript:mcTabs.displayTab('events_tab','events_panel');" onmousedown="return false;">{#xhtmlxtras_dlg.events_tab}</a></span></li> -->
+			<li id="general_tab" class="current"><span><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;" i18n:translate="xhtmlxtras_dlg_general_tab"></a></span></li>
+			<!-- <li id="events_tab"><span><a href="javascript:mcTabs.displayTab('events_tab','events_panel');" onmousedown="return false;" i18n:translate="xhtmlxtras_dlg_events_tab"></a></span></li> -->
 		</ul>
 	</div>
 
 	<div class="panel_wrapper">
 		<div id="general_panel" class="panel current">
 			<fieldset>
-				<legend>{#xhtmlxtras_dlg.fieldset_general_tab}</legend>
+				<legend i18n:translate="xhtmlxtras_dlg_fieldset_general_tab"></legend>
 				<table border="0" cellpadding="0" cellspacing="4">
 					<tr>
-						<td class="label"><label id="datetimelabel" for="datetime">{#xhtmlxtras_dlg.attribute_label_datetime}</label>:</td>
+						<td class="label"><label id="datetimelabel" for="datetime" i18n:translate="xhtmlxtras_dlg_attribute_label_datetime"></label>:</td>
 						<td>
 							<table border="0" cellspacing="0" cellpadding="0">
 								<tr> 
 									<td><input id="datetime" name="datetime" type="text" value="" maxlength="19" class="field mceFocus" /></td> 
-									<td><a href="javascript:insertDateTime('datetime');" onmousedown="return false;" class="browse"><span class="datetime" title="{#xhtmlxtras_dlg.insert_date}"></span></a></td>
+									<td><a href="javascript:insertDateTime('datetime');" onmousedown="return false;" class="browse"><span class="datetime" i18n:attributes="title xhtmlxtras_dlg_insert_date"></span></a></td>
 								</tr>
 							</table>
 						</td>
 					</tr>
 					<tr>
-						<td class="label"><label id="citelabel" for="cite">{#xhtmlxtras_dlg.attribute_label_cite}</label>:</td>
+						<td class="label"><label id="citelabel" for="cite" i18n:translate="xhtmlxtras_dlg_attribute_label_cite"></label>:</td>
 						<td><input id="cite" name="cite" type="text" value="" class="field" /></td> 
 					</tr>
 				</table>
 			</fieldset>
 			<fieldset>
-				<legend>{#xhtmlxtras_dlg.fieldset_attrib_tab}</legend>
+				<legend i18n:translate="xhtmlxtras_dlg_fieldset_attrib_tab"></legend>
 				<table border="0" cellpadding="0" cellspacing="4">
 					<tr>
-						<td class="label"><label id="titlelabel" for="title">{#xhtmlxtras_dlg.attribute_label_title}</label>:</td> 
+						<td class="label"><label id="titlelabel" for="title" i18n:translate="xhtmlxtras_dlg_attribute_label_title"></label>:</td> 
 						<td><input id="title" name="title" type="text" value="" class="field" /></td> 
 					</tr>
 					<tr>
-						<td class="label"><label id="idlabel" for="id">{#xhtmlxtras_dlg.attribute_label_id}</label>:</td> 
+						<td class="label"><label id="idlabel" for="id" i18n:translate="xhtmlxtras_dlg_attribute_label_id"></label>:</td> 
 						<td><input id="id" name="id" type="text" value="" class="field" /></td> 
 					</tr>
 					<tr>
-						<td class="label"><label id="classlabel" for="class">{#xhtmlxtras_dlg.attribute_label_class}</label>:</td> 
+						<td class="label"><label id="classlabel" for="class" i18n:translate="xhtmlxtras_dlg_attribute_label_class"></label>:</td> 
 						<td>
 							<select id="class" name="class" class="field mceEditableSelect">
-								<option value="">{#not_set}</option> 
+								<option value="" i18n:translate="common_not_set"></option> 
 							</select>
 						</td>
 					</tr>
 					<tr>
-						<td class="label"><label id="stylelabel" for="class">{#xhtmlxtras_dlg.attribute_label_style}</label>:</td> 
+						<td class="label"><label id="stylelabel" for="class" i18n:translate="xhtmlxtras_dlg_attribute_label_style"></label>:</td> 
 						<td><input id="style" name="style" type="text" value="" class="field" /></td> 
 					</tr>
 					<tr>
-						<td class="label"><label id="dirlabel" for="dir">{#xhtmlxtras_dlg.attribute_label_langdir}</label>:</td> 
+						<td class="label"><label id="dirlabel" for="dir" i18n:translate="xhtmlxtras_dlg_attribute_label_langdir"></label>:</td> 
 						<td>
 							<select id="dir" name="dir" class="field"> 
-								<option value="">{#not_set}</option> 
-								<option value="ltr">{#xhtmlxtras_dlg.attribute_option_ltr}</option> 
-								<option value="rtl">{#xhtmlxtras_dlg.attribute_option_rtl}</option> 
+								<option value="" i18n:translate="common_not_set"></option> 
+								<option value="ltr" i18n:translate="xhtmlxtras_dlg_attribute_option_ltr"></option> 
+								<option value="rtl" i18n:translate="xhtmlxtras_dlg_attribute_option_rtl"></option> 
 							</select>
 						</td> 
 					</tr>
 					<tr>
-						<td class="label"><label id="langlabel" for="lang">{#xhtmlxtras_dlg.attribute_label_langcode}</label>:</td> 
+						<td class="label"><label id="langlabel" for="lang" i18n:translate="xhtmlxtras_dlg_attribute_label_langcode"></label>:</td> 
 						<td>
 							<input id="lang" name="lang" type="text" value="" class="field" />
 						</td> 
@@ -85,7 +85,7 @@
 		</div>
 		<div id="events_panel" class="panel">
 			<fieldset>
-				<legend>{#xhtmlxtras_dlg.fieldset_events_tab}</legend>
+				<legend i18n:translate="xhtmlxtras_dlg_fieldset_events_tab"></legend>
 
 				<table border="0" cellpadding="0" cellspacing="4">
 					<tr>
@@ -153,13 +153,13 @@
 	</div>
 	<div class="mceActionPanel">
 		<div style="float: left">
-			<input type="submit" id="insert" name="insert" value="{#update}" />
+			<input type="submit" id="insert" name="insert" tal:attributes="value common_update" />
 		</div>
 		<div style="float: left">
-			<input type="button" id="remove" name="remove" class="button" value="{#xhtmlxtras_dlg.remove}" onclick="removeDel();" style="display: none;" />
+			<input type="button" id="remove" name="remove" class="button" tal:attributes="value xhtmlxtras_dlg_remove" onclick="removeDel();" style="display: none;" />
 		</div>
 		<div style="float: right">
-			<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+			<input type="button" id="cancel" name="cancel" tal:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
 		</div>
 	</div>
 

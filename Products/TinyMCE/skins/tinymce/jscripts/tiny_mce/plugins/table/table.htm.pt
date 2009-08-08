@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html id="region-content" xmlns="http://www.w3.org/1999/xhtml" i18n:domain="tinymce">
 <head>
-	<title>{#table_dlg.title}</title>
+	<title i18n:translate="table_dlg_title"></title>
 	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
 	<script type="text/javascript" src="../../utils/mctabs.js"></script>
 	<script type="text/javascript" src="../../utils/form_utils.js"></script>
@@ -12,34 +12,34 @@
 <body id="table" style="display: none">
 	<div class="dialog-wrapper">
 		<form onsubmit="insertTable();return false;" action="#">
-			<ul class="formTabs"><li id="general_tab" class="formTab firstFormTab"><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;" class="selected"><span>{#table_dlg.general_tab}</span></a></li><li id="advanced_tab" class="formTab lastFormTab"><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;"><span>{#table_dlg.advanced_tab}</span></a></li></ul>
+			<ul class="formTabs"><li id="general_tab" class="formTab firstFormTab"><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;" class="selected"><span i18n:translate="table_dlg_general_tab"></span></a></li><li id="advanced_tab" class="formTab lastFormTab"><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;"><span i18n:translate="table_dlg_advanced_tab"></span></a></li></ul>
 
 			<fieldset id="general_panel" class="formPanel">
 				<div class="field">
 					<label id="classlabel" for="class" i18n:translate="common_class_name"></label>
 					<div class="widget">
 						<select id="class" name="class" size="1">
-							<option value="" selected="selected">{#not_set}</option>
+							<option value="" selected="selected" i18n:translate="common_not_set"></option>
 						</select>
 					</div>
 				</div>
 
 				<div class="field">
-					<label id="colslabel" for="cols">{#table_dlg.cols}</label>
+					<label id="colslabel" for="cols" i18n:translate="table_dlg_cols"></label>
 					<div class="widget">
 						<input id="cols" name="cols" type="text" value="" size="3" maxlength="3" class="required number min1" />
 					</div>
 				</div>
 
 				<div class="field">
-					<label id="rowslabel" for="rows">{#table_dlg.rows}</label>
+					<label id="rowslabel" for="rows" i18n:translate="table_dlg_rows"></label>
 					<div class="widget">
 						<input id="rows" name="rows" type="text" value="" size="3" maxlength="3" class="required number min1" />
 					</div>
 				</div>
 	
 				<div class="field">
-					<label for="summary">{#table_dlg.summary}</label> 
+					<label for="summary" i18n:translate="table_dlg_summary"></label> 
 					<div class="widget">
 						<input id="summary" name="summary" type="text" value="" size="30" /> 
 					</div>
@@ -48,34 +48,34 @@
 
 			<fieldset id="advanced_panel" class="formPanel" style="display: none;">
 				<div class="field">
-					<label id="widthlabel" for="width">{#table_dlg.width}</label>
+					<label id="widthlabel" for="width" i18n:translate="table_dlg_width"></label>
 					<div class="widget">
 						<input name="width" type="text" id="width" value="" size="4" maxlength="4" onchange="changedSize();" class="size" />
 					</div>
 				</div>
 
 				<div class="field">
-					<label id="heightlabel" for="height">{#table_dlg.height}</label>
+					<label id="heightlabel" for="height" i18n:translate="table_dlg_height"></label>
 					<div class="widget">
 						<input name="height" type="text" id="height" value="" size="4" maxlength="4" onchange="changedSize();" class="size" />
 					</div>
 				</div>
 
 				<div class="field">
-					<label id="alignlabel" for="align">{#table_dlg.align}</label>
+					<label id="alignlabel" for="align" i18n:translate="table_dlg_align"></label>
 					<div class="widget">
 						<select id="align" name="align">
-							<option value="">{#not_set}</option>
-							<option value="center">{#table_dlg.align_middle}</option>
-							<option value="left">{#table_dlg.align_left}</option>
-							<option value="right">{#table_dlg.align_right}</option>
+							<option value="" i18n:translate="common_not_set"></option>
+							<option value="center" i18n:translate="table_dlg_align_middle"></option>
+							<option value="left" i18n:translate="table_dlg_align_left"></option>
+							<option value="right" i18n:translate="table_dlg_align_right"></option>
 						</select>
 					</div>
 				</div>
 			
 				<div class="field">
 					<div class="widget">
-						<input id="caption" name="caption" type="checkbox" /> <label for="caption">{#table_dlg.caption}</label> 
+						<input id="caption" name="caption" type="checkbox" /> <label for="caption" i18n:translate="table_dlg_caption"></label> 
 					</div>
 				</div>
 			</fieldset>	
@@ -88,9 +88,9 @@
 				<input type="text" id="lang" name="lang" value="" />
 				<input type="text" id="backgroundimage" name="backgroundimage" value="" />
 				<div id="backgroundimagebrowsercontainer"></div>
-				<select id="frame" name="frame"><option value="">{#not_set}</option></select>
-				<select id="rules" name="rules"><option value="">{#not_set}</option></select>
-				<select id="dir" name="dir"><option value="">{#not_set}</option></select>
+				<select id="frame" name="frame"><option value="" i18n:translate="common_not_set"></option></select>
+				<select id="rules" name="rules"><option value="" i18n:translate="common_not_set"></option></select>
+				<select id="dir" name="dir"><option value="" i18n:translate="common_not_set"></option></select>
 				<input type="text" id="border" name="border" value="" />
 				<input type="text" id="bordercolor" name="bordercolor" value="" />
 				<div id="bordercolor_pickcontainer"></div>
@@ -102,8 +102,8 @@
 
 			<div class="mceActionPanel formControls">
 				<span class="actionButtons">
-					<input type="submit" class="context" id="insert" name="insert" value="{#insert}" />
-					<input type="button" class="context" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+					<input type="submit" class="context" id="insert" name="insert" i18n:attributes="value common_insert" />
+					<input type="button" class="context" id="cancel" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
 				</span>
 			</div>
 		</form>

@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" i18n:domain="tinymce">
 <head>
-	<title>{#xhtmlxtras_dlg.attribs_title}</title>
+	<title i18n:translate="xhtmlxtras_dlg_attribs_title"></title>
 	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
 	<script type="text/javascript" src="../../utils/mctabs.js"></script>
 	<script type="text/javascript" src="../../utils/editable_selects.js"></script>
@@ -13,19 +13,19 @@
 	<div class="dialog-wrapper">
 		<form onsubmit="insertAction();return false;" action="#">
 			<fieldset>
-				<legend>{#xhtmlxtras_dlg.attribute_attrib_tab}</legend>
+				<legend i18n:translate="xhtmlxtras_dlg_attribute_attrib_tab"></legend>
 				<div class="field">
-					<label for="dir">{#xhtmlxtras_dlg.attribute_label_langdir}</label>
+					<label for="dir" i18n:translate="xhtmlxtras_dlg_attribute_label_langdir"></label>
 					<div class="widget">
 						<select id="dir" name="dir"> 
-							<option value="">{#not_set}</option> 
-							<option value="ltr">{#xhtmlxtras_dlg.option_ltr}</option> 
-							<option value="rtl">{#xhtmlxtras_dlg.option_rtl}</option> 
+							<option value="" i18n:translate="common_not_set"></option> 
+							<option value="ltr" i18n:translate="xhtmlxtras_dlg_option_ltr"></option> 
+							<option value="rtl" i18n:translate="xhtmlxtras_dlg_option_rtl"></option> 
 						</select>
 					</div> 
 				</div>
 				<div class="field">
-					<label for="lang">{#xhtmlxtras_dlg.attribute_label_langcode}</label>
+					<label for="lang" i18n:translate="xhtmlxtras_dlg_attribute_label_langcode"></label>
 					<div class="widget">
 						<input id="lang" name="lang" type="text" value="" size="30"/>
 					</div> 
@@ -36,8 +36,8 @@
 
 			<div class="mceActionPanel formControls">
 				<span class="actionButtons">
-					<input type="submit" id="insert" class="context" name="insert" value="{#update}" />
-					<input type="button" id="cancel" class="context" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+					<input type="submit" id="insert" class="context" name="insert" i18n:attributes="value common_update" />
+					<input type="button" id="cancel" class="context" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
 				</span>
 			</div>
 		</form>
