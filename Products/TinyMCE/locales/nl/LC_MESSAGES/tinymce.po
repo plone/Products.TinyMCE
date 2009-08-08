@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.1\n"
-"POT-Creation-Date: 2009-08-07 18:08+0000\n"
-"PO-Revision-Date: 2009-08-07 20:10+0100\n"
+"POT-Creation-Date: 2009-08-08 11:06+0000\n"
+"PO-Revision-Date: 2009-08-08 13:07+0100\n"
 "Last-Translator: Rob Gietema <rob@fourdigits.nl>\n"
 "Language-Team: Rob Gietema <rob@fourdigits.nl>\n"
 "MIME-Version: 1.0\n"
@@ -21,6 +21,41 @@ msgstr "Instellingen voor de TinyMCE Wysiwyg editor"
 #: ./browser/controlpanel.py:48
 msgid "TinyMCE Settings"
 msgstr "TinyMCE instellingen"
+
+#. Default: "Anchors"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:48
+msgid "anchors"
+msgstr "Ankers"
+
+#. Default: "Current Folder"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:28
+msgid "current_folder"
+msgstr "Huidige map"
+
+#. Default: "Description"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:156
+msgid "description"
+msgstr "Omschrijving"
+
+#. Default: "E-mail"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:114
+msgid "email"
+msgstr "E-mail"
+
+#. Default: "External"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:38
+msgid "external"
+msgstr "Extern"
+
+#. Default: "External link"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:89
+msgid "external_link"
+msgstr "Externe link"
+
+#. Default: "File"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:142
+msgid "file"
+msgstr "Bestand"
 
 #. Default: "Images will be automatically captioned."
 #: ./interfaces/utility.py:363
@@ -121,6 +156,16 @@ msgstr "Deze optie geeft je de mogelijkheid om een externe toolbar aan te zetten
 #: ./interfaces/utility.py:78
 msgid "help_toolbar_width"
 msgstr "Toolbar breedte"
+
+#. Default: "Home"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:23
+msgid "home"
+msgstr "Home"
+
+#. Default: "Internal link"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:62
+msgid "internal_link"
+msgstr "Interne link"
 
 #. Default: "Allow captioned images"
 #: ./interfaces/utility.py:362
@@ -484,21 +529,61 @@ msgstr "Toolbar breedte"
 
 #. Default: "Layout"
 #: ./browser/controlpanel.py:32
-msgid "tinymcelayout"
+msgid "layout"
 msgstr "Layout"
 
 #. Default: "Libraries"
-#: ./browser/controlpanel.py:40
-msgid "tinymcelibraries"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:19
+msgid "libraries"
 msgstr "Bilbiotheken"
+
+#. Default: "Link to anchor"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:129
+msgid "link_to_anchor"
+msgstr "Link naar anker"
+
+#. Default: "Mail"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:43
+msgid "mail"
+msgstr "Mail"
+
+#. Default: "Preview"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:99
+msgid "preview"
+msgstr "Voorbeeld"
 
 #. Default: "Resource Types"
 #: ./browser/controlpanel.py:44
-msgid "tinymceresourcetypes"
+msgid "resourcetypes"
 msgstr "Resource Types"
+
+#. Default: "Search"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:53
+msgid "search"
+msgstr "Zoeken"
+
+#. Default: "Subject"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:121
+msgid "subject"
+msgstr "Onderwerp"
+
+#. Default: "Title"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:272
+msgid "title"
+msgstr "Titel"
 
 #. Default: "Toolbar"
 #: ./browser/controlpanel.py:36
-msgid "tinymcetoolbar"
+msgid "toolbar"
 msgstr "Toolbar"
+
+#. Default: "Upload"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:162
+msgid "upload"
+msgstr "Upload"
+
+#. Default: "Upload file"
+#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:139
+msgid "upload_file"
+msgstr "Upload bestand"
 
