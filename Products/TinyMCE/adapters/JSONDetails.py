@@ -1,9 +1,10 @@
 from zope.interface import implements
 from zope.component import adapts
 from zope.component import getUtility
-from Products.TinyMCE.libs import json
-from Products.TinyMCE.interfaces.utility import ITinyMCE
+from z3c.json import interfaces
+from z3c.json import testing
 
+from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.adapters.interfaces.JSONDetails import IJSONDetails
 from Products.CMFCore.interfaces._content import IContentish, IFolderish
 from Products.CMFPlone.interfaces.siteroot import IPloneSiteRoot
@@ -47,4 +48,6 @@ class JSONDetails(object):
 		else:
 			results['anchors'] = []
 
-		return json.write(obj=results, escaped_forward_slash=True);
+		testing.setUpJSONConverter()
+		jsonWriter = getUtility(interfaces.IJSONWriter)
+		return jsonWriter.write(results)
