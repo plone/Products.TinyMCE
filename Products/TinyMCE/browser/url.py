@@ -6,24 +6,24 @@ from Products.Five.browser import BrowserView
 from Products.TinyMCE.browser.interfaces.url import ITinyMCEUrl
 
 class TinyMCEUrl(BrowserView):
-	"""TinyMCE Url"""
-	implements(ITinyMCEUrl)
+    """TinyMCE Url"""
+    implements(ITinyMCEUrl)
 
-	def getPathByUID(self):
-		"""Returns the path of an object specified in the request by UID"""
+    def getPathByUID(self):
+        """Returns the path of an object specified in the request by UID"""
 
-		context = self.context
-		request = context.REQUEST
+        context = self.context
+        request = context.REQUEST
 
-		if not hasattr(request, 'uid'):
-			return ""
+        if not hasattr(request, 'uid'):
+            return ""
 
-		uid = request['uid']
+        uid = request['uid']
 
-		reference_tool = getToolByName(context, 'reference_catalog')
-		obj = reference_tool.lookupObject(uid)
+        reference_tool = getToolByName(context, 'reference_catalog')
+        obj = reference_tool.lookupObject(uid)
 
-		if obj:
-			return obj.absolute_url()
+        if obj:
+            return obj.absolute_url()
 
-		return ""
+        return ""

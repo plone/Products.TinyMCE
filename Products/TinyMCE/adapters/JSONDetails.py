@@ -10,7 +10,7 @@ from Products.CMFCore.interfaces._content import IContentish, IFolderish
 from Products.CMFPlone.interfaces.siteroot import IPloneSiteRoot
 from Products.CMFCore.utils import getToolByName
 from Acquisition import aq_inner
-from elementtree import HTMLTreeBuilder;
+from elementtree import HTMLTreeBuilder
 
 class JSONDetails(object):
     """Return details of the current object in JSON"""
@@ -29,7 +29,7 @@ class JSONDetails(object):
         anchor_portal_types = utility.containsanchors.split('\n')
         image_portal_types = utility.imageobjects.split('\n')
 
-        results = {};
+        results = {}
         results['title'] = self.context.Title()
         results['description'] = self.context.Description()
 
@@ -40,7 +40,7 @@ class JSONDetails(object):
             results['thumb'] = ""
 
         if self.context.portal_type in anchor_portal_types:
-            results['anchors'] = [];
+            results['anchors'] = []
             tree = HTMLTreeBuilder.TreeBuilder()
             tree.feed('<root>%s</root>' % self.context.getText())
             rootnode = tree.close()

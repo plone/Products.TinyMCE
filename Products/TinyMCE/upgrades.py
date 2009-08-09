@@ -26,6 +26,9 @@ def upgrade_10_to_11(setuptool):
     # Add custom toolbar buttons property
     tinymce.customtoolbarbuttons = u""
 
+    # Add rooted property
+    tinymce.rooted = False
+
     # Convert meta_types to portal_types
     tinymce.containsobjects = meta_types_to_portal_types(tinymce.containsobjects)
     tinymce.containsanchors = meta_types_to_portal_types(tinymce.containsanchors)

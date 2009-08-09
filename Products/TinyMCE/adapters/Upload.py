@@ -1,12 +1,12 @@
 from zope.interface import implements
-from zope.component import adapts;
+from zope.component import adapts
 from Products.CMFCore.utils import getToolByName
 from Products.PythonScripts.standard import html_quote, newline_to_br
 
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from zope.component import getUtility
 from Products.TinyMCE.adapters.interfaces.Upload import IUpload
-from Products.CMFCore.interfaces._content import IContentish, IFolderish;
+from Products.CMFCore.interfaces._content import IContentish, IFolderish
 from Products.CMFPlone.interfaces.siteroot import IPloneSiteRoot
 from Products.CMFPlone import utils
 from Acquisition import aq_inner
@@ -20,12 +20,12 @@ TEMPLATE = """
 
 class Upload(object):
     """Adds the uploaded file to the folder"""
-    implements(IUpload);
+    implements(IUpload)
 
     def __init__(self, context):
         """Constructor"""
 
-        self.context = context;
+        self.context = context
 
     def errorMessage(self, msg):
         """Returns an error message"""
@@ -69,7 +69,7 @@ class Upload(object):
     def upload(self):
         """Adds uploaded file"""
 
-        object = aq_inner(self.context);
+        object = aq_inner(self.context)
         if not IFolderish.providedBy(object):
             object = object.getParentNode()
 

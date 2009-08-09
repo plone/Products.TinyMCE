@@ -96,6 +96,7 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
             'imageobjects' : {'type' : 'List', 'default' : 'ATImage'},
             'customplugins' : {'type' : 'List', 'default' : ''},
             'entity_encoding' : {'type' : 'Text', 'default' : 'raw'},
+            'rooted' : {'type' : 'Bool', 'default' : False},
         }
     }
 
