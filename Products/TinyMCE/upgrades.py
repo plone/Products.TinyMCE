@@ -34,3 +34,5 @@ def upgrade_10_to_11(setuptool):
     tinymce.containsanchors = meta_types_to_portal_types(tinymce.containsanchors)
     tinymce.linkable = meta_types_to_portal_types(tinymce.linkable)
     tinymce.imageobjects = meta_types_to_portal_types(tinymce.imageobjects)
+
+    # Unregister old js and register new js
