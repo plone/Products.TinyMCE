@@ -3,11 +3,6 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="tinymce">
 
-    <utility
-        component=".vocab.ImageScalesVocabularyFactory"
-        name="tinymce.imagescales"
-        />
-
     <browser:page
         for="..interfaces.utility.ITinyMCE"
         name="tinymce-controlpanel"

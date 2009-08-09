@@ -41,7 +41,6 @@ class TinyMCE(SimpleItem):
     content_css = FieldProperty(ITinyMCELayout['content_css'])
     styles = FieldProperty(ITinyMCELayout['styles'])
     tablestyles = FieldProperty(ITinyMCELayout['tablestyles'])
-    imagesizes = FieldProperty(ITinyMCELayout['imagesizes'])
 
     toolbar_width = FieldProperty(ITinyMCEToolbar['toolbar_width'])
     

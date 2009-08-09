@@ -70,12 +70,6 @@ class ITinyMCELayout(Interface):
         default=u'Subdued grid|plain\nInvisible grid|invisible\nFancy listing|listing\nFancy grid listing|grid listing\nFancy vertical listing|vertical listing',
         required=False) 
 
-    imagesizes = schema.Tuple(
-        title=_(u'label_imagesizes', default=u'Image Sizes'),
-        description=_(u'help_imagesizes', default=u"Select the image sizes to show in the browser"),
-        value_type = schema.Choice(vocabulary = 'tinymce.imagescales'),
-        required=False) 
-
 class ITinyMCEToolbar(Interface):
     """This interface defines the toolbar properties."""
 
