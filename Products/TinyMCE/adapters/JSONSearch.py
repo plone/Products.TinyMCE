@@ -54,10 +54,10 @@ class JSONSearch(object):
 
         if searchtext:
             for brain in self.context.portal_catalog.searchResults({'SearchableText':'%s*' % searchtext, 'portal_type':filter_portal_types, 'sort_on':'sortable_title'}):
-                catalog_results.append(self.getInfoFromBrain(brain));
+                catalog_results.append(self.getInfoFromBrain(brain))
 
         # add catalog_ressults
-        results['items'] = catalog_results; 
+        results['items'] = catalog_results 
 
         # return results in JSON format
         testing.setUpJSONConverter()

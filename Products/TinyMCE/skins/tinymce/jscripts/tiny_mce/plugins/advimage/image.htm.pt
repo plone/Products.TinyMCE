@@ -17,7 +17,7 @@
         <fieldset class="column" style="width: 120px;">
           <legend i18n:domain="plone.tinymce" i18n:translate="">Libraries</legend>
                 <ul class="configlets">
-                    <li>
+                    <li id="home">
               <a href="javascript:ImageDialog.displayPanel('internal_panel'); ImageDialog.getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonimagefolderlisting');">
                   <img alt="" tal:attributes="src string:$portal_url/logoIcon.gif"/> <span i18n:domain="plone.tinymce" i18n:translate="">Home</span>
               </a>

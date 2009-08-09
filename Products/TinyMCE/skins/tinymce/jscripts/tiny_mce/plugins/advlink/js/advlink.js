@@ -40,6 +40,11 @@ function init() {
 	// Set button caption
 	formButtonsObj.insert.value = tinyMCEPopup.getLang(action, 'Insert', true); 
 
+	// Check if rooted
+	if (tinyMCEPopup.editor.settings.rooted) {
+		document.getElementById('home').style.display = 'none';
+	}
+
 	if (action == "update") {
 		var href = inst.dom.getAttrib(elm, 'href');
 
@@ -744,7 +749,8 @@ function getFolderListing(path, method) {
 		url : path + '/' + method,
 		content_type : "application/x-www-form-urlencoded",
 		type : 'POST',
-		data : "searchtext=" + document.getElementById('searchtext').value,
+		data : "searchtext=" + document.getElementById('searchtext').value + "&rooted=" + (tinyMCEPopup.editor.settings.rooted ? "True" : "False") + "&document_base_url=" + encodeURIComponent(tinyMCEPopup.editor.settings.document_base_url),
+
 		success : function(text) {
 			var html = "";
 			var data = eval('(' + text + ')');
