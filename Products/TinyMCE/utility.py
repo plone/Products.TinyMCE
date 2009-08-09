@@ -7,6 +7,7 @@ from Products.CMFCore.utils import getToolByName
 from Products.CMFCore.interfaces._content import IContentish, IFolderish
 from z3c.json import interfaces
 from z3c.json import testing
+from types import StringTypes
 
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.interfaces.utility import ITinyMCELayout
@@ -612,12 +613,14 @@ class TinyMCE(SimpleItem):
         # Add styles to results
         results['styles'] = []
         results['table_styles'] = []
-        if not redefine_parastyles and isinstance(self.tablestyles, str):
-            for tablestyle in self.tablestyles.split('\n'):
-                tablestylefields = tablestyle.split('|');
-                results['styles'].append(tablestylefields[0] + '|table|' + tablestylefields[1]);
-                results['table_styles'].append(tablestylefields[0] + '=' + tablestylefields[1]);
-            results['styles'].extend(self.styles.split('\n'))
+        if not redefine_parastyles:
+            if isinstance(self.tablestyles, StringTypes):
+                for tablestyle in self.tablestyles.split('\n'):
+                    tablestylefields = tablestyle.split('|');
+                    results['styles'].append(tablestylefields[0] + '|table|' + tablestylefields[1]);
+                    results['table_styles'].append(tablestylefields[0] + '=' + tablestylefields[1]);
+            if isinstance(self.styles, StringTypes):
+                results['styles'].extend(self.styles.split('\n'))
 
         if parastyles is not None:
             results['styles'].extend(parastyles)
