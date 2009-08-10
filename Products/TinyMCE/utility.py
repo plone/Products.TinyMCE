@@ -289,8 +289,10 @@ class TinyMCE(SimpleItem):
         if self.toolbar_indent:
             buttons.append('indent')
 
-        if self.toolbar_tablecontrols:
-            buttons.append('tablecontrols')
+        if self.toolbar_image:
+            buttons.append('image')
+        if self.toolbar_media:
+            buttons.append('media')
 
         if self.toolbar_link:
             buttons.append('link')
@@ -298,10 +300,9 @@ class TinyMCE(SimpleItem):
             buttons.append('unlink')
         if self.toolbar_anchor:
             buttons.append('anchor')
-        if self.toolbar_image:
-            buttons.append('image')
-        if self.toolbar_media:
-            buttons.append('media')
+
+        if self.toolbar_tablecontrols:
+            buttons.append('tablecontrols')
 
         if self.toolbar_charmap:
             buttons.append('charmap')
