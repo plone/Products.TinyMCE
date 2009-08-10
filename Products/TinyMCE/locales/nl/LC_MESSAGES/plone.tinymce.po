@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.1\n"
-"POT-Creation-Date: 2009-08-08 13:22+0000\n"
-"PO-Revision-Date: 2009-08-08 18:10+0100\n"
+"POT-Creation-Date: 2009-08-10 10:32+0000\n"
+"PO-Revision-Date: 2009-08-10 12:36+0100\n"
 "Last-Translator: Rob Gietema <rob@fourdigits.nl>\n"
 "Language-Team: Rob Gietema <rob@fourdigits.nl>\n"
 "MIME-Version: 1.0\n"
@@ -35,7 +35,7 @@ msgid "Allow captioned images"
 msgstr "Afbeelding onderschriften"
 
 #. Default: "Anchors"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:48
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:48
 msgid "Anchors"
 msgstr "Ankers"
 
@@ -51,6 +51,11 @@ msgstr "Vet"
 msgid "Bottom margin of the textfield when auto resizing is enabled."
 msgstr "Marge onderaan wanneer automatisch schalen is ingeschakeld van het tekstveld"
 
+#. Default: "Caption"
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:87
+msgid "Caption"
+msgstr "Onderschrift"
+
 #: ./interfaces/utility.py:56
 msgid "Choose the Css used in Wysiwyg Editor Area"
 msgstr "Eigen CSS voor editor"
@@ -59,11 +64,11 @@ msgstr "Eigen CSS voor editor"
 msgid "Cleanup messy code"
 msgstr "Code opruimen"
 
-#: ./interfaces/utility.py:374
+#: ./interfaces/utility.py:380
 msgid "Contains Anchors"
 msgstr "Bevat ankers"
 
-#: ./interfaces/utility.py:368
+#: ./interfaces/utility.py:374
 msgid "Contains Objects"
 msgstr "Bevat objecten"
 
@@ -72,11 +77,11 @@ msgid "Copy"
 msgstr "Kopiëren"
 
 #. Default: "Current Folder"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:27
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:27
 msgid "Current Folder"
 msgstr "Huidige map"
 
-#: ./interfaces/utility.py:392
+#: ./interfaces/utility.py:398
 msgid "Custom Plugins"
 msgstr "Eigen plugins"
 
@@ -89,17 +94,17 @@ msgid "Cut"
 msgstr "Knippen"
 
 #. Default: "Description"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:126
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:121
 msgid "Description"
 msgstr "Omschrijving"
 
 #. Default: "Details"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:57
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:58
 msgid "Details"
 msgstr "Details"
 
 #. Default: "E-mail"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:114
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:115
 msgid "E-mail"
 msgstr "E-mail"
 
@@ -131,23 +136,23 @@ msgstr "Contextmenu inschakelen"
 msgid "Enable resizing the editor window."
 msgstr "Editor venster schaalbaar maken"
 
-#: ./interfaces/utility.py:381
+#: ./interfaces/utility.py:387
 msgid "Enter a list of content types which can be linked. Format is one contenttype per line."
 msgstr "Geef een lijst op van contenttypes waar naar gelinkt kan worden. Het formaat is één contenttype per regel."
 
-#: ./interfaces/utility.py:387
+#: ./interfaces/utility.py:393
 msgid "Enter a list of content types which can be used as images. Format is one contenttype per line."
 msgstr "Geef een lijst op van contenttypes welke gebruikt kunnen worden als afbeeldingen. Het formaat is één contenttype per regel."
 
-#: ./interfaces/utility.py:375
+#: ./interfaces/utility.py:381
 msgid "Enter a list of content types which can contain anchors. Format is one contenttype per line."
 msgstr "Geef een lijst van contenttypen die ankers kunnen bevatten op. Het formaat is één contenttype per regel."
 
-#: ./interfaces/utility.py:369
+#: ./interfaces/utility.py:375
 msgid "Enter a list of content types which can contain other objects. Format is one contenttype per line."
 msgstr "Geef een lijst van contenttypen die objecten kunnen bevatten op. Het formaat is één contenttype per regel."
 
-#: ./interfaces/utility.py:393
+#: ./interfaces/utility.py:399
 msgid "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
 msgstr "Geef een lijst op van eigen plugins die gebruikt worden in de editor. Het formaat is de pluginnaam of pluginnaam|locatie, één per regel."
 
@@ -163,22 +168,22 @@ msgstr "Geef een lijst van stijlen op die verschijnen in het stijlen menu. Het f
 msgid "Enter a list of styles to appear in the table style pulldown. Format is title|class, one per line."
 msgstr "Geef een lijst van stijlen op die verschijnen in het tabel stijlen menu. Het formaat is titel|class, één per regel."
 
-#: ./interfaces/utility.py:398
+#: ./interfaces/utility.py:404
 msgid "Entity encoding"
 msgstr "Codering"
 
 #. Default: "External"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:38
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:38
 msgid "External"
 msgstr "Extern"
 
 #. Default: "External link"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:89
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:90
 msgid "External link"
 msgstr "Externe link"
 
 #. Default: "File"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:112
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:107
 msgid "File"
 msgstr "Bestand"
 
@@ -195,11 +200,11 @@ msgid "Forecolor"
 msgstr "Tekstkleur"
 
 #. Default: "Home"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:22
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:22
 msgid "Home"
 msgstr "Home"
 
-#: ./interfaces/utility.py:386
+#: ./interfaces/utility.py:392
 msgid "Image Objects"
 msgstr "Afbeelding objecten"
 
@@ -212,7 +217,7 @@ msgid "Indent"
 msgstr "Inspringen"
 
 #. Default: "Inline"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:77
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:78
 msgid "Inline"
 msgstr "Inline"
 
@@ -265,7 +270,7 @@ msgid "Insert/edit media"
 msgstr "Media invoegen/wijzigen"
 
 #. Default: "Internal link"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:62
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:62
 msgid "Internal link"
 msgstr "Interne link"
 
@@ -278,12 +283,12 @@ msgid "Layout"
 msgstr "Layout"
 
 #. Default: "Libraries"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:18
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:18
 msgid "Libraries"
 msgstr "Bilbiotheken"
 
 #. Default: "Link to anchor"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:129
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:130
 msgid "Link to anchor"
 msgstr "Link naar anker"
 
@@ -291,7 +296,7 @@ msgstr "Link naar anker"
 msgid "Link using UIDs"
 msgstr "Met uids linken"
 
-#: ./interfaces/utility.py:380
+#: ./interfaces/utility.py:386
 msgid "Linkable Objects"
 msgstr "Linkbare objecten"
 
@@ -300,7 +305,7 @@ msgid "Links to objects on this site can use unique object ids so that the links
 msgstr "Links naar objecten op deze site kunnen unieke object ids gebruiken zodat de links valide blijven wanneer het bron object hernoemd of verplaatst is op de site."
 
 #. Default: "Mail"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:43
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:43
 msgid "Mail"
 msgstr "Mail"
 
@@ -325,7 +330,7 @@ msgid "Paste from Word"
 msgstr "Plakken vanuit Word"
 
 #. Default: "Preview"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:99
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:100
 msgid "Preview"
 msgstr "Voorbeeld"
 
@@ -345,12 +350,16 @@ msgstr "Verwijder opmaak"
 msgid "Resource Types"
 msgstr "Resource Typen"
 
+#: ./interfaces/utility.py:368
+msgid "Rooted to current object"
+msgstr "Beperken tot huidig object"
+
 #: ./interfaces/utility.py:89
 msgid "Save"
 msgstr "Opslaan"
 
 #. Default: "Search"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:37
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:37
 msgid "Search"
 msgstr "Zoeken"
 
@@ -375,7 +384,7 @@ msgid "Styles"
 msgstr "Stijlen"
 
 #. Default: "Subject"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:121
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:122
 msgid "Subject"
 msgstr "Onderwerp"
 
@@ -395,7 +404,7 @@ msgstr "Tabel instellingen"
 msgid "Table styles"
 msgstr "Tabel stijlen"
 
-#: ./interfaces/utility.py:399
+#: ./interfaces/utility.py:405
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
 msgstr "Deze optie bepaald hoe entiteiten/karakters worden verwerkt. Named: Karakters worden geconverteerd in named entiteiten gebaseerd op de entiteiten optie. Numeriek: Karakters worden geconverteerd in numerieke karakters. Raw: Alle karakters worden opgeslagen in een non-entiteiten vorm behalve deze XML standaard entiteiten: amp lt gt quot."
 
@@ -444,7 +453,7 @@ msgid "TinyMCE Settings"
 msgstr "TinyMCE instellingen"
 
 #. Default: "Title"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:272
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:273
 msgid "Title"
 msgstr "Titel"
 
@@ -481,23 +490,27 @@ msgid "Unordered list"
 msgstr "Opsommingtekens"
 
 #. Default: "Up one level"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:50
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:50
 msgid "Up one level"
 msgstr "Eén niveau hoger"
 
 #. Default: "Upload"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:132
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:127
 msgid "Upload"
 msgstr "Upload"
 
 #. Default: "Upload file"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:109
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:53
 msgid "Upload file"
 msgstr "Bestand uploaden"
 
 #: ./interfaces/utility.py:324
 msgid "Visual control characters on/off"
 msgstr "Zichtbare symbolen aan/uit"
+
+#: ./interfaces/utility.py:369
+msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
+msgstr "Wanneer ingeschakeld wordt de gebruiker beperkt tot het huidige object en kunnen er geen links en afbeeldingen toegevoegd worden van andere delen van de website."
 
 #: ./interfaces/utility.py:42
 msgid "Writing direction"
