@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-08-08 13:22+0000\n"
+"POT-Creation-Date: 2009-08-10 10:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,7 @@ msgid "Allow captioned images"
 msgstr ""
 
 #. Default: "Anchors"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:48
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:48
 msgid "Anchors"
 msgstr ""
 
@@ -54,6 +54,11 @@ msgstr ""
 msgid "Bottom margin of the textfield when auto resizing is enabled."
 msgstr ""
 
+#. Default: "Caption"
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:87
+msgid "Caption"
+msgstr ""
+
 #: ./interfaces/utility.py:56
 msgid "Choose the Css used in Wysiwyg Editor Area"
 msgstr ""
@@ -62,11 +67,11 @@ msgstr ""
 msgid "Cleanup messy code"
 msgstr ""
 
-#: ./interfaces/utility.py:374
+#: ./interfaces/utility.py:380
 msgid "Contains Anchors"
 msgstr ""
 
-#: ./interfaces/utility.py:368
+#: ./interfaces/utility.py:374
 msgid "Contains Objects"
 msgstr ""
 
@@ -75,11 +80,11 @@ msgid "Copy"
 msgstr ""
 
 #. Default: "Current Folder"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:27
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:27
 msgid "Current Folder"
 msgstr ""
 
-#: ./interfaces/utility.py:392
+#: ./interfaces/utility.py:398
 msgid "Custom Plugins"
 msgstr ""
 
@@ -92,17 +97,17 @@ msgid "Cut"
 msgstr ""
 
 #. Default: "Description"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:126
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:121
 msgid "Description"
 msgstr ""
 
 #. Default: "Details"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:57
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:58
 msgid "Details"
 msgstr ""
 
 #. Default: "E-mail"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:114
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:115
 msgid "E-mail"
 msgstr ""
 
@@ -134,23 +139,23 @@ msgstr ""
 msgid "Enable resizing the editor window."
 msgstr ""
 
-#: ./interfaces/utility.py:381
+#: ./interfaces/utility.py:387
 msgid "Enter a list of content types which can be linked. Format is one contenttype per line."
 msgstr ""
 
-#: ./interfaces/utility.py:387
+#: ./interfaces/utility.py:393
 msgid "Enter a list of content types which can be used as images. Format is one contenttype per line."
 msgstr ""
 
-#: ./interfaces/utility.py:375
+#: ./interfaces/utility.py:381
 msgid "Enter a list of content types which can contain anchors. Format is one contenttype per line."
 msgstr ""
 
-#: ./interfaces/utility.py:369
+#: ./interfaces/utility.py:375
 msgid "Enter a list of content types which can contain other objects. Format is one contenttype per line."
 msgstr ""
 
-#: ./interfaces/utility.py:393
+#: ./interfaces/utility.py:399
 msgid "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
 msgstr ""
 
@@ -166,22 +171,22 @@ msgstr ""
 msgid "Enter a list of styles to appear in the table style pulldown. Format is title|class, one per line."
 msgstr ""
 
-#: ./interfaces/utility.py:398
+#: ./interfaces/utility.py:404
 msgid "Entity encoding"
 msgstr ""
 
 #. Default: "External"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:38
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:38
 msgid "External"
 msgstr ""
 
 #. Default: "External link"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:89
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:90
 msgid "External link"
 msgstr ""
 
 #. Default: "File"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:112
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:107
 msgid "File"
 msgstr ""
 
@@ -198,11 +203,11 @@ msgid "Forecolor"
 msgstr ""
 
 #. Default: "Home"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:22
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:22
 msgid "Home"
 msgstr ""
 
-#: ./interfaces/utility.py:386
+#: ./interfaces/utility.py:392
 msgid "Image Objects"
 msgstr ""
 
@@ -215,7 +220,7 @@ msgid "Indent"
 msgstr ""
 
 #. Default: "Inline"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:77
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:78
 msgid "Inline"
 msgstr ""
 
@@ -268,7 +273,7 @@ msgid "Insert/edit media"
 msgstr ""
 
 #. Default: "Internal link"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:62
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:62
 msgid "Internal link"
 msgstr ""
 
@@ -281,12 +286,12 @@ msgid "Layout"
 msgstr ""
 
 #. Default: "Libraries"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:18
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:18
 msgid "Libraries"
 msgstr ""
 
 #. Default: "Link to anchor"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:129
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:130
 msgid "Link to anchor"
 msgstr ""
 
@@ -294,7 +299,7 @@ msgstr ""
 msgid "Link using UIDs"
 msgstr ""
 
-#: ./interfaces/utility.py:380
+#: ./interfaces/utility.py:386
 msgid "Linkable Objects"
 msgstr ""
 
@@ -303,7 +308,7 @@ msgid "Links to objects on this site can use unique object ids so that the links
 msgstr ""
 
 #. Default: "Mail"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:43
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:43
 msgid "Mail"
 msgstr ""
 
@@ -328,7 +333,7 @@ msgid "Paste from Word"
 msgstr ""
 
 #. Default: "Preview"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:99
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:100
 msgid "Preview"
 msgstr ""
 
@@ -348,12 +353,16 @@ msgstr ""
 msgid "Resource Types"
 msgstr ""
 
+#: ./interfaces/utility.py:368
+msgid "Rooted to current object"
+msgstr ""
+
 #: ./interfaces/utility.py:89
 msgid "Save"
 msgstr ""
 
 #. Default: "Search"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:37
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:37
 msgid "Search"
 msgstr ""
 
@@ -378,7 +387,7 @@ msgid "Styles"
 msgstr ""
 
 #. Default: "Subject"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:121
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:122
 msgid "Subject"
 msgstr ""
 
@@ -398,7 +407,7 @@ msgstr ""
 msgid "Table styles"
 msgstr ""
 
-#: ./interfaces/utility.py:399
+#: ./interfaces/utility.py:405
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
 msgstr ""
 
@@ -447,7 +456,7 @@ msgid "TinyMCE Settings"
 msgstr ""
 
 #. Default: "Title"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advlink/link.htm.pt:272
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:273
 msgid "Title"
 msgstr ""
 
@@ -484,22 +493,26 @@ msgid "Unordered list"
 msgstr ""
 
 #. Default: "Up one level"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:50
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:50
 msgid "Up one level"
 msgstr ""
 
 #. Default: "Upload"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:132
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:127
 msgid "Upload"
 msgstr ""
 
 #. Default: "Upload file"
-#: ./skins/tinymce/jscripts/tiny_mce/plugins/advimage/image.htm.pt:109
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:53
 msgid "Upload file"
 msgstr ""
 
 #: ./interfaces/utility.py:324
 msgid "Visual control characters on/off"
+msgstr ""
+
+#: ./interfaces/utility.py:369
+msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
 msgstr ""
 
 #: ./interfaces/utility.py:42

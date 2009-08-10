@@ -365,8 +365,8 @@ class ITinyMCEResourceTypes(Interface):
         required=False)
 
     rooted = schema.Bool(
-        title=_(u'label_rooted', default=u"Rooted to current object"),
-        description=_(u"help_rooted", default=u"When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."),
+        title=_(u"Rooted to current object"),
+        description=_(u"When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."),
         default=False,
         required=False)
 
