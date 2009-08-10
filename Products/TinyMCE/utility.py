@@ -135,7 +135,7 @@ class TinyMCE(SimpleItem):
                     seq.append('')
             return tuple([ int(val) for val in seq if val])
 
-        # First check whether the user actually wants kupu
+        # First check whether the user actually wants tinymce
         pm = getToolByName(self, 'portal_membership')
         if pm.isAnonymousUser() and not allowAnonymous:
             return False
@@ -555,11 +555,24 @@ class TinyMCE(SimpleItem):
             if not valid_elements.has_key(custom_tag):
                 valid_elements[custom_tag] = COMMON_ATTRS
 
-        # Get kupu library tool
-        kupu_library_tool = getToolByName(self, 'kupu_library_tool')
+        # Get kupu library tool filter
+        # Settings are stored on safe_html transform in Plone 4 and
+        # on kupu tool in Plone 3.
+        try:
+            kupu_library_tool = getToolByName(self, 'kupu_library_tool')
+        except:
+            pass
 
-        # Get stripped combinations
-        stripped_combinations = kupu_library_tool.get_stripped_combinations()
+        # Get stripped combinations try 
+        try:
+            sc = safe_html.get_parameter_value('stripped_combinations')
+            stripped_combinations = []
+            for ta in sc.keys():
+                tags = ta.replace(',', ' ').split()
+                attributes = sc[ta].replace(',', ' ').split()
+                stripped_combinations.append((tags,attributes))
+        except:
+            stripped_combinations = kupu_library_tool.get_stripped_combinations()
 
         # Strip combinations
         for (stripped_combination_tags, stripped_combination_attributes) in stripped_combinations:
@@ -569,8 +582,12 @@ class TinyMCE(SimpleItem):
                     valid_elements[stripped_combination_tag] -= stripped_combination_attributes_set
 
         # Remove to be stripped attributes
-        stripped_attributes = set(kupu_library_tool.get_stripped_attributes())
-        style_whitelist = kupu_library_tool.getStyleWhitelist()
+        try:
+            stripped_attributes = set(safe_html.get_parameter_value('stripped_attributes'))
+            style_whitelist = safe_html.get_parameter_value('style_whitelist')
+        except:
+            stripped_attributes = set(kupu_library_tool.get_stripped_attributes())
+            style_whitelist = kupu_library_tool.getStyleWhitelist()
         style_attribute = "style"
         if len(style_whitelist) > 0:
             style_attribute = 'style<' + '?'.join(style_whitelist)
