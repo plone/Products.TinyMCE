@@ -1,5 +1,6 @@
 from zope.component import getUtility
 from Products.TinyMCE.interfaces.utility import ITinyMCE
+from Products.CMFCore.utils import getToolByName
 
 def meta_types_to_portal_types(meta_types):
     """Convert meta types to portal types"""
@@ -36,3 +37,4 @@ def upgrade_10_to_11(setuptool):
     tinymce.imageobjects = meta_types_to_portal_types(tinymce.imageobjects)
 
     # Unregister old js and register new js
+    setuptool.runAllImportStepsFromProfile('profile-Products.TinyMCE:upgrade_10_to_11')

@@ -11,14 +11,13 @@
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
 
-    <genericsetup:upgradeStep
-        title="Upgrade TinyMCE"
-        description="Upgrade TinyMCE 1.0 to 1.1"
-        source="1.0"
-        destination="1.1"
-        handler=".upgrades.upgrade_10_to_11"
-        sortkey="10"
-        profile="Products.TinyMCE:TinyMCE" />
+    <genericsetup:registerProfile
+        name="upgrade_10_to_11"
+        title="Upgrade TinyMCE 1.0 to 1.1"
+        directory="profiles/upgrade_10_to_11"
+        description="Upgrades the TinyMCE editor from version 1.0. to 1.1."
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
 
     <genericsetup:registerProfile
         name="uninstall"
@@ -27,5 +26,14 @@
         description="Removes the TinyMCE editor from the site."
         provides="Products.GenericSetup.interfaces.EXTENSION"
         />
+
+    <genericsetup:upgradeStep
+        title="Upgrade TinyMCE"
+        description="Upgrade TinyMCE 1.0 to 1.1"
+        source="1.0"
+        destination="1.1"
+        handler=".upgrades.upgrade_10_to_11"
+        sortkey="10"
+        profile="Products.TinyMCE:TinyMCE" />
 
 </configure>
