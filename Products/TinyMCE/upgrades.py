@@ -38,3 +38,6 @@ def upgrade_10_to_11(setuptool):
 
     # Unregister old js and register new js
     setuptool.runAllImportStepsFromProfile('profile-Products.TinyMCE:upgrade_10_to_11')
+
+    # Add definitionlist property
+    tinymce.toolbar_definitionlist = True

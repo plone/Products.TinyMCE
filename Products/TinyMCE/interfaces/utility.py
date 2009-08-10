@@ -210,6 +210,11 @@ class ITinyMCEToolbar(Interface):
         default=True,
         required=False)
 
+    toolbar_definitionlist = schema.Bool(
+        title=_(u"Definition list"),
+        default=True,
+        required=False)
+
     toolbar_outdent = schema.Bool(
         title=_(u"Outdent"),
         default=True,
