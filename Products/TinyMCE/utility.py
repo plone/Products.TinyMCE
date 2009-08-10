@@ -282,6 +282,8 @@ class TinyMCE(SimpleItem):
             buttons.append('bullist')
         if self.toolbar_numlist:
             buttons.append('numlist')
+        if self.toolbar_definitionlist:
+            buttons.append('definitionlist')
         if self.toolbar_outdent:
             buttons.append('outdent')
         if self.toolbar_indent:

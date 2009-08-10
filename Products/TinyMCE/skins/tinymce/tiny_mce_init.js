@@ -133,6 +133,7 @@ function TinyMCEConfig(id) {
         h['Tables'].push('{ title: "Tables", tag: "table", className: "-", type: "Tables" }');
         h['Lists'].push('{ title: "Lists", tag: "ul", className: "-", type: "Lists" }');
         h['Lists'].push('{ title: "Lists", tag: "ol", className: "-", type: "Lists" }');
+        h['Lists'].push('{ title: "Lists", tag: "dl", className: "-", type: "Lists" }');
         h['Print'].push('{ title: "Print", tag: "", className: "-", type: "Print" }');
 
         // Add defaults
@@ -147,6 +148,9 @@ function TinyMCEConfig(id) {
         h['Lists'].push('{ title: "Upper Alpha", tag: "ol", className: "", listType: "A", type: "Lists" }');
         h['Lists'].push('{ title: "Lower Roman", tag: "ol", className: "", listType: "i", type: "Lists" }');
         h['Lists'].push('{ title: "Upper Roman", tag: "ol", className: "", listType: "I", type: "Lists" }');
+
+        h['Lists'].push('{ title: "Definition term", tag: "dt", className: "", listType: "", type: "Lists" }');
+        h['Lists'].push('{ title: "Definition description", tag: "dd", className: "", listType: "", type: "Lists" }');
 
         for (var i = 0; i < this.widget_config.styles.length; i++) {
             e = this.widget_config.styles[i].split('|');
@@ -299,7 +303,7 @@ function TinyMCEConfig(id) {
     };
 
     this.getPlugins = function () {
-        var plugins = "safari,pagebreak,table,save,advhr,advimage,advlink,emotions,iespell,insertdatetime,preview,media,searchreplace,print,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups,style,tabfocus";
+        var plugins = "safari,pagebreak,table,save,advhr,advimage,advlink,emotions,iespell,insertdatetime,preview,media,searchreplace,print,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups,style,tabfocus,definitionlist";
         for (var i = 0; i < this.widget_config.customplugins.length; i++) {
             if (this.widget_config.customplugins[i].indexOf('|') == -1) {
                 plugins += ',-' + this.widget_config.customplugins[i];

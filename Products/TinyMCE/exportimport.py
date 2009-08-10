@@ -59,6 +59,7 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
             'toolbar_justifyfull' : {'type' : 'Bool', 'default' : True},
             'toolbar_bullist' : {'type' : 'Bool', 'default' : True},
             'toolbar_numlist' : {'type' : 'Bool', 'default' : True},
+            'toolbar_definitionlist' : {'type' : 'Bool', 'default' : True},
             'toolbar_outdent' : {'type' : 'Bool', 'default' : True},
             'toolbar_indent' : {'type' : 'Bool', 'default' : True},
             'toolbar_tablecontrols' : {'type' : 'Bool', 'default' : True},
