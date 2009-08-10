@@ -819,7 +819,7 @@ function getFolderListing(path, method) {
 function uploadOk(ok_msg) {
 	current_link = ok_msg;
 	displayPanel('internal_panel');
-	getFolderListing(current_path + '\',\'tinymce-jsonlinkablefolderlisting');
+	getFolderListing(current_path,'tinymce-jsonlinkablefolderlisting');
 }
 
 function uploadError(error_msg) {
