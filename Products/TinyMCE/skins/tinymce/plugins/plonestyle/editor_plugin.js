@@ -1,9 +1,10 @@
 /**
+ * Plone style plugin
+ *
  * @author Four Digits
- * @copyright Copyright © 2008, Four Digits, All rights reserved.
  */
 (function() {
-    tinymce.create('tinymce.plugins.StylePlugin', {
+    tinymce.create('tinymce.plugins.PloneStylePlugin', {
 
         _previousNode       : null,
         _styles             : null,
@@ -239,9 +240,9 @@
 
         getInfo : function() {
             return {
-                longname : 'Style',
-                author : 'Four Digits',
-                authorurl : 'http://www.fourdigits.nl',
+                longname : 'Plone style',
+                author : 'Rob Gietema',
+                authorurl : 'http://plone.org',
                 infourl : 'http://plone.org/products/tinymce',
                 version : tinymce.majorVersion + "." + tinymce.minorVersion
             };
@@ -249,5 +250,5 @@
     });
 
     // Register plugin
-    tinymce.PluginManager.add('style', tinymce.plugins.StylePlugin);
+    tinymce.PluginManager.add('plonestyle', tinymce.plugins.PloneStylePlugin);
 })();
