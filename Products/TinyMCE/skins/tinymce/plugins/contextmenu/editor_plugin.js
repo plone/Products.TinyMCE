@@ -70,12 +70,12 @@
 
 			if ((el.nodeName == 'A' && !ed.dom.getAttrib(el, 'name')) || !col) {
 				m.addSeparator();
-				m.add({title : 'advanced.link_desc', icon : 'link', cmd : ed.plugins.advlink ? 'mceAdvLink' : 'mceLink', ui : true});
+				m.add({title : 'advanced.link_desc', icon : 'link', cmd : ed.plugins.advlink ? 'mcePloneLink' : 'mceLink', ui : true});
 				m.add({title : 'advanced.unlink_desc', icon : 'unlink', cmd : 'UnLink'});
 			}
 
 			m.addSeparator();
-			m.add({title : 'advanced.image_desc', icon : 'image', cmd : ed.plugins.advimage ? 'mceAdvImage' : 'mceImage', ui : true});
+			m.add({title : 'advanced.image_desc', icon : 'image', cmd : ed.plugins.advimage ? 'mcePloneImage' : 'mceImage', ui : true});
 
 			m.addSeparator();
 			am = m.addMenu({title : 'contextmenu.align'});
