@@ -465,6 +465,12 @@ var ImageDialog = {
             success : function(text) {
                 var html = "";
                 var data = eval('(' + text + ')');
+                var f0 = document.forms[0];
+                var elm = f0.elements['dimensions'];
+                var dimension = "";
+                if (elm != null && elm.options != null) {
+                    dimension = elm.options[elm.selectedIndex].value;
+                }
 
                 if (data.thumb == "") {
                     document.getElementById ('previewimagecontainer').innerHTML = data.description;
@@ -479,8 +485,11 @@ var ImageDialog = {
                     for(var i=0; i<data.scales.length; i++) {
                         var nd = document.createElement('option');
                         nd.value = data.scales[i].value;
+                        if (nd.value == dimension) {
+                            nd.selected = true;
+                        }
                         if (data.scales[i].size[0]) {
-                          nd.text = data.scales[i].title+' ('+data.scales[i].size[0]+'x'+data.scales[i].size[1]+')';
+                            nd.text = data.scales[i].title+' ('+data.scales[i].size[0]+'x'+data.scales[i].size[1]+')';
                         } else {
                             nd.text = data.scales[i].title;
                         }
