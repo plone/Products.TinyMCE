@@ -6,7 +6,7 @@
  */
 
 (function() {
-	tinymce.create('tinymce.plugins.AdvancedImagePlugin', {
+	tinymce.create('tinymce.plugins.PloneImagePlugin', {
 		init : function(ed, url) {
 			// Register commands
 			ed.addCommand('mceAdvImage', function() {
@@ -15,7 +15,7 @@
 					return;
 
 				ed.windowManager.open({
-					file : url + '/image.htm',
+					file : url + '/ploneimage.htm',
 					width : 820 + parseInt(ed.getLang('advimage.delta_width', 0)),
 					height : 470 + parseInt(ed.getLang('advimage.delta_height', 0)),
 					inline : 1
@@ -33,15 +33,15 @@
 
 		getInfo : function() {
 			return {
-				longname : 'Advanced image',
-				author : 'Moxiecode Systems AB',
-				authorurl : 'http://tinymce.moxiecode.com',
-				infourl : 'http://wiki.moxiecode.com/index.php/TinyMCE:Plugins/advimage',
+				longname : 'Plone image',
+				author : 'Rob Gietema',
+				authorurl : 'http://plone.org',
+				infourl : 'http://plone.org/products/tinymce',
 				version : tinymce.majorVersion + "." + tinymce.minorVersion
 			};
 		}
 	});
 
 	// Register plugin
-	tinymce.PluginManager.add('advimage', tinymce.plugins.AdvancedImagePlugin);
+	tinymce.PluginManager.add('ploneimage', tinymce.plugins.PloneImagePlugin);
 })();
