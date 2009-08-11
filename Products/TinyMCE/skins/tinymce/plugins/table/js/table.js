@@ -25,7 +25,7 @@ function insertTable() {
 	cellpadding = formObj.elements['cellpadding'].value != "" ? formObj.elements['cellpadding'].value : "";
 	cellspacing = formObj.elements['cellspacing'].value != "" ? formObj.elements['cellspacing'].value : "";
 	align = formObj.elements['align'].options[formObj.elements['align'].selectedIndex].value;
-	frame = formObj.elements['frame'].options[formObj.elements['frame'].selectedIndex].value;
+	frame = formObj.elements['tframe'].options[formObj.elements['tframe'].selectedIndex].value;
 	rules = formObj.elements['rules'].options[formObj.elements['rules'].selectedIndex].value;
 	width = formObj.elements['width'].value;
 	height = formObj.elements['height'].value;
@@ -64,7 +64,7 @@ function insertTable() {
 		dom.setAttrib(elm, 'cellSpacing', cellspacing, true);
 		dom.setAttrib(elm, 'border', border);
 		dom.setAttrib(elm, 'align', align);
-		dom.setAttrib(elm, 'frame', frame);
+		dom.setAttrib(elm, 'tframe', frame);
 		dom.setAttrib(elm, 'rules', rules);
 		dom.setAttrib(elm, 'class', className);
 		dom.setAttrib(elm, 'style', style);

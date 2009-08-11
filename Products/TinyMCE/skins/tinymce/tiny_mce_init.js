@@ -59,8 +59,6 @@ function TinyMCEConfig(id) {
             theme_advanced_source_editor_width : this.getEditorWidth(),
             theme_advanced_source_editor_height : this.getEditorHeight(),
 
-            auto_resize : this.getAutoresize(),
-            auto_resize_bottom_margin : this.getAutoresizeBottomMargin(),
             table_styles : this.getTableStyles(),
             directionality : this.getDirectionality(),
             entity_encoding : this.getEntityEncoding(),
@@ -258,14 +256,6 @@ function TinyMCEConfig(id) {
         return this.widget_config.editor_height;
     };
 
-    this.getAutoresize = function () {
-        return this.widget_config.autoresize;
-    };
-
-    this.getAutoresizeBottomMargin = function () {
-        return this.widget_config.autoresize_bottom_margin;
-    };
-
     this.getDirectionality = function () {
         return this.widget_config.directionality;
     };
@@ -311,6 +301,9 @@ function TinyMCEConfig(id) {
         }
         if (this.widget_config.contextmenu) {
             plugins += ',contextmenu';
+        }
+        if (this.widget_config.autoresize) {
+            plugins += ',autoresize';
         }
         return plugins;
     }
