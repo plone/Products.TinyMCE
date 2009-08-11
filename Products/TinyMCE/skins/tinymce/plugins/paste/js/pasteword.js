@@ -33,7 +33,7 @@ var PasteWordDialog = {
 
 		tinyMCEPopup.editor.execCommand('mceInsertClipboardContent', false, {content : h, wordContent : true});
 		tinyMCEPopup.close();
-	},
+	}
 };
 
 tinyMCEPopup.onInit.add(PasteWordDialog.init, PasteWordDialog);
