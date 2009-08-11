@@ -1,12 +1,11 @@
 /**
- * $Id: editor_plugin_src.js 539 2008-01-14 19:08:58Z spocke $
+ * Plone link plugin based on advlink plugin.
  *
- * @author Moxiecode
- * @copyright Copyright © 2004-2008, Moxiecode Systems AB, All rights reserved.
+ * @author Rob Gietema
  */
 
 (function() {
-	tinymce.create('tinymce.plugins.AdvancedLinkPlugin', {
+	tinymce.create('tinymce.plugins.PloneLinkPlugin', {
 		init : function(ed, url) {
 			this.editor = ed;
 
@@ -19,7 +18,7 @@
 					return;
 
 				ed.windowManager.open({
-					file : url + '/link.htm',
+					file : url + '/plonelink.htm',
 					width : 820 + parseInt(ed.getLang('advlink.delta_width', 0)),
 					height : 470 + parseInt(ed.getLang('advlink.delta_height', 0)),
 					inline : 1
@@ -44,15 +43,15 @@
 
 		getInfo : function() {
 			return {
-				longname : 'Advanced link',
-				author : 'Moxiecode Systems AB',
-				authorurl : 'http://tinymce.moxiecode.com',
-				infourl : 'http://wiki.moxiecode.com/index.php/TinyMCE:Plugins/advlink',
+				longname : 'Plone link',
+				author : 'Rob Gietema',
+				authorurl : 'http://plone.org',
+				infourl : 'http://plone.org/products/tinymce',
 				version : tinymce.majorVersion + "." + tinymce.minorVersion
 			};
 		}
 	});
 
 	// Register plugin
-	tinymce.PluginManager.add('advlink', tinymce.plugins.AdvancedLinkPlugin);
+	tinymce.PluginManager.add('plonelink', tinymce.plugins.PloneLinkPlugin);
 })();

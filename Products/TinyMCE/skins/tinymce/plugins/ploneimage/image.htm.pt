@@ -5,9 +5,9 @@
   <script type="text/javascript" src="../../tiny_mce_popup.js"></script>
   <script type="text/javascript" src="../../utils/mctabs.js"></script>
   <script type="text/javascript" src="../../utils/form_utils.js"></script>
-  <script type="text/javascript" src="js/image.js"></script>
+  <script type="text/javascript" src="js/ploneimage.js"></script>
 </head>
-<body id="advimage" style="display: none"
+<body id="ploneimage" style="display: none"
   tal:define="portal_url context/portal_url; portal_tinymce context/portal_tinymce;">
   <div class="dialog-wrapper">
     <fieldset id="general_panel">
