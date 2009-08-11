@@ -58,7 +58,16 @@ for x in AVAILABLE_LANGUAGES:
 
     for group in language.getiterator('group'):
         for item in group.getiterator('item'):
-            FILE.write("msgid \"%s_%s\"\n" % (group.attrib['target'],item.attrib['name']))
+            domain = group.attrib['target']
+            if domain == 'advlink':
+                domain = 'plonelink'
+            if domain == 'advimage':
+                domain = 'ploneimage'
+            if domain == 'advlink_dlg':
+                domain = 'plonelink_dlg'
+            if domain == 'advimage_dlg':
+                domain = 'ploneimage_dlg'
+            FILE.write("msgid \"%s_%s\"\n" % (domain,item.attrib['name']))
             if item.text:
                 msg = item.text.replace('"', '\\"')
                 msg = msg.replace('\\N', '\\n')

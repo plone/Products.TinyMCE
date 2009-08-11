@@ -1,4 +1,4 @@
-tinyMCE.addI18n('lt.advlink_dlg',{
+tinyMCE.addI18n('lt.plonelink_dlg',{
 title:"\u012Eterpti/Redaguoti nuorod\u0105",
 url:"Nuorodos URL adresas",
 target:"Taikinys",

@@ -1,4 +1,4 @@
-tinyMCE.addI18n('fi.advimage_dlg',{
+tinyMCE.addI18n('fi.ploneimage_dlg',{
 tab_general:"Yleiset",
 tab_appearance:"N\u00E4kyminen",
 tab_advanced:"Edistynyt",

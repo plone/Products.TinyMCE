@@ -9,15 +9,15 @@
 	tinymce.create('tinymce.plugins.PloneImagePlugin', {
 		init : function(ed, url) {
 			// Register commands
-			ed.addCommand('mceAdvImage', function() {
+			ed.addCommand('mcePloneImage', function() {
 				// Internal image object like a flash placeholder
 				if (ed.dom.getAttrib(ed.selection.getNode(), 'class').indexOf('mceItem') != -1)
 					return;
 
 				ed.windowManager.open({
 					file : url + '/ploneimage.htm',
-					width : 820 + parseInt(ed.getLang('advimage.delta_width', 0)),
-					height : 470 + parseInt(ed.getLang('advimage.delta_height', 0)),
+					width : 820 + parseInt(ed.getLang('ploneimage.delta_width', 0)),
+					height : 470 + parseInt(ed.getLang('ploneimage.delta_height', 0)),
 					inline : 1
 				}, {
 					plugin_url : url
@@ -26,8 +26,8 @@
 
 			// Register buttons
 			ed.addButton('image', {
-				title : 'advimage.image_desc',
-				cmd : 'mceAdvImage'
+				title : 'ploneimage.image_desc',
+				cmd : 'mcePloneImage'
 			});
 		},
 

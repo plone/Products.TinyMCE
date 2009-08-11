@@ -1,4 +1,4 @@
-tinyMCE.addI18n('ca.advlink_dlg',{
+tinyMCE.addI18n('ca.plonelink_dlg',{
 title:"Insereix/edita enlla\u00E7",
 url:"URL de l'enlla\u00E7",
 target:"Objectiu",

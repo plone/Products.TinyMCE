@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html id="region-content" xmlns="http://www.w3.org/1999/xhtml" i18n:domain="tinymce">
 <head>
-  <title i18n:translate="advimage_dlg_dialog_title"></title>
+  <title i18n:translate="ploneimage_dlg_dialog_title"></title>
   <script type="text/javascript" src="../../tiny_mce_popup.js"></script>
   <script type="text/javascript" src="../../utils/mctabs.js"></script>
   <script type="text/javascript" src="../../utils/form_utils.js"></script>
@@ -11,7 +11,7 @@
   tal:define="portal_url context/portal_url; portal_tinymce context/portal_tinymce;">
   <div class="dialog-wrapper">
     <fieldset id="general_panel">
-      <legend i18n:translate="advimage_dlg_dialog_title"></legend>
+      <legend i18n:translate="ploneimage_dlg_dialog_title"></legend>
       <form>
 
         <fieldset class="column" style="width: 120px;">
@@ -43,10 +43,10 @@
         </fieldset>
 
         <fieldset id="internal_panel" class="subPanel column" style="width: 296px;">
-          <legend i18n:translate="advimage_dlg_image_list"></legend>
+          <legend i18n:translate="ploneimage_dlg_image_list"></legend>
           <div class="field">
             <div id="internalpath" class="formHelp" style="text-align: right;"></div>
-            <label for="internallink" i18n:translate="advimage_dlg_image_list"></label>
+            <label for="internallink" i18n:translate="ploneimage_dlg_image_list"></label>
             <a id="uponelevel" class="link-parent" style="line-height: 1em;" href="javascript:void(0)" i18n:domain="plone.tinymce" i18n:translate="">Up one level</a>
             <div id="internallinkcontainer" class="widget radioscrolllist input-border" style="height: 260px;">
             </div>
@@ -57,7 +57,7 @@
         <fieldset id="internal_details_panel" class="subPanel column" style="width: 190px; display: none;">
           <legend i18n:domain="plone.tinymce" i18n:translate="">Details</legend>
           <div class="field">
-            <label i18n:translate="advimage_dlg_preview"></label>
+            <label i18n:translate="ploneimage_dlg_preview"></label>
             <div class="widget">
               <div id="previewimagecontainer">
               </div>
@@ -65,19 +65,19 @@
           </div>
 
           <div class="field">
-            <label id="altlabel" for="alt" i18n:translate="advimage_dlg_alt"></label>
+            <label id="altlabel" for="alt" i18n:translate="ploneimage_dlg_alt"></label>
             <div class="widget">
               <input id="alt" name="alt" type="text" value="" size="20" />
             </div>
           </div>
                 
           <div class="field">
-            <label id="alignlabel" for="align" i18n:translate="advimage_dlg_align"></label>
+            <label id="alignlabel" for="align" i18n:translate="ploneimage_dlg_align"></label>
             <div class="widget">
               <select id="classes" name="classes"> 
                 <option value="image-inline" i18n:domain="plone.tinymce" i18n:translate="">Inline</option>
-                <option value="image-left" i18n:translate="advimage_dlg_align_left"></option>
-                <option value="image-right" i18n:translate="advimage_dlg_align_right"></option>
+                <option value="image-left" i18n:translate="ploneimage_dlg_align_left"></option>
+                <option value="image-right" i18n:translate="ploneimage_dlg_align_right"></option>
               </select>
             </div>
           </div>
@@ -89,7 +89,7 @@
           </div>
 
           <div class="field">
-            <label id="dimensionslabel" for="dimensions" i18n:translate="advimage_dlg_dimensions"></label>
+            <label id="dimensionslabel" for="dimensions" i18n:translate="ploneimage_dlg_dimensions"></label>
             <div class="widget">
               <select id="dimensions" name="dimensions">
                 <option tal:repeat="item portal_tinymce/getImageScales" tal:attributes="value item/value"
@@ -111,7 +111,7 @@
           </div>
 
           <div class="field">
-            <label for="uploadtitle" i18n:translate="advimage_dlg_title"></label>
+            <label for="uploadtitle" i18n:translate="ploneimage_dlg_title"></label>
             <div class="widget">
               <input type="text" name="uploadtitle" id="uploadtitle" value="" size="25" />
             </div>

@@ -1,4 +1,4 @@
-tinyMCE.addI18n('et.advlink_dlg',{
+tinyMCE.addI18n('et.plonelink_dlg',{
 title:"Sisesta muuda linki",
 url:" URL\u2019i link",
 target:"Sihtm\u00E4rk",

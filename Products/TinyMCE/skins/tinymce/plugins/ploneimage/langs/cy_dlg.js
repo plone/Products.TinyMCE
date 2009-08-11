@@ -1,4 +1,4 @@
-tinyMCE.addI18n('cy.advimage_dlg',{
+tinyMCE.addI18n('cy.ploneimage_dlg',{
 tab_general:"Cyffredinol",
 tab_appearance:"Ymddangosiad",
 tab_advanced:"Uwch",

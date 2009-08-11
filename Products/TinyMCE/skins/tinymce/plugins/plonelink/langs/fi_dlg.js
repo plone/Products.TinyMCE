@@ -1,4 +1,4 @@
-tinyMCE.addI18n('fi.advlink_dlg',{
+tinyMCE.addI18n('fi.plonelink_dlg',{
 title:"Lis\u00E4\u00E4/muokkaa linkki\u00E4",
 url:"Linkin URL",
 target:"Kohde (target)",

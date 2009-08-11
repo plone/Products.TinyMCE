@@ -1,4 +1,4 @@
-tinyMCE.addI18n('lv.advlink_dlg',{
+tinyMCE.addI18n('lv.plonelink_dlg',{
 title:"Ievietot/Redi\u0123\u0113t saiti",
 url:"Saites URL",
 target:"M\u0113r\u0137is",

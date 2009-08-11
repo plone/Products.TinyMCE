@@ -10,7 +10,7 @@
 			this.editor = ed;
 
 			// Register commands
-			ed.addCommand('mceAdvLink', function() {
+			ed.addCommand('mcePloneLink', function() {
 				var se = ed.selection;
 
 				// No selection and not in link
@@ -19,8 +19,8 @@
 
 				ed.windowManager.open({
 					file : url + '/plonelink.htm',
-					width : 820 + parseInt(ed.getLang('advlink.delta_width', 0)),
-					height : 470 + parseInt(ed.getLang('advlink.delta_height', 0)),
+					width : 820 + parseInt(ed.getLang('plonelink.delta_width', 0)),
+					height : 470 + parseInt(ed.getLang('plonelink.delta_height', 0)),
 					inline : 1
 				}, {
 					plugin_url : url
@@ -29,11 +29,11 @@
 
 			// Register buttons
 			ed.addButton('link', {
-				title : 'advlink.link_desc',
-				cmd : 'mceAdvLink'
+				title : 'plonelink.link_desc',
+				cmd : 'mcePloneLink'
 			});
 
-			ed.addShortcut('ctrl+k', 'advlink.advlink_desc', 'mceAdvLink');
+			ed.addShortcut('ctrl+k', 'plonelink.advlink_desc', 'mcePloneLink');
 
 			ed.onNodeChange.add(function(ed, cm, n, co) {
 				cm.setDisabled('link', co && n.nodeName != 'A');

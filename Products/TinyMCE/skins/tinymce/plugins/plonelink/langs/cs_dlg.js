@@ -1,4 +1,4 @@
-tinyMCE.addI18n('cs.advlink_dlg',{
+tinyMCE.addI18n('cs.plonelink_dlg',{
 title:"Vlo\u017Eit/upravit odkaz",
 url:"URL odkazu",
 target:"C\u00EDl",

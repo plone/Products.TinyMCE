@@ -1,4 +1,4 @@
-tinyMCE.addI18n('tw.advimage_dlg',{
+tinyMCE.addI18n('tw.ploneimage_dlg',{
 tab_general:"\u4E00\u822C",
 tab_appearance:"\u5916\u89C0",
 tab_advanced:"\u9032\u968E",
