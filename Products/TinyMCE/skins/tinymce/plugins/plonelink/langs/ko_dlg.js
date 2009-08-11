@@ -1,4 +1,4 @@
-tinyMCE.addI18n('ko.advlink_dlg',{
+tinyMCE.addI18n('ko.plonelink_dlg',{
 title:"\uB9C1\uD06C\uC758 \uC0BD\uC785/\uD3B8\uC9D1",
 url:"\uB9C1\uD06C URL",
 target:"Target",

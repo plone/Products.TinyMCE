@@ -1,4 +1,4 @@
-tinyMCE.addI18n('gl.advimage_dlg',{
+tinyMCE.addI18n('gl.ploneimage_dlg',{
 tab_general:"Xeral",
 tab_appearance:"Apariencia",
 tab_advanced:"Avanzado",

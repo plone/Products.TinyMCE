@@ -1,4 +1,4 @@
-tinyMCE.addI18n('da.advimage_dlg',{
+tinyMCE.addI18n('da.ploneimage_dlg',{
 tab_general:"Generelt",
 tab_appearance:"Udseende",
 tab_advanced:"Avanceret",

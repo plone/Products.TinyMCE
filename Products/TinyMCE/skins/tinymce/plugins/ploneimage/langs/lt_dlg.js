@@ -1,4 +1,4 @@
-tinyMCE.addI18n('lt.advimage_dlg',{
+tinyMCE.addI18n('lt.ploneimage_dlg',{
 tab_general:"Bendra",
 tab_appearance:"I\u0161vaizda",
 tab_advanced:"I\u0161pl\u0117sta",

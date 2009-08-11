@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html id="region-content" xmlns="http://www.w3.org/1999/xhtml" i18n:domain="tinymce">
 <head>
-  <title i18n:translate="advlink_dlg_title"></title>
+  <title i18n:translate="plonelink_dlg_title"></title>
   <script type="text/javascript" src="../../tiny_mce_popup.js"></script>
   <script type="text/javascript" src="../../utils/mctabs.js"></script>
   <script type="text/javascript" src="../../utils/form_utils.js"></script>
@@ -10,7 +10,7 @@
 <body id="plonelink" style="display: none"
   tal:define="portal_url context/portal_url">
   <div class="dialog-wrapper">
-    <ul class="formTabs"><li id="general_tab" class="formTab firstFormTab"><a href="javascript:mcTabs.displayTab('general_tab','general_panel');setUploadVisibility();" onmousedown="return false;" class="selected"><span i18n:translate="advlink_dlg_general_tab"></span></a></li><li id="advanced_tab" class="formTab lastFormTab"><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');setUploadVisibility();" onmousedown="return false;"><span i18n:translate="advlink_dlg_advanced_tab"></span></a></li></ul>
+    <ul class="formTabs"><li id="general_tab" class="formTab firstFormTab"><a href="javascript:mcTabs.displayTab('general_tab','general_panel');setUploadVisibility();" onmousedown="return false;" class="selected"><span i18n:translate="plonelink_dlg_general_tab"></span></a></li><li id="advanced_tab" class="formTab lastFormTab"><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');setUploadVisibility();" onmousedown="return false;"><span i18n:translate="plonelink_dlg_advanced_tab"></span></a></li></ul>
 
     <fieldset id="general_panel" class="formPanel" style="height: 362px; padding-top: 2em">
       <form>
@@ -62,7 +62,7 @@
           <legend i18n:domain="plone.tinymce" i18n:translate="">Internal link</legend>
           <div class="field">
             <div id="internalpath" class="formHelp" style="text-align: right;"></div>
-            <label for="internallink" i18n:translate="advlink_dlg_list"></label>
+            <label for="internallink" i18n:translate="plonelink_dlg_list"></label>
             <a id="uponelevel" class="link-parent" style="line-height: 1em;" href="javascript:void(0)" i18n:domain="plone.tinymce" i18n:translate="">Up one level</a>
             <div id="internallinkcontainer" class="widget radioscrolllist input-border" style="height: 260px;">
             </div>
@@ -77,7 +77,7 @@
             <p id="internal_details_description"></p>
           </div>
           <div class="field">
-            <label id="pageanchorlabel" for="pageanchor" style="display: none;" i18n:translate="advlink_dlg_anchor_names"></label>
+            <label id="pageanchorlabel" for="pageanchor" style="display: none;" i18n:translate="plonelink_dlg_anchor_names"></label>
             <div class="widget" id="pageanchorcontainer" style="display: none;">
               <select id="pageanchor" name="pageanchor">
                 <option value="">top of page (default)</option>
@@ -89,7 +89,7 @@
         <fieldset id="external_panel" class="subPanel column" style="width:520px; display: none;">
           <legend i18n:domain="plone.tinymce" i18n:translate="">External link</legend>
           <div class="field">
-            <label for="externalurl" i18n:translate="advlink_dlg_url"></label>
+            <label for="externalurl" i18n:translate="plonelink_dlg_url"></label>
             <div class="widget">
               <select id="externalurlprefix" name="externalurlprefix">
                 <option value="http://">http://</option>
@@ -129,7 +129,7 @@
         <fieldset id="anchors_panel" class="subPanel column" style="width: 520px; display: none;">
           <legend i18n:domain="plone.tinymce" i18n:translate="">Link to anchor</legend>
           <div class="field">
-            <label i18n:translate="advlink_dlg_anchor_names"></label>
+            <label i18n:translate="plonelink_dlg_anchor_names"></label>
             <div id="anchorlinkcontainer" class="widget radioscrolllist input-border" style="height: 280px;">
             </div>
           </div>
@@ -147,7 +147,7 @@
           </div>
 
           <div class="field">
-            <label for="uploadtitle" i18n:translate="advlink_dlg_titlefield"></label>
+            <label for="uploadtitle" i18n:translate="plonelink_dlg_titlefield"></label>
             <div class="widget">
               <input type="text" name="uploadtitle" id="uploadtitle" value="" size="25" />
             </div>
@@ -169,30 +169,30 @@
     <fieldset id="advanced_panel" class="formPanel" style="display: none; height: 374px">
       <form>
         <div class="field">
-          <label id="targetlistlabel" for="targetlist" i18n:translate="advlink_dlg_target"></label>
+          <label id="targetlistlabel" for="targetlist" i18n:translate="plonelink_dlg_target"></label>
           <div class="widget">
             <select id="targetlist" name="targetlist" onchange="setPopupVisibility();">
-              <option value="_self" i18n:translate="advlink_dlg_target_same"></option>
-              <option value="_blank" i18n:translate="advlink_dlg_target_blank"></option>
-              <option value="_parent" i18n:translate="advlink_dlg_target_parent"></option>
-              <option value="_top" i18n:translate="advlink_dlg_target_top"></option>
-              <!--option value="popup" i18n:translate="advlink_dlg_popup"></option-->
+              <option value="_self" i18n:translate="plonelink_dlg_target_same"></option>
+              <option value="_blank" i18n:translate="plonelink_dlg_target_blank"></option>
+              <option value="_parent" i18n:translate="plonelink_dlg_target_parent"></option>
+              <option value="_top" i18n:translate="plonelink_dlg_target_top"></option>
+              <!--option value="popup" i18n:translate="plonelink_dlg_popup"></option-->
             </select>
           </div>
         </div>
       
         <fieldset id="popup_panel" style="display: none;">
-          <legend i18n:translate="advlink_dlg_popup"></legend>
+          <legend i18n:translate="plonelink_dlg_popup"></legend>
           <div class="column">
             <div class="field">
-              <label for="popupname" i18n:translate="advlink_dlg_popup_name"></label>
+              <label for="popupname" i18n:translate="plonelink_dlg_popup_name"></label>
               <div class="widget">
                 <input type="text" name="popupname" id="popupname" value="" size="20" />
               </div>
             </div>
   
             <div class="field">
-              <label i18n:translate="advlink_dlg_popup_size"></label>
+              <label i18n:translate="plonelink_dlg_popup_size"></label>
               <div class="widget">
                 <input type="text" id="popupwidth" name="popupwidth" value="" size="4" /> x
                 <input type="text" id="popupheight" name="popupheight" value="" size="4" /> px
@@ -200,7 +200,7 @@
             </div>
 
             <div class="field">
-              <label i18n:translate="advlink_dlg_popup_position"></label>
+              <label i18n:translate="plonelink_dlg_popup_position"></label>
               <div class="widget">
                 <input type="text" id="popupleft" name="popupleft" value="" size="4" /> /                                
                 <input type="text" id="popuptop" name="popuptop" value="" size="4" /> (c / c = center)
@@ -212,28 +212,28 @@
             <div class="field">
               <div class="widget">
                 <input type="checkbox" id="popuplocation" name="popuplocation" class="checkbox" />
-                <label id="popuplocationlabel" for="popuplocation" i18n:translate="advlink_dlg_popup_location"></label>
+                <label id="popuplocationlabel" for="popuplocation" i18n:translate="plonelink_dlg_popup_location"></label>
               </div>
             </div>
 
             <div class="field">
               <div class="widget">
                 <input type="checkbox" id="popupscrollbars" name="popupscrollbars" class="checkbox" />
-                <label id="popupscrollbarslabel" for="popupscrollbars" i18n:translate="advlink_dlg_popup_scrollbars"></label>
+                <label id="popupscrollbarslabel" for="popupscrollbars" i18n:translate="plonelink_dlg_popup_scrollbars"></label>
               </div>
             </div>
 
             <div class="field">
               <div class="widget">
                 <input type="checkbox" id="popupmenubar" name="popupmenubar" class="checkbox" />
-                <label id="popupmenubarlabel" for="popupmenubar" i18n:translate="advlink_dlg_popup_menubar"></label>
+                <label id="popupmenubarlabel" for="popupmenubar" i18n:translate="plonelink_dlg_popup_menubar"></label>
               </div>
             </div>
 
             <div class="field">
               <div class="widget">
                 <input type="checkbox" id="popupresizable" name="popupresizable" class="checkbox" />
-                <label id="popupresizablelabel" for="popupresizable" i18n:translate="advlink_dlg_popup_resizable"></label>
+                <label id="popupresizablelabel" for="popupresizable" i18n:translate="plonelink_dlg_popup_resizable"></label>
               </div>
             </div>
           </div>
@@ -242,28 +242,28 @@
             <div class="field">
               <div class="widget">
                 <input type="checkbox" id="popuptoolbar" name="popuptoolbar" class="checkbox" />
-                <label id="popuptoolbarlabel" for="popuptoolbar" i18n:translate="advlink_dlg_popup_toolbar"></label>
+                <label id="popuptoolbarlabel" for="popuptoolbar" i18n:translate="plonelink_dlg_popup_toolbar"></label>
               </div>
             </div>
 
             <div class="field">
               <div class="widget">
                 <input type="checkbox" id="popupdependent" name="popupdependent" class="checkbox" />
-                <label id="popupdependentlabel" for="popupdependent" i18n:translate="advlink_dlg_popup_dependent"></label>
+                <label id="popupdependentlabel" for="popupdependent" i18n:translate="plonelink_dlg_popup_dependent"></label>
               </div>
             </div>
 
             <div class="field">
               <div class="widget">
                 <input type="checkbox" id="popupstatus" name="popupstatus" class="checkbox" />
-                <label id="popupstatuslabel" for="popupstatus" i18n:translate="advlink_dlg_popup_statusbar"></label>
+                <label id="popupstatuslabel" for="popupstatus" i18n:translate="plonelink_dlg_popup_statusbar"></label>
               </div>
             </div>
 
             <div class="field">
               <div class="widget">
                 <input type="checkbox" id="popupreturn" name="popupreturn" class="checkbox" checked="checked" />
-                <label id="popupreturnlabel" for="popupreturn" i18n:translate="advlink_dlg_popup_return"></label>
+                <label id="popupreturnlabel" for="popupreturn" i18n:translate="plonelink_dlg_popup_return"></label>
               </div>
             </div>
           </div>

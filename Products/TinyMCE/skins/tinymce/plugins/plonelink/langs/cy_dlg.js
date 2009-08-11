@@ -1,4 +1,4 @@
-tinyMCE.addI18n('cy.advlink_dlg',{
+tinyMCE.addI18n('cy.plonelink_dlg',{
 title:"Mewnosod/Golygu cyswllt",
 url:"URL cyswllt",
 target:"Targed",

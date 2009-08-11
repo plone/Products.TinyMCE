@@ -1,4 +1,4 @@
-tinyMCE.addI18n('vi.advlink_dlg',{
+tinyMCE.addI18n('vi.plonelink_dlg',{
 title:"Ch\u00E8n/thay \u0111\u1ED5i li\u00EAn k\u1EBFt",
 url:"Li\u00EAn k\u1EBFt",
 target:"C\u1EEDa s\u1ED5 m\u1EDF li\u00EAn k\u1EBFt",

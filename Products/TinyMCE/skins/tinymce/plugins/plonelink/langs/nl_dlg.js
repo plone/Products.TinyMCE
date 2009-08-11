@@ -1,4 +1,4 @@
-tinyMCE.addI18n('nl.advlink_dlg',{
+tinyMCE.addI18n('nl.plonelink_dlg',{
 title:"Link invoegen/bewerken",
 url:"URL",
 target:"Doel",

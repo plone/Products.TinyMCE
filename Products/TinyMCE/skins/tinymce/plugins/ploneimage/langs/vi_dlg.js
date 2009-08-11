@@ -1,4 +1,4 @@
-tinyMCE.addI18n('vi.advimage_dlg',{
+tinyMCE.addI18n('vi.ploneimage_dlg',{
 tab_general:"C\u01A1 b\u1EA3n",
 tab_appearance:"Hi\u1EC3n th\u1ECB",
 tab_advanced:"N\u00E2ng cao",

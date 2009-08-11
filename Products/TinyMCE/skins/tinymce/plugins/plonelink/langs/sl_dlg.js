@@ -1,4 +1,4 @@
-tinyMCE.addI18n('sl.advlink_dlg',{
+tinyMCE.addI18n('sl.plonelink_dlg',{
 title:"Vstavi/uredi povezavo",
 url:"Naslov URL",
 target:"Cilj",

@@ -1,4 +1,4 @@
-tinyMCE.addI18n('sv.advlink_dlg',{
+tinyMCE.addI18n('sv.plonelink_dlg',{
 title:"Infoga/redigera l\u00E4nk",
 url:"L\u00E4nkens URL",
 target:"M\u00E5l",
