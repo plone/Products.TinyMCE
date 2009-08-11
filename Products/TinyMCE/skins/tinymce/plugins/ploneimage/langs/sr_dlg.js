@@ -1,4 +1,4 @@
-tinyMCE.addI18n('sr.ploneimage_dlg',{
+tinyMCE.addI18n('sr.advimage_dlg',{
 tab_general:"Osnovno",
 tab_appearance:"Izgled",
 tab_advanced:"Napredno",
@@ -8,7 +8,7 @@ preview:"Prikaz",
 constrain_proportions:"Zadr\u017Ei proporcije",
 langdir:"Smjer jezika",
 langcode:"Kod jezika",
-long_desc:"Poveznica dugog opisa",
+long_desc:"Link dugog opisa",
 style:"Stil",
 classes:"Klase",
 ltr:"S leva na desno",

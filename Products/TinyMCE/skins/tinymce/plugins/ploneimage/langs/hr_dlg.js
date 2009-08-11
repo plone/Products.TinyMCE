@@ -1,4 +1,4 @@
-tinyMCE.addI18n('hr.ploneimage_dlg',{
+tinyMCE.addI18n('hr.advimage_dlg',{
 tab_general:"Osnovno",
 tab_appearance:"Izgled",
 tab_advanced:"Napredno",

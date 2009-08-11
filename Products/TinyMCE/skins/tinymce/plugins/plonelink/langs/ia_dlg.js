@@ -1,4 +1,4 @@
-tinyMCE.addI18n('ia.plonelink_dlg',{
+tinyMCE.addI18n('ia.advlink_dlg',{
 title:"\u63D2\u5165/\u7F16\u8F91 \u8FDE\u7ED3",
 url:"\u8FDE\u7ED3\u5730\u5740",
 target:"\u76EE\u6807",

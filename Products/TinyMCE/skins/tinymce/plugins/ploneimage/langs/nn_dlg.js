@@ -1,4 +1,4 @@
-tinyMCE.addI18n('nn.ploneimage_dlg',{
+tinyMCE.addI18n('nn.advimage_dlg',{
 tab_general:"Generelt",
 tab_appearance:"Utsj\u00E5nad",
 tab_advanced:"Avansert",

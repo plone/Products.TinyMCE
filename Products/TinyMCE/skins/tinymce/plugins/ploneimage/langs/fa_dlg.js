@@ -1,4 +1,4 @@
-tinyMCE.addI18n('fa.ploneimage_dlg',{
+tinyMCE.addI18n('fa.advimage_dlg',{
 tab_general:"\u0639\u0645\u0648\u0645\u06CC",
 tab_appearance:"\u0638\u0627\u0647\u0631",
 tab_advanced:"\u067E\u06CC\u0634\u0631\u0641\u062A\u0647",

@@ -1,4 +1,4 @@
-tinyMCE.addI18n('sq.plonelink_dlg',{
+tinyMCE.addI18n('sq.advlink_dlg',{
 title:"Fut/edito lidhje",
 url:"URL e lidhjes",
 target:"Sh\u00EBnjestra",

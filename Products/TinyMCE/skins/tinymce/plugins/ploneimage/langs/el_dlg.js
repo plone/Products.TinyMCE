@@ -1,4 +1,4 @@
-tinyMCE.addI18n('el.ploneimage_dlg',{
+tinyMCE.addI18n('el.advimage_dlg',{
 tab_general:"\u0393\u03B5\u03BD\u03B9\u03BA\u03AC",
 tab_appearance:"\u0395\u03BC\u03C6\u03AC\u03BD\u03B9\u03C3\u03B7",
 tab_advanced:"\u0393\u03B9\u03B1 \u03C0\u03C1\u03BF\u03C7\u03C9\u03C1\u03B7\u03BC\u03AD\u03BD\u03BF\u03C5\u03C2",

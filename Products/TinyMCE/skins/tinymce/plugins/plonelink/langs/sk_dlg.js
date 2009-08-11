@@ -1,4 +1,4 @@
-tinyMCE.addI18n('sk.plonelink_dlg',{
+tinyMCE.addI18n('sk.advlink_dlg',{
 title:"Vlo\u017Ei\u0165/editova\u0165 odkaz",
 url:"URL odkazu",
 target:"Cie\u013E",
