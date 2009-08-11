@@ -1,4 +1,4 @@
-tinyMCE.addI18n('mk.plonelink_dlg',{
+tinyMCE.addI18n('mk.advlink_dlg',{
 title:"\u0412\u043C\u0435\u0442\u043D\u0438/uredi poveznicu",
 url:"URL poveznice",
 target:"Meta",

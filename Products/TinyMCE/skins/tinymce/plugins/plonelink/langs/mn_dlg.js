@@ -1,4 +1,4 @@
-tinyMCE.addI18n('mn.plonelink_dlg',{
+tinyMCE.addI18n('mn.advlink_dlg',{
 title:"\u0425\u043E\u043B\u0431\u043E\u043E\u0441 \u043E\u0440\u0443\u0443\u043B\u0430\u0445/\u0437\u0430\u0441\u0430\u0445",
 url:"\u0425\u0430\u044F\u0433",
 target:"\u0426\u043E\u043D\u0445",

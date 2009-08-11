@@ -1,4 +1,4 @@
-tinyMCE.addI18n('dv.plonelink_dlg',{
+tinyMCE.addI18n('dv.advlink_dlg',{
 title:"Insert/edit link",
 url:"Link URL",
 target:"Target",

@@ -1,4 +1,4 @@
-tinyMCE.addI18n('pl.plonelink_dlg',{
+tinyMCE.addI18n('pl.advlink_dlg',{
 title:"Wstaw/edytuj link",
 url:"Link URL",
 target:"Cel",

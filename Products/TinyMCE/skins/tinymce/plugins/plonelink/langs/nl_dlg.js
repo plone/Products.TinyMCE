@@ -1,4 +1,4 @@
-tinyMCE.addI18n('nl.plonelink_dlg',{
+tinyMCE.addI18n('nl.advlink_dlg',{
 title:"Link invoegen/bewerken",
 url:"URL",
 target:"Doel",
@@ -35,7 +35,7 @@ popup_size:"Grootte",
 popup_position:"Positie (X/Y)",
 id:"Id",
 style:"Stijl",
-classes:"Klasses",
+classes:"Klassen",
 target_name:"Doel",
 langdir:"Taalrichting",
 target_langcode:"Taal",

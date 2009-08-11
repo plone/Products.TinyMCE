@@ -1,4 +1,4 @@
-tinyMCE.addI18n('ro.ploneimage_dlg',{
+tinyMCE.addI18n('ro.advimage_dlg',{
 tab_general:"General",
 tab_appearance:"Afi\u015Fare",
 tab_advanced:"Avansat",

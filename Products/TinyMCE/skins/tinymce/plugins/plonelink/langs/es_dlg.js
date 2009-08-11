@@ -1,4 +1,4 @@
-tinyMCE.addI18n('es.plonelink_dlg',{
+tinyMCE.addI18n('es.advlink_dlg',{
 title:"Insertar/editar hiperv\u00EDnculo",
 url:"URL del hiperv\u00EDnculo",
 target:"Destino",

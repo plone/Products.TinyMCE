@@ -1,4 +1,4 @@
-tinyMCE.addI18n('de.plonelink_dlg',{
+tinyMCE.addI18n('de.advlink_dlg',{
 title:"Link einf\u00FCgen/bearbeiten",
 url:"Adresse",
 target:"Fenster",

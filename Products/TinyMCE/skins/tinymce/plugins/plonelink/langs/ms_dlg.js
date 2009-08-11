@@ -1,4 +1,4 @@
-tinyMCE.addI18n('ms.plonelink_dlg',{
+tinyMCE.addI18n('ms.advlink_dlg',{
 title:"Sisip/sunting pautan",
 url:"Pautan URL",
 target:"Sasaran",

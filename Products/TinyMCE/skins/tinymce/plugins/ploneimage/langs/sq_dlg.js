@@ -1,4 +1,4 @@
-tinyMCE.addI18n('sq.ploneimage_dlg',{
+tinyMCE.addI18n('sq.advimage_dlg',{
 tab_general:"T\u00EB P\u00EBrgjithshme",
 tab_appearance:"Pamja",
 tab_advanced:"T\u00EB Avancuara",

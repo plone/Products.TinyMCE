@@ -1,4 +1,4 @@
-tinyMCE.addI18n('sl.ploneimage_dlg',{
+tinyMCE.addI18n('sl.advimage_dlg',{
 tab_general:"Splo\u0161no",
 tab_appearance:"Izgled",
 tab_advanced:"Napredno",

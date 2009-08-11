@@ -1,4 +1,4 @@
-tinyMCE.addI18n('tr.plonelink_dlg',{
+tinyMCE.addI18n('tr.advlink_dlg',{
 title:"Ba\u011Flant\u0131 ekle/d\u00FCzenle",
 url:"Ba\u011Flant\u0131 URL",
 target:"Hedef",

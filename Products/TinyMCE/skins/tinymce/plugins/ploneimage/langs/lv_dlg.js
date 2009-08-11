@@ -1,4 +1,4 @@
-tinyMCE.addI18n('lv.ploneimage_dlg',{
+tinyMCE.addI18n('lv.advimage_dlg',{
 tab_general:"Iestat\u012Bjumi",
 tab_appearance:"Izskats",
 tab_advanced:"Papildiestat\u012Bjumi",

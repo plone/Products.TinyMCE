@@ -1,4 +1,4 @@
-tinyMCE.addI18n('de.ploneimage_dlg',{
+tinyMCE.addI18n('de.advimage_dlg',{
 tab_general:"Allgemein",
 tab_appearance:"Aussehen",
 tab_advanced:"Erweitert",
@@ -21,7 +21,7 @@ mouseover:"bei Mauskontakt",
 mouseout:"bei keinem Mauskontakt",
 misc:"Verschiedenes",
 example_img:"Aussehen der Vorschau",
-missing_alt:"Wollen Sie wirklich keine Beschreibung eingeben? Bestimmte Benutzer mit k\u00F6rperlichen Einschr\u00E4nkungen k\u00F6nnen so nicht darauf zugrifen, ebenso solche, die einen Textbrowser benutzen oder die Anzeige von Bildern deaktiviert haben.",
+missing_alt:"Wollen Sie wirklich keine Beschreibung eingeben? Bestimmte Benutzer mit k\u00F6rperlichen Einschr\u00E4nkungen k\u00F6nnen so nicht darauf zugreifen, ebenso solche, die einen Textbrowser benutzen oder die Anzeige von Bildern deaktiviert haben.",
 dialog_title:"Bild einf\u00FCgen/bearbeiten",
 src:"Adresse",
 alt:"Beschreibung",
