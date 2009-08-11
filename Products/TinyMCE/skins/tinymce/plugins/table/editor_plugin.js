@@ -523,7 +523,7 @@
 					if (user_interface) {
 						inst.windowManager.open({
 							url : url + '/table.htm',
-							width : 300 + parseInt(inst.getLang('table.table_delta_width', 0)),
+							width : 320 + parseInt(inst.getLang('table.table_delta_width', 0)),
 							height : 350 + parseInt(inst.getLang('table.table_delta_height', 0)),
 							inline : 1
 						}, {
