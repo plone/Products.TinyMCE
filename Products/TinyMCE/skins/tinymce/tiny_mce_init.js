@@ -293,10 +293,10 @@ function TinyMCEConfig(id) {
     };
 
     this.getPlugins = function () {
-        var plugins = "safari,pagebreak,table,save,advhr,ploneimage,plonelink,emotions,iespell,insertdatetime,preview,media,searchreplace,print,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups,plonestyle,tabfocus,definitionlist";
+        var plugins = "safari,pagebreak,table,save,advhr,emotions,iespell,insertdatetime,preview,media,searchreplace,print,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups,plonestyle,tabfocus,definitionlist";
         for (var i = 0; i < this.widget_config.customplugins.length; i++) {
             if (this.widget_config.customplugins[i].indexOf('|') == -1) {
-                plugins += ',-' + this.widget_config.customplugins[i];
+                plugins += ',' + this.widget_config.customplugins[i];
             }
         }
         if (this.widget_config.contextmenu) {
