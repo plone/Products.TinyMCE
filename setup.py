@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '1.1rc3'
+version = '1.1rc4'
 
 setup(name='Products.TinyMCE',
       version=version,
