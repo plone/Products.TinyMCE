@@ -2,8 +2,24 @@
 HISTORY
 =======
 
-1.1rc3 (unreleased)
+1.1rc4 (unreleased)
 -------------------
+
+- Make default_editor site property getter fail gracefully.
+  [MatthewWilkes]
+
+- Fix bug that prevented user-specified plugins getting added.
+  [MatthewWilkes]
+
+- Remove ploneimage and plonelink from the hardcoded plugins and add them to the
+  control panel box. This allows people to select the default image and link
+  dialogues.  Readded dialogues removed in rc3.
+  [MatthewWilkes]
+
+1.1rc3 (date-unknown)
+---------------------
+
+
 
 - Upgrade to TinyMCE 3.2.5.
   [robgietema]
