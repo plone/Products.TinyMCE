@@ -1,0 +1,524 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# Finnish translations for plone.tinymce.
+# Jukka Ojaniemi <jukka.ojaniemi@jyu.fi>, 2009.
+msgid ""
+msgstr ""
+"Project-Id-Version: plone.tinymce\n"
+"POT-Creation-Date: 2009-08-10 10:32+0000\n"
+"PO-Revision-Date: 2009-08-18 23:51+0200\n"
+"Last-Translator: Jukka Ojaniemi <jukka.ojaniemi@jyu.fi>\n"
+"Language-Team: JYU <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: fi\n"
+"Language-Name: Finnish\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: plone.tinymce\n"
+"X-Poedit-Language: Finnish\n"
+"X-Poedit-Country: FINLAND\n"
+"X-Poedit-SourceCharset: utf-8\n"
+
+#: ./interfaces/utility.py:189
+msgid "Align center"
+msgstr "Tasaa keskelle"
+
+#: ./interfaces/utility.py:199
+msgid "Align full"
+msgstr "Tasaa molempiin reunoihin"
+
+#: ./interfaces/utility.py:184
+msgid "Align left"
+msgstr "Tasaa vasempaan reunaan"
+
+#: ./interfaces/utility.py:194
+msgid "Align right"
+msgstr "Tasaa oikeaan reunaan"
+
+#: ./interfaces/utility.py:362
+msgid "Allow captioned images"
+msgstr "Salli kuvatekstin sisältävät kuvat"
+
+#. Default: "Anchors"
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:48
+msgid "Anchors"
+msgstr "Ankkurit"
+
+#: ./interfaces/utility.py:179
+msgid "Backcolor"
+msgstr "Taustaväri"
+
+#: ./interfaces/utility.py:144
+msgid "Bold"
+msgstr "Lihavoi"
+
+#: ./interfaces/utility.py:24
+msgid "Bottom margin of the textfield when auto resizing is enabled."
+msgstr "Tekstikentän alamarginaali kun automaattinen koonsäätö on päällä."
+
+#. Default: "Caption"
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:87
+msgid "Caption"
+msgstr "Kuvateksti"
+
+#: ./interfaces/utility.py:56
+msgid "Choose the Css used in Wysiwyg Editor Area"
+msgstr "Valitse Wysiwyg editorissa käytettävä Css"
+
+#: ./interfaces/utility.py:314
+msgid "Cleanup messy code"
+msgstr "Siivoa koodi"
+
+#: ./interfaces/utility.py:380
+msgid "Contains Anchors"
+msgstr "Sisältää ankkureita"
+
+#: ./interfaces/utility.py:374
+msgid "Contains Objects"
+msgstr "Sisältää objekteja"
+
+#: ./interfaces/utility.py:99
+msgid "Copy"
+msgstr "Kopioi"
+
+#. Default: "Current Folder"
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:27
+msgid "Current Folder"
+msgstr "Tämänhetkinen kansio"
+
+#: ./interfaces/utility.py:398
+msgid "Custom Plugins"
+msgstr "Lisäosat"
+
+#: ./interfaces/utility.py:344
+msgid "Custom Toolbar Buttons"
+msgstr "Omat tyokalurivin painikkeet"
+
+#: ./interfaces/utility.py:94
+msgid "Cut"
+msgstr "Leikkaa"
+
+#. Default: "Description"
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:121
+msgid "Description"
+msgstr "Kuvaus"
+
+#. Default: "Details"
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:58
+msgid "Details"
+msgstr "Lisätietoja"
+
+#. Default: "E-mail"
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:115
+msgid "E-mail"
+msgstr "Sähköposti"
+
+#: ./interfaces/utility.py:334
+msgid "Edit HTML Source"
+msgstr "Muokkaa HTML-koodia"
+
+#: ./interfaces/utility.py:36
+msgid "Editor height"
+msgstr "Editorin korkeus"
+
+#: ./interfaces/utility.py:30
+msgid "Editor width"
+msgstr "Editorin leveys"
+
+#: ./interfaces/utility.py:279
+msgid "Emotions"
+msgstr "Hymiöt"
+
+#: ./interfaces/utility.py:18
+msgid "Enable auto resizing of the editor window."
+msgstr "Kytke editori-ikkunan automaattinen koonvaihto päälle"
+
+#: ./interfaces/utility.py:50
+msgid "Enable contextmenu."
+msgstr "Salli sisältövalikko."
+
+#: ./interfaces/utility.py:12
+msgid "Enable resizing the editor window."
+msgstr "Salli editori-ikkunan koon vaihtaminen."
+
+#: ./interfaces/utility.py:387
+msgid "Enter a list of content types which can be linked. Format is one contenttype per line."
+msgstr "Sisältötyypit joihin voidaan linkittää. Yksi sisältötyyppi riviä kohden."
+
+#: ./interfaces/utility.py:393
+msgid "Enter a list of content types which can be used as images. Format is one contenttype per line."
+msgstr "Sisältötyypit joita voidaan käyttää kuvina. Yksi sisältötyyppi riviä kohden."
+
+#: ./interfaces/utility.py:381
+msgid "Enter a list of content types which can contain anchors. Format is one contenttype per line."
+msgstr "Sisältötyypit jotka voivat sisältää ankkureita. Yksi sisältötyyppi riviä kohden."
+
+#: ./interfaces/utility.py:375
+msgid "Enter a list of content types which can contain other objects. Format is one contenttype per line."
+msgstr "Sisältötyypit jotka voivat sisältää muita objekteja. Yksi sisältötyyppi riviä kohden."
+
+#: ./interfaces/utility.py:399
+msgid "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
+msgstr "Lista lisäosista jotka ladataan editoriin. Yksi lisäosa tai lisäosa|sijainti riviä kohden."
+
+#: ./interfaces/utility.py:345
+msgid "Enter a list of custom toolbar buttons which will be loaded in the editor, one per line."
+msgstr "Omat työkalurivin painikkeet, jotka ladataan editoriin. Yksi painike riviä kohden."
+
+#: ./interfaces/utility.py:63
+msgid "Enter a list of styles to appear in the style pulldown. Format is title|tag or title|tag|className, one per line."
+msgstr "Tyylit-pudotusvalikon lista tyyleistä. Yksi otsikko|tagi tai otsikko|tagi|luokanNimi riviä kohden."
+
+#: ./interfaces/utility.py:69
+msgid "Enter a list of styles to appear in the table style pulldown. Format is title|class, one per line."
+msgstr "Taulukon tyylit-pudotusvalikon lista tyyleistä. Yksi otsikko|luokka riviä kohden."
+
+#: ./interfaces/utility.py:404
+msgid "Entity encoding"
+msgstr "Entiteettien kooditus"
+
+#. Default: "External"
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:38
+msgid "External"
+msgstr "Ulkoinen"
+
+#. Default: "External link"
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:90
+msgid "External link"
+msgstr "Ulkoinen linkki"
+
+#. Default: "File"
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:107
+msgid "File"
+msgstr "Tiedosto"
+
+#: ./interfaces/utility.py:129
+msgid "Find"
+msgstr "Etsi"
+
+#: ./interfaces/utility.py:134
+msgid "Find/Replace"
+msgstr "Etsi/korvaa"
+
+#: ./interfaces/utility.py:174
+msgid "Forecolor"
+msgstr "Edustan väri"
+
+#. Default: "Home"
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:22
+msgid "Home"
+msgstr "Koti"
+
+#: ./interfaces/utility.py:392
+msgid "Image Objects"
+msgstr "Kuvat"
+
+#: ./interfaces/utility.py:363
+msgid "Images will be automatically captioned."
+msgstr "Kuviin tulee automaattisesti kuvateksti."
+
+#: ./interfaces/utility.py:219
+msgid "Indent"
+msgstr "Sisennä"
+
+#. Default: "Inline"
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:78
+msgid "Inline"
+msgstr "Avoin"
+
+#: ./interfaces/utility.py:264
+msgid "Insert advanced horizontal ruler"
+msgstr "Lisää kehittynyt vaakasuora viivoitin"
+
+#: ./interfaces/utility.py:254
+msgid "Insert custom character"
+msgstr "Lisää merkki"
+
+#: ./interfaces/utility.py:269
+msgid "Insert date"
+msgstr "Lisää päivämäärä"
+
+#: ./interfaces/utility.py:259
+msgid "Insert horizontal ruler"
+msgstr "Lisää vaakasuora viivoitin"
+
+#: ./interfaces/utility.py:284
+msgid "Insert non-breaking space character"
+msgstr "Lisää katkaisematon välilyönti"
+
+#: ./interfaces/utility.py:289
+msgid "Insert page break"
+msgstr "Lisää sivunkatkaisu"
+
+#: ./interfaces/utility.py:274
+msgid "Insert time"
+msgstr "Lisää aika"
+
+#: ./interfaces/utility.py:239
+msgid "Insert/edit anchor"
+msgstr "Lisää/muokkaa ankkuria"
+
+#: ./interfaces/utility.py:329
+msgid "Insert/edit attributes"
+msgstr "Lisää/muokkaa attribuutteja"
+
+#: ./interfaces/utility.py:244
+msgid "Insert/edit image"
+msgstr "Lisää/muokkaa kuvaa"
+
+#: ./interfaces/utility.py:229
+msgid "Insert/edit link"
+msgstr "Lisää/muokkaa linkkiä"
+
+#: ./interfaces/utility.py:249
+msgid "Insert/edit media"
+msgstr "Lisää/muokkaa mediaa"
+
+#. Default: "Internal link"
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:62
+msgid "Internal link"
+msgstr "Sisäinen linkki"
+
+#: ./interfaces/utility.py:149
+msgid "Italic"
+msgstr "Kursivoi"
+
+#: ./browser/controlpanel.py:32
+msgid "Layout"
+msgstr "Ulkoasu"
+
+#. Default: "Libraries"
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:18
+msgid "Libraries"
+msgstr "Kirjastot"
+
+#. Default: "Link to anchor"
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:130
+msgid "Link to anchor"
+msgstr "Linkki ankkuriin"
+
+#: ./interfaces/utility.py:356
+msgid "Link using UIDs"
+msgstr "Linkitä käyttäen UID:ta"
+
+#: ./interfaces/utility.py:386
+msgid "Linkable Objects"
+msgstr "Linkitettävät objektit"
+
+#: ./interfaces/utility.py:357
+msgid "Links to objects on this site can use unique object ids so that the links remain valid even if the target object is renamed or moved elsewhere on the site."
+msgstr "Linkit sivuston objekteihin voivat käyttää uniikkeja tunnisteista, joiden avulla linkit pysyvät rikkoutumattominan vaikka linkitettävä olio nimettäisiin uudelleen tai siirrettäisiin toisaalle."
+
+#. Default: "Mail"
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:43
+msgid "Mail"
+msgstr "Posti"
+
+#: ./interfaces/utility.py:209
+msgid "Ordered list"
+msgstr "Järjestetty lista"
+
+#: ./interfaces/utility.py:214
+msgid "Outdent"
+msgstr "Ulonna"
+
+#: ./interfaces/utility.py:104
+msgid "Paste"
+msgstr "Liitä"
+
+#: ./interfaces/utility.py:109
+msgid "Paste as Plain Text"
+msgstr "Liitä tekstinä"
+
+#: ./interfaces/utility.py:114
+msgid "Paste from Word"
+msgstr "Liitä Wordistä"
+
+#. Default: "Preview"
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:100
+msgid "Preview"
+msgstr "Esikatselu"
+
+#: ./interfaces/utility.py:294
+msgid "Print"
+msgstr "Tulosta"
+
+#: ./interfaces/utility.py:124
+msgid "Redo"
+msgstr "Tee uudelleen"
+
+#: ./interfaces/utility.py:309
+msgid "Remove formatting"
+msgstr "Poista muotoilut"
+
+#: ./browser/controlpanel.py:44
+msgid "Resource Types"
+msgstr "Resurssien tyypit"
+
+#: ./interfaces/utility.py:368
+msgid "Rooted to current object"
+msgstr "Sido juuritaso muokattavaan objektiin"
+
+#: ./interfaces/utility.py:89
+msgid "Save"
+msgstr "Tallenna"
+
+#. Default: "Search"
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:37
+msgid "Search"
+msgstr "Etsi"
+
+#: ./interfaces/utility.py:139
+msgid "Select Style"
+msgstr "Valitse tyyli"
+
+#: ./browser/controlpanel.py:49
+msgid "Settings for the TinyMCE Wysiwyg editor."
+msgstr "Asetukset TinyMCE Wysiwyg editorille."
+
+#: ./interfaces/utility.py:304
+msgid "Spellchecker"
+msgstr "Oikeinkirjoituksen tarkistus"
+
+#: ./interfaces/utility.py:159
+msgid "Strikethrough"
+msgstr "Yliviivaa"
+
+#: ./interfaces/utility.py:62
+msgid "Styles"
+msgstr "Tyylit"
+
+#. Default: "Subject"
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:122
+msgid "Subject"
+msgstr "Aihe"
+
+#: ./interfaces/utility.py:164
+msgid "Subscript"
+msgstr "Alaindeksi"
+
+#: ./interfaces/utility.py:169
+msgid "Superscript"
+msgstr "Yläindeksi"
+
+#: ./interfaces/utility.py:224
+msgid "Table controls"
+msgstr "Taulukon kontrollit"
+
+#: ./interfaces/utility.py:68
+msgid "Table styles"
+msgstr "Taulukon tyylit"
+
+#: ./interfaces/utility.py:405
+msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
+msgstr "Tällä valinnalla kontrolloidaan miten entiteettejä/merkkejä prosessoidaan. Named: merkit konvertoidaan nimetyiksi entiteeteiksi. Numeric: merkit konvertoidaan numeerisiksi entiteeteiksi. Raw: kaikki muut paitsi XML:n oletusentiteetit (amp, lt, gt, quot) talletetaan entiteetittömään muotoon."
+
+#: ./interfaces/utility.py:84
+msgid "This option enables the external toolbar which will be placed at the top of the page."
+msgstr "Tämä valinta näyttää ulkoisen työkalupalkin, joka sijoittu sivun ylälaitaan."
+
+#: ./interfaces/utility.py:57
+msgid "This option enables you to specify a custom CSS file that extends the theme content CSS. This CSS file is the one used within the editor (the editable area)."
+msgstr "Tämä valinta mahdollistaa oman CSS-tiedoston käyttämisen, joka laajentaa teeman CSS-tyylimäärityksiä. Tätä CSS-tiedostoa käytetään editorin sisällä (muokkaus alueella)."
+
+#: ./interfaces/utility.py:19
+msgid "This option gives you the ability to enable/disable auto resizing the editor window depending on the content."
+msgstr "Tämä valinta mahdollistaa editori-ikkunan automaattisen koon säädön sisällöstä riippuen."
+
+#: ./interfaces/utility.py:13
+msgid "This option gives you the ability to enable/disable resizing the editor window. If the editor width is set to a percentage only vertical resizing is enabled."
+msgstr "Tämä valinta mahdollistaa editori-ikkunan koon uudelleensäätämisen. Jos editorin leveys on määritelty prosentteina, vain korkeussuunnan säätäminen on päällä."
+
+#: ./interfaces/utility.py:51
+msgid "This option gives you the ability to enable/disable the use of the contextmenu."
+msgstr "Tämä valinta mahdollistaa kontekstivalikon kytkemisen päälle/pois."
+
+#: ./interfaces/utility.py:25
+msgid "This option gives you the ability to specify the bottom margin (in pixels) of the textfield when auto resizing of the editor window is enabled."
+msgstr "Tämä valinta mahdollistaa tekstikentän alamarginaalin määrittämisen pikseleinä, kun editori-ikkunan automaattinen koon säätö on päällä."
+
+#: ./interfaces/utility.py:37
+msgid "This option gives you the ability to specify the height of the editor in pixels. If auto resize is enabled this value is used as minimum height."
+msgstr "Tämä valinta mahdollistaa editorin korkeuden määrittämisen pikseleinä. Jos automaattinen koon säätö on päällä, tätä arvoa käytetään pienimpänä mahdollisena korkeutena."
+
+#: ./interfaces/utility.py:31
+msgid "This option gives you the ability to specify the width of the editor in pixels or percent."
+msgstr "Tämä valinta mahdollistaa editorin leveyden määrittämisen pikseleinä tai prosentteina."
+
+#: ./interfaces/utility.py:78
+msgid "This option gives you the ability to specify the width of the toolbar in pixels."
+msgstr "Tämä valinta mahdollistaa työkalupalkin leveyden määrittämisen pikseleinä."
+
+#: ./interfaces/utility.py:43
+msgid "This option specifies the default writing direction, some languages (Like Hebrew, Arabic, Urdu...) write from right to left instead of left to right."
+msgstr "Tämä valinta määrittelee oletuksenä käytettävän kirjoitussuunnan. Joissakin kielissä (esim. heprea, arabian kieli, urdu) kirjoitetaan oikealta vasemmalle."
+
+#: ./browser/controlpanel.py:48
+msgid "TinyMCE Settings"
+msgstr "TinyMCE:n asetukset"
+
+#. Default: "Title"
+#: ./skins/tinymce/plugins/advlink/link.htm.pt:273
+msgid "Title"
+msgstr "Otsikko"
+
+#: ./interfaces/utility.py:339
+msgid "Toggle fullscreen mode"
+msgstr "Täysi näyttö"
+
+#: ./interfaces/utility.py:319
+msgid "Toggle guidelines/invisible objects"
+msgstr "Ohjausviivat/näkymättömät objektit"
+
+#: ./browser/controlpanel.py:36
+msgid "Toolbar"
+msgstr "Työkalurivi"
+
+#: ./interfaces/utility.py:77
+msgid "Toolbar width"
+msgstr "Työkalurivin leveys"
+
+#: ./interfaces/utility.py:154
+msgid "Underline"
+msgstr "Alleviivaus"
+
+#: ./interfaces/utility.py:119
+msgid "Undo"
+msgstr "Peru"
+
+#: ./interfaces/utility.py:234
+msgid "Unlink"
+msgstr "Poista linkki"
+
+#: ./interfaces/utility.py:204
+msgid "Unordered list"
+msgstr "Järjestämätön lista"
+
+#. Default: "Up one level"
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:50
+msgid "Up one level"
+msgstr "Ylös yksi taso"
+
+#. Default: "Upload"
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:127
+msgid "Upload"
+msgstr "Lähetä"
+
+#. Default: "Upload file"
+#: ./skins/tinymce/plugins/advimage/image.htm.pt:53
+msgid "Upload file"
+msgstr "Lähetä tiedosto"
+
+#: ./interfaces/utility.py:324
+msgid "Visual control characters on/off"
+msgstr "Visuaaliset kontrollimerkit päällä/pois päältä"
+
+#: ./interfaces/utility.py:369
+msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
+msgstr "Päälle kytkettynä käyttäjän juuritaso tulee olemaan valittu objekti eikä käyttäjä voi lisätä kuvia tai linkkejä sivuston muista osista."
+
+#: ./interfaces/utility.py:42
+msgid "Writing direction"
+msgstr "Kirjoitussuunta"
+
