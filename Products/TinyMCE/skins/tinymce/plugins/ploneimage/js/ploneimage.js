@@ -138,24 +138,20 @@ var ImageDialog = {
 
         el = ed.selection.getNode();
 
-        preload_img = document.createElement('img');
-        preload_img.src = href;
-        
-        preload_img.onload = function () {
-            if (el && el.nodeName == 'IMG') {
-                ed.dom.setAttribs(el, args);
-                el.setAttribute('height', this.height)
-                el.setAttribute('width', this.width)
-            } else {
-                ed.execCommand('mceInsertContent', false, '<img id="__mce_tmp" />', {skip_undo : 1});
-                ed.dom.setAttrib('__mce_tmp', 'width', this.width);
-                ed.dom.setAttrib('__mce_tmp', 'height', this.height); 
-                ed.dom.setAttribs('__mce_tmp', args);
-                ed.dom.setAttrib('__mce_tmp', 'id','');
-            }
+        if (el && el.nodeName == 'IMG') {
+            ed.dom.setAttribs(el, args);
+            el.setAttribute('height', this.height)
+            el.setAttribute('width', this.width)
+        } else {
+            ed.execCommand('mceInsertContent', false, '<img id="__mce_tmp" />', {skip_undo : 1});
+            ed.dom.setAttrib('__mce_tmp', 'width', this.width);
+            ed.dom.setAttrib('__mce_tmp', 'height', this.height); 
+            ed.dom.setAttribs('__mce_tmp', args);
+            ed.dom.setAttrib('__mce_tmp', 'id','');
             ed.undoManager.add();
-            tinyMCEPopup.close();
         }
+
+        tinyMCEPopup.close();
     },
 
     checkSearch : function(e) {
