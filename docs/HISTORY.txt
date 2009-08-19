@@ -5,6 +5,12 @@ HISTORY
 1.1rc4 (unreleased)
 -------------------
 
+- Fixed issue with preload not image in IE returning the cached image.
+  [robgietema]
+
+- Added default_editor fix for textFormatSelector also.
+  [robgietema]
+
 - Make default_editor site property getter fail gracefully.
   [MatthewWilkes]
 
@@ -16,10 +22,8 @@ HISTORY
   dialogues.  Readded dialogues removed in rc3.
   [MatthewWilkes]
 
-1.1rc3 (date-unknown)
+1.1rc3 (2009-08-18)
 ---------------------
-
-
 
 - Upgrade to TinyMCE 3.2.5.
   [robgietema]
