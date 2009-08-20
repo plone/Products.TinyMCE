@@ -5,7 +5,10 @@ HISTORY
 1.1rc4 (unreleased)
 -------------------
 
-- Fixed issue with preload not image in IE returning the cached image.
+- Upgrade to TinyMCE 3.2.6
+  [robgietema]
+
+- Fixed issue with preload image in IE returning the cached image.
   [robgietema]
 
 - Added default_editor fix for textFormatSelector also.
