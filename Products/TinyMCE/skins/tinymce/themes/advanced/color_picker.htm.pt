@@ -15,7 +15,7 @@
 				<div class="field">
 					<label for="picker" i18n:translate="advanced_dlg_colorpicker_picker_title"></label>
 					<div class="widget" id="picker">
-						<img id="colors" class="input-border" style="margin-right: 1em; float: left" src="img/colorpicker.jpg" onclick="computeColor(event)" onmousedown="isMouseDown = true;return false;" onmouseup="isMouseDown = false;" onmousemove="if (isMouseDown && isMouseOver) computeColor(event); return false;" onmouseover="isMouseOver=true;" onmouseout="isMouseOver=false;" alt=" " />
+						<img id="colors" class="input-border" style="margin-right: 1em; float: left" src="img/colorpicker.jpg" onclick="computeColor(event)" onmousedown="isMouseDown = true;return false;" onmouseup="isMouseDown = false;" onmousemove="if (isMouseDown && isMouseOver) computeColor(event); return false;" onmouseover="isMouseOver=true;" onmouseout="isMouseOver=false;" alt="" />
 
 						<div id="light" class="input-border" style="float: left">
 							<!-- Will be filled with divs -->
