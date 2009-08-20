@@ -43,4 +43,7 @@ def upgrade_10_to_11(setuptool):
     tinymce.toolbar_definitionlist = True
 
     # Remove autoresize bottom margin
-    del tinymce.autoresize_bottom_margin
+    try:
+        del tinymce.autoresize_bottom_margin
+    except:
+        pass
