@@ -9,6 +9,9 @@ Let's get the portal object
     >>> self.portal
     <PloneSite at ...>
 
+And login
+   >>> self.loginAsPortalOwner()
+   
 Ok, that works, let's get the transformation tool
 
     >>> from zope.component import getUtility
@@ -30,16 +33,24 @@ Check if the transform policy is installed
     >>> policies = [mimetype for (mimetype, required) in transform_utility.listPolicies() if mimetype == "text/x-html-safe"]
     >>> print len(policies)
     1
-
+    
+Ok, we add a image to our instance and collect the UID
+    >>> from Products.CMFPlone.tests import dummy
+    >>> self.portal.invokeFactory('Image', id='image', title="Image", file=dummy.Image())
+    'image'
+    >>> image = getattr(self.portal, 'image')
+    >>> image.reindexObject()
+    >>> UID = image.UID()
+    
 We test our SGML based parser first:
 
     >>> text = """<html>
     ...             <head></head>
     ...             <body>
-    ...                 <img src="resolveuid/943f469a781852145c7cddb3d99a5241/image_thumb" class="image-left captioned" width="200" alt="My alt text" />
+    ...                 <img src="resolveuid/%s/image_thumb" class="image-left captioned" width="200" alt="My alt text" />
     ...                 <p><img src="/plone/image.jpg" class="image-right captioned" width="200" style="border-width:1px" /></p>
     ...              </body>
-    ...            </html>"""
+    ...            </html>""" % UID
     >>> from Products.TinyMCE.transforms.parser import TinyMCEOutput
     >>> parser = TinyMCEOutput(context=self.portal)
     >>> parser.feed(text)
@@ -47,7 +58,7 @@ We test our SGML based parser first:
     <html...>  
     >>> parser.close()
 
-Test if it preservers newlines which should not be filtered out 
+Test if it preserves newlines which should not be filtered out 
     >>> text = """<pre>This is line 1
     ...                This is line 2</pre>"""
     >>> from Products.TinyMCE.transforms.parser import TinyMCEOutput
@@ -57,23 +68,23 @@ Test if it preservers newlines which should not be filtered out
     True
 
 Let's get the html-to-tinymce-output-html transform and run it.
-This is not a full functional test as we don't add a document and image / link with captioned images or UID's yet, it should leave the UID intact
 
     >>> text = """<html>
     ...             <head></head>
     ...             <body>
-    ...                 <img src="resolveuid/943f469a781852145c7cddb3d99a5241/image_thumb" class="image-left captioned" width="200" alt="My alt text" />
+    ...                 <img src="resolveuid/%s/image_thumb" class="image-left captioned" width="200" alt="My alt text" />
     ...                 <p><img src="/plone/image.jpg" class="image-right captioned" width="200" style="border-width:1px" /></p>
     ...                 <pre>This is line 1
     ...                       This is line 2</pre>
     ...              </body>
-    ...            </html>"""
+    ...            </html>""" % UID
     >>> transformed_text = transform_utility.convert(name="html_to_tinymce_output_html", orig=text, context=self.portal)
-    >>> print transformed_text
-    <html...>
 
-
-
+The UID reference should be converted to an absolute url : 
+    
+    >>> str(transformed_text).find('<img src="http://nohost/plone/image" alt="My alt text" class="image-left captioned" width="200" />') != -1
+    True
+    
 If that works, let's uninstall the whole bunch again
 
     >>> from Products.TinyMCE.setuphandlers import uninstall_mimetype_and_transforms
