@@ -3,6 +3,7 @@ from Products.CMFCore.utils import getToolByName
 from zope.component import getUtility
 from sgmllib import SGMLParser
 from urlparse import urlsplit, urlunsplit, urljoin
+from Acquisition import aq_inner
 
 singleton_tags = ["img", "br", "hr", "input", "meta", "param", "col"]
 
@@ -17,30 +18,6 @@ class TinyMCEOutput(SGMLParser):
         self.captioned_images = captioned_images
         self.pieces = []
 
-    def _makeUrlRelative(self, url, base):
-        """Make a link relative to base. This method assumes we have already checked that url and base have a common prefix. This is taken from Kupu"""
-        scheme, netloc, path, query, fragment = urlsplit(url)
-        _, _, basepath, _, _ = urlsplit(base)
-    
-        baseparts = basepath.split('/')
-        pathparts = path.split('/')
-
-        basetail = baseparts.pop(-1)
-
-        # Remove common elements
-        while pathparts and baseparts and baseparts[0]==pathparts[0]:
-            baseparts.pop(0)
-            pathparts.pop(0)
-
-        for i in range(len(baseparts)):
-            pathparts.insert(0, '..')
-
-        if not pathparts:
-            pathparts.insert(0, '.')
-        elif pathparts==[basetail]:
-            pathparts.pop(0)
-        return '/'.join(pathparts)
-        
     def append_data(self, data, add_eol=0):
         """Append data unmodified to self.data, add_eol adds a newline character""" 
         if add_eol:
@@ -72,7 +49,7 @@ class TinyMCEOutput(SGMLParser):
         self.append_data("<!%(text)s>" % locals())
 
     def unknown_starttag(self, tag, attrs):
-        """Here we've got the actual conversion of links and images. Convert UUID's to relative paths, and process captioned images to HTML"""
+        """Here we've got the actual conversion of links and images. Convert UUID's to absolute url's, and process captioned images to HTML"""
         if tag in ['a', 'img']:
             # Only do something if tag is a link or images
             attributes = {}
@@ -94,7 +71,7 @@ class TinyMCEOutput(SGMLParser):
                         reference_tool = getToolByName(self.context, 'reference_catalog')
                         ref_obj = reference_tool.lookupObject(uid)
                         if ref_obj:
-                            href = self._makeUrlRelative(ref_obj.absolute_url(), self.context.absolute_url()) + appendix
+                            href = ref_obj.absolute_url() + appendix
                             attributes['href'] = href
                             attrs = attributes.iteritems()
             elif tag == 'img':
@@ -115,7 +92,7 @@ class TinyMCEOutput(SGMLParser):
                     image_obj = reference_tool.lookupObject(uid)
                     if image_obj:
                         # Only do something when the image is actually found in the reference_catalog
-                        src = self._makeUrlRelative(image_obj.absolute_url(), self.context.absolute_url()) + appendix
+                        src = image_obj.absolute_url() + appendix
                         attributes["src"] = src
                         if hasattr(image_obj, "Description"):
                             description = image_obj.Description()
@@ -127,7 +104,7 @@ class TinyMCEOutput(SGMLParser):
                     # Check if we can find this in the portal catalog
                     brains = portal_catalog({'path' : {'query':path}, 'type' : 'Image'})
                     if len(brains) == 0:
-                        # Maybe omething like 'image_preview' is in the path, let's chop it
+                        # Maybe something like 'image_preview' is in the path, let's chop it
                         query= {'path' : {'query' : "/".join(path.split('/')[:-1])}, 'type' : 'Image'}
                         brains = portal_catalog(query)
                     if len(brains) > 0:
