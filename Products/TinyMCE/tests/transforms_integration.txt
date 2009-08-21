@@ -82,7 +82,7 @@ Let's get the html-to-tinymce-output-html transform and run it.
 
 The UID reference should be converted to an absolute url : 
     
-    >>> str(transformed_text).find('<img src="http://nohost/plone/image" alt="My alt text" class="image-left captioned" width="200" />') != -1
+    >>> str(transformed_text).find('<img src="http://nohost/plone/image/image_thumb" alt="My alt text" class="image-left captioned" width="200" />') != -1
     True
     
 If that works, let's uninstall the whole bunch again
