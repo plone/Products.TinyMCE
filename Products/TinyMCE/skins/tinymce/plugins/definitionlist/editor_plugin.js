@@ -49,7 +49,6 @@
                     newelm = ed.getDoc().createElement('p');
                     for (var c=0; c<curelm.childNodes.length; c++)
                         html += curelm.childNodes[c].innerHTML + '<br/>';
-                    html += "</p>";
                     newelm.innerHTML = html;
                     curelm.parentNode.replaceChild(newelm, curelm);
                     ed.selection.moveToBookmark(b);
