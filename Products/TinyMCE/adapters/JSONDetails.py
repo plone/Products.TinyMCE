@@ -30,7 +30,7 @@ class JSONDetails(object):
         image_portal_types = utility.imageobjects.split('\n')
 
         results = {}
-        results['title'] = self.context.Title()
+        results['title'] = self.context.title_or_id()
         results['description'] = self.context.Description()
 
         if self.context.portal_type in image_portal_types:
