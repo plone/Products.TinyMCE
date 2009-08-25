@@ -9041,8 +9041,8 @@ var tinyMCE = window.tinyMCE = tinymce.EditorManager;
 
 			// We only need to override paths if we have to
 			// IE has a bug where it remove site absolute urls to relative ones if this is specified
-			if (s.document_base_url != tinymce.documentBaseURL)
-				t.iframeHTML += '<base href="' + t.documentBaseURI.getURI() + '" />';
+			//if (s.document_base_url != tinymce.documentBaseURL)
+			t.iframeHTML += '<base href="' + t.documentBaseURI.getURI() + '" />';
 
 			t.iframeHTML += '<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />';
 
