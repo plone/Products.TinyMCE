@@ -49,7 +49,7 @@ class JSONFolderListing(object):
 
             if IFolderish.providedBy(obj):
                 if not now[-1] == 'talkback':
-                    result.append({'title':obj.Title(),'url':portal_url + '/' + '/'.join(now)})
+                    result.append({'title':obj.title_or_id(),'url':portal_url + '/' + '/'.join(now)})
         return result
 
     def getInfoFromBrain(self, brain):
@@ -60,6 +60,8 @@ class JSONFolderListing(object):
         url = brain.getURL()
         portal_type = brain.portal_type
         title = brain.Title
+        if title == "":
+            title = brain.id
         icon = brain.getIcon
         is_folderish = brain.is_folderish
 

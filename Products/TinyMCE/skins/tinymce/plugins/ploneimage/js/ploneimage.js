@@ -129,7 +129,6 @@ var ImageDialog = {
         if (dimensions != "") {
             href += '/' + dimensions;
         }
-
         args = {
             src : href,
             alt : nl0.alt.value,
@@ -485,9 +484,19 @@ var ImageDialog = {
                 ImageDialog.current_path = path;
                 document.forms[1].action = ImageDialog.current_path + '/tinymce-upload';
                 ImageDialog.setRadioValue('internallink', ImageDialog.current_link, 0);
+
                 if (ImageDialog.current_link != "") {
                     if (ImageDialog.current_link.indexOf('resolveuid') != -1) {
-                        ImageDialog.setDetails(ImageDialog.current_url,'');
+                        current_uid = href.split('resolveuid/')[1];
+                        tinymce.util.XHR.send({
+                            url : tinyMCEPopup.editor.settings.portal_url + '/portal_tinymce/tinymce-getpathbyuid?uid=' + current_uid,
+                            type : 'GET',
+                            success : function(text) {
+                                ImageDialog.current_url = ImageDialog.getAbsoluteUrl(tinyMCEPopup.editor.settings.document_base_url, text);
+                                ImageDialog.current_link = href;
+                                ImageDialog.setDetails(ImageDialog.current_url,'');
+                            }
+                        });
                     } else {
                         ImageDialog.setDetails(ImageDialog.current_link,'');
                     }
