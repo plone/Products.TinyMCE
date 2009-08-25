@@ -140,12 +140,8 @@ var ImageDialog = {
 
         if (el && el.nodeName == 'IMG') {
             ed.dom.setAttribs(el, args);
-            el.setAttribute('height', this.height)
-            el.setAttribute('width', this.width)
         } else {
             ed.execCommand('mceInsertContent', false, '<img id="__mce_tmp" />', {skip_undo : 1});
-            ed.dom.setAttrib('__mce_tmp', 'width', this.width);
-            ed.dom.setAttrib('__mce_tmp', 'height', this.height); 
             ed.dom.setAttribs('__mce_tmp', args);
             ed.dom.setAttrib('__mce_tmp', 'id','');
             ed.undoManager.add();
@@ -276,23 +272,6 @@ var ImageDialog = {
             dom.remove(dom.getParent(id, 'tr'));
     },
 
-    resetImageData : function() {
-        var f = document.forms[0];
-
-        f.elements.width.value = f.elements.height.value = '';
-    },
-
-    updateImageData : function(img, st) {
-        var f = document.forms[0];
-
-        if (!st) {
-            f.elements.width.value = img.width;
-            f.elements.height.value = img.height;
-        }
-
-        this.preloadImg = img;
-    },
-
     changeAppearance : function() {
         var ed = tinyMCEPopup.editor, f = document.forms[0], img = document.getElementById('alignSampleImg');
 
@@ -334,66 +313,6 @@ var ImageDialog = {
 
         tp = (parseInt(f.height.value) / parseInt(t.preloadImg.height)) * t.preloadImg.width;
         f.width.value = tp.toFixed(0);
-    },
-
-    updateStyle : function(ty) {
-        var dom = tinyMCEPopup.dom, st, v, f = document.forms[0], img = dom.create('img', {style : dom.get('style').value});
-
-        if (tinyMCEPopup.editor.settings.inline_styles) {
-            // Handle align
-            if (ty == 'align') {
-                dom.setStyle(img, 'float', '');
-                dom.setStyle(img, 'vertical-align', '');
-
-                v = this.getSelectValue(f, 'align');
-                if (v) {
-                    if (v == 'left' || v == 'right')
-                        dom.setStyle(img, 'float', v);
-                    else
-                        img.style.verticalAlign = v;
-                }
-            }
-
-            // Handle border
-            if (ty == 'border') {
-                dom.setStyle(img, 'border', '');
-
-                v = f.border.value;
-                if (v || v == '0') {
-                    if (v == '0')
-                        img.style.border = '0';
-                    else
-                        img.style.border = v + 'px solid black';
-                }
-            }
-
-            // Handle hspace
-            if (ty == 'hspace') {
-                dom.setStyle(img, 'marginLeft', '');
-                dom.setStyle(img, 'marginRight', '');
-
-                v = f.hspace.value;
-                if (v) {
-                    img.style.marginLeft = v + 'px';
-                    img.style.marginRight = v + 'px';
-                }
-            }
-
-            // Handle vspace
-            if (ty == 'vspace') {
-                dom.setStyle(img, 'marginTop', '');
-                dom.setStyle(img, 'marginBottom', '');
-
-                v = f.vspace.value;
-                if (v) {
-                    img.style.marginTop = v + 'px';
-                    img.style.marginBottom = v + 'px';
-                }
-            }
-
-            // Merge
-            dom.get('style').value = dom.serializeStyle(dom.parseStyle(img.style.cssText));
-        }
     },
 
     changeMouseMove : function() {
