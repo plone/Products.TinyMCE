@@ -1,3 +1,5 @@
+var InitializedTinyMCEInstances = {}
+
 function TinyMCEConfig(id) {
     this.id = id;
     this.widget_config = eval('(' + document.getElementById (this.id).title + ')');
@@ -6,9 +8,10 @@ function TinyMCEConfig(id) {
     this.init = function() {
 
         // Check if already initialized
-        if (tinymce.EditorManager.get(this.id) != undefined) {
+        if (typeof (InitializedTinyMCEInstances[this.id]) != 'undefined') {
             return;
         }
+        InitializedTinyMCEInstances[this.id] = 1;
 
         this.initToolbars();
         var format = document.getElementById(this.id + '_text_format');
