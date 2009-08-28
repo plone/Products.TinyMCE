@@ -22,16 +22,16 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
         'layout' : {
             'resizing' : {'type' : 'Bool', 'default' : True},
             'autoresize' : {'type' : 'Bool', 'default' : False},
-            'editor_width' : {'type' : 'Text', 'default' : '100%'},
-            'editor_height' : {'type' : 'Text', 'default' : '400'},
-            'directionality' : {'type' : 'Text', 'default' : 'ltr'},
+            'editor_width' : {'type' : 'Text', 'default' : u'100%'},
+            'editor_height' : {'type' : 'Text', 'default' : u'400'},
+            'directionality' : {'type' : 'Text', 'default' : u'ltr'},
             'contextmenu' : {'type' : 'Bool', 'default' : True},
-            'content_css' : {'type' : 'Text', 'default' : ''},
-            'styles' : {'type' : 'List', 'default' : 'Heading|h2\nSubheading|h3\nLiteral|pre\nDiscreet|p|discreet\nPull-quote|div|pullquote\nCall-out|p|callout\nHighlight|span|visualHighlight\nOdd row|tr|odd\nEven row|tr|even\nHeading cell|th|\nPage break (print only)|div|pageBreak\nClear floats|div|visualClear'},
-            'tablestyles' : {'type' : 'List', 'default' : 'Subdued grid|plain\nInvisible grid|invisible\nFancy listing|listing\nFancy grid listing|grid listing\nFancy vertical listing|vertical listing'},
+            'content_css' : {'type' : 'Text', 'default' : u''},
+            'styles' : {'type' : 'List', 'default' : u'Heading|h2\nSubheading|h3\nLiteral|pre\nDiscreet|p|discreet\nPull-quote|div|pullquote\nCall-out|p|callout\nHighlight|span|visualHighlight\nOdd row|tr|odd\nEven row|tr|even\nHeading cell|th|\nPage break (print only)|div|pageBreak\nClear floats|div|visualClear'},
+            'tablestyles' : {'type' : 'List', 'default' : u'Subdued grid|plain\nInvisible grid|invisible\nFancy listing|listing\nFancy grid listing|grid listing\nFancy vertical listing|vertical listing'},
         },
         'toolbar' : {
-            'toolbar_width' : {'type' : 'Text', 'default' : '440'},
+            'toolbar_width' : {'type' : 'Text', 'default' : u'440'},
             'toolbar_external' : {'type' : 'Bool', 'default' : False},
             'toolbar_save' : {'type' : 'Bool', 'default' : True},
             'toolbar_cut' : {'type' : 'Bool', 'default' : False},
@@ -85,17 +85,17 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
             'toolbar_attribs' : {'type' : 'Bool', 'default' : False},
             'toolbar_code' : {'type' : 'Bool', 'default' : True},
             'toolbar_fullscreen' : {'type' : 'Bool', 'default' : True},
-            'customtoolbarbuttons' : {'type' : 'List', 'default' : ''},
+            'customtoolbarbuttons' : {'type' : 'List', 'default' : u''},
         },
         'resourcetypes' : {
             'link_using_uids' : {'type' : 'Bool', 'default' : False},
             'allow_captioned_images' : {'type' : 'Bool', 'default' : False},
-            'containsobjects' : {'type' : 'List', 'default' : 'ATFolder\nATBTreeFolder\nPlone Site'},
-            'containsanchors' : {'type' : 'List', 'default' : 'ATEvent\nATNewsItem\nATDocument\nATRelativePathCriterion'},
-            'linkable' : {'type' : 'List', 'default' : 'ATTopic\nATEvent\nATFile\nATFolder\nATImage\nATBTreeFolder\nATNewsItem\nATDocument'},
-            'imageobjects' : {'type' : 'List', 'default' : 'ATImage'},
-            'customplugins' : {'type' : 'List', 'default' : ''},
-            'entity_encoding' : {'type' : 'Text', 'default' : 'raw'},
+            'containsobjects' : {'type' : 'List', 'default' : u'ATFolder\nATBTreeFolder\nPlone Site'},
+            'containsanchors' : {'type' : 'List', 'default' : u'ATEvent\nATNewsItem\nATDocument\nATRelativePathCriterion'},
+            'linkable' : {'type' : 'List', 'default' : u'ATTopic\nATEvent\nATFile\nATFolder\nATImage\nATBTreeFolder\nATNewsItem\nATDocument'},
+            'imageobjects' : {'type' : 'List', 'default' : u'ATImage'},
+            'customplugins' : {'type' : 'List', 'default' : u''},
+            'entity_encoding' : {'type' : 'Text', 'default' : u'raw'},
             'rooted' : {'type' : 'Bool', 'default' : False},
         }
     }
@@ -179,8 +179,7 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
             # Loop through fields in category
             for field in category.keys():
                 fieldvalue = getattr(self.context, field)
-
-                fieldvalue = category[field]['default']
+                setattr(self.context, field, category[field]['default'])
 
 def importTinyMCESettings(context):
     """Import TinyMCE Settings"""
