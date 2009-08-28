@@ -136,8 +136,7 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
 
     def _importNode(self, node):
         """Import the object from the DOM node"""
-
-        if self.environ.shouldPurge():
+        if self.environ.shouldPurge() or node.getAttribute("purge").lower() == 'true':
             self._purgeAttributes()
 
         for categorynode in node.childNodes:
