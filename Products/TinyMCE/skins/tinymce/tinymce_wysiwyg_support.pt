@@ -13,7 +13,7 @@
             name="description"
             tal:content="inputvalue"
             tal:attributes="name inputname;
-                            id inputname;
+                            id id|inputname;
                             onfocus onfocus|nothing;
                             onblur onblur|nothing;
                             rows rows|default;
