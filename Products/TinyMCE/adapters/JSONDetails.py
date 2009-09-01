@@ -2,7 +2,6 @@ from zope.interface import implements
 from zope.component import adapts
 from zope.component import getUtility
 from z3c.json import interfaces
-from z3c.json import testing
 
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.adapters.interfaces.JSONDetails import IJSONDetails
@@ -51,6 +50,5 @@ class JSONDetails(object):
         else:
             results['anchors'] = []
 
-        testing.setUpJSONConverter()
         jsonWriter = getUtility(interfaces.IJSONWriter)
         return jsonWriter.write(results)

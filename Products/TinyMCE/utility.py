@@ -6,7 +6,6 @@ from AccessControl import ClassSecurityInfo
 from Products.CMFCore.utils import getToolByName
 from Products.CMFCore.interfaces._content import IContentish, IFolderish
 from z3c.json import interfaces
-from z3c.json import testing
 from types import StringTypes
 
 from Products.TinyMCE.interfaces.utility import ITinyMCE
@@ -768,6 +767,5 @@ class TinyMCE(SimpleItem):
             results['parent'] = portal_url() + "/"
             results['document_url'] = portal_url()
 
-        testing.setUpJSONConverter()
         jsonWriter = getUtility(interfaces.IJSONWriter)
         return jsonWriter.write(results)
