@@ -2,7 +2,6 @@ from zope.interface import implements
 from zope.component import adapts
 from zope.component import getUtility
 from z3c.json import interfaces
-from z3c.json import testing
 
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.adapters.interfaces.JSONSearch import IJSONSearch
@@ -60,6 +59,5 @@ class JSONSearch(object):
         results['items'] = catalog_results 
 
         # return results in JSON format
-        testing.setUpJSONConverter()
         jsonWriter = getUtility(interfaces.IJSONWriter)
         return jsonWriter.write(results)
