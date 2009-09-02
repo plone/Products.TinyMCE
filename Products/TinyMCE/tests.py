@@ -1,4 +1,5 @@
 """Test setup for integration and functional tests."""
+import unittest
 
 from Products.Five import zcml
 from Products.Five import fiveconfigure
@@ -20,13 +21,19 @@ def setup_product():
 setup_product()
 ptc.setupPloneSite(products=['Products.TinyMCE'])
 
-class TinyMCETestCase(ptc.PloneTestCase):
-    """We use this base class for all the tests in this package. If necessary,
-    we can put common utility or setup code in here. This applies to unit 
-    test cases.
-    """
+doc_tests = (
+    'imagescales.txt',
+    'transforms.txt',
+    )
 
-class TinyMCEFunctionalTestCase(ptc.FunctionalTestCase):
-    """We use this class for functional integration tests that use doctest
-    syntax. Again, we can put basic common utility or setup code in here.
-    """
+def test_suite():
+    """This sets up a test suite that actually runs the tests"""
+    return unittest.TestSuite(
+        [ztc.ZopeDocFileSuite(
+            'tests/%s' % f, package='Products.TinyMCE',
+            test_class=ptc.FunctionalTestCase)
+            for f in doc_tests],
+        )
+
+if __name__ == '__main__':
+    unittest.main(defaultTest='test_suite')
