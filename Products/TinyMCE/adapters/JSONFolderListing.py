@@ -82,6 +82,10 @@ class JSONFolderListing(object):
 
         object = aq_inner(self.context)
 
+        # check if object is a folderish object, if not, get it's parent.
+        if not IFolderish.providedBy(object):
+            object = object.getParentNode()
+
         if IPloneSiteRoot.providedBy(object) or (rooted == "True" and document_base_url[:-1] == object.absolute_url()):
             results['parent_url'] = ''
         else:
@@ -93,10 +97,6 @@ class JSONFolderListing(object):
             # get all items from siteroot to context (title and url)
             results['path'] = self.getBreadcrums()
 
-        # check if object is a folderish object, if not, get it's parent.
-        if not IFolderish.providedBy(object):
-            object = object.getParentNode()
-        
         # get all portal types and get information from brains
         for brain in object.getFolderContents({'portal_type':filter_portal_types, 'sort_on':'sortable_title'}):
             catalog_results.append(self.getInfoFromBrain(brain))
