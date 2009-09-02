@@ -10,7 +10,7 @@
 <object name="portal_skins" meta_type="Plone Skins Tools">
  <object name="tinymce"
     meta_type="Filesystem Directory View"
-    directory="TinyMCE/skins/tinymce"/>
+    directory="Products.TinyMCE:skins/tinymce"/>
 
  <skin-path name="*">
 
