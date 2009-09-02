@@ -46,3 +46,42 @@ The details will now also include the thumbnail url and the imagescales.
   >>> object = IJSONDetails(portal[image])
   >>> object.getDetails()
   u'{"scales":..."thumb":"http://nohost/plone/image/image_thumb"...}'
+
+JSONFolderListing
+-----------------
+
+The folder listing is used in the link and image drawers to show the contents
+of a folder. Let's see what items our current siteroot has.
+
+  >>> from Products.TinyMCE.adapters.interfaces.JSONFolderListing import \
+  ...     IJSONFolderListing
+  >>> object = IJSONFolderListing(portal)
+  >>> object.getListing(filter_portal_types=[],\
+  ...                   rooted=False,\
+  ...                   document_base_url='http://nohost/plone',\
+  ...                  )
+  u'{"parent_url":"","path":[...],"items":[...]}'
+
+Let's create some more content to get breadcrumbs.
+
+  >>> folder = portal.invokeFactory('Folder', id='folder')
+  >>> folder_object = portal[folder]
+  >>> document = folder_object.invokeFactory('Document', id='document')
+
+When we call the getListing method on the document we should get the listing of
+it's parent.
+
+  >>> object = IJSONFolderListing(folder_object.get(document))
+  >>> object.getListing(filter_portal_types=[],\
+  ...                   rooted='False',\
+  ...                   document_base_url='http://nohost/plone/folder',\
+  ...                  )
+  u'{"parent_url":"http://nohost/plone"...}'
+
+We can also select rooted so we don't get all the breadcrumbs.
+
+  >>> object.getListing(filter_portal_types=[],\
+  ...                   rooted='True',\
+  ...                   document_base_url='http://nohost/plone/folder',\
+  ...                  )
+  u'{..."path":[{"url":"http://nohost/plone/folder"...}'
