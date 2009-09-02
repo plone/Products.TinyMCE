@@ -85,3 +85,21 @@ We can also select rooted so we don't get all the breadcrumbs.
   ...                   document_base_url='http://nohost/plone/folder',\
   ...                  )
   u'{..."path":[{"url":"http://nohost/plone/folder"...}'
+
+JSONSearch
+----------
+
+The json search is used the look for content types within the portal. Let's see
+if we can find some items containing the searchterm 'Events'
+
+  >>> from zope.component import getUtility
+  >>> from Products.TinyMCE.interfaces.utility import ITinyMCE
+  >>> utility = getUtility(ITinyMCE)
+  >>> linkable_portal_types = utility.linkable.split('\n')
+  >>> linkable_portal_types.extend(utility.containsobjects.split('\n'))
+  >>> from Products.TinyMCE.adapters.interfaces.JSONSearch import IJSONSearch
+  >>> object = IJSONSearch(portal)
+  >>> object.getSearchResults(filter_portal_types=linkable_portal_types,\
+  ...                         searchtext='Events',\
+  ...                        )
+  u'{..."title":"Events","url":"http://nohost/plone/events"...}'
