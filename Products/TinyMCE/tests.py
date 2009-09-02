@@ -22,6 +22,7 @@ setup_product()
 ptc.setupPloneSite(products=['Products.TinyMCE'])
 
 doc_tests = (
+    'adapters.txt',
     'imagescales.txt',
     'transforms.txt',
     )

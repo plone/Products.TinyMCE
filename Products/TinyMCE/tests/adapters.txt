@@ -1,0 +1,48 @@
+========
+Adapters
+========
+
+This functionality is added to plone content types using adapters.
+
+Let's start by logging in as a manager.
+
+  >>> self.setRoles(['Manager'])
+
+JSONDetails
+-----------
+
+This class is used to get detail from a certain object. Let's create a Document.
+
+  >>> document = portal.invokeFactory('Document', id='document')
+  >>> portal[document]
+  <ATDocument at /plone/document>
+
+The basic details should return the following.
+
+  >>> from Products.TinyMCE.adapters.interfaces.JSONDetails import IJSONDetails
+  >>> object = IJSONDetails(portal[document])
+  >>> object.getDetails()
+  u'{"thumb":"","description":"","anchors":[],"title":"document"}'
+
+Let's set some more details like description and body text.
+
+  >>> portal[document].setDescription('Test')
+  >>> portal[document].setText(u'<p><a name="anchor">anchor</a></p>',
+  ...                          mimetype='text/html')
+
+The details will now contain a bit more info.
+
+  >>> object.getDetails()
+  u'{"thumb":"","description":"Test","anchors":["anchor"],"title":"document"}'
+
+We can also get the details of an image object.
+
+  >>> image = portal.invokeFactory('Image', id='image')
+  >>> portal[image]
+  <ATImage at /plone/image>
+
+The details will now also include the thumbnail url and the imagescales.
+
+  >>> object = IJSONDetails(portal[image])
+  >>> object.getDetails()
+  u'{"scales":..."thumb":"http://nohost/plone/image/image_thumb"...}'
