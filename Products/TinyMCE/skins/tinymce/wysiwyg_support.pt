@@ -3,7 +3,7 @@
 <!-- wysiwyg multiplexing widget, this allows for both TinyMCE, Epoz, Kupu, and Straight HTML to coexist -->
 <div metal:define-macro="wysiwygEditorBox">
   <tal:block define="member_editor python: context.portal_membership.getAuthenticatedMember().getProperty('wysiwyg_editor').lower();
-                     default_editor python: context.portal_properties.site_properties.get('default_editor', '').lower();
+                     default_editor python: context.portal_properties.site_properties.getProperty('default_editor', '').lower();
                      editor python: test(member_editor=='', default_editor, member_editor);
                      support python: path('nocall:here/%s_wysiwyg_support|here/%s/wysiwyg_support|here/portal_skins/plone_wysiwyg/wysiwyg_support' % (editor, editor));">
    <metal:block metal:use-macro="support/macros/wysiwygEditorBox">
@@ -13,7 +13,7 @@
 
 <div metal:define-macro="textFormatSelector">
   <tal:block define="member_editor python: context.portal_membership.getAuthenticatedMember().getProperty('wysiwyg_editor').lower();
-                     default_editor python: context.portal_properties.site_properties.get('default_editor', '').lower();
+                     default_editor python: context.portal_properties.site_properties.getProperty('default_editor', '').lower();
                      editor python: test(member_editor=='', default_editor, member_editor);
                      support python: path('nocall:here/%s_wysiwyg_support|here/%s/wysiwyg_support|here/portal_skins/plone_wysiwyg/wysiwyg_support' % (editor, editor));">
    <metal:block metal:use-macro="support/macros/textFormatSelector">
