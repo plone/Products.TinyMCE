@@ -479,7 +479,14 @@ var ImageDialog = {
                     }
                 }
                 document.getElementById ('internalpath').innerHTML = html;
-    
+
+                // Check if allowed to upload
+                if (data.upload_allowed) {
+                    document.getElementById ('upload').style.display = '';
+                } else {
+                    document.getElementById ('upload').style.display = 'none';
+                }
+
                 // Set global path
                 ImageDialog.current_path = path;
                 document.forms[1].action = ImageDialog.current_path + '/tinymce-upload';
