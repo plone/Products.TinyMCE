@@ -47,7 +47,7 @@
           <div class="field">
             <div id="internalpath" class="formHelp" style="text-align: right;"></div>
             <label for="internallink" i18n:translate="ploneimage_dlg_image_list"></label>
-            <a id="uponelevel" class="link-parent" style="line-height: 1em;" href="javascript:void(0)" i18n:domain="plone.tinymce" i18n:translate="">Up one level</a>
+            <div style="height: 22px"><a id="uponelevel" class="link-parent" style="line-height: 1em;" href="javascript:void(0)" i18n:domain="plone.tinymce" i18n:translate="">Up one level</a></div>
             <div id="internallinkcontainer" class="widget radioscrolllist input-border" style="height: 260px;">
             </div>
             <input style="margin-top:4px;" type="button" id="upload" class="context" name="upload" value="Upload file" i18n:domain="plone.tinymce" i18n:attributes="value" onclick="ImageDialog.displayPanel('upload_panel');" />
