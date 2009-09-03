@@ -638,14 +638,6 @@ function getLinkListHTML(elm_id, target_form_element, onchange_func) {
     // tinyMCE.debug('-- image list start --', html, '-- image list end --');
 }
 
-function setUploadVisibility() {
-    if ((isVisible('internal_panel')) && (isVisible('general_panel'))) {
-        document.getElementById('upload').style.display = 'inline';
-    } else {
-        document.getElementById('upload').style.display = 'none';
-    }
-}
-
 function setPopupVisibility() {
     var targetlist = document.getElementById('targetlist');    
     if (targetlist.options[targetlist.selectedIndex].value == 'popup') {
@@ -690,8 +682,6 @@ function displayPanel(elm_id) {
     document.getElementById ('mail_panel').style.display = elm_id == 'mail_panel' ? 'block' : 'none';
     document.getElementById ('anchors_panel').style.display = elm_id == 'anchors_panel' ? 'block' : 'none';
     document.getElementById ('upload_panel').style.display = elm_id == 'upload_panel' ? 'block' : 'none';
-
-    setUploadVisibility();
 }
 
 function setDetails(path, pageanchor) {
