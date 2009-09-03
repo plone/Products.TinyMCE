@@ -53,14 +53,20 @@ JSONFolderListing
 The folder listing is used in the link and image drawers to show the contents
 of a folder. Let's see what items our current siteroot has.
 
+  >>> from zope.component import getUtility
+  >>> from Products.TinyMCE.interfaces.utility import ITinyMCE
+  >>> utility = getUtility(ITinyMCE)
+  >>> linkable_portal_types = utility.linkable.split('\n')
+  >>> linkable_portal_types.extend(utility.containsobjects.split('\n'))
   >>> from Products.TinyMCE.adapters.interfaces.JSONFolderListing import \
   ...     IJSONFolderListing
   >>> object = IJSONFolderListing(portal)
-  >>> object.getListing(filter_portal_types=[],\
+  >>> object.getListing(filter_portal_types=linkable_portal_types,\
   ...                   rooted=False,\
   ...                   document_base_url='http://nohost/plone',\
+  ...                   upload_type='File',\
   ...                  )
-  u'{"parent_url":"","path":[...],"items":[...]}'
+  u'{"parent_url":"","path":[...],..."items":[...]}'
 
 Let's create some more content to get breadcrumbs.
 
@@ -92,9 +98,6 @@ JSONSearch
 The json search is used the look for content types within the portal. Let's see
 if we can find some items containing the searchterm 'Events'
 
-  >>> from zope.component import getUtility
-  >>> from Products.TinyMCE.interfaces.utility import ITinyMCE
-  >>> utility = getUtility(ITinyMCE)
   >>> linkable_portal_types = utility.linkable.split('\n')
   >>> linkable_portal_types.extend(utility.containsobjects.split('\n'))
   >>> from Products.TinyMCE.adapters.interfaces.JSONSearch import IJSONSearch
