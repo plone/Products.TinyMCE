@@ -300,6 +300,8 @@ function TinyMCEConfig(id) {
         for (var i = 0; i < this.widget_config.customplugins.length; i++) {
             if (this.widget_config.customplugins[i].indexOf('|') == -1) {
                 plugins += ',' + this.widget_config.customplugins[i];
+            } else {
+            	plugins += ',' + this.widget_config.customplugins[i].split('|')[0];
             }
         }
         if (this.widget_config.contextmenu) {
