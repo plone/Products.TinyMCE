@@ -542,6 +542,7 @@ class TinyMCE(SimpleItem):
             'tt': COMMON_ATTRS.copy(),
             'ul': COMMON_ATTRS | set('compact type'.split()),
             'var': COMMON_ATTRS.copy(),
+            'iframe': COMMON_ATTRS | set('src name scrolling frameborder longdesc align height width marginheight marginwidth'.split())
             }
 
         # Get safe html transform
