@@ -12,6 +12,7 @@
   <div class="dialog-wrapper">
     <fieldset id="general_panel">
       <legend i18n:translate="ploneimage_dlg_dialog_title"></legend>
+      <div id="internalpath" class="formHelp" style="margin: 0 0 10px 10px; height: 2em"></div>
       <form>
 
         <fieldset class="column" style="width: 120px;">
@@ -45,10 +46,9 @@
         <fieldset id="internal_panel" class="subPanel column" style="width: 296px;">
           <legend i18n:translate="ploneimage_dlg_image_list"></legend>
           <div class="field">
-            <div id="internalpath" class="formHelp" style="text-align: right;"></div>
             <label for="internallink" i18n:translate="ploneimage_dlg_image_list"></label>
             <div style="height: 22px"><a id="uponelevel" class="link-parent" style="line-height: 1em;" href="javascript:void(0)" i18n:domain="plone.tinymce" i18n:translate="">Up one level</a></div>
-            <div id="internallinkcontainer" class="widget radioscrolllist input-border" style="height: 260px;">
+            <div id="internallinkcontainer" class="widget radioscrolllist input-border" style="height: 240px;">
             </div>
             <input style="margin-top:4px;" type="button" id="upload" class="context" name="upload" value="Upload file" i18n:domain="plone.tinymce" i18n:attributes="value" onclick="ImageDialog.displayPanel('upload_panel');" />
           </div>

@@ -13,6 +13,7 @@
     <ul class="formTabs"><li id="general_tab" class="formTab firstFormTab"><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;" class="selected"><span i18n:translate="plonelink_dlg_general_tab"></span></a></li><li id="advanced_tab" class="formTab lastFormTab"><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;"><span i18n:translate="plonelink_dlg_advanced_tab"></span></a></li></ul>
 
     <fieldset id="general_panel" class="formPanel" style="height: 392px; padding-top: 2em">
+      <div id="internalpath" class="formHelp" style="margin: 0 0 10px 10px; height: 2em"></div>
       <form>
         <input type="hidden" name="href" id="href"/>
         <fieldset class="column" style="width: 120px;">
@@ -61,7 +62,6 @@
         <fieldset id="internal_panel" class="subPanel column" style="width: 296px;">
           <legend i18n:domain="plone.tinymce" i18n:translate="">Internal link</legend>
           <div class="field">
-            <div id="internalpath" class="formHelp" style="text-align: right;"></div>
             <label for="internallink" i18n:translate="plonelink_dlg_list"></label>
             <div style="height: 22px"><a id="uponelevel" class="link-parent" style="line-height: 1em;" href="javascript:void(0)" i18n:domain="plone.tinymce" i18n:translate="">Up one level</a></div>
             <div id="internallinkcontainer" class="widget radioscrolllist input-border" style="height: 260px;">
