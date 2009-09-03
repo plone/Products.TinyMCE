@@ -55,9 +55,12 @@ class JSONSearch(object):
             for brain in self.context.portal_catalog.searchResults({'SearchableText':'%s*' % searchtext, 'portal_type':filter_portal_types, 'sort_on':'sortable_title'}):
                 catalog_results.append(self.getInfoFromBrain(brain))
 
-        # add catalog_ressults
+        # add catalog_results
         results['items'] = catalog_results 
-
+        
+        # never allow upload from search results page 
+        results['upload_allowed'] = False
+        
         # return results in JSON format
         jsonWriter = getUtility(interfaces.IJSONWriter)
         return jsonWriter.write(results)

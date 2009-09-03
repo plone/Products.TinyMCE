@@ -37,7 +37,8 @@ class TinyMCEBrowserView(BrowserView):
 
         context = aq_inner(self.context)
         object = IJSONFolderListing(self.context)
-        return object.getListing(linkable_portal_types, rooted, document_base_url)
+        results = object.getListing(linkable_portal_types, rooted, document_base_url, 'File') 
+        return results
     
     def jsonImageFolderListing(self, rooted, document_base_url):
         """Returns the folderlisting of image objects in JSON"""
@@ -48,7 +49,8 @@ class TinyMCEBrowserView(BrowserView):
 
         context = aq_inner(self.context)
         object = IJSONFolderListing(self.context)
-        return object.getListing(image_portal_types, rooted, document_base_url)
+        results = object.getListing(image_portal_types, rooted, document_base_url, 'Image')
+        return results
 
     def jsonLinkableSearch(self, searchtext):
         """Returns the search results of linkable objects in JSON"""
@@ -59,7 +61,8 @@ class TinyMCEBrowserView(BrowserView):
 
         context = aq_inner(self.context)
         object = IJSONSearch(self.context)
-        return object.getSearchResults(linkable_portal_types, searchtext)
+        results = object.getSearchResults(linkable_portal_types, searchtext)
+        return results
     
     def jsonImageSearch(self, searchtext):
         """Returns the search results of image objects in JSON"""
@@ -70,7 +73,8 @@ class TinyMCEBrowserView(BrowserView):
 
         context = aq_inner(self.context)
         object = IJSONSearch(self.context)
-        return object.getSearchResults(image_portal_types, searchtext)
+        results = object.getSearchResults(image_portal_types, searchtext)
+        return results
 
     def jsonDetails(self):
         """Returns the details of an object in JSON"""
@@ -78,3 +82,6 @@ class TinyMCEBrowserView(BrowserView):
         context = aq_inner(self.context)
         object = IJSONDetails(self.context)
         return object.getDetails()
+    
+    
+        
