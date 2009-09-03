@@ -9,7 +9,7 @@ class IJSONFolderListing(Interface):
     def getBreadcrums(self):
         """Get breadcrums"""
 
-    def getListing(self, filter_portal_types):
+    def getListing(self, filter_portal_types, rooted, document_base_url, upload_type=None):
         """Returns the actual listing"""
 
     def getInfoFromBrain(self, brain):

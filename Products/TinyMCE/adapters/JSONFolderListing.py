@@ -74,7 +74,7 @@ class JSONFolderListing(object):
         'is_folderish' : is_folderish
         }
 
-    def getListing(self, filter_portal_types, rooted, document_base_url):
+    def getListing(self, filter_portal_types, rooted, document_base_url, upload_type=None):
         """Returns the actual listing"""
 
         catalog_results = []
@@ -105,7 +105,15 @@ class JSONFolderListing(object):
 
         # add catalog_ressults
         results['items'] = catalog_results 
-
+        
+        # decide whether to show the upload new button
+        results['upload_allowed'] = False
+        if upload_type:
+            portal_types = getToolByName(object, 'portal_types')
+            fti = getattr(portal_types, upload_type, None)
+            if fti is not None:
+                results['upload_allowed'] = fti.isConstructionAllowed(object) 
+        
         # return results in JSON format
         jsonWriter = getUtility(interfaces.IJSONWriter)
         return jsonWriter.write(results)
