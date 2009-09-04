@@ -19,6 +19,9 @@ For basic installation use the following section in your buildout::
         ...
         Products.TinyMCE
 
+An upgrade step is also available through portal_setup if you are updating
+from an earlier version.
+
 buildout.cfg example using svn egg from the trunk
 -------------------------------------------------
 
