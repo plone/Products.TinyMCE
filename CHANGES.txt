@@ -2,8 +2,65 @@
 HISTORY
 =======
 
-1.1rc4 (unreleased)
+1.1rc4 (2009-09-04)
 -------------------
+
+- Added hiding upload button when you don't have permission to upload.
+  [robgietema]
+
+- Fixed jumping when up one level is hidden.
+  [robgietema]
+
+- Add allow_upload marker to results
+  [optilude]
+
+- Support iframe attributes.
+  [optilude]
+
+- Fixed parent url when object is not folderish.
+  [robgietema]
+
+- Added tests for adapters.
+  [robgietema]
+
+- Fixed template error for Plone 4.
+  [robgietema]
+
+- Fix evil use of test setup code in the views.
+  [optilude]
+
+- Load plugins correctly.
+  [optilude]
+
+- Fixing TinyMCEConfig call to use the same id as the id attribute gets set to
+  (this makes it work in IE again and not error in FF).
+  [evilbungle]
+
+- Several fixes to the Generic Setup import.
+  [MatthewWilkes]
+
+- Fixed selecting link after uploading a file when using link by uid.
+  [robgietema]
+  
+- Fixed initialisation error in Safari.
+  [robgietema]
+
+- Fixed error when inserting images in a new document and using uids.
+  [robgietema]
+
+- Fixed error in definition list.
+  [robgietema]
+
+- In the image and link drawers get the id of an item if the title is not
+  specified.
+  [robgietema]
+
+- Fixed width and height attributes getting undefined values.
+  [robgietema]
+
+- UID links are now generated absolute and not relative so the body can be
+  displayed in other contexts also.
+  [maerteijn]
 
 - Upgrade to TinyMCE 3.2.6
   [robgietema]
@@ -13,6 +70,9 @@ HISTORY
 
 - Added default_editor fix for textFormatSelector also.
   [robgietema]
+
+- Added Finnish translations.
+  [pingviini]
 
 - Make default_editor site property getter fail gracefully.
   [MatthewWilkes]
