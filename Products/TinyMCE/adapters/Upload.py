@@ -93,19 +93,31 @@ class Upload(object):
 
         # Get an unused filename without path
         id = self.cleanupFilename(id)
+        
         title = request['uploadtitle']
-        if title == None or title == "":
-            title = id
-
-        newid = context.invokeFactory(type_name=typename, id=id,
-            title=title,
-            description=request['uploaddescription'],
-        )
+        description = request['uploaddescription']
+        
+        newid = context.invokeFactory(type_name=typename, id=id)
 
         if newid is None or newid == '':
             newid = id 
 
         obj = getattr(context,newid, None)
+        
+        # Set title + description.
+        # Attempt to use Archetypes mutator if there is one, in case it uses a custom storage
+        
+        if title:
+            try:
+                obj.setTitle(title)
+            except AttributeError:
+                obj.title = title
+        
+        if description:
+            try:
+                obj.setDescription(description)
+            except AttributeError:
+                obj.description = description
 
         # set primary field
         pf = obj.getPrimaryField()
