@@ -1,9 +1,7 @@
 from Products.CMFCore.utils import getToolByName
 
-from zope.component import getUtility
-from sgmllib import SGMLParser
-from urlparse import urlsplit, urlunsplit, urljoin
-from Acquisition import aq_inner
+from sgmllib import SGMLParser, SGMLParseError
+from urlparse import urlsplit, urljoin
 
 singleton_tags = ["img", "br", "hr", "input", "meta", "param", "col"]
 
@@ -142,6 +140,26 @@ class TinyMCEOutput(SGMLParser):
     def unknown_endtag(self, tag):
         """Add the endtag unmodified"""
         self.append_data("</%(tag)s>" % locals()) 
+
+    def parse_declaration(self, i):
+        """Fix handling of CDATA sections. Code borrowed from BeautifulSoup.
+        """
+        j = None
+        if self.rawdata[i:i+9] == '<![CDATA[':
+             k = self.rawdata.find(']]>', i)
+             if k == -1:
+                 k = len(self.rawdata)
+             data = self.rawdata[i+9:k]
+             j = k+3
+             self.append_data("<![CDATA[%s]]>" % data)
+        else:
+            try:
+                j = SGMLParser.parse_declaration(self, i)
+            except SGMLParseError:
+                toHandle = self.rawdata[i:]
+                self.handle_data(toHandle)
+                j = i + len(toHandle)
+        return j
 
     def getResult(self):
         """Return the parsed result and flush it"""
