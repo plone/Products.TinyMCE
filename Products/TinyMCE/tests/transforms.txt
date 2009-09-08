@@ -35,6 +35,7 @@ Check if the transform policy is installed
     1
     
 Ok, we add a image to our instance and collect the UID
+
     >>> from Products.CMFPlone.tests import dummy
     >>> self.portal.invokeFactory('Image', id='image', title="Image", file=dummy.Image())
     'image'
@@ -59,6 +60,7 @@ We test our SGML based parser first:
     >>> parser.close()
 
 Test if it preserves newlines which should not be filtered out 
+
     >>> text = """<pre>This is line 1
     ...                This is line 2</pre>"""
     >>> from Products.TinyMCE.transforms.parser import TinyMCEOutput
@@ -66,6 +68,24 @@ Test if it preserves newlines which should not be filtered out
     >>> parser.feed(text)
     >>> print parser.getResult().find('\n') != -1
     True
+
+Test if it preserves CDATA sections, such as those TinyMCE puts into script
+tags. The standard SGMLParser has a bug that will remove these.
+
+    >>> text = """<script>
+    ... <![CDATA[
+    ...     alert(1);
+    ... ]]>
+    ... </script>"""
+    >>> from Products.TinyMCE.transforms.parser import TinyMCEOutput
+    >>> parser = TinyMCEOutput(context=self.portal)
+    >>> parser.feed(text)
+    >>> print parser.getResult()
+    <script>
+    <![CDATA[
+        alert(1);
+    ]]>
+    </script>
 
 Let's get the html-to-tinymce-output-html transform and run it.
 

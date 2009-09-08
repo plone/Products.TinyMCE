@@ -5,6 +5,10 @@ HISTORY
 1.1rc5 (unreleased)
 -------------------
 
+- Fix TinyMCEOutput parser to correctly recognise CDATA sections. TinyMCE puts
+  the contents of <script/> tags in CDATA sections.
+  [optilude]
+
 - Add french translation
   [toutpt]
 
