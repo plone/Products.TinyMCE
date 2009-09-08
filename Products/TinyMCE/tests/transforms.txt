@@ -72,20 +72,20 @@ Test if it preserves newlines which should not be filtered out
 Test if it preserves CDATA sections, such as those TinyMCE puts into script
 tags. The standard SGMLParser has a bug that will remove these.
 
-    >>> text = """<script>
-    ... <![CDATA[
-    ...     alert(1);
-    ... ]]>
-    ... </script>"""
+    >>> text = """<p>hello</p>
+    ... <script type="text/javsacript">// <![CDATA[
+    ... alert(1);
+    ... // ]]></script>
+    ... <p>world</p>"""
     >>> from Products.TinyMCE.transforms.parser import TinyMCEOutput
     >>> parser = TinyMCEOutput(context=self.portal)
     >>> parser.feed(text)
     >>> print parser.getResult()
-    <script>
-    <![CDATA[
-        alert(1);
-    ]]>
-    </script>
+    <p>hello</p>
+    <script type="text/javsacript">// <![CDATA[
+    alert(1);
+    // ]]></script>
+    <p>world</p>
 
 Let's get the html-to-tinymce-output-html transform and run it.
 
@@ -100,10 +100,26 @@ Let's get the html-to-tinymce-output-html transform and run it.
     ...            </html>""" % UID
     >>> transformed_text = transform_utility.convert(name="html_to_tinymce_output_html", orig=text, context=self.portal)
 
+
 The UID reference should be converted to an absolute url : 
     
     >>> str(transformed_text).find('<img src="http://nohost/plone/image/image_thumb" alt="My alt text" class="image-left captioned" width="200" />') != -1
     True
+
+Ensure this doesn't strip CDATA sections either.
+
+    >>> text = """<p>hello</p>
+    ... <script type="text/javsacript">// <![CDATA[
+    ... alert(1);
+    ... // ]]></script>
+    ... <p>world</p>"""
+    >>> transformed_text = transform_utility.convert(name="html_to_tinymce_output_html", orig=text, context=self.portal)
+    >>> print transformed_text
+    <p>hello</p>
+    <script type="text/javsacript">// <![CDATA[
+    alert(1);
+    // ]]></script>
+    <p>world</p>
     
 If that works, let's uninstall the whole bunch again
 
