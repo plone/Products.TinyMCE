@@ -108,7 +108,7 @@ if we can find some items containing the searchterm 'Events'
   u'{..."title":"Events","url":"http://nohost/plone/events"...}'
 
 Save
-----------
+----
 
 This class is used to save a document using json. Let's try and set some value.
 
@@ -123,3 +123,7 @@ The document should now contain our new text.
 
   >>> folder_object[document].getText()
   '<p>test</p>'
+
+Upload
+------
+
