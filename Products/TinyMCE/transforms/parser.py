@@ -32,7 +32,7 @@ class TinyMCEOutput(SGMLParser):
 
     def handle_data(self, text):
         """ Add data unmodified """
-        self.append_data(text);
+        self.append_data(text)
 
     def handle_comment(self, text):
         """ Handle comments unmodified """
