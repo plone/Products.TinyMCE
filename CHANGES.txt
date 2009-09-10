@@ -5,12 +5,22 @@ HISTORY
 1.1rc5 (unreleased)
 -------------------
 
+- Get anchors from primary field and not from the 'text' field.
+  [robgietema]
+
+- Fixed misspelled breadcrumbs.
+  [robgietema]
+
 - Fix TinyMCEOutput parser to correctly recognise CDATA sections. TinyMCE puts
   the contents of <script/> tags in CDATA sections.
   [optilude]
 
-- Add french translation
+- Add french translation.
   [toutpt]
+
+- Use AT mutator when setting title and description when uploading a file,
+  otherwise this doesn't work on blobs.
+  [optilude]
 
 1.1rc4 (2009-09-04)
 -------------------
@@ -21,7 +31,7 @@ HISTORY
 - Fixed jumping when up one level is hidden.
   [robgietema]
 
-- Add allow_upload marker to results
+- Add allow_upload marker to results.
   [optilude]
 
 - Support iframe attributes.
@@ -92,7 +102,7 @@ HISTORY
 
 - Remove ploneimage and plonelink from the hardcoded plugins and add them to the
   control panel box. This allows people to select the default image and link
-  dialogues.  Readded dialogues removed in rc3.
+  dialogues. Readded dialogues removed in rc3.
   [MatthewWilkes]
 
 1.1rc3 (2009-08-18)

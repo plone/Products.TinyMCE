@@ -11,6 +11,7 @@ from Products.CMFCore.utils import getToolByName
 from Acquisition import aq_inner
 from elementtree import HTMLTreeBuilder
 
+from Products.CMFPlone.utils import log
 class JSONDetails(object):
     """Return details of the current object in JSON"""
     implements(IJSONDetails)
@@ -41,7 +42,7 @@ class JSONDetails(object):
         if self.context.portal_type in anchor_portal_types:
             results['anchors'] = []
             tree = HTMLTreeBuilder.TreeBuilder()
-            tree.feed('<root>%s</root>' % self.context.getText())
+            tree.feed('<root>%s</root>' % self.context.getPrimaryField().getAccessor(self.context)())
             rootnode = tree.close()
             for x in rootnode.getiterator():
                 if x.tag == "a":
