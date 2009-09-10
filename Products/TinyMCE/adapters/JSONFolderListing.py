@@ -22,8 +22,8 @@ class JSONFolderListing(object):
         """Constructor"""
         self.context = context
 
-    def getBreadcrums(self, path=None):
-        """Get breadcrums"""
+    def getBreadcrumbs(self, path=None):
+        """Get breadcrumbs"""
         #TODO: getToolByName is deprecated
         ptool = getUtilityByInterfaceName('Products.CMFCore.interfaces.IPropertiesTool')
         utool = getToolByName(self.context, 'portal_url')
@@ -93,10 +93,10 @@ class JSONFolderListing(object):
             results['parent_url'] = object.getParentNode().absolute_url()
 
         if rooted == "True":
-            results['path'] = self.getBreadcrums(document_base_url)
+            results['path'] = self.getBreadcrumbs(document_base_url)
         else:
             # get all items from siteroot to context (title and url)
-            results['path'] = self.getBreadcrums()
+            results['path'] = self.getBreadcrumbs()
         
         # get all portal types and get information from brains
         path = '/'.join(object.getPhysicalPath())

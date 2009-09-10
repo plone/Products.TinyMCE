@@ -6,8 +6,8 @@ class IJSONFolderListing(Interface):
     def __init__(self, context):
         """Constructor"""
 
-    def getBreadcrums(self):
-        """Get breadcrums"""
+    def getBreadcrumbs(self):
+        """Get breadcrumbs"""
 
     def getListing(self, filter_portal_types, rooted, document_base_url, upload_type=None):
         """Returns the actual listing"""
