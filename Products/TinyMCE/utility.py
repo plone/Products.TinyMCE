@@ -635,9 +635,9 @@ class TinyMCE(SimpleItem):
         if not redefine_parastyles:
             if isinstance(self.tablestyles, StringTypes):
                 for tablestyle in self.tablestyles.split('\n'):
-                    tablestylefields = tablestyle.split('|');
-                    results['styles'].append(tablestylefields[0] + '|table|' + tablestylefields[1]);
-                    results['table_styles'].append(tablestylefields[0] + '=' + tablestylefields[1]);
+                    tablestylefields = tablestyle.split('|')
+                    results['styles'].append(tablestylefields[0] + '|table|' + tablestylefields[1])
+                    results['table_styles'].append(tablestylefields[0] + '=' + tablestylefields[1])
             if isinstance(self.styles, StringTypes):
                 results['styles'].extend(self.styles.split('\n'))
 

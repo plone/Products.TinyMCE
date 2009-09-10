@@ -3,11 +3,11 @@ from zope.component import getUtility
 from Products.Five.browser import BrowserView
 from Acquisition import aq_inner
 
-from Products.TinyMCE.adapters.interfaces.JSONFolderListing import IJSONFolderListing;
-from Products.TinyMCE.adapters.interfaces.JSONSearch import IJSONSearch;
-from Products.TinyMCE.adapters.interfaces.JSONDetails import IJSONDetails;
-from Products.TinyMCE.adapters.interfaces.Upload import IUpload;
-from Products.TinyMCE.adapters.interfaces.Save import ISave;
+from Products.TinyMCE.adapters.interfaces.JSONFolderListing import IJSONFolderListing
+from Products.TinyMCE.adapters.interfaces.JSONSearch import IJSONSearch
+from Products.TinyMCE.adapters.interfaces.JSONDetails import IJSONDetails
+from Products.TinyMCE.adapters.interfaces.Upload import IUpload
+from Products.TinyMCE.adapters.interfaces.Save import ISave
 from Products.TinyMCE.browser.interfaces.browser import ITinyMCEBrowserView
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 
