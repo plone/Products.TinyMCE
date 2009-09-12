@@ -37,7 +37,7 @@ class ITinyMCELayout(Interface):
         description=_(u"This option specifies the default writing direction, some languages (Like Hebrew, Arabic, Urdu...) write from right to left instead of left to right."),
         default=u'ltr',
         missing_value=set(),
-        vocabulary=SimpleVocabulary([SimpleTerm('ltr', _(u"Left to right")), SimpleTerm('rtl', _(u"Right to left"))]),
+        vocabulary=SimpleVocabulary([SimpleTerm('ltr', 'ltr', _(u"Left to right")), SimpleTerm('rtl', 'rtl', _(u"Right to left"))]),
         required=False)
 
     contextmenu = schema.Bool(
@@ -404,7 +404,7 @@ class ITinyMCEResourceTypes(Interface):
         description=_(u"This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"),
         default=u'raw',
         missing_value=set(),
-        vocabulary=SimpleVocabulary([SimpleTerm('named', _(u"Named")), SimpleTerm('numeric', _(u"Numeric")), SimpleTerm('raw', _(u"Raw"))]),
+        vocabulary=SimpleVocabulary([SimpleTerm('named', 'named', _(u"Named")), SimpleTerm('numeric', 'numeric', _(u"Numeric")), SimpleTerm('raw', 'raw', _(u"Raw"))]),
         required=False)
 
 class ITinyMCE(
