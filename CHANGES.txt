@@ -5,6 +5,13 @@ HISTORY
 1.1rc5 (unreleased)
 -------------------
 
+- Removed default values from interfaces/utility.py since they are already set
+  by the Generic Setup profile.
+  [robgietema]
+
+- Removed .mo files from version control.
+  [robgietema]
+
 - Added translations for simpleterms in controlpanel.
   [robgietema]
 
