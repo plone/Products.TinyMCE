@@ -152,50 +152,7 @@ class TinyMCE(SimpleItem):
                 if allowedTypes is not None and not 'text/html' in [t.lower() for t in allowedTypes]:
                     return False
 
-        # Then check whether their browser supports it.
-        if not useragent:
-            useragent = REQUEST['HTTP_USER_AGENT']
-
-        if 'BEOS' in useragent:
-            return False
-
-        def getver(s):
-            """Extract a version number given the string which precedes it"""
-            pos = useragent.find(s)
-            if pos >= 0:
-                tail = useragent[pos+len(s):].strip()
-                verno = numerics(tail.split(' ')[0])
-                return verno
-            return None
-
-        try:
-            v = getver('Opera/')
-            if not v:
-                v = getver('Opera ')
-            if v:
-                return v >= (9,0)
-
-            mozillaver = getver('Mozilla/')
-            if mozillaver > (5,0):
-                return True
-            elif mozillaver == (5,0):
-                verno = getver(' rv:')
-                if verno:
-                    return verno >= (1,3,1)
-                verno = getver(' AppleWebKit/')
-                if verno:
-                    return verno >= (525,1)
-                    verno = getver(' Safari/')
-                    if verno:
-                        return verno >= (522,12)
-
-            verno = getver('MSIE')
-            if verno:
-                return verno >= (5,5)
-        except:
-            # In case some weird browser makes the test code blow up.
-            pass
-        return False
+        return True
 
     def getImageScales(self, primary_field=None):
         """Return the image sizes for the drawer"""
