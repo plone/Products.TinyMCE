@@ -21,7 +21,7 @@ function TinyMCEConfig(id) {
 
         // Set textformat to html and hide selector
         var node = tinymce.DOM.get(this.id);
-        node = tinymce.DOM.getParent(node, '.ArchetypesRichWidget');
+        node = tinymce.DOM.getParent(node, '.ArchetypesRichWidget,.richTextWidget');
         if (node != null) {
             node = tinymce.DOM.select('div.fieldTextFormat', node);
             if (node.length > 0) {
