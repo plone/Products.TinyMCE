@@ -5,6 +5,9 @@ HISTORY
 1.1rc5 (unreleased)
 -------------------
 
+- Removed browsercheck from isTinyMCEEnabled method.
+  [robgietema]
+
 - Removed default values from interfaces/utility.py since they are already set
   by the Generic Setup profile.
   [robgietema]
