@@ -39,13 +39,7 @@ var ImageDialog = {
             if (href.indexOf('/')) {
                 var href_array = href.split('/');
                 var last = href_array[href_array.length-1];
-                if ((last == 'image_large') ||
-                    (last == 'image_preview') ||
-                    (last == 'image_mini') ||
-                    (last == 'image_thumb') ||
-                    (last == 'image_tile') ||
-                    (last == 'image_icon') ||
-                    (last == 'image_listing')) {
+                if (last.indexOf('image_') != -1) {
                     var dimensions = href_array.pop();
                     selectByValue(f0, 'dimensions', dimensions, true);
                     href = href_array.join ('/');
