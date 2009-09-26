@@ -1,12 +1,7 @@
 /* <dtml-with base_properties> */
 /* <dtml-call "REQUEST.set('portal_url', portal_url())"> */
 
-@import "<dtml-var portal_url>/portal_css/base.css";
-@import "<dtml-var portal_url>/portal_css/forms.css";
-@import "<dtml-var portal_url>/portal_css/authoring.css";
-@import "<dtml-var portal_url>/portal_css/public.css";
-@import "<dtml-var portal_url>/portal_css/nuplone.css";
-@import "<dtml-var portal_url>/portal_css/ploneCustom.css";
+@import "<dtml-var portal_url>/plone.css";
 
 body {
 background: transparent;
