@@ -11,9 +11,3 @@ class IJSONFolderListing(Interface):
 
     def getListing(self, filter_portal_types, rooted, document_base_url, upload_type=None):
         """Returns the actual listing"""
-
-    def getInfoFromBrain(self, brain):
-        """
-        Gets information from a brain
-        id, url, portal_type, title, icon, is_folderish
-        """

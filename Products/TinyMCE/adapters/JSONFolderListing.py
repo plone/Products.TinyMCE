@@ -51,28 +51,6 @@ class JSONFolderListing(object):
                     result.append({'title':obj.title_or_id(),'url':portal_url + '/' + '/'.join(now)})
         return result
 
-    def getInfoFromBrain(self, brain):
-        """Gets information from a brain id, url, portal_type, title, icon, is_folderish"""
-
-        id = brain.getId
-        uid = brain.UID
-        url = brain.getURL()
-        portal_type = brain.portal_type
-        title = brain.Title
-        if title == "":
-            title = brain.id
-        icon = brain.getIcon
-        is_folderish = brain.is_folderish
-
-        return {
-        'id': id,
-        'uid': uid,
-        'url': url,
-        'portal_type': portal_type,
-        'title' : title,
-        'icon' : icon,
-        'is_folderish' : is_folderish
-        }
 
     def getListing(self, filter_portal_types, rooted, document_base_url, upload_type=None):
         """Returns the actual listing"""
@@ -101,7 +79,15 @@ class JSONFolderListing(object):
         # get all portal types and get information from brains
         path = '/'.join(object.getPhysicalPath())
         for brain in portal_catalog(portal_type=filter_portal_types, sort_on='sortable_title', path={'query': path, 'depth':1}):
-            catalog_results.append(self.getInfoFromBrain(brain))
+            catalog_results.append({
+                'id': brain.getId,
+                'uid': brain.UID,
+                'url': brain.getURL(),
+                'portal_type': brain.portal_type,
+                'title' : brain.Title == "" and brain.id or brain.Title,
+                'icon' : brain.getIcon,
+                'is_folderish' : brain.is_folderish
+                })
 
         # add catalog_ressults
         results['items'] = catalog_results 
