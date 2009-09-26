@@ -6,17 +6,17 @@
  <javascript id="jscripts/tiny_mce/tiny_mce_init.js"
              remove="True"/>
 
- <javascript cacheable="False"
+ <javascript cacheable="True"
              compression="none"
-             cookable="False"
+             cookable="True"
              enabled="True"
              expression="not: portal/portal_membership/isAnonymousUser"
              id="tiny_mce.js"
              inline="False"/>
 
- <javascript cacheable="False"
+ <javascript cacheable="True"
              compression="none"
-             cookable="False"
+             cookable="True"
              enabled="True"
              expression="not: portal/portal_membership/isAnonymousUser"
              id="tiny_mce_init.js"
