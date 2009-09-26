@@ -10,7 +10,7 @@
              compression="none"
              cookable="False"
              enabled="True"
-             expression="python:portal.portal_tinymce.isTinyMCEEnabled(REQUEST=request)"
+             expression="not: portal/portal_membership/isAnonymousUser"
              id="tiny_mce.js"
              inline="False"/>
 
@@ -18,7 +18,7 @@
              compression="none"
              cookable="False"
              enabled="True"
-             expression="python:portal.portal_tinymce.isTinyMCEEnabled(REQUEST=request)"
+             expression="not: portal/portal_membership/isAnonymousUser"
              id="tiny_mce_init.js"
              inline="False"/>
 </object>
