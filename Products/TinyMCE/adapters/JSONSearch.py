@@ -21,27 +21,6 @@ class JSONSearch(object):
         """Constructor"""
         self.context = context
 
-    def getInfoFromBrain(self, brain):
-        """Gets information from a brain id, url, portal_type, title, icon, is_folderish"""
-
-        id = brain.getId
-        uid = brain.UID
-        url = brain.getURL()
-        portal_type = brain.portal_type
-        title = brain.Title
-        icon = brain.getIcon
-        is_folderish = brain.is_folderish
-
-        return {
-        'id': id,
-        'uid': uid,
-        'url': url,
-        'portal_type': portal_type,
-        'title' : title,
-        'icon' : icon,
-        'is_folderish' : is_folderish
-        }
-
     def getSearchResults(self, filter_portal_types, searchtext):
         """Returns the actual search result"""
 
@@ -53,7 +32,15 @@ class JSONSearch(object):
 
         if searchtext:
             for brain in self.context.portal_catalog.searchResults({'SearchableText':'%s*' % searchtext, 'portal_type':filter_portal_types, 'sort_on':'sortable_title'}):
-                catalog_results.append(self.getInfoFromBrain(brain))
+                catalog_results.append({
+                    'id': brain.getId,
+                    'uid': brain.UID,
+                    'url': brain.getURL(),
+                    'portal_type': brain.portal_type,
+                    'title' : brain.Title == "" and brain.id or brain.Title,
+                    'icon' : brain.getIcon,
+                    'is_folderish' : brain.is_folderish
+                    })
 
         # add catalog_results
         results['items'] = catalog_results 
