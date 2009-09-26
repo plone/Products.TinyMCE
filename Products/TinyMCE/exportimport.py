@@ -140,9 +140,9 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
             self._purgeAttributes()
 
         for categorynode in node.childNodes:
-            if categorynode.nodeName != '#text':
+            if categorynode.nodeName != '#text' and categorynode.nodeName != '#comment':
                 for fieldnode in categorynode.childNodes:
-                    if fieldnode.nodeName != '#text':
+                    if fieldnode.nodeName != '#text' and fieldnode.nodeName != '#comment':
                         if self.attributes[categorynode.nodeName][fieldnode.nodeName]['type'] == 'Bool':
                             if fieldnode.hasAttribute('value'):
                                 setattr(self.context, fieldnode.nodeName, self._convertToBoolean(fieldnode.getAttribute('value')))
@@ -156,7 +156,7 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
                             else:
                                 items = field.split('\n')
                             for element in fieldnode.childNodes:
-                                if element.nodeName != '#text':
+                                if element.nodeName != '#text' and element.nodeName != '#comment':
                                     if element.getAttribute('value') not in items:
                                         items.append(element.getAttribute('value'))
                             string = '\n'.join(items)
