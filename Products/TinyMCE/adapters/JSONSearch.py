@@ -2,9 +2,9 @@ from zope.interface import implements
 from zope.component import adapts
 from zope.component import getUtility
 try:
-	import json
+    import json
 except:
-	import simplejson as json
+    import simplejson as json
 
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.adapters.interfaces.JSONSearch import IJSONSearch
