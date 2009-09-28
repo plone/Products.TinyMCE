@@ -36,27 +36,27 @@
         sortkey="10"
         profile="Products.TinyMCE:TinyMCE" />
 
-	<genericsetup:importStep
-		name="tinymce_various"
-		title="TinyMCE plug-in installation"
-		description="Import various Products.TinyMCE"
-		handler="Products.TinyMCE.setuphandlers.importVarious">
-		<depends name="componentregistry"/>
-  	</genericsetup:importStep>
+    <genericsetup:importStep
+        name="tinymce_various"
+        title="TinyMCE plug-in installation"
+        description="Import various Products.TinyMCE"
+        handler="Products.TinyMCE.setuphandlers.importVarious">
+        <depends name="componentregistry"/>
+    </genericsetup:importStep>
 
-	<genericsetup:importStep
-		name="tinymce_settings"
-		title="TinyMCE Settings"
-		description="Import Product.TinyMCE settings"
-		handler="Products.TinyMCE.exportimport.importTinyMCESettings">
-		<depends name="componentregistry"/>
-  	</genericsetup:importStep>
+    <genericsetup:importStep
+        name="tinymce_settings"
+        title="TinyMCE Settings"
+        description="Import Product.TinyMCE settings"
+        handler="Products.TinyMCE.exportimport.importTinyMCESettings">
+        <depends name="componentregistry"/>
+    </genericsetup:importStep>
 
-	<genericsetup:exportStep
-		name="tinymce_settings"
-		title="TinyMCE Settings"
-		description="Export Product.TinyMCE settings"
-		handler="Products.TinyMCE.exportimport.exportTinyMCESettings">
-  	</genericsetup:exportStep>
+    <genericsetup:exportStep
+        name="tinymce_settings"
+        title="TinyMCE Settings"
+        description="Export Product.TinyMCE settings"
+        handler="Products.TinyMCE.exportimport.exportTinyMCESettings">
+    </genericsetup:exportStep>
 
 </configure>
