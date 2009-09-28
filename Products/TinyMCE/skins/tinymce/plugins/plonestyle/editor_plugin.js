@@ -73,8 +73,23 @@
                             ed.execCommand('RemoveFormat', false, null);
                         } else {
                             if (e.nodeName.toLowerCase() != "body") {
-                                e = ReplaceTag (e, tag);
-                                e.className = className;
+                                if (e.tagName.toLowerCase() != tag.toLowerCase()) {
+                                    e = ReplaceTag (e, tag);
+                                }
+                                if (className != "") {
+                                    var classnames = ed.dom.getAttrib(e, 'class').split(' ');
+                                    var newclassnames = new Array();
+                                    newclassnames.push(className)
+                                    for (var i = 0; i < classnames.length; i++) {
+                                        if ((classnames[i] == 'image-left') ||
+                                            (classnames[i] == 'image-right') ||
+                                            (classnames[i] == 'image-inline') ||
+                                            (classnames[i] == 'captioned')) {
+                                            newclassnames.push(classnames[i]);
+                                        }
+                                    }
+                                    e.className = newclassnames.join(' ');
+                                }
                             }
                         }
                         break;
@@ -191,7 +206,7 @@
                         {'class' : this._styles[i].className == '-' ? 'mceMenuItemTitle' : 'mce_formatPreview mce_' + this._styles[i].tag}
                     );
 
-                    var p = this._getParentNode(n, ["th","td","p","h1","h2","h3","h4","h5","h6","pre","div","span","blockquote","samp","code", "ul", "ol","dl"]);
+                    var p = this._getParentNode(n, ["th","td","p","h1","h2","h3","h4","h5","h6","pre","div","span","blockquote","samp","code", "ul", "ol","dl","img"]);
                     var il = false;
                     if (p && (p.nodeName.toLowerCase() == "ul" || p.nodeName.toLowerCase() == "ol")) {
                         var lt = ed.dom.getAttrib(p, "type");
@@ -214,7 +229,7 @@
                     } else {
                         il = true;
                     }
-                    if (p && (p.nodeName.toLowerCase() == this._styles[i].tag) && (this._styles[i].className == p.className) && il) {
+                    if (p && (p.nodeName.toLowerCase() == this._styles[i].tag) && (p.className.indexOf(this._styles[i].className) != -1) && il) {
                         this._control.select(i);
                     }
                 }
