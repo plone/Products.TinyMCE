@@ -10,18 +10,33 @@ Let's get the portal object
     <PloneSite at ...>
 
 And login
-   >>> self.loginAsPortalOwner()
-   
+
+    >>> self.loginAsPortalOwner()
+
 Ok, that works, let's get the transformation tool
 
     >>> from zope.component import getUtility
     >>> from Products.PortalTransforms.interfaces import IPortalTransformsTool
     >>> transform_utility = getUtility(IPortalTransformsTool)
-    
+
 Test if TinyMCE is there
 
     >>> from Products.TinyMCE.interfaces.utility import ITinyMCE
     >>> tinymce_utility = getUtility(ITinyMCE)
+
+Test is the transforms can be instantiated by name.
+
+    >>> from Products.TinyMCE.transforms.html_to_tinymce_output_html import html_to_tinymce_output_html
+    >>> transform = html_to_tinymce_output_html(name='transform')
+    >>> transform.name()
+    'transform'
+
+And also check the other transform.
+
+    >>> from Products.TinyMCE.transforms.tinymce_output_html_to_html import tinymce_output_html_to_html
+    >>> transform = tinymce_output_html_to_html(name='transform')
+    >>> transform.name()
+    'transform'
 
 Register text/x-tinymce-output-html mimetype and transformations for captioned images and UID's
 
@@ -33,7 +48,7 @@ Check if the transform policy is installed
     >>> policies = [mimetype for (mimetype, required) in transform_utility.listPolicies() if mimetype == "text/x-html-safe"]
     >>> print len(policies)
     1
-    
+
 Ok, we add a image to our instance and collect the UID
 
     >>> from Products.CMFPlone.tests import dummy
@@ -42,7 +57,7 @@ Ok, we add a image to our instance and collect the UID
     >>> image = getattr(self.portal, 'image')
     >>> image.reindexObject()
     >>> UID = image.UID()
-    
+
 We test our SGML based parser first:
 
     >>> text = """<html>
@@ -56,7 +71,7 @@ We test our SGML based parser first:
     >>> parser = TinyMCEOutput(context=self.portal)
     >>> parser.feed(text)
     >>> print parser.getResult()
-    <html...>  
+    <html...>
     >>> parser.close()
 
 Test if it preserves newlines which should not be filtered out 
@@ -100,9 +115,8 @@ Let's get the html-to-tinymce-output-html transform and run it.
     ...            </html>""" % UID
     >>> transformed_text = transform_utility.convert(name="html_to_tinymce_output_html", orig=text, context=self.portal)
 
-
 The UID reference should be converted to an absolute url : 
-    
+
     >>> str(transformed_text).find('<img src="http://nohost/plone/image/image_thumb" alt="My alt text" class="image-left captioned" width="200" />') != -1
     True
 
@@ -120,12 +134,12 @@ Ensure this doesn't strip CDATA sections either.
     alert(1);
     // ]]></script>
     <p>world</p>
-    
+
 If that works, let's uninstall the whole bunch again
 
     >>> from Products.TinyMCE.setuphandlers import uninstall_mimetype_and_transforms
     >>> uninstall_mimetype_and_transforms(self.portal)
-    
+
 Check if the transform policy is uninstalled after this
 
     >>> policies = [mimetype for (mimetype, required) in transform_utility.listPolicies() if mimetype == "text/x-html-safe"]
