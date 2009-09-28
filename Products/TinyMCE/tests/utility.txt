@@ -1,43 +1,59 @@
-=============================
+===============
+TinyMCE Utility
+===============
+
+First we'll get the TinyMCE utility.
+
+    >>> from Products.TinyMCE.utility import form_adapter
+    >>> utility = form_adapter(portal)
+    >>> utility
+    <TinyMCE at /plone/portal_tinymce>
+
+Configuration
+-------------
+
+Let's get the configuration of TinyMCE.
+
+    >>> utility.getConfiguration(portal)
+    '{...}'
+
 Configurable Image Dimensions
-=============================
+-----------------------------
 
 The image scale dimensions being provided to the image chooser should be
 gathered from the chosen AT content type. Let's begin by creating an
 AT image:
 
-  >>> self.setRoles(['Manager'])
-  >>> id = portal.invokeFactory('News Item', id='test')
-  >>> portal[id]
-  <ATNewsItem at /plone/test>
+    >>> self.setRoles(['Manager'])
+    >>> id = portal.invokeFactory('News Item', id='test')
+    >>> portal[id]
+    <ATNewsItem at /plone/test>
 
 Now the values being provided through JSON should be gotten from the ATNewsItem
 schema:
 
-  >>> from Products.TinyMCE.utility import TinyMCE
-  >>> utility = TinyMCE()
-  >>> primary_field = portal.test.schema['image']
-  >>> scales = utility.getImageScales(primary_field)
-  >>> from pprint import pprint
-  >>> pprint(scales)
-  [{'size': [0, 0], 'title': 'Original', 'value': ''},
-  {'size': [16, 16], 'title': 'Listing', 'value': 'image_listing'},
-  {'size': [32, 32], 'title': 'Icon', 'value': 'image_icon'},
-  {'size': [64, 64], 'title': 'Tile', 'value': 'image_tile'},
-  {'size': [128, 128], 'title': 'Thumb', 'value': 'image_thumb'},
-  {'size': [200, 200], 'title': 'Mini', 'value': 'image_mini'},
-  {'size': [400, 400], 'title': 'Preview', 'value': 'image_preview'},
-  {'size': [768, 768], 'title': 'Large', 'value': 'image_large'}]
+    >>> primary_field = portal.test.schema['image']
+    >>> scales = utility.getImageScales(primary_field)
+    >>> from pprint import pprint
+    >>> pprint(scales)
+    [{'size': [0, 0], 'title': 'Original', 'value': ''},
+    {'size': [16, 16], 'title': 'Listing', 'value': 'image_listing'},
+    {'size': [32, 32], 'title': 'Icon', 'value': 'image_icon'},
+    {'size': [64, 64], 'title': 'Tile', 'value': 'image_tile'},
+    {'size': [128, 128], 'title': 'Thumb', 'value': 'image_thumb'},
+    {'size': [200, 200], 'title': 'Mini', 'value': 'image_mini'},
+    {'size': [400, 400], 'title': 'Preview', 'value': 'image_preview'},
+    {'size': [768, 768], 'title': 'Large', 'value': 'image_large'}]
 
 If no primary field is given, we should get the scale dimensions from ATImage:
 
-  >>> scales = utility.getImageScales()
-  >>> pprint(scales)
-  [{'size': [0, 0], 'title': 'Original', 'value': ''},
-  {'size': [16, 16], 'title': 'Listing', 'value': 'image_listing'},
-  {'size': [32, 32], 'title': 'Icon', 'value': 'image_icon'},
-  {'size': [64, 64], 'title': 'Tile', 'value': 'image_tile'},
-  {'size': [128, 128], 'title': 'Thumb', 'value': 'image_thumb'},
-  {'size': [200, 200], 'title': 'Mini', 'value': 'image_mini'},
-  {'size': [400, 400], 'title': 'Preview', 'value': 'image_preview'},
-  {'size': [768, 768], 'title': 'Large', 'value': 'image_large'}]
+    >>> scales = utility.getImageScales()
+    >>> pprint(scales)
+    [{'size': [0, 0], 'title': 'Original', 'value': ''},
+    {'size': [16, 16], 'title': 'Listing', 'value': 'image_listing'},
+    {'size': [32, 32], 'title': 'Icon', 'value': 'image_icon'},
+    {'size': [64, 64], 'title': 'Tile', 'value': 'image_tile'},
+    {'size': [128, 128], 'title': 'Thumb', 'value': 'image_thumb'},
+    {'size': [200, 200], 'title': 'Mini', 'value': 'image_mini'},
+    {'size': [400, 400], 'title': 'Preview', 'value': 'image_preview'},
+    {'size': [768, 768], 'title': 'Large', 'value': 'image_large'}]

@@ -3,9 +3,9 @@ from zope.component import adapts
 from zope.component import getUtility
 
 try:
-    import simplejson as json
-except:
     import json
+except:
+    import simplejson as json
 
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.adapters.interfaces.JSONFolderListing import IJSONFolderListing

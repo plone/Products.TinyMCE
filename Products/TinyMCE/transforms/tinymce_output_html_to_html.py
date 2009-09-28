@@ -33,7 +33,4 @@ class tinymce_output_html_to_html:
         # we actually don't do anything in this transform, it is needed to get back in the transformation policy chain
         text = orig
         data.setData(text)
-        return data        
-    
-def register():
-    return tinymce_output_html_to_html()
+        return data

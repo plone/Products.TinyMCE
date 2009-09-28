@@ -32,7 +32,7 @@ class html_to_tinymce_output_html:
         }
         if name:
             self.__name__ = name
-            
+
     def name(self):
         return self.__name__
 
@@ -50,6 +50,3 @@ class html_to_tinymce_output_html:
         else:
             data.setData(orig)
         return data
-        
-def register():
-    return html_to_tinymce_output_html()
