@@ -4,6 +4,8 @@ HISTORY
 
 1.1rc5 (unreleased)
 -------------------
+- Fixed bug where custom image classes wouldn't stick after editing an image.
+  [robgietema]
 
 - Removed z3c.json dependancy, changed to simplejson or built-in json
   [kingel]

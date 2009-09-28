@@ -2,6 +2,7 @@ var ImageDialog = {
     current_path : "",
     current_link : "",
     current_url : "",
+    current_class : "",
     
     preInit : function() {
         var url;
@@ -53,8 +54,12 @@ var ImageDialog = {
                     if (tinyMCEPopup.editor.settings.allow_captioned_images) {
                         f0.caption.checked = true;
                     }
-                } else {
+                } else if ((classnames[i] == 'image-inline') ||
+                           (classnames[i] == 'image-left') ||
+                           (classnames[i] == 'image-right')) {
                     classname = classnames[i];
+                } else {
+                    current_class = classnames[i];
                 }
             }
             nl0.alt.value = alt;
@@ -126,7 +131,9 @@ var ImageDialog = {
         args = {
             src : href,
             alt : nl0.alt.value,
-            'class' : this.getSelectValue(f0, 'classes') + ((ed.settings.allow_captioned_images && f0.elements['caption'].checked) ? ' captioned' : '')
+            'class' : this.getSelectValue(f0, 'classes') +
+                ((ed.settings.allow_captioned_images && f0.elements['caption'].checked) ? ' captioned' : '') +
+                (current_class == '' ? '' : ' ' + current_class)
         };
 
         el = ed.selection.getNode();
