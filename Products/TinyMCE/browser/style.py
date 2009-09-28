@@ -22,8 +22,6 @@ class TinyMCEStyle(BrowserView):
         styles = registry.getEvaluatedResources(context)
         skinname = url_quote(aq_inner(self.context).getCurrentSkinName())
         result = []
-        #result.append('html { font-size: 69%; }')
-        #result.append('body { width: }')
 
         for style in styles:
             if style.getMedia() not in ('print', 'projection') and style.getRel()=='stylesheet' :

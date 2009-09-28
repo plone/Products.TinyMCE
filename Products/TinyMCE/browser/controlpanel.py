@@ -56,4 +56,4 @@ class TinyMCEControlPanelForm(ControlPanelForm):
             install_mimetype_and_transforms(self.context)
         else:
             # Unregister them
-            uninstall_mimetype_and_transforms(self.context)        
+            uninstall_mimetype_and_transforms(self.context)

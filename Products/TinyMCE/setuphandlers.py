@@ -65,10 +65,7 @@ def unregister_transform(context, transform):
 def register_transform_policy(context, output_mimetype, required_transform):
     """ register a transform policy with the portal_transforms tool"""
     transform_tool = getUtility(IPortalTransformsTool)
-    policies = [mimetype for (mimetype, required) in transform_tool.listPolicies() if mimetype == output_mimetype]
-    if policies:
-        # There is a policy, we remove it for now
-        transform_tool.manage_delPolicies([output_mimetype])
+    unregister_transform_policy(context, output_mimetype)
     transform_tool.manage_addPolicy(output_mimetype, [required_transform])    
 
 def unregister_transform_policy(context, output_mimetype):

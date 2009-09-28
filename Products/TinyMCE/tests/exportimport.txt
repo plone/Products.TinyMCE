@@ -1,0 +1,65 @@
+=============
+Export/Import
+=============
+
+Import
+------
+
+This module takes care of exporting and importing settings of TinyMCE. Let's
+create a dummy import context. And a dummy file.
+
+    >>> from Products.GenericSetup.tests.common import DummyImportContext
+    >>> xml = """\
+    ... <object>
+    ...   <resourcetypes>
+    ...     <link_using_uids value="True"/>
+    ...     <customplugins purge="True">
+    ...       <element value="testplugin"/>
+    ...     </customplugins>
+    ...     <linkable purge="False">
+    ...       <element value="Topic"/>
+    ...     </linkable>
+    ...     <customplugins purge="True">
+    ...       <element value="testplugin"/>
+    ...     </customplugins>
+    ...   </resourcetypes>
+    ... </object>
+    ... """
+    >>> context = DummyImportContext(portal, purge=True)
+    >>> context._files = {'tinymce.xml': xml}
+
+Now import the file.
+
+    >>> from Products.TinyMCE.exportimport import importTinyMCESettings
+    >>> importTinyMCESettings(context)
+
+Our specified plugin should now be stored in the utility.
+
+    >>> from Products.TinyMCE.interfaces.utility import ITinyMCE
+    >>> from zope.component import getUtility
+    >>> tinymce_utility = getUtility(ITinyMCE)
+    >>> 'testplugin' in tinymce_utility.customplugins
+    True
+
+Export
+------
+
+Let's create a dummy export context.
+
+    >>> from Products.GenericSetup.tests.common import DummyExportContext
+    >>> context = DummyExportContext(portal)
+
+And export the current settings.
+
+    >>> from Products.TinyMCE.exportimport import exportTinyMCESettings
+    >>> exportTinyMCESettings(context)
+
+Check if tinymce.xml is exported.
+
+    >>> context._wrote[0][0]
+    'tinymce.xml'
+
+Check the contents of the export.
+
+    >>> context._wrote[0][1]
+    '...testplugin...'
