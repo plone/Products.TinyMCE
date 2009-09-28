@@ -151,7 +151,7 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
                                 setattr(self.context, fieldnode.nodeName, fieldnode.getAttribute('value'))
                         elif self.attributes[categorynode.nodeName][fieldnode.nodeName]['type'] == 'List':
                             field = getattr(self.context, fieldnode.nodeName)
-                            if field is None:
+                            if field is None or fieldnode.getAttribute("purge").lower() == 'true':
                                 items = []
                             else:
                                 items = field.split('\n')
@@ -194,7 +194,5 @@ def exportTinyMCESettings(context):
     """Export TinyMCE Settings"""
     site = context.getSite()
     tool = getToolByName(site, 'portal_tinymce', None)
-    if tool is None:
-        return
 
     exportObjects(tool, '', context)

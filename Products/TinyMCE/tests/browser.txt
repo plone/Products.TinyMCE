@@ -1,0 +1,158 @@
+=======
+Browser
+=======
+
+The browser section adds browserviews used by TinyMCE.
+
+Let's start by logging in as a manager.
+
+    >>> self.setRoles(['Manager'])
+
+url
+---
+
+We start by creating a normal Document.
+
+    >>> document = portal.invokeFactory('Document', id='document')
+    >>> portal[document]
+    <ATDocument at /plone/document>
+
+Then we get the url by specifying the uid of the document.
+
+    >>> from Products.Five.testbrowser import Browser
+    >>> browser = Browser()
+    >>> self.app.acl_users.userFolderAddUser('root', 'secret', ['Manager'], [])
+    >>> browser.addHeader('Authorization', 'Basic root:secret')
+    >>> browser.open('http://nohost/plone/portal_tinymce/@@tinymce-getpathbyuid?uid=%s' % (portal[document].UID()))
+    >>> browser.contents
+    'http://nohost/plone/document'
+
+If we don't specify the uid we get an empty string.
+
+    >>> browser.open('http://nohost/plone/portal_tinymce/@@tinymce-getpathbyuid')
+    >>> browser.contents
+    ''
+
+If we specify a non existing uid we should get an empty string.
+
+    >>> browser.open('http://nohost/plone/portal_tinymce/@@tinymce-getpathbyuid?uid=abc')
+    >>> browser.contents
+    ''
+
+style
+-----
+
+This browserview will return all the stylesheets used. Let's call the
+browser view.
+
+    >>> browser.open('http://nohost/plone/portal_tinymce/@@tinymce-getstyle')
+    >>> browser.contents
+    '<!-- @import url(...portal_css...); -->'
+
+controlpanel
+------------
+
+First we open the TinyMCE control panel.
+
+    >>> browser.open('http://nohost/plone/portal_tinymce/@@tinymce-controlpanel')
+
+We check the link by uid option and press save.
+
+    >>> browser.getControl(name='form.link_using_uids').value = True
+    >>> browser.getControl(name='form.actions.save').click()
+
+When the control panel is submitted the TinyMCE transform policy should be
+registered because we enabled link by uid.
+
+    >>> from zope.component import getUtility
+    >>> from Products.PortalTransforms.interfaces import IPortalTransformsTool
+    >>> transform_utility = getUtility(IPortalTransformsTool)
+    >>> policies = [mimetype for (mimetype, required) in transform_utility.listPolicies() if mimetype == "text/x-html-safe"]
+    >>> print len(policies)
+    1
+
+Let's resubmit the form and see if the policy is still installed.
+
+    >>> browser.open('http://nohost/plone/portal_tinymce/@@tinymce-controlpanel')
+    >>> browser.getControl(name='form.actions.save').click()
+    >>> policies = [mimetype for (mimetype, required) in transform_utility.listPolicies() if mimetype == "text/x-html-safe"]
+    >>> print len(policies)
+    1
+
+Now we remove link by uid again.
+
+    >>> browser.getControl(name='form.link_using_uids').value = False
+    >>> browser.getControl(name='form.actions.save').click()
+
+And the transform policy 
+    >>> policies = [mimetype for (mimetype, required) in transform_utility.listPolicies() if mimetype == "text/x-html-safe"]
+    >>> print len(policies)
+    0
+
+jsonlinkablefolderlisting
+-------------------------
+
+We can call the linkable folder listing browserview on the site root to get a
+list of linkable items.
+
+    >>> browser.open('http://nohost/plone/@@tinymce-jsonlinkablefolderlisting?rooted=False&document_base_url=http://nohost/plone/')
+    >>> browser.contents
+    '..."id": "document"...'
+
+jsonimagefolderlisting
+----------------------
+
+Let's create an image first.
+
+    >>> image = portal.invokeFactory('Image', id='image')
+    >>> portal[image]
+    <ATImage at /plone/image>
+
+Now we can get a listing of the images and check if our image is there.
+
+    >>> browser.open('http://nohost/plone/@@tinymce-jsonimagefolderlisting?rooted=False&document_base_url=http://nohost/plone/')
+    >>> browser.contents
+    '..."id": "image"...'
+
+jsonlinkablesearch
+------------------
+
+If we want to search for a linkable item we can call the json linkable search
+browser view and specify a searchtext. Let's find our document.
+
+    >>> browser.open('http://nohost/plone/@@tinymce-jsonlinkablesearch?searchtext=Document')
+    >>> browser.contents
+    '..."id": "document"...'
+
+jsonimagesearch
+---------------
+
+The images have a similar search method. Let's find our image.
+
+    >>> browser.open('http://nohost/plone/@@tinymce-jsonimagesearch?searchtext=Image')
+    >>> browser.contents
+    '..."id": "image"...'
+
+jsondetails
+-----------
+
+When we call the json details view on a document we will get the details of
+the specific item.
+
+    >>> browser.open('http://nohost/plone/document/@@tinymce-jsondetails')
+    >>> browser.contents
+    '...document...'
+
+save
+----
+
+Let's call the save method to store some content in the document we created.
+
+    >>> browser.open('http://nohost/plone/document/@@tinymce-save?text=test&fieldname=text')
+    >>> portal[document].getText()
+    'test'
+
+upload
+------
+
+TODO

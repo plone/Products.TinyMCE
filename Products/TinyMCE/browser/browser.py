@@ -21,7 +21,7 @@ class TinyMCEBrowserView(BrowserView):
         context = aq_inner(self.context)
         object = IUpload(self.context)
         return object.upload()
-    
+
     def save(self, text, fieldname):
         """Saves the specified richedit field"""
 
@@ -39,7 +39,7 @@ class TinyMCEBrowserView(BrowserView):
         object = IJSONFolderListing(self.context)
         results = object.getListing(linkable_portal_types, rooted, document_base_url, 'File') 
         return results
-    
+
     def jsonImageFolderListing(self, rooted, document_base_url):
         """Returns the folderlisting of image objects in JSON"""
 
@@ -63,7 +63,7 @@ class TinyMCEBrowserView(BrowserView):
         object = IJSONSearch(self.context)
         results = object.getSearchResults(linkable_portal_types, searchtext)
         return results
-    
+
     def jsonImageSearch(self, searchtext):
         """Returns the search results of image objects in JSON"""
 
@@ -78,7 +78,7 @@ class TinyMCEBrowserView(BrowserView):
 
     def jsonDetails(self):
         """Returns the details of an object in JSON"""
-    
+
         context = aq_inner(self.context)
         object = IJSONDetails(self.context)
         return object.getDetails()

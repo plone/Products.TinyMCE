@@ -1,0 +1,52 @@
+=============
+Setuphandlers
+=============
+
+Remove editor
+-------------
+
+First let's remove the editor
+
+    >>> from Products.TinyMCE.setuphandlers import remove_editor
+    >>> remove_editor(portal)
+
+Check if it is removed.
+
+    >>> from Products.CMFCore.interfaces import IPropertiesTool
+    >>> from zope.component import getUtility
+    >>> portal_props = getUtility(IPropertiesTool)
+    >>> site_props=getattr(portal_props,'site_properties', None)
+    >>> attrname='available_editors'
+    >>> editors=list(site_props.getProperty(attrname))
+    >>> 'TinyMCE' in editors
+    False
+
+Add editor
+----------
+
+And now add the editor.
+
+    >>> from Products.TinyMCE.setuphandlers import add_editor
+    >>> add_editor(portal)
+
+And check if it is added.
+
+    >>> editors=list(site_props.getProperty(attrname))
+    >>> 'TinyMCE' in editors
+    True
+
+
+Unregister utility
+------------------
+
+Unregister the utility.
+
+    >>> from Products.TinyMCE.setuphandlers import unregisterUtility
+    >>> unregisterUtility(portal)
+
+And check if the utility is removed.
+
+    >>> from Products.TinyMCE.interfaces.utility import ITinyMCE
+    >>> from zope.component import queryUtility
+    >>> queryUtility(ITinyMCE, default='Not found')
+    'Not found'
