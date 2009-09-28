@@ -10,8 +10,6 @@
   <include package=".adapters" />
   <include file="profiles.zcml" />
   
-  <include package="z3c.json" />
-
   <adapter
       factory=".exportimport.TinyMCESettingsXMLAdapter"
       provides="Products.GenericSetup.interfaces.IBody"
