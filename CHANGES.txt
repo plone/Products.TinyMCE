@@ -5,6 +5,9 @@ HISTORY
 1.1rc5 (unreleased)
 -------------------
 
+- Removed z3c.json dependancy, changed to simplejson or built-in json
+  [kingel]
+
 - Register import/export handlers as zcml statements
   [kingel]
 

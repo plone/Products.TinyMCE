@@ -1,7 +1,10 @@
 from zope.interface import implements
 from zope.component import adapts
 from zope.component import getUtility
-from z3c.json import interfaces
+try:
+	import json
+except:
+	import simplejson as json
 
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.adapters.interfaces.JSONSearch import IJSONSearch
@@ -49,5 +52,4 @@ class JSONSearch(object):
         results['upload_allowed'] = False
         
         # return results in JSON format
-        jsonWriter = getUtility(interfaces.IJSONWriter)
-        return jsonWriter.write(results)
+        return json.dumps(results)

@@ -3,6 +3,11 @@ import os
 
 version = '1.1rc5'
 
+if sys.version_info[0] == 2 and sys.version_info[1] < 6:
+    requires = ['simplejson']
+else:
+    requires = []
+
 setup(name='Products.TinyMCE',
       version=version,
       description="Adds support for TinyMCE, a platform independent web based Javascript HTML WYSIWYG editor, to Plone.",
@@ -28,9 +33,8 @@ setup(name='Products.TinyMCE',
       install_requires=[
           'setuptools',
           'elementtree',
-          'z3c.json',
           # -*- Extra requirements: -*-
-      ],
+      ] + requires,
       entry_points="""
       # -*- Entry points: -*-
       """,
