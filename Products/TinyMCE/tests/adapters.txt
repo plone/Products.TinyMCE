@@ -22,7 +22,7 @@ The basic details should return the following.
   >>> from Products.TinyMCE.adapters.interfaces.JSONDetails import IJSONDetails
   >>> object = IJSONDetails(portal[document])
   >>> object.getDetails()
-  u'{"thumb":"","description":"","anchors":[],"title":"document"}'
+  '{"thumb": "", "description": "", "anchors": [], "title": "document"}'
 
 Let's set some more details like description and body text.
 
@@ -33,7 +33,7 @@ Let's set some more details like description and body text.
 The details will now contain a bit more info.
 
   >>> object.getDetails()
-  u'{"thumb":"","description":"Test","anchors":["anchor"],"title":"document"}'
+  '{"thumb": "", "description": "Test", "anchors": ["anchor"], "title": "document"}'
 
 We can also get the details of an image object.
 
@@ -45,7 +45,7 @@ The details will now also include the thumbnail url and the imagescales.
 
   >>> object = IJSONDetails(portal[image])
   >>> object.getDetails()
-  u'{"scales":..."thumb":"http://nohost/plone/image/image_thumb"...}'
+  '{"scales":..."thumb": "http://nohost/plone/image/image_thumb"...}'
 
 JSONFolderListing
 -----------------
@@ -66,7 +66,7 @@ of a folder. Let's see what items our current siteroot has.
   ...                   document_base_url='http://nohost/plone',\
   ...                   upload_type='File',\
   ...                  )
-  u'{"parent_url":"","path":[...],..."items":[...]}'
+  '{"parent_url": "", "path": [...],..."items": [...]}'
 
 Let's create some more content to get breadcrumbs.
 
@@ -82,7 +82,7 @@ it's parent.
   ...                   rooted='False',\
   ...                   document_base_url='http://nohost/plone/folder',\
   ...                  )
-  u'{"parent_url":"http://nohost/plone"...}'
+  '{"parent_url": "http://nohost/plone"...}'
 
 We can also select rooted so we don't get all the breadcrumbs.
 
@@ -90,7 +90,7 @@ We can also select rooted so we don't get all the breadcrumbs.
   ...                   rooted='True',\
   ...                   document_base_url='http://nohost/plone/folder',\
   ...                  )
-  u'{..."path":[{"url":"http://nohost/plone/folder"...}'
+  '{..."path": [{"url": "http://nohost/plone/folder"...}'
 
 JSONSearch
 ----------
@@ -105,7 +105,7 @@ if we can find some items containing the searchterm 'Events'
   >>> object.getSearchResults(filter_portal_types=linkable_portal_types,\
   ...                         searchtext='Events',\
   ...                        )
-  u'{..."title":"Events","url":"http://nohost/plone/events"...}'
+  '{..."title": "Events", "url": "http://nohost/plone/events"...}'
 
 Save
 ----
