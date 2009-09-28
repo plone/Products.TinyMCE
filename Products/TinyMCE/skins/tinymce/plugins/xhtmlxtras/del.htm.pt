@@ -9,8 +9,10 @@
 	<script type="text/javascript" src="js/element_common.js"></script>
 	<script type="text/javascript" src="js/del.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/popup.css" />
+    <link rel="stylesheet" type="text/css" href="css/del.css">
+
 </head>
-<body id="xhtmlxtrasins" style="display: none">
+<body id="xhtmlxtrasins">
 <form onsubmit="insertDel();return false;" action="#">
 	<div class="tabs">
 		<ul>
@@ -28,8 +30,8 @@
 						<td class="label"><label id="datetimelabel" for="datetime" i18n:translate="xhtmlxtras_dlg_attribute_label_datetime"></label>:</td>
 						<td>
 							<table border="0" cellspacing="0" cellpadding="0">
-								<tr> 
-									<td><input id="datetime" name="datetime" type="text" value="" maxlength="19" class="field mceFocus" /></td> 
+								<tr>
+									<td><input id="datetime" name="datetime" type="text" value="" maxlength="19" class="field mceFocus" /></td>
 									<td><a href="javascript:insertDateTime('datetime');" onmousedown="return false;" class="browse"><span class="datetime" i18n:attributes="title xhtmlxtras_dlg_insert_date"></span></a></td>
 								</tr>
 							</table>
@@ -37,7 +39,7 @@
 					</tr>
 					<tr>
 						<td class="label"><label id="citelabel" for="cite" i18n:translate="xhtmlxtras_dlg_attribute_label_cite"></label>:</td>
-						<td><input id="cite" name="cite" type="text" value="" class="field" /></td> 
+						<td><input id="cite" name="cite" type="text" value="" class="field" /></td>
 					</tr>
 				</table>
 			</fieldset>
@@ -45,40 +47,40 @@
 				<legend i18n:translate="xhtmlxtras_dlg_fieldset_attrib_tab"></legend>
 				<table border="0" cellpadding="0" cellspacing="4">
 					<tr>
-						<td class="label"><label id="titlelabel" for="title" i18n:translate="xhtmlxtras_dlg_attribute_label_title"></label>:</td> 
-						<td><input id="title" name="title" type="text" value="" class="field" /></td> 
+						<td class="label"><label id="titlelabel" for="title" i18n:translate="xhtmlxtras_dlg_attribute_label_title"></label>:</td>
+						<td><input id="title" name="title" type="text" value="" class="field" /></td>
 					</tr>
 					<tr>
-						<td class="label"><label id="idlabel" for="id" i18n:translate="xhtmlxtras_dlg_attribute_label_id"></label>:</td> 
-						<td><input id="id" name="id" type="text" value="" class="field" /></td> 
+						<td class="label"><label id="idlabel" for="id" i18n:translate="xhtmlxtras_dlg_attribute_label_id"></label>:</td>
+						<td><input id="id" name="id" type="text" value="" class="field" /></td>
 					</tr>
 					<tr>
-						<td class="label"><label id="classlabel" for="class" i18n:translate="xhtmlxtras_dlg_attribute_label_class"></label>:</td> 
+						<td class="label"><label id="classlabel" for="class" i18n:translate="xhtmlxtras_dlg_attribute_label_class"></label>:</td>
 						<td>
 							<select id="class" name="class" class="field mceEditableSelect">
-								<option value="" i18n:translate="common_not_set"></option> 
+								<option value="" i18n:translate="common_not_set"></option>
 							</select>
 						</td>
 					</tr>
 					<tr>
-						<td class="label"><label id="stylelabel" for="class" i18n:translate="xhtmlxtras_dlg_attribute_label_style"></label>:</td> 
-						<td><input id="style" name="style" type="text" value="" class="field" /></td> 
+						<td class="label"><label id="stylelabel" for="class" i18n:translate="xhtmlxtras_dlg_attribute_label_style"></label>:</td>
+						<td><input id="style" name="style" type="text" value="" class="field" /></td>
 					</tr>
 					<tr>
-						<td class="label"><label id="dirlabel" for="dir" i18n:translate="xhtmlxtras_dlg_attribute_label_langdir"></label>:</td> 
+						<td class="label"><label id="dirlabel" for="dir" i18n:translate="xhtmlxtras_dlg_attribute_label_langdir"></label>:</td>
 						<td>
-							<select id="dir" name="dir" class="field"> 
-								<option value="" i18n:translate="common_not_set"></option> 
-								<option value="ltr" i18n:translate="xhtmlxtras_dlg_attribute_option_ltr"></option> 
-								<option value="rtl" i18n:translate="xhtmlxtras_dlg_attribute_option_rtl"></option> 
+							<select id="dir" name="dir" class="field">
+								<option value="" i18n:translate="common_not_set"></option>
+								<option value="ltr" i18n:translate="xhtmlxtras_dlg_attribute_option_ltr"></option>
+								<option value="rtl" i18n:translate="xhtmlxtras_dlg_attribute_option_rtl"></option>
 							</select>
-						</td> 
+						</td>
 					</tr>
 					<tr>
-						<td class="label"><label id="langlabel" for="lang" i18n:translate="xhtmlxtras_dlg_attribute_label_langcode"></label>:</td> 
+						<td class="label"><label id="langlabel" for="lang" i18n:translate="xhtmlxtras_dlg_attribute_label_langcode"></label>:</td>
 						<td>
 							<input id="lang" name="lang" type="text" value="" class="field" />
-						</td> 
+						</td>
 					</tr>
 				</table>
 			</fieldset>
@@ -89,76 +91,76 @@
 
 				<table border="0" cellpadding="0" cellspacing="4">
 					<tr>
-						<td class="label"><label for="onfocus">onfocus</label>:</td> 
-						<td><input id="onfocus" name="onfocus" type="text" value="" class="field" /></td> 
+						<td class="label"><label for="onfocus">onfocus</label>:</td>
+						<td><input id="onfocus" name="onfocus" type="text" value="" class="field" /></td>
 					</tr>
 
 					<tr>
-						<td class="label"><label for="onblur">onblur</label>:</td> 
-						<td><input id="onblur" name="onblur" type="text" value="" class="field" /></td> 
+						<td class="label"><label for="onblur">onblur</label>:</td>
+						<td><input id="onblur" name="onblur" type="text" value="" class="field" /></td>
 					</tr>
 
 					<tr>
-						<td class="label"><label for="onclick">onclick</label>:</td> 
-						<td><input id="onclick" name="onclick" type="text" value="" class="field" /></td> 
+						<td class="label"><label for="onclick">onclick</label>:</td>
+						<td><input id="onclick" name="onclick" type="text" value="" class="field" /></td>
 					</tr>
 
 					<tr>
-						<td class="label"><label for="ondblclick">ondblclick</label>:</td> 
-						<td><input id="ondblclick" name="ondblclick" type="text" value="" class="field" /></td> 
+						<td class="label"><label for="ondblclick">ondblclick</label>:</td>
+						<td><input id="ondblclick" name="ondblclick" type="text" value="" class="field" /></td>
 					</tr>
 
 					<tr>
-						<td class="label"><label for="onmousedown">onmousedown</label>:</td> 
-						<td><input id="onmousedown" name="onmousedown" type="text" value="" class="field" /></td> 
+						<td class="label"><label for="onmousedown">onmousedown</label>:</td>
+						<td><input id="onmousedown" name="onmousedown" type="text" value="" class="field" /></td>
 					</tr>
 
 					<tr>
-						<td class="label"><label for="onmouseup">onmouseup</label>:</td> 
-						<td><input id="onmouseup" name="onmouseup" type="text" value="" class="field" /></td> 
+						<td class="label"><label for="onmouseup">onmouseup</label>:</td>
+						<td><input id="onmouseup" name="onmouseup" type="text" value="" class="field" /></td>
 					</tr>
 
 					<tr>
-						<td class="label"><label for="onmouseover">onmouseover</label>:</td> 
-						<td><input id="onmouseover" name="onmouseover" type="text" value="" class="field" /></td> 
+						<td class="label"><label for="onmouseover">onmouseover</label>:</td>
+						<td><input id="onmouseover" name="onmouseover" type="text" value="" class="field" /></td>
 					</tr>
 
 					<tr>
-						<td class="label"><label for="onmousemove">onmousemove</label>:</td> 
-						<td><input id="onmousemove" name="onmousemove" type="text" value="" class="field" /></td> 
+						<td class="label"><label for="onmousemove">onmousemove</label>:</td>
+						<td><input id="onmousemove" name="onmousemove" type="text" value="" class="field" /></td>
 					</tr>
 
 					<tr>
-						<td class="label"><label for="onmouseout">onmouseout</label>:</td> 
-						<td><input id="onmouseout" name="onmouseout" type="text" value="" class="field" /></td> 
+						<td class="label"><label for="onmouseout">onmouseout</label>:</td>
+						<td><input id="onmouseout" name="onmouseout" type="text" value="" class="field" /></td>
 					</tr>
 
 					<tr>
-						<td class="label"><label for="onkeypress">onkeypress</label>:</td> 
-						<td><input id="onkeypress" name="onkeypress" type="text" value="" class="field" /></td> 
+						<td class="label"><label for="onkeypress">onkeypress</label>:</td>
+						<td><input id="onkeypress" name="onkeypress" type="text" value="" class="field" /></td>
 					</tr>
 
 					<tr>
-						<td class="label"><label for="onkeydown">onkeydown</label>:</td> 
-						<td><input id="onkeydown" name="onkeydown" type="text" value="" class="field" /></td> 
+						<td class="label"><label for="onkeydown">onkeydown</label>:</td>
+						<td><input id="onkeydown" name="onkeydown" type="text" value="" class="field" /></td>
 					</tr>
 
 					<tr>
-						<td class="label"><label for="onkeyup">onkeyup</label>:</td> 
-						<td><input id="onkeyup" name="onkeyup" type="text" value="" class="field" /></td> 
+						<td class="label"><label for="onkeyup">onkeyup</label>:</td>
+						<td><input id="onkeyup" name="onkeyup" type="text" value="" class="field" /></td>
 					</tr>
 				</table>
 			</fieldset>
 		</div>
 	</div>
 	<div class="mceActionPanel">
-		<div style="float: left">
+		<div class="left">
 			<input type="submit" id="insert" name="insert" tal:attributes="value common_update" />
 		</div>
-		<div style="float: left">
+		<div class="left">
 			<input type="button" id="remove" name="remove" class="button" tal:attributes="value xhtmlxtras_dlg_remove" onclick="removeDel();" style="display: none;" />
 		</div>
-		<div style="float: right">
+		<div class="right">
 			<input type="button" id="cancel" name="cancel" tal:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
 		</div>
 	</div>

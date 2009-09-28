@@ -1,16 +1,18 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" i18n:domain="tinymce">
 <head>
 	<title i18n:translate="advanced_dlg_about_title"></title>
 	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
 	<script type="text/javascript" src="../../utils/mctabs.js"></script>
 	<script type="text/javascript" src="js/about.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+
 </head>
-<body id="about" style="display: none">
+<body id="about">
 		<div class="tabs">
 			<ul>
 				<li id="general_tab" class="current"><span><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;" i18n:translate="advanced_dlg_about_general"></a></span></li>
-				<li id="help_tab" style="display:none"><span><a href="javascript:mcTabs.displayTab('help_tab','help_panel');" onmousedown="return false;" i18n:translate="advanced_dlg_about_help"></a></span></li>
+				<li id="help_tab"><span><a href="javascript:mcTabs.displayTab('help_tab','help_panel');" onmousedown="return false;" i18n:translate="advanced_dlg_about_help"></a></span></li>
 				<li id="plugins_tab"><span><a href="javascript:mcTabs.displayTab('plugins_tab','plugins_panel');" onmousedown="return false;" i18n:translate="advanced_dlg_about_plugins"></a></span></li>
 			</ul>
 		</div>
@@ -42,13 +44,13 @@
 				</div>
 			</div>
 
-			<div id="help_panel" class="panel noscroll" style="overflow: visible;">
+			<div id="help_panel" class="panel noscroll">
 				<div id="iframecontainer"></div>
 			</div>
 		</div>
 
 		<div class="mceActionPanel">
-			<div style="float: right">
+			<div class="right">
 				<input type="button" id="cancel" name="cancel" i18n:attributes="value common_close" onclick="tinyMCEPopup.close();" />
 			</div>
 		</div>

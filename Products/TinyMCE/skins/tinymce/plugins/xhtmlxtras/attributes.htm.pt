@@ -9,7 +9,7 @@
 	<script type="text/javascript" src="js/attributes.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/attributes.css" />
 </head>
-<body style="display: none">
+<body>
 	<div class="dialog-wrapper">
 		<form onsubmit="insertAction();return false;" action="#">
 			<fieldset>
@@ -17,18 +17,18 @@
 				<div class="field">
 					<label for="dir" i18n:translate="xhtmlxtras_dlg_attribute_label_langdir"></label>
 					<div class="widget">
-						<select id="dir" name="dir"> 
-							<option value="" i18n:translate="common_not_set"></option> 
-							<option value="ltr" i18n:translate="xhtmlxtras_dlg_option_ltr"></option> 
-							<option value="rtl" i18n:translate="xhtmlxtras_dlg_option_rtl"></option> 
+						<select id="dir" name="dir">
+							<option value="" i18n:translate="common_not_set"></option>
+							<option value="ltr" i18n:translate="xhtmlxtras_dlg_option_ltr"></option>
+							<option value="rtl" i18n:translate="xhtmlxtras_dlg_option_rtl"></option>
 						</select>
-					</div> 
+					</div>
 				</div>
 				<div class="field">
 					<label for="lang" i18n:translate="xhtmlxtras_dlg_attribute_label_langcode"></label>
 					<div class="widget">
 						<input id="lang" name="lang" type="text" value="" size="30"/>
-					</div> 
+					</div>
 				</div>
 			</fieldset>
 

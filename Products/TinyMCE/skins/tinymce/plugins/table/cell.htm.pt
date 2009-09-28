@@ -7,8 +7,10 @@
 	<script type="text/javascript" src="../../utils/form_utils.js"></script>
 	<script type="text/javascript" src="../../utils/editable_selects.js"></script>
 	<script type="text/javascript" src="js/cell.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/cell.css">
+
 </head>
-<body id="tablecell" style="display: none">
+<body id="tablecell">
 	<div class="dialog-wrapper">
 		<form onsubmit="updateAction();return false;" action="#">
 			<ul class="formTabs"><li id="general_tab" class="formTab firstFormTab"><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;" class="selected"><span i18n:translate="table_dlg_general_tab"></span></a></li><li id="advanced_tab" class="formTab lastFormTab"><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;"><span i18n:translate="table_dlg_advanced_tab"></span></a></li></ul>
@@ -40,7 +42,7 @@
 				</div>
 			</fieldset>
 
-			<fieldset id="advanced_panel" class="formPanel" style="display: none;">
+			<fieldset id="advanced_panel" class="formPanel">
 				<div class="field">
 					<label for="action" i18n:translate="table_dlg_cell_title"></label>
 					<div class="widget">
@@ -53,7 +55,7 @@
 				</div>
 			</fieldset>
 
-			<div style="display: none;">
+			<div class="hiddenset">
 				<select id="scope" name="scope"><option value="" i18n:translate="common_not_set"></option></select>
 				<input id="id" name="id" type="text" value="" />
 				<input type="text" id="style" name="style" value="" />
@@ -68,7 +70,7 @@
 			</div>
 
 			<div class="visualClear"><!-- --></div>
-	
+
 			<div class="mceActionPanel formControls">
 				<span class="actionButtons">
 					<input type="submit" id="insert" class="context" name="insert" i18n:attributes="value common_update" />

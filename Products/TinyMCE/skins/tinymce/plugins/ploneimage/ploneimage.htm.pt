@@ -6,16 +6,18 @@
   <script type="text/javascript" src="../../utils/mctabs.js"></script>
   <script type="text/javascript" src="../../utils/form_utils.js"></script>
   <script type="text/javascript" src="js/ploneimage.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/ploneimage.css">
+
 </head>
 <body id="ploneimage" style="display: none"
   tal:define="portal_url context/portal_url; portal_tinymce context/portal_tinymce;">
   <div class="dialog-wrapper">
     <fieldset id="general_panel">
       <legend i18n:translate="ploneimage_dlg_dialog_title"></legend>
-      <div id="internalpath" class="formHelp" style="margin: 0 0 10px 10px; height: 2em"></div>
+      <div id="internalpath" class="formHelp"></div>
       <form>
 
-        <fieldset class="column" style="width: 120px;">
+        <fieldset class="column columnlibraries">
           <legend i18n:domain="plone.tinymce" i18n:translate="">Libraries</legend>
                 <ul class="configlets">
                     <li id="home">
@@ -38,23 +40,23 @@
                   <label for="searchtext" i18n:domain="plone.tinymce" i18n:translate="">Search</label>
                   <div class="widget">
                     <input type="text" name="searchtext" id="searchtext" value="" onkeyup="ImageDialog.checkSearch(event);" size="12"/>
-                    <input type="button" style="margin-top: 4px;" value="Search" i18n:domain="plone.tinymce" i18n:attributes="value" class="searchButton" onclick="ImageDialog.getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonlinkablesearch');"/>
+                    <input type="button" value="Search" i18n:domain="plone.tinymce" i18n:attributes="value" class="searchButton" onclick="ImageDialog.getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonlinkablesearch');"/>
                   </div>
                 </div>
         </fieldset>
 
-        <fieldset id="internal_panel" class="subPanel column" style="width: 296px;">
+        <fieldset id="internal_panel" class="subPanel column">
           <legend i18n:translate="ploneimage_dlg_image_list"></legend>
           <div class="field">
             <label for="internallink" i18n:translate="ploneimage_dlg_image_list"></label>
-            <div style="height: 22px"><a id="uponelevel" class="link-parent" style="line-height: 1em;" href="javascript:void(0)" i18n:domain="plone.tinymce" i18n:translate="">Up one level</a></div>
-            <div id="internallinkcontainer" class="widget radioscrolllist input-border" style="height: 240px;">
+            <div class="uponelevel"><a id="uponelevel" class="link-parent" href="javascript:void(0)" i18n:domain="plone.tinymce" i18n:translate="">Up one level</a></div>
+            <div id="internallinkcontainer" class="widget radioscrolllist input-border">
             </div>
-            <input style="margin-top:4px;" type="button" id="upload" class="context" name="upload" value="Upload file" i18n:domain="plone.tinymce" i18n:attributes="value" onclick="ImageDialog.displayPanel('upload_panel');" />
+            <input type="button" id="upload" class="context" name="upload" value="Upload file" i18n:domain="plone.tinymce" i18n:attributes="value" onclick="ImageDialog.displayPanel('upload_panel');" />
           </div>
         </fieldset>
 
-        <fieldset id="internal_details_panel" class="subPanel column" style="width: 190px; display: none;">
+        <fieldset id="internal_details_panel" class="subPanel column">
           <legend i18n:domain="plone.tinymce" i18n:translate="">Details</legend>
           <div class="field">
             <label i18n:translate="ploneimage_dlg_preview"></label>
@@ -70,11 +72,11 @@
               <input id="alt" name="alt" type="text" value="" size="20" />
             </div>
           </div>
-                
+
           <div class="field">
             <label id="alignlabel" for="align" i18n:translate="ploneimage_dlg_align"></label>
             <div class="widget">
-              <select id="classes" name="classes"> 
+              <select id="classes" name="classes">
                 <option value="image-inline" i18n:domain="plone.tinymce" i18n:translate="">Inline</option>
                 <option value="image-left" i18n:translate="ploneimage_dlg_align_left"></option>
                 <option value="image-right" i18n:translate="ploneimage_dlg_align_right"></option>
@@ -84,7 +86,7 @@
 
           <div class="field">
             <div class="widget">
-              <input type="checkbox" name="caption" id="caption"/> <label for="caption" i18n:domain="plone.tinymce" i18n:translate="">Caption</label> 
+              <input type="checkbox" name="caption" id="caption"/> <label for="caption" i18n:domain="plone.tinymce" i18n:translate="">Caption</label>
             </div>
           </div>
 
@@ -99,14 +101,14 @@
           </div>
         </fieldset>
       </form>
-  
-      <fieldset id="upload_panel" class="subPanel column" style="width: 190px; display: none;">
+
+      <fieldset id="upload_panel" class="subPanel column">
         <legend i18n:domain="plone.tinymce" i18n:translate="">Upload file</legend>
         <form name="upload_form" id="upload_form" method="post" target="upload_iframe" enctype="multipart/form-data">
           <div class="field">
             <label for="uploadfile" i18n:domain="plone.tinymce" i18n:translate="">File</label>
             <div class="widget">
-              <input type="file" name="uploadfile" id="uploadfile" style="width: 100%" size="15" />
+              <input type="file" name="uploadfile" id="uploadfile" size="15" />
             </div>
           </div>
 
@@ -126,13 +128,13 @@
 
           <input type="button" id="uploadbutton" class="context" name="uploadbutton" value="Upload" i18n:domain="plone.tinymce" i18n:attributes="value" onclick="document.forms[1].submit();"/>
         </form>
-        <iframe style="display: none;" width="0" scrolling="off" height="0" frameborder="0" id="upload_iframe" name="upload_iframe" src="javascript:"></iframe>
+        <iframe width="0" scrolling="off" height="0" frameborder="0" id="upload_iframe" name="upload_iframe" src="javascript:"></iframe>
       </fieldset>
     </fieldset>
 
     <div class="visualClear"><!-- --></div>
-    
-      <form onsubmit="ImageDialog.insert();return false;" action="#"> 
+
+      <form onsubmit="ImageDialog.insert();return false;" action="#">
       <div class="mceActionPanel formControls">
         <span class="actionButtons">
           <input type="submit" id="insert" class="context" name="insert" i18n:attributes="value common_insert" />
@@ -142,4 +144,4 @@
     </form>
   </div>
 </body>
-</html> 
+</html>

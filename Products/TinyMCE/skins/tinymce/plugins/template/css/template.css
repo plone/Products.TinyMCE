@@ -21,3 +21,13 @@
 .mceActionPanel {
 	padding-top: 5px;
 }
+
+.mceActionPanel .left {
+    float: left;
+}
+.mceActionPanel .right {
+    float: right;
+}
+.mceActionPanel .clearboth {
+	clear: both;
+}

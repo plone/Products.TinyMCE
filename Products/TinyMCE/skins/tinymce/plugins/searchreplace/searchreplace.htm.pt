@@ -6,8 +6,10 @@
 	<script type="text/javascript" src="../../utils/mctabs.js"></script>
 	<script type="text/javascript" src="../../utils/form_utils.js"></script>
 	<script type="text/javascript" src="js/searchreplace.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/searchreplace.css">
+
 </head>
-<body style="display:none;">
+<body>
 	<div class="dialog-wrapper">
 		<form onsubmit="SearchReplaceDialog.searchNext('none');return false;" action="#">
 			<ul class="formTabs"><li id="search_tab" class="formTab firstFormTab"><a href="javascript:SearchReplaceDialog.switchMode('search');" onmousedown="return false;" class="selected"><span i18n:translate="searchreplace_search_desc"></span></a></li><li id="replace_tab" class="formTab lastFormTab"><a href="javascript:SearchReplaceDialog.switchMode('replace');" onmousedown="return false;"><span i18n:translate="searchreplace_dlg_replace"></span></a></li></ul>
@@ -26,13 +28,13 @@
 						<input type="radio" id="search_panel_backwardsu" name="search_panel_backwards" class="noborder blurrable"/>
 						<label for="search_panel_backwardsu" i18n:translate="searchreplace_dlg_up"></label>
 						<br/>
-				
+
 						<input type="radio" id="search_panel_backwardsd" name="search_panel_backwards" checked="checked" class="noborder blurrable"/>
 						<label for="search_panel_backwardsd" i18n:translate="searchreplace_dlg_down"></label>
 						<br/>
 					</div>
 				</div>
-		
+
 				<div class="field">
 					<div class="widget">
 						<input id="search_panel_casesensitivebox" name="search_panel_casesensitivebox" type="checkbox" />
@@ -41,7 +43,7 @@
 				</div>
 			</fieldset>
 
-			<fieldset id="replace_panel" class="formPanel" style="display: none;">
+			<fieldset id="replace_panel" class="formPanel">
 				<div class="field">
 					<label for="replace_panel_searchstring" i18n:translate="searchreplace_dlg_findwhat"></label>
 					<div class="widget">
@@ -55,20 +57,20 @@
 						<input id="replace_panel_replacestring" name="replace_panel_replacestring" type="text" value="" size="30"/>
 					</div>
 				</div>
-	
+
 				<div class="field">
 					<label i18n:translate="searchreplace_dlg_direction"></label>
 					<div class="widget">
 						<input type="radio" id="replace_panel_backwardsu" name="replace_panel_backwards" class="noborder blurrable"/>
 						<label for="replace_panel_backwardsu" i18n:translate="searchreplace_dlg_up"></label>
 						<br/>
-				
+
 						<input type="radio" id="replace_panel_backwardsd" name="replace_panel_backwards" checked="checked" class="noborder blurrable"/>
 						<label for="replace_panel_backwardsd" i18n:translate="searchreplace_dlg_down"></label>
 						<br/>
 					</div>
 				</div>
-		
+
 				<div class="field">
 					<div class="widget">
 						<input id="replace_panel_casesensitivebox" name="replace_panel_casesensitivebox" type="checkbox" />

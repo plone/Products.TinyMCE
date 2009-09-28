@@ -5,8 +5,10 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
 	<script type="text/javascript" src="js/pastetext.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/pastetext.css">
+
 </head>
-<body style="display:none; overflow:hidden;">
+<body>
 	<div class="dialog-wrapper">
 		<form name="source" onsubmit="return PasteTextDialog.insert();" action="#">
 			<fieldset>
@@ -15,7 +17,7 @@
 					<label for="htmlSource" i18n:translate="paste_paste_text_desc"></label>
 					<div class="formHelp" i18n:translate="paste_dlg_text_title"></div>
 					<div class="widget">
-						<textarea  id="content" name="content" rows="15" cols="100" style="width: 398px; height: 230px;" wrap="soft" class="mceFocus"></textarea>
+						<textarea  id="content" name="content" rows="15" cols="100" wrap="soft" class="mceFocus"></textarea>
 					</div>
 				</div>
 
@@ -37,5 +39,5 @@
 			</div>
 		</form>
 	</div>
-</body> 
+</body>
 </html>
