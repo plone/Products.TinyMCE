@@ -23,7 +23,7 @@ ptc.setupPloneSite(products=['Products.TinyMCE'])
 
 doc_tests = (
     'adapters.txt',
-    'imagescales.txt',
+    'utility.txt',
     'transforms.txt',
     )
 
@@ -35,6 +35,3 @@ def test_suite():
             test_class=ptc.FunctionalTestCase)
             for f in doc_tests],
         )
-
-if __name__ == '__main__':
-    unittest.main(defaultTest='test_suite')
