@@ -6,7 +6,7 @@
 	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
 	<script type="text/javascript" src="js/pasteword.js"></script>
 </head>
-<body style="display:none;">
+<body>
 	<div class="dialog-wrapper">
 		<form name="source" onsubmit="return PasteWordDialog.insert();" action="#">
 			<fieldset>

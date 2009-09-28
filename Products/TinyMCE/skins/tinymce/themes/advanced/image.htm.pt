@@ -6,26 +6,28 @@
   <script type="text/javascript" src="../../utils/mctabs.js"></script>
   <script type="text/javascript" src="../../utils/form_utils.js"></script>
   <script type="text/javascript" src="js/image.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/image.css">
+
 </head>
-<body id="image" style="display: none">
+<body id="image">
   <div class="dialog-wrapper">
     <form onsubmit="ImageDialog.update();return false;" action="#">
       <fieldset>
         <legend i18n:translate="advanced_dlg_image_title"></legend>
         <div class="field">
           <label for="src" i18n:translate="advanced_dlg_image_src"></label>
-          <div class="widget"><input id="src" name="src" type="text" class="mceFocus" value="" style="width: 200px" onchange="ImageDialog.getImageData();" /></div>
+          <div class="widget"><input id="src" name="src" type="text" class="mceFocus" value="" onchange="ImageDialog.getImageData();" /></div>
           <div id="srcbrowsercontainer">&nbsp;</div>
         </div>
-        <div class="field" style="display: none;">
+        <div class="field fieldnondisplay">
           <label for="image_list" i18n:translate="advanced_dlg_image_list"></label>
           <div class="widget"><select id="image_list" name="image_list" onchange="document.getElementById('src').value=this.options[this.selectedIndex].value;document.getElementById('alt').value=this.options[this.selectedIndex].text;"></select></div>
         </div>
         <div class="field">
           <label for="alt" i18n:translate="advanced_dlg_image_alt"></label>
-          <div class="widget"><input id="alt" name="alt" type="text" value="" style="width: 200px" /></div>
+          <div class="widget"><input id="alt" name="alt" type="text" value="" /></div>
         </div>
-        <div class="field" style="display: none;">
+        <div class="field fieldnondisplay">
           <label for="align" i18n:translate="advanced_dlg_image_align"></label>
           <div class="widget">
             <select id="align" name="align" onchange="ImageDialog.updateStyle();">
@@ -49,15 +51,15 @@
             <input id="height" name="height" type="text" value="" size="3" maxlength="5" />
           </div>
         </div>
-        <div class="field" style="display: none;">
+        <div class="field fieldnondisplay">
           <label for="border" i18n:translate="advanced_dlg_image_border"></label>
           <div class="widget"><input id="border" name="border" type="text" value="" size="3" maxlength="3" onchange="ImageDialog.updateStyle();" /></div>
         </div>
-        <div class="field" style="display: none;">
+        <div class="field fieldnondisplay">
           <label for="vspace" i18n:translate="advanced_dlg_image_vspace"></label>
           <div class="widget"><input id="vspace" name="vspace" type="text" value="" size="3" maxlength="3" onchange="ImageDialog.updateStyle();" /></div>
         </div>
-        <div class="field" style="display: none;">
+        <div class="field fieldnondisplay">
           <label for="hspace" i18n:translate="advanced_dlg_image_hspace"></label>
           <div class="field"><input id="hspace" name="hspace" type="text" value="" size="3" maxlength="3" onchange="ImageDialog.updateStyle();" /></div>
         </div>

@@ -5,7 +5,7 @@
 	<script type="text/javascript" src="js/template.js"></script>
 	<link href="css/template.css" rel="stylesheet" type="text/css" />
 </head>
-<body onresize="TemplateDialog.resize();"> 
+<body onresize="TemplateDialog.resize();">
 	<form onsubmit="TemplateDialog.insert();return false;">
 		<div id="frmbody">
 			<div class="title" i18n:translate="template_dlg_desc"></div>
@@ -21,18 +21,18 @@
 				<iframe id="templatesrc" name="templatesrc" src="blank.htm" width="690" height="400" frameborder="0"></iframe>
 			</fieldset>
 		</div>
-		
+
 		<div class="mceActionPanel">
-			<div style="float: left">
+			<div class="left">
 				<input type="submit" id="insert" name="insert" i18n:attributes="value common_insert" />
 			</div>
 
-			<div style="float: right">
+			<div class="right">
 				<input type="button" id="cancel" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
 			</div>
 
-			<br style="clear:both" />
+			<br class="clearboth" />
 		</div>
 	</form>
-</body> 
-</html> 
+</body>
+</html>

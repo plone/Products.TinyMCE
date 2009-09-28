@@ -5,8 +5,10 @@
 	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
 	<script type="text/javascript" src="../../utils/mctabs.js"></script>
 	<script type="text/javascript" src="js/color_picker.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/color_picker.css">
+
 </head>
-<body id="colorpicker" style="display: none">
+<body id="colorpicker">
 	<div class="dialog-wrapper">
 		<form onsubmit="insertAction();return false" action="#">
 			<ul class="formTabs"><li id="picker_tab" class="formTab firstFormTab"><a href="javascript:mcTabs.displayTab('picker_tab','picker_panel');" onmousedown="return false;" class="selected"><span i18n:translate="advanced_dlg_colorpicker_picker_tab"></span></a></li><li id="rgb_tab" class="formTab"><a href="javascript:;" onclick="generateWebColors();mcTabs.displayTab('rgb_tab','rgb_panel');" onmousedown="return false;"><span i18n:translate="advanced_dlg_colorpicker_palette_tab"></span></a></li><li id="named_tab" class="formTab lastFormTab"><a  href="javascript:;" onclick="generateNamedColors();javascript:mcTabs.displayTab('named_tab','named_panel');" onmousedown="return false;"><span i18n:translate="advanced_dlg_colorpicker_named_tab"></span></a></li></ul>
@@ -15,16 +17,16 @@
 				<div class="field">
 					<label for="picker" i18n:translate="advanced_dlg_colorpicker_picker_title"></label>
 					<div class="widget" id="picker">
-						<img id="colors" class="input-border" style="margin-right: 1em; float: left" src="img/colorpicker.jpg" onclick="computeColor(event)" onmousedown="isMouseDown = true;return false;" onmouseup="isMouseDown = false;" onmousemove="if (isMouseDown && isMouseOver) computeColor(event); return false;" onmouseover="isMouseOver=true;" onmouseout="isMouseOver=false;" alt="" />
+						<img id="colors" class="input-border" src="img/colorpicker.jpg" onclick="computeColor(event)" onmousedown="isMouseDown = true;return false;" onmouseup="isMouseDown = false;" onmousemove="if (isMouseDown && isMouseOver) computeColor(event); return false;" onmouseover="isMouseOver=true;" onmouseout="isMouseOver=false;" alt="" />
 
-						<div id="light" class="input-border" style="float: left">
+						<div id="light" class="input-border">
 							<!-- Will be filled with divs -->
 						</div>
 					</div>
 				</div>
 			</fieldset>
 
-			<fieldset id="rgb_panel" class="formPanel" style="display: none">
+			<fieldset id="rgb_panel" class="formPanel">
 				<div class="field">
 					<label for="webcolors" i18n:translate="advanced_dlg_colorpicker_palette_title"></label>
 					<div class="widget" id="webcolors">
@@ -33,13 +35,13 @@
 				</div>
 			</fieldset>
 
-			<fieldset id="named_panel" class="formPanel" style="display: none">
+			<fieldset id="named_panel" class="formPanel" >
 				<div class="field">
 					<label for="namedcolors" i18n:translate="advanced_dlg_colorpicker_named_title"></label>
 					<div class="formHelp" id="colornamecontainer">
 						<span i18n:translate="advanced_dlg_colorpicker_name"></span> <span id="colorname"></span>
 					</div>
-					<div id="namedcolors" style="width: 240px">
+					<div id="namedcolors">
 						<!-- Gets filled with named colors-->
 					</div>
 				</div>
@@ -49,7 +51,7 @@
 				<label for="color" i18n:translate="advanced_dlg_colorpicker_color"></label>
 				<div class="widget">
 					<input id="color" type="text" size="8" maxlength="8" />
-					<input id="preview" type="text" style="background: transparent" size="8" maxlength="8" />
+					<input id="preview" type="text" size="8" maxlength="8" />
 					<!--div id="preview" style="float: left" class="input-border">test</div-->
 				</div>
 			</div>

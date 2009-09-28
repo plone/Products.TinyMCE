@@ -12,6 +12,18 @@
 .plonepopup .mcePlaceHolder {border:1px solid #000; background:#888; top:0; left:0; opacity:0.5; -ms-filter:'alpha(opacity=50)'; filter:alpha(opacity=50)}
 .plonepopup_modalBlocker {position:fixed; left:0; top:0; width:100%; height:100%; background:#FFF; opacity:0.6; -ms-filter:'alpha(opacity=60)'; filter:alpha(opacity=60); display:none}
 
+/* width and positions */
+.plonepopupblured { width:400px; height:100px; left:10px;  }
+.plonepopupfocused {width:400px; height:100px; left:420px; }
+.plonepopupstatusbar {width:400px; height:100px; left:10px; top:120px; }
+.plonepopupresizable { width:400px; height:100px; left:420px; top:120px;}
+.plonepopupmaximizable {width:400px; height:100px; left:10px; top:230px; }
+.plonepopupall {width:400px; height:100px; left:420px; top:230px;}
+.plonepopupmaximized {width:400px; height:100px; left:10px; top:340px;}
+.plonepopubluredmaximized {width:400px; height:100px; left:420px; top:340px; }
+.plonepopupalert {width:400px; height:130px; left:10px; top:450px;}
+.plonepopupconfirm {width:400px; height:130px; left:420px; top:450px; }
+
 /* Top */
 .plonepopup .mceTop, .plonepopup .mceTop div {top:0; width:100%; height:19px}
 .plonepopup .mceTop .mceLeft {width:3px; height: 18px; background-color: &dtml-contentViewBackgroundColor;; border-left: &dtml-borderStyle; &dtml-borderWidth; &dtml-contentViewBorderColor;; border-top: &dtml-borderStyle; &dtml-borderWidth; &dtml-contentViewBorderColor;}
@@ -88,6 +100,6 @@
 .plonepopup .mceAlert .mceIcon {display: none;}
 .plonepopup .mceConfirm .mceOk {left:80px; top:auto}
 .plonepopup .mceConfirm .mceCancel {left:12px; top:auto}
-.plonepopup .mceConfirm .mceIcon {display: none;} 
+.plonepopup .mceConfirm .mceIcon {display: none;}
 
 /* </dtml-with> */

@@ -4,6 +4,12 @@ HISTORY
 
 1.1rc5 (unreleased)
 -------------------
+- moved inline style from templates to css files
+  [maartenkling]
+
+- removed inline style  style="display:none;" from body tag from templates
+  [maartenkling]
+
 - Fixed bug where custom image classes wouldn't stick after editing an image.
   [robgietema]
 
@@ -107,7 +113,7 @@ HISTORY
 
 - Fixed selecting link after uploading a file when using link by uid.
   [robgietema]
-  
+
 - Fixed initialisation error in Safari.
   [robgietema]
 
@@ -176,7 +182,7 @@ HISTORY
 
 - Renamed advlink to plonelink, advimage to ploneimage and style to plonestyle.
   [robgietema]
-  
+
 - Rearranged image, link and table buttons.
   [robgietema]
 

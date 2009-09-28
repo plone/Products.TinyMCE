@@ -5,7 +5,7 @@
 	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
 	<script type="text/javascript" src="js/anchor.js"></script>
 </head>
-<body style="display: none">
+<body>
 	<div class="dialog-wrapper">
 		<form onsubmit="AnchorDialog.update();return false;" action="#">
 			<fieldset>
@@ -16,9 +16,9 @@
 					<div class="widget"><input id="anchorName" name="anchorName" type="text" class="mceFocus" value="" size="30"/></div>
 				</div>
 			</fieldset>
-		
+
 			<div class="visualClear"><!-- --></div>
-		
+
 			<div class="mceActionPanel formControls">
 				<span class="actionButtons">
 					<input type="submit" id="insert" class="context" name="insert" i18n:attributes="value common_update" />

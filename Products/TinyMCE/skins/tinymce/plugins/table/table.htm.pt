@@ -8,8 +8,10 @@
 	<script type="text/javascript" src="../../utils/validate.js"></script>
 	<script type="text/javascript" src="../../utils/editable_selects.js"></script>
 	<script type="text/javascript" src="js/table.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/table.css">
+
 </head>
-<body id="table" style="display: none">
+<body id="table" >
 	<div class="dialog-wrapper">
 		<form onsubmit="insertTable();return false;" action="#">
 			<ul class="formTabs"><li id="general_tab" class="formTab firstFormTab"><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;" class="selected"><span i18n:translate="table_dlg_general_tab"></span></a></li><li id="advanced_tab" class="formTab lastFormTab"><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;"><span i18n:translate="table_dlg_advanced_tab"></span></a></li></ul>
@@ -37,16 +39,16 @@
 						<input id="rows" name="rows" type="text" value="" size="3" maxlength="3" class="required number min1" />
 					</div>
 				</div>
-	
+
 				<div class="field">
-					<label for="summary" i18n:translate="table_dlg_summary"></label> 
+					<label for="summary" i18n:translate="table_dlg_summary"></label>
 					<div class="widget">
-						<input id="summary" name="summary" type="text" value="" size="30" /> 
+						<input id="summary" name="summary" type="text" value="" size="30" />
 					</div>
 				</div>
 			</fieldset>
 
-			<fieldset id="advanced_panel" class="formPanel" style="display: none;">
+			<fieldset id="advanced_panel" class="formPanel">
 				<div class="field">
 					<label id="widthlabel" for="width" i18n:translate="table_dlg_width"></label>
 					<div class="widget">
@@ -72,18 +74,18 @@
 						</select>
 					</div>
 				</div>
-			
+
 				<div class="field">
 					<div class="widget">
-						<input id="caption" name="caption" type="checkbox" /> <label for="caption" i18n:translate="table_dlg_caption"></label> 
+						<input id="caption" name="caption" type="checkbox" /> <label for="caption" i18n:translate="table_dlg_caption"></label>
 					</div>
 				</div>
-			</fieldset>	
+			</fieldset>
 
-			<div style="display: none;">
+			<div class="hiddenset">
 				<input type="text" id="cellpadding" name="cellpadding" value="" />
 				<input type="text" id="cellspacing" name="cellspacing" value="" />
-				<input type="text" id="id" name="id" value="" /> 
+				<input type="text" id="id" name="id" value="" />
 				<input type="text" id="style" name="style" value="" />
 				<input type="text" id="lang" name="lang" value="" />
 				<input type="text" id="backgroundimage" name="backgroundimage" value="" />

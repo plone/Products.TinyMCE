@@ -17,9 +17,11 @@
 }
 
 #height {
-	width: 50px;	
+	width: 50px;
 }
 
 .col2 {
 	padding-left: 20px;
 }
+
+.hiddenset, #advanced_panel { display: none; }

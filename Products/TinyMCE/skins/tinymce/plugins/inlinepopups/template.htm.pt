@@ -7,7 +7,7 @@
 <body>
 
 <div class="mceEditor">
-	<div class="plonepopup" style="width:400px; height:100px; left:10px;">
+	<div class="plonepopup plonepopupblured">
 		<div class="mceWrapper">
 			<div class="mceTop">
 				<div class="mceLeft"></div>
@@ -45,7 +45,7 @@
 		</div>
 	</div>
 
-	<div class="plonepopup" style="width:400px; height:100px; left:420px;">
+	<div class="plonepopup plonepopupfocused">
 		<div class="mceWrapper mceMovable mceFocus">
 			<div class="mceTop">
 				<div class="mceLeft"></div>
@@ -83,7 +83,7 @@
 		</div>
 	</div>
 
-	<div class="plonepopup" style="width:400px; height:100px; left:10px; top:120px;">
+	<div class="plonepopup plonepopupstatusbar">
 		<div class="mceWrapper mceMovable mceFocus mceStatusbar">
 			<div class="mceTop">
 				<div class="mceLeft"></div>
@@ -121,7 +121,7 @@
 		</div>
 	</div>
 
-	<div class="plonepopup" style="width:400px; height:100px; left:420px; top:120px;">
+	<div class="plonepopup plonepopupresizable">
 		<div class="mceWrapper mceMovable mceFocus mceStatusbar mceResizable">
 			<div class="mceTop">
 				<div class="mceLeft"></div>
@@ -159,7 +159,7 @@
 		</div>
 	</div>
 
-	<div class="plonepopup" style="width:400px; height:100px; left:10px; top:230px;">
+	<div class="plonepopup plonepopupmaximizable">
 		<div class="mceWrapper mceMovable mceFocus mceResizable mceMaximizable">
 			<div class="mceTop">
 				<div class="mceLeft"></div>
@@ -197,7 +197,7 @@
 		</div>
 	</div>
 
-	<div class="plonepopup" style="width:400px; height:100px; left:420px; top:230px;">
+	<div class="plonepopup plonepopupall">
 		<div class="mceWrapper mceMovable mceStatusbar mceResizable mceMaximizable">
 			<div class="mceTop">
 				<div class="mceLeft"></div>
@@ -235,7 +235,7 @@
 		</div>
 	</div>
 
-	<div class="plonepopup" style="width:400px; height:100px; left:10px; top:340px;">
+	<div class="plonepopup plonepopupmaximized">
 		<div class="mceWrapper mceMovable mceFocus mceResizable mceMaximized mceMinimizable mceMaximizable">
 			<div class="mceTop">
 				<div class="mceLeft"></div>
@@ -273,7 +273,7 @@
 		</div>
 	</div>
 
-	<div class="plonepopup" style="width:400px; height:100px; left:420px; top:340px;">
+	<div class="plonepopup plonepopubluredmaximized">
 		<div class="mceWrapper mceMovable mceStatusbar mceResizable mceMaximized mceMinimizable mceMaximizable">
 			<div class="mceTop">
 				<div class="mceLeft"></div>
@@ -311,7 +311,7 @@
 		</div>
 	</div>
 
-	<div class="plonepopup" style="width:400px; height:130px; left:10px; top:450px;">
+	<div class="plonepopup plonepopupalert">
 		<div class="mceWrapper mceMovable mceFocus mceModal mceAlert">
 			<div class="mceTop">
 				<div class="mceLeft"></div>
@@ -346,7 +346,7 @@
 		</div>
 	</div>
 
-	<div class="plonepopup" style="width:400px; height:130px; left:420px; top:450px;">
+	<div class="plonepopup plonepopupconfirm">
 		<div class="mceWrapper mceMovable mceFocus mceModal mceConfirm">
 			<div class="mceTop">
 				<div class="mceLeft"></div>

@@ -6,17 +6,19 @@
   <script type="text/javascript" src="../../utils/mctabs.js"></script>
   <script type="text/javascript" src="../../utils/form_utils.js"></script>
   <script type="text/javascript" src="js/plonelink.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/plonelink.css">
+
 </head>
-<body id="plonelink" style="display: none"
+<body id="plonelink"
   tal:define="portal_url context/portal_url">
   <div class="dialog-wrapper">
     <ul class="formTabs"><li id="general_tab" class="formTab firstFormTab"><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;" class="selected"><span i18n:translate="plonelink_dlg_general_tab"></span></a></li><li id="advanced_tab" class="formTab lastFormTab"><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;"><span i18n:translate="plonelink_dlg_advanced_tab"></span></a></li></ul>
 
-    <fieldset id="general_panel" class="formPanel" style="height: 392px; padding-top: 2em">
-      <div id="internalpath" class="formHelp" style="margin: 0 0 10px 10px; height: 2em"></div>
+    <fieldset id="general_panel" class="formPanel">
+      <div id="internalpath" class="formHelp"></div>
       <form>
         <input type="hidden" name="href" id="href"/>
-        <fieldset class="column" style="width: 120px;">
+        <fieldset class="column columnlibraries">
           <legend i18n:domain="plone.tinymce" i18n:translate="">Libraries</legend>
                 <ul class="configlets">
                     <li id="home">
@@ -54,31 +56,31 @@
                   <label for="searchtext" i18n:domain="plone.tinymce" i18n:translate="">Search</label>
                   <div class="widget">
                     <input type="text" name="searchtext" id="searchtext" value="" onkeyup="checkSearch(event);" size="12"/>
-                    <input type="button" style="margin-top: 4px;" value="Search" i18n:domain="plone.tinymce" i18n:attributes="value" class="searchButton" onclick="getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonlinkablesearch');"/>
+                    <input type="button" value="Search" i18n:domain="plone.tinymce" i18n:attributes="value" class="searchButton" onclick="getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonlinkablesearch');"/>
                   </div>
                 </div>
         </fieldset>
 
-        <fieldset id="internal_panel" class="subPanel column" style="width: 296px;">
+        <fieldset id="internal_panel" class="subPanel column">
           <legend i18n:domain="plone.tinymce" i18n:translate="">Internal link</legend>
           <div class="field">
             <label for="internallink" i18n:translate="plonelink_dlg_list"></label>
-            <div style="height: 22px"><a id="uponelevel" class="link-parent" style="line-height: 1em;" href="javascript:void(0)" i18n:domain="plone.tinymce" i18n:translate="">Up one level</a></div>
-            <div id="internallinkcontainer" class="widget radioscrolllist input-border" style="height: 260px;">
+            <div class="uponelevel"><a id="uponelevel" class="link-parent" href="javascript:void(0)" i18n:domain="plone.tinymce" i18n:translate="">Up one level</a></div>
+            <div id="internallinkcontainer" class="widget radioscrolllist input-border">
             </div>
-            <input style="margin-top:4px;" type="button" id="upload" class="context" name="upload" value="Upload file" i18n:domain="plone.tinymce" i18n:attributes="value" onclick="displayPanel('upload_panel');" />
+            <input type="button" id="upload" class="context" name="upload" value="Upload file" i18n:domain="plone.tinymce" i18n:attributes="value" onclick="displayPanel('upload_panel');" />
           </div>
         </fieldset>
 
-        <fieldset id="internal_details_panel" class="subPanel column" style="width: 190px; display: none;">
+        <fieldset id="internal_details_panel" class="subPanel column">
           <legend>Details</legend>
           <div class="field">
             <label id="internal_details_title"></label>
             <p id="internal_details_description"></p>
           </div>
           <div class="field">
-            <label id="pageanchorlabel" for="pageanchor" style="display: none;" i18n:translate="plonelink_dlg_anchor_names"></label>
-            <div class="widget" id="pageanchorcontainer" style="display: none;">
+            <label id="pageanchorlabel" for="pageanchor"  i18n:translate="plonelink_dlg_anchor_names"></label>
+            <div class="widget" id="pageanchorcontainer" >
               <select id="pageanchor" name="pageanchor">
                 <option value="">top of page (default)</option>
               </select>
@@ -86,7 +88,7 @@
           </div>
         </fieldset>
 
-        <fieldset id="external_panel" class="subPanel column" style="width:520px; display: none;">
+        <fieldset id="external_panel" class="subPanel column">
           <legend i18n:domain="plone.tinymce" i18n:translate="">External link</legend>
           <div class="field">
             <label for="externalurl" i18n:translate="plonelink_dlg_url"></label>
@@ -109,7 +111,7 @@
           </div>
         </fieldset>
 
-        <fieldset id="mail_panel" class="subPanel column" style="width: 520px; display: none;">
+        <fieldset id="mail_panel" class="subPanel column">
           <legend i18n:domain="plone.tinymce" i18n:translate="">Mail</legend>
           <div class="field">
             <label for="mailaddress" i18n:domain="plone.tinymce" i18n:translate="">E-mail</label>
@@ -126,23 +128,23 @@
           </div>
         </fieldset>
 
-        <fieldset id="anchors_panel" class="subPanel column" style="width: 520px; display: none;">
+        <fieldset id="anchors_panel" class="subPanel column">
           <legend i18n:domain="plone.tinymce" i18n:translate="">Link to anchor</legend>
           <div class="field">
             <label i18n:translate="plonelink_dlg_anchor_names"></label>
-            <div id="anchorlinkcontainer" class="widget radioscrolllist input-border" style="height: 280px;">
+            <div id="anchorlinkcontainer" class="widget radioscrolllist input-border">
             </div>
           </div>
         </fieldset>
       </form>
-  
-      <fieldset id="upload_panel" class="subPanel column" style="width: 190px; display: none;">
+
+      <fieldset id="upload_panel" class="subPanel column">
         <legend i18n:domain="plone.tinymce" i18n:translate="">Upload file</legend>
         <form name="upload_form" id="upload_form" method="post" target="upload_iframe" enctype="multipart/form-data">
           <div class="field">
             <label for="uploadfile" i18n:domain="plone.tinymce" i18n:translate="">File</label>
             <div class="widget">
-              <input type="file" name="uploadfile" id="uploadfile" value="" style="width: 100%" size="15" />
+              <input type="file" name="uploadfile" id="uploadfile" value="" size="15" />
             </div>
           </div>
 
@@ -162,11 +164,11 @@
 
           <input type="button" id="uploadbutton" class="context" name="uploadbutton" value="Upload" i18n:domain="plone.tinymce" i18n:attributes="value" onclick="document.forms[1].submit();"/>
         </form>
-        <iframe style="display: none;" width="0" scrolling="off" height="0" frameborder="0" id="upload_iframe" name="upload_iframe" src="javascript:''"></iframe>
+        <iframe width="0" scrolling="off" height="0" frameborder="0" id="upload_iframe" name="upload_iframe" src="javascript:''"></iframe>
       </fieldset>
     </fieldset>
 
-    <fieldset id="advanced_panel" class="formPanel" style="display: none; height: 374px">
+    <fieldset id="advanced_panel" class="formPanel">
       <form>
         <div class="field">
           <label id="targetlistlabel" for="targetlist" i18n:translate="plonelink_dlg_target"></label>
@@ -180,8 +182,8 @@
             </select>
           </div>
         </div>
-      
-        <fieldset id="popup_panel" style="display: none;">
+
+        <fieldset id="popup_panel">
           <legend i18n:translate="plonelink_dlg_popup"></legend>
           <div class="column">
             <div class="field">
@@ -190,7 +192,7 @@
                 <input type="text" name="popupname" id="popupname" value="" size="20" />
               </div>
             </div>
-  
+
             <div class="field">
               <label i18n:translate="plonelink_dlg_popup_size"></label>
               <div class="widget">
@@ -202,7 +204,7 @@
             <div class="field">
               <label i18n:translate="plonelink_dlg_popup_position"></label>
               <div class="widget">
-                <input type="text" id="popupleft" name="popupleft" value="" size="4" /> /                                
+                <input type="text" id="popupleft" name="popupleft" value="" size="4" /> /
                 <input type="text" id="popuptop" name="popuptop" value="" size="4" /> (c / c = center)
               </div>
             </div>
@@ -279,7 +281,7 @@
     </fieldset>
 
     <div class="visualClear"><!-- --></div>
-    
+
       <form onsubmit="insertAction();return false;" action="#">
       <div class="mceActionPanel formControls">
         <span class="actionButtons">
