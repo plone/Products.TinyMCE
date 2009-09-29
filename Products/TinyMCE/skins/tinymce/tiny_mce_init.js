@@ -159,6 +159,8 @@ function TinyMCEConfig(id) {
                 e[2] = "";
             }
             switch (e[1].toLowerCase()) {
+                case 'del':
+                case 'ins':
                 case 'span':
                     styletype = "Selection";
                     break;
