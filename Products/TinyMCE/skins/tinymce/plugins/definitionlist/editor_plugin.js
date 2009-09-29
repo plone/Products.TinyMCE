@@ -57,11 +57,13 @@
                     newelm = ed.getDoc().createElement('dt');
                     for (var c=0; c<curelm.childNodes.length; c++)
                         newelm.appendChild(curelm.childNodes[c].cloneNode(1));
-
-                    b = ed.selection.getBookmark();
+                    // b = ed.selection.getBookmark(true);
                     dl.appendChild(newelm);
-                    curelm.parentNode.replaceChild(dl, curelm);
-                    ed.selection.moveToBookmark(b);
+                    //curelm.parentNode.replaceChild(dl, curelm);
+                    ed.dom.replace(dl, curelm, 0);
+                    ed.selection.select(newelm)
+                    ed.selection.collapse(true)
+                    // ed.selection.moveToBookmark(b);
                 }
             }
 
