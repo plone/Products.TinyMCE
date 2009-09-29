@@ -34,3 +34,7 @@ class tinymce_output_html_to_html:
         text = orig
         data.setData(text)
         return data
+
+# This needs to be here to avoid breaking existing instances
+def register():
+    return tinymce_output_html_to_html()
