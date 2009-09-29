@@ -50,3 +50,7 @@ class html_to_tinymce_output_html:
         else:
             data.setData(orig)
         return data
+
+# This needs to be here to avoid breaking existing instances
+def register():
+    return html_to_tinymce_output_html()
