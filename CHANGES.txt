@@ -4,10 +4,14 @@ HISTORY
 
 1.1rc5 (unreleased)
 -------------------
-- moved inline style from templates to css files
+
+- Improved test coverage.
+  [robgietema]
+
+- Moved inline style from templates to css files.
   [maartenkling]
 
-- removed inline style  style="display:none;" from body tag from templates
+- Removed inline style  style="display:none;" from body tag from templates.
   [maartenkling]
 
 - Fixed bug where custom image classes wouldn't stick after editing an image.

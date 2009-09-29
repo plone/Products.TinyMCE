@@ -12,10 +12,84 @@ First we'll get the TinyMCE utility.
 Configuration
 -------------
 
-Let's get the configuration of TinyMCE.
+Let's get the configuration of TinyMCE and see if it returns a json structure.
 
     >>> utility.getConfiguration(portal)
     '{...}'
+
+Now let's change some variables and see it still works.
+
+    >>> utility.toolbar_cut = True
+    >>> utility.toolbar_copy = True
+    >>> utility.toolbar_paste = True
+    >>> utility.toolbar_pastetext = True
+    >>> utility.toolbar_pasteword = True
+    >>> utility.toolbar_undo = True
+    >>> utility.toolbar_redo = True
+    >>> utility.toolbar_search = True
+    >>> utility.toolbar_replace = True
+    >>> utility.toolbar_underline = True
+    >>> utility.toolbar_strikethrough = True
+    >>> utility.toolbar_sub = True
+    >>> utility.toolbar_sup = True
+    >>> utility.toolbar_forecolor = True
+    >>> utility.toolbar_backcolor = True
+    >>> utility.toolbar_media = True
+    >>> utility.toolbar_charmap = True
+    >>> utility.toolbar_hr = True
+    >>> utility.toolbar_advhr = True
+    >>> utility.toolbar_insertdate = True
+    >>> utility.toolbar_inserttime = True
+    >>> utility.toolbar_emotions = True
+    >>> utility.toolbar_nonbreaking = True
+    >>> utility.toolbar_pagebreak = True
+    >>> utility.toolbar_print = True
+    >>> utility.toolbar_preview = True
+    >>> utility.toolbar_iespell = True
+    >>> utility.toolbar_removeformat = True
+    >>> utility.toolbar_cleanup = True
+    >>> utility.toolbar_visualaid = True
+    >>> utility.toolbar_visualchars = True
+    >>> utility.toolbar_attribs = True
+    >>> utility.resizing = False
+
+The result should at least contain the new buttons we added.
+
+    >>> utility.getConfiguration(portal)
+    '{...attribs...}'
+
+Let's change some more settings.
+
+    >>> utility.toolbar_external = True
+    >>> utility.autoresize = True
+    >>> utility.editor_width = u'100'
+    >>> utility.editor_height = u'abc'
+    >>> utility.toolbar_width = u'abc'
+    >>> utility.contextmenu = False
+    >>> utility.content_css = u'test.css'
+    >>> utility.link_using_uids = True
+    >>> utility.allow_captioned_images = True
+    >>> utility.rooted = True
+    >>> from Products.CMFCore.utils import getToolByName
+    >>> props = getToolByName(self, 'portal_properties')
+    >>> livesearch = props.site_properties.getProperty('enable_livesearch', False)
+    >>> livesearch = False
+
+The result should contain the settings specified.
+
+    >>> utility.getConfiguration(portal)
+    '{...external...}'
+
+Let's call the portal_factory of a document and see if the configuration
+contains the save button.
+
+    >>> from Products.Five.testbrowser import Browser
+    >>> browser = Browser()
+    >>> self.app.acl_users.userFolderAddUser('root', 'secret', ['Manager'], [])
+    >>> browser.addHeader('Authorization', 'Basic root:secret')
+    >>> browser.open('http://nohost/plone/createObject?type_name=Document')
+    >>> browser.contents
+    '...{...save...}...'
 
 Configurable Image Dimensions
 -----------------------------
