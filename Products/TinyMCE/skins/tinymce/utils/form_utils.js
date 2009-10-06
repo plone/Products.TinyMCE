@@ -133,7 +133,8 @@ function addClassesToList(list_id, specific_option) {
 function isVisible(element_id) {
 	var elm = document.getElementById(element_id);
 
-	return elm && elm.style.display != "none";
+	// elm.style.display can be an empty string if the panel is hidden and has never been shown
+	return elm && (elm.style.display == "block" || elm.style.display == "inline" || elm.style.display == "list-element");
 }
 
 function convertRGBToHex(col) {
