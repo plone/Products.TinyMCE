@@ -15,7 +15,7 @@ setup(name='Products.TinyMCE',
       long_description=open("README.txt").read() + "\n\n" +
                        open(os.path.join("docs", "INSTALL.txt")).read() + "\n\n" +
                        open("CHANGES.txt").read() + "\n\n" +
-                       open(os.path.join("docs", "CONTRIBUTERS.txt")).read(),
+                       open(os.path.join("docs", "CONTRIBUTORS.txt")).read(),
       # Get more strings from http://www.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
         "Framework :: Plone",
