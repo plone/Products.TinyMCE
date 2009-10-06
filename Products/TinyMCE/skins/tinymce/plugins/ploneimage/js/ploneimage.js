@@ -59,7 +59,7 @@ var ImageDialog = {
                            (classnames[i] == 'image-right')) {
                     classname = classnames[i];
                 } else {
-                    current_class = classnames[i];
+                    ImageDialog.current_class = classnames[i];
                 }
             }
             nl0.alt.value = alt;
@@ -133,7 +133,7 @@ var ImageDialog = {
             alt : nl0.alt.value,
             'class' : this.getSelectValue(f0, 'classes') +
                 ((ed.settings.allow_captioned_images && f0.elements['caption'].checked) ? ' captioned' : '') +
-                (current_class == '' ? '' : ' ' + current_class)
+                (ImageDialog.current_class == '' ? '' : ' ' + ImageDialog.current_class)
         };
 
         el = ed.selection.getNode();
