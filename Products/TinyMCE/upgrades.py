@@ -20,6 +20,7 @@ def upgrade_10_to_11(setuptool):
     # http://plone.org/products/tinymce/issues/26
     tinymce = getUtility(ITinyMCE)
     tinymce.styles = tinymce.styles.replace(u'Pull-quote|div|pullquote', u'Pull-quote|blockquote|pullquote')
+    tinymce.styles = tinymce.styles.replace(u'Discreet|p|discreet', u'Discreet|span|discreet')
 
     # Add entity_encoding property
     tinymce.entity_encoding = u"raw"
