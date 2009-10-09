@@ -29,11 +29,11 @@
 
             // Register buttons
             ed.addButton('link', {
-                title : 'plonelink.link_desc',
+                title : 'advanced.link_desc',
                 cmd : 'mcePloneLink'
             });
 
-            ed.addShortcut('ctrl+k', 'plonelink.advlink_desc', 'mcePloneLink');
+            ed.addShortcut('ctrl+k', 'advanced.link_desc', 'mcePloneLink');
 
             ed.onNodeChange.add(function(ed, cm, n, co) {
                 cm.setDisabled('link', co && n.nodeName != 'A');

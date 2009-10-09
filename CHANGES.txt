@@ -5,12 +5,18 @@ HISTORY
 1.1rc6 (unreleased)
 -------------------
 
+- Fixed translations for insert image/link button tooltips.
+  [robgietema]
+
 - Use a span instead of p tag for the discreet style to allow the remove 
   styles command/button to work properly. 
   [esteele]
 
-- Corrected spelling of 'contributors' and renamed doc accordingly
+- Corrected spelling of 'contributors' and renamed doc accordingly.
   [rockdj]
+
+- Fixed inserting images and links.
+  [optilude]
 
 1.1rc5 (2009-09-30)
 -------------------
@@ -27,10 +33,10 @@ HISTORY
 - Fixed bug where custom image classes wouldn't stick after editing an image.
   [robgietema]
 
-- Removed z3c.json dependancy, changed to simplejson or built-in json
+- Removed z3c.json dependancy, changed to simplejson or built-in json.
   [kingel]
 
-- Register import/export handlers as zcml statements
+- Register import/export handlers as zcml statements.
   [kingel]
 
 - Set javascript files as cachable and mergable.

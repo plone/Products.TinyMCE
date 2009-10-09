@@ -25,7 +25,7 @@
 
             // Register buttons
             ed.addButton('image', {
-                title : 'ploneimage.image_desc',
+                title : 'advanced.image_desc',
                 cmd : 'mcePloneImage'
             });
         },
