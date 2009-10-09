@@ -307,7 +307,7 @@ function TinyMCEConfig(id) {
             if (this.widget_config.customplugins[i].indexOf('|') == -1) {
                 plugins += ',' + this.widget_config.customplugins[i];
             } else {
-            	plugins += ',' + this.widget_config.customplugins[i].split('|')[0];
+                plugins += ',' + this.widget_config.customplugins[i].split('|')[0];
             }
         }
         if (this.widget_config.contextmenu) {
@@ -323,6 +323,7 @@ function TinyMCEConfig(id) {
 if (typeof(kukit) != "undefined") {
     kukit.actionsGlobalRegistry.register("init-tinymce", function(oper) {
         var config = new TinyMCEConfig(oper.node.id);
+        delete InitializedTinyMCEInstances[oper.node.id]
         config.init();
     });
 
