@@ -170,6 +170,10 @@ function TinyMCEConfig(id) {
                 case 'table':
                     styletype = "Tables";
                     break;
+                case 'ul':
+                case 'ol':
+                    styletype = "Lists";
+                    break;
                 default:
                     styletype = "Text";
                     break;
