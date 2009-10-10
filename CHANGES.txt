@@ -5,6 +5,9 @@ HISTORY
 1.1rc6 (unreleased)
 -------------------
 
+- Added an `icon_expr` to the control panel entry.
+  [hannosch]
+
 - Fixed bug when editing the same field twice using inline editing.
   [robgietema]
 
@@ -14,8 +17,8 @@ HISTORY
 - Fixed translations for insert image/link button tooltips.
   [robgietema]
 
-- Use a span instead of p tag for the discreet style to allow the remove 
-  styles command/button to work properly. 
+- Use a span instead of p tag for the discreet style to allow the remove
+  styles command/button to work properly.
   [esteele]
 
 - Corrected spelling of 'contributors' and renamed doc accordingly.

@@ -5,6 +5,7 @@
         action_id="tinymce" appId="TinyMCE"
         category="Plone"
         condition_expr=""
+        icon_expr="string:${portal_url}/++resource++tinymce.images/tinymce_icon.gif"
         url_expr="string:${portal_url}/portal_tinymce/@@tinymce-controlpanel"
         visible="True"
         i18n:attributes="title">
