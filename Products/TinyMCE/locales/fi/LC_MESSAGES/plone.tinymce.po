@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: plone.tinymce\n"
-"POT-Creation-Date: 2009-09-20 11:22+0000\n"
+"POT-Creation-Date: 2009-10-13 15:00+0000\n"
 "PO-Revision-Date: 2009-08-18 23:51+0200\n"
 "Last-Translator: Jukka Ojaniemi <jukka.ojaniemi@jyu.fi>\n"
 "Language-Team: JYU <LL@li.org>\n"
@@ -20,526 +20,583 @@ msgstr ""
 "X-Poedit-Country: FINLAND\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ./interfaces/utility.py:152
+#: ../interfaces/utility.py:152
 msgid "Align center"
 msgstr "Tasaa keskelle"
 
-#: ./interfaces/utility.py:160
+#: ../interfaces/utility.py:160
 msgid "Align full"
 msgstr "Tasaa molempiin reunoihin"
 
-#: ./interfaces/utility.py:148
+#: ../interfaces/utility.py:148
 msgid "Align left"
 msgstr "Tasaa vasempaan reunaan"
 
-#: ./interfaces/utility.py:156
+#: ../interfaces/utility.py:156
 msgid "Align right"
 msgstr "Tasaa oikeaan reunaan"
 
-#: ./interfaces/utility.py:296
+#: ../interfaces/utility.py:296
 msgid "Allow captioned images"
 msgstr "Salli kuvatekstin sisältävät kuvat"
 
 #. Default: "Anchors"
-#: ./skins/tinymce/plugins/plonelink/plonelink.htm.pt:49
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:51
 msgid "Anchors"
 msgstr "Ankkurit"
 
-#: ./interfaces/utility.py:144
+#: ../interfaces/utility.py:144
 msgid "Backcolor"
 msgstr "Taustaväri"
 
-#: ./interfaces/utility.py:116
+#: ../interfaces/utility.py:116
 msgid "Bold"
 msgstr "Lihavoi"
 
+msgid "Call-out"
+msgstr ""
+
 #. Default: "Caption"
-#: ./skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:87
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:89
 msgid "Caption"
 msgstr "Kuvateksti"
 
-#: ./interfaces/utility.py:44
+#: ../interfaces/utility.py:44
 msgid "Choose the Css used in Wysiwyg Editor Area"
 msgstr "Valitse Wysiwyg editorissa käytettävä Css"
 
-#: ./interfaces/utility.py:256
+#: ../interfaces/utility.py:256
 msgid "Cleanup messy code"
 msgstr "Siivoa koodi"
 
-#: ./interfaces/utility.py:311
+msgid "Clear floats"
+msgstr ""
+
+#: ../interfaces/utility.py:311
 msgid "Contains Anchors"
 msgstr "Sisältää ankkureita"
 
-#: ./interfaces/utility.py:306
+#: ../interfaces/utility.py:306
 msgid "Contains Objects"
 msgstr "Sisältää objekteja"
 
-#: ./interfaces/utility.py:80
+#: ../interfaces/utility.py:80
 msgid "Copy"
 msgstr "Kopioi"
 
 #. Default: "Current Folder"
-#: ./skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:28
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:31
 msgid "Current Folder"
 msgstr "Tämänhetkinen kansio"
 
-#: ./interfaces/utility.py:326
+#: ../interfaces/utility.py:326
 msgid "Custom Plugins"
 msgstr "Lisäosat"
 
-#: ./interfaces/utility.py:280
+#: ../interfaces/utility.py:280
 msgid "Custom Toolbar Buttons"
 msgstr "Omat tyokalurivin painikkeet"
 
-#: ./interfaces/utility.py:76
+#: ../interfaces/utility.py:76
 msgid "Cut"
 msgstr "Leikkaa"
 
-#: ./interfaces/utility.py:172
+#: ../interfaces/utility.py:172
 msgid "Definition list"
 msgstr ""
 
 #. Default: "Description"
-#: ./skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:121
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:159
 msgid "Description"
 msgstr "Kuvaus"
 
 #. Default: "Details"
-#: ./skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:58
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:60
 msgid "Details"
 msgstr "Lisätietoja"
 
+msgid "Discreet"
+msgstr ""
+
 #. Default: "E-mail"
-#: ./skins/tinymce/plugins/plonelink/plonelink.htm.pt:115
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:117
 msgid "E-mail"
 msgstr "Sähköposti"
 
-#: ./interfaces/utility.py:272
+#: ../interfaces/utility.py:272
 msgid "Edit HTML Source"
 msgstr "Muokkaa HTML-koodia"
 
-#: ./interfaces/utility.py:27
+#: ../interfaces/utility.py:27
 msgid "Editor height"
 msgstr "Editorin korkeus"
 
-#: ./interfaces/utility.py:22
+#: ../interfaces/utility.py:22
 msgid "Editor width"
 msgstr "Editorin leveys"
 
-#: ./interfaces/utility.py:228
+#: ../interfaces/utility.py:228
 msgid "Emotions"
 msgstr "Hymiöt"
 
-#: ./interfaces/utility.py:17
+#: ../interfaces/utility.py:17
 msgid "Enable auto resizing of the editor window."
 msgstr "Kytke editori-ikkunan automaattinen koonvaihto päälle"
 
-#: ./interfaces/utility.py:39
+#: ../interfaces/utility.py:39
 msgid "Enable contextmenu."
 msgstr "Salli sisältövalikko."
 
-#: ./interfaces/utility.py:12
+#: ../interfaces/utility.py:12
 msgid "Enable resizing the editor window."
 msgstr "Salli editori-ikkunan koon vaihtaminen."
 
-#: ./interfaces/utility.py:317
+#: ../interfaces/utility.py:317
 msgid "Enter a list of content types which can be linked. Format is one contenttype per line."
 msgstr "Sisältötyypit joihin voidaan linkittää. Yksi sisältötyyppi riviä kohden."
 
-#: ./interfaces/utility.py:322
+#: ../interfaces/utility.py:322
 msgid "Enter a list of content types which can be used as images. Format is one contenttype per line."
 msgstr "Sisältötyypit joita voidaan käyttää kuvina. Yksi sisältötyyppi riviä kohden."
 
-#: ./interfaces/utility.py:312
+#: ../interfaces/utility.py:312
 msgid "Enter a list of content types which can contain anchors. Format is one contenttype per line."
 msgstr "Sisältötyypit jotka voivat sisältää ankkureita. Yksi sisältötyyppi riviä kohden."
 
-#: ./interfaces/utility.py:307
+#: ../interfaces/utility.py:307
 msgid "Enter a list of content types which can contain other objects. Format is one contenttype per line."
 msgstr "Sisältötyypit jotka voivat sisältää muita objekteja. Yksi sisältötyyppi riviä kohden."
 
-#: ./interfaces/utility.py:327
+#: ../interfaces/utility.py:327
 msgid "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
 msgstr "Lista lisäosista jotka ladataan editoriin. Yksi lisäosa tai lisäosa|sijainti riviä kohden."
 
-#: ./interfaces/utility.py:281
+#: ../interfaces/utility.py:281
 msgid "Enter a list of custom toolbar buttons which will be loaded in the editor, one per line."
 msgstr "Omat työkalurivin painikkeet, jotka ladataan editoriin. Yksi painike riviä kohden."
 
-#: ./interfaces/utility.py:50
+#: ../interfaces/utility.py:50
 msgid "Enter a list of styles to appear in the style pulldown. Format is title|tag or title|tag|className, one per line."
 msgstr "Tyylit-pudotusvalikon lista tyyleistä. Yksi otsikko|tagi tai otsikko|tagi|luokanNimi riviä kohden."
 
-#: ./interfaces/utility.py:55
+#: ../interfaces/utility.py:55
 msgid "Enter a list of styles to appear in the table style pulldown. Format is title|class, one per line."
 msgstr "Taulukon tyylit-pudotusvalikon lista tyyleistä. Yksi otsikko|luokka riviä kohden."
 
-#: ./interfaces/utility.py:331
+#: ../interfaces/utility.py:331
 msgid "Entity encoding"
 msgstr "Entiteettien kooditus"
 
+msgid "Even row"
+msgstr ""
+
 #. Default: "External"
-#: ./skins/tinymce/plugins/plonelink/plonelink.htm.pt:39
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:41
 msgid "External"
 msgstr "Ulkoinen"
 
 #. Default: "External link"
-#: ./skins/tinymce/plugins/plonelink/plonelink.htm.pt:90
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:92
 msgid "External link"
 msgstr "Ulkoinen linkki"
 
+msgid "Fancy grid listing"
+msgstr ""
+
+msgid "Fancy listing"
+msgstr ""
+
+msgid "Fancy vertical listing"
+msgstr ""
+
 #. Default: "File"
-#: ./skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:107
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:145
 msgid "File"
 msgstr "Tiedosto"
 
-#: ./interfaces/utility.py:104
+#: ../interfaces/utility.py:104
 msgid "Find"
 msgstr "Etsi"
 
-#: ./interfaces/utility.py:108
+#: ../interfaces/utility.py:108
 msgid "Find/Replace"
 msgstr "Etsi/korvaa"
 
-#: ./interfaces/utility.py:140
+#: ../interfaces/utility.py:140
 msgid "Forecolor"
 msgstr "Edustan väri"
 
+msgid "Heading"
+msgstr ""
+
+msgid "Heading cell"
+msgstr ""
+
+msgid "Highlight"
+msgstr ""
+
 #. Default: "Home"
-#: ./skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:23
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:26
 msgid "Home"
 msgstr "Koti"
 
-#: ./interfaces/utility.py:321
+#: ../interfaces/utility.py:321
 msgid "Image Objects"
 msgstr "Kuvat"
 
-#: ./interfaces/utility.py:297
+#: ../interfaces/utility.py:297
 msgid "Images will be automatically captioned."
 msgstr "Kuviin tulee automaattisesti kuvateksti."
 
-#: ./interfaces/utility.py:180
+#: ../interfaces/utility.py:180
 msgid "Indent"
 msgstr "Sisennä"
 
 #. Default: "Inline"
-#: ./skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:78
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:80
 msgid "Inline"
 msgstr "Avoin"
 
-#: ./interfaces/utility.py:216
+#: ../interfaces/utility.py:216
 msgid "Insert advanced horizontal ruler"
 msgstr "Lisää kehittynyt vaakasuora viivoitin"
 
-#: ./interfaces/utility.py:208
+#: ../interfaces/utility.py:208
 msgid "Insert custom character"
 msgstr "Lisää merkki"
 
-#: ./interfaces/utility.py:220
+#: ../interfaces/utility.py:220
 msgid "Insert date"
 msgstr "Lisää päivämäärä"
 
-#: ./interfaces/utility.py:212
+#: ../interfaces/utility.py:212
 msgid "Insert horizontal ruler"
 msgstr "Lisää vaakasuora viivoitin"
 
-#: ./interfaces/utility.py:232
+#: ../interfaces/utility.py:232
 msgid "Insert non-breaking space character"
 msgstr "Lisää katkaisematon välilyönti"
 
-#: ./interfaces/utility.py:236
+#: ../interfaces/utility.py:236
 msgid "Insert page break"
 msgstr "Lisää sivunkatkaisu"
 
-#: ./interfaces/utility.py:224
+#: ../interfaces/utility.py:224
 msgid "Insert time"
 msgstr "Lisää aika"
 
-#: ./interfaces/utility.py:196
+#: ../interfaces/utility.py:196
 msgid "Insert/edit anchor"
 msgstr "Lisää/muokkaa ankkuria"
 
-#: ./interfaces/utility.py:268
+#: ../interfaces/utility.py:268
 msgid "Insert/edit attributes"
 msgstr "Lisää/muokkaa attribuutteja"
 
-#: ./interfaces/utility.py:200
+#: ../interfaces/utility.py:200
 msgid "Insert/edit image"
 msgstr "Lisää/muokkaa kuvaa"
 
-#: ./interfaces/utility.py:188
+#: ../interfaces/utility.py:188
 msgid "Insert/edit link"
 msgstr "Lisää/muokkaa linkkiä"
 
-#: ./interfaces/utility.py:204
+#: ../interfaces/utility.py:204
 msgid "Insert/edit media"
 msgstr "Lisää/muokkaa mediaa"
 
 #. Default: "Internal link"
-#: ./skins/tinymce/plugins/plonelink/plonelink.htm.pt:63
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:65
 msgid "Internal link"
 msgstr "Sisäinen linkki"
 
-#: ./interfaces/utility.py:120
+msgid "Invisible grid"
+msgstr ""
+
+#: ../interfaces/utility.py:120
 msgid "Italic"
 msgstr "Kursivoi"
 
-#: ./browser/controlpanel.py:32
+#: ../browser/controlpanel.py:32
 msgid "Layout"
 msgstr "Ulkoasu"
 
-#: ./interfaces/utility.py:35
+#: ../interfaces/utility.py:35
 msgid "Left to right"
 msgstr ""
 
 #. Default: "Libraries"
-#: ./skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:19
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:22
 msgid "Libraries"
 msgstr "Kirjastot"
 
 #. Default: "Link to anchor"
-#: ./skins/tinymce/plugins/plonelink/plonelink.htm.pt:130
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:132
 msgid "Link to anchor"
 msgstr "Linkki ankkuriin"
 
-#: ./interfaces/utility.py:291
+#: ../interfaces/utility.py:291
 msgid "Link using UIDs"
 msgstr "Linkitä käyttäen UID:ta"
 
-#: ./interfaces/utility.py:316
+#: ../interfaces/utility.py:316
 msgid "Linkable Objects"
 msgstr "Linkitettävät objektit"
 
-#: ./interfaces/utility.py:292
+#: ../interfaces/utility.py:292
 msgid "Links to objects on this site can use unique object ids so that the links remain valid even if the target object is renamed or moved elsewhere on the site."
 msgstr "Linkit sivuston objekteihin voivat käyttää uniikkeja tunnisteista, joiden avulla linkit pysyvät rikkoutumattominan vaikka linkitettävä olio nimettäisiin uudelleen tai siirrettäisiin toisaalle."
 
+msgid "Literal"
+msgstr ""
+
 #. Default: "Mail"
-#: ./skins/tinymce/plugins/plonelink/plonelink.htm.pt:44
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:46
 msgid "Mail"
 msgstr "Posti"
 
-#: ./interfaces/utility.py:334
+#: ../interfaces/utility.py:334
 msgid "Named"
 msgstr ""
 
-#: ./interfaces/utility.py:334
+#: ../interfaces/utility.py:334
 msgid "Numeric"
 msgstr ""
 
-#: ./interfaces/utility.py:168
+msgid "Odd row"
+msgstr ""
+
+#: ../interfaces/utility.py:168
 msgid "Ordered list"
 msgstr "Järjestetty lista"
 
-#: ./interfaces/utility.py:176
+#: ../interfaces/utility.py:176
 msgid "Outdent"
 msgstr "Ulonna"
 
-#: ./interfaces/utility.py:84
+msgid "Page break (print only)"
+msgstr ""
+
+#: ../interfaces/utility.py:84
 msgid "Paste"
 msgstr "Liitä"
 
-#: ./interfaces/utility.py:88
+#: ../interfaces/utility.py:88
 msgid "Paste as Plain Text"
 msgstr "Liitä tekstinä"
 
-#: ./interfaces/utility.py:92
+#: ../interfaces/utility.py:92
 msgid "Paste from Word"
 msgstr "Liitä Wordistä"
 
 #. Default: "Preview"
-#: ./skins/tinymce/plugins/plonelink/plonelink.htm.pt:100
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:102
 msgid "Preview"
 msgstr "Esikatselu"
 
-#: ./interfaces/utility.py:240
+#: ../interfaces/utility.py:240
 msgid "Print"
 msgstr "Tulosta"
 
-#: ./interfaces/utility.py:334
+msgid "Pull-quote"
+msgstr ""
+
+#: ../interfaces/utility.py:334
 msgid "Raw"
 msgstr ""
 
-#: ./interfaces/utility.py:100
+#: ../interfaces/utility.py:100
 msgid "Redo"
 msgstr "Tee uudelleen"
 
-#: ./interfaces/utility.py:252
+#: ../interfaces/utility.py:252
 msgid "Remove formatting"
 msgstr "Poista muotoilut"
 
-#: ./browser/controlpanel.py:44
+#: ../browser/controlpanel.py:44
 msgid "Resource Types"
 msgstr "Resurssien tyypit"
 
-#: ./interfaces/utility.py:35
+#: ../interfaces/utility.py:35
 msgid "Right to left"
 msgstr ""
 
-#: ./interfaces/utility.py:301
+#: ../interfaces/utility.py:301
 msgid "Rooted to current object"
 msgstr "Sido juuritaso muokattavaan objektiin"
 
-#: ./interfaces/utility.py:72
+#: ../interfaces/utility.py:72
 msgid "Save"
 msgstr "Tallenna"
 
 #. Default: "Search"
-#: ./skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:38
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:56
 msgid "Search"
 msgstr "Etsi"
 
-#: ./interfaces/utility.py:112
+#: ../interfaces/utility.py:112
 msgid "Select Style"
 msgstr "Valitse tyyli"
 
-#: ./browser/controlpanel.py:49
+#: ../browser/controlpanel.py:49
 msgid "Settings for the TinyMCE Wysiwyg editor."
 msgstr "Asetukset TinyMCE Wysiwyg editorille."
 
-#: ./interfaces/utility.py:248
+#: ../interfaces/utility.py:248
 msgid "Spellchecker"
 msgstr "Oikeinkirjoituksen tarkistus"
 
-#: ./interfaces/utility.py:128
+#: ../interfaces/utility.py:128
 msgid "Strikethrough"
 msgstr "Yliviivaa"
 
-#: ./interfaces/utility.py:49
+#: ../interfaces/utility.py:49
 msgid "Styles"
 msgstr "Tyylit"
 
+msgid "Subdued grid"
+msgstr ""
+
+msgid "Subheading"
+msgstr ""
+
 #. Default: "Subject"
-#: ./skins/tinymce/plugins/plonelink/plonelink.htm.pt:122
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:124
 msgid "Subject"
 msgstr "Aihe"
 
-#: ./interfaces/utility.py:132
+#: ../interfaces/utility.py:132
 msgid "Subscript"
 msgstr "Alaindeksi"
 
-#: ./interfaces/utility.py:136
+#: ../interfaces/utility.py:136
 msgid "Superscript"
 msgstr "Yläindeksi"
 
-#: ./interfaces/utility.py:184
+#: ../interfaces/utility.py:184
 msgid "Table controls"
 msgstr "Taulukon kontrollit"
 
-#: ./interfaces/utility.py:54
+#: ../interfaces/utility.py:54
 msgid "Table styles"
 msgstr "Taulukon tyylit"
 
-#: ./interfaces/utility.py:332
+#: ../interfaces/utility.py:332
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
 msgstr "Tällä valinnalla kontrolloidaan miten entiteettejä/merkkejä prosessoidaan. Named: merkit konvertoidaan nimetyiksi entiteeteiksi. Numeric: merkit konvertoidaan numeerisiksi entiteeteiksi. Raw: kaikki muut paitsi XML:n oletusentiteetit (amp, lt, gt, quot) talletetaan entiteetittömään muotoon."
 
-#: ./interfaces/utility.py:68
+#: ../interfaces/utility.py:68
 msgid "This option enables the external toolbar which will be placed at the top of the page."
 msgstr "Tämä valinta näyttää ulkoisen työkalupalkin, joka sijoittu sivun ylälaitaan."
 
-#: ./interfaces/utility.py:45
+#: ../interfaces/utility.py:45
 msgid "This option enables you to specify a custom CSS file that extends the theme content CSS. This CSS file is the one used within the editor (the editable area)."
 msgstr "Tämä valinta mahdollistaa oman CSS-tiedoston käyttämisen, joka laajentaa teeman CSS-tyylimäärityksiä. Tätä CSS-tiedostoa käytetään editorin sisällä (muokkaus alueella)."
 
-#: ./interfaces/utility.py:18
+#: ../interfaces/utility.py:18
 msgid "This option gives you the ability to enable/disable auto resizing the editor window depending on the content."
 msgstr "Tämä valinta mahdollistaa editori-ikkunan automaattisen koon säädön sisällöstä riippuen."
 
-#: ./interfaces/utility.py:13
+#: ../interfaces/utility.py:13
 msgid "This option gives you the ability to enable/disable resizing the editor window. If the editor width is set to a percentage only vertical resizing is enabled."
 msgstr "Tämä valinta mahdollistaa editori-ikkunan koon uudelleensäätämisen. Jos editorin leveys on määritelty prosentteina, vain korkeussuunnan säätäminen on päällä."
 
-#: ./interfaces/utility.py:40
+#: ../interfaces/utility.py:40
 msgid "This option gives you the ability to enable/disable the use of the contextmenu."
 msgstr "Tämä valinta mahdollistaa kontekstivalikon kytkemisen päälle/pois."
 
-#: ./interfaces/utility.py:28
+#: ../interfaces/utility.py:28
 msgid "This option gives you the ability to specify the height of the editor in pixels. If auto resize is enabled this value is used as minimum height."
 msgstr "Tämä valinta mahdollistaa editorin korkeuden määrittämisen pikseleinä. Jos automaattinen koon säätö on päällä, tätä arvoa käytetään pienimpänä mahdollisena korkeutena."
 
-#: ./interfaces/utility.py:23
+#: ../interfaces/utility.py:23
 msgid "This option gives you the ability to specify the width of the editor in pixels or percent."
 msgstr "Tämä valinta mahdollistaa editorin leveyden määrittämisen pikseleinä tai prosentteina."
 
-#: ./interfaces/utility.py:63
+#: ../interfaces/utility.py:63
 msgid "This option gives you the ability to specify the width of the toolbar in pixels."
 msgstr "Tämä valinta mahdollistaa työkalupalkin leveyden määrittämisen pikseleinä."
 
-#: ./interfaces/utility.py:33
+#: ../interfaces/utility.py:33
 msgid "This option specifies the default writing direction, some languages (Like Hebrew, Arabic, Urdu...) write from right to left instead of left to right."
 msgstr "Tämä valinta määrittelee oletuksenä käytettävän kirjoitussuunnan. Joissakin kielissä (esim. heprea, arabian kieli, urdu) kirjoitetaan oikealta vasemmalle."
 
-#: ./browser/controlpanel.py:48
+#. Default: "TinyMCE"
+#: ../profiles/upgrade_10_to_11/controlpanel.xml
+msgid "TinyMCE"
+msgstr ""
+
+#: ../browser/controlpanel.py:48
 msgid "TinyMCE Settings"
 msgstr "TinyMCE:n asetukset"
 
 #. Default: "TinyMCE Visual Editor"
-#: ./profiles/default/controlpanel.xml
+#: ../profiles/default/controlpanel.xml
+#: ../profiles/upgrade_10_to_11/controlpanel.xml
 msgid "TinyMCE Visual Editor"
 msgstr ""
 
 #. Default: "Title"
-#: ./skins/tinymce/plugins/plonelink/plonelink.htm.pt:273
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:275
 msgid "Title"
 msgstr "Otsikko"
 
-#: ./interfaces/utility.py:276
+#: ../interfaces/utility.py:276
 msgid "Toggle fullscreen mode"
 msgstr "Täysi näyttö"
 
-#: ./interfaces/utility.py:260
+#: ../interfaces/utility.py:260
 msgid "Toggle guidelines/invisible objects"
 msgstr "Ohjausviivat/näkymättömät objektit"
 
-#: ./browser/controlpanel.py:36
+#: ../browser/controlpanel.py:36
 msgid "Toolbar"
 msgstr "Työkalurivi"
 
-#: ./interfaces/utility.py:62
+#: ../interfaces/utility.py:62
 msgid "Toolbar width"
 msgstr "Työkalurivin leveys"
 
-#: ./interfaces/utility.py:124
+#: ../interfaces/utility.py:124
 msgid "Underline"
 msgstr "Alleviivaus"
 
-#: ./interfaces/utility.py:96
+#: ../interfaces/utility.py:96
 msgid "Undo"
 msgstr "Peru"
 
-#: ./interfaces/utility.py:192
+#: ../interfaces/utility.py:192
 msgid "Unlink"
 msgstr "Poista linkki"
 
-#: ./interfaces/utility.py:164
+#: ../interfaces/utility.py:164
 msgid "Unordered list"
 msgstr "Järjestämätön lista"
 
 #. Default: "Up one level"
-#: ./skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:50
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:68
 msgid "Up one level"
 msgstr "Ylös yksi taso"
 
 #. Default: "Upload"
-#: ./skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:127
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:165
 msgid "Upload"
 msgstr "Lähetä"
 
 #. Default: "Upload file"
-#: ./skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:53
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:71
 msgid "Upload file"
 msgstr "Lähetä tiedosto"
 
-#: ./interfaces/utility.py:264
+#: ../interfaces/utility.py:264
 msgid "Visual control characters on/off"
 msgstr "Visuaaliset kontrollimerkit päällä/pois päältä"
 
-#: ./interfaces/utility.py:302
+#: ../interfaces/utility.py:302
 msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
 msgstr "Päälle kytkettynä käyttäjän juuritaso tulee olemaan valittu objekti eikä käyttäjä voi lisätä kuvia tai linkkejä sivuston muista osista."
 
-#: ./interfaces/utility.py:32
+#: ../interfaces/utility.py:32
 msgid "Writing direction"
 msgstr "Kirjoitussuunta"
 
