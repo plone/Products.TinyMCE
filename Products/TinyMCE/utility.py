@@ -19,6 +19,10 @@ from Products.TinyMCE.interfaces.utility import ITinyMCEResourceTypes
 
 from OFS.SimpleItem import SimpleItem
 
+from zope.i18n import translate
+from zope.i18nmessageid import MessageFactory
+_ = MessageFactory('plone.tinymce')
+
 def form_adapter(context):
     """Form Adapter"""
     return getUtility(ITinyMCE)
@@ -273,7 +277,7 @@ class TinyMCE(SimpleItem):
 
     security.declarePrivate ('translateButtonsFromKupu')
     def translateButtonsFromKupu(self, context, buttons):
-
+        
         return_buttons = []
         
         for button in buttons:
@@ -561,10 +565,17 @@ class TinyMCE(SimpleItem):
             if isinstance(self.tablestyles, StringTypes):
                 for tablestyle in self.tablestyles.split('\n'):
                     tablestylefields = tablestyle.split('|')
-                    results['styles'].append(tablestylefields[0] + '|table|' + tablestylefields[1])
-                    results['table_styles'].append(tablestylefields[0] + '=' + tablestylefields[1])
+                    tablestyletitle = translate(_(tablestylefields[0]), context=self.REQUEST)
+                    results['styles'].append(tablestyletitle + '|table|' + tablestylefields[1])
+                    results['table_styles'].append(tablestyletitle + '=' + tablestylefields[1])
             if isinstance(self.styles, StringTypes):
-                results['styles'].extend(self.styles.split('\n'))
+                styles = []
+                for style in self.styles.split('\n'):
+                    stylefields = style.split('|')
+                    styletitle = translate(_(stylefields[0]), context=self.REQUEST)
+                    merge = styletitle + '|' + '|'.join(stylefields[1:])
+                    styles.append(merge)
+                results['styles'].extend(styles)
 
         if parastyles is not None:
             results['styles'].extend(parastyles)
