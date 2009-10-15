@@ -1,0 +1,596 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2009-10-14 08:25+0000\n"
+"PO-Revision-Date: 2009-10-15 17:13+0100\n"
+"Last-Translator: Mikel Larreategi <mlarreategi@codesyntax.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: eu\n"
+"Language-Name: Basque\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: tinymce\n"
+
+#: ../interfaces/utility.py:152
+msgid "Align center"
+msgstr "Zentratu"
+
+#: ../interfaces/utility.py:160
+msgid "Align full"
+msgstr "Justifikatu"
+
+#: ../interfaces/utility.py:148
+msgid "Align left"
+msgstr "Ezkerrera"
+
+#: ../interfaces/utility.py:156
+msgid "Align right"
+msgstr "Eskuinera"
+
+#: ../interfaces/utility.py:296
+msgid "Allow captioned images"
+msgstr "Irudi-oinak sartzea aktibatu"
+
+#. Default: "Anchors"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:51
+msgid "Anchors"
+msgstr "Aingurak"
+
+#: ../interfaces/utility.py:144
+msgid "Backcolor"
+msgstr "Atzeko kolora"
+
+#: ../interfaces/utility.py:116
+msgid "Bold"
+msgstr "Beltza"
+
+msgid "Call-out"
+msgstr "Zita"
+
+#. Default: "Caption"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:89
+msgid "Caption"
+msgstr "Irudi-oina"
+
+#: ../interfaces/utility.py:44
+msgid "Choose the Css used in Wysiwyg Editor Area"
+msgstr "WYSIWYG editorean erabili den CSSa aukeratu"
+
+#: ../interfaces/utility.py:256
+msgid "Cleanup messy code"
+msgstr "Kodea garbitu"
+
+msgid "Clear floats"
+msgstr "Float elementuak garbitu"
+
+#: ../interfaces/utility.py:311
+msgid "Contains Anchors"
+msgstr "Aingurak ditu"
+
+#: ../interfaces/utility.py:306
+msgid "Contains Objects"
+msgstr "Objektuak ditu"
+
+#: ../interfaces/utility.py:80
+msgid "Copy"
+msgstr "Kopiatu"
+
+#. Default: "Current Folder"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:30
+msgid "Current Folder"
+msgstr "Uneko karpeta"
+
+#: ../interfaces/utility.py:326
+msgid "Custom Plugins"
+msgstr "Pertsonalizatutako pluginak"
+
+#: ../interfaces/utility.py:280
+msgid "Custom Toolbar Buttons"
+msgstr "Pertsonalizatutako tresna-barrako botoiak"
+
+#: ../interfaces/utility.py:76
+msgid "Cut"
+msgstr "Moztu"
+
+#: ../interfaces/utility.py:172
+msgid "Definition list"
+msgstr "Definizio zerrenda"
+
+#. Default: "Description"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:123
+msgid "Description"
+msgstr "Deskribapena"
+
+#. Default: "Details"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:60
+msgid "Details"
+msgstr "Zehaztapenak"
+
+msgid "Discreet"
+msgstr "Txikiz"
+
+#. Default: "E-mail"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:117
+msgid "E-mail"
+msgstr "E-posta"
+
+#: ../interfaces/utility.py:272
+msgid "Edit HTML Source"
+msgstr "HTMLa editatu"
+
+#: ../interfaces/utility.py:27
+msgid "Editor height"
+msgstr "Editorearen altuera"
+
+#: ../interfaces/utility.py:22
+msgid "Editor width"
+msgstr "Editorearen zabalera"
+
+#: ../interfaces/utility.py:228
+msgid "Emotions"
+msgstr "Iruditxoak"
+
+#: ../interfaces/utility.py:17
+msgid "Enable auto resizing of the editor window."
+msgstr "Editorearen leihoaren tamaina automatikoki aldatzea aktibatu."
+
+#: ../interfaces/utility.py:39
+msgid "Enable contextmenu."
+msgstr "Kontestu-menua aktibatu."
+
+#: ../interfaces/utility.py:12
+msgid "Enable resizing the editor window."
+msgstr "Editorearen leihoaren tamaina aldatzea aktibatu."
+
+#: ../interfaces/utility.py:317
+msgid "Enter a list of content types which can be linked. Format is one contenttype per line."
+msgstr "Lotura egin ahal zaien elementu-moten zerrenda. Idatzi bat lerro bakoitzean."
+
+#: ../interfaces/utility.py:322
+msgid "Enter a list of content types which can be used as images. Format is one contenttype per line."
+msgstr "Irudi gisa erabil daitezkeen elementu-motak. Idatzi bat lerro bakoitzean."
+
+#: ../interfaces/utility.py:312
+msgid "Enter a list of content types which can contain anchors. Format is one contenttype per line."
+msgstr "Aingurak izan ditzaketen elementu-moten zerrenda. Idatzi bat lerro bakoitzean."
+
+#: ../interfaces/utility.py:307
+msgid "Enter a list of content types which can contain other objects. Format is one contenttype per line."
+msgstr "Beste elementu batzuk izan ditzaketen elementu-motak (karpeta erakoak). Idatzi bat lerro bakoitzean."
+
+#: ../interfaces/utility.py:327
+msgid "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
+msgstr "Editorean gehitu daitezkeen pluginak. Idatzi pluginaren-izena edo pluginaren-izena|kokapena lerro bakoitzean."
+
+#: ../interfaces/utility.py:281
+msgid "Enter a list of custom toolbar buttons which will be loaded in the editor, one per line."
+msgstr "Editorean gehitu daitezkeen tresna-barra gehigarriak. Idatzi bat lerro bakoitzean."
+
+#: ../interfaces/utility.py:50
+msgid "Enter a list of styles to appear in the style pulldown. Format is title|tag or title|tag|className, one per line."
+msgstr "Estiloen menuan agertu daitezkeen estiloak. Idatzi formatu honetan, bat lerro bakoitzean: izena|etiketa edo izena|etiketa|klaseIzena"
+
+#: ../interfaces/utility.py:55
+msgid "Enter a list of styles to appear in the table style pulldown. Format is title|class, one per line."
+msgstr "Tauletan aukeratu daitezkeen estiloak. Idatzi bat lerro bakoitzean eta formatu honetan: izena|klase izena"
+
+#: ../interfaces/utility.py:331
+msgid "Entity encoding"
+msgstr "Entitatean kodifikazioa"
+
+msgid "Even row"
+msgstr "Lerro bikoitia"
+
+#. Default: "External"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:41
+msgid "External"
+msgstr "Kanpokoak"
+
+#. Default: "External link"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:92
+msgid "External link"
+msgstr "Kanpoko lotura"
+
+msgid "Fancy grid listing"
+msgstr "Grid erako zerrenda"
+
+msgid "Fancy listing"
+msgstr "Zerrenda"
+
+msgid "Fancy vertical listing"
+msgstr "Zerrenda bertikala"
+
+#. Default: "File"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:109
+msgid "File"
+msgstr "Fitxategia"
+
+#: ../interfaces/utility.py:104
+msgid "Find"
+msgstr "Bilatu"
+
+#: ../interfaces/utility.py:108
+msgid "Find/Replace"
+msgstr "Bilatu/Ordezkatu"
+
+#: ../interfaces/utility.py:140
+msgid "Forecolor"
+msgstr "Kolorea"
+
+msgid "Heading"
+msgstr "Goiburua"
+
+msgid "Heading cell"
+msgstr "Izenburu-zelda"
+
+msgid "Highlight"
+msgstr "Markatu"
+
+#. Default: "Home"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:25
+msgid "Home"
+msgstr "Hasiera"
+
+#: ../interfaces/utility.py:321
+msgid "Image Objects"
+msgstr "Irudiak"
+
+#: ../interfaces/utility.py:297
+msgid "Images will be automatically captioned."
+msgstr "Irudien oinak automatikoki ekarri."
+
+#: ../interfaces/utility.py:180
+msgid "Indent"
+msgstr "Indentatu"
+
+#. Default: "Inline"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:80
+msgid "Inline"
+msgstr "Testuan zehar"
+
+#: ../interfaces/utility.py:216
+msgid "Insert advanced horizontal ruler"
+msgstr "Marra sartu (konfiguratu egin daiteke)"
+
+#: ../interfaces/utility.py:208
+msgid "Insert custom character"
+msgstr "Karaktere berazia sartu"
+
+#: ../interfaces/utility.py:220
+msgid "Insert date"
+msgstr "Data sartu"
+
+#: ../interfaces/utility.py:212
+msgid "Insert horizontal ruler"
+msgstr "Marra horizontala sartu"
+
+#: ../interfaces/utility.py:232
+msgid "Insert non-breaking space character"
+msgstr "Espazio karakterea sartu"
+
+#: ../interfaces/utility.py:236
+msgid "Insert page break"
+msgstr "Orri-saltoa sartu"
+
+#: ../interfaces/utility.py:224
+msgid "Insert time"
+msgstr "Ordua sartu"
+
+#: ../interfaces/utility.py:196
+msgid "Insert/edit anchor"
+msgstr "Aingura sartu/aldatu"
+
+#: ../interfaces/utility.py:268
+msgid "Insert/edit attributes"
+msgstr "Atributuak sartu/aldatu"
+
+#: ../interfaces/utility.py:200
+msgid "Insert/edit image"
+msgstr "Irudia sartu/aldatu"
+
+#: ../interfaces/utility.py:188
+msgid "Insert/edit link"
+msgstr "Lotura sartu/aldatu"
+
+#: ../interfaces/utility.py:204
+msgid "Insert/edit media"
+msgstr "Kanpoko kodea sartu/editatu"
+
+#. Default: "Internal link"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:65
+msgid "Internal link"
+msgstr "Barne lotura"
+
+msgid "Invisible grid"
+msgstr "Ertz gabeko taula"
+
+#: ../interfaces/utility.py:120
+msgid "Italic"
+msgstr "Etzana"
+
+#: ../browser/controlpanel.py:32
+msgid "Layout"
+msgstr "Itxura"
+
+#: ../interfaces/utility.py:35
+msgid "Left to right"
+msgstr "Ezkerretik eskuinera"
+
+#. Default: "Libraries"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:21
+msgid "Libraries"
+msgstr "Liburutegiak"
+
+#. Default: "Link to anchor"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:132
+msgid "Link to anchor"
+msgstr "Aingurara lotura"
+
+#: ../interfaces/utility.py:291
+msgid "Link using UIDs"
+msgstr "UIDak erabiliz egin lotura"
+
+#: ../interfaces/utility.py:316
+msgid "Linkable Objects"
+msgstr "Lotura egin dakieken elementuak"
+
+#: ../interfaces/utility.py:292
+msgid "Links to objects on this site can use unique object ids so that the links remain valid even if the target object is renamed or moved elsewhere on the site."
+msgstr "Elementuetarako loturak egitean, elementuan identifikadorea erabili daiteke (UIDa) eta horrela loturak ondo agertuko dira nahiz eta elementuen izena edo kokapena aldatu."
+
+msgid "Literal"
+msgstr "Literala"
+
+#. Default: "Mail"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:46
+msgid "Mail"
+msgstr "Posta"
+
+#: ../interfaces/utility.py:334
+msgid "Named"
+msgstr "Izenduna"
+
+#: ../interfaces/utility.py:334
+msgid "Numeric"
+msgstr "Zenbakia"
+
+msgid "Odd row"
+msgstr "Lerro bakoitia"
+
+#: ../interfaces/utility.py:168
+msgid "Ordered list"
+msgstr "Ordenatutako zerrenda"
+
+#: ../interfaces/utility.py:176
+msgid "Outdent"
+msgstr "Indentazioa kendu"
+
+msgid "Page break (print only)"
+msgstr "Orrialde saltoa (inprimatzeko bakarrik)"
+
+#: ../interfaces/utility.py:84
+msgid "Paste"
+msgstr "Itsatsi"
+
+#: ../interfaces/utility.py:88
+msgid "Paste as Plain Text"
+msgstr "Testu arrunt gisa itsatsi"
+
+#: ../interfaces/utility.py:92
+msgid "Paste from Word"
+msgstr "Wordetik itsatsi"
+
+#. Default: "Preview"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:102
+msgid "Preview"
+msgstr "Aurreikusi"
+
+#: ../interfaces/utility.py:240
+msgid "Print"
+msgstr "Inprimatu"
+
+msgid "Pull-quote"
+msgstr "Alde baten destakatuta"
+
+#: ../interfaces/utility.py:334
+msgid "Raw"
+msgstr "Dagoen moduan"
+
+#: ../interfaces/utility.py:100
+msgid "Redo"
+msgstr "Berregin"
+
+#: ../interfaces/utility.py:252
+msgid "Remove formatting"
+msgstr "Formatua ezabatu"
+
+#: ../browser/controlpanel.py:44
+msgid "Resource Types"
+msgstr "Elementu motak"
+
+#: ../interfaces/utility.py:35
+msgid "Right to left"
+msgstr "Eskuinetik ezkerrera"
+
+#: ../interfaces/utility.py:301
+msgid "Rooted to current object"
+msgstr "Uneko elementura errotu"
+
+#: ../interfaces/utility.py:72
+msgid "Save"
+msgstr "Gorde"
+
+#. Default: "Search"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:40
+msgid "Search"
+msgstr "Bilatu"
+
+#: ../interfaces/utility.py:112
+msgid "Select Style"
+msgstr "Estiloa aukeratu"
+
+#: ../browser/controlpanel.py:49
+msgid "Settings for the TinyMCE Wysiwyg editor."
+msgstr "TinyMCE editorearen ezarpenak"
+
+#: ../interfaces/utility.py:248
+msgid "Spellchecker"
+msgstr "Ortografia zuzentzailea"
+
+#: ../interfaces/utility.py:128
+msgid "Strikethrough"
+msgstr "Gainetik marra jarri"
+
+#: ../interfaces/utility.py:49
+msgid "Styles"
+msgstr "Estiloak"
+
+msgid "Subdued grid"
+msgstr "Taula"
+
+msgid "Subheading"
+msgstr "2. mailako goiburua"
+
+#. Default: "Subject"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:124
+msgid "Subject"
+msgstr "Gaia"
+
+#: ../interfaces/utility.py:132
+msgid "Subscript"
+msgstr "Azpi-indizez"
+
+#: ../interfaces/utility.py:136
+msgid "Superscript"
+msgstr "Goi-indizea"
+
+#: ../interfaces/utility.py:184
+msgid "Table controls"
+msgstr "Taularen kontrolak"
+
+#: ../interfaces/utility.py:54
+msgid "Table styles"
+msgstr "Taularen estiloak"
+
+#: ../interfaces/utility.py:332
+msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
+msgstr "Aukera honek entitateak nola prozesatu kontrolatzen du: Izenduna: karaktereak izendun entitate bihurtuko dira. Zenbakizkoa: karaktereak zenbakizko entitate bihurtuko dira. Dagoen moduan: karaktere guztiak entitateak ez balira moduan gordeko dira XMLko berezko entitateak (amp, lt, gt, quot) izan ezik."
+
+#: ../interfaces/utility.py:68
+msgid "This option enables the external toolbar which will be placed at the top of the page."
+msgstr "Aukera honeak, orrialdearen gainean kanpoko tresna-barra bat agertzea aktibatzen du."
+
+#: ../interfaces/utility.py:45
+msgid "This option enables you to specify a custom CSS file that extends the theme content CSS. This CSS file is the one used within the editor (the editable area)."
+msgstr "Aukera honek uneko CSSa gainidatziko duen beste CSS fitxategi bat kargatzea aktibatzen du. Erabiliko den CSS fitxategia editorean kargatzen dena a."
+
+#: ../interfaces/utility.py:18
+msgid "This option gives you the ability to enable/disable auto resizing the editor window depending on the content."
+msgstr "Aukera honek, editorearen leihoaren tamaina edukiaren arabera automatikoki aldatzeko aukera aktibatzen du."
+
+#: ../interfaces/utility.py:13
+msgid "This option gives you the ability to enable/disable resizing the editor window. If the editor width is set to a percentage only vertical resizing is enabled."
+msgstr "Aukera honek, editorearen tamaina aldatzeko aukera aktibatzen du. Editorearen zabalera ehunekotan adierazita badago, altuera bakarrik aldatuko da."
+
+#: ../interfaces/utility.py:40
+msgid "This option gives you the ability to enable/disable the use of the contextmenu."
+msgstr "Aukera honek, kontestu-menua aktibatzen du."
+
+#: ../interfaces/utility.py:28
+msgid "This option gives you the ability to specify the height of the editor in pixels. If auto resize is enabled this value is used as minimum height."
+msgstr "Aukera honek, editorearen altuera pixeletan zehazteko aukera ematen du. Tamaina automatikoki aldatzea aktibatuta badago, tamaina hau gutxieneko altuera gisa hartuko da."
+
+#: ../interfaces/utility.py:23
+msgid "This option gives you the ability to specify the width of the editor in pixels or percent."
+msgstr "Aukera honek, editorearean zabalera pixel edo ehunekotan zehazteko aukera ematen du."
+
+#: ../interfaces/utility.py:63
+msgid "This option gives you the ability to specify the width of the toolbar in pixels."
+msgstr "Aukera honek, tresna-barraren zabalera pixeletan zehazteko aukera ematen du."
+
+#: ../interfaces/utility.py:33
+msgid "This option specifies the default writing direction, some languages (Like Hebrew, Arabic, Urdu...) write from right to left instead of left to right."
+msgstr "Aukera honek, idazteko defektuzko zentzua zein den zehazten du, hizkuntza batzuetan (hebraieraz, arabiarrez, urduz...), eskuinetik ezkerrera idazten baita."
+
+#. Default: "TinyMCE"
+#: ../profiles/upgrade_10_to_11/controlpanel.xml
+msgid "TinyMCE"
+msgstr "TinyMCE"
+
+#: ../browser/controlpanel.py:48
+msgid "TinyMCE Settings"
+msgstr "TinyMCEren ezarpenak"
+
+#. Default: "TinyMCE Visual Editor"
+#: ../profiles/upgrade_10_to_11/controlpanel.xml
+#: ../profiles/default/controlpanel.xml
+msgid "TinyMCE Visual Editor"
+msgstr "TinyMCE editorea"
+
+#. Default: "Title"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:275
+msgid "Title"
+msgstr "Izenburua"
+
+#: ../interfaces/utility.py:276
+msgid "Toggle fullscreen mode"
+msgstr "Pantaila osoko modua aktibatu/desaktibatu"
+
+#: ../interfaces/utility.py:260
+msgid "Toggle guidelines/invisible objects"
+msgstr "Gidalerroak/ikusten ez diren elementuak agertarazi/desagertarazi"
+
+#: ../browser/controlpanel.py:36
+msgid "Toolbar"
+msgstr "Tresna-barra"
+
+#: ../interfaces/utility.py:62
+msgid "Toolbar width"
+msgstr "Tresna-barraren zabalera"
+
+#: ../interfaces/utility.py:124
+msgid "Underline"
+msgstr "Azpimarra"
+
+#: ../interfaces/utility.py:96
+msgid "Undo"
+msgstr "Desegin"
+
+#: ../interfaces/utility.py:192
+msgid "Unlink"
+msgstr "Lotura kendu"
+
+#: ../interfaces/utility.py:164
+msgid "Unordered list"
+msgstr "Ordenatu gabeko zerrenda"
+
+#. Default: "Up one level"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:52
+msgid "Up one level"
+msgstr "Maila bat gorago joan"
+
+#. Default: "Upload"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:129
+msgid "Upload"
+msgstr "Kargatu"
+
+#. Default: "Upload file"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:55
+msgid "Upload file"
+msgstr "Fitxategia kargatu"
+
+#: ../interfaces/utility.py:264
+msgid "Visual control characters on/off"
+msgstr "Kontrol karaktereak erakutsi ala ez"
+
+#: ../interfaces/utility.py:302
+msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
+msgstr "Aktibatuta dagoenean, erabiltzailearentzat uneko elementua izango da erroko elementua, eta ondorioz ezingo ditu webgunearen beste leku batzuetako elementuetarako loturak egin edo hango irudiak gehitu."
+
+#: ../interfaces/utility.py:32
+msgid "Writing direction"
+msgstr "Idazteko zentzua"
+
