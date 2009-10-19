@@ -100,7 +100,7 @@ msgstr "Couper"
 
 #: ../interfaces/utility.py:172
 msgid "Definition list"
-msgstr "List de définition"
+msgstr "Liste de définition"
 
 #. Default: "Description"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:159
@@ -138,7 +138,7 @@ msgstr "Emoticons"
 
 #: ../interfaces/utility.py:17
 msgid "Enable auto resizing of the editor window."
-msgstr "Activer le redimenssionnement automatique de l'éditeur à la fenêtre"
+msgstr "Activer le redimensionnement automatique de l'éditeur à la fenêtre"
 
 #: ../interfaces/utility.py:39
 msgid "Enable contextmenu."
@@ -146,11 +146,11 @@ msgstr "Activer le menu contextuel"
 
 #: ../interfaces/utility.py:12
 msgid "Enable resizing the editor window."
-msgstr "Activer le redimenssionnement manuel de l'éditeur"
+msgstr "Activer le redimensionnement manuel de l'éditeur"
 
 #: ../interfaces/utility.py:317
 msgid "Enter a list of content types which can be linked. Format is one contenttype per line."
-msgstr "Entrer une liste de types de contenus qui peuvent être ancré. Un type de contenu par ligne."
+msgstr "Entrer une liste de types de contenus qui peuvent être ancrés. Un type de contenu par ligne."
 
 #: ../interfaces/utility.py:322
 msgid "Enter a list of content types which can be used as images. Format is one contenttype per line."
@@ -170,7 +170,7 @@ msgstr "Enter une liste de modules additionnels qui seront chargé dans l'édite
 
 #: ../interfaces/utility.py:281
 msgid "Enter a list of custom toolbar buttons which will be loaded in the editor, one per line."
-msgstr "Entrer une liste de boutons personnalisés pour la barre d'outil qui seront chargé dans l'éditeur, un par ligne."
+msgstr "Entrer une liste de boutons personnalisés pour la barre d'outils qui seront chargés dans l'éditeur, un par ligne."
 
 #: ../interfaces/utility.py:50
 msgid "Enter a list of styles to appear in the style pulldown. Format is title|tag or title|tag|className, one per line."
@@ -268,7 +268,7 @@ msgstr "Insérer une date"
 
 #: ../interfaces/utility.py:212
 msgid "Insert horizontal ruler"
-msgstr "Insérer une règle horizontal"
+msgstr "Insérer une règle horizontale"
 
 #: ../interfaces/utility.py:232
 msgid "Insert non-breaking space character"
@@ -338,11 +338,11 @@ msgstr "Lien avec UIDs"
 
 #: ../interfaces/utility.py:316
 msgid "Linkable Objects"
-msgstr "Objet que l'on peut lier"
+msgstr "Objets que l'on peut lier"
 
 #: ../interfaces/utility.py:292
 msgid "Links to objects on this site can use unique object ids so that the links remain valid even if the target object is renamed or moved elsewhere on the site."
-msgstr "Liens vers les objets sur le site pouvant utiliser les identifiants uniques, ainsi les liens restent valides même si la cible est renommée ou déplacer dans le site."
+msgstr "Liens vers les objets sur le site pouvant utiliser les identifiants uniques, ainsi les liens restent valides même si la cible est renommée ou déplacée dans le site."
 
 msgid "Literal"
 msgstr "Littéral"
@@ -420,7 +420,7 @@ msgstr "De droite à gauche"
 
 #: ../interfaces/utility.py:301
 msgid "Rooted to current object"
-msgstr "Router à l'objet courant"
+msgstr "Attacher à l'objet courant"
 
 #: ../interfaces/utility.py:72
 msgid "Save"
@@ -464,11 +464,11 @@ msgstr "Sujet"
 
 #: ../interfaces/utility.py:132
 msgid "Subscript"
-msgstr "Sous script"
+msgstr "Indice"
 
 #: ../interfaces/utility.py:136
 msgid "Superscript"
-msgstr "Super script"
+msgstr "Exposant"
 
 #: ../interfaces/utility.py:184
 msgid "Table controls"
@@ -480,7 +480,7 @@ msgstr "Styles de tableau"
 
 #: ../interfaces/utility.py:332
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
-msgstr "Cette option contrôle la manière dont les entités/caractères sont traités. Les caractères nommés seront convertis en entités nommées basé sur les options. Numérique: Les caractères seront convertis en entités numériques. Brut: Tous les caractères ne seront pas stoqués en tant qu'entités excepté les entités par défaut XML: amp lt gt quot."
+msgstr "Cette option contrôle la manière dont les entités/caractères sont traités. Les caractères nommés seront convertis en entités nommées basées sur les options. Numérique: Les caractères seront convertis en entités numériques. Brut: Tous les caractères ne seront pas stockés en tant qu'entités exceptées les entités par défaut XML: amp lt gt quot."
 
 #: ../interfaces/utility.py:68
 msgid "This option enables the external toolbar which will be placed at the top of the page."
@@ -488,7 +488,7 @@ msgstr "Cette option active la barre d'outil externe qui sera placée en haut de
 
 #: ../interfaces/utility.py:45
 msgid "This option enables you to specify a custom CSS file that extends the theme content CSS. This CSS file is the one used within the editor (the editable area)."
-msgstr "Cette option vous permet de préciser une fichier CSS personnalisée qui étend le thème. Cet fichier CSS est utilisé dans l'éditeur (partie de la saisie)."
+msgstr "Cette option vous permet de préciser un fichier CSS personnalisée qui étend le thème. Ce fichier CSS est utilisé dans l'éditeur (partie de la saisie)."
 
 #: ../interfaces/utility.py:18
 msgid "This option gives you the ability to enable/disable auto resizing the editor window depending on the content."
@@ -504,7 +504,7 @@ msgstr "Cette option vous donne la possibilité d'activer/désactiver l'utilisat
 
 #: ../interfaces/utility.py:28
 msgid "This option gives you the ability to specify the height of the editor in pixels. If auto resize is enabled this value is used as minimum height."
-msgstr "Cette option vous donne la possibiltié de préciser la hauteur de l'éditeur en pixels. Si le redimensionnement automatique est activé cette valeur sera utilisé comme hauteur maximum."
+msgstr "Cette option vous donne la possibiltié de préciser la hauteur de l'éditeur en pixels. Si le redimensionnement automatique est activé cette valeur sera utilisée comme hauteur maximum."
 
 #: ../interfaces/utility.py:23
 msgid "This option gives you the ability to specify the width of the editor in pixels or percent."
@@ -556,7 +556,7 @@ msgstr "Largeur de la barre d'outils"
 
 #: ../interfaces/utility.py:124
 msgid "Underline"
-msgstr "Sousligner"
+msgstr "Souligner"
 
 #: ../interfaces/utility.py:96
 msgid "Undo"
@@ -591,7 +591,7 @@ msgstr "Contrôle des caractères on/off"
 
 #: ../interfaces/utility.py:302
 msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
-msgstr "Si activé l'utilisateur sera dirigé vers l'objet courant et ne pourra pas ajouter des liens et des images à partir d'autre par sur le site."
+msgstr "Si activé l'utilisateur sera limité à l'objet courant et ne pourra pas ajouter des liens et des images à partir d'autres endroits site."
 
 #: ../interfaces/utility.py:32
 msgid "Writing direction"
