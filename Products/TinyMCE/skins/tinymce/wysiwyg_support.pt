@@ -5,7 +5,7 @@
   <tal:block define="member_editor python: context.portal_membership.getAuthenticatedMember().getProperty('wysiwyg_editor').lower();
                      default_editor python: context.portal_properties.site_properties.getProperty('default_editor', '').lower();
                      editor python: test(member_editor=='', default_editor, member_editor);
-                     support python: path('nocall:here/%s_wysiwyg_support|here/%s/wysiwyg_support|here/portal_skins/plone_wysiwyg/wysiwyg_support|here/portal_skins/archetypes/wysiwyg_support' % (editor, editor));">
+                     support python: path('nocall:here/%s_wysiwyg_support|here/%s/wysiwyg_support|here/portal_skins/plone_wysiwyg/wysiwyg_support' % (editor, editor));">
    <metal:block metal:use-macro="support/macros/wysiwygEditorBox">
    </metal:block>
   </tal:block>
@@ -15,7 +15,7 @@
   <tal:block define="member_editor python: context.portal_membership.getAuthenticatedMember().getProperty('wysiwyg_editor').lower();
                      default_editor python: context.portal_properties.site_properties.getProperty('default_editor', '').lower();
                      editor python: test(member_editor=='', default_editor, member_editor);
-                     support python: path('nocall:here/%s_wysiwyg_support|here/%s/wysiwyg_support|here/portal_skins/plone_wysiwyg/wysiwyg_support|here/portal_skins/archetypes/wysiwyg_support' % (editor, editor));">
+                     support python: path('nocall:here/%s_wysiwyg_support|here/%s/wysiwyg_support|here/portal_skins/plone_wysiwyg/wysiwyg_support' % (editor, editor));">
    <metal:block metal:use-macro="support/macros/textFormatSelector">
    </metal:block>
   </tal:block>
