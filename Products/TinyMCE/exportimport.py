@@ -125,11 +125,14 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
                     else:
                         fieldnode.setAttribute('value', '')
                 elif category[field]['type'] == 'List':
-                    for value in fieldvalue.split('\n'):
-                        if value:
-                            child = self._doc.createElement('element')
-                            child.setAttribute('value', value)
-                            fieldnode.appendChild(child)
+                    if not fieldvalue:
+                        fieldnode.setAttribute('value', '')
+                    else:
+                        for value in fieldvalue.split('\n'):
+                            if value:
+                                child = self._doc.createElement('element')
+                                child.setAttribute('value', value)
+                                fieldnode.appendChild(child)
                 categorynode.appendChild(fieldnode)
             object.appendChild(categorynode)
         return object
