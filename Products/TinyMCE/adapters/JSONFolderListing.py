@@ -34,13 +34,13 @@ class JSONFolderListing(object):
         portal_url = utool()
         result = []
 
-        if path is None:
-            # Add siteroot
-            result.append({'title':ptool.title(),'url':portal_url})
-
         relative = utool.getRelativeContentPath(self.context)
         portal = utool.getPortalObject()
         start = 0
+        if path is None:
+            # Add siteroot
+            result.append({'title':portal.title_or_id(),'url':portal_url})
+
 
         if path is not None:
             path = path[len(portal_url)+1:-1]
