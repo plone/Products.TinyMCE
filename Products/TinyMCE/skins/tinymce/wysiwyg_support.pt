@@ -2,7 +2,8 @@
 
 <!-- wysiwyg multiplexing widget, this allows for both TinyMCE, Epoz, Kupu, and Straight HTML to coexist -->
 <div metal:define-macro="wysiwygEditorBox">
-  <tal:block define="member_editor python: context.portal_membership.getAuthenticatedMember().getProperty('wysiwyg_editor').lower();
+  <tal:block define="isAnon context/@@plone_portal_state/anonymous;
+                     member_editor python: not isAnon and context.portal_membership.getAuthenticatedMember().getProperty('wysiwyg_editor').lower() or '';
                      default_editor python: context.portal_properties.site_properties.getProperty('default_editor', '').lower();
                      editor python: test(member_editor=='', default_editor, member_editor);
                      support python: path('nocall:here/%s_wysiwyg_support|here/%s/wysiwyg_support|here/portal_skins/plone_wysiwyg/wysiwyg_support' % (editor, editor));">
