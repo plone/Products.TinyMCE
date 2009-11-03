@@ -46,6 +46,10 @@ class TinyMCEOutput(SGMLParser):
         """Handle declarations unmodified """
         self.append_data("<!%(text)s>" % locals())
 
+    def lookup_uid(self, uid):
+        reference_tool = getToolByName(self.context, 'reference_catalog')
+        return reference_tool.lookupObject(uid)
+
     def unknown_starttag(self, tag, attrs):
         """Here we've got the actual conversion of links and images. Convert UUID's to absolute url's, and process captioned images to HTML"""
         if tag in ['a', 'img']:
@@ -57,7 +61,7 @@ class TinyMCEOutput(SGMLParser):
             if tag == 'a':
                 if attributes.has_key('href'):
                     href = attributes['href']
-                    if href.find('resolveuid') == 0:
+                    if 'resolveuid' in href:
                         # We should check if "Link using UIDs" is enabled in the TinyMCE tool, but then the kupu resolveuid is used, so let's always transform here
                         parts = href.split("/")
                         # Get the actual UUID
@@ -66,8 +70,7 @@ class TinyMCEOutput(SGMLParser):
                         if len(parts) > 2:
                             # There is more than just the UUID, save it in appendix
                             appendix = "/".join(parts[2:])
-                        reference_tool = getToolByName(self.context, 'reference_catalog')
-                        ref_obj = reference_tool.lookupObject(uid)
+                        ref_obj = self.lookup_uid(uid)
                         if ref_obj:
                             href = ref_obj.absolute_url() + appendix
                             attributes['href'] = href
@@ -78,7 +81,7 @@ class TinyMCEOutput(SGMLParser):
                 description = ""
                 if attributes.has_key("src"):
                     src = attributes["src"]
-                if src.find('resolveuid') == 0:
+                if 'resolveuid' in src:
                     # We need to convert the UUID to a relative path here
                     parts = src.split("/")
                     uid = parts[1]
@@ -86,8 +89,7 @@ class TinyMCEOutput(SGMLParser):
                     if len(parts) > 2:
                         # There is more than just the UUID, save it in appendix (query parameters for example)
                         appendix = "/" + "/".join(parts[2:])
-                    reference_tool = getToolByName(self.context, 'reference_catalog')
-                    image_obj = reference_tool.lookupObject(uid)
+                    image_obj = self.lookup_uid(uid)
                     if image_obj:
                         # Only do something when the image is actually found in the reference_catalog
                         src = image_obj.absolute_url() + appendix
