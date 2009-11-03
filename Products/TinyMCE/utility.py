@@ -4,7 +4,7 @@ from zope.component import getUtility
 from zope.interface import classProvides
 from AccessControl import ClassSecurityInfo
 from Products.CMFCore.utils import getToolByName
-from Products.CMFCore.interfaces._content import IContentish, IFolderish
+from Products.CMFCore.interfaces._content import IFolderish
 try:
     import json
 except:
@@ -19,7 +19,6 @@ from Products.TinyMCE.interfaces.utility import ITinyMCEResourceTypes
 
 from OFS.SimpleItem import SimpleItem
 
-from zope.i18n import translate
 from zope.i18nmessageid import MessageFactory
 _ = MessageFactory('plone.tinymce')
 
@@ -565,14 +564,14 @@ class TinyMCE(SimpleItem):
             if isinstance(self.tablestyles, StringTypes):
                 for tablestyle in self.tablestyles.split('\n'):
                     tablestylefields = tablestyle.split('|')
-                    tablestyletitle = translate(_(tablestylefields[0]), context=self.REQUEST)
+                    tablestyletitle = tablestylefields[0]
                     results['styles'].append(tablestyletitle + '|table|' + tablestylefields[1])
                     results['table_styles'].append(tablestyletitle + '=' + tablestylefields[1])
             if isinstance(self.styles, StringTypes):
                 styles = []
                 for style in self.styles.split('\n'):
                     stylefields = style.split('|')
-                    styletitle = translate(_(stylefields[0]), context=self.REQUEST)
+                    styletitle = stylefields[0]
                     merge = styletitle + '|' + '|'.join(stylefields[1:])
                     styles.append(merge)
                 results['styles'].extend(styles)

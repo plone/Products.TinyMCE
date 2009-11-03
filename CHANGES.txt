@@ -5,6 +5,10 @@ HISTORY
 1.1rc7 (Unreleased)
 -------------------
 
+- Removed translate calls inside TinyMCE utility. You don't have access to the
+  request inside a utility and therefor cannot translate anything.
+  [hannosch]
+
 - Factored out resolveuid handling in the TinyMCEOutput parser to a
   lookup_uid method.
   [hannosch]
