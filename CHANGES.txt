@@ -5,6 +5,10 @@ HISTORY
 1.1rc7 (Unreleased)
 -------------------
 
+- Factored out resolveuid handling in the TinyMCEOutput parser to a
+  lookup_uid method.
+  [hannosch]
+
 - Review french translation from Nicolas LAURANCE
   [toutpt]
 
