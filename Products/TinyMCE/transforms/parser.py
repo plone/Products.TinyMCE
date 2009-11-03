@@ -3,6 +3,12 @@ from Products.CMFCore.utils import getToolByName
 from sgmllib import SGMLParser, SGMLParseError
 from urlparse import urlsplit, urljoin
 
+HAS_LINGUAPLONE = True
+try:
+    from Products.LinguaPlone.utils import translated_references
+except ImportError:
+    HAS_LINGUAPLONE = False
+
 singleton_tags = ["img", "br", "hr", "input", "meta", "param", "col"]
 
 class TinyMCEOutput(SGMLParser):
@@ -47,7 +53,13 @@ class TinyMCEOutput(SGMLParser):
         self.append_data("<!%(text)s>" % locals())
 
     def lookup_uid(self, uid):
-        reference_tool = getToolByName(self.context, 'reference_catalog')
+        context = self.context
+        if HAS_LINGUAPLONE:
+            # If we have LinguaPlone installed, add support for language-aware
+            # references
+            uids = translated_references(context, context.Language(), uid)
+            uid = uids[0]
+        reference_tool = getToolByName(context, 'reference_catalog')
         return reference_tool.lookupObject(uid)
 
     def unknown_starttag(self, tag, attrs):
