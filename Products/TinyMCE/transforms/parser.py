@@ -58,7 +58,8 @@ class TinyMCEOutput(SGMLParser):
             # If we have LinguaPlone installed, add support for language-aware
             # references
             uids = translated_references(context, context.Language(), uid)
-            uid = uids[0]
+            if len(uids) > 0:
+                uid = uids[0]
         reference_tool = getToolByName(context, 'reference_catalog')
         return reference_tool.lookupObject(uid)
 
