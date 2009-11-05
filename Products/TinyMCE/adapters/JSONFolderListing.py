@@ -16,7 +16,6 @@ from Products.CMFPlone.interfaces import INonStructuralFolder
 from Products.CMFPlone import utils
 from Products.CMFCore.utils import getToolByName
 from Acquisition import aq_inner
-from Products.CMFPlone.utils import log
 from Products.CMFCore.interfaces import ISiteRoot
 
 class JSONFolderListing(object):

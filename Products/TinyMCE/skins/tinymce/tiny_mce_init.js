@@ -70,6 +70,7 @@ function TinyMCEConfig(id) {
             document_base_url : this.getBase(),
             document_url : this.getDocumentUrl(),
             portal_url : this.getPortalUrl(),
+            navigation_root_url : this.getNavigationRootUrl(),
             livesearch : this.getLivesearch(),
             valid_elements : this.getValidElements(),
             link_using_uids : this.getLinkUsingUids(),
@@ -295,6 +296,10 @@ function TinyMCEConfig(id) {
 
     this.getPortalUrl = function () {
         return this.widget_config.portal_url;
+    };
+
+    this.getNavigationRootUrl = function () {
+        return this.widget_config.navigation_root_url;
     };
 
     this.getLivesearch = function () {

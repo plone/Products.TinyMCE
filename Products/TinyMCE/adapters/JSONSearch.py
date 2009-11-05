@@ -32,9 +32,8 @@ class JSONSearch(object):
 
         results['parent_url'] = ''
         results['path'] = []
-
         if searchtext:
-            for brain in self.context.portal_catalog.searchResults({'SearchableText':'%s*' % searchtext, 'portal_type':filter_portal_types, 'sort_on':'sortable_title'}):
+            for brain in self.context.portal_catalog.searchResults({'SearchableText':'%s*' % searchtext, 'portal_type':filter_portal_types, 'sort_on':'sortable_title', 'path': self.context.absolute_url(1)}):
                 catalog_results.append({
                     'id': brain.getId,
                     'uid': brain.UID,

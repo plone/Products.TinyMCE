@@ -129,7 +129,7 @@ function init() {
 
 function checkSearch(e) {
     if (tinyMCEPopup.editor.settings.livesearch || e.keyCode == 13) {
-        getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonlinkablesearch');
+        getFolderListing(tinyMCEPopup.editor.settings.navigation_root_url, 'tinymce-jsonlinkablesearch');
     }
 }
 

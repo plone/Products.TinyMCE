@@ -5,6 +5,8 @@ from zope.interface import classProvides
 from AccessControl import ClassSecurityInfo
 from Products.CMFCore.utils import getToolByName
 from Products.CMFCore.interfaces._content import IFolderish
+from plone.app.layout.navigation.root import getNavigationRoot
+from Products.CMFCore.interfaces import ISiteRoot
 try:
     import json
 except:
@@ -665,8 +667,10 @@ class TinyMCE(SimpleItem):
 
         results['entity_encoding'] = self.entity_encoding
 
-        portal_url = getToolByName(self, 'portal_url')
-        results['portal_url'] = portal_url()
+        portal = getUtility(ISiteRoot)
+        results['portal_url'] = context.restrictedTraverse(portal.absolute_url()).absolute_url()
+        root_url = getNavigationRoot(context)
+        results['navigation_root_url'] = context.restrictedTraverse(root_url).absolute_url()
 
         props = getToolByName(self, 'portal_properties')
         livesearch = props.site_properties.getProperty('enable_livesearch', False)
@@ -700,7 +704,7 @@ class TinyMCE(SimpleItem):
                 else:
                     results['parent'] = getattr(context.aq_inner, 'aq_parent', None).absolute_url() + "/"
         except:
-            results['parent'] = portal_url() + "/"
-            results['document_url'] = portal_url()
+            results['parent'] = results['portal_url'] + "/"
+            results['document_url'] = results['portal_url']
 
         return json.dumps(results)

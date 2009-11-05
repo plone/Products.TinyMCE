@@ -22,7 +22,7 @@
           <legend i18n:domain="plone.tinymce" i18n:translate="">Libraries</legend>
                 <ul class="configlets">
                     <li id="home">
-              <a href="javascript:displayPanel('internal_panel'); getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonlinkablefolderlisting');">
+              <a href="javascript:displayPanel('internal_panel'); getFolderListing(tinyMCEPopup.editor.settings.navigation_root_url, 'tinymce-jsonlinkablefolderlisting');">
                   <img alt="" tal:attributes="src string:$portal_url/logoIcon.gif"/> <span i18n:domain="plone.tinymce" i18n:translate="">Home</span>
               </a>
             </li>
@@ -56,7 +56,7 @@
                   <label for="searchtext" i18n:domain="plone.tinymce" i18n:translate="">Search</label>
                   <div class="widget">
                     <input type="text" name="searchtext" id="searchtext" value="" onkeyup="checkSearch(event);" size="12"/>
-                    <input type="button" value="Search" i18n:domain="plone.tinymce" i18n:attributes="value" class="searchButton" onclick="getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonlinkablesearch');"/>
+                    <input type="button" value="Search" i18n:domain="plone.tinymce" i18n:attributes="value" class="searchButton" onclick="getFolderListing(tinyMCEPopup.editor.settings.navigation_url, 'tinymce-jsonlinkablesearch');"/>
                   </div>
                 </div>
         </fieldset>

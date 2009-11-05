@@ -46,7 +46,7 @@
         />
 
     <adapter
-        for="Products.CMFPlone.interfaces.siteroot.IPloneSiteRoot"
+        for="Products.CMFCore.interfaces._content.IFolderish"
         provides="..adapters.interfaces.JSONSearch.IJSONSearch"
         factory="..adapters.JSONSearch.JSONSearch"
         />
