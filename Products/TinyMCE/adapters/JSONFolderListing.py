@@ -7,20 +7,21 @@ try:
 except:
     import simplejson as json
 
+from plone.app.layout.navigation.root import getNavigationRoot
+from plone.app.layout.navigation.interfaces import INavigationRoot
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.adapters.interfaces.JSONFolderListing import IJSONFolderListing
 from Products.CMFCore.interfaces._content import IContentish, IFolderish
-from Products.CMFPlone.interfaces.siteroot import IPloneSiteRoot
 from Products.CMFPlone.interfaces import INonStructuralFolder
 from Products.CMFPlone import utils
-from Products.CMFCore.utils import getUtilityByInterfaceName
 from Products.CMFCore.utils import getToolByName
 from Acquisition import aq_inner
+from Products.CMFPlone.utils import log
+from Products.CMFCore.interfaces import ISiteRoot
 
 class JSONFolderListing(object):
     """Returns a folderish like listing in JSON"""
     implements(IJSONFolderListing)
-    #adapts(IContentish, IPloneSiteRoot)
 
     def __init__(self, context):
         """Constructor"""
@@ -28,31 +29,30 @@ class JSONFolderListing(object):
 
     def getBreadcrumbs(self, path=None):
         """Get breadcrumbs"""
-        #TODO: getToolByName is deprecated
-        ptool = getUtilityByInterfaceName('Products.CMFCore.interfaces.IPropertiesTool')
-        utool = getToolByName(self.context, 'portal_url')
-        portal_url = utool()
         result = []
 
-        relative = utool.getRelativeContentPath(self.context)
-        portal = utool.getPortalObject()
-        start = 0
-        if path is None:
-            # Add siteroot
-            result.append({'title':portal.title_or_id(),'url':portal_url})
+        portal = getUtility(ISiteRoot)
+        portal_path = portal.getPhysicalPath()
 
+        root_url = getNavigationRoot(self.context)
+        root = aq_inner(portal.restrictedTraverse(root_url))
 
         if path is not None:
-            path = path[len(portal_url)+1:-1]
-            start = len(path.split('/')) - 1
+            root = aq_inner(root.restrictedTraverse(path[len(self.context.restrictedTraverse(root_url).absolute_url()) + 1:-1]))
+
+        relative = aq_inner(self.context).getPhysicalPath()[len(root.getPhysicalPath()):]
+
+        if path is None:
+            # Add siteroot
+            result.append({'title':root.title_or_id(),'url':'/'.join(root.getPhysicalPath())})
 
         for i in range(len(relative)):
             now = relative[ :i+1 ]
-            obj = aq_inner(portal.restrictedTraverse(now))
+            obj = aq_inner(root.restrictedTraverse(now))
 
             if IFolderish.providedBy(obj):
                 if not now[-1] == 'talkback':
-                    result.append({'title':obj.title_or_id(),'url':portal_url + '/' + '/'.join(now)})
+                    result.append({'title':obj.title_or_id(),'url':root_url + '/' + '/'.join(now)})
         return result
 
 
@@ -69,7 +69,7 @@ class JSONFolderListing(object):
         if not IFolderish.providedBy(object):
             object = object.getParentNode()
 
-        if IPloneSiteRoot.providedBy(object) or (rooted == "True" and document_base_url[:-1] == object.absolute_url()):
+        if INavigationRoot.providedBy(object) or (rooted == "True" and document_base_url[:-1] == object.absolute_url()):
             results['parent_url'] = ''
         else:
             results['parent_url'] = object.getParentNode().absolute_url()
