@@ -5,6 +5,9 @@ HISTORY
 1.1rc7 (Unreleased)
 -------------------
 
+- Link and image drawers now look at INavigationRoot and not at IPloneSiteRoot.
+  [robgietema]
+
 - Added support for LinguaPlone's translation aware reference handling to the
   new lookup_uid method.
   [hannosch]
