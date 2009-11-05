@@ -152,7 +152,7 @@ var ImageDialog = {
 
     checkSearch : function(e) {
         if (tinyMCEPopup.editor.settings.livesearch || e.keyCode == 13) {
-            ImageDialog.getFolderListing(tinyMCEPopup.editor.settings.portal_url, 'tinymce-jsonimagesearch');
+            ImageDialog.getFolderListing(tinyMCEPopup.editor.settings.navigation_root_url, 'tinymce-jsonimagesearch');
         } 
     },
 
