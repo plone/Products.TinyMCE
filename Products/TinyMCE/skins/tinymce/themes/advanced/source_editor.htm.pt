@@ -11,9 +11,8 @@
 	<div class="dialog-wrapper">
 		<form name="source" onsubmit="saveContent();return false;" action="#">
 			<fieldset>
-				<legend i18n:translate="advanced_dlg_code_title"></legend>
+				<legend for="htmlSource" i18n:translate="advanced_dlg_code_title"></legend>
 				<div class="field">
-					<label for="htmlSource" i18n:translate="advanced_dlg_code_title"></label>
 					<div class="widget">
 						<textarea name="htmlSource" id="htmlSource" rows="18" cols="100" style="" wrap="off" class="mceFocus"></textarea>
 					</div>
