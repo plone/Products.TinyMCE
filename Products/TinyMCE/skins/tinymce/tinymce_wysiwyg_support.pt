@@ -18,7 +18,7 @@
                             onblur onblur|nothing;
                             rows rows|default;
                             cols cols|default;
-                            title python:here.portal_tinymce.getConfiguration (context=context, field=field);
+                            title python:here.portal_tinymce.getConfiguration (context=context, field=field, request=request);
                             class string:mce_editable"></textarea>
 
   <script type="text/javascript"
