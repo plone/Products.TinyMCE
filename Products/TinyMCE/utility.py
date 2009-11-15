@@ -22,6 +22,7 @@ from Products.TinyMCE.interfaces.utility import ITinyMCEResourceTypes
 from OFS.SimpleItem import SimpleItem
 
 from zope.i18nmessageid import MessageFactory
+from zope.i18n import translate
 _ = MessageFactory('plone.tinymce')
 
 def form_adapter(context):
@@ -548,7 +549,7 @@ class TinyMCE(SimpleItem):
         return 'text/html'
 
     security.declareProtected('View', 'getConfiguration')
-    def getConfiguration(self, context=None, field=None):
+    def getConfiguration(self, context=None, field=None, request=None):
         results = {}
 
         # Get widget attributes
@@ -567,6 +568,8 @@ class TinyMCE(SimpleItem):
                 for tablestyle in self.tablestyles.split('\n'):
                     tablestylefields = tablestyle.split('|')
                     tablestyletitle = tablestylefields[0]
+                    if request is not None:
+                        tablestyletitle = translate(_(tablestylefields[0]), context=request)
                     results['styles'].append(tablestyletitle + '|table|' + tablestylefields[1])
                     results['table_styles'].append(tablestyletitle + '=' + tablestylefields[1])
             if isinstance(self.styles, StringTypes):
@@ -574,6 +577,8 @@ class TinyMCE(SimpleItem):
                 for style in self.styles.split('\n'):
                     stylefields = style.split('|')
                     styletitle = stylefields[0]
+                    if request is not None:
+                        styletitle = translate(_(stylefields[0]), context=request)
                     merge = styletitle + '|' + '|'.join(stylefields[1:])
                     styles.append(merge)
                 results['styles'].extend(styles)

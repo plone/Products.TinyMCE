@@ -345,5 +345,6 @@ class ITinyMCE(
     def getContentType(self, object=None, fieldname=None):
         """Get the content type of the field."""
 
-    def getConfiguration(self, context=None, field=None):
-        """Get the configuration based on the control panel settings and the field settings."""
+    def getConfiguration(self, context=None, field=None, request=None):
+        """Get the configuration based on the control panel settings and the field settings.
+        request can be provide for translation purpose."""
