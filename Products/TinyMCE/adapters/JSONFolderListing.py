@@ -30,17 +30,17 @@ class JSONFolderListing(object):
         """Get breadcrumbs"""
         result = []
 
-        portal = getUtility(ISiteRoot)
-        portal_path = portal.getPhysicalPath()
-
         root_url = getNavigationRoot(self.context)
-        root = aq_inner(portal.restrictedTraverse(root_url))
+        root = aq_inner(self.context.restrictedTraverse(root_url))
+        root_url = root.absolute_url()
 
         if path is not None:
-            root = aq_inner(root.restrictedTraverse(path[len(self.context.restrictedTraverse(root_url).absolute_url()) + 1:-1]))
+            root_abs_url = root.absolute_url()
+            path = path.replace(root_abs_url, '', 1)
+            path = path.strip('/')
+            root = aq_inner(root.restrictedTraverse(path))
 
         relative = aq_inner(self.context).getPhysicalPath()[len(root.getPhysicalPath()):]
-
         if path is None:
             # Add siteroot
             result.append({'title':root.title_or_id(),'url':'/'.join(root.getPhysicalPath())})
@@ -74,7 +74,7 @@ class JSONFolderListing(object):
             results['parent_url'] = object.getParentNode().absolute_url()
 
         if rooted == "True":
-            results['path'] = self.getBreadcrumbs(document_base_url)
+            results['path'] = self.getBreadcrumbs(results['parent_url'])
         else:
             # get all items from siteroot to context (title and url)
             results['path'] = self.getBreadcrumbs()
