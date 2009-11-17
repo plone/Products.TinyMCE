@@ -75,7 +75,7 @@ Let's create some more content to get breadcrumbs.
   >>> document = folder_object.invokeFactory('Document', id='document')
 
 When we call the getListing method on the document we should get the listing of
-it's parent.
+its parent.
 
   >>> object = IJSONFolderListing(folder_object.get(document))
   >>> object.getListing(filter_portal_types=[],\
