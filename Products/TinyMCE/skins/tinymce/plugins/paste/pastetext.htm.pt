@@ -14,7 +14,6 @@
 			<fieldset>
 				<legend i18n:translate="paste_paste_text_desc"></legend>
 				<div class="field">
-					<label for="htmlSource" i18n:translate="paste_paste_text_desc"></label>
 					<div class="formHelp" i18n:translate="paste_dlg_text_title"></div>
 					<div class="widget">
 						<textarea  id="content" name="content" rows="15" cols="100" wrap="soft" class="mceFocus"></textarea>
@@ -23,13 +22,13 @@
 
 				<div class="field">
 					<div class="widget">
-						<input name="linebreaks" id="linebreaks" checked="checked" type="checkbox">
+						<input name="linebreaks" id="linebreaks" type="checkbox">
 						<label for="noshade" i18n:translate="paste_dlg_text_linebreaks"></label>
 					</div>
 				</div>
 			</fieldset>
 
-			<div class="visualClear"><!-- --></div>
+			<span class="visualClear"><!-- --></span>
 
 			<div class="mceActionPanel formControls">
 				<span class="actionButtons">
