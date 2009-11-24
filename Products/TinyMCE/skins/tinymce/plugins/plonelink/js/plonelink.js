@@ -122,7 +122,7 @@ function init() {
                 setFormValue('externalurl', href.split('ftp://')[1], 0);
             }
         } else {
-            getFolderListing(tinyMCEPopup.editor.settings.navigation_root_url, 'tinymce-jsonlinkablefolderlisting');
+            getCurrentFolderListing();
         }
     }
 }
