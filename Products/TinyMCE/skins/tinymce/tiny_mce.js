@@ -8284,6 +8284,11 @@ tinymce.create('tinymce.ui.Toolbar:tinymce.ui.Container', {
             }
             tinymce.documentBaseURL = lo_array.join('/') + '/';
 
+            // Plone fix when editing contextual portlets
+            if (lo.href.indexOf('++contextportlets++') != -1) {
+                tinymce.documentBaseURL = tinymce.documentBaseURL.substr(0, lo.href.indexOf('++contextportlets++'));
+            }
+            
 			// Setup some URLs where the editor API is located and where the document is
 			/*
 			tinymce.documentBaseURL = lo.href.replace(/[\?#].*$/, '').replace(/[\/\\][^\/]+$/, '');
