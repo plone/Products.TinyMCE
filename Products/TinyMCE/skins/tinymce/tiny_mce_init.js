@@ -139,7 +139,7 @@ function TinyMCEConfig(id) {
         h['Print'].push('{ title: "Print", tag: "", className: "-", type: "Print" }');
 
         // Add defaults
-        h['Text'].push('{ title: "Normal paragraph", tag: "p", className: "", type: "Text" }');
+        h['Text'].push('{ title: "Normal paragraph", tag: "p", className: " ", type: "Text" }');
 
         h['Lists'].push('{ title: "Disc", tag: "ul", className: "", listType: "disc", type: "Lists" }');
         h['Lists'].push('{ title: "Square", tag: "ul", className: "", listType: "square", type: "Lists" }');
