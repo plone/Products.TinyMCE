@@ -560,6 +560,7 @@ class TinyMCE(SimpleItem):
         redefine_parastyles = getattr (widget, 'redefine_parastyles', None)
         parastyles = getattr (widget, 'parastyles', None)
         rooted = getattr (widget, 'rooted', False)
+        toolbar_width = getattr(widget, 'toolbar_width', self.toolbar_width)
 
         # Add styles to results
         results['styles'] = []
@@ -637,7 +638,7 @@ class TinyMCE(SimpleItem):
             results['editor_height'] = 400
 
         try:
-            results['toolbar_width'] = int(self.toolbar_width)
+            results['toolbar_width'] = int(toolbar_width)
         except:
             results['toolbar_width'] = 440
 
