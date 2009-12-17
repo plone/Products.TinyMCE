@@ -52,7 +52,7 @@ class TinyMCE(SimpleItem):
     tablestyles = FieldProperty(ITinyMCELayout['tablestyles'])
 
     toolbar_width = FieldProperty(ITinyMCEToolbar['toolbar_width'])
-    
+
     toolbar_external = FieldProperty(ITinyMCEToolbar['toolbar_external'])
 
     toolbar_save = FieldProperty(ITinyMCEToolbar['toolbar_save'])
@@ -129,19 +129,28 @@ class TinyMCE(SimpleItem):
     imageobjects = FieldProperty(ITinyMCEResourceTypes['imageobjects'])
     customplugins = FieldProperty(ITinyMCEResourceTypes['customplugins'])
 
-    def getImageScales(self, primary_field=None):
+    def getImageScales(self, primary_field=None, context=None):
         """Return the image sizes for the drawer"""
         if primary_field is None:
             from Products.ATContentTypes.content.image import ATImage
             primary_field = ATImage.schema['image']
+
         sizes = primary_field.getAvailableSizes(primary_field)
         field_name = primary_field.getName()
-        scales = [{'value':'', 'title':'Original', 'size':[0,0]}]
-        for key, value in sizes.items():
-            scales.append({'value': '%s_%s' % (field_name, key), 
-                           'size': [value[0], value[1]],
-                           'title':key.capitalize() })
+
+        # Extract image dimensions from context.
+        if context is not None:
+            width, height = context.getField(field_name).getSize(context)
+        else:
+            width, height = 0, 0
+
+        scales = [{'value': '%s_%s' % (field_name, key),
+                   'size': [value[0], value[1]],
+                   'title':key.capitalize() } for key, value in sizes.items()]
         scales.sort(lambda x,y: cmp(x['size'][0], y['size'][0]))
+        scales.insert(0, {'value':'',
+                          'title':'Original',
+                          'size':[width, height]})
         return scales
 
     security.declarePrivate('getEnabledButtons')
@@ -280,9 +289,9 @@ class TinyMCE(SimpleItem):
 
     security.declarePrivate ('translateButtonsFromKupu')
     def translateButtonsFromKupu(self, context, buttons):
-        
+
         return_buttons = []
-        
+
         for button in buttons:
             if button == 'save-button':
                 try:
@@ -497,7 +506,7 @@ class TinyMCE(SimpleItem):
         except:
             pass
 
-        # Get stripped combinations try 
+        # Get stripped combinations try
         try:
             sc = safe_html.get_parameter_value('stripped_combinations')
             stripped_combinations = []

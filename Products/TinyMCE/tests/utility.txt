@@ -131,3 +131,20 @@ If no primary field is given, we should get the scale dimensions from ATImage:
     {'size': [200, 200], 'title': 'Mini', 'value': 'image_mini'},
     {'size': [400, 400], 'title': 'Preview', 'value': 'image_preview'},
     {'size': [768, 768], 'title': 'Large', 'value': 'image_large'}]
+
+We need to specify a context, if we want the dimension of the original image
+
+    >>> import os
+    >>> imgdata = open(os.path.join(os.path.dirname(__file__), 'sample.png'))
+    >>> portal[id].setImage(imgdata)
+
+    >>> scales = utility.getImageScales(context=portal[id])
+    >>> pprint(scales)
+    [{'size': [52, 43], 'title': 'Original', 'value': ''},
+    {'size': [16, 16], 'title': 'Listing', 'value': 'image_listing'},
+    {'size': [32, 32], 'title': 'Icon', 'value': 'image_icon'},
+    {'size': [64, 64], 'title': 'Tile', 'value': 'image_tile'},
+    {'size': [128, 128], 'title': 'Thumb', 'value': 'image_thumb'},
+    {'size': [200, 200], 'title': 'Mini', 'value': 'image_mini'},
+    {'size': [400, 400], 'title': 'Preview', 'value': 'image_preview'},
+    {'size': [768, 768], 'title': 'Large', 'value': 'image_large'}]
