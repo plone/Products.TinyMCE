@@ -41,11 +41,20 @@ We can also get the details of an image object.
   >>> portal[image]
   <ATImage at /plone/image>
 
+  >>> import os
+  >>> imgdata = open(os.path.join(os.path.dirname(__file__), 'sample.png'))
+  >>> portal[image].setImage(imgdata)
+
 The details will now also include the thumbnail url and the imagescales.
 
   >>> object = IJSONDetails(portal[image])
   >>> object.getDetails()
   '{"scales":..."thumb": "http://nohost/plone/image/image_thumb"...}'
+
+The first scale is always the original size:
+
+  >>> object.getDetails()
+  '{"scales": [{"size": [52, 43], "value": "", "title": "Original"}...
 
 JSONFolderListing
 -----------------
