@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plone.tinymce\n"
 "POT-Creation-Date: 2009-10-13 15:00+0000\n"
-"PO-Revision-Date: 2009-08-18 23:51+0200\n"
+"PO-Revision-Date: 2009-12-21 23:23+0200\n"
 "Last-Translator: Jukka Ojaniemi <jukka.ojaniemi@jyu.fi>\n"
 "Language-Team: JYU <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -54,7 +54,7 @@ msgid "Bold"
 msgstr "Lihavoi"
 
 msgid "Call-out"
-msgstr ""
+msgstr "Huudahdus"
 
 #. Default: "Caption"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:89
@@ -70,7 +70,7 @@ msgid "Cleanup messy code"
 msgstr "Siivoa koodi"
 
 msgid "Clear floats"
-msgstr ""
+msgstr "Puhdista kellukkeet (floats)"
 
 #: ../interfaces/utility.py:311
 msgid "Contains Anchors"
@@ -103,7 +103,7 @@ msgstr "Leikkaa"
 
 #: ../interfaces/utility.py:172
 msgid "Definition list"
-msgstr ""
+msgstr "Määritelmä lista"
 
 #. Default: "Description"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:159
@@ -116,7 +116,7 @@ msgid "Details"
 msgstr "Lisätietoja"
 
 msgid "Discreet"
-msgstr ""
+msgstr "Hillitty"
 
 #. Default: "E-mail"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:117
@@ -188,7 +188,7 @@ msgid "Entity encoding"
 msgstr "Entiteettien kooditus"
 
 msgid "Even row"
-msgstr ""
+msgstr "Parillinen rivi"
 
 #. Default: "External"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:41
@@ -201,13 +201,13 @@ msgid "External link"
 msgstr "Ulkoinen linkki"
 
 msgid "Fancy grid listing"
-msgstr ""
+msgstr "Koristeellinen ruudukkolistaus"
 
 msgid "Fancy listing"
-msgstr ""
+msgstr "Koristeellinen listaus"
 
 msgid "Fancy vertical listing"
-msgstr ""
+msgstr "Koristeellinen vertikaalinen listaus"
 
 #. Default: "File"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:145
@@ -227,13 +227,13 @@ msgid "Forecolor"
 msgstr "Edustan väri"
 
 msgid "Heading"
-msgstr ""
+msgstr "Otsikko"
 
 msgid "Heading cell"
-msgstr ""
+msgstr "Otsikko solu"
 
 msgid "Highlight"
-msgstr ""
+msgstr "Korosta"
 
 #. Default: "Home"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:26
@@ -311,7 +311,7 @@ msgid "Internal link"
 msgstr "Sisäinen linkki"
 
 msgid "Invisible grid"
-msgstr ""
+msgstr "Näkymätön ruudukko"
 
 #: ../interfaces/utility.py:120
 msgid "Italic"
@@ -323,7 +323,7 @@ msgstr "Ulkoasu"
 
 #: ../interfaces/utility.py:35
 msgid "Left to right"
-msgstr ""
+msgstr "Vasemmalta oikealle"
 
 #. Default: "Libraries"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:22
@@ -348,7 +348,7 @@ msgid "Links to objects on this site can use unique object ids so that the links
 msgstr "Linkit sivuston objekteihin voivat käyttää uniikkeja tunnisteista, joiden avulla linkit pysyvät rikkoutumattominan vaikka linkitettävä olio nimettäisiin uudelleen tai siirrettäisiin toisaalle."
 
 msgid "Literal"
-msgstr ""
+msgstr "Kirjaimellinen"
 
 #. Default: "Mail"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:46
@@ -357,14 +357,14 @@ msgstr "Posti"
 
 #: ../interfaces/utility.py:334
 msgid "Named"
-msgstr ""
+msgstr "Nimetty"
 
 #: ../interfaces/utility.py:334
 msgid "Numeric"
-msgstr ""
+msgstr "Numeerinen"
 
 msgid "Odd row"
-msgstr ""
+msgstr "Pariton rivi"
 
 #: ../interfaces/utility.py:168
 msgid "Ordered list"
@@ -375,7 +375,7 @@ msgid "Outdent"
 msgstr "Ulonna"
 
 msgid "Page break (print only)"
-msgstr ""
+msgstr "Sivun katkaisu (vain tulostuksessa)"
 
 #: ../interfaces/utility.py:84
 msgid "Paste"
@@ -399,11 +399,11 @@ msgid "Print"
 msgstr "Tulosta"
 
 msgid "Pull-quote"
-msgstr ""
+msgstr "Lainaus"
 
 #: ../interfaces/utility.py:334
 msgid "Raw"
-msgstr ""
+msgstr "Käsittelemätön"
 
 #: ../interfaces/utility.py:100
 msgid "Redo"
@@ -419,7 +419,7 @@ msgstr "Resurssien tyypit"
 
 #: ../interfaces/utility.py:35
 msgid "Right to left"
-msgstr ""
+msgstr "Oikealta vasemmalle"
 
 #: ../interfaces/utility.py:301
 msgid "Rooted to current object"
@@ -455,10 +455,10 @@ msgid "Styles"
 msgstr "Tyylit"
 
 msgid "Subdued grid"
-msgstr ""
+msgstr "Hillitty ruudukko"
 
 msgid "Subheading"
-msgstr ""
+msgstr "Aliotsikko"
 
 #. Default: "Subject"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:124
@@ -524,7 +524,7 @@ msgstr "Tämä valinta määrittelee oletuksenä käytettävän kirjoitussuunnan
 #. Default: "TinyMCE"
 #: ../profiles/upgrade_10_to_11/controlpanel.xml
 msgid "TinyMCE"
-msgstr ""
+msgstr "TinyMCE"
 
 #: ../browser/controlpanel.py:48
 msgid "TinyMCE Settings"
@@ -534,7 +534,7 @@ msgstr "TinyMCE:n asetukset"
 #: ../profiles/default/controlpanel.xml
 #: ../profiles/upgrade_10_to_11/controlpanel.xml
 msgid "TinyMCE Visual Editor"
-msgstr ""
+msgstr "TinyMCE Editori"
 
 #. Default: "Title"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:275
