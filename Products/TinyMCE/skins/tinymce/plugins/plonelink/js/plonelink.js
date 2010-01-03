@@ -779,7 +779,7 @@ function getFolderListing(path, method) {
             html = "";
             for (var i = 0; i < data.path.length; i++) {
                 if (i != 0) {
-                    html += " - ";
+                    html += " &rarr; ";
                 }
                 if (i == data.path.length - 1) {
                     html += data.path[i].title;
