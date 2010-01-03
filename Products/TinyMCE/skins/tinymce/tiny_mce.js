@@ -612,6 +612,10 @@ tinymce.create('tinymce.util.Dispatcher', {
 				}
 			}
 
+			if (bp == 0) {
+				return "./";
+			}
+
 			if (bp == 1)
 				return path;
 
