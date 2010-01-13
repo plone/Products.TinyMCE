@@ -141,15 +141,15 @@ function TinyMCEConfig(id) {
         // Add defaults
         h['Text'].push('{ title: "Normal paragraph", tag: "p", className: " ", type: "Text" }');
 
-        h['Lists'].push('{ title: "Disc", tag: "ul", className: "", listType: "disc", type: "Lists" }');
-        h['Lists'].push('{ title: "Square", tag: "ul", className: "", listType: "square", type: "Lists" }');
-        h['Lists'].push('{ title: "Circle", tag: "ul", className: "", listType: "circle", type: "Lists" }');
-
-        h['Lists'].push('{ title: "Numbers", tag: "ol", className: "", listType: "1", type: "Lists" }');
-        h['Lists'].push('{ title: "Lower Alpha", tag: "ol", className: "", listType: "a", type: "Lists" }');
-        h['Lists'].push('{ title: "Upper Alpha", tag: "ol", className: "", listType: "A", type: "Lists" }');
-        h['Lists'].push('{ title: "Lower Roman", tag: "ol", className: "", listType: "i", type: "Lists" }');
-        h['Lists'].push('{ title: "Upper Roman", tag: "ol", className: "", listType: "I", type: "Lists" }');
+        h['Lists'].push('{ title: "Disc", tag: "ul", className: "list-type-disc", listType: "disc", type: "Lists" }'); 
+        h['Lists'].push('{ title: "Square", tag: "ul", className: "list-type-square", listType: "square", type: "Lists" }'); 
+        h['Lists'].push('{ title: "Circle", tag: "ul", className: "list-type-circle", listType: "circle", type: "Lists" }'); 
+  
+        h['Lists'].push('{ title: "Numbers", tag: "ol", className: "list-type-1", listType: "1", type: "Lists" }'); 
+        h['Lists'].push('{ title: "Lower Alpha", tag: "ol", className: "list-type-a", listType: "a", type: "Lists" }'); 
+        h['Lists'].push('{ title: "Upper Alpha", tag: "ol", className: "list-type-A", listType: "A", type: "Lists" }'); 
+        h['Lists'].push('{ title: "Lower Roman", tag: "ol", className: "list-type-i", listType: "i", type: "Lists" }'); 
+        h['Lists'].push('{ title: "Upper Roman", tag: "ol", className: "list-type-I", listType: "I", type: "Lists" }'); 
 
         h['Lists'].push('{ title: "Definition term", tag: "dt", className: "", listType: "", type: "Lists" }');
         h['Lists'].push('{ title: "Definition description", tag: "dd", className: "", listType: "", type: "Lists" }');

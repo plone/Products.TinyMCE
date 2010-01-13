@@ -126,7 +126,7 @@
                                 ed.dom.setAttrib(n,"type","");
                                 n.className = className;
                             } else {
-                                ed.dom.setAttrib(n,"type",styles[parseInt(v)].listType);
+                                ed.dom.setAttrib(n,"class", 'list-type-'+styles[parseInt(v)].listType);
                                 n.className = "";
                             }
                         }
@@ -217,7 +217,14 @@
                     var p = this._getParentNode(n, ["th","td","p","h1","h2","h3","h4","h5","h6","pre","div","span","blockquote","samp","code", "ul", "ol","dl","img"]);
                     var il = false;
                     if (p && (p.nodeName.toLowerCase() == "ul" || p.nodeName.toLowerCase() == "ol")) {
-                        var lt = ed.dom.getAttrib(p, "type");
+
+                        var lt = ed.dom.getAttrib(p, "class"); 
+                        lt = lt.split("-"); 
+                        if (lt.length==3) 
+                            lt = lt[2]; 
+                        else
+                            lt='';
+
                         var lc = ed.dom.getAttrib(p, "class");
 
                         if (lt == "" && lc == "") {

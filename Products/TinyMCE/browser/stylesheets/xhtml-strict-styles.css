@@ -1,0 +1,37 @@
+/*
+ * Style for getting XHTML Strict output
+ */
+
+.documentContent ul.list-type-disc {
+	list-style-type: disc;
+	list-style-image: none;
+}
+.documentContent ul.list-type-square {
+	list-style-type: square;
+	list-style-image: none;
+}
+.documentContent ul.list-type-circle {
+	list-style-type: circle;
+	list-style-image: none;
+}
+.documentContent ol.list-type-1 {
+	list-style-type: decimal;
+	list-style-image: none;
+}
+.documentContent ol.list-type-a {
+	list-style-type: lower-alpha;
+	list-style-image: none;
+}
+.documentContent ol.list-type-A {
+	list-style-type: upper-alpha;
+	list-style-image: none;
+}
+.documentContent ol.list-type-i {
+	list-style-type: lower-roman;
+	list-style-image: none;
+}
+.documentContent ol.list-type-I {
+	list-style-type: upper-roman;
+	list-style-image: none;
+}
+
