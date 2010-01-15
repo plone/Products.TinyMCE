@@ -5,21 +5,23 @@ HISTORY
 1.1rc9 (Unreleased)
 -------------------
 
+- Added scope option to table cell dialog (merge from xhtml-strict branche).
+  [robgietema]
 
 1.1rc8 (2009-12-21)
 -------------------
 
-- Fix when editing contextuals portlets
+- Fix when editing contextuals portlets.
   #117 http://plone.org/products/tinymce/issues/117
   [sylvainb]
 
-- Added a widget option: toolbar_width
+- Added a widget option: toolbar_width.
   [oliverroch]
 
-- Fixed: "Normal paragraph" default style didn't reset css class
+- Fixed: "Normal paragraph" default style didn't reset css class.
   [oliverroch]
 
-- Show dimensions of original image in imageupload-popup
+- Show dimensions of original image in imageupload-popup.
   [tom_gross]
 
 1.1rc7 (2009-11-18)
