@@ -392,7 +392,7 @@ class TinyMCE(SimpleItem):
             'table tbody td textarea tfoot th thead title tr tt ul var'.split())
 
         CORE_ATTRS = set(
-            'id title style class'.split())
+            'id style title class'.split())
 
         I18N_ATTRS = set(
             'lang dir'.split())
@@ -451,7 +451,7 @@ class TinyMCE(SimpleItem):
             'legend': COMMON_ATTRS | set('accesskey align'.split()),
             'li': COMMON_ATTRS | set('type'.split()),
             'link': COMMON_ATTRS | set('charset href hreflang type rel rev media target'.split()),
-            'map': I18N_ATTRS | set('id title name style class'.split()),
+            'map': I18N_ATTRS | set('id title name class'.split()),
             'meta': I18N_ATTRS | set('id http-equiv name content scheme'.split()),
             'noscript': COMMON_ATTRS.copy(),
             'object': COMMON_ATTRS | set('declare classid codebase data type codetype archive standby height width usemap name tabindex align border hspace vspace'.split()),
@@ -570,6 +570,24 @@ class TinyMCE(SimpleItem):
         parastyles = getattr (widget, 'parastyles', None)
         rooted = getattr (widget, 'rooted', False)
         toolbar_width = getattr(widget, 'toolbar_width', self.toolbar_width)
+
+        # Get safe html transform
+        safe_html = getattr(getToolByName(self, 'portal_transforms'), 'safe_html')
+
+        # Get kupu library tool filter
+        # Settings are stored on safe_html transform in Plone 4 and
+        # on kupu tool in Plone 3.
+        try:
+            kupu_library_tool = getToolByName(self, 'kupu_library_tool')
+        except:
+            pass
+
+        # Remove to be stripped attributes
+        try:
+            style_whitelist = safe_html.get_parameter_value('style_whitelist')
+        except:
+            style_whitelist = kupu_library_tool.getStyleWhitelist()
+        results['valid_inline_styles'] = style_whitelist
 
         # Add styles to results
         results['styles'] = []
