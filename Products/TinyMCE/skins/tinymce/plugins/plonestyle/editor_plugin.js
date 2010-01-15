@@ -120,15 +120,8 @@
                             e = ReplaceTag(e, tag);
                         } else {
                             var n = this._getParentNode(e,["ol","ul"]);
-                            var listType = styles[parseInt(v)].listType;
 
-                            if (className != "") {
-                                ed.dom.setAttrib(n,"type","");
-                                n.className = className;
-                            } else {
-                                ed.dom.setAttrib(n,"type",styles[parseInt(v)].listType);
-                                n.className = "";
-                            }
+                            n.className = className;
                         }
                         break;
                     case "Selection":
@@ -217,17 +210,9 @@
                     var p = this._getParentNode(n, ["th","td","p","h1","h2","h3","h4","h5","h6","pre","div","span","blockquote","samp","code", "ul", "ol","dl","img"]);
                     var il = false;
                     if (p && (p.nodeName.toLowerCase() == "ul" || p.nodeName.toLowerCase() == "ol")) {
-                        var lt = ed.dom.getAttrib(p, "type");
                         var lc = ed.dom.getAttrib(p, "class");
 
-                        if (lt == "" && lc == "") {
-                            if (p.nodeName.toLowerCase() == "ul") {
-                                lt = "disc";
-                            } else {
-                                lt = "1";
-                            }
-                        }
-                        if (lt == this._styles[i].listType || lc != "") {
+                        if (lc == this._styles[i].className) {
                             il = true;
                         }
                     } else if (p && p.nodeName.toLowerCase() == "dl") {

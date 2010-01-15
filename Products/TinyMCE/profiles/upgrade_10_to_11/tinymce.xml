@@ -1,5 +1,19 @@
 <?xml version="1.0"?>
 <object>
+ <layout>
+  <styles purge="False">
+   <element value="Disc|ul|listTypeDisc"/>
+   <element value="Square|ul|listTypeSquare"/>
+   <element value="Circle|ul|listTypeCircle"/>
+   <element value="Numbers|ol|listTypeDecimal"/>
+   <element value="Lower Alpha|ol|listTypeLowerAlpha"/>
+   <element value="Upper Alpha|ol|listTypeUpperAlpha"/>
+   <element value="Lower Roman|ol|listTypeLowerRoman"/>
+   <element value="Upper Roman|ol|listTypeUpperRoman"/>
+   <element value="Definition term|dt"/>
+   <element value="Definition description|dd"/>
+  </styles>
+ </layout>
  <resourcetypes>
   <customplugins purge="False">
     <element value="ploneimage"/>
