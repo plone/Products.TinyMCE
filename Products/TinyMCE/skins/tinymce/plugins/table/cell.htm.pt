@@ -40,6 +40,17 @@
 						</select>
 					</div>
 				</div>
+
+				<div class="field">
+					<label for="scope" i18n:translate="table_dlg_scope"></label>
+					<div class="widget">
+						<select id="scope" name="scope">
+							<option value="" i18n:translate="common_not_set"></option>
+							<option value="col" i18n:translate="table_dlg_scope_col">Column</option>
+							<option value="row" i18n:translate="table_dlg_scope_row">Row</option>
+						</select>
+					</div>
+				</div>
 			</fieldset>
 
 			<fieldset id="advanced_panel" class="formPanel">
@@ -56,7 +67,6 @@
 			</fieldset>
 
 			<div class="hiddenset">
-				<select id="scope" name="scope"><option value="" i18n:translate="common_not_set"></option></select>
 				<input id="id" name="id" type="text" value="" />
 				<input type="text" id="style" name="style" value="" />
 				<select id="dir" name="dir"><option value="" i18n:translate="common_not_set"></option></select>
