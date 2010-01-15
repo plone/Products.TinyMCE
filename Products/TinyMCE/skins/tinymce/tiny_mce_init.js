@@ -73,6 +73,7 @@ function TinyMCEConfig(id) {
             navigation_root_url : this.getNavigationRootUrl(),
             livesearch : this.getLivesearch(),
             valid_elements : this.getValidElements(),
+            valid_inline_styles : this.getValidInlineStyles(),
             link_using_uids : this.getLinkUsingUids(),
             allow_captioned_images : this.getAllowCaptionedImages(),
             rooted : this.getRooted(),
@@ -208,6 +209,10 @@ function TinyMCEConfig(id) {
         return '[' + a.join(',') + ']';
     };
 
+    this.getValidInlineStyles = function() {
+        return this.widget_config.valid_inline_styles.join (',');
+    };
+
     this.getValidElements = function() {
         a = [];
 
@@ -298,7 +303,7 @@ function TinyMCEConfig(id) {
     };
 
     this.getPlugins = function () {
-        var plugins = "safari,pagebreak,table,save,advhr,emotions,iespell,insertdatetime,preview,media,searchreplace,print,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups,plonestyle,tabfocus,definitionlist";
+        var plugins = "safari,pagebreak,table,save,advhr,emotions,iespell,insertdatetime,preview,media,searchreplace,print,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups,plonestyle,tabfocus,definitionlist,ploneinlinestyles";
         for (var i = 0; i < this.widget_config.customplugins.length; i++) {
             if (this.widget_config.customplugins[i].indexOf('|') == -1) {
                 plugins += ',' + this.widget_config.customplugins[i];
