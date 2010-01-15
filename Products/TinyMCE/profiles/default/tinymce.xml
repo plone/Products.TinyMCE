@@ -43,6 +43,16 @@
    <element value="Pull-quote|blockquote|pullquote"/>
    <element value="Call-out|p|callout"/>
    <element value="Highlight|span|visualHighlight"/>
+   <element value="Disc|ul|listTypeDisc"/>
+   <element value="Square|ul|listTypeSquare"/>
+   <element value="Circle|ul|listTypeCircle"/>
+   <element value="Numbers|ol|listTypeDecimal"/>
+   <element value="Lower Alpha|ol|listTypeLowerAlpha"/>
+   <element value="Upper Alpha|ol|listTypeUpperAlpha"/>
+   <element value="Lower Roman|ol|listTypeLowerRoman"/>
+   <element value="Upper Roman|ol|listTypeUpperRoman"/>
+   <element value="Definition term|dt"/>
+   <element value="Definition description|dd"/>
    <element value="Odd row|tr|odd"/>
    <element value="Even row|tr|even"/>
    <element value="Heading cell|th|"/>
