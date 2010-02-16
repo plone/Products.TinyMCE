@@ -67,6 +67,7 @@ function TinyMCEConfig(id) {
             entity_encoding : this.getEntityEncoding(),
             content_css : this.getContentCSS(),
             body_class : "documentContent",
+            body_id : "content",
             document_base_url : this.getBase(),
             document_url : this.getDocumentUrl(),
             portal_url : this.getPortalUrl(),
