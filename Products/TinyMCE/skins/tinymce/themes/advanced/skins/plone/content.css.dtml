@@ -1,6 +1,5 @@
 /* <dtml-with base_properties> */
 /* <dtml-call "REQUEST.set('portal_url', portal_url())"> */
-html { font-size: &dtml-fontBaseSize;; }
 body.mceForceColors {background:#FFF; color:#000;}
 
 .mceContentBody {
@@ -14,12 +13,6 @@ body.mceForceColors {background:#FFF; color:#000;}
     border-bottom: 1px #cccccc solid !important;
 }
 
-h1 {font-size: 2em}
-h2 {font-size: 1.5em}
-h3 {font-size: 1.17em}
-h4 {font-size: 1em}
-h5 {font-size: .83em}
-h6 {font-size: .75em}
 .mceItemTable, .mceItemTable td, .mceItemTable th, .mceItemTable caption, .mceItemVisualAid {border: 1px dashed #BBB;}
 a.mceItemAnchor {width:12px; line-height:6px; overflow:hidden; padding-left:12px; background:url(img/items.gif) no-repeat bottom left;}
 img.mceItemAnchor {width:12px; height:12px; background:url(img/items.gif) no-repeat;}
