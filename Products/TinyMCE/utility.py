@@ -501,21 +501,19 @@ class TinyMCE(SimpleItem):
         # Get kupu library tool filter
         # Settings are stored on safe_html transform in Plone 4 and
         # on kupu tool in Plone 3.
-        try:
-            kupu_library_tool = getToolByName(self, 'kupu_library_tool')
-        except:
-            pass
+        kupu_library_tool = getToolByName(self, 'kupu_library_tool', None)
 
+        stripped_combinations = []
         # Get stripped combinations try
         try:
             sc = safe_html.get_parameter_value('stripped_combinations')
-            stripped_combinations = []
             for ta in sc.keys():
                 tags = ta.replace(',', ' ').split()
                 attributes = sc[ta].replace(',', ' ').split()
                 stripped_combinations.append((tags,attributes))
         except:
-            stripped_combinations = kupu_library_tool.get_stripped_combinations()
+            if kupu_library_tool is not None:
+                stripped_combinations = kupu_library_tool.get_stripped_combinations()
 
         # Strip combinations
         for (stripped_combination_tags, stripped_combination_attributes) in stripped_combinations:
@@ -529,8 +527,12 @@ class TinyMCE(SimpleItem):
             stripped_attributes = set(safe_html.get_parameter_value('stripped_attributes'))
             style_whitelist = safe_html.get_parameter_value('style_whitelist')
         except:
-            stripped_attributes = set(kupu_library_tool.get_stripped_attributes())
-            style_whitelist = kupu_library_tool.getStyleWhitelist()
+            if kupu_library_tool is not None:
+                stripped_attributes = set(kupu_library_tool.get_stripped_attributes())
+                style_whitelist = kupu_library_tool.getStyleWhitelist()
+            else:
+                stripped_attributes = set()
+                style_whitelist = ()
         style_attribute = "style"
         if len(style_whitelist) > 0:
             style_attribute = 'style<' + '?'.join(style_whitelist)
@@ -577,16 +579,16 @@ class TinyMCE(SimpleItem):
         # Get kupu library tool filter
         # Settings are stored on safe_html transform in Plone 4 and
         # on kupu tool in Plone 3.
-        try:
-            kupu_library_tool = getToolByName(self, 'kupu_library_tool')
-        except:
-            pass
+        kupu_library_tool = getToolByName(self, 'kupu_library_tool', None)
 
         # Remove to be stripped attributes
         try:
             style_whitelist = safe_html.get_parameter_value('style_whitelist')
         except:
-            style_whitelist = kupu_library_tool.getStyleWhitelist()
+            if kupu_library_tool is not None:
+                style_whitelist = kupu_library_tool.getStyleWhitelist()
+            else:
+                style_whitelist = []
         results['valid_inline_styles'] = style_whitelist
 
         # Add styles to results
