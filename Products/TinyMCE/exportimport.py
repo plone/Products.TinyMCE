@@ -197,5 +197,7 @@ def exportTinyMCESettings(context):
     """Export TinyMCE Settings"""
     site = context.getSite()
     tool = getToolByName(site, 'portal_tinymce', None)
+    if tool is None:
+        return
 
     exportObjects(tool, '', context)
