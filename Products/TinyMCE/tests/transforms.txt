@@ -2,7 +2,7 @@
 An integration doctest
 ======================
 
-Test the transforms that are included with the Products.TinyMCE package 
+Test the transforms that are included with the Products.TinyMCE package
 
 Let's get the portal object
 
@@ -74,7 +74,7 @@ We test our SGML based parser first:
     <html...>
     >>> parser.close()
 
-Test if it preserves newlines which should not be filtered out 
+Test if it preserves newlines which should not be filtered out
 
     >>> text = """<pre>This is line 1
     ...                This is line 2</pre>"""
@@ -115,9 +115,21 @@ Let's get the html-to-tinymce-output-html transform and run it.
     ...            </html>""" % UID
     >>> transformed_text = transform_utility.convert(name="html_to_tinymce_output_html", orig=text, context=self.portal)
 
-The UID reference should be converted to an absolute url : 
+The UID reference should be converted to an absolute url :
 
     >>> str(transformed_text).find('<img src="http://nohost/plone/image/image_thumb" alt="My alt text" class="image-left captioned" width="200" />') != -1
+    True
+
+UID references to anchors are converted to an absolute url too:
+
+    >>> text = """<html>
+    ...             <head></head>
+    ...             <body>
+    ...               <a class="internal-link" href="resolveuid/%s#named-anchor">Some Link</a>
+    ...             </body>
+    ...           </html>""" % UID
+    >>> transformed_text = transform_utility.convert(name="html_to_tinymce_output_html", orig=text, context=self.portal)
+    >>> 'href="http://nohost/plone/image#named-anchor"' in str(transformed_text)
     True
 
 Ensure this doesn't strip CDATA sections either.
