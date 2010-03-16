@@ -23,9 +23,9 @@ class TinyMCEOutput(SGMLParser):
         self.pieces = []
 
     def append_data(self, data, add_eol=0):
-        """Append data unmodified to self.data, add_eol adds a newline character""" 
+        """Append data unmodified to self.data, add_eol adds a newline character"""
         if add_eol:
-            data += '\n'    
+            data += '\n'
         self.pieces.append(data)
 
     def handle_charref(self, ref):
@@ -45,7 +45,7 @@ class TinyMCEOutput(SGMLParser):
         self.append_data("<!--%(text)s-->" % locals())
 
     def handle_pi(self, text):
-        """ Handle processing instructions unmodified""" 
+        """ Handle processing instructions unmodified"""
         self.append_data("<?%(text)s>" % locals())
 
     def handle_decl(self, text):
@@ -83,6 +83,12 @@ class TinyMCEOutput(SGMLParser):
                         if len(parts) > 2:
                             # There is more than just the UUID, save it in appendix
                             appendix = "/".join(parts[2:])
+
+                        #move name of links to anchors to appendix (resolveuid/12fc34#anchor)
+                        if uid.find('#'):
+                            uid, anchor = uid.split('#')
+                            appendix = '#%s' % anchor  #anchor + appendix won't happen
+
                         ref_obj = self.lookup_uid(uid)
                         if ref_obj:
                             href = ref_obj.absolute_url() + appendix
@@ -133,7 +139,7 @@ class TinyMCEOutput(SGMLParser):
                         width_style="style=\"width:%spx;\" " % attributes["width"]
                     image_attributes = ""
                     image_attributes = image_attributes.join(["%s %s=\"%s\"" % (image_attributes, key, value) for (key, value) in attributes.items() if not key in ["class", "src"]])
-                    captioned_html = """<dl %sclass="%s"> 
+                    captioned_html = """<dl %sclass="%s">
                                         <dt %s>
                                             <img %s src="%s"/>
                                         </dt>
@@ -151,10 +157,10 @@ class TinyMCEOutput(SGMLParser):
             self.append_data("<%(tag)s%(strattrs)s />" % locals())
         else:
             self.append_data("<%(tag)s%(strattrs)s>" % locals())
-        
+
     def unknown_endtag(self, tag):
         """Add the endtag unmodified"""
-        self.append_data("</%(tag)s>" % locals()) 
+        self.append_data("</%(tag)s>" % locals())
 
     def parse_declaration(self, i):
         """Fix handling of CDATA sections. Code borrowed from BeautifulSoup.
