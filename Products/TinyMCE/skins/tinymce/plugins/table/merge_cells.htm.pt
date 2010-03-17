@@ -7,7 +7,7 @@
 	<script type="text/javascript" src="js/merge_cells.js"></script>
 </head>
 <body>
-	<div class="dialog-wrapper">
+	<div class="dialog-wrapper" id="content">
 		<form onsubmit="mergeCells();return false;" action="#">
 			<fieldset>
 				<legend i18n:translate="table_dlg_merge_cells_title"></legend>

@@ -9,7 +9,7 @@
   <script type="text/javascript" src="js/link.js"></script>
 </head>
 <body id="link">
-  <div class="dialog-wrapper">
+  <div class="dialog-wrapper" id="content">
     <form onsubmit="LinkDialog.update();return false;" action="#">
       <fieldset>
         <legend i18n:translate="advanced_dlg_link_title"></legend>

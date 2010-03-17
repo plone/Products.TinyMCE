@@ -6,7 +6,7 @@
 	<script type="text/javascript" src="js/anchor.js"></script>
 </head>
 <body>
-	<div class="dialog-wrapper">
+	<div class="dialog-wrapper" id="content">
 		<form onsubmit="AnchorDialog.update();return false;" action="#">
 			<fieldset>
 				<legend i18n:translate="advanced_dlg_anchor_title"></legend>

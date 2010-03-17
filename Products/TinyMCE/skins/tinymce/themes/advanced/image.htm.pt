@@ -10,7 +10,7 @@
 
 </head>
 <body id="image">
-  <div class="dialog-wrapper">
+  <div class="dialog-wrapper" id="content">
     <form onsubmit="ImageDialog.update();return false;" action="#">
       <fieldset>
         <legend i18n:translate="advanced_dlg_image_title"></legend>

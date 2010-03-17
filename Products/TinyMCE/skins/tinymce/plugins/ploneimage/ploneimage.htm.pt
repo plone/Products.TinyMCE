@@ -11,7 +11,7 @@
 </head>
 <body id="ploneimage" style="display: none"
   tal:define="portal_url context/portal_url; portal_tinymce context/portal_tinymce;">
-  <div class="dialog-wrapper">
+  <div class="dialog-wrapper" id="content">
     <fieldset id="general_panel">
       <legend i18n:translate="ploneimage_dlg_dialog_title"></legend>
       <div id="internalpath" class="formHelp"></div>

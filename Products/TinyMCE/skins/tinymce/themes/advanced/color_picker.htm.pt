@@ -9,7 +9,7 @@
 
 </head>
 <body id="colorpicker">
-	<div class="dialog-wrapper">
+	<div class="dialog-wrapper" id="content">
 		<form onsubmit="insertAction();return false" action="#">
 			<ul class="formTabs"><li id="picker_tab" class="formTab firstFormTab"><a href="javascript:mcTabs.displayTab('picker_tab','picker_panel');" onmousedown="return false;" class="selected"><span i18n:translate="advanced_dlg_colorpicker_picker_tab"></span></a></li><li id="rgb_tab" class="formTab"><a href="javascript:;" onclick="generateWebColors();mcTabs.displayTab('rgb_tab','rgb_panel');" onmousedown="return false;"><span i18n:translate="advanced_dlg_colorpicker_palette_tab"></span></a></li><li id="named_tab" class="formTab lastFormTab"><a  href="javascript:;" onclick="generateNamedColors();javascript:mcTabs.displayTab('named_tab','named_panel');" onmousedown="return false;"><span i18n:translate="advanced_dlg_colorpicker_named_tab"></span></a></li></ul>
 
