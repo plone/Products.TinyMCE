@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/attributes.css" />
 </head>
 <body>
-	<div class="dialog-wrapper">
+	<div class="dialog-wrapper" id="content">
 		<form onsubmit="insertAction();return false;" action="#">
 			<fieldset>
 				<legend i18n:translate="xhtmlxtras_dlg_attribute_attrib_tab"></legend>

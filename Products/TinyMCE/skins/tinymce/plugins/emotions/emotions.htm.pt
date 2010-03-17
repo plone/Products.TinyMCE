@@ -6,7 +6,7 @@
 	<script type="text/javascript" src="js/emotions.js"></script>
 </head>
 <body style="display: none">
-	<div class="dialog-wrapper">
+	<div class="dialog-wrapper" id="content">
 		<table class="listing">
 			<tr>
 				<th colspan="4" i18n:translate="emotions_dlg_desc"></th>

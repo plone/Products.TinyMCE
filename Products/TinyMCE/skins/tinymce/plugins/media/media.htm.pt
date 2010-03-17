@@ -10,7 +10,7 @@
 	<script type="text/javascript" src="../../utils/editable_selects.js"></script>
 </head>
 <body style="display: none">
-	<div class="dialog-wrapper">
+	<div class="dialog-wrapper" id="content">
 		<form onsubmit="insertMedia();return false;" action="#">
 			<ul class="formTabs"><li id="general_tab" class="formTab firstFormTab"><a href="javascript:mcTabs.displayTab('general_tab','general_panel');generatePreview();" onmousedown="return false;" class="selected"><span i18n:translate="media_dlg_general"></span></a></li><li id="advanced_tab" class="formTab lastFormTab"><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;"><span i18n:translate="media_dlg_advanced"></span></a></li></ul>
 

@@ -9,7 +9,7 @@
 
 </head>
 <body>
-	<div class="dialog-wrapper">
+	<div class="dialog-wrapper" id="content">
 		<form name="source" onsubmit="return PasteTextDialog.insert();" action="#">
 			<fieldset>
 				<legend i18n:translate="paste_paste_text_desc"></legend>

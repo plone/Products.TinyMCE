@@ -8,7 +8,7 @@
 
 </head>
 <body onresize="resizeInputs();">
-	<div class="dialog-wrapper">
+	<div class="dialog-wrapper" id="content">
 		<form name="source" onsubmit="saveContent();return false;" action="#">
 			<fieldset>
 				<legend for="htmlSource" i18n:translate="advanced_dlg_code_title"></legend>

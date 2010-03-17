@@ -11,7 +11,7 @@
 </head>
 <body id="plonelink"
   tal:define="portal_url context/portal_url">
-  <div class="dialog-wrapper">
+  <div class="dialog-wrapper" id="content">
     <ul class="formTabs"><li id="general_tab" class="formTab firstFormTab"><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;" class="selected"><span i18n:translate="plonelink_dlg_general_tab"></span></a></li><li id="advanced_tab" class="formTab lastFormTab"><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;"><span i18n:translate="plonelink_dlg_advanced_tab"></span></a></li></ul>
 
     <fieldset id="general_panel" class="formPanel">
