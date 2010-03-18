@@ -8,7 +8,11 @@ function insertTable() {
 	var cols = 2, rows = 2, border = 0, cellpadding = -1, cellspacing = -1, align, width, height, className, caption, frame, rules;
 	var html = '', capEl, elm;
 	var cellLimit, rowLimit, colLimit;
-
+	if (tinyMCEPopup.getParam('table_firstline_th')) {
+		line_tag = "th";
+	} else {
+		line_tag = "td";
+	}
 	tinyMCEPopup.restoreSelection();
 
 	if (!AutoValidator.validate(formObj)) {
@@ -196,10 +200,11 @@ function insertTable() {
 
 		for (var x=0; x<cols; x++) {
 			if (!tinymce.isIE)
-				html += '<td><br mce_bogus="1"/></td>';
+				html += '<'+line_tag+'><br mce_bogus="1"/></'+line_tag+'>';
 			else
-				html += '<td></td>';
+				html += '<'+line_tag+'></'+line_tag+'>';
 		}
+		line_tag = "td";
 
 		html += "</tr>";
 	}
