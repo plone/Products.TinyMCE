@@ -63,6 +63,7 @@ function TinyMCEConfig(id) {
             theme_advanced_source_editor_height : this.getEditorHeight(),
 
             table_styles : this.getTableStyles(),
+            table_firstline_th : true,
             directionality : this.getDirectionality(),
             entity_encoding : this.getEntityEncoding(),
             content_css : this.getContentCSS(),
