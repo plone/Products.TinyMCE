@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-10-14 08:25+0000\n"
+"POT-Creation-Date: 2010-03-23 09:33+0000\n"
 "PO-Revision-Date: 2009-10-15 17:13+0100\n"
 "Last-Translator: Mikel Larreategi <mlarreategi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Language-Code: eu\n"
 "Language-Name: Basque\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: tinymce\n"
+"Domain: plone.tinymce\n"
 
 #: ../interfaces/utility.py:152
 msgid "Align center"
@@ -80,6 +80,7 @@ msgstr "Kopiatu"
 
 #. Default: "Current Folder"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:30
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:31
 msgid "Current Folder"
 msgstr "Uneko karpeta"
 
@@ -101,6 +102,7 @@ msgstr "Definizio zerrenda"
 
 #. Default: "Description"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:123
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:159
 msgid "Description"
 msgstr "Deskribapena"
 
@@ -185,6 +187,7 @@ msgid "Even row"
 msgstr "Lerro bikoitia"
 
 #. Default: "External"
+#: ../interfaces/utility.py:67
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:41
 msgid "External"
 msgstr "Kanpokoak"
@@ -205,6 +208,7 @@ msgstr "Zerrenda bertikala"
 
 #. Default: "File"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:109
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:145
 msgid "File"
 msgstr "Fitxategia"
 
@@ -231,6 +235,7 @@ msgstr "Markatu"
 
 #. Default: "Home"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:25
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:26
 msgid "Home"
 msgstr "Hasiera"
 
@@ -320,7 +325,9 @@ msgid "Left to right"
 msgstr "Ezkerretik eskuinera"
 
 #. Default: "Libraries"
+#: ../browser/controlpanel.py:40
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:21
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:22
 msgid "Libraries"
 msgstr "Liburutegiak"
 
@@ -384,6 +391,7 @@ msgid "Paste from Word"
 msgstr "Wordetik itsatsi"
 
 #. Default: "Preview"
+#: ../interfaces/utility.py:244
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:102
 msgid "Preview"
 msgstr "Aurreikusi"
@@ -425,6 +433,7 @@ msgstr "Gorde"
 
 #. Default: "Search"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:40
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:56
 msgid "Search"
 msgstr "Bilatu"
 
@@ -525,8 +534,8 @@ msgid "TinyMCE Settings"
 msgstr "TinyMCEren ezarpenak"
 
 #. Default: "TinyMCE Visual Editor"
-#: ../profiles/upgrade_10_to_11/controlpanel.xml
 #: ../profiles/default/controlpanel.xml
+#: ../profiles/upgrade_10_to_11/controlpanel.xml
 msgid "TinyMCE Visual Editor"
 msgstr "TinyMCE editorea"
 
@@ -569,16 +578,19 @@ msgstr "Ordenatu gabeko zerrenda"
 
 #. Default: "Up one level"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:52
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:68
 msgid "Up one level"
 msgstr "Maila bat gorago joan"
 
 #. Default: "Upload"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:129
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:165
 msgid "Upload"
 msgstr "Kargatu"
 
 #. Default: "Upload file"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:55
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:71
 msgid "Upload file"
 msgstr "Fitxategia kargatu"
 
