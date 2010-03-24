@@ -1,0 +1,2261 @@
+# This is the Welsh language pack for TinyMCE.
+# Version 1.4
+#
+# Will Abson
+msgid ""
+msgstr ""
+"Project-Id-Version: Products.TinyMCE\n"
+"POT-Creation-Date: 2000-01-01 00:00+0000\n"
+"PO-Revision-Date: 2009-03-03 00:00+0000\n"
+"Last-Translator: Will Abson\n"
+"Language-Team: Will Abson\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: cy\n"
+"Language-Name: Welsh\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: tinymce\n"
+
+msgid "common_edit_confirm"
+msgstr "Ydych chi eisiau defnyddio'r modd WYSIWYG ar gyfer y textarea yma?"
+
+msgid "common_apply"
+msgstr "Gosod"
+
+msgid "common_insert"
+msgstr "Mewnosod"
+
+msgid "common_update"
+msgstr "Diweddaru"
+
+msgid "common_cancel"
+msgstr "Diddymu"
+
+msgid "common_close"
+msgstr "Cau"
+
+msgid "common_browse"
+msgstr "Pori"
+
+msgid "common_class_name"
+msgstr "Dosbarth"
+
+msgid "common_not_set"
+msgstr "-- Nid wedi osod --"
+
+msgid "common_clipboard_msg"
+msgstr "Nid yw Copïo/Torri/Gludo ar gael mewn Mozilla a Firefox.\nYdych chi eisiau mwy o wybodaeth am y mater yma?"
+
+msgid "common_clipboard_no_support"
+msgstr "Dim wedi'i gynnal gan eich porwr, defnyddiwch Currently not supported by your browser, use keyboard shortcuts instead."
+
+msgid "common_popup_blocked"
+msgstr "Rydym wedi sylwi fod eich popup-blocker wedi analluogi ffenest sy'n darparu swyddogaeth cymhwysiad. Bydd rhaid i chi analluogi blocio popups ar gyfer y safle yma i ddefnyddio'r offeryn yma."
+
+msgid "common_invalid_data"
+msgstr "Gwall: Gwerthau allilys wedi mewnbynnu, mae'r gwerthau yma wedi eu marcio mewn coch."
+
+msgid "common_more_colors"
+msgstr "Mwy o liwiau"
+
+msgid "simple_bold_desc"
+msgstr "Trwm (Ctrl+B)"
+
+msgid "simple_italic_desc"
+msgstr "Italig (Ctrl+I)"
+
+msgid "simple_underline_desc"
+msgstr "Tanlinellu (Ctrl+U)"
+
+msgid "simple_striketrough_desc"
+msgstr "Taro drwodd"
+
+msgid "simple_bullist_desc"
+msgstr "Rhestr didrenus"
+
+msgid "simple_numlist_desc"
+msgstr "Rhestr trenus"
+
+msgid "simple_undo_desc"
+msgstr "Dadwneud (Ctrl+Z)"
+
+msgid "simple_redo_desc"
+msgstr "Ailwneud (Ctrl+Y)"
+
+msgid "simple_cleanup_desc"
+msgstr "Glanhau côd anhrefnus"
+
+msgid "advanced_style_select"
+msgstr "Ardulliau"
+
+msgid "advanced_font_size"
+msgstr "Maint Ffont"
+
+msgid "advanced_fontdefault"
+msgstr "Teulu ffont"
+
+msgid "advanced_block"
+msgstr "Fformat"
+
+msgid "advanced_paragraph"
+msgstr "Paragraff"
+
+msgid "advanced_div"
+msgstr "Div"
+
+msgid "advanced_address"
+msgstr "Cyfeririad"
+
+msgid "advanced_pre"
+msgstr "Rhagffomatiwyd"
+
+msgid "advanced_h1"
+msgstr "Pennawd 1"
+
+msgid "advanced_h2"
+msgstr "Pennawd 2"
+
+msgid "advanced_h3"
+msgstr "Pennawd 3"
+
+msgid "advanced_h4"
+msgstr "Pennawd 4"
+
+msgid "advanced_h5"
+msgstr "Pennawd 5"
+
+msgid "advanced_h6"
+msgstr "Pennawd 6"
+
+msgid "advanced_blockquote"
+msgstr "Dyfyniad bloc"
+
+msgid "advanced_code"
+msgstr "Côd"
+
+msgid "advanced_samp"
+msgstr "Sampl côd"
+
+msgid "advanced_dt"
+msgstr "Term diffiniad "
+
+msgid "advanced_dd"
+msgstr "Disgrifiad diffiniad"
+
+msgid "advanced_bold_desc"
+msgstr "Trwm (Ctrl+B)"
+
+msgid "advanced_italic_desc"
+msgstr "Italig (Ctrl+I)"
+
+msgid "advanced_underline_desc"
+msgstr "Tanlinellu (Ctrl+U)"
+
+msgid "advanced_striketrough_desc"
+msgstr "Taro drwodd"
+
+msgid "advanced_justifyleft_desc"
+msgstr "Alinio i'r chwith"
+
+msgid "advanced_justifycenter_desc"
+msgstr "Alinio i'r canol"
+
+msgid "advanced_justifyright_desc"
+msgstr "Alinio i'r dde"
+
+msgid "advanced_justifyfull_desc"
+msgstr "Alinio llawn"
+
+msgid "advanced_bullist_desc"
+msgstr "Rhestr didrenus"
+
+msgid "advanced_numlist_desc"
+msgstr "Rhestr trenus"
+
+msgid "advanced_outdent_desc"
+msgstr "Alloli"
+
+msgid "advanced_indent_desc"
+msgstr "Mewnoli"
+
+msgid "advanced_undo_desc"
+msgstr "Dadwneud (Ctrl+Z)"
+
+msgid "advanced_redo_desc"
+msgstr "Ailwneud (Ctrl+Y)"
+
+msgid "advanced_link_desc"
+msgstr "Mewnosod/golygu cyswllt"
+
+msgid "advanced_unlink_desc"
+msgstr "Datgysylltu"
+
+msgid "advanced_image_desc"
+msgstr "Mewnosod/golygu delwedd"
+
+msgid "advanced_cleanup_desc"
+msgstr "Glanhau côd anhrefnus"
+
+msgid "advanced_code_desc"
+msgstr "Golygu Ffynhonell HTML"
+
+msgid "advanced_sub_desc"
+msgstr "Isysgrif"
+
+msgid "advanced_sup_desc"
+msgstr "Uwchysgrif"
+
+msgid "advanced_hr_desc"
+msgstr "Mewnosod mesurydd llorweddol"
+
+msgid "advanced_removeformat_desc"
+msgstr "Tynnu fformatio"
+
+msgid "advanced_custom1_desc"
+msgstr "Eich disgrifiad addasiedig yma"
+
+msgid "advanced_forecolor_desc"
+msgstr "Dewis lliw testun"
+
+msgid "advanced_backcolor_desc"
+msgstr "Dewis lliw cefndir"
+
+msgid "advanced_charmap_desc"
+msgstr "Mewnosod nôd addasiedig"
+
+msgid "advanced_visualaid_desc"
+msgstr "Toglu llinellau cyfeirydd/elfennau anweledig"
+
+msgid "advanced_anchor_desc"
+msgstr "Mewnosod/golygu angor"
+
+msgid "advanced_cut_desc"
+msgstr "Torri"
+
+msgid "advanced_copy_desc"
+msgstr "Copïo"
+
+msgid "advanced_paste_desc"
+msgstr "Gludo"
+
+msgid "advanced_image_props_desc"
+msgstr "Priodweddau delwedd"
+
+msgid "advanced_newdocument_desc"
+msgstr "Dogfen newydd"
+
+msgid "advanced_help_desc"
+msgstr "Cymorth"
+
+msgid "advanced_blockquote_desc"
+msgstr "Dyfyniad bloc"
+
+msgid "advanced_clipboard_msg"
+msgstr "Nid yw Copïo/Torri/Gludo ar gael mewn Mozilla a Firefox.\nYdych chi eisiau mwy o wybodaeth am y mater yma?"
+
+msgid "advanced_path"
+msgstr "Llwybr"
+
+msgid "advanced_newdocument"
+msgstr "A ydych chi'n siŵr eich bod eisiau clirio'r holl cynnwys?"
+
+msgid "advanced_toolbar_focus"
+msgstr "Neidio i botymau offeryn - Alt+Q, Neidio i olygydd - Alt-Z, Neidio i lwybr elfen - Alt-X"
+
+msgid "advanced_more_colors"
+msgstr "Mwy o liwiau"
+
+msgid "advanced_image_delta_width"
+msgstr ""
+
+msgid "advanced_image_delta_height"
+msgstr ""
+
+msgid "advanced_link_delta_width"
+msgstr ""
+
+msgid "advanced_link_delta_height"
+msgstr ""
+
+msgid "advanced_colorpicker_delta_width"
+msgstr ""
+
+msgid "advanced_colorpicker_delta_height"
+msgstr ""
+
+msgid "advanced_charmap_delta_width"
+msgstr ""
+
+msgid "advanced_charmap_delta_height"
+msgstr ""
+
+msgid "advanced_anchor_delta_width"
+msgstr ""
+
+msgid "advanced_anchor_delta_height"
+msgstr ""
+
+msgid "advanced_dlg_about_title"
+msgstr "Ynglyn TinyMCE"
+
+msgid "advanced_dlg_about_general"
+msgstr "Ynglyn"
+
+msgid "advanced_dlg_about_help"
+msgstr "Cymorth"
+
+msgid "advanced_dlg_about_license"
+msgstr "Twyddedd"
+
+msgid "advanced_dlg_about_plugins"
+msgstr "Ategion"
+
+msgid "advanced_dlg_about_plugin"
+msgstr "Ategyn"
+
+msgid "advanced_dlg_about_author"
+msgstr "Awdur"
+
+msgid "advanced_dlg_about_version"
+msgstr "Fersion"
+
+msgid "advanced_dlg_about_loaded"
+msgstr "Ategion wedi llwytho"
+
+msgid "advanced_dlg_anchor_title"
+msgstr "Mewnosod/golygu angor"
+
+msgid "advanced_dlg_anchor_name"
+msgstr "Enw angor"
+
+msgid "advanced_dlg_code_title"
+msgstr "Golygydd Ffynhonell HTML"
+
+msgid "advanced_dlg_code_wordwrap"
+msgstr "Amlapio geiriau"
+
+msgid "advanced_dlg_colorpicker_title"
+msgstr "Dewis lliw"
+
+msgid "advanced_dlg_colorpicker_picker_tab"
+msgstr "Dweisydd"
+
+msgid "advanced_dlg_colorpicker_picker_title"
+msgstr "Dewisydd lliw"
+
+msgid "advanced_dlg_colorpicker_palette_tab"
+msgstr "Palet"
+
+msgid "advanced_dlg_colorpicker_palette_title"
+msgstr "Lliwiau palet"
+
+msgid "advanced_dlg_colorpicker_named_tab"
+msgstr "Wedi'u enwi"
+
+msgid "advanced_dlg_colorpicker_named_title"
+msgstr "Lliwiau wedi'u enwi"
+
+msgid "advanced_dlg_colorpicker_color"
+msgstr "Lliw:"
+
+msgid "advanced_dlg_colorpicker_name"
+msgstr "Enw:"
+
+msgid "advanced_dlg_charmap_title"
+msgstr "Dewis nôd addasiedig"
+
+msgid "advanced_dlg_image_title"
+msgstr "Mewnosod/golygu delwedd"
+
+msgid "advanced_dlg_image_src"
+msgstr "URL delwedd"
+
+msgid "advanced_dlg_image_alt"
+msgstr "disgrifiad delwedd"
+
+msgid "advanced_dlg_image_list"
+msgstr "Rhestr delweddau"
+
+msgid "advanced_dlg_image_border"
+msgstr "Border"
+
+msgid "advanced_dlg_image_dimensions"
+msgstr "Dimensiynau"
+
+msgid "advanced_dlg_image_vspace"
+msgstr "Gofod fertigol"
+
+msgid "advanced_dlg_image_hspace"
+msgstr "Gofod llorweddol"
+
+msgid "advanced_dlg_image_align"
+msgstr "Aliniad"
+
+msgid "advanced_dlg_image_align_baseline"
+msgstr "Gwaelodlin"
+
+msgid "advanced_dlg_image_align_top"
+msgstr "Pen"
+
+msgid "advanced_dlg_image_align_middle"
+msgstr "Canol"
+
+msgid "advanced_dlg_image_align_bottom"
+msgstr "Gwaelod"
+
+msgid "advanced_dlg_image_align_texttop"
+msgstr "Pen testun"
+
+msgid "advanced_dlg_image_align_textbottom"
+msgstr "Gwaelod testun"
+
+msgid "advanced_dlg_image_align_left"
+msgstr "Chwith"
+
+msgid "advanced_dlg_image_align_right"
+msgstr "De"
+
+msgid "advanced_dlg_link_title"
+msgstr "Mewnosod/golygu cyswllt"
+
+msgid "advanced_dlg_link_url"
+msgstr "URL cyswllt"
+
+msgid "advanced_dlg_link_target"
+msgstr "Targed"
+
+msgid "advanced_dlg_link_target_same"
+msgstr "Agor cyswllt yn yr un ffenst"
+
+msgid "advanced_dlg_link_target_blank"
+msgstr "Agor cyswllt mewn ffenst newydd"
+
+msgid "advanced_dlg_link_titlefield"
+msgstr "Teitl"
+
+msgid "advanced_dlg_link_is_email"
+msgstr "Mae'r URL a rydych wedi rhoi yn edrych fel cyferiad e-bost, ydych chi eisiau ychwanegu'r rhagddodiad mailto: sydd angen?"
+
+msgid "advanced_dlg_link_is_external"
+msgstr "Mae'r URL a rydych wedi rhoi yn edrych fel cyswllt allannol, ydych chi eisiau ychwanegu'r rhagddodiad http:// sydd angen?"
+
+msgid "advanced_dlg_link_list"
+msgstr "Rhestr cysylltau"
+
+msgid "contextmenu_align"
+msgstr "Aliniad"
+
+msgid "contextmenu_left"
+msgstr "Chwith"
+
+msgid "contextmenu_center"
+msgstr "Canol"
+
+msgid "contextmenu_right"
+msgstr "De"
+
+msgid "contextmenu_full"
+msgstr "Llawn"
+
+msgid "insertdatetime_date_fmt"
+msgstr "%Y-%m-%d"
+
+msgid "insertdatetime_time_fmt"
+msgstr "%H:%M:%S"
+
+msgid "insertdatetime_insertdate_desc"
+msgstr "Mewnosod dyddiad"
+
+msgid "insertdatetime_inserttime_desc"
+msgstr "Mewnosod amser"
+
+msgid "insertdatetime_months_long"
+msgstr "Ionawr,Chwefror,Mawrth,Ebrill,Mai,Mehefin,Goffennaf,Awst,Medi,Hydref,Tachwedd,Rhagfyr"
+
+msgid "insertdatetime_months_short"
+msgstr "Ion,Chw,Maw,Ebr,Mai,Meh,Gor,Aws,Med,Hyd,Tac,Rha"
+
+msgid "insertdatetime_day_long"
+msgstr "Sul,Llun,Mawrth,Mercher,Iau,Gwener,Sadwrn,Sul"
+
+msgid "insertdatetime_day_short"
+msgstr "Sul,Llu,Maw,Mer,Iau,Gwe,Sad,Sul"
+
+msgid "print_print_desc"
+msgstr "Argraffu"
+
+msgid "preview_preview_desc"
+msgstr "Rhagolygu"
+
+msgid "directionality_ltr_desc"
+msgstr "Cyfeiriad chwith i'r dde"
+
+msgid "directionality_rtl_desc"
+msgstr "Cyfeiriad de i'r chwith"
+
+msgid "layer_insertlayer_desc"
+msgstr "Mewnosod haen newydd"
+
+msgid "layer_forward_desc"
+msgstr "Symud ymlaen"
+
+msgid "layer_backward_desc"
+msgstr "Symud nôl"
+
+msgid "layer_absolute_desc"
+msgstr "Toglu lleoli absoliwt"
+
+msgid "layer_content"
+msgstr "Haen newydd..."
+
+msgid "save_save_desc"
+msgstr "Cadw"
+
+msgid "save_cancel_desc"
+msgstr "Cadw pob newidiad"
+
+msgid "nonbreaking_nonbreaking_desc"
+msgstr "Mewnosod nôd bwlch do-doriad"
+
+msgid "iespell_iespell_desc"
+msgstr "Rhedeg gwirio sillafu"
+
+msgid "iespell_download"
+msgstr "ieSpell dim wedi'i canfod. A ydych eisiau ei gosod rwan?"
+
+msgid "advhr_advhr_desc"
+msgstr "Mesurydd llorweddol"
+
+msgid "advhr_delta_width"
+msgstr ""
+
+msgid "advhr_delta_height"
+msgstr ""
+
+msgid "advhr_dlg_width"
+msgstr "Lled"
+
+msgid "advhr_dlg_size"
+msgstr "Uchder"
+
+msgid "advhr_dlg_noshade"
+msgstr "Dim cysgod"
+
+msgid "emotions_emotions_desc"
+msgstr "Emosiwn"
+
+msgid "emotions_delta_width"
+msgstr ""
+
+msgid "emotions_delta_height"
+msgstr ""
+
+msgid "emotions_dlg_title"
+msgstr "Mewnosod emosiwn"
+
+msgid "emotions_dlg_desc"
+msgstr "Emosiynau"
+
+msgid "emotions_dlg_cool"
+msgstr "Iawn"
+
+msgid "emotions_dlg_cry"
+msgstr "Crio"
+
+msgid "emotions_dlg_embarassed"
+msgstr "Rhwystrus"
+
+msgid "emotions_dlg_foot_in_mouth"
+msgstr "Troed yn ceg"
+
+msgid "emotions_dlg_frown"
+msgstr "Cuchio"
+
+msgid "emotions_dlg_innocent"
+msgstr "Dieuog"
+
+msgid "emotions_dlg_kiss"
+msgstr "Sws"
+
+msgid "emotions_dlg_laughing"
+msgstr "Chwerthin"
+
+msgid "emotions_dlg_money_mouth"
+msgstr "Ceg arian"
+
+msgid "emotions_dlg_sealed"
+msgstr "Wedi'i selio"
+
+msgid "emotions_dlg_smile"
+msgstr "Gwên"
+
+msgid "emotions_dlg_surprised"
+msgstr "Wedi synnu"
+
+msgid "emotions_dlg_tongue_out"
+msgstr "Tafod allan"
+
+msgid "emotions_dlg_undecided"
+msgstr "Heb penderfynu"
+
+msgid "emotions_dlg_wink"
+msgstr "Wincio"
+
+msgid "emotions_dlg_yell"
+msgstr "Gweiddi"
+
+msgid "searchreplace_search_desc"
+msgstr "Canfod"
+
+msgid "searchreplace_replace_desc"
+msgstr "Canfod/Amnewid"
+
+msgid "searchreplace_delta_width"
+msgstr ""
+
+msgid "searchreplace_delta_height"
+msgstr ""
+
+msgid "searchreplace_dlg_searchnext_desc"
+msgstr "Canfod eto"
+
+msgid "searchreplace_dlg_notfound"
+msgstr "Mae'r chwiliad wedi cwblhau. Methu canfod y llinyn chwiliad."
+
+msgid "searchreplace_dlg_search_title"
+msgstr "Canfod"
+
+msgid "searchreplace_dlg_replace_title"
+msgstr "Canfod/Amnewid"
+
+msgid "searchreplace_dlg_allreplaced"
+msgstr "Amnewidwyd pob digwyddiad o'r llinyn chwiliad."
+
+msgid "searchreplace_dlg_findwhat"
+msgstr "Canfod beth"
+
+msgid "searchreplace_dlg_replacewith"
+msgstr "Adnewid gyda"
+
+msgid "searchreplace_dlg_direction"
+msgstr "Cyfeiriad"
+
+msgid "searchreplace_dlg_up"
+msgstr "I fyny"
+
+msgid "searchreplace_dlg_down"
+msgstr "I lawr"
+
+msgid "searchreplace_dlg_mcase"
+msgstr "Cydweddu priflythrennedd"
+
+msgid "searchreplace_dlg_findnext"
+msgstr "Canfod nesaf"
+
+msgid "searchreplace_dlg_replace"
+msgstr "Amnewid"
+
+msgid "searchreplace_dlg_replaceall"
+msgstr "Amnewid pob un"
+
+msgid "ploneimage_image_desc"
+msgstr "Mewnosod/golygu delwedd"
+
+msgid "ploneimage_delta_width"
+msgstr ""
+
+msgid "ploneimage_delta_height"
+msgstr ""
+
+msgid "ploneimage_dlg_tab_general"
+msgstr "Cyffredinol"
+
+msgid "ploneimage_dlg_tab_appearance"
+msgstr "Ymddangosiad"
+
+msgid "ploneimage_dlg_tab_advanced"
+msgstr "Uwch"
+
+msgid "ploneimage_dlg_general"
+msgstr "Cyffredinol"
+
+msgid "ploneimage_dlg_title"
+msgstr "Teitl"
+
+msgid "ploneimage_dlg_preview"
+msgstr "Rhagolwg"
+
+msgid "ploneimage_dlg_constrain_proportions"
+msgstr "Cynfyngu cyfraneddau"
+
+msgid "ploneimage_dlg_langdir"
+msgstr "Cyfeiriad iaith"
+
+msgid "ploneimage_dlg_langcode"
+msgstr "Cod iaith"
+
+msgid "ploneimage_dlg_long_desc"
+msgstr "Cyswllt disgrifiad hir"
+
+msgid "ploneimage_dlg_style"
+msgstr "Arddull"
+
+msgid "ploneimage_dlg_classes"
+msgstr "Dosbarthiadau"
+
+msgid "ploneimage_dlg_ltr"
+msgstr "Chwith i'r dde"
+
+msgid "ploneimage_dlg_rtl"
+msgstr "De i'r chwith"
+
+msgid "ploneimage_dlg_id"
+msgstr "Id"
+
+msgid "ploneimage_dlg_map"
+msgstr "Map delweddau"
+
+msgid "ploneimage_dlg_swap_image"
+msgstr "Cyfnewid delwedd"
+
+msgid "ploneimage_dlg_alt_image"
+msgstr "Delwedd arall"
+
+msgid "ploneimage_dlg_mouseover"
+msgstr "ar gyfer llygoden drosti"
+
+msgid "ploneimage_dlg_mouseout"
+msgstr "ar gyfer llygoden allan"
+
+msgid "ploneimage_dlg_misc"
+msgstr "Amrywiol"
+
+msgid "ploneimage_dlg_example_img"
+msgstr "Delwedd rhagolygiad ymddangosiad"
+
+msgid "ploneimage_dlg_missing_alt"
+msgstr "A ydych chi'n siŵr eich bod eisiau parhau heb cynnwys Disgrifiad Delwedd? Hebddo fo ni fydd y delwedd yn hygyrchol i ddefnyddwyr gyda anableddau, neu sy'n defnyddio porwr testun, neu sy'n pori'r we gyda delweddau wedi'u diffodd."
+
+msgid "ploneimage_dlg_dialog_title"
+msgstr "Mewnosod/golygu delwedd"
+
+msgid "ploneimage_dlg_src"
+msgstr "URL delwedd"
+
+msgid "ploneimage_dlg_alt"
+msgstr "Disgrifiad delwedd"
+
+msgid "ploneimage_dlg_list"
+msgstr "Rhestr delweddau"
+
+msgid "ploneimage_dlg_border"
+msgstr "Border"
+
+msgid "ploneimage_dlg_dimensions"
+msgstr "Dimensiynau"
+
+msgid "ploneimage_dlg_vspace"
+msgstr "Gofod fertigol"
+
+msgid "ploneimage_dlg_hspace"
+msgstr "Gofod llorweddol"
+
+msgid "ploneimage_dlg_align"
+msgstr "Aliniad"
+
+msgid "ploneimage_dlg_align_baseline"
+msgstr "Gwaelodlin"
+
+msgid "ploneimage_dlg_align_top"
+msgstr "Pen"
+
+msgid "ploneimage_dlg_align_middle"
+msgstr "Canol"
+
+msgid "ploneimage_dlg_align_bottom"
+msgstr "Gwaelod"
+
+msgid "ploneimage_dlg_align_texttop"
+msgstr "Pen testun"
+
+msgid "ploneimage_dlg_align_textbottom"
+msgstr "Gwaelod testun"
+
+msgid "ploneimage_dlg_align_left"
+msgstr "Chwith"
+
+msgid "ploneimage_dlg_align_right"
+msgstr "De"
+
+msgid "ploneimage_dlg_image_list"
+msgstr "Rhestr delweddau"
+
+msgid "plonelink_link_desc"
+msgstr "Mewnosod/Golygu cyswllt"
+
+msgid "plonelink_delta_width"
+msgstr ""
+
+msgid "plonelink_delta_height"
+msgstr ""
+
+msgid "plonelink_dlg_title"
+msgstr "Mewnosod/Golygu cyswllt"
+
+msgid "plonelink_dlg_url"
+msgstr "URL cyswllt"
+
+msgid "plonelink_dlg_target"
+msgstr "Targed"
+
+msgid "plonelink_dlg_titlefield"
+msgstr "Teitl"
+
+msgid "plonelink_dlg_is_email"
+msgstr "Mae'r URL a rydych wedi rhoi yn edrych fel cyferiad e-bost, ydych chi eisiau ychwanegu'r rhagddodiad mailto: sydd angen?"
+
+msgid "plonelink_dlg_is_external"
+msgstr "Mae'r URL a rydych wedi rhoi yn edrych fel cyswllt allannol, ydych chi eisiau ychwanegu'r rhagddodiad http:// sydd angen?"
+
+msgid "plonelink_dlg_list"
+msgstr "Rhestr cysylltau"
+
+msgid "plonelink_dlg_general_tab"
+msgstr "Cyffredinol"
+
+msgid "plonelink_dlg_popup_tab"
+msgstr "Naidlen"
+
+msgid "plonelink_dlg_events_tab"
+msgstr "Digwyddiadau"
+
+msgid "plonelink_dlg_advanced_tab"
+msgstr "Uwch"
+
+msgid "plonelink_dlg_general_props"
+msgstr "Priodweddau cyfferdinol"
+
+msgid "plonelink_dlg_popup_props"
+msgstr "Priodweddau cyffredinol"
+
+msgid "plonelink_dlg_event_props"
+msgstr "Digwyddiadau"
+
+msgid "plonelink_dlg_advanced_props"
+msgstr "Priodweddau uwch"
+
+msgid "plonelink_dlg_popup_opts"
+msgstr "Dewisiadau"
+
+msgid "plonelink_dlg_anchor_names"
+msgstr "Angorau"
+
+msgid "plonelink_dlg_target_same"
+msgstr "Agos mewn y ffenest / ffrâm yma"
+
+msgid "plonelink_dlg_target_parent"
+msgstr "Agos mewn y ffenest / ffrâm rhiant"
+
+msgid "plonelink_dlg_target_top"
+msgstr "Agor mewn pen ffrâm (amnewid pob ffrâm)"
+
+msgid "plonelink_dlg_target_blank"
+msgstr "Agor mewn ffenest newydd"
+
+msgid "plonelink_dlg_popup"
+msgstr "Naidlen JavaScript"
+
+msgid "plonelink_dlg_popup_url"
+msgstr "URL naidlen"
+
+msgid "plonelink_dlg_popup_name"
+msgstr "Enw ffenest"
+
+msgid "plonelink_dlg_popup_return"
+msgstr "Mewnosod 'return false'"
+
+msgid "plonelink_dlg_popup_scrollbars"
+msgstr "Dangos bar sgrolio"
+
+msgid "plonelink_dlg_popup_statusbar"
+msgstr "Dangor bar statws"
+
+msgid "plonelink_dlg_popup_toolbar"
+msgstr "Dangos barrau offer"
+
+msgid "plonelink_dlg_popup_menubar"
+msgstr "Dangos bar dewislen"
+
+msgid "plonelink_dlg_popup_location"
+msgstr "Dangos bar lleoliad"
+
+msgid "plonelink_dlg_popup_resizable"
+msgstr "Gwneud ffenest yn ailfeintiol"
+
+msgid "plonelink_dlg_popup_dependent"
+msgstr "Dibynnol (dim ond Mozilla/Firefox)"
+
+msgid "plonelink_dlg_popup_size"
+msgstr "Maint"
+
+msgid "plonelink_dlg_popup_position"
+msgstr "Safle (X/Y)"
+
+msgid "plonelink_dlg_id"
+msgstr "Id"
+
+msgid "plonelink_dlg_style"
+msgstr "Arddull"
+
+msgid "plonelink_dlg_classes"
+msgstr "Dosbarthiadau"
+
+msgid "plonelink_dlg_target_name"
+msgstr "Enw targed"
+
+msgid "plonelink_dlg_langdir"
+msgstr "Cyfeiriad iaith"
+
+msgid "plonelink_dlg_target_langcode"
+msgstr "Iaith targed"
+
+msgid "plonelink_dlg_langcode"
+msgstr "Cod iaith"
+
+msgid "plonelink_dlg_encoding"
+msgstr "Amgodiad nodau targed"
+
+msgid "plonelink_dlg_mime"
+msgstr "Math MIME targed"
+
+msgid "plonelink_dlg_rel"
+msgstr "Perthynas y tudalen i'r targed"
+
+msgid "plonelink_dlg_rev"
+msgstr "Perthynas y targed i'r tudalen"
+
+msgid "plonelink_dlg_tabindex"
+msgstr "Trefn tabio"
+
+msgid "plonelink_dlg_accesskey"
+msgstr "Bysell mynediad"
+
+msgid "plonelink_dlg_ltr"
+msgstr "Chwith i'r dde"
+
+msgid "plonelink_dlg_rtl"
+msgstr "De i'r chwith"
+
+msgid "plonelink_dlg_link_list"
+msgstr "Rhestr cysylltau"
+
+msgid "xhtmlxtras_cite_desc"
+msgstr "Dyfyniad"
+
+msgid "xhtmlxtras_abbr_desc"
+msgstr "Talfyriad"
+
+msgid "xhtmlxtras_acronym_desc"
+msgstr "Acronym"
+
+msgid "xhtmlxtras_del_desc"
+msgstr "Dilead"
+
+msgid "xhtmlxtras_ins_desc"
+msgstr "Mewnosodiad"
+
+msgid "xhtmlxtras_attribs_desc"
+msgstr "Mewnosod/Golygu Priodoleddau"
+
+msgid "xhtmlxtras_cite_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_cite_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_abbr_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_abbr_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_acronym_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_acronym_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_del_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_del_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_ins_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_ins_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_attribs_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_attribs_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_dlg_attribute_label_title"
+msgstr "Teitl"
+
+msgid "xhtmlxtras_dlg_attribute_label_id"
+msgstr "ID"
+
+msgid "xhtmlxtras_dlg_attribute_label_class"
+msgstr "Dosbarth"
+
+msgid "xhtmlxtras_dlg_attribute_label_style"
+msgstr "Arddull"
+
+msgid "xhtmlxtras_dlg_attribute_label_cite"
+msgstr "Dyfynnu"
+
+msgid "xhtmlxtras_dlg_attribute_label_datetime"
+msgstr "Dyddiad/Amser"
+
+msgid "xhtmlxtras_dlg_attribute_label_langdir"
+msgstr "Cyfeiriad Testun"
+
+msgid "xhtmlxtras_dlg_attribute_option_ltr"
+msgstr "Chwith i'r dde"
+
+msgid "xhtmlxtras_dlg_attribute_option_rtl"
+msgstr "De i'r chwith"
+
+msgid "xhtmlxtras_dlg_attribute_label_langcode"
+msgstr "Iaith"
+
+msgid "xhtmlxtras_dlg_attribute_label_tabindex"
+msgstr "Trefn tabio"
+
+msgid "xhtmlxtras_dlg_attribute_label_accesskey"
+msgstr "Bysell mynediad"
+
+msgid "xhtmlxtras_dlg_attribute_events_tab"
+msgstr "Digwyddiadau"
+
+msgid "xhtmlxtras_dlg_attribute_attrib_tab"
+msgstr "Priodoleddau"
+
+msgid "xhtmlxtras_dlg_general_tab"
+msgstr "Cyffredinol"
+
+msgid "xhtmlxtras_dlg_attrib_tab"
+msgstr "Priodoleddau"
+
+msgid "xhtmlxtras_dlg_events_tab"
+msgstr "Digwyddiadau"
+
+msgid "xhtmlxtras_dlg_fieldset_general_tab"
+msgstr "Gosodiadau Cyfredinol"
+
+msgid "xhtmlxtras_dlg_fieldset_attrib_tab"
+msgstr "Priodoleddau Elfen"
+
+msgid "xhtmlxtras_dlg_fieldset_events_tab"
+msgstr "Digwyddiadau Elfen"
+
+msgid "xhtmlxtras_dlg_title_ins_element"
+msgstr "Elfen Mewnosodiad"
+
+msgid "xhtmlxtras_dlg_title_del_element"
+msgstr "Elfen Dilead"
+
+msgid "xhtmlxtras_dlg_title_acronym_element"
+msgstr "Elfen Acronym"
+
+msgid "xhtmlxtras_dlg_title_abbr_element"
+msgstr "Elfen Talfyriad"
+
+msgid "xhtmlxtras_dlg_title_cite_element"
+msgstr "Elfen Dyfyniad"
+
+msgid "xhtmlxtras_dlg_remove"
+msgstr "Tynnu"
+
+msgid "xhtmlxtras_dlg_insert_date"
+msgstr "Mewnosod dyddiad/amser presennol"
+
+msgid "xhtmlxtras_dlg_option_ltr"
+msgstr "Chwith i'r dde"
+
+msgid "xhtmlxtras_dlg_option_rtl"
+msgstr "De i'r chwith"
+
+msgid "xhtmlxtras_dlg_attribs_title"
+msgstr "Mewnosod/Golygu Priodoleddau"
+
+msgid "style_desc"
+msgstr "Golygu Arddull CSS"
+
+msgid "style_delta_width"
+msgstr ""
+
+msgid "style_delta_height"
+msgstr ""
+
+msgid "style_dlg_title"
+msgstr "Golygu Arddull CSS"
+
+msgid "style_dlg_apply"
+msgstr "Gosod"
+
+msgid "style_dlg_text_tab"
+msgstr "Testun"
+
+msgid "style_dlg_background_tab"
+msgstr "Cefndir"
+
+msgid "style_dlg_block_tab"
+msgstr "Bloc"
+
+msgid "style_dlg_box_tab"
+msgstr "Blwch"
+
+msgid "style_dlg_border_tab"
+msgstr "Border"
+
+msgid "style_dlg_list_tab"
+msgstr "Rhestr"
+
+msgid "style_dlg_positioning_tab"
+msgstr "Lleoli"
+
+msgid "style_dlg_text_props"
+msgstr "Testun"
+
+msgid "style_dlg_text_font"
+msgstr "Ffont"
+
+msgid "style_dlg_text_size"
+msgstr "Maint"
+
+msgid "style_dlg_text_weight"
+msgstr "Pwysau"
+
+msgid "style_dlg_text_style"
+msgstr "Arddull"
+
+msgid "style_dlg_text_variant"
+msgstr "Amrywiad"
+
+msgid "style_dlg_text_lineheight"
+msgstr "Uchder llinell"
+
+msgid "style_dlg_text_case"
+msgstr "Llythrennau bach/mawr"
+
+msgid "style_dlg_text_color"
+msgstr "Lliw"
+
+msgid "style_dlg_text_decoration"
+msgstr "Addurniadau"
+
+msgid "style_dlg_text_overline"
+msgstr "Llinell drosodd"
+
+msgid "style_dlg_text_underline"
+msgstr "Llinell o dan"
+
+msgid "style_dlg_text_striketrough"
+msgstr "Taro drwodd"
+
+msgid "style_dlg_text_blink"
+msgstr "Blincio"
+
+msgid "style_dlg_text_none"
+msgstr "Dim un"
+
+msgid "style_dlg_background_color"
+msgstr "Lliw cefndir"
+
+msgid "style_dlg_background_image"
+msgstr "Delwedd cefndir"
+
+msgid "style_dlg_background_repeat"
+msgstr "Ailadrodd"
+
+msgid "style_dlg_background_attachment"
+msgstr "Atodiad"
+
+msgid "style_dlg_background_hpos"
+msgstr "Lleoliad llorweddol"
+
+msgid "style_dlg_background_vpos"
+msgstr "Lleoliad fertigol"
+
+msgid "style_dlg_block_wordspacing"
+msgstr "Bylchiad gair"
+
+msgid "style_dlg_block_letterspacing"
+msgstr "Bylchiad lythyren"
+
+msgid "style_dlg_block_vertical_alignment"
+msgstr "Aliniad fertigol"
+
+msgid "style_dlg_block_text_align"
+msgstr "Alinio testun"
+
+msgid "style_dlg_block_text_indent"
+msgstr "Mewnoli tetun"
+
+msgid "style_dlg_block_whitespace"
+msgstr "Whitespace"
+
+msgid "style_dlg_block_display"
+msgstr "Arddangos"
+
+msgid "style_dlg_box_width"
+msgstr "Lled"
+
+msgid "style_dlg_box_height"
+msgstr "Uchder"
+
+msgid "style_dlg_box_float"
+msgstr "Arnofio"
+
+msgid "style_dlg_box_clear"
+msgstr "Clirio"
+
+msgid "style_dlg_padding"
+msgstr "Padio"
+
+msgid "style_dlg_same"
+msgstr "Yr un ar gyfer pob un"
+
+msgid "style_dlg_top"
+msgstr "Pen"
+
+msgid "style_dlg_right"
+msgstr "De"
+
+msgid "style_dlg_bottom"
+msgstr "Gwaelod"
+
+msgid "style_dlg_left"
+msgstr "Chwith"
+
+msgid "style_dlg_margin"
+msgstr "Ymyl"
+
+msgid "style_dlg_style"
+msgstr "Arddull"
+
+msgid "style_dlg_width"
+msgstr "Lled"
+
+msgid "style_dlg_height"
+msgstr "Uchder"
+
+msgid "style_dlg_color"
+msgstr "Lliw"
+
+msgid "style_dlg_list_type"
+msgstr "Math"
+
+msgid "style_dlg_bullet_image"
+msgstr "Delwedd bwled"
+
+msgid "style_dlg_position"
+msgstr "Lleoliad"
+
+msgid "style_dlg_positioning_type"
+msgstr "Math"
+
+msgid "style_dlg_visibility"
+msgstr "Gwelededd"
+
+msgid "style_dlg_zindex"
+msgstr "Mynegai-Z"
+
+msgid "style_dlg_overflow"
+msgstr "Gorlif"
+
+msgid "style_dlg_placement"
+msgstr "Gosodiad"
+
+msgid "style_dlg_clip"
+msgstr "Clip"
+
+msgid "paste_paste_text_desc"
+msgstr "Gludo fel Testun Plaen"
+
+msgid "paste_paste_word_desc"
+msgstr "Gludo o Word"
+
+msgid "paste_selectall_desc"
+msgstr "Dewis Pobpeth"
+
+msgid "paste_dlg_text_title"
+msgstr "Defnyddiwch CTRL+V ar eich bysellfwrdd i ludo'r testun i fewn i'r ffenest."
+
+msgid "paste_dlg_text_linebreaks"
+msgstr "Cadw toriadau llinell"
+
+msgid "paste_dlg_word_title"
+msgstr "Defnyddiwch CTRL+V ar eich bysellfwrdd i ludo'r testun i fewn i'r ffenest."
+
+msgid "table_desc"
+msgstr "Mewnosod tabl newydd"
+
+msgid "table_row_before_desc"
+msgstr "Mewnosod rhes cyn"
+
+msgid "table_row_after_desc"
+msgstr "Mewnosod rhes ar ôl"
+
+msgid "table_delete_row_desc"
+msgstr "Dileu rhes"
+
+msgid "table_col_before_desc"
+msgstr "Mewnosod colofn cyn"
+
+msgid "table_col_after_desc"
+msgstr "Mewnosod colofn ar ôl"
+
+msgid "table_delete_col_desc"
+msgstr "Tynnu colofn"
+
+msgid "table_split_cells_desc"
+msgstr "Hollti celloedd tabl cyfuniedig"
+
+msgid "table_merge_cells_desc"
+msgstr "Cyfuno celloedd tabl"
+
+msgid "table_row_desc"
+msgstr "Priodweddau rhes tabl"
+
+msgid "table_cell_desc"
+msgstr "Priodweddau cell tabl"
+
+msgid "table_props_desc"
+msgstr "Priodweddau tabl"
+
+msgid "table_paste_row_before_desc"
+msgstr "Gludo rhes tabl cyn"
+
+msgid "table_paste_row_after_desc"
+msgstr "Gludo rhes tabl ar ôl"
+
+msgid "table_cut_row_desc"
+msgstr "Torri rhes tabl"
+
+msgid "table_copy_row_desc"
+msgstr "Copïo rhes tabl"
+
+msgid "table_del"
+msgstr "Dileu tabl"
+
+msgid "table_row"
+msgstr "Rhes"
+
+msgid "table_col"
+msgstr "Colofn"
+
+msgid "table_cell"
+msgstr "Cell"
+
+msgid "table_rowprops_delta_width"
+msgstr ""
+
+msgid "table_rowprops_delta_height"
+msgstr ""
+
+msgid "table_cellprops_delta_width"
+msgstr ""
+
+msgid "table_cellprops_delta_height"
+msgstr ""
+
+msgid "table_table_delta_width"
+msgstr ""
+
+msgid "table_table_delta_height"
+msgstr ""
+
+msgid "table_merge_cells_delta_width"
+msgstr ""
+
+msgid "table_merge_cells_delta_height"
+msgstr ""
+
+msgid "table_dlg_general_tab"
+msgstr "Cyffredinol"
+
+msgid "table_dlg_advanced_tab"
+msgstr "Uwch"
+
+msgid "table_dlg_general_props"
+msgstr "Priodweddau cyffredinol"
+
+msgid "table_dlg_advanced_props"
+msgstr "Priodweddau uwch"
+
+msgid "table_dlg_rowtype"
+msgstr "Rhes mewn rhan tabl"
+
+msgid "table_dlg_title"
+msgstr "Mewnosod/Golygu tabl"
+
+msgid "table_dlg_width"
+msgstr "Lled"
+
+msgid "table_dlg_height"
+msgstr "Uchder"
+
+msgid "table_dlg_cols"
+msgstr "Colofnau"
+
+msgid "table_dlg_rows"
+msgstr "Rhesi"
+
+msgid "table_dlg_cellspacing"
+msgstr "Bylchiad celloedd"
+
+msgid "table_dlg_cellpadding"
+msgstr "Padio celloedd"
+
+msgid "table_dlg_border"
+msgstr "Border"
+
+msgid "table_dlg_align"
+msgstr "Aliniad"
+
+msgid "table_dlg_align_default"
+msgstr "Rhagosodedig"
+
+msgid "table_dlg_align_left"
+msgstr "Chwith"
+
+msgid "table_dlg_align_right"
+msgstr "De"
+
+msgid "table_dlg_align_middle"
+msgstr "Canol"
+
+msgid "table_dlg_row_title"
+msgstr "Priodweddau rhes tabl"
+
+msgid "table_dlg_cell_title"
+msgstr "Priodweddau cell tabl"
+
+msgid "table_dlg_cell_type"
+msgstr "Math cell"
+
+msgid "table_dlg_valign"
+msgstr "Aliniad ferigol"
+
+msgid "table_dlg_align_top"
+msgstr "Pen"
+
+msgid "table_dlg_align_bottom"
+msgstr "Gwaelod"
+
+msgid "table_dlg_bordercolor"
+msgstr "Lliw border"
+
+msgid "table_dlg_bgcolor"
+msgstr "Lliw cefndir"
+
+msgid "table_dlg_merge_cells_title"
+msgstr "Cyfuno celloedd tabl"
+
+msgid "table_dlg_id"
+msgstr "Id"
+
+msgid "table_dlg_style"
+msgstr "Arddull"
+
+msgid "table_dlg_langdir"
+msgstr "Cyfeiriad iaith"
+
+msgid "table_dlg_langcode"
+msgstr "Cod iaith"
+
+msgid "table_dlg_mime"
+msgstr "Math MIME targed"
+
+msgid "table_dlg_ltr"
+msgstr "Chwith i'r dde"
+
+msgid "table_dlg_rtl"
+msgstr "De i'r chwith"
+
+msgid "table_dlg_bgimage"
+msgstr "Delwedd cefndir"
+
+msgid "table_dlg_summary"
+msgstr "Crynodeb"
+
+msgid "table_dlg_td"
+msgstr "Data"
+
+msgid "table_dlg_th"
+msgstr "Pennyn"
+
+msgid "table_dlg_cell_cell"
+msgstr "Diweddaru cell cyfredol"
+
+msgid "table_dlg_cell_row"
+msgstr "Diweddaru pob cell yn y rhes"
+
+msgid "table_dlg_cell_all"
+msgstr "Diweddaru pob cell yn y tabl"
+
+msgid "table_dlg_row_row"
+msgstr "Diweddaru rhes cyfredol"
+
+msgid "table_dlg_row_odd"
+msgstr "Diweddaru rhesi odrif yn y tabl"
+
+msgid "table_dlg_row_even"
+msgstr "Diweddaru rhesi eilrif yn y tabl"
+
+msgid "table_dlg_row_all"
+msgstr "Diweddaru pob rhes yn y tabl"
+
+msgid "table_dlg_thead"
+msgstr "Pen Tabl"
+
+msgid "table_dlg_tbody"
+msgstr "Corff Tabl"
+
+msgid "table_dlg_tfoot"
+msgstr "Troed Tabl"
+
+msgid "table_dlg_scope"
+msgstr "Cwmpas"
+
+msgid "table_dlg_rowgroup"
+msgstr "Grŵp Rhesi"
+
+msgid "table_dlg_colgroup"
+msgstr "Grŵp Colofnau"
+
+msgid "table_dlg_col_limit"
+msgstr "Rydych wedi mynd tu twnt i'r nifer uchafswm {$cols} o golofnau."
+
+msgid "table_dlg_row_limit"
+msgstr "Rydych wedi mynd tu twnt i'r nifer uchafswm {$rows} o rhesi."
+
+msgid "table_dlg_cell_limit"
+msgstr "Rydych wedi mynd tu twnt i'r nifer uchafswm {$cells} o celloedd."
+
+msgid "table_dlg_missing_scope"
+msgstr "A ydych chi'n siŵr eich bod eisiau parhau heb penodi cwmpas i'r cell pennyn yma? Hebddo fo, efallai fydd o'n anodd i rhai ddefnyddwyr gyda anableddau i ddeallt y cynnwys neu'r data yn y tabl."
+
+msgid "table_dlg_caption"
+msgstr "Egluryn tabl"
+
+msgid "table_dlg_frame"
+msgstr "Ffrâm"
+
+msgid "table_dlg_frame_none"
+msgstr "none"
+
+msgid "table_dlg_frame_groups"
+msgstr "groups"
+
+msgid "table_dlg_frame_rows"
+msgstr "rows"
+
+msgid "table_dlg_frame_cols"
+msgstr "cols"
+
+msgid "table_dlg_frame_all"
+msgstr "all"
+
+msgid "table_dlg_rules"
+msgstr "Rheolau"
+
+msgid "table_dlg_rules_void"
+msgstr "void"
+
+msgid "table_dlg_rules_above"
+msgstr "above"
+
+msgid "table_dlg_rules_below"
+msgstr "o dan"
+
+msgid "table_dlg_rules_hsides"
+msgstr "hsides"
+
+msgid "table_dlg_rules_lhs"
+msgstr "lhs"
+
+msgid "table_dlg_rules_rhs"
+msgstr "rhs"
+
+msgid "table_dlg_rules_vsides"
+msgstr "vsides"
+
+msgid "table_dlg_rules_box"
+msgstr "box"
+
+msgid "table_dlg_rules_border"
+msgstr "border"
+
+msgid "autosave_unload_msg"
+msgstr "Bydd eich newidiadau yn cael eu colli os byddwch yn llywio i ffwrdd o'r tudalen yma."
+
+msgid "fullscreen_desc"
+msgstr "Toglu modd sgrin llawn"
+
+msgid "media_desc"
+msgstr "Mewnosod / golygu cyfrwng planedig"
+
+msgid "media_edit"
+msgstr "Golygu cyfrwng planedig"
+
+msgid "media_delta_width"
+msgstr ""
+
+msgid "media_delta_height"
+msgstr ""
+
+msgid "media_dlg_title"
+msgstr "Mewnosod / golygu cyfrwng planedig"
+
+msgid "media_dlg_general"
+msgstr "Cyffredinol"
+
+msgid "media_dlg_advanced"
+msgstr "Uwch"
+
+msgid "media_dlg_file"
+msgstr "Ffeil/URL"
+
+msgid "media_dlg_list"
+msgstr "Rhestr"
+
+msgid "media_dlg_size"
+msgstr "Dimensiynau"
+
+msgid "media_dlg_preview"
+msgstr "Rhagolygu"
+
+msgid "media_dlg_constrain_proportions"
+msgstr "Cynfyngu cyfraneddau"
+
+msgid "media_dlg_type"
+msgstr "Math"
+
+msgid "media_dlg_id"
+msgstr "Id"
+
+msgid "media_dlg_name"
+msgstr "Enw"
+
+msgid "media_dlg_class_name"
+msgstr "Dosbarth"
+
+msgid "media_dlg_vspace"
+msgstr "Gofod fertigol"
+
+msgid "media_dlg_hspace"
+msgstr "Gofod llorweddol"
+
+msgid "media_dlg_play"
+msgstr "Awto-chwarae"
+
+msgid "media_dlg_loop"
+msgstr "Dolen"
+
+msgid "media_dlg_menu"
+msgstr "Dangos dewislen"
+
+msgid "media_dlg_quality"
+msgstr "Ansawdd"
+
+msgid "media_dlg_scale"
+msgstr "Gradd"
+
+msgid "media_dlg_align"
+msgstr "Alinio"
+
+msgid "media_dlg_salign"
+msgstr "Alinio-S"
+
+msgid "media_dlg_wmode"
+msgstr "Modd-W"
+
+msgid "media_dlg_bgcolor"
+msgstr "Cefndir"
+
+msgid "media_dlg_base"
+msgstr "Sail"
+
+msgid "media_dlg_flashvars"
+msgstr "Flashvars"
+
+msgid "media_dlg_liveconnect"
+msgstr "SWLiveConnect"
+
+msgid "media_dlg_autohref"
+msgstr "AutoHREF"
+
+msgid "media_dlg_cache"
+msgstr "Storfa"
+
+msgid "media_dlg_hidden"
+msgstr "Wedi'i cuddio"
+
+msgid "media_dlg_controller"
+msgstr "Rheolydd"
+
+msgid "media_dlg_kioskmode"
+msgstr "Modd ciosk"
+
+msgid "media_dlg_playeveryframe"
+msgstr "Chwarae pob ffrâm"
+
+msgid "media_dlg_targetcache"
+msgstr "Storfa targed"
+
+msgid "media_dlg_correction"
+msgstr "Dim cywiriad"
+
+msgid "media_dlg_enablejavascript"
+msgstr "Galluogi JavaScript"
+
+msgid "media_dlg_starttime"
+msgstr "Amser dechrae"
+
+msgid "media_dlg_endtime"
+msgstr "Amser gorffen"
+
+msgid "media_dlg_href"
+msgstr "Href"
+
+msgid "media_dlg_qtsrcchokespeed"
+msgstr "Tagu cyflymder"
+
+msgid "media_dlg_target"
+msgstr "Targed"
+
+msgid "media_dlg_volume"
+msgstr "Cyfrol"
+
+msgid "media_dlg_autostart"
+msgstr "Awto-cychwyn"
+
+msgid "media_dlg_enabled"
+msgstr "Wedi'i galluogi"
+
+msgid "media_dlg_fullscreen"
+msgstr "Sgrin llawn"
+
+msgid "media_dlg_invokeurls"
+msgstr "Defnyddio URLs"
+
+msgid "media_dlg_mute"
+msgstr "Mudo"
+
+msgid "media_dlg_stretchtofit"
+msgstr "Ymestun i ffitio"
+
+msgid "media_dlg_windowlessvideo"
+msgstr "Fideo heb-ffenest"
+
+msgid "media_dlg_balance"
+msgstr "Cydbwysedd"
+
+msgid "media_dlg_baseurl"
+msgstr "URL seiledig"
+
+msgid "media_dlg_captioningid"
+msgstr "Id egluro"
+
+msgid "media_dlg_currentmarker"
+msgstr "Marciwr cyfredol"
+
+msgid "media_dlg_currentposition"
+msgstr "Lleoliad cyfredol"
+
+msgid "media_dlg_defaultframe"
+msgstr "Ffrâm rhagosodedig"
+
+msgid "media_dlg_playcount"
+msgstr "Cyfrif chwarae"
+
+msgid "media_dlg_rate"
+msgstr "Cyfradd"
+
+msgid "media_dlg_uimode"
+msgstr "Modd UI"
+
+msgid "media_dlg_flash_options"
+msgstr "Dewisiadau Flash"
+
+msgid "media_dlg_qt_options"
+msgstr "Dewisiadau Quicktime"
+
+msgid "media_dlg_wmp_options"
+msgstr "Dewisiadau Windows Media Player"
+
+msgid "media_dlg_rmp_options"
+msgstr "Dewisiadau Real Media Player"
+
+msgid "media_dlg_shockwave_options"
+msgstr "Dewisiadau Shockwave"
+
+msgid "media_dlg_autogotourl"
+msgstr "URL awto-mynd-i"
+
+msgid "media_dlg_center"
+msgstr "Canol"
+
+msgid "media_dlg_imagestatus"
+msgstr "Statws delwedd"
+
+msgid "media_dlg_maintainaspect"
+msgstr "Cynnal agwedd"
+
+msgid "media_dlg_nojava"
+msgstr "Dim java"
+
+msgid "media_dlg_prefetch"
+msgstr "Cyn-nôl"
+
+msgid "media_dlg_shuffle"
+msgstr "Cymysgu"
+
+msgid "media_dlg_console"
+msgstr "Consol"
+
+msgid "media_dlg_numloop"
+msgstr "Nifer o dolenau"
+
+msgid "media_dlg_controls"
+msgstr "Rheolyddion"
+
+msgid "media_dlg_scriptcallbacks"
+msgstr "Nôl-galwadau sgript"
+
+msgid "media_dlg_swstretchstyle"
+msgstr "Arddull ymestyn"
+
+msgid "media_dlg_swstretchhalign"
+msgstr "Aliniad llorweddol ymestyn"
+
+msgid "media_dlg_swstretchvalign"
+msgstr "Aliniad fertigol ymestyn"
+
+msgid "media_dlg_sound"
+msgstr "Sain"
+
+msgid "media_dlg_progress"
+msgstr "Cynnydd"
+
+msgid "media_dlg_qtsrc"
+msgstr "Fynhonell QT"
+
+msgid "media_dlg_qt_stream_warn"
+msgstr "Dylai adnoddau RTSP ffrydio cael eu ychwanegu i'r maes Fynhonell QT o dan y tab Uwch.\n Dylai chi hefyd ychwanegu fersiwn heb-ffrydio i'r maes Fynhonell."
+
+msgid "media_dlg_align_top"
+msgstr "Pen"
+
+msgid "media_dlg_align_right"
+msgstr "De"
+
+msgid "media_dlg_align_bottom"
+msgstr "Gwaelod"
+
+msgid "media_dlg_align_left"
+msgstr "Chwith"
+
+msgid "media_dlg_align_center"
+msgstr "Canol"
+
+msgid "media_dlg_align_top_left"
+msgstr "Pen canol"
+
+msgid "media_dlg_align_top_right"
+msgstr "Pen dde"
+
+msgid "media_dlg_align_bottom_left"
+msgstr "Gwaelod chwith"
+
+msgid "media_dlg_align_bottom_right"
+msgstr "Gwaelod dde"
+
+msgid "media_dlg_flv_options"
+msgstr "Dewisiadau fideo Flash"
+
+msgid "media_dlg_flv_scalemode"
+msgstr "Modd graddfa"
+
+msgid "media_dlg_flv_buffer"
+msgstr "Buffer"
+
+msgid "media_dlg_flv_startimage"
+msgstr "Delwedd cychwyn"
+
+msgid "media_dlg_flv_starttime"
+msgstr "Amser cychwyn"
+
+msgid "media_dlg_flv_defaultvolume"
+msgstr "Cyfrol rhagosodedig"
+
+msgid "media_dlg_flv_hiddengui"
+msgstr "GUI wedi'i cuddio"
+
+msgid "media_dlg_flv_autostart"
+msgstr "Awto-cychwyn"
+
+msgid "media_dlg_flv_loop"
+msgstr "Doleni"
+
+msgid "media_dlg_flv_showscalemodes"
+msgstr "Dangos moddau graddfa"
+
+msgid "media_dlg_flv_smoothvideo"
+msgstr "Fideo llyfn"
+
+msgid "media_dlg_flv_jscallback"
+msgstr "Nôl-galwad JS"
+
+msgid "fullpage_desc"
+msgstr "Priodweddau dogfen"
+
+msgid "fullpage_delta_width"
+msgstr ""
+
+msgid "fullpage_delta_height"
+msgstr ""
+
+msgid "fullpage_dlg_title"
+msgstr "Priodweddau dogfen"
+
+msgid "fullpage_dlg_meta_tab"
+msgstr "Cyffredinol"
+
+msgid "fullpage_dlg_appearance_tab"
+msgstr "Ymddangosiad"
+
+msgid "fullpage_dlg_advanced_tab"
+msgstr "Uwch"
+
+msgid "fullpage_dlg_meta_props"
+msgstr "Gwybodaeth meta"
+
+msgid "fullpage_dlg_langprops"
+msgstr "Iaith ac amgodiad"
+
+msgid "fullpage_dlg_meta_title"
+msgstr "Teitl"
+
+msgid "fullpage_dlg_meta_keywords"
+msgstr "Allweddair"
+
+msgid "fullpage_dlg_meta_description"
+msgstr "Disgrifiad"
+
+msgid "fullpage_dlg_meta_robots"
+msgstr "Robotau"
+
+msgid "fullpage_dlg_doctypes"
+msgstr "Math dogfen"
+
+msgid "fullpage_dlg_langcode"
+msgstr "Cod iaith"
+
+msgid "fullpage_dlg_langdir"
+msgstr "Cyfeiriad iaith"
+
+msgid "fullpage_dlg_ltr"
+msgstr "Chwith i'r dde"
+
+msgid "fullpage_dlg_rtl"
+msgstr "De i'r chwith"
+
+msgid "fullpage_dlg_xml_pi"
+msgstr "Datganiad XML"
+
+msgid "fullpage_dlg_encoding"
+msgstr "Amgodiad nodau"
+
+msgid "fullpage_dlg_appearance_bgprops"
+msgstr "Priodweddau cefndir"
+
+msgid "fullpage_dlg_appearance_marginprops"
+msgstr "Ymylon corff"
+
+msgid "fullpage_dlg_appearance_linkprops"
+msgstr "Lliwiau cysylltau"
+
+msgid "fullpage_dlg_appearance_textprops"
+msgstr "Priodweddau testun"
+
+msgid "fullpage_dlg_bgcolor"
+msgstr "Lliw cefndir"
+
+msgid "fullpage_dlg_bgimage"
+msgstr "Delwedd cefndir"
+
+msgid "fullpage_dlg_left_margin"
+msgstr "Ymyl chwith"
+
+msgid "fullpage_dlg_right_margin"
+msgstr "Ymyl dde"
+
+msgid "fullpage_dlg_top_margin"
+msgstr "Ymyl brig"
+
+msgid "fullpage_dlg_bottom_margin"
+msgstr "Ymyl gwaelod"
+
+msgid "fullpage_dlg_text_color"
+msgstr "Lliw testun"
+
+msgid "fullpage_dlg_font_size"
+msgstr "Maint ffont"
+
+msgid "fullpage_dlg_font_face"
+msgstr "Wyneb ffont"
+
+msgid "fullpage_dlg_link_color"
+msgstr "Lliw cysylltau"
+
+msgid "fullpage_dlg_hover_color"
+msgstr "Lliw hofran"
+
+msgid "fullpage_dlg_visited_color"
+msgstr "Lliw ymwelwyd"
+
+msgid "fullpage_dlg_active_color"
+msgstr "Lliw actif"
+
+msgid "fullpage_dlg_textcolor"
+msgstr "Lliw"
+
+msgid "fullpage_dlg_fontsize"
+msgstr "Maint ffont"
+
+msgid "fullpage_dlg_fontface"
+msgstr "Teulu ffont"
+
+msgid "fullpage_dlg_meta_index_follow"
+msgstr "Mynegeio a ddilyn y cysylltau"
+
+msgid "fullpage_dlg_meta_index_nofollow"
+msgstr "Mynegeio a peidio ddilyn y cysylltau"
+
+msgid "fullpage_dlg_meta_noindex_follow"
+msgstr "Peidio mynegeio ond ddilyn y cysylltau"
+
+msgid "fullpage_dlg_meta_noindex_nofollow"
+msgstr "Peidio mynegeio a peidio ddilyn y cysylltau"
+
+msgid "fullpage_dlg_appearance_style"
+msgstr "Priodweddau dalen-arddull ac arddull"
+
+msgid "fullpage_dlg_stylesheet"
+msgstr "Dalen-arddull"
+
+msgid "fullpage_dlg_style"
+msgstr "Arddull"
+
+msgid "fullpage_dlg_author"
+msgstr "Awdur"
+
+msgid "fullpage_dlg_copyright"
+msgstr "Hawlfraint"
+
+msgid "fullpage_dlg_add"
+msgstr "Ychwanegu elfen newydd"
+
+msgid "fullpage_dlg_remove"
+msgstr "Tynnu elfen dewisedig"
+
+msgid "fullpage_dlg_moveup"
+msgstr "Symud elfen dewisedig i fyny"
+
+msgid "fullpage_dlg_movedown"
+msgstr "Symud elfen dewisedig i lawr"
+
+msgid "fullpage_dlg_head_elements"
+msgstr "Elfennau pen"
+
+msgid "fullpage_dlg_info"
+msgstr "Gwybodaeth"
+
+msgid "fullpage_dlg_add_title"
+msgstr "Elfen teitl"
+
+msgid "fullpage_dlg_add_meta"
+msgstr "Elfen meta"
+
+msgid "fullpage_dlg_add_script"
+msgstr "Elfen sgript"
+
+msgid "fullpage_dlg_add_style"
+msgstr "Elfen arddull"
+
+msgid "fullpage_dlg_add_link"
+msgstr "Elfen cyswllt"
+
+msgid "fullpage_dlg_add_base"
+msgstr "Elfen sail"
+
+msgid "fullpage_dlg_add_comment"
+msgstr "Nod sylw"
+
+msgid "fullpage_dlg_title_element"
+msgstr "Elfen teitl"
+
+msgid "fullpage_dlg_script_element"
+msgstr "Elfen sgript"
+
+msgid "fullpage_dlg_style_element"
+msgstr "Elfen arddull"
+
+msgid "fullpage_dlg_base_element"
+msgstr "Elfen sail"
+
+msgid "fullpage_dlg_link_element"
+msgstr "Elfen cyswllt"
+
+msgid "fullpage_dlg_meta_element"
+msgstr "Elfen meta"
+
+msgid "fullpage_dlg_comment_element"
+msgstr "Sylw"
+
+msgid "fullpage_dlg_src"
+msgstr "Fynhonell"
+
+msgid "fullpage_dlg_language"
+msgstr "Iaith"
+
+msgid "fullpage_dlg_href"
+msgstr "Href"
+
+msgid "fullpage_dlg_target"
+msgstr "Targed"
+
+msgid "fullpage_dlg_type"
+msgstr "Math"
+
+msgid "fullpage_dlg_charset"
+msgstr "Set nodau"
+
+msgid "fullpage_dlg_defer"
+msgstr "Gohirio"
+
+msgid "fullpage_dlg_media"
+msgstr "Cyfryngau"
+
+msgid "fullpage_dlg_properties"
+msgstr "Priodweddau"
+
+msgid "fullpage_dlg_name"
+msgstr "Enw"
+
+msgid "fullpage_dlg_value"
+msgstr "Gwerth"
+
+msgid "fullpage_dlg_content"
+msgstr "Cynnwys"
+
+msgid "fullpage_dlg_rel"
+msgstr "Perthynas"
+
+msgid "fullpage_dlg_rev"
+msgstr "Diwygiad"
+
+msgid "fullpage_dlg_hreflang"
+msgstr "Iaith href"
+
+msgid "fullpage_dlg_general_props"
+msgstr "Cyfferdinol"
+
+msgid "fullpage_dlg_advanced_props"
+msgstr "Uwch"
+
+msgid "template_desc"
+msgstr "Mewnosod cynnwys templed rhagosodol"
+
+msgid "template_dlg_title"
+msgstr "Templedi"
+
+msgid "template_dlg_label"
+msgstr "Templedi"
+
+msgid "template_dlg_desc_label"
+msgstr "Disgrifiad"
+
+msgid "template_dlg_desc"
+msgstr "Mewnosod cynnwys templed rhagosodol"
+
+msgid "template_dlg_select"
+msgstr "Dewis templed"
+
+msgid "template_dlg_preview"
+msgstr "Rhagolygiad"
+
+msgid "template_dlg_warning"
+msgstr "Rhybudd: Gall diweddaru templed gyda un arall achosi colled data."
+
+msgid "template_dlg_mdate_format"
+msgstr "%Y-%m-%d %H:%M:%S"
+
+msgid "template_dlg_cdate_format"
+msgstr "%Y-%m-%d %H:%M:%S"
+
+msgid "template_dlg_months_long"
+msgstr "Ionawr,Chwefror,Mawrth,Ebrill,Mai,Mehefin,Goffennaf,Awst,Medi,Hydref,Tachwedd,Rhagfyr"
+
+msgid "template_dlg_months_short"
+msgstr "Ion,Chw,Maw,Ebr,Mai,Meh,Gor,Aws,Med,Hyd,Tac,Rha"
+
+msgid "template_dlg_day_long"
+msgstr "Sul,Llun,Mawrth,Mercher,Iau,Gwener,Sadwrn,Sul"
+
+msgid "template_dlg_day_short"
+msgstr "Sul,Llu,Maw,Mer,Iau,Gwe,Sad,Sul"
+
+msgid "visualchars_desc"
+msgstr "Nodau rheolaeth ymlaen/i ffwrdd."
+
+msgid "spellchecker_desc"
+msgstr "Toglu cywiriadau"
+
+msgid "spellchecker_menu"
+msgstr "Gosodiadau cywiriadau"
+
+msgid "spellchecker_ignore_word"
+msgstr "Anwybyddu gair"
+
+msgid "spellchecker_ignore_words"
+msgstr "Anwybyddu pob un"
+
+msgid "spellchecker_langs"
+msgstr "Ieithoedd"
+
+msgid "spellchecker_wait"
+msgstr "Aroswch, os gwelwch yn dda..."
+
+msgid "spellchecker_sug"
+msgstr "Awgrymiadau"
+
+msgid "spellchecker_no_sug"
+msgstr "Dim awgrymiadau"
+
+msgid "spellchecker_no_mpell"
+msgstr "Dim camsillafiadau wedi'i canfod."
+
+msgid "pagebreak_desc"
+msgstr "Mewnosod toriad tudalen."
+

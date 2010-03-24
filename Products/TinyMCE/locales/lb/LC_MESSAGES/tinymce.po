@@ -1,0 +1,2261 @@
+# Dëst ass de lëtzebuergesche Sprooche-Pak fir TinyMCE.
+# Version 1.1
+#
+# Michel Weimerskirch (michel@spellchecker.lu), Pit Wenkin (pit@wenkin.lu)
+msgid ""
+msgstr ""
+"Project-Id-Version: Products.TinyMCE\n"
+"POT-Creation-Date: 2000-01-01 00:00+0000\n"
+"PO-Revision-Date: 2010-03-14 00:00+0000\n"
+"Last-Translator: Michel Weimerskirch (michel@spellchecker.lu), Pit Wenkin (pit@wenkin.lu)\n"
+"Language-Team: Michel Weimerskirch (michel@spellchecker.lu), Pit Wenkin (pit@wenkin.lu)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: lb\n"
+"Language-Name: Lëtzebuergesch\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: tinymce\n"
+
+msgid "common_edit_confirm"
+msgstr "Dësen Textberäich mat WYSIWYG beaarbechten?"
+
+msgid "common_apply"
+msgstr "Iwwerhuelen"
+
+msgid "common_insert"
+msgstr "Afügen"
+
+msgid "common_update"
+msgstr "Aktualiséieren"
+
+msgid "common_cancel"
+msgstr "Ofbriechen"
+
+msgid "common_close"
+msgstr "Zoumaachen"
+
+msgid "common_browse"
+msgstr "Duerchsichen"
+
+msgid "common_class_name"
+msgstr "CSS-Klass"
+
+msgid "common_not_set"
+msgstr "- ondefinéiert -"
+
+msgid "common_clipboard_msg"
+msgstr "Kopéieren, Ausschneiden an Afügen sinn am Mozilla Firefox net méiglech.\nWëllt Dir méi iwwert dëse Problem gewuer ginn?"
+
+msgid "common_clipboard_no_support"
+msgstr "Gëtt momentan net an Ärem Browser ënnerstëtzt. Benotzt wann ech gelift d'Tastekombinatiounen."
+
+msgid "common_popup_blocked"
+msgstr "Leider huet Äre Popup-Blocker eng Fënster ënnerdréckt, déi fir d'Funktionéiere vun dësem Programm néideg ass. Deaktivéiert wann ech gelift de Popup-Blocker fir dës Säit."
+
+msgid "common_invalid_data"
+msgstr "Feeler: Dir hutt ongülteg Wäerter uginn (rout markéiert)."
+
+msgid "common_more_colors"
+msgstr "Weider Fuerwen"
+
+msgid "simple_bold_desc"
+msgstr "Fett (Strg+B)"
+
+msgid "simple_italic_desc"
+msgstr "Kursiv (Strg+I)"
+
+msgid "simple_underline_desc"
+msgstr "Ënnerstrach (Strg+U)"
+
+msgid "simple_striketrough_desc"
+msgstr "Duerchgestrach"
+
+msgid "simple_bullist_desc"
+msgstr "Onsortéiert Lëscht"
+
+msgid "simple_numlist_desc"
+msgstr "Sortéiert Lëscht"
+
+msgid "simple_undo_desc"
+msgstr "Réckgängeg (Strg+Z)"
+
+msgid "simple_redo_desc"
+msgstr "Widderhuelen (Strg+Y)"
+
+msgid "simple_cleanup_desc"
+msgstr "Quellcode botzen"
+
+msgid "advanced_style_select"
+msgstr "Format"
+
+msgid "advanced_font_size"
+msgstr "Schrëftgréisst"
+
+msgid "advanced_fontdefault"
+msgstr "Schrëftaart"
+
+msgid "advanced_block"
+msgstr "Virlag"
+
+msgid "advanced_paragraph"
+msgstr "Ofsatz"
+
+msgid "advanced_div"
+msgstr "Zesummenhänkende Beräich"
+
+msgid "advanced_address"
+msgstr "Adress"
+
+msgid "advanced_pre"
+msgstr "Réidaten"
+
+msgid "advanced_h1"
+msgstr "Iwwerschrëft 1"
+
+msgid "advanced_h2"
+msgstr "Iwwerschrëft 2"
+
+msgid "advanced_h3"
+msgstr "Iwwerschrëft 3"
+
+msgid "advanced_h4"
+msgstr "Iwwerschrëft 4"
+
+msgid "advanced_h5"
+msgstr "Iwwerschrëft 5"
+
+msgid "advanced_h6"
+msgstr "Iwwerschrëft 6"
+
+msgid "advanced_blockquote"
+msgstr "Zitatblock"
+
+msgid "advanced_code"
+msgstr "Code"
+
+msgid "advanced_samp"
+msgstr "Beispill"
+
+msgid "advanced_dt"
+msgstr "Definitiounsbegrëff"
+
+msgid "advanced_dd"
+msgstr "Definitiounsbeschreiwung"
+
+msgid "advanced_bold_desc"
+msgstr "Fett (Strg+B)"
+
+msgid "advanced_italic_desc"
+msgstr "Kursiv (Strg+I)"
+
+msgid "advanced_underline_desc"
+msgstr "Ënnerstrach (Strg+U)"
+
+msgid "advanced_striketrough_desc"
+msgstr "Duerchgestrach"
+
+msgid "advanced_justifyleft_desc"
+msgstr "Lénks alignéiert"
+
+msgid "advanced_justifycenter_desc"
+msgstr "Zentréiert"
+
+msgid "advanced_justifyright_desc"
+msgstr "Riets alignéiert"
+
+msgid "advanced_justifyfull_desc"
+msgstr "Béidsäiteg alignéiert"
+
+msgid "advanced_bullist_desc"
+msgstr "Onsortéiert Lëscht"
+
+msgid "advanced_numlist_desc"
+msgstr "Sortéiert Lëscht"
+
+msgid "advanced_outdent_desc"
+msgstr "Ausrécken"
+
+msgid "advanced_indent_desc"
+msgstr "Arécken"
+
+msgid "advanced_undo_desc"
+msgstr "Réckgängeg (Strg+Z)"
+
+msgid "advanced_redo_desc"
+msgstr "Widderhuelen (Strg+Y)"
+
+msgid "advanced_link_desc"
+msgstr "Link afügen/veränneren"
+
+msgid "advanced_unlink_desc"
+msgstr "Link ewechhuelen"
+
+msgid "advanced_image_desc"
+msgstr "Bild afügen/veränneren"
+
+msgid "advanced_cleanup_desc"
+msgstr "Quellcode botzen"
+
+msgid "advanced_code_desc"
+msgstr "HTML-Quellcode beaarbechten"
+
+msgid "advanced_sub_desc"
+msgstr "Déifgestallt"
+
+msgid "advanced_sup_desc"
+msgstr "Héichgestallt"
+
+msgid "advanced_hr_desc"
+msgstr "Trennlinn afügen"
+
+msgid "advanced_removeformat_desc"
+msgstr "Formatéierungen zerécksetzen"
+
+msgid "advanced_custom1_desc"
+msgstr "Benotzerdefinéiert Beschreiwung"
+
+msgid "advanced_forecolor_desc"
+msgstr "Textfuerf"
+
+msgid "advanced_backcolor_desc"
+msgstr "Hannergrondfuerf"
+
+msgid "advanced_charmap_desc"
+msgstr "Sonderzeechen afügen"
+
+msgid "advanced_visualaid_desc"
+msgstr "Hëllefslinnen an onsiichtbar Elementer an-/ausblennen"
+
+msgid "advanced_anchor_desc"
+msgstr "Anker afügen/veränneren"
+
+msgid "advanced_cut_desc"
+msgstr "Ausschneiden"
+
+msgid "advanced_copy_desc"
+msgstr "Kopéieren"
+
+msgid "advanced_paste_desc"
+msgstr "Afügen"
+
+msgid "advanced_image_props_desc"
+msgstr "Bildeegeschaften"
+
+msgid "advanced_newdocument_desc"
+msgstr "Neit Dokument"
+
+msgid "advanced_help_desc"
+msgstr "Hëllef"
+
+msgid "advanced_blockquote_desc"
+msgstr "Zitatblock"
+
+msgid "advanced_clipboard_msg"
+msgstr "Kopéieren, Ausschneiden an Afügen sinn am Mozilla Firefox net méiglech.\nWëllt Dir méi iwwert dëse Problem gewuer ginn?"
+
+msgid "advanced_path"
+msgstr "Pad"
+
+msgid "advanced_newdocument"
+msgstr "Wëllt Dir wierklech de ganzen Inhalt läschen?"
+
+msgid "advanced_toolbar_focus"
+msgstr "Bei d'Geschirleescht sprangen: Alt+Q; Bei den Editor sprangen: Alt+Z; Bei den Elementpad sprangen: Alt+X"
+
+msgid "advanced_more_colors"
+msgstr "Weider Fuerwen"
+
+msgid "advanced_image_delta_width"
+msgstr ""
+
+msgid "advanced_image_delta_height"
+msgstr ""
+
+msgid "advanced_link_delta_width"
+msgstr ""
+
+msgid "advanced_link_delta_height"
+msgstr ""
+
+msgid "advanced_colorpicker_delta_width"
+msgstr ""
+
+msgid "advanced_colorpicker_delta_height"
+msgstr ""
+
+msgid "advanced_charmap_delta_width"
+msgstr ""
+
+msgid "advanced_charmap_delta_height"
+msgstr ""
+
+msgid "advanced_anchor_delta_width"
+msgstr "13"
+
+msgid "advanced_anchor_delta_height"
+msgstr ""
+
+msgid "advanced_dlg_about_title"
+msgstr "Iwwer TinyMCE"
+
+msgid "advanced_dlg_about_general"
+msgstr "Iwwer…"
+
+msgid "advanced_dlg_about_help"
+msgstr "Hëllef"
+
+msgid "advanced_dlg_about_license"
+msgstr "Lizenzbedingungen"
+
+msgid "advanced_dlg_about_plugins"
+msgstr "Pluginen"
+
+msgid "advanced_dlg_about_plugin"
+msgstr "Plugin"
+
+msgid "advanced_dlg_about_author"
+msgstr "Auteur"
+
+msgid "advanced_dlg_about_version"
+msgstr "Versioun"
+
+msgid "advanced_dlg_about_loaded"
+msgstr "Geluede Pluginen"
+
+msgid "advanced_dlg_anchor_title"
+msgstr "Anker afügen/veränneren"
+
+msgid "advanced_dlg_anchor_name"
+msgstr "Numm vum Anker"
+
+msgid "advanced_dlg_code_title"
+msgstr "HTML-Quellcode beaarbechten"
+
+msgid "advanced_dlg_code_wordwrap"
+msgstr "Automateschen Zeilenëmbroch"
+
+msgid "advanced_dlg_colorpicker_title"
+msgstr "Fuerf"
+
+msgid "advanced_dlg_colorpicker_picker_tab"
+msgstr "Fuerfselectioun"
+
+msgid "advanced_dlg_colorpicker_picker_title"
+msgstr "Fuerfselectioun"
+
+msgid "advanced_dlg_colorpicker_palette_tab"
+msgstr "Palette"
+
+msgid "advanced_dlg_colorpicker_palette_title"
+msgstr "Fuerfpalette"
+
+msgid "advanced_dlg_colorpicker_named_tab"
+msgstr "Benannte Fuerwen"
+
+msgid "advanced_dlg_colorpicker_named_title"
+msgstr "Benannte Fuerwen"
+
+msgid "advanced_dlg_colorpicker_color"
+msgstr "Fuerf:"
+
+msgid "advanced_dlg_colorpicker_name"
+msgstr "Numm:"
+
+msgid "advanced_dlg_charmap_title"
+msgstr "Sonnerzeechen"
+
+msgid "advanced_dlg_image_title"
+msgstr "Bild afügen/beaarbechten"
+
+msgid "advanced_dlg_image_src"
+msgstr "Adress"
+
+msgid "advanced_dlg_image_alt"
+msgstr "Alternativtext"
+
+msgid "advanced_dlg_image_list"
+msgstr "Billerleescht"
+
+msgid "advanced_dlg_image_border"
+msgstr "Rumm"
+
+msgid "advanced_dlg_image_dimensions"
+msgstr "Ausmoossen"
+
+msgid "advanced_dlg_image_vspace"
+msgstr "Vertikalen Ofstand"
+
+msgid "advanced_dlg_image_hspace"
+msgstr "Horizontalen Ofstand"
+
+msgid "advanced_dlg_image_align"
+msgstr "Ausriichtung"
+
+msgid "advanced_dlg_image_align_baseline"
+msgstr "Zeil"
+
+msgid "advanced_dlg_image_align_top"
+msgstr "Uewen"
+
+msgid "advanced_dlg_image_align_middle"
+msgstr "Mëtteg"
+
+msgid "advanced_dlg_image_align_bottom"
+msgstr "Ënnen"
+
+msgid "advanced_dlg_image_align_texttop"
+msgstr "Uewen am Text"
+
+msgid "advanced_dlg_image_align_textbottom"
+msgstr "Ënnen am Text"
+
+msgid "advanced_dlg_image_align_left"
+msgstr "Lénks"
+
+msgid "advanced_dlg_image_align_right"
+msgstr "Riets"
+
+msgid "advanced_dlg_link_title"
+msgstr "Link afügen/beaarbechten"
+
+msgid "advanced_dlg_link_url"
+msgstr "Adress"
+
+msgid "advanced_dlg_link_target"
+msgstr "Fënster"
+
+msgid "advanced_dlg_link_target_same"
+msgstr "An der selwechter Fënster opmaachen"
+
+msgid "advanced_dlg_link_target_blank"
+msgstr "Nei Fënster opmaachen"
+
+msgid "advanced_dlg_link_titlefield"
+msgstr "Titel"
+
+msgid "advanced_dlg_link_is_email"
+msgstr "Dës Adress schéngt eng Email-Adress ze sinn. Wëll Dir den dofir benéidegt mailto: virdru stellen?"
+
+msgid "advanced_dlg_link_is_external"
+msgstr "Dës Adress schéngt een externen Link ze sinn. Wëll Dir den dofir benéidegt http:// virdru stellen?"
+
+msgid "advanced_dlg_link_list"
+msgstr "Linklëscht"
+
+msgid "contextmenu_align"
+msgstr "Ausriichtung"
+
+msgid "contextmenu_left"
+msgstr "Lénks alignéiert"
+
+msgid "contextmenu_center"
+msgstr "Zentréiert"
+
+msgid "contextmenu_right"
+msgstr "Riets alignéiert"
+
+msgid "contextmenu_full"
+msgstr "Béidsäiteg alignéiert"
+
+msgid "insertdatetime_date_fmt"
+msgstr "%d.%m.%Y"
+
+msgid "insertdatetime_time_fmt"
+msgstr "%H:%M:%S"
+
+msgid "insertdatetime_insertdate_desc"
+msgstr "Datum afügen"
+
+msgid "insertdatetime_inserttime_desc"
+msgstr "Zäit afügen"
+
+msgid "insertdatetime_months_long"
+msgstr "Januar,Februar,Mäerz,Abrëll,Mee,Juni,Juli,August,September,Oktober,November,Dezember"
+
+msgid "insertdatetime_months_short"
+msgstr "Jan,Feb,Mäerz,Abr,Mee,Juni,Juli,Aug,Sept,Okt,Nov,Dez"
+
+msgid "insertdatetime_day_long"
+msgstr "Sonndeg,Méindeg,Dënschdeg,Mëttwoch,Donneschdeg,Freideg,Samschdeg,Sonndeg"
+
+msgid "insertdatetime_day_short"
+msgstr "So,Mé,Dë,Më,Do,Fr,Sa,So"
+
+msgid "print_print_desc"
+msgstr "Drécken"
+
+msgid "preview_preview_desc"
+msgstr "Virschau"
+
+msgid "directionality_ltr_desc"
+msgstr "Schrëft vu lénks no riets"
+
+msgid "directionality_rtl_desc"
+msgstr "Schrëft vu riets no lénks"
+
+msgid "layer_insertlayer_desc"
+msgstr "Neie Layer afügen"
+
+msgid "layer_forward_desc"
+msgstr "No vir réckelen"
+
+msgid "layer_backward_desc"
+msgstr "No hanne réckelen"
+
+msgid "layer_absolute_desc"
+msgstr "Absolut Positionéierung"
+
+msgid "layer_content"
+msgstr "Neie Layer..."
+
+msgid "save_save_desc"
+msgstr "Späicheren"
+
+msgid "save_cancel_desc"
+msgstr "All d'Ännerungen ewechpuchen"
+
+msgid "nonbreaking_nonbreaking_desc"
+msgstr "Geschützt Leerzeechen afügen"
+
+msgid "iespell_iespell_desc"
+msgstr "Spellchecker"
+
+msgid "iespell_download"
+msgstr "ieSpell konnt net fonnt ginn. Wëllt Dir en installéieren?"
+
+msgid "advhr_advhr_desc"
+msgstr "Trennlinn"
+
+msgid "advhr_delta_width"
+msgstr ""
+
+msgid "advhr_delta_height"
+msgstr ""
+
+msgid "advhr_dlg_width"
+msgstr "Breet"
+
+msgid "advhr_dlg_size"
+msgstr "Héicht"
+
+msgid "advhr_dlg_noshade"
+msgstr "Kee Schiet"
+
+msgid "emotions_emotions_desc"
+msgstr "Smileyen"
+
+msgid "emotions_delta_width"
+msgstr ""
+
+msgid "emotions_delta_height"
+msgstr ""
+
+msgid "emotions_dlg_title"
+msgstr "Smiley afügen"
+
+msgid "emotions_dlg_desc"
+msgstr "Smileyen"
+
+msgid "emotions_dlg_cool"
+msgstr "Cool"
+
+msgid "emotions_dlg_cry"
+msgstr "Kräischend"
+
+msgid "emotions_dlg_embarassed"
+msgstr "Genéiert"
+
+msgid "emotions_dlg_foot_in_mouth"
+msgstr "Eragefall"
+
+msgid "emotions_dlg_frown"
+msgstr "D'Stir ronzelend"
+
+msgid "emotions_dlg_innocent"
+msgstr "Onschëlleg"
+
+msgid "emotions_dlg_kiss"
+msgstr "Kussend"
+
+msgid "emotions_dlg_laughing"
+msgstr "Laachend"
+
+msgid "emotions_dlg_money_mouth"
+msgstr "Suen"
+
+msgid "emotions_dlg_sealed"
+msgstr "Verschlossen"
+
+msgid "emotions_dlg_smile"
+msgstr "Laachend"
+
+msgid "emotions_dlg_surprised"
+msgstr "Iwwerrascht"
+
+msgid "emotions_dlg_tongue_out"
+msgstr "Zong eraus"
+
+msgid "emotions_dlg_undecided"
+msgstr "Onentschloss"
+
+msgid "emotions_dlg_wink"
+msgstr "Zwinkernd"
+
+msgid "emotions_dlg_yell"
+msgstr "Brëllend"
+
+msgid "searchreplace_search_desc"
+msgstr "Sichen"
+
+msgid "searchreplace_replace_desc"
+msgstr "Sichen/Ersetzen"
+
+msgid "searchreplace_delta_width"
+msgstr ""
+
+msgid "searchreplace_delta_height"
+msgstr ""
+
+msgid "searchreplace_dlg_searchnext_desc"
+msgstr "Weidersichen"
+
+msgid "searchreplace_dlg_notfound"
+msgstr "D'Sich ass um Enn ukomm. D'Zeechekette konnt net fonnt ginn."
+
+msgid "searchreplace_dlg_search_title"
+msgstr "Sichen"
+
+msgid "searchreplace_dlg_replace_title"
+msgstr "Sichen/Ersetzen"
+
+msgid "searchreplace_dlg_allreplaced"
+msgstr "All d'Virkomme vun der Zeechekette goufen ersat."
+
+msgid "searchreplace_dlg_findwhat"
+msgstr "Ze sichenden Text"
+
+msgid "searchreplace_dlg_replacewith"
+msgstr "Ersetzen duerch"
+
+msgid "searchreplace_dlg_direction"
+msgstr "Sichrichtung"
+
+msgid "searchreplace_dlg_up"
+msgstr "No uewen"
+
+msgid "searchreplace_dlg_down"
+msgstr "No ënnen"
+
+msgid "searchreplace_dlg_mcase"
+msgstr "Grouss-/Klengschreiwung beuechten"
+
+msgid "searchreplace_dlg_findnext"
+msgstr "Weidersichen"
+
+msgid "searchreplace_dlg_replace"
+msgstr "Ersetzen"
+
+msgid "searchreplace_dlg_replaceall"
+msgstr "All ersetzen"
+
+msgid "ploneimage_image_desc"
+msgstr "Bild afügen/ersetzen"
+
+msgid "ploneimage_delta_width"
+msgstr ""
+
+msgid "ploneimage_delta_height"
+msgstr ""
+
+msgid "ploneimage_dlg_tab_general"
+msgstr "Allgemeng"
+
+msgid "ploneimage_dlg_tab_appearance"
+msgstr "Ausgesinn"
+
+msgid "ploneimage_dlg_tab_advanced"
+msgstr "Erweidert"
+
+msgid "ploneimage_dlg_general"
+msgstr "Allgemeng"
+
+msgid "ploneimage_dlg_title"
+msgstr "Titel"
+
+msgid "ploneimage_dlg_preview"
+msgstr "Virschau"
+
+msgid "ploneimage_dlg_constrain_proportions"
+msgstr "Säiteverhältnis bäibehalen"
+
+msgid "ploneimage_dlg_langdir"
+msgstr "Schrëftrichtung"
+
+msgid "ploneimage_dlg_langcode"
+msgstr "Sproochcode"
+
+msgid "ploneimage_dlg_long_desc"
+msgstr "Ausféierlech Beschreiwung"
+
+msgid "ploneimage_dlg_style"
+msgstr "Format"
+
+msgid "ploneimage_dlg_classes"
+msgstr "Klassen"
+
+msgid "ploneimage_dlg_ltr"
+msgstr "Lénks no riets"
+
+msgid "ploneimage_dlg_rtl"
+msgstr "Riets no lénks"
+
+msgid "ploneimage_dlg_id"
+msgstr "ID"
+
+msgid "ploneimage_dlg_map"
+msgstr "Image-Map"
+
+msgid "ploneimage_dlg_swap_image"
+msgstr "Bild austauschen"
+
+msgid "ploneimage_dlg_alt_image"
+msgstr "Alternativt Bild"
+
+msgid "ploneimage_dlg_mouseover"
+msgstr "bei Mauskontakt"
+
+msgid "ploneimage_dlg_mouseout"
+msgstr "bei kengem Mauskontakt"
+
+msgid "ploneimage_dlg_misc"
+msgstr "Verschiddenes"
+
+msgid "ploneimage_dlg_example_img"
+msgstr "Ausgesinn vun der Virschau"
+
+msgid "ploneimage_dlg_missing_alt"
+msgstr "Wëll Dir wierklech keng Beschreiwung aginn? Bestëmmt Benotzer mat kierperlechen Aschränkungen kënnen sou net dorop zougräifen, genau sou déi, déi een Textbrowser benotzen oder d'Uweise vu Biller desaktivéiert hunn."
+
+msgid "ploneimage_dlg_dialog_title"
+msgstr "Bild afügen/beaarbechten"
+
+msgid "ploneimage_dlg_src"
+msgstr "Adress"
+
+msgid "ploneimage_dlg_alt"
+msgstr "Beschreiwung"
+
+msgid "ploneimage_dlg_list"
+msgstr "Billerlëschten"
+
+msgid "ploneimage_dlg_border"
+msgstr "Rumm"
+
+msgid "ploneimage_dlg_dimensions"
+msgstr "Ausmoossen"
+
+msgid "ploneimage_dlg_vspace"
+msgstr "Vertikalen Ofstand"
+
+msgid "ploneimage_dlg_hspace"
+msgstr "Horizontalen Ofstand"
+
+msgid "ploneimage_dlg_align"
+msgstr "Ausriichtung"
+
+msgid "ploneimage_dlg_align_baseline"
+msgstr "Zeil"
+
+msgid "ploneimage_dlg_align_top"
+msgstr "Uewen"
+
+msgid "ploneimage_dlg_align_middle"
+msgstr "Mëtteg"
+
+msgid "ploneimage_dlg_align_bottom"
+msgstr "Ënnen"
+
+msgid "ploneimage_dlg_align_texttop"
+msgstr "Uewen am Text"
+
+msgid "ploneimage_dlg_align_textbottom"
+msgstr "Ënnen am Text"
+
+msgid "ploneimage_dlg_align_left"
+msgstr "Lénks"
+
+msgid "ploneimage_dlg_align_right"
+msgstr "Riets"
+
+msgid "ploneimage_dlg_image_list"
+msgstr "Billerlëscht"
+
+msgid "plonelink_link_desc"
+msgstr "Link afügen/beaarbechten"
+
+msgid "plonelink_delta_width"
+msgstr ""
+
+msgid "plonelink_delta_height"
+msgstr ""
+
+msgid "plonelink_dlg_title"
+msgstr "Link afügen/beaarbechten"
+
+msgid "plonelink_dlg_url"
+msgstr "Adress"
+
+msgid "plonelink_dlg_target"
+msgstr "Fënster"
+
+msgid "plonelink_dlg_titlefield"
+msgstr "Titel"
+
+msgid "plonelink_dlg_is_email"
+msgstr "Dës Adress schéngt eng Email-Adress ze sinn. Wëllt Dir den dofir benéidegte Präfix \"mailto:\" virdru setzen?"
+
+msgid "plonelink_dlg_is_external"
+msgstr "Dës Adress schéngt een externe Link ze sinn. Wëllt Dir den dofir benéidegte Präfix \"http://\" virdru setzen?"
+
+msgid "plonelink_dlg_list"
+msgstr "Linklëscht"
+
+msgid "plonelink_dlg_general_tab"
+msgstr "Allgemeng"
+
+msgid "plonelink_dlg_popup_tab"
+msgstr "Popup"
+
+msgid "plonelink_dlg_events_tab"
+msgstr "Evenement"
+
+msgid "plonelink_dlg_advanced_tab"
+msgstr "Erweidert"
+
+msgid "plonelink_dlg_general_props"
+msgstr "Allgemeng Eegeschaften"
+
+msgid "plonelink_dlg_popup_props"
+msgstr "Popup-Eegeschaften"
+
+msgid "plonelink_dlg_event_props"
+msgstr "Evenement"
+
+msgid "plonelink_dlg_advanced_props"
+msgstr "Erweidert Eegeschaften"
+
+msgid "plonelink_dlg_popup_opts"
+msgstr "Optiounen"
+
+msgid "plonelink_dlg_anchor_names"
+msgstr "Anker"
+
+msgid "plonelink_dlg_target_same"
+msgstr "An der selwechter Fënster/Frame opmaachen"
+
+msgid "plonelink_dlg_target_parent"
+msgstr "An der iwwergeuerdneter Fënster/Frame opmaachen"
+
+msgid "plonelink_dlg_target_top"
+msgstr "Am ieweschte Frame opmaacheen (sprengt d'Frameset)"
+
+msgid "plonelink_dlg_target_blank"
+msgstr "An enger neier Fënster opmaachen"
+
+msgid "plonelink_dlg_popup"
+msgstr "JavaScript-Popup"
+
+msgid "plonelink_dlg_popup_url"
+msgstr "Popup-Adress"
+
+msgid "plonelink_dlg_popup_name"
+msgstr "Numm vun der Fënster"
+
+msgid "plonelink_dlg_popup_return"
+msgstr "Link trotz Popup suivéieren"
+
+msgid "plonelink_dlg_popup_scrollbars"
+msgstr "Scrollbalken uweisen"
+
+msgid "plonelink_dlg_popup_statusbar"
+msgstr "Statusleeschten uweisen"
+
+msgid "plonelink_dlg_popup_toolbar"
+msgstr "Geschirleeschten uweisen"
+
+msgid "plonelink_dlg_popup_menubar"
+msgstr "Browsermenü uweisen"
+
+msgid "plonelink_dlg_popup_location"
+msgstr "Adressleescht uweisen"
+
+msgid "plonelink_dlg_popup_resizable"
+msgstr "Vergréisseren vun der Fënster zouloossen"
+
+msgid "plonelink_dlg_popup_dependent"
+msgstr "Vun der Elterefënster onofhängeg <br /> (nëmmen Mozilla/Firefox) "
+
+msgid "plonelink_dlg_popup_size"
+msgstr "Gréisst"
+
+msgid "plonelink_dlg_popup_position"
+msgstr "Positioun (X/Y)"
+
+msgid "plonelink_dlg_id"
+msgstr "ID"
+
+msgid "plonelink_dlg_style"
+msgstr "Format"
+
+msgid "plonelink_dlg_classes"
+msgstr "Klassen"
+
+msgid "plonelink_dlg_target_name"
+msgstr "Numm vun der Zilsäit"
+
+msgid "plonelink_dlg_langdir"
+msgstr "Schrëftrichtung"
+
+msgid "plonelink_dlg_target_langcode"
+msgstr "Sprooch vun der Zilsäit"
+
+msgid "plonelink_dlg_langcode"
+msgstr "Sproochcode"
+
+msgid "plonelink_dlg_encoding"
+msgstr "Zeechekodéierung vun der Zilsäit"
+
+msgid "plonelink_dlg_mime"
+msgstr "MIME-Typ vun der Zilsäit"
+
+msgid "plonelink_dlg_rel"
+msgstr "Bezéiung vun der Säit zum Linkzil"
+
+msgid "plonelink_dlg_rev"
+msgstr "Bezéiung vum Linkzil zur Säit"
+
+msgid "plonelink_dlg_tabindex"
+msgstr "Tabindex"
+
+msgid "plonelink_dlg_accesskey"
+msgstr "Tastekierzel"
+
+msgid "plonelink_dlg_ltr"
+msgstr "Lénks no riets"
+
+msgid "plonelink_dlg_rtl"
+msgstr "Riets no lénks"
+
+msgid "plonelink_dlg_link_list"
+msgstr "Linklëscht"
+
+msgid "xhtmlxtras_cite_desc"
+msgstr "Quellenzitéierung"
+
+msgid "xhtmlxtras_abbr_desc"
+msgstr "Ofkierzung"
+
+msgid "xhtmlxtras_acronym_desc"
+msgstr "Akronym"
+
+msgid "xhtmlxtras_del_desc"
+msgstr "Geläschten Text"
+
+msgid "xhtmlxtras_ins_desc"
+msgstr "Agefügtenen Text"
+
+msgid "xhtmlxtras_attribs_desc"
+msgstr "Attributer afügen/beaarbechten"
+
+msgid "xhtmlxtras_cite_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_cite_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_abbr_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_abbr_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_acronym_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_acronym_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_del_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_del_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_ins_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_ins_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_attribs_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_attribs_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_dlg_attribute_label_title"
+msgstr "Titel"
+
+msgid "xhtmlxtras_dlg_attribute_label_id"
+msgstr "ID"
+
+msgid "xhtmlxtras_dlg_attribute_label_class"
+msgstr "Klasse"
+
+msgid "xhtmlxtras_dlg_attribute_label_style"
+msgstr "Format"
+
+msgid "xhtmlxtras_dlg_attribute_label_cite"
+msgstr "Quellenangab"
+
+msgid "xhtmlxtras_dlg_attribute_label_datetime"
+msgstr "Zäit/Datum"
+
+msgid "xhtmlxtras_dlg_attribute_label_langdir"
+msgstr "Schrëftrichtung"
+
+msgid "xhtmlxtras_dlg_attribute_option_ltr"
+msgstr "Lénks no riets"
+
+msgid "xhtmlxtras_dlg_attribute_option_rtl"
+msgstr "Riets no lénks"
+
+msgid "xhtmlxtras_dlg_attribute_label_langcode"
+msgstr "Sproochen"
+
+msgid "xhtmlxtras_dlg_attribute_label_tabindex"
+msgstr "Tabindex"
+
+msgid "xhtmlxtras_dlg_attribute_label_accesskey"
+msgstr "Tastekierzel"
+
+msgid "xhtmlxtras_dlg_attribute_events_tab"
+msgstr "Ereegnes"
+
+msgid "xhtmlxtras_dlg_attribute_attrib_tab"
+msgstr "Attributer"
+
+msgid "xhtmlxtras_dlg_general_tab"
+msgstr "Allgemeng"
+
+msgid "xhtmlxtras_dlg_attrib_tab"
+msgstr "Attributer"
+
+msgid "xhtmlxtras_dlg_events_tab"
+msgstr "Ereegnes"
+
+msgid "xhtmlxtras_dlg_fieldset_general_tab"
+msgstr "Allgemeng Astellungen"
+
+msgid "xhtmlxtras_dlg_fieldset_attrib_tab"
+msgstr "Attributer"
+
+msgid "xhtmlxtras_dlg_fieldset_events_tab"
+msgstr "Ereegnes"
+
+msgid "xhtmlxtras_dlg_title_ins_element"
+msgstr "Agefügtenen Text"
+
+msgid "xhtmlxtras_dlg_title_del_element"
+msgstr "Ewechgehollenen Text"
+
+msgid "xhtmlxtras_dlg_title_acronym_element"
+msgstr "Akronym"
+
+msgid "xhtmlxtras_dlg_title_abbr_element"
+msgstr "Ofkierzung"
+
+msgid "xhtmlxtras_dlg_title_cite_element"
+msgstr "Quellenangab"
+
+msgid "xhtmlxtras_dlg_remove"
+msgstr "Ewechhuelen"
+
+msgid "xhtmlxtras_dlg_insert_date"
+msgstr "Aktuell Zäit/Datum afügen"
+
+msgid "xhtmlxtras_dlg_option_ltr"
+msgstr "Lénks no riets"
+
+msgid "xhtmlxtras_dlg_option_rtl"
+msgstr "Riets no lénks"
+
+msgid "xhtmlxtras_dlg_attribs_title"
+msgstr "Attributer afügen/beaarbechten"
+
+msgid "style_desc"
+msgstr "CSS-Styles beaarbechten"
+
+msgid "style_delta_width"
+msgstr ""
+
+msgid "style_delta_height"
+msgstr ""
+
+msgid "style_dlg_title"
+msgstr "CSS-Styles beaarbechten"
+
+msgid "style_dlg_apply"
+msgstr "Iwwerhuelen"
+
+msgid "style_dlg_text_tab"
+msgstr "Text"
+
+msgid "style_dlg_background_tab"
+msgstr "Hannergrond"
+
+msgid "style_dlg_block_tab"
+msgstr "Block"
+
+msgid "style_dlg_box_tab"
+msgstr "Box"
+
+msgid "style_dlg_border_tab"
+msgstr "Rumm"
+
+msgid "style_dlg_list_tab"
+msgstr "Lëscht"
+
+msgid "style_dlg_positioning_tab"
+msgstr "Positionéierung"
+
+msgid "style_dlg_text_props"
+msgstr "Text"
+
+msgid "style_dlg_text_font"
+msgstr "Schrëftaart"
+
+msgid "style_dlg_text_size"
+msgstr "Gréisst"
+
+msgid "style_dlg_text_weight"
+msgstr "Déckt"
+
+msgid "style_dlg_text_style"
+msgstr "Stil"
+
+msgid "style_dlg_text_variant"
+msgstr "Variant"
+
+msgid "style_dlg_text_lineheight"
+msgstr "Zeilenhéicht"
+
+msgid "style_dlg_text_case"
+msgstr "Schreiwung"
+
+msgid "style_dlg_text_color"
+msgstr "Fuerf"
+
+msgid "style_dlg_text_decoration"
+msgstr "Gestaltung"
+
+msgid "style_dlg_text_overline"
+msgstr "iwwerstrach"
+
+msgid "style_dlg_text_underline"
+msgstr "ënnerstrach"
+
+msgid "style_dlg_text_striketrough"
+msgstr "duerchgestrach"
+
+msgid "style_dlg_text_blink"
+msgstr "blënkend"
+
+msgid "style_dlg_text_none"
+msgstr "keng"
+
+msgid "style_dlg_background_color"
+msgstr "Hannergrondfuerf"
+
+msgid "style_dlg_background_image"
+msgstr "Hannergrondbild"
+
+msgid "style_dlg_background_repeat"
+msgstr "Widderhuelung"
+
+msgid "style_dlg_background_attachment"
+msgstr "Waasserzeecheneffekt"
+
+msgid "style_dlg_background_hpos"
+msgstr "Positioun X"
+
+msgid "style_dlg_background_vpos"
+msgstr "Positioun Y"
+
+msgid "style_dlg_block_wordspacing"
+msgstr "Wuertofstand"
+
+msgid "style_dlg_block_letterspacing"
+msgstr "Buschtawenofstand"
+
+msgid "style_dlg_block_vertical_alignment"
+msgstr "Vertikal Ausriichtung"
+
+msgid "style_dlg_block_text_align"
+msgstr "Ausriichtung"
+
+msgid "style_dlg_block_text_indent"
+msgstr "Aréckung"
+
+msgid "style_dlg_block_whitespace"
+msgstr "Automateschen Ëmbroch"
+
+msgid "style_dlg_block_display"
+msgstr "Ëmbrochverhalen"
+
+msgid "style_dlg_box_width"
+msgstr "Breet"
+
+msgid "style_dlg_box_height"
+msgstr "Héicht"
+
+msgid "style_dlg_box_float"
+msgstr "Ëmfléissung"
+
+msgid "style_dlg_box_clear"
+msgstr "Ëmfléissung verhënneren"
+
+msgid "style_dlg_padding"
+msgstr "Banneschten Ofstand"
+
+msgid "style_dlg_same"
+msgstr "All selwecht"
+
+msgid "style_dlg_top"
+msgstr "Uewen"
+
+msgid "style_dlg_right"
+msgstr "Riets"
+
+msgid "style_dlg_bottom"
+msgstr "Ënnen"
+
+msgid "style_dlg_left"
+msgstr "Lénks"
+
+msgid "style_dlg_margin"
+msgstr "Baussechten Ofstand"
+
+msgid "style_dlg_style"
+msgstr "Format"
+
+msgid "style_dlg_width"
+msgstr "Breet"
+
+msgid "style_dlg_height"
+msgstr "Héicht"
+
+msgid "style_dlg_color"
+msgstr "Textfuerf"
+
+msgid "style_dlg_list_type"
+msgstr "Lëschtepunkt-Aart"
+
+msgid "style_dlg_bullet_image"
+msgstr "Lëschtepunkt-Grafik"
+
+msgid "style_dlg_position"
+msgstr "Positionéierung"
+
+msgid "style_dlg_positioning_type"
+msgstr "Aart vun der Positionéierung"
+
+msgid "style_dlg_visibility"
+msgstr "Siichtbar"
+
+msgid "style_dlg_zindex"
+msgstr "Z-Wäert"
+
+msgid "style_dlg_overflow"
+msgstr "Verhale bei Iwwergréisst"
+
+msgid "style_dlg_placement"
+msgstr "Plazéierung"
+
+msgid "style_dlg_clip"
+msgstr "Ausschnëtt"
+
+msgid "paste_paste_text_desc"
+msgstr "Als normalen Text afügen"
+
+msgid "paste_paste_word_desc"
+msgstr "Mat Formatéierungen (aus dem Word) afügen"
+
+msgid "paste_selectall_desc"
+msgstr "Alles auswielen"
+
+msgid "paste_dlg_text_title"
+msgstr "Dréckt op Ärer Tastatur Ctrl+V, fir den Text an ze fügen."
+
+msgid "paste_dlg_text_linebreaks"
+msgstr "Zeilenëmbrëch bäibehalen"
+
+msgid "paste_dlg_word_title"
+msgstr "Dréckt op Ärer Tastatur Ctrl+V, um den Text an ze fügen."
+
+msgid "table_desc"
+msgstr "Tabell erstellen/beaarbechten"
+
+msgid "table_row_before_desc"
+msgstr "Zeil uewerhalb afügen"
+
+msgid "table_row_after_desc"
+msgstr "Zeil ënnerhalb afügen"
+
+msgid "table_delete_row_desc"
+msgstr "Zeil läschen"
+
+msgid "table_col_before_desc"
+msgstr "Spalt lénks afügen"
+
+msgid "table_col_after_desc"
+msgstr "Spalt riets afügen"
+
+msgid "table_delete_col_desc"
+msgstr "Spalt läschen"
+
+msgid "table_split_cells_desc"
+msgstr "Verbonnen Zellen trennen"
+
+msgid "table_merge_cells_desc"
+msgstr "Zellen verbannen"
+
+msgid "table_row_desc"
+msgstr "Eegeschaften vun der Zeil"
+
+msgid "table_cell_desc"
+msgstr "Eegeschaften vun der Zell"
+
+msgid "table_props_desc"
+msgstr "Eegeschaften vun der Tabelle"
+
+msgid "table_paste_row_before_desc"
+msgstr "Zeil uewerhalb aus der Zwëschenoflag afügen"
+
+msgid "table_paste_row_after_desc"
+msgstr "Zeil ënnerhalb aus der Zwëschenoflag afügen"
+
+msgid "table_cut_row_desc"
+msgstr "Zeil ausschneiden"
+
+msgid "table_copy_row_desc"
+msgstr "Zeil kopéieren"
+
+msgid "table_del"
+msgstr "Tabelle läschen"
+
+msgid "table_row"
+msgstr "Zeil"
+
+msgid "table_col"
+msgstr "Spalt"
+
+msgid "table_cell"
+msgstr "Zell"
+
+msgid "table_rowprops_delta_width"
+msgstr ""
+
+msgid "table_rowprops_delta_height"
+msgstr ""
+
+msgid "table_cellprops_delta_width"
+msgstr "150"
+
+msgid "table_cellprops_delta_height"
+msgstr ""
+
+msgid "table_table_delta_width"
+msgstr ""
+
+msgid "table_table_delta_height"
+msgstr ""
+
+msgid "table_merge_cells_delta_width"
+msgstr ""
+
+msgid "table_merge_cells_delta_height"
+msgstr ""
+
+msgid "table_dlg_general_tab"
+msgstr "Allgemeng"
+
+msgid "table_dlg_advanced_tab"
+msgstr "Erweidert"
+
+msgid "table_dlg_general_props"
+msgstr "Allgemeng Astellungen"
+
+msgid "table_dlg_advanced_props"
+msgstr "Erweidert Astellungen"
+
+msgid "table_dlg_rowtype"
+msgstr "Gruppéierung"
+
+msgid "table_dlg_title"
+msgstr "Tabelle afügen/beaarbechten"
+
+msgid "table_dlg_width"
+msgstr "Breet"
+
+msgid "table_dlg_height"
+msgstr "Héicht"
+
+msgid "table_dlg_cols"
+msgstr "Spalten"
+
+msgid "table_dlg_rows"
+msgstr "Zeilen"
+
+msgid "table_dlg_cellspacing"
+msgstr "Zellenofstand"
+
+msgid "table_dlg_cellpadding"
+msgstr "Ofstand innerhalb vun den Zellen"
+
+msgid "table_dlg_border"
+msgstr "Rumm"
+
+msgid "table_dlg_align"
+msgstr "Ausriichtung"
+
+msgid "table_dlg_align_default"
+msgstr "Standard"
+
+msgid "table_dlg_align_left"
+msgstr "Lénks"
+
+msgid "table_dlg_align_right"
+msgstr "Riets"
+
+msgid "table_dlg_align_middle"
+msgstr "Mëtteg"
+
+msgid "table_dlg_row_title"
+msgstr "Eegeschafte vun der Zeil"
+
+msgid "table_dlg_cell_title"
+msgstr "Eegeschafte vun der Zell"
+
+msgid "table_dlg_cell_type"
+msgstr "Zellentyp"
+
+msgid "table_dlg_valign"
+msgstr "Vertikal Ausriichtung"
+
+msgid "table_dlg_align_top"
+msgstr "Uewen"
+
+msgid "table_dlg_align_bottom"
+msgstr "Ënnen"
+
+msgid "table_dlg_bordercolor"
+msgstr "Fuerf vun der Rumm"
+
+msgid "table_dlg_bgcolor"
+msgstr "Hannergrondfuerf"
+
+msgid "table_dlg_merge_cells_title"
+msgstr "Zelle vereenen"
+
+msgid "table_dlg_id"
+msgstr "ID"
+
+msgid "table_dlg_style"
+msgstr "Format"
+
+msgid "table_dlg_langdir"
+msgstr "Schrëftrichtung"
+
+msgid "table_dlg_langcode"
+msgstr "Sproochecode"
+
+msgid "table_dlg_mime"
+msgstr "MIME-Typ vum Inhalt"
+
+msgid "table_dlg_ltr"
+msgstr "Lénks no riets"
+
+msgid "table_dlg_rtl"
+msgstr "Riets no lénks"
+
+msgid "table_dlg_bgimage"
+msgstr "Hannergrondbild"
+
+msgid "table_dlg_summary"
+msgstr "Zesummefaassung"
+
+msgid "table_dlg_td"
+msgstr "Textzell"
+
+msgid "table_dlg_th"
+msgstr "Iwwerschrëft"
+
+msgid "table_dlg_cell_cell"
+msgstr "Dës Zell veränneren"
+
+msgid "table_dlg_cell_row"
+msgstr "All Zellen an dëser Zeil veränneren"
+
+msgid "table_dlg_cell_all"
+msgstr "All Zellen der Tabelle veränneren"
+
+msgid "table_dlg_row_row"
+msgstr "Dës Zeil veränneren"
+
+msgid "table_dlg_row_odd"
+msgstr "Ongrued Zeilen veränneren"
+
+msgid "table_dlg_row_even"
+msgstr "Grued Zeilen veränneren"
+
+msgid "table_dlg_row_all"
+msgstr "All d'Zeilen veränneren"
+
+msgid "table_dlg_thead"
+msgstr "Tabellekapp"
+
+msgid "table_dlg_tbody"
+msgstr "Tabelleninhalt"
+
+msgid "table_dlg_tfoot"
+msgstr "Tabellefouss"
+
+msgid "table_dlg_scope"
+msgstr "Bezuch"
+
+msgid "table_dlg_rowgroup"
+msgstr "Vertikal gruppéieren"
+
+msgid "table_dlg_colgroup"
+msgstr "Horizontal gruppéieren"
+
+msgid "table_dlg_col_limit"
+msgstr "Dir hutt déi maximal Spaltenzuel vun {$cols} iwwerschratt."
+
+msgid "table_dlg_row_limit"
+msgstr "Dir hutt déi maximal Zeilenzuel vun {$rows} iwwerschratt."
+
+msgid "table_dlg_cell_limit"
+msgstr "Dir hutt déi maximal Zellenzuel vun {$cells} iwwerschratt."
+
+msgid "table_dlg_missing_scope"
+msgstr "Wëllt Dir wierklech keng Bezéiung fir dës Iwwerschrëft uginn? Benotzer mat kierperlechen Aschränkungen kënne Schwieregkeeten hunn, den Inhalt vun der Tabelle ze verstoen."
+
+msgid "table_dlg_caption"
+msgstr "Beschrëftung vun der Tabelle"
+
+msgid "table_dlg_frame"
+msgstr "Rumm"
+
+msgid "table_dlg_frame_none"
+msgstr "keng"
+
+msgid "table_dlg_frame_groups"
+msgstr "zwëschen Gruppen"
+
+msgid "table_dlg_frame_rows"
+msgstr "zwëschen Zeilen"
+
+msgid "table_dlg_frame_cols"
+msgstr "zwëschen Spalten"
+
+msgid "table_dlg_frame_all"
+msgstr "zwëschen allen Zellen"
+
+msgid "table_dlg_rules"
+msgstr "Gitter"
+
+msgid "table_dlg_rules_void"
+msgstr "keen"
+
+msgid "table_dlg_rules_above"
+msgstr "nëmmen uewen"
+
+msgid "table_dlg_rules_below"
+msgstr "nëmmen ënnen"
+
+msgid "table_dlg_rules_hsides"
+msgstr "uewen an ënnen"
+
+msgid "table_dlg_rules_lhs"
+msgstr "nëmmen lénks"
+
+msgid "table_dlg_rules_rhs"
+msgstr "nëmmen riets"
+
+msgid "table_dlg_rules_vsides"
+msgstr "lénks a riets"
+
+msgid "table_dlg_rules_box"
+msgstr "all 4 Säiten (Box)"
+
+msgid "table_dlg_rules_border"
+msgstr "all 4 Säiten (Bord)"
+
+msgid "autosave_unload_msg"
+msgstr "Är Ännerungen gi verluer, wann Dir d'Säit verloosst."
+
+msgid "fullscreen_desc"
+msgstr "Vollbildschierm"
+
+msgid "media_desc"
+msgstr "Multimedia-Inhalt abannen/beaarbechten"
+
+msgid "media_edit"
+msgstr "Multimedia-Abettung beaarbechten"
+
+msgid "media_delta_width"
+msgstr ""
+
+msgid "media_delta_height"
+msgstr ""
+
+msgid "media_dlg_title"
+msgstr "Multimedia-Inhalt abannen/beaarbechten"
+
+msgid "media_dlg_general"
+msgstr "Allgemeng"
+
+msgid "media_dlg_advanced"
+msgstr "Erweidert"
+
+msgid "media_dlg_file"
+msgstr "Datei/URL"
+
+msgid "media_dlg_list"
+msgstr "Lëscht"
+
+msgid "media_dlg_size"
+msgstr "Ofmiessungen"
+
+msgid "media_dlg_preview"
+msgstr "Virschau"
+
+msgid "media_dlg_constrain_proportions"
+msgstr "Proportiounen erhalen"
+
+msgid "media_dlg_type"
+msgstr "Typ"
+
+msgid "media_dlg_id"
+msgstr "Id"
+
+msgid "media_dlg_name"
+msgstr "Numm"
+
+msgid "media_dlg_class_name"
+msgstr "CSS-Klass"
+
+msgid "media_dlg_vspace"
+msgstr "Vertikalen Ofstand"
+
+msgid "media_dlg_hspace"
+msgstr "Horizontalen Ofstand"
+
+msgid "media_dlg_play"
+msgstr "Automatesch Ofspillen"
+
+msgid "media_dlg_loop"
+msgstr "Widderhuelung"
+
+msgid "media_dlg_menu"
+msgstr "Menü uweisen"
+
+msgid "media_dlg_quality"
+msgstr "Qualitéit"
+
+msgid "media_dlg_scale"
+msgstr "Skaléierung"
+
+msgid "media_dlg_align"
+msgstr "Ausriichtung"
+
+msgid "media_dlg_salign"
+msgstr "S-Ausriichtung"
+
+msgid "media_dlg_wmode"
+msgstr "WMode"
+
+msgid "media_dlg_bgcolor"
+msgstr "Hannergrond"
+
+msgid "media_dlg_base"
+msgstr "Basis"
+
+msgid "media_dlg_flashvars"
+msgstr "Flash-Variablen"
+
+msgid "media_dlg_liveconnect"
+msgstr "SWLiveConnect"
+
+msgid "media_dlg_autohref"
+msgstr "AutoHREF"
+
+msgid "media_dlg_cache"
+msgstr "Zwëschespäicher"
+
+msgid "media_dlg_hidden"
+msgstr "Verstoppt"
+
+msgid "media_dlg_controller"
+msgstr "Kontroller"
+
+msgid "media_dlg_kioskmode"
+msgstr "Kioskmodus"
+
+msgid "media_dlg_playeveryframe"
+msgstr "All Frame ofspillen"
+
+msgid "media_dlg_targetcache"
+msgstr "Zil zwëschespäicheren"
+
+msgid "media_dlg_correction"
+msgstr "Ouni Korrektur"
+
+msgid "media_dlg_enablejavascript"
+msgstr "JavaScript aktivéieren"
+
+msgid "media_dlg_starttime"
+msgstr "Startzäitpunkt"
+
+msgid "media_dlg_endtime"
+msgstr "Endzäitpunkt"
+
+msgid "media_dlg_href"
+msgstr "Href"
+
+msgid "media_dlg_qtsrcchokespeed"
+msgstr "Vitesse drosselen"
+
+msgid "media_dlg_target"
+msgstr "Zil"
+
+msgid "media_dlg_volume"
+msgstr "Lautstärkt"
+
+msgid "media_dlg_autostart"
+msgstr "Autostart"
+
+msgid "media_dlg_enabled"
+msgstr "Aktivéiert"
+
+msgid "media_dlg_fullscreen"
+msgstr "Vollbild"
+
+msgid "media_dlg_invokeurls"
+msgstr "URLen opruffen"
+
+msgid "media_dlg_mute"
+msgstr "Stomm"
+
+msgid "media_dlg_stretchtofit"
+msgstr "Breet un déi verfügbar Plaz upassen"
+
+msgid "media_dlg_windowlessvideo"
+msgstr "Fënsterlose Video"
+
+msgid "media_dlg_balance"
+msgstr "Balance"
+
+msgid "media_dlg_baseurl"
+msgstr "Basis-URL"
+
+msgid "media_dlg_captioningid"
+msgstr "Beschrëftungs Id"
+
+msgid "media_dlg_currentmarker"
+msgstr "Aktuelle Marker"
+
+msgid "media_dlg_currentposition"
+msgstr "Aktuell Positioun"
+
+msgid "media_dlg_defaultframe"
+msgstr "Frame-Virastellung"
+
+msgid "media_dlg_playcount"
+msgstr "Zieler"
+
+msgid "media_dlg_rate"
+msgstr "Quote"
+
+msgid "media_dlg_uimode"
+msgstr "UI Modus"
+
+msgid "media_dlg_flash_options"
+msgstr "Flash-Optiounen"
+
+msgid "media_dlg_qt_options"
+msgstr "Quicktime-Optiounen"
+
+msgid "media_dlg_wmp_options"
+msgstr "Optiounen fir Windows Media Player"
+
+msgid "media_dlg_rmp_options"
+msgstr "Optiounen fir Real Media Player"
+
+msgid "media_dlg_shockwave_options"
+msgstr "Shockwave-Optiounen"
+
+msgid "media_dlg_autogotourl"
+msgstr "Auto goto URL"
+
+msgid "media_dlg_center"
+msgstr "Zentréiert"
+
+msgid "media_dlg_imagestatus"
+msgstr "Bildstatus"
+
+msgid "media_dlg_maintainaspect"
+msgstr "Bildverhältnis bäibehalen"
+
+msgid "media_dlg_nojava"
+msgstr "Kee Java"
+
+msgid "media_dlg_prefetch"
+msgstr "Prefetch"
+
+msgid "media_dlg_shuffle"
+msgstr "Zoufälleg Widdergab"
+
+msgid "media_dlg_console"
+msgstr "Konsol"
+
+msgid "media_dlg_numloop"
+msgstr "Unzuel Widderhuelungen"
+
+msgid "media_dlg_controls"
+msgstr "Steierung"
+
+msgid "media_dlg_scriptcallbacks"
+msgstr "Script callbacks"
+
+msgid "media_dlg_swstretchstyle"
+msgstr "Stretch style"
+
+msgid "media_dlg_swstretchhalign"
+msgstr "Stretch H-Ausriichtung"
+
+msgid "media_dlg_swstretchvalign"
+msgstr "Stretch V-Ausriichtung"
+
+msgid "media_dlg_sound"
+msgstr "Toun"
+
+msgid "media_dlg_progress"
+msgstr "Fortschrëtt"
+
+msgid "media_dlg_qtsrc"
+msgstr "QT Src"
+
+msgid "media_dlg_qt_stream_warn"
+msgstr "An den erweiderten Astellunge sollten am Feld 'QT Src' gestreamte RTSP Ressourcen bäigesat ginn.\nZousätzlech sollt Dir do och eng net-gestreamte Ressource uginn."
+
+msgid "media_dlg_align_top"
+msgstr "Uewen"
+
+msgid "media_dlg_align_right"
+msgstr "Riets"
+
+msgid "media_dlg_align_bottom"
+msgstr "Ënnen"
+
+msgid "media_dlg_align_left"
+msgstr "Lénks"
+
+msgid "media_dlg_align_center"
+msgstr "Zentréiert"
+
+msgid "media_dlg_align_top_left"
+msgstr "Uewe Lénks"
+
+msgid "media_dlg_align_top_right"
+msgstr "Uewe Riets"
+
+msgid "media_dlg_align_bottom_left"
+msgstr "Ënne Lénks"
+
+msgid "media_dlg_align_bottom_right"
+msgstr "Ënne Riets"
+
+msgid "media_dlg_flv_options"
+msgstr "Optiounen fir Flash Video"
+
+msgid "media_dlg_flv_scalemode"
+msgstr "Skaléierungsmodus"
+
+msgid "media_dlg_flv_buffer"
+msgstr "Puffer"
+
+msgid "media_dlg_flv_startimage"
+msgstr "Startbild"
+
+msgid "media_dlg_flv_starttime"
+msgstr "Startzäitpunkt"
+
+msgid "media_dlg_flv_defaultvolume"
+msgstr "Standardlautstärk"
+
+msgid "media_dlg_flv_hiddengui"
+msgstr "Verstoppte GUI"
+
+msgid "media_dlg_flv_autostart"
+msgstr "Autostart"
+
+msgid "media_dlg_flv_loop"
+msgstr "Widderhuelung"
+
+msgid "media_dlg_flv_showscalemodes"
+msgstr "Skaléierungsmodi uweisen"
+
+msgid "media_dlg_flv_smoothvideo"
+msgstr "Smooth Video"
+
+msgid "media_dlg_flv_jscallback"
+msgstr "JS Callback"
+
+msgid "fullpage_desc"
+msgstr "Dokument-Eegeschaften"
+
+msgid "fullpage_delta_width"
+msgstr ""
+
+msgid "fullpage_delta_height"
+msgstr ""
+
+msgid "fullpage_dlg_title"
+msgstr "Dokument-Eegeschaften"
+
+msgid "fullpage_dlg_meta_tab"
+msgstr "Allgemeng"
+
+msgid "fullpage_dlg_appearance_tab"
+msgstr "Ausgesinn"
+
+msgid "fullpage_dlg_advanced_tab"
+msgstr "Erweidert"
+
+msgid "fullpage_dlg_meta_props"
+msgstr "Meta-Informatioun"
+
+msgid "fullpage_dlg_langprops"
+msgstr "Sprooch a Kodéierung"
+
+msgid "fullpage_dlg_meta_title"
+msgstr "Titel"
+
+msgid "fullpage_dlg_meta_keywords"
+msgstr "Schësselwierder"
+
+msgid "fullpage_dlg_meta_description"
+msgstr "Beschreiwung"
+
+msgid "fullpage_dlg_meta_robots"
+msgstr "Roboter"
+
+msgid "fullpage_dlg_doctypes"
+msgstr "DocType"
+
+msgid "fullpage_dlg_langcode"
+msgstr "Sproochcode"
+
+msgid "fullpage_dlg_langdir"
+msgstr "Spoochrichtung"
+
+msgid "fullpage_dlg_ltr"
+msgstr "Lénks no Riets"
+
+msgid "fullpage_dlg_rtl"
+msgstr "Riets no Lénks"
+
+msgid "fullpage_dlg_xml_pi"
+msgstr "XML Deklaratioun"
+
+msgid "fullpage_dlg_encoding"
+msgstr "Zeechekodéierung"
+
+msgid "fullpage_dlg_appearance_bgprops"
+msgstr "Hannergrond-Eegeschaften"
+
+msgid "fullpage_dlg_appearance_marginprops"
+msgstr "Ofstänn vum Body"
+
+msgid "fullpage_dlg_appearance_linkprops"
+msgstr "Linkfuerwen"
+
+msgid "fullpage_dlg_appearance_textprops"
+msgstr "Text-Eegeschaften"
+
+msgid "fullpage_dlg_bgcolor"
+msgstr "Hannergrondfuerf"
+
+msgid "fullpage_dlg_bgimage"
+msgstr "Hannergrondbild"
+
+msgid "fullpage_dlg_left_margin"
+msgstr "Lénken Ofstand"
+
+msgid "fullpage_dlg_right_margin"
+msgstr "Rietsen Ofstand"
+
+msgid "fullpage_dlg_top_margin"
+msgstr "Ieweschten Ofstand"
+
+msgid "fullpage_dlg_bottom_margin"
+msgstr "Ënneschten Ofstand"
+
+msgid "fullpage_dlg_text_color"
+msgstr "Textfuerf"
+
+msgid "fullpage_dlg_font_size"
+msgstr "Schrëftgréisst"
+
+msgid "fullpage_dlg_font_face"
+msgstr "Schrëftaart"
+
+msgid "fullpage_dlg_link_color"
+msgstr "Linkfuerf"
+
+msgid "fullpage_dlg_hover_color"
+msgstr "Hover-Fuerf"
+
+msgid "fullpage_dlg_visited_color"
+msgstr "Besicht-Fuerf"
+
+msgid "fullpage_dlg_active_color"
+msgstr "Aktiv-Fuerf"
+
+msgid "fullpage_dlg_textcolor"
+msgstr "Fuerf"
+
+msgid "fullpage_dlg_fontsize"
+msgstr "Schrëftgréist"
+
+msgid "fullpage_dlg_fontface"
+msgstr "Schrëftaart"
+
+msgid "fullpage_dlg_meta_index_follow"
+msgstr "Indizéieren, an de Linken nogoen"
+
+msgid "fullpage_dlg_meta_index_nofollow"
+msgstr "Indizéieren, mä de Linken net nogoen"
+
+msgid "fullpage_dlg_meta_noindex_follow"
+msgstr "Net indizéieren, mä de Linken nogoen"
+
+msgid "fullpage_dlg_meta_noindex_nofollow"
+msgstr "Net indizéieren an och net de Linken nogoen"
+
+msgid "fullpage_dlg_appearance_style"
+msgstr "CSS-Stil Blat a Stileegeschaften"
+
+msgid "fullpage_dlg_stylesheet"
+msgstr "CSS-Stil Blat"
+
+msgid "fullpage_dlg_style"
+msgstr "CSS-Stil"
+
+msgid "fullpage_dlg_author"
+msgstr "Auteur"
+
+msgid "fullpage_dlg_copyright"
+msgstr "Copyright"
+
+msgid "fullpage_dlg_add"
+msgstr "Neit Element bäifügen"
+
+msgid "fullpage_dlg_remove"
+msgstr "Ausgewielt Element ewechhuelen"
+
+msgid "fullpage_dlg_moveup"
+msgstr "Ausgewielt Element nach uewen beweegen"
+
+msgid "fullpage_dlg_movedown"
+msgstr "Ausgewielt Element no ënnen beweegen"
+
+msgid "fullpage_dlg_head_elements"
+msgstr "Iwwerschrëftenelementer"
+
+msgid "fullpage_dlg_info"
+msgstr "Informatioun"
+
+msgid "fullpage_dlg_add_title"
+msgstr "Titel-Element"
+
+msgid "fullpage_dlg_add_meta"
+msgstr "Meta-Element"
+
+msgid "fullpage_dlg_add_script"
+msgstr "Script-Element"
+
+msgid "fullpage_dlg_add_style"
+msgstr "Stil-Element"
+
+msgid "fullpage_dlg_add_link"
+msgstr "Link-Element"
+
+msgid "fullpage_dlg_add_base"
+msgstr "Basis-Element"
+
+msgid "fullpage_dlg_add_comment"
+msgstr "HTML-Kommentar"
+
+msgid "fullpage_dlg_title_element"
+msgstr "Titel-Element"
+
+msgid "fullpage_dlg_script_element"
+msgstr "Script-Element"
+
+msgid "fullpage_dlg_style_element"
+msgstr "Stil-Element"
+
+msgid "fullpage_dlg_base_element"
+msgstr "Basis-Element"
+
+msgid "fullpage_dlg_link_element"
+msgstr "Link-Element"
+
+msgid "fullpage_dlg_meta_element"
+msgstr "Meta_Element"
+
+msgid "fullpage_dlg_comment_element"
+msgstr "Kommentar"
+
+msgid "fullpage_dlg_src"
+msgstr "Src"
+
+msgid "fullpage_dlg_language"
+msgstr "Sprooche"
+
+msgid "fullpage_dlg_href"
+msgstr "Href"
+
+msgid "fullpage_dlg_target"
+msgstr "Zil"
+
+msgid "fullpage_dlg_type"
+msgstr "Typ"
+
+msgid "fullpage_dlg_charset"
+msgstr "Zeechesaz"
+
+msgid "fullpage_dlg_defer"
+msgstr "Defer"
+
+msgid "fullpage_dlg_media"
+msgstr "Media"
+
+msgid "fullpage_dlg_properties"
+msgstr "Eegeschaften"
+
+msgid "fullpage_dlg_name"
+msgstr "Numm"
+
+msgid "fullpage_dlg_value"
+msgstr "Wäert"
+
+msgid "fullpage_dlg_content"
+msgstr "Inhalt"
+
+msgid "fullpage_dlg_rel"
+msgstr "Rel"
+
+msgid "fullpage_dlg_rev"
+msgstr "Rev"
+
+msgid "fullpage_dlg_hreflang"
+msgstr "Href lang"
+
+msgid "fullpage_dlg_general_props"
+msgstr "Allgemeng"
+
+msgid "fullpage_dlg_advanced_props"
+msgstr "Erweidert"
+
+msgid "template_desc"
+msgstr "Virgefäerdegte Virlageninhalt afügen"
+
+msgid "template_dlg_title"
+msgstr "Virlagen"
+
+msgid "template_dlg_label"
+msgstr "Virlag"
+
+msgid "template_dlg_desc_label"
+msgstr "Beschreiwung"
+
+msgid "template_dlg_desc"
+msgstr "Virgefäerdegte Virlageninhalt afügen"
+
+msgid "template_dlg_select"
+msgstr "Virlag auswielen"
+
+msgid "template_dlg_preview"
+msgstr "Virschau"
+
+msgid "template_dlg_warning"
+msgstr "Warnung: Eng Virlag mat enger anerer ze aktualiséiere kann zu Dateverloscht féieren!"
+
+msgid "template_dlg_mdate_format"
+msgstr "%Y-%m-%d %H:%M:%S"
+
+msgid "template_dlg_cdate_format"
+msgstr "%Y-%m-%d %H:%M:%S"
+
+msgid "template_dlg_months_long"
+msgstr "Januar,Februar,Mäerz,Abrëll,Mee,Juni,Juli,August,September,Oktober,November,Dezember"
+
+msgid "template_dlg_months_short"
+msgstr "Jan,Feb,Mäerz,Abr,Mee,Juni,Juli,Aug,Sept,Okt,Nov,Dez"
+
+msgid "template_dlg_day_long"
+msgstr "Sonndeg,Méindeg,Dënschdeg,Mëttwoch,Donneschdeg,Freides,Samschdeg,Sonndeg"
+
+msgid "template_dlg_day_short"
+msgstr "So,Mé,Dë,Më,Do,Fr,Sa,So"
+
+msgid "visualchars_desc"
+msgstr "Siichtbarkeet vun de Steierzeechen un/aus"
+
+msgid "spellchecker_desc"
+msgstr "Spellchecker un/aus"
+
+msgid "spellchecker_menu"
+msgstr "Konfiguratioun vum Spellchecker"
+
+msgid "spellchecker_ignore_word"
+msgstr "Wuert ignoréieren"
+
+msgid "spellchecker_ignore_words"
+msgstr "All ignoréieren"
+
+msgid "spellchecker_langs"
+msgstr "Sproochen"
+
+msgid "spellchecker_wait"
+msgstr "Wann ech gelift waarden..."
+
+msgid "spellchecker_sug"
+msgstr "Virschléi"
+
+msgid "spellchecker_no_sug"
+msgstr "Keng Virschléi"
+
+msgid "spellchecker_no_mpell"
+msgstr "Keng Orthographiefeeler fonnt."
+
+msgid "pagebreak_desc"
+msgstr "Säitenëmbroch afügen"
+

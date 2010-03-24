@@ -1,0 +1,2261 @@
+# Монгол хэл
+# Version 1.1
+#
+# Badral Sanligiin
+msgid ""
+msgstr ""
+"Project-Id-Version: Products.TinyMCE\n"
+"POT-Creation-Date: 2000-01-01 00:00+0000\n"
+"PO-Revision-Date: 2008-11-11 00:00+0000\n"
+"Last-Translator: Badral Sanligiin\n"
+"Language-Team: Badral Sanligiin\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: mn\n"
+"Language-Name: Mongolian\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: tinymce\n"
+
+msgid "common_edit_confirm"
+msgstr "Та энэ бичвэрийн мужийг WYSIWYG засварлахыг хүсэж байна уу?"
+
+msgid "common_apply"
+msgstr "Хэрэглэх"
+
+msgid "common_insert"
+msgstr "Оруулах"
+
+msgid "common_update"
+msgstr "Шинэчлэх"
+
+msgid "common_cancel"
+msgstr "Цуцлах"
+
+msgid "common_close"
+msgstr "Хаах"
+
+msgid "common_browse"
+msgstr "Гүйлгэн үзэх"
+
+msgid "common_class_name"
+msgstr "Анги"
+
+msgid "common_not_set"
+msgstr "-- Олгогдоогүй --"
+
+msgid "common_clipboard_msg"
+msgstr "Хуулах, таслан авах буулгах нь Мозилла Файрфокс дээр боломжгүй.\nТа энэ асуудлын талаар дэлгэрэнгүй мэдэхийг хүсэж байна уу?"
+
+msgid "common_clipboard_no_support"
+msgstr "Одоогоор таны хөтөч дээр дэмжигдээгүй байна. Та үүний оронд товчилбор хэрэглэнэ үү."
+
+msgid "common_popup_blocked"
+msgstr "Харамсалтай нь таны попап хаалт энэ програмд шаардлагатай цонхыг хаалаа. Бүрэн дүүрэн ажиллагааг хангахыг хүсвэл попап хаалтаа идэвхгүйжүүлнэ үү."
+
+msgid "common_invalid_data"
+msgstr "Алдаа: Та хүчингүй утга оруулсан. (улаанаар тэмдэглэсэн)."
+
+msgid "common_more_colors"
+msgstr "Бусад өнгө"
+
+msgid "simple_bold_desc"
+msgstr "Тод (Ctrl+B)"
+
+msgid "simple_italic_desc"
+msgstr "Налуу (Ctrl+I)"
+
+msgid "simple_underline_desc"
+msgstr "Доогуур зураас (Ctrl+U)"
+
+msgid "simple_striketrough_desc"
+msgstr "Дарсан"
+
+msgid "simple_bullist_desc"
+msgstr "Тоочилт"
+
+msgid "simple_numlist_desc"
+msgstr "Дугаарт тоочилт"
+
+msgid "simple_undo_desc"
+msgstr "Буцаах (Ctrl+Z)"
+
+msgid "simple_redo_desc"
+msgstr "Цуцлах (Ctrl+Y)"
+
+msgid "simple_cleanup_desc"
+msgstr "Эх кодыг цэвэрлэх"
+
+msgid "advanced_style_select"
+msgstr "Хэлбэржүүлэлт"
+
+msgid "advanced_font_size"
+msgstr "Фонтын хэмжээ"
+
+msgid "advanced_fontdefault"
+msgstr "Фонт"
+
+msgid "advanced_block"
+msgstr "Хэв"
+
+msgid "advanced_paragraph"
+msgstr "Параграф"
+
+msgid "advanced_div"
+msgstr "Хамтатгасан муж"
+
+msgid "advanced_address"
+msgstr "Хаяг"
+
+msgid "advanced_pre"
+msgstr "Түүхий өгөгдөл"
+
+msgid "advanced_h1"
+msgstr "Гарчиг 1"
+
+msgid "advanced_h2"
+msgstr "Гарчиг 2"
+
+msgid "advanced_h3"
+msgstr "Гарчиг 3"
+
+msgid "advanced_h4"
+msgstr "Гарчиг 4"
+
+msgid "advanced_h5"
+msgstr "Гарчиг 5"
+
+msgid "advanced_h6"
+msgstr "Гарчиг 6"
+
+msgid "advanced_blockquote"
+msgstr "Ишлэл"
+
+msgid "advanced_code"
+msgstr "Код"
+
+msgid "advanced_samp"
+msgstr "Жишээ"
+
+msgid "advanced_dt"
+msgstr "Тодорхойлолт"
+
+msgid "advanced_dd"
+msgstr "Тайлбар"
+
+msgid "advanced_bold_desc"
+msgstr "Тод (Ctrl+B)"
+
+msgid "advanced_italic_desc"
+msgstr "Налуу (Ctrl+I)"
+
+msgid "advanced_underline_desc"
+msgstr "Доогуур зураас (Ctrl+U)"
+
+msgid "advanced_striketrough_desc"
+msgstr "Дарсан"
+
+msgid "advanced_justifyleft_desc"
+msgstr "Зүүн жигдрүүлсэн"
+
+msgid "advanced_justifycenter_desc"
+msgstr "Голд жигдрүүлсэн"
+
+msgid "advanced_justifyright_desc"
+msgstr "Баруун жигдрүүлсэн"
+
+msgid "advanced_justifyfull_desc"
+msgstr "Тэгшилсэн"
+
+msgid "advanced_bullist_desc"
+msgstr "Тоочилт"
+
+msgid "advanced_numlist_desc"
+msgstr "Дугаарлалт"
+
+msgid "advanced_outdent_desc"
+msgstr "Догол мөр устгах"
+
+msgid "advanced_indent_desc"
+msgstr "Догол мөр оруулах"
+
+msgid "advanced_undo_desc"
+msgstr "Буцаах (Ctrl+Z)"
+
+msgid "advanced_redo_desc"
+msgstr "Цуцлах (Ctrl+Y)"
+
+msgid "advanced_link_desc"
+msgstr "Холбоос оруулах/өөрчлөх"
+
+msgid "advanced_unlink_desc"
+msgstr "Холбоос устгах"
+
+msgid "advanced_image_desc"
+msgstr "Зураг оруулах/өөрчлөх"
+
+msgid "advanced_cleanup_desc"
+msgstr "Эх код цэвэрлэх"
+
+msgid "advanced_code_desc"
+msgstr "HTML-эх код засах"
+
+msgid "advanced_sub_desc"
+msgstr "Доор байрлал"
+
+msgid "advanced_sup_desc"
+msgstr "Дээр байрлал"
+
+msgid "advanced_hr_desc"
+msgstr "Тусгаарлагч оруулах"
+
+msgid "advanced_removeformat_desc"
+msgstr "Хэлбэржүүлэлт устгах"
+
+msgid "advanced_custom1_desc"
+msgstr "Хэрэглэгчийн тодорхойлсон тайлбар"
+
+msgid "advanced_forecolor_desc"
+msgstr "Бичвэрийн өнгө"
+
+msgid "advanced_backcolor_desc"
+msgstr "Дэвсгэр өнгө"
+
+msgid "advanced_charmap_desc"
+msgstr "Тусгай тэмдэгт оруулах"
+
+msgid "advanced_visualaid_desc"
+msgstr "Туслах шугам ба үл үзэгдэх элементүүдийг харуулах/далдлах"
+
+msgid "advanced_anchor_desc"
+msgstr "Гадас оруулах/өөрчлөх"
+
+msgid "advanced_cut_desc"
+msgstr "Таслан авах"
+
+msgid "advanced_copy_desc"
+msgstr "Хуулах"
+
+msgid "advanced_paste_desc"
+msgstr "Оруулах"
+
+msgid "advanced_image_props_desc"
+msgstr "Зургийн тодруулга"
+
+msgid "advanced_newdocument_desc"
+msgstr "Шинэ баримт"
+
+msgid "advanced_help_desc"
+msgstr "Тусламж"
+
+msgid "advanced_blockquote_desc"
+msgstr "Ишлэл"
+
+msgid "advanced_clipboard_msg"
+msgstr "Хуулах, таслан авах буулгах нь Мозилла Файрфокс дээр боломжгүй. \n      Та энэ асуудлын талаар дэлгэрэнгүй мэдэхийг хүсэж байна уу?"
+
+msgid "advanced_path"
+msgstr "Зам"
+
+msgid "advanced_newdocument"
+msgstr "Та бүх агуулгыг устгахдаа итгэлтэй байна уу?"
+
+msgid "advanced_toolbar_focus"
+msgstr "Багаж самбар луу үсрэхэд: Alt+Q; Засварлагч руу үсрэхэд: Alt-Z; Элементийн зам руу үсрэхэд: Alt-X"
+
+msgid "advanced_more_colors"
+msgstr "Бусад өнгө"
+
+msgid "advanced_image_delta_width"
+msgstr ""
+
+msgid "advanced_image_delta_height"
+msgstr ""
+
+msgid "advanced_link_delta_width"
+msgstr ""
+
+msgid "advanced_link_delta_height"
+msgstr ""
+
+msgid "advanced_colorpicker_delta_width"
+msgstr ""
+
+msgid "advanced_colorpicker_delta_height"
+msgstr ""
+
+msgid "advanced_charmap_delta_width"
+msgstr ""
+
+msgid "advanced_charmap_delta_height"
+msgstr ""
+
+msgid "advanced_anchor_delta_width"
+msgstr ""
+
+msgid "advanced_anchor_delta_height"
+msgstr ""
+
+msgid "advanced_dlg_about_title"
+msgstr "TinyMCE тухай"
+
+msgid "advanced_dlg_about_general"
+msgstr "Тухай…"
+
+msgid "advanced_dlg_about_help"
+msgstr "Тусламж"
+
+msgid "advanced_dlg_about_license"
+msgstr "Лицензийн нөхцөл"
+
+msgid "advanced_dlg_about_plugins"
+msgstr "Плагин"
+
+msgid "advanced_dlg_about_plugin"
+msgstr "Плагин"
+
+msgid "advanced_dlg_about_author"
+msgstr "Зохиогч"
+
+msgid "advanced_dlg_about_version"
+msgstr "Хувилбар"
+
+msgid "advanced_dlg_about_loaded"
+msgstr "Ачаалагдсан Плагинүүд"
+
+msgid "advanced_dlg_anchor_title"
+msgstr "Гадас оруулах/өөрчлөх"
+
+msgid "advanced_dlg_anchor_name"
+msgstr "Гадасны нэр"
+
+msgid "advanced_dlg_code_title"
+msgstr "HTML-эх код засварлах"
+
+msgid "advanced_dlg_code_wordwrap"
+msgstr "Автомат мөр ороолт"
+
+msgid "advanced_dlg_colorpicker_title"
+msgstr "Өнгө"
+
+msgid "advanced_dlg_colorpicker_picker_tab"
+msgstr "Өнгө сонголт"
+
+msgid "advanced_dlg_colorpicker_picker_title"
+msgstr "Өнгө сонголт"
+
+msgid "advanced_dlg_colorpicker_palette_tab"
+msgstr "Нийлүүр"
+
+msgid "advanced_dlg_colorpicker_palette_title"
+msgstr "Өнгөний нийлүүр"
+
+msgid "advanced_dlg_colorpicker_named_tab"
+msgstr "Нэрлэсэн өнгө"
+
+msgid "advanced_dlg_colorpicker_named_title"
+msgstr "Нэрлэсэн өнгө"
+
+msgid "advanced_dlg_colorpicker_color"
+msgstr "Өнгө:"
+
+msgid "advanced_dlg_colorpicker_name"
+msgstr "Нэр:"
+
+msgid "advanced_dlg_charmap_title"
+msgstr "Тусгай тэмдэгт"
+
+msgid "advanced_dlg_image_title"
+msgstr "Зураг оруулах/өөрчлөх"
+
+msgid "advanced_dlg_image_src"
+msgstr "Хаяг"
+
+msgid "advanced_dlg_image_alt"
+msgstr "Хоёрдогч бичвэр"
+
+msgid "advanced_dlg_image_list"
+msgstr "Зургийн жагсаалт"
+
+msgid "advanced_dlg_image_border"
+msgstr "Хүрээ"
+
+msgid "advanced_dlg_image_dimensions"
+msgstr "Хэмжээс"
+
+msgid "advanced_dlg_image_vspace"
+msgstr "Босоо алслалт"
+
+msgid "advanced_dlg_image_hspace"
+msgstr "Хэвтээ алслалт"
+
+msgid "advanced_dlg_image_align"
+msgstr "Жигдрүүлэлт"
+
+msgid "advanced_dlg_image_align_baseline"
+msgstr "Мөр"
+
+msgid "advanced_dlg_image_align_top"
+msgstr "Дээр"
+
+msgid "advanced_dlg_image_align_middle"
+msgstr "Дунд"
+
+msgid "advanced_dlg_image_align_bottom"
+msgstr "Доор"
+
+msgid "advanced_dlg_image_align_texttop"
+msgstr "Бичвэрийн дээр"
+
+msgid "advanced_dlg_image_align_textbottom"
+msgstr "Бичвэрийн доор"
+
+msgid "advanced_dlg_image_align_left"
+msgstr "Зүүн"
+
+msgid "advanced_dlg_image_align_right"
+msgstr "Баруун"
+
+msgid "advanced_dlg_link_title"
+msgstr "Холбоос оруулах/өөрчлөх"
+
+msgid "advanced_dlg_link_url"
+msgstr "Хаяг"
+
+msgid "advanced_dlg_link_target"
+msgstr "Цонх"
+
+msgid "advanced_dlg_link_target_same"
+msgstr "Тухайн цонхонд нээх"
+
+msgid "advanced_dlg_link_target_blank"
+msgstr "Шинэ цонхонд нээх"
+
+msgid "advanced_dlg_link_titlefield"
+msgstr "Гарчиг"
+
+msgid "advanced_dlg_link_is_email"
+msgstr "Хаяг дээр Имэйл хаяг байх шиг харагдана. Та түүнд шаардлагатай mailto: нэмэхийг хүсэж байна уу?"
+
+msgid "advanced_dlg_link_is_external"
+msgstr "Хаяг дээр гадаад холбоос байгаа харагдана. Та зөв холбоос болгохын тулд http:// нэмэхийг хүсэж байна уу?"
+
+msgid "advanced_dlg_link_list"
+msgstr "Холбоосын жагсаалт"
+
+msgid "contextmenu_align"
+msgstr "Жигдрүүлэлт"
+
+msgid "contextmenu_left"
+msgstr "Зүүн"
+
+msgid "contextmenu_center"
+msgstr "Дунд"
+
+msgid "contextmenu_right"
+msgstr "Баруун"
+
+msgid "contextmenu_full"
+msgstr "Тэгшилсэн"
+
+msgid "insertdatetime_date_fmt"
+msgstr "%Y.%m.%d"
+
+msgid "insertdatetime_time_fmt"
+msgstr "%H:%M:%S"
+
+msgid "insertdatetime_insertdate_desc"
+msgstr "Огноо оруулах"
+
+msgid "insertdatetime_inserttime_desc"
+msgstr "Хугацаа оруулах"
+
+msgid "insertdatetime_months_long"
+msgstr "Хулгана,Үхэр,Бар,Туулай,Луу,Могой,Морь,Хонь,Бич,Тахиа,Нохой,Гахай"
+
+msgid "insertdatetime_months_short"
+msgstr "Хул,Үхэ,Бар,Туу,Луу,Мог,Мор,Хон,Бич,Тах,Нох,Гах"
+
+msgid "insertdatetime_day_long"
+msgstr "Ням,Даваа,Мягмар,Лхагва,Пүрэв,Баасан,Бямба,Ням"
+
+msgid "insertdatetime_day_short"
+msgstr "Ня,Да,Мя,Лх,Пү,Ба,Бя,Ня"
+
+msgid "print_print_desc"
+msgstr "Хэвлэх"
+
+msgid "preview_preview_desc"
+msgstr "Нягтлах"
+
+msgid "directionality_ltr_desc"
+msgstr "Зүүнээс баруун бичилт"
+
+msgid "directionality_rtl_desc"
+msgstr "Баруун зүүн бичилт"
+
+msgid "layer_insertlayer_desc"
+msgstr "Шинэ давхарга оруулах"
+
+msgid "layer_forward_desc"
+msgstr "Наашлуулах"
+
+msgid "layer_backward_desc"
+msgstr "Цаашлуулах"
+
+msgid "layer_absolute_desc"
+msgstr "Абсолют байршуулалт"
+
+msgid "layer_content"
+msgstr "Шинэ давхарга..."
+
+msgid "save_save_desc"
+msgstr "Хадгалах"
+
+msgid "save_cancel_desc"
+msgstr "Бүх өөрчлөлтийг хаях"
+
+msgid "nonbreaking_nonbreaking_desc"
+msgstr "Хамгаалалттай хоосон зай оруулах"
+
+msgid "iespell_iespell_desc"
+msgstr "Дүрмийн алдаа шалгалт"
+
+msgid "iespell_download"
+msgstr "ieSpell олдсонгүй. Та суулгахыг хүсэж байна уу?"
+
+msgid "advhr_advhr_desc"
+msgstr "Тусгаарлагч"
+
+msgid "advhr_delta_width"
+msgstr ""
+
+msgid "advhr_delta_height"
+msgstr ""
+
+msgid "advhr_dlg_width"
+msgstr "Өргөн"
+
+msgid "advhr_dlg_size"
+msgstr "Өндөр"
+
+msgid "advhr_dlg_noshade"
+msgstr "Сүүдэргүй"
+
+msgid "emotions_emotions_desc"
+msgstr "Сэтгэл хөдлөл"
+
+msgid "emotions_delta_width"
+msgstr ""
+
+msgid "emotions_delta_height"
+msgstr ""
+
+msgid "emotions_dlg_title"
+msgstr "Сэтгэл хөдлөл оруулах"
+
+msgid "emotions_dlg_desc"
+msgstr "Сэтгэл хөдлөл"
+
+msgid "emotions_dlg_cool"
+msgstr "Дориун"
+
+msgid "emotions_dlg_cry"
+msgstr "Уйлах"
+
+msgid "emotions_dlg_embarassed"
+msgstr "Сандарсан"
+
+msgid "emotions_dlg_foot_in_mouth"
+msgstr "Хууртагдах"
+
+msgid "emotions_dlg_frown"
+msgstr "Хөмсөг зангидах"
+
+msgid "emotions_dlg_innocent"
+msgstr "Буруугүй"
+
+msgid "emotions_dlg_kiss"
+msgstr "Үнсэх"
+
+msgid "emotions_dlg_laughing"
+msgstr "Инээх"
+
+msgid "emotions_dlg_money_mouth"
+msgstr "Мөнгө"
+
+msgid "emotions_dlg_sealed"
+msgstr "Битүүмжилсэн"
+
+msgid "emotions_dlg_smile"
+msgstr "Инээх"
+
+msgid "emotions_dlg_surprised"
+msgstr "Гайхсан"
+
+msgid "emotions_dlg_tongue_out"
+msgstr "Хэлээ гаргах"
+
+msgid "emotions_dlg_undecided"
+msgstr "Шийдээгүй"
+
+msgid "emotions_dlg_wink"
+msgstr "Нүд ирмэх"
+
+msgid "emotions_dlg_yell"
+msgstr "Орилох"
+
+msgid "searchreplace_search_desc"
+msgstr "Хайх"
+
+msgid "searchreplace_replace_desc"
+msgstr "Хайх/орлуулах"
+
+msgid "searchreplace_delta_width"
+msgstr ""
+
+msgid "searchreplace_delta_height"
+msgstr ""
+
+msgid "searchreplace_dlg_searchnext_desc"
+msgstr "Цааш хайх"
+
+msgid "searchreplace_dlg_notfound"
+msgstr "Хайлт төгсгөлд хүрэв. Тэмдэгт мөр олдсонгүй."
+
+msgid "searchreplace_dlg_search_title"
+msgstr "Хайх"
+
+msgid "searchreplace_dlg_replace_title"
+msgstr "Хайх/орлуулах"
+
+msgid "searchreplace_dlg_allreplaced"
+msgstr "Тэмдэгт мөрийн бүх тохиолдлууд орлуулагдсан."
+
+msgid "searchreplace_dlg_findwhat"
+msgstr "Хайх бичвэр"
+
+msgid "searchreplace_dlg_replacewith"
+msgstr "Орлуулага"
+
+msgid "searchreplace_dlg_direction"
+msgstr "Хайх чиглэл"
+
+msgid "searchreplace_dlg_up"
+msgstr "Гэдрэг"
+
+msgid "searchreplace_dlg_down"
+msgstr "Цааш"
+
+msgid "searchreplace_dlg_mcase"
+msgstr "Том/Жижиг бичилт ялгах"
+
+msgid "searchreplace_dlg_findnext"
+msgstr "Цааш хайх"
+
+msgid "searchreplace_dlg_replace"
+msgstr "Орлуул"
+
+msgid "searchreplace_dlg_replaceall"
+msgstr "Бүгдийг орлуул"
+
+msgid "ploneimage_image_desc"
+msgstr "Зураг оруулах/орлуулах"
+
+msgid "ploneimage_delta_width"
+msgstr ""
+
+msgid "ploneimage_delta_height"
+msgstr ""
+
+msgid "ploneimage_dlg_tab_general"
+msgstr "Ерөнхий"
+
+msgid "ploneimage_dlg_tab_appearance"
+msgstr "Харагдац"
+
+msgid "ploneimage_dlg_tab_advanced"
+msgstr "Өргөтгөсөн"
+
+msgid "ploneimage_dlg_general"
+msgstr "Ерөнхий"
+
+msgid "ploneimage_dlg_title"
+msgstr "Гарчиг"
+
+msgid "ploneimage_dlg_preview"
+msgstr "Нягтлан харах"
+
+msgid "ploneimage_dlg_constrain_proportions"
+msgstr "Хэмжээс"
+
+msgid "ploneimage_dlg_langdir"
+msgstr "Бичгийн чиглэл"
+
+msgid "ploneimage_dlg_langcode"
+msgstr "Хэлний код"
+
+msgid "ploneimage_dlg_long_desc"
+msgstr "Дэлгэрэнгүй тайлбар"
+
+msgid "ploneimage_dlg_style"
+msgstr "Формат"
+
+msgid "ploneimage_dlg_classes"
+msgstr "Анги"
+
+msgid "ploneimage_dlg_ltr"
+msgstr "Зүүнээс баруун"
+
+msgid "ploneimage_dlg_rtl"
+msgstr "Баруунаас зүүн"
+
+msgid "ploneimage_dlg_id"
+msgstr "ТТ"
+
+msgid "ploneimage_dlg_map"
+msgstr "Бүсчилсан зураг"
+
+msgid "ploneimage_dlg_swap_image"
+msgstr "Зураг солих"
+
+msgid "ploneimage_dlg_alt_image"
+msgstr "Хоёрдогч зураг"
+
+msgid "ploneimage_dlg_mouseover"
+msgstr "Хулгана ороход"
+
+msgid "ploneimage_dlg_mouseout"
+msgstr "Хулгана гарахад"
+
+msgid "ploneimage_dlg_misc"
+msgstr "Янз бүрийн зүйлс"
+
+msgid "ploneimage_dlg_example_img"
+msgstr "Нягтлан харах"
+
+msgid "ploneimage_dlg_missing_alt"
+msgstr "Та үнэхээр тайлбар хийхгүй байхыг хүсэж байна уу? Зарим хөгжлийн бэрхшээлтэй эсвэл бичвэр хөтөч ашиглаж буй эсвэл зураг харуулахыг хаасан хэрэглэгчид хандах боломжгүйг анхаарна уу."
+
+msgid "ploneimage_dlg_dialog_title"
+msgstr "Зураг оруулах/засах"
+
+msgid "ploneimage_dlg_src"
+msgstr "Хаяг"
+
+msgid "ploneimage_dlg_alt"
+msgstr "Тайлбар"
+
+msgid "ploneimage_dlg_list"
+msgstr "Зургийн жагсаалт"
+
+msgid "ploneimage_dlg_border"
+msgstr "Хүрээ"
+
+msgid "ploneimage_dlg_dimensions"
+msgstr "Хэмжээс"
+
+msgid "ploneimage_dlg_vspace"
+msgstr "Босоо алслалт"
+
+msgid "ploneimage_dlg_hspace"
+msgstr "Хэвтээ алслалт"
+
+msgid "ploneimage_dlg_align"
+msgstr "Жигдрүүлэлт"
+
+msgid "ploneimage_dlg_align_baseline"
+msgstr "Мөр"
+
+msgid "ploneimage_dlg_align_top"
+msgstr "Дээр"
+
+msgid "ploneimage_dlg_align_middle"
+msgstr "Дунд"
+
+msgid "ploneimage_dlg_align_bottom"
+msgstr "Доор"
+
+msgid "ploneimage_dlg_align_texttop"
+msgstr "Бичвэрийн дээр"
+
+msgid "ploneimage_dlg_align_textbottom"
+msgstr "Бичвэрийн доор"
+
+msgid "ploneimage_dlg_align_left"
+msgstr "Зүүн"
+
+msgid "ploneimage_dlg_align_right"
+msgstr "Баруун"
+
+msgid "ploneimage_dlg_image_list"
+msgstr "Зургийн жагсаалт"
+
+msgid "plonelink_link_desc"
+msgstr "Холбоос оруулах/засах"
+
+msgid "plonelink_delta_width"
+msgstr ""
+
+msgid "plonelink_delta_height"
+msgstr ""
+
+msgid "plonelink_dlg_title"
+msgstr "Холбоос оруулах/засах"
+
+msgid "plonelink_dlg_url"
+msgstr "Хаяг"
+
+msgid "plonelink_dlg_target"
+msgstr "Цонх"
+
+msgid "plonelink_dlg_titlefield"
+msgstr "Гарчиг"
+
+msgid "plonelink_dlg_is_email"
+msgstr "Хаяг дээр Имэйл хаяг байх шиг харагдана. Та түүнд шаардлагатай mailto: нэмэхийг хүсэж байна уу?"
+
+msgid "plonelink_dlg_is_external"
+msgstr "Хаяг дээр гадаад холбоос байгаа харагдана. Та зөв холбоос болгохын тулд http:// нэмэхийг хүсэж байна уу?"
+
+msgid "plonelink_dlg_list"
+msgstr "Холбоосын жагсаалт"
+
+msgid "plonelink_dlg_general_tab"
+msgstr "Ерөнхий"
+
+msgid "plonelink_dlg_popup_tab"
+msgstr "Попап"
+
+msgid "plonelink_dlg_events_tab"
+msgstr "Үзэгдэл"
+
+msgid "plonelink_dlg_advanced_tab"
+msgstr "Өргөтгөсөн"
+
+msgid "plonelink_dlg_general_props"
+msgstr "Ерөнхий шинж"
+
+msgid "plonelink_dlg_popup_props"
+msgstr "Попап-шинж"
+
+msgid "plonelink_dlg_event_props"
+msgstr "Үзэгдэл"
+
+msgid "plonelink_dlg_advanced_props"
+msgstr "Өргөтгөсөн шинж"
+
+msgid "plonelink_dlg_popup_opts"
+msgstr "Сонголт"
+
+msgid "plonelink_dlg_anchor_names"
+msgstr "Гадас"
+
+msgid "plonelink_dlg_target_same"
+msgstr "Тухайн цонх/фрэймд нээх"
+
+msgid "plonelink_dlg_target_parent"
+msgstr "Эх цонх/фрэймд нээх"
+
+msgid "plonelink_dlg_target_top"
+msgstr "Хамгийн дээд цонх/фрэймд нээх"
+
+msgid "plonelink_dlg_target_blank"
+msgstr "Шинэ цонхонд нээх"
+
+msgid "plonelink_dlg_popup"
+msgstr "Жаваскрипт-попап"
+
+msgid "plonelink_dlg_popup_url"
+msgstr "Попап-хаяг"
+
+msgid "plonelink_dlg_popup_name"
+msgstr "Цонхны нэр"
+
+msgid "plonelink_dlg_popup_return"
+msgstr "Попап байсан ч холбоосыг дагана"
+
+msgid "plonelink_dlg_popup_scrollbars"
+msgstr "Гүйлгэгч харуулах"
+
+msgid "plonelink_dlg_popup_statusbar"
+msgstr "Төлөв самбар харуулах"
+
+msgid "plonelink_dlg_popup_toolbar"
+msgstr "Багаж самбар харуулах"
+
+msgid "plonelink_dlg_popup_menubar"
+msgstr "Хөтөчийн цэс харуулах"
+
+msgid "plonelink_dlg_popup_location"
+msgstr "Хаягийн самбар харуулах"
+
+msgid "plonelink_dlg_popup_resizable"
+msgstr "Цонх томруулахыг зөвшөөрөх"
+
+msgid "plonelink_dlg_popup_dependent"
+msgstr "Эх цонхноос хамааралтай (Зөвхөн Mozilla/Firefox)"
+
+msgid "plonelink_dlg_popup_size"
+msgstr "Хэмжээ"
+
+msgid "plonelink_dlg_popup_position"
+msgstr "Байрлал (X/Y)"
+
+msgid "plonelink_dlg_id"
+msgstr "ТТ"
+
+msgid "plonelink_dlg_style"
+msgstr "Формат"
+
+msgid "plonelink_dlg_classes"
+msgstr "Анги"
+
+msgid "plonelink_dlg_target_name"
+msgstr "Товлосон хуудасны нэр"
+
+msgid "plonelink_dlg_langdir"
+msgstr "Бичгийн чиглэл"
+
+msgid "plonelink_dlg_target_langcode"
+msgstr "Товлосон хуудасны хэл"
+
+msgid "plonelink_dlg_langcode"
+msgstr "Хэлний код"
+
+msgid "plonelink_dlg_encoding"
+msgstr "Товлосон хуудасны кодчилол"
+
+msgid "plonelink_dlg_mime"
+msgstr "Товлосон хуудасны MIME төрөл"
+
+msgid "plonelink_dlg_rel"
+msgstr "Товлосон холбоосоос хуудасны холболт"
+
+msgid "plonelink_dlg_rev"
+msgstr "Хуудаснаас товлосон холбоосоос холболт"
+
+msgid "plonelink_dlg_tabindex"
+msgstr "Табулатор индекс"
+
+msgid "plonelink_dlg_accesskey"
+msgstr "Товчилбор"
+
+msgid "plonelink_dlg_ltr"
+msgstr "Зүүнээс баруун"
+
+msgid "plonelink_dlg_rtl"
+msgstr "Баруунаас зүүн"
+
+msgid "plonelink_dlg_link_list"
+msgstr "Холбоосын жагсаалт"
+
+msgid "xhtmlxtras_cite_desc"
+msgstr "Ишлэл"
+
+msgid "xhtmlxtras_abbr_desc"
+msgstr "Товчлол"
+
+msgid "xhtmlxtras_acronym_desc"
+msgstr "Товчилсон үг"
+
+msgid "xhtmlxtras_del_desc"
+msgstr "Устсан бичвэр Text"
+
+msgid "xhtmlxtras_ins_desc"
+msgstr "Орсон бичвэр"
+
+msgid "xhtmlxtras_attribs_desc"
+msgstr "Атрибут оруулах/засах"
+
+msgid "xhtmlxtras_cite_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_cite_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_abbr_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_abbr_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_acronym_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_acronym_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_del_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_del_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_ins_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_ins_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_attribs_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_attribs_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_dlg_attribute_label_title"
+msgstr "Гарчиг"
+
+msgid "xhtmlxtras_dlg_attribute_label_id"
+msgstr "ТТ"
+
+msgid "xhtmlxtras_dlg_attribute_label_class"
+msgstr "Анги"
+
+msgid "xhtmlxtras_dlg_attribute_label_style"
+msgstr "Хэлбэржүүлэлт"
+
+msgid "xhtmlxtras_dlg_attribute_label_cite"
+msgstr "Эх материал"
+
+msgid "xhtmlxtras_dlg_attribute_label_datetime"
+msgstr "Цаг/Огноо"
+
+msgid "xhtmlxtras_dlg_attribute_label_langdir"
+msgstr "Хэлний чиглэл"
+
+msgid "xhtmlxtras_dlg_attribute_option_ltr"
+msgstr "Зүүнээс баруун"
+
+msgid "xhtmlxtras_dlg_attribute_option_rtl"
+msgstr "Баруунаас зүүн"
+
+msgid "xhtmlxtras_dlg_attribute_label_langcode"
+msgstr "Хэл"
+
+msgid "xhtmlxtras_dlg_attribute_label_tabindex"
+msgstr "Табулатор индекс"
+
+msgid "xhtmlxtras_dlg_attribute_label_accesskey"
+msgstr "Товчилбор"
+
+msgid "xhtmlxtras_dlg_attribute_events_tab"
+msgstr "Үзэгдэл"
+
+msgid "xhtmlxtras_dlg_attribute_attrib_tab"
+msgstr "Атрибут"
+
+msgid "xhtmlxtras_dlg_general_tab"
+msgstr "Ерөнхий"
+
+msgid "xhtmlxtras_dlg_attrib_tab"
+msgstr "Атрибут"
+
+msgid "xhtmlxtras_dlg_events_tab"
+msgstr "Үзэгдэл"
+
+msgid "xhtmlxtras_dlg_fieldset_general_tab"
+msgstr "Ерөнхий тохиргоо"
+
+msgid "xhtmlxtras_dlg_fieldset_attrib_tab"
+msgstr "Атрибут"
+
+msgid "xhtmlxtras_dlg_fieldset_events_tab"
+msgstr "Үзэгдэл"
+
+msgid "xhtmlxtras_dlg_title_ins_element"
+msgstr "Буулгасан бичвэр"
+
+msgid "xhtmlxtras_dlg_title_del_element"
+msgstr "Устсан бичвэр"
+
+msgid "xhtmlxtras_dlg_title_acronym_element"
+msgstr "Товчилсон үг"
+
+msgid "xhtmlxtras_dlg_title_abbr_element"
+msgstr "Товчлол"
+
+msgid "xhtmlxtras_dlg_title_cite_element"
+msgstr "Эх материал"
+
+msgid "xhtmlxtras_dlg_remove"
+msgstr "Устгах"
+
+msgid "xhtmlxtras_dlg_insert_date"
+msgstr "Идэвхтэй цаг/огноо буулгах"
+
+msgid "xhtmlxtras_dlg_option_ltr"
+msgstr "Зүүнээс баруун"
+
+msgid "xhtmlxtras_dlg_option_rtl"
+msgstr "Баруунаас зүүн"
+
+msgid "xhtmlxtras_dlg_attribs_title"
+msgstr "Атрибут оруулах/засварлах"
+
+msgid "style_desc"
+msgstr "CSS-Styles засах"
+
+msgid "style_delta_width"
+msgstr ""
+
+msgid "style_delta_height"
+msgstr ""
+
+msgid "style_dlg_title"
+msgstr "CSS-Styles засварлах"
+
+msgid "style_dlg_apply"
+msgstr "Хэрэглэх"
+
+msgid "style_dlg_text_tab"
+msgstr "Бичвэр"
+
+msgid "style_dlg_background_tab"
+msgstr "Дэвсгэр"
+
+msgid "style_dlg_block_tab"
+msgstr "Блок"
+
+msgid "style_dlg_box_tab"
+msgstr "Хайрцаг"
+
+msgid "style_dlg_border_tab"
+msgstr "Хүрээ"
+
+msgid "style_dlg_list_tab"
+msgstr "Жагсаалт"
+
+msgid "style_dlg_positioning_tab"
+msgstr "Байршил"
+
+msgid "style_dlg_text_props"
+msgstr "Бичвэр"
+
+msgid "style_dlg_text_font"
+msgstr "Фонт"
+
+msgid "style_dlg_text_size"
+msgstr "Хэмжээ"
+
+msgid "style_dlg_text_weight"
+msgstr "Өргөн нарийн"
+
+msgid "style_dlg_text_style"
+msgstr "Хэлбэр"
+
+msgid "style_dlg_text_variant"
+msgstr "Вариант"
+
+msgid "style_dlg_text_lineheight"
+msgstr "Мөрний өндөр"
+
+msgid "style_dlg_text_case"
+msgstr "Бичвэр"
+
+msgid "style_dlg_text_color"
+msgstr "Өнгө"
+
+msgid "style_dlg_text_decoration"
+msgstr "Чимэглэл"
+
+msgid "style_dlg_text_overline"
+msgstr "дээгүүр нь зурсан"
+
+msgid "style_dlg_text_underline"
+msgstr "доогуур нь зурсан"
+
+msgid "style_dlg_text_striketrough"
+msgstr "дарсан"
+
+msgid "style_dlg_text_blink"
+msgstr "анивчилт"
+
+msgid "style_dlg_text_none"
+msgstr "байхгүй"
+
+msgid "style_dlg_background_color"
+msgstr "Дэвсгэр өнгө"
+
+msgid "style_dlg_background_image"
+msgstr "Дэвсгэр зураг"
+
+msgid "style_dlg_background_repeat"
+msgstr "Давталт"
+
+msgid "style_dlg_background_attachment"
+msgstr "Усан тэмдгийн эффект"
+
+msgid "style_dlg_background_hpos"
+msgstr "Байрлал X"
+
+msgid "style_dlg_background_vpos"
+msgstr "Байрлал Y"
+
+msgid "style_dlg_block_wordspacing"
+msgstr "Үг хоорондын зай"
+
+msgid "style_dlg_block_letterspacing"
+msgstr "Үсэг хоорондын зай"
+
+msgid "style_dlg_block_vertical_alignment"
+msgstr "Босоо жигдрүүлэлт"
+
+msgid "style_dlg_block_text_align"
+msgstr "Жигдрүүлэлт"
+
+msgid "style_dlg_block_text_indent"
+msgstr "Догол мөр"
+
+msgid "style_dlg_block_whitespace"
+msgstr "Автомат мөр ороолт"
+
+msgid "style_dlg_block_display"
+msgstr "Ороох хэлбэр"
+
+msgid "style_dlg_box_width"
+msgstr "Өргөн"
+
+msgid "style_dlg_box_height"
+msgstr "Өндөр"
+
+msgid "style_dlg_box_float"
+msgstr "Гүйлгэлт"
+
+msgid "style_dlg_box_clear"
+msgstr "Гүйлгэлт хаах"
+
+msgid "style_dlg_padding"
+msgstr "Дотоод зай"
+
+msgid "style_dlg_same"
+msgstr "Бүгд ижил"
+
+msgid "style_dlg_top"
+msgstr "Дээр"
+
+msgid "style_dlg_right"
+msgstr "Баруун"
+
+msgid "style_dlg_bottom"
+msgstr "Доор"
+
+msgid "style_dlg_left"
+msgstr "Зүүн"
+
+msgid "style_dlg_margin"
+msgstr "Гадаад зай"
+
+msgid "style_dlg_style"
+msgstr "Формат"
+
+msgid "style_dlg_width"
+msgstr "Өргөн"
+
+msgid "style_dlg_height"
+msgstr "Өндөр"
+
+msgid "style_dlg_color"
+msgstr "Бичвэрийн өнгө"
+
+msgid "style_dlg_list_type"
+msgstr "Тоочилтын цэгийн хэлбэр"
+
+msgid "style_dlg_bullet_image"
+msgstr "График тоочилтын цэг"
+
+msgid "style_dlg_position"
+msgstr "Байршил"
+
+msgid "style_dlg_positioning_type"
+msgstr "Байршлын төрөл"
+
+msgid "style_dlg_visibility"
+msgstr "Харагдахуйц"
+
+msgid "style_dlg_zindex"
+msgstr "Z утга"
+
+msgid "style_dlg_overflow"
+msgstr "Хэтэрсэн хэмжээний харьцаа"
+
+msgid "style_dlg_placement"
+msgstr "Байршил"
+
+msgid "style_dlg_clip"
+msgstr "Тайрдас"
+
+msgid "paste_paste_text_desc"
+msgstr "Энгийн бичвэрээр буулгах"
+
+msgid "paste_paste_word_desc"
+msgstr "Хэлбэржүүлэлттэй буулгах (Word-с)"
+
+msgid "paste_selectall_desc"
+msgstr "Бүгдийг сонгох"
+
+msgid "paste_dlg_text_title"
+msgstr "Та бичвэр оруулахыг хүсвэл Ctrl+V дээр дарна уу."
+
+msgid "paste_dlg_text_linebreaks"
+msgstr "Мөр таслалтыг үлдээнэ"
+
+msgid "paste_dlg_word_title"
+msgstr "Та бичвэр оруулахыг хүсвэл Ctrl+V дээр дарна уу."
+
+msgid "table_desc"
+msgstr "Хүснэгт үүсгэх"
+
+msgid "table_row_before_desc"
+msgstr "Дээр нь мөр оруулах"
+
+msgid "table_row_after_desc"
+msgstr "Доор нь мөр оруулах"
+
+msgid "table_delete_row_desc"
+msgstr "Мөр устгах"
+
+msgid "table_col_before_desc"
+msgstr "Зүүн талд нь багана оруулах"
+
+msgid "table_col_after_desc"
+msgstr "Баруун талд нь багана оруулах"
+
+msgid "table_delete_col_desc"
+msgstr "Багана устгах"
+
+msgid "table_split_cells_desc"
+msgstr "Нэгтгэсэн нүдийг салгах"
+
+msgid "table_merge_cells_desc"
+msgstr "Нүд нэгтгэх"
+
+msgid "table_row_desc"
+msgstr "Мөрийн шинжүүд"
+
+msgid "table_cell_desc"
+msgstr "Нүдний шинжүүд"
+
+msgid "table_props_desc"
+msgstr "Хүснэгтийн шинжүүд"
+
+msgid "table_paste_row_before_desc"
+msgstr "Завсрын хадгалагчаас мөрийг дээр нь буулгах"
+
+msgid "table_paste_row_after_desc"
+msgstr "Завсрын хадгалагчаас мөрийг доор нь буулгах"
+
+msgid "table_cut_row_desc"
+msgstr "Мөр тасдаж авах уу?"
+
+msgid "table_copy_row_desc"
+msgstr "Мөр хуулах"
+
+msgid "table_del"
+msgstr "Хүснэгт устгах"
+
+msgid "table_row"
+msgstr "Мөр"
+
+msgid "table_col"
+msgstr "Багана"
+
+msgid "table_cell"
+msgstr "Нүд"
+
+msgid "table_rowprops_delta_width"
+msgstr ""
+
+msgid "table_rowprops_delta_height"
+msgstr ""
+
+msgid "table_cellprops_delta_width"
+msgstr ""
+
+msgid "table_cellprops_delta_height"
+msgstr ""
+
+msgid "table_table_delta_width"
+msgstr ""
+
+msgid "table_table_delta_height"
+msgstr ""
+
+msgid "table_merge_cells_delta_width"
+msgstr ""
+
+msgid "table_merge_cells_delta_height"
+msgstr ""
+
+msgid "table_dlg_general_tab"
+msgstr "Ерөнхий"
+
+msgid "table_dlg_advanced_tab"
+msgstr "Өргөтгөсөн"
+
+msgid "table_dlg_general_props"
+msgstr "Ерөнхий тохиргоо"
+
+msgid "table_dlg_advanced_props"
+msgstr "Өргөтгөсөн тохиргоо"
+
+msgid "table_dlg_rowtype"
+msgstr "Мөрийн төрөл"
+
+msgid "table_dlg_title"
+msgstr "Хүснэгт оруулах/засах"
+
+msgid "table_dlg_width"
+msgstr "Өргөн"
+
+msgid "table_dlg_height"
+msgstr "Өндөр"
+
+msgid "table_dlg_cols"
+msgstr "Багана"
+
+msgid "table_dlg_rows"
+msgstr "Мөр"
+
+msgid "table_dlg_cellspacing"
+msgstr "Нүдний алслалт"
+
+msgid "table_dlg_cellpadding"
+msgstr "Нүдний дотоод алслалт"
+
+msgid "table_dlg_border"
+msgstr "Хүрээ"
+
+msgid "table_dlg_align"
+msgstr "Жигдрүүлэлт"
+
+msgid "table_dlg_align_default"
+msgstr "Өгөгдмөл"
+
+msgid "table_dlg_align_left"
+msgstr "Зүүн"
+
+msgid "table_dlg_align_right"
+msgstr "Баруун"
+
+msgid "table_dlg_align_middle"
+msgstr "Голд"
+
+msgid "table_dlg_row_title"
+msgstr "Мөрийн шинж"
+
+msgid "table_dlg_cell_title"
+msgstr "Нүдний шинж"
+
+msgid "table_dlg_cell_type"
+msgstr "Нүдний төрөл"
+
+msgid "table_dlg_valign"
+msgstr "Босоо жигдрүүлэлт"
+
+msgid "table_dlg_align_top"
+msgstr "Дээр"
+
+msgid "table_dlg_align_bottom"
+msgstr "Доор"
+
+msgid "table_dlg_bordercolor"
+msgstr "Хүрээний өнгө"
+
+msgid "table_dlg_bgcolor"
+msgstr "Дэвсгэр өнгө"
+
+msgid "table_dlg_merge_cells_title"
+msgstr "Нүд нэгтгэх"
+
+msgid "table_dlg_id"
+msgstr "ТТ"
+
+msgid "table_dlg_style"
+msgstr "Хэлбэржүүлэлт"
+
+msgid "table_dlg_langdir"
+msgstr "Бичгийн чиглэл"
+
+msgid "table_dlg_langcode"
+msgstr "Хэлний код"
+
+msgid "table_dlg_mime"
+msgstr "Агуулгын MIME-төрөл"
+
+msgid "table_dlg_ltr"
+msgstr "Зүүнээс баруун"
+
+msgid "table_dlg_rtl"
+msgstr "Баруунаас зүүн"
+
+msgid "table_dlg_bgimage"
+msgstr "Дэвсгэр зураг"
+
+msgid "table_dlg_summary"
+msgstr "Дүгнэлт"
+
+msgid "table_dlg_td"
+msgstr "Бичвэр нүд"
+
+msgid "table_dlg_th"
+msgstr "Гарчиг"
+
+msgid "table_dlg_cell_cell"
+msgstr "Энэ нүдийг өөрчлөх"
+
+msgid "table_dlg_cell_row"
+msgstr "Энэ мөрөн дөх бүх нүдийг өөрчлөх"
+
+msgid "table_dlg_cell_all"
+msgstr "Хүснэгтийн бүх нүдийг өөрчлөх"
+
+msgid "table_dlg_row_row"
+msgstr "Энэ мөрийг өөрчлөх"
+
+msgid "table_dlg_row_odd"
+msgstr "Сондгой мөрүүдийг өөрчлөх"
+
+msgid "table_dlg_row_even"
+msgstr "Тэгш мөрүүдийг өөрчлөх"
+
+msgid "table_dlg_row_all"
+msgstr "Бүх мөрийн өөрчлөх"
+
+msgid "table_dlg_thead"
+msgstr "Хүснэгтийн толгой"
+
+msgid "table_dlg_tbody"
+msgstr "Хүснэгтийн агуулга"
+
+msgid "table_dlg_tfoot"
+msgstr "Хүснэгтийн хөл"
+
+msgid "table_dlg_scope"
+msgstr "Уялдаа"
+
+msgid "table_dlg_rowgroup"
+msgstr "Босоо бүлэглэх"
+
+msgid "table_dlg_colgroup"
+msgstr "Хэвтээ бүлэглэх"
+
+msgid "table_dlg_col_limit"
+msgstr "Баганын тооны хязгаар {$cols}-с хэтэрлээ."
+
+msgid "table_dlg_row_limit"
+msgstr "Мөрийн тооны хязгаар {$rows}-с хэтэрлээ."
+
+msgid "table_dlg_cell_limit"
+msgstr "Нүдний тооны хязгаар {$cells}-с хэтэрлээ."
+
+msgid "table_dlg_missing_scope"
+msgstr "Та энэ гарчгийн хувьд үнэхээр тайлбар хийхгүй байхыг хүсэж байна уу? Зарим хөгжлийн бэрхшээлтэй хүмүүс хүснэгтийн агуулгыг ойлгоход хүндрэлтэй байх болно."
+
+msgid "table_dlg_caption"
+msgstr "Хүснэгтийн тайлбар"
+
+msgid "table_dlg_frame"
+msgstr "Фрэйм"
+
+msgid "table_dlg_frame_none"
+msgstr "байхгүй"
+
+msgid "table_dlg_frame_groups"
+msgstr "Бүлэг"
+
+msgid "table_dlg_frame_rows"
+msgstr "Мөр"
+
+msgid "table_dlg_frame_cols"
+msgstr "Багана"
+
+msgid "table_dlg_frame_all"
+msgstr "бүх"
+
+msgid "table_dlg_rules"
+msgstr "Шугам"
+
+msgid "table_dlg_rules_void"
+msgstr "void"
+
+msgid "table_dlg_rules_above"
+msgstr "дээр"
+
+msgid "table_dlg_rules_below"
+msgstr "доор"
+
+msgid "table_dlg_rules_hsides"
+msgstr "hsides"
+
+msgid "table_dlg_rules_lhs"
+msgstr "lhs"
+
+msgid "table_dlg_rules_rhs"
+msgstr "rhs"
+
+msgid "table_dlg_rules_vsides"
+msgstr "vsides"
+
+msgid "table_dlg_rules_box"
+msgstr "box"
+
+msgid "table_dlg_rules_border"
+msgstr "border"
+
+msgid "autosave_unload_msg"
+msgstr "Хэрэв та хуудсыг орхивол таны өөрчлөлтүүд хаягдана."
+
+msgid "fullscreen_desc"
+msgstr "Дэлгэц дүүрэн"
+
+msgid "media_desc"
+msgstr "Мультимедиа шигтгэх/засах"
+
+msgid "media_edit"
+msgstr "Мультимедиа шигтгээ засах"
+
+msgid "media_delta_width"
+msgstr ""
+
+msgid "media_delta_height"
+msgstr ""
+
+msgid "media_dlg_title"
+msgstr "Мультимедиа агуулга буулгах/ засварлах"
+
+msgid "media_dlg_general"
+msgstr "Ерөнхий"
+
+msgid "media_dlg_advanced"
+msgstr "Өргөтгөсөн"
+
+msgid "media_dlg_file"
+msgstr "Файл/URL"
+
+msgid "media_dlg_list"
+msgstr "Жагсаалт"
+
+msgid "media_dlg_size"
+msgstr "Хэмжээ"
+
+msgid "media_dlg_preview"
+msgstr "Нягтлах"
+
+msgid "media_dlg_constrain_proportions"
+msgstr "Харьцааг барих"
+
+msgid "media_dlg_type"
+msgstr "Төрөл"
+
+msgid "media_dlg_id"
+msgstr "Тт"
+
+msgid "media_dlg_name"
+msgstr "Нэр"
+
+msgid "media_dlg_class_name"
+msgstr "CSS-анги"
+
+msgid "media_dlg_vspace"
+msgstr "Босоо алслалт"
+
+msgid "media_dlg_hspace"
+msgstr "Хэвтээ алслалт"
+
+msgid "media_dlg_play"
+msgstr "Автоматаар тоглуулна"
+
+msgid "media_dlg_loop"
+msgstr "Давталт"
+
+msgid "media_dlg_menu"
+msgstr "Цэс харуулах"
+
+msgid "media_dlg_quality"
+msgstr "Чанар"
+
+msgid "media_dlg_scale"
+msgstr "Хуваарилалт"
+
+msgid "media_dlg_align"
+msgstr "Жигдрүүлэлт"
+
+msgid "media_dlg_salign"
+msgstr "S-Жигдрүүлэлт"
+
+msgid "media_dlg_wmode"
+msgstr "WMode"
+
+msgid "media_dlg_bgcolor"
+msgstr "Дэвсгэр"
+
+msgid "media_dlg_base"
+msgstr "Суурь"
+
+msgid "media_dlg_flashvars"
+msgstr "Флэйш хувьсагч"
+
+msgid "media_dlg_liveconnect"
+msgstr "SWLiveConnect"
+
+msgid "media_dlg_autohref"
+msgstr "AutoHREF"
+
+msgid "media_dlg_cache"
+msgstr "Завсрын хадгалагч"
+
+msgid "media_dlg_hidden"
+msgstr "Далдалсан"
+
+msgid "media_dlg_controller"
+msgstr "Controller"
+
+msgid "media_dlg_kioskmode"
+msgstr "Киоск горим"
+
+msgid "media_dlg_playeveryframe"
+msgstr "Фрэйм бүрийг тоглуулна"
+
+msgid "media_dlg_targetcache"
+msgstr "Зорилгыг түр хадгална"
+
+msgid "media_dlg_correction"
+msgstr "Засваргүй"
+
+msgid "media_dlg_enablejavascript"
+msgstr "JavaScript идэвхжүүлэх"
+
+msgid "media_dlg_starttime"
+msgstr "Эхлэх цаг"
+
+msgid "media_dlg_endtime"
+msgstr "Төгсөх цаг"
+
+msgid "media_dlg_href"
+msgstr "Href"
+
+msgid "media_dlg_qtsrcchokespeed"
+msgstr "Choke speed"
+
+msgid "media_dlg_target"
+msgstr "Товлосон"
+
+msgid "media_dlg_volume"
+msgstr "Дуу"
+
+msgid "media_dlg_autostart"
+msgstr "Автомат эхлэл"
+
+msgid "media_dlg_enabled"
+msgstr "Идэвхтэй"
+
+msgid "media_dlg_fullscreen"
+msgstr "Дэлгэц дүүрэн"
+
+msgid "media_dlg_invokeurls"
+msgstr "Дуудах URLs"
+
+msgid "media_dlg_mute"
+msgstr "Дуугүй"
+
+msgid "media_dlg_stretchtofit"
+msgstr "Харуулах мужийг сул байгаа зайд тааруулах"
+
+msgid "media_dlg_windowlessvideo"
+msgstr "Цонхгүй видео"
+
+msgid "media_dlg_balance"
+msgstr "Тэнцвэржүүлэлт"
+
+msgid "media_dlg_baseurl"
+msgstr "Үндсэн URL"
+
+msgid "media_dlg_captioningid"
+msgstr "Captioning id"
+
+msgid "media_dlg_currentmarker"
+msgstr "Идэвхтэй тэмдэглэгч"
+
+msgid "media_dlg_currentposition"
+msgstr "Идэвхтэй байрлал"
+
+msgid "media_dlg_defaultframe"
+msgstr "Фрэйм-өгөгдмөл тохиргоо"
+
+msgid "media_dlg_playcount"
+msgstr "Тоолуур"
+
+msgid "media_dlg_rate"
+msgstr "Rate"
+
+msgid "media_dlg_uimode"
+msgstr "UI горим"
+
+msgid "media_dlg_flash_options"
+msgstr "Флэйш-тохиргоо"
+
+msgid "media_dlg_qt_options"
+msgstr "Quicktime-тохиргоо"
+
+msgid "media_dlg_wmp_options"
+msgstr "Windows Media Player-тохиргоо"
+
+msgid "media_dlg_rmp_options"
+msgstr "Real Media Player-тохиргоо"
+
+msgid "media_dlg_shockwave_options"
+msgstr "Shockwave-тохиргоо"
+
+msgid "media_dlg_autogotourl"
+msgstr "Автоматаар очих URL"
+
+msgid "media_dlg_center"
+msgstr "Голлуулсан"
+
+msgid "media_dlg_imagestatus"
+msgstr "Зургийн төлөв"
+
+msgid "media_dlg_maintainaspect"
+msgstr "Зургийн харьцааг хадгалана"
+
+msgid "media_dlg_nojava"
+msgstr "Жавагүй"
+
+msgid "media_dlg_prefetch"
+msgstr "Prefetch"
+
+msgid "media_dlg_shuffle"
+msgstr "Санамсаргүйгээр тоглуулах"
+
+msgid "media_dlg_console"
+msgstr "Консол"
+
+msgid "media_dlg_numloop"
+msgstr "Давтах тоо"
+
+msgid "media_dlg_controls"
+msgstr "Удирдлага"
+
+msgid "media_dlg_scriptcallbacks"
+msgstr "Script callbacks"
+
+msgid "media_dlg_swstretchstyle"
+msgstr "Stretch style"
+
+msgid "media_dlg_swstretchhalign"
+msgstr "Stretch H-Жигдрүүлэлт"
+
+msgid "media_dlg_swstretchvalign"
+msgstr "Stretch V-Жигдрүүлэлт"
+
+msgid "media_dlg_sound"
+msgstr "Дуу"
+
+msgid "media_dlg_progress"
+msgstr "Явц"
+
+msgid "media_dlg_qtsrc"
+msgstr "QT Src"
+
+msgid "media_dlg_qt_stream_warn"
+msgstr "Өргөтгөсөн тохиргоон дахь 'QT Src' талбарт цацаж буй rtsp нөөцийг оруулж өгнө.\nМөн та тэнд цацаагүй нөөцийг нэмэх хэрэгтэй."
+
+msgid "media_dlg_align_top"
+msgstr "Дээр"
+
+msgid "media_dlg_align_right"
+msgstr "Баруун"
+
+msgid "media_dlg_align_bottom"
+msgstr "Доор"
+
+msgid "media_dlg_align_left"
+msgstr "Зүүн"
+
+msgid "media_dlg_align_center"
+msgstr "Голд"
+
+msgid "media_dlg_align_top_left"
+msgstr "Зүүн дээд"
+
+msgid "media_dlg_align_top_right"
+msgstr "Баруун дээд"
+
+msgid "media_dlg_align_bottom_left"
+msgstr "Зүүн доод"
+
+msgid "media_dlg_align_bottom_right"
+msgstr "Баруун доод"
+
+msgid "media_dlg_flv_options"
+msgstr "Флэйш видеоны тохиргоо"
+
+msgid "media_dlg_flv_scalemode"
+msgstr "Хуваарьт горим"
+
+msgid "media_dlg_flv_buffer"
+msgstr "Буфер"
+
+msgid "media_dlg_flv_startimage"
+msgstr "Эхлэл зураг"
+
+msgid "media_dlg_flv_starttime"
+msgstr "Эхлэх цаг"
+
+msgid "media_dlg_flv_defaultvolume"
+msgstr "Өгөгдмөл дуу"
+
+msgid "media_dlg_flv_hiddengui"
+msgstr "Далд GUI"
+
+msgid "media_dlg_flv_autostart"
+msgstr "Автомат эхлүүлэлт"
+
+msgid "media_dlg_flv_loop"
+msgstr "Давталт"
+
+msgid "media_dlg_flv_showscalemodes"
+msgstr "Хуваарьт горим харуулах"
+
+msgid "media_dlg_flv_smoothvideo"
+msgstr "Smooth Видео"
+
+msgid "media_dlg_flv_jscallback"
+msgstr "JS Callback"
+
+msgid "fullpage_desc"
+msgstr "Баримтын тодруулга"
+
+msgid "fullpage_delta_width"
+msgstr ""
+
+msgid "fullpage_delta_height"
+msgstr ""
+
+msgid "fullpage_dlg_title"
+msgstr "Баримтын тодруулга"
+
+msgid "fullpage_dlg_meta_tab"
+msgstr "Ерөнхий"
+
+msgid "fullpage_dlg_appearance_tab"
+msgstr "Харагдац"
+
+msgid "fullpage_dlg_advanced_tab"
+msgstr "Өргөтгөсөн"
+
+msgid "fullpage_dlg_meta_props"
+msgstr "Meta-мэдээлэл"
+
+msgid "fullpage_dlg_langprops"
+msgstr "Хэл ба кодчилол"
+
+msgid "fullpage_dlg_meta_title"
+msgstr "Гарчиг"
+
+msgid "fullpage_dlg_meta_keywords"
+msgstr "Keywords"
+
+msgid "fullpage_dlg_meta_description"
+msgstr "Тайлбар"
+
+msgid "fullpage_dlg_meta_robots"
+msgstr "Robots"
+
+msgid "fullpage_dlg_doctypes"
+msgstr "DocType"
+
+msgid "fullpage_dlg_langcode"
+msgstr "Хэлний код"
+
+msgid "fullpage_dlg_langdir"
+msgstr "Хэлний чиглэл"
+
+msgid "fullpage_dlg_ltr"
+msgstr "Зүүнээс баруун"
+
+msgid "fullpage_dlg_rtl"
+msgstr "Баруунаас зүүн"
+
+msgid "fullpage_dlg_xml_pi"
+msgstr "XML тодорхойлолт"
+
+msgid "fullpage_dlg_encoding"
+msgstr "Тэмдэгт кодчилол"
+
+msgid "fullpage_dlg_appearance_bgprops"
+msgstr "Дэвсгэрийн шинжүүд"
+
+msgid "fullpage_dlg_appearance_marginprops"
+msgstr "Эх биеийн эмжээр"
+
+msgid "fullpage_dlg_appearance_linkprops"
+msgstr "Холбоосын өнгө"
+
+msgid "fullpage_dlg_appearance_textprops"
+msgstr "Бичвэрийн шинжүүд"
+
+msgid "fullpage_dlg_bgcolor"
+msgstr "Дэвсгэр өнгө"
+
+msgid "fullpage_dlg_bgimage"
+msgstr "Дэвсгэр зураг"
+
+msgid "fullpage_dlg_left_margin"
+msgstr "Зүүн алслалт"
+
+msgid "fullpage_dlg_right_margin"
+msgstr "Баруун алслалт"
+
+msgid "fullpage_dlg_top_margin"
+msgstr "Дээд алслалт"
+
+msgid "fullpage_dlg_bottom_margin"
+msgstr "Доод алслалт"
+
+msgid "fullpage_dlg_text_color"
+msgstr "Бичвэрийн өнгө"
+
+msgid "fullpage_dlg_font_size"
+msgstr "Бичгийн хэмжээ"
+
+msgid "fullpage_dlg_font_face"
+msgstr "Фонт"
+
+msgid "fullpage_dlg_link_color"
+msgstr "Холбоосын өнгө"
+
+msgid "fullpage_dlg_hover_color"
+msgstr "Дээр нь хүрэх өнгө"
+
+msgid "fullpage_dlg_visited_color"
+msgstr "Зочилсон өнгө"
+
+msgid "fullpage_dlg_active_color"
+msgstr "Идэвхтэй өнгө"
+
+msgid "fullpage_dlg_textcolor"
+msgstr "Өнгө"
+
+msgid "fullpage_dlg_fontsize"
+msgstr "Бичгийн хэмжээ"
+
+msgid "fullpage_dlg_fontface"
+msgstr "Фонт"
+
+msgid "fullpage_dlg_meta_index_follow"
+msgstr "Индекслээд дагана"
+
+msgid "fullpage_dlg_meta_index_nofollow"
+msgstr "Индекслээд дагахгүй"
+
+msgid "fullpage_dlg_meta_noindex_follow"
+msgstr "Индекслэхгүй дагана"
+
+msgid "fullpage_dlg_meta_noindex_nofollow"
+msgstr "Индекслэхгүй дагахгүй"
+
+msgid "fullpage_dlg_appearance_style"
+msgstr "CSS-Stylesheet ба хэлбэржүүлэлт"
+
+msgid "fullpage_dlg_stylesheet"
+msgstr "CSS-Stylesheet"
+
+msgid "fullpage_dlg_style"
+msgstr "CSS-Stil"
+
+msgid "fullpage_dlg_author"
+msgstr "Зохиогч"
+
+msgid "fullpage_dlg_copyright"
+msgstr "Зохиогчийн эрх"
+
+msgid "fullpage_dlg_add"
+msgstr "Шинэ элемент нэмэх"
+
+msgid "fullpage_dlg_remove"
+msgstr "Сонгосон элементийг устгах"
+
+msgid "fullpage_dlg_moveup"
+msgstr "Сонгосон элементийг дээш хөдөлгөх"
+
+msgid "fullpage_dlg_movedown"
+msgstr "Сонгосон элементийг доош хөдөлгөх"
+
+msgid "fullpage_dlg_head_elements"
+msgstr "Гарчиг элемент"
+
+msgid "fullpage_dlg_info"
+msgstr "Мэдээлэл"
+
+msgid "fullpage_dlg_add_title"
+msgstr "Гарчиг-элемент"
+
+msgid "fullpage_dlg_add_meta"
+msgstr "Meta-элемент"
+
+msgid "fullpage_dlg_add_script"
+msgstr "Скрипт элемент"
+
+msgid "fullpage_dlg_add_style"
+msgstr "Загвар элемент"
+
+msgid "fullpage_dlg_add_link"
+msgstr "Холбоос элемент"
+
+msgid "fullpage_dlg_add_base"
+msgstr "Суурь элемент"
+
+msgid "fullpage_dlg_add_comment"
+msgstr "HTML-тайлбар"
+
+msgid "fullpage_dlg_title_element"
+msgstr "Бичвэр элемент"
+
+msgid "fullpage_dlg_script_element"
+msgstr "Script-элемент"
+
+msgid "fullpage_dlg_style_element"
+msgstr "Style-элемент"
+
+msgid "fullpage_dlg_base_element"
+msgstr "Суурь-элемент"
+
+msgid "fullpage_dlg_link_element"
+msgstr "Зүүн-элемент"
+
+msgid "fullpage_dlg_meta_element"
+msgstr "Баруун"
+
+msgid "fullpage_dlg_comment_element"
+msgstr "Тайлбар"
+
+msgid "fullpage_dlg_src"
+msgstr "Эх"
+
+msgid "fullpage_dlg_language"
+msgstr "Хэл"
+
+msgid "fullpage_dlg_href"
+msgstr "Href"
+
+msgid "fullpage_dlg_target"
+msgstr "Товлосон"
+
+msgid "fullpage_dlg_type"
+msgstr "Төрөл"
+
+msgid "fullpage_dlg_charset"
+msgstr "Тэмдэгтийн олонлог"
+
+msgid "fullpage_dlg_defer"
+msgstr "Defer"
+
+msgid "fullpage_dlg_media"
+msgstr "Медиа"
+
+msgid "fullpage_dlg_properties"
+msgstr "Тодруулга"
+
+msgid "fullpage_dlg_name"
+msgstr "Нэр"
+
+msgid "fullpage_dlg_value"
+msgstr "Утга"
+
+msgid "fullpage_dlg_content"
+msgstr "Агуулга"
+
+msgid "fullpage_dlg_rel"
+msgstr "Rel"
+
+msgid "fullpage_dlg_rev"
+msgstr "Rev"
+
+msgid "fullpage_dlg_hreflang"
+msgstr "Href lang"
+
+msgid "fullpage_dlg_general_props"
+msgstr "Ерөнхий"
+
+msgid "fullpage_dlg_advanced_props"
+msgstr "Өргөтгөсөн"
+
+msgid "template_desc"
+msgstr "Өмнө бэлтгэсэн хэвийн агуулгыг буулгах"
+
+msgid "template_dlg_title"
+msgstr "Хэв"
+
+msgid "template_dlg_label"
+msgstr "Хэв"
+
+msgid "template_dlg_desc_label"
+msgstr "Тайлбар"
+
+msgid "template_dlg_desc"
+msgstr "Бэлтгэсэн хэв оруулах"
+
+msgid "template_dlg_select"
+msgstr "Хэв сонгох"
+
+msgid "template_dlg_preview"
+msgstr "Нягтлан харах"
+
+msgid "template_dlg_warning"
+msgstr "Санамж: Хэв өөр шинэчлэхэд өгөгдлийн алдагдал гарч болзошгүй!"
+
+msgid "template_dlg_mdate_format"
+msgstr "%Y-%m-%d %H:%M:%S"
+
+msgid "template_dlg_cdate_format"
+msgstr "%Y-%m-%d %H:%M:%S"
+
+msgid "template_dlg_months_long"
+msgstr "Хулгана,Үхэр,Бар,Туулай,Луу,Могой,Морь,Хонь,Бич,Тахиа,Нохой,Гахай"
+
+msgid "template_dlg_months_short"
+msgstr "Хул,Үхэ,Бар,Туу,Луу,Мог,Мор,Хон,Бич,Тах,Нох,Гах"
+
+msgid "template_dlg_day_long"
+msgstr "Ням,Даваа,Мягмар,Лхагва,Пүрэв,Баасан,Бямба,Ням"
+
+msgid "template_dlg_day_short"
+msgstr "Ня,Да,Мя,Лх,Пү,Ба,Бя,Ня"
+
+msgid "visualchars_desc"
+msgstr "Удирдах тэмдэгт харуулах/эс харуулах."
+
+msgid "spellchecker_desc"
+msgstr "Дүрмийн алдаа шалгагч нээлттэй/хаалттай"
+
+msgid "spellchecker_menu"
+msgstr "Дүрмийн алдаа шалгагчийн тохиргоо"
+
+msgid "spellchecker_ignore_word"
+msgstr "Үг үл хэрэгсэх"
+
+msgid "spellchecker_ignore_words"
+msgstr "Бүгдийг үл хэрэгсэх"
+
+msgid "spellchecker_langs"
+msgstr "Хэл"
+
+msgid "spellchecker_wait"
+msgstr "Түр хүлээнэ үү..."
+
+msgid "spellchecker_sug"
+msgstr "Санал"
+
+msgid "spellchecker_no_sug"
+msgstr "Санал алга"
+
+msgid "spellchecker_no_mpell"
+msgstr "Дүрмийн алдаа олдсонгүй."
+
+msgid "pagebreak_desc"
+msgstr "Хуудас таслалт оруулах."
+

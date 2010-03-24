@@ -13,9 +13,9 @@ except ImportError:
 __WGET = os.environ.get('WGET', 'wget')
 
 AVAILABLE_LANGUAGES = set(
-    'ar bs ch da el es fa fr he hu ii it lv ms nl pl ro sc si sl sr '
-    'tr tw vi bg ca cs de en et eu fi gl hr ia is ja lt mk nb nn pt ru se '
-    'sk sq sv tt uk'.split())
+    'sq ar hy az eu be bn nb bs br bg ca ch zh hr cs da dv nl en et fi fr gl '
+    'de el gu he hi hu is id ia it ja ko lv lt lb mk ms ml mn se no nn fa pl '
+    'pt ps ro ru sc sr ii si sk sl es sv ta tt te th tr tw uk ur cy vi zu'.split())
 
 def main():
 
