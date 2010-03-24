@@ -1,14 +1,14 @@
-# TinyMCE için Türkçe dil paketi.
-# Version 8.6
+# TinyMCE için Türkçe dil  paketi.
+# Version 14.4
 #
-# TestTurkey
+# Adem UYGUN
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2009-07-18 00:00+0000\n"
-"Last-Translator: TestTurkey\n"
-"Language-Team: TestTurkey\n"
+"PO-Revision-Date: 2010-03-16 00:00+0000\n"
+"Last-Translator: Adem UYGUN\n"
+"Language-Team: Adem UYGUN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Domain: tinymce\n"
 
 msgid "common_edit_confirm"
-msgstr "Bu metin bölgesi için WYSIWYG modunu kullanmak istiyor musunuz?"
+msgstr "Metin girişi için WYSIWYG modunu kullanmak ister misiniz?"
 
 msgid "common_apply"
 msgstr "Uygula"
@@ -43,19 +43,19 @@ msgid "common_class_name"
 msgstr "Sınıf"
 
 msgid "common_not_set"
-msgstr "-- seçiniz --"
+msgstr "-- Ayarlanmadı --"
 
 msgid "common_clipboard_msg"
-msgstr "Kopyala/Kes/Yapıştır Mozilla ve Firefox'ta kullanılamaz.\nBu konuda daha fazla bilgi edinmek ister misiniz?"
+msgstr "Mozilla Firefox da Kes/Kopyala/Yapıştır özelliği kullanılmamaktadır. \nBu konu hakkında bilgi almak ister misiniz?"
 
 msgid "common_clipboard_no_support"
-msgstr "Şimdilik tarayıcınız tarafından desteklenmemektedir, bunun yerine kısayol tuşlarını kullanınız."
+msgstr "Şu an kullandığınız tarayıcınız klavye kısayollarını desteklememektedir."
 
 msgid "common_popup_blocked"
-msgstr "Üzgünüz, fakat popup-engelleyiciniz uygulama için gerekli bir pencerenin açılmasına izin vermedi. Bu aracı tam olarak kullanabilmek için popup engelleyicinizi kapatmanız gerekebilir."
+msgstr "Üzgünüz, açılır pencere engelleyiciniz uygulama için gerekli bir pencereyi engelledi. Bu aracı tam olarak kullanabilmek için açılır pencere engelleyicisini kapatınız."
 
 msgid "common_invalid_data"
-msgstr "Hata: Geçersiz değerler girildi, bunlar kırmızıyla işaretlendi."
+msgstr "Hata: Invalid values entered, these are marked in red."
 
 msgid "common_more_colors"
 msgstr "Daha fazla renk"
@@ -64,13 +64,13 @@ msgid "simple_bold_desc"
 msgstr "Kalın (Ctrl+B)"
 
 msgid "simple_italic_desc"
-msgstr "Eğik (Ctrl+I)"
+msgstr "İtalik (Ctrl+I)"
 
 msgid "simple_underline_desc"
-msgstr "Altı çizgili (Ctrl+U)"
+msgstr "Altı çizili (Ctrl+U)"
 
 msgid "simple_striketrough_desc"
-msgstr "Ortası çizgili"
+msgstr "Üstü çizili"
 
 msgid "simple_bullist_desc"
 msgstr "Sırasız liste"
@@ -82,7 +82,7 @@ msgid "simple_undo_desc"
 msgstr "Geri al (Ctrl+Z)"
 
 msgid "simple_redo_desc"
-msgstr "Tekrarla (Ctrl+Y)"
+msgstr "Yinele (Ctrl+Y)"
 
 msgid "simple_cleanup_desc"
 msgstr "Dağınık kodu temizle"
@@ -103,13 +103,13 @@ msgid "advanced_paragraph"
 msgstr "Paragraf"
 
 msgid "advanced_div"
-msgstr "Bölüm"
+msgstr "Blok"
 
 msgid "advanced_address"
 msgstr "Adres"
 
 msgid "advanced_pre"
-msgstr "Önformatlı"
+msgstr "Önceden biçimlendirilmiş"
 
 msgid "advanced_h1"
 msgstr "Başlık 1"
@@ -130,40 +130,40 @@ msgid "advanced_h6"
 msgstr "Başlık 6"
 
 msgid "advanced_blockquote"
-msgstr "Alıntı"
+msgstr "Blok alıntı"
 
 msgid "advanced_code"
 msgstr "Kod"
 
 msgid "advanced_samp"
-msgstr "Kod örneği"
+msgstr "Örnek kod"
 
 msgid "advanced_dt"
-msgstr "Tanım terimi "
+msgstr "İfade tanımlama "
 
 msgid "advanced_dd"
-msgstr "Tanım açıklaması"
+msgstr "Açıklama tanımlama"
 
 msgid "advanced_bold_desc"
 msgstr "Kalın (Ctrl+B)"
 
 msgid "advanced_italic_desc"
-msgstr "Eğik (Ctrl+I)"
+msgstr "İtalik (Ctrl+I)"
 
 msgid "advanced_underline_desc"
-msgstr "Altı çizgili (Ctrl+U)"
+msgstr "Altı çizili (Ctrl+U)"
 
 msgid "advanced_striketrough_desc"
-msgstr "Ortası çizgili"
+msgstr "Üstü çizili"
 
 msgid "advanced_justifyleft_desc"
-msgstr "Sola yasla"
+msgstr "Sola hizala"
 
 msgid "advanced_justifycenter_desc"
 msgstr "Ortala"
 
 msgid "advanced_justifyright_desc"
-msgstr "Sağa yasla"
+msgstr "Sağa hizala"
 
 msgid "advanced_justifyfull_desc"
 msgstr "İki yana yasla"
@@ -175,22 +175,22 @@ msgid "advanced_numlist_desc"
 msgstr "Sıralı liste"
 
 msgid "advanced_outdent_desc"
-msgstr "Dışa kaydır"
+msgstr "Girintiyi azalt"
 
 msgid "advanced_indent_desc"
-msgstr "İçe kaydır"
+msgstr "Girintiyi artır"
 
 msgid "advanced_undo_desc"
 msgstr "Geri al (Ctrl+Z)"
 
 msgid "advanced_redo_desc"
-msgstr "Tekrarla (Ctrl+Y)"
+msgstr "Yinele (Ctrl+Y)"
 
 msgid "advanced_link_desc"
 msgstr "Bağlantı ekle/düzenle"
 
 msgid "advanced_unlink_desc"
-msgstr "Bağlantıyı sil"
+msgstr "Bağlantıyı kaldır"
 
 msgid "advanced_image_desc"
 msgstr "Resim ekle/düzenle"
@@ -208,28 +208,28 @@ msgid "advanced_sup_desc"
 msgstr "Üstsimge"
 
 msgid "advanced_hr_desc"
-msgstr "Yatay çizgi ekle"
+msgstr "Yatay cetvel ekle"
 
 msgid "advanced_removeformat_desc"
-msgstr "Biçimi kaldır"
+msgstr "Biçimi temizle"
 
 msgid "advanced_custom1_desc"
-msgstr "Özel açıklamanızı buraya girin"
+msgstr "Özel açıklamalar burada"
 
 msgid "advanced_forecolor_desc"
-msgstr "Metin rengi seç"
+msgstr "Metin rengini seç"
 
 msgid "advanced_backcolor_desc"
-msgstr "Arkaplan rengi seç"
+msgstr "Arkaplan rengini seç"
 
 msgid "advanced_charmap_desc"
 msgstr "Özel karakter ekle"
 
 msgid "advanced_visualaid_desc"
-msgstr "Yönergeleri ve görünmez elemanları aç/kapa"
+msgstr "Kılavuz/görünmez nesneleri aç/kapat."
 
 msgid "advanced_anchor_desc"
-msgstr "Çengel noktası ekle"
+msgstr "Köprü ekle/düzenle"
 
 msgid "advanced_cut_desc"
 msgstr "Kes"
@@ -244,25 +244,25 @@ msgid "advanced_image_props_desc"
 msgstr "Resim özellikleri"
 
 msgid "advanced_newdocument_desc"
-msgstr "Yeni belge"
+msgstr "Boş belge"
 
 msgid "advanced_help_desc"
 msgstr "Yardım"
 
 msgid "advanced_blockquote_desc"
-msgstr "Alıntı"
+msgstr "Blok alıntı"
 
 msgid "advanced_clipboard_msg"
-msgstr "Kopyala/Kes/Yapıştır Mozilla ve Firefox'ta kullanılamaz.\nBu konuda daha fazla bilgi edinmek ister misiniz?"
+msgstr "Mozilla Firefox da Kes/Kopyala/Yapıştır kullanılamaz. Bu konu hakkında daha fazla bilgi almak ister misiniz?"
 
 msgid "advanced_path"
 msgstr "Yol"
 
 msgid "advanced_newdocument"
-msgstr "Tüm içeriği boşaltmak istedinizden emin misiniz?"
+msgstr "Tüm içeriklerleri temizlemek istediğinizden emin misiniz?"
 
 msgid "advanced_toolbar_focus"
-msgstr "Araç düğmelerine atla - Alt+Q, Editöre atla - Alt-Z, Eleman yoluna atla - Alt-X"
+msgstr "Alt+Q araç düğmelerine geç. Alt+Z: Editöre geç. Alt+X:Elementin yoluna geç."
 
 msgid "advanced_more_colors"
 msgstr "Daha fazla renk"
@@ -298,7 +298,7 @@ msgid "advanced_anchor_delta_height"
 msgstr ""
 
 msgid "advanced_dlg_about_title"
-msgstr "TinyMCE Hakkında"
+msgstr "TinyMCE hakkında"
 
 msgid "advanced_dlg_about_general"
 msgstr "Hakkında"
@@ -319,25 +319,25 @@ msgid "advanced_dlg_about_author"
 msgstr "Yazar"
 
 msgid "advanced_dlg_about_version"
-msgstr "Sürüm"
+msgstr "Versiyon"
 
 msgid "advanced_dlg_about_loaded"
 msgstr "Yüklü eklentiler"
 
 msgid "advanced_dlg_anchor_title"
-msgstr "Çengel noktası ekle/düzenle"
+msgstr "Köprü ekle/düzenle"
 
 msgid "advanced_dlg_anchor_name"
-msgstr "Çengel noktası adı"
+msgstr "Köprü adı"
 
 msgid "advanced_dlg_code_title"
 msgstr "HTML Kaynak Editörü"
 
 msgid "advanced_dlg_code_wordwrap"
-msgstr "Sözcük kaydır"
+msgstr "Kelimeleri birlikte tut"
 
 msgid "advanced_dlg_colorpicker_title"
-msgstr "Bir renk seç"
+msgstr "Renk seç"
 
 msgid "advanced_dlg_colorpicker_picker_tab"
 msgstr "Seçici"
@@ -349,13 +349,13 @@ msgid "advanced_dlg_colorpicker_palette_tab"
 msgstr "Palet"
 
 msgid "advanced_dlg_colorpicker_palette_title"
-msgstr "Palet renkleri"
+msgstr "Renk paleti"
 
 msgid "advanced_dlg_colorpicker_named_tab"
-msgstr "İsimli"
+msgstr "Adı"
 
 msgid "advanced_dlg_colorpicker_named_title"
-msgstr "İsimli renkler"
+msgstr "Renk adı"
 
 msgid "advanced_dlg_colorpicker_color"
 msgstr "Renk:"
@@ -370,10 +370,10 @@ msgid "advanced_dlg_image_title"
 msgstr "Resim ekle/düzenle"
 
 msgid "advanced_dlg_image_src"
-msgstr "Resim URL"
+msgstr "Resmin URL'si"
 
 msgid "advanced_dlg_image_alt"
-msgstr "Resim tanımı"
+msgstr "Resim açıklaması"
 
 msgid "advanced_dlg_image_list"
 msgstr "Resim listesi"
@@ -394,7 +394,7 @@ msgid "advanced_dlg_image_align"
 msgstr "Hizalama"
 
 msgid "advanced_dlg_image_align_baseline"
-msgstr "Taban çizgisi"
+msgstr "Taban hizası"
 
 msgid "advanced_dlg_image_align_top"
 msgstr "Üst"
@@ -412,16 +412,16 @@ msgid "advanced_dlg_image_align_textbottom"
 msgstr "Metin altta"
 
 msgid "advanced_dlg_image_align_left"
-msgstr "Sola"
+msgstr "Sol"
 
 msgid "advanced_dlg_image_align_right"
-msgstr "Sağa"
+msgstr "Sağ"
 
 msgid "advanced_dlg_link_title"
 msgstr "Bağlantı ekle/düzenle"
 
 msgid "advanced_dlg_link_url"
-msgstr "Bağlantı URL"
+msgstr "Bağlantı URL'si"
 
 msgid "advanced_dlg_link_target"
 msgstr "Hedef"
@@ -436,10 +436,10 @@ msgid "advanced_dlg_link_titlefield"
 msgstr "Başlık"
 
 msgid "advanced_dlg_link_is_email"
-msgstr "Girdiğiniz URL bir e-posta adresi gibi gözüküyor, gerekli olan mailto: önekinin eklenmesini ister misiniz?"
+msgstr "Girdiğiniz URL e-posta adresi gibi görünüyor; gerekli olan mailto: önekinin eklenmesini ister misiniz? prefix?"
 
 msgid "advanced_dlg_link_is_external"
-msgstr "Girdiğiniz URL dış bir bağlantı gibi gözüküyor, gerekli olan http:// önekinin eklenmesini ister misiniz?"
+msgstr "Girdiğiz URL dış bağlantı gibi görünüyor; gerekli olan http:// önekinin eklenmesini ister misiniz?"
 
 msgid "advanced_dlg_link_list"
 msgstr "Bağlantı listesi"
@@ -448,16 +448,16 @@ msgid "contextmenu_align"
 msgstr "Hizalama"
 
 msgid "contextmenu_left"
-msgstr "Sola"
+msgstr "Sol"
 
 msgid "contextmenu_center"
-msgstr "Ortala"
+msgstr "Orta"
 
 msgid "contextmenu_right"
-msgstr "Sağa"
+msgstr "Sağ"
 
 msgid "contextmenu_full"
-msgstr "İki yana"
+msgstr "Tam"
 
 msgid "insertdatetime_date_fmt"
 msgstr "%d-%m-%Y"
@@ -469,7 +469,7 @@ msgid "insertdatetime_insertdate_desc"
 msgstr "Tarih ekle"
 
 msgid "insertdatetime_inserttime_desc"
-msgstr "Zaman ekle"
+msgstr "Saat ekle"
 
 msgid "insertdatetime_months_long"
 msgstr "Ocak,Şubat,Mart,Nisan,Mayıs,Haziran,Temmuz,Ağustos,Eylül,Ekim,Kasım,Aralık"
@@ -478,10 +478,10 @@ msgid "insertdatetime_months_short"
 msgstr "Oca,Şub,Mar,Nis,May,Haz,Tem,Ağu,Eyl,Eki,Kas,Ara"
 
 msgid "insertdatetime_day_long"
-msgstr "Pazar,Pazartesi,Salı,Çarşamba,Perşembe,Cuma,Cumartesi,Pazar"
+msgstr "Pazar,Pazartesi,Salı,Çarşamba,Perşembe,Cuma,Cumartesi"
 
 msgid "insertdatetime_day_short"
-msgstr "Paz,Pzt,Sal,Çrş,Per,Cum,Cts,Paz"
+msgstr "Paz,Pzt,Sal,Çrş,Per,Cum,Cts"
 
 msgid "print_print_desc"
 msgstr "Yazdır"
@@ -490,22 +490,22 @@ msgid "preview_preview_desc"
 msgstr "Önizleme"
 
 msgid "directionality_ltr_desc"
-msgstr "Sağdan sola yönelimli"
+msgstr "Sağdan sola yönlendir"
 
 msgid "directionality_rtl_desc"
-msgstr "Soldan sağa yönelimli"
+msgstr "Soldan sağa yönlendir"
 
 msgid "layer_insertlayer_desc"
 msgstr "Yeni katman ekle"
 
 msgid "layer_forward_desc"
-msgstr "Öne al"
+msgstr "Öne getir"
 
 msgid "layer_backward_desc"
 msgstr "Arkaya al"
 
 msgid "layer_absolute_desc"
-msgstr "Mutlak konumlandırmayı aç/kapa"
+msgstr "Mutlaka konumu değiştir"
 
 msgid "layer_content"
 msgstr "Yeni katman..."
@@ -517,10 +517,10 @@ msgid "save_cancel_desc"
 msgstr "Tüm değişiklikleri iptal et"
 
 msgid "nonbreaking_nonbreaking_desc"
-msgstr "Kırılımsız boşluk karakteri ekle"
+msgstr "Bölünemez boşluk karakteri ekle"
 
 msgid "iespell_iespell_desc"
-msgstr "İmla kontrolünü çalıştır"
+msgstr "İmla kontrolünü başlat"
 
 msgid "iespell_download"
 msgstr "ieSpell bulunamadı. Şimdi kurmak ister misiniz?"
@@ -559,19 +559,19 @@ msgid "emotions_dlg_desc"
 msgstr "İfadeler"
 
 msgid "emotions_dlg_cool"
-msgstr "Havalı"
+msgstr "Sakin"
 
 msgid "emotions_dlg_cry"
-msgstr "Ağla"
+msgstr "Ağlayan"
 
 msgid "emotions_dlg_embarassed"
-msgstr "Mahçup"
+msgstr "Utangaç"
 
 msgid "emotions_dlg_foot_in_mouth"
-msgstr "Ağzı kulaklarında"
+msgstr "Pot kırmış"
 
 msgid "emotions_dlg_frown"
-msgstr "Kaş çatmış"
+msgstr "Asık"
 
 msgid "emotions_dlg_innocent"
 msgstr "Masum"
@@ -583,28 +583,28 @@ msgid "emotions_dlg_laughing"
 msgstr "Kahkaha"
 
 msgid "emotions_dlg_money_mouth"
-msgstr "Paragöz"
+msgstr "Para göz"
 
 msgid "emotions_dlg_sealed"
-msgstr "Tıp"
+msgstr "Gizli"
 
 msgid "emotions_dlg_smile"
-msgstr "Gülümse"
+msgstr "Gülümseme"
 
 msgid "emotions_dlg_surprised"
-msgstr "Şaşırmış"
+msgstr "Şaşırma"
 
 msgid "emotions_dlg_tongue_out"
-msgstr "Dil çıkar"
+msgstr "Dil çıkarma"
 
 msgid "emotions_dlg_undecided"
 msgstr "Kararsız"
 
 msgid "emotions_dlg_wink"
-msgstr "Göz kırp"
+msgstr "Göz kırpma"
 
 msgid "emotions_dlg_yell"
-msgstr "Esne"
+msgstr "Bağırma"
 
 msgid "searchreplace_search_desc"
 msgstr "Bul"
@@ -622,7 +622,7 @@ msgid "searchreplace_dlg_searchnext_desc"
 msgstr "Tekrar ara"
 
 msgid "searchreplace_dlg_notfound"
-msgstr "Arama tamamlandı. Aranan metin bulunamadı."
+msgstr "Arama tamamlandı. The search string could not be found."
 
 msgid "searchreplace_dlg_search_title"
 msgstr "Bul"
@@ -631,13 +631,13 @@ msgid "searchreplace_dlg_replace_title"
 msgstr "Bul/Değiştir"
 
 msgid "searchreplace_dlg_allreplaced"
-msgstr "Aranan metin bulunduğu yerlerde değiştirildi."
+msgstr "Aranan metin bulunduğu yerlede değiştirildi."
 
 msgid "searchreplace_dlg_findwhat"
-msgstr "Aranacak"
+msgstr "Aranan"
 
 msgid "searchreplace_dlg_replacewith"
-msgstr "Değiştirilecek"
+msgstr "Yeni değer"
 
 msgid "searchreplace_dlg_direction"
 msgstr "Yön"
@@ -649,7 +649,7 @@ msgid "searchreplace_dlg_down"
 msgstr "Aşağı"
 
 msgid "searchreplace_dlg_mcase"
-msgstr "Büyük/küçük harf eşle"
+msgstr "Büyük/küçük duyarlı"
 
 msgid "searchreplace_dlg_findnext"
 msgstr "Sonrakini bul"
@@ -688,22 +688,22 @@ msgid "ploneimage_dlg_preview"
 msgstr "Önizleme"
 
 msgid "ploneimage_dlg_constrain_proportions"
-msgstr "Orantıyı koru"
+msgstr "Oranı sınırla"
 
 msgid "ploneimage_dlg_langdir"
-msgstr "Dil yönelimi"
+msgstr "Dil yönü"
 
 msgid "ploneimage_dlg_langcode"
 msgstr "Dil kodu"
 
 msgid "ploneimage_dlg_long_desc"
-msgstr "Uzun açıklama bağlantısı"
+msgstr "Uzun açıklamalı bağlantı"
 
 msgid "ploneimage_dlg_style"
 msgstr "Stil"
 
 msgid "ploneimage_dlg_classes"
-msgstr "Sınıflar"
+msgstr "Sınıfla"
 
 msgid "ploneimage_dlg_ltr"
 msgstr "Soldan sağa"
@@ -724,28 +724,28 @@ msgid "ploneimage_dlg_alt_image"
 msgstr "Alternatif resim"
 
 msgid "ploneimage_dlg_mouseover"
-msgstr "fare üzerindeyken"
+msgstr "Fare üzerindeyken"
 
 msgid "ploneimage_dlg_mouseout"
-msgstr "fare dışındayken"
+msgstr "Fare dışındayken"
 
 msgid "ploneimage_dlg_misc"
 msgstr "Çeşitli"
 
 msgid "ploneimage_dlg_example_img"
-msgstr "Görünüm önizleme resmi"
+msgstr "Resim önizleme görünümü"
 
 msgid "ploneimage_dlg_missing_alt"
-msgstr "Bir Resim Tanımı girmeden devam etmek istediğinizden emin misiniz? Bu olmadan resim bazı engelli kullanıcılar, metin tabanlı tarayıcılar veya Web'i resimleri kapatarak dolaşanlar için erişilmez olabilir."
+msgstr "Resim açıklaması girmeden devam etmek istediğinize emini misiniz? Bu olmadan tarayıcıda resimleri kapatanlar, metin bazlı tarayıcılar veya resim bazı engelli kullanıcılar göremeyeceklerdir."
 
 msgid "ploneimage_dlg_dialog_title"
 msgstr "Resim ekle/düzenle"
 
 msgid "ploneimage_dlg_src"
-msgstr "Resim URL"
+msgstr "Resmin URL'si"
 
 msgid "ploneimage_dlg_alt"
-msgstr "Resim tanımı"
+msgstr "Resim açıklaması"
 
 msgid "ploneimage_dlg_list"
 msgstr "Resim listesi"
@@ -766,7 +766,7 @@ msgid "ploneimage_dlg_align"
 msgstr "Hizalama"
 
 msgid "ploneimage_dlg_align_baseline"
-msgstr "Taban çizgisi"
+msgstr "Taban hizası"
 
 msgid "ploneimage_dlg_align_top"
 msgstr "Üst"
@@ -784,10 +784,10 @@ msgid "ploneimage_dlg_align_textbottom"
 msgstr "Metin altta"
 
 msgid "ploneimage_dlg_align_left"
-msgstr "Sola"
+msgstr "Sol"
 
 msgid "ploneimage_dlg_align_right"
-msgstr "Sağa"
+msgstr "Sağ"
 
 msgid "ploneimage_dlg_image_list"
 msgstr "Resim listesi"
@@ -805,7 +805,7 @@ msgid "plonelink_dlg_title"
 msgstr "Bağlantı ekle/düzenle"
 
 msgid "plonelink_dlg_url"
-msgstr "Bağlantı URL"
+msgstr "Bağlantı URL'si"
 
 msgid "plonelink_dlg_target"
 msgstr "Hedef"
@@ -814,19 +814,19 @@ msgid "plonelink_dlg_titlefield"
 msgstr "Başlık"
 
 msgid "plonelink_dlg_is_email"
-msgstr "Girdiğiniz URL bir e-posta adresi gibi gözüküyor, gerekli olan mailto: önekinin eklenmesini ister misiniz?"
+msgstr "Girdiğiniz URL e-posta adresi gibi görünüyor; gerekli olan mailto: önekinin eklenmesini ister misiniz? prefix?"
 
 msgid "plonelink_dlg_is_external"
-msgstr "Girdiğiniz URL dış bir bağlantı gibi gözüküyor, gerekli olan http:// önekinin eklenmesini ister misiniz?"
+msgstr "Girdiğiz URL dış bağlantı gibi görünüyor; gerekli olan http:// önekinin eklenmesini ister misiniz?"
 
 msgid "plonelink_dlg_list"
-msgstr "Link list"
+msgstr "Bağlantı listesi"
 
 msgid "plonelink_dlg_general_tab"
-msgstr "General"
+msgstr "Genel"
 
 msgid "plonelink_dlg_popup_tab"
-msgstr "Açılma"
+msgstr "Açılır pencere"
 
 msgid "plonelink_dlg_events_tab"
 msgstr "Olaylar"
@@ -850,16 +850,16 @@ msgid "plonelink_dlg_popup_opts"
 msgstr "Seçenekler"
 
 msgid "plonelink_dlg_anchor_names"
-msgstr "Çengel noktaları"
+msgstr "Nesne tutucular"
 
 msgid "plonelink_dlg_target_same"
-msgstr "Bu pencere/çerçevede aç"
+msgstr "Pencerede / çerçevede aç"
 
 msgid "plonelink_dlg_target_parent"
-msgstr "Ata pencere/çevrede aç"
+msgstr "Ana pencerede / çerçevede aç"
 
 msgid "plonelink_dlg_target_top"
-msgstr "Üst çerçevede aç (tüm çerçeveleri değiştirir)"
+msgstr "Üst çerçevede aç (tüm çerçeveleri değiştir) "
 
 msgid "plonelink_dlg_target_blank"
 msgstr "Yeni pencerede aç"
@@ -868,13 +868,13 @@ msgid "plonelink_dlg_popup"
 msgstr "Javascript açılır pencere"
 
 msgid "plonelink_dlg_popup_url"
-msgstr "Açılacak URL"
+msgstr "Açılır pencere URL'si"
 
 msgid "plonelink_dlg_popup_name"
-msgstr "Pencere ismi"
+msgstr "Pencere adı"
 
 msgid "plonelink_dlg_popup_return"
-msgstr "'return false' ekle"
+msgstr "Ekle 'return false'"
 
 msgid "plonelink_dlg_popup_scrollbars"
 msgstr "Kaydırma çubuklarını göster"
@@ -883,19 +883,19 @@ msgid "plonelink_dlg_popup_statusbar"
 msgstr "Durum çubuğunu göster"
 
 msgid "plonelink_dlg_popup_toolbar"
-msgstr "Araç çubuklarını göster"
+msgstr "Araç kutusunu göster"
 
 msgid "plonelink_dlg_popup_menubar"
 msgstr "Menü çubuğunu göster"
 
 msgid "plonelink_dlg_popup_location"
-msgstr "Konum çubuğunu göster"
+msgstr "Aderes çubuğunu göster"
 
 msgid "plonelink_dlg_popup_resizable"
-msgstr "Pencereyi boyutlanabilir yap"
+msgstr "Pencereyi boyutlandırılabilir yap"
 
 msgid "plonelink_dlg_popup_dependent"
-msgstr "Bağımlı (sadece Mozilla/Firefox)"
+msgstr "Bağımlı (Sadece Mozilla Firefox)"
 
 msgid "plonelink_dlg_popup_size"
 msgstr "Boyut"
@@ -910,13 +910,13 @@ msgid "plonelink_dlg_style"
 msgstr "Stil"
 
 msgid "plonelink_dlg_classes"
-msgstr "Sınıflar"
+msgstr "Sınıfla"
 
 msgid "plonelink_dlg_target_name"
-msgstr "Hedef ismi"
+msgstr "Hedef adı"
 
 msgid "plonelink_dlg_langdir"
-msgstr "Dil yönelimi"
+msgstr "Dil yönü"
 
 msgid "plonelink_dlg_target_langcode"
 msgstr "Hedef dil"
@@ -925,16 +925,16 @@ msgid "plonelink_dlg_langcode"
 msgstr "Dil kodu"
 
 msgid "plonelink_dlg_encoding"
-msgstr "Hedef karakter kodlaması"
+msgstr "Hedef karakter kodlama"
 
 msgid "plonelink_dlg_mime"
 msgstr "Hedef MIME tipi"
 
 msgid "plonelink_dlg_rel"
-msgstr "Sayfadan hedefe ilişki"
+msgstr "Hedeften sayfaya ilişki"
 
 msgid "plonelink_dlg_rev"
-msgstr "Hedeften sayfaya ilişki"
+msgstr "Sayfadan hedefe ilişki"
 
 msgid "plonelink_dlg_tabindex"
 msgstr "Sekme indeksi"
@@ -952,7 +952,7 @@ msgid "plonelink_dlg_link_list"
 msgstr "Bağlantı listesi"
 
 msgid "xhtmlxtras_cite_desc"
-msgstr "Kaynak"
+msgstr "Alıntı"
 
 msgid "xhtmlxtras_abbr_desc"
 msgstr "Kısaltma"
@@ -1018,28 +1018,28 @@ msgid "xhtmlxtras_dlg_attribute_label_style"
 msgstr "Stil"
 
 msgid "xhtmlxtras_dlg_attribute_label_cite"
-msgstr "Belirt"
+msgstr "Alıntı yapmak"
 
 msgid "xhtmlxtras_dlg_attribute_label_datetime"
-msgstr "Tarih/Zaman"
+msgstr "Tarih/Saat"
 
 msgid "xhtmlxtras_dlg_attribute_label_langdir"
-msgstr "Metin yönelimi"
+msgstr "Metnin yönü"
 
 msgid "xhtmlxtras_dlg_attribute_option_ltr"
-msgstr "Soldan sağa"
+msgstr "Sağdan sola"
 
 msgid "xhtmlxtras_dlg_attribute_option_rtl"
-msgstr "Sağdan sola"
+msgstr "Soldan sağa"
 
 msgid "xhtmlxtras_dlg_attribute_label_langcode"
 msgstr "Dil"
 
 msgid "xhtmlxtras_dlg_attribute_label_tabindex"
-msgstr "Sekme İndeksi"
+msgstr "Sekme indeksi"
 
 msgid "xhtmlxtras_dlg_attribute_label_accesskey"
-msgstr "Erişim Anahtarı"
+msgstr "Erişim Tuşu"
 
 msgid "xhtmlxtras_dlg_attribute_events_tab"
 msgstr "Olaylar"
@@ -1060,43 +1060,43 @@ msgid "xhtmlxtras_dlg_fieldset_general_tab"
 msgstr "Genel Ayarlar"
 
 msgid "xhtmlxtras_dlg_fieldset_attrib_tab"
-msgstr "Eleman Nitelikleri"
+msgstr "Nesne Nitelikleri"
 
 msgid "xhtmlxtras_dlg_fieldset_events_tab"
-msgstr "Eleman Olayları"
+msgstr "Nesne Olayları"
 
 msgid "xhtmlxtras_dlg_title_ins_element"
-msgstr "Ekleme Elemanı"
+msgstr "Nesne Ekleme"
 
 msgid "xhtmlxtras_dlg_title_del_element"
-msgstr "Silme Elemanı"
+msgstr "Nesne Silme"
 
 msgid "xhtmlxtras_dlg_title_acronym_element"
-msgstr "Kısaltma Elemanı"
+msgstr "Nense Kısa adı"
 
 msgid "xhtmlxtras_dlg_title_abbr_element"
-msgstr "Kısaad Elemanı"
+msgstr "Nesne Kısaltması"
 
 msgid "xhtmlxtras_dlg_title_cite_element"
-msgstr "Belirtme Elemanı"
+msgstr "Nesne Alıntısı"
 
 msgid "xhtmlxtras_dlg_remove"
-msgstr "Kaldır"
+msgstr "Sil"
 
 msgid "xhtmlxtras_dlg_insert_date"
-msgstr "Şimdiki tarih/zamanı ekle"
+msgstr "Şuan ki tarih/saati ekle"
 
 msgid "xhtmlxtras_dlg_option_ltr"
-msgstr "Soldan sağa"
+msgstr "Sağdan sola"
 
 msgid "xhtmlxtras_dlg_option_rtl"
-msgstr "Sağdan sola"
+msgstr "Soldan sağa"
 
 msgid "xhtmlxtras_dlg_attribs_title"
 msgstr "Nitelik ekle/düzenle"
 
 msgid "style_desc"
-msgstr "CSS Stili Düzenle"
+msgstr "CSS Stilini Düzenle"
 
 msgid "style_delta_width"
 msgstr ""
@@ -1105,7 +1105,7 @@ msgid "style_delta_height"
 msgstr ""
 
 msgid "style_dlg_title"
-msgstr "CSS Stili Düzenle"
+msgstr "CSS Stilini Düzenle"
 
 msgid "style_dlg_apply"
 msgstr "Uygula"
@@ -1126,7 +1126,7 @@ msgid "style_dlg_border_tab"
 msgstr "Kenarlık"
 
 msgid "style_dlg_list_tab"
-msgstr "Liste"
+msgstr "Listele"
 
 msgid "style_dlg_positioning_tab"
 msgstr "Konumlandırma"
@@ -1135,7 +1135,7 @@ msgid "style_dlg_text_props"
 msgstr "Metin"
 
 msgid "style_dlg_text_font"
-msgstr "Yazı Tipi"
+msgstr "Yazı tipi"
 
 msgid "style_dlg_text_size"
 msgstr "Boyut"
@@ -1150,10 +1150,10 @@ msgid "style_dlg_text_variant"
 msgstr "Değişken"
 
 msgid "style_dlg_text_lineheight"
-msgstr "Satır yüksekliği"
+msgstr "Çizgi yüksekliği"
 
 msgid "style_dlg_text_case"
-msgstr "Büyük/küçük"
+msgstr "Koşul"
 
 msgid "style_dlg_text_color"
 msgstr "Renk"
@@ -1162,16 +1162,16 @@ msgid "style_dlg_text_decoration"
 msgstr "Dekorasyon"
 
 msgid "style_dlg_text_overline"
-msgstr "Üst çizgi"
+msgstr "üst çizgi"
 
 msgid "style_dlg_text_underline"
-msgstr "Alt çizgi"
+msgstr "alt çizgi"
 
 msgid "style_dlg_text_striketrough"
-msgstr "Ortası çizgili"
+msgstr "üstü çizgili"
 
 msgid "style_dlg_text_blink"
-msgstr "yanıp sön"
+msgstr "yanıp sönen"
 
 msgid "style_dlg_text_none"
 msgstr "hiçbiri"
@@ -1195,25 +1195,25 @@ msgid "style_dlg_background_vpos"
 msgstr "Dikey konum"
 
 msgid "style_dlg_block_wordspacing"
-msgstr "Sözcük boşluğu"
+msgstr "Kelime boşluğu"
 
 msgid "style_dlg_block_letterspacing"
-msgstr "Harf boşluğu"
+msgstr "harf boşluğu"
 
 msgid "style_dlg_block_vertical_alignment"
 msgstr "Dikey hizalama"
 
 msgid "style_dlg_block_text_align"
-msgstr "Metin hizalama"
+msgstr "Metin hizala"
 
 msgid "style_dlg_block_text_indent"
-msgstr "Metin kaydırma"
+msgstr "Metnin girintisini artır"
 
 msgid "style_dlg_block_whitespace"
 msgstr "Boşluk"
 
 msgid "style_dlg_block_display"
-msgstr "Görüntüleme"
+msgstr "Görüntüle"
 
 msgid "style_dlg_box_width"
 msgstr "Genişlik"
@@ -1231,7 +1231,7 @@ msgid "style_dlg_padding"
 msgstr "Dolgu"
 
 msgid "style_dlg_same"
-msgstr "Tümü için aynı"
+msgstr "Tümü için"
 
 msgid "style_dlg_top"
 msgstr "Üst"
@@ -1276,58 +1276,58 @@ msgid "style_dlg_visibility"
 msgstr "Görünürlük"
 
 msgid "style_dlg_zindex"
-msgstr "Z-sırası"
+msgstr "Z-indeksi"
 
 msgid "style_dlg_overflow"
 msgstr "Taşma"
 
 msgid "style_dlg_placement"
-msgstr "Yerleştirme"
+msgstr "Yerleştir"
 
 msgid "style_dlg_clip"
-msgstr "Kırpma"
+msgstr "Kırp"
 
 msgid "paste_paste_text_desc"
-msgstr "Sade Metin olarak yapıştır"
+msgstr "Düz metin olarak yapıştır"
 
 msgid "paste_paste_word_desc"
 msgstr "Word'den yapıştır"
 
 msgid "paste_selectall_desc"
-msgstr "Tümünü Seç"
+msgstr "Tümünü seç"
 
 msgid "paste_dlg_text_title"
-msgstr "Pencereye metin yapıştırmak için CTRL+V tuşunu kullanınız."
+msgstr "Pencereye metin yapıştırmak için klavyeden CTRL+V i kullanın."
 
 msgid "paste_dlg_text_linebreaks"
-msgstr "Satır kırılımlarını koru"
+msgstr "Satır kesmelerini tut"
 
 msgid "paste_dlg_word_title"
-msgstr "Pencereye metin yapıştırmak için CTRL+V tuşunu kullanınız."
+msgstr "Pencereye metin yapıştırmak için klavyeden CTRL+V i kullanın."
 
 msgid "table_desc"
-msgstr "Yeni bir tablo ekler"
+msgstr "Yeni tablo ekle"
 
 msgid "table_row_before_desc"
-msgstr "Üstüne bir satır ekle"
+msgstr "Üstüne satır ekle"
 
 msgid "table_row_after_desc"
-msgstr "Altına bir satır ekle"
+msgstr "Altına satır ekle"
 
 msgid "table_delete_row_desc"
-msgstr "Satırı sil"
+msgstr "Satır sil"
 
 msgid "table_col_before_desc"
-msgstr "Soluna bir kolon ekle"
+msgstr "Soluna sütun ekle"
 
 msgid "table_col_after_desc"
-msgstr "Sağına bir kolon ekle"
+msgstr "Sağına sütun ekle"
 
 msgid "table_delete_col_desc"
-msgstr "Kolonu sil"
+msgstr "Sütun sil"
 
 msgid "table_split_cells_desc"
-msgstr "Birleşitirilmiş tablo hücrelerini ayır"
+msgstr "Birleştirilmiş tablo hücrelerini böl"
 
 msgid "table_merge_cells_desc"
 msgstr "Tablo hücrelerini birleştir"
@@ -1336,16 +1336,16 @@ msgid "table_row_desc"
 msgstr "Tablo satır özellikleri"
 
 msgid "table_cell_desc"
-msgstr "Tablo hücre özellikler"
+msgstr "Tablo hücre özellikleri"
 
 msgid "table_props_desc"
 msgstr "Tablo özellikleri"
 
 msgid "table_paste_row_before_desc"
-msgstr "Üstüne tablo satırını yapıştır"
+msgstr "Üstüne tablo satırı yapıştır"
 
 msgid "table_paste_row_after_desc"
-msgstr "Altına tablo satırını yapıştır"
+msgstr "Altına tablo satırı yapıştır"
 
 msgid "table_cut_row_desc"
 msgstr "Tablo satırını kes"
@@ -1354,13 +1354,13 @@ msgid "table_copy_row_desc"
 msgstr "Tablo satırını kopyala"
 
 msgid "table_del"
-msgstr "Tabloyu sil"
+msgstr "Tablo sil"
 
 msgid "table_row"
 msgstr "Satır"
 
 msgid "table_col"
-msgstr "Kolon"
+msgstr "Sütun"
 
 msgid "table_cell"
 msgstr "Hücre"
@@ -1402,10 +1402,10 @@ msgid "table_dlg_advanced_props"
 msgstr "Gelişmiş özellikler"
 
 msgid "table_dlg_rowtype"
-msgstr "Tablo parçasındaki satır"
+msgstr "Tablo bölümündeki satır"
 
 msgid "table_dlg_title"
-msgstr "Tablo ekle/düzenle"
+msgstr "Tablo Ekle/Düzenle"
 
 msgid "table_dlg_width"
 msgstr "Genişlik"
@@ -1414,16 +1414,16 @@ msgid "table_dlg_height"
 msgstr "Yükseklik"
 
 msgid "table_dlg_cols"
-msgstr "Kolonlar"
+msgstr "Sütunlar"
 
 msgid "table_dlg_rows"
 msgstr "Satırlar"
 
 msgid "table_dlg_cellspacing"
-msgstr "Hücre aralama"
+msgstr "Hücre içi boşluğu"
 
 msgid "table_dlg_cellpadding"
-msgstr "Hücre dolgusu"
+msgstr "Hücre dışı boşluğu"
 
 msgid "table_dlg_border"
 msgstr "Kenarlık"
@@ -1435,13 +1435,13 @@ msgid "table_dlg_align_default"
 msgstr "Varsayılan"
 
 msgid "table_dlg_align_left"
-msgstr "Sola"
+msgstr "Sol"
 
 msgid "table_dlg_align_right"
-msgstr "Sağa"
+msgstr "Sağ"
 
 msgid "table_dlg_align_middle"
-msgstr "Ortala"
+msgstr "Orta"
 
 msgid "table_dlg_row_title"
 msgstr "Tablo satır özellikleri"
@@ -1477,7 +1477,7 @@ msgid "table_dlg_style"
 msgstr "Stil"
 
 msgid "table_dlg_langdir"
-msgstr "Dil yönelimi"
+msgstr "Dil yönü"
 
 msgid "table_dlg_langcode"
 msgstr "Dil kodu"
@@ -1486,10 +1486,10 @@ msgid "table_dlg_mime"
 msgstr "Hedef MIME tipi"
 
 msgid "table_dlg_ltr"
-msgstr "Soldan sağa"
+msgstr "Sağdan sola"
 
 msgid "table_dlg_rtl"
-msgstr "Sağdan sola"
+msgstr "Soldan sağa"
 
 msgid "table_dlg_bgimage"
 msgstr "Arkaplan resmi"
@@ -1504,7 +1504,7 @@ msgid "table_dlg_th"
 msgstr "Başlık"
 
 msgid "table_dlg_cell_cell"
-msgstr "Seçili hücreyi güncelle"
+msgstr "Seçili hücreleri güncelle"
 
 msgid "table_dlg_cell_row"
 msgstr "Satırdaki tüm hücreleri güncelle"
@@ -1519,7 +1519,7 @@ msgid "table_dlg_row_odd"
 msgstr "Tablodaki tek nolu satırları güncelle"
 
 msgid "table_dlg_row_even"
-msgstr "Tablodaki çift nolu satırları güncele"
+msgstr "Tablodaki çift nolu satırları güncelle"
 
 msgid "table_dlg_row_all"
 msgstr "Tablodaki tüm satırları güncelle"
@@ -1528,10 +1528,10 @@ msgid "table_dlg_thead"
 msgstr "Tablo Başlığı"
 
 msgid "table_dlg_tbody"
-msgstr "Table Gövdesi"
+msgstr "Tablo Gövdesi"
 
 msgid "table_dlg_tfoot"
-msgstr "Table Altlığı"
+msgstr "Tablo Altı"
 
 msgid "table_dlg_scope"
 msgstr "Kapsam"
@@ -1540,19 +1540,19 @@ msgid "table_dlg_rowgroup"
 msgstr "Satır Grubu"
 
 msgid "table_dlg_colgroup"
-msgstr "Kolon Grubu"
+msgstr "Sütun Grubu"
 
 msgid "table_dlg_col_limit"
-msgstr "Maksimum kolon sayısı olan {$cols} değerini aştınız."
+msgstr "Maksimum sütun sayısı ($cols) aşıldı."
 
 msgid "table_dlg_row_limit"
-msgstr "Maksimum satır sayısı olan {$rows} değerini aştınız."
+msgstr "Maksimum satır sayısı ($rows) aşıldı."
 
 msgid "table_dlg_cell_limit"
-msgstr "Maksimum hücre sayısı olan {$cells} değerini aştınız."
+msgstr "Maksimum hücre sayısı ($cells) aşıldı."
 
 msgid "table_dlg_missing_scope"
-msgstr "Bu tablo başlık hücresi için bir kapsam belirlemeden devam etmek istediğinizden emin misiniz? Bu değer olmadan, engelli kullanıcıların tabloda görüntülenen içeriği anlaması mümkün olmayabilir."
+msgstr "Tablo başlık hücresi için bir kapsam belirlemeden devam etmek istediğinize emin misiniz? Bu değer olmadan, engelli kullanıcılar  tabloda gösterilen verileri ve içeriği anlaması zordur."
 
 msgid "table_dlg_caption"
 msgstr "Tablo başlığı"
@@ -1570,7 +1570,7 @@ msgid "table_dlg_frame_rows"
 msgstr "satırlar"
 
 msgid "table_dlg_frame_cols"
-msgstr "kolonlar"
+msgstr "sütunlar"
 
 msgid "table_dlg_frame_all"
 msgstr "tümü"
@@ -1588,16 +1588,16 @@ msgid "table_dlg_rules_below"
 msgstr "altında"
 
 msgid "table_dlg_rules_hsides"
-msgstr "solsağ"
+msgstr "yatay kenarlar"
 
 msgid "table_dlg_rules_lhs"
-msgstr "soltaraf"
+msgstr "sol yatay kenarlar"
 
 msgid "table_dlg_rules_rhs"
-msgstr "sağtaraf"
+msgstr "sağ yatay kenarlar"
 
 msgid "table_dlg_rules_vsides"
-msgstr "üstalt"
+msgstr "dikey kenarlar"
 
 msgid "table_dlg_rules_box"
 msgstr "kutu"
@@ -1606,13 +1606,13 @@ msgid "table_dlg_rules_border"
 msgstr "kenarlık"
 
 msgid "autosave_unload_msg"
-msgstr "Bu sayfadan çıkarsanız yaptığınız değişiklikler kaybedilecek."
+msgstr "Bu sayfadan çıkarsanız yaptığınız değişiklikler kaybolabilir."
 
 msgid "fullscreen_desc"
-msgstr "Tam ekran modunu aç/kapa"
+msgstr "Tam ekran modunu aç/kapat"
 
 msgid "media_desc"
-msgstr "Tümleşik medya ekle/düzenle"
+msgstr "Tümleşik medya ekle / düzenle"
 
 msgid "media_edit"
 msgstr "Tümleşik medya düzenle"
@@ -1624,7 +1624,7 @@ msgid "media_delta_height"
 msgstr ""
 
 msgid "media_dlg_title"
-msgstr "Tümleşik medya ekle/düzenle"
+msgstr "Tümleşik medya ekle / düzenle"
 
 msgid "media_dlg_general"
 msgstr "Genel"
@@ -1636,7 +1636,7 @@ msgid "media_dlg_file"
 msgstr "Dosya/URL"
 
 msgid "media_dlg_list"
-msgstr "Liste"
+msgstr "Listele"
 
 msgid "media_dlg_size"
 msgstr "Boyutlar"
@@ -1645,7 +1645,7 @@ msgid "media_dlg_preview"
 msgstr "Önizleme"
 
 msgid "media_dlg_constrain_proportions"
-msgstr "Orantıyı koru"
+msgstr "Oranı sınırla"
 
 msgid "media_dlg_type"
 msgstr "Tip"
@@ -1660,19 +1660,19 @@ msgid "media_dlg_class_name"
 msgstr "Sınıf"
 
 msgid "media_dlg_vspace"
-msgstr "Dik.Boşluk"
+msgstr "Dikey boşluk"
 
 msgid "media_dlg_hspace"
-msgstr "Yty.Boşluk"
+msgstr "Yatay boşluk"
 
 msgid "media_dlg_play"
-msgstr "Oto.Çal"
+msgstr "Otomatik oynat"
 
 msgid "media_dlg_loop"
-msgstr "Döngü"
+msgstr "Döndür"
 
 msgid "media_dlg_menu"
-msgstr "Menü göster"
+msgstr "Menüyü göster"
 
 msgid "media_dlg_quality"
 msgstr "Kalite"
@@ -1687,7 +1687,7 @@ msgid "media_dlg_salign"
 msgstr "SHizala"
 
 msgid "media_dlg_wmode"
-msgstr "WMode"
+msgstr "WModu"
 
 msgid "media_dlg_bgcolor"
 msgstr "Arkaplan"
@@ -1696,13 +1696,13 @@ msgid "media_dlg_base"
 msgstr "Taban"
 
 msgid "media_dlg_flashvars"
-msgstr "Flash değiş."
+msgstr "Flash değişkeni"
 
 msgid "media_dlg_liveconnect"
 msgstr "SWLiveConnect"
 
 msgid "media_dlg_autohref"
-msgstr "Oto.HREF"
+msgstr "AutoHREF"
 
 msgid "media_dlg_cache"
 msgstr "Önbellek"
@@ -1711,25 +1711,25 @@ msgid "media_dlg_hidden"
 msgstr "Gizli"
 
 msgid "media_dlg_controller"
-msgstr "Kontrolcü"
+msgstr "Kontroller"
 
 msgid "media_dlg_kioskmode"
 msgstr "Kiosk modu"
 
 msgid "media_dlg_playeveryframe"
-msgstr "Her çerçeveyi çal"
+msgstr "Her çerçeveyi oynat"
 
 msgid "media_dlg_targetcache"
 msgstr "Hedef önbellek"
 
 msgid "media_dlg_correction"
-msgstr "Düzeltmesiz"
+msgstr "Düzeltme yok"
 
 msgid "media_dlg_enablejavascript"
-msgstr "JavaScript etkin"
+msgstr "Javascript Aktif"
 
 msgid "media_dlg_starttime"
-msgstr "Başlangıc zamanı"
+msgstr "Başlangıç zamanı"
 
 msgid "media_dlg_endtime"
 msgstr "Bitiş zamanı"
@@ -1738,7 +1738,7 @@ msgid "media_dlg_href"
 msgstr "Href"
 
 msgid "media_dlg_qtsrcchokespeed"
-msgstr "Tıkanma hızı"
+msgstr "Sıkıştırma hızı"
 
 msgid "media_dlg_target"
 msgstr "Hedef"
@@ -1747,16 +1747,16 @@ msgid "media_dlg_volume"
 msgstr "Ses düzeyi"
 
 msgid "media_dlg_autostart"
-msgstr "Oto.başlat"
+msgstr "Otomatik başlat"
 
 msgid "media_dlg_enabled"
-msgstr "Etkin"
+msgstr "Aktif"
 
 msgid "media_dlg_fullscreen"
 msgstr "Tam ekran"
 
 msgid "media_dlg_invokeurls"
-msgstr "Çağrılacak URL'ler"
+msgstr "Başlatma URL'si"
 
 msgid "media_dlg_mute"
 msgstr "Sessiz"
@@ -1768,25 +1768,25 @@ msgid "media_dlg_windowlessvideo"
 msgstr "Penceresiz video"
 
 msgid "media_dlg_balance"
-msgstr "Balans"
+msgstr "Denge"
 
 msgid "media_dlg_baseurl"
-msgstr "Taban URL"
+msgstr "Geçerli URL"
 
 msgid "media_dlg_captioningid"
-msgstr "Başlıklandırma id"
+msgstr "Başlık id"
 
 msgid "media_dlg_currentmarker"
-msgstr "Şimdiki işaretçi"
+msgstr "Seçili işaretçi"
 
 msgid "media_dlg_currentposition"
-msgstr "Şimdiki konum"
+msgstr "Seçili konum"
 
 msgid "media_dlg_defaultframe"
 msgstr "Varsayılan çerçeve"
 
 msgid "media_dlg_playcount"
-msgstr "Çalma sayısı"
+msgstr "Oynatma sayısı"
 
 msgid "media_dlg_rate"
 msgstr "Oran"
@@ -1807,13 +1807,13 @@ msgid "media_dlg_rmp_options"
 msgstr "Real media player seçenekleri"
 
 msgid "media_dlg_shockwave_options"
-msgstr "Shockwave seçenekleri"
+msgstr "Shockware seçenekleri"
 
 msgid "media_dlg_autogotourl"
-msgstr "Otomatik gidilecek URL"
+msgstr "URL'e otomatik git"
 
 msgid "media_dlg_center"
-msgstr "Ortala"
+msgstr "Orta"
 
 msgid "media_dlg_imagestatus"
 msgstr "Resim durumu"
@@ -1825,7 +1825,7 @@ msgid "media_dlg_nojava"
 msgstr "Java yok"
 
 msgid "media_dlg_prefetch"
-msgstr "Ön-getirme"
+msgstr "Ön belleğe al"
 
 msgid "media_dlg_shuffle"
 msgstr "Karıştır"
@@ -1840,7 +1840,7 @@ msgid "media_dlg_controls"
 msgstr "Kontroller"
 
 msgid "media_dlg_scriptcallbacks"
-msgstr "Script çağrımları"
+msgstr "Script çağır"
 
 msgid "media_dlg_swstretchstyle"
 msgstr "Esnetme stili"
@@ -1855,31 +1855,31 @@ msgid "media_dlg_sound"
 msgstr "Ses"
 
 msgid "media_dlg_progress"
-msgstr "İlerleme"
+msgstr "İlerle"
 
 msgid "media_dlg_qtsrc"
 msgstr "QT Kay."
 
 msgid "media_dlg_qt_stream_warn"
-msgstr "Akıntı rtsp kaynakları gelişmiş altındaki QT Kay. alanına girilmeli.\nSrc alanına ayrıca akıntılı olmayan bir sürümü de girmelisiniz.."
+msgstr "Akış rtsp kaynakları gelişmiş altındaki QT Kay. alanına girilmeli.\nKay. alanına ayrıca akışkan olmayan eklenir."
 
 msgid "media_dlg_align_top"
 msgstr "Üst"
 
 msgid "media_dlg_align_right"
-msgstr "Sağa"
+msgstr "Sağ"
 
 msgid "media_dlg_align_bottom"
-msgstr "Alt"
+msgstr "Bottom"
 
 msgid "media_dlg_align_left"
-msgstr "Sola"
+msgstr "Sol"
 
 msgid "media_dlg_align_center"
-msgstr "Ortala"
+msgstr "Orta"
 
 msgid "media_dlg_align_top_left"
-msgstr "Sol Üst"
+msgstr "Sol üst"
 
 msgid "media_dlg_align_top_right"
 msgstr "Sağ üst"
@@ -1894,13 +1894,13 @@ msgid "media_dlg_flv_options"
 msgstr "Flash video seçenekleri"
 
 msgid "media_dlg_flv_scalemode"
-msgstr "Esnetme modu"
+msgstr "Ölçek modu"
 
 msgid "media_dlg_flv_buffer"
 msgstr "Tampon"
 
 msgid "media_dlg_flv_startimage"
-msgstr "Başlangıç resmi"
+msgstr "Resmi başlat"
 
 msgid "media_dlg_flv_starttime"
 msgstr "Başlangıç zamanı"
@@ -1915,16 +1915,16 @@ msgid "media_dlg_flv_autostart"
 msgstr "Otomatik başlat"
 
 msgid "media_dlg_flv_loop"
-msgstr "Döngü"
+msgstr "Döndür"
 
 msgid "media_dlg_flv_showscalemodes"
-msgstr "Ölçek modlarını göster"
+msgstr "Ölçek modunu göster"
 
 msgid "media_dlg_flv_smoothvideo"
-msgstr "Video'yu yumuşat"
+msgstr "Düzgün video"
 
 msgid "media_dlg_flv_jscallback"
-msgstr "JS Çağrımları"
+msgstr "JS Çeğır"
 
 msgid "fullpage_desc"
 msgstr "Belge özellikleri"
@@ -1948,7 +1948,7 @@ msgid "fullpage_dlg_advanced_tab"
 msgstr "Gelişmiş"
 
 msgid "fullpage_dlg_meta_props"
-msgstr "Meta bilgisi"
+msgstr "Meta information"
 
 msgid "fullpage_dlg_langprops"
 msgstr "Dil ve kodlama"
@@ -1957,13 +1957,13 @@ msgid "fullpage_dlg_meta_title"
 msgstr "Başlık"
 
 msgid "fullpage_dlg_meta_keywords"
-msgstr "Anahtar sözcükler"
+msgstr "Anahtar kelimeler"
 
 msgid "fullpage_dlg_meta_description"
-msgstr "Tanım"
+msgstr "Açıklama"
 
 msgid "fullpage_dlg_meta_robots"
-msgstr "Robot'lar"
+msgstr "Robotlar"
 
 msgid "fullpage_dlg_doctypes"
 msgstr "Belge tipi"
@@ -1972,25 +1972,25 @@ msgid "fullpage_dlg_langcode"
 msgstr "Dil kodu"
 
 msgid "fullpage_dlg_langdir"
-msgstr "Dil yönelimi"
+msgstr "Dil yönü"
 
 msgid "fullpage_dlg_ltr"
-msgstr "Soldan sağa"
+msgstr "Sağdan sola"
 
 msgid "fullpage_dlg_rtl"
-msgstr "Sağdan sola"
+msgstr "Soldan sağa"
 
 msgid "fullpage_dlg_xml_pi"
 msgstr "XML tanımı"
 
 msgid "fullpage_dlg_encoding"
-msgstr "Karakter kodlama"
+msgstr "Karakter kodlaması"
 
 msgid "fullpage_dlg_appearance_bgprops"
 msgstr "Arkaplan özellikleri"
 
 msgid "fullpage_dlg_appearance_marginprops"
-msgstr "Gövde kenar boşlukları"
+msgstr "Gövde boşlukları"
 
 msgid "fullpage_dlg_appearance_linkprops"
 msgstr "Bağlantı renkleri"
@@ -2005,16 +2005,16 @@ msgid "fullpage_dlg_bgimage"
 msgstr "Arkaplan resmi"
 
 msgid "fullpage_dlg_left_margin"
-msgstr "Sol kenar boşluğu"
+msgstr "Sol boşluk"
 
 msgid "fullpage_dlg_right_margin"
-msgstr "Sağ kenar boşluğu"
+msgstr "Sağ boşluk"
 
 msgid "fullpage_dlg_top_margin"
-msgstr "Üst kenar boşluğu"
+msgstr "Üst boşluk"
 
 msgid "fullpage_dlg_bottom_margin"
-msgstr "Alt kenar boşluğu"
+msgstr "Alt boşluk"
 
 msgid "fullpage_dlg_text_color"
 msgstr "Metin rengi"
@@ -2029,13 +2029,13 @@ msgid "fullpage_dlg_link_color"
 msgstr "Bağlantı rengi"
 
 msgid "fullpage_dlg_hover_color"
-msgstr "Üzerinde rengi"
+msgstr "Fare üstünde rengi"
 
 msgid "fullpage_dlg_visited_color"
-msgstr "Ziyaret edilmiş"
+msgstr "Ziyaret edilmiş bağlantı rengi"
 
 msgid "fullpage_dlg_active_color"
-msgstr "Aktif rengi"
+msgstr "Geçerli renk"
 
 msgid "fullpage_dlg_textcolor"
 msgstr "Renk"
@@ -2047,22 +2047,22 @@ msgid "fullpage_dlg_fontface"
 msgstr "Yazı tipi"
 
 msgid "fullpage_dlg_meta_index_follow"
-msgstr "İndeksle ve bağlantıları izle"
+msgstr "İndeksle ve bağlantıları izle."
 
 msgid "fullpage_dlg_meta_index_nofollow"
-msgstr "İndeksle ve bağlantıları izleme"
+msgstr "İndeksle ve bağlantıları izleme."
 
 msgid "fullpage_dlg_meta_noindex_follow"
-msgstr "İndeksleme ama bağlantıları izle"
+msgstr "İndeksleme ama bağlantıları izle."
 
 msgid "fullpage_dlg_meta_noindex_nofollow"
-msgstr "İndeksleme ve bağlantıları izleme"
+msgstr "İndeksleme ve bağlantıları izleme."
 
 msgid "fullpage_dlg_appearance_style"
-msgstr "Stil yaprağı ve stil özellikleri"
+msgstr "Stylesheet and style properties"
 
 msgid "fullpage_dlg_stylesheet"
-msgstr "Stil yaprağı"
+msgstr "Stil sayfası"
 
 msgid "fullpage_dlg_style"
 msgstr "Stil"
@@ -2071,64 +2071,64 @@ msgid "fullpage_dlg_author"
 msgstr "Yazar"
 
 msgid "fullpage_dlg_copyright"
-msgstr "Telif"
+msgstr "Telik hakkı"
 
 msgid "fullpage_dlg_add"
-msgstr "Yeni eleman ekle"
+msgstr "Yeni nesne ekle"
 
 msgid "fullpage_dlg_remove"
-msgstr "Seçili elemanı kaldır"
+msgstr "Seçili nesneyi kaldır"
 
 msgid "fullpage_dlg_moveup"
-msgstr "Seçili elemanı üste al"
+msgstr "Seçili nesneyi yukarı taşı"
 
 msgid "fullpage_dlg_movedown"
-msgstr "Seçili elemanı alta al"
+msgstr "Seçili nesneyi aşağı taşı"
 
 msgid "fullpage_dlg_head_elements"
-msgstr "Başlık elemanları"
+msgstr "Başlık nesneleri"
 
 msgid "fullpage_dlg_info"
 msgstr "Bilgi"
 
 msgid "fullpage_dlg_add_title"
-msgstr "Başlık elemanı"
+msgstr "Başlık nesnesi"
 
 msgid "fullpage_dlg_add_meta"
-msgstr "Meta elemanı"
+msgstr "Meta nesnesi"
 
 msgid "fullpage_dlg_add_script"
-msgstr "Script elemanı"
+msgstr "Script nesnesi"
 
 msgid "fullpage_dlg_add_style"
-msgstr "Stil elemanı"
+msgstr "Stil nesnesi"
 
 msgid "fullpage_dlg_add_link"
-msgstr "Bağlantı elemanı"
+msgstr "Bağlantı nesnesi"
 
 msgid "fullpage_dlg_add_base"
-msgstr "Taban eleman"
+msgstr "Temel nesne"
 
 msgid "fullpage_dlg_add_comment"
 msgstr "Yorum düğümü"
 
 msgid "fullpage_dlg_title_element"
-msgstr "Başlık elemanı"
+msgstr "Başlık nesnesi"
 
 msgid "fullpage_dlg_script_element"
-msgstr "Script elemanı"
+msgstr "Script nesnesi"
 
 msgid "fullpage_dlg_style_element"
-msgstr "Stil elemanı"
+msgstr "Stil nesnesi"
 
 msgid "fullpage_dlg_base_element"
-msgstr "Taban eleman"
+msgstr "Temel nesne"
 
 msgid "fullpage_dlg_link_element"
-msgstr "Bağlantı elemanı"
+msgstr "Bağlantı nesnesi"
 
 msgid "fullpage_dlg_meta_element"
-msgstr "Meta elemanı"
+msgstr "Meta nesnesi"
 
 msgid "fullpage_dlg_comment_element"
 msgstr "Yorum"
@@ -2149,10 +2149,10 @@ msgid "fullpage_dlg_type"
 msgstr "Tip"
 
 msgid "fullpage_dlg_charset"
-msgstr "Krk.Seti"
+msgstr "Karakter seti"
 
 msgid "fullpage_dlg_defer"
-msgstr "Ertele"
+msgstr "Erteleme"
 
 msgid "fullpage_dlg_media"
 msgstr "Medya"
@@ -2185,7 +2185,7 @@ msgid "fullpage_dlg_advanced_props"
 msgstr "Gelişmiş"
 
 msgid "template_desc"
-msgstr "Öntanımlı şablon içeriği ekle"
+msgstr "Öntanımlı içerik şablonu kullan"
 
 msgid "template_dlg_title"
 msgstr "Şablonlar"
@@ -2194,13 +2194,13 @@ msgid "template_dlg_label"
 msgstr "Şablon"
 
 msgid "template_dlg_desc_label"
-msgstr "Tanım"
+msgstr "Açıklama"
 
 msgid "template_dlg_desc"
-msgstr "Öntanımlı şablon içeriği ekle"
+msgstr "Öntanımlı içerik şablonu kullan"
 
 msgid "template_dlg_select"
-msgstr "Bir şablon seç"
+msgstr "Şablonu seç"
 
 msgid "template_dlg_preview"
 msgstr "Önizleme"
@@ -2221,31 +2221,31 @@ msgid "template_dlg_months_short"
 msgstr "Oca,Şub,Mar,Nis,May,Haz,Tem,Ağu,Eyl,Eki,Kas,Ara"
 
 msgid "template_dlg_day_long"
-msgstr "Pazar,Pazartesi,Salı,Çarşamba,Perşembe,Cuma,Cumartesi,Pazar"
+msgstr "Pazar,Pazartesi,Salı,Çarşamba,Perşembe,Cuma,Cumartesi"
 
 msgid "template_dlg_day_short"
-msgstr "Paz,Pzt,Sal,Çrş,Per,Cum,Cts,Paz"
+msgstr "Paz,Pzt,Sal,Çrş,Per,Cum,Cts"
 
 msgid "visualchars_desc"
-msgstr "Görsel kontrol karakterleri açık/kapalı."
+msgstr "Görsel karakter kontrolü açık/kapalı."
 
 msgid "spellchecker_desc"
-msgstr "İmla kontrolünü aç/kapa"
+msgstr "İmla kontrolünü aç/kapat"
 
 msgid "spellchecker_menu"
-msgstr "İmla kontrol ayarları"
+msgstr "İmla kontrolü ayarları"
 
 msgid "spellchecker_ignore_word"
-msgstr "Sözcüğü önemseme"
+msgstr "Sözcüğü yoksay"
 
 msgid "spellchecker_ignore_words"
-msgstr "Hiçbirini önemseme"
+msgstr "Tümünü yoksay"
 
 msgid "spellchecker_langs"
 msgstr "Diller"
 
 msgid "spellchecker_wait"
-msgstr "Lütfen bekleyiniz..."
+msgstr "Lütfen bekleyin..."
 
 msgid "spellchecker_sug"
 msgstr "Öneriler"
@@ -2254,8 +2254,8 @@ msgid "spellchecker_no_sug"
 msgstr "Öneri yok"
 
 msgid "spellchecker_no_mpell"
-msgstr "Bir imla hatası bulunamadı."
+msgstr "İmla hatası bulunamadı."
 
 msgid "pagebreak_desc"
-msgstr "Sayfa kırılımı ekle."
+msgstr "Sayfa sonu ekle."
 

@@ -1,25 +1,25 @@
-# Aquest és el paquet d'idioma Català per a TinyMCE.
-# Version 2.6
+# Aquest és el paquet de llenguatge Català per TinyMCE.
+# Version 3.1
 #
-# Jaume Badiella Aguilera - myotis@drac.com (http://kraken.podzone.org)
+# XdNet - Damià Verger i Jordi Diaz
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2009-07-28 00:00+0000\n"
-"Last-Translator: Jaume Badiella Aguilera - myotis@drac.com (http://kraken.podzone.org)\n"
-"Language-Team: Jaume Badiella Aguilera - myotis@drac.com (http://kraken.podzone.org)\n"
+"PO-Revision-Date: 2010-03-22 00:00+0000\n"
+"Last-Translator: XdNet - Damià Verger i Jordi Diaz\n"
+"Language-Team: XdNet - Damià Verger i Jordi Diaz\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Language-Code: ca\n"
-"Language-Name: Català\n"
+"Language-Name: Catalan\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: tinymce\n"
 
 msgid "common_edit_confirm"
-msgstr "Vols utilitzar el mode visible (WYSIWYG) per a aquesta àrea de text?"
+msgstr "Voleu utilitzar el mode WYSIWYG?"
 
 msgid "common_apply"
 msgstr "Aplica"
@@ -43,19 +43,19 @@ msgid "common_class_name"
 msgstr "Classe"
 
 msgid "common_not_set"
-msgstr "-- Sense establir --"
+msgstr "-- No definit --"
 
 msgid "common_clipboard_msg"
-msgstr "Copia/Retalla/Enganxa no està disponible en Mozilla/Firefox.\nVols més informació sobre aquest tema?"
+msgstr "Copia/Retalla/Enganxa no es troba disponible al Mozilla ni al Firefox.\nVoleu més informació sobre aquesta qüestió?"
 
 msgid "common_clipboard_no_support"
-msgstr "Actualment no està suportat pel teu navegador, utilitza les dreceres de teclat en lloc seu."
+msgstr "El vostre navegador actualment no ho admet, utilitzeu les dreceres de teclat."
 
 msgid "common_popup_blocked"
-msgstr "Ho sentim, però ens hem adonat que el teu bloquejador de finestres emergents ha desactivat una finestra que proporciona funcionalitat a l'aplicació. Hauràs de desactivar el blocatge de finestres emergents en aquest lloc per tal d'utilitzar plenament aquesta eina."
+msgstr "El bloqueig de finestres emergents ha inhabilitat una finestra que proporciona funcionalitat a l'aplicació. Cal que desactiveu el bloqueig de finestres emergents en aquest lloc per tal de poder utilitzar de forma completa aquesta eina."
 
 msgid "common_invalid_data"
-msgstr "Error: Has introduït valors incorrectes, te'ls marquem en vermell."
+msgstr "Error: heu introduït valors no vàlids, els marcats en vermell."
 
 msgid "common_more_colors"
 msgstr "Més colors"
@@ -70,13 +70,13 @@ msgid "simple_underline_desc"
 msgstr "Subratllat (Ctrl+U)"
 
 msgid "simple_striketrough_desc"
-msgstr "Tatxat"
+msgstr "Barrat"
 
 msgid "simple_bullist_desc"
-msgstr "Llista no ordenada"
+msgstr "Llista sense numeració"
 
 msgid "simple_numlist_desc"
-msgstr "Llista ordenada"
+msgstr "Llista numerada"
 
 msgid "simple_undo_desc"
 msgstr "Desfés (Ctrl+Z)"
@@ -85,16 +85,16 @@ msgid "simple_redo_desc"
 msgstr "Refés (Ctrl+Y)"
 
 msgid "simple_cleanup_desc"
-msgstr "Neteja el codi mal format"
+msgstr "Poleix el codi"
 
 msgid "advanced_style_select"
 msgstr "Estils"
 
 msgid "advanced_font_size"
-msgstr "Mida de lletra"
+msgstr "Mida de font"
 
 msgid "advanced_fontdefault"
-msgstr "Tipografia"
+msgstr "Família de font"
 
 msgid "advanced_block"
 msgstr "Format"
@@ -103,7 +103,7 @@ msgid "advanced_paragraph"
 msgstr "Paràgraf"
 
 msgid "advanced_div"
-msgstr "Div"
+msgstr "Capa"
 
 msgid "advanced_address"
 msgstr "Adreça"
@@ -112,37 +112,37 @@ msgid "advanced_pre"
 msgstr "Preformatat"
 
 msgid "advanced_h1"
-msgstr "Capçalera 1"
+msgstr "Encapçalament 1"
 
 msgid "advanced_h2"
-msgstr "Capçalera 2"
+msgstr "Encapçalament 2"
 
 msgid "advanced_h3"
-msgstr "Capçalera 3"
+msgstr "Encapçalament 3"
 
 msgid "advanced_h4"
-msgstr "Capçalera 4"
+msgstr "Encapçalament 4"
 
 msgid "advanced_h5"
-msgstr "Capçalera 5"
+msgstr "Encapçalament 5"
 
 msgid "advanced_h6"
-msgstr "Capçalera 6"
+msgstr "Encapçalament 6"
 
 msgid "advanced_blockquote"
-msgstr "Cita"
+msgstr "Citabloc"
 
 msgid "advanced_code"
 msgstr "Codi"
 
 msgid "advanced_samp"
-msgstr "Mostra de codi"
+msgstr "Mostra el Codi"
 
 msgid "advanced_dt"
-msgstr "Terme de la definició"
+msgstr "Terme de definició "
 
 msgid "advanced_dd"
-msgstr "Descripció de la definició"
+msgstr "Descripció de definició"
 
 msgid "advanced_bold_desc"
 msgstr "Negreta (Ctrl+B)"
@@ -154,25 +154,25 @@ msgid "advanced_underline_desc"
 msgstr "Subratllat (Ctrl+U)"
 
 msgid "advanced_striketrough_desc"
-msgstr "Tatxat"
+msgstr "Barrat"
 
 msgid "advanced_justifyleft_desc"
-msgstr "Alinea a l'esquerra"
+msgstr "Alineació esquerra"
 
 msgid "advanced_justifycenter_desc"
-msgstr "Centra"
+msgstr "Alineació al centre"
 
 msgid "advanced_justifyright_desc"
-msgstr "Alinea a la dreta"
+msgstr "Alineació dreta"
 
 msgid "advanced_justifyfull_desc"
-msgstr "Justifica"
+msgstr "Justificat"
 
 msgid "advanced_bullist_desc"
-msgstr "Llista no ordenada"
+msgstr "Llista no numerada"
 
 msgid "advanced_numlist_desc"
-msgstr "Llista ordenada"
+msgstr "Llista numerada"
 
 msgid "advanced_outdent_desc"
 msgstr "Redueix el sagnat"
@@ -196,10 +196,10 @@ msgid "advanced_image_desc"
 msgstr "Insereix/edita imatge"
 
 msgid "advanced_cleanup_desc"
-msgstr "Neteja el codi no correcte"
+msgstr "Poleix el codi"
 
 msgid "advanced_code_desc"
-msgstr "Edita la font HTML"
+msgstr "Edita el codi font HTML"
 
 msgid "advanced_sub_desc"
 msgstr "Subíndex"
@@ -208,25 +208,25 @@ msgid "advanced_sup_desc"
 msgstr "Superíndex"
 
 msgid "advanced_hr_desc"
-msgstr "Insereix regle horitzontal"
+msgstr "Insereix un filet horitzontal"
 
 msgid "advanced_removeformat_desc"
 msgstr "Elimina el format"
 
 msgid "advanced_custom1_desc"
-msgstr "Aquí la teva descripció personalitzada"
+msgstr "Aquí la vostra pròpia descripció"
 
 msgid "advanced_forecolor_desc"
-msgstr "Selecciona el color del text"
+msgstr "Selecció del color de text"
 
 msgid "advanced_backcolor_desc"
-msgstr "Selecciona el color de fons"
+msgstr "Selecció del color de fons"
 
 msgid "advanced_charmap_desc"
-msgstr "Insereix caràcter personalitzat"
+msgstr "Insereix un caràcter"
 
 msgid "advanced_visualaid_desc"
-msgstr "Canvia els elements guies/invisibles"
+msgstr "Commuta elements guies/invisibles"
 
 msgid "advanced_anchor_desc"
 msgstr "Insereix/edita àncora"
@@ -250,19 +250,19 @@ msgid "advanced_help_desc"
 msgstr "Ajuda"
 
 msgid "advanced_blockquote_desc"
-msgstr "Descripció de la cita"
+msgstr "Citabloc"
 
 msgid "advanced_clipboard_msg"
-msgstr "Copia/Retalla/Enganxa no està disponible en Mozilla/Firefox.\nVols més informació sobre aquest tema?"
+msgstr "Copia/Retalla/Enganxa no es troba disponible ni al Mozilla ni al Firefox.\r\nVoleu més informació sobre això?"
 
 msgid "advanced_path"
 msgstr "Camí"
 
 msgid "advanced_newdocument"
-msgstr "Segur que vols esborrar tot el contingut?"
+msgstr "Esteu segur que voleu buidar tots els continguts?"
 
 msgid "advanced_toolbar_focus"
-msgstr "Salta als botons d'eines - Alt+Q, Salta a l'editor - Alt-Z, Salta al camí de l'element - Alt-X"
+msgstr "Salta als botons d'eina - Alt+Q, Salta a l'editor - Alt-Z, Salta al camí de l'element - Alt-X"
 
 msgid "advanced_more_colors"
 msgstr "Més colors"
@@ -298,7 +298,7 @@ msgid "advanced_anchor_delta_height"
 msgstr ""
 
 msgid "advanced_dlg_about_title"
-msgstr "Quant a TinyMCE"
+msgstr "Quant al TinyMCE"
 
 msgid "advanced_dlg_about_general"
 msgstr "Quant a"
@@ -310,10 +310,10 @@ msgid "advanced_dlg_about_license"
 msgstr "Llicència"
 
 msgid "advanced_dlg_about_plugins"
-msgstr "Extensions"
+msgstr "Connectors"
 
 msgid "advanced_dlg_about_plugin"
-msgstr "Extensió"
+msgstr "Connector"
 
 msgid "advanced_dlg_about_author"
 msgstr "Autor"
@@ -322,7 +322,7 @@ msgid "advanced_dlg_about_version"
 msgstr "Versió"
 
 msgid "advanced_dlg_about_loaded"
-msgstr "Extensions carregades"
+msgstr "Connectors carregats"
 
 msgid "advanced_dlg_anchor_title"
 msgstr "Insereix/edita àncora"
@@ -331,31 +331,31 @@ msgid "advanced_dlg_anchor_name"
 msgstr "Nom de l'àncora"
 
 msgid "advanced_dlg_code_title"
-msgstr "Editor de Font HTML"
+msgstr "Editor de codi font HTML"
 
 msgid "advanced_dlg_code_wordwrap"
-msgstr "Salt de paraula"
+msgstr "Embolcall de paraula"
 
 msgid "advanced_dlg_colorpicker_title"
-msgstr "Selecciona un color"
+msgstr "Selecció de color"
 
 msgid "advanced_dlg_colorpicker_picker_tab"
-msgstr "Triador"
+msgstr "Capturador"
 
 msgid "advanced_dlg_colorpicker_picker_title"
-msgstr "Triador de color"
+msgstr "Capturador de color"
 
 msgid "advanced_dlg_colorpicker_palette_tab"
 msgstr "Paleta"
 
 msgid "advanced_dlg_colorpicker_palette_title"
-msgstr "Colors de la paleta"
+msgstr "Paleta de colors"
 
 msgid "advanced_dlg_colorpicker_named_tab"
-msgstr "Amb nom"
+msgstr "Per nom"
 
 msgid "advanced_dlg_colorpicker_named_title"
-msgstr "Colors amb nom"
+msgstr "Colors pel seu nom"
 
 msgid "advanced_dlg_colorpicker_color"
 msgstr "Color:"
@@ -364,7 +364,7 @@ msgid "advanced_dlg_colorpicker_name"
 msgstr "Nom:"
 
 msgid "advanced_dlg_charmap_title"
-msgstr "Selecciona el caràcter personalitzat"
+msgstr "Selecció de caràcter"
 
 msgid "advanced_dlg_image_title"
 msgstr "Insereix/edita imatge"
@@ -376,7 +376,7 @@ msgid "advanced_dlg_image_alt"
 msgstr "Descripció de la imatge"
 
 msgid "advanced_dlg_image_list"
-msgstr "Llista d'imatges"
+msgstr "Llista de la imatge"
 
 msgid "advanced_dlg_image_border"
 msgstr "Vora"
@@ -385,31 +385,31 @@ msgid "advanced_dlg_image_dimensions"
 msgstr "Dimensions"
 
 msgid "advanced_dlg_image_vspace"
-msgstr "Espaiat vertical"
+msgstr "Espai vertical"
 
 msgid "advanced_dlg_image_hspace"
-msgstr "Espaiat horitzontal"
+msgstr "Espai horitzontal"
 
 msgid "advanced_dlg_image_align"
 msgstr "Alineació"
 
 msgid "advanced_dlg_image_align_baseline"
-msgstr "Línia base"
+msgstr "Línia de base"
 
 msgid "advanced_dlg_image_align_top"
-msgstr "Dalt"
+msgstr "A dalt"
 
 msgid "advanced_dlg_image_align_middle"
-msgstr "Mig"
+msgstr "Al Mig"
 
 msgid "advanced_dlg_image_align_bottom"
-msgstr "Baix"
+msgstr "A baix"
 
 msgid "advanced_dlg_image_align_texttop"
-msgstr "A dalt del text"
+msgstr "Part superior del text"
 
 msgid "advanced_dlg_image_align_textbottom"
-msgstr "A baix del text"
+msgstr "Part inferior del text"
 
 msgid "advanced_dlg_image_align_left"
 msgstr "Esquerra"
@@ -424,22 +424,22 @@ msgid "advanced_dlg_link_url"
 msgstr "URL de l'enllaç"
 
 msgid "advanced_dlg_link_target"
-msgstr "Objectiu"
+msgstr "Destí"
 
 msgid "advanced_dlg_link_target_same"
 msgstr "Obre l'enllaç a la mateixa finestra"
 
 msgid "advanced_dlg_link_target_blank"
-msgstr "Obre l'enllaç en una finestra nova"
+msgstr "Obre l'enllaç a una nova finestra"
 
 msgid "advanced_dlg_link_titlefield"
 msgstr "Títol"
 
 msgid "advanced_dlg_link_is_email"
-msgstr "L'URL que has introduït sembla una adreça de correu, vols afegir-hi el prefix mailto://?"
+msgstr "L'URL que heu introduït sembla ser una adreça de correu, voleu afegir-hi el prefix requerit mailto: ?"
 
 msgid "advanced_dlg_link_is_external"
-msgstr "L'URL que has introduït sembla un enllaç extern, vols afegir-hi el prefix http://?"
+msgstr "L'URL que heu introduït sembla ser un enllaç extern, voleu afegir-hi el prefix requerit http:// ?"
 
 msgid "advanced_dlg_link_list"
 msgstr "Llista d'enllaços"
@@ -451,7 +451,7 @@ msgid "contextmenu_left"
 msgstr "Esquerra"
 
 msgid "contextmenu_center"
-msgstr "Centrat"
+msgstr "Centre"
 
 msgid "contextmenu_right"
 msgstr "Dreta"
@@ -472,43 +472,43 @@ msgid "insertdatetime_inserttime_desc"
 msgstr "Insereix l'hora"
 
 msgid "insertdatetime_months_long"
-msgstr "Gener,Febrer,Març,Abril,Maig,Juny,Juliol,Agost,Setembre,Octubre,Novembre,Desembre"
+msgstr "Jgener,febrer,març,abril,maig,juny,juliol,agost,setembre,octubre,novembre,desembre"
 
 msgid "insertdatetime_months_short"
-msgstr "Gen,Feb,Mar,Abr,Mai,Jun,Jul,Ago,Set,Oct,Nov,Des"
+msgstr "gen.,febr.,març,abr.,maig,juny,jul.,ag.,set.,oct.,nov.,des."
 
 msgid "insertdatetime_day_long"
-msgstr "Diumenge,Dilluns,Dimarts,Dimecres,Dijous,Divendres,Dissabte,Diumenge"
+msgstr "diumenge,dilluns,dimarts,dimecres,dijous,divendres,dissabte,diumenge"
 
 msgid "insertdatetime_day_short"
-msgstr "Dmg,Dll,Dmt,Dmc,Djs,Dvs,Dss,Dmg"
+msgstr "dg.,dl.,dt.,dc.,dj.,dv.,ds.,dg."
 
 msgid "print_print_desc"
 msgstr "Imprimeix"
 
 msgid "preview_preview_desc"
-msgstr "Vista prèvia"
+msgstr "Previsualització"
 
 msgid "directionality_ltr_desc"
-msgstr "Direcció d'esquerra a dreta"
+msgstr "Direcció esquerra a dreta"
 
 msgid "directionality_rtl_desc"
-msgstr "Direcció de dreta a esquerra"
+msgstr "Direcció dreta a esquerra"
 
 msgid "layer_insertlayer_desc"
-msgstr "Insereix capa nova"
+msgstr "Insereix una nova capa"
 
 msgid "layer_forward_desc"
-msgstr "Desplaça endavant"
+msgstr "Mou endavant"
 
 msgid "layer_backward_desc"
-msgstr "Desplaça endarrere"
+msgstr "Mou endarrera"
 
 msgid "layer_absolute_desc"
-msgstr "Canvia el posicionament absolut"
+msgstr "Conmuta el posicionament absolut"
 
 msgid "layer_content"
-msgstr "Nova capa..."
+msgstr "Nova Capa..."
 
 msgid "save_save_desc"
 msgstr "Desa"
@@ -517,16 +517,16 @@ msgid "save_cancel_desc"
 msgstr "Cancel·la tots els canvis"
 
 msgid "nonbreaking_nonbreaking_desc"
-msgstr "Insereix espai no separable"
+msgstr "Insereix un caràcter espai en blanc"
 
 msgid "iespell_iespell_desc"
-msgstr "Comprovació ortogràfica"
+msgstr "Executa la correcció ortogràfica"
 
 msgid "iespell_download"
-msgstr "No s'ha detectat ieSpell. Vols instal·lar-lo ara?"
+msgstr "no he detectat l'ieSpell. Voleu instal·lar-ho?"
 
 msgid "advhr_advhr_desc"
-msgstr "Regle horitzontal"
+msgstr "Filet horitzontal"
 
 msgid "advhr_delta_width"
 msgstr ""
@@ -541,7 +541,7 @@ msgid "advhr_dlg_size"
 msgstr "Alçada"
 
 msgid "advhr_dlg_noshade"
-msgstr "Sense ombra"
+msgstr "Sense sombra"
 
 msgid "emotions_emotions_desc"
 msgstr "Emoticones"
@@ -553,25 +553,25 @@ msgid "emotions_delta_height"
 msgstr ""
 
 msgid "emotions_dlg_title"
-msgstr "Insereix emoticona"
+msgstr "Insereix una emoticona"
 
 msgid "emotions_dlg_desc"
 msgstr "Emoticones"
 
 msgid "emotions_dlg_cool"
-msgstr "Ben parit"
+msgstr "Guai"
 
 msgid "emotions_dlg_cry"
-msgstr "Plor"
+msgstr "Plorant"
 
 msgid "emotions_dlg_embarassed"
-msgstr "Vergonya"
+msgstr "Avergonyit"
 
 msgid "emotions_dlg_foot_in_mouth"
-msgstr "Muts i a la gàbia"
+msgstr "Amb un peu a la boca"
 
 msgid "emotions_dlg_frown"
-msgstr "Indiferent"
+msgstr "Arrufant les celles"
 
 msgid "emotions_dlg_innocent"
 msgstr "Innocent"
@@ -580,37 +580,37 @@ msgid "emotions_dlg_kiss"
 msgstr "Petó"
 
 msgid "emotions_dlg_laughing"
-msgstr "Rialla"
+msgstr "Rient"
 
 msgid "emotions_dlg_money_mouth"
-msgstr "Boca de diner"
+msgstr "Amb fam de diners"
 
 msgid "emotions_dlg_sealed"
-msgstr "Segellada"
+msgstr "Censurat"
 
 msgid "emotions_dlg_smile"
 msgstr "Somriure"
 
 msgid "emotions_dlg_surprised"
-msgstr "Sorpresa"
+msgstr "Sorprès"
 
 msgid "emotions_dlg_tongue_out"
-msgstr "Treu la llengua"
+msgstr "Llengua a fora"
 
 msgid "emotions_dlg_undecided"
-msgstr "Indecisa"
+msgstr "Indecís"
 
 msgid "emotions_dlg_wink"
-msgstr "Pica l'ullet"
+msgstr "Fent l'ullet"
 
 msgid "emotions_dlg_yell"
-msgstr "Crit"
+msgstr "Cridant"
 
 msgid "searchreplace_search_desc"
-msgstr "Busca"
+msgstr "Cerca"
 
 msgid "searchreplace_replace_desc"
-msgstr "Busca/Substitueix"
+msgstr "Cerca/Reemplaça"
 
 msgid "searchreplace_delta_width"
 msgstr ""
@@ -619,25 +619,25 @@ msgid "searchreplace_delta_height"
 msgstr ""
 
 msgid "searchreplace_dlg_searchnext_desc"
-msgstr "Torna a buscar"
+msgstr "Cerca de nou"
 
 msgid "searchreplace_dlg_notfound"
-msgstr "S'ha completat la recerca. No s'ha trobat la cadena buscada."
+msgstr "S'ha completat la cerca. No s'ha trobat la cadena cercada."
 
 msgid "searchreplace_dlg_search_title"
-msgstr "Busca"
+msgstr "Cerca"
 
 msgid "searchreplace_dlg_replace_title"
-msgstr "Busca/Substitueix"
+msgstr "Cerca/Reemplaça"
 
 msgid "searchreplace_dlg_allreplaced"
-msgstr "S'han substituït totes les ocurrències de la cadena buscada."
+msgstr "S'han reemplaçat totes les ocurrències de la cadena cercada."
 
 msgid "searchreplace_dlg_findwhat"
-msgstr "Busca"
+msgstr "Cerca"
 
 msgid "searchreplace_dlg_replacewith"
-msgstr "Substitueix per"
+msgstr "Reemplaça amb"
 
 msgid "searchreplace_dlg_direction"
 msgstr "Direcció"
@@ -649,16 +649,16 @@ msgid "searchreplace_dlg_down"
 msgstr "Avall"
 
 msgid "searchreplace_dlg_mcase"
-msgstr "Distingeix majúscules i minúscules"
+msgstr "Distingeix majúscules/minúscules"
 
 msgid "searchreplace_dlg_findnext"
 msgstr "Següent"
 
 msgid "searchreplace_dlg_replace"
-msgstr "Substitueix"
+msgstr "Reemplaça"
 
 msgid "searchreplace_dlg_replaceall"
-msgstr "Substitueix tot"
+msgstr "Reemplaça-ho tot"
 
 msgid "ploneimage_image_desc"
 msgstr "Insereix/edita imatge"
@@ -685,10 +685,10 @@ msgid "ploneimage_dlg_title"
 msgstr "Títol"
 
 msgid "ploneimage_dlg_preview"
-msgstr "Vista prèvia"
+msgstr "Previsualització"
 
 msgid "ploneimage_dlg_constrain_proportions"
-msgstr "Constreny les proporcions"
+msgstr "Manté la proporció"
 
 msgid "ploneimage_dlg_langdir"
 msgstr "Direcció de l'idioma"
@@ -697,7 +697,7 @@ msgid "ploneimage_dlg_langcode"
 msgstr "Codi de l'idioma"
 
 msgid "ploneimage_dlg_long_desc"
-msgstr "Descripció llarga"
+msgstr "Enllaç a la descripció llarga"
 
 msgid "ploneimage_dlg_style"
 msgstr "Estil"
@@ -715,19 +715,19 @@ msgid "ploneimage_dlg_id"
 msgstr "Id"
 
 msgid "ploneimage_dlg_map"
-msgstr "Mapa d'imatge"
+msgstr "Mapa de la imatge"
 
 msgid "ploneimage_dlg_swap_image"
-msgstr "Canvi d'imatge"
+msgstr "Canvia imatge"
 
 msgid "ploneimage_dlg_alt_image"
 msgstr "Imatge alternativa"
 
 msgid "ploneimage_dlg_mouseover"
-msgstr "amb el ratolí a sobre"
+msgstr "quan el ratolí arriba"
 
 msgid "ploneimage_dlg_mouseout"
-msgstr "amb el ratolí fora"
+msgstr "quan el ratolí marxa"
 
 msgid "ploneimage_dlg_misc"
 msgstr "Miscel·lània"
@@ -736,7 +736,7 @@ msgid "ploneimage_dlg_example_img"
 msgstr "Aparença imatge previsualitzada"
 
 msgid "ploneimage_dlg_missing_alt"
-msgstr "Segur que vols continuar sense incloure cap Descripció d'Imatge? Sense ella, la imatge no serà accessible a usuaris amb discapacitats, o a aquells que utilitzin un navegador de text, o els que naveguin amb les imatges desactivades."
+msgstr "Esteu segur que voleu continuar sense incloure una descripció de la imatge? La imatge pot no ser accessible a usuaris amb discapacitats, o a aquells que utilitzin navegadors de text o que naveguin amb les imatges desactivades."
 
 msgid "ploneimage_dlg_dialog_title"
 msgstr "Insereix/edita imatge"
@@ -748,7 +748,7 @@ msgid "ploneimage_dlg_alt"
 msgstr "Descripció de la imatge"
 
 msgid "ploneimage_dlg_list"
-msgstr "Llista d'imatges"
+msgstr "Llista de la imatge"
 
 msgid "ploneimage_dlg_border"
 msgstr "Vora"
@@ -757,43 +757,43 @@ msgid "ploneimage_dlg_dimensions"
 msgstr "Dimensions"
 
 msgid "ploneimage_dlg_vspace"
-msgstr "Espaiat vertical"
+msgstr "Espai vertical"
 
 msgid "ploneimage_dlg_hspace"
-msgstr "Espaiat horitzontal"
+msgstr "Espai horitzontal"
 
 msgid "ploneimage_dlg_align"
 msgstr "Alineació"
 
 msgid "ploneimage_dlg_align_baseline"
-msgstr "Línia base"
+msgstr "Línia de base"
 
 msgid "ploneimage_dlg_align_top"
-msgstr "Dalt"
+msgstr "Superior"
 
 msgid "ploneimage_dlg_align_middle"
-msgstr "Mig"
+msgstr "Mitjan lloc"
 
 msgid "ploneimage_dlg_align_bottom"
-msgstr "Baix"
+msgstr "Inferior"
 
 msgid "ploneimage_dlg_align_texttop"
-msgstr "A dalt del text"
+msgstr "Dalt del text"
 
 msgid "ploneimage_dlg_align_textbottom"
-msgstr "A baix del text"
+msgstr "Baix del text"
 
 msgid "ploneimage_dlg_align_left"
-msgstr "Esquerra"
+msgstr "A l'esquerra"
 
 msgid "ploneimage_dlg_align_right"
-msgstr "Dreta"
+msgstr "A la dreta"
 
 msgid "ploneimage_dlg_image_list"
 msgstr "Llista d'imatges"
 
 msgid "plonelink_link_desc"
-msgstr "Insereix/edita enllaç"
+msgstr "Insert/edit link"
 
 msgid "plonelink_delta_width"
 msgstr ""
@@ -814,10 +814,10 @@ msgid "plonelink_dlg_titlefield"
 msgstr "Títol"
 
 msgid "plonelink_dlg_is_email"
-msgstr "L'URL que has introduït sembla una adreça de correu, vols afegir-hi el prefix mailto://?"
+msgstr "L'URL que heu introduït sembla ser una adreça de correu electrònic, voleu afegir-hi el prefix requerit mailto: ?"
 
 msgid "plonelink_dlg_is_external"
-msgstr "L'URL que has introduït sembla un enllaç extern, vols afegir-hi el prefix http://?"
+msgstr "L'URL que heu introduït sembla ser un enllaç extern, voleu afegir-hi el prefix requerit http:// ?"
 
 msgid "plonelink_dlg_list"
 msgstr "Llista d'enllaços"
@@ -826,7 +826,7 @@ msgid "plonelink_dlg_general_tab"
 msgstr "General"
 
 msgid "plonelink_dlg_popup_tab"
-msgstr "Emergent"
+msgstr "Finestra emergent"
 
 msgid "plonelink_dlg_events_tab"
 msgstr "Esdeveniments"
@@ -838,7 +838,7 @@ msgid "plonelink_dlg_general_props"
 msgstr "Propietats generals"
 
 msgid "plonelink_dlg_popup_props"
-msgstr "Propietats de l'emergent"
+msgstr "Propietats de la finestra emergent"
 
 msgid "plonelink_dlg_event_props"
 msgstr "Esdeveniments"
@@ -856,19 +856,19 @@ msgid "plonelink_dlg_target_same"
 msgstr "Obre en aquesta finestra / marc"
 
 msgid "plonelink_dlg_target_parent"
-msgstr "Obre a la finestra /marc pare"
+msgstr "Obre en la finestra / marc pare"
 
 msgid "plonelink_dlg_target_top"
-msgstr "Obre en el marc superior (substitueix tots els marcs)"
+msgstr "Obre en el marc superior (reemplaça tots els marcs)"
 
 msgid "plonelink_dlg_target_blank"
-msgstr "Obre en una finestra nova"
+msgstr "Obre en una nova finestra"
 
 msgid "plonelink_dlg_popup"
-msgstr "Emergent Javascript"
+msgstr "Finestra emergent javascript"
 
 msgid "plonelink_dlg_popup_url"
-msgstr "URL de l'emergent"
+msgstr "URL de la finestra emergent"
 
 msgid "plonelink_dlg_popup_name"
 msgstr "Nom de la finestra"
@@ -883,7 +883,7 @@ msgid "plonelink_dlg_popup_statusbar"
 msgstr "Mostra la barra d'estat"
 
 msgid "plonelink_dlg_popup_toolbar"
-msgstr "Mostra les barres d'eines"
+msgstr "Mostra la barra d'eines"
 
 msgid "plonelink_dlg_popup_menubar"
 msgstr "Mostra la barra de menú"
@@ -892,7 +892,7 @@ msgid "plonelink_dlg_popup_location"
 msgstr "Mostra la barra d'ubicació"
 
 msgid "plonelink_dlg_popup_resizable"
-msgstr "La finestra es pot amidar"
+msgstr "Fes la finestra redimensionable"
 
 msgid "plonelink_dlg_popup_dependent"
 msgstr "Dependent (només Mozilla/Firefox)"
@@ -913,31 +913,31 @@ msgid "plonelink_dlg_classes"
 msgstr "Classes"
 
 msgid "plonelink_dlg_target_name"
-msgstr "Nom de l'objectiu"
+msgstr "Nom del destí"
 
 msgid "plonelink_dlg_langdir"
 msgstr "Direcció de l'idioma"
 
 msgid "plonelink_dlg_target_langcode"
-msgstr "Idioma objectiu"
+msgstr "Idioma del destí"
 
 msgid "plonelink_dlg_langcode"
 msgstr "Codi de l'idioma"
 
 msgid "plonelink_dlg_encoding"
-msgstr "Codificació de caràcters de l'objectiu"
+msgstr "Codificació de caràcters del destí"
 
 msgid "plonelink_dlg_mime"
-msgstr "Tipus MIME de l'objectiu"
+msgstr "Tipus MIME del destí"
 
 msgid "plonelink_dlg_rel"
-msgstr "Relació pàgina a objectiu"
+msgstr "Relació de pàgina a destí"
 
 msgid "plonelink_dlg_rev"
-msgstr "Relació objectiu a pàgina"
+msgstr "Relació de destí a pàgina"
 
 msgid "plonelink_dlg_tabindex"
-msgstr "Índex de taula"
+msgstr "Tabindex"
 
 msgid "plonelink_dlg_accesskey"
 msgstr "Accesskey"
@@ -955,19 +955,19 @@ msgid "xhtmlxtras_cite_desc"
 msgstr "Citació"
 
 msgid "xhtmlxtras_abbr_desc"
-msgstr "Abreujament"
+msgstr "Abreviació"
 
 msgid "xhtmlxtras_acronym_desc"
 msgstr "Acrònim"
 
 msgid "xhtmlxtras_del_desc"
-msgstr "Supressió"
+msgstr "Eliminació"
 
 msgid "xhtmlxtras_ins_desc"
 msgstr "Inserció"
 
 msgid "xhtmlxtras_attribs_desc"
-msgstr "Insereix/Edita Atributs"
+msgstr "Insereix/edita atributs"
 
 msgid "xhtmlxtras_cite_delta_width"
 msgstr ""
@@ -1024,7 +1024,7 @@ msgid "xhtmlxtras_dlg_attribute_label_datetime"
 msgstr "Data/Hora"
 
 msgid "xhtmlxtras_dlg_attribute_label_langdir"
-msgstr "Direcció del Text"
+msgstr "Direcció del text"
 
 msgid "xhtmlxtras_dlg_attribute_option_ltr"
 msgstr "D'esquerra a dreta"
@@ -1036,10 +1036,10 @@ msgid "xhtmlxtras_dlg_attribute_label_langcode"
 msgstr "Idioma"
 
 msgid "xhtmlxtras_dlg_attribute_label_tabindex"
-msgstr "Índex de taula"
+msgstr "TabIndex"
 
 msgid "xhtmlxtras_dlg_attribute_label_accesskey"
-msgstr "Clau d'accés"
+msgstr "AccessKey"
 
 msgid "xhtmlxtras_dlg_attribute_events_tab"
 msgstr "Esdeveniments"
@@ -1057,34 +1057,34 @@ msgid "xhtmlxtras_dlg_events_tab"
 msgstr "Esdeveniments"
 
 msgid "xhtmlxtras_dlg_fieldset_general_tab"
-msgstr "Configuració General"
+msgstr "Configuració general"
 
 msgid "xhtmlxtras_dlg_fieldset_attrib_tab"
-msgstr "Atributs de l'Element"
+msgstr "Atributs d'element"
 
 msgid "xhtmlxtras_dlg_fieldset_events_tab"
-msgstr "Esdeveniments de l'Element"
+msgstr "Esdeveniments d'element"
 
 msgid "xhtmlxtras_dlg_title_ins_element"
-msgstr "Element d'Inserció"
+msgstr "Element d'inserció"
 
 msgid "xhtmlxtras_dlg_title_del_element"
-msgstr "Element de Supressió"
+msgstr "Element d'eliminació"
 
 msgid "xhtmlxtras_dlg_title_acronym_element"
-msgstr "Element d'Acrònim"
+msgstr "Element d'acrònim"
 
 msgid "xhtmlxtras_dlg_title_abbr_element"
-msgstr "Element d'Abreujament"
+msgstr "Element d'abreviatura"
 
 msgid "xhtmlxtras_dlg_title_cite_element"
-msgstr "Element de Citació"
+msgstr "Element de menció"
 
 msgid "xhtmlxtras_dlg_remove"
 msgstr "Elimina"
 
 msgid "xhtmlxtras_dlg_insert_date"
-msgstr "Insereix la data/hora actual"
+msgstr "Insereix la data/hora actuals"
 
 msgid "xhtmlxtras_dlg_option_ltr"
 msgstr "D'esquerra a dreta"
@@ -1093,10 +1093,10 @@ msgid "xhtmlxtras_dlg_option_rtl"
 msgstr "De dreta a esquerra"
 
 msgid "xhtmlxtras_dlg_attribs_title"
-msgstr "Insereix/Edita Atributs"
+msgstr "Insereix/Edita atributs"
 
 msgid "style_desc"
-msgstr "Edita l'Estil CSS"
+msgstr "Edita l'estil CSS"
 
 msgid "style_delta_width"
 msgstr ""
@@ -1105,7 +1105,7 @@ msgid "style_delta_height"
 msgstr ""
 
 msgid "style_dlg_title"
-msgstr "Edita l'Estil CSS"
+msgstr "Edita els estils CSS"
 
 msgid "style_dlg_apply"
 msgstr "Aplica"
@@ -1120,10 +1120,10 @@ msgid "style_dlg_block_tab"
 msgstr "Bloc"
 
 msgid "style_dlg_box_tab"
-msgstr "Caixa"
+msgstr "Quadre"
 
 msgid "style_dlg_border_tab"
-msgstr "Vora"
+msgstr "Contorn"
 
 msgid "style_dlg_list_tab"
 msgstr "Llista"
@@ -1135,7 +1135,7 @@ msgid "style_dlg_text_props"
 msgstr "Text"
 
 msgid "style_dlg_text_font"
-msgstr "Tipografia"
+msgstr "Font"
 
 msgid "style_dlg_text_size"
 msgstr "Mida"
@@ -1147,13 +1147,13 @@ msgid "style_dlg_text_style"
 msgstr "Estil"
 
 msgid "style_dlg_text_variant"
-msgstr "Variació"
+msgstr "Variant"
 
 msgid "style_dlg_text_lineheight"
-msgstr "Alçada de la Línia"
+msgstr "Alçada de línia"
 
 msgid "style_dlg_text_case"
-msgstr "Caixa"
+msgstr "Cas"
 
 msgid "style_dlg_text_color"
 msgstr "Color"
@@ -1168,10 +1168,10 @@ msgid "style_dlg_text_underline"
 msgstr "subratllat"
 
 msgid "style_dlg_text_striketrough"
-msgstr "tatxat"
+msgstr "barrat"
 
 msgid "style_dlg_text_blink"
-msgstr "intermitent"
+msgstr "parpelleig"
 
 msgid "style_dlg_text_none"
 msgstr "cap"
@@ -1186,7 +1186,7 @@ msgid "style_dlg_background_repeat"
 msgstr "Repeteix"
 
 msgid "style_dlg_background_attachment"
-msgstr "Adjunció"
+msgstr "Adjunt"
 
 msgid "style_dlg_background_hpos"
 msgstr "Posició horitzontal"
@@ -1195,25 +1195,25 @@ msgid "style_dlg_background_vpos"
 msgstr "Posició vertical"
 
 msgid "style_dlg_block_wordspacing"
-msgstr "Espaiat de paraules"
+msgstr "Espaiat entre paraules"
 
 msgid "style_dlg_block_letterspacing"
-msgstr "Espaiat de lletres"
+msgstr "Espaiat entre lletres"
 
 msgid "style_dlg_block_vertical_alignment"
 msgstr "Alineació vertical"
 
 msgid "style_dlg_block_text_align"
-msgstr "Alineació del text"
+msgstr "Alinea el text"
 
 msgid "style_dlg_block_text_indent"
-msgstr "Sagnat del text"
+msgstr "Sagna el text"
 
 msgid "style_dlg_block_whitespace"
 msgstr "Espai en blanc"
 
 msgid "style_dlg_block_display"
-msgstr "Mostra"
+msgstr "Visualització"
 
 msgid "style_dlg_box_width"
 msgstr "Amplada"
@@ -1225,13 +1225,13 @@ msgid "style_dlg_box_float"
 msgstr "Flota"
 
 msgid "style_dlg_box_clear"
-msgstr "Neteja"
+msgstr "Buida"
 
 msgid "style_dlg_padding"
-msgstr "Farciment"
+msgstr "Separació"
 
 msgid "style_dlg_same"
-msgstr "Igual per a tots"
+msgstr "Igual per a tot"
 
 msgid "style_dlg_top"
 msgstr "Dalt"
@@ -1240,7 +1240,7 @@ msgid "style_dlg_right"
 msgstr "Dreta"
 
 msgid "style_dlg_bottom"
-msgstr "Baix"
+msgstr "Avall"
 
 msgid "style_dlg_left"
 msgstr "Esquerra"
@@ -1264,7 +1264,7 @@ msgid "style_dlg_list_type"
 msgstr "Tipus"
 
 msgid "style_dlg_bullet_image"
-msgstr "Imatge de pic"
+msgstr "Imatge pic"
 
 msgid "style_dlg_position"
 msgstr "Posició"
@@ -1276,85 +1276,85 @@ msgid "style_dlg_visibility"
 msgstr "Visibilitat"
 
 msgid "style_dlg_zindex"
-msgstr "Z-index"
+msgstr "Índex Z"
 
 msgid "style_dlg_overflow"
-msgstr "Sobreeiximent"
+msgstr "Desbordament"
 
 msgid "style_dlg_placement"
-msgstr "Col·locació"
+msgstr "Emplaçament"
 
 msgid "style_dlg_clip"
 msgstr "Retall"
 
 msgid "paste_paste_text_desc"
-msgstr "Enganxa com a Text Planer"
+msgstr "Enganxa com a text pla"
 
 msgid "paste_paste_word_desc"
-msgstr "Enganxa des de Word"
+msgstr "Enganxa des del Word"
 
 msgid "paste_selectall_desc"
-msgstr "Selecciona-ho Tot"
+msgstr "Selecciona-ho tot"
 
 msgid "paste_dlg_text_title"
-msgstr "Utilitza CTRL+V al teclat per enganxar el text a la finestra."
+msgstr "Amb el teclat utilitzeu CTRL+V per a enganxar el text dins la finestra."
 
 msgid "paste_dlg_text_linebreaks"
-msgstr "Mantingues els salts de línia"
+msgstr "Conserva els salts de línia"
 
 msgid "paste_dlg_word_title"
-msgstr "Utilitza CTRL+V al teclat per enganxar el text a la finestra."
+msgstr "Amb el teclat utilitzeu CTRL+V per a enganxar el text dins la finestra."
 
 msgid "table_desc"
 msgstr "Insereix una nova taula"
 
 msgid "table_row_before_desc"
-msgstr "Insereix fila abans"
+msgstr "Insereix una fila abans"
 
 msgid "table_row_after_desc"
-msgstr "Insereix fila després"
+msgstr "Insereix una fila després"
 
 msgid "table_delete_row_desc"
-msgstr "Suprimeix fila"
+msgstr "Elimina la fila"
 
 msgid "table_col_before_desc"
-msgstr "Insereix columna abans"
+msgstr "Insereix una columna abans"
 
 msgid "table_col_after_desc"
-msgstr "Insereix columna després"
+msgstr "Insereix una columna després"
 
 msgid "table_delete_col_desc"
-msgstr "Elimina columna"
+msgstr "Elimina la columna"
 
 msgid "table_split_cells_desc"
-msgstr "Parteix les cel·les refoses de la taula"
+msgstr "Divideix les cel·les fusionades"
 
 msgid "table_merge_cells_desc"
-msgstr "Refon les cel·les de la taula"
+msgstr "Fusiona les cel·les"
 
 msgid "table_row_desc"
-msgstr "Propietats de la fila de la taula"
+msgstr "Propietats de la fila"
 
 msgid "table_cell_desc"
-msgstr "Propietats de la cel·la de la taula"
+msgstr "Propietats de la cel·la"
 
 msgid "table_props_desc"
 msgstr "Propietats de la taula"
 
 msgid "table_paste_row_before_desc"
-msgstr "Enganxa la fila de la taula abans"
+msgstr "Enganxa la fila abans"
 
 msgid "table_paste_row_after_desc"
-msgstr "Enganxa la fila de la taula després"
+msgstr "Enganxa la fila després"
 
 msgid "table_cut_row_desc"
-msgstr "Retalla la fila de la taula"
+msgstr "Retalla la fila"
 
 msgid "table_copy_row_desc"
-msgstr "Copia la fila de la taula"
+msgstr "Copia la fila"
 
 msgid "table_del"
-msgstr "Suprimeix la taula"
+msgstr "Elimina la taula"
 
 msgid "table_row"
 msgstr "Fila"
@@ -1402,7 +1402,7 @@ msgid "table_dlg_advanced_props"
 msgstr "Propietats avançades"
 
 msgid "table_dlg_rowtype"
-msgstr "Part de la taula on és la fila"
+msgstr "Fila"
 
 msgid "table_dlg_title"
 msgstr "Insereix/Modifica taula"
@@ -1420,10 +1420,10 @@ msgid "table_dlg_rows"
 msgstr "Files"
 
 msgid "table_dlg_cellspacing"
-msgstr "Espai de Cel.la"
+msgstr "Espaiat de cel·la"
 
 msgid "table_dlg_cellpadding"
-msgstr "Espai de marge"
+msgstr "Separació de cel·la"
 
 msgid "table_dlg_border"
 msgstr "Vora"
@@ -1441,13 +1441,13 @@ msgid "table_dlg_align_right"
 msgstr "Dreta"
 
 msgid "table_dlg_align_middle"
-msgstr "Centrat"
+msgstr "Centre"
 
 msgid "table_dlg_row_title"
-msgstr "Propietats de la fila de la taula"
+msgstr "Propietats de fila"
 
 msgid "table_dlg_cell_title"
-msgstr "Propietats de la cel·la de la taula"
+msgstr "Propietats de cel·la"
 
 msgid "table_dlg_cell_type"
 msgstr "Tipus de cel·la"
@@ -1456,19 +1456,19 @@ msgid "table_dlg_valign"
 msgstr "Alineació vertical"
 
 msgid "table_dlg_align_top"
-msgstr "Dalt"
+msgstr "A dalt"
 
 msgid "table_dlg_align_bottom"
-msgstr "Baix"
+msgstr "A baix"
 
 msgid "table_dlg_bordercolor"
-msgstr "Color de la vora"
+msgstr "Color de vora"
 
 msgid "table_dlg_bgcolor"
-msgstr "Color del fons"
+msgstr "Color de fons"
 
 msgid "table_dlg_merge_cells_title"
-msgstr "Refon les cel·les de la taula"
+msgstr "Fusiona cel·les"
 
 msgid "table_dlg_id"
 msgstr "Id"
@@ -1477,13 +1477,13 @@ msgid "table_dlg_style"
 msgstr "Estil"
 
 msgid "table_dlg_langdir"
-msgstr "Direcció de l'Idioma"
+msgstr "Direcció de l'idioma"
 
 msgid "table_dlg_langcode"
 msgstr "Codi de l'idioma"
 
 msgid "table_dlg_mime"
-msgstr "Tipus MIME de l'objectiu"
+msgstr "Tipus MIME"
 
 msgid "table_dlg_ltr"
 msgstr "D'esquerra a dreta"
@@ -1504,7 +1504,7 @@ msgid "table_dlg_th"
 msgstr "Capçalera"
 
 msgid "table_dlg_cell_cell"
-msgstr "Actualitza la cel·la actual"
+msgstr "Actualitza la cel·la"
 
 msgid "table_dlg_cell_row"
 msgstr "Actualitza totes les cel·les de la fila"
@@ -1513,46 +1513,46 @@ msgid "table_dlg_cell_all"
 msgstr "Actualitza totes les cel·les de la taula"
 
 msgid "table_dlg_row_row"
-msgstr "Actualitza la fila actual"
+msgstr "Actualitza la fila"
 
 msgid "table_dlg_row_odd"
-msgstr "Actualitza les files senars de la taula"
+msgstr "Actualitza les files senars"
 
 msgid "table_dlg_row_even"
-msgstr "Actualitza les files parelles de la taula"
+msgstr "Actualitza les files parells"
 
 msgid "table_dlg_row_all"
-msgstr "Actualitza les files de la taula"
+msgstr "Actualitza totes les files"
 
 msgid "table_dlg_thead"
-msgstr "Capçalera de la Taula"
+msgstr "Capçalera de la taula"
 
 msgid "table_dlg_tbody"
-msgstr "Cos de la Taula"
+msgstr "Cos de la taula"
 
 msgid "table_dlg_tfoot"
-msgstr "Peu de la Taula"
+msgstr "Peu de la taula"
 
 msgid "table_dlg_scope"
 msgstr "Abast"
 
 msgid "table_dlg_rowgroup"
-msgstr "Grup de Files"
+msgstr "Grup de files"
 
 msgid "table_dlg_colgroup"
-msgstr "Grup de Columnes"
+msgstr "Grup de columnes"
 
 msgid "table_dlg_col_limit"
-msgstr "Has excedit el nombre màxim de columnes de {$cols}."
+msgstr "Heu superat el nombre màxim de columnes de {$cols}."
 
 msgid "table_dlg_row_limit"
-msgstr "Has excedit el nombre màxim de files de {$rows}."
+msgstr "Heu superat el nombre màxim de files de {$rows}."
 
 msgid "table_dlg_cell_limit"
-msgstr "Has excedit el nombre màxim de cel·les de {$cells}."
+msgstr "Heu superat el nombre màxim de cel·les de {$cells}.."
 
 msgid "table_dlg_missing_scope"
-msgstr "Segur que vols continuar sense especificar un abast per a les cel·les de capçalera d'aquesta taula? Sense això, alguns usuaris/es amb discapacitats tindran dificultats per entendre el contingut o les dades mostrades a la taula."
+msgstr "Esteu segur que voleu continuar sense indicar un abast per a aquesta cel·la de capçalera. Pot ser difícil per a alguns usuaris amb discapacitats entendre el contingut o les dades mostrades a la taula."
 
 msgid "table_dlg_caption"
 msgstr "Títol de la taula"
@@ -1573,22 +1573,22 @@ msgid "table_dlg_frame_cols"
 msgstr "columnes"
 
 msgid "table_dlg_frame_all"
-msgstr "totes"
+msgstr "tot"
 
 msgid "table_dlg_rules"
 msgstr "Regles"
 
 msgid "table_dlg_rules_void"
-msgstr "salta regles"
+msgstr "buit"
 
 msgid "table_dlg_rules_above"
-msgstr "sobre"
+msgstr "per damunt de"
 
 msgid "table_dlg_rules_below"
-msgstr "sota"
+msgstr "per sota de"
 
 msgid "table_dlg_rules_hsides"
-msgstr "banda horitzontal"
+msgstr "hsides"
 
 msgid "table_dlg_rules_lhs"
 msgstr "lhs"
@@ -1597,25 +1597,25 @@ msgid "table_dlg_rules_rhs"
 msgstr "rhs"
 
 msgid "table_dlg_rules_vsides"
-msgstr "banda vertical"
+msgstr "vsides"
 
 msgid "table_dlg_rules_box"
-msgstr "caixa"
+msgstr "quadre"
 
 msgid "table_dlg_rules_border"
 msgstr "vora"
 
 msgid "autosave_unload_msg"
-msgstr "Els canvis que has fet es perdran si surts d'aquesta pàgina."
+msgstr "Els canvis que heu fet es perdran si navegueu a fora d'aquesta pàgina."
 
 msgid "fullscreen_desc"
-msgstr "Mode de pantalla completa"
+msgstr "Commuta a mode de pantalla completa"
 
 msgid "media_desc"
-msgstr "Insereix / edita mitjà encastat"
+msgstr "Insereix / edita multimèdia incrustat"
 
 msgid "media_edit"
-msgstr "Edita mitjà encastat"
+msgstr "Edita multimèdia incrustat"
 
 msgid "media_delta_width"
 msgstr ""
@@ -1624,7 +1624,7 @@ msgid "media_delta_height"
 msgstr ""
 
 msgid "media_dlg_title"
-msgstr "Insereix / edita mitjà encastat"
+msgstr "Insereix / edita multimèdia incrustada"
 
 msgid "media_dlg_general"
 msgstr "General"
@@ -1642,10 +1642,10 @@ msgid "media_dlg_size"
 msgstr "Dimensions"
 
 msgid "media_dlg_preview"
-msgstr "Vista prèvia"
+msgstr "Previsualització"
 
 msgid "media_dlg_constrain_proportions"
-msgstr "Constreny les proporcions"
+msgstr "Manté les proporcions"
 
 msgid "media_dlg_type"
 msgstr "Tipus"
@@ -1660,16 +1660,16 @@ msgid "media_dlg_class_name"
 msgstr "Classe"
 
 msgid "media_dlg_vspace"
-msgstr "Espaiat V"
+msgstr "Espai vertical"
 
 msgid "media_dlg_hspace"
-msgstr "Espaiat H"
+msgstr "Espai horitzontal"
 
 msgid "media_dlg_play"
-msgstr "Auto reprodueix"
+msgstr "Reproducció automàtica"
 
 msgid "media_dlg_loop"
-msgstr "Cicle"
+msgstr "Bucle"
 
 msgid "media_dlg_menu"
 msgstr "Mostra el menú"
@@ -1681,13 +1681,13 @@ msgid "media_dlg_scale"
 msgstr "Escala"
 
 msgid "media_dlg_align"
-msgstr "Alineació"
+msgstr "Alinea"
 
 msgid "media_dlg_salign"
-msgstr "Alíniació"
+msgstr "Alinea S"
 
 msgid "media_dlg_wmode"
-msgstr "Mode de finestra"
+msgstr "Mode W"
 
 msgid "media_dlg_bgcolor"
 msgstr "Fons"
@@ -1696,16 +1696,16 @@ msgid "media_dlg_base"
 msgstr "Base"
 
 msgid "media_dlg_flashvars"
-msgstr "Variables Flash"
+msgstr "Flashvars"
 
 msgid "media_dlg_liveconnect"
-msgstr "Connexió directa SW"
+msgstr "SWLiveConnect"
 
 msgid "media_dlg_autohref"
 msgstr "AutoHREF"
 
 msgid "media_dlg_cache"
-msgstr "Cau"
+msgstr "Memòria cau"
 
 msgid "media_dlg_hidden"
 msgstr "Ocult"
@@ -1714,70 +1714,70 @@ msgid "media_dlg_controller"
 msgstr "Controlador"
 
 msgid "media_dlg_kioskmode"
-msgstr "Mode kiosk"
+msgstr "Mode quiosc"
 
 msgid "media_dlg_playeveryframe"
 msgstr "Reprodueix cada marc"
 
 msgid "media_dlg_targetcache"
-msgstr "Cau objectiu"
+msgstr "Target cache"
 
 msgid "media_dlg_correction"
 msgstr "Sense correcció"
 
 msgid "media_dlg_enablejavascript"
-msgstr "Activa JavaScript"
+msgstr "Habilita el javascript"
 
 msgid "media_dlg_starttime"
-msgstr "Hora inicial"
+msgstr "Inici"
 
 msgid "media_dlg_endtime"
-msgstr "Hora final"
+msgstr "Fi"
 
 msgid "media_dlg_href"
 msgstr "Href"
 
 msgid "media_dlg_qtsrcchokespeed"
-msgstr "restringeix la velocitat"
+msgstr "Velocitat"
 
 msgid "media_dlg_target"
-msgstr "Objectiu"
+msgstr "Destí"
 
 msgid "media_dlg_volume"
-msgstr "Volum"
+msgstr "Volumen"
 
 msgid "media_dlg_autostart"
-msgstr "Auto inici"
+msgstr "Inici automàtic"
 
 msgid "media_dlg_enabled"
-msgstr "Activat"
+msgstr "Habilitat"
 
 msgid "media_dlg_fullscreen"
 msgstr "Pantalla completa"
 
 msgid "media_dlg_invokeurls"
-msgstr "Invoca URLs"
+msgstr "Invoca els URL"
 
 msgid "media_dlg_mute"
-msgstr "Sense so"
+msgstr "Silenci"
 
 msgid "media_dlg_stretchtofit"
-msgstr "Estira per encaixar"
+msgstr "Estirar fins a encaixar"
 
 msgid "media_dlg_windowlessvideo"
 msgstr "Vídeo sense finestra"
 
 msgid "media_dlg_balance"
-msgstr "Balanç"
+msgstr "Equilibri"
 
 msgid "media_dlg_baseurl"
 msgstr "URL base"
 
 msgid "media_dlg_captioningid"
-msgstr "Id del títol"
+msgstr "Id nominal"
 
 msgid "media_dlg_currentmarker"
-msgstr "Marcador actual"
+msgstr "Retolador actual"
 
 msgid "media_dlg_currentposition"
 msgstr "Posició actual"
@@ -1786,145 +1786,145 @@ msgid "media_dlg_defaultframe"
 msgstr "Marc per defecte"
 
 msgid "media_dlg_playcount"
-msgstr "Recompte de reproduccions"
+msgstr "Compte de reproducció"
 
 msgid "media_dlg_rate"
-msgstr "Ritme"
+msgstr "Velocitat"
 
 msgid "media_dlg_uimode"
-msgstr "Mode de la UI"
+msgstr "Mode UI"
 
 msgid "media_dlg_flash_options"
-msgstr "Opcions Flash"
+msgstr "Opcions del Flash"
 
 msgid "media_dlg_qt_options"
-msgstr "Opcions Quicktime"
+msgstr "Opcions del Quicktime"
 
 msgid "media_dlg_wmp_options"
-msgstr "Opcions Windows Media Player"
+msgstr "Opcions del Windows media player"
 
 msgid "media_dlg_rmp_options"
-msgstr "Opcions Real Meedia Player"
+msgstr "Opcions del Real media player"
 
 msgid "media_dlg_shockwave_options"
-msgstr "Opcions Shockwave"
+msgstr "Opcions del Shockwave"
 
 msgid "media_dlg_autogotourl"
-msgstr "URL Auto goto"
+msgstr "URL goto automàtic"
 
 msgid "media_dlg_center"
-msgstr "Centrat"
+msgstr "Alinea al centre"
 
 msgid "media_dlg_imagestatus"
 msgstr "Estat de la imatge"
 
 msgid "media_dlg_maintainaspect"
-msgstr "Matingues l'aspecte"
+msgstr "Manté l'aspecte"
 
 msgid "media_dlg_nojava"
 msgstr "Sense java"
 
 msgid "media_dlg_prefetch"
-msgstr "Precerca"
+msgstr "Precàrrega"
 
 msgid "media_dlg_shuffle"
-msgstr "Barreja"
+msgstr "Shuffle"
 
 msgid "media_dlg_console"
 msgstr "Consola"
 
 msgid "media_dlg_numloop"
-msgstr "Nº de cicles"
+msgstr "Nre. bucles"
 
 msgid "media_dlg_controls"
 msgstr "Controls"
 
 msgid "media_dlg_scriptcallbacks"
-msgstr "Retorns a script"
+msgstr "Crides de retorn a script"
 
 msgid "media_dlg_swstretchstyle"
-msgstr "Estil d'estirament"
+msgstr "Estil de l'extensor"
 
 msgid "media_dlg_swstretchhalign"
-msgstr "Estirament de l'alineació H"
+msgstr "Alineació horitzontal de l'extensor"
 
 msgid "media_dlg_swstretchvalign"
-msgstr "Estirament de l'alineació V"
+msgstr "Alineació vertical de l'extensor"
 
 msgid "media_dlg_sound"
-msgstr "So"
+msgstr "Sò"
 
 msgid "media_dlg_progress"
 msgstr "Progrés"
 
 msgid "media_dlg_qtsrc"
-msgstr "Font QT"
+msgstr "QT Src"
 
 msgid "media_dlg_qt_stream_warn"
-msgstr "Els recursos rtsp stream no s'han d'afegir al camp Font QT sota la pestanya Avançada.\nhas d'afegir també una versió no-stream al camp Font."
+msgstr "Els recursos rtsp fets flux s'haurien d'afegir al camp QT Src sota la pestanya avançada.\nTambé hauríeu d'afegir una versió no feta flux al camp Src.."
 
 msgid "media_dlg_align_top"
-msgstr "Dalt"
+msgstr "Superior"
 
 msgid "media_dlg_align_right"
 msgstr "Dreta"
 
 msgid "media_dlg_align_bottom"
-msgstr "Baix"
+msgstr "Inferior"
 
 msgid "media_dlg_align_left"
 msgstr "Esquerra"
 
 msgid "media_dlg_align_center"
-msgstr "Centrat"
+msgstr "Centre"
 
 msgid "media_dlg_align_top_left"
-msgstr "Dalt esquerra"
+msgstr "Superior esquerra"
 
 msgid "media_dlg_align_top_right"
-msgstr "Dalt dreta"
+msgstr "Superior dreta"
 
 msgid "media_dlg_align_bottom_left"
-msgstr "Baix esquerra"
+msgstr "Inferior esquerra"
 
 msgid "media_dlg_align_bottom_right"
-msgstr "Baix dreta"
+msgstr "Inferior dreta"
 
 msgid "media_dlg_flv_options"
 msgstr "Opcions de vídeo Flash"
 
 msgid "media_dlg_flv_scalemode"
-msgstr "Mode d'escala"
+msgstr "Mode d'escalat"
 
 msgid "media_dlg_flv_buffer"
-msgstr "Buffer"
+msgstr "Memòria intermèdia"
 
 msgid "media_dlg_flv_startimage"
-msgstr "Imatge inicial"
+msgstr "Imatge d'inici"
 
 msgid "media_dlg_flv_starttime"
-msgstr "Hora inicial"
+msgstr "Hora d'inici"
 
 msgid "media_dlg_flv_defaultvolume"
-msgstr "Volum per defecte"
+msgstr "Volumen per defecte"
 
 msgid "media_dlg_flv_hiddengui"
-msgstr "GUI Amagada"
+msgstr "GUI ocult"
 
 msgid "media_dlg_flv_autostart"
-msgstr "Auto inici"
+msgstr "Inici automàtic"
 
 msgid "media_dlg_flv_loop"
-msgstr "Cicle"
+msgstr "Bucle"
 
 msgid "media_dlg_flv_showscalemodes"
-msgstr "Mostra els modes d'escala"
+msgstr "Mostra els modes d'escalat"
 
 msgid "media_dlg_flv_smoothvideo"
 msgstr "Vídeo suau"
 
 msgid "media_dlg_flv_jscallback"
-msgstr "Retorn JS"
+msgstr "Crida de retorn JS"
 
 msgid "fullpage_desc"
 msgstr "Propietats del document"
@@ -1948,7 +1948,7 @@ msgid "fullpage_dlg_advanced_tab"
 msgstr "Avançat"
 
 msgid "fullpage_dlg_meta_props"
-msgstr "Meta informació"
+msgstr "Metainformació"
 
 msgid "fullpage_dlg_langprops"
 msgstr "Idioma i codificació"
@@ -1969,7 +1969,7 @@ msgid "fullpage_dlg_doctypes"
 msgstr "Doctype"
 
 msgid "fullpage_dlg_langcode"
-msgstr "Codi de l'idioma"
+msgstr "Codi d'idioma"
 
 msgid "fullpage_dlg_langdir"
 msgstr "Direcció de l'idioma"
@@ -1984,7 +1984,7 @@ msgid "fullpage_dlg_xml_pi"
 msgstr "Declaració XML"
 
 msgid "fullpage_dlg_encoding"
-msgstr "Codificació de caràcters"
+msgstr "Codificació dels caràcters"
 
 msgid "fullpage_dlg_appearance_bgprops"
 msgstr "Propietats del fons"
@@ -1993,16 +1993,16 @@ msgid "fullpage_dlg_appearance_marginprops"
 msgstr "Marges del cos"
 
 msgid "fullpage_dlg_appearance_linkprops"
-msgstr "Colors dels enllaços"
+msgstr "Colors d'enllaç"
 
 msgid "fullpage_dlg_appearance_textprops"
 msgstr "Propietats del text"
 
 msgid "fullpage_dlg_bgcolor"
-msgstr "Color de fons"
+msgstr "Color del fons"
 
 msgid "fullpage_dlg_bgimage"
-msgstr "Imatge de fons"
+msgstr "Imatge del fons"
 
 msgid "fullpage_dlg_left_margin"
 msgstr "Marge esquerre"
@@ -2020,31 +2020,31 @@ msgid "fullpage_dlg_text_color"
 msgstr "Color del text"
 
 msgid "fullpage_dlg_font_size"
-msgstr "Mida de lletra"
+msgstr "Mida de la font"
 
 msgid "fullpage_dlg_font_face"
-msgstr "Tipografia"
+msgstr "Font"
 
 msgid "fullpage_dlg_link_color"
-msgstr "Color dels enllaços"
+msgstr "Color d'enllaç"
 
 msgid "fullpage_dlg_hover_color"
-msgstr "Color ressaltat"
+msgstr "Color quan es passi per sobre"
 
 msgid "fullpage_dlg_visited_color"
-msgstr "Color visitat"
+msgstr "Color quan ja és visitat"
 
 msgid "fullpage_dlg_active_color"
-msgstr "Color actiu"
+msgstr "Color quan és actiu"
 
 msgid "fullpage_dlg_textcolor"
 msgstr "Color"
 
 msgid "fullpage_dlg_fontsize"
-msgstr "Mida de lletra"
+msgstr "Mida de la font"
 
 msgid "fullpage_dlg_fontface"
-msgstr "Tipografia"
+msgstr "Família de la font"
 
 msgid "fullpage_dlg_meta_index_follow"
 msgstr "Indexa i segueix els enllaços"
@@ -2059,7 +2059,7 @@ msgid "fullpage_dlg_meta_noindex_nofollow"
 msgstr "No indexis i no segueixis els enllaços"
 
 msgid "fullpage_dlg_appearance_style"
-msgstr "Propietats dels estils i fulls d'estils"
+msgstr "Full d'estils i propietats dels estils"
 
 msgid "fullpage_dlg_stylesheet"
 msgstr "Full d'estils"
@@ -2074,61 +2074,61 @@ msgid "fullpage_dlg_copyright"
 msgstr "Copyright"
 
 msgid "fullpage_dlg_add"
-msgstr "Afegeix element nou"
+msgstr "Afegeix un nou element"
 
 msgid "fullpage_dlg_remove"
 msgstr "Elimina l'element seleccionat"
 
 msgid "fullpage_dlg_moveup"
-msgstr "Desplaça amunt l'element seleccionat"
+msgstr "Mou amunt l'element seleccionat"
 
 msgid "fullpage_dlg_movedown"
-msgstr "Desplaça avall l'element seleccionat"
+msgstr "Mou avall l'element seleccionat"
 
 msgid "fullpage_dlg_head_elements"
-msgstr "Elements de capçalera"
+msgstr "Elements d'encapçalament"
 
 msgid "fullpage_dlg_info"
 msgstr "Informació"
 
 msgid "fullpage_dlg_add_title"
-msgstr "Element Title"
+msgstr "Element títol"
 
 msgid "fullpage_dlg_add_meta"
-msgstr "Element Meta"
+msgstr "Element meta"
 
 msgid "fullpage_dlg_add_script"
-msgstr "Element Script"
+msgstr "Element script"
 
 msgid "fullpage_dlg_add_style"
-msgstr "Element Style"
+msgstr "Element estil"
 
 msgid "fullpage_dlg_add_link"
-msgstr "Element Link"
+msgstr "Element enllaç"
 
 msgid "fullpage_dlg_add_base"
-msgstr "Element Base"
+msgstr "Element base"
 
 msgid "fullpage_dlg_add_comment"
-msgstr "Node de comentari"
+msgstr "Node comentari"
 
 msgid "fullpage_dlg_title_element"
-msgstr "Element Title"
+msgstr "Element títol"
 
 msgid "fullpage_dlg_script_element"
-msgstr "Element Script"
+msgstr "Element script"
 
 msgid "fullpage_dlg_style_element"
-msgstr "Element Style"
+msgstr "Element estil"
 
 msgid "fullpage_dlg_base_element"
-msgstr "Element Base"
+msgstr "Element base"
 
 msgid "fullpage_dlg_link_element"
-msgstr "Element Link"
+msgstr "Element enllaç"
 
 msgid "fullpage_dlg_meta_element"
-msgstr "Element Meta"
+msgstr "Element meta"
 
 msgid "fullpage_dlg_comment_element"
 msgstr "Comentari"
@@ -2143,7 +2143,7 @@ msgid "fullpage_dlg_href"
 msgstr "Href"
 
 msgid "fullpage_dlg_target"
-msgstr "Target"
+msgstr "Destí"
 
 msgid "fullpage_dlg_type"
 msgstr "Type"
@@ -2167,7 +2167,7 @@ msgid "fullpage_dlg_value"
 msgstr "Valor"
 
 msgid "fullpage_dlg_content"
-msgstr "Content"
+msgstr "Contingut"
 
 msgid "fullpage_dlg_rel"
 msgstr "Rel"
@@ -2185,7 +2185,7 @@ msgid "fullpage_dlg_advanced_props"
 msgstr "Avançat"
 
 msgid "template_desc"
-msgstr "Insereix contingut predefinit de plantilla"
+msgstr "Insereix un contingut predefinit"
 
 msgid "template_dlg_title"
 msgstr "Plantilles"
@@ -2197,16 +2197,16 @@ msgid "template_dlg_desc_label"
 msgstr "Descripció"
 
 msgid "template_dlg_desc"
-msgstr "Insereix contingut predefinit de plantilla"
+msgstr "Insereix el contingut de plantilla predefinit"
 
 msgid "template_dlg_select"
-msgstr "Selecciona una plantilla"
+msgstr "Seleccioneu una plantilla"
 
 msgid "template_dlg_preview"
-msgstr "Vista prèvia"
+msgstr "Previsualització"
 
 msgid "template_dlg_warning"
-msgstr "Atenció: Actualitzar una plantilla amb una de diferent pot provocar pèrdua de dades."
+msgstr "Avís: Actualitzar una plantilla amb una altra diferent pot provocar pèrdua d'informació."
 
 msgid "template_dlg_mdate_format"
 msgstr "%d-%m-%Y %H:%M:%S"
@@ -2215,47 +2215,47 @@ msgid "template_dlg_cdate_format"
 msgstr "%d-%m-%Y %H:%M:%S"
 
 msgid "template_dlg_months_long"
-msgstr "Gener,Febrer,Març,Abril,Maig,Juny,Juliol,Agost,Setembre,Octubre,Novembre,Desembre"
+msgstr "gener,febrer,març,abril,maig,juny,juliol,agost,setembre,octubre,novembre,desembre"
 
 msgid "template_dlg_months_short"
-msgstr "Gen,Feb,Mar,Abr,Mai,Jun,Jul,Ago,Set,Oct,Nov,Des"
+msgstr "gen.,febr.,març,abr.,maig,juny,jul.,ag.,set.,oct.,nov.,des."
 
 msgid "template_dlg_day_long"
-msgstr "Diumenge,Dilluns,Dimarts,Dimecres,Dijous,Divendres,Dissabte,Diumenge"
+msgstr "diumenge,dilluns,dimarts,dimecres,dijous,divendres,dissabte,diumenge"
 
 msgid "template_dlg_day_short"
-msgstr "Dmg,Dll,Dmt,Dmc,Djs,Dvs,Dss,Dmg"
+msgstr "dg.,dl.,dt.,dc.,dj.,dv.,ds.,dg."
 
 msgid "visualchars_desc"
-msgstr "Caràcters de control visual des/activats."
+msgstr "Activa/desactiva els caràcters de control visual."
 
 msgid "spellchecker_desc"
-msgstr "Des/activa el corrector ortogràfic"
+msgstr "Corrector ortogràfic"
 
 msgid "spellchecker_menu"
 msgstr "Configuració del corrector"
 
 msgid "spellchecker_ignore_word"
-msgstr "Ignora"
+msgstr "Ignora el mot"
 
 msgid "spellchecker_ignore_words"
-msgstr "Ignora-les totes"
+msgstr "Ignora'ls tots"
 
 msgid "spellchecker_langs"
 msgstr "Idiomes"
 
 msgid "spellchecker_wait"
-msgstr "Espera, si et plau..."
+msgstr "Espereu..."
 
 msgid "spellchecker_sug"
 msgstr "Suggeriments"
 
 msgid "spellchecker_no_sug"
-msgstr "No hi ha cap suggeriment"
+msgstr "Cap suggeriment"
 
 msgid "spellchecker_no_mpell"
-msgstr "No s'ha trobat cap incorrecció."
+msgstr "No s'ha trobat cap falta d'ortografia."
 
 msgid "pagebreak_desc"
-msgstr "Insereix salt de pàgina."
+msgstr "Insereix un salt de pàgina."
 

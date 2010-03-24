@@ -1,14 +1,14 @@
 # Český jazykový balík pro TinyMCE verze 3.0+
-# Version 14.2
+# Version 19.0
 #
-# DrakDarts.com
+# Gabriel Schwardy (caleydon@gmail.com); Jaroslav Hykyš (jaroslav.hykys@seznam.cz); DrakDarts.com
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2009-08-10 00:00+0000\n"
-"Last-Translator: DrakDarts.com\n"
-"Language-Team: DrakDarts.com\n"
+"PO-Revision-Date: 2010-03-18 00:00+0000\n"
+"Last-Translator: Gabriel Schwardy (caleydon@gmail.com); Jaroslav Hykyš (jaroslav.hykys@seznam.cz); DrakDarts.com\n"
+"Language-Team: Gabriel Schwardy (caleydon@gmail.com); Jaroslav Hykyš (jaroslav.hykys@seznam.cz); DrakDarts.com\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -52,7 +52,7 @@ msgid "common_clipboard_no_support"
 msgstr "Tato funkce není vaším prohlížečem podporována. Použijte klávesové zkratky."
 
 msgid "common_popup_blocked"
-msgstr "Blokování vyskakovacích oken neumožnilo otevřít okno, nutné pro funkci aplikace. Pro plné využití možností vypnÄte blokování vyskakovacích oken pro tento web."
+msgstr "Blokování vyskakovacích oken neumožnilo otevřít okno, nutné pro funkci aplikace. Pro plné využití možností vypněte blokování vyskakovacích oken pro tento web."
 
 msgid "common_invalid_data"
 msgstr "Chyba: Vložená chybná data jsou označena červeně."
@@ -199,7 +199,7 @@ msgid "advanced_cleanup_desc"
 msgstr "Vyčistit kód"
 
 msgid "advanced_code_desc"
-msgstr "Editovat HTML kód"
+msgstr "Upravit HTML kód"
 
 msgid "advanced_sub_desc"
 msgstr "Dolní index"
@@ -301,7 +301,7 @@ msgid "advanced_dlg_about_title"
 msgstr "O TinyMCE"
 
 msgid "advanced_dlg_about_general"
-msgstr "O nás"
+msgstr "O programu"
 
 msgid "advanced_dlg_about_help"
 msgstr "Nápověda"
@@ -499,7 +499,7 @@ msgid "layer_insertlayer_desc"
 msgstr "Vložit novou vrstvu"
 
 msgid "layer_forward_desc"
-msgstr "Přesunout doPředu"
+msgstr "Přesunout dopředu"
 
 msgid "layer_backward_desc"
 msgstr "Přesunout dozadu"
@@ -517,7 +517,7 @@ msgid "save_cancel_desc"
 msgstr "Zrušit všechny změny"
 
 msgid "nonbreaking_nonbreaking_desc"
-msgstr "Vložit pevnou mezeru"
+msgstr "Vložit nedělitelnou mezeru"
 
 msgid "iespell_iespell_desc"
 msgstr "Kontrolovat pravopis"
@@ -1036,7 +1036,7 @@ msgid "xhtmlxtras_dlg_attribute_label_langcode"
 msgstr "Jazyk"
 
 msgid "xhtmlxtras_dlg_attribute_label_tabindex"
-msgstr "Tabindex"
+msgstr "Tabulátor"
 
 msgid "xhtmlxtras_dlg_attribute_label_accesskey"
 msgstr "Přístupová klávesa"
@@ -1093,7 +1093,7 @@ msgid "xhtmlxtras_dlg_option_rtl"
 msgstr "Zprava doleva"
 
 msgid "xhtmlxtras_dlg_attribs_title"
-msgstr "Vložit/editovat atributy"
+msgstr "Vložit/upravit atributy"
 
 msgid "style_desc"
 msgstr "Upravit CSS styl"
@@ -1150,7 +1150,7 @@ msgid "style_dlg_text_variant"
 msgstr "Varianta"
 
 msgid "style_dlg_text_lineheight"
-msgstr "TloušĹĽka čáry"
+msgstr "Tloušťka čáry"
 
 msgid "style_dlg_text_case"
 msgstr "Případ"
@@ -1309,22 +1309,22 @@ msgid "table_desc"
 msgstr "Vložit novou tabulku"
 
 msgid "table_row_before_desc"
-msgstr "Vložit řádek Před"
+msgstr "Vložit řádek před"
 
 msgid "table_row_after_desc"
 msgstr "Vložit řádek za"
 
 msgid "table_delete_row_desc"
-msgstr "Vymazat řádek"
+msgstr "Odstranit řádek"
 
 msgid "table_col_before_desc"
-msgstr "Vložit sloupec Před"
+msgstr "Vložit sloupec před"
 
 msgid "table_col_after_desc"
 msgstr "Vložit sloupec za"
 
 msgid "table_delete_col_desc"
-msgstr "Vymazat sloupec"
+msgstr "Odstranit sloupec"
 
 msgid "table_split_cells_desc"
 msgstr "Rozdělit buňky"
@@ -1342,7 +1342,7 @@ msgid "table_props_desc"
 msgstr "Vlastnosti tabulky"
 
 msgid "table_paste_row_before_desc"
-msgstr "Vložit řádek Před"
+msgstr "Vložit řádek před"
 
 msgid "table_paste_row_after_desc"
 msgstr "Vložit řádek za"
@@ -1354,7 +1354,7 @@ msgid "table_copy_row_desc"
 msgstr "Kopírovat řádek"
 
 msgid "table_del"
-msgstr "Vymazat tabulku"
+msgstr "Odstranit tabulku"
 
 msgid "table_row"
 msgstr "Řádek"
@@ -1612,10 +1612,10 @@ msgid "fullscreen_desc"
 msgstr "Přepnout na celostránkové zobrazení"
 
 msgid "media_desc"
-msgstr "Vložit/editovat média"
+msgstr "Vložit/upravit média"
 
 msgid "media_edit"
-msgstr "Editovat média"
+msgstr "Upravit média"
 
 msgid "media_delta_width"
 msgstr ""
@@ -1624,7 +1624,7 @@ msgid "media_delta_height"
 msgstr ""
 
 msgid "media_dlg_title"
-msgstr "Vložit/editovat vkládaná média"
+msgstr "Vložit/upravit vkládaná média"
 
 msgid "media_dlg_general"
 msgstr "Hlavní"
@@ -1666,7 +1666,7 @@ msgid "media_dlg_hspace"
 msgstr "Horiz. odsazení"
 
 msgid "media_dlg_play"
-msgstr "AutoPřehrávání"
+msgstr "Auto-přehrávání"
 
 msgid "media_dlg_loop"
 msgstr "Smyčka"
@@ -1852,7 +1852,7 @@ msgid "media_dlg_swstretchvalign"
 msgstr "Stretch V-Align"
 
 msgid "media_dlg_sound"
-msgstr "Sound"
+msgstr "Hlasitost"
 
 msgid "media_dlg_progress"
 msgstr "Progress"
@@ -1864,31 +1864,31 @@ msgid "media_dlg_qt_stream_warn"
 msgstr "Streamed rtsp resources should be added to the QT Src field under the advanced tab.\nYou should also add a non streamed version to the Src field.."
 
 msgid "media_dlg_align_top"
-msgstr "Top"
+msgstr "Nahoru"
 
 msgid "media_dlg_align_right"
-msgstr "Right"
+msgstr "Vpravo"
 
 msgid "media_dlg_align_bottom"
-msgstr "Bottom"
+msgstr "Dolů"
 
 msgid "media_dlg_align_left"
-msgstr "Left"
+msgstr "Vlevo"
 
 msgid "media_dlg_align_center"
-msgstr "Center"
+msgstr "Na střed"
 
 msgid "media_dlg_align_top_left"
-msgstr "Top left"
+msgstr "Nahoru vlevo"
 
 msgid "media_dlg_align_top_right"
-msgstr "Top right"
+msgstr "Nahoru vpravo"
 
 msgid "media_dlg_align_bottom_left"
-msgstr "Bottom left"
+msgstr "Dolů vlevo"
 
 msgid "media_dlg_align_bottom_right"
-msgstr "Bottom right"
+msgstr "Dolů vpravo"
 
 msgid "media_dlg_flv_options"
 msgstr "Flash video options"
@@ -2185,7 +2185,7 @@ msgid "fullpage_dlg_advanced_props"
 msgstr "Pokročilé"
 
 msgid "template_desc"
-msgstr "Vložit Předdefinovaný obsah ze šablony"
+msgstr "Vložit předdefinovaný obsah ze šablony"
 
 msgid "template_dlg_title"
 msgstr "Šablony"
@@ -2197,7 +2197,7 @@ msgid "template_dlg_desc_label"
 msgstr "Popis"
 
 msgid "template_dlg_desc"
-msgstr "Vložit Předdefinovaný obsah ze šablony"
+msgstr "Vložit předdefinovaný obsah ze šablony"
 
 msgid "template_dlg_select"
 msgstr "Vybrat šablonu"
@@ -2215,13 +2215,13 @@ msgid "template_dlg_cdate_format"
 msgstr "%Y-%m-%d %H:%M:%S"
 
 msgid "template_dlg_months_long"
-msgstr "Leden,Únor,BÚezen,Duben,Květen,Červen,Červenec,Srpen,ZáÚí,Říjen,Listopad,Prosinec"
+msgstr "Leden,Únor,Březen,Duben,Květen,Červen,Červenec,Srpen,Září,Říjen,Listopad,Prosinec"
 
 msgid "template_dlg_months_short"
-msgstr "Led,Úno,BÚe,Dub,Kvě,Čer,Čvc,Srp,ZáÚ,Říj,Lis,Pro"
+msgstr "Led,Úno,Bře,Dub,Kvě,Čer,Čvc,Srp,Zář,Říj,Lis,Pro"
 
 msgid "template_dlg_day_long"
-msgstr "Neděle,Pondělí,Úterý,StÚeda,Čtvrtek,Pátek,Sobota,Neděle"
+msgstr "Neděle,Pondělí,Úterý,Středa,Čtvrtek,Pátek,Sobota,Neděle"
 
 msgid "template_dlg_day_short"
 msgstr "Ne,Po,Út,St,Čt,Pá,So,Ne"
@@ -2233,7 +2233,7 @@ msgid "spellchecker_desc"
 msgstr "Zapnout kontrolu textu"
 
 msgid "spellchecker_menu"
-msgstr "Nastavení kontroly textu"
+msgstr "Nastavení kontroly pravopisu"
 
 msgid "spellchecker_ignore_word"
 msgstr "Ignorovat slovo"
@@ -2251,7 +2251,7 @@ msgid "spellchecker_sug"
 msgstr "Nápověda"
 
 msgid "spellchecker_no_sug"
-msgstr "Ĺ˝ádná nápověda"
+msgstr "Žádná nápověda"
 
 msgid "spellchecker_no_mpell"
 msgstr "Nebyly nalezeny žádné chyby."

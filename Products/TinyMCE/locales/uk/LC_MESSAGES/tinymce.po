@@ -1,14 +1,14 @@
 # This is the Ukrainian language pack for TinyMCE.
-# Version 3.4
+# Version 4.8
 #
-# Paranoid.net.ua
+# Mirko, Yuriy Horobey
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2009-08-05 00:00+0000\n"
-"Last-Translator: Paranoid.net.ua\n"
-"Language-Team: Paranoid.net.ua\n"
+"PO-Revision-Date: 2010-03-06 00:00+0000\n"
+"Last-Translator: Mirko, Yuriy Horobey\n"
+"Language-Team: Mirko, Yuriy Horobey\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -52,7 +52,7 @@ msgid "common_clipboard_no_support"
 msgstr "Currently not supported by your browser, use keyboard shortcuts instead."
 
 msgid "common_popup_blocked"
-msgstr "Sorry, but we have noticed that your popup-blocker has disabled a window that provides application functionality. You will need to disable popup blocking on this site in order to fully utilize this tool."
+msgstr "Дуже прикро, але ваш браузер заблокував виринаюче вікно. Будь ласка, налаштуйте браузер так, щоб він дозволяв виринаючі вікна з цього сайту."
 
 msgid "common_invalid_data"
 msgstr "Помилка: Введено помилкове значення, відмічене червоним."
@@ -310,10 +310,10 @@ msgid "advanced_dlg_about_license"
 msgstr "Ліцензія"
 
 msgid "advanced_dlg_about_plugins"
-msgstr "Плагіни"
+msgstr "Додатки"
 
 msgid "advanced_dlg_about_plugin"
-msgstr "Плагін"
+msgstr "Додаток"
 
 msgid "advanced_dlg_about_author"
 msgstr "Автор"
@@ -322,7 +322,7 @@ msgid "advanced_dlg_about_version"
 msgstr "Версія"
 
 msgid "advanced_dlg_about_loaded"
-msgstr "Завантажені плагіни"
+msgstr "Завантажені додатки"
 
 msgid "advanced_dlg_anchor_title"
 msgstr "Додати/змінити якір"
@@ -379,7 +379,7 @@ msgid "advanced_dlg_image_list"
 msgstr "Список зображень"
 
 msgid "advanced_dlg_image_border"
-msgstr "Границя"
+msgstr "Рамка"
 
 msgid "advanced_dlg_image_dimensions"
 msgstr "Розміри"
@@ -436,10 +436,10 @@ msgid "advanced_dlg_link_titlefield"
 msgstr "Заголовок"
 
 msgid "advanced_dlg_link_is_email"
-msgstr "Введений URL схожий на email адресу, ви бажаєте додати необхідний префікс mailto:?"
+msgstr "Введений URL схожий на email адресу, ви бажаєте додати потрібний префікс mailto:?"
 
 msgid "advanced_dlg_link_is_external"
-msgstr "Введений URL схожий на зовнішнє посилання, ви бажаєте додати необхідний префікс http://?"
+msgstr "Введений URL схожий на зовнішнє посилання, ви бажаєте додати потрібний префікс http://?"
 
 msgid "advanced_dlg_link_list"
 msgstr "Список посилань"
@@ -751,7 +751,7 @@ msgid "ploneimage_dlg_list"
 msgstr "Список зображень"
 
 msgid "ploneimage_dlg_border"
-msgstr "Границя"
+msgstr "Рамка"
 
 msgid "ploneimage_dlg_dimensions"
 msgstr "Розміри"
@@ -814,10 +814,10 @@ msgid "plonelink_dlg_titlefield"
 msgstr "Заголовок"
 
 msgid "plonelink_dlg_is_email"
-msgstr "Введений URL схожий на email адресу, ви бажаєте додати необхідний префікс mailto?"
+msgstr "Введений URL схожий на email адресу, ви бажаєте додати потрібний префікс mailto?"
 
 msgid "plonelink_dlg_is_external"
-msgstr "Введений URL схожий на зовнішнє посилання, ви бажаєте додати необхідний префікс http://?"
+msgstr "Введений URL схожий на зовнішнє посилання, ви бажаєте додати потрібний префікс http://?"
 
 msgid "plonelink_dlg_list"
 msgstr "Список посилань"
@@ -895,7 +895,7 @@ msgid "plonelink_dlg_popup_resizable"
 msgstr "Дозволяти змінювати розмір"
 
 msgid "plonelink_dlg_popup_dependent"
-msgstr "Dependent (лише для Mozilla/Firefox)"
+msgstr "Залежний (лише для Mozilla/Firefox)"
 
 msgid "plonelink_dlg_popup_size"
 msgstr "Розмір"
@@ -913,34 +913,34 @@ msgid "plonelink_dlg_classes"
 msgstr "Класи"
 
 msgid "plonelink_dlg_target_name"
-msgstr "Target name"
+msgstr "Назва цілі"
 
 msgid "plonelink_dlg_langdir"
 msgstr "Напрям мови"
 
 msgid "plonelink_dlg_target_langcode"
-msgstr "Target language"
+msgstr "Мова цілі"
 
 msgid "plonelink_dlg_langcode"
 msgstr "Код мови"
 
 msgid "plonelink_dlg_encoding"
-msgstr "Target character encoding"
+msgstr "Кодування цілі"
 
 msgid "plonelink_dlg_mime"
-msgstr "Target MIME type"
+msgstr "MIME тип цілі"
 
 msgid "plonelink_dlg_rel"
-msgstr "Relationship page to target"
+msgstr "Стосунок сторінки до цілі"
 
 msgid "plonelink_dlg_rev"
-msgstr "Relationship target to page"
+msgstr "Стосунок цілі до сторінки"
 
 msgid "plonelink_dlg_tabindex"
-msgstr "Tabindex"
+msgstr "Табіндекс"
 
 msgid "plonelink_dlg_accesskey"
-msgstr "Accesskey"
+msgstr "Клавіша доступу"
 
 msgid "plonelink_dlg_ltr"
 msgstr "Зліва праворуч"
@@ -952,19 +952,19 @@ msgid "plonelink_dlg_link_list"
 msgstr "Список посилань"
 
 msgid "xhtmlxtras_cite_desc"
-msgstr "Citation"
+msgstr "Цитата"
 
 msgid "xhtmlxtras_abbr_desc"
-msgstr "Abbreviation"
+msgstr "Акронім"
 
 msgid "xhtmlxtras_acronym_desc"
 msgstr "Acronym"
 
 msgid "xhtmlxtras_del_desc"
-msgstr "Deletion"
+msgstr "Видалення"
 
 msgid "xhtmlxtras_ins_desc"
-msgstr "Insertion"
+msgstr "Вставка"
 
 msgid "xhtmlxtras_attribs_desc"
 msgstr "Вставити/змінити атрибути"
@@ -1036,10 +1036,10 @@ msgid "xhtmlxtras_dlg_attribute_label_langcode"
 msgstr "Мова"
 
 msgid "xhtmlxtras_dlg_attribute_label_tabindex"
-msgstr "TabIndex"
+msgstr "Табіндекс"
 
 msgid "xhtmlxtras_dlg_attribute_label_accesskey"
-msgstr "AccessKey"
+msgstr "Клавіша доступу"
 
 msgid "xhtmlxtras_dlg_attribute_events_tab"
 msgstr "Події"
@@ -1060,25 +1060,25 @@ msgid "xhtmlxtras_dlg_fieldset_general_tab"
 msgstr "Загальні настройки"
 
 msgid "xhtmlxtras_dlg_fieldset_attrib_tab"
-msgstr "Element Attributes"
+msgstr "Атрибути елементу"
 
 msgid "xhtmlxtras_dlg_fieldset_events_tab"
-msgstr "Element Events"
+msgstr "Події елементу"
 
 msgid "xhtmlxtras_dlg_title_ins_element"
-msgstr "Insertion Element"
+msgstr "Елемент вставки"
 
 msgid "xhtmlxtras_dlg_title_del_element"
-msgstr "Deletion Element"
+msgstr "Елемент видалення"
 
 msgid "xhtmlxtras_dlg_title_acronym_element"
-msgstr "Acronym Element"
+msgstr "Елемент акроніму"
 
 msgid "xhtmlxtras_dlg_title_abbr_element"
-msgstr "Abbreviation Element"
+msgstr "Елемент аббревіатури"
 
 msgid "xhtmlxtras_dlg_title_cite_element"
-msgstr "Citation Element"
+msgstr "Елемент цитування"
 
 msgid "xhtmlxtras_dlg_remove"
 msgstr "Видалити"
@@ -1123,7 +1123,7 @@ msgid "style_dlg_box_tab"
 msgstr "Box"
 
 msgid "style_dlg_border_tab"
-msgstr "Границя"
+msgstr "Рамка"
 
 msgid "style_dlg_list_tab"
 msgstr "Список"
@@ -1153,7 +1153,7 @@ msgid "style_dlg_text_lineheight"
 msgstr "Висота рядку"
 
 msgid "style_dlg_text_case"
-msgstr "Case"
+msgstr "Регістр"
 
 msgid "style_dlg_text_color"
 msgstr "Колір"
@@ -1162,19 +1162,19 @@ msgid "style_dlg_text_decoration"
 msgstr "Оформлення"
 
 msgid "style_dlg_text_overline"
-msgstr "верхня риска"
+msgstr "Верхня риска"
 
 msgid "style_dlg_text_underline"
-msgstr "нижня риска"
+msgstr "Нижня риска"
 
 msgid "style_dlg_text_striketrough"
-msgstr "закреслений"
+msgstr "Закреслений"
 
 msgid "style_dlg_text_blink"
-msgstr "мерехтіння"
+msgstr "Мерехтіння"
 
 msgid "style_dlg_text_none"
-msgstr "нічого"
+msgstr "Нічого"
 
 msgid "style_dlg_background_color"
 msgstr "Колір фону"
@@ -1186,7 +1186,7 @@ msgid "style_dlg_background_repeat"
 msgstr "Повтор"
 
 msgid "style_dlg_background_attachment"
-msgstr "Attachment"
+msgstr "Вкладення"
 
 msgid "style_dlg_background_hpos"
 msgstr "Горизонтальна позиція"
@@ -1207,13 +1207,13 @@ msgid "style_dlg_block_text_align"
 msgstr "Вирівнювання тексту"
 
 msgid "style_dlg_block_text_indent"
-msgstr "Text indent"
+msgstr "Відступ"
 
 msgid "style_dlg_block_whitespace"
-msgstr "Whitespace"
+msgstr "Пробіл"
 
 msgid "style_dlg_block_display"
-msgstr "Display"
+msgstr "Показ"
 
 msgid "style_dlg_box_width"
 msgstr "Ширина"
@@ -1222,13 +1222,13 @@ msgid "style_dlg_box_height"
 msgstr "Висота"
 
 msgid "style_dlg_box_float"
-msgstr "Float"
+msgstr "Плавання"
 
 msgid "style_dlg_box_clear"
-msgstr "Clear"
+msgstr "Очистка"
 
 msgid "style_dlg_padding"
-msgstr "Padding"
+msgstr "Внутрішній відступ"
 
 msgid "style_dlg_same"
 msgstr "Однакое для всіх"
@@ -1264,7 +1264,7 @@ msgid "style_dlg_list_type"
 msgstr "Тип"
 
 msgid "style_dlg_bullet_image"
-msgstr "Bullet image"
+msgstr "Зображення значка в списку"
 
 msgid "style_dlg_position"
 msgstr "Позиція"
@@ -1276,16 +1276,16 @@ msgid "style_dlg_visibility"
 msgstr "Видимість"
 
 msgid "style_dlg_zindex"
-msgstr "Z-index"
+msgstr "Z-індекс"
 
 msgid "style_dlg_overflow"
-msgstr "Overflow"
+msgstr "Переповнення"
 
 msgid "style_dlg_placement"
-msgstr "Placement"
+msgstr "Розміщення"
 
 msgid "style_dlg_clip"
-msgstr "Clip"
+msgstr "Обрізання"
 
 msgid "paste_paste_text_desc"
 msgstr "Вставити як текст"
@@ -1426,7 +1426,7 @@ msgid "table_dlg_cellpadding"
 msgstr "Відступи у комірках"
 
 msgid "table_dlg_border"
-msgstr "Границя"
+msgstr "Рамка"
 
 msgid "table_dlg_align"
 msgstr "Вирівнювання"
@@ -1483,7 +1483,7 @@ msgid "table_dlg_langcode"
 msgstr "Код мови"
 
 msgid "table_dlg_mime"
-msgstr "Target MIME-тип"
+msgstr "MIME-тип цілі"
 
 msgid "table_dlg_ltr"
 msgstr "Зліва праворуч"
@@ -1537,58 +1537,58 @@ msgid "table_dlg_scope"
 msgstr "Scope"
 
 msgid "table_dlg_rowgroup"
-msgstr "Row Group"
+msgstr "Група комірок"
 
 msgid "table_dlg_colgroup"
-msgstr "Col Group"
+msgstr "Група стовбців"
 
 msgid "table_dlg_col_limit"
-msgstr "You've exceeded the maximum number of columns of {$cols}."
+msgstr "Ви перевищили максимальну кількість стовбців: {$cols}."
 
 msgid "table_dlg_row_limit"
-msgstr "You've exceeded the maximum number of rows of {$rows}."
+msgstr "Ви перевищили максимальну кількість рядків: {$rows}."
 
 msgid "table_dlg_cell_limit"
-msgstr "You've exceeded the maximum number of cells of {$cells}."
+msgstr "Ви перевищили максимальну кількість комірок: {$cells}."
 
 msgid "table_dlg_missing_scope"
-msgstr "Are you sure you want to continue without specifying a scope for this table header cell. Without it, it may be difficult for some users with disabilities to understand the content or data displayed of the table."
+msgstr "Ви впевнені, що бажаєте продовжити, не вказавши межі для цієї комірки заголовку. Без цього деяким користувачам буде важко зрозуміти зміст таблиці."
 
 msgid "table_dlg_caption"
-msgstr "Table caption"
+msgstr "Заголовок таблиці"
 
 msgid "table_dlg_frame"
 msgstr "Фрейм"
 
 msgid "table_dlg_frame_none"
-msgstr "none"
+msgstr "ніякий"
 
 msgid "table_dlg_frame_groups"
-msgstr "groups"
+msgstr "групи"
 
 msgid "table_dlg_frame_rows"
-msgstr "rows"
+msgstr "рядки"
 
 msgid "table_dlg_frame_cols"
-msgstr "cols"
+msgstr "стовбці"
 
 msgid "table_dlg_frame_all"
-msgstr "all"
+msgstr "всі"
 
 msgid "table_dlg_rules"
-msgstr "Rules"
+msgstr "Правила"
 
 msgid "table_dlg_rules_void"
-msgstr "void"
+msgstr "пусто"
 
 msgid "table_dlg_rules_above"
-msgstr "above"
+msgstr "зверху"
 
 msgid "table_dlg_rules_below"
-msgstr "below"
+msgstr "знизу"
 
 msgid "table_dlg_rules_hsides"
-msgstr "hsides"
+msgstr "h-сторони"
 
 msgid "table_dlg_rules_lhs"
 msgstr "lhs"
@@ -1597,13 +1597,13 @@ msgid "table_dlg_rules_rhs"
 msgstr "rhs"
 
 msgid "table_dlg_rules_vsides"
-msgstr "vsides"
+msgstr "v-сторони"
 
 msgid "table_dlg_rules_box"
-msgstr "box"
+msgstr "бокс"
 
 msgid "table_dlg_rules_border"
-msgstr "border"
+msgstr "рамка"
 
 msgid "autosave_unload_msg"
 msgstr "Зміни, які ви зробили, будуть втрачені, якщо ви перейдете з цієї сторінки."
@@ -1612,10 +1612,10 @@ msgid "fullscreen_desc"
 msgstr "Переключитися на весь екран"
 
 msgid "media_desc"
-msgstr "Вставити / редагувати embedded media"
+msgstr "Вставити / редагувати вбудовані медія"
 
 msgid "media_edit"
-msgstr "Редагувати embedded media"
+msgstr "Редагувати вбудовані медія"
 
 msgid "media_delta_width"
 msgstr ""
@@ -1624,7 +1624,7 @@ msgid "media_delta_height"
 msgstr ""
 
 msgid "media_dlg_title"
-msgstr "Вставити / редагувати embedded media"
+msgstr "Вставити / редагувати вбудовані медія"
 
 msgid "media_dlg_general"
 msgstr "Загальне"
@@ -1678,25 +1678,25 @@ msgid "media_dlg_quality"
 msgstr "Якість"
 
 msgid "media_dlg_scale"
-msgstr "Scale"
+msgstr "Масштабування"
 
 msgid "media_dlg_align"
-msgstr "Align"
+msgstr "Вирівнювання"
 
 msgid "media_dlg_salign"
-msgstr "SAlign"
+msgstr "S-Вирівнювання"
 
 msgid "media_dlg_wmode"
-msgstr "WMode"
+msgstr "W-режим"
 
 msgid "media_dlg_bgcolor"
 msgstr "Фон"
 
 msgid "media_dlg_base"
-msgstr "Base"
+msgstr "База"
 
 msgid "media_dlg_flashvars"
-msgstr "Flashvars"
+msgstr "Flash-параметри"
 
 msgid "media_dlg_liveconnect"
 msgstr "SWLiveConnect"
@@ -1708,10 +1708,10 @@ msgid "media_dlg_cache"
 msgstr "Кеш"
 
 msgid "media_dlg_hidden"
-msgstr "Hidden"
+msgstr "Прихований"
 
 msgid "media_dlg_controller"
-msgstr "Controller"
+msgstr "Контролер"
 
 msgid "media_dlg_kioskmode"
 msgstr "Kiosk mode"
@@ -1750,19 +1750,19 @@ msgid "media_dlg_autostart"
 msgstr "Автостарт"
 
 msgid "media_dlg_enabled"
-msgstr "Enabled"
+msgstr "Дозволений"
 
 msgid "media_dlg_fullscreen"
-msgstr "Fullscreen"
+msgstr "Повний екран"
 
 msgid "media_dlg_invokeurls"
-msgstr "Invoke URLs"
+msgstr "Викликати URLs"
 
 msgid "media_dlg_mute"
-msgstr "Mute"
+msgstr "Заглушити"
 
 msgid "media_dlg_stretchtofit"
-msgstr "Stretch to fit"
+msgstr "Зменшити, щоб вмістилось"
 
 msgid "media_dlg_windowlessvideo"
 msgstr "Windowless video"
@@ -1864,31 +1864,31 @@ msgid "media_dlg_qt_stream_warn"
 msgstr "Streamed rtsp resources should be added to the QT Src field under the advanced tab.\nYou should also add a non streamed version to the Src field.."
 
 msgid "media_dlg_align_top"
-msgstr "Top"
+msgstr "Верх"
 
 msgid "media_dlg_align_right"
-msgstr "Right"
+msgstr "Право"
 
 msgid "media_dlg_align_bottom"
-msgstr "Bottom"
+msgstr "Низ"
 
 msgid "media_dlg_align_left"
-msgstr "Left"
+msgstr "Ліво"
 
 msgid "media_dlg_align_center"
-msgstr "Center"
+msgstr "Центр"
 
 msgid "media_dlg_align_top_left"
-msgstr "Top left"
+msgstr "Зверху зліва"
 
 msgid "media_dlg_align_top_right"
-msgstr "Top right"
+msgstr "Зверху зправа"
 
 msgid "media_dlg_align_bottom_left"
-msgstr "Bottom left"
+msgstr "Знизу зліва"
 
 msgid "media_dlg_align_bottom_right"
-msgstr "Bottom right"
+msgstr "Знизу зправа"
 
 msgid "media_dlg_flv_options"
 msgstr "Flash video options"
@@ -1897,7 +1897,7 @@ msgid "media_dlg_flv_scalemode"
 msgstr "Scale mode"
 
 msgid "media_dlg_flv_buffer"
-msgstr "Buffer"
+msgstr "Буфер"
 
 msgid "media_dlg_flv_startimage"
 msgstr "Start image"

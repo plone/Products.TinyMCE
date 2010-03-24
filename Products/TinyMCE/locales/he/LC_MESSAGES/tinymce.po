@@ -1,14 +1,14 @@
 # This is the Hebrew language pack for TinyMCE
-# Version 5.8
+# Version 7.9
 #
-# Gidon Junge, Ilana Tamir
+# Motti Bartall
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2009-05-29 00:00+0000\n"
-"Last-Translator: Gidon Junge, Ilana Tamir\n"
-"Language-Team: Gidon Junge, Ilana Tamir\n"
+"PO-Revision-Date: 2010-03-04 00:00+0000\n"
+"Last-Translator: Motti Bartall\n"
+"Language-Team: Motti Bartall\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -55,7 +55,7 @@ msgid "common_popup_blocked"
 msgstr "חוסם פריטים מוקפצים מנע מחלון חשוב מלהפתח,אם ברצונך להשתמש בכלי זה עליך לבטל את חוסם הפריטים"
 
 msgid "common_invalid_data"
-msgstr "Error: Invalid values entered, these are marked in red."
+msgstr "שגיאה: הוקלד מידע לא תקני. המידע סומן באדום."
 
 msgid "common_more_colors"
 msgstr "עוד צבעים"
@@ -949,25 +949,25 @@ msgid "plonelink_dlg_rtl"
 msgstr "מימין לשמאל"
 
 msgid "plonelink_dlg_link_list"
-msgstr "Link list"
+msgstr "רשימת קישורים"
 
 msgid "xhtmlxtras_cite_desc"
-msgstr "Citation"
+msgstr "ציטוט"
 
 msgid "xhtmlxtras_abbr_desc"
-msgstr "Abbreviation"
+msgstr "קיצור"
 
 msgid "xhtmlxtras_acronym_desc"
-msgstr "Acronym"
+msgstr "ראשי תיבות"
 
 msgid "xhtmlxtras_del_desc"
-msgstr "Deletion"
+msgstr "מחיקה"
 
 msgid "xhtmlxtras_ins_desc"
-msgstr "Insertion"
+msgstr "הכנסה"
 
 msgid "xhtmlxtras_attribs_desc"
-msgstr "Insert/Edit Attributes"
+msgstr "הכנס/ערוך תכונות"
 
 msgid "xhtmlxtras_cite_delta_width"
 msgstr ""
@@ -1012,10 +1012,10 @@ msgid "xhtmlxtras_dlg_attribute_label_id"
 msgstr "ID"
 
 msgid "xhtmlxtras_dlg_attribute_label_class"
-msgstr "Class"
+msgstr "מחלקה"
 
 msgid "xhtmlxtras_dlg_attribute_label_style"
-msgstr "Style"
+msgstr "עיצוב"
 
 msgid "xhtmlxtras_dlg_attribute_label_cite"
 msgstr "ציטוט"
@@ -1111,7 +1111,7 @@ msgid "style_dlg_apply"
 msgstr "החל"
 
 msgid "style_dlg_text_tab"
-msgstr "Text"
+msgstr "טקסט"
 
 msgid "style_dlg_background_tab"
 msgstr "רקע"
@@ -1132,7 +1132,7 @@ msgid "style_dlg_positioning_tab"
 msgstr "מיקום"
 
 msgid "style_dlg_text_props"
-msgstr "Text"
+msgstr "טקסט"
 
 msgid "style_dlg_text_font"
 msgstr "פונט"
@@ -1141,7 +1141,7 @@ msgid "style_dlg_text_size"
 msgstr "גודל"
 
 msgid "style_dlg_text_weight"
-msgstr "Weight"
+msgstr "עובי"
 
 msgid "style_dlg_text_style"
 msgstr "סגנון"
@@ -1168,13 +1168,13 @@ msgid "style_dlg_text_underline"
 msgstr "שורה מתחת"
 
 msgid "style_dlg_text_striketrough"
-msgstr "strikethrough"
+msgstr "קו חוצה"
 
 msgid "style_dlg_text_blink"
-msgstr "blink"
+msgstr "הבהוב"
 
 msgid "style_dlg_text_none"
-msgstr "none"
+msgstr "ללא"
 
 msgid "style_dlg_background_color"
 msgstr "צבע רקע"
@@ -1207,10 +1207,10 @@ msgid "style_dlg_block_text_align"
 msgstr "מיקום טקסט"
 
 msgid "style_dlg_block_text_indent"
-msgstr "Text indent"
+msgstr "הזחה"
 
 msgid "style_dlg_block_whitespace"
-msgstr "Whitespace"
+msgstr "רווח"
 
 msgid "style_dlg_block_display"
 msgstr "הצג"
@@ -1222,13 +1222,13 @@ msgid "style_dlg_box_height"
 msgstr "גובה"
 
 msgid "style_dlg_box_float"
-msgstr "Float"
+msgstr "הצפה"
 
 msgid "style_dlg_box_clear"
 msgstr "נקה"
 
 msgid "style_dlg_padding"
-msgstr "Padding"
+msgstr "ריפוד"
 
 msgid "style_dlg_same"
 msgstr "אותו דבר עבור כולם"
@@ -1246,7 +1246,7 @@ msgid "style_dlg_left"
 msgstr "שמאל"
 
 msgid "style_dlg_margin"
-msgstr "Margin"
+msgstr "שוליים"
 
 msgid "style_dlg_style"
 msgstr "סגנון"
@@ -1273,13 +1273,13 @@ msgid "style_dlg_positioning_type"
 msgstr "סוג"
 
 msgid "style_dlg_visibility"
-msgstr "Visibility"
+msgstr "ראות"
 
 msgid "style_dlg_zindex"
 msgstr "Z-index"
 
 msgid "style_dlg_overflow"
-msgstr "Overflow"
+msgstr "גלישה"
 
 msgid "style_dlg_placement"
 msgstr "מיקום"
@@ -1474,7 +1474,7 @@ msgid "table_dlg_id"
 msgstr "Id"
 
 msgid "table_dlg_style"
-msgstr "Style"
+msgstr "עיצוב"
 
 msgid "table_dlg_langdir"
 msgstr "כיוון השפה"
@@ -1561,7 +1561,7 @@ msgid "table_dlg_frame"
 msgstr "Frame"
 
 msgid "table_dlg_frame_none"
-msgstr "none"
+msgstr "ללא"
 
 msgid "table_dlg_frame_groups"
 msgstr "קבוצות"
@@ -1927,7 +1927,7 @@ msgid "media_dlg_flv_jscallback"
 msgstr "JS Callback"
 
 msgid "fullpage_desc"
-msgstr "Document properties"
+msgstr "מאפייני עמוד"
 
 msgid "fullpage_delta_width"
 msgstr ""
@@ -1942,28 +1942,28 @@ msgid "fullpage_dlg_meta_tab"
 msgstr "כללי"
 
 msgid "fullpage_dlg_appearance_tab"
-msgstr "Appearance"
+msgstr "מראה"
 
 msgid "fullpage_dlg_advanced_tab"
-msgstr "Advanced"
+msgstr "מתקדם"
 
 msgid "fullpage_dlg_meta_props"
-msgstr "Meta information"
+msgstr "תגי מטה"
 
 msgid "fullpage_dlg_langprops"
-msgstr "Language and encoding"
+msgstr "שפה וקידוד"
 
 msgid "fullpage_dlg_meta_title"
 msgstr "כותרת"
 
 msgid "fullpage_dlg_meta_keywords"
-msgstr "Keywords"
+msgstr "מילות מפתח"
 
 msgid "fullpage_dlg_meta_description"
-msgstr "Description"
+msgstr "תיאור"
 
 msgid "fullpage_dlg_meta_robots"
-msgstr "Robots"
+msgstr "רובוטים"
 
 msgid "fullpage_dlg_doctypes"
 msgstr "Doctype"
@@ -2062,16 +2062,16 @@ msgid "fullpage_dlg_appearance_style"
 msgstr "Stylesheet and style properties"
 
 msgid "fullpage_dlg_stylesheet"
-msgstr "Stylesheet"
+msgstr "סגנון עיצוב"
 
 msgid "fullpage_dlg_style"
-msgstr "Style"
+msgstr "עיצוב"
 
 msgid "fullpage_dlg_author"
-msgstr "Author"
+msgstr "כותב"
 
 msgid "fullpage_dlg_copyright"
-msgstr "Copyright"
+msgstr "זכויות יוצרים"
 
 msgid "fullpage_dlg_add"
 msgstr "Add new element"
@@ -2089,7 +2089,7 @@ msgid "fullpage_dlg_head_elements"
 msgstr "Head elements"
 
 msgid "fullpage_dlg_info"
-msgstr "Information"
+msgstr "מידע"
 
 msgid "fullpage_dlg_add_title"
 msgstr "Title element"
@@ -2131,10 +2131,10 @@ msgid "fullpage_dlg_meta_element"
 msgstr "Meta element"
 
 msgid "fullpage_dlg_comment_element"
-msgstr "Comment"
+msgstr "תגובה"
 
 msgid "fullpage_dlg_src"
-msgstr "Src"
+msgstr "כתובת מקור"
 
 msgid "fullpage_dlg_language"
 msgstr "שפה"
@@ -2146,28 +2146,28 @@ msgid "fullpage_dlg_target"
 msgstr "יעד"
 
 msgid "fullpage_dlg_type"
-msgstr "Type"
+msgstr "סוג"
 
 msgid "fullpage_dlg_charset"
-msgstr "Charset"
+msgstr "קידוד"
 
 msgid "fullpage_dlg_defer"
 msgstr "Defer"
 
 msgid "fullpage_dlg_media"
-msgstr "Media"
+msgstr "מדיה"
 
 msgid "fullpage_dlg_properties"
-msgstr "Properties"
+msgstr "מאפיינים"
 
 msgid "fullpage_dlg_name"
-msgstr "Name"
+msgstr "שם"
 
 msgid "fullpage_dlg_value"
 msgstr "ערך"
 
 msgid "fullpage_dlg_content"
-msgstr "Content"
+msgstr "תוכן"
 
 msgid "fullpage_dlg_rel"
 msgstr "Rel"
@@ -2188,10 +2188,10 @@ msgid "template_desc"
 msgstr "Insert predefined template content"
 
 msgid "template_dlg_title"
-msgstr "Templates"
+msgstr "תבניות"
 
 msgid "template_dlg_label"
-msgstr "Template"
+msgstr "תבנית"
 
 msgid "template_dlg_desc_label"
 msgstr "תיאור"
@@ -2200,7 +2200,7 @@ msgid "template_dlg_desc"
 msgstr "Insert predefined template content"
 
 msgid "template_dlg_select"
-msgstr "Select a template"
+msgstr "בחר תבנית"
 
 msgid "template_dlg_preview"
 msgstr "תצוגה מקדימה"
