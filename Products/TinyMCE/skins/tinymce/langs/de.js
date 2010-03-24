@@ -58,7 +58,7 @@ nonbreaking_desc:"Gesch\u00FCtztes Leerzeichen einf\u00FCgen"
 },
 iespell:{
 iespell_desc:"Rechtschreibpr\u00FCfung",
-download:"ieSpell konnte nicht gefunden werden. Wollen Sie es installieren?"
+download:"iSpell konnte nicht gefunden werden. Wollen Sie es installieren?"
 },
 advhr:{
 advhr_desc:"Trennlinie"
@@ -121,7 +121,9 @@ cell:"Zelle",
 cellprops_delta_width:"150"
 },
 autosave:{
-unload_msg:"Ihre \u00C4nderungen werden verloren gehen, wenn Sie die Seite verlassen."
+unload_msg:"Ihre \u00C4nderungen werden verloren gehen, wenn Sie die Seite verlassen.",
+restore_content:"Restore auto-saved content.",
+warning_message:"If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?."
 },
 fullscreen:{
 desc:"Vollbildschirm"
