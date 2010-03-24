@@ -1,5 +1,5 @@
 """
-   Usage: rebuild-pot.py
+   Usage: wget-xml.py
 """
 
 import os, sys, string
