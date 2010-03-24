@@ -716,9 +716,9 @@ class TinyMCE(SimpleItem):
             results['livesearch'] = False
 
         AVAILABLE_LANGUAGES = set(
-           'ar bs ch da el es fa fr he hu ii it ko lv ms nl pl ro sc si sl sr '
-           'tr tw vi bg ca cs de en et fi gl hr ia is ja lt mk nb nn pt ru se '
-           'sk sq sv tt uk zh'.split())
+           'ar bs ch da el es eu fa fr he hu ii it ko lv ms nl pl ro sc si sl '
+           'sr tr tw vi bg ca cs de en et fi gl hr ia is ja lt mk nb nn pt ru '
+           'se sk sq sv tt uk zh eu'.split())
 
         if context.REQUEST.has_key('LANGUAGE'):
             results['language'] = context.REQUEST.LANGUAGE[:2]
