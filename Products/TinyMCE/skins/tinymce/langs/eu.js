@@ -12,7 +12,7 @@ not_set:"-- Bat ere ez --",
 clipboard_msg:"Kopiatu/Ebaki/Itsatsi ez dago Mozilla eta Firefox nabigatzaileetan. Honen inguruko informazio gehiago lortu nahi duzu?",
 clipboard_no_support:"Zure nabigatzaileak ezin ditu arbelaren funtzioak erabili. Erabili teklatu bidezko laster-teklak.",
 popup_blocked:"Barkatu, pop-up leihoak blokeatuta dituzu eta horrek aplikazioaren atal batzuk ez ibiltzea dakar. Blokeo hori desgaitu egin behar duzu funtzio guztiak erabiltzeko.",
-invalid_data:"Errorea: Gorriz markatutako testua ez da baliozko.",
+invalid_data:"Errorea: Gorriz markatutako testua ez da baliozkoa.",
 more_colors:"Kolore gehiago"
 },
 contextmenu:{
