@@ -1,6 +1,9 @@
 #!/opt/local/bin/python2.4
 
-from elementtree import ElementTree as ET
+try:
+    from elementtree import ElementTree as ET
+except ImportError:
+    import xml.etree.ElementTree as ET
 import os, sys, string
 
 # Skip .ko for now
@@ -10,6 +13,7 @@ AVAILABLE_LANGUAGES = set(
     'sk sq sv tt uk'.split())
 
 for x in AVAILABLE_LANGUAGES:
+    print "Parsing xml/%s.xml" % (x)
     tree = ET.parse("xml/%s.xml" % (x))
 
     root = tree.getroot()
