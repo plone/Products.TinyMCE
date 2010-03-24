@@ -1,0 +1,2261 @@
+# TinyMCE Chinese-Simple
+# Version 1.7
+#
+# tony chan
+msgid ""
+msgstr ""
+"Project-Id-Version: Products.TinyMCE\n"
+"POT-Creation-Date: 2000-01-01 00:00+0000\n"
+"PO-Revision-Date: 2010-03-22 00:00+0000\n"
+"Last-Translator: tony chan\n"
+"Language-Team: tony chan\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: zu\n"
+"Language-Name: Simple Chinese\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: tinymce\n"
+
+msgid "common_edit_confirm"
+msgstr "是否在此textarea标签内使用\"所见即所得\"模式？"
+
+msgid "common_apply"
+msgstr "应用"
+
+msgid "common_insert"
+msgstr "插入"
+
+msgid "common_update"
+msgstr "更新"
+
+msgid "common_cancel"
+msgstr "取消"
+
+msgid "common_close"
+msgstr "关闭"
+
+msgid "common_browse"
+msgstr "流览"
+
+msgid "common_class_name"
+msgstr "样式"
+
+msgid "common_not_set"
+msgstr "--未设置--"
+
+msgid "common_clipboard_msg"
+msgstr "复制、剪下、贴上功能在Mozilla和Firefox中不能使用。 \n是否需要了解更多有关此问题的资讯？"
+
+msgid "common_clipboard_no_support"
+msgstr "还不支援您的流览器，请使用键盘快速键"
+
+msgid "common_popup_blocked"
+msgstr "抱歉！快显视窗已被阻止，请调整流览器设置，允许此网站可弹出新视窗，以便使用此工具"
+
+msgid "common_invalid_data"
+msgstr "错误:无效输入值，已标记为红色。"
+
+msgid "common_more_colors"
+msgstr "更多颜色"
+
+msgid "simple_bold_desc"
+msgstr "黑体(Ctrl+B)"
+
+msgid "simple_italic_desc"
+msgstr "斜体(Ctrl+I)"
+
+msgid "simple_underline_desc"
+msgstr "底线(Ctrl+U)"
+
+msgid "simple_striketrough_desc"
+msgstr "删除线"
+
+msgid "simple_bullist_desc"
+msgstr "专案符号"
+
+msgid "simple_numlist_desc"
+msgstr "编号"
+
+msgid "simple_undo_desc"
+msgstr "撤销(Ctrl+Z)"
+
+msgid "simple_redo_desc"
+msgstr "重做(Ctrl+Y)"
+
+msgid "simple_cleanup_desc"
+msgstr "清除多余代码"
+
+msgid "advanced_style_select"
+msgstr "样式"
+
+msgid "advanced_font_size"
+msgstr "字体大小"
+
+msgid "advanced_fontdefault"
+msgstr "字体"
+
+msgid "advanced_block"
+msgstr "格式"
+
+msgid "advanced_paragraph"
+msgstr "段落"
+
+msgid "advanced_div"
+msgstr "DIV层"
+
+msgid "advanced_address"
+msgstr "地址"
+
+msgid "advanced_pre"
+msgstr "无式样编排"
+
+msgid "advanced_h1"
+msgstr "标题1"
+
+msgid "advanced_h2"
+msgstr "标题2"
+
+msgid "advanced_h3"
+msgstr "标题3"
+
+msgid "advanced_h4"
+msgstr "标题4"
+
+msgid "advanced_h5"
+msgstr "标题5"
+
+msgid "advanced_h6"
+msgstr "标题6"
+
+msgid "advanced_blockquote"
+msgstr "引用"
+
+msgid "advanced_code"
+msgstr "代码"
+
+msgid "advanced_samp"
+msgstr "代码样例"
+
+msgid "advanced_dt"
+msgstr "名词定义"
+
+msgid "advanced_dd"
+msgstr "名词解释"
+
+msgid "advanced_bold_desc"
+msgstr "黑体(Ctrl+B)"
+
+msgid "advanced_italic_desc"
+msgstr "斜体(Ctrl+I)"
+
+msgid "advanced_underline_desc"
+msgstr "底线(Ctrl+U)"
+
+msgid "advanced_striketrough_desc"
+msgstr "删除线"
+
+msgid "advanced_justifyleft_desc"
+msgstr "左对齐"
+
+msgid "advanced_justifycenter_desc"
+msgstr "居中"
+
+msgid "advanced_justifyright_desc"
+msgstr "右对齐"
+
+msgid "advanced_justifyfull_desc"
+msgstr "两端对齐"
+
+msgid "advanced_bullist_desc"
+msgstr "专案符号"
+
+msgid "advanced_numlist_desc"
+msgstr "编号"
+
+msgid "advanced_outdent_desc"
+msgstr "减少缩排"
+
+msgid "advanced_indent_desc"
+msgstr "增加缩排"
+
+msgid "advanced_undo_desc"
+msgstr "撤销(Ctrl+Z)"
+
+msgid "advanced_redo_desc"
+msgstr "重做(Ctrl+Y)"
+
+msgid "advanced_link_desc"
+msgstr "插入/编辑连结"
+
+msgid "advanced_unlink_desc"
+msgstr "取消连结"
+
+msgid "advanced_image_desc"
+msgstr "插入/编辑图片"
+
+msgid "advanced_cleanup_desc"
+msgstr "清除多余代码"
+
+msgid "advanced_code_desc"
+msgstr "编辑HTML原始程式码"
+
+msgid "advanced_sub_desc"
+msgstr "下标"
+
+msgid "advanced_sup_desc"
+msgstr "上标"
+
+msgid "advanced_hr_desc"
+msgstr "插入水平线"
+
+msgid "advanced_removeformat_desc"
+msgstr "清除样式"
+
+msgid "advanced_custom1_desc"
+msgstr "在此输入您的自订描述"
+
+msgid "advanced_forecolor_desc"
+msgstr "选择文字颜色"
+
+msgid "advanced_backcolor_desc"
+msgstr "选择背景颜色"
+
+msgid "advanced_charmap_desc"
+msgstr "插入特殊符号"
+
+msgid "advanced_visualaid_desc"
+msgstr "开关格线/隐藏元件"
+
+msgid "advanced_anchor_desc"
+msgstr "插入/编辑锚点"
+
+msgid "advanced_cut_desc"
+msgstr "剪下"
+
+msgid "advanced_copy_desc"
+msgstr "复制"
+
+msgid "advanced_paste_desc"
+msgstr "贴上"
+
+msgid "advanced_image_props_desc"
+msgstr "图片属性"
+
+msgid "advanced_newdocument_desc"
+msgstr "新文件"
+
+msgid "advanced_help_desc"
+msgstr "说明"
+
+msgid "advanced_blockquote_desc"
+msgstr "引用"
+
+msgid "advanced_clipboard_msg"
+msgstr "复制、剪下及贴上功能在Mozilla和Firefox中不能使用。 \n是否需要了解更多有关此问题的资讯？"
+
+msgid "advanced_path"
+msgstr "位置"
+
+msgid "advanced_newdocument"
+msgstr "您确认要清除全部内容吗？"
+
+msgid "advanced_toolbar_focus"
+msgstr "工具按钮- Alt+Q,编辑器- Alt-Z,元件位置- Alt-X"
+
+msgid "advanced_more_colors"
+msgstr "更多颜色"
+
+msgid "advanced_image_delta_width"
+msgstr ""
+
+msgid "advanced_image_delta_height"
+msgstr ""
+
+msgid "advanced_link_delta_width"
+msgstr "40"
+
+msgid "advanced_link_delta_height"
+msgstr "60"
+
+msgid "advanced_colorpicker_delta_width"
+msgstr ""
+
+msgid "advanced_colorpicker_delta_height"
+msgstr ""
+
+msgid "advanced_charmap_delta_width"
+msgstr ""
+
+msgid "advanced_charmap_delta_height"
+msgstr ""
+
+msgid "advanced_anchor_delta_width"
+msgstr ""
+
+msgid "advanced_anchor_delta_height"
+msgstr ""
+
+msgid "advanced_dlg_about_title"
+msgstr "关于TinyMCE"
+
+msgid "advanced_dlg_about_general"
+msgstr "关于"
+
+msgid "advanced_dlg_about_help"
+msgstr "帮助"
+
+msgid "advanced_dlg_about_license"
+msgstr "授权"
+
+msgid "advanced_dlg_about_plugins"
+msgstr "全部外挂程式"
+
+msgid "advanced_dlg_about_plugin"
+msgstr "外挂程式"
+
+msgid "advanced_dlg_about_author"
+msgstr "作者"
+
+msgid "advanced_dlg_about_version"
+msgstr "版本"
+
+msgid "advanced_dlg_about_loaded"
+msgstr "已载入的外挂程式"
+
+msgid "advanced_dlg_anchor_title"
+msgstr "插入/编辑锚点"
+
+msgid "advanced_dlg_anchor_name"
+msgstr "锚点名称"
+
+msgid "advanced_dlg_code_title"
+msgstr "HTML原始程式码编辑器"
+
+msgid "advanced_dlg_code_wordwrap"
+msgstr "整字换行"
+
+msgid "advanced_dlg_colorpicker_title"
+msgstr "挑选颜色"
+
+msgid "advanced_dlg_colorpicker_picker_tab"
+msgstr "选色器"
+
+msgid "advanced_dlg_colorpicker_picker_title"
+msgstr "选色器"
+
+msgid "advanced_dlg_colorpicker_palette_tab"
+msgstr "色盘"
+
+msgid "advanced_dlg_colorpicker_palette_title"
+msgstr "色盘颜色"
+
+msgid "advanced_dlg_colorpicker_named_tab"
+msgstr "预设的"
+
+msgid "advanced_dlg_colorpicker_named_title"
+msgstr "预设的颜色"
+
+msgid "advanced_dlg_colorpicker_color"
+msgstr "颜色:"
+
+msgid "advanced_dlg_colorpicker_name"
+msgstr "名称:"
+
+msgid "advanced_dlg_charmap_title"
+msgstr "插入特殊符号"
+
+msgid "advanced_dlg_image_title"
+msgstr "插入/编辑图片"
+
+msgid "advanced_dlg_image_src"
+msgstr "图片位址"
+
+msgid "advanced_dlg_image_alt"
+msgstr "图片说明"
+
+msgid "advanced_dlg_image_list"
+msgstr "图片清单"
+
+msgid "advanced_dlg_image_border"
+msgstr "边框"
+
+msgid "advanced_dlg_image_dimensions"
+msgstr "尺寸"
+
+msgid "advanced_dlg_image_vspace"
+msgstr "垂直间距"
+
+msgid "advanced_dlg_image_hspace"
+msgstr "水准间距"
+
+msgid "advanced_dlg_image_align"
+msgstr "对齐方式"
+
+msgid "advanced_dlg_image_align_baseline"
+msgstr "基线"
+
+msgid "advanced_dlg_image_align_top"
+msgstr "上方对齐"
+
+msgid "advanced_dlg_image_align_middle"
+msgstr "居中对齐"
+
+msgid "advanced_dlg_image_align_bottom"
+msgstr "底部对齐"
+
+msgid "advanced_dlg_image_align_texttop"
+msgstr "文字上方"
+
+msgid "advanced_dlg_image_align_textbottom"
+msgstr "文字下方"
+
+msgid "advanced_dlg_image_align_left"
+msgstr "靠左对齐"
+
+msgid "advanced_dlg_image_align_right"
+msgstr "靠右对齐"
+
+msgid "advanced_dlg_link_title"
+msgstr "插入/编辑连结"
+
+msgid "advanced_dlg_link_url"
+msgstr "连结位址"
+
+msgid "advanced_dlg_link_target"
+msgstr "目标"
+
+msgid "advanced_dlg_link_target_same"
+msgstr "将连结网址开在此视窗"
+
+msgid "advanced_dlg_link_target_blank"
+msgstr "将连结网址开在新窗口"
+
+msgid "advanced_dlg_link_titlefield"
+msgstr "标题"
+
+msgid "advanced_dlg_link_is_email"
+msgstr "您输入的网址应该是一个电子邮寄地址，是否需要在位址前方加入mailto:？"
+
+msgid "advanced_dlg_link_is_external"
+msgstr "您输入的网址应该是一个外部连结，是否需要在网址前方加入http://？"
+
+msgid "advanced_dlg_link_list"
+msgstr "连结清单"
+
+msgid "contextmenu_align"
+msgstr "对齐方式"
+
+msgid "contextmenu_left"
+msgstr "靠左对齐"
+
+msgid "contextmenu_center"
+msgstr "居中对齐"
+
+msgid "contextmenu_right"
+msgstr "靠右对齐"
+
+msgid "contextmenu_full"
+msgstr "两端对齐"
+
+msgid "insertdatetime_date_fmt"
+msgstr "%Y-%m-%d"
+
+msgid "insertdatetime_time_fmt"
+msgstr "%H:%M:%S"
+
+msgid "insertdatetime_insertdate_desc"
+msgstr "插入今天日期"
+
+msgid "insertdatetime_inserttime_desc"
+msgstr "插入现在时间"
+
+msgid "insertdatetime_months_long"
+msgstr "一月,二月,三月,四月,五月,六月,七月,八月,九月,十月,十一月,十二月"
+
+msgid "insertdatetime_months_short"
+msgstr "1月,2月,3月,4月,5月,6月,7月,8月,9月,10月,11月,12月"
+
+msgid "insertdatetime_day_long"
+msgstr "星期日,星期一,星期二,星期三,星期四,星期五,星期六,星期日"
+
+msgid "insertdatetime_day_short"
+msgstr "周日,周一,周二,周三,周四,周五,周六,周日"
+
+msgid "print_print_desc"
+msgstr "列印"
+
+msgid "preview_preview_desc"
+msgstr "预览"
+
+msgid "directionality_ltr_desc"
+msgstr "文字从左到右"
+
+msgid "directionality_rtl_desc"
+msgstr "文字从右到左"
+
+msgid "layer_insertlayer_desc"
+msgstr "插入层"
+
+msgid "layer_forward_desc"
+msgstr "置前"
+
+msgid "layer_backward_desc"
+msgstr "置后"
+
+msgid "layer_absolute_desc"
+msgstr "开关绝对位置"
+
+msgid "layer_content"
+msgstr "新增层..."
+
+msgid "save_save_desc"
+msgstr "保存"
+
+msgid "save_cancel_desc"
+msgstr "取消所有更改"
+
+msgid "nonbreaking_nonbreaking_desc"
+msgstr "插入空白格"
+
+msgid "iespell_iespell_desc"
+msgstr "拼写检查"
+
+msgid "iespell_download"
+msgstr "未检测到ieSpell的存在。是否现在立即安装？"
+
+msgid "advhr_advhr_desc"
+msgstr "水平线"
+
+msgid "advhr_delta_width"
+msgstr ""
+
+msgid "advhr_delta_height"
+msgstr ""
+
+msgid "advhr_dlg_width"
+msgstr "宽"
+
+msgid "advhr_dlg_size"
+msgstr "长"
+
+msgid "advhr_dlg_noshade"
+msgstr "无阴影"
+
+msgid "emotions_emotions_desc"
+msgstr "图释"
+
+msgid "emotions_delta_width"
+msgstr ""
+
+msgid "emotions_delta_height"
+msgstr ""
+
+msgid "emotions_dlg_title"
+msgstr "插入图释"
+
+msgid "emotions_dlg_desc"
+msgstr "图释"
+
+msgid "emotions_dlg_cool"
+msgstr "冷酷"
+
+msgid "emotions_dlg_cry"
+msgstr "哭泣"
+
+msgid "emotions_dlg_embarassed"
+msgstr "尴尬"
+
+msgid "emotions_dlg_foot_in_mouth"
+msgstr "咧嘴"
+
+msgid "emotions_dlg_frown"
+msgstr "皱眉"
+
+msgid "emotions_dlg_innocent"
+msgstr "天真"
+
+msgid "emotions_dlg_kiss"
+msgstr "吻"
+
+msgid "emotions_dlg_laughing"
+msgstr "大笑"
+
+msgid "emotions_dlg_money_mouth"
+msgstr "发财"
+
+msgid "emotions_dlg_sealed"
+msgstr "保密"
+
+msgid "emotions_dlg_smile"
+msgstr "微笑"
+
+msgid "emotions_dlg_surprised"
+msgstr "惊吓"
+
+msgid "emotions_dlg_tongue_out"
+msgstr "吐舌头"
+
+msgid "emotions_dlg_undecided"
+msgstr "考虑"
+
+msgid "emotions_dlg_wink"
+msgstr "眨眼"
+
+msgid "emotions_dlg_yell"
+msgstr "叫嚷"
+
+msgid "searchreplace_search_desc"
+msgstr "查找"
+
+msgid "searchreplace_replace_desc"
+msgstr "查找/替换"
+
+msgid "searchreplace_delta_width"
+msgstr ""
+
+msgid "searchreplace_delta_height"
+msgstr ""
+
+msgid "searchreplace_dlg_searchnext_desc"
+msgstr "再次查找"
+
+msgid "searchreplace_dlg_notfound"
+msgstr "查找已完成!找不到任何目标。"
+
+msgid "searchreplace_dlg_search_title"
+msgstr "查找"
+
+msgid "searchreplace_dlg_replace_title"
+msgstr "查找/替换"
+
+msgid "searchreplace_dlg_allreplaced"
+msgstr "已替换所有匹配的符串."
+
+msgid "searchreplace_dlg_findwhat"
+msgstr "查找目标"
+
+msgid "searchreplace_dlg_replacewith"
+msgstr "替换为"
+
+msgid "searchreplace_dlg_direction"
+msgstr "方向"
+
+msgid "searchreplace_dlg_up"
+msgstr "向上"
+
+msgid "searchreplace_dlg_down"
+msgstr "向下"
+
+msgid "searchreplace_dlg_mcase"
+msgstr "大小写匹配"
+
+msgid "searchreplace_dlg_findnext"
+msgstr "下一个"
+
+msgid "searchreplace_dlg_replace"
+msgstr "替换"
+
+msgid "searchreplace_dlg_replaceall"
+msgstr "替换全部"
+
+msgid "ploneimage_image_desc"
+msgstr "插入/编辑图片"
+
+msgid "ploneimage_delta_width"
+msgstr ""
+
+msgid "ploneimage_delta_height"
+msgstr ""
+
+msgid "ploneimage_dlg_tab_general"
+msgstr "一般"
+
+msgid "ploneimage_dlg_tab_appearance"
+msgstr "外观"
+
+msgid "ploneimage_dlg_tab_advanced"
+msgstr "高级"
+
+msgid "ploneimage_dlg_general"
+msgstr "一般"
+
+msgid "ploneimage_dlg_title"
+msgstr "查找"
+
+msgid "ploneimage_dlg_preview"
+msgstr "预览"
+
+msgid "ploneimage_dlg_constrain_proportions"
+msgstr "保持比例"
+
+msgid "ploneimage_dlg_langdir"
+msgstr "语言书写方向"
+
+msgid "ploneimage_dlg_langcode"
+msgstr "语言编码"
+
+msgid "ploneimage_dlg_long_desc"
+msgstr "长描述连结"
+
+msgid "ploneimage_dlg_style"
+msgstr "样式"
+
+msgid "ploneimage_dlg_classes"
+msgstr "类型"
+
+msgid "ploneimage_dlg_ltr"
+msgstr "由左到右"
+
+msgid "ploneimage_dlg_rtl"
+msgstr "由右到左"
+
+msgid "ploneimage_dlg_id"
+msgstr "Id"
+
+msgid "ploneimage_dlg_map"
+msgstr "图片地图"
+
+msgid "ploneimage_dlg_swap_image"
+msgstr "对换图片"
+
+msgid "ploneimage_dlg_alt_image"
+msgstr "替换图片"
+
+msgid "ploneimage_dlg_mouseover"
+msgstr "滑鼠移入图片"
+
+msgid "ploneimage_dlg_mouseout"
+msgstr "滑鼠移出图片"
+
+msgid "ploneimage_dlg_misc"
+msgstr "其它"
+
+msgid "ploneimage_dlg_example_img"
+msgstr "预览图片"
+
+msgid "ploneimage_dlg_missing_alt"
+msgstr "请问是否确定不为图片加入说明文字？若没有加入说明文字，当使用者使用不读入图片或文字体的流览器时，将会看不到这个图片。"
+
+msgid "ploneimage_dlg_dialog_title"
+msgstr "插入/编辑图片"
+
+msgid "ploneimage_dlg_src"
+msgstr "图片网址"
+
+msgid "ploneimage_dlg_alt"
+msgstr "图片说明"
+
+msgid "ploneimage_dlg_list"
+msgstr "图片清单"
+
+msgid "ploneimage_dlg_border"
+msgstr "边框"
+
+msgid "ploneimage_dlg_dimensions"
+msgstr "尺寸"
+
+msgid "ploneimage_dlg_vspace"
+msgstr "水准间距"
+
+msgid "ploneimage_dlg_hspace"
+msgstr "垂直间距"
+
+msgid "ploneimage_dlg_align"
+msgstr "对齐方式"
+
+msgid "ploneimage_dlg_align_baseline"
+msgstr "基线"
+
+msgid "ploneimage_dlg_align_top"
+msgstr "上方"
+
+msgid "ploneimage_dlg_align_middle"
+msgstr "居中"
+
+msgid "ploneimage_dlg_align_bottom"
+msgstr "下方"
+
+msgid "ploneimage_dlg_align_texttop"
+msgstr "文字上方"
+
+msgid "ploneimage_dlg_align_textbottom"
+msgstr "文字下方"
+
+msgid "ploneimage_dlg_align_left"
+msgstr "靠左"
+
+msgid "ploneimage_dlg_align_right"
+msgstr "靠右"
+
+msgid "ploneimage_dlg_image_list"
+msgstr "图片清单"
+
+msgid "plonelink_link_desc"
+msgstr "插入/编辑连结"
+
+msgid "plonelink_delta_width"
+msgstr ""
+
+msgid "plonelink_delta_height"
+msgstr ""
+
+msgid "plonelink_dlg_title"
+msgstr "插入/编辑连结"
+
+msgid "plonelink_dlg_url"
+msgstr "连结位址"
+
+msgid "plonelink_dlg_target"
+msgstr "目标"
+
+msgid "plonelink_dlg_titlefield"
+msgstr "查找"
+
+msgid "plonelink_dlg_is_email"
+msgstr "您输入的网址应该是一个电子邮寄地址，是否需要在邮址前方加入mailto:？"
+
+msgid "plonelink_dlg_is_external"
+msgstr "您输入的网址应该是一个外部连结，是否需要在网址前方加入http://？"
+
+msgid "plonelink_dlg_list"
+msgstr "连结清单"
+
+msgid "plonelink_dlg_general_tab"
+msgstr "一般"
+
+msgid "plonelink_dlg_popup_tab"
+msgstr "快显视窗"
+
+msgid "plonelink_dlg_events_tab"
+msgstr "事件"
+
+msgid "plonelink_dlg_advanced_tab"
+msgstr "高级"
+
+msgid "plonelink_dlg_general_props"
+msgstr "一般属性"
+
+msgid "plonelink_dlg_popup_props"
+msgstr "快显视窗属性"
+
+msgid "plonelink_dlg_event_props"
+msgstr "事件"
+
+msgid "plonelink_dlg_advanced_props"
+msgstr "高级属性"
+
+msgid "plonelink_dlg_popup_opts"
+msgstr "选项"
+
+msgid "plonelink_dlg_anchor_names"
+msgstr "锚点"
+
+msgid "plonelink_dlg_target_same"
+msgstr "打开在新视窗/框架"
+
+msgid "plonelink_dlg_target_parent"
+msgstr "打开在父视窗/框架"
+
+msgid "plonelink_dlg_target_top"
+msgstr "打开在最上层的框架(替换所有框架)"
+
+msgid "plonelink_dlg_target_blank"
+msgstr "打开在新视窗"
+
+msgid "plonelink_dlg_popup"
+msgstr "Javascript快显视窗"
+
+msgid "plonelink_dlg_popup_url"
+msgstr "快显视窗网址"
+
+msgid "plonelink_dlg_popup_name"
+msgstr "窗口名称"
+
+msgid "plonelink_dlg_popup_return"
+msgstr "插入'return false'"
+
+msgid "plonelink_dlg_popup_scrollbars"
+msgstr "显示边条"
+
+msgid "plonelink_dlg_popup_statusbar"
+msgstr "显示状态栏"
+
+msgid "plonelink_dlg_popup_toolbar"
+msgstr "显示工具列"
+
+msgid "plonelink_dlg_popup_menubar"
+msgstr "显示功能表"
+
+msgid "plonelink_dlg_popup_location"
+msgstr "显示网址列"
+
+msgid "plonelink_dlg_popup_resizable"
+msgstr "可调整视窗尺寸"
+
+msgid "plonelink_dlg_popup_dependent"
+msgstr "从属(只有Mozilla/Firefox有效)"
+
+msgid "plonelink_dlg_popup_size"
+msgstr "尺寸"
+
+msgid "plonelink_dlg_popup_position"
+msgstr "座标(X/Y)"
+
+msgid "plonelink_dlg_id"
+msgstr "Id"
+
+msgid "plonelink_dlg_style"
+msgstr "样式"
+
+msgid "plonelink_dlg_classes"
+msgstr "类型"
+
+msgid "plonelink_dlg_target_name"
+msgstr "目标名称"
+
+msgid "plonelink_dlg_langdir"
+msgstr "语言书写方向"
+
+msgid "plonelink_dlg_target_langcode"
+msgstr "目的语言"
+
+msgid "plonelink_dlg_langcode"
+msgstr "语言编码"
+
+msgid "plonelink_dlg_encoding"
+msgstr "编码"
+
+msgid "plonelink_dlg_mime"
+msgstr "目标MIME类型"
+
+msgid "plonelink_dlg_rel"
+msgstr "页到目标的关系"
+
+msgid "plonelink_dlg_rev"
+msgstr "目标到页的关系"
+
+msgid "plonelink_dlg_tabindex"
+msgstr "Tab索引"
+
+msgid "plonelink_dlg_accesskey"
+msgstr "快速键"
+
+msgid "plonelink_dlg_ltr"
+msgstr "由左到右"
+
+msgid "plonelink_dlg_rtl"
+msgstr "由右到左"
+
+msgid "plonelink_dlg_link_list"
+msgstr "连结清单"
+
+msgid "xhtmlxtras_cite_desc"
+msgstr "引文"
+
+msgid "xhtmlxtras_abbr_desc"
+msgstr "缩写"
+
+msgid "xhtmlxtras_acronym_desc"
+msgstr "首字缩写"
+
+msgid "xhtmlxtras_del_desc"
+msgstr "删除"
+
+msgid "xhtmlxtras_ins_desc"
+msgstr "插入"
+
+msgid "xhtmlxtras_attribs_desc"
+msgstr "插入/编辑属性"
+
+msgid "xhtmlxtras_cite_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_cite_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_abbr_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_abbr_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_acronym_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_acronym_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_del_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_del_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_ins_delta_width"
+msgstr ""
+
+msgid "xhtmlxtras_ins_delta_height"
+msgstr ""
+
+msgid "xhtmlxtras_attribs_delta_width"
+msgstr "40"
+
+msgid "xhtmlxtras_attribs_delta_height"
+msgstr "60"
+
+msgid "xhtmlxtras_dlg_attribute_label_title"
+msgstr "查找"
+
+msgid "xhtmlxtras_dlg_attribute_label_id"
+msgstr "ID"
+
+msgid "xhtmlxtras_dlg_attribute_label_class"
+msgstr "类型"
+
+msgid "xhtmlxtras_dlg_attribute_label_style"
+msgstr "样式"
+
+msgid "xhtmlxtras_dlg_attribute_label_cite"
+msgstr "引文"
+
+msgid "xhtmlxtras_dlg_attribute_label_datetime"
+msgstr "日期/时间"
+
+msgid "xhtmlxtras_dlg_attribute_label_langdir"
+msgstr "文字书写方向"
+
+msgid "xhtmlxtras_dlg_attribute_option_ltr"
+msgstr "由左到右"
+
+msgid "xhtmlxtras_dlg_attribute_option_rtl"
+msgstr "由右到左"
+
+msgid "xhtmlxtras_dlg_attribute_label_langcode"
+msgstr "语言"
+
+msgid "xhtmlxtras_dlg_attribute_label_tabindex"
+msgstr "Tab索引"
+
+msgid "xhtmlxtras_dlg_attribute_label_accesskey"
+msgstr "快速键"
+
+msgid "xhtmlxtras_dlg_attribute_events_tab"
+msgstr "事件"
+
+msgid "xhtmlxtras_dlg_attribute_attrib_tab"
+msgstr "属性"
+
+msgid "xhtmlxtras_dlg_general_tab"
+msgstr "一般"
+
+msgid "xhtmlxtras_dlg_attrib_tab"
+msgstr "属性"
+
+msgid "xhtmlxtras_dlg_events_tab"
+msgstr "事件"
+
+msgid "xhtmlxtras_dlg_fieldset_general_tab"
+msgstr "一般"
+
+msgid "xhtmlxtras_dlg_fieldset_attrib_tab"
+msgstr "元素属性"
+
+msgid "xhtmlxtras_dlg_fieldset_events_tab"
+msgstr "元素事件"
+
+msgid "xhtmlxtras_dlg_title_ins_element"
+msgstr "插入元素"
+
+msgid "xhtmlxtras_dlg_title_del_element"
+msgstr "删除元素"
+
+msgid "xhtmlxtras_dlg_title_acronym_element"
+msgstr "首字缩写元素"
+
+msgid "xhtmlxtras_dlg_title_abbr_element"
+msgstr "缩写元素"
+
+msgid "xhtmlxtras_dlg_title_cite_element"
+msgstr "引文元素"
+
+msgid "xhtmlxtras_dlg_remove"
+msgstr "删除"
+
+msgid "xhtmlxtras_dlg_insert_date"
+msgstr "插入现在日期/时间"
+
+msgid "xhtmlxtras_dlg_option_ltr"
+msgstr "由左到右"
+
+msgid "xhtmlxtras_dlg_option_rtl"
+msgstr "由右到左"
+
+msgid "xhtmlxtras_dlg_attribs_title"
+msgstr "插入/编辑属性"
+
+msgid "style_desc"
+msgstr "编辑CSS样式表"
+
+msgid "style_delta_width"
+msgstr ""
+
+msgid "style_delta_height"
+msgstr ""
+
+msgid "style_dlg_title"
+msgstr "编辑CSS样式表"
+
+msgid "style_dlg_apply"
+msgstr "应用"
+
+msgid "style_dlg_text_tab"
+msgstr "文字"
+
+msgid "style_dlg_background_tab"
+msgstr "背景"
+
+msgid "style_dlg_block_tab"
+msgstr "块"
+
+msgid "style_dlg_box_tab"
+msgstr "箱型"
+
+msgid "style_dlg_border_tab"
+msgstr "边框"
+
+msgid "style_dlg_list_tab"
+msgstr "列表"
+
+msgid "style_dlg_positioning_tab"
+msgstr "位置"
+
+msgid "style_dlg_text_props"
+msgstr "文字"
+
+msgid "style_dlg_text_font"
+msgstr "字体"
+
+msgid "style_dlg_text_size"
+msgstr "尺寸"
+
+msgid "style_dlg_text_weight"
+msgstr "宽度"
+
+msgid "style_dlg_text_style"
+msgstr "样式"
+
+msgid "style_dlg_text_variant"
+msgstr "变体"
+
+msgid "style_dlg_text_lineheight"
+msgstr "行高"
+
+msgid "style_dlg_text_case"
+msgstr "字体"
+
+msgid "style_dlg_text_color"
+msgstr "颜色"
+
+msgid "style_dlg_text_decoration"
+msgstr "修饰"
+
+msgid "style_dlg_text_overline"
+msgstr "上划线"
+
+msgid "style_dlg_text_underline"
+msgstr "底线"
+
+msgid "style_dlg_text_striketrough"
+msgstr "删除线"
+
+msgid "style_dlg_text_blink"
+msgstr "闪烁"
+
+msgid "style_dlg_text_none"
+msgstr "无"
+
+msgid "style_dlg_background_color"
+msgstr "背景颜色"
+
+msgid "style_dlg_background_image"
+msgstr "背景图片"
+
+msgid "style_dlg_background_repeat"
+msgstr "重复"
+
+msgid "style_dlg_background_attachment"
+msgstr "附件"
+
+msgid "style_dlg_background_hpos"
+msgstr "垂直位置"
+
+msgid "style_dlg_background_vpos"
+msgstr "水准位置"
+
+msgid "style_dlg_block_wordspacing"
+msgstr "单字间距"
+
+msgid "style_dlg_block_letterspacing"
+msgstr "字元间距"
+
+msgid "style_dlg_block_vertical_alignment"
+msgstr "水准对齐方式"
+
+msgid "style_dlg_block_text_align"
+msgstr "文字对齐"
+
+msgid "style_dlg_block_text_indent"
+msgstr "文字缩排"
+
+msgid "style_dlg_block_whitespace"
+msgstr "空白"
+
+msgid "style_dlg_block_display"
+msgstr "显示方式"
+
+msgid "style_dlg_box_width"
+msgstr "宽度"
+
+msgid "style_dlg_box_height"
+msgstr "高度"
+
+msgid "style_dlg_box_float"
+msgstr "浮动"
+
+msgid "style_dlg_box_clear"
+msgstr "清除"
+
+msgid "style_dlg_padding"
+msgstr "留白"
+
+msgid "style_dlg_same"
+msgstr "全部一样"
+
+msgid "style_dlg_top"
+msgstr "上方"
+
+msgid "style_dlg_right"
+msgstr "靠右"
+
+msgid "style_dlg_bottom"
+msgstr "下方"
+
+msgid "style_dlg_left"
+msgstr "靠左"
+
+msgid "style_dlg_margin"
+msgstr "边界"
+
+msgid "style_dlg_style"
+msgstr "样式"
+
+msgid "style_dlg_width"
+msgstr "宽度"
+
+msgid "style_dlg_height"
+msgstr "高度"
+
+msgid "style_dlg_color"
+msgstr "颜色"
+
+msgid "style_dlg_list_type"
+msgstr "类型"
+
+msgid "style_dlg_bullet_image"
+msgstr "项目图示"
+
+msgid "style_dlg_position"
+msgstr "图示位置"
+
+msgid "style_dlg_positioning_type"
+msgstr "类型"
+
+msgid "style_dlg_visibility"
+msgstr "可见性"
+
+msgid "style_dlg_zindex"
+msgstr "Z轴深度"
+
+msgid "style_dlg_overflow"
+msgstr "溢出"
+
+msgid "style_dlg_placement"
+msgstr "布置"
+
+msgid "style_dlg_clip"
+msgstr "剪辑"
+
+msgid "paste_paste_text_desc"
+msgstr "以纯文字贴上"
+
+msgid "paste_paste_word_desc"
+msgstr "从Word贴上"
+
+msgid "paste_selectall_desc"
+msgstr "全选"
+
+msgid "paste_dlg_text_title"
+msgstr "在键盘上同时按下CTRL和V键，以贴上文字到此视窗。"
+
+msgid "paste_dlg_text_linebreaks"
+msgstr "保留分行符号号"
+
+msgid "paste_dlg_word_title"
+msgstr "在键盘上同时按下CTRL和V键，以贴上文字到此视窗。"
+
+msgid "table_desc"
+msgstr "插入新表格"
+
+msgid "table_row_before_desc"
+msgstr "插入上方行"
+
+msgid "table_row_after_desc"
+msgstr "插入下方行"
+
+msgid "table_delete_row_desc"
+msgstr "删除所在行"
+
+msgid "table_col_before_desc"
+msgstr "插入左方列"
+
+msgid "table_col_after_desc"
+msgstr "插入右方列"
+
+msgid "table_delete_col_desc"
+msgstr "删除所在列"
+
+msgid "table_split_cells_desc"
+msgstr "分割储存格"
+
+msgid "table_merge_cells_desc"
+msgstr "合并储存格"
+
+msgid "table_row_desc"
+msgstr "行属性"
+
+msgid "table_cell_desc"
+msgstr "储存格属性"
+
+msgid "table_props_desc"
+msgstr "表格属性"
+
+msgid "table_paste_row_before_desc"
+msgstr "贴在上行"
+
+msgid "table_paste_row_after_desc"
+msgstr "贴在下行"
+
+msgid "table_cut_row_desc"
+msgstr "剪下选择行"
+
+msgid "table_copy_row_desc"
+msgstr "复制选择行"
+
+msgid "table_del"
+msgstr "删除表格"
+
+msgid "table_row"
+msgstr "行"
+
+msgid "table_col"
+msgstr "列"
+
+msgid "table_cell"
+msgstr "储存格"
+
+msgid "table_rowprops_delta_width"
+msgstr ""
+
+msgid "table_rowprops_delta_height"
+msgstr ""
+
+msgid "table_cellprops_delta_width"
+msgstr "10"
+
+msgid "table_cellprops_delta_height"
+msgstr "10"
+
+msgid "table_table_delta_width"
+msgstr "40"
+
+msgid "table_table_delta_height"
+msgstr "60"
+
+msgid "table_merge_cells_delta_width"
+msgstr "40"
+
+msgid "table_merge_cells_delta_height"
+msgstr "40"
+
+msgid "table_dlg_general_tab"
+msgstr "一般"
+
+msgid "table_dlg_advanced_tab"
+msgstr "高级"
+
+msgid "table_dlg_general_props"
+msgstr "一般属性"
+
+msgid "table_dlg_advanced_props"
+msgstr "高级属性"
+
+msgid "table_dlg_rowtype"
+msgstr "行所在的表格位置"
+
+msgid "table_dlg_title"
+msgstr "插入/编辑表格"
+
+msgid "table_dlg_width"
+msgstr "宽度"
+
+msgid "table_dlg_height"
+msgstr "高度"
+
+msgid "table_dlg_cols"
+msgstr "列数"
+
+msgid "table_dlg_rows"
+msgstr "行数"
+
+msgid "table_dlg_cellspacing"
+msgstr "储存格间距"
+
+msgid "table_dlg_cellpadding"
+msgstr "储存格留白"
+
+msgid "table_dlg_border"
+msgstr "边框"
+
+msgid "table_dlg_align"
+msgstr "对齐方式"
+
+msgid "table_dlg_align_default"
+msgstr "预设"
+
+msgid "table_dlg_align_left"
+msgstr "靠左"
+
+msgid "table_dlg_align_right"
+msgstr "靠右"
+
+msgid "table_dlg_align_middle"
+msgstr "居中"
+
+msgid "table_dlg_row_title"
+msgstr "行属性"
+
+msgid "table_dlg_cell_title"
+msgstr "储存格属性"
+
+msgid "table_dlg_cell_type"
+msgstr "储存格别"
+
+msgid "table_dlg_valign"
+msgstr "水准对齐方式"
+
+msgid "table_dlg_align_top"
+msgstr "上方"
+
+msgid "table_dlg_align_bottom"
+msgstr "下方"
+
+msgid "table_dlg_bordercolor"
+msgstr "边框颜色"
+
+msgid "table_dlg_bgcolor"
+msgstr "背景颜色"
+
+msgid "table_dlg_merge_cells_title"
+msgstr "合并储存格"
+
+msgid "table_dlg_id"
+msgstr "Id"
+
+msgid "table_dlg_style"
+msgstr "样式"
+
+msgid "table_dlg_langdir"
+msgstr "语言书写方向"
+
+msgid "table_dlg_langcode"
+msgstr "语言编码"
+
+msgid "table_dlg_mime"
+msgstr "目标MIME类型"
+
+msgid "table_dlg_ltr"
+msgstr "由左到右"
+
+msgid "table_dlg_rtl"
+msgstr "由右到左"
+
+msgid "table_dlg_bgimage"
+msgstr "背景图片"
+
+msgid "table_dlg_summary"
+msgstr "概要"
+
+msgid "table_dlg_td"
+msgstr "数据"
+
+msgid "table_dlg_th"
+msgstr "表头"
+
+msgid "table_dlg_cell_cell"
+msgstr "更新所的储存格"
+
+msgid "table_dlg_cell_row"
+msgstr "更新所在行的全部储存格"
+
+msgid "table_dlg_cell_all"
+msgstr "更新表格内的全部储存格"
+
+msgid "table_dlg_row_row"
+msgstr "更新所在行"
+
+msgid "table_dlg_row_odd"
+msgstr "更新表格内的奇数行"
+
+msgid "table_dlg_row_even"
+msgstr "更新表格内的偶数行"
+
+msgid "table_dlg_row_all"
+msgstr "更新表格内全部行"
+
+msgid "table_dlg_thead"
+msgstr "表头"
+
+msgid "table_dlg_tbody"
+msgstr "表身"
+
+msgid "table_dlg_tfoot"
+msgstr "表尾"
+
+msgid "table_dlg_scope"
+msgstr "范围"
+
+msgid "table_dlg_rowgroup"
+msgstr "行群组"
+
+msgid "table_dlg_colgroup"
+msgstr "列群组"
+
+msgid "table_dlg_col_limit"
+msgstr "已超过可用数，最高的列数为{$cols}列。"
+
+msgid "table_dlg_row_limit"
+msgstr "已超过可用数，最高的行数为{$rows}行。"
+
+msgid "table_dlg_cell_limit"
+msgstr "已超过可用数，最高的储存格数为{$cells}格。"
+
+msgid "table_dlg_missing_scope"
+msgstr "标题行缺失！"
+
+msgid "table_dlg_caption"
+msgstr "表格标题"
+
+msgid "table_dlg_frame"
+msgstr "边框"
+
+msgid "table_dlg_frame_none"
+msgstr "无"
+
+msgid "table_dlg_frame_groups"
+msgstr "群组"
+
+msgid "table_dlg_frame_rows"
+msgstr "行"
+
+msgid "table_dlg_frame_cols"
+msgstr "列"
+
+msgid "table_dlg_frame_all"
+msgstr "全部"
+
+msgid "table_dlg_rules"
+msgstr "线条"
+
+msgid "table_dlg_rules_void"
+msgstr "空"
+
+msgid "table_dlg_rules_above"
+msgstr "上"
+
+msgid "table_dlg_rules_below"
+msgstr "下"
+
+msgid "table_dlg_rules_hsides"
+msgstr "水准边"
+
+msgid "table_dlg_rules_lhs"
+msgstr "左边"
+
+msgid "table_dlg_rules_rhs"
+msgstr "右边"
+
+msgid "table_dlg_rules_vsides"
+msgstr "垂直边"
+
+msgid "table_dlg_rules_box"
+msgstr "盒型"
+
+msgid "table_dlg_rules_border"
+msgstr "外框"
+
+msgid "autosave_unload_msg"
+msgstr "如果离开此页面将导致所做的更改全部丢失。"
+
+msgid "fullscreen_desc"
+msgstr "开关全屏模式"
+
+msgid "media_desc"
+msgstr "插入/编辑嵌入媒体"
+
+msgid "media_edit"
+msgstr "编辑嵌入媒体"
+
+msgid "media_delta_width"
+msgstr ""
+
+msgid "media_delta_height"
+msgstr ""
+
+msgid "media_dlg_title"
+msgstr "插入/编辑嵌入媒体"
+
+msgid "media_dlg_general"
+msgstr "一般"
+
+msgid "media_dlg_advanced"
+msgstr "高级"
+
+msgid "media_dlg_file"
+msgstr "文件/网址"
+
+msgid "media_dlg_list"
+msgstr "列表"
+
+msgid "media_dlg_size"
+msgstr "尺寸"
+
+msgid "media_dlg_preview"
+msgstr "预览"
+
+msgid "media_dlg_constrain_proportions"
+msgstr "保持比例"
+
+msgid "media_dlg_type"
+msgstr "类型"
+
+msgid "media_dlg_id"
+msgstr "Id"
+
+msgid "media_dlg_name"
+msgstr "名称"
+
+msgid "media_dlg_class_name"
+msgstr "类型"
+
+msgid "media_dlg_vspace"
+msgstr "水准间距"
+
+msgid "media_dlg_hspace"
+msgstr "垂直间距"
+
+msgid "media_dlg_play"
+msgstr "自动播放"
+
+msgid "media_dlg_loop"
+msgstr "回圈播放"
+
+msgid "media_dlg_menu"
+msgstr "显示功能表"
+
+msgid "media_dlg_quality"
+msgstr "品质"
+
+msgid "media_dlg_scale"
+msgstr "比例"
+
+msgid "media_dlg_align"
+msgstr "对齐"
+
+msgid "media_dlg_salign"
+msgstr "SAlign"
+
+msgid "media_dlg_wmode"
+msgstr "视窗模式"
+
+msgid "media_dlg_bgcolor"
+msgstr "背景色"
+
+msgid "media_dlg_base"
+msgstr "基底"
+
+msgid "media_dlg_flashvars"
+msgstr "参数"
+
+msgid "media_dlg_liveconnect"
+msgstr "SWLiveConnect"
+
+msgid "media_dlg_autohref"
+msgstr "自动HREF"
+
+msgid "media_dlg_cache"
+msgstr "缓存"
+
+msgid "media_dlg_hidden"
+msgstr "隐藏"
+
+msgid "media_dlg_controller"
+msgstr "控制台"
+
+msgid "media_dlg_kioskmode"
+msgstr "Kiosk模式"
+
+msgid "media_dlg_playeveryframe"
+msgstr "播放每一帧"
+
+msgid "media_dlg_targetcache"
+msgstr "目标缓存"
+
+msgid "media_dlg_correction"
+msgstr "没有修正"
+
+msgid "media_dlg_enablejavascript"
+msgstr "启用JavaScript"
+
+msgid "media_dlg_starttime"
+msgstr "开始时间"
+
+msgid "media_dlg_endtime"
+msgstr "结束时间"
+
+msgid "media_dlg_href"
+msgstr "连结"
+
+msgid "media_dlg_qtsrcchokespeed"
+msgstr "Choke speed"
+
+msgid "media_dlg_target"
+msgstr "目标"
+
+msgid "media_dlg_volume"
+msgstr "音量"
+
+msgid "media_dlg_autostart"
+msgstr "自动开始"
+
+msgid "media_dlg_enabled"
+msgstr "启用"
+
+msgid "media_dlg_fullscreen"
+msgstr "全屏"
+
+msgid "media_dlg_invokeurls"
+msgstr "相关URLs"
+
+msgid "media_dlg_mute"
+msgstr "静音"
+
+msgid "media_dlg_stretchtofit"
+msgstr "拉伸"
+
+msgid "media_dlg_windowlessvideo"
+msgstr "无边框"
+
+msgid "media_dlg_balance"
+msgstr "平衡"
+
+msgid "media_dlg_baseurl"
+msgstr "基准URL"
+
+msgid "media_dlg_captioningid"
+msgstr "Captioning id"
+
+msgid "media_dlg_currentmarker"
+msgstr "当前标记"
+
+msgid "media_dlg_currentposition"
+msgstr "当前位置"
+
+msgid "media_dlg_defaultframe"
+msgstr "默认帧"
+
+msgid "media_dlg_playcount"
+msgstr "播放计数"
+
+msgid "media_dlg_rate"
+msgstr "帧率"
+
+msgid "media_dlg_uimode"
+msgstr "面板模式"
+
+msgid "media_dlg_flash_options"
+msgstr "Flash选项"
+
+msgid "media_dlg_qt_options"
+msgstr "Quicktime选项"
+
+msgid "media_dlg_wmp_options"
+msgstr "Windows media player选项"
+
+msgid "media_dlg_rmp_options"
+msgstr "Real media player选项"
+
+msgid "media_dlg_shockwave_options"
+msgstr "Shockwave选项"
+
+msgid "media_dlg_autogotourl"
+msgstr "自动转到URL"
+
+msgid "media_dlg_center"
+msgstr "中心"
+
+msgid "media_dlg_imagestatus"
+msgstr "图像状态"
+
+msgid "media_dlg_maintainaspect"
+msgstr "Maintain aspect"
+
+msgid "media_dlg_nojava"
+msgstr "No java"
+
+msgid "media_dlg_prefetch"
+msgstr "预读取"
+
+msgid "media_dlg_shuffle"
+msgstr "Shuffle"
+
+msgid "media_dlg_console"
+msgstr "控制台"
+
+msgid "media_dlg_numloop"
+msgstr "回圈次数"
+
+msgid "media_dlg_controls"
+msgstr "控制器"
+
+msgid "media_dlg_scriptcallbacks"
+msgstr "脚本回档"
+
+msgid "media_dlg_swstretchstyle"
+msgstr "拉升模式"
+
+msgid "media_dlg_swstretchhalign"
+msgstr "水准拉升"
+
+msgid "media_dlg_swstretchvalign"
+msgstr "垂直拉升"
+
+msgid "media_dlg_sound"
+msgstr "声音"
+
+msgid "media_dlg_progress"
+msgstr "进度"
+
+msgid "media_dlg_qtsrc"
+msgstr "QT Src"
+
+msgid "media_dlg_qt_stream_warn"
+msgstr "流式rtsp资源应该添加到“高级”中QT Src。\n同时添加非流式资源到Src。"
+
+msgid "media_dlg_align_top"
+msgstr "上方"
+
+msgid "media_dlg_align_right"
+msgstr "靠右"
+
+msgid "media_dlg_align_bottom"
+msgstr "下方"
+
+msgid "media_dlg_align_left"
+msgstr "靠左"
+
+msgid "media_dlg_align_center"
+msgstr "中间"
+
+msgid "media_dlg_align_top_left"
+msgstr "左上"
+
+msgid "media_dlg_align_top_right"
+msgstr "右上"
+
+msgid "media_dlg_align_bottom_left"
+msgstr "左下"
+
+msgid "media_dlg_align_bottom_right"
+msgstr "右下"
+
+msgid "media_dlg_flv_options"
+msgstr "Flash视频选项"
+
+msgid "media_dlg_flv_scalemode"
+msgstr "Scale mode"
+
+msgid "media_dlg_flv_buffer"
+msgstr "缓冲"
+
+msgid "media_dlg_flv_startimage"
+msgstr "开始画面"
+
+msgid "media_dlg_flv_starttime"
+msgstr "开始时间"
+
+msgid "media_dlg_flv_defaultvolume"
+msgstr "预设音量"
+
+msgid "media_dlg_flv_hiddengui"
+msgstr "隐藏GUI"
+
+msgid "media_dlg_flv_autostart"
+msgstr "自动播放"
+
+msgid "media_dlg_flv_loop"
+msgstr "回圈"
+
+msgid "media_dlg_flv_showscalemodes"
+msgstr "Show scale modes"
+
+msgid "media_dlg_flv_smoothvideo"
+msgstr "平滑图像"
+
+msgid "media_dlg_flv_jscallback"
+msgstr "JS回档"
+
+msgid "fullpage_desc"
+msgstr "档案属性"
+
+msgid "fullpage_delta_width"
+msgstr ""
+
+msgid "fullpage_delta_height"
+msgstr ""
+
+msgid "fullpage_dlg_title"
+msgstr "档案属性"
+
+msgid "fullpage_dlg_meta_tab"
+msgstr "一般"
+
+msgid "fullpage_dlg_appearance_tab"
+msgstr "外观"
+
+msgid "fullpage_dlg_advanced_tab"
+msgstr "高级"
+
+msgid "fullpage_dlg_meta_props"
+msgstr "标签( Meta )信息"
+
+msgid "fullpage_dlg_langprops"
+msgstr "语言与编码"
+
+msgid "fullpage_dlg_meta_title"
+msgstr "标题"
+
+msgid "fullpage_dlg_meta_keywords"
+msgstr "关键字"
+
+msgid "fullpage_dlg_meta_description"
+msgstr "内容说明"
+
+msgid "fullpage_dlg_meta_robots"
+msgstr "Robots"
+
+msgid "fullpage_dlg_doctypes"
+msgstr "Doctype"
+
+msgid "fullpage_dlg_langcode"
+msgstr "语言编码"
+
+msgid "fullpage_dlg_langdir"
+msgstr "语言书写方向"
+
+msgid "fullpage_dlg_ltr"
+msgstr "由左到右"
+
+msgid "fullpage_dlg_rtl"
+msgstr "由右到左"
+
+msgid "fullpage_dlg_xml_pi"
+msgstr "XML宣告"
+
+msgid "fullpage_dlg_encoding"
+msgstr "字元编码"
+
+msgid "fullpage_dlg_appearance_bgprops"
+msgstr "背景属性"
+
+msgid "fullpage_dlg_appearance_marginprops"
+msgstr "Body margins"
+
+msgid "fullpage_dlg_appearance_linkprops"
+msgstr "连结颜色"
+
+msgid "fullpage_dlg_appearance_textprops"
+msgstr "文字属性"
+
+msgid "fullpage_dlg_bgcolor"
+msgstr "背景颜色"
+
+msgid "fullpage_dlg_bgimage"
+msgstr "背景图片"
+
+msgid "fullpage_dlg_left_margin"
+msgstr "左边界"
+
+msgid "fullpage_dlg_right_margin"
+msgstr "右边界"
+
+msgid "fullpage_dlg_top_margin"
+msgstr "上边界"
+
+msgid "fullpage_dlg_bottom_margin"
+msgstr "下边界"
+
+msgid "fullpage_dlg_text_color"
+msgstr "文字颜色"
+
+msgid "fullpage_dlg_font_size"
+msgstr "字体尺寸"
+
+msgid "fullpage_dlg_font_face"
+msgstr "字体"
+
+msgid "fullpage_dlg_link_color"
+msgstr "连结颜色"
+
+msgid "fullpage_dlg_hover_color"
+msgstr "Hover颜色"
+
+msgid "fullpage_dlg_visited_color"
+msgstr "Visited颜色"
+
+msgid "fullpage_dlg_active_color"
+msgstr "Active颜色"
+
+msgid "fullpage_dlg_textcolor"
+msgstr "颜色"
+
+msgid "fullpage_dlg_fontsize"
+msgstr "字体大小"
+
+msgid "fullpage_dlg_fontface"
+msgstr "字形体系"
+
+msgid "fullpage_dlg_meta_index_follow"
+msgstr "Index and follow the links"
+
+msgid "fullpage_dlg_meta_index_nofollow"
+msgstr "Index and don't follow the links"
+
+msgid "fullpage_dlg_meta_noindex_follow"
+msgstr "Do not index but follow the links"
+
+msgid "fullpage_dlg_meta_noindex_nofollow"
+msgstr "Do not index and don't follow the links"
+
+msgid "fullpage_dlg_appearance_style"
+msgstr "样式表及样式属性"
+
+msgid "fullpage_dlg_stylesheet"
+msgstr "样式表"
+
+msgid "fullpage_dlg_style"
+msgstr "样式"
+
+msgid "fullpage_dlg_author"
+msgstr "作者"
+
+msgid "fullpage_dlg_copyright"
+msgstr "版权"
+
+msgid "fullpage_dlg_add"
+msgstr "添加新元素"
+
+msgid "fullpage_dlg_remove"
+msgstr "移除选定元素"
+
+msgid "fullpage_dlg_moveup"
+msgstr "上移选定元素"
+
+msgid "fullpage_dlg_movedown"
+msgstr "下移选定元素"
+
+msgid "fullpage_dlg_head_elements"
+msgstr "Head elements"
+
+msgid "fullpage_dlg_info"
+msgstr "信息"
+
+msgid "fullpage_dlg_add_title"
+msgstr "查找元素"
+
+msgid "fullpage_dlg_add_meta"
+msgstr "Meta元素"
+
+msgid "fullpage_dlg_add_script"
+msgstr "Script元素"
+
+msgid "fullpage_dlg_add_style"
+msgstr "Style元素"
+
+msgid "fullpage_dlg_add_link"
+msgstr "Link元素"
+
+msgid "fullpage_dlg_add_base"
+msgstr "Base元素"
+
+msgid "fullpage_dlg_add_comment"
+msgstr "Comment node"
+
+msgid "fullpage_dlg_title_element"
+msgstr "查找element"
+
+msgid "fullpage_dlg_script_element"
+msgstr "Script element"
+
+msgid "fullpage_dlg_style_element"
+msgstr "Style element"
+
+msgid "fullpage_dlg_base_element"
+msgstr "Base element"
+
+msgid "fullpage_dlg_link_element"
+msgstr "Link element"
+
+msgid "fullpage_dlg_meta_element"
+msgstr "Meta element"
+
+msgid "fullpage_dlg_comment_element"
+msgstr "Comment"
+
+msgid "fullpage_dlg_src"
+msgstr "Src"
+
+msgid "fullpage_dlg_language"
+msgstr "语言"
+
+msgid "fullpage_dlg_href"
+msgstr "Href"
+
+msgid "fullpage_dlg_target"
+msgstr "目标"
+
+msgid "fullpage_dlg_type"
+msgstr "类型"
+
+msgid "fullpage_dlg_charset"
+msgstr "字元集"
+
+msgid "fullpage_dlg_defer"
+msgstr "延缓"
+
+msgid "fullpage_dlg_media"
+msgstr "媒体"
+
+msgid "fullpage_dlg_properties"
+msgstr "属性"
+
+msgid "fullpage_dlg_name"
+msgstr "名称"
+
+msgid "fullpage_dlg_value"
+msgstr "值"
+
+msgid "fullpage_dlg_content"
+msgstr "内容"
+
+msgid "fullpage_dlg_rel"
+msgstr "Rel"
+
+msgid "fullpage_dlg_rev"
+msgstr "Rev"
+
+msgid "fullpage_dlg_hreflang"
+msgstr "Href lang"
+
+msgid "fullpage_dlg_general_props"
+msgstr "一般"
+
+msgid "fullpage_dlg_advanced_props"
+msgstr "高级"
+
+msgid "template_desc"
+msgstr "插入预定的范本内容"
+
+msgid "template_dlg_title"
+msgstr "范本标题"
+
+msgid "template_dlg_label"
+msgstr "范本"
+
+msgid "template_dlg_desc_label"
+msgstr "描述"
+
+msgid "template_dlg_desc"
+msgstr "插入预定的范本内容"
+
+msgid "template_dlg_select"
+msgstr "选择范本"
+
+msgid "template_dlg_preview"
+msgstr "预览"
+
+msgid "template_dlg_warning"
+msgstr "警告:更新范本有可能导致资料遗失。"
+
+msgid "template_dlg_mdate_format"
+msgstr "%Y-%m-%d %H:%M:%S"
+
+msgid "template_dlg_cdate_format"
+msgstr "%Y-%m-%d %H:%M:%S"
+
+msgid "template_dlg_months_long"
+msgstr "一月，二月，三月，四月，五月，六月，七月，八月，九月，十月，十一月，十二月"
+
+msgid "template_dlg_months_short"
+msgstr "1月，2月，3月，4月，5月，6月，7月，8月，9月，10月，11月，12月"
+
+msgid "template_dlg_day_long"
+msgstr "星期日，星期一，星期二，星期三，星期四，星期五，星期六，星期日"
+
+msgid "template_dlg_day_short"
+msgstr "周日，周一，周二，周三，周四，周五，周六，周日"
+
+msgid "visualchars_desc"
+msgstr "显示控制符号开/关。"
+
+msgid "spellchecker_desc"
+msgstr "开关拼写检查"
+
+msgid "spellchecker_menu"
+msgstr "拼写检查设置"
+
+msgid "spellchecker_ignore_word"
+msgstr "略过"
+
+msgid "spellchecker_ignore_words"
+msgstr "全部略过"
+
+msgid "spellchecker_langs"
+msgstr "语言"
+
+msgid "spellchecker_wait"
+msgstr "请稍候..."
+
+msgid "spellchecker_sug"
+msgstr "推荐字词"
+
+msgid "spellchecker_no_sug"
+msgstr "无拼写推荐"
+
+msgid "spellchecker_no_mpell"
+msgstr "未发现拼写错误"
+
+msgid "pagebreak_desc"
+msgstr "插入分页符号"
+
