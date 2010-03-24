@@ -14,4 +14,4 @@ cd skins/tinymce
 unzip ~/tinymce_lang_pack.zip
 mv plugins/advlink/langs/* plugins/plonelink/langs/
 mv plugins/advimage/langs/* plugins/ploneimage/langs/
-rm -rf plugins/advlink plugins/advimage plugins/style plugins/fullpage
+rm -rf plugins/advlink plugins/advimage plugins/style plugins/fullpage themes/simple
