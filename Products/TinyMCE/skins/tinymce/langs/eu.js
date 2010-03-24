@@ -1,154 +1,154 @@
 tinyMCE.addI18n({eu:{
 common:{
-edit_confirm:"Testu kutxa honentzat WYSIWYG modua erabili nahi duzu?",
-apply:"Gorde",
-insert:"Sartu",
+edit_confirm:"Testu-kutxa honek WYSIWYG editorea izatea nahi duzu?",
+apply:"Aplikatu",
+insert:"Txertatu",
 update:"Eguneratu",
 cancel:"Utzi",
 close:"Itxi",
 browse:"Arakatu",
-class_name:"Klasea",
-not_set:"-- Bat ere ez --",
-clipboard_msg:"Kopiatu/Ebaki/Itsatsi ez dago Mozilla eta Firefox nabigatzaileetan. Honen inguruko informazio gehiago lortu nahi duzu?",
-clipboard_no_support:"Zure nabigatzaileak ezin ditu arbelaren funtzioak erabili. Erabili teklatu bidezko laster-teklak.",
-popup_blocked:"Barkatu, pop-up leihoak blokeatuta dituzu eta horrek aplikazioaren atal batzuk ez ibiltzea dakar. Blokeo hori desgaitu egin behar duzu funtzio guztiak erabiltzeko.",
-invalid_data:"Errorea: Gorriz markatutako testua ez da baliozkoa.",
+class_name:"Kalsea",
+not_set:"-- Ezarri gabe --",
+clipboard_msg:"Kopiatu/Ebaki/Itsatsi ez dago Mozilla eta Firefoxen.\nHonen inguruko informazioa nahi duzu??",
+clipboard_no_support:"Zure nabigatzailean ez dabil, erabili teklatuko laster-teklak honetarako..",
+popup_blocked:"Ups, zure popup blokeatzaileak funtzionalitate bat eskaintzen duen leihoa blokeatu du. Blokeatzailea desgaitu beharko duzu tresna hau erabiltzeko.",
+invalid_data:"Errorea: baliogabeak diren aukerak sartu dituzu, gorriz agertzen dira.",
 more_colors:"Kolore gehiago"
 },
 contextmenu:{
 align:"Alineazioa",
 left:"Ezkerrean",
-center:"Erdian",
+center:"Zentratuta",
 right:"Eskuinean",
 full:"Justifikatuta"
 },
 insertdatetime:{
 date_fmt:"%Y-%m-%d",
 time_fmt:"%H:%M:%S",
-insertdate_desc:"Data sartu",
-inserttime_desc:"Ordua sartu",
+insertdate_desc:"Data txertatu",
+inserttime_desc:"Ordua txertatu",
 months_long:"Urtarrila,Otsaila,Martxoa,Apirila,Maiatza,Ekaina,Uztaila,Abuztua,Iraila,Urria,Azaroa,Abendua",
 months_short:"Urt,Ots,Mar,Api,Mai,Eka,Uzt,Abu,Ira,Urr,Aza,Abe",
 day_long:"Igandea,Astelehena,Asteartea,Asteazkena,Osteguna,Ostirala,Larunbata,Igandea",
-day_short:"Iga,Ast,Aar,Aaz,Osg,Ost,Lar,Iga"
+day_short:"Ig,Al,As,Az,Og,Or,Lr,Ig"
 },
 print:{
 print_desc:"Inprimatu"
 },
 preview:{
-preview_desc:"Aurrebista"
+preview_desc:"Aurreikusi"
 },
 directionality:{
-ltr_desc:"Ezkerretik eskuinerako zentzua",
-rtl_desc:"Eskuinetik ezkerrerako zentzua"
+ltr_desc:"Ezkerretik eskumara",
+rtl_desc:"Eskuinatik ezkerrera"
 },
 layer:{
-insertlayer_desc:"Kapa berria sartu",
-forward_desc:"Aurrera",
-backward_desc:"Atzera",
-absolute_desc:"Posizio absolutua aldatu",
+insertlayer_desc:"Kapa berria txertatu",
+forward_desc:"Aurrera joan",
+backward_desc:"Atzera joan",
+absolute_desc:"Posizionatze-absolutua aktibatu/desaktibatu",
 content:"Kapa berria..."
 },
 save:{
 save_desc:"Gorde",
-cancel_desc:"Aldaketa guztiak deuseztu"
+cancel_desc:"Aldaketak bertan behera utzi"
 },
 nonbreaking:{
-nonbreaking_desc:"Espazio karakterea sartu"
+nonbreaking_desc:"Espazioa txertatu"
 },
 iespell:{
-iespell_desc:"Ortografia zuzentzailea",
-download:"Ez da 'ieSpell' aurktu. Orain instalatu nahi duzu?"
+iespell_desc:"Hizkuntza zuzendu",
+download:"ieSpell ez da aurkitu. Instalatu egin nahi duzu?"
 },
 advhr:{
 advhr_desc:"Marra horizontala"
 },
 emotions:{
-emotions_desc:"Ikurrak"
+emotions_desc:"Ikonotxoak"
 },
 searchreplace:{
 search_desc:"Bilatu",
-replace_desc:"Bilatu/Ordezkatu"
+replace_desc:"Bilatu/Ordeztu"
 },
 advimage:{
-image_desc:"Irudia sartu/aldatu"
+image_desc:"Irudia txertatu/editatu"
 },
 advlink:{
-link_desc:"Lotura sartu/aldatu"
+link_desc:"Lotura txertatu/editatu"
 },
 xhtmlxtras:{
 cite_desc:"Zita",
 abbr_desc:"Laburdura",
 acronym_desc:"Akronimoa",
-del_desc:"Ezabatuta",
-ins_desc:"Sartuta",
-attribs_desc:"Atributuak gehitu/aldatu"
+del_desc:"Ezabaketa",
+ins_desc:"Txertaketa",
+attribs_desc:"Atributuak txertatu/editatu"
 },
 style:{
-desc:"CSS estiloa aldatu"
+desc:"Aldatu CSS estiloa"
 },
 paste:{
-paste_text_desc:"Testu arrunt gisa itsatsi",
-paste_word_desc:"Wordeko testua itsatsi",
-selectall_desc:"Hautatu dena"
+paste_text_desc:"Testu gisa itsatsi",
+paste_word_desc:"Word-etik itsatsi",
+selectall_desc:"Aukeratu guztia"
 },
 paste_dlg:{
-text_title:"Erabili CTRL+V zure teklatuan testua itsasteko.",
-text_linebreaks:"Lerro saltoak mantendu",
-word_title:"Erabili CTRL+V zure teklatuan testua itsasteko."
+text_title:"Erabili CTRL+V testua lehioan itsasteko.",
+text_linebreaks:"Mantendu lerro-jauziak",
+word_title:"Erabili CTRL+V testua lehioan itsasteko.."
 },
 table:{
-desc:"Taula berria sartu",
-row_before_desc:"Lerroa sartu (aurretik)",
-row_after_desc:"Lerroa sartu (ondoren)",
-delete_row_desc:"Lerroa ezabatu",
-col_before_desc:"Zutabea sartu (aurretik)",
-col_after_desc:"Zutabea sartu (ondoren)",
-delete_col_desc:"Zutabea ezabatu",
-split_cells_desc:"Zeldak banatu",
-merge_cells_desc:"Zeldak batu",
-row_desc:"Lerroaren propietateak",
-cell_desc:"Zeldaren propietateak",
-props_desc:"Taularen propietateak",
-paste_row_before_desc:"Lerroak itsatsi (aurretik)",
-paste_row_after_desc:"Lerroak itsatsi (ondoren)",
-cut_row_desc:"Lerroa ebaki",
-copy_row_desc:"Lerroa kopiatu",
-del:"Taula ezabatu",
+desc:"Taula berri bat txertatu",
+row_before_desc:"Txertatu lerroa aurretik",
+row_after_desc:"Txertatu lerroa ondoren",
+delete_row_desc:"Ezabatu lerroa",
+col_before_desc:"Txertatu zutabea aurretik",
+col_after_desc:"Txertatu zutabea ondoren",
+delete_col_desc:"Ezabatu zutabea",
+split_cells_desc:"Banatu bateratutako gelaxkak",
+merge_cells_desc:"Bateratu gelaxkak",
+row_desc:"Lerro ezaugarriak",
+cell_desc:"Gelaxka ezaugarriak",
+props_desc:"Taula ezaugarriak",
+paste_row_before_desc:"Itsatsi lerroa aurretik",
+paste_row_after_desc:"Itsatsi lerroa ondoren",
+cut_row_desc:"Moztu lerroa",
+copy_row_desc:"Kopiatu lerroa",
+del:"Ezabatu taula",
 row:"Lerroa",
 col:"Zutabea",
-cell:"Zelda"
+cell:"Gelaxka"
 },
 autosave:{
-unload_msg:"Orrialdetik irteten bazara, egindako aldaketak galdu egingo dira."
+unload_msg:"Egindako aldaketak galdu egingo dira orri honetatik kanpona nabigatzen baldin baduzu."
 },
 fullscreen:{
-desc:"Orrialde osoko modura aldatu"
+desc:"Aldatu pantaila osoko modura"
 },
 media:{
-desc:"Itsatsitako kodea sartu/aldatu",
-edit:"Itsatsitako kodea aldatu"
+desc:"Insert / edit embedded media",
+edit:"Edit embedded media"
 },
 fullpage:{
-desc:"Dokumentuaren propietateak"
+desc:"Dokumentuaren ezaugarriak"
 },
 template:{
-desc:"Aurredefinitutako txantiloiaren edukia sartu"
+desc:"Txertatu aurredefinitutako txantiloiaren edukia"
 },
 visualchars:{
-desc:"ON/OFF kontrol karaktereak."
+desc:"Begi kontrol karaktereak gaitu/ezgaitu."
 },
 spellchecker:{
-desc:"Ortografia zuzentzailera aldatu",
-menu:"Zuzentzailearen konfigurazioa",
-ignore_word:"Baztertu",
-ignore_words:"Guztia baztertu",
+desc:"Toggle spellchecker",
+menu:"Spellchecker settings",
+ignore_word:"Ezikusi hitza",
+ignore_words:"Ezikusi guztiak",
 langs:"Hizkuntzak",
-wait:"Itxaron...",
-sug:"Iradokizunak",
-no_sug:"Iradokizunik ez",
+wait:"Itxaron mesedez...",
+sug:"Gomendioa",
+no_sug:"Gomendiorik ez",
 no_mpell:"Ez da akatsik aurkitu."
 },
 pagebreak:{
-desc:"Orrialde bukaera sartu"
+desc:"Txertatu orri jauzia."
 }}});
