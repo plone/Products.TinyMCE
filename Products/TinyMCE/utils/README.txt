@@ -1,7 +1,7 @@
 Updating tinymce.po files
 ------------------------
 python wget-xml.py
-change to utf-8 the xml declaration in ja.xml and ch.xml
+change to utf-8 the xml declaration in ja.xml, ch.xml, zh.xml and ko.xml
 python generate-po.py
 
 Updating the langs js files
