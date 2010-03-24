@@ -8,7 +8,7 @@ import os, sys, string
 
 # Skip .ko for now
 AVAILABLE_LANGUAGES = set(
-    'ar bs ch da el es fa fr he hu ii it lv ms nl pl ro sc si sl sr '
+    'ar bs ch da el es eu fa fr he hu ii it lv ms nl pl ro sc si sl sr '
     'tr tw vi bg ca cs de en et fi gl hr ia is ja lt mk nb nn pt ru se '
     'sk sq sv tt uk'.split())
 
