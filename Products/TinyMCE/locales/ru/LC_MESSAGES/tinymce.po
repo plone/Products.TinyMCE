@@ -1,14 +1,14 @@
-# Пакет русской локализации для TinyMCE
-# Version 56.6
+# Это Русский языковой пакет для TinyMCE
+# Version 81.4
 #
-# Kira Kononovich (konkira@yandex.ru)
+# Кутняков
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2009-08-10 00:00+0000\n"
-"Last-Translator: Kira Kononovich (konkira@yandex.ru)\n"
-"Language-Team: Kira Kononovich (konkira@yandex.ru)\n"
+"PO-Revision-Date: 2010-03-21 00:00+0000\n"
+"Last-Translator: Кутняков\n"
+"Language-Team: Кутняков\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,10 +19,10 @@ msgstr ""
 "Domain: tinymce\n"
 
 msgid "common_edit_confirm"
-msgstr "Хотите использовать для редактирования визуальный режим?"
+msgstr "Использовать WYSIWYG режим для этого поля?"
 
 msgid "common_apply"
-msgstr "Сохранить"
+msgstr "Применить"
 
 msgid "common_insert"
 msgstr "Вставить"
@@ -37,28 +37,28 @@ msgid "common_close"
 msgstr "Закрыть"
 
 msgid "common_browse"
-msgstr "Обзор"
+msgstr "Просмотр"
 
 msgid "common_class_name"
 msgstr "Класс"
 
 msgid "common_not_set"
-msgstr "-- Нет --"
+msgstr "- Не установлено -"
 
 msgid "common_clipboard_msg"
-msgstr "Команды Копировать/Вырезать/Вставить не работают в Firefox. Пользуйтесь для копирования клавишами Ctrl+C, для вырезания - Ctrl+X, для вставки - Ctrl+V. Хотите узнать об этом подробнее?"
+msgstr "Копирование, вырезка и вставка не работают в Firefox.\r\nХотите получить более подробную информацию?"
 
 msgid "common_clipboard_no_support"
-msgstr "Не поддерживается вашим браузером, используйте клавиатурные сокращения (для копирования - Ctrl+C, для вырезания - Ctrl+X, для вставки - Ctrl+V)."
+msgstr "Не поддерживается Вашим браузером, используйте горячие клавиши."
 
 msgid "common_popup_blocked"
-msgstr "Ваш браузер заблокировал всплывающее окно, необходимое для работы приложения. Вам нужно отключить блокирование всплывающих окон на этом сайте, чтобы воспользоваться этим инструментом."
+msgstr "Блокиратор всплывающих окон закрыл необходимое окно. Для полноценной работы, отключите блокировку на этом сайте."
 
 msgid "common_invalid_data"
-msgstr "Ошибка: красным отмечены значения, введённые неправильно."
+msgstr "Ошибка: Введено неверное значение, оно отмечено красным."
 
 msgid "common_more_colors"
-msgstr "Выбрать цвет"
+msgstr "Другие цвета..."
 
 msgid "simple_bold_desc"
 msgstr "Полужирный (Ctrl+B)"
@@ -67,10 +67,10 @@ msgid "simple_italic_desc"
 msgstr "Курсив (Ctrl+I)"
 
 msgid "simple_underline_desc"
-msgstr "Подчёркнутый (Ctrl+U)"
+msgstr "Подчеркнутый (Ctrl+U)"
 
 msgid "simple_striketrough_desc"
-msgstr "Зачёркнутый"
+msgstr "Зачеркнутый"
 
 msgid "simple_bullist_desc"
 msgstr "Маркированный список"
@@ -82,13 +82,13 @@ msgid "simple_undo_desc"
 msgstr "Отменить (Ctrl+Z)"
 
 msgid "simple_redo_desc"
-msgstr "Повторить (Ctrl+Y)"
+msgstr "Вернуть (Ctrl+Y)"
 
 msgid "simple_cleanup_desc"
-msgstr "Очистить"
+msgstr "Очистить лишний код"
 
 msgid "advanced_style_select"
-msgstr "Стили"
+msgstr "Стиль"
 
 msgid "advanced_font_size"
 msgstr "Размер"
@@ -103,13 +103,13 @@ msgid "advanced_paragraph"
 msgstr "Абзац"
 
 msgid "advanced_div"
-msgstr "Раздел"
+msgstr "Div"
 
 msgid "advanced_address"
 msgstr "Адрес"
 
 msgid "advanced_pre"
-msgstr "Форматированный"
+msgstr "Отформатированный"
 
 msgid "advanced_h1"
 msgstr "Заголовок 1"
@@ -139,10 +139,10 @@ msgid "advanced_samp"
 msgstr "Пример кода"
 
 msgid "advanced_dt"
-msgstr "Термин"
+msgstr "Термин справочника"
 
 msgid "advanced_dd"
-msgstr "Определение"
+msgstr "Описание справочника"
 
 msgid "advanced_bold_desc"
 msgstr "Полужирный (Ctrl+B)"
@@ -151,10 +151,10 @@ msgid "advanced_italic_desc"
 msgstr "Курсив (Ctrl+I)"
 
 msgid "advanced_underline_desc"
-msgstr "Подчёркнутый (Ctrl+U)"
+msgstr "Подчеркнутый (Ctrl+U)"
 
 msgid "advanced_striketrough_desc"
-msgstr "Зачёркнутый"
+msgstr "Зачеркнутый"
 
 msgid "advanced_justifyleft_desc"
 msgstr "По левому краю"
@@ -184,52 +184,52 @@ msgid "advanced_undo_desc"
 msgstr "Отменить (Ctrl+Z)"
 
 msgid "advanced_redo_desc"
-msgstr "Повторить (Ctrl+Y)"
+msgstr "Вернуть (Ctrl+Y)"
 
 msgid "advanced_link_desc"
-msgstr "Вставить/редактировать ссылку"
+msgstr "Добавить/Изменить ссылку"
 
 msgid "advanced_unlink_desc"
 msgstr "Удалить ссылку"
 
 msgid "advanced_image_desc"
-msgstr "Вставить/редактировать изображение"
+msgstr "Добавить/Изменить изображение"
 
 msgid "advanced_cleanup_desc"
-msgstr "Очистить"
+msgstr "Очистить лишний код"
 
 msgid "advanced_code_desc"
-msgstr "Редактировать HTML-код"
+msgstr "Редактировать HTML код"
 
 msgid "advanced_sub_desc"
-msgstr "Нижний индекс"
+msgstr "Подстрочный"
 
 msgid "advanced_sup_desc"
-msgstr "Верхний индекс"
+msgstr "Надстрочный"
 
 msgid "advanced_hr_desc"
-msgstr "Вставить горизонтальную линию"
+msgstr "Добавить черту"
 
 msgid "advanced_removeformat_desc"
-msgstr "Убрать форматирование"
+msgstr "Очистить формат"
 
 msgid "advanced_custom1_desc"
-msgstr "Введите описание"
+msgstr "Собственное описание"
 
 msgid "advanced_forecolor_desc"
-msgstr "Выбрать цвет текста"
+msgstr "Цвет текста"
 
 msgid "advanced_backcolor_desc"
-msgstr "Выбрать цвет фона"
+msgstr "Цвет выделения текста"
 
 msgid "advanced_charmap_desc"
-msgstr "Вставить специальный символ"
+msgstr "Добавить символ"
 
 msgid "advanced_visualaid_desc"
-msgstr "Вкл/выкл направляющие и невидимые элементы"
+msgstr "Все знаки"
 
 msgid "advanced_anchor_desc"
-msgstr "Вставить/редактировать якорь"
+msgstr "Добавить/Изменить якорь"
 
 msgid "advanced_cut_desc"
 msgstr "Вырезать"
@@ -241,7 +241,7 @@ msgid "advanced_paste_desc"
 msgstr "Вставить"
 
 msgid "advanced_image_props_desc"
-msgstr "Свойства изображения"
+msgstr "Параметры изображения"
 
 msgid "advanced_newdocument_desc"
 msgstr "Новый документ"
@@ -253,19 +253,19 @@ msgid "advanced_blockquote_desc"
 msgstr "Цитата"
 
 msgid "advanced_clipboard_msg"
-msgstr "Команды Копировать/Вырезать/Вставить не работают в Firefox. Хотите узнать об этом подробнее?"
+msgstr "Копирование, вырезка и вставка не работают в Firefox.\r\nХотите получить более подробную информацию?"
 
 msgid "advanced_path"
-msgstr "Путь"
+msgstr "Теги"
 
 msgid "advanced_newdocument"
-msgstr "Вы уверены, что хотите очистить содержимое?"
+msgstr "Вы уверены, что хотите все удалить?"
 
 msgid "advanced_toolbar_focus"
-msgstr "Перейти к кнопкам инструментов - Alt+Q, перейти к редактору - Alt+Z, перейти к пути элемента - Alt+X"
+msgstr "Перейти на панель кнопок (Alt+Q). Перейти к редактору (Alt+Z). Перейти к элементу пути (Alt+X)."
 
 msgid "advanced_more_colors"
-msgstr "Выбрать цвет"
+msgstr "Другие цвета..."
 
 msgid "advanced_image_delta_width"
 msgstr ""
@@ -298,10 +298,10 @@ msgid "advanced_anchor_delta_height"
 msgstr ""
 
 msgid "advanced_dlg_about_title"
-msgstr "О TinyMCE"
+msgstr "Описание TinyMCE"
 
 msgid "advanced_dlg_about_general"
-msgstr "О программе"
+msgstr "Описание"
 
 msgid "advanced_dlg_about_help"
 msgstr "Помощь"
@@ -310,10 +310,10 @@ msgid "advanced_dlg_about_license"
 msgstr "Лицензия"
 
 msgid "advanced_dlg_about_plugins"
-msgstr "Дополнения"
+msgstr "Плагины"
 
 msgid "advanced_dlg_about_plugin"
-msgstr "Дополнение"
+msgstr "Плагин"
 
 msgid "advanced_dlg_about_author"
 msgstr "Автор"
@@ -322,73 +322,73 @@ msgid "advanced_dlg_about_version"
 msgstr "Версия"
 
 msgid "advanced_dlg_about_loaded"
-msgstr "Загруженные дополнения"
+msgstr "Подключенные плагины"
 
 msgid "advanced_dlg_anchor_title"
-msgstr "Вставить/редактировать якорь"
+msgstr "Параметры якоря"
 
 msgid "advanced_dlg_anchor_name"
 msgstr "Имя якоря"
 
 msgid "advanced_dlg_code_title"
-msgstr "Редактор HTML-кода"
+msgstr "Редактор HTML кода"
 
 msgid "advanced_dlg_code_wordwrap"
-msgstr "Переносить по словам"
+msgstr "Перенос строк"
 
 msgid "advanced_dlg_colorpicker_title"
-msgstr "Выберите цвет"
+msgstr "Цвета"
 
 msgid "advanced_dlg_colorpicker_picker_tab"
-msgstr "Выбор"
+msgstr "Спктр"
 
 msgid "advanced_dlg_colorpicker_picker_title"
-msgstr "Выбор цвета"
+msgstr "Цвета"
 
 msgid "advanced_dlg_colorpicker_palette_tab"
 msgstr "Палитра"
 
 msgid "advanced_dlg_colorpicker_palette_title"
-msgstr "Цвета палитры"
+msgstr "Цвета"
 
 msgid "advanced_dlg_colorpicker_named_tab"
-msgstr "Стандартные"
+msgstr "Названия"
 
 msgid "advanced_dlg_colorpicker_named_title"
-msgstr "Стандартные цвета"
+msgstr "Цвета"
 
 msgid "advanced_dlg_colorpicker_color"
-msgstr "Цвет"
+msgstr "Код:"
 
 msgid "advanced_dlg_colorpicker_name"
-msgstr "Название"
+msgstr "Название:"
 
 msgid "advanced_dlg_charmap_title"
-msgstr "Выберите специальный символ"
+msgstr "Выбор символа"
 
 msgid "advanced_dlg_image_title"
-msgstr "Вставить/редактировать изображение"
+msgstr "Параметры изображения"
 
 msgid "advanced_dlg_image_src"
-msgstr "Адрес изображения"
+msgstr "Адрес"
 
 msgid "advanced_dlg_image_alt"
-msgstr "Описание изображения"
+msgstr "Описание"
 
 msgid "advanced_dlg_image_list"
-msgstr "Список изображений"
+msgstr "Список картинок"
 
 msgid "advanced_dlg_image_border"
 msgstr "Граница"
 
 msgid "advanced_dlg_image_dimensions"
-msgstr "Размеры"
+msgstr "Размер"
 
 msgid "advanced_dlg_image_vspace"
-msgstr "Отступ по вертикали"
+msgstr "Верт. отступ"
 
 msgid "advanced_dlg_image_hspace"
-msgstr "Отступ по горизонтали"
+msgstr "Гориз. отступ"
 
 msgid "advanced_dlg_image_align"
 msgstr "Выравнивание"
@@ -397,49 +397,49 @@ msgid "advanced_dlg_image_align_baseline"
 msgstr "По базовой линии"
 
 msgid "advanced_dlg_image_align_top"
-msgstr "По верху"
+msgstr "По верхнему краю"
 
 msgid "advanced_dlg_image_align_middle"
 msgstr "По центру"
 
 msgid "advanced_dlg_image_align_bottom"
-msgstr "По низу"
+msgstr "По нижнему краю"
 
 msgid "advanced_dlg_image_align_texttop"
-msgstr "По верху текста"
+msgstr "По верхнему краю текста"
 
 msgid "advanced_dlg_image_align_textbottom"
-msgstr "По низу текста"
+msgstr "По нижнему краю текста"
 
 msgid "advanced_dlg_image_align_left"
-msgstr "Влево"
+msgstr "По левому краю"
 
 msgid "advanced_dlg_image_align_right"
-msgstr "Вправо"
+msgstr "По правому краю"
 
 msgid "advanced_dlg_link_title"
-msgstr "Вставить/редактировать ссылку"
+msgstr "Параметры ссылки"
 
 msgid "advanced_dlg_link_url"
-msgstr "Адрес ссылки"
+msgstr "Адрес"
 
 msgid "advanced_dlg_link_target"
 msgstr "Цель"
 
 msgid "advanced_dlg_link_target_same"
-msgstr "Открыть ссылку в том же окне"
+msgstr "Открыть в этом окне"
 
 msgid "advanced_dlg_link_target_blank"
-msgstr "Открыть ссылку в новом окне"
+msgstr "Открыть в новом окне"
 
 msgid "advanced_dlg_link_titlefield"
-msgstr "Название"
+msgstr "Заголовок"
 
 msgid "advanced_dlg_link_is_email"
-msgstr "Введённый адрес похож на адрес электронной почты, хотите добавить префикс mailto:?"
+msgstr "Введенный адрес напоминает электронную почту, добавить префикс mailto:?"
 
 msgid "advanced_dlg_link_is_external"
-msgstr "Введённый адрес похож на внешнюю ссылку, хотите добавить префикс http://?"
+msgstr "Введенный адрес напоминает внешнюю ссылку, добавить префикс http://?"
 
 msgid "advanced_dlg_link_list"
 msgstr "Список ссылок"
@@ -466,19 +466,19 @@ msgid "insertdatetime_time_fmt"
 msgstr "%H:%M:%S"
 
 msgid "insertdatetime_insertdate_desc"
-msgstr "Вставить дату"
+msgstr "Добавить дату"
 
 msgid "insertdatetime_inserttime_desc"
-msgstr "Вставить время"
+msgstr "Добавить время"
 
 msgid "insertdatetime_months_long"
-msgstr "января,февраля,марта,апреля,мая,июня,июля,августа,сентября,октября,ноября,декабря"
+msgstr "январь,февраль,март,апрель,май,июнь,июль,август,сентябрь,октябрь,ноябрь,декабрь"
 
 msgid "insertdatetime_months_short"
-msgstr "янв,фев,мар,апр,май,июн,июл,авг,сен,окт,ноя,дек"
+msgstr "янв,фев,март,апр,май,июнь,июль,авг,сен,окт,ноя,дек"
 
 msgid "insertdatetime_day_long"
-msgstr "воскресенье,понедельник,вторник,среда,четверг,пятница,суббота,воскресенье"
+msgstr "воскресенье,понедельник,вторник,среда,четверг,пятницу,суббота,воскресенье"
 
 msgid "insertdatetime_day_short"
 msgstr "вс,пн,вт,ср,чт,пт,сб,вс"
@@ -496,7 +496,7 @@ msgid "directionality_rtl_desc"
 msgstr "Направление справа налево"
 
 msgid "layer_insertlayer_desc"
-msgstr "Вставить новый слой"
+msgstr "Добавить слой"
 
 msgid "layer_forward_desc"
 msgstr "На передний план"
@@ -505,7 +505,7 @@ msgid "layer_backward_desc"
 msgstr "На задний план"
 
 msgid "layer_absolute_desc"
-msgstr "Вкл/выкл абсолютное позиционирование"
+msgstr "Абсолютное позицирование"
 
 msgid "layer_content"
 msgstr "Новый слой"
@@ -514,19 +514,19 @@ msgid "save_save_desc"
 msgstr "Сохранить"
 
 msgid "save_cancel_desc"
-msgstr "Отменить"
+msgstr "Отменить все изменения"
 
 msgid "nonbreaking_nonbreaking_desc"
-msgstr "Вставить неразрывный пробел"
+msgstr "Добавить неразрывный пробел"
 
 msgid "iespell_iespell_desc"
 msgstr "Проверить орфографию"
 
 msgid "iespell_download"
-msgstr "Компонент проверки орфографии не обнаружен. Установить?"
+msgstr "ieSpell не найден. Желаете установить?"
 
 msgid "advhr_advhr_desc"
-msgstr "Горизонтальная линия"
+msgstr "Добавить разделитель"
 
 msgid "advhr_delta_width"
 msgstr ""
@@ -544,7 +544,7 @@ msgid "advhr_dlg_noshade"
 msgstr "Без тени"
 
 msgid "emotions_emotions_desc"
-msgstr "Эмоции"
+msgstr "Добавить смайл"
 
 msgid "emotions_delta_width"
 msgstr ""
@@ -553,64 +553,64 @@ msgid "emotions_delta_height"
 msgstr ""
 
 msgid "emotions_dlg_title"
-msgstr "Вставить эмоцию"
+msgstr "Выбор смайла"
 
 msgid "emotions_dlg_desc"
-msgstr "Смайлики"
+msgstr "Смайлы"
 
 msgid "emotions_dlg_cool"
-msgstr "Суперрр"
+msgstr "Cool"
 
 msgid "emotions_dlg_cry"
-msgstr "Ой-ой-ой"
+msgstr "Cry"
 
 msgid "emotions_dlg_embarassed"
-msgstr "Ужасно стыдно"
+msgstr "Embarassed"
 
 msgid "emotions_dlg_foot_in_mouth"
-msgstr "Обескуражен"
+msgstr "Foot in mouth"
 
 msgid "emotions_dlg_frown"
-msgstr "Недоволен"
+msgstr "Frown"
 
 msgid "emotions_dlg_innocent"
-msgstr "Невинный"
+msgstr "Innocent"
 
 msgid "emotions_dlg_kiss"
-msgstr "Целую"
+msgstr "Kiss"
 
 msgid "emotions_dlg_laughing"
-msgstr "Смешно"
+msgstr "Laughing"
 
 msgid "emotions_dlg_money_mouth"
-msgstr "Денег хочу!"
+msgstr "Money mouth"
 
 msgid "emotions_dlg_sealed"
-msgstr "Молчу-молчу!"
+msgstr "Sealed"
 
 msgid "emotions_dlg_smile"
-msgstr "Улыбаюсь"
+msgstr "Smile"
 
 msgid "emotions_dlg_surprised"
-msgstr "Удивлен"
+msgstr "Surprised"
 
 msgid "emotions_dlg_tongue_out"
-msgstr "Показать язык"
+msgstr "Tongue out"
 
 msgid "emotions_dlg_undecided"
-msgstr "В нерешительности"
+msgstr "Undecided"
 
 msgid "emotions_dlg_wink"
-msgstr "Подмигиваю"
+msgstr "Wink"
 
 msgid "emotions_dlg_yell"
-msgstr "Рву и мечу!"
+msgstr "Yell"
 
 msgid "searchreplace_search_desc"
 msgstr "Найти"
 
 msgid "searchreplace_replace_desc"
-msgstr "Найти и заменить"
+msgstr "Заменить"
 
 msgid "searchreplace_delta_width"
 msgstr ""
@@ -619,22 +619,22 @@ msgid "searchreplace_delta_height"
 msgstr ""
 
 msgid "searchreplace_dlg_searchnext_desc"
-msgstr "Найти далее"
+msgstr "Найти еще"
 
 msgid "searchreplace_dlg_notfound"
-msgstr "Поиск закончен, строка не найдена"
+msgstr "Поиск завершен. Соотвествий не найдено."
 
 msgid "searchreplace_dlg_search_title"
-msgstr "Найти"
+msgstr "Поиск"
 
 msgid "searchreplace_dlg_replace_title"
-msgstr "Найти и заменить"
+msgstr "Поиск и замена"
 
 msgid "searchreplace_dlg_allreplaced"
-msgstr "Все встречающиеся строки были заменены"
+msgstr "Все соответствия поиска были заменены."
 
 msgid "searchreplace_dlg_findwhat"
-msgstr "Найти"
+msgstr "Поиск"
 
 msgid "searchreplace_dlg_replacewith"
 msgstr "Заменить на"
@@ -643,7 +643,7 @@ msgid "searchreplace_dlg_direction"
 msgstr "Направление"
 
 msgid "searchreplace_dlg_up"
-msgstr "Вверх"
+msgstr "Вверх "
 
 msgid "searchreplace_dlg_down"
 msgstr "Вниз"
@@ -655,49 +655,49 @@ msgid "searchreplace_dlg_findnext"
 msgstr "Найти далее"
 
 msgid "searchreplace_dlg_replace"
-msgstr "Заменить"
+msgstr "Замена"
 
 msgid "searchreplace_dlg_replaceall"
 msgstr "Заменить все"
 
 msgid "ploneimage_image_desc"
-msgstr "Вставить/редактировать изображение"
+msgstr "Добавить/Изменить изображение"
 
 msgid "ploneimage_delta_width"
-msgstr ""
+msgstr "200"
 
 msgid "ploneimage_delta_height"
 msgstr ""
 
 msgid "ploneimage_dlg_tab_general"
-msgstr "Общие"
+msgstr "Общее"
 
 msgid "ploneimage_dlg_tab_appearance"
-msgstr "Оформление"
+msgstr "Положение"
 
 msgid "ploneimage_dlg_tab_advanced"
-msgstr "Дополнительные"
+msgstr "Дополнительно"
 
 msgid "ploneimage_dlg_general"
-msgstr "Общие"
+msgstr "Общие параметры"
 
 msgid "ploneimage_dlg_title"
-msgstr "Название"
+msgstr "Заголовок"
 
 msgid "ploneimage_dlg_preview"
-msgstr "Предварительный просмотр"
+msgstr "Педварительный просмотр"
 
 msgid "ploneimage_dlg_constrain_proportions"
-msgstr "Сохранять пропорции"
+msgstr "Сохранить пропорции"
 
 msgid "ploneimage_dlg_langdir"
-msgstr "Направление языка"
+msgstr "Направление текста"
 
 msgid "ploneimage_dlg_langcode"
 msgstr "Код языка"
 
 msgid "ploneimage_dlg_long_desc"
-msgstr "Ссылка на подробное описание"
+msgstr "Ссылка на полное описание"
 
 msgid "ploneimage_dlg_style"
 msgstr "Стиль"
@@ -712,55 +712,55 @@ msgid "ploneimage_dlg_rtl"
 msgstr "Справа налево"
 
 msgid "ploneimage_dlg_id"
-msgstr "Идентификатор"
+msgstr "Имя элемента"
 
 msgid "ploneimage_dlg_map"
-msgstr "Карта"
+msgstr "Карта ссылок"
 
 msgid "ploneimage_dlg_swap_image"
-msgstr "Замена изображения"
+msgstr "Динамическое изображение"
 
 msgid "ploneimage_dlg_alt_image"
 msgstr "Альтернативное изображение"
 
 msgid "ploneimage_dlg_mouseover"
-msgstr "При наведении курсора"
+msgstr "При наведении"
 
 msgid "ploneimage_dlg_mouseout"
-msgstr "При отведении курсора"
+msgstr "В покое"
 
 msgid "ploneimage_dlg_misc"
-msgstr "Разное"
+msgstr "Дополнительные параметры"
 
 msgid "ploneimage_dlg_example_img"
-msgstr "Предварительный просмотр оформления"
+msgstr "Пример изображения"
 
 msgid "ploneimage_dlg_missing_alt"
-msgstr "Вы уверены, что хотите продолжить без описания изображения? Без него изображение может быть недоступно некоторым пользователям."
+msgstr "Продолжить без описания? Без этого изображение будет недоступно некоторым пользователям."
 
 msgid "ploneimage_dlg_dialog_title"
-msgstr "Вставить/редактировать изображение"
+msgstr "Параметры изображения"
 
 msgid "ploneimage_dlg_src"
-msgstr "Адрес изображения"
+msgstr "Адрес"
 
 msgid "ploneimage_dlg_alt"
-msgstr "Описание изображения"
+msgstr "Описание"
 
 msgid "ploneimage_dlg_list"
-msgstr "Список изображений"
+msgstr "Список"
 
 msgid "ploneimage_dlg_border"
 msgstr "Граница"
 
 msgid "ploneimage_dlg_dimensions"
-msgstr "Размеры"
+msgstr "Размер"
 
 msgid "ploneimage_dlg_vspace"
-msgstr "Вертикальный отступ"
+msgstr "Верт. отступ"
 
 msgid "ploneimage_dlg_hspace"
-msgstr "Горизонтальный отступ"
+msgstr "Гориз. отступ"
 
 msgid "ploneimage_dlg_align"
 msgstr "Выравнивание"
@@ -769,133 +769,133 @@ msgid "ploneimage_dlg_align_baseline"
 msgstr "По базовой линии"
 
 msgid "ploneimage_dlg_align_top"
-msgstr "По верху"
+msgstr "По верхнему краю"
 
 msgid "ploneimage_dlg_align_middle"
 msgstr "По центру"
 
 msgid "ploneimage_dlg_align_bottom"
-msgstr "По низу"
+msgstr "По нижнему краю"
 
 msgid "ploneimage_dlg_align_texttop"
-msgstr "По верху текста"
+msgstr "По верхнему краю текста"
 
 msgid "ploneimage_dlg_align_textbottom"
-msgstr "По низу текста"
+msgstr "По нижнему краю текста"
 
 msgid "ploneimage_dlg_align_left"
-msgstr "Влево"
+msgstr "По левому краю"
 
 msgid "ploneimage_dlg_align_right"
-msgstr "Вправо"
+msgstr "По правому краю"
 
 msgid "ploneimage_dlg_image_list"
-msgstr "Список изображений"
+msgstr "Список картинок"
 
 msgid "plonelink_link_desc"
-msgstr "Вставить/редактировать ссылку"
+msgstr "Добавить/Изменить ссылку"
 
 msgid "plonelink_delta_width"
-msgstr ""
+msgstr "200"
 
 msgid "plonelink_delta_height"
 msgstr ""
 
 msgid "plonelink_dlg_title"
-msgstr "Вставить/редактировать ссылку"
+msgstr "Параметры ссылки"
 
 msgid "plonelink_dlg_url"
-msgstr "Адрес ссылки"
+msgstr "Адрес"
 
 msgid "plonelink_dlg_target"
 msgstr "Цель"
 
 msgid "plonelink_dlg_titlefield"
-msgstr "Название"
+msgstr "Заголовок"
 
 msgid "plonelink_dlg_is_email"
-msgstr "Введенный адрес похож на эл. почту, вы хотите добавить префикс mailto:?"
+msgstr "Введенный адрес напоминает электронную почту, добавить префикс mailto:?"
 
 msgid "plonelink_dlg_is_external"
-msgstr "Введенный адрес похож на внешнюю ссылку, вы хотите добавить префикс http://?"
+msgstr "Введенный адрес напоминает внешнюю ссылку, добавить префикс http://?"
 
 msgid "plonelink_dlg_list"
-msgstr "Список ссылок"
+msgstr "Список"
 
 msgid "plonelink_dlg_general_tab"
-msgstr "Общие"
+msgstr "Общее"
 
 msgid "plonelink_dlg_popup_tab"
-msgstr "Всплывающее окно"
+msgstr "Развертывание"
 
 msgid "plonelink_dlg_events_tab"
 msgstr "События"
 
 msgid "plonelink_dlg_advanced_tab"
-msgstr "Дополнительные"
+msgstr "Дополнительно"
 
 msgid "plonelink_dlg_general_props"
-msgstr "Общие свойства"
+msgstr "Общие параметры"
 
 msgid "plonelink_dlg_popup_props"
-msgstr "Свойства всплывающего окна"
+msgstr "Параметры развертывания"
 
 msgid "plonelink_dlg_event_props"
-msgstr "События"
+msgstr "Параметры событий"
 
 msgid "plonelink_dlg_advanced_props"
-msgstr "Дополнительные свойства"
+msgstr "Дополнительные параметры"
 
 msgid "plonelink_dlg_popup_opts"
-msgstr "Параметры"
+msgstr "Свойства"
 
 msgid "plonelink_dlg_anchor_names"
-msgstr "Якори"
+msgstr "Якоря"
 
 msgid "plonelink_dlg_target_same"
-msgstr "Открыть в этом окне/фрейме"
+msgstr "Открыть в этом окне/кадре"
 
 msgid "plonelink_dlg_target_parent"
-msgstr "Открыть в родительском окне/фрейме"
+msgstr "Открыть в родительском окне/кадре"
 
 msgid "plonelink_dlg_target_top"
-msgstr "Открыть в верхнем фрейме (замещает все остальные)"
+msgstr "Открыть в верхнем кадре (заменить все кадры)"
 
 msgid "plonelink_dlg_target_blank"
 msgstr "Открыть в новом окне"
 
 msgid "plonelink_dlg_popup"
-msgstr "Всплывающее окно"
+msgstr "Развертывание с использованием Java"
 
 msgid "plonelink_dlg_popup_url"
-msgstr "Адрес всплывающего окна"
+msgstr "Адрес"
 
 msgid "plonelink_dlg_popup_name"
 msgstr "Название окна"
 
 msgid "plonelink_dlg_popup_return"
-msgstr "Вставить 'return false'"
+msgstr "Добавить 'return false'"
 
 msgid "plonelink_dlg_popup_scrollbars"
-msgstr "Показать полосы прокрутки"
+msgstr "Отображать полосы прокрутки"
 
 msgid "plonelink_dlg_popup_statusbar"
-msgstr "Показать строку состояния"
+msgstr "Отображать строку состояния"
 
 msgid "plonelink_dlg_popup_toolbar"
-msgstr "Показать панели инструментов"
+msgstr "Отображать панели инструментов"
 
 msgid "plonelink_dlg_popup_menubar"
-msgstr "Показать строку меню"
+msgstr "Отображать меню"
 
 msgid "plonelink_dlg_popup_location"
-msgstr "Показать строку адреса"
+msgstr "Отображать панель расположения"
 
 msgid "plonelink_dlg_popup_resizable"
-msgstr "Сделать размер окна изменяемым"
+msgstr "Разрешать изменять размер"
 
 msgid "plonelink_dlg_popup_dependent"
-msgstr "Зависимые (только Mozilla/Firefox)"
+msgstr "Зависимость (только для Firefox)"
 
 msgid "plonelink_dlg_popup_size"
 msgstr "Размер"
@@ -904,7 +904,7 @@ msgid "plonelink_dlg_popup_position"
 msgstr "Позиция (X/Y)"
 
 msgid "plonelink_dlg_id"
-msgstr "Идентификатор"
+msgstr "Имя"
 
 msgid "plonelink_dlg_style"
 msgstr "Стиль"
@@ -913,34 +913,34 @@ msgid "plonelink_dlg_classes"
 msgstr "Классы"
 
 msgid "plonelink_dlg_target_name"
-msgstr "Название цели"
+msgstr "Имя цели"
 
 msgid "plonelink_dlg_langdir"
-msgstr "Направление языка"
+msgstr "Направление текста"
 
 msgid "plonelink_dlg_target_langcode"
-msgstr "Целевой язык"
+msgstr "Язык цели"
 
 msgid "plonelink_dlg_langcode"
 msgstr "Код языка"
 
 msgid "plonelink_dlg_encoding"
-msgstr "Целевая кодировка"
+msgstr "Кодировка цели"
 
 msgid "plonelink_dlg_mime"
-msgstr "Целевой MIME-тип"
+msgstr "MIME тип цели"
 
 msgid "plonelink_dlg_rel"
-msgstr "Отношение страница к цели"
+msgstr "Отношение страницы к цели"
 
 msgid "plonelink_dlg_rev"
-msgstr "Отношение цель к странице"
+msgstr "Отношение цели к странице"
 
 msgid "plonelink_dlg_tabindex"
-msgstr "Индекс табуляции"
+msgstr "Заголовок"
 
 msgid "plonelink_dlg_accesskey"
-msgstr "Клавиша доступа"
+msgstr "Ключ доступа"
 
 msgid "plonelink_dlg_ltr"
 msgstr "Слева направо"
@@ -952,22 +952,22 @@ msgid "plonelink_dlg_link_list"
 msgstr "Список ссылок"
 
 msgid "xhtmlxtras_cite_desc"
-msgstr "Цитата"
+msgstr "Цитирование"
 
 msgid "xhtmlxtras_abbr_desc"
-msgstr "Аббревиатура"
+msgstr "Сокращение"
 
 msgid "xhtmlxtras_acronym_desc"
-msgstr "Акроним"
+msgstr "Аббревиация"
 
 msgid "xhtmlxtras_del_desc"
-msgstr "Удаленный текст"
+msgstr "Удаление"
 
 msgid "xhtmlxtras_ins_desc"
-msgstr "Добавленный текст"
+msgstr "Замена"
 
 msgid "xhtmlxtras_attribs_desc"
-msgstr "Вставить/редактировать атрибуты"
+msgstr "Добавить/Изменить элемент"
 
 msgid "xhtmlxtras_cite_delta_width"
 msgstr ""
@@ -1006,10 +1006,10 @@ msgid "xhtmlxtras_attribs_delta_height"
 msgstr ""
 
 msgid "xhtmlxtras_dlg_attribute_label_title"
-msgstr "Название"
+msgstr "Заголовок"
 
 msgid "xhtmlxtras_dlg_attribute_label_id"
-msgstr "Идентификатор"
+msgstr "Имя"
 
 msgid "xhtmlxtras_dlg_attribute_label_class"
 msgstr "Класс"
@@ -1021,7 +1021,7 @@ msgid "xhtmlxtras_dlg_attribute_label_cite"
 msgstr "Цитата"
 
 msgid "xhtmlxtras_dlg_attribute_label_datetime"
-msgstr "Дата/время"
+msgstr "Дата/Время"
 
 msgid "xhtmlxtras_dlg_attribute_label_langdir"
 msgstr "Направление текста"
@@ -1036,10 +1036,10 @@ msgid "xhtmlxtras_dlg_attribute_label_langcode"
 msgstr "Язык"
 
 msgid "xhtmlxtras_dlg_attribute_label_tabindex"
-msgstr "Индекс табуляции"
+msgstr "Заголовок"
 
 msgid "xhtmlxtras_dlg_attribute_label_accesskey"
-msgstr "Клавиша доступа"
+msgstr "Ключ доступа"
 
 msgid "xhtmlxtras_dlg_attribute_events_tab"
 msgstr "События"
@@ -1048,7 +1048,7 @@ msgid "xhtmlxtras_dlg_attribute_attrib_tab"
 msgstr "Атрибуты"
 
 msgid "xhtmlxtras_dlg_general_tab"
-msgstr "Общие"
+msgstr "Общее"
 
 msgid "xhtmlxtras_dlg_attrib_tab"
 msgstr "Атрибуты"
@@ -1057,31 +1057,31 @@ msgid "xhtmlxtras_dlg_events_tab"
 msgstr "События"
 
 msgid "xhtmlxtras_dlg_fieldset_general_tab"
-msgstr "Общие настройки"
+msgstr "Общие параметры"
 
 msgid "xhtmlxtras_dlg_fieldset_attrib_tab"
-msgstr "Атрибуты элемента"
+msgstr "Параметры элемента"
 
 msgid "xhtmlxtras_dlg_fieldset_events_tab"
 msgstr "События элемента"
 
 msgid "xhtmlxtras_dlg_title_ins_element"
-msgstr "Элемент добавленного текста"
+msgstr "Замена"
 
 msgid "xhtmlxtras_dlg_title_del_element"
-msgstr "Элемент удалённого текста"
+msgstr "Удаление"
 
 msgid "xhtmlxtras_dlg_title_acronym_element"
-msgstr "Элемент акронима"
+msgstr "Аббревиация"
 
 msgid "xhtmlxtras_dlg_title_abbr_element"
-msgstr "Элемент аббревиатуры"
+msgstr "Сокращение"
 
 msgid "xhtmlxtras_dlg_title_cite_element"
-msgstr "Элемент цитаты"
+msgstr "Цитирование"
 
 msgid "xhtmlxtras_dlg_remove"
-msgstr "Убрать"
+msgstr "Удалить"
 
 msgid "xhtmlxtras_dlg_insert_date"
 msgstr "Вставить текущую дату/время"
@@ -1093,19 +1093,19 @@ msgid "xhtmlxtras_dlg_option_rtl"
 msgstr "Справа налево"
 
 msgid "xhtmlxtras_dlg_attribs_title"
-msgstr "Вставить/редактировать атрибуты"
+msgstr "Свойства элемента"
 
 msgid "style_desc"
-msgstr "Стиль оформления"
+msgstr "Редактировать CSS стиль"
 
 msgid "style_delta_width"
-msgstr "35"
+msgstr ""
 
 msgid "style_delta_height"
 msgstr ""
 
 msgid "style_dlg_title"
-msgstr "Стиль оформления"
+msgstr "Редактор CSS стиля"
 
 msgid "style_dlg_apply"
 msgstr "Применить"
@@ -1120,7 +1120,7 @@ msgid "style_dlg_block_tab"
 msgstr "Блок"
 
 msgid "style_dlg_box_tab"
-msgstr "Контейнер"
+msgstr "Края"
 
 msgid "style_dlg_border_tab"
 msgstr "Граница"
@@ -1129,7 +1129,7 @@ msgid "style_dlg_list_tab"
 msgstr "Список"
 
 msgid "style_dlg_positioning_tab"
-msgstr "Позиция"
+msgstr "Положение"
 
 msgid "style_dlg_text_props"
 msgstr "Текст"
@@ -1141,13 +1141,13 @@ msgid "style_dlg_text_size"
 msgstr "Размер"
 
 msgid "style_dlg_text_weight"
-msgstr "Вес"
+msgstr "Толщина"
 
 msgid "style_dlg_text_style"
 msgstr "Стиль"
 
 msgid "style_dlg_text_variant"
-msgstr "Начертание"
+msgstr "Вариант"
 
 msgid "style_dlg_text_lineheight"
 msgstr "Высота строки"
@@ -1162,7 +1162,7 @@ msgid "style_dlg_text_decoration"
 msgstr "Оформление"
 
 msgid "style_dlg_text_overline"
-msgstr "Надчеркнутый"
+msgstr "С верхней чертой"
 
 msgid "style_dlg_text_underline"
 msgstr "Подчеркнутый"
@@ -1171,10 +1171,10 @@ msgid "style_dlg_text_striketrough"
 msgstr "Зачеркнутый"
 
 msgid "style_dlg_text_blink"
-msgstr "Мигающий"
+msgstr "Мерцающий"
 
 msgid "style_dlg_text_none"
-msgstr "Отсутствует"
+msgstr "Без всего"
 
 msgid "style_dlg_background_color"
 msgstr "Цвет фона"
@@ -1183,10 +1183,10 @@ msgid "style_dlg_background_image"
 msgstr "Фоновое изображение"
 
 msgid "style_dlg_background_repeat"
-msgstr "Повторение"
+msgstr "Повтор"
 
 msgid "style_dlg_background_attachment"
-msgstr "Прикрепление"
+msgstr "Привязка"
 
 msgid "style_dlg_background_hpos"
 msgstr "Горизонтальная позиция"
@@ -1195,10 +1195,10 @@ msgid "style_dlg_background_vpos"
 msgstr "Вертикальная позиция"
 
 msgid "style_dlg_block_wordspacing"
-msgstr "Промежутки между словами"
+msgstr "Отступы между словами"
 
 msgid "style_dlg_block_letterspacing"
-msgstr "Промежутки между символами"
+msgstr "Отступы между буквами"
 
 msgid "style_dlg_block_vertical_alignment"
 msgstr "Вертикальное выравнивание"
@@ -1225,16 +1225,16 @@ msgid "style_dlg_box_float"
 msgstr "Плавающий"
 
 msgid "style_dlg_box_clear"
-msgstr "Очистить"
+msgstr "Явный"
 
 msgid "style_dlg_padding"
-msgstr "Отступ"
+msgstr "Поля"
 
 msgid "style_dlg_same"
-msgstr "Одно значение"
+msgstr "Одинаково для всех"
 
 msgid "style_dlg_top"
-msgstr "Сверху"
+msgstr "Вверх"
 
 msgid "style_dlg_right"
 msgstr "Справа"
@@ -1246,7 +1246,7 @@ msgid "style_dlg_left"
 msgstr "Слева"
 
 msgid "style_dlg_margin"
-msgstr "Поля"
+msgstr "Отступы"
 
 msgid "style_dlg_style"
 msgstr "Стиль"
@@ -1264,7 +1264,7 @@ msgid "style_dlg_list_type"
 msgstr "Тип"
 
 msgid "style_dlg_bullet_image"
-msgstr "Изображение маркера"
+msgstr "Маркер"
 
 msgid "style_dlg_position"
 msgstr "Позиция"
@@ -1279,16 +1279,16 @@ msgid "style_dlg_zindex"
 msgstr "Z-индекс"
 
 msgid "style_dlg_overflow"
-msgstr "Обтекание"
+msgstr "Переполнене"
 
 msgid "style_dlg_placement"
-msgstr "Позиция"
+msgstr "Размещение"
 
 msgid "style_dlg_clip"
-msgstr "Кадрирование"
+msgstr "Отсечение"
 
 msgid "paste_paste_text_desc"
-msgstr "Вставить только текст"
+msgstr "Вставить как текст"
 
 msgid "paste_paste_word_desc"
 msgstr "Вставить из Word"
@@ -1297,55 +1297,55 @@ msgid "paste_selectall_desc"
 msgstr "Выделить все"
 
 msgid "paste_dlg_text_title"
-msgstr "Используйте комбинацию клавиш Ctrl+V, чтобы вставить текст."
+msgstr "Используйте CTRL+V для вставки текста в окно."
 
 msgid "paste_dlg_text_linebreaks"
-msgstr "Сохранять разрывы строк"
+msgstr "Сохранить переносы строк"
 
 msgid "paste_dlg_word_title"
-msgstr "Используйте комбинацию клавиш Ctrl+V, чтобы вставить текст."
+msgstr "Используйте CTRL+V для вставки текста в окно."
 
 msgid "table_desc"
-msgstr "Вставить таблицу"
+msgstr "Добавление/Изменение таблицы"
 
 msgid "table_row_before_desc"
-msgstr "Вставить строку до"
+msgstr "Добавить строку сверху"
 
 msgid "table_row_after_desc"
-msgstr "Вставить строку после"
+msgstr "Добавить строку снизу"
 
 msgid "table_delete_row_desc"
 msgstr "Удалить строку"
 
 msgid "table_col_before_desc"
-msgstr "Вставить столбец до"
+msgstr "Добавить столбец слева"
 
 msgid "table_col_after_desc"
-msgstr "Вставить столбец после"
+msgstr "Добавить столбец справа"
 
 msgid "table_delete_col_desc"
 msgstr "Удалить столбец"
 
 msgid "table_split_cells_desc"
-msgstr "Разделить ячейку"
+msgstr "Разбить ячейку"
 
 msgid "table_merge_cells_desc"
 msgstr "Объединить ячейки"
 
 msgid "table_row_desc"
-msgstr "Свойства строки"
+msgstr "Параметры строки"
 
 msgid "table_cell_desc"
-msgstr "Свойства ячейки"
+msgstr "Параметры ячейки"
 
 msgid "table_props_desc"
-msgstr "Свойства таблицы"
+msgstr "Параметры таблицы"
 
 msgid "table_paste_row_before_desc"
-msgstr "Вставить строку таблицы до"
+msgstr "Вставить строку сверху"
 
 msgid "table_paste_row_after_desc"
-msgstr "Вставить строку таблицы после"
+msgstr "Вставить строку снизу"
 
 msgid "table_cut_row_desc"
 msgstr "Вырезать строку"
@@ -1372,7 +1372,7 @@ msgid "table_rowprops_delta_height"
 msgstr ""
 
 msgid "table_cellprops_delta_width"
-msgstr ""
+msgstr "30"
 
 msgid "table_cellprops_delta_height"
 msgstr ""
@@ -1390,22 +1390,22 @@ msgid "table_merge_cells_delta_height"
 msgstr ""
 
 msgid "table_dlg_general_tab"
-msgstr "Общие"
+msgstr "Общее"
 
 msgid "table_dlg_advanced_tab"
-msgstr "Дополнительные"
+msgstr "Дополнительно"
 
 msgid "table_dlg_general_props"
-msgstr "Общие свойства"
+msgstr "Общие параметры"
 
 msgid "table_dlg_advanced_props"
-msgstr "Дополнительные свойства"
+msgstr "Дополнительные параметры"
 
 msgid "table_dlg_rowtype"
-msgstr "Строка в части таблицы"
+msgstr "Тип строки"
 
 msgid "table_dlg_title"
-msgstr "Вставить/изменить таблицу"
+msgstr "Параметры таблицы"
 
 msgid "table_dlg_width"
 msgstr "Ширина"
@@ -1417,7 +1417,7 @@ msgid "table_dlg_cols"
 msgstr "Столбцы"
 
 msgid "table_dlg_rows"
-msgstr "Строки"
+msgstr "Сроки"
 
 msgid "table_dlg_cellspacing"
 msgstr "Расстояние между ячейками"
@@ -1435,55 +1435,55 @@ msgid "table_dlg_align_default"
 msgstr "По умолчанию"
 
 msgid "table_dlg_align_left"
-msgstr "Влево"
+msgstr "По левому краю"
 
 msgid "table_dlg_align_right"
-msgstr "Вправо"
+msgstr "По правому краю"
 
 msgid "table_dlg_align_middle"
 msgstr "По центру"
 
 msgid "table_dlg_row_title"
-msgstr "Свойства строки"
+msgstr "Параметры строки"
 
 msgid "table_dlg_cell_title"
-msgstr "Свойства ячейки"
+msgstr "Параметры ячейки"
 
 msgid "table_dlg_cell_type"
-msgstr "Тип ячейки"
+msgstr "Тип"
 
 msgid "table_dlg_valign"
-msgstr "Вертикальное выравнивание"
+msgstr "Верт. выравнивание"
 
 msgid "table_dlg_align_top"
-msgstr "По верху"
+msgstr "По верхнему краю"
 
 msgid "table_dlg_align_bottom"
-msgstr "По низу"
+msgstr "По нижнему краю"
 
 msgid "table_dlg_bordercolor"
 msgstr "Цвет границы"
 
 msgid "table_dlg_bgcolor"
-msgstr "Цвет фона"
+msgstr "Цвет заливки"
 
 msgid "table_dlg_merge_cells_title"
-msgstr "Слить ячейки"
+msgstr "Объединить ячейки"
 
 msgid "table_dlg_id"
-msgstr "Идентификатор"
+msgstr "Имя"
 
 msgid "table_dlg_style"
 msgstr "Стиль"
 
 msgid "table_dlg_langdir"
-msgstr "Направление языка"
+msgstr "Направление текста"
 
 msgid "table_dlg_langcode"
 msgstr "Код языка"
 
 msgid "table_dlg_mime"
-msgstr "Целевой MIME-тип"
+msgstr "MIME тип цели"
 
 msgid "table_dlg_ltr"
 msgstr "Слева направо"
@@ -1495,7 +1495,7 @@ msgid "table_dlg_bgimage"
 msgstr "Фоновое изображение"
 
 msgid "table_dlg_summary"
-msgstr "Сводка"
+msgstr "Общее"
 
 msgid "table_dlg_td"
 msgstr "Данные"
@@ -1519,22 +1519,22 @@ msgid "table_dlg_row_odd"
 msgstr "Обновить нечетные строки в таблице"
 
 msgid "table_dlg_row_even"
-msgstr "Обновить чётные строки в таблице"
+msgstr "Обновить четные строки в таблице"
 
 msgid "table_dlg_row_all"
 msgstr "Обновить все строки в таблице"
 
 msgid "table_dlg_thead"
-msgstr "Верхняя часть таблицы"
+msgstr "Заголовок"
 
 msgid "table_dlg_tbody"
-msgstr "Основная часть таблицы"
+msgstr "Тело"
 
 msgid "table_dlg_tfoot"
-msgstr "Нижняя часть таблицы"
+msgstr "Завершение"
 
 msgid "table_dlg_scope"
-msgstr "Пределы"
+msgstr "Область"
 
 msgid "table_dlg_rowgroup"
 msgstr "Группа строк"
@@ -1543,79 +1543,79 @@ msgid "table_dlg_colgroup"
 msgstr "Группа столбцов"
 
 msgid "table_dlg_col_limit"
-msgstr "Вы превысили максимальное количество в {$cols} столбцов."
+msgstr "Достигнут максимальнвй предел, в $ колонок."
 
 msgid "table_dlg_row_limit"
-msgstr "Вы превысили максимальное количество в {$rows} строк."
+msgstr "Достигнут максимальнвй предел, в $ строк."
 
 msgid "table_dlg_cell_limit"
-msgstr "Вы превысили максимальное количество в {$cells} ячеек."
+msgstr "Достигнут максимальнвй предел, в $ ячеек."
 
 msgid "table_dlg_missing_scope"
-msgstr "Вы действительно хотите продолжить без указания области действия этой ячейки заголовка? Без этого некоторым пользователям с ограниченной трудоспособностью может быть трудно понять содержание или данные таблицы."
+msgstr "Продолжить без определния области заглолвка? Без этого будет затруднено восприятие таблицы некоторым пользователям."
 
 msgid "table_dlg_caption"
-msgstr "Заголовок таблицы"
+msgstr "Заголовок"
 
 msgid "table_dlg_frame"
-msgstr "Границы"
+msgstr "Кадр"
 
 msgid "table_dlg_frame_none"
-msgstr "отсутствует"
+msgstr "none"
 
 msgid "table_dlg_frame_groups"
-msgstr "группы"
+msgstr "groups"
 
 msgid "table_dlg_frame_rows"
-msgstr "строки"
+msgstr "rows"
 
 msgid "table_dlg_frame_cols"
-msgstr "столбцы"
+msgstr "cols"
 
 msgid "table_dlg_frame_all"
-msgstr "все"
+msgstr "all"
 
 msgid "table_dlg_rules"
-msgstr "Линейки"
+msgstr "Правила"
 
 msgid "table_dlg_rules_void"
-msgstr "отсутствуют"
+msgstr "void"
 
 msgid "table_dlg_rules_above"
-msgstr "сверху"
+msgstr "above"
 
 msgid "table_dlg_rules_below"
-msgstr "снизу"
+msgstr "below"
 
 msgid "table_dlg_rules_hsides"
-msgstr "горизонтальные"
+msgstr "hsides"
 
 msgid "table_dlg_rules_lhs"
-msgstr "слева"
+msgstr "lhs"
 
 msgid "table_dlg_rules_rhs"
-msgstr "справа"
+msgstr "rhs"
 
 msgid "table_dlg_rules_vsides"
-msgstr "вертикальные"
+msgstr "vsides"
 
 msgid "table_dlg_rules_box"
-msgstr "контейнер"
+msgstr "box"
 
 msgid "table_dlg_rules_border"
-msgstr "граница"
+msgstr "border"
 
 msgid "autosave_unload_msg"
-msgstr "Внесенные изменения будут потеряны, если вы уйдете с этой страницы."
+msgstr "Произведенные изменения будут утеряны, если Вы уйдете с этой страницы."
 
 msgid "fullscreen_desc"
-msgstr "Вкл./выкл. полноэкранный режим"
+msgstr "Полноэкранный режим"
 
 msgid "media_desc"
-msgstr "Вставить/редактировать медиа-объект"
+msgstr "Добавить/Изменить кли"
 
 msgid "media_edit"
-msgstr "Редактировать медиа-объект"
+msgstr "Свойства клипа"
 
 msgid "media_delta_width"
 msgstr ""
@@ -1624,16 +1624,16 @@ msgid "media_delta_height"
 msgstr ""
 
 msgid "media_dlg_title"
-msgstr "Вставить/редактировать медиа-объект"
+msgstr "Параметры клипа"
 
 msgid "media_dlg_general"
-msgstr "Общие"
+msgstr "Общее"
 
 msgid "media_dlg_advanced"
-msgstr "Дополнительные"
+msgstr "Дополнительно"
 
 msgid "media_dlg_file"
-msgstr "Файл/адрес"
+msgstr "Адрес"
 
 msgid "media_dlg_list"
 msgstr "Список"
@@ -1651,7 +1651,7 @@ msgid "media_dlg_type"
 msgstr "Тип"
 
 msgid "media_dlg_id"
-msgstr "Идентификатор"
+msgstr "Имя"
 
 msgid "media_dlg_name"
 msgstr "Название"
@@ -1660,271 +1660,271 @@ msgid "media_dlg_class_name"
 msgstr "Класс"
 
 msgid "media_dlg_vspace"
-msgstr "Вертикальный отступ"
+msgstr "Верт. отступ"
 
 msgid "media_dlg_hspace"
-msgstr "Горизонтальный отступ"
+msgstr "Гор. отступ"
 
 msgid "media_dlg_play"
-msgstr "Проигрывать автоматически"
+msgstr "Автзапуск"
 
 msgid "media_dlg_loop"
-msgstr "Зациклить"
+msgstr "Повтор"
 
 msgid "media_dlg_menu"
-msgstr "Отобразить меню"
+msgstr "Показывать меню"
 
 msgid "media_dlg_quality"
 msgstr "Качество"
 
 msgid "media_dlg_scale"
-msgstr "Масштаб"
+msgstr "Область"
 
 msgid "media_dlg_align"
 msgstr "Выравнивание"
 
 msgid "media_dlg_salign"
-msgstr "SAlign"
+msgstr "Выр-е"
 
 msgid "media_dlg_wmode"
-msgstr "WMode"
+msgstr "Окно"
 
 msgid "media_dlg_bgcolor"
 msgstr "Фон"
 
 msgid "media_dlg_base"
-msgstr "Основа"
+msgstr "Base"
 
 msgid "media_dlg_flashvars"
-msgstr "Переменные Flash"
+msgstr "Flas команды"
 
 msgid "media_dlg_liveconnect"
 msgstr "SWLiveConnect"
 
 msgid "media_dlg_autohref"
-msgstr "AutoHREF"
+msgstr "Авто-ссылка"
 
 msgid "media_dlg_cache"
-msgstr "Кеш"
+msgstr "Кэш"
 
 msgid "media_dlg_hidden"
-msgstr "Скрытое"
+msgstr "Скрытый"
 
 msgid "media_dlg_controller"
-msgstr "Controller"
+msgstr "Управление"
 
 msgid "media_dlg_kioskmode"
-msgstr "Kiosk mode"
+msgstr "Режим киоск"
 
 msgid "media_dlg_playeveryframe"
-msgstr "Play every frame"
+msgstr "Воспроизвести каждый кадр"
 
 msgid "media_dlg_targetcache"
-msgstr "Target cache"
+msgstr "Кэш цели"
 
 msgid "media_dlg_correction"
-msgstr "No correction"
+msgstr "Без корректировки"
 
 msgid "media_dlg_enablejavascript"
-msgstr "Enable JavaScript"
+msgstr "Включить JavaScript"
 
 msgid "media_dlg_starttime"
-msgstr "Start time"
+msgstr "Время начала"
 
 msgid "media_dlg_endtime"
-msgstr "End time"
+msgstr "Время окончания"
 
 msgid "media_dlg_href"
-msgstr "Href"
+msgstr "Ссылка"
 
 msgid "media_dlg_qtsrcchokespeed"
 msgstr "Choke speed"
 
 msgid "media_dlg_target"
-msgstr "Target"
+msgstr "Цель"
 
 msgid "media_dlg_volume"
-msgstr "Volume"
+msgstr "Громкость"
 
 msgid "media_dlg_autostart"
-msgstr "Auto start"
+msgstr "Автозапуск"
 
 msgid "media_dlg_enabled"
-msgstr "Enabled"
+msgstr "Включено"
 
 msgid "media_dlg_fullscreen"
-msgstr "Fullscreen"
+msgstr "На весь экран"
 
 msgid "media_dlg_invokeurls"
-msgstr "Invoke URLs"
+msgstr "Вызвать адрес"
 
 msgid "media_dlg_mute"
-msgstr "Mute"
+msgstr "Без звука"
 
 msgid "media_dlg_stretchtofit"
-msgstr "Stretch to fit"
+msgstr "Под размер окна"
 
 msgid "media_dlg_windowlessvideo"
-msgstr "Windowless video"
+msgstr "Оконное видео"
 
 msgid "media_dlg_balance"
-msgstr "Balance"
+msgstr "Баланс"
 
 msgid "media_dlg_baseurl"
-msgstr "Base URL"
+msgstr "Базорвый адрес"
 
 msgid "media_dlg_captioningid"
-msgstr "Captioning id"
+msgstr "Имя субтитров"
 
 msgid "media_dlg_currentmarker"
-msgstr "Current marker"
+msgstr "Текущий маркер"
 
 msgid "media_dlg_currentposition"
-msgstr "Current position"
+msgstr "Текущая позиция"
 
 msgid "media_dlg_defaultframe"
-msgstr "Default frame"
+msgstr "Основной кадр"
 
 msgid "media_dlg_playcount"
-msgstr "Play count"
+msgstr "Щетчик воспроизведений"
 
 msgid "media_dlg_rate"
-msgstr "Rate"
+msgstr "Рейтинг"
 
 msgid "media_dlg_uimode"
-msgstr "UI Mode"
+msgstr "Режим интерфейса"
 
 msgid "media_dlg_flash_options"
-msgstr "Flash options"
+msgstr "Параметры Flash"
 
 msgid "media_dlg_qt_options"
-msgstr "Quicktime options"
+msgstr "Параметры Quicktime"
 
 msgid "media_dlg_wmp_options"
-msgstr "Windows media player options"
+msgstr "Параметры Windows Media"
 
 msgid "media_dlg_rmp_options"
-msgstr "Real media player options"
+msgstr "Параметры Real Media"
 
 msgid "media_dlg_shockwave_options"
-msgstr "Shockwave options"
+msgstr "Параметры Shockwave"
 
 msgid "media_dlg_autogotourl"
-msgstr "Auto goto URL"
+msgstr "Автопереход на адрес"
 
 msgid "media_dlg_center"
-msgstr "Center"
+msgstr "Центр"
 
 msgid "media_dlg_imagestatus"
-msgstr "Image status"
+msgstr "Статус изображения"
 
 msgid "media_dlg_maintainaspect"
-msgstr "Maintain aspect"
+msgstr "Запомнить размер"
 
 msgid "media_dlg_nojava"
-msgstr "No java"
+msgstr "Без Java"
 
 msgid "media_dlg_prefetch"
-msgstr "Prefetch"
+msgstr "Упреждающая выборка"
 
 msgid "media_dlg_shuffle"
-msgstr "Shuffle"
+msgstr "В разброс"
 
 msgid "media_dlg_console"
-msgstr "Console"
+msgstr "Консоль"
 
 msgid "media_dlg_numloop"
-msgstr "Num loops"
+msgstr "Повторы"
 
 msgid "media_dlg_controls"
-msgstr "Controls"
+msgstr "Управление"
 
 msgid "media_dlg_scriptcallbacks"
-msgstr "Script callbacks"
+msgstr "Поддержка скрипта"
 
 msgid "media_dlg_swstretchstyle"
-msgstr "Stretch style"
+msgstr "Стиль растяжение"
 
 msgid "media_dlg_swstretchhalign"
-msgstr "Stretch H-Align"
+msgstr "Гор. выр-е растяжения"
 
 msgid "media_dlg_swstretchvalign"
-msgstr "Stretch V-Align"
+msgstr "Вер. выр-е растяжения"
 
 msgid "media_dlg_sound"
-msgstr "Sound"
+msgstr "Звук"
 
 msgid "media_dlg_progress"
-msgstr "Progress"
+msgstr "Прогресс"
 
 msgid "media_dlg_qtsrc"
 msgstr "QT Src"
 
 msgid "media_dlg_qt_stream_warn"
-msgstr "Streamed rtsp resources should be added to the QT Src field under the advanced tab.\nYou should also add a non streamed version to the Src field.."
+msgstr "Потоковые rtsp ресурсы должны быть в поле QT Src."
 
 msgid "media_dlg_align_top"
-msgstr "Top"
+msgstr "По верхнему краю"
 
 msgid "media_dlg_align_right"
-msgstr "Right"
+msgstr "По правому краю"
 
 msgid "media_dlg_align_bottom"
-msgstr "Bottom"
+msgstr "По нижнему краю"
 
 msgid "media_dlg_align_left"
-msgstr "Left"
+msgstr "По левому краю"
 
 msgid "media_dlg_align_center"
-msgstr "Center"
+msgstr "По центру"
 
 msgid "media_dlg_align_top_left"
-msgstr "Top left"
+msgstr "По левому верхнему краю"
 
 msgid "media_dlg_align_top_right"
-msgstr "Top right"
+msgstr "По правому верхнему краю"
 
 msgid "media_dlg_align_bottom_left"
-msgstr "Bottom left"
+msgstr "По левому нижнему краю"
 
 msgid "media_dlg_align_bottom_right"
-msgstr "Bottom right"
+msgstr "По правому нижнему краю"
 
 msgid "media_dlg_flv_options"
-msgstr "Flash video options"
+msgstr "Настройки Flash"
 
 msgid "media_dlg_flv_scalemode"
-msgstr "Scale mode"
+msgstr "Масштаб"
 
 msgid "media_dlg_flv_buffer"
-msgstr "Buffer"
+msgstr "Буфер"
 
 msgid "media_dlg_flv_startimage"
-msgstr "Start image"
+msgstr "Стартовое изображение"
 
 msgid "media_dlg_flv_starttime"
-msgstr "Start time"
+msgstr "Стартовое время"
 
 msgid "media_dlg_flv_defaultvolume"
-msgstr "Default volumne"
+msgstr "Стандартный звук"
 
 msgid "media_dlg_flv_hiddengui"
-msgstr "Hidden GUI"
+msgstr "Скрытый интерфейс"
 
 msgid "media_dlg_flv_autostart"
-msgstr "Auto start"
+msgstr "Автозапуск"
 
 msgid "media_dlg_flv_loop"
-msgstr "Loop"
+msgstr "Повтор"
 
 msgid "media_dlg_flv_showscalemodes"
-msgstr "Show scale modes"
+msgstr "Режим масштаба"
 
 msgid "media_dlg_flv_smoothvideo"
-msgstr "Smooth video"
+msgstr "Плавное видео"
 
 msgid "media_dlg_flv_jscallback"
-msgstr "JS Callback"
+msgstr "Поддержка JS"
 
 msgid "fullpage_desc"
 msgstr "Свойства документа"
@@ -1939,19 +1939,19 @@ msgid "fullpage_dlg_title"
 msgstr "Свойства документа"
 
 msgid "fullpage_dlg_meta_tab"
-msgstr "Основные"
+msgstr "Общее"
 
 msgid "fullpage_dlg_appearance_tab"
-msgstr "Офомление"
+msgstr "Вид"
 
 msgid "fullpage_dlg_advanced_tab"
-msgstr "Расширенные"
+msgstr "Дополнительно"
 
 msgid "fullpage_dlg_meta_props"
-msgstr "Мета информация"
+msgstr "Цель информации"
 
 msgid "fullpage_dlg_langprops"
-msgstr "Язык и кодировка"
+msgstr "Язык и кодирования"
 
 msgid "fullpage_dlg_meta_title"
 msgstr "Заголовок"
@@ -1963,16 +1963,16 @@ msgid "fullpage_dlg_meta_description"
 msgstr "Описание"
 
 msgid "fullpage_dlg_meta_robots"
-msgstr "Роботы"
+msgstr "Работы"
 
 msgid "fullpage_dlg_doctypes"
-msgstr "Тип документа"
+msgstr "Тип"
 
 msgid "fullpage_dlg_langcode"
 msgstr "Код языка"
 
 msgid "fullpage_dlg_langdir"
-msgstr "Направление языка"
+msgstr "Направление текста"
 
 msgid "fullpage_dlg_ltr"
 msgstr "Слева направо"
@@ -1981,19 +1981,19 @@ msgid "fullpage_dlg_rtl"
 msgstr "Справа налево"
 
 msgid "fullpage_dlg_xml_pi"
-msgstr "Определения XML"
+msgstr "Объявление XML"
 
 msgid "fullpage_dlg_encoding"
-msgstr "Кодировка символов"
+msgstr "Кодировка"
 
 msgid "fullpage_dlg_appearance_bgprops"
 msgstr "Свойства фона"
 
 msgid "fullpage_dlg_appearance_marginprops"
-msgstr "Поля страницы"
+msgstr "Отступы"
 
 msgid "fullpage_dlg_appearance_linkprops"
-msgstr "Цвета ссылок"
+msgstr "Цвет ссылок"
 
 msgid "fullpage_dlg_appearance_textprops"
 msgstr "Свойства текста"
@@ -2005,16 +2005,16 @@ msgid "fullpage_dlg_bgimage"
 msgstr "Фоновое изображение"
 
 msgid "fullpage_dlg_left_margin"
-msgstr "Левое поле"
+msgstr "Отступ слева"
 
 msgid "fullpage_dlg_right_margin"
-msgstr "Правле поле"
+msgstr "Отступ справа"
 
 msgid "fullpage_dlg_top_margin"
-msgstr "Верхнее поле"
+msgstr "Отступ сверху"
 
 msgid "fullpage_dlg_bottom_margin"
-msgstr "Нижнее поле"
+msgstr "Отступ снизу"
 
 msgid "fullpage_dlg_text_color"
 msgstr "Цвет текста"
@@ -2023,19 +2023,19 @@ msgid "fullpage_dlg_font_size"
 msgstr "Размер шрифта"
 
 msgid "fullpage_dlg_font_face"
-msgstr "Гарнитура"
+msgstr "Шрифт"
 
 msgid "fullpage_dlg_link_color"
 msgstr "Цвет ссылки"
 
 msgid "fullpage_dlg_hover_color"
-msgstr "Цвет при наведении"
+msgstr "Цвет ссылки при наведении"
 
 msgid "fullpage_dlg_visited_color"
-msgstr "Цвет посещенной"
+msgstr "Цвет нажатой ссылки"
 
 msgid "fullpage_dlg_active_color"
-msgstr "Цвет активной"
+msgstr "Цвет активной ссылки"
 
 msgid "fullpage_dlg_textcolor"
 msgstr "Цвет"
@@ -2044,25 +2044,25 @@ msgid "fullpage_dlg_fontsize"
 msgstr "Размер шрифта"
 
 msgid "fullpage_dlg_fontface"
-msgstr "Гарнитура"
+msgstr "Семейство шрифтов"
 
 msgid "fullpage_dlg_meta_index_follow"
-msgstr "Индексировать и следовать"
+msgstr "Index and follow the links"
 
 msgid "fullpage_dlg_meta_index_nofollow"
-msgstr "Индексировать и не следовать"
+msgstr "Index and don't follow the links"
 
 msgid "fullpage_dlg_meta_noindex_follow"
-msgstr "Не индексировать но следовать"
+msgstr "Do not index but follow the links"
 
 msgid "fullpage_dlg_meta_noindex_nofollow"
-msgstr "Не индексировать и не следовать"
+msgstr "Do not index and don \ 't follow the links"
 
 msgid "fullpage_dlg_appearance_style"
-msgstr "Таблица стилей и свойства"
+msgstr "Лист и свойства стилей"
 
 msgid "fullpage_dlg_stylesheet"
-msgstr "Таблица стилей"
+msgstr "Лист стилей"
 
 msgid "fullpage_dlg_style"
 msgstr "Стиль"
@@ -2071,97 +2071,97 @@ msgid "fullpage_dlg_author"
 msgstr "Автор"
 
 msgid "fullpage_dlg_copyright"
-msgstr "Права"
+msgstr "Копирайт"
 
 msgid "fullpage_dlg_add"
-msgstr "Добавить элемент"
+msgstr "Добавить новый элемент"
 
 msgid "fullpage_dlg_remove"
 msgstr "Удалить выделенный элемент"
 
 msgid "fullpage_dlg_moveup"
-msgstr "Поднять выделенный элемент"
+msgstr "Переместить элемент вверх"
 
 msgid "fullpage_dlg_movedown"
-msgstr "Опустить выделенный элемент"
+msgstr "Переместить элемент вниз"
 
 msgid "fullpage_dlg_head_elements"
-msgstr "Заголовочные элементы"
+msgstr "Элемент Header"
 
 msgid "fullpage_dlg_info"
 msgstr "Информация"
 
 msgid "fullpage_dlg_add_title"
-msgstr "Заголовок"
+msgstr "Элемент Title"
 
 msgid "fullpage_dlg_add_meta"
-msgstr "Мета-элемент"
+msgstr "Элемент Meta"
 
 msgid "fullpage_dlg_add_script"
-msgstr "Скрипт"
+msgstr "Элемент Script"
 
 msgid "fullpage_dlg_add_style"
-msgstr "Стиль"
+msgstr "Элемент Style"
 
 msgid "fullpage_dlg_add_link"
-msgstr "Ссылка"
+msgstr "Элемент Link"
 
 msgid "fullpage_dlg_add_base"
-msgstr "Базовый элемент"
+msgstr "Элемент Base"
 
 msgid "fullpage_dlg_add_comment"
 msgstr "Комментарий"
 
 msgid "fullpage_dlg_title_element"
-msgstr "Заголовок"
+msgstr "Элемент Title"
 
 msgid "fullpage_dlg_script_element"
-msgstr "Скрипт"
+msgstr "Элемент Script"
 
 msgid "fullpage_dlg_style_element"
-msgstr "Стиль"
+msgstr "Элемент Style"
 
 msgid "fullpage_dlg_base_element"
-msgstr "Базовый элемент"
+msgstr "Элемент Base"
 
 msgid "fullpage_dlg_link_element"
-msgstr "Ссылка"
+msgstr "Элемент Link"
 
 msgid "fullpage_dlg_meta_element"
-msgstr "Мета-элемент"
+msgstr "Элемент Meta"
 
 msgid "fullpage_dlg_comment_element"
 msgstr "Комментарий"
 
 msgid "fullpage_dlg_src"
-msgstr "Источник"
+msgstr "Src"
 
 msgid "fullpage_dlg_language"
 msgstr "Язык"
 
 msgid "fullpage_dlg_href"
-msgstr "Адрес ссылки"
+msgstr "ссылка"
 
 msgid "fullpage_dlg_target"
 msgstr "Цель"
 
 msgid "fullpage_dlg_type"
-msgstr "Тип"
+msgstr "Type"
 
 msgid "fullpage_dlg_charset"
 msgstr "Кодировка"
 
 msgid "fullpage_dlg_defer"
-msgstr "Defer"
+msgstr "Отсрочка"
 
 msgid "fullpage_dlg_media"
 msgstr "Медиа"
 
 msgid "fullpage_dlg_properties"
-msgstr "Свойства"
+msgstr "Параметры"
 
 msgid "fullpage_dlg_name"
-msgstr "Имя"
+msgstr "Название"
 
 msgid "fullpage_dlg_value"
 msgstr "Значение"
@@ -2170,22 +2170,22 @@ msgid "fullpage_dlg_content"
 msgstr "Содержание"
 
 msgid "fullpage_dlg_rel"
-msgstr "Связь"
+msgstr "Rel"
 
 msgid "fullpage_dlg_rev"
-msgstr "Рев."
+msgstr "Rev"
 
 msgid "fullpage_dlg_hreflang"
 msgstr "Язык ссылки"
 
 msgid "fullpage_dlg_general_props"
-msgstr "Основные"
+msgstr "Общее"
 
 msgid "fullpage_dlg_advanced_props"
-msgstr "Расширенные"
+msgstr "Дополнительно"
 
 msgid "template_desc"
-msgstr "Вставить готовый шаблон"
+msgstr "Использовать шаблон"
 
 msgid "template_dlg_title"
 msgstr "Шаблоны"
@@ -2197,49 +2197,49 @@ msgid "template_dlg_desc_label"
 msgstr "Описание"
 
 msgid "template_dlg_desc"
-msgstr "Вставить готовый шаблон"
+msgstr "Вставить шаблон"
 
 msgid "template_dlg_select"
-msgstr "Выберить шаблон"
+msgstr "Выберите шаблон"
 
 msgid "template_dlg_preview"
 msgstr "Просмотр"
 
 msgid "template_dlg_warning"
-msgstr "Внимание: замена одного шаблона другим может вызвать потерю данных."
+msgstr "Внимание: изменение шаблона может привести к потерям данных/"
 
 msgid "template_dlg_mdate_format"
-msgstr "%Y-%m-%d %H:%M:%S"
+msgstr "%Y.%m.%d %H:%M:%S"
 
 msgid "template_dlg_cdate_format"
-msgstr "%Y-%m-%d %H:%M:%S"
+msgstr "%Y.%m.%d %H:%M:%S"
 
 msgid "template_dlg_months_long"
-msgstr "Январь,Ферваль,Март,Апрель,Май,Июнь,Июль,Август,Сентябрь,Октябрь,Ноябрь,Декабрь"
+msgstr "январь,февраль,март,апрель,май,июнь,июль,август,сентябрь,октябрь,ноябрь,декабрь"
 
 msgid "template_dlg_months_short"
-msgstr "Янв,Фев,Мар,Апр,Май,Июн,Июл,Авг,Сен,Окт,Ноя,Дек"
+msgstr "янв,фев,март,апр,май,июнь,июль,авг,сен,окт,ноя,дек"
 
 msgid "template_dlg_day_long"
-msgstr "Воскресенье,Понедельник,Вторник,Среда,Четверг,Пятница,Суббота,Воскресенье"
+msgstr "воскресенье,понедельник,вторник,среда,четверг,пятницу,суббота,воскресенье"
 
 msgid "template_dlg_day_short"
-msgstr "Вс,Пн,Вт,Ср,Чт,Пт,Сб,Вс"
+msgstr "вс,пн,вт,ср,чт,пт,сб,вс"
 
 msgid "visualchars_desc"
-msgstr "Символы визуального контроля вкл./выкл."
+msgstr "Все знаки"
 
 msgid "spellchecker_desc"
-msgstr "Проверка орфографии"
+msgstr "Правописание"
 
 msgid "spellchecker_menu"
-msgstr "Параметры проверки орфографии"
+msgstr "Свойства проверки правописания"
 
 msgid "spellchecker_ignore_word"
-msgstr "Игнорировать слово"
+msgstr "Пропустить"
 
 msgid "spellchecker_ignore_words"
-msgstr "Игнорировать все"
+msgstr "Пропустить все"
 
 msgid "spellchecker_langs"
 msgstr "Языки"
@@ -2257,5 +2257,5 @@ msgid "spellchecker_no_mpell"
 msgstr "Ошибок не обнаружено."
 
 msgid "pagebreak_desc"
-msgstr "Вставить разделитель страницы."
+msgstr "Добавить разрыв страницы"
 

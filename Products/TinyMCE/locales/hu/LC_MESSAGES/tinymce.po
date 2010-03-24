@@ -1,14 +1,14 @@
 # Magyar fordítás a TinyMCE-hez.
-# Version 10.1
+# Version 13.3
 #
-# Kovács Zsolt
+# Horváth László, Veres Ferenc lion@netngine.hu
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2009-08-01 00:00+0000\n"
-"Last-Translator: Kovács Zsolt\n"
-"Language-Team: Kovács Zsolt\n"
+"PO-Revision-Date: 2010-03-22 00:00+0000\n"
+"Last-Translator: Horváth László, Veres Ferenc lion@netngine.hu\n"
+"Language-Team: Horváth László, Veres Ferenc lion@netngine.hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,25 +19,25 @@ msgstr ""
 "Domain: tinymce\n"
 
 msgid "common_edit_confirm"
-msgstr "Használni akarja a WYSIWYG módot ebben a szövegdobozban?"
+msgstr "Használni kívánja a WYSIWYG módot ebben a szövegdobozban?"
 
 msgid "common_apply"
-msgstr "Alkalmaz"
+msgstr "Alkalmazás"
 
 msgid "common_insert"
-msgstr "Beszúr"
+msgstr "Beszúrás"
 
 msgid "common_update"
-msgstr "Frissít"
+msgstr "Frissítés"
 
 msgid "common_cancel"
-msgstr "Mégse"
+msgstr "Mégsem"
 
 msgid "common_close"
-msgstr "Bezár"
+msgstr "Bezárás"
 
 msgid "common_browse"
-msgstr "Tallóz"
+msgstr "Tallózás"
 
 msgid "common_class_name"
 msgstr "Osztály"
@@ -46,13 +46,13 @@ msgid "common_not_set"
 msgstr "-- Nincs megadva --"
 
 msgid "common_clipboard_msg"
-msgstr "A Másolás/Kivágás/Beszúrás funkciók nem elérhetők Mozilla és Firefox alatt.\nKíván többet tudni erről a témáról?"
+msgstr "A Másolás/Kivágás/Beszúrás funkciók nem érhetőek el Mozilla és Firefox alatt.\nKíván többet tudni erről a témáról?"
 
 msgid "common_clipboard_no_support"
 msgstr "Jelenleg nem támogatja a böngészője, használja a billentyűkombinációkat helyette."
 
 msgid "common_popup_blocked"
-msgstr "A felugró ablakok tiltása miatt nem tudtunk megjeleníteni egy, az alkalmazáshoz szükséges ablakot. Engedélyezze a böngészőjében a felugró ablakokat, hogy minden funkciót használhasson."
+msgstr "A felugró ablakok tiltása miatt nem sikerült megjeleníteni egy, az alkalmazáshoz szükséges ablakot. Engedélyezze a böngészőjében a felugró ablakokat, hogy minden funkciót használhasson."
 
 msgid "common_invalid_data"
 msgstr "Hiba: Érvénytelen adatok, pirossal jelölve."
@@ -79,7 +79,7 @@ msgid "simple_numlist_desc"
 msgstr "Sorrendezett lista"
 
 msgid "simple_undo_desc"
-msgstr "Visszavon (Ctrl+Z)"
+msgstr "Visszavonás (Ctrl+Z)"
 
 msgid "simple_redo_desc"
 msgstr "Mégis végrehajt (Ctrl+Y)"
@@ -181,7 +181,7 @@ msgid "advanced_indent_desc"
 msgstr "Behúzás növelése"
 
 msgid "advanced_undo_desc"
-msgstr "Visszavon (Ctrl+Z)"
+msgstr "Visszavonás (Ctrl+Z)"
 
 msgid "advanced_redo_desc"
 msgstr "Mégis végrehajt (Ctrl+Y)"
@@ -253,7 +253,7 @@ msgid "advanced_blockquote_desc"
 msgstr "Idézet"
 
 msgid "advanced_clipboard_msg"
-msgstr "A Másolás/Kivágás/Beszúrás funkciók nem elérhetők Mozilla és Firefox alatt. Kíván többet tudni erről a témáról?"
+msgstr "A Másolás/Kivágás/Beszúrás funkciók nem érhetőek el Mozilla és Firefox alatt. Kíván többet tudni erről a témáról?"
 
 msgid "advanced_path"
 msgstr "Útvonal"
@@ -307,7 +307,7 @@ msgid "advanced_dlg_about_help"
 msgstr "Segítség"
 
 msgid "advanced_dlg_about_license"
-msgstr "Licensz"
+msgstr "Licenc"
 
 msgid "advanced_dlg_about_plugins"
 msgstr "Pluginok"
@@ -382,7 +382,7 @@ msgid "advanced_dlg_image_border"
 msgstr "Keret"
 
 msgid "advanced_dlg_image_dimensions"
-msgstr "Dimenziók"
+msgstr "Méretek"
 
 msgid "advanced_dlg_image_vspace"
 msgstr "Függőleges táv"
@@ -436,10 +436,10 @@ msgid "advanced_dlg_link_titlefield"
 msgstr "Cím"
 
 msgid "advanced_dlg_link_is_email"
-msgstr "A beírt URL e-mail címnek tűnik, kívánja a szükséges mailto:-t elé tenni?"
+msgstr "A beírt URL e-mail címnek tűnik, kívánja a szükséges mailto:-val kiegészíteni?"
 
 msgid "advanced_dlg_link_is_external"
-msgstr "A beírt URL külső hivatkozásnak tűnik, kívánja a szükséges http://-t elé tenni?"
+msgstr "A beírt URL külső hivatkozásnak tűnik, kívánja a szükséges http://-vel kiegészíteni?"
 
 msgid "advanced_dlg_link_list"
 msgstr "Link lista"
@@ -475,7 +475,7 @@ msgid "insertdatetime_months_long"
 msgstr "január,február,március,április,május,június,július,augusztus,szeptember,október,november,december"
 
 msgid "insertdatetime_months_short"
-msgstr "jan,feb,már,ápr,máj,jún,júl,aug,szep,okt,nov,dec"
+msgstr "jan,feb,már,ápr,máj,jún,júl,aug,szept,okt,nov,dec"
 
 msgid "insertdatetime_day_long"
 msgstr "vasárnap,hétfő,kedd,szerda,csütörtök,péntek,szombat,vasárnap"
