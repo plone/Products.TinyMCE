@@ -20,7 +20,7 @@
                     styleAttr = (n.getAttribute('style')) ? n.getAttribute('style') : '';
 
                     // deal with IE style object, convert to lowercase
-                    style = (tinymce.isIE && styleAttr !== '') ? styleAttr.cssText.toLowerCase() : styleAttr.toLowerCase();
+                    style = (tinymce.is(styleAttr,'object')) ? (styleAttr.cssText != "undefined") ? styleAttr.cssText.toLowerCase() : '' : styleAttr.toLowerCase();
 
                     // get valid styles
                     validStyles = style.match (valid);
