@@ -3,9 +3,14 @@
 /* Save message */
 .mceSaveMessage {
   color: Black;
-  font-size: 85%;
+  font-size: 120%;
   font-weight: bold;
   background-color: #FFFFE0;
+  border: 1px solid #996;
+  border-style: none none solid solid;
+  border-radius: 0.5em;
+  -moz-border-radius: 0 0 0 0.5em;
+  -webkit-border-radius: 0 0 0 0.5em;
   padding: 0.3em;
   position: fixed;
   top: 0;
@@ -32,10 +37,10 @@
 .ploneSkin .mceExternalClose {position:absolute; top:1px; right:0px; width:22px; height:17px; background:url(../../plugins/inlinepopups/skins/plonepopup/img/buttons.gif) -66px 0;}
 
 /* Layout */
-.ploneSkin table.mceLayout {border:0; <dtml-with portal_tinymce><dtml-if "_.string.find(editor_width,'%') != -1">width: <dtml-var editor_width> !important</dtml-if></dtml-with>}
+.ploneSkin table.mceLayout {border: none; <dtml-with portal_tinymce><dtml-if "_.string.find(editor_width,'%') != -1">width: <dtml-var editor_width> !important</dtml-if></dtml-with>}
 .ploneSkin table.mceLayout td.mceToolbar {border: none;}
 .ploneSkin table.mceLayout td.mceStatusbar {border: 1px solid #444;	border-top: 0}
-.ploneSkin table.mceToolbar, .ploneSkin tr.mceFirst .mceToolbar tr td, .ploneSkin tr.mceLast .mceToolbar tr td {border:0; margin:0; padding:0;}
+.ploneSkin table.mceToolbar, .ploneSkin tr.mceFirst .mceToolbar tr td, .ploneSkin tr.mceLast .mceToolbar tr td {border: none; margin:0; padding:0;}
 .ploneSkin td.mceToolbar {padding-top:1px; vertical-align:top}
 .ploneSkin .mceIframeContainer {border: 1px solid #666;}
 .ploneSkin .mceEditorFocus .mceIframeContainer { background: #ffffe0;}
@@ -53,9 +58,9 @@
 .ploneSkin td.mceRight table {margin:0 0 0 auto;}
 
 /* Button */
-.ploneSkin .mceButton {display:block; border: 1px solid transparent; width:20px; height:20px; margin-right:1px}
-.ploneSkin a.mceButtonEnabled:hover {border: 1px solid #444; background-color: #ccc;}
-.ploneSkin a.mceButtonActive, .ploneSkin a.mceButtonSelected {}
+.ploneSkin .mceButton {display:block; border: 1px solid transparent !important; width:20px; height:20px; margin-right:1px}
+.ploneSkin a.mceButtonEnabled:hover {border: 1px solid #444 !important; background-color: #ccc;}
+.ploneSkin a.mceButtonActive, .ploneSkin a.mceButtonSelected {border: 1px solid #444 !important;}
 .ploneSkin .mceButtonDisabled .mceIcon {opacity:0.3; -ms-filter:'alpha(opacity=30)'; filter:alpha(opacity=30)}
 .ploneSkin .mceButtonLabeled {width:auto}
 .ploneSkin .mceButtonLabeled span.mceIcon {float:left}
@@ -70,8 +75,8 @@
 .ploneSkin table.mceListBox, .ploneSkin .mceListBox a {display:block}
 .ploneSkin table.mceListBox .mceText {padding-left:4px; width:131px; text-align:left; border:1px solid #444; border-right:0; font-size:100%; height:20px; line-height:20px; overflow:hidden}
 .ploneSkin table.mceListBox .mceOpen {width:9px; height:20px; background:url(../../img/icons.gif) -741px 0; margin-right:2px; border:1px solid #444;}
-.ploneSkin table.mceListBoxEnabled:hover .mceText, .ploneSkin .mceListBoxHover .mceText, .ploneSkin .mceListBoxSelected .mceText {border-right:0;}
-.ploneSkin table.mceListBoxEnabled:hover .mceOpen, .ploneSkin .mceListBoxHover .mceOpen, .ploneSkin .mceListBoxSelected .mceOpen {background-color: #ccc; border: 1px solid #444;}
+.ploneSkin table.mceListBoxEnabled:hover .mceText, .ploneSkin .mceListBoxHover .mceText, .ploneSkin .mceListBoxSelected .mceText {border-right:none;}
+.ploneSkin table.mceListBoxEnabled:hover .mceOpen, .ploneSkin .mceListBoxHover .mceOpen, .ploneSkin .mceListBoxSelected .mceOpen {background-color: #ccc; border: 1px solid #444 !important;}
 .ploneSkin .mceListBoxDisabled a.mceText {color:#444; background-color:transparent;}
 .ploneSkin .mceListBoxMenu {overflow:auto; overflow-x:hidden}
 .ploneSkin .mceOldBoxModel .mceListBox .mceText {height:22px}
