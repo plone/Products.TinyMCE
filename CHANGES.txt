@@ -5,6 +5,9 @@ HISTORY
 1.1rc10 (unreleased)
 --------------------
 
+- Fixed search with Virtual Hosting, ticket #10308.
+  [robgietema]
+
 - Specified empty value and title attributes in searchreplace.htm.pt
   and template.htm.pt to make i18ndude happy.
   [vincentfretin]
@@ -15,6 +18,9 @@ HISTORY
 - Updated pop-ups to match the Plone 4 style, and increased the default window
   sizes a bit to avoid scrollbars.
   [limi]
+
+- Added content id so dialogs get the right style.
+  [robgietema]
 
 - Don't fail if kupu_library_tool is not available
   [naro]
