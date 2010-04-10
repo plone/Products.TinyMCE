@@ -3,7 +3,9 @@ from zope.schema.fieldproperty import FieldProperty
 from zope.component import getUtility
 from zope.interface import classProvides
 from AccessControl import ClassSecurityInfo
+from Acquisition import aq_base
 from Acquisition import aq_inner
+from Acquisition import aq_parent
 from Products.CMFCore.utils import getToolByName
 from Products.CMFCore.interfaces._content import IFolderish
 from plone.app.layout.navigation.root import getNavigationRoot
@@ -159,11 +161,9 @@ class TinyMCE(SimpleItem):
 
         # Get enabled buttons from control panel
         if self.toolbar_save:
-            try:
+            if getattr(aq_base(context), 'checkCreationFlag', None):
                 if not context.checkCreationFlag():
                     buttons.append('save')
-            except:
-                pass
 
         if self.toolbar_cut:
             buttons.append('cut')
@@ -729,17 +729,17 @@ class TinyMCE(SimpleItem):
 
         try:
             results['document_url'] = context.absolute_url()
-            if context.checkCreationFlag():
-                parent = getattr(context.aq_inner, 'aq_parent', None)
-                parent = getattr(parent, 'aq_parent', None)
-                parent = getattr(parent, 'aq_parent', None)
-                results['parent'] = parent.absolute_url() + "/"
-            else:
-                if IFolderish.providedBy(context):
-                    results['parent'] = context.absolute_url() + "/"
+            if getattr(aq_base(context), 'checkCreationFlag', None):
+                parent = aq_parent(aq_inner(context))
+                if context.checkCreationFlag():
+                    parent = aq_parent(aq_parent(parent))
+                    results['parent'] = parent.absolute_url() + "/"
                 else:
-                    results['parent'] = getattr(context.aq_inner, 'aq_parent', None).absolute_url() + "/"
-        except:
+                    if IFolderish.providedBy(context):
+                        results['parent'] = context.absolute_url() + "/"
+                    else:
+                        results['parent'] = parent.absolute_url() + "/"
+        except AttributeError:
             results['parent'] = results['portal_url'] + "/"
             results['document_url'] = results['portal_url']
 
