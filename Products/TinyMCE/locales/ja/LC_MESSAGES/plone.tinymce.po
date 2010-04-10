@@ -1,0 +1,599 @@
+# --- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+# SOME DESCRIPTIVE TITLE.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2009-10-13 15:00+0000\n"
+"PO-Revision-Date: 2010-03-25 01:55+0900\n"
+"Last-Translator: Takeshi Yamamoto (Retsu) <tyam@mac.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: plone.tinymce\n"
+
+#: ../interfaces/utility.py:152
+msgid "Align center"
+msgstr "中揃え"
+
+#: ../interfaces/utility.py:160
+msgid "Align full"
+msgstr "両揃え"
+
+#: ../interfaces/utility.py:148
+msgid "Align left"
+msgstr "左揃え"
+
+#: ../interfaces/utility.py:156
+msgid "Align right"
+msgstr "右揃え"
+
+#: ../interfaces/utility.py:296
+msgid "Allow captioned images"
+msgstr "キャプション付き画像を許す"
+
+#. Default: "Anchors"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:51
+msgid "Anchors"
+msgstr "アンカー"
+
+#: ../interfaces/utility.py:144
+msgid "Backcolor"
+msgstr "背景色"
+
+#: ../interfaces/utility.py:116
+msgid "Bold"
+msgstr "太字"
+
+msgid "Call-out"
+msgstr ""
+
+#. Default: "Caption"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:89
+msgid "Caption"
+msgstr "キャプション"
+
+#: ../interfaces/utility.py:44
+msgid "Choose the Css used in Wysiwyg Editor Area"
+msgstr "WYSIWYGエディタ領域で使われるCSSを選ぶ"
+
+#: ../interfaces/utility.py:256
+msgid "Cleanup messy code"
+msgstr "乱雑なコードを整頓する"
+
+msgid "Clear floats"
+msgstr "フロートを解除する"
+
+#: ../interfaces/utility.py:311
+msgid "Contains Anchors"
+msgstr "アンカーを含める"
+
+#: ../interfaces/utility.py:306
+msgid "Contains Objects"
+msgstr "オブジェクトを含める"
+
+#: ../interfaces/utility.py:80
+msgid "Copy"
+msgstr "コピー"
+
+#. Default: "Current Folder"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:31
+msgid "Current Folder"
+msgstr "カレントフォルダ"
+
+#: ../interfaces/utility.py:326
+msgid "Custom Plugins"
+msgstr "カスタムプラグイン"
+
+#: ../interfaces/utility.py:280
+msgid "Custom Toolbar Buttons"
+msgstr "カスタムツールバーボタン"
+
+#: ../interfaces/utility.py:76
+msgid "Cut"
+msgstr "カット"
+
+#: ../interfaces/utility.py:172
+msgid "Definition list"
+msgstr "定義リスト"
+
+#. Default: "Description"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:159
+msgid "Description"
+msgstr "説明"
+
+#. Default: "Details"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:60
+msgid "Details"
+msgstr "詳細"
+
+msgid "Discreet"
+msgstr "控え目"
+
+#. Default: "E-mail"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:117
+msgid "E-mail"
+msgstr "Ｅメール"
+
+#: ../interfaces/utility.py:272
+msgid "Edit HTML Source"
+msgstr "HTMLソースを編集する"
+
+#: ../interfaces/utility.py:27
+msgid "Editor height"
+msgstr "エディタ高"
+
+#: ../interfaces/utility.py:22
+msgid "Editor width"
+msgstr "エディタ幅"
+
+#: ../interfaces/utility.py:228
+msgid "Emotions"
+msgstr "感情"
+
+#: ../interfaces/utility.py:17
+msgid "Enable auto resizing of the editor window."
+msgstr "エディタ枠の自動サイズ調整を有効にする"
+
+#: ../interfaces/utility.py:39
+msgid "Enable contextmenu."
+msgstr "コンテクストメニューを有効にする"
+
+#: ../interfaces/utility.py:12
+msgid "Enable resizing the editor window."
+msgstr "エディタ枠のサイズ調整を有効にする"
+
+#: ../interfaces/utility.py:317
+msgid "Enter a list of content types which can be linked. Format is one contenttype per line."
+msgstr "リンクされるコンテンツタイプのリストを入れてください。１行につき１コンテンツタイプを書きます。"
+
+#: ../interfaces/utility.py:322
+msgid "Enter a list of content types which can be used as images. Format is one contenttype per line."
+msgstr "画像として使われるコンテンツタイプのリストを入れてください。１行につき１コンテンツタイプを書きます。"
+
+#: ../interfaces/utility.py:312
+msgid "Enter a list of content types which can contain anchors. Format is one contenttype per line."
+msgstr "アンカーを含むコンテンツタイプのリストを入れてください。１行につき１コンテンツタイプを書きます。"
+
+#: ../interfaces/utility.py:307
+msgid "Enter a list of content types which can contain other objects. Format is one contenttype per line."
+msgstr "他のオブジェクトを含むコンテンツタイプのリストを入力してください。１行につき１コンテンツタイプを書きます。"
+
+#: ../interfaces/utility.py:327
+msgid "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
+msgstr "エディタにロードされるカスタムプラグインのリストを入れてください。１行につき１つのプラグイン名かプラグイン名|場所を書きます。"
+
+#: ../interfaces/utility.py:281
+msgid "Enter a list of custom toolbar buttons which will be loaded in the editor, one per line."
+msgstr "エディタにロードされるカスタムツールバーボタンのリストを入れてください。１行につき一つ書きます。"
+
+#: ../interfaces/utility.py:50
+msgid "Enter a list of styles to appear in the style pulldown. Format is title|tag or title|tag|className, one per line."
+msgstr "スタイルプルダウンに現れるスタイルのリストを入れてください。１行につきタイトル|タグまたはタイトル|クラス名を書きます。"
+
+#: ../interfaces/utility.py:55
+msgid "Enter a list of styles to appear in the table style pulldown. Format is title|class, one per line."
+msgstr "表スタイルプルダウンに現れるスタイルのリストを入力してください。１行につき１つのタイトル|クラスを書きます。"
+
+#: ../interfaces/utility.py:331
+msgid "Entity encoding"
+msgstr "エンコーディング"
+
+msgid "Even row"
+msgstr "偶数行"
+
+#. Default: "External"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:41
+msgid "External"
+msgstr "外部"
+
+#. Default: "External link"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:92
+msgid "External link"
+msgstr "外部リンク"
+
+msgid "Fancy grid listing"
+msgstr "装飾的な枠線つき一覧"
+
+msgid "Fancy listing"
+msgstr "装飾的な一覧"
+
+msgid "Fancy vertical listing"
+msgstr "装飾的な縦の一覧"
+
+#. Default: "File"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:145
+msgid "File"
+msgstr "ファイル"
+
+#: ../interfaces/utility.py:104
+msgid "Find"
+msgstr "検索"
+
+#: ../interfaces/utility.py:108
+msgid "Find/Replace"
+msgstr "検索/置換"
+
+#: ../interfaces/utility.py:140
+msgid "Forecolor"
+msgstr ""
+
+msgid "Heading"
+msgstr ""
+
+msgid "Heading cell"
+msgstr ""
+
+msgid "Highlight"
+msgstr "ハイライト"
+
+#. Default: "Home"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:26
+msgid "Home"
+msgstr "ホーム"
+
+#: ../interfaces/utility.py:321
+msgid "Image Objects"
+msgstr "画像オブジェクト"
+
+#: ../interfaces/utility.py:297
+msgid "Images will be automatically captioned."
+msgstr "画像にキャプションが自動的に付けられます"
+
+#: ../interfaces/utility.py:180
+msgid "Indent"
+msgstr "インデント"
+
+#. Default: "Inline"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:80
+msgid "Inline"
+msgstr "インライン"
+
+#: ../interfaces/utility.py:216
+msgid "Insert advanced horizontal ruler"
+msgstr "高度な縦定規を挿入する"
+
+#: ../interfaces/utility.py:208
+msgid "Insert custom character"
+msgstr "カスタム文字を挿入する"
+
+#: ../interfaces/utility.py:220
+msgid "Insert date"
+msgstr "日付を挿入する"
+
+#: ../interfaces/utility.py:212
+msgid "Insert horizontal ruler"
+msgstr "横定規を挿入する"
+
+#: ../interfaces/utility.py:232
+msgid "Insert non-breaking space character"
+msgstr "非改行空白文字を挿入する"
+
+#: ../interfaces/utility.py:236
+msgid "Insert page break"
+msgstr "改行を挿入する"
+
+#: ../interfaces/utility.py:224
+msgid "Insert time"
+msgstr "時間を挿入する"
+
+#: ../interfaces/utility.py:196
+msgid "Insert/edit anchor"
+msgstr "アンカーを挿入/編集する"
+
+#: ../interfaces/utility.py:268
+msgid "Insert/edit attributes"
+msgstr "アトリビュートを挿入/編集する"
+
+#: ../interfaces/utility.py:200
+msgid "Insert/edit image"
+msgstr "画像を挿入/編集する"
+
+#: ../interfaces/utility.py:188
+msgid "Insert/edit link"
+msgstr "リンクを挿入/編集する"
+
+#: ../interfaces/utility.py:204
+msgid "Insert/edit media"
+msgstr "メディアを挿入/編集する"
+
+#. Default: "Internal link"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:65
+msgid "Internal link"
+msgstr "内部リンク"
+
+msgid "Invisible grid"
+msgstr "見えないグリッド"
+
+#: ../interfaces/utility.py:120
+msgid "Italic"
+msgstr "イタリック"
+
+#: ../browser/controlpanel.py:32
+msgid "Layout"
+msgstr "レイアウト"
+
+#: ../interfaces/utility.py:35
+msgid "Left to right"
+msgstr "左から右"
+
+#. Default: "Libraries"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:22
+msgid "Libraries"
+msgstr "ライブラリ"
+
+#. Default: "Link to anchor"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:132
+msgid "Link to anchor"
+msgstr "アンカーへリンク"
+
+#: ../interfaces/utility.py:291
+msgid "Link using UIDs"
+msgstr "UIDを使ってリンク"
+
+#: ../interfaces/utility.py:316
+msgid "Linkable Objects"
+msgstr "リンク可能なオブジェクト"
+
+#: ../interfaces/utility.py:292
+msgid "Links to objects on this site can use unique object ids so that the links remain valid even if the target object is renamed or moved elsewhere on the site."
+msgstr "このサイトのオブジェクトへのリンクはユニークオブジェクトIDを使うことができるので、たとえリンク先のオブジェクトの名前が変えられたり、サイト内の別の場所に移動したとしても、依然としてリンクは有効なまま残ります。"
+
+msgid "Literal"
+msgstr "リテラル"
+
+#. Default: "Mail"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:46
+msgid "Mail"
+msgstr "メール"
+
+#: ../interfaces/utility.py:334
+msgid "Named"
+msgstr ""
+
+#: ../interfaces/utility.py:334
+msgid "Numeric"
+msgstr ""
+
+msgid "Odd row"
+msgstr "奇数行"
+
+#: ../interfaces/utility.py:168
+msgid "Ordered list"
+msgstr "順序つきリスト"
+
+#: ../interfaces/utility.py:176
+msgid "Outdent"
+msgstr "アウトデント"
+
+msgid "Page break (print only)"
+msgstr "改ページ（印刷時のみ有効）"
+
+#: ../interfaces/utility.py:84
+msgid "Paste"
+msgstr "ペースト"
+
+#: ../interfaces/utility.py:88
+msgid "Paste as Plain Text"
+msgstr "プレーンテキストとしてペースト"
+
+#: ../interfaces/utility.py:92
+msgid "Paste from Word"
+msgstr "Wordからペースト"
+
+#. Default: "Preview"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:102
+msgid "Preview"
+msgstr "プレビュー"
+
+#: ../interfaces/utility.py:240
+msgid "Print"
+msgstr "印刷"
+
+msgid "Pull-quote"
+msgstr ""
+
+#: ../interfaces/utility.py:334
+msgid "Raw"
+msgstr ""
+
+#: ../interfaces/utility.py:100
+msgid "Redo"
+msgstr "再実行"
+
+#: ../interfaces/utility.py:252
+msgid "Remove formatting"
+msgstr "書式を取り除く"
+
+#: ../browser/controlpanel.py:44
+msgid "Resource Types"
+msgstr "リソースタイプ"
+
+#: ../interfaces/utility.py:35
+msgid "Right to left"
+msgstr "右から左"
+
+#: ../interfaces/utility.py:301
+msgid "Rooted to current object"
+msgstr "現在のオブジェクトをルートにする"
+
+#: ../interfaces/utility.py:72
+msgid "Save"
+msgstr "保存"
+
+#. Default: "Search"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:56
+msgid "Search"
+msgstr "検索"
+
+#: ../interfaces/utility.py:112
+msgid "Select Style"
+msgstr "スタイルを選ぶ"
+
+#: ../browser/controlpanel.py:49
+msgid "Settings for the TinyMCE Wysiwyg editor."
+msgstr "TinyMCE WYSIWYGエディタの設定"
+
+#: ../interfaces/utility.py:248
+msgid "Spellchecker"
+msgstr "スペルチェッカー"
+
+#: ../interfaces/utility.py:128
+msgid "Strikethrough"
+msgstr ""
+
+#: ../interfaces/utility.py:49
+msgid "Styles"
+msgstr "スタイル"
+
+msgid "Subdued grid"
+msgstr "おとなしい枠線"
+
+msgid "Subheading"
+msgstr ""
+
+#. Default: "Subject"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:124
+msgid "Subject"
+msgstr ""
+
+#: ../interfaces/utility.py:132
+msgid "Subscript"
+msgstr "下つき文字"
+
+#: ../interfaces/utility.py:136
+msgid "Superscript"
+msgstr "上つき文字"
+
+#: ../interfaces/utility.py:184
+msgid "Table controls"
+msgstr "表"
+
+#: ../interfaces/utility.py:54
+msgid "Table styles"
+msgstr "表スタイル"
+
+#: ../interfaces/utility.py:332
+msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
+msgstr "このオプションはエンティティ/文字が処理される方法を制御します。Named: 文字はエンティティオプションを基にして名前つきエンティティに変換されます。Numeric: 文字は数値エンティティに変換されます。Raw: すべての文字は非エンティティ形式で格納されます。ただし次のようなXMLデフォルトエンティティは除きます: amp lt gt quot"
+
+#: ../interfaces/utility.py:68
+msgid "This option enables the external toolbar which will be placed at the top of the page."
+msgstr "このオプションは外部ツールバーを有効にします。外部ツールバーはページの上部に配置されます。"
+
+#: ../interfaces/utility.py:45
+msgid "This option enables you to specify a custom CSS file that extends the theme content CSS. This CSS file is the one used within the editor (the editable area)."
+msgstr "このオプションはカスタムCSSファイルを指定できるようにします。カスタムCSSファイルはテーマコンテンツCSSを拡張します。このCSSファイルはエディタ内（編集可能領域）で使われるものです。"
+
+#: ../interfaces/utility.py:18
+msgid "This option gives you the ability to enable/disable auto resizing the editor window depending on the content."
+msgstr "このオプションを使って、エディタ枠の自動サイズ調整を有効/無効にすることができます。有効であればコンテンツに応じて枠の大きさが自動調整されます。"
+
+#: ../interfaces/utility.py:13
+msgid "This option gives you the ability to enable/disable resizing the editor window. If the editor width is set to a percentage only vertical resizing is enabled."
+msgstr "このオプションを使って、エディタ枠のサイズを変更可能/変更不能にすることができます。もしエディタ幅がパーセンテージに設定されているのであれば、縦のサイズ変更が有効になっています。"
+
+#: ../interfaces/utility.py:40
+msgid "This option gives you the ability to enable/disable the use of the contextmenu."
+msgstr "このオプションを使って、コンテクストメニューの利用を有効/無効にします。"
+
+#: ../interfaces/utility.py:28
+msgid "This option gives you the ability to specify the height of the editor in pixels. If auto resize is enabled this value is used as minimum height."
+msgstr "このオプションを使って、エディタの高さをピクセル単位で指定することができます。自動サイズ調整が有効になっていれば、この値は高さの最小値として使われます。"
+
+#: ../interfaces/utility.py:23
+msgid "This option gives you the ability to specify the width of the editor in pixels or percent."
+msgstr "このオプションを使って、エディタの幅をピクセル単位あるいはパーセンテージで指定することができます。"
+
+#: ../interfaces/utility.py:63
+msgid "This option gives you the ability to specify the width of the toolbar in pixels."
+msgstr "このオプションを使って、ツールバーの幅をピクセル単位で指定することができます。"
+
+#: ../interfaces/utility.py:33
+msgid "This option specifies the default writing direction, some languages (Like Hebrew, Arabic, Urdu...) write from right to left instead of left to right."
+msgstr "このオプションは文章書きの方向のデフォルトを指定します。ある言語（たとえばヘブライ語やアラビア語、ウルドゥ語）では、文章を左から右ではなく、右から左に書きます。"
+
+#. Default: "TinyMCE"
+#: ../profiles/upgrade_10_to_11/controlpanel.xml
+msgid "TinyMCE"
+msgstr "TinyMCE"
+
+#: ../browser/controlpanel.py:48
+msgid "TinyMCE Settings"
+msgstr "TinyMCE 設定"
+
+#. Default: "TinyMCE Visual Editor"
+#: ../profiles/default/controlpanel.xml
+#: ../profiles/upgrade_10_to_11/controlpanel.xml
+msgid "TinyMCE Visual Editor"
+msgstr "TinyMCE ビジュアルエディタ"
+
+#. Default: "Title"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:275
+msgid "Title"
+msgstr "タイトル"
+
+#: ../interfaces/utility.py:276
+msgid "Toggle fullscreen mode"
+msgstr "全画面モード切替"
+
+#: ../interfaces/utility.py:260
+msgid "Toggle guidelines/invisible objects"
+msgstr ""
+
+#: ../browser/controlpanel.py:36
+msgid "Toolbar"
+msgstr "ツールバー"
+
+#: ../interfaces/utility.py:62
+msgid "Toolbar width"
+msgstr "ツールバー幅"
+
+#: ../interfaces/utility.py:124
+msgid "Underline"
+msgstr "下線"
+
+#: ../interfaces/utility.py:96
+msgid "Undo"
+msgstr "元に戻す"
+
+#: ../interfaces/utility.py:192
+msgid "Unlink"
+msgstr "リンク解除"
+
+#: ../interfaces/utility.py:164
+msgid "Unordered list"
+msgstr "順序なしリスト"
+
+#. Default: "Up one level"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:68
+msgid "Up one level"
+msgstr ""
+
+#. Default: "Upload"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:165
+msgid "Upload"
+msgstr "アップロード"
+
+#. Default: "Upload file"
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:71
+msgid "Upload file"
+msgstr "ファイルをアップロードする"
+
+#: ../interfaces/utility.py:264
+msgid "Visual control characters on/off"
+msgstr ""
+
+#: ../interfaces/utility.py:302
+msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
+msgstr ""
+
+#: ../interfaces/utility.py:32
+msgid "Writing direction"
+msgstr ""
+
