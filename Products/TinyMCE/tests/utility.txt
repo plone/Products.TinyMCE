@@ -80,16 +80,16 @@ The result should contain the settings specified.
     >>> utility.getConfiguration(portal)
     '{...external...}'
 
-Let's call the portal_factory of a document and see if the configuration
-contains the save button.
+Let's call the portal_factory of a document and make sure the configuration
+doesn't contain the save button:
 
     >>> from Products.Five.testbrowser import Browser
     >>> browser = Browser()
     >>> self.app.acl_users.userFolderAddUser('root', 'secret', ['Manager'], [])
     >>> browser.addHeader('Authorization', 'Basic root:secret')
     >>> browser.open('http://nohost/plone/createObject?type_name=Document')
-    >>> browser.contents
-    '...{...save...}...'
+    >>> "&quot;save&quot;:" in browser.contents
+    False
 
 Configurable Image Dimensions
 -----------------------------

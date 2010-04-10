@@ -5,6 +5,10 @@ HISTORY
 1.1rc11 (Unreleased)
 --------------------
 
+- Fixed test failure and avoid bare try/except statements related to portal
+  factory and the save button.
+  [hannosch]
+
 1.1rc10 (2010-03-09)
 --------------------
 
