@@ -5,6 +5,9 @@ HISTORY
 1.1rc11 (Unreleased)
 --------------------
 
+- Prefer xml.etree over elementtree.
+  [hannosch]
+
 - Fixed test failure and avoid bare try/except statements related to portal
   factory and the save button.
   [hannosch]
