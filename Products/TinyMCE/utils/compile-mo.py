@@ -1,7 +1,11 @@
 #!/opt/local/bin/python2.4
 
-from elementtree import ElementTree as ET
-import os, sys, string
+import os
+
+try:
+    from xml.etree import ElementTree as ET
+except ImportError:
+    from elementtree import ElementTree as ET
 
 # Skip .ko for now
 AVAILABLE_LANGUAGES = set(

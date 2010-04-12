@@ -13,12 +13,13 @@ except ImportError:
 from Products.PortalTransforms.interfaces import itransform
 
 try:
-    from celementtree import ElementTree, HTMLTreeBuilder
+    from xml.etree import ElementTree
 except ImportError:
-    from elementtree import ElementTree, HTMLTreeBuilder    
+    from elementtree import ElementTree
+
 
 class html_to_tinymce_output_html:
-    """ transform which converts html to tiny output html"""    
+    """ transform which converts html to tiny output html"""
     if ITransform is not None:
         implements(ITransform)
     __implements__ = itransform

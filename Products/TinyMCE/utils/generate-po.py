@@ -1,10 +1,11 @@
 #!/opt/local/bin/python2.4
 
+import os
+
 try:
-    from elementtree import ElementTree as ET
+    from xml.etree import ElementTree as ET
 except ImportError:
-    import xml.etree.ElementTree as ET
-import os, sys, string
+    from elementtree import ElementTree as ET
 
 AVAILABLE_LANGUAGES = set(
     'sq ar hy az eu be bn nb bs br bg ca ch zh hr cs da dv nl en et fi fr gl '
