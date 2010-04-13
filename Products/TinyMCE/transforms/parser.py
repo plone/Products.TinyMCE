@@ -75,17 +75,21 @@ class TinyMCEOutput(SGMLParser):
                 if attributes.has_key('href'):
                     href = attributes['href']
                     if 'resolveuid' in href:
-                        # We should check if "Link using UIDs" is enabled in the TinyMCE tool, but then the kupu resolveuid is used, so let's always transform here
+                        # We should check if "Link using UIDs" is enabled in
+                        # the TinyMCE tool, but then the kupu resolveuid is
+                        # used, so let's always transform here
                         parts = href.split("/")
                         # Get the actual UUID
                         uid = parts[1]
                         appendix = ""
                         if len(parts) > 2:
-                            # There is more than just the UUID, save it in appendix
+                            # There is more than just the UUID, save it in
+                            # appendix
                             appendix = "/".join(parts[2:])
 
-                        #move name of links to anchors to appendix (resolveuid/12fc34#anchor)
-                        if uid.find('#'):
+                        # move name of links to anchors to appendix
+                        # (resolveuid/12fc34#anchor)
+                        if '#' in uid:
                             uid, anchor = uid.split('#')
                             appendix = '#%s' % anchor  #anchor + appendix won't happen
 

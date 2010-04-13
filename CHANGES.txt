@@ -5,6 +5,9 @@ HISTORY
 1.1rc11 (Unreleased)
 --------------------
 
+- Fix regression in handling of resolveuid links that don't include an anchor.
+  [davisagli]
+
 - Include a copy of resolveuid.py so that links by UID can be resolved even
   when kupu is not installed and the transform is not applied (such as when
   inserting images in the first place).
