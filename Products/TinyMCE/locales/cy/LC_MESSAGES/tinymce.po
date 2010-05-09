@@ -1,12 +1,12 @@
 # This is the Welsh language pack for TinyMCE.
-# Version 1.4
+# Version 1.5
 #
 # Will Abson
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2009-03-03 00:00+0000\n"
+"PO-Revision-Date: 2010-04-16 00:00+0000\n"
 "Last-Translator: Will Abson\n"
 "Language-Team: Will Abson\n"
 "MIME-Version: 1.0\n"
@@ -1296,6 +1296,12 @@ msgstr "Gludo o Word"
 msgid "paste_selectall_desc"
 msgstr "Dewis Pobpeth"
 
+msgid "paste_plaintext_mode_sticky"
+msgstr "Gludo rwan mewn modd testun plaen. Cliciwch eto i doglu nôl i fodd gludo normal. Byddwch yn cael eich dychwelyd i fodd gludo normal ar ôl gludo rhywbeth."
+
+msgid "paste_plaintext_mode"
+msgstr "Gludo rwan mewn modd testun plaen. Cliciwch eto i doglu nôl i fodd gludo normal."
+
 msgid "paste_dlg_text_title"
 msgstr "Defnyddiwch CTRL+V ar eich bysellfwrdd i ludo'r testun i fewn i'r ffenest."
 
@@ -1607,6 +1613,12 @@ msgstr "border"
 
 msgid "autosave_unload_msg"
 msgstr "Bydd eich newidiadau yn cael eu colli os byddwch yn llywio i ffwrdd o'r tudalen yma."
+
+msgid "autosave_restore_content"
+msgstr "Adfer cynnwys awto-cadwedig."
+
+msgid "autosave_warning_message"
+msgstr "Os adferwch chi'r cynnwys cadwedig, byddwch yn colli'r holl cynnwys sydd yn bresennol yn y golygydd.\n\nA ydych chi'n siŵr eich bod eisiau adfer y cynnwys cadwedig?."
 
 msgid "fullscreen_desc"
 msgstr "Toglu modd sgrin llawn"
@@ -2258,4 +2270,34 @@ msgstr "Dim camsillafiadau wedi'i canfod."
 
 msgid "pagebreak_desc"
 msgstr "Mewnosod toriad tudalen."
+
+msgid "advlist_types"
+msgstr "Mathau"
+
+msgid "advlist_def"
+msgstr "Rhagosodedig"
+
+msgid "advlist_lower_alpha"
+msgstr "Alffa is"
+
+msgid "advlist_lower_greek"
+msgstr "Groegaiddd is"
+
+msgid "advlist_lower_roman"
+msgstr "Rhufeinig is"
+
+msgid "advlist_upper_alpha"
+msgstr "Alffa uwch"
+
+msgid "advlist_upper_roman"
+msgstr "Rhufeinig uwch"
+
+msgid "advlist_circle"
+msgstr "Cylch"
+
+msgid "advlist_disc"
+msgstr "Disg"
+
+msgid "advlist_square"
+msgstr "Sgwâr"
 

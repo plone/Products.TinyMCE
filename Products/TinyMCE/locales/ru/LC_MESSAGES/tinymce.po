@@ -1,14 +1,14 @@
 # Это Русский языковой пакет для TinyMCE
-# Version 81.4
+# Version 86.4
 #
-# Кутняков
+# green-earth.ru
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2010-03-21 00:00+0000\n"
-"Last-Translator: Кутняков\n"
-"Language-Team: Кутняков\n"
+"PO-Revision-Date: 2010-05-08 00:00+0000\n"
+"Last-Translator: green-earth.ru\n"
+"Language-Team: green-earth.ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -109,7 +109,7 @@ msgid "advanced_address"
 msgstr "Адрес"
 
 msgid "advanced_pre"
-msgstr "Отформатированный"
+msgstr "Преформатированный"
 
 msgid "advanced_h1"
 msgstr "Заголовок 1"
@@ -1296,6 +1296,12 @@ msgstr "Вставить из Word"
 msgid "paste_selectall_desc"
 msgstr "Выделить все"
 
+msgid "paste_plaintext_mode_sticky"
+msgstr "Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode."
+
+msgid "paste_plaintext_mode"
+msgstr "Paste is now in plain text mode. Click again to toggle back to regular paste mode."
+
 msgid "paste_dlg_text_title"
 msgstr "Используйте CTRL+V для вставки текста в окно."
 
@@ -1607,6 +1613,12 @@ msgstr "border"
 
 msgid "autosave_unload_msg"
 msgstr "Произведенные изменения будут утеряны, если Вы уйдете с этой страницы."
+
+msgid "autosave_restore_content"
+msgstr "Восстановить автоматическое сохранение"
+
+msgid "autosave_warning_message"
+msgstr "Все произведенные изменения будут утеряны.\n\nПродолжить восстановление автоматического сохранения?"
 
 msgid "fullscreen_desc"
 msgstr "Полноэкранный режим"
@@ -2258,4 +2270,34 @@ msgstr "Ошибок не обнаружено."
 
 msgid "pagebreak_desc"
 msgstr "Добавить разрыв страницы"
+
+msgid "advlist_types"
+msgstr "Символы"
+
+msgid "advlist_def"
+msgstr "Стандартные"
+
+msgid "advlist_lower_alpha"
+msgstr "Строчные латинские буквы"
+
+msgid "advlist_lower_greek"
+msgstr "Строчные греческие буквы"
+
+msgid "advlist_lower_roman"
+msgstr "Строчные римские цифры"
+
+msgid "advlist_upper_alpha"
+msgstr "Заглавные латинские буквы"
+
+msgid "advlist_upper_roman"
+msgstr "Заглавные римские цифры"
+
+msgid "advlist_circle"
+msgstr "Круги"
+
+msgid "advlist_disc"
+msgstr "Окружности"
+
+msgid "advlist_square"
+msgstr "Квадраты"
 

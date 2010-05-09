@@ -1,12 +1,12 @@
 # This is the Polish language pack for TinyMCE.
-# Version 40.3
+# Version 42.5
 #
 # Moxiecode Systems AB
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2010-03-19 00:00+0000\n"
+"PO-Revision-Date: 2010-05-07 00:00+0000\n"
 "Last-Translator: Moxiecode Systems AB\n"
 "Language-Team: Moxiecode Systems AB\n"
 "MIME-Version: 1.0\n"
@@ -100,7 +100,7 @@ msgid "advanced_block"
 msgstr "Format"
 
 msgid "advanced_paragraph"
-msgstr "Paragraf"
+msgstr "Akapit"
 
 msgid "advanced_div"
 msgstr "Div"
@@ -649,7 +649,7 @@ msgid "searchreplace_dlg_down"
 msgstr "W dół"
 
 msgid "searchreplace_dlg_mcase"
-msgstr "Dopasuj case"
+msgstr "Dopasuj wielkość liter"
 
 msgid "searchreplace_dlg_findnext"
 msgstr "Znajdź następny"
@@ -1296,6 +1296,12 @@ msgstr "Wklej z Worda"
 msgid "paste_selectall_desc"
 msgstr "Zaznacz wszystko"
 
+msgid "paste_plaintext_mode_sticky"
+msgstr "Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode."
+
+msgid "paste_plaintext_mode"
+msgstr "Paste is now in plain text mode. Click again to toggle back to regular paste mode."
+
 msgid "paste_dlg_text_title"
 msgstr "Użyj CTRL+V na swojej klawiaturze żeby wkleić tekst do okna."
 
@@ -1607,6 +1613,12 @@ msgstr "border"
 
 msgid "autosave_unload_msg"
 msgstr "Zmiany, które zrobiłeś zostaną utracone jeśli opuścisz tę stronę."
+
+msgid "autosave_restore_content"
+msgstr "Restore auto-saved content."
+
+msgid "autosave_warning_message"
+msgstr "If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?."
 
 msgid "fullscreen_desc"
 msgstr "Przełącz tryb pełnoekranowy"
@@ -2258,4 +2270,34 @@ msgstr "Żadnych brakujących nie znaleziono."
 
 msgid "pagebreak_desc"
 msgstr "Wstaw linię."
+
+msgid "advlist_types"
+msgstr "Types"
+
+msgid "advlist_def"
+msgstr "Default"
+
+msgid "advlist_lower_alpha"
+msgstr "Lower alpha"
+
+msgid "advlist_lower_greek"
+msgstr "Lower greek"
+
+msgid "advlist_lower_roman"
+msgstr "Lower roman"
+
+msgid "advlist_upper_alpha"
+msgstr "Upper alpha"
+
+msgid "advlist_upper_roman"
+msgstr "Upper roman"
+
+msgid "advlist_circle"
+msgstr "Circle"
+
+msgid "advlist_disc"
+msgstr "Disc"
+
+msgid "advlist_square"
+msgstr "Square"
 

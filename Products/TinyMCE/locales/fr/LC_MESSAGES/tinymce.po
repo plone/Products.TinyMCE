@@ -1,12 +1,12 @@
 # Ceci est le paquetage français pour TinyMCE.
-# Version 39.5
+# Version 42.1
 #
 # marj - révisé par jojaba, puis vincentfretin
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2010-03-24 00:00+0000\n"
+"PO-Revision-Date: 2010-05-08 00:00+0000\n"
 "Last-Translator: marj - révisé par jojaba, puis vincentfretin\n"
 "Language-Team: marj - révisé par jojaba, puis vincentfretin\n"
 "MIME-Version: 1.0\n"
@@ -1296,6 +1296,12 @@ msgstr "Coller un texte créé sous Word"
 msgid "paste_selectall_desc"
 msgstr "Tout sélectionner"
 
+msgid "paste_plaintext_mode_sticky"
+msgstr "Le collage est actuellement en mode texte non formaté. Cliquez à nouveau pour revenir en mode de collage ordinaire. Après avoir collé quelque chose, vous retournerez en mode de collage ordinaire."
+
+msgid "paste_plaintext_mode"
+msgstr "Le collage est actuellement en mode texte non formaté. Cliquez à nouveau pour revenir en mode de collage ordinaire."
+
 msgid "paste_dlg_text_title"
 msgstr "Utilisez CTRL+V sur votre clavier pour coller le texte dans la fenêtre."
 
@@ -1552,7 +1558,7 @@ msgid "table_dlg_cell_limit"
 msgstr "Vous avez dépassé le nombre maximum de cellules ({$cells})."
 
 msgid "table_dlg_missing_scope"
-msgstr "Êtes-vous sûr de vouloir continuer sans spécifier de portée pour cette cellule de titre? Sans portée, cela peut être difficile pour certains utilisateurs de comprendre le contenu ou les données affichées dans le tableau."
+msgstr "Êtes-vous sûr de vouloir continuer sans spécifier de portée pour cette cellule de titre ? Sans portée, cela peut être difficile pour certains utilisateurs de comprendre le contenu ou les données affichées dans le tableau."
 
 msgid "table_dlg_caption"
 msgstr "Afficher la légende du tableau"
@@ -1744,7 +1750,7 @@ msgid "media_dlg_href"
 msgstr "Href"
 
 msgid "media_dlg_qtsrcchokespeed"
-msgstr "Choke speed"
+msgstr "Débit maximum"
 
 msgid "media_dlg_target"
 msgstr "Cible"

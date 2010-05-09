@@ -1,12 +1,12 @@
 # This is the Korean language pack for TinyMCE.
-# Version 3.0
+# Version 3.5
 #
 # corean (http://corean.biz/)
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2008-10-13 00:00+0000\n"
+"PO-Revision-Date: 2010-05-07 00:00+0000\n"
 "Last-Translator: corean (http://corean.biz/)\n"
 "Language-Team: corean (http://corean.biz/)\n"
 "MIME-Version: 1.0\n"
@@ -1296,6 +1296,12 @@ msgstr "Word로부터 붙여넣기"
 msgid "paste_selectall_desc"
 msgstr "모두 선택"
 
+msgid "paste_plaintext_mode_sticky"
+msgstr "일반 텍스트 모드에서 붙여넣기. 클릭하면 일반 붙여넣기 모드로 다시 변경됩니다. After you paste something you will be returned to regular paste mode."
+
+msgid "paste_plaintext_mode"
+msgstr "일반 텍스트 모드에서 붙여넣기. 클릭하면 일반 붙여넣기 모드로 다시 변경됩니다."
+
 msgid "paste_dlg_text_title"
 msgstr "윈도우에 텍스트를 붙이려면 키보드로 Ctrl+V를 입력해 주세요."
 
@@ -1607,6 +1613,12 @@ msgstr "border"
 
 msgid "autosave_unload_msg"
 msgstr "다른 페이지로 이동하면 편집한 내용이 취소됩니다."
+
+msgid "autosave_restore_content"
+msgstr "자동 저장된 내용 복구"
+
+msgid "autosave_warning_message"
+msgstr "저장된 내용을 복구하면 현재의 내용은 삭제됩니다.\n\n정말 저장된 내용을 복구하시겠습니까?"
 
 msgid "fullscreen_desc"
 msgstr "전체화면"
@@ -2258,4 +2270,34 @@ msgstr "오탈자가 발견되지 않았습니다."
 
 msgid "pagebreak_desc"
 msgstr "새페이지 삽입"
+
+msgid "advlist_types"
+msgstr "타입"
+
+msgid "advlist_def"
+msgstr "기본"
+
+msgid "advlist_lower_alpha"
+msgstr "알파벳 소문자"
+
+msgid "advlist_lower_greek"
+msgstr "그리스어 소문자"
+
+msgid "advlist_lower_roman"
+msgstr "로마 소문자"
+
+msgid "advlist_upper_alpha"
+msgstr "대문자 알파벳"
+
+msgid "advlist_upper_roman"
+msgstr "대문자 로마"
+
+msgid "advlist_circle"
+msgstr "원"
+
+msgid "advlist_disc"
+msgstr "원형"
+
+msgid "advlist_square"
+msgstr "사격형"
 

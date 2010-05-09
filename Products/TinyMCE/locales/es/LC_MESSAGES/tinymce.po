@@ -1,12 +1,12 @@
 # Paquete de idioma en Español.
-# Version 27.9
+# Version 29.5
 #
 # UPN
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2010-03-11 00:00+0000\n"
+"PO-Revision-Date: 2010-05-08 00:00+0000\n"
 "Last-Translator: UPN\n"
 "Language-Team: UPN\n"
 "MIME-Version: 1.0\n"
@@ -1296,6 +1296,12 @@ msgstr "Pegar desde Word"
 msgid "paste_selectall_desc"
 msgstr "Elegir todo"
 
+msgid "paste_plaintext_mode_sticky"
+msgstr "Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode."
+
+msgid "paste_plaintext_mode"
+msgstr "Paste is now in plain text mode. Click again to toggle back to regular paste mode."
+
 msgid "paste_dlg_text_title"
 msgstr "Use CTRL+V en su teclado para pegar el texto en la ventana."
 
@@ -1607,6 +1613,12 @@ msgstr "border"
 
 msgid "autosave_unload_msg"
 msgstr "Los cambios realizados se perderán si sale de esta página."
+
+msgid "autosave_restore_content"
+msgstr "Reestablecer contenido guardado automáticamente"
+
+msgid "autosave_warning_message"
+msgstr "Se reestablece en contenido guardado, perderá todo el contenido que está actualmente en el editor.\n\nEstá seguro de que quiere reestablecer el contenido guardado."
 
 msgid "fullscreen_desc"
 msgstr "Cambiar a modo Pantalla Completa"
@@ -1930,10 +1942,10 @@ msgid "fullpage_desc"
 msgstr "Propiedades del documento"
 
 msgid "fullpage_delta_width"
-msgstr ""
+msgstr "Ancho"
 
 msgid "fullpage_delta_height"
-msgstr ""
+msgstr "Alto"
 
 msgid "fullpage_dlg_title"
 msgstr "Propiedades del documento"
@@ -2258,4 +2270,34 @@ msgstr "No se encontraron errores."
 
 msgid "pagebreak_desc"
 msgstr "Insertar fin de página"
+
+msgid "advlist_types"
+msgstr "Tipo"
+
+msgid "advlist_def"
+msgstr "Preestablecido"
+
+msgid "advlist_lower_alpha"
+msgstr "Menos opaco"
+
+msgid "advlist_lower_greek"
+msgstr "Menos greek"
+
+msgid "advlist_lower_roman"
+msgstr "Menos roman"
+
+msgid "advlist_upper_alpha"
+msgstr "Más opaco"
+
+msgid "advlist_upper_roman"
+msgstr "Más roman"
+
+msgid "advlist_circle"
+msgstr "Circulo"
+
+msgid "advlist_disc"
+msgstr "Disc"
+
+msgid "advlist_square"
+msgstr "Cuadro"
 

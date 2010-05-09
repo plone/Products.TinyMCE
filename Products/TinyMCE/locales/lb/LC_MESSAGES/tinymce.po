@@ -1,12 +1,12 @@
 # Dëst ass de lëtzebuergesche Sprooche-Pak fir TinyMCE.
-# Version 1.1
+# Version 1.2
 #
 # Michel Weimerskirch (michel@spellchecker.lu), Pit Wenkin (pit@wenkin.lu)
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2010-03-14 00:00+0000\n"
+"PO-Revision-Date: 2010-04-25 00:00+0000\n"
 "Last-Translator: Michel Weimerskirch (michel@spellchecker.lu), Pit Wenkin (pit@wenkin.lu)\n"
 "Language-Team: Michel Weimerskirch (michel@spellchecker.lu), Pit Wenkin (pit@wenkin.lu)\n"
 "MIME-Version: 1.0\n"
@@ -223,7 +223,7 @@ msgid "advanced_backcolor_desc"
 msgstr "Hannergrondfuerf"
 
 msgid "advanced_charmap_desc"
-msgstr "Sonderzeechen afügen"
+msgstr "Sonnerzeechen afügen"
 
 msgid "advanced_visualaid_desc"
 msgstr "Hëllefslinnen an onsiichtbar Elementer an-/ausblennen"
@@ -1296,6 +1296,12 @@ msgstr "Mat Formatéierungen (aus dem Word) afügen"
 msgid "paste_selectall_desc"
 msgstr "Alles auswielen"
 
+msgid "paste_plaintext_mode_sticky"
+msgstr "Beim Afüge gëtt elo just den Text ouni Formatéierungen iwwerholl. Nach eng Kéier klicken, fir an den normale Modus zeréckzewiesselen. Nodeem s Dir eppes agefügt hutt, gëtt automatesch nees an den normale Modus gewiesselt."
+
+msgid "paste_plaintext_mode"
+msgstr "Beim Afüge gëtt elo just den Text ouni Formatéierungen iwwerholl. Nach eng Kéier klicken, fir an den normale Modus zeréckzewiesselen."
+
 msgid "paste_dlg_text_title"
 msgstr "Dréckt op Ärer Tastatur Ctrl+V, fir den Text an ze fügen."
 
@@ -1607,6 +1613,12 @@ msgstr "all 4 Säiten (Bord)"
 
 msgid "autosave_unload_msg"
 msgstr "Är Ännerungen gi verluer, wann Dir d'Säit verloosst."
+
+msgid "autosave_restore_content"
+msgstr "Automatesch gespäicherten Inhalt recuperéieren."
+
+msgid "autosave_warning_message"
+msgstr "Wann Dir dee gespäicherten Inhalt recuperéiert, verléiert Dir de ganzen Inhalt dee grad am Editor ass.\n\nWëllt Dir de gespäicherten Inhalt sécher recuperéieren?."
 
 msgid "fullscreen_desc"
 msgstr "Vollbildschierm"
@@ -2258,4 +2270,34 @@ msgstr "Keng Orthographiefeeler fonnt."
 
 msgid "pagebreak_desc"
 msgstr "Säitenëmbroch afügen"
+
+msgid "advlist_types"
+msgstr "Typen"
+
+msgid "advlist_def"
+msgstr "Standard"
+
+msgid "advlist_lower_alpha"
+msgstr "Kleng Buschtawen"
+
+msgid "advlist_lower_greek"
+msgstr "Kleng griichesch Buschtawen"
+
+msgid "advlist_lower_roman"
+msgstr "Kleng réimech Zuelen"
+
+msgid "advlist_upper_alpha"
+msgstr "Grouss Buschtawen"
+
+msgid "advlist_upper_roman"
+msgstr "Grouss réimech Zuelen"
+
+msgid "advlist_circle"
+msgstr "Krees"
+
+msgid "advlist_disc"
+msgstr "Scheif"
+
+msgid "advlist_square"
+msgstr "Quadrat"
 

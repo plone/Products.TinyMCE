@@ -1,14 +1,14 @@
 # This is the Japanese language pack for TinyMCE.
-# Version 12.9
+# Version 15.1
 #
-# Hisaya Nishide
+# Hisaya Nishide and yama and Naoki Nakanishi
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2010-04-19 00:00+0900\n"
-"Last-Translator: Naoki Nakanishi\n"
-"Language-Team: Hisaya Nishide\n"
+"PO-Revision-Date: 2010-05-03 00:00+0000\n"
+"Last-Translator: Hisaya Nishide and yama and Naoki Nakanishi\n"
+"Language-Team: Hisaya Nishide and yama and Naoki Nakanishi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -46,13 +46,13 @@ msgid "common_not_set"
 msgstr "-- 未設定 --"
 
 msgid "common_clipboard_msg"
-msgstr "コピー/切り取り/貼り付けはFirefoxおよびMozillaでは使用できません。\n詳細はこちら"
+msgstr "このコマンドはFirefoxでは使用できません。"
 
 msgid "common_clipboard_no_support"
-msgstr "クリップボード操作はお使いのブラウザでは対応していません。代わりにキーボードのショートカットキーをお使い下さい。"
+msgstr "クリップボード操作はお使いのブラウザには対応しておりません。代わりにキーボードのショートカットキーをお使い下さい。"
 
 msgid "common_popup_blocked"
-msgstr "ポップアップがブロックされました。すべての機能を利用するためにポップアップを許可して下さい。"
+msgstr "ポップアップがブロックされました。すべての機能をご利用になるにはポップアップを許可して下さい。"
 
 msgid "common_invalid_data"
 msgstr "エラー: 入力に誤りがあります。（赤字の項目）"
@@ -106,7 +106,7 @@ msgid "advanced_div"
 msgstr "Div"
 
 msgid "advanced_address"
-msgstr "連絡先"
+msgstr "住所"
 
 msgid "advanced_pre"
 msgstr "整形済み"
@@ -253,7 +253,7 @@ msgid "advanced_blockquote_desc"
 msgstr "引用"
 
 msgid "advanced_clipboard_msg"
-msgstr "コピー/切り取り/貼り付けはMozilla及びFirefoxでは使用できません。\n詳細はこちら"
+msgstr "このコマンドはFirefoxでは使用できません。"
 
 msgid "advanced_path"
 msgstr "パス"
@@ -394,28 +394,28 @@ msgid "advanced_dlg_image_align"
 msgstr "配置"
 
 msgid "advanced_dlg_image_align_baseline"
-msgstr "ベースライン"
+msgstr "Baseline"
 
 msgid "advanced_dlg_image_align_top"
-msgstr "上端揃え"
+msgstr "Top"
 
 msgid "advanced_dlg_image_align_middle"
-msgstr "中央揃え"
+msgstr "Middle"
 
 msgid "advanced_dlg_image_align_bottom"
-msgstr "下揃え"
+msgstr "Bottom"
 
 msgid "advanced_dlg_image_align_texttop"
-msgstr "テキストの上端"
+msgstr "Text top"
 
 msgid "advanced_dlg_image_align_textbottom"
-msgstr "テキストの下端"
+msgstr "Text bottom"
 
 msgid "advanced_dlg_image_align_left"
-msgstr "左寄せ"
+msgstr "Left"
 
 msgid "advanced_dlg_image_align_right"
-msgstr "右寄せ"
+msgstr "Right"
 
 msgid "advanced_dlg_link_title"
 msgstr "リンクの挿入/編集"
@@ -472,10 +472,10 @@ msgid "insertdatetime_inserttime_desc"
 msgstr "時刻の挿入"
 
 msgid "insertdatetime_months_long"
-msgstr "1月,2月,3月,4月,5月,6月,7月,8月,9月,10月,11月,12月"
+msgstr "January,February,March,April,May,June,July,August,September,October,November,December"
 
 msgid "insertdatetime_months_short"
-msgstr "1,2,3,4,5,6,7,8,9,10,11,12"
+msgstr "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec"
 
 msgid "insertdatetime_day_long"
 msgstr "日曜日,月曜日,火曜日,水曜日,木曜日,金曜日,土曜日,日曜日"
@@ -523,7 +523,7 @@ msgid "iespell_iespell_desc"
 msgstr "スペルチェック"
 
 msgid "iespell_download"
-msgstr "ieSpellが見つかりません。今インストールしますか？"
+msgstr "ieSpellが見つかりません。今すぐインストールしますか？"
 
 msgid "advhr_advhr_desc"
 msgstr "水平線"
@@ -544,7 +544,7 @@ msgid "advhr_dlg_noshade"
 msgstr "影なし"
 
 msgid "emotions_emotions_desc"
-msgstr "スマイリー"
+msgstr "表情アイコン"
 
 msgid "emotions_delta_width"
 msgstr ""
@@ -553,10 +553,10 @@ msgid "emotions_delta_height"
 msgstr ""
 
 msgid "emotions_dlg_title"
-msgstr "スマイリーの挿入"
+msgstr "表情アイコンの挿入"
 
 msgid "emotions_dlg_desc"
-msgstr "スマイリー"
+msgstr "表情アイコン"
 
 msgid "emotions_dlg_cool"
 msgstr "Cool"
@@ -676,7 +676,7 @@ msgid "ploneimage_dlg_tab_appearance"
 msgstr "表示"
 
 msgid "ploneimage_dlg_tab_advanced"
-msgstr "高度な設定"
+msgstr "上級者向け"
 
 msgid "ploneimage_dlg_general"
 msgstr "一般"
@@ -736,7 +736,7 @@ msgid "ploneimage_dlg_example_img"
 msgstr "Appearance preview image"
 
 msgid "ploneimage_dlg_missing_alt"
-msgstr "画像の説明文が入力されていません。テキストブラウザを利用されている方へ配慮し、説明文の入力をお薦めします。"
+msgstr "画像の説明文が入力されていません。目の不自由な方やテキストブラウザを利用されている方へ配慮し、画像説明を入力することをお薦めします。"
 
 msgid "ploneimage_dlg_dialog_title"
 msgstr "画像の挿入/編集"
@@ -766,28 +766,28 @@ msgid "ploneimage_dlg_align"
 msgstr "配置"
 
 msgid "ploneimage_dlg_align_baseline"
-msgstr "ベースライン"
+msgstr "Baseline"
 
 msgid "ploneimage_dlg_align_top"
-msgstr "上端揃え"
+msgstr "Top"
 
 msgid "ploneimage_dlg_align_middle"
-msgstr "中央揃え"
+msgstr "Middle"
 
 msgid "ploneimage_dlg_align_bottom"
-msgstr "下端揃え"
+msgstr "Bottom"
 
 msgid "ploneimage_dlg_align_texttop"
-msgstr "テキストの上端"
+msgstr "Text top"
 
 msgid "ploneimage_dlg_align_textbottom"
-msgstr "テキストの下端"
+msgstr "Text bottom"
 
 msgid "ploneimage_dlg_align_left"
-msgstr "左寄せ"
+msgstr "Left"
 
 msgid "ploneimage_dlg_align_right"
-msgstr "右寄せ"
+msgstr "Right"
 
 msgid "ploneimage_dlg_image_list"
 msgstr "一覧から選ぶ"
@@ -832,7 +832,7 @@ msgid "plonelink_dlg_events_tab"
 msgstr "イベント"
 
 msgid "plonelink_dlg_advanced_tab"
-msgstr "高度な設定"
+msgstr "上級者向け"
 
 msgid "plonelink_dlg_general_props"
 msgstr "一般"
@@ -844,7 +844,7 @@ msgid "plonelink_dlg_event_props"
 msgstr "イベント"
 
 msgid "plonelink_dlg_advanced_props"
-msgstr "高度な設定"
+msgstr "上級者向け"
 
 msgid "plonelink_dlg_popup_opts"
 msgstr "オプション"
@@ -865,7 +865,7 @@ msgid "plonelink_dlg_target_blank"
 msgstr "新しいウインドウで開く"
 
 msgid "plonelink_dlg_popup"
-msgstr "JavaScriptポップアップ"
+msgstr "Javascriptポップアップ"
 
 msgid "plonelink_dlg_popup_url"
 msgstr "ポップアップURL"
@@ -1195,7 +1195,7 @@ msgid "style_dlg_background_vpos"
 msgstr "垂直位置"
 
 msgid "style_dlg_block_wordspacing"
-msgstr "単語間隔"
+msgstr "単語感覚"
 
 msgid "style_dlg_block_letterspacing"
 msgstr "文字間隔"
@@ -1296,6 +1296,12 @@ msgstr "Wordから貼り付け"
 msgid "paste_selectall_desc"
 msgstr "全て選択"
 
+msgid "paste_plaintext_mode_sticky"
+msgstr "Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode."
+
+msgid "paste_plaintext_mode"
+msgstr "プレーンテキストモードに変更しました。貼り付け後は書式付きモードに戻ります。"
+
 msgid "paste_dlg_text_title"
 msgstr "キーボードでCTRL+Vを押してテキストを貼り付けてください。"
 
@@ -1303,7 +1309,7 @@ msgid "paste_dlg_text_linebreaks"
 msgstr "改行を保持する"
 
 msgid "paste_dlg_word_title"
-msgstr "CTRL+Vで貼り付け(※基本的な書式と表組のみ)"
+msgstr "キーボードでCTRL+Vを押してテキストを貼り付けてください。"
 
 msgid "table_desc"
 msgstr "表を挿入"
@@ -1393,13 +1399,13 @@ msgid "table_dlg_general_tab"
 msgstr "一般"
 
 msgid "table_dlg_advanced_tab"
-msgstr "高度な設定"
+msgstr "上級者向け"
 
 msgid "table_dlg_general_props"
 msgstr "一般"
 
 msgid "table_dlg_advanced_props"
-msgstr "高度な設定"
+msgstr "上級者向け"
 
 msgid "table_dlg_rowtype"
 msgstr "行"
@@ -1456,10 +1462,10 @@ msgid "table_dlg_valign"
 msgstr "垂直方向の配置"
 
 msgid "table_dlg_align_top"
-msgstr "上端揃え"
+msgstr "上揃え"
 
 msgid "table_dlg_align_bottom"
-msgstr "下端揃え"
+msgstr "下揃え"
 
 msgid "table_dlg_bordercolor"
 msgstr "枠線の色"
@@ -1498,7 +1504,7 @@ msgid "table_dlg_summary"
 msgstr "サマリー"
 
 msgid "table_dlg_td"
-msgstr "標準"
+msgstr "データ"
 
 msgid "table_dlg_th"
 msgstr "ヘッダ"
@@ -1564,7 +1570,7 @@ msgid "table_dlg_frame_none"
 msgstr "なし"
 
 msgid "table_dlg_frame_groups"
-msgstr "グループごと"
+msgstr "グループ毎"
 
 msgid "table_dlg_frame_rows"
 msgstr "行"
@@ -1606,7 +1612,13 @@ msgid "table_dlg_rules_border"
 msgstr "上下左右(border)"
 
 msgid "autosave_unload_msg"
-msgstr "他のページへ移動すると編集内容はすべて破棄されます。"
+msgstr "他のページへ移動すると編集データはすべて破棄されます。"
+
+msgid "autosave_restore_content"
+msgstr "Restore auto-saved content."
+
+msgid "autosave_warning_message"
+msgstr "If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?."
 
 msgid "fullscreen_desc"
 msgstr "フルスクリーン"
@@ -1630,7 +1642,7 @@ msgid "media_dlg_general"
 msgstr "一般"
 
 msgid "media_dlg_advanced"
-msgstr "高度な設定"
+msgstr "上級者向け"
 
 msgid "media_dlg_file"
 msgstr "ファイル/URL"
@@ -1861,7 +1873,7 @@ msgid "media_dlg_qtsrc"
 msgstr "QT Src"
 
 msgid "media_dlg_qt_stream_warn"
-msgstr "rtspストリーミングリソースを「高度な設定」タブの「QT Src」欄に入力してください。\nまた、「Src」欄にはストリーミングではないバージョーンを入力してください。"
+msgstr "rtspストリーミングリソースを「上級者向け」タブの「QT Src」欄に入力してください。\nまた、「Src」欄にはストリーミングではないバージョーンを入力してください。"
 
 msgid "media_dlg_align_top"
 msgstr "上"
@@ -1945,7 +1957,7 @@ msgid "fullpage_dlg_appearance_tab"
 msgstr "表示"
 
 msgid "fullpage_dlg_advanced_tab"
-msgstr "高度な設定"
+msgstr "上級者向け"
 
 msgid "fullpage_dlg_meta_props"
 msgstr "メタ情報"
@@ -2050,10 +2062,10 @@ msgid "fullpage_dlg_meta_index_follow"
 msgstr "このページとリンク先の巡回を許可"
 
 msgid "fullpage_dlg_meta_index_nofollow"
-msgstr "このページの巡回を許可・リンク先の巡回を禁止"
+msgstr "このページの巡回を許可、リンク先の巡回を禁止"
 
 msgid "fullpage_dlg_meta_noindex_follow"
-msgstr "このページの巡回を禁止・リンク先の巡回を許可"
+msgstr "このページの巡回を禁止、リンク先の巡回を許可"
 
 msgid "fullpage_dlg_meta_noindex_nofollow"
 msgstr "このページとリンク先の巡回を禁止"
@@ -2182,7 +2194,7 @@ msgid "fullpage_dlg_general_props"
 msgstr "一般"
 
 msgid "fullpage_dlg_advanced_props"
-msgstr "高度な設定"
+msgstr "上級者向け"
 
 msgid "template_desc"
 msgstr "テンプレートの挿入"
@@ -2209,16 +2221,16 @@ msgid "template_dlg_warning"
 msgstr "警告：テンプレートを上書きすると以前のデータは失われます。"
 
 msgid "template_dlg_mdate_format"
-msgstr "%Y/%m/%d %H:%M:%S"
+msgstr "%Y-%m-%d %H:%M:%S"
 
 msgid "template_dlg_cdate_format"
-msgstr "%Y/%m/%d %H:%M:%S"
+msgstr "%Y-%m-%d %H:%M:%S"
 
 msgid "template_dlg_months_long"
-msgstr "1月,2月,3月,4月,5月,6月,7月,8月,9月,10月,11月,12月"
+msgstr "January,February,March,April,May,June,July,August,September,October,November,December"
 
 msgid "template_dlg_months_short"
-msgstr "1,2,3,4,5,6,7,8,9,10,11,12"
+msgstr "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec"
 
 msgid "template_dlg_day_long"
 msgstr "日曜日,月曜日,火曜日,水曜日,木曜日,金曜日,土曜日,日曜日"
@@ -2251,11 +2263,41 @@ msgid "spellchecker_sug"
 msgstr "候補"
 
 msgid "spellchecker_no_sug"
-msgstr "候補がありません"
+msgstr "候補は有りません。"
 
 msgid "spellchecker_no_mpell"
-msgstr "スペルミスはありません"
+msgstr "スペルミスは見つかりませんでした。"
 
 msgid "pagebreak_desc"
 msgstr "改ページ挿入"
+
+msgid "advlist_types"
+msgstr "Types"
+
+msgid "advlist_def"
+msgstr "Default"
+
+msgid "advlist_lower_alpha"
+msgstr "Lower alpha"
+
+msgid "advlist_lower_greek"
+msgstr "Lower greek"
+
+msgid "advlist_lower_roman"
+msgstr "Lower roman"
+
+msgid "advlist_upper_alpha"
+msgstr "Upper alpha"
+
+msgid "advlist_upper_roman"
+msgstr "Upper roman"
+
+msgid "advlist_circle"
+msgstr "Circle"
+
+msgid "advlist_disc"
+msgstr "Disc"
+
+msgid "advlist_square"
+msgstr "Square"
 

@@ -90,7 +90,9 @@ desc:"CSS Stilini D\u00FCzenle"
 paste:{
 paste_text_desc:"D\u00FCz metin olarak yap\u0131\u015Ft\u0131r",
 paste_word_desc:"Word'den yap\u0131\u015Ft\u0131r",
-selectall_desc:"T\u00FCm\u00FCn\u00FC se\u00E7"
+selectall_desc:"T\u00FCm\u00FCn\u00FC se\u00E7",
+plaintext_mode_sticky:"Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode.",
+plaintext_mode:"Paste is now in plain text mode. Click again to toggle back to regular paste mode."
 },
 paste_dlg:{
 text_title:"Pencereye metin yap\u0131\u015Ft\u0131rmak i\u00E7in klavyeden CTRL+V i kullan\u0131n.",
@@ -120,7 +122,9 @@ col:"S\u00FCtun",
 cell:"H\u00FCcre"
 },
 autosave:{
-unload_msg:"Bu sayfadan \u00E7\u0131karsan\u0131z yapt\u0131\u011F\u0131n\u0131z de\u011Fi\u015Fiklikler kaybolabilir."
+unload_msg:"Bu sayfadan \u00E7\u0131karsan\u0131z yapt\u0131\u011F\u0131n\u0131z de\u011Fi\u015Fiklikler kaybolabilir.",
+restore_content:"Restore auto-saved content.",
+warning_message:"If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?."
 },
 fullscreen:{
 desc:"Tam ekran modunu a\u00E7/kapat"
@@ -151,4 +155,16 @@ no_mpell:"\u0130mla hatas\u0131 bulunamad\u0131."
 },
 pagebreak:{
 desc:"Sayfa sonu ekle."
+},
+advlist:{
+types:"Types",
+def:"Default",
+lower_alpha:"Lower alpha",
+lower_greek:"Lower greek",
+lower_roman:"Lower roman",
+upper_alpha:"Upper alpha",
+upper_roman:"Upper roman",
+circle:"Circle",
+disc:"Disc",
+square:"Square"
 }}});

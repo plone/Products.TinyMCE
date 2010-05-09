@@ -90,7 +90,9 @@ desc:"Aldatu CSS estiloa"
 paste:{
 paste_text_desc:"Testu gisa itsatsi",
 paste_word_desc:"Word-etik itsatsi",
-selectall_desc:"Aukeratu guztia"
+selectall_desc:"Aukeratu guztia",
+plaintext_mode_sticky:"Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode.",
+plaintext_mode:"Paste is now in plain text mode. Click again to toggle back to regular paste mode."
 },
 paste_dlg:{
 text_title:"Erabili CTRL+V testua lehioan itsasteko.",
@@ -120,7 +122,9 @@ col:"Zutabea",
 cell:"Gelaxka"
 },
 autosave:{
-unload_msg:"Egindako aldaketak galdu egingo dira orri honetatik kanpona nabigatzen baldin baduzu."
+unload_msg:"Egindako aldaketak galdu egingo dira orri honetatik kanpona nabigatzen baldin baduzu.",
+restore_content:"Restore auto-saved content.",
+warning_message:"If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?."
 },
 fullscreen:{
 desc:"Aldatu pantaila osoko modura"
@@ -151,4 +155,16 @@ no_mpell:"Ez da akatsik aurkitu."
 },
 pagebreak:{
 desc:"Txertatu orri jauzia."
+},
+advlist:{
+types:"Types",
+def:"Default",
+lower_alpha:"Lower alpha",
+lower_greek:"Lower greek",
+lower_roman:"Lower roman",
+upper_alpha:"Upper alpha",
+upper_roman:"Upper roman",
+circle:"Circle",
+disc:"Disc",
+square:"Square"
 }}});

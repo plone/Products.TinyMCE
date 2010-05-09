@@ -90,7 +90,9 @@ desc:"\u00C9diter la feuille de style (CSS)"
 paste:{
 paste_text_desc:"Coller comme texte brut",
 paste_word_desc:"Coller un texte cr\u00E9\u00E9 sous Word",
-selectall_desc:"Tout s\u00E9lectionner"
+selectall_desc:"Tout s\u00E9lectionner",
+plaintext_mode_sticky:"Le collage est actuellement en mode texte non format\u00E9. Cliquez \u00E0 nouveau pour revenir en mode de collage ordinaire. Apr\u00E8s avoir coll\u00E9 quelque chose, vous retournerez en mode de collage ordinaire.",
+plaintext_mode:"Le collage est actuellement en mode texte non format\u00E9. Cliquez \u00E0 nouveau pour revenir en mode de collage ordinaire."
 },
 paste_dlg:{
 text_title:"Utilisez CTRL+V sur votre clavier pour coller le texte dans la fen\u00EAtre.",

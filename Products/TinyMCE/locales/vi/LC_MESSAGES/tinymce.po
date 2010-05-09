@@ -1,88 +1,88 @@
-# Đây là bản dịch tiếng Việt cho TinyMCE.
-# Version 4.3
+# Đây là gói ngôn ngữ Tiếng Việt cho TinyMCE.
+# Version 6.8
 #
-# Vũ Mạnh Hoàng Hải - Cyvee.com
+# Dark Templar
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2009-08-03 00:00+0000\n"
-"Last-Translator: Vũ Mạnh Hoàng Hải - Cyvee.com\n"
-"Language-Team: Vũ Mạnh Hoàng Hải - Cyvee.com\n"
+"PO-Revision-Date: 2010-05-06 00:00+0000\n"
+"Last-Translator: Dark Templar\n"
+"Language-Team: Dark Templar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Language-Code: vi\n"
-"Language-Name: Tiếng Việt\n"
+"Language-Name: Vietnamese\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: tinymce\n"
 
 msgid "common_edit_confirm"
-msgstr "Bạn có muốn sử dụng chế độ nhập liệu WYSIWYG cho ô dữ liệu này không?"
+msgstr "Bạn có muốn sử dụng chế độ WYSIWYG cho textarea này?"
 
 msgid "common_apply"
-msgstr "Áp dụng"
+msgstr "Thay đổi"
 
 msgid "common_insert"
-msgstr "Chèn"
+msgstr "Thêm"
 
 msgid "common_update"
 msgstr "Cập nhật"
 
 msgid "common_cancel"
-msgstr "Hủy"
+msgstr "Hủy bỏ"
 
 msgid "common_close"
-msgstr "Đóng"
+msgstr "Thoát"
 
 msgid "common_browse"
-msgstr "Mở"
+msgstr "Tìm"
 
 msgid "common_class_name"
 msgstr "Lớp"
 
 msgid "common_not_set"
-msgstr "-- mac dinh chọn --"
+msgstr "-- Chưa đặt --"
 
 msgid "common_clipboard_msg"
-msgstr "Sao chép/Cắt/Dán không hoạt động trên Mozilla và Firefox.\nBạn muốn xem thêm thông tin về vấn đề này?"
+msgstr "Copy/Cut/Paste không được hỗ trợ trong trình duyệt web này.\nBạn có muốn biết thêm thông tin về vấn đề này không??"
 
 msgid "common_clipboard_no_support"
-msgstr "Hiện không hổ trợ cho trình duyệt của bạn, vui lòng sử dụng bàn phím."
+msgstr "Sử dụng phím tắt không được sử dụng trong trình duyệt hiện tại."
 
 msgid "common_popup_blocked"
-msgstr "Xin lỗi, nhưng trình duyệt của bạn không cho phép mở cửa sổ mới (popup). Bạn cần phải điều chỉnh trình duyệt cho phép mở cửa sổ mới để tận hưởng đầy đủ chức năng của công cụ này."
+msgstr "Xin lỗi, Nhưng chế độ cửa sổ popup đã bị vô hiệu hoá. Bạn sẽ cần phải tắt chức năng chặn popup trên trang web này để sử dụng công cụ này hoàn toàn."
 
 msgid "common_invalid_data"
-msgstr "Lỗi: Dữ liệu không hợp lệ, chúng đã được đánh dấu màu đỏ."
+msgstr "Lỗi: Giá trị nhập vào không hợp lệ. (Được đánh dấu đỏ)"
 
 msgid "common_more_colors"
-msgstr "Nhiều màu hơn"
+msgstr "Màu khác"
 
 msgid "simple_bold_desc"
-msgstr "Đậm (Ctrl+B)"
+msgstr "Chữ đậm (Ctrl+B)"
 
 msgid "simple_italic_desc"
-msgstr "Nghiêng (Ctrl+I)"
+msgstr "Chữ nghiêng (Ctrl+I)"
 
 msgid "simple_underline_desc"
 msgstr "Gạch chân (Ctrl+U)"
 
 msgid "simple_striketrough_desc"
-msgstr "Gạch xóa"
+msgstr "Gạch ngang"
 
 msgid "simple_bullist_desc"
-msgstr "Danh sách"
+msgstr "Danh sách không theo thứ tự"
 
 msgid "simple_numlist_desc"
-msgstr "Danh sách thứ tự"
+msgstr "Danh sách theo thứ tự"
 
 msgid "simple_undo_desc"
-msgstr "Khôi phục (Ctrl+Z)"
+msgstr "Trở về (Ctrl+Z)"
 
 msgid "simple_redo_desc"
-msgstr "Lặp lại (Ctrl+Y)"
+msgstr "Tiến tới (Ctrl+Y)"
 
 msgid "simple_cleanup_desc"
 msgstr "Dọn dẹp mã lộn xộn"
@@ -91,130 +91,130 @@ msgid "advanced_style_select"
 msgstr "Kiểu"
 
 msgid "advanced_font_size"
-msgstr "Cỡ chữ"
+msgstr "Kích thước font"
 
 msgid "advanced_fontdefault"
-msgstr "Phông chữ"
+msgstr "Tên font chữ"
 
 msgid "advanced_block"
 msgstr "Định dạng"
 
 msgid "advanced_paragraph"
-msgstr "Đoạn văn bản"
+msgstr "Đoạn"
 
 msgid "advanced_div"
-msgstr "Div"
+msgstr "Thẻ"
 
 msgid "advanced_address"
-msgstr "Địa chỉ"
+msgstr "Thẻ Địa chỉ"
 
 msgid "advanced_pre"
-msgstr "Không định dạng"
+msgstr "Thẻ Tiền định dạng"
 
 msgid "advanced_h1"
-msgstr "Tiêu đề 1"
+msgstr "Thẻ Heading 1"
 
 msgid "advanced_h2"
-msgstr "Tiêu đề 2"
+msgstr "Thẻ Heading 2"
 
 msgid "advanced_h3"
-msgstr "Tiêu đề 3"
+msgstr "Thẻ Heading 3"
 
 msgid "advanced_h4"
-msgstr "Tiêu đề 4"
+msgstr "Thẻ Heading 4"
 
 msgid "advanced_h5"
-msgstr "Tiêu đề 5"
+msgstr "Thẻ Heading 5"
 
 msgid "advanced_h6"
-msgstr "Tiêu đề 6"
+msgstr "Thẻ Heading 6"
 
 msgid "advanced_blockquote"
-msgstr "Định dạng khối"
+msgstr "Thẻ Trích dẫn"
 
 msgid "advanced_code"
-msgstr "Mã"
+msgstr "Thẻ Mã"
 
 msgid "advanced_samp"
-msgstr "Mã ví dụ"
+msgstr "Thẻ Mã ví dụ"
 
 msgid "advanced_dt"
-msgstr "Tên định nghĩa "
+msgstr "Thẻ Điều khoản định nghĩa "
 
 msgid "advanced_dd"
-msgstr "Mô tả định nghĩa"
+msgstr "Thẻ Mô tả định nghĩa"
 
 msgid "advanced_bold_desc"
-msgstr "Đậm (Ctrl+B)"
+msgstr "Chữ đậm (Ctrl+B)"
 
 msgid "advanced_italic_desc"
-msgstr "Nghiêng (Ctrl+I)"
+msgstr "Chữ nghiêng (Ctrl+I)"
 
 msgid "advanced_underline_desc"
 msgstr "Gạch chân (Ctrl+U)"
 
 msgid "advanced_striketrough_desc"
-msgstr "Gạch xóa"
+msgstr "Gạch ngang"
 
 msgid "advanced_justifyleft_desc"
-msgstr "Căn trái"
+msgstr "Canh lề trái"
 
 msgid "advanced_justifycenter_desc"
-msgstr "Căn giữa"
+msgstr "Canh giữa"
 
 msgid "advanced_justifyright_desc"
-msgstr "Căn phải"
+msgstr "Canh lề phải"
 
 msgid "advanced_justifyfull_desc"
-msgstr "Căn đều"
+msgstr "Canh lề đều"
 
 msgid "advanced_bullist_desc"
 msgstr "Danh sách"
 
 msgid "advanced_numlist_desc"
-msgstr "Danh sách thứ tự"
+msgstr "Danh sách có chỉ số"
 
 msgid "advanced_outdent_desc"
-msgstr "Giảm lề trái"
+msgstr "Về đầu dòng"
 
 msgid "advanced_indent_desc"
-msgstr "Tăng lề trái"
+msgstr "Thụt đầu dòng"
 
 msgid "advanced_undo_desc"
-msgstr "Khôi phục (Ctrl+Z)"
+msgstr "Trở về (Ctrl+Z)"
 
 msgid "advanced_redo_desc"
-msgstr "Lặp lại (Ctrl+Y)"
+msgstr "Tiến tới (Ctrl+Y)"
 
 msgid "advanced_link_desc"
-msgstr "Chèn/thay đổi liên kết"
+msgstr "Thêm/Sửa Liên kết"
 
 msgid "advanced_unlink_desc"
-msgstr "Xóa liên kết"
+msgstr "Xóa Liên kết"
 
 msgid "advanced_image_desc"
-msgstr "Chèn/sửa hình ảnh"
+msgstr "Chèn/sửa ảnh"
 
 msgid "advanced_cleanup_desc"
 msgstr "Dọn dẹp mã lộn xộn"
 
 msgid "advanced_code_desc"
-msgstr "Sửa mã nguồn HTML"
+msgstr "Sửa mã HTML"
 
 msgid "advanced_sub_desc"
-msgstr "Subscript"
+msgstr "Chỉ số dưới dòng"
 
 msgid "advanced_sup_desc"
-msgstr "Superscript"
+msgstr "Chỉ số bên trên"
 
 msgid "advanced_hr_desc"
-msgstr "Chèn thanh ngang"
+msgstr "Chèn thước ngang"
 
 msgid "advanced_removeformat_desc"
-msgstr "Xóa định dạng"
+msgstr "Loại bỏ định dạng"
 
 msgid "advanced_custom1_desc"
-msgstr "Mô tả của bạn ở đây"
+msgstr "Mô tả tùy biến của bạn ở đây"
 
 msgid "advanced_forecolor_desc"
 msgstr "Chọn màu chữ"
@@ -223,13 +223,13 @@ msgid "advanced_backcolor_desc"
 msgstr "Chọn màu nền"
 
 msgid "advanced_charmap_desc"
-msgstr "Chèn ký tự đặc biệt"
+msgstr "Chèn ký tự tùy biến"
 
 msgid "advanced_visualaid_desc"
-msgstr "Bật/tắt các phần tử ẩn"
+msgstr "Đảo các thành phần hướng dẫn hoặc ẩn"
 
 msgid "advanced_anchor_desc"
-msgstr "Chèn/sửa mốc (anchor)"
+msgstr "Chèn/sửa mỏ neo"
 
 msgid "advanced_cut_desc"
 msgstr "Cắt"
@@ -241,31 +241,31 @@ msgid "advanced_paste_desc"
 msgstr "Dán"
 
 msgid "advanced_image_props_desc"
-msgstr "Thuộc tính hình ảnh"
+msgstr "Thuộc tính ảnh"
 
 msgid "advanced_newdocument_desc"
 msgstr "Văn bản mới"
 
 msgid "advanced_help_desc"
-msgstr "Giúp đỡ"
+msgstr "Trợ giúp"
 
 msgid "advanced_blockquote_desc"
-msgstr "Định dạng khối"
+msgstr "Blockquote"
 
 msgid "advanced_clipboard_msg"
-msgstr "Sao chép/Cắt/Dán không hoạt động trên Mozilla và Firefox.\nBạn muốn xem thêm thông tin về vấn đề này?"
+msgstr "Sao chép/Cắt/Dán không có sẵn trong Mozilla và Firefox.\n			Bạn có muốn biết thêm thông tin về vấn đề này?"
 
 msgid "advanced_path"
 msgstr "Đường dẫn"
 
 msgid "advanced_newdocument"
-msgstr "Bạn có chắc chắn muốn xóa tất cả nội dung đã soạn?"
+msgstr "Bạn có chắc chắn muốn xóa tất cả nội dung?"
 
 msgid "advanced_toolbar_focus"
-msgstr "Nhảy đến thanh công cụ - Alt+Q, Nhảy đến ô soạn thảo - Alt-Z, Nhảy đến đường dẫn - Alt-X"
+msgstr "Nhảy tới các nút công cụ - Alt+Q, Tới trình soạn thảo - Alt-Z, Tới đường dẫn các phần tử - Alt-X"
 
 msgid "advanced_more_colors"
-msgstr "Nhiều màu hơn"
+msgstr "Thêm màu"
 
 msgid "advanced_image_delta_width"
 msgstr ""
@@ -298,22 +298,22 @@ msgid "advanced_anchor_delta_height"
 msgstr ""
 
 msgid "advanced_dlg_about_title"
-msgstr "Giới thiệu TinyMCE"
+msgstr "Thông tin về TinyMCE"
 
 msgid "advanced_dlg_about_general"
-msgstr "Giới thiệu"
+msgstr "Thông tin"
 
 msgid "advanced_dlg_about_help"
-msgstr "Giúp đỡ"
+msgstr "Trợ giúp"
 
 msgid "advanced_dlg_about_license"
 msgstr "Giấy phép"
 
 msgid "advanced_dlg_about_plugins"
-msgstr "Các phần mở rộng"
+msgstr "Trình gắn kèm"
 
 msgid "advanced_dlg_about_plugin"
-msgstr "Phần mở rộng"
+msgstr "Trình gắn kèm"
 
 msgid "advanced_dlg_about_author"
 msgstr "Tác giả"
@@ -322,19 +322,19 @@ msgid "advanced_dlg_about_version"
 msgstr "Phiên bản"
 
 msgid "advanced_dlg_about_loaded"
-msgstr "Các phần mở rộng đã nạp"
+msgstr "Trình gắn kèm đã nạp"
 
 msgid "advanced_dlg_anchor_title"
-msgstr "Chèn/sửa mốc (anchor)"
+msgstr "Chèn/sửa mỏ neo"
 
 msgid "advanced_dlg_anchor_name"
-msgstr "Tên mốc (anchor)"
+msgstr "Tên mỏ neo"
 
 msgid "advanced_dlg_code_title"
-msgstr "Soạn Mã HTML"
+msgstr "Trình soạn thảo mã nguồn HTML"
 
 msgid "advanced_dlg_code_wordwrap"
-msgstr "Xuống dòng"
+msgstr "Xuống dòng tự động"
 
 msgid "advanced_dlg_colorpicker_title"
 msgstr "Chọn một màu"
@@ -346,16 +346,16 @@ msgid "advanced_dlg_colorpicker_picker_title"
 msgstr "Bộ chọn màu"
 
 msgid "advanced_dlg_colorpicker_palette_tab"
-msgstr "Bảng"
+msgstr "Bảng màu"
 
 msgid "advanced_dlg_colorpicker_palette_title"
 msgstr "Bảng màu"
 
 msgid "advanced_dlg_colorpicker_named_tab"
-msgstr "Đã có tên"
+msgstr "Tên"
 
 msgid "advanced_dlg_colorpicker_named_title"
-msgstr "Màu đã có tên"
+msgstr "Màu đã đặt tên"
 
 msgid "advanced_dlg_colorpicker_color"
 msgstr "Màu:"
@@ -364,25 +364,25 @@ msgid "advanced_dlg_colorpicker_name"
 msgstr "Tên:"
 
 msgid "advanced_dlg_charmap_title"
-msgstr "Chọn ký tự đặc biệt"
+msgstr "Chọn ký tự tùy biến"
 
 msgid "advanced_dlg_image_title"
-msgstr "Chèn/sửa hình ảnh"
+msgstr "Chèn/sửa ảnh"
 
 msgid "advanced_dlg_image_src"
-msgstr "Dường dẫn đến hình ảnh"
+msgstr "URL ảnh"
 
 msgid "advanced_dlg_image_alt"
-msgstr "Mô tả hình ảnh"
+msgstr "Mô tả ảnh"
 
 msgid "advanced_dlg_image_list"
-msgstr "Danh sách hình ảnh"
+msgstr "Danh sách ảnh"
 
 msgid "advanced_dlg_image_border"
 msgstr "Viền"
 
 msgid "advanced_dlg_image_dimensions"
-msgstr "Kích thước"
+msgstr "Kích thướng"
 
 msgid "advanced_dlg_image_vspace"
 msgstr "Khoảng cách dọc"
@@ -391,25 +391,25 @@ msgid "advanced_dlg_image_hspace"
 msgstr "Khoảng cách ngang"
 
 msgid "advanced_dlg_image_align"
-msgstr "Căn lề"
+msgstr "Canh lền"
 
 msgid "advanced_dlg_image_align_baseline"
-msgstr "Đường cơ bản"
+msgstr "Đường cơ sở"
 
 msgid "advanced_dlg_image_align_top"
-msgstr "Trên"
+msgstr "Trên cùng"
 
 msgid "advanced_dlg_image_align_middle"
 msgstr "Giữa"
 
 msgid "advanced_dlg_image_align_bottom"
-msgstr "Đáy"
+msgstr "Dưới cùng"
 
 msgid "advanced_dlg_image_align_texttop"
-msgstr "Trên của chữ"
+msgstr "Văn bản trê"
 
 msgid "advanced_dlg_image_align_textbottom"
-msgstr "Đáy của chữ"
+msgstr "Văn bản dưới"
 
 msgid "advanced_dlg_image_align_left"
 msgstr "Trái"
@@ -418,10 +418,10 @@ msgid "advanced_dlg_image_align_right"
 msgstr "Phải"
 
 msgid "advanced_dlg_link_title"
-msgstr "Chèn/sửa liên kết"
+msgstr "Thêm/Sửa Liên kết"
 
 msgid "advanced_dlg_link_url"
-msgstr "Liên kết"
+msgstr "URL Liên kết"
 
 msgid "advanced_dlg_link_target"
 msgstr "Đích"
@@ -436,16 +436,16 @@ msgid "advanced_dlg_link_titlefield"
 msgstr "Tiêu đề"
 
 msgid "advanced_dlg_link_is_email"
-msgstr "Liên kết bạn nhập có vẻ như là một địa chỉ email, bạn có muốn thêm phần mailto: vào trước liên kết?"
+msgstr "URL bạn đã nhập có vẻ là một địa chỉ điện thư, Bạn có muốn thêm tiền tố mailto?"
 
 msgid "advanced_dlg_link_is_external"
-msgstr "Liên kết bạn nhập có vẻ như là một trang web ngoài, bạn có muốn thêm phần http:// vào trước liên kết?"
+msgstr "URL bạn đã nhập có vẻ là một liên kết ngoài, bạn có muốn thêm tiền tố http://?"
 
 msgid "advanced_dlg_link_list"
 msgstr "Danh sách liên kết"
 
 msgid "contextmenu_align"
-msgstr "Căn lề"
+msgstr "Canh lề"
 
 msgid "contextmenu_left"
 msgstr "Trái"
@@ -457,10 +457,10 @@ msgid "contextmenu_right"
 msgstr "Phải"
 
 msgid "contextmenu_full"
-msgstr "Đều"
+msgstr "Đầy"
 
 msgid "insertdatetime_date_fmt"
-msgstr "%d/%m/%Y"
+msgstr "%Y-%m-%d"
 
 msgid "insertdatetime_time_fmt"
 msgstr "%H:%M:%S"
@@ -475,13 +475,13 @@ msgid "insertdatetime_months_long"
 msgstr "Tháng Một,Tháng Hai,Tháng Ba,Tháng Tư,Tháng Năm,Tháng Sáu,Tháng Bảy,Tháng Tám,Tháng Chín,Tháng Mười,Tháng Mười Một,Tháng Mười Hai"
 
 msgid "insertdatetime_months_short"
-msgstr "Một,Hai,Ba,Tư,Năm,Sáu,Bảy,Tám,Chín,Mười,M.Một,M.Hai"
+msgstr "Thg1,Thg2,Thg3,Thg4,Thg5,Thg6,Thg7,Thg8,Thg9,Th10,Th11,Th12"
 
 msgid "insertdatetime_day_long"
 msgstr "Chủ Nhật,Thứ Hai,Thứ Ba,Thứ Tư,Thứ Năm,Thứ Sáu,Thứ Bảy,Chủ Nhật"
 
 msgid "insertdatetime_day_short"
-msgstr "CN,Hai,Ba,Tư,Năm,Sáu,Bảy,CN"
+msgstr "CN,T2,T3,T4,T5,T6,T7,CN"
 
 msgid "print_print_desc"
 msgstr "In"
@@ -490,43 +490,43 @@ msgid "preview_preview_desc"
 msgstr "Xem trước"
 
 msgid "directionality_ltr_desc"
-msgstr "Direction left to right"
+msgstr "Hướng trái qua phải"
 
 msgid "directionality_rtl_desc"
-msgstr "Direction right to left"
+msgstr "Hướng phải qua trái"
 
 msgid "layer_insertlayer_desc"
 msgstr "Chèn lớp mới"
 
 msgid "layer_forward_desc"
-msgstr "Chuyển đến trước"
+msgstr "Di chuyển về trước"
 
 msgid "layer_backward_desc"
-msgstr "Chuyển ra sau"
+msgstr "Di chuyển về sau"
 
 msgid "layer_absolute_desc"
-msgstr "Toggle absolute positioning"
+msgstr "Đảo vị trí cố định"
 
 msgid "layer_content"
 msgstr "Lớp mới..."
 
 msgid "save_save_desc"
-msgstr "Save"
+msgstr "Lưu"
 
 msgid "save_cancel_desc"
-msgstr "Huỷ tất cả thay đổi"
+msgstr "Hủy bỏ tất cả thay đổi"
 
 msgid "nonbreaking_nonbreaking_desc"
-msgstr "Insert non-breaking space character"
+msgstr "Chèn ký tự khoảng cách không bị ngắt"
 
 msgid "iespell_iespell_desc"
-msgstr "Kiểm tra chính tả"
+msgstr "Chạy trình kiểm tra chính tả"
 
 msgid "iespell_download"
-msgstr "ieSpell not detected. Do you want to install it now?"
+msgstr "ieSpell không được phát hiện. Bạn có muốn cài đặt nó bây giờ?"
 
 msgid "advhr_advhr_desc"
-msgstr "Horizontale rule"
+msgstr "Thước ngang"
 
 msgid "advhr_delta_width"
 msgstr ""
@@ -535,16 +535,16 @@ msgid "advhr_delta_height"
 msgstr ""
 
 msgid "advhr_dlg_width"
-msgstr "Chiều rộng"
+msgstr "Chiều dài"
 
 msgid "advhr_dlg_size"
-msgstr "Chiều cao"
+msgstr "Chiều rộng"
 
 msgid "advhr_dlg_noshade"
-msgstr "Không đổ bóng"
+msgstr "Không có bóng"
 
 msgid "emotions_emotions_desc"
-msgstr "Biểu tượng cảm xúc"
+msgstr "Biểu Tượng Cảm Xúc"
 
 msgid "emotions_delta_width"
 msgstr ""
@@ -553,61 +553,61 @@ msgid "emotions_delta_height"
 msgstr ""
 
 msgid "emotions_dlg_title"
-msgstr "Chèn biểu tượng cảm xúc"
+msgstr "Biểu Tượng Cảm Xúc"
 
 msgid "emotions_dlg_desc"
-msgstr "Biểu tượng cảm xúc"
+msgstr "Biểu Tượng Cảm Xúc"
 
 msgid "emotions_dlg_cool"
-msgstr "Cool"
+msgstr "Không biết ngượng"
 
 msgid "emotions_dlg_cry"
-msgstr "Cry"
+msgstr "Khóc"
 
 msgid "emotions_dlg_embarassed"
-msgstr "Embarassed"
+msgstr "Xấu hổ"
 
 msgid "emotions_dlg_foot_in_mouth"
-msgstr "Foot in mouth"
+msgstr "Lỡ lời"
 
 msgid "emotions_dlg_frown"
-msgstr "Frown"
+msgstr "Cau mày"
 
 msgid "emotions_dlg_innocent"
-msgstr "Innocent"
+msgstr "Ngây thơ"
 
 msgid "emotions_dlg_kiss"
-msgstr "Kiss"
+msgstr "Nụ hôn"
 
 msgid "emotions_dlg_laughing"
-msgstr "Laughing"
+msgstr "Cười nhăn răng"
 
 msgid "emotions_dlg_money_mouth"
-msgstr "Money mouth"
+msgstr "Sáng mắt vì $"
 
 msgid "emotions_dlg_sealed"
-msgstr "Sealed"
+msgstr "Kín miệng"
 
 msgid "emotions_dlg_smile"
-msgstr "Smile"
+msgstr "Mỉm cười"
 
 msgid "emotions_dlg_surprised"
-msgstr "Surprised"
+msgstr "Ngạc nhiên"
 
 msgid "emotions_dlg_tongue_out"
-msgstr "Tongue out"
+msgstr "Lè lưỡi"
 
 msgid "emotions_dlg_undecided"
-msgstr "Undecided"
+msgstr "Lưỡng lự"
 
 msgid "emotions_dlg_wink"
-msgstr "Wink"
+msgstr "Nháy mắt"
 
 msgid "emotions_dlg_yell"
-msgstr "Yell"
+msgstr "La hét"
 
 msgid "searchreplace_search_desc"
-msgstr "Tìm kiếm"
+msgstr "Tìm"
 
 msgid "searchreplace_replace_desc"
 msgstr "Tìm/Thay thế"
@@ -622,25 +622,25 @@ msgid "searchreplace_dlg_searchnext_desc"
 msgstr "Tìm lại"
 
 msgid "searchreplace_dlg_notfound"
-msgstr "Kết thúc tìm kiếm. Không thể tìm thấy chuỗi từ cần tìm."
+msgstr "Việc tìm kiếm đã hoàn thành. Chuỗi tìm kiếm không được tìm thấy."
 
 msgid "searchreplace_dlg_search_title"
 msgstr "Tìm kiếm"
 
 msgid "searchreplace_dlg_replace_title"
-msgstr "Tìm kiếm/Thay thế"
+msgstr "Tìm/Thay thế"
 
 msgid "searchreplace_dlg_allreplaced"
-msgstr "Đã thay thế tất cả chuỗi từ cần tìm."
+msgstr "Tất cả các lần xuất hiện của các chuỗi tìm kiếm được thay thế."
 
 msgid "searchreplace_dlg_findwhat"
-msgstr "Chuỗi từ cần tìm"
+msgstr "Tìm kiếm gì"
 
 msgid "searchreplace_dlg_replacewith"
-msgstr "Thay thế bằng chuỗi từ"
+msgstr "Thay thế với"
 
 msgid "searchreplace_dlg_direction"
-msgstr "Hướng tìm kiếm"
+msgstr "Hướng"
 
 msgid "searchreplace_dlg_up"
 msgstr "Lên"
@@ -649,19 +649,19 @@ msgid "searchreplace_dlg_down"
 msgstr "Xuống"
 
 msgid "searchreplace_dlg_mcase"
-msgstr "Phân biệt chữ hoa, chữ thường "
+msgstr "Theo cả chữ hoa"
 
 msgid "searchreplace_dlg_findnext"
-msgstr "Tiếp tục tìm"
+msgstr "Tìm kế tiếp"
 
 msgid "searchreplace_dlg_replace"
 msgstr "Thay thế"
 
 msgid "searchreplace_dlg_replaceall"
-msgstr "Thay thế tất cả"
+msgstr "Thay thế tất"
 
 msgid "ploneimage_image_desc"
-msgstr "Chèn/thay đổi hình ảnh"
+msgstr "Chèn/sửa ảnh"
 
 msgid "ploneimage_delta_width"
 msgstr ""
@@ -670,16 +670,16 @@ msgid "ploneimage_delta_height"
 msgstr ""
 
 msgid "ploneimage_dlg_tab_general"
-msgstr "Cơ bản"
+msgstr "Chung"
 
 msgid "ploneimage_dlg_tab_appearance"
-msgstr "Hiển thị"
+msgstr "Xuất hiện"
 
 msgid "ploneimage_dlg_tab_advanced"
 msgstr "Nâng cao"
 
 msgid "ploneimage_dlg_general"
-msgstr "Cơ bản"
+msgstr "Chung"
 
 msgid "ploneimage_dlg_title"
 msgstr "Tiêu đề"
@@ -688,112 +688,112 @@ msgid "ploneimage_dlg_preview"
 msgstr "Xem trước"
 
 msgid "ploneimage_dlg_constrain_proportions"
-msgstr "Giữ đúng tỉ lệ kích thước"
+msgstr "Ràng buộc tỉ lệ"
 
 msgid "ploneimage_dlg_langdir"
-msgstr "Language direction"
+msgstr "Hướng ngôn ngữ"
 
 msgid "ploneimage_dlg_langcode"
-msgstr "Language code"
+msgstr "Mã ngôn ngữ"
 
 msgid "ploneimage_dlg_long_desc"
-msgstr "Long description link"
+msgstr "Liên kết mô tả dài"
 
 msgid "ploneimage_dlg_style"
-msgstr "Định dạng kiểu"
+msgstr "Kiểu dáng"
 
 msgid "ploneimage_dlg_classes"
-msgstr "Classes"
+msgstr "Lớp"
 
 msgid "ploneimage_dlg_ltr"
-msgstr "Left to right"
+msgstr "Trái qua phải"
 
 msgid "ploneimage_dlg_rtl"
-msgstr "Right to left"
+msgstr "Phải qua trái"
 
 msgid "ploneimage_dlg_id"
 msgstr "Id"
 
 msgid "ploneimage_dlg_map"
-msgstr "Image map"
+msgstr "Sơ đồ ảnh"
 
 msgid "ploneimage_dlg_swap_image"
-msgstr "Swap image"
+msgstr "Trao đổi ảnh"
 
 msgid "ploneimage_dlg_alt_image"
-msgstr "Alternative image"
+msgstr "Ảnh thay thế"
 
 msgid "ploneimage_dlg_mouseover"
-msgstr "for mouse over"
+msgstr "cho chuột lên"
 
 msgid "ploneimage_dlg_mouseout"
-msgstr "for mouse out"
+msgstr "cho chuột ra"
 
 msgid "ploneimage_dlg_misc"
-msgstr "Miscellaneous"
+msgstr "Linh tinh"
 
 msgid "ploneimage_dlg_example_img"
-msgstr "Appearance preview image"
+msgstr "Hiển thị hình ảnh xem trước"
 
 msgid "ploneimage_dlg_missing_alt"
-msgstr "Hình ảnh chưa có mô tả. Mô tả cho hình ảnh được người sử dụng thấy khi trình duyệt của họ không hiển thị được hình ảnh. Bạn muốn tiếp tục chèn hình ảnh không có mô tả ?"
+msgstr "Bạn có chắc chắn muốn tiếp tục mà không bao gồm một mô tả hình ảnh? Không có nó hình ảnh không thể truy cập tới một số người dùng tàn tật, hoặc tới những người sử dụng trình duyệt văn bản, hặc duyệt Web mà không cho hiển thị hình ảnh."
 
 msgid "ploneimage_dlg_dialog_title"
-msgstr "Chèn/thay đổi hình ảnh"
+msgstr "Chèn/sửa ảnh"
 
 msgid "ploneimage_dlg_src"
-msgstr "Địa chỉ file hình ảnh"
+msgstr "URL ảnh"
 
 msgid "ploneimage_dlg_alt"
-msgstr "Mô tả hình ảnh"
+msgstr "Mô tả ảnh"
 
 msgid "ploneimage_dlg_list"
-msgstr "Image list"
+msgstr "Danh sách ảnh"
 
 msgid "ploneimage_dlg_border"
-msgstr "Border"
+msgstr "Viền"
 
 msgid "ploneimage_dlg_dimensions"
-msgstr "Dimensions"
+msgstr "Kích thước"
 
 msgid "ploneimage_dlg_vspace"
-msgstr "Vertical space"
+msgstr "Khoảng cách dọc"
 
 msgid "ploneimage_dlg_hspace"
-msgstr "Horizontal space"
+msgstr "Khoảng cách ngang"
 
 msgid "ploneimage_dlg_align"
-msgstr "Alignment"
+msgstr "Canh lề"
 
 msgid "ploneimage_dlg_align_baseline"
-msgstr "Baseline"
+msgstr "Dòng cơ sở"
 
 msgid "ploneimage_dlg_align_top"
-msgstr "Top"
+msgstr "Trên cùng"
 
 msgid "ploneimage_dlg_align_middle"
-msgstr "Middle"
+msgstr "Giữa"
 
 msgid "ploneimage_dlg_align_bottom"
-msgstr "Bottom"
+msgstr "Dưới cùng"
 
 msgid "ploneimage_dlg_align_texttop"
-msgstr "Text top"
+msgstr "Văn bản trên cùng"
 
 msgid "ploneimage_dlg_align_textbottom"
-msgstr "Text bottom"
+msgstr "Văn bản dưới cùng"
 
 msgid "ploneimage_dlg_align_left"
-msgstr "Left"
+msgstr "Trái"
 
 msgid "ploneimage_dlg_align_right"
-msgstr "Right"
+msgstr "Phải"
 
 msgid "ploneimage_dlg_image_list"
-msgstr "Image list"
+msgstr "Danh sách ảnh"
 
 msgid "plonelink_link_desc"
-msgstr "Chèn/thay đổi liên kết"
+msgstr "Thêm/Sửa Link"
 
 msgid "plonelink_delta_width"
 msgstr ""
@@ -802,172 +802,172 @@ msgid "plonelink_delta_height"
 msgstr ""
 
 msgid "plonelink_dlg_title"
-msgstr "Chèn/thay đổi liên kết"
+msgstr "Thêm/Sửa Liên kết"
 
 msgid "plonelink_dlg_url"
-msgstr "Liên kết"
+msgstr "URL Liên kết"
 
 msgid "plonelink_dlg_target"
-msgstr "Cửa sổ mở liên kết"
+msgstr "Đích"
 
 msgid "plonelink_dlg_titlefield"
-msgstr "Tooltip"
+msgstr "Tiêu đề"
 
 msgid "plonelink_dlg_is_email"
-msgstr "Địa chỉ liên kết gần giống định dạng của email, bạn có muốn chuyển thành liên kết email?"
+msgstr "URL bạn đã nhập có vẻ là một địa chỉ điện thư, Bạn có muốn thêm tiền tố mailto?"
 
 msgid "plonelink_dlg_is_external"
-msgstr "Địa chỉ liên kết của bạn dẫn đến một địa chỉ ngoài hệ thống, bạn có muốn tự động thêm chuối \"http://\" vào trước liên kết không ?"
+msgstr "URL bạn đã nhập có vẻ là một liên kết ngoài, bạn có muốn thêm tiền tố http://?"
 
 msgid "plonelink_dlg_list"
-msgstr "Link list"
+msgstr "Danh sách liên kết"
 
 msgid "plonelink_dlg_general_tab"
-msgstr "Cơ bản"
+msgstr "Chung"
 
 msgid "plonelink_dlg_popup_tab"
-msgstr "Popup"
+msgstr "Bật lên"
 
 msgid "plonelink_dlg_events_tab"
-msgstr "Events"
+msgstr "Sự kiện"
 
 msgid "plonelink_dlg_advanced_tab"
 msgstr "Nâng cao"
 
 msgid "plonelink_dlg_general_props"
-msgstr "Tùy chọn cơ bản"
+msgstr "Thuộc tính chung"
 
 msgid "plonelink_dlg_popup_props"
-msgstr "Tùy chọn popup"
+msgstr "Thuộc tính bật lên"
 
 msgid "plonelink_dlg_event_props"
-msgstr "Events"
+msgstr "Sự kiện"
 
 msgid "plonelink_dlg_advanced_props"
-msgstr "Tùy chọn nâng cao"
+msgstr "Thuộc tính nâng cao"
 
 msgid "plonelink_dlg_popup_opts"
-msgstr "Options"
+msgstr "Tùy chọn"
 
 msgid "plonelink_dlg_anchor_names"
-msgstr "Điểm dánh dấu"
+msgstr "Mỏ neo"
 
 msgid "plonelink_dlg_target_same"
-msgstr "Mở trong cửa sổ/khung hiện tại"
+msgstr "Mở trong cửa sổ/khung này"
 
 msgid "plonelink_dlg_target_parent"
-msgstr "Mở trong cửa sổ/khung chứa cửa sổ này"
+msgstr "Mở trong cửa sổ/khung cha"
 
 msgid "plonelink_dlg_target_top"
-msgstr "Mở trong khung ở trên cùng (thay thế tất cả các khung)"
+msgstr "Mở trong khung trên cùng (thay thế tất các khung)"
 
 msgid "plonelink_dlg_target_blank"
 msgstr "Mở trong cửa sổ mới"
 
 msgid "plonelink_dlg_popup"
-msgstr "Javascript popup"
+msgstr "Javascript bật lên"
 
 msgid "plonelink_dlg_popup_url"
-msgstr "Popup URL"
+msgstr "URL bật lên"
 
 msgid "plonelink_dlg_popup_name"
-msgstr "Window name"
+msgstr "Tên cửa sổ"
 
 msgid "plonelink_dlg_popup_return"
-msgstr "Insert 'return false'"
+msgstr "Chèn 'return false'"
 
 msgid "plonelink_dlg_popup_scrollbars"
-msgstr "Show scrollbars"
+msgstr "Hiển thị thanh cuộn"
 
 msgid "plonelink_dlg_popup_statusbar"
-msgstr "Show status bar"
+msgstr "Hiện thị thanh trạng thái"
 
 msgid "plonelink_dlg_popup_toolbar"
-msgstr "Show toolbars"
+msgstr "Hiện thị thanh công cụ"
 
 msgid "plonelink_dlg_popup_menubar"
-msgstr "Show menu bar"
+msgstr "Hiển thị thanh thực đơn"
 
 msgid "plonelink_dlg_popup_location"
-msgstr "Show location bar"
+msgstr "Hiện thị thanh vị trí"
 
 msgid "plonelink_dlg_popup_resizable"
-msgstr "Make window resizable"
+msgstr "Làm cho cửa sổ có thể thay đổi kích cỡ"
 
 msgid "plonelink_dlg_popup_dependent"
-msgstr "Dependent (Mozilla/Firefox only)"
+msgstr "Phụ thuộc (chỉ Mozilla/Firefox)"
 
 msgid "plonelink_dlg_popup_size"
-msgstr "Size"
+msgstr "Kích thước"
 
 msgid "plonelink_dlg_popup_position"
-msgstr "Position (X/Y)"
+msgstr "Vị trí (X/Y)"
 
 msgid "plonelink_dlg_id"
 msgstr "Id"
 
 msgid "plonelink_dlg_style"
-msgstr "Style"
+msgstr "Kiểu dáng"
 
 msgid "plonelink_dlg_classes"
-msgstr "Classes"
+msgstr "Lớp"
 
 msgid "plonelink_dlg_target_name"
-msgstr "Target name"
+msgstr "Tên đích"
 
 msgid "plonelink_dlg_langdir"
-msgstr "Language direction"
+msgstr "Hướng ngôn ngữ"
 
 msgid "plonelink_dlg_target_langcode"
-msgstr "Target language"
+msgstr "Ngôn ngữ đích"
 
 msgid "plonelink_dlg_langcode"
-msgstr "Language code"
+msgstr "Mã ngôn ngữ"
 
 msgid "plonelink_dlg_encoding"
-msgstr "Target character encoding"
+msgstr "Mã hóa ký tự đích"
 
 msgid "plonelink_dlg_mime"
-msgstr "Target MIME type"
+msgstr "Kiểu MIME đích"
 
 msgid "plonelink_dlg_rel"
-msgstr "Relationship page to target"
+msgstr "Trang liên quan tới đích"
 
 msgid "plonelink_dlg_rev"
-msgstr "Relationship target to page"
+msgstr "Đích liên quan tới trang"
 
 msgid "plonelink_dlg_tabindex"
-msgstr "Tabindex"
+msgstr "Chỉ mục thẻ"
 
 msgid "plonelink_dlg_accesskey"
-msgstr "Accesskey"
+msgstr "Phím truy cập"
 
 msgid "plonelink_dlg_ltr"
-msgstr "Left to right"
+msgstr "Trái qua phải"
 
 msgid "plonelink_dlg_rtl"
-msgstr "Right to left"
+msgstr "Phải qua trái"
 
 msgid "plonelink_dlg_link_list"
-msgstr "Link list"
+msgstr "Danh sách liên kết"
 
 msgid "xhtmlxtras_cite_desc"
-msgstr "Citation"
+msgstr "Biểu chương"
 
 msgid "xhtmlxtras_abbr_desc"
-msgstr "Abbreviation"
+msgstr "Tên viết tắt"
 
 msgid "xhtmlxtras_acronym_desc"
-msgstr "Acronym"
+msgstr "Từ viết tắt"
 
 msgid "xhtmlxtras_del_desc"
-msgstr "Deletion"
+msgstr "Xóa"
 
 msgid "xhtmlxtras_ins_desc"
-msgstr "Insertion"
+msgstr "Chèn"
 
 msgid "xhtmlxtras_attribs_desc"
-msgstr "Insert/Edit Attributes"
+msgstr "Chèn/Sửa các thuộc tính"
 
 msgid "xhtmlxtras_cite_delta_width"
 msgstr ""
@@ -1006,97 +1006,97 @@ msgid "xhtmlxtras_attribs_delta_height"
 msgstr ""
 
 msgid "xhtmlxtras_dlg_attribute_label_title"
-msgstr "Title"
+msgstr "Tiêu đề"
 
 msgid "xhtmlxtras_dlg_attribute_label_id"
 msgstr "ID"
 
 msgid "xhtmlxtras_dlg_attribute_label_class"
-msgstr "Class"
+msgstr "Lớp"
 
 msgid "xhtmlxtras_dlg_attribute_label_style"
-msgstr "Style"
+msgstr "Kiểu dáng"
 
 msgid "xhtmlxtras_dlg_attribute_label_cite"
-msgstr "Cite"
+msgstr "Chú thích"
 
 msgid "xhtmlxtras_dlg_attribute_label_datetime"
-msgstr "Date/Time"
+msgstr "Ngày/giờ"
 
 msgid "xhtmlxtras_dlg_attribute_label_langdir"
-msgstr "Text Direction"
+msgstr "Hướng văn bản"
 
 msgid "xhtmlxtras_dlg_attribute_option_ltr"
-msgstr "Left to right"
+msgstr "Trái qua phải"
 
 msgid "xhtmlxtras_dlg_attribute_option_rtl"
-msgstr "Right to left"
+msgstr "Phải qua trái"
 
 msgid "xhtmlxtras_dlg_attribute_label_langcode"
-msgstr "Language"
+msgstr "Ngôn ngữ"
 
 msgid "xhtmlxtras_dlg_attribute_label_tabindex"
-msgstr "TabIndex"
+msgstr "Chỉ mục thẻ"
 
 msgid "xhtmlxtras_dlg_attribute_label_accesskey"
-msgstr "AccessKey"
+msgstr "Phím truy cập"
 
 msgid "xhtmlxtras_dlg_attribute_events_tab"
-msgstr "Events"
+msgstr "Sự kiện"
 
 msgid "xhtmlxtras_dlg_attribute_attrib_tab"
-msgstr "Attributes"
+msgstr "Thuộc tính"
 
 msgid "xhtmlxtras_dlg_general_tab"
-msgstr "General"
+msgstr "Chung"
 
 msgid "xhtmlxtras_dlg_attrib_tab"
-msgstr "Attributes"
+msgstr "Thuộc tính"
 
 msgid "xhtmlxtras_dlg_events_tab"
-msgstr "Events"
+msgstr "Sự kiện"
 
 msgid "xhtmlxtras_dlg_fieldset_general_tab"
-msgstr "General Settings"
+msgstr "Thiết lập chung"
 
 msgid "xhtmlxtras_dlg_fieldset_attrib_tab"
-msgstr "Element Attributes"
+msgstr "Thuộc tính phần tử"
 
 msgid "xhtmlxtras_dlg_fieldset_events_tab"
-msgstr "Element Events"
+msgstr "Sự kiện phần tử"
 
 msgid "xhtmlxtras_dlg_title_ins_element"
-msgstr "Insertion Element"
+msgstr "Chèn phần tử"
 
 msgid "xhtmlxtras_dlg_title_del_element"
-msgstr "Deletion Element"
+msgstr "Xóa phần tử"
 
 msgid "xhtmlxtras_dlg_title_acronym_element"
-msgstr "Acronym Element"
+msgstr "Viết tắt phần tử"
 
 msgid "xhtmlxtras_dlg_title_abbr_element"
-msgstr "Abbreviation Element"
+msgstr "Tên viết tắt phần tử"
 
 msgid "xhtmlxtras_dlg_title_cite_element"
-msgstr "Citation Element"
+msgstr "Biểu chương phần tử"
 
 msgid "xhtmlxtras_dlg_remove"
-msgstr "Remove"
+msgstr "Loại bỏ"
 
 msgid "xhtmlxtras_dlg_insert_date"
-msgstr "Insert current date/time"
+msgstr "Chèn ngày/giờ hiện thời"
 
 msgid "xhtmlxtras_dlg_option_ltr"
-msgstr "Left to right"
+msgstr "Trái qua phải"
 
 msgid "xhtmlxtras_dlg_option_rtl"
-msgstr "Right to left"
+msgstr "Phải qua trái"
 
 msgid "xhtmlxtras_dlg_attribs_title"
-msgstr "Insert/Edit Attributes"
+msgstr "Chèn/Sửa thuộc tính"
 
 msgid "style_desc"
-msgstr "Edit CSS Style"
+msgstr "Sửa kiểu dáng CSS"
 
 msgid "style_delta_width"
 msgstr ""
@@ -1105,259 +1105,265 @@ msgid "style_delta_height"
 msgstr ""
 
 msgid "style_dlg_title"
-msgstr "Edit CSS Style"
+msgstr "Sửa kiểu dáng CSS"
 
 msgid "style_dlg_apply"
-msgstr "Apply"
+msgstr "Áp dụng"
 
 msgid "style_dlg_text_tab"
-msgstr "Text"
+msgstr "Văn bản"
 
 msgid "style_dlg_background_tab"
-msgstr "Background"
+msgstr "Nền"
 
 msgid "style_dlg_block_tab"
-msgstr "Block"
+msgstr "Khối"
 
 msgid "style_dlg_box_tab"
-msgstr "Box"
+msgstr "Hộp"
 
 msgid "style_dlg_border_tab"
-msgstr "Border"
+msgstr "Viền"
 
 msgid "style_dlg_list_tab"
-msgstr "List"
+msgstr "Danh sách"
 
 msgid "style_dlg_positioning_tab"
-msgstr "Positioning"
+msgstr "Vị trí"
 
 msgid "style_dlg_text_props"
-msgstr "Text"
+msgstr "Văn bản"
 
 msgid "style_dlg_text_font"
-msgstr "Font"
+msgstr "Phông"
 
 msgid "style_dlg_text_size"
-msgstr "Size"
+msgstr "Kích cỡ"
 
 msgid "style_dlg_text_weight"
-msgstr "Weight"
+msgstr "Trọng lượng"
 
 msgid "style_dlg_text_style"
-msgstr "Style"
+msgstr "Kiểu dáng"
 
 msgid "style_dlg_text_variant"
-msgstr "Variant"
+msgstr "Biến đổi"
 
 msgid "style_dlg_text_lineheight"
-msgstr "Line height"
+msgstr "Chiều cao đường"
 
 msgid "style_dlg_text_case"
-msgstr "Case"
+msgstr "Bọc"
 
 msgid "style_dlg_text_color"
-msgstr "Color"
+msgstr "Màu"
 
 msgid "style_dlg_text_decoration"
-msgstr "Decoration"
+msgstr "Trang trí"
 
 msgid "style_dlg_text_overline"
-msgstr "overline"
+msgstr "gạch trên"
 
 msgid "style_dlg_text_underline"
-msgstr "underline"
+msgstr "gạch dưới"
 
 msgid "style_dlg_text_striketrough"
-msgstr "strikethrough"
+msgstr "gạch xuyên"
 
 msgid "style_dlg_text_blink"
-msgstr "blink"
+msgstr "nhấp nháy"
 
 msgid "style_dlg_text_none"
-msgstr "none"
+msgstr "không"
 
 msgid "style_dlg_background_color"
-msgstr "Background color"
+msgstr "Màu nền"
 
 msgid "style_dlg_background_image"
-msgstr "Background image"
+msgstr "Ảnh nền"
 
 msgid "style_dlg_background_repeat"
-msgstr "Repeat"
+msgstr "Lặp lại"
 
 msgid "style_dlg_background_attachment"
-msgstr "Attachment"
+msgstr "Đính kèm"
 
 msgid "style_dlg_background_hpos"
-msgstr "Horizontal position"
+msgstr "Vị trí ngang"
 
 msgid "style_dlg_background_vpos"
-msgstr "Vertical position"
+msgstr "Vị trí dọc"
 
 msgid "style_dlg_block_wordspacing"
-msgstr "Word spacing"
+msgstr "Khoảng các từ"
 
 msgid "style_dlg_block_letterspacing"
-msgstr "Letter spacing"
+msgstr "Khoảng các ký tự"
 
 msgid "style_dlg_block_vertical_alignment"
-msgstr "Vertical alignment"
+msgstr "Canh lề dọc"
 
 msgid "style_dlg_block_text_align"
-msgstr "Text align"
+msgstr "Canh lề văn bản"
 
 msgid "style_dlg_block_text_indent"
-msgstr "Text indent"
+msgstr "Thụt dòng văn bản"
 
 msgid "style_dlg_block_whitespace"
-msgstr "Whitespace"
+msgstr "Khoảng trắng"
 
 msgid "style_dlg_block_display"
-msgstr "Display"
+msgstr "Hiển thị"
 
 msgid "style_dlg_box_width"
-msgstr "Width"
+msgstr "Chiều rộng"
 
 msgid "style_dlg_box_height"
-msgstr "Height"
+msgstr "Chiều cao"
 
 msgid "style_dlg_box_float"
-msgstr "Float"
+msgstr "Nổi"
 
 msgid "style_dlg_box_clear"
-msgstr "Clear"
+msgstr "Làm sạch"
 
 msgid "style_dlg_padding"
-msgstr "Padding"
+msgstr "Đệm lót"
 
 msgid "style_dlg_same"
-msgstr "Same for all"
+msgstr "Áp dụng cho tất cả"
 
 msgid "style_dlg_top"
-msgstr "Top"
+msgstr "Trên"
 
 msgid "style_dlg_right"
-msgstr "Right"
+msgstr "Phải"
 
 msgid "style_dlg_bottom"
-msgstr "Bottom"
+msgstr "Dưới"
 
 msgid "style_dlg_left"
-msgstr "Left"
+msgstr "Trái"
 
 msgid "style_dlg_margin"
-msgstr "Margin"
+msgstr "Biên"
 
 msgid "style_dlg_style"
-msgstr "Style"
+msgstr "Kiểu"
 
 msgid "style_dlg_width"
-msgstr "Width"
+msgstr "Chiều rộng"
 
 msgid "style_dlg_height"
-msgstr "Height"
+msgstr "Chiều cao"
 
 msgid "style_dlg_color"
-msgstr "Color"
+msgstr "Màu"
 
 msgid "style_dlg_list_type"
-msgstr "Type"
+msgstr "Kiểu"
 
 msgid "style_dlg_bullet_image"
-msgstr "Bullet image"
+msgstr "Ảnh Bullet"
 
 msgid "style_dlg_position"
-msgstr "Position"
+msgstr "Vị trí"
 
 msgid "style_dlg_positioning_type"
-msgstr "Type"
+msgstr "Kiểu"
 
 msgid "style_dlg_visibility"
-msgstr "Visibility"
+msgstr "Nhìn thấy"
 
 msgid "style_dlg_zindex"
-msgstr "Z-index"
+msgstr "Chỉ mục Z"
 
 msgid "style_dlg_overflow"
-msgstr "Overflow"
+msgstr "Tràn"
 
 msgid "style_dlg_placement"
-msgstr "Placement"
+msgstr "Sắp đặt"
 
 msgid "style_dlg_clip"
-msgstr "Clip"
+msgstr "Ghim"
 
 msgid "paste_paste_text_desc"
-msgstr "Dán nội dung và bỏ đi định dạng"
+msgstr "Dánh như Plain Text"
 
 msgid "paste_paste_word_desc"
-msgstr "Dán nội dung sao chép từ Word"
+msgstr "Dán từ Word"
 
 msgid "paste_selectall_desc"
-msgstr "Chọn tất cả"
+msgstr "Chọn tất"
+
+msgid "paste_plaintext_mode_sticky"
+msgstr "Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode."
+
+msgid "paste_plaintext_mode"
+msgstr "Paste is now in plain text mode. Click again to toggle back to regular paste mode."
 
 msgid "paste_dlg_text_title"
-msgstr "Sử dụng tổ hợp phím CTRL+V để dán nội dung vào khung bên dưới."
+msgstr "Sử dụng CTRL+V trên bàn phím để dán văn bản vào cửa sổ."
 
 msgid "paste_dlg_text_linebreaks"
-msgstr "Giữ nguyên những chỗ xuống hàng"
+msgstr "Giữ ngắt dòng"
 
 msgid "paste_dlg_word_title"
-msgstr "Sử dụng tổ hợp phím CTRL+V để dán nội dung vào khung bên dưới."
+msgstr "Sử dụng CTRL+V trên bàn phím để dán văn bản vào cửa sổ."
 
 msgid "table_desc"
-msgstr "Chèn bảng mới"
+msgstr "Chèn một bảng mới"
 
 msgid "table_row_before_desc"
-msgstr "Chèn dòng vào trước vị trí hiện tại"
+msgstr "Chèn hàng vào trước"
 
 msgid "table_row_after_desc"
-msgstr "Chèn dòng vào sau vị trí hiện tại"
+msgstr "Chèn hàng vào sau"
 
 msgid "table_delete_row_desc"
 msgstr "Xóa dòng"
 
 msgid "table_col_before_desc"
-msgstr "Chèn cột vào sau vị trí hiện tại"
+msgstr "Chèn cột vào trước"
 
 msgid "table_col_after_desc"
-msgstr "Chèn cột vào sau vị trí hiện tại"
+msgstr "Chèn cột vào sau"
 
 msgid "table_delete_col_desc"
-msgstr "Xóa cột"
+msgstr "Loại bỏ cột"
 
 msgid "table_split_cells_desc"
-msgstr "Tách ô"
+msgstr "Tách các ô đã kết hợp của bảng"
 
 msgid "table_merge_cells_desc"
-msgstr "Gộp ô"
+msgstr "Kết hợp các ô của bảng"
 
 msgid "table_row_desc"
-msgstr "Thay đổi thuộc tính dòng"
+msgstr "Thuộc tính hàng"
 
 msgid "table_cell_desc"
-msgstr "Thay đổi thuộc tính ô"
+msgstr "Thuộc tính ô"
 
 msgid "table_props_desc"
-msgstr "Thay đổi thuộc tính bảng"
+msgstr "Thuộc tính bảng"
 
 msgid "table_paste_row_before_desc"
-msgstr "Dán dòng vào trước vị trí hiện tại"
+msgstr "Dán hang vào trước"
 
 msgid "table_paste_row_after_desc"
-msgstr "Dán dòng vào sau vị trí hiện tại"
+msgstr "Dán hang vào sau"
 
 msgid "table_cut_row_desc"
-msgstr "Cắt dòng"
+msgstr "Cắt hàng"
 
 msgid "table_copy_row_desc"
-msgstr "Sao chép dòng"
+msgstr "Sao chép hàng"
 
 msgid "table_del"
 msgstr "Xóa bảng"
 
 msgid "table_row"
-msgstr "Dòng"
+msgstr "Hàng"
 
 msgid "table_col"
 msgstr "Cột"
@@ -1390,22 +1396,22 @@ msgid "table_merge_cells_delta_height"
 msgstr ""
 
 msgid "table_dlg_general_tab"
-msgstr "Cơ bản"
+msgstr "Chung"
 
 msgid "table_dlg_advanced_tab"
 msgstr "Nâng cao"
 
 msgid "table_dlg_general_props"
-msgstr "Tùy chọn cơ bản"
+msgstr "Thuộc tính chung"
 
 msgid "table_dlg_advanced_props"
-msgstr "Tùy chọn nâng cao"
+msgstr "Thuộc tính nâng cao"
 
 msgid "table_dlg_rowtype"
-msgstr "Row in table part"
+msgstr "Hàng trong từng phần bảng"
 
 msgid "table_dlg_title"
-msgstr "Chèn/thay đổi bảng"
+msgstr "Chèn/Sửa bảng"
 
 msgid "table_dlg_width"
 msgstr "Chiều rộng"
@@ -1414,19 +1420,19 @@ msgid "table_dlg_height"
 msgstr "Chiều cao"
 
 msgid "table_dlg_cols"
-msgstr "Số cột"
+msgstr "Cột"
 
 msgid "table_dlg_rows"
-msgstr "Số dòng"
+msgstr "Hàng"
 
 msgid "table_dlg_cellspacing"
-msgstr "Khoảng cách ngang"
+msgstr "Khoảng cách ô"
 
 msgid "table_dlg_cellpadding"
-msgstr "Khoảng cách dọc"
+msgstr "Khoảng lót ô"
 
 msgid "table_dlg_border"
-msgstr "Đường viền"
+msgstr "Viền"
 
 msgid "table_dlg_align"
 msgstr "Canh lề"
@@ -1444,13 +1450,13 @@ msgid "table_dlg_align_middle"
 msgstr "Giữa"
 
 msgid "table_dlg_row_title"
-msgstr "Thay đổi thuộc tính dòng"
+msgstr "Thuộc tính hàng"
 
 msgid "table_dlg_cell_title"
-msgstr "Thay đổi thuộc tính ô"
+msgstr "Thuộc tính ô"
 
 msgid "table_dlg_cell_type"
-msgstr "Cell type"
+msgstr "Loại ô"
 
 msgid "table_dlg_valign"
 msgstr "Canh lề dọc"
@@ -1462,130 +1468,130 @@ msgid "table_dlg_align_bottom"
 msgstr "Dưới"
 
 msgid "table_dlg_bordercolor"
-msgstr "Màu đường viền"
+msgstr "Màu viền"
 
 msgid "table_dlg_bgcolor"
 msgstr "Màu nền"
 
 msgid "table_dlg_merge_cells_title"
-msgstr "Gộp ô"
+msgstr "Kết hợp các ô của bảng"
 
 msgid "table_dlg_id"
 msgstr "Id"
 
 msgid "table_dlg_style"
-msgstr "Style"
+msgstr "Kiểu dáng"
 
 msgid "table_dlg_langdir"
-msgstr "Language direction"
+msgstr "Hướng ngôn ngữ"
 
 msgid "table_dlg_langcode"
-msgstr "Language code"
+msgstr "Mã ngôn ngữ"
 
 msgid "table_dlg_mime"
-msgstr "Target MIME type"
+msgstr "Kiểu MIME đích"
 
 msgid "table_dlg_ltr"
-msgstr "Left to right"
+msgstr "Trái qua phải"
 
 msgid "table_dlg_rtl"
-msgstr "Right to left"
+msgstr "Phải qua trái"
 
 msgid "table_dlg_bgimage"
-msgstr "Background image"
+msgstr "Ảnh nền"
 
 msgid "table_dlg_summary"
-msgstr "Summary"
+msgstr "Tóm lược"
 
 msgid "table_dlg_td"
-msgstr "Data"
+msgstr "Dữ liệu"
 
 msgid "table_dlg_th"
-msgstr "Header"
+msgstr "Đầu đề"
 
 msgid "table_dlg_cell_cell"
-msgstr "Cập nhật ô hiện tại"
+msgstr "Cập nhật ô hiện thời"
 
 msgid "table_dlg_cell_row"
-msgstr "Cập nhật tất cả ô có trên dòng"
+msgstr "Cập nhất tất các ô trong hàng"
 
 msgid "table_dlg_cell_all"
-msgstr "Cập nhật tất cả ô có trong bảng"
+msgstr "Cập nhất tất các ô trong bảng"
 
 msgid "table_dlg_row_row"
-msgstr "Cập nhật dòng hiện tại"
+msgstr "Cập nhật hàng hiện thời"
 
 msgid "table_dlg_row_odd"
-msgstr "Cập nhật dòng lẻ có trong bảng"
+msgstr "Cập nhật hàng lẻ trong bảng"
 
 msgid "table_dlg_row_even"
-msgstr "Cập nhật dòng chẵn có trong bảng"
+msgstr "Cập nhật hàng chẵn trong bảng"
 
 msgid "table_dlg_row_all"
-msgstr "Cập nhật tất cả dòng có trong bảng"
+msgstr "Cập nhật tất hàng trong bảng"
 
 msgid "table_dlg_thead"
-msgstr "Phần đầu bảng"
+msgstr "Đầu bảng"
 
 msgid "table_dlg_tbody"
-msgstr "Phần thân bảng"
+msgstr "Thân bản"
 
 msgid "table_dlg_tfoot"
-msgstr "Phần cuối bảng"
+msgstr "Chân bảng"
 
 msgid "table_dlg_scope"
-msgstr "Scope"
+msgstr "Phạm vi"
 
 msgid "table_dlg_rowgroup"
-msgstr "Row Group"
+msgstr "Nhóm hàng"
 
 msgid "table_dlg_colgroup"
-msgstr "Col Group"
+msgstr "Nhóm cột"
 
 msgid "table_dlg_col_limit"
-msgstr "You've exceeded the maximum number of columns of {$cols}."
+msgstr "Bạn đã vượt quá số tối đa cột của {$cols}."
 
 msgid "table_dlg_row_limit"
-msgstr "You've exceeded the maximum number of rows of {$rows}."
+msgstr "Bạn đã vượt quá số tối đa hàng của {$rows}."
 
 msgid "table_dlg_cell_limit"
-msgstr "You've exceeded the maximum number of cells of {$cells}."
+msgstr "Bạn đã vượt quá số tối đa ô của {$cells}."
 
 msgid "table_dlg_missing_scope"
-msgstr "Are you sure you want to continue without specifying a scope for this table header cell. Without it, it may be difficult for some users with disabilities to understand the content or data displayed of the table."
+msgstr "Bạn có chắc chắn muốn tiếp thục  với việc không chỉ định phạm vi cho ô tiêu đề của bảng này. Không có nó, điều này có thể khó khăn cho một số người dùng khuyết tật để hiểu nội dung hoặc dữ liệu hiển thị của bảng."
 
 msgid "table_dlg_caption"
-msgstr "Thêm tiêu đề cho bảng"
+msgstr "Chú tích bảng"
 
 msgid "table_dlg_frame"
-msgstr "Frame"
+msgstr "Khung"
 
 msgid "table_dlg_frame_none"
-msgstr "none"
+msgstr "không"
 
 msgid "table_dlg_frame_groups"
-msgstr "groups"
+msgstr "nhóm"
 
 msgid "table_dlg_frame_rows"
-msgstr "rows"
+msgstr "hàng"
 
 msgid "table_dlg_frame_cols"
-msgstr "cols"
+msgstr "cột"
 
 msgid "table_dlg_frame_all"
-msgstr "all"
+msgstr "tất"
 
 msgid "table_dlg_rules"
-msgstr "Rules"
+msgstr "Thước"
 
 msgid "table_dlg_rules_void"
-msgstr "void"
+msgstr "trống không"
 
 msgid "table_dlg_rules_above"
-msgstr "above"
+msgstr "trên"
 
 msgid "table_dlg_rules_below"
-msgstr "below"
+msgstr "dưới"
 
 msgid "table_dlg_rules_hsides"
 msgstr "hsides"
@@ -1603,19 +1609,25 @@ msgid "table_dlg_rules_box"
 msgstr "box"
 
 msgid "table_dlg_rules_border"
-msgstr "border"
+msgstr "viền"
 
 msgid "autosave_unload_msg"
-msgstr "The changes you made will be lost if you navigate away from this page."
+msgstr "Những thay đổi bạn đã thực hiện sẽ bị mất nếu bạn điều hướng đi từ trang này."
+
+msgid "autosave_restore_content"
+msgstr "Khôi phục nội dung tự động lưu lại."
+
+msgid "autosave_warning_message"
+msgstr "Nếu bạn khôi phục lại nội dung đã lưu, bạn sẽ mất tất cả các nội dung mà hiện đang trong trình soạn thảo.\n\nBạn có chắc là bạn muốn khôi phục lại nội dung đã lưu?."
 
 msgid "fullscreen_desc"
 msgstr "Bật/tắt chế độ toàn màn hình"
 
 msgid "media_desc"
-msgstr "Chèn/thay đổi media(flash, nhạc, video ...)"
+msgstr "Chèn / sửa phương tiện truyền thông nhúng"
 
 msgid "media_edit"
-msgstr "Thay đổi media"
+msgstr "Sửa phương tiện truyền thông nhúng"
 
 msgid "media_delta_width"
 msgstr ""
@@ -1624,19 +1636,19 @@ msgid "media_delta_height"
 msgstr ""
 
 msgid "media_dlg_title"
-msgstr "Chèn/thay đổi media(flash, nhạc, video ...)"
+msgstr "Chèn / sửa phương tiện truyền thông nhúng"
 
 msgid "media_dlg_general"
-msgstr "Cơ bản"
+msgstr "Chung"
 
 msgid "media_dlg_advanced"
 msgstr "Nâng cao"
 
 msgid "media_dlg_file"
-msgstr "Địa chỉ media"
+msgstr "Tập tin/URL"
 
 msgid "media_dlg_list"
-msgstr "List"
+msgstr "Danh sách"
 
 msgid "media_dlg_size"
 msgstr "Kích thước"
@@ -1645,19 +1657,19 @@ msgid "media_dlg_preview"
 msgstr "Xem trước"
 
 msgid "media_dlg_constrain_proportions"
-msgstr "Giữ đúng tỉ lệ"
+msgstr "Ràng buộc tỉ lệ"
 
 msgid "media_dlg_type"
-msgstr "Loại"
+msgstr "Kiểu"
 
 msgid "media_dlg_id"
 msgstr "Id"
 
 msgid "media_dlg_name"
-msgstr "Name"
+msgstr "Tên"
 
 msgid "media_dlg_class_name"
-msgstr "Class"
+msgstr "Lớp"
 
 msgid "media_dlg_vspace"
 msgstr "V-Space"
@@ -1666,22 +1678,22 @@ msgid "media_dlg_hspace"
 msgstr "H-Space"
 
 msgid "media_dlg_play"
-msgstr "Auto play"
+msgstr "Tự động phát"
 
 msgid "media_dlg_loop"
-msgstr "Loop"
+msgstr "Lặp"
 
 msgid "media_dlg_menu"
-msgstr "Show menu"
+msgstr "Hiển thị menu"
 
 msgid "media_dlg_quality"
-msgstr "Quality"
+msgstr "Chất lượng"
 
 msgid "media_dlg_scale"
-msgstr "Scale"
+msgstr "Tỉ lệ"
 
 msgid "media_dlg_align"
-msgstr "Align"
+msgstr "Canh lề"
 
 msgid "media_dlg_salign"
 msgstr "SAlign"
@@ -1690,10 +1702,10 @@ msgid "media_dlg_wmode"
 msgstr "WMode"
 
 msgid "media_dlg_bgcolor"
-msgstr "Background"
+msgstr "Nền"
 
 msgid "media_dlg_base"
-msgstr "Base"
+msgstr "Cơ sở"
 
 msgid "media_dlg_flashvars"
 msgstr "Flashvars"
@@ -1705,229 +1717,229 @@ msgid "media_dlg_autohref"
 msgstr "AutoHREF"
 
 msgid "media_dlg_cache"
-msgstr "Cache"
+msgstr "Bộ nhớ đệm"
 
 msgid "media_dlg_hidden"
-msgstr "Hidden"
+msgstr "Ẩn"
 
 msgid "media_dlg_controller"
-msgstr "Controller"
+msgstr "Trình điều khiển"
 
 msgid "media_dlg_kioskmode"
-msgstr "Kiosk mode"
+msgstr "Chế độ Kiosk"
 
 msgid "media_dlg_playeveryframe"
-msgstr "Play every frame"
+msgstr "Phát tất cả khung"
 
 msgid "media_dlg_targetcache"
-msgstr "Target cache"
+msgstr "Bộ nhớ đệm đích"
 
 msgid "media_dlg_correction"
-msgstr "No correction"
+msgstr "Không chỉnh"
 
 msgid "media_dlg_enablejavascript"
-msgstr "Enable JavaScript"
+msgstr "Cho phép JavaScript"
 
 msgid "media_dlg_starttime"
-msgstr "Start time"
+msgstr "Thời gian bắt đầu"
 
 msgid "media_dlg_endtime"
-msgstr "End time"
+msgstr "Thời gian kết thúc"
 
 msgid "media_dlg_href"
 msgstr "Href"
 
 msgid "media_dlg_qtsrcchokespeed"
-msgstr "Choke speed"
+msgstr "Tốc độ Choke"
 
 msgid "media_dlg_target"
-msgstr "Target"
+msgstr "Đích"
 
 msgid "media_dlg_volume"
-msgstr "Volume"
+msgstr "Âm lượng"
 
 msgid "media_dlg_autostart"
-msgstr "Auto start"
+msgstr "Tự động bắt đầu"
 
 msgid "media_dlg_enabled"
-msgstr "Enabled"
+msgstr "Cho phép"
 
 msgid "media_dlg_fullscreen"
-msgstr "Fullscreen"
+msgstr "Toàn màn hình"
 
 msgid "media_dlg_invokeurls"
-msgstr "Invoke URLs"
+msgstr "URL triệu gọi"
 
 msgid "media_dlg_mute"
-msgstr "Mute"
+msgstr "Tắt âm thanh"
 
 msgid "media_dlg_stretchtofit"
-msgstr "Stretch to fit"
+msgstr "Dãn để phù hợp"
 
 msgid "media_dlg_windowlessvideo"
-msgstr "Windowless video"
+msgstr "Video không cửa sổ"
 
 msgid "media_dlg_balance"
-msgstr "Balance"
+msgstr "Cân bằng"
 
 msgid "media_dlg_baseurl"
 msgstr "Base URL"
 
 msgid "media_dlg_captioningid"
-msgstr "Captioning id"
+msgstr "id đầu đề"
 
 msgid "media_dlg_currentmarker"
-msgstr "Current marker"
+msgstr "Bộ tạo hiện thời"
 
 msgid "media_dlg_currentposition"
-msgstr "Current position"
+msgstr "Vị trí hiện thời"
 
 msgid "media_dlg_defaultframe"
-msgstr "Default frame"
+msgstr "Khung mặc định"
 
 msgid "media_dlg_playcount"
-msgstr "Play count"
+msgstr "Đếm lần phát"
 
 msgid "media_dlg_rate"
-msgstr "Rate"
+msgstr "Tốc độ"
 
 msgid "media_dlg_uimode"
-msgstr "UI Mode"
+msgstr "Chế độ UI"
 
 msgid "media_dlg_flash_options"
-msgstr "Flash options"
+msgstr "Tùy chọn Flash"
 
 msgid "media_dlg_qt_options"
-msgstr "Quicktime options"
+msgstr "Tùy chọn Quicktime"
 
 msgid "media_dlg_wmp_options"
-msgstr "Thiết lập cho Windows media player"
+msgstr "Tùy chọn trình chơi media Windows"
 
 msgid "media_dlg_rmp_options"
-msgstr "Thiết lập cho Real media player"
+msgstr "Tùy chọn trình chơi media Real"
 
 msgid "media_dlg_shockwave_options"
-msgstr "Thiết lập cho Shockwave"
+msgstr "Tùy chọn Shockwave"
 
 msgid "media_dlg_autogotourl"
-msgstr "Auto goto URL"
+msgstr "Tự động nhảy tới URL"
 
 msgid "media_dlg_center"
-msgstr "Center"
+msgstr "Giữa"
 
 msgid "media_dlg_imagestatus"
-msgstr "Image status"
+msgstr "Trạng thái ảnh"
 
 msgid "media_dlg_maintainaspect"
-msgstr "Maintain aspect"
+msgstr "Duy trì cạnh"
 
 msgid "media_dlg_nojava"
-msgstr "No java"
+msgstr "Không có java"
 
 msgid "media_dlg_prefetch"
-msgstr "Prefetch"
+msgstr "Tìm nạp trước"
 
 msgid "media_dlg_shuffle"
-msgstr "Shuffle"
+msgstr "Không theo trật tự"
 
 msgid "media_dlg_console"
-msgstr "Console"
+msgstr "Bàn điều khiển"
 
 msgid "media_dlg_numloop"
-msgstr "Num loops"
+msgstr "Số lặp"
 
 msgid "media_dlg_controls"
-msgstr "Controls"
+msgstr "Điều khiển"
 
 msgid "media_dlg_scriptcallbacks"
-msgstr "Script callbacks"
+msgstr "Hàm gọi ngược Script"
 
 msgid "media_dlg_swstretchstyle"
-msgstr "Stretch style"
+msgstr "Kiểu dãn"
 
 msgid "media_dlg_swstretchhalign"
-msgstr "Stretch H-Align"
+msgstr "Dãn theo H-Align"
 
 msgid "media_dlg_swstretchvalign"
-msgstr "Stretch V-Align"
+msgstr "Dãn theo V-Align"
 
 msgid "media_dlg_sound"
-msgstr "Sound"
+msgstr "Âm thanh"
 
 msgid "media_dlg_progress"
-msgstr "Progress"
+msgstr "Đang tiến triển"
 
 msgid "media_dlg_qtsrc"
 msgstr "QT Src"
 
 msgid "media_dlg_qt_stream_warn"
-msgstr "Streamed rtsp resources should be added to the QT Src field under the advanced tab.\nYou should also add a non streamed version to the Src field.."
+msgstr "Nguồn rtsp theo luồng nên được thêm vào trường QT Src dưới thẻ nâng cao.\nBạn cũng nên thêm một phiên bản không theo luồng vào trường Src.."
 
 msgid "media_dlg_align_top"
-msgstr "Top"
+msgstr "Trên cùng"
 
 msgid "media_dlg_align_right"
-msgstr "Right"
+msgstr "Phải"
 
 msgid "media_dlg_align_bottom"
-msgstr "Bottom"
+msgstr "Dưới cùng"
 
 msgid "media_dlg_align_left"
-msgstr "Left"
+msgstr "Trái"
 
 msgid "media_dlg_align_center"
-msgstr "Center"
+msgstr "Giữa"
 
 msgid "media_dlg_align_top_left"
-msgstr "Top left"
+msgstr "Trên cùng trái"
 
 msgid "media_dlg_align_top_right"
-msgstr "Top right"
+msgstr "Trên cùng phải"
 
 msgid "media_dlg_align_bottom_left"
-msgstr "Bottom left"
+msgstr "Dưới cùng trái"
 
 msgid "media_dlg_align_bottom_right"
-msgstr "Bottom right"
+msgstr "Dưới cùng phải"
 
 msgid "media_dlg_flv_options"
-msgstr "Flash video options"
+msgstr "Tùy chọn video Flash"
 
 msgid "media_dlg_flv_scalemode"
-msgstr "Scale mode"
+msgstr "Chế độ thang"
 
 msgid "media_dlg_flv_buffer"
-msgstr "Buffer"
+msgstr "Bộ đệm"
 
 msgid "media_dlg_flv_startimage"
-msgstr "Start image"
+msgstr "Ảnh bắt đầu"
 
 msgid "media_dlg_flv_starttime"
-msgstr "Start time"
+msgstr "Thời gian bắt đầu"
 
 msgid "media_dlg_flv_defaultvolume"
-msgstr "Default volumne"
+msgstr "Âm lượng mặc định"
 
 msgid "media_dlg_flv_hiddengui"
-msgstr "Hidden GUI"
+msgstr "Ẩn GUI"
 
 msgid "media_dlg_flv_autostart"
-msgstr "Auto start"
+msgstr "Tự bắt đầu"
 
 msgid "media_dlg_flv_loop"
-msgstr "Loop"
+msgstr "Lặp"
 
 msgid "media_dlg_flv_showscalemodes"
-msgstr "Show scale modes"
+msgstr "Hiển thị chế độ thang"
 
 msgid "media_dlg_flv_smoothvideo"
-msgstr "Smooth video"
+msgstr "Video mượt"
 
 msgid "media_dlg_flv_jscallback"
-msgstr "JS Callback"
+msgstr "Hàm gọi ngược JS"
 
 msgid "fullpage_desc"
-msgstr "Document properties"
+msgstr "Thuộc tính văn bản"
 
 msgid "fullpage_delta_width"
 msgstr ""
@@ -1936,238 +1948,238 @@ msgid "fullpage_delta_height"
 msgstr ""
 
 msgid "fullpage_dlg_title"
-msgstr "Document properties"
+msgstr "Thuộc tính văn bản"
 
 msgid "fullpage_dlg_meta_tab"
-msgstr "General"
+msgstr "Chung"
 
 msgid "fullpage_dlg_appearance_tab"
-msgstr "Appearance"
+msgstr "Xuất hiện"
 
 msgid "fullpage_dlg_advanced_tab"
-msgstr "Advanced"
+msgstr "Nâng cao"
 
 msgid "fullpage_dlg_meta_props"
-msgstr "Meta information"
+msgstr "Thông tin Meta"
 
 msgid "fullpage_dlg_langprops"
-msgstr "Language and encoding"
+msgstr "Ngôn ngữ và mã hóa"
 
 msgid "fullpage_dlg_meta_title"
-msgstr "Title"
+msgstr "Tiêu đề"
 
 msgid "fullpage_dlg_meta_keywords"
-msgstr "Keywords"
+msgstr "Từ khóa"
 
 msgid "fullpage_dlg_meta_description"
-msgstr "Description"
+msgstr "Mô tả"
 
 msgid "fullpage_dlg_meta_robots"
 msgstr "Robots"
 
 msgid "fullpage_dlg_doctypes"
-msgstr "Doctype"
+msgstr "Kiểu tài liệu"
 
 msgid "fullpage_dlg_langcode"
-msgstr "Language code"
+msgstr "Mã ngôn ngữ"
 
 msgid "fullpage_dlg_langdir"
-msgstr "Language direction"
+msgstr "Hướng ngôn ngữ"
 
 msgid "fullpage_dlg_ltr"
-msgstr "Left to right"
+msgstr "Trái qua phải"
 
 msgid "fullpage_dlg_rtl"
-msgstr "Right to left"
+msgstr "Phải qua trái"
 
 msgid "fullpage_dlg_xml_pi"
-msgstr "XML declaration"
+msgstr "Khai báo XML"
 
 msgid "fullpage_dlg_encoding"
-msgstr "Character encoding"
+msgstr "Mã hóa ký tự"
 
 msgid "fullpage_dlg_appearance_bgprops"
-msgstr "Background properties"
+msgstr "Thuộc tính nền"
 
 msgid "fullpage_dlg_appearance_marginprops"
-msgstr "Body margins"
+msgstr "Biên của thân tài liệu"
 
 msgid "fullpage_dlg_appearance_linkprops"
-msgstr "Link colors"
+msgstr "Màu liên kết"
 
 msgid "fullpage_dlg_appearance_textprops"
-msgstr "Text properties"
+msgstr "Thuôc tính văn bản"
 
 msgid "fullpage_dlg_bgcolor"
-msgstr "Background color"
+msgstr "Màu nền"
 
 msgid "fullpage_dlg_bgimage"
-msgstr "Background image"
+msgstr "Ảnh nền"
 
 msgid "fullpage_dlg_left_margin"
-msgstr "Left margin"
+msgstr "Biên trái"
 
 msgid "fullpage_dlg_right_margin"
-msgstr "Right margin"
+msgstr "Biên phải"
 
 msgid "fullpage_dlg_top_margin"
-msgstr "Top margin"
+msgstr "Biên trên"
 
 msgid "fullpage_dlg_bottom_margin"
-msgstr "Bottom margin"
+msgstr "Biên dưới"
 
 msgid "fullpage_dlg_text_color"
-msgstr "Text color"
+msgstr "Màu văn bản"
 
 msgid "fullpage_dlg_font_size"
-msgstr "Font size"
+msgstr "Kích cỡ phông"
 
 msgid "fullpage_dlg_font_face"
-msgstr "Font face"
+msgstr "Phông chữ"
 
 msgid "fullpage_dlg_link_color"
-msgstr "Link color"
+msgstr "Màu liên kết"
 
 msgid "fullpage_dlg_hover_color"
-msgstr "Hover color"
+msgstr "Màu khi trỏ chuột"
 
 msgid "fullpage_dlg_visited_color"
-msgstr "Visited color"
+msgstr "Màu đã ghé thăm"
 
 msgid "fullpage_dlg_active_color"
-msgstr "Active color"
+msgstr "Màu hoạt động"
 
 msgid "fullpage_dlg_textcolor"
-msgstr "Color"
+msgstr "Màu"
 
 msgid "fullpage_dlg_fontsize"
-msgstr "Font size"
+msgstr "Kích cỡ phông"
 
 msgid "fullpage_dlg_fontface"
-msgstr "Font family"
+msgstr "Tập hợp phông"
 
 msgid "fullpage_dlg_meta_index_follow"
-msgstr "Index and follow the links"
+msgstr "Chỉ số và theo liên kết"
 
 msgid "fullpage_dlg_meta_index_nofollow"
-msgstr "Index and don't follow the links"
+msgstr "Chỉ số và không theo liên kết"
 
 msgid "fullpage_dlg_meta_noindex_follow"
-msgstr "Do not index but follow the links"
+msgstr "Không chỉ số nhưng theo liên kết"
 
 msgid "fullpage_dlg_meta_noindex_nofollow"
-msgstr "Do not index and don't follow the links"
+msgstr "Không chỉ số và không theo liên kết"
 
 msgid "fullpage_dlg_appearance_style"
-msgstr "Stylesheet and style properties"
+msgstr "Thuộc tính kiểu dáng và stylesheet"
 
 msgid "fullpage_dlg_stylesheet"
 msgstr "Stylesheet"
 
 msgid "fullpage_dlg_style"
-msgstr "Style"
+msgstr "Kiểu dáng"
 
 msgid "fullpage_dlg_author"
-msgstr "Author"
+msgstr "Tác giả"
 
 msgid "fullpage_dlg_copyright"
-msgstr "Copyright"
+msgstr "Bản quyền"
 
 msgid "fullpage_dlg_add"
-msgstr "Add new element"
+msgstr "Thêm phần tử mới"
 
 msgid "fullpage_dlg_remove"
-msgstr "Remove selected element"
+msgstr "Loại bỏ phần tử đã chọn"
 
 msgid "fullpage_dlg_moveup"
-msgstr "Move selected element up"
+msgstr "Di chuyển phần tử đã chọn đi lên"
 
 msgid "fullpage_dlg_movedown"
-msgstr "Move selected element down"
+msgstr "Di chuyển phần tử đã chọn đi xuống"
 
 msgid "fullpage_dlg_head_elements"
-msgstr "Head elements"
+msgstr "Phần tử đầu đề"
 
 msgid "fullpage_dlg_info"
-msgstr "Information"
+msgstr "Thông tin"
 
 msgid "fullpage_dlg_add_title"
-msgstr "Title element"
+msgstr "Phần tử tiêu đề"
 
 msgid "fullpage_dlg_add_meta"
-msgstr "Meta element"
+msgstr "Phần tử meta"
 
 msgid "fullpage_dlg_add_script"
-msgstr "Script element"
+msgstr "Phần tử script"
 
 msgid "fullpage_dlg_add_style"
-msgstr "Style element"
+msgstr "Phần tử kiểu dáng"
 
 msgid "fullpage_dlg_add_link"
-msgstr "Link element"
+msgstr "Phần tử liên kết"
 
 msgid "fullpage_dlg_add_base"
-msgstr "Base element"
+msgstr "Phần tử cơ sở"
 
 msgid "fullpage_dlg_add_comment"
 msgstr "Comment node"
 
 msgid "fullpage_dlg_title_element"
-msgstr "Title element"
+msgstr "Phần tử tiêu đề"
 
 msgid "fullpage_dlg_script_element"
-msgstr "Script element"
+msgstr "Phần tử script"
 
 msgid "fullpage_dlg_style_element"
-msgstr "Style element"
+msgstr "Phần tử kiểu dáng"
 
 msgid "fullpage_dlg_base_element"
-msgstr "Base element"
+msgstr "Phần tử cơ sở"
 
 msgid "fullpage_dlg_link_element"
-msgstr "Link element"
+msgstr "Phần tử liên kết"
 
 msgid "fullpage_dlg_meta_element"
-msgstr "Meta element"
+msgstr "Phần tử meta"
 
 msgid "fullpage_dlg_comment_element"
-msgstr "Comment"
+msgstr "Chú thích"
 
 msgid "fullpage_dlg_src"
 msgstr "Src"
 
 msgid "fullpage_dlg_language"
-msgstr "Language"
+msgstr "Ngôn ngữ"
 
 msgid "fullpage_dlg_href"
 msgstr "Href"
 
 msgid "fullpage_dlg_target"
-msgstr "Target"
+msgstr "Đích"
 
 msgid "fullpage_dlg_type"
-msgstr "Type"
+msgstr "Kiểu"
 
 msgid "fullpage_dlg_charset"
-msgstr "Charset"
+msgstr "Tập ký tự"
 
 msgid "fullpage_dlg_defer"
-msgstr "Defer"
+msgstr "Trì hoãn"
 
 msgid "fullpage_dlg_media"
-msgstr "Media"
+msgstr "Phương tiện"
 
 msgid "fullpage_dlg_properties"
-msgstr "Properties"
+msgstr "Thuộc tính"
 
 msgid "fullpage_dlg_name"
-msgstr "Name"
+msgstr "Tên"
 
 msgid "fullpage_dlg_value"
-msgstr "Value"
+msgstr "Giá trị"
 
 msgid "fullpage_dlg_content"
-msgstr "Content"
+msgstr "Nội dung"
 
 msgid "fullpage_dlg_rel"
 msgstr "Rel"
@@ -2179,34 +2191,34 @@ msgid "fullpage_dlg_hreflang"
 msgstr "Href lang"
 
 msgid "fullpage_dlg_general_props"
-msgstr "General"
+msgstr "Chung"
 
 msgid "fullpage_dlg_advanced_props"
-msgstr "Advanced"
+msgstr "Nâng cao"
 
 msgid "template_desc"
-msgstr "Insert predefined template content"
+msgstr "Chèn một nội dung mẫu định nghĩa trước"
 
 msgid "template_dlg_title"
-msgstr "Templates"
+msgstr "Mẫu"
 
 msgid "template_dlg_label"
-msgstr "Template"
+msgstr "Mẫu"
 
 msgid "template_dlg_desc_label"
-msgstr "Description"
+msgstr "Mô tả"
 
 msgid "template_dlg_desc"
-msgstr "Insert predefined template content"
+msgstr "Chèn một nội dung mẫu định nghĩa trước"
 
 msgid "template_dlg_select"
-msgstr "Select a template"
+msgstr "Chọn một mẫu"
 
 msgid "template_dlg_preview"
-msgstr "Preview"
+msgstr "Xem trước"
 
 msgid "template_dlg_warning"
-msgstr "Warning: Updating a template with a different one may cause data loss."
+msgstr "Cảnh báo: Cập nhật một mẫu với một sự sai khác có thể làm mất dữ liệu."
 
 msgid "template_dlg_mdate_format"
 msgstr "%Y-%m-%d %H:%M:%S"
@@ -2215,47 +2227,77 @@ msgid "template_dlg_cdate_format"
 msgstr "%Y-%m-%d %H:%M:%S"
 
 msgid "template_dlg_months_long"
-msgstr "January,February,March,April,May,June,July,August,September,October,November,December"
+msgstr "Tháng Một,Tháng Hai,Tháng Ba,Tháng Tư,Tháng Năm,Tháng Sáu,Tháng Bảy,Tháng Tám,Tháng Chín,Tháng Mười,Tháng Mười Một,Tháng Mười Hai"
 
 msgid "template_dlg_months_short"
-msgstr "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec"
+msgstr "Thg1,Thg2,Thg3,Thg4,Thg5,Thg6,Thg7,Thg8,Thg9,Th10,Th11,Th12"
 
 msgid "template_dlg_day_long"
-msgstr "Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday"
+msgstr "Chủ Nhật,Thứ Hai,Thứ Ba,Thứ Tư,Thứ Năm,Thứ Sáu,Thứ Bảy,Chủ Nhật"
 
 msgid "template_dlg_day_short"
-msgstr "Sun,Mon,Tue,Wed,Thu,Fri,Sat,Sun"
+msgstr "CN,T2,T3,T4,T5,T6,T7,CN"
 
 msgid "visualchars_desc"
-msgstr "Visual control characters on/off."
+msgstr "Bặt/Tắt các ký tự điều khiển trực quan."
 
 msgid "spellchecker_desc"
-msgstr "Kiểm tra chính tả"
+msgstr "Bật/Tắt kiểm tra chính tả"
 
 msgid "spellchecker_menu"
-msgstr "Tùy chọn kiểm tra chính tả"
+msgstr "Thiết lập kiểm tra chính tả"
 
 msgid "spellchecker_ignore_word"
-msgstr "Bỏ qua một từ này"
+msgstr "Bỏ qua từ ngữ"
 
 msgid "spellchecker_ignore_words"
-msgstr "Bỏ qua tất cả từ này"
+msgstr "Bỏ qua tất cả"
 
 msgid "spellchecker_langs"
 msgstr "Ngôn ngữ"
 
 msgid "spellchecker_wait"
-msgstr "Vui lòng đợi trong giây lát..."
+msgstr "Vui lòng chờ..."
 
 msgid "spellchecker_sug"
-msgstr "Các từ tương tự"
+msgstr "Gợi ý"
 
 msgid "spellchecker_no_sug"
-msgstr "Không có từ tương tự"
+msgstr "Không có gợi ý"
 
 msgid "spellchecker_no_mpell"
-msgstr "Không có lỗi chính tả"
+msgstr "Không có lỗi chính tả được tìm thấy."
 
 msgid "pagebreak_desc"
-msgstr "Insert page break."
+msgstr "Chèn ngắt trang."
+
+msgid "advlist_types"
+msgstr "Kiểu"
+
+msgid "advlist_def"
+msgstr "Mặc định"
+
+msgid "advlist_lower_alpha"
+msgstr "Ký hiệu alpha thường"
+
+msgid "advlist_lower_greek"
+msgstr "Ký hiệu Hy-lạp thường"
+
+msgid "advlist_lower_roman"
+msgstr "Ký hiệu La mã thường"
+
+msgid "advlist_upper_alpha"
+msgstr "Ký hiệu alpha cao"
+
+msgid "advlist_upper_roman"
+msgstr "Ký hiệu La mã hoa"
+
+msgid "advlist_circle"
+msgstr "Tròng"
+
+msgid "advlist_disc"
+msgstr "Đĩa"
+
+msgid "advlist_square"
+msgstr "Vuông"
 

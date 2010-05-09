@@ -1,12 +1,12 @@
 # This is the Hebrew language pack for TinyMCE
-# Version 7.9
+# Version 8.2
 #
 # Motti Bartall
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2010-03-04 00:00+0000\n"
+"PO-Revision-Date: 2010-04-21 00:00+0000\n"
 "Last-Translator: Motti Bartall\n"
 "Language-Team: Motti Bartall\n"
 "MIME-Version: 1.0\n"
@@ -1296,6 +1296,12 @@ msgstr "הדבקה מ-WORD"
 msgid "paste_selectall_desc"
 msgstr "בחר הכל"
 
+msgid "paste_plaintext_mode_sticky"
+msgstr "Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode."
+
+msgid "paste_plaintext_mode"
+msgstr "Paste is now in plain text mode. Click again to toggle back to regular paste mode."
+
 msgid "paste_dlg_text_title"
 msgstr "הדביקו בחלון זה את הטקסט באמצעות המקשים CTRL+V."
 
@@ -1607,6 +1613,12 @@ msgstr "גבול"
 
 msgid "autosave_unload_msg"
 msgstr "השינויים שביצעת לא ישמרו אם תעבור מדף זה"
+
+msgid "autosave_restore_content"
+msgstr "Restore auto-saved content."
+
+msgid "autosave_warning_message"
+msgstr "If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?."
 
 msgid "fullscreen_desc"
 msgstr "מעבר למסך מלא/חלקי"
@@ -2258,4 +2270,34 @@ msgstr "לא נמצאו שגיאות איות"
 
 msgid "pagebreak_desc"
 msgstr "הוספת מעבר דף"
+
+msgid "advlist_types"
+msgstr "סוגים"
+
+msgid "advlist_def"
+msgstr "ברירת מחדל"
+
+msgid "advlist_lower_alpha"
+msgstr "Lower alpha"
+
+msgid "advlist_lower_greek"
+msgstr "Lower greek"
+
+msgid "advlist_lower_roman"
+msgstr "Lower roman"
+
+msgid "advlist_upper_alpha"
+msgstr "Upper alpha"
+
+msgid "advlist_upper_roman"
+msgstr "Upper roman"
+
+msgid "advlist_circle"
+msgstr "עגול"
+
+msgid "advlist_disc"
+msgstr "דיסק"
+
+msgid "advlist_square"
+msgstr "מרובע"
 
