@@ -1,14 +1,14 @@
 # deutsch
-# Version 46.7
+# Version 48.2
 #
-# Markus Gappa
+# David Buehn
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2010-03-24 00:00+0000\n"
-"Last-Translator: Markus Gappa\n"
-"Language-Team: Markus Gappa\n"
+"PO-Revision-Date: 2010-05-05 00:00+0000\n"
+"Last-Translator: David Buehn\n"
+"Language-Team: David Buehn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -73,10 +73,10 @@ msgid "simple_striketrough_desc"
 msgstr "Durchgestrichen"
 
 msgid "simple_bullist_desc"
-msgstr "Unsortierte Liste"
+msgstr "Aufzählung"
 
 msgid "simple_numlist_desc"
-msgstr "Sortierte Liste"
+msgstr "Nummerierung"
 
 msgid "simple_undo_desc"
 msgstr "Rückgängig (Strg+Z)"
@@ -157,13 +157,13 @@ msgid "advanced_striketrough_desc"
 msgstr "Durchgestrichen"
 
 msgid "advanced_justifyleft_desc"
-msgstr "Links ausgerichtet"
+msgstr "Linksbündig"
 
 msgid "advanced_justifycenter_desc"
-msgstr "Mittig ausgerichtet"
+msgstr "Zentriert"
 
 msgid "advanced_justifyright_desc"
-msgstr "Rechts ausgerichtet"
+msgstr "Rechtsbündig"
 
 msgid "advanced_justifyfull_desc"
 msgstr "Blocksatz"
@@ -301,7 +301,7 @@ msgid "advanced_dlg_about_title"
 msgstr "Über TinyMCE"
 
 msgid "advanced_dlg_about_general"
-msgstr "Über…"
+msgstr "Über"
 
 msgid "advanced_dlg_about_help"
 msgstr "Hilfe"
@@ -382,7 +382,7 @@ msgid "advanced_dlg_image_border"
 msgstr "Rahmen"
 
 msgid "advanced_dlg_image_dimensions"
-msgstr "Ausmaße"
+msgstr "Abmessungen"
 
 msgid "advanced_dlg_image_vspace"
 msgstr "Vertikaler Abstand"
@@ -475,7 +475,7 @@ msgid "insertdatetime_months_long"
 msgstr "Januar,Februar,März,April,Mai,Juni,Juli,August,September,Oktober,November,Dezember"
 
 msgid "insertdatetime_months_short"
-msgstr "Jan,Feb,März,Apr,Mai,Juni,Juli,Aug,Sept,Okt,Nov,Dez"
+msgstr "Jan,Feb,Mär,Apr,Mai,Juni,Juli,Aug,Sept,Okt,Nov,Dez"
 
 msgid "insertdatetime_day_long"
 msgstr "Sonntag,Montag,Dienstag,Mittwoch,Donnerstag,Freitag,Samstag,Sonntag"
@@ -499,10 +499,10 @@ msgid "layer_insertlayer_desc"
 msgstr "Neue Ebene einfügen"
 
 msgid "layer_forward_desc"
-msgstr "Vor verschieben"
+msgstr "Nach vorne holen"
 
 msgid "layer_backward_desc"
-msgstr "Zurück verschieben"
+msgstr "Nach hinten legen"
 
 msgid "layer_absolute_desc"
 msgstr "Absolute Positionierung"
@@ -523,7 +523,7 @@ msgid "iespell_iespell_desc"
 msgstr "Rechtschreibprüfung"
 
 msgid "iespell_download"
-msgstr "iSpell konnte nicht gefunden werden. Wollen Sie es installieren?"
+msgstr "ieSpell konnte nicht gefunden werden. Wollen Sie es installieren?"
 
 msgid "advhr_advhr_desc"
 msgstr "Trennlinie"
@@ -1296,6 +1296,12 @@ msgstr "Mit Formatierungen (aus Word) einfügen"
 msgid "paste_selectall_desc"
 msgstr "Alles auswählen"
 
+msgid "paste_plaintext_mode_sticky"
+msgstr "Einfügemodus ist nun \"Nur Text\". Erneut klicken (oder das Einfügen aus der Zwischenablage) stellt den Normalmodus wieder her."
+
+msgid "paste_plaintext_mode"
+msgstr "Einfügemodus ist nun \"Nur Text\". Erneut klicken stellt den Normalmodus wieder her."
+
 msgid "paste_dlg_text_title"
 msgstr "Drücken Sie auf Ihrer Tastatur Strg+V, um den Text einzufügen."
 
@@ -1607,6 +1613,12 @@ msgstr "alle 4 Seiten (Border)"
 
 msgid "autosave_unload_msg"
 msgstr "Ihre Änderungen werden verloren gehen, wenn Sie die Seite verlassen."
+
+msgid "autosave_restore_content"
+msgstr "Automatisch gespeicherten Inhalt wiederherstellen."
+
+msgid "autosave_warning_message"
+msgstr "Wenn Sie den Inhalt wiederherstellen, gehen die aktuellen Daten im Editor verloren.\n\nSind sie sicher, dass Sie den Inhalt wiederherstellen möchten?"
 
 msgid "fullscreen_desc"
 msgstr "Vollbildschirm"
@@ -2185,7 +2197,7 @@ msgid "fullpage_dlg_advanced_props"
 msgstr "Erweitert"
 
 msgid "template_desc"
-msgstr "Vorgefertigter Vorlageninhalt einfügen"
+msgstr "Inhalt aus Vorlage einfügen"
 
 msgid "template_dlg_title"
 msgstr "Vorlagen"
@@ -2197,7 +2209,7 @@ msgid "template_dlg_desc_label"
 msgstr "Beschreibung"
 
 msgid "template_dlg_desc"
-msgstr "Vorgefertigter Vorlageninhalt einfügen"
+msgstr "Inhalt aus Vorlage einfügen"
 
 msgid "template_dlg_select"
 msgstr "Vorlage auswählen"
@@ -2206,7 +2218,7 @@ msgid "template_dlg_preview"
 msgstr "Vorschau"
 
 msgid "template_dlg_warning"
-msgstr "Warnung: Eine Vorlage mit einer anderen zu aktualisieren kann einen Datenverlust herbeiführen!"
+msgstr "Warnung: Eine Vorlage mit einer anderen zu aktualisieren kann zu einem Datenverlust führen!"
 
 msgid "template_dlg_mdate_format"
 msgstr "%Y-%m-%d %H:%M:%S"
@@ -2258,4 +2270,34 @@ msgstr "Keine Rechtschreibfehler gefunden."
 
 msgid "pagebreak_desc"
 msgstr "Seitenumbruch einfügen"
+
+msgid "advlist_types"
+msgstr "Typen"
+
+msgid "advlist_def"
+msgstr "Standard"
+
+msgid "advlist_lower_alpha"
+msgstr "a. b. c."
+
+msgid "advlist_lower_greek"
+msgstr "1. 2. 3."
+
+msgid "advlist_lower_roman"
+msgstr "i. ii. iii."
+
+msgid "advlist_upper_alpha"
+msgstr "A. B. C."
+
+msgid "advlist_upper_roman"
+msgstr "I. II. III."
+
+msgid "advlist_circle"
+msgstr "Kreis"
+
+msgid "advlist_disc"
+msgstr "Punkt"
+
+msgid "advlist_square"
+msgstr "Quadrat"
 

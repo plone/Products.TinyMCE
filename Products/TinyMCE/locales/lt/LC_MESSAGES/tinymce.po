@@ -1,12 +1,12 @@
 # Tai yra lietuvių kalbos vertimas TinyMCE redaktoriui.
-# Version 5.0
+# Version 5.1
 #
 # Laurynas Karvelis, Aurimas Fišeras
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2010-02-27 00:00+0000\n"
+"PO-Revision-Date: 2010-03-26 00:00+0000\n"
 "Last-Translator: Laurynas Karvelis, Aurimas Fišeras\n"
 "Language-Team: Laurynas Karvelis, Aurimas Fišeras\n"
 "MIME-Version: 1.0\n"
@@ -1306,7 +1306,7 @@ msgid "paste_dlg_word_title"
 msgstr "Naudokite CTRL+V tekstui įdėti į šį langą."
 
 msgid "table_desc"
-msgstr "Įterpia naują lentelę"
+msgstr "Įterpti/Redaguoti lentelę"
 
 msgid "table_row_before_desc"
 msgstr "Įterpti eilutę prieš"
@@ -1336,7 +1336,7 @@ msgid "table_row_desc"
 msgstr "Lentelės eilutės nustatymai"
 
 msgid "table_cell_desc"
-msgstr "Lentelės langelių nustatymai"
+msgstr "Lentelės langelio nustatymai"
 
 msgid "table_props_desc"
 msgstr "Lentelės nustatymai"
@@ -1607,6 +1607,12 @@ msgstr "rėmelis"
 
 msgid "autosave_unload_msg"
 msgstr "Visi pakeitimai bus prarasti, jei išeisite iš šio puslapio."
+
+msgid "autosave_restore_content"
+msgstr "Atstatyti automatiškai išsaugotą turinį."
+
+msgid "autosave_warning_message"
+msgstr "Jei atstatysite išsaugotą turinį, prarasite esamą turinį redaktoriaus lange.\n\nAr tikrai norite atstatyti išsaugotą turinį?"
 
 msgid "fullscreen_desc"
 msgstr "Perjungti viso ekrano režimą"
@@ -2258,4 +2264,34 @@ msgstr "Klaidų nerasta."
 
 msgid "pagebreak_desc"
 msgstr "Įterpti puslapio pabaigos žymę."
+
+msgid "advlist_types"
+msgstr "Tipai"
+
+msgid "advlist_def"
+msgstr "Numatytasis"
+
+msgid "advlist_lower_alpha"
+msgstr "Mažosiomis raidėmis"
+
+msgid "advlist_lower_greek"
+msgstr "Mažaisiais graikų"
+
+msgid "advlist_lower_roman"
+msgstr "Mažaisiais romėnų"
+
+msgid "advlist_upper_alpha"
+msgstr "Didžiosiomis raidėmis"
+
+msgid "advlist_upper_roman"
+msgstr "Didžiaisiais romėnų"
+
+msgid "advlist_circle"
+msgstr "Apskritimas"
+
+msgid "advlist_disc"
+msgstr "Diskas"
+
+msgid "advlist_square"
+msgstr "Kvadratas"
 

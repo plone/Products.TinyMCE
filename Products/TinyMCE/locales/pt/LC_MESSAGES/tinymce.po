@@ -1,12 +1,12 @@
 # Este é um pacote de idioma em Português PT-BR para o TinyMCE.
-# Version 21.8
+# Version 22.4
 #
 # Marcel
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2010-03-18 00:00+0000\n"
+"PO-Revision-Date: 2010-05-05 00:00+0000\n"
 "Last-Translator: Marcel\n"
 "Language-Team: Marcel\n"
 "MIME-Version: 1.0\n"
@@ -1296,6 +1296,12 @@ msgstr "Colar (copiado do WORD)"
 msgid "paste_selectall_desc"
 msgstr "Selecionar tudo"
 
+msgid "paste_plaintext_mode_sticky"
+msgstr "Comando colar está em modo texto simples. Clique novamente para voltar para o modo normal. Depois de colar alguma coisa retornará para o modo normal."
+
+msgid "paste_plaintext_mode"
+msgstr "Comando colar está em modo texto simples. Clique novamente para voltar para o modo normal."
+
 msgid "paste_dlg_text_title"
 msgstr "Use CTRL+V para colar o texto na janela."
 
@@ -1607,6 +1613,12 @@ msgstr "Limites"
 
 msgid "autosave_unload_msg"
 msgstr "As mudanças efetuadas serão perdidas se sair desta página."
+
+msgid "autosave_restore_content"
+msgstr "Restaura conteúdo salvo automaticamente."
+
+msgid "autosave_warning_message"
+msgstr "Se restaurar o conteúdo, você irá perder tudo que está atualmente no editor.\n\nTem certeza que quer restaurar o conteúdo salvo?"
 
 msgid "fullscreen_desc"
 msgstr "Tela Inteira"
@@ -2258,4 +2270,34 @@ msgstr "Não foram detectados erros de ortografia."
 
 msgid "pagebreak_desc"
 msgstr "Inserir quebra de página."
+
+msgid "advlist_types"
+msgstr "Tipos"
+
+msgid "advlist_def"
+msgstr "Padrão"
+
+msgid "advlist_lower_alpha"
+msgstr "Alfabeto minúsculo"
+
+msgid "advlist_lower_greek"
+msgstr "Alfabeto grego"
+
+msgid "advlist_lower_roman"
+msgstr "Num. romanos minúsculos"
+
+msgid "advlist_upper_alpha"
+msgstr "Alfabeto maiúsculos"
+
+msgid "advlist_upper_roman"
+msgstr "Num. romanos maiúsculos"
+
+msgid "advlist_circle"
+msgstr "Círculo"
+
+msgid "advlist_disc"
+msgstr "Disco"
+
+msgid "advlist_square"
+msgstr "Quadrado"
 

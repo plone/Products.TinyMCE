@@ -1,12 +1,12 @@
 # Magyar fordítás a TinyMCE-hez.
-# Version 13.3
+# Version 13.8
 #
 # Horváth László, Veres Ferenc lion@netngine.hu
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2010-03-22 00:00+0000\n"
+"PO-Revision-Date: 2010-05-05 00:00+0000\n"
 "Last-Translator: Horváth László, Veres Ferenc lion@netngine.hu\n"
 "Language-Team: Horváth László, Veres Ferenc lion@netngine.hu\n"
 "MIME-Version: 1.0\n"
@@ -1296,6 +1296,12 @@ msgstr "Beszúrás Wordből"
 msgid "paste_selectall_desc"
 msgstr "Mindent kijelöl"
 
+msgid "paste_plaintext_mode_sticky"
+msgstr "Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode."
+
+msgid "paste_plaintext_mode"
+msgstr "Paste is now in plain text mode. Click again to toggle back to regular paste mode."
+
 msgid "paste_dlg_text_title"
 msgstr "Használja a Ctrl+V-t a billentyűzetén a beillesztéshez."
 
@@ -1607,6 +1613,12 @@ msgstr "keret"
 
 msgid "autosave_unload_msg"
 msgstr "A módosítások nem lesznek mentve, ha elhagyja az oldalt."
+
+msgid "autosave_restore_content"
+msgstr "Restore auto-saved content."
+
+msgid "autosave_warning_message"
+msgstr "If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?."
 
 msgid "fullscreen_desc"
 msgstr "Teljesképernyős mód ki-/bekapcsolása"
@@ -2258,4 +2270,34 @@ msgstr "Nem találtam helyesírási hibát."
 
 msgid "pagebreak_desc"
 msgstr "Oldaltörés beszúrása."
+
+msgid "advlist_types"
+msgstr "Types"
+
+msgid "advlist_def"
+msgstr "Default"
+
+msgid "advlist_lower_alpha"
+msgstr "Lower alpha"
+
+msgid "advlist_lower_greek"
+msgstr "Lower greek"
+
+msgid "advlist_lower_roman"
+msgstr "Lower roman"
+
+msgid "advlist_upper_alpha"
+msgstr "Upper alpha"
+
+msgid "advlist_upper_roman"
+msgstr "Upper roman"
+
+msgid "advlist_circle"
+msgstr "Kör"
+
+msgid "advlist_disc"
+msgstr "Lemez"
+
+msgid "advlist_square"
+msgstr "Square"
 

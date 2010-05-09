@@ -1,12 +1,12 @@
 # Detta är det svenska språkpaketet för TinyMCE.
-# Version 6.8
+# Version 7.2
 #
 # O. Känd
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2010-03-14 00:00+0000\n"
+"PO-Revision-Date: 2010-04-11 00:00+0000\n"
 "Last-Translator: O. Känd\n"
 "Language-Team: O. Känd\n"
 "MIME-Version: 1.0\n"
@@ -1296,6 +1296,12 @@ msgstr "Klistra in från Word"
 msgid "paste_selectall_desc"
 msgstr "Markera allt"
 
+msgid "paste_plaintext_mode_sticky"
+msgstr "Inklistring är nu i textläge. Efter att du klistrat in kommer den att återgå till normalläge."
+
+msgid "paste_plaintext_mode"
+msgstr "Inklistring är nu i textläge."
+
 msgid "paste_dlg_text_title"
 msgstr "Använd ctrl-v på ditt tangentbord för att klistra in i detta fönster."
 
@@ -1607,6 +1613,12 @@ msgstr "border"
 
 msgid "autosave_unload_msg"
 msgstr "De förändringar som du gjort kommer att gå förlorade om du lämnar sidan."
+
+msgid "autosave_restore_content"
+msgstr "Återskapa automatiskt sparat innehåll."
+
+msgid "autosave_warning_message"
+msgstr "Om du återskapar innehåll så kommer det nuvarande innehållet i fältet att raderas.\n\nÄr du säker på att du vill göra detta?"
 
 msgid "fullscreen_desc"
 msgstr "Slå av/på fullskärmsläge"
@@ -2258,4 +2270,34 @@ msgstr "Inga felstavningar funna."
 
 msgid "pagebreak_desc"
 msgstr "Infoga sidbrytning"
+
+msgid "advlist_types"
+msgstr "Typer"
+
+msgid "advlist_def"
+msgstr "Default"
+
+msgid "advlist_lower_alpha"
+msgstr "Lower alpha"
+
+msgid "advlist_lower_greek"
+msgstr "Lower greek"
+
+msgid "advlist_lower_roman"
+msgstr "Lower roman"
+
+msgid "advlist_upper_alpha"
+msgstr "Upper alpha"
+
+msgid "advlist_upper_roman"
+msgstr "Upper roman"
+
+msgid "advlist_circle"
+msgstr "Cirkel"
+
+msgid "advlist_disc"
+msgstr "Disc"
+
+msgid "advlist_square"
+msgstr "Fyrkant"
 

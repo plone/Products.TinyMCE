@@ -1,12 +1,12 @@
 # TinyMCE Chinese-Simple
-# Version 2.8
+# Version 3.0
 #
 # tony chan
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2009-11-26 00:00+0000\n"
+"PO-Revision-Date: 2010-04-22 00:00+0000\n"
 "Last-Translator: tony chan\n"
 "Language-Team: tony chan\n"
 "MIME-Version: 1.0\n"
@@ -1296,6 +1296,12 @@ msgstr "从Word贴上"
 msgid "paste_selectall_desc"
 msgstr "全选"
 
+msgid "paste_plaintext_mode_sticky"
+msgstr "plaintext mode sticky"
+
+msgid "paste_plaintext_mode"
+msgstr "plaintext mode"
+
 msgid "paste_dlg_text_title"
 msgstr "在键盘上同时按下CTRL和V键，以贴上文字到此视窗。"
 
@@ -1607,6 +1613,12 @@ msgstr "外框"
 
 msgid "autosave_unload_msg"
 msgstr "如果离开此页面将导致所做的更改全部丢失。"
+
+msgid "autosave_restore_content"
+msgstr "恢复内容"
+
+msgid "autosave_warning_message"
+msgstr "提示信息"
 
 msgid "fullscreen_desc"
 msgstr "开关全屏模式"
@@ -1966,7 +1978,7 @@ msgid "fullpage_dlg_meta_robots"
 msgstr "Robots"
 
 msgid "fullpage_dlg_doctypes"
-msgstr "Doctype"
+msgstr "HTML文档类型"
 
 msgid "fullpage_dlg_langcode"
 msgstr "语言编码"
@@ -2258,4 +2270,34 @@ msgstr "未发现拼写错误"
 
 msgid "pagebreak_desc"
 msgstr "插入分页符号"
+
+msgid "advlist_types"
+msgstr "Types"
+
+msgid "advlist_def"
+msgstr "Default"
+
+msgid "advlist_lower_alpha"
+msgstr "Lower alpha"
+
+msgid "advlist_lower_greek"
+msgstr "Lower greek"
+
+msgid "advlist_lower_roman"
+msgstr "Lower roman"
+
+msgid "advlist_upper_alpha"
+msgstr "Upper alpha"
+
+msgid "advlist_upper_roman"
+msgstr "Upper roman"
+
+msgid "advlist_circle"
+msgstr "Circle"
+
+msgid "advlist_disc"
+msgstr "Disc"
+
+msgid "advlist_square"
+msgstr "Square"
 
