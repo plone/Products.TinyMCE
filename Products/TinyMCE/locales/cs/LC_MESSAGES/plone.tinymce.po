@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: plone.tinymce\n"
-"POT-Creation-Date: 2009-10-13 15:00+0000\n"
+"POT-Creation-Date: 2010-05-12 09:08+0000\n"
 "PO-Revision-Date: 2010-04-05 12:20+0100\n"
 "Last-Translator: Radim Novotny <novotny.radim@gmail.com>\n"
 "Language-Team: DMS4U <info@dms4u.cz>\n"
@@ -16,6 +16,10 @@ msgstr ""
 "Language-Name: Czech\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone.tinymce\n"
+
+#: ../utility.py:596
+msgid "(remove style)"
+msgstr ""
 
 #: ../interfaces/utility.py:152
 msgid "Align center"
@@ -82,6 +86,7 @@ msgid "Copy"
 msgstr "Kopírovat"
 
 #. Default: "Current Folder"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:30
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:31
 msgid "Current Folder"
 msgstr "Aktuální složka"
@@ -103,6 +108,7 @@ msgid "Definition list"
 msgstr "Definiční seznam"
 
 #. Default: "Description"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:123
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:159
 msgid "Description"
 msgstr "Popis"
@@ -188,6 +194,7 @@ msgid "Even row"
 msgstr "Sudý řádek"
 
 #. Default: "External"
+#: ../interfaces/utility.py:67
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:41
 msgid "External"
 msgstr "Externí"
@@ -207,6 +214,7 @@ msgid "Fancy vertical listing"
 msgstr ""
 
 #. Default: "File"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:109
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:145
 msgid "File"
 msgstr "Soubor"
@@ -233,6 +241,7 @@ msgid "Highlight"
 msgstr "Zvýraznit"
 
 #. Default: "Home"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:25
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:26
 msgid "Home"
 msgstr "Domů"
@@ -323,6 +332,8 @@ msgid "Left to right"
 msgstr "Zleva doprava"
 
 #. Default: "Libraries"
+#: ../browser/controlpanel.py:40
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:21
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:22
 msgid "Libraries"
 msgstr "Knihovny"
@@ -356,6 +367,18 @@ msgstr "Mail"
 msgid "Named"
 msgstr "Pojmenované"
 
+#: ../utility.py:605
+msgid "No anchors in this page"
+msgstr ""
+
+#: ../utility.py:604
+msgid "No items in this folder"
+msgstr ""
+
+#: ../utility.py:597
+msgid "Normal paragraph"
+msgstr ""
+
 #: ../interfaces/utility.py:334
 msgid "Numeric"
 msgstr "Číselné"
@@ -386,12 +409,18 @@ msgstr "Vložit jako prostý text"
 msgid "Paste from Word"
 msgstr "Vložit z Wordu"
 
+#: ../utility.py:598
+msgid "Plain cell"
+msgstr ""
+
 #. Default: "Preview"
+#: ../interfaces/utility.py:244
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:102
 msgid "Preview"
 msgstr "Náhled"
 
 #: ../interfaces/utility.py:240
+#: ../utility.py:603
 msgid "Print"
 msgstr "Tisk"
 
@@ -427,6 +456,7 @@ msgid "Save"
 msgstr "Uložit"
 
 #. Default: "Search"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:40
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:56
 msgid "Search"
 msgstr "Vyhledat"
@@ -434,6 +464,10 @@ msgstr "Vyhledat"
 #: ../interfaces/utility.py:112
 msgid "Select Style"
 msgstr "Vybrat styl"
+
+#: ../utility.py:602
+msgid "Selection"
+msgstr ""
 
 #: ../browser/controlpanel.py:49
 msgid "Settings for the TinyMCE Wysiwyg editor."
@@ -446,6 +480,10 @@ msgstr "Kontrola pravopisu"
 #: ../interfaces/utility.py:128
 msgid "Strikethrough"
 msgstr "Přeškrtnuté"
+
+#: ../utility.py:599
+msgid "Style..."
+msgstr ""
 
 #: ../interfaces/utility.py:49
 msgid "Styles"
@@ -477,6 +515,14 @@ msgstr "Nastavení tabulky"
 #: ../interfaces/utility.py:54
 msgid "Table styles"
 msgstr "Styly tabulky"
+
+#: ../utility.py:601
+msgid "Tables"
+msgstr ""
+
+#: ../utility.py:600
+msgid "Text"
+msgstr ""
 
 #: ../interfaces/utility.py:332
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
@@ -571,16 +617,19 @@ msgid "Unordered list"
 msgstr "Nečíslovaný seznam"
 
 #. Default: "Up one level"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:52
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:68
 msgid "Up one level"
 msgstr "Nahoru o jednu úroveň"
 
 #. Default: "Upload"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:129
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:165
 msgid "Upload"
 msgstr "Nahrát"
 
 #. Default: "Upload file"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:55
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:71
 msgid "Upload file"
 msgstr "Nahrát soubor"
