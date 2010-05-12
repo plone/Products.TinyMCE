@@ -10,6 +10,7 @@ var current_path;
 var current_link = "";
 var current_url = "";
 var current_pageanchor = "";
+var labels = "";
 
 function preinit() {
     var url;
@@ -29,6 +30,7 @@ function init() {
     var elm = inst.selection.getNode();
     var action = "insert";
     var html;
+    labels = eval(inst.getParam('labels'));
 
     document.getElementById('anchorlinkcontainer').innerHTML = getAnchorListHTML();
 
@@ -427,7 +429,7 @@ function getAnchorListHTML() {
     }
 
     if (html == "") {
-        html = '<div class="odd">No anchors on this page</div>';
+        html = '<div class="odd">'+ labels['label_no_anchors'] +'</div>';
     }
 
     return html;
@@ -745,7 +747,7 @@ function getFolderListing(path, method) {
             var html = "";
             var data = eval('(' + text + ')');
             if (data.items.length == 0) {
-                html = "No items in this folder";
+                html = labels['label_no_items'];
             } else {
                 for (var i = 0; i < data.items.length; i++) {
                     html += '<div class="' + (i % 2 == 0 ? 'even' : 'odd');

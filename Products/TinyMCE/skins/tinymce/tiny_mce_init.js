@@ -47,6 +47,7 @@ function TinyMCEConfig(id) {
             inlinepopups_skin : "plonepopup",
             plugins : this.getPlugins(),
 
+            labels : this.widget_config.labels,
             theme_advanced_styles : this.getStyles(),
             theme_advanced_buttons1 : this.getToolbar(0),
             theme_advanced_buttons2 : this.getToolbar(1),
@@ -142,7 +143,7 @@ function TinyMCEConfig(id) {
         h['Print'].push('{ title: "Print", tag: "", className: "-", type: "Print" }');
 
         // Add defaults
-        h['Text'].push('{ title: "Normal paragraph", tag: "p", className: " ", type: "Text" }');
+        h['Text'].push('{ title: "' + this.widget_config.labels['label_paragraph'] + '", tag: "p", className: " ", type: "Text" }');
 
         for (var i = 0; i < this.widget_config.styles.length; i++) {
             e = this.widget_config.styles[i].split('|');
@@ -178,8 +179,8 @@ function TinyMCEConfig(id) {
             }
             h[styletype].push('{ title: "' + e[0] + '", tag: "' + e[1] + '", className: "' + e[2] + '", type: "' + styletype + '" }');
         }
-        h['Selection'].push('{ title: "(remove style)", tag: "", className: "", type: "Selection" }');
-        h['Tables'].push('{ title: "Plain cell", tag: "td", className: "", type: "Tables" }');
+        h['Selection'].push('{ title: "' + this.widget_config.labels['label_styles'] + '", tag: "", className: "", type: "Selection" }');
+        h['Tables'].push('{ title: "'+this.widget_config.labels['label_plain_cell'] +'", tag: "td", className: "", type: "Tables" }');
 
         // Add items to array
         var a = [];
