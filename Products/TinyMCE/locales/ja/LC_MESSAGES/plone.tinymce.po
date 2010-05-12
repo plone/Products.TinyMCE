@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2009-10-13 15:00+0000\n"
+"POT-Creation-Date: 2010-05-12 09:08+0000\n"
 "PO-Revision-Date: 2010-03-25 01:55+0900\n"
 "Last-Translator: Takeshi Yamamoto (Retsu) <tyam@mac.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,10 @@ msgstr ""
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone.tinymce\n"
+
+#: ../utility.py:596
+msgid "(remove style)"
+msgstr ""
 
 #: ../interfaces/utility.py:152
 msgid "Align center"
@@ -82,6 +86,7 @@ msgid "Copy"
 msgstr "コピー"
 
 #. Default: "Current Folder"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:30
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:31
 msgid "Current Folder"
 msgstr "カレントフォルダ"
@@ -103,6 +108,7 @@ msgid "Definition list"
 msgstr "定義リスト"
 
 #. Default: "Description"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:123
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:159
 msgid "Description"
 msgstr "説明"
@@ -188,6 +194,7 @@ msgid "Even row"
 msgstr "偶数行"
 
 #. Default: "External"
+#: ../interfaces/utility.py:67
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:41
 msgid "External"
 msgstr "外部"
@@ -207,6 +214,7 @@ msgid "Fancy vertical listing"
 msgstr "装飾的な縦の一覧"
 
 #. Default: "File"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:109
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:145
 msgid "File"
 msgstr "ファイル"
@@ -233,6 +241,7 @@ msgid "Highlight"
 msgstr "ハイライト"
 
 #. Default: "Home"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:25
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:26
 msgid "Home"
 msgstr "ホーム"
@@ -323,6 +332,8 @@ msgid "Left to right"
 msgstr "左から右"
 
 #. Default: "Libraries"
+#: ../browser/controlpanel.py:40
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:21
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:22
 msgid "Libraries"
 msgstr "ライブラリ"
@@ -356,6 +367,18 @@ msgstr "メール"
 msgid "Named"
 msgstr ""
 
+#: ../utility.py:605
+msgid "No anchors in this page"
+msgstr ""
+
+#: ../utility.py:604
+msgid "No items in this folder"
+msgstr ""
+
+#: ../utility.py:597
+msgid "Normal paragraph"
+msgstr ""
+
 #: ../interfaces/utility.py:334
 msgid "Numeric"
 msgstr ""
@@ -386,12 +409,18 @@ msgstr "プレーンテキストとしてペースト"
 msgid "Paste from Word"
 msgstr "Wordからペースト"
 
+#: ../utility.py:598
+msgid "Plain cell"
+msgstr ""
+
 #. Default: "Preview"
+#: ../interfaces/utility.py:244
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:102
 msgid "Preview"
 msgstr "プレビュー"
 
 #: ../interfaces/utility.py:240
+#: ../utility.py:603
 msgid "Print"
 msgstr "印刷"
 
@@ -427,6 +456,7 @@ msgid "Save"
 msgstr "保存"
 
 #. Default: "Search"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:40
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:56
 msgid "Search"
 msgstr "検索"
@@ -434,6 +464,10 @@ msgstr "検索"
 #: ../interfaces/utility.py:112
 msgid "Select Style"
 msgstr "スタイルを選ぶ"
+
+#: ../utility.py:602
+msgid "Selection"
+msgstr ""
 
 #: ../browser/controlpanel.py:49
 msgid "Settings for the TinyMCE Wysiwyg editor."
@@ -445,6 +479,10 @@ msgstr "スペルチェッカー"
 
 #: ../interfaces/utility.py:128
 msgid "Strikethrough"
+msgstr ""
+
+#: ../utility.py:599
+msgid "Style..."
 msgstr ""
 
 #: ../interfaces/utility.py:49
@@ -477,6 +515,14 @@ msgstr "表"
 #: ../interfaces/utility.py:54
 msgid "Table styles"
 msgstr "表スタイル"
+
+#: ../utility.py:601
+msgid "Tables"
+msgstr ""
+
+#: ../utility.py:600
+msgid "Text"
+msgstr ""
 
 #: ../interfaces/utility.py:332
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
@@ -571,16 +617,19 @@ msgid "Unordered list"
 msgstr "順序なしリスト"
 
 #. Default: "Up one level"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:52
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:68
 msgid "Up one level"
 msgstr ""
 
 #. Default: "Upload"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:129
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:165
 msgid "Upload"
 msgstr "アップロード"
 
 #. Default: "Upload file"
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:55
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:71
 msgid "Upload file"
 msgstr "ファイルをアップロードする"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-03-23 09:33+0000\n"
+"POT-Creation-Date: 2010-05-12 09:08+0000\n"
 "PO-Revision-Date: 2010-03-24 10:05+0100\n"
 "Last-Translator: Mikel Larreategi <mlarreategi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,6 +13,10 @@ msgstr ""
 "Language-Name: Basque\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone.tinymce\n"
+
+#: ../utility.py:596
+msgid "(remove style)"
+msgstr ""
 
 #: ../interfaces/utility.py:152
 msgid "Align center"
@@ -360,6 +364,18 @@ msgstr "Posta"
 msgid "Named"
 msgstr "Izenduna"
 
+#: ../utility.py:605
+msgid "No anchors in this page"
+msgstr ""
+
+#: ../utility.py:604
+msgid "No items in this folder"
+msgstr ""
+
+#: ../utility.py:597
+msgid "Normal paragraph"
+msgstr ""
+
 #: ../interfaces/utility.py:334
 msgid "Numeric"
 msgstr "Zenbakia"
@@ -390,6 +406,10 @@ msgstr "Testu arrunt gisa itsatsi"
 msgid "Paste from Word"
 msgstr "Wordetik itsatsi"
 
+#: ../utility.py:598
+msgid "Plain cell"
+msgstr ""
+
 #. Default: "Preview"
 #: ../interfaces/utility.py:244
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:102
@@ -397,6 +417,7 @@ msgid "Preview"
 msgstr "Aurreikusi"
 
 #: ../interfaces/utility.py:240
+#: ../utility.py:603
 msgid "Print"
 msgstr "Inprimatu"
 
@@ -441,6 +462,10 @@ msgstr "Bilatu"
 msgid "Select Style"
 msgstr "Estiloa aukeratu"
 
+#: ../utility.py:602
+msgid "Selection"
+msgstr ""
+
 #: ../browser/controlpanel.py:49
 msgid "Settings for the TinyMCE Wysiwyg editor."
 msgstr "TinyMCE editorearen ezarpenak"
@@ -452,6 +477,10 @@ msgstr "Ortografia zuzentzailea"
 #: ../interfaces/utility.py:128
 msgid "Strikethrough"
 msgstr "Gainetik marra jarri"
+
+#: ../utility.py:599
+msgid "Style..."
+msgstr ""
 
 #: ../interfaces/utility.py:49
 msgid "Styles"
@@ -483,6 +512,14 @@ msgstr "Taularen kontrolak"
 #: ../interfaces/utility.py:54
 msgid "Table styles"
 msgstr "Taularen estiloak"
+
+#: ../utility.py:601
+msgid "Tables"
+msgstr ""
+
+#: ../utility.py:600
+msgid "Text"
+msgstr ""
 
 #: ../interfaces/utility.py:332
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
