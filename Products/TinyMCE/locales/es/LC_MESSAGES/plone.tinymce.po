@@ -5,8 +5,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2010-05-11 15:40+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2010-05-03 14:03 +ZONE\n"
+"Last-Translator: Diego Municio <dmunicio@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
@@ -16,609 +16,640 @@ msgstr ""
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone.tinymce\n"
+"mime-version: 1.0\n"
+"content-type: text/plain; charset=utf-8\n"
+"content-transfer-encoding: 8bit\n"
+"plural-forms: nplurals=1; plural=0;\n"
+"language-code: es\n"
+"language-name: spanish, castilian\n"
+"preferred-encodings: utf-8 latin1\n"
 
 #: ../utility.py:596
 msgid "(remove style)"
-msgstr ""
+msgstr "(eliminar estilo)"
 
 #: ../interfaces/utility.py:152
 msgid "Align center"
-msgstr ""
+msgstr "Centrar"
 
 #: ../interfaces/utility.py:160
 msgid "Align full"
-msgstr ""
+msgstr "Justificar"
 
 #: ../interfaces/utility.py:148
 msgid "Align left"
-msgstr ""
+msgstr "Alinear a la izquierda"
 
 #: ../interfaces/utility.py:156
 msgid "Align right"
-msgstr ""
+msgstr "Alinear a la derecha"
 
 #: ../interfaces/utility.py:296
 msgid "Allow captioned images"
-msgstr ""
+msgstr "Permitir imágenes con etiqueta"
 
+#. Default: "Anchors"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:51
 msgid "Anchors"
-msgstr ""
+msgstr "Anclas"
 
 #: ../interfaces/utility.py:144
 msgid "Backcolor"
-msgstr ""
+msgstr "Color de fondo"
 
 #: ../interfaces/utility.py:116
 msgid "Bold"
-msgstr ""
+msgstr "Negrita"
 
 msgid "Call-out"
-msgstr ""
+msgstr "Llamada"
 
+#. Default: "Caption"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:89
 msgid "Caption"
-msgstr ""
+msgstr "Etiqueta"
 
 #: ../interfaces/utility.py:44
 msgid "Choose the Css used in Wysiwyg Editor Area"
-msgstr ""
+msgstr "Elegir la CSS empleada en el área del editor WYSIWYG"
 
 #: ../interfaces/utility.py:256
 msgid "Cleanup messy code"
-msgstr ""
+msgstr "Limpiar código"
 
 msgid "Clear floats"
-msgstr ""
+msgstr "Limpiar elementos flotantes"
 
 #: ../interfaces/utility.py:311
 msgid "Contains Anchors"
-msgstr ""
+msgstr "Contiene Anclas"
 
 #: ../interfaces/utility.py:306
 msgid "Contains Objects"
-msgstr ""
+msgstr "Contiene Objetos"
 
 #: ../interfaces/utility.py:80
 msgid "Copy"
-msgstr ""
+msgstr "Copiar"
 
+#. Default: "Current Folder"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:30
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:31
 msgid "Current Folder"
-msgstr ""
+msgstr "Carpeta Actual"
 
 #: ../interfaces/utility.py:326
 msgid "Custom Plugins"
-msgstr ""
+msgstr "Plugins Personalizados"
 
 #: ../interfaces/utility.py:280
 msgid "Custom Toolbar Buttons"
-msgstr ""
+msgstr "Botones Personalizados de la Barra de Herramientas"
 
 #: ../interfaces/utility.py:76
 msgid "Cut"
-msgstr ""
+msgstr "Cortar"
 
 #: ../interfaces/utility.py:172
 msgid "Definition list"
-msgstr ""
+msgstr "Lista de definición"
 
+#. Default: "Description"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:123
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:159
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
+#. Default: "Details"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:60
 msgid "Details"
-msgstr ""
+msgstr "Detalles"
 
 msgid "Discreet"
-msgstr ""
+msgstr "Discreto"
 
+#. Default: "E-mail"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:117
 msgid "E-mail"
-msgstr ""
+msgstr "Correo electrónico"
 
 #: ../interfaces/utility.py:272
 msgid "Edit HTML Source"
-msgstr ""
+msgstr "Editar código fuente HTML"
 
 #: ../interfaces/utility.py:27
 msgid "Editor height"
-msgstr ""
+msgstr "Altura del editor"
 
 #: ../interfaces/utility.py:22
 msgid "Editor width"
-msgstr ""
+msgstr "Ancho del editor"
 
 #: ../interfaces/utility.py:228
 msgid "Emotions"
-msgstr ""
+msgstr "Emoticonos"
 
 #: ../interfaces/utility.py:17
 msgid "Enable auto resizing of the editor window."
-msgstr ""
+msgstr "Permitir redimensionamiento automático de la ventana del editor."
 
 #: ../interfaces/utility.py:39
 msgid "Enable contextmenu."
-msgstr ""
+msgstr "Permitir menús contextuales."
 
 #: ../interfaces/utility.py:12
 msgid "Enable resizing the editor window."
-msgstr ""
+msgstr "Permitir redimensionar la ventana del editor."
 
 #: ../interfaces/utility.py:317
 msgid "Enter a list of content types which can be linked. Format is one contenttype per line."
-msgstr ""
+msgstr "Introduzca una lista de los tipos de contenido que pueden ser enlazados. El formato es un tipo de contenido por línea."
 
 #: ../interfaces/utility.py:322
 msgid "Enter a list of content types which can be used as images. Format is one contenttype per line."
-msgstr ""
+msgstr "Introduzca una lista de tipos de contenido que pueden ser empleados como imágenes. El formato es un tipo de contenido por línea."
 
 #: ../interfaces/utility.py:312
 msgid "Enter a list of content types which can contain anchors. Format is one contenttype per line."
-msgstr ""
+msgstr "Introduzca una lista de tipos de contenido que puedan contener anclas. El formato es un tipo de contenido por línea."
 
 #: ../interfaces/utility.py:307
 msgid "Enter a list of content types which can contain other objects. Format is one contenttype per line."
-msgstr ""
+msgstr "Introduzca una lista de tipos de contenido que puedan contener otros objetos. El formato es un tipo de contenido por línea."
 
 #: ../interfaces/utility.py:327
 msgid "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
-msgstr ""
+msgstr "Introduzca una lista de plugins personalizados que será cargada en el editor. El formato es nombredelplugin o nombredelplugin|localización, uno por línea."
 
 #: ../interfaces/utility.py:281
 msgid "Enter a list of custom toolbar buttons which will be loaded in the editor, one per line."
-msgstr ""
+msgstr "Introduzca una lista de los botones personalizados de la barra de tareas que serán cargados en el editor, una por línea."
 
 #: ../interfaces/utility.py:50
 msgid "Enter a list of styles to appear in the style pulldown. Format is title|tag or title|tag|className, one per line."
-msgstr ""
+msgstr "Introduzca una lista de estilos a aplicar en el menú desplegable de estilos. El formato es título|etiqueta o título|etiqueta|nombreDeLaClase, uno por línea."
 
 #: ../interfaces/utility.py:55
 msgid "Enter a list of styles to appear in the table style pulldown. Format is title|class, one per line."
-msgstr ""
+msgstr "Introduzca una lista de estilos que aparecerán en el desplegable de estilos de tabla. El formato es título|clase, uno por línea."
 
 #: ../interfaces/utility.py:331
 msgid "Entity encoding"
-msgstr ""
+msgstr "Codificación con entidades"
 
 msgid "Even row"
-msgstr ""
+msgstr "Columna par"
 
+#. Default: "External"
 #: ../interfaces/utility.py:67
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:41
 msgid "External"
-msgstr ""
+msgstr "Externo"
 
+#. Default: "External link"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:92
 msgid "External link"
-msgstr ""
+msgstr "Enlace externo"
 
 msgid "Fancy grid listing"
-msgstr ""
+msgstr "Listado elegante en rejilla"
 
 msgid "Fancy listing"
-msgstr ""
+msgstr "Listado elegante"
 
 msgid "Fancy vertical listing"
-msgstr ""
+msgstr "Listado elegante vertical"
 
+#. Default: "File"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:109
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:145
 msgid "File"
-msgstr ""
+msgstr "Archivo"
 
 #: ../interfaces/utility.py:104
 msgid "Find"
-msgstr ""
+msgstr "Buscar"
 
 #: ../interfaces/utility.py:108
 msgid "Find/Replace"
-msgstr ""
+msgstr "Buscar/Reemplazar"
 
 #: ../interfaces/utility.py:140
 msgid "Forecolor"
-msgstr ""
+msgstr "Color de primer plano"
 
 msgid "Heading"
-msgstr ""
+msgstr "Cabecera"
 
 msgid "Heading cell"
-msgstr ""
+msgstr "Celda de cabecera"
 
 msgid "Highlight"
-msgstr ""
+msgstr "Resaltado"
 
+#. Default: "Home"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:25
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:26
 msgid "Home"
-msgstr ""
+msgstr "Inicio"
 
 #: ../interfaces/utility.py:321
 msgid "Image Objects"
-msgstr ""
+msgstr "Objetos de tipo Imagen"
 
 #: ../interfaces/utility.py:297
 msgid "Images will be automatically captioned."
-msgstr ""
+msgstr "Las imágenes serán automáticamente etiquetadas."
 
 #: ../interfaces/utility.py:180
 msgid "Indent"
-msgstr ""
+msgstr "Indentar"
 
+#. Default: "Inline"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:80
 msgid "Inline"
-msgstr ""
+msgstr "En línea"
 
 #: ../interfaces/utility.py:216
 msgid "Insert advanced horizontal ruler"
-msgstr ""
+msgstr "Insertar regla horizontal avanzada"
 
 #: ../interfaces/utility.py:208
 msgid "Insert custom character"
-msgstr ""
+msgstr "Insertar carácter personalizado"
 
 #: ../interfaces/utility.py:220
 msgid "Insert date"
-msgstr ""
+msgstr "Insertar fecha"
 
 #: ../interfaces/utility.py:212
 msgid "Insert horizontal ruler"
-msgstr ""
+msgstr "Insertar regla horizontal"
 
 #: ../interfaces/utility.py:232
 msgid "Insert non-breaking space character"
-msgstr ""
+msgstr "Insertar espacio de no separación (nbsp)"
 
 #: ../interfaces/utility.py:236
 msgid "Insert page break"
-msgstr ""
+msgstr "Insertar salto de página"
 
 #: ../interfaces/utility.py:224
 msgid "Insert time"
-msgstr ""
+msgstr "Insertar hora"
 
 #: ../interfaces/utility.py:196
 msgid "Insert/edit anchor"
-msgstr ""
+msgstr "Insertar/editar ancla"
 
 #: ../interfaces/utility.py:268
 msgid "Insert/edit attributes"
-msgstr ""
+msgstr "Insertar/editar atributos"
 
 #: ../interfaces/utility.py:200
 msgid "Insert/edit image"
-msgstr ""
+msgstr "Insertar/editar imagen"
 
 #: ../interfaces/utility.py:188
 msgid "Insert/edit link"
-msgstr ""
+msgstr "Insertar/editar enlace"
 
 #: ../interfaces/utility.py:204
 msgid "Insert/edit media"
-msgstr ""
+msgstr "Insertar/editar objeto multimedia"
 
+#. Default: "Internal link"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:65
 msgid "Internal link"
-msgstr ""
+msgstr "Enlace interno"
 
 msgid "Invisible grid"
-msgstr ""
+msgstr "Rejilla invisible"
 
 #: ../interfaces/utility.py:120
 msgid "Italic"
-msgstr ""
+msgstr "Cursiva"
 
 #: ../browser/controlpanel.py:32
 msgid "Layout"
-msgstr ""
+msgstr "Disposición"
 
 #: ../interfaces/utility.py:35
 msgid "Left to right"
-msgstr ""
+msgstr "De izquierda a derecha"
 
+#. Default: "Libraries"
 #: ../browser/controlpanel.py:40
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:21
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:22
 msgid "Libraries"
-msgstr ""
+msgstr "Librerías"
 
+#. Default: "Link to anchor"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:132
 msgid "Link to anchor"
-msgstr ""
+msgstr "Enlace a ancla"
 
 #: ../interfaces/utility.py:291
 msgid "Link using UIDs"
-msgstr ""
+msgstr "Enlazar empleando UIDs"
 
 #: ../interfaces/utility.py:316
 msgid "Linkable Objects"
-msgstr ""
+msgstr "Objetos Enlazables"
 
 #: ../interfaces/utility.py:292
 msgid "Links to objects on this site can use unique object ids so that the links remain valid even if the target object is renamed or moved elsewhere on the site."
-msgstr ""
+msgstr "Enlaces a los objetos en este sitio web pueden usar los identificadores únicos de objeto de modo que los enlaces siguen siendo válidos incluso si el objeto destino es movido o renombrado en cualquier parte dentro del sitio."
 
 msgid "Literal"
-msgstr ""
+msgstr "Literal"
 
+#. Default: "Mail"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:46
 msgid "Mail"
-msgstr ""
+msgstr "Correo electrónico"
 
 #: ../interfaces/utility.py:334
 msgid "Named"
-msgstr ""
+msgstr "Con nombre"
 
 #: ../utility.py:605
 msgid "No anchors in this page"
-msgstr ""
+msgstr "No existen anclas en esta página"
 
 #: ../utility.py:604
 msgid "No items in this folder"
-msgstr ""
+msgstr "No hay elementos en esta carpeta"
 
 #: ../utility.py:597
 msgid "Normal paragraph"
-msgstr ""
+msgstr "Párrafo normal"
 
 #: ../interfaces/utility.py:334
 msgid "Numeric"
-msgstr ""
+msgstr "Numérico"
 
 msgid "Odd row"
-msgstr ""
+msgstr "Columna impar"
 
 #: ../interfaces/utility.py:168
 msgid "Ordered list"
-msgstr ""
+msgstr "Lista ordenada"
 
 #: ../interfaces/utility.py:176
 msgid "Outdent"
-msgstr ""
+msgstr "Desindentar"
 
 msgid "Page break (print only)"
-msgstr ""
+msgstr "Salto de página (sólo impresión)"
 
 #: ../interfaces/utility.py:84
 msgid "Paste"
-msgstr ""
+msgstr "Pegar"
 
 #: ../interfaces/utility.py:88
 msgid "Paste as Plain Text"
-msgstr ""
+msgstr "Pegar como Texto Plano"
 
 #: ../interfaces/utility.py:92
 msgid "Paste from Word"
-msgstr ""
+msgstr "Pegar desde Word"
 
 #: ../utility.py:598
 msgid "Plain cell"
-msgstr ""
+msgstr "Celda sin formato"
 
+#. Default: "Preview"
 #: ../interfaces/utility.py:244
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:102
 msgid "Preview"
-msgstr ""
+msgstr "Previsualizar"
 
 #: ../interfaces/utility.py:240
 #: ../utility.py:603
 msgid "Print"
-msgstr ""
+msgstr "Imprimir"
 
 msgid "Pull-quote"
-msgstr ""
+msgstr "Cita"
 
 #: ../interfaces/utility.py:334
 msgid "Raw"
-msgstr ""
+msgstr "En crudo"
 
 #: ../interfaces/utility.py:100
 msgid "Redo"
-msgstr ""
+msgstr "Rehacer"
 
 #: ../interfaces/utility.py:252
 msgid "Remove formatting"
-msgstr ""
+msgstr "Eliminar formato"
 
 #: ../browser/controlpanel.py:44
 msgid "Resource Types"
-msgstr ""
+msgstr "Tipos de recursos"
 
 #: ../interfaces/utility.py:35
 msgid "Right to left"
-msgstr ""
+msgstr "De derecha de izquierda"
 
 #: ../interfaces/utility.py:301
 msgid "Rooted to current object"
-msgstr ""
+msgstr "Enrutado el objeto actual"
 
 #: ../interfaces/utility.py:72
 msgid "Save"
-msgstr ""
+msgstr "Salvar"
 
+#. Default: "Search"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:40
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:56
 msgid "Search"
-msgstr ""
+msgstr "Buscar"
 
 #: ../interfaces/utility.py:112
 msgid "Select Style"
-msgstr ""
+msgstr "Seleccionar Estilo"
 
 #: ../utility.py:602
 msgid "Selection"
-msgstr ""
+msgstr "Selección"
 
 #: ../browser/controlpanel.py:49
 msgid "Settings for the TinyMCE Wysiwyg editor."
-msgstr ""
+msgstr "Configuración para el editor WYSIWYG TinyMCE"
 
 #: ../interfaces/utility.py:248
 msgid "Spellchecker"
-msgstr ""
+msgstr "Corrector ortográfico"
 
 #: ../interfaces/utility.py:128
 msgid "Strikethrough"
-msgstr ""
+msgstr "Tachado"
 
 #: ../utility.py:599
 msgid "Style..."
-msgstr ""
+msgstr "Estilo..."
 
 #: ../interfaces/utility.py:49
 msgid "Styles"
-msgstr ""
+msgstr "Estilos"
 
 msgid "Subdued grid"
-msgstr ""
+msgstr "Rejilla tenue"
 
 msgid "Subheading"
-msgstr ""
+msgstr "Subencabezado"
 
+#. Default: "Subject"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:124
 msgid "Subject"
-msgstr ""
+msgstr "Asunto"
 
 #: ../interfaces/utility.py:132
 msgid "Subscript"
-msgstr ""
+msgstr "Subíndice"
 
 #: ../interfaces/utility.py:136
 msgid "Superscript"
-msgstr ""
+msgstr "Superíndice"
 
 #: ../interfaces/utility.py:184
 msgid "Table controls"
-msgstr ""
+msgstr "Controles de tabla"
 
 #: ../interfaces/utility.py:54
 msgid "Table styles"
-msgstr ""
+msgstr "Estilos de tabla"
 
 #: ../utility.py:601
 msgid "Tables"
-msgstr ""
+msgstr "Tablas"
 
 #: ../utility.py:600
 msgid "Text"
-msgstr ""
+msgstr "Texto"
 
 #: ../interfaces/utility.py:332
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
-msgstr ""
+msgstr "Esta opción control cómo se procesan las entidades/caracteres. Con nombre: Los caracteres serán convertidos en entidades con nombre en función de la opción entidades. Numérico: Los caracteres serán convertidos en entidades numéricos. En crudo: Todos lo caracteres serán almacenados con forma de no-entidad excepto estas entidades XML por defecto: amp lt gt quot"
 
 #: ../interfaces/utility.py:68
 msgid "This option enables the external toolbar which will be placed at the top of the page."
-msgstr ""
+msgstr "Esta opción habilita la barra de herramientas externa que se posicionará en la parte superior de la página."
 
 #: ../interfaces/utility.py:45
 msgid "This option enables you to specify a custom CSS file that extends the theme content CSS. This CSS file is the one used within the editor (the editable area)."
-msgstr ""
+msgstr "Esta opción le permite especificar una CSS personaliza que extiendo la CSS de apariencia del contenido. Este archivo CSS es el se emplea en el editor (el área editable)."
 
 #: ../interfaces/utility.py:18
 msgid "This option gives you the ability to enable/disable auto resizing the editor window depending on the content."
-msgstr ""
+msgstr "Esta opción le permite habilitar/deshabilitar el redimensionamiento automático de la ventana del editor en función del contenido."
 
 #: ../interfaces/utility.py:13
 msgid "This option gives you the ability to enable/disable resizing the editor window. If the editor width is set to a percentage only vertical resizing is enabled."
-msgstr ""
+msgstr "Esta opción le permite habilitar/deshabilitar el redimensionado de la ventana del editor. Si el ancho del editor está fijado a un porcentaje sólo estará activado el redimensionamiento vertical"
 
 #: ../interfaces/utility.py:40
 msgid "This option gives you the ability to enable/disable the use of the contextmenu."
-msgstr ""
+msgstr "Esta opción le permite habilitar/deshabilitar el uso del menú contextual."
 
 #: ../interfaces/utility.py:28
 msgid "This option gives you the ability to specify the height of the editor in pixels. If auto resize is enabled this value is used as minimum height."
-msgstr ""
+msgstr "Esta opción le permite especificar"
 
 #: ../interfaces/utility.py:23
 msgid "This option gives you the ability to specify the width of the editor in pixels or percent."
-msgstr ""
+msgstr "Esta opción le permite especificar el ancho del editor en píxels o porcentajes."
 
 #: ../interfaces/utility.py:63
 msgid "This option gives you the ability to specify the width of the toolbar in pixels."
-msgstr ""
+msgstr "Esta opción le permite especificar el ancho de la barra de herramientas en píxeles."
 
 #: ../interfaces/utility.py:33
 msgid "This option specifies the default writing direction, some languages (Like Hebrew, Arabic, Urdu...) write from right to left instead of left to right."
-msgstr ""
+msgstr "Esta opción especifica la dirección de escritura por defecto. En algunos idiomas (como Hebreo, Árabe, Urdu...) se escribe de derecha a izquierda en lugar de izquierda a derecha."
 
+#. Default: "TinyMCE"
 #: ../profiles/upgrade_10_to_11/controlpanel.xml
 msgid "TinyMCE"
-msgstr ""
+msgstr "TinyMCE"
 
 #: ../browser/controlpanel.py:48
 msgid "TinyMCE Settings"
-msgstr ""
+msgstr "Configuración de TinyMCE"
 
+#. Default: "TinyMCE Visual Editor"
 #: ../profiles/default/controlpanel.xml
 #: ../profiles/upgrade_10_to_11/controlpanel.xml
 msgid "TinyMCE Visual Editor"
-msgstr ""
+msgstr "Editor Visual TinyMCE"
 
+#. Default: "Title"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:275
 msgid "Title"
-msgstr ""
+msgstr "Título"
 
 #: ../interfaces/utility.py:276
 msgid "Toggle fullscreen mode"
-msgstr ""
+msgstr "Conmutar modo de pantalla completa"
 
 #: ../interfaces/utility.py:260
 msgid "Toggle guidelines/invisible objects"
-msgstr ""
+msgstr "Conmutar guías/objetos invisibles"
 
 #: ../browser/controlpanel.py:36
 msgid "Toolbar"
-msgstr ""
+msgstr "Barra de herramientas"
 
 #: ../interfaces/utility.py:62
 msgid "Toolbar width"
-msgstr ""
+msgstr "Ancho de la barra de herramientas"
 
 #: ../interfaces/utility.py:124
 msgid "Underline"
-msgstr ""
+msgstr "Subrayado"
 
 #: ../interfaces/utility.py:96
 msgid "Undo"
-msgstr ""
+msgstr "Deshacer"
 
 #: ../interfaces/utility.py:192
 msgid "Unlink"
-msgstr ""
+msgstr "Desenlazar"
 
 #: ../interfaces/utility.py:164
 msgid "Unordered list"
-msgstr ""
+msgstr "Lista desordenada"
 
+#. Default: "Up one level"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:52
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:68
 msgid "Up one level"
-msgstr ""
+msgstr "Ascender un nivel"
 
+#. Default: "Upload"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:129
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:165
 msgid "Upload"
-msgstr ""
+msgstr "Subir"
 
+#. Default: "Upload file"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:55
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:71
 msgid "Upload file"
-msgstr ""
+msgstr "Subir fichero"
 
 #: ../interfaces/utility.py:264
 msgid "Visual control characters on/off"
-msgstr ""
+msgstr "Visualización de caracteres de control activada/desactivada"
 
 #: ../interfaces/utility.py:302
 msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
-msgstr ""
+msgstr "Cuando está habilitado el usuario será enrutado al objeto actual y no podrá añadir imágenes y enlaces desde otras partes del sitio web."
 
 #: ../interfaces/utility.py:32
 msgid "Writing direction"
-msgstr ""
+msgstr "Dirección de escritura"
 

@@ -3,6 +3,7 @@ var ImageDialog = {
     current_link : "",
     current_url : "",
     current_class : "",
+    labels : "",
     
     preInit : function() {
         var url;
@@ -23,6 +24,7 @@ var ImageDialog = {
         var ed = tinyMCEPopup.editor;
         var dom = ed.dom;
         var n = ed.selection.getNode();
+        labels = eval(ed.getParam('labels'));
 
         tinyMCEPopup.resizeToInnerSize();
 
@@ -433,7 +435,7 @@ var ImageDialog = {
                 var html = "";
                 var data = eval('(' + text + ')');
                 if (data.items.length == 0) {
-                    html = "No items in this folder";
+                    html = labels['label_no_items'];
                 } else {
                     for (var i = 0; i < data.items.length; i++) {
                         html += '<div class="' + (i % 2 == 0 ? 'even' : 'odd') + '">';

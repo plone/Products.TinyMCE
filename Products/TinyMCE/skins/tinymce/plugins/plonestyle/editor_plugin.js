@@ -9,6 +9,7 @@
         _previousNode       : null,
         _styles             : null,
         _control            : null,
+        labels             : null,
 
         init : function(ed, url) {
             this._init(ed, url);
@@ -19,6 +20,7 @@
 
             // Get styles
             this._styles = eval(ed.getParam('theme_advanced_styles'));
+            this.labels = eval(ed.getParam('labels'));
 
             // Register commands
             ed.addCommand('mceSetStyle', function(ui, v) {
@@ -191,6 +193,9 @@
             var ol = this._getParentNode (n, ["ol"]);
             var dl = this._getParentNode (n, ["dl"]);
 
+            // Hardcoded strings translated with this.labels
+            var label_ids = ["Text", "Selection", "Tables", "Lists", "Print"];
+
             // Fill the listbox
             for (var i = 0; i < this._styles.length; i++) {
 
@@ -200,9 +205,11 @@
                     (tag != "ol" || ol) &&
                     (((tag != "dl") && (tag != "dd") && (tag != "dt")) || dl)) {
 
+                    // e.g. style_title = this.labels["label_text"]
+                    style_title = label_ids.indexOf(this._styles[i].title)>-1 ? this.labels["label_"+this._styles[i].title.toLowerCase()] : this._styles[i].title;
                     // Add item
                     this._control.add(
-                        this._styles[i].title,
+                        style_title,
                         this._styles[i].className == '-' ? '-' : i,
                         {'class' : this._styles[i].className == '-' ? 'mceMenuItemTitle' : 'mce_formatPreview mce_' + this._styles[i].tag}
                     );
@@ -239,7 +246,7 @@
         createControl : function(n, cm) {
             if (n == 'style') {
                 this._control = cm.createListBox('style_' + tinyMCE.activeEditor.id, {
-                    title    : 'Style...',
+                    title    : this.labels['label_style_ldots'],
                     cmd        : 'mceSetStyle'
                 });
                 return this._control;

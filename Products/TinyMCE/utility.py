@@ -591,6 +591,20 @@ class TinyMCE(SimpleItem):
                 style_whitelist = []
         results['valid_inline_styles'] = style_whitelist
 
+        # Replacing some hardcoded translations
+        labels = {}
+        labels['label_styles'] = translate(_('(remove style)'), context=request)
+        labels['label_paragraph'] = translate(_('Normal paragraph'), context=request)
+        labels['label_plain_cell'] = translate(_('Plain cell'), context=request)
+        labels['label_style_ldots'] = translate(_('Style...'), context=request)
+        labels['label_text'] = translate(_('Text'), context=request)
+        labels['label_tables'] = translate(_('Tables'), context=request)
+        labels['label_selection'] = translate(_('Selection'), context=request)
+        labels['label_print'] = translate(_('Print'), context=request)
+        labels['label_no_items'] = translate(_('No items in this folder'), context=request)
+        labels['label_no_anchors'] = translate(_('No anchors in this page'), context=request)
+        results['labels']= labels
+        
         # Add styles to results
         results['styles'] = []
         results['table_styles'] = []
