@@ -9,7 +9,6 @@
                      element_id id|inputname;">
   <textarea cols="80"
             rows="25"
-            tabindex=""
             name="description"
             tal:content="inputvalue"
             tal:attributes="name inputname;
@@ -33,8 +32,8 @@
  <tal:block tal:define="wysiwyg python: here.portal_membership.getAuthenticatedMember().getProperty('wysiwyg_editor')!='None'">
 
   <tal:block condition="wysiwyg">
-        <input type="hidden" 
-               name="text_format" 
+        <input type="hidden"
+               name="text_format"
                value="html" id="Hidden1"/>
   </tal:block>
 
@@ -43,8 +42,8 @@
       <div class="label">
          <span i18n:translate="label_format">Format</span>
          <div id="format_help"
-              i18n:translate="help_format" 
-              class="help" 
+              i18n:translate="help_format"
+              class="help"
               style="visibility:hidden">
            Select which format you want to type the contents of this
            document in. If you are unsure of which format to use, just
@@ -53,44 +52,37 @@
          </div>
       </div>
       <div class="field"
-           tal:define="tabindex tabindex/next;
-                       text_format python:request.get('text_format', getattr(here,'text_format','structured-text'))">    
-        <input class="noborder" 
-               type="radio" 
+           tal:define="text_format python:request.get('text_format', getattr(here,'text_format','structured-text'))">
+        <input class="noborder"
+               type="radio"
                name="text_format"
-               value="structured-text" 
-               tabindex=""
+               value="structured-text"
                id="cb_structuredtext"
-               onfocus="formtooltip('format_help',1)" 
-               onblur="formtooltip('format_help',0)" 
-               tal:attributes="checked python:test(text_format=='structured-text', 1, '');
-                               tabindex tabindex;" 
+               onfocus="formtooltip('format_help',1)"
+               onblur="formtooltip('format_help',0)"
+               tal:attributes="checked python:test(text_format=='structured-text', 1, '');"
                />
         <label for="cb_structuredtext" i18n:translate="structured_text">Structured Text</label> <br />
 
-        <input class="noborder" 
-               type="radio" 
-               name="text_format" 
-               value="html" 
-               tabindex=""
+        <input class="noborder"
+               type="radio"
+               name="text_format"
+               value="html"
                id="cb_html"
-               tal:attributes="checked python:test(text_format=='html', 1, '');
-                               tabindex tabindex;" 
-               onfocus="formtooltip('format_help',1)" 
-               onblur="formtooltip('format_help',0)" 
-               />    
+               tal:attributes="checked python:test(text_format=='html', 1, '');"
+               onfocus="formtooltip('format_help',1)"
+               onblur="formtooltip('format_help',0)"
+               />
         <label for="cb_html" i18n:translate="html">HTML</label> <br />
 
-        <input class="noborder" 
-               type="radio" 
+        <input class="noborder"
+               type="radio"
                name="text_format"
-               value="plain" 
-               tabindex=""
+               value="plain"
                id="cb_plain"
-               tal:attributes="checked python:test(text_format=='plain', 1, '');
-                               tabindex tabindex;" 
-               onfocus="formtooltip('format_help',1)" 
-               onblur="formtooltip('format_help',0)" 
+               tal:attributes="checked python:test(text_format=='plain', 1, '');"
+               onfocus="formtooltip('format_help',1)"
+               onblur="formtooltip('format_help',0)"
                />
         <label for="cb_plain" i18n:translate="plain_text">Plain Text</label>
       </div>
