@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plone.tinymce\n"
 "POT-Creation-Date: 2010-05-12 09:08+0000\n"
-"PO-Revision-Date: 2009-12-21 23:23+0200\n"
+"PO-Revision-Date: 2010-05-17 11:46+0200\n"
 "Last-Translator: Jukka Ojaniemi <jukka.ojaniemi@jyu.fi>\n"
 "Language-Team: JYU <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../utility.py:596
 msgid "(remove style)"
-msgstr ""
+msgstr "(poista tyyli)"
 
 #: ../interfaces/utility.py:152
 msgid "Align center"
@@ -73,8 +73,9 @@ msgstr "Valitse Wysiwyg editorissa käytettävä Css"
 msgid "Cleanup messy code"
 msgstr "Siivoa koodi"
 
+#, fuzzy
 msgid "Clear floats"
-msgstr "Puhdista kellukkeet (floats)"
+msgstr "Poista asemoinnit"
 
 #: ../interfaces/utility.py:311
 msgid "Contains Anchors"
@@ -147,7 +148,7 @@ msgstr "Hymiöt"
 
 #: ../interfaces/utility.py:17
 msgid "Enable auto resizing of the editor window."
-msgstr "Kytke editori-ikkunan automaattinen koonvaihto päälle"
+msgstr "Kytke editori-ikkunan automaattinen koonvaihto päälle."
 
 #: ../interfaces/utility.py:39
 msgid "Enable contextmenu."
@@ -372,15 +373,15 @@ msgstr "Nimetty"
 
 #: ../utility.py:605
 msgid "No anchors in this page"
-msgstr ""
+msgstr "Tällä sivulla ei ole ankkureita"
 
 #: ../utility.py:604
 msgid "No items in this folder"
-msgstr ""
+msgstr "Tässä kansiossa ei ole kohteita"
 
 #: ../utility.py:597
 msgid "Normal paragraph"
-msgstr ""
+msgstr "Normaali kappale"
 
 #: ../interfaces/utility.py:334
 msgid "Numeric"
@@ -414,7 +415,7 @@ msgstr "Liitä Wordistä"
 
 #: ../utility.py:598
 msgid "Plain cell"
-msgstr ""
+msgstr "Tavallinen solu"
 
 #. Default: "Preview"
 #: ../interfaces/utility.py:244
@@ -470,11 +471,11 @@ msgstr "Valitse tyyli"
 
 #: ../utility.py:602
 msgid "Selection"
-msgstr ""
+msgstr "Valinta"
 
 #: ../browser/controlpanel.py:49
 msgid "Settings for the TinyMCE Wysiwyg editor."
-msgstr "Asetukset TinyMCE Wysiwyg editorille."
+msgstr "TinyMCE Wysiwyg editorin asetukset."
 
 #: ../interfaces/utility.py:248
 msgid "Spellchecker"
@@ -486,7 +487,7 @@ msgstr "Yliviivaa"
 
 #: ../utility.py:599
 msgid "Style..."
-msgstr ""
+msgstr "Tyylit..."
 
 #: ../interfaces/utility.py:49
 msgid "Styles"
@@ -521,11 +522,11 @@ msgstr "Taulukon tyylit"
 
 #: ../utility.py:601
 msgid "Tables"
-msgstr ""
+msgstr "Taulukot"
 
 #: ../utility.py:600
 msgid "Text"
-msgstr ""
+msgstr "Teksti"
 
 #: ../interfaces/utility.py:332
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
@@ -574,13 +575,13 @@ msgstr "TinyMCE"
 
 #: ../browser/controlpanel.py:48
 msgid "TinyMCE Settings"
-msgstr "TinyMCE:n asetukset"
+msgstr "TinyMCE asetukset"
 
 #. Default: "TinyMCE Visual Editor"
 #: ../profiles/default/controlpanel.xml
 #: ../profiles/upgrade_10_to_11/controlpanel.xml
 msgid "TinyMCE Visual Editor"
-msgstr "TinyMCE Editori"
+msgstr "TinyMCE tekstieditori"
 
 #. Default: "Title"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:275
