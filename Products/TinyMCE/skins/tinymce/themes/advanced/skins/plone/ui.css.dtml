@@ -124,8 +124,8 @@
 .ploneSkin .mceMenu .mceMenuItemEnabled a:hover, .ploneSkin .mceMenu .mceMenuItemActive {background-color:#ddd;}
 .ploneSkin td.mceMenuItemSeparator {background:#444; height:1px}
 .ploneSkin .mceMenuItemTitle a {border:0; background:#ddd;}
-.ploneSkin .mceFirst .mceMenuItemTitle a {border:0; background:#ddd;}
-.ploneSkin .mceMenuItemTitle span.mceText {color:Black; font-weight:bold; padding-left:4px}
+.ploneSkin .mceFirst .mceMenuItemTitle a {border:1px solid #fff; border-style: none none solid; background:#ddd;}
+.ploneSkin .mceMenuItemTitle span.mceText {color:Black; padding-left:4px;}
 .ploneSkin .mceMenuItemDisabled .mceText {color:#444}
 .ploneSkin .mceMenuItemSelected .mceIcon {background:url(img/menu_check.gif)}
 .ploneSkin .mceNoIcons .mceMenuItemSelected a {background:url(img/menu_arrow.gif) no-repeat -6px center}
@@ -138,7 +138,7 @@
 .ploneSkin .mcePlaceHolder {border:1px dotted #444}
 
 /* Formats */
-.ploneSkin .mce_formatPreview a {font-size:10px}
+.ploneSkin .mce_formatPreview a {font-size:80%}
 .ploneSkin .mce_p span.mceText {}
 .ploneSkin .mce_address span.mceText {font-style:italic}
 .ploneSkin .mce_pre span.mceText {font-family:monospace}
