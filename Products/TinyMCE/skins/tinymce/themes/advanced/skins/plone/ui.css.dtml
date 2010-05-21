@@ -38,7 +38,7 @@
 
 /* Layout */
 .ploneSkin table.mceLayout {border: none; <dtml-with portal_tinymce><dtml-if "_.string.find(editor_width,'%') != -1">width: <dtml-var editor_width> !important</dtml-if></dtml-with>}
-.ploneSkin table.mceLayout td.mceToolbar {border: none;}
+.ploneSkin table.mceLayout td.mceToolbar {border: none; background: #DDDDDD; padding: 0 0.625em 0.625em;}
 .ploneSkin table.mceLayout td.mceStatusbar {border: 1px solid #444;	border-top: 0}
 .ploneSkin table.mceToolbar, .ploneSkin tr.mceFirst .mceToolbar tr td, .ploneSkin tr.mceLast .mceToolbar tr td {border: none; margin:0; padding:0;}
 .ploneSkin td.mceToolbar {padding-top:1px; vertical-align:top}
@@ -72,6 +72,7 @@
 
 /* ListBox */
 .ploneSkin table.mceListBox {direction:ltr; margin-bottom: 0}
+.ploneSkin table#text_style_text td.mceFirst {background:#fff;}
 .ploneSkin table.mceListBox, .ploneSkin .mceListBox a {display:block}
 .ploneSkin table.mceListBox .mceText {padding-left:4px; width:131px; text-align:left; border:1px solid #444; border-right:0; font-size:100%; height:20px; line-height:20px; overflow:hidden}
 .ploneSkin table.mceListBox .mceOpen {width:9px; height:20px; background:url(../../img/icons.gif) -741px 0; margin-right:2px; border:1px solid #444;}
