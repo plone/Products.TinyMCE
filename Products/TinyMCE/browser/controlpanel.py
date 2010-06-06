@@ -1,18 +1,8 @@
 from zope.interface import implements
-from zope.formlib import form
 from zope.i18nmessageid import MessageFactory
 from plone.fieldsets.fieldsets import FormFieldsets
-
 from plone.app.controlpanel.form import ControlPanelForm
 
-from Products.Five.formlib import formbase
-from Acquisition import aq_inner
-from Products.Five.browser import BrowserView
-
-from Products.CMFCore.utils import getToolByName
-from Products.PythonScripts.standard import html_quote, newline_to_br
-
-from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.interfaces.utility import ITinyMCELayout
 from Products.TinyMCE.interfaces.utility import ITinyMCEToolbar
 from Products.TinyMCE.interfaces.utility import ITinyMCELibraries
@@ -22,6 +12,7 @@ from Products.TinyMCE.browser.interfaces.controlpanel import ITinyMCEControlPane
 from Products.TinyMCE.setuphandlers import install_mimetype_and_transforms, uninstall_mimetype_and_transforms
 
 _ = MessageFactory('plone.tinymce')
+
 
 class TinyMCEControlPanelForm(ControlPanelForm):
     """TinyMCE Control Panel Form"""
