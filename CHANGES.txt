@@ -5,6 +5,10 @@ HISTORY
 1.1rc13 (Unreleased)
 --------------------
 
+- Make sure paragraphs without a CSS class show up as "Normal paragraph"
+  in the styles menu. Fixes http://dev.plone.org/plone/ticket/10532.
+  [davisagli]
+
 - Avoid unneeded imports.
   [hannosch]
 
