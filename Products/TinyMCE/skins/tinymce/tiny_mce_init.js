@@ -143,7 +143,7 @@ function TinyMCEConfig(id) {
         h['Print'].push('{ title: "Print", tag: "", className: "-", type: "Print" }');
 
         // Add defaults
-        h['Text'].push('{ title: "' + this.widget_config.labels['label_paragraph'] + '", tag: "p", className: " ", type: "Text" }');
+        h['Text'].push('{ title: "' + this.widget_config.labels['label_paragraph'] + '", tag: "p", className: "", type: "Text" }');
 
         for (var i = 0; i < this.widget_config.styles.length; i++) {
             e = this.widget_config.styles[i].split('|');
