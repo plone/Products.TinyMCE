@@ -5,6 +5,10 @@ HISTORY
 1.1rc13 (Unreleased)
 --------------------
 
+- Don't live search in the image and link popups until the search text is at
+  least 3 characters long. Fixes http://dev.plone.org/plone/ticket/10458.
+  [davisagli]
+
 - Get the portal_url and navigation_root_url in a more sane fashion.
   Fixes https://dev.plone.org/plone/ticket/10423.
   [davisagli]
