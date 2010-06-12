@@ -8,7 +8,7 @@ from Acquisition import aq_inner
 from Acquisition import aq_parent
 from Products.CMFCore.utils import getToolByName
 from Products.CMFCore.interfaces._content import IFolderish
-from plone.app.layout.navigation.root import getNavigationRoot
+from plone.app.layout.navigation.root import getNavigationRootObject
 from Products.CMFCore.interfaces import ISiteRoot
 try:
     import json
@@ -718,9 +718,9 @@ class TinyMCE(SimpleItem):
         results['entity_encoding'] = self.entity_encoding
 
         portal = getUtility(ISiteRoot)
-        results['portal_url'] =  aq_inner(context.restrictedTraverse('/'.join(portal.getPhysicalPath()))).absolute_url()
-        root_url = getNavigationRoot(context)
-        results['navigation_root_url'] = context.restrictedTraverse(root_url).absolute_url()
+        results['portal_url'] =  aq_inner(portal).absolute_url()
+        nav_root = getNavigationRootObject(context, portal)
+        results['navigation_root_url'] = nav_root.absolute_url()
 
         props = getToolByName(self, 'portal_properties')
         livesearch = props.site_properties.getProperty('enable_livesearch', False)
