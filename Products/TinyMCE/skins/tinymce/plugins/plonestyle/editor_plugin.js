@@ -71,29 +71,31 @@
                 switch (styles[parseInt(v)].type) {
                     case "Text":
                     case "Print":
-                        if ((tag == "") && (className == "")) {
-                            ed.execCommand('RemoveFormat', false, null);
-                        } else {
-                            if (e.nodeName.toLowerCase() != "body") {
-                                if (e.tagName.toLowerCase() != tag.toLowerCase()) {
-                                    e = ReplaceTag (e, tag);
-                                }
-                                if (className != "") {
-                                    var classnames = ed.dom.getAttrib(e, 'class').split(' ');
-                                    var newclassnames = new Array();
-                                    newclassnames.push(className)
-                                    for (var i = 0; i < classnames.length; i++) {
-                                        if ((classnames[i] == 'image-left') ||
-                                            (classnames[i] == 'image-right') ||
-                                            (classnames[i] == 'image-inline') ||
-                                            (classnames[i] == 'captioned')) {
-                                            newclassnames.push(classnames[i]);
-                                        }
+                        tinymce.each(ed.selection.getSelectedBlocks(), function(e) {
+                            if ((tag == "") && (className == "")) {
+                                ed.execCommand('RemoveFormat', false, null);
+                            } else {
+                                if (e.nodeName.toLowerCase() != "body") {
+                                    if (e.tagName.toLowerCase() != tag.toLowerCase()) {
+                                        e = ReplaceTag (e, tag);
                                     }
-                                    e.className = newclassnames.join(' ');
+                                    if (className != "") {
+                                        var classnames = ed.dom.getAttrib(e, 'class').split(' ');
+                                        var newclassnames = new Array();
+                                        newclassnames.push(className)
+                                        for (var i = 0; i < classnames.length; i++) {
+                                            if ((classnames[i] == 'image-left') ||
+                                                (classnames[i] == 'image-right') ||
+                                                (classnames[i] == 'image-inline') ||
+                                                (classnames[i] == 'captioned')) {
+                                                newclassnames.push(classnames[i]);
+                                            }
+                                        }
+                                        e.className = newclassnames.join(' ');
+                                    }
                                 }
                             }
-                        }
+                        });
                         break;
                     case "Tables":
                         var n;
