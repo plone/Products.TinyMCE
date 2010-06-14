@@ -5,6 +5,10 @@ HISTORY
 1.1rc13 (Unreleased)
 --------------------
 
+- Fix issue when handling images with apostrophes in the title. Fixes
+  http://dev.plone.org/plone/ticket/10500
+  [davisagli]
+
 - Don't live search in the image and link popups until the search text is at
   least 3 characters long. Fixes http://dev.plone.org/plone/ticket/10458.
   [davisagli]
