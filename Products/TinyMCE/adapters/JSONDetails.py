@@ -36,7 +36,8 @@ class JSONDetails(object):
 
         if self.context.portal_type in image_portal_types:
             results['thumb'] = self.context.absolute_url() + "/image_thumb"
-            results['scales'] = utility.getImageScales(self.context.getPrimaryField(),
+            image_field = self.context.Schema().get('image')
+            results['scales'] = utility.getImageScales(image_field,
                                                        context=self.context)
         else:
             results['thumb'] = ""

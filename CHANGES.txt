@@ -5,6 +5,11 @@ HISTORY
 1.1rc13 (Unreleased)
 --------------------
 
+- Look up scale sizes for image types using the field called 'image',
+  not the primary field. (They are not necessarily the same.) Fixes
+  http://dev.plone.org/plone/ticket/10227
+  [davisagli]
+
 - Fix issue when handling images with apostrophes in the title. Fixes
   http://dev.plone.org/plone/ticket/10500
   [davisagli]

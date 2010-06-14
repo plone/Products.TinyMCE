@@ -6,6 +6,7 @@ from AccessControl import ClassSecurityInfo
 from Acquisition import aq_base
 from Acquisition import aq_inner
 from Acquisition import aq_parent
+from Products.Archetypes.interfaces.field import IImageField
 from Products.CMFCore.utils import getToolByName
 from Products.CMFCore.interfaces._content import IFolderish
 from plone.app.layout.navigation.root import getNavigationRootObject
@@ -131,14 +132,17 @@ class TinyMCE(SimpleItem):
     imageobjects = FieldProperty(ITinyMCEResourceTypes['imageobjects'])
     customplugins = FieldProperty(ITinyMCEResourceTypes['customplugins'])
 
-    def getImageScales(self, primary_field=None, context=None):
+    def getImageScales(self, field=None, context=None):
         """Return the image sizes for the drawer"""
-        if primary_field is None:
+        if field is None:
             from Products.ATContentTypes.content.image import ATImage
-            primary_field = ATImage.schema['image']
+            field = ATImage.schema['image']
 
-        sizes = primary_field.getAvailableSizes(primary_field)
-        field_name = primary_field.getName()
+        if not IImageField.providedBy(field):
+            raise TypeError("Can't retrieve image scale info for non-image field.")
+
+        field_name = field.getName()
+        sizes = field.getAvailableSizes(field)
 
         # Extract image dimensions from context.
         if context is not None:
