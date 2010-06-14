@@ -5,6 +5,10 @@ HISTORY
 1.1rc13 (Unreleased)
 --------------------
 
+- Apply block format changes even when multiple blocks are selected.
+  Fixes http://dev.plone.org/plone/ticket/10145
+  [davisagli]
+
 - Look up scale sizes for image types using the field called 'image',
   not the primary field. (They are not necessarily the same.) Fixes
   http://dev.plone.org/plone/ticket/10227
