@@ -5,6 +5,10 @@ HISTORY
 1.1rc13 (Unreleased)
 --------------------
 
+- Reset font size for tables in content.css. This fixes
+  http://dev.plone.org/plone/ticket/10536
+  [davisagli]
+
 - Apply block format changes even when multiple blocks are selected.
   Fixes http://dev.plone.org/plone/ticket/10145
   [davisagli]

@@ -16,7 +16,7 @@ body.mceForceColors {background:#FFF; color:#000;}
 .mceItemTable, .mceItemTable td, .mceItemTable th, .mceItemTable caption, .mceItemVisualAid {border: 1px dashed #BBB;}
 a.mceItemAnchor {width:12px; line-height:6px; overflow:hidden; padding-left:12px; background:url(img/items.gif) no-repeat bottom left;}
 img.mceItemAnchor {width:12px; height:12px; background:url(img/items.gif) no-repeat;}
-table {cursor:default}
+table {cursor:default; font-size: 100%;}
 table td, table th {cursor:text}
 ins {border-bottom:1px solid green; text-decoration: none; color:green}
 del {color:red; text-decoration:line-through}
