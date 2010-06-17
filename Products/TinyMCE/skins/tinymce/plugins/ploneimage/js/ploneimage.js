@@ -440,8 +440,11 @@ var ImageDialog = {
                     for (var i = 0; i < data.items.length; i++) {
                         html += '<div class="' + (i % 2 == 0 ? 'even' : 'odd') + '">';
                         if (data.items[i].is_folderish) {
-                            html += '<img src="' + data.items[i].icon + '" border="0" style="margin-left: 17px" /> ';
-                            html += '<a href="javascript:ImageDialog.getFolderListing(\'' + data.items[i].url + '\',\'tinymce-jsonimagefolderlisting' + '\')">';
+                            if (data.items[i].icon.length) {
+                                html += '<img src="' + data.items[i].icon + '" border="0" style="margin-left: 17px" /> ';
+                            }
+                            html += '<a class="contenttype-' + data.items[i].normalized_type + '" ';
+                            html += 'href="javascript:ImageDialog.getFolderListing(\'' + data.items[i].url + '\',\'tinymce-jsonimagefolderlisting' + '\')">';
                             html += data.items[i].title;
                             html += '</a>';
                         } else {
@@ -453,8 +456,11 @@ var ImageDialog = {
                             } else {
                                 html += data.items[i].url;
                             }
-                            html += '"/> <img src="' + data.items[i].icon + '" border="0"/> ';
-                            html += data.items[i].title;
+                            html += '"/> ';
+                            if (data.items[i].icon.length) {
+                                html += '<img src="' + data.items[i].icon + '" border="0"/> ';
+                            }
+                            html += '<span class="contenttype-' + data.items[i].normalized_type + '">' + data.items[i].title + '</span>';
                         }
                         html += '</div>';
                     }

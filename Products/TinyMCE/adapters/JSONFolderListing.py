@@ -1,5 +1,4 @@
 from zope.interface import implements
-from zope.component import adapts
 from zope.component import getUtility
 
 try:
@@ -7,16 +6,13 @@ try:
 except:
     import simplejson as json
 
+from plone.i18n.normalizer.interfaces import IIDNormalizer
 from plone.app.layout.navigation.root import getNavigationRoot
 from plone.app.layout.navigation.interfaces import INavigationRoot
-from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.adapters.interfaces.JSONFolderListing import IJSONFolderListing
-from Products.CMFCore.interfaces._content import IContentish, IFolderish
-from Products.CMFPlone.interfaces import INonStructuralFolder
-from Products.CMFPlone import utils
+from Products.CMFCore.interfaces._content import IFolderish
 from Products.CMFCore.utils import getToolByName
 from Acquisition import aq_inner
-from Products.CMFCore.interfaces import ISiteRoot
 
 class JSONFolderListing(object):
     """Returns a folderish like listing in JSON"""
@@ -63,6 +59,7 @@ class JSONFolderListing(object):
 
         object = aq_inner(self.context)
         portal_catalog = getToolByName(object, 'portal_catalog')
+        normalizer = getUtility(IIDNormalizer)
 
         # check if object is a folderish object, if not, get it's parent.
         if not IFolderish.providedBy(object):
@@ -87,6 +84,7 @@ class JSONFolderListing(object):
                 'uid': brain.UID,
                 'url': brain.getURL(),
                 'portal_type': brain.portal_type,
+                'normalized_type': normalizer.normalize(brain.portal_type),
                 'title' : brain.Title == "" and brain.id or brain.Title,
                 'icon' : brain.getIcon,
                 'is_folderish' : brain.is_folderish
