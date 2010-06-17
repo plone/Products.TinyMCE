@@ -758,13 +758,17 @@ function getFolderListing(path, method) {
                     } else {
                         html += data.items[i].url;
                     }
-                    html += '"/> <img src="' + data.items[i].icon + '" border="0"/> ';
+                    html += '"/> ';
+                    if (data.items[i].icon.length) {
+                        html += '<img src="' + data.items[i].icon + '" border="0"/> ';
+                    }
                     if (data.items[i].is_folderish) {
-                        html += '<a href="javascript:getFolderListing(\'' + data.items[i].url + '\',\'tinymce-jsonlinkablefolderlisting' + '\')">';
+                        html += '<a class="contenttype-' + data.items[i].normalized_type + '" ';
+                        html += 'href="javascript:getFolderListing(\'' + data.items[i].url + '\',\'tinymce-jsonlinkablefolderlisting' + '\')">';
                         html += data.items[i].title;
                         html += '</a>';
                     } else {
-                        html += data.items[i].title;
+                        html += '<span class="contenttype-' + data.items[i].normalized_type + '">' + data.items[i].title + '</span>';
                     }
                     html += '</div>';
                 }
