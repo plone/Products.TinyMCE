@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: plone.tinymce\n"
-"POT-Creation-Date: 2010-05-12 09:08+0000\n"
+"POT-Creation-Date: 2010-06-22 07:44+0000\n"
 "PO-Revision-Date: 2010-05-17 11:46+0200\n"
 "Last-Translator: Jukka Ojaniemi <jukka.ojaniemi@jyu.fi>\n"
 "Language-Team: JYU <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "X-Poedit-Country: FINLAND\n"
 "X-Poedit-SourceCharset: utf-8\n"
 
-#: ../utility.py:596
+#: ../utility.py:600
 msgid "(remove style)"
 msgstr "(poista tyyli)"
 
@@ -69,6 +69,9 @@ msgstr "Kuvateksti"
 msgid "Choose the Css used in Wysiwyg Editor Area"
 msgstr "Valitse Wysiwyg editorissa käytettävä Css"
 
+msgid "Circle"
+msgstr ""
+
 #: ../interfaces/utility.py:256
 msgid "Cleanup messy code"
 msgstr "Siivoa koodi"
@@ -107,9 +110,15 @@ msgstr "Omat tyokalurivin painikkeet"
 msgid "Cut"
 msgstr "Leikkaa"
 
+msgid "Definition description"
+msgstr ""
+
 #: ../interfaces/utility.py:172
 msgid "Definition list"
 msgstr "Määritelmä lista"
+
+msgid "Definition term"
+msgstr ""
 
 #. Default: "Description"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:123
@@ -121,6 +130,9 @@ msgstr "Kuvaus"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:60
 msgid "Details"
 msgstr "Lisätietoja"
+
+msgid "Disc"
+msgstr ""
 
 msgid "Discreet"
 msgstr "Hillitty"
@@ -327,7 +339,7 @@ msgstr "Näkymätön ruudukko"
 msgid "Italic"
 msgstr "Kursivoi"
 
-#: ../browser/controlpanel.py:32
+#: ../browser/controlpanel.py:23
 msgid "Layout"
 msgstr "Ulkoasu"
 
@@ -336,7 +348,7 @@ msgid "Left to right"
 msgstr "Vasemmalta oikealle"
 
 #. Default: "Libraries"
-#: ../browser/controlpanel.py:40
+#: ../browser/controlpanel.py:31
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:21
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:22
 msgid "Libraries"
@@ -362,6 +374,12 @@ msgstr "Linkit sivuston objekteihin voivat käyttää uniikkeja tunnisteista, jo
 msgid "Literal"
 msgstr "Kirjaimellinen"
 
+msgid "Lower Alpha"
+msgstr ""
+
+msgid "Lower Roman"
+msgstr ""
+
 #. Default: "Mail"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:46
 msgid "Mail"
@@ -371,17 +389,20 @@ msgstr "Posti"
 msgid "Named"
 msgstr "Nimetty"
 
-#: ../utility.py:605
+#: ../utility.py:609
 msgid "No anchors in this page"
 msgstr "Tällä sivulla ei ole ankkureita"
 
-#: ../utility.py:604
+#: ../utility.py:608
 msgid "No items in this folder"
 msgstr "Tässä kansiossa ei ole kohteita"
 
-#: ../utility.py:597
+#: ../utility.py:601
 msgid "Normal paragraph"
 msgstr "Normaali kappale"
+
+msgid "Numbers"
+msgstr ""
 
 #: ../interfaces/utility.py:334
 msgid "Numeric"
@@ -413,7 +434,7 @@ msgstr "Liitä tekstinä"
 msgid "Paste from Word"
 msgstr "Liitä Wordistä"
 
-#: ../utility.py:598
+#: ../utility.py:602
 msgid "Plain cell"
 msgstr "Tavallinen solu"
 
@@ -424,7 +445,7 @@ msgid "Preview"
 msgstr "Esikatselu"
 
 #: ../interfaces/utility.py:240
-#: ../utility.py:603
+#: ../utility.py:607
 msgid "Print"
 msgstr "Tulosta"
 
@@ -443,7 +464,7 @@ msgstr "Tee uudelleen"
 msgid "Remove formatting"
 msgstr "Poista muotoilut"
 
-#: ../browser/controlpanel.py:44
+#: ../browser/controlpanel.py:35
 msgid "Resource Types"
 msgstr "Resurssien tyypit"
 
@@ -469,11 +490,11 @@ msgstr "Etsi"
 msgid "Select Style"
 msgstr "Valitse tyyli"
 
-#: ../utility.py:602
+#: ../utility.py:606
 msgid "Selection"
 msgstr "Valinta"
 
-#: ../browser/controlpanel.py:49
+#: ../browser/controlpanel.py:40
 msgid "Settings for the TinyMCE Wysiwyg editor."
 msgstr "TinyMCE Wysiwyg editorin asetukset."
 
@@ -481,11 +502,14 @@ msgstr "TinyMCE Wysiwyg editorin asetukset."
 msgid "Spellchecker"
 msgstr "Oikeinkirjoituksen tarkistus"
 
+msgid "Square"
+msgstr ""
+
 #: ../interfaces/utility.py:128
 msgid "Strikethrough"
 msgstr "Yliviivaa"
 
-#: ../utility.py:599
+#: ../utility.py:603
 msgid "Style..."
 msgstr "Tyylit..."
 
@@ -520,11 +544,11 @@ msgstr "Taulukon kontrollit"
 msgid "Table styles"
 msgstr "Taulukon tyylit"
 
-#: ../utility.py:601
+#: ../utility.py:605
 msgid "Tables"
 msgstr "Taulukot"
 
-#: ../utility.py:600
+#: ../utility.py:604
 msgid "Text"
 msgstr "Teksti"
 
@@ -573,7 +597,7 @@ msgstr "Tämä valinta määrittelee oletuksenä käytettävän kirjoitussuunnan
 msgid "TinyMCE"
 msgstr "TinyMCE"
 
-#: ../browser/controlpanel.py:48
+#: ../browser/controlpanel.py:39
 msgid "TinyMCE Settings"
 msgstr "TinyMCE asetukset"
 
@@ -596,7 +620,7 @@ msgstr "Täysi näyttö"
 msgid "Toggle guidelines/invisible objects"
 msgstr "Ohjausviivat/näkymättömät objektit"
 
-#: ../browser/controlpanel.py:36
+#: ../browser/controlpanel.py:27
 msgid "Toolbar"
 msgstr "Työkalurivi"
 
@@ -637,6 +661,12 @@ msgstr "Lähetä"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:71
 msgid "Upload file"
 msgstr "Lähetä tiedosto"
+
+msgid "Upper Alpha"
+msgstr ""
+
+msgid "Upper Roman"
+msgstr ""
 
 #: ../interfaces/utility.py:264
 msgid "Visual control characters on/off"

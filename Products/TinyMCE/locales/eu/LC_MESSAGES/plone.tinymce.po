@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-05-12 09:08+0000\n"
+"POT-Creation-Date: 2010-06-22 07:44+0000\n"
 "PO-Revision-Date: 2010-03-24 10:05+0100\n"
 "Last-Translator: Mikel Larreategi <mlarreategi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone.tinymce\n"
 
-#: ../utility.py:596
+#: ../utility.py:600
 msgid "(remove style)"
 msgstr ""
 
@@ -63,6 +63,9 @@ msgstr "Irudi-oina"
 msgid "Choose the Css used in Wysiwyg Editor Area"
 msgstr "WYSIWYG editorean erabili den CSSa aukeratu"
 
+msgid "Circle"
+msgstr ""
+
 #: ../interfaces/utility.py:256
 msgid "Cleanup messy code"
 msgstr "Kodea garbitu"
@@ -100,9 +103,15 @@ msgstr "Pertsonalizatutako tresna-barrako botoiak"
 msgid "Cut"
 msgstr "Moztu"
 
+msgid "Definition description"
+msgstr ""
+
 #: ../interfaces/utility.py:172
 msgid "Definition list"
 msgstr "Definizio zerrenda"
+
+msgid "Definition term"
+msgstr ""
 
 #. Default: "Description"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:123
@@ -114,6 +123,9 @@ msgstr "Deskribapena"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:60
 msgid "Details"
 msgstr "Zehaztapenak"
+
+msgid "Disc"
+msgstr ""
 
 msgid "Discreet"
 msgstr "Txikiz"
@@ -320,7 +332,7 @@ msgstr "Ertz gabeko taula"
 msgid "Italic"
 msgstr "Etzana"
 
-#: ../browser/controlpanel.py:32
+#: ../browser/controlpanel.py:23
 msgid "Layout"
 msgstr "Itxura"
 
@@ -329,7 +341,7 @@ msgid "Left to right"
 msgstr "Ezkerretik eskuinera"
 
 #. Default: "Libraries"
-#: ../browser/controlpanel.py:40
+#: ../browser/controlpanel.py:31
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:21
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:22
 msgid "Libraries"
@@ -355,6 +367,12 @@ msgstr "Elementuetarako loturak egitean, elementuan identifikadorea erabili dait
 msgid "Literal"
 msgstr "Literala"
 
+msgid "Lower Alpha"
+msgstr ""
+
+msgid "Lower Roman"
+msgstr ""
+
 #. Default: "Mail"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:46
 msgid "Mail"
@@ -364,16 +382,19 @@ msgstr "Posta"
 msgid "Named"
 msgstr "Izenduna"
 
-#: ../utility.py:605
+#: ../utility.py:609
 msgid "No anchors in this page"
 msgstr ""
 
-#: ../utility.py:604
+#: ../utility.py:608
 msgid "No items in this folder"
 msgstr ""
 
-#: ../utility.py:597
+#: ../utility.py:601
 msgid "Normal paragraph"
+msgstr ""
+
+msgid "Numbers"
 msgstr ""
 
 #: ../interfaces/utility.py:334
@@ -406,7 +427,7 @@ msgstr "Testu arrunt gisa itsatsi"
 msgid "Paste from Word"
 msgstr "Wordetik itsatsi"
 
-#: ../utility.py:598
+#: ../utility.py:602
 msgid "Plain cell"
 msgstr ""
 
@@ -417,7 +438,7 @@ msgid "Preview"
 msgstr "Aurreikusi"
 
 #: ../interfaces/utility.py:240
-#: ../utility.py:603
+#: ../utility.py:607
 msgid "Print"
 msgstr "Inprimatu"
 
@@ -436,7 +457,7 @@ msgstr "Berregin"
 msgid "Remove formatting"
 msgstr "Formatua ezabatu"
 
-#: ../browser/controlpanel.py:44
+#: ../browser/controlpanel.py:35
 msgid "Resource Types"
 msgstr "Elementu motak"
 
@@ -462,11 +483,11 @@ msgstr "Bilatu"
 msgid "Select Style"
 msgstr "Estiloa aukeratu"
 
-#: ../utility.py:602
+#: ../utility.py:606
 msgid "Selection"
 msgstr ""
 
-#: ../browser/controlpanel.py:49
+#: ../browser/controlpanel.py:40
 msgid "Settings for the TinyMCE Wysiwyg editor."
 msgstr "TinyMCE editorearen ezarpenak"
 
@@ -474,11 +495,14 @@ msgstr "TinyMCE editorearen ezarpenak"
 msgid "Spellchecker"
 msgstr "Ortografia zuzentzailea"
 
+msgid "Square"
+msgstr ""
+
 #: ../interfaces/utility.py:128
 msgid "Strikethrough"
 msgstr "Gainetik marra jarri"
 
-#: ../utility.py:599
+#: ../utility.py:603
 msgid "Style..."
 msgstr ""
 
@@ -513,11 +537,11 @@ msgstr "Taularen kontrolak"
 msgid "Table styles"
 msgstr "Taularen estiloak"
 
-#: ../utility.py:601
+#: ../utility.py:605
 msgid "Tables"
 msgstr ""
 
-#: ../utility.py:600
+#: ../utility.py:604
 msgid "Text"
 msgstr ""
 
@@ -566,7 +590,7 @@ msgstr "Aukera honek, idazteko defektuzko zentzua zein den zehazten du, hizkuntz
 msgid "TinyMCE"
 msgstr "TinyMCE"
 
-#: ../browser/controlpanel.py:48
+#: ../browser/controlpanel.py:39
 msgid "TinyMCE Settings"
 msgstr "TinyMCEren ezarpenak"
 
@@ -589,7 +613,7 @@ msgstr "Pantaila osoko modua aktibatu/desaktibatu"
 msgid "Toggle guidelines/invisible objects"
 msgstr "Gidalerroak/ikusten ez diren elementuak agertarazi/desagertarazi"
 
-#: ../browser/controlpanel.py:36
+#: ../browser/controlpanel.py:27
 msgid "Toolbar"
 msgstr "Tresna-barra"
 
@@ -630,6 +654,12 @@ msgstr "Kargatu"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:71
 msgid "Upload file"
 msgstr "Fitxategia kargatu"
+
+msgid "Upper Alpha"
+msgstr ""
+
+msgid "Upper Roman"
+msgstr ""
 
 #: ../interfaces/utility.py:264
 msgid "Visual control characters on/off"

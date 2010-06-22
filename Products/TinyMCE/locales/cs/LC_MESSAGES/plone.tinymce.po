@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: plone.tinymce\n"
-"POT-Creation-Date: 2010-05-12 09:08+0000\n"
+"POT-Creation-Date: 2010-06-22 07:44+0000\n"
 "PO-Revision-Date: 2010-04-05 12:20+0100\n"
 "Last-Translator: Radim Novotny <novotny.radim@gmail.com>\n"
 "Language-Team: DMS4U <info@dms4u.cz>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone.tinymce\n"
 
-#: ../utility.py:596
+#: ../utility.py:600
 msgid "(remove style)"
 msgstr ""
 
@@ -66,6 +66,9 @@ msgstr "Popisek"
 msgid "Choose the Css used in Wysiwyg Editor Area"
 msgstr "Vybrte CSS styl použitý ve WYSIWYG editoru"
 
+msgid "Circle"
+msgstr ""
+
 #: ../interfaces/utility.py:256
 msgid "Cleanup messy code"
 msgstr "Pročistit neupravený kód"
@@ -103,9 +106,15 @@ msgstr "Vlastní tlačítka"
 msgid "Cut"
 msgstr "Vyjmout"
 
+msgid "Definition description"
+msgstr ""
+
 #: ../interfaces/utility.py:172
 msgid "Definition list"
 msgstr "Definiční seznam"
+
+msgid "Definition term"
+msgstr ""
 
 #. Default: "Description"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:123
@@ -117,6 +126,9 @@ msgstr "Popis"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:60
 msgid "Details"
 msgstr "Detaily"
+
+msgid "Disc"
+msgstr ""
 
 msgid "Discreet"
 msgstr "Nevýrazné"
@@ -323,7 +335,7 @@ msgstr "Neviditelná mřížka"
 msgid "Italic"
 msgstr "Skloněné"
 
-#: ../browser/controlpanel.py:32
+#: ../browser/controlpanel.py:23
 msgid "Layout"
 msgstr "Rozvržení"
 
@@ -332,7 +344,7 @@ msgid "Left to right"
 msgstr "Zleva doprava"
 
 #. Default: "Libraries"
-#: ../browser/controlpanel.py:40
+#: ../browser/controlpanel.py:31
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:21
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:22
 msgid "Libraries"
@@ -358,6 +370,12 @@ msgstr "Odkazy na objekty v rámci portálu mohou být vytvořeny s pomocí jedi
 msgid "Literal"
 msgstr "Kód"
 
+msgid "Lower Alpha"
+msgstr ""
+
+msgid "Lower Roman"
+msgstr ""
+
 #. Default: "Mail"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:46
 msgid "Mail"
@@ -367,16 +385,19 @@ msgstr "Mail"
 msgid "Named"
 msgstr "Pojmenované"
 
-#: ../utility.py:605
+#: ../utility.py:609
 msgid "No anchors in this page"
 msgstr ""
 
-#: ../utility.py:604
+#: ../utility.py:608
 msgid "No items in this folder"
 msgstr ""
 
-#: ../utility.py:597
+#: ../utility.py:601
 msgid "Normal paragraph"
+msgstr ""
+
+msgid "Numbers"
 msgstr ""
 
 #: ../interfaces/utility.py:334
@@ -409,7 +430,7 @@ msgstr "Vložit jako prostý text"
 msgid "Paste from Word"
 msgstr "Vložit z Wordu"
 
-#: ../utility.py:598
+#: ../utility.py:602
 msgid "Plain cell"
 msgstr ""
 
@@ -420,7 +441,7 @@ msgid "Preview"
 msgstr "Náhled"
 
 #: ../interfaces/utility.py:240
-#: ../utility.py:603
+#: ../utility.py:607
 msgid "Print"
 msgstr "Tisk"
 
@@ -439,7 +460,7 @@ msgstr "Znovu"
 msgid "Remove formatting"
 msgstr "Odstranit formátování"
 
-#: ../browser/controlpanel.py:44
+#: ../browser/controlpanel.py:35
 msgid "Resource Types"
 msgstr "Typy zdrojů"
 
@@ -465,11 +486,11 @@ msgstr "Vyhledat"
 msgid "Select Style"
 msgstr "Vybrat styl"
 
-#: ../utility.py:602
+#: ../utility.py:606
 msgid "Selection"
 msgstr ""
 
-#: ../browser/controlpanel.py:49
+#: ../browser/controlpanel.py:40
 msgid "Settings for the TinyMCE Wysiwyg editor."
 msgstr "Nastavení TinyMCE editoru"
 
@@ -477,11 +498,14 @@ msgstr "Nastavení TinyMCE editoru"
 msgid "Spellchecker"
 msgstr "Kontrola pravopisu"
 
+msgid "Square"
+msgstr ""
+
 #: ../interfaces/utility.py:128
 msgid "Strikethrough"
 msgstr "Přeškrtnuté"
 
-#: ../utility.py:599
+#: ../utility.py:603
 msgid "Style..."
 msgstr ""
 
@@ -516,11 +540,11 @@ msgstr "Nastavení tabulky"
 msgid "Table styles"
 msgstr "Styly tabulky"
 
-#: ../utility.py:601
+#: ../utility.py:605
 msgid "Tables"
 msgstr ""
 
-#: ../utility.py:600
+#: ../utility.py:604
 msgid "Text"
 msgstr ""
 
@@ -569,7 +593,7 @@ msgstr "Tato volba určuje výchozí směr psaní. V některých jazycích (hebr
 msgid "TinyMCE"
 msgstr "TinyMCE"
 
-#: ../browser/controlpanel.py:48
+#: ../browser/controlpanel.py:39
 msgid "TinyMCE Settings"
 msgstr "Nastavení TinyMCE"
 
@@ -592,7 +616,7 @@ msgstr "Přepnout režim celé obrazovky"
 msgid "Toggle guidelines/invisible objects"
 msgstr "Přepnout vodítka/neviditelné prvky"
 
-#: ../browser/controlpanel.py:36
+#: ../browser/controlpanel.py:27
 msgid "Toolbar"
 msgstr "Nástrojová lišta"
 
@@ -633,6 +657,12 @@ msgstr "Nahrát"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:71
 msgid "Upload file"
 msgstr "Nahrát soubor"
+
+msgid "Upper Alpha"
+msgstr ""
+
+msgid "Upper Roman"
+msgstr ""
 
 #: ../interfaces/utility.py:264
 msgid "Visual control characters on/off"

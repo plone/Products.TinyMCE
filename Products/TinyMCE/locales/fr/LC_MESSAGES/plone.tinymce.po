@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-05-12 09:08+0000\n"
+"POT-Creation-Date: 2010-06-22 07:44+0000\n"
 "PO-Revision-Date: 2010-05-09 18:52+0100\n"
 "Last-Translator: Vincent Fretin <vincent.fretin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone.tinymce\n"
 
-#: ../utility.py:596
+#: ../utility.py:600
 msgid "(remove style)"
 msgstr "(retirer le style)"
 
@@ -66,6 +66,9 @@ msgstr "Légende"
 msgid "Choose the Css used in Wysiwyg Editor Area"
 msgstr "Choisissez la Css utilisée dans la l'éditeur wysiwyg"
 
+msgid "Circle"
+msgstr "Cercle"
+
 #: ../interfaces/utility.py:256
 msgid "Cleanup messy code"
 msgstr "Nettoyer le code cassé"
@@ -103,9 +106,15 @@ msgstr "Bouttons de la barre d'outil personalisés"
 msgid "Cut"
 msgstr "Couper"
 
+msgid "Definition description"
+msgstr "Définition"
+
 #: ../interfaces/utility.py:172
 msgid "Definition list"
 msgstr "Liste de définition"
+
+msgid "Definition term"
+msgstr "Terme défini"
 
 #. Default: "Description"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:123
@@ -117,6 +126,9 @@ msgstr "Descripition"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:60
 msgid "Details"
 msgstr "Détails"
+
+msgid "Disc"
+msgstr "Disque"
 
 msgid "Discreet"
 msgstr "Discret"
@@ -212,21 +224,6 @@ msgstr "Listing élégant"
 
 msgid "Fancy vertical listing"
 msgstr "Listing élégant vertical"
-
-msgid "Numbers"
-msgstr "Chiffres"
-
-msgid "Lower Alpha"
-msgstr "Alpha minuscules"
-
-msgid "Upper Alpha"
-msgstr "Alpha majuscules"
-
-msgid "Upper Roman"
-msgstr "Romain majuscules"
-
-msgid "Lower Roman"
-msgstr "Romain minuscules"
 
 #. Default: "File"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:109
@@ -338,7 +335,7 @@ msgstr "Grille invisible"
 msgid "Italic"
 msgstr "Italique"
 
-#: ../browser/controlpanel.py:32
+#: ../browser/controlpanel.py:23
 msgid "Layout"
 msgstr "Mise en page"
 
@@ -347,7 +344,7 @@ msgid "Left to right"
 msgstr "De gauche à droite"
 
 #. Default: "Libraries"
-#: ../browser/controlpanel.py:40
+#: ../browser/controlpanel.py:31
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:21
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:22
 msgid "Libraries"
@@ -373,6 +370,12 @@ msgstr "Liens vers les objets sur le site pouvant utiliser les identifiants uniq
 msgid "Literal"
 msgstr "Littéral"
 
+msgid "Lower Alpha"
+msgstr "Alpha minuscules"
+
+msgid "Lower Roman"
+msgstr "Romain minuscules"
+
 #. Default: "Mail"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:46
 msgid "Mail"
@@ -382,17 +385,20 @@ msgstr "Adresse mail"
 msgid "Named"
 msgstr "Nommé"
 
-#: ../utility.py:605
+#: ../utility.py:609
 msgid "No anchors in this page"
 msgstr "Pas d'ancre sur cette page"
 
-#: ../utility.py:604
+#: ../utility.py:608
 msgid "No items in this folder"
 msgstr "Ce dossier ne contient aucun élément"
 
-#: ../utility.py:597
+#: ../utility.py:601
 msgid "Normal paragraph"
 msgstr "Paragraphe standard"
+
+msgid "Numbers"
+msgstr "Chiffres"
 
 #: ../interfaces/utility.py:334
 msgid "Numeric"
@@ -424,7 +430,7 @@ msgstr "Coller en tant que texte brut"
 msgid "Paste from Word"
 msgstr "Coller à partir de Word"
 
-#: ../utility.py:598
+#: ../utility.py:602
 msgid "Plain cell"
 msgstr "Cellule simple"
 
@@ -435,7 +441,7 @@ msgid "Preview"
 msgstr "Prévisualisation"
 
 #: ../interfaces/utility.py:240
-#: ../utility.py:603
+#: ../utility.py:607
 msgid "Print"
 msgstr "Imprimer"
 
@@ -454,7 +460,7 @@ msgstr "Refaire"
 msgid "Remove formatting"
 msgstr "Retirer la mise en page"
 
-#: ../browser/controlpanel.py:44
+#: ../browser/controlpanel.py:35
 msgid "Resource Types"
 msgstr "Types de ressource"
 
@@ -480,11 +486,11 @@ msgstr "Rechercher"
 msgid "Select Style"
 msgstr "Sélectionner le style"
 
-#: ../utility.py:602
+#: ../utility.py:606
 msgid "Selection"
 msgstr "Sélection"
 
-#: ../browser/controlpanel.py:49
+#: ../browser/controlpanel.py:40
 msgid "Settings for the TinyMCE Wysiwyg editor."
 msgstr "Configuration de TinyMCE l'éditeur wysiwyg."
 
@@ -492,11 +498,14 @@ msgstr "Configuration de TinyMCE l'éditeur wysiwyg."
 msgid "Spellchecker"
 msgstr "Vérification orthographique"
 
+msgid "Square"
+msgstr "Carré"
+
 #: ../interfaces/utility.py:128
 msgid "Strikethrough"
 msgstr "Barrer"
 
-#: ../utility.py:599
+#: ../utility.py:603
 msgid "Style..."
 msgstr "Style..."
 
@@ -531,11 +540,11 @@ msgstr "Contrôles de tableau"
 msgid "Table styles"
 msgstr "Styles de tableau"
 
-#: ../utility.py:601
+#: ../utility.py:605
 msgid "Tables"
 msgstr "Tables"
 
-#: ../utility.py:600
+#: ../utility.py:604
 msgid "Text"
 msgstr "Texte"
 
@@ -584,7 +593,7 @@ msgstr "Cette option précise la direction d'écriture par défaut. Certaines la
 msgid "TinyMCE"
 msgstr "TinyMCE"
 
-#: ../browser/controlpanel.py:48
+#: ../browser/controlpanel.py:39
 msgid "TinyMCE Settings"
 msgstr "Configuration de TinyMCE"
 
@@ -607,7 +616,7 @@ msgstr "Basculer en mode plein écran"
 msgid "Toggle guidelines/invisible objects"
 msgstr "Afficher les lignes directrices/objets invisibles"
 
-#: ../browser/controlpanel.py:36
+#: ../browser/controlpanel.py:27
 msgid "Toolbar"
 msgstr "Barre d'outils"
 
@@ -649,6 +658,12 @@ msgstr "Télécharger (up)"
 msgid "Upload file"
 msgstr "Télécharger (up) un fichier"
 
+msgid "Upper Alpha"
+msgstr "Alpha majuscules"
+
+msgid "Upper Roman"
+msgstr "Romain majuscules"
+
 #: ../interfaces/utility.py:264
 msgid "Visual control characters on/off"
 msgstr "Contrôle des caractères on/off"
@@ -661,11 +676,3 @@ msgstr "Si activé l'utilisateur sera limité à l'objet courant et ne pourra pa
 msgid "Writing direction"
 msgstr "Direction d'écriture"
 
-msgid "Circle"
-msgstr "Cercle"
-
-msgid "Disc"
-msgstr "Disque"
-
-msgid "Square"
-msgstr "Carré"

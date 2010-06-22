@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-05-12 09:08+0000\n"
+"POT-Creation-Date: 2010-06-22 07:44+0000\n"
 "PO-Revision-Date: 2010-03-25 01:55+0900\n"
 "Last-Translator: Takeshi Yamamoto (Retsu) <tyam@mac.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone.tinymce\n"
 
-#: ../utility.py:596
+#: ../utility.py:600
 msgid "(remove style)"
 msgstr ""
 
@@ -66,6 +66,9 @@ msgstr "キャプション"
 msgid "Choose the Css used in Wysiwyg Editor Area"
 msgstr "WYSIWYGエディタ領域で使われるCSSを選ぶ"
 
+msgid "Circle"
+msgstr ""
+
 #: ../interfaces/utility.py:256
 msgid "Cleanup messy code"
 msgstr "乱雑なコードを整頓する"
@@ -103,9 +106,15 @@ msgstr "カスタムツールバーボタン"
 msgid "Cut"
 msgstr "カット"
 
+msgid "Definition description"
+msgstr ""
+
 #: ../interfaces/utility.py:172
 msgid "Definition list"
 msgstr "定義リスト"
+
+msgid "Definition term"
+msgstr ""
 
 #. Default: "Description"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:123
@@ -117,6 +126,9 @@ msgstr "説明"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:60
 msgid "Details"
 msgstr "詳細"
+
+msgid "Disc"
+msgstr ""
 
 msgid "Discreet"
 msgstr "控え目"
@@ -323,7 +335,7 @@ msgstr "見えないグリッド"
 msgid "Italic"
 msgstr "イタリック"
 
-#: ../browser/controlpanel.py:32
+#: ../browser/controlpanel.py:23
 msgid "Layout"
 msgstr "レイアウト"
 
@@ -332,7 +344,7 @@ msgid "Left to right"
 msgstr "左から右"
 
 #. Default: "Libraries"
-#: ../browser/controlpanel.py:40
+#: ../browser/controlpanel.py:31
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:21
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:22
 msgid "Libraries"
@@ -358,6 +370,12 @@ msgstr "このサイトのオブジェクトへのリンクはユニークオブ
 msgid "Literal"
 msgstr "リテラル"
 
+msgid "Lower Alpha"
+msgstr ""
+
+msgid "Lower Roman"
+msgstr ""
+
 #. Default: "Mail"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:46
 msgid "Mail"
@@ -367,16 +385,19 @@ msgstr "メール"
 msgid "Named"
 msgstr ""
 
-#: ../utility.py:605
+#: ../utility.py:609
 msgid "No anchors in this page"
 msgstr ""
 
-#: ../utility.py:604
+#: ../utility.py:608
 msgid "No items in this folder"
 msgstr ""
 
-#: ../utility.py:597
+#: ../utility.py:601
 msgid "Normal paragraph"
+msgstr ""
+
+msgid "Numbers"
 msgstr ""
 
 #: ../interfaces/utility.py:334
@@ -409,7 +430,7 @@ msgstr "プレーンテキストとしてペースト"
 msgid "Paste from Word"
 msgstr "Wordからペースト"
 
-#: ../utility.py:598
+#: ../utility.py:602
 msgid "Plain cell"
 msgstr ""
 
@@ -420,7 +441,7 @@ msgid "Preview"
 msgstr "プレビュー"
 
 #: ../interfaces/utility.py:240
-#: ../utility.py:603
+#: ../utility.py:607
 msgid "Print"
 msgstr "印刷"
 
@@ -439,7 +460,7 @@ msgstr "再実行"
 msgid "Remove formatting"
 msgstr "書式を取り除く"
 
-#: ../browser/controlpanel.py:44
+#: ../browser/controlpanel.py:35
 msgid "Resource Types"
 msgstr "リソースタイプ"
 
@@ -465,11 +486,11 @@ msgstr "検索"
 msgid "Select Style"
 msgstr "スタイルを選ぶ"
 
-#: ../utility.py:602
+#: ../utility.py:606
 msgid "Selection"
 msgstr ""
 
-#: ../browser/controlpanel.py:49
+#: ../browser/controlpanel.py:40
 msgid "Settings for the TinyMCE Wysiwyg editor."
 msgstr "TinyMCE WYSIWYGエディタの設定"
 
@@ -477,11 +498,14 @@ msgstr "TinyMCE WYSIWYGエディタの設定"
 msgid "Spellchecker"
 msgstr "スペルチェッカー"
 
+msgid "Square"
+msgstr ""
+
 #: ../interfaces/utility.py:128
 msgid "Strikethrough"
 msgstr ""
 
-#: ../utility.py:599
+#: ../utility.py:603
 msgid "Style..."
 msgstr ""
 
@@ -516,11 +540,11 @@ msgstr "表"
 msgid "Table styles"
 msgstr "表スタイル"
 
-#: ../utility.py:601
+#: ../utility.py:605
 msgid "Tables"
 msgstr ""
 
-#: ../utility.py:600
+#: ../utility.py:604
 msgid "Text"
 msgstr ""
 
@@ -569,7 +593,7 @@ msgstr "このオプションは文章書きの方向のデフォルトを指定
 msgid "TinyMCE"
 msgstr "TinyMCE"
 
-#: ../browser/controlpanel.py:48
+#: ../browser/controlpanel.py:39
 msgid "TinyMCE Settings"
 msgstr "TinyMCE 設定"
 
@@ -592,7 +616,7 @@ msgstr "全画面モード切替"
 msgid "Toggle guidelines/invisible objects"
 msgstr ""
 
-#: ../browser/controlpanel.py:36
+#: ../browser/controlpanel.py:27
 msgid "Toolbar"
 msgstr "ツールバー"
 
@@ -633,6 +657,12 @@ msgstr "アップロード"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:71
 msgid "Upload file"
 msgstr "ファイルをアップロードする"
+
+msgid "Upper Alpha"
+msgstr ""
+
+msgid "Upper Roman"
+msgstr ""
 
 #: ../interfaces/utility.py:264
 msgid "Visual control characters on/off"

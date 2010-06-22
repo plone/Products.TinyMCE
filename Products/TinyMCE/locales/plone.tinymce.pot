@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-05-12 09:08+0000\n"
+"POT-Creation-Date: 2010-06-22 07:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone.tinymce\n"
 
-#: ../utility.py:596
+#: ../utility.py:600
 msgid "(remove style)"
 msgstr ""
 
@@ -64,6 +64,9 @@ msgstr ""
 msgid "Choose the Css used in Wysiwyg Editor Area"
 msgstr ""
 
+msgid "Circle"
+msgstr ""
+
 #: ../interfaces/utility.py:256
 msgid "Cleanup messy code"
 msgstr ""
@@ -100,8 +103,14 @@ msgstr ""
 msgid "Cut"
 msgstr ""
 
+msgid "Definition description"
+msgstr ""
+
 #: ../interfaces/utility.py:172
 msgid "Definition list"
+msgstr ""
+
+msgid "Definition term"
 msgstr ""
 
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:123
@@ -111,6 +120,9 @@ msgstr ""
 
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:60
 msgid "Details"
+msgstr ""
+
+msgid "Disc"
 msgstr ""
 
 msgid "Discreet"
@@ -311,7 +323,7 @@ msgstr ""
 msgid "Italic"
 msgstr ""
 
-#: ../browser/controlpanel.py:32
+#: ../browser/controlpanel.py:23
 msgid "Layout"
 msgstr ""
 
@@ -319,7 +331,7 @@ msgstr ""
 msgid "Left to right"
 msgstr ""
 
-#: ../browser/controlpanel.py:40
+#: ../browser/controlpanel.py:31
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:21
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:22
 msgid "Libraries"
@@ -344,6 +356,12 @@ msgstr ""
 msgid "Literal"
 msgstr ""
 
+msgid "Lower Alpha"
+msgstr ""
+
+msgid "Lower Roman"
+msgstr ""
+
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:46
 msgid "Mail"
 msgstr ""
@@ -352,16 +370,19 @@ msgstr ""
 msgid "Named"
 msgstr ""
 
-#: ../utility.py:605
+#: ../utility.py:609
 msgid "No anchors in this page"
 msgstr ""
 
-#: ../utility.py:604
+#: ../utility.py:608
 msgid "No items in this folder"
 msgstr ""
 
-#: ../utility.py:597
+#: ../utility.py:601
 msgid "Normal paragraph"
+msgstr ""
+
+msgid "Numbers"
 msgstr ""
 
 #: ../interfaces/utility.py:334
@@ -394,7 +415,7 @@ msgstr ""
 msgid "Paste from Word"
 msgstr ""
 
-#: ../utility.py:598
+#: ../utility.py:602
 msgid "Plain cell"
 msgstr ""
 
@@ -404,7 +425,7 @@ msgid "Preview"
 msgstr ""
 
 #: ../interfaces/utility.py:240
-#: ../utility.py:603
+#: ../utility.py:607
 msgid "Print"
 msgstr ""
 
@@ -423,7 +444,7 @@ msgstr ""
 msgid "Remove formatting"
 msgstr ""
 
-#: ../browser/controlpanel.py:44
+#: ../browser/controlpanel.py:35
 msgid "Resource Types"
 msgstr ""
 
@@ -448,11 +469,11 @@ msgstr ""
 msgid "Select Style"
 msgstr ""
 
-#: ../utility.py:602
+#: ../utility.py:606
 msgid "Selection"
 msgstr ""
 
-#: ../browser/controlpanel.py:49
+#: ../browser/controlpanel.py:40
 msgid "Settings for the TinyMCE Wysiwyg editor."
 msgstr ""
 
@@ -460,11 +481,14 @@ msgstr ""
 msgid "Spellchecker"
 msgstr ""
 
+msgid "Square"
+msgstr ""
+
 #: ../interfaces/utility.py:128
 msgid "Strikethrough"
 msgstr ""
 
-#: ../utility.py:599
+#: ../utility.py:603
 msgid "Style..."
 msgstr ""
 
@@ -498,11 +522,11 @@ msgstr ""
 msgid "Table styles"
 msgstr ""
 
-#: ../utility.py:601
+#: ../utility.py:605
 msgid "Tables"
 msgstr ""
 
-#: ../utility.py:600
+#: ../utility.py:604
 msgid "Text"
 msgstr ""
 
@@ -550,7 +574,7 @@ msgstr ""
 msgid "TinyMCE"
 msgstr ""
 
-#: ../browser/controlpanel.py:48
+#: ../browser/controlpanel.py:39
 msgid "TinyMCE Settings"
 msgstr ""
 
@@ -571,7 +595,7 @@ msgstr ""
 msgid "Toggle guidelines/invisible objects"
 msgstr ""
 
-#: ../browser/controlpanel.py:36
+#: ../browser/controlpanel.py:27
 msgid "Toolbar"
 msgstr ""
 
@@ -608,6 +632,12 @@ msgstr ""
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:55
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:71
 msgid "Upload file"
+msgstr ""
+
+msgid "Upper Alpha"
+msgstr ""
+
+msgid "Upper Roman"
 msgstr ""
 
 #: ../interfaces/utility.py:264
