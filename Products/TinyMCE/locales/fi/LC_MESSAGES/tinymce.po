@@ -1,12 +1,12 @@
 # This is the Finnish language pack for TinyMCE.
-# Version 2.8
+# Version 3.1
 #
 # Moxiecode Systems AB
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2010-01-02 00:00+0000\n"
+"PO-Revision-Date: 2010-06-21 00:00+0000\n"
 "Last-Translator: Moxiecode Systems AB\n"
 "Language-Team: Moxiecode Systems AB\n"
 "MIME-Version: 1.0\n"
@@ -472,10 +472,10 @@ msgid "insertdatetime_inserttime_desc"
 msgstr "Lisää kellonaika"
 
 msgid "insertdatetime_months_long"
-msgstr "Tammikuu,Helmikuu,Maaliskuu,Huhtikuu,Toukokuu,Kesäkuu,Heinäkuu,Elokuu,Syyskuu,Lokakuu,Marraskuu,Joulukuu"
+msgstr "tammikuu,helmikuu,maaliskuu,huhtikuu,toukokuu,kesäkuu,heinäkuu,elokuu,syyskuu,lokakuu,marraskuu,joulukuu"
 
 msgid "insertdatetime_months_short"
-msgstr "Tammi,Helmi,Maalis,Huhti,Touko,Kesä,Heinä,Elo,Syys,Loka,Marras,Joulu"
+msgstr "tammi,helmi,maalis,huhti,touko,kesä,heinä,elo,syys,loka,marras,joulu"
 
 msgid "insertdatetime_day_long"
 msgstr "sunnuntai,maanantai,tiistai,keskiviikko,torstai,perjantai,lauantai,sunnuntai"
@@ -1296,6 +1296,12 @@ msgstr "Liitä Wordistä"
 msgid "paste_selectall_desc"
 msgstr "Valitse kaikki"
 
+msgid "paste_plaintext_mode_sticky"
+msgstr "Liittäminen on nyt pelkkänä tekstinä. Klikkaa uudelleen vaihtaaksesi takaisin tavalliseen tilaan. Palaat takaisin tavalliseen tilaan liitettyäsi jotakin."
+
+msgid "paste_plaintext_mode"
+msgstr "Liittäminen on nyt pelkkänä tekstinä. Klikkaa uudelleen vaihtaaksesi takaisin tavalliseen tilaan."
+
 msgid "paste_dlg_text_title"
 msgstr "Paina CTRL+V liittääksesi sisällön ikkunaan."
 
@@ -1607,6 +1613,12 @@ msgstr "kehys"
 
 msgid "autosave_unload_msg"
 msgstr "Tekemäsi muutokset menetetään jos poistut tältä sivulta."
+
+msgid "autosave_restore_content"
+msgstr "Palauta automaattisesti tallennettu sisältö."
+
+msgid "autosave_warning_message"
+msgstr "Jos palautat automaattisesti tallennetun sisällön, menetät tällä hetkellä editorissa olevan sisällön.\n\nHaluatko varmasti palauttaa tallennetun sisällön?"
 
 msgid "fullscreen_desc"
 msgstr "Kokoruututila"
@@ -2258,4 +2270,34 @@ msgstr "Virheitä ei löytynyt."
 
 msgid "pagebreak_desc"
 msgstr "Lisää sivunvaihto."
+
+msgid "advlist_types"
+msgstr "Tyypit"
+
+msgid "advlist_def"
+msgstr "Oletus"
+
+msgid "advlist_lower_alpha"
+msgstr "pienet kirjaimet: a, b, c"
+
+msgid "advlist_lower_greek"
+msgstr "pienet kirjaimet: α, β, γ"
+
+msgid "advlist_lower_roman"
+msgstr "pienet kirjaimet: i, ii, iii"
+
+msgid "advlist_upper_alpha"
+msgstr "isot kirjaimet: A, B, C"
+
+msgid "advlist_upper_roman"
+msgstr "isot kirjaimet: I, II, III"
+
+msgid "advlist_circle"
+msgstr "Pallo"
+
+msgid "advlist_disc"
+msgstr "Ympyrä"
+
+msgid "advlist_square"
+msgstr "Neliö"
 

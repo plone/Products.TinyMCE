@@ -1,12 +1,12 @@
 # Slovenský jazykový balík pre TinyMCE verze 3.0+
-# Version 8.0
+# Version 8.5
 #
 # Gabriel Schwardy (caleydon@gmail.com); Ivan Trnka (tic@tic.sk); Jaroslav Hykyš (jaroslav.hykys@seznam.cz)
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2010-04-29 00:00+0000\n"
+"PO-Revision-Date: 2010-06-14 00:00+0000\n"
 "Last-Translator: Gabriel Schwardy (caleydon@gmail.com); Ivan Trnka (tic@tic.sk); Jaroslav Hykyš (jaroslav.hykys@seznam.cz)\n"
 "Language-Team: Gabriel Schwardy (caleydon@gmail.com); Ivan Trnka (tic@tic.sk); Jaroslav Hykyš (jaroslav.hykys@seznam.cz)\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Domain: tinymce\n"
 
 msgid "common_edit_confirm"
-msgstr "Chcete použiť WYSIWYG mód pre tento text?"
+msgstr "Chcete použiť WYSIWYG režim pre tento text?"
 
 msgid "common_apply"
 msgstr "Použiť"
@@ -52,7 +52,7 @@ msgid "common_clipboard_no_support"
 msgstr "Táto funkcia nie je vaším prehliadačom podporovaná. Použite namiesto toho klávesovú skratku."
 
 msgid "common_popup_blocked"
-msgstr "Ospravedlňujeme sa, ale blokovanie vyskakovacích okien neumožnilo otvoriť okno, ktoré poskytuje funkčnosť aplikácie. Pre plné využitie možností aplikácie musíte vypnúť blokovanie vyskakovacích okien pre tento web."
+msgstr "Blokovanie vyskakovacích okien neumožnilo otvoriť okno, ktoré poskytuje funkčnosť aplikácie. Pre plné využitie možností aplikácie musíte vypnúť blokovanie vyskakovacích okien pre tento web."
 
 msgid "common_invalid_data"
 msgstr "Chyba: Boli zadané neplatné hodnoty a tieto boli označené červenou farbou."
@@ -88,7 +88,7 @@ msgid "simple_cleanup_desc"
 msgstr "Vyčistiť kód"
 
 msgid "advanced_style_select"
-msgstr "Štýl"
+msgstr "Štýly"
 
 msgid "advanced_font_size"
 msgstr "Veľkosť písma"
@@ -523,7 +523,7 @@ msgid "iespell_iespell_desc"
 msgstr "Spustiť kontrolu pravopisu"
 
 msgid "iespell_download"
-msgstr "Slovník ieSpell nebol detekovaný. Chcete ho teraz nainštalovať?"
+msgstr "Slovník ieSpell nebol detekovaný. Chcete ho nainštalovať?"
 
 msgid "advhr_advhr_desc"
 msgstr "Vodorovný oddeľovač"
@@ -649,7 +649,7 @@ msgid "searchreplace_dlg_down"
 msgstr "Nadol"
 
 msgid "searchreplace_dlg_mcase"
-msgstr "Rozlišovať veľkosť"
+msgstr "Rozlišovať malé a VEĽKÉ písmená"
 
 msgid "searchreplace_dlg_findnext"
 msgstr "Hľadať dalej"
@@ -688,7 +688,7 @@ msgid "ploneimage_dlg_preview"
 msgstr "Náhľad"
 
 msgid "ploneimage_dlg_constrain_proportions"
-msgstr "Zachovať proporcie"
+msgstr "Zachovať pomer strán"
 
 msgid "ploneimage_dlg_langdir"
 msgstr "Smer textu"
@@ -736,7 +736,7 @@ msgid "ploneimage_dlg_example_img"
 msgstr "Príklad obrázka"
 
 msgid "ploneimage_dlg_missing_alt"
-msgstr "Naozaj chcete pokračovať bez vloženého popisu obrázka? Bez popisu môže byť obrázok neprístupný užívateľom so zrakovým postihnutím, užívateľom textových prehliadačov alebo užívateľom, ktorý majú vypnuté zobrazovanie obrázkov."
+msgstr "Naozaj chcete pokračovať bez vloženého popisu obrázka? Bez popisu môže byť obrázok neprístupný užívateľom so zrakovým postihnutím, užívateľom textových prehliadačov alebo užívateľom, ktorí majú vypnuté zobrazovanie obrázkov."
 
 msgid "ploneimage_dlg_dialog_title"
 msgstr "Vložiť/upraviť obrázok"
@@ -814,10 +814,10 @@ msgid "plonelink_dlg_titlefield"
 msgstr "Titulok"
 
 msgid "plonelink_dlg_is_email"
-msgstr "Zadané URL vyzerá ako e-mailová adresa, chcete doplniť povinný prefix mailto:?"
+msgstr "Zadaná URL vyzerá ako e-mailová adresa, chcete doplniť povinný prefix mailto:?"
 
 msgid "plonelink_dlg_is_external"
-msgstr "Zadané URL vyzerá ako externý odkaz, chcete doplniť povinný prefix http://?"
+msgstr "Zadaná URL vyzerá ako externý odkaz, chcete doplniť povinný prefix http://?"
 
 msgid "plonelink_dlg_list"
 msgstr "Zoznam odkazov"
@@ -865,7 +865,7 @@ msgid "plonelink_dlg_target_blank"
 msgstr "Otvoriť v novom okne"
 
 msgid "plonelink_dlg_popup"
-msgstr "Javascriptové okno"
+msgstr "JavaScriptové okno"
 
 msgid "plonelink_dlg_popup_url"
 msgstr "URL vyskakovacieho okna"
@@ -1459,7 +1459,7 @@ msgid "table_dlg_cell_type"
 msgstr "Typ bunky"
 
 msgid "table_dlg_valign"
-msgstr "Vertikálna zarovnanie"
+msgstr "Vertikálne zarovnanie"
 
 msgid "table_dlg_align_top"
 msgstr "Hore"
@@ -1501,7 +1501,7 @@ msgid "table_dlg_bgimage"
 msgstr "Obrázok pozadia"
 
 msgid "table_dlg_summary"
-msgstr "Zhrnutie obsahu"
+msgstr "Obsah tabuľky"
 
 msgid "table_dlg_td"
 msgstr "Dáta"
@@ -1582,7 +1582,7 @@ msgid "table_dlg_frame_all"
 msgstr "všetko"
 
 msgid "table_dlg_rules"
-msgstr "Vykreslenie mrížky"
+msgstr "Vykreslenie mriežky"
 
 msgid "table_dlg_rules_void"
 msgstr "žiadne"
@@ -1738,7 +1738,7 @@ msgid "media_dlg_correction"
 msgstr "Bez korekcií"
 
 msgid "media_dlg_enablejavascript"
-msgstr "Povoliť Javascript"
+msgstr "Povoliť JavaScript"
 
 msgid "media_dlg_starttime"
 msgstr "Počiatočný čas"
@@ -1807,7 +1807,7 @@ msgid "media_dlg_uimode"
 msgstr "Režim ovládacieho panelu"
 
 msgid "media_dlg_flash_options"
-msgstr "Možnosti Flashe"
+msgstr "Možnosti Flashu"
 
 msgid "media_dlg_qt_options"
 msgstr "Možnosti Quicktime"
@@ -1933,10 +1933,10 @@ msgid "media_dlg_flv_showscalemodes"
 msgstr "Zobraziť voľby zmeny veľkosti"
 
 msgid "media_dlg_flv_smoothvideo"
-msgstr "Vyhladzené video"
+msgstr "Vyhladzovaný obraz"
 
 msgid "media_dlg_flv_jscallback"
-msgstr "Spätné volanie Javascriptu"
+msgstr "Spätné volanie JavaScriptu"
 
 msgid "fullpage_desc"
 msgstr "Vlastnosti dokumentu"
@@ -2218,7 +2218,7 @@ msgid "template_dlg_preview"
 msgstr "Náhľad"
 
 msgid "template_dlg_warning"
-msgstr "Upozorněnie: Aktualizácia šablóny inou zpôsobí stratu dát."
+msgstr "Upozornenie: Aktualizácia šablóny inou, spôsobí stratu dát."
 
 msgid "template_dlg_mdate_format"
 msgstr "%d.%m.%Y %H:%M:%S"
@@ -2269,7 +2269,7 @@ msgid "spellchecker_no_mpell"
 msgstr "Bez pravopisných chýb."
 
 msgid "pagebreak_desc"
-msgstr "Vložiť koniec stránky."
+msgstr "Vložiť zalomenie stránky."
 
 msgid "advlist_types"
 msgstr "Typ"
