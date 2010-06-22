@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-05-12 09:08+0000\n"
+"POT-Creation-Date: 2010-06-22 07:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone.tinymce\n"
 
-#: ../utility.py:596
+#: ../utility.py:600
 msgid "(remove style)"
 msgstr "(fjern formattering)"
 
@@ -66,6 +66,9 @@ msgstr "Billedtekst"
 msgid "Choose the Css used in Wysiwyg Editor Area"
 msgstr "Egen CSS-fil til editoren"
 
+msgid "Circle"
+msgstr ""
+
 #: ../interfaces/utility.py:256
 msgid "Cleanup messy code"
 msgstr "Rens beskidt HTML"
@@ -103,9 +106,15 @@ msgstr "Egne ikoner til værktøjslinie"
 msgid "Cut"
 msgstr "Klip"
 
+msgid "Definition description"
+msgstr ""
+
 #: ../interfaces/utility.py:172
 msgid "Definition list"
 msgstr "Definitionsliste"
+
+msgid "Definition term"
+msgstr ""
 
 #. Default: "Description"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:123
@@ -117,6 +126,9 @@ msgstr "Beskrivelse"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:60
 msgid "Details"
 msgstr "Detaljer"
+
+msgid "Disc"
+msgstr ""
 
 msgid "Discreet"
 msgstr "Diskret"
@@ -323,7 +335,7 @@ msgstr "Usynligt gitter"
 msgid "Italic"
 msgstr "Kursiv"
 
-#: ../browser/controlpanel.py:32
+#: ../browser/controlpanel.py:23
 msgid "Layout"
 msgstr "Layout"
 
@@ -332,7 +344,7 @@ msgid "Left to right"
 msgstr "Venstre mod højre"
 
 #. Default: "Libraries"
-#: ../browser/controlpanel.py:40
+#: ../browser/controlpanel.py:31
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:21
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:22
 msgid "Libraries"
@@ -358,6 +370,12 @@ msgstr "Giver links en unik id, sådan at de bliver ved med at virke, selvom ind
 msgid "Literal"
 msgstr "Præformatteret"
 
+msgid "Lower Alpha"
+msgstr ""
+
+msgid "Lower Roman"
+msgstr ""
+
 #. Default: "Mail"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:46
 msgid "Mail"
@@ -367,17 +385,20 @@ msgstr "E-mail"
 msgid "Named"
 msgstr "Navngivet"
 
-#: ../utility.py:605
+#: ../utility.py:609
 msgid "No anchors in this page"
 msgstr "Ingen ankre på denne side"
 
-#: ../utility.py:604
+#: ../utility.py:608
 msgid "No items in this folder"
 msgstr "Intet indhold i denne mappe"
 
-#: ../utility.py:597
+#: ../utility.py:601
 msgid "Normal paragraph"
 msgstr "Normal"
+
+msgid "Numbers"
+msgstr ""
 
 #: ../interfaces/utility.py:334
 msgid "Numeric"
@@ -409,7 +430,7 @@ msgstr "Indsæt som ren tekst"
 msgid "Paste from Word"
 msgstr "Indsæt fra Word"
 
-#: ../utility.py:598
+#: ../utility.py:602
 msgid "Plain cell"
 msgstr "Normal celle"
 
@@ -420,7 +441,7 @@ msgid "Preview"
 msgstr "Smugkig"
 
 #: ../interfaces/utility.py:240
-#: ../utility.py:603
+#: ../utility.py:607
 msgid "Print"
 msgstr "Udskriv"
 
@@ -439,7 +460,7 @@ msgstr "Gentag"
 msgid "Remove formatting"
 msgstr "Fjern formattering"
 
-#: ../browser/controlpanel.py:44
+#: ../browser/controlpanel.py:35
 msgid "Resource Types"
 msgstr "Ressourcetyper"
 
@@ -465,11 +486,11 @@ msgstr "Søg"
 msgid "Select Style"
 msgstr "Vælg formattering"
 
-#: ../utility.py:602
+#: ../utility.py:606
 msgid "Selection"
 msgstr "Valgt"
 
-#: ../browser/controlpanel.py:49
+#: ../browser/controlpanel.py:40
 msgid "Settings for the TinyMCE Wysiwyg editor."
 msgstr "Indstillinger for TinyMCE editoren"
 
@@ -477,11 +498,14 @@ msgstr "Indstillinger for TinyMCE editoren"
 msgid "Spellchecker"
 msgstr "Stavekontrol"
 
+msgid "Square"
+msgstr ""
+
 #: ../interfaces/utility.py:128
 msgid "Strikethrough"
 msgstr "Gennemstreg"
 
-#: ../utility.py:599
+#: ../utility.py:603
 msgid "Style..."
 msgstr "Formattering..."
 
@@ -516,11 +540,11 @@ msgstr "Tabel-indstillinger"
 msgid "Table styles"
 msgstr "Tabel-formatteringer"
 
-#: ../utility.py:601
+#: ../utility.py:605
 msgid "Tables"
 msgstr "Tabeller"
 
-#: ../utility.py:600
+#: ../utility.py:604
 msgid "Text"
 msgstr "Tekst"
 
@@ -569,7 +593,7 @@ msgstr "Her kan du angive skrive-retningen. Nogle sprorg (hebraisk, arabisk, urd
 msgid "TinyMCE"
 msgstr "TinyMCE"
 
-#: ../browser/controlpanel.py:48
+#: ../browser/controlpanel.py:39
 msgid "TinyMCE Settings"
 msgstr "TinyMCE indstillinger"
 
@@ -592,7 +616,7 @@ msgstr "Fuld skærm"
 msgid "Toggle guidelines/invisible objects"
 msgstr "Vis/skjul usynlige objekter"
 
-#: ../browser/controlpanel.py:36
+#: ../browser/controlpanel.py:27
 msgid "Toolbar"
 msgstr "Værktøjslinie"
 
@@ -633,6 +657,12 @@ msgstr "Upload"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:71
 msgid "Upload file"
 msgstr "Upload fil"
+
+msgid "Upper Alpha"
+msgstr ""
+
+msgid "Upper Roman"
+msgstr ""
 
 #: ../interfaces/utility.py:264
 msgid "Visual control characters on/off"

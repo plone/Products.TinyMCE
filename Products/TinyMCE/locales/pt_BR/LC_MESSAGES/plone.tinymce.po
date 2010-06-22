@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2010-05-12 09:08+0000\n"
+"POT-Creation-Date: 2010-06-22 07:44+0000\n"
 "PO-Revision-Date: \n"
 "Last-Translator: Thiago Tamosauskas <thiago@simplesconsultoria.com.br>\n"
 "Language-Team: \n"
@@ -14,7 +14,7 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#: ../utility.py:596
+#: ../utility.py:600
 msgid "(remove style)"
 msgstr ""
 
@@ -63,6 +63,9 @@ msgstr "Legenda"
 msgid "Choose the Css used in Wysiwyg Editor Area"
 msgstr "Escolha o css usado na área do editor WYSIWYG"
 
+msgid "Circle"
+msgstr ""
+
 #: ../interfaces/utility.py:256
 msgid "Cleanup messy code"
 msgstr "Limpar código sujo"
@@ -100,9 +103,15 @@ msgstr "Personalizar Botões da Barra de Ferramentas"
 msgid "Cut"
 msgstr "Cortar"
 
+msgid "Definition description"
+msgstr ""
+
 #: ../interfaces/utility.py:172
 msgid "Definition list"
 msgstr "Lista de Definição"
+
+msgid "Definition term"
+msgstr ""
 
 #. Default: "Description"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:123
@@ -114,6 +123,9 @@ msgstr "Descrição"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:60
 msgid "Details"
 msgstr "Detalhes"
+
+msgid "Disc"
+msgstr ""
 
 msgid "Discreet"
 msgstr "Discreto"
@@ -320,7 +332,7 @@ msgstr "Sem bordas"
 msgid "Italic"
 msgstr "Itálico"
 
-#: ../browser/controlpanel.py:32
+#: ../browser/controlpanel.py:23
 msgid "Layout"
 msgstr "Layout"
 
@@ -329,7 +341,7 @@ msgid "Left to right"
 msgstr "Da esquerda para a direita"
 
 #. Default: "Libraries"
-#: ../browser/controlpanel.py:40
+#: ../browser/controlpanel.py:31
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:21
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:22
 msgid "Libraries"
@@ -355,6 +367,12 @@ msgstr "Links para objetos neste site podem ser usados com identificadores únic
 msgid "Literal"
 msgstr "Literal"
 
+msgid "Lower Alpha"
+msgstr ""
+
+msgid "Lower Roman"
+msgstr ""
+
 #. Default: "Mail"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:46
 msgid "Mail"
@@ -364,16 +382,19 @@ msgstr "Mail"
 msgid "Named"
 msgstr "Nomeado"
 
-#: ../utility.py:605
+#: ../utility.py:609
 msgid "No anchors in this page"
 msgstr ""
 
-#: ../utility.py:604
+#: ../utility.py:608
 msgid "No items in this folder"
 msgstr ""
 
-#: ../utility.py:597
+#: ../utility.py:601
 msgid "Normal paragraph"
+msgstr ""
+
+msgid "Numbers"
 msgstr ""
 
 #: ../interfaces/utility.py:334
@@ -406,7 +427,7 @@ msgstr "Colar como Texto Puro"
 msgid "Paste from Word"
 msgstr "Colar do Word"
 
-#: ../utility.py:598
+#: ../utility.py:602
 msgid "Plain cell"
 msgstr ""
 
@@ -417,7 +438,7 @@ msgid "Preview"
 msgstr "Prévia"
 
 #: ../interfaces/utility.py:240
-#: ../utility.py:603
+#: ../utility.py:607
 msgid "Print"
 msgstr "Imprimir"
 
@@ -436,7 +457,7 @@ msgstr "Desfazer"
 msgid "Remove formatting"
 msgstr "Remover formatação"
 
-#: ../browser/controlpanel.py:44
+#: ../browser/controlpanel.py:35
 msgid "Resource Types"
 msgstr "Tipos de Recursos"
 
@@ -462,11 +483,11 @@ msgstr "Buscar"
 msgid "Select Style"
 msgstr "Selecionar Estilo"
 
-#: ../utility.py:602
+#: ../utility.py:606
 msgid "Selection"
 msgstr ""
 
-#: ../browser/controlpanel.py:49
+#: ../browser/controlpanel.py:40
 msgid "Settings for the TinyMCE Wysiwyg editor."
 msgstr "Configurações para o editor WYSISYG TinyMCE."
 
@@ -474,11 +495,14 @@ msgstr "Configurações para o editor WYSISYG TinyMCE."
 msgid "Spellchecker"
 msgstr "Corretor ortográfico"
 
+msgid "Square"
+msgstr ""
+
 #: ../interfaces/utility.py:128
 msgid "Strikethrough"
 msgstr "Tachado"
 
-#: ../utility.py:599
+#: ../utility.py:603
 msgid "Style..."
 msgstr ""
 
@@ -513,11 +537,11 @@ msgstr "Controle da Tabela"
 msgid "Table styles"
 msgstr "Estilos da tabela"
 
-#: ../utility.py:601
+#: ../utility.py:605
 msgid "Tables"
 msgstr ""
 
-#: ../utility.py:600
+#: ../utility.py:604
 msgid "Text"
 msgstr ""
 
@@ -566,7 +590,7 @@ msgstr "Esta opção define a direção padrão do texto. Alguns idiomas (Como o
 msgid "TinyMCE"
 msgstr "TinyMCE"
 
-#: ../browser/controlpanel.py:48
+#: ../browser/controlpanel.py:39
 msgid "TinyMCE Settings"
 msgstr "Configurações do TinyMCE"
 
@@ -589,7 +613,7 @@ msgstr "Alternar modo de tela cheia."
 msgid "Toggle guidelines/invisible objects"
 msgstr "Alternar exibição das linhas guias"
 
-#: ../browser/controlpanel.py:36
+#: ../browser/controlpanel.py:27
 msgid "Toolbar"
 msgstr "Barra de Ferramentas"
 
@@ -630,6 +654,12 @@ msgstr "Upload"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:71
 msgid "Upload file"
 msgstr "Upload de arquivo"
+
+msgid "Upper Alpha"
+msgstr ""
+
+msgid "Upper Roman"
+msgstr ""
 
 #: ../interfaces/utility.py:264
 msgid "Visual control characters on/off"
