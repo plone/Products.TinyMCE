@@ -1,12 +1,12 @@
 # This is the Basque language pack for TinyMCE.
-# Version 1.1
+# Version 1.2
 #
 # Moxiecode Systems AB
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2010-03-24 00:00+0000\n"
+"PO-Revision-Date: 2010-06-22 00:00+0000\n"
 "Last-Translator: Moxiecode Systems AB\n"
 "Language-Team: Moxiecode Systems AB\n"
 "MIME-Version: 1.0\n"
@@ -268,34 +268,34 @@ msgid "advanced_more_colors"
 msgstr "Kolore gehiago"
 
 msgid "advanced_image_delta_width"
-msgstr ""
+msgstr "Irudiaren zabalera"
 
 msgid "advanced_image_delta_height"
-msgstr ""
+msgstr "Irudiaren altuera"
 
 msgid "advanced_link_delta_width"
-msgstr ""
+msgstr "Loturaren zabalera"
 
 msgid "advanced_link_delta_height"
-msgstr ""
+msgstr "Loturaren altuera"
 
 msgid "advanced_colorpicker_delta_width"
-msgstr ""
+msgstr "Kolore hautatzailearen zabalera"
 
 msgid "advanced_colorpicker_delta_height"
-msgstr ""
+msgstr "Kolore hautatzailearen altuera"
 
 msgid "advanced_charmap_delta_width"
-msgstr ""
+msgstr "Karaktere maparen zabalera"
 
 msgid "advanced_charmap_delta_height"
-msgstr ""
+msgstr "Karaktere maparen altuera"
 
 msgid "advanced_anchor_delta_width"
-msgstr ""
+msgstr "Ainguraren zabalera"
 
 msgid "advanced_anchor_delta_height"
-msgstr ""
+msgstr "Ainguraren altuera"
 
 msgid "advanced_dlg_about_title"
 msgstr "TinyMCEri buruz"
@@ -529,10 +529,10 @@ msgid "advhr_advhr_desc"
 msgstr "Marra horizontala"
 
 msgid "advhr_delta_width"
-msgstr ""
+msgstr "Zabalera"
 
 msgid "advhr_delta_height"
-msgstr ""
+msgstr "Altuera"
 
 msgid "advhr_dlg_width"
 msgstr "Zabalera"
@@ -547,10 +547,10 @@ msgid "emotions_emotions_desc"
 msgstr "Ikonotxoak"
 
 msgid "emotions_delta_width"
-msgstr ""
+msgstr "Zabalera"
 
 msgid "emotions_delta_height"
-msgstr ""
+msgstr "Altuera"
 
 msgid "emotions_dlg_title"
 msgstr "Ikonotxoa sartu"
@@ -613,10 +613,10 @@ msgid "searchreplace_replace_desc"
 msgstr "Bilatu/Ordeztu"
 
 msgid "searchreplace_delta_width"
-msgstr ""
+msgstr "Zabalera"
 
 msgid "searchreplace_delta_height"
-msgstr ""
+msgstr "Altuera"
 
 msgid "searchreplace_dlg_searchnext_desc"
 msgstr "Berriz bilatu"
@@ -664,10 +664,10 @@ msgid "ploneimage_image_desc"
 msgstr "Irudia txertatu/editatu"
 
 msgid "ploneimage_delta_width"
-msgstr ""
+msgstr "Zabalera"
 
 msgid "ploneimage_delta_height"
-msgstr ""
+msgstr "Altuera"
 
 msgid "ploneimage_dlg_tab_general"
 msgstr "Orokorra"
@@ -796,10 +796,10 @@ msgid "plonelink_link_desc"
 msgstr "Lotura txertatu/editatu"
 
 msgid "plonelink_delta_width"
-msgstr ""
+msgstr "Zabalera"
 
 msgid "plonelink_delta_height"
-msgstr ""
+msgstr "Altuera"
 
 msgid "plonelink_dlg_title"
 msgstr "Lotura txertatu/editatu"
@@ -970,40 +970,40 @@ msgid "xhtmlxtras_attribs_desc"
 msgstr "Atributuak txertatu/editatu"
 
 msgid "xhtmlxtras_cite_delta_width"
-msgstr ""
+msgstr "Ziten zabalera"
 
 msgid "xhtmlxtras_cite_delta_height"
-msgstr ""
+msgstr "Ziten altuera"
 
 msgid "xhtmlxtras_abbr_delta_width"
-msgstr ""
+msgstr "Laburduren zabalera"
 
 msgid "xhtmlxtras_abbr_delta_height"
-msgstr ""
+msgstr "Laburduren altuera"
 
 msgid "xhtmlxtras_acronym_delta_width"
-msgstr ""
+msgstr "Akronimoen zabalera"
 
 msgid "xhtmlxtras_acronym_delta_height"
-msgstr ""
+msgstr "Akronimoen altuera"
 
 msgid "xhtmlxtras_del_delta_width"
-msgstr ""
+msgstr "Ezabaketaren zabalera"
 
 msgid "xhtmlxtras_del_delta_height"
-msgstr ""
+msgstr "Ezabaketaren altuera"
 
 msgid "xhtmlxtras_ins_delta_width"
-msgstr ""
+msgstr "Txertaketaren zabalera"
 
 msgid "xhtmlxtras_ins_delta_height"
-msgstr ""
+msgstr "Txertaketaren altuera"
 
 msgid "xhtmlxtras_attribs_delta_width"
-msgstr ""
+msgstr "Atributuen zabalera"
 
 msgid "xhtmlxtras_attribs_delta_height"
-msgstr ""
+msgstr "Atributuen altuera"
 
 msgid "xhtmlxtras_dlg_attribute_label_title"
 msgstr "Izenburua"
@@ -1099,10 +1099,10 @@ msgid "style_desc"
 msgstr "Aldatu CSS estiloa"
 
 msgid "style_delta_width"
-msgstr ""
+msgstr "Zabalera"
 
 msgid "style_delta_height"
-msgstr ""
+msgstr "Altuera"
 
 msgid "style_dlg_title"
 msgstr "Aldatu CSS estiloa"
@@ -1296,6 +1296,12 @@ msgstr "Word-etik itsatsi"
 msgid "paste_selectall_desc"
 msgstr "Aukeratu guztia"
 
+msgid "paste_plaintext_mode_sticky"
+msgstr "Itsasketa testu moduan dago orain. Egin klik itsasketa arruntera itzultzeko. Zerbait itsatsi ostean, modu arruntera pasatuko zara automatikoki."
+
+msgid "paste_plaintext_mode"
+msgstr "Itsasketa testu moduan dago orain. Egin klik itsasketa arruntera itzultzeko."
+
 msgid "paste_dlg_text_title"
 msgstr "Erabili CTRL+V testua lehioan itsasteko."
 
@@ -1366,28 +1372,28 @@ msgid "table_cell"
 msgstr "Gelaxka"
 
 msgid "table_rowprops_delta_width"
-msgstr ""
+msgstr "Lerroen propietateen zabalera"
 
 msgid "table_rowprops_delta_height"
-msgstr ""
+msgstr "Lerroen propietateen altuera"
 
 msgid "table_cellprops_delta_width"
-msgstr ""
+msgstr "Gelaxken propietateen zabalera"
 
 msgid "table_cellprops_delta_height"
-msgstr ""
+msgstr "Gelaxken propietateen altuera"
 
 msgid "table_table_delta_width"
-msgstr ""
+msgstr "Taularen zabalera"
 
 msgid "table_table_delta_height"
-msgstr ""
+msgstr "Taularen altuera"
 
 msgid "table_merge_cells_delta_width"
-msgstr ""
+msgstr "Gelaxkak batzearen zabalera"
 
 msgid "table_merge_cells_delta_height"
-msgstr ""
+msgstr "Gelaxkak batzearen altuera"
 
 msgid "table_dlg_general_tab"
 msgstr "Orokorra"
@@ -1608,6 +1614,12 @@ msgstr "border"
 msgid "autosave_unload_msg"
 msgstr "Egindako aldaketak galdu egingo dira orri honetatik kanpona nabigatzen baldin baduzu."
 
+msgid "autosave_restore_content"
+msgstr "Automatikoki gordetako edukia errekuperatu."
+
+msgid "autosave_warning_message"
+msgstr "Gordetako edukia errekuperatzen baduzu, orain editorean dagoena galdu egingo duzu.\n\nZiur zaude gordetakoa errekuperatzea nahi duzula?"
+
 msgid "fullscreen_desc"
 msgstr "Aldatu pantaila osoko modura"
 
@@ -1618,10 +1630,10 @@ msgid "media_edit"
 msgstr "Edit embedded media"
 
 msgid "media_delta_width"
-msgstr ""
+msgstr "Zabalera"
 
 msgid "media_delta_height"
-msgstr ""
+msgstr "Altuera"
 
 msgid "media_dlg_title"
 msgstr "Insert / edit embedded media"
@@ -1930,10 +1942,10 @@ msgid "fullpage_desc"
 msgstr "Dokumentuaren ezaugarriak"
 
 msgid "fullpage_delta_width"
-msgstr ""
+msgstr "Zabalera"
 
 msgid "fullpage_delta_height"
-msgstr ""
+msgstr "Altuera"
 
 msgid "fullpage_dlg_title"
 msgstr "Dokumentuaren ezaugarriak"
@@ -2258,4 +2270,34 @@ msgstr "Ez da akatsik aurkitu."
 
 msgid "pagebreak_desc"
 msgstr "Txertatu orri jauzia."
+
+msgid "advlist_types"
+msgstr "Motak"
+
+msgid "advlist_def"
+msgstr "Defektuzkoa"
+
+msgid "advlist_lower_alpha"
+msgstr "Hizki xeheak"
+
+msgid "advlist_lower_greek"
+msgstr "Hizki greko xeheak"
+
+msgid "advlist_lower_roman"
+msgstr "Zenbaki erromatar xeheak"
+
+msgid "advlist_upper_alpha"
+msgstr "Hizki larriak"
+
+msgid "advlist_upper_roman"
+msgstr "Zenbaki erromatar larriak"
+
+msgid "advlist_circle"
+msgstr "Borobila"
+
+msgid "advlist_disc"
+msgstr "Diskoa"
+
+msgid "advlist_square"
+msgstr "Karratua"
 
