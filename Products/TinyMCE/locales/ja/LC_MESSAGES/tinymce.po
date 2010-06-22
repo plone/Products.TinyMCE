@@ -1,12 +1,12 @@
 # This is the Japanese language pack for TinyMCE.
-# Version 15.1
+# Version 16.0
 #
 # Hisaya Nishide and yama and Naoki Nakanishi
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2010-05-03 00:00+0000\n"
+"PO-Revision-Date: 2010-06-21 00:00+0000\n"
 "Last-Translator: Hisaya Nishide and yama and Naoki Nakanishi\n"
 "Language-Team: Hisaya Nishide and yama and Naoki Nakanishi\n"
 "MIME-Version: 1.0\n"
@@ -40,7 +40,7 @@ msgid "common_browse"
 msgstr "参照"
 
 msgid "common_class_name"
-msgstr "クラス"
+msgstr "class属性"
 
 msgid "common_not_set"
 msgstr "-- 未設定 --"
@@ -88,7 +88,7 @@ msgid "simple_cleanup_desc"
 msgstr "コード整形"
 
 msgid "advanced_style_select"
-msgstr "スタイル"
+msgstr "style属性"
 
 msgid "advanced_font_size"
 msgstr "フォントサイズ"
@@ -433,7 +433,7 @@ msgid "advanced_dlg_link_target_blank"
 msgstr "新しいウインドウで開く"
 
 msgid "advanced_dlg_link_titlefield"
-msgstr "タイトル"
+msgstr "title属性"
 
 msgid "advanced_dlg_link_is_email"
 msgstr "メールアドレスが入力されました。リンクにmailto:を付加しますか？"
@@ -682,7 +682,7 @@ msgid "ploneimage_dlg_general"
 msgstr "一般"
 
 msgid "ploneimage_dlg_title"
-msgstr "タイトル"
+msgstr "title属性"
 
 msgid "ploneimage_dlg_preview"
 msgstr "プレビュー"
@@ -700,10 +700,10 @@ msgid "ploneimage_dlg_long_desc"
 msgstr "詳細説明リンク"
 
 msgid "ploneimage_dlg_style"
-msgstr "スタイル"
+msgstr "style属性"
 
 msgid "ploneimage_dlg_classes"
-msgstr "クラス"
+msgstr "class属性"
 
 msgid "ploneimage_dlg_ltr"
 msgstr "左から右"
@@ -712,7 +712,7 @@ msgid "ploneimage_dlg_rtl"
 msgstr "右から左"
 
 msgid "ploneimage_dlg_id"
-msgstr "Id"
+msgstr "ID属性"
 
 msgid "ploneimage_dlg_map"
 msgstr "イメージマップ"
@@ -745,7 +745,7 @@ msgid "ploneimage_dlg_src"
 msgstr "画像URL"
 
 msgid "ploneimage_dlg_alt"
-msgstr "画像の説明"
+msgstr "alt属性"
 
 msgid "ploneimage_dlg_list"
 msgstr "一覧から選ぶ"
@@ -904,16 +904,16 @@ msgid "plonelink_dlg_popup_position"
 msgstr "位置 (X/Y)"
 
 msgid "plonelink_dlg_id"
-msgstr "ID"
+msgstr "ID属性"
 
 msgid "plonelink_dlg_style"
-msgstr "スタイル"
+msgstr "style属性"
 
 msgid "plonelink_dlg_classes"
-msgstr "クラス"
+msgstr "class属性"
 
 msgid "plonelink_dlg_target_name"
-msgstr "ターゲット名"
+msgstr "ターゲット"
 
 msgid "plonelink_dlg_langdir"
 msgstr "文章の方向"
@@ -925,16 +925,16 @@ msgid "plonelink_dlg_langcode"
 msgstr "言語コード"
 
 msgid "plonelink_dlg_encoding"
-msgstr "ターゲットの文字エンコーディング"
+msgstr "ターゲットのエンコード"
 
 msgid "plonelink_dlg_mime"
 msgstr "ターゲットのMIMEタイプ"
 
 msgid "plonelink_dlg_rel"
-msgstr "このページのターゲットに対する関係"
+msgstr "rel属性"
 
 msgid "plonelink_dlg_rev"
-msgstr "ターゲットのこのページに対する関係"
+msgstr "rev属性"
 
 msgid "plonelink_dlg_tabindex"
 msgstr "タブインデックス"
@@ -1009,13 +1009,13 @@ msgid "xhtmlxtras_dlg_attribute_label_title"
 msgstr "タイトル"
 
 msgid "xhtmlxtras_dlg_attribute_label_id"
-msgstr "ID"
+msgstr "ID属性"
 
 msgid "xhtmlxtras_dlg_attribute_label_class"
-msgstr "クラス"
+msgstr "class属性"
 
 msgid "xhtmlxtras_dlg_attribute_label_style"
-msgstr "スタイル"
+msgstr "style属性"
 
 msgid "xhtmlxtras_dlg_attribute_label_cite"
 msgstr "引用"
@@ -1144,7 +1144,7 @@ msgid "style_dlg_text_weight"
 msgstr "太さ"
 
 msgid "style_dlg_text_style"
-msgstr "スタイル"
+msgstr "style属性"
 
 msgid "style_dlg_text_variant"
 msgstr "変形"
@@ -1249,7 +1249,7 @@ msgid "style_dlg_margin"
 msgstr "マージン"
 
 msgid "style_dlg_style"
-msgstr "スタイル"
+msgstr "style属性"
 
 msgid "style_dlg_width"
 msgstr "幅"
@@ -1477,10 +1477,10 @@ msgid "table_dlg_merge_cells_title"
 msgstr "セルの結合"
 
 msgid "table_dlg_id"
-msgstr "ID"
+msgstr "ID属性"
 
 msgid "table_dlg_style"
-msgstr "スタイル"
+msgstr "style属性"
 
 msgid "table_dlg_langdir"
 msgstr "文章の方向"
@@ -1663,13 +1663,13 @@ msgid "media_dlg_type"
 msgstr "タイプ"
 
 msgid "media_dlg_id"
-msgstr "ID"
+msgstr "ID属性"
 
 msgid "media_dlg_name"
 msgstr "名前"
 
 msgid "media_dlg_class_name"
-msgstr "クラス"
+msgstr "class属性"
 
 msgid "media_dlg_vspace"
 msgstr "上下余白"
@@ -2077,7 +2077,7 @@ msgid "fullpage_dlg_stylesheet"
 msgstr "スタイルシート"
 
 msgid "fullpage_dlg_style"
-msgstr "スタイル"
+msgstr "style属性"
 
 msgid "fullpage_dlg_author"
 msgstr "作者"

@@ -1,14 +1,14 @@
 # Aquest és el paquet de llenguatge Català per TinyMCE.
-# Version 3.1
+# Version 3.4
 #
-# XdNet - Damià Verger i Jordi Diaz
+# XdNet - Damià Verger, Jordi Diaz i Albert Casademont
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2010-03-22 00:00+0000\n"
-"Last-Translator: XdNet - Damià Verger i Jordi Diaz\n"
-"Language-Team: XdNet - Damià Verger i Jordi Diaz\n"
+"PO-Revision-Date: 2010-06-16 00:00+0000\n"
+"Last-Translator: XdNet - Damià Verger, Jordi Diaz i Albert Casademont\n"
+"Language-Team: XdNet - Damià Verger, Jordi Diaz i Albert Casademont\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1296,6 +1296,12 @@ msgstr "Enganxa des del Word"
 msgid "paste_selectall_desc"
 msgstr "Selecciona-ho tot"
 
+msgid "paste_plaintext_mode_sticky"
+msgstr "Enganxa està ara configurat en mode text pla. Clica de nou per tornar al mode normal d'enganxar. Després d'enganxar quelcom seràs retornat al mode normal d'enganxar."
+
+msgid "paste_plaintext_mode"
+msgstr "Enganxa està ara configurat en mode text pla. Clica de nou per tornar al mode normal d'enganxar."
+
 msgid "paste_dlg_text_title"
 msgstr "Amb el teclat utilitzeu CTRL+V per a enganxar el text dins la finestra."
 
@@ -1607,6 +1613,12 @@ msgstr "vora"
 
 msgid "autosave_unload_msg"
 msgstr "Els canvis que heu fet es perdran si navegueu a fora d'aquesta pàgina."
+
+msgid "autosave_restore_content"
+msgstr "Restaura el contingut guardat automàticament."
+
+msgid "autosave_warning_message"
+msgstr "Si restaures el contingut guardat, perdràs tot el contingut actual de l'editor. Estàs segur de voler continuar?"
 
 msgid "fullscreen_desc"
 msgstr "Commuta a mode de pantalla completa"
@@ -2258,4 +2270,34 @@ msgstr "No s'ha trobat cap falta d'ortografia."
 
 msgid "pagebreak_desc"
 msgstr "Insereix un salt de pàgina."
+
+msgid "advlist_types"
+msgstr "Tipus"
+
+msgid "advlist_def"
+msgstr "Per defecte"
+
+msgid "advlist_lower_alpha"
+msgstr "Lletres"
+
+msgid "advlist_lower_greek"
+msgstr "Lletres gregues (minúscules)"
+
+msgid "advlist_lower_roman"
+msgstr "Nombres romans (minúscules)"
+
+msgid "advlist_upper_alpha"
+msgstr "Lletres (majúscules)"
+
+msgid "advlist_upper_roman"
+msgstr "Nombres romans (majúscules)"
+
+msgid "advlist_circle"
+msgstr "Cercle"
+
+msgid "advlist_disc"
+msgstr "Disc"
+
+msgid "advlist_square"
+msgstr "Quadrat"
 
