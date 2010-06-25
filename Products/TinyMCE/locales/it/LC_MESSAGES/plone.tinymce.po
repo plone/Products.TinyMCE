@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.0\n"
-"POT-Creation-Date: 2010-03-25 15:09+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"POT-Creation-Date: 2010-06-25 08:29+0000\n"
+"PO-Revision-Date: 2010-06-25 10:24+0000\n"
 "Last-Translator: giorgio borelli\n"
 "Language-Team: http://www.coactivate.org/projects/plone-italian-translation\n"
 "MIME-Version: 1.0\n"
@@ -15,6 +15,10 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone.tinymce\n"
 "X-Is-Fallback-For: it-ch it-it\n"
+
+#: ../utility.py:600
+msgid "(remove style)"
+msgstr "(rimuovi stile)"
 
 #: ../interfaces/utility.py:152
 msgid "Align center"
@@ -61,6 +65,9 @@ msgstr "Didascalia"
 msgid "Choose the Css used in Wysiwyg Editor Area"
 msgstr "Scegli il css da usare nell'area dell editor"
 
+msgid "Circle"
+msgstr "Cerchio"
+
 #: ../interfaces/utility.py:256
 msgid "Cleanup messy code"
 msgstr "Pulisci il codice html"
@@ -97,9 +104,15 @@ msgstr "Pulsanti personalizzati"
 msgid "Cut"
 msgstr "Taglia"
 
+msgid "Definition description"
+msgstr "Descrizione (DD)"
+
 #: ../interfaces/utility.py:172
 msgid "Definition list"
 msgstr "Lista di definizioni"
+
+msgid "Definition term"
+msgstr "Termine (DT)"
 
 #. Default: "Description"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:123
@@ -111,8 +124,11 @@ msgstr "Descrizione"
 msgid "Details"
 msgstr "Dettagli"
 
+msgid "Disc"
+msgstr "Punto"
+
 msgid "Discreet"
-msgstr ""
+msgstr "Nota (testo piccolo)"
 
 #. Default: "E-mail"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:117
@@ -133,7 +149,7 @@ msgstr "Larghezza dell'editor"
 
 #: ../interfaces/utility.py:228
 msgid "Emotions"
-msgstr ""
+msgstr "Faccine (Emotions)"
 
 #: ../interfaces/utility.py:17
 msgid "Enable auto resizing of the editor window."
@@ -189,7 +205,7 @@ msgstr "Riga pari"
 #. Default: "External"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:41
 msgid "External"
-msgstr "Esterno"
+msgstr "Barra degli strumenti esterna"
 
 #. Default: "External link"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:92
@@ -226,7 +242,7 @@ msgid "Heading"
 msgstr "Intestazione"
 
 msgid "Heading cell"
-msgstr "Cella d'intestazione"
+msgstr "Intestazione tabella"
 
 msgid "Highlight"
 msgstr "Evidenziato"
@@ -313,7 +329,7 @@ msgstr "Griglia invisibile"
 msgid "Italic"
 msgstr "Corsivo"
 
-#: ../browser/controlpanel.py:32
+#: ../browser/controlpanel.py:23
 msgid "Layout"
 msgstr ""
 
@@ -346,6 +362,12 @@ msgstr "Il collegamenti agli oggetti di questo sito possono essere realizzati ut
 msgid "Literal"
 msgstr "Preformattato"
 
+msgid "Lower Alpha"
+msgstr "Minuscolo alfanumerico"
+
+msgid "Lower Roman"
+msgstr "Minuscolo in lettere romane"
+
 #. Default: "Mail"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:46
 msgid "Mail"
@@ -354,6 +376,21 @@ msgstr "Email"
 #: ../interfaces/utility.py:334
 msgid "Named"
 msgstr "Per nome"
+
+#: ../utility.py:609
+msgid "No anchors in this page"
+msgstr "Nessun'àncora in questa pagina"
+
+#: ../utility.py:608
+msgid "No items in this folder"
+msgstr "Non sono presenti elementi in questa cartella"
+
+#: ../utility.py:601
+msgid "Normal paragraph"
+msgstr "Paragrafo normale"
+
+msgid "Numbers"
+msgstr "Numeri"
 
 #: ../interfaces/utility.py:334
 msgid "Numeric"
@@ -385,6 +422,10 @@ msgstr "Incolla come testo semplice"
 msgid "Paste from Word"
 msgstr "Incolla da word"
 
+#: ../utility.py:602
+msgid "Plain cell"
+msgstr "Contenuto tabella"
+
 #. Default: "Preview"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:102
 msgid "Preview"
@@ -409,7 +450,7 @@ msgstr "Ripeti"
 msgid "Remove formatting"
 msgstr "Rimuovi la formattazione"
 
-#: ../browser/controlpanel.py:44
+#: ../browser/controlpanel.py:35
 msgid "Resource Types"
 msgstr "Tipi di risorse"
 
@@ -434,7 +475,11 @@ msgstr "Cerca"
 msgid "Select Style"
 msgstr "Seleziona uno stile"
 
-#: ../browser/controlpanel.py:49
+#: ../utility.py:606
+msgid "Selection"
+msgstr "Selezione"
+
+#: ../browser/controlpanel.py:40
 msgid "Settings for the TinyMCE Wysiwyg editor."
 msgstr "Impostazioni per l'editor HTML TinyMCE."
 
@@ -442,9 +487,16 @@ msgstr "Impostazioni per l'editor HTML TinyMCE."
 msgid "Spellchecker"
 msgstr "Controllo ortografico"
 
+msgid "Square"
+msgstr "Quadrato"
+
 #: ../interfaces/utility.py:128
 msgid "Strikethrough"
 msgstr "Barrato"
+
+#: ../utility.py:603
+msgid "Style..."
+msgstr "Stili..."
 
 #: ../interfaces/utility.py:49
 msgid "Styles"
@@ -471,11 +523,19 @@ msgstr "Apice"
 
 #: ../interfaces/utility.py:184
 msgid "Table controls"
-msgstr ""
+msgstr "Controlli tabella"
 
 #: ../interfaces/utility.py:54
 msgid "Table styles"
 msgstr "Stili delle tabelle"
+
+#: ../utility.py:605
+msgid "Tables"
+msgstr "Tabelle"
+
+#: ../utility.py:604
+msgid "Text"
+msgstr "Testo"
 
 #: ../interfaces/utility.py:332
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
@@ -522,7 +582,7 @@ msgstr "Questa opzione specifica l'orientamento della scrittura di default. Alcu
 msgid "TinyMCE"
 msgstr ""
 
-#: ../browser/controlpanel.py:48
+#: ../browser/controlpanel.py:39
 msgid "TinyMCE Settings"
 msgstr "Impostazioni TinyMCE"
 
@@ -539,13 +599,13 @@ msgstr "Titolo"
 
 #: ../interfaces/utility.py:276
 msgid "Toggle fullscreen mode"
-msgstr ""
+msgstr "visualizza schermo intero/finestra"
 
 #: ../interfaces/utility.py:260
 msgid "Toggle guidelines/invisible objects"
-msgstr ""
+msgstr "visualizza/nascondi linee guida ed oggetti invisibili"
 
-#: ../browser/controlpanel.py:36
+#: ../browser/controlpanel.py:27
 msgid "Toolbar"
 msgstr "Barra degli strumenti"
 
@@ -563,7 +623,7 @@ msgstr "Annulla"
 
 #: ../interfaces/utility.py:192
 msgid "Unlink"
-msgstr ""
+msgstr "Cancella collegamento"
 
 #: ../interfaces/utility.py:164
 msgid "Unordered list"
@@ -584,9 +644,15 @@ msgstr "Carica"
 msgid "Upload file"
 msgstr "Carica un file"
 
+msgid "Upper Alpha"
+msgstr "Maiuscolo alfanumerico"
+
+msgid "Upper Roman"
+msgstr "Maiuscolo in lettere romane"
+
 #: ../interfaces/utility.py:264
 msgid "Visual control characters on/off"
-msgstr ""
+msgstr "Visualizza/nascondi caratteri di controllo"
 
 #: ../interfaces/utility.py:302
 msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
