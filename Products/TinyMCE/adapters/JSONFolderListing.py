@@ -78,7 +78,7 @@ class JSONFolderListing(object):
         
         # get all portal types and get information from brains
         path = '/'.join(object.getPhysicalPath())
-        for brain in portal_catalog(portal_type=filter_portal_types, sort_on='sortable_title', path={'query': path, 'depth':1}):
+        for brain in portal_catalog(portal_type=filter_portal_types, sort_on='getObjPositionInParent', path={'query': path, 'depth':1}):
             catalog_results.append({
                 'id': brain.getId,
                 'uid': brain.UID,
