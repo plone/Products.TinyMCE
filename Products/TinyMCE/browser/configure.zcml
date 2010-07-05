@@ -19,6 +19,13 @@
         />
 
     <browser:page
+        for="*"
+        name="tinymce-plone3.css"
+        class=".style.Plone3TinyStyle"
+        permission="zope2.View"
+        />
+
+    <browser:page
         for="..interfaces.utility.ITinyMCE"
         name="tinymce-getpathbyuid"
         class=".url.TinyMCEUrl"
