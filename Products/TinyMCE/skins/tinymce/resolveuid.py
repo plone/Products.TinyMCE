@@ -19,20 +19,29 @@ try:
 except:
     raise Unauthorized, context
 
-reference_tool = getToolByName(context, 'reference_catalog')
-obj = reference_tool.lookupObject(uuid)
-if not obj:
+catalog = getToolByName(context, 'portal_catalog')
+
+brains = catalog(UID=uuid)
+if len(brains) == 0:
+    brain = None
+else:
+    brain = brains[0]
+
+if not brain:
     hook = getattr(context, 'kupu_resolveuid_hook', None)
     if hook:
         obj = hook(uuid)
     if not obj:
         return response.notFoundError('''The link you followed appears to be broken''')
+    url = obj.absolute_url()
+else:
+    url = brain.getURL()
 
 if traverse_subpath:
-    traverse_subpath.insert(0, obj.absolute_url())
+    traverse_subpath.insert(0, url)
     target = '/'.join(traverse_subpath)
 else:
-    target = obj.absolute_url()
+    target = url
 
 if request.QUERY_STRING:
     target += '?' + request.QUERY_STRING
