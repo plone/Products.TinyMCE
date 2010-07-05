@@ -17,6 +17,9 @@ HISTORY
 - Set ordering of link and image dialogs to getObjPositionInParent.
   [robgietema]
 
+- Refactor resolveuid to use portal_catalog and not waking up object.
+  [toutpt]
+
 1.1rc13 (2010-07-02)
 --------------------
 
