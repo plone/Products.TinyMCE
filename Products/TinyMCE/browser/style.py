@@ -29,3 +29,13 @@ class TinyMCEStyle(BrowserView):
                 result.append(src)
         return "\n".join(result)
 
+
+class Plone3TinyStyle(TinyMCEStyle):
+    """Use this view as content_css to support plone3 with tiny > 1.1rc8"""
+
+    def __call__(self):
+        portal_tinymce = getToolByName(self.context, 'portal_tinymce')
+        css = portal_tinymce.restrictedTraverse('@@tinymce-getstyle')()
+        extended_css = portal_tinymce.restrictedTraverse('tiny_mce_plone3.css')(self.context)
+        css += extended_css
+        return css

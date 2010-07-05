@@ -1,0 +1,14 @@
+/* <dtml-with base_properties> (do not remove this :) */
+/* <dtml-call "REQUEST.set('portal_url', portal_url())"> (not this either :) */
+
+/*Plone3 compatible style sheet for TinyMCE. This fix http://dev.plone.org/plone/ticket/10683 */
+
+html { font-size: &dtml-fontBaseSize;; }
+h1 {font-size: 2em}
+h2 {font-size: 1.5em}
+h3 {font-size: 1.17em}
+h4 {font-size: 1em}
+h5 {font-size: .83em}
+h6 {font-size: .75em}
+
+/* </dtml-with> */
