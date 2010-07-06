@@ -17,6 +17,7 @@ except:
     import simplejson as json
 from types import StringTypes
 
+from Products.TinyMCE.bbb import implementedOrProvidedBy
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.interfaces.utility import ITinyMCELayout
 from Products.TinyMCE.interfaces.utility import ITinyMCEToolbar
@@ -138,7 +139,7 @@ class TinyMCE(SimpleItem):
             from Products.ATContentTypes.content.image import ATImage
             field = ATImage.schema['image']
 
-        if not IImageField.providedBy(field):
+        if not implementedOrProvidedBy(IImageField, field):
             raise TypeError("Can't retrieve image scale info for non-image field.")
 
         field_name = field.getName()
