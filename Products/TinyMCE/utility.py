@@ -7,6 +7,7 @@ from Acquisition import aq_base
 from Acquisition import aq_inner
 from Acquisition import aq_parent
 from Products.Archetypes.interfaces.field import IImageField
+from Products.Archetypes.Field import ImageField
 from Products.CMFCore.utils import getToolByName
 from Products.CMFCore.interfaces._content import IFolderish
 from plone.app.layout.navigation.root import getNavigationRootObject
@@ -139,7 +140,8 @@ class TinyMCE(SimpleItem):
             from Products.ATContentTypes.content.image import ATImage
             field = ATImage.schema['image']
 
-        if not implementedOrProvidedBy(IImageField, field):
+        # in Archetypes 1.5.x ImageField doesn't actually provide IImageField o.O
+        if not isinstance(field, ImageField) and not implementedOrProvidedBy(IImageField, field):
             raise TypeError("Can't retrieve image scale info for non-image field.")
 
         field_name = field.getName()
