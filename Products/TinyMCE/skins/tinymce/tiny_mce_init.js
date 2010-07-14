@@ -46,6 +46,7 @@ function TinyMCEConfig(id) {
             skin : "plone",
             inlinepopups_skin : "plonepopup",
             plugins : this.getPlugins(),
+            gecko_spellcheck : true,
 
             labels : this.widget_config.labels,
             theme_advanced_styles : this.getStyles(),
