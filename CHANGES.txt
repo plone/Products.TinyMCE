@@ -5,6 +5,10 @@ HISTORY
 1.1rc14 (Unreleased)
 --------------------
 
+- Changed css registration, so it doesn't cause an extra CSS download, but is
+  merged with the other anonymous CSS files.
+  [hannosch]
+
 - Set 'plain' as default table class.
   [robgietema]
 
