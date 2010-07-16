@@ -5,6 +5,10 @@ HISTORY
 1.1rc14 (Unreleased)
 --------------------
 
+- Adopted TinyMCE's build process to generate a minified version of the main
+  JavaScript file.
+  [hannosch]
+
 - Changed css registration, so it doesn't cause an extra CSS download, but is
   merged with the other anonymous CSS files.
   [hannosch]
