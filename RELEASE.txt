@@ -1,0 +1,43 @@
+Releasing TinyMCE
+=================
+
+Getting a new upstream version
+------------------------------
+
+todo
+
+Refreshing translation files
+----------------------------
+
+todo
+
+Minifying
+---------
+
+We have a combined and slightly modified `tiny_mce_src.js` file inside
+`Products/TinyMCE/skins/tinymce`. If someone makes changes to this file,
+we need to regenerate the minified version used in production (`tiny_mce.js`).
+We use the same approach TinyMCE uses itself to generate a minified version.
+
+Prerequisites
++++++++++++++
+
+If you are on a Mac, install `apache-ant` from macports. Otherwise:
+
+- Install the Java JDK or JRE packages
+- Install Apache Ant
+- Add Apache Ant to your systems path environment variable. This is not
+  required but makes it easier to issue commands to Ant without having to type
+  the full path for it.
+
+Run it
+++++++
+
+In the top level directory of the distribution (this directory), run::
+
+  ant build
+
+That's it. The build.xml file describes the individual steps and is pretty
+readable.
+
+Check in the changes and cut a normal Python release.
