@@ -5,6 +5,10 @@ HISTORY
 1.1rc14 (Unreleased)
 --------------------
 
+- Hide the non-functioning advanced table options. This closes
+  http://dev.plone.org/plone/ticket/10535.
+  [hannosch]
+
 - Enhance Rob's default table style fix by specifying a proper title and
   avoiding the duplication of the default `plain` entry. This refs
   http://dev.plone.org/plone/ticket/10534.

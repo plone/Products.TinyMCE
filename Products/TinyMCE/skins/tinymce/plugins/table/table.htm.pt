@@ -49,21 +49,21 @@
 			</fieldset>
 
 			<fieldset id="advanced_panel" class="formPanel">
-				<div class="field">
+				<div class="field" style="display:none;">
 					<label id="widthlabel" for="width" i18n:translate="table_dlg_width"></label>
 					<div class="widget">
 						<input name="width" type="text" id="width" value="" size="4" maxlength="4" onchange="changedSize();" class="size" />
 					</div>
 				</div>
 
-				<div class="field">
+				<div class="field" style="display:none;">
 					<label id="heightlabel" for="height" i18n:translate="table_dlg_height"></label>
 					<div class="widget">
 						<input name="height" type="text" id="height" value="" size="4" maxlength="4" onchange="changedSize();" class="size" />
 					</div>
 				</div>
 
-				<div class="field">
+				<div class="field" style="display:none;">
 					<label id="alignlabel" for="align" i18n:translate="table_dlg_align"></label>
 					<div class="widget">
 						<select id="align" name="align">
