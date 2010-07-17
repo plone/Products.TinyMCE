@@ -5,6 +5,11 @@ HISTORY
 1.1rc14 (Unreleased)
 --------------------
 
+- Enhance Rob's default table style fix by specifying a proper title and
+  avoiding the duplication of the default `plain` entry. This refs
+  http://dev.plone.org/plone/ticket/10534.
+  [hannosch]
+
 - Removed redundant `Image list` from image dialog. This closes
   http://dev.plone.org/plone/ticket/10342.
   [hannosch]

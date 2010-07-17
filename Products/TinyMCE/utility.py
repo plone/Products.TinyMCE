@@ -620,10 +620,15 @@ class TinyMCE(SimpleItem):
                 for tablestyle in self.tablestyles.split('\n'):
                     tablestylefields = tablestyle.split('|')
                     tablestyletitle = tablestylefields[0]
+                    tablestyleid = tablestylefields[1]
+                    if tablestyleid == 'plain':
+                        # Do not duplicate the default style hardcoded in the
+                        # table.htm.pt
+                        continue
                     if request is not None:
                         tablestyletitle = translate(_(tablestylefields[0]), context=request)
-                    results['styles'].append(tablestyletitle + '|table|' + tablestylefields[1])
-                    results['table_styles'].append(tablestyletitle + '=' + tablestylefields[1])
+                    results['styles'].append(tablestyletitle + '|table|' + tablestyleid)
+                    results['table_styles'].append(tablestyletitle + '=' + tablestyleid)
             if isinstance(self.styles, StringTypes):
                 styles = []
                 for style in self.styles.split('\n'):
