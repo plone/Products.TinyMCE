@@ -5,6 +5,11 @@ HISTORY
 1.1rc14 (Unreleased)
 --------------------
 
+- Make the wysiwyg_support macros fall back to the default editor if the
+  current user has an editor preference that is no longer installed.
+  Fixes http://dev.plone.org/plone/ticket/10753
+  [davisagli]
+
 - Fixed `#undefined` in style selection for lists. This closes
   http://dev.plone.org/plone/ticket/10684.
   [hannosch]
