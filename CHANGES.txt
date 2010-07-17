@@ -5,7 +5,8 @@ HISTORY
 1.1rc14 (Unreleased)
 --------------------
 
-- Removed redundant `Image list` from image dialog.
+- Removed redundant `Image list` from image dialog. This closes
+  http://dev.plone.org/plone/ticket/10342.
   [hannosch]
 
 - Adopted TinyMCE's build process to generate a minified version of the main
