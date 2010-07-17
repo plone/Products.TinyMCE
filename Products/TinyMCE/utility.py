@@ -607,11 +607,12 @@ class TinyMCE(SimpleItem):
         labels['label_text'] = translate(_('Text'), context=request)
         labels['label_tables'] = translate(_('Tables'), context=request)
         labels['label_selection'] = translate(_('Selection'), context=request)
+        labels['label_lists'] = translate(_('Lists'), context=request)
         labels['label_print'] = translate(_('Print'), context=request)
         labels['label_no_items'] = translate(_('No items in this folder'), context=request)
         labels['label_no_anchors'] = translate(_('No anchors in this page'), context=request)
         results['labels']= labels
-        
+
         # Add styles to results
         results['styles'] = []
         results['table_styles'] = []
