@@ -138,6 +138,9 @@ class TinyMCEOutput(SGMLParser):
                 classes = ""
                 if attributes.has_key("class"):
                     classes = attributes["class"]
+                # if we set an description within tinymce we want to keep that one
+                if attributes.has_key("alt") and attributes["alt"]:
+                    description = attributes["alt"]
                 if self.captioned_images and classes.find('captioned') != -1:
                     # We have captioned images, and we need to convert them, so let's do so
                     width_style = ""
