@@ -1,7 +1,7 @@
 from Products.CMFCore.utils import getToolByName
 
 from sgmllib import SGMLParser, SGMLParseError
-from urlparse import urlsplit, urljoin
+from urlparse import urlsplit, urljoin, unquote
 
 HAS_LINGUAPLONE = True
 try:
@@ -122,6 +122,8 @@ class TinyMCEOutput(SGMLParser):
                 else:
                     # It's a relative path, let's see if we can get the description from the portal catalog
                     full_path = urljoin(self.context.absolute_url(), src)
+                    #remove any encoded characters
+                    full_path = unquote(full_path)
                     scheme, netloc, path, query, fragment = urlsplit(full_path)
                     portal_catalog = getToolByName(self.context, "portal_catalog")
                     # Check if we can find this in the portal catalog
