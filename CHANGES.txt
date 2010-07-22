@@ -5,9 +5,13 @@ HISTORY
 1.1 (Unreleased)
 ----------------
 
-- if we set an description within tinymce we want to keep that one
+- If we set a description within tinymce (which is written to the `alt`
+  attribute of the image tag then) we want to keep that one as image caption.
+  Added check for `alt` attribute in Products.TinyMCE.transforms.parser.
+  [hpeteragitator]
 
-- added full_path = unquote(full_path) to remove any encoded characters
+- In Products.TinyMCE.transforms.parser, added `full_path = unquote(full_path)`
+  to remove any encoded characters from path before doing the catalog query.
   [hpeteragitator]
 
 - Make the wysiwyg_support macros fall back to the default editor if the
@@ -63,7 +67,7 @@ HISTORY
 
 - Updated to upstream translations.
   table_dlg_scope_col and table_dlg_scope_row msgids doesn't exist
-  in tinymce domain, replaced by table_col and table_row in 
+  in tinymce domain, replaced by table_col and table_row in
   skins/tinymce/plugins/table/cell.htm.pt
   [vincentfretin]
 
