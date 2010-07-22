@@ -4,6 +4,8 @@ HISTORY
 
 1.1 (Unreleased)
 ----------------
+- added full_path = unquote(full_path) to remove any encoded characters
+  [hpeteragitator]
 
 - Make the wysiwyg_support macros fall back to the default editor if the
   current user has an editor preference that is no longer installed.
