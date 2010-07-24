@@ -1,7 +1,8 @@
 from Products.CMFCore.utils import getToolByName
 
 from sgmllib import SGMLParser, SGMLParseError
-from urlparse import urlsplit, urljoin, unquote
+from urlparse import urlsplit, urljoin
+from urllib import unquote
 
 HAS_LINGUAPLONE = True
 try:
