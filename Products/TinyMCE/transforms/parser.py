@@ -176,12 +176,12 @@ class TinyMCEOutput(SGMLParser):
         """
         j = None
         if self.rawdata[i:i+9] == '<![CDATA[':
-             k = self.rawdata.find(']]>', i)
-             if k == -1:
-                 k = len(self.rawdata)
-             data = self.rawdata[i+9:k]
-             j = k+3
-             self.append_data("<![CDATA[%s]]>" % data)
+            k = self.rawdata.find(']]>', i)
+            if k == -1:
+                k = len(self.rawdata)
+            data = self.rawdata[i+9:k]
+            j = k+3
+            self.append_data("<![CDATA[%s]]>" % data)
         else:
             try:
                 j = SGMLParser.parse_declaration(self, i)
