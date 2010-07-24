@@ -5,6 +5,9 @@ HISTORY
 1.1.1 (unreleased)
 ------------------
 
+- Use urllib.unquote. This closes http://dev.plone.org/plone/ticket/10807.
+  [jaroel]
+
 - Apply a workaround to fix the "Paste Text" dialog.
   [davisagli]
 
