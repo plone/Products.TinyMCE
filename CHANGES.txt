@@ -5,6 +5,10 @@ HISTORY
 1.1.1 (unreleased)
 ------------------
 
+- Assume TinyMCE as the site's default editor if none is set. This closes
+  http://dev.plone.org/plone/ticket/10810.
+  [jaroel]
+
 - Use urllib.unquote. This closes http://dev.plone.org/plone/ticket/10807.
   [jaroel]
 
