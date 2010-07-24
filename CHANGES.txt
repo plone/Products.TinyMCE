@@ -5,6 +5,10 @@ HISTORY
 1.1.1 (unreleased)
 ------------------
 
+- Add styling to set the fontsize for Plone3 only. This fixes
+  http://dev.plone.org/plone/ticket/10683
+  [jaroel]
+
 - Assume TinyMCE as the site's default editor if none is set. This closes
   http://dev.plone.org/plone/ticket/10810.
   [jaroel]
