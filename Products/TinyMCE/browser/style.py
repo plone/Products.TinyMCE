@@ -26,10 +26,12 @@ class TinyMCEStyle(BrowserView):
                 src = "<!-- @import url(%s/%s/%s); -->" % (registry_url, skinname, style.getId())
                 result.append(src)
 
-        if hasattr(self.context, 'use_tiny_mce_plone3_styles'):
-            if self.context.use_tiny_mce_plone3_styles:
+        # BBB 2010-07-24 Support Plone 3
+        portal_migration = getToolByName(self.context, 'portal_migration')
+        if hasattr(portal_migration, 'getInstanceVersionTuple'):
+            major_version = portal_migration.getInstanceVersionTuple()[0]
+            if major_version == 3:
                 css = self.context.restrictedTraverse('tiny_mce_plone3.css')(self.context)
                 result.append(css)
-
 
         return "\n".join(result)
