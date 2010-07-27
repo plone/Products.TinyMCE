@@ -42,7 +42,7 @@ class ITinyMCELayout(Interface):
 
     content_css = schema.TextLine(
         title=_(u"Choose the Css used in Wysiwyg Editor Area"),
-        description=_(u"This option enables you to specify a custom CSS file that extends the theme content CSS. This CSS file is the one used within the editor (the editable area)."),
+        description=_(u"This option enables you to specify a custom CSS file that replaces the theme content CSS. This CSS file is the one used within the editor (the editable area)."),
         required=False)
 
     styles = schema.Text(
