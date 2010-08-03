@@ -108,7 +108,7 @@ class TinyMCEOutput(SGMLParser):
                 # if we set an description within tinymce we want to keep that one
                 if attributes.has_key("alt") and attributes["alt"]:
                     description = attributes["alt"]
-                elif 'resolveuid' in src:
+                if 'resolveuid' in src:
                     # We need to convert the UUID to a relative path here
                     parts = src.split("/")
                     uid = parts[1]
@@ -121,7 +121,7 @@ class TinyMCEOutput(SGMLParser):
                         # Only do something when the image is actually found in the reference_catalog
                         src = image_obj.absolute_url() + appendix
                         attributes["src"] = src
-                        if hasattr(image_obj, "Description"):
+                        if hasattr(image_obj, "Description") and not description:
                             description = image_obj.Description()
                 else:
                     # It's a relative path, let's see if we can get the description from the portal catalog
@@ -136,7 +136,7 @@ class TinyMCEOutput(SGMLParser):
                         # Maybe something like 'image_preview' is in the path, let's chop it
                         query= {'path' : {'query' : "/".join(path.split('/')[:-1])}, 'type' : 'Image'}
                         brains = portal_catalog(query)
-                    if len(brains) > 0:
+                    if len(brains) > 0 and not description:
                         description = brains[0].Description
                 # Check if the image is a captioned image
                 classes = ""
