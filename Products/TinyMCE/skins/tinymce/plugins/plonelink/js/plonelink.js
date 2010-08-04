@@ -49,6 +49,7 @@ function init() {
 
     if (action == "update") {
         var href = inst.dom.getAttrib(elm, 'href');
+        href = tinymce.trim(href)
 
         // Setup form data
         setFormValue('href', href, 0);
@@ -64,25 +65,28 @@ function init() {
             displayPanel('mail_panel');
             var mailaddress = href.split('mailto:')[1];
             var mailsubject = "";
-            
+
             if (mailaddress.indexOf('?subject=') != -1) {
                 mailsubject = mailaddress.split('?subject=')[1];
                 mailaddress = mailaddress.split('?subject=')[0];
             }
-            
+
             setFormValue('mailaddress', mailaddress, 0);
             setFormValue('mailsubject', mailsubject, 0);
-        } else if ((href.indexOf('http://') != -1) || (href.indexOf('https://') != -1) || (href.indexOf('ftp://') != -1)) {
+        } else if ((href.indexOf('http://') == 0) || (href.indexOf('https://') == 0) || (href.indexOf('ftp://') == 0)) {
             displayPanel('external_panel');
-            if (href.indexOf('http://') != -1) {
+            if (href.indexOf('http://') == 0) {
+                href = href.substr(7,href.length);
                 selectByValue(formGeneralObj, 'externalurlprefix', 'http://', true);
-                setFormValue('externalurl', href.split('http://')[1], 0);
-            } else if (href.indexOf('https://') != -1) {
+                setFormValue('externalurl', href, 0);
+            } else if (href.indexOf('https://') == 0) {
+                href = href.substr(8,href.length);
                 selectByValue(formGeneralObj, 'externalurlprefix', 'https://', true);
-                setFormValue('externalurl', href.split('https://')[1], 0);
-            } else if (href.indexOf('ftp://') != -1) {
+                setFormValue('externalurl', href, 0);
+            } else if (href.indexOf('ftp://') == 0) {
+                href = href.substr(6,href.length);
                 selectByValue(formGeneralObj, 'externalurlprefix', 'ftp://', true);
-                setFormValue('externalurl', href.split('ftp://')[1], 0);
+                setFormValue('externalurl', href, 0);
             }
         } else {
             if (href.indexOf('#') != -1) {
@@ -111,17 +115,21 @@ function init() {
     } else {
 
         href = inst.selection.getContent();
-        if ((href.indexOf('http://') != -1) || (href.indexOf('https://') != -1) || (href.indexOf('ftp://') != -1)) {
+        href = tinymce.trim(href)
+        if ((href.indexOf('http://') == 0) || (href.indexOf('https://') == 0) || (href.indexOf('ftp://') == 0)) {
             displayPanel('external_panel');
-            if (href.indexOf('http://') != -1) {
+            if (href.indexOf('http://') == 0) {
+                href = href.substr(7,href.length);
                 selectByValue(formGeneralObj, 'externalurlprefix', 'http://', true);
-                setFormValue('externalurl', href.split('http://')[1], 0);
-            } else if (href.indexOf('https://') != -1) {
+                setFormValue('externalurl', href, 0);
+            } else if (href.indexOf('https://') == 0) {
+                href = href.substr(8,href.length);
                 selectByValue(formGeneralObj, 'externalurlprefix', 'https://', true);
-                setFormValue('externalurl', href.split('https://')[1], 0);
-            } else if (href.indexOf('ftp://') != -1) {
+                setFormValue('externalurl', href, 0);
+            } else if (href.indexOf('ftp://') == 0) {
+                href = href.substr(6,href.length);
                 selectByValue(formGeneralObj, 'externalurlprefix', 'ftp://', true);
-                setFormValue('externalurl', href.split('ftp://')[1], 0);
+                setFormValue('externalurl', href, 0);
             }
         } else {
             getCurrentFolderListing();
@@ -138,16 +146,20 @@ function checkSearch(e) {
 function checkExternalUrl() {
     var formGeneralObj = document.forms[0];
     href = document.getElementById('externalurl').value;
-    if ((href.indexOf('http://') != -1) || (href.indexOf('https://') != -1) || (href.indexOf('ftp://') != -1)) {
-        if (href.indexOf('http://') != -1) {
+    href = tinymce.trim(href)
+    if ((href.indexOf('http://') == 0) || (href.indexOf('https://') == 0) || (href.indexOf('ftp://') == 0)) {
+        if (href.indexOf('http://') == 0) {
+            href = href.substr(7,href.length);
             selectByValue(formGeneralObj, 'externalurlprefix', 'http://', true);
-            setFormValue('externalurl', href.split('http://')[1], 0);
-        } else if (href.indexOf('https://') != -1) {
+            setFormValue('externalurl', href, 0);
+        } else if (href.indexOf('https://') == 0) {
+            href = href.substr(8,href.length);
             selectByValue(formGeneralObj, 'externalurlprefix', 'https://', true);
-            setFormValue('externalurl', href.split('https://')[1], 0);
-        } else if (href.indexOf('ftp://') != -1) {
+            setFormValue('externalurl', href, 0);
+        } else if (href.indexOf('ftp://') == 0) {
+            href = href.substr(6,href.length);
             selectByValue(formGeneralObj, 'externalurlprefix', 'ftp://', true);
-            setFormValue('externalurl', href.split('ftp://')[1], 0);
+            setFormValue('externalurl', href, 0);
         }
     }
 }
