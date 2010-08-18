@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plone.tinymce\n"
 "POT-Creation-Date: 2010-06-22 07:44+0000\n"
-"PO-Revision-Date: 2010-04-05 12:20+0100\n"
+"PO-Revision-Date: 2010-08-18 08:54+0100\n"
 "Last-Translator: Radim Novotny <novotny.radim@gmail.com>\n"
 "Language-Team: DMS4U <info@dms4u.cz>\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../utility.py:600
 msgid "(remove style)"
-msgstr ""
+msgstr "(odebrat styl)"
 
 #: ../interfaces/utility.py:152
 msgid "Align center"
@@ -67,7 +67,7 @@ msgid "Choose the Css used in Wysiwyg Editor Area"
 msgstr "Vybrte CSS styl použitý ve WYSIWYG editoru"
 
 msgid "Circle"
-msgstr ""
+msgstr "Kroužek"
 
 #: ../interfaces/utility.py:256
 msgid "Cleanup messy code"
@@ -107,14 +107,14 @@ msgid "Cut"
 msgstr "Vyjmout"
 
 msgid "Definition description"
-msgstr ""
+msgstr "Popis definičního termínu"
 
 #: ../interfaces/utility.py:172
 msgid "Definition list"
 msgstr "Definiční seznam"
 
 msgid "Definition term"
-msgstr ""
+msgstr "Definiční termín"
 
 #. Default: "Description"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:123
@@ -128,7 +128,7 @@ msgid "Details"
 msgstr "Detaily"
 
 msgid "Disc"
-msgstr ""
+msgstr "Disk"
 
 msgid "Discreet"
 msgstr "Nevýrazné"
@@ -371,10 +371,10 @@ msgid "Literal"
 msgstr "Kód"
 
 msgid "Lower Alpha"
-msgstr ""
+msgstr "Malá a,b,c,..."
 
 msgid "Lower Roman"
-msgstr ""
+msgstr "Malé římské"
 
 #. Default: "Mail"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:46
@@ -387,18 +387,18 @@ msgstr "Pojmenované"
 
 #: ../utility.py:609
 msgid "No anchors in this page"
-msgstr ""
+msgstr "Na stránce nejsou kotvy"
 
 #: ../utility.py:608
 msgid "No items in this folder"
-msgstr ""
+msgstr "Ve složce nejsou žádné položky"
 
 #: ../utility.py:601
 msgid "Normal paragraph"
-msgstr ""
+msgstr "Obyčejný odstavec"
 
 msgid "Numbers"
-msgstr ""
+msgstr "Čísla"
 
 #: ../interfaces/utility.py:334
 msgid "Numeric"
@@ -432,7 +432,7 @@ msgstr "Vložit z Wordu"
 
 #: ../utility.py:602
 msgid "Plain cell"
-msgstr ""
+msgstr "Normální buňka"
 
 #. Default: "Preview"
 #: ../interfaces/utility.py:244
@@ -488,7 +488,7 @@ msgstr "Vybrat styl"
 
 #: ../utility.py:606
 msgid "Selection"
-msgstr ""
+msgstr "Výběr"
 
 #: ../browser/controlpanel.py:40
 msgid "Settings for the TinyMCE Wysiwyg editor."
@@ -499,7 +499,7 @@ msgid "Spellchecker"
 msgstr "Kontrola pravopisu"
 
 msgid "Square"
-msgstr ""
+msgstr "Čtverec"
 
 #: ../interfaces/utility.py:128
 msgid "Strikethrough"
@@ -507,7 +507,7 @@ msgstr "Přeškrtnuté"
 
 #: ../utility.py:603
 msgid "Style..."
-msgstr ""
+msgstr "Styl..."
 
 #: ../interfaces/utility.py:49
 msgid "Styles"
@@ -542,11 +542,11 @@ msgstr "Styly tabulky"
 
 #: ../utility.py:605
 msgid "Tables"
-msgstr ""
+msgstr "Tabulky"
 
 #: ../utility.py:604
 msgid "Text"
-msgstr ""
+msgstr "Text"
 
 #: ../interfaces/utility.py:332
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
@@ -606,7 +606,7 @@ msgstr "Vizuální editor TinyMCE"
 #. Default: "Title"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:275
 msgid "Title"
-msgstr "NAdpis"
+msgstr "Nadpis"
 
 #: ../interfaces/utility.py:276
 msgid "Toggle fullscreen mode"
@@ -659,10 +659,10 @@ msgid "Upload file"
 msgstr "Nahrát soubor"
 
 msgid "Upper Alpha"
-msgstr ""
+msgstr "Velké A,B,C,..."
 
 msgid "Upper Roman"
-msgstr ""
+msgstr "Velké římské"
 
 #: ../interfaces/utility.py:264
 msgid "Visual control characters on/off"
