@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: plone.tinymce\n"
-"POT-Creation-Date: 2010-06-22 07:44+0000\n"
+"POT-Creation-Date: 2010-08-20 21:16+0000\n"
 "PO-Revision-Date: 2010-08-18 08:54+0100\n"
 "Last-Translator: Radim Novotny <novotny.radim@gmail.com>\n"
 "Language-Team: DMS4U <info@dms4u.cz>\n"
@@ -17,40 +17,40 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone.tinymce\n"
 
-#: ../utility.py:600
+#: TinyMCE/utility.py:603
 msgid "(remove style)"
 msgstr "(odebrat styl)"
 
-#: ../interfaces/utility.py:152
+#: TinyMCE/interfaces/utility.py:152
 msgid "Align center"
 msgstr "Zarovnat na střed"
 
-#: ../interfaces/utility.py:160
+#: TinyMCE/interfaces/utility.py:160
 msgid "Align full"
 msgstr "Zarovnat na šířku"
 
-#: ../interfaces/utility.py:148
+#: TinyMCE/interfaces/utility.py:148
 msgid "Align left"
 msgstr "Zarovnat vlevo"
 
-#: ../interfaces/utility.py:156
+#: TinyMCE/interfaces/utility.py:156
 msgid "Align right"
 msgstr "Zarovnat vpravo"
 
-#: ../interfaces/utility.py:296
+#: TinyMCE/interfaces/utility.py:296
 msgid "Allow captioned images"
 msgstr "Povolit obrázky s popisky"
 
 #. Default: "Anchors"
-#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:51
+#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:51
 msgid "Anchors"
 msgstr "Kotvy"
 
-#: ../interfaces/utility.py:144
+#: TinyMCE/interfaces/utility.py:144
 msgid "Backcolor"
 msgstr "Barva pozadí"
 
-#: ../interfaces/utility.py:116
+#: TinyMCE/interfaces/utility.py:116
 msgid "Bold"
 msgstr "Tučné"
 
@@ -58,58 +58,58 @@ msgid "Call-out"
 msgstr "Zvýrazněné"
 
 #. Default: "Caption"
-#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:89
+#: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:88
 msgid "Caption"
 msgstr "Popisek"
 
-#: ../interfaces/utility.py:44
+#: TinyMCE/interfaces/utility.py:44
 msgid "Choose the Css used in Wysiwyg Editor Area"
 msgstr "Vybrte CSS styl použitý ve WYSIWYG editoru"
 
 msgid "Circle"
 msgstr "Kroužek"
 
-#: ../interfaces/utility.py:256
+#: TinyMCE/interfaces/utility.py:256
 msgid "Cleanup messy code"
 msgstr "Pročistit neupravený kód"
 
 msgid "Clear floats"
 msgstr "Odebrat plovoucí prvky"
 
-#: ../interfaces/utility.py:311
+#: TinyMCE/interfaces/utility.py:311
 msgid "Contains Anchors"
 msgstr "Obsahuje kotvy"
 
-#: ../interfaces/utility.py:306
+#: TinyMCE/interfaces/utility.py:306
 msgid "Contains Objects"
 msgstr "Obsahuje objekty"
 
-#: ../interfaces/utility.py:80
+#: TinyMCE/interfaces/utility.py:80
 msgid "Copy"
 msgstr "Kopírovat"
 
 #. Default: "Current Folder"
-#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:30
-#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:31
+#: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:30
+#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:31
 msgid "Current Folder"
 msgstr "Aktuální složka"
 
-#: ../interfaces/utility.py:326
+#: TinyMCE/interfaces/utility.py:326
 msgid "Custom Plugins"
 msgstr "Vlastní přídavné moduly"
 
-#: ../interfaces/utility.py:280
+#: TinyMCE/interfaces/utility.py:280
 msgid "Custom Toolbar Buttons"
 msgstr "Vlastní tlačítka"
 
-#: ../interfaces/utility.py:76
+#: TinyMCE/interfaces/utility.py:76
 msgid "Cut"
 msgstr "Vyjmout"
 
 msgid "Definition description"
 msgstr "Popis definičního termínu"
 
-#: ../interfaces/utility.py:172
+#: TinyMCE/interfaces/utility.py:172
 msgid "Definition list"
 msgstr "Definiční seznam"
 
@@ -117,13 +117,13 @@ msgid "Definition term"
 msgstr "Definiční termín"
 
 #. Default: "Description"
-#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:123
-#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:159
+#: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:122
+#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:159
 msgid "Description"
 msgstr "Popis"
 
 #. Default: "Details"
-#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:60
+#: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:59
 msgid "Details"
 msgstr "Detaily"
 
@@ -134,71 +134,71 @@ msgid "Discreet"
 msgstr "Nevýrazné"
 
 #. Default: "E-mail"
-#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:117
+#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:117
 msgid "E-mail"
 msgstr "E-mail"
 
-#: ../interfaces/utility.py:272
+#: TinyMCE/interfaces/utility.py:272
 msgid "Edit HTML Source"
 msgstr "Upravit HTML zdroj"
 
-#: ../interfaces/utility.py:27
+#: TinyMCE/interfaces/utility.py:27
 msgid "Editor height"
 msgstr "Výška editoru"
 
-#: ../interfaces/utility.py:22
+#: TinyMCE/interfaces/utility.py:22
 msgid "Editor width"
 msgstr "Šířka editoru"
 
-#: ../interfaces/utility.py:228
+#: TinyMCE/interfaces/utility.py:228
 msgid "Emotions"
 msgstr "Emoce"
 
-#: ../interfaces/utility.py:17
+#: TinyMCE/interfaces/utility.py:17
 msgid "Enable auto resizing of the editor window."
 msgstr "Povolit automatickou změnu velikosti okna editoru."
 
-#: ../interfaces/utility.py:39
+#: TinyMCE/interfaces/utility.py:39
 msgid "Enable contextmenu."
 msgstr "Povolit kontextovou nabídku."
 
-#: ../interfaces/utility.py:12
+#: TinyMCE/interfaces/utility.py:12
 msgid "Enable resizing the editor window."
 msgstr "Povolit změnu velikosti okna editoru."
 
-#: ../interfaces/utility.py:317
+#: TinyMCE/interfaces/utility.py:317
 msgid "Enter a list of content types which can be linked. Format is one contenttype per line."
 msgstr "Zadejte seznam typů položek, které mohou být odkazovány z editoru. Každý typ uveďte na samostatném řádku."
 
-#: ../interfaces/utility.py:322
+#: TinyMCE/interfaces/utility.py:322
 msgid "Enter a list of content types which can be used as images. Format is one contenttype per line."
 msgstr "Zadejte seznam typů položek, které mohou být použity jako obrázek. Každý typ uveďte na samostatném řádku."
 
-#: ../interfaces/utility.py:312
+#: TinyMCE/interfaces/utility.py:312
 msgid "Enter a list of content types which can contain anchors. Format is one contenttype per line."
 msgstr "Zadejte seznam typů položek, které mohou obsahovat kotvy. Každý typ uveďte na samostatném řádku."
 
-#: ../interfaces/utility.py:307
+#: TinyMCE/interfaces/utility.py:307
 msgid "Enter a list of content types which can contain other objects. Format is one contenttype per line."
 msgstr "Zadejte seznam typů položek, které mohou obsahovat další objektu (tzn. jsou to složky). Každý typ uveďte na samostatném řádku."
 
-#: ../interfaces/utility.py:327
+#: TinyMCE/interfaces/utility.py:327
 msgid "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
 msgstr "Zadejte seznam vlastních přídavných modulů, které mají být nahrány do editoru. Formát je: plugin nebo plugin|umístění - každý na samostatném řádku."
 
-#: ../interfaces/utility.py:281
+#: TinyMCE/interfaces/utility.py:281
 msgid "Enter a list of custom toolbar buttons which will be loaded in the editor, one per line."
 msgstr "Zadejte seznam vlastních tlačítek na panelu nástrojů - každé na samostatném řádku."
 
-#: ../interfaces/utility.py:50
+#: TinyMCE/interfaces/utility.py:50
 msgid "Enter a list of styles to appear in the style pulldown. Format is title|tag or title|tag|className, one per line."
 msgstr "Zadejte seznam stylů, které se zobrazí v seznamu dostupných stylů. Formát je:  název|tag nebo název|tag|className - každý styl na samostatném řádku."
 
-#: ../interfaces/utility.py:55
+#: TinyMCE/interfaces/utility.py:55
 msgid "Enter a list of styles to appear in the table style pulldown. Format is title|class, one per line."
 msgstr "Zadejte seznam stylů, které se zobrazí v seznamu stylů pro tabulky. Formát je název|class - každý styl na samostatném řádku."
 
-#: ../interfaces/utility.py:331
+#: TinyMCE/interfaces/utility.py:331
 msgid "Entity encoding"
 msgstr "Kódování entit"
 
@@ -206,13 +206,13 @@ msgid "Even row"
 msgstr "Sudý řádek"
 
 #. Default: "External"
-#: ../interfaces/utility.py:67
-#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:41
+#: TinyMCE/interfaces/utility.py:67
+#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:41
 msgid "External"
 msgstr "Externí"
 
 #. Default: "External link"
-#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:92
+#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:92
 msgid "External link"
 msgstr "Externí odkaz"
 
@@ -226,20 +226,20 @@ msgid "Fancy vertical listing"
 msgstr ""
 
 #. Default: "File"
-#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:109
-#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:145
+#: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:108
+#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:145
 msgid "File"
 msgstr "Soubor"
 
-#: ../interfaces/utility.py:104
+#: TinyMCE/interfaces/utility.py:104
 msgid "Find"
 msgstr "Najít"
 
-#: ../interfaces/utility.py:108
+#: TinyMCE/interfaces/utility.py:108
 msgid "Find/Replace"
 msgstr "Najít/nahradit"
 
-#: ../interfaces/utility.py:140
+#: TinyMCE/interfaces/utility.py:140
 msgid "Forecolor"
 msgstr "Barva popředí"
 
@@ -253,119 +253,123 @@ msgid "Highlight"
 msgstr "Zvýraznit"
 
 #. Default: "Home"
-#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:25
-#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:26
+#: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:25
+#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:26
 msgid "Home"
 msgstr "Domů"
 
-#: ../interfaces/utility.py:321
+#: TinyMCE/interfaces/utility.py:321
 msgid "Image Objects"
 msgstr "Obrázky"
 
-#: ../interfaces/utility.py:297
+#: TinyMCE/interfaces/utility.py:297
 msgid "Images will be automatically captioned."
 msgstr "Obrázky budou automaticky pojmenovány."
 
-#: ../interfaces/utility.py:180
+#: TinyMCE/interfaces/utility.py:180
 msgid "Indent"
 msgstr "Odsazení"
 
 #. Default: "Inline"
-#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:80
+#: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:79
 msgid "Inline"
 msgstr "V řádku"
 
-#: ../interfaces/utility.py:216
+#: TinyMCE/interfaces/utility.py:216
 msgid "Insert advanced horizontal ruler"
 msgstr "Vložit rozšířené vodorovné pravítko"
 
-#: ../interfaces/utility.py:208
+#: TinyMCE/interfaces/utility.py:208
 msgid "Insert custom character"
 msgstr "Vložit vlastní znak"
 
-#: ../interfaces/utility.py:220
+#: TinyMCE/interfaces/utility.py:220
 msgid "Insert date"
 msgstr "Vložit datum"
 
-#: ../interfaces/utility.py:212
+#: TinyMCE/interfaces/utility.py:212
 msgid "Insert horizontal ruler"
 msgstr "Vložit vodorovné pravítko"
 
-#: ../interfaces/utility.py:232
+#: TinyMCE/interfaces/utility.py:232
 msgid "Insert non-breaking space character"
 msgstr "Vložit nedělitelnou mezeru"
 
-#: ../interfaces/utility.py:236
+#: TinyMCE/interfaces/utility.py:236
 msgid "Insert page break"
 msgstr "Vložit zalomení stránky"
 
-#: ../interfaces/utility.py:224
+#: TinyMCE/interfaces/utility.py:224
 msgid "Insert time"
 msgstr "Vložit čas"
 
-#: ../interfaces/utility.py:196
+#: TinyMCE/interfaces/utility.py:196
 msgid "Insert/edit anchor"
 msgstr "Vložit/upravit kotvu"
 
-#: ../interfaces/utility.py:268
+#: TinyMCE/interfaces/utility.py:268
 msgid "Insert/edit attributes"
 msgstr "Vložit/upravit atributy"
 
-#: ../interfaces/utility.py:200
+#: TinyMCE/interfaces/utility.py:200
 msgid "Insert/edit image"
 msgstr "Vložit/upravit obrázek"
 
-#: ../interfaces/utility.py:188
+#: TinyMCE/interfaces/utility.py:188
 msgid "Insert/edit link"
 msgstr "Vložit/upravit odkaz"
 
-#: ../interfaces/utility.py:204
+#: TinyMCE/interfaces/utility.py:204
 msgid "Insert/edit media"
 msgstr "Vložit/upravit média"
 
 #. Default: "Internal link"
-#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:65
+#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:65
 msgid "Internal link"
 msgstr "Interní odkaz"
 
 msgid "Invisible grid"
 msgstr "Neviditelná mřížka"
 
-#: ../interfaces/utility.py:120
+#: TinyMCE/interfaces/utility.py:120
 msgid "Italic"
 msgstr "Skloněné"
 
-#: ../browser/controlpanel.py:23
+#: TinyMCE/browser/controlpanel.py:23
 msgid "Layout"
 msgstr "Rozvržení"
 
-#: ../interfaces/utility.py:35
+#: TinyMCE/interfaces/utility.py:35
 msgid "Left to right"
 msgstr "Zleva doprava"
 
 #. Default: "Libraries"
-#: ../browser/controlpanel.py:31
-#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:21
-#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:22
+#: TinyMCE/browser/controlpanel.py:31
+#: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:21
+#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:22
 msgid "Libraries"
 msgstr "Knihovny"
 
 #. Default: "Link to anchor"
-#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:132
+#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:132
 msgid "Link to anchor"
 msgstr "Odkaz na kotvu"
 
-#: ../interfaces/utility.py:291
+#: TinyMCE/interfaces/utility.py:291
 msgid "Link using UIDs"
 msgstr "Odkazovat s použitím UID"
 
-#: ../interfaces/utility.py:316
+#: TinyMCE/interfaces/utility.py:316
 msgid "Linkable Objects"
 msgstr "Odkazovatelné objekty"
 
-#: ../interfaces/utility.py:292
+#: TinyMCE/interfaces/utility.py:292
 msgid "Links to objects on this site can use unique object ids so that the links remain valid even if the target object is renamed or moved elsewhere on the site."
 msgstr "Odkazy na objekty v rámci portálu mohou být vytvořeny s pomocí jedinečného identifikátoru (UID), který se nemění ani při přesunutí nebo přejmenování položky."
+
+#: TinyMCE/utility.py:610
+msgid "Lists"
+msgstr ""
 
 msgid "Literal"
 msgstr "Kód"
@@ -377,139 +381,139 @@ msgid "Lower Roman"
 msgstr "Malé římské"
 
 #. Default: "Mail"
-#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:46
+#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:46
 msgid "Mail"
 msgstr "Mail"
 
-#: ../interfaces/utility.py:334
+#: TinyMCE/interfaces/utility.py:334
 msgid "Named"
 msgstr "Pojmenované"
 
-#: ../utility.py:609
+#: TinyMCE/utility.py:613
 msgid "No anchors in this page"
 msgstr "Na stránce nejsou kotvy"
 
-#: ../utility.py:608
+#: TinyMCE/utility.py:612
 msgid "No items in this folder"
 msgstr "Ve složce nejsou žádné položky"
 
-#: ../utility.py:601
+#: TinyMCE/utility.py:604
 msgid "Normal paragraph"
 msgstr "Obyčejný odstavec"
 
 msgid "Numbers"
 msgstr "Čísla"
 
-#: ../interfaces/utility.py:334
+#: TinyMCE/interfaces/utility.py:334
 msgid "Numeric"
 msgstr "Číselné"
 
 msgid "Odd row"
 msgstr "Lichý řádek"
 
-#: ../interfaces/utility.py:168
+#: TinyMCE/interfaces/utility.py:168
 msgid "Ordered list"
 msgstr "Číslovaný seznam"
 
-#: ../interfaces/utility.py:176
+#: TinyMCE/interfaces/utility.py:176
 msgid "Outdent"
 msgstr "Předsazení"
 
 msgid "Page break (print only)"
 msgstr "Zalomení stránky (pouze při tisku)"
 
-#: ../interfaces/utility.py:84
+#: TinyMCE/interfaces/utility.py:84
 msgid "Paste"
 msgstr "Vložit"
 
-#: ../interfaces/utility.py:88
+#: TinyMCE/interfaces/utility.py:88
 msgid "Paste as Plain Text"
 msgstr "Vložit jako prostý text"
 
-#: ../interfaces/utility.py:92
+#: TinyMCE/interfaces/utility.py:92
 msgid "Paste from Word"
 msgstr "Vložit z Wordu"
 
-#: ../utility.py:602
+#: TinyMCE/utility.py:605
 msgid "Plain cell"
 msgstr "Normální buňka"
 
 #. Default: "Preview"
-#: ../interfaces/utility.py:244
-#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:102
+#: TinyMCE/interfaces/utility.py:244
+#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:102
 msgid "Preview"
 msgstr "Náhled"
 
-#: ../interfaces/utility.py:240
-#: ../utility.py:607
+#: TinyMCE/interfaces/utility.py:240
+#: TinyMCE/utility.py:611
 msgid "Print"
 msgstr "Tisk"
 
 msgid "Pull-quote"
 msgstr "Odsazená citace"
 
-#: ../interfaces/utility.py:334
+#: TinyMCE/interfaces/utility.py:334
 msgid "Raw"
 msgstr "Originál"
 
-#: ../interfaces/utility.py:100
+#: TinyMCE/interfaces/utility.py:100
 msgid "Redo"
 msgstr "Znovu"
 
-#: ../interfaces/utility.py:252
+#: TinyMCE/interfaces/utility.py:252
 msgid "Remove formatting"
 msgstr "Odstranit formátování"
 
-#: ../browser/controlpanel.py:35
+#: TinyMCE/browser/controlpanel.py:35
 msgid "Resource Types"
 msgstr "Typy zdrojů"
 
-#: ../interfaces/utility.py:35
+#: TinyMCE/interfaces/utility.py:35
 msgid "Right to left"
 msgstr "Zprava do leva"
 
-#: ../interfaces/utility.py:301
+#: TinyMCE/interfaces/utility.py:301
 msgid "Rooted to current object"
 msgstr "Kořenem bude tento objekt"
 
-#: ../interfaces/utility.py:72
+#: TinyMCE/interfaces/utility.py:72
 msgid "Save"
 msgstr "Uložit"
 
 #. Default: "Search"
-#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:40
-#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:56
+#: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:40
+#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:56
 msgid "Search"
 msgstr "Vyhledat"
 
-#: ../interfaces/utility.py:112
+#: TinyMCE/interfaces/utility.py:112
 msgid "Select Style"
 msgstr "Vybrat styl"
 
-#: ../utility.py:606
+#: TinyMCE/utility.py:609
 msgid "Selection"
 msgstr "Výběr"
 
-#: ../browser/controlpanel.py:40
+#: TinyMCE/browser/controlpanel.py:40
 msgid "Settings for the TinyMCE Wysiwyg editor."
 msgstr "Nastavení TinyMCE editoru"
 
-#: ../interfaces/utility.py:248
+#: TinyMCE/interfaces/utility.py:248
 msgid "Spellchecker"
 msgstr "Kontrola pravopisu"
 
 msgid "Square"
 msgstr "Čtverec"
 
-#: ../interfaces/utility.py:128
+#: TinyMCE/interfaces/utility.py:128
 msgid "Strikethrough"
 msgstr "Přeškrtnuté"
 
-#: ../utility.py:603
+#: TinyMCE/utility.py:606
 msgid "Style..."
 msgstr "Styl..."
 
-#: ../interfaces/utility.py:49
+#: TinyMCE/interfaces/utility.py:49
 msgid "Styles"
 msgstr "Styly"
 
@@ -520,141 +524,141 @@ msgid "Subheading"
 msgstr "Podnadpis"
 
 #. Default: "Subject"
-#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:124
+#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:124
 msgid "Subject"
 msgstr "Předmět"
 
-#: ../interfaces/utility.py:132
+#: TinyMCE/interfaces/utility.py:132
 msgid "Subscript"
 msgstr "Dolní index"
 
-#: ../interfaces/utility.py:136
+#: TinyMCE/interfaces/utility.py:136
 msgid "Superscript"
 msgstr "Horní index"
 
-#: ../interfaces/utility.py:184
+#: TinyMCE/interfaces/utility.py:184
 msgid "Table controls"
 msgstr "Nastavení tabulky"
 
-#: ../interfaces/utility.py:54
+#: TinyMCE/interfaces/utility.py:54
 msgid "Table styles"
 msgstr "Styly tabulky"
 
-#: ../utility.py:605
+#: TinyMCE/utility.py:608
 msgid "Tables"
 msgstr "Tabulky"
 
-#: ../utility.py:604
+#: TinyMCE/utility.py:607
 msgid "Text"
 msgstr "Text"
 
-#: ../interfaces/utility.py:332
+#: TinyMCE/interfaces/utility.py:332
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
 msgstr "Tato položka určuje, jak budou entity/znaky uloženy - Pojmenované: Znaky budou konvertovány do pojmenovaných entit podle nastavení entit. Číselné: Znaky budou konvertovány do číselných entit. Originál: Všechny znaky kromě výchozích XML entit (amp lt gt quot) budou ponechány v původní formě."
 
-#: ../interfaces/utility.py:68
+#: TinyMCE/interfaces/utility.py:68
 msgid "This option enables the external toolbar which will be placed at the top of the page."
 msgstr "Zde je možné povolit externí nástrojovou lištu, která bude umístěna k hornímu okraji stránky."
 
-#: ../interfaces/utility.py:45
-msgid "This option enables you to specify a custom CSS file that extends the theme content CSS. This CSS file is the one used within the editor (the editable area)."
-msgstr "Zde je možné nastavit vlastní CSS soubor, který rozšíří původní CSS. Tento styl je ten, který se používá uvnitř editoru (editovatelné oblasti)."
+#: TinyMCE/interfaces/utility.py:45
+msgid "This option enables you to specify a custom CSS file that replaces the theme content CSS. This CSS file is the one used within the editor (the editable area)."
+msgstr ""
 
-#: ../interfaces/utility.py:18
+#: TinyMCE/interfaces/utility.py:18
 msgid "This option gives you the ability to enable/disable auto resizing the editor window depending on the content."
 msgstr "Zde je možné nastavit, zda se velikost okna editoru může automaticky měnit podle aktuálního obsahu."
 
-#: ../interfaces/utility.py:13
+#: TinyMCE/interfaces/utility.py:13
 msgid "This option gives you the ability to enable/disable resizing the editor window. If the editor width is set to a percentage only vertical resizing is enabled."
 msgstr "Zde je možné zvolit, zda bude možné uživatelsky měnit velikost editoru. Pokud je šířka nastavena procenty, pak bude možné měnit jen výšku editoru."
 
-#: ../interfaces/utility.py:40
+#: TinyMCE/interfaces/utility.py:40
 msgid "This option gives you the ability to enable/disable the use of the contextmenu."
 msgstr "Toto nastavení umožňuje povolit nebo zakázat použití kontextového menu (pravé tlačítko myši)."
 
-#: ../interfaces/utility.py:28
+#: TinyMCE/interfaces/utility.py:28
 msgid "This option gives you the ability to specify the height of the editor in pixels. If auto resize is enabled this value is used as minimum height."
 msgstr "Zde je možné nastavit výšku editoru v pixelech. Pokud je povolena automatická změna velikosti, je tato hodnota považována za minimální výšku."
 
-#: ../interfaces/utility.py:23
+#: TinyMCE/interfaces/utility.py:23
 msgid "This option gives you the ability to specify the width of the editor in pixels or percent."
 msgstr "Zde je možné nastavit šířku editoru v pixelech nebo procentech."
 
-#: ../interfaces/utility.py:63
+#: TinyMCE/interfaces/utility.py:63
 msgid "This option gives you the ability to specify the width of the toolbar in pixels."
 msgstr "Zde je možné nastavit šířku nástrojoové lišty v pixelech."
 
-#: ../interfaces/utility.py:33
+#: TinyMCE/interfaces/utility.py:33
 msgid "This option specifies the default writing direction, some languages (Like Hebrew, Arabic, Urdu...) write from right to left instead of left to right."
 msgstr "Tato volba určuje výchozí směr psaní. V některých jazycích (hebrejština, arabština, ...) se píše z prava do leva."
 
 #. Default: "TinyMCE"
-#: ../profiles/upgrade_10_to_11/controlpanel.xml
+#: TinyMCE/profiles/upgrade_10_to_11/controlpanel.xml
 msgid "TinyMCE"
 msgstr "TinyMCE"
 
-#: ../browser/controlpanel.py:39
+#: TinyMCE/browser/controlpanel.py:39
 msgid "TinyMCE Settings"
 msgstr "Nastavení TinyMCE"
 
 #. Default: "TinyMCE Visual Editor"
-#: ../profiles/default/controlpanel.xml
-#: ../profiles/upgrade_10_to_11/controlpanel.xml
+#: TinyMCE/profiles/default/controlpanel.xml
+#: TinyMCE/profiles/upgrade_10_to_11/controlpanel.xml
 msgid "TinyMCE Visual Editor"
 msgstr "Vizuální editor TinyMCE"
 
 #. Default: "Title"
-#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:275
+#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:275
 msgid "Title"
 msgstr "Nadpis"
 
-#: ../interfaces/utility.py:276
+#: TinyMCE/interfaces/utility.py:276
 msgid "Toggle fullscreen mode"
 msgstr "Přepnout režim celé obrazovky"
 
-#: ../interfaces/utility.py:260
+#: TinyMCE/interfaces/utility.py:260
 msgid "Toggle guidelines/invisible objects"
 msgstr "Přepnout vodítka/neviditelné prvky"
 
-#: ../browser/controlpanel.py:27
+#: TinyMCE/browser/controlpanel.py:27
 msgid "Toolbar"
 msgstr "Nástrojová lišta"
 
-#: ../interfaces/utility.py:62
+#: TinyMCE/interfaces/utility.py:62
 msgid "Toolbar width"
 msgstr "Šířka nástrojové lišty"
 
-#: ../interfaces/utility.py:124
+#: TinyMCE/interfaces/utility.py:124
 msgid "Underline"
 msgstr "Podtržené"
 
-#: ../interfaces/utility.py:96
+#: TinyMCE/interfaces/utility.py:96
 msgid "Undo"
 msgstr "Vrátit"
 
-#: ../interfaces/utility.py:192
+#: TinyMCE/interfaces/utility.py:192
 msgid "Unlink"
 msgstr "Zrušit odkaz"
 
-#: ../interfaces/utility.py:164
+#: TinyMCE/interfaces/utility.py:164
 msgid "Unordered list"
 msgstr "Nečíslovaný seznam"
 
 #. Default: "Up one level"
-#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:52
-#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:68
+#: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:51
+#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:68
 msgid "Up one level"
 msgstr "Nahoru o jednu úroveň"
 
 #. Default: "Upload"
-#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:129
-#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:165
+#: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:128
+#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:165
 msgid "Upload"
 msgstr "Nahrát"
 
 #. Default: "Upload file"
-#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:55
-#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:71
+#: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:54
+#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:71
 msgid "Upload file"
 msgstr "Nahrát soubor"
 
@@ -664,15 +668,15 @@ msgstr "Velké A,B,C,..."
 msgid "Upper Roman"
 msgstr "Velké římské"
 
-#: ../interfaces/utility.py:264
+#: TinyMCE/interfaces/utility.py:264
 msgid "Visual control characters on/off"
 msgstr "Zapnout/vypnout řídící znaky"
 
-#: ../interfaces/utility.py:302
+#: TinyMCE/interfaces/utility.py:302
 msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
 msgstr "Je-li povoleno, uživatel nebude moci při výběru odkazovaných položek opustit aktuální složku a její podsložky."
 
-#: ../interfaces/utility.py:32
+#: TinyMCE/interfaces/utility.py:32
 msgid "Writing direction"
 msgstr "Směr psaní"
 
