@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2010-08-20 21:16+0000\n"
-"PO-Revision-Date: 2010-03-25 01:55+0900\n"
+"PO-Revision-Date: 2010-08-21 17:33+0900\n"
 "Last-Translator: Takeshi Yamamoto (Retsu) <tyam@mac.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: TinyMCE/utility.py:603
 msgid "(remove style)"
-msgstr ""
+msgstr "(スタイルを除去)"
 
 #: TinyMCE/interfaces/utility.py:152
 msgid "Align center"
@@ -67,14 +67,14 @@ msgid "Choose the Css used in Wysiwyg Editor Area"
 msgstr "WYSIWYGエディタ領域で使われるCSSを選ぶ"
 
 msgid "Circle"
-msgstr ""
+msgstr "○（白丸）"
 
 #: TinyMCE/interfaces/utility.py:256
 msgid "Cleanup messy code"
 msgstr "乱雑なコードを整頓する"
 
 msgid "Clear floats"
-msgstr "フロートを解除する"
+msgstr "フロートを解除"
 
 #: TinyMCE/interfaces/utility.py:311
 msgid "Contains Anchors"
@@ -107,14 +107,14 @@ msgid "Cut"
 msgstr "カット"
 
 msgid "Definition description"
-msgstr ""
+msgstr "定義説明"
 
 #: TinyMCE/interfaces/utility.py:172
 msgid "Definition list"
 msgstr "定義リスト"
 
 msgid "Definition term"
-msgstr ""
+msgstr "定義語"
 
 #. Default: "Description"
 #: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:122
@@ -128,7 +128,7 @@ msgid "Details"
 msgstr "詳細"
 
 msgid "Disc"
-msgstr ""
+msgstr "●（黒丸）"
 
 msgid "Discreet"
 msgstr "控え目"
@@ -152,7 +152,7 @@ msgstr "エディタ幅"
 
 #: TinyMCE/interfaces/utility.py:228
 msgid "Emotions"
-msgstr "感情"
+msgstr "表情アイコン"
 
 #: TinyMCE/interfaces/utility.py:17
 msgid "Enable auto resizing of the editor window."
@@ -241,13 +241,13 @@ msgstr "検索/置換"
 
 #: TinyMCE/interfaces/utility.py:140
 msgid "Forecolor"
-msgstr ""
+msgstr "文字色"
 
 msgid "Heading"
-msgstr ""
+msgstr "見出し"
 
 msgid "Heading cell"
-msgstr ""
+msgstr "見出しセル"
 
 msgid "Highlight"
 msgstr "ハイライト"
@@ -277,11 +277,11 @@ msgstr "インライン"
 
 #: TinyMCE/interfaces/utility.py:216
 msgid "Insert advanced horizontal ruler"
-msgstr "高度な縦定規を挿入する"
+msgstr "カスタム水平線を挿入する"
 
 #: TinyMCE/interfaces/utility.py:208
 msgid "Insert custom character"
-msgstr "カスタム文字を挿入する"
+msgstr "特殊文字を挿入する"
 
 #: TinyMCE/interfaces/utility.py:220
 msgid "Insert date"
@@ -289,15 +289,15 @@ msgstr "日付を挿入する"
 
 #: TinyMCE/interfaces/utility.py:212
 msgid "Insert horizontal ruler"
-msgstr "横定規を挿入する"
+msgstr "水平線を挿入する"
 
 #: TinyMCE/interfaces/utility.py:232
 msgid "Insert non-breaking space character"
-msgstr "非改行空白文字を挿入する"
+msgstr "改行なしスペースを挿入する"
 
 #: TinyMCE/interfaces/utility.py:236
 msgid "Insert page break"
-msgstr "改行を挿入する"
+msgstr "改ページを挿入する"
 
 #: TinyMCE/interfaces/utility.py:224
 msgid "Insert time"
@@ -369,7 +369,7 @@ msgstr "このサイトのオブジェクトへのリンクはユニークオブ
 
 #: TinyMCE/utility.py:610
 msgid "Lists"
-msgstr ""
+msgstr "リスト"
 
 msgid "Literal"
 msgstr "リテラル"
@@ -417,10 +417,10 @@ msgstr "順序つきリスト"
 
 #: TinyMCE/interfaces/utility.py:176
 msgid "Outdent"
-msgstr "アウトデント"
+msgstr "インデント解除"
 
 msgid "Page break (print only)"
-msgstr "改ページ（印刷時のみ有効）"
+msgstr "改ページ（印刷時有効）"
 
 #: TinyMCE/interfaces/utility.py:84
 msgid "Paste"
@@ -462,7 +462,7 @@ msgstr "再実行"
 
 #: TinyMCE/interfaces/utility.py:252
 msgid "Remove formatting"
-msgstr "書式を取り除く"
+msgstr "フォーマット解除"
 
 #: TinyMCE/browser/controlpanel.py:35
 msgid "Resource Types"
@@ -492,7 +492,7 @@ msgstr "スタイルを選ぶ"
 
 #: TinyMCE/utility.py:609
 msgid "Selection"
-msgstr ""
+msgstr "範囲選択"
 
 #: TinyMCE/browser/controlpanel.py:40
 msgid "Settings for the TinyMCE Wysiwyg editor."
@@ -503,25 +503,25 @@ msgid "Spellchecker"
 msgstr "スペルチェッカー"
 
 msgid "Square"
-msgstr ""
+msgstr "■（四角）"
 
 #: TinyMCE/interfaces/utility.py:128
 msgid "Strikethrough"
-msgstr ""
+msgstr "打ち消し線"
 
 #: TinyMCE/utility.py:606
 msgid "Style..."
-msgstr ""
+msgstr "スタイル..."
 
 #: TinyMCE/interfaces/utility.py:49
 msgid "Styles"
 msgstr "スタイル"
 
 msgid "Subdued grid"
-msgstr "おとなしい枠線"
+msgstr "落ち着いた感じの枠線"
 
 msgid "Subheading"
-msgstr ""
+msgstr "副見出し"
 
 #. Default: "Subject"
 #: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:124
@@ -550,7 +550,7 @@ msgstr ""
 
 #: TinyMCE/utility.py:607
 msgid "Text"
-msgstr ""
+msgstr "テキスト"
 
 #: TinyMCE/interfaces/utility.py:332
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
@@ -562,7 +562,7 @@ msgstr "このオプションは外部ツールバーを有効にします。外
 
 #: TinyMCE/interfaces/utility.py:45
 msgid "This option enables you to specify a custom CSS file that replaces the theme content CSS. This CSS file is the one used within the editor (the editable area)."
-msgstr ""
+msgstr "エディタ領域に通常と違うスタイルを使いたい場合、以下にCSSファイル名を指定してください。このCSSファイルはエディタ（編集領域）の中でのみ有効です。"
 
 #: TinyMCE/interfaces/utility.py:18
 msgid "This option gives you the ability to enable/disable auto resizing the editor window depending on the content."
@@ -678,5 +678,5 @@ msgstr ""
 
 #: TinyMCE/interfaces/utility.py:32
 msgid "Writing direction"
-msgstr ""
+msgstr "書く方向"
 
