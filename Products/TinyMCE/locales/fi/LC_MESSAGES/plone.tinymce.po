@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plone.tinymce\n"
 "POT-Creation-Date: 2010-08-20 21:16+0000\n"
-"PO-Revision-Date: 2010-05-17 11:46+0200\n"
+"PO-Revision-Date: 2010-08-29 14:07+0200\n"
 "Last-Translator: Jukka Ojaniemi <jukka.ojaniemi@jyu.fi>\n"
 "Language-Team: JYU <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -70,13 +70,12 @@ msgid "Choose the Css used in Wysiwyg Editor Area"
 msgstr "Valitse Wysiwyg editorissa käytettävä Css"
 
 msgid "Circle"
-msgstr ""
+msgstr "Ympyrä"
 
 #: TinyMCE/interfaces/utility.py:256
 msgid "Cleanup messy code"
 msgstr "Siivoa koodi"
 
-#, fuzzy
 msgid "Clear floats"
 msgstr "Poista asemoinnit"
 
@@ -111,14 +110,14 @@ msgid "Cut"
 msgstr "Leikkaa"
 
 msgid "Definition description"
-msgstr ""
+msgstr "Määriteltävän termin kuvaus"
 
 #: TinyMCE/interfaces/utility.py:172
 msgid "Definition list"
 msgstr "Määritelmä lista"
 
 msgid "Definition term"
-msgstr ""
+msgstr "Määriteltävä termi"
 
 #. Default: "Description"
 #: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:122
@@ -132,7 +131,7 @@ msgid "Details"
 msgstr "Lisätietoja"
 
 msgid "Disc"
-msgstr ""
+msgstr "Pallo"
 
 msgid "Discreet"
 msgstr "Hillitty"
@@ -373,16 +372,16 @@ msgstr "Linkit sivuston objekteihin voivat käyttää uniikkeja tunnisteista, jo
 
 #: TinyMCE/utility.py:610
 msgid "Lists"
-msgstr ""
+msgstr "Listat"
 
 msgid "Literal"
 msgstr "Kirjaimellinen"
 
 msgid "Lower Alpha"
-msgstr ""
+msgstr "Pienet aakkoset"
 
 msgid "Lower Roman"
-msgstr ""
+msgstr "Pienet roomalaiset numerot"
 
 #. Default: "Mail"
 #: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:46
@@ -406,7 +405,7 @@ msgid "Normal paragraph"
 msgstr "Normaali kappale"
 
 msgid "Numbers"
-msgstr ""
+msgstr "Numerot"
 
 #: TinyMCE/interfaces/utility.py:334
 msgid "Numeric"
@@ -507,7 +506,7 @@ msgid "Spellchecker"
 msgstr "Oikeinkirjoituksen tarkistus"
 
 msgid "Square"
-msgstr ""
+msgstr "Neliö"
 
 #: TinyMCE/interfaces/utility.py:128
 msgid "Strikethrough"
@@ -566,7 +565,7 @@ msgstr "Tämä valinta näyttää ulkoisen työkalupalkin, joka sijoittu sivun y
 
 #: TinyMCE/interfaces/utility.py:45
 msgid "This option enables you to specify a custom CSS file that replaces the theme content CSS. This CSS file is the one used within the editor (the editable area)."
-msgstr ""
+msgstr "Tämä kohta mahdollistaa teeman CSS-tiedoston korvaamisen omalla muokatulla versiolla. Tätä CSS-tiedostoa käytetään editorin sisällä (muokattavalla alueella)."
 
 #: TinyMCE/interfaces/utility.py:18
 msgid "This option gives you the ability to enable/disable auto resizing the editor window depending on the content."
@@ -667,10 +666,10 @@ msgid "Upload file"
 msgstr "Lähetä tiedosto"
 
 msgid "Upper Alpha"
-msgstr ""
+msgstr "Isot aakkoset"
 
 msgid "Upper Roman"
-msgstr ""
+msgstr "Isot roomalaiset numerot"
 
 #: TinyMCE/interfaces/utility.py:264
 msgid "Visual control characters on/off"
