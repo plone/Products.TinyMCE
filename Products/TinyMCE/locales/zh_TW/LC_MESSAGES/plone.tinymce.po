@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TinyMCE\n"
 "POT-Creation-Date: 2010-08-20 21:16+0000\n"
-"PO-Revision-Date: 2010-08-30 23:03+0800\n"
+"PO-Revision-Date: 2010-09-03 18:03+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 
 #: TinyMCE/utility.py:603
 msgid "(remove style)"
-msgstr "(remove style)"
+msgstr "(清除格式)"
 
 #: TinyMCE/interfaces/utility.py:152
 msgid "Align center"
@@ -243,13 +243,13 @@ msgid "Forecolor"
 msgstr "前景顏色"
 
 msgid "Heading"
-msgstr "標頭"
+msgstr "標題"
 
 msgid "Heading cell"
 msgstr ""
 
 msgid "Highlight"
-msgstr ""
+msgstr "高亮度"
 
 #. Default: "Home"
 #: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:25
@@ -371,7 +371,7 @@ msgid "Lists"
 msgstr ""
 
 msgid "Literal"
-msgstr "Literal"
+msgstr ""
 
 msgid "Lower Alpha"
 msgstr ""
@@ -398,7 +398,7 @@ msgstr ""
 
 #: TinyMCE/utility.py:604
 msgid "Normal paragraph"
-msgstr "一般段落"
+msgstr "一般段落文字"
 
 msgid "Numbers"
 msgstr "數字"
@@ -419,7 +419,7 @@ msgid "Outdent"
 msgstr ""
 
 msgid "Page break (print only)"
-msgstr ""
+msgstr "設定分頁 (印列專用)"
 
 #: TinyMCE/interfaces/utility.py:84
 msgid "Paste"
@@ -491,7 +491,7 @@ msgstr "選擇樣式"
 
 #: TinyMCE/utility.py:609
 msgid "Selection"
-msgstr ""
+msgstr "選取"
 
 #: TinyMCE/browser/controlpanel.py:40
 msgid "Settings for the TinyMCE Wysiwyg editor."
@@ -510,7 +510,7 @@ msgstr ""
 
 #: TinyMCE/utility.py:606
 msgid "Style..."
-msgstr "Style..."
+msgstr "樣式..."
 
 #: TinyMCE/interfaces/utility.py:49
 msgid "Styles"
@@ -520,7 +520,7 @@ msgid "Subdued grid"
 msgstr ""
 
 msgid "Subheading"
-msgstr ""
+msgstr "子標題"
 
 #. Default: "Subject"
 #: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:124
@@ -549,7 +549,7 @@ msgstr ""
 
 #: TinyMCE/utility.py:607
 msgid "Text"
-msgstr "Text"
+msgstr "文字"
 
 #: TinyMCE/interfaces/utility.py:332
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
