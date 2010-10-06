@@ -29,6 +29,7 @@ else:
 
 if not brain:
     hook = getattr(context, 'kupu_resolveuid_hook', None)
+    obj = None
     if hook:
         obj = hook(uuid)
     if not obj:
