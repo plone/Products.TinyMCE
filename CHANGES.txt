@@ -5,8 +5,13 @@ HISTORY
 1.1.5 (unreleased)
 ------------------
 
+- Removed profiles/uninstall/portal-tinymce.txt as it needlessly
+  triggered a call to add_editor right before calling remove_editor.
+  [maurits]
+
 1.1.4 (2010-09-28)
 ------------------
+
 - Updated translations (zh_TW)
   [Plone translators]
 
