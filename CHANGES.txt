@@ -5,6 +5,12 @@ HISTORY
 1.1.5 (unreleased)
 ------------------
 
+- Updated translations (de)
+  [Plone translators]
+
+- Make sure we fail gracefully on unfound UIDs when kupu isn't installed.
+  [jbaldivieso]
+
 - Removed profiles/uninstall/portal-tinymce.txt as it needlessly
   triggered a call to add_editor right before calling remove_editor.
   [maurits]
