@@ -3,7 +3,13 @@ HISTORY
 =======
 
 1.1.6 (unreleased)
+------------------
 
+- Protect the control panel using the "Plone Site Setup: TinyMCE" permission,
+  instead of the generic "Manage portal". Also, add the Site Administrator
+  role to the default roles for this permission, for forward compatibility with
+  Plone 4.1.
+  [davisagli]
 
 1.1.5 (2010-11-14)
 ------------------

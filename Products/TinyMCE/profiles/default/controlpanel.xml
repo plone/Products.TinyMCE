@@ -9,6 +9,6 @@
         url_expr="string:${portal_url}/portal_tinymce/@@tinymce-controlpanel"
         visible="True"
         i18n:attributes="title">
-        <permission>Manage portal</permission>
+        <permission>Plone Site Setup: TinyMCE</permission>
     </configlet>
 </object>

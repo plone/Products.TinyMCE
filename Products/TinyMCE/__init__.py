@@ -1,4 +1,5 @@
 from Products.CMFCore.DirectoryView import registerDirectory
+from Products.CMFCore.permissions import setDefaultRoles
 from Products.TinyMCE.utility import TinyMCE
 
 global tinymce_globals
@@ -9,6 +10,8 @@ PROJECTNAME = "TinyMCE"
 tools = (
     TinyMCE,
     )
+
+setDefaultRoles('Plone Site Setup: TinyMCE', ('Manager', 'Site Administrator'))
 
 def initialize(context):
     registerDirectory('skins', tinymce_globals)
