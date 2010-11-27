@@ -7,7 +7,7 @@
         for="..interfaces.utility.ITinyMCE"
         name="tinymce-controlpanel"
         class=".controlpanel.TinyMCEControlPanelForm"
-        permission="cmf.ManagePortal"
+        permission="plone.app.controlpanel.TinyMCE"
         />
 
     <browser:page
