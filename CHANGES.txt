@@ -5,6 +5,10 @@ HISTORY
 1.1.6 (unreleased)
 ------------------
 
+- Fix capitalization of the title of the content_css setting. This fixes
+  http://dev.plone.org/plone/ticket/10792.
+  [dariog, davisagli]
+
 - Protect the control panel using the "Plone Site Setup: TinyMCE" permission,
   instead of the generic "Manage portal". Also, add the Site Administrator
   role to the default roles for this permission, for forward compatibility with
