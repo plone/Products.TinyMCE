@@ -82,6 +82,12 @@ class TinyMCEBrowserView(BrowserView):
         context = aq_inner(self.context)
         object = IJSONDetails(self.context)
         return object.getDetails()
-    
-    
+
+    def jsonConfiguration(self, fieldname):
+        """Return the configuration in JSON"""
+        utility = getUtility(ITinyMCE)
+        return utility.getConfiguration(context=self.context,
+                                        field=fieldname,
+                                        request=self.request)
+
         

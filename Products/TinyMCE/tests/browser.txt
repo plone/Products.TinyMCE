@@ -156,3 +156,10 @@ upload
 ------
 
 TODO
+
+configuration
+-------------
+
+    >>> browser.open('http://nohost/plone/document/@@tinymce-jsonconfiguration?fieldname=text')
+    >>> browser.contents
+    '...buttons...'
