@@ -23,3 +23,6 @@ class ITinyMCEBrowserView(Interface):
 
     def jsonDetails(self):
         """Returns the details of an object in JSON"""
+
+    def jsonConfiguration(self):
+        """Return configuration for the editor in JSON"""

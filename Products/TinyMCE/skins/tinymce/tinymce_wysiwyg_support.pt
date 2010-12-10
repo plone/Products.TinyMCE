@@ -6,6 +6,8 @@
   <tal:block define="field field|nothing;
                      fname fieldName|inputname|nothing;
                      fformat python:here.portal_tinymce.getContentType(object=here, fieldname=fname);
+                     configuration_method nocall:here/tinymce-jsonconfiguration;
+                     configuration_json python:configuration_method(fieldname=field);
                      element_id id|inputname;">
   <textarea cols="80"
             rows="25"
@@ -17,7 +19,7 @@
                             onblur onblur|nothing;
                             rows rows|default;
                             cols cols|default;
-                            title python:here.portal_tinymce.getConfiguration (context=context, field=field, request=request);
+                            title configuration_json;
                             class string:mce_editable"></textarea>
 
   <script type="text/javascript"
