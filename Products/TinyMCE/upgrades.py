@@ -1,6 +1,8 @@
 from zope.component import getUtility
+from zope.app.component.hooks import getSite
 from Products.TinyMCE.interfaces.utility import ITinyMCE
-from Products.CMFCore.utils import getToolByName
+from Products.TinyMCE.setuphandlers import uninstall_mimetype_and_transforms
+from plone.outputfilters.setuphandlers import install_mimetype_and_transforms
 
 def meta_types_to_portal_types(meta_types):
     """Convert meta types to portal types"""
@@ -48,3 +50,8 @@ def upgrade_10_to_11(setuptool):
         del tinymce.autoresize_bottom_margin
     except:
         pass
+
+def upgrade_11_to_2(setuptool):
+    site = getSite()
+    uninstall_mimetype_and_transforms(site)
+    install_mimetype_and_transforms(site)

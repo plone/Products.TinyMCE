@@ -34,5 +34,6 @@ setup(name='Products.TinyMCE',
       install_requires=[
           'setuptools',
           'elementtree',
+          'plone.outputfilters',
       ] + requires,
       )

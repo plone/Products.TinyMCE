@@ -42,7 +42,8 @@
         for="*"
         class=".browser.TinyMCEBrowserView"
         permission="cmf.ModifyPortalContent">
-        <browser:page attribute="save" name="tinymce-save" /> 
+        <browser:page attribute="save" name="tinymce-save" />
+        <browser:page attribute="setDescription" name="tinymce-setDescription" />
     </browser:pages>
 
     <browser:pages

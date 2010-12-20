@@ -1,6 +1,6 @@
 from zope.interface import implements
 from zope.schema.fieldproperty import FieldProperty
-from zope.component import getUtility
+from zope.component import getUtility, queryUtility
 from zope.interface import classProvides
 from AccessControl import ClassSecurityInfo
 from Acquisition import aq_base
@@ -11,6 +11,8 @@ from Products.Archetypes.Field import ImageField
 from Products.CMFCore.utils import getToolByName
 from Products.CMFCore.interfaces._content import IFolderish
 from plone.app.layout.navigation.root import getNavigationRootObject
+from plone.outputfilters.filters.resolveuid_and_caption import IImageCaptioningEnabler
+from plone.outputfilters.filters.resolveuid_and_caption import IResolveUidsEnabler
 from Products.CMFCore.interfaces import ISiteRoot
 try:
     import json
@@ -771,3 +773,25 @@ class TinyMCE(SimpleItem):
             results['document_url'] = results['portal_url']
 
         return json.dumps(results)
+
+
+class ImageCaptioningEnabler(object):
+    implements(IImageCaptioningEnabler)
+    
+    @property
+    def available(self):
+        tinymce = queryUtility(ITinyMCE)
+        if tinymce is not None:
+            return tinymce.allow_captioned_images
+        return False
+
+
+class ResolveUidsEnabler(object):
+    implements(IResolveUidsEnabler)
+
+    @property
+    def available(self):
+        tinymce = queryUtility(ITinyMCE)
+        if tinymce is not None:
+            return tinymce.link_using_uids
+        return False

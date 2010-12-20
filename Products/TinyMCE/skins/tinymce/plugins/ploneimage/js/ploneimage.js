@@ -48,7 +48,6 @@ var ImageDialog = {
                     href = href_array.join ('/');
                 }
             }
-            var alt = dom.getAttrib(n, 'alt');
             var classnames = dom.getAttrib(n, 'class').split(' ');
             var classname = "";
             for (var i = 0; i < classnames.length; i++) {
@@ -64,7 +63,6 @@ var ImageDialog = {
                     ImageDialog.current_class = classnames[i];
                 }
             }
-            nl0.alt.value = alt;
             selectByValue(f0, 'classes', classname, true);
             nl2.insert.value = ed.getLang('update');
 
@@ -76,7 +74,11 @@ var ImageDialog = {
                     type : 'GET',
                     success : function(text) {
                         ImageDialog.current_url = ImageDialog.getAbsoluteUrl(tinyMCEPopup.editor.settings.document_base_url, text);
-                        ImageDialog.current_link = href;
+                        if (tinyMCEPopup.editor.settings.link_using_uids) {
+                            ImageDialog.current_link = href;
+                        } else {
+                            ImageDialog.current_link = ImageDialog.current_url;
+                        }
                         ImageDialog.getFolderListing(ImageDialog.getParentUrl(ImageDialog.current_url), 'tinymce-jsonimagefolderlisting');
                     }
                 });
@@ -132,7 +134,6 @@ var ImageDialog = {
         }
         args = {
             src : href,
-            alt : nl0.alt.value,
             'class' : this.getSelectValue(f0, 'classes') +
                 ((ed.settings.allow_captioned_images && f0.elements['caption'].checked) ? ' captioned' : '') +
                 (ImageDialog.current_class == '' ? '' : ' ' + ImageDialog.current_class)
@@ -148,6 +149,12 @@ var ImageDialog = {
             ed.dom.setAttrib('__mce_tmp', 'id','');
             ed.undoManager.add();
         }
+
+        var description = nl0.description.value;
+        tinymce.util.XHR.send({
+            url : href + '/tinymce-setDescription?description=' + description,
+            type : 'POST'
+        });
 
         tinyMCEPopup.close();
     },
@@ -394,7 +401,7 @@ var ImageDialog = {
                 } else {
                     document.getElementById ('previewimagecontainer').innerHTML = '<img src="' + data.thumb + '" border="0" />';
                 }
-                document.getElementById ('alt').value = (data.description) ? data.description : data.title ;
+                document.getElementById('description').value = data.description;
                 if (data.scales) {
                     var dimensions = document.getElementById('dimensions');
                     var newdimensions = [];
@@ -438,6 +445,9 @@ var ImageDialog = {
                     html = labels['label_no_items'];
                 } else {
                     for (var i = 0; i < data.items.length; i++) {
+                        if (data.items[i].url == ImageDialog.current_link && tinyMCEPopup.editor.settings.link_using_uids) {
+                            ImageDialog.current_link = 'resolveuid/' + data.items[i].uid;
+                        }
                         html += '<div class="' + (i % 2 == 0 ? 'even' : 'odd') + '">';
                         if (data.items[i].is_folderish) {
                             if (data.items[i].icon.length) {

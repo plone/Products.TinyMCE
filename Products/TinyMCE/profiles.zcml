@@ -36,6 +36,15 @@
         sortkey="10"
         profile="Products.TinyMCE:TinyMCE" />
 
+    <genericsetup:upgradeStep
+        title="Install plone.outputfilters"
+        description="This replaces the old TinyMCE-specific resolveuid and captioning transform."
+        source="1.1"
+        destination="2"
+        handler=".upgrades.upgrade_11_to_2"
+        profile="Products.TinyMCE:TinyMCE"
+        />
+
     <genericsetup:importStep
         name="tinymce_various"
         title="TinyMCE plug-in installation"

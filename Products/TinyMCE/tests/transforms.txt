@@ -2,167 +2,73 @@
 An integration doctest
 ======================
 
-Test the transforms that are included with the Products.TinyMCE package
+Tests integration with plone.outputfilters, which provides 2 filters that are
+applied while rendering rich text:
 
-Let's get the portal object
+ * Resolving UID links to absolute URIs.
+ * Adding captions to images with the "captioned" CSS class.
 
-    >>> self.portal
-    <PloneSite at ...>
+These filters used to be implemented in Products.TinyMCE, so for backwards
+compatibility they can be enabled via settings in the TinyMCE control panel.
 
-And login
+Let's turn these filters on first.
 
-    >>> self.loginAsPortalOwner()
+  >>> from zope.component import getUtility
+  >>> from Products.TinyMCE.interfaces.utility import ITinyMCE
+  >>> tinymce_utility = getUtility(ITinyMCE)
+  >>> tinymce_utility.link_using_uids = True
+  >>> tinymce_utility.allow_captioned_images = True
 
-Ok, that works, let's get the transformation tool
+To test the settings, we'll need an image.
 
-    >>> from zope.component import getUtility
-    >>> from Products.PortalTransforms.interfaces import IPortalTransformsTool
-    >>> transform_utility = getUtility(IPortalTransformsTool)
+  >>> self.loginAsPortalOwner()
+  >>> from Products.CMFPlone.tests import dummy
+  >>> self.portal.invokeFactory('Image', id='image.jpg', title="Image", file=dummy.Image())
+  'image.jpg'
+  >>> image = getattr(self.portal, 'image.jpg')
+  >>> image.setDescription('My caption')
+  >>> image.reindexObject()
+  >>> UID = image.UID()
 
-Test if TinyMCE is there
+Let's transform some text/html to text/x-html-safe, which should trigger the
+filters.
 
-    >>> from Products.TinyMCE.interfaces.utility import ITinyMCE
-    >>> tinymce_utility = getUtility(ITinyMCE)
+  >>> text = """<html>
+  ...             <head></head>
+  ...             <body>
+  ...                 <img src="resolveuid/%s/image_thumb" class="image-left captioned" width="200" alt="My alt text" />
+  ...                 <p><img src="/plone/image.jpg" class="image-right captioned" width="200" style="border-width:1px" /></p>
+  ...                 <pre>This is line 1
+  ...                       This is line 2</pre>
+  ...              </body>
+  ...            </html>""" % UID
+  >>> transformed_text = self.portal.portal_transforms.convertTo('text/x-html-safe', text, mimetype='text/html', context=self.portal)
 
-Test is the transforms can be instantiated by name.
+The UID reference should be converted to an absolute url, and a caption should be added.
 
-    >>> from Products.TinyMCE.transforms.html_to_tinymce_output_html import html_to_tinymce_output_html
-    >>> transform = html_to_tinymce_output_html(name='transform')
-    >>> transform.name()
-    'transform'
+  >>> print str(transformed_text)
+  <BLANKLINE>
+  <dl class="image-left captioned">
+  <dt><img src="http://nohost/plone/image.jpg/image_thumb" alt="My alt text" title="Image" height="16" width="200" /></dt>
+   <dd class="image-caption" style="width:200px;">My caption</dd>
+  </dl>
+  <BLANKLINE>
+  <p><dl class="image-right captioned">
+  <dt><img src="http://nohost/plone/image.jpg/image" alt="Image" title="Image" height="16" width="200" style="border-width:1px" /></dt>
+   <dd class="image-caption" style="width:200px;">My caption</dd>
+  </dl>
+  </p>
+  <pre>This is line 1
+        This is line 2</pre>
+  <BLANKLINE>
 
-And also check the other transform.
+Now turn off the settings.
 
-    >>> from Products.TinyMCE.transforms.tinymce_output_html_to_html import tinymce_output_html_to_html
-    >>> transform = tinymce_output_html_to_html(name='transform')
-    >>> transform.name()
-    'transform'
+  >>> tinymce_utility.link_using_uids = False
+  >>> tinymce_utility.allow_captioned_images = False
 
-Register text/x-tinymce-output-html mimetype and transformations for captioned images and UID's
+Now the filters should not be applied.
 
-    >>> from Products.TinyMCE.setuphandlers import install_mimetype_and_transforms
-    >>> install_mimetype_and_transforms(self.portal)
-
-Check if the transform policy is installed
-
-    >>> policies = [mimetype for (mimetype, required) in transform_utility.listPolicies() if mimetype == "text/x-html-safe"]
-    >>> print len(policies)
-    1
-
-Ok, we add a image to our instance and collect the UID
-
-    >>> from Products.CMFPlone.tests import dummy
-    >>> self.portal.invokeFactory('Image', id='image', title="Image", file=dummy.Image())
-    'image'
-    >>> image = getattr(self.portal, 'image')
-    >>> image.reindexObject()
-    >>> UID = image.UID()
-
-We test our SGML based parser first:
-
-    >>> text = """<html>
-    ...             <head></head>
-    ...             <body>
-    ...                 <img src="resolveuid/%s/image_thumb" class="image-left captioned" width="200" alt="My alt text" />
-    ...                 <p><img src="/plone/image.jpg" class="image-right captioned" width="200" style="border-width:1px" /></p>
-    ...              </body>
-    ...            </html>""" % UID
-    >>> from Products.TinyMCE.transforms.parser import TinyMCEOutput
-    >>> parser = TinyMCEOutput(context=self.portal)
-    >>> parser.feed(text)
-    >>> print parser.getResult()
-    <html...>
-    >>> parser.close()
-
-Test if it preserves newlines which should not be filtered out
-
-    >>> text = """<pre>This is line 1
-    ...                This is line 2</pre>"""
-    >>> from Products.TinyMCE.transforms.parser import TinyMCEOutput
-    >>> parser = TinyMCEOutput(context=self.portal)
-    >>> parser.feed(text)
-    >>> print parser.getResult().find('\n') != -1
-    True
-
-Test if it preserves CDATA sections, such as those TinyMCE puts into script
-tags. The standard SGMLParser has a bug that will remove these.
-
-    >>> text = """<p>hello</p>
-    ... <script type="text/javsacript">// <![CDATA[
-    ... alert(1);
-    ... // ]]></script>
-    ... <p>world</p>"""
-    >>> from Products.TinyMCE.transforms.parser import TinyMCEOutput
-    >>> parser = TinyMCEOutput(context=self.portal)
-    >>> parser.feed(text)
-    >>> print parser.getResult()
-    <p>hello</p>
-    <script type="text/javsacript">// <![CDATA[
-    alert(1);
-    // ]]></script>
-    <p>world</p>
-
-Let's get the html-to-tinymce-output-html transform and run it.
-
-    >>> text = """<html>
-    ...             <head></head>
-    ...             <body>
-    ...                 <img src="resolveuid/%s/image_thumb" class="image-left captioned" width="200" alt="My alt text" />
-    ...                 <p><img src="/plone/image.jpg" class="image-right captioned" width="200" style="border-width:1px" /></p>
-    ...                 <pre>This is line 1
-    ...                       This is line 2</pre>
-    ...              </body>
-    ...            </html>""" % UID
-    >>> transformed_text = transform_utility.convert(name="html_to_tinymce_output_html", orig=text, context=self.portal)
-
-The UID reference should be converted to an absolute url :
-
-    >>> str(transformed_text).find('<img src="http://nohost/plone/image/image_thumb" alt="My alt text" class="image-left captioned" width="200" />') != -1
-    True
-
-UID references to anchors are converted to an absolute url too:
-
-    >>> text = """<html>
-    ...             <head></head>
-    ...             <body>
-    ...               <a class="internal-link" href="resolveuid/%s">Some link</a>
-    ...               <a class="internal-link" href="resolveuid/%s#named-anchor">Some anchored link</a>
-    ...             </body>
-    ...           </html>""" % (UID, UID)
-    >>> transformed_text = transform_utility.convert(name="html_to_tinymce_output_html", orig=text, context=self.portal)
-    >>> 'href="http://nohost/plone/image"' in str(transformed_text)
-    True
-    >>> 'href="http://nohost/plone/image#named-anchor"' in str(transformed_text)
-    True
-
-Ensure this doesn't strip CDATA sections either.
-
-    >>> text = """<p>hello</p>
-    ... <script type="text/javsacript">// <![CDATA[
-    ... alert(1);
-    ... // ]]></script>
-    ... <p>world</p>"""
-    >>> transformed_text = transform_utility.convert(name="html_to_tinymce_output_html", orig=text, context=self.portal)
-    >>> print transformed_text
-    <p>hello</p>
-    <script type="text/javsacript">// <![CDATA[
-    alert(1);
-    // ]]></script>
-    <p>world</p>
-
-If that works, let's uninstall the whole bunch again
-
-    >>> from Products.TinyMCE.setuphandlers import uninstall_mimetype_and_transforms
-    >>> uninstall_mimetype_and_transforms(self.portal)
-
-Check if the transform policy is uninstalled after this
-
-    >>> policies = [mimetype for (mimetype, required) in transform_utility.listPolicies() if mimetype == "text/x-html-safe"]
-    >>> print len(policies)
-    0
-
-Let's uninstall it again, it should check if the transforms, mimetype and policy exist
-
-    >>> from Products.TinyMCE.setuphandlers import uninstall_mimetype_and_transforms
-    >>> uninstall_mimetype_and_transforms(self.portal)
-
+  >>> transformed_text_2 = self.portal.portal_transforms.convertTo('text/x-html-safe', text, mimetype='text/html', context=self.portal)
+  >>> str(transformed_text_2) == str(transformed_text)
+  False

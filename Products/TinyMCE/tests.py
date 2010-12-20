@@ -17,7 +17,8 @@ def setup_product():
     import Products.TinyMCE
     zcml.load_config('configure.zcml', Products.TinyMCE)
     fiveconfigure.debug_mode = False
-    
+
+ztc.installProduct('TinyMCE')
 setup_product()
 ptc.setupPloneSite(products=['Products.TinyMCE'])
 
