@@ -1,15 +1,12 @@
 from zope.interface import implements
-from zope.component import adapts
 from Products.CMFCore.utils import getToolByName
-from Products.PythonScripts.standard import html_quote, newline_to_br
 
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from zope.component import getUtility
 from Products.TinyMCE.adapters.interfaces.Upload import IUpload
-from Products.CMFCore.interfaces._content import IContentish, IFolderish
-from Products.CMFPlone.interfaces.siteroot import IPloneSiteRoot
-from Products.CMFPlone import utils
+from Products.CMFCore.interfaces._content import IFolderish
 from Acquisition import aq_inner
+from plone.outputfilters.browser.resolveuid import uuidFor
 
 TEMPLATE = """
 <html>
@@ -130,5 +127,8 @@ class Upload(object):
 
         utility = getUtility(ITinyMCE)
         if utility.link_using_uids:
-            return self.okMessage("resolveuid/%s" % (obj.UID()))
+            return self.okMessage("resolveuid/%s" % (uuidFor(obj)))
         return self.okMessage("%s" % (obj.absolute_url()))
+
+    def setDescription(self, description):
+        self.context.setDescription(description)

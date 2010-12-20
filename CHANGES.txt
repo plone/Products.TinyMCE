@@ -2,8 +2,32 @@
 HISTORY
 =======
 
-1.1.6 (unreleased)
+1.2.0 (unreleased)
 ------------------
+
+- Always use an image's description as its caption, and make the image dialog
+  edit the description field instead of the image's alt text. This provides
+  parity with how captions were handled by kupu, and avoids misusing the alt
+  text.
+  [davisagli]
+
+- When editing an image, correctly highlight it in the image dialog even if
+  the link-by-uid setting changed since the image was added. This fixes
+  http://dev.plone.org/plone/ticket/10970.
+  [davisagli]
+
+- Remove the resolveuid Python script; a browser view with the same name in
+  plone.outputfilters is now used instead to resolve UUIDs.
+  [davisagli]
+
+- Deprecated various helpers in plone.outputfilters.setuphandlers since they
+  now duplicate functions in plone.outputfilters.
+  [davisagli]
+
+- Use the resolveuid and captioning transforms from plone.outputfilters
+  instead of implementing our own. See http://dev.plone.org/plone/ticket/9938
+  for details.
+  [davisagli]
 
 - Fix capitalization of the title of the content_css setting. This fixes
   http://dev.plone.org/plone/ticket/10792.

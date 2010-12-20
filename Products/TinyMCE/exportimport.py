@@ -1,16 +1,8 @@
-from zope.schema import getFieldsInOrder
-from zope.schema.interfaces import IText, IBool, ITextLine
-
 from Products.GenericSetup.utils import exportObjects
 from Products.GenericSetup.utils import importObjects
 from Products.GenericSetup.utils import XMLAdapterBase
 
 from Products.CMFCore.utils import getToolByName
-
-from Products.TinyMCE.interfaces.utility import ITinyMCELayout
-from Products.TinyMCE.interfaces.utility import ITinyMCEToolbar
-from Products.TinyMCE.interfaces.utility import ITinyMCEResourceTypes
-from Products.TinyMCE.setuphandlers import install_mimetype_and_transforms, uninstall_mimetype_and_transforms
 
 class TinyMCESettingsXMLAdapter(XMLAdapterBase):
 
@@ -164,12 +156,6 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
                                         items.append(element.getAttribute('value'))
                             string = '\n'.join(items)
                             setattr(self.context, fieldnode.nodeName, string.decode())
-        if self.context.link_using_uids or self.context.allow_captioned_images:
-            # We need to register our mimetype and transforms for uid links and captioned_images
-            install_mimetype_and_transforms(self.context)
-        else:
-            # Unregister them if they exist
-            uninstall_mimetype_and_transforms(self.context)
         self._logger.info('TinyMCE Settings imported.')
 
     def _purgeAttributes(self):
@@ -181,7 +167,6 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
 
             # Loop through fields in category
             for field in category.keys():
-                fieldvalue = getattr(self.context, field)
                 setattr(self.context, field, category[field]['default'])
 
 def importTinyMCESettings(context):

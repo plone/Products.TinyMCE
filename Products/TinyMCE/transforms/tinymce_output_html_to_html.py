@@ -1,4 +1,5 @@
-from Products.CMFPlone.utils import log
+# BBB
+
 from zope.interface import implements
 
 try:

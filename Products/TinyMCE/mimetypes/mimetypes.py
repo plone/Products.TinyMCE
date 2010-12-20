@@ -1,3 +1,5 @@
+# BBB
+
 from Products.MimetypesRegistry.interfaces import IClassifier
 from Products.MimetypesRegistry.MimeTypeItem import MimeTypeItem
 from Products.MimetypesRegistry.common import MimeTypeException

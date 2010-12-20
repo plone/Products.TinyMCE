@@ -66,9 +66,9 @@
           </div>
 
           <div class="field">
-            <label id="altlabel" for="alt" i18n:translate="ploneimage_dlg_alt"></label>
+            <label id="descriptionlabel" for="description" i18n:translate="ploneimage_dlg_alt"></label>
             <div class="widget">
-              <input id="alt" name="alt" type="text" value="" size="20" />
+              <input id="description" name="description" type="text" value="" size="20" />
             </div>
           </div>
 

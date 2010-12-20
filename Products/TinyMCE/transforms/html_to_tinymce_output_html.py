@@ -1,7 +1,8 @@
+# BBB
+
+from zope.component import getAdapters
 from zope.interface import implements
-from zope.component import getUtility
-from Products.TinyMCE.interfaces.utility import ITinyMCE
-from Products.TinyMCE.transforms.parser import TinyMCEOutput
+from zope.app.component.hooks import getSite
 
 try:
     try:
@@ -12,10 +13,8 @@ except ImportError:
     ITransform = None
 from Products.PortalTransforms.interfaces import itransform
 
-try:
-    from xml.etree import ElementTree
-except ImportError:
-    from elementtree import ElementTree
+from plone.outputfilters.interfaces import IFilter
+from plone.outputfilters import apply_filters
 
 
 class html_to_tinymce_output_html:
@@ -38,18 +37,13 @@ class html_to_tinymce_output_html:
         return self.__name__
 
     def convert(self, orig, data, **kwargs):
-        """converts captioned images, and convert uid's to real path's"""
-        # Get the context first, if None, return the original text
+        """apply plone.outputfilters filters"""
         context = kwargs.get('context')
-        if not context is None:
-            # Call the parser and transform the links and images if necessary
-            tinymce_utility = getUtility(ITinyMCE)
-            parser = TinyMCEOutput(context=context, captioned_images=tinymce_utility.allow_captioned_images)
-            parser.feed(orig)
-            parser.close()
-            data.setData(parser.getResult())
-        else:
-            data.setData(orig)
+        request = getattr(getSite(), 'REQUEST', None)
+        filters = [f for _, f in getAdapters((context, request), IFilter)]
+        
+        res = apply_filters(filters, orig)
+        data.setData(res)
         return data
 
 # This needs to be here to avoid breaking existing instances

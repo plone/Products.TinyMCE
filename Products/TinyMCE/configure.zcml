@@ -10,6 +10,8 @@
     title="Plone Site Setup: TinyMCE"
     />
 
+  <include package="plone.outputfilters"/>
+
   <include package=".browser" />
   <include package=".adapters" />
   <include file="profiles.zcml" />
@@ -20,6 +22,9 @@
       for=".interfaces.utility.ITinyMCE
            Products.GenericSetup.interfaces.ISetupEnviron"
       />
+
+  <utility factory=".utility.ImageCaptioningEnabler" name="tinymce"/>
+  <utility factory=".utility.ResolveUidsEnabler" name="tinymce"/>
 
   <i18n:registerTranslations directory="locales"/>
 
