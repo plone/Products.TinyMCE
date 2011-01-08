@@ -32,7 +32,11 @@ class ITinyMCELayout(Interface):
         title=_(u"Writing direction"),
         description=_(u"This option specifies the default writing direction, some languages (Like Hebrew, Arabic, Urdu...) write from right to left instead of left to right."),
         missing_value=set(),
-        vocabulary=SimpleVocabulary([SimpleTerm('ltr', 'ltr', _(u"Left to right")), SimpleTerm('rtl', 'rtl', _(u"Right to left"))]),
+        vocabulary=SimpleVocabulary([
+            SimpleTerm('auto', 'auto',
+                       _(u'Auto detect from content language')),
+            SimpleTerm('ltr', 'ltr', _(u"Left to right")),
+            SimpleTerm('rtl', 'rtl', _(u"Right to left"))]),
         required=False)
 
     contextmenu = schema.Bool(

@@ -127,6 +127,27 @@ TODO
 configuration
 -------------
 
-    >>> browser.open('http://nohost/plone/document/@@tinymce-jsonconfiguration?fieldname=text')
+    >>> document_jsonconfig_url = ('http://nohost/plone/document/'
+    ...                   '@@tinymce-jsonconfiguration?fieldname=text')
+    >>> browser.open(document_jsonconfig_url)
     >>> browser.contents
     '...buttons...'
+
+If we configure directivity to 'auto', the directivity is set depending
+on the content language.
+
+    >>> from Products.TinyMCE.utility import form_adapter
+    >>> utility = form_adapter(portal)
+    >>> utility.directionality = 'auto'
+    >>> doc = portal[document]
+    >>> doc.Language()
+    'en'
+    >>> browser.open(document_jsonconfig_url)
+    >>> browser.contents
+    '..."directionality": "ltr"...'
+    >>> doc.setLanguage('ar')
+    >>> browser.open(document_jsonconfig_url)
+    >>> browser.contents
+    '..."directionality": "rtl"...'
+
+
