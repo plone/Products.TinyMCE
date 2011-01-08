@@ -10,10 +10,12 @@ from Products.Archetypes.interfaces.field import IImageField
 from Products.Archetypes.Field import ImageField
 from Products.CMFCore.utils import getToolByName
 from Products.CMFCore.interfaces._content import IFolderish
+from plone.app.layout.globals.portal import RIGHT_TO_LEFT
 from plone.app.layout.navigation.root import getNavigationRootObject
 from plone.outputfilters.filters.resolveuid_and_caption import IImageCaptioningEnabler
 from plone.outputfilters.filters.resolveuid_and_caption import IResolveUidsEnabler
 from Products.CMFCore.interfaces import ISiteRoot
+from Products.CMFCore.utils import getToolByName
 try:
     import json
 except:
@@ -700,7 +702,18 @@ class TinyMCE(SimpleItem):
         except:
             results['toolbar_width'] = 440
 
-        results['directionality'] = self.directionality
+        if self.directionality == 'auto':
+            language = context.Language()
+            if not language:
+                portal_properties = getToolByName(context, "portal_properties")
+                site_properties = portal_properties.site_properties
+                language = site_properties.getProperty('default_language',
+                                                       None)
+            directionality = (language[:2] in RIGHT_TO_LEFT) and 'rtl' or 'ltr'
+        else:
+            directionality = self.directionality
+        results['directionality'] = directionality
+
         if self.contextmenu:
             results['contextmenu'] = True
         else:
