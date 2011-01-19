@@ -81,7 +81,7 @@ class JSONFolderListing(object):
         for brain in portal_catalog(portal_type=filter_portal_types, sort_on='getObjPositionInParent', path={'query': path, 'depth':1}):
             catalog_results.append({
                 'id': brain.getId,
-                'uid': brain.UID,
+                'uid': brain.UID or None, # Maybe Missing.Value
                 'url': brain.getURL(),
                 'portal_type': brain.portal_type,
                 'normalized_type': normalizer.normalize(brain.portal_type),
