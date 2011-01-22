@@ -2,7 +2,14 @@
 HISTORY
 =======
 
-1.1.6 (unreleased)
+1.1.7 (unreleased)
+------------------
+
+- Make sure that tinymce-jsonconfiguration is traversed as a view in
+  tinymce_wysiwyg_support.pt.
+  [davisagli]
+
+1.1.6 (2011-01-04)
 ------------------
 
 - Fix capitalization of the title of the content_css setting. This fixes
