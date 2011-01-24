@@ -248,7 +248,7 @@ class ITinyMCEToolbar(Interface):
         title=_(u"Preview"),
         required=False)
 
-    toolbar_iespell = schema.Bool(
+    toolbar_spellchecker = schema.Bool(
         title=_(u"Spellchecker"),
         required=False)
 
@@ -285,8 +285,27 @@ class ITinyMCEToolbar(Interface):
         description=_(u"Enter a list of custom toolbar buttons which will be loaded in the editor, one per line."),
         required=False) 
 
+
 class ITinyMCELibraries(Interface):
     """This interface defines the libraries properties."""
+
+    libraries_spellchecker_choice = schema.Choice(
+        title=_(u"Spellchecker plugin to use"),
+        description=_(u"This option allows you to choose the spellchecker for "
+                      u"TinyMCE. If you want the spellchecker button to be "
+                      u"visible, make sure it is enabled in the toolbar "
+                      u"settings."),
+        missing_value=set(),
+        vocabulary=SimpleVocabulary([
+                            SimpleTerm('browser', 'browser', 
+                                    _(u"Default browser spellchecker")), 
+                            SimpleTerm('iespell', 'iespell', 
+                                    _(u"ieSpell (free for personal use)")),
+                            SimpleTerm('AtD', 'AtD', 
+                                    _(u"After the deadline (FLOSS)")),
+                            ]),
+        default='browser',
+        required=False)
 
 class ITinyMCEResourceTypes(Interface):
     """This interface defines the resource types properties."""
@@ -338,6 +357,7 @@ class ITinyMCEResourceTypes(Interface):
         vocabulary=SimpleVocabulary([SimpleTerm('named', 'named', _(u"Named")), SimpleTerm('numeric', 'numeric', _(u"Numeric")), SimpleTerm('raw', 'raw', _(u"Raw"))]),
         required=False)
 
+
 class ITinyMCE(
     ITinyMCELayout,
     ITinyMCEToolbar,
@@ -352,3 +372,4 @@ class ITinyMCE(
     def getConfiguration(self, context=None, field=None, request=None):
         """Get the configuration based on the control panel settings and the field settings.
         request can be provide for translation purpose."""
+
