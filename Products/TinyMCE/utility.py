@@ -1,26 +1,34 @@
+try:
+    import json
+    json = json # Pyflakes
+except ImportError:
+    import simplejson as json
+from types import StringTypes
+from zope.component import getUtility, queryUtility
+from zope.i18n import translate
+from zope.i18nmessageid import MessageFactory
+from zope.interface import classProvides
 from zope.interface import implements
 from zope.schema.fieldproperty import FieldProperty
-from zope.component import getUtility, queryUtility
-from zope.interface import classProvides
 from AccessControl import ClassSecurityInfo
 from Acquisition import aq_base
 from Acquisition import aq_inner
 from Acquisition import aq_parent
-from Products.Archetypes.interfaces.field import IImageField
+from OFS.SimpleItem import SimpleItem
 from Products.Archetypes.Field import ImageField
-from Products.CMFCore.utils import getToolByName
+from Products.Archetypes.interfaces.field import IImageField
 from Products.CMFCore.interfaces._content import IFolderish
-from plone.app.layout.globals.portal import RIGHT_TO_LEFT
+from Products.CMFCore.utils import getToolByName
+from Products.CMFCore.interfaces import ISiteRoot
+try:
+    from plone.app.layout.globals.portal import RIGHT_TO_LEFT
+    RIGHT_TO_LEFT = RIGHT_TO_LEFT # Pyflakes
+except ImportError:
+    # Plone 3
+    RIGHT_TO_LEFT = ['ar', 'fa', 'he', 'ps']
 from plone.app.layout.navigation.root import getNavigationRootObject
 from plone.outputfilters.filters.resolveuid_and_caption import IImageCaptioningEnabler
 from plone.outputfilters.filters.resolveuid_and_caption import IResolveUidsEnabler
-from Products.CMFCore.interfaces import ISiteRoot
-from Products.CMFCore.utils import getToolByName
-try:
-    import json
-except:
-    import simplejson as json
-from types import StringTypes
 
 from Products.TinyMCE.bbb import implementedOrProvidedBy
 from Products.TinyMCE.interfaces.utility import ITinyMCE
@@ -29,10 +37,6 @@ from Products.TinyMCE.interfaces.utility import ITinyMCEToolbar
 from Products.TinyMCE.interfaces.utility import ITinyMCELibraries
 from Products.TinyMCE.interfaces.utility import ITinyMCEResourceTypes
 
-from OFS.SimpleItem import SimpleItem
-
-from zope.i18nmessageid import MessageFactory
-from zope.i18n import translate
 _ = MessageFactory('plone.tinymce')
 
 def form_adapter(context):
@@ -119,7 +123,7 @@ class TinyMCE(SimpleItem):
 
     toolbar_print = FieldProperty(ITinyMCEToolbar['toolbar_print'])
     toolbar_preview = FieldProperty(ITinyMCEToolbar['toolbar_preview'])
-    toolbar_iespell = FieldProperty(ITinyMCEToolbar['toolbar_iespell'])
+    toolbar_spellchecker = FieldProperty(ITinyMCEToolbar['toolbar_spellchecker'])
     toolbar_removeformat = FieldProperty(ITinyMCEToolbar['toolbar_removeformat'])
     toolbar_cleanup = FieldProperty(ITinyMCEToolbar['toolbar_cleanup'])
     toolbar_visualaid = FieldProperty(ITinyMCEToolbar['toolbar_visualaid'])
@@ -128,6 +132,8 @@ class TinyMCE(SimpleItem):
     toolbar_code = FieldProperty(ITinyMCEToolbar['toolbar_code'])
     toolbar_fullscreen = FieldProperty(ITinyMCEToolbar['toolbar_fullscreen'])
     customtoolbarbuttons = FieldProperty(ITinyMCEToolbar['customtoolbarbuttons'])
+    
+    libraries_spellchecker_choice = FieldProperty(ITinyMCELibraries['libraries_spellchecker_choice'])
 
     link_using_uids = FieldProperty(ITinyMCEResourceTypes['link_using_uids'])
     allow_captioned_images = FieldProperty(ITinyMCEResourceTypes['allow_captioned_images'])
@@ -275,8 +281,10 @@ class TinyMCE(SimpleItem):
             buttons.append('print')
         if self.toolbar_preview:
             buttons.append('preview')
-        if self.toolbar_iespell:
-            buttons.append('iespell')
+
+        if self.toolbar_spellchecker:
+            buttons.append(self.libraries_spellchecker_choice)
+
         if self.toolbar_removeformat:
             buttons.append('removeformat')
         if self.toolbar_cleanup:
@@ -784,6 +792,18 @@ class TinyMCE(SimpleItem):
         except AttributeError:
             results['parent'] = results['portal_url'] + "/"
             results['document_url'] = results['portal_url']
+
+        # Get Library options
+        results['libraries_spellchecker_choice'] = \
+                                        self.libraries_spellchecker_choice
+
+        # The AtD spellchecker API key
+        mtool = getToolByName(portal, 'portal_membership')
+        member = mtool.getAuthenticatedMember()
+        results['atd_rpc_id'] = 'Products.TinyMCE-' + member.getId()
+
+        # The AtD spellchecker proxy url
+        atd_rpc_url = "server/proxy.php?url="
 
         return json.dumps(results)
 
