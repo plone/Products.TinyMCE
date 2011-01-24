@@ -26,6 +26,14 @@
         permission="zope2.View"
         />
 
+    <browser:page
+        for="*"
+        name="atdproxy"
+        class=".browser.ATDProxyView"
+        permission="zope2.View"
+        attribute="checkDocument"
+        />
+
     <browser:pages
         for="*"
         class=".browser.TinyMCEBrowserView"
