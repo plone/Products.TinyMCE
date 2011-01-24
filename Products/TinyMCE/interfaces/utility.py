@@ -307,6 +307,28 @@ class ITinyMCELibraries(Interface):
         default='browser',
         required=False)
 
+    libraries_atd_ignore_strings = schema.Text(
+        title=_(u"AtD Ignore strings"),
+        description=_(
+                u"A list of strings which the \"After the Deadline\"" \
+                u"spellchecker should ignore. " \
+                u"Note: This option is only applicable when the appropriate " \
+                "spellchecker has been chosen above."),
+        default=u"Zope\nPlone\nTinyMCE",
+        required=False) 
+
+    libraries_atd_show_types = schema.Text(
+        title=_(u"AtD Error types to show"),
+        description=_(
+            u"A list of erorr types which the " \
+            u"After the Deadline\" spellchecker should check for. " \
+            u"By default, all the available error type will be listed here."),
+        default=u"Bias Language\nCliches\nComplex Expression\n" \
+                u"Diacritical Marks\nDouble Negatives\n" \
+                u"Hidden Verbs\nJargon Language\nPassive voice\n" \
+                u"Phrases to Avoid\nRedundant Expression",
+        required=False) 
+
 class ITinyMCEResourceTypes(Interface):
     """This interface defines the resource types properties."""
 
