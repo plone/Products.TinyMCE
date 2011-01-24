@@ -797,10 +797,19 @@ class TinyMCE(SimpleItem):
         results['libraries_spellchecker_choice'] = \
                                         self.libraries_spellchecker_choice
 
-        # The AtD spellchecker API key
+        # The AtD spellchecker API key and proxy url
         mtool = getToolByName(portal, 'portal_membership')
         member = mtool.getAuthenticatedMember()
         results['atd_rpc_id'] = 'Products.TinyMCE-' + member.getId()
+        results['atd_rpc_url'] = "%s/@@atdproxy" % portal.absolute_url()
+        # This list contains the categories of errors we want to show 
+        # strings this plugin should ignore 
+        results['atd_show_types'] = \
+                    "Bias Language,Cliches,Complex Expression," \
+                    "Diacritical Marks,Double Negatives," \
+                    "Hidden Verbs,Jargon Language,Passive voice," \
+                    "Phrases to Avoid,Redundant Expression" 
+        results['atd_ignore_strings'] = "AtD,rsmudge" 
 
         # The AtD spellchecker proxy url
         atd_rpc_url = "server/proxy.php?url="
