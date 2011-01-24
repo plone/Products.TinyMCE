@@ -33,7 +33,12 @@ class TinyMCEControlPanelForm(ControlPanelForm):
     tinymceresourcetypes.id = 'tinymceresourcetypes'
     tinymceresourcetypes.label = _(u'Resource Types')
 
-    form_fields = FormFieldsets(tinymcelayout, tinymcetoolbar, tinymceresourcetypes) # tinymcelibraries
+    form_fields = FormFieldsets(
+                        tinymcelayout, 
+                        tinymcetoolbar, 
+                        tinymceresourcetypes, 
+                        tinymcelibraries
+                        )
 
     label = _(u"TinyMCE Settings")
     description = _(u"Settings for the TinyMCE Wysiwyg editor.")
