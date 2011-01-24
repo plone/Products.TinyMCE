@@ -134,6 +134,8 @@ class TinyMCE(SimpleItem):
     customtoolbarbuttons = FieldProperty(ITinyMCEToolbar['customtoolbarbuttons'])
     
     libraries_spellchecker_choice = FieldProperty(ITinyMCELibraries['libraries_spellchecker_choice'])
+    libraries_atd_show_types = FieldProperty(ITinyMCELibraries['libraries_atd_show_types'])
+    libraries_atd_ignore_strings = FieldProperty(ITinyMCELibraries['libraries_atd_ignore_strings'])
 
     link_using_uids = FieldProperty(ITinyMCEResourceTypes['link_using_uids'])
     allow_captioned_images = FieldProperty(ITinyMCEResourceTypes['allow_captioned_images'])
@@ -797,22 +799,13 @@ class TinyMCE(SimpleItem):
         results['libraries_spellchecker_choice'] = \
                                         self.libraries_spellchecker_choice
 
-        # The AtD spellchecker API key and proxy url
+        # init vars specific for "After the Deadline" spellchecker
         mtool = getToolByName(portal, 'portal_membership')
         member = mtool.getAuthenticatedMember()
         results['atd_rpc_id'] = 'Products.TinyMCE-' + member.getId()
         results['atd_rpc_url'] = "%s/@@atdproxy" % portal.absolute_url()
-        # This list contains the categories of errors we want to show 
-        # strings this plugin should ignore 
-        results['atd_show_types'] = \
-                    "Bias Language,Cliches,Complex Expression," \
-                    "Diacritical Marks,Double Negatives," \
-                    "Hidden Verbs,Jargon Language,Passive voice," \
-                    "Phrases to Avoid,Redundant Expression" 
-        results['atd_ignore_strings'] = "AtD,rsmudge" 
-
-        # The AtD spellchecker proxy url
-        atd_rpc_url = "server/proxy.php?url="
+        results['atd_show_types'] = self.libraries_atd_show_types.strip().replace('\n', ',')
+        results['atd_ignore_strings'] = self.libraries_atd_ignore_strings.strip().replace('\n', ',')
 
         return json.dumps(results)
 
