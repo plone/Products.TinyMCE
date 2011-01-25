@@ -5,6 +5,10 @@ HISTORY
 1.1.7 (unreleased)
 ------------------
 
+- Do not crash when getting a configuration with styles that have an
+  empty line at the end.
+  [maurits]
+
 - Make sure that tinymce-jsonconfiguration is traversed as a view in
   tinymce_wysiwyg_support.pt.
   [davisagli]
