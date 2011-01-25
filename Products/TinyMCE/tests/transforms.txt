@@ -125,14 +125,17 @@ UID references to anchors are converted to an absolute url too:
     >>> text = """<html>
     ...             <head></head>
     ...             <body>
-    ...               <a class="internal-link" href="resolveuid/%s">Some link</a>
-    ...               <a class="internal-link" href="resolveuid/%s#named-anchor">Some anchored link</a>
+    ...               <a class="internal-link" href="resolveuid/%(uid)s">Some link</a>
+    ...               <a class="internal-link" href="resolveuid/%(uid)s#named-anchor">Some anchored link</a>
+    ...               <a class="internal-link" href="resolveuid/%(uid)s/RSS">Link topic's RSS view</a>
     ...             </body>
-    ...           </html>""" % (UID, UID)
+    ...           </html>""" % {'uid':UID}
     >>> transformed_text = transform_utility.convert(name="html_to_tinymce_output_html", orig=text, context=self.portal)
     >>> 'href="http://nohost/plone/image"' in str(transformed_text)
     True
     >>> 'href="http://nohost/plone/image#named-anchor"' in str(transformed_text)
+    True
+    >>> 'href="http://nohost/plone/image/RSS"' in str(transformed_text)
     True
 
 Ensure this doesn't strip CDATA sections either.

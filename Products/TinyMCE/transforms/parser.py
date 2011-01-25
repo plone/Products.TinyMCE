@@ -86,7 +86,7 @@ class TinyMCEOutput(SGMLParser):
                         if len(parts) > 2:
                             # There is more than just the UUID, save it in
                             # appendix
-                            appendix = "/".join(parts[2:])
+                            appendix = '/' + '/'.join(parts[2:])
 
                         # move name of links to anchors to appendix
                         # (resolveuid/12fc34#anchor)

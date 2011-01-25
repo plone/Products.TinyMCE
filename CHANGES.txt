@@ -13,6 +13,10 @@ HISTORY
   tinymce_wysiwyg_support.pt.
   [davisagli]
 
+- transform now handles resolveuid/12345/subobject links correctly.
+  This fixes https://dev.plone.org/plone/ticket/11426
+  [fRiSi]
+
 1.1.6 (2011-01-04)
 ------------------
 
