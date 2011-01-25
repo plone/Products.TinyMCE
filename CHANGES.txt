@@ -5,6 +5,10 @@ HISTORY
 1.2.1 (unreleased)
 ------------------
 
+- Do not crash when getting a configuration with styles that have an
+  empty line at the end.
+  [maurits]
+
 - Handle Missing.Value for uid in JSONFolderListing.
   [elro]
 
