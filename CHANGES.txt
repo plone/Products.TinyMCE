@@ -5,6 +5,10 @@ HISTORY
 1.1.7 (unreleased)
 ------------------
 
+- Allow users to choose to have no WYSIWYG editor.
+  Fixes http://dev.plone.org/plone/ticket/10810
+  [msmith64]
+
 - Do not crash when getting a configuration with styles that have an
   empty line at the end.
   [maurits]
