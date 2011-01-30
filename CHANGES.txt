@@ -5,6 +5,9 @@ HISTORY
 1.1.7 (unreleased)
 ------------------
 
+- Fixed tests that were failing due to unpredictable dict key order.
+  [msmith64]
+
 - Allow users to choose to have no WYSIWYG editor.
   Fixes http://dev.plone.org/plone/ticket/10810
   [msmith64]
