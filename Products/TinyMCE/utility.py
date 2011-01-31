@@ -10,7 +10,10 @@ from Products.Archetypes.interfaces.field import IImageField
 from Products.Archetypes.Field import ImageField
 from Products.CMFCore.utils import getToolByName
 from Products.CMFCore.interfaces._content import IFolderish
-from plone.app.layout.globals.portal import RIGHT_TO_LEFT
+try:
+    from plone.app.layout.globals.portal import RIGHT_TO_LEFT
+except ImportError:
+    RIGHT_TO_LEFT = ['ar', 'fa', 'he', 'ps']  # not available in plone 3
 from plone.app.layout.navigation.root import getNavigationRootObject
 from plone.outputfilters.filters.resolveuid_and_caption import IImageCaptioningEnabler
 from plone.outputfilters.filters.resolveuid_and_caption import IResolveUidsEnabler
