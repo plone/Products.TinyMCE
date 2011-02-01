@@ -5,6 +5,10 @@ HISTORY
 1.1.7 (unreleased)
 ------------------
 
+- Add tests to make sure user can switch between editors using
+  personalize_form
+  [msmith64]
+
 - Merged test fixes from
   http://dev.plone.org/collective/changeset/226086/Products.TinyMCE/branches/plip9938-output-filters
   to fix Plone 3 compatibility test failure.

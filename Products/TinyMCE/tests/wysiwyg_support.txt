@@ -1,0 +1,110 @@
+===============
+WYSIWYG Support
+===============
+
+Setup
+-----
+
+Get a browser.
+
+    >>> from Products.Five.testbrowser import Browser
+    >>> browser = Browser()
+
+Unhide exceptions.
+
+    >>> self.portal.error_log._ignored_exceptions = ()
+
+Go to the portal root.
+
+    >>> portal_url = self.portal.absolute_url()
+    >>> browser.open(portal_url)
+
+Get an account and login via the login portlet.
+
+    >>> from Products.PloneTestCase.setup import portal_owner, default_password
+    >>> browser.getControl(name='__ac_name').value = portal_owner
+    >>> browser.getControl(name='__ac_password').value = default_password
+    >>> browser.getControl(name='submit').click()
+
+Create a blank page for test edits. (front-page is too noisy.)
+
+    >>> testpage = self.folder.absolute_url() + '/' + self.folder.invokeFactory('Document', 'testpage') + '/edit'
+    >>> print(testpage)
+    http://nohost/plone/Members/test_user_1_/testpage/edit
+
+Set up personalize_form
+
+    >>> personalizer = portal_url + '/personalize_form'
+    >>> print(personalizer)
+    http://nohost/plone/personalize_form
+    >>> browser.open(personalizer)
+    >>> browser.getControl(name='email').value = 'test@example.org'
+    >>> browser.getControl(name='form.button.Save').click()
+    >>> print(browser.contents)
+    <!DOCTYPE html PUBLIC ...
+    <dd>Your personal settings have been saved.</dd> ...
+
+Test different editors
+----------------------
+
+Test Kupu.
+
+    >>> browser.open(testpage)
+    >>> print(browser.contents)
+    <!DOCTYPE html PUBLIC ...
+    <div id="kupu-editor-text"> ...
+    <div class="kupuoverride" style="float:left;"> ...
+
+Change to Basic HTML textarea.
+
+    >>> browser.open(personalizer)
+    >>> browser.getControl(name='wysiwyg_editor').value = ['None']
+    >>> browser.getControl(name='form.button.Save').click()
+    >>> print(browser.contents)
+    <!DOCTYPE html PUBLIC ...
+    <dd>Your personal settings have been saved.</dd> ...
+
+Test basic editor.
+
+    >>> browser.open(testpage)
+    >>> print(browser.contents)
+    <!DOCTYPE html PUBLIC ...
+    <div class="field ArchetypesRichWidget kssattr-atfieldname-text" id="archetypes-fieldname-text">
+    <span></span>
+    <label class="formQuestion" for="text">Body Text</label>
+    <div class="formHelp" id="text_help"></div>
+    <div class="fieldErrorBox"></div>
+    <input type="hidden" id="text_text_format" value="text/html" name="text_text_format" />
+    <div>
+    <div>
+    <textarea name="text" rows="25" id="text"></textarea>
+    </div>
+    </div> 
+    <div class="fieldUploadFile">
+    <span class="discreet">or upload a file (existing content will be replaced)</span>
+    <input type="file" size="30" name="text_file" id="text_file" />
+    </div>
+    </div> ...
+
+Change to TinyMCE.
+
+    >>> browser.open(personalizer)
+    >>> browser.getControl(name='wysiwyg_editor').value = ['TinyMCE']
+    >>> browser.getControl(name='form.button.Save').click()
+    >>> print(browser.contents)
+    <!DOCTYPE html PUBLIC ...
+    <dd>Your personal settings have been saved.</dd> ...
+
+Double-check.
+
+    >>> browser.getControl(name='wysiwyg_editor').value
+    ['TinyMCE']
+
+Test TinyMCE.
+
+    >>> browser.open(testpage)
+    >>> print(browser.contents)
+    <!DOCTYPE html PUBLIC ...
+    <script type="text/javascript">
+    tinymce.dom.Event.add(window, 'load', function(e) { var config = new TinyMCEConfig('text'); config.init(); });</script> ...
+

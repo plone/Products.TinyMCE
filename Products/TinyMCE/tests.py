@@ -22,7 +22,7 @@ ztc.installProduct('TinyMCE')
 setup_product()
 ptc.setupPloneSite(products=['Products.TinyMCE'])
 
-doc_tests = ('adapters.txt','browser.txt','exportimport.txt','setuphandlers.txt','utility.txt','transforms.txt','upgrades.txt',)
+doc_tests = ('adapters.txt','browser.txt','exportimport.txt','setuphandlers.txt','utility.txt','transforms.txt','upgrades.txt','wysiwyg_support.txt',)
 
 def test_suite():
     """This sets up a test suite that actually runs the tests"""
