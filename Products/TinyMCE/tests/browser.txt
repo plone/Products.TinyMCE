@@ -47,7 +47,7 @@ browser view.
 
     >>> browser.open('http://nohost/plone/portal_tinymce/@@tinymce-getstyle')
     >>> browser.contents
-    '<!-- @import url(...portal_css...); -->'
+    '<!-- @import url(...portal_css...); -->...'
 
 controlpanel
 ------------

@@ -5,6 +5,11 @@ HISTORY
 1.1.7 (unreleased)
 ------------------
 
+- Merged test fixes from
+  http://dev.plone.org/collective/changeset/226086/Products.TinyMCE/branches/plip9938-output-filters
+  to fix Plone 3 compatibility test failure.
+  [msmith64]
+
 - Fixed tests that were failing due to unpredictable dict key order.
   [msmith64]
 
