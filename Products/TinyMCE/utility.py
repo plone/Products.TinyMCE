@@ -633,6 +633,9 @@ class TinyMCE(SimpleItem):
         if not redefine_parastyles:
             if isinstance(self.tablestyles, StringTypes):
                 for tablestyle in self.tablestyles.split('\n'):
+                    if not tablestyle:
+                        # empty line
+                        continue
                     tablestylefields = tablestyle.split('|')
                     tablestyletitle = tablestylefields[0]
                     tablestyleid = tablestylefields[1]
@@ -647,6 +650,9 @@ class TinyMCE(SimpleItem):
             if isinstance(self.styles, StringTypes):
                 styles = []
                 for style in self.styles.split('\n'):
+                    if not style:
+                        # empty line
+                        continue
                     stylefields = style.split('|')
                     styletitle = stylefields[0]
                     if request is not None:
