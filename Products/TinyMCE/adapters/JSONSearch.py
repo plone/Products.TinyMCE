@@ -3,7 +3,7 @@ from zope.component import adapts
 from zope.component import getUtility
 try:
     import json
-except:
+except ImportError:
     import simplejson as json
 
 from Products.TinyMCE.interfaces.utility import ITinyMCE

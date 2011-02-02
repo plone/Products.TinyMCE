@@ -3,7 +3,7 @@ from zope.component import getUtility
 
 try:
     import json
-except:
+except ImportError:
     import simplejson as json
 
 from plone.i18n.normalizer.interfaces import IIDNormalizer

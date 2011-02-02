@@ -317,7 +317,7 @@ class TinyMCE(SimpleItem):
                 try:
                     if not context.checkCreationFlag():
                         return_buttons.append('save')
-                except:
+                except AttributeError:
                     pass
             elif button == 'bg-basicmarkup':
                 pass
@@ -531,7 +531,7 @@ class TinyMCE(SimpleItem):
                 tags = ta.replace(',', ' ').split()
                 attributes = sc[ta].replace(',', ' ').split()
                 stripped_combinations.append((tags,attributes))
-        except:
+        except(KeyError, AttributeError):
             if kupu_library_tool is not None:
                 stripped_combinations = kupu_library_tool.get_stripped_combinations()
 
@@ -546,7 +546,7 @@ class TinyMCE(SimpleItem):
         try:
             stripped_attributes = set(safe_html.get_parameter_value('stripped_attributes'))
             style_whitelist = safe_html.get_parameter_value('style_whitelist')
-        except:
+        except (KeyError, AttributeError):
             if kupu_library_tool is not None:
                 stripped_attributes = set(kupu_library_tool.get_stripped_attributes())
                 style_whitelist = kupu_library_tool.getStyleWhitelist()
@@ -604,7 +604,7 @@ class TinyMCE(SimpleItem):
         # Remove to be stripped attributes
         try:
             style_whitelist = safe_html.get_parameter_value('style_whitelist')
-        except:
+        except (KeyError, AttributeError):
             if kupu_library_tool is not None:
                 style_whitelist = kupu_library_tool.getStyleWhitelist()
             else:
@@ -704,17 +704,17 @@ class TinyMCE(SimpleItem):
 
         try:
             results['editor_width'] = int(self.editor_width)
-        except:
+        except (TypeError, ValueError):
             results['editor_width'] = 600
 
         try:
             results['editor_height'] = int(self.editor_height)
-        except:
+        except (TypeError, ValueError):
             results['editor_height'] = 400
 
         try:
             results['toolbar_width'] = int(toolbar_width)
-        except:
+        except (TypeError, ValueError):
             results['toolbar_width'] = 440
 
         if self.directionality == 'auto':

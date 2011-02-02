@@ -48,7 +48,7 @@ def upgrade_10_to_11(setuptool):
     # Remove autoresize bottom margin
     try:
         del tinymce.autoresize_bottom_margin
-    except:
+    except AttributeError:
         pass
 
 def upgrade_11_to_2(setuptool):
