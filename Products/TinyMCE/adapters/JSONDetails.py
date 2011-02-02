@@ -3,7 +3,7 @@ from zope.component import getUtility
 
 try:
     import json
-except:
+except ImportError:
     import simplejson as json
 
 # Not available in xml.etree

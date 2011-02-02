@@ -5,6 +5,10 @@ HISTORY
 1.2.1 (unreleased)
 ------------------
 
+- Be explicit about catching exceptions. Bare excepts are asking for trouble
+  in Zopeland folks.
+  [elro]
+
 - Do not crash when getting a configuration with styles that have an
   empty line at the end.
   [maurits]
