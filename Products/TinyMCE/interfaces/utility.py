@@ -329,6 +329,17 @@ class ITinyMCELibraries(Interface):
                 u"Phrases to Avoid\nRedundant Expression",
         required=False) 
 
+    libraries_atd_service_url = schema.TextLine(
+        title=_(u"AtD Service URL"),
+        description=_(
+            u"The URL of the 'After the Deadline' grammar and spell " \
+            u"checking server. The default value is the public server, " \
+            u"but ideally you should download and install your own and " \
+            u"specify its address here." ),
+        required=True,
+        default=u"service.afterthedeadline.com",)
+
+
 class ITinyMCEResourceTypes(Interface):
     """This interface defines the resource types properties."""
 

@@ -102,8 +102,11 @@ class ATDProxyView(object):
             See http://www.afterthedeadline.com/api.slp for more info.
         """
         data = self.request._file.read()
-        # XXX: The service needs to be configurable
-        service = httplib.HTTPConnection("service.afterthedeadline.com")
+
+        utility = getUtility(ITinyMCE)
+        service_url = utility.libraries_atd_service_url
+        service = httplib.HTTPConnection(service_url)
+
         service.request("POST", "/checkDocument", data)
         response = service.getresponse()
         service.close()

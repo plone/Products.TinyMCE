@@ -136,6 +136,7 @@ class TinyMCE(SimpleItem):
     libraries_spellchecker_choice = FieldProperty(ITinyMCELibraries['libraries_spellchecker_choice'])
     libraries_atd_show_types = FieldProperty(ITinyMCELibraries['libraries_atd_show_types'])
     libraries_atd_ignore_strings = FieldProperty(ITinyMCELibraries['libraries_atd_ignore_strings'])
+    libraries_atd_service_url = FieldProperty(ITinyMCELibraries['libraries_atd_service_url'])
 
     link_using_uids = FieldProperty(ITinyMCEResourceTypes['link_using_uids'])
     allow_captioned_images = FieldProperty(ITinyMCEResourceTypes['allow_captioned_images'])
