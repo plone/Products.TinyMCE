@@ -69,7 +69,7 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
             'toolbar_pagebreak' : {'type' : 'Bool', 'default' : False},
             'toolbar_print' : {'type' : 'Bool', 'default' : False},
             'toolbar_preview' : {'type' : 'Bool', 'default' : False},
-            'toolbar_iespell' : {'type' : 'Bool', 'default' : False},
+            'toolbar_spellchecker' : {'type' : 'Bool', 'default' : False},
             'toolbar_removeformat' : {'type' : 'Bool', 'default' : False},
             'toolbar_cleanup' : {'type' : 'Bool', 'default' : False},
             'toolbar_visualaid' : {'type' : 'Bool', 'default' : False},

@@ -45,7 +45,7 @@ Now let's change some variables and see it still works.
     >>> utility.toolbar_pagebreak = True
     >>> utility.toolbar_print = True
     >>> utility.toolbar_preview = True
-    >>> utility.toolbar_iespell = True
+    >>> utility.toolbar_spellchecker = True
     >>> utility.toolbar_removeformat = True
     >>> utility.toolbar_cleanup = True
     >>> utility.toolbar_visualaid = True
@@ -90,6 +90,44 @@ doesn't contain the save button:
     >>> browser.open('http://nohost/plone/createObject?type_name=Document')
     >>> "&quot;save&quot;:" in browser.contents
     False
+
+
+Do some more toolbar tests, specifically testing the spellchecker button.
+First, we make sure that no spellchecker is loaded when the toolbar button is
+hidden.
+
+    >>> utility.toolbar_spellchecker = False
+    >>> browser.open('http://nohost/plone/createObject?type_name=Document')
+
+AtD shouldn't be there:
+    >>> "&quot;AtD&quot;" in browser.contents
+    False
+
+Neither should iespell:
+    >>> "&quot;iespell&quot;" in browser.contents
+    False
+
+Now, we enable the button and set AtD as the checker:
+    >>> utility.toolbar_spellchecker = True
+    >>> utility.libraries_spellchecker_choice = u'AtD'
+    >>> browser.open('http://nohost/plone/createObject?type_name=Document')
+    >>> "&quot;AtD&quot;" in browser.contents
+    True
+
+Now, we set iespell as the checker:
+    >>> utility.libraries_spellchecker_choice = u'iespell'
+    >>> browser.open('http://nohost/plone/createObject?type_name=Document')
+    >>> "&quot;iespell&quot;" in browser.contents
+    True
+
+When we have browser as the checker, neither iespell nor AtD should load:
+    >>> utility.libraries_spellchecker_choice = u'browser'
+    >>> browser.open('http://nohost/plone/createObject?type_name=Document')
+    >>> "&quot;iespell&quot;" in browser.contents
+    False
+    >>> "&quot;AtD&quot;" in browser.contents
+    False
+
 
 Configurable Image Dimensions
 -----------------------------
@@ -148,3 +186,4 @@ We need to specify a context, if we want the dimension of the original image
     {'size': [200, 200], 'title': 'Mini', 'value': 'image_mini'},
     {'size': [400, 400], 'title': 'Preview', 'value': 'image_preview'},
     {'size': [768, 768], 'title': 'Large', 'value': 'image_large'}]
+
