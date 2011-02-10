@@ -68,6 +68,7 @@
           <div class="field">
             <label id="descriptionlabel" for="description" i18n:translate="ploneimage_dlg_alt"></label>
             <div class="widget">
+              <input id="description_href" name="description_href" type="hidden" value="" />
               <input id="description" name="description" type="text" value="" size="20" />
             </div>
           </div>

@@ -127,8 +127,7 @@ var ImageDialog = {
         if (tinymce.isWebKit)
             ed.getWin().focus();
             
-        var image_content_href = this.getRadioValue('internallink', 0);
-        var href = image_content_href;
+        var href = this.getRadioValue('internallink', 0);
         var dimensions = this.getSelectValue(f0, 'dimensions');
         if (dimensions != "") {
             href += '/' + dimensions;
@@ -151,10 +150,11 @@ var ImageDialog = {
             ed.undoManager.add();
         }
 
+        var description_href = nl0.description_href.value;
         var description = nl0.description.value;
         var data = "description=" + encodeURIComponent(description);
         tinymce.util.XHR.send({
-            url : image_content_href + '/tinymce-setDescription',
+            url : description_href + '/tinymce-setDescription',
             content_type : "application/x-www-form-urlencoded",
             type : "POST",
             data : data,
@@ -406,6 +406,7 @@ var ImageDialog = {
                     document.getElementById ('previewimagecontainer').innerHTML = '<img src="' + data.thumb + '" border="0" />';
                 }
                 document.getElementById('description').value = data.description;
+                document.getElementById('description_href').value = path;
                 if (data.scales) {
                     var dimensions = document.getElementById('dimensions');
                     var newdimensions = [];
