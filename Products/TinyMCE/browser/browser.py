@@ -32,6 +32,10 @@ class TinyMCEBrowserView(BrowserView):
         return object.save(text, fieldname)
     
     def setDescription(self, description):
+        """Sets the description of an inserted image"""
+
+        if isinstance(description, str):
+            description = description.decode('utf-8')
         object = IUpload(self.context)
         return object.setDescription(description)
 

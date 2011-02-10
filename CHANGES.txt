@@ -5,8 +5,15 @@ HISTORY
 1.2.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Tweak ploneimage.js to use post data for setDescription for compatibility
+  with latest zopes. (This makes the image dialogue incompatible with IE6.)
+  [elro]
 
+- Fix quoting of description ploneimage.js
+  [elro]
+
+- Make setDescription convert to unicode.
+  [elro]
 
 1.2.1 (2011-02-10)
 ------------------
