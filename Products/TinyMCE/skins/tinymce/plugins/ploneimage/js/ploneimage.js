@@ -127,7 +127,8 @@ var ImageDialog = {
         if (tinymce.isWebKit)
             ed.getWin().focus();
             
-        var href = this.getRadioValue('internallink', 0);
+        var image_content_href = this.getRadioValue('internallink', 0);
+        var href = image_content_href;
         var dimensions = this.getSelectValue(f0, 'dimensions');
         if (dimensions != "") {
             href += '/' + dimensions;
@@ -151,9 +152,12 @@ var ImageDialog = {
         }
 
         var description = nl0.description.value;
+        var data = "description=" + encodeURIComponent(description);
         tinymce.util.XHR.send({
-            url : href + '/tinymce-setDescription?description=' + description,
-            type : 'POST'
+            url : image_content_href + '/tinymce-setDescription',
+            content_type : "application/x-www-form-urlencoded",
+            type : "POST",
+            data : data,
         });
 
         tinyMCEPopup.close();
