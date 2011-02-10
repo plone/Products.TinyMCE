@@ -36,4 +36,7 @@ setup(name='Products.TinyMCE',
           'elementtree',
           'plone.outputfilters',
       ] + requires,
+      extras_require = {
+            'test':  ['Products.PloneTestCase'],
+            },
       )
