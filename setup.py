@@ -34,6 +34,7 @@ setup(name='Products.TinyMCE',
       install_requires=[
           'setuptools',
           'elementtree',
+          'plone.app.imaging>=1.0.2',
           'plone.outputfilters',
       ] + requires,
       extras_require = {

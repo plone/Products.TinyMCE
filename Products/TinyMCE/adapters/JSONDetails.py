@@ -6,9 +6,6 @@ try:
 except ImportError:
     import simplejson as json
 
-# Not available in xml.etree
-from elementtree import HTMLTreeBuilder
-
 from Products.TinyMCE.adapters.interfaces.JSONDetails import IJSONDetails
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 
@@ -35,22 +32,27 @@ class JSONDetails(object):
         results['description'] = self.context.Description()
 
         if self.context.portal_type in image_portal_types:
-            results['thumb'] = self.context.absolute_url() + "/image_thumb"
-            image_field = self.context.Schema().get('image')
-            results['scales'] = utility.getImageScales(image_field,
-                                                       context=self.context)
+            images = self.context.restrictedTraverse('@@images')
+            field_name = 'image'
+            results['thumb'] = '%s/@@images/%s/%s' % (self.context.absolute_url(), field_name, 'thumb') 
+            sizes = images.getAvailableSizes(field_name)
+            scales = [{'value': '@@images/%s/%s' % (field_name, key),
+                       'size': size,
+                       'title': key.capitalize()} for key, size in sizes.items()]
+            scales.sort(lambda x,y: cmp(x['size'][0], y['size'][0]))
+            original_size = images.getImageSize(field_name)
+            if original_size[0] < 0 or original_size[1] < 0:
+                original_size = (0, 0)
+            scales.insert(0, {'value': '',
+                              'title': 'Original',
+                              'size': original_size})
+            results['scales'] = scales
         else:
             results['thumb'] = ""
 
         if self.context.portal_type in anchor_portal_types:
-            results['anchors'] = []
-            tree = HTMLTreeBuilder.TreeBuilder()
-            tree.feed('<root>%s</root>' % self.context.getPrimaryField().getAccessor(self.context)())
-            rootnode = tree.close()
-            for x in rootnode.getiterator():
-                if x.tag == "a":
-                    if "name" in x.keys():
-                        results['anchors'].append(x.attrib['name'])
+            content_anchors = self.context.restrictedTraverse('@@content_anchors')
+            results['anchors'] = content_anchors.listAnchorNames()
         else:
             results['anchors'] = []
 

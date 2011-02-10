@@ -77,4 +77,11 @@
         directory="stylesheets"
         />
 
+    <browser:view
+        name="content_anchors"
+        for="Products.Archetypes.interfaces.IBaseObject"
+        class=".atanchors.ATAnchorView"
+        permission="zope2.View"
+        />
+
 </configure>

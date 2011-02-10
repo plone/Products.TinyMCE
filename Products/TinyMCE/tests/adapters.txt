@@ -49,7 +49,7 @@ The details will now also include the thumbnail url and the imagescales.
 
   >>> object = IJSONDetails(portal[image])
   >>> object.getDetails()
-  '{"scales":..."thumb": "http://nohost/plone/image/image_thumb"...}'
+  '{"scales":..."thumb": "http://nohost/plone/image/@@images/image/thumb"...}'
 
 The first scale is always the original size:
 
