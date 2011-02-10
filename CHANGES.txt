@@ -5,6 +5,12 @@ HISTORY
 1.2.2 (unreleased)
 ------------------
 
+- Use @@images view for image scales.
+  [elro]
+
+- Get anchor names from listAnchorNames method of @@content_anchors.
+  [elro]
+
 - Tweak ploneimage.js to use post data for setDescription for compatibility
   with latest zopes. (This makes the image dialogue incompatible with IE6.)
   [elro]
