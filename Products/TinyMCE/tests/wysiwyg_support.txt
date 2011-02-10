@@ -17,9 +17,9 @@ Unhide exceptions.
 Go to the portal root.
 
     >>> portal_url = self.portal.absolute_url()
-    >>> browser.open(portal_url)
+    >>> browser.open(portal_url + '/login_form')
 
-Get an account and login via the login portlet.
+Get an account and login via the login form.
 
     >>> from Products.PloneTestCase.setup import portal_owner, default_password
     >>> browser.getControl(name='__ac_name').value = portal_owner
