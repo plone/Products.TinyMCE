@@ -37,7 +37,7 @@ filters.
   ...             <head></head>
   ...             <body>
   ...                 <img src="resolveuid/%s/image_thumb" class="image-left captioned" width="200" alt="My alt text" />
-  ...                 <p><img src="/plone/image.jpg" class="image-right captioned" width="200" style="border-width:1px" /></p>
+  ...                 <p><img src="/image.jpg" class="image-right captioned" width="200" style="border-width:1px" /></p>
   ...                 <pre>This is line 1
   ...                       This is line 2</pre>
   ...              </body>
@@ -53,11 +53,10 @@ The UID reference should be converted to an absolute url, and a caption should b
    <dd class="image-caption" style="width:200px;">My caption</dd>
   </dl>
   <BLANKLINE>
-  <p><dl class="image-right captioned">
+  <p><dl style="width:200px;" class="image-right captioned">
   <dt><img src="http://nohost/plone/image.jpg/image" alt="Image" title="Image" height="16" width="200" style="border-width:1px" /></dt>
    <dd class="image-caption" style="width:200px;">My caption</dd>
-  </dl>
-  </p>
+  </dl></p>
   <pre>This is line 1
         This is line 2</pre>
   <BLANKLINE>
