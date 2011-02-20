@@ -48,7 +48,7 @@ The UID reference should be converted to an absolute url, and a caption should b
 
   >>> print str(transformed_text)
   <BLANKLINE>
-  <dl class="image-left captioned">
+  <dl style="width:200px;" class="image-left captioned">
   <dt><img src="http://nohost/plone/image.jpg/image_thumb" alt="My alt text" title="Image" height="16" width="200" /></dt>
    <dd class="image-caption" style="width:200px;">My caption</dd>
   </dl>
