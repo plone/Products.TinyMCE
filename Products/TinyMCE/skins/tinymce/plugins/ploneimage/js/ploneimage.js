@@ -42,10 +42,15 @@ var ImageDialog = {
             if (href.indexOf('/')) {
                 var href_array = href.split('/');
                 var last = href_array[href_array.length-1];
+                var pos = href.indexOf('@@images/image/');
                 if (last.indexOf('image_') != -1) {
-                    var dimensions = href_array.pop();
+                    var dimensions = '@@images/image/' + href_array.pop().substring(6);
                     selectByValue(f0, 'dimensions', dimensions, true);
                     href = href_array.join ('/');
+                } else if (pos != -1) {
+                    var dimensions = href.substring(pos);
+                    selectByValue(f0, 'dimensions', dimensions, true);
+                    href = href.substring(0, pos - 1);
                 }
             }
             var classnames = dom.getAttrib(n, 'class').split(' ');
@@ -68,7 +73,7 @@ var ImageDialog = {
 
 
             if (href.indexOf('resolveuid') != -1) {
-                current_uid = href.split('resolveuid/')[1];
+                var current_uid = href.split('resolveuid/')[1];
                 tinymce.util.XHR.send({
                     url : tinyMCEPopup.editor.settings.portal_url + '/portal_tinymce/tinymce-getpathbyuid?uid=' + current_uid,
                     type : 'GET',
