@@ -5,6 +5,11 @@ HISTORY
 1.2.3 (unreleased)
 ------------------
 
+- Suppress the WYSIWYG editor for fields whose text format is not HTML, and
+  provide a "Edit without visual editor" link like kupu did so that the format
+  can be switched from HTML to something else.
+  [davisagli]
+
 - Fix wysiwyg_support to correctly respect a user's preference to use no
   wysiwyg editor.
   [davisagli]
