@@ -47,14 +47,6 @@ Set up personalize_form
 Test different editors
 ----------------------
 
-Test Kupu.
-
-    >>> browser.open(testpage)
-    >>> print(browser.contents)
-    <!DOCTYPE html PUBLIC ...
-    <div id="kupu-editor-text"> ...
-    <div class="kupuoverride" style="float:left;"> ...
-
 Change to Basic HTML textarea.
 
     >>> browser.open(personalizer)
@@ -69,22 +61,7 @@ Test basic editor.
     >>> browser.open(testpage)
     >>> print(browser.contents)
     <!DOCTYPE html PUBLIC ...
-    <div class="field ArchetypesRichWidget kssattr-atfieldname-text" id="archetypes-fieldname-text">
-    <span></span>
-    <label class="formQuestion" for="text">Body Text</label>
-    <div class="formHelp" id="text_help"></div>
-    <div class="fieldErrorBox"></div>
-    <input type="hidden" id="text_text_format" value="text/html" name="text_text_format" />
-    <div>
-    <div>
-    <textarea name="text" rows="25" id="text"></textarea>
-    </div>
-    </div> 
-    <div class="fieldUploadFile">
-    <span class="discreet">or upload a file (existing content will be replaced)</span>
-    <input type="file" size="30" name="text_file" id="text_file" />
-    </div>
-    </div> ...
+    <textarea name="text" rows="25" id="text"></textarea> ...
 
 Change to TinyMCE.
 
