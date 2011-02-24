@@ -162,7 +162,7 @@ var ImageDialog = {
             url : description_href + '/tinymce-setDescription',
             content_type : "application/x-www-form-urlencoded",
             type : "POST",
-            data : data,
+            data : data
         });
 
         tinyMCEPopup.close();
