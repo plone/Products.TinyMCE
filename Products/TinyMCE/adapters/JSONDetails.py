@@ -1,10 +1,12 @@
-from zope.interface import implements
-from zope.component import getUtility
-
 try:
     import json
 except ImportError:
     import simplejson as json
+
+from zope.interface import implements
+from zope.component import getUtility
+
+from Products.CMFCore.utils import getToolByName
 
 from Products.TinyMCE.adapters.interfaces.JSONDetails import IJSONDetails
 from Products.TinyMCE.interfaces.utility import ITinyMCE
@@ -32,9 +34,11 @@ class JSONDetails(object):
         results['description'] = self.context.Description()
 
         if self.context.portal_type in image_portal_types:
-            images = self.context.restrictedTraverse('@@images')
+            image_url = self._getPloneUrl() + '/resolveuid/' + self.context.UID()
             field_name = 'image'
-            results['thumb'] = '%s/@@images/%s/%s' % (self.context.absolute_url(), field_name, 'thumb') 
+            images = self.context.restrictedTraverse('@@images')
+
+            results['thumb'] = '%s/@@images/%s/%s' % (image_url, field_name, 'thumb') 
             sizes = images.getAvailableSizes(field_name)
             scales = [{'value': '@@images/%s/%s' % (field_name, key),
                        'size': size,
@@ -57,3 +61,9 @@ class JSONDetails(object):
             results['anchors'] = []
 
         return json.dumps(results)
+
+    def _getPloneUrl(self):
+        """Return the URL corresponding to the root of the Plone site."""
+        portal_url = getToolByName(self.context, 'portal_url')
+        portal = portal_url.getPortalObject()
+        return portal.absolute_url()
