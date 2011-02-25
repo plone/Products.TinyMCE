@@ -412,10 +412,22 @@ var ImageDialog = {
     },
 
     setDetails : function(path,title) {
-        // Sends a low level Ajax request
+        // Sends a low level AJAX request.
 
-        // TODO: If the following AJAX call fails for any reason, we need to
-        // reset ImageDialog.thumb_url to null.
+        // If our AJAX call succeeds and we get a thumbnail image to display in
+        // the right pane, we save that thumbnail image's URL directly on the
+        // ImageDialog object for posterity.  Later, we may need the thumbnail
+        // image's URL in this case:
+        //
+        //  1. The user clicks an image and clicks the "edit image" button.
+        //  2. The user doesn't select any image from the center pane.
+        //  3. The user clicks the "update" button.
+        //
+        // We always try to use the image that the user selects in the center
+        // pane first.  But as in the above case, if the user selects no image
+        // in the center pane, we fall back to the thumbnailed image.
+        ImageDialog.thumb_url = null;
+
         tinymce.util.XHR.send({
             url : path + '/tinymce-jsondetails',
             type : 'POST',
