@@ -8,9 +8,10 @@ HISTORY
 - Fix bug.  Steps to reproduce:
 
   1. Edit a document with an image already inserted.
-  2. Don't select any image in the center pane.
-  3. Rescale the image in the right pane.
-  4. Click the "update" button.
+  2. Click the image and click the "edit image" button.
+  3. Don't select any image in the center pane.
+  4. Rescale the image in the right pane.
+  5. Click the "update" button.
 
   The image disappears.  Fix involves choosing the user's selected image first.
   If the user has selected no image on update, fall back to the image
