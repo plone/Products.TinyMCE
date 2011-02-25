@@ -4,6 +4,7 @@ var ImageDialog = {
     current_url : "",
     current_class : "",
     labels : "",
+    thumb_url : null,
     
     preInit : function() {
         var url;
@@ -97,9 +98,28 @@ var ImageDialog = {
         }
     },
 
+    getSelectedImageUrl: function() {
+        // This method provides a single entry point.
+
+        // First, try to get the URL corresponding to the image that the user
+        // selected in the center pane.
+        var href = this.getRadioValue('internallink', 0);
+
+        if (href == '') {
+            // The user didn't select an image from the center pane.  So we
+            // default to the URL for the thumbnail image in the right pane.
+            href = ImageDialog.thumb_url;
+            if (href != null) {
+                href = href.substring(0, href.indexOf('/@@'));
+            }
+        }
+        return href;
+    },
+
     insert : function() {
         var ed = tinyMCEPopup.editor, t = this, f = document.forms[0];
-        var href = this.getRadioValue('internallink', 0);
+        // var href = this.getRadioValue('internallink', 0);
+        var href = t.getSelectedImageUrl();
 
         if (href === '') {
             if (ed.selection.getNode().nodeName == 'IMG') {
@@ -132,7 +152,8 @@ var ImageDialog = {
         if (tinymce.isWebKit)
             ed.getWin().focus();
             
-        var href = this.getRadioValue('internallink', 0);
+        // var href = this.getRadioValue('internallink', 0);
+        var href = this.getSelectedImageUrl();
         var dimensions = this.getSelectValue(f0, 'dimensions');
         if (dimensions != "") {
             href += '/' + dimensions;
@@ -392,6 +413,9 @@ var ImageDialog = {
 
     setDetails : function(path,title) {
         // Sends a low level Ajax request
+
+        // TODO: If the following AJAX call fails for any reason, we need to
+        // reset ImageDialog.thumb_url to null.
         tinymce.util.XHR.send({
             url : path + '/tinymce-jsondetails',
             type : 'POST',
@@ -408,6 +432,7 @@ var ImageDialog = {
                 if (data.thumb == "") {
                     document.getElementById ('previewimagecontainer').innerHTML = data.description;
                 } else {
+                    ImageDialog.thumb_url = data.thumb;
                     document.getElementById ('previewimagecontainer').innerHTML = '<img src="' + data.thumb + '" border="0" />';
                 }
                 document.getElementById('description').value = data.description;
