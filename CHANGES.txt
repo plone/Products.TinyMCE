@@ -5,6 +5,9 @@ HISTORY
 1.2.4 (unreleased)
 ------------------
 
+- Remove isTinyMCEEnabled in kssregistry. Refs #11248
+  [jaroel]
+
 - Fix bug.  Steps to reproduce:
 
   1. Edit a document with an image already inserted.
