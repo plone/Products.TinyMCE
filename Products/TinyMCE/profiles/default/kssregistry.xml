@@ -4,7 +4,7 @@
                     compression="safe"
                     cookable="True"
                     enabled="1"
-                    expression="python:portal.portal_tinymce.isTinyMCEEnabled(REQUEST=request)"
-					insert-before="at.kss"
+                    expression="not: portal/portal_membership/isAnonymousUser"
+                    insert-before="at.kss"
                     id="++resource++tinymce.kss/tinymce.kss" />
 </object>
