@@ -17,11 +17,11 @@ Unhide exceptions.
 Go to the portal root.
 
     >>> portal_url = self.portal.absolute_url()
-    >>> browser.open(portal_url + '/login_form')
 
 Get an account and login via the login form.
 
     >>> from Products.PloneTestCase.setup import portal_owner, default_password
+    >>> browser.open(portal_url + '/login_form')
     >>> browser.getControl(name='__ac_name').value = portal_owner
     >>> browser.getControl(name='__ac_password').value = default_password
     >>> browser.getControl(name='submit').click()
@@ -44,11 +44,43 @@ Set up personalize_form
     <!DOCTYPE html PUBLIC ...
     <dd>Your personal settings have been saved.</dd> ...
 
+
 Test different editors
 ----------------------
+Which editor is used is set globally and can be overridden in the personal preferences.
+This results in the following matrix:
+=====       =====                   ======
+Global      Personal                Expected
+=====       =====                   ======
+TinyMCE     Use site's default      TinyMCE
+TinyMCE     None                    Basic textarea
+TinyMCE     TinyMCE                 TinyMCE
+<empty>     Use site's default      Basic textarea
+<empty>     None                    Basic textarea
+<empty>     TinyMCE                 TinyMCE
+=====       =====                   ======
 
-Change to Basic HTML textarea.
 
+Set the editor globally to TinyMCE:
+    >>> self.portal.portal_properties.site_properties.default_editor = 'TinyMCE'
+
+If the user sets 'Use site's default'...
+    >>> browser.open(personalizer)
+    >>> browser.getControl(name='wysiwyg_editor').value = ['']
+    >>> browser.getControl(name='form.button.Save').click()
+    >>> print(browser.contents)
+    <!DOCTYPE html PUBLIC ...
+    <dd>Your personal settings have been saved.</dd> ...
+
+we should get TinyMCE:
+    >>> browser.open(testpage)
+    >>> print(browser.contents)
+    <!DOCTYPE html PUBLIC ...
+    <script type="text/javascript">
+    tinymce.dom.Event.add(window, 'load', function(e) { var config = new TinyMCEConfig('text'); config.init(); });</script> ...
+
+
+If the user sets 'None'...
     >>> browser.open(personalizer)
     >>> browser.getControl(name='wysiwyg_editor').value = ['None']
     >>> browser.getControl(name='form.button.Save').click()
@@ -56,15 +88,14 @@ Change to Basic HTML textarea.
     <!DOCTYPE html PUBLIC ...
     <dd>Your personal settings have been saved.</dd> ...
 
-Test basic editor.
-
+we should get just a textarea:
     >>> browser.open(testpage)
     >>> print(browser.contents)
     <!DOCTYPE html PUBLIC ...
     <textarea name="text" rows="25" id="text"></textarea> ...
 
-Change to TinyMCE.
 
+If the user sets 'TinyMCE'...
     >>> browser.open(personalizer)
     >>> browser.getControl(name='wysiwyg_editor').value = ['TinyMCE']
     >>> browser.getControl(name='form.button.Save').click()
@@ -72,16 +103,58 @@ Change to TinyMCE.
     <!DOCTYPE html PUBLIC ...
     <dd>Your personal settings have been saved.</dd> ...
 
-Double-check.
-
-    >>> browser.getControl(name='wysiwyg_editor').value
-    ['TinyMCE']
-
-Test TinyMCE.
-
+we should get TinyMCE:
     >>> browser.open(testpage)
     >>> print(browser.contents)
     <!DOCTYPE html PUBLIC ...
     <script type="text/javascript">
     tinymce.dom.Event.add(window, 'load', function(e) { var config = new TinyMCEConfig('text'); config.init(); });</script> ...
 
+
+Set the editor globally to nothing:
+    >>> self.portal.portal_properties.site_properties.default_editor = ''
+
+If the user sets 'Use site's default'...
+    >>> browser.open(personalizer)
+    >>> browser.getControl(name='wysiwyg_editor').value = ['']
+    >>> browser.getControl(name='form.button.Save').click()
+    >>> print(browser.contents)
+    <!DOCTYPE html PUBLIC ...
+    <dd>Your personal settings have been saved.</dd> ...
+
+we should get just a textarea:
+    >>> browser.open(testpage)
+    >>> print(browser.contents)
+    <!DOCTYPE html PUBLIC ...
+    <textarea name="text" rows="25" id="text"></textarea> ...
+
+
+If the user sets 'None'...
+    >>> browser.open(personalizer)
+    >>> browser.getControl(name='wysiwyg_editor').value = ['None']
+    >>> browser.getControl(name='form.button.Save').click()
+    >>> print(browser.contents)
+    <!DOCTYPE html PUBLIC ...
+    <dd>Your personal settings have been saved.</dd> ...
+
+we should get just a textarea:
+    >>> browser.open(testpage)
+    >>> print(browser.contents)
+    <!DOCTYPE html PUBLIC ...
+    <textarea name="text" rows="25" id="text"></textarea> ...
+
+
+If the user sets 'TinyMCE'...
+    >>> browser.open(personalizer)
+    >>> browser.getControl(name='wysiwyg_editor').value = ['TinyMCE']
+    >>> browser.getControl(name='form.button.Save').click()
+    >>> print(browser.contents)
+    <!DOCTYPE html PUBLIC ...
+    <dd>Your personal settings have been saved.</dd> ...
+
+we should get TinyMCE:
+    >>> browser.open(testpage)
+    >>> print(browser.contents)
+    <!DOCTYPE html PUBLIC ...
+    <script type="text/javascript">
+    tinymce.dom.Event.add(window, 'load', function(e) { var config = new TinyMCEConfig('text'); config.init(); });</script> ...
