@@ -86,7 +86,7 @@
 					<input type="submit" class="context" id="insert" name="insert" i18n:attributes="value searchreplace_dlg_findnext" />
 					<input type="button" class="context" id="replaceBtn" name="replaceBtn" value="" i18n:attributes="value searchreplace_dlg_replace" onclick="SearchReplaceDialog.searchNext('current');" />
 					<input type="button" class="context" id="replaceAllBtn" name="replaceAllBtn" i18n:attributes="value searchreplace_dlg_replaceall" onclick="SearchReplaceDialog.searchNext('all');" />
-					<input type="button" class="context" id="cancel" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
+					<input type="button" class="context" id="cancel" name="cancel" i18n:attributes="value Cancel" onclick="tinyMCEPopup.close();" />
 				</span>
 			</div>
 		</form>
