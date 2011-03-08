@@ -135,13 +135,13 @@
 	</div>
 	<div class="mceActionPanel">
 		<div class="left">
-			<input type="submit" id="insert" name="insert" i18n:attributes="value Update" />
+			<input type="submit" id="insert" name="insert" i18n:attributes="value common_update" />
 		</div>
 		<div class="left">
 			<input type="button" id="remove" name="remove" class="button" i18n:attributes="value xhtmlxtras_dlg_remove" onclick="removeCite();" style="display: none;" />
 		</div>
 		<div class="right">
-			<input type="button" id="cancel" name="cancel" i18n:attributes="value Cancel" onclick="tinyMCEPopup.close();" />
+			<input type="button" id="cancel" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
 		</div>
 	</div>
 

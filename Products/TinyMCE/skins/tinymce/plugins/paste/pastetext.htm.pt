@@ -32,8 +32,8 @@
 
 		<div class="mceActionPanel formControls">
 		  <span class="actionButtons">
-			<input type="submit" id="insert" class="context" name="insert" i18n:attributes="value Insert" />
-			<input type="button" id="cancel" class="standalone" name="cancel" i18n:attributes="value Cancel" onclick="tinyMCEPopup.close();" />
+			<input type="submit" id="insert" class="context" name="insert" i18n:attributes="value common_insert" />
+			<input type="button" id="cancel" class="standalone" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
 		  </span>
 		</div>
 	  </form>
