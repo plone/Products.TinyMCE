@@ -807,7 +807,7 @@ class TinyMCE(SimpleItem):
         # init vars specific for "After the Deadline" spellchecker
         mtool = getToolByName(portal, 'portal_membership')
         member = mtool.getAuthenticatedMember()
-        results['atd_rpc_id'] = 'Products.TinyMCE-' + member.getId()
+        results['atd_rpc_id'] = 'Products.TinyMCE-' + (member.getId() or '') # None when Anonymous User
         results['atd_rpc_url'] = "%s/@@" % portal.absolute_url()
         results['atd_show_types'] = self.libraries_atd_show_types.strip().replace('\n', ',')
         results['atd_ignore_strings'] = self.libraries_atd_ignore_strings.strip().replace('\n', ',')
