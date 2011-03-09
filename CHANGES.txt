@@ -5,6 +5,9 @@ HISTORY
 1.2.4 (unreleased)
 ------------------
 
+- Don't acquire when determining the mimetype of the field being edited.
+  [davisagli]
+
 - Fixed bug when rendering for anonymous users.
   [elro]
 
