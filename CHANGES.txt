@@ -5,6 +5,10 @@ HISTORY
 1.2.4 (unreleased)
 ------------------
 
+- Allows to use tinymce wysiwyg support outside of an Archetypes context.
+  (Checks 'force_wysiwyg' variable value to check if wysiwyg support is enabled.)
+  [thomasdesvenain]
+
 - Don't acquire when determining the mimetype of the field being edited.
   [davisagli]
 
