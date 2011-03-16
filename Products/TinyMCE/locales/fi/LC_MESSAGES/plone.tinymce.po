@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: plone.tinymce\n"
-"POT-Creation-Date: 2011-03-16 15:02+0000\n"
+"POT-Creation-Date: 2011-03-16 15:09+0000\n"
 "PO-Revision-Date: 2010-08-29 14:07+0200\n"
 "Last-Translator: Jukka Ojaniemi <jukka.ojaniemi@jyu.fi>\n"
 "Language-Team: JYU <LL@li.org>\n"
@@ -729,5 +729,10 @@ msgstr "Kirjoitussuunta"
 
 #: ../interfaces/utility.py:303
 msgid "ieSpell (free for personal use)"
+msgstr ""
+
+#. Default: "Edit without visual editor"
+#: ../skins/tinymce/tinymce_wysiwyg_support.pt:35
+msgid "suppress_visual_editor"
 msgstr ""
 

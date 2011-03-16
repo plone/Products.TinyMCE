@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-03-16 15:02+0000\n"
+"POT-Creation-Date: 2011-03-16 15:09+0000\n"
 "PO-Revision-Date: 2010-08-20 23:32+0100\n"
 "Last-Translator: Vincent Fretin <vincent.fretin@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -536,7 +536,7 @@ msgstr "Vérification orthographique"
 
 #: ../interfaces/utility.py:293
 msgid "Spellchecker plugin to use"
-msgstr ""
+msgstr "Plugin de correction orthographique"
 
 msgid "Square"
 msgstr "Carré"
@@ -727,4 +727,9 @@ msgstr "Direction d'écriture"
 #: ../interfaces/utility.py:303
 msgid "ieSpell (free for personal use)"
 msgstr ""
+
+#. Default: "Edit without visual editor"
+#: ../skins/tinymce/tinymce_wysiwyg_support.pt:35
+msgid "suppress_visual_editor"
+msgstr "Éditer sans l'éditeur wysiwyg"
 

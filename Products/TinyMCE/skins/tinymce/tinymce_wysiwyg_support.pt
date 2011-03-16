@@ -33,6 +33,7 @@
   <div tal:condition="wysiwyg"
        class="discreet" style="margin-top: -1em;">
     <a i18n:translate="suppress_visual_editor"
+       i18n:domain="plone.tinymce"
        tal:attributes="href string:${request/URL0}?tinymce.suppress=${fname};">
       Edit without visual editor
     </a>
