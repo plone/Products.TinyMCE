@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2010-08-20 21:16+0000\n"
+"POT-Creation-Date: 2011-03-16 15:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,108 +17,140 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone.tinymce\n"
 
-#: TinyMCE/utility.py:603
+#: ../utility.py:616
 msgid "(remove style)"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:152
+#: ../interfaces/utility.py:322
+msgid "A list of erorr types which the After the Deadline" spellchecker should check for. By default, all the available error type will be listed here."
+msgstr ""
+
+#: ../interfaces/utility.py:312
+msgid "A list of strings which the "After the Deadline"spellchecker should ignore. Note: This option is only applicable when the appropriate spellchecker has been chosen above."
+msgstr ""
+
+#: ../interfaces/utility.py:305
+msgid "After the deadline (FLOSS)"
+msgstr ""
+
+#: ../interfaces/utility.py:156
 msgid "Align center"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:160
+#: ../interfaces/utility.py:164
 msgid "Align full"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:148
+#: ../interfaces/utility.py:152
 msgid "Align left"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:156
+#: ../interfaces/utility.py:160
 msgid "Align right"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:296
+#: ../interfaces/utility.py:352
 msgid "Allow captioned images"
 msgstr ""
 
-#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:51
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:51
 msgid "Anchors"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:144
+#: ../interfaces/utility.py:321
+msgid "AtD Error types to show"
+msgstr ""
+
+#: ../interfaces/utility.py:311
+msgid "AtD Ignore strings"
+msgstr ""
+
+#: ../interfaces/utility.py:333
+msgid "AtD Service URL"
+msgstr ""
+
+#: ../interfaces/utility.py:37
+msgid "Auto detect from content language"
+msgstr ""
+
+#: ../interfaces/utility.py:148
 msgid "Backcolor"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:116
+#: ../interfaces/utility.py:120
 msgid "Bold"
 msgstr ""
 
 msgid "Call-out"
 msgstr ""
 
-#: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:88
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:89
 msgid "Caption"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:44
+#: ../interfaces/utility.py:48
 msgid "Choose the CSS used in WYSIWYG Editor Area"
 msgstr ""
 
 msgid "Circle"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:256
+#: ../interfaces/utility.py:260
 msgid "Cleanup messy code"
 msgstr ""
 
 msgid "Clear floats"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:311
+#: ../interfaces/utility.py:367
 msgid "Contains Anchors"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:306
+#: ../interfaces/utility.py:362
 msgid "Contains Objects"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:80
+#: ../interfaces/utility.py:84
 msgid "Copy"
 msgstr ""
 
-#: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:30
-#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:31
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:30
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:31
 msgid "Current Folder"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:326
+#: ../interfaces/utility.py:382
 msgid "Custom Plugins"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:280
+#: ../interfaces/utility.py:284
 msgid "Custom Toolbar Buttons"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:76
+#: ../interfaces/utility.py:80
 msgid "Cut"
+msgstr ""
+
+#: ../interfaces/utility.py:301
+msgid "Default browser spellchecker"
 msgstr ""
 
 msgid "Definition description"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:172
+#: ../interfaces/utility.py:176
 msgid "Definition list"
 msgstr ""
 
 msgid "Definition term"
 msgstr ""
 
-#: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:122
-#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:159
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:123
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:159
 msgid "Description"
 msgstr ""
 
-#: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:59
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:59
 msgid "Details"
 msgstr ""
 
@@ -128,83 +160,83 @@ msgstr ""
 msgid "Discreet"
 msgstr ""
 
-#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:117
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:117
 msgid "E-mail"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:272
+#: ../interfaces/utility.py:276
 msgid "Edit HTML Source"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:27
+#: ../interfaces/utility.py:27
 msgid "Editor height"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:22
+#: ../interfaces/utility.py:22
 msgid "Editor width"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:228
+#: ../interfaces/utility.py:232
 msgid "Emotions"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:17
+#: ../interfaces/utility.py:17
 msgid "Enable auto resizing of the editor window."
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:39
+#: ../interfaces/utility.py:43
 msgid "Enable contextmenu."
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:12
+#: ../interfaces/utility.py:12
 msgid "Enable resizing the editor window."
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:317
+#: ../interfaces/utility.py:373
 msgid "Enter a list of content types which can be linked. Format is one contenttype per line."
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:322
+#: ../interfaces/utility.py:378
 msgid "Enter a list of content types which can be used as images. Format is one contenttype per line."
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:312
+#: ../interfaces/utility.py:368
 msgid "Enter a list of content types which can contain anchors. Format is one contenttype per line."
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:307
+#: ../interfaces/utility.py:363
 msgid "Enter a list of content types which can contain other objects. Format is one contenttype per line."
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:327
+#: ../interfaces/utility.py:383
 msgid "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:281
+#: ../interfaces/utility.py:285
 msgid "Enter a list of custom toolbar buttons which will be loaded in the editor, one per line."
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:50
+#: ../interfaces/utility.py:54
 msgid "Enter a list of styles to appear in the style pulldown. Format is title|tag or title|tag|className, one per line."
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:55
+#: ../interfaces/utility.py:59
 msgid "Enter a list of styles to appear in the table style pulldown. Format is title|class, one per line."
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:331
+#: ../interfaces/utility.py:387
 msgid "Entity encoding"
 msgstr ""
 
 msgid "Even row"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:67
-#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:41
+#: ../interfaces/utility.py:71
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:41
 msgid "External"
 msgstr ""
 
-#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:92
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:92
 msgid "External link"
 msgstr ""
 
@@ -217,20 +249,20 @@ msgstr ""
 msgid "Fancy vertical listing"
 msgstr ""
 
-#: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:108
-#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:145
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:109
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:145
 msgid "File"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:104
+#: ../interfaces/utility.py:108
 msgid "Find"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:108
+#: ../interfaces/utility.py:112
 msgid "Find/Replace"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:140
+#: ../interfaces/utility.py:144
 msgid "Forecolor"
 msgstr ""
 
@@ -243,117 +275,117 @@ msgstr ""
 msgid "Highlight"
 msgstr ""
 
-#: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:25
-#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:26
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:25
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:26
 msgid "Home"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:321
+#: ../interfaces/utility.py:377
 msgid "Image Objects"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:297
+#: ../interfaces/utility.py:353
 msgid "Images will be automatically captioned."
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:180
+#: ../interfaces/utility.py:184
 msgid "Indent"
 msgstr ""
 
-#: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:79
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:80
 msgid "Inline"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:216
+#: ../interfaces/utility.py:220
 msgid "Insert advanced horizontal ruler"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:208
+#: ../interfaces/utility.py:212
 msgid "Insert custom character"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:220
+#: ../interfaces/utility.py:224
 msgid "Insert date"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:212
+#: ../interfaces/utility.py:216
 msgid "Insert horizontal ruler"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:232
+#: ../interfaces/utility.py:236
 msgid "Insert non-breaking space character"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:236
+#: ../interfaces/utility.py:240
 msgid "Insert page break"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:224
+#: ../interfaces/utility.py:228
 msgid "Insert time"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:196
+#: ../interfaces/utility.py:200
 msgid "Insert/edit anchor"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:268
+#: ../interfaces/utility.py:272
 msgid "Insert/edit attributes"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:200
+#: ../interfaces/utility.py:204
 msgid "Insert/edit image"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:188
+#: ../interfaces/utility.py:192
 msgid "Insert/edit link"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:204
+#: ../interfaces/utility.py:208
 msgid "Insert/edit media"
 msgstr ""
 
-#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:65
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:65
 msgid "Internal link"
 msgstr ""
 
 msgid "Invisible grid"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:120
+#: ../interfaces/utility.py:124
 msgid "Italic"
 msgstr ""
 
-#: TinyMCE/browser/controlpanel.py:23
+#: ../browser/controlpanel.py:22
 msgid "Layout"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:35
+#: ../interfaces/utility.py:38
 msgid "Left to right"
 msgstr ""
 
-#: TinyMCE/browser/controlpanel.py:31
-#: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:21
-#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:22
+#: ../browser/controlpanel.py:30
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:21
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:22
 msgid "Libraries"
 msgstr ""
 
-#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:132
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:132
 msgid "Link to anchor"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:291
+#: ../interfaces/utility.py:347
 msgid "Link using UIDs"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:316
+#: ../interfaces/utility.py:372
 msgid "Linkable Objects"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:292
+#: ../interfaces/utility.py:348
 msgid "Links to objects on this site can use unique object ids so that the links remain valid even if the target object is renamed or moved elsewhere on the site."
 msgstr ""
 
-#: TinyMCE/utility.py:610
+#: ../utility.py:623
 msgid "Lists"
 msgstr ""
 
@@ -366,137 +398,141 @@ msgstr ""
 msgid "Lower Roman"
 msgstr ""
 
-#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:46
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:46
 msgid "Mail"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:334
+#: ../interfaces/utility.py:390
 msgid "Named"
 msgstr ""
 
-#: TinyMCE/utility.py:613
+#: ../utility.py:626
 msgid "No anchors in this page"
 msgstr ""
 
-#: TinyMCE/utility.py:612
+#: ../utility.py:625
 msgid "No items in this folder"
 msgstr ""
 
-#: TinyMCE/utility.py:604
+#: ../utility.py:617
 msgid "Normal paragraph"
 msgstr ""
 
 msgid "Numbers"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:334
+#: ../interfaces/utility.py:390
 msgid "Numeric"
 msgstr ""
 
 msgid "Odd row"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:168
+#: ../interfaces/utility.py:172
 msgid "Ordered list"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:176
+#: ../interfaces/utility.py:180
 msgid "Outdent"
 msgstr ""
 
 msgid "Page break (print only)"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:84
+#: ../interfaces/utility.py:88
 msgid "Paste"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:88
+#: ../interfaces/utility.py:92
 msgid "Paste as Plain Text"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:92
+#: ../interfaces/utility.py:96
 msgid "Paste from Word"
 msgstr ""
 
-#: TinyMCE/utility.py:605
+#: ../utility.py:618
 msgid "Plain cell"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:244
-#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:102
+#: ../interfaces/utility.py:248
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:102
 msgid "Preview"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:240
-#: TinyMCE/utility.py:611
+#: ../interfaces/utility.py:244
+#: ../utility.py:624
 msgid "Print"
 msgstr ""
 
 msgid "Pull-quote"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:334
+#: ../interfaces/utility.py:390
 msgid "Raw"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:100
+#: ../interfaces/utility.py:104
 msgid "Redo"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:252
+#: ../interfaces/utility.py:256
 msgid "Remove formatting"
 msgstr ""
 
-#: TinyMCE/browser/controlpanel.py:35
+#: ../browser/controlpanel.py:34
 msgid "Resource Types"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:35
+#: ../interfaces/utility.py:39
 msgid "Right to left"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:301
+#: ../interfaces/utility.py:357
 msgid "Rooted to current object"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:72
+#: ../interfaces/utility.py:76
 msgid "Save"
 msgstr ""
 
-#: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:40
-#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:56
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:40
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:56
 msgid "Search"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:112
+#: ../interfaces/utility.py:116
 msgid "Select Style"
 msgstr ""
 
-#: TinyMCE/utility.py:609
+#: ../utility.py:622
 msgid "Selection"
 msgstr ""
 
-#: TinyMCE/browser/controlpanel.py:40
+#: ../browser/controlpanel.py:44
 msgid "Settings for the TinyMCE Wysiwyg editor."
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:248
+#: ../interfaces/utility.py:252
 msgid "Spellchecker"
+msgstr ""
+
+#: ../interfaces/utility.py:293
+msgid "Spellchecker plugin to use"
 msgstr ""
 
 msgid "Square"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:128
+#: ../interfaces/utility.py:132
 msgid "Strikethrough"
 msgstr ""
 
-#: TinyMCE/utility.py:606
+#: ../utility.py:619
 msgid "Style..."
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:49
+#: ../interfaces/utility.py:53
 msgid "Styles"
 msgstr ""
 
@@ -506,135 +542,143 @@ msgstr ""
 msgid "Subheading"
 msgstr ""
 
-#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:124
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:124
 msgid "Subject"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:132
+#: ../interfaces/utility.py:136
 msgid "Subscript"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:136
+#: ../interfaces/utility.py:140
 msgid "Superscript"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:184
+#: ../interfaces/utility.py:188
 msgid "Table controls"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:54
+#: ../interfaces/utility.py:58
 msgid "Table styles"
 msgstr ""
 
-#: TinyMCE/utility.py:608
+#: ../utility.py:621
 msgid "Tables"
 msgstr ""
 
-#: TinyMCE/utility.py:607
+#: ../utility.py:620
 msgid "Text"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:332
+#: ../interfaces/utility.py:334
+msgid "The URL of the 'After the Deadline' grammar and spell checking server. The default value is the public server, but ideally you should download and install your own and specify its address here."
+msgstr ""
+
+#: ../interfaces/utility.py:294
+msgid "This option allows you to choose the spellchecker for TinyMCE. If you want the spellchecker button to be visible, make sure it is enabled in the toolbar settings."
+msgstr ""
+
+#: ../interfaces/utility.py:388
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:68
+#: ../interfaces/utility.py:72
 msgid "This option enables the external toolbar which will be placed at the top of the page."
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:45
+#: ../interfaces/utility.py:49
 msgid "This option enables you to specify a custom CSS file that replaces the theme content CSS. This CSS file is the one used within the editor (the editable area)."
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:18
+#: ../interfaces/utility.py:18
 msgid "This option gives you the ability to enable/disable auto resizing the editor window depending on the content."
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:13
+#: ../interfaces/utility.py:13
 msgid "This option gives you the ability to enable/disable resizing the editor window. If the editor width is set to a percentage only vertical resizing is enabled."
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:40
+#: ../interfaces/utility.py:44
 msgid "This option gives you the ability to enable/disable the use of the contextmenu."
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:28
+#: ../interfaces/utility.py:28
 msgid "This option gives you the ability to specify the height of the editor in pixels. If auto resize is enabled this value is used as minimum height."
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:23
+#: ../interfaces/utility.py:23
 msgid "This option gives you the ability to specify the width of the editor in pixels or percent."
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:63
+#: ../interfaces/utility.py:67
 msgid "This option gives you the ability to specify the width of the toolbar in pixels."
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:33
+#: ../interfaces/utility.py:33
 msgid "This option specifies the default writing direction, some languages (Like Hebrew, Arabic, Urdu...) write from right to left instead of left to right."
 msgstr ""
 
-#: TinyMCE/profiles/upgrade_10_to_11/controlpanel.xml
+#: ../profiles/upgrade_10_to_11/controlpanel.xml
 msgid "TinyMCE"
 msgstr ""
 
-#: TinyMCE/browser/controlpanel.py:39
+#: ../browser/controlpanel.py:43
 msgid "TinyMCE Settings"
 msgstr ""
 
-#: TinyMCE/profiles/default/controlpanel.xml
-#: TinyMCE/profiles/upgrade_10_to_11/controlpanel.xml
+#: ../profiles/default/controlpanel.xml
+#: ../profiles/upgrade_10_to_11/controlpanel.xml
 msgid "TinyMCE Visual Editor"
 msgstr ""
 
-#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:275
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:275
 msgid "Title"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:276
+#: ../interfaces/utility.py:280
 msgid "Toggle fullscreen mode"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:260
+#: ../interfaces/utility.py:264
 msgid "Toggle guidelines/invisible objects"
 msgstr ""
 
-#: TinyMCE/browser/controlpanel.py:27
+#: ../browser/controlpanel.py:26
 msgid "Toolbar"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:62
+#: ../interfaces/utility.py:66
 msgid "Toolbar width"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:124
+#: ../interfaces/utility.py:128
 msgid "Underline"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:96
+#: ../interfaces/utility.py:100
 msgid "Undo"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:192
+#: ../interfaces/utility.py:196
 msgid "Unlink"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:164
+#: ../interfaces/utility.py:168
 msgid "Unordered list"
 msgstr ""
 
-#: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:51
-#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:68
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:51
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:68
 msgid "Up one level"
 msgstr ""
 
-#: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:128
-#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:165
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:129
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:165
 msgid "Upload"
 msgstr ""
 
-#: TinyMCE/skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:54
-#: TinyMCE/skins/tinymce/plugins/plonelink/plonelink.htm.pt:71
+#: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:54
+#: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:71
 msgid "Upload file"
 msgstr ""
 
@@ -644,15 +688,19 @@ msgstr ""
 msgid "Upper Roman"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:264
+#: ../interfaces/utility.py:268
 msgid "Visual control characters on/off"
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:302
+#: ../interfaces/utility.py:358
 msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
 msgstr ""
 
-#: TinyMCE/interfaces/utility.py:32
+#: ../interfaces/utility.py:32
 msgid "Writing direction"
+msgstr ""
+
+#: ../interfaces/utility.py:303
+msgid "ieSpell (free for personal use)"
 msgstr ""
 
