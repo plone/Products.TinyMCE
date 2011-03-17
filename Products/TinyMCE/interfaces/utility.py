@@ -21,12 +21,12 @@ class ITinyMCELayout(Interface):
     editor_width = schema.TextLine(
         title=_(u"Editor width"),
         description=_(u"This option gives you the ability to specify the width of the editor in pixels or percent."),
-        required=False) 
+        required=False)
 
     editor_height = schema.TextLine(
         title=_(u"Editor height"),
         description=_(u"This option gives you the ability to specify the height of the editor in pixels. If auto resize is enabled this value is used as minimum height."),
-        required=False) 
+        required=False)
 
     directionality = schema.Choice(
         title=_(u"Writing direction"),
@@ -52,12 +52,12 @@ class ITinyMCELayout(Interface):
     styles = schema.Text(
         title=_(u"Styles"),
         description=_(u"Enter a list of styles to appear in the style pulldown. Format is title|tag or title|tag|className, one per line."),
-        required=False) 
+        required=False)
 
     tablestyles = schema.Text(
         title=_(u"Table styles"),
         description=_(u"Enter a list of styles to appear in the table style pulldown. Format is title|class, one per line."),
-        required=False) 
+        required=False)
 
 class ITinyMCEToolbar(Interface):
     """This interface defines the toolbar properties."""
@@ -283,7 +283,7 @@ class ITinyMCEToolbar(Interface):
     customtoolbarbuttons = schema.Text(
         title=_(u"Custom Toolbar Buttons"),
         description=_(u"Enter a list of custom toolbar buttons which will be loaded in the editor, one per line."),
-        required=False) 
+        required=False)
 
 
 class ITinyMCELibraries(Interface):
@@ -297,11 +297,11 @@ class ITinyMCELibraries(Interface):
                       u"settings."),
         missing_value=set(),
         vocabulary=SimpleVocabulary([
-                            SimpleTerm('browser', 'browser', 
-                                    _(u"Default browser spellchecker")), 
-                            SimpleTerm('iespell', 'iespell', 
+                            SimpleTerm('browser', 'browser',
+                                    _(u"Default browser spellchecker")),
+                            SimpleTerm('iespell', 'iespell',
                                     _(u"ieSpell (free for personal use)")),
-                            SimpleTerm('AtD', 'AtD', 
+                            SimpleTerm('AtD', 'AtD',
                                     _(u"After the deadline (FLOSS)")),
                             ]),
         default='browser',
@@ -310,32 +310,35 @@ class ITinyMCELibraries(Interface):
     libraries_atd_ignore_strings = schema.Text(
         title=_(u"AtD Ignore strings"),
         description=_(
-                u"A list of strings which the \"After the Deadline\"" \
-                u"spellchecker should ignore. " \
-                u"Note: This option is only applicable when the appropriate " \
+            'label_atd_ignore_strings',
+            default=u"A list of strings which the \"After the Deadline\"" \
+                    u"spellchecker should ignore. " \
+                    u"Note: This option is only applicable when the appropriate " \
                 "spellchecker has been chosen above."),
         default=u"Zope\nPlone\nTinyMCE",
-        required=False) 
+        required=False)
 
     libraries_atd_show_types = schema.Text(
         title=_(u"AtD Error types to show"),
         description=_(
-            u"A list of erorr types which the " \
-            u"After the Deadline\" spellchecker should check for. " \
-            u"By default, all the available error type will be listed here."),
+            'help_atderrortypes_to_show',
+            default=u"A list of erorr types which the " \
+                    u"\"After the Deadline\" spellchecker should check for. " \
+                    u"By default, all the available error type will be listed here."),
         default=u"Bias Language\nCliches\nComplex Expression\n" \
                 u"Diacritical Marks\nDouble Negatives\n" \
                 u"Hidden Verbs\nJargon Language\nPassive voice\n" \
                 u"Phrases to Avoid\nRedundant Expression",
-        required=False) 
+        required=False)
 
     libraries_atd_service_url = schema.TextLine(
         title=_(u"AtD Service URL"),
         description=_(
-            u"The URL of the 'After the Deadline' grammar and spell " \
-            u"checking server. The default value is the public server, " \
-            u"but ideally you should download and install your own and " \
-            u"specify its address here." ),
+            'help_atd_service_url',
+            default=u"The URL of the \"After the Deadline\" grammar and spell " \
+                    u"checking server. The default value is the public server, " \
+                    u"but ideally you should download and install your own and " \
+                    u"specify its address here." ),
         required=True,
         default=u"service.afterthedeadline.com",)
 
@@ -361,27 +364,27 @@ class ITinyMCEResourceTypes(Interface):
     containsobjects = schema.Text(
         title=_(u"Contains Objects"),
         description=_(u"Enter a list of content types which can contain other objects. Format is one contenttype per line."),
-        required=False) 
+        required=False)
 
     containsanchors = schema.Text(
         title=_(u"Contains Anchors"),
         description=_(u"Enter a list of content types which can contain anchors. Format is one contenttype per line."),
-        required=False) 
+        required=False)
 
     linkable = schema.Text(
         title=_(u"Linkable Objects"),
         description=_(u"Enter a list of content types which can be linked. Format is one contenttype per line."),
-        required=False) 
+        required=False)
 
     imageobjects = schema.Text(
         title=_(u"Image Objects"),
         description=_(u"Enter a list of content types which can be used as images. Format is one contenttype per line."),
-        required=False) 
+        required=False)
 
     customplugins = schema.Text(
         title=_(u"Custom Plugins"),
         description=_(u"Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."),
-        required=False) 
+        required=False)
 
     entity_encoding = schema.Choice(
         title=_(u"Entity encoding"),

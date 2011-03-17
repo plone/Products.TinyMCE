@@ -5,6 +5,9 @@ HISTORY
 1.2.4 (unreleased)
 ------------------
 
+- Internationalization fixes.
+  [thomasdesvenain]
+
 - Allows to use tinymce wysiwyg support outside of an Archetypes context.
   (Checks 'force_wysiwyg' variable value to check if wysiwyg support is enabled.)
   [thomasdesvenain]
@@ -77,7 +80,7 @@ HISTORY
 - Set text/css content type on tinymce-getstyle.
   [elro]
 
-- Add option 'auto' for directivity. The directivity will be set depending 
+- Add option 'auto' for directivity. The directivity will be set depending
   on the content or the portals default language.
   Fixes http://dev.plone.org/plone/ticket/10039
   [csenger]
