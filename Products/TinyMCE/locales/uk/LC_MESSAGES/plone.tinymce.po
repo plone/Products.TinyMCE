@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-03-16 15:09+0000\n"
+"POT-Creation-Date: 2011-03-17 11:01+0000\n"
 "PO-Revision-Date: 2010-08-30 15:46+0300\n"
 "Last-Translator: Olha <olha.pelishok@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,14 +20,6 @@ msgstr ""
 #: ../utility.py:616
 msgid "(remove style)"
 msgstr "(видалити стиль)"
-
-#: ../interfaces/utility.py:322
-msgid "A list of erorr types which the After the Deadline" spellchecker should check for. By default, all the available error type will be listed here."
-msgstr ""
-
-#: ../interfaces/utility.py:312
-msgid "A list of strings which the "After the Deadline"spellchecker should ignore. Note: This option is only applicable when the appropriate spellchecker has been chosen above."
-msgstr ""
 
 #: ../interfaces/utility.py:305
 msgid "After the deadline (FLOSS)"
@@ -49,7 +41,7 @@ msgstr "Вирівнювання по лівому краю"
 msgid "Align right"
 msgstr "Вирівнювання по правому краю"
 
-#: ../interfaces/utility.py:352
+#: ../interfaces/utility.py:355
 msgid "Allow captioned images"
 msgstr "Дозволити підпис зображень"
 
@@ -57,7 +49,7 @@ msgstr "Дозволити підпис зображень"
 msgid "Anchors"
 msgstr "Якорі"
 
-#: ../interfaces/utility.py:321
+#: ../interfaces/utility.py:322
 msgid "AtD Error types to show"
 msgstr ""
 
@@ -65,7 +57,7 @@ msgstr ""
 msgid "AtD Ignore strings"
 msgstr ""
 
-#: ../interfaces/utility.py:333
+#: ../interfaces/utility.py:335
 msgid "AtD Service URL"
 msgstr ""
 
@@ -102,11 +94,11 @@ msgstr "Очистити брудний код"
 msgid "Clear floats"
 msgstr "Очистити стилі"
 
-#: ../interfaces/utility.py:367
+#: ../interfaces/utility.py:370
 msgid "Contains Anchors"
 msgstr "Містить якорі"
 
-#: ../interfaces/utility.py:362
+#: ../interfaces/utility.py:365
 msgid "Contains Objects"
 msgstr "Містить об'єкти"
 
@@ -119,7 +111,7 @@ msgstr "Копіювати"
 msgid "Current Folder"
 msgstr "Поточна тека"
 
-#: ../interfaces/utility.py:382
+#: ../interfaces/utility.py:385
 msgid "Custom Plugins"
 msgstr "Спеціальні плагіни"
 
@@ -192,23 +184,23 @@ msgstr "Увімкнути контекстне меню."
 msgid "Enable resizing the editor window."
 msgstr "Увімкнути можливість зміни розміру вікна редактора."
 
-#: ../interfaces/utility.py:373
+#: ../interfaces/utility.py:376
 msgid "Enter a list of content types which can be linked. Format is one contenttype per line."
 msgstr "Введіть перелік типів вмісту, до яких можна зробити посилання, кожен з нового рядка."
 
-#: ../interfaces/utility.py:378
+#: ../interfaces/utility.py:381
 msgid "Enter a list of content types which can be used as images. Format is one contenttype per line."
 msgstr "Введіть перелік типів вмісту, які можна використати як зображення, кожен з нового рядка."
 
-#: ../interfaces/utility.py:368
+#: ../interfaces/utility.py:371
 msgid "Enter a list of content types which can contain anchors. Format is one contenttype per line."
 msgstr "Введіть перелік типів вмісту, які можуть містити якорі, кожен з нового рядка."
 
-#: ../interfaces/utility.py:363
+#: ../interfaces/utility.py:366
 msgid "Enter a list of content types which can contain other objects. Format is one contenttype per line."
 msgstr "Введіть перелік типів вмісту, які можуть містити інші об'єкти, кожен з нового рядка."
 
-#: ../interfaces/utility.py:383
+#: ../interfaces/utility.py:386
 msgid "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
 msgstr "Введіть перелік додаткових плагінів, які буде завантажено в редактор, у форматі ім'я плагіна або ім'я плагіна|розміщення, по одному в рядку."
 
@@ -224,7 +216,7 @@ msgstr "Введіть список стилів, які з'являться у 
 msgid "Enter a list of styles to appear in the table style pulldown. Format is title|class, one per line."
 msgstr "Введіть список стилів, які з'являться у меню стилів таблиці. Формат вводу: назва|клас, кожен з нового рядка."
 
-#: ../interfaces/utility.py:387
+#: ../interfaces/utility.py:390
 msgid "Entity encoding"
 msgstr ""
 
@@ -282,11 +274,11 @@ msgstr "Виділити"
 msgid "Home"
 msgstr "Головна"
 
-#: ../interfaces/utility.py:377
+#: ../interfaces/utility.py:380
 msgid "Image Objects"
 msgstr "Об'єкти-зображення"
 
-#: ../interfaces/utility.py:353
+#: ../interfaces/utility.py:356
 msgid "Images will be automatically captioned."
 msgstr "Зображення будуть автоматично отримувати підписи."
 
@@ -375,15 +367,15 @@ msgstr "Бібліотеки"
 msgid "Link to anchor"
 msgstr "Посилання на якір"
 
-#: ../interfaces/utility.py:347
+#: ../interfaces/utility.py:350
 msgid "Link using UIDs"
 msgstr "Створювати посилання, використовуючи UIDs"
 
-#: ../interfaces/utility.py:372
+#: ../interfaces/utility.py:375
 msgid "Linkable Objects"
 msgstr "Об'єкти-посилання"
 
-#: ../interfaces/utility.py:348
+#: ../interfaces/utility.py:351
 msgid "Links to objects on this site can use unique object ids so that the links remain valid even if the target object is renamed or moved elsewhere on the site."
 msgstr "Посилання до об'єктів на сайті можуть містити унікальні id, які допоможуть зберегти посилання робочими у випадку, якщо ці об'єкти буде перейменовано чи перенесено в інше місце сайту."
 
@@ -404,7 +396,7 @@ msgstr "Маленькі римські букви"
 msgid "Mail"
 msgstr "Електронна пошта"
 
-#: ../interfaces/utility.py:390
+#: ../interfaces/utility.py:393
 msgid "Named"
 msgstr ""
 
@@ -423,7 +415,7 @@ msgstr "Звичайний параграф"
 msgid "Numbers"
 msgstr "Цифри"
 
-#: ../interfaces/utility.py:390
+#: ../interfaces/utility.py:393
 msgid "Numeric"
 msgstr "Числовий"
 
@@ -470,7 +462,7 @@ msgstr "Друк"
 msgid "Pull-quote"
 msgstr "Цитата"
 
-#: ../interfaces/utility.py:390
+#: ../interfaces/utility.py:393
 msgid "Raw"
 msgstr ""
 
@@ -490,7 +482,7 @@ msgstr ""
 msgid "Right to left"
 msgstr "Справа наліво"
 
-#: ../interfaces/utility.py:357
+#: ../interfaces/utility.py:360
 msgid "Rooted to current object"
 msgstr "Прив'язати до поточного об'єкту"
 
@@ -573,15 +565,11 @@ msgstr "Таблиці"
 msgid "Text"
 msgstr "Текст"
 
-#: ../interfaces/utility.py:334
-msgid "The URL of the 'After the Deadline' grammar and spell checking server. The default value is the public server, but ideally you should download and install your own and specify its address here."
-msgstr ""
-
 #: ../interfaces/utility.py:294
 msgid "This option allows you to choose the spellchecker for TinyMCE. If you want the spellchecker button to be visible, make sure it is enabled in the toolbar settings."
 msgstr ""
 
-#: ../interfaces/utility.py:388
+#: ../interfaces/utility.py:391
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
 msgstr ""
 
@@ -695,7 +683,7 @@ msgstr "Великі римські букви"
 msgid "Visual control characters on/off"
 msgstr "Увімкнути/вимкнути візуальний контроль символів "
 
-#: ../interfaces/utility.py:358
+#: ../interfaces/utility.py:361
 msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
 msgstr "Якщо увімкнено, то користувача буде прив'язано до поточного об'єкту і не буде можливості додати посилання та зображення з інших частин сайту."
 
@@ -703,8 +691,23 @@ msgstr "Якщо увімкнено, то користувача буде при
 msgid "Writing direction"
 msgstr "Напрямок письма"
 
+#. Default: "The URL of the \"After the Deadline\" grammar and spell checking server. The default value is the public server, but ideally you should download and install your own and specify its address here."
+#: ../interfaces/utility.py:336
+msgid "help_atd_service_url"
+msgstr ""
+
+#. Default: "A list of erorr types which the \"After the Deadline\" spellchecker should check for. By default, all the available error type will be listed here."
+#: ../interfaces/utility.py:323
+msgid "help_atderrortypes_to_show"
+msgstr ""
+
 #: ../interfaces/utility.py:303
 msgid "ieSpell (free for personal use)"
+msgstr ""
+
+#. Default: "A list of strings which the \"After the Deadline\"spellchecker should ignore. Note: This option is only applicable when the appropriate spellchecker has been chosen above."
+#: ../interfaces/utility.py:312
+msgid "label_atd_ignore_strings"
 msgstr ""
 
 #. Default: "Edit without visual editor"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-03-16 15:09+0000\n"
+"POT-Creation-Date: 2011-03-17 11:01+0000\n"
 "PO-Revision-Date: 2011-01-05 15:28+0100\n"
 "Last-Translator: Mikel Larreategi <mlarreategi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,6 @@ msgstr ""
 #: ../utility.py:616
 msgid "(remove style)"
 msgstr "Estiloa kendua"
-
-#: ../interfaces/utility.py:322
-msgid "A list of erorr types which the After the Deadline" spellchecker should check for. By default, all the available error type will be listed here."
-msgstr ""
-
-#: ../interfaces/utility.py:312
-msgid "A list of strings which the "After the Deadline"spellchecker should ignore. Note: This option is only applicable when the appropriate spellchecker has been chosen above."
-msgstr ""
 
 #: ../interfaces/utility.py:305
 msgid "After the deadline (FLOSS)"
@@ -46,7 +38,7 @@ msgstr "Ezkerrera"
 msgid "Align right"
 msgstr "Eskuinera"
 
-#: ../interfaces/utility.py:352
+#: ../interfaces/utility.py:355
 msgid "Allow captioned images"
 msgstr "Irudi-oinak sartzea aktibatu"
 
@@ -55,7 +47,7 @@ msgstr "Irudi-oinak sartzea aktibatu"
 msgid "Anchors"
 msgstr "Aingurak"
 
-#: ../interfaces/utility.py:321
+#: ../interfaces/utility.py:322
 msgid "AtD Error types to show"
 msgstr ""
 
@@ -63,7 +55,7 @@ msgstr ""
 msgid "AtD Ignore strings"
 msgstr ""
 
-#: ../interfaces/utility.py:333
+#: ../interfaces/utility.py:335
 msgid "AtD Service URL"
 msgstr ""
 
@@ -101,11 +93,11 @@ msgstr "Kodea garbitu"
 msgid "Clear floats"
 msgstr "Float elementuak garbitu"
 
-#: ../interfaces/utility.py:367
+#: ../interfaces/utility.py:370
 msgid "Contains Anchors"
 msgstr "Aingurak ditu"
 
-#: ../interfaces/utility.py:362
+#: ../interfaces/utility.py:365
 msgid "Contains Objects"
 msgstr "Objektuak ditu"
 
@@ -119,7 +111,7 @@ msgstr "Kopiatu"
 msgid "Current Folder"
 msgstr "Uneko karpeta"
 
-#: ../interfaces/utility.py:382
+#: ../interfaces/utility.py:385
 msgid "Custom Plugins"
 msgstr "Pertsonalizatutako pluginak"
 
@@ -195,23 +187,23 @@ msgstr "Kontestu-menua aktibatu."
 msgid "Enable resizing the editor window."
 msgstr "Editorearen leihoaren tamaina aldatzea aktibatu."
 
-#: ../interfaces/utility.py:373
+#: ../interfaces/utility.py:376
 msgid "Enter a list of content types which can be linked. Format is one contenttype per line."
 msgstr "Lotura egin ahal zaien elementu-moten zerrenda. Idatzi bat lerro bakoitzean."
 
-#: ../interfaces/utility.py:378
+#: ../interfaces/utility.py:381
 msgid "Enter a list of content types which can be used as images. Format is one contenttype per line."
 msgstr "Irudi gisa erabil daitezkeen elementu-motak. Idatzi bat lerro bakoitzean."
 
-#: ../interfaces/utility.py:368
+#: ../interfaces/utility.py:371
 msgid "Enter a list of content types which can contain anchors. Format is one contenttype per line."
 msgstr "Aingurak izan ditzaketen elementu-moten zerrenda. Idatzi bat lerro bakoitzean."
 
-#: ../interfaces/utility.py:363
+#: ../interfaces/utility.py:366
 msgid "Enter a list of content types which can contain other objects. Format is one contenttype per line."
 msgstr "Beste elementu batzuk izan ditzaketen elementu-motak (karpeta erakoak). Idatzi bat lerro bakoitzean."
 
-#: ../interfaces/utility.py:383
+#: ../interfaces/utility.py:386
 msgid "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
 msgstr "Editorean gehitu daitezkeen pluginak. Idatzi pluginaren-izena edo pluginaren-izena|kokapena lerro bakoitzean."
 
@@ -227,7 +219,7 @@ msgstr "Estiloen menuan agertu daitezkeen estiloak. Idatzi formatu honetan, bat 
 msgid "Enter a list of styles to appear in the table style pulldown. Format is title|class, one per line."
 msgstr "Tauletan aukeratu daitezkeen estiloak. Idatzi bat lerro bakoitzean eta formatu honetan: izena|klase izena"
 
-#: ../interfaces/utility.py:387
+#: ../interfaces/utility.py:390
 msgid "Entity encoding"
 msgstr "Entitatean kodifikazioa"
 
@@ -287,11 +279,11 @@ msgstr "Markatu"
 msgid "Home"
 msgstr "Hasiera"
 
-#: ../interfaces/utility.py:377
+#: ../interfaces/utility.py:380
 msgid "Image Objects"
 msgstr "Irudiak"
 
-#: ../interfaces/utility.py:353
+#: ../interfaces/utility.py:356
 msgid "Images will be automatically captioned."
 msgstr "Irudien oinak automatikoki ekarri."
 
@@ -384,15 +376,15 @@ msgstr "Liburutegiak"
 msgid "Link to anchor"
 msgstr "Aingurara lotura"
 
-#: ../interfaces/utility.py:347
+#: ../interfaces/utility.py:350
 msgid "Link using UIDs"
 msgstr "UIDak erabiliz egin lotura"
 
-#: ../interfaces/utility.py:372
+#: ../interfaces/utility.py:375
 msgid "Linkable Objects"
 msgstr "Lotura egin dakieken elementuak"
 
-#: ../interfaces/utility.py:348
+#: ../interfaces/utility.py:351
 msgid "Links to objects on this site can use unique object ids so that the links remain valid even if the target object is renamed or moved elsewhere on the site."
 msgstr "Elementuetarako loturak egitean, elementuan identifikadorea erabili daiteke (UIDa) eta horrela loturak ondo agertuko dira nahiz eta elementuen izena edo kokapena aldatu."
 
@@ -414,7 +406,7 @@ msgstr "Zenbaki erromatar xeheak"
 msgid "Mail"
 msgstr "Posta"
 
-#: ../interfaces/utility.py:390
+#: ../interfaces/utility.py:393
 msgid "Named"
 msgstr "Izenduna"
 
@@ -433,7 +425,7 @@ msgstr "Parrafo arrunta"
 msgid "Numbers"
 msgstr "Zenbakiak"
 
-#: ../interfaces/utility.py:390
+#: ../interfaces/utility.py:393
 msgid "Numeric"
 msgstr "Zenbakia"
 
@@ -481,7 +473,7 @@ msgstr "Inprimatu"
 msgid "Pull-quote"
 msgstr "Alde baten destakatuta"
 
-#: ../interfaces/utility.py:390
+#: ../interfaces/utility.py:393
 msgid "Raw"
 msgstr "Dagoen moduan"
 
@@ -501,7 +493,7 @@ msgstr "Elementu motak"
 msgid "Right to left"
 msgstr "Eskuinetik ezkerrera"
 
-#: ../interfaces/utility.py:357
+#: ../interfaces/utility.py:360
 msgid "Rooted to current object"
 msgstr "Uneko elementura errotu"
 
@@ -585,15 +577,11 @@ msgstr "Taulak"
 msgid "Text"
 msgstr "Testua"
 
-#: ../interfaces/utility.py:334
-msgid "The URL of the 'After the Deadline' grammar and spell checking server. The default value is the public server, but ideally you should download and install your own and specify its address here."
-msgstr ""
-
 #: ../interfaces/utility.py:294
 msgid "This option allows you to choose the spellchecker for TinyMCE. If you want the spellchecker button to be visible, make sure it is enabled in the toolbar settings."
 msgstr ""
 
-#: ../interfaces/utility.py:388
+#: ../interfaces/utility.py:391
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
 msgstr "Aukera honek entitateak nola prozesatu kontrolatzen du: Izenduna: karaktereak izendun entitate bihurtuko dira. Zenbakizkoa: karaktereak zenbakizko entitate bihurtuko dira. Dagoen moduan: karaktere guztiak entitateak ez balira moduan gordeko dira XMLko berezko entitateak (amp, lt, gt, quot) izan ezik."
 
@@ -713,7 +701,7 @@ msgstr "Zenbaki erromatar larriak"
 msgid "Visual control characters on/off"
 msgstr "Kontrol karaktereak erakutsi ala ez"
 
-#: ../interfaces/utility.py:358
+#: ../interfaces/utility.py:361
 msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
 msgstr "Aktibatuta dagoenean, erabiltzailearentzat uneko elementua izango da erroko elementua, eta ondorioz ezingo ditu webgunearen beste leku batzuetako elementuetarako loturak egin edo hango irudiak gehitu."
 
@@ -721,8 +709,23 @@ msgstr "Aktibatuta dagoenean, erabiltzailearentzat uneko elementua izango da err
 msgid "Writing direction"
 msgstr "Idazteko zentzua"
 
+#. Default: "The URL of the \"After the Deadline\" grammar and spell checking server. The default value is the public server, but ideally you should download and install your own and specify its address here."
+#: ../interfaces/utility.py:336
+msgid "help_atd_service_url"
+msgstr ""
+
+#. Default: "A list of erorr types which the \"After the Deadline\" spellchecker should check for. By default, all the available error type will be listed here."
+#: ../interfaces/utility.py:323
+msgid "help_atderrortypes_to_show"
+msgstr ""
+
 #: ../interfaces/utility.py:303
 msgid "ieSpell (free for personal use)"
+msgstr ""
+
+#. Default: "A list of strings which the \"After the Deadline\"spellchecker should ignore. Note: This option is only applicable when the appropriate spellchecker has been chosen above."
+#: ../interfaces/utility.py:312
+msgid "label_atd_ignore_strings"
 msgstr ""
 
 #. Default: "Edit without visual editor"

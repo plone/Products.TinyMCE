@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-03-16 15:09+0000\n"
+"POT-Creation-Date: 2011-03-17 11:01+0000\n"
 "PO-Revision-Date: 2010-08-21 17:33+0900\n"
 "Last-Translator: Takeshi Yamamoto (Retsu) <tyam@mac.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,14 +20,6 @@ msgstr ""
 #: ../utility.py:616
 msgid "(remove style)"
 msgstr "(スタイルを除去)"
-
-#: ../interfaces/utility.py:322
-msgid "A list of erorr types which the After the Deadline" spellchecker should check for. By default, all the available error type will be listed here."
-msgstr ""
-
-#: ../interfaces/utility.py:312
-msgid "A list of strings which the "After the Deadline"spellchecker should ignore. Note: This option is only applicable when the appropriate spellchecker has been chosen above."
-msgstr ""
 
 #: ../interfaces/utility.py:305
 msgid "After the deadline (FLOSS)"
@@ -49,7 +41,7 @@ msgstr "左揃え"
 msgid "Align right"
 msgstr "右揃え"
 
-#: ../interfaces/utility.py:352
+#: ../interfaces/utility.py:355
 msgid "Allow captioned images"
 msgstr "キャプション付き画像を許す"
 
@@ -58,7 +50,7 @@ msgstr "キャプション付き画像を許す"
 msgid "Anchors"
 msgstr "アンカー"
 
-#: ../interfaces/utility.py:321
+#: ../interfaces/utility.py:322
 msgid "AtD Error types to show"
 msgstr ""
 
@@ -66,7 +58,7 @@ msgstr ""
 msgid "AtD Ignore strings"
 msgstr ""
 
-#: ../interfaces/utility.py:333
+#: ../interfaces/utility.py:335
 msgid "AtD Service URL"
 msgstr ""
 
@@ -104,11 +96,11 @@ msgstr "乱雑なコードを整頓する"
 msgid "Clear floats"
 msgstr "フロートを解除"
 
-#: ../interfaces/utility.py:367
+#: ../interfaces/utility.py:370
 msgid "Contains Anchors"
 msgstr "アンカーを含める"
 
-#: ../interfaces/utility.py:362
+#: ../interfaces/utility.py:365
 msgid "Contains Objects"
 msgstr "オブジェクトを含める"
 
@@ -122,7 +114,7 @@ msgstr "コピー"
 msgid "Current Folder"
 msgstr "カレントフォルダ"
 
-#: ../interfaces/utility.py:382
+#: ../interfaces/utility.py:385
 msgid "Custom Plugins"
 msgstr "カスタムプラグイン"
 
@@ -198,23 +190,23 @@ msgstr "コンテクストメニューを有効にする"
 msgid "Enable resizing the editor window."
 msgstr "エディタ枠のサイズ調整を有効にする"
 
-#: ../interfaces/utility.py:373
+#: ../interfaces/utility.py:376
 msgid "Enter a list of content types which can be linked. Format is one contenttype per line."
 msgstr "リンクされるコンテンツタイプのリストを入れてください。１行につき１コンテンツタイプを書きます。"
 
-#: ../interfaces/utility.py:378
+#: ../interfaces/utility.py:381
 msgid "Enter a list of content types which can be used as images. Format is one contenttype per line."
 msgstr "画像として使われるコンテンツタイプのリストを入れてください。１行につき１コンテンツタイプを書きます。"
 
-#: ../interfaces/utility.py:368
+#: ../interfaces/utility.py:371
 msgid "Enter a list of content types which can contain anchors. Format is one contenttype per line."
 msgstr "アンカーを含むコンテンツタイプのリストを入れてください。１行につき１コンテンツタイプを書きます。"
 
-#: ../interfaces/utility.py:363
+#: ../interfaces/utility.py:366
 msgid "Enter a list of content types which can contain other objects. Format is one contenttype per line."
 msgstr "他のオブジェクトを含むコンテンツタイプのリストを入力してください。１行につき１コンテンツタイプを書きます。"
 
-#: ../interfaces/utility.py:383
+#: ../interfaces/utility.py:386
 msgid "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
 msgstr "エディタにロードされるカスタムプラグインのリストを入れてください。１行につき１つのプラグイン名かプラグイン名|場所を書きます。"
 
@@ -230,7 +222,7 @@ msgstr "スタイルプルダウンに現れるスタイルのリストを入れ
 msgid "Enter a list of styles to appear in the table style pulldown. Format is title|class, one per line."
 msgstr "表スタイルプルダウンに現れるスタイルのリストを入力してください。１行につき１つのタイトル|クラスを書きます。"
 
-#: ../interfaces/utility.py:387
+#: ../interfaces/utility.py:390
 msgid "Entity encoding"
 msgstr "エンコーディング"
 
@@ -290,11 +282,11 @@ msgstr "ハイライト"
 msgid "Home"
 msgstr "ホーム"
 
-#: ../interfaces/utility.py:377
+#: ../interfaces/utility.py:380
 msgid "Image Objects"
 msgstr "画像オブジェクト"
 
-#: ../interfaces/utility.py:353
+#: ../interfaces/utility.py:356
 msgid "Images will be automatically captioned."
 msgstr "画像にキャプションが自動的に付けられます"
 
@@ -387,15 +379,15 @@ msgstr "ライブラリ"
 msgid "Link to anchor"
 msgstr "アンカーへリンク"
 
-#: ../interfaces/utility.py:347
+#: ../interfaces/utility.py:350
 msgid "Link using UIDs"
 msgstr "UIDを使ってリンク"
 
-#: ../interfaces/utility.py:372
+#: ../interfaces/utility.py:375
 msgid "Linkable Objects"
 msgstr "リンク可能なオブジェクト"
 
-#: ../interfaces/utility.py:348
+#: ../interfaces/utility.py:351
 msgid "Links to objects on this site can use unique object ids so that the links remain valid even if the target object is renamed or moved elsewhere on the site."
 msgstr "このサイトのオブジェクトへのリンクはユニークオブジェクトIDを使うことができるので、たとえリンク先のオブジェクトの名前が変えられたり、サイト内の別の場所に移動したとしても、依然としてリンクは有効なまま残ります。"
 
@@ -417,7 +409,7 @@ msgstr ""
 msgid "Mail"
 msgstr "メール"
 
-#: ../interfaces/utility.py:390
+#: ../interfaces/utility.py:393
 msgid "Named"
 msgstr ""
 
@@ -436,7 +428,7 @@ msgstr ""
 msgid "Numbers"
 msgstr ""
 
-#: ../interfaces/utility.py:390
+#: ../interfaces/utility.py:393
 msgid "Numeric"
 msgstr ""
 
@@ -484,7 +476,7 @@ msgstr "印刷"
 msgid "Pull-quote"
 msgstr ""
 
-#: ../interfaces/utility.py:390
+#: ../interfaces/utility.py:393
 msgid "Raw"
 msgstr ""
 
@@ -504,7 +496,7 @@ msgstr "リソースタイプ"
 msgid "Right to left"
 msgstr "右から左"
 
-#: ../interfaces/utility.py:357
+#: ../interfaces/utility.py:360
 msgid "Rooted to current object"
 msgstr "現在のオブジェクトをルートにする"
 
@@ -588,15 +580,11 @@ msgstr ""
 msgid "Text"
 msgstr "テキスト"
 
-#: ../interfaces/utility.py:334
-msgid "The URL of the 'After the Deadline' grammar and spell checking server. The default value is the public server, but ideally you should download and install your own and specify its address here."
-msgstr ""
-
 #: ../interfaces/utility.py:294
 msgid "This option allows you to choose the spellchecker for TinyMCE. If you want the spellchecker button to be visible, make sure it is enabled in the toolbar settings."
 msgstr ""
 
-#: ../interfaces/utility.py:388
+#: ../interfaces/utility.py:391
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
 msgstr "このオプションはエンティティ/文字が処理される方法を制御します。Named: 文字はエンティティオプションを基にして名前つきエンティティに変換されます。Numeric: 文字は数値エンティティに変換されます。Raw: すべての文字は非エンティティ形式で格納されます。ただし次のようなXMLデフォルトエンティティは除きます: amp lt gt quot"
 
@@ -716,7 +704,7 @@ msgstr ""
 msgid "Visual control characters on/off"
 msgstr ""
 
-#: ../interfaces/utility.py:358
+#: ../interfaces/utility.py:361
 msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
 msgstr ""
 
@@ -724,8 +712,23 @@ msgstr ""
 msgid "Writing direction"
 msgstr "書く方向"
 
+#. Default: "The URL of the \"After the Deadline\" grammar and spell checking server. The default value is the public server, but ideally you should download and install your own and specify its address here."
+#: ../interfaces/utility.py:336
+msgid "help_atd_service_url"
+msgstr ""
+
+#. Default: "A list of erorr types which the \"After the Deadline\" spellchecker should check for. By default, all the available error type will be listed here."
+#: ../interfaces/utility.py:323
+msgid "help_atderrortypes_to_show"
+msgstr ""
+
 #: ../interfaces/utility.py:303
 msgid "ieSpell (free for personal use)"
+msgstr ""
+
+#. Default: "A list of strings which the \"After the Deadline\"spellchecker should ignore. Note: This option is only applicable when the appropriate spellchecker has been chosen above."
+#: ../interfaces/utility.py:312
+msgid "label_atd_ignore_strings"
 msgstr ""
 
 #. Default: "Edit without visual editor"
