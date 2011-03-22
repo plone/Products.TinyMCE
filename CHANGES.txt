@@ -5,6 +5,10 @@ HISTORY
 1.2.4 (unreleased)
 ------------------
 
+- Use uuidFor(obj) from plone.outputfilters instead of obj.UID() for
+  plone.uuid compatibility.
+  [elro]
+
 - Internationalization fixes.
   [thomasdesvenain]
 
