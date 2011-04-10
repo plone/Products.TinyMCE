@@ -32,7 +32,7 @@
   <div tal:condition="wysiwyg"
        class="discreet" style="margin-top: -1em;">
     <a i18n:translate="suppress_visual_editor"
-       tal:attributes="href string:${request/URL0}?tinymce.suppress=${fname};">
+       tal:attributes="href string:${request/URL0}?tinymce.suppress=${fname}&amp;${request/QUERY_STRING};">
       Edit without visual editor
     </a>
   </div>
