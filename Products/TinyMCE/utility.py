@@ -16,6 +16,7 @@ from Acquisition import aq_inner
 from Acquisition import aq_parent
 from OFS.SimpleItem import SimpleItem
 from Products.Archetypes.Field import ImageField
+from Products.Archetypes.interfaces import IBaseObject
 from Products.Archetypes.interfaces.field import IImageField
 from Products.CMFCore.interfaces._content import IFolderish
 from Products.CMFCore.utils import getToolByName
@@ -576,8 +577,14 @@ class TinyMCE(SimpleItem):
 
     security.declareProtected('View', 'getContentType')
     def getContentType(self, object=None, fieldname=None):
-        if hasattr(aq_base(object), 'getContentType'):
-            return object.getContentType(fieldname)
+        context = aq_base(object)
+        if IBaseObject.providedBy(context):
+            if fieldname is None:
+                field = context.getPrimaryField()
+            else:
+                field = context.getField(fieldname) or getattr(context, fieldname, None)
+            if field and hasattr(aq_base(field), 'getContentType'):
+                return field.getContentType(context)
         return 'text/html'
 
     security.declareProtected('View', 'getConfiguration')
