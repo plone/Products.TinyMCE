@@ -30,7 +30,7 @@
       tinymce.dom.Event.add(window, 'load', function(e) { var config = new TinyMCEConfig('${element_id}'); config.init(); });"></script>
 
   <div tal:condition="wysiwyg"
-       class="discreet" style="margin-top: -1em;">
+       class="discreet suppressVisualEditor" style="margin-top: -1em;">
     <a i18n:translate="suppress_visual_editor"
        tal:attributes="href string:${request/URL0}?tinymce.suppress=${fname}&amp;${request/QUERY_STRING};">
       Edit without visual editor
