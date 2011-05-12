@@ -32,7 +32,7 @@
 .ploneSkin .mceRight {text-align:right}
 
 /* External */
-.ploneSkin .mceExternalToolbar {position:absolute; border-width: 0 0 1px 0; border-style: solid; border-color: #444; display:none; top:0; left:0; position: fixed; _position: absolute; _top: expression(eval((document.body.scrollTop)?document.body.scrollTop:document.documentElement.scrollTop)); background-color: #444; width: 100%; _width: expression(document.body.clientWidth); z-index: 3;}
+.ploneSkin .mceExternalToolbar {position:absolute; border-width: 0 0 1px 0; border-style: solid; border-color: #444; display:none; top:0; left:0; position: fixed; _position: absolute; _top: expression(eval((document.body.scrollTop)?document.body.scrollTop:document.documentElement.scrollTop)); background-color: #ddd; width: 100%; _width: expression(document.body.clientWidth); z-index: 3;}
 .ploneSkin .mceExternalToolbar td.mceToolbar {padding-right:13px;}
 .ploneSkin .mceExternalClose {position:absolute; top:1px; right:0px; width:22px; height:17px; background:url(../../plugins/inlinepopups/skins/plonepopup/img/buttons.gif) -66px 0;}
 
