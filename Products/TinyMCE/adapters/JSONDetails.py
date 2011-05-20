@@ -61,9 +61,15 @@ class JSONDetails(object):
             results['anchors'] = content_anchors.listAnchorNames()
         else:
             results['anchors'] = []
+        results.update(self.additionalDetails())
 
         return json.dumps(results)
-
+    
+    def additionalDetails(self):
+        """Hook to allow subclasses to supplement or override the default set of results
+        """
+        return {}
+    
     def _getPloneUrl(self):
         """Return the URL corresponding to the root of the Plone site."""
         portal_url = getToolByName(self.context, 'portal_url')
