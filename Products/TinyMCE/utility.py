@@ -1,6 +1,6 @@
 try:
     import json
-    json = json # Pyflakes
+    json = json  # Pyflakes
 except ImportError:
     import simplejson as json
 from types import StringTypes
@@ -36,11 +36,14 @@ from Products.TinyMCE.interfaces.utility import ITinyMCEToolbar
 from Products.TinyMCE.interfaces.utility import ITinyMCELibraries
 from Products.TinyMCE.interfaces.utility import ITinyMCEResourceTypes
 
+
 _ = MessageFactory('plone.tinymce')
+
 
 def form_adapter(context):
     """Form Adapter"""
     return getUtility(ITinyMCE)
+
 
 class TinyMCE(SimpleItem):
     """TinyMCE Utility"""
@@ -131,7 +134,7 @@ class TinyMCE(SimpleItem):
     toolbar_code = FieldProperty(ITinyMCEToolbar['toolbar_code'])
     toolbar_fullscreen = FieldProperty(ITinyMCEToolbar['toolbar_fullscreen'])
     customtoolbarbuttons = FieldProperty(ITinyMCEToolbar['customtoolbarbuttons'])
-    
+
     libraries_spellchecker_choice = FieldProperty(ITinyMCELibraries['libraries_spellchecker_choice'])
     libraries_atd_show_types = FieldProperty(ITinyMCELibraries['libraries_atd_show_types'])
     libraries_atd_ignore_strings = FieldProperty(ITinyMCELibraries['libraries_atd_ignore_strings'])
@@ -167,11 +170,11 @@ class TinyMCE(SimpleItem):
 
         scales = [{'value': '%s_%s' % (field_name, key),
                    'size': [value[0], value[1]],
-                   'title':key.capitalize() } for key, value in sizes.items()]
-        scales.sort(lambda x,y: cmp(x['size'][0], y['size'][0]))
-        scales.insert(0, {'value':'',
-                          'title':'Original',
-                          'size':[width, height]})
+                   'title': key.capitalize()} for key, value in sizes.items()]
+        scales.sort(lambda x, y: cmp(x['size'][0], y['size'][0]))
+        scales.insert(0, {'value': '',
+                          'title': 'Original',
+                          'size': [width, height]})
         return scales
 
     security.declarePrivate('getEnabledButtons')
@@ -308,7 +311,7 @@ class TinyMCE(SimpleItem):
         # Return the buttons
         return buttons
 
-    security.declarePrivate ('translateButtonsFromKupu')
+    security.declarePrivate('translateButtonsFromKupu')
     def translateButtonsFromKupu(self, context, buttons):
 
         return_buttons = []
@@ -401,9 +404,8 @@ class TinyMCE(SimpleItem):
                     return_buttons.append(button)
         return return_buttons
 
-    security.declarePrivate ('getValidElements')
+    security.declarePrivate('getValidElements')
     def getValidElements(self):
-
         XHTML_TAGS = set(
             'a abbr acronym address area b base bdo big blockquote body br '
             'button caption cite code col colgroup dd del div dfn dl dt em '
@@ -516,7 +518,7 @@ class TinyMCE(SimpleItem):
 
         # Add custom tags
         for custom_tag in custom_tags:
-            if not valid_elements.has_key(custom_tag):
+            if custom_tag not in valid_elements:
                 valid_elements[custom_tag] = COMMON_ATTRS
 
         # Get kupu library tool filter
@@ -531,7 +533,7 @@ class TinyMCE(SimpleItem):
             for ta in sc.keys():
                 tags = ta.replace(',', ' ').split()
                 attributes = sc[ta].replace(',', ' ').split()
-                stripped_combinations.append((tags,attributes))
+                stripped_combinations.append((tags, attributes))
         except(KeyError, AttributeError):
             if kupu_library_tool is not None:
                 stripped_combinations = kupu_library_tool.get_stripped_combinations()
@@ -540,7 +542,7 @@ class TinyMCE(SimpleItem):
         for (stripped_combination_tags, stripped_combination_attributes) in stripped_combinations:
             stripped_combination_attributes_set = set(stripped_combination_attributes)
             for stripped_combination_tag in stripped_combination_tags:
-                if valid_elements.has_key(stripped_combination_tag):
+                if stripped_combination_tag in valid_elements:
                     valid_elements[stripped_combination_tag] -= stripped_combination_attributes_set
 
         # Remove to be stripped attributes
@@ -554,9 +556,10 @@ class TinyMCE(SimpleItem):
             else:
                 stripped_attributes = set()
                 style_whitelist = ()
-        style_attribute = "style"
-        if len(style_whitelist) > 0:
-            style_attribute = 'style<' + '?'.join(style_whitelist)
+
+        #style_attribute = "style"
+        #if len(style_whitelist) > 0:
+            #style_attribute = 'style<' + '?'.join(style_whitelist)
 
         # Remove elements which are not in valid_tags
         for valid_element in valid_elements.keys():
@@ -595,9 +598,9 @@ class TinyMCE(SimpleItem):
         widget = getattr(field, 'widget', None)
         filter_buttons = getattr(widget, 'filter_buttons', None)
         allow_buttons = getattr(widget, 'allow_buttons', None)
-        redefine_parastyles = getattr (widget, 'redefine_parastyles', None)
-        parastyles = getattr (widget, 'parastyles', None)
-        rooted = getattr (widget, 'rooted', False)
+        redefine_parastyles = getattr(widget, 'redefine_parastyles', None)
+        parastyles = getattr(widget, 'parastyles', None)
+        rooted = getattr(widget, 'rooted', False)
         toolbar_width = getattr(widget, 'toolbar_width', self.toolbar_width)
 
         # Get safe html transform
@@ -631,7 +634,7 @@ class TinyMCE(SimpleItem):
         labels['label_print'] = translate(_('Print'), context=request)
         labels['label_no_items'] = translate(_('No items in this folder'), context=request)
         labels['label_no_anchors'] = translate(_('No anchors in this page'), context=request)
-        results['labels']= labels
+        results['labels'] = labels
 
         # Add styles to results
         results['styles'] = []
@@ -676,10 +679,10 @@ class TinyMCE(SimpleItem):
         # Filter buttons
         if allow_buttons is not None:
             allow_buttons = self.translateButtonsFromKupu(context=context, buttons=allow_buttons)
-            results['buttons'] = filter(lambda x:x in results['buttons'],allow_buttons)
+            results['buttons'] = filter(lambda x: x in results['buttons'], allow_buttons)
         if filter_buttons is not None:
             filter_buttons = self.translateButtonsFromKupu(context=context, buttons=filter_buttons)
-            results['buttons'] = filter(lambda x:x not in filter_buttons, results['buttons'])
+            results['buttons'] = filter(lambda x: x not in filter_buttons, results['buttons'])
 
         # Get valid html elements
         results['valid_elements'] = self.getValidElements()
@@ -768,7 +771,7 @@ class TinyMCE(SimpleItem):
         results['entity_encoding'] = self.entity_encoding
 
         portal = getUtility(ISiteRoot)
-        results['portal_url'] =  aq_inner(portal).absolute_url()
+        results['portal_url'] = aq_inner(portal).absolute_url()
         nav_root = getNavigationRootObject(context, portal)
         results['navigation_root_url'] = nav_root.absolute_url()
 
@@ -784,7 +787,7 @@ class TinyMCE(SimpleItem):
         'ka de el gu he hi hu is id ia it ja ko lv lt lb mk ms ml mn se no nn fa '
         'pl pt ps ro ru sc sr ii si sk sl es sv ta tt te th tr tw uk ur cy vi zu'.split())
 
-        if context.REQUEST.has_key('LANGUAGE'):
+        if 'LANGUAGE' in context.REQUEST:
             results['language'] = context.REQUEST.LANGUAGE[:2]
             if results['language'] not in AVAILABLE_LANGUAGES:
                 results['language'] = "en"
@@ -814,7 +817,7 @@ class TinyMCE(SimpleItem):
         # init vars specific for "After the Deadline" spellchecker
         mtool = getToolByName(portal, 'portal_membership')
         member = mtool.getAuthenticatedMember()
-        results['atd_rpc_id'] = 'Products.TinyMCE-' + (member.getId() or '') # None when Anonymous User
+        results['atd_rpc_id'] = 'Products.TinyMCE-' + (member.getId() or '')  # None when Anonymous User
         results['atd_rpc_url'] = "%s/@@" % portal.absolute_url()
         results['atd_show_types'] = self.libraries_atd_show_types.strip().replace('\n', ',')
         results['atd_ignore_strings'] = self.libraries_atd_ignore_strings.strip().replace('\n', ',')
@@ -824,7 +827,7 @@ class TinyMCE(SimpleItem):
 
 class ImageCaptioningEnabler(object):
     implements(IImageCaptioningEnabler)
-    
+
     @property
     def available(self):
         tinymce = queryUtility(ITinyMCE)

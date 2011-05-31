@@ -14,6 +14,7 @@ from Products.CMFCore.interfaces._content import IFolderish
 from Products.CMFCore.utils import getToolByName
 from Acquisition import aq_inner
 
+
 class JSONFolderListing(object):
     """Returns a folderish like listing in JSON"""
     implements(IJSONFolderListing)
@@ -39,17 +40,16 @@ class JSONFolderListing(object):
         relative = aq_inner(self.context).getPhysicalPath()[len(root.getPhysicalPath()):]
         if path is None:
             # Add siteroot
-            result.append({'title':root.title_or_id(),'url':'/'.join(root.getPhysicalPath())})
+            result.append({'title': root.title_or_id(), 'url': '/'.join(root.getPhysicalPath())})
 
         for i in range(len(relative)):
-            now = relative[ :i+1 ]
+            now = relative[:i + 1]
             obj = aq_inner(root.restrictedTraverse(now))
 
             if IFolderish.providedBy(obj):
                 if not now[-1] == 'talkback':
-                    result.append({'title':obj.title_or_id(),'url':root_url + '/' + '/'.join(now)})
+                    result.append({'title': obj.title_or_id(), 'url': root_url + '/' + '/'.join(now)})
         return result
-
 
     def getListing(self, filter_portal_types, rooted, document_base_url, upload_type=None):
         """Returns the actual listing"""
@@ -75,31 +75,31 @@ class JSONFolderListing(object):
         else:
             # get all items from siteroot to context (title and url)
             results['path'] = self.getBreadcrumbs()
-        
+
         # get all portal types and get information from brains
         path = '/'.join(object.getPhysicalPath())
-        for brain in portal_catalog(portal_type=filter_portal_types, sort_on='getObjPositionInParent', path={'query': path, 'depth':1}):
+        for brain in portal_catalog(portal_type=filter_portal_types, sort_on='getObjPositionInParent', path={'query': path, 'depth': 1}):
             catalog_results.append({
                 'id': brain.getId,
-                'uid': brain.UID or None, # Maybe Missing.Value
+                'uid': brain.UID or None,  # Maybe Missing.Value
                 'url': brain.getURL(),
                 'portal_type': brain.portal_type,
                 'normalized_type': normalizer.normalize(brain.portal_type),
-                'title' : brain.Title == "" and brain.id or brain.Title,
-                'icon' : brain.getIcon,
-                'is_folderish' : brain.is_folderish
+                'title': brain.Title == "" and brain.id or brain.Title,
+                'icon': brain.getIcon,
+                'is_folderish': brain.is_folderish
                 })
 
         # add catalog_ressults
-        results['items'] = catalog_results 
-        
+        results['items'] = catalog_results
+
         # decide whether to show the upload new button
         results['upload_allowed'] = False
         if upload_type:
             portal_types = getToolByName(object, 'portal_types')
             fti = getattr(portal_types, upload_type, None)
             if fti is not None:
-                results['upload_allowed'] = fti.isConstructionAllowed(object) 
-        
+                results['upload_allowed'] = fti.isConstructionAllowed(object)
+
         # return results in JSON format
         return json.dumps(results)

@@ -1,5 +1,6 @@
 from zope.interface import Interface
 
+
 class ITinyMCEUrl(Interface):
     """TinyMCE Url"""
 

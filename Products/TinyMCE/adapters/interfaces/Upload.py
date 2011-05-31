@@ -1,5 +1,6 @@
 from zope.interface import Interface
 
+
 class IUpload(Interface):
     """Adds the uploaded file to the folder"""
 

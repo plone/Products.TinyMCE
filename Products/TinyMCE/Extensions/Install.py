@@ -1,6 +1,7 @@
 from Products.CMFCore.utils import getToolByName
 from Products.TinyMCE.setuphandlers import uninstall_mimetype_and_transforms, remove_editor, unregisterUtility
 
+
 def uninstall(portal, reinstall=False):
 
     if not reinstall:

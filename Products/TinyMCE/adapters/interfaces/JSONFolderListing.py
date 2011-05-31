@@ -1,5 +1,6 @@
 from zope.interface import Interface
 
+
 class IJSONFolderListing(Interface):
     """Returns a folderish like listing in JSON"""
 

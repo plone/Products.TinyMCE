@@ -11,26 +11,29 @@ from zope.deferredimport import deprecatedFrom
 
 import transaction
 
+
 def add_editor(site):
     """ add TinyMCE to 'my preferences' """
     portal_props = getUtility(IPropertiesTool)
-    site_props=getattr(portal_props,'site_properties', None)
-    attrname='available_editors'
+    site_props = getattr(portal_props, 'site_properties', None)
+    attrname = 'available_editors'
     if not site_props is None:
-        editors=list(site_props.getProperty(attrname))
+        editors = list(site_props.getProperty(attrname))
         if 'TinyMCE' not in editors:
             editors.append('TinyMCE')
         site_props._updateProperty(attrname, editors)
 
+
 def remove_editor(site):
     """ Remove TinyMCE from 'my preferences' """
     portal_props = getUtility(IPropertiesTool)
-    site_props=getattr(portal_props,'site_properties', None)
-    attrname='available_editors'
+    site_props = getattr(portal_props, 'site_properties', None)
+    attrname = 'available_editors'
     if not site_props is None:
-        editors=list(site_props.getProperty(attrname))
-        editors=[x for x in editors if x != 'TinyMCE']
+        editors = list(site_props.getProperty(attrname))
+        editors = [x for x in editors if x != 'TinyMCE']
         site_props._updateProperty(attrname, editors)
+
 
 def uninstall_mimetype_and_transforms(context):
     """ unregister text/x-tinymce-output-html mimetype and transformations for captioned images """
@@ -40,11 +43,13 @@ def uninstall_mimetype_and_transforms(context):
     unregister_transform_policy(context, 'text/x-safe-html')
     register_transform_policy(context, "text/x-html-safe", "html_to_plone_outputfilters_html")
 
+
 def importVarious(context):
     if context.readDataFile('portal-tinymce.txt') is None:
         return
     site = context.getSite()
     add_editor(site)
+
 
 def unregisterUtility(context):
     my_utility = getUtility(ITinyMCE)

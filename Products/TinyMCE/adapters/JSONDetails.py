@@ -40,12 +40,12 @@ class JSONDetails(object):
             field_name = 'image'
             images = self.context.restrictedTraverse('@@images')
 
-            results['thumb'] = '%s/@@images/%s/%s' % (image_url, field_name, 'thumb') 
+            results['thumb'] = '%s/@@images/%s/%s' % (image_url, field_name, 'thumb')
             sizes = images.getAvailableSizes(field_name)
             scales = [{'value': '@@images/%s/%s' % (field_name, key),
                        'size': size,
                        'title': key.capitalize()} for key, size in sizes.items()]
-            scales.sort(lambda x,y: cmp(x['size'][0], y['size'][0]))
+            scales.sort(lambda x, y: cmp(x['size'][0], y['size'][0]))
             original_size = images.getImageSize(field_name)
             if original_size[0] < 0 or original_size[1] < 0:
                 original_size = (0, 0)

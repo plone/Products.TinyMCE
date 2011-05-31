@@ -2,7 +2,6 @@ import httplib
 
 from zope.interface import implements
 from zope.component import getUtility
-from AccessControl import ClassSecurityInfo
 
 from Products.Five.browser import BrowserView
 
@@ -14,6 +13,7 @@ from Products.TinyMCE.adapters.interfaces.Save import ISave
 from Products.TinyMCE.browser.interfaces.browser import ITinyMCEBrowserView
 from Products.TinyMCE.browser.interfaces.browser import IATDProxyView
 from Products.TinyMCE.interfaces.utility import ITinyMCE
+
 
 class TinyMCEBrowserView(BrowserView):
     """TinyMCE Browser View"""
@@ -30,7 +30,7 @@ class TinyMCEBrowserView(BrowserView):
 
         object = ISave(self.context)
         return object.save(text, fieldname)
-    
+
     def setDescription(self, description):
         """Sets the description of an inserted image"""
 
@@ -46,7 +46,7 @@ class TinyMCEBrowserView(BrowserView):
         linkable_portal_types = utility.linkable.split('\n')
 
         object = IJSONFolderListing(self.context)
-        results = object.getListing(linkable_portal_types, rooted, document_base_url, 'File') 
+        results = object.getListing(linkable_portal_types, rooted, document_base_url, 'File')
         return results
 
     def jsonImageFolderListing(self, rooted, document_base_url):
@@ -115,12 +115,10 @@ class ATDProxyView(object):
         response = service.getresponse()
         service.close()
 
-        if response.status <> httplib.OK:
+        if response.status != httplib.OK:
             raise Exception('Unexpected response code from AtD service %d' % response.status)
 
         self.request.RESPONSE.setHeader('content-type', 'text/xml;charset=utf-8')
-        respxml = response.read() 
+        respxml = response.read()
         xml = respxml.strip().replace("\r", '').replace("\n", '').replace('>  ', '>')
         return xml
-
-        

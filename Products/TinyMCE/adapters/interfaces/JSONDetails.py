@@ -1,5 +1,6 @@
 from zope.interface import Interface
 
+
 class IJSONDetails(Interface):
     """Return details of the current object in JSON"""
 

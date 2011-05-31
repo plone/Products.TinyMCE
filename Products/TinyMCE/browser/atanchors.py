@@ -4,6 +4,7 @@ from Products.TinyMCE.browser.interfaces.anchors import IAnchorView
 from elementtree import HTMLTreeBuilder
 from zope.interface import implements
 
+
 class ATAnchorView(BrowserView):
     implements(IAnchorView)
 

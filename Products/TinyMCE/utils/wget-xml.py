@@ -2,7 +2,7 @@
    Usage: wget-xml.py
 """
 
-import os, sys, string
+import os
 
 try:
     import win32api
@@ -17,8 +17,8 @@ AVAILABLE_LANGUAGES = set(
     'ka de el gu he hi hu is id ia it ja ko lv lt lb mk ms ml mn se no nn fa '
     'pl pt ps ro ru sc sr ii si sk sl es sv ta tt te th tr tw uk ur cy vi zu'.split())
 
-def main():
 
+def main():
     if not os.path.exists('xml'):
         os.mkdir('xml')
 
