@@ -1,5 +1,6 @@
 from zope.interface import Interface
 
+
 class ISave(Interface):
     """Saves the richedit field"""
 

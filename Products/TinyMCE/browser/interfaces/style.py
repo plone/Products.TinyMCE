@@ -1,5 +1,6 @@
 from zope.interface import Interface
 
+
 class ITinyMCEStyle(Interface):
     """TinyMCE Style"""
 

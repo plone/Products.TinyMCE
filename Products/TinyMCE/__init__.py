@@ -4,14 +4,14 @@ from Products.TinyMCE.utility import TinyMCE
 
 global tinymce_globals
 
-tinymce_globals=globals()
+
+tinymce_globals = globals()
 PROJECTNAME = "TinyMCE"
 
-tools = (
-    TinyMCE,
-    )
+tools = (TinyMCE,)
 
 setDefaultRoles('Plone Site Setup: TinyMCE', ('Manager', 'Site Administrator'))
+
 
 def initialize(context):
     registerDirectory('skins', tinymce_globals)

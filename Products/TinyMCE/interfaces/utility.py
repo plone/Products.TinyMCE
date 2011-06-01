@@ -3,7 +3,9 @@ from zope import schema
 from zope.i18nmessageid import MessageFactory
 from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
 
+
 _ = MessageFactory('plone.tinymce')
+
 
 class ITinyMCELayout(Interface):
     """This interface defines the layout properties."""
@@ -58,6 +60,7 @@ class ITinyMCELayout(Interface):
         title=_(u"Table styles"),
         description=_(u"Enter a list of styles to appear in the table style pulldown. Format is title|class, one per line."),
         required=False)
+
 
 class ITinyMCEToolbar(Interface):
     """This interface defines the toolbar properties."""
@@ -338,7 +341,7 @@ class ITinyMCELibraries(Interface):
             default=u"The URL of the \"After the Deadline\" grammar and spell " \
                     u"checking server. The default value is the public server, " \
                     u"but ideally you should download and install your own and " \
-                    u"specify its address here." ),
+                    u"specify its address here."),
         required=True,
         default=u"service.afterthedeadline.com",)
 
@@ -408,4 +411,3 @@ class ITinyMCE(
     def getConfiguration(self, context=None, field=None, request=None):
         """Get the configuration based on the control panel settings and the field settings.
         request can be provide for translation purpose."""
-

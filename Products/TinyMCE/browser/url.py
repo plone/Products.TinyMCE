@@ -4,6 +4,7 @@ from plone.outputfilters.browser.resolveuid import uuidToObject
 
 from Products.TinyMCE.browser.interfaces.url import ITinyMCEUrl
 
+
 class TinyMCEUrl(BrowserView):
     """TinyMCE Url"""
     implements(ITinyMCEUrl)

@@ -4,6 +4,7 @@ from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.setuphandlers import uninstall_mimetype_and_transforms
 from plone.outputfilters.setuphandlers import install_mimetype_and_transforms
 
+
 def meta_types_to_portal_types(meta_types):
     """Convert meta types to portal types"""
     meta_types = meta_types.replace(u'ATTopic', u'Topic')
@@ -15,6 +16,7 @@ def meta_types_to_portal_types(meta_types):
     meta_types = meta_types.replace(u'ATNewsItem', u'News Item')
     meta_types = meta_types.replace(u'ATDocument', u'Document')
     return meta_types
+
 
 def upgrade_10_to_11(setuptool):
     """Upgrade TinyMCE from 1.0 to 1.1"""
@@ -50,6 +52,7 @@ def upgrade_10_to_11(setuptool):
         del tinymce.autoresize_bottom_margin
     except AttributeError:
         pass
+
 
 def upgrade_11_to_2(setuptool):
     site = getSite()

@@ -1,5 +1,6 @@
 from zope.interface import Interface
 
+
 class IJSONSearch(Interface):
     """Returns a list of search results in JSON"""
 

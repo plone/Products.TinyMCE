@@ -1,5 +1,6 @@
 from zope.interface import Interface
 
+
 class ITinyMCEBrowserView(Interface):
     """TinyMCE Browser View"""
 
@@ -36,4 +37,3 @@ class IATDProxyView(Interface):
         """ Proxy for the AtD service's checkDocument function
             See http://www.afterthedeadline.com/api.slp for more info.
         """
-
