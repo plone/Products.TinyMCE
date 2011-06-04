@@ -5,6 +5,9 @@ HISTORY
 1.2.7 (unreleased)
 ------------------
 
+- Ported tests from doctests to unittests
+  [iElectric]
+
 - Add hook to JSONDetails to allow subclasses to supplement or override the results
   [anthonygerrard]
 
@@ -26,9 +29,6 @@ HISTORY
 
 - Add a CSS class to the `Edit without visual editor` note.
   [hannosch]
-
-- pep8
-  [iElectric]
 
 - pep8
   [iElectric]
