@@ -35,7 +35,7 @@ setup(name='Products.TinyMCE',
           'plone.app.imaging>=1.0.2',
           'plone.outputfilters',
       ] + requires,
-      extras_require = {
-            'test':  ['Products.PloneTestCase'],
+      extras_require={
+            'test': ['plone.app.testing', 'unittest2'],
             },
       )
