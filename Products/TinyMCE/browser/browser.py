@@ -5,7 +5,8 @@ from zope.component import getUtility
 
 from Products.Five.browser import BrowserView
 
-from Products.TinyMCE.adapters.interfaces.JSONFolderListing import IJSONFolderListing
+from Products.TinyMCE.adapters.interfaces.JSONFolderListing import \
+     IJSONFolderListing
 from Products.TinyMCE.adapters.interfaces.JSONSearch import IJSONSearch
 from Products.TinyMCE.adapters.interfaces.JSONDetails import IJSONDetails
 from Products.TinyMCE.adapters.interfaces.Upload import IUpload
@@ -46,7 +47,8 @@ class TinyMCEBrowserView(BrowserView):
         linkable_portal_types = utility.linkable.split('\n')
 
         object = IJSONFolderListing(self.context)
-        results = object.getListing(linkable_portal_types, rooted, document_base_url, 'File')
+        results = object.getListing(linkable_portal_types, rooted,
+                                    document_base_url, 'File')
         return results
 
     def jsonImageFolderListing(self, rooted, document_base_url):
@@ -57,7 +59,8 @@ class TinyMCEBrowserView(BrowserView):
         image_portal_types.extend(utility.containsobjects.split('\n'))
 
         object = IJSONFolderListing(self.context)
-        results = object.getListing(image_portal_types, rooted, document_base_url, 'Image')
+        results = object.getListing(image_portal_types, rooted,
+                                    document_base_url, 'Image')
         return results
 
     def jsonLinkableSearch(self, searchtext):
@@ -97,7 +100,7 @@ class TinyMCEBrowserView(BrowserView):
 
 
 class ATDProxyView(object):
-    """ Proxy for the 'After the Deadline" spellchecker
+    """ Proxy for the 'After the Deadline' spellchecker
     """
     implements(IATDProxyView)
 
@@ -116,9 +119,12 @@ class ATDProxyView(object):
         service.close()
 
         if response.status != httplib.OK:
-            raise Exception('Unexpected response code from AtD service %d' % response.status)
+            raise Exception('Unexpected response code from AtD service %d' %
+                            response.status)
 
-        self.request.RESPONSE.setHeader('content-type', 'text/xml;charset=utf-8')
+        self.request.RESPONSE.setHeader('content-type',
+                                        'text/xml;charset=utf-8')
         respxml = response.read()
-        xml = respxml.strip().replace("\r", '').replace("\n", '').replace('>  ', '>')
+        xml = respxml.strip().replace("\r", '').replace("\n", '').replace(
+            '>  ', '>')
         return xml
