@@ -39,7 +39,9 @@ class TinyMCEBrowserView(BrowserView):
         linkable_portal_types = utility.linkable.split('\n')
 
         context = aq_inner(self.context)
-        object = IJSONFolderListing(context)
+        object = IJSONFolderListing(context, None)
+        if object is None:
+            return ''
         results = object.getListing(linkable_portal_types, rooted,
                                     document_base_url, 'File')
         return results
@@ -52,7 +54,9 @@ class TinyMCEBrowserView(BrowserView):
         image_portal_types.extend(utility.containsobjects.split('\n'))
 
         context = aq_inner(self.context)
-        object = IJSONFolderListing(context)
+        object = IJSONFolderListing(context, None)
+        if object is None:
+            return ''
         results = object.getListing(image_portal_types, rooted,
                                     document_base_url, 'Image')
         return results
@@ -65,7 +69,9 @@ class TinyMCEBrowserView(BrowserView):
         linkable_portal_types.extend(utility.containsobjects.split('\n'))
 
         context = aq_inner(self.context)
-        object = IJSONSearch(context)
+        object = IJSONSearch(context, None)
+        if object is None:
+            return ''
         results = object.getSearchResults(linkable_portal_types, searchtext)
         return results
 
@@ -77,7 +83,9 @@ class TinyMCEBrowserView(BrowserView):
         image_portal_types.extend(utility.containsobjects.split('\n'))
 
         context = aq_inner(self.context)
-        object = IJSONSearch(context)
+        object = IJSONSearch(context, None)
+        if object is None:
+            return ''
         results = object.getSearchResults(image_portal_types, searchtext)
         return results
 
@@ -85,7 +93,9 @@ class TinyMCEBrowserView(BrowserView):
         """Returns the details of an object in JSON"""
 
         context = aq_inner(self.context)
-        object = IJSONDetails(context)
+        object = IJSONDetails(context, None)
+        if object is None:
+            return ''
         return object.getDetails()
 
     def jsonConfiguration(self, fieldname):
