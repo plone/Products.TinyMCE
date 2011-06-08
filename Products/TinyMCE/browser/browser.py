@@ -1,3 +1,4 @@
+from zope.app.component.hooks import getSite
 from zope.interface import implements
 from zope.component import getUtility
 from Products.Five.browser import BrowserView
@@ -90,7 +91,12 @@ class TinyMCEBrowserView(BrowserView):
     def jsonConfiguration(self, fieldname):
         """Return the configuration in JSON"""
         utility = getUtility(ITinyMCE)
-        context = aq_inner(self.context)
+        try:
+            context = aq_inner(self.context)
+        except AttributeError:
+            # Sometimes we get a strange context, e.g. a Singing and
+            # Dancing Composer that is not Acquisition aware.
+            context = getSite()
         return utility.getConfiguration(context=context,
                                         field=fieldname,
                                         request=self.request)

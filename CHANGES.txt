@@ -5,7 +5,10 @@ HISTORY
 1.1.11 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Do not fail with an ``AttributeError: __of__`` when displaying the
+  wysiwyg template called with a context that is not acquisition
+  aware.
+  [maurits]
 
 
 1.1.10 (2011-05-12)
@@ -20,6 +23,7 @@ HISTORY
 - In the link "Edit without visual editor", append existing url-parameters.
   Fixes https://dev.plone.org/plone/ticket/11632
   [WouterVH]
+
 
 1.1.9 (2011-04-02)
 ------------------
