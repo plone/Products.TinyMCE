@@ -5,6 +5,11 @@ HISTORY
 1.2.7 (unreleased)
 ------------------
 
+- Do not give a TypeError 'Could not adapt' when trying to adapt a
+  context that is not adaptable to IJSONFolderListing and friends.
+  Instead return nothing in the ajax call.
+  [maurits]
+
 - pep8
   [iElectric]
 
