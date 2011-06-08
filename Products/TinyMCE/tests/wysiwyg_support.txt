@@ -60,13 +60,22 @@ TinyMCE     TinyMCE                 TinyMCE
 <empty>     TinyMCE                 TinyMCE
 =====       =====                   ======
 
+Note that the "Use site's default" option is only available on Plone
+4, not on Plone 3.
 
 Set the editor globally to TinyMCE:
     >>> self.portal.portal_properties.site_properties.default_editor = 'TinyMCE'
 
-If the user sets 'Use site's default'...
+The next test should only be run on Plone 4 or higher.
+
+If the user sets "Use site's default"...
     >>> browser.open(personalizer)
-    >>> browser.getControl(name='wysiwyg_editor').value = ['']
+    >>> try:
+    ...     browser.getControl(name='wysiwyg_editor').value = ['']
+    ...     test_site_default = True
+    ... except:
+    ...     # Plone 3
+    ...     test_site_default = False
     >>> browser.getControl(name='form.button.Save').click()
     >>> print(browser.contents)
     <!DOCTYPE html PUBLIC ...
@@ -74,7 +83,10 @@ If the user sets 'Use site's default'...
 
 we should get TinyMCE:
     >>> browser.open(testpage)
-    >>> print(browser.contents)
+    >>> if test_site_default:
+    ...     print(browser.contents)
+    ... else:
+    ...     print("Perfectly fine if test fails on Plone 3 as there is no Use Site's Default option")
     <!DOCTYPE html PUBLIC ...
     <script type="text/javascript">
     tinymce.dom.Event.add(window, 'load', function(e) { var config = new TinyMCEConfig('text'); config.init(); });</script> ...
@@ -116,7 +128,12 @@ Set the editor globally to nothing:
 
 If the user sets 'Use site's default'...
     >>> browser.open(personalizer)
-    >>> browser.getControl(name='wysiwyg_editor').value = ['']
+    >>> try:
+    ...     browser.getControl(name='wysiwyg_editor').value = ['']
+    ...     test_site_default = True
+    ... except:
+    ...     # Plone 3
+    ...     test_site_default = False
     >>> browser.getControl(name='form.button.Save').click()
     >>> print(browser.contents)
     <!DOCTYPE html PUBLIC ...
@@ -124,7 +141,10 @@ If the user sets 'Use site's default'...
 
 we should get just a textarea:
     >>> browser.open(testpage)
-    >>> print(browser.contents)
+    >>> if test_site_default:
+    ...     print(browser.contents)
+    ... else:
+    ...     print("Perfectly fine if test fails on Plone 3 as there is no Use Site's Default option")
     <!DOCTYPE html PUBLIC ...
     <textarea name="text" rows="25" id="text"></textarea> ...
 
