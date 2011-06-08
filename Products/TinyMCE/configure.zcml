@@ -15,7 +15,7 @@
   <include package=".browser" />
   <include package=".adapters" />
   <include file="profiles.zcml" />
-  
+
   <adapter
       factory=".exportimport.TinyMCESettingsXMLAdapter"
       provides="Products.GenericSetup.interfaces.IBody"
