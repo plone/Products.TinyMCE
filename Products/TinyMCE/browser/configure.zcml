@@ -1,4 +1,4 @@
-<configure 
+<configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="tinymce">
@@ -59,7 +59,7 @@
         for="*"
         class=".browser.TinyMCEBrowserView"
         permission="cmf.AddPortalContent">
-        <browser:page attribute="upload" name="tinymce-upload" /> 
+        <browser:page attribute="upload" name="tinymce-upload" />
     </browser:pages>
 
     <browser:resourceDirectory
