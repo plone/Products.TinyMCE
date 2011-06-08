@@ -3,13 +3,15 @@ from zope.component import getUtility
 from Products.Five.browser import BrowserView
 from Acquisition import aq_inner
 
-from Products.TinyMCE.adapters.interfaces.JSONFolderListing import IJSONFolderListing
+from Products.TinyMCE.adapters.interfaces.JSONFolderListing import \
+     IJSONFolderListing
 from Products.TinyMCE.adapters.interfaces.JSONSearch import IJSONSearch
 from Products.TinyMCE.adapters.interfaces.JSONDetails import IJSONDetails
 from Products.TinyMCE.adapters.interfaces.Upload import IUpload
 from Products.TinyMCE.adapters.interfaces.Save import ISave
 from Products.TinyMCE.browser.interfaces.browser import ITinyMCEBrowserView
 from Products.TinyMCE.interfaces.utility import ITinyMCE
+
 
 class TinyMCEBrowserView(BrowserView):
     """TinyMCE Browser View"""
@@ -37,7 +39,8 @@ class TinyMCEBrowserView(BrowserView):
 
         context = aq_inner(self.context)
         object = IJSONFolderListing(context)
-        results = object.getListing(linkable_portal_types, rooted, document_base_url, 'File') 
+        results = object.getListing(linkable_portal_types, rooted,
+                                    document_base_url, 'File')
         return results
 
     def jsonImageFolderListing(self, rooted, document_base_url):
@@ -49,7 +52,8 @@ class TinyMCEBrowserView(BrowserView):
 
         context = aq_inner(self.context)
         object = IJSONFolderListing(context)
-        results = object.getListing(image_portal_types, rooted, document_base_url, 'Image')
+        results = object.getListing(image_portal_types, rooted,
+                                    document_base_url, 'Image')
         return results
 
     def jsonLinkableSearch(self, searchtext):
@@ -90,5 +94,3 @@ class TinyMCEBrowserView(BrowserView):
         return utility.getConfiguration(context=context,
                                         field=fieldname,
                                         request=self.request)
-
-        
