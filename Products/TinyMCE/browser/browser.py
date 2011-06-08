@@ -46,7 +46,9 @@ class TinyMCEBrowserView(BrowserView):
         utility = getUtility(ITinyMCE)
         linkable_portal_types = utility.linkable.split('\n')
 
-        object = IJSONFolderListing(self.context)
+        object = IJSONFolderListing(self.context, None)
+        if object is None:
+            return ''
         results = object.getListing(linkable_portal_types, rooted,
                                     document_base_url, 'File')
         return results
@@ -58,7 +60,9 @@ class TinyMCEBrowserView(BrowserView):
         image_portal_types = utility.imageobjects.split('\n')
         image_portal_types.extend(utility.containsobjects.split('\n'))
 
-        object = IJSONFolderListing(self.context)
+        object = IJSONFolderListing(self.context, None)
+        if object is None:
+            return ''
         results = object.getListing(image_portal_types, rooted,
                                     document_base_url, 'Image')
         return results
@@ -70,7 +74,9 @@ class TinyMCEBrowserView(BrowserView):
         linkable_portal_types = utility.linkable.split('\n')
         linkable_portal_types.extend(utility.containsobjects.split('\n'))
 
-        object = IJSONSearch(self.context)
+        object = IJSONSearch(self.context, None)
+        if object is None:
+            return ''
         results = object.getSearchResults(linkable_portal_types, searchtext)
         return results
 
@@ -81,14 +87,18 @@ class TinyMCEBrowserView(BrowserView):
         image_portal_types = utility.imageobjects.split('\n')
         image_portal_types.extend(utility.containsobjects.split('\n'))
 
-        object = IJSONSearch(self.context)
+        object = IJSONSearch(self.context, None)
+        if object is None:
+            return ''
         results = object.getSearchResults(image_portal_types, searchtext)
         return results
 
     def jsonDetails(self):
         """Returns the details of an object in JSON"""
 
-        object = IJSONDetails(self.context)
+        object = IJSONDetails(self.context, None)
+        if object is None:
+            return ''
         return object.getDetails()
 
     def jsonConfiguration(self, fieldname):
