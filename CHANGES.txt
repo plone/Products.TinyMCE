@@ -5,10 +5,19 @@ HISTORY
 1.3 (unreleased)
 ------------------
 
+- Use TinyMCE compressor to provide editor and plugins
+  [tom_gross]
+
+- Fixed http://dev.plone.org/plone/ticket/11681
+  [tom_gross]
+
 - Do not give a TypeError 'Could not adapt' when trying to adapt a
   context that is not adaptable to IJSONFolderListing and friends.
   Instead return nothing in the ajax call.
   [maurits]
+
+1.2.7 (unreleased)
+------------------
 
 - pep8
   [iElectric]
@@ -18,12 +27,6 @@ HISTORY
 
 - Add hook to JSONDetails to allow subclasses to supplement or override the results
   [anthonygerrard]
-
-- Use TinyMCE compressor to provide editor and plugins
-  [tom_gross]
-
-- Fixed http://dev.plone.org/plone/ticket/11681
-  [tom_gross]
 
 1.2.6 (2011-05-12)
 ------------------
