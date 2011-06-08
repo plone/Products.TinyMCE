@@ -22,13 +22,13 @@ class TinyMCEBrowserView(BrowserView):
     def upload(self):
         """Upload a file to the zodb"""
 
-        object = IUpload(context)
+        object = IUpload(self.context)
         return object.upload()
 
     def save(self, text, fieldname):
         """Saves the specified richedit field"""
 
-        object = ISave(context)
+        object = ISave(self.context)
         return object.save(text, fieldname)
 
     def setDescription(self, description):
@@ -45,7 +45,7 @@ class TinyMCEBrowserView(BrowserView):
         utility = getUtility(ITinyMCE)
         linkable_portal_types = utility.linkable.split('\n')
 
-        object = IJSONFolderListing(context)
+        object = IJSONFolderListing(self.context)
         results = object.getListing(linkable_portal_types, rooted, document_base_url, 'File')
         return results
 
@@ -56,7 +56,7 @@ class TinyMCEBrowserView(BrowserView):
         image_portal_types = utility.imageobjects.split('\n')
         image_portal_types.extend(utility.containsobjects.split('\n'))
 
-        object = IJSONFolderListing(context)
+        object = IJSONFolderListing(self.context)
         results = object.getListing(image_portal_types, rooted, document_base_url, 'Image')
         return results
 
@@ -67,7 +67,7 @@ class TinyMCEBrowserView(BrowserView):
         linkable_portal_types = utility.linkable.split('\n')
         linkable_portal_types.extend(utility.containsobjects.split('\n'))
 
-        object = IJSONSearch(context)
+        object = IJSONSearch(self.context)
         results = object.getSearchResults(linkable_portal_types, searchtext)
         return results
 
@@ -78,21 +78,20 @@ class TinyMCEBrowserView(BrowserView):
         image_portal_types = utility.imageobjects.split('\n')
         image_portal_types.extend(utility.containsobjects.split('\n'))
 
-        object = IJSONSearch(context)
+        object = IJSONSearch(self.context)
         results = object.getSearchResults(image_portal_types, searchtext)
         return results
 
     def jsonDetails(self):
         """Returns the details of an object in JSON"""
 
-        object = IJSONDetails(context)
+        object = IJSONDetails(self.context)
         return object.getDetails()
 
     def jsonConfiguration(self, fieldname):
         """Return the configuration in JSON"""
         utility = getUtility(ITinyMCE)
-        context = aq_inner(self.context)
-        return utility.getConfiguration(context=context,
+        return utility.getConfiguration(context=self.context,
                                         field=fieldname,
                                         request=self.request)
 
