@@ -9,9 +9,7 @@ from Products.TinyMCE.interfaces.utility import ITinyMCELibraries
 from Products.TinyMCE.interfaces.utility import ITinyMCEResourceTypes
 
 from Products.TinyMCE.browser.interfaces.controlpanel import ITinyMCEControlPanelForm
-
-
-_ = MessageFactory('plone.tinymce')
+from Products.TinyMCE import TMCEMessageFactory as _
 
 
 class TinyMCEControlPanelForm(ControlPanelForm):

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 1.1\n"
-"POT-Creation-Date: 2011-03-17 11:01+0000\n"
+"POT-Creation-Date: 2011-06-21 13:31+0000\n"
 "PO-Revision-Date: 2009-09-20 13:24+0100\n"
 "Last-Translator: Rob Gietema <rob@fourdigits.nl>\n"
 "Language-Team: Rob Gietema <rob@fourdigits.nl>\n"
@@ -14,31 +14,31 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone.tinymce\n"
 
-#: ../utility.py:616
+#: ../utility.py:624
 msgid "(remove style)"
 msgstr ""
 
-#: ../interfaces/utility.py:305
+#: ../interfaces/utility.py:307
 msgid "After the deadline (FLOSS)"
 msgstr ""
 
-#: ../interfaces/utility.py:156
+#: ../interfaces/utility.py:158
 msgid "Align center"
 msgstr "Centreren"
 
-#: ../interfaces/utility.py:164
+#: ../interfaces/utility.py:166
 msgid "Align full"
 msgstr "Volledig uitlijnen"
 
-#: ../interfaces/utility.py:152
+#: ../interfaces/utility.py:154
 msgid "Align left"
 msgstr "Links uitlijnen"
 
-#: ../interfaces/utility.py:160
+#: ../interfaces/utility.py:162
 msgid "Align right"
 msgstr "Rechts uitlijnen"
 
-#: ../interfaces/utility.py:355
+#: ../interfaces/utility.py:357
 msgid "Allow captioned images"
 msgstr "Afbeelding onderschriften"
 
@@ -47,27 +47,27 @@ msgstr "Afbeelding onderschriften"
 msgid "Anchors"
 msgstr "Ankers"
 
-#: ../interfaces/utility.py:322
+#: ../interfaces/utility.py:324
 msgid "AtD Error types to show"
 msgstr ""
 
-#: ../interfaces/utility.py:311
+#: ../interfaces/utility.py:313
 msgid "AtD Ignore strings"
 msgstr ""
 
-#: ../interfaces/utility.py:335
+#: ../interfaces/utility.py:337
 msgid "AtD Service URL"
 msgstr ""
 
-#: ../interfaces/utility.py:37
+#: ../interfaces/utility.py:38
 msgid "Auto detect from content language"
 msgstr ""
 
-#: ../interfaces/utility.py:148
+#: ../interfaces/utility.py:150
 msgid "Backcolor"
 msgstr "Achtergrondkleur"
 
-#: ../interfaces/utility.py:120
+#: ../interfaces/utility.py:122
 msgid "Bold"
 msgstr "Vet"
 
@@ -79,31 +79,35 @@ msgstr ""
 msgid "Caption"
 msgstr "Onderschrift"
 
-#: ../interfaces/utility.py:48
+#: ../interfaces/utility.py:49
 msgid "Choose the CSS used in WYSIWYG Editor Area"
 msgstr "Eigen CSS voor editor"
 
 msgid "Circle"
 msgstr ""
 
-#: ../interfaces/utility.py:260
+#: ../interfaces/utility.py:262
 msgid "Cleanup messy code"
 msgstr "Code opruimen"
 
 msgid "Clear floats"
 msgstr ""
 
-#: ../interfaces/utility.py:370
+#: ../interfaces/utility.py:372
 msgid "Contains Anchors"
 msgstr "Bevat ankers"
 
-#: ../interfaces/utility.py:365
+#: ../interfaces/utility.py:367
 msgid "Contains Objects"
 msgstr "Bevat objecten"
 
-#: ../interfaces/utility.py:84
+#: ../interfaces/utility.py:86
 msgid "Copy"
 msgstr "Kopiëren"
+
+#: ../adapters/Upload.py:127
+msgid "Could not upload the file"
+msgstr ""
 
 #. Default: "Current Folder"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:30
@@ -111,26 +115,26 @@ msgstr "Kopiëren"
 msgid "Current Folder"
 msgstr "Huidige map"
 
-#: ../interfaces/utility.py:385
+#: ../interfaces/utility.py:387
 msgid "Custom Plugins"
 msgstr "Eigen plugins"
 
-#: ../interfaces/utility.py:284
+#: ../interfaces/utility.py:286
 msgid "Custom Toolbar Buttons"
 msgstr "Eigen toolbar knoppen"
 
-#: ../interfaces/utility.py:80
+#: ../interfaces/utility.py:82
 msgid "Cut"
 msgstr "Knippen"
 
-#: ../interfaces/utility.py:301
+#: ../interfaces/utility.py:303
 msgid "Default browser spellchecker"
 msgstr ""
 
 msgid "Definition description"
 msgstr ""
 
-#: ../interfaces/utility.py:176
+#: ../interfaces/utility.py:178
 msgid "Definition list"
 msgstr "Definitielijst"
 
@@ -159,67 +163,67 @@ msgstr ""
 msgid "E-mail"
 msgstr "E-mail"
 
-#: ../interfaces/utility.py:276
+#: ../interfaces/utility.py:278
 msgid "Edit HTML Source"
 msgstr "HTML bron"
 
-#: ../interfaces/utility.py:27
+#: ../interfaces/utility.py:28
 msgid "Editor height"
 msgstr "Editor hoogte"
 
-#: ../interfaces/utility.py:22
+#: ../interfaces/utility.py:23
 msgid "Editor width"
 msgstr "Editor breedte"
 
-#: ../interfaces/utility.py:232
+#: ../interfaces/utility.py:234
 msgid "Emotions"
 msgstr "Emoties"
 
-#: ../interfaces/utility.py:17
+#: ../interfaces/utility.py:18
 msgid "Enable auto resizing of the editor window."
 msgstr "Automatisch schalen"
 
-#: ../interfaces/utility.py:43
+#: ../interfaces/utility.py:44
 msgid "Enable contextmenu."
 msgstr "Contextmenu inschakelen"
 
-#: ../interfaces/utility.py:12
+#: ../interfaces/utility.py:13
 msgid "Enable resizing the editor window."
 msgstr "Editor venster schaalbaar maken"
 
-#: ../interfaces/utility.py:376
+#: ../interfaces/utility.py:378
 msgid "Enter a list of content types which can be linked. Format is one contenttype per line."
 msgstr "Geef een lijst op van contenttypes waar naar gelinkt kan worden. Het formaat is één contenttype per regel."
 
-#: ../interfaces/utility.py:381
+#: ../interfaces/utility.py:383
 msgid "Enter a list of content types which can be used as images. Format is one contenttype per line."
 msgstr "Geef een lijst op van contenttypes welke gebruikt kunnen worden als afbeeldingen. Het formaat is één contenttype per regel."
 
-#: ../interfaces/utility.py:371
+#: ../interfaces/utility.py:373
 msgid "Enter a list of content types which can contain anchors. Format is one contenttype per line."
 msgstr "Geef een lijst van contenttypen die ankers kunnen bevatten op. Het formaat is één contenttype per regel."
 
-#: ../interfaces/utility.py:366
+#: ../interfaces/utility.py:368
 msgid "Enter a list of content types which can contain other objects. Format is one contenttype per line."
 msgstr "Geef een lijst van contenttypen die objecten kunnen bevatten op. Het formaat is één contenttype per regel."
 
-#: ../interfaces/utility.py:386
+#: ../interfaces/utility.py:388
 msgid "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
 msgstr "Geef een lijst op van eigen plugins die gebruikt worden in de editor. Het formaat is de pluginnaam of pluginnaam|locatie, één per regel."
 
-#: ../interfaces/utility.py:285
+#: ../interfaces/utility.py:287
 msgid "Enter a list of custom toolbar buttons which will be loaded in the editor, one per line."
 msgstr "Geef een lijst op met eigen toolbar knoppen die geladen worden binnen de editor, één per regel."
 
-#: ../interfaces/utility.py:54
+#: ../interfaces/utility.py:55
 msgid "Enter a list of styles to appear in the style pulldown. Format is title|tag or title|tag|className, one per line."
 msgstr "Geef een lijst van stijlen op die verschijnen in het stijlenmenu. Het formaat is titel|tag of titel|tag|class, één per regel."
 
-#: ../interfaces/utility.py:59
+#: ../interfaces/utility.py:60
 msgid "Enter a list of styles to appear in the table style pulldown. Format is title|class, one per line."
 msgstr "Geef een lijst van stijlen op die verschijnen in het tabelstijlenmenu. Het formaat is titel|class, één per regel."
 
-#: ../interfaces/utility.py:390
+#: ../interfaces/utility.py:392
 msgid "Entity encoding"
 msgstr "Codering"
 
@@ -227,7 +231,7 @@ msgid "Even row"
 msgstr ""
 
 #. Default: "External"
-#: ../interfaces/utility.py:71
+#: ../interfaces/utility.py:73
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:41
 msgid "External"
 msgstr "Extern"
@@ -252,15 +256,15 @@ msgstr ""
 msgid "File"
 msgstr "Bestand"
 
-#: ../interfaces/utility.py:108
+#: ../interfaces/utility.py:110
 msgid "Find"
 msgstr "Zoeken"
 
-#: ../interfaces/utility.py:112
+#: ../interfaces/utility.py:114
 msgid "Find/Replace"
 msgstr "Zoeken/Vervangen"
 
-#: ../interfaces/utility.py:144
+#: ../interfaces/utility.py:146
 msgid "Forecolor"
 msgstr "Tekstkleur"
 
@@ -279,15 +283,15 @@ msgstr ""
 msgid "Home"
 msgstr "Home"
 
-#: ../interfaces/utility.py:380
+#: ../interfaces/utility.py:382
 msgid "Image Objects"
 msgstr "Afbeelding objecten"
 
-#: ../interfaces/utility.py:356
+#: ../interfaces/utility.py:358
 msgid "Images will be automatically captioned."
 msgstr "Afbeeldingen worden automatisch voorzien van een onderschrift."
 
-#: ../interfaces/utility.py:184
+#: ../interfaces/utility.py:186
 msgid "Indent"
 msgstr "Inspringen"
 
@@ -296,51 +300,51 @@ msgstr "Inspringen"
 msgid "Inline"
 msgstr "Inline"
 
-#: ../interfaces/utility.py:220
+#: ../interfaces/utility.py:222
 msgid "Insert advanced horizontal ruler"
 msgstr "Geavanceerde scheidinglijn invoegen"
 
-#: ../interfaces/utility.py:212
+#: ../interfaces/utility.py:214
 msgid "Insert custom character"
 msgstr "Symbool invoegen"
 
-#: ../interfaces/utility.py:224
+#: ../interfaces/utility.py:226
 msgid "Insert date"
 msgstr "Datum invoegen"
 
-#: ../interfaces/utility.py:216
+#: ../interfaces/utility.py:218
 msgid "Insert horizontal ruler"
 msgstr "Scheidingslijn invoegen"
 
-#: ../interfaces/utility.py:236
+#: ../interfaces/utility.py:238
 msgid "Insert non-breaking space character"
 msgstr "Open ruimte invoegen"
 
-#: ../interfaces/utility.py:240
+#: ../interfaces/utility.py:242
 msgid "Insert page break"
 msgstr "Pagina-einde invoegen"
 
-#: ../interfaces/utility.py:228
+#: ../interfaces/utility.py:230
 msgid "Insert time"
 msgstr "Tijd invoegen"
 
-#: ../interfaces/utility.py:200
+#: ../interfaces/utility.py:202
 msgid "Insert/edit anchor"
 msgstr "Anker invoegen/wijzigen"
 
-#: ../interfaces/utility.py:272
+#: ../interfaces/utility.py:274
 msgid "Insert/edit attributes"
 msgstr "Attributen invoegen/wijzigen"
 
-#: ../interfaces/utility.py:204
+#: ../interfaces/utility.py:206
 msgid "Insert/edit image"
 msgstr "Afbeelding invoegen/wijzigen"
 
-#: ../interfaces/utility.py:192
+#: ../interfaces/utility.py:194
 msgid "Insert/edit link"
 msgstr "Link invoegen/wijzigen"
 
-#: ../interfaces/utility.py:208
+#: ../interfaces/utility.py:210
 msgid "Insert/edit media"
 msgstr "Media invoegen/wijzigen"
 
@@ -352,20 +356,20 @@ msgstr "Interne link"
 msgid "Invisible grid"
 msgstr ""
 
-#: ../interfaces/utility.py:124
+#: ../interfaces/utility.py:126
 msgid "Italic"
 msgstr "Cursief"
 
-#: ../browser/controlpanel.py:22
+#: ../browser/controlpanel.py:21
 msgid "Layout"
 msgstr "Layout"
 
-#: ../interfaces/utility.py:38
+#: ../interfaces/utility.py:39
 msgid "Left to right"
 msgstr "Links naar rechts"
 
 #. Default: "Libraries"
-#: ../browser/controlpanel.py:30
+#: ../browser/controlpanel.py:29
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:21
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:22
 msgid "Libraries"
@@ -376,19 +380,19 @@ msgstr "Bilbiotheken"
 msgid "Link to anchor"
 msgstr "Link naar anker"
 
-#: ../interfaces/utility.py:350
+#: ../interfaces/utility.py:352
 msgid "Link using UIDs"
 msgstr "Met uids linken"
 
-#: ../interfaces/utility.py:375
+#: ../interfaces/utility.py:377
 msgid "Linkable Objects"
 msgstr "Linkbare objecten"
 
-#: ../interfaces/utility.py:351
+#: ../interfaces/utility.py:353
 msgid "Links to objects on this site can use unique object ids so that the links remain valid even if the target object is renamed or moved elsewhere on the site."
 msgstr "Links naar objecten op deze site kunnen unieke object ids gebruiken zodat de links valide blijven wanneer het bron object hernoemd of verplaatst is op de site."
 
-#: ../utility.py:623
+#: ../utility.py:631
 msgid "Lists"
 msgstr ""
 
@@ -406,98 +410,102 @@ msgstr ""
 msgid "Mail"
 msgstr "Mail"
 
-#: ../interfaces/utility.py:393
+#: ../interfaces/utility.py:395
 msgid "Named"
 msgstr "Benoemd"
 
-#: ../utility.py:626
+#: ../utility.py:634
 msgid "No anchors in this page"
 msgstr ""
 
-#: ../utility.py:625
+#: ../utility.py:633
 msgid "No items in this folder"
 msgstr ""
 
-#: ../utility.py:617
+#: ../utility.py:625
 msgid "Normal paragraph"
+msgstr ""
+
+#: ../adapters/Upload.py:88
+msgid "Not allowed to upload a file of this type to this folder"
 msgstr ""
 
 msgid "Numbers"
 msgstr ""
 
-#: ../interfaces/utility.py:393
+#: ../interfaces/utility.py:395
 msgid "Numeric"
 msgstr "Numeriek"
 
 msgid "Odd row"
 msgstr ""
 
-#: ../interfaces/utility.py:172
+#: ../interfaces/utility.py:174
 msgid "Ordered list"
 msgstr "Nummering"
 
-#: ../interfaces/utility.py:180
+#: ../interfaces/utility.py:182
 msgid "Outdent"
 msgstr "Inspringing verkleinen"
 
 msgid "Page break (print only)"
 msgstr ""
 
-#: ../interfaces/utility.py:88
+#: ../interfaces/utility.py:90
 msgid "Paste"
 msgstr "Plakken"
 
-#: ../interfaces/utility.py:92
+#: ../interfaces/utility.py:94
 msgid "Paste as Plain Text"
 msgstr "Tekst plakken"
 
-#: ../interfaces/utility.py:96
+#: ../interfaces/utility.py:98
 msgid "Paste from Word"
 msgstr "Plakken vanuit Word"
 
-#: ../utility.py:618
+#: ../utility.py:626
 msgid "Plain cell"
 msgstr ""
 
 #. Default: "Preview"
-#: ../interfaces/utility.py:248
+#: ../interfaces/utility.py:250
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:102
 msgid "Preview"
 msgstr "Voorbeeld"
 
-#: ../interfaces/utility.py:244
-#: ../utility.py:624
+#: ../interfaces/utility.py:246
+#: ../utility.py:632
 msgid "Print"
 msgstr "Printen"
 
 msgid "Pull-quote"
 msgstr ""
 
-#: ../interfaces/utility.py:393
+#: ../interfaces/utility.py:395
 msgid "Raw"
 msgstr "Ruw"
 
-#: ../interfaces/utility.py:104
+#: ../interfaces/utility.py:106
 msgid "Redo"
 msgstr "Herhalen"
 
-#: ../interfaces/utility.py:256
+#: ../interfaces/utility.py:258
 msgid "Remove formatting"
 msgstr "Verwijder opmaak"
 
-#: ../browser/controlpanel.py:34
+#: ../browser/controlpanel.py:33
 msgid "Resource Types"
 msgstr "Resource Typen"
 
-#: ../interfaces/utility.py:39
+#: ../interfaces/utility.py:40
 msgid "Right to left"
 msgstr "Rechts naar links"
 
-#: ../interfaces/utility.py:360
+#: ../interfaces/utility.py:362
 msgid "Rooted to current object"
 msgstr "Beperken tot huidig object"
 
-#: ../interfaces/utility.py:76
+#: ../interfaces/utility.py:78
 msgid "Save"
 msgstr "Opslaan"
 
@@ -507,38 +515,38 @@ msgstr "Opslaan"
 msgid "Search"
 msgstr "Zoeken"
 
-#: ../interfaces/utility.py:116
+#: ../interfaces/utility.py:118
 msgid "Select Style"
 msgstr "Stijl selecteren"
 
-#: ../utility.py:622
+#: ../utility.py:630
 msgid "Selection"
 msgstr ""
 
-#: ../browser/controlpanel.py:44
+#: ../browser/controlpanel.py:43
 msgid "Settings for the TinyMCE Wysiwyg editor."
 msgstr "Instellingen voor de TinyMCE Wysiwyg editor"
 
-#: ../interfaces/utility.py:252
+#: ../interfaces/utility.py:254
 msgid "Spellchecker"
 msgstr "Spellingschecker"
 
-#: ../interfaces/utility.py:293
+#: ../interfaces/utility.py:295
 msgid "Spellchecker plugin to use"
 msgstr ""
 
 msgid "Square"
 msgstr ""
 
-#: ../interfaces/utility.py:132
+#: ../interfaces/utility.py:134
 msgid "Strikethrough"
 msgstr "Doorhalen"
 
-#: ../utility.py:619
+#: ../utility.py:627
 msgid "Style..."
 msgstr ""
 
-#: ../interfaces/utility.py:53
+#: ../interfaces/utility.py:54
 msgid "Styles"
 msgstr "Stijlen"
 
@@ -553,71 +561,71 @@ msgstr ""
 msgid "Subject"
 msgstr "Onderwerp"
 
-#: ../interfaces/utility.py:136
+#: ../interfaces/utility.py:138
 msgid "Subscript"
 msgstr "Subscript"
 
-#: ../interfaces/utility.py:140
+#: ../interfaces/utility.py:142
 msgid "Superscript"
 msgstr "Superscript"
 
-#: ../interfaces/utility.py:188
+#: ../interfaces/utility.py:190
 msgid "Table controls"
 msgstr "Tabel instellingen"
 
-#: ../interfaces/utility.py:58
+#: ../interfaces/utility.py:59
 msgid "Table styles"
 msgstr "Tabel stijlen"
 
-#: ../utility.py:621
+#: ../utility.py:629
 msgid "Tables"
 msgstr ""
 
-#: ../utility.py:620
+#: ../utility.py:628
 msgid "Text"
 msgstr ""
 
-#: ../interfaces/utility.py:294
+#: ../interfaces/utility.py:296
 msgid "This option allows you to choose the spellchecker for TinyMCE. If you want the spellchecker button to be visible, make sure it is enabled in the toolbar settings."
 msgstr ""
 
-#: ../interfaces/utility.py:391
+#: ../interfaces/utility.py:393
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
 msgstr "Deze optie bepaald hoe entiteiten/karakters worden verwerkt. Benoemd: Karakters worden geconverteerd in named entiteiten gebaseerd op de entiteiten optie. Numeriek: Karakters worden geconverteerd in numerieke karakters. Raw: Alle karakters worden opgeslagen in een non-entiteiten vorm behalve deze XML standaard entiteiten: amp lt gt quot."
 
-#: ../interfaces/utility.py:72
+#: ../interfaces/utility.py:74
 msgid "This option enables the external toolbar which will be placed at the top of the page."
 msgstr "Deze optie geeft je de mogelijkheid om een externe toolbar aan te zetten die bovenaan de website wordt geplaatst."
 
-#: ../interfaces/utility.py:49
+#: ../interfaces/utility.py:50
 msgid "This option enables you to specify a custom CSS file that replaces the theme content CSS. This CSS file is the one used within the editor (the editable area)."
 msgstr ""
 
-#: ../interfaces/utility.py:18
+#: ../interfaces/utility.py:19
 msgid "This option gives you the ability to enable/disable auto resizing the editor window depending on the content."
 msgstr "Deze optie geeft de mogelijk om het automatisch schalen van het editor scherm aan de hand van de inhoud aan en uit te zetten."
 
-#: ../interfaces/utility.py:13
+#: ../interfaces/utility.py:14
 msgid "This option gives you the ability to enable/disable resizing the editor window. If the editor width is set to a percentage only vertical resizing is enabled."
 msgstr "Deze optie geeft je de mogelijkheid om het schalen van het editor scherm aan en uit te zetten. Als de editor breedte ingesteld is met percentages, is alleen verticale schaling mogelijk."
 
-#: ../interfaces/utility.py:44
+#: ../interfaces/utility.py:45
 msgid "This option gives you the ability to enable/disable the use of the contextmenu."
 msgstr "Deze optie geeft je mogelijk om het context menu aan of uit te zetten."
 
-#: ../interfaces/utility.py:28
+#: ../interfaces/utility.py:29
 msgid "This option gives you the ability to specify the height of the editor in pixels. If auto resize is enabled this value is used as minimum height."
 msgstr "Deze optie geeft je de mogelijkheid om de hoogte van het editor scherm in pixels of procenten in te stellen."
 
-#: ../interfaces/utility.py:23
+#: ../interfaces/utility.py:24
 msgid "This option gives you the ability to specify the width of the editor in pixels or percent."
 msgstr "Deze optie geeft je de mogelijkheid om de breedte van het editor scherm in pixels of procenten in te stellen."
 
-#: ../interfaces/utility.py:67
+#: ../interfaces/utility.py:69
 msgid "This option gives you the ability to specify the width of the toolbar in pixels."
 msgstr "Deze optie geeft je de mogelijkheid om de breedte van de toolbar in te stellen in pixels."
 
-#: ../interfaces/utility.py:33
+#: ../interfaces/utility.py:34
 msgid "This option specifies the default writing direction, some languages (Like Hebrew, Arabic, Urdu...) write from right to left instead of left to right."
 msgstr "Deze optie geeft je de mogelijk om de tekstrichting in te stellen. Sommige talen (zoals hebreeuws, arabisch, urdu...) schrijven van rechts naar links in plaats van links naar rechts."
 
@@ -626,7 +634,7 @@ msgstr "Deze optie geeft je de mogelijk om de tekstrichting in te stellen. Sommi
 msgid "TinyMCE"
 msgstr ""
 
-#: ../browser/controlpanel.py:43
+#: ../browser/controlpanel.py:42
 msgid "TinyMCE Settings"
 msgstr "TinyMCE instellingen"
 
@@ -641,35 +649,35 @@ msgstr "TinyMCE Visual Editor"
 msgid "Title"
 msgstr "Titel"
 
-#: ../interfaces/utility.py:280
+#: ../interfaces/utility.py:282
 msgid "Toggle fullscreen mode"
 msgstr "Volledig scherm in-/uitschakelen"
 
-#: ../interfaces/utility.py:264
+#: ../interfaces/utility.py:266
 msgid "Toggle guidelines/invisible objects"
 msgstr "Hulplijnen/onzichtbare objecten aan/uit"
 
-#: ../browser/controlpanel.py:26
+#: ../browser/controlpanel.py:25
 msgid "Toolbar"
 msgstr "Toolbar"
 
-#: ../interfaces/utility.py:66
+#: ../interfaces/utility.py:68
 msgid "Toolbar width"
 msgstr "Toolbar breedte"
 
-#: ../interfaces/utility.py:128
+#: ../interfaces/utility.py:130
 msgid "Underline"
 msgstr "Onderstrepen"
 
-#: ../interfaces/utility.py:100
+#: ../interfaces/utility.py:102
 msgid "Undo"
 msgstr "Ongedaan maken"
 
-#: ../interfaces/utility.py:196
+#: ../interfaces/utility.py:198
 msgid "Unlink"
 msgstr "Link verwijderen"
 
-#: ../interfaces/utility.py:168
+#: ../interfaces/utility.py:170
 msgid "Unordered list"
 msgstr "Opsommingtekens"
 
@@ -697,34 +705,38 @@ msgstr ""
 msgid "Upper Roman"
 msgstr ""
 
-#: ../interfaces/utility.py:268
+#: ../interfaces/utility.py:270
 msgid "Visual control characters on/off"
 msgstr "Zichtbare symbolen aan/uit"
 
-#: ../interfaces/utility.py:361
+#: ../interfaces/utility.py:363
 msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
 msgstr "Wanneer ingeschakeld wordt de gebruiker beperkt tot het huidige object en kunnen er geen links en afbeeldingen toegevoegd worden van andere delen van de website."
 
-#: ../interfaces/utility.py:32
+#: ../interfaces/utility.py:33
 msgid "Writing direction"
 msgstr "Tekst richting"
 
+#: ../adapters/Upload.py:92
+msgid "You do not have permission to upload files in this folder"
+msgstr ""
+
 #. Default: "The URL of the \"After the Deadline\" grammar and spell checking server. The default value is the public server, but ideally you should download and install your own and specify its address here."
-#: ../interfaces/utility.py:336
+#: ../interfaces/utility.py:338
 msgid "help_atd_service_url"
 msgstr ""
 
-#. Default: "A list of erorr types which the \"After the Deadline\" spellchecker should check for. By default, all the available error type will be listed here."
-#: ../interfaces/utility.py:323
+#. Default: "A list of error types which the \"After the Deadline\" spellchecker should check for. By default, all the available error type will be listed here."
+#: ../interfaces/utility.py:325
 msgid "help_atderrortypes_to_show"
 msgstr ""
 
-#: ../interfaces/utility.py:303
+#: ../interfaces/utility.py:305
 msgid "ieSpell (free for personal use)"
 msgstr ""
 
 #. Default: "A list of strings which the \"After the Deadline\"spellchecker should ignore. Note: This option is only applicable when the appropriate spellchecker has been chosen above."
-#: ../interfaces/utility.py:312
+#: ../interfaces/utility.py:314
 msgid "label_atd_ignore_strings"
 msgstr ""
 

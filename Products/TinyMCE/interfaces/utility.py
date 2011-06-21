@@ -3,8 +3,7 @@ from zope import schema
 from zope.i18nmessageid import MessageFactory
 from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
 
-
-_ = MessageFactory('plone.tinymce')
+from Products.TinyMCE import TMCEMessageFactory as _
 
 
 class ITinyMCELayout(Interface):

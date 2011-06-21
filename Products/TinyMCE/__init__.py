@@ -1,3 +1,7 @@
+from zope.i18nmessageid.message import MessageFactory
+
+TMCEMessageFactory = MessageFactory('plone.tinymce')
+
 from Products.CMFCore.DirectoryView import registerDirectory
 from Products.CMFCore.permissions import setDefaultRoles
 from Products.TinyMCE.utility import TinyMCE

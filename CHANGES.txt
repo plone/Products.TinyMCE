@@ -5,6 +5,10 @@ HISTORY
 1.2.7 (unreleased)
 ------------------
 
+- Internationalized js messages.
+  French translation.
+  [thomasdesvenain]
+
 - Do not give a TypeError 'Could not adapt' when trying to adapt a
   context that is not adaptable to IJSONFolderListing and friends.
   Instead return nothing in the ajax call.
@@ -22,6 +26,7 @@ HISTORY
 
 1.2.6 (2011-05-12)
 ------------------
+
 - Changed the color of the background on the external editor to light gray to make the buttons more visible.
   [davidjonas]
 

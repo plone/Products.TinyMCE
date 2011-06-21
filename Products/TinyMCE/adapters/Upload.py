@@ -1,13 +1,15 @@
-from zope.interface import implements
-from Products.CMFCore.utils import getToolByName
-
-from Products.TinyMCE.interfaces.utility import ITinyMCE
-from zope.component import getUtility
-from Products.TinyMCE.adapters.interfaces.Upload import IUpload
-from Products.CMFCore.interfaces._content import IFolderish
 from Acquisition import aq_inner
+from zope.interface import implements
+from zope.component import getUtility
+
+from Products.CMFCore.utils import getToolByName
+from Products.CMFCore.interfaces._content import IFolderish
 from plone.outputfilters.browser.resolveuid import uuidFor
 
+from Products.TinyMCE.interfaces.utility import ITinyMCE
+from Products.TinyMCE.adapters.interfaces.Upload import IUpload
+from Products.TinyMCE import TMCEMessageFactory as _
+from zope.i18n import translate
 
 TEMPLATE = """
 <html>
@@ -28,13 +30,12 @@ class Upload(object):
 
     def errorMessage(self, msg):
         """Returns an error message"""
-
+        msg = translate(msg, context=self.context.REQUEST)
         script = TEMPLATE % ("window.parent.uploadError('" + msg.replace("'", "\\'") + "');")
         return script
 
     def okMessage(self, msg):
         """Returns an ok message"""
-
         script = TEMPLATE % ("window.parent.uploadOk('" + msg.replace("'", "\\'") + "');")
         return script
 
@@ -84,11 +85,11 @@ class Upload(object):
 
         # 1) check if we are allowed to create an Image in folder
         if not typename in [t.id for t in context.getAllowedTypes()]:
-            return self.errorMessage("Not allowed to upload a file of this type to this folder")
+            return self.errorMessage(_("Not allowed to upload a file of this type to this folder"))
 
         # 2) check if the current user has permissions to add stuff
         if not context.portal_membership.checkPermission('Add portal content', context):
-            return self.errorMessage("You do not have permission to upload files in this folder")
+            return self.errorMessage(_("You do not have permission to upload files in this folder"))
 
         # Get an unused filename without path
         id = self.cleanupFilename(id)
@@ -123,7 +124,7 @@ class Upload(object):
         pf.set(obj, request['uploadfile'])
 
         if not obj:
-            return self.errorMessage("Could not upload the file")
+            return self.errorMessage(_("Could not upload the file"))
 
         obj.reindexObject()
 

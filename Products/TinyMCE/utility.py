@@ -35,9 +35,7 @@ from Products.TinyMCE.interfaces.utility import ITinyMCELayout
 from Products.TinyMCE.interfaces.utility import ITinyMCEToolbar
 from Products.TinyMCE.interfaces.utility import ITinyMCELibraries
 from Products.TinyMCE.interfaces.utility import ITinyMCEResourceTypes
-
-
-_ = MessageFactory('plone.tinymce')
+from Products.TinyMCE import TMCEMessageFactory as _
 
 
 def form_adapter(context):
