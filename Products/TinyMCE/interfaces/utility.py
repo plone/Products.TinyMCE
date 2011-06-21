@@ -325,7 +325,7 @@ class ITinyMCELibraries(Interface):
         title=_(u"AtD Error types to show"),
         description=_(
             'help_atderrortypes_to_show',
-            default=u"A list of erorr types which the " \
+            default=u"A list of error types which the " \
                     u"\"After the Deadline\" spellchecker should check for. " \
                     u"By default, all the available error type will be listed here."),
         default=u"Bias Language\nCliches\nComplex Expression\n" \
