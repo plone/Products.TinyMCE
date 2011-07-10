@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2011-07-07 10:53+0800\n"
+"PO-Revision-Date: 2011-07-10 11:53+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -863,7 +863,7 @@ msgid "plonelink_dlg_target_blank"
 msgstr "在新視窗開啟"
 
 msgid "plonelink_dlg_popup"
-msgstr "Javascript 彈出視窗"
+msgstr "JavaScript 彈出視窗"
 
 msgid "plonelink_dlg_popup_url"
 msgstr "彈出視窗網址"
@@ -1556,7 +1556,7 @@ msgid "table_dlg_cell_limit"
 msgstr "已超過可用數，最高的儲存格數為 {$cells} 格。"
 
 msgid "table_dlg_missing_scope"
-msgstr "Are you sure you want to continue without specifying a scope for this table header cell. Without it, it may be difficult for some users with disabilities to understand the content or data displayed of the table."
+msgstr "尚未指定表格標題欄位內容，少了它們的話，視障朋友將難以理解表格內容。"
 
 msgid "table_dlg_caption"
 msgstr "表格標題"
@@ -1595,10 +1595,10 @@ msgid "table_dlg_rules_hsides"
 msgstr "hsides"
 
 msgid "table_dlg_rules_lhs"
-msgstr "lhs"
+msgstr "左邊框"
 
 msgid "table_dlg_rules_rhs"
-msgstr "rhs"
+msgstr "右邊框"
 
 msgid "table_dlg_rules_vsides"
 msgstr "vsides"
@@ -1691,7 +1691,7 @@ msgid "media_dlg_scale"
 msgstr "Scale"
 
 msgid "media_dlg_align"
-msgstr "Align"
+msgstr "對齊"
 
 msgid "media_dlg_salign"
 msgstr "SAlign"

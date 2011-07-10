@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TinyMCE\n"
 "POT-Creation-Date: 2011-06-21 13:31+0000\n"
-"PO-Revision-Date: 2011-07-07 10:53+0800\n"
+"PO-Revision-Date: 2011-07-10 11:53+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -195,35 +195,35 @@ msgstr "啟用編輯視窗調整大小的功能。"
 
 #: ../interfaces/utility.py:378
 msgid "Enter a list of content types which can be linked. Format is one contenttype per line."
-msgstr ""
+msgstr "輸入可供連結的內容型別，每行填一個型別。"
 
 #: ../interfaces/utility.py:383
 msgid "Enter a list of content types which can be used as images. Format is one contenttype per line."
-msgstr ""
+msgstr "輸入可做為圖檔的內容型別，每行填一個型別。"
 
 #: ../interfaces/utility.py:373
 msgid "Enter a list of content types which can contain anchors. Format is one contenttype per line."
-msgstr ""
+msgstr "輸入可包含錨點的內容型別，每行填一個型別。"
 
 #: ../interfaces/utility.py:368
 msgid "Enter a list of content types which can contain other objects. Format is one contenttype per line."
-msgstr ""
+msgstr "輸入可包含其他物件的內容型別，每行填一個型別。"
 
 #: ../interfaces/utility.py:388
 msgid "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
-msgstr ""
+msgstr "輸入可以被載入的外掛程式，每行填一個程式名稱。"
 
 #: ../interfaces/utility.py:287
 msgid "Enter a list of custom toolbar buttons which will be loaded in the editor, one per line."
-msgstr ""
+msgstr "輸入可以被載入的工具列按鈕，每行填一個。"
 
 #: ../interfaces/utility.py:55
 msgid "Enter a list of styles to appear in the style pulldown. Format is title|tag or title|tag|className, one per line."
-msgstr ""
+msgstr "輸入樣式選單的項目，每行填一個選項名稱。"
 
 #: ../interfaces/utility.py:60
 msgid "Enter a list of styles to appear in the table style pulldown. Format is title|class, one per line."
-msgstr ""
+msgstr "輸入表格樣式選單的項目，每行填一個選項名稱。"
 
 #: ../interfaces/utility.py:392
 msgid "Entity encoding"
@@ -601,27 +601,27 @@ msgstr "啟用外部工具列的話，會出現在頁面的上方。"
 
 #: ../interfaces/utility.py:50
 msgid "This option enables you to specify a custom CSS file that replaces the theme content CSS. This CSS file is the one used within the editor (the editable area)."
-msgstr ""
+msgstr "指定客製化的 CSS 檔案，可以取代系統預設值，用來調整編輯器的畫面外觀。"
 
 #: ../interfaces/utility.py:19
 msgid "This option gives you the ability to enable/disable auto resizing the editor window depending on the content."
-msgstr ""
+msgstr "指定編輯器視窗是否依照內容長度而自動調整尺寸。"
 
 #: ../interfaces/utility.py:14
 msgid "This option gives you the ability to enable/disable resizing the editor window. If the editor width is set to a percentage only vertical resizing is enabled."
-msgstr ""
+msgstr "指定編輯器視窗能否自動調整尺寸，如果寬度設為百分比，只有垂直尺寸能夠調整。"
 
 #: ../interfaces/utility.py:45
 msgid "This option gives you the ability to enable/disable the use of the contextmenu."
-msgstr ""
+msgstr "指定選單是否出現。"
 
 #: ../interfaces/utility.py:29
 msgid "This option gives you the ability to specify the height of the editor in pixels. If auto resize is enabled this value is used as minimum height."
-msgstr ""
+msgstr "指定編輯器高度的像素值，如果啟用自動調整尺寸的功能，這個設定值會成為最小高度。"
 
 #: ../interfaces/utility.py:24
 msgid "This option gives you the ability to specify the width of the editor in pixels or percent."
-msgstr ""
+msgstr "指定編輯器的寬度使用像素值或百分比來控制。"
 
 #: ../interfaces/utility.py:69
 msgid "This option gives you the ability to specify the width of the toolbar in pixels."
