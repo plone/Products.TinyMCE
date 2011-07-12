@@ -13,6 +13,8 @@ class TinyMCEStyle(BrowserView):
     def getStyle(self):
         """Returns a stylesheet with all content styles"""
 
+        self.request.response.setHeader('Content-Type', 'text/css')
+
         registry = getToolByName(aq_inner(self.context), 'portal_css')
         registry_url = registry.absolute_url()
         context = aq_inner(self.context)
