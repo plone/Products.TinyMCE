@@ -17,7 +17,7 @@ cp -R $tinymce_git_root/jscripts/tiny_mce/* $tinymce_root/
 echo "*** Removing unneeded files ..."
 rm -rf $tinymce_root/classes
 rm -rf $tinymce_root/themes/simple
-rm -f $tinymce_root/{*prototype*,*jquery*,license.txt,tiny_mce_dev.js}
+rm -f $tinymce_root/{*prototype*,license.txt,tiny_mce_dev.js,tiny_mce_jquery_src.js}
 
 echo "*** Removing unneeded plugins ..."
 rm -rf $tinymce_root/plugins/{advimage,advlink,example,fullpage,style,simple}
@@ -29,6 +29,7 @@ find $tinymce_root -name "*_src.js" -delete
 
 echo "*** Updating language files ..."
 cd $product_root/utils/
+# XXX run it once
 #python wget-xml.py
 python generate-po.py
 python compile-mo.py
