@@ -3,6 +3,7 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="tinymce">
 
+    <include package="Products.CMFCore" file="permissions.zcml" />
     <browser:page
         for="..interfaces.utility.ITinyMCE"
         name="tinymce-controlpanel"
@@ -24,6 +25,20 @@
         class=".url.TinyMCEUrl"
         attribute="getPathByUID"
         permission="zope2.View"
+        />
+
+    <browser:page
+        for="*"
+        name="tiny_mce_gzip"
+        class=".compressor.GzipCompressorView"
+        permission="zope2.View"
+        />
+
+    <browser:page
+        for="*"
+        name="testtinymce"
+        permission="zope2.View"
+        template="testtinymce.pt"
         />
 
     <browser:page
