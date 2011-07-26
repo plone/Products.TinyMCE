@@ -12,6 +12,7 @@ import os
 from cStringIO import StringIO
 from gzip import GzipFile
 
+import zope.component
 from Products.Five import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
@@ -45,7 +46,10 @@ class GzipCompressorView(BrowserView):
         response.headers["Content-Type"] = "text/javascript"
 
         if not isJS:
-            return self.tiny_mce_gzip()(base_url=JS_BASE_URL)
+            plone_portal_state = zope.component.getMultiAdapter(
+                    (self.context, self.request), name="plone_portal_state") 
+            portal_url = plone_portal_state.portal_url()
+            return self.tiny_mce_gzip(base_url=portal_url)
 
     #patch_vary_headers(response, ['Accept-Encoding'])
 

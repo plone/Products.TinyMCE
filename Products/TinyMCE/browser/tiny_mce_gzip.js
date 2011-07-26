@@ -15,7 +15,7 @@ var tinyMCE_GZ = {
 		plugins : '',
 		languages : '',
 		disk_cache : true,
-		page_name : '{% url tinymce-compressor %}',
+		page_name : '<tal:page tal:replace="string:${options/base_url}/tiny_mce_gzip" />',
 		debug : false,
 		suffix : ''
 	},
