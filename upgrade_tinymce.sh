@@ -1,5 +1,6 @@
 set -e
-root=$(dirname $0)
+#root=$(dirname $0)
+root=$PWD
 product_root=$root/Products/TinyMCE/
 tinymce_root=$product_root/skins/tinymce/
 tinymce_git_root=$root/src/tinymce/
@@ -22,8 +23,8 @@ echo "*** Removing unneeded plugins ..."
 rm -rf $tinymce_root/plugins/{advimage,advlink,example,fullpage,style,simple}
 
 # plugins modifications
-find $tinymce_root -name "*.html" | xargs rename -f s/html$/html.pt/
-find $tinymce_root -name "*.htm" | xargs rename -f s/htm$/htm.pt/
+find $tinymce_root -name "*.html" -execdir "$root/bin/rename" "('{}')" "\1.pt"    \;
+find $tinymce_root -name "*.htm" -execdir "$root/bin/rename" "('{}')" "\1.pt"    \;
 find $tinymce_root -name "*_src.js" -delete
 
 echo "*** Updating language files ..."
