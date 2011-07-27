@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>igor [dot] stojcevic [at] gmail [dot] com</author>
+    <version major="2" minor="6" releasedate="2010-03-19" />
+    <description>Slovenski prevodi za TinyMCE.</description>
+  </header>
+  <language code="sl" title="Slovenščina" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">Želite uporabiti način \'videz ne vara\' (WYSIWYG) za to vnosno polje?</item>
+      <item name="apply">Uporabi</item>
+      <item name="insert">Vstavi</item>
+      <item name="update">Posodobi</item>
+      <item name="cancel">Prekliči</item>
+      <item name="close">Zapri</item>
+      <item name="browse">Prebrskaj</item>
+      <item name="class_name">Razred</item>
+      <item name="not_set">-- ni nastavljeno --</item>
+      <item name="clipboard_msg">Delo z odložiščem ni mogoče v tem brskalniku. Lahko uporabljate kombinacije tipk Ctrl+X, Ctrl+C, Ctrl+V.\nŽelite več informacij o tem?</item>
+      <item name="clipboard_no_support">Trenutno ni podporto v vašem brskalniku. Uporabite bližnjice tipkovnice.</item>
+      <item name="popup_blocked">Žal vaše orodje za preprečevanje odpiranja nezaželenih oken (popup-blocker) ne omogoča prikaza pomožnega okna izbranega orodja. Preprečevanje odpiranja oken morate onemogočiti.</item>
+      <item name="invalid_data">Napaka: vnešene so bile nepravilne vrednosti, označene so z rdečo.</item>
+      <item name="more_colors">Več barv</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">Krepko (Ctrl+B)</item>
+      <item name="italic_desc">Poševno (Ctrl+I)</item>
+      <item name="underline_desc">Podčrtano (Ctrl+U)</item>
+      <item name="striketrough_desc">Prečrtano</item>
+      <item name="bullist_desc">Alineje</item>
+      <item name="numlist_desc">Naštevanje</item>
+      <item name="undo_desc">Razveljavi (Ctrl+Z)</item>
+      <item name="redo_desc">Uveljavi (Ctrl+Y)</item>
+      <item name="cleanup_desc">Prečisti kodo</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">Izberite slog</item>
+      <item name="font_size">Velikost pisave</item>
+      <item name="fontdefault">Družina pisave</item>
+      <item name="block">oblika</item>
+      <item name="paragraph">odstavek</item>
+      <item name="div">blok</item>
+      <item name="address">naslov</item>
+      <item name="pre">predoblikovano</item>
+      <item name="h1">naslov 1</item>
+      <item name="h2">naslov 2</item>
+      <item name="h3">naslov 3</item>
+      <item name="h4">naslov 4</item>
+      <item name="h5">naslov 5</item>
+      <item name="h6">naslov 6</item>
+      <item name="blockquote">citat</item>
+      <item name="code">koda</item>
+      <item name="samp">kodni zgled</item>
+      <item name="dt">definicija - izraz</item>
+      <item name="dd">definicija - opis</item>
+      <!-- Buttons -->
+      <item name="bold_desc">Krepko (Ctrl+B)</item>
+      <item name="italic_desc">Poševno (Ctrl+I)</item>
+      <item name="underline_desc">Podčrtano (Ctrl+U)</item>
+      <item name="striketrough_desc">Prečrtano</item>
+      <item name="justifyleft_desc">Poravnava levo</item>
+      <item name="justifycenter_desc">Poravnava na sredino</item>
+      <item name="justifyright_desc">Poravnava desno</item>
+      <item name="justifyfull_desc">Polna poravnava</item>
+      <item name="bullist_desc">Alineje</item>
+      <item name="numlist_desc">Naštevanje</item>
+      <item name="outdent_desc">Zamakni</item>
+      <item name="indent_desc">Odmakni ven</item>
+      <item name="undo_desc">Razveljavi (Ctrl+Z)</item>
+      <item name="redo_desc">Uveljavi (Ctrl+Y)</item>
+      <item name="link_desc">Vstavi/uredi povezavo</item>
+      <item name="unlink_desc">Odstrani povezavo</item>
+      <item name="image_desc">Vstavi/uredi sliko</item>
+      <item name="cleanup_desc">Prečisti kodo</item>
+      <item name="code_desc">Uredi kodo HTML</item>
+      <item name="sub_desc">Podpisano</item>
+      <item name="sup_desc">Nadpisano</item>
+      <item name="hr_desc">Vstavi črto</item>
+      <item name="removeformat_desc">Odstrani oblikovanje</item>
+      <item name="custom1_desc">Opis tule</item>
+      <item name="forecolor_desc">Izberite barvo pisave</item>
+      <item name="backcolor_desc">Izberite barvo ozadja</item>
+      <item name="charmap_desc">Vstavi posebni znak</item>
+      <item name="visualaid_desc">Preklop prikaza vodil</item>
+      <item name="anchor_desc">Vstavi/uredi sidro</item>
+      <item name="cut_desc">Izreži</item>
+      <item name="copy_desc">Kopiraj</item>
+      <item name="paste_desc">Prilepi</item>
+      <item name="image_props_desc">Lastnosti slike</item>
+      <item name="newdocument_desc">Nov dokument</item>
+      <item name="help_desc">Pomoč</item>
+      <item name="blockquote_desc">Citat</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">Delo z odložiščem ni mogoče v tem brskalniku. Lahko uporabljate kombinacije tipk Ctrl+X, Ctrl+C, Ctrl+V.\nŽelite več informacij o tem?</item>
+      <item name="path">Pot</item>
+      <item name="newdocument">Ste prepričani, da želite odstraniti vsebino?</item>
+      <item name="toolbar_focus">Preskok na orodjarno - Alt+Q, Preskok v urejevalnik - Alt-Z, Preskok na pot elementa - Alt-X</item>
+      <item name="more_colors">Več barv</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">O TinyMCE</item>
+      <item name="about_general">Vizitka</item>
+      <item name="about_help">Pomoč</item>
+      <item name="about_license">Licenca</item>
+      <item name="about_plugins">Vsadki</item>
+      <item name="about_plugin">Vsadek</item>
+      <item name="about_author">Avtor</item>
+      <item name="about_version">Verzija</item>
+      <item name="about_loaded">Naloženi vsadki</item>
+      <!-- Anchor -->
+      <item name="anchor_title">Vstavi/uredi sidro</item>
+      <item name="anchor_name">Ime sidra</item>
+      <!-- Source -->
+      <item name="code_title">Urejevalnik kode HTML</item>
+      <item name="code_wordwrap">Prelomi vrstice</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">Izberite barvo</item>
+      <item name="colorpicker_picker_tab">Izbor</item>
+      <item name="colorpicker_picker_title">Izbor barve</item>
+      <item name="colorpicker_palette_tab">Paleta</item>
+      <item name="colorpicker_palette_title">Barve palete</item>
+      <item name="colorpicker_named_tab">Poimenovane</item>
+      <item name="colorpicker_named_title">Poimenovane barve</item>
+      <item name="colorpicker_color">Barva:</item>
+      <item name="colorpicker_name">Ime:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">Izberite posebni znak</item>
+      <!-- Image -->
+      <item name="image_title">Vstavi/uredi sliko</item>
+      <item name="image_src">Naslov URL slike</item>
+      <item name="image_alt">Opis slike</item>
+      <item name="image_list">Seznam slik</item>
+      <item name="image_border">Obroba</item>
+      <item name="image_dimensions">Dimenzije</item>
+      <item name="image_vspace">Prostor zg/sp</item>
+      <item name="image_hspace">Prostor le/de</item>
+      <item name="image_align">Poravnava</item>
+      <item name="image_align_baseline">osnovna črta</item>
+      <item name="image_align_top">vrh</item>
+      <item name="image_align_middle">sredina</item>
+      <item name="image_align_bottom">dno</item>
+      <item name="image_align_texttop">vrh besedila</item>
+      <item name="image_align_textbottom">dno besedila</item>
+      <item name="image_align_left">levo, plavajoče</item>
+      <item name="image_align_right">desno, plavajoče</item>
+      <!-- Link -->
+      <item name="link_title">Vstavi/uredi povezavo</item>
+      <item name="link_url">Naslov URL</item>
+      <item name="link_target">Ime cilja</item>
+      <item name="link_target_same">odpri povezavo v istem oknu</item>
+      <item name="link_target_blank">odpri povezavo v novem oknu</item>
+      <item name="link_titlefield">Naslov</item>
+      <item name="link_is_email">Vneseni naslov verjetno prestavlja e-naslov, želite da dodam zahtevano predpono \'mailto:\'?</item>
+      <item name="link_is_external">Vneseni naslov verjetno predstavlja zunanjo povezavo, želite da dodam zahtevano predpono \'http://\'?</item>
+      <item name="link_list">Seznam povezav</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">Poravnava</item>
+      <item name="left">Levo</item>
+      <item name="center">Sredina</item>
+      <item name="right">Desno</item>
+      <item name="full">Polno</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%d.%m.%Y</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">Vstavi datum</item>
+      <item name="inserttime_desc">Vstavi čas</item>
+      <item name="months_long">januar,februar,marec,april,maj,junij,julij,avgust,september,oktober,november,december</item>
+      <item name="months_short">jan,feb,mar,apr,maj,jun,jul,avg,sep,okt,nov,dec</item>
+      <item name="day_long">nedelja,ponedeljek,torek,sreda,četrtek,petek,sobota,nedelja</item>
+      <item name="day_short">ned,pon,tor,sre,čet,pet,sob,ned</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">Natisni</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">Predogled</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">Smer od leve proti desni</item>
+      <item name="rtl_desc">Smer od desne proti levi</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">Vstavi nov sloj</item>
+      <item name="forward_desc">Premakni v ospredje</item>
+      <item name="backward_desc">Premakni v ozadje</item>
+      <item name="absolute_desc">Preklop absolutnega položaja</item>
+      <item name="content">Nov sloj...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">Shrani</item>
+      <item name="cancel_desc">Prekliči vse spremembe</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">Vstavi nedeljivi presledek</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">Zaženi preverjanje črkovanja</item>
+      <item name="download">ieSpell ni zaznan. Želite, da ga namestim?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">Vodoravna črta</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">Širina</item>
+      <item name="size">Višina</item>
+      <item name="noshade">Brez senčenja</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">Smeški</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">Vstavi smeška</item>
+      <item name="desc">Smeški</item>
+      <item name="cool">kul</item>
+      <item name="cry">jok</item>
+      <item name="embarassed">v zadregi</item>
+      <item name="foot_in_mouth">zarečeni kruh</item>
+      <item name="frown">nagubano čelo</item>
+      <item name="innocent">nedolžen</item>
+      <item name="kiss">poljub</item>
+      <item name="laughing">smeh</item>
+      <item name="money_mouth">zlati kljun</item>
+      <item name="sealed">zapečateno</item>
+      <item name="smile">nasmeh</item>
+      <item name="surprised">presenečen</item>
+      <item name="tongue_out">kaže jezik</item>
+      <item name="undecided">neodločen</item>
+      <item name="wink">mežik</item>
+      <item name="yell">krik</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">Najdi</item>
+      <item name="replace_desc">Najdi/zamenjaj</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">Najdi znova</item>
+      <item name="notfound">Preiskovanje zaključeno. Iskanega besedila nisem našel.</item>
+      <item name="search_title">Najdi</item>
+      <item name="replace_title">Najdi/zamenjaj</item>
+      <item name="allreplaced">Vse pojavitve iskanega besedila so bile zamenjane.</item>
+      <item name="findwhat">Iščem za</item>
+      <item name="replacewith">Zamenjam z</item>
+      <item name="direction">Smer</item>
+      <item name="up">navzgor</item>
+      <item name="down">navzdol</item>
+      <item name="mcase">ujemanje velikosti</item>
+      <item name="findnext">Najdi nasled.</item>
+      <item name="replace">Zamenjaj</item>
+      <item name="replaceall">Zamenjaj vse</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">Vstavi/uredi sliko</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">Splošno</item>
+      <item name="tab_appearance">Izgled</item>
+      <item name="tab_advanced">Napredno</item>
+      <item name="general">Splošno</item>
+      <item name="title">Naslov</item>
+      <item name="preview">Predogled</item>
+      <item name="constrain_proportions">Zakleni razmerje</item>
+      <item name="langdir">Smer jezika</item>
+      <item name="langcode">Koda jezika</item>
+      <item name="long_desc">Povezava do opisa</item>
+      <item name="style">Slog</item>
+      <item name="classes">Razredi</item>
+      <item name="ltr">Od leve proti desni</item>
+      <item name="rtl">Od desne proti levi</item>
+      <item name="id">Id</item>
+      <item name="map">Karta slike</item>
+      <item name="swap_image">Zamenjava slike</item>
+      <item name="alt_image">Nadomestna slika</item>
+      <item name="mouseover">pri miški nad</item>
+      <item name="mouseout">pri miški izven</item>
+      <item name="misc">Razno</item>
+      <item name="example_img">Predogled izgleda</item>
+      <item name="missing_alt">Zares želite nadaljevati, brez da bi določili opis slike? Brez njega slika nekaterim uporabnikom ne bo na voljo (izklopljen prikaz slik, tekstni brskalnik ali ljudje s slabšim vidom).</item>
+      <item name="dialog_title">Vstavi/uredi sliko</item>
+      <item name="src">Naslov URL slike</item>
+      <item name="alt">Opis slike</item>
+      <item name="list">Seznam slik</item>
+      <item name="border">Obroba</item>
+      <item name="dimensions">Dimenzije</item>
+      <item name="vspace">Prostor zg/sp</item>
+      <item name="hspace">Prostor le/de</item>
+      <item name="align">Poravnava</item>
+      <item name="align_baseline">osnovna črta</item>
+      <item name="align_top">vrh</item>
+      <item name="align_middle">sredina</item>
+      <item name="align_bottom">dno</item>
+      <item name="align_texttop">vrh besedila</item>
+      <item name="align_textbottom">dno besedila</item>
+      <item name="align_left">levo, plavajoče</item>
+      <item name="align_right">desno, plavajoče</item>
+      <item name="image_list">Seznam slik</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">Vstavi/uredi povezavo</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">Vstavi/uredi povezavo</item>
+      <item name="url">Naslov URL</item>
+      <item name="target">Cilj</item>
+      <item name="titlefield">Naslov</item>
+      <item name="is_email">Vneseni naslov verjetno prestavlja e-naslov, želite da dodam zahtevano predpono \'mailto:\'?</item>
+      <item name="is_external">Vneseni naslov verjetno predstavlja zunanjo povezavo, želite da dodam zahtevano predpono</item>
+      <item name="list">Seznam povezav</item>
+      <item name="general_tab">Splošno</item>
+      <item name="popup_tab">Dodatno okno</item>
+      <item name="events_tab">Dogodki</item>
+      <item name="advanced_tab">Napredno</item>
+      <item name="general_props">Splošne lastnosti</item>
+      <item name="popup_props">Lastnosti okna</item>
+      <item name="event_props">Dogodki</item>
+      <item name="advanced_props">Napredne lastnosti</item>
+      <item name="popup_opts">Možnosti</item>
+      <item name="anchor_names">Sidra</item>
+      <item name="target_same">Odpri v tem oknu / okviru</item>
+      <item name="target_parent">Odpri v nadrejenem oknu / okviru</item>
+      <item name="target_top">Odpri v vrhnjem okviru (nadomesti vse okvire)</item>
+      <item name="target_blank">Odpri v novem oknu</item>
+      <item name="popup">Dodatno okno z javascriptom</item>
+      <item name="popup_url">Naslov URL okna</item>
+      <item name="popup_name">Ime okna</item>
+      <item name="popup_return">Vstavi \'return false\'</item>
+      <item name="popup_scrollbars">Prikaži drsnike</item>
+      <item name="popup_statusbar">Prikaži vrstico stanja</item>
+      <item name="popup_toolbar">Prikaži orodjarno</item>
+      <item name="popup_menubar">Prikaži meni</item>
+      <item name="popup_location">Prikaži vrstico naslova</item>
+      <item name="popup_resizable">Omogoči pvoečevanje okna</item>
+      <item name="popup_dependent">Odvisno (le za Mozillo/Firefox)</item>
+      <item name="popup_size">Velikost</item>
+      <item name="popup_position">Položaj (X/Y)</item>
+      <item name="id">Id</item>
+      <item name="style">Slog</item>
+      <item name="classes">Razredi</item>
+      <item name="target_name">Ime cilja</item>
+      <item name="langdir">Smer pisave</item>
+      <item name="target_langcode">Jezik cilja</item>
+      <item name="langcode">Koda jezika</item>
+      <item name="encoding">Kodiranje znakov cilja</item>
+      <item name="mime">Tip MIME cilja</item>
+      <item name="rel">Razmerje strani do cilja</item>
+      <item name="rev">Razmerje cilja do strani</item>
+      <item name="tabindex">Zap. št.</item>
+      <item name="accesskey">Tipka dostopa</item>
+      <item name="ltr">Od leve proti desni</item>
+      <item name="rtl">Od desne proti levi</item>
+      <item name="link_list">Seznam povezav</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">Citat</item>
+      <item name="abbr_desc">Okrajšava</item>
+      <item name="acronym_desc">Kratica</item>
+      <item name="del_desc">Izbrisano</item>
+      <item name="ins_desc">Vstavljeno</item>
+      <item name="attribs_desc">Vstavi/uredi atribute</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">Naslov</item>
+      <item name="attribute_label_id">Id</item>
+      <item name="attribute_label_class">Razred</item>
+      <item name="attribute_label_style">Slog</item>
+      <item name="attribute_label_cite">Citat</item>
+      <item name="attribute_label_datetime">Datum/ura</item>
+      <item name="attribute_label_langdir">Smer pisave</item>
+      <item name="attribute_option_ltr">Od leve proti desni</item>
+      <item name="attribute_option_rtl">Od desne proti levi</item>
+      <item name="attribute_label_langcode">Jezik</item>
+      <item name="attribute_label_tabindex">Zap. št.</item>
+      <item name="attribute_label_accesskey">Tipka dostopa</item>
+      <item name="attribute_events_tab">Dogodki</item>
+      <item name="attribute_attrib_tab">Atributi</item>
+      <item name="general_tab">Splošno</item>
+      <item name="attrib_tab">Atributi</item>
+      <item name="events_tab">Dogodki</item>
+      <item name="fieldset_general_tab">Splošne nastavitve</item>
+      <item name="fieldset_attrib_tab">Atributi elementa</item>
+      <item name="fieldset_events_tab">Dogodki elementa</item>
+      <item name="title_ins_element">Vstavljeno</item>
+      <item name="title_del_element">Izbrisano</item>
+      <item name="title_acronym_element">Kratica</item>
+      <item name="title_abbr_element">Okrajšava</item>
+      <item name="title_cite_element">Citat</item>
+      <item name="remove">Odstrani</item>
+      <item name="insert_date">Vstavi trenutni datum/čas</item>
+      <item name="option_ltr">Od leve proti desni</item>
+      <item name="option_rtl">Od desne proti levi</item>
+      <item name="attribs_title">Vstavi/uredi atribute</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">Uredi sloge CSS</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">Uredi sloge CSS</item>
+      <item name="apply">Uporabi</item>
+      <item name="text_tab">Besedilo</item>
+      <item name="background_tab">Ozadje</item>
+      <item name="block_tab">Blok</item>
+      <item name="box_tab">Okvir</item>
+      <item name="border_tab">Obroba</item>
+      <item name="list_tab">Seznam</item>
+      <item name="positioning_tab">Položaj</item>
+      <item name="text_props">Besedilo</item>
+      <item name="text_font">Pisava</item>
+      <item name="text_size">Velikost</item>
+      <item name="text_weight">Utež</item>
+      <item name="text_style">Slog</item>
+      <item name="text_variant">Različica</item>
+      <item name="text_lineheight">Višina vrstice</item>
+      <item name="text_case">Velikost</item>
+      <item name="text_color">Barva</item>
+      <item name="text_decoration">Okras</item>
+      <item name="text_overline">nadčrtano</item>
+      <item name="text_underline">podčrtano</item>
+      <item name="text_striketrough">prečrtano</item>
+      <item name="text_blink">utripajoče</item>
+      <item name="text_none">brez</item>
+      <item name="background_color">Barva ozadja</item>
+      <item name="background_image">Slika ozadja</item>
+      <item name="background_repeat">Ponavljaj</item>
+      <item name="background_attachment">Priponka</item>
+      <item name="background_hpos">Vodoravni položaj</item>
+      <item name="background_vpos">Navpični položaj</item>
+      <item name="block_wordspacing">Razmik besed</item>
+      <item name="block_letterspacing">Razmik znakov</item>
+      <item name="block_vertical_alignment">Navpična poravnava</item>
+      <item name="block_text_align">Poravnava besedila</item>
+      <item name="block_text_indent">Zamik besedila</item>
+      <item name="block_whitespace">Beli prostor</item>
+      <item name="block_display">Prikaz</item>
+      <item name="box_width">Širina</item>
+      <item name="box_height">Višina</item>
+      <item name="box_float">Plavojoče</item>
+      <item name="box_clear">Čisto</item>
+      <item name="padding">Podlaganje</item>
+      <item name="same">Enako za vse</item>
+      <item name="top">Zgoraj</item>
+      <item name="right">Desno</item>
+      <item name="bottom">Spodaj</item>
+      <item name="left">Levo</item>
+      <item name="margin">Rob</item>
+      <item name="style">Slog</item>
+      <item name="width">Širina</item>
+      <item name="height">Višina</item>
+      <item name="color">Barva</item>
+      <item name="list_type">Vrsta</item>
+      <item name="bullet_image">Slika alineje</item>
+      <item name="position">Položaj</item>
+      <item name="positioning_type">Vrsta</item>
+      <item name="visibility">Vidnost</item>
+      <item name="zindex">Indeks-Z</item>
+      <item name="overflow">Prelivanje</item>
+      <item name="placement">Položaj</item>
+      <item name="clip">Obreži</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">Prilepi kot golo besedilo</item>
+      <item name="paste_word_desc">Prilepi iz Word-a</item>
+      <item name="selectall_desc">Izberi vse</item>
+      <!--<item name="plaintext_mode_sticky">Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode.</item>-->
+      <!--<item name="plaintext_mode">Paste is now in plain text mode. Click again to toggle back to regular paste mode.</item>-->
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">Uporabite kombinacijo tipk CTRL+V, da prilepite vsebino v okno.</item>
+      <item name="text_linebreaks">Obdrži prelome vrstic</item>
+      <item name="word_title">Uporabite kombinacijo tipk CTRL+V, da prilepite vsebino v okno.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">Vstavi/posodobi tabelo</item>
+      <item name="row_before_desc">Vstavi vrstico nad</item>
+      <item name="row_after_desc">Vstavi vrstico pod</item>
+      <item name="delete_row_desc">Odstrani vrstico</item>
+      <item name="col_before_desc">Vstavi stolpec pred</item>
+      <item name="col_after_desc">Vstavi stolpec po</item>
+      <item name="delete_col_desc">Odstrani stolpec</item>
+      <item name="split_cells_desc">Razcepi celico</item>
+      <item name="merge_cells_desc">Spoji celice</item>
+      <item name="row_desc">Lastnosti vrstice</item>
+      <item name="cell_desc">Lastnosti celice</item>
+      <item name="props_desc">Lastnosti tabele</item>
+      <item name="paste_row_before_desc">Prilepi vrstico pred</item>
+      <item name="paste_row_after_desc">Prilepi vrstico po</item>
+      <item name="cut_row_desc">Izreži vrstico</item>
+      <item name="copy_row_desc">Kopiraj vrstico</item>
+      <item name="del">Odstrani tabelo</item>
+      <item name="row">Vrstica</item>
+      <item name="col">Stolpec</item>
+      <item name="cell">Celica</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width">100</item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">Splošno</item>
+      <item name="advanced_tab">Napredno</item>
+      <item name="general_props">Splošne lastnosti</item>
+      <item name="advanced_props">Napredne lastnosti</item>
+      <item name="rowtype">Vrstica v tabeli</item>
+      <item name="title">Vstavi/posodobi tabelo</item>
+      <item name="width">Širina</item>
+      <item name="height">Višina</item>
+      <item name="cols">Stolpcev</item>
+      <item name="rows">Vrstic</item>
+      <item name="cellspacing">Razmik celic</item>
+      <item name="cellpadding">Podlaganje celic</item>
+      <item name="border">Obroba</item>
+      <item name="align">Poravnava</item>
+      <item name="align_default">Privzeto</item>
+      <item name="align_left">Levo</item>
+      <item name="align_right">Desno</item>
+      <item name="align_middle">Sredina</item>
+      <item name="row_title">Lastnosti vrstice</item>
+      <item name="cell_title">Lastnosti celice</item>
+      <item name="cell_type">Tip celice</item>
+      <item name="valign">Navpična poravnava</item>
+      <item name="align_top">Vrh</item>
+      <item name="align_bottom">Dno</item>
+      <item name="bordercolor">Barva obrobe</item>
+      <item name="bgcolor">Barva ozadja</item>
+      <item name="merge_cells_title">Spoji celice</item>
+      <item name="id">Oznaka</item>
+      <item name="style">Slog</item>
+      <item name="langdir">Smer pisave</item>
+      <item name="langcode">Koda jezika</item>
+      <item name="mime">Ciljni tip MIME</item>
+      <item name="ltr">Od leve proti desni</item>
+      <item name="rtl">Od desne proti levi</item>
+      <item name="bgimage">Slika ozadja</item>
+      <item name="summary">Povzetek</item>
+      <item name="td">Podatek</item>
+      <item name="th">Glava</item>
+      <item name="cell_cell">Posodobi trenutno celico</item>
+      <item name="cell_row">Posodobi vse celice vrstice</item>
+      <item name="cell_all">Posodobi vse celice tabele</item>
+      <item name="row_row">Posodobi trenutno vrstico</item>
+      <item name="row_odd">Posodobi lihe vrstice</item>
+      <item name="row_even">Posodobi sode vrstice</item>
+      <item name="row_all">Posodobi vse vrstice</item>
+      <item name="thead">Glava tabele</item>
+      <item name="tbody">Telo tabele</item>
+      <item name="tfoot">Noga tabele</item>
+      <item name="scope">Doseg</item>
+      <item name="rowgroup">Skup. vrst.</item>
+      <item name="colgroup">Skup. stolp.</item>
+      <item name="col_limit">Presegli ste dovoljeno število stolpcev: {$cols}.</item>
+      <item name="row_limit">Presegli ste dovoljeno število vrstic: {$rows}.</item>
+      <item name="cell_limit">Presegli ste dovoljeno število celic: {$cells}.</item>
+      <item name="missing_scope">Ste prepričani, da želite nadaljevati brez določenega dosega? Brez dosega je razumevanje tabele lahko oteženo ljudem s slabšo zaznavo!</item>
+      <item name="caption">Opis tabele</item>
+      <item name="frame">Okvir</item>
+      <item name="frame_none">brez</item>
+      <item name="frame_groups">skupine</item>
+      <item name="frame_rows">vrstice</item>
+      <item name="frame_cols">stolpci</item>
+      <item name="frame_all">vse</item>
+      <item name="rules">Pravila</item>
+      <item name="rules_void">prazno</item>
+      <item name="rules_above">nad</item>
+      <item name="rules_below">pod</item>
+      <item name="rules_hsides">v-strani</item>
+      <item name="rules_lhs">l-strani</item>
+      <item name="rules_rhs">d-strani</item>
+      <item name="rules_vsides">n-strani</item>
+      <item name="rules_box">škatla</item>
+      <item name="rules_border">obroba</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">Ce se premaknete na drugo stran, bodo narejene spremembe izgubljene!</item>
+      <!--<item name="restore_content">Restore auto-saved content.</item>-->
+      <!--<item name="warning_message">If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?.</item>-->
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">Preklopi celozaslonski način</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">Vstavi / uredi multimedijsko vsebino</item>
+      <item name="edit">Uredi multimedijsko vsebino</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">Vstavi / uredi multimedijsko vsebino</item>
+      <item name="general">Splošno</item>
+      <item name="advanced">Napredno</item>
+      <item name="file">Datoteka/URL</item>
+      <item name="list">Seznam</item>
+      <item name="size">Dimenzije</item>
+      <item name="preview">Predogled</item>
+      <item name="constrain_proportions">Obdrži razmerje</item>
+      <item name="type">Tip</item>
+      <item name="id">Oznaka</item>
+      <item name="name">Ime</item>
+      <item name="class_name">Razred</item>
+      <item name="vspace">n-razmik</item>
+      <item name="hspace">v-razmik</item>
+      <item name="play">Samodejno predvajaj</item>
+      <item name="loop">Zankaj</item>
+      <item name="menu">Prikaži meni</item>
+      <item name="quality">Kakovost</item>
+      <item name="scale">Stopnja povečave</item>
+      <item name="align">Poravnava</item>
+      <item name="salign">"SAlign"</item>
+      <item name="wmode">"WMode"</item>
+      <item name="bgcolor">Ozadje</item>
+      <item name="base">"Base"</item>
+      <item name="flashvars">"Flashvars"</item>
+      <item name="liveconnect">"SWLiveConnect"</item>
+      <item name="autohref">"AutoHREF"</item>
+      <item name="cache">Predpomnjenje</item>
+      <item name="hidden">Skrito</item>
+      <item name="controller">Nadzorni element</item>
+      <item name="kioskmode">Način \'kiosk\'</item>
+      <item name="playeveryframe">Predvajaj vsak okvir</item>
+      <item name="targetcache">Ciljno predpomnjenje</item>
+      <item name="correction">Brez popravkov</item>
+      <item name="enablejavascript">Omogoči JavaScript</item>
+      <item name="starttime">Začetni čas</item>
+      <item name="endtime">Končni čas</item>
+      <item name="href">"Href"</item>
+      <item name="qtsrcchokespeed">"Choke speed"</item>
+      <item name="target">Cilj</item>
+      <item name="volume">Glasnost</item>
+      <item name="autostart">Samodejno začni</item>
+      <item name="enabled">Omogočeno</item>
+      <item name="fullscreen">Cel zaslon</item>
+      <item name="invokeurls">Naslovi URLje</item>
+      <item name="mute">Utišaj</item>
+      <item name="stretchtofit">Razširi</item>
+      <item name="windowlessvideo">Video brez okna</item>
+      <item name="balance">Ravnovesje</item>
+      <item name="baseurl">Temeljni URL</item>
+      <item name="captioningid">Oznaka podnapisov</item>
+      <item name="currentmarker">Trenutna oznaka</item>
+      <item name="currentposition">Trenutni položaj</item>
+      <item name="defaultframe">Privzeti okvir</item>
+      <item name="playcount">Število predvajanj</item>
+      <item name="rate">Ocena</item>
+      <item name="uimode">Način uporabniškega vmesnika</item>
+      <item name="flash_options">Možnosti Flash</item>
+      <item name="qt_options">Možnosti Quicktime</item>
+      <item name="wmp_options">Možnosti Windows media player</item>
+      <item name="rmp_options">Možnosti Real media player</item>
+      <item name="shockwave_options">Možnosti Shockwave</item>
+      <item name="autogotourl">Samodejno na URL</item>
+      <item name="center">Sredina</item>
+      <item name="imagestatus">Slika stanja</item>
+      <item name="maintainaspect">Zakleni razmerje</item>
+      <item name="nojava">Brez Jave</item>
+      <item name="prefetch">Vnaprejšnje nalaganje</item>
+      <item name="shuffle">Pomešaj</item>
+      <item name="console">Konzola</item>
+      <item name="numloop">Št. zank</item>
+      <item name="controls">Nadzorni elementi</item>
+      <item name="scriptcallbacks">Klicani skript</item>
+      <item name="swstretchstyle">Slog raztegovanja</item>
+      <item name="swstretchhalign">raztegni v-poravnano</item>
+      <item name="swstretchvalign">raztegni n-poravnano</item>
+      <item name="sound">Zvok</item>
+      <item name="progress">Napredek</item>
+      <item name="qtsrc">"QT Src"</item>
+      <item name="qt_stream_warn">Opozorilo: "Streamed rtsp resources should be added to the QT Src field under the advanced tab.\nYou should also add a non streamed version to the Src field.."</item>
+      <item name="align_top">vrh</item>
+      <item name="align_right">desno</item>
+      <item name="align_bottom">dno</item>
+      <item name="align_left">levo</item>
+      <item name="align_center">sredina</item>
+      <item name="align_top_left">zgoraj levo</item>
+      <item name="align_top_right">zgoraj desno</item>
+      <item name="align_bottom_left">spodaj levo</item>
+      <item name="align_bottom_right">spodaj desno</item>
+      <item name="flv_options">Možnosti videa Flash</item>
+      <item name="flv_scalemode">Način povečevanja</item>
+      <item name="flv_buffer">Medpomnjenje</item>
+      <item name="flv_startimage">Začetna slika</item>
+      <item name="flv_starttime">Začetni čas</item>
+      <item name="flv_defaultvolume">Privzeta glasnost</item>
+      <item name="flv_hiddengui">Skrit up. vmesnik</item>
+      <item name="flv_autostart">Samodejni zagon</item>
+      <item name="flv_loop">Zanka</item>
+      <item name="flv_showscalemodes">Prikaži načine povečave</item>
+      <item name="flv_smoothvideo">Mehčaj video</item>
+      <item name="flv_jscallback">Klicani JavaScript</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">Lastnosti dokumenta</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Lastnosti dokumenta</item>
+      <item name="meta_tab">Splošno</item>
+      <item name="appearance_tab">Izgled</item>
+      <item name="advanced_tab">Napredno</item>
+      <item name="meta_props">Meta podatki</item>
+      <item name="langprops">Jezik in kodiranje</item>
+      <item name="meta_title">Naslov</item>
+      <item name="meta_keywords">Ključne besede</item>
+      <item name="meta_description">Opis</item>
+      <item name="meta_robots">Roboti</item>
+      <item name="doctypes">Doctype</item>
+      <item name="langcode">Koda jezika</item>
+      <item name="langdir">Smer pisave</item>
+      <item name="ltr">Od leve proti desni</item>
+      <item name="rtl">Od desne proti levi</item>
+      <item name="xml_pi">Najava XML</item>
+      <item name="encoding">Kodiranje znakov</item>
+      <item name="appearance_bgprops">Lastnosti ozadja</item>
+      <item name="appearance_marginprops">Robovi telesa</item>
+      <item name="appearance_linkprops">Barve povezav</item>
+      <item name="appearance_textprops">Lastnosti besedila</item>
+      <item name="bgcolor">Barva ozadja</item>
+      <item name="bgimage">Slika ozadja</item>
+      <item name="left_margin">Levi rob</item>
+      <item name="right_margin">Desni rob</item>
+      <item name="top_margin">Zgornji rob</item>
+      <item name="bottom_margin">Spodnji rob</item>
+      <item name="text_color">Barva pisave</item>
+      <item name="font_size">Velikost pisave</item>
+      <item name="font_face">Vrsta pisave</item>
+      <item name="link_color">Barva povezave</item>
+      <item name="hover_color">Barva nakazane povezave</item>
+      <item name="visited_color">Barva obiskane povezave</item>
+      <item name="active_color">Barva dejavne povezave</item>
+      <item name="textcolor">Barva</item>
+      <item name="fontsize">Velikost pisave</item>
+      <item name="fontface">Družina pisave</item>
+      <item name="meta_index_follow">Indeksiraj in sledi povezavam</item>
+      <item name="meta_index_nofollow">Indeksiraj a ne sledi povezavam</item>
+      <item name="meta_noindex_follow">Ne indeksiraj a sledi pvoezavams</item>
+      <item name="meta_noindex_nofollow">Ne indeksiraj in ne sledi povezavam</item>
+      <item name="appearance_style">Lastnosti slogov</item>
+      <item name="stylesheet">Slogi</item>
+      <item name="style">Slog</item>
+      <item name="author">Avtor</item>
+      <item name="copyright">Copyright</item>
+      <item name="add">Dodaj element</item>
+      <item name="remove">Odstrani izbrani element</item>
+      <item name="moveup">Premakni izbrani element navzgor</item>
+      <item name="movedown">Premakni izbrani element navzdol</item>
+      <item name="head_elements">Elementi glave</item>
+      <item name="info">Informacija</item>
+      <item name="add_title">element Title</item>
+      <item name="add_meta">element Meta</item>
+      <item name="add_script">element Script</item>
+      <item name="add_style">element Style</item>
+      <item name="add_link">element Link</item>
+      <item name="add_base">element Base</item>
+      <item name="add_comment">komentar</item>
+      <item name="title_element">element Title</item>
+      <item name="script_element">element Script</item>
+      <item name="style_element">element Style</item>
+      <item name="base_element">element Base</item>
+      <item name="link_element">element Link</item>
+      <item name="meta_element">element Meta</item>
+      <item name="comment_element">komentar</item>
+      <item name="src">Src</item>
+      <item name="language">Language</item>
+      <item name="href">Href</item>
+      <item name="target">Target</item>
+      <item name="type">Type</item>
+      <item name="charset">Charset</item>
+      <item name="defer">Defer</item>
+      <item name="media">Media</item>
+      <item name="properties">Lastnosti</item>
+      <item name="name">ime</item>
+      <item name="value">vrednost</item>
+      <item name="content">vsebina</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href lang</item>
+      <item name="general_props">Splošno</item>
+      <item name="advanced_props">Napredno</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Vstavi pripravljeno vsebino predloge</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">Predloge</item>
+      <item name="label">Predloga</item>
+      <item name="desc_label">Opis</item>
+      <item name="desc">Vstavi pripravljeno vsebino predloge</item>
+      <item name="select">Izberite predlogo</item>
+      <item name="preview">Predogled</item>
+      <item name="warning">Opozorilo: posodabljanje predloge lahko pripelje od izgube podatkov.</item>
+      <item name="mdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="cdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="months_long">januar,februar,marec,april,maj,junij,julij,avgust,september,oktober,november,december</item>
+      <item name="months_short">jan,feb,mar,apr,maj,jun,jul,avg,sep,okt,nov,dec</item>
+      <item name="day_long">nedelja,ponedeljek,torek,sreda,četrtek,petek,sobota,nedelja</item>
+      <item name="day_short">ned,pon,tor,sre,čet,pet,sob,ned</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Preklopi prikaz nadzornih znakov.</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">Preklopi črkovalnik</item>
+      <item name="menu">Nastavitve črkovalnika</item>
+      <item name="ignore_word">Prezri besedo</item>
+      <item name="ignore_words">Prezri vse</item>
+      <item name="langs">Jeziki</item>
+      <item name="wait">Prosim počakaj...</item>
+      <item name="sug">Predlogi</item>
+      <item name="no_sug">Ni predlogov</item>
+      <item name="no_mpell">Napačnega črkovanja nisem našel.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">Vstavi lom strani.</item>
+    </group>
+    <group target="advlist">
+      <!--<item name="types">Types</item>-->
+      <!--<item name="def">Default</item>-->
+      <!--<item name="lower_alpha">Lower alpha</item>-->
+      <!--<item name="lower_greek">Lower greek</item>-->
+      <!--<item name="lower_roman">Lower roman</item>-->
+      <!--<item name="upper_alpha">Upper alpha</item>-->
+      <!--<item name="upper_roman">Upper roman</item>-->
+      <!--<item name="circle">Circle</item>-->
+      <!--<item name="disc">Disc</item>-->
+      <!--<item name="square">Square</item>-->
+    </group>
+  </language>
+</language-pack>

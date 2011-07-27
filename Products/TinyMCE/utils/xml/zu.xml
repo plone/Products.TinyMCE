@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>tony chan</author>
+    <version major="1" minor="7" releasedate="2010-03-22" />
+    <description>TinyMCE Chinese-Simple</description>
+  </header>
+  <language code="zu" title="Simple Chinese" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">是否在此textarea标签内使用"所见即所得"模式？</item>
+      <item name="apply">应用</item>
+      <item name="insert">插入</item>
+      <item name="update">更新</item>
+      <item name="cancel">取消</item>
+      <item name="close">关闭</item>
+      <item name="browse">流览</item>
+      <item name="class_name">样式</item>
+      <item name="not_set">--未设置--</item>
+      <item name="clipboard_msg">复制、剪下、贴上功能在Mozilla和Firefox中不能使用。 \n是否需要了解更多有关此问题的资讯？</item>
+      <item name="clipboard_no_support">还不支援您的流览器，请使用键盘快速键</item>
+      <item name="popup_blocked">抱歉！快显视窗已被阻止，请调整流览器设置，允许此网站可弹出新视窗，以便使用此工具</item>
+      <item name="invalid_data">错误:无效输入值，已标记为红色。</item>
+      <item name="more_colors">更多颜色</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">黑体(Ctrl+B)</item>
+      <item name="italic_desc">斜体(Ctrl+I)</item>
+      <item name="underline_desc">底线(Ctrl+U)</item>
+      <item name="striketrough_desc">删除线</item>
+      <item name="bullist_desc">专案符号</item>
+      <item name="numlist_desc">编号</item>
+      <item name="undo_desc">撤销(Ctrl+Z)</item>
+      <item name="redo_desc">重做(Ctrl+Y)</item>
+      <item name="cleanup_desc">清除多余代码</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">样式</item>
+      <item name="font_size">字体大小</item>
+      <item name="fontdefault">字体</item>
+      <item name="block">格式</item>
+      <item name="paragraph">段落</item>
+      <item name="div">DIV层</item>
+      <item name="address">地址</item>
+      <item name="pre">无式样编排</item>
+      <item name="h1">标题1</item>
+      <item name="h2">标题2</item>
+      <item name="h3">标题3</item>
+      <item name="h4">标题4</item>
+      <item name="h5">标题5</item>
+      <item name="h6">标题6</item>
+      <item name="blockquote">引用</item>
+      <item name="code">代码</item>
+      <item name="samp">代码样例</item>
+      <item name="dt">名词定义</item>
+      <item name="dd">名词解释</item>
+      <!-- Buttons -->
+      <item name="bold_desc">黑体(Ctrl+B)</item>
+      <item name="italic_desc">斜体(Ctrl+I)</item>
+      <item name="underline_desc">底线(Ctrl+U)</item>
+      <item name="striketrough_desc">删除线</item>
+      <item name="justifyleft_desc">左对齐</item>
+      <item name="justifycenter_desc">居中</item>
+      <item name="justifyright_desc">右对齐</item>
+      <item name="justifyfull_desc">两端对齐</item>
+      <item name="bullist_desc">专案符号</item>
+      <item name="numlist_desc">编号</item>
+      <item name="outdent_desc">减少缩排</item>
+      <item name="indent_desc">增加缩排</item>
+      <item name="undo_desc">撤销(Ctrl+Z)</item>
+      <item name="redo_desc">重做(Ctrl+Y)</item>
+      <item name="link_desc">插入/编辑连结</item>
+      <item name="unlink_desc">取消连结</item>
+      <item name="image_desc">插入/编辑图片</item>
+      <item name="cleanup_desc">清除多余代码</item>
+      <item name="code_desc">编辑HTML原始程式码</item>
+      <item name="sub_desc">下标</item>
+      <item name="sup_desc">上标</item>
+      <item name="hr_desc">插入水平线</item>
+      <item name="removeformat_desc">清除样式</item>
+      <item name="custom1_desc">在此输入您的自订描述</item>
+      <item name="forecolor_desc">选择文字颜色</item>
+      <item name="backcolor_desc">选择背景颜色</item>
+      <item name="charmap_desc">插入特殊符号</item>
+      <item name="visualaid_desc">开关格线/隐藏元件</item>
+      <item name="anchor_desc">插入/编辑锚点</item>
+      <item name="cut_desc">剪下</item>
+      <item name="copy_desc">复制</item>
+      <item name="paste_desc">贴上</item>
+      <item name="image_props_desc">图片属性</item>
+      <item name="newdocument_desc">新文件</item>
+      <item name="help_desc">说明</item>
+      <item name="blockquote_desc">引用</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">复制、剪下及贴上功能在Mozilla和Firefox中不能使用。 \n是否需要了解更多有关此问题的资讯？</item>
+      <item name="path">位置</item>
+      <item name="newdocument">您确认要清除全部内容吗？</item>
+      <item name="toolbar_focus">工具按钮- Alt+Q,编辑器- Alt-Z,元件位置- Alt-X</item>
+      <item name="more_colors">更多颜色</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width">40</item>
+      <item name="link_delta_height">60</item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">关于TinyMCE</item>
+      <item name="about_general">关于</item>
+      <item name="about_help">帮助</item>
+      <item name="about_license">授权</item>
+      <item name="about_plugins">全部外挂程式</item>
+      <item name="about_plugin">外挂程式</item>
+      <item name="about_author">作者</item>
+      <item name="about_version">版本</item>
+      <item name="about_loaded">已载入的外挂程式</item>
+      <!-- Anchor -->
+      <item name="anchor_title">插入/编辑锚点</item>
+      <item name="anchor_name">锚点名称</item>
+      <!-- Source -->
+      <item name="code_title">HTML原始程式码编辑器</item>
+      <item name="code_wordwrap">整字换行</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">挑选颜色</item>
+      <item name="colorpicker_picker_tab">选色器</item>
+      <item name="colorpicker_picker_title">选色器</item>
+      <item name="colorpicker_palette_tab">色盘</item>
+      <item name="colorpicker_palette_title">色盘颜色</item>
+      <item name="colorpicker_named_tab">预设的</item>
+      <item name="colorpicker_named_title">预设的颜色</item>
+      <item name="colorpicker_color">颜色:</item>
+      <item name="colorpicker_name">名称:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">插入特殊符号</item>
+      <!-- Image -->
+      <item name="image_title">插入/编辑图片</item>
+      <item name="image_src">图片位址</item>
+      <item name="image_alt">图片说明</item>
+      <item name="image_list">图片清单</item>
+      <item name="image_border">边框</item>
+      <item name="image_dimensions">尺寸</item>
+      <item name="image_vspace">垂直间距</item>
+      <item name="image_hspace">水准间距</item>
+      <item name="image_align">对齐方式</item>
+      <item name="image_align_baseline">基线</item>
+      <item name="image_align_top">上方对齐</item>
+      <item name="image_align_middle">居中对齐</item>
+      <item name="image_align_bottom">底部对齐</item>
+      <item name="image_align_texttop">文字上方</item>
+      <item name="image_align_textbottom">文字下方</item>
+      <item name="image_align_left">靠左对齐</item>
+      <item name="image_align_right">靠右对齐</item>
+      <!-- Link -->
+      <item name="link_title">插入/编辑连结</item>
+      <item name="link_url">连结位址</item>
+      <item name="link_target">目标</item>
+      <item name="link_target_same">将连结网址开在此视窗</item>
+      <item name="link_target_blank">将连结网址开在新窗口</item>
+      <item name="link_titlefield">标题</item>
+      <item name="link_is_email">您输入的网址应该是一个电子邮寄地址，是否需要在位址前方加入mailto:？</item>
+      <item name="link_is_external">您输入的网址应该是一个外部连结，是否需要在网址前方加入http://？</item>
+      <item name="link_list">连结清单</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">对齐方式</item>
+      <item name="left">靠左对齐</item>
+      <item name="center">居中对齐</item>
+      <item name="right">靠右对齐</item>
+      <item name="full">两端对齐</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%Y-%m-%d</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">插入今天日期</item>
+      <item name="inserttime_desc">插入现在时间</item>
+      <item name="months_long">一月,二月,三月,四月,五月,六月,七月,八月,九月,十月,十一月,十二月</item>
+      <item name="months_short">1月,2月,3月,4月,5月,6月,7月,8月,9月,10月,11月,12月</item>
+      <item name="day_long">星期日,星期一,星期二,星期三,星期四,星期五,星期六,星期日</item>
+      <item name="day_short">周日,周一,周二,周三,周四,周五,周六,周日</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">列印</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">预览</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">文字从左到右</item>
+      <item name="rtl_desc">文字从右到左</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">插入层</item>
+      <item name="forward_desc">置前</item>
+      <item name="backward_desc">置后</item>
+      <item name="absolute_desc">开关绝对位置</item>
+      <item name="content">新增层...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">保存</item>
+      <item name="cancel_desc">取消所有更改</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">插入空白格</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">拼写检查</item>
+      <item name="download">未检测到ieSpell的存在。是否现在立即安装？</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">水平线</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">宽</item>
+      <item name="size">长</item>
+      <item name="noshade">无阴影</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">图释</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">插入图释</item>
+      <item name="desc">图释</item>
+      <item name="cool">冷酷</item>
+      <item name="cry">哭泣</item>
+      <item name="embarassed">尴尬</item>
+      <item name="foot_in_mouth">咧嘴</item>
+      <item name="frown">皱眉</item>
+      <item name="innocent">天真</item>
+      <item name="kiss">吻</item>
+      <item name="laughing">大笑</item>
+      <item name="money_mouth">发财</item>
+      <item name="sealed">保密</item>
+      <item name="smile">微笑</item>
+      <item name="surprised">惊吓</item>
+      <item name="tongue_out">吐舌头</item>
+      <item name="undecided">考虑</item>
+      <item name="wink">眨眼</item>
+      <item name="yell">叫嚷</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">查找</item>
+      <item name="replace_desc">查找/替换</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">再次查找</item>
+      <item name="notfound">查找已完成!找不到任何目标。</item>
+      <item name="search_title">查找</item>
+      <item name="replace_title">查找/替换</item>
+      <item name="allreplaced">已替换所有匹配的符串.</item>
+      <item name="findwhat">查找目标</item>
+      <item name="replacewith">替换为</item>
+      <item name="direction">方向</item>
+      <item name="up">向上</item>
+      <item name="down">向下</item>
+      <item name="mcase">大小写匹配</item>
+      <item name="findnext">下一个</item>
+      <item name="replace">替换</item>
+      <item name="replaceall">替换全部</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">插入/编辑图片</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">一般</item>
+      <item name="tab_appearance">外观</item>
+      <item name="tab_advanced">高级</item>
+      <item name="general">一般</item>
+      <item name="title">查找</item>
+      <item name="preview">预览</item>
+      <item name="constrain_proportions">保持比例</item>
+      <item name="langdir">语言书写方向</item>
+      <item name="langcode">语言编码</item>
+      <item name="long_desc">长描述连结</item>
+      <item name="style">样式</item>
+      <item name="classes">类型</item>
+      <item name="ltr">由左到右</item>
+      <item name="rtl">由右到左</item>
+      <item name="id">Id</item>
+      <item name="map">图片地图</item>
+      <item name="swap_image">对换图片</item>
+      <item name="alt_image">替换图片</item>
+      <item name="mouseover">滑鼠移入图片</item>
+      <item name="mouseout">滑鼠移出图片</item>
+      <item name="misc">其它</item>
+      <item name="example_img">预览图片</item>
+      <item name="missing_alt">请问是否确定不为图片加入说明文字？若没有加入说明文字，当使用者使用不读入图片或文字体的流览器时，将会看不到这个图片。</item>
+      <item name="dialog_title">插入/编辑图片</item>
+      <item name="src">图片网址</item>
+      <item name="alt">图片说明</item>
+      <item name="list">图片清单</item>
+      <item name="border">边框</item>
+      <item name="dimensions">尺寸</item>
+      <item name="vspace">水准间距</item>
+      <item name="hspace">垂直间距</item>
+      <item name="align">对齐方式</item>
+      <item name="align_baseline">基线</item>
+      <item name="align_top">上方</item>
+      <item name="align_middle">居中</item>
+      <item name="align_bottom">下方</item>
+      <item name="align_texttop">文字上方</item>
+      <item name="align_textbottom">文字下方</item>
+      <item name="align_left">靠左</item>
+      <item name="align_right">靠右</item>
+      <item name="image_list">图片清单</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">插入/编辑连结</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">插入/编辑连结</item>
+      <item name="url">连结位址</item>
+      <item name="target">目标</item>
+      <item name="titlefield">查找</item>
+      <item name="is_email">您输入的网址应该是一个电子邮寄地址，是否需要在邮址前方加入mailto:？</item>
+      <item name="is_external">您输入的网址应该是一个外部连结，是否需要在网址前方加入http://？</item>
+      <item name="list">连结清单</item>
+      <item name="general_tab">一般</item>
+      <item name="popup_tab">快显视窗</item>
+      <item name="events_tab">事件</item>
+      <item name="advanced_tab">高级</item>
+      <item name="general_props">一般属性</item>
+      <item name="popup_props">快显视窗属性</item>
+      <item name="event_props">事件</item>
+      <item name="advanced_props">高级属性</item>
+      <item name="popup_opts">选项</item>
+      <item name="anchor_names">锚点</item>
+      <item name="target_same">打开在新视窗/框架</item>
+      <item name="target_parent">打开在父视窗/框架</item>
+      <item name="target_top">打开在最上层的框架(替换所有框架)</item>
+      <item name="target_blank">打开在新视窗</item>
+      <item name="popup">Javascript快显视窗</item>
+      <item name="popup_url">快显视窗网址</item>
+      <item name="popup_name">窗口名称</item>
+      <item name="popup_return">插入'return false'</item>
+      <item name="popup_scrollbars">显示边条</item>
+      <item name="popup_statusbar">显示状态栏</item>
+      <item name="popup_toolbar">显示工具列</item>
+      <item name="popup_menubar">显示功能表</item>
+      <item name="popup_location">显示网址列</item>
+      <item name="popup_resizable">可调整视窗尺寸</item>
+      <item name="popup_dependent">从属(只有Mozilla/Firefox有效)</item>
+      <item name="popup_size">尺寸</item>
+      <item name="popup_position">座标(X/Y)</item>
+      <item name="id">Id</item>
+      <item name="style">样式</item>
+      <item name="classes">类型</item>
+      <item name="target_name">目标名称</item>
+      <item name="langdir">语言书写方向</item>
+      <item name="target_langcode">目的语言</item>
+      <item name="langcode">语言编码</item>
+      <item name="encoding">编码</item>
+      <item name="mime">目标MIME类型</item>
+      <item name="rel">页到目标的关系</item>
+      <item name="rev">目标到页的关系</item>
+      <item name="tabindex">Tab索引</item>
+      <item name="accesskey">快速键</item>
+      <item name="ltr">由左到右</item>
+      <item name="rtl">由右到左</item>
+      <item name="link_list">连结清单</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">引文</item>
+      <item name="abbr_desc">缩写</item>
+      <item name="acronym_desc">首字缩写</item>
+      <item name="del_desc">删除</item>
+      <item name="ins_desc">插入</item>
+      <item name="attribs_desc">插入/编辑属性</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width">40</item>
+      <item name="attribs_delta_height">60</item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">查找</item>
+      <item name="attribute_label_id">ID</item>
+      <item name="attribute_label_class">类型</item>
+      <item name="attribute_label_style">样式</item>
+      <item name="attribute_label_cite">引文</item>
+      <item name="attribute_label_datetime">日期/时间</item>
+      <item name="attribute_label_langdir">文字书写方向</item>
+      <item name="attribute_option_ltr">由左到右</item>
+      <item name="attribute_option_rtl">由右到左</item>
+      <item name="attribute_label_langcode">语言</item>
+      <item name="attribute_label_tabindex">Tab索引</item>
+      <item name="attribute_label_accesskey">快速键</item>
+      <item name="attribute_events_tab">事件</item>
+      <item name="attribute_attrib_tab">属性</item>
+      <item name="general_tab">一般</item>
+      <item name="attrib_tab">属性</item>
+      <item name="events_tab">事件</item>
+      <item name="fieldset_general_tab">一般</item>
+      <item name="fieldset_attrib_tab">元素属性</item>
+      <item name="fieldset_events_tab">元素事件</item>
+      <item name="title_ins_element">插入元素</item>
+      <item name="title_del_element">删除元素</item>
+      <item name="title_acronym_element">首字缩写元素</item>
+      <item name="title_abbr_element">缩写元素</item>
+      <item name="title_cite_element">引文元素</item>
+      <item name="remove">删除</item>
+      <item name="insert_date">插入现在日期/时间</item>
+      <item name="option_ltr">由左到右</item>
+      <item name="option_rtl">由右到左</item>
+      <item name="attribs_title">插入/编辑属性</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">编辑CSS样式表</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">编辑CSS样式表</item>
+      <item name="apply">应用</item>
+      <item name="text_tab">文字</item>
+      <item name="background_tab">背景</item>
+      <item name="block_tab">块</item>
+      <item name="box_tab">箱型</item>
+      <item name="border_tab">边框</item>
+      <item name="list_tab">列表</item>
+      <item name="positioning_tab">位置</item>
+      <item name="text_props">文字</item>
+      <item name="text_font">字体</item>
+      <item name="text_size">尺寸</item>
+      <item name="text_weight">宽度</item>
+      <item name="text_style">样式</item>
+      <item name="text_variant">变体</item>
+      <item name="text_lineheight">行高</item>
+      <item name="text_case">字体</item>
+      <item name="text_color">颜色</item>
+      <item name="text_decoration">修饰</item>
+      <item name="text_overline">上划线</item>
+      <item name="text_underline">底线</item>
+      <item name="text_striketrough">删除线</item>
+      <item name="text_blink">闪烁</item>
+      <item name="text_none">无</item>
+      <item name="background_color">背景颜色</item>
+      <item name="background_image">背景图片</item>
+      <item name="background_repeat">重复</item>
+      <item name="background_attachment">附件</item>
+      <item name="background_hpos">垂直位置</item>
+      <item name="background_vpos">水准位置</item>
+      <item name="block_wordspacing">单字间距</item>
+      <item name="block_letterspacing">字元间距</item>
+      <item name="block_vertical_alignment">水准对齐方式</item>
+      <item name="block_text_align">文字对齐</item>
+      <item name="block_text_indent">文字缩排</item>
+      <item name="block_whitespace">空白</item>
+      <item name="block_display">显示方式</item>
+      <item name="box_width">宽度</item>
+      <item name="box_height">高度</item>
+      <item name="box_float">浮动</item>
+      <item name="box_clear">清除</item>
+      <item name="padding">留白</item>
+      <item name="same">全部一样</item>
+      <item name="top">上方</item>
+      <item name="right">靠右</item>
+      <item name="bottom">下方</item>
+      <item name="left">靠左</item>
+      <item name="margin">边界</item>
+      <item name="style">样式</item>
+      <item name="width">宽度</item>
+      <item name="height">高度</item>
+      <item name="color">颜色</item>
+      <item name="list_type">类型</item>
+      <item name="bullet_image">项目图示</item>
+      <item name="position">图示位置</item>
+      <item name="positioning_type">类型</item>
+      <item name="visibility">可见性</item>
+      <item name="zindex">Z轴深度</item>
+      <item name="overflow">溢出</item>
+      <item name="placement">布置</item>
+      <item name="clip">剪辑</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">以纯文字贴上</item>
+      <item name="paste_word_desc">从Word贴上</item>
+      <item name="selectall_desc">全选</item>
+      <!--<item name="plaintext_mode_sticky">Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode.</item>-->
+      <!--<item name="plaintext_mode">Paste is now in plain text mode. Click again to toggle back to regular paste mode.</item>-->
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">在键盘上同时按下CTRL和V键，以贴上文字到此视窗。</item>
+      <item name="text_linebreaks">保留分行符号号</item>
+      <item name="word_title">在键盘上同时按下CTRL和V键，以贴上文字到此视窗。</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">插入新表格</item>
+      <item name="row_before_desc">插入上方行</item>
+      <item name="row_after_desc">插入下方行</item>
+      <item name="delete_row_desc">删除所在行</item>
+      <item name="col_before_desc">插入左方列</item>
+      <item name="col_after_desc">插入右方列</item>
+      <item name="delete_col_desc">删除所在列</item>
+      <item name="split_cells_desc">分割储存格</item>
+      <item name="merge_cells_desc">合并储存格</item>
+      <item name="row_desc">行属性</item>
+      <item name="cell_desc">储存格属性</item>
+      <item name="props_desc">表格属性</item>
+      <item name="paste_row_before_desc">贴在上行</item>
+      <item name="paste_row_after_desc">贴在下行</item>
+      <item name="cut_row_desc">剪下选择行</item>
+      <item name="copy_row_desc">复制选择行</item>
+      <item name="del">删除表格</item>
+      <item name="row">行</item>
+      <item name="col">列</item>
+      <item name="cell">储存格</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width">10</item>
+      <item name="cellprops_delta_height">10</item>
+      <item name="table_delta_width">40</item>
+      <item name="table_delta_height">60</item>
+      <item name="merge_cells_delta_width">40</item>
+      <item name="merge_cells_delta_height">40</item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">一般</item>
+      <item name="advanced_tab">高级</item>
+      <item name="general_props">一般属性</item>
+      <item name="advanced_props">高级属性</item>
+      <item name="rowtype">行所在的表格位置</item>
+      <item name="title">插入/编辑表格</item>
+      <item name="width">宽度</item>
+      <item name="height">高度</item>
+      <item name="cols">列数</item>
+      <item name="rows">行数</item>
+      <item name="cellspacing">储存格间距</item>
+      <item name="cellpadding">储存格留白</item>
+      <item name="border">边框</item>
+      <item name="align">对齐方式</item>
+      <item name="align_default">预设</item>
+      <item name="align_left">靠左</item>
+      <item name="align_right">靠右</item>
+      <item name="align_middle">居中</item>
+      <item name="row_title">行属性</item>
+      <item name="cell_title">储存格属性</item>
+      <item name="cell_type">储存格别</item>
+      <item name="valign">水准对齐方式</item>
+      <item name="align_top">上方</item>
+      <item name="align_bottom">下方</item>
+      <item name="bordercolor">边框颜色</item>
+      <item name="bgcolor">背景颜色</item>
+      <item name="merge_cells_title">合并储存格</item>
+      <item name="id">Id</item>
+      <item name="style">样式</item>
+      <item name="langdir">语言书写方向</item>
+      <item name="langcode">语言编码</item>
+      <item name="mime">目标MIME类型</item>
+      <item name="ltr">由左到右</item>
+      <item name="rtl">由右到左</item>
+      <item name="bgimage">背景图片</item>
+      <item name="summary">概要</item>
+      <item name="td">数据</item>
+      <item name="th">表头</item>
+      <item name="cell_cell">更新所的储存格</item>
+      <item name="cell_row">更新所在行的全部储存格</item>
+      <item name="cell_all">更新表格内的全部储存格</item>
+      <item name="row_row">更新所在行</item>
+      <item name="row_odd">更新表格内的奇数行</item>
+      <item name="row_even">更新表格内的偶数行</item>
+      <item name="row_all">更新表格内全部行</item>
+      <item name="thead">表头</item>
+      <item name="tbody">表身</item>
+      <item name="tfoot">表尾</item>
+      <item name="scope">范围</item>
+      <item name="rowgroup">行群组</item>
+      <item name="colgroup">列群组</item>
+      <item name="col_limit">已超过可用数，最高的列数为{$cols}列。</item>
+      <item name="row_limit">已超过可用数，最高的行数为{$rows}行。</item>
+      <item name="cell_limit">已超过可用数，最高的储存格数为{$cells}格。</item>
+      <item name="missing_scope">标题行缺失！</item>
+      <item name="caption">表格标题</item>
+      <item name="frame">边框</item>
+      <item name="frame_none">无</item>
+      <item name="frame_groups">群组</item>
+      <item name="frame_rows">行</item>
+      <item name="frame_cols">列</item>
+      <item name="frame_all">全部</item>
+      <item name="rules">线条</item>
+      <item name="rules_void">空</item>
+      <item name="rules_above">上</item>
+      <item name="rules_below">下</item>
+      <item name="rules_hsides">水准边</item>
+      <item name="rules_lhs">左边</item>
+      <item name="rules_rhs">右边</item>
+      <item name="rules_vsides">垂直边</item>
+      <item name="rules_box">盒型</item>
+      <item name="rules_border">外框</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">如果离开此页面将导致所做的更改全部丢失。</item>
+      <!--<item name="restore_content">Restore auto-saved content.</item>-->
+      <!--<item name="warning_message">If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?.</item>-->
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">开关全屏模式</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">插入/编辑嵌入媒体</item>
+      <item name="edit">编辑嵌入媒体</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">插入/编辑嵌入媒体</item>
+      <item name="general">一般</item>
+      <item name="advanced">高级</item>
+      <item name="file">文件/网址</item>
+      <item name="list">列表</item>
+      <item name="size">尺寸</item>
+      <item name="preview">预览</item>
+      <item name="constrain_proportions">保持比例</item>
+      <item name="type">类型</item>
+      <item name="id">Id</item>
+      <item name="name">名称</item>
+      <item name="class_name">类型</item>
+      <item name="vspace">水准间距</item>
+      <item name="hspace">垂直间距</item>
+      <item name="play">自动播放</item>
+      <item name="loop">回圈播放</item>
+      <item name="menu">显示功能表</item>
+      <item name="quality">品质</item>
+      <item name="scale">比例</item>
+      <item name="align">对齐</item>
+      <item name="salign">SAlign</item>
+      <item name="wmode">视窗模式</item>
+      <item name="bgcolor">背景色</item>
+      <item name="base">基底</item>
+      <item name="flashvars">参数</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">自动HREF</item>
+      <item name="cache">缓存</item>
+      <item name="hidden">隐藏</item>
+      <item name="controller">控制台</item>
+      <item name="kioskmode">Kiosk模式</item>
+      <item name="playeveryframe">播放每一帧</item>
+      <item name="targetcache">目标缓存</item>
+      <item name="correction">没有修正</item>
+      <item name="enablejavascript">启用JavaScript</item>
+      <item name="starttime">开始时间</item>
+      <item name="endtime">结束时间</item>
+      <item name="href">连结</item>
+      <item name="qtsrcchokespeed">Choke speed</item>
+      <item name="target">目标</item>
+      <item name="volume">音量</item>
+      <item name="autostart">自动开始</item>
+      <item name="enabled">启用</item>
+      <item name="fullscreen">全屏</item>
+      <item name="invokeurls">相关URLs</item>
+      <item name="mute">静音</item>
+      <item name="stretchtofit">拉伸</item>
+      <item name="windowlessvideo">无边框</item>
+      <item name="balance">平衡</item>
+      <item name="baseurl">基准URL</item>
+      <item name="captioningid">Captioning id</item>
+      <item name="currentmarker">当前标记</item>
+      <item name="currentposition">当前位置</item>
+      <item name="defaultframe">默认帧</item>
+      <item name="playcount">播放计数</item>
+      <item name="rate">帧率</item>
+      <item name="uimode">面板模式</item>
+      <item name="flash_options">Flash选项</item>
+      <item name="qt_options">Quicktime选项</item>
+      <item name="wmp_options">Windows media player选项</item>
+      <item name="rmp_options">Real media player选项</item>
+      <item name="shockwave_options">Shockwave选项</item>
+      <item name="autogotourl">自动转到URL</item>
+      <item name="center">中心</item>
+      <item name="imagestatus">图像状态</item>
+      <item name="maintainaspect">Maintain aspect</item>
+      <item name="nojava">No java</item>
+      <item name="prefetch">预读取</item>
+      <item name="shuffle">Shuffle</item>
+      <item name="console">控制台</item>
+      <item name="numloop">回圈次数</item>
+      <item name="controls">控制器</item>
+      <item name="scriptcallbacks">脚本回档</item>
+      <item name="swstretchstyle">拉升模式</item>
+      <item name="swstretchhalign">水准拉升</item>
+      <item name="swstretchvalign">垂直拉升</item>
+      <item name="sound">声音</item>
+      <item name="progress">进度</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn">流式rtsp资源应该添加到“高级”中QT Src。\n同时添加非流式资源到Src。</item>
+      <item name="align_top">上方</item>
+      <item name="align_right">靠右</item>
+      <item name="align_bottom">下方</item>
+      <item name="align_left">靠左</item>
+      <item name="align_center">中间</item>
+      <item name="align_top_left">左上</item>
+      <item name="align_top_right">右上</item>
+      <item name="align_bottom_left">左下</item>
+      <item name="align_bottom_right">右下</item>
+      <item name="flv_options">Flash视频选项</item>
+      <item name="flv_scalemode">Scale mode</item>
+      <item name="flv_buffer">缓冲</item>
+      <item name="flv_startimage">开始画面</item>
+      <item name="flv_starttime">开始时间</item>
+      <item name="flv_defaultvolume">预设音量</item>
+      <item name="flv_hiddengui">隐藏GUI</item>
+      <item name="flv_autostart">自动播放</item>
+      <item name="flv_loop">回圈</item>
+      <item name="flv_showscalemodes">Show scale modes</item>
+      <item name="flv_smoothvideo">平滑图像</item>
+      <item name="flv_jscallback">JS回档</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">档案属性</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">档案属性</item>
+      <item name="meta_tab">一般</item>
+      <item name="appearance_tab">外观</item>
+      <item name="advanced_tab">高级</item>
+      <item name="meta_props">标签( Meta )信息</item>
+      <item name="langprops">语言与编码</item>
+      <item name="meta_title">标题</item>
+      <item name="meta_keywords">关键字</item>
+      <item name="meta_description">内容说明</item>
+      <item name="meta_robots">Robots</item>
+      <item name="doctypes">Doctype</item>
+      <item name="langcode">语言编码</item>
+      <item name="langdir">语言书写方向</item>
+      <item name="ltr">由左到右</item>
+      <item name="rtl">由右到左</item>
+      <item name="xml_pi">XML宣告</item>
+      <item name="encoding">字元编码</item>
+      <item name="appearance_bgprops">背景属性</item>
+      <item name="appearance_marginprops">Body margins</item>
+      <item name="appearance_linkprops">连结颜色</item>
+      <item name="appearance_textprops">文字属性</item>
+      <item name="bgcolor">背景颜色</item>
+      <item name="bgimage">背景图片</item>
+      <item name="left_margin">左边界</item>
+      <item name="right_margin">右边界</item>
+      <item name="top_margin">上边界</item>
+      <item name="bottom_margin">下边界</item>
+      <item name="text_color">文字颜色</item>
+      <item name="font_size">字体尺寸</item>
+      <item name="font_face">字体</item>
+      <item name="link_color">连结颜色</item>
+      <item name="hover_color">Hover颜色</item>
+      <item name="visited_color">Visited颜色</item>
+      <item name="active_color">Active颜色</item>
+      <item name="textcolor">颜色</item>
+      <item name="fontsize">字体大小</item>
+      <item name="fontface">字形体系</item>
+      <item name="meta_index_follow">Index and follow the links</item>
+      <item name="meta_index_nofollow">Index and don't follow the links</item>
+      <item name="meta_noindex_follow">Do not index but follow the links</item>
+      <item name="meta_noindex_nofollow">Do not index and don\'t follow the links</item>
+      <item name="appearance_style">样式表及样式属性</item>
+      <item name="stylesheet">样式表</item>
+      <item name="style">样式</item>
+      <item name="author">作者</item>
+      <item name="copyright">版权</item>
+      <item name="add">添加新元素</item>
+      <item name="remove">移除选定元素</item>
+      <item name="moveup">上移选定元素</item>
+      <item name="movedown">下移选定元素</item>
+      <item name="head_elements">Head elements</item>
+      <item name="info">信息</item>
+      <item name="add_title">查找元素</item>
+      <item name="add_meta">Meta元素</item>
+      <item name="add_script">Script元素</item>
+      <item name="add_style">Style元素</item>
+      <item name="add_link">Link元素</item>
+      <item name="add_base">Base元素</item>
+      <item name="add_comment">Comment node</item>
+      <item name="title_element">查找element</item>
+      <item name="script_element">Script element</item>
+      <item name="style_element">Style element</item>
+      <item name="base_element">Base element</item>
+      <item name="link_element">Link element</item>
+      <item name="meta_element">Meta element</item>
+      <item name="comment_element">Comment</item>
+      <item name="src">Src</item>
+      <item name="language">语言</item>
+      <item name="href">Href</item>
+      <item name="target">目标</item>
+      <item name="type">类型</item>
+      <item name="charset">字元集</item>
+      <item name="defer">延缓</item>
+      <item name="media">媒体</item>
+      <item name="properties">属性</item>
+      <item name="name">名称</item>
+      <item name="value">值</item>
+      <item name="content">内容</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href lang</item>
+      <item name="general_props">一般</item>
+      <item name="advanced_props">高级</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">插入预定的范本内容</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">范本标题</item>
+      <item name="label">范本</item>
+      <item name="desc_label">描述</item>
+      <item name="desc">插入预定的范本内容</item>
+      <item name="select">选择范本</item>
+      <item name="preview">预览</item>
+      <item name="warning">警告:更新范本有可能导致资料遗失。</item>
+      <item name="mdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="cdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="months_long">一月，二月，三月，四月，五月，六月，七月，八月，九月，十月，十一月，十二月</item>
+      <item name="months_short">1月，2月，3月，4月，5月，6月，7月，8月，9月，10月，11月，12月</item>
+      <item name="day_long">星期日，星期一，星期二，星期三，星期四，星期五，星期六，星期日</item>
+      <item name="day_short">周日，周一，周二，周三，周四，周五，周六，周日</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">显示控制符号开/关。</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">开关拼写检查</item>
+      <item name="menu">拼写检查设置</item>
+      <item name="ignore_word">略过</item>
+      <item name="ignore_words">全部略过</item>
+      <item name="langs">语言</item>
+      <item name="wait">请稍候...</item>
+      <item name="sug">推荐字词</item>
+      <item name="no_sug">无拼写推荐</item>
+      <item name="no_mpell">未发现拼写错误</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">插入分页符号</item>
+    </group>
+    <group target="advlist">
+      <!--<item name="types">Types</item>-->
+      <!--<item name="def">Default</item>-->
+      <!--<item name="lower_alpha">Lower alpha</item>-->
+      <!--<item name="lower_greek">Lower greek</item>-->
+      <!--<item name="lower_roman">Lower roman</item>-->
+      <!--<item name="upper_alpha">Upper alpha</item>-->
+      <!--<item name="upper_roman">Upper roman</item>-->
+      <!--<item name="circle">Circle</item>-->
+      <!--<item name="disc">Disc</item>-->
+      <!--<item name="square">Square</item>-->
+    </group>
+  </language>
+</language-pack>

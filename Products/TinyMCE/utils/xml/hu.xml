@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>Horváth László, Veres Ferenc lion@netngine.hu</author>
+    <version major="16" minor="7" releasedate="2010-12-19" />
+    <description>Magyar fordítás a TinyMCE-hez.</description>
+  </header>
+  <language code="hu" title="Hungarian" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">Használni kívánja a szövegszerkesztő módot ebben a szövegdobozban?</item>
+      <item name="apply">Alkalmazás</item>
+      <item name="insert">Beszúrás</item>
+      <item name="update">Frissítés</item>
+      <item name="cancel">Mégsem</item>
+      <item name="close">Bezárás</item>
+      <item name="browse">Tallózás</item>
+      <item name="class_name">Osztály</item>
+      <item name="not_set">-- Nincs megadva --</item>
+      <item name="clipboard_msg">A Másolás/Kivágás/Beszúrás funkciók nem érhetőek el Mozilla és Firefox alatt.\nKíván többet tudni erről a témáról?</item>
+      <item name="clipboard_no_support">Jelenleg nem támogatja a böngészője, használja a billentyűkombinációkat helyette.</item>
+      <item name="popup_blocked">A felugró ablakok tiltása miatt nem sikerült megjeleníteni egy, az alkalmazáshoz szükséges ablakot. Engedélyezze a böngészőjében a felugró ablakokat, hogy minden funkciót használhasson.</item>
+      <item name="invalid_data">Hiba: Érvénytelen adatok, pirossal jelölve.</item>
+      <item name="more_colors">Több szín</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">Félkövér (Ctrl+B)</item>
+      <item name="italic_desc">Dőlt (Ctrl+I)</item>
+      <item name="underline_desc">Aláhúzott (Ctrl+U)</item>
+      <item name="striketrough_desc">Áthúzott</item>
+      <item name="bullist_desc">Felsorolásos lista</item>
+      <item name="numlist_desc">Sorrendezett lista</item>
+      <item name="undo_desc">Visszavonás (Ctrl+Z)</item>
+      <item name="redo_desc">Mégis végrehajt (Ctrl+Y)</item>
+      <item name="cleanup_desc">Rendetlen kód tisztítása</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">Stílusok</item>
+      <item name="font_size">Betűméret</item>
+      <item name="fontdefault">Betűtípus</item>
+      <item name="block">Formátum</item>
+      <item name="paragraph">Bekezdés</item>
+      <item name="div">Div</item>
+      <item name="address">Cím</item>
+      <item name="pre">Előformázott</item>
+      <item name="h1">Címsor 1</item>
+      <item name="h2">Címsor 2</item>
+      <item name="h3">Címsor 3</item>
+      <item name="h4">Címsor 4</item>
+      <item name="h5">Címsor 5</item>
+      <item name="h6">Címsor 6</item>
+      <item name="blockquote">Idézet</item>
+      <item name="code">Kód</item>
+      <item name="samp">Kód minta</item>
+      <item name="dt">Definiált kifejezés a definíciós listában</item>
+      <item name="dd">Definíció a definíciós listában</item>
+      <!-- Buttons -->
+      <item name="bold_desc">Félkövér (Ctrl+B)</item>
+      <item name="italic_desc">Dőlt (Ctrl+I)</item>
+      <item name="underline_desc">Aláhúzott (Ctrl+U)</item>
+      <item name="striketrough_desc">Áthúzott</item>
+      <item name="justifyleft_desc">Balra zárt</item>
+      <item name="justifycenter_desc">Középre zárt</item>
+      <item name="justifyright_desc">Jobbra zárt</item>
+      <item name="justifyfull_desc">Sorkizárt</item>
+      <item name="bullist_desc">Rendezetlen lista</item>
+      <item name="numlist_desc">Rendezett lista</item>
+      <item name="outdent_desc">Behúzás csökkentése</item>
+      <item name="indent_desc">Behúzás növelése</item>
+      <item name="undo_desc">Visszavonás (Ctrl+Z)</item>
+      <item name="redo_desc">Mégis végrehajt (Ctrl+Y)</item>
+      <item name="link_desc">Link beszúrása/szerkesztése</item>
+      <item name="unlink_desc">Link megszüntetése</item>
+      <item name="image_desc">Kép beszúrása/szerkesztése</item>
+      <item name="cleanup_desc">Rendetlen kód takarítása</item>
+      <item name="code_desc">HTML forrás szerkesztése</item>
+      <item name="sub_desc">Alsó index</item>
+      <item name="sup_desc">Felső index</item>
+      <item name="hr_desc">Vízszintes elválasztó beszúrása</item>
+      <item name="removeformat_desc">Formázás eltávolítása</item>
+      <item name="custom1_desc">Az ön egyedi leírása</item>
+      <item name="forecolor_desc">Szövegszín választása</item>
+      <item name="backcolor_desc">Háttérszín választása</item>
+      <item name="charmap_desc">Speciális karakter beszúrása</item>
+      <item name="visualaid_desc">Vezetővonalak/nem látható elemek ki-/bekapcsolása</item>
+      <item name="anchor_desc">Horgony beszúrása/szerkesztése</item>
+      <item name="cut_desc">Kivágás</item>
+      <item name="copy_desc">Másolás</item>
+      <item name="paste_desc">Beszúrás</item>
+      <item name="image_props_desc">Kép tulajdonságai</item>
+      <item name="newdocument_desc">Új dokumentum</item>
+      <item name="help_desc">Segítség</item>
+      <item name="blockquote_desc">Idézet</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">A Másolás/Kivágás/Beszúrás funkciók nem érhetőek el Mozilla és Firefox alatt. Kíván többet tudni erről a témáról?</item>
+      <item name="path">Útvonal</item>
+      <item name="newdocument">Biztosan törli az eddigi tartalmat?</item>
+      <item name="toolbar_focus">Eszközgombokra ugrás - Alt+Q, Szerkesztőhöz ugrás - Alt-Z, Elemútvonalhoz ugrás - Alt-X</item>
+      <item name="more_colors">Több szín</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">A TinyMCE-ről</item>
+      <item name="about_general">Rólunk</item>
+      <item name="about_help">Segítség</item>
+      <item name="about_license">Licenc</item>
+      <item name="about_plugins">Pluginok</item>
+      <item name="about_plugin">Plugin</item>
+      <item name="about_author">Szerző</item>
+      <item name="about_version">Verzió</item>
+      <item name="about_loaded">Betöltött pluginok</item>
+      <!-- Anchor -->
+      <item name="anchor_title">Horgony beszúrása/szerkesztése</item>
+      <item name="anchor_name">Horgonynév</item>
+      <!-- Source -->
+      <item name="code_title">HTML forrás szerkesztése</item>
+      <item name="code_wordwrap">Szöveg tördelése</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">Színválasztás</item>
+      <item name="colorpicker_picker_tab">Választó</item>
+      <item name="colorpicker_picker_title">Színválasztó</item>
+      <item name="colorpicker_palette_tab">Paletta</item>
+      <item name="colorpicker_palette_title">Paletta színek</item>
+      <item name="colorpicker_named_tab">Elnevezettek</item>
+      <item name="colorpicker_named_title">Elnevezett színek</item>
+      <item name="colorpicker_color">Szín:</item>
+      <item name="colorpicker_name">Név:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">Egyedi karakter választása</item>
+      <!-- Image -->
+      <item name="image_title">Kép beszúrása/szerkesztése</item>
+      <item name="image_src">Kép URL</item>
+      <item name="image_alt">Kép leírás</item>
+      <item name="image_list">Kép lista</item>
+      <item name="image_border">Keret</item>
+      <item name="image_dimensions">Méretek</item>
+      <item name="image_vspace">Függőleges táv</item>
+      <item name="image_hspace">Vízszintes táv</item>
+      <item name="image_align">Igazítás</item>
+      <item name="image_align_baseline">Alapvonalhoz</item>
+      <item name="image_align_top">Fentre</item>
+      <item name="image_align_middle">Középre</item>
+      <item name="image_align_bottom">Lentre</item>
+      <item name="image_align_texttop">Szöveg tetejéhez</item>
+      <item name="image_align_textbottom">Szöveg aljához</item>
+      <item name="image_align_left">Balra</item>
+      <item name="image_align_right">Jobbra</item>
+      <!-- Link -->
+      <item name="link_title">Link beszúrása/szerkesztése</item>
+      <item name="link_url">Link URL</item>
+      <item name="link_target">Target</item>
+      <item name="link_target_same">Link azonos ablakba nyitása</item>
+      <item name="link_target_blank">Link új ablakba nyitása</item>
+      <item name="link_titlefield">Cím</item>
+      <item name="link_is_email">A beírt URL e-mail címnek tűnik, kívánja a szükséges mailto:-val kiegészíteni?</item>
+      <item name="link_is_external">A beírt URL külső hivatkozásnak tűnik, kívánja a szükséges http://-vel kiegészíteni?</item>
+      <item name="link_list">Link lista</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">Igazítás</item>
+      <item name="left">Balra</item>
+      <item name="center">Középre</item>
+      <item name="right">Jobbra</item>
+      <item name="full">Sorkizárás</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%Y.%m.%d.</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">Dátum beszúrása</item>
+      <item name="inserttime_desc">Idő beszúrása</item>
+      <item name="months_long">január,február,március,április,május,június,július,augusztus,szeptember,október,november,december</item>
+      <item name="months_short">jan,feb,már,ápr,máj,jún,júl,aug,szept,okt,nov,dec</item>
+      <item name="day_long">vasárnap,hétfő,kedd,szerda,csütörtök,péntek,szombat,vasárnap</item>
+      <item name="day_short">V,H,K,Sze,Cs,P,Szo,V</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">Nyomtatás</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">Előnézet</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">Balról jobbra</item>
+      <item name="rtl_desc">Jobbról balra</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">Új réteg beszúrása</item>
+      <item name="forward_desc">Mozgatás előre</item>
+      <item name="backward_desc">Mozgatás hátra</item>
+      <item name="absolute_desc">Abszolút pozíció ki-/bekapcsolása</item>
+      <item name="content">Új réteg...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">Mentés</item>
+      <item name="cancel_desc">Összes változás visszavonása</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">Nemsortörő szóköz beszúrása</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">Helyesírás-ellenőrzés futtatása</item>
+      <item name="download">ieSpell nem található. Telepíti most?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">Vízszintes vonal</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">Szélesség</item>
+      <item name="size">Magasság</item>
+      <item name="noshade">Árnyék nélkül</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">Hangulatjelek</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">Hangulatjel beszúrása</item>
+      <item name="desc">Hangulatjelek</item>
+      <item name="cool">Király</item>
+      <item name="cry">Sírós</item>
+      <item name="embarassed">Zavarban van</item>
+      <item name="foot_in_mouth">Láb a szájban</item>
+      <item name="frown">Rosszall</item>
+      <item name="innocent">Ártatlan</item>
+      <item name="kiss">Csók</item>
+      <item name="laughing">Nevetés</item>
+      <item name="money_mouth">Pénz beszél</item>
+      <item name="sealed">Lakat a száján</item>
+      <item name="smile">Vigyor</item>
+      <item name="surprised">Meglepett</item>
+      <item name="tongue_out">Nyelvöltés</item>
+      <item name="undecided">Határozatlan</item>
+      <item name="wink">Kacsintás</item>
+      <item name="yell">Üvöltés</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">Keresés</item>
+      <item name="replace_desc">Keresés/Csere</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">Keresés megint</item>
+      <item name="notfound">A keresés véget ért. A keresett szövegrész nem található.</item>
+      <item name="search_title">Keresés</item>
+      <item name="replace_title">Keresés/Csere</item>
+      <item name="allreplaced">A keresett részszöveg minden előfordulása cserélve lett.</item>
+      <item name="findwhat">Mit cserél</item>
+      <item name="replacewith">Mire cserél</item>
+      <item name="direction">Irány</item>
+      <item name="up">Fel</item>
+      <item name="down">Le</item>
+      <item name="mcase">Kis- és nagybetűk megkülönböztetése</item>
+      <item name="findnext">Keresés</item>
+      <item name="replace">Csere</item>
+      <item name="replaceall">Minden találat cseréje</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">Kép beszúrása/szerkesztése</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">Általános</item>
+      <item name="tab_appearance">Megjelenés</item>
+      <item name="tab_advanced">Haladó</item>
+      <item name="general">Általános</item>
+      <item name="title">Cím</item>
+      <item name="preview">Előnézet</item>
+      <item name="constrain_proportions">Aránytartás</item>
+      <item name="langdir">Nyelv írás irány</item>
+      <item name="langcode">Nyelv kód</item>
+      <item name="long_desc">Bővebb leírás link</item>
+      <item name="style">Style</item>
+      <item name="classes">Class-ok</item>
+      <item name="ltr">Balról jobbra</item>
+      <item name="rtl">Jobbról balra</item>
+      <item name="id">Id</item>
+      <item name="map">Kép térkép</item>
+      <item name="swap_image">Képcsere</item>
+      <item name="alt_image">Alternatív kép</item>
+      <item name="mouseover">Kép az egérkurzor fölévitelekor</item>
+      <item name="mouseout">Kép az egérkurzor levételekor</item>
+      <item name="misc">Vegyes</item>
+      <item name="example_img">Előnézeti kép</item>
+      <item name="missing_alt">Biztosan folytatja helyettesítő szöveg nélkül? Enélkül a korlátozással élők, szöveges böngészőt használók és a képek megjelenítését letiltó felhasználók hátrányban lesznek.</item>
+      <item name="dialog_title">Kép beszúrás/szerkesztés</item>
+      <item name="src">Kép URL</item>
+      <item name="alt">Kép helyettesítő szövege</item>
+      <item name="list">Képlista</item>
+      <item name="border">Keret</item>
+      <item name="dimensions">Dimenziók</item>
+      <item name="vspace">Függőleges távolság</item>
+      <item name="hspace">Vízszintes távolság</item>
+      <item name="align">Igazítás</item>
+      <item name="align_baseline">Alapvonalhoz</item>
+      <item name="align_top">Fentre</item>
+      <item name="align_middle">Középre</item>
+      <item name="align_bottom">Lentre</item>
+      <item name="align_texttop">Szöveg tetejéhez</item>
+      <item name="align_textbottom">Szöveg aljához</item>
+      <item name="align_left">Balra</item>
+      <item name="align_right">Jobbra</item>
+      <item name="image_list">Képlista</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">Link beszúrása/szerkesztés</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">Link beszúrás/szerkesztés</item>
+      <item name="url">Link URL</item>
+      <item name="target">Target</item>
+      <item name="titlefield">Cím</item>
+      <item name="is_email">A beírt URL e-mail címnek tűnik, kívánja a szükséges mailto:-t elé tenni?</item>
+      <item name="is_external">A beírt URL külső hivatkozásnak tűnik, kívánja a szükséges http://-t elé tenni?</item>
+      <item name="list">Link lista</item>
+      <item name="general_tab">Általános</item>
+      <item name="popup_tab">Felugró ablak</item>
+      <item name="events_tab">Események</item>
+      <item name="advanced_tab">Haladó</item>
+      <item name="general_props">Általános tulajdonságok</item>
+      <item name="popup_props">Felugró ablak tulajdonságai</item>
+      <item name="event_props">Események</item>
+      <item name="advanced_props">Haladó tulajdonságok</item>
+      <item name="popup_opts">Beállítások</item>
+      <item name="anchor_names">Horgonyok</item>
+      <item name="target_same">Azonos ablakban/keretben megnyitás</item>
+      <item name="target_parent">Szülő ablakban/keretben megnyitás</item>
+      <item name="target_top">Azonos ablakban/keretben megnyitás legfelül</item>
+      <item name="target_blank">Új ablakban megnyitás</item>
+      <item name="popup">JavaScript felugró ablak</item>
+      <item name="popup_url">Felugró ablak URL</item>
+      <item name="popup_name">Ablaknév</item>
+      <item name="popup_return">'return false' beszúrása</item>
+      <item name="popup_scrollbars">Görgetősávok mutatása</item>
+      <item name="popup_statusbar">Státuszsor mutatása</item>
+      <item name="popup_toolbar">Eszközsor mutatása</item>
+      <item name="popup_menubar">Menüsor mutatása</item>
+      <item name="popup_location">Cím mező mutatása</item>
+      <item name="popup_resizable">Átméretezhető ablak</item>
+      <item name="popup_dependent">Függő (csak Mozilla/Firefox)</item>
+      <item name="popup_size">Méret</item>
+      <item name="popup_position">Pozíció (X/Y)</item>
+      <item name="id">Id</item>
+      <item name="style">Style</item>
+      <item name="classes">Class-ok</item>
+      <item name="target_name">Cél neve</item>
+      <item name="langdir">Nyelv írás irány</item>
+      <item name="target_langcode">Cél nyelv</item>
+      <item name="langcode">Nyelv kód</item>
+      <item name="encoding">Cél karakterkódolás</item>
+      <item name="mime">Cél MIME típus</item>
+      <item name="rel">Oldal kapcsolata a céllal</item>
+      <item name="rev">Cél kapcsolata az oldallal</item>
+      <item name="tabindex">Tabindex</item>
+      <item name="accesskey">Gyorsgomb</item>
+      <item name="ltr">Balról jobbra</item>
+      <item name="rtl">Jobbról balra</item>
+      <item name="link_list">Link lista</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">Idézet</item>
+      <item name="abbr_desc">Rövidítés</item>
+      <item name="acronym_desc">Betűszó</item>
+      <item name="del_desc">Törölt</item>
+      <item name="ins_desc">Beszúrt</item>
+      <item name="attribs_desc">Tulajdonságok beszúrása/szerkesztése</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">Cím</item>
+      <item name="attribute_label_id">ID</item>
+      <item name="attribute_label_class">Class</item>
+      <item name="attribute_label_style">Style</item>
+      <item name="attribute_label_cite">Idézet</item>
+      <item name="attribute_label_datetime">Dátum/Idő</item>
+      <item name="attribute_label_langdir">Szöveg iránya</item>
+      <item name="attribute_option_ltr">Balról jobbra</item>
+      <item name="attribute_option_rtl">Jobbról balra</item>
+      <item name="attribute_label_langcode">Nyelv</item>
+      <item name="attribute_label_tabindex">TabIndex</item>
+      <item name="attribute_label_accesskey">Gyorsbilentyű</item>
+      <item name="attribute_events_tab">Események</item>
+      <item name="attribute_attrib_tab">Tulajdonságok</item>
+      <item name="general_tab">Általános</item>
+      <item name="attrib_tab">Tulajdonságok</item>
+      <item name="events_tab">Események</item>
+      <item name="fieldset_general_tab">Általános beállítások</item>
+      <item name="fieldset_attrib_tab">Elem tulajdonságok</item>
+      <item name="fieldset_events_tab">Elem események</item>
+      <item name="title_ins_element">Beszúrt elem</item>
+      <item name="title_del_element">Törölt elem</item>
+      <item name="title_acronym_element">Betűszó elem</item>
+      <item name="title_abbr_element">Rövidítés elem</item>
+      <item name="title_cite_element">Idézet elem</item>
+      <item name="remove">Eltávolítás</item>
+      <item name="insert_date">Aktuális dátum/idő beszúrása</item>
+      <item name="option_ltr">Balról jobra</item>
+      <item name="option_rtl">Jobbról balra</item>
+      <item name="attribs_title">Tulajdonságok beszúrása/szerkesztése</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">CSS stílus szerkesztése</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">CSS stílus szerkestése</item>
+      <item name="apply">Alkalmaz</item>
+      <item name="text_tab">Szöveg</item>
+      <item name="background_tab">Háttér</item>
+      <item name="block_tab">Blokk</item>
+      <item name="box_tab">Doboz</item>
+      <item name="border_tab">Keret</item>
+      <item name="list_tab">Lista</item>
+      <item name="positioning_tab">Pozíció</item>
+      <item name="text_props">Szöveg</item>
+      <item name="text_font">Betűtípus</item>
+      <item name="text_size">Méret</item>
+      <item name="text_weight">Szélesség</item>
+      <item name="text_style">Stílus</item>
+      <item name="text_variant">Változat</item>
+      <item name="text_lineheight">Sormagasság</item>
+      <item name="text_case">eset</item>
+      <item name="text_color">szín</item>
+      <item name="text_decoration">dekoráció</item>
+      <item name="text_overline">felülhúzás</item>
+      <item name="text_underline">alulhúzás</item>
+      <item name="text_striketrough">áthúzás</item>
+      <item name="text_blink">villogás</item>
+      <item name="text_none">egyik sem</item>
+      <item name="background_color">Háttérszín</item>
+      <item name="background_image">Háttérkép</item>
+      <item name="background_repeat">Ismétlés</item>
+      <item name="background_attachment">Csatolmány</item>
+      <item name="background_hpos">Vízszintes hely</item>
+      <item name="background_vpos">Függőleges hely</item>
+      <item name="block_wordspacing">Szótávolság</item>
+      <item name="block_letterspacing">Betűtávolság</item>
+      <item name="block_vertical_alignment">Függőleges igazítás</item>
+      <item name="block_text_align">Szöveg igazítása</item>
+      <item name="block_text_indent">Szöveg behúzása</item>
+      <item name="block_whitespace">Üres helyek</item>
+      <item name="block_display">Megjelenítés</item>
+      <item name="box_width">Szélesség</item>
+      <item name="box_height">Magasság</item>
+      <item name="box_float">Lebegés (float)</item>
+      <item name="box_clear">Lebegés (float) törlése</item>
+      <item name="padding">Belső margó</item>
+      <item name="same">Mindenhol ugyanaz</item>
+      <item name="top">Felül</item>
+      <item name="right">Jobbra</item>
+      <item name="bottom">Lent</item>
+      <item name="left">Balra</item>
+      <item name="margin">Margó</item>
+      <item name="style">Stílus</item>
+      <item name="width">Szélesség</item>
+      <item name="height">Magasság</item>
+      <item name="color">Szín</item>
+      <item name="list_type">Típus</item>
+      <item name="bullet_image">Elemkép</item>
+      <item name="position">Pozíció</item>
+      <item name="positioning_type">Típus</item>
+      <item name="visibility">Láthatóság</item>
+      <item name="zindex">Z-index</item>
+      <item name="overflow">Kifutás</item>
+      <item name="placement">Elhelyezés</item>
+      <item name="clip">Levágás</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">Beszúrás szövegként</item>
+      <item name="paste_word_desc">Beszúrás Wordből</item>
+      <item name="selectall_desc">Mindent kijelöl</item>
+      <item name="plaintext_mode_sticky">Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode.</item>
+      <item name="plaintext_mode">Paste is now in plain text mode. Click again to toggle back to regular paste mode.</item>
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">Használja a Ctrl+V-t a billentyűzetén a beillesztéshez.</item>
+      <item name="text_linebreaks">Sortörések megtartása</item>
+      <item name="word_title">Használja a Ctrl+V-t a billentyűzetén a beillesztéshez.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">Táblázat beszúrása/szerkesztése</item>
+      <item name="row_before_desc">Sor beszúrása elé</item>
+      <item name="row_after_desc">Sor beszúrása utána</item>
+      <item name="delete_row_desc">Sor törlése</item>
+      <item name="col_before_desc">Oszlop beszúrása elé</item>
+      <item name="col_after_desc">Oszlop beszúrása utána</item>
+      <item name="delete_col_desc">Oszlop törlése</item>
+      <item name="split_cells_desc">Cellák felosztása</item>
+      <item name="merge_cells_desc">Cellák összevonása</item>
+      <item name="row_desc">Sor tulajdonságai</item>
+      <item name="cell_desc">Cella tulajdonságai</item>
+      <item name="props_desc">Táblázat tulajdonságai</item>
+      <item name="paste_row_before_desc">Sor bemásolása elé</item>
+      <item name="paste_row_after_desc">Sor bemásolása utána</item>
+      <item name="cut_row_desc">Sor kivágása</item>
+      <item name="copy_row_desc">Sor másolása</item>
+      <item name="del">Táblázat törlése</item>
+      <item name="row">Sor</item>
+      <item name="col">Oszlop</item>
+      <item name="cell">Cella</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width"></item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">Általános</item>
+      <item name="advanced_tab">Haladó</item>
+      <item name="general_props">Általános tulajdonságok</item>
+      <item name="advanced_props">Haladó tulajdonságok</item>
+      <item name="rowtype">Sor a táblában</item>
+      <item name="title">Táblázat beszúrása/szerkesztése</item>
+      <item name="width">Szélesség</item>
+      <item name="height">Magasság</item>
+      <item name="cols">Oszlopok</item>
+      <item name="rows">Sorok</item>
+      <item name="cellspacing">Cellaköz</item>
+      <item name="cellpadding">Cella belsőköz</item>
+      <item name="border">Keret</item>
+      <item name="align">Igazítás</item>
+      <item name="align_default">Alapértelmezett</item>
+      <item name="align_left">Balra</item>
+      <item name="align_right">Jobbra</item>
+      <item name="align_middle">Középre</item>
+      <item name="row_title">Sor tulajdonságai</item>
+      <item name="cell_title">Cella tulajdonságai</item>
+      <item name="cell_type">Cellatípus</item>
+      <item name="valign">Függőleges igazítás</item>
+      <item name="align_top">Fel</item>
+      <item name="align_bottom">Le</item>
+      <item name="bordercolor">Keretszín</item>
+      <item name="bgcolor">Háttérszín</item>
+      <item name="merge_cells_title">Cellák összevonása</item>
+      <item name="id">Id</item>
+      <item name="style">Stílus</item>
+      <item name="langdir">Írás irány</item>
+      <item name="langcode">Nyelvkód</item>
+      <item name="mime">Cél MIME típus</item>
+      <item name="ltr">Balról jobbra</item>
+      <item name="rtl">Jobbról balra</item>
+      <item name="bgimage">Háttérkép</item>
+      <item name="summary">Összegzés</item>
+      <item name="td">Adat</item>
+      <item name="th">Fejléc</item>
+      <item name="cell_cell">Cella frissítése</item>
+      <item name="cell_row">Sor összes cellájának frissítése</item>
+      <item name="cell_all">Táblázat összes cellájának frissítése</item>
+      <item name="row_row">Sor frissítése</item>
+      <item name="row_odd">Páratlan sorok frissítése</item>
+      <item name="row_even">Páros sorok frissítése</item>
+      <item name="row_all">Minden sor frissítése</item>
+      <item name="thead">Táblázat fej</item>
+      <item name="tbody">Táblázat test</item>
+      <item name="tfoot">Táblázat láb</item>
+      <item name="scope">Hatókör</item>
+      <item name="rowgroup">Sor csoport</item>
+      <item name="colgroup">Oszlop csoport</item>
+      <item name="col_limit">Túllépte a maximális oszlopszámot, ami {$cols}.</item>
+      <item name="row_limit">Túllépte a maximális sorszámot, ami {$rows}.</item>
+      <item name="cell_limit">Túllépte a maximális cellaszámot, ami {$cells}.</item>
+      <item name="missing_scope">Biztosan folytatni akarja anélkül, hogy hatókört adna ennek a fejléccellának? Korlátozásokkal élők számára nehéz lesz megérteni a táblázat tartalmát.</item>
+      <item name="caption">Címsor</item>
+      <item name="frame">Keret</item>
+      <item name="frame_none">nincs</item>
+      <item name="frame_groups">csoportok</item>
+      <item name="frame_rows">sorok</item>
+      <item name="frame_cols">oszlopok</item>
+      <item name="frame_all">mind</item>
+      <item name="rules">Vonalak</item>
+      <item name="rules_void">sehol</item>
+      <item name="rules_above">fölötte</item>
+      <item name="rules_below">alatta</item>
+      <item name="rules_hsides">v. oldalak</item>
+      <item name="rules_lhs">lhs</item>
+      <item name="rules_rhs">rhs</item>
+      <item name="rules_vsides">f. oldalak</item>
+      <item name="rules_box">doboz</item>
+      <item name="rules_border">keret</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">A módosítások nem lesznek mentve, ha elhagyja az oldalt.</item>
+      <item name="restore_content">Restore auto-saved content.</item>
+      <item name="warning_message">If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?.</item>
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">Teljesképernyős mód ki-/bekapcsolása</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">Beágyazott média beszúrása/szerkesztése</item>
+      <item name="edit">Beágyazott média szerkesztése</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">Beágyazott média beszúrása/szerkesztése</item>
+      <item name="general">Általános</item>
+      <item name="advanced">Haladó</item>
+      <item name="file">Fájl/URL</item>
+      <item name="list">Lista</item>
+      <item name="size">Dimenziók</item>
+      <item name="preview">Előnézet</item>
+      <item name="constrain_proportions">Aránytartás</item>
+      <item name="type">Típus</item>
+      <item name="id">Id</item>
+      <item name="name">Név</item>
+      <item name="class_name">Osztály</item>
+      <item name="vspace">F-táv</item>
+      <item name="hspace">V-táv</item>
+      <item name="play">Automatikus lejátszás</item>
+      <item name="loop">Ismétlés</item>
+      <item name="menu">Menü mutatása</item>
+      <item name="quality">Minőség</item>
+      <item name="scale">Nagyítás</item>
+      <item name="align">Elrendezés</item>
+      <item name="salign">SElrendezés</item>
+      <item name="wmode">WMód</item>
+      <item name="bgcolor">Háttér</item>
+      <item name="base">Base</item>
+      <item name="flashvars">Flashvars</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">AutoHREF</item>
+      <item name="cache">Cache</item>
+      <item name="hidden">Rejtett</item>
+      <item name="controller">Vezérlő</item>
+      <item name="kioskmode">Kiosk mód</item>
+      <item name="playeveryframe">Minden kocka lejátszása</item>
+      <item name="targetcache">Cél cache</item>
+      <item name="correction">Nincs javítás</item>
+      <item name="enablejavascript">JavaScript engedése</item>
+      <item name="starttime">Kezdési idő</item>
+      <item name="endtime">Záró idő</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">Folytás sebessége</item>
+      <item name="target">Cél</item>
+      <item name="volume">Hangerő</item>
+      <item name="autostart">Automatikus kezdés</item>
+      <item name="enabled">Engedélyezve</item>
+      <item name="fullscreen">Teljes képernyő</item>
+      <item name="invokeurls">URL-ek bevonása</item>
+      <item name="mute">Néma</item>
+      <item name="stretchtofit">Nyújtva igazítás</item>
+      <item name="windowlessvideo">Ablak nélküli videó</item>
+      <item name="balance">Balance</item>
+      <item name="baseurl">Base URL</item>
+      <item name="captioningid">Captioning id</item>
+      <item name="currentmarker">Aktuális marker</item>
+      <item name="currentposition">Aktuális pozíció</item>
+      <item name="defaultframe">Alapértelmezett frame</item>
+      <item name="playcount">Lejátszásszám</item>
+      <item name="rate">Rate</item>
+      <item name="uimode">UI Mód</item>
+      <item name="flash_options">Flash beállításai</item>
+      <item name="qt_options">Quicktime beállításai</item>
+      <item name="wmp_options">Windows media player beállításai</item>
+      <item name="rmp_options">Real media player beállításai</item>
+      <item name="shockwave_options">Shockwave beállításai</item>
+      <item name="autogotourl">Automatikus URL-re ugrás</item>
+      <item name="center">Középre</item>
+      <item name="imagestatus">Kép állapot</item>
+      <item name="maintainaspect">Aránytartás</item>
+      <item name="nojava">Nincs java</item>
+      <item name="prefetch">Előtöltés</item>
+      <item name="shuffle">Véletlenszerű</item>
+      <item name="console">Console</item>
+      <item name="numloop">Ismétlésszám</item>
+      <item name="controls">Kezelők</item>
+      <item name="scriptcallbacks">Script callbacks</item>
+      <item name="swstretchstyle">Nyújtás stílus</item>
+      <item name="swstretchhalign">Nyújtás V-igazítás</item>
+      <item name="swstretchvalign">Nyújtás F-igazítás</item>
+      <item name="sound">Hang</item>
+      <item name="progress">Folymat</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn">Streamelt rtsp források a QT Src mezőbe valók a haladó lapon.\nHozzá kellene adnia egy nem streamelt verziót a Src mezőben.</item>
+      <item name="align_top">Fent</item>
+      <item name="align_right">Jobbra</item>
+      <item name="align_bottom">Lent</item>
+      <item name="align_left">Balra</item>
+      <item name="align_center">Középen</item>
+      <item name="align_top_left">Bal-fent</item>
+      <item name="align_top_right">Jobb-fent</item>
+      <item name="align_bottom_left">Bal-lent</item>
+      <item name="align_bottom_right">Bal-jobbra</item>
+      <item name="flv_options">Flash videó beállításai</item>
+      <item name="flv_scalemode">Nagyítás mód</item>
+      <item name="flv_buffer">Buffer</item>
+      <item name="flv_startimage">Start kép</item>
+      <item name="flv_starttime">Start idő</item>
+      <item name="flv_defaultvolume">Alapértelmezett hangerő</item>
+      <item name="flv_hiddengui">Rejtett GUI</item>
+      <item name="flv_autostart">Autó start</item>
+      <item name="flv_loop">Ismétlés</item>
+      <item name="flv_showscalemodes">Nagyítási módok mutatása</item>
+      <item name="flv_smoothvideo">Videó simítása</item>
+      <item name="flv_jscallback">JS Callback</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">Dokumentum tulajdonságai</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Dokumentum tulajdonságai</item>
+      <item name="meta_tab">Általános</item>
+      <item name="appearance_tab">Megjelenés</item>
+      <item name="advanced_tab">Haladó</item>
+      <item name="meta_props">Meta információ</item>
+      <item name="langprops">Nyelv és kódolás</item>
+      <item name="meta_title">Cím</item>
+      <item name="meta_keywords">Kulcsszavak</item>
+      <item name="meta_description">Leírás</item>
+      <item name="meta_robots">Robotok</item>
+      <item name="doctypes">Doctype</item>
+      <item name="langcode">Nyelvkód</item>
+      <item name="langdir">Írás iránya</item>
+      <item name="ltr">Balról jobra</item>
+      <item name="rtl">Jobbról balra</item>
+      <item name="xml_pi">XML deklaráció</item>
+      <item name="encoding">Karakterkódolás</item>
+      <item name="appearance_bgprops">Háttér tulajdonságai</item>
+      <item name="appearance_marginprops">Test keret</item>
+      <item name="appearance_linkprops">Link színek</item>
+      <item name="appearance_textprops">Szöveg tulajdonságai</item>
+      <item name="bgcolor">Háttérszín</item>
+      <item name="bgimage">Háttérkép</item>
+      <item name="left_margin">Bal margó</item>
+      <item name="right_margin">Jobb margó</item>
+      <item name="top_margin">Felső margó</item>
+      <item name="bottom_margin">Alsó margó</item>
+      <item name="text_color">Szövegszín</item>
+      <item name="font_size">Betűméret</item>
+      <item name="font_face">Betűtípus</item>
+      <item name="link_color">Link szín</item>
+      <item name="hover_color">Fölévitt szín</item>
+      <item name="visited_color">Látogatva szín</item>
+      <item name="active_color">Aktív szín</item>
+      <item name="textcolor">Szín</item>
+      <item name="fontsize">Betűméret</item>
+      <item name="fontface">Betűtípus</item>
+      <item name="meta_index_follow">Indexel és követi a linkeket</item>
+      <item name="meta_index_nofollow">Indexel, de nem követi a linkeket</item>
+      <item name="meta_noindex_follow">Nem indexel, de követi a linkeket</item>
+      <item name="meta_noindex_nofollow">Nem indexel és nem követi a linkeket</item>
+      <item name="appearance_style">Stylesheet és style tulajdonságok</item>
+      <item name="stylesheet">Stylesheet</item>
+      <item name="style">Style</item>
+      <item name="author">Szerző</item>
+      <item name="copyright">Copyright</item>
+      <item name="add">Új elem hozzáadása</item>
+      <item name="remove">Kijelölt elem törlése</item>
+      <item name="moveup">Kijelölt elem felfelé mozgatása</item>
+      <item name="movedown">Kijelölt elem lefelé mozgatása</item>
+      <item name="head_elements">Fej elemek</item>
+      <item name="info">Információ</item>
+      <item name="add_title">Cím elem</item>
+      <item name="add_meta">Meta elem</item>
+      <item name="add_script">Script elem</item>
+      <item name="add_style">Style elem</item>
+      <item name="add_link">Link elem</item>
+      <item name="add_base">Base elem</item>
+      <item name="add_comment">Comment elem</item>
+      <item name="title_element">Title elem</item>
+      <item name="script_element">Script elem</item>
+      <item name="style_element">Style elem</item>
+      <item name="base_element">Base elem</item>
+      <item name="link_element">Link elem</item>
+      <item name="meta_element">Meta elem</item>
+      <item name="comment_element">Megjegyzés</item>
+      <item name="src">Src</item>
+      <item name="language">Language</item>
+      <item name="href">Href</item>
+      <item name="target">Target</item>
+      <item name="type">Type</item>
+      <item name="charset">Charset</item>
+      <item name="defer">Defer</item>
+      <item name="media">Media</item>
+      <item name="properties">Properties</item>
+      <item name="name">Name</item>
+      <item name="value">Value</item>
+      <item name="content">Content</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href lang</item>
+      <item name="general_props">Általános</item>
+      <item name="advanced_props">Haladó</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Sablon beillesztése</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">Sablon beillesztése</item>
+      <item name="label">Sablon</item>
+      <item name="desc_label">Leírás</item>
+      <item name="desc">Sablon beillesztése</item>
+      <item name="select">Sablon választása</item>
+      <item name="preview">Előnézet</item>
+      <item name="warning">Figyelem: Egy már alkalmazott sablon frissítése másikkal adatvesztéssel járhat.</item>
+      <item name="mdate_format">%Y.%m.%d. %H:%M:%S</item>
+      <item name="cdate_format">%Y.%m.%d. %H:%M:%S</item>
+      <item name="months_long">január,február,március,április,május,június,július,augusztus,szeptember,október,november,december</item>
+      <item name="months_short">jan,feb,már,ápr,máj,jún,júl,aug,szep,okt,nov,dec</item>
+      <item name="day_long">vasárnap,hétfő,kedd,szerda,csütörtök,péntek,szombat,vasárnap</item>
+      <item name="day_short">V,H,K,Sze,Cs,P,Szo,V</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Vizuális vezérlőkarakterek be/ki.</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">Helyesírás-ellenőrző ki-/bekapcsolása</item>
+      <item name="menu">Helyesírás-ellenőrző tulajdonságai</item>
+      <item name="ignore_word">Szó kihagyása</item>
+      <item name="ignore_words">Mindet kihagy</item>
+      <item name="langs">Nyelvek</item>
+      <item name="wait">Kérem, várjon...</item>
+      <item name="sug">Ajánlások</item>
+      <item name="no_sug">Nincs ajánlás</item>
+      <item name="no_mpell">Nem találtam helyesírási hibát.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">Oldaltörés beszúrása.</item>
+    </group>
+    <group target="advlist">
+      <item name="types">Types</item>
+      <item name="def">Default</item>
+      <item name="lower_alpha">Lower alpha</item>
+      <item name="lower_greek">Lower greek</item>
+      <item name="lower_roman">Lower roman</item>
+      <item name="upper_alpha">Upper alpha</item>
+      <item name="upper_roman">Upper roman</item>
+      <item name="circle">Kör</item>
+      <item name="disc">Lemez</item>
+      <item name="square">Square</item>
+    </group>
+  </language>
+</language-pack>

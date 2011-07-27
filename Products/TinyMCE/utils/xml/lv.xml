@@ -1,0 +1,925 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>Mr. Holy Deer</author>
+    <version major="2" minor="6" releasedate="2010-03-19" />
+    <description>This is the Latvian language pack for TinyMCE.</description>
+  </header>
+  <language code="lv" title="Latvian" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">Vai tu vēlies izmantot WYSIWYG šim teksta laukam?</item>
+      <item name="apply">Apstiprināt</item>
+      <item name="insert">Ievietot</item>
+      <item name="update">Atjaunināt</item>
+      <item name="cancel">Atcelt</item>
+      <item name="close">Aizvērt</item>
+      <item name="browse">Pārlūkot</item>
+      <item name="class_name">Klase</item>
+      <item name="not_set">-- Nav norādīts --</item>
+      <item name="clipboard_msg">Iespēja Kopēt/Izgriezt/Iekopēt nav pieejama pārlūkiem Mozilla and Firefox.\nVai Jūs vēlaties uzzināt vairāk par šo problēmu?</item>
+      <item name="clipboard_no_support">Šobrīd Jūsu pārlūks neatbalsta šo iespēju, tā vietā lūdzu izmantotjiet tastatūras saīsinājumtaustiņus.</item>
+      <item name="popup_blocked">Atvainojiet, bet mēs esam konstatējuši, ka Jūsu uzlecošo logu bloķētājs ir atspējojis logu, kas nodrošina programmas funkcionalitāti. Lai pilnībā izmantotu šo rīku, Jums ir jāatslēdz uzlecošo logu bloķētajs šai vietnei. </item>
+      <item name="invalid_data">Kļūda: Ievadītas nederīgas vērtības. Tās ir atzīmētas sarkanā krāsā.</item>
+      <item name="more_colors">Vairāk krāsu</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">Treknraksts (Ctrl+B)</item>
+      <item name="italic_desc">Slīpraksts (Ctrl+I)</item>
+      <item name="underline_desc">Pasvītrojums (Ctrl+U)</item>
+      <item name="striketrough_desc">Pārsvītrojums</item>
+      <item name="bullist_desc">Nenumurēts saraksts</item>
+      <item name="numlist_desc">Numurēts saraksts</item>
+      <item name="undo_desc">Atsaukt (Ctrl+Z)</item>
+      <item name="redo_desc">Atatsaukt (Ctrl+Y)</item>
+      <item name="cleanup_desc">Iztīrīt nekārtīgu kodu</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">Stili</item>
+      <item name="font_size">Fonta lielums</item>
+      <item name="fontdefault">Fonta veids</item>
+      <item name="block">Formāts</item>
+      <item name="paragraph">Rindkopa</item>
+      <item name="div">Divīzija</item>
+      <item name="address">Adrese</item>
+      <item name="pre">Priekšformatēts</item>
+      <item name="h1">Virsraksts 1</item>
+      <item name="h2">Virsraksts 2</item>
+      <item name="h3">Virsraksts 3</item>
+      <item name="h4">Virsraksts 4</item>
+      <item name="h5">Virsraksts 5</item>
+      <item name="h6">Virsraksts 6</item>
+      <item name="blockquote">Citāts</item>
+      <item name="code">Kods</item>
+      <item name="samp">Koda piemērs</item>
+      <item name="dt">Definīcijas termins </item>
+      <item name="dd">Definīcijas apraksts</item>
+      <!-- Buttons -->
+      <item name="bold_desc">Treknraksts (Ctrl+B)</item>
+      <item name="italic_desc">Slīpraksts (Ctrl+I)</item>
+      <item name="underline_desc">Pasvītrojums (Ctrl+U)</item>
+      <item name="striketrough_desc">Pārsvītrojums</item>
+      <item name="justifyleft_desc">Novietot pa kreisi</item>
+      <item name="justifycenter_desc">Centrēt</item>
+      <item name="justifyright_desc">Novietot pa labi</item>
+      <item name="justifyfull_desc">Nolīdzināt malas</item>
+      <item name="bullist_desc">Nenumurēts saraksts</item>
+      <item name="numlist_desc">Numurēts saraksts</item>
+      <item name="outdent_desc">Uzkāpe</item>
+      <item name="indent_desc">Atkāpe</item>
+      <item name="undo_desc">Atsaukt (Ctrl+Z)</item>
+      <item name="redo_desc">Atatsaukt (Ctrl+Y)</item>
+      <item name="link_desc">Ievietot/Rediģēt saiti</item>
+      <item name="unlink_desc">Atsaitēt</item>
+      <item name="image_desc">Ievietot/Rediģēt attēlu</item>
+      <item name="cleanup_desc">Iztīrīt nekārtīgu kodu</item>
+      <item name="code_desc">Rediģēt HTML kodu</item>
+      <item name="sub_desc">Apakšraksts</item>
+      <item name="sup_desc">Augšraksts</item>
+      <item name="hr_desc">Ievietot horizontālu svītru</item>
+      <item name="removeformat_desc">Izdzēst formatēto</item>
+      <item name="custom1_desc">Tevis izdomāts apraksts šeit</item>
+      <item name="forecolor_desc">Uzstādīt teksta krāsu</item>
+      <item name="backcolor_desc">Uzstādīt fona krāsu</item>
+      <item name="charmap_desc">Ievietot simbolu</item>
+      <item name="visualaid_desc">Uzlikt/Novākt palīgsvītras/neredzamos elementus</item>
+      <item name="anchor_desc">Ievietot/Rediģēt enkursaiti</item>
+      <item name="cut_desc">Izgriezt</item>
+      <item name="copy_desc">Kopēt</item>
+      <item name="paste_desc">Iekopēt</item>
+      <item name="image_props_desc">Bildes iestatījumi</item>
+      <item name="newdocument_desc">Jauns dokuments</item>
+      <item name="help_desc">Palīdzība</item>
+      <item name="blockquote_desc">Citāts</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">Iespēja Kopēt/Izgriezt/Iekopēt nav pieejama pārlūkiem Mozilla and Firefox.
+Vai Jūs vēlaties uzzināt vairāk par šo problēmu?</item>
+      <item name="path">Atrašanās vieta</item>
+      <item name="newdocument">Vai Jūs esat pārliecināti, ka vēlaties izdzēst visu saturu?</item>
+      <item name="toolbar_focus">Iet uz rīkpogām - Alt+Q, Iet uz redaktoru - Alt-Z, Iet uz elementa atrašanās vietu - Alt-X</item>
+      <item name="more_colors">Vairāk krāsu</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">Par TinyMCE</item>
+      <item name="about_general">Par</item>
+      <item name="about_help">Palīdzība</item>
+      <item name="about_license">Licence</item>
+      <item name="about_plugins">Papildmoduļi</item>
+      <item name="about_plugin">Papildmodulis</item>
+      <item name="about_author">Autors</item>
+      <item name="about_version">Versija</item>
+      <item name="about_loaded">Iestatītie papildmoduļi</item>
+      <!-- Anchor -->
+      <item name="anchor_title">Ievietot/Rediģēt enkursaiti</item>
+      <item name="anchor_name">Enkursaites nosaukums</item>
+      <!-- Source -->
+      <item name="code_title">HTML koda redaktors</item>
+      <item name="code_wordwrap">Vārdu pārnešana jaunā rindā</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">Izvēlēties krāsu</item>
+      <item name="colorpicker_picker_tab">Izvēlnis</item>
+      <item name="colorpicker_picker_title">Krāsu izvēlnis</item>
+      <item name="colorpicker_palette_tab">Palete</item>
+      <item name="colorpicker_palette_title">Krāsu palete</item>
+      <item name="colorpicker_named_tab">Nosaukts</item>
+      <item name="colorpicker_named_title">Nosauktās krāsas</item>
+      <item name="colorpicker_color">Krāsa:</item>
+      <item name="colorpicker_name">Nosaukums:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">Izvēlies simbolu</item>
+      <!-- Image -->
+      <item name="image_title">Ievietot/Rediģēt attēlu</item>
+      <item name="image_src">Attēla URL</item>
+      <item name="image_alt">Attēla apraksts</item>
+      <item name="image_list">Attēlu saraksts</item>
+      <item name="image_border">Apmale</item>
+      <item name="image_dimensions">Izmēri</item>
+      <item name="image_vspace">Vertikālā atstarpe</item>
+      <item name="image_hspace">Horizontālā atstarpe</item>
+      <item name="image_align">Novietojums</item>
+      <item name="image_align_baseline">Pati apakša</item>
+      <item name="image_align_top">Augša</item>
+      <item name="image_align_middle">Vidus</item>
+      <item name="image_align_bottom">Apakša</item>
+      <item name="image_align_texttop">Teksta augša</item>
+      <item name="image_align_textbottom">Teksta apakša</item>
+      <item name="image_align_left">Pa kreisi</item>
+      <item name="image_align_right">Pa labi</item>
+      <!-- Link -->
+      <item name="link_title">Ievietot/Rediģēt saiti</item>
+      <item name="link_url">Saites URL</item>
+      <item name="link_target">Mērķis</item>
+      <item name="link_target_same">Atvērt saiti šai pašā logā</item>
+      <item name="link_target_blank">Atvērt saiti jaunā logā</item>
+      <item name="link_titlefield">Nosaukums</item>
+      <item name="link_is_email">Ievadītais URL šķiet ir e-pasta adrese, vai tu vēlies pirms tās pievienot mailto: priedēkli? </item>
+      <item name="link_is_external">Ievadītais URL šķiet ir ārējā saite, vai tu vēlies pirms tās pievienot http:// priedēkli?</item>
+      <item name="link_list">Saišu saraksts</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">Novietojums</item>
+      <item name="left">Pa kreisi</item>
+      <item name="center">Centrēts</item>
+      <item name="right">Pa labi</item>
+      <item name="full">Pilns</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%Y-%m-%d</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">Ievietot datumu</item>
+      <item name="inserttime_desc">Ievietot laiku</item>
+      <item name="months_long">Janvāris,Februāris,Marts,Aprīlis,Maijs,Jūnijs,Jūlijs,Augusts,Seprembris,Oktobris,Novembris,Decembris</item>
+      <item name="months_short">Jan,Feb,Mar,Apr,Mai,Jūn,Jūl,Aug,Sep,Okt,Nov,Dec</item>
+      <item name="day_long">Svētdiena,Pirmdiena,Otrdiena,Trešdiena,Ceturtdiena,Piektdiena,Sestdiena,Svētdiena</item>
+      <item name="day_short">Svē,Pir,Otr,Tre,Cet,Pie,Ses,Svē</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">Drukāt</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">Priekšskatīt</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">Virziens no kreisās uz labo</item>
+      <item name="rtl_desc">Virziens no labās uz kreiso</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">Ievietot jaunu slāni</item>
+      <item name="forward_desc">Uz priekšu</item>
+      <item name="backward_desc">Atpakaļ</item>
+      <item name="absolute_desc">Iestatīt/Novākt absolūto novietojumu </item>
+      <item name="content">Jauns slānis...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">Saglabāt</item>
+      <item name="cancel_desc">Atcelt visas izmaiņas</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">Ievietot tukšuma simbolu</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">Uzsākt pareizrakstības pārbaudi</item>
+      <item name="download">ieSpell netika atrasts. Vai Jūs vēlaties to uzstādīt?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">Horizontāla svītra</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">Platums</item>
+      <item name="size">Augstums</item>
+      <item name="noshade">Bez ēnas</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">Smaidiņi</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">Ievietot smaidiņu</item>
+      <item name="desc">Smaidiņi</item>
+      <item name="cool">Vēsais</item>
+      <item name="cry">Raudulīgais</item>
+      <item name="embarassed">Nokautrējies</item>
+      <item name="foot_in_mouth">Kājmutis</item>
+      <item name="frown">Satraukts</item>
+      <item name="innocent">Nevainīgs</item>
+      <item name="kiss">Skūpsts</item>
+      <item name="laughing">Smejošs</item>
+      <item name="money_mouth">Naudmutis</item>
+      <item name="sealed">Noslēgts</item>
+      <item name="smile">Smaidīgs</item>
+      <item name="surprised">Pārsteigts</item>
+      <item name="tongue_out">Mēdīgs</item>
+      <item name="undecided">Neizlēmīgs</item>
+      <item name="wink">Aci miedzošs</item>
+      <item name="yell">Kliedzošs</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">Meklēt</item>
+      <item name="replace_desc">Meklēt/Aizvietot</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">Meklēt vēlreiz</item>
+      <item name="notfound">Meklēšana pabeigta. Meklētā frāze/vārds netika atrasta.</item>
+      <item name="search_title">Meklēt</item>
+      <item name="replace_title">Meklēt/Aizvietot</item>
+      <item name="allreplaced">Visas frāzes/vārdi tika veiksmīgi aizvietoti.</item>
+      <item name="findwhat">Ko atrast</item>
+      <item name="replacewith">Aizvietot ar</item>
+      <item name="direction">Virziens</item>
+      <item name="up">Uz augšu</item>
+      <item name="down">Uz leju</item>
+      <item name="mcase">Reģistrjūtīgs</item>
+      <item name="findnext">Meklēt nākamo</item>
+      <item name="replace">Aizvietot</item>
+      <item name="replaceall">Aizvietot visu</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">Ievietot/Rediģēt attēlu</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">Iestatījumi</item>
+      <item name="tab_appearance">Izskats</item>
+      <item name="tab_advanced">Papildiestatījumi</item>
+      <item name="general">Iestatījumi</item>
+      <item name="title">Nosaukums</item>
+      <item name="preview">Priekšskats</item>
+      <item name="constrain_proportions">Saglabāt proporcijas</item>
+      <item name="langdir">Valodas virziens</item>
+      <item name="langcode">Valodas kods</item>
+      <item name="long_desc">Saite uz garo aprakstu</item>
+      <item name="style">Stils</item>
+      <item name="classes">Klases</item>
+      <item name="ltr">No kreisās uz labo</item>
+      <item name="rtl">No labās uz kreiso</item>
+      <item name="id">Id</item>
+      <item name="map">Attēlkarte</item>
+      <item name="swap_image">Mainīt bildi</item>
+      <item name="alt_image">Otra bilde</item>
+      <item name="mouseover">kad pele virs</item>
+      <item name="mouseout">kad pele ārpus</item>
+      <item name="misc">Dažādi</item>
+      <item name="example_img">Attēla izskata priekšskats</item>
+      <item name="missing_alt">Vai esat pārliecināti, ka vēlaties turpināt, neiekļaujot bildes aprakstu? Bez apraksta bilde nebūs saprotama lietotājiem ar nespēju redzēt, vai lietotajiem, kas lieto teksta pārlūkus, vai izslēguši bilžu rādīšanu.</item>
+      <item name="dialog_title">Ievietot/Rediģēt attēlu</item>
+      <item name="src">Attēla URL</item>
+      <item name="alt">Attēla apraksts</item>
+      <item name="list">Attēlu saraksts</item>
+      <item name="border">Apmale</item>
+      <item name="dimensions">Izmēri</item>
+      <item name="vspace">Vertikālā atstarpe</item>
+      <item name="hspace">Horizontālā atstarpe</item>
+      <item name="align">Novietojums</item>
+      <item name="align_baseline">Pati apakša</item>
+      <item name="align_top">Augša</item>
+      <item name="align_middle">Vidus</item>
+      <item name="align_bottom">Apakša</item>
+      <item name="align_texttop">Teksta augša</item>
+      <item name="align_textbottom">Teksta apakša</item>
+      <item name="align_left">Pa kreisi</item>
+      <item name="align_right">Pa labi</item>
+      <item name="image_list">Attēlu saraksts</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">Ievietot/Rediģēt saiti</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">Ievietot/Rediģēt saiti</item>
+      <item name="url">Saites URL</item>
+      <item name="target">Mērķis</item>
+      <item name="titlefield">Nosaukums</item>
+      <item name="is_email">Ievadītais URL šķiet ir e-pasta adrese, vai Jūs vēlaties pirms tās pievienot mailto: priedēkli?</item>
+      <item name="is_external">Ievadītais URL šķiet ir ārējā saite, vai Jūs vēlaties pirms tās pievienot http:// priedēkli?</item>
+      <item name="list">Link list</item>
+      <item name="general_tab">Kopīgais</item>
+      <item name="popup_tab">Popup</item>
+      <item name="events_tab">Notikumi</item>
+      <item name="advanced_tab">Advanced</item>
+      <item name="general_props">Kopīgas īpašības</item>
+      <item name="popup_props">Popup īpašības</item>
+      <item name="event_props">Notikumi</item>
+      <item name="advanced_props">Advanced īpašības</item>
+      <item name="popup_opts">Opcijas</item>
+      <item name="anchor_names">Enkuri</item>
+      <item name="target_same">Atvert šajā logā / rāmī</item>
+      <item name="target_parent">Atvert šajā logā / rāmī</item>
+      <item name="target_top">Atvert pa virsu šim rāmīm (aizvieto visus rāmjus)</item>
+      <item name="target_blank">Atvert jaunājā logā</item>
+      <item name="popup">Javascript popup</item>
+      <item name="popup_url">Popup URL</item>
+      <item name="popup_name">Loga nosaukums</item>
+      <item name="popup_return">Ielikt 'return false'</item>
+      <item name="popup_scrollbars">Parādīt scrollbars</item>
+      <item name="popup_statusbar">Parādīt status bar</item>
+      <item name="popup_toolbar">Parādīt rīkjoslu</item>
+      <item name="popup_menubar">Parādīt izvelnes joslu</item>
+      <item name="popup_location">Parādīt adreses joslu</item>
+      <item name="popup_resizable">Iedot iespēju mainīt loga izmerus</item>
+      <item name="popup_dependent">Atkarīgs (tikai priekš Mozilla/Firefox)</item>
+      <item name="popup_size">Izmērs</item>
+      <item name="popup_position">Pozīcija (X/Y)</item>
+      <item name="id">Id</item>
+      <item name="style">Stīls</item>
+      <item name="classes">Klases</item>
+      <item name="target_name">Mērķa nosaukums</item>
+      <item name="langdir">Valodas virziens</item>
+      <item name="target_langcode">Mērķa valoda</item>
+      <item name="langcode">Valodas kods</item>
+      <item name="encoding">Mērķa valodas koda tabula</item>
+      <item name="mime">Mērķa MIME tips</item>
+      <item name="rel">Lapas attiecības pret mērķi</item>
+      <item name="rev">Mērķa attiecības pret lapu</item>
+      <item name="tabindex">Tabindex</item>
+      <item name="accesskey">Pieejas poga</item>
+      <item name="ltr">No kreisas puses uz labo</item>
+      <item name="rtl">No labas puses uz kreiso</item>
+      <item name="link_list">Sakaru saraksts</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">Citāts</item>
+      <item name="abbr_desc">Saīsinājums</item>
+      <item name="acronym_desc">Acronym</item>
+      <item name="del_desc">Deletion</item>
+      <item name="ins_desc">Insertion</item>
+      <item name="attribs_desc">Pielikt/rediģēt īpašības</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">Nosaukums</item>
+      <item name="attribute_label_id">ID</item>
+      <item name="attribute_label_class">Klase</item>
+      <item name="attribute_label_style">Stils</item>
+      <item name="attribute_label_cite">Cite</item>
+      <item name="attribute_label_datetime">Datums/Laiks</item>
+      <item name="attribute_label_langdir">Teksta vīrziens</item>
+      <item name="attribute_option_ltr">No kreisas puses uz labo</item>
+      <item name="attribute_option_rtl">No labas puses uz kreiso</item>
+      <item name="attribute_label_langcode">Valoda</item>
+      <item name="attribute_label_tabindex">TabIndex</item>
+      <item name="attribute_label_accesskey">Pieejas poga</item>
+      <item name="attribute_events_tab">Notikumi</item>
+      <item name="attribute_attrib_tab">Īpašības</item>
+      <item name="general_tab">General</item>
+      <item name="attrib_tab">Attributes</item>
+      <item name="events_tab">Events</item>
+      <item name="fieldset_general_tab">General Settings</item>
+      <item name="fieldset_attrib_tab">Element Attributes</item>
+      <item name="fieldset_events_tab">Element Events</item>
+      <item name="title_ins_element">Insertion Element</item>
+      <item name="title_del_element">Deletion Element</item>
+      <item name="title_acronym_element">Acronym Element</item>
+      <item name="title_abbr_element">Abbreviation Element</item>
+      <item name="title_cite_element">Citation Element</item>
+      <item name="remove">Remove</item>
+      <item name="insert_date">Insert current date/time</item>
+      <item name="option_ltr">Left to right</item>
+      <item name="option_rtl">Right to left</item>
+      <item name="attribs_title">Insert/Edit Attributes</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">Edit CSS Style</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">Edit CSS Style</item>
+      <item name="apply">Apply</item>
+      <item name="text_tab">Text</item>
+      <item name="background_tab">Background</item>
+      <item name="block_tab">Block</item>
+      <item name="box_tab">Box</item>
+      <item name="border_tab">Border</item>
+      <item name="list_tab">List</item>
+      <item name="positioning_tab">Positioning</item>
+      <item name="text_props">Text</item>
+      <item name="text_font">Font</item>
+      <item name="text_size">Size</item>
+      <item name="text_weight">Weight</item>
+      <item name="text_style">Style</item>
+      <item name="text_variant">Variant</item>
+      <item name="text_lineheight">Line height</item>
+      <item name="text_case">Case</item>
+      <item name="text_color">Color</item>
+      <item name="text_decoration">Decoration</item>
+      <item name="text_overline">overline</item>
+      <item name="text_underline">underline</item>
+      <item name="text_striketrough">strikethrough</item>
+      <item name="text_blink">blink</item>
+      <item name="text_none">none</item>
+      <item name="background_color">Background color</item>
+      <item name="background_image">Background image</item>
+      <item name="background_repeat">Repeat</item>
+      <item name="background_attachment">Attachment</item>
+      <item name="background_hpos">Horizontālā pozīcija</item>
+      <item name="background_vpos">Vertikālā pozīcija</item>
+      <item name="block_wordspacing">Vārdu atstarpe</item>
+      <item name="block_letterspacing">Burtu atstarpe</item>
+      <item name="block_vertical_alignment">Vertikālais izlīdzinājums</item>
+      <item name="block_text_align">Teksta izlīdzinājums</item>
+      <item name="block_text_indent">Écrit indent</item>
+      <item name="block_whitespace">Tukšais laukums</item>
+      <item name="block_display">Display</item>
+      <item name="box_width">Platums</item>
+      <item name="box_height">Augstums</item>
+      <item name="box_float">Float</item>
+      <item name="box_clear">Clear</item>
+      <item name="padding">Atstarpe</item>
+      <item name="same">Same for all</item>
+      <item name="top">Augša</item>
+      <item name="right">Pa labi</item>
+      <item name="bottom">Apakša</item>
+      <item name="left">Pa kreisi</item>
+      <item name="margin">Mala</item>
+      <item name="style">Stīls</item>
+      <item name="width">Platums</item>
+      <item name="height">Augstums</item>
+      <item name="color">Krāsa</item>
+      <item name="list_type">Tips</item>
+      <item name="bullet_image">Bullet bilde</item>
+      <item name="position">Pozīcija</item>
+      <item name="positioning_type">Tips</item>
+      <item name="visibility">Redzamība</item>
+      <item name="zindex">Z-index</item>
+      <item name="overflow">Pārmērs</item>
+      <item name="placement">Izvietojums</item>
+      <item name="clip">Klips</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">Iekopēt ka parasto tekstu</item>
+      <item name="paste_word_desc">Iekopēt no Word</item>
+      <item name="selectall_desc">Iezīmēt visu</item>
+      <!--<item name="plaintext_mode_sticky">Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode.</item>-->
+      <!--<item name="plaintext_mode">Paste is now in plain text mode. Click again to toggle back to regular paste mode.</item>-->
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">Izmantojiet CTRL+V uz jūsu tastatūras lai iekopēt tekstu logā.</item>
+      <item name="text_linebreaks">Saglābāt līniju sadalītājus</item>
+      <item name="word_title">Izmantojiet CTRL+V uz jūsu tastatūras lai iekopēt tekstu logā.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">Ielikt jaunu tabulu</item>
+      <item name="row_before_desc">Ielikt jaunu rindu priekšā</item>
+      <item name="row_after_desc">Ielikt jaunu rindu aiz</item>
+      <item name="delete_row_desc">Izdzēst rindu</item>
+      <item name="col_before_desc">Ielikt jaunu stabu priekšā</item>
+      <item name="col_after_desc">Ielikt jaunu stabu aiz</item>
+      <item name="delete_col_desc">Izdzēst stabu</item>
+      <item name="split_cells_desc">Sadalīt apvienotas tabules ailes</item>
+      <item name="merge_cells_desc">Apvienot tabulas ailes</item>
+      <item name="row_desc">Tabulas rindas īpašības</item>
+      <item name="cell_desc">Tabulas ailes īpašības</item>
+      <item name="props_desc">Tabulas īpašības</item>
+      <item name="paste_row_before_desc">Ielikt tabulas rindu priekšā</item>
+      <item name="paste_row_after_desc">Ielikt tabulas rindu aiz</item>
+      <item name="cut_row_desc">Izgriezt tabulas rindu</item>
+      <item name="copy_row_desc">Kopēt tabulas rindu</item>
+      <item name="del">Izdzēst tabulu</item>
+      <item name="row">Rinda</item>
+      <item name="col">Stābs</item>
+      <item name="cell">Aile</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width"></item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">General</item>
+      <item name="advanced_tab">Advanced</item>
+      <item name="general_props">General properties</item>
+      <item name="advanced_props">Advanced properties</item>
+      <item name="rowtype">Row in table part</item>
+      <item name="title">Insert/Modify table</item>
+      <item name="width">Width</item>
+      <item name="height">Height</item>
+      <item name="cols">Cols</item>
+      <item name="rows">Rows</item>
+      <item name="cellspacing">Cellspacing</item>
+      <item name="cellpadding">Cellpadding</item>
+      <item name="border">Border</item>
+      <item name="align">Alignment</item>
+      <item name="align_default">Default</item>
+      <item name="align_left">Left</item>
+      <item name="align_right">Right</item>
+      <item name="align_middle">Center</item>
+      <item name="row_title">Table row properties</item>
+      <item name="cell_title">Table cell properties</item>
+      <item name="cell_type">Cell type</item>
+      <item name="valign">Vertical alignment</item>
+      <item name="align_top">Top</item>
+      <item name="align_bottom">Bottom</item>
+      <item name="bordercolor">Border color</item>
+      <item name="bgcolor">Background color</item>
+      <item name="merge_cells_title">Merge table cells</item>
+      <item name="id">Id</item>
+      <item name="style">Style</item>
+      <item name="langdir">Language direction</item>
+      <item name="langcode">Language code</item>
+      <item name="mime">Target MIME type</item>
+      <item name="ltr">Left to right</item>
+      <item name="rtl">Right to left</item>
+      <item name="bgimage">Background image</item>
+      <item name="summary">Summary</item>
+      <item name="td">Data</item>
+      <item name="th">Header</item>
+      <item name="cell_cell">Update current cell</item>
+      <item name="cell_row">Update all cells in row</item>
+      <item name="cell_all">Update all cells in table</item>
+      <item name="row_row">Update current row</item>
+      <item name="row_odd">Update odd rows in table</item>
+      <item name="row_even">Update even rows in table</item>
+      <item name="row_all">Update all rows in table</item>
+      <item name="thead">Table Head</item>
+      <item name="tbody">Table Body</item>
+      <item name="tfoot">Table Foot</item>
+      <item name="scope">Scope</item>
+      <item name="rowgroup">Row Group</item>
+      <item name="colgroup">Col Group</item>
+      <item name="col_limit">You've exceeded the maximum number of columns of {$cols}.</item>
+      <item name="row_limit">You've exceeded the maximum number of rows of {$rows}.</item>
+      <item name="cell_limit">You've exceeded the maximum number of cells of {$cells}.</item>
+      <item name="missing_scope">Are you sure you want to continue without specifying a scope for this table header cell. Without it, it may be difficult for some users with disabilities to understand the content or data displayed of the table.</item>
+      <item name="caption">Table caption</item>
+      <item name="frame">Frame</item>
+      <item name="frame_none">none</item>
+      <item name="frame_groups">groups</item>
+      <item name="frame_rows">rows</item>
+      <item name="frame_cols">cols</item>
+      <item name="frame_all">all</item>
+      <item name="rules">Rules</item>
+      <item name="rules_void">void</item>
+      <item name="rules_above">above</item>
+      <item name="rules_below">below</item>
+      <item name="rules_hsides">hsides</item>
+      <item name="rules_lhs">lhs</item>
+      <item name="rules_rhs">rhs</item>
+      <item name="rules_vsides">vsides</item>
+      <item name="rules_box">box</item>
+      <item name="rules_border">border</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">The changes you made will be lost if you navigate away from this page.</item>
+      <!--<item name="restore_content">Restore auto-saved content.</item>-->
+      <!--<item name="warning_message">If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?.</item>-->
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">Toggle fullscreen mode</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">Insert / edit embedded media</item>
+      <item name="edit">Edit embedded media</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">Insert / edit embedded media</item>
+      <item name="general">General</item>
+      <item name="advanced">Advanced</item>
+      <item name="file">File/URL</item>
+      <item name="list">List</item>
+      <item name="size">Dimensions</item>
+      <item name="preview">Preview</item>
+      <item name="constrain_proportions">Constrain proportions</item>
+      <item name="type">Type</item>
+      <item name="id">Id</item>
+      <item name="name">Name</item>
+      <item name="class_name">Class</item>
+      <item name="vspace">V-Space</item>
+      <item name="hspace">H-Space</item>
+      <item name="play">Auto play</item>
+      <item name="loop">Loop</item>
+      <item name="menu">Show menu</item>
+      <item name="quality">Quality</item>
+      <item name="scale">Scale</item>
+      <item name="align">Align</item>
+      <item name="salign">SAlign</item>
+      <item name="wmode">WMode</item>
+      <item name="bgcolor">Background</item>
+      <item name="base">Base</item>
+      <item name="flashvars">Flashvars</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">AutoHREF</item>
+      <item name="cache">Cache</item>
+      <item name="hidden">Hidden</item>
+      <item name="controller">Controller</item>
+      <item name="kioskmode">Kiosk mode</item>
+      <item name="playeveryframe">Play every frame</item>
+      <item name="targetcache">Target cache</item>
+      <item name="correction">No correction</item>
+      <item name="enablejavascript">Enable JavaScript</item>
+      <item name="starttime">Start time</item>
+      <item name="endtime">End time</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">Choke speed</item>
+      <item name="target">Target</item>
+      <item name="volume">Volume</item>
+      <item name="autostart">Auto start</item>
+      <item name="enabled">Enabled</item>
+      <item name="fullscreen">Fullscreen</item>
+      <item name="invokeurls">Invoke URLs</item>
+      <item name="mute">Mute</item>
+      <item name="stretchtofit">Stretch to fit</item>
+      <item name="windowlessvideo">Windowless video</item>
+      <item name="balance">Balance</item>
+      <item name="baseurl">Base URL</item>
+      <item name="captioningid">Captioning id</item>
+      <item name="currentmarker">Current marker</item>
+      <item name="currentposition">Current position</item>
+      <item name="defaultframe">Default frame</item>
+      <item name="playcount">Play count</item>
+      <item name="rate">Rate</item>
+      <item name="uimode">UI Mode</item>
+      <item name="flash_options">Flash options</item>
+      <item name="qt_options">Quicktime options</item>
+      <item name="wmp_options">Windows media player options</item>
+      <item name="rmp_options">Real media player options</item>
+      <item name="shockwave_options">Shockwave options</item>
+      <item name="autogotourl">Auto goto URL</item>
+      <item name="center">Center</item>
+      <item name="imagestatus">Image status</item>
+      <item name="maintainaspect">Maintain aspect</item>
+      <item name="nojava">No java</item>
+      <item name="prefetch">Prefetch</item>
+      <item name="shuffle">Shuffle</item>
+      <item name="console">Console</item>
+      <item name="numloop">Num loops</item>
+      <item name="controls">Controls</item>
+      <item name="scriptcallbacks">Script callbacks</item>
+      <item name="swstretchstyle">Stretch style</item>
+      <item name="swstretchhalign">Stretch H-Align</item>
+      <item name="swstretchvalign">Stretch V-Align</item>
+      <item name="sound">Sound</item>
+      <item name="progress">Progress</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn">Streamed rtsp resources should be added to the QT Src field under the advanced tab.\nYou should also add a non streamed version to the Src field..</item>
+      <item name="align_top">Top</item>
+      <item name="align_right">Right</item>
+      <item name="align_bottom">Bottom</item>
+      <item name="align_left">Left</item>
+      <item name="align_center">Center</item>
+      <item name="align_top_left">Top left</item>
+      <item name="align_top_right">Top right</item>
+      <item name="align_bottom_left">Bottom left</item>
+      <item name="align_bottom_right">Bottom right</item>
+      <item name="flv_options">Flash video options</item>
+      <item name="flv_scalemode">Scale mode</item>
+      <item name="flv_buffer">Buffer</item>
+      <item name="flv_startimage">Start image</item>
+      <item name="flv_starttime">Start time</item>
+      <item name="flv_defaultvolume">Default volumne</item>
+      <item name="flv_hiddengui">Hidden GUI</item>
+      <item name="flv_autostart">Auto start</item>
+      <item name="flv_loop">Loop</item>
+      <item name="flv_showscalemodes">Show scale modes</item>
+      <item name="flv_smoothvideo">Smooth video</item>
+      <item name="flv_jscallback">JS Callback</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">Document properties</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Document properties</item>
+      <item name="meta_tab">General</item>
+      <item name="appearance_tab">Appearance</item>
+      <item name="advanced_tab">Advanced</item>
+      <item name="meta_props">Meta information</item>
+      <item name="langprops">Language and encoding</item>
+      <item name="meta_title">Title</item>
+      <item name="meta_keywords">Keywords</item>
+      <item name="meta_description">Description</item>
+      <item name="meta_robots">Robots</item>
+      <item name="doctypes">Doctype</item>
+      <item name="langcode">Language code</item>
+      <item name="langdir">Language direction</item>
+      <item name="ltr">Left to right</item>
+      <item name="rtl">Right to left</item>
+      <item name="xml_pi">XML declaration</item>
+      <item name="encoding">Character encoding</item>
+      <item name="appearance_bgprops">Background properties</item>
+      <item name="appearance_marginprops">Body margins</item>
+      <item name="appearance_linkprops">Link colors</item>
+      <item name="appearance_textprops">Text properties</item>
+      <item name="bgcolor">Background color</item>
+      <item name="bgimage">Background image</item>
+      <item name="left_margin">Left margin</item>
+      <item name="right_margin">Right margin</item>
+      <item name="top_margin">Top margin</item>
+      <item name="bottom_margin">Bottom margin</item>
+      <item name="text_color">Text color</item>
+      <item name="font_size">Font size</item>
+      <item name="font_face">Font face</item>
+      <item name="link_color">Link color</item>
+      <item name="hover_color">Hover color</item>
+      <item name="visited_color">Visited color</item>
+      <item name="active_color">Active color</item>
+      <item name="textcolor">Color</item>
+      <item name="fontsize">Font size</item>
+      <item name="fontface">Font family</item>
+      <item name="meta_index_follow">Index and follow the links</item>
+      <item name="meta_index_nofollow">Index and don't follow the links</item>
+      <item name="meta_noindex_follow">Do not index but follow the links</item>
+      <item name="meta_noindex_nofollow">Do not index and don\'t follow the links</item>
+      <item name="appearance_style">Stylesheet and style properties</item>
+      <item name="stylesheet">Stylesheet</item>
+      <item name="style">Style</item>
+      <item name="author">Author</item>
+      <item name="copyright">Copyright</item>
+      <item name="add">Add new element</item>
+      <item name="remove">Remove selected element</item>
+      <item name="moveup">Move selected element up</item>
+      <item name="movedown">Move selected element down</item>
+      <item name="head_elements">Head elements</item>
+      <item name="info">Information</item>
+      <item name="add_title">Title element</item>
+      <item name="add_meta">Meta element</item>
+      <item name="add_script">Script element</item>
+      <item name="add_style">Style element</item>
+      <item name="add_link">Link element</item>
+      <item name="add_base">Base element</item>
+      <item name="add_comment">Comment node</item>
+      <item name="title_element">Title element</item>
+      <item name="script_element">Script element</item>
+      <item name="style_element">Style element</item>
+      <item name="base_element">Base element</item>
+      <item name="link_element">Link element</item>
+      <item name="meta_element">Meta element</item>
+      <item name="comment_element">Comment</item>
+      <item name="src">Src</item>
+      <item name="language">Language</item>
+      <item name="href">Href</item>
+      <item name="target">Target</item>
+      <item name="type">Type</item>
+      <item name="charset">Charset</item>
+      <item name="defer">Defer</item>
+      <item name="media">Media</item>
+      <item name="properties">Properties</item>
+      <item name="name">Name</item>
+      <item name="value">Value</item>
+      <item name="content">Content</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href lang</item>
+      <item name="general_props">General</item>
+      <item name="advanced_props">Advanced</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Insert predefined template content</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">Templates</item>
+      <item name="label">Template</item>
+      <item name="desc_label">Description</item>
+      <item name="desc">Insert predefined template content</item>
+      <item name="select">Select a template</item>
+      <item name="preview">Preview</item>
+      <item name="warning">Warning: Updating a template with a different one may cause data loss.</item>
+      <item name="mdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="cdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="months_long">January,February,March,April,May,June,July,August,September,October,November,December</item>
+      <item name="months_short">Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec</item>
+      <item name="day_long">Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday</item>
+      <item name="day_short">Sun,Mon,Tue,Wed,Thu,Fri,Sat,Sun</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Visual control characters on/off.</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">Toggle spellchecker</item>
+      <item name="menu">Spellchecker settings</item>
+      <item name="ignore_word">Ignore word</item>
+      <item name="ignore_words">Ignore all</item>
+      <item name="langs">Languages</item>
+      <item name="wait">Please wait...</item>
+      <item name="sug">Suggestions</item>
+      <item name="no_sug">No suggestions</item>
+      <item name="no_mpell">No misspellings found.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">Insert page break.</item>
+    </group>
+    <group target="advlist">
+      <!--<item name="types">Types</item>-->
+      <!--<item name="def">Default</item>-->
+      <!--<item name="lower_alpha">Lower alpha</item>-->
+      <!--<item name="lower_greek">Lower greek</item>-->
+      <!--<item name="lower_roman">Lower roman</item>-->
+      <!--<item name="upper_alpha">Upper alpha</item>-->
+      <!--<item name="upper_roman">Upper roman</item>-->
+      <!--<item name="circle">Circle</item>-->
+      <!--<item name="disc">Disc</item>-->
+      <!--<item name="square">Square</item>-->
+    </group>
+  </language>
+</language-pack>

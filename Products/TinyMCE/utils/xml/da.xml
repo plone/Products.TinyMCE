@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>Thomas Bertram Povlsen  - Ronny Buelund (update - January 2008) - Svend Grønlund, nov. 2008</author>
+    <version major="5" minor="0" releasedate="2010-03-20" />
+    <description>This is the Danish language pack for TinyMCE.</description>
+  </header>
+  <language code="da" title="Danish" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">Vil du bruge den avancerede tekstredigering?</item>
+      <item name="apply">Anvend</item>
+      <item name="insert">Indsæt</item>
+      <item name="update">Opdater</item>
+      <item name="cancel">Annuller</item>
+      <item name="close">Luk</item>
+      <item name="browse">Gennemse</item>
+      <item name="class_name">Klasse</item>
+      <item name="not_set">-- Ikke sat --</item>
+      <item name="clipboard_msg">Kopier/Klip/indsæt er ikke muligt i Mozilla eller Firefox.\nVil du have mere information om dette emne?</item>
+      <item name="clipboard_no_support">På nuværende tidspunkt ikke supporteret af din browser. Anvend i stedet genvejene på tastaturet.</item>
+      <item name="popup_blocked">Undskyld, men vi har noteret os, at din popup-blocker har forhindret et vindue, der giver programmet funktionalitet, at åbne op. Hvis du vil have  den fulde funktionalitet, må du slå popup-blockeren fra for dette websted.</item>
+      <item name="invalid_data">Fejl: Forkerte værdier indtastet i felter markeret med rød.</item>
+      <item name="more_colors">Flere farver</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">Fed (Ctrl+B)</item>
+      <item name="italic_desc">Kursiv (Ctrl+I)</item>
+      <item name="underline_desc">Understreget (Ctrl+U)</item>
+      <item name="striketrough_desc">Gennemstreget</item>
+      <item name="bullist_desc">Unummereret punktopstilling</item>
+      <item name="numlist_desc">Nummereret punktopstilling</item>
+      <item name="undo_desc">Fortryd (Ctrl+Z)</item>
+      <item name="redo_desc">Gendan (Ctrl+Y)</item>
+      <item name="cleanup_desc">Ryd op i uordentlig kode</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">Typografier</item>
+      <item name="font_size">Skriftstørrelse</item>
+      <item name="fontdefault">Skrifttype</item>
+      <item name="block">Format</item>
+      <item name="paragraph">Afsnit</item>
+      <item name="div">Div</item>
+      <item name="address">Adresse</item>
+      <item name="pre">Præformatteret</item>
+      <item name="h1">Overskrift 1</item>
+      <item name="h2">Overskrift 2</item>
+      <item name="h3">Overskrift 3</item>
+      <item name="h4">Overskrift 4</item>
+      <item name="h5">Overskrift 5</item>
+      <item name="h6">Overskrift 6</item>
+      <item name="blockquote">Blokcitat</item>
+      <item name="code">Kode</item>
+      <item name="samp">Kodeeksempel</item>
+      <item name="dt">Definitionsterm </item>
+      <item name="dd">Definitionsbeskrivelse</item>
+      <!-- Buttons -->
+      <item name="bold_desc">Fed (Ctrl+B)</item>
+      <item name="italic_desc">Kursiv (Ctrl+I)</item>
+      <item name="underline_desc">Understreget (Ctrl+U)</item>
+      <item name="striketrough_desc">Gennemstreget</item>
+      <item name="justifyleft_desc">Venstrejusteret</item>
+      <item name="justifycenter_desc">Centreret</item>
+      <item name="justifyright_desc">Højrejusteret</item>
+      <item name="justifyfull_desc">Lige marginer</item>
+      <item name="bullist_desc">Unummereret punktopstilling</item>
+      <item name="numlist_desc">Nummereret punktopstilling</item>
+      <item name="outdent_desc">Formindsk indrykning</item>
+      <item name="indent_desc">Øg indrykning</item>
+      <item name="undo_desc">Fortryd (Ctrl+Z)</item>
+      <item name="redo_desc">Gendan (Ctrl+Y)</item>
+      <item name="link_desc">Indsæt/rediger link</item>
+      <item name="unlink_desc">Fjern link</item>
+      <item name="image_desc">Indsæt/rediger billede</item>
+      <item name="cleanup_desc">Ryd op i uordentlig kode</item>
+      <item name="code_desc">Rediger HTML-kilde</item>
+      <item name="sub_desc">Sænket skrift</item>
+      <item name="sup_desc">Hævet skrift</item>
+      <item name="hr_desc">Indsæt horisontal linie</item>
+      <item name="removeformat_desc">Fjern formatering</item>
+      <item name="custom1_desc">Din egen beskrivelse her</item>
+      <item name="forecolor_desc">Vælg tekstfarve</item>
+      <item name="backcolor_desc">Vælg baggrundsfarve</item>
+      <item name="charmap_desc">Indsæt specialtegn</item>
+      <item name="visualaid_desc">Slå hjælp/synlige elementer til/fra</item>
+      <item name="anchor_desc">Indsæt/rediger anker</item>
+      <item name="cut_desc">Klip</item>
+      <item name="copy_desc">Kopier</item>
+      <item name="paste_desc">Indsæt</item>
+      <item name="image_props_desc">Billedegenskaber</item>
+      <item name="newdocument_desc">Nyt dokument</item>
+      <item name="help_desc">Hjælp</item>
+      <item name="blockquote_desc">Blokcitat</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">Kopier/Klip/indsæt er ikke muligt i Mozilla og Firefox.\nVil du have mere information om dette emne?</item>
+      <item name="path">Sti</item>
+      <item name="newdocument">Er du sikker på du vil slette alt indhold?</item>
+      <item name="toolbar_focus">Hop til værktøjsknapper - Alt+Q, Skift til redigering - Alt-Z, Skift til element sti - Alt-X</item>
+      <item name="more_colors">Flere farver</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">Om TinyMCE</item>
+      <item name="about_general">Om</item>
+      <item name="about_help">Hjælp</item>
+      <item name="about_license">Licens</item>
+      <item name="about_plugins">Udvidelser</item>
+      <item name="about_plugin">Udvidelse</item>
+      <item name="about_author">Forfatter</item>
+      <item name="about_version">Version</item>
+      <item name="about_loaded">Indlæste udvidelser</item>
+      <!-- Anchor -->
+      <item name="anchor_title">Indsæt/rediger anker</item>
+      <item name="anchor_name">Navn på anker</item>
+      <!-- Source -->
+      <item name="code_title">HTML kildekode-redigering</item>
+      <item name="code_wordwrap">Tekstombrydning</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">Vælg en farve</item>
+      <item name="colorpicker_picker_tab">Vælger</item>
+      <item name="colorpicker_picker_title">Farvevælger</item>
+      <item name="colorpicker_palette_tab">Palette</item>
+      <item name="colorpicker_palette_title">Palette-farver</item>
+      <item name="colorpicker_named_tab">Navngivet</item>
+      <item name="colorpicker_named_title">Navngivet farve</item>
+      <item name="colorpicker_color">Farve:</item>
+      <item name="colorpicker_name">Navn:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">Vælg specialtegn</item>
+      <!-- Image -->
+      <item name="image_title">Indsæt/rediger billede</item>
+      <item name="image_src">Billede URL</item>
+      <item name="image_alt">Billedbeskrivelse</item>
+      <item name="image_list">Liste over billeder</item>
+      <item name="image_border">Kant</item>
+      <item name="image_dimensions">Dimensioner</item>
+      <item name="image_vspace">Vertikal afstand</item>
+      <item name="image_hspace">Horisontal afstand</item>
+      <item name="image_align">Justering</item>
+      <item name="image_align_baseline">Grundlinie</item>
+      <item name="image_align_top">Toppen</item>
+      <item name="image_align_middle">Centreret</item>
+      <item name="image_align_bottom">Bunden</item>
+      <item name="image_align_texttop">Tekst toppen</item>
+      <item name="image_align_textbottom">Tekst bunden</item>
+      <item name="image_align_left">Venstre</item>
+      <item name="image_align_right">Højre</item>
+      <!-- Link -->
+      <item name="link_title">Indsæt/rediger link</item>
+      <item name="link_url">Link URL</item>
+      <item name="link_target">Target</item>
+      <item name="link_target_same">Åben link i samme vindue</item>
+      <item name="link_target_blank">Åben link i nyt vindue</item>
+      <item name="link_titlefield">Titel</item>
+      <item name="link_is_email">Den URL, der er indtastet, ser ud til at være en emailadresse. Vil du have tilføjet det påkrævede mailto: foran?</item>
+      <item name="link_is_external">Den URL, der er indtastet, ser ud til at være et eksternt link. Vil du have tilføjet det påkrævede http:// foran?</item>
+      <item name="link_list">Liste over links</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">Justering</item>
+      <item name="left">Venstre</item>
+      <item name="center">Centreret</item>
+      <item name="right">Højre</item>
+      <item name="full">Lige marginer</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%Y-%m-%d</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">Indsæt dato</item>
+      <item name="inserttime_desc">Indsæt klokkeslet</item>
+      <item name="months_long">Januar,Februar,Marts,April,Maj,Juni,Juli,August,September,Oktober,November,December</item>
+      <item name="months_short">Jan,Feb,Mar,Apr,Maj,Jun,Jul,Aug,Sep,Okt,Nov,Dec</item>
+      <item name="day_long">Søndag,Mandag,Tirsdag,Onsdag,Torsdag,Fredag,Lørdag,Søndag</item>
+      <item name="day_short">Søn,Man,Tir,Ons,Tors,Fre,Lør,Søn</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">Udskriv</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">Vis udskrift</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">Retning venstre mod højre</item>
+      <item name="rtl_desc">Retning højre mod venstre</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">Indsæt nyt lag</item>
+      <item name="forward_desc">Flyt fremad</item>
+      <item name="backward_desc">Flyt bagud</item>
+      <item name="absolute_desc">Slå absolut positionering til/fra</item>
+      <item name="content">Nyt lag...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">Gem</item>
+      <item name="cancel_desc">Annuller alle ændringer</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">Indsæt et blanktegn</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">Udfør stavekontrol</item>
+      <item name="download">ieSpell blev ikke fundet. Vil du installere det nu?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">Horisontal linie</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">Bredde</item>
+      <item name="size">Højde</item>
+      <item name="noshade">Ingen skygge</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">Humørikoner</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">Indsæt humørikon</item>
+      <item name="desc">Humørikoner</item>
+      <item name="cool">Cool</item>
+      <item name="cry">Græde</item>
+      <item name="embarassed">Flov</item>
+      <item name="foot_in_mouth">Fod i munden</item>
+      <item name="frown">Forskrækket</item>
+      <item name="innocent">Uskyldig</item>
+      <item name="kiss">Kys</item>
+      <item name="laughing">Grine</item>
+      <item name="money_mouth">Pengemund</item>
+      <item name="sealed">Lukket</item>
+      <item name="smile">Smil</item>
+      <item name="surprised">Overrasket</item>
+      <item name="tongue_out">Tunge ud</item>
+      <item name="undecided">Ubeslutsom</item>
+      <item name="wink">Vink</item>
+      <item name="yell">Råbe</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">Søg</item>
+      <item name="replace_desc">Søg/erstat</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">Søg igen</item>
+      <item name="notfound">Søgningen gav intet resultat.</item>
+      <item name="search_title">Søg</item>
+      <item name="replace_title">Søg / erstat</item>
+      <item name="allreplaced">Alle forekomster af søgestrengen er erstattet.</item>
+      <item name="findwhat">Søg efter</item>
+      <item name="replacewith">Erstat med</item>
+      <item name="direction">Retning</item>
+      <item name="up">Op</item>
+      <item name="down">Ned</item>
+      <item name="mcase">Forskel på store og små bogstaver</item>
+      <item name="findnext">Find næste</item>
+      <item name="replace">Erstat</item>
+      <item name="replaceall">Erstat alle</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">Indsæt/rediger billede</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">Generelt</item>
+      <item name="tab_appearance">Udseende</item>
+      <item name="tab_advanced">Avanceret</item>
+      <item name="general">Generelt</item>
+      <item name="title">Titel</item>
+      <item name="preview">Vis</item>
+      <item name="constrain_proportions">Bibehold proportioner</item>
+      <item name="langdir">Sprogretning</item>
+      <item name="langcode">Sprogkode</item>
+      <item name="long_desc">Lang beskrivelseslink</item>
+      <item name="style">Stil</item>
+      <item name="classes">Klasser</item>
+      <item name="ltr">Venstre til højre</item>
+      <item name="rtl">Højre til venstre</item>
+      <item name="id">Id</item>
+      <item name="map">Billede map</item>
+      <item name="swap_image">Byt billede</item>
+      <item name="alt_image">Alternativt billede</item>
+      <item name="mouseover">for mus-over</item>
+      <item name="mouseout">for mus-ud</item>
+      <item name="misc">Diverse</item>
+      <item name="example_img">Forhåndsvisning af billede</item>
+      <item name="missing_alt">Er du sikker på, at du vil fortsætte uden at inkludere en billedebeskrivelse? Uden denne er billedet måske ikke tilgængeligt for nogle brugere med handicaps, eller for dem der bruger en tekstbrowser, eller som browser internettet med billeder slået fra.</item>
+      <item name="dialog_title">Indsæt/rediger billede</item>
+      <item name="src">Billed-URL</item>
+      <item name="alt">Billedbeskrivelse</item>
+      <item name="list">Billedliste</item>
+      <item name="border">Kant</item>
+      <item name="dimensions">Dimentioner</item>
+      <item name="vspace">Vertikal afstand</item>
+      <item name="hspace">Horisontal afstand</item>
+      <item name="align">Justering</item>
+      <item name="align_baseline">Grundlinje</item>
+      <item name="align_top">Top</item>
+      <item name="align_middle">Midte</item>
+      <item name="align_bottom">Bund</item>
+      <item name="align_texttop">Teksttop</item>
+      <item name="align_textbottom">Tekstbund</item>
+      <item name="align_left">Venstre</item>
+      <item name="align_right">Højre</item>
+      <item name="image_list">Billedliste</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">Indsæt/rediger link</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">40</item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">Indsæt/rediger link</item>
+      <item name="url">Link URL</item>
+      <item name="target">Mål</item>
+      <item name="titlefield">Titel</item>
+      <item name="is_email">Den URL, der er indtastet, ser ud til at være en emailadresse. Vil du have tilføjet det påkrævede mailto: foran?</item>
+      <item name="is_external">Den URL, der er indtastet, ser ud til at være et eksternt link. Vil du have tilføjet det påkrævede http:// foran?</item>
+      <item name="list">Liste over links</item>
+      <item name="general_tab">Generelt</item>
+      <item name="popup_tab">Popup</item>
+      <item name="events_tab">Hændelser</item>
+      <item name="advanced_tab">Advanceret</item>
+      <item name="general_props">Generelle egenskaber</item>
+      <item name="popup_props">Popup egenskaber</item>
+      <item name="event_props">Hændelser</item>
+      <item name="advanced_props">Avancerede egenskaber</item>
+      <item name="popup_opts">Indstillinger</item>
+      <item name="anchor_names">Ankre</item>
+      <item name="target_same">Åben i dette vindue / ramme</item>
+      <item name="target_parent">Åben i overliggende vindue / ramme</item>
+      <item name="target_top">Åben i øverste vindue / ramme (erstatter alle rammer)</item>
+      <item name="target_blank">Åben i nyt vindue</item>
+      <item name="popup">Javascript popup</item>
+      <item name="popup_url">Popup URL</item>
+      <item name="popup_name">Vinduesnavn</item>
+      <item name="popup_return">Indsæt 'return false'</item>
+      <item name="popup_scrollbars">Vis rullepanel</item>
+      <item name="popup_statusbar">Vis statuslinje</item>
+      <item name="popup_toolbar">Vis værktøjslinjer</item>
+      <item name="popup_menubar">Vis menulinje</item>
+      <item name="popup_location">Vis adresselinje</item>
+      <item name="popup_resizable">Lad det være muligt at ændre størrelsen på vinduet</item>
+      <item name="popup_dependent">Afhængig (Kun Mozilla/Firefox)</item>
+      <item name="popup_size">Størrelse</item>
+      <item name="popup_position">Position (X/Y)</item>
+      <item name="id">Id</item>
+      <item name="style">Stil</item>
+      <item name="classes">Klasser</item>
+      <item name="target_name">Destinationsnavn</item>
+      <item name="langdir">Sprogretning</item>
+      <item name="target_langcode">Destinationssprog</item>
+      <item name="langcode">Sprogkode</item>
+      <item name="encoding">Destinationstegnsæt</item>
+      <item name="mime">Destinations-MIME-type</item>
+      <item name="rel">Relativ side til destination</item>
+      <item name="rev">Relativ destination til side</item>
+      <item name="tabindex">Tabindex</item>
+      <item name="accesskey">Genvejstast</item>
+      <item name="ltr">Venstre mod højre</item>
+      <item name="rtl">Højre mod venstre</item>
+      <item name="link_list">Liste over links</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">Citat</item>
+      <item name="abbr_desc">Forkortelse</item>
+      <item name="acronym_desc">Akronym</item>
+      <item name="del_desc">Sletning</item>
+      <item name="ins_desc">Indsættelse</item>
+      <item name="attribs_desc">Indsæt/rediger attributter</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">Titel</item>
+      <item name="attribute_label_id">ID</item>
+      <item name="attribute_label_class">Klasse</item>
+      <item name="attribute_label_style">Stil</item>
+      <item name="attribute_label_cite">Citat</item>
+      <item name="attribute_label_datetime">Dato/tid</item>
+      <item name="attribute_label_langdir">Tekstretning</item>
+      <item name="attribute_option_ltr">Venstre mod højre</item>
+      <item name="attribute_option_rtl">Højre mod venstre</item>
+      <item name="attribute_label_langcode">Sprog</item>
+      <item name="attribute_label_tabindex">Tab-indeks</item>
+      <item name="attribute_label_accesskey">Adgangsnøgle</item>
+      <item name="attribute_events_tab">Hændelser</item>
+      <item name="attribute_attrib_tab">Attributter</item>
+      <item name="general_tab">Generelt</item>
+      <item name="attrib_tab">Attributter</item>
+      <item name="events_tab">Hændelser</item>
+      <item name="fieldset_general_tab">Genererelle indstillinger</item>
+      <item name="fieldset_attrib_tab">Element-attributter</item>
+      <item name="fieldset_events_tab">Element-hændelser</item>
+      <item name="title_ins_element">Indsætbart element</item>
+      <item name="title_del_element">Sletteklart element</item>
+      <item name="title_acronym_element">Akronym element</item>
+      <item name="title_abbr_element">Forkortet element</item>
+      <item name="title_cite_element">Citationselement</item>
+      <item name="remove">Slet</item>
+      <item name="insert_date">Indsæt nuværende dato/tid</item>
+      <item name="option_ltr">Venstre mod højre</item>
+      <item name="option_rtl">Højre mod venstre</item>
+      <item name="attribs_title">Indsæt/rediger attributter</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">Rediger CSS stil</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">Rediger CSS stil</item>
+      <item name="apply">Anvend</item>
+      <item name="text_tab">Tekst</item>
+      <item name="background_tab">Baggrund</item>
+      <item name="block_tab">Blok</item>
+      <item name="box_tab">Boks</item>
+      <item name="border_tab">Kant</item>
+      <item name="list_tab">Liste</item>
+      <item name="positioning_tab">Positionering</item>
+      <item name="text_props">Tekst</item>
+      <item name="text_font">Skrifttype</item>
+      <item name="text_size">Størrelse</item>
+      <item name="text_weight">Vægt</item>
+      <item name="text_style">Stil</item>
+      <item name="text_variant">Variant</item>
+      <item name="text_lineheight">Liniehøjde</item>
+      <item name="text_case">Vesaltilstand</item>
+      <item name="text_color">Farve</item>
+      <item name="text_decoration">Dekoration</item>
+      <item name="text_overline">overstreget</item>
+      <item name="text_underline">understreget</item>
+      <item name="text_striketrough">gennemstreget</item>
+      <item name="text_blink">blink</item>
+      <item name="text_none">ingen</item>
+      <item name="background_color">Baggrundsfarve</item>
+      <item name="background_image">Baggrundsbillede</item>
+      <item name="background_repeat">Gentag</item>
+      <item name="background_attachment">Vedhæftede fil</item>
+      <item name="background_hpos">Horisontal position</item>
+      <item name="background_vpos">Vertikal position</item>
+      <item name="block_wordspacing">Afstand mellem ord</item>
+      <item name="block_letterspacing">Afstand mellem bogstaver</item>
+      <item name="block_vertical_alignment">Vertikal justering</item>
+      <item name="block_text_align">Tekstjustering</item>
+      <item name="block_text_indent">Tekstindrykning</item>
+      <item name="block_whitespace">Mellemrum</item>
+      <item name="block_display">Vis</item>
+      <item name="box_width">Bredde</item>
+      <item name="box_height">Højde</item>
+      <item name="box_float">Flydende</item>
+      <item name="box_clear">Ryd</item>
+      <item name="padding">Afstand til indhold</item>
+      <item name="same">Ens for alle</item>
+      <item name="top">Top</item>
+      <item name="right">Højre</item>
+      <item name="bottom">Bund</item>
+      <item name="left">Venstre</item>
+      <item name="margin">Margin</item>
+      <item name="style">Style</item>
+      <item name="width">Bredde</item>
+      <item name="height">Højde</item>
+      <item name="color">Farve</item>
+      <item name="list_type">Type</item>
+      <item name="bullet_image">Punktopstillings-billede</item>
+      <item name="position">Position</item>
+      <item name="positioning_type">Type</item>
+      <item name="visibility">Synlighed</item>
+      <item name="zindex">Z-index</item>
+      <item name="overflow">Overløb</item>
+      <item name="placement">Placering</item>
+      <item name="clip">Klip</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">Indsæt ikke-formatteret tekst</item>
+      <item name="paste_word_desc">Indsæt fra  Word</item>
+      <item name="selectall_desc">Vælg alle</item>
+      <!--<item name="plaintext_mode_sticky">Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode.</item>-->
+      <!--<item name="plaintext_mode">Paste is now in plain text mode. Click again to toggle back to regular paste mode.</item>-->
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">Anvend CTRL+V på tastaturet for at indsætte teksten.</item>
+      <item name="text_linebreaks">Bevar linieskift</item>
+      <item name="word_title">Anvend CTRL+V på tastaturet for at indsætte teksten.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">Indsæt tabel</item>
+      <item name="row_before_desc">Indsæt række før</item>
+      <item name="row_after_desc">Indsæt række efter</item>
+      <item name="delete_row_desc">Slet række</item>
+      <item name="col_before_desc">Indsæt kolonne før</item>
+      <item name="col_after_desc">Indsæt kolonne efter</item>
+      <item name="delete_col_desc">Slet kolonne</item>
+      <item name="split_cells_desc">Opdel flettede celler</item>
+      <item name="merge_cells_desc">Flet celler</item>
+      <item name="row_desc">Rækkeegenskaber</item>
+      <item name="cell_desc">Celleegenskaber</item>
+      <item name="props_desc">Tabelegenskaber</item>
+      <item name="paste_row_before_desc">Indsæt række før</item>
+      <item name="paste_row_after_desc">Indsæt række efter</item>
+      <item name="cut_row_desc">Klip række</item>
+      <item name="copy_row_desc">Kopier række</item>
+      <item name="del">Slet tabel</item>
+      <item name="row">Række</item>
+      <item name="col">Kolonne</item>
+      <item name="cell">Celle</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width"></item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">Generelt</item>
+      <item name="advanced_tab">Avanceret</item>
+      <item name="general_props">Generelle egenskaber</item>
+      <item name="advanced_props">Avancerede egenskaber</item>
+      <item name="rowtype">Row in table part</item>
+      <item name="title">Indsæt/rediger tabel</item>
+      <item name="width">Bredde</item>
+      <item name="height">Højde</item>
+      <item name="cols">Kolonner</item>
+      <item name="rows">Rækker</item>
+      <item name="cellspacing">Afstand mellem celler</item>
+      <item name="cellpadding">Afstand til celleindhold</item>
+      <item name="border">Kant</item>
+      <item name="align">Justering</item>
+      <item name="align_default">Standard</item>
+      <item name="align_left">Venstre</item>
+      <item name="align_right">Højre</item>
+      <item name="align_middle">Centreret</item>
+      <item name="row_title">Rækkeegenskaber</item>
+      <item name="cell_title">Celleegenskaber</item>
+      <item name="cell_type">Celletype</item>
+      <item name="valign">Vertikal justering</item>
+      <item name="align_top">Top</item>
+      <item name="align_bottom">Bund</item>
+      <item name="bordercolor">Kantfarve</item>
+      <item name="bgcolor">Baggrundsfarve</item>
+      <item name="merge_cells_title">Flet celler</item>
+      <item name="id">Id</item>
+      <item name="style">Style</item>
+      <item name="langdir">Sprogretning</item>
+      <item name="langcode">Sprogkode</item>
+      <item name="mime">Destinations-MIME-type</item>
+      <item name="ltr">Venstre mod højre</item>
+      <item name="rtl">Højre mod venstre</item>
+      <item name="bgimage">Baggrundsbillede</item>
+      <item name="summary">Beskrivelse</item>
+      <item name="td">Data</item>
+      <item name="th">Hoved</item>
+      <item name="cell_cell">Opdater aktuelle celle</item>
+      <item name="cell_row">Opdater alle celler i rækken</item>
+      <item name="cell_all">Opdater alle celler i tabellen</item>
+      <item name="row_row">Opdater aktuelle celle</item>
+      <item name="row_odd">Opdater ulige rækker</item>
+      <item name="row_even">Opdater lige rækker</item>
+      <item name="row_all">Opdater alle rækker</item>
+      <item name="thead">Tabelhoved</item>
+      <item name="tbody">Tabelkrop</item>
+      <item name="tfoot">Tabelfod</item>
+      <item name="scope">Forklaring</item>
+      <item name="rowgroup">Rækkegruppe</item>
+      <item name="colgroup">Kolonnegruppe</item>
+      <item name="col_limit">Du har overskredet antallet af tilladte kolonner på {$cols}.</item>
+      <item name="row_limit">Du har overskredet antallet af tilladte rækker på {$rows}.</item>
+      <item name="cell_limit">Du har overskredet antallet af tilladte celler på {$cells}.</item>
+      <item name="missing_scope">Er du sikker på, du vil fortsætte uden at angive forklaring for denne overskriftscelle? Uden forklaring vil være svært for f.ek.s blinde at læse og forstå indholdet i tabellen.</item>
+      <item name="caption">Tabeloverskrift</item>
+      <item name="frame">Ramme</item>
+      <item name="frame_none">ingen</item>
+      <item name="frame_groups">grupper</item>
+      <item name="frame_rows">rækker</item>
+      <item name="frame_cols">kolonner</item>
+      <item name="frame_all">alle</item>
+      <item name="rules">Regler</item>
+      <item name="rules_void">void</item>
+      <item name="rules_above">over</item>
+      <item name="rules_below">under</item>
+      <item name="rules_hsides">hsides</item>
+      <item name="rules_lhs">lhs</item>
+      <item name="rules_rhs">rhs</item>
+      <item name="rules_vsides">vsides</item>
+      <item name="rules_box">boks</item>
+      <item name="rules_border">kant</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">Har du foretaget nogle ændringer, vil de gå tabt, hvis du navigerer væk fra denne side.</item>
+      <!--<item name="restore_content">Restore auto-saved content.</item>-->
+      <!--<item name="warning_message">If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?.</item>-->
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">Vis/skjul fuldskærmstilstand</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">Indsæt/rediger indlejret mediefil</item>
+      <item name="edit">Rediger indlejret mediefil</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">Indsæt/rediger indlejret mediefil</item>
+      <item name="general">Generelt</item>
+      <item name="advanced">Advanceret</item>
+      <item name="file">Fil/URL</item>
+      <item name="list">Liste</item>
+      <item name="size">Dimensioner</item>
+      <item name="preview">Vis udskrift</item>
+      <item name="constrain_proportions">Bevar proportioner</item>
+      <item name="type">Type</item>
+      <item name="id">Id</item>
+      <item name="name">Navn</item>
+      <item name="class_name">Klasse</item>
+      <item name="vspace">V-afstand</item>
+      <item name="hspace">H-afstand</item>
+      <item name="play">Start</item>
+      <item name="loop">Gentag</item>
+      <item name="menu">Vis menu</item>
+      <item name="quality">Kvalitet</item>
+      <item name="scale">Skaler</item>
+      <item name="align">Juster</item>
+      <item name="salign">SAlign</item>
+      <item name="wmode">WMode</item>
+      <item name="bgcolor">Baggrund</item>
+      <item name="base">Base</item>
+      <item name="flashvars">Flashvars</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">AutoHREF</item>
+      <item name="cache">Cache</item>
+      <item name="hidden">Skjul</item>
+      <item name="controller">Controller</item>
+      <item name="kioskmode">Kiosk-tilstand</item>
+      <item name="playeveryframe">Afsplil alle rammer</item>
+      <item name="targetcache">Mål-cache</item>
+      <item name="correction">Ingen korrektion</item>
+      <item name="enablejavascript">Tillad JavaScript</item>
+      <item name="starttime">Starttidspunkt</item>
+      <item name="endtime">Sluttidspunkt</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">Choke-hastighed</item>
+      <item name="target">Mål</item>
+      <item name="volume">Lydstyrke</item>
+      <item name="autostart">Afspil automatisk</item>
+      <item name="enabled">Valgt</item>
+      <item name="fullscreen">Fulsskærm</item>
+      <item name="invokeurls">Aktiver URL'er</item>
+      <item name="mute">Lydløs</item>
+      <item name="stretchtofit">Stræk for at tilpasse</item>
+      <item name="windowlessvideo">Vinduesløs video</item>
+      <item name="balance">Balance</item>
+      <item name="baseurl">Base URL</item>
+      <item name="captioningid">Captioning id</item>
+      <item name="currentmarker">Aktuel markør</item>
+      <item name="currentposition">Aktuel position</item>
+      <item name="defaultframe">Standard ramme</item>
+      <item name="playcount">Afspil indhold</item>
+      <item name="rate">Vurder</item>
+      <item name="uimode">UI-tilstand</item>
+      <item name="flash_options">Flash egenskaber</item>
+      <item name="qt_options">Quicktime egenskaber</item>
+      <item name="wmp_options">Windows media player egenskaber</item>
+      <item name="rmp_options">Real media player egenskaber</item>
+      <item name="shockwave_options">Shockwave options</item>
+      <item name="autogotourl">Auto gå til URL</item>
+      <item name="center">Center</item>
+      <item name="imagestatus">Billedstatus</item>
+      <item name="maintainaspect">Bevar aspekt</item>
+      <item name="nojava">Ingen java</item>
+      <item name="prefetch">Forhåndshent</item>
+      <item name="shuffle">Bland</item>
+      <item name="console">Konsol</item>
+      <item name="numloop">Antal loops</item>
+      <item name="controls">Kontroller</item>
+      <item name="scriptcallbacks">Script callbacks</item>
+      <item name="swstretchstyle">Stræk stil</item>
+      <item name="swstretchhalign">Stræk H-justering</item>
+      <item name="swstretchvalign">Stræk V-justering</item>
+      <item name="sound">Lyd</item>
+      <item name="progress">Fremskridt</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn">Streamede rtsp resourcer skal tilføjes til QT Src feltet under tabben avanceret.\nDu skal også tilføje en ikke streamet version til Src feltet..</item>
+      <item name="align_top">Top</item>
+      <item name="align_right">Højret</item>
+      <item name="align_bottom">Bund</item>
+      <item name="align_left">Venstre</item>
+      <item name="align_center">Centreret</item>
+      <item name="align_top_left">Øverste venstre hjørne</item>
+      <item name="align_top_right">Øverste højre hjørne</item>
+      <item name="align_bottom_left">Nederste venstre hjørne</item>
+      <item name="align_bottom_right">Øverste højre hjørne</item>
+      <item name="flv_options">Flash video egenskaber</item>
+      <item name="flv_scalemode">Skaleringstilstand</item>
+      <item name="flv_buffer">Buffer</item>
+      <item name="flv_startimage">Startbillede</item>
+      <item name="flv_starttime">Starttidspunkt</item>
+      <item name="flv_defaultvolume">Standard lydstyrke</item>
+      <item name="flv_hiddengui">Skjul skærmbillede</item>
+      <item name="flv_autostart">Autostart</item>
+      <item name="flv_loop">Gentag</item>
+      <item name="flv_showscalemodes">Vis skaleringstilstande</item>
+      <item name="flv_smoothvideo">Smooth video</item>
+      <item name="flv_jscallback">JS Callback</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">Dokumentegenskaber</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Dokumentegenskaber</item>
+      <item name="meta_tab">Generelt</item>
+      <item name="appearance_tab">Udseende</item>
+      <item name="advanced_tab">Advanceret</item>
+      <item name="meta_props">Meta-information</item>
+      <item name="langprops">Sprog og kodning</item>
+      <item name="meta_title">Titel</item>
+      <item name="meta_keywords">Nøgleord</item>
+      <item name="meta_description">Beskrivelse</item>
+      <item name="meta_robots">Robots</item>
+      <item name="doctypes">Doctype</item>
+      <item name="langcode">Sprogkode</item>
+      <item name="langdir">Sprogretning</item>
+      <item name="ltr">Venstre mod højre</item>
+      <item name="rtl">Højre md venstre</item>
+      <item name="xml_pi">XML declaration</item>
+      <item name="encoding">Tegnsæt</item>
+      <item name="appearance_bgprops">Baggrundsegenskaber</item>
+      <item name="appearance_marginprops">Body margins</item>
+      <item name="appearance_linkprops">Link farver</item>
+      <item name="appearance_textprops">Tekstegenskaber</item>
+      <item name="bgcolor">Baggrundsfarve</item>
+      <item name="bgimage">Baggrundsbillede</item>
+      <item name="left_margin">Venstre margin</item>
+      <item name="right_margin">Højre margin</item>
+      <item name="top_margin">Topmargin</item>
+      <item name="bottom_margin">Bundmargin</item>
+      <item name="text_color">Tekstfarve</item>
+      <item name="font_size">Skriftstørrelse</item>
+      <item name="font_face">Skrifttype</item>
+      <item name="link_color">Linkfarve</item>
+      <item name="hover_color">Farve ved aktivering</item>
+      <item name="visited_color">Farve efter museklik</item>
+      <item name="active_color">Farve ved museklik</item>
+      <item name="textcolor">Farve</item>
+      <item name="fontsize">Skriftstørrelse</item>
+      <item name="fontface">Skrifttype</item>
+      <item name="meta_index_follow">Indeks og følg links</item>
+      <item name="meta_index_nofollow">Indeks og følg ikke links</item>
+      <item name="meta_noindex_follow">Ingen indeks, men følg links</item>
+      <item name="meta_noindex_nofollow">Ingen indeks og følg ikke links</item>
+      <item name="appearance_style">Stylesheet og style-egenskaber</item>
+      <item name="stylesheet">Stylesheet</item>
+      <item name="style">Style</item>
+      <item name="author">Forfatter</item>
+      <item name="copyright">Copyright</item>
+      <item name="add">Tilføj nyt element</item>
+      <item name="remove">Slet valgte element</item>
+      <item name="moveup">Flyt valgte element op</item>
+      <item name="movedown">Flyt valgte element ned</item>
+      <item name="head_elements">Hovedelement</item>
+      <item name="info">Information</item>
+      <item name="add_title">Titelelement</item>
+      <item name="add_meta">Meta-element</item>
+      <item name="add_script">Script-element</item>
+      <item name="add_style">Style-element</item>
+      <item name="add_link">Link-element</item>
+      <item name="add_base">Base-element</item>
+      <item name="add_comment">Kommentar-node</item>
+      <item name="title_element">Titelelement</item>
+      <item name="script_element">Script-element</item>
+      <item name="style_element">Style-element</item>
+      <item name="base_element">Base-element</item>
+      <item name="link_element">Link-element</item>
+      <item name="meta_element">Meta-element</item>
+      <item name="comment_element">Kommentar</item>
+      <item name="src">Src</item>
+      <item name="language">Sprog</item>
+      <item name="href">Href</item>
+      <item name="target">Destination</item>
+      <item name="type">Type</item>
+      <item name="charset">Tegnsæt</item>
+      <item name="defer">Defer</item>
+      <item name="media">Media</item>
+      <item name="properties">Egenskaber</item>
+      <item name="name">Navn</item>
+      <item name="value">Værdi</item>
+      <item name="content">Indhold</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href lang</item>
+      <item name="general_props">Generelt</item>
+      <item name="advanced_props">Advanceret</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Indsæt prædefineret skabelonindhold</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">Skabeloner</item>
+      <item name="label">Skabelon</item>
+      <item name="desc_label">Beskrivelse</item>
+      <item name="desc">Indsæt prædefineret skabelonindhold</item>
+      <item name="select">Vælg en skabelon</item>
+      <item name="preview">Vis udskrift</item>
+      <item name="warning">Advarsel: Opdatering af en skabelon med en anden kan betyde datatab.</item>
+      <item name="mdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="cdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="months_long">Januar,Februar,Marts,April,Maj,Juni,Juli,August,September,Oktober,November,December</item>
+      <item name="months_short">Jan,Feb,Mar,Apr,Maj,Jun,Jul,Aug,Sep,Okt,Nov,Dec</item>
+      <item name="day_long">Søndag,Mandag,Tirsdag,Onsdag,Torsdag,Fredag,Lørdag,Søndag</item>
+      <item name="day_short">Søn,Man,Tirs,Ons,Tors,Fre,Lør,Søn</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Vis/Skjul visuelle kontroltegn.</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">Vis/skjul stavekontrol</item>
+      <item name="menu">Indstillinger for stavekontrol</item>
+      <item name="ignore_word">Ignorer ord</item>
+      <item name="ignore_words">Ignorer alle</item>
+      <item name="langs">Sprog</item>
+      <item name="wait">Vent venligst...</item>
+      <item name="sug">Forslag</item>
+      <item name="no_sug">Ingen forslag</item>
+      <item name="no_mpell">Ingen stavefejl fundet.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">Indsæt sideskift.</item>
+    </group>
+    <group target="advlist">
+      <!--<item name="types">Types</item>-->
+      <!--<item name="def">Default</item>-->
+      <!--<item name="lower_alpha">Lower alpha</item>-->
+      <!--<item name="lower_greek">Lower greek</item>-->
+      <!--<item name="lower_roman">Lower roman</item>-->
+      <!--<item name="upper_alpha">Upper alpha</item>-->
+      <!--<item name="upper_roman">Upper roman</item>-->
+      <!--<item name="circle">Circle</item>-->
+      <!--<item name="disc">Disc</item>-->
+      <!--<item name="square">Square</item>-->
+    </group>
+  </language>
+</language-pack>

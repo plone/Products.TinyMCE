@@ -1,0 +1,925 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>Dark Templar</author>
+    <version major="8" minor="5" releasedate="2010-12-10" />
+    <description>Đây là gói ngôn ngữ Tiếng Việt cho TinyMCE.</description>
+  </header>
+  <language code="vi" title="Vietnamese" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">Bạn có muốn sử dụng chế độ WYSIWYG cho textarea này?</item>
+      <item name="apply">Thay đổi</item>
+      <item name="insert">Thêm</item>
+      <item name="update">Cập nhật</item>
+      <item name="cancel">Hủy bỏ</item>
+      <item name="close">Thoát</item>
+      <item name="browse">Tìm</item>
+      <item name="class_name">Lớp</item>
+      <item name="not_set">-- Chưa đặt --</item>
+      <item name="clipboard_msg">Copy/Cut/Paste không được hỗ trợ trong trình duyệt web này.\nBạn có muốn biết thêm thông tin về vấn đề này không??</item>
+      <item name="clipboard_no_support">Sử dụng phím tắt không được sử dụng trong trình duyệt hiện tại.</item>
+      <item name="popup_blocked">Xin lỗi, Nhưng chế độ cửa sổ popup đã bị vô hiệu hoá. Bạn sẽ cần phải tắt chức năng chặn popup trên trang web này để sử dụng công cụ này hoàn toàn.</item>
+      <item name="invalid_data">Lỗi: Giá trị nhập vào không hợp lệ. (Được đánh dấu đỏ)</item>
+      <item name="more_colors">Màu khác</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">Chữ đậm (Ctrl+B)</item>
+      <item name="italic_desc">Chữ nghiêng (Ctrl+I)</item>
+      <item name="underline_desc">Gạch chân (Ctrl+U)</item>
+      <item name="striketrough_desc">Gạch ngang</item>
+      <item name="bullist_desc">Danh sách không theo thứ tự</item>
+      <item name="numlist_desc">Danh sách theo thứ tự</item>
+      <item name="undo_desc">Trở về (Ctrl+Z)</item>
+      <item name="redo_desc">Tiến tới (Ctrl+Y)</item>
+      <item name="cleanup_desc">Dọn dẹp mã lộn xộn</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">Kiểu</item>
+      <item name="font_size">Kích thước font</item>
+      <item name="fontdefault">Tên font chữ</item>
+      <item name="block">Định dạng</item>
+      <item name="paragraph">Đoạn</item>
+      <item name="div">Thẻ</item>
+      <item name="address">Thẻ Địa chỉ</item>
+      <item name="pre">Thẻ Tiền định dạng</item>
+      <item name="h1">Thẻ Heading 1</item>
+      <item name="h2">Thẻ Heading 2</item>
+      <item name="h3">Thẻ Heading 3</item>
+      <item name="h4">Thẻ Heading 4</item>
+      <item name="h5">Thẻ Heading 5</item>
+      <item name="h6">Thẻ Heading 6</item>
+      <item name="blockquote">Thẻ Trích dẫn</item>
+      <item name="code">Thẻ Mã</item>
+      <item name="samp">Thẻ Mã ví dụ</item>
+      <item name="dt">Thẻ Điều khoản định nghĩa </item>
+      <item name="dd">Thẻ Mô tả định nghĩa</item>
+      <!-- Buttons -->
+      <item name="bold_desc">Chữ đậm (Ctrl+B)</item>
+      <item name="italic_desc">Chữ nghiêng (Ctrl+I)</item>
+      <item name="underline_desc">Gạch chân (Ctrl+U)</item>
+      <item name="striketrough_desc">Gạch ngang</item>
+      <item name="justifyleft_desc">Canh lề trái</item>
+      <item name="justifycenter_desc">Canh giữa</item>
+      <item name="justifyright_desc">Canh lề phải</item>
+      <item name="justifyfull_desc">Canh lề đều</item>
+      <item name="bullist_desc">Danh sách</item>
+      <item name="numlist_desc">Danh sách có chỉ số</item>
+      <item name="outdent_desc">Về đầu dòng</item>
+      <item name="indent_desc">Thụt đầu dòng</item>
+      <item name="undo_desc">Trở về (Ctrl+Z)</item>
+      <item name="redo_desc">Tiến tới (Ctrl+Y)</item>
+      <item name="link_desc">Thêm/Sửa Liên kết</item>
+      <item name="unlink_desc">Xóa Liên kết</item>
+      <item name="image_desc">Chèn/sửa ảnh</item>
+      <item name="cleanup_desc">Dọn dẹp mã lộn xộn</item>
+      <item name="code_desc">Sửa mã HTML</item>
+      <item name="sub_desc">Chỉ số dưới dòng</item>
+      <item name="sup_desc">Chỉ số bên trên</item>
+      <item name="hr_desc">Chèn thước ngang</item>
+      <item name="removeformat_desc">Loại bỏ định dạng</item>
+      <item name="custom1_desc">Mô tả tùy biến của bạn ở đây</item>
+      <item name="forecolor_desc">Chọn màu chữ</item>
+      <item name="backcolor_desc">Chọn màu nền</item>
+      <item name="charmap_desc">Chèn ký tự tùy biến</item>
+      <item name="visualaid_desc">Đảo các thành phần hướng dẫn hoặc ẩn</item>
+      <item name="anchor_desc">Chèn/sửa mỏ neo</item>
+      <item name="cut_desc">Cắt</item>
+      <item name="copy_desc">Sao chép</item>
+      <item name="paste_desc">Dán</item>
+      <item name="image_props_desc">Thuộc tính ảnh</item>
+      <item name="newdocument_desc">Văn bản mới</item>
+      <item name="help_desc">Trợ giúp</item>
+      <item name="blockquote_desc">Blockquote</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">Sao chép/Cắt/Dán không có sẵn trong Mozilla và Firefox.
+			Bạn có muốn biết thêm thông tin về vấn đề này?</item>
+      <item name="path">Đường dẫn</item>
+      <item name="newdocument">Bạn có chắc chắn muốn xóa tất cả nội dung?</item>
+      <item name="toolbar_focus">Nhảy tới các nút công cụ - Alt+Q, Tới trình soạn thảo - Alt-Z, Tới đường dẫn các phần tử - Alt-X</item>
+      <item name="more_colors">Thêm màu</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">Thông tin về TinyMCE</item>
+      <item name="about_general">Thông tin</item>
+      <item name="about_help">Trợ giúp</item>
+      <item name="about_license">Giấy phép</item>
+      <item name="about_plugins">Trình gắn kèm</item>
+      <item name="about_plugin">Trình gắn kèm</item>
+      <item name="about_author">Tác giả</item>
+      <item name="about_version">Phiên bản</item>
+      <item name="about_loaded">Trình gắn kèm đã nạp</item>
+      <!-- Anchor -->
+      <item name="anchor_title">Chèn/sửa mỏ neo</item>
+      <item name="anchor_name">Tên mỏ neo</item>
+      <!-- Source -->
+      <item name="code_title">Trình soạn thảo mã nguồn HTML</item>
+      <item name="code_wordwrap">Xuống dòng tự động</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">Chọn một màu</item>
+      <item name="colorpicker_picker_tab">Bộ chọn</item>
+      <item name="colorpicker_picker_title">Bộ chọn màu</item>
+      <item name="colorpicker_palette_tab">Bảng màu</item>
+      <item name="colorpicker_palette_title">Bảng màu</item>
+      <item name="colorpicker_named_tab">Tên</item>
+      <item name="colorpicker_named_title">Màu đã đặt tên</item>
+      <item name="colorpicker_color">Màu:</item>
+      <item name="colorpicker_name">Tên:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">Chọn ký tự tùy biến</item>
+      <!-- Image -->
+      <item name="image_title">Chèn/sửa ảnh</item>
+      <item name="image_src">URL ảnh</item>
+      <item name="image_alt">Mô tả ảnh</item>
+      <item name="image_list">Danh sách ảnh</item>
+      <item name="image_border">Viền</item>
+      <item name="image_dimensions">Kích thướng</item>
+      <item name="image_vspace">Khoảng cách dọc</item>
+      <item name="image_hspace">Khoảng cách ngang</item>
+      <item name="image_align">Canh lền</item>
+      <item name="image_align_baseline">Đường cơ sở</item>
+      <item name="image_align_top">Trên cùng</item>
+      <item name="image_align_middle">Giữa</item>
+      <item name="image_align_bottom">Dưới cùng</item>
+      <item name="image_align_texttop">Văn bản trê</item>
+      <item name="image_align_textbottom">Văn bản dưới</item>
+      <item name="image_align_left">Trái</item>
+      <item name="image_align_right">Phải</item>
+      <!-- Link -->
+      <item name="link_title">Thêm/Sửa Liên kết</item>
+      <item name="link_url">URL Liên kết</item>
+      <item name="link_target">Đích</item>
+      <item name="link_target_same">Mở liên kết trong cùng cửa sổ</item>
+      <item name="link_target_blank">Mở liên kết trong cửa sổ mới</item>
+      <item name="link_titlefield">Tiêu đề</item>
+      <item name="link_is_email">URL bạn đã nhập có vẻ là một địa chỉ điện thư, Bạn có muốn thêm tiền tố mailto?</item>
+      <item name="link_is_external">URL bạn đã nhập có vẻ là một liên kết ngoài, bạn có muốn thêm tiền tố http://?</item>
+      <item name="link_list">Danh sách liên kết</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">Canh lề</item>
+      <item name="left">Trái</item>
+      <item name="center">Giữa</item>
+      <item name="right">Phải</item>
+      <item name="full">Đầy</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%Y-%m-%d</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">Chèn ngày</item>
+      <item name="inserttime_desc">Chèn giờ</item>
+      <item name="months_long">Tháng Một,Tháng Hai,Tháng Ba,Tháng Tư,Tháng Năm,Tháng Sáu,Tháng Bảy,Tháng Tám,Tháng Chín,Tháng Mười,Tháng Mười Một,Tháng Mười Hai</item>
+      <item name="months_short">Thg1,Thg2,Thg3,Thg4,Thg5,Thg6,Thg7,Thg8,Thg9,Th10,Th11,Th12</item>
+      <item name="day_long">Chủ Nhật,Thứ Hai,Thứ Ba,Thứ Tư,Thứ Năm,Thứ Sáu,Thứ Bảy,Chủ Nhật</item>
+      <item name="day_short">CN,T2,T3,T4,T5,T6,T7,CN</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">In</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">Xem trước</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">Hướng trái qua phải</item>
+      <item name="rtl_desc">Hướng phải qua trái</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">Chèn lớp mới</item>
+      <item name="forward_desc">Di chuyển về trước</item>
+      <item name="backward_desc">Di chuyển về sau</item>
+      <item name="absolute_desc">Đảo vị trí cố định</item>
+      <item name="content">Lớp mới...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">Lưu</item>
+      <item name="cancel_desc">Hủy bỏ tất cả thay đổi</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">Chèn ký tự khoảng cách không bị ngắt</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">Chạy trình kiểm tra chính tả</item>
+      <item name="download">ieSpell không được phát hiện. Bạn có muốn cài đặt nó bây giờ?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">Thước ngang</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">Chiều dài</item>
+      <item name="size">Chiều rộng</item>
+      <item name="noshade">Không có bóng</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">Biểu Tượng Cảm Xúc</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">Biểu Tượng Cảm Xúc</item>
+      <item name="desc">Biểu Tượng Cảm Xúc</item>
+      <item name="cool">Không biết ngượng</item>
+      <item name="cry">Khóc</item>
+      <item name="embarassed">Xấu hổ</item>
+      <item name="foot_in_mouth">Lỡ lời</item>
+      <item name="frown">Cau mày</item>
+      <item name="innocent">Ngây thơ</item>
+      <item name="kiss">Nụ hôn</item>
+      <item name="laughing">Cười nhăn răng</item>
+      <item name="money_mouth">Sáng mắt vì $</item>
+      <item name="sealed">Kín miệng</item>
+      <item name="smile">Mỉm cười</item>
+      <item name="surprised">Ngạc nhiên</item>
+      <item name="tongue_out">Lè lưỡi</item>
+      <item name="undecided">Lưỡng lự</item>
+      <item name="wink">Nháy mắt</item>
+      <item name="yell">La hét</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">Tìm</item>
+      <item name="replace_desc">Tìm/Thay thế</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">Tìm lại</item>
+      <item name="notfound">Việc tìm kiếm đã hoàn thành. Chuỗi tìm kiếm không được tìm thấy.</item>
+      <item name="search_title">Tìm kiếm</item>
+      <item name="replace_title">Tìm/Thay thế</item>
+      <item name="allreplaced">Tất cả các lần xuất hiện của các chuỗi tìm kiếm được thay thế.</item>
+      <item name="findwhat">Tìm kiếm gì</item>
+      <item name="replacewith">Thay thế với</item>
+      <item name="direction">Hướng</item>
+      <item name="up">Lên</item>
+      <item name="down">Xuống</item>
+      <item name="mcase">Theo cả chữ hoa</item>
+      <item name="findnext">Tìm kế tiếp</item>
+      <item name="replace">Thay thế</item>
+      <item name="replaceall">Thay thế tất</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">Chèn/sửa ảnh</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">Chung</item>
+      <item name="tab_appearance">Xuất hiện</item>
+      <item name="tab_advanced">Nâng cao</item>
+      <item name="general">Chung</item>
+      <item name="title">Tiêu đề</item>
+      <item name="preview">Xem trước</item>
+      <item name="constrain_proportions">Ràng buộc tỉ lệ</item>
+      <item name="langdir">Hướng ngôn ngữ</item>
+      <item name="langcode">Mã ngôn ngữ</item>
+      <item name="long_desc">Liên kết mô tả dài</item>
+      <item name="style">Kiểu dáng</item>
+      <item name="classes">Lớp</item>
+      <item name="ltr">Trái qua phải</item>
+      <item name="rtl">Phải qua trái</item>
+      <item name="id">Id</item>
+      <item name="map">Sơ đồ ảnh</item>
+      <item name="swap_image">Trao đổi ảnh</item>
+      <item name="alt_image">Ảnh thay thế</item>
+      <item name="mouseover">cho chuột lên</item>
+      <item name="mouseout">cho chuột ra</item>
+      <item name="misc">Linh tinh</item>
+      <item name="example_img">Hiển thị hình ảnh xem trước</item>
+      <item name="missing_alt">Tiếp tục với đường dẫn không tồn tại ?.</item>
+      <item name="dialog_title">Chèn/sửa ảnh</item>
+      <item name="src">URL ảnh</item>
+      <item name="alt">Mô tả ảnh</item>
+      <item name="list">Danh sách ảnh</item>
+      <item name="border">Viền</item>
+      <item name="dimensions">Kích thước</item>
+      <item name="vspace">Khoảng cách dọc</item>
+      <item name="hspace">Khoảng cách ngang</item>
+      <item name="align">Canh lề</item>
+      <item name="align_baseline">Dòng cơ sở</item>
+      <item name="align_top">Trên cùng</item>
+      <item name="align_middle">Giữa</item>
+      <item name="align_bottom">Dưới cùng</item>
+      <item name="align_texttop">Văn bản trên cùng</item>
+      <item name="align_textbottom">Văn bản dưới cùng</item>
+      <item name="align_left">Trái</item>
+      <item name="align_right">Phải</item>
+      <item name="image_list">Danh sách ảnh</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">Thêm/Sửa Link</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">Thêm/Sửa Liên kết</item>
+      <item name="url">URL Liên kết</item>
+      <item name="target">Đích</item>
+      <item name="titlefield">Tiêu đề</item>
+      <item name="is_email">URL bạn đã nhập có vẻ là một địa chỉ điện thư, Bạn có muốn thêm tiền tố mailto?</item>
+      <item name="is_external">URL bạn đã nhập có vẻ là một liên kết ngoài, bạn có muốn thêm tiền tố http://?</item>
+      <item name="list">Danh sách liên kết</item>
+      <item name="general_tab">Chung</item>
+      <item name="popup_tab">Bật lên</item>
+      <item name="events_tab">Sự kiện</item>
+      <item name="advanced_tab">Nâng cao</item>
+      <item name="general_props">Thuộc tính chung</item>
+      <item name="popup_props">Thuộc tính bật lên</item>
+      <item name="event_props">Sự kiện</item>
+      <item name="advanced_props">Thuộc tính nâng cao</item>
+      <item name="popup_opts">Tùy chọn</item>
+      <item name="anchor_names">Mỏ neo</item>
+      <item name="target_same">Mở trong cửa sổ/khung này</item>
+      <item name="target_parent">Mở trong cửa sổ/khung cha</item>
+      <item name="target_top">Mở trong khung trên cùng (thay thế tất các khung)</item>
+      <item name="target_blank">Mở trong cửa sổ mới</item>
+      <item name="popup">Javascript bật lên</item>
+      <item name="popup_url">URL bật lên</item>
+      <item name="popup_name">Tên cửa sổ</item>
+      <item name="popup_return">Chèn 'return false'</item>
+      <item name="popup_scrollbars">Hiển thị thanh cuộn</item>
+      <item name="popup_statusbar">Hiện thị thanh trạng thái</item>
+      <item name="popup_toolbar">Hiện thị thanh công cụ</item>
+      <item name="popup_menubar">Hiển thị thanh thực đơn</item>
+      <item name="popup_location">Hiện thị thanh vị trí</item>
+      <item name="popup_resizable">Làm cho cửa sổ có thể thay đổi kích cỡ</item>
+      <item name="popup_dependent">Phụ thuộc (chỉ Mozilla/Firefox)</item>
+      <item name="popup_size">Kích thước</item>
+      <item name="popup_position">Vị trí (X/Y)</item>
+      <item name="id">Id</item>
+      <item name="style">Kiểu dáng</item>
+      <item name="classes">Lớp</item>
+      <item name="target_name">Tên đích</item>
+      <item name="langdir">Hướng ngôn ngữ</item>
+      <item name="target_langcode">Ngôn ngữ đích</item>
+      <item name="langcode">Mã ngôn ngữ</item>
+      <item name="encoding">Mã hóa ký tự đích</item>
+      <item name="mime">Kiểu MIME đích</item>
+      <item name="rel">Trang liên quan tới đích</item>
+      <item name="rev">Đích liên quan tới trang</item>
+      <item name="tabindex">Chỉ mục thẻ</item>
+      <item name="accesskey">Phím truy cập</item>
+      <item name="ltr">Trái qua phải</item>
+      <item name="rtl">Phải qua trái</item>
+      <item name="link_list">Danh sách liên kết</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">Biểu chương</item>
+      <item name="abbr_desc">Tên viết tắt</item>
+      <item name="acronym_desc">Từ viết tắt</item>
+      <item name="del_desc">Xóa</item>
+      <item name="ins_desc">Chèn</item>
+      <item name="attribs_desc">Chèn/Sửa các thuộc tính</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">Tiêu đề</item>
+      <item name="attribute_label_id">ID</item>
+      <item name="attribute_label_class">Lớp</item>
+      <item name="attribute_label_style">Kiểu dáng</item>
+      <item name="attribute_label_cite">Chú thích</item>
+      <item name="attribute_label_datetime">Ngày/giờ</item>
+      <item name="attribute_label_langdir">Hướng văn bản</item>
+      <item name="attribute_option_ltr">Trái qua phải</item>
+      <item name="attribute_option_rtl">Phải qua trái</item>
+      <item name="attribute_label_langcode">Ngôn ngữ</item>
+      <item name="attribute_label_tabindex">Chỉ mục thẻ</item>
+      <item name="attribute_label_accesskey">Phím truy cập</item>
+      <item name="attribute_events_tab">Sự kiện</item>
+      <item name="attribute_attrib_tab">Thuộc tính</item>
+      <item name="general_tab">Chung</item>
+      <item name="attrib_tab">Thuộc tính</item>
+      <item name="events_tab">Sự kiện</item>
+      <item name="fieldset_general_tab">Thiết lập chung</item>
+      <item name="fieldset_attrib_tab">Thuộc tính phần tử</item>
+      <item name="fieldset_events_tab">Sự kiện phần tử</item>
+      <item name="title_ins_element">Chèn phần tử</item>
+      <item name="title_del_element">Xóa phần tử</item>
+      <item name="title_acronym_element">Viết tắt phần tử</item>
+      <item name="title_abbr_element">Tên viết tắt phần tử</item>
+      <item name="title_cite_element">Biểu chương phần tử</item>
+      <item name="remove">Loại bỏ</item>
+      <item name="insert_date">Chèn ngày/giờ hiện thời</item>
+      <item name="option_ltr">Trái qua phải</item>
+      <item name="option_rtl">Phải qua trái</item>
+      <item name="attribs_title">Chèn/Sửa thuộc tính</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">Sửa kiểu dáng CSS</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">Sửa kiểu dáng CSS</item>
+      <item name="apply">Áp dụng</item>
+      <item name="text_tab">Văn bản</item>
+      <item name="background_tab">Nền</item>
+      <item name="block_tab">Khối</item>
+      <item name="box_tab">Hộp</item>
+      <item name="border_tab">Viền</item>
+      <item name="list_tab">Danh sách</item>
+      <item name="positioning_tab">Vị trí</item>
+      <item name="text_props">Văn bản</item>
+      <item name="text_font">Phông</item>
+      <item name="text_size">Kích cỡ</item>
+      <item name="text_weight">Trọng lượng</item>
+      <item name="text_style">Kiểu dáng</item>
+      <item name="text_variant">Biến đổi</item>
+      <item name="text_lineheight">Chiều cao đường</item>
+      <item name="text_case">Bọc</item>
+      <item name="text_color">Màu</item>
+      <item name="text_decoration">Trang trí</item>
+      <item name="text_overline">gạch trên</item>
+      <item name="text_underline">gạch dưới</item>
+      <item name="text_striketrough">gạch xuyên</item>
+      <item name="text_blink">nhấp nháy</item>
+      <item name="text_none">không</item>
+      <item name="background_color">Màu nền</item>
+      <item name="background_image">Ảnh nền</item>
+      <item name="background_repeat">Lặp lại</item>
+      <item name="background_attachment">Đính kèm</item>
+      <item name="background_hpos">Vị trí ngang</item>
+      <item name="background_vpos">Vị trí dọc</item>
+      <item name="block_wordspacing">Khoảng các từ</item>
+      <item name="block_letterspacing">Khoảng các ký tự</item>
+      <item name="block_vertical_alignment">Canh lề dọc</item>
+      <item name="block_text_align">Canh lề văn bản</item>
+      <item name="block_text_indent">Thụt dòng văn bản</item>
+      <item name="block_whitespace">Khoảng trắng</item>
+      <item name="block_display">Hiển thị</item>
+      <item name="box_width">Chiều rộng</item>
+      <item name="box_height">Chiều cao</item>
+      <item name="box_float">Nổi</item>
+      <item name="box_clear">Làm sạch</item>
+      <item name="padding">Đệm lót</item>
+      <item name="same">Áp dụng cho tất cả</item>
+      <item name="top">Trên</item>
+      <item name="right">Phải</item>
+      <item name="bottom">Dưới</item>
+      <item name="left">Trái</item>
+      <item name="margin">Biên</item>
+      <item name="style">Kiểu</item>
+      <item name="width">Chiều rộng</item>
+      <item name="height">Chiều cao</item>
+      <item name="color">Màu</item>
+      <item name="list_type">Kiểu</item>
+      <item name="bullet_image">Ảnh Bullet</item>
+      <item name="position">Vị trí</item>
+      <item name="positioning_type">Kiểu</item>
+      <item name="visibility">Nhìn thấy</item>
+      <item name="zindex">Chỉ mục Z</item>
+      <item name="overflow">Tràn</item>
+      <item name="placement">Sắp đặt</item>
+      <item name="clip">Ghim</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">Dánh như Plain Text</item>
+      <item name="paste_word_desc">Dán từ Word</item>
+      <item name="selectall_desc">Chọn tất</item>
+      <item name="plaintext_mode_sticky">Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode.</item>
+      <item name="plaintext_mode">Paste is now in plain text mode. Click again to toggle back to regular paste mode.</item>
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">Sử dụng CTRL+V trên bàn phím để dán văn bản vào cửa sổ.</item>
+      <item name="text_linebreaks">Giữ ngắt dòng</item>
+      <item name="word_title">Sử dụng CTRL+V trên bàn phím để dán văn bản vào cửa sổ.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">Chèn một bảng mới</item>
+      <item name="row_before_desc">Chèn hàng vào trước</item>
+      <item name="row_after_desc">Chèn hàng vào sau</item>
+      <item name="delete_row_desc">Xóa dòng</item>
+      <item name="col_before_desc">Chèn cột vào trước</item>
+      <item name="col_after_desc">Chèn cột vào sau</item>
+      <item name="delete_col_desc">Loại bỏ cột</item>
+      <item name="split_cells_desc">Tách các ô đã kết hợp của bảng</item>
+      <item name="merge_cells_desc">Kết hợp các ô của bảng</item>
+      <item name="row_desc">Thuộc tính hàng</item>
+      <item name="cell_desc">Thuộc tính ô</item>
+      <item name="props_desc">Thuộc tính bảng</item>
+      <item name="paste_row_before_desc">Dán hang vào trước</item>
+      <item name="paste_row_after_desc">Dán hang vào sau</item>
+      <item name="cut_row_desc">Cắt hàng</item>
+      <item name="copy_row_desc">Sao chép hàng</item>
+      <item name="del">Xóa bảng</item>
+      <item name="row">Hàng</item>
+      <item name="col">Cột</item>
+      <item name="cell">Ô</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width"></item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">Chung</item>
+      <item name="advanced_tab">Nâng cao</item>
+      <item name="general_props">Thuộc tính chung</item>
+      <item name="advanced_props">Thuộc tính nâng cao</item>
+      <item name="rowtype">Hàng trong từng phần bảng</item>
+      <item name="title">Chèn/Sửa bảng</item>
+      <item name="width">Chiều rộng</item>
+      <item name="height">Chiều cao</item>
+      <item name="cols">Cột</item>
+      <item name="rows">Hàng</item>
+      <item name="cellspacing">Khoảng cách ô</item>
+      <item name="cellpadding">Khoảng lót ô</item>
+      <item name="border">Viền</item>
+      <item name="align">Canh lề</item>
+      <item name="align_default">Mặc định</item>
+      <item name="align_left">Trái</item>
+      <item name="align_right">Phải</item>
+      <item name="align_middle">Giữa</item>
+      <item name="row_title">Thuộc tính hàng</item>
+      <item name="cell_title">Thuộc tính ô</item>
+      <item name="cell_type">Loại ô</item>
+      <item name="valign">Canh lề dọc</item>
+      <item name="align_top">Trên</item>
+      <item name="align_bottom">Dưới</item>
+      <item name="bordercolor">Màu viền</item>
+      <item name="bgcolor">Màu nền</item>
+      <item name="merge_cells_title">Kết hợp các ô của bảng</item>
+      <item name="id">Id</item>
+      <item name="style">Kiểu dáng</item>
+      <item name="langdir">Hướng ngôn ngữ</item>
+      <item name="langcode">Mã ngôn ngữ</item>
+      <item name="mime">Kiểu MIME đích</item>
+      <item name="ltr">Trái qua phải</item>
+      <item name="rtl">Phải qua trái</item>
+      <item name="bgimage">Ảnh nền</item>
+      <item name="summary">Tóm lược</item>
+      <item name="td">Dữ liệu</item>
+      <item name="th">Đầu đề</item>
+      <item name="cell_cell">Cập nhật ô hiện thời</item>
+      <item name="cell_row">Cập nhất tất các ô trong hàng</item>
+      <item name="cell_all">Cập nhất tất các ô trong bảng</item>
+      <item name="row_row">Cập nhật hàng hiện thời</item>
+      <item name="row_odd">Cập nhật hàng lẻ trong bảng</item>
+      <item name="row_even">Cập nhật hàng chẵn trong bảng</item>
+      <item name="row_all">Cập nhật tất hàng trong bảng</item>
+      <item name="thead">Đầu bảng</item>
+      <item name="tbody">Thân bản</item>
+      <item name="tfoot">Chân bảng</item>
+      <item name="scope">Phạm vi</item>
+      <item name="rowgroup">Nhóm hàng</item>
+      <item name="colgroup">Nhóm cột</item>
+      <item name="col_limit">Bạn đã vượt quá số tối đa cột của {$cols}.</item>
+      <item name="row_limit">Bạn đã vượt quá số tối đa hàng của {$rows}.</item>
+      <item name="cell_limit">Bạn đã vượt quá số tối đa ô của {$cells}.</item>
+      <item name="missing_scope">Tiếp tục với đường dẫn không tồn tại ?</item>
+      <item name="caption">Chú tích bảng</item>
+      <item name="frame">Khung</item>
+      <item name="frame_none">không</item>
+      <item name="frame_groups">nhóm</item>
+      <item name="frame_rows">hàng</item>
+      <item name="frame_cols">cột</item>
+      <item name="frame_all">tất</item>
+      <item name="rules">Thước</item>
+      <item name="rules_void">trống không</item>
+      <item name="rules_above">trên</item>
+      <item name="rules_below">dưới</item>
+      <item name="rules_hsides">hsides</item>
+      <item name="rules_lhs">lhs</item>
+      <item name="rules_rhs">rhs</item>
+      <item name="rules_vsides">vsides</item>
+      <item name="rules_box">box</item>
+      <item name="rules_border">viền</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">Những thay đổi bạn đã thực hiện sẽ bị mất nếu bạn điều hướng đi từ trang này.</item>
+      <item name="restore_content">Khôi phục nội dung tự động lưu lại.</item>
+      <item name="warning_message">Nếu bạn khôi phục lại nội dung đã lưu, bạn sẽ mất tất cả các nội dung mà hiện đang trong trình soạn thảo.\n\nBạn có chắc là bạn muốn khôi phục lại nội dung đã lưu?.</item>
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">Bật/tắt chế độ toàn màn hình</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">Chèn / sửa phương tiện truyền thông nhúng</item>
+      <item name="edit">Sửa phương tiện truyền thông nhúng</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">Chèn / sửa phương tiện truyền thông nhúng</item>
+      <item name="general">Chung</item>
+      <item name="advanced">Nâng cao</item>
+      <item name="file">Tập tin/URL</item>
+      <item name="list">Danh sách</item>
+      <item name="size">Kích thước</item>
+      <item name="preview">Xem trước</item>
+      <item name="constrain_proportions">Ràng buộc tỉ lệ</item>
+      <item name="type">Kiểu</item>
+      <item name="id">Id</item>
+      <item name="name">Tên</item>
+      <item name="class_name">Lớp</item>
+      <item name="vspace">V-Space</item>
+      <item name="hspace">H-Space</item>
+      <item name="play">Tự động phát</item>
+      <item name="loop">Lặp</item>
+      <item name="menu">Hiển thị menu</item>
+      <item name="quality">Chất lượng</item>
+      <item name="scale">Tỉ lệ</item>
+      <item name="align">Canh lề</item>
+      <item name="salign">SAlign</item>
+      <item name="wmode">WMode</item>
+      <item name="bgcolor">Nền</item>
+      <item name="base">Cơ sở</item>
+      <item name="flashvars">Flashvars</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">AutoHREF</item>
+      <item name="cache">Bộ nhớ đệm</item>
+      <item name="hidden">Ẩn</item>
+      <item name="controller">Trình điều khiển</item>
+      <item name="kioskmode">Chế độ Kiosk</item>
+      <item name="playeveryframe">Phát tất cả khung</item>
+      <item name="targetcache">Bộ nhớ đệm đích</item>
+      <item name="correction">Không chỉnh</item>
+      <item name="enablejavascript">Cho phép JavaScript</item>
+      <item name="starttime">Thời gian bắt đầu</item>
+      <item name="endtime">Thời gian kết thúc</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">Tốc độ Choke</item>
+      <item name="target">Đích</item>
+      <item name="volume">Âm lượng</item>
+      <item name="autostart">Tự động bắt đầu</item>
+      <item name="enabled">Cho phép</item>
+      <item name="fullscreen">Toàn màn hình</item>
+      <item name="invokeurls">URL triệu gọi</item>
+      <item name="mute">Tắt âm thanh</item>
+      <item name="stretchtofit">Dãn để phù hợp</item>
+      <item name="windowlessvideo">Video không cửa sổ</item>
+      <item name="balance">Cân bằng</item>
+      <item name="baseurl">Base URL</item>
+      <item name="captioningid">id đầu đề</item>
+      <item name="currentmarker">Bộ tạo hiện thời</item>
+      <item name="currentposition">Vị trí hiện thời</item>
+      <item name="defaultframe">Khung mặc định</item>
+      <item name="playcount">Đếm lần phát</item>
+      <item name="rate">Tốc độ</item>
+      <item name="uimode">Chế độ UI</item>
+      <item name="flash_options">Tùy chọn Flash</item>
+      <item name="qt_options">Tùy chọn Quicktime</item>
+      <item name="wmp_options">Tùy chọn trình chơi media Windows</item>
+      <item name="rmp_options">Tùy chọn trình chơi media Real</item>
+      <item name="shockwave_options">Tùy chọn Shockwave</item>
+      <item name="autogotourl">Tự động nhảy tới URL</item>
+      <item name="center">Giữa</item>
+      <item name="imagestatus">Trạng thái ảnh</item>
+      <item name="maintainaspect">Duy trì cạnh</item>
+      <item name="nojava">Không có java</item>
+      <item name="prefetch">Tìm nạp trước</item>
+      <item name="shuffle">Không theo trật tự</item>
+      <item name="console">Bàn điều khiển</item>
+      <item name="numloop">Số lặp</item>
+      <item name="controls">Điều khiển</item>
+      <item name="scriptcallbacks">Hàm gọi ngược Script</item>
+      <item name="swstretchstyle">Kiểu dãn</item>
+      <item name="swstretchhalign">Dãn theo H-Align</item>
+      <item name="swstretchvalign">Dãn theo V-Align</item>
+      <item name="sound">Âm thanh</item>
+      <item name="progress">Đang tiến triển</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn">Nguồn rtsp theo luồng nên được thêm vào trường QT Src dưới thẻ nâng cao.\nBạn cũng nên thêm một phiên bản không theo luồng vào trường Src..</item>
+      <item name="align_top">Trên cùng</item>
+      <item name="align_right">Phải</item>
+      <item name="align_bottom">Dưới cùng</item>
+      <item name="align_left">Trái</item>
+      <item name="align_center">Giữa</item>
+      <item name="align_top_left">Trên cùng trái</item>
+      <item name="align_top_right">Trên cùng phải</item>
+      <item name="align_bottom_left">Dưới cùng trái</item>
+      <item name="align_bottom_right">Dưới cùng phải</item>
+      <item name="flv_options">Tùy chọn video Flash</item>
+      <item name="flv_scalemode">Chế độ thang</item>
+      <item name="flv_buffer">Bộ đệm</item>
+      <item name="flv_startimage">Ảnh bắt đầu</item>
+      <item name="flv_starttime">Thời gian bắt đầu</item>
+      <item name="flv_defaultvolume">Âm lượng mặc định</item>
+      <item name="flv_hiddengui">Ẩn GUI</item>
+      <item name="flv_autostart">Tự bắt đầu</item>
+      <item name="flv_loop">Lặp</item>
+      <item name="flv_showscalemodes">Hiển thị chế độ thang</item>
+      <item name="flv_smoothvideo">Video mượt</item>
+      <item name="flv_jscallback">Hàm gọi ngược JS</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">Thuộc tính văn bản</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Thuộc tính văn bản</item>
+      <item name="meta_tab">Chung</item>
+      <item name="appearance_tab">Xuất hiện</item>
+      <item name="advanced_tab">Nâng cao</item>
+      <item name="meta_props">Thông tin Meta</item>
+      <item name="langprops">Ngôn ngữ và mã hóa</item>
+      <item name="meta_title">Tiêu đề</item>
+      <item name="meta_keywords">Từ khóa</item>
+      <item name="meta_description">Mô tả</item>
+      <item name="meta_robots">Robots</item>
+      <item name="doctypes">Kiểu tài liệu</item>
+      <item name="langcode">Mã ngôn ngữ</item>
+      <item name="langdir">Hướng ngôn ngữ</item>
+      <item name="ltr">Trái qua phải</item>
+      <item name="rtl">Phải qua trái</item>
+      <item name="xml_pi">Khai báo XML</item>
+      <item name="encoding">Mã hóa ký tự</item>
+      <item name="appearance_bgprops">Thuộc tính nền</item>
+      <item name="appearance_marginprops">Biên của thân tài liệu</item>
+      <item name="appearance_linkprops">Màu liên kết</item>
+      <item name="appearance_textprops">Thuôc tính văn bản</item>
+      <item name="bgcolor">Màu nền</item>
+      <item name="bgimage">Ảnh nền</item>
+      <item name="left_margin">Biên trái</item>
+      <item name="right_margin">Biên phải</item>
+      <item name="top_margin">Biên trên</item>
+      <item name="bottom_margin">Biên dưới</item>
+      <item name="text_color">Màu văn bản</item>
+      <item name="font_size">Kích cỡ phông</item>
+      <item name="font_face">Phông chữ</item>
+      <item name="link_color">Màu liên kết</item>
+      <item name="hover_color">Màu khi trỏ chuột</item>
+      <item name="visited_color">Màu đã ghé thăm</item>
+      <item name="active_color">Màu hoạt động</item>
+      <item name="textcolor">Màu</item>
+      <item name="fontsize">Kích cỡ phông</item>
+      <item name="fontface">Tập hợp phông</item>
+      <item name="meta_index_follow">Chỉ số và theo liên kết</item>
+      <item name="meta_index_nofollow">Chỉ số và không theo liên kết</item>
+      <item name="meta_noindex_follow">Không chỉ số nhưng theo liên kết</item>
+      <item name="meta_noindex_nofollow">Không chỉ số và không theo liên kết</item>
+      <item name="appearance_style">Thuộc tính kiểu dáng và stylesheet</item>
+      <item name="stylesheet">Stylesheet</item>
+      <item name="style">Kiểu dáng</item>
+      <item name="author">Tác giả</item>
+      <item name="copyright">Bản quyền</item>
+      <item name="add">Thêm phần tử mới</item>
+      <item name="remove">Loại bỏ phần tử đã chọn</item>
+      <item name="moveup">Di chuyển phần tử đã chọn đi lên</item>
+      <item name="movedown">Di chuyển phần tử đã chọn đi xuống</item>
+      <item name="head_elements">Phần tử đầu đề</item>
+      <item name="info">Thông tin</item>
+      <item name="add_title">Phần tử tiêu đề</item>
+      <item name="add_meta">Phần tử meta</item>
+      <item name="add_script">Phần tử script</item>
+      <item name="add_style">Phần tử kiểu dáng</item>
+      <item name="add_link">Phần tử liên kết</item>
+      <item name="add_base">Phần tử cơ sở</item>
+      <item name="add_comment">Comment node</item>
+      <item name="title_element">Phần tử tiêu đề</item>
+      <item name="script_element">Phần tử script</item>
+      <item name="style_element">Phần tử kiểu dáng</item>
+      <item name="base_element">Phần tử cơ sở</item>
+      <item name="link_element">Phần tử liên kết</item>
+      <item name="meta_element">Phần tử meta</item>
+      <item name="comment_element">Chú thích</item>
+      <item name="src">Src</item>
+      <item name="language">Ngôn ngữ</item>
+      <item name="href">Href</item>
+      <item name="target">Đích</item>
+      <item name="type">Kiểu</item>
+      <item name="charset">Tập ký tự</item>
+      <item name="defer">Trì hoãn</item>
+      <item name="media">Phương tiện</item>
+      <item name="properties">Thuộc tính</item>
+      <item name="name">Tên</item>
+      <item name="value">Giá trị</item>
+      <item name="content">Nội dung</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href lang</item>
+      <item name="general_props">Chung</item>
+      <item name="advanced_props">Nâng cao</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Chèn một nội dung mẫu định nghĩa trước</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">Mẫu</item>
+      <item name="label">Mẫu</item>
+      <item name="desc_label">Mô tả</item>
+      <item name="desc">Chèn một nội dung mẫu định nghĩa trước</item>
+      <item name="select">Chọn một mẫu</item>
+      <item name="preview">Xem trước</item>
+      <item name="warning">Cảnh báo: Cập nhật một mẫu với một sự sai khác có thể làm mất dữ liệu.</item>
+      <item name="mdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="cdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="months_long">Tháng Một,Tháng Hai,Tháng Ba,Tháng Tư,Tháng Năm,Tháng Sáu,Tháng Bảy,Tháng Tám,Tháng Chín,Tháng Mười,Tháng Mười Một,Tháng Mười Hai</item>
+      <item name="months_short">Thg1,Thg2,Thg3,Thg4,Thg5,Thg6,Thg7,Thg8,Thg9,Th10,Th11,Th12</item>
+      <item name="day_long">Chủ Nhật,Thứ Hai,Thứ Ba,Thứ Tư,Thứ Năm,Thứ Sáu,Thứ Bảy,Chủ Nhật</item>
+      <item name="day_short">CN,T2,T3,T4,T5,T6,T7,CN</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Bặt/Tắt các ký tự điều khiển trực quan.</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">Bật/Tắt kiểm tra chính tả</item>
+      <item name="menu">Thiết lập kiểm tra chính tả</item>
+      <item name="ignore_word">Bỏ qua từ ngữ</item>
+      <item name="ignore_words">Bỏ qua tất cả</item>
+      <item name="langs">Ngôn ngữ</item>
+      <item name="wait">Vui lòng chờ...</item>
+      <item name="sug">Gợi ý</item>
+      <item name="no_sug">Không có gợi ý</item>
+      <item name="no_mpell">Không có lỗi chính tả được tìm thấy.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">Chèn ngắt trang.</item>
+    </group>
+    <group target="advlist">
+      <item name="types">Kiểu</item>
+      <item name="def">Mặc định</item>
+      <item name="lower_alpha">Ký hiệu alpha thường</item>
+      <item name="lower_greek">Ký hiệu Hy-lạp thường</item>
+      <item name="lower_roman">Ký hiệu La mã thường</item>
+      <item name="upper_alpha">Ký hiệu alpha cao</item>
+      <item name="upper_roman">Ký hiệu La mã hoa</item>
+      <item name="circle">Tròng</item>
+      <item name="disc">Đĩa</item>
+      <item name="square">Vuông</item>
+    </group>
+  </language>
+</language-pack>

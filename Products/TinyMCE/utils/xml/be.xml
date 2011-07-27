@@ -1,0 +1,925 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>Alexei Danilchik</author>
+    <version major="1" minor="5" releasedate="2009-03-05" />
+    <description>Гэта пакет беларускай лакалізацыі для TinyMCE.</description>
+  </header>
+  <language code="be" title="Belarusian" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">Вы жадаеце выкарыстаць для гэтай тэкставай вобласці рэжым WYSIWYG?</item>
+      <item name="apply">Ужыць</item>
+      <item name="insert">Уставіць</item>
+      <item name="update">Абнавіць</item>
+      <item name="cancel">Адмяніць</item>
+      <item name="close">Зачыніць</item>
+      <item name="browse">Прагледзець</item>
+      <item name="class_name">Клас</item>
+      <item name="not_set">-- Не ўсталявана --</item>
+      <item name="clipboard_msg">Капіяванне/Устаўка не працуе ў Mozilla і Firefox.\nЖадаеце падрабязней пазнаць, у чым справа?</item>
+      <item name="clipboard_no_support">Не падтрымліваецца вашым браўзэрам у сапраўдны момант, выкарыстайце клавіятурныя скарачэнні.</item>
+      <item name="popup_blocked">Выбачыце, але ваш блакавальнік усплывальных вокнаў заблакаваў акно, якое прадстаўляе функцыі прыкладання. Вам трэба адключыць блакаванне ўсплывальных вокнаў на гэтым сайце, каб паўнавартасна скарыстацца гэтай прыладай.</item>
+      <item name="invalid_data">Памылка: Адзначаныя чырвоным значэнні ўведзеныя няправільна.</item>
+      <item name="more_colors">Больш колераў</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">Тоўсты (Ctrl+B)</item>
+      <item name="italic_desc">Курсіў (Ctrl+I)</item>
+      <item name="underline_desc">Падкрэслены (Ctrl+U)</item>
+      <item name="striketrough_desc">Перакрэслены</item>
+      <item name="bullist_desc">Маркіраваны спіс</item>
+      <item name="numlist_desc">Нумараваны спіс</item>
+      <item name="undo_desc">Адмяніць (Ctrl+Z)</item>
+      <item name="redo_desc">Паўтарыць (Ctrl+Y)</item>
+      <item name="cleanup_desc">Пачысціць брудны код</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">Стылі</item>
+      <item name="font_size">Памер шрыфта</item>
+      <item name="fontdefault">Шрыфт</item>
+      <item name="block">Фармат</item>
+      <item name="paragraph">Абзац</item>
+      <item name="div">Падзел</item>
+      <item name="address">Адрас</item>
+      <item name="pre">Адфарматаваны тэкст</item>
+      <item name="h1">Загаловак 1</item>
+      <item name="h2">Загаловак 2</item>
+      <item name="h3">Загаловак 3</item>
+      <item name="h4">Загаловак 4</item>
+      <item name="h5">Загаловак 5</item>
+      <item name="h6">Загаловак 6</item>
+      <item name="blockquote">Блок выняткі</item>
+      <item name="code">Код</item>
+      <item name="samp">Прыклад кода</item>
+      <item name="dt">Вызначаемы тэрмін</item>
+      <item name="dd">Азначэнне тэрміна</item>
+      <!-- Buttons -->
+      <item name="bold_desc">Тоўсты (Ctrl+B)</item>
+      <item name="italic_desc">Курсіў (Ctrl+I)</item>
+      <item name="underline_desc">Падкрэслены (Ctrl+U)</item>
+      <item name="striketrough_desc">Перакрэслены</item>
+      <item name="justifyleft_desc">Выраўноўванне налева</item>
+      <item name="justifycenter_desc">Выраўноўванне па цэнтры</item>
+      <item name="justifyright_desc">Выраўноўванне направа</item>
+      <item name="justifyfull_desc">Выраўноўванне па шырыні</item>
+      <item name="bullist_desc">Маркіраваны спіс</item>
+      <item name="numlist_desc">Нумараваны спіс</item>
+      <item name="outdent_desc">Паменшыць водступ</item>
+      <item name="indent_desc">Павялічыць водступ</item>
+      <item name="undo_desc">Адмяніць (Ctrl+Z)</item>
+      <item name="redo_desc">Паўтарыць (Ctrl+Y)</item>
+      <item name="link_desc">Уставіць/рэдагаваць спасылку</item>
+      <item name="unlink_desc">Выдаліць спасылку</item>
+      <item name="image_desc">Уставіць/рэдагаваць малюнак</item>
+      <item name="cleanup_desc">Пачысціць брудны код</item>
+      <item name="code_desc">Рэдагаваць HTML-зыходнік</item>
+      <item name="sub_desc">Ніжні азначнік</item>
+      <item name="sup_desc">Верхні азначнік</item>
+      <item name="hr_desc">Уставіць гарызантальную лінію</item>
+      <item name="removeformat_desc">Прыбраць фарматаванне</item>
+      <item name="custom1_desc">Увядзіце ваша апісанне</item>
+      <item name="forecolor_desc">Абраць колер тэксту</item>
+      <item name="backcolor_desc">Абраць колер фону</item>
+      <item name="charmap_desc">Уставіць адмысловы знак</item>
+      <item name="visualaid_desc">Улучыць/выключыць накіравальныя/нябачныя элементы</item>
+      <item name="anchor_desc">Уставіць/рэдагаваць якар</item>
+      <item name="cut_desc">Выразаць</item>
+      <item name="copy_desc">Капіяваць</item>
+      <item name="paste_desc">Уставіць</item>
+      <item name="image_props_desc">Уласцівасці малюнка</item>
+      <item name="newdocument_desc">Новы дакумент</item>
+      <item name="help_desc">Дапамога</item>
+      <item name="blockquote_desc">Блок выняткі</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">Капіяванне/Устаўка не працуе ў Mozilla і Firefox.
+Жадаеце падрабязней пазнаць, у чым справа?</item>
+      <item name="path">Шлях</item>
+      <item name="newdocument">Вы ўпэўненыя, што жадаеце ачысціць усё змесціва?</item>
+      <item name="toolbar_focus">Перайсці да кнопак прылад - Alt+Q, Перайсці да рэдактара - Alt-Z, Перайсці да шляху элемента - Alt-X</item>
+      <item name="more_colors">Яшчэ колеры</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">Аб TinyMCE</item>
+      <item name="about_general">Аб праграме</item>
+      <item name="about_help">Дапамога</item>
+      <item name="about_license">Ліцэнзія</item>
+      <item name="about_plugins">Убудовы</item>
+      <item name="about_plugin">Убудова</item>
+      <item name="about_author">Аўтар</item>
+      <item name="about_version">Версія</item>
+      <item name="about_loaded">Загружаныя ўбудовы</item>
+      <!-- Anchor -->
+      <item name="anchor_title">Вставить/редактировать якорь</item>
+      <item name="anchor_name">Имя якоря</item>
+      <!-- Source -->
+      <item name="code_title">Рэдактар HTML-зыходніка</item>
+      <item name="code_wordwrap">Перанос слоў</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">Абярыце колер</item>
+      <item name="colorpicker_picker_tab">Выбар</item>
+      <item name="colorpicker_picker_title">Выбар колеру</item>
+      <item name="colorpicker_palette_tab">Палітра</item>
+      <item name="colorpicker_palette_title">Колеры палітры</item>
+      <item name="colorpicker_named_tab">Найменны</item>
+      <item name="colorpicker_named_title">Найменныя колеры</item>
+      <item name="colorpicker_color">Колер:</item>
+      <item name="colorpicker_name">Назоў:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">Абярыце адмысловы знак</item>
+      <!-- Image -->
+      <item name="image_title">Уставіць/рэдагаваць малюнак</item>
+      <item name="image_src">Адрас малюнка</item>
+      <item name="image_alt">Апісанне малюнка</item>
+      <item name="image_list">Спіс малюнкаў</item>
+      <item name="image_border">Мяжа</item>
+      <item name="image_dimensions">Памеры</item>
+      <item name="image_vspace">Вертыкальная прастора</item>
+      <item name="image_hspace">Гарызантальная прастора</item>
+      <item name="image_align">Выраўноўванне</item>
+      <item name="image_align_baseline">Па базіснай лініі</item>
+      <item name="image_align_top">Па версе</item>
+      <item name="image_align_middle">Па цэнтры</item>
+      <item name="image_align_bottom">Па нізе</item>
+      <item name="image_align_texttop">Па версе тэксту</item>
+      <item name="image_align_textbottom">Па нізе тэксту</item>
+      <item name="image_align_left">Налева</item>
+      <item name="image_align_right">Направа</item>
+      <!-- Link -->
+      <item name="link_title">Уставіць/рэдагаваць спасылку</item>
+      <item name="link_url">Адрас спасылкі</item>
+      <item name="link_target">Мэта</item>
+      <item name="link_target_same">Адкрыць спасылку ў тым жа акне</item>
+      <item name="link_target_blank">Адкрыць спасылку ў новым акне</item>
+      <item name="link_titlefield">Назоў</item>
+      <item name="link_is_email">Уведзены адрас падобны на email, вы жадаеце дадаць прэфікс mailto:?</item>
+      <item name="link_is_external">Уведзены адрас падобны на вонкавую спасылку, вы жадаеце дадаць прэфікс http://?</item>
+      <item name="link_list">Спіс спасылак</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">Выраўноўванне</item>
+      <item name="left">Налева</item>
+      <item name="center">Па цэнтры</item>
+      <item name="right">Направа</item>
+      <item name="full">Цалкам</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%d.%m.%Y</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">Уставіць дату</item>
+      <item name="inserttime_desc">Уставіць час</item>
+      <item name="months_long">Студзень,Люты,Сакавік,Красавік,Травень,Чэрвень,Ліпень,Аўгуст,Верасень,Кастрычнік,Лістапад,Снежань</item>
+      <item name="months_short">Сту,Лют,Сак,Кра,Тра,Чэр,Ліп,Аўг,Вер,Кас,Ліс,Сне</item>
+      <item name="day_long">Нядзеля,Панядзелак,Аўторак,Асяроддзе,Чацвер,Пятніца,Субота,Нядзеля</item>
+      <item name="day_short">Нд,Пн,Ат,Ас,Чц,Пт,Сб,Нд</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">Друк</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">Папярэдні прагляд</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">Кірунак злева направа</item>
+      <item name="rtl_desc">Кірунак справа налева</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">Уставіць новы пласт</item>
+      <item name="forward_desc">Перанесці наперад</item>
+      <item name="backward_desc">Перанесці назад</item>
+      <item name="absolute_desc">Улучыць/выключыць абсалютнае пазіцыянаванне</item>
+      <item name="content">Новы пласт…</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">Захаваць</item>
+      <item name="cancel_desc">Адмяніць усе змены</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">Уставіць непарыўны прабел</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">Праверыць арфаграфію</item>
+      <item name="download">ieSpell не выяўлены. Усталяваць?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">Гарызантальная лінія</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">Шырыня</item>
+      <item name="size">Вышыня</item>
+      <item name="noshade">Няма ценю</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">Смайлікі</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">Уставіць смайлік</item>
+      <item name="desc">Смайлікі</item>
+      <item name="cool">Клёвы</item>
+      <item name="cry">Плача</item>
+      <item name="embarassed">Ачмурэў</item>
+      <item name="foot_in_mouth">У_рот_мне_ногі!</item>
+      <item name="frown">Хмурны</item>
+      <item name="innocent">Нявіннасць</item>
+      <item name="kiss">Пацалунак</item>
+      <item name="laughing">Смяецца</item>
+      <item name="money_mouth">Шмат грошай</item>
+      <item name="sealed">Запячатана</item>
+      <item name="smile">Усміхаецца</item>
+      <item name="surprised">Здзіўлены</item>
+      <item name="tongue_out">Паказвае язык</item>
+      <item name="undecided">У нерашучасці</item>
+      <item name="wink">Падморгвае</item>
+      <item name="yell">Лямантуе</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">Знайсці</item>
+      <item name="replace_desc">Знайсці/Замяніць</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">Знайсці зноў</item>
+      <item name="notfound">Пошук скончаны. Радок не знойдзеная.</item>
+      <item name="search_title">Знайсці</item>
+      <item name="replace_title">Знайсці/Замяніць</item>
+      <item name="allreplaced">Усе сустракаемыя радкі былі замененыя.</item>
+      <item name="findwhat">Што знайсці</item>
+      <item name="replacewith">Замяніць на</item>
+      <item name="direction">Кірунак</item>
+      <item name="up">Уверх</item>
+      <item name="down">Уніз</item>
+      <item name="mcase">Улічваць рэгістр</item>
+      <item name="findnext">Знайсці наступную</item>
+      <item name="replace">Замяніць</item>
+      <item name="replaceall">Замяніць усё</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">Уставіць/рэдагаваць малюнак</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">Агульныя</item>
+      <item name="tab_appearance">Вонкавы выгляд</item>
+      <item name="tab_advanced">Дадатковыя</item>
+      <item name="general">Агульныя</item>
+      <item name="title">Назоў</item>
+      <item name="preview">Папярэдні прагляд</item>
+      <item name="constrain_proportions">Захоўваць прапорцыі</item>
+      <item name="langdir">Кірунак мовы</item>
+      <item name="langcode">Код мовы</item>
+      <item name="long_desc">Спасылка на падрабязнае апісанне</item>
+      <item name="style">Стыль</item>
+      <item name="classes">Класы</item>
+      <item name="ltr">Злева направа</item>
+      <item name="rtl">Справа налева</item>
+      <item name="id">Ідэнтыфікатар</item>
+      <item name="map">Малюнак-карта</item>
+      <item name="swap_image">Памяняць малюнак</item>
+      <item name="alt_image">Альтэрнатыўны малюнак</item>
+      <item name="mouseover">пры навядзенні мышы</item>
+      <item name="mouseout">пры адвядзенні мышы</item>
+      <item name="misc">Рознае</item>
+      <item name="example_img">Папярэдні прагляд вонкавага выгляду</item>
+      <item name="missing_alt">Вы ўпэўненыя, што жадаеце працягнуць без апісання малюнка? Без яго малюнак можа быць недаступна карыстачам з абмежаванай працаздольнасцю, або выкарыстоўвалым тэкставы браўзэр, або якія глядзяць старонкі з адключанымі малюнкамі.</item>
+      <item name="dialog_title">Уставіць/рэдагаваць малюнак</item>
+      <item name="src">Адрас малюнка</item>
+      <item name="alt">Апісанне малюнка</item>
+      <item name="list">Спіс малюнкаў</item>
+      <item name="border">Мяжа</item>
+      <item name="dimensions">Памеры</item>
+      <item name="vspace">Вертыкальная прастора</item>
+      <item name="hspace">Гарызантальная прастора</item>
+      <item name="align">Выраўноўванне</item>
+      <item name="align_baseline">Па падставе</item>
+      <item name="align_top">Па версе</item>
+      <item name="align_middle">Па цэнтры</item>
+      <item name="align_bottom">Па нізе</item>
+      <item name="align_texttop">Па версе тэксту</item>
+      <item name="align_textbottom">Па нізе тэксту</item>
+      <item name="align_left">Налева</item>
+      <item name="align_right">Направа</item>
+      <item name="image_list">Спіс малюнкаў</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">Уставіць/рэдагаваць спасылку</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">Уставіць/рэдагаваць спасылку</item>
+      <item name="url">Адрас спасылкі</item>
+      <item name="target">Мэта</item>
+      <item name="titlefield">Назоў</item>
+      <item name="is_email">Уведзены адрас падобны на email, вы жадаеце дадаць прэфікс mailto:?</item>
+      <item name="is_external">Уведзены адрас падобны на вонкавую спасылку, вы жадаеце дадаць прэфікс http://?</item>
+      <item name="list">Спіс спасылак</item>
+      <item name="general_tab">Агульныя</item>
+      <item name="popup_tab">Усплывальнае акно</item>
+      <item name="events_tab">Падзеі</item>
+      <item name="advanced_tab">Дадатковыя</item>
+      <item name="general_props">Агульныя ўласцівасці</item>
+      <item name="popup_props">Уласцівасці ўсплывальнага акна</item>
+      <item name="event_props">Падзеі</item>
+      <item name="advanced_props">Дадатковыя ўласцівасці</item>
+      <item name="popup_opts">Параметры</item>
+      <item name="anchor_names">Якары</item>
+      <item name="target_same">Адкрыць у гэтым акне / фрэйме</item>
+      <item name="target_parent">Адкрыць у бацькоўскім акне / фрэйме</item>
+      <item name="target_top">Адкрыць у верхнім фрэйме (замяшчае ўсё астатнія)</item>
+      <item name="target_blank">Адкрыць у новым акне</item>
+      <item name="popup">Усплывальнае Javascript-акно</item>
+      <item name="popup_url">Адрас усплывальнага акна</item>
+      <item name="popup_name">Назоў акна</item>
+      <item name="popup_return">Уставіць 'return false'</item>
+      <item name="popup_scrollbars">Паказаць палосы прагорткі</item>
+      <item name="popup_statusbar">Паказаць радок стану</item>
+      <item name="popup_toolbar">Паказаць панэлі прылад</item>
+      <item name="popup_menubar">Паказаць радок меню</item>
+      <item name="popup_location">Паказаць радок адрасу</item>
+      <item name="popup_resizable">Зрабіць памер акна змяняным</item>
+      <item name="popup_dependent">Залежныя (толькі Mozilla/Firefox)</item>
+      <item name="popup_size">Памер</item>
+      <item name="popup_position">Пазіцыя (X/Y)</item>
+      <item name="id">Ідэнтыфікатар</item>
+      <item name="style">Стыль</item>
+      <item name="classes">Класы</item>
+      <item name="target_name">Назоў мэты</item>
+      <item name="langdir">Кірунак мовы</item>
+      <item name="target_langcode">Мэтавая мова</item>
+      <item name="langcode">Код мовы</item>
+      <item name="encoding">Мэтавая кадоўка</item>
+      <item name="mime">Мэтавы MIME-тып</item>
+      <item name="rel">Стаўленне старонка да мэты</item>
+      <item name="rev">Стаўленне мэта да старонкі</item>
+      <item name="tabindex">Азначнік табуляцыі</item>
+      <item name="accesskey">Клавіша доступу</item>
+      <item name="ltr">Злева направа</item>
+      <item name="rtl">Справа налева</item>
+      <item name="link_list">Спіс спасылак</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">Вынятка</item>
+      <item name="abbr_desc">Абрэвіятура</item>
+      <item name="acronym_desc">Акронім</item>
+      <item name="del_desc">Выдалены тэкст</item>
+      <item name="ins_desc">Дададзены тэкст</item>
+      <item name="attribs_desc">Уставіць/рэдагаваць атрыбуты</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">Назоў</item>
+      <item name="attribute_label_id">Ідэнтыфікатар</item>
+      <item name="attribute_label_class">Клас</item>
+      <item name="attribute_label_style">Стыль</item>
+      <item name="attribute_label_cite">Вынятка</item>
+      <item name="attribute_label_datetime">Дата/час</item>
+      <item name="attribute_label_langdir">Кірунак тэксту</item>
+      <item name="attribute_option_ltr">Злева направа</item>
+      <item name="attribute_option_rtl">Справа налева</item>
+      <item name="attribute_label_langcode">Мова</item>
+      <item name="attribute_label_tabindex">Азначнік табуляцыі</item>
+      <item name="attribute_label_accesskey">Клавіша доступу</item>
+      <item name="attribute_events_tab">Падзеі</item>
+      <item name="attribute_attrib_tab">Атрыбуты</item>
+      <item name="general_tab">Агульныя</item>
+      <item name="attrib_tab">Атрыбуты</item>
+      <item name="events_tab">Падзеі</item>
+      <item name="fieldset_general_tab">Агульныя налады</item>
+      <item name="fieldset_attrib_tab">Атрыбуты элемента</item>
+      <item name="fieldset_events_tab">Падзеі элемента</item>
+      <item name="title_ins_element">Элемент дададзенага тэксту</item>
+      <item name="title_del_element">Элемент выдаленага тэксту</item>
+      <item name="title_acronym_element">Элемент акроніма</item>
+      <item name="title_abbr_element">Элемент абрэвіятуры</item>
+      <item name="title_cite_element">Элемент выняткі</item>
+      <item name="remove">Прыбраць</item>
+      <item name="insert_date">Уставіць бягучую дату/час</item>
+      <item name="option_ltr">Злева направа</item>
+      <item name="option_rtl">Справа налева</item>
+      <item name="attribs_title">Уставіць/рэдагаваць атрыбуты</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">Рэдагаваць стыль CSS</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">35</item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">Рэдагаваць стыль CSS</item>
+      <item name="apply">Ужыць</item>
+      <item name="text_tab">Тэкст</item>
+      <item name="background_tab">Фон</item>
+      <item name="block_tab">Блок</item>
+      <item name="box_tab">Кантэйнер</item>
+      <item name="border_tab">Мяжа</item>
+      <item name="list_tab">Спіс</item>
+      <item name="positioning_tab">Пазіцыянаванне</item>
+      <item name="text_props">Тэкст</item>
+      <item name="text_font">Шрыфт</item>
+      <item name="text_size">Памер</item>
+      <item name="text_weight">Вага</item>
+      <item name="text_style">Стыль</item>
+      <item name="text_variant">Напісанне</item>
+      <item name="text_lineheight">Вышыня радка</item>
+      <item name="text_case">Рэгістр</item>
+      <item name="text_color">Колер</item>
+      <item name="text_decoration">Упрыгожванне</item>
+      <item name="text_overline">надкрэслены</item>
+      <item name="text_underline">падкрэслены</item>
+      <item name="text_striketrough">перакрэслены</item>
+      <item name="text_blink">які мігціць</item>
+      <item name="text_none">ніякага</item>
+      <item name="background_color">Колер фону</item>
+      <item name="background_image">Фонавы малюнак</item>
+      <item name="background_repeat">Паўтор</item>
+      <item name="background_attachment">Прымацаванне</item>
+      <item name="background_hpos">Гарызантальная пазіцыя</item>
+      <item name="background_vpos">Вертыкальная пазіцыя</item>
+      <item name="block_wordspacing">Прамежкі паміж словамі</item>
+      <item name="block_letterspacing">Прамежкі паміж знакамі</item>
+      <item name="block_vertical_alignment">Вертыкальнае выраўноўванне</item>
+      <item name="block_text_align">Выраўноўванне тэксту</item>
+      <item name="block_text_indent">Водступ тэксту</item>
+      <item name="block_whitespace">Прабел</item>
+      <item name="block_display">Адлюстраванне</item>
+      <item name="box_width">Шырыня</item>
+      <item name="box_height">Вышыня</item>
+      <item name="box_float">Якое плавае</item>
+      <item name="box_clear">Ачысціць</item>
+      <item name="padding">Набіванне</item>
+      <item name="same">Аднолькава для ўсіх</item>
+      <item name="top">Зверху</item>
+      <item name="right">Справа</item>
+      <item name="bottom">Знізу</item>
+      <item name="left">Злева</item>
+      <item name="margin">Палі</item>
+      <item name="style">Стыль</item>
+      <item name="width">Шырыня</item>
+      <item name="height">Вышыня</item>
+      <item name="color">Колер</item>
+      <item name="list_type">Тып</item>
+      <item name="bullet_image">Малюнак маркера</item>
+      <item name="position">Пазіцыя</item>
+      <item name="positioning_type">Тып</item>
+      <item name="visibility">Бачнасць</item>
+      <item name="zindex">Z-азначнік</item>
+      <item name="overflow">Абцячэнне</item>
+      <item name="placement">Размяшчэнне</item>
+      <item name="clip">Абразанне</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">Уставіць як просты тэкст</item>
+      <item name="paste_word_desc">Уставіць з Word</item>
+      <item name="selectall_desc">Вылучыць усё</item>
+      <!--<item name="plaintext_mode_sticky">Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode.</item>-->
+      <!--<item name="plaintext_mode">Paste is now in plain text mode. Click again to toggle back to regular paste mode.</item>-->
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">Выкарыстайце спалучэнне клавіш CTRL+V каб уставіць тэкст у акно.</item>
+      <item name="text_linebreaks">Захоўваць парывы радкоў</item>
+      <item name="word_title">Выкарыстайце спалучэнне клавіш CTRL+V каб уставіць тэкст у акно.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">Устаўляе новую табліцу</item>
+      <item name="row_before_desc">Уставіць радок перад</item>
+      <item name="row_after_desc">Уставіць радок пасля</item>
+      <item name="delete_row_desc">Выдаліць радок</item>
+      <item name="col_before_desc">Уставіць слупок перад</item>
+      <item name="col_after_desc">Уставіць слупок пасля</item>
+      <item name="delete_col_desc">Выдаліць слупок</item>
+      <item name="split_cells_desc">Падзяліць злепленыя вочкі</item>
+      <item name="merge_cells_desc">Склеіць вочкі</item>
+      <item name="row_desc">Уласцівасці радка</item>
+      <item name="cell_desc">Уласцівасці вочка</item>
+      <item name="props_desc">Уласцівасці табліцы</item>
+      <item name="paste_row_before_desc">Уставіць радок табліцы перад</item>
+      <item name="paste_row_after_desc">Уставіць радок табліцы пасля</item>
+      <item name="cut_row_desc">Выразаць радок</item>
+      <item name="copy_row_desc">Капіяваць радок</item>
+      <item name="del">Выдаліць табліцу</item>
+      <item name="row">Радок</item>
+      <item name="col">Слупок</item>
+      <item name="cell">Вочка</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width"></item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">Агульныя</item>
+      <item name="advanced_tab">Дадатковыя</item>
+      <item name="general_props">Агульныя ўласцівасці</item>
+      <item name="advanced_props">Дадатковыя ўласцівасці</item>
+      <item name="rowtype">Радок у часткі табліцы</item>
+      <item name="title">Уставіць/змяніць табліцу</item>
+      <item name="width">Шырыня</item>
+      <item name="height">Вышыня</item>
+      <item name="cols">Слупкі</item>
+      <item name="rows">Радкі</item>
+      <item name="cellspacing">Адлегласць паміж вочкамі</item>
+      <item name="cellpadding">Набіванне ў вочках</item>
+      <item name="border">Мяжа</item>
+      <item name="align">Выраўноўванне</item>
+      <item name="align_default">Па змаўчанні</item>
+      <item name="align_left">Налева</item>
+      <item name="align_right">Направа</item>
+      <item name="align_middle">Па цэнтры</item>
+      <item name="row_title">Уласцівасці радка</item>
+      <item name="cell_title">Уласцівасці вочка</item>
+      <item name="cell_type">Тып вочка</item>
+      <item name="valign">Вертыкальнае выраўноўванне</item>
+      <item name="align_top">Па версе</item>
+      <item name="align_bottom">Па нізе</item>
+      <item name="bordercolor">Колер мяжы</item>
+      <item name="bgcolor">Колер фону</item>
+      <item name="merge_cells_title">Зліць вочкі</item>
+      <item name="id">Ідэнтыфікатар</item>
+      <item name="style">Стыль</item>
+      <item name="langdir">Кірунак мовы</item>
+      <item name="langcode">Код мовы</item>
+      <item name="mime">Мэтавы MIME-тып</item>
+      <item name="ltr">Злева направа</item>
+      <item name="rtl">Справа налева</item>
+      <item name="bgimage">Фонавы малюнак</item>
+      <item name="summary">Зводка</item>
+      <item name="td">Дадзеныя</item>
+      <item name="th">Загаловак</item>
+      <item name="cell_cell">Абнавіць бягучае вочка</item>
+      <item name="cell_row">Абнавіць усе вочкі ў радку</item>
+      <item name="cell_all">Абнавіць усе вочкі ў табліцы</item>
+      <item name="row_row">Абнавіць бягучы радок</item>
+      <item name="row_odd">Абнавіць няцотныя радкі ў табліцы</item>
+      <item name="row_even">Абнавіць цотныя радкі ў табліцы</item>
+      <item name="row_all">Абнавіць усе радкі ў табліцы</item>
+      <item name="thead">Верхняя частка табліцы</item>
+      <item name="tbody">Асноўная частка табліцы</item>
+      <item name="tfoot">Ніжняя частка табліцы</item>
+      <item name="scope">Межы</item>
+      <item name="rowgroup">Група радкоў</item>
+      <item name="colgroup">Група слупкоў</item>
+      <item name="col_limit">Вы перавысілі максімальную колькасць у {$cols} слупкоў.</item>
+      <item name="row_limit">Вы перавысілі максімальную колькасць у {$rows} радкоў.</item>
+      <item name="cell_limit">Вы перавысілі максімальную колькасць у {$cells} вочак.</item>
+      <item name="missing_scope">Вы сапраўды жадаеце працягнуць без указання меж гэтага вочка загалоўка? Без гэтага некаторым карыстачам з абмежаванай працаздольнасцю можа быць цяжка зразумець утрыманне або дадзеныя табліцы.</item>
+      <item name="caption">Загаловак табліцы</item>
+      <item name="frame">Рамка</item>
+      <item name="frame_none">нічога</item>
+      <item name="frame_groups">групы</item>
+      <item name="frame_rows">радкі</item>
+      <item name="frame_cols">слупкі</item>
+      <item name="frame_all">усё</item>
+      <item name="rules">Лінейкі</item>
+      <item name="rules_void">нішто</item>
+      <item name="rules_above">зверху</item>
+      <item name="rules_below">знізу</item>
+      <item name="rules_hsides">гарызантальныя бакі</item>
+      <item name="rules_lhs">левыя гарызантальныя бакі</item>
+      <item name="rules_rhs">правыя гарызантальныя бакі</item>
+      <item name="rules_vsides">вертыкальныя бакі</item>
+      <item name="rules_box">кантэйнер</item>
+      <item name="rules_border">мяжа</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">Занесеныя змены будуць страчаныя, калі вы сыдзеце з гэтай старонкі.</item>
+      <!--<item name="restore_content">Restore auto-saved content.</item>-->
+      <!--<item name="warning_message">If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?.</item>-->
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">Улучыць/выключыць поўнаэкранны рэжым</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">Уставіць/рэдагаваць медыя-аб'ект</item>
+      <item name="edit">Рэдагаваць медыя-аб'ект</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">Уставіць/рэдагаваць медыя-аб'ект</item>
+      <item name="general">Агульныя</item>
+      <item name="advanced">Дадатковыя</item>
+      <item name="file">Файл/адрас</item>
+      <item name="list">Спіс</item>
+      <item name="size">Памеры</item>
+      <item name="preview">Папярэдні прагляд</item>
+      <item name="constrain_proportions">Захоўваць прапорцыі</item>
+      <item name="type">Тып</item>
+      <item name="id">Ідэнтыфікатар</item>
+      <item name="name">Назоў</item>
+      <item name="class_name">Клас</item>
+      <item name="vspace">Вертыкальная прастора</item>
+      <item name="hspace">Гарызантальная прастора</item>
+      <item name="play">Прайграваць аўтаматычна</item>
+      <item name="loop">Зацыкліць</item>
+      <item name="menu">Адлюстраваць меню</item>
+      <item name="quality">Якасць</item>
+      <item name="scale">Маштаб</item>
+      <item name="align">Выраўноўванне</item>
+      <item name="salign">SAlign</item>
+      <item name="wmode">WMode</item>
+      <item name="bgcolor">Фон</item>
+      <item name="base">Аснова</item>
+      <item name="flashvars">Flashvars</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">AutoHREF</item>
+      <item name="cache">Кэш</item>
+      <item name="hidden">Скрытое</item>
+      <item name="controller">Controller</item>
+      <item name="kioskmode">Kiosk mode</item>
+      <item name="playeveryframe">Play every frame</item>
+      <item name="targetcache">Target cache</item>
+      <item name="correction">No correction</item>
+      <item name="enablejavascript">Enable JavaScript</item>
+      <item name="starttime">Start time</item>
+      <item name="endtime">End time</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">Choke speed</item>
+      <item name="target">Target</item>
+      <item name="volume">Volume</item>
+      <item name="autostart">Auto start</item>
+      <item name="enabled">Enabled</item>
+      <item name="fullscreen">Fullscreen</item>
+      <item name="invokeurls">Invoke URLs</item>
+      <item name="mute">Mute</item>
+      <item name="stretchtofit">Stretch to fit</item>
+      <item name="windowlessvideo">Windowless video</item>
+      <item name="balance">Balance</item>
+      <item name="baseurl">Base URL</item>
+      <item name="captioningid">Captioning id</item>
+      <item name="currentmarker">Current marker</item>
+      <item name="currentposition">Current position</item>
+      <item name="defaultframe">Default frame</item>
+      <item name="playcount">Play count</item>
+      <item name="rate">Rate</item>
+      <item name="uimode">UI Mode</item>
+      <item name="flash_options">Flash options</item>
+      <item name="qt_options">Quicktime options</item>
+      <item name="wmp_options">Windows media player options</item>
+      <item name="rmp_options">Real media player options</item>
+      <item name="shockwave_options">Shockwave options</item>
+      <item name="autogotourl">Auto goto URL</item>
+      <item name="center">Center</item>
+      <item name="imagestatus">Image status</item>
+      <item name="maintainaspect">Maintain aspect</item>
+      <item name="nojava">No java</item>
+      <item name="prefetch">Prefetch</item>
+      <item name="shuffle">Shuffle</item>
+      <item name="console">Console</item>
+      <item name="numloop">Num loops</item>
+      <item name="controls">Controls</item>
+      <item name="scriptcallbacks">Script callbacks</item>
+      <item name="swstretchstyle">Stretch style</item>
+      <item name="swstretchhalign">Stretch H-Align</item>
+      <item name="swstretchvalign">Stretch V-Align</item>
+      <item name="sound">Sound</item>
+      <item name="progress">Progress</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn">Streamed rtsp resources should be added to the QT Src field under the advanced tab.\nYou should also add a non streamed version to the Src field..</item>
+      <item name="align_top">Top</item>
+      <item name="align_right">Right</item>
+      <item name="align_bottom">Bottom</item>
+      <item name="align_left">Left</item>
+      <item name="align_center">Center</item>
+      <item name="align_top_left">Top left</item>
+      <item name="align_top_right">Top right</item>
+      <item name="align_bottom_left">Bottom left</item>
+      <item name="align_bottom_right">Bottom right</item>
+      <item name="flv_options">Flash video options</item>
+      <item name="flv_scalemode">Scale mode</item>
+      <item name="flv_buffer">Buffer</item>
+      <item name="flv_startimage">Start image</item>
+      <item name="flv_starttime">Start time</item>
+      <item name="flv_defaultvolume">Default volumne</item>
+      <item name="flv_hiddengui">Hidden GUI</item>
+      <item name="flv_autostart">Auto start</item>
+      <item name="flv_loop">Loop</item>
+      <item name="flv_showscalemodes">Show scale modes</item>
+      <item name="flv_smoothvideo">Smooth video</item>
+      <item name="flv_jscallback">JS Callback</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">Document properties</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Document properties</item>
+      <item name="meta_tab">General</item>
+      <item name="appearance_tab">Appearance</item>
+      <item name="advanced_tab">Advanced</item>
+      <item name="meta_props">Meta information</item>
+      <item name="langprops">Language and encoding</item>
+      <item name="meta_title">Title</item>
+      <item name="meta_keywords">Keywords</item>
+      <item name="meta_description">Description</item>
+      <item name="meta_robots">Robots</item>
+      <item name="doctypes">Doctype</item>
+      <item name="langcode">Language code</item>
+      <item name="langdir">Language direction</item>
+      <item name="ltr">Left to right</item>
+      <item name="rtl">Right to left</item>
+      <item name="xml_pi">XML declaration</item>
+      <item name="encoding">Character encoding</item>
+      <item name="appearance_bgprops">Background properties</item>
+      <item name="appearance_marginprops">Body margins</item>
+      <item name="appearance_linkprops">Link colors</item>
+      <item name="appearance_textprops">Text properties</item>
+      <item name="bgcolor">Background color</item>
+      <item name="bgimage">Background image</item>
+      <item name="left_margin">Left margin</item>
+      <item name="right_margin">Right margin</item>
+      <item name="top_margin">Top margin</item>
+      <item name="bottom_margin">Bottom margin</item>
+      <item name="text_color">Text color</item>
+      <item name="font_size">Font size</item>
+      <item name="font_face">Font face</item>
+      <item name="link_color">Link color</item>
+      <item name="hover_color">Hover color</item>
+      <item name="visited_color">Visited color</item>
+      <item name="active_color">Active color</item>
+      <item name="textcolor">Color</item>
+      <item name="fontsize">Font size</item>
+      <item name="fontface">Font family</item>
+      <item name="meta_index_follow">Index and follow the links</item>
+      <item name="meta_index_nofollow">Index and don't follow the links</item>
+      <item name="meta_noindex_follow">Do not index but follow the links</item>
+      <item name="meta_noindex_nofollow">Do not index and don\'t follow the links</item>
+      <item name="appearance_style">Stylesheet and style properties</item>
+      <item name="stylesheet">Stylesheet</item>
+      <item name="style">Style</item>
+      <item name="author">Author</item>
+      <item name="copyright">Copyright</item>
+      <item name="add">Add new element</item>
+      <item name="remove">Remove selected element</item>
+      <item name="moveup">Move selected element up</item>
+      <item name="movedown">Move selected element down</item>
+      <item name="head_elements">Head elements</item>
+      <item name="info">Information</item>
+      <item name="add_title">Title element</item>
+      <item name="add_meta">Meta element</item>
+      <item name="add_script">Script element</item>
+      <item name="add_style">Style element</item>
+      <item name="add_link">Link element</item>
+      <item name="add_base">Base element</item>
+      <item name="add_comment">Comment node</item>
+      <item name="title_element">Title element</item>
+      <item name="script_element">Script element</item>
+      <item name="style_element">Style element</item>
+      <item name="base_element">Base element</item>
+      <item name="link_element">Link element</item>
+      <item name="meta_element">Meta element</item>
+      <item name="comment_element">Comment</item>
+      <item name="src">Src</item>
+      <item name="language">Language</item>
+      <item name="href">Href</item>
+      <item name="target">Target</item>
+      <item name="type">Type</item>
+      <item name="charset">Charset</item>
+      <item name="defer">Defer</item>
+      <item name="media">Media</item>
+      <item name="properties">Properties</item>
+      <item name="name">Name</item>
+      <item name="value">Value</item>
+      <item name="content">Content</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href lang</item>
+      <item name="general_props">General</item>
+      <item name="advanced_props">Advanced</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Insert predefined template content</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">Templates</item>
+      <item name="label">Template</item>
+      <item name="desc_label">Description</item>
+      <item name="desc">Insert predefined template content</item>
+      <item name="select">Select a template</item>
+      <item name="preview">Preview</item>
+      <item name="warning">Warning: Updating a template with a different one may cause data loss.</item>
+      <item name="mdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="cdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="months_long">January,February,March,April,May,June,July,August,September,October,November,December</item>
+      <item name="months_short">Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec</item>
+      <item name="day_long">Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday</item>
+      <item name="day_short">Sun,Mon,Tue,Wed,Thu,Fri,Sat,Sun</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Visual control characters on/off.</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">Праверыць арфаграфію</item>
+      <item name="menu">Параметры праверкі арфаграфіі</item>
+      <item name="ignore_word">Ігнараваць слова</item>
+      <item name="ignore_words">Ігнараваць усё</item>
+      <item name="langs">Мовы</item>
+      <item name="wait">Калі ласка, пачакайце...</item>
+      <item name="sug">Варыянты</item>
+      <item name="no_sug">Няма варыянтаў</item>
+      <item name="no_mpell">Памылак не выяўлена.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">Уставіць падзельнік старонкі.</item>
+    </group>
+    <group target="advlist">
+      <!--<item name="types">Types</item>-->
+      <!--<item name="def">Default</item>-->
+      <!--<item name="lower_alpha">Lower alpha</item>-->
+      <!--<item name="lower_greek">Lower greek</item>-->
+      <!--<item name="lower_roman">Lower roman</item>-->
+      <!--<item name="upper_alpha">Upper alpha</item>-->
+      <!--<item name="upper_roman">Upper roman</item>-->
+      <!--<item name="circle">Circle</item>-->
+      <!--<item name="disc">Disc</item>-->
+      <!--<item name="square">Square</item>-->
+    </group>
+  </language>
+</language-pack>

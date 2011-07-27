@@ -1,0 +1,928 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>Motti Bartall</author>
+    <version major="8" minor="9" releasedate="2010-12-11" />
+    <description>This is the Hebrew language pack for TinyMCE</description>
+  </header>
+  <language code="he" title="Hebrew" dir="rtl">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">ברצונך להשתמש בעורך המתקדם?</item>
+      <item name="apply">אישור</item>
+      <item name="insert">הוספה</item>
+      <item name="update">עדכון</item>
+      <item name="cancel">ביטול</item>
+      <item name="close">סגירה</item>
+      <item name="browse">עיון</item>
+      <item name="class_name">מחלקה</item>
+      <item name="not_set">-- לא הוגדר --</item>
+      <item name="clipboard_msg">
+        העתקה/גזירה והדבקה אינם זמינים ב Mozilla וב-Firefox.
+        האם ברצונך לקבל מידע נוסף על הנושא?
+      </item>
+      <item name="clipboard_no_support">כרגע לא נתמך על ידי הדפדפן שלך. השתמש בקיצורי המקלדת.</item>
+      <item name="popup_blocked">חוסם פריטים מוקפצים מנע מחלון חשוב מלהפתח,אם ברצונך להשתמש בכלי זה עליך לבטל את חוסם הפריטים</item>
+      <item name="invalid_data">שגיאה: הוקלד מידע לא תקני. המידע סומן באדום.</item>
+      <item name="more_colors">עוד צבעים</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">מודגש (Ctrl+B)</item>
+      <item name="italic_desc">נטוי (Ctrl+I)</item>
+      <item name="underline_desc">קו תחתון (Ctrl+U)</item>
+      <item name="striketrough_desc">קו חוצה</item>
+      <item name="bullist_desc">תבליטים</item>
+      <item name="numlist_desc">מספור</item>
+      <item name="undo_desc">ביטול פעולה (Ctrl+Z)</item>
+      <item name="redo_desc"> (Ctrl+Y)</item>
+      <item name="cleanup_desc">נקה קוד</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">סגנונות</item>
+      <item name="font_size">גודל גופן</item>
+      <item name="fontdefault">גופן</item>
+      <item name="block">עיצוב</item>
+      <item name="paragraph">פסקה</item>
+      <item name="div">Div</item>
+      <item name="address">כתובת</item>
+      <item name="pre">Preformatted</item>
+      <item name="h1">כותרת 1</item>
+      <item name="h2">כותרת 2</item>
+      <item name="h3">כותרת 3</item>
+      <item name="h4">כותרת 4</item>
+      <item name="h5">כותרת 5</item>
+      <item name="h6">כותרת 6</item>
+      <item name="blockquote">ציטוט קטע</item>
+      <item name="code">קוד</item>
+      <item name="samp">דוגמת קוד</item>
+      <item name="dt">מושג</item>
+      <item name="dd">הגדרת המושג</item>
+      <!-- Buttons -->
+      <item name="bold_desc">מודגש (Ctrl+B)</item>
+      <item name="italic_desc">נטוי (Ctrl+I)</item>
+      <item name="underline_desc">קו תחתון (Ctrl+U)</item>
+      <item name="striketrough_desc">קו חוצה</item>
+      <item name="justifyleft_desc">יישור טקסט לשמאל</item>
+      <item name="justifycenter_desc">מירכוז טקסט</item>
+      <item name="justifyright_desc">יישור טקסט לימין</item>
+      <item name="justifyfull_desc">יישור לשני הצדדים</item>
+      <item name="bullist_desc">תבליטים</item>
+      <item name="numlist_desc">מספור</item>
+      <item name="outdent_desc">הגדלת כניסה</item>
+      <item name="indent_desc">הקטנת כניסה</item>
+      <item name="undo_desc">ביטול פעולה (Ctrl+Z)</item>
+      <item name="redo_desc">חזרה על פעולה (Ctrl+Y)</item>
+      <item name="link_desc">הוספת/עריכת קישור</item>
+      <item name="unlink_desc">הסרת קישור</item>
+      <item name="image_desc">הוספה/עריכת דף תמונה</item>
+      <item name="cleanup_desc">ניקוי קוד</item>
+      <item name="code_desc">עריכת קוד HTML</item>
+      <item name="sub_desc">כתב עילי</item>
+      <item name="sup_desc">כתב תחתי</item>
+      <item name="hr_desc">הוספת קו מפריד</item>
+      <item name="removeformat_desc">הסרת עיצוב</item>
+      <item name="custom1_desc">התאור שלך כאו</item>
+      <item name="forecolor_desc">בחירת צבע גופן</item>
+      <item name="backcolor_desc">בחירת צבע רקע</item>
+      <item name="charmap_desc">הוספת סימן</item>
+      <item name="visualaid_desc">הצגה או הסתרה של סימוני עיצוב</item>
+      <item name="anchor_desc">הוספת/עריכת סימניה</item>
+      <item name="cut_desc">גזירה</item>
+      <item name="copy_desc">העתקה</item>
+      <item name="paste_desc">הדבקה</item>
+      <item name="image_props_desc">מאפייני התמונה</item>
+      <item name="newdocument_desc">מסמך חדש</item>
+      <item name="help_desc">עזרה</item>
+      <item name="blockquote_desc">ציטוט</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">העתק/גזור/הדבק לא זמינים ב Mozilla וב-Firefox.
+      האם ברצונך לקבל מידע נוסף על הנושא?</item>
+      <item name="path">path</item>
+      <item name="newdocument">האם ברצונך למחוק את כל התוכן?</item>
+      <item name="toolbar_focus">העברה לסרגל הכלים - Alt+Q, העברה למעבד תמלילים - Alt-Z, העברה לנתיב האלמטים - Alt-X</item>
+      <item name="more_colors">עוד צבעים</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">אודות TinyMCE</item>
+      <item name="about_general">אודות</item>
+      <item name="about_help">עזרה</item>
+      <item name="about_license">רשיון</item>
+      <item name="about_plugins">תוספות</item>
+      <item name="about_plugin">תוספת</item>
+      <item name="about_author">יוצר</item>
+      <item name="about_version">גירסה</item>
+      <item name="about_loaded">תוספות פעילות</item>
+      <!-- Anchor -->
+      <item name="anchor_title">הוספה/עריכת סימניה</item>
+      <item name="anchor_name">שם הסימניה</item>
+      <!-- Source -->
+      <item name="code_title">עורך ה-HTML</item>
+      <item name="code_wordwrap">גלישת טקסט</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">בחירת צבע</item>
+      <item name="colorpicker_picker_tab">בורר</item>
+      <item name="colorpicker_picker_title">בורר הצבעים</item>
+      <item name="colorpicker_palette_tab">לוח צבעים</item>
+      <item name="colorpicker_palette_title">לוח צבעים</item>
+      <item name="colorpicker_named_tab">צבעים בעלי שמות</item>
+      <item name="colorpicker_named_title">צבעים בעלי שמות</item>
+      <item name="colorpicker_color">צבע:</item>
+      <item name="colorpicker_name">שם:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">בחירת סימן</item>
+      <!-- Image -->
+      <item name="image_title">הוספה/עריכת תמונה</item>
+      <item name="image_src">כתובת:</item>
+      <item name="image_alt">תיאור</item>
+      <item name="image_list">רשימה</item>
+      <item name="image_border">גבול</item>
+      <item name="image_dimensions">גודל</item>
+      <item name="image_vspace">רווח אנכי</item>
+      <item name="image_hspace">רווח אופקי</item>
+      <item name="image_align">יישור</item>
+      <item name="image_align_baseline">קו ההתחלה</item>
+      <item name="image_align_top">קצה העליון</item>
+      <item name="image_align_middle">אמצע</item>
+      <item name="image_align_bottom">קצה התחתון</item>
+      <item name="image_align_texttop">קצה העליון של הטקסט</item>
+      <item name="image_align_textbottom">קצה התחתון של הטקסט</item>
+      <item name="image_align_left">שמאל</item>
+      <item name="image_align_right">ימין</item>
+      <!-- Link -->
+      <item name="link_title">הוספה/עריכת קישור</item>
+      <item name="link_url">כתובת הקישור</item>
+      <item name="link_target">יעד</item>
+      <item name="link_target_same">פתח קישור באותו חלון</item>
+      <item name="link_target_blank">פתח קישור בחלון חדש</item>
+      <item name="link_titlefield">כותרת</item>
+      <item name="link_is_email">כתובת ה-URL שהוכנסה היא ככל הנראה כתובת מייל האם ברצונך להוסיף את הקידומת MAILTO הנדרשת?</item>
+      <item name="link_is_external">כתובת ה-URL שהוכנסה היא ככל הנראה קישור חיצוני האם ברצונך להוסיף את הקידומת http:// הנדרשת?</item>
+      <item name="link_list">רשימת קישורים</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">יישור</item>
+      <item name="left">שמאל</item>
+      <item name="center">אמצע</item>
+      <item name="right">ימין</item>
+      <item name="full">שני הצדדים</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%d-%m-%Y</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">הוספת תאריך</item>
+      <item name="inserttime_desc">הוספת זמן</item>
+      <item name="months_long">ינואר,פברואר,מרץ,אפריל,מאי,יונע,יולי,אוגוסט,ספטמבר,אוקטובר,נובמבר,דצמבר</item>
+      <item name="months_short">ינואר,פברואר,מרץ,אפריל,מאי,יונע,יולי,אוגוסט,ספטמבר,אוקטובר,נובמבר,דצמבר</item>
+      <item name="day_long">יום ראשון,יום שני,יום שלישי,יום רביעי,יום חמישי,יום שיש,יום שבת,יום ראשון</item>
+      <item name="day_short">יום א',יום ב',יום ג',יום ד',יום ה',יום ו',שבת,יום א'</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">הדפסה</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">תצוגה מקדימה</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">כיוון טקסט משמאל לימין</item>
+      <item name="rtl_desc">כיוון טקסט מימין לשמאל</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">הוספת שכבה חדשה</item>
+      <item name="forward_desc">העברה קדימה</item>
+      <item name="backward_desc">העברה אחורה</item>
+      <item name="absolute_desc">בחירת מיקום מוחלט</item>
+      <item name="content">שכבה חדשה...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">שמירה</item>
+      <item name="cancel_desc">ביטול כל השינוים</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">הוספת רווח</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">בדיקת איות באנגלית</item>
+      <item name="download"> לא נמצא ieSpell. האם ברצונך להתקין?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">קו אופקי</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">רוחב</item>
+      <item name="size">גובה</item>
+      <item name="noshade">ללא צל</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">סמיילים</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">הוספת סמיילי</item>
+      <item name="desc">סמיילים</item>
+      <item name="cool">מגניב</item>
+      <item name="cry">בוכה</item>
+      <item name="embarassed">נבוך</item>
+      <item name="foot_in_mouth">רגל בפה</item>
+      <item name="frown">מזעיף את הפה</item>
+      <item name="innocent">תמים</item>
+      <item name="kiss">נשיקה</item>
+      <item name="laughing">צוחק</item>
+      <item name="money_mouth">כסף</item>
+      <item name="sealed">אטום</item>
+      <item name="smile">חיוך</item>
+      <item name="surprised">מופתע</item>
+      <item name="tongue_out">לשון בחוץ</item>
+      <item name="undecided">הסנני</item>
+      <item name="wink">קריצה</item>
+      <item name="yell">צעקה</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">חיפוש</item>
+      <item name="replace_desc">החלפה</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">חיפוש הבא</item>
+      <item name="notfound">החיפוש הסתיים. פריט החיפוש לא נמצא.</item>
+      <item name="search_title">חיפוש</item>
+      <item name="replace_title">חיפוש והחלפה</item>
+      <item name="allreplaced">כל פריטי החיפוש הוחלפו</item>
+      <item name="findwhat">לחפש את</item>
+      <item name="replacewith">להחליף ב</item>
+      <item name="direction">כיוון</item>
+      <item name="up">למעלה</item>
+      <item name="down">למטה</item>
+      <item name="mcase">התאם אותיות רישיות</item>
+      <item name="findnext">חפש את הבא</item>
+      <item name="replace">החלפה</item>
+      <item name="replaceall">החלפת הכל</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">הוספה/עריכת תמונה</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">כללי</item>
+      <item name="tab_appearance">מראה</item>
+      <item name="tab_advanced">מתקדם</item>
+      <item name="general">כללי</item>
+      <item name="title">כותרת</item>
+      <item name="preview">תצוגה מקדימה</item>
+      <item name="constrain_proportions">שמירה על פרופורציות</item>
+      <item name="langdir">כיוון השפה</item>
+      <item name="langcode">קוד השפה</item>
+      <item name="long_desc">תיאור קישור ארוך</item>
+      <item name="style">סגנון</item>
+      <item name="classes">Classes</item>
+      <item name="ltr">משמאל לימין</item>
+      <item name="rtl">מימין לשמאל</item>
+      <item name="id">Id</item>
+      <item name="map">Image map</item>
+      <item name="swap_image">החלפת תמונה</item>
+      <item name="alt_image">תמונה חליפית</item>
+      <item name="mouseover">בעת מעבר הסמן על התמונה</item>
+      <item name="mouseout">הסמן עבר את התמונה</item>
+      <item name="misc">שונות</item>
+      <item name="example_img">תצוגה מקדימה של התמונה</item>
+      <item name="missing_alt">להמשיך מבלי להוסיף תיאור לתמונה?</item>
+      <item name="dialog_title">הוספה/עריכת תמונה</item>
+      <item name="src">URL של התמונה</item>
+      <item name="alt">תיאור התמונה</item>
+      <item name="list">רשימת תמונות</item>
+      <item name="border">גבול</item>
+      <item name="dimensions">מימדים</item>
+      <item name="vspace">קו אנכי</item>
+      <item name="hspace">קו אופקי</item>
+      <item name="align">ישור</item>
+      <item name="align_baseline">קו בסיסי</item>
+      <item name="align_top">עליון</item>
+      <item name="align_middle">אמצע</item>
+      <item name="align_bottom">תחתית</item>
+      <item name="align_texttop">טקסט עליון</item>
+      <item name="align_textbottom">טקסט תחתון</item>
+      <item name="align_left">לשמאל</item>
+      <item name="align_right">Right</item>
+      <item name="image_list">רשימת תמונות</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">הוספת/עריכת קישור</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">הוספה/עריכת קישור</item>
+      <item name="url">כתובת הקישור</item>
+      <item name="target">יעד</item>
+      <item name="titlefield">כותרת הקישור</item>
+      <item name="is_email">כתובת ה-URL שהוכנסה היא ככל הנראה כתובת מייל האם ברצונך להוסיף את הקידומת MAILTO הנדרשת?</item>
+      <item name="is_external">כתובת ה-URL שהוכנסה היא ככל הנראה קישור חיצוני האם ברצונך להוסיף את הקידומת http:// הנדרשת?</item>
+      <item name="list">רשימת קישורים</item>
+      <item name="general_tab">כללי</item>
+      <item name="popup_tab">חלון מוקפץ</item>
+      <item name="events_tab">ארועים</item>
+      <item name="advanced_tab">מתקדם</item>
+      <item name="general_props">תכונות כלליות</item>
+      <item name="popup_props">תכונות חלון מוקפץ</item>
+      <item name="event_props">מאורעות</item>
+      <item name="advanced_props">תכונות מתקדמות</item>
+      <item name="popup_opts">אפשרויות</item>
+      <item name="anchor_names">קישור לסימניה</item>
+      <item name="target_same">פתיחה בחלון חדש/חלון בן</item>
+      <item name="target_parent">פתיחה בלון האבא/חלון בן</item>
+      <item name="target_top">פתיחה בחלון הבן הראשי(מחליף את כל חלונות הבנים)</item>
+      <item name="target_blank">פתיחה בחלון חדש</item>
+      <item name="popup">חלון מוקפץ javascript</item>
+      <item name="popup_url">חלון מוקפץ URL</item>
+      <item name="popup_name">שם החלון</item>
+      <item name="popup_return">יש להכניס 'return false'</item>
+      <item name="popup_scrollbars">הצגת פס גלילה</item>
+      <item name="popup_statusbar">הצגת שורת סטאטוס</item>
+      <item name="popup_toolbar">הצגת סרגלי כלים</item>
+      <item name="popup_menubar">הצגת תפריט</item>
+      <item name="popup_location">הצגת location bar </item>
+      <item name="popup_resizable">חלון דינאמי(resizable)</item>
+      <item name="popup_dependent">Dependent (Mozilla/Firefox only)</item>
+      <item name="popup_size">גודל</item>
+      <item name="popup_position">מיקום (X/Y)</item>
+      <item name="id">מספר סידורי</item>
+      <item name="style">סגנון</item>
+      <item name="classes">Classes</item>
+      <item name="target_name">Target name</item>
+      <item name="langdir">כיוון השפה</item>
+      <item name="target_langcode">Target language</item>
+      <item name="langcode">קוד השפה</item>
+      <item name="encoding">Target character encoding</item>
+      <item name="mime">Target MIME type</item>
+      <item name="rel">Relationship page to target</item>
+      <item name="rev">Relationship target to page</item>
+      <item name="tabindex">Tabindex</item>
+      <item name="accesskey">Accesskey</item>
+      <item name="ltr">משמאל לימין</item>
+      <item name="rtl">מימין לשמאל</item>
+      <item name="link_list">רשימת קישורים</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">ציטוט</item>
+      <item name="abbr_desc">קיצור</item>
+      <item name="acronym_desc">ראשי תיבות</item>
+      <item name="del_desc">מחיקה</item>
+      <item name="ins_desc">הכנסה</item>
+      <item name="attribs_desc">הכנס/ערוך תכונות</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">כותרת</item>
+      <item name="attribute_label_id">ID</item>
+      <item name="attribute_label_class">מחלקה</item>
+      <item name="attribute_label_style">עיצוב</item>
+      <item name="attribute_label_cite">ציטוט</item>
+      <item name="attribute_label_datetime">תאריך/זמן</item>
+      <item name="attribute_label_langdir">כיוון הטקסט</item>
+      <item name="attribute_option_ltr">משמאל לימין</item>
+      <item name="attribute_option_rtl">מימין לשמאל</item>
+      <item name="attribute_label_langcode">שפה</item>
+      <item name="attribute_label_tabindex">TabIndex</item>
+      <item name="attribute_label_accesskey">AccessKey</item>
+      <item name="attribute_events_tab">אירועים</item>
+      <item name="attribute_attrib_tab">תכונות</item>
+      <item name="general_tab">כללי</item>
+      <item name="attrib_tab">תכונות</item>
+      <item name="events_tab">אירועים</item>
+      <item name="fieldset_general_tab">הגדרות כלליות</item>
+      <item name="fieldset_attrib_tab"> תכונות האלמנט</item>
+      <item name="fieldset_events_tab">אירועי האלמנט</item>
+      <item name="title_ins_element">הכנסת אלמנט</item>
+      <item name="title_del_element">מחיקת אלמנט</item>
+      <item name="title_acronym_element">ראשי תיבות האלמנט</item>
+      <item name="title_abbr_element">קיצור אלמנט</item>
+      <item name="title_cite_element">ציטוט אלמנט</item>
+      <item name="remove">הסר</item>
+      <item name="insert_date">הכנסת זמן/תאריך נוכחי</item>
+      <item name="option_ltr">משמאל לימין</item>
+      <item name="option_rtl">מימין לשמאל</item>
+      <item name="attribs_title">הכנסת/עדכון תכונות</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">עדכון הגדרות CSS</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">עדכון הגדרות CSS</item>
+      <item name="apply">החל</item>
+      <item name="text_tab">טקסט</item>
+      <item name="background_tab">רקע</item>
+      <item name="block_tab">חסום</item>
+      <item name="box_tab">קופסא</item>
+      <item name="border_tab">גבול</item>
+      <item name="list_tab">רשימה</item>
+      <item name="positioning_tab">מיקום</item>
+      <item name="text_props">טקסט</item>
+      <item name="text_font">פונט</item>
+      <item name="text_size">גודל</item>
+      <item name="text_weight">עובי</item>
+      <item name="text_style">סגנון</item>
+      <item name="text_variant">Variant</item>
+      <item name="text_lineheight">גובה שורה</item>
+      <item name="text_case">Case</item>
+      <item name="text_color">צבע</item>
+      <item name="text_decoration">עיצוב</item>
+      <item name="text_overline">שורה מעל</item>
+      <item name="text_underline">שורה מתחת</item>
+      <item name="text_striketrough">קו חוצה</item>
+      <item name="text_blink">הבהוב</item>
+      <item name="text_none">ללא</item>
+      <item name="background_color">צבע רקע</item>
+      <item name="background_image">תמונת רקע</item>
+      <item name="background_repeat">חזור</item>
+      <item name="background_attachment">קבצים מצורפים</item>
+      <item name="background_hpos">מיקום אופקי</item>
+      <item name="background_vpos">מיקום רוחבי</item>
+      <item name="block_wordspacing">מרחק בין מילים</item>
+      <item name="block_letterspacing">מרחק בין אותיות</item>
+      <item name="block_vertical_alignment">Vertical alignment</item>
+      <item name="block_text_align">מיקום טקסט</item>
+      <item name="block_text_indent">הזחה</item>
+      <item name="block_whitespace">רווח</item>
+      <item name="block_display">הצג</item>
+      <item name="box_width">רוחב</item>
+      <item name="box_height">גובה</item>
+      <item name="box_float">הצפה</item>
+      <item name="box_clear">נקה</item>
+      <item name="padding">ריפוד</item>
+      <item name="same">אותו דבר עבור כולם</item>
+      <item name="top">עליון</item>
+      <item name="right">ימין</item>
+      <item name="bottom">תחתית</item>
+      <item name="left">שמאל</item>
+      <item name="margin">שוליים</item>
+      <item name="style">סגנון</item>
+      <item name="width">רוחב</item>
+      <item name="height">גובה</item>
+      <item name="color">צבע</item>
+      <item name="list_type">סוג</item>
+      <item name="bullet_image">Bullet image</item>
+      <item name="position">מיקום</item>
+      <item name="positioning_type">סוג</item>
+      <item name="visibility">ראות</item>
+      <item name="zindex">Z-index</item>
+      <item name="overflow">גלישה</item>
+      <item name="placement">מיקום</item>
+      <item name="clip">קליפ</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">הדבקה כטקסט בלבד</item>
+      <item name="paste_word_desc">הדבקה מ-WORD</item>
+      <item name="selectall_desc">בחר הכל</item>
+      <item name="plaintext_mode_sticky">Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode.</item>
+      <item name="plaintext_mode">Paste is now in plain text mode. Click again to toggle back to regular paste mode.</item>
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">הדביקו בחלון זה את הטקסט באמצעות המקשים CTRL+V.</item>
+      <item name="text_linebreaks">השאר את שורות הרווח</item>
+      <item name="word_title">הדביקו בחלון זה את הטקסט באמצעות המקשים CTRL+V.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">הכנסת טבלה חדשה</item>
+      <item name="row_before_desc">הכנסת שורה מעל</item>
+      <item name="row_after_desc">הכנסת שורה מתחת</item>
+      <item name="delete_row_desc">מחיקת שורה</item>
+      <item name="col_before_desc">הכנסת עמודה מימין</item>
+      <item name="col_after_desc">הכנסת עמודה משמאל</item>
+      <item name="delete_col_desc">הסרת עמודה</item>
+      <item name="split_cells_desc">פיצול תאים בטבלה</item>
+      <item name="merge_cells_desc">איחוד תאים בטבלה</item>
+      <item name="row_desc">תכונות שורה בטבלה</item>
+      <item name="cell_desc">תכונות תא בטבלה</item>
+      <item name="props_desc">תכונות הטבלה</item>
+      <item name="paste_row_before_desc">הדבקת שורה בטבלה לפני</item>
+      <item name="paste_row_after_desc">הדבקת שורה בטבלה אחרי</item>
+      <item name="cut_row_desc">גזירת שורה בטבלה</item>
+      <item name="copy_row_desc">העתקת שורה בטבלה</item>
+      <item name="del">מחיקת טבלה</item>
+      <item name="row">שורה</item>
+      <item name="col">עמודה</item>
+      <item name="cell">תא</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width"></item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">כללי</item>
+      <item name="advanced_tab">מתקדם</item>
+      <item name="general_props">תכונות כלליות</item>
+      <item name="advanced_props">תכונות מתקדמות</item>
+      <item name="rowtype">סוג השורה בטבלה</item>
+      <item name="title">הוספת/עריכת טבלה</item>
+      <item name="width">רוחב</item>
+      <item name="height">גובה</item>
+      <item name="cols">עמודות</item>
+      <item name="rows">שורות</item>
+      <item name="cellspacing">Cellspacing</item>
+      <item name="cellpadding">Cellpadding</item>
+      <item name="border">גבול</item>
+      <item name="align">ישור אופקי</item>
+      <item name="align_default">Default</item>
+      <item name="align_left">לשמאל</item>
+      <item name="align_right">לימין</item>
+      <item name="align_middle">אמצע</item>
+      <item name="row_title">תכונות שורה בטבלה</item>
+      <item name="cell_title">תכונות תא בטבלה</item>
+      <item name="cell_type">סגנון התא</item>
+      <item name="valign">ישור אנכי</item>
+      <item name="align_top">עליון</item>
+      <item name="align_bottom">תחתית</item>
+      <item name="bordercolor">צבע הגבול</item>
+      <item name="bgcolor">צבע הרקע</item>
+      <item name="merge_cells_title">אחד תאים בטבלה</item>
+      <item name="id">Id</item>
+      <item name="style">עיצוב</item>
+      <item name="langdir">כיוון השפה</item>
+      <item name="langcode">קוד השפה</item>
+      <item name="mime">Target MIME type</item>
+      <item name="ltr">משמאל לימין</item>
+      <item name="rtl">מימין לשמאל</item>
+      <item name="bgimage">תמונת רקע</item>
+      <item name="summary">תמצית</item>
+      <item name="td">תא מידע</item>
+      <item name="th">כותרת</item>
+      <item name="cell_cell">עדכון תא נוכחי</item>
+      <item name="cell_row">עדכון כל תאי השורה</item>
+      <item name="cell_all">עדכון כל תאי הטבלה</item>
+      <item name="row_row">עדכון שורה נוכחית</item>
+      <item name="row_odd">עדכון שורות אי-זוגיות בטבלה</item>
+      <item name="row_even">עדכון שורות זוגיות בטבלה</item>
+      <item name="row_all">עדכוןכל השורות בטבלה</item>
+      <item name="thead">שורת כותרת</item>
+      <item name="tbody">שורה רגילה</item>
+      <item name="tfoot">שורה תחתית</item>
+      <item name="scope">Scope</item>
+      <item name="rowgroup">Row Group</item>
+      <item name="colgroup">Col Group</item>
+      <item name="col_limit">חריגה ממספר העמודות המקסימאלי של {$cols}.</item>
+      <item name="row_limit">חריגה ממספר המקסימאלי של השורות של {$rows}.</item>
+      <item name="cell_limit">חריגה ממספר המקסימאלי של התאים בטבלה של {$cells}.</item>
+      <item name="missing_scope">Are you sure you want to continue without specifying a scope for this table header cell. Without it, it may be difficult for some users with disabilities to understand the content or data displayed of the table.</item>
+      <item name="caption">כותרת הטבלה</item>
+      <item name="frame">Frame</item>
+      <item name="frame_none">ללא</item>
+      <item name="frame_groups">קבוצות</item>
+      <item name="frame_rows">שורות</item>
+      <item name="frame_cols">עמודות</item>
+      <item name="frame_all">הכול</item>
+      <item name="rules">חוקים</item>
+      <item name="rules_void">void</item>
+      <item name="rules_above">מעל</item>
+      <item name="rules_below">מתחת</item>
+      <item name="rules_hsides">hsides</item>
+      <item name="rules_lhs">lhs</item>
+      <item name="rules_rhs">rhs</item>
+      <item name="rules_vsides">vsides</item>
+      <item name="rules_box">box</item>
+      <item name="rules_border">גבול</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">השינויים שביצעת לא ישמרו אם תעבור מדף זה</item>
+      <item name="restore_content">Restore auto-saved content.</item>
+      <item name="warning_message">If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?.</item>
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">מעבר למסך מלא/חלקי</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">הוספת/עריכת סרטון</item>
+      <item name="edit">עריכת סרטון</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">הוספת/עריכת סרטון</item>
+      <item name="general">כללי</item>
+      <item name="advanced">מתקדם</item>
+      <item name="file">כתובת הקובץ</item>
+      <item name="list">רשימה</item>
+      <item name="size">רוחב וגובה</item>
+      <item name="preview">תצוגה מקדימה</item>
+      <item name="constrain_proportions">שמור על פרופורציות</item>
+      <item name="type">סוג</item>
+      <item name="id">Id</item>
+      <item name="name">Name</item>
+      <item name="class_name">Class</item>
+      <item name="vspace">רווח אנכי</item>
+      <item name="hspace">רווח אופקי</item>
+      <item name="play">נגינה אוטומטית עם הטעינה</item>
+      <item name="loop">נגינה מחזורית</item>
+      <item name="menu">הצגת תפריט</item>
+      <item name="quality">איכות הסרטון</item>
+      <item name="scale">Scale</item>
+      <item name="align">Align</item>
+      <item name="salign">SAlign</item>
+      <item name="wmode">WMode</item>
+      <item name="bgcolor">צבע רקע</item>
+      <item name="base">Base</item>
+      <item name="flashvars">Flashvars</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">AutoHREF</item>
+      <item name="cache">Cache</item>
+      <item name="hidden">Hidden</item>
+      <item name="controller">Controller</item>
+      <item name="kioskmode">Kiosk mode</item>
+      <item name="playeveryframe">Play every frame</item>
+      <item name="targetcache">Target cache</item>
+      <item name="correction">No correction</item>
+      <item name="enablejavascript">Enable JavaScript</item>
+      <item name="starttime">Start time</item>
+      <item name="endtime">End time</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">Choke speed</item>
+      <item name="target">Target</item>
+      <item name="volume">Volume</item>
+      <item name="autostart">Auto start</item>
+      <item name="enabled">Enabled</item>
+      <item name="fullscreen">Fullscreen</item>
+      <item name="invokeurls">Invoke URLs</item>
+      <item name="mute">Mute</item>
+      <item name="stretchtofit">Stretch to fit</item>
+      <item name="windowlessvideo">Windowless video</item>
+      <item name="balance">Balance</item>
+      <item name="baseurl">Base URL</item>
+      <item name="captioningid">Captioning id</item>
+      <item name="currentmarker">Current marker</item>
+      <item name="currentposition">Current position</item>
+      <item name="defaultframe">Default frame</item>
+      <item name="playcount">Play count</item>
+      <item name="rate">Rate</item>
+      <item name="uimode">UI Mode</item>
+      <item name="flash_options">אפשרויות פלאש</item>
+      <item name="qt_options">אפשרויות Quicktime</item>
+      <item name="wmp_options">אפשרויות מדיה פלייר</item>
+      <item name="rmp_options">אפשרויות נגן Real Media</item>
+      <item name="shockwave_options">אפשרויות Shockwave</item>
+      <item name="autogotourl">Auto goto URL</item>
+      <item name="center">מרכז</item>
+      <item name="imagestatus">Image status</item>
+      <item name="maintainaspect">Maintain aspect</item>
+      <item name="nojava">No java</item>
+      <item name="prefetch">Prefetch</item>
+      <item name="shuffle">Shuffle</item>
+      <item name="console">Console</item>
+      <item name="numloop">Num loops</item>
+      <item name="controls">Controls</item>
+      <item name="scriptcallbacks">Script callbacks</item>
+      <item name="swstretchstyle">Stretch style</item>
+      <item name="swstretchhalign">Stretch H-Align</item>
+      <item name="swstretchvalign">Stretch V-Align</item>
+      <item name="sound">צליל</item>
+      <item name="progress">Progress</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn">Streamed rtsp resources should be added to the QT Src field under the advanced tab.\nYou should also add a non streamed version to the Src field..</item>
+      <item name="align_top">Top</item>
+      <item name="align_right">Right</item>
+      <item name="align_bottom">Bottom</item>
+      <item name="align_left">לשמאל</item>
+      <item name="align_center">Center</item>
+      <item name="align_top_left">Top left</item>
+      <item name="align_top_right">Top right</item>
+      <item name="align_bottom_left">Bottom left</item>
+      <item name="align_bottom_right">Bottom right</item>
+      <item name="flv_options">Flash video options</item>
+      <item name="flv_scalemode">Scale mode</item>
+      <item name="flv_buffer">Buffer</item>
+      <item name="flv_startimage">Start image</item>
+      <item name="flv_starttime">Start time</item>
+      <item name="flv_defaultvolume">Default volumne</item>
+      <item name="flv_hiddengui">Hidden GUI</item>
+      <item name="flv_autostart">Auto start</item>
+      <item name="flv_loop">Loop</item>
+      <item name="flv_showscalemodes">Show scale modes</item>
+      <item name="flv_smoothvideo">Smooth video</item>
+      <item name="flv_jscallback">JS Callback</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">מאפייני עמוד</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Document properties</item>
+      <item name="meta_tab">כללי</item>
+      <item name="appearance_tab">מראה</item>
+      <item name="advanced_tab">מתקדם</item>
+      <item name="meta_props">תגי מטה</item>
+      <item name="langprops">שפה וקידוד</item>
+      <item name="meta_title">כותרת</item>
+      <item name="meta_keywords">מילות מפתח</item>
+      <item name="meta_description">תיאור</item>
+      <item name="meta_robots">רובוטים</item>
+      <item name="doctypes">Doctype</item>
+      <item name="langcode">קוד השפה</item>
+      <item name="langdir">כיוון השפה</item>
+      <item name="ltr">משמאל לימין</item>
+      <item name="rtl">מימין לשמאל</item>
+      <item name="xml_pi">XML declaration</item>
+      <item name="encoding">Character encoding</item>
+      <item name="appearance_bgprops">Background properties</item>
+      <item name="appearance_marginprops">Body margins</item>
+      <item name="appearance_linkprops">Link colors</item>
+      <item name="appearance_textprops">Text properties</item>
+      <item name="bgcolor">צבע רקע</item>
+      <item name="bgimage">תמונת רקע</item>
+      <item name="left_margin">Left margin</item>
+      <item name="right_margin">Right margin</item>
+      <item name="top_margin">Top margin</item>
+      <item name="bottom_margin">Bottom margin</item>
+      <item name="text_color">צבע טקסט</item>
+      <item name="font_size">גודל גופן</item>
+      <item name="font_face">סוג גופן</item>
+      <item name="link_color">צבע קישור</item>
+      <item name="hover_color">Hover color</item>
+      <item name="visited_color">Visited color</item>
+      <item name="active_color">Active color</item>
+      <item name="textcolor">צבע</item>
+      <item name="fontsize">גודל גופן</item>
+      <item name="fontface">גופן</item>
+      <item name="meta_index_follow">Index and follow the links</item>
+      <item name="meta_index_nofollow">Index and don't follow the links</item>
+      <item name="meta_noindex_follow">Do not index but follow the links</item>
+      <item name="meta_noindex_nofollow">Do not index and don\'t follow the links</item>
+      <item name="appearance_style">Stylesheet and style properties</item>
+      <item name="stylesheet">סגנון עיצוב</item>
+      <item name="style">עיצוב</item>
+      <item name="author">כותב</item>
+      <item name="copyright">זכויות יוצרים</item>
+      <item name="add">Add new element</item>
+      <item name="remove">Remove selected element</item>
+      <item name="moveup">Move selected element up</item>
+      <item name="movedown">Move selected element down</item>
+      <item name="head_elements">Head elements</item>
+      <item name="info">מידע</item>
+      <item name="add_title">Title element</item>
+      <item name="add_meta">Meta element</item>
+      <item name="add_script">Script element</item>
+      <item name="add_style">Style element</item>
+      <item name="add_link">Link element</item>
+      <item name="add_base">Base element</item>
+      <item name="add_comment">Comment node</item>
+      <item name="title_element">Title element</item>
+      <item name="script_element">Script element</item>
+      <item name="style_element">Style element</item>
+      <item name="base_element">Base element</item>
+      <item name="link_element">Link element</item>
+      <item name="meta_element">Meta element</item>
+      <item name="comment_element">תגובה</item>
+      <item name="src">כתובת מקור</item>
+      <item name="language">שפה</item>
+      <item name="href">Href</item>
+      <item name="target">יעד</item>
+      <item name="type">סוג</item>
+      <item name="charset">קידוד</item>
+      <item name="defer">Defer</item>
+      <item name="media">מדיה</item>
+      <item name="properties">מאפיינים</item>
+      <item name="name">שם</item>
+      <item name="value">ערך</item>
+      <item name="content">תוכן</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href lang</item>
+      <item name="general_props">כללי</item>
+      <item name="advanced_props">מתקדם</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Insert predefined template content</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">תבניות</item>
+      <item name="label">תבנית</item>
+      <item name="desc_label">תיאור</item>
+      <item name="desc">Insert predefined template content</item>
+      <item name="select">בחר תבנית</item>
+      <item name="preview">תצוגה מקדימה</item>
+      <item name="warning">Warning: Updating a template with a different one may cause data loss.</item>
+      <item name="mdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="cdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="months_long">January,February,March,April,May,June,July,August,September,October,November,December</item>
+      <item name="months_short">Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec</item>
+      <item name="day_long">ראשון,שני,שלישי,רביעי,חמישי,שישי,שבת</item>
+      <item name="day_short">ראשון,שני,שלישי,רביעי,חמישי,שישי,שבת</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Visual control characters on/off.</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">הפעלת בודק איות</item>
+      <item name="menu">הגדרות בודק איות</item>
+      <item name="ignore_word">להתעלם מהמילה</item>
+      <item name="ignore_words">להתעלם מהכל</item>
+      <item name="langs">שפות</item>
+      <item name="wait">נא להמתין..</item>
+      <item name="sug">הצעות</item>
+      <item name="no_sug">אין הצעות</item>
+      <item name="no_mpell">לא נמצאו שגיאות איות</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">הוספת מעבר דף</item>
+    </group>
+    <group target="advlist">
+      <item name="types">סוגים</item>
+      <item name="def">ברירת מחדל</item>
+      <item name="lower_alpha">Lower alpha</item>
+      <item name="lower_greek">Lower greek</item>
+      <item name="lower_roman">Lower roman</item>
+      <item name="upper_alpha">Upper alpha</item>
+      <item name="upper_roman">Upper roman</item>
+      <item name="circle">עגול</item>
+      <item name="disc">דיסק</item>
+      <item name="square">מרובע</item>
+    </group>
+  </language>
+</language-pack>

@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>Laithai Team &amp; edited by Supapong Areeprasertkul</author>
+    <version major="3" minor="1" releasedate="2010-11-06" />
+    <description>This is the Thai language pack for TinyMCE By Laithai Team joomlacorner.com, edited by Supapong Areeprasertkul.</description>
+  </header>
+  <language code="th" title="Thai" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">คุณต้องการใช้โหมด WYSIWYG ในการเขียนบทความหรือไม่ ?</item>
+      <item name="apply">ใช้งาน</item>
+      <item name="insert">เพิ่ม</item>
+      <item name="update">อัพเดต</item>
+      <item name="cancel">ยกเลิก</item>
+      <item name="close">ปิด</item>
+      <item name="browse">เลือกไฟล์</item>
+      <item name="class_name">css คลาส</item>
+      <item name="not_set">-- ไม่ได้ตั้งค่า --</item>
+      <item name="clipboard_msg">คัดลอก / ตัด / วางยังไม่มีให้บริการใน Mozilla และ Firefox.\nDo คุณต้องการข้อมูลเพิ่มเติมเกี่ยวกับปัญหานี้หรือไม่?</item>
+      <item name="clipboard_no_support">ขณะนี้ยังไม่สนับสนุนเบราเซอร์ของคุณ ให้ใช้แป้นพิมพ์ลัดแทน</item>
+      <item name="popup_blocked">ขออภัยแต่เราพบว่าคุณมีระบบป้องกันป๊อปอัป คุณจะต้องปิดการใช้งานการบล็อคป๊อปอัป</item>
+      <item name="invalid_data">ข้อผิดพลาด: ป้อนค่าในช้องสีแดงให้ถูกต้อง</item>
+      <item name="more_colors">สีอื่นๆ</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">ตัวหนา (Ctrl+B)</item>
+      <item name="italic_desc">ตัวเอียง (Ctrl+I)</item>
+      <item name="underline_desc">ตัวเขีดเส้นใต้ (Ctrl+U)</item>
+      <item name="striketrough_desc">ขีดฆ่า</item>
+      <item name="bullist_desc">ลำดับรายการ</item>
+      <item name="numlist_desc">ลำดับตัวเลข</item>
+      <item name="undo_desc">ยกเลิก (Ctrl+Z)</item>
+      <item name="redo_desc">ทำซ้ำ (Ctrl+Y)</item>
+      <item name="cleanup_desc">ล้างรหัสขยะ</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">รูปแบบ</item>
+      <item name="font_size">ขนาดตัวอักษร</item>
+      <item name="fontdefault">เลือกตัวอักษร</item>
+      <item name="block">รูปแบบ</item>
+      <item name="paragraph">ย่อหน้า</item>
+      <item name="div">Div</item>
+      <item name="address">ที่อยู่</item>
+      <item name="pre">รูปแบบพื้นฐาน</item>
+      <item name="h1">Heading 1</item>
+      <item name="h2">Heading 2</item>
+      <item name="h3">Heading 3</item>
+      <item name="h4">Heading 4</item>
+      <item name="h5">Heading 5</item>
+      <item name="h6">Heading 6</item>
+      <item name="blockquote">อ้างอิง</item>
+      <item name="code">โค้ด</item>
+      <item name="samp">โค้ดตัวอย่าง</item>
+      <item name="dt">คำนิยาม</item>
+      <item name="dd">รายละเอียดคำนิยาม</item>
+      <!-- Buttons -->
+      <item name="bold_desc">ตัวหนา (Ctrl+B)</item>
+      <item name="italic_desc">ตัวเอียง (Ctrl+I)</item>
+      <item name="underline_desc">ตัวขีดเส้นใต้(Ctrl+U)</item>
+      <item name="striketrough_desc">ขีดฆ่า</item>
+      <item name="justifyleft_desc">จัดซ้าย</item>
+      <item name="justifycenter_desc">จัดกลาง</item>
+      <item name="justifyright_desc">จัดขวา</item>
+      <item name="justifyfull_desc">จัดเต็มหน้า</item>
+      <item name="bullist_desc">ลำดับรายการ</item>
+      <item name="numlist_desc">ลำดับตัวเลข</item>
+      <item name="outdent_desc">ลดการเยื้อง</item>
+      <item name="indent_desc">เยื้องขวา</item>
+      <item name="undo_desc">ยกเลิก (Ctrl+Z)</item>
+      <item name="redo_desc">ย้อนกลับ (Ctrl+Y)</item>
+      <item name="link_desc">เพิ่ม/แก้ไข ลิ้งค์</item>
+      <item name="unlink_desc">ยกเลิกลิ้งค์</item>
+      <item name="image_desc">เพิ่ม/แก้ไข รูป</item>
+      <item name="cleanup_desc">ล้างโค้ด</item>
+      <item name="code_desc">แก้ไข HTML</item>
+      <item name="sub_desc">ตัวห้อย</item>
+      <item name="sup_desc">ตัวยก</item>
+      <item name="hr_desc">ใส่เส้นบรรทัด</item>
+      <item name="removeformat_desc">ล้างรูปแบบ</item>
+      <item name="custom1_desc">ใส่รายละเอียดเองได้ที่นี่</item>
+      <item name="forecolor_desc">เลือกสีข้อความ</item>
+      <item name="backcolor_desc">เลือกสีพื้นหลัง</item>
+      <item name="charmap_desc">เลือกตัวอักษร</item>
+      <item name="visualaid_desc">สลับ guidelines/ซ่อน elements</item>
+      <item name="anchor_desc">เพิ่ม/แก้ไข ข้อความลิ้งค์</item>
+      <item name="cut_desc">ตัด</item>
+      <item name="copy_desc">คัดลอก</item>
+      <item name="paste_desc">วาง</item>
+      <item name="image_props_desc">คุณสมบัติรูป</item>
+      <item name="newdocument_desc">เอกสารใหม่</item>
+      <item name="help_desc">ช่วยเหลือ</item>
+      <item name="blockquote_desc">อ้างถึง</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">คัดลอก / ตัด / วางยังไม่มีให้บริการใน Mozilla และ Firefox.\nDo คุณต้องการข้อมูลเพิ่มเติมเกี่ยวกับปัญหานี้หรือไม่?</item>
+      <item name="path">พาท</item>
+      <item name="newdocument">คุณแน่ใจหรือไม่ว่าต้องการล้างเนื้อหาทั้งหมด?</item>
+      <item name="toolbar_focus">Jump to tool buttons - Alt+Q, Jump to editor - Alt-Z, Jump to element path - Alt-X</item>
+      <item name="more_colors">สีอื่นๆ</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">เกี่ยวกับ TinyMCE</item>
+      <item name="about_general">เกี่ยวกับเรา</item>
+      <item name="about_help">ช่วยเหลือ</item>
+      <item name="about_license">ลิขสิทธิ์</item>
+      <item name="about_plugins">ปลั๊กอิน</item>
+      <item name="about_plugin">ปลั๊กอิน</item>
+      <item name="about_author">ผู้เขียน</item>
+      <item name="about_version">รุ่น</item>
+      <item name="about_loaded">โหลดปลั๊กอิน</item>
+      <!-- Anchor -->
+      <item name="anchor_title">เพิ่ม/แก้ไข ข้อความลิ้งค์</item>
+      <item name="anchor_name">ข้อความลิ้งค์</item>
+      <!-- Source -->
+      <item name="code_title">แก้ไข HTML</item>
+      <item name="code_wordwrap">ตัดคำ</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">เลือกสี</item>
+      <item name="colorpicker_picker_tab">เลือกสี</item>
+      <item name="colorpicker_picker_title">จานสี</item>
+      <item name="colorpicker_palette_tab">จานสี</item>
+      <item name="colorpicker_palette_title">จานสี</item>
+      <item name="colorpicker_named_tab">ชื่อ</item>
+      <item name="colorpicker_named_title">ชื่อสี</item>
+      <item name="colorpicker_color">สี:</item>
+      <item name="colorpicker_name">ชื่อ:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">เลือกตัวอักษรที่กำหนดเอง</item>
+      <!-- Image -->
+      <item name="image_title">เพิ่ม/แก้ไข รูป</item>
+      <item name="image_src">URL รูป</item>
+      <item name="image_alt">รายละอียดรูป</item>
+      <item name="image_list">รายการรูป</item>
+      <item name="image_border">กรอบ</item>
+      <item name="image_dimensions">ขนาด</item>
+      <item name="image_vspace">ระยะห่างแนวตั้ง</item>
+      <item name="image_hspace">ระยะห่างแนวนอน</item>
+      <item name="image_align">ตำแหน่งจัดวาง</item>
+      <item name="image_align_baseline">เส้นพื้น</item>
+      <item name="image_align_top">บน</item>
+      <item name="image_align_middle">กลาง</item>
+      <item name="image_align_bottom">ล่าง</item>
+      <item name="image_align_texttop">ข้อความอยู่บน</item>
+      <item name="image_align_textbottom">ข้อความอยู่ล่าง</item>
+      <item name="image_align_left">ซ้าย</item>
+      <item name="image_align_right">ขวา</item>
+      <!-- Link -->
+      <item name="link_title">เพิ่ม/แก้ไข ลิ้งค์</item>
+      <item name="link_url">ลิ้งค์ URL</item>
+      <item name="link_target">เป้าหมาย</item>
+      <item name="link_target_same">เปิดลิ้งค์ในหน้าต่างเดียวกัน</item>
+      <item name="link_target_blank">เปิดลิ้งค์ในหน้าต่างใหม่</item>
+      <item name="link_titlefield">ชื่อ</item>
+      <item name="link_is_email">URL ที่คุณป้อนดูเหมือนว่าจะมีที่อยู่อีเมลอยู่ต้องการเพิ่ม mailto: นำหน้าหรือไม่ ?</item>
+      <item name="link_is_external">URL ที่คุณป้อนดูเหมือนว่าภายนอกลิงคคุณต้องการเพิ่ม  http:// หรือไม่ ?</item>
+      <item name="link_list">รายการลิ้งค์</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">ตำแหน่งจัดวาง</item>
+      <item name="left">ซ้าย</item>
+      <item name="center">กลาง</item>
+      <item name="right">ขวา</item>
+      <item name="full">เต็ม</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%Y-%m-%d</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">แทรกวันที่</item>
+      <item name="inserttime_desc">แทรกเวลา</item>
+      <item name="months_long">มกราคม,กุมภาพันธ์,มีนาคม,เมษายน,พฤษภาคม,มิถุนายน,กรกฎาคม,สิงหาคม,กันยายน,ตุลาคม,พฤศจิกายน,ธันวาคม</item>
+      <item name="months_short">ม.ค.,ก.พ.,มี.ค.,เม.ย.,พ.ค.,มิ.ย.,ก.ค.,ส.ค.,ก.ย.,ต.ค.,พ.ย.,ธ.ค.</item>
+      <item name="day_long">วันอาทิตย์,วันจันทร์,วันอังคาร,วันพุธ,วันพฤหัสบดี,วันศุกร์,วันเสาร์,อาทิตย์</item>
+      <item name="day_short">อา,จ,อัง,พ,พฤ,ศ,ส,อ</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">พิมพ์</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">ดูตัวอย่าง</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">อ่านจากซ้ายไปขวา</item>
+      <item name="rtl_desc">อ่านจากขวาไปซ้าย</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">เพิ่มเลเยอร์ใหม่</item>
+      <item name="forward_desc">ย้ายไปข้างหน้า</item>
+      <item name="backward_desc">ย้ายไปข้างหลัง</item>
+      <item name="absolute_desc">สลับการวาง</item>
+      <item name="content">เลเยอร์ใหม่...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">บันทึก</item>
+      <item name="cancel_desc">ยกเลิกทุกอย่าง</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">แทรกอักขระว่าง</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">เรียกใช้ตรวจการสะกด</item>
+      <item name="download">หากระบบตรวจสอบคำผิดไม่พบ คุณต้องการติดตั้งเดี๋ยวนี้ ?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">เส้นบรรทัด</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">กว้าง</item>
+      <item name="size">สูง</item>
+      <item name="noshade">ไม่มีเงา</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">ไอคอนแสดงอารมณ์</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">เพิ่มรูปแสดงอารมณ์</item>
+      <item name="desc">แสดงอารมณ์</item>
+      <item name="cool">เจ๋ง</item>
+      <item name="cry">ร้องไห้</item>
+      <item name="embarassed">อาย</item>
+      <item name="foot_in_mouth">ปิดปาก</item>
+      <item name="frown">บึ้งตึง</item>
+      <item name="innocent">ไร้เดียงสา</item>
+      <item name="kiss">จูบ</item>
+      <item name="laughing">หัวเราะ</item>
+      <item name="money_mouth">เงินๆๆๆ</item>
+      <item name="sealed">ปิดปาก</item>
+      <item name="smile">Smile</item>
+      <item name="surprised">ประหลาดใจ</item>
+      <item name="tongue_out">แลบลิ้น</item>
+      <item name="undecided">ลังเล</item>
+      <item name="wink">ขยิบตา</item>
+      <item name="yell">โวยวาย</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">ค้นหา</item>
+      <item name="replace_desc">ค้นหา/แทนที่</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">ค้นหาอีกครั้ง</item>
+      <item name="notfound">การค้นหาสิ้นสุด เราไม่พบอะไรเลย</item>
+      <item name="search_title">ค้นหา</item>
+      <item name="replace_title">ค้นหา/แทนที่</item>
+      <item name="allreplaced">ทุกคำที่ใส่ถูกแทนที่แล้ว</item>
+      <item name="findwhat">ค้นหา</item>
+      <item name="replacewith">แทนที่ด้วย</item>
+      <item name="direction">ตำแหน่ง</item>
+      <item name="up">บน</item>
+      <item name="down">ล่าง</item>
+      <item name="mcase">เหมือนทุกอย่าง</item>
+      <item name="findnext">ค้นหาต่อไป</item>
+      <item name="replace">แทนที่</item>
+      <item name="replaceall">แทนที่ทั้งหมด</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">เพิ่ม/แก้ไข รูป</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">ทั่วไป</item>
+      <item name="tab_appearance">ลักษณะ</item>
+      <item name="tab_advanced">ขั้นสูง</item>
+      <item name="general">ทั่วไป</item>
+      <item name="title">ชื่อ</item>
+      <item name="preview">ดูตัวอย่าง</item>
+      <item name="constrain_proportions">คงสัดส่วน</item>
+      <item name="langdir">ทิศทางการอ่าน</item>
+      <item name="langcode">โค้ดภาษา</item>
+      <item name="long_desc">รายละเอียดลิ้งค์</item>
+      <item name="style">รูปแบบ</item>
+      <item name="classes">คลาส</item>
+      <item name="ltr">ซ้ายไปขวา</item>
+      <item name="rtl">ขวาไปซ้าย</item>
+      <item name="id">Id</item>
+      <item name="map">Image map</item>
+      <item name="swap_image">Swap image</item>
+      <item name="alt_image">ข้อความรูป</item>
+      <item name="mouseover">เมื่อเอาเม้าส์ชี้</item>
+      <item name="mouseout">เมื่อเอาเม้าส์ออก</item>
+      <item name="misc">เบ็ดเตล็ด</item>
+      <item name="example_img">ดูตัวอย่างลักษณะของรูป</item>
+      <item name="missing_alt">คุณแน่ใจหรือไม่ว่าต้องการดำเนินการต่อโดยไม่ใส่คำอธิบายรูปภาพ ? การใส่คำอธิบายรูปทำให้ผู้พิการทางสายตาสามารถรู้ได้ว่ารูปคุณคือรูปอะไร</item>
+      <item name="dialog_title">เพิ่ม/แก้ไข image</item>
+      <item name="src">ที่อยู่รูป</item>
+      <item name="alt">รายละเอียดรูป</item>
+      <item name="list">รายการรูป</item>
+      <item name="border">กรอบ</item>
+      <item name="dimensions">ตำแหน่ง</item>
+      <item name="vspace">ระยะห่างแนวตั้ง</item>
+      <item name="hspace">ระยะห่างแนวนอน</item>
+      <item name="align">ตำแหน่งจัดวาง</item>
+      <item name="align_baseline">เส้นพื้น</item>
+      <item name="align_top">บน</item>
+      <item name="align_middle">กลาง</item>
+      <item name="align_bottom">ล่าง</item>
+      <item name="align_texttop">ตัวอักษรอยู่บน</item>
+      <item name="align_textbottom">ตัวอักษรอยู่ล่าง</item>
+      <item name="align_left">ซ้าย</item>
+      <item name="align_right">ขวา</item>
+      <item name="image_list">รายการรูป</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">เพิ่ม/แก้ไข ลิ้งค์</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">เพิ่ม/แก้ไข ลิ้งค์</item>
+      <item name="url">ที่อยู่ ลิ้งค์</item>
+      <item name="target">เป้าหมาย</item>
+      <item name="titlefield">ชื่อ</item>
+      <item name="is_email">URL ที่คุณป้อนดูเหมือนว่าจะมีที่อยู่อีเมลอยู่ต้องการเพิ่ม mailto: นำหน้าหรือไม่ </item>
+      <item name="is_external">URL ที่คุณป้อนดูเหมือนว่าภายนอกลิงคคุณต้องการเพิ่ม  http:// หรือไม่ ?</item>
+      <item name="list">รายการลิ้งค์</item>
+      <item name="general_tab">ทั่วไป</item>
+      <item name="popup_tab">ป๊อป-อัพ</item>
+      <item name="events_tab">กิจกรรม</item>
+      <item name="advanced_tab">ขั้นสูง</item>
+      <item name="general_props">ตั้งค่าทั่วไป</item>
+      <item name="popup_props">ตั้งค่าป๊อป-อัพ</item>
+      <item name="event_props">กิจกรรม</item>
+      <item name="advanced_props">ตั้งค่าขั้นสูง</item>
+      <item name="popup_opts">ตัวเลือก</item>
+      <item name="anchor_names">ชื่อลิ้งค์</item>
+      <item name="target_same">เปิดในหน้าต่างใหม่ / เฟรม</item>
+      <item name="target_parent">เปิดในหน้าต่างเดิม / เฟรม</item>
+      <item name="target_top">เปิดที่เฟรมบน (แทนที่ทุกเฟรม)</item>
+      <item name="target_blank">เปิดในหน้าต่างใหม่</item>
+      <item name="popup">จาวา ป๊อป-อัพ</item>
+      <item name="popup_url">ป๊อป-อัพ URL</item>
+      <item name="popup_name">ชื่อหน้าต่าง</item>
+      <item name="popup_return">เพิ่ม 'return false'</item>
+      <item name="popup_scrollbars">แสดงสกรอลบาร์</item>
+      <item name="popup_statusbar">แสดงแถบสถานะ</item>
+      <item name="popup_toolbar">แสดงทูลบาร์</item>
+      <item name="popup_menubar">แสดงแถบเมนู</item>
+      <item name="popup_location">แสดงช่องที่อยู่</item>
+      <item name="popup_resizable">เปลี่ยนขนาดของหน้าต่างได้</item>
+      <item name="popup_dependent">Dependent (Mozilla/Firefox only)</item>
+      <item name="popup_size">ขนาด</item>
+      <item name="popup_position">ตำแหน่ง (X/Y)</item>
+      <item name="id">Id</item>
+      <item name="style">รูปแบบ</item>
+      <item name="classes">คลาส</item>
+      <item name="target_name">ชื่อเป้าหมาย</item>
+      <item name="langdir">ทิศทางการอ่าน</item>
+      <item name="target_langcode">เป้าหมาย ภาษา</item>
+      <item name="langcode">โค้ดภาษา</item>
+      <item name="encoding">เป้าหมายตัวอักษร</item>
+      <item name="mime">เป้าหมาย MIME type</item>
+      <item name="rel">Relationship page to target</item>
+      <item name="rev">Relationship target to page</item>
+      <item name="tabindex">Tabindex</item>
+      <item name="accesskey">Accesskey</item>
+      <item name="ltr">ซ้ายไปขวา</item>
+      <item name="rtl">ขวาไปซ้าย</item>
+      <item name="link_list">รายการลิ้งค์</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">การอ้างอิง</item>
+      <item name="abbr_desc">ตัวย่อ</item>
+      <item name="acronym_desc">อักษรย่อ</item>
+      <item name="del_desc">ลบ</item>
+      <item name="ins_desc">เพิ่ม</item>
+      <item name="attribs_desc">เพิ่ม/แก้ไข แอททริบิว</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">ชื่อ</item>
+      <item name="attribute_label_id">ID</item>
+      <item name="attribute_label_class">คลาส</item>
+      <item name="attribute_label_style">รูปแบบ</item>
+      <item name="attribute_label_cite">Cite</item>
+      <item name="attribute_label_datetime">วัน/เวลา</item>
+      <item name="attribute_label_langdir">ทิศทางตัวอักษร</item>
+      <item name="attribute_option_ltr">ซ้ายไปขวา</item>
+      <item name="attribute_option_rtl">ขวาไปซ้าย</item>
+      <item name="attribute_label_langcode">ภาษา</item>
+      <item name="attribute_label_tabindex">ลำดับแท็บ</item>
+      <item name="attribute_label_accesskey">ปุ่มลัด</item>
+      <item name="attribute_events_tab">Event</item>
+      <item name="attribute_attrib_tab">Attributes</item>
+      <item name="general_tab">ทั่วไป</item>
+      <item name="attrib_tab">Attributes</item>
+      <item name="events_tab">กิจกรรม</item>
+      <item name="fieldset_general_tab">ตั้งค่าทั่วไป</item>
+      <item name="fieldset_attrib_tab">Element Attributes</item>
+      <item name="fieldset_events_tab">Element Event</item>
+      <item name="title_ins_element">Insertion Element</item>
+      <item name="title_del_element">Deletion Element</item>
+      <item name="title_acronym_element">Acronym Element</item>
+      <item name="title_abbr_element">Abbreviation Element</item>
+      <item name="title_cite_element">Citation Element</item>
+      <item name="remove">ลบ</item>
+      <item name="insert_date">เพิ่ม วัน/เวลา</item>
+      <item name="option_ltr">ซ้ายไปขวา</item>
+      <item name="option_rtl">ขวาไปซ้าย</item>
+      <item name="attribs_title">เพิ่ม/แก้ไข Attributes</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">แก้ไข CSS</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">แก้ไข CSS</item>
+      <item name="apply">ใช้งาน</item>
+      <item name="text_tab">ข้อความ</item>
+      <item name="background_tab">พื้นหลัง</item>
+      <item name="block_tab">Block</item>
+      <item name="box_tab">Box</item>
+      <item name="border_tab">กรอบ</item>
+      <item name="list_tab">List</item>
+      <item name="positioning_tab">Positioning</item>
+      <item name="text_props">ข้อความ</item>
+      <item name="text_font">ตัวหนังสือ</item>
+      <item name="text_size">ขนาด</item>
+      <item name="text_weight">น้ำหนัก</item>
+      <item name="text_style">รูปแบบ</item>
+      <item name="text_variant">Variant</item>
+      <item name="text_lineheight">ความสูงของบรรทัด</item>
+      <item name="text_case">Case</item>
+      <item name="text_color">สี</item>
+      <item name="text_decoration">Decoration</item>
+      <item name="text_overline">overline</item>
+      <item name="text_underline">underline</item>
+      <item name="text_striketrough">strikethrough</item>
+      <item name="text_blink">blink</item>
+      <item name="text_none">none</item>
+      <item name="background_color">สีพื้นหลัง</item>
+      <item name="background_image">รูปพื้นหลัง</item>
+      <item name="background_repeat">Repeat</item>
+      <item name="background_attachment">Attachment</item>
+      <item name="background_hpos">Horizontal position</item>
+      <item name="background_vpos">Vertical position</item>
+      <item name="block_wordspacing">Word spacing</item>
+      <item name="block_letterspacing">Letter spacing</item>
+      <item name="block_vertical_alignment">Vertical alignment</item>
+      <item name="block_text_align">ข้อความ align</item>
+      <item name="block_text_indent">ข้อความ indent</item>
+      <item name="block_whitespace">Whitespace</item>
+      <item name="block_display">Display</item>
+      <item name="box_width">Width</item>
+      <item name="box_height">Height</item>
+      <item name="box_float">Float</item>
+      <item name="box_clear">Clear</item>
+      <item name="padding">Padding</item>
+      <item name="same">Same for all</item>
+      <item name="top">บน</item>
+      <item name="right">ขวา</item>
+      <item name="bottom">ล่าง</item>
+      <item name="left">ซ้าย</item>
+      <item name="margin">Margin</item>
+      <item name="style">รูปแบบ</item>
+      <item name="width">กว้าง</item>
+      <item name="height">สูง</item>
+      <item name="color">สี</item>
+      <item name="list_type">Type</item>
+      <item name="bullet_image">Bullet image</item>
+      <item name="position">Position</item>
+      <item name="positioning_type">Type</item>
+      <item name="visibility">Visibility</item>
+      <item name="zindex">Z-index</item>
+      <item name="overflow">Overflow</item>
+      <item name="placement">Placement</item>
+      <item name="clip">Clip</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">วางโดยข้อความธรรมดา</item>
+      <item name="paste_word_desc">วางจากโปรแกรม Word</item>
+      <item name="selectall_desc">เลือกทั้งหมด</item>
+      <item name="plaintext_mode_sticky">Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode.</item>
+      <item name="plaintext_mode">Paste is now in plain text mode. Click again to toggle back to regular paste mode.</item>
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">Use CTRL+V on your keyboard to paste the text into the window.</item>
+      <item name="text_linebreaks">Keep linebreaks</item>
+      <item name="word_title">Use CTRL+V on your keyboard to paste the text into the window.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">Inserts a new table</item>
+      <item name="row_before_desc">แทรกแถวจากข้างหน้า</item>
+      <item name="row_after_desc">แทรกแถวจากข้างหลัง</item>
+      <item name="delete_row_desc">ลบแถว</item>
+      <item name="col_before_desc">แทรกคอลัมน์จากข้างหน้า</item>
+      <item name="col_after_desc">แทรกคอลัมน์จากข้างหลัง</item>
+      <item name="delete_col_desc">ลบคอลัมน์</item>
+      <item name="split_cells_desc">Split merged table cells</item>
+      <item name="merge_cells_desc">Merge table cells</item>
+      <item name="row_desc">Table row properties</item>
+      <item name="cell_desc">Table cell properties</item>
+      <item name="props_desc">Table properties</item>
+      <item name="paste_row_before_desc">Paste table row before</item>
+      <item name="paste_row_after_desc">Paste table row after</item>
+      <item name="cut_row_desc">Cut table row</item>
+      <item name="copy_row_desc">Copy table row</item>
+      <item name="del">ลบตาราง</item>
+      <item name="row">แถว</item>
+      <item name="col">คอลัมน์</item>
+      <item name="cell">เซลล์</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width"></item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">ทั่วไป</item>
+      <item name="advanced_tab">ขั้นสูง</item>
+      <item name="general_props">คุณสมบัติทั่วไป</item>
+      <item name="advanced_props">คุณสมบัติขั้นสูง</item>
+      <item name="rowtype">Row in table part</item>
+      <item name="title">เพิ่ม/แก้ไข ตาราง</item>
+      <item name="width">กว้าง</item>
+      <item name="height">สูง</item>
+      <item name="cols">คอลัมพ์</item>
+      <item name="rows">แถว</item>
+      <item name="cellspacing">Cellspacing</item>
+      <item name="cellpadding">Cellpadding</item>
+      <item name="border">กรอบ</item>
+      <item name="align">ตำแหน่งจัดวาง</item>
+      <item name="align_default">ค่าเริ่มต้น</item>
+      <item name="align_left">ซ้าย</item>
+      <item name="align_right">ขวา</item>
+      <item name="align_middle">กลาง</item>
+      <item name="row_title">คุณสมบัติแถวในตาราง</item>
+      <item name="cell_title">คุณสมบัติเซลล์ในาราง</item>
+      <item name="cell_type">Cell type</item>
+      <item name="valign">Vertical alignment</item>
+      <item name="align_top">บน</item>
+      <item name="align_bottom">ล่าง</item>
+      <item name="bordercolor">สีกรอบ</item>
+      <item name="bgcolor">สีพื้นหลัง</item>
+      <item name="merge_cells_title">Merge table cells</item>
+      <item name="id">Id</item>
+      <item name="style">รูปแบบ</item>
+      <item name="langdir">ทิศทางการอ่าน</item>
+      <item name="langcode">โค๊ดภาษา</item>
+      <item name="mime">เป้าหมาย MIME type</item>
+      <item name="ltr">ซ้ายไปขวา</item>
+      <item name="rtl">ขวาไปซ้าย</item>
+      <item name="bgimage">พื้นหลัง image</item>
+      <item name="summary">Summary</item>
+      <item name="td">Data</item>
+      <item name="th">Header</item>
+      <item name="cell_cell">Update current cell</item>
+      <item name="cell_row">Update all cells in row</item>
+      <item name="cell_all">Update all cells in table</item>
+      <item name="row_row">Update current row</item>
+      <item name="row_odd">Update odd rows in table</item>
+      <item name="row_even">Update even rows in table</item>
+      <item name="row_all">Update all rows in table</item>
+      <item name="thead">Table Head</item>
+      <item name="tbody">Table Body</item>
+      <item name="tfoot">Table Foot</item>
+      <item name="scope">Scope</item>
+      <item name="rowgroup">Row Group</item>
+      <item name="colgroup">Col Group</item>
+      <item name="col_limit">You've exceeded the maximum number of columns of {$cols}.</item>
+      <item name="row_limit">You've exceeded the maximum number of rows of {$rows}.</item>
+      <item name="cell_limit">You've exceeded the maximum number of cells of {$cells}.</item>
+      <item name="missing_scope">Are you sure you want to continue without specifying a scope for this table header cell. Without it, it may be difficult for some users with disabilities to understand the content or data displayed of the table.</item>
+      <item name="caption">Table caption</item>
+      <item name="frame">Frame</item>
+      <item name="frame_none">none</item>
+      <item name="frame_groups">groups</item>
+      <item name="frame_rows">rows</item>
+      <item name="frame_cols">cols</item>
+      <item name="frame_all">all</item>
+      <item name="rules">Rules</item>
+      <item name="rules_void">void</item>
+      <item name="rules_above">above</item>
+      <item name="rules_below">below</item>
+      <item name="rules_hsides">hsides</item>
+      <item name="rules_lhs">lhs</item>
+      <item name="rules_rhs">rhs</item>
+      <item name="rules_vsides">vsides</item>
+      <item name="rules_box">box</item>
+      <item name="rules_border">border</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">การเปลี่ยนแปลงที่คุณทำจะหายไปหากคุณออกจากหน้านี้</item>
+      <item name="restore_content">Restore auto-saved content.</item>
+      <item name="warning_message">If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?.</item>
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">สลับไปแสดงแบบเต็มหน้า</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">เพิ่ม / แก้ไข มีเดีย</item>
+      <item name="edit">แก้ไขมีเดีย</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">เพิ่ม / แก้ไข มีเดีย</item>
+      <item name="general">ทั่วไป</item>
+      <item name="advanced">ขั้นสูง</item>
+      <item name="file">ไฟล์/URL</item>
+      <item name="list">รายการ</item>
+      <item name="size">ตำแหน่ง</item>
+      <item name="preview">ดูตัวอย่าง</item>
+      <item name="constrain_proportions">คงอัตราส่วน</item>
+      <item name="type">ชนิด</item>
+      <item name="id">Id</item>
+      <item name="name">ชื่อ</item>
+      <item name="class_name">คลาส</item>
+      <item name="vspace">ระยะห่างแนวตั้ง</item>
+      <item name="hspace">ระยะห่างแนวนอน</item>
+      <item name="play">เล่นอัตโนมัติ</item>
+      <item name="loop">เล่นซ้ำ</item>
+      <item name="menu">แสดงเมนู</item>
+      <item name="quality">ความละเอียด</item>
+      <item name="scale">ขนาด</item>
+      <item name="align">Align</item>
+      <item name="salign">SAlign</item>
+      <item name="wmode">WMode</item>
+      <item name="bgcolor">พื้นหลัง</item>
+      <item name="base">Base</item>
+      <item name="flashvars">Flashvars</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">AutoHREF</item>
+      <item name="cache">Cache</item>
+      <item name="hidden">Hidden</item>
+      <item name="controller">แผงควบคุม</item>
+      <item name="kioskmode">Kiosk mode</item>
+      <item name="playeveryframe">Play every frame</item>
+      <item name="targetcache">เป้าหมาย cache</item>
+      <item name="correction">No correction</item>
+      <item name="enablejavascript">Enable JavaScript</item>
+      <item name="starttime">Start time</item>
+      <item name="endtime">End time</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">Choke speed</item>
+      <item name="target">เป้าหมาย</item>
+      <item name="volume">Volume</item>
+      <item name="autostart">เล่นอัตโนมัติ</item>
+      <item name="enabled">Enabled</item>
+      <item name="fullscreen">Fullscreen</item>
+      <item name="invokeurls">Invoke URLs</item>
+      <item name="mute">Mute</item>
+      <item name="stretchtofit">Stretch to fit</item>
+      <item name="windowlessvideo">Windowless video</item>
+      <item name="balance">Balance</item>
+      <item name="baseurl">Base URL</item>
+      <item name="captioningid">Captioning id</item>
+      <item name="currentmarker">Current marker</item>
+      <item name="currentposition">Current position</item>
+      <item name="defaultframe">Default frame</item>
+      <item name="playcount">Play count</item>
+      <item name="rate">Rate</item>
+      <item name="uimode">UI Mode</item>
+      <item name="flash_options">Flash options</item>
+      <item name="qt_options">Quicktime options</item>
+      <item name="wmp_options">Windows media player options</item>
+      <item name="rmp_options">Real media player options</item>
+      <item name="shockwave_options">Shockwave options</item>
+      <item name="autogotourl">Auto goto URL</item>
+      <item name="center">Center</item>
+      <item name="imagestatus">Image status</item>
+      <item name="maintainaspect">Maintain aspect</item>
+      <item name="nojava">No java</item>
+      <item name="prefetch">Prefetch</item>
+      <item name="shuffle">Shuffle</item>
+      <item name="console">Console</item>
+      <item name="numloop">Num loops</item>
+      <item name="controls">Controls</item>
+      <item name="scriptcallbacks">Script callbacks</item>
+      <item name="swstretchstyle">Stretch style</item>
+      <item name="swstretchhalign">Stretch H-Align</item>
+      <item name="swstretchvalign">Stretch V-Align</item>
+      <item name="sound">Sound</item>
+      <item name="progress">Progress</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn">Streamed rtsp resources should be added to the QT Src field under the advanced tab.\nYou should also add a non streamed version to the Src field..</item>
+      <item name="align_top">บน</item>
+      <item name="align_right">ขวา</item>
+      <item name="align_bottom">ล่าง</item>
+      <item name="align_left">ซ้าย</item>
+      <item name="align_center">กลาง</item>
+      <item name="align_top_left">บน ซ้าย</item>
+      <item name="align_top_right">บน ขวา</item>
+      <item name="align_bottom_left">ล่าง ซ้าย</item>
+      <item name="align_bottom_right">ล่าง ขวา</item>
+      <item name="flv_options">Flash video options</item>
+      <item name="flv_scalemode">Scale mode</item>
+      <item name="flv_buffer">Buffer</item>
+      <item name="flv_startimage">Start image</item>
+      <item name="flv_starttime">Start time</item>
+      <item name="flv_defaultvolume">Default volumne</item>
+      <item name="flv_hiddengui">Hidden GUI</item>
+      <item name="flv_autostart">Auto start</item>
+      <item name="flv_loop">Loop</item>
+      <item name="flv_showscalemodes">Show scale modes</item>
+      <item name="flv_smoothvideo">Smooth video</item>
+      <item name="flv_jscallback">JS Callback</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">คุณสมบัติเอกสาร</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">คุณสมบัติเอกสาร</item>
+      <item name="meta_tab">ทั่วไป</item>
+      <item name="appearance_tab">รูปลักษณ์</item>
+      <item name="advanced_tab">ขั้นสูง</item>
+      <item name="meta_props">รายละเอียดเมต้า</item>
+      <item name="langprops">ภาษา และ การเข้ารหัส</item>
+      <item name="meta_title">ชื่อ</item>
+      <item name="meta_keywords">คำสำคัญ</item>
+      <item name="meta_description">รายละเอียด</item>
+      <item name="meta_robots">Robots</item>
+      <item name="doctypes">Doctype</item>
+      <item name="langcode">โค๊ดภาษา</item>
+      <item name="langdir">ทิศทางการอ่าน</item>
+      <item name="ltr">ซ้ายไปขวา</item>
+      <item name="rtl">ขวาไปซ้าย</item>
+      <item name="xml_pi">XML declaration</item>
+      <item name="encoding">Character encoding</item>
+      <item name="appearance_bgprops">คุณสมบัติพื้นหลัง</item>
+      <item name="appearance_marginprops">Body margins</item>
+      <item name="appearance_linkprops">สีลิ้งค์</item>
+      <item name="appearance_textprops">คุณสมบัติข้อความ</item>
+      <item name="bgcolor">พื้นหลัง color</item>
+      <item name="bgimage">พื้นหลัง image</item>
+      <item name="left_margin">ขอบซ้าย</item>
+      <item name="right_margin">ขอบขวา</item>
+      <item name="top_margin">ขอบบม</item>
+      <item name="bottom_margin">ขอบล่าง</item>
+      <item name="text_color">สีข้อความ</item>
+      <item name="font_size">ขนาดตัวอักษร</item>
+      <item name="font_face">ตัวอักษร</item>
+      <item name="link_color">สีลิ้งค์</item>
+      <item name="hover_color">Hover color</item>
+      <item name="visited_color">Visited color</item>
+      <item name="active_color">Active color</item>
+      <item name="textcolor">สี</item>
+      <item name="fontsize">ขนาดตัวอักษร</item>
+      <item name="fontface">เลือกตัวอกษร</item>
+      <item name="meta_index_follow">Index and follow the ลิ้งค์s</item>
+      <item name="meta_index_nofollow">Index and don't follow the ลิ้งค์s</item>
+      <item name="meta_noindex_follow">Do not index but follow the ลิ้งค์s</item>
+      <item name="meta_noindex_nofollow">Do not index and don\'t follow the ลิ้งค์s</item>
+      <item name="appearance_style">รูปแบบsheet and style properties</item>
+      <item name="stylesheet">รูปแบบsheet</item>
+      <item name="style">รูปแบบ</item>
+      <item name="author">Author</item>
+      <item name="copyright">Copyright</item>
+      <item name="add">Add new element</item>
+      <item name="remove">Remove selected element</item>
+      <item name="moveup">Move selected element up</item>
+      <item name="movedown">Move selected element down</item>
+      <item name="head_elements">Head elements</item>
+      <item name="info">Information</item>
+      <item name="add_title">ชื่อ element</item>
+      <item name="add_meta">Meta element</item>
+      <item name="add_script">Script element</item>
+      <item name="add_style">รูปแบบ element</item>
+      <item name="add_link">Link element</item>
+      <item name="add_base">Base element</item>
+      <item name="add_comment">Comment node</item>
+      <item name="title_element">ชื่อ element</item>
+      <item name="script_element">Script element</item>
+      <item name="style_element">รูปแบบ element</item>
+      <item name="base_element">Base element</item>
+      <item name="link_element">Link element</item>
+      <item name="meta_element">Meta element</item>
+      <item name="comment_element">Comment</item>
+      <item name="src">Src</item>
+      <item name="language">ภาษา</item>
+      <item name="href">Href</item>
+      <item name="target">เป้าหมาย</item>
+      <item name="type">Type</item>
+      <item name="charset">Charset</item>
+      <item name="defer">Defer</item>
+      <item name="media">Media</item>
+      <item name="properties">Properties</item>
+      <item name="name">Name</item>
+      <item name="value">Value</item>
+      <item name="content">Content</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href lang</item>
+      <item name="general_props">ทั่วไป</item>
+      <item name="advanced_props">ขั้นสูง</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">เพิ่มแม่แบบเอกสาร</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">แม่แบบเอกสาร</item>
+      <item name="label">แม่แบบเอกสาร</item>
+      <item name="desc_label">รายละเอียด</item>
+      <item name="desc">เพิ่มแม่แบบเอกสา</item>
+      <item name="select">เลือกแม่แบบเอกสาร</item>
+      <item name="preview">ดูตัวอย่าง</item>
+      <item name="warning">คำเตือน: การปรับปรุงแม่แบบเอกสารที่แตกต่างกันหนึ่งอาจทำให้ข้อมูลสูญหาย</item>
+      <item name="mdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="cdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="months_long">มกราคม,กุมภาพันธ์,มีนาคม,เมษายน,พฤษภาคม,มิถุนายน,กรกฎาคม,สิงหาคม,กันยายน,ตุลาคม,พฤศจิกายน,ธันวาคม</item>
+      <item name="months_short">ม.ค.,ก.พ.,มี.ค.,เม.ย.,พ.ค.,มิ.ย.,ก.ค.,ส.ค.,ก.ย.,ต.ค.,พ.ย.,ธ.ค.</item>
+      <item name="day_long">วันอาทิตย์,วันจันทร์,วันอังคาร,วันพุธ,วันพฤหัสบดี,วันศุกร์,วันเสาร์,อาทิตย์</item>
+      <item name="day_short">อา,จ,อ,พ,พฤ,ศ,ส,อา</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">การควบคุมตัวอักษร เปิด/ปิด</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">ปิดการสะกดคำ</item>
+      <item name="menu">ตั้งค่าการสะกดคำ</item>
+      <item name="ignore_word">ละเว้นบางคำ</item>
+      <item name="ignore_words">ละเว้นทั้งหมด</item>
+      <item name="langs">ภาษา</item>
+      <item name="wait">โปรดรอ...</item>
+      <item name="sug">คำแนะนำ</item>
+      <item name="no_sug">ไม่มีคำแนะนำ</item>
+      <item name="no_mpell">ไม่พบระบบสะกดคำผิด</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">ใส่เส้นแบ่งหน้า</item>
+    </group>
+    <group target="advlist">
+      <item name="types">Types</item>
+      <item name="def">Default</item>
+      <item name="lower_alpha">Lower alpha</item>
+      <item name="lower_greek">Lower greek</item>
+      <item name="lower_roman">Lower roman</item>
+      <item name="upper_alpha">Upper alpha</item>
+      <item name="upper_roman">Upper roman</item>
+      <item name="circle">Circle</item>
+      <item name="disc">Disc</item>
+      <item name="square">Square</item>
+    </group>
+  </language>
+</language-pack>

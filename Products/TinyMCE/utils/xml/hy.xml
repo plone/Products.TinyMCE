@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>armenios</author>
+    <version major="1" minor="5" releasedate="2009-12-26" />
+    <description>Հայերեն լեզվային փաթեթ TinyMCE խմբագրիչի համար</description>
+  </header>
+  <language code="hy" title="Armenian" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">требуется использовать WYSIWYG режим для этого поля?</item>
+      <item name="apply">Հաստատել</item>
+      <item name="insert">Տեղադրել</item>
+      <item name="update">Թարմացնել</item>
+      <item name="cancel">Չեղյալ</item>
+      <item name="close">Փակել</item>
+      <item name="browse">Դիտել</item>
+      <item name="class_name">Դաս</item>
+      <item name="not_set">- ընտրել -</item>
+      <item name="clipboard_msg">Պատճենել / Կտրել / Տեղադրել (մատչելի չէ Mozilla և Firefox բրաուզերներում) \ n Ձեզ հետաքրքի՞ր է այդ ինֆորմացիան</item>
+      <item name="clipboard_no_support">Տվյալ պահին չի ընդունվում Ձեր բրաուզերի կողմից, օգտագործեք հապավումներ</item>
+      <item name="popup_blocked">Sorry, but we have noticed that your popup-blocker has disabled a window that provides application functionality. You will need to disable popup blocking on this site in order to fully utilize this tool</item>
+      <item name="invalid_data">Սխալ: Ներածված է սխալ արժեք, գունանշված է կարմիրով</item>
+      <item name="more_colors">Շատ գույներ</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">Հաստ (Ctrl + B)</item>
+      <item name="italic_desc">Շեղ (Ctrl + I)</item>
+      <item name="underline_desc">Ընդգծված (Ctrl + U)</item>
+      <item name="striketrough_desc">Արտագծված</item>
+      <item name="bullist_desc">Ցանկ</item>
+      <item name="numlist_desc">Ցանկ՝ համարակալված</item>
+      <item name="undo_desc">Ետ (Ctrl + Z)</item>
+      <item name="redo_desc">Առաջ (Ctrl + Y)</item>
+      <item name="cleanup_desc">Հեռացնել ավելորդ կոդը</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">Ոճեր</item>
+      <item name="font_size">Չափս</item>
+      <item name="fontdefault">Տառատեսակ</item>
+      <item name="block">Ֆորմատ</item>
+      <item name="paragraph">Ֆորմատ</item>
+      <item name="div">Div</item>
+      <item name="address">Հասցեի ոճ</item>
+      <item name="pre">Նախապես ֆորմատավորված</item>
+      <item name="h1">Վերնագիր 1</item>
+      <item name="h2">Վերնագիր 2</item>
+      <item name="h3">Վերնագիր 3</item>
+      <item name="h4">Վերնագիր 4</item>
+      <item name="h5">Վերնագիր 5</item>
+      <item name="h6">Վերնագիր 6</item>
+      <item name="blockquote">Մեկնաբանություն</item>
+      <item name="code">Կոդ</item>
+      <item name="samp">Կոդի օրինակ</item>
+      <item name="dt">Տերմինների բառարան</item>
+      <item name="dd">Բառարան բացատրություն</item>
+      <!-- Buttons -->
+      <item name="bold_desc">Հաստ (Ctrl + B)</item>
+      <item name="italic_desc">Շեղ (Ctrl + I)</item>
+      <item name="underline_desc">Ընդգծված (Ctrl + U)</item>
+      <item name="striketrough_desc">Արտագծված</item>
+      <item name="justifyleft_desc">Ձախ հավասարեցում</item>
+      <item name="justifycenter_desc">Կենտրոնացնել</item>
+      <item name="justifyright_desc">Աջ հավասարեցում</item>
+      <item name="justifyfull_desc">Ըստ լայնության</item>
+      <item name="bullist_desc">Ցանկ</item>
+      <item name="numlist_desc">Համարակալված ցանկ</item>
+      <item name="outdent_desc">Կրճատել հեռավորությունը ձախ եզրից</item>
+      <item name="indent_desc">Ավելացնել հեռավորությունը ձախ եզրից</item>
+      <item name="undo_desc">Ետ (Ctrl + Z)</item>
+      <item name="redo_desc">Առաջ (Ctrl + Y)</item>
+      <item name="link_desc">Տեղադրել / փոփոխել հղումը</item>
+      <item name="unlink_desc">Հեռացնել հղումը</item>
+      <item name="image_desc">Ավելացնել / փոփոխել նկար</item>
+      <item name="cleanup_desc">Հեռացնել ավելորդ կոդը</item>
+      <item name="code_desc">Փոփոխել HTML կոդը</item>
+      <item name="sub_desc">Ստորին ինդեքս</item>
+      <item name="sup_desc">Վերին ինդեքս</item>
+      <item name="hr_desc">Տեղադրել հորիզոնական բաժանիչ</item>
+      <item name="removeformat_desc">Հեռացնել ֆորմատավորումը</item>
+      <item name="custom1_desc">Ձեր մեկնաբանությունը</item>
+      <item name="forecolor_desc">Ընտրեք տեքստի գույնը</item>
+      <item name="backcolor_desc">Ընտրեք ֆոնի գույնը</item>
+      <item name="charmap_desc">Տեղադրել սիմվոլ</item>
+      <item name="visualaid_desc">Toggle guidelines / invisible elements</item>
+      <item name="anchor_desc">Ավելացնել / փոփխել խարիսխը</item>
+      <item name="cut_desc">Կտրել</item>
+      <item name="copy_desc">Պատճենել</item>
+      <item name="paste_desc">Տեղադրել</item>
+      <item name="image_props_desc">Նկարի պարամետրեր</item>
+      <item name="newdocument_desc">Նոր փաստաթուղթ</item>
+      <item name="help_desc">Օգնություն</item>
+      <item name="blockquote_desc">Մեկնաբանություն</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">Պատճենել / Կտրել / Տեղադրել (մատչելի չէ Mozilla և Firefox բրաուզերներում) \ n Ձեզ հետաքրքի՞ր է այդ ինֆորմացիան</item>
+      <item name="path">Հասցե</item>
+      <item name="newdocument">Համոզվա՞ծ եք, որ ցանկանում եք ամբողջը հեռացնել</item>
+      <item name="toolbar_focus">Անցնել սեղմակների վահանակ - Alt + Q, Անցնել խմբագրիչին - Alt-Z, Անցնել հասցեի էլեմենտին - Alt-X</item>
+      <item name="more_colors">Շատ գույներ</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">TinyMCE Խմբագրիչ</item>
+      <item name="about_general">Ծրագրային ապահովման մասին ...</item>
+      <item name="about_help">Օգնություն</item>
+      <item name="about_license">Լիցենզիա</item>
+      <item name="about_plugins">Պլագիններ</item>
+      <item name="about_plugin">Պլագին</item>
+      <item name="about_author">Հեղինակ</item>
+      <item name="about_version">Տարբերակ</item>
+      <item name="about_loaded">Բեռբված պլագիններ</item>
+      <!-- Anchor -->
+      <item name="anchor_title">Ավելացնել / փոփոխել խարիսխը</item>
+      <item name="anchor_name">Խարիսխ անվանում</item>
+      <!-- Source -->
+      <item name="code_title">HTML կոդի խմբագրիչ</item>
+      <item name="code_wordwrap">Տեղափոխել բառեր</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">Ընտրեք գույն</item>
+      <item name="colorpicker_picker_tab">Գունային օրինակ</item>
+      <item name="colorpicker_picker_title">Գունային օրինակ</item>
+      <item name="colorpicker_palette_tab">Ցանկ</item>
+      <item name="colorpicker_palette_title">Գույների ցանկ</item>
+      <item name="colorpicker_named_tab">Ըստ անվանման</item>
+      <item name="colorpicker_named_title">Ըստ անվանման</item>
+      <item name="colorpicker_color">Գույն:</item>
+      <item name="colorpicker_name">Անվանում:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">Ընտրել պատահական սիմվոլ</item>
+      <!-- Image -->
+      <item name="image_title">Ավելացնել / փոփոխել նկար</item>
+      <item name="image_src">Հասցե</item>
+      <item name="image_alt">Նկարագրություն</item>
+      <item name="image_list">Նկարների ցանկ</item>
+      <item name="image_border">Եզր</item>
+      <item name="image_dimensions">Չափսեր</item>
+      <item name="image_vspace">Ուղղահ. շեղում</item>
+      <item name="image_hspace">Հորիզ. շեղում</item>
+      <item name="image_align">Հավասարեցում</item>
+      <item name="image_align_baseline">Ըստ բազային գծի</item>
+      <item name="image_align_top">Ըստ վերին եզրի</item>
+      <item name="image_align_middle">Կենտրոնացնել</item>
+      <item name="image_align_bottom">Ըստ ստորին գծի</item>
+      <item name="image_align_texttop">Ըստ տեքստի վերին եզրի</item>
+      <item name="image_align_textbottom">Ըստ տեքստի ստորին եզրի</item>
+      <item name="image_align_left">Ձախ հավասարեցում</item>
+      <item name="image_align_right">Աջ հավասարեցում</item>
+      <!-- Link -->
+      <item name="link_title">Ավելացնել / փոփոխել հղումը</item>
+      <item name="link_url">Հղման հասցե</item>
+      <item name="link_target">Բացել ...</item>
+      <item name="link_target_same">այս պատուհանում</item>
+      <item name="link_target_blank">նոր պատուհանում</item>
+      <item name="link_titlefield">Վերնագիր</item>
+      <item name="link_is_email">Ներածված URL հասցեն նման է email հասցեի, Դուք ցանկանու՞մ եք ավելացնել mailto:</item>
+      <item name="link_is_external">Ներածված URL հասցեն նման է արտաքին հղման, Դուք ցանկանու՞մ եք ավելացնել http://</item>
+      <item name="link_list">Հղումների ցանկ</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">Հավասարեցում</item>
+      <item name="left">Ըստ ձախ եզրի</item>
+      <item name="center">Կենտրոնացնել</item>
+      <item name="right">Ըստ աջ եզրի</item>
+      <item name="full">Ըստ լայնության</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">% d.% m.% Y</item>
+      <item name="time_fmt">% H:% M:% S</item>
+      <item name="insertdate_desc">Տեղադրել ամսաթիվ</item>
+      <item name="inserttime_desc">Տեղադրել ժամանակ</item>
+      <item name="months_long">հունվար, փետրվար, մարտ, ապրիլ, մայիս, հունիս, հուլիս, օգոստոս, սեպտեմբեր, հոկտեմբեր, նոյեմբեր, դեկտեմբեր</item>
+      <item name="months_short">հուն, փետ, մարտ, ապր, մայիս, հուն, հուլ, օգստ, սեպտ, հոկտ, նոյ, դեկ</item>
+      <item name="day_long">կիրակի, երկուշաբթի, երեքշաբթի, չորեքշաբթի, հինգշաբթի, ուրբաթ, շաբաթ, կիրակի</item>
+      <item name="day_short">Կիր, Երկ, Երք, Չրք, Հնգ, Ուրբ, Շբթ, Կիր</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">Տպել</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">Դիտել</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">Ուղղությունը՝ ձախից աջ</item>
+      <item name="rtl_desc">Ուղղությունը՝ աջից ձախ</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">Տեղադրել նոր շերտ</item>
+      <item name="forward_desc">Վերև</item>
+      <item name="backward_desc">Տեղափոխել ետ</item>
+      <item name="absolute_desc">Կիրառել բացարձակ տեղակայում</item>
+      <item name="content">Նոր շերտ ...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">Պահպանել</item>
+      <item name="cancel_desc">Չեղարկել բալար փոփոխությունները</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">Տեղադրել բացարկ</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">Տառասխալների ստուգում</item>
+      <item name="download">ieSpell պլագինը չի գտնվել։ Ցանկանու՞մ եք տեղադրել</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">Հարիզոնական բաժանիչ</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">Լայնություն</item>
+      <item name="size">Բարձրություն</item>
+      <item name="noshade">Առանց ստվերի</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">Սմայլիկներ</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">Տեղադրել սմայլիկ</item>
+      <item name="desc">Սմայլիկներ</item>
+      <item name="cool">Cool</item>
+      <item name="cry">Cry</item>
+      <item name="embarassed">Embarassed</item>
+      <item name="foot_in_mouth">Foot in mouth</item>
+      <item name="frown">Frown</item>
+      <item name="innocent">Innocent</item>
+      <item name="kiss">Kiss</item>
+      <item name="laughing">Laughing</item>
+      <item name="money_mouth">Money mouth</item>
+      <item name="sealed">Sealed</item>
+      <item name="smile">Smile</item>
+      <item name="surprised">Surprised</item>
+      <item name="tongue_out">Tongue out</item>
+      <item name="undecided">Undecided</item>
+      <item name="wink">Wink</item>
+      <item name="yell">Yell</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">Որոնել</item>
+      <item name="replace_desc">Որոնել / Փոփոխել</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">Նորից որոնել</item>
+      <item name="notfound">Որոնումը ավարտվեց։ Ոչինչ չի գտնվել</item>
+      <item name="search_title">Որոնել</item>
+      <item name="replace_title">Որոնել / Փոփոխել</item>
+      <item name="allreplaced">Բոլոր գտնվածները փոփոխվեցին</item>
+      <item name="findwhat">Որոնել</item>
+      <item name="replacewith">Փոփոխել</item>
+      <item name="direction">Ուղղություն</item>
+      <item name="up">Վերև </item>
+      <item name="down">Ներքև</item>
+      <item name="mcase">Հաշվի առնել ռեգիստորը</item>
+      <item name="findnext">Գտնել հաջորդը</item>
+      <item name="replace">Փոփոխել</item>
+      <item name="replaceall">Փոփոխել բալորը</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">Տեղադրել / փոփոխել նկար</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">200</item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">Հիմնական</item>
+      <item name="tab_appearance">Տեսք</item>
+      <item name="tab_advanced">Լրացուցիչ</item>
+      <item name="general">Հիմնական</item>
+      <item name="title">Վերնագիր</item>
+      <item name="preview">Նախադիտում</item>
+      <item name="constrain_proportions">Պահպանել չափերի հարաբերակցությունը</item>
+      <item name="langdir">Լեզվի ուղղվածությունը</item>
+      <item name="langcode">Լեզվի կոդ</item>
+      <item name="long_desc">Մանրամասն բացատրության հղում</item>
+      <item name="style">Ոճ</item>
+      <item name="classes">Դասեր</item>
+      <item name="ltr">Ձախից աջ</item>
+      <item name="rtl">Աջից ձախ</item>
+      <item name="id">Id</item>
+      <item name="map">Նկարի map</item>
+      <item name="swap_image">Swap</item>
+      <item name="alt_image">Ալտերնատիվ նկար</item>
+      <item name="mouseover">Մոտեցման պահին</item>
+      <item name="mouseout">հեռացման պահին</item>
+      <item name="misc">Այլ</item>
+      <item name="example_img">Նկարի դիտման տեսք</item>
+      <item name="missing_alt">Դուք իրո՞ք չեք ցանկանում նկարագրություն ներառել։</item>
+      <item name="dialog_title">Ավելացնել / փոփոխել նկար</item>
+      <item name="src">Նկարի հասցե</item>
+      <item name="alt">Նկարագրություն</item>
+      <item name="list">Նկարների ցանկ</item>
+      <item name="border">Եզր</item>
+      <item name="dimensions">Չափսեր</item>
+      <item name="vspace">Ուղղ. հեռացում</item>
+      <item name="hspace">Հորիզ. հեռացում</item>
+      <item name="align">Հավասարեցում</item>
+      <item name="align_baseline">Ըստ բազային գծի</item>
+      <item name="align_top">Ըստ վերի եզրի</item>
+      <item name="align_middle">Կենտրոնացնել</item>
+      <item name="align_bottom">Ըստ ստորին եզրի</item>
+      <item name="align_texttop">Ըստ տեքստի վերին եզրի</item>
+      <item name="align_textbottom">Ըստ տեքստի ստորին եզրի</item>
+      <item name="align_left">Ըստ ձախ եզրի</item>
+      <item name="align_right">Ըստ աջ եզրի</item>
+      <item name="image_list">Նկարների ցանկ</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">Տեղադրել / փոփոխել հղում</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">200</item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">Տեղադրել / փոփոխել հղում</item>
+      <item name="url">Հասցե</item>
+      <item name="target">Բացել ...</item>
+      <item name="titlefield">Վերնագիր</item>
+      <item name="is_email">Ներածված URL հասցեն նման է email հասցեի, Դուք ցանկանու՞մ եք ավելացնել mailto:</item>
+      <item name="is_external">Ներածված URL հասցեն նման է արտաքին հղման, Դուք ցանկանու՞մ եք ավելացնել http://</item>
+      <item name="list">Հղումների ցանկ</item>
+      <item name="general_tab">Հիմնական</item>
+      <item name="popup_tab">Popup</item>
+      <item name="events_tab">Դեպքեր</item>
+      <item name="advanced_tab">Լրացուցիչ</item>
+      <item name="general_props">Ընդհանուր պարամետրեր</item>
+      <item name="popup_props">Popup պարամետրեր</item>
+      <item name="event_props">Դեպքեր</item>
+      <item name="advanced_props">Լրացուցիչ դեպքեր</item>
+      <item name="popup_opts">Պարամետրեր</item>
+      <item name="anchor_names">Խարիսխ</item>
+      <item name="target_same">Բացել այս պատուհանում / ֆրեյմում</item>
+      <item name="target_parent">Բացել հիմնական պատուհանում / ֆրեյմում</item>
+      <item name="target_top">Բացել վերին ֆրեյմում (փոփոխել բոլոր ֆրեյմերը)</item>
+      <item name="target_blank">Բացել նոր պատուհանում</item>
+      <item name="popup">Javascript popup</item>
+      <item name="popup_url">Popup URL</item>
+      <item name="popup_name">Պատուհանի անվանում</item>
+      <item name="popup_return">Տեղադրել 'return false'</item>
+      <item name="popup_scrollbars">Ցուցադրել սքրոլլները</item>
+      <item name="popup_statusbar">Ցուցադրել ստատուսը</item>
+      <item name="popup_toolbar">Ցուցադրել գործիքային վահանակները</item>
+      <item name="popup_menubar">Ցուցադրել մենյուն</item>
+      <item name="popup_location">Ցուցադրել location վահանակը</item>
+      <item name="popup_resizable">Թույլատրել չափերի փոփոխում</item>
+      <item name="popup_dependent">Dependent (միայն Mozilla / Firefox)</item>
+      <item name="popup_size">Չափս</item>
+      <item name="popup_position">Տեղակայում (X / Y)</item>
+      <item name="id">Id</item>
+      <item name="style">Ոճ</item>
+      <item name="classes">Դասեր</item>
+      <item name="target_name">Target name</item>
+      <item name="langdir">Ուղղություն</item>
+      <item name="target_langcode">Target language</item>
+      <item name="langcode">Լեզվի կոդ</item>
+      <item name="encoding">Target character encoding</item>
+      <item name="mime">Target MIME type</item>
+      <item name="rel">Relationship page to target</item>
+      <item name="rev">Relationship target to page</item>
+      <item name="tabindex">Tabindex</item>
+      <item name="accesskey">Accesskey</item>
+      <item name="ltr">Ձախից աջ</item>
+      <item name="rtl">Աջից ձախ</item>
+      <item name="link_list">Հղումների ցանկ</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">Citation</item>
+      <item name="abbr_desc">Abbreviation</item>
+      <item name="acronym_desc">Acronym</item>
+      <item name="del_desc">Deletion</item>
+      <item name="ins_desc">Insertion</item>
+      <item name="attribs_desc">Տեղադրել / փոփոխել ատրիբուտները</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">Վերնագիր</item>
+      <item name="attribute_label_id">ID</item>
+      <item name="attribute_label_class">Դաս</item>
+      <item name="attribute_label_style">Ոճ</item>
+      <item name="attribute_label_cite">Մեկնաբանություն</item>
+      <item name="attribute_label_datetime">Ամսաթիվ / Ժամանակ</item>
+      <item name="attribute_label_langdir">Տեքստի ուղղություն</item>
+      <item name="attribute_option_ltr">Ձախից աջ</item>
+      <item name="attribute_option_rtl">Աջից ձախ</item>
+      <item name="attribute_label_langcode">Լեզու</item>
+      <item name="attribute_label_tabindex">TabIndex</item>
+      <item name="attribute_label_accesskey">AccessKey</item>
+      <item name="attribute_events_tab">Դեպքեր</item>
+      <item name="attribute_attrib_tab">Աըրիբուտներ</item>
+      <item name="general_tab">Հիմնական</item>
+      <item name="attrib_tab">Ատրիբուտներ</item>
+      <item name="events_tab">Դեպքեր</item>
+      <item name="fieldset_general_tab">Ընդհանուր պարամետրեր</item>
+      <item name="fieldset_attrib_tab">Element Attributes</item>
+      <item name="fieldset_events_tab">Element Events</item>
+      <item name="title_ins_element">Insertion Element</item>
+      <item name="title_del_element">Deletion Element</item>
+      <item name="title_acronym_element">Acronym Element</item>
+      <item name="title_abbr_element">Abbreviation Element</item>
+      <item name="title_cite_element">Citation Element</item>
+      <item name="remove">Հեռացնել</item>
+      <item name="insert_date">Տեղադրել ընթացիկ ամսաթիվը / ժամը</item>
+      <item name="option_ltr">Ձախից աջ</item>
+      <item name="option_rtl">Աջից ձախ</item>
+      <item name="attribs_title">Տեղադրել / փոփոխել ատրիբուտներ</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">Խմբագրել CSS ոճերը</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">CSS ոճերի խմբագրում</item>
+      <item name="apply">Հաստատել</item>
+      <item name="text_tab">Տեքստ</item>
+      <item name="background_tab">Ֆոն</item>
+      <item name="block_tab">Բլոկ</item>
+      <item name="box_tab">Box</item>
+      <item name="border_tab">Եզր</item>
+      <item name="list_tab">Ցուցակ</item>
+      <item name="positioning_tab">Տեղակայում</item>
+      <item name="text_props">Տեքստ</item>
+      <item name="text_font">Տառատեսակ</item>
+      <item name="text_size">Չափս</item>
+      <item name="text_weight">Հաստություն</item>
+      <item name="text_style">Ոճ</item>
+      <item name="text_variant">Variant</item>
+      <item name="text_lineheight">Տողի բարձրություն</item>
+      <item name="text_case">Case</item>
+      <item name="text_color">Գույն</item>
+      <item name="text_decoration">Ձևավորում</item>
+      <item name="text_overline">վերին գիծ</item>
+      <item name="text_underline">ստորին գիծ</item>
+      <item name="text_striketrough">արտագծված</item>
+      <item name="text_blink">թարթումներ</item>
+      <item name="text_none">ոչինչ</item>
+      <item name="background_color">Ֆոնի գույն</item>
+      <item name="background_image">Ֆոնային նկար</item>
+      <item name="background_repeat">Կրկնություն</item>
+      <item name="background_attachment">Attachment</item>
+      <item name="background_hpos">Հորիզոնական տեղակայում</item>
+      <item name="background_vpos">Ուղղահայաց տեղակայում</item>
+      <item name="block_wordspacing">Բացարկներ բառերի միջև</item>
+      <item name="block_letterspacing">Բացարկներ տառերի միջև</item>
+      <item name="block_vertical_alignment">Ուղղահայաց հավասարեցում</item>
+      <item name="block_text_align">Տեքստի հավասարեցում</item>
+      <item name="block_text_indent">Text indent</item>
+      <item name="block_whitespace">Whitespace</item>
+      <item name="block_display">Display</item>
+      <item name="box_width">Լայնություն</item>
+      <item name="box_height">Բարձրություն</item>
+      <item name="box_float">Float</item>
+      <item name="box_clear">Clear</item>
+      <item name="padding">Padding</item>
+      <item name="same">Միևնույն ամեն ինչի համար</item>
+      <item name="top">Վերևից</item>
+      <item name="right">Աջից</item>
+      <item name="bottom">Ներքևից</item>
+      <item name="left">Ձախից</item>
+      <item name="margin">Margin</item>
+      <item name="style">Ոճ</item>
+      <item name="width">Լայնություն</item>
+      <item name="height">Բարձրություն</item>
+      <item name="color">Գույն</item>
+      <item name="list_type">Տեսակ</item>
+      <item name="bullet_image">Bullet image</item>
+      <item name="position">Դիրք</item>
+      <item name="positioning_type">Տեսակ</item>
+      <item name="visibility">Տեսանելիություն</item>
+      <item name="zindex">Z-index</item>
+      <item name="overflow">Overflow</item>
+      <item name="placement">Placement</item>
+      <item name="clip">Clip</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">Տեղադրել որպես տեքստ</item>
+      <item name="paste_word_desc">Տեղադրել Word ծրագրից</item>
+      <item name="selectall_desc">Ընտրել բոլորը</item>
+      <!--<item name="plaintext_mode_sticky">Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode.</item>-->
+      <!--<item name="plaintext_mode">Paste is now in plain text mode. Click again to toggle back to regular paste mode.</item>-->
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">Օգտագործեք CTRL + V պատճենված տեքստի տեղադրման համար</item>
+      <item name="text_linebreaks">Պահպանել տողադարձերը</item>
+      <item name="word_title">Օգտագործեք CTRL + V պատճենված տեքստի տեղադրման համար</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">Տեղադրել նոր աղյուսակ</item>
+      <item name="row_before_desc">Вставить строку до</item>
+      <item name="row_after_desc">Добавить строку после</item>
+      <item name="delete_row_desc">Удалить строку</item>
+      <item name="col_before_desc">Добавить столбец до</item>
+      <item name="col_after_desc">Добавить столбец после</item>
+      <item name="delete_col_desc">Удалить столбец</item>
+      <item name="split_cells_desc">Разделить ячейки</item>
+      <item name="merge_cells_desc">Объединить ячейки</item>
+      <item name="row_desc">Свойства строке таблицы</item>
+      <item name="cell_desc">Свойства ячейки таблицы</item>
+      <item name="props_desc">Свойства таблицы</item>
+      <item name="paste_row_before_desc">Вставить строку до</item>
+      <item name="paste_row_after_desc">Вставить строку после</item>
+      <item name="cut_row_desc">Вырезать строку таблицы</item>
+      <item name="copy_row_desc">Копировать строку таблицы</item>
+      <item name="del">Удалить таблицу</item>
+      <item name="row">Строка</item>
+      <item name="col">Поле</item>
+      <item name="cell">Ячейка</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width">30</item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">Общее</item>
+      <item name="advanced_tab">Дополнительно</item>
+      <item name="general_props">Общие свойства</item>
+      <item name="advanced_props">Расширенные свойства</item>
+      <item name="rowtype">Row in table part</item>
+      <item name="title">Добавление / Изменение таблицы</item>
+      <item name="width">Ширина</item>
+      <item name="height">Высота</item>
+      <item name="cols">Столбцы</item>
+      <item name="rows">Сроки</item>
+      <item name="cellspacing">Расстояние между ячейками</item>
+      <item name="cellpadding">Отступы в ячейках</item>
+      <item name="border">Граница</item>
+      <item name="align">Выравнивание</item>
+      <item name="align_default">По умолчанию</item>
+      <item name="align_left">По левому краю</item>
+      <item name="align_right">По правому краю</item>
+      <item name="align_middle">По центру</item>
+      <item name="row_title">Свойства строке таблицы</item>
+      <item name="cell_title">Свойства ячейки таблицы</item>
+      <item name="cell_type">Тип ячейки</item>
+      <item name="valign">Вертикальное выравнивание</item>
+      <item name="align_top">По верхнему краю</item>
+      <item name="align_bottom">По нижнему краю</item>
+      <item name="bordercolor">цвет границы</item>
+      <item name="bgcolor">цвет фона</item>
+      <item name="merge_cells_title">Объединить ячейки</item>
+      <item name="id">Id</item>
+      <item name="style">Стиль</item>
+      <item name="langdir">Направление языка</item>
+      <item name="langcode">Код языка</item>
+      <item name="mime">Target MIME-тип</item>
+      <item name="ltr">Слева направо</item>
+      <item name="rtl">Справа налево</item>
+      <item name="bgimage">Фоновое изображение</item>
+      <item name="summary">Общее</item>
+      <item name="td">Данные</item>
+      <item name="th">Заголовок</item>
+      <item name="cell_cell">Обновить текущую ячейку</item>
+      <item name="cell_row">Обновить все ячейки в строке</item>
+      <item name="cell_all">Обновить все ячейки в таблице</item>
+      <item name="row_row">Обновить текущую строку</item>
+      <item name="row_odd">Обновить нечетные строки в таблице</item>
+      <item name="row_even">Обновить четные строки в таблице</item>
+      <item name="row_all">Обновить все строки в таблице</item>
+      <item name="thead">Заголовок таблицы</item>
+      <item name="tbody">Тело таблицы</item>
+      <item name="tfoot">Нижняя частсина</item>
+      <item name="scope">Scope</item>
+      <item name="rowgroup">Row Group</item>
+      <item name="colgroup">Col Group</item>
+      <item name="col_limit">You've exceeded the maximum number of columns of ($ cols)</item>
+      <item name="row_limit">You've exceeded the maximum number of rows of ($ rows)</item>
+      <item name="cell_limit">You've exceeded the maximum number of cells of ($ cells)</item>
+      <item name="missing_scope">Are you sure you want to continue without specifying a scope for this table header cell. Without it, it may be difficult for some users with disabilities to understand the content or data displayed of the table</item>
+      <item name="caption">Table caption</item>
+      <item name="frame">Фрейм</item>
+      <item name="frame_none">none</item>
+      <item name="frame_groups">groups</item>
+      <item name="frame_rows">rows</item>
+      <item name="frame_cols">cols</item>
+      <item name="frame_all">all</item>
+      <item name="rules">Rules</item>
+      <item name="rules_void">void</item>
+      <item name="rules_above">above</item>
+      <item name="rules_below">below</item>
+      <item name="rules_hsides">hsides</item>
+      <item name="rules_lhs">lhs</item>
+      <item name="rules_rhs">rhs</item>
+      <item name="rules_vsides">vsides</item>
+      <item name="rules_box">box</item>
+      <item name="rules_border">border</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">Изменения, которые вы сделали, будут потеряны, если вы перейдете с этой страницы.</item>
+      <!--<item name="restore_content">Restore auto-saved content.</item>-->
+      <!--<item name="warning_message">If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?.</item>-->
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">Переключиться на весь экран</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">Տեղադրել / փոփոխել մեդիա</item>
+      <item name="edit">Редактировать embedded media</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">Вставить / редактировать embedded media</item>
+      <item name="general">Общее</item>
+      <item name="advanced">Дополнительно</item>
+      <item name="file">Файл / URL</item>
+      <item name="list">Список</item>
+      <item name="size">Размеры</item>
+      <item name="preview">Просмотр</item>
+      <item name="constrain_proportions">Сохранять пропорции</item>
+      <item name="type">Тип</item>
+      <item name="id">Id</item>
+      <item name="name">Название</item>
+      <item name="class_name">Класс</item>
+      <item name="vspace">верт. отступ</item>
+      <item name="hspace">гор. отступ</item>
+      <item name="play">Автоплей</item>
+      <item name="loop">Луп</item>
+      <item name="menu">Показывать меню</item>
+      <item name="quality">Качество</item>
+      <item name="scale">Scale</item>
+      <item name="align">Align</item>
+      <item name="salign">SAlign</item>
+      <item name="wmode">WMode</item>
+      <item name="bgcolor">Фон</item>
+      <item name="base">Base</item>
+      <item name="flashvars">Flashvars</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">AutoHREF</item>
+      <item name="cache">Кэш</item>
+      <item name="hidden">Hidden</item>
+      <item name="controller">Controller</item>
+      <item name="kioskmode">Kiosk mode</item>
+      <item name="playeveryframe">Play every frame</item>
+      <item name="targetcache">Target cache</item>
+      <item name="correction">No correction</item>
+      <item name="enablejavascript">Enable JavaScript</item>
+      <item name="starttime">Start time</item>
+      <item name="endtime">End time</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">Choke speed</item>
+      <item name="target">Target</item>
+      <item name="volume">Громкость</item>
+      <item name="autostart">Автостарт</item>
+      <item name="enabled">Enabled</item>
+      <item name="fullscreen">Fullscreen</item>
+      <item name="invokeurls">Invoke URLs</item>
+      <item name="mute">Mute</item>
+      <item name="stretchtofit">Stretch to fit</item>
+      <item name="windowlessvideo">Windowless video</item>
+      <item name="balance">Баланс</item>
+      <item name="baseurl">Base URL</item>
+      <item name="captioningid">Captioning id</item>
+      <item name="currentmarker">Current marker</item>
+      <item name="currentposition">Current position</item>
+      <item name="defaultframe">Default frame</item>
+      <item name="playcount">Play count</item>
+      <item name="rate">Rate</item>
+      <item name="uimode">UI Mode</item>
+      <item name="flash_options">Flash options</item>
+      <item name="qt_options">Quicktime options</item>
+      <item name="wmp_options">Windows media player options</item>
+      <item name="rmp_options">Real media player options</item>
+      <item name="shockwave_options">Shockwave options</item>
+      <item name="autogotourl">Auto goto URL</item>
+      <item name="center">Center</item>
+      <item name="imagestatus">Image status</item>
+      <item name="maintainaspect">Maintain aspect</item>
+      <item name="nojava">No java</item>
+      <item name="prefetch">Prefetch</item>
+      <item name="shuffle">Shuffle</item>
+      <item name="console">Console</item>
+      <item name="numloop">Num loops</item>
+      <item name="controls">Controls</item>
+      <item name="scriptcallbacks">Script callbacks</item>
+      <item name="swstretchstyle">Stretch style</item>
+      <item name="swstretchhalign">Stretch H-Align</item>
+      <item name="swstretchvalign">Stretch V-Align</item>
+      <item name="sound">Sound</item>
+      <item name="progress">Progress</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn">Streamed rtsp resources should be added to the QT Src field under the advanced tab \ nYou should also add a non streamed version to the Src field ..</item>
+      <item name="align_top">Top</item>
+      <item name="align_right">Right</item>
+      <item name="align_bottom">Bottom</item>
+      <item name="align_left">Left</item>
+      <item name="align_center">Center</item>
+      <item name="align_top_left">Top left</item>
+      <item name="align_top_right">Top right</item>
+      <item name="align_bottom_left">Bottom left</item>
+      <item name="align_bottom_right">Bottom right</item>
+      <item name="flv_options">Flash video options</item>
+      <item name="flv_scalemode">Scale mode</item>
+      <item name="flv_buffer">Buffer</item>
+      <item name="flv_startimage">Start image</item>
+      <item name="flv_starttime">Start time</item>
+      <item name="flv_defaultvolume">Default volumne</item>
+      <item name="flv_hiddengui">Hidden GUI</item>
+      <item name="flv_autostart">Auto start</item>
+      <item name="flv_loop">Loop</item>
+      <item name="flv_showscalemodes">Show scale modes</item>
+      <item name="flv_smoothvideo">Smooth video</item>
+      <item name="flv_jscallback">JS Callback</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">Свойства документа</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Свойства документа</item>
+      <item name="meta_tab">Общее</item>
+      <item name="appearance_tab">Вид</item>
+      <item name="advanced_tab">Дополнительно</item>
+      <item name="meta_props">Цель информации</item>
+      <item name="langprops">Язык и кодирования</item>
+      <item name="meta_title">Заголовок</item>
+      <item name="meta_keywords">Ключевые слова</item>
+      <item name="meta_description">Описание</item>
+      <item name="meta_robots">Работы</item>
+      <item name="doctypes">Doctype</item>
+      <item name="langcode">Код языка</item>
+      <item name="langdir">Направление языка</item>
+      <item name="ltr">Слева направо</item>
+      <item name="rtl">Справа налево</item>
+      <item name="xml_pi">XML declaration</item>
+      <item name="encoding">Кодировка</item>
+      <item name="appearance_bgprops">Свойства фона</item>
+      <item name="appearance_marginprops">Отступы</item>
+      <item name="appearance_linkprops">Цвет ссылок</item>
+      <item name="appearance_textprops">Свойства текста</item>
+      <item name="bgcolor">Цвет фона</item>
+      <item name="bgimage">Фоновое изображение</item>
+      <item name="left_margin">Отступ слева</item>
+      <item name="right_margin">Отступ справа</item>
+      <item name="top_margin">Отступ сверху</item>
+      <item name="bottom_margin">Отступ снизу</item>
+      <item name="text_color">Цвет текста</item>
+      <item name="font_size">Размер шрифта</item>
+      <item name="font_face">Шрифт</item>
+      <item name="link_color">Цвет ссылки</item>
+      <item name="hover_color">Цвет ссылки при наведении</item>
+      <item name="visited_color">Цвет нажатой ссылки</item>
+      <item name="active_color">Цвет активной ссылки</item>
+      <item name="textcolor">Цвет</item>
+      <item name="fontsize">Размер шрифта</item>
+      <item name="fontface">Семейство шрифта</item>
+      <item name="meta_index_follow">Index and follow the links</item>
+      <item name="meta_index_nofollow">Index and don't follow the links</item>
+      <item name="meta_noindex_follow">Do not index but follow the links</item>
+      <item name="meta_noindex_nofollow">Do not index and don \ 't follow the links</item>
+      <item name="appearance_style">Stylesheet and style properties</item>
+      <item name="stylesheet">Stylesheet</item>
+      <item name="style">Стиль</item>
+      <item name="author">Автор</item>
+      <item name="copyright">Копирайт</item>
+      <item name="add">Добавить новый элемент</item>
+      <item name="remove">Удалить выделенный элемент</item>
+      <item name="moveup">Переместить элемент вверх</item>
+      <item name="movedown">Переместить элемент вниз</item>
+      <item name="head_elements">Head elements</item>
+      <item name="info">Информация</item>
+      <item name="add_title">Title element</item>
+      <item name="add_meta">Meta element</item>
+      <item name="add_script">Script element</item>
+      <item name="add_style">Style element</item>
+      <item name="add_link">Link element</item>
+      <item name="add_base">Base element</item>
+      <item name="add_comment">Comment node</item>
+      <item name="title_element">Title element</item>
+      <item name="script_element">Script element</item>
+      <item name="style_element">Style element</item>
+      <item name="base_element">Base element</item>
+      <item name="link_element">Link element</item>
+      <item name="meta_element">Meta элемент</item>
+      <item name="comment_element">Комментарий</item>
+      <item name="src">Src</item>
+      <item name="language">Язык</item>
+      <item name="href">Href</item>
+      <item name="target">Target</item>
+      <item name="type">Type</item>
+      <item name="charset">Charset</item>
+      <item name="defer">Defer</item>
+      <item name="media">Media</item>
+      <item name="properties">Properties</item>
+      <item name="name">Название</item>
+      <item name="value">Значение</item>
+      <item name="content">Содержание</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href lang</item>
+      <item name="general_props">Общее</item>
+      <item name="advanced_props">Дополнительно</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Вставить шаблонный контент</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">Шаблоны</item>
+      <item name="label">Шаблон</item>
+      <item name="desc_label">Описание</item>
+      <item name="desc">Вставить шаблонный контент</item>
+      <item name="select">Выберите шаблон</item>
+      <item name="preview">Просмотр</item>
+      <item name="warning">Внимание: обновления шаблона на другой может привести к потерям данных</item>
+      <item name="mdate_format">% Y-% m-% d% H:% M:% S</item>
+      <item name="cdate_format">% Y-% m-% d% H:% M:% S</item>
+      <item name="months_long">январь, февраль, март, апрель, май, июнь, июль, август, сентябрь, октябрь, ноябрь, декабрь</item>
+      <item name="months_short">январь, февраль, март, апрель, май, июнь, июль, август, Сентябрь, Октябрь, Ноябрь, Декабрь</item>
+      <item name="day_long">воскресенье, понедельник, вторник, среда, четверг, пятницу, субботу, воскресенье</item>
+      <item name="day_short">Вс, Пн, Вт, Ср, Чт, Пт, Сб, Вс</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Visual control characters on / off</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">Переключить проверку</item>
+      <item name="menu">Настройки проверки</item>
+      <item name="ignore_word">Игнорировать слово</item>
+      <item name="ignore_words">Игнорировать все</item>
+      <item name="langs">Языки</item>
+      <item name="wait">Пожалуйста, подождите ...</item>
+      <item name="sug">Варианты</item>
+      <item name="no_sug">Нет вариантов</item>
+      <item name="no_mpell">Ошибок не найдено</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">Вставить разделитель страницы</item>
+    </group>
+    <group target="advlist">
+      <!--<item name="types">Types</item>-->
+      <!--<item name="def">Default</item>-->
+      <!--<item name="lower_alpha">Lower alpha</item>-->
+      <!--<item name="lower_greek">Lower greek</item>-->
+      <!--<item name="lower_roman">Lower roman</item>-->
+      <!--<item name="upper_alpha">Upper alpha</item>-->
+      <!--<item name="upper_roman">Upper roman</item>-->
+      <!--<item name="circle">Circle</item>-->
+      <!--<item name="disc">Disc</item>-->
+      <!--<item name="square">Square</item>-->
+    </group>
+  </language>
+</language-pack>

@@ -1,0 +1,925 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>Badral Sanligiin</author>
+    <version major="1" minor="1" releasedate="2008-11-11" />
+    <description>Монгол хэл</description>
+  </header>
+  <language code="mn" title="Mongolian" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">Та энэ бичвэрийн мужийг WYSIWYG засварлахыг хүсэж байна уу?</item>
+      <item name="apply">Хэрэглэх</item>
+      <item name="insert">Оруулах</item>
+      <item name="update">Шинэчлэх</item>
+      <item name="cancel">Цуцлах</item>
+      <item name="close">Хаах</item>
+      <item name="browse">Гүйлгэн үзэх</item>
+      <item name="class_name">Анги</item>
+      <item name="not_set">-- Олгогдоогүй --</item>
+      <item name="clipboard_msg">Хуулах, таслан авах буулгах нь Мозилла Файрфокс дээр боломжгүй.\nТа энэ асуудлын талаар дэлгэрэнгүй мэдэхийг хүсэж байна уу?</item>
+      <item name="clipboard_no_support">Одоогоор таны хөтөч дээр дэмжигдээгүй байна. Та үүний оронд товчилбор хэрэглэнэ үү.</item>
+      <item name="popup_blocked">Харамсалтай нь таны попап хаалт энэ програмд шаардлагатай цонхыг хаалаа. Бүрэн дүүрэн ажиллагааг хангахыг хүсвэл попап хаалтаа идэвхгүйжүүлнэ үү.</item>
+      <item name="invalid_data">Алдаа: Та хүчингүй утга оруулсан. (улаанаар тэмдэглэсэн).</item>
+      <item name="more_colors">Бусад өнгө</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">Тод (Ctrl+B)</item>
+      <item name="italic_desc">Налуу (Ctrl+I)</item>
+      <item name="underline_desc">Доогуур зураас (Ctrl+U)</item>
+      <item name="striketrough_desc">Дарсан</item>
+      <item name="bullist_desc">Тоочилт</item>
+      <item name="numlist_desc">Дугаарт тоочилт</item>
+      <item name="undo_desc">Буцаах (Ctrl+Z)</item>
+      <item name="redo_desc">Цуцлах (Ctrl+Y)</item>
+      <item name="cleanup_desc">Эх кодыг цэвэрлэх</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">Хэлбэржүүлэлт</item>
+      <item name="font_size">Фонтын хэмжээ</item>
+      <item name="fontdefault">Фонт</item>
+      <item name="block">Хэв</item>
+      <item name="paragraph">Параграф</item>
+      <item name="div">Хамтатгасан муж</item>
+      <item name="address">Хаяг</item>
+      <item name="pre">Түүхий өгөгдөл</item>
+      <item name="h1">Гарчиг 1</item>
+      <item name="h2">Гарчиг 2</item>
+      <item name="h3">Гарчиг 3</item>
+      <item name="h4">Гарчиг 4</item>
+      <item name="h5">Гарчиг 5</item>
+      <item name="h6">Гарчиг 6</item>
+      <item name="blockquote">Ишлэл</item>
+      <item name="code">Код</item>
+      <item name="samp">Жишээ</item>
+      <item name="dt">Тодорхойлолт</item>
+      <item name="dd">Тайлбар</item>
+      <!-- Buttons -->
+      <item name="bold_desc">Тод (Ctrl+B)</item>
+      <item name="italic_desc">Налуу (Ctrl+I)</item>
+      <item name="underline_desc">Доогуур зураас (Ctrl+U)</item>
+      <item name="striketrough_desc">Дарсан</item>
+      <item name="justifyleft_desc">Зүүн жигдрүүлсэн</item>
+      <item name="justifycenter_desc">Голд жигдрүүлсэн</item>
+      <item name="justifyright_desc">Баруун жигдрүүлсэн</item>
+      <item name="justifyfull_desc">Тэгшилсэн</item>
+      <item name="bullist_desc">Тоочилт</item>
+      <item name="numlist_desc">Дугаарлалт</item>
+      <item name="outdent_desc">Догол мөр устгах</item>
+      <item name="indent_desc">Догол мөр оруулах</item>
+      <item name="undo_desc">Буцаах (Ctrl+Z)</item>
+      <item name="redo_desc">Цуцлах (Ctrl+Y)</item>
+      <item name="link_desc">Холбоос оруулах/өөрчлөх</item>
+      <item name="unlink_desc">Холбоос устгах</item>
+      <item name="image_desc">Зураг оруулах/өөрчлөх</item>
+      <item name="cleanup_desc">Эх код цэвэрлэх</item>
+      <item name="code_desc">HTML-эх код засах</item>
+      <item name="sub_desc">Доор байрлал</item>
+      <item name="sup_desc">Дээр байрлал</item>
+      <item name="hr_desc">Тусгаарлагч оруулах</item>
+      <item name="removeformat_desc">Хэлбэржүүлэлт устгах</item>
+      <item name="custom1_desc">Хэрэглэгчийн тодорхойлсон тайлбар</item>
+      <item name="forecolor_desc">Бичвэрийн өнгө</item>
+      <item name="backcolor_desc">Дэвсгэр өнгө</item>
+      <item name="charmap_desc">Тусгай тэмдэгт оруулах</item>
+      <item name="visualaid_desc">Туслах шугам ба үл үзэгдэх элементүүдийг харуулах/далдлах</item>
+      <item name="anchor_desc">Гадас оруулах/өөрчлөх</item>
+      <item name="cut_desc">Таслан авах</item>
+      <item name="copy_desc">Хуулах</item>
+      <item name="paste_desc">Оруулах</item>
+      <item name="image_props_desc">Зургийн тодруулга</item>
+      <item name="newdocument_desc">Шинэ баримт</item>
+      <item name="help_desc">Тусламж</item>
+      <item name="blockquote_desc">Ишлэл</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">Хуулах, таслан авах буулгах нь Мозилла Файрфокс дээр боломжгүй. 
+      Та энэ асуудлын талаар дэлгэрэнгүй мэдэхийг хүсэж байна уу?</item>
+      <item name="path">Зам</item>
+      <item name="newdocument">Та бүх агуулгыг устгахдаа итгэлтэй байна уу?</item>
+      <item name="toolbar_focus">Багаж самбар луу үсрэхэд: Alt+Q; Засварлагч руу үсрэхэд: Alt-Z; Элементийн зам руу үсрэхэд: Alt-X</item>
+      <item name="more_colors">Бусад өнгө</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">TinyMCE тухай</item>
+      <item name="about_general">Тухай…</item>
+      <item name="about_help">Тусламж</item>
+      <item name="about_license">Лицензийн нөхцөл</item>
+      <item name="about_plugins">Плагин</item>
+      <item name="about_plugin">Плагин</item>
+      <item name="about_author">Зохиогч</item>
+      <item name="about_version">Хувилбар</item>
+      <item name="about_loaded">Ачаалагдсан Плагинүүд</item>
+      <!-- Anchor -->
+      <item name="anchor_title">Гадас оруулах/өөрчлөх</item>
+      <item name="anchor_name">Гадасны нэр</item>
+      <!-- Source -->
+      <item name="code_title">HTML-эх код засварлах</item>
+      <item name="code_wordwrap">Автомат мөр ороолт</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">Өнгө</item>
+      <item name="colorpicker_picker_tab">Өнгө сонголт</item>
+      <item name="colorpicker_picker_title">Өнгө сонголт</item>
+      <item name="colorpicker_palette_tab">Нийлүүр</item>
+      <item name="colorpicker_palette_title">Өнгөний нийлүүр</item>
+      <item name="colorpicker_named_tab">Нэрлэсэн өнгө</item>
+      <item name="colorpicker_named_title">Нэрлэсэн өнгө</item>
+      <item name="colorpicker_color">Өнгө:</item>
+      <item name="colorpicker_name">Нэр:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">Тусгай тэмдэгт</item>
+      <!-- Image -->
+      <item name="image_title">Зураг оруулах/өөрчлөх</item>
+      <item name="image_src">Хаяг</item>
+      <item name="image_alt">Хоёрдогч бичвэр</item>
+      <item name="image_list">Зургийн жагсаалт</item>
+      <item name="image_border">Хүрээ</item>
+      <item name="image_dimensions">Хэмжээс</item>
+      <item name="image_vspace">Босоо алслалт</item>
+      <item name="image_hspace">Хэвтээ алслалт</item>
+      <item name="image_align">Жигдрүүлэлт</item>
+      <item name="image_align_baseline">Мөр</item>
+      <item name="image_align_top">Дээр</item>
+      <item name="image_align_middle">Дунд</item>
+      <item name="image_align_bottom">Доор</item>
+      <item name="image_align_texttop">Бичвэрийн дээр</item>
+      <item name="image_align_textbottom">Бичвэрийн доор</item>
+      <item name="image_align_left">Зүүн</item>
+      <item name="image_align_right">Баруун</item>
+      <!-- Link -->
+      <item name="link_title">Холбоос оруулах/өөрчлөх</item>
+      <item name="link_url">Хаяг</item>
+      <item name="link_target">Цонх</item>
+      <item name="link_target_same">Тухайн цонхонд нээх</item>
+      <item name="link_target_blank">Шинэ цонхонд нээх</item>
+      <item name="link_titlefield">Гарчиг</item>
+      <item name="link_is_email">Хаяг дээр Имэйл хаяг байх шиг харагдана. Та түүнд шаардлагатай mailto: нэмэхийг хүсэж байна уу?</item>
+      <item name="link_is_external">Хаяг дээр гадаад холбоос байгаа харагдана. Та зөв холбоос болгохын тулд http:// нэмэхийг хүсэж байна уу?</item>
+      <item name="link_list">Холбоосын жагсаалт</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">Жигдрүүлэлт</item>
+      <item name="left">Зүүн</item>
+      <item name="center">Дунд</item>
+      <item name="right">Баруун</item>
+      <item name="full">Тэгшилсэн</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%Y.%m.%d</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">Огноо оруулах</item>
+      <item name="inserttime_desc">Хугацаа оруулах</item>
+      <item name="months_long">Хулгана,Үхэр,Бар,Туулай,Луу,Могой,Морь,Хонь,Бич,Тахиа,Нохой,Гахай</item>
+      <item name="months_short">Хул,Үхэ,Бар,Туу,Луу,Мог,Мор,Хон,Бич,Тах,Нох,Гах</item>
+      <item name="day_long">Ням,Даваа,Мягмар,Лхагва,Пүрэв,Баасан,Бямба,Ням</item>
+      <item name="day_short">Ня,Да,Мя,Лх,Пү,Ба,Бя,Ня</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">Хэвлэх</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">Нягтлах</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">Зүүнээс баруун бичилт</item>
+      <item name="rtl_desc">Баруун зүүн бичилт</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">Шинэ давхарга оруулах</item>
+      <item name="forward_desc">Наашлуулах</item>
+      <item name="backward_desc">Цаашлуулах</item>
+      <item name="absolute_desc">Абсолют байршуулалт</item>
+      <item name="content">Шинэ давхарга...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">Хадгалах</item>
+      <item name="cancel_desc">Бүх өөрчлөлтийг хаях</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">Хамгаалалттай хоосон зай оруулах</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">Дүрмийн алдаа шалгалт</item>
+      <item name="download">ieSpell олдсонгүй. Та суулгахыг хүсэж байна уу?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">Тусгаарлагч</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">Өргөн</item>
+      <item name="size">Өндөр</item>
+      <item name="noshade">Сүүдэргүй</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">Сэтгэл хөдлөл</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">Сэтгэл хөдлөл оруулах</item>
+      <item name="desc">Сэтгэл хөдлөл</item>
+      <item name="cool">Дориун</item>
+      <item name="cry">Уйлах</item>
+      <item name="embarassed">Сандарсан</item>
+      <item name="foot_in_mouth">Хууртагдах</item>
+      <item name="frown">Хөмсөг зангидах</item>
+      <item name="innocent">Буруугүй</item>
+      <item name="kiss">Үнсэх</item>
+      <item name="laughing">Инээх</item>
+      <item name="money_mouth">Мөнгө</item>
+      <item name="sealed">Битүүмжилсэн</item>
+      <item name="smile">Инээх</item>
+      <item name="surprised">Гайхсан</item>
+      <item name="tongue_out">Хэлээ гаргах</item>
+      <item name="undecided">Шийдээгүй</item>
+      <item name="wink">Нүд ирмэх</item>
+      <item name="yell">Орилох</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">Хайх</item>
+      <item name="replace_desc">Хайх/орлуулах</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">Цааш хайх</item>
+      <item name="notfound">Хайлт төгсгөлд хүрэв. Тэмдэгт мөр олдсонгүй.</item>
+      <item name="search_title">Хайх</item>
+      <item name="replace_title">Хайх/орлуулах</item>
+      <item name="allreplaced">Тэмдэгт мөрийн бүх тохиолдлууд орлуулагдсан.</item>
+      <item name="findwhat">Хайх бичвэр</item>
+      <item name="replacewith">Орлуулага</item>
+      <item name="direction">Хайх чиглэл</item>
+      <item name="up">Гэдрэг</item>
+      <item name="down">Цааш</item>
+      <item name="mcase">Том/Жижиг бичилт ялгах</item>
+      <item name="findnext">Цааш хайх</item>
+      <item name="replace">Орлуул</item>
+      <item name="replaceall">Бүгдийг орлуул</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">Зураг оруулах/орлуулах</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">Ерөнхий</item>
+      <item name="tab_appearance">Харагдац</item>
+      <item name="tab_advanced">Өргөтгөсөн</item>
+      <item name="general">Ерөнхий</item>
+      <item name="title">Гарчиг</item>
+      <item name="preview">Нягтлан харах</item>
+      <item name="constrain_proportions">Хэмжээс</item>
+      <item name="langdir">Бичгийн чиглэл</item>
+      <item name="langcode">Хэлний код</item>
+      <item name="long_desc">Дэлгэрэнгүй тайлбар</item>
+      <item name="style">Формат</item>
+      <item name="classes">Анги</item>
+      <item name="ltr">Зүүнээс баруун</item>
+      <item name="rtl">Баруунаас зүүн</item>
+      <item name="id">ТТ</item>
+      <item name="map">Бүсчилсан зураг</item>
+      <item name="swap_image">Зураг солих</item>
+      <item name="alt_image">Хоёрдогч зураг</item>
+      <item name="mouseover">Хулгана ороход</item>
+      <item name="mouseout">Хулгана гарахад</item>
+      <item name="misc">Янз бүрийн зүйлс</item>
+      <item name="example_img">Нягтлан харах</item>
+      <item name="missing_alt">Та үнэхээр тайлбар хийхгүй байхыг хүсэж байна уу? Зарим хөгжлийн бэрхшээлтэй эсвэл бичвэр хөтөч ашиглаж буй эсвэл зураг харуулахыг хаасан хэрэглэгчид хандах боломжгүйг анхаарна уу.</item>
+      <item name="dialog_title">Зураг оруулах/засах</item>
+      <item name="src">Хаяг</item>
+      <item name="alt">Тайлбар</item>
+      <item name="list">Зургийн жагсаалт</item>
+      <item name="border">Хүрээ</item>
+      <item name="dimensions">Хэмжээс</item>
+      <item name="vspace">Босоо алслалт</item>
+      <item name="hspace">Хэвтээ алслалт</item>
+      <item name="align">Жигдрүүлэлт</item>
+      <item name="align_baseline">Мөр</item>
+      <item name="align_top">Дээр</item>
+      <item name="align_middle">Дунд</item>
+      <item name="align_bottom">Доор</item>
+      <item name="align_texttop">Бичвэрийн дээр</item>
+      <item name="align_textbottom">Бичвэрийн доор</item>
+      <item name="align_left">Зүүн</item>
+      <item name="align_right">Баруун</item>
+      <item name="image_list">Зургийн жагсаалт</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">Холбоос оруулах/засах</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">Холбоос оруулах/засах</item>
+      <item name="url">Хаяг</item>
+      <item name="target">Цонх</item>
+      <item name="titlefield">Гарчиг</item>
+      <item name="is_email">Хаяг дээр Имэйл хаяг байх шиг харагдана. Та түүнд шаардлагатай mailto: нэмэхийг хүсэж байна уу?</item>
+      <item name="is_external">Хаяг дээр гадаад холбоос байгаа харагдана. Та зөв холбоос болгохын тулд http:// нэмэхийг хүсэж байна уу?</item>
+      <item name="list">Холбоосын жагсаалт</item>
+      <item name="general_tab">Ерөнхий</item>
+      <item name="popup_tab">Попап</item>
+      <item name="events_tab">Үзэгдэл</item>
+      <item name="advanced_tab">Өргөтгөсөн</item>
+      <item name="general_props">Ерөнхий шинж</item>
+      <item name="popup_props">Попап-шинж</item>
+      <item name="event_props">Үзэгдэл</item>
+      <item name="advanced_props">Өргөтгөсөн шинж</item>
+      <item name="popup_opts">Сонголт</item>
+      <item name="anchor_names">Гадас</item>
+      <item name="target_same">Тухайн цонх/фрэймд нээх</item>
+      <item name="target_parent">Эх цонх/фрэймд нээх</item>
+      <item name="target_top">Хамгийн дээд цонх/фрэймд нээх</item>
+      <item name="target_blank">Шинэ цонхонд нээх</item>
+      <item name="popup">Жаваскрипт-попап</item>
+      <item name="popup_url">Попап-хаяг</item>
+      <item name="popup_name">Цонхны нэр</item>
+      <item name="popup_return">Попап байсан ч холбоосыг дагана</item>
+      <item name="popup_scrollbars">Гүйлгэгч харуулах</item>
+      <item name="popup_statusbar">Төлөв самбар харуулах</item>
+      <item name="popup_toolbar">Багаж самбар харуулах</item>
+      <item name="popup_menubar">Хөтөчийн цэс харуулах</item>
+      <item name="popup_location">Хаягийн самбар харуулах</item>
+      <item name="popup_resizable">Цонх томруулахыг зөвшөөрөх</item>
+      <item name="popup_dependent">Эх цонхноос хамааралтай (Зөвхөн Mozilla/Firefox)</item>
+      <item name="popup_size">Хэмжээ</item>
+      <item name="popup_position">Байрлал (X/Y)</item>
+      <item name="id">ТТ</item>
+      <item name="style">Формат</item>
+      <item name="classes">Анги</item>
+      <item name="target_name">Товлосон хуудасны нэр</item>
+      <item name="langdir">Бичгийн чиглэл</item>
+      <item name="target_langcode">Товлосон хуудасны хэл</item>
+      <item name="langcode">Хэлний код</item>
+      <item name="encoding">Товлосон хуудасны кодчилол</item>
+      <item name="mime">Товлосон хуудасны MIME төрөл</item>
+      <item name="rel">Товлосон холбоосоос хуудасны холболт</item>
+      <item name="rev">Хуудаснаас товлосон холбоосоос холболт</item>
+      <item name="tabindex">Табулатор индекс</item>
+      <item name="accesskey">Товчилбор</item>
+      <item name="ltr">Зүүнээс баруун</item>
+      <item name="rtl">Баруунаас зүүн</item>
+      <item name="link_list">Холбоосын жагсаалт</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">Ишлэл</item>
+      <item name="abbr_desc">Товчлол</item>
+      <item name="acronym_desc">Товчилсон үг</item>
+      <item name="del_desc">Устсан бичвэр Text</item>
+      <item name="ins_desc">Орсон бичвэр</item>
+      <item name="attribs_desc">Атрибут оруулах/засах</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">Гарчиг</item>
+      <item name="attribute_label_id">ТТ</item>
+      <item name="attribute_label_class">Анги</item>
+      <item name="attribute_label_style">Хэлбэржүүлэлт</item>
+      <item name="attribute_label_cite">Эх материал</item>
+      <item name="attribute_label_datetime">Цаг/Огноо</item>
+      <item name="attribute_label_langdir">Хэлний чиглэл</item>
+      <item name="attribute_option_ltr">Зүүнээс баруун</item>
+      <item name="attribute_option_rtl">Баруунаас зүүн</item>
+      <item name="attribute_label_langcode">Хэл</item>
+      <item name="attribute_label_tabindex">Табулатор индекс</item>
+      <item name="attribute_label_accesskey">Товчилбор</item>
+      <item name="attribute_events_tab">Үзэгдэл</item>
+      <item name="attribute_attrib_tab">Атрибут</item>
+      <item name="general_tab">Ерөнхий</item>
+      <item name="attrib_tab">Атрибут</item>
+      <item name="events_tab">Үзэгдэл</item>
+      <item name="fieldset_general_tab">Ерөнхий тохиргоо</item>
+      <item name="fieldset_attrib_tab">Атрибут</item>
+      <item name="fieldset_events_tab">Үзэгдэл</item>
+      <item name="title_ins_element">Буулгасан бичвэр</item>
+      <item name="title_del_element">Устсан бичвэр</item>
+      <item name="title_acronym_element">Товчилсон үг</item>
+      <item name="title_abbr_element">Товчлол</item>
+      <item name="title_cite_element">Эх материал</item>
+      <item name="remove">Устгах</item>
+      <item name="insert_date">Идэвхтэй цаг/огноо буулгах</item>
+      <item name="option_ltr">Зүүнээс баруун</item>
+      <item name="option_rtl">Баруунаас зүүн</item>
+      <item name="attribs_title">Атрибут оруулах/засварлах</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">CSS-Styles засах</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">CSS-Styles засварлах</item>
+      <item name="apply">Хэрэглэх</item>
+      <item name="text_tab">Бичвэр</item>
+      <item name="background_tab">Дэвсгэр</item>
+      <item name="block_tab">Блок</item>
+      <item name="box_tab">Хайрцаг</item>
+      <item name="border_tab">Хүрээ</item>
+      <item name="list_tab">Жагсаалт</item>
+      <item name="positioning_tab">Байршил</item>
+      <item name="text_props">Бичвэр</item>
+      <item name="text_font">Фонт</item>
+      <item name="text_size">Хэмжээ</item>
+      <item name="text_weight">Өргөн нарийн</item>
+      <item name="text_style">Хэлбэр</item>
+      <item name="text_variant">Вариант</item>
+      <item name="text_lineheight">Мөрний өндөр</item>
+      <item name="text_case">Бичвэр</item>
+      <item name="text_color">Өнгө</item>
+      <item name="text_decoration">Чимэглэл</item>
+      <item name="text_overline">дээгүүр нь зурсан</item>
+      <item name="text_underline">доогуур нь зурсан</item>
+      <item name="text_striketrough">дарсан</item>
+      <item name="text_blink">анивчилт</item>
+      <item name="text_none">байхгүй</item>
+      <item name="background_color">Дэвсгэр өнгө</item>
+      <item name="background_image">Дэвсгэр зураг</item>
+      <item name="background_repeat">Давталт</item>
+      <item name="background_attachment">Усан тэмдгийн эффект</item>
+      <item name="background_hpos">Байрлал X</item>
+      <item name="background_vpos">Байрлал Y</item>
+      <item name="block_wordspacing">Үг хоорондын зай</item>
+      <item name="block_letterspacing">Үсэг хоорондын зай</item>
+      <item name="block_vertical_alignment">Босоо жигдрүүлэлт</item>
+      <item name="block_text_align">Жигдрүүлэлт</item>
+      <item name="block_text_indent">Догол мөр</item>
+      <item name="block_whitespace">Автомат мөр ороолт</item>
+      <item name="block_display">Ороох хэлбэр</item>
+      <item name="box_width">Өргөн</item>
+      <item name="box_height">Өндөр</item>
+      <item name="box_float">Гүйлгэлт</item>
+      <item name="box_clear">Гүйлгэлт хаах</item>
+      <item name="padding">Дотоод зай</item>
+      <item name="same">Бүгд ижил</item>
+      <item name="top">Дээр</item>
+      <item name="right">Баруун</item>
+      <item name="bottom">Доор</item>
+      <item name="left">Зүүн</item>
+      <item name="margin">Гадаад зай</item>
+      <item name="style">Формат</item>
+      <item name="width">Өргөн</item>
+      <item name="height">Өндөр</item>
+      <item name="color">Бичвэрийн өнгө</item>
+      <item name="list_type">Тоочилтын цэгийн хэлбэр</item>
+      <item name="bullet_image">График тоочилтын цэг</item>
+      <item name="position">Байршил</item>
+      <item name="positioning_type">Байршлын төрөл</item>
+      <item name="visibility">Харагдахуйц</item>
+      <item name="zindex">Z утга</item>
+      <item name="overflow">Хэтэрсэн хэмжээний харьцаа</item>
+      <item name="placement">Байршил</item>
+      <item name="clip">Тайрдас</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">Энгийн бичвэрээр буулгах</item>
+      <item name="paste_word_desc">Хэлбэржүүлэлттэй буулгах (Word-с)</item>
+      <item name="selectall_desc">Бүгдийг сонгох</item>
+      <!--<item name="plaintext_mode_sticky">Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode.</item>-->
+      <!--<item name="plaintext_mode">Paste is now in plain text mode. Click again to toggle back to regular paste mode.</item>-->
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">Та бичвэр оруулахыг хүсвэл Ctrl+V дээр дарна уу.</item>
+      <item name="text_linebreaks">Мөр таслалтыг үлдээнэ</item>
+      <item name="word_title">Та бичвэр оруулахыг хүсвэл Ctrl+V дээр дарна уу.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">Хүснэгт үүсгэх</item>
+      <item name="row_before_desc">Дээр нь мөр оруулах</item>
+      <item name="row_after_desc">Доор нь мөр оруулах</item>
+      <item name="delete_row_desc">Мөр устгах</item>
+      <item name="col_before_desc">Зүүн талд нь багана оруулах</item>
+      <item name="col_after_desc">Баруун талд нь багана оруулах</item>
+      <item name="delete_col_desc">Багана устгах</item>
+      <item name="split_cells_desc">Нэгтгэсэн нүдийг салгах</item>
+      <item name="merge_cells_desc">Нүд нэгтгэх</item>
+      <item name="row_desc">Мөрийн шинжүүд</item>
+      <item name="cell_desc">Нүдний шинжүүд</item>
+      <item name="props_desc">Хүснэгтийн шинжүүд</item>
+      <item name="paste_row_before_desc">Завсрын хадгалагчаас мөрийг дээр нь буулгах</item>
+      <item name="paste_row_after_desc">Завсрын хадгалагчаас мөрийг доор нь буулгах</item>
+      <item name="cut_row_desc">Мөр тасдаж авах уу?</item>
+      <item name="copy_row_desc">Мөр хуулах</item>
+      <item name="del">Хүснэгт устгах</item>
+      <item name="row">Мөр</item>
+      <item name="col">Багана</item>
+      <item name="cell">Нүд</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width"></item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">Ерөнхий</item>
+      <item name="advanced_tab">Өргөтгөсөн</item>
+      <item name="general_props">Ерөнхий тохиргоо</item>
+      <item name="advanced_props">Өргөтгөсөн тохиргоо</item>
+      <item name="rowtype">Мөрийн төрөл</item>
+      <item name="title">Хүснэгт оруулах/засах</item>
+      <item name="width">Өргөн</item>
+      <item name="height">Өндөр</item>
+      <item name="cols">Багана</item>
+      <item name="rows">Мөр</item>
+      <item name="cellspacing">Нүдний алслалт</item>
+      <item name="cellpadding">Нүдний дотоод алслалт</item>
+      <item name="border">Хүрээ</item>
+      <item name="align">Жигдрүүлэлт</item>
+      <item name="align_default">Өгөгдмөл</item>
+      <item name="align_left">Зүүн</item>
+      <item name="align_right">Баруун</item>
+      <item name="align_middle">Голд</item>
+      <item name="row_title">Мөрийн шинж</item>
+      <item name="cell_title">Нүдний шинж</item>
+      <item name="cell_type">Нүдний төрөл</item>
+      <item name="valign">Босоо жигдрүүлэлт</item>
+      <item name="align_top">Дээр</item>
+      <item name="align_bottom">Доор</item>
+      <item name="bordercolor">Хүрээний өнгө</item>
+      <item name="bgcolor">Дэвсгэр өнгө</item>
+      <item name="merge_cells_title">Нүд нэгтгэх</item>
+      <item name="id">ТТ</item>
+      <item name="style">Хэлбэржүүлэлт</item>
+      <item name="langdir">Бичгийн чиглэл</item>
+      <item name="langcode">Хэлний код</item>
+      <item name="mime">Агуулгын MIME-төрөл</item>
+      <item name="ltr">Зүүнээс баруун</item>
+      <item name="rtl">Баруунаас зүүн</item>
+      <item name="bgimage">Дэвсгэр зураг</item>
+      <item name="summary">Дүгнэлт</item>
+      <item name="td">Бичвэр нүд</item>
+      <item name="th">Гарчиг</item>
+      <item name="cell_cell">Энэ нүдийг өөрчлөх</item>
+      <item name="cell_row">Энэ мөрөн дөх бүх нүдийг өөрчлөх</item>
+      <item name="cell_all">Хүснэгтийн бүх нүдийг өөрчлөх</item>
+      <item name="row_row">Энэ мөрийг өөрчлөх</item>
+      <item name="row_odd">Сондгой мөрүүдийг өөрчлөх</item>
+      <item name="row_even">Тэгш мөрүүдийг өөрчлөх</item>
+      <item name="row_all">Бүх мөрийн өөрчлөх</item>
+      <item name="thead">Хүснэгтийн толгой</item>
+      <item name="tbody">Хүснэгтийн агуулга</item>
+      <item name="tfoot">Хүснэгтийн хөл</item>
+      <item name="scope">Уялдаа</item>
+      <item name="rowgroup">Босоо бүлэглэх</item>
+      <item name="colgroup">Хэвтээ бүлэглэх</item>
+      <item name="col_limit">Баганын тооны хязгаар {$cols}-с хэтэрлээ.</item>
+      <item name="row_limit">Мөрийн тооны хязгаар {$rows}-с хэтэрлээ.</item>
+      <item name="cell_limit">Нүдний тооны хязгаар {$cells}-с хэтэрлээ.</item>
+      <item name="missing_scope">Та энэ гарчгийн хувьд үнэхээр тайлбар хийхгүй байхыг хүсэж байна уу? Зарим хөгжлийн бэрхшээлтэй хүмүүс хүснэгтийн агуулгыг ойлгоход хүндрэлтэй байх болно.</item>
+      <item name="caption">Хүснэгтийн тайлбар</item>
+      <item name="frame">Фрэйм</item>
+      <item name="frame_none">байхгүй</item>
+      <item name="frame_groups">Бүлэг</item>
+      <item name="frame_rows">Мөр</item>
+      <item name="frame_cols">Багана</item>
+      <item name="frame_all">бүх</item>
+      <item name="rules">Шугам</item>
+      <item name="rules_void">void</item>
+      <item name="rules_above">дээр</item>
+      <item name="rules_below">доор</item>
+      <item name="rules_hsides">hsides</item>
+      <item name="rules_lhs">lhs</item>
+      <item name="rules_rhs">rhs</item>
+      <item name="rules_vsides">vsides</item>
+      <item name="rules_box">box</item>
+      <item name="rules_border">border</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">Хэрэв та хуудсыг орхивол таны өөрчлөлтүүд хаягдана.</item>
+      <!--<item name="restore_content">Restore auto-saved content.</item>-->
+      <!--<item name="warning_message">If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?.</item>-->
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">Дэлгэц дүүрэн</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">Мультимедиа шигтгэх/засах</item>
+      <item name="edit">Мультимедиа шигтгээ засах</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">Мультимедиа агуулга буулгах/ засварлах</item>
+      <item name="general">Ерөнхий</item>
+      <item name="advanced">Өргөтгөсөн</item>
+      <item name="file">Файл/URL</item>
+      <item name="list">Жагсаалт</item>
+      <item name="size">Хэмжээ</item>
+      <item name="preview">Нягтлах</item>
+      <item name="constrain_proportions">Харьцааг барих</item>
+      <item name="type">Төрөл</item>
+      <item name="id">Тт</item>
+      <item name="name">Нэр</item>
+      <item name="class_name">CSS-анги</item>
+      <item name="vspace">Босоо алслалт</item>
+      <item name="hspace">Хэвтээ алслалт</item>
+      <item name="play">Автоматаар тоглуулна</item>
+      <item name="loop">Давталт</item>
+      <item name="menu">Цэс харуулах</item>
+      <item name="quality">Чанар</item>
+      <item name="scale">Хуваарилалт</item>
+      <item name="align">Жигдрүүлэлт</item>
+      <item name="salign">S-Жигдрүүлэлт</item>
+      <item name="wmode">WMode</item>
+      <item name="bgcolor">Дэвсгэр</item>
+      <item name="base">Суурь</item>
+      <item name="flashvars">Флэйш хувьсагч</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">AutoHREF</item>
+      <item name="cache">Завсрын хадгалагч</item>
+      <item name="hidden">Далдалсан</item>
+      <item name="controller">Controller</item>
+      <item name="kioskmode">Киоск горим</item>
+      <item name="playeveryframe">Фрэйм бүрийг тоглуулна</item>
+      <item name="targetcache">Зорилгыг түр хадгална</item>
+      <item name="correction">Засваргүй</item>
+      <item name="enablejavascript">JavaScript идэвхжүүлэх</item>
+      <item name="starttime">Эхлэх цаг</item>
+      <item name="endtime">Төгсөх цаг</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">Choke speed</item>
+      <item name="target">Товлосон</item>
+      <item name="volume">Дуу</item>
+      <item name="autostart">Автомат эхлэл</item>
+      <item name="enabled">Идэвхтэй</item>
+      <item name="fullscreen">Дэлгэц дүүрэн</item>
+      <item name="invokeurls">Дуудах URLs</item>
+      <item name="mute">Дуугүй</item>
+      <item name="stretchtofit">Харуулах мужийг сул байгаа зайд тааруулах</item>
+      <item name="windowlessvideo">Цонхгүй видео</item>
+      <item name="balance">Тэнцвэржүүлэлт</item>
+      <item name="baseurl">Үндсэн URL</item>
+      <item name="captioningid">Captioning id</item>
+      <item name="currentmarker">Идэвхтэй тэмдэглэгч</item>
+      <item name="currentposition">Идэвхтэй байрлал</item>
+      <item name="defaultframe">Фрэйм-өгөгдмөл тохиргоо</item>
+      <item name="playcount">Тоолуур</item>
+      <item name="rate">Rate</item>
+      <item name="uimode">UI горим</item>
+      <item name="flash_options">Флэйш-тохиргоо</item>
+      <item name="qt_options">Quicktime-тохиргоо</item>
+      <item name="wmp_options">Windows Media Player-тохиргоо</item>
+      <item name="rmp_options">Real Media Player-тохиргоо</item>
+      <item name="shockwave_options">Shockwave-тохиргоо</item>
+      <item name="autogotourl">Автоматаар очих URL</item>
+      <item name="center">Голлуулсан</item>
+      <item name="imagestatus">Зургийн төлөв</item>
+      <item name="maintainaspect">Зургийн харьцааг хадгалана</item>
+      <item name="nojava">Жавагүй</item>
+      <item name="prefetch">Prefetch</item>
+      <item name="shuffle">Санамсаргүйгээр тоглуулах</item>
+      <item name="console">Консол</item>
+      <item name="numloop">Давтах тоо</item>
+      <item name="controls">Удирдлага</item>
+      <item name="scriptcallbacks">Script callbacks</item>
+      <item name="swstretchstyle">Stretch style</item>
+      <item name="swstretchhalign">Stretch H-Жигдрүүлэлт</item>
+      <item name="swstretchvalign">Stretch V-Жигдрүүлэлт</item>
+      <item name="sound">Дуу</item>
+      <item name="progress">Явц</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn">Өргөтгөсөн тохиргоон дахь 'QT Src' талбарт цацаж буй rtsp нөөцийг оруулж өгнө.\nМөн та тэнд цацаагүй нөөцийг нэмэх хэрэгтэй.</item>
+      <item name="align_top">Дээр</item>
+      <item name="align_right">Баруун</item>
+      <item name="align_bottom">Доор</item>
+      <item name="align_left">Зүүн</item>
+      <item name="align_center">Голд</item>
+      <item name="align_top_left">Зүүн дээд</item>
+      <item name="align_top_right">Баруун дээд</item>
+      <item name="align_bottom_left">Зүүн доод</item>
+      <item name="align_bottom_right">Баруун доод</item>
+      <item name="flv_options">Флэйш видеоны тохиргоо</item>
+      <item name="flv_scalemode">Хуваарьт горим</item>
+      <item name="flv_buffer">Буфер</item>
+      <item name="flv_startimage">Эхлэл зураг</item>
+      <item name="flv_starttime">Эхлэх цаг</item>
+      <item name="flv_defaultvolume">Өгөгдмөл дуу</item>
+      <item name="flv_hiddengui">Далд GUI</item>
+      <item name="flv_autostart">Автомат эхлүүлэлт</item>
+      <item name="flv_loop">Давталт</item>
+      <item name="flv_showscalemodes">Хуваарьт горим харуулах</item>
+      <item name="flv_smoothvideo">Smooth Видео</item>
+      <item name="flv_jscallback">JS Callback</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">Баримтын тодруулга</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Баримтын тодруулга</item>
+      <item name="meta_tab">Ерөнхий</item>
+      <item name="appearance_tab">Харагдац</item>
+      <item name="advanced_tab">Өргөтгөсөн</item>
+      <item name="meta_props">Meta-мэдээлэл</item>
+      <item name="langprops">Хэл ба кодчилол</item>
+      <item name="meta_title">Гарчиг</item>
+      <item name="meta_keywords">Keywords</item>
+      <item name="meta_description">Тайлбар</item>
+      <item name="meta_robots">Robots</item>
+      <item name="doctypes">DocType</item>
+      <item name="langcode">Хэлний код</item>
+      <item name="langdir">Хэлний чиглэл</item>
+      <item name="ltr">Зүүнээс баруун</item>
+      <item name="rtl">Баруунаас зүүн</item>
+      <item name="xml_pi">XML тодорхойлолт</item>
+      <item name="encoding">Тэмдэгт кодчилол</item>
+      <item name="appearance_bgprops">Дэвсгэрийн шинжүүд</item>
+      <item name="appearance_marginprops">Эх биеийн эмжээр</item>
+      <item name="appearance_linkprops">Холбоосын өнгө</item>
+      <item name="appearance_textprops">Бичвэрийн шинжүүд</item>
+      <item name="bgcolor">Дэвсгэр өнгө</item>
+      <item name="bgimage">Дэвсгэр зураг</item>
+      <item name="left_margin">Зүүн алслалт</item>
+      <item name="right_margin">Баруун алслалт</item>
+      <item name="top_margin">Дээд алслалт</item>
+      <item name="bottom_margin">Доод алслалт</item>
+      <item name="text_color">Бичвэрийн өнгө</item>
+      <item name="font_size">Бичгийн хэмжээ</item>
+      <item name="font_face">Фонт</item>
+      <item name="link_color">Холбоосын өнгө</item>
+      <item name="hover_color">Дээр нь хүрэх өнгө</item>
+      <item name="visited_color">Зочилсон өнгө</item>
+      <item name="active_color">Идэвхтэй өнгө</item>
+      <item name="textcolor">Өнгө</item>
+      <item name="fontsize">Бичгийн хэмжээ</item>
+      <item name="fontface">Фонт</item>
+      <item name="meta_index_follow">Индекслээд дагана</item>
+      <item name="meta_index_nofollow">Индекслээд дагахгүй</item>
+      <item name="meta_noindex_follow">Индекслэхгүй дагана</item>
+      <item name="meta_noindex_nofollow">Индекслэхгүй дагахгүй</item>
+      <item name="appearance_style">CSS-Stylesheet ба хэлбэржүүлэлт</item>
+      <item name="stylesheet">CSS-Stylesheet</item>
+      <item name="style">CSS-Stil</item>
+      <item name="author">Зохиогч</item>
+      <item name="copyright">Зохиогчийн эрх</item>
+      <item name="add">Шинэ элемент нэмэх</item>
+      <item name="remove">Сонгосон элементийг устгах</item>
+      <item name="moveup">Сонгосон элементийг дээш хөдөлгөх</item>
+      <item name="movedown">Сонгосон элементийг доош хөдөлгөх</item>
+      <item name="head_elements">Гарчиг элемент</item>
+      <item name="info">Мэдээлэл</item>
+      <item name="add_title">Гарчиг-элемент</item>
+      <item name="add_meta">Meta-элемент</item>
+      <item name="add_script">Скрипт элемент</item>
+      <item name="add_style">Загвар элемент</item>
+      <item name="add_link">Холбоос элемент</item>
+      <item name="add_base">Суурь элемент</item>
+      <item name="add_comment">HTML-тайлбар</item>
+      <item name="title_element">Бичвэр элемент</item>
+      <item name="script_element">Script-элемент</item>
+      <item name="style_element">Style-элемент</item>
+      <item name="base_element">Суурь-элемент</item>
+      <item name="link_element">Зүүн-элемент</item>
+      <item name="meta_element">Баруун</item>
+      <item name="comment_element">Тайлбар</item>
+      <item name="src">Эх</item>
+      <item name="language">Хэл</item>
+      <item name="href">Href</item>
+      <item name="target">Товлосон</item>
+      <item name="type">Төрөл</item>
+      <item name="charset">Тэмдэгтийн олонлог</item>
+      <item name="defer">Defer</item>
+      <item name="media">Медиа</item>
+      <item name="properties">Тодруулга</item>
+      <item name="name">Нэр</item>
+      <item name="value">Утга</item>
+      <item name="content">Агуулга</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href lang</item>
+      <item name="general_props">Ерөнхий</item>
+      <item name="advanced_props">Өргөтгөсөн</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Өмнө бэлтгэсэн хэвийн агуулгыг буулгах</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">Хэв</item>
+      <item name="label">Хэв</item>
+      <item name="desc_label">Тайлбар</item>
+      <item name="desc">Бэлтгэсэн хэв оруулах</item>
+      <item name="select">Хэв сонгох</item>
+      <item name="preview">Нягтлан харах</item>
+      <item name="warning">Санамж: Хэв өөр шинэчлэхэд өгөгдлийн алдагдал гарч болзошгүй!</item>
+      <item name="mdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="cdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="months_long">Хулгана,Үхэр,Бар,Туулай,Луу,Могой,Морь,Хонь,Бич,Тахиа,Нохой,Гахай</item>
+      <item name="months_short">Хул,Үхэ,Бар,Туу,Луу,Мог,Мор,Хон,Бич,Тах,Нох,Гах</item>
+      <item name="day_long">Ням,Даваа,Мягмар,Лхагва,Пүрэв,Баасан,Бямба,Ням</item>
+      <item name="day_short">Ня,Да,Мя,Лх,Пү,Ба,Бя,Ня</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Удирдах тэмдэгт харуулах/эс харуулах.</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">Дүрмийн алдаа шалгагч нээлттэй/хаалттай</item>
+      <item name="menu">Дүрмийн алдаа шалгагчийн тохиргоо</item>
+      <item name="ignore_word">Үг үл хэрэгсэх</item>
+      <item name="ignore_words">Бүгдийг үл хэрэгсэх</item>
+      <item name="langs">Хэл</item>
+      <item name="wait">Түр хүлээнэ үү...</item>
+      <item name="sug">Санал</item>
+      <item name="no_sug">Санал алга</item>
+      <item name="no_mpell">Дүрмийн алдаа олдсонгүй.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">Хуудас таслалт оруулах.</item>
+    </group>
+    <group target="advlist">
+      <!--<item name="types">Types</item>-->
+      <!--<item name="def">Default</item>-->
+      <!--<item name="lower_alpha">Lower alpha</item>-->
+      <!--<item name="lower_greek">Lower greek</item>-->
+      <!--<item name="lower_roman">Lower roman</item>-->
+      <!--<item name="upper_alpha">Upper alpha</item>-->
+      <!--<item name="upper_roman">Upper roman</item>-->
+      <!--<item name="circle">Circle</item>-->
+      <!--<item name="disc">Disc</item>-->
+      <!--<item name="square">Square</item>-->
+    </group>
+  </language>
+</language-pack>

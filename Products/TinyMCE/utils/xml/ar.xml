@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>Raza Hussain</author>
+    <version major="7" minor="4" releasedate="2010-12-08" />
+    <description>Arabic Language Pack</description>
+  </header>
+  <language code="ar" title="Arabic2" dir="rtl">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">Do you want to use the WYSIWYG mode for this textarea?</item>
+      <item name="apply">تتطبيقطبيق</item>
+      <item name="insert">إدراج</item>
+      <item name="update">تحديث</item>
+      <item name="cancel">إلغاء</item>
+      <item name="close">إغلاق</item>
+      <item name="browse">تصفح</item>
+      <item name="class_name">الدرجة</item>
+      <item name="not_set">-- Not set --</item>
+      <item name="clipboard_msg">نسخ / قص / لصق غير متوفر في موزيلا وفايرفوكس.\nتريد المزيد من المعلومات حول هذه المشكلة؟</item>
+      <item name="clipboard_no_support">حاليا غير معتمدة من قبل المتصفح الخاص بك ، استخدام اختصارات لوحة المفاتيح بدلا من ذلك.</item>
+      <item name="popup_blocked">عذرا ، لكن لاحظنا بأن ما تتمتعون به المنبثقة محصر وتعطيل الإطار الذي يوفر وظائف التطبيق. سوف تحتاج إلى تعطيل المنبثقة حظر على هذا الموقع من أجل الاستفادة الكاملة من هذه الأداة</item>
+      <item name="invalid_data">خطأ.:   دخل صالح القيم ، وهذه هي معلمة باللون الاحمر</item>
+      <item name="more_colors">المزيد من الألوان</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">عريض (Ctrl+B)</item>
+      <item name="italic_desc">مائل (Ctrl+I)</item>
+      <item name="underline_desc">تسطير (Ctrl+U)</item>
+      <item name="striketrough_desc">توسيط بخط</item>
+      <item name="bullist_desc">قائمة غير مرتبة</item>
+      <item name="numlist_desc">قائمة مرتبة</item>
+      <item name="undo_desc">تراجع (Ctrl+Z)</item>
+      <item name="redo_desc">الإعادة (Ctrl+Y)</item>
+      <item name="cleanup_desc">رمز تنظيف الفوضى</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">السمات</item>
+      <item name="font_size">حجم الخط</item>
+      <item name="fontdefault">عائله الخط</item>
+      <item name="block">الهيئه</item>
+      <item name="paragraph">النص</item>
+      <item name="div">الدرجة</item>
+      <item name="address">العنوان</item>
+      <item name="pre">مهيأ مسبق</item>
+      <item name="h1">العنوان 1</item>
+      <item name="h2">العنوان 2</item>
+      <item name="h3">العنوان 3</item>
+      <item name="h4">العنوان 4</item>
+      <item name="h5">العنوان 5</item>
+      <item name="h6">العنوان 6</item>
+      <item name="blockquote">علامة اقتباس فقرة</item>
+      <item name="code">قانون</item>
+      <item name="samp">Code sample</item>
+      <item name="dt">تعريف مصطلح</item>
+      <item name="dd">الوصف</item>
+      <!-- Buttons -->
+      <item name="bold_desc">عريض (Ctrl+B)</item>
+      <item name="italic_desc">مائل (Ctrl+I)</item>
+      <item name="underline_desc">تسطير (Ctrl+U)</item>
+      <item name="striketrough_desc">توسيط خط</item>
+      <item name="justifyleft_desc">توسيط يسار</item>
+      <item name="justifycenter_desc">توسيط وسط</item>
+      <item name="justifyright_desc">توسيط يمين</item>
+      <item name="justifyfull_desc">محاذاه كليه</item>
+      <item name="bullist_desc">قائمة غير مرتبة</item>
+      <item name="numlist_desc">قائمة مرتبة</item>
+      <item name="outdent_desc">إنقاص المسافة البادئة قبل</item>
+      <item name="indent_desc">المسافة البادئة</item>
+      <item name="undo_desc">تراجع (السيطرة + ى)</item>
+      <item name="redo_desc">الإعادة (السيطرة + ص)</item>
+      <item name="link_desc">اضافه / تعديل رابط</item>
+      <item name="unlink_desc">حذف الرابط</item>
+      <item name="image_desc">اضافه / حذف صوره</item>
+      <item name="cleanup_desc">تنظيف الكود</item>
+      <item name="code_desc">تعديل شفره ال أتش تي أم أل</item>
+      <item name="sub_desc">منخفض</item>
+      <item name="sup_desc">مرتفع</item>
+      <item name="hr_desc">ادراج خط افقى</item>
+      <item name="removeformat_desc">ازاله التنسيق</item>
+      <item name="custom1_desc">ادخل الوصف هن</item>
+      <item name="forecolor_desc">اختر لون النص</item>
+      <item name="backcolor_desc">اختر لون الخلفيه</item>
+      <item name="charmap_desc">ادخال رمز جديد</item>
+      <item name="visualaid_desc">المبادئ التوجيهية تبديل / عناصر غير مرئية</item>
+      <item name="anchor_desc">إدراج / تحرير مرساة</item>
+      <item name="cut_desc">قص</item>
+      <item name="copy_desc">نسخ</item>
+      <item name="paste_desc">لصق</item>
+      <item name="image_props_desc">خصائص الصورة</item>
+      <item name="newdocument_desc">مستند جديد</item>
+      <item name="help_desc">مساعده</item>
+      <item name="blockquote_desc">علامة اقتباس فقرة</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">نسخ/قص/لصق غير متوافر في فير فوكس حاليا هل تريد ان تعرف المزيد من المعلومات؟</item>
+      <item name="path">مسار</item>
+      <item name="newdocument">هل أنت متأكد أنك تريد مسح كافة محتويات؟</item>
+      <item name="toolbar_focus">Jump to tool buttons - Alt+Q, Jump to editor - Alt-Z, Jump to element path - Alt-X</item>
+      <item name="more_colors">المزيد من الألوان</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">عن المحرر</item>
+      <item name="about_general">عن</item>
+      <item name="about_help">مساعده</item>
+      <item name="about_license">الترخيص</item>
+      <item name="about_plugins">الإضافات</item>
+      <item name="about_plugin">الموقع</item>
+      <item name="about_author">الكاتب</item>
+      <item name="about_version">الاصدار</item>
+      <item name="about_loaded">الاضافات المحمله</item>
+      <!-- Anchor -->
+      <item name="anchor_title">إدراج / تحرير مرساة</item>
+      <item name="anchor_name">اسم المرساه</item>
+      <!-- Source -->
+      <item name="code_title">تعديل ا لشيفره البرمجيه</item>
+      <item name="code_wordwrap">التفاف النص</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">اختر اللون</item>
+      <item name="colorpicker_picker_tab">الكاشف</item>
+      <item name="colorpicker_picker_title">كاشف اللون</item>
+      <item name="colorpicker_palette_tab">لوح</item>
+      <item name="colorpicker_palette_title">لوح الألوان</item>
+      <item name="colorpicker_named_tab">المسماة</item>
+      <item name="colorpicker_named_title">الألوان المسماة</item>
+      <item name="colorpicker_color">اللون :</item>
+      <item name="colorpicker_name">اسم:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">تحديد مخصص حرف</item>
+      <!-- Image -->
+      <item name="image_title">إدراج / تحرير صورة</item>
+      <item name="image_src">رابط الصوره</item>
+      <item name="image_alt">وصف الصوره</item>
+      <item name="image_list">قائمه الصور</item>
+      <item name="image_border">الحدود</item>
+      <item name="image_dimensions">الأبعاد</item>
+      <item name="image_vspace">المسافه العموديه</item>
+      <item name="image_hspace">المسافه الافقيه</item>
+      <item name="image_align">محاذاة</item>
+      <item name="image_align_baseline">الأساس</item>
+      <item name="image_align_top">الأعلى</item>
+      <item name="image_align_middle">الأوسط</item>
+      <item name="image_align_bottom">القاع</item>
+      <item name="image_align_texttop">النص الأعلى</item>
+      <item name="image_align_textbottom">اسفل النص</item>
+      <item name="image_align_left">يسار</item>
+      <item name="image_align_right">يمين</item>
+      <!-- Link -->
+      <item name="link_title">إدراج / تحرير ارتباط</item>
+      <item name="link_url">رابط الارتباط</item>
+      <item name="link_target">الهدف</item>
+      <item name="link_target_same">فتح الرابط فى نفس النافذه</item>
+      <item name="link_target_blank">فتح الرابط فى نافذه جديده</item>
+      <item name="link_titlefield">العنوان</item>
+      <item name="link_is_email">الرابط الذي أدخلته يبدو أن عنوان البريد الإلكتروني ، هل تريد إضافة ميلتو المطلوبة :؟ بادئة</item>
+      <item name="link_is_external">الرابط الذي أدخلته يبدو رابط خارجي ، هل تريد إضافة بادئة http:// المطلوبة؟</item>
+      <item name="link_list">قائمه الوصلات</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">محاذاة</item>
+      <item name="left">بقي</item>
+      <item name="center">مركز</item>
+      <item name="right">الحق</item>
+      <item name="full">كامل</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%Y-%m-%d</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">ادراج التاريخ</item>
+      <item name="inserttime_desc">ادراج الوقت</item>
+      <item name="months_long">يناير ، فبراير ، آذار ، نيسان ، أيار ، حزيران ، تموز ، آب ، أيلول / سبتمبر ، أكتوبر ، نوفمبر ، ديسمبر</item>
+      <item name="months_short">يناير ، فبراير ، مارس ، أبريل ومايو ويونيو ، يوليو ، أغسطس ، سبتمبر ، أكتوبر ، نوفمبر ، ديسمبر</item>
+      <item name="day_long">الأحد ، الاثنين ، الثلاثاء ، الاربعاء ، الخميس ، الجمعة ، السبت ، الأحد</item>
+      <item name="day_short">أحد ، الاثنين ، الثلاثاء ، الاربعاء ، الخميس ، الجمعة ، السبت والأحد</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">طباعة</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">معاينة</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">الاتجاه من اليسار الى اليمين</item>
+      <item name="rtl_desc">الاتجاه من اليمين لليسار</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">إدراج طبقة جديدة</item>
+      <item name="forward_desc">نقل للامام</item>
+      <item name="backward_desc">نقل للخلف</item>
+      <item name="absolute_desc">جعل الطبقه حره</item>
+      <item name="content">طبقه جديده ...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">حفظ</item>
+      <item name="cancel_desc">إلغاء كافة التغييرات</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">إدراج حرف مسافة غير منقسمة</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">تشغيل المدقق الاملائى</item>
+      <item name="download">المدقق الاملائى غير مركب هل تريد تركيبه الان</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">Horizontal rule</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">العرض</item>
+      <item name="size">الارتفاع</item>
+      <item name="noshade">لا ظل</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">الرسوم التعبيريه</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">اضافه وسم تعربيرى</item>
+      <item name="desc">الوسوم</item>
+      <item name="cool">جيد</item>
+      <item name="cry">بكاء</item>
+      <item name="embarassed">احراج</item>
+      <item name="foot_in_mouth">حزاء فى الفم (اخرص)</item>
+      <item name="frown">التجهم</item>
+      <item name="innocent">البراءه</item>
+      <item name="kiss">قبله</item>
+      <item name="laughing">الضحك</item>
+      <item name="money_mouth">محب المال</item>
+      <item name="sealed">المختومة</item>
+      <item name="smile">ابتسامة</item>
+      <item name="surprised">مندهشة</item>
+      <item name="tongue_out">اللسان خارج</item>
+      <item name="undecided">بعد</item>
+      <item name="wink">غمزة</item>
+      <item name="yell">يصيح</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">بحث</item>
+      <item name="replace_desc">بحث/استبدال</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">بحث مره اخرى</item>
+      <item name="notfound">لقد انتهى البحث ولم نعثر على اى نتيجه</item>
+      <item name="search_title">بحث</item>
+      <item name="replace_title">بحث/استبدال</item>
+      <item name="allreplaced">تمت عمليه الاستبدال</item>
+      <item name="findwhat">ابحث عن</item>
+      <item name="replacewith">استبدل ب</item>
+      <item name="direction">الاتجاهات</item>
+      <item name="up">الاعلى</item>
+      <item name="down">الاسفل</item>
+      <item name="mcase">حاله التطابق</item>
+      <item name="findnext">ابحث عن التالى</item>
+      <item name="replace">استدال</item>
+      <item name="replaceall">استبدال الكل</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">Insert/edit image</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">عام</item>
+      <item name="tab_appearance">المظهر</item>
+      <item name="tab_advanced">خيارات متقدمه</item>
+      <item name="general">عام</item>
+      <item name="title">العنوان</item>
+      <item name="preview">مشاهده</item>
+      <item name="constrain_proportions">Constrain proportions</item>
+      <item name="langdir">Language direction</item>
+      <item name="langcode">Language code</item>
+      <item name="long_desc">Long description link</item>
+      <item name="style">Style</item>
+      <item name="classes">Classes</item>
+      <item name="ltr">Left to right</item>
+      <item name="rtl">Right to left</item>
+      <item name="id">Id</item>
+      <item name="map">Image map</item>
+      <item name="swap_image">Swap image</item>
+      <item name="alt_image">Alternative image</item>
+      <item name="mouseover">for mouse over</item>
+      <item name="mouseout">for mouse out</item>
+      <item name="misc">Miscellaneous</item>
+      <item name="example_img">Appearance preview image</item>
+      <item name="missing_alt">Are you sure you want to continue without including an Image Description? Without it the image may not be accessible to some users with disabilities, or to those using a text browser, or browsing the Web with images turned off.</item>
+      <item name="dialog_title">Insert/edit image</item>
+      <item name="src">Image URL</item>
+      <item name="alt">Image description</item>
+      <item name="list">Image list</item>
+      <item name="border">Border</item>
+      <item name="dimensions">Dimensions</item>
+      <item name="vspace">Vertical space</item>
+      <item name="hspace">Horizontal space</item>
+      <item name="align">Alignment</item>
+      <item name="align_baseline">Baseline</item>
+      <item name="align_top">الاعلى</item>
+      <item name="align_middle">Middle</item>
+      <item name="align_bottom">اسفل</item>
+      <item name="align_texttop">اعلى النص</item>
+      <item name="align_textbottom">اسفل النص</item>
+      <item name="align_left">يسار</item>
+      <item name="align_right">يمين</item>
+      <item name="image_list">Image list</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">ادخال -تعديل رابط</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">ادخال -تعديل رابط</item>
+      <item name="url">عنوان الرابط</item>
+      <item name="target">Target</item>
+      <item name="titlefield">اسم الرابط</item>
+      <item name="is_email">الرابط ربما بريد الاكترونى هل تريد ان نضع وسم رابط البريد</item>
+      <item name="is_external">الرابط يبدو  انه لموقع خارجى هل تريد ان نضع http://</item>
+      <item name="list">قائمه المواقع</item>
+      <item name="general_tab">عام</item>
+      <item name="popup_tab">يمربع طفو على السطح</item>
+      <item name="events_tab">أحداث</item>
+      <item name="advanced_tab">متقدم</item>
+      <item name="general_props">الخصائص العامة</item>
+      <item name="popup_props">خصائص مربع طفو على السطح </item>
+      <item name="event_props">أحداث</item>
+      <item name="advanced_props">خصائص متقدمة</item>
+      <item name="popup_opts">خيارات</item>
+      <item name="anchor_names">مرتكزات</item>
+      <item name="target_same">فتح في هذا الإطار</item>
+      <item name="target_parent">فتح في الإطار الأصل</item>
+      <item name="target_top">فتح في الإطار العلوي (يحل محل كافة الإطارات)</item>
+      <item name="target_blank">في فتح نافذة جديدة</item>
+      <item name="popup">جافا سكريبت</item>
+      <item name="popup_url">رابط طفو على السطح</item>
+      <item name="popup_name">اسم النافذة</item>
+      <item name="popup_return">إدراج 'عودة كاذبة' 'return false'</item>
+      <item name="popup_scrollbars">عرض أشرطة التمرير</item>
+      <item name="popup_statusbar">عرض شريط الحالة</item>
+      <item name="popup_toolbar">إظهار شريط الأدوات</item>
+      <item name="popup_menubar">عرض شريط القوائم</item>
+      <item name="popup_location">عرض شريط الموقع</item>
+      <item name="popup_resizable">تغيير حجم نافذة</item>
+      <item name="popup_dependent">خاضع (Mozilla/Firefox only)</item>
+      <item name="popup_size">حجم</item>
+      <item name="popup_position">موقع (X/Y)</item>
+      <item name="id">Id</item>
+      <item name="style">شكل</item>
+      <item name="classes">صنف</item>
+      <item name="target_name">اسم الهدف</item>
+      <item name="langdir">اتجاه اللغة</item>
+      <item name="target_langcode">لغة الهدف</item>
+      <item name="langcode">Language code</item>
+      <item name="encoding">رمز اللغة</item>
+      <item name="mime">الهدف نوع الملف</item>
+      <item name="rel">العلاقة الصفحة لاستهداف</item>
+      <item name="rev">علاقة الهدف لصفحة</item>
+      <item name="tabindex">  Tab فهرس</item>
+      <item name="accesskey">مفتاح الوصول</item>
+      <item name="ltr">من اليسار إلى اليمين</item>
+      <item name="rtl">من اليمين إلى اليسار</item>
+      <item name="link_list">قائمة الروابط</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">Citation</item>
+      <item name="abbr_desc">Abbreviation</item>
+      <item name="acronym_desc">Acronym</item>
+      <item name="del_desc">Deletion</item>
+      <item name="ins_desc">Insertion</item>
+      <item name="attribs_desc">Insert/Edit Attributes</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">Title</item>
+      <item name="attribute_label_id">ID</item>
+      <item name="attribute_label_class">Class</item>
+      <item name="attribute_label_style">Style</item>
+      <item name="attribute_label_cite">Cite</item>
+      <item name="attribute_label_datetime">Date/Time</item>
+      <item name="attribute_label_langdir">Text Direction</item>
+      <item name="attribute_option_ltr">Left to right</item>
+      <item name="attribute_option_rtl">Right to left</item>
+      <item name="attribute_label_langcode">Language</item>
+      <item name="attribute_label_tabindex">TabIndex</item>
+      <item name="attribute_label_accesskey">AccessKey</item>
+      <item name="attribute_events_tab">Events</item>
+      <item name="attribute_attrib_tab">Attributes</item>
+      <item name="general_tab">عام</item>
+      <item name="attrib_tab">Attributes</item>
+      <item name="events_tab">Events</item>
+      <item name="fieldset_general_tab">General Settings</item>
+      <item name="fieldset_attrib_tab">Element Attributes</item>
+      <item name="fieldset_events_tab">Element Events</item>
+      <item name="title_ins_element">Insertion Element</item>
+      <item name="title_del_element">Deletion Element</item>
+      <item name="title_acronym_element">Acronym Element</item>
+      <item name="title_abbr_element">Abbreviation Element</item>
+      <item name="title_cite_element">Citation Element</item>
+      <item name="remove">Remove</item>
+      <item name="insert_date">Insert current date/time</item>
+      <item name="option_ltr">Left to right</item>
+      <item name="option_rtl">Right to left</item>
+      <item name="attribs_title">Insert/Edit Attributes</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">Edit CSS Style</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">Edit CSS Style</item>
+      <item name="apply">Apply</item>
+      <item name="text_tab">Text</item>
+      <item name="background_tab">Background</item>
+      <item name="block_tab">Block</item>
+      <item name="box_tab">Box</item>
+      <item name="border_tab">Border</item>
+      <item name="list_tab">List</item>
+      <item name="positioning_tab">Positioning</item>
+      <item name="text_props">Text</item>
+      <item name="text_font">Font</item>
+      <item name="text_size">Size</item>
+      <item name="text_weight">Weight</item>
+      <item name="text_style">Style</item>
+      <item name="text_variant">Variant</item>
+      <item name="text_lineheight">Line height</item>
+      <item name="text_case">Case</item>
+      <item name="text_color">Color</item>
+      <item name="text_decoration">Decoration</item>
+      <item name="text_overline">overline</item>
+      <item name="text_underline">underline</item>
+      <item name="text_striketrough">strikethrough</item>
+      <item name="text_blink">blink</item>
+      <item name="text_none">none</item>
+      <item name="background_color">Background color</item>
+      <item name="background_image">Background image</item>
+      <item name="background_repeat">Repeat</item>
+      <item name="background_attachment">Attachment</item>
+      <item name="background_hpos">Horizontal position</item>
+      <item name="background_vpos">Vertical position</item>
+      <item name="block_wordspacing">Word spacing</item>
+      <item name="block_letterspacing">Letter spacing</item>
+      <item name="block_vertical_alignment">Vertical alignment</item>
+      <item name="block_text_align">Text align</item>
+      <item name="block_text_indent">Text indent</item>
+      <item name="block_whitespace">Whitespace</item>
+      <item name="block_display">Display</item>
+      <item name="box_width">Width</item>
+      <item name="box_height">Height</item>
+      <item name="box_float">Float</item>
+      <item name="box_clear">Clear</item>
+      <item name="padding">Padding</item>
+      <item name="same">Same for all</item>
+      <item name="top">الاعلى</item>
+      <item name="right">يمين</item>
+      <item name="bottom">اسفل</item>
+      <item name="left">يسار</item>
+      <item name="margin">Margin</item>
+      <item name="style">Style</item>
+      <item name="width">Width</item>
+      <item name="height">Height</item>
+      <item name="color">Color</item>
+      <item name="list_type">Type</item>
+      <item name="bullet_image">Bullet image</item>
+      <item name="position">Position</item>
+      <item name="positioning_type">Type</item>
+      <item name="visibility">Visibility</item>
+      <item name="zindex">Z-index</item>
+      <item name="overflow">Overflow</item>
+      <item name="placement">Placement</item>
+      <item name="clip">Clip</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">لصق كنص عادي</item>
+      <item name="paste_word_desc">لصق من وورد</item>
+      <item name="selectall_desc">حدد كافة</item>
+      <item name="plaintext_mode_sticky">لصق الآن في وضع النص العادي. انقر مرة أخرى للتبديل إلى الوضع لصق العادية. وبعد لصق شيء يتم إرجاع إلى وضع لصق العادية</item>
+      <item name="plaintext_mode">لصق الآن في وضع النص العادي. انقر مرة أخرى للتبديل إلى الوضع لصق العادية.</item>
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">استخدام  على لوحة المفاتيح للصق النص في الإطار.( CTRL+V )</item>
+      <item name="text_linebreaks">احتفظ بفواصل الأسطر</item>
+      <item name="word_title">استخدام  على لوحة المفاتيح للصق النص في الإطار.( CTRL+V )</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">إدراج جدول جديد</item>
+      <item name="row_before_desc">إدراج صف قبل</item>
+      <item name="row_after_desc">إدراج صف بعد</item>
+      <item name="delete_row_desc">حذف صف</item>
+      <item name="col_before_desc">إدراج عمود قبل</item>
+      <item name="col_after_desc">إدراج عمود بعد</item>
+      <item name="delete_col_desc">إزالة عمود</item>
+      <item name="split_cells_desc">انقسام خلايا الجدول المدمجة</item>
+      <item name="merge_cells_desc">دمج الخلايا الجدول</item>
+      <item name="row_desc">خصائص الجدول الصف</item>
+      <item name="cell_desc">خصائص الجدول الخلية</item>
+      <item name="props_desc">خصائص الجدول</item>
+      <item name="paste_row_before_desc">لصق صف الجدول قبل</item>
+      <item name="paste_row_after_desc">لصق صف الجدول بعد</item>
+      <item name="cut_row_desc">قص الجدول الصف</item>
+      <item name="copy_row_desc">نسخة الجدول الصف</item>
+      <item name="del">حذف جدول</item>
+      <item name="row">الصف</item>
+      <item name="col">العمود</item>
+      <item name="cell">الخلية</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width"></item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">عام</item>
+      <item name="advanced_tab">متقدم</item>
+      <item name="general_props">General properties</item>
+      <item name="advanced_props">الخصائص العامة</item>
+      <item name="rowtype">صف في جزء الجدول</item>
+      <item name="title">إدراج جدول / تعديل</item>
+      <item name="width">عرض</item>
+      <item name="height">طول</item>
+      <item name="cols">أعمدة</item>
+      <item name="rows">الصفوف</item>
+      <item name="cellspacing">بتباعد الخلايا </item>
+      <item name="cellpadding">بطانة الخلايا</item>
+      <item name="border">الحدود</item>
+      <item name="align">المحاذاة</item>
+      <item name="align_default">الافتراضي</item>
+      <item name="align_left">يسار</item>
+      <item name="align_right">يمين</item>
+      <item name="align_middle">وسط</item>
+      <item name="row_title">خصائص الجدول الصف</item>
+      <item name="cell_title">خصائص الجدول الخلية</item>
+      <item name="cell_type">نوع الخلية</item>
+      <item name="valign">المحاذاة العمودية</item>
+      <item name="align_top">الاعلى</item>
+      <item name="align_bottom">اسفل</item>
+      <item name="bordercolor">لون الحدود</item>
+      <item name="bgcolor">لون الخلفية</item>
+      <item name="merge_cells_title">دمج الخلايا</item>
+      <item name="id">Id</item>
+      <item name="style">شكل</item>
+      <item name="langdir">اتجاه لغة</item>
+      <item name="langcode">رمز اللغة</item>
+      <item name="mime">الهدف نوع الملف</item>
+      <item name="ltr">من اليسار إلى اليمين</item>
+      <item name="rtl">من اليمين إلى اليسار</item>
+      <item name="bgimage">صورة الخلفية</item>
+      <item name="summary">ملخص</item>
+      <item name="td">البيانات</item>
+      <item name="th">رأس</item>
+      <item name="cell_cell">تحديث الخلية الحالية</item>
+      <item name="cell_row">تحديث كافة الخلايا في الصف</item>
+      <item name="cell_all">حديث كافة الخلايا في الجدول</item>
+      <item name="row_row">تحديث الصف الحالي</item>
+      <item name="row_odd">تحديث الصفوف في الجدول مفرد</item>
+      <item name="row_even"> تحديث الصفوف في الجدول زوجى عدد</item>
+      <item name="row_all">تحديث كافة الصفوف في الجدول</item>
+      <item name="thead">الجدول رئيس</item>
+      <item name="tbody"> الجدول جسد</item>
+      <item name="tfoot">الجدول القدم</item>
+      <item name="scope">نطاق</item>
+      <item name="rowgroup"> مجموعة صف</item>
+      <item name="colgroup">مجموعة أعمدة </item>
+      <item name="col_limit">لقد تجاوزت الحد الأقصى لعدد أعمدة {$cols}.</item>
+      <item name="row_limit">لقد تجاوزت الحد الأقصى لعدد الصفوف {$rows}.</item>
+      <item name="cell_limit">لقد تجاوزت الحد الأقصى لعدد من الخلايا {$cells}.</item>
+      <item name="missing_scope">Are you sure you want to continue without specifying a scope for this table header cell. Without it, it may be difficult for some users with disabilities to understand the content or data displayed of the table.</item>
+      <item name="caption">الجدول التوضيحية</item>
+      <item name="frame">الإطار</item>
+      <item name="frame_none">لا شيء</item>
+      <item name="frame_groups">المجموعات</item>
+      <item name="frame_rows">الصفوف</item>
+      <item name="frame_cols">أعمدة</item>
+      <item name="frame_all">كافة</item>
+      <item name="rules">قواعد</item>
+      <item name="rules_void">ألغى</item>
+      <item name="rules_above">أعلى</item>
+      <item name="rules_below">أدناه</item>
+      <item name="rules_hsides">hsides</item>
+      <item name="rules_lhs">lhs</item>
+      <item name="rules_rhs">rhs</item>
+      <item name="rules_vsides">vsides</item>
+      <item name="rules_box">صندوق</item>
+      <item name="rules_border">الحدود</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">The changes you made will be lost if you navigate away from this page.</item>
+      <item name="restore_content">Restore auto-saved content.</item>
+      <item name="warning_message">If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?.</item>
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">تبديل وضع ملء الشاشة</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">Insert / edit embedded media</item>
+      <item name="edit">Edit embedded media</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">Insert / edit embedded media</item>
+      <item name="general">عام</item>
+      <item name="advanced">Advanced</item>
+      <item name="file">File/URL</item>
+      <item name="list">List</item>
+      <item name="size">Dimensions</item>
+      <item name="preview">Preview</item>
+      <item name="constrain_proportions">Constrain proportions</item>
+      <item name="type">Type</item>
+      <item name="id">Id</item>
+      <item name="name">Name</item>
+      <item name="class_name">Class</item>
+      <item name="vspace">V-Space</item>
+      <item name="hspace">H-Space</item>
+      <item name="play">Auto play</item>
+      <item name="loop">Loop</item>
+      <item name="menu">Show menu</item>
+      <item name="quality">Quality</item>
+      <item name="scale">Scale</item>
+      <item name="align">Align</item>
+      <item name="salign">SAlign</item>
+      <item name="wmode">WMode</item>
+      <item name="bgcolor">Background</item>
+      <item name="base">Base</item>
+      <item name="flashvars">Flashvars</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">AutoHREF</item>
+      <item name="cache">Cache</item>
+      <item name="hidden">Hidden</item>
+      <item name="controller">Controller</item>
+      <item name="kioskmode">Kiosk mode</item>
+      <item name="playeveryframe">Play every frame</item>
+      <item name="targetcache">Target cache</item>
+      <item name="correction">No correction</item>
+      <item name="enablejavascript">Enable JavaScript</item>
+      <item name="starttime">Start time</item>
+      <item name="endtime">End time</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">Choke speed</item>
+      <item name="target">Target</item>
+      <item name="volume">Volume</item>
+      <item name="autostart">Auto start</item>
+      <item name="enabled">Enabled</item>
+      <item name="fullscreen">Fullscreen</item>
+      <item name="invokeurls">Invoke URLs</item>
+      <item name="mute">Mute</item>
+      <item name="stretchtofit">Stretch to fit</item>
+      <item name="windowlessvideo">Windowless video</item>
+      <item name="balance">Balance</item>
+      <item name="baseurl">Base URL</item>
+      <item name="captioningid">Captioning id</item>
+      <item name="currentmarker">Current marker</item>
+      <item name="currentposition">Current position</item>
+      <item name="defaultframe">Default frame</item>
+      <item name="playcount">Play count</item>
+      <item name="rate">Rate</item>
+      <item name="uimode">UI Mode</item>
+      <item name="flash_options">Flash options</item>
+      <item name="qt_options">Quicktime options</item>
+      <item name="wmp_options">Windows media player options</item>
+      <item name="rmp_options">Real media player options</item>
+      <item name="shockwave_options">Shockwave options</item>
+      <item name="autogotourl">Auto goto URL</item>
+      <item name="center">Center</item>
+      <item name="imagestatus">Image status</item>
+      <item name="maintainaspect">Maintain aspect</item>
+      <item name="nojava">No java</item>
+      <item name="prefetch">Prefetch</item>
+      <item name="shuffle">Shuffle</item>
+      <item name="console">Console</item>
+      <item name="numloop">Num loops</item>
+      <item name="controls">Controls</item>
+      <item name="scriptcallbacks">Script callbacks</item>
+      <item name="swstretchstyle">Stretch style</item>
+      <item name="swstretchhalign">Stretch H-Align</item>
+      <item name="swstretchvalign">Stretch V-Align</item>
+      <item name="sound">Sound</item>
+      <item name="progress">Progress</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn">Streamed rtsp resources should be added to the QT Src field under the advanced tab.\nYou should also add a non streamed version to the Src field..</item>
+      <item name="align_top">الاعلى</item>
+      <item name="align_right">يمين</item>
+      <item name="align_bottom">اسفل</item>
+      <item name="align_left">يسار</item>
+      <item name="align_center">Center</item>
+      <item name="align_top_left">Top left</item>
+      <item name="align_top_right">Top right</item>
+      <item name="align_bottom_left">Bottom left</item>
+      <item name="align_bottom_right">Bottom right</item>
+      <item name="flv_options">Flash video options</item>
+      <item name="flv_scalemode">Scale mode</item>
+      <item name="flv_buffer">Buffer</item>
+      <item name="flv_startimage">Start image</item>
+      <item name="flv_starttime">Start time</item>
+      <item name="flv_defaultvolume">Default volumne</item>
+      <item name="flv_hiddengui">Hidden GUI</item>
+      <item name="flv_autostart">Auto start</item>
+      <item name="flv_loop">Loop</item>
+      <item name="flv_showscalemodes">Show scale modes</item>
+      <item name="flv_smoothvideo">Smooth video</item>
+      <item name="flv_jscallback">JS Callback</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">Document properties</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Document properties</item>
+      <item name="meta_tab">عام</item>
+      <item name="appearance_tab">Appearance</item>
+      <item name="advanced_tab">Advanced</item>
+      <item name="meta_props">Meta information</item>
+      <item name="langprops">Language and encoding</item>
+      <item name="meta_title">Title</item>
+      <item name="meta_keywords">Keywords</item>
+      <item name="meta_description">Description</item>
+      <item name="meta_robots">Robots</item>
+      <item name="doctypes">Doctype</item>
+      <item name="langcode">Language code</item>
+      <item name="langdir">Language direction</item>
+      <item name="ltr">Left to right</item>
+      <item name="rtl">Right to left</item>
+      <item name="xml_pi">XML declaration</item>
+      <item name="encoding">Character encoding</item>
+      <item name="appearance_bgprops">Background properties</item>
+      <item name="appearance_marginprops">Body margins</item>
+      <item name="appearance_linkprops">Link colors</item>
+      <item name="appearance_textprops">Text properties</item>
+      <item name="bgcolor">Background color</item>
+      <item name="bgimage">Background image</item>
+      <item name="left_margin">Left margin</item>
+      <item name="right_margin">Right margin</item>
+      <item name="top_margin">Top margin</item>
+      <item name="bottom_margin">Bottom margin</item>
+      <item name="text_color">Text color</item>
+      <item name="font_size">Font size</item>
+      <item name="font_face">Font face</item>
+      <item name="link_color">Link color</item>
+      <item name="hover_color">Hover color</item>
+      <item name="visited_color">Visited color</item>
+      <item name="active_color">Active color</item>
+      <item name="textcolor">Color</item>
+      <item name="fontsize">Font size</item>
+      <item name="fontface">Font family</item>
+      <item name="meta_index_follow">Index and follow the links</item>
+      <item name="meta_index_nofollow">Index and don't follow the links</item>
+      <item name="meta_noindex_follow">Do not index but follow the links</item>
+      <item name="meta_noindex_nofollow">Do not index and don\'t follow the links</item>
+      <item name="appearance_style">Stylesheet and style properties</item>
+      <item name="stylesheet">Stylesheet</item>
+      <item name="style">Style</item>
+      <item name="author">Author</item>
+      <item name="copyright">Copyright</item>
+      <item name="add">Add new element</item>
+      <item name="remove">Remove selected element</item>
+      <item name="moveup">Move selected element up</item>
+      <item name="movedown">Move selected element down</item>
+      <item name="head_elements">Head elements</item>
+      <item name="info">Information</item>
+      <item name="add_title">Title element</item>
+      <item name="add_meta">Meta element</item>
+      <item name="add_script">Script element</item>
+      <item name="add_style">Style element</item>
+      <item name="add_link">Link element</item>
+      <item name="add_base">Base element</item>
+      <item name="add_comment">Comment node</item>
+      <item name="title_element">Title element</item>
+      <item name="script_element">Script element</item>
+      <item name="style_element">Style element</item>
+      <item name="base_element">Base element</item>
+      <item name="link_element">Link element</item>
+      <item name="meta_element">Meta element</item>
+      <item name="comment_element">Comment</item>
+      <item name="src">Src</item>
+      <item name="language">Language</item>
+      <item name="href">Href</item>
+      <item name="target">Target</item>
+      <item name="type">Type</item>
+      <item name="charset">Charset</item>
+      <item name="defer">Defer</item>
+      <item name="media">Media</item>
+      <item name="properties">Properties</item>
+      <item name="name">Name</item>
+      <item name="value">Value</item>
+      <item name="content">Content</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href lang</item>
+      <item name="general_props">عام</item>
+      <item name="advanced_props">Advanced</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Insert predefined template content</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">Templates</item>
+      <item name="label">Template</item>
+      <item name="desc_label">Description</item>
+      <item name="desc">Insert predefined template content</item>
+      <item name="select">Select a template</item>
+      <item name="preview">Preview</item>
+      <item name="warning">Warning: Updating a template with a different one may cause data loss.</item>
+      <item name="mdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="cdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="months_long">يناير ، فبراير ، آذار ، نيسان ، أيار ، حزيران ، تموز ، آب ، أيلول / سبتمبر ، أكتوبر ، نوفمبر ، ديسمبر</item>
+      <item name="months_short">يناير ، فبراير ، مارس ، أبريل ومايو ويونيو ، يوليو ، أغسطس ، سبتمبر ، أكتوبر ، نوفمبر ، ديسمبر</item>
+      <item name="day_long">الأحد ، الاثنين ، الثلاثاء ، الاربعاء ، الخميس ، الجمعة ، السبت ، الأحد</item>
+      <item name="day_short">أحد ، الاثنين ، الثلاثاء ، الاربعاء ، الخميس ، الجمعة ، السبت والأحد</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Visual control characters on/off.</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">Toggle spellchecker</item>
+      <item name="menu">Spellchecker settings</item>
+      <item name="ignore_word">Ignore word</item>
+      <item name="ignore_words">Ignore all</item>
+      <item name="langs">Languages</item>
+      <item name="wait">Please wait...</item>
+      <item name="sug">Suggestions</item>
+      <item name="no_sug">No suggestions</item>
+      <item name="no_mpell">No misspellings found.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">Insert page break.</item>
+    </group>
+    <group target="advlist">
+      <item name="types">Types</item>
+      <item name="def">Default</item>
+      <item name="lower_alpha">Lower alpha</item>
+      <item name="lower_greek">Lower greek</item>
+      <item name="lower_roman">Lower roman</item>
+      <item name="upper_alpha">Upper alpha</item>
+      <item name="upper_roman">Upper roman</item>
+      <item name="circle">Circle</item>
+      <item name="disc">Disc</item>
+      <item name="square">Square</item>
+    </group>
+  </language>
+</language-pack>
