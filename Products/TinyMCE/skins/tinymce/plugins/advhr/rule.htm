@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" i18n:domain="tinymce">
+<head>
+	<title i18n:translate="advhr_advhr_desc"></title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="js/rule.js"></script>
+	<script type="text/javascript" src="../../utils/mctabs.js"></script>
+	<script type="text/javascript" src="../../utils/form_utils.js"></script>
+</head>
+<body role="application">
+	<div class="dialog-wrapper" id="content">
+		<form onsubmit="AdvHRDialog.update();return false;" action="#">
+			<fieldset>
+				<legend i18n:translate="advhr_advhr_desc"></legend>
+				<div class="field">
+					<label for="anchorName" i18n:translate="advhr_dlg_width"></label>
+					<div class="widget">
+						<input id="width" name="width" type="text" class="mceFocus" value="" size="10"/>
+						<select name="width2" id="width2" size="1">
+							<option value="">px</option>
+							<option value="%">%</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="field">
+					<label for="anchorName" i18n:translate="advhr_dlg_size"></label>
+					<div class="widget">
+						<select id="size" name="size">
+							<option value="">Normal</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="field">
+					<div class="widget">
+						<input type="checkbox" name="noshade" id="noshade"/>
+						<label for="noshade" i18n:translate="advhr_dlg_noshade"></label>
+					</div>
+				</div>
+			</fieldset>
+
+			<div class="visualClear"><!-- --></div>
+
+			<div class="mceActionPanel formControls">
+					<input type="submit" id="insert" class="context" name="insert" i18n:attributes="value common_insert" />
+					<input type="button" id="cancel" class="standalone" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
+			</div>
+		</form>
+	</div>
+</body>
+</html>

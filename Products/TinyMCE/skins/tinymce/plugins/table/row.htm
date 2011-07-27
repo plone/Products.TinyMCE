@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" i18n:domain="tinymce">
+<head>
+	<title i18n:translate="table_dlg_row_title"></title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="../../utils/mctabs.js"></script>
+	<script type="text/javascript" src="../../utils/form_utils.js"></script>
+	<script type="text/javascript" src="../../utils/validate.js"></script>
+	<script type="text/javascript" src="../../utils/editable_selects.js"></script>
+	<script type="text/javascript" src="js/row.js"></script>
+    <link href="css/row.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body id="tablerow" role="application">
+	<div class="dialog-wrapper" id="content">
+		<form onsubmit="updateAction();return false;" action="#">
+            <ul class="formTabs">
+                <li id="general_tab" class="current" aria-controls="general_panel"><span i18n:translate="table_dlg_general_tab"><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;"></a></span></li>
+                <li id="advanced_tab" aria-controls="advanced_panel"><span i18n:translate="table_dlg_advanced_tab"><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;"></a></span></li>
+            </ul>
+			<fieldset id="general_panel" class="panel current">
+
+				<div class="field">
+					<label for="height" i18n:translate="table_dlg_height"></label>
+					<div class="widget">
+						<input name="height" type="text" id="height" value="" size="4" maxlength="4" onchange="changedSize();" />
+					</div>
+				</div>
+
+				<div class="field">
+					<label for="valign" i18n:translate="table_dlg_valign"></label>
+					<div class="widget">
+						<select id="valign" name="valign">
+							<option value="" i18n:translate="common_not_set"></option>
+							<option value="top" i18n:translate="table_dlg_align_top"></option>
+							<option value="middle" i18n:translate="table_dlg_align_middle"></option>
+							<option value="bottom" i18n:translate="table_dlg_align_bottom"></option>
+						</select>
+					</div>
+				</div>
+			</fieldset>
+
+			<fieldset role="application" id="advanced_panel" class="panel">
+				<div class="field" >
+					<label for="rowtype" i18n:translate="table_dlg_rowtype"></label>
+					<div class="widget">
+						<select id="rowtype" name="rowtype" class="mceFocus">
+							<option value="thead" i18n:translate="table_dlg_thead"></option>
+							<option value="tbody" i18n:translate="table_dlg_tbody"></option>
+							<option value="tfoot" i18n:translate="table_dlg_tfoot"></option>
+						</select>
+					</div>
+				</div>
+
+				<div class="field">
+					<label for="action" i18n:translate="table_dlg_row_title"></label>
+					<div class="widget">
+						<select id="action" name="action">
+							<option value="row" i18n:translate="table_dlg_row_row"></option>
+							<option value="odd" i18n:translate="table_dlg_row_odd"></option>
+							<option value="even"  i18n:translate="table_dlg_row_even"></option>
+							<option value="all" i18n:translate="table_dlg_row_all"></option>
+						</select>
+					</div>
+				</div>
+			</fieldset>
+
+			<div class="hiddenset">
+				<input id="id" name="id" type="text" value="" />
+				<input type="text" id="style" name="style" value="" />
+				<select id="dir" name="dir"><option value="" i18n:translate="common_not_set"></option></select>
+				<input id="lang" name="lang" type="text" value="" />
+				<input id="backgroundimage" name="backgroundimage" type="text" value="" />
+				<div id="backgroundimagebrowsercontainer"></div>
+				<input id="bgcolor" name="bgcolor" type="text" value="" />
+				<div id="bgcolor_pickcontainer"></div>
+			</div>
+
+			<div class="visualClear"><!-- --></div>
+
+			<div class="mceActionPanel">
+                <input type="submit" id="insert" class="context" name="insert" i18n:attributes="value common_update" />
+                <input type="button" id="cancel" class="context" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
+			</div>
+		</form>
+	</div>
+</body>
+</html>

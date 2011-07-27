@@ -42,7 +42,7 @@ var TemplateDialog = {
 
 		if (e) {
 			e.style.height = Math.abs(h) + 'px';
-			e.style.width  = Math.abs(w - 5) + 'px';
+			e.style.width = Math.abs(w - 5) + 'px';
 		}
 	},
 
@@ -61,7 +61,7 @@ var TemplateDialog = {
 			return;
 
 		d.body.innerHTML = this.templateHTML = this.getFileContents(u);
-		
+
 		for (x=0; x<tsrc.length; x++) {
 			if (tsrc[x].title == ti)
 				document.getElementById('tmpldesc').innerHTML = tsrc[x].description || '';
