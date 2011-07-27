@@ -20,6 +20,11 @@ class ITinyMCELayout(Interface):
         description=_(u"This option gives you the ability to enable/disable auto resizing the editor window depending on the content."),
         required=False)
 
+    compress = schema.Bool(
+        title=_(u"Enable compression of editor."),
+        description=_(u"This option gives you the ability to enable/disable the compression of the editor and the plugins."),
+        required=False)
+    
     editor_width = schema.TextLine(
         title=_(u"Editor width"),
         description=_(u"This option gives you the ability to specify the width of the editor in pixels or percent."),
@@ -395,7 +400,6 @@ class ITinyMCEResourceTypes(Interface):
         missing_value=set(),
         vocabulary=SimpleVocabulary([SimpleTerm('named', 'named', _(u"Named")), SimpleTerm('numeric', 'numeric', _(u"Numeric")), SimpleTerm('raw', 'raw', _(u"Raw"))]),
         required=False)
-
 
 class ITinyMCE(
     ITinyMCELayout,

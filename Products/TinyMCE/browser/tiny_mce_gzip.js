@@ -10,99 +10,6 @@
  * settings.page_name below to match your tinymce installation as appropriate.
  */
 
-
-    this.getValidInlineStyles = function() {
-        return this.widget_config.valid_inline_styles.join (',');
-    };
-
-    this.getValidElements = function() {
-        a = [];
-
-        for (var valid_element in this.widget_config.valid_elements) {
-            var s = valid_element;
-            if (this.widget_config.valid_elements[valid_element].length > 0) {
-                s += '[' + this.widget_config.valid_elements[valid_element].join ('|') + ']';
-            }
-            a.push (s);
-        }
-        return a.join (',');
-    };
-
-    this.getDocumentUrl = function() {
-        return this.widget_config.document_url;
-    };
-
-    this.getBase = function() {
-        return this.widget_config.parent;
-    };
-
-    this.getToolbarLocation = function () {
-        return this.widget_config.toolbar_location;
-    };
-
-    this.getPathLocation = function () {
-        return this.widget_config.path_location;
-    };
-
-    this.getResizing = function () {
-        return this.widget_config.resizing;
-    };
-
-    this.getResizingUseCookie = function () {
-        return this.widget_config.resizing_use_cookie;
-    };
-
-    this.getResizeHorizontal = function () {
-        return this.widget_config.resize_horizontal;
-    };
-
-    this.getEditorWidth = function () {
-        return this.widget_config.editor_width;
-    };
-
-    this.getEditorHeight = function () {
-        return this.widget_config.editor_height;
-    };
-
-    this.getDirectionality = function () {
-        return this.widget_config.directionality;
-    };
-
-    this.getEntityEncoding = function () {
-        return this.widget_config.entity_encoding;
-    };
-
-    this.getContentCSS = function () {
-        return this.widget_config.content_css;
-    };
-
-
-    this.getLinkUsingUids = function () {
-        return this.widget_config.link_using_uids;
-    };
-
-    this.getAllowCaptionedImages = function () {
-        return this.widget_config.allow_captioned_images;
-    };
-
-    this.getRooted = function () {
-        return this.widget_config.rooted;
-    };
-
-    this.getPortalUrl = function () {
-        return this.widget_config.portal_url;
-    };
-
-    this.getNavigationRootUrl = function () {
-        return this.widget_config.navigation_root_url;
-    };
-
-    this.getLivesearch = function () {
-        return this.widget_config.livesearch;
-    };
-
-
-
 jQuery(function() {
 
     id = "text"; // XXX remove hardcoded !
@@ -348,9 +255,9 @@ jQuery(function() {
         return plugins;
     }
 
-                jQuery('textarea.mce_editable').tinymce({
-                        // Location of TinyMCE script
-                        script_url : '<tal:url tal:replace="string:${options/base_url}" />',
+    jQuery('textarea.mce_editable').tinymce({
+            // Location of TinyMCE script
+            script_url : '<tal:url tal:replace="string:${options/base_url}" />',
 
             mode : "exact",
             elements : this.id,
@@ -403,9 +310,5 @@ jQuery(function() {
             rooted : this.getRooted(),
             force_span_wrappers : true,
             fix_list_elements : false
-
-
                 });
         });
-
-
