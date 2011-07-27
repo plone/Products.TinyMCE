@@ -1,14 +1,14 @@
-# This is the Bulgarian language pack for TinyMCE.
-# Version 3.4
+# Това е български езиков пакет за TinyMCE.
+# Version 3.8
 #
-# Moxiecode Systems AB
+# Moxiecode Systems AB / Muglix
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2010-02-07 00:00+0000\n"
-"Last-Translator: Moxiecode Systems AB\n"
-"Language-Team: Moxiecode Systems AB\n"
+"PO-Revision-Date: 2010-12-15 00:00+0000\n"
+"Last-Translator: Moxiecode Systems AB / Muglix\n"
+"Language-Team: Moxiecode Systems AB / Muglix\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1296,6 +1296,12 @@ msgstr "Постави от Word"
 msgid "paste_selectall_desc"
 msgstr "Избери всички"
 
+msgid "paste_plaintext_mode_sticky"
+msgstr "Поставеното е в изчистен текстов режим. Щракнете отново да преминете в обикновен режим на поставяне. След като поставите елемента ще се върнете в нормален режим."
+
+msgid "paste_plaintext_mode"
+msgstr "Поставеното е в изчистен текстов режим. Щракнете отново да преминете в обикновен режим на поставяне."
+
 msgid "paste_dlg_text_title"
 msgstr "Използвайте CTRL+V на клавиатурата за да поставите текста в прозореца."
 
@@ -1552,7 +1558,7 @@ msgid "table_dlg_cell_limit"
 msgstr "Превишихте максималната бройка клетки:  {$cells}."
 
 msgid "table_dlg_missing_scope"
-msgstr "Сигурен ли сте че желаете да продулжите без да сложите обхват на главата на клетката. Без него, някои потребители с недъзи могат да имат проблем да разберат данните показани в таблицата."
+msgstr "Сигурен ли сте че желаете да продължите без да сложите обхват на главата на клетката. Без него, някои потребители с недъзи могат да имат проблем да разберат данните показани в таблицата."
 
 msgid "table_dlg_caption"
 msgstr "Заглавие на таблицата"
@@ -1607,6 +1613,12 @@ msgstr "border"
 
 msgid "autosave_unload_msg"
 msgstr "Промените които направихте ще се загубят ако отидете на друга страница."
+
+msgid "autosave_restore_content"
+msgstr "Възстановяване на автоматично запазеното."
+
+msgid "autosave_warning_message"
+msgstr "Всички направени промени ще бъдат загубени.\n\nСигурни ли сте, че искате да възстановите запазеното съдържание?."
 
 msgid "fullscreen_desc"
 msgstr "Вкл./Изкл. цял екран"
@@ -1822,7 +1834,7 @@ msgid "media_dlg_maintainaspect"
 msgstr "Поддържай съотношението"
 
 msgid "media_dlg_nojava"
-msgstr "Без java"
+msgstr "Без JAVA"
 
 msgid "media_dlg_prefetch"
 msgstr "Свали предварително"
@@ -1924,7 +1936,7 @@ msgid "media_dlg_flv_smoothvideo"
 msgstr "Гладко видео"
 
 msgid "media_dlg_flv_jscallback"
-msgstr "JS Callback"
+msgstr "JS поддръжка"
 
 msgid "fullpage_desc"
 msgstr "Настройки на документа"
@@ -1966,7 +1978,7 @@ msgid "fullpage_dlg_meta_robots"
 msgstr "Роботи"
 
 msgid "fullpage_dlg_doctypes"
-msgstr "Doctype"
+msgstr "Тип"
 
 msgid "fullpage_dlg_langcode"
 msgstr "Код на езика"
@@ -2258,4 +2270,34 @@ msgstr "Няма грешно написани думи."
 
 msgid "pagebreak_desc"
 msgstr "Вмъкни нова страница."
+
+msgid "advlist_types"
+msgstr "Символи"
+
+msgid "advlist_def"
+msgstr "Стандартни"
+
+msgid "advlist_lower_alpha"
+msgstr "Малки латински букви"
+
+msgid "advlist_lower_greek"
+msgstr "Малки гръцки букви"
+
+msgid "advlist_lower_roman"
+msgstr "Малки римски цифри"
+
+msgid "advlist_upper_alpha"
+msgstr "Заглавни латински букви"
+
+msgid "advlist_upper_roman"
+msgstr "Заглавни римски цифри"
+
+msgid "advlist_circle"
+msgstr "Кръг"
+
+msgid "advlist_disc"
+msgstr "Окръжност"
+
+msgid "advlist_square"
+msgstr "Квадрат"
 

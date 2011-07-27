@@ -21,7 +21,6 @@ var ImageDialog = {
         var f2 = document.forms[2];
         var nl0 = f0.elements;
         var nl1 = f1.elements;
-        var nl2 = f2.elements;
         var ed = tinyMCEPopup.editor;
         var dom = ed.dom;
         var n = ed.selection.getNode();
@@ -70,7 +69,7 @@ var ImageDialog = {
                 }
             }
             selectByValue(f0, 'classes', classname, true);
-            nl2.insert.value = ed.getLang('update');
+            //nl2.insert.value = ed.getLang('update');
 
 
             if (href.indexOf('resolveuid') != -1) {
@@ -141,7 +140,6 @@ var ImageDialog = {
         var f2 = document.forms[2];
         var nl0 = f0.elements;
         var nl1 = f1.elements;
-        var nl2 = f2.elements;
         var v;
         var args = {};
         var el;
@@ -523,13 +521,13 @@ var ImageDialog = {
                     }
                 }
                 document.getElementById ('internallinkcontainer').innerHTML = html;
-                if (data.parent_url == "") {
+                /*if (data.parent_url == "") {
                     document.getElementById ('uponelevel').style.display = 'none';
                     document.getElementById ('uponelevel').href = 'javascript:void(0)';
                 } else {
                     document.getElementById ('uponelevel').style.display = 'block';
                     document.getElementById ('uponelevel').href = 'javascript:ImageDialog.getFolderListing(\'' + data.parent_url + '\',\'tinymce-jsonimagefolderlisting' + '\')';
-                }
+                }*/
 
                 html = "";
                 for (var i = 0; i < data.path.length; i++) {

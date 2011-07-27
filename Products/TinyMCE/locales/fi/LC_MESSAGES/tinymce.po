@@ -1,12 +1,12 @@
 # This is the Finnish language pack for TinyMCE.
-# Version 3.1
+# Version 3.5
 #
 # Moxiecode Systems AB
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2010-06-21 00:00+0000\n"
+"PO-Revision-Date: 2010-12-03 00:00+0000\n"
 "Last-Translator: Moxiecode Systems AB\n"
 "Language-Team: Moxiecode Systems AB\n"
 "MIME-Version: 1.0\n"
@@ -31,7 +31,7 @@ msgid "common_update"
 msgstr "Päivitä"
 
 msgid "common_cancel"
-msgstr "Peruuta"
+msgstr "Peru"
 
 msgid "common_close"
 msgstr "Sulje"
@@ -253,7 +253,7 @@ msgid "advanced_blockquote_desc"
 msgstr "Pitkä lainaus"
 
 msgid "advanced_clipboard_msg"
-msgstr "Kopioi/Leikkaa/Liitä -painikkeet eivät toimi Mozilla ja Firefox -selaimilla. Voit kuitenkin käyttää näppäinyhdistelmiä kopioimiseen (ctrl+c), leikkaamiseen (ctrl+x) ja liittämiseen (ctrl+v). Haluatko lisää tietoa?"
+msgstr "Kopioi/Leikkaa/Liitä -painikkeet eivät toimi Mozilla ja Firefox -selaimilla. Voit kuitenkin käyttää näppäinyhdistelmiä kopioimiseen (Ctrl+C), leikkaamiseen (Ctrl+X) ja liittämiseen (Ctrl+V). Haluatko lisää tietoa?"
 
 msgid "advanced_path"
 msgstr "Polku"
@@ -514,7 +514,7 @@ msgid "save_save_desc"
 msgstr "Tallenna"
 
 msgid "save_cancel_desc"
-msgstr "Peruuta kaikki muutokset"
+msgstr "Peru kaikki muutokset"
 
 msgid "nonbreaking_nonbreaking_desc"
 msgstr "Lisää tyhjä merkki (nbsp)"
@@ -865,7 +865,7 @@ msgid "plonelink_dlg_target_blank"
 msgstr "Avaa uudessa ikkunassa"
 
 msgid "plonelink_dlg_popup"
-msgstr "Javascript ponnahdusikkuna"
+msgstr "JavaScript-ponnahdusikkuna"
 
 msgid "plonelink_dlg_popup_url"
 msgstr "Ponnahdusikkunan URL"
@@ -1162,7 +1162,7 @@ msgid "style_dlg_text_decoration"
 msgstr "Koristelu"
 
 msgid "style_dlg_text_overline"
-msgstr "Ylleviivattu"
+msgstr "Yliviivattu"
 
 msgid "style_dlg_text_underline"
 msgstr "Alleviivattu (Ctrl+U)"
@@ -1303,13 +1303,13 @@ msgid "paste_plaintext_mode"
 msgstr "Liittäminen on nyt pelkkänä tekstinä. Klikkaa uudelleen vaihtaaksesi takaisin tavalliseen tilaan."
 
 msgid "paste_dlg_text_title"
-msgstr "Paina CTRL+V liittääksesi sisällön ikkunaan."
+msgstr "Paina Ctrl+V liittääksesi sisällön ikkunaan."
 
 msgid "paste_dlg_text_linebreaks"
 msgstr "Säilytä rivinvaihdot"
 
 msgid "paste_dlg_word_title"
-msgstr "Paina CTRL+V liittääksesi sisällön ikkunaan."
+msgstr "Paina Ctrl+V liittääksesi sisällön ikkunaan."
 
 msgid "table_desc"
 msgstr "Lisää uusi taulukko"
@@ -1843,7 +1843,7 @@ msgid "media_dlg_shuffle"
 msgstr "Sekoita"
 
 msgid "media_dlg_console"
-msgstr "Konsolie"
+msgstr "Konsoli"
 
 msgid "media_dlg_numloop"
 msgstr "Toistojen määrä"
@@ -1858,10 +1858,10 @@ msgid "media_dlg_swstretchstyle"
 msgstr "Venytystyyli"
 
 msgid "media_dlg_swstretchhalign"
-msgstr "Venytä horisontaalisesti"
+msgstr "Venytä vaakasuunnassa"
 
 msgid "media_dlg_swstretchvalign"
-msgstr "Venytä vertikaalisesti"
+msgstr "Venytä pystysuunnassa"
 
 msgid "media_dlg_sound"
 msgstr "Ääni"
@@ -1960,7 +1960,7 @@ msgid "fullpage_dlg_advanced_tab"
 msgstr "Edistynyt"
 
 msgid "fullpage_dlg_meta_props"
-msgstr "Meta tiedot"
+msgstr "Metatiedot"
 
 msgid "fullpage_dlg_langprops"
 msgstr "Kieli ja koodaus"
@@ -1993,7 +1993,7 @@ msgid "fullpage_dlg_rtl"
 msgstr "Oikealta vasemmalle"
 
 msgid "fullpage_dlg_xml_pi"
-msgstr "XML Ilmoitus"
+msgstr "XML-ilmoitus"
 
 msgid "fullpage_dlg_encoding"
 msgstr "Tekstin koodaus"
@@ -2002,7 +2002,7 @@ msgid "fullpage_dlg_appearance_bgprops"
 msgstr "Taustan asetukset"
 
 msgid "fullpage_dlg_appearance_marginprops"
-msgstr "Body marginaalit"
+msgstr "Body-marginaalit"
 
 msgid "fullpage_dlg_appearance_linkprops"
 msgstr "Linkkien värit"
@@ -2041,7 +2041,7 @@ msgid "fullpage_dlg_link_color"
 msgstr "Linkin väri"
 
 msgid "fullpage_dlg_hover_color"
-msgstr "Hover väri"
+msgstr "Hover-väri"
 
 msgid "fullpage_dlg_visited_color"
 msgstr "Vierailtu väri"
@@ -2188,7 +2188,7 @@ msgid "fullpage_dlg_rev"
 msgstr "Rev"
 
 msgid "fullpage_dlg_hreflang"
-msgstr "Href kieli"
+msgstr "Href-kieli"
 
 msgid "fullpage_dlg_general_props"
 msgstr "Yleinen"

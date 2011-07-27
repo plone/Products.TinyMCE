@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>concept.ge</author>
+    <version major="1" minor="1" releasedate="2010-05-13" />
+    <description>ქართული ენა TinyMCE</description>
+  </header>
+  <language code="ka" title="Georgian" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">გამოვიყენოთ ამ ველისთვის WYSIWYG რეჟიმი?</item>
+      <item name="apply">გამოყენება</item>
+      <item name="insert">ჩასმა</item>
+      <item name="update">განახლება</item>
+      <item name="cancel">გაუქმება</item>
+      <item name="close">დახურვა</item>
+      <item name="browse">დათვალიერება</item>
+      <item name="class_name">კლასი</item>
+      <item name="not_set">- არ არის დაყენებული -</item>
+      <item name="clipboard_msg">კოპირება, ამოჭრა და ჩასმა Firefox-ში არ მუშაობს.\r\nგსურთ მიიღოთ დამატებითი ინფორმაცია?</item>
+      <item name="clipboard_no_support">არ აქვს თქვენი ბრაუზერის მხარდაჭერა. გამოიყენეთ კლავიატურული შემოკლებები.</item>
+      <item name="popup_blocked">Блокиратор всплывающих окон закрыл необходимое окно. Для полноценной работы, отключите блокировку на этом сайте.</item>
+      <item name="invalid_data">შეცდომა: შეყვანილია არა სწორი მნიშვნლეობა, ის მონისნულია წითლად.</item>
+      <item name="more_colors">სხვა ფერები...</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">სქელი (Ctrl+B)</item>
+      <item name="italic_desc">დახრილი (Ctrl+I)</item>
+      <item name="underline_desc">მოხაზული (Ctrl+U)</item>
+      <item name="striketrough_desc">გადახაზული</item>
+      <item name="bullist_desc">მარკირებული სია</item>
+      <item name="numlist_desc">დანომრილი სია</item>
+      <item name="undo_desc">გაუზმება (Ctrl+Z)</item>
+      <item name="redo_desc">დაბრუნება (Ctrl+Y)</item>
+      <item name="cleanup_desc">ზედმეტი კოდის მოცილება</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">სტილი</item>
+      <item name="font_size">ზომა</item>
+      <item name="fontdefault">შრიფტი</item>
+      <item name="block">ფორმატი</item>
+      <item name="paragraph">აბზაცი</item>
+      <item name="div">Div</item>
+      <item name="address">მისამართი</item>
+      <item name="pre">გადაფორმატებული</item>
+      <item name="h1">სათაური 1</item>
+      <item name="h2">სათაური 2</item>
+      <item name="h3">სათაური 3</item>
+      <item name="h4">სათაური 4</item>
+      <item name="h5">სათაური 5</item>
+      <item name="h6">სათაური 6</item>
+      <item name="blockquote">ციტატა</item>
+      <item name="code">კოდი</item>
+      <item name="samp">კოდის მაგალითი</item>
+      <item name="dt">ცნობარის ტერმინი</item>
+      <item name="dd">ცნობარის აღწერა</item>
+      <!-- Buttons -->
+      <item name="bold_desc">ნახევრად სქელი (Ctrl+B)</item>
+      <item name="italic_desc">დახრილი (Ctrl+I)</item>
+      <item name="underline_desc">მოხაზურლი (Ctrl+U)</item>
+      <item name="striketrough_desc">გადახაზული</item>
+      <item name="justifyleft_desc">ტექსტის გასწორება მარცხნივ</item>
+      <item name="justifycenter_desc">ტექსტის გასწორება ცენტრზე</item>
+      <item name="justifyright_desc">ტექსტის გასწორება მარჯვნივ</item>
+      <item name="justifyfull_desc">სიგანეზე</item>
+      <item name="bullist_desc">მარკირებული სია</item>
+      <item name="numlist_desc">დანომრილი სია</item>
+      <item name="outdent_desc">დაშორების შემცირება</item>
+      <item name="indent_desc">დაშორების გაზრდა</item>
+      <item name="undo_desc">გაუქმება (Ctrl+Z)</item>
+      <item name="redo_desc">დაბრუნება (Ctrl+Y)</item>
+      <item name="link_desc">ბმულის დამატება/შეცვლა</item>
+      <item name="unlink_desc">ბმულის წაშლა</item>
+      <item name="image_desc">გამოსახულების დამატება/რედაქტირება</item>
+      <item name="cleanup_desc">ზედმეტი კოდისაგან გაწმენდა</item>
+      <item name="code_desc">HTML კოდის რედაქტირება</item>
+      <item name="sub_desc">სტირქონის ქვემოთ</item>
+      <item name="sup_desc">სტრიქონის ზემოთ</item>
+      <item name="hr_desc">დამატება</item>
+      <item name="removeformat_desc">ფორმატის გაწმენდა</item>
+      <item name="custom1_desc">საკუთარი აღწერა</item>
+      <item name="forecolor_desc">ტექსტის ფერი</item>
+      <item name="backcolor_desc">მონისნული ტექსტის ფერი</item>
+      <item name="charmap_desc">სიმბოლოს დამატება</item>
+      <item name="visualaid_desc">ყველა სიმბოლო</item>
+      <item name="anchor_desc">ღუზას დამატება/რედაქტირება</item>
+      <item name="cut_desc">ამოჭრა</item>
+      <item name="copy_desc">კოპირება</item>
+      <item name="paste_desc">ჩასმა</item>
+      <item name="image_props_desc">გამოსახულების პარამეტრები</item>
+      <item name="newdocument_desc">ახალი დოკუმენტი</item>
+      <item name="help_desc">დახმარება</item>
+      <item name="blockquote_desc">ციტატა</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">კოპირება, ამოჭრა და ჩასმა Firefox-ში არ მუშაობს.\r\nგსურთ მიიღოთ დამატებითი ინფორმაცია?</item>
+      <item name="path">ტეგები</item>
+      <item name="newdocument">დარწმუნებული ხართ, რომ გსურთ ყველაფერის წაშლა</item>
+      <item name="toolbar_focus">ღილაკების პანელზე გადასვლა (Alt+Q). რედაქტორზე გადასვლა (Alt+Z). გზის ელემენტიზე გადასვლა (Alt+X).</item>
+      <item name="more_colors">სხვა ფერები...</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">TinyMCE არწერილობა</item>
+      <item name="about_general">არწერილობა</item>
+      <item name="about_help">დახმარება</item>
+      <item name="about_license">ლიცენზია</item>
+      <item name="about_plugins">პლაგინები</item>
+      <item name="about_plugin">პლაგინი</item>
+      <item name="about_author">ავტორი</item>
+      <item name="about_version">ვერსია</item>
+      <item name="about_loaded">მიმაგრებული პლაგინები</item>
+      <!-- Anchor -->
+      <item name="anchor_title">ღუზას პარამეტრები</item>
+      <item name="anchor_name">ღუზას სახელი</item>
+      <!-- Source -->
+      <item name="code_title">HTML კოდის რედაქტორი</item>
+      <item name="code_wordwrap">სტრიქონის გადატანა</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">ფერები</item>
+      <item name="colorpicker_picker_tab">სპექტრი</item>
+      <item name="colorpicker_picker_title">ფერები</item>
+      <item name="colorpicker_palette_tab">პალიტრა</item>
+      <item name="colorpicker_palette_title">ფერები</item>
+      <item name="colorpicker_named_tab">სახელწოდება</item>
+      <item name="colorpicker_named_title">ფერები</item>
+      <item name="colorpicker_color">კოდი:</item>
+      <item name="colorpicker_name">სახელწოდება:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">სიმბოლოს არჩევა</item>
+      <!-- Image -->
+      <item name="image_title">გამოსახულების პარამეტრები</item>
+      <item name="image_src">მისამართი</item>
+      <item name="image_alt">აღწერა</item>
+      <item name="image_list">გამოსახულებების სია</item>
+      <item name="image_border">საზღვარი</item>
+      <item name="image_dimensions">ზომა</item>
+      <item name="image_vspace">ვერტ. დაშორება</item>
+      <item name="image_hspace">ჰორიზონტ. დაშორება</item>
+      <item name="image_align">გასწორება</item>
+      <item name="image_align_baseline">საბაზსო ხაზის მიხედვით</item>
+      <item name="image_align_top">ზედა კიდეზე</item>
+      <item name="image_align_middle">ცენტრზე</item>
+      <item name="image_align_bottom">ქვედა კიდეზე</item>
+      <item name="image_align_texttop">ტექსტის ზედა კიდეზე</item>
+      <item name="image_align_textbottom">ტექსტის ქვედა კიდეზე</item>
+      <item name="image_align_left">მარცხენა კიდეზე</item>
+      <item name="image_align_right">მარჯვენა კიდეზე</item>
+      <!-- Link -->
+      <item name="link_title">ბმულის პარამეტრები</item>
+      <item name="link_url">მისამართი</item>
+      <item name="link_target">მიზანი</item>
+      <item name="link_target_same">მოცემულ ფანჯარაში გახსნა</item>
+      <item name="link_target_blank">ახალ ფანჯარაში გახსნა</item>
+      <item name="link_titlefield">სათაური</item>
+      <item name="link_is_email">შეყვანილი მისამართი გავს ელ.ფოსტის მისამართს, დავამატოთ პრეფიქსი mailto:?</item>
+      <item name="link_is_external">შეყვანილი მისამართი გავს გარე ბმულს, დავამათოტ პრეფიქსი http://?</item>
+      <item name="link_list">ბმულების სია</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">გასწორება</item>
+      <item name="left">მარცხენა კიდეზე</item>
+      <item name="center">ცენტრზე</item>
+      <item name="right">მარჯვენა კიდეზე</item>
+      <item name="full">სიგანეზე</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%d.%m.%Y</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">თარიღის დამატება</item>
+      <item name="inserttime_desc">დროის დამატება</item>
+      <item name="months_long">იანვარი,თებერვალი,მარტი,აპრილი,მაისი,ივნისი,ივლისი,აგვისტო,სექტემბერი,ოქტომბერი,ნოემბერი,დეკემბერი</item>
+      <item name="months_short">იან,თებ,მარტ,აპრ,მაისი,ივნ,ივლ,აგვ,სექ,ოქტ,ნოემ,დეკ</item>
+      <item name="day_long">კვირა,ორშაბათი,სამშაბათი,ოთხშაბათი,ხუთშაბათი,პარასკევი,შაბათი,კვირა</item>
+      <item name="day_short">კვ,ორშ,სამშ,ოთხშ,ხუთ,პარ,შაბ,კვ</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">ბეჭდვა</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">წინასწარი დათვალიერება</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">მიმართულება მარცხნიდან მარჯვნივ</item>
+      <item name="rtl_desc">მიმართულება მარჯვნიდან მარცხნივ</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">შრის დამატება</item>
+      <item name="forward_desc">წინა პლანზე</item>
+      <item name="backward_desc">უკანა პლანზე</item>
+      <item name="absolute_desc">აბსოლუტური პოზიცირება</item>
+      <item name="content">ახალი შრე</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">შენახვა</item>
+      <item name="cancel_desc">ყველა ცვლილების გაუქმება</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">უწყვეტი დაშორების დამატება</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">ორთოგრაფიის შემოწმება</item>
+      <item name="download">ieSpell არ არის ნაპოვნი. გსურთ დაყენება?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">გამყოფის დამატება</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">სიგანე</item>
+      <item name="size">სიმაღლე</item>
+      <item name="noshade">ჩრდილის გარეშე</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">სმაილის დამატება</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">სმაილის არჩევა</item>
+      <item name="desc">სმაილები</item>
+      <item name="cool">Cool</item>
+      <item name="cry">Cry</item>
+      <item name="embarassed">Embarassed</item>
+      <item name="foot_in_mouth">Foot in mouth</item>
+      <item name="frown">Frown</item>
+      <item name="innocent">Innocent</item>
+      <item name="kiss">Kiss</item>
+      <item name="laughing">Laughing</item>
+      <item name="money_mouth">Money mouth</item>
+      <item name="sealed">Sealed</item>
+      <item name="smile">Smile</item>
+      <item name="surprised">Surprised</item>
+      <item name="tongue_out">Tongue out</item>
+      <item name="undecided">Undecided</item>
+      <item name="wink">Wink</item>
+      <item name="yell">Yell</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">პოვნა</item>
+      <item name="replace_desc">შეცვლა</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">დამატებით პოვნა</item>
+      <item name="notfound">ძებნა დასრულებულია. შესატყვისბი არ არის ნაპოვნი.</item>
+      <item name="search_title">ძიება</item>
+      <item name="replace_title">მოძებნა და შეცვლა</item>
+      <item name="allreplaced">ყველა მნიშნელობა შეცვლილია.</item>
+      <item name="findwhat">ძევნა</item>
+      <item name="replacewith">შეცვლა ..</item>
+      <item name="direction">მიმართულება</item>
+      <item name="up">ზემოთ </item>
+      <item name="down">ქვემოთ</item>
+      <item name="mcase">რეგისტრის გათვალისწინება</item>
+      <item name="findnext">იპოვნე შემდეგ</item>
+      <item name="replace">შეცვლა</item>
+      <item name="replaceall">ყველაფერის შეცვლა</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">გამოსახულების დამატება/რედაქტირება</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">200</item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">საერთო</item>
+      <item name="tab_appearance">მდგომარეობა</item>
+      <item name="tab_advanced">დამატებით</item>
+      <item name="general">საერთო პარამეტრები</item>
+      <item name="title">სათაური</item>
+      <item name="preview">წინასწარ დათვალიერება</item>
+      <item name="constrain_proportions">პროპორციების შენახვა</item>
+      <item name="langdir">ტექსტის მიმართულება</item>
+      <item name="langcode">ენის კოდი</item>
+      <item name="long_desc">ბმული სრულ აღწერაზე</item>
+      <item name="style">სტილი</item>
+      <item name="classes">კლასი</item>
+      <item name="ltr">მარცხნიდან მარჯვნივ</item>
+      <item name="rtl">მარჯვნიდან მარცსნივ</item>
+      <item name="id">ელემენტის სახელწოდება</item>
+      <item name="map">ბმულების რუქა</item>
+      <item name="swap_image">დინამიური გამოსახულება</item>
+      <item name="alt_image">ალტერნატიული გამოსახულება</item>
+      <item name="mouseover">კურსორის მიყვანისას</item>
+      <item name="mouseout">სიმშვიდეში</item>
+      <item name="misc">დამატებითი პარამეტრები</item>
+      <item name="example_img">გამოსახულების პარამეტრები</item>
+      <item name="missing_alt">არ გსურთ არწერის დამატება? არჭერის გარეშე სურათი შეიძლება ზოგი მნახველისთვის იყოს მიუწვდომელი.</item>
+      <item name="dialog_title">გამოსახულების პარამეტრები</item>
+      <item name="src">მისამართი</item>
+      <item name="alt">აღწერა</item>
+      <item name="list">სია</item>
+      <item name="border">საზღვარი</item>
+      <item name="dimensions">ზომა</item>
+      <item name="vspace">ვერტ. დაშორება</item>
+      <item name="hspace">ჰორიზონტ. დაშორება</item>
+      <item name="align">გასწორება</item>
+      <item name="align_baseline">საბაზისო ხაზზე</item>
+      <item name="align_top">ზედა კიდეზე</item>
+      <item name="align_middle">ცენტრზე</item>
+      <item name="align_bottom">ქვედა კიდეზე</item>
+      <item name="align_texttop">ტექსტის ზედა კიდეზე</item>
+      <item name="align_textbottom">ტექსტის ქვედა კიდეზე</item>
+      <item name="align_left">მარცხენა კიდეზე</item>
+      <item name="align_right">მარჯვენა კიდეზე</item>
+      <item name="image_list">გამოსახულებების სია</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">ბმულის დამატება/რედაქტირება</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">200</item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">ბმულის პარამეტრები</item>
+      <item name="url">მისამართი</item>
+      <item name="target">მიზანი</item>
+      <item name="titlefield">სათაური</item>
+      <item name="is_email"> შეყვანილი მისამართი გავს ელ.ფოსტის მისამართს, დავამატოთ პრეფიქსი mailto:?</item>
+      <item name="is_external">შეყვანილი მისამართი გავს გარე ბმულს, დავამათოტ პრეფიქსი http://?</item>
+      <item name="list">სია</item>
+      <item name="general_tab">საერთო</item>
+      <item name="popup_tab">გაშლა</item>
+      <item name="events_tab">მოვლენა</item>
+      <item name="advanced_tab">დამატებით</item>
+      <item name="general_props">საერთო პარამეტრები</item>
+      <item name="popup_props">გაშლის პარამეტრები</item>
+      <item name="event_props">მოვლენების პარამეტრები</item>
+      <item name="advanced_props">დამატებითი პარამეტრები</item>
+      <item name="popup_opts">მახასიათებლები</item>
+      <item name="anchor_names">ღუზები</item>
+      <item name="target_same">მოცემულ ფანჯარაში გახსნა</item>
+      <item name="target_parent">საკუთარა ფანჯარაში გახსნა</item>
+      <item name="target_top">ზედა კადრში გახსნა</item>
+      <item name="target_blank">ახალ ფანჯარაში გახსნა</item>
+      <item name="popup">გაშლა Java-ს გამოყენებით</item>
+      <item name="popup_url">მისამართი</item>
+      <item name="popup_name">ფანჯრის სათაური</item>
+      <item name="popup_return">'return false' დამატება</item>
+      <item name="popup_scrollbars">გადახვევის ველების გამოჩენა</item>
+      <item name="popup_statusbar">მდგომარეობის სტრიქონის გამოჩენა</item>
+      <item name="popup_toolbar">ინსტრუმენტების პანელის გამოჩენა</item>
+      <item name="popup_menubar">მენიუს გამოჩენა</item>
+      <item name="popup_location">განლაგების პანელის გამოჩენა</item>
+      <item name="popup_resizable">ზომის ცვლილების დაშვება</item>
+      <item name="popup_dependent">დამოკიდებულება (მხოლოდ Firefox)</item>
+      <item name="popup_size">ზომა</item>
+      <item name="popup_position">პოზიცია (X/Y)</item>
+      <item name="id">სახელი</item>
+      <item name="style">სტილი</item>
+      <item name="classes">კლასები</item>
+      <item name="target_name">მიზნის სახელი</item>
+      <item name="langdir">ტექსტის მიმართულბა</item>
+      <item name="target_langcode">მიზნის ენა</item>
+      <item name="langcode">ენის კოდი</item>
+      <item name="encoding">მიზნის კოდირება</item>
+      <item name="mime">MIME მიზნის ტიპი</item>
+      <item name="rel">გვერდის დამოკიდებულება მიზანთან</item>
+      <item name="rev">მიზნის დამოკიდებულება გვერდთან</item>
+      <item name="tabindex">სათაური</item>
+      <item name="accesskey">შერწევის გასაღები</item>
+      <item name="ltr">მარცხნიდან მარჯვნივ</item>
+      <item name="rtl">მარჯვნიდან მარცხნივ</item>
+      <item name="link_list">ბმულების სია</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">ციტირება</item>
+      <item name="abbr_desc">შემოკლება</item>
+      <item name="acronym_desc">აბრევიაცია</item>
+      <item name="del_desc">წაშლა</item>
+      <item name="ins_desc">შეცვლა</item>
+      <item name="attribs_desc">ელემენტის დამატება/შეცვლა</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">სათაური</item>
+      <item name="attribute_label_id">სახელი</item>
+      <item name="attribute_label_class">კლასი</item>
+      <item name="attribute_label_style">სტილი</item>
+      <item name="attribute_label_cite">ციტატა</item>
+      <item name="attribute_label_datetime">თარიღი/დრო</item>
+      <item name="attribute_label_langdir">ტექსტის მიმრთულება</item>
+      <item name="attribute_option_ltr">მარცხნიდან მარჯვნივ</item>
+      <item name="attribute_option_rtl">მარჯვნიდან მარცხნივ</item>
+      <item name="attribute_label_langcode">ენა</item>
+      <item name="attribute_label_tabindex">სათაური</item>
+      <item name="attribute_label_accesskey">წვდომის გასაღები</item>
+      <item name="attribute_events_tab">მოვლენა</item>
+      <item name="attribute_attrib_tab">ატრიბუტი</item>
+      <item name="general_tab">საერთო</item>
+      <item name="attrib_tab">ატრიბუტი</item>
+      <item name="events_tab">მოვლენა</item>
+      <item name="fieldset_general_tab">საერთო პარამეტრები</item>
+      <item name="fieldset_attrib_tab">ელემენტის პარამეტრები</item>
+      <item name="fieldset_events_tab">ელემენტების მოვლენები</item>
+      <item name="title_ins_element">შეცვლა</item>
+      <item name="title_del_element">წაშლა</item>
+      <item name="title_acronym_element">აბრივიაცია</item>
+      <item name="title_abbr_element">შემოკლება</item>
+      <item name="title_cite_element">ციტირება</item>
+      <item name="remove">წაშლა</item>
+      <item name="insert_date">თარიღის ჩასმა</item>
+      <item name="option_ltr">მარცხნიდან მარჯვნივ</item>
+      <item name="option_rtl">მარჯვნიდან მარცხნივ</item>
+      <item name="attribs_title">ელემენტის თვისებები</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">CSS სტილის რედაქტირება</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">CSS სტილის რედაქტორი</item>
+      <item name="apply">გამოყენება</item>
+      <item name="text_tab">ტექსტი</item>
+      <item name="background_tab">ონი</item>
+      <item name="block_tab">ბლოკი</item>
+      <item name="box_tab">კიდეები</item>
+      <item name="border_tab">საზღვარი</item>
+      <item name="list_tab">სია</item>
+      <item name="positioning_tab">მდებარეობა</item>
+      <item name="text_props">ტექსტი</item>
+      <item name="text_font">შრიფტი</item>
+      <item name="text_size">ზომა</item>
+      <item name="text_weight">სისქრ</item>
+      <item name="text_style">სტილი</item>
+      <item name="text_variant">ვარიანტი</item>
+      <item name="text_lineheight">სტრიქონის საიმაღლე</item>
+      <item name="text_case">რეგისტრი</item>
+      <item name="text_color">ფერი</item>
+      <item name="text_decoration">გაფორმება</item>
+      <item name="text_overline">ზედა ხაზით</item>
+      <item name="text_underline">მოხაზული</item>
+      <item name="text_striketrough">გადახაზული</item>
+      <item name="text_blink">მოციმციმე</item>
+      <item name="text_none">ყველაფრის გარეშე</item>
+      <item name="background_color">ფონის ფერი</item>
+      <item name="background_image">ფონის გამოსახულება</item>
+      <item name="background_repeat">გამეორება</item>
+      <item name="background_attachment">მიბმა</item>
+      <item name="background_hpos">ჰორიზონტალური პოზიცია</item>
+      <item name="background_vpos">ვერტიკალური პოზიცია</item>
+      <item name="block_wordspacing">სიტყვებს შორის დაშორება</item>
+      <item name="block_letterspacing">ასოებს შორის დაშორება</item>
+      <item name="block_vertical_alignment">ვერტიკალური გასწორება</item>
+      <item name="block_text_align">ტექსტის გასწორება</item>
+      <item name="block_text_indent">ტექსტის დაშორება</item>
+      <item name="block_whitespace">სივრცე</item>
+      <item name="block_display">ასახვა</item>
+      <item name="box_width">სიგანე</item>
+      <item name="box_height">სიმაღლე</item>
+      <item name="box_float">მოცრავე</item>
+      <item name="box_clear">მკვეთრი</item>
+      <item name="padding">მინდვრები</item>
+      <item name="same">ყველასთვის ერთნაერად</item>
+      <item name="top">ზემოთ</item>
+      <item name="right">მარცხნივ</item>
+      <item name="bottom">ქვემოთ</item>
+      <item name="left">მარჯვნივ</item>
+      <item name="margin">დაშორება</item>
+      <item name="style">სტილი</item>
+      <item name="width">სიგანე</item>
+      <item name="height">სიმაღლე</item>
+      <item name="color">ფერი</item>
+      <item name="list_type">ტიპი</item>
+      <item name="bullet_image">მარკერი</item>
+      <item name="position">პოზიცია</item>
+      <item name="positioning_type">ტიპი</item>
+      <item name="visibility">ასახვა</item>
+      <item name="zindex">Z-ინდექსი</item>
+      <item name="overflow">გადავსება</item>
+      <item name="placement">განთავსება</item>
+      <item name="clip">მოკვეთა</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">ჩასვი როგორც ტექსტი</item>
+      <item name="paste_word_desc">Word-იდნ ჩასმა</item>
+      <item name="selectall_desc">ტველაფრის მონიშვნა</item>
+      <item name="plaintext_mode_sticky">Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode.</item>
+      <item name="plaintext_mode">Paste is now in plain text mode. Click again to toggle back to regular paste mode.</item>
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">ტექსტის ჩასასმელად გამოიყენეთ კლავიატურული კომბინაცია CTRL+V.</item>
+      <item name="text_linebreaks">გადატანილი სტრიქონების შენახვა</item>
+      <item name="word_title">Иტექსტის ჩასასმელად გამოიყენეთ კლავიატურული კომბინაცია CTRL+V.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">ცხრილის დამატება/რედაქტირება</item>
+      <item name="row_before_desc">სტიქონის დამატება ზემოთ</item>
+      <item name="row_after_desc">სტრიქონის დამატება ქვემოთ</item>
+      <item name="delete_row_desc">სტრიქონის წაშლა</item>
+      <item name="col_before_desc">სვეტის დამატება მარცხნივ</item>
+      <item name="col_after_desc">სვეტის დამატება მარჯვნივ</item>
+      <item name="delete_col_desc">სვეტის წაშლა</item>
+      <item name="split_cells_desc">უჯრის გაყოფა</item>
+      <item name="merge_cells_desc">უჯრების გაერთიანება</item>
+      <item name="row_desc">სტრიქონის პარამეტრები</item>
+      <item name="cell_desc">უჯრის პარამეტრები</item>
+      <item name="props_desc">ცხრილის პარამეტრიები</item>
+      <item name="paste_row_before_desc">სტრიქონის ზემოთ დამატება</item>
+      <item name="paste_row_after_desc">სტრიქონის ქვემოთ დამეტება</item>
+      <item name="cut_row_desc">სტრიქონის ამოჭრა</item>
+      <item name="copy_row_desc">სტრიქონის კოპირება</item>
+      <item name="del">სტრიქონის წაშლა</item>
+      <item name="row">სტრიქონი</item>
+      <item name="col">სვეტი</item>
+      <item name="cell">უჯრა</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width">30</item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">საერთო</item>
+      <item name="advanced_tab">დამატებით</item>
+      <item name="general_props">საერთო პარამეტრები</item>
+      <item name="advanced_props">დამატებითი პარამეტრები</item>
+      <item name="rowtype">სტრიქონის რიპი</item>
+      <item name="title">ცხრილის პარამეტრები</item>
+      <item name="width">სიგანე</item>
+      <item name="height">სიმაღლე</item>
+      <item name="cols">სვეტები</item>
+      <item name="rows">სტრიქონები</item>
+      <item name="cellspacing">უჯრებს შორის დაშორება</item>
+      <item name="cellpadding">უჯრებს შორის დაშორება</item>
+      <item name="border">საზღვარი</item>
+      <item name="align">გასწორება</item>
+      <item name="align_default">საწისად</item>
+      <item name="align_left">მარცხენა კიდეზე</item>
+      <item name="align_right">მარჯვენა კიდეზე</item>
+      <item name="align_middle">ცენტრზე</item>
+      <item name="row_title">სტრიქონის პარამეტრები</item>
+      <item name="cell_title">უჯრის პარამეტრები</item>
+      <item name="cell_type">ტიპი</item>
+      <item name="valign">ვერტიკალური გასწორება</item>
+      <item name="align_top">ზედა კიდეზე</item>
+      <item name="align_bottom">ქვედა კიდეზე</item>
+      <item name="bordercolor">საზღვრების ფერი</item>
+      <item name="bgcolor">შევსების ფერი</item>
+      <item name="merge_cells_title">უჯრების გაერთიანება</item>
+      <item name="id">სახელი</item>
+      <item name="style">სტილი</item>
+      <item name="langdir">ტექსტის მიმართულება</item>
+      <item name="langcode">ენის კოდი</item>
+      <item name="mime">MIME მიზნის ტიპი</item>
+      <item name="ltr">მარცხნიდან მარჯვნივ</item>
+      <item name="rtl">მარვნიდან მარცხნივ</item>
+      <item name="bgimage">ფონური გამოსახულბა</item>
+      <item name="summary">საერთო</item>
+      <item name="td">მონაცემები</item>
+      <item name="th">სათაური</item>
+      <item name="cell_cell">მოცემული უჯრის განახლება</item>
+      <item name="cell_row">სტრიქონში ყველა უჯრს განახლება</item>
+      <item name="cell_all">ცხრილსი ყველა უჯრის განახლება</item>
+      <item name="row_row">მოცემული სტირქონის განახლება</item>
+      <item name="row_odd">ცხრულსი კენტი სტრიქონების განახლება</item>
+      <item name="row_even">ცხრილში ლუწისტრიქონების განახლება</item>
+      <item name="row_all">ცხრილსი ყველა უჯრის განახლება</item>
+      <item name="thead">სათაური</item>
+      <item name="tbody">სხეული</item>
+      <item name="tfoot">დასრულება</item>
+      <item name="scope">მიდამო</item>
+      <item name="rowgroup">სტრიქონების ჯგუფი</item>
+      <item name="colgroup">სვეტების ჯგუფი</item>
+      <item name="col_limit">მიღწეულია მაქსიმალური ზღვარი, $ სვეტი.</item>
+      <item name="row_limit">მიღწეულია მაქსიმალური ზღვარი, $ სტრიქონი.</item>
+      <item name="cell_limit">მიღწეულია მაქსიმალური ზღვარი, $ უჯრა.</item>
+      <item name="missing_scope">თუ სათაური არ იქნება მითითებული, შეიძლება ყველამ ვერ ნახოს ინფორმაცია.</item>
+      <item name="caption">სათაური</item>
+      <item name="frame">კადრი</item>
+      <item name="frame_none">none</item>
+      <item name="frame_groups">ჯგუფები</item>
+      <item name="frame_rows">სტრიქონები</item>
+      <item name="frame_cols">სვეტები</item>
+      <item name="frame_all">ყველა</item>
+      <item name="rules">wesebi</item>
+      <item name="rules_void">void</item>
+      <item name="rules_above">above</item>
+      <item name="rules_below">below</item>
+      <item name="rules_hsides">hsides</item>
+      <item name="rules_lhs">lhs</item>
+      <item name="rules_rhs">rhs</item>
+      <item name="rules_vsides">vsides</item>
+      <item name="rules_box">კოლოფი</item>
+      <item name="rules_border">საზღვარი</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">თუ თქვენ დატოვებთ მოცემულ გვერდს, ყველა ცვლილება იქნება დაკარგული.</item>
+      <item name="restore_content">ავტომატურად დამახსოვრებულის აღდგენა</item>
+      <item name="warning_message">ყველა ცვლილება იქნება დაკარგული.\n\nგანვაგრძოთ ავრომატურად დამახსოვრებულის აღდგენა?</item>
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">სრულეკრანიანი რეჟიმი</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">კლიპის დამატება/რედაქტირება</item>
+      <item name="edit">კლიკის მახასიათებლები</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">კლიპის მახასიათებლები</item>
+      <item name="general">საეღო</item>
+      <item name="advanced">დამატებით</item>
+      <item name="file">მისამართი</item>
+      <item name="list">ჩამონათვალი</item>
+      <item name="size">ზომები</item>
+      <item name="preview">წინასწარი დათვალიერება</item>
+      <item name="constrain_proportions">პროპორციების შენარჩუნება</item>
+      <item name="type">ტიპი</item>
+      <item name="id">სახელი</item>
+      <item name="name">სახელწოდება</item>
+      <item name="class_name">კლასი</item>
+      <item name="vspace">ვერტ. დაშორება</item>
+      <item name="hspace">ჰორიზ. დაშორება</item>
+      <item name="play">ავტოგაშვება</item>
+      <item name="loop">გამეორება</item>
+      <item name="menu">მენიუს გამოჩენა</item>
+      <item name="quality">ხარისხი</item>
+      <item name="scale">მიდამო</item>
+      <item name="align">გასწორება</item>
+      <item name="salign">გასწორება</item>
+      <item name="wmode">ფანჯარა</item>
+      <item name="bgcolor">ფონი</item>
+      <item name="base">Base</item>
+      <item name="flashvars">Flas ბრძანებები</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">ავტო ბმული</item>
+      <item name="cache">ქეში</item>
+      <item name="hidden">დაფარული</item>
+      <item name="controller">მართვა</item>
+      <item name="kioskmode">კიოსკის რეჟიმი</item>
+      <item name="playeveryframe">ყველა კადრის ასახვა</item>
+      <item name="targetcache">მიზნის ქეში</item>
+      <item name="correction">კორექტირების გარეშე</item>
+      <item name="enablejavascript">JavaScript-ის ჩართვა</item>
+      <item name="starttime">დაწყების დრო</item>
+      <item name="endtime">დასრულების დრო</item>
+      <item name="href">ბმული</item>
+      <item name="qtsrcchokespeed">Choke speed</item>
+      <item name="target">მიზანი</item>
+      <item name="volume">ხმა</item>
+      <item name="autostart">ავტოგაშვება</item>
+      <item name="enabled">ჩართულია</item>
+      <item name="fullscreen">მთელ ეკრანზე</item>
+      <item name="invokeurls">მისამართის გამოძახება</item>
+      <item name="mute">ხმის გარეშე</item>
+      <item name="stretchtofit">ფანჯრის ზომაზე</item>
+      <item name="windowlessvideo">ფანჯრის ვიდეო</item>
+      <item name="balance">ბალანსი</item>
+      <item name="baseurl">საბაზისო მისამართი</item>
+      <item name="captioningid">სუბტიტრების სახელი</item>
+      <item name="currentmarker">მოცემული მარკერი</item>
+      <item name="currentposition">მოცემული პოზიცია</item>
+      <item name="defaultframe">მთავარი კადრი</item>
+      <item name="playcount">ნახვების მთვლელი</item>
+      <item name="rate">რეიტინგი</item>
+      <item name="uimode">ინტერფეისის რეჯიმი</item>
+      <item name="flash_options">Flash პარამეტრები</item>
+      <item name="qt_options">Quicktime პარამეტრები</item>
+      <item name="wmp_options">Windows Media პარამეტრები</item>
+      <item name="rmp_options">Real Media პარამეტრები</item>
+      <item name="shockwave_options">Shockwave პარამეტრები</item>
+      <item name="autogotourl">მისამართზე ავტო გადასვლა</item>
+      <item name="center">ცენტრი</item>
+      <item name="imagestatus">გამოსახულების სტატუსი</item>
+      <item name="maintainaspect">ზომის დამახსოვრება</item>
+      <item name="nojava">Java-ს გარეშე</item>
+      <item name="prefetch">ამოკრეფა</item>
+      <item name="shuffle">В разброс</item>
+      <item name="console">კონსოლი</item>
+      <item name="numloop">გამეორებები</item>
+      <item name="controls">მართვა</item>
+      <item name="scriptcallbacks">სკრიპტის მხარდაჭერა</item>
+      <item name="swstretchstyle">გაწელვის სტილი</item>
+      <item name="swstretchhalign">გაწელვის ჰორიზ. გასწორება</item>
+      <item name="swstretchvalign">გაწელვის ვერტ. გასწორება</item>
+      <item name="sound">ხმა</item>
+      <item name="progress">პროგრესი</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn">Потоковые rtsp ресурсы должны быть в поле QT Src.</item>
+      <item name="align_top">ზედა კიდეზე</item>
+      <item name="align_right">მარჯვენა კიდეზე</item>
+      <item name="align_bottom">ქვედა კიდეზე</item>
+      <item name="align_left">მარცხენა კიდეზე</item>
+      <item name="align_center">ცენტრი</item>
+      <item name="align_top_left">მარცხენა ზედა კუთხე</item>
+      <item name="align_top_right">მარჯვენა ზედა კუთხე</item>
+      <item name="align_bottom_left">მარცხენა ქვედა კუთხე</item>
+      <item name="align_bottom_right">მარჯვენა ქვედა კუთხე</item>
+      <item name="flv_options">Flash პარამეტრები</item>
+      <item name="flv_scalemode">მასშტაბი</item>
+      <item name="flv_buffer">ბუფერი</item>
+      <item name="flv_startimage">საწყისი გამოსახულება</item>
+      <item name="flv_starttime">დაწყების დრო</item>
+      <item name="flv_defaultvolume">სტანდარტული ხმა</item>
+      <item name="flv_hiddengui">დაფარული ინტერფეისი</item>
+      <item name="flv_autostart">ავტო ხმა</item>
+      <item name="flv_loop">გამეორება</item>
+      <item name="flv_showscalemodes">მაშტაბის რეჟიმი</item>
+      <item name="flv_smoothvideo">თანავარი ვიდეო</item>
+      <item name="flv_jscallback">JS მხარდაჭერა</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">დოკუმენტის მახასიათებლები</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">დოკუმენტის მახასიათებლები</item>
+      <item name="meta_tab">საერთო</item>
+      <item name="appearance_tab">ჩვენება</item>
+      <item name="advanced_tab">დამატებით</item>
+      <item name="meta_props">ინფორმაციის მიზანი</item>
+      <item name="langprops">ენა და კოდირება</item>
+      <item name="meta_title">სათაური</item>
+      <item name="meta_keywords">საკვანძო სიტყვები</item>
+      <item name="meta_description">არწერა</item>
+      <item name="meta_robots">ნამუშევრები</item>
+      <item name="doctypes">ტიპი</item>
+      <item name="langcode">ენის კოდი</item>
+      <item name="langdir">ტექსტის მიმართულება</item>
+      <item name="ltr">მარცსნიდან მარჯვნივ</item>
+      <item name="rtl">მარჯვნიდან მარცხნივ</item>
+      <item name="xml_pi">XML განცხადება</item>
+      <item name="encoding">კოდირება</item>
+      <item name="appearance_bgprops">ფონის მახასიათებლები</item>
+      <item name="appearance_marginprops">დაშორებები</item>
+      <item name="appearance_linkprops">ბმულების ფერი</item>
+      <item name="appearance_textprops">ტექსტის მაასიათებლები</item>
+      <item name="bgcolor">ფონის ფერი</item>
+      <item name="bgimage">ფონური გამოსახულება</item>
+      <item name="left_margin">დაშორება მარცსნიდან</item>
+      <item name="right_margin">დაშორება მარჯვნიდან</item>
+      <item name="top_margin">დაშორება ზემოდან</item>
+      <item name="bottom_margin">დაშორება ქვემოდან</item>
+      <item name="text_color">ტექსტის ფერი</item>
+      <item name="font_size">შრიფტის ზომა</item>
+      <item name="font_face">შრიფტი</item>
+      <item name="link_color">ბმულის ფერი</item>
+      <item name="hover_color">ბმულის ფერი გააქტიურებისას</item>
+      <item name="visited_color">გააქტიურებული ბმულის ფერი</item>
+      <item name="active_color">აქტიური ბმულის ფერი</item>
+      <item name="textcolor">ფერი</item>
+      <item name="fontsize">შრიფტის ზომა</item>
+      <item name="fontface">შრიფტის კატეგორია</item>
+      <item name="meta_index_follow">Index and follow the links</item>
+      <item name="meta_index_nofollow">Index and don't follow the links</item>
+      <item name="meta_noindex_follow">Do not index but follow the links</item>
+      <item name="meta_noindex_nofollow">Do not index and don \ 't follow the links</item>
+      <item name="appearance_style">სტილების მაჩვენებლები და სია</item>
+      <item name="stylesheet">სტილების სია</item>
+      <item name="style">სტილი</item>
+      <item name="author">ავტორი</item>
+      <item name="copyright">კოპირაიტი</item>
+      <item name="add">ახალი ელემენტის დამატება</item>
+      <item name="remove">მონიშნული ელემენტის წაშლა</item>
+      <item name="moveup">ელემენტის ზემოთ გადაადგილება</item>
+      <item name="movedown">ელემენტის ქვემოთ გადაადგილება</item>
+      <item name="head_elements">ელემენტი Header</item>
+      <item name="info">ინფორმაცია</item>
+      <item name="add_title">ელემენტი Title</item>
+      <item name="add_meta">ელემენტი Meta</item>
+      <item name="add_script">ელემენტი Script</item>
+      <item name="add_style">ელემენტი Style</item>
+      <item name="add_link">ელემენტი Link</item>
+      <item name="add_base">ელემენტი Base</item>
+      <item name="add_comment">კომენტიარი</item>
+      <item name="title_element">ელემენტი Title</item>
+      <item name="script_element">ელემენტი Script</item>
+      <item name="style_element">ელემენტი Style</item>
+      <item name="base_element">ელემენტი Base</item>
+      <item name="link_element">ელემენტი Link</item>
+      <item name="meta_element">ელემენტი Meta</item>
+      <item name="comment_element">კომენტიარი</item>
+      <item name="src">Src</item>
+      <item name="language">ენა</item>
+      <item name="href">ბმული</item>
+      <item name="target">მიზანი</item>
+      <item name="type">ტიპი</item>
+      <item name="charset">კოდირება</item>
+      <item name="defer">გადატანა</item>
+      <item name="media">მედია</item>
+      <item name="properties">პარამეტრები</item>
+      <item name="name">სახელწოდება</item>
+      <item name="value">მაჩვენებელი</item>
+      <item name="content">შინაარსი</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">ენის ბმული</item>
+      <item name="general_props">საერთო</item>
+      <item name="advanced_props">დამატებით</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">შაბლონის გამოყენება</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">შაბლონები</item>
+      <item name="label">შაბლონი</item>
+      <item name="desc_label">აღწერა</item>
+      <item name="desc">შაბლონის ჩასმა</item>
+      <item name="select">აირციეთ შაბლონი</item>
+      <item name="preview">დათვალირება</item>
+      <item name="warning">ყურადღება: შაბლონის არჩევამ შეიძლება გამოიწვიოს მონაცემების დაკარგვა/</item>
+      <item name="mdate_format">%Y.%m.%d %H:%M:%S</item>
+      <item name="cdate_format">%Y.%m.%d %H:%M:%S</item>
+      <item name="months_long">იანვარი,თებერვალი,მარტი,აპრილი,მაისი,ივნისი,ივლისი,აგვისტო,სექტემბერი,ოქტომბერი,ნოემბერი,დეკემბერი</item>
+      <item name="months_short">იან,თებ,მარტ,აპრ,მაისი,ივნ,ივლ,აგვ,სექ,ოქტ,ნოემ,დეკ</item>
+      <item name="day_long">კვირა,ორშაბათი,სამშაბათი,ოთხშაბათი,ხუთშაბათი,პარასკევი,შაბათი,კვირა</item>
+      <item name="day_short">კვ,ორშ,სამშ,ოთხშ,ხუთ,პარ,შაბ,კვ</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">ყველა ნიშანი</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">მართლწერა</item>
+      <item name="menu">Свойства проверки правописания</item>
+      <item name="ignore_word">Пропустить</item>
+      <item name="ignore_words">Пропустить все</item>
+      <item name="langs">Языки</item>
+      <item name="wait">Пожалуйста, подождите...</item>
+      <item name="sug">Варианты</item>
+      <item name="no_sug">Нет вариантов</item>
+      <item name="no_mpell">Ошибок не обнаружено.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">გვერდის გამყოფის დამატება</item>
+    </group>
+    <group target="advlist">
+      <item name="types">სიმბოლოები</item>
+      <item name="def">სტანდარტული</item>
+      <item name="lower_alpha">Строчные латинские буквы</item>
+      <item name="lower_greek">Строчные греческие буквы</item>
+      <item name="lower_roman">Строчные римские цифры</item>
+      <item name="upper_alpha">Заглавные латинские буквы</item>
+      <item name="upper_roman">Заглавные римские цифры</item>
+      <item name="circle">წრეები</item>
+      <item name="disc">წრეწირები</item>
+      <item name="square">კვადრატები</item>
+    </group>
+  </language>
+</language-pack>

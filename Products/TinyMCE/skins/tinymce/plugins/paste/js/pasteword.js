@@ -5,8 +5,9 @@ var PasteWordDialog = {
 		var ed = tinyMCEPopup.editor, el = document.getElementById('iframecontainer'), ifr, doc, css, cssHTML = '';
 
 		// Create iframe
-		el.innerHTML = '<iframe id="iframe" src="javascript:\'\';" class="input-border" frameBorder="0"></iframe>';
-		ifr = document.getElementById('iframe');
+        el.innerHTML = '<iframe id="iframe" src="javascript:\'\';" class="input-border" frameBorder="0"></iframe>';
+
+        ifr = document.getElementById('iframe');
 		doc = ifr.contentWindow.document;
 
 		// Force absolute CSS urls
@@ -33,7 +34,8 @@ var PasteWordDialog = {
 
 		tinyMCEPopup.editor.execCommand('mceInsertClipboardContent', false, {content : h, wordContent : true});
 		tinyMCEPopup.close();
-	}
+	},
+
 };
 
 tinyMCEPopup.onInit.add(PasteWordDialog.init, PasteWordDialog);

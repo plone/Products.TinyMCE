@@ -1,6 +1,3 @@
-textarea.mce_editable:load {
-    action-client: init-tinymce;
-}
 .kssattr-macro-rich-field-view form.inlineForm input[name=kss-save]:click {
     action-client: save-tinymce;
 }

@@ -1,0 +1,925 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>Will Abson</author>
+    <version major="1" minor="5" releasedate="2010-04-16" />
+    <description>This is the Welsh language pack for TinyMCE.</description>
+  </header>
+  <language code="cy" title="Welsh" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">Ydych chi eisiau defnyddio'r modd WYSIWYG ar gyfer y textarea yma?</item>
+      <item name="apply">Gosod</item>
+      <item name="insert">Mewnosod</item>
+      <item name="update">Diweddaru</item>
+      <item name="cancel">Diddymu</item>
+      <item name="close">Cau</item>
+      <item name="browse">Pori</item>
+      <item name="class_name">Dosbarth</item>
+      <item name="not_set">-- Nid wedi osod --</item>
+      <item name="clipboard_msg">Nid yw Copïo/Torri/Gludo ar gael mewn Mozilla a Firefox.\nYdych chi eisiau mwy o wybodaeth am y mater yma?</item>
+      <item name="clipboard_no_support">Dim wedi'i gynnal gan eich porwr, defnyddiwch Currently not supported by your browser, use keyboard shortcuts instead.</item>
+      <item name="popup_blocked">Rydym wedi sylwi fod eich popup-blocker wedi analluogi ffenest sy'n darparu swyddogaeth cymhwysiad. Bydd rhaid i chi analluogi blocio popups ar gyfer y safle yma i ddefnyddio'r offeryn yma.</item>
+      <item name="invalid_data">Gwall: Gwerthau allilys wedi mewnbynnu, mae'r gwerthau yma wedi eu marcio mewn coch.</item>
+      <item name="more_colors">Mwy o liwiau</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">Trwm (Ctrl+B)</item>
+      <item name="italic_desc">Italig (Ctrl+I)</item>
+      <item name="underline_desc">Tanlinellu (Ctrl+U)</item>
+      <item name="striketrough_desc">Taro drwodd</item>
+      <item name="bullist_desc">Rhestr didrenus</item>
+      <item name="numlist_desc">Rhestr trenus</item>
+      <item name="undo_desc">Dadwneud (Ctrl+Z)</item>
+      <item name="redo_desc">Ailwneud (Ctrl+Y)</item>
+      <item name="cleanup_desc">Glanhau côd anhrefnus</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">Ardulliau</item>
+      <item name="font_size">Maint Ffont</item>
+      <item name="fontdefault">Teulu ffont</item>
+      <item name="block">Fformat</item>
+      <item name="paragraph">Paragraff</item>
+      <item name="div">Div</item>
+      <item name="address">Cyfeririad</item>
+      <item name="pre">Rhagffomatiwyd</item>
+      <item name="h1">Pennawd 1</item>
+      <item name="h2">Pennawd 2</item>
+      <item name="h3">Pennawd 3</item>
+      <item name="h4">Pennawd 4</item>
+      <item name="h5">Pennawd 5</item>
+      <item name="h6">Pennawd 6</item>
+      <item name="blockquote">Dyfyniad bloc</item>
+      <item name="code">Côd</item>
+      <item name="samp">Sampl côd</item>
+      <item name="dt">Term diffiniad </item>
+      <item name="dd">Disgrifiad diffiniad</item>
+      <!-- Buttons -->
+      <item name="bold_desc">Trwm (Ctrl+B)</item>
+      <item name="italic_desc">Italig (Ctrl+I)</item>
+      <item name="underline_desc">Tanlinellu (Ctrl+U)</item>
+      <item name="striketrough_desc">Taro drwodd</item>
+      <item name="justifyleft_desc">Alinio i'r chwith</item>
+      <item name="justifycenter_desc">Alinio i'r canol</item>
+      <item name="justifyright_desc">Alinio i'r dde</item>
+      <item name="justifyfull_desc">Alinio llawn</item>
+      <item name="bullist_desc">Rhestr didrenus</item>
+      <item name="numlist_desc">Rhestr trenus</item>
+      <item name="outdent_desc">Alloli</item>
+      <item name="indent_desc">Mewnoli</item>
+      <item name="undo_desc">Dadwneud (Ctrl+Z)</item>
+      <item name="redo_desc">Ailwneud (Ctrl+Y)</item>
+      <item name="link_desc">Mewnosod/golygu cyswllt</item>
+      <item name="unlink_desc">Datgysylltu</item>
+      <item name="image_desc">Mewnosod/golygu delwedd</item>
+      <item name="cleanup_desc">Glanhau côd anhrefnus</item>
+      <item name="code_desc">Golygu Ffynhonell HTML</item>
+      <item name="sub_desc">Isysgrif</item>
+      <item name="sup_desc">Uwchysgrif</item>
+      <item name="hr_desc">Mewnosod mesurydd llorweddol</item>
+      <item name="removeformat_desc">Tynnu fformatio</item>
+      <item name="custom1_desc">Eich disgrifiad addasiedig yma</item>
+      <item name="forecolor_desc">Dewis lliw testun</item>
+      <item name="backcolor_desc">Dewis lliw cefndir</item>
+      <item name="charmap_desc">Mewnosod nôd addasiedig</item>
+      <item name="visualaid_desc">Toglu llinellau cyfeirydd/elfennau anweledig</item>
+      <item name="anchor_desc">Mewnosod/golygu angor</item>
+      <item name="cut_desc">Torri</item>
+      <item name="copy_desc">Copïo</item>
+      <item name="paste_desc">Gludo</item>
+      <item name="image_props_desc">Priodweddau delwedd</item>
+      <item name="newdocument_desc">Dogfen newydd</item>
+      <item name="help_desc">Cymorth</item>
+      <item name="blockquote_desc">Dyfyniad bloc</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">Nid yw Copïo/Torri/Gludo ar gael mewn Mozilla a Firefox.
+Ydych chi eisiau mwy o wybodaeth am y mater yma?</item>
+      <item name="path">Llwybr</item>
+      <item name="newdocument">A ydych chi'n siŵr eich bod eisiau clirio'r holl cynnwys?</item>
+      <item name="toolbar_focus">Neidio i botymau offeryn - Alt+Q, Neidio i olygydd - Alt-Z, Neidio i lwybr elfen - Alt-X</item>
+      <item name="more_colors">Mwy o liwiau</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">Ynglyn TinyMCE</item>
+      <item name="about_general">Ynglyn</item>
+      <item name="about_help">Cymorth</item>
+      <item name="about_license">Twyddedd</item>
+      <item name="about_plugins">Ategion</item>
+      <item name="about_plugin">Ategyn</item>
+      <item name="about_author">Awdur</item>
+      <item name="about_version">Fersion</item>
+      <item name="about_loaded">Ategion wedi llwytho</item>
+      <!-- Anchor -->
+      <item name="anchor_title">Mewnosod/golygu angor</item>
+      <item name="anchor_name">Enw angor</item>
+      <!-- Source -->
+      <item name="code_title">Golygydd Ffynhonell HTML</item>
+      <item name="code_wordwrap">Amlapio geiriau</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">Dewis lliw</item>
+      <item name="colorpicker_picker_tab">Dweisydd</item>
+      <item name="colorpicker_picker_title">Dewisydd lliw</item>
+      <item name="colorpicker_palette_tab">Palet</item>
+      <item name="colorpicker_palette_title">Lliwiau palet</item>
+      <item name="colorpicker_named_tab">Wedi'u enwi</item>
+      <item name="colorpicker_named_title">Lliwiau wedi'u enwi</item>
+      <item name="colorpicker_color">Lliw:</item>
+      <item name="colorpicker_name">Enw:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">Dewis nôd addasiedig</item>
+      <!-- Image -->
+      <item name="image_title">Mewnosod/golygu delwedd</item>
+      <item name="image_src">URL delwedd</item>
+      <item name="image_alt">disgrifiad delwedd</item>
+      <item name="image_list">Rhestr delweddau</item>
+      <item name="image_border">Border</item>
+      <item name="image_dimensions">Dimensiynau</item>
+      <item name="image_vspace">Gofod fertigol</item>
+      <item name="image_hspace">Gofod llorweddol</item>
+      <item name="image_align">Aliniad</item>
+      <item name="image_align_baseline">Gwaelodlin</item>
+      <item name="image_align_top">Pen</item>
+      <item name="image_align_middle">Canol</item>
+      <item name="image_align_bottom">Gwaelod</item>
+      <item name="image_align_texttop">Pen testun</item>
+      <item name="image_align_textbottom">Gwaelod testun</item>
+      <item name="image_align_left">Chwith</item>
+      <item name="image_align_right">De</item>
+      <!-- Link -->
+      <item name="link_title">Mewnosod/golygu cyswllt</item>
+      <item name="link_url">URL cyswllt</item>
+      <item name="link_target">Targed</item>
+      <item name="link_target_same">Agor cyswllt yn yr un ffenst</item>
+      <item name="link_target_blank">Agor cyswllt mewn ffenst newydd</item>
+      <item name="link_titlefield">Teitl</item>
+      <item name="link_is_email">Mae'r URL a rydych wedi rhoi yn edrych fel cyferiad e-bost, ydych chi eisiau ychwanegu'r rhagddodiad mailto: sydd angen?</item>
+      <item name="link_is_external">Mae'r URL a rydych wedi rhoi yn edrych fel cyswllt allannol, ydych chi eisiau ychwanegu'r rhagddodiad http:// sydd angen?</item>
+      <item name="link_list">Rhestr cysylltau</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">Aliniad</item>
+      <item name="left">Chwith</item>
+      <item name="center">Canol</item>
+      <item name="right">De</item>
+      <item name="full">Llawn</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%Y-%m-%d</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">Mewnosod dyddiad</item>
+      <item name="inserttime_desc">Mewnosod amser</item>
+      <item name="months_long">Ionawr,Chwefror,Mawrth,Ebrill,Mai,Mehefin,Goffennaf,Awst,Medi,Hydref,Tachwedd,Rhagfyr</item>
+      <item name="months_short">Ion,Chw,Maw,Ebr,Mai,Meh,Gor,Aws,Med,Hyd,Tac,Rha</item>
+      <item name="day_long">Sul,Llun,Mawrth,Mercher,Iau,Gwener,Sadwrn,Sul</item>
+      <item name="day_short">Sul,Llu,Maw,Mer,Iau,Gwe,Sad,Sul</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">Argraffu</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">Rhagolygu</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">Cyfeiriad chwith i'r dde</item>
+      <item name="rtl_desc">Cyfeiriad de i'r chwith</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">Mewnosod haen newydd</item>
+      <item name="forward_desc">Symud ymlaen</item>
+      <item name="backward_desc">Symud nôl</item>
+      <item name="absolute_desc">Toglu lleoli absoliwt</item>
+      <item name="content">Haen newydd...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">Cadw</item>
+      <item name="cancel_desc">Cadw pob newidiad</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">Mewnosod nôd bwlch do-doriad</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">Rhedeg gwirio sillafu</item>
+      <item name="download">ieSpell dim wedi'i canfod. A ydych eisiau ei gosod rwan?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">Mesurydd llorweddol</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">Lled</item>
+      <item name="size">Uchder</item>
+      <item name="noshade">Dim cysgod</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">Emosiwn</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">Mewnosod emosiwn</item>
+      <item name="desc">Emosiynau</item>
+      <item name="cool">Iawn</item>
+      <item name="cry">Crio</item>
+      <item name="embarassed">Rhwystrus</item>
+      <item name="foot_in_mouth">Troed yn ceg</item>
+      <item name="frown">Cuchio</item>
+      <item name="innocent">Dieuog</item>
+      <item name="kiss">Sws</item>
+      <item name="laughing">Chwerthin</item>
+      <item name="money_mouth">Ceg arian</item>
+      <item name="sealed">Wedi'i selio</item>
+      <item name="smile">Gwên</item>
+      <item name="surprised">Wedi synnu</item>
+      <item name="tongue_out">Tafod allan</item>
+      <item name="undecided">Heb penderfynu</item>
+      <item name="wink">Wincio</item>
+      <item name="yell">Gweiddi</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">Canfod</item>
+      <item name="replace_desc">Canfod/Amnewid</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">Canfod eto</item>
+      <item name="notfound">Mae'r chwiliad wedi cwblhau. Methu canfod y llinyn chwiliad.</item>
+      <item name="search_title">Canfod</item>
+      <item name="replace_title">Canfod/Amnewid</item>
+      <item name="allreplaced">Amnewidwyd pob digwyddiad o'r llinyn chwiliad.</item>
+      <item name="findwhat">Canfod beth</item>
+      <item name="replacewith">Adnewid gyda</item>
+      <item name="direction">Cyfeiriad</item>
+      <item name="up">I fyny</item>
+      <item name="down">I lawr</item>
+      <item name="mcase">Cydweddu priflythrennedd</item>
+      <item name="findnext">Canfod nesaf</item>
+      <item name="replace">Amnewid</item>
+      <item name="replaceall">Amnewid pob un</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">Mewnosod/golygu delwedd</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">Cyffredinol</item>
+      <item name="tab_appearance">Ymddangosiad</item>
+      <item name="tab_advanced">Uwch</item>
+      <item name="general">Cyffredinol</item>
+      <item name="title">Teitl</item>
+      <item name="preview">Rhagolwg</item>
+      <item name="constrain_proportions">Cynfyngu cyfraneddau</item>
+      <item name="langdir">Cyfeiriad iaith</item>
+      <item name="langcode">Cod iaith</item>
+      <item name="long_desc">Cyswllt disgrifiad hir</item>
+      <item name="style">Arddull</item>
+      <item name="classes">Dosbarthiadau</item>
+      <item name="ltr">Chwith i'r dde</item>
+      <item name="rtl">De i'r chwith</item>
+      <item name="id">Id</item>
+      <item name="map">Map delweddau</item>
+      <item name="swap_image">Cyfnewid delwedd</item>
+      <item name="alt_image">Delwedd arall</item>
+      <item name="mouseover">ar gyfer llygoden drosti</item>
+      <item name="mouseout">ar gyfer llygoden allan</item>
+      <item name="misc">Amrywiol</item>
+      <item name="example_img">Delwedd rhagolygiad ymddangosiad</item>
+      <item name="missing_alt">A ydych chi'n siŵr eich bod eisiau parhau heb cynnwys Disgrifiad Delwedd? Hebddo fo ni fydd y delwedd yn hygyrchol i ddefnyddwyr gyda anableddau, neu sy'n defnyddio porwr testun, neu sy'n pori'r we gyda delweddau wedi'u diffodd.</item>
+      <item name="dialog_title">Mewnosod/golygu delwedd</item>
+      <item name="src">URL delwedd</item>
+      <item name="alt">Disgrifiad delwedd</item>
+      <item name="list">Rhestr delweddau</item>
+      <item name="border">Border</item>
+      <item name="dimensions">Dimensiynau</item>
+      <item name="vspace">Gofod fertigol</item>
+      <item name="hspace">Gofod llorweddol</item>
+      <item name="align">Aliniad</item>
+      <item name="align_baseline">Gwaelodlin</item>
+      <item name="align_top">Pen</item>
+      <item name="align_middle">Canol</item>
+      <item name="align_bottom">Gwaelod</item>
+      <item name="align_texttop">Pen testun</item>
+      <item name="align_textbottom">Gwaelod testun</item>
+      <item name="align_left">Chwith</item>
+      <item name="align_right">De</item>
+      <item name="image_list">Rhestr delweddau</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">Mewnosod/Golygu cyswllt</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">Mewnosod/Golygu cyswllt</item>
+      <item name="url">URL cyswllt</item>
+      <item name="target">Targed</item>
+      <item name="titlefield">Teitl</item>
+      <item name="is_email">Mae'r URL a rydych wedi rhoi yn edrych fel cyferiad e-bost, ydych chi eisiau ychwanegu'r rhagddodiad mailto: sydd angen?</item>
+      <item name="is_external">Mae'r URL a rydych wedi rhoi yn edrych fel cyswllt allannol, ydych chi eisiau ychwanegu'r rhagddodiad http:// sydd angen?</item>
+      <item name="list">Rhestr cysylltau</item>
+      <item name="general_tab">Cyffredinol</item>
+      <item name="popup_tab">Naidlen</item>
+      <item name="events_tab">Digwyddiadau</item>
+      <item name="advanced_tab">Uwch</item>
+      <item name="general_props">Priodweddau cyfferdinol</item>
+      <item name="popup_props">Priodweddau cyffredinol</item>
+      <item name="event_props">Digwyddiadau</item>
+      <item name="advanced_props">Priodweddau uwch</item>
+      <item name="popup_opts">Dewisiadau</item>
+      <item name="anchor_names">Angorau</item>
+      <item name="target_same">Agos mewn y ffenest / ffrâm yma</item>
+      <item name="target_parent">Agos mewn y ffenest / ffrâm rhiant</item>
+      <item name="target_top">Agor mewn pen ffrâm (amnewid pob ffrâm)</item>
+      <item name="target_blank">Agor mewn ffenest newydd</item>
+      <item name="popup">Naidlen JavaScript</item>
+      <item name="popup_url">URL naidlen</item>
+      <item name="popup_name">Enw ffenest</item>
+      <item name="popup_return">Mewnosod 'return false'</item>
+      <item name="popup_scrollbars">Dangos bar sgrolio</item>
+      <item name="popup_statusbar">Dangor bar statws</item>
+      <item name="popup_toolbar">Dangos barrau offer</item>
+      <item name="popup_menubar">Dangos bar dewislen</item>
+      <item name="popup_location">Dangos bar lleoliad</item>
+      <item name="popup_resizable">Gwneud ffenest yn ailfeintiol</item>
+      <item name="popup_dependent">Dibynnol (dim ond Mozilla/Firefox)</item>
+      <item name="popup_size">Maint</item>
+      <item name="popup_position">Safle (X/Y)</item>
+      <item name="id">Id</item>
+      <item name="style">Arddull</item>
+      <item name="classes">Dosbarthiadau</item>
+      <item name="target_name">Enw targed</item>
+      <item name="langdir">Cyfeiriad iaith</item>
+      <item name="target_langcode">Iaith targed</item>
+      <item name="langcode">Cod iaith</item>
+      <item name="encoding">Amgodiad nodau targed</item>
+      <item name="mime">Math MIME targed</item>
+      <item name="rel">Perthynas y tudalen i'r targed</item>
+      <item name="rev">Perthynas y targed i'r tudalen</item>
+      <item name="tabindex">Trefn tabio</item>
+      <item name="accesskey">Bysell mynediad</item>
+      <item name="ltr">Chwith i'r dde</item>
+      <item name="rtl">De i'r chwith</item>
+      <item name="link_list">Rhestr cysylltau</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">Dyfyniad</item>
+      <item name="abbr_desc">Talfyriad</item>
+      <item name="acronym_desc">Acronym</item>
+      <item name="del_desc">Dilead</item>
+      <item name="ins_desc">Mewnosodiad</item>
+      <item name="attribs_desc">Mewnosod/Golygu Priodoleddau</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">Teitl</item>
+      <item name="attribute_label_id">ID</item>
+      <item name="attribute_label_class">Dosbarth</item>
+      <item name="attribute_label_style">Arddull</item>
+      <item name="attribute_label_cite">Dyfynnu</item>
+      <item name="attribute_label_datetime">Dyddiad/Amser</item>
+      <item name="attribute_label_langdir">Cyfeiriad Testun</item>
+      <item name="attribute_option_ltr">Chwith i'r dde</item>
+      <item name="attribute_option_rtl">De i'r chwith</item>
+      <item name="attribute_label_langcode">Iaith</item>
+      <item name="attribute_label_tabindex">Trefn tabio</item>
+      <item name="attribute_label_accesskey">Bysell mynediad</item>
+      <item name="attribute_events_tab">Digwyddiadau</item>
+      <item name="attribute_attrib_tab">Priodoleddau</item>
+      <item name="general_tab">Cyffredinol</item>
+      <item name="attrib_tab">Priodoleddau</item>
+      <item name="events_tab">Digwyddiadau</item>
+      <item name="fieldset_general_tab">Gosodiadau Cyfredinol</item>
+      <item name="fieldset_attrib_tab">Priodoleddau Elfen</item>
+      <item name="fieldset_events_tab">Digwyddiadau Elfen</item>
+      <item name="title_ins_element">Elfen Mewnosodiad</item>
+      <item name="title_del_element">Elfen Dilead</item>
+      <item name="title_acronym_element">Elfen Acronym</item>
+      <item name="title_abbr_element">Elfen Talfyriad</item>
+      <item name="title_cite_element">Elfen Dyfyniad</item>
+      <item name="remove">Tynnu</item>
+      <item name="insert_date">Mewnosod dyddiad/amser presennol</item>
+      <item name="option_ltr">Chwith i'r dde</item>
+      <item name="option_rtl">De i'r chwith</item>
+      <item name="attribs_title">Mewnosod/Golygu Priodoleddau</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">Golygu Arddull CSS</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">Golygu Arddull CSS</item>
+      <item name="apply">Gosod</item>
+      <item name="text_tab">Testun</item>
+      <item name="background_tab">Cefndir</item>
+      <item name="block_tab">Bloc</item>
+      <item name="box_tab">Blwch</item>
+      <item name="border_tab">Border</item>
+      <item name="list_tab">Rhestr</item>
+      <item name="positioning_tab">Lleoli</item>
+      <item name="text_props">Testun</item>
+      <item name="text_font">Ffont</item>
+      <item name="text_size">Maint</item>
+      <item name="text_weight">Pwysau</item>
+      <item name="text_style">Arddull</item>
+      <item name="text_variant">Amrywiad</item>
+      <item name="text_lineheight">Uchder llinell</item>
+      <item name="text_case">Llythrennau bach/mawr</item>
+      <item name="text_color">Lliw</item>
+      <item name="text_decoration">Addurniadau</item>
+      <item name="text_overline">Llinell drosodd</item>
+      <item name="text_underline">Llinell o dan</item>
+      <item name="text_striketrough">Taro drwodd</item>
+      <item name="text_blink">Blincio</item>
+      <item name="text_none">Dim un</item>
+      <item name="background_color">Lliw cefndir</item>
+      <item name="background_image">Delwedd cefndir</item>
+      <item name="background_repeat">Ailadrodd</item>
+      <item name="background_attachment">Atodiad</item>
+      <item name="background_hpos">Lleoliad llorweddol</item>
+      <item name="background_vpos">Lleoliad fertigol</item>
+      <item name="block_wordspacing">Bylchiad gair</item>
+      <item name="block_letterspacing">Bylchiad lythyren</item>
+      <item name="block_vertical_alignment">Aliniad fertigol</item>
+      <item name="block_text_align">Alinio testun</item>
+      <item name="block_text_indent">Mewnoli tetun</item>
+      <item name="block_whitespace">Whitespace</item>
+      <item name="block_display">Arddangos</item>
+      <item name="box_width">Lled</item>
+      <item name="box_height">Uchder</item>
+      <item name="box_float">Arnofio</item>
+      <item name="box_clear">Clirio</item>
+      <item name="padding">Padio</item>
+      <item name="same">Yr un ar gyfer pob un</item>
+      <item name="top">Pen</item>
+      <item name="right">De</item>
+      <item name="bottom">Gwaelod</item>
+      <item name="left">Chwith</item>
+      <item name="margin">Ymyl</item>
+      <item name="style">Arddull</item>
+      <item name="width">Lled</item>
+      <item name="height">Uchder</item>
+      <item name="color">Lliw</item>
+      <item name="list_type">Math</item>
+      <item name="bullet_image">Delwedd bwled</item>
+      <item name="position">Lleoliad</item>
+      <item name="positioning_type">Math</item>
+      <item name="visibility">Gwelededd</item>
+      <item name="zindex">Mynegai-Z</item>
+      <item name="overflow">Gorlif</item>
+      <item name="placement">Gosodiad</item>
+      <item name="clip">Clip</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">Gludo fel Testun Plaen</item>
+      <item name="paste_word_desc">Gludo o Word</item>
+      <item name="selectall_desc">Dewis Pobpeth</item>
+      <item name="plaintext_mode_sticky">Gludo rwan mewn modd testun plaen. Cliciwch eto i doglu nôl i fodd gludo normal. Byddwch yn cael eich dychwelyd i fodd gludo normal ar ôl gludo rhywbeth.</item>
+      <item name="plaintext_mode">Gludo rwan mewn modd testun plaen. Cliciwch eto i doglu nôl i fodd gludo normal.</item>
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">Defnyddiwch CTRL+V ar eich bysellfwrdd i ludo'r testun i fewn i'r ffenest.</item>
+      <item name="text_linebreaks">Cadw toriadau llinell</item>
+      <item name="word_title">Defnyddiwch CTRL+V ar eich bysellfwrdd i ludo'r testun i fewn i'r ffenest.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">Mewnosod tabl newydd</item>
+      <item name="row_before_desc">Mewnosod rhes cyn</item>
+      <item name="row_after_desc">Mewnosod rhes ar ôl</item>
+      <item name="delete_row_desc">Dileu rhes</item>
+      <item name="col_before_desc">Mewnosod colofn cyn</item>
+      <item name="col_after_desc">Mewnosod colofn ar ôl</item>
+      <item name="delete_col_desc">Tynnu colofn</item>
+      <item name="split_cells_desc">Hollti celloedd tabl cyfuniedig</item>
+      <item name="merge_cells_desc">Cyfuno celloedd tabl</item>
+      <item name="row_desc">Priodweddau rhes tabl</item>
+      <item name="cell_desc">Priodweddau cell tabl</item>
+      <item name="props_desc">Priodweddau tabl</item>
+      <item name="paste_row_before_desc">Gludo rhes tabl cyn</item>
+      <item name="paste_row_after_desc">Gludo rhes tabl ar ôl</item>
+      <item name="cut_row_desc">Torri rhes tabl</item>
+      <item name="copy_row_desc">Copïo rhes tabl</item>
+      <item name="del">Dileu tabl</item>
+      <item name="row">Rhes</item>
+      <item name="col">Colofn</item>
+      <item name="cell">Cell</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width"></item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">Cyffredinol</item>
+      <item name="advanced_tab">Uwch</item>
+      <item name="general_props">Priodweddau cyffredinol</item>
+      <item name="advanced_props">Priodweddau uwch</item>
+      <item name="rowtype">Rhes mewn rhan tabl</item>
+      <item name="title">Mewnosod/Golygu tabl</item>
+      <item name="width">Lled</item>
+      <item name="height">Uchder</item>
+      <item name="cols">Colofnau</item>
+      <item name="rows">Rhesi</item>
+      <item name="cellspacing">Bylchiad celloedd</item>
+      <item name="cellpadding">Padio celloedd</item>
+      <item name="border">Border</item>
+      <item name="align">Aliniad</item>
+      <item name="align_default">Rhagosodedig</item>
+      <item name="align_left">Chwith</item>
+      <item name="align_right">De</item>
+      <item name="align_middle">Canol</item>
+      <item name="row_title">Priodweddau rhes tabl</item>
+      <item name="cell_title">Priodweddau cell tabl</item>
+      <item name="cell_type">Math cell</item>
+      <item name="valign">Aliniad ferigol</item>
+      <item name="align_top">Pen</item>
+      <item name="align_bottom">Gwaelod</item>
+      <item name="bordercolor">Lliw border</item>
+      <item name="bgcolor">Lliw cefndir</item>
+      <item name="merge_cells_title">Cyfuno celloedd tabl</item>
+      <item name="id">Id</item>
+      <item name="style">Arddull</item>
+      <item name="langdir">Cyfeiriad iaith</item>
+      <item name="langcode">Cod iaith</item>
+      <item name="mime">Math MIME targed</item>
+      <item name="ltr">Chwith i'r dde</item>
+      <item name="rtl">De i'r chwith</item>
+      <item name="bgimage">Delwedd cefndir</item>
+      <item name="summary">Crynodeb</item>
+      <item name="td">Data</item>
+      <item name="th">Pennyn</item>
+      <item name="cell_cell">Diweddaru cell cyfredol</item>
+      <item name="cell_row">Diweddaru pob cell yn y rhes</item>
+      <item name="cell_all">Diweddaru pob cell yn y tabl</item>
+      <item name="row_row">Diweddaru rhes cyfredol</item>
+      <item name="row_odd">Diweddaru rhesi odrif yn y tabl</item>
+      <item name="row_even">Diweddaru rhesi eilrif yn y tabl</item>
+      <item name="row_all">Diweddaru pob rhes yn y tabl</item>
+      <item name="thead">Pen Tabl</item>
+      <item name="tbody">Corff Tabl</item>
+      <item name="tfoot">Troed Tabl</item>
+      <item name="scope">Cwmpas</item>
+      <item name="rowgroup">Grŵp Rhesi</item>
+      <item name="colgroup">Grŵp Colofnau</item>
+      <item name="col_limit">Rydych wedi mynd tu twnt i'r nifer uchafswm {$cols} o golofnau.</item>
+      <item name="row_limit">Rydych wedi mynd tu twnt i'r nifer uchafswm {$rows} o rhesi.</item>
+      <item name="cell_limit">Rydych wedi mynd tu twnt i'r nifer uchafswm {$cells} o celloedd.</item>
+      <item name="missing_scope">A ydych chi'n siŵr eich bod eisiau parhau heb penodi cwmpas i'r cell pennyn yma? Hebddo fo, efallai fydd o'n anodd i rhai ddefnyddwyr gyda anableddau i ddeallt y cynnwys neu'r data yn y tabl.</item>
+      <item name="caption">Egluryn tabl</item>
+      <item name="frame">Ffrâm</item>
+      <item name="frame_none">none</item>
+      <item name="frame_groups">groups</item>
+      <item name="frame_rows">rows</item>
+      <item name="frame_cols">cols</item>
+      <item name="frame_all">all</item>
+      <item name="rules">Rheolau</item>
+      <item name="rules_void">void</item>
+      <item name="rules_above">above</item>
+      <item name="rules_below">o dan</item>
+      <item name="rules_hsides">hsides</item>
+      <item name="rules_lhs">lhs</item>
+      <item name="rules_rhs">rhs</item>
+      <item name="rules_vsides">vsides</item>
+      <item name="rules_box">box</item>
+      <item name="rules_border">border</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">Bydd eich newidiadau yn cael eu colli os byddwch yn llywio i ffwrdd o'r tudalen yma.</item>
+      <item name="restore_content">Adfer cynnwys awto-cadwedig.</item>
+      <item name="warning_message">Os adferwch chi'r cynnwys cadwedig, byddwch yn colli'r holl cynnwys sydd yn bresennol yn y golygydd.\n\nA ydych chi'n siŵr eich bod eisiau adfer y cynnwys cadwedig?.</item>
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">Toglu modd sgrin llawn</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">Mewnosod / golygu cyfrwng planedig</item>
+      <item name="edit">Golygu cyfrwng planedig</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">Mewnosod / golygu cyfrwng planedig</item>
+      <item name="general">Cyffredinol</item>
+      <item name="advanced">Uwch</item>
+      <item name="file">Ffeil/URL</item>
+      <item name="list">Rhestr</item>
+      <item name="size">Dimensiynau</item>
+      <item name="preview">Rhagolygu</item>
+      <item name="constrain_proportions">Cynfyngu cyfraneddau</item>
+      <item name="type">Math</item>
+      <item name="id">Id</item>
+      <item name="name">Enw</item>
+      <item name="class_name">Dosbarth</item>
+      <item name="vspace">Gofod fertigol</item>
+      <item name="hspace">Gofod llorweddol</item>
+      <item name="play">Awto-chwarae</item>
+      <item name="loop">Dolen</item>
+      <item name="menu">Dangos dewislen</item>
+      <item name="quality">Ansawdd</item>
+      <item name="scale">Gradd</item>
+      <item name="align">Alinio</item>
+      <item name="salign">Alinio-S</item>
+      <item name="wmode">Modd-W</item>
+      <item name="bgcolor">Cefndir</item>
+      <item name="base">Sail</item>
+      <item name="flashvars">Flashvars</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">AutoHREF</item>
+      <item name="cache">Storfa</item>
+      <item name="hidden">Wedi'i cuddio</item>
+      <item name="controller">Rheolydd</item>
+      <item name="kioskmode">Modd ciosk</item>
+      <item name="playeveryframe">Chwarae pob ffrâm</item>
+      <item name="targetcache">Storfa targed</item>
+      <item name="correction">Dim cywiriad</item>
+      <item name="enablejavascript">Galluogi JavaScript</item>
+      <item name="starttime">Amser dechrae</item>
+      <item name="endtime">Amser gorffen</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">Tagu cyflymder</item>
+      <item name="target">Targed</item>
+      <item name="volume">Cyfrol</item>
+      <item name="autostart">Awto-cychwyn</item>
+      <item name="enabled">Wedi'i galluogi</item>
+      <item name="fullscreen">Sgrin llawn</item>
+      <item name="invokeurls">Defnyddio URLs</item>
+      <item name="mute">Mudo</item>
+      <item name="stretchtofit">Ymestun i ffitio</item>
+      <item name="windowlessvideo">Fideo heb-ffenest</item>
+      <item name="balance">Cydbwysedd</item>
+      <item name="baseurl">URL seiledig</item>
+      <item name="captioningid">Id egluro</item>
+      <item name="currentmarker">Marciwr cyfredol</item>
+      <item name="currentposition">Lleoliad cyfredol</item>
+      <item name="defaultframe">Ffrâm rhagosodedig</item>
+      <item name="playcount">Cyfrif chwarae</item>
+      <item name="rate">Cyfradd</item>
+      <item name="uimode">Modd UI</item>
+      <item name="flash_options">Dewisiadau Flash</item>
+      <item name="qt_options">Dewisiadau Quicktime</item>
+      <item name="wmp_options">Dewisiadau Windows Media Player</item>
+      <item name="rmp_options">Dewisiadau Real Media Player</item>
+      <item name="shockwave_options">Dewisiadau Shockwave</item>
+      <item name="autogotourl">URL awto-mynd-i</item>
+      <item name="center">Canol</item>
+      <item name="imagestatus">Statws delwedd</item>
+      <item name="maintainaspect">Cynnal agwedd</item>
+      <item name="nojava">Dim java</item>
+      <item name="prefetch">Cyn-nôl</item>
+      <item name="shuffle">Cymysgu</item>
+      <item name="console">Consol</item>
+      <item name="numloop">Nifer o dolenau</item>
+      <item name="controls">Rheolyddion</item>
+      <item name="scriptcallbacks">Nôl-galwadau sgript</item>
+      <item name="swstretchstyle">Arddull ymestyn</item>
+      <item name="swstretchhalign">Aliniad llorweddol ymestyn</item>
+      <item name="swstretchvalign">Aliniad fertigol ymestyn</item>
+      <item name="sound">Sain</item>
+      <item name="progress">Cynnydd</item>
+      <item name="qtsrc">Fynhonell QT</item>
+      <item name="qt_stream_warn">Dylai adnoddau RTSP ffrydio cael eu ychwanegu i'r maes Fynhonell QT o dan y tab Uwch.\n Dylai chi hefyd ychwanegu fersiwn heb-ffrydio i'r maes Fynhonell.</item>
+      <item name="align_top">Pen</item>
+      <item name="align_right">De</item>
+      <item name="align_bottom">Gwaelod</item>
+      <item name="align_left">Chwith</item>
+      <item name="align_center">Canol</item>
+      <item name="align_top_left">Pen canol</item>
+      <item name="align_top_right">Pen dde</item>
+      <item name="align_bottom_left">Gwaelod chwith</item>
+      <item name="align_bottom_right">Gwaelod dde</item>
+      <item name="flv_options">Dewisiadau fideo Flash</item>
+      <item name="flv_scalemode">Modd graddfa</item>
+      <item name="flv_buffer">Buffer</item>
+      <item name="flv_startimage">Delwedd cychwyn</item>
+      <item name="flv_starttime">Amser cychwyn</item>
+      <item name="flv_defaultvolume">Cyfrol rhagosodedig</item>
+      <item name="flv_hiddengui">GUI wedi'i cuddio</item>
+      <item name="flv_autostart">Awto-cychwyn</item>
+      <item name="flv_loop">Doleni</item>
+      <item name="flv_showscalemodes">Dangos moddau graddfa</item>
+      <item name="flv_smoothvideo">Fideo llyfn</item>
+      <item name="flv_jscallback">Nôl-galwad JS</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">Priodweddau dogfen</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Priodweddau dogfen</item>
+      <item name="meta_tab">Cyffredinol</item>
+      <item name="appearance_tab">Ymddangosiad</item>
+      <item name="advanced_tab">Uwch</item>
+      <item name="meta_props">Gwybodaeth meta</item>
+      <item name="langprops">Iaith ac amgodiad</item>
+      <item name="meta_title">Teitl</item>
+      <item name="meta_keywords">Allweddair</item>
+      <item name="meta_description">Disgrifiad</item>
+      <item name="meta_robots">Robotau</item>
+      <item name="doctypes">Math dogfen</item>
+      <item name="langcode">Cod iaith</item>
+      <item name="langdir">Cyfeiriad iaith</item>
+      <item name="ltr">Chwith i'r dde</item>
+      <item name="rtl">De i'r chwith</item>
+      <item name="xml_pi">Datganiad XML</item>
+      <item name="encoding">Amgodiad nodau</item>
+      <item name="appearance_bgprops">Priodweddau cefndir</item>
+      <item name="appearance_marginprops">Ymylon corff</item>
+      <item name="appearance_linkprops">Lliwiau cysylltau</item>
+      <item name="appearance_textprops">Priodweddau testun</item>
+      <item name="bgcolor">Lliw cefndir</item>
+      <item name="bgimage">Delwedd cefndir</item>
+      <item name="left_margin">Ymyl chwith</item>
+      <item name="right_margin">Ymyl dde</item>
+      <item name="top_margin">Ymyl brig</item>
+      <item name="bottom_margin">Ymyl gwaelod</item>
+      <item name="text_color">Lliw testun</item>
+      <item name="font_size">Maint ffont</item>
+      <item name="font_face">Wyneb ffont</item>
+      <item name="link_color">Lliw cysylltau</item>
+      <item name="hover_color">Lliw hofran</item>
+      <item name="visited_color">Lliw ymwelwyd</item>
+      <item name="active_color">Lliw actif</item>
+      <item name="textcolor">Lliw</item>
+      <item name="fontsize">Maint ffont</item>
+      <item name="fontface">Teulu ffont</item>
+      <item name="meta_index_follow">Mynegeio a ddilyn y cysylltau</item>
+      <item name="meta_index_nofollow">Mynegeio a peidio ddilyn y cysylltau</item>
+      <item name="meta_noindex_follow">Peidio mynegeio ond ddilyn y cysylltau</item>
+      <item name="meta_noindex_nofollow">Peidio mynegeio a peidio ddilyn y cysylltau</item>
+      <item name="appearance_style">Priodweddau dalen-arddull ac arddull</item>
+      <item name="stylesheet">Dalen-arddull</item>
+      <item name="style">Arddull</item>
+      <item name="author">Awdur</item>
+      <item name="copyright">Hawlfraint</item>
+      <item name="add">Ychwanegu elfen newydd</item>
+      <item name="remove">Tynnu elfen dewisedig</item>
+      <item name="moveup">Symud elfen dewisedig i fyny</item>
+      <item name="movedown">Symud elfen dewisedig i lawr</item>
+      <item name="head_elements">Elfennau pen</item>
+      <item name="info">Gwybodaeth</item>
+      <item name="add_title">Elfen teitl</item>
+      <item name="add_meta">Elfen meta</item>
+      <item name="add_script">Elfen sgript</item>
+      <item name="add_style">Elfen arddull</item>
+      <item name="add_link">Elfen cyswllt</item>
+      <item name="add_base">Elfen sail</item>
+      <item name="add_comment">Nod sylw</item>
+      <item name="title_element">Elfen teitl</item>
+      <item name="script_element">Elfen sgript</item>
+      <item name="style_element">Elfen arddull</item>
+      <item name="base_element">Elfen sail</item>
+      <item name="link_element">Elfen cyswllt</item>
+      <item name="meta_element">Elfen meta</item>
+      <item name="comment_element">Sylw</item>
+      <item name="src">Fynhonell</item>
+      <item name="language">Iaith</item>
+      <item name="href">Href</item>
+      <item name="target">Targed</item>
+      <item name="type">Math</item>
+      <item name="charset">Set nodau</item>
+      <item name="defer">Gohirio</item>
+      <item name="media">Cyfryngau</item>
+      <item name="properties">Priodweddau</item>
+      <item name="name">Enw</item>
+      <item name="value">Gwerth</item>
+      <item name="content">Cynnwys</item>
+      <item name="rel">Perthynas</item>
+      <item name="rev">Diwygiad</item>
+      <item name="hreflang">Iaith href</item>
+      <item name="general_props">Cyfferdinol</item>
+      <item name="advanced_props">Uwch</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Mewnosod cynnwys templed rhagosodol</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">Templedi</item>
+      <item name="label">Templedi</item>
+      <item name="desc_label">Disgrifiad</item>
+      <item name="desc">Mewnosod cynnwys templed rhagosodol</item>
+      <item name="select">Dewis templed</item>
+      <item name="preview">Rhagolygiad</item>
+      <item name="warning">Rhybudd: Gall diweddaru templed gyda un arall achosi colled data.</item>
+      <item name="mdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="cdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="months_long">Ionawr,Chwefror,Mawrth,Ebrill,Mai,Mehefin,Goffennaf,Awst,Medi,Hydref,Tachwedd,Rhagfyr</item>
+      <item name="months_short">Ion,Chw,Maw,Ebr,Mai,Meh,Gor,Aws,Med,Hyd,Tac,Rha</item>
+      <item name="day_long">Sul,Llun,Mawrth,Mercher,Iau,Gwener,Sadwrn,Sul</item>
+      <item name="day_short">Sul,Llu,Maw,Mer,Iau,Gwe,Sad,Sul</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Nodau rheolaeth ymlaen/i ffwrdd.</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">Toglu cywiriadau</item>
+      <item name="menu">Gosodiadau cywiriadau</item>
+      <item name="ignore_word">Anwybyddu gair</item>
+      <item name="ignore_words">Anwybyddu pob un</item>
+      <item name="langs">Ieithoedd</item>
+      <item name="wait">Aroswch, os gwelwch yn dda...</item>
+      <item name="sug">Awgrymiadau</item>
+      <item name="no_sug">Dim awgrymiadau</item>
+      <item name="no_mpell">Dim camsillafiadau wedi'i canfod.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">Mewnosod toriad tudalen.</item>
+    </group>
+    <group target="advlist">
+      <item name="types">Mathau</item>
+      <item name="def">Rhagosodedig</item>
+      <item name="lower_alpha">Alffa is</item>
+      <item name="lower_greek">Groegaiddd is</item>
+      <item name="lower_roman">Rhufeinig is</item>
+      <item name="upper_alpha">Alffa uwch</item>
+      <item name="upper_roman">Rhufeinig uwch</item>
+      <item name="circle">Cylch</item>
+      <item name="disc">Disg</item>
+      <item name="square">Sgwâr</item>
+    </group>
+  </language>
+</language-pack>

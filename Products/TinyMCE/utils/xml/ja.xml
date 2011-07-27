@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>Hisaya Nishide and yama and Naoki Nakanishi</author>
+    <version major="17" minor="7" releasedate="2010-12-14" />
+    <description>This is the Japanese language pack for TinyMCE.</description>
+  </header>
+  <language code="ja" title="Japanese" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">WYSIWYGモードに切り替えますか？</item>
+      <item name="apply">適用</item>
+      <item name="insert">挿入</item>
+      <item name="update">更新</item>
+      <item name="cancel">キャンセル</item>
+      <item name="close">閉じる</item>
+      <item name="browse">参照</item>
+      <item name="class_name">class属性</item>
+      <item name="not_set">-- 未設定 --</item>
+      <item name="clipboard_msg">このコマンドはFirefoxでは使用できません。</item>
+      <item name="clipboard_no_support">クリップボード操作はお使いのブラウザには対応しておりません。代わりにキーボードのショートカットキーをお使い下さい。</item>
+      <item name="popup_blocked">ポップアップがブロックされました。すべての機能をご利用になるにはポップアップを許可して下さい。</item>
+      <item name="invalid_data">エラー: 入力に誤りがあります。（赤字の項目）</item>
+      <item name="more_colors">その他の色</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">太字 (Ctrl+B)</item>
+      <item name="italic_desc">斜体 (Ctrl+I)</item>
+      <item name="underline_desc">下線 (Ctrl+U)</item>
+      <item name="striketrough_desc">打消し線</item>
+      <item name="bullist_desc">番号なしリスト</item>
+      <item name="numlist_desc">番号つきリスト</item>
+      <item name="undo_desc">元に戻す (Ctrl+Z)</item>
+      <item name="redo_desc">やり直す (Ctrl+Y)</item>
+      <item name="cleanup_desc">コード整形</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">style属性</item>
+      <item name="font_size">フォントサイズ</item>
+      <item name="fontdefault">フォント</item>
+      <item name="block">フォーマット</item>
+      <item name="paragraph">段落</item>
+      <item name="div">Div</item>
+      <item name="address">住所</item>
+      <item name="pre">整形済み</item>
+      <item name="h1">見出し1</item>
+      <item name="h2">見出し2</item>
+      <item name="h3">見出し3</item>
+      <item name="h4">見出し4</item>
+      <item name="h5">見出し5</item>
+      <item name="h6">見出し6</item>
+      <item name="blockquote">引用</item>
+      <item name="code">ソースコード</item>
+      <item name="samp">コードサンプル</item>
+      <item name="dt">語句定義</item>
+      <item name="dd">語句説明</item>
+      <!-- Buttons -->
+      <item name="bold_desc">太字 (Ctrl+B)</item>
+      <item name="italic_desc">斜体 (Ctrl+I)</item>
+      <item name="underline_desc">下線 (Ctrl+U)</item>
+      <item name="striketrough_desc">打消し線</item>
+      <item name="justifyleft_desc">左揃え</item>
+      <item name="justifycenter_desc">中央揃え</item>
+      <item name="justifyright_desc">右揃え</item>
+      <item name="justifyfull_desc">均等割付</item>
+      <item name="bullist_desc">番号なしリスト</item>
+      <item name="numlist_desc">番号つきリスト</item>
+      <item name="outdent_desc">インデント解除</item>
+      <item name="indent_desc">インデント</item>
+      <item name="undo_desc">元に戻す (Ctrl+Z)</item>
+      <item name="redo_desc">やり直す (Ctrl+Y)</item>
+      <item name="link_desc">リンクの挿入/編集</item>
+      <item name="unlink_desc">リンク解除</item>
+      <item name="image_desc">画像の挿入/編集</item>
+      <item name="cleanup_desc">コード整形</item>
+      <item name="code_desc">HTMLソース編集</item>
+      <item name="sub_desc">下付き</item>
+      <item name="sup_desc">上付き</item>
+      <item name="hr_desc">水平線</item>
+      <item name="removeformat_desc">フォーマット解除</item>
+      <item name="custom1_desc">説明文を入力してください。</item>
+      <item name="forecolor_desc">文字色</item>
+      <item name="backcolor_desc">背景色</item>
+      <item name="charmap_desc">特殊文字</item>
+      <item name="visualaid_desc">ガイドラインと非表示項目の表示切替</item>
+      <item name="anchor_desc">アンカーの挿入/編集</item>
+      <item name="cut_desc">切り取り</item>
+      <item name="copy_desc">コピー</item>
+      <item name="paste_desc">貼り付け</item>
+      <item name="image_props_desc">画像のプロパティ</item>
+      <item name="newdocument_desc">新規作成</item>
+      <item name="help_desc">ヘルプ</item>
+      <item name="blockquote_desc">引用</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">このコマンドはFirefoxでは使用できません。</item>
+      <item name="path">パス</item>
+      <item name="newdocument">編集中のデータを破棄してもよろしいですか？</item>
+      <item name="toolbar_focus">ツールボタンへジャンプ - Alt+Q, エディタにジャンプ - Alt-Z, エレメントパスへジャンプ - Alt-X</item>
+      <item name="more_colors">その他の色</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">TinyMCEについて</item>
+      <item name="about_general">詳細</item>
+      <item name="about_help">ヘルプ</item>
+      <item name="about_license">ライセンス</item>
+      <item name="about_plugins">プラグイン</item>
+      <item name="about_plugin">プラグイン</item>
+      <item name="about_author">作者</item>
+      <item name="about_version">バージョン</item>
+      <item name="about_loaded">読込済みプラグイン</item>
+      <!-- Anchor -->
+      <item name="anchor_title">アンカーの挿入/編集</item>
+      <item name="anchor_name">アンカー名</item>
+      <!-- Source -->
+      <item name="code_title">HTMLソースエディタ</item>
+      <item name="code_wordwrap">折り返し</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">色の選択</item>
+      <item name="colorpicker_picker_tab">カラーピッカー</item>
+      <item name="colorpicker_picker_title">カラーピッカー</item>
+      <item name="colorpicker_palette_tab">パレット</item>
+      <item name="colorpicker_palette_title">パレット</item>
+      <item name="colorpicker_named_tab">既定色</item>
+      <item name="colorpicker_named_title">既定色</item>
+      <item name="colorpicker_color">カラー:</item>
+      <item name="colorpicker_name">名前:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">特殊文字</item>
+      <!-- Image -->
+      <item name="image_title">画像の挿入/編集</item>
+      <item name="image_src">画像URL</item>
+      <item name="image_alt">画像の説明</item>
+      <item name="image_list">一覧から選ぶ</item>
+      <item name="image_border">枠線</item>
+      <item name="image_dimensions">サイズ</item>
+      <item name="image_vspace">上下余白</item>
+      <item name="image_hspace">左右余白</item>
+      <item name="image_align">配置</item>
+      <item name="image_align_baseline">ベースライン</item>
+      <item name="image_align_top">上揃え</item>
+      <item name="image_align_middle">中央揃え</item>
+      <item name="image_align_bottom">下揃え</item>
+      <item name="image_align_texttop">テキスト上端で揃える</item>
+      <item name="image_align_textbottom">テキスト下端で揃える</item>
+      <item name="image_align_left">左揃え</item>
+      <item name="image_align_right">右揃え</item>
+      <!-- Link -->
+      <item name="link_title">リンクの挿入/編集</item>
+      <item name="link_url">リンクURL</item>
+      <item name="link_target">ターゲット</item>
+      <item name="link_target_same">同じウインドウで開く</item>
+      <item name="link_target_blank">新しいウインドウで開く</item>
+      <item name="link_titlefield">title属性</item>
+      <item name="link_is_email">メールアドレスが入力されました。リンクにmailto:を付加しますか？</item>
+      <item name="link_is_external">リンクにhttp://を付加しますか？</item>
+      <item name="link_list">一覧から選ぶ</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">配置</item>
+      <item name="left">左揃え</item>
+      <item name="center">中央揃え</item>
+      <item name="right">右揃え</item>
+      <item name="full">均等割付</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%Y-%m-%d</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">日付の挿入</item>
+      <item name="inserttime_desc">時刻の挿入</item>
+      <item name="months_long">January,February,March,April,May,June,July,August,September,October,November,December</item>
+      <item name="months_short">Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec</item>
+      <item name="day_long">日曜日,月曜日,火曜日,水曜日,木曜日,金曜日,土曜日,日曜日</item>
+      <item name="day_short">(日),(月),(火),(水),(木),(金),(土),(日)</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">印刷</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">プレビュー</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">左から右</item>
+      <item name="rtl_desc">右から左</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">新規レイヤーの挿入</item>
+      <item name="forward_desc">前面へ移動</item>
+      <item name="backward_desc">背面へ移動</item>
+      <item name="absolute_desc">絶対位置指定の切替</item>
+      <item name="content">新規レイヤー</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">保存</item>
+      <item name="cancel_desc">全ての変更を破棄</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">改行なしスペースの挿入</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">スペルチェック</item>
+      <item name="download">ieSpellが見つかりません。今すぐインストールしますか？</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">水平線</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">幅</item>
+      <item name="size">高さ</item>
+      <item name="noshade">影なし</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">表情アイコン</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">表情アイコンの挿入</item>
+      <item name="desc">表情アイコン</item>
+      <item name="cool">Cool</item>
+      <item name="cry">Cry</item>
+      <item name="embarassed">Embarassed</item>
+      <item name="foot_in_mouth">Foot in mouth</item>
+      <item name="frown">Frown</item>
+      <item name="innocent">Innocent</item>
+      <item name="kiss">Kiss</item>
+      <item name="laughing">Laughing</item>
+      <item name="money_mouth">Money mouth</item>
+      <item name="sealed">Sealed</item>
+      <item name="smile">Smile</item>
+      <item name="surprised">Surprised</item>
+      <item name="tongue_out">Tongue out</item>
+      <item name="undecided">Undecided</item>
+      <item name="wink">Wink</item>
+      <item name="yell">Yell</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">検索</item>
+      <item name="replace_desc">検索/置換</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">再検索</item>
+      <item name="notfound">最後まで検索しましたが、検索文字列が見つかりませんでした。</item>
+      <item name="search_title">検索</item>
+      <item name="replace_title">検索/置換</item>
+      <item name="allreplaced">全て置換されました。</item>
+      <item name="findwhat">検索文字列</item>
+      <item name="replacewith">置換文字列</item>
+      <item name="direction">方向</item>
+      <item name="up">上へ</item>
+      <item name="down">下へ</item>
+      <item name="mcase">大文字/小文字を区別する</item>
+      <item name="findnext">次へ</item>
+      <item name="replace">置換</item>
+      <item name="replaceall">全て置換</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">画像の挿入/編集</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">アドレスから</item>
+      <item name="tab_appearance">表示</item>
+      <item name="tab_advanced">上級者向け</item>
+      <item name="general">一般</item>
+      <item name="title">title属性</item>
+      <item name="preview">プレビュー</item>
+      <item name="constrain_proportions">縦横比の保存</item>
+      <item name="langdir">文章の方向</item>
+      <item name="langcode">言語コード</item>
+      <item name="long_desc">詳細説明リンク</item>
+      <item name="style">style属性</item>
+      <item name="classes">class属性</item>
+      <item name="ltr">左から右</item>
+      <item name="rtl">右から左</item>
+      <item name="id">ID属性</item>
+      <item name="map">イメージマップ</item>
+      <item name="swap_image">ロールオーバー効果</item>
+      <item name="alt_image">画像切替を行う</item>
+      <item name="mouseover">マウスオーバー時</item>
+      <item name="mouseout">マウスアウト時</item>
+      <item name="misc">その他</item>
+      <item name="example_img">Appearance preview image</item>
+      <item name="missing_alt">画像の説明文が入力されていません。目の不自由な方やテキストブラウザを利用されている方へ配慮し、画像説明を入力することをお薦めします。</item>
+      <item name="dialog_title">画像の挿入/編集</item>
+      <item name="src">画像URL</item>
+      <item name="alt">alt属性</item>
+      <item name="list">一覧から選ぶ</item>
+      <item name="border">枠線</item>
+      <item name="dimensions">サイズ</item>
+      <item name="vspace">上下余白</item>
+      <item name="hspace">左右余白</item>
+      <item name="align">配置</item>
+      <item name="align_baseline">Baseline</item>
+      <item name="align_top">Top</item>
+      <item name="align_middle">Middle</item>
+      <item name="align_bottom">Bottom</item>
+      <item name="align_texttop">Text top</item>
+      <item name="align_textbottom">Text bottom</item>
+      <item name="align_left">Left</item>
+      <item name="align_right">Right</item>
+      <item name="image_list">一覧から選ぶ</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">リンクの挿入/編集</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">リンクの挿入/編集</item>
+      <item name="url">リンクURL</item>
+      <item name="target">ターゲット</item>
+      <item name="titlefield">タイトル</item>
+      <item name="is_email">メールアドレスが入力されました。リンクにmailto:を付加しますか？</item>
+      <item name="is_external">リンクにhttp://を付加しますか？</item>
+      <item name="list">一覧から選ぶ</item>
+      <item name="general_tab">一般</item>
+      <item name="popup_tab">ポップアップ</item>
+      <item name="events_tab">イベント</item>
+      <item name="advanced_tab">上級者向け</item>
+      <item name="general_props">一般</item>
+      <item name="popup_props">ポップアップ</item>
+      <item name="event_props">イベント</item>
+      <item name="advanced_props">上級者向け</item>
+      <item name="popup_opts">オプション</item>
+      <item name="anchor_names">アンカー</item>
+      <item name="target_same">このウインドウ/フレームで開く</item>
+      <item name="target_parent">親ウインドウ/親フレームで開く</item>
+      <item name="target_top">トップのフレームで開く</item>
+      <item name="target_blank">新しいウインドウで開く</item>
+      <item name="popup">Javascriptポップアップ</item>
+      <item name="popup_url">ポップアップURL</item>
+      <item name="popup_name">ウインドウ名</item>
+      <item name="popup_return">'return false'を挿入する</item>
+      <item name="popup_scrollbars">スクロールバーを表示</item>
+      <item name="popup_statusbar">ステータスバーを表示</item>
+      <item name="popup_toolbar">ツールバーを表示</item>
+      <item name="popup_menubar">メニューバーを表示</item>
+      <item name="popup_location">アドレスバーを表示</item>
+      <item name="popup_resizable">ウインドウのサイズ変更を許可する</item>
+      <item name="popup_dependent">Dependent (Mozilla/Firefoxのみ)</item>
+      <item name="popup_size">サイズ</item>
+      <item name="popup_position">位置 (X/Y)</item>
+      <item name="id">ID属性</item>
+      <item name="style">style属性</item>
+      <item name="classes">class属性</item>
+      <item name="target_name">ターゲット</item>
+      <item name="langdir">文章の方向</item>
+      <item name="target_langcode">ターゲットの言語</item>
+      <item name="langcode">言語コード</item>
+      <item name="encoding">ターゲットのエンコード</item>
+      <item name="mime">ターゲットのMIMEタイプ</item>
+      <item name="rel">rel属性</item>
+      <item name="rev">rev属性</item>
+      <item name="tabindex">タブインデックス</item>
+      <item name="accesskey">アクセスキー</item>
+      <item name="ltr">左から右</item>
+      <item name="rtl">右から左</item>
+      <item name="link_list">一覧から選ぶ</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">引用</item>
+      <item name="abbr_desc">略語</item>
+      <item name="acronym_desc">頭字語</item>
+      <item name="del_desc">削除</item>
+      <item name="ins_desc">挿入</item>
+      <item name="attribs_desc">属性の挿入/編集</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">タイトル</item>
+      <item name="attribute_label_id">ID属性</item>
+      <item name="attribute_label_class">class属性</item>
+      <item name="attribute_label_style">style属性</item>
+      <item name="attribute_label_cite">引用</item>
+      <item name="attribute_label_datetime">日付/時刻</item>
+      <item name="attribute_label_langdir">文章の方向</item>
+      <item name="attribute_option_ltr">左から右</item>
+      <item name="attribute_option_rtl">右から左</item>
+      <item name="attribute_label_langcode">言語</item>
+      <item name="attribute_label_tabindex">タブインデックス</item>
+      <item name="attribute_label_accesskey">アクセスキー</item>
+      <item name="attribute_events_tab">イベント</item>
+      <item name="attribute_attrib_tab">属性</item>
+      <item name="general_tab">一般</item>
+      <item name="attrib_tab">属性</item>
+      <item name="events_tab">イベント</item>
+      <item name="fieldset_general_tab">一般</item>
+      <item name="fieldset_attrib_tab">エレメントの属性</item>
+      <item name="fieldset_events_tab">エレメントのイベント</item>
+      <item name="title_ins_element">エレメントを挿入</item>
+      <item name="title_del_element">エレメントを削除</item>
+      <item name="title_acronym_element">頭字語エレメント</item>
+      <item name="title_abbr_element">略語エレメント</item>
+      <item name="title_cite_element">引用エレメント</item>
+      <item name="remove">Remove</item>
+      <item name="insert_date">現在の日付/時刻を挿入</item>
+      <item name="option_ltr">左から右</item>
+      <item name="option_rtl">右から左</item>
+      <item name="attribs_title">属性の挿入/削除</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">CSS編集</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">CSS編集</item>
+      <item name="apply">適用</item>
+      <item name="text_tab">文字</item>
+      <item name="background_tab">背景</item>
+      <item name="block_tab">ブロック</item>
+      <item name="box_tab">ボックス</item>
+      <item name="border_tab">枠線</item>
+      <item name="list_tab">リスト</item>
+      <item name="positioning_tab">ポジション</item>
+      <item name="text_props">Text</item>
+      <item name="text_font">フォント</item>
+      <item name="text_size">サイズ</item>
+      <item name="text_weight">太さ</item>
+      <item name="text_style">style属性</item>
+      <item name="text_variant">変形</item>
+      <item name="text_lineheight">行高さ</item>
+      <item name="text_case">大文字/小文字</item>
+      <item name="text_color">色</item>
+      <item name="text_decoration">装飾</item>
+      <item name="text_overline">上線</item>
+      <item name="text_underline">下線</item>
+      <item name="text_striketrough">打消し線</item>
+      <item name="text_blink">点滅</item>
+      <item name="text_none">なし</item>
+      <item name="background_color">背景色</item>
+      <item name="background_image">背景画像</item>
+      <item name="background_repeat">繰り返し</item>
+      <item name="background_attachment">Attachment</item>
+      <item name="background_hpos">水平位置</item>
+      <item name="background_vpos">垂直位置</item>
+      <item name="block_wordspacing">単語感覚</item>
+      <item name="block_letterspacing">文字間隔</item>
+      <item name="block_vertical_alignment">垂直配置</item>
+      <item name="block_text_align">水平配置</item>
+      <item name="block_text_indent">インデント</item>
+      <item name="block_whitespace">空白文字</item>
+      <item name="block_display">ディスプレイ</item>
+      <item name="box_width">幅</item>
+      <item name="box_height">高さ</item>
+      <item name="box_float">回り込み</item>
+      <item name="box_clear">回り込み解除</item>
+      <item name="padding">パディング</item>
+      <item name="same">全て同じにする</item>
+      <item name="top">上</item>
+      <item name="right">右</item>
+      <item name="bottom">下</item>
+      <item name="left">左</item>
+      <item name="margin">マージン</item>
+      <item name="style">style属性</item>
+      <item name="width">幅</item>
+      <item name="height">高さ</item>
+      <item name="color">色</item>
+      <item name="list_type">マーカー種類</item>
+      <item name="bullet_image">マーカー画像</item>
+      <item name="position">マーカー表示位置</item>
+      <item name="positioning_type">配置方法</item>
+      <item name="visibility">表示</item>
+      <item name="zindex">Z-Index</item>
+      <item name="overflow">オーバーフロー</item>
+      <item name="placement">位置</item>
+      <item name="clip">切り抜き</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">テキストとして貼り付け</item>
+      <item name="paste_word_desc">Wordから貼り付け</item>
+      <item name="selectall_desc">全て選択</item>
+      <item name="plaintext_mode_sticky">Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode.</item>
+      <item name="plaintext_mode">プレーンテキストモードに変更しました。貼り付け後は書式付きモードに戻ります。</item>
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">キーボードでCTRL+Vを押してテキストを貼り付けてください。</item>
+      <item name="text_linebreaks">改行を保持する</item>
+      <item name="word_title">キーボードでCTRL+Vを押してテキストを貼り付けてください。</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">表を挿入</item>
+      <item name="row_before_desc">行を上に挿入</item>
+      <item name="row_after_desc">行を下に挿入</item>
+      <item name="delete_row_desc">行を削除</item>
+      <item name="col_before_desc">列を左に挿入</item>
+      <item name="col_after_desc">列を右に挿入</item>
+      <item name="delete_col_desc">列を削除</item>
+      <item name="split_cells_desc">セルの結合を解除</item>
+      <item name="merge_cells_desc">セルを結合</item>
+      <item name="row_desc">行のプロパティ</item>
+      <item name="cell_desc">セルのプロパティ</item>
+      <item name="props_desc">表のプロパティ</item>
+      <item name="paste_row_before_desc">行を上に貼り付け</item>
+      <item name="paste_row_after_desc">行を下に貼り付け</item>
+      <item name="cut_row_desc">行の切り取り</item>
+      <item name="copy_row_desc">行のコピー</item>
+      <item name="del">表を削除</item>
+      <item name="row">行</item>
+      <item name="col">列</item>
+      <item name="cell">セル</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width"></item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">一般</item>
+      <item name="advanced_tab">上級者向け</item>
+      <item name="general_props">一般</item>
+      <item name="advanced_props">上級者向け</item>
+      <item name="rowtype">行</item>
+      <item name="title">表の挿入/編集</item>
+      <item name="width">幅</item>
+      <item name="height">高さ</item>
+      <item name="cols">列</item>
+      <item name="rows">行</item>
+      <item name="cellspacing">Cellspacing</item>
+      <item name="cellpadding">Cellpadding</item>
+      <item name="border">枠線</item>
+      <item name="align">配置</item>
+      <item name="align_default">デフォルト</item>
+      <item name="align_left">左揃え</item>
+      <item name="align_right">右揃え</item>
+      <item name="align_middle">中央揃え</item>
+      <item name="row_title">行のプロパティ</item>
+      <item name="cell_title">セルのプロパティ</item>
+      <item name="cell_type">セル種別</item>
+      <item name="valign">垂直方向の配置</item>
+      <item name="align_top">上揃え</item>
+      <item name="align_bottom">下揃え</item>
+      <item name="bordercolor">枠線の色</item>
+      <item name="bgcolor">背景色</item>
+      <item name="merge_cells_title">セルの結合</item>
+      <item name="id">ID属性</item>
+      <item name="style">style属性</item>
+      <item name="langdir">文章の方向</item>
+      <item name="langcode">言語コード</item>
+      <item name="mime">ターゲットのMIMEタイプ</item>
+      <item name="ltr">左から右</item>
+      <item name="rtl">右から左</item>
+      <item name="bgimage">背景画像</item>
+      <item name="summary">サマリー</item>
+      <item name="td">データ</item>
+      <item name="th">ヘッダ</item>
+      <item name="cell_cell">選択セルの更新</item>
+      <item name="cell_row">行内のセルの更新</item>
+      <item name="cell_all">全てのセルの更新</item>
+      <item name="row_row">選択行の更新</item>
+      <item name="row_odd">奇数行の更新</item>
+      <item name="row_even">偶数行の更新</item>
+      <item name="row_all">全ての行の更新</item>
+      <item name="thead">表ヘッダ</item>
+      <item name="tbody">表ボディ</item>
+      <item name="tfoot">表フッタ</item>
+      <item name="scope">スコープ</item>
+      <item name="rowgroup">行グループ</item>
+      <item name="colgroup">列グループ</item>
+      <item name="col_limit">列の最大数を超えました。</item>
+      <item name="row_limit">行の最大数を超えました。</item>
+      <item name="cell_limit">セルの最大数を超えました。</item>
+      <item name="missing_scope">表のスコープ属性を設定していませんがよろしいですか？</item>
+      <item name="caption">表に見出しを付ける</item>
+      <item name="frame">セル枠線</item>
+      <item name="frame_none">なし</item>
+      <item name="frame_groups">グループ毎</item>
+      <item name="frame_rows">行</item>
+      <item name="frame_cols">列</item>
+      <item name="frame_all">全て</item>
+      <item name="rules">表の外枠</item>
+      <item name="rules_void">なし</item>
+      <item name="rules_above">上</item>
+      <item name="rules_below">下</item>
+      <item name="rules_hsides">上下</item>
+      <item name="rules_lhs">左</item>
+      <item name="rules_rhs">右</item>
+      <item name="rules_vsides">左右</item>
+      <item name="rules_box">上下左右(box)</item>
+      <item name="rules_border">上下左右(border)</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">他のページへ移動すると編集データはすべて破棄されます。</item>
+      <item name="restore_content">Restore auto-saved content.</item>
+      <item name="warning_message">If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?.</item>
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">フルスクリーン</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">埋め込みメディアの挿入/編集</item>
+      <item name="edit">埋め込みメディアの編集</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">埋め込みメディアの挿入/編集</item>
+      <item name="general">一般</item>
+      <item name="advanced">上級者向け</item>
+      <item name="file">ファイル/URL</item>
+      <item name="list">一覧から選ぶ</item>
+      <item name="size">サイズ</item>
+      <item name="preview">プレビュー</item>
+      <item name="constrain_proportions">縦横比を保存</item>
+      <item name="type">タイプ</item>
+      <item name="id">ID属性</item>
+      <item name="name">名前</item>
+      <item name="class_name">class属性</item>
+      <item name="vspace">上下余白</item>
+      <item name="hspace">左右余白</item>
+      <item name="play">自動再生</item>
+      <item name="loop">繰り返し再生</item>
+      <item name="menu">メニューを表示</item>
+      <item name="quality">品質</item>
+      <item name="scale">伸縮</item>
+      <item name="align">配置</item>
+      <item name="salign">SAlign</item>
+      <item name="wmode">WMode</item>
+      <item name="bgcolor">背景色</item>
+      <item name="base">Base</item>
+      <item name="flashvars">Flashvars</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">自動読込</item>
+      <item name="cache">キャッシュ</item>
+      <item name="hidden">非表示</item>
+      <item name="controller">コントローラ表示</item>
+      <item name="kioskmode">Kioskモード</item>
+      <item name="playeveryframe">全フレーム再生</item>
+      <item name="targetcache">ターゲットキャッシュ</item>
+      <item name="correction">No correction</item>
+      <item name="enablejavascript">JavaScriptを有効にする</item>
+      <item name="starttime">開始フレーム</item>
+      <item name="endtime">終了フレーム</item>
+      <item name="href">リンク先URL</item>
+      <item name="qtsrcchokespeed">再生データレート</item>
+      <item name="target">ターゲット</item>
+      <item name="volume">音量</item>
+      <item name="autostart">自動再生</item>
+      <item name="enabled">有効にする</item>
+      <item name="fullscreen">フルスクリーン</item>
+      <item name="invokeurls">URLを開く</item>
+      <item name="mute">ミュート</item>
+      <item name="stretchtofit">自動サイズ変更</item>
+      <item name="windowlessvideo">windowlessモード</item>
+      <item name="balance">ステレオのバランス</item>
+      <item name="baseurl">Base URL</item>
+      <item name="captioningid">キャプション表示要素ID</item>
+      <item name="currentmarker">マーカー番号</item>
+      <item name="currentposition">再生位置（秒単位）</item>
+      <item name="defaultframe">デフォルトフレーム</item>
+      <item name="playcount">再生回数</item>
+      <item name="rate">再生レート</item>
+      <item name="uimode">UI表示モード</item>
+      <item name="flash_options">Flashオプション</item>
+      <item name="qt_options">Quicktimeオプション</item>
+      <item name="wmp_options">Windows media playerオプション</item>
+      <item name="rmp_options">Real media playerオプション</item>
+      <item name="shockwave_options">Shockwaveオプション</item>
+      <item name="autogotourl">autogotourl</item>
+      <item name="center">センタリング</item>
+      <item name="imagestatus">ステータス表示</item>
+      <item name="maintainaspect">縦横比保存</item>
+      <item name="nojava">Javaを禁止</item>
+      <item name="prefetch">プリフェッチ</item>
+      <item name="shuffle">シャッフル</item>
+      <item name="console">コンソール</item>
+      <item name="numloop">繰り返し回数</item>
+      <item name="controls">コントローラ表示</item>
+      <item name="scriptcallbacks">コールバックイベント</item>
+      <item name="swstretchstyle">伸縮</item>
+      <item name="swstretchhalign">水平位置</item>
+      <item name="swstretchvalign">垂直位置</item>
+      <item name="sound">サウンド</item>
+      <item name="progress">Progress</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn">rtspストリーミングリソースを「上級者向け」タブの「QT Src」欄に入力してください。\nまた、「Src」欄にはストリーミングではないバージョーンを入力してください。</item>
+      <item name="align_top">上</item>
+      <item name="align_right">右</item>
+      <item name="align_bottom">下</item>
+      <item name="align_left">左</item>
+      <item name="align_center">中央</item>
+      <item name="align_top_left">左上</item>
+      <item name="align_top_right">右上</item>
+      <item name="align_bottom_left">左下</item>
+      <item name="align_bottom_right">右下</item>
+      <item name="flv_options">Flash videoオプション</item>
+      <item name="flv_scalemode">伸縮モード</item>
+      <item name="flv_buffer">バッファ秒数</item>
+      <item name="flv_startimage">初期画像URL</item>
+      <item name="flv_starttime">開始フレーム</item>
+      <item name="flv_defaultvolume">音量</item>
+      <item name="flv_hiddengui">コントローラ非表示</item>
+      <item name="flv_autostart">自動再生</item>
+      <item name="flv_loop">繰り返し再生</item>
+      <item name="flv_showscalemodes">伸縮切替ボタン表示</item>
+      <item name="flv_smoothvideo">スムージング</item>
+      <item name="flv_jscallback">JSコールバック</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">ページ設定</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">ページ設定</item>
+      <item name="meta_tab">一般</item>
+      <item name="appearance_tab">表示</item>
+      <item name="advanced_tab">上級者向け</item>
+      <item name="meta_props">メタ情報</item>
+      <item name="langprops">言語とエンコーディング</item>
+      <item name="meta_title">タイトル</item>
+      <item name="meta_keywords">キーワード</item>
+      <item name="meta_description">説明</item>
+      <item name="meta_robots">検索ロボット制御</item>
+      <item name="doctypes">DOCTYPE</item>
+      <item name="langcode">言語コード</item>
+      <item name="langdir">文章の方向</item>
+      <item name="ltr">左から右</item>
+      <item name="rtl">右から左</item>
+      <item name="xml_pi">XML宣言</item>
+      <item name="encoding">文字エンコーディング</item>
+      <item name="appearance_bgprops">背景のプロパティ</item>
+      <item name="appearance_marginprops">余白</item>
+      <item name="appearance_linkprops">リンク色</item>
+      <item name="appearance_textprops">文字もプロパティ</item>
+      <item name="bgcolor">背景色</item>
+      <item name="bgimage">背景画像</item>
+      <item name="left_margin">左余白</item>
+      <item name="right_margin">右余白</item>
+      <item name="top_margin">上余白</item>
+      <item name="bottom_margin">下余白</item>
+      <item name="text_color">文字色</item>
+      <item name="font_size">文字サイズ</item>
+      <item name="font_face">フォント</item>
+      <item name="link_color">リンク色</item>
+      <item name="hover_color">リンク色(hover)</item>
+      <item name="visited_color">リンク色(visited)</item>
+      <item name="active_color">リンク色(active)</item>
+      <item name="textcolor">色</item>
+      <item name="fontsize">文字サイズ</item>
+      <item name="fontface">フォント</item>
+      <item name="meta_index_follow">このページとリンク先の巡回を許可</item>
+      <item name="meta_index_nofollow">このページの巡回を許可、リンク先の巡回を禁止</item>
+      <item name="meta_noindex_follow">このページの巡回を禁止、リンク先の巡回を許可</item>
+      <item name="meta_noindex_nofollow">このページとリンク先の巡回を禁止</item>
+      <item name="appearance_style">スタイル設定</item>
+      <item name="stylesheet">スタイルシート</item>
+      <item name="style">style属性</item>
+      <item name="author">作者</item>
+      <item name="copyright">コピーライト</item>
+      <item name="add">エレメント追加</item>
+      <item name="remove">選択要素の削除</item>
+      <item name="moveup">選択要素を上へ移動</item>
+      <item name="movedown">選択要素を下へ移動</item>
+      <item name="head_elements">Head要素</item>
+      <item name="info">インフォメーション</item>
+      <item name="add_title">Title要素</item>
+      <item name="add_meta">Meta要素</item>
+      <item name="add_script">Script要素</item>
+      <item name="add_style">Style要素</item>
+      <item name="add_link">Link要素</item>
+      <item name="add_base">Base要素</item>
+      <item name="add_comment">Commentノード</item>
+      <item name="title_element">Title要素</item>
+      <item name="script_element">Script要素</item>
+      <item name="style_element">Style要素</item>
+      <item name="base_element">Base要素</item>
+      <item name="link_element">Link要素</item>
+      <item name="meta_element">Meta要素</item>
+      <item name="comment_element">Comment</item>
+      <item name="src">src</item>
+      <item name="language">Language</item>
+      <item name="href">Href</item>
+      <item name="target">Target</item>
+      <item name="type">Type</item>
+      <item name="charset">Charset</item>
+      <item name="defer">Defer</item>
+      <item name="media">Media</item>
+      <item name="properties">Properties</item>
+      <item name="name">Name</item>
+      <item name="value">Value</item>
+      <item name="content">Content</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href lang</item>
+      <item name="general_props">一般</item>
+      <item name="advanced_props">上級者向け</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">テンプレートの挿入</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">テンプレート</item>
+      <item name="label">テンプレート</item>
+      <item name="desc_label">説明</item>
+      <item name="desc">テンプレートの挿入</item>
+      <item name="select">テンプレートを選択</item>
+      <item name="preview">プレビュー</item>
+      <item name="warning">警告：テンプレートを上書きすると以前のデータは失われます。</item>
+      <item name="mdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="cdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="months_long">January,February,March,April,May,June,July,August,September,October,November,December</item>
+      <item name="months_short">Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec</item>
+      <item name="day_long">日曜日,月曜日,火曜日,水曜日,木曜日,金曜日,土曜日,日曜日</item>
+      <item name="day_short">(日),(月),(火),(水),(木),(金),(土),(日)</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">制御文字の表示</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">スペルチェックOn/Off</item>
+      <item name="menu">スペルチェック設定</item>
+      <item name="ignore_word">この単語を無視</item>
+      <item name="ignore_words">全て無視</item>
+      <item name="langs">言語</item>
+      <item name="wait">しばらくお待ちください...</item>
+      <item name="sug">候補</item>
+      <item name="no_sug">候補は有りません。</item>
+      <item name="no_mpell">スペルミスは見つかりませんでした。</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">改ページ挿入</item>
+    </group>
+    <group target="advlist">
+      <item name="types">Types</item>
+      <item name="def">Default</item>
+      <item name="lower_alpha">Lower alpha</item>
+      <item name="lower_greek">Lower greek</item>
+      <item name="lower_roman">Lower roman</item>
+      <item name="upper_alpha">Upper alpha</item>
+      <item name="upper_roman">Upper roman</item>
+      <item name="circle">Circle</item>
+      <item name="disc">Disc</item>
+      <item name="square">Square</item>
+    </group>
+  </language>
+</language-pack>

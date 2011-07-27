@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>moeinjoon-www.moeinjoon.com</author>
+    <version major="4" minor="5" releasedate="2010-12-09" />
+    <description>This is the Persian language pack for TinyMCE.</description>
+  </header>
+  <language code="fa" title="Persian" dir="rtl">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">آیا شما مایلید تا از حالت ویرایشگر ویزی‌ویگ(نمایش اطلاعات در حالت چاپ شدنی) برای این ناحیه متنی استفاده نمائید؟</item>
+      <item name="apply">بکارگیری</item>
+      <item name="insert">درج</item>
+      <item name="update">بروزرسانی</item>
+      <item name="cancel">انصراف</item>
+      <item name="close">بستن</item>
+      <item name="browse">انتخاب از سرور</item>
+      <item name="class_name">کلاس</item>
+      <item name="not_set">-- تنظیم نشده --</item>
+      <item name="clipboard_msg">برش/کپی/چسباندن برای مرورگر فایرفاکس فعال نمی باشد. \nآیا اطلاعات بیشتری راجع به این موضوع می خواهید؟</item>
+      <item name="clipboard_no_support">در حال حاضر توسط مرورگر شما پشتیبانی نمی شود ، به جای آن از میانبرهای (Shortcut) صفحه کلید استفاده نمائید.</item>
+      <item name="popup_blocked">با عرض پوزش ، ما اطلاع داده بودیم که مدافع پنجره باز شوی (Popup) شما ، پنجره ای را که قابلیت برنامه کاربردی را ارائه می کرد ، غیر فعال کرده است. شما نیاز به غیر فعال کردن مدافع پنجره باز شو (Popup) در این سایت را دارید تا از این ابزار به صورت کامل استفاده نمائید.</item>
+      <item name="invalid_data">خطا: مقادیر نامعتبر وارد شد ، آنها به رنگ قرمز علامت خورده اند.</item>
+      <item name="more_colors">رنگ های بیشتر</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">متن ضخیم (Ctrl+B)</item>
+      <item name="italic_desc">متن مورب (Ctrl+I)</item>
+      <item name="underline_desc">متن زیر خط دار (Ctrl+U)</item>
+      <item name="striketrough_desc">خط وسط</item>
+      <item name="bullist_desc">لیست نامرتب</item>
+      <item name="numlist_desc">لیست مرتب</item>
+      <item name="undo_desc">انجام عمل قبل (Ctrl+Z)</item>
+      <item name="redo_desc">انجام عمل بعد (Ctrl+Y)</item>
+      <item name="cleanup_desc">پاک سازی کد های بهم خورده</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">استیل ها</item>
+      <item name="font_size">اندازه قلم</item>
+      <item name="fontdefault">خانواده قلم</item>
+      <item name="block">قالب</item>
+      <item name="paragraph">پاراگراف</item>
+      <item name="div">Div</item>
+      <item name="address">آدرس</item>
+      <item name="pre">قالب بندی شده از قبل</item>
+      <item name="h1">عنوان گذاری ۱</item>
+      <item name="h2">عنوان گذاری 2</item>
+      <item name="h3">عنوان گذاری 3</item>
+      <item name="h4">عنوان گذاری 4</item>
+      <item name="h5">عنوان گذاری 5</item>
+      <item name="h6">عنوان گذاری 6</item>
+      <item name="blockquote">بلوک نقل قول</item>
+      <item name="code">کد</item>
+      <item name="samp">نمونه کد</item>
+      <item name="dt">تعریف واژه </item>
+      <item name="dd">تعریف توضیح</item>
+      <!-- Buttons -->
+      <item name="bold_desc">متن ضخیم (Ctrl+B)</item>
+      <item name="italic_desc">متن مورب (Ctrl+I)</item>
+      <item name="underline_desc">متن زیر خط دار (Ctrl+U)</item>
+      <item name="striketrough_desc">خط وسط</item>
+      <item name="justifyleft_desc">تراز چپ</item>
+      <item name="justifycenter_desc">تراز وسط</item>
+      <item name="justifyright_desc">تراز راست</item>
+      <item name="justifyfull_desc">هم تراز کردن</item>
+      <item name="bullist_desc">لیست نامرتب</item>
+      <item name="numlist_desc">لیست مرتب</item>
+      <item name="outdent_desc">بیرون آمدگی</item>
+      <item name="indent_desc">تورفتگی</item>
+      <item name="undo_desc">انجام عمل قبل (Ctrl+Z)</item>
+      <item name="redo_desc">انجام عمل بعد (Ctrl+Y)</item>
+      <item name="link_desc">درج/ویرایش لینک</item>
+      <item name="unlink_desc">غیر لینک کردن</item>
+      <item name="image_desc">درج/ویرایش تصویر</item>
+      <item name="cleanup_desc">پاک سازی کد های بهم خورده</item>
+      <item name="code_desc">ویرایش سورس HTML</item>
+      <item name="sub_desc">پایین نویس</item>
+      <item name="sup_desc">بالا نویس</item>
+      <item name="hr_desc">درج خط افقی</item>
+      <item name="removeformat_desc">حذف قالب بندی</item>
+      <item name="custom1_desc">توضیح سفارشی شما در اینجا</item>
+      <item name="forecolor_desc">انتخاب رنگ متن</item>
+      <item name="backcolor_desc">انتخاب رنگ زمینه</item>
+      <item name="charmap_desc">درج کاراکتر سفارشی</item>
+      <item name="visualaid_desc">تعویض عناصر خطوط راهنما/غیر قابل نمایان</item>
+      <item name="anchor_desc">درج/ویرایش لنگر</item>
+      <item name="cut_desc">برش (Cut)</item>
+      <item name="copy_desc">کپی</item>
+      <item name="paste_desc">چسباندن (Paste)</item>
+      <item name="image_props_desc">مشخصات تصویر</item>
+      <item name="newdocument_desc">سند جدید</item>
+      <item name="help_desc">راهنمایی</item>
+      <item name="blockquote_desc">بلوک نقل قول</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">کپی/برش (Cut)/چسباندن (Paste) در Mozilla و Firefox قابل دسترس نمی باشد.\r\nآیا شما اطلاعات بیشتری درباره این موضوع می خواهید؟</item>
+      <item name="path">مسیر</item>
+      <item name="newdocument">آیا شما می خواهید تا تمامی محتوا را پاک کنید؟</item>
+      <item name="toolbar_focus">پرش به دکمه های ابزار - Alt+Q ، پرش به ویرایشگر - Alt-Z ، پرش به مسیر عنصر - Alt-X</item>
+      <item name="more_colors">رنگهای بیشتر</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">درباره TinyMCE</item>
+      <item name="about_general">درباره</item>
+      <item name="about_help">راهنمایی</item>
+      <item name="about_license">لیسانس</item>
+      <item name="about_plugins">الحاقات</item>
+      <item name="about_plugin">الحاقه</item>
+      <item name="about_author">مؤلف</item>
+      <item name="about_version">نسخه</item>
+      <item name="about_loaded">الحاقات بارگذاری شده</item>
+      <!-- Anchor -->
+      <item name="anchor_title">درج/ویرایش لنگر (Anchor)</item>
+      <item name="anchor_name">نام لنگر (Anchor)</item>
+      <!-- Source -->
+      <item name="code_title">ویرایش سورس HTML</item>
+      <item name="code_wordwrap">شکستن خطوط</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">انتخاب یک رنگ</item>
+      <item name="colorpicker_picker_tab">انتخاب کننده</item>
+      <item name="colorpicker_picker_title">انتخاب کننده رنگ</item>
+      <item name="colorpicker_palette_tab">الگو</item>
+      <item name="colorpicker_palette_title">رنگ های الگو</item>
+      <item name="colorpicker_named_tab">نام دار</item>
+      <item name="colorpicker_named_title">رنگ های نام دار</item>
+      <item name="colorpicker_color">رنگ:</item>
+      <item name="colorpicker_name">نام:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">انتخاب کاراکتر سفارشی</item>
+      <!-- Image -->
+      <item name="image_title">درج/ویرایش تصویر</item>
+      <item name="image_src">URL تصویر</item>
+      <item name="image_alt">توضیح تصویر</item>
+      <item name="image_list">لیست تصویر</item>
+      <item name="image_border">حاشیه</item>
+      <item name="image_dimensions">ابعاد</item>
+      <item name="image_vspace">فاصله عمودی</item>
+      <item name="image_hspace">فاصله افقی</item>
+      <item name="image_align">تراز</item>
+      <item name="image_align_baseline">خط پایه</item>
+      <item name="image_align_top">بالا</item>
+      <item name="image_align_middle">وسط</item>
+      <item name="image_align_bottom">پایین</item>
+      <item name="image_align_texttop">بالا متن</item>
+      <item name="image_align_textbottom">پایین متن</item>
+      <item name="image_align_left">چپ</item>
+      <item name="image_align_right">راست</item>
+      <!-- Link -->
+      <item name="link_title">درج/ویرایش لینک</item>
+      <item name="link_url">URL لینک</item>
+      <item name="link_target">مقصد (Target)</item>
+      <item name="link_target_same">بازشدن لینک در همان پنجره</item>
+      <item name="link_target_blank">باز شدن لینک در یک پنجره جدید</item>
+      <item name="link_titlefield">عنوان</item>
+      <item name="link_is_email">URL ی که شما وارد نموده اید به نظر می آید که یک آدرس ایمیل می باشد ، آیا مایلید تا پیشوند اجباری لازمه :mailto را اضافه نمائید؟</item>
+      <item name="link_is_external">URL ی که شما وارد نموده اید به نظر می آید که لینک خارجی می باشد ، آیا مایلید تا پیشوند لازمه //:http را اضافه نمائید؟</item>
+      <item name="link_list">لیست لینک</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">تراز</item>
+      <item name="left">چپ</item>
+      <item name="center">وسط</item>
+      <item name="right">راست</item>
+      <item name="full">کامل</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%Y-%m-%d</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">درج تاریخ</item>
+      <item name="inserttime_desc">درج زمان</item>
+      <item name="months_long">ژانویه,فوریه,مارس,آوریل,مه,ژوئن,ژوئیه,اوت,سپتامبر,اکتبر,نوامبر,دسامبر</item>
+      <item name="months_short">ژانویه,فوریه,مارس,آوریل,مه,ژوئن,ژوئیه,اوت,سپتامبر,اکتبر,نوامبر,دسامبر</item>
+      <item name="day_long">یکشنبه,دوشنبه,سه شنبه,چهارشنبه,پنج شنبه,جمعه,شنبه,یکشنبه</item>
+      <item name="day_short">یکشنبه,دوشنبه,سه شنبه,چهارشنبه,پنج شنبه,جمعه,شنبه,یکشنبه</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">چاپ</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">پیش نمایش</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">جهت چپ به راست</item>
+      <item name="rtl_desc">جهت راست به چپ</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">درج لایه جدید</item>
+      <item name="forward_desc">انتقال به جلو</item>
+      <item name="backward_desc">انتقال به پشت</item>
+      <item name="absolute_desc">تعویض موقعیت مطلق</item>
+      <item name="content">لایه جدید...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">ذخیره</item>
+      <item name="cancel_desc">لغو تمامی تغییرات</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">درج کاراکتر فاصله بدون قطع شدگی</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">اجرای بررسی املاء</item>
+      <item name="download">ieSpell تشخیص داده نشد. آیا شما مایل به نصب آن هستید؟</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">خط افقی</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">پهنا</item>
+      <item name="size">ارتفاع</item>
+      <item name="noshade">بدون سایه</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">شکلک</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">درج شکلک</item>
+      <item name="desc">شکلک ها</item>
+      <item name="cool">آرام</item>
+      <item name="cry">گریه</item>
+      <item name="embarassed">خجالتی</item>
+      <item name="foot_in_mouth">پا در دهان</item>
+      <item name="frown">اخم</item>
+      <item name="innocent">بی تقصیر</item>
+      <item name="kiss">بوسه</item>
+      <item name="laughing">خنده</item>
+      <item name="money_mouth">پول در دهان</item>
+      <item name="sealed">مهر شده</item>
+      <item name="smile">لبخند</item>
+      <item name="surprised">متعجب</item>
+      <item name="tongue_out">زبان درازی</item>
+      <item name="undecided">مردد</item>
+      <item name="wink">چشمک</item>
+      <item name="yell">فریاد</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">جستجو</item>
+      <item name="replace_desc">جستجو/تعویض</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">جستجوی مجدد</item>
+      <item name="notfound">جستجو کامل شد. کلمه جستجو شده یافت نشد</item>
+      <item name="search_title">جستجو</item>
+      <item name="replace_title">جستجو/تعویض</item>
+      <item name="allreplaced">تمامی کلمات یافت شده تغییر یافتند</item>
+      <item name="findwhat">جستجوی چه چیزی</item>
+      <item name="replacewith">تعویض با</item>
+      <item name="direction">جهت</item>
+      <item name="up">بالا</item>
+      <item name="down">پایین</item>
+      <item name="mcase">همسان بودن حروف</item>
+      <item name="findnext">جستجوی بعدی</item>
+      <item name="replace">تعویض</item>
+      <item name="replaceall">تعویض همه</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">درج/ویرایش تصویر</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">عمومی</item>
+      <item name="tab_appearance">ظاهر</item>
+      <item name="tab_advanced">پیشرفته</item>
+      <item name="general">عمومی</item>
+      <item name="title">عنوان</item>
+      <item name="preview">پیش نمایش</item>
+      <item name="constrain_proportions">حفظ تناسب</item>
+      <item name="langdir">جهت زبان</item>
+      <item name="langcode">کد زبان</item>
+      <item name="long_desc">لینک توضیح طولانی</item>
+      <item name="style">استیل</item>
+      <item name="classes">کلاس ها</item>
+      <item name="ltr">چپ به راست</item>
+      <item name="rtl">راست به چپ</item>
+      <item name="id">شناسه</item>
+      <item name="map">نقشه تصویر</item>
+      <item name="swap_image">تعویض تصویر</item>
+      <item name="alt_image">تصویر جایگزین</item>
+      <item name="mouseover">برای آمدن موس</item>
+      <item name="mouseout">برای رفتن موس</item>
+      <item name="misc">متفرقه</item>
+      <item name="example_img">تصویر پیش نمایش ظاهر</item>
+      <item name="missing_alt">آیا شما از ادامه بدون شامل کردن یک توضیح برای تصویر اطمینان دارید؟ بدون آن ممکن نیست تصاویر برای برخی کاربرانی که قابلیت دیدن تصاویر را ندارند ، یا آنهایی که از یک مرورگر متنی استفاده می کنند ، یا در حال دیدن وب بدون تصویر می باشند ، قابل دستیابی باشد.</item>
+      <item name="dialog_title">درج/ویرایش تصویر</item>
+      <item name="src">آدرس تصویر (URL)</item>
+      <item name="alt">توضیح تصویر</item>
+      <item name="list">لیست تصویر</item>
+      <item name="border">حاشیه</item>
+      <item name="dimensions">ابعاد</item>
+      <item name="vspace">فاصله عمودی</item>
+      <item name="hspace">فاصله افقی</item>
+      <item name="align">تراز</item>
+      <item name="align_baseline">خط پایه</item>
+      <item name="align_top">بالا</item>
+      <item name="align_middle">وسط</item>
+      <item name="align_bottom">پایین</item>
+      <item name="align_texttop">متن بالا</item>
+      <item name="align_textbottom">متن پایین</item>
+      <item name="align_left">چپ</item>
+      <item name="align_right">راست</item>
+      <item name="image_list">لیست تصویر</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">درج/ویرایش لینک</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">درج/ویرایش لینک</item>
+      <item name="url">URL لینک</item>
+      <item name="target">مقصد (Target)</item>
+      <item name="titlefield">عنوان</item>
+      <item name="is_email">URL ی که وارد کرده اید به نظر می آید که یک آدرس ایمیل می باشد ، آیا مایلید تا پیشوند لازمه :mailto را اضافه نمائید؟</item>
+      <item name="is_external">URL ی که وارد کرده اید به نظر می آید که یک لینک خارجی می باشد ، آیا مایلید تا پیشوند لازمه //:http را اضافه نمائید؟</item>
+      <item name="list">لیست لینک</item>
+      <item name="general_tab">عمومی</item>
+      <item name="popup_tab">پنجره بازشو (Popup)</item>
+      <item name="events_tab">رویدادها</item>
+      <item name="advanced_tab">پیشرفته</item>
+      <item name="general_props">مشخصات عمومی</item>
+      <item name="popup_props">مشخصات پنجره بازشو (Popup)</item>
+      <item name="event_props">رویدادها</item>
+      <item name="advanced_props">مشخصات پیشرفته</item>
+      <item name="popup_opts">گزینه ها</item>
+      <item name="anchor_names">لنگرها (Anchor)</item>
+      <item name="target_same">بازشدن در این پنجره / قاب (Frame)</item>
+      <item name="target_parent">بازشدن در پنجره / قاب والد (Parent Frame)</item>
+      <item name="target_top">بازشدن در قاب بالا (Top Frame) (تمامی قاب ها را تعویض می کند)</item>
+      <item name="target_blank">بازشدن در پنجره جدید</item>
+      <item name="popup">پنجره بازشوی Javascript</item>
+      <item name="popup_url">URL پنجره بازشو (Popup)</item>
+      <item name="popup_name">نام پنجره</item>
+      <item name="popup_return">درج 'return false'</item>
+      <item name="popup_scrollbars">نمایش نوار پیمایش ها</item>
+      <item name="popup_statusbar">نمایش نوار وضعیت</item>
+      <item name="popup_toolbar">نمایش نوار ابزار</item>
+      <item name="popup_menubar">نمایش نوار منو</item>
+      <item name="popup_location">نمایش نوار مکان</item>
+      <item name="popup_resizable">ایجاد پنجره قابل اندازه بندی مجدد</item>
+      <item name="popup_dependent">وابسته (فقط Mozilla/Firefox)</item>
+      <item name="popup_size">اندازه</item>
+      <item name="popup_position">موقعیت (X/Y)</item>
+      <item name="id">شناسه</item>
+      <item name="style">استیل</item>
+      <item name="classes">کلاس ها</item>
+      <item name="target_name">نام مقصد (Target)</item>
+      <item name="langdir">جهت زبان</item>
+      <item name="target_langcode">زبان مقصد (Target)</item>
+      <item name="langcode">کد زبان</item>
+      <item name="encoding">رمزگذاری کاراکتر مقصد (Target)</item>
+      <item name="mime">نوع MIME مقصد (Target)</item>
+      <item name="rel">رابطه صفحه با مقصد (Target)</item>
+      <item name="rev">رابطه مقصد (Target) با صفحه</item>
+      <item name="tabindex">Tabindex</item>
+      <item name="accesskey">Accesskey</item>
+      <item name="ltr">چپ به راست</item>
+      <item name="rtl">راست به چپ</item>
+      <item name="link_list">لیست لینک</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">نقل قول</item>
+      <item name="abbr_desc">اختصار</item>
+      <item name="acronym_desc">مخفف</item>
+      <item name="del_desc">حذف</item>
+      <item name="ins_desc">درج</item>
+      <item name="attribs_desc">درج/ویرایش صفات</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">عنوان</item>
+      <item name="attribute_label_id">شناسه</item>
+      <item name="attribute_label_class">کلاس</item>
+      <item name="attribute_label_style">استیل</item>
+      <item name="attribute_label_cite">اعلامیه</item>
+      <item name="attribute_label_datetime">تاریخ/زمان</item>
+      <item name="attribute_label_langdir">جهت متن</item>
+      <item name="attribute_option_ltr">چپ به راست</item>
+      <item name="attribute_option_rtl">راست به چپ</item>
+      <item name="attribute_label_langcode">زبان</item>
+      <item name="attribute_label_tabindex">TabIndex</item>
+      <item name="attribute_label_accesskey">AccessKey</item>
+      <item name="attribute_events_tab">رویدادها</item>
+      <item name="attribute_attrib_tab">صفات</item>
+      <item name="general_tab">عمومی</item>
+      <item name="attrib_tab">صفات</item>
+      <item name="events_tab">رویدادها</item>
+      <item name="fieldset_general_tab">تنظیمات عمومی</item>
+      <item name="fieldset_attrib_tab">صفات عنصر</item>
+      <item name="fieldset_events_tab">رویدادهای عنصر</item>
+      <item name="title_ins_element">عنصر درج</item>
+      <item name="title_del_element">عنصر حذف</item>
+      <item name="title_acronym_element">عنصر مخفف</item>
+      <item name="title_abbr_element">عنصر اختصار</item>
+      <item name="title_cite_element">عنصر نقل قول</item>
+      <item name="remove">حذف</item>
+      <item name="insert_date">درج تاریخ/زمان فعلی</item>
+      <item name="option_ltr">چپ به راست</item>
+      <item name="option_rtl">راست به چپ</item>
+      <item name="attribs_title">درج/ویرایش صفات</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">ویرایش استیل CSS</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">ویرایش استیل CSS</item>
+      <item name="apply">بکارگیری</item>
+      <item name="text_tab">متن</item>
+      <item name="background_tab">زمینه</item>
+      <item name="block_tab">بلوک</item>
+      <item name="box_tab">جعبه</item>
+      <item name="border_tab">حاشیه</item>
+      <item name="list_tab">لیست</item>
+      <item name="positioning_tab">موقعیت</item>
+      <item name="text_props">متن</item>
+      <item name="text_font">قلم</item>
+      <item name="text_size">اندازه</item>
+      <item name="text_weight">حالت</item>
+      <item name="text_style">استیل</item>
+      <item name="text_variant">نوع تغییر</item>
+      <item name="text_lineheight">بلندی خط</item>
+      <item name="text_case">حالت</item>
+      <item name="text_color">رنگ</item>
+      <item name="text_decoration">آرایش</item>
+      <item name="text_overline">بالا خط</item>
+      <item name="text_underline">زیر خط</item>
+      <item name="text_striketrough">خط وسط</item>
+      <item name="text_blink">چشمک زن</item>
+      <item name="text_none">هیچ کدام</item>
+      <item name="background_color">رنگ زمینه</item>
+      <item name="background_image">تصویر زمینه</item>
+      <item name="background_repeat">تکرار</item>
+      <item name="background_attachment">زمیمه</item>
+      <item name="background_hpos">موقعیت افقی</item>
+      <item name="background_vpos">موقعیت عمودی</item>
+      <item name="block_wordspacing">فاصله کلمات</item>
+      <item name="block_letterspacing">فاصله حروف</item>
+      <item name="block_vertical_alignment">تراز عمودی</item>
+      <item name="block_text_align">تراز متن</item>
+      <item name="block_text_indent">تورفتگی متن</item>
+      <item name="block_whitespace">فاصله سفید</item>
+      <item name="block_display">نمایش</item>
+      <item name="box_width">پهنا</item>
+      <item name="box_height">ارتفاع</item>
+      <item name="box_float">شناور</item>
+      <item name="box_clear">پاک سازی</item>
+      <item name="padding">لایه گذاری</item>
+      <item name="same">همسان برای همه</item>
+      <item name="top">بالا</item>
+      <item name="right">راست</item>
+      <item name="bottom">پایین</item>
+      <item name="left">چپ</item>
+      <item name="margin">حاشیه</item>
+      <item name="style">استیل</item>
+      <item name="width">پهنا</item>
+      <item name="height">ارتفاع</item>
+      <item name="color">رنگ</item>
+      <item name="list_type">نوع</item>
+      <item name="bullet_image">تصویر گلوله</item>
+      <item name="position">موقعیت</item>
+      <item name="positioning_type">نوع</item>
+      <item name="visibility">قابلیت رویت</item>
+      <item name="zindex">محور Z</item>
+      <item name="overflow">سر ریز</item>
+      <item name="placement">موقعیت مکانی</item>
+      <item name="clip">برش (Clip)</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">چسباندن به عنوان متن ساده</item>
+      <item name="paste_word_desc">چسباندن از وُرد</item>
+      <item name="selectall_desc">انتخاب همه</item>
+      <item name="plaintext_mode_sticky">چسباندن متن در حالت ساده است. برای برگشت به حالت چسباندن باقاعده دوباره کلیک کنید. بعد از اینکه چسباندن را انجام دادید به حالت چسباندن باقاعده باز می گردید.</item>
+      <item name="plaintext_mode">چسباندن متن در حالت ساده است. برای برگشت به حالت چسباندن باقاعده دوباره کلیک کنید.</item>
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">جهت چسباندن متن در پنجره از CTRL+V بر روی صفحه کلید خود استفاده نمائید.</item>
+      <item name="text_linebreaks">حفظ قطع خطوط</item>
+      <item name="word_title">جهت چسباندن متن در پنجره از CTRL+V بر روی صفحه کلید خود استفاده نمائید.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">یک جدول جدید درج می کند</item>
+      <item name="row_before_desc">درج سطر در قبل</item>
+      <item name="row_after_desc">درج سطر در بعد</item>
+      <item name="delete_row_desc">حذف سطر</item>
+      <item name="col_before_desc">درج ستون در قبل</item>
+      <item name="col_after_desc">درج ستون در بعد</item>
+      <item name="delete_col_desc">حذف ستون</item>
+      <item name="split_cells_desc">تقسیم سلول های جدول ادغام شده</item>
+      <item name="merge_cells_desc">ادغام سلول های جدول</item>
+      <item name="row_desc">مشخصات سطر جدول</item>
+      <item name="cell_desc">مشخصات سلول جدول</item>
+      <item name="props_desc">مشخصات جدول</item>
+      <item name="paste_row_before_desc">چسباندن (Paste) سطر جدول در قبل</item>
+      <item name="paste_row_after_desc">چسباندن (Paste) سطر جدول در بعد</item>
+      <item name="cut_row_desc">برش (Cut) سطر جدول</item>
+      <item name="copy_row_desc">کپی  سطر جدول</item>
+      <item name="del">حذف جدول</item>
+      <item name="row">سطر</item>
+      <item name="col">ستون</item>
+      <item name="cell">سلول</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width"></item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">عمومی</item>
+      <item name="advanced_tab">پیشرفته</item>
+      <item name="general_props">مشخصات عمومی</item>
+      <item name="advanced_props">مشخصات پیشرفته</item>
+      <item name="rowtype">سطر در بخش جدول</item>
+      <item name="title">درج/اصلاح جدول</item>
+      <item name="width">پهنا</item>
+      <item name="height">ارتفاع</item>
+      <item name="cols">ستون ها</item>
+      <item name="rows">سطرها</item>
+      <item name="cellspacing">فاصله سلول ها</item>
+      <item name="cellpadding">لایه گذاری سلول ها</item>
+      <item name="border">حاشیه</item>
+      <item name="align">تراز</item>
+      <item name="align_default">پیشفرض</item>
+      <item name="align_left">چپ</item>
+      <item name="align_right">راست</item>
+      <item name="align_middle">وسط</item>
+      <item name="row_title">مشخصات سطر جدول</item>
+      <item name="cell_title">مشخصات سلول جدول</item>
+      <item name="cell_type">نوع سلول</item>
+      <item name="valign">تراز عمودی</item>
+      <item name="align_top">بالا</item>
+      <item name="align_bottom">پایین</item>
+      <item name="bordercolor">رنگ حاشیه</item>
+      <item name="bgcolor">رنگ زمینه</item>
+      <item name="merge_cells_title">ادغام سلول های جدول</item>
+      <item name="id">شناسه</item>
+      <item name="style">استیل</item>
+      <item name="langdir">جهت زبان</item>
+      <item name="langcode">کد زبان</item>
+      <item name="mime">نوع MIME مقصد (Target)</item>
+      <item name="ltr">چپ به راست</item>
+      <item name="rtl">راست به چپ</item>
+      <item name="bgimage">تصویر زمینه</item>
+      <item name="summary">خلاصه</item>
+      <item name="td">داده</item>
+      <item name="th">سر جدول</item>
+      <item name="cell_cell">بروزرسانی سلول فعلی</item>
+      <item name="cell_row">بروزرسانی تمامی سلول های سطر</item>
+      <item name="cell_all">بروزرسانی تمامی سلول های جدول</item>
+      <item name="row_row">بروزرسانی سطر فعلی</item>
+      <item name="row_odd">بروزرسانی سطرهای فرد در جدول</item>
+      <item name="row_even">بروزرسانی سطرهای زوج در جدول</item>
+      <item name="row_all">بروزرسانی تمامی سطرها در جدول</item>
+      <item name="thead">بالای جدول</item>
+      <item name="tbody">بدنه جدول</item>
+      <item name="tfoot">پایین جدول</item>
+      <item name="scope">محدوده</item>
+      <item name="rowgroup">گروه سطر</item>
+      <item name="colgroup">گروه ستون</item>
+      <item name="col_limit">شما از تعداد حداکثر {$cols} ستون تجاوز کردید.</item>
+      <item name="row_limit">شما از تعداد حداکثر {$rows} سطر تجاوز کردید.</item>
+      <item name="cell_limit">شما از تعداد حداکثر {$cells} سلول تجاوز کردید.</item>
+      <item name="missing_scope">آیا بدون تعیین محدوده برای سلول عنوان جدول، ادامه می دهید؟. بدون این کار ، ممکن است درک محتوا یا داده ها برای بعضی از کاربران مشکل باشد.</item>
+      <item name="caption">عنوان جدول</item>
+      <item name="frame">قاب (Frame)</item>
+      <item name="frame_none">هیچ کدام</item>
+      <item name="frame_groups">گروه ها</item>
+      <item name="frame_rows">سطرها</item>
+      <item name="frame_cols">ستون ها</item>
+      <item name="frame_all">همه</item>
+      <item name="rules">خط ها</item>
+      <item name="rules_void">خالی</item>
+      <item name="rules_above">بالا</item>
+      <item name="rules_below">پایین</item>
+      <item name="rules_hsides">hsides</item>
+      <item name="rules_lhs">lhs</item>
+      <item name="rules_rhs">rhs</item>
+      <item name="rules_vsides">vsides</item>
+      <item name="rules_box">جعبه</item>
+      <item name="rules_border">حاشیه</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">اگر از این صفحه به جای دیگری بروید ، تغییرات در محتوا از دست خواهد رفت.</item>
+      <item name="restore_content">بازگردانی محتوا از ذخیره‌ی خودکار</item>
+      <item name="warning_message">اگر محتوای ذخیره شده را بازیابی کنید، محتوای موجود در ویرایشگر از بین می‌رود.برای بازیابی محتوای ذخیره اطمینان دارید؟.</item>
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">تعویض به حالت صفحه کامل</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">درج / ویرایش رسانه جاسازی شده (Embeded Media)</item>
+      <item name="edit">ویرایش رسانه جاسازی شده (Embeded Media)</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">درج / ویرایش رسانه جاسازی شده (Embeded Media)</item>
+      <item name="general">عمومی</item>
+      <item name="advanced">پیشرفته</item>
+      <item name="file">فایل/URL</item>
+      <item name="list">لیست</item>
+      <item name="size">ابعاد</item>
+      <item name="preview">پیش نمایش</item>
+      <item name="constrain_proportions">حفظ تناسب</item>
+      <item name="type">نوع</item>
+      <item name="id">شناسه</item>
+      <item name="name">نام</item>
+      <item name="class_name">کلاس</item>
+      <item name="vspace">فاصله عمودی</item>
+      <item name="hspace">فاصله افقی</item>
+      <item name="play">پخش اتوماتیک</item>
+      <item name="loop">حلقه (Loop)</item>
+      <item name="menu">نمایش منو</item>
+      <item name="quality">کیفیت</item>
+      <item name="scale">مقیاس</item>
+      <item name="align">تراز</item>
+      <item name="salign">SAlign</item>
+      <item name="wmode">WMode</item>
+      <item name="bgcolor">زمینه</item>
+      <item name="base">پایه (Base)</item>
+      <item name="flashvars">متغیرهای Flash</item>
+      <item name="liveconnect">ارتباط SWLive</item>
+      <item name="autohref">HREF اتوماتیک</item>
+      <item name="cache">کش</item>
+      <item name="hidden">مخفی</item>
+      <item name="controller">کنترل کننده</item>
+      <item name="kioskmode">حالت Kiosk</item>
+      <item name="playeveryframe">پخش هر فریم (Frame)</item>
+      <item name="targetcache">کش مقصد (Target Cache)</item>
+      <item name="correction">بدون تصحیح</item>
+      <item name="enablejavascript">فعال بودن JavaScript</item>
+      <item name="starttime">زمان شروع</item>
+      <item name="endtime">زمان پایان</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">سرعت Choke</item>
+      <item name="target">مقصد (Target)</item>
+      <item name="volume">بلندی صدا</item>
+      <item name="autostart">شروع اتوماتیک</item>
+      <item name="enabled">فعال شده</item>
+      <item name="fullscreen">تمام صفحه</item>
+      <item name="invokeurls">Invoke URLs</item>
+      <item name="mute">بی صدا</item>
+      <item name="stretchtofit">کشیدن جهت گنجاندن کامل</item>
+      <item name="windowlessvideo">ویدئوی کم پنجره</item>
+      <item name="balance">توازن (Balance)</item>
+      <item name="baseurl">URL پایه</item>
+      <item name="captioningid">شناسه عنوان</item>
+      <item name="currentmarker">نشانگر فعلی</item>
+      <item name="currentposition">موقعیت فعلی</item>
+      <item name="defaultframe">فریم پیشفرض</item>
+      <item name="playcount">تعداد پخش</item>
+      <item name="rate">نرخ</item>
+      <item name="uimode">حالت UI</item>
+      <item name="flash_options">تنظیمات فلش</item>
+      <item name="qt_options">تنظیمات Quicktime</item>
+      <item name="wmp_options">تنظیمات Windows media player</item>
+      <item name="rmp_options">تنظیمات Real media player</item>
+      <item name="shockwave_options">تنظیمات Shockwave</item>
+      <item name="autogotourl">رفتن اتوماتیک به URL</item>
+      <item name="center">وسط</item>
+      <item name="imagestatus">وضعیت تصویر</item>
+      <item name="maintainaspect">حفظ تناسب وجوه</item>
+      <item name="nojava">بدون java</item>
+      <item name="prefetch">پیش واکشی</item>
+      <item name="shuffle">در هم آمیختن</item>
+      <item name="console">کنسول</item>
+      <item name="numloop">تعداد حلقه ها</item>
+      <item name="controls">کنترل ها</item>
+      <item name="scriptcallbacks">اسکریپت Callbacks</item>
+      <item name="swstretchstyle">کشیدن استیل</item>
+      <item name="swstretchhalign">کشیدن تراز افقی</item>
+      <item name="swstretchvalign">کشیدن تراز عمودی</item>
+      <item name="sound">صدا</item>
+      <item name="progress">پیشرفت</item>
+      <item name="qtsrc">منبع QT</item>
+      <item name="qt_stream_warn">منابع Streamed rtsp باید در برگه (Tab) پیشرفته در فیلد منبع QT اضافه شود.\nشما باید همچنین یک نسخه غیر streamed را در فیلد منبع اضافه نمائید..</item>
+      <item name="align_top">بالا</item>
+      <item name="align_right">راست</item>
+      <item name="align_bottom">پایین</item>
+      <item name="align_left">چپ</item>
+      <item name="align_center">وسط</item>
+      <item name="align_top_left">بالا چپ</item>
+      <item name="align_top_right">بالا راست</item>
+      <item name="align_bottom_left">پایین چپ</item>
+      <item name="align_bottom_right">پایین راست</item>
+      <item name="flv_options">تنظیمات ویدئوی فلش</item>
+      <item name="flv_scalemode">حالت مقیاس</item>
+      <item name="flv_buffer">بافر (Buffer)</item>
+      <item name="flv_startimage">تصویر شروع</item>
+      <item name="flv_starttime">زمان شروع</item>
+      <item name="flv_defaultvolume">بلندی صدای پیشفرض</item>
+      <item name="flv_hiddengui">GUI مخفی</item>
+      <item name="flv_autostart">شروع اتوماتیک</item>
+      <item name="flv_loop">حلقه (Loop)</item>
+      <item name="flv_showscalemodes">نمایش حالت های مقیاس</item>
+      <item name="flv_smoothvideo">ویدئوی صاف</item>
+      <item name="flv_jscallback">JS Callback</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">مشخصات سند</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">مشخصات سند</item>
+      <item name="meta_tab">عمومی</item>
+      <item name="appearance_tab">ظاهر</item>
+      <item name="advanced_tab">پیشرفته</item>
+      <item name="meta_props">اطلاعات متا (Meta)</item>
+      <item name="langprops">زبان و رمزگذاری (Encoding)</item>
+      <item name="meta_title">عنوان</item>
+      <item name="meta_keywords">کلمات کلیدی</item>
+      <item name="meta_description">توضیح</item>
+      <item name="meta_robots">روبات ها (Robots)</item>
+      <item name="doctypes">نوع سند</item>
+      <item name="langcode">کد زبان</item>
+      <item name="langdir">جهت زبان</item>
+      <item name="ltr">چپ به راست</item>
+      <item name="rtl">راست به چپ</item>
+      <item name="xml_pi">اعلان XML</item>
+      <item name="encoding">رمزگذاری (Encoding) کاراکتر</item>
+      <item name="appearance_bgprops">مشخصات زمینه</item>
+      <item name="appearance_marginprops">حاشیه های بدنه (Body)</item>
+      <item name="appearance_linkprops">رنگ های لینک</item>
+      <item name="appearance_textprops">مشخصات متن</item>
+      <item name="bgcolor">رنگ زمینه</item>
+      <item name="bgimage">تصویر زمینه</item>
+      <item name="left_margin">حاشیه چپ</item>
+      <item name="right_margin">حاشیه راست</item>
+      <item name="top_margin">حاشیه بالا</item>
+      <item name="bottom_margin">حاشیه پایین</item>
+      <item name="text_color">رنگ متن</item>
+      <item name="font_size">اندازه قلم</item>
+      <item name="font_face">ظاهر قلم</item>
+      <item name="link_color">رنگ قلم</item>
+      <item name="hover_color">رنگ در حالت قرارگیری موس</item>
+      <item name="visited_color">رنگ در حالت بازدید شده</item>
+      <item name="active_color">رنگ در حالت فعال</item>
+      <item name="textcolor">رنگ</item>
+      <item name="fontsize">اندازه قلم</item>
+      <item name="fontface">خانواده قلم</item>
+      <item name="meta_index_follow">فهرست و دنباله روی لینک ها</item>
+      <item name="meta_index_nofollow">فهرست و عدم دنباله روی لینک ها</item>
+      <item name="meta_noindex_follow">عدم فهرست اما دنباله روی لینک ها</item>
+      <item name="meta_noindex_nofollow">عدم فهرست و عدم دنباله روی لینک ها</item>
+      <item name="appearance_style">ورقه استیل و مشخصات استیل</item>
+      <item name="stylesheet">ورقه استیل</item>
+      <item name="style">استیل</item>
+      <item name="author">مؤلف</item>
+      <item name="copyright">حق انحصاری</item>
+      <item name="add">افزودن عنصر جدید</item>
+      <item name="remove">حذف عنصر انتخاب شده</item>
+      <item name="moveup">انتقال عنصر انتخاب شده به بالا</item>
+      <item name="movedown">انتقال عنصر انتخاب شده به پایین</item>
+      <item name="head_elements">عناصر سر (Head)</item>
+      <item name="info">اطلاعات</item>
+      <item name="add_title">عنصر عنوان</item>
+      <item name="add_meta">عنصر متا (Meta)</item>
+      <item name="add_script">عنصر اسکریپت (Script)</item>
+      <item name="add_style">عنصر استیل (Style)</item>
+      <item name="add_link">عنصر لینک (Link)</item>
+      <item name="add_base">عنصر پایه (Base)</item>
+      <item name="add_comment">گره توضیح</item>
+      <item name="title_element">عنصر عنوان (Title)</item>
+      <item name="script_element">عنصر اسکریپت (Script)</item>
+      <item name="style_element">عنصر استیل (Style)</item>
+      <item name="base_element">عنصر پایه</item>
+      <item name="link_element">عنصر لینک</item>
+      <item name="meta_element">عنصر متا (Meta)</item>
+      <item name="comment_element">توضیح</item>
+      <item name="src">منبع (Src)</item>
+      <item name="language">زبان</item>
+      <item name="href">آدرس (Href)</item>
+      <item name="target">مقصد (Target)</item>
+      <item name="type">نوع</item>
+      <item name="charset">مجموعه کاراکتر (Charset)</item>
+      <item name="defer">Defer</item>
+      <item name="media">رسانه (Media)</item>
+      <item name="properties">مشخصات</item>
+      <item name="name">نام</item>
+      <item name="value">مقدار</item>
+      <item name="content">محتوا</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">زبان Href</item>
+      <item name="general_props">عمومی</item>
+      <item name="advanced_props">پیشرفته</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">درج محتوای قالب از پیش تعریف شده</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">قالب ها</item>
+      <item name="label">قالب</item>
+      <item name="desc_label">توضیح</item>
+      <item name="desc">درج محتوای قالب از پیش تعیین شده</item>
+      <item name="select">انتخاب یک قالب</item>
+      <item name="preview">پیش نمایش</item>
+      <item name="warning">هشدار: بروزرسانی یک قالب با یک نوع متفاوت دیگر ممکن است باعث از دست رفتن داده ها شود.</item>
+      <item name="mdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="cdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="months_long">ژانویه,فوریه,مارس,آوریل,مه,ژوئن,ژوئیه,اوت,سپتامبر,اکتبر,نوامبر,دسامبر</item>
+      <item name="months_short">ژانویه,فوریه,مارس,آوریل,مه,ژوئن,ژوئیه,اوت,سپتامبر,اکتبر,نوامبر,دسامبر</item>
+      <item name="day_long">یکشنبه,دوشنبه,سه شنبه,چهارشنبه,پنج شنبه,جمعه,شنبه,یکشنبه</item>
+      <item name="day_short">یکشنبه,دوشنبه,سه شنبه,چهارشنبه,پنج شنبه,جمعه,شنبه,یکشنبه</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">روشن/خاموش کردن کاراکتر های کنترل بصری (Visual).</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">تعویض بررسی کننده املاء</item>
+      <item name="menu">تنظیمات بررسی کننده املاء</item>
+      <item name="ignore_word">چشم پوشی از کلمه</item>
+      <item name="ignore_words">چشم پوشی از همه</item>
+      <item name="langs">زبان ها</item>
+      <item name="wait">لطفا منتظر بمانید...</item>
+      <item name="sug">پیشنهادات</item>
+      <item name="no_sug">بدون پیشنهاد</item>
+      <item name="no_mpell">هیچ خطای املائی یافته نشد.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">درج قطع صفحه.</item>
+    </group>
+    <group target="advlist">
+      <item name="types">انواع</item>
+      <item name="def">پیش‌فرض</item>
+      <item name="lower_alpha">پایین‌تر (alpha)</item>
+      <item name="lower_greek">پایین‌تر (greek)</item>
+      <item name="lower_roman">پایین‌تر (roman)</item>
+      <item name="upper_alpha">بالاتر (alpha)</item>
+      <item name="upper_roman">بالاتر (roman)</item>
+      <item name="circle">دایره</item>
+      <item name="disc">قرص مانند</item>
+      <item name="square">مربع</item>
+    </group>
+  </language>
+</language-pack>

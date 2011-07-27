@@ -1,12 +1,12 @@
 # Traducerea în română, cu diacritice, pentru TinyMCE.
-# Version 2.8
+# Version 3.2
 #
 # fester&&Andreiz&&Nicu
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2010-02-08 00:00+0000\n"
+"PO-Revision-Date: 2010-12-05 00:00+0000\n"
 "Last-Translator: fester&&Andreiz&&Nicu\n"
 "Language-Team: fester&&Andreiz&&Nicu\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Domain: tinymce\n"
 
 msgid "common_edit_confirm"
-msgstr "Doriţi să folosiţi un editor avansat pentru această zonăd de text?"
+msgstr "Doriţi să folosiţi un editor avansat pentru această zonă de text?"
 
 msgid "common_apply"
 msgstr "Aplică"
@@ -1296,6 +1296,12 @@ msgstr "Lipire din Word"
 msgid "paste_selectall_desc"
 msgstr "Selectează tot"
 
+msgid "paste_plaintext_mode_sticky"
+msgstr "Lipirea este acum în modul text simplu. Apăsaţi aici pentru comutarea la modul normal de lipire. După ce veţi lipi ceva veţi reveni la modul normal de lipire."
+
+msgid "paste_plaintext_mode"
+msgstr "Lipirea este acum în modul text simplu. Apăsaţi din nou pentru comutarea la modul normal de lipire."
+
 msgid "paste_dlg_text_title"
 msgstr "Folosiţi CTRL+V pentru a lipi în această zonă."
 
@@ -1607,6 +1613,12 @@ msgstr "border"
 
 msgid "autosave_unload_msg"
 msgstr "Modificările nu vor fi salvate."
+
+msgid "autosave_restore_content"
+msgstr "Restaurează conţinutul salvat automat."
+
+msgid "autosave_warning_message"
+msgstr "Daca restaurati continutul salvat vei pierde tot continutul existent din editor.\n\nSigur doriti sa restaurati continutul salvat?."
 
 msgid "fullscreen_desc"
 msgstr "Mod ecran complet"
@@ -2258,4 +2270,34 @@ msgstr "Nu sunt greşeli."
 
 msgid "pagebreak_desc"
 msgstr "Inserează un separator de pagină"
+
+msgid "advlist_types"
+msgstr "Tipuri"
+
+msgid "advlist_def"
+msgstr "Implicit"
+
+msgid "advlist_lower_alpha"
+msgstr "Minuscule alfabetice"
+
+msgid "advlist_lower_greek"
+msgstr "Minuscule greceşti"
+
+msgid "advlist_lower_roman"
+msgstr "Minuscule romane"
+
+msgid "advlist_upper_alpha"
+msgstr "Majuscule alfabetice"
+
+msgid "advlist_upper_roman"
+msgstr "Majuscule romane"
+
+msgid "advlist_circle"
+msgstr "Cerc"
+
+msgid "advlist_disc"
+msgstr "Disc"
+
+msgid "advlist_square"
+msgstr "Pătrat"
 

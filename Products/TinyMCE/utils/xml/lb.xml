@@ -1,0 +1,925 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>Michel Weimerskirch (michel@spellchecker.lu), Pit Wenkin (pit@wenkin.lu)</author>
+    <version major="1" minor="2" releasedate="2010-04-25" />
+    <description>Dëst ass de lëtzebuergesche Sprooche-Pak fir TinyMCE.</description>
+  </header>
+  <language code="lb" title="Lëtzebuergesch" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">Dësen Textberäich mat WYSIWYG beaarbechten?</item>
+      <item name="apply">Iwwerhuelen</item>
+      <item name="insert">Afügen</item>
+      <item name="update">Aktualiséieren</item>
+      <item name="cancel">Ofbriechen</item>
+      <item name="close">Zoumaachen</item>
+      <item name="browse">Duerchsichen</item>
+      <item name="class_name">CSS-Klass</item>
+      <item name="not_set">- ondefinéiert -</item>
+      <item name="clipboard_msg">Kopéieren, Ausschneiden an Afügen sinn am Mozilla Firefox net méiglech.\nWëllt Dir méi iwwert dëse Problem gewuer ginn?</item>
+      <item name="clipboard_no_support">Gëtt momentan net an Ärem Browser ënnerstëtzt. Benotzt wann ech gelift d'Tastekombinatiounen.</item>
+      <item name="popup_blocked">Leider huet Äre Popup-Blocker eng Fënster ënnerdréckt, déi fir d'Funktionéiere vun dësem Programm néideg ass. Deaktivéiert wann ech gelift de Popup-Blocker fir dës Säit.</item>
+      <item name="invalid_data">Feeler: Dir hutt ongülteg Wäerter uginn (rout markéiert).</item>
+      <item name="more_colors">Weider Fuerwen</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">Fett (Strg+B)</item>
+      <item name="italic_desc">Kursiv (Strg+I)</item>
+      <item name="underline_desc">Ënnerstrach (Strg+U)</item>
+      <item name="striketrough_desc">Duerchgestrach</item>
+      <item name="bullist_desc">Onsortéiert Lëscht</item>
+      <item name="numlist_desc">Sortéiert Lëscht</item>
+      <item name="undo_desc">Réckgängeg (Strg+Z)</item>
+      <item name="redo_desc">Widderhuelen (Strg+Y)</item>
+      <item name="cleanup_desc">Quellcode botzen</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">Format</item>
+      <item name="font_size">Schrëftgréisst</item>
+      <item name="fontdefault">Schrëftaart</item>
+      <item name="block">Virlag</item>
+      <item name="paragraph">Ofsatz</item>
+      <item name="div">Zesummenhänkende Beräich</item>
+      <item name="address">Adress</item>
+      <item name="pre">Réidaten</item>
+      <item name="h1">Iwwerschrëft 1</item>
+      <item name="h2">Iwwerschrëft 2</item>
+      <item name="h3">Iwwerschrëft 3</item>
+      <item name="h4">Iwwerschrëft 4</item>
+      <item name="h5">Iwwerschrëft 5</item>
+      <item name="h6">Iwwerschrëft 6</item>
+      <item name="blockquote">Zitatblock</item>
+      <item name="code">Code</item>
+      <item name="samp">Beispill</item>
+      <item name="dt">Definitiounsbegrëff</item>
+      <item name="dd">Definitiounsbeschreiwung</item>
+      <!-- Buttons -->
+      <item name="bold_desc">Fett (Strg+B)</item>
+      <item name="italic_desc">Kursiv (Strg+I)</item>
+      <item name="underline_desc">Ënnerstrach (Strg+U)</item>
+      <item name="striketrough_desc">Duerchgestrach</item>
+      <item name="justifyleft_desc">Lénks alignéiert</item>
+      <item name="justifycenter_desc">Zentréiert</item>
+      <item name="justifyright_desc">Riets alignéiert</item>
+      <item name="justifyfull_desc">Béidsäiteg alignéiert</item>
+      <item name="bullist_desc">Onsortéiert Lëscht</item>
+      <item name="numlist_desc">Sortéiert Lëscht</item>
+      <item name="outdent_desc">Ausrécken</item>
+      <item name="indent_desc">Arécken</item>
+      <item name="undo_desc">Réckgängeg (Strg+Z)</item>
+      <item name="redo_desc">Widderhuelen (Strg+Y)</item>
+      <item name="link_desc">Link afügen/veränneren</item>
+      <item name="unlink_desc">Link ewechhuelen</item>
+      <item name="image_desc">Bild afügen/veränneren</item>
+      <item name="cleanup_desc">Quellcode botzen</item>
+      <item name="code_desc">HTML-Quellcode beaarbechten</item>
+      <item name="sub_desc">Déifgestallt</item>
+      <item name="sup_desc">Héichgestallt</item>
+      <item name="hr_desc">Trennlinn afügen</item>
+      <item name="removeformat_desc">Formatéierungen zerécksetzen</item>
+      <item name="custom1_desc">Benotzerdefinéiert Beschreiwung</item>
+      <item name="forecolor_desc">Textfuerf</item>
+      <item name="backcolor_desc">Hannergrondfuerf</item>
+      <item name="charmap_desc">Sonnerzeechen afügen</item>
+      <item name="visualaid_desc">Hëllefslinnen an onsiichtbar Elementer an-/ausblennen</item>
+      <item name="anchor_desc">Anker afügen/veränneren</item>
+      <item name="cut_desc">Ausschneiden</item>
+      <item name="copy_desc">Kopéieren</item>
+      <item name="paste_desc">Afügen</item>
+      <item name="image_props_desc">Bildeegeschaften</item>
+      <item name="newdocument_desc">Neit Dokument</item>
+      <item name="help_desc">Hëllef</item>
+      <item name="blockquote_desc">Zitatblock</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">Kopéieren, Ausschneiden an Afügen sinn am Mozilla Firefox net méiglech.
+Wëllt Dir méi iwwert dëse Problem gewuer ginn?</item>
+      <item name="path">Pad</item>
+      <item name="newdocument">Wëllt Dir wierklech de ganzen Inhalt läschen?</item>
+      <item name="toolbar_focus">Bei d'Geschirleescht sprangen: Alt+Q; Bei den Editor sprangen: Alt+Z; Bei den Elementpad sprangen: Alt+X</item>
+      <item name="more_colors">Weider Fuerwen</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width">13</item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">Iwwer TinyMCE</item>
+      <item name="about_general">Iwwer…</item>
+      <item name="about_help">Hëllef</item>
+      <item name="about_license">Lizenzbedingungen</item>
+      <item name="about_plugins">Pluginen</item>
+      <item name="about_plugin">Plugin</item>
+      <item name="about_author">Auteur</item>
+      <item name="about_version">Versioun</item>
+      <item name="about_loaded">Geluede Pluginen</item>
+      <!-- Anchor -->
+      <item name="anchor_title">Anker afügen/veränneren</item>
+      <item name="anchor_name">Numm vum Anker</item>
+      <!-- Source -->
+      <item name="code_title">HTML-Quellcode beaarbechten</item>
+      <item name="code_wordwrap">Automateschen Zeilenëmbroch</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">Fuerf</item>
+      <item name="colorpicker_picker_tab">Fuerfselectioun</item>
+      <item name="colorpicker_picker_title">Fuerfselectioun</item>
+      <item name="colorpicker_palette_tab">Palette</item>
+      <item name="colorpicker_palette_title">Fuerfpalette</item>
+      <item name="colorpicker_named_tab">Benannte Fuerwen</item>
+      <item name="colorpicker_named_title">Benannte Fuerwen</item>
+      <item name="colorpicker_color">Fuerf:</item>
+      <item name="colorpicker_name">Numm:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">Sonnerzeechen</item>
+      <!-- Image -->
+      <item name="image_title">Bild afügen/beaarbechten</item>
+      <item name="image_src">Adress</item>
+      <item name="image_alt">Alternativtext</item>
+      <item name="image_list">Billerleescht</item>
+      <item name="image_border">Rumm</item>
+      <item name="image_dimensions">Ausmoossen</item>
+      <item name="image_vspace">Vertikalen Ofstand</item>
+      <item name="image_hspace">Horizontalen Ofstand</item>
+      <item name="image_align">Ausriichtung</item>
+      <item name="image_align_baseline">Zeil</item>
+      <item name="image_align_top">Uewen</item>
+      <item name="image_align_middle">Mëtteg</item>
+      <item name="image_align_bottom">Ënnen</item>
+      <item name="image_align_texttop">Uewen am Text</item>
+      <item name="image_align_textbottom">Ënnen am Text</item>
+      <item name="image_align_left">Lénks</item>
+      <item name="image_align_right">Riets</item>
+      <!-- Link -->
+      <item name="link_title">Link afügen/beaarbechten</item>
+      <item name="link_url">Adress</item>
+      <item name="link_target">Fënster</item>
+      <item name="link_target_same">An der selwechter Fënster opmaachen</item>
+      <item name="link_target_blank">Nei Fënster opmaachen</item>
+      <item name="link_titlefield">Titel</item>
+      <item name="link_is_email">Dës Adress schéngt eng Email-Adress ze sinn. Wëll Dir den dofir benéidegt mailto: virdru stellen?</item>
+      <item name="link_is_external">Dës Adress schéngt een externen Link ze sinn. Wëll Dir den dofir benéidegt http:// virdru stellen?</item>
+      <item name="link_list">Linklëscht</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">Ausriichtung</item>
+      <item name="left">Lénks alignéiert</item>
+      <item name="center">Zentréiert</item>
+      <item name="right">Riets alignéiert</item>
+      <item name="full">Béidsäiteg alignéiert</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%d.%m.%Y</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">Datum afügen</item>
+      <item name="inserttime_desc">Zäit afügen</item>
+      <item name="months_long">Januar,Februar,Mäerz,Abrëll,Mee,Juni,Juli,August,September,Oktober,November,Dezember</item>
+      <item name="months_short">Jan,Feb,Mäerz,Abr,Mee,Juni,Juli,Aug,Sept,Okt,Nov,Dez</item>
+      <item name="day_long">Sonndeg,Méindeg,Dënschdeg,Mëttwoch,Donneschdeg,Freideg,Samschdeg,Sonndeg</item>
+      <item name="day_short">So,Mé,Dë,Më,Do,Fr,Sa,So</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">Drécken</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">Virschau</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">Schrëft vu lénks no riets</item>
+      <item name="rtl_desc">Schrëft vu riets no lénks</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">Neie Layer afügen</item>
+      <item name="forward_desc">No vir réckelen</item>
+      <item name="backward_desc">No hanne réckelen</item>
+      <item name="absolute_desc">Absolut Positionéierung</item>
+      <item name="content">Neie Layer...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">Späicheren</item>
+      <item name="cancel_desc">All d'Ännerungen ewechpuchen</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">Geschützt Leerzeechen afügen</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">Spellchecker</item>
+      <item name="download">ieSpell konnt net fonnt ginn. Wëllt Dir en installéieren?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">Trennlinn</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">Breet</item>
+      <item name="size">Héicht</item>
+      <item name="noshade">Kee Schiet</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">Smileyen</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">Smiley afügen</item>
+      <item name="desc">Smileyen</item>
+      <item name="cool">Cool</item>
+      <item name="cry">Kräischend</item>
+      <item name="embarassed">Genéiert</item>
+      <item name="foot_in_mouth">Eragefall</item>
+      <item name="frown">D'Stir ronzelend</item>
+      <item name="innocent">Onschëlleg</item>
+      <item name="kiss">Kussend</item>
+      <item name="laughing">Laachend</item>
+      <item name="money_mouth">Suen</item>
+      <item name="sealed">Verschlossen</item>
+      <item name="smile">Laachend</item>
+      <item name="surprised">Iwwerrascht</item>
+      <item name="tongue_out">Zong eraus</item>
+      <item name="undecided">Onentschloss</item>
+      <item name="wink">Zwinkernd</item>
+      <item name="yell">Brëllend</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">Sichen</item>
+      <item name="replace_desc">Sichen/Ersetzen</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">Weidersichen</item>
+      <item name="notfound">D'Sich ass um Enn ukomm. D'Zeechekette konnt net fonnt ginn.</item>
+      <item name="search_title">Sichen</item>
+      <item name="replace_title">Sichen/Ersetzen</item>
+      <item name="allreplaced">All d'Virkomme vun der Zeechekette goufen ersat.</item>
+      <item name="findwhat">Ze sichenden Text</item>
+      <item name="replacewith">Ersetzen duerch</item>
+      <item name="direction">Sichrichtung</item>
+      <item name="up">No uewen</item>
+      <item name="down">No ënnen</item>
+      <item name="mcase">Grouss-/Klengschreiwung beuechten</item>
+      <item name="findnext">Weidersichen</item>
+      <item name="replace">Ersetzen</item>
+      <item name="replaceall">All ersetzen</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">Bild afügen/ersetzen</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">Allgemeng</item>
+      <item name="tab_appearance">Ausgesinn</item>
+      <item name="tab_advanced">Erweidert</item>
+      <item name="general">Allgemeng</item>
+      <item name="title">Titel</item>
+      <item name="preview">Virschau</item>
+      <item name="constrain_proportions">Säiteverhältnis bäibehalen</item>
+      <item name="langdir">Schrëftrichtung</item>
+      <item name="langcode">Sproochcode</item>
+      <item name="long_desc">Ausféierlech Beschreiwung</item>
+      <item name="style">Format</item>
+      <item name="classes">Klassen</item>
+      <item name="ltr">Lénks no riets</item>
+      <item name="rtl">Riets no lénks</item>
+      <item name="id">ID</item>
+      <item name="map">Image-Map</item>
+      <item name="swap_image">Bild austauschen</item>
+      <item name="alt_image">Alternativt Bild</item>
+      <item name="mouseover">bei Mauskontakt</item>
+      <item name="mouseout">bei kengem Mauskontakt</item>
+      <item name="misc">Verschiddenes</item>
+      <item name="example_img">Ausgesinn vun der Virschau</item>
+      <item name="missing_alt">Wëll Dir wierklech keng Beschreiwung aginn? Bestëmmt Benotzer mat kierperlechen Aschränkungen kënnen sou net dorop zougräifen, genau sou déi, déi een Textbrowser benotzen oder d'Uweise vu Biller desaktivéiert hunn.</item>
+      <item name="dialog_title">Bild afügen/beaarbechten</item>
+      <item name="src">Adress</item>
+      <item name="alt">Beschreiwung</item>
+      <item name="list">Billerlëschten</item>
+      <item name="border">Rumm</item>
+      <item name="dimensions">Ausmoossen</item>
+      <item name="vspace">Vertikalen Ofstand</item>
+      <item name="hspace">Horizontalen Ofstand</item>
+      <item name="align">Ausriichtung</item>
+      <item name="align_baseline">Zeil</item>
+      <item name="align_top">Uewen</item>
+      <item name="align_middle">Mëtteg</item>
+      <item name="align_bottom">Ënnen</item>
+      <item name="align_texttop">Uewen am Text</item>
+      <item name="align_textbottom">Ënnen am Text</item>
+      <item name="align_left">Lénks</item>
+      <item name="align_right">Riets</item>
+      <item name="image_list">Billerlëscht</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">Link afügen/beaarbechten</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">Link afügen/beaarbechten</item>
+      <item name="url">Adress</item>
+      <item name="target">Fënster</item>
+      <item name="titlefield">Titel</item>
+      <item name="is_email">Dës Adress schéngt eng Email-Adress ze sinn. Wëllt Dir den dofir benéidegte Präfix "mailto:" virdru setzen?</item>
+      <item name="is_external">Dës Adress schéngt een externe Link ze sinn. Wëllt Dir den dofir benéidegte Präfix "http://" virdru setzen?</item>
+      <item name="list">Linklëscht</item>
+      <item name="general_tab">Allgemeng</item>
+      <item name="popup_tab">Popup</item>
+      <item name="events_tab">Evenement</item>
+      <item name="advanced_tab">Erweidert</item>
+      <item name="general_props">Allgemeng Eegeschaften</item>
+      <item name="popup_props">Popup-Eegeschaften</item>
+      <item name="event_props">Evenement</item>
+      <item name="advanced_props">Erweidert Eegeschaften</item>
+      <item name="popup_opts">Optiounen</item>
+      <item name="anchor_names">Anker</item>
+      <item name="target_same">An der selwechter Fënster/Frame opmaachen</item>
+      <item name="target_parent">An der iwwergeuerdneter Fënster/Frame opmaachen</item>
+      <item name="target_top">Am ieweschte Frame opmaacheen (sprengt d'Frameset)</item>
+      <item name="target_blank">An enger neier Fënster opmaachen</item>
+      <item name="popup">JavaScript-Popup</item>
+      <item name="popup_url">Popup-Adress</item>
+      <item name="popup_name">Numm vun der Fënster</item>
+      <item name="popup_return">Link trotz Popup suivéieren</item>
+      <item name="popup_scrollbars">Scrollbalken uweisen</item>
+      <item name="popup_statusbar">Statusleeschten uweisen</item>
+      <item name="popup_toolbar">Geschirleeschten uweisen</item>
+      <item name="popup_menubar">Browsermenü uweisen</item>
+      <item name="popup_location">Adressleescht uweisen</item>
+      <item name="popup_resizable">Vergréisseren vun der Fënster zouloossen</item>
+      <item name="popup_dependent">Vun der Elterefënster onofhängeg &lt;br /&gt; (nëmmen Mozilla/Firefox) </item>
+      <item name="popup_size">Gréisst</item>
+      <item name="popup_position">Positioun (X/Y)</item>
+      <item name="id">ID</item>
+      <item name="style">Format</item>
+      <item name="classes">Klassen</item>
+      <item name="target_name">Numm vun der Zilsäit</item>
+      <item name="langdir">Schrëftrichtung</item>
+      <item name="target_langcode">Sprooch vun der Zilsäit</item>
+      <item name="langcode">Sproochcode</item>
+      <item name="encoding">Zeechekodéierung vun der Zilsäit</item>
+      <item name="mime">MIME-Typ vun der Zilsäit</item>
+      <item name="rel">Bezéiung vun der Säit zum Linkzil</item>
+      <item name="rev">Bezéiung vum Linkzil zur Säit</item>
+      <item name="tabindex">Tabindex</item>
+      <item name="accesskey">Tastekierzel</item>
+      <item name="ltr">Lénks no riets</item>
+      <item name="rtl">Riets no lénks</item>
+      <item name="link_list">Linklëscht</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">Quellenzitéierung</item>
+      <item name="abbr_desc">Ofkierzung</item>
+      <item name="acronym_desc">Akronym</item>
+      <item name="del_desc">Geläschten Text</item>
+      <item name="ins_desc">Agefügtenen Text</item>
+      <item name="attribs_desc">Attributer afügen/beaarbechten</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">Titel</item>
+      <item name="attribute_label_id">ID</item>
+      <item name="attribute_label_class">Klasse</item>
+      <item name="attribute_label_style">Format</item>
+      <item name="attribute_label_cite">Quellenangab</item>
+      <item name="attribute_label_datetime">Zäit/Datum</item>
+      <item name="attribute_label_langdir">Schrëftrichtung</item>
+      <item name="attribute_option_ltr">Lénks no riets</item>
+      <item name="attribute_option_rtl">Riets no lénks</item>
+      <item name="attribute_label_langcode">Sproochen</item>
+      <item name="attribute_label_tabindex">Tabindex</item>
+      <item name="attribute_label_accesskey">Tastekierzel</item>
+      <item name="attribute_events_tab">Ereegnes</item>
+      <item name="attribute_attrib_tab">Attributer</item>
+      <item name="general_tab">Allgemeng</item>
+      <item name="attrib_tab">Attributer</item>
+      <item name="events_tab">Ereegnes</item>
+      <item name="fieldset_general_tab">Allgemeng Astellungen</item>
+      <item name="fieldset_attrib_tab">Attributer</item>
+      <item name="fieldset_events_tab">Ereegnes</item>
+      <item name="title_ins_element">Agefügtenen Text</item>
+      <item name="title_del_element">Ewechgehollenen Text</item>
+      <item name="title_acronym_element">Akronym</item>
+      <item name="title_abbr_element">Ofkierzung</item>
+      <item name="title_cite_element">Quellenangab</item>
+      <item name="remove">Ewechhuelen</item>
+      <item name="insert_date">Aktuell Zäit/Datum afügen</item>
+      <item name="option_ltr">Lénks no riets</item>
+      <item name="option_rtl">Riets no lénks</item>
+      <item name="attribs_title">Attributer afügen/beaarbechten</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">CSS-Styles beaarbechten</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">CSS-Styles beaarbechten</item>
+      <item name="apply">Iwwerhuelen</item>
+      <item name="text_tab">Text</item>
+      <item name="background_tab">Hannergrond</item>
+      <item name="block_tab">Block</item>
+      <item name="box_tab">Box</item>
+      <item name="border_tab">Rumm</item>
+      <item name="list_tab">Lëscht</item>
+      <item name="positioning_tab">Positionéierung</item>
+      <item name="text_props">Text</item>
+      <item name="text_font">Schrëftaart</item>
+      <item name="text_size">Gréisst</item>
+      <item name="text_weight">Déckt</item>
+      <item name="text_style">Stil</item>
+      <item name="text_variant">Variant</item>
+      <item name="text_lineheight">Zeilenhéicht</item>
+      <item name="text_case">Schreiwung</item>
+      <item name="text_color">Fuerf</item>
+      <item name="text_decoration">Gestaltung</item>
+      <item name="text_overline">iwwerstrach</item>
+      <item name="text_underline">ënnerstrach</item>
+      <item name="text_striketrough">duerchgestrach</item>
+      <item name="text_blink">blënkend</item>
+      <item name="text_none">keng</item>
+      <item name="background_color">Hannergrondfuerf</item>
+      <item name="background_image">Hannergrondbild</item>
+      <item name="background_repeat">Widderhuelung</item>
+      <item name="background_attachment">Waasserzeecheneffekt</item>
+      <item name="background_hpos">Positioun X</item>
+      <item name="background_vpos">Positioun Y</item>
+      <item name="block_wordspacing">Wuertofstand</item>
+      <item name="block_letterspacing">Buschtawenofstand</item>
+      <item name="block_vertical_alignment">Vertikal Ausriichtung</item>
+      <item name="block_text_align">Ausriichtung</item>
+      <item name="block_text_indent">Aréckung</item>
+      <item name="block_whitespace">Automateschen Ëmbroch</item>
+      <item name="block_display">Ëmbrochverhalen</item>
+      <item name="box_width">Breet</item>
+      <item name="box_height">Héicht</item>
+      <item name="box_float">Ëmfléissung</item>
+      <item name="box_clear">Ëmfléissung verhënneren</item>
+      <item name="padding">Banneschten Ofstand</item>
+      <item name="same">All selwecht</item>
+      <item name="top">Uewen</item>
+      <item name="right">Riets</item>
+      <item name="bottom">Ënnen</item>
+      <item name="left">Lénks</item>
+      <item name="margin">Baussechten Ofstand</item>
+      <item name="style">Format</item>
+      <item name="width">Breet</item>
+      <item name="height">Héicht</item>
+      <item name="color">Textfuerf</item>
+      <item name="list_type">Lëschtepunkt-Aart</item>
+      <item name="bullet_image">Lëschtepunkt-Grafik</item>
+      <item name="position">Positionéierung</item>
+      <item name="positioning_type">Aart vun der Positionéierung</item>
+      <item name="visibility">Siichtbar</item>
+      <item name="zindex">Z-Wäert</item>
+      <item name="overflow">Verhale bei Iwwergréisst</item>
+      <item name="placement">Plazéierung</item>
+      <item name="clip">Ausschnëtt</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">Als normalen Text afügen</item>
+      <item name="paste_word_desc">Mat Formatéierungen (aus dem Word) afügen</item>
+      <item name="selectall_desc">Alles auswielen</item>
+      <item name="plaintext_mode_sticky">Beim Afüge gëtt elo just den Text ouni Formatéierungen iwwerholl. Nach eng Kéier klicken, fir an den normale Modus zeréckzewiesselen. Nodeem s Dir eppes agefügt hutt, gëtt automatesch nees an den normale Modus gewiesselt.</item>
+      <item name="plaintext_mode">Beim Afüge gëtt elo just den Text ouni Formatéierungen iwwerholl. Nach eng Kéier klicken, fir an den normale Modus zeréckzewiesselen.</item>
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">Dréckt op Ärer Tastatur Ctrl+V, fir den Text an ze fügen.</item>
+      <item name="text_linebreaks">Zeilenëmbrëch bäibehalen</item>
+      <item name="word_title">Dréckt op Ärer Tastatur Ctrl+V, um den Text an ze fügen.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">Tabell erstellen/beaarbechten</item>
+      <item name="row_before_desc">Zeil uewerhalb afügen</item>
+      <item name="row_after_desc">Zeil ënnerhalb afügen</item>
+      <item name="delete_row_desc">Zeil läschen</item>
+      <item name="col_before_desc">Spalt lénks afügen</item>
+      <item name="col_after_desc">Spalt riets afügen</item>
+      <item name="delete_col_desc">Spalt läschen</item>
+      <item name="split_cells_desc">Verbonnen Zellen trennen</item>
+      <item name="merge_cells_desc">Zellen verbannen</item>
+      <item name="row_desc">Eegeschaften vun der Zeil</item>
+      <item name="cell_desc">Eegeschaften vun der Zell</item>
+      <item name="props_desc">Eegeschaften vun der Tabelle</item>
+      <item name="paste_row_before_desc">Zeil uewerhalb aus der Zwëschenoflag afügen</item>
+      <item name="paste_row_after_desc">Zeil ënnerhalb aus der Zwëschenoflag afügen</item>
+      <item name="cut_row_desc">Zeil ausschneiden</item>
+      <item name="copy_row_desc">Zeil kopéieren</item>
+      <item name="del">Tabelle läschen</item>
+      <item name="row">Zeil</item>
+      <item name="col">Spalt</item>
+      <item name="cell">Zell</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width">150</item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">Allgemeng</item>
+      <item name="advanced_tab">Erweidert</item>
+      <item name="general_props">Allgemeng Astellungen</item>
+      <item name="advanced_props">Erweidert Astellungen</item>
+      <item name="rowtype">Gruppéierung</item>
+      <item name="title">Tabelle afügen/beaarbechten</item>
+      <item name="width">Breet</item>
+      <item name="height">Héicht</item>
+      <item name="cols">Spalten</item>
+      <item name="rows">Zeilen</item>
+      <item name="cellspacing">Zellenofstand</item>
+      <item name="cellpadding">Ofstand innerhalb vun den Zellen</item>
+      <item name="border">Rumm</item>
+      <item name="align">Ausriichtung</item>
+      <item name="align_default">Standard</item>
+      <item name="align_left">Lénks</item>
+      <item name="align_right">Riets</item>
+      <item name="align_middle">Mëtteg</item>
+      <item name="row_title">Eegeschafte vun der Zeil</item>
+      <item name="cell_title">Eegeschafte vun der Zell</item>
+      <item name="cell_type">Zellentyp</item>
+      <item name="valign">Vertikal Ausriichtung</item>
+      <item name="align_top">Uewen</item>
+      <item name="align_bottom">Ënnen</item>
+      <item name="bordercolor">Fuerf vun der Rumm</item>
+      <item name="bgcolor">Hannergrondfuerf</item>
+      <item name="merge_cells_title">Zelle vereenen</item>
+      <item name="id">ID</item>
+      <item name="style">Format</item>
+      <item name="langdir">Schrëftrichtung</item>
+      <item name="langcode">Sproochecode</item>
+      <item name="mime">MIME-Typ vum Inhalt</item>
+      <item name="ltr">Lénks no riets</item>
+      <item name="rtl">Riets no lénks</item>
+      <item name="bgimage">Hannergrondbild</item>
+      <item name="summary">Zesummefaassung</item>
+      <item name="td">Textzell</item>
+      <item name="th">Iwwerschrëft</item>
+      <item name="cell_cell">Dës Zell veränneren</item>
+      <item name="cell_row">All Zellen an dëser Zeil veränneren</item>
+      <item name="cell_all">All Zellen der Tabelle veränneren</item>
+      <item name="row_row">Dës Zeil veränneren</item>
+      <item name="row_odd">Ongrued Zeilen veränneren</item>
+      <item name="row_even">Grued Zeilen veränneren</item>
+      <item name="row_all">All d'Zeilen veränneren</item>
+      <item name="thead">Tabellekapp</item>
+      <item name="tbody">Tabelleninhalt</item>
+      <item name="tfoot">Tabellefouss</item>
+      <item name="scope">Bezuch</item>
+      <item name="rowgroup">Vertikal gruppéieren</item>
+      <item name="colgroup">Horizontal gruppéieren</item>
+      <item name="col_limit">Dir hutt déi maximal Spaltenzuel vun {$cols} iwwerschratt.</item>
+      <item name="row_limit">Dir hutt déi maximal Zeilenzuel vun {$rows} iwwerschratt.</item>
+      <item name="cell_limit">Dir hutt déi maximal Zellenzuel vun {$cells} iwwerschratt.</item>
+      <item name="missing_scope">Wëllt Dir wierklech keng Bezéiung fir dës Iwwerschrëft uginn? Benotzer mat kierperlechen Aschränkungen kënne Schwieregkeeten hunn, den Inhalt vun der Tabelle ze verstoen.</item>
+      <item name="caption">Beschrëftung vun der Tabelle</item>
+      <item name="frame">Rumm</item>
+      <item name="frame_none">keng</item>
+      <item name="frame_groups">zwëschen Gruppen</item>
+      <item name="frame_rows">zwëschen Zeilen</item>
+      <item name="frame_cols">zwëschen Spalten</item>
+      <item name="frame_all">zwëschen allen Zellen</item>
+      <item name="rules">Gitter</item>
+      <item name="rules_void">keen</item>
+      <item name="rules_above">nëmmen uewen</item>
+      <item name="rules_below">nëmmen ënnen</item>
+      <item name="rules_hsides">uewen an ënnen</item>
+      <item name="rules_lhs">nëmmen lénks</item>
+      <item name="rules_rhs">nëmmen riets</item>
+      <item name="rules_vsides">lénks a riets</item>
+      <item name="rules_box">all 4 Säiten (Box)</item>
+      <item name="rules_border">all 4 Säiten (Bord)</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">Är Ännerungen gi verluer, wann Dir d'Säit verloosst.</item>
+      <item name="restore_content">Automatesch gespäicherten Inhalt recuperéieren.</item>
+      <item name="warning_message">Wann Dir dee gespäicherten Inhalt recuperéiert, verléiert Dir de ganzen Inhalt dee grad am Editor ass.\n\nWëllt Dir de gespäicherten Inhalt sécher recuperéieren?.</item>
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">Vollbildschierm</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">Multimedia-Inhalt abannen/beaarbechten</item>
+      <item name="edit">Multimedia-Abettung beaarbechten</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">Multimedia-Inhalt abannen/beaarbechten</item>
+      <item name="general">Allgemeng</item>
+      <item name="advanced">Erweidert</item>
+      <item name="file">Datei/URL</item>
+      <item name="list">Lëscht</item>
+      <item name="size">Ofmiessungen</item>
+      <item name="preview">Virschau</item>
+      <item name="constrain_proportions">Proportiounen erhalen</item>
+      <item name="type">Typ</item>
+      <item name="id">Id</item>
+      <item name="name">Numm</item>
+      <item name="class_name">CSS-Klass</item>
+      <item name="vspace">Vertikalen Ofstand</item>
+      <item name="hspace">Horizontalen Ofstand</item>
+      <item name="play">Automatesch Ofspillen</item>
+      <item name="loop">Widderhuelung</item>
+      <item name="menu">Menü uweisen</item>
+      <item name="quality">Qualitéit</item>
+      <item name="scale">Skaléierung</item>
+      <item name="align">Ausriichtung</item>
+      <item name="salign">S-Ausriichtung</item>
+      <item name="wmode">WMode</item>
+      <item name="bgcolor">Hannergrond</item>
+      <item name="base">Basis</item>
+      <item name="flashvars">Flash-Variablen</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">AutoHREF</item>
+      <item name="cache">Zwëschespäicher</item>
+      <item name="hidden">Verstoppt</item>
+      <item name="controller">Kontroller</item>
+      <item name="kioskmode">Kioskmodus</item>
+      <item name="playeveryframe">All Frame ofspillen</item>
+      <item name="targetcache">Zil zwëschespäicheren</item>
+      <item name="correction">Ouni Korrektur</item>
+      <item name="enablejavascript">JavaScript aktivéieren</item>
+      <item name="starttime">Startzäitpunkt</item>
+      <item name="endtime">Endzäitpunkt</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">Vitesse drosselen</item>
+      <item name="target">Zil</item>
+      <item name="volume">Lautstärkt</item>
+      <item name="autostart">Autostart</item>
+      <item name="enabled">Aktivéiert</item>
+      <item name="fullscreen">Vollbild</item>
+      <item name="invokeurls">URLen opruffen</item>
+      <item name="mute">Stomm</item>
+      <item name="stretchtofit">Breet un déi verfügbar Plaz upassen</item>
+      <item name="windowlessvideo">Fënsterlose Video</item>
+      <item name="balance">Balance</item>
+      <item name="baseurl">Basis-URL</item>
+      <item name="captioningid">Beschrëftungs Id</item>
+      <item name="currentmarker">Aktuelle Marker</item>
+      <item name="currentposition">Aktuell Positioun</item>
+      <item name="defaultframe">Frame-Virastellung</item>
+      <item name="playcount">Zieler</item>
+      <item name="rate">Quote</item>
+      <item name="uimode">UI Modus</item>
+      <item name="flash_options">Flash-Optiounen</item>
+      <item name="qt_options">Quicktime-Optiounen</item>
+      <item name="wmp_options">Optiounen fir Windows Media Player</item>
+      <item name="rmp_options">Optiounen fir Real Media Player</item>
+      <item name="shockwave_options">Shockwave-Optiounen</item>
+      <item name="autogotourl">Auto goto URL</item>
+      <item name="center">Zentréiert</item>
+      <item name="imagestatus">Bildstatus</item>
+      <item name="maintainaspect">Bildverhältnis bäibehalen</item>
+      <item name="nojava">Kee Java</item>
+      <item name="prefetch">Prefetch</item>
+      <item name="shuffle">Zoufälleg Widdergab</item>
+      <item name="console">Konsol</item>
+      <item name="numloop">Unzuel Widderhuelungen</item>
+      <item name="controls">Steierung</item>
+      <item name="scriptcallbacks">Script callbacks</item>
+      <item name="swstretchstyle">Stretch style</item>
+      <item name="swstretchhalign">Stretch H-Ausriichtung</item>
+      <item name="swstretchvalign">Stretch V-Ausriichtung</item>
+      <item name="sound">Toun</item>
+      <item name="progress">Fortschrëtt</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn">An den erweiderten Astellunge sollten am Feld 'QT Src' gestreamte RTSP Ressourcen bäigesat ginn.\nZousätzlech sollt Dir do och eng net-gestreamte Ressource uginn.</item>
+      <item name="align_top">Uewen</item>
+      <item name="align_right">Riets</item>
+      <item name="align_bottom">Ënnen</item>
+      <item name="align_left">Lénks</item>
+      <item name="align_center">Zentréiert</item>
+      <item name="align_top_left">Uewe Lénks</item>
+      <item name="align_top_right">Uewe Riets</item>
+      <item name="align_bottom_left">Ënne Lénks</item>
+      <item name="align_bottom_right">Ënne Riets</item>
+      <item name="flv_options">Optiounen fir Flash Video</item>
+      <item name="flv_scalemode">Skaléierungsmodus</item>
+      <item name="flv_buffer">Puffer</item>
+      <item name="flv_startimage">Startbild</item>
+      <item name="flv_starttime">Startzäitpunkt</item>
+      <item name="flv_defaultvolume">Standardlautstärk</item>
+      <item name="flv_hiddengui">Verstoppte GUI</item>
+      <item name="flv_autostart">Autostart</item>
+      <item name="flv_loop">Widderhuelung</item>
+      <item name="flv_showscalemodes">Skaléierungsmodi uweisen</item>
+      <item name="flv_smoothvideo">Smooth Video</item>
+      <item name="flv_jscallback">JS Callback</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">Dokument-Eegeschaften</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Dokument-Eegeschaften</item>
+      <item name="meta_tab">Allgemeng</item>
+      <item name="appearance_tab">Ausgesinn</item>
+      <item name="advanced_tab">Erweidert</item>
+      <item name="meta_props">Meta-Informatioun</item>
+      <item name="langprops">Sprooch a Kodéierung</item>
+      <item name="meta_title">Titel</item>
+      <item name="meta_keywords">Schësselwierder</item>
+      <item name="meta_description">Beschreiwung</item>
+      <item name="meta_robots">Roboter</item>
+      <item name="doctypes">DocType</item>
+      <item name="langcode">Sproochcode</item>
+      <item name="langdir">Spoochrichtung</item>
+      <item name="ltr">Lénks no Riets</item>
+      <item name="rtl">Riets no Lénks</item>
+      <item name="xml_pi">XML Deklaratioun</item>
+      <item name="encoding">Zeechekodéierung</item>
+      <item name="appearance_bgprops">Hannergrond-Eegeschaften</item>
+      <item name="appearance_marginprops">Ofstänn vum Body</item>
+      <item name="appearance_linkprops">Linkfuerwen</item>
+      <item name="appearance_textprops">Text-Eegeschaften</item>
+      <item name="bgcolor">Hannergrondfuerf</item>
+      <item name="bgimage">Hannergrondbild</item>
+      <item name="left_margin">Lénken Ofstand</item>
+      <item name="right_margin">Rietsen Ofstand</item>
+      <item name="top_margin">Ieweschten Ofstand</item>
+      <item name="bottom_margin">Ënneschten Ofstand</item>
+      <item name="text_color">Textfuerf</item>
+      <item name="font_size">Schrëftgréisst</item>
+      <item name="font_face">Schrëftaart</item>
+      <item name="link_color">Linkfuerf</item>
+      <item name="hover_color">Hover-Fuerf</item>
+      <item name="visited_color">Besicht-Fuerf</item>
+      <item name="active_color">Aktiv-Fuerf</item>
+      <item name="textcolor">Fuerf</item>
+      <item name="fontsize">Schrëftgréist</item>
+      <item name="fontface">Schrëftaart</item>
+      <item name="meta_index_follow">Indizéieren, an de Linken nogoen</item>
+      <item name="meta_index_nofollow">Indizéieren, mä de Linken net nogoen</item>
+      <item name="meta_noindex_follow">Net indizéieren, mä de Linken nogoen</item>
+      <item name="meta_noindex_nofollow">Net indizéieren an och net de Linken nogoen</item>
+      <item name="appearance_style">CSS-Stil Blat a Stileegeschaften</item>
+      <item name="stylesheet">CSS-Stil Blat</item>
+      <item name="style">CSS-Stil</item>
+      <item name="author">Auteur</item>
+      <item name="copyright">Copyright</item>
+      <item name="add">Neit Element bäifügen</item>
+      <item name="remove">Ausgewielt Element ewechhuelen</item>
+      <item name="moveup">Ausgewielt Element nach uewen beweegen</item>
+      <item name="movedown">Ausgewielt Element no ënnen beweegen</item>
+      <item name="head_elements">Iwwerschrëftenelementer</item>
+      <item name="info">Informatioun</item>
+      <item name="add_title">Titel-Element</item>
+      <item name="add_meta">Meta-Element</item>
+      <item name="add_script">Script-Element</item>
+      <item name="add_style">Stil-Element</item>
+      <item name="add_link">Link-Element</item>
+      <item name="add_base">Basis-Element</item>
+      <item name="add_comment">HTML-Kommentar</item>
+      <item name="title_element">Titel-Element</item>
+      <item name="script_element">Script-Element</item>
+      <item name="style_element">Stil-Element</item>
+      <item name="base_element">Basis-Element</item>
+      <item name="link_element">Link-Element</item>
+      <item name="meta_element">Meta_Element</item>
+      <item name="comment_element">Kommentar</item>
+      <item name="src">Src</item>
+      <item name="language">Sprooche</item>
+      <item name="href">Href</item>
+      <item name="target">Zil</item>
+      <item name="type">Typ</item>
+      <item name="charset">Zeechesaz</item>
+      <item name="defer">Defer</item>
+      <item name="media">Media</item>
+      <item name="properties">Eegeschaften</item>
+      <item name="name">Numm</item>
+      <item name="value">Wäert</item>
+      <item name="content">Inhalt</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href lang</item>
+      <item name="general_props">Allgemeng</item>
+      <item name="advanced_props">Erweidert</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Virgefäerdegte Virlageninhalt afügen</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">Virlagen</item>
+      <item name="label">Virlag</item>
+      <item name="desc_label">Beschreiwung</item>
+      <item name="desc">Virgefäerdegte Virlageninhalt afügen</item>
+      <item name="select">Virlag auswielen</item>
+      <item name="preview">Virschau</item>
+      <item name="warning">Warnung: Eng Virlag mat enger anerer ze aktualiséiere kann zu Dateverloscht féieren!</item>
+      <item name="mdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="cdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="months_long">Januar,Februar,Mäerz,Abrëll,Mee,Juni,Juli,August,September,Oktober,November,Dezember</item>
+      <item name="months_short">Jan,Feb,Mäerz,Abr,Mee,Juni,Juli,Aug,Sept,Okt,Nov,Dez</item>
+      <item name="day_long">Sonndeg,Méindeg,Dënschdeg,Mëttwoch,Donneschdeg,Freides,Samschdeg,Sonndeg</item>
+      <item name="day_short">So,Mé,Dë,Më,Do,Fr,Sa,So</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Siichtbarkeet vun de Steierzeechen un/aus</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">Spellchecker un/aus</item>
+      <item name="menu">Konfiguratioun vum Spellchecker</item>
+      <item name="ignore_word">Wuert ignoréieren</item>
+      <item name="ignore_words">All ignoréieren</item>
+      <item name="langs">Sproochen</item>
+      <item name="wait">Wann ech gelift waarden...</item>
+      <item name="sug">Virschléi</item>
+      <item name="no_sug">Keng Virschléi</item>
+      <item name="no_mpell">Keng Orthographiefeeler fonnt.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">Säitenëmbroch afügen</item>
+    </group>
+    <group target="advlist">
+      <item name="types">Typen</item>
+      <item name="def">Standard</item>
+      <item name="lower_alpha">Kleng Buschtawen</item>
+      <item name="lower_greek">Kleng griichesch Buschtawen</item>
+      <item name="lower_roman">Kleng réimech Zuelen</item>
+      <item name="upper_alpha">Grouss Buschtawen</item>
+      <item name="upper_roman">Grouss réimech Zuelen</item>
+      <item name="circle">Krees</item>
+      <item name="disc">Scheif</item>
+      <item name="square">Quadrat</item>
+    </group>
+  </language>
+</language-pack>

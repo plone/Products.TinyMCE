@@ -1,7 +1,7 @@
 /* CSS file for table dialog in the table plugin */
 
 .panel_wrapper div.current {
-	height: 245px;
+	height: 230px;
 }
 
 .advfield {
@@ -11,4 +11,5 @@
 #class {
 	width: 150px;
 }
-.hiddenset, #advanced_panel { display: none; }
+
+.hiddenset { display: none; }

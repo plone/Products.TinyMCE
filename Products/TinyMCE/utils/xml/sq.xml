@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>Fadion Dashi</author>
+    <version major="1" minor="6" releasedate="2009-10-21" />
+    <description>Ky është versioni Shqip i TinyMCE.</description>
+  </header>
+  <language code="sq" title="Shqip" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">Doni të përdorni mënyrën WYSIWYG për këtë tekst?</item>
+      <item name="apply">Zbato</item>
+      <item name="insert">Fut</item>
+      <item name="update">Rifresko</item>
+      <item name="cancel">Anulo</item>
+      <item name="close">Mbyll</item>
+      <item name="browse">Shfleto</item>
+      <item name="class_name">Klasa</item>
+      <item name="not_set">-- pa vënë --</item>
+      <item name="clipboard_msg">Kopja/Prerja/Ngjitja nuk suportohen në Mozilla dhe Firefox.\nDëshironi më shumë informacione për këtë çështje?</item>
+      <item name="clipboard_no_support">Aktualisht nuk suportohet nga Shfletuesi juaj, përdorni tastjerën.</item>
+      <item name="popup_blocked">Ju kërkojmë ndjesë, por bllokuesi i popup-eve ka bllokuar një dritare që ofron funksjonalitet për programin. Duhet t'a çaktivizoni bllokuesin e popup-eve në mënyrë që t'i përdorni opsionet.</item>
+      <item name="invalid_data">Gabim: Keni futur vlera të pavlefshme, të cilat janë shënuar me të kuqe.</item>
+      <item name="more_colors">Më shumë ngjyra</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">I Trashë (Ctrl+B)</item>
+      <item name="italic_desc">I Pjerrët (Ctrl+I)</item>
+      <item name="underline_desc">I Nënvizuar (Ctrl+U)</item>
+      <item name="striketrough_desc">Vijë në mes</item>
+      <item name="bullist_desc">Listë e parregullt</item>
+      <item name="numlist_desc">Listë e rregullt</item>
+      <item name="undo_desc">Çbëj (Ctrl+Z)</item>
+      <item name="redo_desc">Ribëj (Ctrl+Y)</item>
+      <item name="cleanup_desc">Pastro kodin</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">Stilet</item>
+      <item name="font_size">Madhësia e tekstit</item>
+      <item name="fontdefault">Familja e tekstit</item>
+      <item name="block">Formati</item>
+      <item name="paragraph">Paragraf</item>
+      <item name="div">Div</item>
+      <item name="address">Adresë</item>
+      <item name="pre">Para formatuar</item>
+      <item name="h1">Kokë 1</item>
+      <item name="h2">Kokë 2</item>
+      <item name="h3">Kokë 3</item>
+      <item name="h4">Kokë 4</item>
+      <item name="h5">Kokë 5</item>
+      <item name="h6">Kokë 6</item>
+      <item name="blockquote">Bllok</item>
+      <item name="code">Kod</item>
+      <item name="samp">Shembull kodi</item>
+      <item name="dt">Terma e përcaktimit </item>
+      <item name="dd">Përshkrimi i përcaktimit</item>
+      <!-- Buttons -->
+      <item name="bold_desc">I Trashë (Ctrl+B)</item>
+      <item name="italic_desc">I Pjerrët (Ctrl+I)</item>
+      <item name="underline_desc">I Nënvizuar (Ctrl+U)</item>
+      <item name="striketrough_desc">Vijë në mes</item>
+      <item name="justifyleft_desc">Drejtimi majtas</item>
+      <item name="justifycenter_desc">Drejtimi qendër</item>
+      <item name="justifyright_desc">Drejtimi djathtas</item>
+      <item name="justifyfull_desc">Drejtim i plotë</item>
+      <item name="bullist_desc">Listë e parregullt</item>
+      <item name="numlist_desc">Listë e rregullt</item>
+      <item name="outdent_desc">Hiq kryerradhë</item>
+      <item name="indent_desc">Vendos kryerradhë</item>
+      <item name="undo_desc">Çbëj (Ctrl+Z)</item>
+      <item name="redo_desc">Ribëj (Ctrl+Y)</item>
+      <item name="link_desc">Fut/edito lidhje</item>
+      <item name="unlink_desc">Hiq lidhje</item>
+      <item name="image_desc">Fut/edito foto</item>
+      <item name="cleanup_desc">Pastro kodin</item>
+      <item name="code_desc">Edito kodin HTML</item>
+      <item name="sub_desc">Nën shkrim</item>
+      <item name="sup_desc">Mbi shkrim</item>
+      <item name="hr_desc">Fut linjë horizontale</item>
+      <item name="removeformat_desc">Fshi formatimin</item>
+      <item name="custom1_desc">Pëshkrimi i personalizuar këtu</item>
+      <item name="forecolor_desc">Zgjidh ngjyrën e tekstit</item>
+      <item name="backcolor_desc">Zgjidh ngjyrën e fushës</item>
+      <item name="charmap_desc">Fut karakter të personalizuar</item>
+      <item name="visualaid_desc">Shfaq/Fshih vijat ndihmëse dhe elementët e padukshëm</item>
+      <item name="anchor_desc">Fut/edito lidhje</item>
+      <item name="cut_desc">Prit</item>
+      <item name="copy_desc">Kopjo</item>
+      <item name="paste_desc">Ngjit</item>
+      <item name="image_props_desc">Opsionet e fotos</item>
+      <item name="newdocument_desc">Dokument i Ri</item>
+      <item name="help_desc">Ndihmë</item>
+      <item name="blockquote_desc">Bllok</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">Kopja/Prerja/Ngjitja nuk suportohen në Mozilla dhe Firefox.\nDëshironi më shumë informacione për këtë çështje?</item>
+      <item name="path">Rruga</item>
+      <item name="newdocument">Jeni të sigurt që doni t'a fshini përmbajtjen?</item>
+      <item name="toolbar_focus">Shko tek butonat - Alt+Q, Shko tek editori - Alt+Z, Shko tek rruga e elementit - Alt+X</item>
+      <item name="more_colors">Më shumë ngjyra</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">Rreth TinyMCE</item>
+      <item name="about_general">Rreth</item>
+      <item name="about_help">Ndihmë</item>
+      <item name="about_license">Liçenca</item>
+      <item name="about_plugins">Shtesa</item>
+      <item name="about_plugin">Shtesë</item>
+      <item name="about_author">Autori</item>
+      <item name="about_version">Versioni</item>
+      <item name="about_loaded">Shtesa të ngarkuara</item>
+      <!-- Anchor -->
+      <item name="anchor_title">Fut/edito lidhje</item>
+      <item name="anchor_name">Emri i lidhjes</item>
+      <!-- Source -->
+      <item name="code_title">Edituesi i kodit HTML</item>
+      <item name="code_wordwrap">Word wrap</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">Zgjidh një ngjyrë</item>
+      <item name="colorpicker_picker_tab">Zgjedhësi</item>
+      <item name="colorpicker_picker_title">Zgjedhësi i ngjyrës</item>
+      <item name="colorpicker_palette_tab">Librari</item>
+      <item name="colorpicker_palette_title">Ngjyrat e Librarisë</item>
+      <item name="colorpicker_named_tab">Emëruar</item>
+      <item name="colorpicker_named_title">Ngjyrat e emëruara</item>
+      <item name="colorpicker_color">Ngjyra:</item>
+      <item name="colorpicker_name">Emri:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">Zgjidh karakter të personalizuar</item>
+      <!-- Image -->
+      <item name="image_title">Fut/edio foto</item>
+      <item name="image_src">URL e fotos</item>
+      <item name="image_alt">Përshkrimi i fotos</item>
+      <item name="image_list">Lista e fotove</item>
+      <item name="image_border">Korniza</item>
+      <item name="image_dimensions">Përmasat</item>
+      <item name="image_vspace">Hapësira Vertikale</item>
+      <item name="image_hspace">Hapësira Horizontale</item>
+      <item name="image_align">Drejtimi</item>
+      <item name="image_align_baseline">Vijë fundore</item>
+      <item name="image_align_top">Krye</item>
+      <item name="image_align_middle">Mes</item>
+      <item name="image_align_bottom">Fund</item>
+      <item name="image_align_texttop">Në krye të tekstit</item>
+      <item name="image_align_textbottom">Në fund të tekstit</item>
+      <item name="image_align_left">Majtas</item>
+      <item name="image_align_right">Djathtas</item>
+      <!-- Link -->
+      <item name="link_title">Fut/edito lidhje</item>
+      <item name="link_url">URL e lidhjes</item>
+      <item name="link_target">Shënjestra</item>
+      <item name="link_target_same">Hape lidhjen në të njëjtën dritare</item>
+      <item name="link_target_blank">Hape lidhjen në dritare të re</item>
+      <item name="link_titlefield">Titulli</item>
+      <item name="link_is_email">Lidhja që keni futur duket si adresë emaili. Doni të shtoni prefiksin mailto:?</item>
+      <item name="link_is_external">Lidhja që keni futur duket si lidhje e jashtëme. Doni të shtoni prefiksin http://?</item>
+      <item name="link_list">Lista e lidhjeve</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">Drejtimi</item>
+      <item name="left">Majtas</item>
+      <item name="center">Qendër</item>
+      <item name="right">Djathtas</item>
+      <item name="full">I Plotë</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%d-%m-%y</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">Fut datën</item>
+      <item name="inserttime_desc">Fut orën</item>
+      <item name="months_long">Janar,Shkurt,Mars,Prill,Maj,Qershor,Korrik,Gusht,Shtator,Tetor,Nëntor,Dhjetor</item>
+      <item name="months_short">Jan,Shk,Mar,Pri,Maj,Qer,Kor,Gus,Sht,Tet,Nën,Dhj</item>
+      <item name="day_long">E Djelë,E Hënë,E Martë,E Mërkurë,E Enjte,E Premte,E Shtunë,E Djelë</item>
+      <item name="day_short">Dje,Hën,Mar,Mër,Enj,Pre,Sht,Dje</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">Printo</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">Paraqitje</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">Drejtimi majtas-djathtas</item>
+      <item name="rtl_desc">Drejtimi djathtas-majtas</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">Fut shtresë të re</item>
+      <item name="forward_desc">Lëviz para</item>
+      <item name="backward_desc">Lëviz prapa</item>
+      <item name="absolute_desc">Aktivizo/çaktivizo pozicionimin absolut</item>
+      <item name="content">Shtresë e re...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">Ruaj</item>
+      <item name="cancel_desc">Anuloji të gjitha ndryshimet</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">Fut hapësirë</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">Kontrollo për gabime drejtëshkrimore</item>
+      <item name="download">ieSpell nuk u detektua. Dëshironi ta instaloni?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">Linjë horizontale</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">Gjerësia</item>
+      <item name="size">Gjatësia</item>
+      <item name="noshade">Pa hije</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">Emocionet</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">Fut emocion</item>
+      <item name="desc">Emocionet</item>
+      <item name="cool">I/e lezetshëm</item>
+      <item name="cry">Qaj</item>
+      <item name="embarassed">Turp</item>
+      <item name="foot_in_mouth">Këmba në gojë</item>
+      <item name="frown">Rrudh vetullat</item>
+      <item name="innocent">I/e pafajshëm</item>
+      <item name="kiss">Puth</item>
+      <item name="laughing">Qesh</item>
+      <item name="money_mouth">Lekë në gojë</item>
+      <item name="sealed">Dhëmbët e mbyllur</item>
+      <item name="smile">Buzëqesh</item>
+      <item name="surprised">I/e çuditur</item>
+      <item name="tongue_out">Gjuha jashtë</item>
+      <item name="undecided">I/e pavendosur</item>
+      <item name="wink">Shkel syrin</item>
+      <item name="yell">Bërtit</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">Kërko</item>
+      <item name="replace_desc">Kërko/Zëvendëso</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">Kërko përsëri</item>
+      <item name="notfound">Kërkimi përfundoi dhe nuk ktheu asnjë rezultat.</item>
+      <item name="search_title">Kërko</item>
+      <item name="replace_title">Kërko/Zëvendëso</item>
+      <item name="allreplaced">Të gjitha tekstet e gjetura u zëvendësuan.</item>
+      <item name="findwhat">Kërko për</item>
+      <item name="replacewith">Zëvendëso me</item>
+      <item name="direction">Drejtimi</item>
+      <item name="up">Lart</item>
+      <item name="down">Poshtë</item>
+      <item name="mcase">Përshtat madhësinë e gërmës</item>
+      <item name="findnext">Kërko tjetrën</item>
+      <item name="replace">Zëvendëso</item>
+      <item name="replaceall">Zëv. të gjitha</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">Fut/edito foto</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">Të Përgjithshme</item>
+      <item name="tab_appearance">Pamja</item>
+      <item name="tab_advanced">Të Avancuara</item>
+      <item name="general">Të Përgjithshme</item>
+      <item name="title">Titulli</item>
+      <item name="preview">Paraqitje</item>
+      <item name="constrain_proportions">Ruaj raportet</item>
+      <item name="langdir">Drejtimi i gjuhës</item>
+      <item name="langcode">Kodi i gjuhës</item>
+      <item name="long_desc">Lidhja e përshkrimit të gjatë</item>
+      <item name="style">Stili</item>
+      <item name="classes">Klasat</item>
+      <item name="ltr">Majtas-Djathtas</item>
+      <item name="rtl">Djathtas-Majtas</item>
+      <item name="id">Id</item>
+      <item name="map">Harta e fotos</item>
+      <item name="swap_image">Ndërro foto</item>
+      <item name="alt_image">Përshkrimi alternativ</item>
+      <item name="mouseover">në mouse-in sipër</item>
+      <item name="mouseout">në mouse-in jashtë</item>
+      <item name="misc">Të Ndryshme</item>
+      <item name="example_img">Paraqitje e fotos</item>
+      <item name="missing_alt">Jeni të sigurt që doni të vazhdoni pa përfshirë një përshkrim alternativ? Pa të, foto mund të jetë e pa aksesueshme nga njerëz me shikim të kufizuar, që përdorin shfletues që nuk i shfaqin fotot apo i kanë çaktivizuar ato.</item>
+      <item name="dialog_title">Fut/edito foto</item>
+      <item name="src">URL e fotos</item>
+      <item name="alt">Përshkrimi i fotos</item>
+      <item name="list">Lista e fotove</item>
+      <item name="border">Korniza</item>
+      <item name="dimensions">Përmasat</item>
+      <item name="vspace">Hapësira vertikale</item>
+      <item name="hspace">Hapësira horizontale</item>
+      <item name="align">Drejtimi</item>
+      <item name="align_baseline">Vijë fundore</item>
+      <item name="align_top">Krye</item>
+      <item name="align_middle">Mes</item>
+      <item name="align_bottom">Fund</item>
+      <item name="align_texttop">Sipër tekstit</item>
+      <item name="align_textbottom">Poshtë tekstit</item>
+      <item name="align_left">Majtas</item>
+      <item name="align_right">Djathtas</item>
+      <item name="image_list">Lista e fotove</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">Fut/edito lidhje</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">Fut/edito lidhje</item>
+      <item name="url">URL e lidhjes</item>
+      <item name="target">Shënjestra</item>
+      <item name="titlefield">Titulli</item>
+      <item name="is_email">Adresa që keni futur duket si email. Dëshironi të shtoni prefiksin mailto:?</item>
+      <item name="is_external">Adresa që keni futur duket si lidhje e jashtme. Dëshironi të shtoni prefiksin http://?</item>
+      <item name="list">Lista e lidhjeve</item>
+      <item name="general_tab">Të Përgjithshme</item>
+      <item name="popup_tab">Popup</item>
+      <item name="events_tab">Ngjarjet</item>
+      <item name="advanced_tab">Të Avancuara</item>
+      <item name="general_props">Tipare të përgjithshme</item>
+      <item name="popup_props">Tiparet e popup</item>
+      <item name="event_props">Ngjarjet</item>
+      <item name="advanced_props">Tipare të avancuara</item>
+      <item name="popup_opts">Opsionet</item>
+      <item name="anchor_names">Lidhjet</item>
+      <item name="target_same">Hape në këtë dritare / frame</item>
+      <item name="target_parent">Hape në dritaren mëmë / frame</item>
+      <item name="target_top">Hape në frame-in e mësipërm</item>
+      <item name="target_blank">Hape në dritare të re</item>
+      <item name="popup">Popup me Javascript</item>
+      <item name="popup_url">URL e popup</item>
+      <item name="popup_name">Emri i dritares</item>
+      <item name="popup_return">Fut 'return false'</item>
+      <item name="popup_scrollbars">Shfaq ashensorët</item>
+      <item name="popup_statusbar">Shfaq shiritin e statusit</item>
+      <item name="popup_toolbar">Shfaq butonat</item>
+      <item name="popup_menubar">Shfaq menunë</item>
+      <item name="popup_location">Shfaq shiritin e adresës</item>
+      <item name="popup_resizable">Bëje dritaren të zmadhueshme</item>
+      <item name="popup_dependent">I varur (vetëm Mozilla/Firefox)</item>
+      <item name="popup_size">Madhësia</item>
+      <item name="popup_position">Pozicioni (X/Y)</item>
+      <item name="id">Id</item>
+      <item name="style">Stili</item>
+      <item name="classes">Klasat</item>
+      <item name="target_name">Emri</item>
+      <item name="langdir">Drejtimi i gjuhës</item>
+      <item name="target_langcode">Gjuha e shënjestrës</item>
+      <item name="langcode">Kodi i gjuhës</item>
+      <item name="encoding">Kodimi i karaktereve të shënjestrës</item>
+      <item name="mime">Tipi MIME i shënjestrës</item>
+      <item name="rel">Marrëdhënia faqe-shënjestër</item>
+      <item name="rev">Marrëdhënia shënjestër-faqe</item>
+      <item name="tabindex">Indeksi i Tab</item>
+      <item name="accesskey">Butoni i aksesit</item>
+      <item name="ltr">Majtas-Djathtas</item>
+      <item name="rtl">Djathtas-Majtas</item>
+      <item name="link_list">Lista e lidhjeve</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">Citat</item>
+      <item name="abbr_desc">Shkurtim</item>
+      <item name="acronym_desc">Akronim</item>
+      <item name="del_desc">Fshirje</item>
+      <item name="ins_desc">Futje</item>
+      <item name="attribs_desc">Fut/Edito Tipare</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">Titulli</item>
+      <item name="attribute_label_id">ID</item>
+      <item name="attribute_label_class">Klasa</item>
+      <item name="attribute_label_style">Stili</item>
+      <item name="attribute_label_cite">Citati</item>
+      <item name="attribute_label_datetime">Data/Ora</item>
+      <item name="attribute_label_langdir">Drejtimi i tekstit</item>
+      <item name="attribute_option_ltr">Majtas-Djathtas</item>
+      <item name="attribute_option_rtl">Djathtas-Majtas</item>
+      <item name="attribute_label_langcode">Gjuha</item>
+      <item name="attribute_label_tabindex">Indeksi i Tab</item>
+      <item name="attribute_label_accesskey">Butoni i aksesit</item>
+      <item name="attribute_events_tab">Ngjarjet</item>
+      <item name="attribute_attrib_tab">Tiparet</item>
+      <item name="general_tab">Të Përgjithshme</item>
+      <item name="attrib_tab">Tiparet</item>
+      <item name="events_tab">Ngjarjet</item>
+      <item name="fieldset_general_tab">Opsionet e Përgjithshme</item>
+      <item name="fieldset_attrib_tab">Tiparet e elementit</item>
+      <item name="fieldset_events_tab">Ngjarjet e elementit</item>
+      <item name="title_ins_element">Element Futës</item>
+      <item name="title_del_element">Element Fshirës</item>
+      <item name="title_acronym_element">Element Akronim</item>
+      <item name="title_abbr_element">Element Shkurtimi</item>
+      <item name="title_cite_element">Element Citat</item>
+      <item name="remove">Fshi</item>
+      <item name="insert_date">Fut datën/orën aktuale</item>
+      <item name="option_ltr">Majtas-Djathtas</item>
+      <item name="option_rtl">Djathtas-Majtas</item>
+      <item name="attribs_title">Fut/Edito Tipare</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">Edito Stilet CSS</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">Edito të gjitha stilet</item>
+      <item name="apply">Apliko</item>
+      <item name="text_tab">Teksti</item>
+      <item name="background_tab">Fusha</item>
+      <item name="block_tab">Bllok</item>
+      <item name="box_tab">Kuti</item>
+      <item name="border_tab">Korniza</item>
+      <item name="list_tab">Lista</item>
+      <item name="positioning_tab">Pozicionimi</item>
+      <item name="text_props">Teksti</item>
+      <item name="text_font">Teksti</item>
+      <item name="text_size">Madhësia</item>
+      <item name="text_weight">Pesha</item>
+      <item name="text_style">Stili</item>
+      <item name="text_variant">Varianti</item>
+      <item name="text_lineheight">Gjatësia e linjës</item>
+      <item name="text_case">Madhësia e gërmës</item>
+      <item name="text_color">Ngjyra</item>
+      <item name="text_decoration">Zbukurimi</item>
+      <item name="text_overline">mbi linjë</item>
+      <item name="text_underline">nën linjë</item>
+      <item name="text_striketrough">në mes</item>
+      <item name="text_blink">fik-ndiz</item>
+      <item name="text_none">asnjë</item>
+      <item name="background_color">Ngjyra e fushës</item>
+      <item name="background_image">Foto e fushës</item>
+      <item name="background_repeat">Përsëritja</item>
+      <item name="background_attachment">Bashkëngjitja</item>
+      <item name="background_hpos">Pozicionimi horizontal</item>
+      <item name="background_vpos">Pozicionimi vertikal</item>
+      <item name="block_wordspacing">Hapësira e fjalëve</item>
+      <item name="block_letterspacing">Hapësira e gërmave</item>
+      <item name="block_vertical_alignment">Drejtimi vertikal</item>
+      <item name="block_text_align">Drejtimi i tekstit</item>
+      <item name="block_text_indent">Kryerradha</item>
+      <item name="block_whitespace">Hapësira bosh</item>
+      <item name="block_display">Shfaqja</item>
+      <item name="box_width">Gjerësia</item>
+      <item name="box_height">Gjatësia</item>
+      <item name="box_float">Pluskimi</item>
+      <item name="box_clear">Pastro</item>
+      <item name="padding">Hapësira e brëndshme</item>
+      <item name="same">E njëjtë për të gjitha</item>
+      <item name="top">Krye</item>
+      <item name="right">Djathtas</item>
+      <item name="bottom">Fund</item>
+      <item name="left">Majtas</item>
+      <item name="margin">Hapësira</item>
+      <item name="style">Stili</item>
+      <item name="width">Gjerësia</item>
+      <item name="height">Gjatësia</item>
+      <item name="color">Ngjyra</item>
+      <item name="list_type">Tipi</item>
+      <item name="bullet_image">Foto ndarëse</item>
+      <item name="position">Pozicioni</item>
+      <item name="positioning_type">Tipi</item>
+      <item name="visibility">Shikueshmëria</item>
+      <item name="zindex">Indeksi Z</item>
+      <item name="overflow">Mbivendosja</item>
+      <item name="placement">Vendosja</item>
+      <item name="clip">Prerja</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">Ngjit si Tekst</item>
+      <item name="paste_word_desc">Ngjit nga Word</item>
+      <item name="selectall_desc">Zgjidhi të gjitha</item>
+      <!--<item name="plaintext_mode_sticky">Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode.</item>-->
+      <!--<item name="plaintext_mode">Paste is now in plain text mode. Click again to toggle back to regular paste mode.</item>-->
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">Përdor CTRL+V për të ngjitur tekstin.</item>
+      <item name="text_linebreaks">Ruaj linjat e reja</item>
+      <item name="word_title">Përdor CTRL+V për të ngjitur tekstin.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">Fut një tabelë të re</item>
+      <item name="row_before_desc">Fut rresht përpara</item>
+      <item name="row_after_desc">Fut rresht pas</item>
+      <item name="delete_row_desc">Fshi rreshtin</item>
+      <item name="col_before_desc">Fut kolonë përpara</item>
+      <item name="col_after_desc">Fut kolonë pas</item>
+      <item name="delete_col_desc">Fshi kolonën</item>
+      <item name="split_cells_desc">Ndaji qelizat e bashkuara</item>
+      <item name="merge_cells_desc">Bashkoji qelizat</item>
+      <item name="row_desc">Tiparet e rreshtit</item>
+      <item name="cell_desc">Tiparet e qelizës</item>
+      <item name="props_desc">Tiparet e tabelës</item>
+      <item name="paste_row_before_desc">Ngjite rreshtin përpara</item>
+      <item name="paste_row_after_desc">Ngjite rreshtin pas</item>
+      <item name="cut_row_desc">Prit rreshtin</item>
+      <item name="copy_row_desc">Kopjo rreshtin</item>
+      <item name="del">Fshi tabelën</item>
+      <item name="row">Rresht</item>
+      <item name="col">Kolonë</item>
+      <item name="cell">Qelizë</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width"></item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">Të përgjithshme</item>
+      <item name="advanced_tab">Të avancuara</item>
+      <item name="general_props">Tipare të përgjithshme</item>
+      <item name="advanced_props">Tipare të avancuara</item>
+      <item name="rowtype">Rresht në</item>
+      <item name="title">Fut/Edito tabelë</item>
+      <item name="width">Gjerësia</item>
+      <item name="height">Gjatësia</item>
+      <item name="cols">Kolona</item>
+      <item name="rows">Rreshta</item>
+      <item name="cellspacing">Hapësira midis qelizave</item>
+      <item name="cellpadding">Hapësira e brëndshme</item>
+      <item name="border">Korniza</item>
+      <item name="align">Drejtimi</item>
+      <item name="align_default">Paracaktuar</item>
+      <item name="align_left">Majtas</item>
+      <item name="align_right">Djathtas</item>
+      <item name="align_middle">Qendër</item>
+      <item name="row_title">Tiparet e rreshtit</item>
+      <item name="cell_title">Tiparet e qelizës</item>
+      <item name="cell_type">Tipi i qelizës</item>
+      <item name="valign">Drejtimi vertikal</item>
+      <item name="align_top">Krye</item>
+      <item name="align_bottom">Fund</item>
+      <item name="bordercolor">Ngjyra e kornizës</item>
+      <item name="bgcolor">Ngjyra e fushës</item>
+      <item name="merge_cells_title">Bashko qelizat</item>
+      <item name="id">Id</item>
+      <item name="style">Stili</item>
+      <item name="langdir">Drejtimi i gjuhës</item>
+      <item name="langcode">Kodi i gjuhës</item>
+      <item name="mime">Tipi MIME i shënjestrës</item>
+      <item name="ltr">Majtas-Djathtas</item>
+      <item name="rtl">Djathtas-Majtas</item>
+      <item name="bgimage">Foto e fushës</item>
+      <item name="summary">Përmbledhja</item>
+      <item name="td">Të dhëna</item>
+      <item name="th">Kokë</item>
+      <item name="cell_cell">Rifresko qelizën aktuale</item>
+      <item name="cell_row">Rifresko të gjitha qelizat në rresht</item>
+      <item name="cell_all">Rifresko të gjitha qelizat</item>
+      <item name="row_row">Rifresko rreshtin aktual</item>
+      <item name="row_odd">Rifresko rreshtat tek</item>
+      <item name="row_even">Rifresko rreshtat çift</item>
+      <item name="row_all">Rifresko të gjitha rreshtat në tabelë</item>
+      <item name="thead">Kokën e Tabelës</item>
+      <item name="tbody">Trupin e Tabelës</item>
+      <item name="tfoot">Këmbët e Tabelës</item>
+      <item name="scope">Objektivi</item>
+      <item name="rowgroup">Grup Rreshtash</item>
+      <item name="colgroup">Grup Kolonash</item>
+      <item name="col_limit">Keni kaluar numrin maksimal të kolonave: {$cols}.</item>
+      <item name="row_limit">Keni kaluar numrin maksimal të rreshtave: {$rows}.</item>
+      <item name="cell_limit">Keni kaluar numrin maksimal të qelizave {$cells}.</item>
+      <item name="missing_scope">Jeni të sigurt që nuk doni të vendosni objektiv për këtë qelizë të kokës. Pa të mund të jetë e vështirë për disa përdorues me aftësi të kufizuara të lexojnë përmbajtjen e tabelës.</item>
+      <item name="caption">Krijo hapësirë për titull</item>
+      <item name="frame">Korniza</item>
+      <item name="frame_none">asnjë</item>
+      <item name="frame_groups">grupe</item>
+      <item name="frame_rows">rreshta</item>
+      <item name="frame_cols">kolona</item>
+      <item name="frame_all">të gjitha</item>
+      <item name="rules">Rregullat</item>
+      <item name="rules_void">zbrazur</item>
+      <item name="rules_above">sipër</item>
+      <item name="rules_below">poshtë</item>
+      <item name="rules_hsides">hsides</item>
+      <item name="rules_lhs">lhs</item>
+      <item name="rules_rhs">rhs</item>
+      <item name="rules_vsides">vsides</item>
+      <item name="rules_box">kuti</item>
+      <item name="rules_border">kornizë</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">Ndryshimet që keni bërë do të humbasin nëse largoheni nga kjo faqe.</item>
+      <!--<item name="restore_content">Restore auto-saved content.</item>-->
+      <!--<item name="warning_message">If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?.</item>-->
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">Aktivizo/çaktivizo pamjen e plotë</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">Fut / edito media</item>
+      <item name="edit">Edito media</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">Fut / edito media</item>
+      <item name="general">Të Përgjithshme</item>
+      <item name="advanced">Të Avancuara</item>
+      <item name="file">Skedari/URL</item>
+      <item name="list">Lista</item>
+      <item name="size">Përmasat</item>
+      <item name="preview">Paraqitje</item>
+      <item name="constrain_proportions">Ruaj raportet</item>
+      <item name="type">Tipi</item>
+      <item name="id">Id</item>
+      <item name="name">Emri</item>
+      <item name="class_name">Klasa</item>
+      <item name="vspace">Hapësira-V</item>
+      <item name="hspace">Hapësira-H</item>
+      <item name="play">Luaj automatikisht</item>
+      <item name="loop">Lak</item>
+      <item name="menu">Shfaq menu</item>
+      <item name="quality">Cilësia</item>
+      <item name="scale">Shkalla</item>
+      <item name="align">Drejtimi</item>
+      <item name="salign">Drejtimi S</item>
+      <item name="wmode">WMode</item>
+      <item name="bgcolor">Fusha</item>
+      <item name="base">Baza</item>
+      <item name="flashvars">Flashvars</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">AutoHREF</item>
+      <item name="cache">Cache</item>
+      <item name="hidden">Fshehur</item>
+      <item name="controller">Kontrollues</item>
+      <item name="kioskmode">Mënyra Kiosk</item>
+      <item name="playeveryframe">Luaj çdo kuader</item>
+      <item name="targetcache">Cache shënjestrën</item>
+      <item name="correction">Pa rregullime</item>
+      <item name="enablejavascript">Aktivizo JavaScript</item>
+      <item name="starttime">Koha e nisjes</item>
+      <item name="endtime">Koha e përfundimit</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">Choke speed</item>
+      <item name="target">Shënjestra</item>
+      <item name="volume">Volumi</item>
+      <item name="autostart">Nisje automatike</item>
+      <item name="enabled">Aktivizuar</item>
+      <item name="fullscreen">Pamje e plotë</item>
+      <item name="invokeurls">Thërrit URL</item>
+      <item name="mute">Mbyll zërin</item>
+      <item name="stretchtofit">Zmadho me përshtatje</item>
+      <item name="windowlessvideo">Video pa dritare</item>
+      <item name="balance">Balanci</item>
+      <item name="baseurl">URL bazë</item>
+      <item name="captioningid">Id e titullit</item>
+      <item name="currentmarker">Shënjuesi aktual</item>
+      <item name="currentposition">Pozicioni aktual</item>
+      <item name="defaultframe">Kuadri fillestar</item>
+      <item name="playcount">Numri i luajtjeve</item>
+      <item name="rate">Raporti</item>
+      <item name="uimode">Mënyra UI</item>
+      <item name="flash_options">Opsionet e Flash</item>
+      <item name="qt_options">Opsionet e Quicktime</item>
+      <item name="wmp_options">Opsionet e Windows media player</item>
+      <item name="rmp_options">Opsionet e Real media player</item>
+      <item name="shockwave_options">Opsionet e Shockwave</item>
+      <item name="autogotourl">Shko në URL automatikisht</item>
+      <item name="center">Qendër</item>
+      <item name="imagestatus">Statusi fotos</item>
+      <item name="maintainaspect">Ruaj raportet</item>
+      <item name="nojava">Pa Java</item>
+      <item name="prefetch">Para ngarko</item>
+      <item name="shuffle">Shuffle</item>
+      <item name="console">Konsola</item>
+      <item name="numloop">Numri lakëve</item>
+      <item name="controls">Kontrollet</item>
+      <item name="scriptcallbacks">Script Callbacks</item>
+      <item name="swstretchstyle">Stili i zmadhimit</item>
+      <item name="swstretchhalign">Zmadho Drejtim-H</item>
+      <item name="swstretchvalign">Zmadho Drejtim-V</item>
+      <item name="sound">Zëri</item>
+      <item name="progress">Progresi</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn">Risurset rtsp duhet të shtohen në fushën QT Src në opsionet e avancuara.\nDuhet të shtoni gjithashtu një version jo stream në fushën src..</item>
+      <item name="align_top">Krye</item>
+      <item name="align_right">Djathtas</item>
+      <item name="align_bottom">Fund</item>
+      <item name="align_left">Majtas</item>
+      <item name="align_center">Qendër</item>
+      <item name="align_top_left">Krye-majtas</item>
+      <item name="align_top_right">Krye-djathtas</item>
+      <item name="align_bottom_left">Fund-majtas</item>
+      <item name="align_bottom_right">Fund-djathtas</item>
+      <item name="flv_options">Opsionet e videos Flash</item>
+      <item name="flv_scalemode">Mënyra e shkallës</item>
+      <item name="flv_buffer">Buffer</item>
+      <item name="flv_startimage">Foto fillestare</item>
+      <item name="flv_starttime">Foto përfundimtare</item>
+      <item name="flv_defaultvolume">Volumi fillestar</item>
+      <item name="flv_hiddengui">GUI e fshehur</item>
+      <item name="flv_autostart">Nis automatikisht</item>
+      <item name="flv_loop">Lak</item>
+      <item name="flv_showscalemodes">Trego shkallët</item>
+      <item name="flv_smoothvideo">Video pa ngecje</item>
+      <item name="flv_jscallback">JS Callback</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">Tiparet e dokumentit</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Tiparet e dokumentit</item>
+      <item name="meta_tab">Të Përgjithshme</item>
+      <item name="appearance_tab">Pamja</item>
+      <item name="advanced_tab">Të Avancuara</item>
+      <item name="meta_props">Informacioni Meta</item>
+      <item name="langprops">Gjuha dhe kodimi</item>
+      <item name="meta_title">Titulli</item>
+      <item name="meta_keywords">Fjalët kyçe</item>
+      <item name="meta_description">Përshkrimi</item>
+      <item name="meta_robots">Robotët</item>
+      <item name="doctypes">Doctype</item>
+      <item name="langcode">Kodi i gjuhës</item>
+      <item name="langdir">Drejtimi i gjuhës</item>
+      <item name="ltr">Majtas-djathtas</item>
+      <item name="rtl">Djathtas-majtas</item>
+      <item name="xml_pi">Deklarimi XML</item>
+      <item name="encoding">Kodimi i karakterëve</item>
+      <item name="appearance_bgprops">Tiparet e fushës</item>
+      <item name="appearance_marginprops">Hapësirat e trupit</item>
+      <item name="appearance_linkprops">Ngjyra e lidhjeve</item>
+      <item name="appearance_textprops">Tiparet e tekstit</item>
+      <item name="bgcolor">Ngjyra e fushës</item>
+      <item name="bgimage">Foto e fushës</item>
+      <item name="left_margin">Hapësira majtas</item>
+      <item name="right_margin">Hapësira djathtas</item>
+      <item name="top_margin">Hapësira në krye</item>
+      <item name="bottom_margin">Hapësira në fund</item>
+      <item name="text_color">Ngjyra e tekstit</item>
+      <item name="font_size">Madhësia e gërmave</item>
+      <item name="font_face">Tipi i gërmës</item>
+      <item name="link_color">Ngjyra e lidhjes</item>
+      <item name="hover_color">Ngjyra e hover</item>
+      <item name="visited_color">Ngjyra e vizituar</item>
+      <item name="active_color">Ngjyra aktive</item>
+      <item name="textcolor">Ngjyra</item>
+      <item name="fontsize">Madhësia e gërmave</item>
+      <item name="fontface">Tipi i gërmës</item>
+      <item name="meta_index_follow">Indekso dhe ndiq lidhjet</item>
+      <item name="meta_index_nofollow">Indekso por mos ndiq lidhjet</item>
+      <item name="meta_noindex_follow">Mos indekso por ndiq lidhjet</item>
+      <item name="meta_noindex_nofollow">Mos indekso e as mos ndiq lidhjet</item>
+      <item name="appearance_style">Faqja e stileve dhe tiparete tyre</item>
+      <item name="stylesheet">Faqja e stileve</item>
+      <item name="style">Stili</item>
+      <item name="author">Autori</item>
+      <item name="copyright">Të drejtat e kopjes</item>
+      <item name="add">Shto një element të ri</item>
+      <item name="remove">Fshi elementin e zgjedhur</item>
+      <item name="moveup">Lëviz elementin sipër</item>
+      <item name="movedown">Lëviz elementin poshtë</item>
+      <item name="head_elements">Elementët e kokës</item>
+      <item name="info">Informacion</item>
+      <item name="add_title">Element titull</item>
+      <item name="add_meta">Element meta</item>
+      <item name="add_script">Element script</item>
+      <item name="add_style">Element stil</item>
+      <item name="add_link">Element lidhej</item>
+      <item name="add_base">Element bazë</item>
+      <item name="add_comment">Komento</item>
+      <item name="title_element">Element titull</item>
+      <item name="script_element">Element script</item>
+      <item name="style_element">Element stil</item>
+      <item name="base_element">Element bazë</item>
+      <item name="link_element">Element lidhje</item>
+      <item name="meta_element">Element meta</item>
+      <item name="comment_element">Komento</item>
+      <item name="src">Src</item>
+      <item name="language">Gjuha</item>
+      <item name="href">Href</item>
+      <item name="target">Shënjestra</item>
+      <item name="type">Tipi</item>
+      <item name="charset">Charset</item>
+      <item name="defer">Defer</item>
+      <item name="media">Media</item>
+      <item name="properties">Tiparet</item>
+      <item name="name">Emri</item>
+      <item name="value">Vlera</item>
+      <item name="content">Përmbajtja</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href lang</item>
+      <item name="general_props">Të Përgjithshme</item>
+      <item name="advanced_props">Të Avancuara</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Fut përmbajtje shabllon</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">Shabllonet</item>
+      <item name="label">Shabllon</item>
+      <item name="desc_label">Përshkrimi</item>
+      <item name="desc">Fut përmbajtje shabllon</item>
+      <item name="select">Zgjidh një shabllon</item>
+      <item name="preview">Paraqitje</item>
+      <item name="warning">Kujdes: Nëse rifreskoni një shabllon me një tjeter, mund të humbisni të dhënat.</item>
+      <item name="mdate_format">%d-%m-%Y %H:%M:%S</item>
+      <item name="cdate_format">%d-%m-%Y %H:%M:%S</item>
+      <item name="months_long">Janar,Shkurt,Mars,Prill,Maj,Qershor,Korrik,Gusht,Shtator,Tetor,Nëntor,Dhjetor</item>
+      <item name="months_short">Jan,Shk,Mar,Pri,Maj,Qer,Kor,Gus,Sht,Tet,Nën,Dhj</item>
+      <item name="day_long">E Djelë,E Hënë,E Martë,E Mërkurë,E Enjte,E Premte,E Shtunë,E Djelë</item>
+      <item name="day_short">Dje,Hën,Mar,Mër,Enj,Pre,Sht,Dje</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Karakteret e kontrollit vizual: on/off.</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">Aktivizo/çaktivizo kontrolluesin e gabimeve</item>
+      <item name="menu">Tiparet e kontrolluesit të gabimeve</item>
+      <item name="ignore_word">Injoro fjalën</item>
+      <item name="ignore_words">Injoroji të gjitha</item>
+      <item name="langs">Gjuhët</item>
+      <item name="wait">Ju lutem prisni...</item>
+      <item name="sug">Sygjerimet</item>
+      <item name="no_sug">Asnjë sygjerim</item>
+      <item name="no_mpell">Nuk u gjet asnjë gabim.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">Fut thyerje faqeje.</item>
+    </group>
+    <group target="advlist">
+      <!--<item name="types">Types</item>-->
+      <!--<item name="def">Default</item>-->
+      <!--<item name="lower_alpha">Lower alpha</item>-->
+      <!--<item name="lower_greek">Lower greek</item>-->
+      <!--<item name="lower_roman">Lower roman</item>-->
+      <!--<item name="upper_alpha">Upper alpha</item>-->
+      <!--<item name="upper_roman">Upper roman</item>-->
+      <!--<item name="circle">Circle</item>-->
+      <!--<item name="disc">Disc</item>-->
+      <!--<item name="square">Square</item>-->
+    </group>
+  </language>
+</language-pack>

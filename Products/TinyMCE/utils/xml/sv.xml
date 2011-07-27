@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>okänd</author>
+    <version major="9" minor="0" releasedate="2010-12-19" />
+    <description>Detta är det svenska språkpaketet för TinyMCE.</description>
+  </header>
+  <language code="sv" title="Swedish" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">Vill du använda WYSIWYG för denna textarea?</item>
+      <item name="apply">Applicera</item>
+      <item name="insert">Infoga</item>
+      <item name="update">Uppdatera</item>
+      <item name="cancel">Avbryt</item>
+      <item name="close">Stäng</item>
+      <item name="browse">Bläddra</item>
+      <item name="class_name">Klass</item>
+      <item name="not_set">-- Inte satt --</item>
+      <item name="clipboard_msg">Kopiera/klipp ut/klistra in är inte tillgängligt i din webbläsare.\nVill du veta mer?</item>
+      <item name="clipboard_no_support">Funktionen är inte tillgänglig i din webbläsare, använd tangentbordsgenvägarna i stället.</item>
+      <item name="popup_blocked">Popup blockerare detekterad. Stäng av den så att dialogerna kan öppnas.</item>
+      <item name="invalid_data">Fel: Inkorrekta värden har matats in, dessa är markerade i rött.</item>
+      <item name="more_colors">Fler färger</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">Fet (Ctrl+B)</item>
+      <item name="italic_desc">Kursiv (Ctrl+I)</item>
+      <item name="underline_desc">Understruken (Ctrl+U)</item>
+      <item name="striketrough_desc">Genomstruken</item>
+      <item name="bullist_desc">Punktlista</item>
+      <item name="numlist_desc">Nummerlista</item>
+      <item name="undo_desc">Ångra (Ctrl+Z)</item>
+      <item name="redo_desc">Gör om (Ctrl+Y)</item>
+      <item name="cleanup_desc">Städa upp i källkoden</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">Stilar</item>
+      <item name="font_size">Fontstorlek</item>
+      <item name="fontdefault">Fontfamilj</item>
+      <item name="block">Format</item>
+      <item name="paragraph">Stycke</item>
+      <item name="div">Div</item>
+      <item name="address">Adress</item>
+      <item name="pre">Förformaterad</item>
+      <item name="h1">Rubrik 1</item>
+      <item name="h2">Rubrik 2</item>
+      <item name="h3">Rubrik 3</item>
+      <item name="h4">Rubrik 4</item>
+      <item name="h5">Rubrik 5</item>
+      <item name="h6">Rubrik 6</item>
+      <item name="blockquote">Blockcitat</item>
+      <item name="code">Kodblock</item>
+      <item name="samp">Kodexempel</item>
+      <item name="dt">Definitionsterm</item>
+      <item name="dd">Definitionsbeskrivning</item>
+      <!-- Buttons -->
+      <item name="bold_desc">Fet (Ctrl+B)</item>
+      <item name="italic_desc">Kursiv (Ctrl+I)</item>
+      <item name="underline_desc">Understruken (Ctrl+U)</item>
+      <item name="striketrough_desc">Genomstruken</item>
+      <item name="justifyleft_desc">Vänsterställd</item>
+      <item name="justifycenter_desc">Centrera</item>
+      <item name="justifyright_desc">Högerställd</item>
+      <item name="justifyfull_desc">Justera</item>
+      <item name="bullist_desc">Punktlista</item>
+      <item name="numlist_desc">Nummerlista</item>
+      <item name="outdent_desc">Drag tillbaka</item>
+      <item name="indent_desc">Indrag</item>
+      <item name="undo_desc">Ångra (Ctrl+Z)</item>
+      <item name="redo_desc">Gör om (Ctrl+Y)</item>
+      <item name="link_desc">Infoga/redigera länk</item>
+      <item name="unlink_desc">Ta bort länk</item>
+      <item name="image_desc">Infoga/redigera bild</item>
+      <item name="cleanup_desc">Städa upp i källkoden</item>
+      <item name="code_desc">Redigera HTML källkoden</item>
+      <item name="sub_desc">Subscript</item>
+      <item name="sup_desc">Superscript</item>
+      <item name="hr_desc">Infoga horisontell skiljelinje</item>
+      <item name="removeformat_desc">Ta bort formatering</item>
+      <item name="custom1_desc"></item>
+      <item name="forecolor_desc">Välj textfärg</item>
+      <item name="backcolor_desc">Välj bakgrundsfärg</item>
+      <item name="charmap_desc">Infoga specialtecken</item>
+      <item name="visualaid_desc">Visa/dölj visuella hjälpmedel</item>
+      <item name="anchor_desc">Infoga/redigera bokmärke</item>
+      <item name="cut_desc">Klipp ut</item>
+      <item name="copy_desc">Kopiera</item>
+      <item name="paste_desc">Klistra in</item>
+      <item name="image_props_desc">Bildinställningar</item>
+      <item name="newdocument_desc">Nytt dokument</item>
+      <item name="help_desc">Hjälp</item>
+      <item name="blockquote_desc">Blockcitat</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">Kopiera/klipp ut/klistra in är inte tillgängligt i din webbläsare.\nVill du veta mer om detta?</item>
+      <item name="path">Element</item>
+      <item name="newdocument">Är du säker på att du vill radera allt innehåll?</item>
+      <item name="toolbar_focus">Hoppa till verktygsfältet - Alt+Q, Hoppa till redigeraren - Alt-Z, Hoppa till elementlistan - Alt-X</item>
+      <item name="more_colors"></item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">Om TinyMCE</item>
+      <item name="about_general">Om</item>
+      <item name="about_help">Hjälp</item>
+      <item name="about_license">Licens</item>
+      <item name="about_plugins">Om plug-in</item>
+      <item name="about_plugin">Om plug-in</item>
+      <item name="about_author">Utvecklare</item>
+      <item name="about_version">Version</item>
+      <item name="about_loaded">Laddade plug-ins</item>
+      <!-- Anchor -->
+      <item name="anchor_title">Infoga/redigera bokmärke</item>
+      <item name="anchor_name">Namn</item>
+      <!-- Source -->
+      <item name="code_title">HTML källkodsläge</item>
+      <item name="code_wordwrap">Bryt ord</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">Välj en färg</item>
+      <item name="colorpicker_picker_tab">Väljare</item>
+      <item name="colorpicker_picker_title">Färgväljare</item>
+      <item name="colorpicker_palette_tab">Palett</item>
+      <item name="colorpicker_palette_title">Palettfärger</item>
+      <item name="colorpicker_named_tab">Namngivna</item>
+      <item name="colorpicker_named_title">Namngivna färger</item>
+      <item name="colorpicker_color">Färg:</item>
+      <item name="colorpicker_name">Namn:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">Välj ett specialtecken</item>
+      <!-- Image -->
+      <item name="image_title">Infoga/redigera bild</item>
+      <item name="image_src">Bildens URL</item>
+      <item name="image_alt">Bildens beskrivning</item>
+      <item name="image_list">Bildlista</item>
+      <item name="image_border">Ram</item>
+      <item name="image_dimensions">Dimensioner</item>
+      <item name="image_vspace">Vertikalrymd</item>
+      <item name="image_hspace">Horisontalrymd</item>
+      <item name="image_align">Justering</item>
+      <item name="image_align_baseline">Baslinje</item>
+      <item name="image_align_top">Toppen</item>
+      <item name="image_align_middle">Mitten</item>
+      <item name="image_align_bottom">Botten</item>
+      <item name="image_align_texttop">Toppen av texten</item>
+      <item name="image_align_textbottom">Botten av texten</item>
+      <item name="image_align_left">Vänster</item>
+      <item name="image_align_right">Höger</item>
+      <!-- Link -->
+      <item name="link_title">Infoga/redigera länk</item>
+      <item name="link_url">Länkens URL</item>
+      <item name="link_target">Mål</item>
+      <item name="link_target_same">Öppna länken i samma fönster</item>
+      <item name="link_target_blank">Öppna länken i ett nytt fönster</item>
+      <item name="link_titlefield">Titel</item>
+      <item name="link_is_email">Länken du angav verkar vara en e-post adress. Vill du infoga mailto: prefixet på länken?</item>
+      <item name="link_is_external">Länken du angav verkar vara en extern adress. Vill du infoga http:// prefixet på länken?</item>
+      <item name="link_list">Länklista</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">Justering</item>
+      <item name="left">Vänster</item>
+      <item name="center">Centrerad</item>
+      <item name="right">Höger</item>
+      <item name="full">Utfyllnad</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%Y-%m-%d </item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">Infoga datum</item>
+      <item name="inserttime_desc">Infoga tid</item>
+      <item name="months_long">Januari,Februari,Mars,April,Maj,Juni,Juli,Augusti,September,Oktober,November,December</item>
+      <item name="months_short">Jan,Feb,Mar,Apr,Maj,Jun,Jul,Aug,Sep,Okt,Nov,Dec</item>
+      <item name="day_long">Söndag,Måndag,Tisdag,Onsdag,Torsdag,Fredag,Lördag,Söndag</item>
+      <item name="day_short">Sön,Mån,Tis,Ons,Tors,Fre,Lör,Sön</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">Skriv ut</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">Förhandsgranska</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">Skriftläge - vänster till höger</item>
+      <item name="rtl_desc">Skriftläge - höger till vänster</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">Infoga nytt lager</item>
+      <item name="forward_desc">Flytta framåt</item>
+      <item name="backward_desc">Flytta bakåt</item>
+      <item name="absolute_desc">Slå av/på absolut positionering</item>
+      <item name="content">Nytt lager...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">Spara</item>
+      <item name="cancel_desc">Hoppa över alla förändringar</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">Infoga icke radbrytande mellanslag</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">Rättstava</item>
+      <item name="download">ieSpell kunde inte hittas, vill du installera denna nu?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">Horisontell skiljelinje</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">Bredd</item>
+      <item name="size">Höjd</item>
+      <item name="noshade">Ingen skugga</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">Smileys</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">Infoga smiley</item>
+      <item name="desc">Smileys</item>
+      <item name="cool">Cool</item>
+      <item name="cry">Gråter</item>
+      <item name="embarassed">Skäms</item>
+      <item name="foot_in_mouth">Foten i munnen</item>
+      <item name="frown">Rynkar på näsan</item>
+      <item name="innocent">Oskyldig</item>
+      <item name="kiss">Kyss</item>
+      <item name="laughing">Skrattande</item>
+      <item name="money_mouth">Guld i mun</item>
+      <item name="sealed">Tyst</item>
+      <item name="smile">Glad</item>
+      <item name="surprised">Förvånad</item>
+      <item name="tongue_out">Tungan ute</item>
+      <item name="undecided">Obestämd</item>
+      <item name="wink">Flört</item>
+      <item name="yell">Skrikandes</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">Sök</item>
+      <item name="replace_desc">Sök/ersätt</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">Sök igen</item>
+      <item name="notfound">Sökningen har slutförts. Söksträngen kunde inte hittas.</item>
+      <item name="search_title">Sök</item>
+      <item name="replace_title">Sök/ersätt</item>
+      <item name="allreplaced">Alla ställen där söksträngen kunde hittas har ersatts.</item>
+      <item name="findwhat">Hitta vad</item>
+      <item name="replacewith">Ersätt med</item>
+      <item name="direction">Riktning</item>
+      <item name="up">Uppåt</item>
+      <item name="down">Neråt</item>
+      <item name="mcase">Matcha gemener/versaler</item>
+      <item name="findnext">Hitta nästa</item>
+      <item name="replace">Ersätt</item>
+      <item name="replaceall">Ersätt alla</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">Infoga/redigera bild</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">Generellt</item>
+      <item name="tab_appearance">Utseende</item>
+      <item name="tab_advanced">Avancerat</item>
+      <item name="general">Generellt</item>
+      <item name="title">Titel</item>
+      <item name="preview">Förhandsvisning</item>
+      <item name="constrain_proportions">Bibehåll proportionerna</item>
+      <item name="langdir">Skriftriktning</item>
+      <item name="langcode">Språkkod</item>
+      <item name="long_desc">Lång beskrivning</item>
+      <item name="style">Stil</item>
+      <item name="classes">Klasser</item>
+      <item name="ltr">Vänster till höger</item>
+      <item name="rtl">Höger till vänster</item>
+      <item name="id">Id</item>
+      <item name="map">Länkkarta</item>
+      <item name="swap_image">Utbytningsbild</item>
+      <item name="alt_image">Alternativbild</item>
+      <item name="mouseover">vid musen ovanför</item>
+      <item name="mouseout">vid musen utanför</item>
+      <item name="misc">Övrigt</item>
+      <item name="example_img">Exempelbild</item>
+      <item name="missing_alt">Vill du fortsätta utan bildbeskrivning. Icke grafiska webbläsare kommer inte kunna tolka bilden för användaren.</item>
+      <item name="dialog_title">Infoga/redigera bild</item>
+      <item name="src">Bildens URL</item>
+      <item name="alt">Bildens beskrivning</item>
+      <item name="list">Bildlista</item>
+      <item name="border">Ram</item>
+      <item name="dimensions">Dimensioner</item>
+      <item name="vspace">Vertikalrymd</item>
+      <item name="hspace">Horisontalrymd</item>
+      <item name="align">Justering</item>
+      <item name="align_baseline">Baslinje</item>
+      <item name="align_top">Toppen</item>
+      <item name="align_middle">Mitten</item>
+      <item name="align_bottom">Botten</item>
+      <item name="align_texttop">Toppen av texten</item>
+      <item name="align_textbottom">Botten av texten</item>
+      <item name="align_left">Vänster</item>
+      <item name="align_right">Höger</item>
+      <item name="image_list">Bildlista</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">Infoga/redigera länk</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">Infoga/redigera länk</item>
+      <item name="url">Länkens URL</item>
+      <item name="target">Mål</item>
+      <item name="titlefield">Titel</item>
+      <item name="is_email">Länken du angav verkar vara en e-post adress. Vill du infoga mailto: prefixet på länken?</item>
+      <item name="is_external">Länken du angav verkar vara en extern adress. Vill du infoga http:// prefixet på länken?</item>
+      <item name="list">Länklista</item>
+      <item name="general_tab">Generellt</item>
+      <item name="popup_tab">Popup</item>
+      <item name="events_tab">Händelser</item>
+      <item name="advanced_tab">Avancerat</item>
+      <item name="general_props">Generella inställningar</item>
+      <item name="popup_props">Popup-inställningar</item>
+      <item name="event_props">Händelser</item>
+      <item name="advanced_props">Avancerade inställningar</item>
+      <item name="popup_opts">Inställningar</item>
+      <item name="anchor_names">Bokmärken</item>
+      <item name="target_same">Öppna i detta fönster/ram</item>
+      <item name="target_parent">Öppna i överliggande fönster/ram</item>
+      <item name="target_top">Öppna i toppramen (ersätter alla ramar)</item>
+      <item name="target_blank">Öppna i nytt fönster</item>
+      <item name="popup">Javascript popup</item>
+      <item name="popup_url">Popup URL</item>
+      <item name="popup_name">Fönsternamn</item>
+      <item name="popup_return">Infoga 'return false'</item>
+      <item name="popup_scrollbars">Rullningslister</item>
+      <item name="popup_statusbar">Statusfält</item>
+      <item name="popup_toolbar">Verktygsfält</item>
+      <item name="popup_menubar">Menyrad</item>
+      <item name="popup_location">Adressraden</item>
+      <item name="popup_resizable">Skalbart fönster</item>
+      <item name="popup_dependent">Beroende av (Mozilla/Firefox enbart)</item>
+      <item name="popup_size">Storlek</item>
+      <item name="popup_position">Position (x/y)</item>
+      <item name="id">Id</item>
+      <item name="style">Stil</item>
+      <item name="classes">Klasser</item>
+      <item name="target_name">Målnamn</item>
+      <item name="langdir">Skriftriktning</item>
+      <item name="target_langcode">Målspråk</item>
+      <item name="langcode">Språkkod</item>
+      <item name="encoding">Teckenformattering</item>
+      <item name="mime">MIME type</item>
+      <item name="rel">Relation (rel attribut)</item>
+      <item name="rev">Omvänd relation (rev)</item>
+      <item name="tabindex">Tabbindex</item>
+      <item name="accesskey">Snabbtangent</item>
+      <item name="ltr">Vänster till höger</item>
+      <item name="rtl">Höger till vänster</item>
+      <item name="link_list">Länklista</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">citat</item>
+      <item name="abbr_desc">Förkortning</item>
+      <item name="acronym_desc">Akronym</item>
+      <item name="del_desc">Markera som struket</item>
+      <item name="ins_desc">Markera som tillagt</item>
+      <item name="attribs_desc">Redigera attribut</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">Titel</item>
+      <item name="attribute_label_id">ID</item>
+      <item name="attribute_label_class">Klass</item>
+      <item name="attribute_label_style">Stil</item>
+      <item name="attribute_label_cite">Citat</item>
+      <item name="attribute_label_datetime">Datum/Tid</item>
+      <item name="attribute_label_langdir">Skriftriktning</item>
+      <item name="attribute_option_ltr">Vänster till höger</item>
+      <item name="attribute_option_rtl">Höger till vänster</item>
+      <item name="attribute_label_langcode">Språk</item>
+      <item name="attribute_label_tabindex">Tabbindex</item>
+      <item name="attribute_label_accesskey">Snabbtangent</item>
+      <item name="attribute_events_tab">Händelser</item>
+      <item name="attribute_attrib_tab">Attribut</item>
+      <item name="general_tab">Generellt</item>
+      <item name="attrib_tab">Attribut</item>
+      <item name="events_tab">Händelser</item>
+      <item name="fieldset_general_tab">Generella inställningar</item>
+      <item name="fieldset_attrib_tab">Attribut</item>
+      <item name="fieldset_events_tab">Händelser</item>
+      <item name="title_ins_element">Markera som tillagt</item>
+      <item name="title_del_element">Markera som struket</item>
+      <item name="title_acronym_element">Akronym</item>
+      <item name="title_abbr_element">Förkortning</item>
+      <item name="title_cite_element">Citat</item>
+      <item name="remove">Radera</item>
+      <item name="insert_date">Infoga nuvarande datum och tid</item>
+      <item name="option_ltr">Vänster till höger</item>
+      <item name="option_rtl">Höger till vänster</item>
+      <item name="attribs_title">Redigera attribut</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">Redigera inline CSS</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">Redigera inline CSS</item>
+      <item name="apply">Applicera</item>
+      <item name="text_tab">Text</item>
+      <item name="background_tab">Bakgrund</item>
+      <item name="block_tab">Block</item>
+      <item name="box_tab">Box</item>
+      <item name="border_tab">Ramar</item>
+      <item name="list_tab">Listor</item>
+      <item name="positioning_tab">Positionering</item>
+      <item name="text_props">Text</item>
+      <item name="text_font">Typsnitt</item>
+      <item name="text_size">Storlek</item>
+      <item name="text_weight">Tjocklek</item>
+      <item name="text_style">Stil</item>
+      <item name="text_variant">Variant</item>
+      <item name="text_lineheight">Radhöjd</item>
+      <item name="text_case">Små/stora</item>
+      <item name="text_color">Färg</item>
+      <item name="text_decoration">Dekoration</item>
+      <item name="text_overline">Överstruken</item>
+      <item name="text_underline">Understruken</item>
+      <item name="text_striketrough">Genomstruken</item>
+      <item name="text_blink">Blinka</item>
+      <item name="text_none">Inget</item>
+      <item name="background_color">Bakgrundsfärg</item>
+      <item name="background_image">Bakgrundsbild</item>
+      <item name="background_repeat">Upprepning</item>
+      <item name="background_attachment">Fästpunkt</item>
+      <item name="background_hpos">Horisontell position</item>
+      <item name="background_vpos">Vertikal position</item>
+      <item name="block_wordspacing">Ordavbrytning</item>
+      <item name="block_letterspacing">Teckenmellanrum</item>
+      <item name="block_vertical_alignment">Vertikal justering</item>
+      <item name="block_text_align">Textjustering</item>
+      <item name="block_text_indent">Textindrag</item>
+      <item name="block_whitespace">Whitespace</item>
+      <item name="block_display">Display</item>
+      <item name="box_width">Bredd</item>
+      <item name="box_height">Höjd</item>
+      <item name="box_float">Float</item>
+      <item name="box_clear">Clear</item>
+      <item name="padding">Padding</item>
+      <item name="same">Samma för alla</item>
+      <item name="top">Toppen</item>
+      <item name="right">Höger</item>
+      <item name="bottom">Botten</item>
+      <item name="left">Vänster</item>
+      <item name="margin">Marginal</item>
+      <item name="style">Stil</item>
+      <item name="width">Bredd</item>
+      <item name="height">Höjd</item>
+      <item name="color">Färg</item>
+      <item name="list_type">Listtyp</item>
+      <item name="bullet_image">Punktbild</item>
+      <item name="position">Position</item>
+      <item name="positioning_type">Positionstyp</item>
+      <item name="visibility">Synlighet</item>
+      <item name="zindex">Z-index</item>
+      <item name="overflow">Överflöde</item>
+      <item name="placement">Placering</item>
+      <item name="clip">Beskärning</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">Klistra in som text</item>
+      <item name="paste_word_desc">Klistra in från Word</item>
+      <item name="selectall_desc">Markera allt</item>
+      <item name="plaintext_mode_sticky">Inklistring är nu i textläge. Efter att du klistrat in kommer den att återgå till normalläge.</item>
+      <item name="plaintext_mode">Inklistring är nu i textläge.</item>
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">Använd ctrl-v på ditt tangentbord för att klistra in i detta fönster.</item>
+      <item name="text_linebreaks">Spara radbrytningar</item>
+      <item name="word_title">Använd ctrl-v på ditt tangentbord för att klistra in i detta fönster.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">Infoga/redigera ny tabell</item>
+      <item name="row_before_desc">Infoga ny rad före</item>
+      <item name="row_after_desc">Infoga ny rad efter</item>
+      <item name="delete_row_desc">Radera rad</item>
+      <item name="col_before_desc">Infoga kolumn före</item>
+      <item name="col_after_desc">Infoga kolumn efter</item>
+      <item name="delete_col_desc">Radera kolumn</item>
+      <item name="split_cells_desc">Separera sammansatta celler</item>
+      <item name="merge_cells_desc">Sammanfoga celler</item>
+      <item name="row_desc">Tabellradsinställningar</item>
+      <item name="cell_desc">Tabellcellsinställningar</item>
+      <item name="props_desc">Tabellinställningar</item>
+      <item name="paste_row_before_desc">Klistra in rad ovanför</item>
+      <item name="paste_row_after_desc">Klistra in rad efter</item>
+      <item name="cut_row_desc">Klipp ut rad</item>
+      <item name="copy_row_desc">Klistra in rad</item>
+      <item name="del">Radera tabell</item>
+      <item name="row">Rad</item>
+      <item name="col">Kolumn</item>
+      <item name="cell">Cell</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width"></item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">Generellt</item>
+      <item name="advanced_tab">Avancerat</item>
+      <item name="general_props">Generella inställningar</item>
+      <item name="advanced_props">Avancerade inställningar</item>
+      <item name="rowtype">Radtyp</item>
+      <item name="title">Infoga/redigera ny tabell</item>
+      <item name="width">Bredd</item>
+      <item name="height">Höjd</item>
+      <item name="cols">Kolumner</item>
+      <item name="rows">Rader</item>
+      <item name="cellspacing">Cellspacing</item>
+      <item name="cellpadding">Cellpadding</item>
+      <item name="border">Ram</item>
+      <item name="align">Justering</item>
+      <item name="align_default">Ingen</item>
+      <item name="align_left">Vänster</item>
+      <item name="align_right">Höger</item>
+      <item name="align_middle">Mitten</item>
+      <item name="row_title">Tabellradsinställningar</item>
+      <item name="cell_title">Tabellcellsinställningar</item>
+      <item name="cell_type">Celltyp</item>
+      <item name="valign">Vertikal justering</item>
+      <item name="align_top">Toppen</item>
+      <item name="align_bottom">Botten</item>
+      <item name="bordercolor">Ramfärg</item>
+      <item name="bgcolor">Bakgrundsfärg</item>
+      <item name="merge_cells_title">Sammanfoga celler</item>
+      <item name="id">Id</item>
+      <item name="style">Stil</item>
+      <item name="langdir">Skriftriktning</item>
+      <item name="langcode">Språkkod</item>
+      <item name="mime"></item>
+      <item name="ltr">Vänster till höger</item>
+      <item name="rtl">Höger till vänster</item>
+      <item name="bgimage">Bakgrundsbild</item>
+      <item name="summary">Sammanfattning</item>
+      <item name="td">Data</item>
+      <item name="th">Huvud</item>
+      <item name="cell_cell">Uppdatera nuvarande cell</item>
+      <item name="cell_row">Uppdatera alla celler i raden</item>
+      <item name="cell_all">Uppdatera alla celler i tabellen</item>
+      <item name="row_row">Uppdatera nuvarande rad</item>
+      <item name="row_odd">Uppdatera udda rader i tabellen</item>
+      <item name="row_even">Uppdatera jämna rader i tabellen</item>
+      <item name="row_all">Uppdatera alla rader i tabellen</item>
+      <item name="thead">tabellhuvud</item>
+      <item name="tbody">tabellkropp</item>
+      <item name="tfoot">tabellfot</item>
+      <item name="scope">Omfattning</item>
+      <item name="rowgroup">Radgrupp</item>
+      <item name="colgroup">Kolumngrupp</item>
+      <item name="col_limit">Du kan inte ange fler än {$cols} kolumner.</item>
+      <item name="row_limit">Du kan inte ange fler än {$rows} rader.</item>
+      <item name="cell_limit">Du kan inte skapa en tabell med fler än {$cells} celler.</item>
+      <item name="missing_scope">Ör du säker på att du vill fortsätta utan att ange en omfattning, denna underlättar för icke-grafiska webbläsare.</item>
+      <item name="caption">Överskrift</item>
+      <item name="frame">Ram</item>
+      <item name="frame_none">none</item>
+      <item name="frame_groups">groups</item>
+      <item name="frame_rows">rows</item>
+      <item name="frame_cols">cols</item>
+      <item name="frame_all">all</item>
+      <item name="rules">Regler</item>
+      <item name="rules_void">void</item>
+      <item name="rules_above">above</item>
+      <item name="rules_below">below</item>
+      <item name="rules_hsides">hsides</item>
+      <item name="rules_lhs">lhs</item>
+      <item name="rules_rhs">rhs</item>
+      <item name="rules_vsides">vsides</item>
+      <item name="rules_box">box</item>
+      <item name="rules_border">border</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">De förändringar som du gjort kommer att gå förlorade om du lämnar sidan.</item>
+      <item name="restore_content">Återskapa automatiskt sparat innehåll.</item>
+      <item name="warning_message">Om du återskapar innehåll så kommer det nuvarande innehållet i fältet att raderas.\n\nÄr du säker på att du vill göra detta?</item>
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">Slå av/på fullskärmsläge</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">Infoga/redigera inbäddad media</item>
+      <item name="edit">Redigera inbäddad media</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">Infoga/redigera inbäddad media</item>
+      <item name="general">Generellt</item>
+      <item name="advanced">Avancerat</item>
+      <item name="file">Fil/URL</item>
+      <item name="list">Lista</item>
+      <item name="size">Dimensioner</item>
+      <item name="preview">Förhandsvisning</item>
+      <item name="constrain_proportions">Bibehåll proportionerna</item>
+      <item name="type">Typ</item>
+      <item name="id">Id</item>
+      <item name="name">Namn</item>
+      <item name="class_name">Klass</item>
+      <item name="vspace">V-Space</item>
+      <item name="hspace">H-Space</item>
+      <item name="play">Spela upp automatiskt</item>
+      <item name="loop">Loopa</item>
+      <item name="menu">Visa menyn</item>
+      <item name="quality">Kvalité</item>
+      <item name="scale">Skala</item>
+      <item name="align">Justera</item>
+      <item name="salign">SAlign</item>
+      <item name="wmode">WMode</item>
+      <item name="bgcolor">Bakgrundsfärg</item>
+      <item name="base">Base</item>
+      <item name="flashvars">Flashvars</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">AutoHREF</item>
+      <item name="cache">Cache</item>
+      <item name="hidden">Hidden</item>
+      <item name="controller">Controller</item>
+      <item name="kioskmode">Kiosk mode</item>
+      <item name="playeveryframe">Spela varje bildruta</item>
+      <item name="targetcache">Target cache</item>
+      <item name="correction">No correction</item>
+      <item name="enablejavascript">Enable JavaScript</item>
+      <item name="starttime">Start time</item>
+      <item name="endtime">End time</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">Choke speed</item>
+      <item name="target">Target</item>
+      <item name="volume">Volym</item>
+      <item name="autostart">Starta automatiskt</item>
+      <item name="enabled">Enabled</item>
+      <item name="fullscreen">Fullskärm</item>
+      <item name="invokeurls">Invoke URLs</item>
+      <item name="mute">Mute</item>
+      <item name="stretchtofit">Stretch to fit</item>
+      <item name="windowlessvideo">Windowless video</item>
+      <item name="balance">Balance</item>
+      <item name="baseurl">Base URL</item>
+      <item name="captioningid">Captioning id</item>
+      <item name="currentmarker">Current marker</item>
+      <item name="currentposition">Current position</item>
+      <item name="defaultframe">Default frame</item>
+      <item name="playcount">Play count</item>
+      <item name="rate">Rate</item>
+      <item name="uimode">UI Mode</item>
+      <item name="flash_options">Flash options</item>
+      <item name="qt_options">Quicktime options</item>
+      <item name="wmp_options">Windows media player options</item>
+      <item name="rmp_options">Real media player options</item>
+      <item name="shockwave_options">Shockwave options</item>
+      <item name="autogotourl">Auto goto URL</item>
+      <item name="center">Center</item>
+      <item name="imagestatus">Image status</item>
+      <item name="maintainaspect">Maintain aspect</item>
+      <item name="nojava">No java</item>
+      <item name="prefetch">Prefetch</item>
+      <item name="shuffle">Shuffle</item>
+      <item name="console">Console</item>
+      <item name="numloop">Num loops</item>
+      <item name="controls">Controls</item>
+      <item name="scriptcallbacks">Script callbacks</item>
+      <item name="swstretchstyle">Stretch style</item>
+      <item name="swstretchhalign">Stretch H-Align</item>
+      <item name="swstretchvalign">Stretch V-Align</item>
+      <item name="sound">Sound</item>
+      <item name="progress">Progress</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn">Streamed rtsp resources should be added to the QT Src field under the advanced tab.\nYou should also add a non streamed version to the Src field..</item>
+      <item name="align_top">Top</item>
+      <item name="align_right">Right</item>
+      <item name="align_bottom">Bottom</item>
+      <item name="align_left">Left</item>
+      <item name="align_center">Center</item>
+      <item name="align_top_left">Top left</item>
+      <item name="align_top_right">Top right</item>
+      <item name="align_bottom_left">Bottom left</item>
+      <item name="align_bottom_right">Bottom right</item>
+      <item name="flv_options">Flash video options</item>
+      <item name="flv_scalemode">Scale mode</item>
+      <item name="flv_buffer">Buffer</item>
+      <item name="flv_startimage">Start image</item>
+      <item name="flv_starttime">Start time</item>
+      <item name="flv_defaultvolume">Default volumne</item>
+      <item name="flv_hiddengui">Hidden GUI</item>
+      <item name="flv_autostart">Auto start</item>
+      <item name="flv_loop">Loop</item>
+      <item name="flv_showscalemodes">Show scale modes</item>
+      <item name="flv_smoothvideo">Smooth video</item>
+      <item name="flv_jscallback">JS Callback</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">Dokumentinställningar</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Dokumentinställningar</item>
+      <item name="meta_tab">Generella</item>
+      <item name="appearance_tab">Utseende</item>
+      <item name="advanced_tab">Avancerat</item>
+      <item name="meta_props">Metainformation</item>
+      <item name="langprops">Språk och kodning</item>
+      <item name="meta_title">Titel</item>
+      <item name="meta_keywords">Nyckelord</item>
+      <item name="meta_description">Bekrivning</item>
+      <item name="meta_robots">Robots</item>
+      <item name="doctypes">Doctype</item>
+      <item name="langcode">Språkkod</item>
+      <item name="langdir">Skriftriktning</item>
+      <item name="ltr">Vänster till höger</item>
+      <item name="rtl">Höger till vänster</item>
+      <item name="xml_pi">XML deklaration</item>
+      <item name="encoding">Teckenkodning</item>
+      <item name="appearance_bgprops">Bakgrundsinställningar</item>
+      <item name="appearance_marginprops">Body marginaler</item>
+      <item name="appearance_linkprops">Länkfärger</item>
+      <item name="appearance_textprops">Textinställningar</item>
+      <item name="bgcolor">Bakgrundsfärg</item>
+      <item name="bgimage">Bakgrundsbild</item>
+      <item name="left_margin">Vänstermarginal</item>
+      <item name="right_margin">Högermarginal</item>
+      <item name="top_margin">Toppmarginal</item>
+      <item name="bottom_margin">Bottenmarginal</item>
+      <item name="text_color">Textfärg</item>
+      <item name="font_size">Textstorlek</item>
+      <item name="font_face">Textstil</item>
+      <item name="link_color">Länkfärg</item>
+      <item name="hover_color">Hover färg</item>
+      <item name="visited_color">Visited färg</item>
+      <item name="active_color">Active färg</item>
+      <item name="textcolor">Färg</item>
+      <item name="fontsize">Textstorlek</item>
+      <item name="fontface">Textstil</item>
+      <item name="meta_index_follow">Indexera och följ länkar</item>
+      <item name="meta_index_nofollow">Indexera men följ ej länkar</item>
+      <item name="meta_noindex_follow">Indexera inte men följ länkar</item>
+      <item name="meta_noindex_nofollow">Indexera inte och följ ej länkar</item>
+      <item name="appearance_style">Stilmall och stilegenskaper</item>
+      <item name="stylesheet">Stilmall</item>
+      <item name="style">Stil</item>
+      <item name="author">Författare</item>
+      <item name="copyright">Copyright</item>
+      <item name="add">Lägg till element</item>
+      <item name="remove">Radera det markerade elementet</item>
+      <item name="moveup">Flytta det markerade elementet uppåt</item>
+      <item name="movedown">Flytta det markerade elementet nedåt</item>
+      <item name="head_elements">Head element</item>
+      <item name="info">Information</item>
+      <item name="add_title">Titel-element</item>
+      <item name="add_meta">Meta-element</item>
+      <item name="add_script">Script-element</item>
+      <item name="add_style">Stil-element</item>
+      <item name="add_link">Länk-element</item>
+      <item name="add_base">Base-element</item>
+      <item name="add_comment">Kommentarsnod</item>
+      <item name="title_element">Titel-element</item>
+      <item name="script_element">Script-element</item>
+      <item name="style_element">Style-element</item>
+      <item name="base_element">Base-element</item>
+      <item name="link_element">Link-element</item>
+      <item name="meta_element">Meta-element</item>
+      <item name="comment_element">Comment-element</item>
+      <item name="src">Src</item>
+      <item name="language">Språk</item>
+      <item name="href">Href</item>
+      <item name="target">Mål</item>
+      <item name="type">Typ</item>
+      <item name="charset">Teckenuppsättning</item>
+      <item name="defer">Defer</item>
+      <item name="media">Media</item>
+      <item name="properties">Egenskaper</item>
+      <item name="name">Name</item>
+      <item name="value">Value</item>
+      <item name="content">Innehåll</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href lang</item>
+      <item name="general_props">Generellt</item>
+      <item name="advanced_props">Avancerat</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Infoga en färdig mall</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">Mallar</item>
+      <item name="label">Mall</item>
+      <item name="desc_label">Beskrivning</item>
+      <item name="desc">Infoga en färdig mall</item>
+      <item name="select">Välj en mall</item>
+      <item name="preview">Förhandsgranska</item>
+      <item name="warning">Varning: Uppdaterar en mall med en ny kan innebära att data försvinner.</item>
+      <item name="mdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="cdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="months_long">Januari,Februari,Mars,April,Maj,Juni,Juli,Augusti,September,Oktober,November,December</item>
+      <item name="months_short">Jan,Feb,Mar,Apr,Maj,Jun,Jul,Aug,Sep,Okt,Nov,Dec</item>
+      <item name="day_long">Söndag,Måndag,Tisdag,Onsdag,Torsdag,Fredag,Lördag,Söndag</item>
+      <item name="day_short">Sön,Mån,Tis,Ons,Tors,Fre,Lör,Sön</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Visa osynliga tecken</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">Slå av/på rättstavningskontroll</item>
+      <item name="menu">Rättstavningsinställningar</item>
+      <item name="ignore_word">Ignorera ord</item>
+      <item name="ignore_words">Ignorera alla</item>
+      <item name="langs">Språk</item>
+      <item name="wait">Var god vänta...</item>
+      <item name="sug">Förslag</item>
+      <item name="no_sug">Inga förslag</item>
+      <item name="no_mpell">Inga felstavningar funna.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">Infoga sidbrytning</item>
+    </group>
+    <group target="advlist">
+      <item name="types">Typer</item>
+      <item name="def">Default</item>
+      <item name="lower_alpha">Lower alpha</item>
+      <item name="lower_greek">Lower greek</item>
+      <item name="lower_roman">Lower roman</item>
+      <item name="upper_alpha">Upper alpha</item>
+      <item name="upper_roman">Upper roman</item>
+      <item name="circle">Cirkel</item>
+      <item name="disc">Disc</item>
+      <item name="square">Fyrkant</item>
+    </group>
+  </language>
+</language-pack>

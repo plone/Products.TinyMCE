@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>XdNet - Damià Verger, Jordi Diaz i Albert Casademont</author>
+    <version major="3" minor="5" releasedate="2010-11-11" />
+    <description>Aquest és el paquet de llenguatge Català per TinyMCE.</description>
+  </header>
+  <language code="ca" title="Catalan" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">Voleu utilitzar el mode WYSIWYG?</item>
+      <item name="apply">Aplica</item>
+      <item name="insert">Insereix</item>
+      <item name="update">Actualitza</item>
+      <item name="cancel">Cancel·la</item>
+      <item name="close">Tanca</item>
+      <item name="browse">Explora</item>
+      <item name="class_name">Classe</item>
+      <item name="not_set">-- No definit --</item>
+      <item name="clipboard_msg">Copia/Retalla/Enganxa no es troba disponible al Mozilla ni al Firefox.\nVoleu més informació sobre aquesta qüestió?</item>
+      <item name="clipboard_no_support">El vostre navegador actualment no ho admet, utilitzeu les dreceres de teclat.</item>
+      <item name="popup_blocked">El bloqueig de finestres emergents ha inhabilitat una finestra que proporciona funcionalitat a l\'aplicació. Cal que desactiveu el bloqueig de finestres emergents en aquest lloc per tal de poder utilitzar de forma completa aquesta eina.</item>
+      <item name="invalid_data">Error: heu introduït valors no vàlids, els marcats en vermell.</item>
+      <item name="more_colors">Més colors</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">Negreta (Ctrl+B)</item>
+      <item name="italic_desc">Cursiva (Ctrl+I)</item>
+      <item name="underline_desc">Subratllat (Ctrl+U)</item>
+      <item name="striketrough_desc">Barrat</item>
+      <item name="bullist_desc">Llista sense numeració</item>
+      <item name="numlist_desc">Llista numerada</item>
+      <item name="undo_desc">Desfés (Ctrl+Z)</item>
+      <item name="redo_desc">Refés (Ctrl+Y)</item>
+      <item name="cleanup_desc">Poleix el codi</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">Estils</item>
+      <item name="font_size">Mida de font</item>
+      <item name="fontdefault">Família de font</item>
+      <item name="block">Format</item>
+      <item name="paragraph">Paràgraf</item>
+      <item name="div">Capa</item>
+      <item name="address">Adreça</item>
+      <item name="pre">Preformatat</item>
+      <item name="h1">Encapçalament 1</item>
+      <item name="h2">Encapçalament 2</item>
+      <item name="h3">Encapçalament 3</item>
+      <item name="h4">Encapçalament 4</item>
+      <item name="h5">Encapçalament 5</item>
+      <item name="h6">Encapçalament 6</item>
+      <item name="blockquote">Citabloc</item>
+      <item name="code">Codi</item>
+      <item name="samp">Mostra el Codi</item>
+      <item name="dt">Terme de definició </item>
+      <item name="dd">Descripció de definició</item>
+      <!-- Buttons -->
+      <item name="bold_desc">Negreta (Ctrl+B)</item>
+      <item name="italic_desc">Cursiva (Ctrl+I)</item>
+      <item name="underline_desc">Subratllat (Ctrl+U)</item>
+      <item name="striketrough_desc">Barrat</item>
+      <item name="justifyleft_desc">Alineació esquerra</item>
+      <item name="justifycenter_desc">Alineació al centre</item>
+      <item name="justifyright_desc">Alineació dreta</item>
+      <item name="justifyfull_desc">Justificat</item>
+      <item name="bullist_desc">Llista no numerada</item>
+      <item name="numlist_desc">Llista numerada</item>
+      <item name="outdent_desc">Redueix el sagnat</item>
+      <item name="indent_desc">Augmenta el sagnat</item>
+      <item name="undo_desc">Desfés (Ctrl+Z)</item>
+      <item name="redo_desc">Refés (Ctrl+Y)</item>
+      <item name="link_desc">Insereix/edita enllaç</item>
+      <item name="unlink_desc">Desenllaça</item>
+      <item name="image_desc">Insereix/edita imatge</item>
+      <item name="cleanup_desc">Poleix el codi</item>
+      <item name="code_desc">Edita el codi font HTML</item>
+      <item name="sub_desc">Subíndex</item>
+      <item name="sup_desc">Superíndex</item>
+      <item name="hr_desc">Insereix un filet horitzontal</item>
+      <item name="removeformat_desc">Elimina el format</item>
+      <item name="custom1_desc">Aquí la vostra pròpia descripció</item>
+      <item name="forecolor_desc">Selecció del color de text</item>
+      <item name="backcolor_desc">Selecció del color de fons</item>
+      <item name="charmap_desc">Insereix un caràcter</item>
+      <item name="visualaid_desc">Commuta elements guies/invisibles</item>
+      <item name="anchor_desc">Insereix/edita àncora</item>
+      <item name="cut_desc">Retalla</item>
+      <item name="copy_desc">Copia</item>
+      <item name="paste_desc">Enganxa</item>
+      <item name="image_props_desc">Propietats de la imatge</item>
+      <item name="newdocument_desc">Nou document</item>
+      <item name="help_desc">Ajuda</item>
+      <item name="blockquote_desc">Citabloc</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">Copia/Retalla/Enganxa no es troba disponible ni al Mozilla ni al Firefox.\r\nVoleu més informació sobre això?</item>
+      <item name="path">Camí</item>
+      <item name="newdocument">Esteu segur que voleu buidar tots els continguts?</item>
+      <item name="toolbar_focus">Salta als botons d\'eina - Alt+Q, Salta a l\'editor - Alt-Z, Salta al camí de l\'element - Alt-X</item>
+      <item name="more_colors">Més colors</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">Quant al TinyMCE</item>
+      <item name="about_general">Quant a</item>
+      <item name="about_help">Ajuda</item>
+      <item name="about_license">Llicència</item>
+      <item name="about_plugins">Connectors</item>
+      <item name="about_plugin">Connector</item>
+      <item name="about_author">Autor</item>
+      <item name="about_version">Versió</item>
+      <item name="about_loaded">Connectors carregats</item>
+      <!-- Anchor -->
+      <item name="anchor_title">Insereix/edita àncora</item>
+      <item name="anchor_name">Nom de l\'àncora</item>
+      <!-- Source -->
+      <item name="code_title">Editor de codi font HTML</item>
+      <item name="code_wordwrap">Embolcall de paraula</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">Selecció de color</item>
+      <item name="colorpicker_picker_tab">Capturador</item>
+      <item name="colorpicker_picker_title">Capturador de color</item>
+      <item name="colorpicker_palette_tab">Paleta</item>
+      <item name="colorpicker_palette_title">Paleta de colors</item>
+      <item name="colorpicker_named_tab">Per nom</item>
+      <item name="colorpicker_named_title">Colors pel seu nom</item>
+      <item name="colorpicker_color">Color:</item>
+      <item name="colorpicker_name">Nom:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">Selecció de caràcter</item>
+      <!-- Image -->
+      <item name="image_title">Insereix/edita imatge</item>
+      <item name="image_src">URL de la imatge</item>
+      <item name="image_alt">Descripció de la imatge</item>
+      <item name="image_list">Llista de la imatge</item>
+      <item name="image_border">Vora</item>
+      <item name="image_dimensions">Dimensions</item>
+      <item name="image_vspace">Espai vertical</item>
+      <item name="image_hspace">Espai horitzontal</item>
+      <item name="image_align">Alineació</item>
+      <item name="image_align_baseline">Línia de base</item>
+      <item name="image_align_top">A dalt</item>
+      <item name="image_align_middle">Al Mig</item>
+      <item name="image_align_bottom">A baix</item>
+      <item name="image_align_texttop">Part superior del text</item>
+      <item name="image_align_textbottom">Part inferior del text</item>
+      <item name="image_align_left">Esquerra</item>
+      <item name="image_align_right">Dreta</item>
+      <!-- Link -->
+      <item name="link_title">Insereix/edita enllaç</item>
+      <item name="link_url">URL de l\'enllaç</item>
+      <item name="link_target">Destí</item>
+      <item name="link_target_same">Obre l\'enllaç a la mateixa finestra</item>
+      <item name="link_target_blank">Obre l\'enllaç a una nova finestra</item>
+      <item name="link_titlefield">Títol</item>
+      <item name="link_is_email">L\'URL que heu introduït sembla ser una adreça de correu, voleu afegir-hi el prefix requerit mailto: ?</item>
+      <item name="link_is_external">L\'URL que heu introduït sembla ser un enllaç extern, voleu afegir-hi el prefix requerit http:// ?</item>
+      <item name="link_list">Llista d\'enllaços</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">Alineació</item>
+      <item name="left">Esquerra</item>
+      <item name="center">Centre</item>
+      <item name="right">Dreta</item>
+      <item name="full">Justificat</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%d-%m-%Y</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">Insereix la data</item>
+      <item name="inserttime_desc">Insereix l\'hora</item>
+      <item name="months_long">Jgener,febrer,març,abril,maig,juny,juliol,agost,setembre,octubre,novembre,desembre</item>
+      <item name="months_short">gen.,febr.,març,abr.,maig,juny,jul.,ag.,set.,oct.,nov.,des.</item>
+      <item name="day_long">diumenge,dilluns,dimarts,dimecres,dijous,divendres,dissabte,diumenge</item>
+      <item name="day_short">dg.,dl.,dt.,dc.,dj.,dv.,ds.,dg.</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">Imprimeix</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">Previsualització</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">Direcció esquerra a dreta</item>
+      <item name="rtl_desc">Direcció dreta a esquerra</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">Insereix una nova capa</item>
+      <item name="forward_desc">Mou endavant</item>
+      <item name="backward_desc">Mou endarrera</item>
+      <item name="absolute_desc">Conmuta el posicionament absolut</item>
+      <item name="content">Nova Capa...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">Desa</item>
+      <item name="cancel_desc">Cancel·la tots els canvis</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">Insereix un caràcter espai en blanc</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">Executa la correcció ortogràfica</item>
+      <item name="download">no he detectat l\'ieSpell. Voleu instal·lar-ho?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">Filet horitzontal</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">Amplada</item>
+      <item name="size">Alçada</item>
+      <item name="noshade">Sense sombra</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">Emoticones</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">Insereix una emoticona</item>
+      <item name="desc">Emoticones</item>
+      <item name="cool">Guai</item>
+      <item name="cry">Plorant</item>
+      <item name="embarassed">Avergonyit</item>
+      <item name="foot_in_mouth">Amb un peu a la boca</item>
+      <item name="frown">Arrufant les celles</item>
+      <item name="innocent">Innocent</item>
+      <item name="kiss">Petó</item>
+      <item name="laughing">Rient</item>
+      <item name="money_mouth">Amb fam de diners</item>
+      <item name="sealed">Censurat</item>
+      <item name="smile">Somriure</item>
+      <item name="surprised">Sorprès</item>
+      <item name="tongue_out">Llengua a fora</item>
+      <item name="undecided">Indecís</item>
+      <item name="wink">Fent l\'ullet</item>
+      <item name="yell">Cridant</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">Cerca</item>
+      <item name="replace_desc">Cerca/Reemplaça</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">Cerca de nou</item>
+      <item name="notfound">S\'ha completat la cerca. No s\'ha trobat la cadena cercada.</item>
+      <item name="search_title">Cerca</item>
+      <item name="replace_title">Cerca/Reemplaça</item>
+      <item name="allreplaced">S\'han reemplaçat totes les ocurrències de la cadena cercada.</item>
+      <item name="findwhat">Cerca</item>
+      <item name="replacewith">Reemplaça amb</item>
+      <item name="direction">Direcció</item>
+      <item name="up">Amunt</item>
+      <item name="down">Avall</item>
+      <item name="mcase">Distingeix majúscules/minúscules</item>
+      <item name="findnext">Següent</item>
+      <item name="replace">Reemplaça</item>
+      <item name="replaceall">Reemplaça-ho tot</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">Insereix/edita imatge</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">General</item>
+      <item name="tab_appearance">Aparença</item>
+      <item name="tab_advanced">Avançat</item>
+      <item name="general">General</item>
+      <item name="title">Títol</item>
+      <item name="preview">Previsualització</item>
+      <item name="constrain_proportions">Manté la proporció</item>
+      <item name="langdir">Direcció de l\'idioma</item>
+      <item name="langcode">Codi de l\'idioma</item>
+      <item name="long_desc">Enllaç a la descripció llarga</item>
+      <item name="style">Estil</item>
+      <item name="classes">Classes</item>
+      <item name="ltr">D\'esquerra a dreta</item>
+      <item name="rtl">De dreta a esquerra</item>
+      <item name="id">Id</item>
+      <item name="map">Mapa de la imatge</item>
+      <item name="swap_image">Canvia imatge</item>
+      <item name="alt_image">Imatge alternativa</item>
+      <item name="mouseover">quan el ratolí arriba</item>
+      <item name="mouseout">quan el ratolí marxa</item>
+      <item name="misc">Miscel·lània</item>
+      <item name="example_img">Aparença imatge previsualitzada</item>
+      <item name="missing_alt">Esteu segur que voleu continuar sense incloure una descripció de la imatge? La imatge pot no ser accessible a usuaris amb discapacitats, o a aquells que utilitzin navegadors de text o que naveguin amb les imatges desactivades.</item>
+      <item name="dialog_title">Insereix/edita imatge</item>
+      <item name="src">URL de la imatge</item>
+      <item name="alt">Descripció de la imatge</item>
+      <item name="list">Llista de la imatge</item>
+      <item name="border">Vora</item>
+      <item name="dimensions">Dimensions</item>
+      <item name="vspace">Espai vertical</item>
+      <item name="hspace">Espai horitzontal</item>
+      <item name="align">Alineació</item>
+      <item name="align_baseline">Línia de base</item>
+      <item name="align_top">Superior</item>
+      <item name="align_middle">Mitjan lloc</item>
+      <item name="align_bottom">Inferior</item>
+      <item name="align_texttop">Dalt del text</item>
+      <item name="align_textbottom">Baix del text</item>
+      <item name="align_left">A l\'esquerra</item>
+      <item name="align_right">A la dreta</item>
+      <item name="image_list">Llista d\'imatges</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">Insert/edit link</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">Insereix/edita enllaç</item>
+      <item name="url">URL de l\'enllaç</item>
+      <item name="target">Objectiu</item>
+      <item name="titlefield">Títol</item>
+      <item name="is_email">L\'URL que heu introduït sembla ser una adreça de correu electrònic, voleu afegir-hi el prefix requerit mailto: ?</item>
+      <item name="is_external">L\'URL que heu introduït sembla ser un enllaç extern, voleu afegir-hi el prefix requerit http:// ?</item>
+      <item name="list">Llista d\'enllaços</item>
+      <item name="general_tab">General</item>
+      <item name="popup_tab">Finestra emergent</item>
+      <item name="events_tab">Esdeveniments</item>
+      <item name="advanced_tab">Avançat</item>
+      <item name="general_props">Propietats generals</item>
+      <item name="popup_props">Propietats de la finestra emergent</item>
+      <item name="event_props">Esdeveniments</item>
+      <item name="advanced_props">Propietats avançades</item>
+      <item name="popup_opts">Opcions</item>
+      <item name="anchor_names">Àncores</item>
+      <item name="target_same">Obre en aquesta finestra / marc</item>
+      <item name="target_parent">Obre en la finestra / marc pare</item>
+      <item name="target_top">Obre en el marc superior (reemplaça tots els marcs)</item>
+      <item name="target_blank">Obre en una nova finestra</item>
+      <item name="popup">Finestra emergent javascript</item>
+      <item name="popup_url">URL de la finestra emergent</item>
+      <item name="popup_name">Nom de la finestra</item>
+      <item name="popup_return">Insereix \'return false\'</item>
+      <item name="popup_scrollbars">Mostra les barres de desplaçament</item>
+      <item name="popup_statusbar">Mostra la barra d\'estat</item>
+      <item name="popup_toolbar">Mostra la barra d\'eines</item>
+      <item name="popup_menubar">Mostra la barra de menú</item>
+      <item name="popup_location">Mostra la barra d\'ubicació</item>
+      <item name="popup_resizable">Fes la finestra redimensionable</item>
+      <item name="popup_dependent">Dependent (només Mozilla/Firefox)</item>
+      <item name="popup_size">Mida</item>
+      <item name="popup_position">Posició (X/Y)</item>
+      <item name="id">Id</item>
+      <item name="style">Estil</item>
+      <item name="classes">Classes</item>
+      <item name="target_name">Nom del destí</item>
+      <item name="langdir">Direcció de l\'idioma</item>
+      <item name="target_langcode">Idioma del destí</item>
+      <item name="langcode">Codi de l\'idioma</item>
+      <item name="encoding">Codificació de caràcters del destí</item>
+      <item name="mime">Tipus MIME del destí</item>
+      <item name="rel">Relació de pàgina a destí</item>
+      <item name="rev">Relació de destí a pàgina</item>
+      <item name="tabindex">Tabindex</item>
+      <item name="accesskey">Accesskey</item>
+      <item name="ltr">D\'esquerra a dreta</item>
+      <item name="rtl">De dreta a esquerra</item>
+      <item name="link_list">Llista d\'enllaços</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">Citació</item>
+      <item name="abbr_desc">Abreviació</item>
+      <item name="acronym_desc">Acrònim</item>
+      <item name="del_desc">Eliminació</item>
+      <item name="ins_desc">Inserció</item>
+      <item name="attribs_desc">Insereix/edita atributs</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">Títol</item>
+      <item name="attribute_label_id">ID</item>
+      <item name="attribute_label_class">Classe</item>
+      <item name="attribute_label_style">Estil</item>
+      <item name="attribute_label_cite">Cita</item>
+      <item name="attribute_label_datetime">Data/Hora</item>
+      <item name="attribute_label_langdir">Direcció del text</item>
+      <item name="attribute_option_ltr">D\'esquerra a dreta</item>
+      <item name="attribute_option_rtl">De dreta a esquerra</item>
+      <item name="attribute_label_langcode">Idioma</item>
+      <item name="attribute_label_tabindex">TabIndex</item>
+      <item name="attribute_label_accesskey">AccessKey</item>
+      <item name="attribute_events_tab">Esdeveniments</item>
+      <item name="attribute_attrib_tab">Atributs</item>
+      <item name="general_tab">General</item>
+      <item name="attrib_tab">Atributs</item>
+      <item name="events_tab">Esdeveniments</item>
+      <item name="fieldset_general_tab">Configuració general</item>
+      <item name="fieldset_attrib_tab">Atributs d\'element</item>
+      <item name="fieldset_events_tab">Esdeveniments d\'element</item>
+      <item name="title_ins_element">Element d\'inserció</item>
+      <item name="title_del_element">Element d\'eliminació</item>
+      <item name="title_acronym_element">Element d\'acrònim</item>
+      <item name="title_abbr_element">Element d\'abreviatura</item>
+      <item name="title_cite_element">Element de menció</item>
+      <item name="remove">Elimina</item>
+      <item name="insert_date">Insereix la data/hora actuals</item>
+      <item name="option_ltr">D\'esquerra a dreta</item>
+      <item name="option_rtl">De dreta a esquerra</item>
+      <item name="attribs_title">Insereix/Edita atributs</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">Edita l\'estil CSS</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">Edita els estils CSS</item>
+      <item name="apply">Aplica</item>
+      <item name="text_tab">Text</item>
+      <item name="background_tab">Fons</item>
+      <item name="block_tab">Bloc</item>
+      <item name="box_tab">Quadre</item>
+      <item name="border_tab">Contorn</item>
+      <item name="list_tab">Llista</item>
+      <item name="positioning_tab">Posicionament</item>
+      <item name="text_props">Text</item>
+      <item name="text_font">Font</item>
+      <item name="text_size">Mida</item>
+      <item name="text_weight">Pes</item>
+      <item name="text_style">Estil</item>
+      <item name="text_variant">Variant</item>
+      <item name="text_lineheight">Alçada de línia</item>
+      <item name="text_case">Cas</item>
+      <item name="text_color">Color</item>
+      <item name="text_decoration">Decoració</item>
+      <item name="text_overline">sobreratllat</item>
+      <item name="text_underline">subratllat</item>
+      <item name="text_striketrough">barrat</item>
+      <item name="text_blink">parpelleig</item>
+      <item name="text_none">cap</item>
+      <item name="background_color">Color de fons</item>
+      <item name="background_image">Imatge de fons</item>
+      <item name="background_repeat">Repeteix</item>
+      <item name="background_attachment">Adjunt</item>
+      <item name="background_hpos">Posició horitzontal</item>
+      <item name="background_vpos">Posició vertical</item>
+      <item name="block_wordspacing">Espaiat entre paraules</item>
+      <item name="block_letterspacing">Espaiat entre lletres</item>
+      <item name="block_vertical_alignment">Alineació vertical</item>
+      <item name="block_text_align">Alinea el text</item>
+      <item name="block_text_indent">Sagna el text</item>
+      <item name="block_whitespace">Espai en blanc</item>
+      <item name="block_display">Visualització</item>
+      <item name="box_width">Amplada</item>
+      <item name="box_height">Alçada</item>
+      <item name="box_float">Flota</item>
+      <item name="box_clear">Buida</item>
+      <item name="padding">Separació</item>
+      <item name="same">Igual per a tot</item>
+      <item name="top">Dalt</item>
+      <item name="right">Dreta</item>
+      <item name="bottom">Avall</item>
+      <item name="left">Esquerra</item>
+      <item name="margin">Marge</item>
+      <item name="style">Estil</item>
+      <item name="width">Amplada</item>
+      <item name="height">Alçada</item>
+      <item name="color">Color</item>
+      <item name="list_type">Tipus</item>
+      <item name="bullet_image">Imatge pic</item>
+      <item name="position">Posició</item>
+      <item name="positioning_type">Tipus</item>
+      <item name="visibility">Visibilitat</item>
+      <item name="zindex">Índex Z</item>
+      <item name="overflow">Desbordament</item>
+      <item name="placement">Emplaçament</item>
+      <item name="clip">Retall</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">Enganxa com a text pla</item>
+      <item name="paste_word_desc">Enganxa des del Word</item>
+      <item name="selectall_desc">Selecciona-ho tot</item>
+      <item name="plaintext_mode_sticky">Enganxa està ara configurat en mode text pla. Clica de nou per tornar al mode normal d'enganxar. Després d'enganxar quelcom seràs retornat al mode normal d'enganxar.</item>
+      <item name="plaintext_mode">Enganxa està ara configurat en mode text pla. Clica de nou per tornar al mode normal d'enganxar.</item>
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">Amb el teclat utilitzeu CTRL+V per a enganxar el text dins la finestra.</item>
+      <item name="text_linebreaks">Conserva els salts de línia</item>
+      <item name="word_title">Amb el teclat utilitzeu CTRL+V per a enganxar el text dins la finestra.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">Insereix una nova taula</item>
+      <item name="row_before_desc">Insereix una fila abans</item>
+      <item name="row_after_desc">Insereix una fila després</item>
+      <item name="delete_row_desc">Elimina la fila</item>
+      <item name="col_before_desc">Insereix una columna abans</item>
+      <item name="col_after_desc">Insereix una columna després</item>
+      <item name="delete_col_desc">Elimina la columna</item>
+      <item name="split_cells_desc">Divideix les cel·les fusionades</item>
+      <item name="merge_cells_desc">Fusiona les cel·les</item>
+      <item name="row_desc">Propietats de la fila</item>
+      <item name="cell_desc">Propietats de la cel·la</item>
+      <item name="props_desc">Propietats de la taula</item>
+      <item name="paste_row_before_desc">Enganxa la fila abans</item>
+      <item name="paste_row_after_desc">Enganxa la fila després</item>
+      <item name="cut_row_desc">Retalla la fila</item>
+      <item name="copy_row_desc">Copia la fila</item>
+      <item name="del">Elimina la taula</item>
+      <item name="row">Fila</item>
+      <item name="col">Columna</item>
+      <item name="cell">Cel·la</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width"></item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">General</item>
+      <item name="advanced_tab">Avançat</item>
+      <item name="general_props">Propietats generals</item>
+      <item name="advanced_props">Propietats avançades</item>
+      <item name="rowtype">Fila</item>
+      <item name="title">Insereix/Modifica taula</item>
+      <item name="width">Amplada</item>
+      <item name="height">Alçada</item>
+      <item name="cols">Columnes</item>
+      <item name="rows">Files</item>
+      <item name="cellspacing">Espaiat de cel·la</item>
+      <item name="cellpadding">Separació de cel·la</item>
+      <item name="border">Vora</item>
+      <item name="align">Alineació</item>
+      <item name="align_default">Per defecte</item>
+      <item name="align_left">Esquerra</item>
+      <item name="align_right">Dreta</item>
+      <item name="align_middle">Centre</item>
+      <item name="row_title">Propietats de fila</item>
+      <item name="cell_title">Propietats de cel·la</item>
+      <item name="cell_type">Tipus de cel·la</item>
+      <item name="valign">Alineació vertical</item>
+      <item name="align_top">A dalt</item>
+      <item name="align_bottom">A baix</item>
+      <item name="bordercolor">Color de vora</item>
+      <item name="bgcolor">Color de fons</item>
+      <item name="merge_cells_title">Fusiona cel·les</item>
+      <item name="id">Id</item>
+      <item name="style">Estil</item>
+      <item name="langdir">Direcció de l\'idioma</item>
+      <item name="langcode">Codi de l\'idioma</item>
+      <item name="mime">Tipus MIME</item>
+      <item name="ltr">D\'esquerra a dreta</item>
+      <item name="rtl">De dreta a esquerra</item>
+      <item name="bgimage">Imatge de fons</item>
+      <item name="summary">Resum</item>
+      <item name="td">Dades</item>
+      <item name="th">Capçalera</item>
+      <item name="cell_cell">Actualitza la cel·la</item>
+      <item name="cell_row">Actualitza totes les cel·les de la fila</item>
+      <item name="cell_all">Actualitza totes les cel·les de la taula</item>
+      <item name="row_row">Actualitza la fila</item>
+      <item name="row_odd">Actualitza les files senars</item>
+      <item name="row_even">Actualitza les files parells</item>
+      <item name="row_all">Actualitza totes les files</item>
+      <item name="thead">Capçalera de la taula</item>
+      <item name="tbody">Cos de la taula</item>
+      <item name="tfoot">Peu de la taula</item>
+      <item name="scope">Abast</item>
+      <item name="rowgroup">Grup de files</item>
+      <item name="colgroup">Grup de columnes</item>
+      <item name="col_limit">Heu superat el nombre màxim de columnes de {$cols}.</item>
+      <item name="row_limit">Heu superat el nombre màxim de files de {$rows}.</item>
+      <item name="cell_limit">Heu superat el nombre màxim de cel·les de {$cells}..</item>
+      <item name="missing_scope">Esteu segur que voleu continuar sense indicar un abast per a aquesta cel·la de capçalera. Pot ser difícil per a alguns usuaris amb discapacitats entendre el contingut o les dades mostrades a la taula.</item>
+      <item name="caption">Títol de la taula</item>
+      <item name="frame">Marc</item>
+      <item name="frame_none">cap</item>
+      <item name="frame_groups">grups</item>
+      <item name="frame_rows">files</item>
+      <item name="frame_cols">columnes</item>
+      <item name="frame_all">tot</item>
+      <item name="rules">Regles</item>
+      <item name="rules_void">buit</item>
+      <item name="rules_above">per damunt de</item>
+      <item name="rules_below">per sota de</item>
+      <item name="rules_hsides">hsides</item>
+      <item name="rules_lhs">lhs</item>
+      <item name="rules_rhs">rhs</item>
+      <item name="rules_vsides">vsides</item>
+      <item name="rules_box">quadre</item>
+      <item name="rules_border">vora</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">Els canvis que heu fet es perdran si navegueu a fora d\'aquesta pàgina.</item>
+      <item name="restore_content">Restaura el contingut guardat automàticament.</item>
+      <item name="warning_message">Si restaures el contingut guardat, perdràs tot el contingut actual de l'editor. Estàs segur de voler continuar?</item>
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">Commuta a mode de pantalla completa</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">Insereix / edita multimèdia incrustat</item>
+      <item name="edit">Edita multimèdia incrustat</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">Insereix / edita multimèdia incrustada</item>
+      <item name="general">General</item>
+      <item name="advanced">Avançat</item>
+      <item name="file">Fitxer/URL</item>
+      <item name="list">Llista</item>
+      <item name="size">Dimensions</item>
+      <item name="preview">Previsualització</item>
+      <item name="constrain_proportions">Manté les proporcions</item>
+      <item name="type">Tipus</item>
+      <item name="id">Id</item>
+      <item name="name">Nom</item>
+      <item name="class_name">Classe</item>
+      <item name="vspace">Espai vertical</item>
+      <item name="hspace">Espai horitzontal</item>
+      <item name="play">Reproducció automàtica</item>
+      <item name="loop">Bucle</item>
+      <item name="menu">Mostra el menú</item>
+      <item name="quality">Qualitat</item>
+      <item name="scale">Escala</item>
+      <item name="align">Alinea</item>
+      <item name="salign">Alinea S</item>
+      <item name="wmode">Mode W</item>
+      <item name="bgcolor">Fons</item>
+      <item name="base">Base</item>
+      <item name="flashvars">Flashvars</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">AutoHREF</item>
+      <item name="cache">Memòria cau</item>
+      <item name="hidden">Ocult</item>
+      <item name="controller">Controlador</item>
+      <item name="kioskmode">Mode quiosc</item>
+      <item name="playeveryframe">Reprodueix cada marc</item>
+      <item name="targetcache">Target cache</item>
+      <item name="correction">Sense correcció</item>
+      <item name="enablejavascript">Habilita el javascript</item>
+      <item name="starttime">Inici</item>
+      <item name="endtime">Fi</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">Velocitat</item>
+      <item name="target">Destí</item>
+      <item name="volume">Volumen</item>
+      <item name="autostart">Inici automàtic</item>
+      <item name="enabled">Habilitat</item>
+      <item name="fullscreen">Pantalla completa</item>
+      <item name="invokeurls">Invoca els URL</item>
+      <item name="mute">Silenci</item>
+      <item name="stretchtofit">Estirar fins a encaixar</item>
+      <item name="windowlessvideo">Vídeo sense finestra</item>
+      <item name="balance">Equilibri</item>
+      <item name="baseurl">URL base</item>
+      <item name="captioningid">Id nominal</item>
+      <item name="currentmarker">Retolador actual</item>
+      <item name="currentposition">Posició actual</item>
+      <item name="defaultframe">Marc per defecte</item>
+      <item name="playcount">Compte de reproducció</item>
+      <item name="rate">Velocitat</item>
+      <item name="uimode">Mode UI</item>
+      <item name="flash_options">Opcions del Flash</item>
+      <item name="qt_options">Opcions del Quicktime</item>
+      <item name="wmp_options">Opcions del Windows media player</item>
+      <item name="rmp_options">Opcions del Real media player</item>
+      <item name="shockwave_options">Opcions del Shockwave</item>
+      <item name="autogotourl">URL goto automàtic</item>
+      <item name="center">Alinea al centre</item>
+      <item name="imagestatus">Estat de la imatge</item>
+      <item name="maintainaspect">Manté l\'aspecte</item>
+      <item name="nojava">Sense java</item>
+      <item name="prefetch">Precàrrega</item>
+      <item name="shuffle">Shuffle</item>
+      <item name="console">Consola</item>
+      <item name="numloop">Nre. bucles</item>
+      <item name="controls">Controls</item>
+      <item name="scriptcallbacks">Crides de retorn a script</item>
+      <item name="swstretchstyle">Estil de l\'extensor</item>
+      <item name="swstretchhalign">Alineació horitzontal de l\'extensor</item>
+      <item name="swstretchvalign">Alineació vertical de l\'extensor</item>
+      <item name="sound">Sò</item>
+      <item name="progress">Progrés</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn">Els recursos rtsp fets flux s\'haurien d\'afegir al camp QT Src sota la pestanya avançada.\nTambé hauríeu d\'afegir una versió no feta flux al camp Src..</item>
+      <item name="align_top">Superior</item>
+      <item name="align_right">Dreta</item>
+      <item name="align_bottom">Inferior</item>
+      <item name="align_left">Esquerra</item>
+      <item name="align_center">Centre</item>
+      <item name="align_top_left">Superior esquerra</item>
+      <item name="align_top_right">Superior dreta</item>
+      <item name="align_bottom_left">Inferior esquerra</item>
+      <item name="align_bottom_right">Inferior dreta</item>
+      <item name="flv_options">Opcions de vídeo Flash</item>
+      <item name="flv_scalemode">Mode d'escalat</item>
+      <item name="flv_buffer">Memòria intermèdia</item>
+      <item name="flv_startimage">Imatge d\'inici</item>
+      <item name="flv_starttime">Hora d\'inici</item>
+      <item name="flv_defaultvolume">Volumen per defecte</item>
+      <item name="flv_hiddengui">GUI ocult</item>
+      <item name="flv_autostart">Inici automàtic</item>
+      <item name="flv_loop">Bucle</item>
+      <item name="flv_showscalemodes">Mostra els modes d'escalat</item>
+      <item name="flv_smoothvideo">Vídeo suau</item>
+      <item name="flv_jscallback">Crida de retorn JS</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">Propietats del document</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Propietats del document</item>
+      <item name="meta_tab">General</item>
+      <item name="appearance_tab">Aparença</item>
+      <item name="advanced_tab">Avançat</item>
+      <item name="meta_props">Metainformació</item>
+      <item name="langprops">Idioma i codificació</item>
+      <item name="meta_title">Títol</item>
+      <item name="meta_keywords">Paraules clau</item>
+      <item name="meta_description">Descripció</item>
+      <item name="meta_robots">Robots</item>
+      <item name="doctypes">Doctype</item>
+      <item name="langcode">Codi d\'idioma</item>
+      <item name="langdir">Direcció de l\'idioma</item>
+      <item name="ltr">D\'esquerra a dreta</item>
+      <item name="rtl">De dreta a esquerra</item>
+      <item name="xml_pi">Declaració XML</item>
+      <item name="encoding">Codificació dels caràcters</item>
+      <item name="appearance_bgprops">Propietats del fons</item>
+      <item name="appearance_marginprops">Marges del cos</item>
+      <item name="appearance_linkprops">Colors d\'enllaç</item>
+      <item name="appearance_textprops">Propietats del text</item>
+      <item name="bgcolor">Color del fons</item>
+      <item name="bgimage">Imatge del fons</item>
+      <item name="left_margin">Marge esquerre</item>
+      <item name="right_margin">Marge dret</item>
+      <item name="top_margin">Marge superior</item>
+      <item name="bottom_margin">Marge inferior</item>
+      <item name="text_color">Color del text</item>
+      <item name="font_size">Mida de la font</item>
+      <item name="font_face">Font</item>
+      <item name="link_color">Color d\'enllaç</item>
+      <item name="hover_color">Color quan es passi per sobre</item>
+      <item name="visited_color">Color quan ja és visitat</item>
+      <item name="active_color">Color quan és actiu</item>
+      <item name="textcolor">Color</item>
+      <item name="fontsize">Mida de la font</item>
+      <item name="fontface">Família de la font</item>
+      <item name="meta_index_follow">Indexa i segueix els enllaços</item>
+      <item name="meta_index_nofollow">Indexa i no segueixis els enllaços</item>
+      <item name="meta_noindex_follow">No indexis però segueix els enllaços</item>
+      <item name="meta_noindex_nofollow">No indexis i no segueixis els enllaços</item>
+      <item name="appearance_style">Full d\'estils i propietats dels estils</item>
+      <item name="stylesheet">Full d\'estils</item>
+      <item name="style">Estil</item>
+      <item name="author">Autor</item>
+      <item name="copyright">Copyright</item>
+      <item name="add">Afegeix un nou element</item>
+      <item name="remove">Elimina l\'element seleccionat</item>
+      <item name="moveup">Mou amunt l\'element seleccionat</item>
+      <item name="movedown">Mou avall l\'element seleccionat</item>
+      <item name="head_elements">Elements d\'encapçalament</item>
+      <item name="info">Informació</item>
+      <item name="add_title">Element títol</item>
+      <item name="add_meta">Element meta</item>
+      <item name="add_script">Element script</item>
+      <item name="add_style">Element estil</item>
+      <item name="add_link">Element enllaç</item>
+      <item name="add_base">Element base</item>
+      <item name="add_comment">Node comentari</item>
+      <item name="title_element">Element títol</item>
+      <item name="script_element">Element script</item>
+      <item name="style_element">Element estil</item>
+      <item name="base_element">Element base</item>
+      <item name="link_element">Element enllaç</item>
+      <item name="meta_element">Element meta</item>
+      <item name="comment_element">Comentari</item>
+      <item name="src">Src</item>
+      <item name="language">Idioma</item>
+      <item name="href">Href</item>
+      <item name="target">Destí</item>
+      <item name="type">Type</item>
+      <item name="charset">Charset</item>
+      <item name="defer">Defer</item>
+      <item name="media">Media</item>
+      <item name="properties">Propietats</item>
+      <item name="name">Nom</item>
+      <item name="value">Valor</item>
+      <item name="content">Contingut</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href lang</item>
+      <item name="general_props">General</item>
+      <item name="advanced_props">Avançat</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Insereix un contingut predefinit</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">Plantilles</item>
+      <item name="label">Plantilla</item>
+      <item name="desc_label">Descripció</item>
+      <item name="desc">Insereix el contingut de plantilla predefinit</item>
+      <item name="select">Seleccioneu una plantilla</item>
+      <item name="preview">Previsualització</item>
+      <item name="warning">Avís: Actualitzar una plantilla amb una altra diferent pot provocar pèrdua d\'informació.</item>
+      <item name="mdate_format">%d-%m-%Y %H:%M:%S</item>
+      <item name="cdate_format">%d-%m-%Y %H:%M:%S</item>
+      <item name="months_long">gener,febrer,març,abril,maig,juny,juliol,agost,setembre,octubre,novembre,desembre</item>
+      <item name="months_short">gen.,febr.,març,abr.,maig,juny,jul.,ag.,set.,oct.,nov.,des.</item>
+      <item name="day_long">diumenge,dilluns,dimarts,dimecres,dijous,divendres,dissabte,diumenge</item>
+      <item name="day_short">dg.,dl.,dt.,dc.,dj.,dv.,ds.,dg.</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Activa/desactiva els caràcters de control visual.</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">Corrector ortogràfic</item>
+      <item name="menu">Configuració del corrector</item>
+      <item name="ignore_word">Ignora el mot</item>
+      <item name="ignore_words">Ignora\'ls tots</item>
+      <item name="langs">Idiomes</item>
+      <item name="wait">Espereu...</item>
+      <item name="sug">Suggeriments</item>
+      <item name="no_sug">Cap suggeriment</item>
+      <item name="no_mpell">No s\'ha trobat cap falta d\'ortografia.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">Insereix un salt de pàgina.</item>
+    </group>
+    <group target="advlist">
+      <item name="types">Tipus</item>
+      <item name="def">Per defecte</item>
+      <item name="lower_alpha">Lletres</item>
+      <item name="lower_greek">Lletres gregues (minúscules)</item>
+      <item name="lower_roman">Nombres romans (minúscules)</item>
+      <item name="upper_alpha">Lletres (majúscules)</item>
+      <item name="upper_roman">Nombres romans (majúscules)</item>
+      <item name="circle">Cercle</item>
+      <item name="disc">Disc</item>
+      <item name="square">Quadrat</item>
+    </group>
+  </language>
+</language-pack>

@@ -1,0 +1,925 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>Alejandro Diéguez (iberley.es - alex@iberley.es).</author>
+    <version major="1" minor="2" releasedate="2009-05-06" />
+    <description>Este é o paquete de idioma en Galego pra TinyMCE.</description>
+  </header>
+  <language code="gl" title="Galego" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">¿Desexa utiliza-lo modo WYSIWYG pra esta caixa de texto?</item>
+      <item name="apply">Apricar</item>
+      <item name="insert">Insertar</item>
+      <item name="update">Actualizar</item>
+      <item name="cancel">Cancelar</item>
+      <item name="close">Cerrar</item>
+      <item name="browse">Examinar</item>
+      <item name="class_name">Clase</item>
+      <item name="not_set">-- Ningún --</item>
+      <item name="clipboard_msg">Copiar/Cortar/Pegar non está disponible en Mozilla e Firefox.\n¿Desexa obter mais información sobre de este asunto?</item>
+      <item name="clipboard_no_support">O seu navegador non soporta estas funcións, use os atallos de teclado.</item>
+      <item name="popup_blocked">O seu bloqueador de ventás emerxentes deshabilitou unha ventá que precisa pra o funcionamento da aplicación. Precisa deshabilita-lo bloqueo de `popups` neste sitio pra utilizar ó máximo esta ferramenta.</item>
+      <item name="invalid_data">Error: Introducidos valores non válidos, están marcados en vermello.</item>
+      <item name="more_colors">Mais cores</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">Negriña (Ctrl+B)</item>
+      <item name="italic_desc">Cursiva (Ctrl+I)</item>
+      <item name="underline_desc">Suliñado (Ctrl+U)</item>
+      <item name="striketrough_desc">Tachado</item>
+      <item name="bullist_desc">Lista desordenada</item>
+      <item name="numlist_desc">Lista ordenada</item>
+      <item name="undo_desc">Desfacer (Ctrl+Z)</item>
+      <item name="redo_desc">Re-facer (Ctrl+Y)</item>
+      <item name="cleanup_desc">Limpar lixo no código</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">Estilos</item>
+      <item name="font_size">Tamaño</item>
+      <item name="fontdefault">Fonte</item>
+      <item name="block">Formato</item>
+      <item name="paragraph">Párrafo</item>
+      <item name="div">Div</item>
+      <item name="address">Enderezo</item>
+      <item name="pre">Pre-formateado</item>
+      <item name="h1">Encabezamento 1</item>
+      <item name="h2">Encabezamento 2</item>
+      <item name="h3">Encabezamento 3</item>
+      <item name="h4">Encabezamento 4</item>
+      <item name="h5">Encabezamento 5</item>
+      <item name="h6">Encabezamento 6</item>
+      <item name="blockquote">Bloque de cita</item>
+      <item name="code">Código</item>
+      <item name="samp">Mostra de código</item>
+      <item name="dt">Termo de definición</item>
+      <item name="dd">Descripción de definición</item>
+      <!-- Buttons -->
+      <item name="bold_desc">Negrita (Ctrl+B)</item>
+      <item name="italic_desc">Cursiva (Ctrl+I)</item>
+      <item name="underline_desc">Subliñado (Ctrl+U)</item>
+      <item name="striketrough_desc">Tachado</item>
+      <item name="justifyleft_desc">Aliñar á esquerda</item>
+      <item name="justifycenter_desc">Aliñar ó centro</item>
+      <item name="justifyright_desc">Aliñar á dereita</item>
+      <item name="justifyfull_desc">Xustificar</item>
+      <item name="bullist_desc">Lista desordenada</item>
+      <item name="numlist_desc">Lista ordenada</item>
+      <item name="outdent_desc">Reducir sangría</item>
+      <item name="indent_desc">Aumentar sangría</item>
+      <item name="undo_desc">Desfacer (Ctrl+Z)</item>
+      <item name="redo_desc">Re-facer (Ctrl+Y)</item>
+      <item name="link_desc">Insertar/editar hipervínculo</item>
+      <item name="unlink_desc">Quitar hipervínculo</item>
+      <item name="image_desc">Insertar/editar imaxe</item>
+      <item name="cleanup_desc">Limpiar lixo no código</item>
+      <item name="code_desc">Editar código HTML</item>
+      <item name="sub_desc">Subíndice</item>
+      <item name="sup_desc">Superíndice</item>
+      <item name="hr_desc">Insertar regra horizontal</item>
+      <item name="removeformat_desc">quitar formato</item>
+      <item name="custom1_desc">A súa descripción persoal aquí</item>
+      <item name="forecolor_desc">Seleccionar cor do texto</item>
+      <item name="backcolor_desc">Seleccionar cor do fondo</item>
+      <item name="charmap_desc">Insertar caracteres persoalizados</item>
+      <item name="visualaid_desc">Mostrar/ocultar liña de guía/elementos invisibres</item>
+      <item name="anchor_desc">Insertar/editar áncora</item>
+      <item name="cut_desc">Cortar</item>
+      <item name="copy_desc">Copiar</item>
+      <item name="paste_desc">Pegar</item>
+      <item name="image_props_desc">Propiedades de imaxe</item>
+      <item name="newdocument_desc">Novo documento</item>
+      <item name="help_desc">Axuda</item>
+      <item name="blockquote_desc">Cita</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">Copiar/Cortar/Pegar non está disponible en Mozilla e Firefox.
+¿Desexa obter mais información sobre de este asunto?</item>
+      <item name="path">Ruta</item>
+      <item name="newdocument">¿Seguro que desexa limpar todo o contido?</item>
+      <item name="toolbar_focus">Ir ós botóns de ferramentas - Alt+Q, Ir ó editor - Alt-Z, Ir á ruta do elemento - Alt-X</item>
+      <item name="more_colors">Máis cores</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">Sobre TinyMCE</item>
+      <item name="about_general">Sobre</item>
+      <item name="about_help">Axuda</item>
+      <item name="about_license">Licencia</item>
+      <item name="about_plugins">Comprementos</item>
+      <item name="about_plugin">Compremento</item>
+      <item name="about_author">Autor</item>
+      <item name="about_version">Versión</item>
+      <item name="about_loaded">Comprementos cargados</item>
+      <!-- Anchor -->
+      <item name="anchor_title">Insertar/editar áncora</item>
+      <item name="anchor_name">Nome da áncora</item>
+      <!-- Source -->
+      <item name="code_title">Editor HTML</item>
+      <item name="code_wordwrap">Cortar liñas automáticamente</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">Seleccionar cor</item>
+      <item name="colorpicker_picker_tab">Selector</item>
+      <item name="colorpicker_picker_title">Selector de cores</item>
+      <item name="colorpicker_palette_tab">Paleta</item>
+      <item name="colorpicker_palette_title">Paleta de cores</item>
+      <item name="colorpicker_named_tab">Nomeados</item>
+      <item name="colorpicker_named_title">Cores nomeados</item>
+      <item name="colorpicker_color">Cor:</item>
+      <item name="colorpicker_name">Nome:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">Seleccionar caracter personalizado</item>
+      <!-- Image -->
+      <item name="image_title">Insertar/editar imaxe</item>
+      <item name="image_src">URL da imaxe</item>
+      <item name="image_alt">Descripción da imaxe</item>
+      <item name="image_list">Lista de Imaxes</item>
+      <item name="image_border">Borde</item>
+      <item name="image_dimensions">Dimensión</item>
+      <item name="image_vspace">Espacio vertical</item>
+      <item name="image_hspace">Espacio horizontal</item>
+      <item name="image_align">Aliñación</item>
+      <item name="image_align_baseline">Liña base</item>
+      <item name="image_align_top">Arriba</item>
+      <item name="image_align_middle">Medio</item>
+      <item name="image_align_bottom">Abaixo</item>
+      <item name="image_align_texttop">Texto arriba</item>
+      <item name="image_align_textbottom">Texto abaixo</item>
+      <item name="image_align_left">Esquerda</item>
+      <item name="image_align_right">Dereita</item>
+      <!-- Link -->
+      <item name="link_title">Insertar/editar enlace</item>
+      <item name="link_url">URL do enlace</item>
+      <item name="link_target">Obxetivo</item>
+      <item name="link_target_same">Abrir vínculo na mesma ventá</item>
+      <item name="link_target_blank">Abrir vínculo nunha ventá nova</item>
+      <item name="link_titlefield">Título</item>
+      <item name="link_is_email">A URL introducida semella ser un enderezo de e-mail, ¿Desexa engadi-lo prefixo necesario mailto:?</item>
+      <item name="link_is_external">A URL introducida semella ser un vínculo externo, ¿Desexa engadi-lo prefixo necesario http://?</item>
+      <item name="link_list">Lista de hipervínculos</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">Aliñamento</item>
+      <item name="left">Esquerda</item>
+      <item name="center">Centrado</item>
+      <item name="right">Dereita</item>
+      <item name="full">Xustificado</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%d-%m-%Y</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">Insertar data</item>
+      <item name="inserttime_desc">Insertar hora</item>
+      <item name="months_long">Xaneito,Febreiro,Marzo,Abril,Maio,Xuño,Xullo,Agosto,Setembro,Outubro,Novembro,Decembro</item>
+      <item name="months_short">Xan,Feb,Mar,Abr,Mai,Xuñ,Xul,Ago,Set,Out,Nov,Dec</item>
+      <item name="day_long">Domingo,Luns,Martes,Mércores,Xoves,Venres,Sábado,Domingo</item>
+      <item name="day_short">Dom,Lun,Mar,Mér,Xov,Ver,Sáb,Dom</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">Imprimir</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">Vista previa</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">Dirección esquerda a dereita</item>
+      <item name="rtl_desc">Dirección dereita a esquerda</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">Insertar nova capa</item>
+      <item name="forward_desc">Avanzar</item>
+      <item name="backward_desc">Recuar</item>
+      <item name="absolute_desc">Posición absoluta</item>
+      <item name="content">Nova capa...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">Gardar</item>
+      <item name="cancel_desc">Cancelar todo-los cambios</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">Insertar espacio non colapsable</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">Corrector ortográfico</item>
+      <item name="download">Non se detectou 'ieSpell'. ¿Desexa instala-lo agora?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">Regra horizontal</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">Ancho</item>
+      <item name="size">Alto</item>
+      <item name="noshade">Sen sombra</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">Emoticones</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">Insertar emoticon</item>
+      <item name="desc">Emoticones</item>
+      <item name="cool">Guay</item>
+      <item name="cry">Chora</item>
+      <item name="embarassed">Vergoña</item>
+      <item name="foot_in_mouth">A que dixen</item>
+      <item name="frown">Triste</item>
+      <item name="innocent">Inocente</item>
+      <item name="kiss">Beso</item>
+      <item name="laughing">Risa</item>
+      <item name="money_mouth">Cartos</item>
+      <item name="sealed">Selado</item>
+      <item name="smile">Sorriso</item>
+      <item name="surprised">Sorprendido</item>
+      <item name="tongue_out">Canso</item>
+      <item name="undecided">Indeciso</item>
+      <item name="wink">Guiño</item>
+      <item name="yell">Anoxado</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">Buscar</item>
+      <item name="replace_desc">Buscar/Reemplazar</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">Buscar outra vez</item>
+      <item name="notfound">A busca rematou. No se atopou o texto buscado.</item>
+      <item name="search_title">Buscar</item>
+      <item name="replace_title">Buscar/Reemplazar</item>
+      <item name="allreplaced">Tóda-las coincidencias do texto buscado foron reemplazadas.</item>
+      <item name="findwhat">Localizar</item>
+      <item name="replacewith">Reemplazar por</item>
+      <item name="direction">Dirección</item>
+      <item name="up">Arriba</item>
+      <item name="down">Abaixo</item>
+      <item name="mcase">Minús./Maiús.</item>
+      <item name="findnext">Buscar seginte</item>
+      <item name="replace">Reemplazar</item>
+      <item name="replaceall">Reemplazar todo</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">Insertar/editar imaxe</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">Xeral</item>
+      <item name="tab_appearance">Apariencia</item>
+      <item name="tab_advanced">Avanzado</item>
+      <item name="general">Xeral</item>
+      <item name="title">Título</item>
+      <item name="preview">Vista previa</item>
+      <item name="constrain_proportions">Bloquear proporcións</item>
+      <item name="langdir">Dirección do idioma</item>
+      <item name="langcode">Código do idioma</item>
+      <item name="long_desc">Vínculo pra descripción larga</item>
+      <item name="style">Estilos</item>
+      <item name="classes">Clases</item>
+      <item name="ltr">Esquerda a dereita</item>
+      <item name="rtl">Dereita a esquerda</item>
+      <item name="id">Id</item>
+      <item name="map">Mapa de imaxe</item>
+      <item name="swap_image">Intercambiar imaxe</item>
+      <item name="alt_image">Imaxe alternativa</item>
+      <item name="mouseover">pra mouseover</item>
+      <item name="mouseout">pra mouseout</item>
+      <item name="misc">Misceláneo</item>
+      <item name="example_img">Vista previa da imaxe</item>
+      <item name="missing_alt">¿Esta seguro de continuar sen introducir unha descripción á imaxe? Sen ela pode non ser accesible pra usuarios con discapacidades, ou pra aqueles que usen navegadores de modo texto, ou teñan deshabilitadas as imaxes da páxina.</item>
+      <item name="dialog_title">Insertar/editar imaxe</item>
+      <item name="src">URL da imaxe</item>
+      <item name="alt">Descripción da imaxe</item>
+      <item name="list">Lista de imaxes</item>
+      <item name="border">Bordes</item>
+      <item name="dimensions">Dimensións</item>
+      <item name="vspace">Espacio vertical</item>
+      <item name="hspace">Espacio horizontal</item>
+      <item name="align">Aliñamento</item>
+      <item name="align_baseline">Liña base</item>
+      <item name="align_top">Arriba</item>
+      <item name="align_middle">Medio</item>
+      <item name="align_bottom">Abaixo</item>
+      <item name="align_texttop">Texto arriba</item>
+      <item name="align_textbottom">Texto abaixo</item>
+      <item name="align_left">Esquerda</item>
+      <item name="align_right">Dereita</item>
+      <item name="image_list">Lista de imaxes</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">Insertar/editar hipervínculo</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">Insertar/editar hipervínculo</item>
+      <item name="url">URL do hipervínculo</item>
+      <item name="target">Destino</item>
+      <item name="titlefield">Título</item>
+      <item name="is_email">A URL introducida semella ser un enderezo de e-mail, ¿Desexa engadi-lo prefixo necesario mailto:?</item>
+      <item name="is_external">A URL introducida semella ser un vínculo externo, ¿Desexa engadi-lo prefixo necesario http://?</item>
+      <item name="list">Lista de vínculos</item>
+      <item name="general_tab">Xeral</item>
+      <item name="popup_tab">Ventana emerxente</item>
+      <item name="events_tab">Eventos</item>
+      <item name="advanced_tab">Avanzado</item>
+      <item name="general_props">Propiedades xerales</item>
+      <item name="popup_props">Propiedades de ventás emerxentes</item>
+      <item name="event_props">Eventos</item>
+      <item name="advanced_props">Propiedades avanzadas</item>
+      <item name="popup_opts">Opcións</item>
+      <item name="anchor_names">Áncoras</item>
+      <item name="target_same">Abrir nesta ventá / marco</item>
+      <item name="target_parent">Abrir na ventá / marco padre</item>
+      <item name="target_top">Abrir no marco superior (reemplaza todo-los marcos)</item>
+      <item name="target_blank">Abrir en ventá nova</item>
+      <item name="popup">Javascript popup</item>
+      <item name="popup_url">URL da ventá emerxente</item>
+      <item name="popup_name">Nome da ventá</item>
+      <item name="popup_return">Insertar 'return false'</item>
+      <item name="popup_scrollbars">Barras de desprazamento</item>
+      <item name="popup_statusbar">Barra de estado</item>
+      <item name="popup_toolbar">Barra de ferramentas</item>
+      <item name="popup_menubar">Barra de menú</item>
+      <item name="popup_location">Barra de localización</item>
+      <item name="popup_resizable">Permitir cambia-lo tamaño da ventá</item>
+      <item name="popup_dependent">Dependentes (sólo Mozilla/Firefox)</item>
+      <item name="popup_size">Tamaño</item>
+      <item name="popup_position">Posición (X/Y)</item>
+      <item name="id">Id</item>
+      <item name="style">Estilo</item>
+      <item name="classes">Clases</item>
+      <item name="target_name">Nome do obxetivo</item>
+      <item name="langdir">Dirección da lenguaxe</item>
+      <item name="target_langcode">Lenguaxe do obxetivo</item>
+      <item name="langcode">Código da lenguaxe</item>
+      <item name="encoding">Codificación de caracteres do obxetivo</item>
+      <item name="mime">Tipo MIME do obxetivo</item>
+      <item name="rel">Relación páxina a obxetivo</item>
+      <item name="rev">Relación obxetivo a páxina</item>
+      <item name="tabindex">Índice de tabulación</item>
+      <item name="accesskey">Tecla de acceso</item>
+      <item name="ltr">Esquerda a dereita</item>
+      <item name="rtl">Dereita a esquerda</item>
+      <item name="link_list">Lista de vínculo</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">Cita</item>
+      <item name="abbr_desc">Abreviatura</item>
+      <item name="acronym_desc">Acrónimo</item>
+      <item name="del_desc">Borrado</item>
+      <item name="ins_desc">Inserción</item>
+      <item name="attribs_desc">Insertar/Editar atributos</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">Título</item>
+      <item name="attribute_label_id">ID</item>
+      <item name="attribute_label_class">Clase</item>
+      <item name="attribute_label_style">Estilo</item>
+      <item name="attribute_label_cite">Cita</item>
+      <item name="attribute_label_datetime">Data/Hora</item>
+      <item name="attribute_label_langdir">Dirección de texto</item>
+      <item name="attribute_option_ltr">Esquerda a dereita</item>
+      <item name="attribute_option_rtl">Dereita a esquerda</item>
+      <item name="attribute_label_langcode">Lenguaxe</item>
+      <item name="attribute_label_tabindex">Orde de tabulación</item>
+      <item name="attribute_label_accesskey">Tecla de acceso</item>
+      <item name="attribute_events_tab">Eventos</item>
+      <item name="attribute_attrib_tab">Atributos</item>
+      <item name="general_tab">Xeral</item>
+      <item name="attrib_tab">Atributos</item>
+      <item name="events_tab">Eventos</item>
+      <item name="fieldset_general_tab">Configuración xeral</item>
+      <item name="fieldset_attrib_tab">Atributos</item>
+      <item name="fieldset_events_tab">Evento</item>
+      <item name="title_ins_element">Insertar</item>
+      <item name="title_del_element">Borrar</item>
+      <item name="title_acronym_element">Acrónimo</item>
+      <item name="title_abbr_element">Abreviatura</item>
+      <item name="title_cite_element">Cita</item>
+      <item name="remove">Suprimir</item>
+      <item name="insert_date">Insertar data/hora actuais</item>
+      <item name="option_ltr">Esquerda a dereita</item>
+      <item name="option_rtl">Dereita a esquerda</item>
+      <item name="attribs_title">Insertar/Editar atributos</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">Editar Estilo CSS</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">Editar Estilo CSS</item>
+      <item name="apply">Aplicar</item>
+      <item name="text_tab">Texto</item>
+      <item name="background_tab">Fondo</item>
+      <item name="block_tab">Bloque</item>
+      <item name="box_tab">Caixa</item>
+      <item name="border_tab">Borde</item>
+      <item name="list_tab">Lista</item>
+      <item name="positioning_tab">Posición</item>
+      <item name="text_props">Texto</item>
+      <item name="text_font">Fonte</item>
+      <item name="text_size">Tamaño</item>
+      <item name="text_weight">Peso</item>
+      <item name="text_style">Estilo</item>
+      <item name="text_variant">Variante</item>
+      <item name="text_lineheight">Ancho da fila</item>
+      <item name="text_case">Minús./Mayús.</item>
+      <item name="text_color">Cor</item>
+      <item name="text_decoration">Decorativos</item>
+      <item name="text_overline">Liña superior</item>
+      <item name="text_underline">Suliñado</item>
+      <item name="text_striketrough">Tachado</item>
+      <item name="text_blink">Parpadeo</item>
+      <item name="text_none">Nengún</item>
+      <item name="background_color">Cor de fondo</item>
+      <item name="background_image">Imaxe de fondo</item>
+      <item name="background_repeat">Repetir</item>
+      <item name="background_attachment">Adxunto</item>
+      <item name="background_hpos">Posición horizontal</item>
+      <item name="background_vpos">Posición vertical</item>
+      <item name="block_wordspacing">Espacio entre verbas</item>
+      <item name="block_letterspacing">Espacio entre letras</item>
+      <item name="block_vertical_alignment">Aliñación vertical</item>
+      <item name="block_text_align">Aliñación do texto</item>
+      <item name="block_text_indent">Sangría</item>
+      <item name="block_whitespace">Espacio en branco</item>
+      <item name="block_display">Display</item>
+      <item name="box_width">Ancho</item>
+      <item name="box_height">Alto</item>
+      <item name="box_float">Float</item>
+      <item name="box_clear">Limpar</item>
+      <item name="padding">Recheo</item>
+      <item name="same">O mesmo en todos</item>
+      <item name="top">Arriba</item>
+      <item name="right">Dereita</item>
+      <item name="bottom">Abaixo</item>
+      <item name="left">Esquerda</item>
+      <item name="margin">Marxe</item>
+      <item name="style">Estilo</item>
+      <item name="width">Ancho</item>
+      <item name="height">Alto</item>
+      <item name="color">Cor</item>
+      <item name="list_type">Tipo</item>
+      <item name="bullet_image">Imaxe da viñeta</item>
+      <item name="position">Posición</item>
+      <item name="positioning_type">Tipo</item>
+      <item name="visibility">Visibilidade</item>
+      <item name="zindex">Índize Z</item>
+      <item name="overflow">Desbodramento</item>
+      <item name="placement">Colocación</item>
+      <item name="clip">Clip</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">Pegar como texto simple</item>
+      <item name="paste_word_desc">Pegar desde Word</item>
+      <item name="selectall_desc">Seleccionar todo</item>
+      <!--<item name="plaintext_mode_sticky">Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode.</item>-->
+      <!--<item name="plaintext_mode">Paste is now in plain text mode. Click again to toggle back to regular paste mode.</item>-->
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">Use CTRL+V no teclado pra pega-lo texto na ventá.</item>
+      <item name="text_linebreaks">Manter salto de liñas</item>
+      <item name="word_title">Use CTRL+V no teclado pra pega-lo texto na ventá.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">Inserta unha nova táboa</item>
+      <item name="row_before_desc">Insertar fila (antes)</item>
+      <item name="row_after_desc">Insertar fila (despóis)</item>
+      <item name="delete_row_desc">Suprimir fila</item>
+      <item name="col_before_desc">Insertar columna (antes)</item>
+      <item name="col_after_desc">Insertar columna (despóis)</item>
+      <item name="delete_col_desc">Suprimir columna</item>
+      <item name="split_cells_desc">Dividir celdas</item>
+      <item name="merge_cells_desc">Vincular celdas</item>
+      <item name="row_desc">Propiedades da fila</item>
+      <item name="cell_desc">Propiedades da celda</item>
+      <item name="props_desc">Propiedades da táboa</item>
+      <item name="paste_row_before_desc">Pegar filas (antes)</item>
+      <item name="paste_row_after_desc">Pegar filas (despóis)</item>
+      <item name="cut_row_desc">Cortar fila</item>
+      <item name="copy_row_desc">Copiar fila</item>
+      <item name="del">Eliminar táboa</item>
+      <item name="row">Fila</item>
+      <item name="col">Columna</item>
+      <item name="cell">Celda</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width"></item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">Xeral</item>
+      <item name="advanced_tab">Avanzado</item>
+      <item name="general_props">Propiedades xerales</item>
+      <item name="advanced_props">Propiedades avanzadas</item>
+      <item name="rowtype">Tipo de fila</item>
+      <item name="title">Insertar/Modificar táboa</item>
+      <item name="width">Ancho</item>
+      <item name="height">Alto</item>
+      <item name="cols">Cols</item>
+      <item name="rows">Filas</item>
+      <item name="cellspacing">Espaciado de celda</item>
+      <item name="cellpadding">Relleno de celda</item>
+      <item name="border">Borde</item>
+      <item name="align">Aliñación</item>
+      <item name="align_default">Predet.</item>
+      <item name="align_left">Esquerda</item>
+      <item name="align_right">Dereita</item>
+      <item name="align_middle">Centrado</item>
+      <item name="row_title">Propiedades da fila</item>
+      <item name="cell_title">Propiedades da celda</item>
+      <item name="cell_type">Tipo de celda</item>
+      <item name="valign">Aliñación vertical</item>
+      <item name="align_top">Arriba</item>
+      <item name="align_bottom">Abaixo</item>
+      <item name="bordercolor">Cor do borde</item>
+      <item name="bgcolor">Cor de fondo</item>
+      <item name="merge_cells_title">Unir celdas</item>
+      <item name="id">Id</item>
+      <item name="style">Estilo</item>
+      <item name="langdir">Dirección da lenguaxe</item>
+      <item name="langcode">Código da lenguaxe</item>
+      <item name="mime">Tipo MIME</item>
+      <item name="ltr">Esquerda a dereita</item>
+      <item name="rtl">Dereita a esquerda</item>
+      <item name="bgimage">Imaxe de fondo</item>
+      <item name="summary">Resumen</item>
+      <item name="td">Datos</item>
+      <item name="th">Encabezamento</item>
+      <item name="cell_cell">Actualizar celda actual</item>
+      <item name="cell_row">Actualizar todalas celdas na fila</item>
+      <item name="cell_all">Actualizar todalas celdas na táboa</item>
+      <item name="row_row">Actualizar fila actual</item>
+      <item name="row_odd">Actualizar filas impares</item>
+      <item name="row_even">Actualizar filas pares</item>
+      <item name="row_all">Actualizar todalas filas</item>
+      <item name="thead">Encabezamento da táboa</item>
+      <item name="tbody">Corpo da táboa</item>
+      <item name="tfoot">Pe da táboa</item>
+      <item name="scope">Ámbito</item>
+      <item name="rowgroup">Grupo de filas</item>
+      <item name="colgroup">Grupo de columnas</item>
+      <item name="col_limit">Superóu o número máximo de columnas: {$cols}.</item>
+      <item name="row_limit">Superóu o número máximo de filas: {$rows}.</item>
+      <item name="cell_limit">Superóu o número máximo de celdas: {$cells}.</item>
+      <item name="missing_scope">¿Está seguro que desexa continuar sen especifica-lo ámbito do encabezado de celda? Sen él podría ser dificultoso pra algunos usuarios entende-lo contido ou os datos mostrados na táboa.</item>
+      <item name="caption">Subtítulo da táboa</item>
+      <item name="frame">Recadro</item>
+      <item name="frame_none">ningún</item>
+      <item name="frame_groups">grupos</item>
+      <item name="frame_rows">filas</item>
+      <item name="frame_cols">columnas</item>
+      <item name="frame_all">todos</item>
+      <item name="rules">Regras</item>
+      <item name="rules_void">vacío</item>
+      <item name="rules_above">encima</item>
+      <item name="rules_below">debaixo</item>
+      <item name="rules_hsides">hsides</item>
+      <item name="rules_lhs">lhs</item>
+      <item name="rules_rhs">rhs</item>
+      <item name="rules_vsides">vsides</item>
+      <item name="rules_box">box</item>
+      <item name="rules_border">borde</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">Os cambios realizados perderanse se sae desta páxina.</item>
+      <!--<item name="restore_content">Restore auto-saved content.</item>-->
+      <!--<item name="warning_message">If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?.</item>-->
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">Cambiar a modo Pantalla Completa</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">Insertar/editar medio embebido</item>
+      <item name="edit">Editar medio embebido</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">Insertar/editar medio embebido</item>
+      <item name="general">Xeral</item>
+      <item name="advanced">Avanzado</item>
+      <item name="file">Arquivo/URL</item>
+      <item name="list">Lista</item>
+      <item name="size">Tamaño</item>
+      <item name="preview">Vista Previa</item>
+      <item name="constrain_proportions">Bloquear proporcións</item>
+      <item name="type">Tipo</item>
+      <item name="id">Id</item>
+      <item name="name">Nome</item>
+      <item name="class_name">Clase</item>
+      <item name="vspace">Espacio V.</item>
+      <item name="hspace">Espacio H.</item>
+      <item name="play">Comezo Automático</item>
+      <item name="loop">Repetitivo</item>
+      <item name="menu">Mostrar Menú</item>
+      <item name="quality">Calidade</item>
+      <item name="scale">Escala</item>
+      <item name="align">Aliñación</item>
+      <item name="salign">SAlign</item>
+      <item name="wmode">WMode</item>
+      <item name="bgcolor">Fondo</item>
+      <item name="base">Base</item>
+      <item name="flashvars">Flashvars</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">AutoHREF</item>
+      <item name="cache">Caché</item>
+      <item name="hidden">Oculto</item>
+      <item name="controller">Controller</item>
+      <item name="kioskmode">Modo kiosco</item>
+      <item name="playeveryframe">Reproducir tódolos frames</item>
+      <item name="targetcache">Obxetivo cache</item>
+      <item name="correction">Sen correción</item>
+      <item name="enablejavascript">Habilitar JavaScript</item>
+      <item name="starttime">Inicio</item>
+      <item name="endtime">Fin</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">Vel. de choque</item>
+      <item name="target">Obxetivo</item>
+      <item name="volume">Volume</item>
+      <item name="autostart">Comezo Automático</item>
+      <item name="enabled">Habilitado</item>
+      <item name="fullscreen">Pantalla Completa</item>
+      <item name="invokeurls">Invocar URLs</item>
+      <item name="mute">Silencio</item>
+      <item name="stretchtofit">Estirar pra axustar</item>
+      <item name="windowlessvideo">Video sen ventá</item>
+      <item name="balance">Balance</item>
+      <item name="baseurl">URL Base</item>
+      <item name="captioningid">Id de lenda</item>
+      <item name="currentmarker">Marcador actual</item>
+      <item name="currentposition">Posición actual</item>
+      <item name="defaultframe">Frame predet.</item>
+      <item name="playcount">Cantas reproduccións</item>
+      <item name="rate">Relación</item>
+      <item name="uimode">Modo UI</item>
+      <item name="flash_options">Opcións Flash</item>
+      <item name="qt_options">Opcións Quicktime</item>
+      <item name="wmp_options">Opcións Windows media player</item>
+      <item name="rmp_options">Opcións Real media player</item>
+      <item name="shockwave_options">Opcións Shockwave</item>
+      <item name="autogotourl">Ir a URL automát.</item>
+      <item name="center">Centrado</item>
+      <item name="imagestatus">Estado de imaxe</item>
+      <item name="maintainaspect">Manter aspecto</item>
+      <item name="nojava">No java</item>
+      <item name="prefetch">PreBusca</item>
+      <item name="shuffle">Aleatorio</item>
+      <item name="console">Consola</item>
+      <item name="numloop">Núm. repeticións</item>
+      <item name="controls">Controis</item>
+      <item name="scriptcallbacks">Script callbacks</item>
+      <item name="swstretchstyle">Estilo estiramento</item>
+      <item name="swstretchhalign">Estirar aliñ. H.</item>
+      <item name="swstretchvalign">Esturar aliñ. V.</item>
+      <item name="sound">Son</item>
+      <item name="progress">Progreso</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn">Os recursos rtsp de Streaming deberían engadirse no campo QT Src da pestaña avanzada.\nAdemáis debería engadir unha versión no Streaming no campo Src.</item>
+      <item name="align_top">Arriba</item>
+      <item name="align_right">Dereita</item>
+      <item name="align_bottom">Abaixo</item>
+      <item name="align_left">Esquerda</item>
+      <item name="align_center">Centrado</item>
+      <item name="align_top_left">Arriba Izda.</item>
+      <item name="align_top_right">Arriba Dta.</item>
+      <item name="align_bottom_left">Abaixo Izda.</item>
+      <item name="align_bottom_right">Abaixo Dta.</item>
+      <item name="flv_options">Opcións Video Flash</item>
+      <item name="flv_scalemode">Modo escalado</item>
+      <item name="flv_buffer">Buffer</item>
+      <item name="flv_startimage">Imaxe inicio</item>
+      <item name="flv_starttime">Tempo inicio</item>
+      <item name="flv_defaultvolume">Volume predet.</item>
+      <item name="flv_hiddengui">Ocultar GUI</item>
+      <item name="flv_autostart">Inicio auto.</item>
+      <item name="flv_loop">Repetitivo</item>
+      <item name="flv_showscalemodes">Mostrar modos escala</item>
+      <item name="flv_smoothvideo">Video suave</item>
+      <item name="flv_jscallback">JS Callback</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">Propiedades do documento</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Propiedades do documento</item>
+      <item name="meta_tab">Xeral</item>
+      <item name="appearance_tab">Apariencia</item>
+      <item name="advanced_tab">Avanzado</item>
+      <item name="meta_props">Información Meta</item>
+      <item name="langprops">Lenguaxe e codificación</item>
+      <item name="meta_title">Título</item>
+      <item name="meta_keywords">Verbas chave</item>
+      <item name="meta_description">Descripción</item>
+      <item name="meta_robots">Robots</item>
+      <item name="doctypes">Tipo de doc.</item>
+      <item name="langcode">Código da lenguaxe</item>
+      <item name="langdir">Dirección da lenguaxe</item>
+      <item name="ltr">Esquerda a dereita</item>
+      <item name="rtl">Dereita a esquerda</item>
+      <item name="xml_pi">Declaración XML</item>
+      <item name="encoding">Codificación de caracteres</item>
+      <item name="appearance_bgprops">Propiedades do fondo</item>
+      <item name="appearance_marginprops">Marxes</item>
+      <item name="appearance_linkprops">Cores do vínculo</item>
+      <item name="appearance_textprops">Propiedades de texto</item>
+      <item name="bgcolor">Cor de fondo</item>
+      <item name="bgimage">Imaxe de fondo</item>
+      <item name="left_margin">Marxe esquerdo</item>
+      <item name="right_margin">Marxe dereito</item>
+      <item name="top_margin">Marxe superior</item>
+      <item name="bottom_margin">Marxe inferior</item>
+      <item name="text_color">Cor do texto</item>
+      <item name="font_size">Tamaño de fonte</item>
+      <item name="font_face">Fonte</item>
+      <item name="link_color">Cor de vínculo</item>
+      <item name="hover_color">Cor rato encima</item>
+      <item name="visited_color">Cor visitado</item>
+      <item name="active_color">Cor activo</item>
+      <item name="textcolor">Cor</item>
+      <item name="fontsize">Tamaño de fonte</item>
+      <item name="fontface">Fonte</item>
+      <item name="meta_index_follow">Indexar e segui-los vínculos</item>
+      <item name="meta_index_nofollow">Indexar e non segui-los vínculos</item>
+      <item name="meta_noindex_follow">Non indexar pero seguir vínculos</item>
+      <item name="meta_noindex_nofollow">Non indexar e non seguir vínculos</item>
+      <item name="appearance_style">Propiedades de folla de estilos e estilo</item>
+      <item name="stylesheet">Folla de estilo</item>
+      <item name="style">Estilo</item>
+      <item name="author">Autor</item>
+      <item name="copyright">Copyright</item>
+      <item name="add">Agregar novo elemento</item>
+      <item name="remove">Eliminar elemento seleccionado</item>
+      <item name="moveup">Mover elemento seleccionado arriba</item>
+      <item name="movedown">Mover elemento seleccionado abaixo</item>
+      <item name="head_elements">Elementos Head</item>
+      <item name="info">Información</item>
+      <item name="add_title">Elemento Title</item>
+      <item name="add_meta">Elemento Meta</item>
+      <item name="add_script">Elemento Script</item>
+      <item name="add_style">Elemento Style</item>
+      <item name="add_link">Elemento Link</item>
+      <item name="add_base">Elemento Base</item>
+      <item name="add_comment">Nodo Comment</item>
+      <item name="title_element">Elemento Title</item>
+      <item name="script_element">Elemento Script</item>
+      <item name="style_element">Elemento Style</item>
+      <item name="base_element">Elemento Base</item>
+      <item name="link_element">Elemento Link</item>
+      <item name="meta_element">Elemento Meta</item>
+      <item name="comment_element">Comentario</item>
+      <item name="src">Src</item>
+      <item name="language">Lenguaxe</item>
+      <item name="href">Href</item>
+      <item name="target">Obxetivo</item>
+      <item name="type">Tipo</item>
+      <item name="charset">Charset</item>
+      <item name="defer">Defer</item>
+      <item name="media">Medio</item>
+      <item name="properties">Propiedades</item>
+      <item name="name">Nome</item>
+      <item name="value">Valor</item>
+      <item name="content">Contido</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href lang</item>
+      <item name="general_props">Xeral</item>
+      <item name="advanced_props">Avanzado</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Insertar contido de plantilla predefinida</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">Plantillas</item>
+      <item name="label">Plantilla</item>
+      <item name="desc_label">Descripción</item>
+      <item name="desc">Insertar contido de plantilla predefinida</item>
+      <item name="select">Seleccionar plantilla</item>
+      <item name="preview">Vista previa</item>
+      <item name="warning">Coidado: Actualizar unha plantilla con outra pode causar pérdida de datos.</item>
+      <item name="mdate_format">%d-%m-%Y %H:%M:%S</item>
+      <item name="cdate_format">%d-%m-%Y %H:%M:%S</item>
+      <item name="months_long">Xaneito,Febreiro,Marzo,Abril,Maio,Xuño,Xullo,Agosto,Setembro,Outubro,Novembro,Decembro</item>
+      <item name="months_short">Xan,Feb,Mar,Abr,Mai,Xuñ,Xul,Ago,Set,Out,Nov,Dec</item>
+      <item name="day_long">Domingo,Luns,Martes,Mércores,Xoves,Venres,Sábado,Domingo</item>
+      <item name="day_short">Dom,Lun,Mar,Mér,Xov,Ver,Sáb,Dom</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Caracteres de control ON/OFF.</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">Conmutar corrector ortográfico</item>
+      <item name="menu">Configuración de corrector ortográfico</item>
+      <item name="ignore_word">Ignorar verba</item>
+      <item name="ignore_words">Ignorar todo</item>
+      <item name="langs">Idiomas</item>
+      <item name="wait">Agarde...</item>
+      <item name="sug">Suxerencias</item>
+      <item name="no_sug">Sen suxerencias</item>
+      <item name="no_mpell">Non se atoparon erros.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">Insertar fin de páxina</item>
+    </group>
+    <group target="advlist">
+      <!--<item name="types">Types</item>-->
+      <!--<item name="def">Default</item>-->
+      <!--<item name="lower_alpha">Lower alpha</item>-->
+      <!--<item name="lower_greek">Lower greek</item>-->
+      <!--<item name="lower_roman">Lower roman</item>-->
+      <!--<item name="upper_alpha">Upper alpha</item>-->
+      <!--<item name="upper_roman">Upper roman</item>-->
+      <!--<item name="circle">Circle</item>-->
+      <!--<item name="disc">Disc</item>-->
+      <!--<item name="square">Square</item>-->
+    </group>
+  </language>
+</language-pack>

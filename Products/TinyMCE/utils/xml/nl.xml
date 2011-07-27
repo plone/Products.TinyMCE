@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>Dries nijs</author>
+    <version major="16" minor="9" releasedate="2010-12-16" />
+    <description>Nederlands taalpaket voor TinyMCE</description>
+  </header>
+  <language code="nl" title="Dutch" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">Weet u zeker dat u tekst in WYSIWYG mode wilt bewerken in dit tekstveld?</item>
+      <item name="apply">Toepassen</item>
+      <item name="insert">Invoegen</item>
+      <item name="update">Bijwerken</item>
+      <item name="cancel">Annuleren</item>
+      <item name="close">Sluiten</item>
+      <item name="browse">Bladeren</item>
+      <item name="class_name">Klasse</item>
+      <item name="not_set">- Standaard -</item>
+      <item name="clipboard_msg">Kopiëren/knippen/plakken is niet beschikbaar in Mozilla en Firefox.\nWilt u meer informatie over deze beperking?</item>
+      <item name="clipboard_no_support">Kopiëren/knippen/plakken wordt niet ondersteund door uw browser, gebruik hiervoor de sneltoetsen.</item>
+      <item name="popup_blocked">U zult uw popup-blocker tijdelijk moeten uitschakelen voor deze website om gebruik te kunnen maken van alle functies van deze teksteditor.</item>
+      <item name="invalid_data">Fout: Er zijn ongeldige waardes ingevoerd, deze zijn rood gemarkeerd.</item>
+      <item name="more_colors">Meer kleuren</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">Vet (Ctrl+B)</item>
+      <item name="italic_desc">Cursief (Ctrl+I)</item>
+      <item name="underline_desc">Onderstrepen (Ctrl+U)</item>
+      <item name="striketrough_desc">Doorhalen</item>
+      <item name="bullist_desc">Opsommingstekens</item>
+      <item name="numlist_desc">Nummering</item>
+      <item name="undo_desc">Ongedaan maken (Ctrl+Z)</item>
+      <item name="redo_desc">Herhalen (Ctrl+Y)</item>
+      <item name="cleanup_desc">Code opruimen</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">Stijlen</item>
+      <item name="font_size">Tekengrootte</item>
+      <item name="fontdefault">Lettertype</item>
+      <item name="block">Opmaak</item>
+      <item name="paragraph">Alinea</item>
+      <item name="div">Div</item>
+      <item name="address">Adres</item>
+      <item name="pre">Vaste opmaak</item>
+      <item name="h1">Kop 1</item>
+      <item name="h2">Kop 2</item>
+      <item name="h3">Kop 3</item>
+      <item name="h4">Kop 4</item>
+      <item name="h5">Kop 5</item>
+      <item name="h6">Kop 6</item>
+      <item name="blockquote">Citaat</item>
+      <item name="code">Code</item>
+      <item name="samp">Codevoorbeeld</item>
+      <item name="dt">Definitieterm</item>
+      <item name="dd">Definitiebeschrijving</item>
+      <!-- Buttons -->
+      <item name="bold_desc">Vet (Ctrl+B)</item>
+      <item name="italic_desc">Cursief (Ctrl+I)</item>
+      <item name="underline_desc">Onderstrepen (Ctrl+U)</item>
+      <item name="striketrough_desc">Doorhalen</item>
+      <item name="justifyleft_desc">Links uitlijnen</item>
+      <item name="justifycenter_desc">Centreren</item>
+      <item name="justifyright_desc">Rechts uitlijnen</item>
+      <item name="justifyfull_desc">Uitvullen</item>
+      <item name="bullist_desc">Opsommingstekens</item>
+      <item name="numlist_desc">Nummering</item>
+      <item name="outdent_desc">Inspringing verkleinen</item>
+      <item name="indent_desc">Inspringing vergroten</item>
+      <item name="undo_desc">Ongedaan maken (Ctrl+Z)</item>
+      <item name="redo_desc">Herhalen (Ctrl+Y)</item>
+      <item name="link_desc">Link invoegen/bewerken</item>
+      <item name="unlink_desc">Link verwijderen</item>
+      <item name="image_desc">Afbeelding invoegen/bewerken</item>
+      <item name="cleanup_desc">Code opruimen</item>
+      <item name="code_desc">HTML bron bewerken</item>
+      <item name="sub_desc">Subscript</item>
+      <item name="sup_desc">Superscript</item>
+      <item name="hr_desc">Scheidingslijn invoegen</item>
+      <item name="removeformat_desc">Opmaak verwijderen</item>
+      <item name="custom1_desc">Uw eigen beschrijving hier</item>
+      <item name="forecolor_desc">Tekstkleur</item>
+      <item name="backcolor_desc">Tekstmarkeringskleur</item>
+      <item name="charmap_desc">Symbool invoegen</item>
+      <item name="visualaid_desc">Hulplijnen weergeven</item>
+      <item name="anchor_desc">Anker invoegen/bewerken</item>
+      <item name="cut_desc">Knippen</item>
+      <item name="copy_desc">Kopiëren</item>
+      <item name="paste_desc">Plakken</item>
+      <item name="image_props_desc">Afbeeldingseigenschappen</item>
+      <item name="newdocument_desc">Nieuw document</item>
+      <item name="help_desc">Help</item>
+      <item name="blockquote_desc">Citaat</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">Kopiëren/knippen/plakken is niet beschikbaar in Mozilla en Firefox.\nWilt u meer informatie over deze beperking?</item>
+      <item name="path">Pad</item>
+      <item name="newdocument">Weet u zeker dat u alle inhoud wilt wissen?</item>
+      <item name="toolbar_focus">Spring naar werkbalk - Alt+Q, Spring naar tekst - Alt-Z, Spring naar elementpad - Alt-X</item>
+      <item name="more_colors">Meer kleuren</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">Over TinyMCE</item>
+      <item name="about_general">Info</item>
+      <item name="about_help">Help</item>
+      <item name="about_license">Licentie</item>
+      <item name="about_plugins">Invoegtoepassingen</item>
+      <item name="about_plugin">Invoegtoepassing</item>
+      <item name="about_author">Auteur</item>
+      <item name="about_version">Versie</item>
+      <item name="about_loaded">Geladen Invoegtoepassingen</item>
+      <!-- Anchor -->
+      <item name="anchor_title">Anker invoegen/bewerken</item>
+      <item name="anchor_name">Ankernaam</item>
+      <!-- Source -->
+      <item name="code_title">HTML Bron</item>
+      <item name="code_wordwrap">Automatische terugloop</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">Kleuren</item>
+      <item name="colorpicker_picker_tab">Alle kleuren</item>
+      <item name="colorpicker_picker_title">Alle kleuren</item>
+      <item name="colorpicker_palette_tab">Palet</item>
+      <item name="colorpicker_palette_title">Paletkleuren</item>
+      <item name="colorpicker_named_tab">Benoemd</item>
+      <item name="colorpicker_named_title">Benoemde kleuren</item>
+      <item name="colorpicker_color">Kleur:</item>
+      <item name="colorpicker_name">Naam:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">Symbolen</item>
+      <!-- Image -->
+      <item name="image_title">Afbeelding invoegen/bewerken</item>
+      <item name="image_src">Bestand/URL</item>
+      <item name="image_alt">Beschrijving</item>
+      <item name="image_list">Lijst</item>
+      <item name="image_border">Rand</item>
+      <item name="image_dimensions">Afmetingen</item>
+      <item name="image_vspace">Verticale ruimte</item>
+      <item name="image_hspace">Horizontale ruimte</item>
+      <item name="image_align">Uitlijning</item>
+      <item name="image_align_baseline">Basislijn</item>
+      <item name="image_align_top">Boven</item>
+      <item name="image_align_middle">Midden</item>
+      <item name="image_align_bottom">Onder</item>
+      <item name="image_align_texttop">Bovenkant tekst</item>
+      <item name="image_align_textbottom">Onderkant tekst</item>
+      <item name="image_align_left">Links</item>
+      <item name="image_align_right">Rechts</item>
+      <!-- Link -->
+      <item name="link_title">Link invoegen/bewerken</item>
+      <item name="link_url">URL</item>
+      <item name="link_target">Doel</item>
+      <item name="link_target_same">Link in hetzelfde venster openen</item>
+      <item name="link_target_blank">Link in een nieuw venster openen</item>
+      <item name="link_titlefield">Titel</item>
+      <item name="link_is_email">De ingevoerde URL lijkt op een e-mailadres. Wilt u de vereiste mailto: tekst voorvoegen?</item>
+      <item name="link_is_external">De ingevoerde URL lijkt op een externe link. Wilt u de vereiste http:// tekst voorvoegen?</item>
+      <item name="link_list">Link lijst</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">Uitlijning</item>
+      <item name="left">Links</item>
+      <item name="center">Centreren</item>
+      <item name="right">Rechts</item>
+      <item name="full">Uitvullen</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%d-%m-%Y</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">Datum invoegen</item>
+      <item name="inserttime_desc">Tijd invoegen</item>
+      <item name="months_long">Januari,Februari,Maart,April,Mei,Juni,Juli,Augustus,September,Oktober,November,December</item>
+      <item name="months_short">Jan,Feb,Mar,Apr,Mei,Jun,Jul,Aug,Sep,Okt,Nov,Dec</item>
+      <item name="day_long">Zondag,Maandag,Dinsdag,Woensdag,Donderdag,Vrijdag,Zaterdag,Zondag</item>
+      <item name="day_short">zo,ma,di,wo,do,vr,za,zo</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">Afdrukken</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">Voorbeeld</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">Van links naar rechts</item>
+      <item name="rtl_desc">Van rechts naar links</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">Nieuwe laag invoegen</item>
+      <item name="forward_desc">Volgende laag</item>
+      <item name="backward_desc">Vorige laag</item>
+      <item name="absolute_desc">Absoluut positioneren inschakelen</item>
+      <item name="content">Nieuwe laag...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">Opslaan</item>
+      <item name="cancel_desc">Alle wijzigingen annuleren</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">Open ruimte invoegen</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">Spellingcontrole</item>
+      <item name="download">ieSpell niet gevonden. Wilt u deze nu installeren?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">Scheidingslijn</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">Breedte</item>
+      <item name="size">Hoogte</item>
+      <item name="noshade">Geen schaduw</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">Emoties</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">Emotie invoegen</item>
+      <item name="desc">Emoties</item>
+      <item name="cool">Stoer</item>
+      <item name="cry">Huilen</item>
+      <item name="embarassed">Schamen</item>
+      <item name="foot_in_mouth">Verstomd</item>
+      <item name="frown">Wenkbrauw ophalen</item>
+      <item name="innocent">Onschuldig</item>
+      <item name="kiss">Zoenen</item>
+      <item name="laughing">Lachen</item>
+      <item name="money_mouth">Hebberig</item>
+      <item name="sealed">Afgesloten</item>
+      <item name="smile">Lachen</item>
+      <item name="surprised">Verrast</item>
+      <item name="tongue_out">Tong uitsteken</item>
+      <item name="undecided">Onbeslist</item>
+      <item name="wink">Knipogen</item>
+      <item name="yell">Roepen</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">Zoeken</item>
+      <item name="replace_desc">Zoeken/Vervangen</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">Opnieuw zoeken</item>
+      <item name="notfound">Het doorzoeken is voltooid. De zoekterm kon niet meer worden gevonden.</item>
+      <item name="search_title">Zoeken</item>
+      <item name="replace_title">Zoeken/Vervangen</item>
+      <item name="allreplaced">Alle instanties van de zoekterm zijn vervangen.</item>
+      <item name="findwhat">Zoeken naar</item>
+      <item name="replacewith">Vervangen door</item>
+      <item name="direction">Richting</item>
+      <item name="up">Omhoog</item>
+      <item name="down">Omlaag</item>
+      <item name="mcase">Identieke hoofdletters/kleine letters</item>
+      <item name="findnext">Zoeken</item>
+      <item name="replace">Vervangen</item>
+      <item name="replaceall">Alles verv.</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">Afbeelding invoegen/bewerken</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">Algemeen</item>
+      <item name="tab_appearance">Weergave</item>
+      <item name="tab_advanced">Geavanceerd</item>
+      <item name="general">Algemeen</item>
+      <item name="title">Titel</item>
+      <item name="preview">Voorbeeld</item>
+      <item name="constrain_proportions">Verhouding behouden</item>
+      <item name="langdir">Taalrichting</item>
+      <item name="langcode">Taalcode</item>
+      <item name="long_desc">Uitgebreide beschrijving</item>
+      <item name="style">Stijl</item>
+      <item name="classes">Klasses</item>
+      <item name="ltr">Van links naar rechts</item>
+      <item name="rtl">Van rechts naar links</item>
+      <item name="id">Id</item>
+      <item name="map">Afbeeldingsplattegrond</item>
+      <item name="swap_image">Afbeelding wisselen</item>
+      <item name="alt_image">Alternatieve afbeeldingen</item>
+      <item name="mouseover">Bij muis over</item>
+      <item name="mouseout">Bij muis uit</item>
+      <item name="misc">Diversen</item>
+      <item name="example_img">Voorbeeldweergave</item>
+      <item name="missing_alt">Wilt u de afbeelding zonder beschrijving invoegen? De afbeelding wordt dan mogelijk niet opgemerkt door mensen met een visuele handicap, of welke zonder afbeeldingen browsen.</item>
+      <item name="dialog_title">Afbeelding invoegen/bewerken</item>
+      <item name="src">Bestand/URL</item>
+      <item name="alt">Beschrijving</item>
+      <item name="list">Lijst</item>
+      <item name="border">Rand</item>
+      <item name="dimensions">Afmetingen</item>
+      <item name="vspace">Verticale ruimte</item>
+      <item name="hspace">Horizontale ruimte</item>
+      <item name="align">Uitlijning</item>
+      <item name="align_baseline">Basislijn</item>
+      <item name="align_top">Boven</item>
+      <item name="align_middle">Midden</item>
+      <item name="align_bottom">Onder</item>
+      <item name="align_texttop">Bovenkant tekst</item>
+      <item name="align_textbottom">Onderkant tekst</item>
+      <item name="align_left">Links</item>
+      <item name="align_right">Rechts</item>
+      <item name="image_list">Lijst</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">Link invoegen/bewerken</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">Link invoegen/bewerken</item>
+      <item name="url">URL</item>
+      <item name="target">Doel</item>
+      <item name="titlefield">Titel</item>
+      <item name="is_email">De ingevoerde URL lijkt op een e-mailadres. Wilt u de vereiste mailto: tekst voorvoegen?</item>
+      <item name="is_external">De ingevoerde URL lijkt op een externe link. Wilt u de vereiste http:// tekst voorvoegen?</item>
+      <item name="list">Lijst</item>
+      <item name="general_tab">Algemeen</item>
+      <item name="popup_tab">Popup</item>
+      <item name="events_tab">Gebeurtenissen</item>
+      <item name="advanced_tab">Geavanceerd</item>
+      <item name="general_props">Algemene eigenschappen</item>
+      <item name="popup_props">Popup eigenschappen</item>
+      <item name="event_props">Gebeurtenissen</item>
+      <item name="advanced_props">Geavanceerde eigenschappen</item>
+      <item name="popup_opts">Opties</item>
+      <item name="anchor_names">Ankers</item>
+      <item name="target_same">In dit venster / frame openen</item>
+      <item name="target_parent">In bovenliggend venster / frame openen</item>
+      <item name="target_top">In bovenste frame openen (vervangt gehele pagina)</item>
+      <item name="target_blank">In nieuw venster openen</item>
+      <item name="popup">Javascript popup</item>
+      <item name="popup_url">Popup URL</item>
+      <item name="popup_name">Venstertitel</item>
+      <item name="popup_return">'return false' invoegen</item>
+      <item name="popup_scrollbars">Scrollbalken weergeven</item>
+      <item name="popup_statusbar">Statusbalk weergeven</item>
+      <item name="popup_toolbar">Werkbalk weergeven</item>
+      <item name="popup_menubar">Menubalk weergeven</item>
+      <item name="popup_location">Lokatiebalk weergeven</item>
+      <item name="popup_resizable">Aanpasbaar venster</item>
+      <item name="popup_dependent">Afhankelijk (Alleen Mozilla/Firefox)</item>
+      <item name="popup_size">Grootte</item>
+      <item name="popup_position">Positie (X/Y)</item>
+      <item name="id">Id</item>
+      <item name="style">Stijl</item>
+      <item name="classes">Klassen</item>
+      <item name="target_name">Doel</item>
+      <item name="langdir">Taalrichting</item>
+      <item name="target_langcode">Taal</item>
+      <item name="langcode">Taalcode</item>
+      <item name="encoding">Taalcodering</item>
+      <item name="mime">MIME type</item>
+      <item name="rel">Relatie van pagina tot doel</item>
+      <item name="rev">Relatie van doel tot pagina</item>
+      <item name="tabindex">Tabvolgorde</item>
+      <item name="accesskey">Toegangstoets</item>
+      <item name="ltr">Van links naar rechts</item>
+      <item name="rtl">Van rechts naar links</item>
+      <item name="link_list">Lijst</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">Citaat</item>
+      <item name="abbr_desc">Afkorting</item>
+      <item name="acronym_desc">Synoniem</item>
+      <item name="del_desc">Verwijderd</item>
+      <item name="ins_desc">Ingevoegd</item>
+      <item name="attribs_desc">Attributen invoegen/bewerken</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">Titel</item>
+      <item name="attribute_label_id">ID</item>
+      <item name="attribute_label_class">Klasse</item>
+      <item name="attribute_label_style">Stijl</item>
+      <item name="attribute_label_cite">Citaat</item>
+      <item name="attribute_label_datetime">Datum/Tijd</item>
+      <item name="attribute_label_langdir">Tekstrichting</item>
+      <item name="attribute_option_ltr">Van links naar rechts</item>
+      <item name="attribute_option_rtl">Van rechts naar links</item>
+      <item name="attribute_label_langcode">Taal</item>
+      <item name="attribute_label_tabindex">Tabvolgorde</item>
+      <item name="attribute_label_accesskey">Toegangstoets</item>
+      <item name="attribute_events_tab">Gebeurtenissen</item>
+      <item name="attribute_attrib_tab">Attributen</item>
+      <item name="general_tab">Algemeen</item>
+      <item name="attrib_tab">Attributen</item>
+      <item name="events_tab">Gebeurtenissen</item>
+      <item name="fieldset_general_tab">Algemene instellingen</item>
+      <item name="fieldset_attrib_tab">Elementattributen</item>
+      <item name="fieldset_events_tab">Element Gebeurtenissen</item>
+      <item name="title_ins_element">Invoegingselement</item>
+      <item name="title_del_element">Verwijderingselement</item>
+      <item name="title_acronym_element">Synoniem</item>
+      <item name="title_abbr_element">Afkorting</item>
+      <item name="title_cite_element">Citaat</item>
+      <item name="remove">Verwijderen</item>
+      <item name="insert_date">Huidige datum/tijd invoegen</item>
+      <item name="option_ltr">Van links naar rechts</item>
+      <item name="option_rtl">Van rechts naar links</item>
+      <item name="attribs_title">Attributen Invoegen/bewerken</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">CSS Stijl bewerken</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">CSS Stijl bewerken</item>
+      <item name="apply">Toepassen</item>
+      <item name="text_tab">Tekst</item>
+      <item name="background_tab">Achtergrond</item>
+      <item name="block_tab">Blok</item>
+      <item name="box_tab">Box</item>
+      <item name="border_tab">Rand</item>
+      <item name="list_tab">Lijst</item>
+      <item name="positioning_tab">Positionering</item>
+      <item name="text_props">Tekst</item>
+      <item name="text_font">Lettertype</item>
+      <item name="text_size">Tekengrootte</item>
+      <item name="text_weight">Gewicht</item>
+      <item name="text_style">Stijl</item>
+      <item name="text_variant">Variant</item>
+      <item name="text_lineheight">Lijnhoogte</item>
+      <item name="text_case">Hoofdlettergebruik</item>
+      <item name="text_color">Kleur</item>
+      <item name="text_decoration">Decoratie</item>
+      <item name="text_overline">Overhalen</item>
+      <item name="text_underline">Onderstrepen</item>
+      <item name="text_striketrough">Doorhalen</item>
+      <item name="text_blink">Knipperen</item>
+      <item name="text_none">Niets</item>
+      <item name="background_color">Achtergrondkleur</item>
+      <item name="background_image">Achtergrondafbeelding</item>
+      <item name="background_repeat">Herhalen</item>
+      <item name="background_attachment">Bijlage</item>
+      <item name="background_hpos">Horizontale positie</item>
+      <item name="background_vpos">Verticale positie</item>
+      <item name="block_wordspacing">Woordruimte</item>
+      <item name="block_letterspacing">Letterruimte</item>
+      <item name="block_vertical_alignment">Verticale uitlijning</item>
+      <item name="block_text_align">Tekstuitlijning</item>
+      <item name="block_text_indent">Inspringen</item>
+      <item name="block_whitespace">Witruimte</item>
+      <item name="block_display">Weergave</item>
+      <item name="box_width">Breedte</item>
+      <item name="box_height">Hoogte</item>
+      <item name="box_float">Zweven</item>
+      <item name="box_clear">Vrijhouden</item>
+      <item name="padding">Opening</item>
+      <item name="same">Alles hetzelfde</item>
+      <item name="top">Boven</item>
+      <item name="right">Rechts</item>
+      <item name="bottom">Onder</item>
+      <item name="left">Links</item>
+      <item name="margin">Marge</item>
+      <item name="style">Stijl</item>
+      <item name="width">Breedte</item>
+      <item name="height">Hoogte</item>
+      <item name="color">Kleur</item>
+      <item name="list_type">Type</item>
+      <item name="bullet_image">Opsommingsteken</item>
+      <item name="position">Positie</item>
+      <item name="positioning_type">Type</item>
+      <item name="visibility">Zichtbaarheid</item>
+      <item name="zindex">Z-index</item>
+      <item name="overflow">Overvloeien</item>
+      <item name="placement">Plaatsing</item>
+      <item name="clip">Clip</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">Als platte tekst plakken</item>
+      <item name="paste_word_desc">Vanuit Word plakken</item>
+      <item name="selectall_desc">Alles selecteren</item>
+      <item name="plaintext_mode_sticky">Plakken is nu in plattetekstmodus. Klik nog een keer om terug te gaan naar normaal plakken. Nadat u iets plakt, keert u terug naar normaal plakken.</item>
+      <item name="plaintext_mode">Plakken is nu in plattetekstmoduse. Klik nog een keer om terug te gaan naar normaal plakken.</item>
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">Gebruik Ctrl+V om tekst in het venster te plakken.</item>
+      <item name="text_linebreaks">Regelafbreking bewaren</item>
+      <item name="word_title">Gebruik Ctrl+V om tekst in het venster te plakken.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">Nieuwe tabel invoegen</item>
+      <item name="row_before_desc">Rij boven invoegen</item>
+      <item name="row_after_desc">Rij onder invoegen</item>
+      <item name="delete_row_desc">Rij verwijderen</item>
+      <item name="col_before_desc">Kolom links invoegen</item>
+      <item name="col_after_desc">Kolom rechts invoegen</item>
+      <item name="delete_col_desc">Kolom verwijderen</item>
+      <item name="split_cells_desc">Cellen splitsen</item>
+      <item name="merge_cells_desc">Cellen samenvoegen</item>
+      <item name="row_desc">Rij-eigenschappen</item>
+      <item name="cell_desc">Cel-eigenschappen</item>
+      <item name="props_desc">Tabeleigenschappen</item>
+      <item name="paste_row_before_desc">Rij boven plakken</item>
+      <item name="paste_row_after_desc">Rij onder plakken</item>
+      <item name="cut_row_desc">Rij knippen</item>
+      <item name="copy_row_desc">Rij kopiëren</item>
+      <item name="del">Tabel verwijderen</item>
+      <item name="row">Rij</item>
+      <item name="col">Kolom</item>
+      <item name="cell">Cel</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width"></item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">Algemeen</item>
+      <item name="advanced_tab">Geavanceerd</item>
+      <item name="general_props">Algemene eigenschappen</item>
+      <item name="advanced_props">Geavanceerde eigenschappen</item>
+      <item name="rowtype">Rijtype</item>
+      <item name="title">Tabel invoegen/bewerken</item>
+      <item name="width">Breedte</item>
+      <item name="height">Hoogte</item>
+      <item name="cols">Kolommen</item>
+      <item name="rows">Rijen</item>
+      <item name="cellspacing">Ruimte om cel</item>
+      <item name="cellpadding">Ruimte in cel</item>
+      <item name="border">Rand</item>
+      <item name="align">Uitlijning</item>
+      <item name="align_default">Standaard</item>
+      <item name="align_left">Links</item>
+      <item name="align_right">Rechts</item>
+      <item name="align_middle">Centreren</item>
+      <item name="row_title">Rij-eigenschappen</item>
+      <item name="cell_title">Celeigenschappen</item>
+      <item name="cell_type">Celtype</item>
+      <item name="valign">Verticale uitlijning</item>
+      <item name="align_top">Boven</item>
+      <item name="align_bottom">Onder</item>
+      <item name="bordercolor">Randkleur</item>
+      <item name="bgcolor">Achtergrondkleur</item>
+      <item name="merge_cells_title">Cellen samenvoegen</item>
+      <item name="id">Id</item>
+      <item name="style">Stijl</item>
+      <item name="langdir">Taalrichting</item>
+      <item name="langcode">Taalcode</item>
+      <item name="mime">Doel MIME type</item>
+      <item name="ltr">Van links naar rechts</item>
+      <item name="rtl">Van rechts naar links</item>
+      <item name="bgimage">Achtergrondafbeelding</item>
+      <item name="summary">Samenvatting</item>
+      <item name="td">Gegevens</item>
+      <item name="th">Kop</item>
+      <item name="cell_cell">Huidige cel bijwerken</item>
+      <item name="cell_row">Alle cellen in rij bijwerken</item>
+      <item name="cell_all">Alle cellen in tabel bijwerken</item>
+      <item name="row_row">Huidige rij bijwerken</item>
+      <item name="row_odd">Oneven rijen bijwerken</item>
+      <item name="row_even">Even rijen bijwerken</item>
+      <item name="row_all">Alle rijen bijwerken</item>
+      <item name="thead">Tabelkop</item>
+      <item name="tbody">Tabellichaam</item>
+      <item name="tfoot">Tabelvoet</item>
+      <item name="scope">Bereik</item>
+      <item name="rowgroup">Rijgroep</item>
+      <item name="colgroup">Kolomgroep</item>
+      <item name="col_limit">U heeft het maximale aantal kolommen van {$cols} overschreden.</item>
+      <item name="row_limit">U heeft hebt het maximale aantal rijen van {$rows} overschreden.</item>
+      <item name="cell_limit">U heeft het maximale aantal cellen van {$cells} overschreden.</item>
+      <item name="missing_scope">Weet u zeker dat u door wilt gaan met het toewijzen van een kop zonder een bereik op te geven? Mensen met een visuele handicap kunnen hierdoor waarschijnlijk slecht bij de gegevens.</item>
+      <item name="caption">Tabelbeschrijving</item>
+      <item name="frame">Frame</item>
+      <item name="frame_none">Geen</item>
+      <item name="frame_groups">Groepen</item>
+      <item name="frame_rows">Rijen</item>
+      <item name="frame_cols">Kolommen</item>
+      <item name="frame_all">Alles</item>
+      <item name="rules">Hulplijnen</item>
+      <item name="rules_void">Geen</item>
+      <item name="rules_above">Boven</item>
+      <item name="rules_below">Onder</item>
+      <item name="rules_hsides">Horizontale zijden</item>
+      <item name="rules_lhs">Linkerzijkant</item>
+      <item name="rules_rhs">Rechterzijkant</item>
+      <item name="rules_vsides">Verticale zijden</item>
+      <item name="rules_box">Box</item>
+      <item name="rules_border">Rand</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">De wijzigingen zullen verloren gaan als u nu deze pagina verlaat.</item>
+      <item name="restore_content">Automatisch opgeslagen inhoud laden.</item>
+      <item name="warning_message">Als u de opgeslagen inhoud laadt, verliest u de inhoud die zich momenteel in de editor bevindt.\n\nWeet u zeker dat u de opgeslagen inhoud wilt laden?</item>
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">Volledig scherm</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">Media invoegen/bewerken</item>
+      <item name="edit">Media bewerken</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">Media invoegen/bewerken</item>
+      <item name="general">Algemeen</item>
+      <item name="advanced">Geavanceerd</item>
+      <item name="file">Bestand/URL</item>
+      <item name="list">Lijst</item>
+      <item name="size">Afmetingen</item>
+      <item name="preview">Voorbeeld</item>
+      <item name="constrain_proportions">Verhouding bewaren</item>
+      <item name="type">Type</item>
+      <item name="id">Id</item>
+      <item name="name">Naam</item>
+      <item name="class_name">Klasse</item>
+      <item name="vspace">V-Ruimte</item>
+      <item name="hspace">H-Ruimte</item>
+      <item name="play">Automatisch afspelen</item>
+      <item name="loop">Herhalen</item>
+      <item name="menu">Menu Weergeven</item>
+      <item name="quality">Kwaliteit</item>
+      <item name="scale">Schaal</item>
+      <item name="align">Uitlijning</item>
+      <item name="salign">Schaaluitlijning</item>
+      <item name="wmode">WMode</item>
+      <item name="bgcolor">Achtergrond</item>
+      <item name="base">Basis</item>
+      <item name="flashvars">Variabelen</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">AutoHREF</item>
+      <item name="cache">Cache</item>
+      <item name="hidden">Verborgen</item>
+      <item name="controller">Controller</item>
+      <item name="kioskmode">Kioskmodus</item>
+      <item name="playeveryframe">Elk frame afspelen</item>
+      <item name="targetcache">Doelcache</item>
+      <item name="correction">Geen correctie</item>
+      <item name="enablejavascript">JavaScript Inschakelen</item>
+      <item name="starttime">Starttijd</item>
+      <item name="endtime">Eindtijd</item>
+      <item name="href">HREF</item>
+      <item name="qtsrcchokespeed">Chokesnelheid</item>
+      <item name="target">Doel</item>
+      <item name="volume">Volume</item>
+      <item name="autostart">Automatisch afspelen</item>
+      <item name="enabled">Ingeschakeld</item>
+      <item name="fullscreen">Volledig scherm</item>
+      <item name="invokeurls">URLs laden</item>
+      <item name="mute">Geluid dempen</item>
+      <item name="stretchtofit">Passend maken</item>
+      <item name="windowlessvideo">Video zonder venster</item>
+      <item name="balance">Balans</item>
+      <item name="baseurl">BasisURL</item>
+      <item name="captioningid">Ondertiteling id</item>
+      <item name="currentmarker">Huidige markering</item>
+      <item name="currentposition">Huidige positie</item>
+      <item name="defaultframe">Standaard frame</item>
+      <item name="playcount">Afspeelteller</item>
+      <item name="rate">Snelheid</item>
+      <item name="uimode">UI Modus</item>
+      <item name="flash_options">Flash opties</item>
+      <item name="qt_options">Quicktime opties</item>
+      <item name="wmp_options">Windows mediaspeler opties</item>
+      <item name="rmp_options">Real mediaspeler opties</item>
+      <item name="shockwave_options">Shockwave opties</item>
+      <item name="autogotourl">Automatisch naar URL</item>
+      <item name="center">Centreren</item>
+      <item name="imagestatus">Afbeeldingstatus</item>
+      <item name="maintainaspect">Verhouding bewaren</item>
+      <item name="nojava">Geen java</item>
+      <item name="prefetch">Voorladen</item>
+      <item name="shuffle">Willekeurige volgorde</item>
+      <item name="console">Console</item>
+      <item name="numloop">Aantal herhalingen</item>
+      <item name="controls">Bediening</item>
+      <item name="scriptcallbacks">Script callbacks</item>
+      <item name="swstretchstyle">Schaal</item>
+      <item name="swstretchhalign">H-Schaal</item>
+      <item name="swstretchvalign">V-Schaal</item>
+      <item name="sound">Geluid</item>
+      <item name="progress">Voortgang</item>
+      <item name="qtsrc">Quicktime bron</item>
+      <item name="qt_stream_warn">Gestreamde RTSP bronnen dienen op het tabblad geavanceerd bij Quicktime bron te worden opgegeven.\nDe niet-gestreamde versie kan dan bij het tabblad algemeen worden opgegeven.</item>
+      <item name="align_top">Boven</item>
+      <item name="align_right">Rechts</item>
+      <item name="align_bottom">Onder</item>
+      <item name="align_left">Links</item>
+      <item name="align_center">Centreren</item>
+      <item name="align_top_left">Linksboven</item>
+      <item name="align_top_right">Rechtsboven</item>
+      <item name="align_bottom_left">Linksonder</item>
+      <item name="align_bottom_right">Rechtsonder</item>
+      <item name="flv_options">Flash video-opties</item>
+      <item name="flv_scalemode">Schaalmodus</item>
+      <item name="flv_buffer">Buffer</item>
+      <item name="flv_startimage">Startafbeelding</item>
+      <item name="flv_starttime">Starttijd</item>
+      <item name="flv_defaultvolume">Standaard volume</item>
+      <item name="flv_hiddengui">GUI verbergen</item>
+      <item name="flv_autostart">Automatisch afspelen</item>
+      <item name="flv_loop">Herhalen</item>
+      <item name="flv_showscalemodes">Schaalmodus weergeven</item>
+      <item name="flv_smoothvideo">Soepele video</item>
+      <item name="flv_jscallback">JS Callback</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">Documenteigenschappen</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Documenteigenschappen</item>
+      <item name="meta_tab">Algemeen</item>
+      <item name="appearance_tab">Weergave</item>
+      <item name="advanced_tab">Geavanceerd</item>
+      <item name="meta_props">Meta informatie</item>
+      <item name="langprops">Taal en codering</item>
+      <item name="meta_title">Titel</item>
+      <item name="meta_keywords">Sleutelwoorden</item>
+      <item name="meta_description">Beschrijving</item>
+      <item name="meta_robots">Robots</item>
+      <item name="doctypes">Doctype</item>
+      <item name="langcode">Taalcode</item>
+      <item name="langdir">Taalrichting</item>
+      <item name="ltr">Van links naar rechts</item>
+      <item name="rtl">Van rechts naar links</item>
+      <item name="xml_pi">XML toewijzing</item>
+      <item name="encoding">Karaktercodering</item>
+      <item name="appearance_bgprops">Achtergrondeigenschappen</item>
+      <item name="appearance_marginprops">Bodymarge</item>
+      <item name="appearance_linkprops">Linkkleuren</item>
+      <item name="appearance_textprops">Teksteigenschappen</item>
+      <item name="bgcolor">Achtergrondkleur</item>
+      <item name="bgimage">Achtergrondafbeelding</item>
+      <item name="left_margin">Linkermarge</item>
+      <item name="right_margin">Rechtermarge</item>
+      <item name="top_margin">Bovenmarge</item>
+      <item name="bottom_margin">Ondermarge</item>
+      <item name="text_color">Tekstkleur</item>
+      <item name="font_size">Tekengrootte</item>
+      <item name="font_face">Lettertype</item>
+      <item name="link_color">Linkkleur</item>
+      <item name="hover_color">Hoverkleur</item>
+      <item name="visited_color">Bezocht kleur</item>
+      <item name="active_color">Actieve kleur</item>
+      <item name="textcolor">Kleur</item>
+      <item name="fontsize">Tekengrootte</item>
+      <item name="fontface">Lettertype</item>
+      <item name="meta_index_follow">Links indexeren en volgen</item>
+      <item name="meta_index_nofollow">Links indexeren maar niet volgen</item>
+      <item name="meta_noindex_follow">Links volgen maar niet indexeren</item>
+      <item name="meta_noindex_nofollow">Links niet indexeren en niet volgen</item>
+      <item name="appearance_style">Stijlblad en stijleigenschappen</item>
+      <item name="stylesheet">Stijlblad</item>
+      <item name="style">Stijl</item>
+      <item name="author">Auteur</item>
+      <item name="copyright">Copyright</item>
+      <item name="add">Nieuw element toevoegen</item>
+      <item name="remove">Geselecteerde elementen verwijderen</item>
+      <item name="moveup">Geselecteerde elementen omhoog verplaatsen</item>
+      <item name="movedown">Geselecteerde elementen omlaag verplaatsen</item>
+      <item name="head_elements">Kopelementen</item>
+      <item name="info">Informatie</item>
+      <item name="add_title">Titelelement</item>
+      <item name="add_meta">Meta-element</item>
+      <item name="add_script">Scriptelement</item>
+      <item name="add_style">Stijlelement</item>
+      <item name="add_link">Linkelement</item>
+      <item name="add_base">Basiselement</item>
+      <item name="add_comment">Opmerkingknooppunt</item>
+      <item name="title_element">Titelelement</item>
+      <item name="script_element">Scriptelement</item>
+      <item name="style_element">Stijlelement</item>
+      <item name="base_element">Basiselement</item>
+      <item name="link_element">Linkelement</item>
+      <item name="meta_element">Meta-element</item>
+      <item name="comment_element">Opmerking</item>
+      <item name="src">Bron</item>
+      <item name="language">Taal</item>
+      <item name="href">Href</item>
+      <item name="target">Doel</item>
+      <item name="type">Type</item>
+      <item name="charset">Karakterset</item>
+      <item name="defer">Uitstellen</item>
+      <item name="media">Media</item>
+      <item name="properties">Eigenschappen</item>
+      <item name="name">Naam</item>
+      <item name="value">Waarde</item>
+      <item name="content">Inhoud</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href taal</item>
+      <item name="general_props">Algemeen</item>
+      <item name="advanced_props">Geavanceerd</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Voorgedefinieerd sjabloon invoegen</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">Sjablonen</item>
+      <item name="label">Sjabloon</item>
+      <item name="desc_label">Beschrijving</item>
+      <item name="desc">Voorgedefinieerd sjabloon invoegen</item>
+      <item name="select">Selecteer een sjabloon</item>
+      <item name="preview">Voorbeeld</item>
+      <item name="warning">Waarschuwing: het bijwerken van een sjabloon met een andere kan het verlies van informatie tot gevolg hebben.</item>
+      <item name="mdate_format">%d-%m-%Y %H:%M:%S</item>
+      <item name="cdate_format">%d-%m-%Y %H:%M:%S</item>
+      <item name="months_long">Januari,Februari,Maart,April,Mei,Juni,Juli,Augustus,September,Oktober,November,December</item>
+      <item name="months_short">Jan,Feb,Mar,Apr,Mei,Jun,Jul,Aug,Sep,Okt,Nov,Dec</item>
+      <item name="day_long">Zondag,Maandag,Dinsdag,Woensdag,Donderdag,Vrijdag,Zaterdag,Zondag</item>
+      <item name="day_short">zo,ma,di,wo,do,vr,za,zo</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Zichtbare symbolen</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">Spellingcontrole</item>
+      <item name="menu">Instellingen spellingcontrole</item>
+      <item name="ignore_word">Woord negeren</item>
+      <item name="ignore_words">Alles negeren</item>
+      <item name="langs">Talen</item>
+      <item name="wait">Een ogenblik geduld…</item>
+      <item name="sug">Suggesties</item>
+      <item name="no_sug">Geen suggesties</item>
+      <item name="no_mpell">Geen spelfouten gevonden.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">Pagina-einde invoegen</item>
+    </group>
+    <group target="advlist">
+      <item name="types">Types</item>
+      <item name="def">Standaard</item>
+      <item name="lower_alpha">Alfa (klein)</item>
+      <item name="lower_greek">Griekse letters (klein)</item>
+      <item name="lower_roman">Romeinse letters (klein)</item>
+      <item name="upper_alpha">Alfa (groot)</item>
+      <item name="upper_roman">Romeinse letters (groot)</item>
+      <item name="circle">Cirkel</item>
+      <item name="disc">Schijf</item>
+      <item name="square">Vierkant</item>
+    </group>
+  </language>
+</language-pack>

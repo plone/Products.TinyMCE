@@ -12,9 +12,7 @@
                      configuration_method nocall:here/@@tinymce-jsonconfiguration;
                      configuration_json python:configuration_method(fieldname=field);
                      element_id id|inputname;">
-  <textarea cols="80"
-            rows="25"
-            name="description"
+  <textarea cols="80" rows="25" name="description"
             tal:content="inputvalue"
             tal:attributes="name inputname;
                             id element_id;
@@ -24,12 +22,6 @@
                             cols cols|default;
                             title python:wysiwyg and configuration_json or None;
                             class python:wysiwyg and 'mce_editable' or None"></textarea>
-
-  <script type="text/javascript"
-      tal:condition="wysiwyg"
-      tal:content="string:
-      tinymce.dom.Event.add(window, 'load', function(e) { var config = new TinyMCEConfig('${element_id}'); config.init(); });"></script>
-
   <div tal:condition="wysiwyg"
        class="discreet suppressVisualEditor" style="margin-top: -1em;">
     <a i18n:translate="suppress_visual_editor"
@@ -38,7 +30,6 @@
       Edit without visual editor
     </a>
   </div>
-
   </tal:block>
 </div>
 

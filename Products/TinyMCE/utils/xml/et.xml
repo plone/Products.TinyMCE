@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>www.we.ee</author>
+    <version major="1" minor="8" releasedate="2010-03-22" />
+    <description>This is the Estonian language pack for TinyMCE. Feel free to make corrections and updates</description>
+  </header>
+  <language code="et" title="Estonian" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">Kas soovite kasutada WYSIWYG režiimi sellel tekstialal?</item>
+      <item name="apply">Rakenda</item>
+      <item name="insert">Sisesta</item>
+      <item name="update">Uuenda</item>
+      <item name="cancel">Tühista</item>
+      <item name="close">Sule</item>
+      <item name="browse">Sirvi</item>
+      <item name="class_name">Klass</item>
+      <item name="not_set">-- Seadmata --</item>
+      <item name="clipboard_msg">Kopeeri/Lõika/Kleebi ei ole saadaval Mozillas ja Firefoxis.\nKas soovite rohkem infot selle probleemi kohta?</item>
+      <item name="clipboard_no_support">Hetkel ei ole toetatud Teie lehitseja poolt, kasutage klaviatuuri otseteid selle asemel.</item>
+      <item name="popup_blocked">Vabandust, aga Teie hüpikakna tõkestaja on blokeerinud akna, mis varustab rakenduse funktsionaalsust. Palun lubage hüpikaknad sellel kodulehel, et täielikult kasutada seda vahendit.</item>
+      <item name="invalid_data">Viga: Kehtetud väärtused sisestatud, need on märgitud punasega.</item>
+      <item name="more_colors">Rohkem värve</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">Rasvane (Ctrl+B)</item>
+      <item name="italic_desc">Kursiiv (Ctrl+I)</item>
+      <item name="underline_desc">Allajoonitud (Ctrl+U)</item>
+      <item name="striketrough_desc">Läbijoonitud</item>
+      <item name="bullist_desc">Ebakorrapärane loetelu</item>
+      <item name="numlist_desc">Korrapärane loetelu</item>
+      <item name="undo_desc">Võta tagasi (Ctrl+Z)</item>
+      <item name="redo_desc">Tee uuesti (Ctrl+Y)</item>
+      <item name="cleanup_desc">Puhasta segane kood</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">Stiilid</item>
+      <item name="font_size">Fondi suurus</item>
+      <item name="fontdefault">Font</item>
+      <item name="block">Formaat</item>
+      <item name="paragraph">Paragraaf</item>
+      <item name="div">Div</item>
+      <item name="address">Aadress</item>
+      <item name="pre">Eelformeeritud</item>
+      <item name="h1">Heading 1</item>
+      <item name="h2">Heading 2</item>
+      <item name="h3">Heading 3</item>
+      <item name="h4">Heading 4</item>
+      <item name="h5">Heading 5</item>
+      <item name="h6">Heading 6</item>
+      <item name="blockquote">Plokkviide</item>
+      <item name="code">Kood</item>
+      <item name="samp">Koodi näide</item>
+      <item name="dt">Defineeringu tingimus</item>
+      <item name="dd">Defineeringu kirjeldus</item>
+      <!-- Buttons -->
+      <item name="bold_desc">Rasvane (Ctrl+B)</item>
+      <item name="italic_desc">Kursiiv (Ctrl+I)</item>
+      <item name="underline_desc">Allajoonitud (Ctrl+U)</item>
+      <item name="striketrough_desc">Läbijoonitud</item>
+      <item name="justifyleft_desc">Vasak joondus</item>
+      <item name="justifycenter_desc">Keskjoondus</item>
+      <item name="justifyright_desc">Parem joondus</item>
+      <item name="justifyfull_desc">Täisjoondus</item>
+      <item name="bullist_desc">Ebakorrapärane loetelu</item>
+      <item name="numlist_desc">Korrapärane loetelu</item>
+      <item name="outdent_desc">Taanda välja</item>
+      <item name="indent_desc">Taanda sisse</item>
+      <item name="undo_desc">Võta tagasi (Ctrl+Z)</item>
+      <item name="redo_desc">Tee uuesti (Ctrl+Y)</item>
+      <item name="link_desc">Sisesta/redigeeri link</item>
+      <item name="unlink_desc">Eemalda link</item>
+      <item name="image_desc">Sisesta/redigeeri pilt</item>
+      <item name="cleanup_desc">Puhasta segane kood</item>
+      <item name="code_desc">Redigeeri HTML lähtekoodi</item>
+      <item name="sub_desc">Alaindeks</item>
+      <item name="sup_desc">Ülaindeks</item>
+      <item name="hr_desc">Sisesta horisontaalne joonlaud</item>
+      <item name="removeformat_desc">Eemalda vormindus</item>
+      <item name="custom1_desc">Teie kohandatud kirjeldus siia</item>
+      <item name="forecolor_desc">Vali teksti värv</item>
+      <item name="backcolor_desc">Vali tausta värv</item>
+      <item name="charmap_desc">Sisesta kohandatud kirjamärk</item>
+      <item name="visualaid_desc">Lülita ümber juhtjooned/nähtamatud elemendid</item>
+      <item name="anchor_desc">Sisesta/redigeeri ankur</item>
+      <item name="cut_desc">Lõika</item>
+      <item name="copy_desc">Kopeeri</item>
+      <item name="paste_desc">Kleebi</item>
+      <item name="image_props_desc">Pildi kirjeldus</item>
+      <item name="newdocument_desc">Uus dokument</item>
+      <item name="help_desc">Abi</item>
+      <item name="blockquote_desc">Plokkviide</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">Kopeeri/Lõika/Kleebi ei ole Mozillas ja Firefoxis saadaval. Kas soovid rohkem infot selle probleemi kohta?</item>
+      <item name="path">Tee</item>
+      <item name="newdocument">Oled sa kindel, et tahad kustutada kõik sisud?</item>
+      <item name="toolbar_focus">Hüppa tööriista nuppudele - Alt+Q, Hüppa redigeerijale - Alt-Z, Hüppa elemendi teele - Alt-X</item>
+      <item name="more_colors">Rohkem värve</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">Teave TinyMCE kohta</item>
+      <item name="about_general">Teave</item>
+      <item name="about_help">Abi</item>
+      <item name="about_license">Litsents</item>
+      <item name="about_plugins">Lisad</item>
+      <item name="about_plugin">Lisa</item>
+      <item name="about_author">Autor</item>
+      <item name="about_version">Versioon</item>
+      <item name="about_loaded">Laetud lisad</item>
+      <!-- Anchor -->
+      <item name="anchor_title">Sisesta/redigeeri ankur</item>
+      <item name="anchor_name">Ankru nimi</item>
+      <!-- Source -->
+      <item name="code_title">HTML koodi redaktor</item>
+      <item name="code_wordwrap">Sõna pakkimine</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">Vali värv</item>
+      <item name="colorpicker_picker_tab">Korjaja</item>
+      <item name="colorpicker_picker_title">Värvi korjaja</item>
+      <item name="colorpicker_palette_tab">Palett</item>
+      <item name="colorpicker_palette_title">Palett värvid</item>
+      <item name="colorpicker_named_tab">Nimetatud</item>
+      <item name="colorpicker_named_title">Nimetatud värvid</item>
+      <item name="colorpicker_color">Värv:</item>
+      <item name="colorpicker_name">Nimi:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">Vali kohandatud tähemärk</item>
+      <!-- Image -->
+      <item name="image_title">Sisestal/redigeeri pilt</item>
+      <item name="image_src">Pildi URL</item>
+      <item name="image_alt">Pildi kirjeldus</item>
+      <item name="image_list">Pildi loend</item>
+      <item name="image_border">Raam</item>
+      <item name="image_dimensions">Dimensioonid</item>
+      <item name="image_vspace">Vertikaalne vahe</item>
+      <item name="image_hspace">Horisontaalne vahe</item>
+      <item name="image_align">Reastus</item>
+      <item name="image_align_baseline">Kirjajoondus</item>
+      <item name="image_align_top">Ülemine</item>
+      <item name="image_align_middle">Keskmine</item>
+      <item name="image_align_bottom">Alumine</item>
+      <item name="image_align_texttop">Teksti tipp</item>
+      <item name="image_align_textbottom">Teksti põhi</item>
+      <item name="image_align_left">Vasak</item>
+      <item name="image_align_right">Parem</item>
+      <!-- Link -->
+      <item name="link_title">Sisesta/redigeeri link</item>
+      <item name="link_url">Link URL</item>
+      <item name="link_target">Sihtala</item>
+      <item name="link_target_same">Ava link samas aknas</item>
+      <item name="link_target_blank">Ava link uues aknas</item>
+      <item name="link_titlefield">Tiitel</item>
+      <item name="link_is_email">URL, mille te sisestasite, tundub olevat emaili aadress, kas soovite, et lisataks mailto: eesliite?</item>
+      <item name="link_is_external">URL, mille sisestasite, tundub olevat väline link, kas soovite, et lisataks http:// eesliite?</item>
+      <item name="link_list">Lingi loetelu</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">Joondus</item>
+      <item name="left">Vasak</item>
+      <item name="center">Kesk</item>
+      <item name="right">Parem</item>
+      <item name="full">Täis</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%A-%k-%p</item>
+      <item name="time_fmt">%T:%M:%S</item>
+      <item name="insertdate_desc">Sisesta kuupäev</item>
+      <item name="inserttime_desc">Sisesta aeg</item>
+      <item name="months_long">Jaanuar,Veebruar,Märts,Aprill,Mai,Juuni,Juuli,August,September,Oktoober,November,Detsember</item>
+      <item name="months_short">Jaan,Veeb,Märts,Apr,Mai,Juuni,Juuli,Aug,Sept,Okt,Nov,Dets</item>
+      <item name="day_long">Pühapäev,Esmaspäev,Teisipäev,Kolmapäev,Neljapäev,Reede,Laupäev,Pühapäev</item>
+      <item name="day_short">P,E,T,K,N,R,L,P</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">Print</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">Eelvaade</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">Suund vasakult paremale</item>
+      <item name="rtl_desc">Suund paremalt vasakule</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">Sisesta uus kiht</item>
+      <item name="forward_desc">Liiguta edasi</item>
+      <item name="backward_desc">Liiguta tagasi</item>
+      <item name="absolute_desc">Lülita ümber absoluutne positsioneerimine</item>
+      <item name="content">Uus kiht...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">Salvesta</item>
+      <item name="cancel_desc">Tühista kõik muudatused</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">Sisesta mittekatkestav tühik</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">Õigekirja kontroll</item>
+      <item name="download">ieÕigekiri tuvastamata. Kas soovite paigaldada nüüd?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">Horisontaalne joonlaud</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">Laius</item>
+      <item name="size">Kõrgus</item>
+      <item name="noshade">Ilma varjuta</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">Emotsioonid</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">Sisesta emotsioon</item>
+      <item name="desc">Emotsioonid</item>
+      <item name="cool">Lahe</item>
+      <item name="cry">Nutt</item>
+      <item name="embarassed">Häbitunne</item>
+      <item name="foot_in_mouth">Jalg suus</item>
+      <item name="frown">Kulmu kortsutamine</item>
+      <item name="innocent">Süütu</item>
+      <item name="kiss">Suudlus</item>
+      <item name="laughing">Naermine</item>
+      <item name="money_mouth">Rahasuu</item>
+      <item name="sealed">Suletud</item>
+      <item name="smile">Naeratus</item>
+      <item name="surprised">Üllatunud</item>
+      <item name="tongue_out">Keel väljas</item>
+      <item name="undecided">Kõhklev</item>
+      <item name="wink">Silmapilgutus</item>
+      <item name="yell">Karje</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">Otsi</item>
+      <item name="replace_desc">Otsi/Asenda</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">Otsi uuesti</item>
+      <item name="notfound">Otsing on lõpetatud. Otsisõna ei leitud.</item>
+      <item name="search_title">Otsi</item>
+      <item name="replace_title">Otsi/Asenda</item>
+      <item name="allreplaced">Kõik otsisõna ilmingud on asendatud.</item>
+      <item name="findwhat">Otsi mida</item>
+      <item name="replacewith">Asenda millega</item>
+      <item name="direction">Suund</item>
+      <item name="up">Üles</item>
+      <item name="down">Alla</item>
+      <item name="mcase">Vasta suurusele</item>
+      <item name="findnext">Otsi järgmine</item>
+      <item name="replace">Asenda</item>
+      <item name="replaceall">Asenda kõik</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">Sisesta/redigeeri pilt</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">Üldine</item>
+      <item name="tab_appearance">Välimus</item>
+      <item name="tab_advanced">Põhjalikum</item>
+      <item name="general">Üldine</item>
+      <item name="title">Pealkiri</item>
+      <item name="preview">Eelvaade</item>
+      <item name="constrain_proportions">Piira proportioone</item>
+      <item name="langdir">Keele suund</item>
+      <item name="langcode">Keele kood</item>
+      <item name="long_desc">Pikk kirjelduse link</item>
+      <item name="style">Stiil</item>
+      <item name="classes">Klassid</item>
+      <item name="ltr">Vasakult paremale</item>
+      <item name="rtl">Paremalt vasakule</item>
+      <item name="id">ID</item>
+      <item name="map">Pildi kaart</item>
+      <item name="swap_image">Vaheta pilti</item>
+      <item name="alt_image">Alternatiivne pilt</item>
+      <item name="mouseover">„Kursor peal“</item>
+      <item name="mouseout">„Kursor maas“</item>
+      <item name="misc">Mitmesugune</item>
+      <item name="example_img">Eelvaate pildi välimus</item>
+      <item name="missing_alt">Oled kindel, et soovid jätkata pildile kirjeldust lisamata?</item>
+      <item name="dialog_title">Sisesta/muuda pilti</item>
+      <item name="src">Pildi URL</item>
+      <item name="alt">Pildi kirjeldus</item>
+      <item name="list">Piltide nimekiri</item>
+      <item name="border">Raam</item>
+      <item name="dimensions">Mõõtmed</item>
+      <item name="vspace">Vertikaalne vahe</item>
+      <item name="hspace">Horisontaalne vahe</item>
+      <item name="align">Joondus</item>
+      <item name="align_baseline">Baas</item>
+      <item name="align_top">Üleval</item>
+      <item name="align_middle">Keskel</item>
+      <item name="align_bottom">All</item>
+      <item name="align_texttop">Tekst üleval</item>
+      <item name="align_textbottom">Tekst all</item>
+      <item name="align_left">Vasakul</item>
+      <item name="align_right">Paremal</item>
+      <item name="image_list">Piltide nimekiri</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">Sisesta/redigeeri link</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">Sisesta muuda linki</item>
+      <item name="url"> URL’i link</item>
+      <item name="target">Sihtmärk</item>
+      <item name="titlefield">Pealkiri</item>
+      <item name="is_email"> URL, mille sisestasid, tundub olevat e-posti aadress, kas soovid sellele lisada mailto: funktsiooni?</item>
+      <item name="is_external">URL, mille sisestasid, tundub olevat väline link, kas soovid sellele lisada http://?</item>
+      <item name="list">Linkide nimekiri</item>
+      <item name="general_tab">Üldine</item>
+      <item name="popup_tab">Pop-up</item>
+      <item name="events_tab">Sündmused</item>
+      <item name="advanced_tab">Põhjalikum</item>
+      <item name="general_props">Üldised seadistused</item>
+      <item name="popup_props">Pop-up’i seadistus</item>
+      <item name="event_props">Sündmused</item>
+      <item name="advanced_props">Üldised seadistused</item>
+      <item name="popup_opts">Valikud</item>
+      <item name="anchor_names">Ankrud</item>
+      <item name="target_same">Ava selles aknas/raamis</item>
+      <item name="target_parent">Ava pea-aknas/raamis</item>
+      <item name="target_top">Ava kõrgeimas raamis (asenda kõik raamid)</item>
+      <item name="target_blank">Ava uues aknas</item>
+      <item name="popup">Javascript’i pop-up</item>
+      <item name="popup_url">Pop-up’i URL</item>
+      <item name="popup_name">Akna nimi</item>
+      <item name="popup_return">Sisesta 'tagasiminek ebaõnnestus'</item>
+      <item name="popup_scrollbars">Näita kerimisribasid</item>
+      <item name="popup_statusbar">Näita staatuse riba</item>
+      <item name="popup_toolbar">Näita seadistusriba</item>
+      <item name="popup_menubar">Näita menüüriba</item>
+      <item name="popup_location">Näita asukohariba</item>
+      <item name="popup_resizable">Muuda akna suurus muudetavaks</item>
+      <item name="popup_dependent">Sõltuv (ainult Mozilla/Firefox)</item>
+      <item name="popup_size">Suurus</item>
+      <item name="popup_position">Positsioon (X/Y)</item>
+      <item name="id">ID</item>
+      <item name="style">Stiil</item>
+      <item name="classes">Klassid</item>
+      <item name="target_name">Sihtmärgi nimi</item>
+      <item name="langdir">Keele suund</item>
+      <item name="target_langcode">Sihtmärgi keel</item>
+      <item name="langcode">Keele kood</item>
+      <item name="encoding">Sihtmärgi kodeering</item>
+      <item name="mime">Märgista MIME tüüp</item>
+      <item name="rel">Seo leht sihtmärgiga</item>
+      <item name="rev">Seo sihtmärk lehega</item>
+      <item name="tabindex">Sisujuht</item>
+      <item name="accesskey">Ligipääsuklahv</item>
+      <item name="ltr">Vasakult paremale</item>
+      <item name="rtl">Paremalt vasakule</item>
+      <item name="link_list">Linkide list</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">Tsitaat</item>
+      <item name="abbr_desc">Lühend</item>
+      <item name="acronym_desc">Akronüüm</item>
+      <item name="del_desc">Kustutus</item>
+      <item name="ins_desc">Lisandus</item>
+      <item name="attribs_desc">Sisesta muuda atribuute</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">Pealkiri</item>
+      <item name="attribute_label_id">ID</item>
+      <item name="attribute_label_class">Klass</item>
+      <item name="attribute_label_style">Stiil</item>
+      <item name="attribute_label_cite">Tsitaat</item>
+      <item name="attribute_label_datetime">Kuupäev/aeg</item>
+      <item name="attribute_label_langdir">Teksti suund</item>
+      <item name="attribute_option_ltr">Vasakult paremale</item>
+      <item name="attribute_option_rtl">Paremalt vasakule</item>
+      <item name="attribute_label_langcode">Keel</item>
+      <item name="attribute_label_tabindex">Sisujuht</item>
+      <item name="attribute_label_accesskey">Ligipääsuklahv</item>
+      <item name="attribute_events_tab">Sündmused</item>
+      <item name="attribute_attrib_tab">Atribuudid</item>
+      <item name="general_tab">Üldine</item>
+      <item name="attrib_tab">Atribuudid</item>
+      <item name="events_tab">Sündmused</item>
+      <item name="fieldset_general_tab">Üldised seaded</item>
+      <item name="fieldset_attrib_tab">Elementide atribuudid</item>
+      <item name="fieldset_events_tab">Elementide sündmused</item>
+      <item name="title_ins_element">Elemendi sisestus</item>
+      <item name="title_del_element">Elemendi kustutus</item>
+      <item name="title_acronym_element">Elemendi akronüüm</item>
+      <item name="title_abbr_element">Elemendi lühend</item>
+      <item name="title_cite_element">Elemendi tsitaat</item>
+      <item name="remove">Eemalda</item>
+      <item name="insert_date">Sisesta hetke kuupäev/aeg</item>
+      <item name="option_ltr">Vasakult paremale</item>
+      <item name="option_rtl">Paremalt vasakule</item>
+      <item name="attribs_title">Sisesta/muuda atribuute</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">Redigeeri CSS stiili</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">Muuda CSS stiili</item>
+      <item name="apply">Rakenda</item>
+      <item name="text_tab">Tekst</item>
+      <item name="background_tab">Taust</item>
+      <item name="block_tab">Plokk</item>
+      <item name="box_tab">Kast</item>
+      <item name="border_tab">Raam</item>
+      <item name="list_tab">Nimekiri</item>
+      <item name="positioning_tab">Positsioneerimine</item>
+      <item name="text_props">Tekst</item>
+      <item name="text_font">Font</item>
+      <item name="text_size">Suurus</item>
+      <item name="text_weight">Raskus</item>
+      <item name="text_style">Stiil</item>
+      <item name="text_variant">Variant</item>
+      <item name="text_lineheight">Joone kõrgus</item>
+      <item name="text_case">Kast</item>
+      <item name="text_color">Värv</item>
+      <item name="text_decoration">Dekoratioon</item>
+      <item name="text_overline">ülejoon</item>
+      <item name="text_underline">alajoon</item>
+      <item name="text_striketrough">läbikriipsutus</item>
+      <item name="text_blink">vilgutus</item>
+      <item name="text_none">mitte ükski</item>
+      <item name="background_color">Tausta värv</item>
+      <item name="background_image">Tausta pilt</item>
+      <item name="background_repeat">Kordus</item>
+      <item name="background_attachment">Manus</item>
+      <item name="background_hpos">Horisontaalne asend</item>
+      <item name="background_vpos">Vertikaalne asend</item>
+      <item name="block_wordspacing">Sõnade avardamine</item>
+      <item name="block_letterspacing">Tähe avardamine</item>
+      <item name="block_vertical_alignment">Vertikaalne joondus</item>
+      <item name="block_text_align">Teksti joondus</item>
+      <item name="block_text_indent">Teksti taandus</item>
+      <item name="block_whitespace">Tühimik</item>
+      <item name="block_display">Kuva</item>
+      <item name="box_width">Laius</item>
+      <item name="box_height">Kõrgus</item>
+      <item name="box_float">Hõljuv</item>
+      <item name="box_clear">Puhas</item>
+      <item name="padding">Täidis</item>
+      <item name="same">Sama kõigile</item>
+      <item name="top">Üleval</item>
+      <item name="right">Paremal</item>
+      <item name="bottom">All</item>
+      <item name="left">Vasakul</item>
+      <item name="margin">Serv</item>
+      <item name="style">Stiil</item>
+      <item name="width">Laius</item>
+      <item name="height">Kõrgus</item>
+      <item name="color">Värv</item>
+      <item name="list_type">Tüüp</item>
+      <item name="bullet_image">Punkt pilt</item>
+      <item name="position">Positsioon</item>
+      <item name="positioning_type">Tüüp</item>
+      <item name="visibility">Nähtavus</item>
+      <item name="zindex">Z-viit</item>
+      <item name="overflow">Ülevool</item>
+      <item name="placement">Asetus</item>
+      <item name="clip">Klipp</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">Kleebi tavalise tekstina</item>
+      <item name="paste_word_desc">Kleebi Wordist</item>
+      <item name="selectall_desc">Vali kõik</item>
+      <!--<item name="plaintext_mode_sticky">Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode.</item>-->
+      <!--<item name="plaintext_mode">Paste is now in plain text mode. Click again to toggle back to regular paste mode.</item>-->
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">Vajuta CTRL+V oma klaviatuuril teksti aknasse kleepimiseks.</item>
+      <item name="text_linebreaks">Jäta reavahetused</item>
+      <item name="word_title">Vajuta CTRL+V oma klaviatuuril teksti aknasse kleepimiseks.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">Sisestab uue tabeli</item>
+      <item name="row_before_desc">Sisesta rida ette</item>
+      <item name="row_after_desc">Sisesta rida järgi</item>
+      <item name="delete_row_desc">Kustuta rida</item>
+      <item name="col_before_desc">Sisesta veerg ette</item>
+      <item name="col_after_desc">Sisesta veerg järgi</item>
+      <item name="delete_col_desc">Kustuta veerg</item>
+      <item name="split_cells_desc">Eralda ühendatud tabeli lahtrid</item>
+      <item name="merge_cells_desc">Ühenda tabeli lahtrid</item>
+      <item name="row_desc">Tabeli rea omadused</item>
+      <item name="cell_desc">Tabeli lahtri omadused</item>
+      <item name="props_desc">Tabeli omadused</item>
+      <item name="paste_row_before_desc">Kleebi tabeli rida ette</item>
+      <item name="paste_row_after_desc">Kleebi tabeli rida järgi</item>
+      <item name="cut_row_desc">Lõika tabeli rida</item>
+      <item name="copy_row_desc">Kopeeri tabeli rida</item>
+      <item name="del">Kustuta tabel</item>
+      <item name="row">Rida</item>
+      <item name="col">Veerg</item>
+      <item name="cell">Lahter</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width"></item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">Üldine</item>
+      <item name="advanced_tab">Täpsustatud</item>
+      <item name="general_props">Üldised seaded</item>
+      <item name="advanced_props">Täpsustatud seaded</item>
+      <item name="rowtype">Rida rea osas</item>
+      <item name="title">Sisesta/muuda tabelit</item>
+      <item name="width">Laius</item>
+      <item name="height">Kõrgus</item>
+      <item name="cols">Veerge</item>
+      <item name="rows">Ridu</item>
+      <item name="cellspacing">Veeru laius</item>
+      <item name="cellpadding">Veeru täide</item>
+      <item name="border">Raam</item>
+      <item name="align">Joondus</item>
+      <item name="align_default">Vaikimisi</item>
+      <item name="align_left">Vasak</item>
+      <item name="align_right">Parem</item>
+      <item name="align_middle">Keskel</item>
+      <item name="row_title">Tabeli rea seaded</item>
+      <item name="cell_title">Tabeli veeru seaded</item>
+      <item name="cell_type">Veeru tüüp</item>
+      <item name="valign">Vertikaalne joondus</item>
+      <item name="align_top">Üleval</item>
+      <item name="align_bottom">All</item>
+      <item name="bordercolor">Raami värv</item>
+      <item name="bgcolor">Tausta värv</item>
+      <item name="merge_cells_title">Ühenda lahtrid</item>
+      <item name="id">ID</item>
+      <item name="style">Stiil</item>
+      <item name="langdir">Keele suund</item>
+      <item name="langcode">Keele kood</item>
+      <item name="mime">Märgista MIME tüüp</item>
+      <item name="ltr">Vasakult paremale</item>
+      <item name="rtl">Paremalt vasakule</item>
+      <item name="bgimage">Tausta pilt</item>
+      <item name="summary">Kokkuvõte</item>
+      <item name="td">Info</item>
+      <item name="th">Päis</item>
+      <item name="cell_cell">Uuenda antud lahtrit</item>
+      <item name="cell_row">Uuenda kõiki lahtreid reas</item>
+      <item name="cell_all">Uuenda kõiki lahtreid tabelis</item>
+      <item name="row_row">Uuenda antud rida</item>
+      <item name="row_odd">Uuenda paarituid ridu tabelis</item>
+      <item name="row_even">Uuenda paaris ridu tabelis</item>
+      <item name="row_all">Uuenda kõiki ridu tabelis</item>
+      <item name="thead">Tabeli päis</item>
+      <item name="tbody">Tabeli sisu</item>
+      <item name="tfoot">Tabeli jalus</item>
+      <item name="scope">Ulatus</item>
+      <item name="rowgroup">Rea grupp</item>
+      <item name="colgroup">Veeru grupp</item>
+      <item name="col_limit">Oled jõudnud maksemaalse arvu veegudeni.</item>
+      <item name="row_limit">Oled jõudnud maksimaalse arvu ridadeni</item>
+      <item name="cell_limit">Oled jõudnud maksimaalse arvu elementideni</item>
+      <item name="missing_scope">Oled kindel, et soovid jätkata täpsustamata antud tabeli päise nime?</item>
+      <item name="caption">Tabeli seletus</item>
+      <item name="frame">Raam</item>
+      <item name="frame_none">mitte ükski</item>
+      <item name="frame_groups">grupid</item>
+      <item name="frame_rows">read</item>
+      <item name="frame_cols">veerud</item>
+      <item name="frame_all">kõik</item>
+      <item name="rules">Reeglid</item>
+      <item name="rules_void">tühi</item>
+      <item name="rules_above">üleval</item>
+      <item name="rules_below">all</item>
+      <item name="rules_hsides">hsides</item>
+      <item name="rules_lhs">lhs</item>
+      <item name="rules_rhs">rhs</item>
+      <item name="rules_vsides">vsides</item>
+      <item name="rules_box">kast</item>
+      <item name="rules_border">raam</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">Tehtud muudatused kaovad, kui lahkute siit lehelt.</item>
+      <!--<item name="restore_content">Restore auto-saved content.</item>-->
+      <!--<item name="warning_message">If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?.</item>-->
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">Lülita ümber täisekraani režiim</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">Sisesta / redigeeri manustatud meedia</item>
+      <item name="edit">Redigeeri manustatud meedia</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">Sisesta/muuda meediat</item>
+      <item name="general">Üldine</item>
+      <item name="advanced">Täpsem</item>
+      <item name="file">Fail/URL</item>
+      <item name="list">Nimekiri</item>
+      <item name="size">Mõõdud</item>
+      <item name="preview">Eelvaade</item>
+      <item name="constrain_proportions">Säilita proportsioon</item>
+      <item name="type">Tüüp</item>
+      <item name="id">ID</item>
+      <item name="name">Nime</item>
+      <item name="class_name">Klass</item>
+      <item name="vspace">V-vahe</item>
+      <item name="hspace">H-vahe</item>
+      <item name="play">Auto-start</item>
+      <item name="loop">Auto-kordus</item>
+      <item name="menu">Näita menüüd</item>
+      <item name="quality">Kvaliteet</item>
+      <item name="scale">Mõõtkava</item>
+      <item name="align">Joondus</item>
+      <item name="salign">SJoondus</item>
+      <item name="wmode">WMoodus</item>
+      <item name="bgcolor">Taust</item>
+      <item name="base">Baas</item>
+      <item name="flashvars">Flashivärk</item>
+      <item name="liveconnect">SWLive-Ühendus</item>
+      <item name="autohref">Auto-HREF</item>
+      <item name="cache">Vahemälu</item>
+      <item name="hidden">Peidetud</item>
+      <item name="controller">Kontrollija</item>
+      <item name="kioskmode">Kioski reziim</item>
+      <item name="playeveryframe">Mängi igat raami</item>
+      <item name="targetcache">Sihtmärgi vahemälu</item>
+      <item name="correction">Parandust ei ole</item>
+      <item name="enablejavascript">Luba JavaScript’i</item>
+      <item name="starttime">Stardi aeg</item>
+      <item name="endtime">Lõpu aeg</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">Kiirus</item>
+      <item name="target">Sihtmärk</item>
+      <item name="volume">Valjudus</item>
+      <item name="autostart">Auto-start</item>
+      <item name="enabled">Lubatud</item>
+      <item name="fullscreen">Täisekraan</item>
+      <item name="invokeurls">Näita URL’e</item>
+      <item name="mute">Vaigista</item>
+      <item name="stretchtofit">Venita sobivaks</item>
+      <item name="windowlessvideo">Aknata video</item>
+      <item name="balance">Tasakaal</item>
+      <item name="baseurl">Baas URL</item>
+      <item name="captioningid">Tiitri ID</item>
+      <item name="currentmarker">Antud marker</item>
+      <item name="currentposition">Antud positioon</item>
+      <item name="defaultframe">Vaikimisi raam</item>
+      <item name="playcount">Mängukorrad</item>
+      <item name="rate">Hinda</item>
+      <item name="uimode">UI Reziim</item>
+      <item name="flash_options">Flash’i seaded</item>
+      <item name="qt_options">Quicktime’ seaded</item>
+      <item name="wmp_options">Windows media player’i seaded</item>
+      <item name="rmp_options">Real media player’i seaded</item>
+      <item name="shockwave_options">Shockwave’i seaded</item>
+      <item name="autogotourl">Auto-URL</item>
+      <item name="center">Keskel</item>
+      <item name="imagestatus">Pildi staatus</item>
+      <item name="maintainaspect">Säilitamise aspekt</item>
+      <item name="nojava">Ilma java’ta</item>
+      <item name="prefetch">Prefetch</item>
+      <item name="shuffle">Sega</item>
+      <item name="console">Konsool</item>
+      <item name="numloop">Kordused</item>
+      <item name="controls">Kontrollid</item>
+      <item name="scriptcallbacks">Skripti tagasikutse</item>
+      <item name="swstretchstyle">Venita stiili</item>
+      <item name="swstretchhalign">Venita H-joondust</item>
+      <item name="swstretchvalign">Venita V-joondust</item>
+      <item name="sound">Heli</item>
+      <item name="progress">Progress</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn">Striimitav variant peaks olema lisatud.</item>
+      <item name="align_top">Üleval</item>
+      <item name="align_right">Paremal</item>
+      <item name="align_bottom">All</item>
+      <item name="align_left">Vasakul</item>
+      <item name="align_center">Keskel</item>
+      <item name="align_top_left">Üleval vasakul</item>
+      <item name="align_top_right">Pleval paremal</item>
+      <item name="align_bottom_left">All vasakul</item>
+      <item name="align_bottom_right">All paremal</item>
+      <item name="flv_options">Flash video seaded</item>
+      <item name="flv_scalemode">Skaala reziim</item>
+      <item name="flv_buffer">Puffer</item>
+      <item name="flv_startimage">Stardi pilt</item>
+      <item name="flv_starttime">Stardi aeg</item>
+      <item name="flv_defaultvolume">Vaikimisi helitugevus</item>
+      <item name="flv_hiddengui">Peidetud GUI</item>
+      <item name="flv_autostart">Auto-start</item>
+      <item name="flv_loop">Auto.kordus</item>
+      <item name="flv_showscalemodes">Show scale modes</item>
+      <item name="flv_smoothvideo">Sujuv video</item>
+      <item name="flv_jscallback">JS tagasikutse</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">Dokumendi omadused</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Dokumendi omadused</item>
+      <item name="meta_tab">Üldine</item>
+      <item name="appearance_tab">Välimus</item>
+      <item name="advanced_tab">Põhjalikum</item>
+      <item name="meta_props">„Meta“ informatioon</item>
+      <item name="langprops">Keel ja kodeering</item>
+      <item name="meta_title">Pealkiri</item>
+      <item name="meta_keywords">Märksõnad</item>
+      <item name="meta_description">Kirjeldus</item>
+      <item name="meta_robots">Robotid</item>
+      <item name="doctypes">Dokumendi tüüp</item>
+      <item name="langcode">Keele kood</item>
+      <item name="langdir">Keele suund</item>
+      <item name="ltr">Vasakult paremale</item>
+      <item name="rtl">Paremalt vasakule</item>
+      <item name="xml_pi">XML avaldus</item>
+      <item name="encoding">Karakteri kodeering</item>
+      <item name="appearance_bgprops">Tausta seadistus</item>
+      <item name="appearance_marginprops">Sisu piir</item>
+      <item name="appearance_linkprops">Lingi värv</item>
+      <item name="appearance_textprops">Teksti seaded</item>
+      <item name="bgcolor">Tausta värv</item>
+      <item name="bgimage">Tausta pilt</item>
+      <item name="left_margin">Vasak piir</item>
+      <item name="right_margin">Parem piir</item>
+      <item name="top_margin">Ülemine piir</item>
+      <item name="bottom_margin">Alumine piir</item>
+      <item name="text_color">Teksti värv</item>
+      <item name="font_size">Fondi suurus</item>
+      <item name="font_face">Fondi nägu</item>
+      <item name="link_color">Lingi värv</item>
+      <item name="hover_color">Üle-värv</item>
+      <item name="visited_color">Külastatud-värv</item>
+      <item name="active_color">Aktiivne-värv</item>
+      <item name="textcolor">Vörv</item>
+      <item name="fontsize">Fondi suurus</item>
+      <item name="fontface">Font</item>
+      <item name="meta_index_follow">Märgi ja järgi linki</item>
+      <item name="meta_index_nofollow">Märgi ja ära järgi linki</item>
+      <item name="meta_noindex_follow">Ära märgi linki, aga järgi linki</item>
+      <item name="meta_noindex_nofollow">Ära märgi linki ja ära järgi linki</item>
+      <item name="appearance_style">Stiilileht ja stiili seaded</item>
+      <item name="stylesheet">Stiilileht</item>
+      <item name="style">Stiil</item>
+      <item name="author">Autor</item>
+      <item name="copyright">Autorikaitse</item>
+      <item name="add">Lisa uus element</item>
+      <item name="remove">Eemalda valitud element</item>
+      <item name="moveup">Liiguta valitud element ülesse</item>
+      <item name="movedown">Liiguta valitud element alla</item>
+      <item name="head_elements">Põhielemendid</item>
+      <item name="info">Informatioon</item>
+      <item name="add_title">Pealkirja element</item>
+      <item name="add_meta">„Meta“ element</item>
+      <item name="add_script">Skript’i element</item>
+      <item name="add_style">Stiili element</item>
+      <item name="add_link">Lingi element</item>
+      <item name="add_base">Baaselement</item>
+      <item name="add_comment">Kommentaar</item>
+      <item name="title_element">Pealkirja element</item>
+      <item name="script_element">Skript’i element</item>
+      <item name="style_element">Stiili element</item>
+      <item name="base_element">Baaselement</item>
+      <item name="link_element">Lingi element</item>
+      <item name="meta_element">„Meta“ element</item>
+      <item name="comment_element">kommentaar</item>
+      <item name="src">Src</item>
+      <item name="language">Keel</item>
+      <item name="href">Href</item>
+      <item name="target">Sihtmärk</item>
+      <item name="type">Tüüp</item>
+      <item name="charset">Charset</item>
+      <item name="defer">Edasi lükkamine</item>
+      <item name="media">Meedia</item>
+      <item name="properties">Seaded</item>
+      <item name="name">Nimi</item>
+      <item name="value">Väärtus</item>
+      <item name="content">Sisu</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href lang</item>
+      <item name="general_props">Üldine</item>
+      <item name="advanced_props">Täpsustatud</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Sisesta eeldefineeritud šablooni sisu</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">Šabloonid</item>
+      <item name="label">Šabloon</item>
+      <item name="desc_label">Kirjeldus</item>
+      <item name="desc">Sisesta eeldefineeritud šablooni sisu</item>
+      <item name="select">Vali šabloon</item>
+      <item name="preview">Eelvaade</item>
+      <item name="warning">Hoiatus: Šablooni uuendamine teistsugusega võib kaasa tuua andmete kaotsiminemist.</item>
+      <item name="mdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="cdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="months_long">Jaanuar,Veebruar,Märts,Aprill,Mai,Juuni,Juuli,August,September,Oktoober,November,Detsember</item>
+      <item name="months_short">Jaan,Veeb,Märts,Apr,Mai,Juuni,Juuli,Aug,Sep,Okt,Nov,Dets</item>
+      <item name="day_long">Pühapäev,Esmaspäev,Teisipäev,Kolmapäev,Neljapäev,reede,Laupäev,Pühapäev</item>
+      <item name="day_short">P,E,T,K,N,R,L,P</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Visuaalsed kontrolltähemärgid sisse/välja</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">Lülita ümber õigekirja kontroll</item>
+      <item name="menu">Õigekirja kontrolli seaded</item>
+      <item name="ignore_word">Jäta sõna vahele</item>
+      <item name="ignore_words">Jära kõik vahele</item>
+      <item name="langs">Keeled</item>
+      <item name="wait">Palun oota...</item>
+      <item name="sug">Soovitused</item>
+      <item name="no_sug">Soovitusi pole</item>
+      <item name="no_mpell">Valesti kirjutamisi ei leitud.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">Sisesta lehevahetus.</item>
+    </group>
+    <group target="advlist">
+      <!--<item name="types">Types</item>-->
+      <!--<item name="def">Default</item>-->
+      <!--<item name="lower_alpha">Lower alpha</item>-->
+      <!--<item name="lower_greek">Lower greek</item>-->
+      <!--<item name="lower_roman">Lower roman</item>-->
+      <!--<item name="upper_alpha">Upper alpha</item>-->
+      <!--<item name="upper_roman">Upper roman</item>-->
+      <!--<item name="circle">Circle</item>-->
+      <!--<item name="disc">Disc</item>-->
+      <!--<item name="square">Square</item>-->
+    </group>
+  </language>
+</language-pack>

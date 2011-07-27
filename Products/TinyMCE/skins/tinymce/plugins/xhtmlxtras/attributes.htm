@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" i18n:domain="tinymce">
+<head>
+	<title i18n:translate="xhtmlxtras_dlg_attribs_title"></title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+	<script type="text/javascript" src="../../utils/mctabs.js"></script>
+	<script type="text/javascript" src="../../utils/editable_selects.js"></script>
+	<script type="text/javascript" src="../../utils/form_utils.js"></script>
+	<script type="text/javascript" src="js/attributes.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/attributes.css" />
+</head>
+<body role="application" aria-labelledby="app_title">
+<span style="display:none;" id="app_title" i18n:translate="xhtmlxtras_dlg_attribs_title"></span>
+	<div class="dialog-wrapper" id="content">
+		<form onsubmit="insertAction();return false;" action="#">
+			<fieldset role="presentation">
+				<legend i18n:translate="xhtmlxtras_dlg_attribute_attrib_tab"></legend>
+				<div class="field">
+					<label for="dir" i18n:translate="xhtmlxtras_dlg_attribute_label_langdir"></label>
+					<div class="widget">
+						<select id="dir" name="dir">
+							<option value="" i18n:translate="common_not_set"></option>
+							<option value="ltr" i18n:translate="xhtmlxtras_dlg_option_ltr"></option>
+							<option value="rtl" i18n:translate="xhtmlxtras_dlg_option_rtl"></option>
+						</select>
+					</div>
+				</div>
+				<div class="field">
+					<label for="lang" i18n:translate="xhtmlxtras_dlg_attribute_label_langcode"></label>
+					<div class="widget">
+						<input id="lang" name="lang" type="text" value="" size="30"/>
+					</div>
+				</div>
+			</fieldset>
+
+			<div class="visualClear"><!-- --></div>
+
+			<div class="mceActionPanel">
+                <input type="submit" id="insert" class="context" name="insert" i18n:attributes="value common_update" />
+                <input type="button" id="cancel" class="context" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
+			</div>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,925 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>Orkhan Guliyev (OUR Technology, LLC.) | office@ourtechnology.net</author>
+    <version major="1" minor="0" releasedate="2009-04-02" />
+    <description>TinyMCE üçün Azərbaycanca dil paketi.</description>
+  </header>
+  <language code="az" title="Azerbaijani" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">Siz hazırki mətn sahəsi üçün WYSIWYG rejimi istifadə etmək istəyirsiniz?</item>
+      <item name="apply">Tətbiq et</item>
+      <item name="insert">Əlavə et</item>
+      <item name="update">Yenilə</item>
+      <item name="cancel">Ləğv et</item>
+      <item name="close">Bağla</item>
+      <item name="browse">Gözdən keçir</item>
+      <item name="class_name">Sinif</item>
+      <item name="not_set">-- Müəyyən edilməyib --</item>
+      <item name="clipboard_msg">Kopyalama/Əlavə et Mozilla və Firefox-da işləmir.\nNə baş verdiyi haqda daha ətraflı öyrənmək istəyirsiniz?</item>
+      <item name="clipboard_no_support">Hal-hazırda bələdçiniz tərəfindən dəstəklənmir. Klaviatura qısaldmasından istifadə edin.</item>
+      <item name="popup_blocked">Bağışlayın, lakin sizin üzə çıxan pəncərələriniz funksiya pəncərəsinin qarşısını aldı. Gərək üzə çıxan pəncərələrin bloklama nizamlamasını ləğv edəsiniz ki, alətdən tam istifadə edə biləsiniz.</item>
+      <item name="invalid_data">Xəta: Qırmızı ilə qeyd edilmişlər səhv daxil edilib.</item>
+      <item name="more_colors">Daha çox rəng</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">Yarıqalın (Ctrl+B)</item>
+      <item name="italic_desc">Kursiv (Ctrl+I)</item>
+      <item name="underline_desc">Altdan xətt (Ctrl+U)</item>
+      <item name="striketrough_desc">Qaralanmış</item>
+      <item name="bullist_desc">Qeyd edilmiş siyahı</item>
+      <item name="numlist_desc">Nömrələnmiş siyahı</item>
+      <item name="undo_desc">Ləğv et (Ctrl+Z)</item>
+      <item name="redo_desc">Təkrarla (Ctrl+Y)</item>
+      <item name="cleanup_desc">Əyri kodu təmizlə</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">Stillər</item>
+      <item name="font_size">Şrift ölçüşü</item>
+      <item name="fontdefault">Şrift</item>
+      <item name="block">Format</item>
+      <item name="paragraph">Abzas</item>
+      <item name="div">Bölmə</item>
+      <item name="address">Ünvan</item>
+      <item name="pre">Formatlanmış mətn</item>
+      <item name="h1">Başlıq 1</item>
+      <item name="h2">Başlıq 2</item>
+      <item name="h3">Başlıq 3</item>
+      <item name="h4">Başlıq 4</item>
+      <item name="h5">Başlıq 5</item>
+      <item name="h6">Başlıq 6</item>
+      <item name="blockquote">Sitat bloku</item>
+      <item name="code">Kod</item>
+      <item name="samp">Kod nümunəsi</item>
+      <item name="dt">Müəyyən edilən termin</item>
+      <item name="dd">Terminin müəyyən edilməsi</item>
+      <!-- Buttons -->
+      <item name="bold_desc">Yarıqalın (Ctrl+B)</item>
+      <item name="italic_desc">Kursiv (Ctrl+I)</item>
+      <item name="underline_desc">Altdan xətt (Ctrl+U)</item>
+      <item name="striketrough_desc">Qaralanmış</item>
+      <item name="justifyleft_desc">Soldan düzləndir</item>
+      <item name="justifycenter_desc">Mərkəzə düzləndir</item>
+      <item name="justifyright_desc">Sağdan düzləndir</item>
+      <item name="justifyfull_desc">Eninə düzləndir</item>
+      <item name="bullist_desc">Qeyd edilmiş siyahı</item>
+      <item name="numlist_desc">Nömrələnmiş siyahı</item>
+      <item name="outdent_desc">Boş yeri kiçilt</item>
+      <item name="indent_desc">Boş yeri böyüt</item>
+      <item name="undo_desc">Ləğv et (Ctrl+Z)</item>
+      <item name="redo_desc">Təkrarla (Ctrl+Y)</item>
+      <item name="link_desc">Əlavə et/keçidi redaktə et</item>
+      <item name="unlink_desc">Keçidi sil</item>
+      <item name="image_desc">Əlavə et/şəkili redaktə et</item>
+      <item name="cleanup_desc">Əyri kodu təmizlə</item>
+      <item name="code_desc">HTML-mənbəni redaktə et</item>
+      <item name="sub_desc">Aşağı indeks</item>
+      <item name="sup_desc">Yuxarı indeks</item>
+      <item name="hr_desc">Üfüqi xətt əlavə et</item>
+      <item name="removeformat_desc">Formatlamanı ləğv et</item>
+      <item name="custom1_desc">Öz təsvirinizi daxil edin</item>
+      <item name="forecolor_desc">Mətnin rəngini seç</item>
+      <item name="backcolor_desc">Fonun rəngini seç</item>
+      <item name="charmap_desc">Xüsusi simvol əlavə et</item>
+      <item name="visualaid_desc">Göndərilən/görünməz elementləri yandır/söndür</item>
+      <item name="anchor_desc">Lövbər əlavə/redaktə et</item>
+      <item name="cut_desc">Kəs</item>
+      <item name="copy_desc">Kopyala</item>
+      <item name="paste_desc">Əlavə et</item>
+      <item name="image_props_desc">Şəkil xüsusiyyəti</item>
+      <item name="newdocument_desc">Yeni sənəd</item>
+      <item name="help_desc">Kömək</item>
+      <item name="blockquote_desc">Sitat bloku</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">Kopyalama/Əlavə et Mozilla və Firefox-da işləmir.
+Nə baş verdiyi haqda daha ətraflı öyrənmək istəyirsiniz?</item>
+      <item name="path">Yol</item>
+      <item name="newdocument">İçindəkiləri tam təmizləməkdə əminsiniz?</item>
+      <item name="toolbar_focus">Alt+Q - alət düymələrinə keç, Alt-Z - redaktoruna keç, Alt-X - elementlər yoluna keç</item>
+      <item name="more_colors">Daha çox rəng</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width">65</item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">TinyMCE haqda</item>
+      <item name="about_general">Proqram haqqında</item>
+      <item name="about_help">Kömək</item>
+      <item name="about_license">Lisenziya</item>
+      <item name="about_plugins">Plaginlər</item>
+      <item name="about_plugin">Plaginlər</item>
+      <item name="about_author">Müəllif</item>
+      <item name="about_version">Versiya</item>
+      <item name="about_loaded">Yüklənilən plaginlər</item>
+      <!-- Anchor -->
+      <item name="anchor_title">Löbvər əlavə/redaktə et</item>
+      <item name="anchor_name">Lövbər adı</item>
+      <!-- Source -->
+      <item name="code_title">HTML-mənbə redaktoru</item>
+      <item name="code_wordwrap">Sözlərin sətrə keçidi</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">Rəngi seç</item>
+      <item name="colorpicker_picker_tab">Seçim</item>
+      <item name="colorpicker_picker_title">Rəng seçimi</item>
+      <item name="colorpicker_palette_tab">Palitra</item>
+      <item name="colorpicker_palette_title">Palitra rəngləri</item>
+      <item name="colorpicker_named_tab">Adlandırılmış</item>
+      <item name="colorpicker_named_title">Adlandırılmış rənglər</item>
+      <item name="colorpicker_color">Rəng:</item>
+      <item name="colorpicker_name">Adı:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">Xüsusi simvol seçin</item>
+      <!-- Image -->
+      <item name="image_title">Şəkli əlavə/redaktə et</item>
+      <item name="image_src">Şəklin ünvanı</item>
+      <item name="image_alt">Şəklin təsviri</item>
+      <item name="image_list">Şəkil siyahısı</item>
+      <item name="image_border">Sərhəd</item>
+      <item name="image_dimensions">Ölçülər</item>
+      <item name="image_vspace">Şaquli fəza</item>
+      <item name="image_hspace">Üfüqi fəza</item>
+      <item name="image_align">Tarazlaşdır</item>
+      <item name="image_align_baseline">Bazis liniyası üzrə</item>
+      <item name="image_align_top">Yuxarı ilə</item>
+      <item name="image_align_middle">Mərkəz ilə</item>
+      <item name="image_align_bottom">Aşağı ilə</item>
+      <item name="image_align_texttop">Mətn yuxarısı ilə</item>
+      <item name="image_align_textbottom">Mətn aşağısı üzrə</item>
+      <item name="image_align_left">Sola</item>
+      <item name="image_align_right">Sağa</item>
+      <!-- Link -->
+      <item name="link_title">Keçidi əlavə/redaktə et</item>
+      <item name="link_url">Keçid ünvanı</item>
+      <item name="link_target">Hədəf</item>
+      <item name="link_target_same">Keçidi həmin pəncərədə aç</item>
+      <item name="link_target_blank">Keçidi yeni pəncərədə aç</item>
+      <item name="link_titlefield">Adı</item>
+      <item name="link_is_email">Daxil edilən ünvan e-poçta bənzəyir. mailto: prefiksini əlavə etmək istəyirsiniz?</item>
+      <item name="link_is_external">Daxil edilən ünvan xarici keçidə bənzəyir. http:// prefiksini əlavə etmək istəyirsiniz?</item>
+      <item name="link_list">Keçidlər siyahısı</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">Tarazlaşdır</item>
+      <item name="left">Sola</item>
+      <item name="center">Mərkəz ilə</item>
+      <item name="right">Sağa</item>
+      <item name="full">Tam</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%d-%m-%Y</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">Tarix əlavə et</item>
+      <item name="inserttime_desc">Vaxt əlavə et</item>
+      <item name="months_long">Yanvar,Fevral,Mart,Aprel,May,İyun,İyul,Avqust,Sentyabr,Oktyabr,Noyabr,Dekabr</item>
+      <item name="months_short">Yan,Fev,Mar,Apr,May,İyu,İyl,Avq,Sen,Okt,Noy,Dek</item>
+      <item name="day_long">Bazar,Bazar ertəsi,Çərşənbə axşamı,Çərşənbə,Cümə axşamı,Cümə,Şənbə,Bazar</item>
+      <item name="day_short">B,Be,Ça,Ç,Ca,C,Ş,B</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">Çap et</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">İlkin baxış</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">İstiqamət soldan-sağa</item>
+      <item name="rtl_desc">İstiqamət sağdan-sola</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">Yeni qat əlavə et</item>
+      <item name="forward_desc">İrəli köçür</item>
+      <item name="backward_desc">Geri köçür</item>
+      <item name="absolute_desc">Mütləq mövqeni yandır/söndür</item>
+      <item name="content">Yeni qat...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">Yadda saxla</item>
+      <item name="cancel_desc">Bütün dəyişiklikləri ləğv et</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">Qırılmaz boşluq əlavə et</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">Orfoqrafiyanı yoxla</item>
+      <item name="download">ieSpell aşkar edilməyib. Yüklənilsin?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">Üfüqi xətt</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">Eni</item>
+      <item name="size">Hündürlüyü</item>
+      <item name="noshade">Kölgə yoxdur</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">Smayllar</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">Smayl əlavə et</item>
+      <item name="desc">Smayllar</item>
+      <item name="cool">Bomba</item>
+      <item name="cry">Ağlayır</item>
+      <item name="embarassed">Mat qalmış</item>
+      <item name="foot_in_mouth">Ayaqlar_mənim_ağzıma!</item>
+      <item name="frown">Qaşqabaqlı</item>
+      <item name="innocent">Günahsız</item>
+      <item name="kiss">Öpüş</item>
+      <item name="laughing">Gülür</item>
+      <item name="money_mouth">Çoxlu pul</item>
+      <item name="sealed">Möhürlənib</item>
+      <item name="smile">Gülümsəyir</item>
+      <item name="surprised">Təəcüblənib</item>
+      <item name="tongue_out">Dil göstərir</item>
+      <item name="undecided">Qərarsızlıqda</item>
+      <item name="wink">Göz vurur</item>
+      <item name="yell">Bağırır</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">Axtar</item>
+      <item name="replace_desc">Axtar/Dəyiş</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">Sözləri axtar</item>
+      <item name="notfound">Axtarış bitdi. Sətr tapılmadı.</item>
+      <item name="search_title">Axtar</item>
+      <item name="replace_title">Axtar/Dəyiş</item>
+      <item name="allreplaced">Bütün qarşılaşmış sətrlər dəyişdirildi.</item>
+      <item name="findwhat">Nə axtarılsın</item>
+      <item name="replacewith">Nəyə dəyişilsin</item>
+      <item name="direction">İstiqamətləndirmə</item>
+      <item name="up">Yuxarı</item>
+      <item name="down">Aşağı</item>
+      <item name="mcase">Registrı nəzərə al</item>
+      <item name="findnext">Sonrakını axtar</item>
+      <item name="replace">Dəyiş</item>
+      <item name="replaceall">Hamısını dəyiş</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">Şəkli əlavə/redaktə et</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">Ümumi</item>
+      <item name="tab_appearance">Görünüş</item>
+      <item name="tab_advanced">Əlavə</item>
+      <item name="general">Ümumi</item>
+      <item name="title">Adı</item>
+      <item name="preview">İlkin baxış</item>
+      <item name="constrain_proportions">Proporsiyaları saxla</item>
+      <item name="langdir">Dilin istiqamətləndirilməsi</item>
+      <item name="langcode">Dil kodu</item>
+      <item name="long_desc">Ətraflı təsvirə keçid</item>
+      <item name="style">Stil</item>
+      <item name="classes">Siniflər</item>
+      <item name="ltr">Solda-sağa</item>
+      <item name="rtl">Sağda-sola</item>
+      <item name="id">İdentifikator</item>
+      <item name="map">Xəritə-şəkil</item>
+      <item name="swap_image">Şəkli dəyiş</item>
+      <item name="alt_image">Alternativ şəkil</item>
+      <item name="mouseover">siçanı gətirdikdə</item>
+      <item name="mouseout">siçanı uzaqlaşdırdıqda</item>
+      <item name="misc">Müxtəlif</item>
+      <item name="example_img">Xarici görünüşə ilkin baxış</item>
+      <item name="missing_alt">Əminsiniz ki, şəklə təsvir yazmadan davam etmək istəyirsiniz? Təsvirsiz şəkil iş qabiliyyəti aşağı olan və ya şəklin söndürülmüş funksiyası ilə mətn bələdçisindən istifadə edən istifadəçilərə əlçatmaz ola bilər.</item>
+      <item name="dialog_title">Şəkil əlavə/redaktə et</item>
+      <item name="src">Şəkil ünvanı</item>
+      <item name="alt">Şəkil təsviri</item>
+      <item name="list">Şəkil siyahısı</item>
+      <item name="border">Sərhəd</item>
+      <item name="dimensions">Ölçülər</item>
+      <item name="vspace">Şaquli fəza</item>
+      <item name="hspace">Üfüqi fəza</item>
+      <item name="align">Tarazlaşdırma</item>
+      <item name="align_baseline">Binövrə ilə</item>
+      <item name="align_top">Yuxarı ilə</item>
+      <item name="align_middle">Mərkəz ilə</item>
+      <item name="align_bottom">Aşağı ilə</item>
+      <item name="align_texttop">Mətn yuxarı ilə</item>
+      <item name="align_textbottom">Mətn aşağısı ilə</item>
+      <item name="align_left">Sola</item>
+      <item name="align_right">Sağa</item>
+      <item name="image_list">Şəkil siyahısı</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">Keçidi əlavə/redaktə et</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">Keçidi əlavə/redaktə et</item>
+      <item name="url">Keçid ünvanı</item>
+      <item name="target">Hədəf</item>
+      <item name="titlefield">Adı</item>
+      <item name="is_email">Daxil edilən ünvan e-poçta bənzəyir. mailto: prefiksini əlavə etmək istəyirsiniz?</item>
+      <item name="is_external">Daxil edilən ünvan xarici keçidə bənzəyir. http:// prefiksini əlavə etmək istəyirsiniz?</item>
+      <item name="list">Keçid siyahısı</item>
+      <item name="general_tab">Ümumi</item>
+      <item name="popup_tab">Üzə çıxan pəncərə</item>
+      <item name="events_tab">Hadisələr</item>
+      <item name="advanced_tab">Əlavələr</item>
+      <item name="general_props">Ümumi xüsusiyyətləri</item>
+      <item name="popup_props">Üzə çıxan pəncərələrin xüsusiyyətləti</item>
+      <item name="event_props">Hadisələr</item>
+      <item name="advanced_props">Əlavə xüsusiyyətlər</item>
+      <item name="popup_opts">Parametrlər</item>
+      <item name="anchor_names">Lövbər</item>
+      <item name="target_same">Bu pəncərədə aç / çərçivə</item>
+      <item name="target_parent">Ana pəncərədə aç / çərçivə</item>
+      <item name="target_top">Yuxarı çərçivədə aç (digərlərini də doldurur)</item>
+      <item name="target_blank">Yeni pəncərədə aç</item>
+      <item name="popup">Üzə çıxan Javascript-pəncərə</item>
+      <item name="popup_url">Üzə çıxan pəncərənin ünvanı</item>
+      <item name="popup_name">Pəncərənin adı</item>
+      <item name="popup_return">'return false' əlavə et</item>
+      <item name="popup_scrollbars">Fırlananın zolaqlarını göstər</item>
+      <item name="popup_statusbar">Mətn vəziyyətini göstər</item>
+      <item name="popup_toolbar">Alətlər panelini göstər</item>
+      <item name="popup_menubar">Menyu sətrini göstər</item>
+      <item name="popup_location">Ünvan sətrini göstər</item>
+      <item name="popup_resizable">Pəncərə ölçüsünü dəyişilən et</item>
+      <item name="popup_dependent">Asılı olan (yalnız Mozilla/Firefox)</item>
+      <item name="popup_size">ölçü</item>
+      <item name="popup_position">Mövqe (X/Y)</item>
+      <item name="id">İdentifikator</item>
+      <item name="style">Sil</item>
+      <item name="classes">Siniflər</item>
+      <item name="target_name">Hədəf adı</item>
+      <item name="langdir">Dil istiqaməti</item>
+      <item name="target_langcode">Hədəfli dil</item>
+      <item name="langcode">Dil kodu</item>
+      <item name="encoding">Hədəfli kodlaşdırma</item>
+      <item name="mime">Hədəfli MIME-növ</item>
+      <item name="rel">Pəncərənin hədəfə münasibəti</item>
+      <item name="rev">Hədəfin pəncərəyə münasibəti</item>
+      <item name="tabindex">Hesab indeksi</item>
+      <item name="accesskey">Giriş klavişi</item>
+      <item name="ltr">Solda-sağa</item>
+      <item name="rtl">Sağda-sola</item>
+      <item name="link_list">Keçid siyahısı</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">Sitat</item>
+      <item name="abbr_desc">Abbreviatura</item>
+      <item name="acronym_desc">Akronim</item>
+      <item name="del_desc">Silinmiş mətn</item>
+      <item name="ins_desc">Əlavə edilmiş mətn</item>
+      <item name="attribs_desc">Atribut əlavə/redaktə et</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">Adı</item>
+      <item name="attribute_label_id">İdentifikator</item>
+      <item name="attribute_label_class">Sinif</item>
+      <item name="attribute_label_style">Stil</item>
+      <item name="attribute_label_cite">Sitat</item>
+      <item name="attribute_label_datetime">Tarix/vaxt</item>
+      <item name="attribute_label_langdir">Mətnin istiqaməti</item>
+      <item name="attribute_option_ltr">Solda-sağa</item>
+      <item name="attribute_option_rtl">Sağda-sola</item>
+      <item name="attribute_label_langcode">Dil</item>
+      <item name="attribute_label_tabindex">Hesab indeksi</item>
+      <item name="attribute_label_accesskey">Giriş klavişi</item>
+      <item name="attribute_events_tab">Hadisələr</item>
+      <item name="attribute_attrib_tab">Atributlar</item>
+      <item name="general_tab">Ümumi</item>
+      <item name="attrib_tab">Atributlar</item>
+      <item name="events_tab">Hadisələr</item>
+      <item name="fieldset_general_tab">Ümumi nizamlamalar</item>
+      <item name="fieldset_attrib_tab">Element atributları</item>
+      <item name="fieldset_events_tab">Element hadisələri</item>
+      <item name="title_ins_element">Əlavə edilmiş mətnin elementi</item>
+      <item name="title_del_element">Silinmiş mətnin elementi</item>
+      <item name="title_acronym_element">Akronim elementi</item>
+      <item name="title_abbr_element">Abbreviatura elementi</item>
+      <item name="title_cite_element">Sitat elementi</item>
+      <item name="remove">Ləğv et</item>
+      <item name="insert_date">Hazırki tarixi/vaxtı əlavə et</item>
+      <item name="option_ltr">Solda-sağa</item>
+      <item name="option_rtl">Sağda-sola</item>
+      <item name="attribs_title">Atribut əlavə/redaktə et</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">CSS stili redaktə et</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">35</item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">CSS stili redaktə et</item>
+      <item name="apply">Tətbiq et</item>
+      <item name="text_tab">Mətn</item>
+      <item name="background_tab">Fon</item>
+      <item name="block_tab">Blok</item>
+      <item name="box_tab">Konteyner</item>
+      <item name="border_tab">Sərhəd</item>
+      <item name="list_tab">Siyahı</item>
+      <item name="positioning_tab">Mövqe</item>
+      <item name="text_props">Mətn</item>
+      <item name="text_font">Şrift</item>
+      <item name="text_size">Ölçüsü</item>
+      <item name="text_weight">Çəkisi</item>
+      <item name="text_style">Stil</item>
+      <item name="text_variant">Variant</item>
+      <item name="text_lineheight">Sətr hündürlüyü</item>
+      <item name="text_case">Registr</item>
+      <item name="text_color">Şəkil</item>
+      <item name="text_decoration">Bəzək</item>
+      <item name="text_overline">üzərindən xətt</item>
+      <item name="text_underline">altından xətt</item>
+      <item name="text_striketrough">üstündən xətt</item>
+      <item name="text_blink">Yanıb-sönən</item>
+      <item name="text_none">heç biri</item>
+      <item name="background_color">Fon rəngi</item>
+      <item name="background_image">fon şəkli</item>
+      <item name="background_repeat">Təkrar</item>
+      <item name="background_attachment">Bərkitmək</item>
+      <item name="background_hpos">Üfüqi mövqe</item>
+      <item name="background_vpos">Şaquli mövqe</item>
+      <item name="block_wordspacing">Sözarası boşluqlar</item>
+      <item name="block_letterspacing">Simvol arası boşluqlar</item>
+      <item name="block_vertical_alignment">Şaquli tarazlaşdırılma</item>
+      <item name="block_text_align">Mətn taraşlaşdırılması</item>
+      <item name="block_text_indent">Mətn boşluğu</item>
+      <item name="block_whitespace">Boşluq</item>
+      <item name="block_display">Nümayis</item>
+      <item name="box_width">Eni</item>
+      <item name="box_height">Uzunluğu</item>
+      <item name="box_float">Üzən</item>
+      <item name="box_clear">Təmizlə</item>
+      <item name="padding">Doldurma</item>
+      <item name="same">Hamısı üçün eyni</item>
+      <item name="top">Yuxarıdan</item>
+      <item name="right">Sağdan</item>
+      <item name="bottom">Aşağıdan</item>
+      <item name="left">Soldan</item>
+      <item name="margin">Sahələr</item>
+      <item name="style">Stil</item>
+      <item name="width">En</item>
+      <item name="height">Hündürlük</item>
+      <item name="color">Rəng</item>
+      <item name="list_type">Növ</item>
+      <item name="bullet_image">Marker şəkli</item>
+      <item name="position">Mövqe</item>
+      <item name="positioning_type">Növ</item>
+      <item name="visibility">Görünüş</item>
+      <item name="zindex">Z-indeks</item>
+      <item name="overflow">Axma</item>
+      <item name="placement">Yerləşdirmə</item>
+      <item name="clip">Kəsmək</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">Sadə mətn kimi əlavə et</item>
+      <item name="paste_word_desc">Word-dən əlavə et</item>
+      <item name="selectall_desc">Hamısını seç</item>
+      <!--<item name="plaintext_mode_sticky">Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode.</item>-->
+      <!--<item name="plaintext_mode">Paste is now in plain text mode. Click again to toggle back to regular paste mode.</item>-->
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">Pəncərəyə mətn əlavə etmək üçün CTRL+V klaviş birləşməsini istifadə edin.</item>
+      <item name="text_linebreaks">Sətr sınmalarını saxla</item>
+      <item name="word_title">Pəncərəyə söz əlavə etmək üçün CTRL+V klaviş birləşməsini istifadə edin.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">Yeni cədvəl əlavə et</item>
+      <item name="row_before_desc">Sətri əvvəl əlavə et:</item>
+      <item name="row_after_desc">Sətri sonra əvvəl et:</item>
+      <item name="delete_row_desc">Sətri sil</item>
+      <item name="col_before_desc">Sütunu əvvəl əlavə et:</item>
+      <item name="col_after_desc">Sütunu sonra əlavə et:</item>
+      <item name="delete_col_desc">Sütunu sil</item>
+      <item name="split_cells_desc">Süzülmüş özəkləri ayır</item>
+      <item name="merge_cells_desc">Özəkləri süz</item>
+      <item name="row_desc">Sətr xüsusiyyətləri</item>
+      <item name="cell_desc">Özək xüsusiyyətləri</item>
+      <item name="props_desc">Cədvəl xüsusiyyətləri</item>
+      <item name="paste_row_before_desc">Sətr cədvəlini əvvəl əlavə et:</item>
+      <item name="paste_row_after_desc">Sətr cədvəlini sonra əlavə et:</item>
+      <item name="cut_row_desc">Sətri kəs</item>
+      <item name="copy_row_desc">Sətri kopyala</item>
+      <item name="del">Cədvəli sil</item>
+      <item name="row">Sətr</item>
+      <item name="col">Sütun</item>
+      <item name="cell">Özək</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width"></item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">Ümumi</item>
+      <item name="advanced_tab">Əlavələr</item>
+      <item name="general_props">Ümumi xüsusiyyətlər</item>
+      <item name="advanced_props">Əlavə xüsusiyyətlər</item>
+      <item name="rowtype">Cədvəl hissəsindəki sətr</item>
+      <item name="title">Cədvəli əlavə et/dəyişdir</item>
+      <item name="width">Eni</item>
+      <item name="height">Hündürlüyü</item>
+      <item name="cols">Sütunlar</item>
+      <item name="rows">Sətrlər</item>
+      <item name="cellspacing">Özəklər arasındakı məsafə</item>
+      <item name="cellpadding">Özəklərdə doldurma</item>
+      <item name="border">Sərhəd</item>
+      <item name="align">Tarazlaşdırma</item>
+      <item name="align_default">Default</item>
+      <item name="align_left">Sola</item>
+      <item name="align_right">Sağa</item>
+      <item name="align_middle">Mərkəz ilə</item>
+      <item name="row_title">Sətr xüsusiyyəti</item>
+      <item name="cell_title">Özək xüsusiyyəti</item>
+      <item name="cell_type">Özək növü</item>
+      <item name="valign">Şaquli tarazlaşma</item>
+      <item name="align_top">Yuxarı ilə</item>
+      <item name="align_bottom">Aşağı ilə</item>
+      <item name="bordercolor">Sərhəd rəngi</item>
+      <item name="bgcolor">Fon rəngi</item>
+      <item name="merge_cells_title">Özək stili</item>
+      <item name="id">İdentifikator</item>
+      <item name="style">Stil</item>
+      <item name="langdir">Dil istiqaməti</item>
+      <item name="langcode">Dil kodu</item>
+      <item name="mime">Hədəfli MIME-növ</item>
+      <item name="ltr">Solda-sağa</item>
+      <item name="rtl">Sağda-sola</item>
+      <item name="bgimage">Fon şəkli</item>
+      <item name="summary">Xülasə</item>
+      <item name="td">Verilənlər</item>
+      <item name="th">Başlıq</item>
+      <item name="cell_cell">Hazırki özəyi yenilə</item>
+      <item name="cell_row">Sətrdəki bütün özəkləri yenilə</item>
+      <item name="cell_all">Cədvəldəki bütün özəkləri yenilə</item>
+      <item name="row_row">Hazırki sətri yenilə</item>
+      <item name="row_odd">Cədəldəki tək (ədəd) sətrləri yenilə</item>
+      <item name="row_even">Cədvəldəki cüt (ədəd) sətrləri yenilə</item>
+      <item name="row_all">Cədvəldəki bütün sətrləri yenilə</item>
+      <item name="thead">Cədvəlin yuxarı hissəsi</item>
+      <item name="tbody">Cədvəlin əsas hissəsi</item>
+      <item name="tfoot">Cədvəlin aşağı hissəsi</item>
+      <item name="scope">Hədd</item>
+      <item name="rowgroup">Sətr qrupu</item>
+      <item name="colgroup">Sütun qrupu</item>
+      <item name="col_limit">Siz sütunlarda {$cols} maksimum sayı aşdınız.</item>
+      <item name="row_limit">Siz sətrlərdə {$rows} maksimum sayı aşdınız.</item>
+      <item name="cell_limit">Siz özəklərdə {$cells} maksimum sayı aşdınız.</item>
+      <item name="missing_scope">Əminsiniz ki, başlıq özəyinin həddini göstərmədən davam etmək istəyirsiniz? Bunsuz bəzi iş qabiliyyəti aşağı olan istifadəçilərə cədvəlin məlumatları və tərkibini anlamaq çətin olacaq.</item>
+      <item name="caption">Cədvəl başlığı</item>
+      <item name="frame">Çərçivə</item>
+      <item name="frame_none">heçnə</item>
+      <item name="frame_groups">qruplar</item>
+      <item name="frame_rows">sətrlər</item>
+      <item name="frame_cols">sütunlar</item>
+      <item name="frame_all">hamısı</item>
+      <item name="rules">Xəttlər</item>
+      <item name="rules_void">heç nə</item>
+      <item name="rules_above">yuxarıdan</item>
+      <item name="rules_below">aşağıdan</item>
+      <item name="rules_hsides">üfüqi tərəflər</item>
+      <item name="rules_lhs">sol üfüqi tərəflər</item>
+      <item name="rules_rhs">sağ üfüqi tərəflər</item>
+      <item name="rules_vsides">şaquli tərəflər</item>
+      <item name="rules_box">konteyner</item>
+      <item name="rules_border">sərhəd</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">Əgər səhifədən getsəniz bütün dəyişikliklər itiriləcək.</item>
+      <!--<item name="restore_content">Restore auto-saved content.</item>-->
+      <!--<item name="warning_message">If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?.</item>-->
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">Tamekran rejimini yandır/söndür</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">mediya-obyekti əlavə/redaktə et</item>
+      <item name="edit">Mediya-obyekti redaktə et</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">Mediya-obyekti əlavə/redaktə et</item>
+      <item name="general">Ümumi</item>
+      <item name="advanced">Əlavələr</item>
+      <item name="file">Fayl/ünvan</item>
+      <item name="list">Siyahı</item>
+      <item name="size">Öçüləri</item>
+      <item name="preview">İlkin baxış</item>
+      <item name="constrain_proportions">Proporsiyaları saxla</item>
+      <item name="type">Növ</item>
+      <item name="id">İdentifikator</item>
+      <item name="name">Adı</item>
+      <item name="class_name">Sinif</item>
+      <item name="vspace">Şaquli fəza</item>
+      <item name="hspace">Üfüqi fəza</item>
+      <item name="play">Avtomatik oynat</item>
+      <item name="loop">İlmək</item>
+      <item name="menu">Menyunu göstər</item>
+      <item name="quality">Keyfiyyət</item>
+      <item name="scale">Miqyas</item>
+      <item name="align">Tarazlaşmaq</item>
+      <item name="salign">SAlign</item>
+      <item name="wmode">WMode</item>
+      <item name="bgcolor">Fon</item>
+      <item name="base">Təməl</item>
+      <item name="flashvars">Flashvars</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">AutoHREF</item>
+      <item name="cache">Keş</item>
+      <item name="hidden">Gizli</item>
+      <item name="controller">İdarəçi</item>
+      <item name="kioskmode">Kiosk üsulu</item>
+      <item name="playeveryframe">Hər çərçivəni oynat</item>
+      <item name="targetcache">Hədəf keş</item>
+      <item name="correction">Dəyişiklik yoxdur</item>
+      <item name="enablejavascript">JavaScript-i yandır</item>
+      <item name="starttime">Başlanğıc zaman</item>
+      <item name="endtime">Bitəcək zaman</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">Drossel sürəti</item>
+      <item name="target">Hədəf</item>
+      <item name="volume">Səs</item>
+      <item name="autostart">Avtomatik başlat</item>
+      <item name="enabled">Yanılıb</item>
+      <item name="fullscreen">Tam ekran</item>
+      <item name="invokeurls">Çağırılacaq URL ünvanlar</item>
+      <item name="mute">Səssiz</item>
+      <item name="stretchtofit">Sığacaq qədər ölçüləndir</item>
+      <item name="windowlessvideo">Pəncərəsiz vide</item>
+      <item name="balance">Balans</item>
+      <item name="baseurl">Baza URL</item>
+      <item name="captioningid">Başlıqlandırma id</item>
+      <item name="currentmarker">Hazırki marker</item>
+      <item name="currentposition">Hazırki mövqe</item>
+      <item name="defaultframe">Susmaya görə çərçivə</item>
+      <item name="playcount">Oynatma sayı</item>
+      <item name="rate">Norma</item>
+      <item name="uimode">UI Üsulu</item>
+      <item name="flash_options">Flash nizamlamaları</item>
+      <item name="qt_options">Quicktime nizamlamaları</item>
+      <item name="wmp_options">Windows media player nizamlamaları</item>
+      <item name="rmp_options">Real media player nizamlamaları</item>
+      <item name="shockwave_options">Shockwave nizamlamaları</item>
+      <item name="autogotourl">Avtomatik gediləcək URL</item>
+      <item name="center">Mərkəz</item>
+      <item name="imagestatus">Şəkil statusu</item>
+      <item name="maintainaspect">Aspekti qoru</item>
+      <item name="nojava">Java yox</item>
+      <item name="prefetch">Ön-gətirmə</item>
+      <item name="shuffle">Qarışdır</item>
+      <item name="console">Konsol</item>
+      <item name="numloop">Rəqəmli ilmələr</item>
+      <item name="controls">Kontroller</item>
+      <item name="scriptcallbacks">Skript çağırımları</item>
+      <item name="swstretchstyle">Uzatma stili</item>
+      <item name="swstretchhalign">Uzat Y-Düzləndir</item>
+      <item name="swstretchvalign">Uzat D-Düzləndir</item>
+      <item name="sound">Səs</item>
+      <item name="progress">İlərləyiş</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn">Hazırki axılan rtsp mənbələri QT Src sahəsinə əlavə edilməlidir.\nSiz həmçinin Src sahəsinə qeyri-axılan versiyanı da əlavə etməlisiniz..</item>
+      <item name="align_top">Üst</item>
+      <item name="align_right">Sağ</item>
+      <item name="align_bottom">Alt</item>
+      <item name="align_left">Sol</item>
+      <item name="align_center">Mətkəz</item>
+      <item name="align_top_left">Üst sol</item>
+      <item name="align_top_right">Üst sağ</item>
+      <item name="align_bottom_left">Aşağı sol</item>
+      <item name="align_bottom_right">Aşağı sağ</item>
+      <item name="flv_options">Flaş video nizamlamaları</item>
+      <item name="flv_scalemode">Miqyas üsulu</item>
+      <item name="flv_buffer">Bufer</item>
+      <item name="flv_startimage">Başlanğıc şəkil</item>
+      <item name="flv_starttime">Başlanğıc zaman</item>
+      <item name="flv_defaultvolume">Susmaya görə səs</item>
+      <item name="flv_hiddengui">Gizli GUI</item>
+      <item name="flv_autostart">Avtomatik başlat</item>
+      <item name="flv_loop">İlmə</item>
+      <item name="flv_showscalemodes">Ölçək rejimləri göstər</item>
+      <item name="flv_smoothvideo">Videonu yumşalt</item>
+      <item name="flv_jscallback">JS Çağırımları</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">Sənəd nizamlamaları</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Sənəd xüsusiyyətləri</item>
+      <item name="meta_tab">Ümumi</item>
+      <item name="appearance_tab">Görünüş</item>
+      <item name="advanced_tab">Əlavələr</item>
+      <item name="meta_props">Meta məlumat</item>
+      <item name="langprops">Dil və kodlaşdırma</item>
+      <item name="meta_title">Başlıq</item>
+      <item name="meta_keywords">Açar sözləri</item>
+      <item name="meta_description">Təsvir</item>
+      <item name="meta_robots">Robotlar</item>
+      <item name="doctypes">Sənəd növü</item>
+      <item name="langcode">Dil kodu</item>
+      <item name="langdir">Dil istiqaməti</item>
+      <item name="ltr">Soldan sağa</item>
+      <item name="rtl">Sağdan sola</item>
+      <item name="xml_pi">XML tərifi</item>
+      <item name="encoding">İşarə kodlaşdırması</item>
+      <item name="appearance_bgprops">Arxa plan xüsusiyyətləri</item>
+      <item name="appearance_marginprops">Gövdə kənarları</item>
+      <item name="appearance_linkprops">Keçid rəngləri</item>
+      <item name="appearance_textprops">Mətn xüsusiyyətləri</item>
+      <item name="bgcolor">Arxa plan rəngi</item>
+      <item name="bgimage">Arxa plan şəkli</item>
+      <item name="left_margin">Sol boşluq</item>
+      <item name="right_margin">Sağ boşluq</item>
+      <item name="top_margin">Üst boşluq</item>
+      <item name="bottom_margin">Alt boşluq</item>
+      <item name="text_color">Mətn rəngi</item>
+      <item name="font_size">Şrift ölçüsü</item>
+      <item name="font_face">Şrift növü</item>
+      <item name="link_color">Keçid rəngi</item>
+      <item name="hover_color">Üzərindəki rəng</item>
+      <item name="visited_color">Baxılmış rəng</item>
+      <item name="active_color">Aktiv rəng</item>
+      <item name="textcolor">Rəng</item>
+      <item name="fontsize">Şrift ölçüsü</item>
+      <item name="fontface">Şrift ailəsi</item>
+      <item name="meta_index_follow">İndeks et və keçidi izlə</item>
+      <item name="meta_index_nofollow">İndeks et lakin keçidi izləmə</item>
+      <item name="meta_noindex_follow">İndeks etmə lakin keçidi izlə</item>
+      <item name="meta_noindex_nofollow">İndeks etmə və keçidləri izləmə</item>
+      <item name="appearance_style">Stil vərəqi və xüsusiyyətləri</item>
+      <item name="stylesheet">Stil vərəqi</item>
+      <item name="style">Stil</item>
+      <item name="author">Müəllif</item>
+      <item name="copyright">Müəllif hüququ</item>
+      <item name="add">Yeni element əlavə et</item>
+      <item name="remove">Seçilmiş elementi sil</item>
+      <item name="moveup">Seçilən elementi yuxarı çək</item>
+      <item name="movedown">Seçilən elementi aşağı çək</item>
+      <item name="head_elements">Baş elementlər</item>
+      <item name="info">Məlumat</item>
+      <item name="add_title">Başlıq elementi</item>
+      <item name="add_meta">Meta elementi</item>
+      <item name="add_script">Skript elementi</item>
+      <item name="add_style">Stil elementi</item>
+      <item name="add_link">Keçid elementi</item>
+      <item name="add_base">Baza elementi</item>
+      <item name="add_comment">Şərh düyünü</item>
+      <item name="title_element">Başlıq elementi</item>
+      <item name="script_element">Skript elementi</item>
+      <item name="style_element">Stil elementi</item>
+      <item name="base_element">Baza elementi</item>
+      <item name="link_element">Keçid elementi</item>
+      <item name="meta_element">Meta elementi</item>
+      <item name="comment_element">Şərh</item>
+      <item name="src">Src</item>
+      <item name="language">Dil</item>
+      <item name="href">Href</item>
+      <item name="target">Hədəf</item>
+      <item name="type">Növ</item>
+      <item name="charset">Çarset</item>
+      <item name="defer">Təxirə sal</item>
+      <item name="media">Media</item>
+      <item name="properties">Xüsusiyyətlər</item>
+      <item name="name">Adı</item>
+      <item name="value">Dəyər</item>
+      <item name="content">Məzmun</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href dili</item>
+      <item name="general_props">Ümumi</item>
+      <item name="advanced_props">Əlavələr</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Əvvəldən müəyyən edilən şablon daxil et</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">Şablonlar</item>
+      <item name="label">Şablon</item>
+      <item name="desc_label">Təsvir</item>
+      <item name="desc">Əvvəldən müəyyən edilən şablon daxil et</item>
+      <item name="select">Şablon seç</item>
+      <item name="preview">İlkin baxış</item>
+      <item name="warning">Təhlükə: Bir şablonu bir başqasıyla aktuallaşdırmaq məlumat itkisinə yol aça bilər.</item>
+      <item name="mdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="cdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="months_long">Yanvar,Fevral,Mart,Aprel,May,İyun,İyul,Avqust,Sentaybr,Oktaybr,Noyabr,Dekabr</item>
+      <item name="months_short">Yan,Fev,Mar,Ape,May,İyn,İyl,Avq,Sen,Okt,Noy,Dek</item>
+      <item name="day_long">Bazar,Bazar ertəsi,Çərşənbə axşamı,Çərşənbə,Cümə axşamı,Cümə,Şənbə,Bazar</item>
+      <item name="day_short">B,Be,Ça,Ç,Ca,C,Ş,B</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Vizual idarə xarakterlərini yandır/söndür.</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">Orfoqrafı yoxla</item>
+      <item name="menu">Orfoqrafiya nizamlamasını</item>
+      <item name="ignore_word">Sözlü iqnor et</item>
+      <item name="ignore_words">Hər şeyi iqnor et</item>
+      <item name="langs">Dillər</item>
+      <item name="wait">Zəhmət olmasa, gözləyin...</item>
+      <item name="sug">Variantlar</item>
+      <item name="no_sug">Variantlar yoxdur</item>
+      <item name="no_mpell">Xəta aşkar edilmədi.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">Səhifə bölənini əlavə et.</item>
+    </group>
+    <group target="advlist">
+      <!--<item name="types">Types</item>-->
+      <!--<item name="def">Default</item>-->
+      <!--<item name="lower_alpha">Lower alpha</item>-->
+      <!--<item name="lower_greek">Lower greek</item>-->
+      <!--<item name="lower_roman">Lower roman</item>-->
+      <!--<item name="upper_alpha">Upper alpha</item>-->
+      <!--<item name="upper_roman">Upper roman</item>-->
+      <!--<item name="circle">Circle</item>-->
+      <!--<item name="disc">Disc</item>-->
+      <!--<item name="square">Square</item>-->
+    </group>
+  </language>
+</language-pack>
