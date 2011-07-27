@@ -41,15 +41,15 @@ class GzipCompressorView(BrowserView):
         isJS = self.request.get("js", "") == "true"
         compress = self.request.get("compress", "true") == "true"
         suffix = self.request.get("suffix", "") == "_src" and "_src" or ""
-        content = []
         response = self.request.response
         response.headers["Content-Type"] = "text/javascript"
 
+        plone_portal_state = zope.component.getMultiAdapter(
+                (self.context, self.request), name="plone_portal_state") 
+        base_url = '/'.join([plone_portal_state.portal_url(), self.__name__])
+
         if not isJS:
-            plone_portal_state = zope.component.getMultiAdapter(
-                    (self.context, self.request), name="plone_portal_state") 
-            portal_url = plone_portal_state.portal_url()
-            return self.tiny_mce_gzip(base_url=portal_url)
+            return self.tiny_mce_gzip(base_url=base_url)
 
     #patch_vary_headers(response, ['Accept-Encoding'])
 
@@ -57,10 +57,11 @@ class GzipCompressorView(BrowserView):
         response['Date'] = now.strftime('%a, %d %b %Y %H:%M:%S GMT')
 
         # XXX caching headers like in Django?
+        content = []
 
         # Add core, with baseURL added
         content.append(get_file_contents(self.context, "tiny_mce%s.js" % suffix).replace(
-                "tinymce._init();", "tinymce.baseURL='%s';tinymce._init();" % ""))
+                "tinymce._init();", "tinymce.baseURL='%s';tinymce._init();" % base_url))
 
         # Patch loading functions
         content.append("tinyMCE_GZ.start();")
@@ -104,4 +105,5 @@ class GzipCompressorView(BrowserView):
 #        'Last-Modified': response['Last-Modified'],
 #        'ETag': response['ETag'],
 #    })
+        print content
         return content
