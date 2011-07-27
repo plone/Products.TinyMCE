@@ -1,6 +1,6 @@
 # This is the Norwegian nynorsk language pack for TinyMCE.
 # Version 1.6
-# 
+#
 # Terje Dahl
 msgid ""
 msgstr ""
@@ -18,229 +18,77 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: tinymce\n"
 
-msgid "advanced_address"
-msgstr "Adresse"
+msgid "common_edit_confirm"
+msgstr "Vil du bruke WYSIWYG-editoren for dette tekstfeltet?"
 
-msgid "advanced_anchor_delta_height"
-msgstr ""
+msgid "common_apply"
+msgstr "Legg til"
 
-msgid "advanced_anchor_delta_width"
-msgstr ""
+msgid "common_insert"
+msgstr "Set inn"
 
-msgid "advanced_anchor_desc"
-msgstr "Set inn / endre anker"
+msgid "common_update"
+msgstr "Oppdater"
 
-msgid "advanced_backcolor_desc"
-msgstr "Vel bakgrunnsfarge"
+msgid "common_cancel"
+msgstr "Avbryt"
 
-msgid "advanced_block"
-msgstr "Format"
+msgid "common_close"
+msgstr "Stopp"
 
-msgid "advanced_blockquote"
-msgstr "Innrykk"
+msgid "common_browse"
+msgstr "Bla gjennom"
 
-msgid "advanced_blockquote_desc"
-msgstr "Innrykk"
+msgid "common_class_name"
+msgstr "Klasse"
 
-msgid "advanced_bold_desc"
+msgid "common_not_set"
+msgstr "--ikkje sett--"
+
+msgid "common_clipboard_msg"
+msgstr "Klipp ut / Kopier /Lim inn fungerer ikkje i Mozilla og Firefox. Vil du vite meir om dette?"
+
+msgid "common_clipboard_no_support"
+msgstr "For tida ikkje støtta av nettlesaren din, bruk tastatursnarveger i staden."
+
+msgid "common_popup_blocked"
+msgstr "Orsak, det er registrert at du har popup-sperre aktivert i nettlesaren. Du må oppheve popup-sperra for nettstaden for å få tilgang til dette verktyet"
+
+msgid "common_invalid_data"
+msgstr "Feil: Ugyldige verdiar er skrivne inn, desse er merka med raudt"
+
+msgid "common_more_colors"
+msgstr "Fleire fargar"
+
+msgid "simple_bold_desc"
 msgstr "Feit"
 
-msgid "advanced_bullist_desc"
+msgid "simple_italic_desc"
+msgstr "Kursiv"
+
+msgid "simple_underline_desc"
+msgstr "Understreking"
+
+msgid "simple_striketrough_desc"
+msgstr "Gjennomstreking"
+
+msgid "simple_bullist_desc"
 msgstr "Punktliste"
 
-msgid "advanced_charmap_delta_height"
-msgstr ""
+msgid "simple_numlist_desc"
+msgstr "Nummerliste"
 
-msgid "advanced_charmap_delta_width"
-msgstr ""
+msgid "simple_undo_desc"
+msgstr "Angre"
 
-msgid "advanced_charmap_desc"
-msgstr "Set inn spesialteikn"
+msgid "simple_redo_desc"
+msgstr "Gjer om"
 
-msgid "advanced_cleanup_desc"
+msgid "simple_cleanup_desc"
 msgstr "Rens grisete kode"
 
-msgid "advanced_clipboard_msg"
-msgstr ""
-"Klipp ut / Kopier /Lim inn fungerer ikkje i Mozilla og Firefox. \n"
-"  Vil du vite meir om dette?"
-
-msgid "advanced_code"
-msgstr "Kode"
-
-msgid "advanced_code_desc"
-msgstr "Redigere HTML-koden"
-
-msgid "advanced_colorpicker_delta_height"
-msgstr ""
-
-msgid "advanced_colorpicker_delta_width"
-msgstr ""
-
-msgid "advanced_copy_desc"
-msgstr "Kopier"
-
-msgid "advanced_custom1_desc"
-msgstr "Din spesialfunksjondefinisjon her"
-
-msgid "advanced_cut_desc"
-msgstr "Klipp ut"
-
-msgid "advanced_dd"
-msgstr "Definisjonsbeskrivelse"
-
-msgid "advanced_div"
-msgstr "Div"
-
-msgid "advanced_dlg_about_author"
-msgstr "Utviklar"
-
-msgid "advanced_dlg_about_general"
-msgstr "Om"
-
-msgid "advanced_dlg_about_help"
-msgstr "Hjelp"
-
-msgid "advanced_dlg_about_license"
-msgstr "Lisens"
-
-msgid "advanced_dlg_about_loaded"
-msgstr "Lasta programtillegg"
-
-msgid "advanced_dlg_about_plugin"
-msgstr "Programtillegg"
-
-msgid "advanced_dlg_about_plugins"
-msgstr "Programtillegg"
-
-msgid "advanced_dlg_about_title"
-msgstr "Om TinyMCE"
-
-msgid "advanced_dlg_about_version"
-msgstr "Versjon"
-
-msgid "advanced_dlg_anchor_name"
-msgstr "Ankernamn"
-
-msgid "advanced_dlg_anchor_title"
-msgstr "Set inn / endre anker"
-
-msgid "advanced_dlg_charmap_title"
-msgstr "Vel spesialteikn"
-
-msgid "advanced_dlg_code_title"
-msgstr "HTML-editor"
-
-msgid "advanced_dlg_code_wordwrap"
-msgstr "Tekstbryting"
-
-msgid "advanced_dlg_colorpicker_color"
-msgstr "Farge:"
-
-msgid "advanced_dlg_colorpicker_name"
-msgstr "Namn:"
-
-msgid "advanced_dlg_colorpicker_named_tab"
-msgstr "Namneval"
-
-msgid "advanced_dlg_colorpicker_named_title"
-msgstr "Fargenamn"
-
-msgid "advanced_dlg_colorpicker_palette_tab"
-msgstr "Palett"
-
-msgid "advanced_dlg_colorpicker_palette_title"
-msgstr "Palettfargar"
-
-msgid "advanced_dlg_colorpicker_picker_tab"
-msgstr "Vel farge"
-
-msgid "advanced_dlg_colorpicker_picker_title"
-msgstr "Fargeval"
-
-msgid "advanced_dlg_colorpicker_title"
-msgstr "Vel ein farge"
-
-msgid "advanced_dlg_image_align"
-msgstr "Justering"
-
-msgid "advanced_dlg_image_align_baseline"
-msgstr "Botnlinje"
-
-msgid "advanced_dlg_image_align_bottom"
-msgstr "Botn"
-
-msgid "advanced_dlg_image_align_left"
-msgstr "Venstre"
-
-msgid "advanced_dlg_image_align_middle"
-msgstr "Midtstilt"
-
-msgid "advanced_dlg_image_align_right"
-msgstr "Høgre"
-
-msgid "advanced_dlg_image_align_textbottom"
-msgstr "Tekstbotn"
-
-msgid "advanced_dlg_image_align_texttop"
-msgstr "Teksttopp"
-
-msgid "advanced_dlg_image_align_top"
-msgstr "Topp"
-
-msgid "advanced_dlg_image_alt"
-msgstr "Bileteomtale"
-
-msgid "advanced_dlg_image_border"
-msgstr "Ramme"
-
-msgid "advanced_dlg_image_dimensions"
-msgstr "Dimensjonar"
-
-msgid "advanced_dlg_image_hspace"
-msgstr "Horisontal avstand"
-
-msgid "advanced_dlg_image_list"
-msgstr "Liste med bilete"
-
-msgid "advanced_dlg_image_src"
-msgstr "Bilete-URL"
-
-msgid "advanced_dlg_image_title"
-msgstr "Set inn / endre bilete"
-
-msgid "advanced_dlg_image_vspace"
-msgstr "Vertikal avstand"
-
-msgid "advanced_dlg_link_is_email"
-msgstr "Nettadressa du skreiv inn ser ut til å vere ein e-postadresse. Ønskjer du å leggje til det obligatoriske mailto:-prefikset?"
-
-msgid "advanced_dlg_link_is_external"
-msgstr "Nettadressa du skreiv inn ser ut til å vere ein ekstern nettadresse. Ønskjer du å leggje til det obligatoriske http://-prefikset?"
-
-msgid "advanced_dlg_link_list"
-msgstr "Lenkjeliste"
-
-msgid "advanced_dlg_link_target"
-msgstr "Vindauge"
-
-msgid "advanced_dlg_link_target_blank"
-msgstr "Opne i nytt vindauget"
-
-msgid "advanced_dlg_link_target_same"
-msgstr "Opne i dette vindauget"
-
-msgid "advanced_dlg_link_title"
-msgstr "Set inn / endre lenkje"
-
-msgid "advanced_dlg_link_titlefield"
-msgstr "Tittel"
-
-msgid "advanced_dlg_link_url"
-msgstr "Lenkje-URL"
-
-msgid "advanced_dt"
-msgstr "Definisjonsuttrykk"
+msgid "advanced_style_select"
+msgstr "Stilar"
 
 msgid "advanced_font_size"
 msgstr "Skriftstorleik"
@@ -248,8 +96,20 @@ msgstr "Skriftstorleik"
 msgid "advanced_fontdefault"
 msgstr "Skriftfamilie"
 
-msgid "advanced_forecolor_desc"
-msgstr "Vel skriftfarge"
+msgid "advanced_block"
+msgstr "Format"
+
+msgid "advanced_paragraph"
+msgstr "Avsnitt"
+
+msgid "advanced_div"
+msgstr "Div"
+
+msgid "advanced_address"
+msgstr "Adresse"
+
+msgid "advanced_pre"
+msgstr "Pre-formatert"
 
 msgid "advanced_h1"
 msgstr "Overskrift 1"
@@ -269,59 +129,47 @@ msgstr "Overskrift 5"
 msgid "advanced_h6"
 msgstr "Overskrift 6"
 
-msgid "advanced_help_desc"
-msgstr "Hjelp"
+msgid "advanced_blockquote"
+msgstr "Innrykk"
 
-msgid "advanced_hr_desc"
-msgstr "Set inn horisontal linje"
+msgid "advanced_code"
+msgstr "Kode"
 
-msgid "advanced_image_delta_height"
-msgstr ""
+msgid "advanced_samp"
+msgstr "Kodeeksempel"
 
-msgid "advanced_image_delta_width"
-msgstr ""
+msgid "advanced_dt"
+msgstr "Definisjonsuttrykk"
 
-msgid "advanced_image_desc"
-msgstr "Set inn / endre bilete"
+msgid "advanced_dd"
+msgstr "Definisjonsbeskrivelse"
 
-msgid "advanced_image_props_desc"
-msgstr "Eigenskaper for bilete"
-
-msgid "advanced_indent_desc"
-msgstr "Auk innrykk"
+msgid "advanced_bold_desc"
+msgstr "Feit"
 
 msgid "advanced_italic_desc"
 msgstr "Kursiv"
 
-msgid "advanced_justifycenter_desc"
-msgstr "Midtstilt"
+msgid "advanced_underline_desc"
+msgstr "Understreking"
 
-msgid "advanced_justifyfull_desc"
-msgstr "Blokkjustert"
+msgid "advanced_striketrough_desc"
+msgstr "Gjennomstreking"
 
 msgid "advanced_justifyleft_desc"
 msgstr "Venstrejustert"
 
+msgid "advanced_justifycenter_desc"
+msgstr "Midtstilt"
+
 msgid "advanced_justifyright_desc"
 msgstr "Høgrejustert"
 
-msgid "advanced_link_delta_height"
-msgstr ""
+msgid "advanced_justifyfull_desc"
+msgstr "Blokkjustert"
 
-msgid "advanced_link_delta_width"
-msgstr ""
-
-msgid "advanced_link_desc"
-msgstr "Set inn / endre lenkje"
-
-msgid "advanced_more_colors"
-msgstr "Fleire fargar"
-
-msgid "advanced_newdocument"
-msgstr "Er du sikker på at du vil slette alt innhald?"
-
-msgid "advanced_newdocument_desc"
-msgstr "Nytt dokument"
+msgid "advanced_bullist_desc"
+msgstr "Punktliste"
 
 msgid "advanced_numlist_desc"
 msgstr "Nummerliste"
@@ -329,32 +177,29 @@ msgstr "Nummerliste"
 msgid "advanced_outdent_desc"
 msgstr "Reduser innrykk"
 
-msgid "advanced_paragraph"
-msgstr "Avsnitt"
+msgid "advanced_indent_desc"
+msgstr "Auk innrykk"
 
-msgid "advanced_paste_desc"
-msgstr "Lim inn"
-
-msgid "advanced_path"
-msgstr "Sti"
-
-msgid "advanced_pre"
-msgstr "Pre-formatert"
+msgid "advanced_undo_desc"
+msgstr "Angre"
 
 msgid "advanced_redo_desc"
 msgstr "Gjer om"
 
-msgid "advanced_removeformat_desc"
-msgstr "Fjern formatering"
+msgid "advanced_link_desc"
+msgstr "Set inn / endre lenkje"
 
-msgid "advanced_samp"
-msgstr "Kodeeksempel"
+msgid "advanced_unlink_desc"
+msgstr "Fjern lenkje"
 
-msgid "advanced_striketrough_desc"
-msgstr "Gjennomstreking"
+msgid "advanced_image_desc"
+msgstr "Set inn / endre bilete"
 
-msgid "advanced_style_select"
-msgstr "Stilar"
+msgid "advanced_cleanup_desc"
+msgstr "Rens grisete kode"
+
+msgid "advanced_code_desc"
+msgstr "Redigere HTML-koden"
 
 msgid "advanced_sub_desc"
 msgstr "Senka skrift"
@@ -362,137 +207,287 @@ msgstr "Senka skrift"
 msgid "advanced_sup_desc"
 msgstr "Heva skrift"
 
-msgid "advanced_toolbar_focus"
-msgstr "Skift til verktyknappar - Alt+Q, Skift til editor - Alt-Z, Skift til elementsti - Alt-"
+msgid "advanced_hr_desc"
+msgstr "Set inn horisontal linje"
 
-msgid "advanced_underline_desc"
-msgstr "Understreking"
+msgid "advanced_removeformat_desc"
+msgstr "Fjern formatering"
 
-msgid "advanced_undo_desc"
-msgstr "Angre"
+msgid "advanced_custom1_desc"
+msgstr "Din spesialfunksjondefinisjon her"
 
-msgid "advanced_unlink_desc"
-msgstr "Fjern lenkje"
+msgid "advanced_forecolor_desc"
+msgstr "Vel skriftfarge"
+
+msgid "advanced_backcolor_desc"
+msgstr "Vel bakgrunnsfarge"
+
+msgid "advanced_charmap_desc"
+msgstr "Set inn spesialteikn"
 
 msgid "advanced_visualaid_desc"
 msgstr "Slå av/på usynlige element"
 
-msgid "advhr_advhr_desc"
-msgstr "Horisontal linje"
+msgid "advanced_anchor_desc"
+msgstr "Set inn / endre anker"
 
-msgid "advhr_delta_height"
-msgstr ""
+msgid "advanced_cut_desc"
+msgstr "Klipp ut"
 
-msgid "advhr_delta_width"
-msgstr ""
+msgid "advanced_copy_desc"
+msgstr "Kopier"
 
-msgid "advhr_dlg_noshade"
-msgstr "Inga skugge"
+msgid "advanced_paste_desc"
+msgstr "Lim inn"
 
-msgid "advhr_dlg_size"
-msgstr "Storleik"
+msgid "advanced_image_props_desc"
+msgstr "Eigenskaper for bilete"
 
-msgid "advhr_dlg_width"
-msgstr "Breidd"
+msgid "advanced_newdocument_desc"
+msgstr "Nytt dokument"
 
-msgid "advlist_circle"
-msgstr "Circle"
+msgid "advanced_help_desc"
+msgstr "Hjelp"
 
-msgid "advlist_def"
-msgstr "Default"
+msgid "advanced_blockquote_desc"
+msgstr "Innrykk"
 
-msgid "advlist_disc"
-msgstr "Disc"
+msgid "advanced_clipboard_msg"
+msgstr "Klipp ut / Kopier /Lim inn fungerer ikkje i Mozilla og Firefox. \n  Vil du vite meir om dette?"
 
-msgid "advlist_lower_alpha"
-msgstr "Lower alpha"
+msgid "advanced_path"
+msgstr "Sti"
 
-msgid "advlist_lower_greek"
-msgstr "Lower greek"
+msgid "advanced_newdocument"
+msgstr "Er du sikker på at du vil slette alt innhald?"
 
-msgid "advlist_lower_roman"
-msgstr "Lower roman"
+msgid "advanced_toolbar_focus"
+msgstr "Skift til verktyknappar - Alt+Q, Skift til editor - Alt-Z, Skift til elementsti - Alt-"
 
-msgid "advlist_square"
-msgstr "Square"
-
-msgid "advlist_types"
-msgstr "Types"
-
-msgid "advlist_upper_alpha"
-msgstr "Upper alpha"
-
-msgid "advlist_upper_roman"
-msgstr "Upper roman"
-
-msgid "autosave_restore_content"
-msgstr "Restore auto-saved content."
-
-msgid "autosave_unload_msg"
-msgstr "Endringane du gjorde går tapt om du forlèt denne sida!"
-
-msgid "autosave_warning_message"
-msgstr ""
-"If you restore the saved content, you will lose all the content that is currently in the editor.\n"
-"\n"
-"Are you sure you want to restore the saved content?."
-
-msgid "common_apply"
-msgstr "Legg til"
-
-msgid "common_browse"
-msgstr "Bla gjennom"
-
-msgid "common_cancel"
-msgstr "Avbryt"
-
-msgid "common_class_name"
-msgstr "Klasse"
-
-msgid "common_clipboard_msg"
-msgstr "Klipp ut / Kopier /Lim inn fungerer ikkje i Mozilla og Firefox. Vil du vite meir om dette?"
-
-msgid "common_clipboard_no_support"
-msgstr "For tida ikkje støtta av nettlesaren din, bruk tastatursnarveger i staden."
-
-msgid "common_close"
-msgstr "Stopp"
-
-msgid "common_edit_confirm"
-msgstr "Vil du bruke WYSIWYG-editoren for dette tekstfeltet?"
-
-msgid "common_insert"
-msgstr "Set inn"
-
-msgid "common_invalid_data"
-msgstr "Feil: Ugyldige verdiar er skrivne inn, desse er merka med raudt"
-
-msgid "common_more_colors"
+msgid "advanced_more_colors"
 msgstr "Fleire fargar"
 
-msgid "common_not_set"
-msgstr "--ikkje sett--"
+msgid "advanced_image_delta_width"
+msgstr ""
 
-msgid "common_popup_blocked"
-msgstr "Orsak, det er registrert at du har popup-sperre aktivert i nettlesaren. Du må oppheve popup-sperra for nettstaden for å få tilgang til dette verktyet"
+msgid "advanced_image_delta_height"
+msgstr ""
 
-msgid "common_update"
-msgstr "Oppdater"
+msgid "advanced_link_delta_width"
+msgstr ""
+
+msgid "advanced_link_delta_height"
+msgstr ""
+
+msgid "advanced_colorpicker_delta_width"
+msgstr ""
+
+msgid "advanced_colorpicker_delta_height"
+msgstr ""
+
+msgid "advanced_charmap_delta_width"
+msgstr ""
+
+msgid "advanced_charmap_delta_height"
+msgstr ""
+
+msgid "advanced_anchor_delta_width"
+msgstr ""
+
+msgid "advanced_anchor_delta_height"
+msgstr ""
+
+msgid "advanced_dlg_about_title"
+msgstr "Om TinyMCE"
+
+msgid "advanced_dlg_about_general"
+msgstr "Om"
+
+msgid "advanced_dlg_about_help"
+msgstr "Hjelp"
+
+msgid "advanced_dlg_about_license"
+msgstr "Lisens"
+
+msgid "advanced_dlg_about_plugins"
+msgstr "Programtillegg"
+
+msgid "advanced_dlg_about_plugin"
+msgstr "Programtillegg"
+
+msgid "advanced_dlg_about_author"
+msgstr "Utviklar"
+
+msgid "advanced_dlg_about_version"
+msgstr "Versjon"
+
+msgid "advanced_dlg_about_loaded"
+msgstr "Lasta programtillegg"
+
+msgid "advanced_dlg_anchor_title"
+msgstr "Set inn / endre anker"
+
+msgid "advanced_dlg_anchor_name"
+msgstr "Ankernamn"
+
+msgid "advanced_dlg_code_title"
+msgstr "HTML-editor"
+
+msgid "advanced_dlg_code_wordwrap"
+msgstr "Tekstbryting"
+
+msgid "advanced_dlg_colorpicker_title"
+msgstr "Vel ein farge"
+
+msgid "advanced_dlg_colorpicker_picker_tab"
+msgstr "Vel farge"
+
+msgid "advanced_dlg_colorpicker_picker_title"
+msgstr "Fargeval"
+
+msgid "advanced_dlg_colorpicker_palette_tab"
+msgstr "Palett"
+
+msgid "advanced_dlg_colorpicker_palette_title"
+msgstr "Palettfargar"
+
+msgid "advanced_dlg_colorpicker_named_tab"
+msgstr "Namneval"
+
+msgid "advanced_dlg_colorpicker_named_title"
+msgstr "Fargenamn"
+
+msgid "advanced_dlg_colorpicker_color"
+msgstr "Farge:"
+
+msgid "advanced_dlg_colorpicker_name"
+msgstr "Namn:"
+
+msgid "advanced_dlg_charmap_title"
+msgstr "Vel spesialteikn"
+
+msgid "advanced_dlg_image_title"
+msgstr "Set inn / endre bilete"
+
+msgid "advanced_dlg_image_src"
+msgstr "Bilete-URL"
+
+msgid "advanced_dlg_image_alt"
+msgstr "Bileteomtale"
+
+msgid "advanced_dlg_image_list"
+msgstr "Liste med bilete"
+
+msgid "advanced_dlg_image_border"
+msgstr "Ramme"
+
+msgid "advanced_dlg_image_dimensions"
+msgstr "Dimensjonar"
+
+msgid "advanced_dlg_image_vspace"
+msgstr "Vertikal avstand"
+
+msgid "advanced_dlg_image_hspace"
+msgstr "Horisontal avstand"
+
+msgid "advanced_dlg_image_align"
+msgstr "Justering"
+
+msgid "advanced_dlg_image_align_baseline"
+msgstr "Botnlinje"
+
+msgid "advanced_dlg_image_align_top"
+msgstr "Topp"
+
+msgid "advanced_dlg_image_align_middle"
+msgstr "Midtstilt"
+
+msgid "advanced_dlg_image_align_bottom"
+msgstr "Botn"
+
+msgid "advanced_dlg_image_align_texttop"
+msgstr "Teksttopp"
+
+msgid "advanced_dlg_image_align_textbottom"
+msgstr "Tekstbotn"
+
+msgid "advanced_dlg_image_align_left"
+msgstr "Venstre"
+
+msgid "advanced_dlg_image_align_right"
+msgstr "Høgre"
+
+msgid "advanced_dlg_link_title"
+msgstr "Set inn / endre lenkje"
+
+msgid "advanced_dlg_link_url"
+msgstr "Lenkje-URL"
+
+msgid "advanced_dlg_link_target"
+msgstr "Vindauge"
+
+msgid "advanced_dlg_link_target_same"
+msgstr "Opne i dette vindauget"
+
+msgid "advanced_dlg_link_target_blank"
+msgstr "Opne i nytt vindauget"
+
+msgid "advanced_dlg_link_titlefield"
+msgstr "Tittel"
+
+msgid "advanced_dlg_link_is_email"
+msgstr "Nettadressa du skreiv inn ser ut til å vere ein e-postadresse. Ønskjer du å leggje til det obligatoriske mailto:-prefikset?"
+
+msgid "advanced_dlg_link_is_external"
+msgstr "Nettadressa du skreiv inn ser ut til å vere ein ekstern nettadresse. Ønskjer du å leggje til det obligatoriske http://-prefikset?"
+
+msgid "advanced_dlg_link_list"
+msgstr "Lenkjeliste"
 
 msgid "contextmenu_align"
 msgstr "Justering"
 
+msgid "contextmenu_left"
+msgstr "Venstre"
+
 msgid "contextmenu_center"
 msgstr "Midtstill"
+
+msgid "contextmenu_right"
+msgstr "Høgre"
 
 msgid "contextmenu_full"
 msgstr "Full"
 
-msgid "contextmenu_left"
-msgstr "Venstre"
+msgid "insertdatetime_date_fmt"
+msgstr "%Y-%m-%d"
 
-msgid "contextmenu_right"
-msgstr "Høgre"
+msgid "insertdatetime_time_fmt"
+msgstr "%H:%M:%S"
+
+msgid "insertdatetime_insertdate_desc"
+msgstr "Lim inn dato"
+
+msgid "insertdatetime_inserttime_desc"
+msgstr "Lim inn tid"
+
+msgid "insertdatetime_months_long"
+msgstr "januar,februar,mars,april,mai,juni,juli,august,september,oktober,november,desember"
+
+msgid "insertdatetime_months_short"
+msgstr "jan,feb,mar,apr,mai,jun,jul,aug,sep,oct,nov,des"
+
+msgid "insertdatetime_day_long"
+msgstr "sundag,mandag,tirsdag,onsdag,torsdag,fredag,laurdag,sundag"
+
+msgid "insertdatetime_day_short"
+msgstr "sun,man,tir,ons,tor,fre,lau,sun"
+
+msgid "print_print_desc"
+msgstr "Skriv u"
+
+msgid "preview_preview_desc"
+msgstr "Førehandsvisni"
 
 msgid "directionality_ltr_desc"
 msgstr "Retning venstre mot høgre"
@@ -500,20 +495,74 @@ msgstr "Retning venstre mot høgre"
 msgid "directionality_rtl_desc"
 msgstr "Retning høgre mot venstre"
 
-msgid "emotions_delta_height"
+msgid "layer_insertlayer_desc"
+msgstr "Set inn nytt lag"
+
+msgid "layer_forward_desc"
+msgstr "Flytt framover"
+
+msgid "layer_backward_desc"
+msgstr "Flytt bakover"
+
+msgid "layer_absolute_desc"
+msgstr "Slå på/av absolutt plassering"
+
+msgid "layer_content"
+msgstr "Nytt lag..."
+
+msgid "save_save_desc"
+msgstr "Lagre"
+
+msgid "save_cancel_desc"
+msgstr "Kanseller alle endringar"
+
+msgid "nonbreaking_nonbreaking_desc"
+msgstr "Set inn hardt mellomrom"
+
+msgid "iespell_iespell_desc"
+msgstr "Køyrer kontroll av rettskriving"
+
+msgid "iespell_download"
+msgstr "ieSpell ikkje funnen. Ønskjer du å installere ieSpell no?"
+
+msgid "advhr_advhr_desc"
+msgstr "Horisontal linje"
+
+msgid "advhr_delta_width"
 msgstr ""
+
+msgid "advhr_delta_height"
+msgstr ""
+
+msgid "advhr_dlg_width"
+msgstr "Breidd"
+
+msgid "advhr_dlg_size"
+msgstr "Storleik"
+
+msgid "advhr_dlg_noshade"
+msgstr "Inga skugge"
+
+msgid "emotions_emotions_desc"
+msgstr "Humørfjes"
 
 msgid "emotions_delta_width"
 msgstr ""
+
+msgid "emotions_delta_height"
+msgstr ""
+
+msgid "emotions_dlg_title"
+msgstr "Set inn humørfjes"
+
+msgid "emotions_dlg_desc"
+msgstr "Humørfjes"
 
 msgid "emotions_dlg_cool"
 msgstr "Cool"
 
 msgid "emotions_dlg_cry"
 msgstr "Gret"
-
-msgid "emotions_dlg_desc"
-msgstr "Humørfjes"
 
 msgid "emotions_dlg_embarassed"
 msgstr "Flau"
@@ -545,9 +594,6 @@ msgstr "Glad"
 msgid "emotions_dlg_surprised"
 msgstr "Overraska"
 
-msgid "emotions_dlg_title"
-msgstr "Set inn humørfjes"
-
 msgid "emotions_dlg_tongue_out"
 msgstr "Rekkje tunge"
 
@@ -560,667 +606,161 @@ msgstr "Blunke"
 msgid "emotions_dlg_yell"
 msgstr "Skri"
 
-msgid "emotions_emotions_desc"
-msgstr "Humørfjes"
+msgid "searchreplace_search_desc"
+msgstr "Søk"
 
-msgid "fullpage_delta_height"
+msgid "searchreplace_replace_desc"
+msgstr "Søk/Erstatt"
+
+msgid "searchreplace_delta_width"
 msgstr ""
 
-msgid "fullpage_delta_width"
+msgid "searchreplace_delta_height"
 msgstr ""
 
-msgid "fullpage_desc"
-msgstr "Dokumenteigenskapar"
+msgid "searchreplace_dlg_searchnext_desc"
+msgstr "Søk igjen"
 
-msgid "fullpage_dlg_active_color"
-msgstr "Aktiv farge"
+msgid "searchreplace_dlg_notfound"
+msgstr "Søket avslutta. Fann ikkje søkjestrengen."
 
-msgid "fullpage_dlg_add"
-msgstr "Legg til nytt element"
+msgid "searchreplace_dlg_search_title"
+msgstr "Søk"
 
-msgid "fullpage_dlg_add_base"
-msgstr "Basiselement"
+msgid "searchreplace_dlg_replace_title"
+msgstr "Søk/Erstatt"
 
-msgid "fullpage_dlg_add_comment"
-msgstr "Kommentarnode"
+msgid "searchreplace_dlg_allreplaced"
+msgstr "Alle førekomstar av søkjestrengen er erstatta."
 
-msgid "fullpage_dlg_add_link"
-msgstr "Lenkjeelement"
+msgid "searchreplace_dlg_findwhat"
+msgstr "Finn kva"
 
-msgid "fullpage_dlg_add_meta"
-msgstr "Metaelement"
+msgid "searchreplace_dlg_replacewith"
+msgstr "Erstatt med"
 
-msgid "fullpage_dlg_add_script"
-msgstr "Skriptelement"
+msgid "searchreplace_dlg_direction"
+msgstr "Retning"
 
-msgid "fullpage_dlg_add_style"
-msgstr "Stilelement"
+msgid "searchreplace_dlg_up"
+msgstr "Oppover"
 
-msgid "fullpage_dlg_add_title"
-msgstr "Tittelelement"
+msgid "searchreplace_dlg_down"
+msgstr "Nedover"
 
-msgid "fullpage_dlg_advanced_props"
-msgstr "Generelle eigenskapar"
+msgid "searchreplace_dlg_mcase"
+msgstr "Skill mellom store og små teikn"
 
-msgid "fullpage_dlg_advanced_tab"
-msgstr "Avansert"
+msgid "searchreplace_dlg_findnext"
+msgstr "Finn neste"
 
-msgid "fullpage_dlg_appearance_bgprops"
-msgstr "Bakgrunnseigenskapar"
+msgid "searchreplace_dlg_replace"
+msgstr "Erstatt"
 
-msgid "fullpage_dlg_appearance_linkprops"
-msgstr "Lenkjefargar"
+msgid "searchreplace_dlg_replaceall"
+msgstr "Erstatt alt"
 
-msgid "fullpage_dlg_appearance_marginprops"
-msgstr "Body-marg"
+msgid "ploneimage_image_desc"
+msgstr "Set inn / endre bilete"
 
-msgid "fullpage_dlg_appearance_style"
-msgstr "Stilark og stileigenskapar"
-
-msgid "fullpage_dlg_appearance_tab"
-msgstr "Utsjånad"
-
-msgid "fullpage_dlg_appearance_textprops"
-msgstr "Teksteigenskapar"
-
-msgid "fullpage_dlg_author"
-msgstr "Forfattar"
-
-msgid "fullpage_dlg_base_element"
-msgstr "Basiselement"
-
-msgid "fullpage_dlg_bgcolor"
-msgstr "Bakgrunn"
-
-msgid "fullpage_dlg_bgimage"
-msgstr "Bakgrunnsbilete"
-
-msgid "fullpage_dlg_bottom_margin"
-msgstr "Botnmarg"
-
-msgid "fullpage_dlg_charset"
-msgstr "Teiknsett"
-
-msgid "fullpage_dlg_comment_element"
-msgstr "Kommentar"
-
-msgid "fullpage_dlg_content"
-msgstr "Nytt lag..."
-
-msgid "fullpage_dlg_copyright"
-msgstr "Copyright"
-
-msgid "fullpage_dlg_defer"
-msgstr "Defer"
-
-msgid "fullpage_dlg_doctypes"
-msgstr "Doctype"
-
-msgid "fullpage_dlg_encoding"
-msgstr "Teiknkonvertering"
-
-msgid "fullpage_dlg_font_face"
-msgstr "Skrifttype"
-
-msgid "fullpage_dlg_font_size"
-msgstr "Skriftstorleik"
-
-msgid "fullpage_dlg_fontface"
-msgstr "Skriftfamile"
-
-msgid "fullpage_dlg_fontsize"
-msgstr "Skriftstorleik"
-
-msgid "fullpage_dlg_general_props"
-msgstr "Generelt"
-
-msgid "fullpage_dlg_head_elements"
-msgstr "Overskriftselement"
-
-msgid "fullpage_dlg_hover_color"
-msgstr "Mus-over-farge"
-
-msgid "fullpage_dlg_href"
-msgstr "Href"
-
-msgid "fullpage_dlg_hreflang"
-msgstr "Href lang"
-
-msgid "fullpage_dlg_info"
-msgstr "Informasjon"
-
-msgid "fullpage_dlg_langcode"
-msgstr "Språkkode"
-
-msgid "fullpage_dlg_langdir"
-msgstr "Skriftretning"
-
-msgid "fullpage_dlg_langprops"
-msgstr "Språk og koding"
-
-msgid "fullpage_dlg_language"
-msgstr "Språk"
-
-msgid "fullpage_dlg_left_margin"
-msgstr "Venstre marg"
-
-msgid "fullpage_dlg_link_color"
-msgstr "Lenkjefarge"
-
-msgid "fullpage_dlg_link_element"
-msgstr "Lenkjeelement"
-
-msgid "fullpage_dlg_ltr"
-msgstr "Venstre mot høgre"
-
-msgid "fullpage_dlg_media"
-msgstr "Objekt"
-
-msgid "fullpage_dlg_meta_description"
-msgstr "Omtale"
-
-msgid "fullpage_dlg_meta_element"
-msgstr "Metaelement"
-
-msgid "fullpage_dlg_meta_index_follow"
-msgstr "Indekser, og følg lenkjene"
-
-msgid "fullpage_dlg_meta_index_nofollow"
-msgstr "Indekser, men ikkje følg lenkjene"
-
-msgid "fullpage_dlg_meta_keywords"
-msgstr "Nøkkelord"
-
-msgid "fullpage_dlg_meta_noindex_follow"
-msgstr "Ikkje indekser, men følg lenkjene"
-
-msgid "fullpage_dlg_meta_noindex_nofollow"
-msgstr "Ikkje indekser, og ikkje følg lenkjene"
-
-msgid "fullpage_dlg_meta_props"
-msgstr "Metainformasjon"
-
-msgid "fullpage_dlg_meta_robots"
-msgstr "Roboter"
-
-msgid "fullpage_dlg_meta_tab"
-msgstr "Generelt"
-
-msgid "fullpage_dlg_meta_title"
-msgstr "Tittel"
-
-msgid "fullpage_dlg_movedown"
-msgstr "Flytt markert element ned"
-
-msgid "fullpage_dlg_moveup"
-msgstr "Flytt markert element opp"
-
-msgid "fullpage_dlg_name"
-msgstr "Namn"
-
-msgid "fullpage_dlg_properties"
-msgstr "Eigenskapar"
-
-msgid "fullpage_dlg_rel"
-msgstr "Sida sitt tilhøve til målet"
-
-msgid "fullpage_dlg_remove"
-msgstr "Fjern"
-
-msgid "fullpage_dlg_rev"
-msgstr "Målet sitt tilhøve til sida"
-
-msgid "fullpage_dlg_right_margin"
-msgstr "Høgre marg"
-
-msgid "fullpage_dlg_rtl"
-msgstr "Høgre mot venstre"
-
-msgid "fullpage_dlg_script_element"
-msgstr "Skriptelement"
-
-msgid "fullpage_dlg_src"
-msgstr "Skjerm"
-
-msgid "fullpage_dlg_style"
-msgstr "Stil"
-
-msgid "fullpage_dlg_style_element"
-msgstr "Stilelement"
-
-msgid "fullpage_dlg_stylesheet"
-msgstr "Stilark"
-
-msgid "fullpage_dlg_target"
-msgstr "Mål"
-
-msgid "fullpage_dlg_text_color"
-msgstr "Farge"
-
-msgid "fullpage_dlg_textcolor"
-msgstr "Farge"
-
-msgid "fullpage_dlg_title"
-msgstr "Dokumenteigenskapar"
-
-msgid "fullpage_dlg_title_element"
-msgstr "Tittelelement"
-
-msgid "fullpage_dlg_top_margin"
-msgstr "Toppmarg"
-
-msgid "fullpage_dlg_type"
-msgstr "Type"
-
-msgid "fullpage_dlg_value"
-msgstr "Verdi"
-
-msgid "fullpage_dlg_visited_color"
-msgstr "Besøkt-farge"
-
-msgid "fullpage_dlg_xml_pi"
-msgstr "XML-deklarasjon"
-
-msgid "fullscreen_desc"
-msgstr "Skift til/frå fullskjermmodus"
-
-msgid "iespell_download"
-msgstr "ieSpell ikkje funnen. Ønskjer du å installere ieSpell no?"
-
-msgid "iespell_iespell_desc"
-msgstr "Køyrer kontroll av rettskriving"
-
-msgid "insertdatetime_date_fmt"
-msgstr "%Y-%m-%d"
-
-msgid "insertdatetime_day_long"
-msgstr "sundag,mandag,tirsdag,onsdag,torsdag,fredag,laurdag,sundag"
-
-msgid "insertdatetime_day_short"
-msgstr "sun,man,tir,ons,tor,fre,lau,sun"
-
-msgid "insertdatetime_insertdate_desc"
-msgstr "Lim inn dato"
-
-msgid "insertdatetime_inserttime_desc"
-msgstr "Lim inn tid"
-
-msgid "insertdatetime_months_long"
-msgstr "januar,februar,mars,april,mai,juni,juli,august,september,oktober,november,desember"
-
-msgid "insertdatetime_months_short"
-msgstr "jan,feb,mar,apr,mai,jun,jul,aug,sep,oct,nov,des"
-
-msgid "insertdatetime_time_fmt"
-msgstr "%H:%M:%S"
-
-msgid "layer_absolute_desc"
-msgstr "Slå på/av absolutt plassering"
-
-msgid "layer_backward_desc"
-msgstr "Flytt bakover"
-
-msgid "layer_content"
-msgstr "Nytt lag..."
-
-msgid "layer_forward_desc"
-msgstr "Flytt framover"
-
-msgid "layer_insertlayer_desc"
-msgstr "Set inn nytt lag"
-
-msgid "media_delta_height"
+msgid "ploneimage_delta_width"
 msgstr ""
-
-msgid "media_delta_width"
-msgstr ""
-
-msgid "media_desc"
-msgstr "Set inn / rediger inkludert objekt"
-
-msgid "media_dlg_advanced"
-msgstr "Avansert"
-
-msgid "media_dlg_align"
-msgstr "Justering"
-
-msgid "media_dlg_align_bottom"
-msgstr "Botn"
-
-msgid "media_dlg_align_bottom_left"
-msgstr "Botn venste"
-
-msgid "media_dlg_align_bottom_right"
-msgstr "Botn høgre"
-
-msgid "media_dlg_align_center"
-msgstr "Midt"
-
-msgid "media_dlg_align_left"
-msgstr "Venstre"
-
-msgid "media_dlg_align_right"
-msgstr "Høgre"
-
-msgid "media_dlg_align_top"
-msgstr "Topp"
-
-msgid "media_dlg_align_top_left"
-msgstr "Topp venstre"
-
-msgid "media_dlg_align_top_right"
-msgstr "Top høgre"
-
-msgid "media_dlg_autogotourl"
-msgstr "Auto-gå-til-URL"
-
-msgid "media_dlg_autohref"
-msgstr "AutoHREF"
-
-msgid "media_dlg_autostart"
-msgstr "Autostart"
-
-msgid "media_dlg_balance"
-msgstr "Balanse"
-
-msgid "media_dlg_base"
-msgstr "Base"
-
-msgid "media_dlg_baseurl"
-msgstr "Base URL"
-
-msgid "media_dlg_bgcolor"
-msgstr "Bakgrunn"
-
-msgid "media_dlg_cache"
-msgstr "Cache"
-
-msgid "media_dlg_captioningid"
-msgstr "Fange opp id"
-
-msgid "media_dlg_center"
-msgstr "Midtstill"
-
-msgid "media_dlg_class_name"
-msgstr "Klasse"
-
-msgid "media_dlg_console"
-msgstr "Konsoll"
-
-msgid "media_dlg_constrain_proportions"
-msgstr "Behald proporsjonar"
-
-msgid "media_dlg_controller"
-msgstr "Kontroller"
-
-msgid "media_dlg_controls"
-msgstr "Kontroller"
-
-msgid "media_dlg_correction"
-msgstr "Ingen korreksjon"
-
-msgid "media_dlg_currentmarker"
-msgstr "Aktiv markør"
-
-msgid "media_dlg_currentposition"
-msgstr "Aktiv posisjon"
-
-msgid "media_dlg_defaultframe"
-msgstr "Standardramme"
-
-msgid "media_dlg_enabled"
-msgstr "Køyrbar"
-
-msgid "media_dlg_enablejavascript"
-msgstr "Tillat Javaskript"
-
-msgid "media_dlg_endtime"
-msgstr "Stopptid"
-
-msgid "media_dlg_file"
-msgstr "Fil/URL"
-
-msgid "media_dlg_flash_options"
-msgstr "Flash-eigenskapar"
-
-msgid "media_dlg_flashvars"
-msgstr "Flash-variablar"
-
-msgid "media_dlg_flv_autostart"
-msgstr "Autostart"
-
-msgid "media_dlg_flv_buffer"
-msgstr "Buffer"
-
-msgid "media_dlg_flv_defaultvolume"
-msgstr "Standardvolum"
-
-msgid "media_dlg_flv_hiddengui"
-msgstr "Skjult GUI"
-
-msgid "media_dlg_flv_jscallback"
-msgstr "JS Callback"
-
-msgid "media_dlg_flv_loop"
-msgstr "Løkke"
-
-msgid "media_dlg_flv_options"
-msgstr "Flash video-val"
-
-msgid "media_dlg_flv_scalemode"
-msgstr "Skalering"
-
-msgid "media_dlg_flv_showscalemodes"
-msgstr "Vis skalering"
-
-msgid "media_dlg_flv_smoothvideo"
-msgstr "Jamn video"
-
-msgid "media_dlg_flv_startimage"
-msgstr "Startbilde"
-
-msgid "media_dlg_flv_starttime"
-msgstr "Starttid"
-
-msgid "media_dlg_fullscreen"
-msgstr "Fullskjerm"
-
-msgid "media_dlg_general"
-msgstr "Generelt"
-
-msgid "media_dlg_hidden"
-msgstr "Skjult"
-
-msgid "media_dlg_href"
-msgstr "Href"
-
-msgid "media_dlg_hspace"
-msgstr "Horisontal avstand"
-
-msgid "media_dlg_id"
-msgstr "Id"
-
-msgid "media_dlg_imagestatus"
-msgstr "Status for bilete"
-
-msgid "media_dlg_invokeurls"
-msgstr "Aktiviser URL-ar"
-
-msgid "media_dlg_kioskmode"
-msgstr "Kiosk-modus"
-
-msgid "media_dlg_list"
-msgstr "Liste"
-
-msgid "media_dlg_liveconnect"
-msgstr "SWLiveConnect"
-
-msgid "media_dlg_loop"
-msgstr "Lykkje"
-
-msgid "media_dlg_maintainaspect"
-msgstr "Behald proporsjonar"
-
-msgid "media_dlg_menu"
-msgstr "Vis meny"
-
-msgid "media_dlg_mute"
-msgstr "Demp"
-
-msgid "media_dlg_name"
-msgstr "Namn"
-
-msgid "media_dlg_nojava"
-msgstr "Ikke Java"
-
-msgid "media_dlg_numloop"
-msgstr "Antal gjennomløp"
-
-msgid "media_dlg_play"
-msgstr "Autostart"
-
-msgid "media_dlg_playcount"
-msgstr "Tellar"
-
-msgid "media_dlg_playeveryframe"
-msgstr "Spel kvar ramme"
-
-msgid "media_dlg_prefetch"
-msgstr "Registrer på førehand"
-
-msgid "media_dlg_preview"
-msgstr "Sjå førebels utkast"
-
-msgid "media_dlg_progress"
-msgstr "Framdrift"
-
-msgid "media_dlg_qt_options"
-msgstr "Quicktime-innstillingar"
-
-msgid "media_dlg_qt_stream_warn"
-msgstr ""
-"Streama rtsp-ressursar bør leggsst til QT Src field i avansert-fana.\n"
-"Du bør også leggje til ein ikkje-streama versjon i src field"
-
-msgid "media_dlg_qtsrc"
-msgstr "QT Src"
-
-msgid "media_dlg_qtsrcchokespeed"
-msgstr "Choke speed"
-
-msgid "media_dlg_quality"
-msgstr "Kvalitet"
-
-msgid "media_dlg_rate"
-msgstr "Rate"
-
-msgid "media_dlg_rmp_options"
-msgstr "Real mediaplayer-innstillingar"
-
-msgid "media_dlg_salign"
-msgstr "S-justering"
-
-msgid "media_dlg_scale"
-msgstr "Skalering"
-
-msgid "media_dlg_scriptcallbacks"
-msgstr "Skript-referanser"
-
-msgid "media_dlg_shockwave_options"
-msgstr "Shockwave-innstillinger"
-
-msgid "media_dlg_shuffle"
-msgstr "Miks"
-
-msgid "media_dlg_size"
-msgstr "Storleik"
-
-msgid "media_dlg_sound"
-msgstr "Lyd"
-
-msgid "media_dlg_starttime"
-msgstr "Starttid"
-
-msgid "media_dlg_stretchtofit"
-msgstr "Strekk for å passe inn"
-
-msgid "media_dlg_swstretchhalign"
-msgstr "Strekk H-justering"
-
-msgid "media_dlg_swstretchstyle"
-msgstr "Strekkstil"
-
-msgid "media_dlg_swstretchvalign"
-msgstr "Strekk V-justering"
-
-msgid "media_dlg_target"
-msgstr "Mål"
-
-msgid "media_dlg_targetcache"
-msgstr "Mål-cache"
-
-msgid "media_dlg_title"
-msgstr "Set inn / rediger inkludert objekt"
-
-msgid "media_dlg_type"
-msgstr "Type"
-
-msgid "media_dlg_uimode"
-msgstr "UI-modus"
-
-msgid "media_dlg_volume"
-msgstr "Volum"
-
-msgid "media_dlg_vspace"
-msgstr "Vertikal avstand"
-
-msgid "media_dlg_windowlessvideo"
-msgstr "Video utan vindauge"
-
-msgid "media_dlg_wmode"
-msgstr "W-modus"
-
-msgid "media_dlg_wmp_options"
-msgstr "Windows mediaplayer-innstillingar"
-
-msgid "media_edit"
-msgstr "Endre innsett objekt"
-
-msgid "nonbreaking_nonbreaking_desc"
-msgstr "Set inn hardt mellomrom"
-
-msgid "pagebreak_desc"
-msgstr "Set inn sideskift"
-
-msgid "paste_dlg_text_linebreaks"
-msgstr "Behald tekstbryting"
-
-msgid "paste_dlg_text_title"
-msgstr "Bruk CTRL+V på tastaturet for å lime inn i dette vindauget."
-
-msgid "paste_dlg_word_title"
-msgstr "Bruk CTRL+V på tastaturet for å lime inn i dette vindauget."
-
-msgid "paste_paste_text_desc"
-msgstr "Lim inn som vanleg tekst"
-
-msgid "paste_paste_word_desc"
-msgstr "Lim inn frå Word"
-
-msgid "paste_plaintext_mode"
-msgstr "Paste is now in plain text mode. Click again to toggle back to regular paste mode."
-
-msgid "paste_plaintext_mode_sticky"
-msgstr "Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode."
-
-msgid "paste_selectall_desc"
-msgstr "Marker al"
 
 msgid "ploneimage_delta_height"
 msgstr ""
 
-msgid "ploneimage_delta_width"
-msgstr ""
+msgid "ploneimage_dlg_tab_general"
+msgstr "Generelt"
+
+msgid "ploneimage_dlg_tab_appearance"
+msgstr "Utsjånad"
+
+msgid "ploneimage_dlg_tab_advanced"
+msgstr "Avansert"
+
+msgid "ploneimage_dlg_general"
+msgstr "Generelt"
+
+msgid "ploneimage_dlg_title"
+msgstr "Tittel"
+
+msgid "ploneimage_dlg_preview"
+msgstr "Sjå førebels utkast"
+
+msgid "ploneimage_dlg_constrain_proportions"
+msgstr "Behald proporsjonar"
+
+msgid "ploneimage_dlg_langdir"
+msgstr "Skriftretning"
+
+msgid "ploneimage_dlg_langcode"
+msgstr "Språkkode"
+
+msgid "ploneimage_dlg_long_desc"
+msgstr "Lang omtale"
+
+msgid "ploneimage_dlg_style"
+msgstr "Stil"
+
+msgid "ploneimage_dlg_classes"
+msgstr "Klasser"
+
+msgid "ploneimage_dlg_ltr"
+msgstr "Venstre mot høgre"
+
+msgid "ploneimage_dlg_rtl"
+msgstr "Høgre mot venstre"
+
+msgid "ploneimage_dlg_id"
+msgstr "Id"
+
+msgid "ploneimage_dlg_map"
+msgstr "Biletekart"
+
+msgid "ploneimage_dlg_swap_image"
+msgstr "Byt bilete"
+
+msgid "ploneimage_dlg_alt_image"
+msgstr "Alternativt bilete"
+
+msgid "ploneimage_dlg_mouseover"
+msgstr "for musepeikar over"
+
+msgid "ploneimage_dlg_mouseout"
+msgstr "for musepeikar utanfor"
+
+msgid "ploneimage_dlg_misc"
+msgstr "Anna"
+
+msgid "ploneimage_dlg_example_img"
+msgstr "Sjå førebels utkast av bilete"
+
+msgid "ploneimage_dlg_missing_alt"
+msgstr "Er du sikker på at du vil fortsetje utan å setje inn ei omtale av biletet? Utan omtale vil biletet ikkje gje meining for enkelte funksjonshemma eller for personar som bruker ein nettlesar med biletvisinga avslått."
+
+msgid "ploneimage_dlg_dialog_title"
+msgstr "Set inn / endre bilete"
+
+msgid "ploneimage_dlg_src"
+msgstr "Bilete-URL"
+
+msgid "ploneimage_dlg_alt"
+msgstr "Bileteomtale"
+
+msgid "ploneimage_dlg_list"
+msgstr "Bileteliste"
+
+msgid "ploneimage_dlg_border"
+msgstr "Ramme"
+
+msgid "ploneimage_dlg_dimensions"
+msgstr "Dimensjonar"
+
+msgid "ploneimage_dlg_vspace"
+msgstr "Vertikal avstand"
+
+msgid "ploneimage_dlg_hspace"
+msgstr "Horisontal avstand"
 
 msgid "ploneimage_dlg_align"
 msgstr "Justering"
@@ -1228,164 +768,50 @@ msgstr "Justering"
 msgid "ploneimage_dlg_align_baseline"
 msgstr "Basislinje"
 
-msgid "ploneimage_dlg_align_bottom"
-msgstr "Botn"
-
-msgid "ploneimage_dlg_align_left"
-msgstr "Venstre"
+msgid "ploneimage_dlg_align_top"
+msgstr "Topp"
 
 msgid "ploneimage_dlg_align_middle"
 msgstr "Midtstilt"
 
-msgid "ploneimage_dlg_align_right"
-msgstr "Høgre"
-
-msgid "ploneimage_dlg_align_textbottom"
-msgstr "Tekst botn"
+msgid "ploneimage_dlg_align_bottom"
+msgstr "Botn"
 
 msgid "ploneimage_dlg_align_texttop"
 msgstr "Tekst topp"
 
-msgid "ploneimage_dlg_align_top"
-msgstr "Topp"
+msgid "ploneimage_dlg_align_textbottom"
+msgstr "Tekst botn"
 
-msgid "ploneimage_dlg_alt"
-msgstr "Bileteomtale"
+msgid "ploneimage_dlg_align_left"
+msgstr "Venstre"
 
-msgid "ploneimage_dlg_alt_image"
-msgstr "Alternativt bilete"
-
-msgid "ploneimage_dlg_border"
-msgstr "Ramme"
-
-msgid "ploneimage_dlg_classes"
-msgstr "Klasser"
-
-msgid "ploneimage_dlg_constrain_proportions"
-msgstr "Behald proporsjonar"
-
-msgid "ploneimage_dlg_dialog_title"
-msgstr "Set inn / endre bilete"
-
-msgid "ploneimage_dlg_dimensions"
-msgstr "Dimensjonar"
-
-msgid "ploneimage_dlg_example_img"
-msgstr "Sjå førebels utkast av bilete"
-
-msgid "ploneimage_dlg_general"
-msgstr "Generelt"
-
-msgid "ploneimage_dlg_hspace"
-msgstr "Horisontal avstand"
-
-msgid "ploneimage_dlg_id"
-msgstr "Id"
+msgid "ploneimage_dlg_align_right"
+msgstr "Høgre"
 
 msgid "ploneimage_dlg_image_list"
 msgstr "Liste med bilete"
 
-msgid "ploneimage_dlg_langcode"
-msgstr "Språkkode"
-
-msgid "ploneimage_dlg_langdir"
-msgstr "Skriftretning"
-
-msgid "ploneimage_dlg_list"
-msgstr "Bileteliste"
-
-msgid "ploneimage_dlg_long_desc"
-msgstr "Lang omtale"
-
-msgid "ploneimage_dlg_ltr"
-msgstr "Venstre mot høgre"
-
-msgid "ploneimage_dlg_map"
-msgstr "Biletekart"
-
-msgid "ploneimage_dlg_misc"
-msgstr "Anna"
-
-msgid "ploneimage_dlg_missing_alt"
-msgstr "Er du sikker på at du vil fortsetje utan å setje inn ei omtale av biletet? Utan omtale vil biletet ikkje gje meining for enkelte funksjonshemma eller for personar som bruker ein nettlesar med biletvisinga avslått."
-
-msgid "ploneimage_dlg_mouseout"
-msgstr "for musepeikar utanfor"
-
-msgid "ploneimage_dlg_mouseover"
-msgstr "for musepeikar over"
-
-msgid "ploneimage_dlg_preview"
-msgstr "Sjå førebels utkast"
-
-msgid "ploneimage_dlg_rtl"
-msgstr "Høgre mot venstre"
-
-msgid "ploneimage_dlg_src"
-msgstr "Bilete-URL"
-
-msgid "ploneimage_dlg_style"
-msgstr "Stil"
-
-msgid "ploneimage_dlg_swap_image"
-msgstr "Byt bilete"
-
-msgid "ploneimage_dlg_tab_advanced"
-msgstr "Avansert"
-
-msgid "ploneimage_dlg_tab_appearance"
-msgstr "Utsjånad"
-
-msgid "ploneimage_dlg_tab_general"
-msgstr "Generelt"
-
-msgid "ploneimage_dlg_title"
-msgstr "Tittel"
-
-msgid "ploneimage_dlg_vspace"
-msgstr "Vertikal avstand"
-
-msgid "ploneimage_image_desc"
-msgstr "Set inn / endre bilete"
-
-msgid "plonelink_delta_height"
-msgstr ""
+msgid "plonelink_link_desc"
+msgstr "Set inn / endre lenkje"
 
 msgid "plonelink_delta_width"
 msgstr ""
 
-msgid "plonelink_dlg_accesskey"
-msgstr "Hurtigtast"
+msgid "plonelink_delta_height"
+msgstr ""
 
-msgid "plonelink_dlg_advanced_props"
-msgstr "Generelle eigenskapar"
+msgid "plonelink_dlg_title"
+msgstr "Set inn / rediger lenkje"
 
-msgid "plonelink_dlg_advanced_tab"
-msgstr "Avansert"
+msgid "plonelink_dlg_url"
+msgstr "Lenkje-URL"
 
-msgid "plonelink_dlg_anchor_names"
-msgstr "Anker"
+msgid "plonelink_dlg_target"
+msgstr "Mål"
 
-msgid "plonelink_dlg_classes"
-msgstr "Klasser"
-
-msgid "plonelink_dlg_encoding"
-msgstr "Teiknkonvertering"
-
-msgid "plonelink_dlg_event_props"
-msgstr "Hendingar"
-
-msgid "plonelink_dlg_events_tab"
-msgstr "Hendingar"
-
-msgid "plonelink_dlg_general_props"
-msgstr "Generelt"
-
-msgid "plonelink_dlg_general_tab"
-msgstr "Generelt"
-
-msgid "plonelink_dlg_id"
-msgstr "Id"
+msgid "plonelink_dlg_titlefield"
+msgstr "Tittel"
 
 msgid "plonelink_dlg_is_email"
 msgstr "URL-en du skreiv inn ser ut til å vere ei e-postadresse. Ønskjer du å leggje til det obligatoriske mailto:-prefikset?"
@@ -1393,50 +819,59 @@ msgstr "URL-en du skreiv inn ser ut til å vere ei e-postadresse. Ønskjer du å
 msgid "plonelink_dlg_is_external"
 msgstr "URL-en du skreiv inn ser ut til å vere ei eksern lenkje. Ønskjer du å leggje til det obligatoriske http://-prefikset?"
 
-msgid "plonelink_dlg_langcode"
-msgstr "Språkkode"
-
-msgid "plonelink_dlg_langdir"
-msgstr "Skriftretning"
-
-msgid "plonelink_dlg_link_list"
-msgstr "Lenkjeliste"
-
 msgid "plonelink_dlg_list"
 msgstr "Lenkjeliste"
 
-msgid "plonelink_dlg_ltr"
-msgstr "Venstre mot høgre"
+msgid "plonelink_dlg_general_tab"
+msgstr "Generelt"
 
-msgid "plonelink_dlg_mime"
-msgstr "Målet sin MIME-type"
+msgid "plonelink_dlg_popup_tab"
+msgstr "Popup"
 
-msgid "plonelink_dlg_popup"
-msgstr "Javascript-popup"
+msgid "plonelink_dlg_events_tab"
+msgstr "Hendingar"
 
-msgid "plonelink_dlg_popup_dependent"
-msgstr "Avhengig vindu (berre i Mozilla/Firefox)"
+msgid "plonelink_dlg_advanced_tab"
+msgstr "Avansert"
 
-msgid "plonelink_dlg_popup_location"
-msgstr "Vis plasseringsline"
-
-msgid "plonelink_dlg_popup_menubar"
-msgstr "Vis menyline"
-
-msgid "plonelink_dlg_popup_name"
-msgstr "Namn på vindauge"
-
-msgid "plonelink_dlg_popup_opts"
-msgstr "Innstillingar"
-
-msgid "plonelink_dlg_popup_position"
-msgstr "Posisjon (X/Y)"
+msgid "plonelink_dlg_general_props"
+msgstr "Generelt"
 
 msgid "plonelink_dlg_popup_props"
 msgstr "Popup-eigenskapar"
 
-msgid "plonelink_dlg_popup_resizable"
-msgstr "Gjer vindauget skalerbart"
+msgid "plonelink_dlg_event_props"
+msgstr "Hendingar"
+
+msgid "plonelink_dlg_advanced_props"
+msgstr "Generelle eigenskapar"
+
+msgid "plonelink_dlg_popup_opts"
+msgstr "Innstillingar"
+
+msgid "plonelink_dlg_anchor_names"
+msgstr "Anker"
+
+msgid "plonelink_dlg_target_same"
+msgstr "Opne i same vindauge/ramme"
+
+msgid "plonelink_dlg_target_parent"
+msgstr "Opne i overordna vindauge/ramme"
+
+msgid "plonelink_dlg_target_top"
+msgstr "Opne i toppvindauge (erstattar alle rammer)"
+
+msgid "plonelink_dlg_target_blank"
+msgstr "Opne i nytt vindauge"
+
+msgid "plonelink_dlg_popup"
+msgstr "Javascript-popup"
+
+msgid "plonelink_dlg_popup_url"
+msgstr "Popup URL"
+
+msgid "plonelink_dlg_popup_name"
+msgstr "Namn på vindauge"
 
 msgid "plonelink_dlg_popup_return"
 msgstr "Set inn 'return false'"
@@ -1444,20 +879,56 @@ msgstr "Set inn 'return false'"
 msgid "plonelink_dlg_popup_scrollbars"
 msgstr "Vis rullefelt"
 
-msgid "plonelink_dlg_popup_size"
-msgstr "Storleik"
-
 msgid "plonelink_dlg_popup_statusbar"
 msgstr "Vis statusline"
-
-msgid "plonelink_dlg_popup_tab"
-msgstr "Popup"
 
 msgid "plonelink_dlg_popup_toolbar"
 msgstr "Vis verktyliner"
 
-msgid "plonelink_dlg_popup_url"
-msgstr "Popup URL"
+msgid "plonelink_dlg_popup_menubar"
+msgstr "Vis menyline"
+
+msgid "plonelink_dlg_popup_location"
+msgstr "Vis plasseringsline"
+
+msgid "plonelink_dlg_popup_resizable"
+msgstr "Gjer vindauget skalerbart"
+
+msgid "plonelink_dlg_popup_dependent"
+msgstr "Avhengig vindu (berre i Mozilla/Firefox)"
+
+msgid "plonelink_dlg_popup_size"
+msgstr "Storleik"
+
+msgid "plonelink_dlg_popup_position"
+msgstr "Posisjon (X/Y)"
+
+msgid "plonelink_dlg_id"
+msgstr "Id"
+
+msgid "plonelink_dlg_style"
+msgstr "Stil"
+
+msgid "plonelink_dlg_classes"
+msgstr "Klasser"
+
+msgid "plonelink_dlg_target_name"
+msgstr "Målnamn"
+
+msgid "plonelink_dlg_langdir"
+msgstr "Skriftretning"
+
+msgid "plonelink_dlg_target_langcode"
+msgstr "Målspråk"
+
+msgid "plonelink_dlg_langcode"
+msgstr "Språkkode"
+
+msgid "plonelink_dlg_encoding"
+msgstr "Teiknkonvertering"
+
+msgid "plonelink_dlg_mime"
+msgstr "Målet sin MIME-type"
 
 msgid "plonelink_dlg_rel"
 msgstr "Sida sitt forhold til målet"
@@ -1465,791 +936,95 @@ msgstr "Sida sitt forhold til målet"
 msgid "plonelink_dlg_rev"
 msgstr "Målet sitt forhold til sida"
 
-msgid "plonelink_dlg_rtl"
-msgstr "Høgre mot venstre"
-
-msgid "plonelink_dlg_style"
-msgstr "Stil"
-
 msgid "plonelink_dlg_tabindex"
 msgstr "Tabulatorindeks"
 
-msgid "plonelink_dlg_target"
-msgstr "Mål"
+msgid "plonelink_dlg_accesskey"
+msgstr "Hurtigtast"
 
-msgid "plonelink_dlg_target_blank"
-msgstr "Opne i nytt vindauge"
-
-msgid "plonelink_dlg_target_langcode"
-msgstr "Målspråk"
-
-msgid "plonelink_dlg_target_name"
-msgstr "Målnamn"
-
-msgid "plonelink_dlg_target_parent"
-msgstr "Opne i overordna vindauge/ramme"
-
-msgid "plonelink_dlg_target_same"
-msgstr "Opne i same vindauge/ramme"
-
-msgid "plonelink_dlg_target_top"
-msgstr "Opne i toppvindauge (erstattar alle rammer)"
-
-msgid "plonelink_dlg_title"
-msgstr "Set inn / rediger lenkje"
-
-msgid "plonelink_dlg_titlefield"
-msgstr "Tittel"
-
-msgid "plonelink_dlg_url"
-msgstr "Lenkje-URL"
-
-msgid "plonelink_link_desc"
-msgstr "Set inn / endre lenkje"
-
-msgid "preview_preview_desc"
-msgstr "Førehandsvisni"
-
-msgid "print_print_desc"
-msgstr "Skriv u"
-
-msgid "save_cancel_desc"
-msgstr "Kanseller alle endringar"
-
-msgid "save_save_desc"
-msgstr "Lagre"
-
-msgid "searchreplace_delta_height"
-msgstr ""
-
-msgid "searchreplace_delta_width"
-msgstr ""
-
-msgid "searchreplace_dlg_allreplaced"
-msgstr "Alle førekomstar av søkjestrengen er erstatta."
-
-msgid "searchreplace_dlg_direction"
-msgstr "Retning"
-
-msgid "searchreplace_dlg_down"
-msgstr "Nedover"
-
-msgid "searchreplace_dlg_findnext"
-msgstr "Finn neste"
-
-msgid "searchreplace_dlg_findwhat"
-msgstr "Finn kva"
-
-msgid "searchreplace_dlg_mcase"
-msgstr "Skill mellom store og små teikn"
-
-msgid "searchreplace_dlg_notfound"
-msgstr "Søket avslutta. Fann ikkje søkjestrengen."
-
-msgid "searchreplace_dlg_replace"
-msgstr "Erstatt"
-
-msgid "searchreplace_dlg_replace_title"
-msgstr "Søk/Erstatt"
-
-msgid "searchreplace_dlg_replaceall"
-msgstr "Erstatt alt"
-
-msgid "searchreplace_dlg_replacewith"
-msgstr "Erstatt med"
-
-msgid "searchreplace_dlg_search_title"
-msgstr "Søk"
-
-msgid "searchreplace_dlg_searchnext_desc"
-msgstr "Søk igjen"
-
-msgid "searchreplace_dlg_up"
-msgstr "Oppover"
-
-msgid "searchreplace_replace_desc"
-msgstr "Søk/Erstatt"
-
-msgid "searchreplace_search_desc"
-msgstr "Søk"
-
-msgid "simple_bold_desc"
-msgstr "Feit"
-
-msgid "simple_bullist_desc"
-msgstr "Punktliste"
-
-msgid "simple_cleanup_desc"
-msgstr "Rens grisete kode"
-
-msgid "simple_italic_desc"
-msgstr "Kursiv"
-
-msgid "simple_numlist_desc"
-msgstr "Nummerliste"
-
-msgid "simple_redo_desc"
-msgstr "Gjer om"
-
-msgid "simple_striketrough_desc"
-msgstr "Gjennomstreking"
-
-msgid "simple_underline_desc"
-msgstr "Understreking"
-
-msgid "simple_undo_desc"
-msgstr "Angre"
-
-msgid "spellchecker_desc"
-msgstr "Stavekontroll på/av"
-
-msgid "spellchecker_ignore_word"
-msgstr "Ignorer ord"
-
-msgid "spellchecker_ignore_words"
-msgstr "Ignorer alt"
-
-msgid "spellchecker_langs"
-msgstr "Språk"
-
-msgid "spellchecker_menu"
-msgstr "Vis meny"
-
-msgid "spellchecker_no_mpell"
-msgstr "Inga stavefeil funne."
-
-msgid "spellchecker_no_sug"
-msgstr "Inga framlegg"
-
-msgid "spellchecker_sug"
-msgstr "Framlegg"
-
-msgid "spellchecker_wait"
-msgstr "Ver venleg og vent..."
-
-msgid "style_delta_height"
-msgstr ""
-
-msgid "style_delta_width"
-msgstr ""
-
-msgid "style_desc"
-msgstr "Rediger CSS-stil"
-
-msgid "style_dlg_apply"
-msgstr "Legg til"
-
-msgid "style_dlg_background_attachment"
-msgstr "Vedlegg"
-
-msgid "style_dlg_background_color"
-msgstr "Bakgrunnsfarge"
-
-msgid "style_dlg_background_hpos"
-msgstr "Horisontal posisjon"
-
-msgid "style_dlg_background_image"
-msgstr "Bakgrunnsbilete"
-
-msgid "style_dlg_background_repeat"
-msgstr "Gjenta"
-
-msgid "style_dlg_background_tab"
-msgstr "Bakgrunn"
-
-msgid "style_dlg_background_vpos"
-msgstr "Vertikal posisjon"
-
-msgid "style_dlg_block_display"
-msgstr "Framsyning"
-
-msgid "style_dlg_block_letterspacing"
-msgstr "Bokstavmellomrom"
-
-msgid "style_dlg_block_tab"
-msgstr "Blokk"
-
-msgid "style_dlg_block_text_align"
-msgstr "Justering"
-
-msgid "style_dlg_block_text_indent"
-msgstr "Innrykk"
-
-msgid "style_dlg_block_vertical_alignment"
-msgstr "Vertikal justering"
-
-msgid "style_dlg_block_whitespace"
-msgstr "Mellomrom"
-
-msgid "style_dlg_block_wordspacing"
-msgstr "Ordmellomrom"
-
-msgid "style_dlg_border_tab"
-msgstr "Ramme"
-
-msgid "style_dlg_bottom"
-msgstr "Bunn"
-
-msgid "style_dlg_box_clear"
-msgstr "Slett"
-
-msgid "style_dlg_box_float"
-msgstr "Flyt"
-
-msgid "style_dlg_box_height"
-msgstr "Høgd"
-
-msgid "style_dlg_box_tab"
-msgstr "Boks"
-
-msgid "style_dlg_box_width"
-msgstr "Breidd"
-
-msgid "style_dlg_bullet_image"
-msgstr "Kulepunktbilete"
-
-msgid "style_dlg_clip"
-msgstr "Klipp"
-
-msgid "style_dlg_color"
-msgstr "Farge"
-
-msgid "style_dlg_height"
-msgstr "Høgd"
-
-msgid "style_dlg_left"
-msgstr "Venstre"
-
-msgid "style_dlg_list_tab"
-msgstr "Liste"
-
-msgid "style_dlg_list_type"
-msgstr "Type"
-
-msgid "style_dlg_margin"
-msgstr "Marg"
-
-msgid "style_dlg_overflow"
-msgstr "Overfylt"
-
-msgid "style_dlg_padding"
-msgstr "Utfylling"
-
-msgid "style_dlg_placement"
-msgstr "Plassering"
-
-msgid "style_dlg_position"
-msgstr "Posisjon"
-
-msgid "style_dlg_positioning_tab"
-msgstr "Posisjon"
-
-msgid "style_dlg_positioning_type"
-msgstr "Type"
-
-msgid "style_dlg_right"
-msgstr "Høgre"
-
-msgid "style_dlg_same"
-msgstr "Likt i alle"
-
-msgid "style_dlg_style"
-msgstr "Stil"
-
-msgid "style_dlg_text_blink"
-msgstr "Blink"
-
-msgid "style_dlg_text_case"
-msgstr "Kapitelar/minusklar"
-
-msgid "style_dlg_text_color"
-msgstr "Farge"
-
-msgid "style_dlg_text_decoration"
-msgstr "Dekorasjon"
-
-msgid "style_dlg_text_font"
-msgstr "Skrifttype"
-
-msgid "style_dlg_text_lineheight"
-msgstr "Linjehøgd"
-
-msgid "style_dlg_text_none"
-msgstr "Ingen"
-
-msgid "style_dlg_text_overline"
-msgstr "Heva skrift"
-
-msgid "style_dlg_text_props"
-msgstr "Eigenskapar for skrift"
-
-msgid "style_dlg_text_size"
-msgstr "Skriftstorleik"
-
-msgid "style_dlg_text_striketrough"
-msgstr "Gjennomstreking"
-
-msgid "style_dlg_text_style"
-msgstr "Skriftstil"
-
-msgid "style_dlg_text_tab"
-msgstr "Tekst"
-
-msgid "style_dlg_text_underline"
-msgstr "Senka skrift"
-
-msgid "style_dlg_text_variant"
-msgstr "Variant"
-
-msgid "style_dlg_text_weight"
-msgstr "Skriftvekt"
-
-msgid "style_dlg_title"
-msgstr "Rediger CSS-stil"
-
-msgid "style_dlg_top"
-msgstr "Topp"
-
-msgid "style_dlg_visibility"
-msgstr "Synlegheit"
-
-msgid "style_dlg_width"
-msgstr "Breidd"
-
-msgid "style_dlg_zindex"
-msgstr "Z-indeks"
-
-msgid "table_cell"
-msgstr "Celle"
-
-msgid "table_cell_desc"
-msgstr "Celleegenskapar"
-
-msgid "table_cellprops_delta_height"
-msgstr ""
-
-msgid "table_cellprops_delta_width"
-msgstr ""
-
-msgid "table_col"
-msgstr "Kolonne"
-
-msgid "table_col_after_desc"
-msgstr "Set inn kolonne etter"
-
-msgid "table_col_before_desc"
-msgstr "Set inn kolonne framfor"
-
-msgid "table_copy_row_desc"
-msgstr "Kopier rad"
-
-msgid "table_cut_row_desc"
-msgstr "Fjern rad"
-
-msgid "table_del"
-msgstr "Slett tabell"
-
-msgid "table_delete_col_desc"
-msgstr "Fjern kolonne"
-
-msgid "table_delete_row_desc"
-msgstr "Fjern rad"
-
-msgid "table_desc"
-msgstr "Set inn ein ny tabell"
-
-msgid "table_dlg_advanced_props"
-msgstr "Generelle eigenskapar"
-
-msgid "table_dlg_advanced_tab"
-msgstr "Avansert"
-
-msgid "table_dlg_align"
-msgstr "Justering"
-
-msgid "table_dlg_align_bottom"
-msgstr "Botn"
-
-msgid "table_dlg_align_default"
-msgstr "Standard"
-
-msgid "table_dlg_align_left"
-msgstr "Venstre"
-
-msgid "table_dlg_align_middle"
-msgstr "Midtstilt"
-
-msgid "table_dlg_align_right"
-msgstr "Høgre"
-
-msgid "table_dlg_align_top"
-msgstr "Topp"
-
-msgid "table_dlg_bgcolor"
-msgstr "Bakgrunn"
-
-msgid "table_dlg_bgimage"
-msgstr "Bakgrunnsbilete"
-
-msgid "table_dlg_border"
-msgstr "Ramme"
-
-msgid "table_dlg_bordercolor"
-msgstr "Rammefarge"
-
-msgid "table_dlg_caption"
-msgstr "Tabelloverskrift"
-
-msgid "table_dlg_cell_all"
-msgstr "Oppdater alle celler i tabellen"
-
-msgid "table_dlg_cell_cell"
-msgstr "Oppdater aktuell celle"
-
-msgid "table_dlg_cell_limit"
-msgstr "Du har fleire enn maksimalt tal celler på {$cells}."
-
-msgid "table_dlg_cell_row"
-msgstr "Oppdater alle celler i rada"
-
-msgid "table_dlg_cell_title"
-msgstr "Celleeigenskapar"
-
-msgid "table_dlg_cell_type"
-msgstr "Celletype"
-
-msgid "table_dlg_cellpadding"
-msgstr "Cellefylling"
-
-msgid "table_dlg_cellspacing"
-msgstr "Celleavstand"
-
-msgid "table_dlg_col_limit"
-msgstr "Du har fleire enn maksimalt tal kolonner på {$cols}."
-
-msgid "table_dlg_colgroup"
-msgstr "Kolonnegruppe"
-
-msgid "table_dlg_cols"
-msgstr "Kolonner"
-
-msgid "table_dlg_frame"
-msgstr "Ramme"
-
-msgid "table_dlg_frame_all"
-msgstr "alle"
-
-msgid "table_dlg_frame_cols"
-msgstr "kolonnar"
-
-msgid "table_dlg_frame_groups"
-msgstr "grupper"
-
-msgid "table_dlg_frame_none"
-msgstr "ingen"
-
-msgid "table_dlg_frame_rows"
-msgstr "rader"
-
-msgid "table_dlg_general_props"
-msgstr "Generelt"
-
-msgid "table_dlg_general_tab"
-msgstr "Generelt"
-
-msgid "table_dlg_height"
-msgstr "Høgd"
-
-msgid "table_dlg_id"
-msgstr "Id"
-
-msgid "table_dlg_langcode"
-msgstr "Språkkode"
-
-msgid "table_dlg_langdir"
-msgstr "Skriftretning"
-
-msgid "table_dlg_ltr"
+msgid "plonelink_dlg_ltr"
 msgstr "Venstre mot høgre"
 
-msgid "table_dlg_merge_cells_title"
-msgstr "Slå saman celler"
-
-msgid "table_dlg_mime"
-msgstr "Målet sin MIME-type"
-
-msgid "table_dlg_missing_scope"
-msgstr "Er du sikker på at du vil fortsetje utan å angi eit område for denne overskrifscella? Utan dette kan det bli vanskeleg for enkelte funksjonshemma brukarar å forstå innhaldet eller dataane som blir presenterte i tabellen."
-
-msgid "table_dlg_row_all"
-msgstr "Oppdater alle rader"
-
-msgid "table_dlg_row_even"
-msgstr "Oppdater partallrader"
-
-msgid "table_dlg_row_limit"
-msgstr "Du har fleire enn maksimalt tal rader på {$rows}."
-
-msgid "table_dlg_row_odd"
-msgstr "Oppdater oddetallrader"
-
-msgid "table_dlg_row_row"
-msgstr "Oppdater aktuell rad"
-
-msgid "table_dlg_row_title"
-msgstr "Radeigenskapar"
-
-msgid "table_dlg_rowgroup"
-msgstr "Radgruppe"
-
-msgid "table_dlg_rows"
-msgstr "Rader"
-
-msgid "table_dlg_rowtype"
-msgstr "Rad i tabell"
-
-msgid "table_dlg_rtl"
+msgid "plonelink_dlg_rtl"
 msgstr "Høgre mot venstre"
 
-msgid "table_dlg_rules"
-msgstr "Strekar"
+msgid "plonelink_dlg_link_list"
+msgstr "Lenkjeliste"
 
-msgid "table_dlg_rules_above"
-msgstr "over"
+msgid "xhtmlxtras_cite_desc"
+msgstr "Sitat"
 
-msgid "table_dlg_rules_below"
-msgstr "under"
+msgid "xhtmlxtras_abbr_desc"
+msgstr "Forkorting"
 
-msgid "table_dlg_rules_border"
-msgstr "ramme"
+msgid "xhtmlxtras_acronym_desc"
+msgstr "Akronym"
 
-msgid "table_dlg_rules_box"
-msgstr "boks"
+msgid "xhtmlxtras_del_desc"
+msgstr "Sletting"
 
-msgid "table_dlg_rules_hsides"
-msgstr "hsides"
+msgid "xhtmlxtras_ins_desc"
+msgstr "Innsetjing"
 
-msgid "table_dlg_rules_lhs"
-msgstr "lhs"
+msgid "xhtmlxtras_attribs_desc"
+msgstr "Set inn / Endre eigenskapar"
 
-msgid "table_dlg_rules_rhs"
-msgstr "rhs"
-
-msgid "table_dlg_rules_void"
-msgstr "ingen"
-
-msgid "table_dlg_rules_vsides"
-msgstr "vsides"
-
-msgid "table_dlg_scope"
-msgstr "Område"
-
-msgid "table_dlg_style"
-msgstr "Stil"
-
-msgid "table_dlg_summary"
-msgstr "Samandrag"
-
-msgid "table_dlg_tbody"
-msgstr "Tabellkropp"
-
-msgid "table_dlg_td"
-msgstr "Data"
-
-msgid "table_dlg_tfoot"
-msgstr "Tabellfot"
-
-msgid "table_dlg_th"
-msgstr "Overskrift"
-
-msgid "table_dlg_thead"
-msgstr "Tabellhovud"
-
-msgid "table_dlg_title"
-msgstr "Set inn / rediger tabell"
-
-msgid "table_dlg_valign"
-msgstr "Vertikal justering"
-
-msgid "table_dlg_width"
-msgstr "Breidd"
-
-msgid "table_merge_cells_delta_height"
+msgid "xhtmlxtras_cite_delta_width"
 msgstr ""
 
-msgid "table_merge_cells_delta_width"
-msgstr ""
-
-msgid "table_merge_cells_desc"
-msgstr "Slå saman celler"
-
-msgid "table_paste_row_after_desc"
-msgstr "Lim inn rad etter"
-
-msgid "table_paste_row_before_desc"
-msgstr "Lim inn rad framfor"
-
-msgid "table_props_desc"
-msgstr "Tabelleigenskapar"
-
-msgid "table_row"
-msgstr "Rad"
-
-msgid "table_row_after_desc"
-msgstr "Set inn rad etter"
-
-msgid "table_row_before_desc"
-msgstr "Set inn rad framfor"
-
-msgid "table_row_desc"
-msgstr "Radeigenskapar"
-
-msgid "table_rowprops_delta_height"
-msgstr ""
-
-msgid "table_rowprops_delta_width"
-msgstr ""
-
-msgid "table_split_cells_desc"
-msgstr "Del celler"
-
-msgid "table_table_delta_height"
-msgstr ""
-
-msgid "table_table_delta_width"
-msgstr ""
-
-msgid "template_desc"
-msgstr "Set inn førehandsdefinert malinnhald"
-
-msgid "template_dlg_cdate_format"
-msgstr "%Y-%m-%d %H:%M:%S"
-
-msgid "template_dlg_day_long"
-msgstr "sundag,mandag,tirsdag,onsdag,torsdag,fredag,laurdag,sundag"
-
-msgid "template_dlg_day_short"
-msgstr "sun,man,tir,ons,tor,fre,lør,sun"
-
-msgid "template_dlg_desc"
-msgstr "Set inn førehandsdefinert malinnhald"
-
-msgid "template_dlg_desc_label"
-msgstr "Omtale"
-
-msgid "template_dlg_label"
-msgstr "Mal"
-
-msgid "template_dlg_mdate_format"
-msgstr "%Y-%m-%d %H:%M:%S"
-
-msgid "template_dlg_months_long"
-msgstr "januar,februar,mars,april,mai,juni,juli,august,september,oktober,november,desember"
-
-msgid "template_dlg_months_short"
-msgstr "jan,feb,mar,apr,mai,jun,jul,aug,sep,okt,nov,des"
-
-msgid "template_dlg_preview"
-msgstr "Sjå førebels utkast"
-
-msgid "template_dlg_select"
-msgstr "Vel ein mal"
-
-msgid "template_dlg_title"
-msgstr "Malar"
-
-msgid "template_dlg_warning"
-msgstr "Åtvaring: Utskifting av ein mal med ein annen kan føre til at data går tapt."
-
-msgid "visualchars_desc"
-msgstr "Visuelle konktrollteikn på/av"
-
-msgid "xhtmlxtras_abbr_delta_height"
+msgid "xhtmlxtras_cite_delta_height"
 msgstr ""
 
 msgid "xhtmlxtras_abbr_delta_width"
 msgstr ""
 
-msgid "xhtmlxtras_abbr_desc"
-msgstr "Forkorting"
-
-msgid "xhtmlxtras_acronym_delta_height"
+msgid "xhtmlxtras_abbr_delta_height"
 msgstr ""
 
 msgid "xhtmlxtras_acronym_delta_width"
 msgstr ""
 
-msgid "xhtmlxtras_acronym_desc"
-msgstr "Akronym"
-
-msgid "xhtmlxtras_attribs_delta_height"
-msgstr ""
-
-msgid "xhtmlxtras_attribs_delta_width"
-msgstr ""
-
-msgid "xhtmlxtras_attribs_desc"
-msgstr "Set inn / Endre eigenskapar"
-
-msgid "xhtmlxtras_cite_delta_height"
-msgstr ""
-
-msgid "xhtmlxtras_cite_delta_width"
-msgstr ""
-
-msgid "xhtmlxtras_cite_desc"
-msgstr "Sitat"
-
-msgid "xhtmlxtras_del_delta_height"
+msgid "xhtmlxtras_acronym_delta_height"
 msgstr ""
 
 msgid "xhtmlxtras_del_delta_width"
 msgstr ""
 
-msgid "xhtmlxtras_del_desc"
-msgstr "Sletting"
+msgid "xhtmlxtras_del_delta_height"
+msgstr ""
 
-msgid "xhtmlxtras_dlg_attrib_tab"
-msgstr "Attributtar"
+msgid "xhtmlxtras_ins_delta_width"
+msgstr ""
 
-msgid "xhtmlxtras_dlg_attribs_title"
-msgstr "Set inn / endre attributt"
+msgid "xhtmlxtras_ins_delta_height"
+msgstr ""
 
-msgid "xhtmlxtras_dlg_attribute_attrib_tab"
-msgstr "Attributt"
+msgid "xhtmlxtras_attribs_delta_width"
+msgstr ""
 
-msgid "xhtmlxtras_dlg_attribute_events_tab"
-msgstr "Hendingar"
+msgid "xhtmlxtras_attribs_delta_height"
+msgstr ""
 
-msgid "xhtmlxtras_dlg_attribute_label_accesskey"
-msgstr "Tilgangsnøkkel"
-
-msgid "xhtmlxtras_dlg_attribute_label_cite"
-msgstr "Stad"
-
-msgid "xhtmlxtras_dlg_attribute_label_class"
-msgstr "Klasse"
-
-msgid "xhtmlxtras_dlg_attribute_label_datetime"
-msgstr "Dato/tid"
+msgid "xhtmlxtras_dlg_attribute_label_title"
+msgstr "Tittel"
 
 msgid "xhtmlxtras_dlg_attribute_label_id"
 msgstr "ID"
 
-msgid "xhtmlxtras_dlg_attribute_label_langcode"
-msgstr "Språk"
-
-msgid "xhtmlxtras_dlg_attribute_label_langdir"
-msgstr "Tekstretning"
+msgid "xhtmlxtras_dlg_attribute_label_class"
+msgstr "Klasse"
 
 msgid "xhtmlxtras_dlg_attribute_label_style"
 msgstr "Stil"
 
-msgid "xhtmlxtras_dlg_attribute_label_tabindex"
-msgstr "Tabuleringsindeks"
+msgid "xhtmlxtras_dlg_attribute_label_cite"
+msgstr "Stad"
 
-msgid "xhtmlxtras_dlg_attribute_label_title"
-msgstr "Tittel"
+msgid "xhtmlxtras_dlg_attribute_label_datetime"
+msgstr "Dato/tid"
+
+msgid "xhtmlxtras_dlg_attribute_label_langdir"
+msgstr "Tekstretning"
 
 msgid "xhtmlxtras_dlg_attribute_option_ltr"
 msgstr "Venstre mot høgre"
@@ -2257,8 +1032,32 @@ msgstr "Venstre mot høgre"
 msgid "xhtmlxtras_dlg_attribute_option_rtl"
 msgstr "Høgre mot venstre"
 
+msgid "xhtmlxtras_dlg_attribute_label_langcode"
+msgstr "Språk"
+
+msgid "xhtmlxtras_dlg_attribute_label_tabindex"
+msgstr "Tabuleringsindeks"
+
+msgid "xhtmlxtras_dlg_attribute_label_accesskey"
+msgstr "Tilgangsnøkkel"
+
+msgid "xhtmlxtras_dlg_attribute_events_tab"
+msgstr "Hendingar"
+
+msgid "xhtmlxtras_dlg_attribute_attrib_tab"
+msgstr "Attributt"
+
+msgid "xhtmlxtras_dlg_general_tab"
+msgstr "Generelt"
+
+msgid "xhtmlxtras_dlg_attrib_tab"
+msgstr "Attributtar"
+
 msgid "xhtmlxtras_dlg_events_tab"
 msgstr "Hendingar"
+
+msgid "xhtmlxtras_dlg_fieldset_general_tab"
+msgstr "Generelle innstillingar"
 
 msgid "xhtmlxtras_dlg_fieldset_attrib_tab"
 msgstr "Elementattributtar"
@@ -2266,11 +1065,23 @@ msgstr "Elementattributtar"
 msgid "xhtmlxtras_dlg_fieldset_events_tab"
 msgstr "Elementhendingar"
 
-msgid "xhtmlxtras_dlg_fieldset_general_tab"
-msgstr "Generelle innstillingar"
+msgid "xhtmlxtras_dlg_title_ins_element"
+msgstr "Innsetjingselement"
 
-msgid "xhtmlxtras_dlg_general_tab"
-msgstr "Generelt"
+msgid "xhtmlxtras_dlg_title_del_element"
+msgstr "Sletteelement"
+
+msgid "xhtmlxtras_dlg_title_acronym_element"
+msgstr "Akronymelement"
+
+msgid "xhtmlxtras_dlg_title_abbr_element"
+msgstr "Forkortingselement"
+
+msgid "xhtmlxtras_dlg_title_cite_element"
+msgstr "Sitatelement"
+
+msgid "xhtmlxtras_dlg_remove"
+msgstr "Fjern"
 
 msgid "xhtmlxtras_dlg_insert_date"
 msgstr "Set inn dato/ti"
@@ -2281,30 +1092,1170 @@ msgstr "Venstre mot høgre"
 msgid "xhtmlxtras_dlg_option_rtl"
 msgstr "Høgre mot venstre"
 
-msgid "xhtmlxtras_dlg_remove"
+msgid "xhtmlxtras_dlg_attribs_title"
+msgstr "Set inn / endre attributt"
+
+msgid "style_desc"
+msgstr "Rediger CSS-stil"
+
+msgid "style_delta_width"
+msgstr ""
+
+msgid "style_delta_height"
+msgstr ""
+
+msgid "style_dlg_title"
+msgstr "Rediger CSS-stil"
+
+msgid "style_dlg_apply"
+msgstr "Legg til"
+
+msgid "style_dlg_text_tab"
+msgstr "Tekst"
+
+msgid "style_dlg_background_tab"
+msgstr "Bakgrunn"
+
+msgid "style_dlg_block_tab"
+msgstr "Blokk"
+
+msgid "style_dlg_box_tab"
+msgstr "Boks"
+
+msgid "style_dlg_border_tab"
+msgstr "Ramme"
+
+msgid "style_dlg_list_tab"
+msgstr "Liste"
+
+msgid "style_dlg_positioning_tab"
+msgstr "Posisjon"
+
+msgid "style_dlg_text_props"
+msgstr "Eigenskapar for skrift"
+
+msgid "style_dlg_text_font"
+msgstr "Skrifttype"
+
+msgid "style_dlg_text_size"
+msgstr "Skriftstorleik"
+
+msgid "style_dlg_text_weight"
+msgstr "Skriftvekt"
+
+msgid "style_dlg_text_style"
+msgstr "Skriftstil"
+
+msgid "style_dlg_text_variant"
+msgstr "Variant"
+
+msgid "style_dlg_text_lineheight"
+msgstr "Linjehøgd"
+
+msgid "style_dlg_text_case"
+msgstr "Kapitelar/minusklar"
+
+msgid "style_dlg_text_color"
+msgstr "Farge"
+
+msgid "style_dlg_text_decoration"
+msgstr "Dekorasjon"
+
+msgid "style_dlg_text_overline"
+msgstr "Heva skrift"
+
+msgid "style_dlg_text_underline"
+msgstr "Senka skrift"
+
+msgid "style_dlg_text_striketrough"
+msgstr "Gjennomstreking"
+
+msgid "style_dlg_text_blink"
+msgstr "Blink"
+
+msgid "style_dlg_text_none"
+msgstr "Ingen"
+
+msgid "style_dlg_background_color"
+msgstr "Bakgrunnsfarge"
+
+msgid "style_dlg_background_image"
+msgstr "Bakgrunnsbilete"
+
+msgid "style_dlg_background_repeat"
+msgstr "Gjenta"
+
+msgid "style_dlg_background_attachment"
+msgstr "Vedlegg"
+
+msgid "style_dlg_background_hpos"
+msgstr "Horisontal posisjon"
+
+msgid "style_dlg_background_vpos"
+msgstr "Vertikal posisjon"
+
+msgid "style_dlg_block_wordspacing"
+msgstr "Ordmellomrom"
+
+msgid "style_dlg_block_letterspacing"
+msgstr "Bokstavmellomrom"
+
+msgid "style_dlg_block_vertical_alignment"
+msgstr "Vertikal justering"
+
+msgid "style_dlg_block_text_align"
+msgstr "Justering"
+
+msgid "style_dlg_block_text_indent"
+msgstr "Innrykk"
+
+msgid "style_dlg_block_whitespace"
+msgstr "Mellomrom"
+
+msgid "style_dlg_block_display"
+msgstr "Framsyning"
+
+msgid "style_dlg_box_width"
+msgstr "Breidd"
+
+msgid "style_dlg_box_height"
+msgstr "Høgd"
+
+msgid "style_dlg_box_float"
+msgstr "Flyt"
+
+msgid "style_dlg_box_clear"
+msgstr "Slett"
+
+msgid "style_dlg_padding"
+msgstr "Utfylling"
+
+msgid "style_dlg_same"
+msgstr "Likt i alle"
+
+msgid "style_dlg_top"
+msgstr "Topp"
+
+msgid "style_dlg_right"
+msgstr "Høgre"
+
+msgid "style_dlg_bottom"
+msgstr "Bunn"
+
+msgid "style_dlg_left"
+msgstr "Venstre"
+
+msgid "style_dlg_margin"
+msgstr "Marg"
+
+msgid "style_dlg_style"
+msgstr "Stil"
+
+msgid "style_dlg_width"
+msgstr "Breidd"
+
+msgid "style_dlg_height"
+msgstr "Høgd"
+
+msgid "style_dlg_color"
+msgstr "Farge"
+
+msgid "style_dlg_list_type"
+msgstr "Type"
+
+msgid "style_dlg_bullet_image"
+msgstr "Kulepunktbilete"
+
+msgid "style_dlg_position"
+msgstr "Posisjon"
+
+msgid "style_dlg_positioning_type"
+msgstr "Type"
+
+msgid "style_dlg_visibility"
+msgstr "Synlegheit"
+
+msgid "style_dlg_zindex"
+msgstr "Z-indeks"
+
+msgid "style_dlg_overflow"
+msgstr "Overfylt"
+
+msgid "style_dlg_placement"
+msgstr "Plassering"
+
+msgid "style_dlg_clip"
+msgstr "Klipp"
+
+msgid "paste_paste_text_desc"
+msgstr "Lim inn som vanleg tekst"
+
+msgid "paste_paste_word_desc"
+msgstr "Lim inn frå Word"
+
+msgid "paste_selectall_desc"
+msgstr "Marker al"
+
+msgid "paste_dlg_text_title"
+msgstr "Bruk CTRL+V på tastaturet for å lime inn i dette vindauget."
+
+msgid "paste_dlg_text_linebreaks"
+msgstr "Behald tekstbryting"
+
+msgid "paste_dlg_word_title"
+msgstr "Bruk CTRL+V på tastaturet for å lime inn i dette vindauget."
+
+msgid "table_desc"
+msgstr "Set inn ein ny tabell"
+
+msgid "table_row_before_desc"
+msgstr "Set inn rad framfor"
+
+msgid "table_row_after_desc"
+msgstr "Set inn rad etter"
+
+msgid "table_delete_row_desc"
+msgstr "Fjern rad"
+
+msgid "table_col_before_desc"
+msgstr "Set inn kolonne framfor"
+
+msgid "table_col_after_desc"
+msgstr "Set inn kolonne etter"
+
+msgid "table_delete_col_desc"
+msgstr "Fjern kolonne"
+
+msgid "table_split_cells_desc"
+msgstr "Del celler"
+
+msgid "table_merge_cells_desc"
+msgstr "Slå saman celler"
+
+msgid "table_row_desc"
+msgstr "Radeigenskapar"
+
+msgid "table_cell_desc"
+msgstr "Celleegenskapar"
+
+msgid "table_props_desc"
+msgstr "Tabelleigenskapar"
+
+msgid "table_paste_row_before_desc"
+msgstr "Lim inn rad framfor"
+
+msgid "table_paste_row_after_desc"
+msgstr "Lim inn rad etter"
+
+msgid "table_cut_row_desc"
+msgstr "Fjern rad"
+
+msgid "table_copy_row_desc"
+msgstr "Kopier rad"
+
+msgid "table_del"
+msgstr "Slett tabell"
+
+msgid "table_row"
+msgstr "Rad"
+
+msgid "table_col"
+msgstr "Kolonne"
+
+msgid "table_cell"
+msgstr "Celle"
+
+msgid "table_rowprops_delta_width"
+msgstr ""
+
+msgid "table_rowprops_delta_height"
+msgstr ""
+
+msgid "table_cellprops_delta_width"
+msgstr ""
+
+msgid "table_cellprops_delta_height"
+msgstr ""
+
+msgid "table_table_delta_width"
+msgstr ""
+
+msgid "table_table_delta_height"
+msgstr ""
+
+msgid "table_merge_cells_delta_width"
+msgstr ""
+
+msgid "table_merge_cells_delta_height"
+msgstr ""
+
+msgid "table_dlg_general_tab"
+msgstr "Generelt"
+
+msgid "table_dlg_advanced_tab"
+msgstr "Avansert"
+
+msgid "table_dlg_general_props"
+msgstr "Generelt"
+
+msgid "table_dlg_advanced_props"
+msgstr "Generelle eigenskapar"
+
+msgid "table_dlg_rowtype"
+msgstr "Rad i tabell"
+
+msgid "table_dlg_title"
+msgstr "Set inn / rediger tabell"
+
+msgid "table_dlg_width"
+msgstr "Breidd"
+
+msgid "table_dlg_height"
+msgstr "Høgd"
+
+msgid "table_dlg_cols"
+msgstr "Kolonner"
+
+msgid "table_dlg_rows"
+msgstr "Rader"
+
+msgid "table_dlg_cellspacing"
+msgstr "Celleavstand"
+
+msgid "table_dlg_cellpadding"
+msgstr "Cellefylling"
+
+msgid "table_dlg_border"
+msgstr "Ramme"
+
+msgid "table_dlg_align"
+msgstr "Justering"
+
+msgid "table_dlg_align_default"
+msgstr "Standard"
+
+msgid "table_dlg_align_left"
+msgstr "Venstre"
+
+msgid "table_dlg_align_right"
+msgstr "Høgre"
+
+msgid "table_dlg_align_middle"
+msgstr "Midtstilt"
+
+msgid "table_dlg_row_title"
+msgstr "Radeigenskapar"
+
+msgid "table_dlg_cell_title"
+msgstr "Celleeigenskapar"
+
+msgid "table_dlg_cell_type"
+msgstr "Celletype"
+
+msgid "table_dlg_valign"
+msgstr "Vertikal justering"
+
+msgid "table_dlg_align_top"
+msgstr "Topp"
+
+msgid "table_dlg_align_bottom"
+msgstr "Botn"
+
+msgid "table_dlg_bordercolor"
+msgstr "Rammefarge"
+
+msgid "table_dlg_bgcolor"
+msgstr "Bakgrunn"
+
+msgid "table_dlg_merge_cells_title"
+msgstr "Slå saman celler"
+
+msgid "table_dlg_id"
+msgstr "Id"
+
+msgid "table_dlg_style"
+msgstr "Stil"
+
+msgid "table_dlg_langdir"
+msgstr "Skriftretning"
+
+msgid "table_dlg_langcode"
+msgstr "Språkkode"
+
+msgid "table_dlg_mime"
+msgstr "Målet sin MIME-type"
+
+msgid "table_dlg_ltr"
+msgstr "Venstre mot høgre"
+
+msgid "table_dlg_rtl"
+msgstr "Høgre mot venstre"
+
+msgid "table_dlg_bgimage"
+msgstr "Bakgrunnsbilete"
+
+msgid "table_dlg_summary"
+msgstr "Samandrag"
+
+msgid "table_dlg_td"
+msgstr "Data"
+
+msgid "table_dlg_th"
+msgstr "Overskrift"
+
+msgid "table_dlg_cell_cell"
+msgstr "Oppdater aktuell celle"
+
+msgid "table_dlg_cell_row"
+msgstr "Oppdater alle celler i rada"
+
+msgid "table_dlg_cell_all"
+msgstr "Oppdater alle celler i tabellen"
+
+msgid "table_dlg_row_row"
+msgstr "Oppdater aktuell rad"
+
+msgid "table_dlg_row_odd"
+msgstr "Oppdater oddetallrader"
+
+msgid "table_dlg_row_even"
+msgstr "Oppdater partallrader"
+
+msgid "table_dlg_row_all"
+msgstr "Oppdater alle rader"
+
+msgid "table_dlg_thead"
+msgstr "Tabellhovud"
+
+msgid "table_dlg_tbody"
+msgstr "Tabellkropp"
+
+msgid "table_dlg_tfoot"
+msgstr "Tabellfot"
+
+msgid "table_dlg_scope"
+msgstr "Område"
+
+msgid "table_dlg_rowgroup"
+msgstr "Radgruppe"
+
+msgid "table_dlg_colgroup"
+msgstr "Kolonnegruppe"
+
+msgid "table_dlg_col_limit"
+msgstr "Du har fleire enn maksimalt tal kolonner på {$cols}."
+
+msgid "table_dlg_row_limit"
+msgstr "Du har fleire enn maksimalt tal rader på {$rows}."
+
+msgid "table_dlg_cell_limit"
+msgstr "Du har fleire enn maksimalt tal celler på {$cells}."
+
+msgid "table_dlg_missing_scope"
+msgstr "Er du sikker på at du vil fortsetje utan å angi eit område for denne overskrifscella? Utan dette kan det bli vanskeleg for enkelte funksjonshemma brukarar å forstå innhaldet eller dataane som blir presenterte i tabellen."
+
+msgid "table_dlg_caption"
+msgstr "Tabelloverskrift"
+
+msgid "table_dlg_frame"
+msgstr "Ramme"
+
+msgid "table_dlg_frame_none"
+msgstr "ingen"
+
+msgid "table_dlg_frame_groups"
+msgstr "grupper"
+
+msgid "table_dlg_frame_rows"
+msgstr "rader"
+
+msgid "table_dlg_frame_cols"
+msgstr "kolonnar"
+
+msgid "table_dlg_frame_all"
+msgstr "alle"
+
+msgid "table_dlg_rules"
+msgstr "Strekar"
+
+msgid "table_dlg_rules_void"
+msgstr "ingen"
+
+msgid "table_dlg_rules_above"
+msgstr "over"
+
+msgid "table_dlg_rules_below"
+msgstr "under"
+
+msgid "table_dlg_rules_hsides"
+msgstr "hsides"
+
+msgid "table_dlg_rules_lhs"
+msgstr "lhs"
+
+msgid "table_dlg_rules_rhs"
+msgstr "rhs"
+
+msgid "table_dlg_rules_vsides"
+msgstr "vsides"
+
+msgid "table_dlg_rules_box"
+msgstr "boks"
+
+msgid "table_dlg_rules_border"
+msgstr "ramme"
+
+msgid "autosave_unload_msg"
+msgstr "Endringane du gjorde går tapt om du forlèt denne sida!"
+
+msgid "fullscreen_desc"
+msgstr "Skift til/frå fullskjermmodus"
+
+msgid "media_desc"
+msgstr "Set inn / rediger inkludert objekt"
+
+msgid "media_edit"
+msgstr "Endre innsett objekt"
+
+msgid "media_delta_width"
+msgstr ""
+
+msgid "media_delta_height"
+msgstr ""
+
+msgid "media_dlg_title"
+msgstr "Set inn / rediger inkludert objekt"
+
+msgid "media_dlg_general"
+msgstr "Generelt"
+
+msgid "media_dlg_advanced"
+msgstr "Avansert"
+
+msgid "media_dlg_file"
+msgstr "Fil/URL"
+
+msgid "media_dlg_list"
+msgstr "Liste"
+
+msgid "media_dlg_size"
+msgstr "Storleik"
+
+msgid "media_dlg_preview"
+msgstr "Sjå førebels utkast"
+
+msgid "media_dlg_constrain_proportions"
+msgstr "Behald proporsjonar"
+
+msgid "media_dlg_type"
+msgstr "Type"
+
+msgid "media_dlg_id"
+msgstr "Id"
+
+msgid "media_dlg_name"
+msgstr "Namn"
+
+msgid "media_dlg_class_name"
+msgstr "Klasse"
+
+msgid "media_dlg_vspace"
+msgstr "Vertikal avstand"
+
+msgid "media_dlg_hspace"
+msgstr "Horisontal avstand"
+
+msgid "media_dlg_play"
+msgstr "Autostart"
+
+msgid "media_dlg_loop"
+msgstr "Lykkje"
+
+msgid "media_dlg_menu"
+msgstr "Vis meny"
+
+msgid "media_dlg_quality"
+msgstr "Kvalitet"
+
+msgid "media_dlg_scale"
+msgstr "Skalering"
+
+msgid "media_dlg_align"
+msgstr "Justering"
+
+msgid "media_dlg_salign"
+msgstr "S-justering"
+
+msgid "media_dlg_wmode"
+msgstr "W-modus"
+
+msgid "media_dlg_bgcolor"
+msgstr "Bakgrunn"
+
+msgid "media_dlg_base"
+msgstr "Base"
+
+msgid "media_dlg_flashvars"
+msgstr "Flash-variablar"
+
+msgid "media_dlg_liveconnect"
+msgstr "SWLiveConnect"
+
+msgid "media_dlg_autohref"
+msgstr "AutoHREF"
+
+msgid "media_dlg_cache"
+msgstr "Cache"
+
+msgid "media_dlg_hidden"
+msgstr "Skjult"
+
+msgid "media_dlg_controller"
+msgstr "Kontroller"
+
+msgid "media_dlg_kioskmode"
+msgstr "Kiosk-modus"
+
+msgid "media_dlg_playeveryframe"
+msgstr "Spel kvar ramme"
+
+msgid "media_dlg_targetcache"
+msgstr "Mål-cache"
+
+msgid "media_dlg_correction"
+msgstr "Ingen korreksjon"
+
+msgid "media_dlg_enablejavascript"
+msgstr "Tillat Javaskript"
+
+msgid "media_dlg_starttime"
+msgstr "Starttid"
+
+msgid "media_dlg_endtime"
+msgstr "Stopptid"
+
+msgid "media_dlg_href"
+msgstr "Href"
+
+msgid "media_dlg_qtsrcchokespeed"
+msgstr "Choke speed"
+
+msgid "media_dlg_target"
+msgstr "Mål"
+
+msgid "media_dlg_volume"
+msgstr "Volum"
+
+msgid "media_dlg_autostart"
+msgstr "Autostart"
+
+msgid "media_dlg_enabled"
+msgstr "Køyrbar"
+
+msgid "media_dlg_fullscreen"
+msgstr "Fullskjerm"
+
+msgid "media_dlg_invokeurls"
+msgstr "Aktiviser URL-ar"
+
+msgid "media_dlg_mute"
+msgstr "Demp"
+
+msgid "media_dlg_stretchtofit"
+msgstr "Strekk for å passe inn"
+
+msgid "media_dlg_windowlessvideo"
+msgstr "Video utan vindauge"
+
+msgid "media_dlg_balance"
+msgstr "Balanse"
+
+msgid "media_dlg_baseurl"
+msgstr "Base URL"
+
+msgid "media_dlg_captioningid"
+msgstr "Fange opp id"
+
+msgid "media_dlg_currentmarker"
+msgstr "Aktiv markør"
+
+msgid "media_dlg_currentposition"
+msgstr "Aktiv posisjon"
+
+msgid "media_dlg_defaultframe"
+msgstr "Standardramme"
+
+msgid "media_dlg_playcount"
+msgstr "Tellar"
+
+msgid "media_dlg_rate"
+msgstr "Rate"
+
+msgid "media_dlg_uimode"
+msgstr "UI-modus"
+
+msgid "media_dlg_flash_options"
+msgstr "Flash-eigenskapar"
+
+msgid "media_dlg_qt_options"
+msgstr "Quicktime-innstillingar"
+
+msgid "media_dlg_wmp_options"
+msgstr "Windows mediaplayer-innstillingar"
+
+msgid "media_dlg_rmp_options"
+msgstr "Real mediaplayer-innstillingar"
+
+msgid "media_dlg_shockwave_options"
+msgstr "Shockwave-innstillinger"
+
+msgid "media_dlg_autogotourl"
+msgstr "Auto-gå-til-URL"
+
+msgid "media_dlg_center"
+msgstr "Midtstill"
+
+msgid "media_dlg_imagestatus"
+msgstr "Status for bilete"
+
+msgid "media_dlg_maintainaspect"
+msgstr "Behald proporsjonar"
+
+msgid "media_dlg_nojava"
+msgstr "Ikke Java"
+
+msgid "media_dlg_prefetch"
+msgstr "Registrer på førehand"
+
+msgid "media_dlg_shuffle"
+msgstr "Miks"
+
+msgid "media_dlg_console"
+msgstr "Konsoll"
+
+msgid "media_dlg_numloop"
+msgstr "Antal gjennomløp"
+
+msgid "media_dlg_controls"
+msgstr "Kontroller"
+
+msgid "media_dlg_scriptcallbacks"
+msgstr "Skript-referanser"
+
+msgid "media_dlg_swstretchstyle"
+msgstr "Strekkstil"
+
+msgid "media_dlg_swstretchhalign"
+msgstr "Strekk H-justering"
+
+msgid "media_dlg_swstretchvalign"
+msgstr "Strekk V-justering"
+
+msgid "media_dlg_sound"
+msgstr "Lyd"
+
+msgid "media_dlg_progress"
+msgstr "Framdrift"
+
+msgid "media_dlg_qtsrc"
+msgstr "QT Src"
+
+msgid "media_dlg_qt_stream_warn"
+msgstr "Streama rtsp-ressursar bør leggsst til QT Src field i avansert-fana.\nDu bør også leggje til ein ikkje-streama versjon i src field"
+
+msgid "media_dlg_align_top"
+msgstr "Topp"
+
+msgid "media_dlg_align_right"
+msgstr "Høgre"
+
+msgid "media_dlg_align_bottom"
+msgstr "Botn"
+
+msgid "media_dlg_align_left"
+msgstr "Venstre"
+
+msgid "media_dlg_align_center"
+msgstr "Midt"
+
+msgid "media_dlg_align_top_left"
+msgstr "Topp venstre"
+
+msgid "media_dlg_align_top_right"
+msgstr "Top høgre"
+
+msgid "media_dlg_align_bottom_left"
+msgstr "Botn venste"
+
+msgid "media_dlg_align_bottom_right"
+msgstr "Botn høgre"
+
+msgid "media_dlg_flv_options"
+msgstr "Flash video-val"
+
+msgid "media_dlg_flv_scalemode"
+msgstr "Skalering"
+
+msgid "media_dlg_flv_buffer"
+msgstr "Buffer"
+
+msgid "media_dlg_flv_startimage"
+msgstr "Startbilde"
+
+msgid "media_dlg_flv_starttime"
+msgstr "Starttid"
+
+msgid "media_dlg_flv_defaultvolume"
+msgstr "Standardvolum"
+
+msgid "media_dlg_flv_hiddengui"
+msgstr "Skjult GUI"
+
+msgid "media_dlg_flv_autostart"
+msgstr "Autostart"
+
+msgid "media_dlg_flv_loop"
+msgstr "Løkke"
+
+msgid "media_dlg_flv_showscalemodes"
+msgstr "Vis skalering"
+
+msgid "media_dlg_flv_smoothvideo"
+msgstr "Jamn video"
+
+msgid "media_dlg_flv_jscallback"
+msgstr "JS Callback"
+
+msgid "fullpage_desc"
+msgstr "Dokumenteigenskapar"
+
+msgid "fullpage_delta_width"
+msgstr ""
+
+msgid "fullpage_delta_height"
+msgstr ""
+
+msgid "fullpage_dlg_title"
+msgstr "Dokumenteigenskapar"
+
+msgid "fullpage_dlg_meta_tab"
+msgstr "Generelt"
+
+msgid "fullpage_dlg_appearance_tab"
+msgstr "Utsjånad"
+
+msgid "fullpage_dlg_advanced_tab"
+msgstr "Avansert"
+
+msgid "fullpage_dlg_meta_props"
+msgstr "Metainformasjon"
+
+msgid "fullpage_dlg_langprops"
+msgstr "Språk og koding"
+
+msgid "fullpage_dlg_meta_title"
+msgstr "Tittel"
+
+msgid "fullpage_dlg_meta_keywords"
+msgstr "Nøkkelord"
+
+msgid "fullpage_dlg_meta_description"
+msgstr "Omtale"
+
+msgid "fullpage_dlg_meta_robots"
+msgstr "Roboter"
+
+msgid "fullpage_dlg_doctypes"
+msgstr "Doctype"
+
+msgid "fullpage_dlg_langcode"
+msgstr "Språkkode"
+
+msgid "fullpage_dlg_langdir"
+msgstr "Skriftretning"
+
+msgid "fullpage_dlg_ltr"
+msgstr "Venstre mot høgre"
+
+msgid "fullpage_dlg_rtl"
+msgstr "Høgre mot venstre"
+
+msgid "fullpage_dlg_xml_pi"
+msgstr "XML-deklarasjon"
+
+msgid "fullpage_dlg_encoding"
+msgstr "Teiknkonvertering"
+
+msgid "fullpage_dlg_appearance_bgprops"
+msgstr "Bakgrunnseigenskapar"
+
+msgid "fullpage_dlg_appearance_marginprops"
+msgstr "Body-marg"
+
+msgid "fullpage_dlg_appearance_linkprops"
+msgstr "Lenkjefargar"
+
+msgid "fullpage_dlg_appearance_textprops"
+msgstr "Teksteigenskapar"
+
+msgid "fullpage_dlg_bgcolor"
+msgstr "Bakgrunn"
+
+msgid "fullpage_dlg_bgimage"
+msgstr "Bakgrunnsbilete"
+
+msgid "fullpage_dlg_left_margin"
+msgstr "Venstre marg"
+
+msgid "fullpage_dlg_right_margin"
+msgstr "Høgre marg"
+
+msgid "fullpage_dlg_top_margin"
+msgstr "Toppmarg"
+
+msgid "fullpage_dlg_bottom_margin"
+msgstr "Botnmarg"
+
+msgid "fullpage_dlg_text_color"
+msgstr "Farge"
+
+msgid "fullpage_dlg_font_size"
+msgstr "Skriftstorleik"
+
+msgid "fullpage_dlg_font_face"
+msgstr "Skrifttype"
+
+msgid "fullpage_dlg_link_color"
+msgstr "Lenkjefarge"
+
+msgid "fullpage_dlg_hover_color"
+msgstr "Mus-over-farge"
+
+msgid "fullpage_dlg_visited_color"
+msgstr "Besøkt-farge"
+
+msgid "fullpage_dlg_active_color"
+msgstr "Aktiv farge"
+
+msgid "fullpage_dlg_textcolor"
+msgstr "Farge"
+
+msgid "fullpage_dlg_fontsize"
+msgstr "Skriftstorleik"
+
+msgid "fullpage_dlg_fontface"
+msgstr "Skriftfamile"
+
+msgid "fullpage_dlg_meta_index_follow"
+msgstr "Indekser, og følg lenkjene"
+
+msgid "fullpage_dlg_meta_index_nofollow"
+msgstr "Indekser, men ikkje følg lenkjene"
+
+msgid "fullpage_dlg_meta_noindex_follow"
+msgstr "Ikkje indekser, men følg lenkjene"
+
+msgid "fullpage_dlg_meta_noindex_nofollow"
+msgstr "Ikkje indekser, og ikkje følg lenkjene"
+
+msgid "fullpage_dlg_appearance_style"
+msgstr "Stilark og stileigenskapar"
+
+msgid "fullpage_dlg_stylesheet"
+msgstr "Stilark"
+
+msgid "fullpage_dlg_style"
+msgstr "Stil"
+
+msgid "fullpage_dlg_author"
+msgstr "Forfattar"
+
+msgid "fullpage_dlg_copyright"
+msgstr "Copyright"
+
+msgid "fullpage_dlg_add"
+msgstr "Legg til nytt element"
+
+msgid "fullpage_dlg_remove"
 msgstr "Fjern"
 
-msgid "xhtmlxtras_dlg_title_abbr_element"
-msgstr "Forkortingselement"
+msgid "fullpage_dlg_moveup"
+msgstr "Flytt markert element opp"
 
-msgid "xhtmlxtras_dlg_title_acronym_element"
-msgstr "Akronymelement"
+msgid "fullpage_dlg_movedown"
+msgstr "Flytt markert element ned"
 
-msgid "xhtmlxtras_dlg_title_cite_element"
-msgstr "Sitatelement"
+msgid "fullpage_dlg_head_elements"
+msgstr "Overskriftselement"
 
-msgid "xhtmlxtras_dlg_title_del_element"
-msgstr "Sletteelement"
+msgid "fullpage_dlg_info"
+msgstr "Informasjon"
 
-msgid "xhtmlxtras_dlg_title_ins_element"
-msgstr "Innsetjingselement"
+msgid "fullpage_dlg_add_title"
+msgstr "Tittelelement"
 
-msgid "xhtmlxtras_ins_delta_height"
-msgstr ""
+msgid "fullpage_dlg_add_meta"
+msgstr "Metaelement"
 
-msgid "xhtmlxtras_ins_delta_width"
-msgstr ""
+msgid "fullpage_dlg_add_script"
+msgstr "Skriptelement"
 
-msgid "xhtmlxtras_ins_desc"
-msgstr "Innsetjing"
+msgid "fullpage_dlg_add_style"
+msgstr "Stilelement"
+
+msgid "fullpage_dlg_add_link"
+msgstr "Lenkjeelement"
+
+msgid "fullpage_dlg_add_base"
+msgstr "Basiselement"
+
+msgid "fullpage_dlg_add_comment"
+msgstr "Kommentarnode"
+
+msgid "fullpage_dlg_title_element"
+msgstr "Tittelelement"
+
+msgid "fullpage_dlg_script_element"
+msgstr "Skriptelement"
+
+msgid "fullpage_dlg_style_element"
+msgstr "Stilelement"
+
+msgid "fullpage_dlg_base_element"
+msgstr "Basiselement"
+
+msgid "fullpage_dlg_link_element"
+msgstr "Lenkjeelement"
+
+msgid "fullpage_dlg_meta_element"
+msgstr "Metaelement"
+
+msgid "fullpage_dlg_comment_element"
+msgstr "Kommentar"
+
+msgid "fullpage_dlg_src"
+msgstr "Skjerm"
+
+msgid "fullpage_dlg_language"
+msgstr "Språk"
+
+msgid "fullpage_dlg_href"
+msgstr "Href"
+
+msgid "fullpage_dlg_target"
+msgstr "Mål"
+
+msgid "fullpage_dlg_type"
+msgstr "Type"
+
+msgid "fullpage_dlg_charset"
+msgstr "Teiknsett"
+
+msgid "fullpage_dlg_defer"
+msgstr "Defer"
+
+msgid "fullpage_dlg_media"
+msgstr "Objekt"
+
+msgid "fullpage_dlg_properties"
+msgstr "Eigenskapar"
+
+msgid "fullpage_dlg_name"
+msgstr "Namn"
+
+msgid "fullpage_dlg_value"
+msgstr "Verdi"
+
+msgid "fullpage_dlg_content"
+msgstr "Nytt lag..."
+
+msgid "fullpage_dlg_rel"
+msgstr "Sida sitt tilhøve til målet"
+
+msgid "fullpage_dlg_rev"
+msgstr "Målet sitt tilhøve til sida"
+
+msgid "fullpage_dlg_hreflang"
+msgstr "Href lang"
+
+msgid "fullpage_dlg_general_props"
+msgstr "Generelt"
+
+msgid "fullpage_dlg_advanced_props"
+msgstr "Generelle eigenskapar"
+
+msgid "template_desc"
+msgstr "Set inn førehandsdefinert malinnhald"
+
+msgid "template_dlg_title"
+msgstr "Malar"
+
+msgid "template_dlg_label"
+msgstr "Mal"
+
+msgid "template_dlg_desc_label"
+msgstr "Omtale"
+
+msgid "template_dlg_desc"
+msgstr "Set inn førehandsdefinert malinnhald"
+
+msgid "template_dlg_select"
+msgstr "Vel ein mal"
+
+msgid "template_dlg_preview"
+msgstr "Sjå førebels utkast"
+
+msgid "template_dlg_warning"
+msgstr "Åtvaring: Utskifting av ein mal med ein annen kan føre til at data går tapt."
+
+msgid "template_dlg_mdate_format"
+msgstr "%Y-%m-%d %H:%M:%S"
+
+msgid "template_dlg_cdate_format"
+msgstr "%Y-%m-%d %H:%M:%S"
+
+msgid "template_dlg_months_long"
+msgstr "januar,februar,mars,april,mai,juni,juli,august,september,oktober,november,desember"
+
+msgid "template_dlg_months_short"
+msgstr "jan,feb,mar,apr,mai,jun,jul,aug,sep,okt,nov,des"
+
+msgid "template_dlg_day_long"
+msgstr "sundag,mandag,tirsdag,onsdag,torsdag,fredag,laurdag,sundag"
+
+msgid "template_dlg_day_short"
+msgstr "sun,man,tir,ons,tor,fre,lør,sun"
+
+msgid "visualchars_desc"
+msgstr "Visuelle konktrollteikn på/av"
+
+msgid "spellchecker_desc"
+msgstr "Stavekontroll på/av"
+
+msgid "spellchecker_menu"
+msgstr "Vis meny"
+
+msgid "spellchecker_ignore_word"
+msgstr "Ignorer ord"
+
+msgid "spellchecker_ignore_words"
+msgstr "Ignorer alt"
+
+msgid "spellchecker_langs"
+msgstr "Språk"
+
+msgid "spellchecker_wait"
+msgstr "Ver venleg og vent..."
+
+msgid "spellchecker_sug"
+msgstr "Framlegg"
+
+msgid "spellchecker_no_sug"
+msgstr "Inga framlegg"
+
+msgid "spellchecker_no_mpell"
+msgstr "Inga stavefeil funne."
+
+msgid "pagebreak_desc"
+msgstr "Set inn sideskift"
 

@@ -1,12 +1,12 @@
 # This is the Thai language pack for TinyMCE By Laithai Team joomlacorner.com, edited by Supapong Areeprasertkul.
-# Version 2.6
+# Version 3.1
 #
 # Laithai Team & edited by Supapong Areeprasertkul
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2010-03-13 00:00+0000\n"
+"PO-Revision-Date: 2010-11-06 00:00+0000\n"
 "Last-Translator: Laithai Team & edited by Supapong Areeprasertkul\n"
 "Language-Team: Laithai Team & edited by Supapong Areeprasertkul\n"
 "MIME-Version: 1.0\n"
@@ -466,10 +466,10 @@ msgid "insertdatetime_time_fmt"
 msgstr "%H:%M:%S"
 
 msgid "insertdatetime_insertdate_desc"
-msgstr "Insert date"
+msgstr "แทรกวันที่"
 
 msgid "insertdatetime_inserttime_desc"
-msgstr "Insert time"
+msgstr "แทรกเวลา"
 
 msgid "insertdatetime_months_long"
 msgstr "มกราคม,กุมภาพันธ์,มีนาคม,เมษายน,พฤษภาคม,มิถุนายน,กรกฎาคม,สิงหาคม,กันยายน,ตุลาคม,พฤศจิกายน,ธันวาคม"
@@ -544,7 +544,7 @@ msgid "advhr_dlg_noshade"
 msgstr "ไม่มีเงา"
 
 msgid "emotions_emotions_desc"
-msgstr "Emotions"
+msgstr "ไอคอนแสดงอารมณ์"
 
 msgid "emotions_delta_width"
 msgstr ""
@@ -1296,6 +1296,12 @@ msgstr "วางจากโปรแกรม Word"
 msgid "paste_selectall_desc"
 msgstr "เลือกทั้งหมด"
 
+msgid "paste_plaintext_mode_sticky"
+msgstr "Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode."
+
+msgid "paste_plaintext_mode"
+msgstr "Paste is now in plain text mode. Click again to toggle back to regular paste mode."
+
 msgid "paste_dlg_text_title"
 msgstr "Use CTRL+V on your keyboard to paste the text into the window."
 
@@ -1309,22 +1315,22 @@ msgid "table_desc"
 msgstr "Inserts a new table"
 
 msgid "table_row_before_desc"
-msgstr "Insert row before"
+msgstr "แทรกแถวจากข้างหน้า"
 
 msgid "table_row_after_desc"
-msgstr "Insert row after"
+msgstr "แทรกแถวจากข้างหลัง"
 
 msgid "table_delete_row_desc"
-msgstr "Delete row"
+msgstr "ลบแถว"
 
 msgid "table_col_before_desc"
-msgstr "Insert column before"
+msgstr "แทรกคอลัมน์จากข้างหน้า"
 
 msgid "table_col_after_desc"
-msgstr "Insert column after"
+msgstr "แทรกคอลัมน์จากข้างหลัง"
 
 msgid "table_delete_col_desc"
-msgstr "Remove column"
+msgstr "ลบคอลัมน์"
 
 msgid "table_split_cells_desc"
 msgstr "Split merged table cells"
@@ -1354,16 +1360,16 @@ msgid "table_copy_row_desc"
 msgstr "Copy table row"
 
 msgid "table_del"
-msgstr "Delete table"
+msgstr "ลบตาราง"
 
 msgid "table_row"
-msgstr "Row"
+msgstr "แถว"
 
 msgid "table_col"
-msgstr "Column"
+msgstr "คอลัมน์"
 
 msgid "table_cell"
-msgstr "Cell"
+msgstr "เซลล์"
 
 msgid "table_rowprops_delta_width"
 msgstr ""
@@ -1607,6 +1613,12 @@ msgstr "border"
 
 msgid "autosave_unload_msg"
 msgstr "การเปลี่ยนแปลงที่คุณทำจะหายไปหากคุณออกจากหน้านี้"
+
+msgid "autosave_restore_content"
+msgstr "Restore auto-saved content."
+
+msgid "autosave_warning_message"
+msgstr "If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?."
 
 msgid "fullscreen_desc"
 msgstr "สลับไปแสดงแบบเต็มหน้า"
@@ -2258,4 +2270,34 @@ msgstr "ไม่พบระบบสะกดคำผิด"
 
 msgid "pagebreak_desc"
 msgstr "ใส่เส้นแบ่งหน้า"
+
+msgid "advlist_types"
+msgstr "Types"
+
+msgid "advlist_def"
+msgstr "Default"
+
+msgid "advlist_lower_alpha"
+msgstr "Lower alpha"
+
+msgid "advlist_lower_greek"
+msgstr "Lower greek"
+
+msgid "advlist_lower_roman"
+msgstr "Lower roman"
+
+msgid "advlist_upper_alpha"
+msgstr "Upper alpha"
+
+msgid "advlist_upper_roman"
+msgstr "Upper roman"
+
+msgid "advlist_circle"
+msgstr "Circle"
+
+msgid "advlist_disc"
+msgstr "Disc"
+
+msgid "advlist_square"
+msgstr "Square"
 

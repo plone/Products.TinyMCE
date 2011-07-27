@@ -1,14 +1,14 @@
 # TinyMCE için Türkçe dil  paketi.
-# Version 14.4
+# Version 15.6
 #
-# Adem UYGUN
+# DeepJunior
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2010-03-16 00:00+0000\n"
-"Last-Translator: Adem UYGUN\n"
-"Language-Team: Adem UYGUN\n"
+"PO-Revision-Date: 2010-12-15 00:00+0000\n"
+"Last-Translator: DeepJunior\n"
+"Language-Team: DeepJunior\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -55,7 +55,7 @@ msgid "common_popup_blocked"
 msgstr "Üzgünüz, açılır pencere engelleyiciniz uygulama için gerekli bir pencereyi engelledi. Bu aracı tam olarak kullanabilmek için açılır pencere engelleyicisini kapatınız."
 
 msgid "common_invalid_data"
-msgstr "Hata: Invalid values entered, these are marked in red."
+msgstr "Hata: Geçersiz değer girildi, bunlar kırmızıyla işaretlenmiştir."
 
 msgid "common_more_colors"
 msgstr "Daha fazla renk"
@@ -622,7 +622,7 @@ msgid "searchreplace_dlg_searchnext_desc"
 msgstr "Tekrar ara"
 
 msgid "searchreplace_dlg_notfound"
-msgstr "Arama tamamlandı. The search string could not be found."
+msgstr "Arama tamamlandı. Aranan metin bulunamadı."
 
 msgid "searchreplace_dlg_search_title"
 msgstr "Bul"
@@ -706,10 +706,10 @@ msgid "ploneimage_dlg_classes"
 msgstr "Sınıfla"
 
 msgid "ploneimage_dlg_ltr"
-msgstr "Soldan sağa"
+msgstr "Sağdan sola"
 
 msgid "ploneimage_dlg_rtl"
-msgstr "Sağdan sola"
+msgstr "Soldan sağa"
 
 msgid "ploneimage_dlg_id"
 msgstr "Id"
@@ -943,10 +943,10 @@ msgid "plonelink_dlg_accesskey"
 msgstr "Erişim tuşu"
 
 msgid "plonelink_dlg_ltr"
-msgstr "Soldan sağa"
+msgstr "Sağdan sola"
 
 msgid "plonelink_dlg_rtl"
-msgstr "Sağdan sola"
+msgstr "Soldan sağa"
 
 msgid "plonelink_dlg_link_list"
 msgstr "Bağlantı listesi"
@@ -1296,6 +1296,12 @@ msgstr "Word'den yapıştır"
 msgid "paste_selectall_desc"
 msgstr "Tümünü seç"
 
+msgid "paste_plaintext_mode_sticky"
+msgstr "Düz metin modunda yapıştır. Normal yapıştırma moduna geçmek için tekrar tıklayın. Yapıştırma işleminden sonra normal yapıştırma moduna geçilecektir."
+
+msgid "paste_plaintext_mode"
+msgstr "Düz metin modunda yapıştır. Normal yapıştırma moduna geçmek için tekrar tıklayın."
+
 msgid "paste_dlg_text_title"
 msgstr "Pencereye metin yapıştırmak için klavyeden CTRL+V i kullanın."
 
@@ -1608,6 +1614,12 @@ msgstr "kenarlık"
 msgid "autosave_unload_msg"
 msgstr "Bu sayfadan çıkarsanız yaptığınız değişiklikler kaybolabilir."
 
+msgid "autosave_restore_content"
+msgstr "Geri yükleme içeriğe otomatik kaydedildi."
+
+msgid "autosave_warning_message"
+msgstr "Eğer geri yükleme içeriğe otomatik kayıt edilirse, editörde varolan tüm içeriği kaybedebilirsiniz.\n\nGeri yüklemenin içeriğe kaydedilmesini istediğinizden emin misiniz?"
+
 msgid "fullscreen_desc"
 msgstr "Tam ekran modunu aç/kapat"
 
@@ -1870,7 +1882,7 @@ msgid "media_dlg_align_right"
 msgstr "Sağ"
 
 msgid "media_dlg_align_bottom"
-msgstr "Bottom"
+msgstr "Alt"
 
 msgid "media_dlg_align_left"
 msgstr "Sol"
@@ -1948,7 +1960,7 @@ msgid "fullpage_dlg_advanced_tab"
 msgstr "Gelişmiş"
 
 msgid "fullpage_dlg_meta_props"
-msgstr "Meta information"
+msgstr "Meta bilgisi"
 
 msgid "fullpage_dlg_langprops"
 msgstr "Dil ve kodlama"
@@ -2059,7 +2071,7 @@ msgid "fullpage_dlg_meta_noindex_nofollow"
 msgstr "İndeksleme ve bağlantıları izleme."
 
 msgid "fullpage_dlg_appearance_style"
-msgstr "Stylesheet and style properties"
+msgstr "Stil ve stil sayfası özellikleri"
 
 msgid "fullpage_dlg_stylesheet"
 msgstr "Stil sayfası"
@@ -2258,4 +2270,34 @@ msgstr "İmla hatası bulunamadı."
 
 msgid "pagebreak_desc"
 msgstr "Sayfa sonu ekle."
+
+msgid "advlist_types"
+msgstr "Tipler"
+
+msgid "advlist_def"
+msgstr "Varsayılan"
+
+msgid "advlist_lower_alpha"
+msgstr "Küçük harf alfa"
+
+msgid "advlist_lower_greek"
+msgstr "Küçük harf grek"
+
+msgid "advlist_lower_roman"
+msgstr "Küçük harf roman"
+
+msgid "advlist_upper_alpha"
+msgstr "Büyük harf alfa"
+
+msgid "advlist_upper_roman"
+msgstr "Büyük harf roman"
+
+msgid "advlist_circle"
+msgstr "Çember"
+
+msgid "advlist_disc"
+msgstr "Daire"
+
+msgid "advlist_square"
+msgstr "Kare"
 

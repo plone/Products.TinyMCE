@@ -1,12 +1,12 @@
 # This is the Serbian language pack for TinyMCE.
-# Version 2.0
+# Version 2.1
 #
 # M.E.
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2009-10-25 00:00+0000\n"
+"PO-Revision-Date: 2010-12-08 00:00+0000\n"
 "Last-Translator: M.E.\n"
 "Language-Team: M.E.\n"
 "MIME-Version: 1.0\n"
@@ -19,16 +19,16 @@ msgstr ""
 "Domain: tinymce\n"
 
 msgid "common_edit_confirm"
-msgstr "Želite li koristiti WYSIWYG način rada za ovo tekstualno polje?"
+msgstr "Da li želite da koristite WYSIWYG način rada za ovo tekstualno polje?"
 
 msgid "common_apply"
-msgstr "Primjeni"
+msgstr "Primeni"
 
 msgid "common_insert"
 msgstr "Ubaci"
 
 msgid "common_update"
-msgstr "Obnovi"
+msgstr "Ažuriraj"
 
 msgid "common_cancel"
 msgstr "Odustani"
@@ -37,7 +37,7 @@ msgid "common_close"
 msgstr "Zatvori"
 
 msgid "common_browse"
-msgstr "Pregled"
+msgstr "Potraži"
 
 msgid "common_class_name"
 msgstr "Klasa"
@@ -46,16 +46,16 @@ msgid "common_not_set"
 msgstr "-- Nije postavljeno --"
 
 msgid "common_clipboard_msg"
-msgstr "Kopiraj/Izreži/Zalepi nije dostupno Mozilla i Firefox preglednicima.\nViše informacija?"
+msgstr "Kopiraj/Iseci/Zalepi nije dostupno Mozilla i Firefox preglednicima.\nViše informacija?"
 
 msgid "common_clipboard_no_support"
-msgstr "Trenutačno vaš preglednik ne podržava ovu opciju, pokušajte koristiti tipkovničku kraticu."
+msgstr "Trenutačno vaš pretraživač ne podržava ovu opciju, pokušajte preko prečice na tastaturi."
 
 msgid "common_popup_blocked"
-msgstr "Oprostite, izgleda da je vaš popup-blocker onemogućio prozor u sklopu ovog programa. Morate onemogućiti blokiranje popup prozora da bi u potpunosti iskoristili ovaj alat."
+msgstr "Oprostite, izgleda da je vaš popup-blocker onemogućio prozor u sklopu ovog programa. Morate isključiti blokiranje popup prozora da bi u potpunosti iskoristili ovaj alat."
 
 msgid "common_invalid_data"
-msgstr "Greška: Unešene su nevaljane vrednosti, označene su crvenom bojom."
+msgstr "Greška: Unešene su pogrešne vrednosti, označene su crvenom bojom."
 
 msgid "common_more_colors"
 msgstr "Više boja"
@@ -67,34 +67,34 @@ msgid "simple_italic_desc"
 msgstr "Iskosi (Ctrl+I)"
 
 msgid "simple_underline_desc"
-msgstr "Podcrtaj (Ctrl+U)"
+msgstr "Podvuci (Ctrl+U)"
 
 msgid "simple_striketrough_desc"
 msgstr "Precrtaj"
 
 msgid "simple_bullist_desc"
-msgstr "Neuređena lista"
+msgstr "Znakovna lista"
 
 msgid "simple_numlist_desc"
-msgstr "Uređena lista"
+msgstr "Brojčana lista"
 
 msgid "simple_undo_desc"
-msgstr "Poništi (Ctrl+Z)"
+msgstr "Opozovi (Ctrl+Z)"
 
 msgid "simple_redo_desc"
-msgstr "Ponovi (Ctrl+Y)"
+msgstr "Vrati (Ctrl+Y)"
 
 msgid "simple_cleanup_desc"
-msgstr "Počisti kod"
+msgstr "Očisti kod"
 
 msgid "advanced_style_select"
 msgstr "Stilovi"
 
 msgid "advanced_font_size"
-msgstr "Veličina pisma"
+msgstr "Veličina"
 
 msgid "advanced_fontdefault"
-msgstr "Vrsta pisma"
+msgstr "Font"
 
 msgid "advanced_block"
 msgstr "Format"
@@ -136,7 +136,7 @@ msgid "advanced_code"
 msgstr "Kod"
 
 msgid "advanced_samp"
-msgstr "Primjer koda"
+msgstr "Primer koda"
 
 msgid "advanced_dt"
 msgstr "Definicija pojma"
@@ -151,52 +151,52 @@ msgid "advanced_italic_desc"
 msgstr "Iskosi (Ctrl+I)"
 
 msgid "advanced_underline_desc"
-msgstr "Podcrtaj (Ctrl+U)"
+msgstr "Podvuci (Ctrl+U)"
 
 msgid "advanced_striketrough_desc"
 msgstr "Precrtaj"
 
 msgid "advanced_justifyleft_desc"
-msgstr "Poravnaj levo"
+msgstr "Levo"
 
 msgid "advanced_justifycenter_desc"
-msgstr "Centriraj"
+msgstr "Centrirano"
 
 msgid "advanced_justifyright_desc"
-msgstr "Poravnaj desno"
+msgstr "Desno"
 
 msgid "advanced_justifyfull_desc"
-msgstr "Poravnaj potpuno"
+msgstr "Poravnato"
 
 msgid "advanced_bullist_desc"
-msgstr "Neuređena lista"
+msgstr "Znakovna lista"
 
 msgid "advanced_numlist_desc"
-msgstr "Uređena lista"
+msgstr "Brojčana lista"
 
 msgid "advanced_outdent_desc"
-msgstr "Uvuci"
+msgstr "Povećaj uvlačenje"
 
 msgid "advanced_indent_desc"
-msgstr "Izvuci"
+msgstr "Smanji uvlačenje"
 
 msgid "advanced_undo_desc"
-msgstr "Poništi (Ctrl+Z)"
+msgstr "Opozovi (Ctrl+Z)"
 
 msgid "advanced_redo_desc"
-msgstr "Ponovi (Ctrl+Y)"
+msgstr "Vrati (Ctrl+Y)"
 
 msgid "advanced_link_desc"
-msgstr "Ubaci/promijeni link"
+msgstr "Ubaci/izmeni link"
 
 msgid "advanced_unlink_desc"
-msgstr "Poništi link"
+msgstr "Ukloni link"
 
 msgid "advanced_image_desc"
-msgstr "Umetni/uredi sliku"
+msgstr "Ubaci/uredi sliku"
 
 msgid "advanced_cleanup_desc"
-msgstr "Počisti kod"
+msgstr "Očisti kod"
 
 msgid "advanced_code_desc"
 msgstr "Uredi HTML izvor"
@@ -208,31 +208,31 @@ msgid "advanced_sup_desc"
 msgstr "Eksponent"
 
 msgid "advanced_hr_desc"
-msgstr "Umetni vodoravnu crtu"
+msgstr "Ubaci horizontalnu liniju"
 
 msgid "advanced_removeformat_desc"
-msgstr "Poništi oblikovanje"
+msgstr "Ukloni formatiranje"
 
 msgid "advanced_custom1_desc"
-msgstr "Vlastiti opis ovdje"
+msgstr "Unesi vlastiti opis"
 
 msgid "advanced_forecolor_desc"
-msgstr "Odaberite boju teksta"
+msgstr "Izaberi boju teksta"
 
 msgid "advanced_backcolor_desc"
-msgstr "Odaberite boju pozadine"
+msgstr "Izaberi boju pozadine"
 
 msgid "advanced_charmap_desc"
-msgstr "Umetni vlastiti znak"
+msgstr "Ubaci specijalni znak"
 
 msgid "advanced_visualaid_desc"
-msgstr "Vodilice/nevidljivi elementi"
+msgstr "Vođice/nevidljivi elementi"
 
 msgid "advanced_anchor_desc"
-msgstr "Umetni/uredi sidro"
+msgstr "Ubaci/uredi sidro"
 
 msgid "advanced_cut_desc"
-msgstr "Izreži"
+msgstr "Iseci"
 
 msgid "advanced_copy_desc"
 msgstr "Kopiraj"
@@ -241,7 +241,7 @@ msgid "advanced_paste_desc"
 msgstr "Zalepi"
 
 msgid "advanced_image_props_desc"
-msgstr "Svojstva slike"
+msgstr "Detalji slike"
 
 msgid "advanced_newdocument_desc"
 msgstr "Novi dokument"
@@ -253,19 +253,19 @@ msgid "advanced_blockquote_desc"
 msgstr "Citiraj"
 
 msgid "advanced_clipboard_msg"
-msgstr "Kopiraj/Izreži/Zalepi nije dostupno u Mozilla i Firefox preglednicima. Više informacija?"
+msgstr "Kopiraj/Iseci/Zalepi nisu dostupni u Mozilla i Firefox pretraživačima. Da li želite više informacija?"
 
 msgid "advanced_path"
-msgstr "Staza"
+msgstr "Putanja"
 
 msgid "advanced_newdocument"
-msgstr "Jeste li sigurni da želite izbrisati celi sadržaj?"
+msgstr "Da li ste sigurni da želite da obrišete celi sadržaj?"
 
 msgid "advanced_toolbar_focus"
-msgstr "Pređi na alatnu traku - Alt+Q, pređi na uređivač - Alt-Z, pređi na element path - Alt-X"
+msgstr "Pređi na traku sa alatima - Alt+Q, Pređi na uređivač - Alt-Z, Pređi na putanju elementa - Alt-X"
 
 msgid "advanced_more_colors"
-msgstr "Više boja"
+msgstr "Dodatne boje"
 
 msgid "advanced_image_delta_width"
 msgstr ""
@@ -298,7 +298,7 @@ msgid "advanced_anchor_delta_height"
 msgstr ""
 
 msgid "advanced_dlg_about_title"
-msgstr "TinyMCE"
+msgstr "O TinyMCE"
 
 msgid "advanced_dlg_about_general"
 msgstr "O programu"
@@ -325,7 +325,7 @@ msgid "advanced_dlg_about_loaded"
 msgstr "Postojeći dodaci"
 
 msgid "advanced_dlg_anchor_title"
-msgstr "Umetni/uredi sidro"
+msgstr "Ubaci/uredi sidro"
 
 msgid "advanced_dlg_anchor_name"
 msgstr "Ime sidra"
@@ -334,10 +334,10 @@ msgid "advanced_dlg_code_title"
 msgstr "HTML uređivač"
 
 msgid "advanced_dlg_code_wordwrap"
-msgstr "Omatanje teksta"
+msgstr "Prelom teksta"
 
 msgid "advanced_dlg_colorpicker_title"
-msgstr "Izbor boje"
+msgstr "Izaberi boje"
 
 msgid "advanced_dlg_colorpicker_picker_tab"
 msgstr "Odabir"
@@ -352,10 +352,10 @@ msgid "advanced_dlg_colorpicker_palette_title"
 msgstr "Paleta boja"
 
 msgid "advanced_dlg_colorpicker_named_tab"
-msgstr "Imenovano"
+msgstr "Pod nazivom"
 
 msgid "advanced_dlg_colorpicker_named_title"
-msgstr "Imenovane boje"
+msgstr "Naziv boja"
 
 msgid "advanced_dlg_colorpicker_color"
 msgstr "Boja:"
@@ -364,10 +364,10 @@ msgid "advanced_dlg_colorpicker_name"
 msgstr "Naziv:"
 
 msgid "advanced_dlg_charmap_title"
-msgstr "Odaberite znak"
+msgstr "Izberi znak"
 
 msgid "advanced_dlg_image_title"
-msgstr "Umetni/uredi sliku"
+msgstr "Ubaci/uredi sliku"
 
 msgid "advanced_dlg_image_src"
 msgstr "URL slike"
@@ -379,22 +379,22 @@ msgid "advanced_dlg_image_list"
 msgstr "Lista slika"
 
 msgid "advanced_dlg_image_border"
-msgstr "Obrub"
+msgstr "Ivice"
 
 msgid "advanced_dlg_image_dimensions"
 msgstr "Dimenzije"
 
 msgid "advanced_dlg_image_vspace"
-msgstr "Okomiti razmak"
+msgstr "Vertikalni razmak"
 
 msgid "advanced_dlg_image_hspace"
-msgstr "Vodoravni razmak"
+msgstr "Horizontalni razmak"
 
 msgid "advanced_dlg_image_align"
-msgstr "Poravnavanje"
+msgstr "Poravnanje"
 
 msgid "advanced_dlg_image_align_baseline"
-msgstr "Osnovna linija"
+msgstr "Osnova"
 
 msgid "advanced_dlg_image_align_top"
 msgstr "Vrh"
@@ -418,7 +418,7 @@ msgid "advanced_dlg_image_align_right"
 msgstr "Desno"
 
 msgid "advanced_dlg_link_title"
-msgstr "Ubaci/promijeni link"
+msgstr "Ubaci/izmeni link"
 
 msgid "advanced_dlg_link_url"
 msgstr "URL link"
@@ -436,28 +436,28 @@ msgid "advanced_dlg_link_titlefield"
 msgstr "Naslov"
 
 msgid "advanced_dlg_link_is_email"
-msgstr "URL koji ste uneli izgleda kao e-mail adresa, želite li dodati potrebni mailto: prefiks?"
+msgstr "URL koji ste uneli izgleda kao e-mail adresa, da li želite da dodate neophodni mailto: prefiks?"
 
 msgid "advanced_dlg_link_is_external"
-msgstr "URL koji ste uneli izgleda kao vanjski link, želite li dodati potrebni http:// prefiks?"
+msgstr "URL koji ste uneli izgleda kao spoljašnji link, da li želite da dodate neophodni http:// prefiks?"
 
 msgid "advanced_dlg_link_list"
 msgstr "Lista linkova"
 
 msgid "contextmenu_align"
-msgstr "Poravnavanje"
+msgstr "Poravnanje"
 
 msgid "contextmenu_left"
 msgstr "Levo"
 
 msgid "contextmenu_center"
-msgstr "Sredina"
+msgstr "Centrirano"
 
 msgid "contextmenu_right"
 msgstr "Desno"
 
 msgid "contextmenu_full"
-msgstr "Puno"
+msgstr "Poravnato"
 
 msgid "insertdatetime_date_fmt"
 msgstr "%d.%m.%Y."
@@ -466,10 +466,10 @@ msgid "insertdatetime_time_fmt"
 msgstr "%H:%M:%S"
 
 msgid "insertdatetime_insertdate_desc"
-msgstr "Umetni datum"
+msgstr "Ubaci datum"
 
 msgid "insertdatetime_inserttime_desc"
-msgstr "Umetni vreme"
+msgstr "Ubaci vreme"
 
 msgid "insertdatetime_months_long"
 msgstr "januar,februar,mart,april,maj,juni,juli,avgust,septembar,oktobar,novembar,decembar"
@@ -484,10 +484,10 @@ msgid "insertdatetime_day_short"
 msgstr "ned,pon,uto,sre,čet,pet,sub,ned"
 
 msgid "print_print_desc"
-msgstr "Ispis"
+msgstr "Štampaj"
 
 msgid "preview_preview_desc"
-msgstr "Prikaz"
+msgstr "Pregled"
 
 msgid "directionality_ltr_desc"
 msgstr "S leva na desno"
@@ -496,13 +496,13 @@ msgid "directionality_rtl_desc"
 msgstr "S desna na levo"
 
 msgid "layer_insertlayer_desc"
-msgstr "Umetni novi sloj"
+msgstr "Ubaci novi sloj"
 
 msgid "layer_forward_desc"
-msgstr "Pomakni napred"
+msgstr "Pomeri napred"
 
 msgid "layer_backward_desc"
-msgstr "Pomakni natrag"
+msgstr "Pomeri nazad"
 
 msgid "layer_absolute_desc"
 msgstr "Uključi/isključi apsolutno pozicioniranje"
@@ -511,22 +511,22 @@ msgid "layer_content"
 msgstr "Novi sloj..."
 
 msgid "save_save_desc"
-msgstr "Spremi"
+msgstr "Sačuvaj"
 
 msgid "save_cancel_desc"
-msgstr "Odustani od svih promjena"
+msgstr "Odustani od svih promena"
 
 msgid "nonbreaking_nonbreaking_desc"
-msgstr "Umetni razmak"
+msgstr "Ubaci razmak"
 
 msgid "iespell_iespell_desc"
-msgstr "Pokreni provjeru pravopisa"
+msgstr "Proveri pravopis"
 
 msgid "iespell_download"
-msgstr "Provjera pravopisa nije postavljena. Postaviti sada?"
+msgstr "Provera pravopisa nije instalirana. Sada instalirati?"
 
 msgid "advhr_advhr_desc"
-msgstr "Vodoravna crta"
+msgstr "Horizontalna crta"
 
 msgid "advhr_delta_width"
 msgstr ""
@@ -541,10 +541,10 @@ msgid "advhr_dlg_size"
 msgstr "Visina"
 
 msgid "advhr_dlg_noshade"
-msgstr "Bez sjene"
+msgstr "Bez senčenja"
 
 msgid "emotions_emotions_desc"
-msgstr "Emocije"
+msgstr "Smajli"
 
 msgid "emotions_delta_width"
 msgstr ""
@@ -553,25 +553,25 @@ msgid "emotions_delta_height"
 msgstr ""
 
 msgid "emotions_dlg_title"
-msgstr "Umetni emociju"
+msgstr "Ubaci smajlija"
 
 msgid "emotions_dlg_desc"
-msgstr "Emocije"
+msgstr "Smajli"
 
 msgid "emotions_dlg_cool"
 msgstr "Cool"
 
 msgid "emotions_dlg_cry"
-msgstr "Plač"
+msgstr "Plačem"
 
 msgid "emotions_dlg_embarassed"
-msgstr "Sramim se"
+msgstr "Stidim se"
 
 msgid "emotions_dlg_foot_in_mouth"
-msgstr "Izlanuo se"
+msgstr "Izletelo mi"
 
 msgid "emotions_dlg_frown"
-msgstr "Mršti se"
+msgstr "Tužan sam"
 
 msgid "emotions_dlg_innocent"
 msgstr "Nevinašce"
@@ -586,7 +586,7 @@ msgid "emotions_dlg_money_mouth"
 msgstr "Bogataš"
 
 msgid "emotions_dlg_sealed"
-msgstr "Šutim"
+msgstr "Ćutim"
 
 msgid "emotions_dlg_smile"
 msgstr "Osmeh"
@@ -595,16 +595,16 @@ msgid "emotions_dlg_surprised"
 msgstr "Iznenađen"
 
 msgid "emotions_dlg_tongue_out"
-msgstr "Belji se"
+msgstr "Plezim se"
 
 msgid "emotions_dlg_undecided"
 msgstr "Neodlučan"
 
 msgid "emotions_dlg_wink"
-msgstr "Namigiva"
+msgstr "Namigujem"
 
 msgid "emotions_dlg_yell"
-msgstr "Viče"
+msgstr "Vičem"
 
 msgid "searchreplace_search_desc"
 msgstr "Pronađi"
@@ -640,19 +640,19 @@ msgid "searchreplace_dlg_replacewith"
 msgstr "Zameni sa"
 
 msgid "searchreplace_dlg_direction"
-msgstr "Smjer"
+msgstr "Smer"
 
 msgid "searchreplace_dlg_up"
 msgstr "Gore"
 
 msgid "searchreplace_dlg_down"
-msgstr "Dolje"
+msgstr "Dole"
 
 msgid "searchreplace_dlg_mcase"
-msgstr "Match case"
+msgstr "Slaganje"
 
 msgid "searchreplace_dlg_findnext"
-msgstr "Pronađi sljedeće"
+msgstr "Pronađi sledeće"
 
 msgid "searchreplace_dlg_replace"
 msgstr "Zameni"
@@ -661,7 +661,7 @@ msgid "searchreplace_dlg_replaceall"
 msgstr "Zameni sve"
 
 msgid "ploneimage_image_desc"
-msgstr "Umetni/uredi sliku"
+msgstr "Ubaci/uredi sliku"
 
 msgid "ploneimage_delta_width"
 msgstr ""
@@ -685,13 +685,13 @@ msgid "ploneimage_dlg_title"
 msgstr "Naslov"
 
 msgid "ploneimage_dlg_preview"
-msgstr "Prikaz"
+msgstr "Pregled"
 
 msgid "ploneimage_dlg_constrain_proportions"
 msgstr "Zadrži proporcije"
 
 msgid "ploneimage_dlg_langdir"
-msgstr "Smjer jezika"
+msgstr "Smer jezika"
 
 msgid "ploneimage_dlg_langcode"
 msgstr "Kod jezika"
@@ -715,10 +715,10 @@ msgid "ploneimage_dlg_id"
 msgstr "Id"
 
 msgid "ploneimage_dlg_map"
-msgstr "Karta slike"
+msgstr "Mapa slike"
 
 msgid "ploneimage_dlg_swap_image"
-msgstr "Izmjenjiva slika"
+msgstr "Promeni slika"
 
 msgid "ploneimage_dlg_alt_image"
 msgstr "Alternativna slika"
@@ -727,7 +727,7 @@ msgid "ploneimage_dlg_mouseover"
 msgstr "za prelazak miša preko slike"
 
 msgid "ploneimage_dlg_mouseout"
-msgstr "za izlazak miša van slike"
+msgstr "za izlazak miša sa slike"
 
 msgid "ploneimage_dlg_misc"
 msgstr "Razno"
@@ -736,10 +736,10 @@ msgid "ploneimage_dlg_example_img"
 msgstr "Prikaz slike"
 
 msgid "ploneimage_dlg_missing_alt"
-msgstr "Jeste li sigurni da želite izostaviti opis slike? Slika može biti nedostupna ljudima s poteškoćama ili onima koji koriste preglednike bez prikaza slika."
+msgstr "Da li ste sigurni da želite da izostavite opis slike? Slika može biti nedostupna ljudima s poteškoćama ili onima koji koriste pretraživače bez prikaza slika."
 
 msgid "ploneimage_dlg_dialog_title"
-msgstr "Umetni/uredi sliku"
+msgstr "Ubaci/uredi sliku"
 
 msgid "ploneimage_dlg_src"
 msgstr "URL slike"
@@ -751,16 +751,16 @@ msgid "ploneimage_dlg_list"
 msgstr "Lista slika"
 
 msgid "ploneimage_dlg_border"
-msgstr "Obrub"
+msgstr "Ivice"
 
 msgid "ploneimage_dlg_dimensions"
 msgstr "Dimenzije"
 
 msgid "ploneimage_dlg_vspace"
-msgstr "Okomiti razmak"
+msgstr "Vertikalni razmak"
 
 msgid "ploneimage_dlg_hspace"
-msgstr "Vodoravni razmak"
+msgstr "Horizontalni razmak"
 
 msgid "ploneimage_dlg_align"
 msgstr "Poravnavanje"
@@ -793,7 +793,7 @@ msgid "ploneimage_dlg_image_list"
 msgstr "Lista slika"
 
 msgid "plonelink_link_desc"
-msgstr "Insert/edit link"
+msgstr "Ubaci/izmeni link"
 
 msgid "plonelink_delta_width"
 msgstr ""
@@ -802,7 +802,7 @@ msgid "plonelink_delta_height"
 msgstr ""
 
 msgid "plonelink_dlg_title"
-msgstr "Ubaci/promijeni link"
+msgstr "Ubaci/izmeni link"
 
 msgid "plonelink_dlg_url"
 msgstr "URL link"
@@ -814,31 +814,31 @@ msgid "plonelink_dlg_titlefield"
 msgstr "Naslov"
 
 msgid "plonelink_dlg_is_email"
-msgstr "URL koji ste uneli izgleda kao e-mail adresa, želite li dodati potrebni mailto: prefiks?"
+msgstr "URL koji ste uneli izgleda kao e-mail adresa, da li želite da dodate neophodni mailto: prefiks?"
 
 msgid "plonelink_dlg_is_external"
-msgstr "URL koji ste uneli izgleda kao vanjski link, želite li dodati potrebni http:// prefiks?"
+msgstr "URL koji ste uneli izgleda kao spoljašnji link, da li želite da dodate neophodni http:// prefiks?"
 
 msgid "plonelink_dlg_list"
 msgstr "Lista linkova"
 
 msgid "plonelink_dlg_general_tab"
-msgstr "Osnovno"
+msgstr "Opšte opcije"
 
 msgid "plonelink_dlg_popup_tab"
 msgstr "Popup"
 
 msgid "plonelink_dlg_events_tab"
-msgstr "Događaj"
+msgstr "Događaji"
 
 msgid "plonelink_dlg_advanced_tab"
 msgstr "Napredno"
 
 msgid "plonelink_dlg_general_props"
-msgstr "Osnovna svojstva"
+msgstr "Detalji"
 
 msgid "plonelink_dlg_popup_props"
-msgstr "Svojstva popup prozora"
+msgstr "Detalji popup prozora"
 
 msgid "plonelink_dlg_event_props"
 msgstr "Događaji"
@@ -853,13 +853,13 @@ msgid "plonelink_dlg_anchor_names"
 msgstr "Sidra"
 
 msgid "plonelink_dlg_target_same"
-msgstr "Otovori u novom prozoru / okviru"
+msgstr "Otovori u novom prozoru / ramu"
 
 msgid "plonelink_dlg_target_parent"
-msgstr "Otvori u izvornom prozoru / okvir"
+msgstr "Otvori u izvornom prozoru / ramu"
 
 msgid "plonelink_dlg_target_top"
-msgstr "Otvori u gornjem okviru (zamjenjuje sve okvire)"
+msgstr "Otvori u gornjem ramu (zamenjuje sve ramove)"
 
 msgid "plonelink_dlg_target_blank"
 msgstr "Otvori u novom prozoru"
@@ -874,28 +874,28 @@ msgid "plonelink_dlg_popup_name"
 msgstr "Ime prozora"
 
 msgid "plonelink_dlg_popup_return"
-msgstr "Umetni 'return false'"
+msgstr "Ubaci 'return false'"
 
 msgid "plonelink_dlg_popup_scrollbars"
-msgstr "Pokaži klizače"
+msgstr "Prikaži klizače"
 
 msgid "plonelink_dlg_popup_statusbar"
-msgstr "Pokaži statusnu traku"
+msgstr "Prikaži statusnu traku"
 
 msgid "plonelink_dlg_popup_toolbar"
-msgstr "Pokaži alatne trake"
+msgstr "Prikaži trake sa alatima"
 
 msgid "plonelink_dlg_popup_menubar"
-msgstr "Pokaži izbornik"
+msgstr "Prikaži Meni"
 
 msgid "plonelink_dlg_popup_location"
-msgstr "Pokaži traku lokacije"
+msgstr "Prikaži traku lokacije"
 
 msgid "plonelink_dlg_popup_resizable"
-msgstr "Prozor promjenjive veličine"
+msgstr "Prozor promenljive veličine"
 
 msgid "plonelink_dlg_popup_dependent"
-msgstr "Ovisan (samo za Mozilla/Firefox)"
+msgstr "Zavistan (samo za Mozilla/Firefox)"
 
 msgid "plonelink_dlg_popup_size"
 msgstr "Veličina"
@@ -916,7 +916,7 @@ msgid "plonelink_dlg_target_name"
 msgstr "Ime mete"
 
 msgid "plonelink_dlg_langdir"
-msgstr "Smjer jezika"
+msgstr "Smer jezika"
 
 msgid "plonelink_dlg_target_langcode"
 msgstr "Jezik"
@@ -940,7 +940,7 @@ msgid "plonelink_dlg_tabindex"
 msgstr "Tabindex"
 
 msgid "plonelink_dlg_accesskey"
-msgstr "Accesskey"
+msgstr "Taster za pristup"
 
 msgid "plonelink_dlg_ltr"
 msgstr "S leva na desno"
@@ -955,7 +955,7 @@ msgid "xhtmlxtras_cite_desc"
 msgstr "Citat"
 
 msgid "xhtmlxtras_abbr_desc"
-msgstr "Kratica"
+msgstr "Skraćenica"
 
 msgid "xhtmlxtras_acronym_desc"
 msgstr "Akronim"
@@ -967,7 +967,7 @@ msgid "xhtmlxtras_ins_desc"
 msgstr "Unos"
 
 msgid "xhtmlxtras_attribs_desc"
-msgstr "Umetni/uredi atribute"
+msgstr "Ubaci/izmeni atribute"
 
 msgid "xhtmlxtras_cite_delta_width"
 msgstr ""
@@ -1024,7 +1024,7 @@ msgid "xhtmlxtras_dlg_attribute_label_datetime"
 msgstr "Datum/vreme"
 
 msgid "xhtmlxtras_dlg_attribute_label_langdir"
-msgstr "Smjer teksta"
+msgstr "Smer teksta"
 
 msgid "xhtmlxtras_dlg_attribute_option_ltr"
 msgstr "S leva na desno"
@@ -1039,7 +1039,7 @@ msgid "xhtmlxtras_dlg_attribute_label_tabindex"
 msgstr "TabIndex"
 
 msgid "xhtmlxtras_dlg_attribute_label_accesskey"
-msgstr "AccessKey"
+msgstr "Taster za pristup"
 
 msgid "xhtmlxtras_dlg_attribute_events_tab"
 msgstr "Događaji"
@@ -1048,7 +1048,7 @@ msgid "xhtmlxtras_dlg_attribute_attrib_tab"
 msgstr "Atributi"
 
 msgid "xhtmlxtras_dlg_general_tab"
-msgstr "Osnovno"
+msgstr "Generalno"
 
 msgid "xhtmlxtras_dlg_attrib_tab"
 msgstr "Atributi"
@@ -1057,7 +1057,7 @@ msgid "xhtmlxtras_dlg_events_tab"
 msgstr "Događaji"
 
 msgid "xhtmlxtras_dlg_fieldset_general_tab"
-msgstr "Osnovne postavke"
+msgstr "Osnovna podešavanja"
 
 msgid "xhtmlxtras_dlg_fieldset_attrib_tab"
 msgstr "Atributi elemenata"
@@ -1075,7 +1075,7 @@ msgid "xhtmlxtras_dlg_title_acronym_element"
 msgstr "Element akronima"
 
 msgid "xhtmlxtras_dlg_title_abbr_element"
-msgstr "Element kratice"
+msgstr "Element skraćenice"
 
 msgid "xhtmlxtras_dlg_title_cite_element"
 msgstr "Element citata"
@@ -1084,7 +1084,7 @@ msgid "xhtmlxtras_dlg_remove"
 msgstr "Ukloni"
 
 msgid "xhtmlxtras_dlg_insert_date"
-msgstr "Umetni trenutačni datum/vreme"
+msgstr "Ubaci trenutni datum/vreme"
 
 msgid "xhtmlxtras_dlg_option_ltr"
 msgstr "S leva na desno"
@@ -1093,7 +1093,7 @@ msgid "xhtmlxtras_dlg_option_rtl"
 msgstr "S desna na levo"
 
 msgid "xhtmlxtras_dlg_attribs_title"
-msgstr "Umetni/uredi atribute"
+msgstr "Ubaci/izmeni atribute"
 
 msgid "style_desc"
 msgstr "Uredi CSS"
@@ -1296,35 +1296,41 @@ msgstr "Zalepi iz Worda"
 msgid "paste_selectall_desc"
 msgstr "Odaberi sve"
 
+msgid "paste_plaintext_mode_sticky"
+msgstr "Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode."
+
+msgid "paste_plaintext_mode"
+msgstr "Paste is now in plain text mode. Click again to toggle back to regular paste mode."
+
 msgid "paste_dlg_text_title"
-msgstr "Koristite CTRL+V na tipkovnici da zalepite tekst u prozor."
+msgstr "Koristite CTRL+V na tastaturi da zalepite tekst u prozor."
 
 msgid "paste_dlg_text_linebreaks"
 msgstr "Zadrži prelome"
 
 msgid "paste_dlg_word_title"
-msgstr "Koristite CTRL+V na tipkovnici da zalepite tekst u prozor."
+msgstr "Koristite CTRL+V na tastaturi da zalepite tekst u prozor."
 
 msgid "table_desc"
-msgstr "Nova tablica"
+msgstr "Nova tabela"
 
 msgid "table_row_before_desc"
-msgstr "Umetni redak iznad"
+msgstr "Ubaci red iznad"
 
 msgid "table_row_after_desc"
-msgstr "Umetni redak ispod"
+msgstr "Ubaci red ispod"
 
 msgid "table_delete_row_desc"
-msgstr "Izbriši redak"
+msgstr "Obriši red"
 
 msgid "table_col_before_desc"
-msgstr "Umetni stupac levo"
+msgstr "Ubaci kolonu levo"
 
 msgid "table_col_after_desc"
-msgstr "Umetni stupac desno"
+msgstr "Ubaci kolonu desno"
 
 msgid "table_delete_col_desc"
-msgstr "Ukloni stupac"
+msgstr "Obriši kolonu"
 
 msgid "table_split_cells_desc"
 msgstr "Razdvoji spojene ćelije"
@@ -1333,34 +1339,34 @@ msgid "table_merge_cells_desc"
 msgstr "Spoji ćelije"
 
 msgid "table_row_desc"
-msgstr "Svojstva retka"
+msgstr "Svojstva reda"
 
 msgid "table_cell_desc"
 msgstr "Svojstva ćelije"
 
 msgid "table_props_desc"
-msgstr "Svojstva tablice"
+msgstr "Svojstva tabelee"
 
 msgid "table_paste_row_before_desc"
-msgstr "Zalepi redak iznad"
+msgstr "Zalepi red iznad"
 
 msgid "table_paste_row_after_desc"
-msgstr "Zalepi redak ispod"
+msgstr "Zalepi red ispod"
 
 msgid "table_cut_row_desc"
-msgstr "Izreži redak"
+msgstr "Iseci red"
 
 msgid "table_copy_row_desc"
-msgstr "Kopiraj redak"
+msgstr "Kopiraj red"
 
 msgid "table_del"
-msgstr "Izbriši tablicu"
+msgstr "Obriši tabelu"
 
 msgid "table_row"
-msgstr "Redak"
+msgstr "Red"
 
 msgid "table_col"
-msgstr "Stupac"
+msgstr "Kolona"
 
 msgid "table_cell"
 msgstr "Ćelija"
@@ -1402,10 +1408,10 @@ msgid "table_dlg_advanced_props"
 msgstr "Napredna svojstva"
 
 msgid "table_dlg_rowtype"
-msgstr "Row in table part"
+msgstr "Red u tabeli"
 
 msgid "table_dlg_title"
-msgstr "Umetni/uredi tablicu"
+msgstr "Ubaci/uredi tabelu"
 
 msgid "table_dlg_width"
 msgstr "Širina"
@@ -1414,10 +1420,10 @@ msgid "table_dlg_height"
 msgstr "Visina"
 
 msgid "table_dlg_cols"
-msgstr "Stupaca"
+msgstr "Kolona"
 
 msgid "table_dlg_rows"
-msgstr "Redaka"
+msgstr "Redova"
 
 msgid "table_dlg_cellspacing"
 msgstr "Razmak ćelija"
@@ -1426,13 +1432,13 @@ msgid "table_dlg_cellpadding"
 msgstr "Dopuna ćelije"
 
 msgid "table_dlg_border"
-msgstr "Obrub"
+msgstr "Ivica"
 
 msgid "table_dlg_align"
 msgstr "Poravnavanje"
 
 msgid "table_dlg_align_default"
-msgstr "Zadano"
+msgstr "Zadato"
 
 msgid "table_dlg_align_left"
 msgstr "Levo"
@@ -1444,7 +1450,7 @@ msgid "table_dlg_align_middle"
 msgstr "Sredina"
 
 msgid "table_dlg_row_title"
-msgstr "Svojstva retka"
+msgstr "Svojstva reda"
 
 msgid "table_dlg_cell_title"
 msgstr "Svojstva ćelije"
@@ -1453,7 +1459,7 @@ msgid "table_dlg_cell_type"
 msgstr "Tip ćelije"
 
 msgid "table_dlg_valign"
-msgstr "Okomito poravnavanje"
+msgstr "Vertikalno poravnavanje"
 
 msgid "table_dlg_align_top"
 msgstr "Vrh"
@@ -1462,10 +1468,10 @@ msgid "table_dlg_align_bottom"
 msgstr "Dno"
 
 msgid "table_dlg_bordercolor"
-msgstr "Boja obruba"
+msgstr "Boja ivice"
 
 msgid "table_dlg_bgcolor"
-msgstr "Background color"
+msgstr "Boja pozadine"
 
 msgid "table_dlg_merge_cells_title"
 msgstr "Spoji ćelije"
@@ -1477,7 +1483,7 @@ msgid "table_dlg_style"
 msgstr "Stil"
 
 msgid "table_dlg_langdir"
-msgstr "Smjer jezika"
+msgstr "Smer jezika"
 
 msgid "table_dlg_langcode"
 msgstr "Kod jezika"
@@ -1495,127 +1501,133 @@ msgid "table_dlg_bgimage"
 msgstr "Slika pozadine"
 
 msgid "table_dlg_summary"
-msgstr "Sažetak"
+msgstr "Prikaz"
 
 msgid "table_dlg_td"
-msgstr "Podatkovna"
+msgstr "Podaci"
 
 msgid "table_dlg_th"
 msgstr "Zaglavlje"
 
 msgid "table_dlg_cell_cell"
-msgstr "Primjeni na odabranu ćeliju"
+msgstr "Primeni na izabranu ćeliju"
 
 msgid "table_dlg_cell_row"
-msgstr "Primjeni na sve ćelije u retku"
+msgstr "Primeni na sve ćelije u redu"
 
 msgid "table_dlg_cell_all"
-msgstr "Primjeni na sve ćelije u tablici"
+msgstr "Primeni na sve ćelije u tabeli"
 
 msgid "table_dlg_row_row"
-msgstr "Primjeni na odabrani redak"
+msgstr "Primeni na izabrani red"
 
 msgid "table_dlg_row_odd"
-msgstr "Primjeni na neparne retke u tablici"
+msgstr "Primeni na neparne redove u tabeli"
 
 msgid "table_dlg_row_even"
-msgstr "Primjeni na parne retke u tablici"
+msgstr "Primeni na parne redove u tabeli"
 
 msgid "table_dlg_row_all"
-msgstr "Primjeni na sve retke u tablici"
+msgstr "Primeni na sve redove u tabeli"
 
 msgid "table_dlg_thead"
-msgstr "Zaglavlje tablice"
+msgstr "Zaglavlje tabele"
 
 msgid "table_dlg_tbody"
-msgstr "Telo tablice"
+msgstr "Sadržaj tabele"
 
 msgid "table_dlg_tfoot"
-msgstr "Podnožje tablice"
+msgstr "Podnožje tabele"
 
 msgid "table_dlg_scope"
-msgstr "Domet"
+msgstr "Obim"
 
 msgid "table_dlg_rowgroup"
-msgstr "Grupa redaka"
+msgstr "Grupa redova"
 
 msgid "table_dlg_colgroup"
-msgstr "Grupa stupaca"
+msgstr "Grupa kolona"
 
 msgid "table_dlg_col_limit"
-msgstr "Premašili ste maksimalni broj stupaca ({$cols})."
+msgstr "Premašili ste maksimalni broj kolona ({$cols})."
 
 msgid "table_dlg_row_limit"
-msgstr "Premašili ste maksimalni broj redaka ({$rows})."
+msgstr "Premašili ste maksimalni broj redova ({$rows})."
 
 msgid "table_dlg_cell_limit"
 msgstr "Premašili ste maksimalni broj ćelija ({$cells})."
 
 msgid "table_dlg_missing_scope"
-msgstr "Are you sure you want to continue without specifying a scope for this table header cell. Without it, it may be difficult for some users with disabilities to understand the content or data displayed of the table."
+msgstr "Da li ste sigurni da želite da nastavite a da niste definisali obim ćelije zaglavlja tabele. Kada nije definisan, korisnicima sa smetnjama u razvoju možda neće biti razumljiv njihov sadržaj."
 
 msgid "table_dlg_caption"
-msgstr "Opis tablice"
+msgstr "Opis tabele"
 
 msgid "table_dlg_frame"
-msgstr "Frame"
+msgstr "ram"
 
 msgid "table_dlg_frame_none"
-msgstr "none"
+msgstr "bez rama"
 
 msgid "table_dlg_frame_groups"
-msgstr "groups"
+msgstr "grupe"
 
 msgid "table_dlg_frame_rows"
-msgstr "rows"
+msgstr "redovi"
 
 msgid "table_dlg_frame_cols"
-msgstr "cols"
+msgstr "kolone"
 
 msgid "table_dlg_frame_all"
-msgstr "all"
+msgstr "sve"
 
 msgid "table_dlg_rules"
-msgstr "Rules"
+msgstr "Linije"
 
 msgid "table_dlg_rules_void"
-msgstr "void"
+msgstr "prazno"
 
 msgid "table_dlg_rules_above"
-msgstr "above"
+msgstr "iznad"
 
 msgid "table_dlg_rules_below"
-msgstr "below"
+msgstr "ispod"
 
 msgid "table_dlg_rules_hsides"
-msgstr "hsides"
+msgstr "gornja i donja"
 
 msgid "table_dlg_rules_lhs"
-msgstr "lhs"
+msgstr "samo levo"
 
 msgid "table_dlg_rules_rhs"
-msgstr "rhs"
+msgstr "samo desno"
 
 msgid "table_dlg_rules_vsides"
-msgstr "vsides"
+msgstr "levo i desno"
 
 msgid "table_dlg_rules_box"
-msgstr "box"
+msgstr "sve strane"
 
 msgid "table_dlg_rules_border"
-msgstr "border"
+msgstr "sve ivice"
 
 msgid "autosave_unload_msg"
-msgstr "Promjene u dokumentu će biti izgubljene ako izađete s ove stranice."
+msgstr "Izmene u dokumentu će biti izgubljene ako izađete s ove stranice."
+
+msgid "autosave_restore_content"
+msgstr "Restore auto-saved content."
+
+msgid "autosave_warning_message"
+msgstr "If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?."
 
 msgid "fullscreen_desc"
 msgstr "Uključi/isključi prikaz preko celog ekrana"
 
 msgid "media_desc"
-msgstr "Insert / edit embedded media"
+msgstr "Ubaci / uredi medije"
 
 msgid "media_edit"
-msgstr "Edit embedded media"
+msgstr "Uredi medije"
 
 msgid "media_delta_width"
 msgstr ""
@@ -2185,28 +2197,28 @@ msgid "fullpage_dlg_advanced_props"
 msgstr "Napredno"
 
 msgid "template_desc"
-msgstr "Umetni sadržaj iz predložak"
+msgstr "Ubaci sadržaj iz šablona"
 
 msgid "template_dlg_title"
-msgstr "Predlošci"
+msgstr "Šabloni"
 
 msgid "template_dlg_label"
-msgstr "Predložak"
+msgstr "Šablon"
 
 msgid "template_dlg_desc_label"
 msgstr "Opis"
 
 msgid "template_dlg_desc"
-msgstr "Umetni sadržaj predloška"
+msgstr "Ubaci sadržaj šablona"
 
 msgid "template_dlg_select"
-msgstr "Odaberite predložak"
+msgstr "Izaberi šablon"
 
 msgid "template_dlg_preview"
-msgstr "Prikaz"
+msgstr "Pregled"
 
 msgid "template_dlg_warning"
-msgstr "Upozorenje: Nadopuna predloška novim može uzrokovati gubitak podataka."
+msgstr "Upozorenje: Zamena šablona novim može da dovede do gubitka podataka."
 
 msgid "template_dlg_mdate_format"
 msgstr "%d.%m.%Y %H:%M:%S"
@@ -2230,7 +2242,7 @@ msgid "visualchars_desc"
 msgstr "Vizuelni kontrolni znakovi uključeni/isključeni."
 
 msgid "spellchecker_desc"
-msgstr "Uključi/isključi provjeru pravopisa"
+msgstr "Uključi/isključi proveru pravopisa"
 
 msgid "spellchecker_menu"
 msgstr "Postavke provere pravopisa"
@@ -2245,7 +2257,7 @@ msgid "spellchecker_langs"
 msgstr "Jezici"
 
 msgid "spellchecker_wait"
-msgstr "Pričekajte..."
+msgstr "Sačekajte..."
 
 msgid "spellchecker_sug"
 msgstr "Predlozi"
@@ -2257,5 +2269,35 @@ msgid "spellchecker_no_mpell"
 msgstr "Nije pronađena nijedna pravopisna greška."
 
 msgid "pagebreak_desc"
-msgstr "Umetni prelom."
+msgstr "Ubaci prelom."
+
+msgid "advlist_types"
+msgstr "Types"
+
+msgid "advlist_def"
+msgstr "Default"
+
+msgid "advlist_lower_alpha"
+msgstr "Lower alpha"
+
+msgid "advlist_lower_greek"
+msgstr "Lower greek"
+
+msgid "advlist_lower_roman"
+msgstr "Lower roman"
+
+msgid "advlist_upper_alpha"
+msgstr "Upper alpha"
+
+msgid "advlist_upper_roman"
+msgstr "Upper roman"
+
+msgid "advlist_circle"
+msgstr "Circle"
+
+msgid "advlist_disc"
+msgstr "Disc"
+
+msgid "advlist_square"
+msgstr "Square"
 
