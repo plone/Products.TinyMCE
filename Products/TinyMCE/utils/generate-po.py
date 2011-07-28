@@ -30,7 +30,6 @@ for x in AVAILABLE_LANGUAGES:
 
     language = root.find('language')
     title = language.attrib['title'].encode("utf-8")
-    dir = language.attrib['dir']
 
     if not os.path.exists("../locales/%s" % x):
         os.mkdir("../locales/%s" % x)
@@ -72,7 +71,7 @@ for x in AVAILABLE_LANGUAGES:
                 domain = 'plonelink_dlg'
             if domain == 'advimage_dlg':
                 domain = 'ploneimage_dlg'
-            FILE.write("msgid \"%s_%s\"\n" % (domain, item.attrib['name']))
+            FILE.write('msgid "%s_%s"\n' % (domain, item.attrib['name']))
             if item.text:
                 msg = item.text.replace('"', '\\"')
                 msg = msg.replace('\\N', '\\n')
@@ -80,9 +79,11 @@ for x in AVAILABLE_LANGUAGES:
                 msg = msg.replace('\\\'', '\'')
                 if msg.startswith('\\n'):
                     msg = msg[2:]
-                FILE.write("msgstr \"%s\"\n" % msg.encode("utf=8"))
+                if msg.endswith('\\n'):
+                    msg = msg[:-2]
+                FILE.write('msgstr "%s"\n' % msg.encode("utf-8"))
             else:
-                FILE.write("msgstr \"\"\n")
+                FILE.write('msgstr ""\n')
             FILE.write("\n")
 
     FILE.close()
