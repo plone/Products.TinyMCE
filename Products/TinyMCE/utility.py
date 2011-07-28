@@ -592,7 +592,7 @@ class TinyMCE(SimpleItem):
         return 'text/html'
 
     security.declareProtected('View', 'getConfiguration')
-    def getConfiguration(self, context=None, field=None, request=None):
+    def getConfiguration(self, context=None, field=None, request=None, as_json=True):
         results = {}
 
         # Get widget attributes
@@ -823,7 +823,10 @@ class TinyMCE(SimpleItem):
         results['atd_show_types'] = self.libraries_atd_show_types.strip().replace('\n', ',')
         results['atd_ignore_strings'] = self.libraries_atd_ignore_strings.strip().replace('\n', ',')
 
-        return json.dumps(results)
+        if as_json:
+            return json.dumps(results)
+        else:
+            return results
 
 
 class ImageCaptioningEnabler(object):
