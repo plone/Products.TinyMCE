@@ -38,14 +38,16 @@ rm -f $tinymce_root/{*prototype*,license.txt,tiny_mce_dev.js,tiny_mce_jquery_src
 echo "*** Removing unneeded plugins ..."
 rm -rf $tinymce_root/plugins/{advimage,advlink,example,fullpage,style,simple}
 
+echo "*** Removing unneeded skins ..."
+rm -rf $tinymce_root/themes/advanced/skins/{default,highcontrast,o2k7}
+
 # plugins modifications
-find $tinymce_root -name "*.html" -execdir "$root/bin/rename" "('{}')" "\1.pt"    \;
-find $tinymce_root -name "*.htm" -execdir "$root/bin/rename" "('{}')" "\1.pt"    \;
+find $tinymce_root -name "*.html" -execdir "$root/bin/rename" "({})" "\1.pt"    \;
+find $tinymce_root -name "*.htm" -execdir "$root/bin/rename" "({})" "\1.pt"    \;
 find $tinymce_root -name "*_src.js" -delete
 
 echo "*** Updating language files ..."
 cd $product_root/utils/
-# XXX run it once
 if [ ! -d $product_root/utils/xml ]
 then
     echo "*** Fetching translations ... ***"
