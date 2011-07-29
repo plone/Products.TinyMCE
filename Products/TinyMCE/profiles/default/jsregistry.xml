@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
 <object name="portal_javascripts" meta_type="JavaScripts Registry">
  <javascript cacheable="True"
-             compression="none"
-             cookable="True"
+             compression="safe"
+             cookable="False"
              enabled="True"
              expression="not: portal/portal_membership/isAnonymousUser"
              id="jquery.tinymce.js"
              inline="False"/>
 
  <javascript cacheable="True"
-             compression="none"
+             compression="safe"
              cookable="True"
              enabled="True"
              expression="not: portal/portal_membership/isAnonymousUser"
