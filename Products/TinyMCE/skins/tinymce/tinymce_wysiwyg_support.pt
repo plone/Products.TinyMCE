@@ -1,6 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html i18n:domain="plone">
-
 <!-- wysiwyg default widget -->
 <div metal:define-macro="wysiwygEditorBox">
   <tal:block define="field field|nothing;
@@ -32,20 +31,16 @@
   </div>
   </tal:block>
 </div>
-
 <div metal:define-macro="textFormatSelector">
-
  <tal:block tal:define="wysiwyg_enabled python: here.portal_membership.getAuthenticatedMember().getProperty('wysiwyg_editor')!='None';
                         fname fieldName|inputname|nothing;
                         text_format python: here.portal_tinymce.getContentType(object=here, fieldname=fname);
                         wysiwyg python:wysiwyg_enabled and 'html' in text_format.lower()">
-
   <tal:block condition="wysiwyg">
         <input type="hidden"
                name="text_format"
                value="html" id="Hidden1"/>
   </tal:block>
-
   <tal:block condition="not: wysiwyg">
     <div class="row">
       <div class="label">
@@ -72,7 +67,6 @@
                tal:attributes="checked python:test(text_format=='structured-text', 1, '');"
                />
         <label for="cb_structuredtext" i18n:translate="structured_text">Structured Text</label> <br />
-
         <input class="noborder"
                type="radio"
                name="text_format"
@@ -83,7 +77,6 @@
                onblur="formtooltip('format_help',0)"
                />
         <label for="cb_html" i18n:translate="html">HTML</label> <br />
-
         <input class="noborder"
                type="radio"
                name="text_format"
@@ -97,9 +90,6 @@
       </div>
     </div>
   </tal:block>
-
  </tal:block>
-
 </div>
-
 </html>
