@@ -8,79 +8,92 @@
 	<script type="text/javascript" src="../../utils/validate.js"></script>
 	<script type="text/javascript" src="../../utils/editable_selects.js"></script>
 	<script type="text/javascript" src="js/table.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/table.css" />
+    <link href="css/table.css" rel="stylesheet" type="text/css" />
 
 </head>
-<body id="table" >
+<body id="table" role="application" aria-labelledby="app_title">
+	<span style="display:none;" id="app_title" i18n:translate="table_dlg_title"></span>
 	<div class="dialog-wrapper" id="content">
 		<form onsubmit="insertTable();return false;" action="#">
-			<ul class="formTabs"><li id="general_tab" class="formTab firstFormTab"><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;" class="selected"><span i18n:translate="table_dlg_general_tab"></span></a></li><li id="advanced_tab" class="formTab lastFormTab"><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;"><span i18n:translate="table_dlg_advanced_tab"></span></a></li></ul>
+			<div class="tabs">
+					<ul class="formTabs">
+							<li id="general_tab"  aria-controls="general_panel" class="current formTab firstFormTab">
+									<span><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;" i18n:translate="table_dlg_general_tab"></a></span></li>
+							<li id="advanced_tab" aria-controls="advanced_panel" class="formTab lastFormTab">
+									<span><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;" i18n:translate="table_dlg_advanced_tab"></a></span></li>
+					</ul>
+			</div>
+			<div class="panel_wrapper">
+				<div id="general_panel" class="panel current">
+					<fieldset role="presentation" class="formPanel">
+						<div class="field">
+							<label id="classlabel" for="class" i18n:translate="common_class_name"></label>
+							<div class="widget">
+								<select id="class" name="class" size="1">
+									<option value="plain" selected="selected" i18n:translate="Subdued grid">Subdued grid</option>
+								</select>
+							</div>
+						</div>
 
-			<fieldset id="general_panel" class="formPanel">
-				<div class="field">
-					<label id="classlabel" for="class" i18n:translate="common_class_name"></label>
-					<div class="widget">
-						<select id="class" name="class" size="1">
-							<option value="plain" selected="selected" i18n:translate="Subdued grid">Subdued grid</option>
-						</select>
-					</div>
+						<div class="field">
+							<label id="colslabel" for="cols" i18n:translate="table_dlg_cols"></label>
+							<div class="widget">
+								<input id="cols" name="cols" type="text" value="" size="3" maxlength="3" class="required number min1" />
+							</div>
+						</div>
+
+						<div class="field">
+							<label id="rowslabel" for="rows" i18n:translate="table_dlg_rows"></label>
+							<div class="widget">
+								<input id="rows" name="rows" type="text" value="" size="3" maxlength="3" class="required number min1" />
+							</div>
+						</div>
+
+						<div class="field">
+							<label for="summary" i18n:translate="table_dlg_summary"></label>
+							<div class="widget">
+								<input id="summary" name="summary" type="text" value="" size="30" />
+							</div>
+						</div>
+					</fieldset>
 				</div>
 
-				<div class="field">
-					<label id="colslabel" for="cols" i18n:translate="table_dlg_cols"></label>
-					<div class="widget">
-						<input id="cols" name="cols" type="text" value="" size="3" maxlength="3" class="required number min1" />
-					</div>
-				</div>
+				<div id="advanced_panel" class="panel">
+					<fieldset class="formPanel">
+						<div class="field" style="display:none;">
+							<label id="widthlabel" for="width" i18n:translate="table_dlg_width"></label>
+							<div class="widget">
+								<input name="width" type="text" id="width" value="" size="4" maxlength="4" onchange="changedSize();" class="size" />
+							</div>
+						</div>
 
-				<div class="field">
-					<label id="rowslabel" for="rows" i18n:translate="table_dlg_rows"></label>
-					<div class="widget">
-						<input id="rows" name="rows" type="text" value="" size="3" maxlength="3" class="required number min1" />
-					</div>
-				</div>
+						<div class="field" style="display:none;">
+							<label id="heightlabel" for="height" i18n:translate="table_dlg_height"></label>
+							<div class="widget">
+								<input name="height" type="text" id="height" value="" size="4" maxlength="4" onchange="changedSize();" class="size" />
+							</div>
+						</div>
 
-				<div class="field">
-					<label for="summary" i18n:translate="table_dlg_summary"></label>
-					<div class="widget">
-						<input id="summary" name="summary" type="text" value="" size="30" />
-					</div>
-				</div>
-			</fieldset>
+						<div class="field" style="display:none;">
+							<label id="alignlabel" for="align" i18n:translate="table_dlg_align"></label>
+							<div class="widget">
+								<select id="align" name="align">
+									<option value="" i18n:translate="common_not_set"></option>
+									<option value="center" i18n:translate="table_dlg_align_middle"></option>
+									<option value="left" i18n:translate="table_dlg_align_left"></option>
+									<option value="right" i18n:translate="table_dlg_align_right"></option>
+								</select>
+							</div>
+						</div>
 
-			<fieldset id="advanced_panel" class="formPanel">
-				<div class="field" style="display:none;">
-					<label id="widthlabel" for="width" i18n:translate="table_dlg_width"></label>
-					<div class="widget">
-						<input name="width" type="text" id="width" value="" size="4" maxlength="4" onchange="changedSize();" class="size" />
-					</div>
+						<div class="field">
+							<div class="widget">
+								<input id="caption" name="caption" type="checkbox" /> <label for="caption" i18n:translate="table_dlg_caption"></label>
+							</div>
+						</div>
+					</fieldset>
 				</div>
-
-				<div class="field" style="display:none;">
-					<label id="heightlabel" for="height" i18n:translate="table_dlg_height"></label>
-					<div class="widget">
-						<input name="height" type="text" id="height" value="" size="4" maxlength="4" onchange="changedSize();" class="size" />
-					</div>
-				</div>
-
-				<div class="field" style="display:none;">
-					<label id="alignlabel" for="align" i18n:translate="table_dlg_align"></label>
-					<div class="widget">
-						<select id="align" name="align">
-							<option value="" i18n:translate="common_not_set"></option>
-							<option value="center" i18n:translate="table_dlg_align_middle"></option>
-							<option value="left" i18n:translate="table_dlg_align_left"></option>
-							<option value="right" i18n:translate="table_dlg_align_right"></option>
-						</select>
-					</div>
-				</div>
-
-				<div class="field">
-					<div class="widget">
-						<input id="caption" name="caption" type="checkbox" /> <label for="caption" i18n:translate="table_dlg_caption"></label>
-					</div>
-				</div>
-			</fieldset>
+			</div>
 
 			<div class="hiddenset">
 				<input type="text" id="cellpadding" name="cellpadding" value="" />
@@ -102,11 +115,9 @@
 
 			<div class="visualClear"><!-- --></div>
 
-			<div class="mceActionPanel formControls">
-				<span class="actionButtons">
-					<input type="submit" class="context" id="insert" name="insert" i18n:attributes="value common_insert" />
-					<input type="button" class="context" id="cancel" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
-				</span>
+			<div class="mceActionPanel">
+				<input type="submit" class="context" id="insert" name="insert" i18n:attributes="value common_insert" />
+				<input type="button" class="context" id="cancel" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
 			</div>
 		</form>
 	</div>

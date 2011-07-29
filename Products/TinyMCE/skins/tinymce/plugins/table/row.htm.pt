@@ -5,16 +5,20 @@
 	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
 	<script type="text/javascript" src="../../utils/mctabs.js"></script>
 	<script type="text/javascript" src="../../utils/form_utils.js"></script>
+	<script type="text/javascript" src="../../utils/validate.js"></script>
 	<script type="text/javascript" src="../../utils/editable_selects.js"></script>
 	<script type="text/javascript" src="js/row.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/row.css" />
+    <link href="css/row.css" rel="stylesheet" type="text/css" />
 
 </head>
-<body id="tablerow" >
+<body id="tablerow" role="application">
 	<div class="dialog-wrapper" id="content">
 		<form onsubmit="updateAction();return false;" action="#">
-			<ul class="formTabs"><li id="general_tab" class="formTab firstFormTab"><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;" class="selected"><span i18n:translate="table_dlg_general_tab"></span></a></li><li id="advanced_tab" class="formTab lastFormTab"><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;"><span i18n:translate="table_dlg_advanced_tab"></span></a></li></ul>
-			<fieldset id="general_panel" class="formPanel">
+            <ul class="formTabs">
+                <li id="general_tab" class="current" aria-controls="general_panel"><span i18n:translate="table_dlg_general_tab"><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;"></a></span></li>
+                <li id="advanced_tab" aria-controls="advanced_panel"><span i18n:translate="table_dlg_advanced_tab"><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;"></a></span></li>
+            </ul>
+			<fieldset id="general_panel" class="panel current">
 
 				<div class="field">
 					<label for="height" i18n:translate="table_dlg_height"></label>
@@ -36,8 +40,8 @@
 				</div>
 			</fieldset>
 
-			<fieldset id="advanced_panel" class="formPanel">
-				<div class="field">
+			<fieldset role="application" id="advanced_panel" class="panel">
+				<div class="field" >
 					<label for="rowtype" i18n:translate="table_dlg_rowtype"></label>
 					<div class="widget">
 						<select id="rowtype" name="rowtype" class="mceFocus">
@@ -74,11 +78,9 @@
 
 			<div class="visualClear"><!-- --></div>
 
-			<div class="mceActionPanel formControls">
-				<span class="actionButtons">
-					<input type="submit" id="insert" class="context" name="insert" i18n:attributes="value common_update" />
-					<input type="button" id="cancel" class="context" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
-				</span>
+			<div class="mceActionPanel">
+                <input type="submit" id="insert" class="context" name="insert" i18n:attributes="value common_update" />
+                <input type="button" id="cancel" class="context" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
 			</div>
 		</form>
 	</div>
