@@ -7,7 +7,7 @@
 </head>
 <body style="display: none">
 	<div class="dialog-wrapper" id="content">
-		<table class="listing">
+		<table role="presentation" class="listing">
 			<tr>
 				<th colspan="4" i18n:translate="emotions_dlg_desc"></th>
 			</tr>

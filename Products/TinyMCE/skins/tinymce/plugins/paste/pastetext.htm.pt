@@ -1,42 +1,28 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" i18n:domain="tinymce">
-  <head>
-	<title i18n:translate="paste_paste_text_desc"></title>
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
-	<script type="text/javascript" src="js/pastetext.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/pastetext.css" />
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>{#paste.paste_text_desc}</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js?v={tinymce_version}"></script>
+	<script type="text/javascript" src="js/pastetext.js?v={tinymce_version}"></script>
+</head>
+<body onresize="PasteTextDialog.resize();" style="display:none; overflow:hidden;">
+	<form name="source" onsubmit="return PasteTextDialog.insert();" action="#">
+		<div style="float: left" class="title">{#paste.paste_text_desc}</div>
 
-  </head>
-  <body>
-	<div class="dialog-wrapper" id="content">
-	  <form name="source" onsubmit="return PasteTextDialog.insert();" action="#">
-		<fieldset>
-		  <legend i18n:translate="paste_paste_text_desc"></legend>
-		  <div class="field">
-			<div class="formHelp" i18n:translate="paste_dlg_text_title"></div>
-			<div class="widget">
-			  <textarea  id="mceTextPaste" name="content" rows="15" cols="100" wrap="soft" class="mceFocus"></textarea>
-			</div>
-		  </div>
-
-		  <div class="field">
-			<div class="widget">
-			  <input name="linebreaks" id="linebreaks" type="checkbox" />
-			  <label for="noshade" i18n:translate="paste_dlg_text_linebreaks"></label>
-			</div>
-		  </div>
-		</fieldset>
-
-		<span class="visualClear"><!-- --></span>
-
-		<div class="mceActionPanel formControls">
-		  <span class="actionButtons">
-			<input type="submit" id="insert" class="context" name="insert" i18n:attributes="value common_insert" />
-			<input type="button" id="cancel" class="standalone" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
-		  </span>
+		<div style="float: right">
+			<input type="checkbox" name="linebreaks" id="linebreaks" class="wordWrapCode" checked="checked" /><label for="linebreaks">{#paste_dlg.text_linebreaks}</label>
 		</div>
-	  </form>
-	</div>
-  </body>
+
+		<br style="clear: both" />
+
+		<div>{#paste_dlg.text_title}</div>
+
+		<textarea id="content" name="content" rows="15" cols="100" style="width: 100%; height: 100%; font-family: 'Courier New',Courier,mono; font-size: 12px;" dir="ltr" wrap="soft" class="mceFocus"></textarea>
+
+		<div class="mceActionPanel">
+			<input type="submit" name="insert" value="{#insert}" id="insert" />
+			<input type="button" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" id="cancel" />
+		</div>
+	</form>
+</body> 
 </html>

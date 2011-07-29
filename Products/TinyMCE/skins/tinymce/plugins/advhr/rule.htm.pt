@@ -7,7 +7,7 @@
 	<script type="text/javascript" src="../../utils/mctabs.js"></script>
 	<script type="text/javascript" src="../../utils/form_utils.js"></script>
 </head>
-<body>
+<body role="application">
 	<div class="dialog-wrapper" id="content">
 		<form onsubmit="AdvHRDialog.update();return false;" action="#">
 			<fieldset>
@@ -48,10 +48,8 @@
 			<div class="visualClear"><!-- --></div>
 
 			<div class="mceActionPanel formControls">
-				<span class="actionButtons">
 					<input type="submit" id="insert" class="context" name="insert" i18n:attributes="value common_insert" />
 					<input type="button" id="cancel" class="standalone" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
-				</span>
 			</div>
 		</form>
 	</div>
