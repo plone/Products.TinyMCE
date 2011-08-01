@@ -802,16 +802,15 @@ class TinyMCE(SimpleItem):
 
         try:
             results['document_url'] = context.absolute_url()
-            if getattr(aq_base(context), 'checkCreationFlag', None):
-                parent = aq_parent(aq_inner(context))
-                if context.checkCreationFlag():
-                    parent = aq_parent(aq_parent(parent))
-                    results['parent'] = parent.absolute_url() + "/"
+            parent = aq_parent(aq_inner(context))
+            if getattr(aq_base(context), 'checkCreationFlag', None) and context.checkCreationFlag():
+                parent = aq_parent(aq_parent(parent))
+                results['parent'] = parent.absolute_url() + "/"
+            else:
+                if IFolderish.providedBy(context):
+                    results['parent'] = context.absolute_url() + "/"
                 else:
-                    if IFolderish.providedBy(context):
-                        results['parent'] = context.absolute_url() + "/"
-                    else:
-                        results['parent'] = parent.absolute_url() + "/"
+                    results['parent'] = parent.absolute_url() + "/"
         except AttributeError:
             results['parent'] = results['portal_url'] + "/"
             results['document_url'] = results['portal_url']

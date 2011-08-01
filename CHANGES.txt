@@ -5,6 +5,10 @@ HISTORY
 1.2.8 (unreleased)
 ------------------
 
+- Set the parent correctly for non-Archetypes content, so that relative links
+  are generated correctly.
+  [davisagli]
+
 - Support RichTextValues from plone.app.textfield when determining the mimetype
   of the field being edited.
   [davisagli]
