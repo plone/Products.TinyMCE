@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2011-06-21 13:31+0000\n"
-"PO-Revision-Date: 2010-08-30 15:46+0300\n"
+"PO-Revision-Date: 2011-08-02 15:55+0300\n"
 "Last-Translator: Olha <olha.pelishok@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -62,8 +62,9 @@ msgid "AtD Service URL"
 msgstr ""
 
 #: ../interfaces/utility.py:38
+#, fuzzy
 msgid "Auto detect from content language"
-msgstr ""
+msgstr "Автоматично визначати з мови вмісту"
 
 #: ../interfaces/utility.py:150
 msgid "Backcolor"
@@ -108,7 +109,7 @@ msgstr "Копіювати"
 
 #: ../adapters/Upload.py:127
 msgid "Could not upload the file"
-msgstr ""
+msgstr "Не можливо завантажити файл"
 
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:30
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:31
@@ -418,7 +419,7 @@ msgstr "Звичайний параграф"
 
 #: ../adapters/Upload.py:88
 msgid "Not allowed to upload a file of this type to this folder"
-msgstr ""
+msgstr "Не дозволено завантажувати файл такого типу до цієї теки"
 
 msgid "Numbers"
 msgstr "Цифри"
@@ -521,7 +522,7 @@ msgstr "Перевірка правопису"
 
 #: ../interfaces/utility.py:295
 msgid "Spellchecker plugin to use"
-msgstr ""
+msgstr "Який плагін використовувати для провірки орфографії"
 
 msgid "Square"
 msgstr "Квадрат"
@@ -575,7 +576,7 @@ msgstr "Текст"
 
 #: ../interfaces/utility.py:296
 msgid "This option allows you to choose the spellchecker for TinyMCE. If you want the spellchecker button to be visible, make sure it is enabled in the toolbar settings."
-msgstr ""
+msgstr "Ця опція дозволяє застосувати перевірку орфографії для TinyMCE. Якщо хочете, щоб відображалась відповідна кнопка - активуйте її в налаштуваннях панелі інструментів."
 
 #: ../interfaces/utility.py:393
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
@@ -701,7 +702,7 @@ msgstr "Напрямок письма"
 
 #: ../adapters/Upload.py:92
 msgid "You do not have permission to upload files in this folder"
-msgstr ""
+msgstr "Вам не дозволено завантажувати файли такого типу до цієї теки"
 
 #. Default: "The URL of the \"After the Deadline\" grammar and spell checking server. The default value is the public server, but ideally you should download and install your own and specify its address here."
 #: ../interfaces/utility.py:338
@@ -725,5 +726,5 @@ msgstr ""
 #. Default: "Edit without visual editor"
 #: ../skins/tinymce/tinymce_wysiwyg_support.pt:35
 msgid "suppress_visual_editor"
-msgstr ""
+msgstr "Редагувати без візуального редактора"
 
