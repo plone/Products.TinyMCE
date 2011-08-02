@@ -1,7 +1,9 @@
-from zope.interface import Interface
 from zope import schema
+from zope.interface import Interface
 from zope.i18nmessageid import MessageFactory
 from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
+
+from Products.TinyMCE.vocabularies import shortcuts_vocabulary
 
 
 _ = MessageFactory('plone.tinymce')
@@ -24,7 +26,7 @@ class ITinyMCELayout(Interface):
         title=_(u"Enable compression of editor."),
         description=_(u"This option gives you the ability to enable/disable the compression of the editor and the plugins."),
         required=False)
-    
+
     editor_width = schema.TextLine(
         title=_(u"Editor width"),
         description=_(u"This option gives you the ability to specify the width of the editor in pixels or percent."),
@@ -401,11 +403,33 @@ class ITinyMCEResourceTypes(Interface):
         vocabulary=SimpleVocabulary([SimpleTerm('named', 'named', _(u"Named")), SimpleTerm('numeric', 'numeric', _(u"Numeric")), SimpleTerm('raw', 'raw', _(u"Raw"))]),
         required=False)
 
+
+class ITinyMCEContentBrowser(Interface):
+    """This interface defines the content browser properties."""
+
+    link_shortcuts = schema.List(
+        title=_("Link Shortcuts"),
+        description=_(u"List of shortcuts to appear in link browser for quick navigation."),
+        value_type=schema.Choice(source=shortcuts_vocabulary,),
+        default=['Home', 'Current Folder'],
+        required=False,
+    )
+
+    image_shortcuts = schema.List(
+        title=_("Image Shortcuts"),
+        description=_(u"List of shortcuts to appear in image browser for quick navigation."),
+        value_type=schema.Choice(source=shortcuts_vocabulary,),
+        default=['Home', 'Current Folder'],
+        required=False,
+    )
+
+
 class ITinyMCE(
     ITinyMCELayout,
     ITinyMCEToolbar,
     ITinyMCELibraries,
-    ITinyMCEResourceTypes
+    ITinyMCEResourceTypes,
+    ITinyMCEContentBrowser,
     ):
     """This interface defines the Utility."""
 

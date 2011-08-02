@@ -33,6 +33,7 @@ class JSONDetails(object):
 
         results = {}
         results['title'] = self.context.title_or_id()
+        results['url'] = self.context.absolute_url()
         results['description'] = self.context.Description()
 
         if self.context.portal_type in image_portal_types:

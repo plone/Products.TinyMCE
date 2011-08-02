@@ -307,8 +307,10 @@ jQuery(function() {
             valid_inline_styles : this.getValidInlineStyles(),
             link_using_uids : this.getLinkUsingUids(),
             allow_captioned_images : this.getAllowCaptionedImages(),
+            link_shortcuts_html : this.widget_config.link_shortcuts_html,
+            image_shortcuts_html : this.widget_config.image_shortcuts_html,
             rooted : this.getRooted(),
             force_span_wrappers : true,
             fix_list_elements : false
-                });
-        });
+    });
+});

@@ -4,37 +4,36 @@ try:
 except ImportError:
     import simplejson as json
 from types import StringTypes
-from zope.component import getUtility, queryUtility
+
+from zope.component import getUtilitiesFor, getUtility, queryUtility
 from zope.i18n import translate
 from zope.i18nmessageid import MessageFactory
-from zope.interface import classProvides
-from zope.interface import implements
+from zope.interface import classProvides, implements
 from zope.schema.fieldproperty import FieldProperty
 from AccessControl import ClassSecurityInfo
-from Acquisition import aq_base
-from Acquisition import aq_inner
-from Acquisition import aq_parent
+from Acquisition import aq_base, aq_inner, aq_parent
 from OFS.SimpleItem import SimpleItem
 from Products.Archetypes.Field import ImageField
 from Products.Archetypes.interfaces import IBaseObject
 from Products.Archetypes.interfaces.field import IImageField
+from Products.CMFCore.interfaces import ISiteRoot
 from Products.CMFCore.interfaces._content import IFolderish
 from Products.CMFCore.utils import getToolByName
-from Products.CMFCore.interfaces import ISiteRoot
 try:
     from plone.app.layout.globals.portal import RIGHT_TO_LEFT
 except ImportError:
     RIGHT_TO_LEFT = ['ar', 'fa', 'he', 'ps']  # not available in plone 3
 from plone.app.layout.navigation.root import getNavigationRootObject
-from plone.outputfilters.filters.resolveuid_and_caption import IImageCaptioningEnabler
-from plone.outputfilters.filters.resolveuid_and_caption import IResolveUidsEnabler
+from plone.outputfilters.filters.resolveuid_and_caption import IImageCaptioningEnabler, IResolveUidsEnabler
 
 from Products.TinyMCE.bbb import implementedOrProvidedBy
+from Products.TinyMCE.interfaces.shortcut import ITinyMCEShortcut
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.interfaces.utility import ITinyMCELayout
 from Products.TinyMCE.interfaces.utility import ITinyMCEToolbar
 from Products.TinyMCE.interfaces.utility import ITinyMCELibraries
 from Products.TinyMCE.interfaces.utility import ITinyMCEResourceTypes
+from Products.TinyMCE.interfaces.utility import ITinyMCEContentBrowser
 
 
 _ = MessageFactory('plone.tinymce')
@@ -149,6 +148,9 @@ class TinyMCE(SimpleItem):
     linkable = FieldProperty(ITinyMCEResourceTypes['linkable'])
     imageobjects = FieldProperty(ITinyMCEResourceTypes['imageobjects'])
     customplugins = FieldProperty(ITinyMCEResourceTypes['customplugins'])
+
+    link_shortcuts = FieldProperty(ITinyMCEContentBrowser['link_shortcuts'])
+    image_shortcuts = FieldProperty(ITinyMCEContentBrowser['image_shortcuts'])
 
     def getImageScales(self, field=None, context=None):
         """Return the image sizes for the drawer"""
@@ -635,6 +637,10 @@ class TinyMCE(SimpleItem):
         labels['label_print'] = translate(_('Print'), context=request)
         labels['label_no_items'] = translate(_('No items in this folder'), context=request)
         labels['label_no_anchors'] = translate(_('No anchors in this page'), context=request)
+        labels['label_browser'] = translate(_('Browser'), context=request)
+        labels['label_shortcuts'] = translate(_('Shortcuts'), context=request)
+        labels['label_search_results'] = translate(_('Search results'), context=request)
+        labels['label_internal_path'] = translate(_('You are here:'), context=request)
         results['labels'] = labels
 
         # Add styles to results
@@ -814,6 +820,16 @@ class TinyMCE(SimpleItem):
         # Get Library options
         results['libraries_spellchecker_choice'] = \
                                         self.libraries_spellchecker_choice
+
+        # Content Browser
+        shortcuts_dict = dict(getUtilitiesFor(ITinyMCEShortcut))
+        results['link_shortcuts_html'] = []
+        results['image_shortcuts_html'] = []
+
+        for name in self.link_shortcuts:
+            results['link_shortcuts_html'].extend(shortcuts_dict.get(name).render(context))
+        for name in self.image_shortcuts:
+            results['image_shortcuts_html'].extend(shortcuts_dict.get(name).render(context))
 
         # init vars specific for "After the Deadline" spellchecker
         mtool = getToolByName(portal, 'portal_membership')
