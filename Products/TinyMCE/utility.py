@@ -171,10 +171,10 @@ class TinyMCE(SimpleItem):
         else:
             width, height = 0, 0
 
-        scales = [{'value': '%s_%s' % (field_name, key),
+        scales = [{'value': '@@images/%s/%s' % (field_name, key),
                    'size': [value[0], value[1]],
                    'title': key.capitalize()} for key, value in sizes.items()]
-        scales.sort(lambda x, y: cmp(x['size'][0], y['size'][0]))
+        scales.sort(key=lambda x: x['size'][0])
         scales.insert(0, {'value': '',
                           'title': 'Original',
                           'size': [width, height]})
