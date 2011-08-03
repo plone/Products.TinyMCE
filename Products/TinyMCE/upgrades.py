@@ -58,3 +58,7 @@ def upgrade_11_to_2(setuptool):
     site = getSite()
     uninstall_mimetype_and_transforms(site)
     install_mimetype_and_transforms(site)
+
+def upgrade_12_to_13(setuptool): 
+    # Unregister old js and kss and register new js
+    setuptool.runAllImportStepsFromProfile('profile-Products.TinyMCE:upgrade_12_to_13')
