@@ -26,8 +26,9 @@ echo "*** Removing unneeded skins ..."
 rm -rf $tinymce_root/themes/advanced/skins/{default,highcontrast,o2k7}
 
 # plugins modifications
-find $tinymce_root -name "*.html" -execdir "$root/bin/rename" "({})" "\1.pt"    \;
-find $tinymce_root -name "*.htm" -execdir "$root/bin/rename" "({})" "\1.pt"    \;
+find $tinymce_root -name '*.html' -execdir mv "{}" "{}.pt" \;
+find $tinymce_root -name '*.htm' -execdir mv "{}" "{}.pt" \;
+
 find $tinymce_root -name "*_src.js" -delete
 
 echo "*** Updating language files ..."
