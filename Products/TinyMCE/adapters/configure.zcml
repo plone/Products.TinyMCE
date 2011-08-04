@@ -5,50 +5,49 @@
 
     <adapter
         for="Products.CMFPlone.interfaces.siteroot.IPloneSiteRoot"
-        provides="..adapters.interfaces.JSONDetails.IJSONDetails"
-        factory="..adapters.JSONDetails.JSONDetails"
+        factory=".JSONDetails.JSONDetails"
         />
 
     <adapter
         for="Products.CMFCore.interfaces._content.IContentish"
-        provides="..adapters.interfaces.JSONDetails.IJSONDetails"
-        factory="..adapters.JSONDetails.JSONDetails"
+        provides=".interfaces.JSONDetails.IJSONDetails"
+        factory=".JSONDetails.JSONDetails"
         />
 
     <adapter
         for="Products.CMFPlone.interfaces.siteroot.IPloneSiteRoot"
-        provides="..adapters.interfaces.JSONFolderListing.IJSONFolderListing"
-        factory="..adapters.JSONFolderListing.JSONFolderListing"
+        provides=".interfaces.JSONFolderListing.IJSONFolderListing"
+        factory=".JSONFolderListing.JSONFolderListing"
         />
 
     <adapter
         for="Products.CMFCore.interfaces._content.IContentish"
-        provides="..adapters.interfaces.JSONFolderListing.IJSONFolderListing"
-        factory="..adapters.JSONFolderListing.JSONFolderListing"
+        provides=".interfaces.JSONFolderListing.IJSONFolderListing"
+        factory=".JSONFolderListing.JSONFolderListing"
         />
 
     <adapter
         for="Products.CMFPlone.interfaces.siteroot.IPloneSiteRoot"
-        provides="..adapters.interfaces.Upload.IUpload"
-        factory="..adapters.Upload.Upload"
+        provides=".interfaces.Upload.IUpload"
+        factory=".Upload.Upload"
         />
 
     <adapter
         for="Products.CMFCore.interfaces._content.IContentish"
-        provides="..adapters.interfaces.Upload.IUpload"
-        factory="..adapters.Upload.Upload"
+        provides=".interfaces.Upload.IUpload"
+        factory=".Upload.Upload"
         />
 
     <adapter
         for="Products.CMFCore.interfaces._content.IContentish"
-        provides="..adapters.interfaces.Save.ISave"
-        factory="..adapters.Save.Save"
+        provides=".interfaces.Save.ISave"
+        factory=".Save.Save"
         />
 
     <adapter
         for="Products.CMFCore.interfaces._content.IFolderish"
-        provides="..adapters.interfaces.JSONSearch.IJSONSearch"
-        factory="..adapters.JSONSearch.JSONSearch"
+        provides=".interfaces.JSONSearch.IJSONSearch"
+        factory=".JSONSearch.JSONSearch"
         />
-</configure>
 
+</configure>

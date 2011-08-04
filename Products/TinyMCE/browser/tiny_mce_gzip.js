@@ -64,7 +64,12 @@ jQuery(function() {
             link_using_uids : "<tal:lang tal:replace='options/config/link_using_uids' />",
             allow_captioned_images :"<tal:lang tal:replace='options/config/allow_captioned_images' />",
             rooted : "<tal:lang tal:replace='options/config/rooted' />",
+/*     XXX       document_base_url : this.getBase(),
+            link_shortcuts_html : this.widget_config.link_shortcuts_html,
+            image_shortcuts_html : this.widget_config.image_shortcuts_html,
+            num_of_thumb_columns : this.widget_config.num_of_thumb_columns,
+            thumbnail_size : this.widget_config.thumbnail_size, */
             force_span_wrappers : true,
             fix_list_elements : false
-                });
-        });
+    });
+});

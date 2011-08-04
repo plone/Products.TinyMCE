@@ -28,4 +28,17 @@
 
   <i18n:registerTranslations directory="locales"/>
 
+  <!-- register shortcuts -->
+  <utility
+      name="Current Folder"
+      provides=".interfaces.shortcut.ITinyMCEShortcut"
+      factory=".shortcut.CurrentFolderShortcut"
+      />
+
+  <utility
+      name="Home"
+      provides=".interfaces.shortcut.ITinyMCEShortcut"
+      factory=".shortcut.HomeShortcut"
+      />
+
 </configure>

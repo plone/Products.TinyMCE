@@ -1,7 +1,9 @@
-from zope.interface import Interface
 from zope import schema
+from zope.interface import Interface
 from zope.i18nmessageid import MessageFactory
 from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
+
+from Products.TinyMCE.vocabularies import shortcuts_vocabulary, thumbnail_sizes_vocabulary
 
 
 _ = MessageFactory('plone.tinymce')
@@ -24,7 +26,7 @@ class ITinyMCELayout(Interface):
         title=_(u"Enable compression of editor."),
         description=_(u"This option gives you the ability to enable/disable the compression of the editor and the plugins."),
         required=False)
-    
+
     editor_width = schema.TextLine(
         title=_(u"Editor width"),
         description=_(u"This option gives you the ability to specify the width of the editor in pixels or percent."),
@@ -401,11 +403,47 @@ class ITinyMCEResourceTypes(Interface):
         vocabulary=SimpleVocabulary([SimpleTerm('named', 'named', _(u"Named")), SimpleTerm('numeric', 'numeric', _(u"Numeric")), SimpleTerm('raw', 'raw', _(u"Raw"))]),
         required=False)
 
+
+class ITinyMCEContentBrowser(Interface):
+    """This interface defines the content browser properties."""
+
+    link_shortcuts = schema.List(
+        title=_("Link Shortcuts"),
+        description=_(u"List of shortcuts to appear in link browser for quick navigation."),
+        value_type=schema.Choice(source=shortcuts_vocabulary,),
+        default=['Home', 'Current Folder'],
+        required=False,
+    )
+
+    image_shortcuts = schema.List(
+        title=_("Image Shortcuts"),
+        description=_(u"List of shortcuts to appear in image browser for quick navigation."),
+        value_type=schema.Choice(source=shortcuts_vocabulary,),
+        default=['Home', 'Current Folder'],
+        required=False,
+    )
+
+    thumbnail_size = schema.Choice(
+        title=_(u'Thumbnail size in thumbnails mode'),
+        #description=_(u""),
+        source=thumbnail_sizes_vocabulary,
+        default=(64, 64),
+    )
+
+    num_of_thumb_columns = schema.Choice(
+        title=_(u'Number of columns in thumbnails mode'),
+        #description=_(u""),
+        values=[2, 4, 8, 16],
+        default=4,
+    )
+
+
 class ITinyMCE(
     ITinyMCELayout,
     ITinyMCEToolbar,
     ITinyMCELibraries,
-    ITinyMCEResourceTypes
+    ITinyMCEResourceTypes,
+    ITinyMCEContentBrowser,
     ):
     """This interface defines the Utility."""
 

@@ -33,19 +33,21 @@ class JSONDetails(object):
 
         results = {}
         results['title'] = self.context.title_or_id()
+        results['url'] = self.context.absolute_url()
         results['description'] = self.context.Description()
 
         if self.context.portal_type in image_portal_types:
-            image_url = self._getPloneUrl() + '/resolveuid/' + uuidFor(self.context)
+            results['uid_url'] = self._getPloneUrl() + '/resolveuid/' + uuidFor(self.context)
+            # TODO: ??
             field_name = 'image'
             images = self.context.restrictedTraverse('@@images')
 
-            results['thumb'] = '%s/@@images/%s/%s' % (image_url, field_name, 'thumb')
+            results['thumb'] = '%s/@@images/%s/%s' % (results['uid_url'], field_name, 'thumb')
             sizes = images.getAvailableSizes(field_name)
             scales = [{'value': '@@images/%s/%s' % (field_name, key),
                        'size': size,
                        'title': key.capitalize()} for key, size in sizes.items()]
-            scales.sort(lambda x, y: cmp(x['size'][0], y['size'][0]))
+            scales.sort(key=lambda x: x['size'][0])
             original_size = images.getImageSize(field_name)
             if original_size[0] < 0 or original_size[1] < 0:
                 original_size = (0, 0)
@@ -63,6 +65,7 @@ class JSONDetails(object):
             results['anchors'] = []
         results.update(self.additionalDetails())
 
+        self.context.REQUEST.response.setHeader("Content-type", "application/json")
         return json.dumps(results)
 
     def additionalDetails(self):

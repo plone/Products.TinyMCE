@@ -11,6 +11,9 @@ class JSONSearch(object):
     """Returns a list of search results in JSON"""
     implements(IJSONSearch)
 
+    folder_icon = "img/folder.png"
+    picture_icon = "img/picture.png"
+
     def __init__(self, context):
         """Constructor"""
         self.context = context
@@ -25,14 +28,20 @@ class JSONSearch(object):
         results['path'] = []
         if searchtext:
             for brain in self.context.portal_catalog.searchResults({'SearchableText': '%s*' % searchtext, 'portal_type': filter_portal_types, 'sort_on': 'sortable_title', 'path': self.context.absolute_url_path()}):
+                if brain.is_folderish:
+                    icon = self.folder_icon
+                else:
+                    icon = self.picture_icon
+
                 catalog_results.append({
                     'id': brain.getId,
                     'uid': brain.UID,
                     'url': brain.getURL(),
                     'portal_type': brain.portal_type,
                     'title': brain.Title == "" and brain.id or brain.Title,
-                    'icon': brain.getIcon,
-                    'is_folderish': brain.is_folderish
+                    'icon': icon,
+                    'description': brain.Description,
+                    'is_folderish': brain.is_folderish,
                     })
 
         # add catalog_results
@@ -42,4 +51,5 @@ class JSONSearch(object):
         results['upload_allowed'] = False
 
         # return results in JSON format
+        self.context.REQUEST.response.setHeader("Content-type", "application/json")
         return json.dumps(results)
