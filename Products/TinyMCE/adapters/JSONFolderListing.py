@@ -109,7 +109,8 @@ class JSONFolderListing(object):
                 'normalized_type': normalizer.normalize(brain.portal_type),
                 'title': brain.Title == "" and brain.id or brain.Title,
                 'icon': icon,
-                'is_folderish': brain.is_folderish
+                'description': brain.Description,
+                'is_folderish': brain.is_folderish,
                 })
 
         # add catalog_ressults
@@ -124,4 +125,5 @@ class JSONFolderListing(object):
                 results['upload_allowed'] = fti.isConstructionAllowed(object)
 
         # return results in JSON format
+        self.context.REQUEST.response.setHeader("Content-type", "application/json")
         return json.dumps(results)
