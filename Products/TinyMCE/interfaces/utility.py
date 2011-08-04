@@ -3,7 +3,7 @@ from zope.interface import Interface
 from zope.i18nmessageid import MessageFactory
 from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
 
-from Products.TinyMCE.vocabularies import shortcuts_vocabulary
+from Products.TinyMCE.vocabularies import shortcuts_vocabulary, thumbnail_sizes_vocabulary
 
 
 _ = MessageFactory('plone.tinymce')
@@ -421,6 +421,20 @@ class ITinyMCEContentBrowser(Interface):
         value_type=schema.Choice(source=shortcuts_vocabulary,),
         default=['Home', 'Current Folder'],
         required=False,
+    )
+
+    thumbnail_size = schema.Choice(
+        title=_(u'Thumbnail size in thumbnails mode'),
+        #description=_(u""),
+        source=thumbnail_sizes_vocabulary,
+        default=(64, 64),
+    )
+
+    num_of_thumb_columns = schema.Choice(
+        title=_(u'Number of columns in thumbnails mode'),
+        #description=_(u""),
+        values=[2, 4, 8, 16],
+        default=4,
     )
 
 

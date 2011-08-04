@@ -309,6 +309,8 @@ jQuery(function() {
             allow_captioned_images : this.getAllowCaptionedImages(),
             link_shortcuts_html : this.widget_config.link_shortcuts_html,
             image_shortcuts_html : this.widget_config.image_shortcuts_html,
+            num_of_thumb_columns : this.widget_config.num_of_thumb_columns,
+            thumbnail_size : this.widget_config.thumbnail_size,
             rooted : this.getRooted(),
             force_span_wrappers : true,
             fix_list_elements : false
