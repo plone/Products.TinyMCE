@@ -36,13 +36,6 @@
 
     <browser:page
         for="*"
-        name="testtinymce"
-        permission="zope2.View"
-        template="testtinymce.pt"
-        />
-
-    <browser:page
-        for="*"
         name="checkDocument"
         class=".browser.ATDProxyView"
         permission="zope2.View"
