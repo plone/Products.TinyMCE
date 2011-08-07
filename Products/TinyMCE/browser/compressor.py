@@ -15,20 +15,13 @@ except ImportError:
 from datetime import datetime
 import os
 from cStringIO import StringIO
-from gzip import GzipFile
 
 import zope.component
 from Products.Five import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+from Products.ResourceRegistries.tools.packer import JavascriptPacker
 
 from Products.TinyMCE.interfaces.utility import ITinyMCE
-
-def compress_string(s):
-    zbuf = StringIO()
-    zfile = GzipFile(mode='wb', compresslevel=6, fileobj=zbuf)
-    zfile.write(s)
-    zfile.close()
-    return zbuf.getvalue()
 
 def split_commas(str):
     return not str and [] or str.split(",")
@@ -38,7 +31,7 @@ def getplugins(config):
     sp = config['libraries_spellchecker_choice']
     sp = sp != "browser" and sp or ""
     if sp:
-         plugins += ',' + sp;
+        plugins += ',' + sp;
 
     for plugin in config['customplugins']:
         if '|' not in plugin:
@@ -139,7 +132,7 @@ def getvalidelements(config):
             a.append(s)
         return ','.join(a)
 
-class GzipCompressorView(BrowserView):
+class TinyMCECompressorView(BrowserView):
 
     tiny_mce_gzip = ViewPageTemplateFile('tiny_mce_gzip.js')
 
@@ -156,20 +149,15 @@ class GzipCompressorView(BrowserView):
         plone_portal_state = zope.component.getMultiAdapter(
                 (self.context, self.request), name="plone_portal_state") 
         portal_url = plone_portal_state.portal_url()
-        utility = zope.component.queryUtility(ITinyMCE)
-        if utility is not None and getattr(utility, 'compress', True):
-            editor_js = self.__name__   # compressed version
-        else:
-            editor_js = "tiny_mce.js"   # non compressed version 
-
-        base_url = '/'.join([portal_url, editor_js])
-
+        base_url = '/'.join([self.context.absolute_url(), self.__name__])
+        
         if not isJS:
+            utility = zope.component.queryUtility(ITinyMCE)
             config = utility.getConfiguration(context=self.context,
                                               request=self.request, as_json=False)
             plugins = getplugins(config)
 
-            return self.tiny_mce_gzip(base_url=base_url,
+            tiny_mce_gzip = self.tiny_mce_gzip(base_url=base_url,
                                       config=config,
                                       portal_url=portal_url,
                                       plugins=getplugins(config),
@@ -177,6 +165,7 @@ class GzipCompressorView(BrowserView):
                                       labels=getlabels(config),
                                       valid_elements=getvalidelements(config),
                                       toolbars=gettoolbars(config))
+            return JavascriptPacker('full').pack(tiny_mce_gzip)
 
         now = datetime.utcnow()
         response['Date'] = now.strftime('%a, %d %b %Y %H:%M:%S GMT')
@@ -211,9 +200,4 @@ class GzipCompressorView(BrowserView):
                         % (plugin, lang)))
 
         # Compress
-        content = ''.join(content)
-        if compress:
-            content = compress_string(content)
-            response['Content-Encoding'] = 'gzip'
-            response['Content-Length'] = str(len(content))
-        return content
+        return ''.join(content)

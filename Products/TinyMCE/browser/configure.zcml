@@ -27,10 +27,12 @@
         permission="zope2.View"
         />
 
+    <!-- don't change the name of this. the gzip part is vital for the
+        identification of the file -->
     <browser:page
         for="*"
         name="tiny_mce_gzip"
-        class=".compressor.GzipCompressorView"
+        class=".compressor.TinyMCECompressorView"
         permission="zope2.View"
         />
 
@@ -92,4 +94,12 @@
         permission="zope2.View"
         />
 
+    <!-- TinyMCE configuration -->
+    <browser:viewlet
+        name="tinymce.configuration"
+        manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
+        class=".browser.ConfigurationViewlet"
+        permission="zope2.View"
+        />
+        
 </configure>
