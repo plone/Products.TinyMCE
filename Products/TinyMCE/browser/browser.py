@@ -4,6 +4,9 @@ from zope.interface import implements
 from zope.component import getUtility
 
 from Products.Five.browser import BrowserView
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+
+from plone.app.layout.viewlets.common import ViewletBase
 
 from Products.TinyMCE.adapters.interfaces.JSONFolderListing import \
      IJSONFolderListing
@@ -138,3 +141,13 @@ class ATDProxyView(object):
         xml = respxml.strip().replace("\r", '').replace("\n", '').replace(
             '>  ', '>')
         return xml
+
+class ConfigurationViewlet(ViewletBase):
+    """ A viewlet which includes the TinyMCE configuration JavaScript
+    
+    This can not be done in the portal_javascript Tool because it needs to be
+    relative to the context path.
+    """
+    
+    index = ViewPageTemplateFile('configuration.pt')
+
