@@ -1,0 +1,7 @@
+<object>
+  <order manager="plone.htmlhead" skinname="*">
+    <viewlet name="plone.resourceregistries" />
+    <viewlet name="tinymce.configuration" insert-after="plone.resourceregistries"/>
+  </order>
+</object>
+
