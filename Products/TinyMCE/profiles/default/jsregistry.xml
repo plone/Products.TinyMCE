@@ -6,13 +6,7 @@
              enabled="True"
              expression="not: portal/portal_membership/isAnonymousUser"
              id="jquery.tinymce.js"
+             insert-after="jquery.js"
              inline="False"/>
 
- <javascript cacheable="True"
-             compression="safe"
-             cookable="True"
-             enabled="True"
-             expression="not: portal/portal_membership/isAnonymousUser"
-             id="tiny_mce_gzip"
-             inline="False"/>
 </object>

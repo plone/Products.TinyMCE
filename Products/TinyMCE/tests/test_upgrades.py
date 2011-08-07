@@ -26,7 +26,7 @@ class UpgradesTestCase(FunctionalTestCase):
         portal_jstool = getToolByName(self.portal, 'portal_javascripts')
         portal_ksstool = getToolByName(self.portal, 'portal_kss')
         
-        new_ids = 'jquery.tinymce.js', 'tiny_mce_gzip'
+        new_ids = 'jquery.tinymce.js',
         js = portal_jstool.getResourceIds()
         for id in new_ids:    
             if id in js:
@@ -35,6 +35,7 @@ class UpgradesTestCase(FunctionalTestCase):
         js = portal_jstool.getResourceIds()
         for id in new_ids:
             self.assertIn(id, js)
+        self.assertFalse('tiny_mce.js' in js)
         self.assertFalse('tiny_mce_init.js' in js)
 
         kss = portal_ksstool.getResourceIds()
