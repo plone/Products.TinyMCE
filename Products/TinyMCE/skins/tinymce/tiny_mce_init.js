@@ -51,7 +51,7 @@ function TinyMCEConfig(id) {
             atd_rpc_id : this.widget_config.atd_rpc_id,
             atd_rpc_url : this.widget_config.atd_rpc_url,
             atd_show_types : this.widget_config.atd_show_types,
-            atd_ignore_strings : this.widget_config.atd_ignore_strings, 
+            atd_ignore_strings : this.widget_config.atd_ignore_strings,
 
             labels : this.widget_config.labels,
             theme_advanced_styles : this.getStyles(),
@@ -363,6 +363,8 @@ if (typeof(kukit) != "undefined") {
     });
 
     kukit.actionsGlobalRegistry.register("save-tinymce", function(oper) {
-        tinymce.EditorManager.activeEditor.save();
+    	if(tinymce.EditorManager != undefined && tinymce.EditorManager.activeEditor != null){
+    		tinymce.EditorManager.activeEditor.save();
+    	}
     });
 }
