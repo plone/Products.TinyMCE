@@ -3,10 +3,6 @@ High priority
 
 * add 1.3 GS profile to plone.app.upgrades for Plone 4.3
 
-* Merge (we should restrict upload of images to certain extensions and notify
-  user at wrong outcome)
-  https://github.com/plone/Products.TinyMCE/commit/96d7415987bb1e2dc1283d02e8648fef85499fe7
-
 * Merge
   https://github.com/plone/Products.TinyMCE/commit/6aaf14e7e66592fce118d2050e699d66e14b201c
 

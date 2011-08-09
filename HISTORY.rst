@@ -166,6 +166,11 @@ HISTORY
   of the field being edited.
   [davisagli]
 
+- When user tries to upload an image,
+  if image type in content types registry is not allowed in current folder,
+  TinyMCE tries to add an image of an other content type
+  selected as an image type in TinyMCE settings.
+  [thomasdesvenain]
 
 1.2.7 (2011-07-05)
 ------------------

@@ -1,6 +1,7 @@
 from Acquisition import aq_inner
 from Acquisition import aq_parent
 from zExceptions import BadRequest
+from AccessControl.unauthorized import Unauthorized
 from zope.interface import implements
 from Products.CMFCore.utils import getToolByName
 
@@ -83,20 +84,31 @@ class Upload(object):
         context = self.context
         request = context.REQUEST
         ctr_tool = getToolByName(context, 'content_type_registry')
-        id = request['uploadfile'].filename
+        utility = getToolByName(context, 'portal_tinymce')
 
+        id = request['uploadfile'].filename
         content_type = request['uploadfile'].headers["Content-Type"]
         typename = ctr_tool.findTypeName(id, content_type, "")
 
         # Permission checks based on code by Danny Bloemendaal
 
-        # 1) check if we are allowed to create an Image in folder
-        if not typename in [t.id for t in context.getAllowedTypes()]:
-            return self.errorMessage("Not allowed to upload a file of this type to this folder")
-
-        # 2) check if the current user has permissions to add stuff
+        # 1) check if the current user has permissions to add stuff
         if not context.portal_membership.checkPermission('Add portal content', context):
             return self.errorMessage("You do not have permission to upload files in this folder")
+
+        # 2) check image types uploadable in folder.
+        #    priority is to content_type_registry image type
+        allowed_types = [t.id for t in context.getAllowedTypes()]
+        if typename in allowed_types:
+            uploadable_types = [typename]
+        else:
+            uploadable_types = []
+
+        if content_type.split('/')[0] == 'image':
+            image_portal_types = utility.imageobjects.split('\n')
+            uploadable_types += [t for t in image_portal_types
+                                    if t in allowed_types
+                                       and t not in uploadable_types]
 
         # Get an unused filename without path
         id = self.cleanupFilename(id)
@@ -104,16 +116,21 @@ class Upload(object):
         title = request['uploadtitle']
         description = request['uploaddescription']
 
-        newid = context.invokeFactory(type_name=typename, id=id)
+        for metatype in uploadable_types:
+            try:
+                newid = context.invokeFactory(type_name=metatype, id=id)
+                if newid is None or newid == '':
+                    newid = id
 
-        if newid is None or newid == '':
-            newid = id
+            except ValueError:
+                continue
+        else:
+            return self.errorMessage(_("Not allowed to upload a file of this type to this folder"))
 
         obj = getattr(context, newid, None)
 
         # Set title + description.
         # Attempt to use Archetypes mutator if there is one, in case it uses a custom storage
-
         if title:
             try:
                 obj.setTitle(title)
@@ -140,7 +157,6 @@ class Upload(object):
         obj.reindexObject()
         folder = obj.aq_parent.absolute_url()
 
-        utility = getToolByName(context, 'portal_tinymce')
         if utility.link_using_uids:
             path = "resolveuid/%s" % (uuidFor(obj))
         else:
@@ -149,7 +165,7 @@ class Upload(object):
 
     def setDexterityImage(self, obj):
         """ Set the image-field of dexterity-based types 
-        
+
         This works with the "Image"-type of plone.app.contenttypes and has 
         fallbacks for other implementations of image-types with dexterity.
 
