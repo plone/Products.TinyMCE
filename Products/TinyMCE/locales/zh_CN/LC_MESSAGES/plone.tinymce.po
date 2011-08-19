@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TinyMCE\n"
 "POT-Creation-Date: 2011-06-21 13:31+0000\n"
-"PO-Revision-Date: 2011-08-04 23:56+0800\n"
+"PO-Revision-Date: 2011-08-19 18:00+0800\n"
 "Last-Translator: Jian Aijun <jianaijun@gmail.com>\n"
 "Language-Team: plone <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -20,7 +20,7 @@ msgstr ""
 
 #: ../utility.py:624
 msgid "(remove style)"
-msgstr "(清楚格式)"
+msgstr "(清除格式)"
 
 #: ../interfaces/utility.py:307
 msgid "After the deadline (FLOSS)"
@@ -28,7 +28,7 @@ msgstr ""
 
 #: ../interfaces/utility.py:158
 msgid "Align center"
-msgstr "居中"
+msgstr "居中对齐"
 
 #: ../interfaces/utility.py:166
 msgid "Align full"
@@ -44,11 +44,11 @@ msgstr "右对齐"
 
 #: ../interfaces/utility.py:357
 msgid "Allow captioned images"
-msgstr ""
+msgstr "允许图片说明文字"
 
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:51
 msgid "Anchors"
-msgstr ""
+msgstr "锚点"
 
 #: ../interfaces/utility.py:324
 msgid "AtD Error types to show"
@@ -64,11 +64,11 @@ msgstr ""
 
 #: ../interfaces/utility.py:38
 msgid "Auto detect from content language"
-msgstr ""
+msgstr "自动检测内容语言"
 
 #: ../interfaces/utility.py:150
 msgid "Backcolor"
-msgstr ""
+msgstr "背景色"
 
 #: ../interfaces/utility.py:122
 msgid "Bold"
@@ -79,29 +79,29 @@ msgstr ""
 
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:89
 msgid "Caption"
-msgstr ""
+msgstr "说明文字"
 
 #: ../interfaces/utility.py:49
 msgid "Choose the CSS used in WYSIWYG Editor Area"
 msgstr ""
 
 msgid "Circle"
-msgstr ""
+msgstr "圆圈"
 
 #: ../interfaces/utility.py:262
 msgid "Cleanup messy code"
-msgstr ""
+msgstr "清除无用代码"
 
 msgid "Clear floats"
-msgstr ""
+msgstr "清除浮动"
 
 #: ../interfaces/utility.py:372
 msgid "Contains Anchors"
-msgstr ""
+msgstr "包含锚点"
 
 #: ../interfaces/utility.py:367
 msgid "Contains Objects"
-msgstr ""
+msgstr "包含对象"
 
 #: ../interfaces/utility.py:86
 msgid "Copy"
@@ -130,10 +130,10 @@ msgstr "剪切"
 
 #: ../interfaces/utility.py:303
 msgid "Default browser spellchecker"
-msgstr ""
+msgstr "默认浏览器拼写检查器"
 
 msgid "Definition description"
-msgstr ""
+msgstr "定义描述"
 
 #: ../interfaces/utility.py:178
 msgid "Definition list"
@@ -145,21 +145,21 @@ msgstr ""
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:123
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:159
 msgid "Description"
-msgstr ""
+msgstr "描述"
 
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:59
 msgid "Details"
-msgstr ""
+msgstr "详细"
 
 msgid "Disc"
-msgstr ""
+msgstr "圆点"
 
 msgid "Discreet"
 msgstr ""
 
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:117
 msgid "E-mail"
-msgstr "Email"
+msgstr "电子邮件"
 
 #: ../interfaces/utility.py:278
 msgid "Edit HTML Source"
@@ -191,51 +191,51 @@ msgstr "启用调整编辑器窗口大小"
 
 #: ../interfaces/utility.py:378
 msgid "Enter a list of content types which can be linked. Format is one contenttype per line."
-msgstr ""
+msgstr "输入一个可以链接的内容类型列表，每行一个。"
 
 #: ../interfaces/utility.py:383
 msgid "Enter a list of content types which can be used as images. Format is one contenttype per line."
-msgstr ""
+msgstr "输入可以用作图片的内容类型列表，每行一个。"
 
 #: ../interfaces/utility.py:373
 msgid "Enter a list of content types which can contain anchors. Format is one contenttype per line."
-msgstr ""
+msgstr "输入可以包含锚点的内容类型列表，每行一个。"
 
 #: ../interfaces/utility.py:368
 msgid "Enter a list of content types which can contain other objects. Format is one contenttype per line."
-msgstr ""
+msgstr "输入可以包含其他对象的内容类型列表，每行一个。"
 
 #: ../interfaces/utility.py:388
 msgid "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
-msgstr ""
+msgstr "输入将在编辑器中加载的自定义插件列表，每行一个。"
 
 #: ../interfaces/utility.py:287
 msgid "Enter a list of custom toolbar buttons which will be loaded in the editor, one per line."
-msgstr ""
+msgstr "输入将在编辑器中加载的自定义工具栏按钮列表，每行一个。"
 
 #: ../interfaces/utility.py:55
 msgid "Enter a list of styles to appear in the style pulldown. Format is title|tag or title|tag|className, one per line."
-msgstr ""
+msgstr "输入要在样式下拉列表中显示样式的列表。格式是 title|tag 或 title|tag|className，每行一个。"
 
 #: ../interfaces/utility.py:60
 msgid "Enter a list of styles to appear in the table style pulldown. Format is title|class, one per line."
-msgstr ""
+msgstr "输入要在表格样式下拉列表中显示样式的列表。格式是 title|class，每行一个。"
 
 #: ../interfaces/utility.py:392
 msgid "Entity encoding"
-msgstr ""
+msgstr "实体编码"
 
 msgid "Even row"
-msgstr ""
+msgstr "偶数行"
 
 #: ../interfaces/utility.py:73
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:41
 msgid "External"
-msgstr ""
+msgstr "外部"
 
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:92
 msgid "External link"
-msgstr ""
+msgstr "外部链接"
 
 msgid "Fancy grid listing"
 msgstr ""
@@ -261,7 +261,7 @@ msgstr "查找/替换"
 
 #: ../interfaces/utility.py:146
 msgid "Forecolor"
-msgstr ""
+msgstr "前景色"
 
 msgid "Heading"
 msgstr ""
@@ -279,11 +279,11 @@ msgstr "首页"
 
 #: ../interfaces/utility.py:382
 msgid "Image Objects"
-msgstr ""
+msgstr "图片对象"
 
 #: ../interfaces/utility.py:358
 msgid "Images will be automatically captioned."
-msgstr ""
+msgstr "图片将自动添加文字说明。"
 
 #: ../interfaces/utility.py:186
 msgid "Indent"
@@ -291,7 +291,7 @@ msgstr "增加缩进"
 
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:80
 msgid "Inline"
-msgstr ""
+msgstr "内联"
 
 #: ../interfaces/utility.py:222
 msgid "Insert advanced horizontal ruler"
@@ -299,7 +299,7 @@ msgstr ""
 
 #: ../interfaces/utility.py:214
 msgid "Insert custom character"
-msgstr ""
+msgstr "插入自定义字符"
 
 #: ../interfaces/utility.py:226
 msgid "Insert date"
@@ -346,7 +346,7 @@ msgid "Internal link"
 msgstr "内部链接"
 
 msgid "Invisible grid"
-msgstr ""
+msgstr "不可见网格"
 
 #: ../interfaces/utility.py:126
 msgid "Italic"
@@ -390,14 +390,14 @@ msgid "Literal"
 msgstr ""
 
 msgid "Lower Alpha"
-msgstr ""
+msgstr "小写字母"
 
 msgid "Lower Roman"
-msgstr ""
+msgstr "小写希腊字数字"
 
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:46
 msgid "Mail"
-msgstr "Mail"
+msgstr "电子邮件"
 
 #: ../interfaces/utility.py:395
 msgid "Named"
@@ -427,7 +427,7 @@ msgid "Numeric"
 msgstr ""
 
 msgid "Odd row"
-msgstr ""
+msgstr "奇数行"
 
 #: ../interfaces/utility.py:174
 msgid "Ordered list"
@@ -523,11 +523,11 @@ msgid "Spellchecker plugin to use"
 msgstr ""
 
 msgid "Square"
-msgstr ""
+msgstr "方块"
 
 #: ../interfaces/utility.py:134
 msgid "Strikethrough"
-msgstr ""
+msgstr "删除线"
 
 #: ../utility.py:627
 msgid "Style..."
@@ -541,7 +541,7 @@ msgid "Subdued grid"
 msgstr ""
 
 msgid "Subheading"
-msgstr ""
+msgstr "副标题"
 
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:124
 msgid "Subject"
@@ -565,7 +565,7 @@ msgstr "表格样式"
 
 #: ../utility.py:629
 msgid "Tables"
-msgstr ""
+msgstr "表格"
 
 #: ../utility.py:628
 msgid "Text"
@@ -680,10 +680,10 @@ msgid "Upload file"
 msgstr "上传文件"
 
 msgid "Upper Alpha"
-msgstr ""
+msgstr "大写字母"
 
 msgid "Upper Roman"
-msgstr ""
+msgstr "大写罗马数字"
 
 #: ../interfaces/utility.py:270
 msgid "Visual control characters on/off"
@@ -695,7 +695,7 @@ msgstr ""
 
 #: ../interfaces/utility.py:33
 msgid "Writing direction"
-msgstr "文字方向"
+msgstr "语言方向"
 
 #: ../adapters/Upload.py:92
 msgid "You do not have permission to upload files in this folder"
