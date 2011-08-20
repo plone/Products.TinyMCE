@@ -1,5 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" i18n:domain="tinymce">
+<html xmlns="http://www.w3.org/1999/xhtml" i18n:domain="tinymce"
+	tal:define="portal_url context/portal_url; portal_tinymce context/portal_tinymce;">
 <head>
   <title i18n:translate="ploneimage_dlg_dialog_title"></title>
   <script type="text/javascript" src="../../tiny_mce_popup.js"></script>
@@ -7,159 +8,120 @@
   <script type="text/javascript" src="../../utils/form_utils.js"></script>
   <script type="text/javascript" src="js/ploneimage.js"></script>
   <link rel="stylesheet" type="text/css" href="css/ploneimage.css" />
+  <link rel="stylesheet" type="text/css" tal:attributes="href string:${portal_url}/portal_css/columns.css" />
 </head>
-<body id="ploneimage" style="display: none"
-  tal:define="portal_url context/portal_url; portal_tinymce context/portal_tinymce;">
+<body id="ploneimage">
   <div class="dialog-wrapper" id="content">
-    <div id="addimage_panel" class="column">
-			<h2>Add an image</h2>
-			<p class="formHelp" i18n:translate="">
-			Your image will be uploaded into the <strong>current folder</strong> »
-			</p>
-			<form name="upload_form" id="upload_form" method="post" target="upload_iframe" enctype="multipart/form-data">
-				<div class="field">
-					<label for="uploadtitle" i18n:translate="ploneimage_dlg_title"></label>
-					<div class="widget">
-						<input type="text" name="uploadtitle" id="uploadtitle" value="" />
-					</div>
-				</div>
-
-				<div class="field">
-					<label for="uploaddescription" i18n:domain="plone.tinymce" i18n:translate="">Description</label>
-					<div class="widget">
-						<textarea wrap="soft" cols="10" rows="6" id="uploaddescription" name="uploaddescription"></textarea>
-					</div>
-				</div>
-
-				<div class="field">
-					<label for="uploadfile" i18n:domain="plone.tinymce" i18n:translate="">Upload File</label>
-					<div class="widget">
-						<input type="file" name="uploadfile" id="uploadfile" />
-					</div>
-				</div>
-
-				<div class="field">
-					<label for="uploadurl" i18n:domain="plone.tinymce" i18n:translate="">or External URL</label>
-					<div class="widget">
-						<input type="text" name="uploadurl" id="uploadurl" />
-					</div>
-				</div>
-					<div class="field" style="display: none">
-						<label for="searchtext" i18n:domain="plone.tinymce" i18n:translate="">Search</label>
-						<div class="widget">
-							<input type="text" name="searchtext" id="searchtext" value="" onkeyup="ImageDialog.checkSearch(event);" size="12"/>
-							<input type="button" value="Search" i18n:domain="plone.tinymce" i18n:attributes="value" class="searchButton" onclick="ImageDialog.getFolderListing(tinyMCEPopup.editor.settings.navigation_root_url, 'tinymce-jsonimagesearch');"/>
-						</div>
-					</div>
-
-				<input type="button" id="uploadbutton" class="context plonebutton" name="uploadbutton" value="Upload image"
-					i18n:domain="plone.tinymce"
-					i18n:attributes="value" onclick="document.forms[1].submit();"/>
-			</form>
-			<iframe width="0" scrolling="off" height="0" frameborder="0" id="upload_iframe" name="upload_iframe" src="javascript:"></iframe>
-		</div>
-
-		<div class="verticalborder column">
-		</div>
 		<div id="browseimage_panel" class="column">
-			<h2>Image browser</h2>
+			<h2 i18n:translate="">Image browser</h2>
 			<div class="formHelp">
-				<strong>Current folder:</strong>
+				<strong i18n:translate="">You are here:</strong>
 				<span id="internalpath"></span>
 			</div>
-			<div>
-				<div class="column">
-					<div id="internallinkcontainer" class="widget radioscrolllist input-border">
+			<div id="general_panel" class="column">
+				<div class="field">
+					<div class="widget">
+						<input type="text" name="searchtext" id="searchtext" title="Search Site" placeholder="Search Site" value="" size="12"/>
 					</div>
-					<p class="legend">
-						<img src="img/display_list.png" /> <span i18n:translate="">List</span>
-						<img src="img/display_thumbs.png" /> <span i18n:translate="">Thumbnails</span>
-					</p>
 				</div>
-				<div class="column">
-					<div id="details_panel" class="widget radioscrolllist">
-						<div class="field">
-							<label i18n:translate="ploneimage_dlg_preview"></label>
-							<div class="widget">
-								<div id="previewimagecontainer">
-								</div>
-							</div>
-						</div>
-
-						<div class="field">
-							<label id="descriptionlabel" for="description" i18n:translate="">Description</label>
-							<div class="widget">
-								<input id="description_href" name="description_href" type="hidden" value="" />
-								<input id="description" name="description" type="text" value="" />
-							</div>
-						</div>
-
-						<div class="field">
-							<div class="widget">
-								<input type="checkbox" name="caption" id="caption"/> <label for="caption" i18n:domain="plone.tinymce" i18n:translate="">Caption</label>
-							</div>
-						</div>
-
-						<div class="field">
-							<label id="alignlabel" for="align" i18n:translate="ploneimage_dlg_align"></label>
-							<div class="widget">
-								<select id="classes" name="classes">
-									<option value="image-inline" i18n:domain="plone.tinymce" i18n:translate="">Inline</option>
-									<option value="image-left" i18n:translate="ploneimage_dlg_align_left"></option>
-									<option value="image-right" i18n:translate="ploneimage_dlg_align_right"></option>
-								</select>
-							</div>
-						</div>
-
-						<div class="field">
-							<label id="dimensionslabel" for="dimensions" i18n:translate="ploneimage_dlg_dimensions"></label>
-							<div class="widget">
-								<select id="dimensions" name="dimensions">
-									<option tal:repeat="item portal_tinymce/getImageScales" tal:attributes="value item/value"
-										tal:content="item/title" />
-								</select>
-							</div>
-						</div>
-					</div>
-					<p class="legend">
-						<img src="img/edit_details.png" /> <span i18n:translate="">Edit details</span>
-					</p>
-				</div>
-				<div class="visualClear"><!-- --></div>
-				<form onsubmit="ImageDialog.insert();return false;" action="#">
-						<div class="mceActionPanel">
-							<input type="submit" id="insert" class="context plonebutton" name="insert" i18n:attributes="value common_insert" />
-							<input type="button" id="cancel" class="standalone plonebutton" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
-						</div>
-				</form>
+				<div id="internallinkcontainer" class="widget radioscrolllist input-border"></div>
+				<p class="legend">
+					<img src="img/display_list.png" /> <a id="listview" href="" i18n:translate="">List</a>
+					<img src="img/display_thumbs.png" /> <a id="thumbview" href="" class="current" i18n:translate="">Thumbnails</a>
+				</p>
 			</div>
 		</div>
+		<div class="column hide" id="details_panel">
+			<h2 i18n:translate="ploneimage_dlg_preview"></h2>
+			<div class="widget radioscrolllist input-border">
+				<div class="field">
+					<div class="widget">
+						<div id="previewimagecontainer">
+						</div>
+					</div>
+				</div>
+
+				<div class="field">
+					<label id="descriptionlabel" for="description" i18n:translate="">Description</label>
+					<div class="widget">
+						<input id="description_href" name="description_href" type="hidden" value="" />
+						<input id="description" name="description" type="text" value="" size="20" />
+					</div>
+				</div>
+
+				<div class="field">
+					<div class="widget">
+						<input type="checkbox" name="caption" id="caption"/> <label for="caption" i18n:domain="plone.tinymce" i18n:translate="">Caption</label>
+					</div>
+				</div>
+
+				<div class="field">
+					<label id="alignlabel" for="align" i18n:translate="ploneimage_dlg_align"></label>
+					<div class="widget">
+						<select id="classes" name="classes">
+							<option value="image-inline" i18n:domain="plone.tinymce" i18n:translate="">Inline</option>
+							<option value="image-left" i18n:translate="ploneimage_dlg_align_left"></option>
+							<option value="image-right" i18n:translate="ploneimage_dlg_align_right"></option>
+						</select>
+					</div>
+				</div>
+
+				<div class="field">
+					<label id="dimensionslabel" for="dimensions" i18n:translate="ploneimage_dlg_dimensions"></label>
+					<div class="widget">
+						<select id="dimensions" name="dimensions">
+							<option tal:repeat="item portal_tinymce/getImageScales" tal:attributes="value item/value"
+								tal:content="item/title" />
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="addimage_panel" class="column hide">
+			 <h2 i18n="translate">Add an image</h2>
+			 <form name="upload_form" id="upload_form" method="post" target="upload_iframe" enctype="multipart/form-data">
+				 <div class="field">
+								 <label for="uploadtitle" i18n:translate="ploneimage_dlg_title"></label>
+								 <div class="widget">
+												 <input type="text" name="uploadtitle" id="uploadtitle" value="" />
+								 </div>
+				 </div>
+
+				 <div class="field">
+								 <label for="uploaddescription" i18n:domain="plone.tinymce" i18n:translate="">Description</label>
+								 <div class="widget">
+												 <textarea wrap="soft" cols="10" rows="6" id="uploaddescription" name="uploaddescription"></textarea>
+								 </div>
+				 </div>
+
+				 <div class="field">
+								 <label for="uploadfile" i18n:domain="plone.tinymce" i18n:translate="">Upload File</label>
+								 <div class="widget">
+												 <input type="file" name="uploadfile" id="uploadfile" />
+								 </div>
+				 </div>
+
+				 <div class="field">
+								 <label for="uploadurl" i18n:domain="plone.tinymce" i18n:translate="">or External URL</label>
+								 <div class="widget">
+												 <input type="text" name="uploadurl" id="uploadurl" />
+								 </div>
+				 </div>
+
+				 <input type="button" id="uploadbutton" class="context plonebutton" name="uploadbutton" value="Upload image"
+								 i18n:domain="plone.tinymce"
+								 i18n:attributes="value" onclick="document.forms[1].submit();"/>
+			 </form>
+			 <iframe width="0" scrolling="off" height="0" frameborder="0" id="upload_iframe" name="upload_iframe" src="javascript:"></iframe>
+		</div>
+		<div class="visualClear"><!-- --></div>
+		<form action="#" id="action-form">
+			<div class="mceActionPanel">
+				<input type="submit" id="insert" class="context plonebutton" name="insert" i18n:attributes="value common_insert" />
+				<input type="button" id="upload" class="context plonebutton" name="upload" i18n:attributes="value" value="Upload into current folder" />
+				<input type="button" id="cancel" class="standalone plonebutton" name="cancel" i18n:attributes="value common_cancel" />
+			</div>
+		</form>
   </div>
 </body>
 </html>
-						<!--div class="uponelevel"><a id="uponelevel" class="link-parent" href="javascript:void(0)" i18n:domain="plone.tinymce" i18n:translate="">Up one level</a></div>-->
-						<!--<input type="button" id="upload" class="context" name="upload" value="Upload file" i18n:domain="plone.tinymce" i18n:attributes="value" onclick="ImageDialog.displayPanel('upload_panel');" />-->
-					<!--
-        <div id="addimage_panel" class="column">
-					<legend i18n:domain="plone.tinymce" i18n:translate="">Libraries</legend>
-					<ul class="configlets">
-						<li id="home">
-							<a href="javascript:ImageDialog.displayPanel('internal_panel'); ImageDialog.getFolderListing(tinyMCEPopup.editor.settings.navigation_root_url, 'tinymce-jsonimagefolderlisting');">
-									<img alt="" tal:attributes="src string:$portal_url/logoIcon.gif"/> <span i18n:domain="plone.tinymce" i18n:translate="">Home</span>
-							</a>
-						</li>
-						<li>
-							<a href="javascript:ImageDialog.displayPanel('internal_panel'); ImageDialog.getCurrentFolderListing();">
-									<img alt="" tal:attributes="src string:$portal_url/site_icon.gif"/> <span i18n:domain="plone.tinymce" i18n:translate="">Current Folder</span>
-			</a>
-						</li>
-						li>
-							<a href="javascript:ImageDialog.displayPanel('internal_panel');">
-									<img alt="" tal:attributes="src string:$portal_url/popup_calendar.gif"/> Recent Items
-							</a>
-						</li
-					</ul>
-        </div>
-      </form>
-			-->
-

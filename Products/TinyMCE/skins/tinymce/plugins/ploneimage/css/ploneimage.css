@@ -1,12 +1,22 @@
 #ploneimage .formHelp { height: 2em; }
-#addimage_panel, #browseimage_panel { height: 400px }
-#addimage_panel { width: 170px }
+#general_panel { width: 790px }
+#internallinkcontainer { width: 100%; height: 310px;  }
+#details_panel, #addimage_panel { width: 245px; margin-left: 20px }
+#details_panel h2 { margin-bottom: 27px }
+#addimage_panel h2 { margin-bottom: 22px }
+#details_panel div.radioscrolllist { height: 346px }
 #addimage_panel input, #addimage_panel textarea { width: 100%; }
-#addimage_panek #upload_iframe { display: none; }
-#browseimage_panel { width: 550px }
-#internallinkcontainer, #details_panel { width: 260px; height: 310px; border: 0.1em solid #CCC }
-.verticalborder { height: 420px; width: 0px; border-right: 0.1em solid #329FD7; margin: 0 20px 10px 20px }
-
-#internallinkcontainer { margin-right: 20px }
+#addimage_panel #upload_iframe { display: none; }
+#searchtext { width: 100%; height: 20px }
+#internallinkcontainer div.item:hover { cursor: pointer; background-color: #EEE }
+#internalpath { margin-left: 5px }
 .legend { margin: 5px 0 }
-.legend span { margin-right: 5px }
+.legend a { margin-right: 5px }
+.legend .current { font-weight: bold; border: none!important; color: #000!important; cursor: default }
+.input-border {border: 0.1em solid #CCC!important}
+.browser-separator { background-color: #DDD }
+.thumbnail { text-align: center }
+.thumbnail input { display: none }
+.thumbnail.current { border: 1px solid #DDD }
+.thumbnail .thumb { margin: 3px auto; position: relative }
+.thumbnail .thumb img { position: absolute; bottom: 0 }
