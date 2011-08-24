@@ -816,6 +816,8 @@ class TinyMCE(SimpleItem):
                         results['parent'] = context.absolute_url() + "/"
                     else:
                         results['parent'] = parent.absolute_url() + "/"
+            else:
+                results['parent'] = results['portal_url'] + "/"
         except AttributeError:
             results['parent'] = results['portal_url'] + "/"
             results['document_url'] = results['portal_url']
