@@ -1,4 +1,4 @@
-# BBB
+# BBB for what ???
 
 from Products.MimetypesRegistry.interfaces import IClassifier
 from Products.MimetypesRegistry.MimeTypeItem import MimeTypeItem
