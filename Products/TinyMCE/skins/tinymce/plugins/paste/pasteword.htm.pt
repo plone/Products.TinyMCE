@@ -9,7 +9,6 @@
 	<div class="dialog-wrapper" id="content">
 		<form name="source" onsubmit="return PasteWordDialog.insert();" action="#">
 			<fieldset>
-				<legend i18n:translate="paste_paste_word_desc"></legend>
 				<div class="field">
 					<label for="htmlSource" i18n:translate="paste_paste_word_desc"></label>
 					<div class="formHelp" i18n:translate="paste_dlg_word_title"></div>
