@@ -126,6 +126,11 @@ def getvalidelements(config):
             a.append(s)
         return ','.join(a)
 
+
+def make_js_array(list_):
+    return '[%s]' % ','.join(["'%s'" % str(item.strip()) for item in list_])
+
+
 class TinyMCECompressorView(BrowserView):
 
     tiny_mce_gzip = ViewPageTemplateFile('tiny_mce_gzip.js')
@@ -158,7 +163,9 @@ class TinyMCECompressorView(BrowserView):
                                       styles=getstyles(config),
                                       labels=getlabels(config),
                                       valid_elements=getvalidelements(config),
-                                      toolbars=gettoolbars(config))
+                                      toolbars=gettoolbars(config),
+                                      link_shortcuts_html=make_js_array(config['link_shortcuts_html']),
+                                      image_shortcuts_html=make_js_array(config['image_shortcuts_html']))
             return JavascriptPacker('full').pack(tiny_mce_gzip)
 
         now = datetime.utcnow()
