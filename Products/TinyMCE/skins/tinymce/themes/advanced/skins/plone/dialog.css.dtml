@@ -72,6 +72,9 @@ margin-left: 1em;
 .column {
 float: left;
 }
+.hide {
+display: none;
+}
 
 fieldset .field {
 margin-right: 0em;
@@ -79,12 +82,15 @@ margin-right: 0em;
 
 .radioscrolllist {
 line-height: 2em;
-overflow-y: scroll;
+overflow-y: auto;
 overflow-x: hidden;
 }
 
-.radioscrolllist div {
+.radioscrolllist .list {
 padding-left: 0.5em;
+}
+.radioscrolllist .list a {
+margin-left: 0.5em;
 }
 
 /* ActionPanel */
@@ -93,6 +99,7 @@ text-align: center;
 }
 .mceActionPanel input, .plonebutton {
 padding: 5px 20px;
+margin-bottom: 2px;
 color: #305c95;
 background-color: #ededed;
 border: #B3B3B3 solid 1px;
@@ -109,3 +116,5 @@ width: 200px;
 color: inherit;
 }
 /* </dtml-with> */
+
+.verticalborder { height: 330px; width: 0px; border-right: 0.1em solid #329FD7; margin: 10px 20px 10px 20px }

@@ -1,31 +1,26 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" i18n:domain="tinymce">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title i18n:translate="advanced_dlg_anchor_title"></title>
-	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
-	<script type="text/javascript" src="js/anchor.js"></script>
+	<title>{#advanced_dlg.anchor_title}</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js?v={tinymce_version}"></script>
+	<script type="text/javascript" src="js/anchor.js?v={tinymce_version}"></script>
 </head>
-<body>
-	<div class="dialog-wrapper" id="content">
-		<form onsubmit="AnchorDialog.update();return false;" action="#">
-			<fieldset>
-				<legend i18n:translate="advanced_dlg_anchor_title"></legend>
-				<div class="field">
-					<label for="anchorName" i18n:translate="advanced_dlg_anchor_name"></label>
-					<span title="Required" class="fieldRequired">(Required)</span>
-					<div class="widget"><input id="anchorName" name="anchorName" type="text" class="mceFocus" value="" size="30"/></div>
-				</div>
-			</fieldset>
+<body style="display: none" role="application" aria-labelledby="app_title">
+<form onsubmit="AnchorDialog.update();return false;" action="#">
+	<table border="0" cellpadding="4" cellspacing="0" role="presentation">
+		<tr>
+			<td colspan="2" class="title" id="app_title">{#advanced_dlg.anchor_title}</td>
+		</tr>
+		<tr>
+			<td class="nowrap"><label for="anchorName">{#advanced_dlg.anchor_name}:</label></td>
+			<td><input name="anchorName" type="text" class="mceFocus" id="anchorName" value="" style="width: 200px" aria-required="true" /></td>
+		</tr>
+	</table>
 
-			<div class="visualClear"><!-- --></div>
-
-			<div class="mceActionPanel formControls">
-				<span class="actionButtons">
-					<input type="submit" id="insert" class="context" name="insert" i18n:attributes="value common_update" />
-					<input type="button" id="cancel" class="context" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
-				</span>
-			</div>
-		</form>
+	<div class="mceActionPanel">
+		<input type="submit" id="insert" name="insert" value="{#update}" />
+		<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
 	</div>
+</form>
 </body>
 </html>
