@@ -35,9 +35,9 @@ def getplugins(config):
 
     for plugin in config['customplugins']:
         if '|' not in plugin:
-           plugins += ',' + plugin
+            plugins += ',' + plugin
         else:
-           plugins += ',' + plugin.split('|')[0]
+            plugins += ',' + plugin.split('|')[0]
 
     if config['contextmenu']:
         plugins += ',contextmenu'
@@ -127,7 +127,7 @@ def getvalidelements(config):
 
         for valid_element in valid_elements:
             s = valid_element
-            if (valid_elements[valid_element]): 
+            if (valid_elements[valid_element]):
                 s += '[' + '|'.join(valid_elements[valid_element]) + ']'
             a.append(s)
         return ','.join(a)
@@ -147,10 +147,10 @@ class TinyMCECompressorView(BrowserView):
         response.headers["Content-Type"] = "text/javascript"
 
         plone_portal_state = zope.component.getMultiAdapter(
-                (self.context, self.request), name="plone_portal_state") 
+                (self.context, self.request), name="plone_portal_state")
         portal_url = plone_portal_state.portal_url()
         base_url = '/'.join([self.context.absolute_url(), self.__name__])
-        
+
         if not isJS:
             utility = zope.component.queryUtility(ITinyMCE)
             config = utility.getConfiguration(context=self.context,
