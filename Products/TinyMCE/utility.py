@@ -21,6 +21,7 @@ from Products.CMFCore.interfaces._content import IFolderish
 from Products.CMFCore.utils import getToolByName
 try:
     from plone.app.layout.globals.portal import RIGHT_TO_LEFT
+    RIGHT_TO_LEFT    # pyflakes
 except ImportError:
     RIGHT_TO_LEFT = ['ar', 'fa', 'he', 'ps']  # not available in plone 3
 from plone.app.layout.navigation.root import getNavigationRootObject

@@ -1,6 +1,7 @@
 from zope.interface import implements
 try:
     import json
+    json   # pyflakes
 except ImportError:
     import simplejson as json
 

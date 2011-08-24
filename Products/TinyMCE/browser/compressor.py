@@ -7,13 +7,7 @@ Copyright (c) 2008 Jason Davies
 Licensed under the terms of the MIT License (see LICENSE.txt)
 """
 
-try:
-    import json
-    json   # Pyflakes
-except ImportError:
-    import simplejson as json
 from datetime import datetime
-import os
 from cStringIO import StringIO
 
 import zope.component

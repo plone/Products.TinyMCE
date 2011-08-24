@@ -2,11 +2,6 @@
 
 import os
 
-try:
-    from xml.etree import ElementTree as ET
-except ImportError:
-    from elementtree import ElementTree as ET
-
 AVAILABLE_LANGUAGES = set(
     'sq ar hy az eu be bn nb bs br bg ca ch zh hr cs da dv nl en et fi fr gl '
     'ka de el gu he hi hu is id ia it ja ko lv lt lb mk ms ml mn se no nn fa '

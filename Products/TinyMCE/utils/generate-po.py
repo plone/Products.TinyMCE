@@ -4,6 +4,7 @@ import os
 
 try:
     from xml.etree import ElementTree as ET
+    ET   # pyflakes
 except ImportError:
     from elementtree import ElementTree as ET
 

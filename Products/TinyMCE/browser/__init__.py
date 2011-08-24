@@ -1,1 +1,2 @@
 import browser
+browser   # pyflakes

@@ -1,5 +1,6 @@
 try:
     import json
+    json   # pyflakes
 except ImportError:
     import simplejson as json
 
