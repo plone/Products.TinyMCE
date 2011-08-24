@@ -28,14 +28,16 @@ class AdaptersTestCase(FunctionalTestCase):
 
         # The basic details should return the following.
         obj = IJSONDetails(self.portal[self.document])
-        self.assertEqual(obj.getDetails(), '{"thumb": "", "description": "", "anchors": [], "title": "document"}')
+        self.assertEqual(obj.getDetails(),
+                         '{"url": "http://nohost/plone/document", "thumb": "", "description": "", "anchors": [], "title": "document"}')
 
         # Let's set some more details like description and body text.
         self.portal[self.document].setDescription('Test')
         self.portal[self.document].setText(u'<p><a name="anchor">anchor</a></p>', mimetype='text/html')
 
         # The details will now contain a bit more info.
-        self.assertEqual(obj.getDetails(), '{"thumb": "", "description": "Test", "anchors": ["anchor"], "title": "document"}')
+        self.assertEqual(obj.getDetails(),
+                         '{"url": "http://nohost/plone/document", "thumb": "", "description": "Test", "anchors": ["anchor"], "title": "document"}')
 
     def test_json_details_image(self):
         # We can also get the details of an image object.
@@ -47,7 +49,10 @@ class AdaptersTestCase(FunctionalTestCase):
 
         # The details will now also include the thumbnail url and the imagescales.
         obj = IJSONDetails(self.portal[image])
-        self.assertRegexpMatches(obj.getDetails(), r'\{"scales": \[\{"size": \[52, 43], "value": "", "title": "Original"}.+], "thumb": "http://nohost/plone/resolveuid/.*/@@images/image/thumb".+')
+        self.assertRegexpMatches(obj.getDetails(),
+                                 r'"scales": \[\{"size": \[52, 43\], "value": "", "title": "Original"\}.+\], ')
+        self.assertRegexpMatches(obj.getDetails(),
+                                 r'"thumb": "http://nohost/plone/resolveuid/.*/@@images/image/thumb".+')
 
     def test_json_folder_listing(self):
         # The folder listing is used in the link and image drawers to show the contents
