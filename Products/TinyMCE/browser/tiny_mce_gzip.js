@@ -10,9 +10,8 @@
  * settings.page_name below to match your tinymce installation as appropriate.
  */
 
-jQuery(function() {
-
-    jQuery('textarea.mce_editable').tinymce({
+jq(function() {
+    jq('textarea.mce_editable').tinymce({
             // Location of TinyMCE script
             script_url : '<tal:url tal:replace="string:${options/base_url}" />',
 
