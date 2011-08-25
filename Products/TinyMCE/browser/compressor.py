@@ -8,7 +8,6 @@ Licensed under the terms of the MIT License (see LICENSE.txt)
 """
 
 from datetime import datetime
-from cStringIO import StringIO
 
 import zope.component
 from Products.Five import BrowserView
@@ -17,8 +16,11 @@ from Products.ResourceRegistries.tools.packer import JavascriptPacker
 
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 
-def split_commas(str):
-    return not str and [] or str.split(",")
+def split_commas(s):
+    """ Return a list splited from a comma seperated string """
+    if not s:
+        return []
+    return s.split(',')
 
 def getplugins(config):
     plugins = "pagebreak,table,save,advhr,emotions,insertdatetime,preview,media,searchreplace,print,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups,plonestyle,tabfocus,definitionlist,ploneinlinestyles"
@@ -140,7 +142,6 @@ class TinyMCECompressorView(BrowserView):
         languages = split_commas(self.request.get("languages", ""))
         themes = split_commas(self.request.get("themes", ""))
         isJS = self.request.get("js", "") == "true"
-        compress = self.request.get("compress", "true") == "true"
         suffix = self.request.get("suffix", "") == "_src" and "_src" or ""
         response = self.request.response
         response.headers["Content-Type"] = "text/javascript"
