@@ -20,7 +20,7 @@
                 ed.windowManager.open({
                     file : url + '/plonelink.htm',
                     width : 820 + parseInt(ed.getLang('plonelink.delta_width', 0)),
-                    height : 450 + parseInt(ed.getLang('plonelink.delta_height', 0)),
+                    height : 540 + parseInt(ed.getLang('plonelink.delta_height', 0)),
                     inline : 1
                 }, {
                     plugin_url : url

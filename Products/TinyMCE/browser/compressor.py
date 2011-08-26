@@ -7,7 +7,6 @@ Copyright (c) 2008 Jason Davies
 Licensed under the terms of the MIT License (see LICENSE.txt)
 """
 
-import json
 from datetime import datetime
 
 import zope.component
@@ -17,20 +16,18 @@ from Products.ResourceRegistries.tools.packer import JavascriptPacker
 
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 
-
 def split_commas(s):
     """ Return a list splited from a comma seperated string """
     if not s:
         return []
     return s.split(',')
 
-
 def getplugins(config):
     plugins = "pagebreak,table,save,advhr,emotions,insertdatetime,preview,media,searchreplace,print,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups,plonestyle,tabfocus,definitionlist,ploneinlinestyles"
     sp = config['libraries_spellchecker_choice']
     sp = sp != "browser" and sp or ""
     if sp:
-        plugins += ',' + sp
+        plugins += ',' + sp;
 
     for plugin in config['customplugins']:
         if '|' not in plugin:
@@ -45,8 +42,8 @@ def getplugins(config):
         plugins += ',autoresize'
     return plugins
 
-
 def getstyles(config):
+
         h = {'Text': [], 'Selection': [], 'Tables': [], 'Lists': [], 'Print': []}
         styletype = ""
 
@@ -62,8 +59,8 @@ def getstyles(config):
         # Add defaults
         h['Text'].append('{ title: "' + config['labels']['label_paragraph'] + '", tag: "p", className: "", type: "Text" }')
         h['Selection'].append('{ title: "' + config['labels']['label_styles'] + '", tag: "", className: "", type: "Selection" }')
-        h['Tables'].append('{ title: "' + config['labels']['label_plain_cell'] + '", tag: "td", className: "", type: "Tables" }')
-        h['Lists'].append('{ title: "' + config['labels']['label_lists'] + '", tag: "dl", className: "", type: "Lists" }')
+        h['Tables'].append('{ title: "'+config['labels']['label_plain_cell'] +'", tag: "td", className: "", type: "Tables" }')
+        h['Lists'].append('{ title: "'+config['labels']['label_lists'] +'", tag: "dl", className: "", type: "Lists" }')
 
         for i in config['styles']:
             e = i.split('|')
@@ -97,14 +94,13 @@ def getstyles(config):
 
             return '[' + ','.join(a) + ']'
 
-
 def getlabels(config):
     return str(dict([(key, val.encode('utf-8')) for key, val in config['labels'].iteritems()]))
 
 BUTTON_WIDTHS = {'style': 150, 'forecolor': 32, 'backcolor': 32, 'tablecontrols': 285}
 
-
 def gettoolbars(config):
+
     t = [[], [], [], []]
     cur_toolbar = 0
     cur_x = 0
@@ -115,12 +111,11 @@ def gettoolbars(config):
             cur_x = button_width
             cur_toolbar += 1
         else:
-            cur_x += button_width
+            cur_x += button_width;
         if cur_toolbar <= 3:
             t[cur_toolbar].append(i)
 
     return [','.join(t[0]), ','.join(t[1]), ','.join(t[2]), ','.join(t[3])]
-
 
 def getvalidelements(config):
         a = []
@@ -134,10 +129,14 @@ def getvalidelements(config):
         return ','.join(a)
 
 
+def make_js_array(list_):
+    return '[%s]' % ','.join(["'%s'" % str(item.strip()) for item in list_])
+
+
 class TinyMCECompressorView(BrowserView):
+
     tiny_mce_gzip = ViewPageTemplateFile('tiny_mce_gzip.js')
 
-    # TODO: cache
     def __call__(self):
         plugins = split_commas(self.request.get("plugins", ""))
         languages = split_commas(self.request.get("languages", ""))
@@ -165,10 +164,9 @@ class TinyMCECompressorView(BrowserView):
                                       styles=getstyles(config),
                                       labels=getlabels(config),
                                       valid_elements=getvalidelements(config),
-                                      link_shortcuts_html=json.dumps(config['link_shortcuts_html']),
-                                      image_shortcuts_html=json.dumps(config['image_shortcuts_html']),
-                                      thumbnail_size=json.dumps(config['thumbnail_size']),
-                                      toolbars=gettoolbars(config))
+                                      toolbars=gettoolbars(config),
+                                      link_shortcuts_html=make_js_array(config['link_shortcuts_html']),
+                                      image_shortcuts_html=make_js_array(config['image_shortcuts_html']))
             return JavascriptPacker('full').pack(tiny_mce_gzip)
 
         now = datetime.utcnow()
@@ -177,30 +175,31 @@ class TinyMCECompressorView(BrowserView):
         traverse = lambda name: str(self.context.restrictedTraverse(name, ''))
 
         # Add core, with baseURL added
-        content = [
-            traverse("tiny_mce%s.js" % suffix).replace(
+        content = [traverse("tiny_mce%s.js" % suffix).replace(
                 "tinymce._init();",
-                "tinymce.baseURL='%s';tinymce._init();" % base_url)
-        ]
+                "tinymce.baseURL='%s';tinymce._init();" % base_url)]
 
         # Add core languages
-        # TODO: we have our own translations
         for lang in languages:
             content.append(traverse("langs/%s.js" % lang))
 
         # Add themes
         for theme in themes:
-            content.append(traverse("themes/%s/editor_template%s.js" % (theme, suffix)))
+            content.append(traverse("themes/%s/editor_template%s.js"
+                    % (theme, suffix)))
 
             for lang in languages:
-                content.append(traverse("themes/%s/langs/%s.js" % (theme, lang)))
+                content.append(traverse("themes/%s/langs/%s.js"
+                        % (theme, lang)))
 
         # Add plugins
         for plugin in plugins:
-            content.append(traverse("plugins/%s/editor_plugin%s.js" % (plugin, suffix)))
+            content.append(traverse("plugins/%s/editor_plugin%s.js"
+                    % (plugin, suffix)))
 
             for lang in languages:
-                content.append(traverse("plugins/%s/langs/%s.js" % (plugin, lang)))
+                content.append(traverse("plugins/%s/langs/%s.js"
+                        % (plugin, lang)))
 
         # Compress
         return ''.join(content)

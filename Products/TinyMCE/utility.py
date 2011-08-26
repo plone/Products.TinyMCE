@@ -642,7 +642,7 @@ class TinyMCE(SimpleItem):
         labels['label_no_anchors'] = translate(_('No anchors in this page'), context=request)
         labels['label_browser'] = translate(_('Browser'), context=request)
         labels['label_shortcuts'] = translate(_('Shortcuts'), context=request)
-        labels['label_search_results'] = translate(_('Search results:'), context=request)
+        labels['label_search_results'] = translate(_('Search results'), context=request)
         labels['label_internal_path'] = translate(_('You are here:'), context=request)
         results['labels'] = labels
 

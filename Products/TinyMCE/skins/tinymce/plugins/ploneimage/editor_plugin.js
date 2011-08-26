@@ -10,14 +10,13 @@
             // Register commands
             ed.addCommand('mcePloneImage', function() {
                 // Internal image object like a flash placeholder
-                var class_name = ed.dom.getAttrib(ed.selection.getNode(), 'class');
-                if (class_name && class_name.indexOf('mceItem') != -1)
+                if (ed.dom.getAttrib(ed.selection.getNode(), 'class').indexOf('mceItem') != -1)
                     return;
 
                 ed.windowManager.open({
                     file : url + '/ploneimage.htm',
                     width : 820 + parseInt(ed.getLang('ploneimage.delta_width', 0)),
-                    height : 500 + parseInt(ed.getLang('ploneimage.delta_height', 0)),
+                    height : 450 + parseInt(ed.getLang('ploneimage.delta_height', 0)),
                     inline : 1
                 }, {
                     plugin_url : url
