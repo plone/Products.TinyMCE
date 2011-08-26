@@ -10,9 +10,8 @@
  * settings.page_name below to match your tinymce installation as appropriate.
  */
 
-jQuery(function() {
-
-    jQuery('textarea.mce_editable').tinymce({
+jq(function() {
+    jq('textarea.mce_editable').tinymce({
             // Location of TinyMCE script
             script_url : '<tal:url tal:replace="string:${options/base_url}" />',
 
@@ -67,8 +66,8 @@ jQuery(function() {
             document_base_url :  "<tal:lang tal:replace='options/config/parent' />",
             link_shortcuts_html : <tal:lang tal:replace="structure options/link_shortcuts_html" />,
             image_shortcuts_html : <tal:lang tal:replace="structure options/image_shortcuts_html" />,
-            num_of_thumb_columns : "<tal:lang tal:replace='options/config/num_of_thumb_columns' />",
-            thumbnail_size : "<tal:lang tal:replace='options/config/thumbnail_size' />",
+            num_of_thumb_columns : '<tal:lang tal:replace="options/config/num_of_thumb_columns" />',
+            thumbnail_size : <tal:lang tal:replace="options/thumbnail_size" />,
             force_span_wrappers : true,
             fix_list_elements : false
     });

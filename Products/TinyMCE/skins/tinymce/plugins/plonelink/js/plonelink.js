@@ -32,7 +32,7 @@ function init() {
     var html;
     labels = eval(inst.getParam('labels'));
 
-    document.getElementById('anchorlinkcontainer').innerHTML = getAnchorListHTML();
+    //document.getElementById('anchorlinkcontainer').innerHTML = getAnchorListHTML();
 
     // Check if update or insert
     elm = inst.dom.getParent(elm, "A");
@@ -40,7 +40,7 @@ function init() {
         action = "update";
 
     // Set button caption
-    formButtonsObj.insert.value = tinyMCEPopup.getLang(action, 'Insert', true); 
+    //formButtonsObj.insert.value = tinyMCEPopup.getLang(action, 'Insert', true); 
 
     // Check if rooted
     if (tinyMCEPopup.editor.settings.rooted) {
@@ -786,6 +786,7 @@ function getFolderListing(path, method) {
                 }
             }
             document.getElementById ('internallinkcontainer').innerHTML = html;
+            /*
             if (data.parent_url == "") {
                 document.getElementById ('uponelevel').style.display = 'none';
                 document.getElementById ('uponelevel').href = 'javascript:void(0)';
@@ -793,6 +794,7 @@ function getFolderListing(path, method) {
                 document.getElementById ('uponelevel').style.display = 'block';
                 document.getElementById ('uponelevel').href = 'javascript:getFolderListing(\'' + data.parent_url + '\',\'tinymce-jsonlinkablefolderlisting' + '\')';
             }
+            */
 
             html = "";
             for (var i = 0; i < data.path.length; i++) {
