@@ -1,8 +1,9 @@
-#from Products.TinyMCE.tests.base import BaseTestCase
+# -*- coding: utf-8 -*-
+from Products.TinyMCE.tests.base import IntegrationTestCase
 import unittest
 
 from Products.TinyMCE.browser.compressor import (
-    split_commas, getplugins, getstyles)
+    split_commas, getplugins, getstyles, getlabels, TinyMCECompressorView)
 
 class UtilTestCase(unittest.TestCase):
 
@@ -34,6 +35,9 @@ class UtilTestCase(unittest.TestCase):
         config['libraries_spellchecker_choice'] = 'foobar'
         self.assertTrue('foobar' in getplugins(config))
 
+        config['customplugins'] = ['plugin1', 'plugin2|Title of P2']
+        self.assertTrue('plugin1,plugin2' in getplugins(config))
+
     def test_getstyles(self):
         config = {'labels': {'label_paragraph': 'Paragraph',
                            'label_styles': 'Styles',
@@ -41,6 +45,30 @@ class UtilTestCase(unittest.TestCase):
                            'label_lists': 'Lists',},
                   'styles': ['a|class|y', 'foo|bar|x'],
                           }
-        getstyles(config)
+        # XXX
+        print getstyles(config)
+
+    def test_getlabels(self):
+        config = {'labels': {'label_paragraph': 'Paragraph',
+                           'label_styles': u'Styles with an ü',
+                           'label_plain_cell': 'Plain Cell',
+                           'label_lists': 'Lists',},
+                          }
+        self.assertEqual(getlabels(config),
+                         ("{'label_paragraph': 'Paragraph', "
+                          "'label_styles': 'Styles with an \\xc3\\xbc', "
+                          "'label_plain_cell': 'Plain Cell', "
+                          "'label_lists': 'Lists'}"))
+
+class ViewTestCase(IntegrationTestCase):
+
+    def test_compressorview(self):
+        context = self.portal
+        request = self.portal.REQUEST
+        view = TinyMCECompressorView(context, request)
+        setattr(view, '__name__', 'tiny_mce_gzip')
+        response = view()
+        self.assertTrue(response.startswith(
+            "$(function(){$('textarea.mce_editable').tinymce("))
 
 
