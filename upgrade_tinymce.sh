@@ -33,7 +33,7 @@ find $tinymce_root -name "*_src.js" -delete
 
 echo "*** Updating language files ..."
 cd $product_root/utils/
-if [  -d $product_root/utils/xml ]
+if [ ! -d $product_root/utils/xml ]
 then
     echo "*** Fetching translations ... ***"
     python wget-xml.py
