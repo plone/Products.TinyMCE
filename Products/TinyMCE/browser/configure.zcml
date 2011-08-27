@@ -1,9 +1,10 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
     i18n_domain="tinymce">
 
-    <include package="Products.CMFCore" file="permissions.zcml" />
+    <include zcml:condition="have plone-4" package="Products.CMFCore" file="permissions.zcml" />
     <browser:page
         for="..interfaces.utility.ITinyMCE"
         name="tinymce-controlpanel"

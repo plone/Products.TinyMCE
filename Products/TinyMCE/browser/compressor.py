@@ -7,8 +7,13 @@ Copyright (c) 2008 Jason Davies
 Licensed under the terms of the MIT License (see LICENSE.txt)
 """
 
-import json
 from datetime import datetime
+
+try:
+    import json
+    json  # pyflakes
+except ImportError:
+    import simplejson as json
 
 import zope.component
 from Products.Five import BrowserView
