@@ -38,9 +38,7 @@ class JSONFolderListing(object):
         root_url = root.absolute_url()
 
         if path is not None:
-            root_abs_url = root.absolute_url()
-            path = path.replace(root_abs_url, '', 1)
-            path = path.strip('/')
+            path = path.replace(root_url, '', 1).strip('/')
             root = aq_inner(root.restrictedTraverse(path))
 
         relative = aq_inner(self.context).getPhysicalPath()[len(root.getPhysicalPath()):]
