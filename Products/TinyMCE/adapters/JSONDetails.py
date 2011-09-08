@@ -39,10 +39,11 @@ class JSONDetails(object):
 
         if self.context.portal_type in image_portal_types:
             results['uid_url'] = self._getPloneUrl() + '/resolveuid/' + uuidFor(self.context)
-            # TODO: ??
-            field_name = 'image'
+            results['uid_relative_url'] = 'resolveuid/' + uuidFor(self.context)
             images = self.context.restrictedTraverse('@@images')
 
+            # TODO: support other contenttypes
+            field_name = 'image'
             results['thumb'] = '%s/@@images/%s/%s' % (results['uid_url'], field_name, 'thumb')
             sizes = images.getAvailableSizes(field_name)
             scales = [{'value': '@@images/%s/%s' % (field_name, key),
