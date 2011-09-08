@@ -788,9 +788,9 @@ class TinyMCE(SimpleItem):
         props = getToolByName(self, 'portal_properties')
         livesearch = props.site_properties.getProperty('enable_livesearch', False)
         if livesearch:
-            results['livesearch'] = True
+            results['livesearch'] = "true"
         else:
-            results['livesearch'] = False
+            results['livesearch'] = "false"
 
         AVAILABLE_LANGUAGES = set(
         'sq ar hy az eu be bn nb bs br bg ca ch zh hr cs da dv nl en et fi fr gl '
