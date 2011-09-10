@@ -72,8 +72,8 @@ def getstyles(config):
 
     for i in config['styles']:
         e = i.split('|')
-        if len(e) <= 2:
-            e[2] = ""
+        while len(e) <= 2:
+            e.append("")
         if e[1].lower() in ('del', 'ins', 'span'):
                 styletype = "Selection"
         elif e[1].lower() in ('table', 'tr', 'td', 'th'):
