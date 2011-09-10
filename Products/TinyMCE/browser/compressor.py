@@ -180,13 +180,14 @@ class TinyMCECompressorView(BrowserView):
 
     @staticmethod
     def gettoolbars(config):
+        """Calculate number of toolbar rows from length of buttons"""
         t = [[], [], [], []]
         cur_toolbar = 0
         cur_x = 0
 
         for i in config['buttons']:
             button_width = BUTTON_WIDTHS.get(i, 23)
-            if cur_x + button_width > config['toolbar_width']:
+            if cur_x + button_width > int(config['toolbar_width']):
                 cur_x = button_width
                 cur_toolbar += 1
             else:

@@ -7,11 +7,24 @@ from Products.TinyMCE.tests.base import IntegrationTestCase
 
 class UtilTestCase(unittest.TestCase):
 
+    def _get_config(self):
+        return {
+            'libraries_spellchecker_choice': 'browser',
+             'customplugins': '',
+             'contextmenu': False,
+             'autoresize': False,
+             'labels': {'label_paragraph': 'Paragraph',
+                      'label_styles': u'Styles with an ü',
+                      'label_plain_cell': 'Plain Cell',
+                      'label_lists': 'Lists',
+              },
+             'styles': ['a|class|y', 'foo|bar|x'],
+             'buttons': ['style', 'tablecontrol', 'forecolor', ] + ['a'] * 30,
+             'toolbar_width': '440',
+        }
+
     def test_getplugins(self):
-        config = {'libraries_spellchecker_choice': 'browser',
-                  'customplugins': '',
-                  'contextmenu': False,
-                  'autoresize': False}
+        config = self._get_config()
         self.assertTrue('table' in TinyMCECompressorView.getplugins(config))
         self.assertFalse('contextmenu' in TinyMCECompressorView.getplugins(config))
         self.assertFalse('autoresize' in TinyMCECompressorView.getplugins(config))
@@ -35,37 +48,25 @@ class UtilTestCase(unittest.TestCase):
         self.assertTrue('plugin1,plugin2' in TinyMCECompressorView.getplugins(config))
 
     def test_getstyles(self):
-        config = {'labels': {'label_paragraph': 'Paragraph',
-                           'label_styles': 'Styles',
-                           'label_plain_cell': 'Plain Cell',
-                           'label_lists': 'Lists',
-                           },
-                  'styles': ['a|class|y', 'foo|bar|x'],
-        }
+        TinyMCECompressorView.getstyles(self._get_config())
         # XXX
-        print TinyMCECompressorView.getstyles(config)
 
     def test_getlabels(self):
-        config = {'labels': {'label_paragraph': 'Paragraph',
-                           'label_styles': u'Styles with an ü',
-                           'label_plain_cell': 'Plain Cell',
-                           'label_lists': 'Lists',
-                           },
-        }
-        self.assertEqual(TinyMCECompressorView.getlabels(config),
+        self.assertEqual(TinyMCECompressorView.getlabels(self._get_config()),
                          ("{'label_paragraph': 'Paragraph', "
                           "'label_styles': 'Styles with an \\xc3\\xbc', "
                           "'label_plain_cell': 'Plain Cell', "
                           "'label_lists': 'Lists'}"))
 
+    def test_gettoolbars(self):
+        toolbars = TinyMCECompressorView.gettoolbars(self._get_config())
+        self.assertEqual(toolbars, ['style,tablecontrol,forecolor,a,a,a,a,a,a,a,a,a,a', 'a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a', 'a', ''])
+
 
 class ViewTestCase(IntegrationTestCase):
 
     def test_compressorview(self):
-        context = self.portal
-        request = self.portal.REQUEST
-        view = TinyMCECompressorView(context, request)
+        view = TinyMCECompressorView(self.portal, self.portal.REQUEST)
         setattr(view, '__name__', 'tiny_mce_gzip')
-        response = view()
-        self.assertTrue(response.startswith(
+        self.assertTrue(view().startswith(
             "jQuery(function(){jQuery('textarea.mce_editable').tinymce("))
