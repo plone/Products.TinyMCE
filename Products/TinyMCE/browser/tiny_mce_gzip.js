@@ -10,8 +10,8 @@
  * settings.page_name below to match your tinymce installation as appropriate.
  */
 
-$(function() {
-    $('textarea.mce_editable').tinymce({
+jQuery(function() {
+    jQuery('textarea.mce_editable').tinymce({
             // Location of TinyMCE script
             script_url : '<tal:url tal:replace="string:${options/base_url}" />',
             mode : "exact",
@@ -56,7 +56,7 @@ $(function() {
             document_url : "<tal:lang tal:replace='options/config/document_url' />",
             portal_url : "<tal:lang tal:replace='options/portal_url' />",
             navigation_root_url : "<tal:lang tal:replace='options/config/navigation_root_url' />",
-            livesearch : "<tal:lang tal:replace='options/config/livesearch' />",
+            livesearch : <tal:lang tal:replace='options/config/livesearch' />,
             valid_elements : "<tal:lang tal:replace='options/valid_elements' />",
             valid_inline_styles : "<tal:lang tal:replace="python:','.join(options['config']['valid_inline_styles'])" />",
             link_using_uids : "<tal:lang tal:replace='options/config/link_using_uids' />",
