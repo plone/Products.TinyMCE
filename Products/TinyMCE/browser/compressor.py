@@ -52,55 +52,55 @@ def getplugins(config):
 
 
 def getstyles(config):
-        h = {'Text': [], 'Selection': [], 'Tables': [], 'Lists': [], 'Print': []}
-        styletype = ""
+    h = {'Text': [], 'Selection': [], 'Tables': [], 'Lists': [], 'Print': []}
+    styletype = ""
 
-        # Push title
-        h['Text'].append('{ title: "Text", tag: "", className: "-", type: "Text" }')
-        h['Selection'].append('{ title: "Selection", tag: "", className: "-", type: "Selection" }')
-        h['Tables'].append('{ title: "Tables", tag: "table", className: "-", type: "Tables" }')
-        h['Lists'].append('{ title: "Lists", tag: "ul", className: "-", type: "Lists" }')
-        h['Lists'].append('{ title: "Lists", tag: "ol", className: "-", type: "Lists" }')
-        h['Lists'].append('{ title: "Lists", tag: "dl", className: "-", type: "Lists" }')
-        h['Print'].append('{ title: "Print", tag: "", className: "-", type: "Print" }')
+    # Push title
+    h['Text'].append('{ title: "Text", tag: "", className: "-", type: "Text" }')
+    h['Selection'].append('{ title: "Selection", tag: "", className: "-", type: "Selection" }')
+    h['Tables'].append('{ title: "Tables", tag: "table", className: "-", type: "Tables" }')
+    h['Lists'].append('{ title: "Lists", tag: "ul", className: "-", type: "Lists" }')
+    h['Lists'].append('{ title: "Lists", tag: "ol", className: "-", type: "Lists" }')
+    h['Lists'].append('{ title: "Lists", tag: "dl", className: "-", type: "Lists" }')
+    h['Print'].append('{ title: "Print", tag: "", className: "-", type: "Print" }')
 
-        # Add defaults
-        h['Text'].append('{ title: "' + config['labels']['label_paragraph'] + '", tag: "p", className: "", type: "Text" }')
-        h['Selection'].append('{ title: "' + config['labels']['label_styles'] + '", tag: "", className: "", type: "Selection" }')
-        h['Tables'].append('{ title: "' + config['labels']['label_plain_cell'] + '", tag: "td", className: "", type: "Tables" }')
-        h['Lists'].append('{ title: "' + config['labels']['label_lists'] + '", tag: "dl", className: "", type: "Lists" }')
+    # Add defaults
+    h['Text'].append('{ title: "' + config['labels']['label_paragraph'] + '", tag: "p", className: "", type: "Text" }')
+    h['Selection'].append('{ title: "' + config['labels']['label_styles'] + '", tag: "", className: "", type: "Selection" }')
+    h['Tables'].append('{ title: "' + config['labels']['label_plain_cell'] + '", tag: "td", className: "", type: "Tables" }')
+    h['Lists'].append('{ title: "' + config['labels']['label_lists'] + '", tag: "dl", className: "", type: "Lists" }')
 
-        for i in config['styles']:
-            e = i.split('|')
-            if len(e) <= 2:
-                e[2] = ""
-            if e[1].lower() in ('del', 'ins', 'span'):
-                    styletype = "Selection"
-            elif e[1].lower() in ('table', 'tr', 'td', 'th'):
-                    styletype = "Tables"
-            elif e[1].lower() in ('ul', 'ol', 'li', 'dt', 'dd', 'dl'):
-                    styletype = "Lists"
-            else:
-                    styletype = "Text"
+    for i in config['styles']:
+        e = i.split('|')
+        if len(e) <= 2:
+            e[2] = ""
+        if e[1].lower() in ('del', 'ins', 'span'):
+                styletype = "Selection"
+        elif e[1].lower() in ('table', 'tr', 'td', 'th'):
+                styletype = "Tables"
+        elif e[1].lower() in ('ul', 'ol', 'li', 'dt', 'dd', 'dl'):
+                styletype = "Lists"
+        else:
+                styletype = "Text"
 
-            if e[2] == "pageBreak":
-                    styletype = "Print"
-            h[styletype].append('{ title: "' + e[0] + '", tag: "' + e[1] + '", className: "' + e[2] + '", type: "' + styletype + '" }')
+        if e[2] == "pageBreak":
+                styletype = "Print"
+        h[styletype].append('{ title: "' + e[0] + '", tag: "' + e[1] + '", className: "' + e[2] + '", type: "' + styletype + '" }')
 
-            # Add items to list
-            a = []
-            if len(h['Text']) > 1:
-                a.extend(h['Text'])
-            if len(h['Selection']) > 1:
-                a.extend(h['Selection'])
-            if len(h['Tables']) > 1:
-                a.extend(h['Tables'])
-            if len(h['Lists']) > 1:
-                a.extend(h['Lists'])
-            if len(h['Print']) > 1:
-                a.extend(h['Print'])
+        # Add items to list
+        a = []
+        if len(h['Text']) > 1:
+            a.extend(h['Text'])
+        if len(h['Selection']) > 1:
+            a.extend(h['Selection'])
+        if len(h['Tables']) > 1:
+            a.extend(h['Tables'])
+        if len(h['Lists']) > 1:
+            a.extend(h['Lists'])
+        if len(h['Print']) > 1:
+            a.extend(h['Print'])
 
-            return '[' + ','.join(a) + ']'
+    return '[' + ','.join(a) + ']'
 
 
 def getlabels(config):
