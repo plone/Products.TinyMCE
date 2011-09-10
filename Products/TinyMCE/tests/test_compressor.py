@@ -69,6 +69,6 @@ class ViewTestCase(IntegrationTestCase):
         setattr(view, '__name__', 'tiny_mce_gzip')
         response = view()
         self.assertTrue(response.startswith(
-            "$(function(){$('textarea.mce_editable').tinymce("))
+            "jQuery(function(){jQuery('textarea.mce_editable').tinymce("))
 
 
