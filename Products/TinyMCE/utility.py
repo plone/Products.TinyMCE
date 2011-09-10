@@ -199,25 +199,20 @@ class TinyMCE(SimpleItem):
             buttons.append('copy')
         if self.toolbar_paste:
             buttons.append('paste')
-
         if self.toolbar_pastetext:
             buttons.append('pastetext')
         if self.toolbar_pasteword:
             buttons.append('pasteword')
-
         if self.toolbar_undo:
             buttons.append('undo')
         if self.toolbar_redo:
             buttons.append('redo')
-
         if self.toolbar_search:
             buttons.append('search')
         if self.toolbar_replace:
             buttons.append('replace')
-
         if self.toolbar_style:
             buttons.append('style')
-
         if self.toolbar_bold:
             buttons.append('bold')
         if self.toolbar_italic:
@@ -230,12 +225,10 @@ class TinyMCE(SimpleItem):
             buttons.append('sub')
         if self.toolbar_sup:
             buttons.append('sup')
-
         if self.toolbar_forecolor:
             buttons.append('forecolor')
         if self.toolbar_backcolor:
             buttons.append('backcolor')
-
         if self.toolbar_justifyleft:
             buttons.append('justifyleft')
         if self.toolbar_justifycenter:
@@ -244,7 +237,6 @@ class TinyMCE(SimpleItem):
             buttons.append('justifyright')
         if self.toolbar_justifyfull:
             buttons.append('justifyfull')
-
         if self.toolbar_bullist:
             buttons.append('bullist')
         if self.toolbar_numlist:
@@ -255,22 +247,18 @@ class TinyMCE(SimpleItem):
             buttons.append('outdent')
         if self.toolbar_indent:
             buttons.append('indent')
-
         if self.toolbar_image:
             buttons.append('image')
         if self.toolbar_media:
             buttons.append('media')
-
         if self.toolbar_link:
             buttons.append('link')
         if self.toolbar_unlink:
             buttons.append('unlink')
         if self.toolbar_anchor:
             buttons.append('anchor')
-
         if self.toolbar_tablecontrols:
             buttons.append('tablecontrols')
-
         if self.toolbar_charmap:
             buttons.append('charmap')
         if self.toolbar_hr:
@@ -287,15 +275,12 @@ class TinyMCE(SimpleItem):
             buttons.append('nonbreaking')
         if self.toolbar_pagebreak:
             buttons.append('pagebreak')
-
         if self.toolbar_print:
             buttons.append('print')
         if self.toolbar_preview:
             buttons.append('preview')
-
         if self.toolbar_spellchecker:
             buttons.append(self.libraries_spellchecker_choice)
-
         if self.toolbar_removeformat:
             buttons.append('removeformat')
         if self.toolbar_cleanup:
@@ -319,7 +304,9 @@ class TinyMCE(SimpleItem):
 
     security.declarePrivate('translateButtonsFromKupu')
     def translateButtonsFromKupu(self, context, buttons):
-
+        """Given a set of buttons in Kupu, translate them to
+        a set for TinyMCE toolbar
+        """
         return_buttons = []
 
         for button in buttons:
@@ -412,6 +399,9 @@ class TinyMCE(SimpleItem):
 
     security.declarePrivate('getValidElements')
     def getValidElements(self):
+        """Return valid (X)HTML elements and their attributes
+        that can be used within TinyMCE
+        """
         XHTML_TAGS = set(
             'a abbr acronym address area b base bdo big blockquote body br '
             'button caption cite code col colgroup dd del div dfn dl dt em '
@@ -598,6 +588,7 @@ class TinyMCE(SimpleItem):
 
     security.declareProtected('View', 'getConfiguration')
     def getConfiguration(self, context=None, field=None, request=None, as_json=True):
+        """Return JSON configuration that is passed to javascript tinymce constructor"""
         results = {}
 
         # Get widget attributes
@@ -749,20 +740,13 @@ class TinyMCE(SimpleItem):
             directionality = self.directionality
         results['directionality'] = directionality
 
-        if self.contextmenu:
-            results['contextmenu'] = True
-        else:
-            results['contextmenu'] = False
-
         if self.content_css and self.content_css.strip() != "":
             results['content_css'] = self.content_css
         else:
             results['content_css'] = self.absolute_url() + """/@@tinymce-getstyle"""
 
-        if self.link_using_uids:
-            results['link_using_uids'] = True
-        else:
-            results['link_using_uids'] = False
+        results['link_using_uids'] = self.link_using_uids
+        results['contextmenu'] = self.contextmenu
 
         if self.allow_captioned_images:
             results['allow_captioned_images'] = True
@@ -788,9 +772,9 @@ class TinyMCE(SimpleItem):
         props = getToolByName(self, 'portal_properties')
         livesearch = props.site_properties.getProperty('enable_livesearch', False)
         if livesearch:
-            results['livesearch'] = "true"
+            results['livesearch'] = True
         else:
-            results['livesearch'] = "false"
+            results['livesearch'] = False
 
         AVAILABLE_LANGUAGES = set(
         'sq ar hy az eu be bn nb bs br bg ca ch zh hr cs da dv nl en et fi fr gl '
