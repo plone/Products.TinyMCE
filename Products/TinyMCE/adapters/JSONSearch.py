@@ -1,9 +1,9 @@
 from zope.interface import implements
 try:
-    import json
+    import simplejson as json
     json   # pyflakes
 except ImportError:
-    import simplejson as json
+    import json
 
 from Products.TinyMCE.adapters.interfaces.JSONSearch import IJSONSearch
 

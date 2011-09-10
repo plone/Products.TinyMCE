@@ -10,10 +10,10 @@ Licensed under the terms of the MIT License (see LICENSE.txt)
 from datetime import datetime
 
 try:
-    import json
+    import simplejson as json
     json  # pyflakes
 except ImportError:
-    import simplejson as json
+    import json
 
 import zope.component
 from Products.Five import BrowserView

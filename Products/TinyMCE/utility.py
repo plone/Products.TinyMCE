@@ -1,8 +1,8 @@
 try:
-    import json
-    json = json  # Pyflakes
-except ImportError:
     import simplejson as json
+    json  # Pyflakes
+except ImportError:
+    import json
 from types import StringTypes
 
 from zope.component import getUtilitiesFor, getUtility, queryUtility
