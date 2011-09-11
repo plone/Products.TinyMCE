@@ -195,7 +195,7 @@ class TinyMCECompressorView(BrowserView):
             if cur_toolbar <= 3:
                 t[cur_toolbar].append(i)
 
-        return [','.join(t[0]), ','.join(t[1]), ','.join(t[2]), ','.join(t[3])]
+        return [','.join(toolbar) for toolbar in t]
 
     @staticmethod
     def getvalidelements(config):
