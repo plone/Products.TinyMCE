@@ -27,11 +27,13 @@ class ITinyMCELayout(Interface):
         description=_(u"This option gives you the ability to enable/disable the compression of the editor and the plugins."),
         required=False)
 
+    # TODO: add validation to assert % and px in the value
     editor_width = schema.TextLine(
         title=_(u"Editor width"),
-        description=_(u"This option gives you the ability to specify the width of the editor in pixels or percent."),
+        description=_(u"This option gives you the ability to specify the width of the editor (like 100% or 400px)."),
         required=False)
 
+    # TODO: add validation to assert % and px in the value
     editor_height = schema.TextLine(
         title=_(u"Editor height"),
         description=_(u"This option gives you the ability to specify the height of the editor in pixels. If auto resize is enabled this value is used as minimum height."),
