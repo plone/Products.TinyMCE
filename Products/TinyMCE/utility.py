@@ -754,9 +754,9 @@ class TinyMCE(SimpleItem):
             results['allow_captioned_images'] = False
 
         if self.rooted or rooted:
-            results['rooted'] = True
+            results['rooted'] = "true"
         else:
-            results['rooted'] = False
+            results['rooted'] = "false"
 
         results['customplugins'] = []
         if self.customplugins is not None:
@@ -772,9 +772,9 @@ class TinyMCE(SimpleItem):
         props = getToolByName(self, 'portal_properties')
         livesearch = props.site_properties.getProperty('enable_livesearch', False)
         if livesearch:
-            results['livesearch'] = True
+            results['livesearch'] = "true"
         else:
-            results['livesearch'] = False
+            results['livesearch'] = "true"
 
         AVAILABLE_LANGUAGES = set(
         'sq ar hy az eu be bn nb bs br bg ca ch zh hr cs da dv nl en et fi fr gl '
