@@ -101,9 +101,16 @@ class TinyMCECompressorView(BrowserView):
 
         return ''.join(content)
 
+    # make this easier to override by childs until we provide this via the control panel
+    default_plugins = ("pagebreak,table,save,advhr,emotions,insertdatetime,"
+                       "preview,media,searchreplace,print,paste,"
+                       "directionality,fullscreen,noneditable,visualchars,"
+                       "nonbreaking,xhtmlxtras,inlinepopups,plonestyle,"
+                       "tabfocus,definitionlist,ploneinlinestyles")
+
     @staticmethod
     def getplugins(config):
-        plugins = "pagebreak,table,save,advhr,emotions,insertdatetime,preview,media,searchreplace,print,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups,plonestyle,tabfocus,definitionlist,ploneinlinestyles"
+        plugins = TinyMCECompressorView.default_plugins
         sp = config['libraries_spellchecker_choice']
         sp = sp != "browser" and sp or ""
         if sp:
