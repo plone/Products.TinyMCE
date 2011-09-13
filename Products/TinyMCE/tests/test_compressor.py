@@ -67,6 +67,6 @@ class ViewTestCase(IntegrationTestCase):
 
     def test_compressorview(self):
         view = TinyMCECompressorView(self.portal, self.portal.REQUEST)
-        setattr(view, '__name__', 'tiny_mce_gzip')
+        setattr(view, '__name__', 'tiny_mce_gzip.js')
         self.assertTrue(view().startswith(
             "jQuery(function(){jQuery('textarea.mce_editable').tinymce("))

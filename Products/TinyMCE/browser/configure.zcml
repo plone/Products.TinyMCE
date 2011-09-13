@@ -32,7 +32,7 @@
         identification of the file -->
     <browser:page
         for="*"
-        name="tiny_mce_gzip"
+        name="tiny_mce_gzip.js"
         class=".compressor.TinyMCECompressorView"
         permission="zope2.View"
         />
@@ -44,7 +44,6 @@
         permission="zope2.View"
         attribute="checkDocument"
         />
-
 
     <browser:pages
         for="*"
