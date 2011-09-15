@@ -5,7 +5,7 @@ except ImportError:
     import json
 from types import StringTypes
 
-from zope.component import getUtilitiesFor, getUtility, queryUtility
+from zope.component import getUtilitiesFor, getUtility, queryUtility, getMultiAdapter
 from zope.i18n import translate
 from zope.i18nmessageid import MessageFactory
 from zope.interface import classProvides, implements
@@ -38,6 +38,7 @@ from Products.TinyMCE.interfaces.utility import ITinyMCEContentBrowser
 
 
 _ = MessageFactory('plone.tinymce')
+BUTTON_WIDTHS = {'style': 150, 'forecolor': 32, 'backcolor': 32, 'tablecontrols': 285}
 
 
 def form_adapter(context):
@@ -544,14 +545,14 @@ class TinyMCE(SimpleItem):
         # Remove to be stripped attributes
         try:
             stripped_attributes = set(safe_html.get_parameter_value('stripped_attributes'))
-            style_whitelist = safe_html.get_parameter_value('style_whitelist')
+            #style_whitelist = safe_html.get_parameter_value('style_whitelist')
         except (KeyError, AttributeError):
             if kupu_library_tool is not None:
                 stripped_attributes = set(kupu_library_tool.get_stripped_attributes())
-                style_whitelist = kupu_library_tool.getStyleWhitelist()
+                #style_whitelist = kupu_library_tool.getStyleWhitelist()
             else:
                 stripped_attributes = set()
-                style_whitelist = ()
+                #style_whitelist = ()
 
         #style_attribute = "style"
         #if len(style_whitelist) > 0:
@@ -574,6 +575,98 @@ class TinyMCE(SimpleItem):
 
         return valid_elements
 
+    security.declarePrivate('getPlugins')
+    def getPlugins(self, config):
+        plugins = "pagebreak,table,save,advhr,emotions,insertdatetime,preview,media,searchreplace,print,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups,plonestyle,tabfocus,definitionlist,ploneinlinestyles"
+        sp = self.libraries_spellchecker_choice
+        sp = sp != "browser" and sp or ""
+        if sp:
+            plugins += ',' + sp
+
+        for plugin in config['customplugins']:
+            if '|' not in plugin:
+                plugins += ',' + plugin
+            else:
+                plugins += ',' + plugin.split('|')[0]
+
+        if config['contextmenu']:
+            plugins += ',contextmenu'
+
+        if config['autoresize']:
+            plugins += ',autoresize'
+        return plugins
+
+    security.declarePrivate('getStyles')
+    def getStyles(self, config):
+        h = {'Text': [], 'Selection': [], 'Tables': [], 'Lists': [], 'Print': []}
+        styletype = ""
+
+        # Push title
+        h['Text'].append('{ title: "Text", tag: "", className: "-", type: "Text" }')
+        h['Selection'].append('{ title: "Selection", tag: "", className: "-", type: "Selection" }')
+        h['Tables'].append('{ title: "Tables", tag: "table", className: "-", type: "Tables" }')
+        h['Lists'].append('{ title: "Lists", tag: "ul", className: "-", type: "Lists" }')
+        h['Lists'].append('{ title: "Lists", tag: "ol", className: "-", type: "Lists" }')
+        h['Lists'].append('{ title: "Lists", tag: "dl", className: "-", type: "Lists" }')
+        h['Print'].append('{ title: "Print", tag: "", className: "-", type: "Print" }')
+
+        # Add defaults
+        h['Text'].append('{ title: "' + config['labels']['label_paragraph'] + '", tag: "p", className: "", type: "Text" }')
+        h['Selection'].append('{ title: "' + config['labels']['label_styles'] + '", tag: "", className: "", type: "Selection" }')
+        h['Tables'].append('{ title: "' + config['labels']['label_plain_cell'] + '", tag: "td", className: "", type: "Tables" }')
+        h['Lists'].append('{ title: "' + config['labels']['label_lists'] + '", tag: "dl", className: "", type: "Lists" }')
+
+        for i in config['styles']:
+            e = i.split('|')
+            while len(e) <= 2:
+                e.append("")
+            if e[1].lower() in ('del', 'ins', 'span'):
+                    styletype = "Selection"
+            elif e[1].lower() in ('table', 'tr', 'td', 'th'):
+                    styletype = "Tables"
+            elif e[1].lower() in ('ul', 'ol', 'li', 'dt', 'dd', 'dl'):
+                    styletype = "Lists"
+            else:
+                    styletype = "Text"
+
+            if e[2] == "pageBreak":
+                    styletype = "Print"
+            h[styletype].append('{ title: "' + e[0] + '", tag: "' + e[1] + '", className: "' + e[2] + '", type: "' + styletype + '" }')
+
+            # Add items to list
+            a = []
+            if len(h['Text']) > 1:
+                a.extend(h['Text'])
+            if len(h['Selection']) > 1:
+                a.extend(h['Selection'])
+            if len(h['Tables']) > 1:
+                a.extend(h['Tables'])
+            if len(h['Lists']) > 1:
+                a.extend(h['Lists'])
+            if len(h['Print']) > 1:
+                a.extend(h['Print'])
+
+        return '[' + ','.join(a) + ']'
+
+    security.declarePrivate('getToolbars')
+    def getToolbars(self, config):
+        """Calculate number of toolbar rows from length of buttons"""
+        t = [[], [], [], []]
+        cur_toolbar = 0
+        cur_x = 0
+
+        for i in config['buttons']:
+            button_width = BUTTON_WIDTHS.get(i, 23)
+            if cur_x + button_width > int(config['toolbar_width']):
+                cur_x = button_width
+                cur_toolbar += 1
+            else:
+                cur_x += button_width
+            if cur_toolbar <= 3:
+                t[cur_toolbar].append(i)
+
+        return [','.join(toolbar) for toolbar in t]
+
     security.declareProtected('View', 'getContentType')
     def getContentType(self, object=None, fieldname=None):
         context = aq_base(object)
@@ -587,7 +680,7 @@ class TinyMCE(SimpleItem):
         return 'text/html'
 
     security.declareProtected('View', 'getConfiguration')
-    def getConfiguration(self, context=None, field=None, request=None, as_json=True):
+    def getConfiguration(self, context=None, field=None, request=None, script_url=None):
         """Return JSON configuration that is passed to javascript tinymce constructor"""
         results = {}
 
@@ -616,7 +709,7 @@ class TinyMCE(SimpleItem):
                 style_whitelist = kupu_library_tool.getStyleWhitelist()
             else:
                 style_whitelist = []
-        results['valid_inline_styles'] = style_whitelist
+        results['valid_inline_styles'] = ','.join(style_whitelist)  # tinymce format
 
         # Replacing some hardcoded translations
         labels = {}
@@ -639,7 +732,7 @@ class TinyMCE(SimpleItem):
 
         # Add styles to results
         results['styles'] = []
-        results['table_styles'] = []
+        table_styles = []
         if not redefine_parastyles:
             if isinstance(self.tablestyles, StringTypes):
                 for tablestyle in self.tablestyles.split('\n'):
@@ -656,7 +749,7 @@ class TinyMCE(SimpleItem):
                     if request is not None:
                         tablestyletitle = translate(_(tablestylefields[0]), context=request)
                     results['styles'].append(tablestyletitle + '|table|' + tablestyleid)
-                    results['table_styles'].append(tablestyletitle + '=' + tablestyleid)
+                    table_styles.append(tablestyletitle + '=' + tablestyleid)
             if isinstance(self.styles, StringTypes):
                 styles = []
                 for style in self.styles.split('\n'):
@@ -670,6 +763,7 @@ class TinyMCE(SimpleItem):
                     merge = styletitle + '|' + '|'.join(stylefields[1:])
                     styles.append(merge)
                 results['styles'].extend(styles)
+        results['table_styles'] = ';'.join(table_styles)  # tinymce config
 
         if parastyles is not None:
             results['styles'].extend(parastyles)
@@ -686,42 +780,40 @@ class TinyMCE(SimpleItem):
             results['buttons'] = filter(lambda x: x not in filter_buttons, results['buttons'])
 
         # Get valid html elements
-        results['valid_elements'] = self.getValidElements()
+        valid_elements = self.getValidElements()
+        results['valid_elements'] = ','.join(["%s[%s]" % (key, '|'.join(value)) for key, value in valid_elements.iteritems()])
 
         # Set toolbar_location
         if self.toolbar_external:
-            results['toolbar_location'] = 'external'
+            results['theme_advanced_toolbar_location'] = 'external'
         else:
-            results['toolbar_location'] = 'top'
+            results['theme_advanced_toolbar_location'] = 'top'
 
         if self.autoresize:
-            results['path_location'] = 'none'
-            results['resizing_use_cookie'] = False
-            results['resizing'] = False
+            results['theme_advanced_path_location'] = 'none'
+            results['theme_advanced_resizing_use_cookie'] = False
+            results['theme_advanced_resizing'] = False
             results['autoresize'] = True
         else:
-            results['path_location'] = 'bottom'
-            results['resizing_use_cookie'] = True
-            if self.resizing:
-                results['resizing'] = True
-            else:
-                results['resizing'] = False
+            results['theme_advanced_path_location'] = 'bottom'
+            results['theme_advanced_resizing_use_cookie'] = True
+            results['theme_advanced_resizing'] = self.resizing
             results['autoresize'] = False
 
         if '%' in self.editor_width:
-            results['resize_horizontal'] = False
+            results['theme_advanced_resize_horizontal'] = False
         else:
-            results['resize_horizontal'] = True
+            results['theme_advanced_resize_horizontal'] = True
 
         try:
-            results['editor_width'] = int(self.editor_width)
+            results['theme_advanced_source_editor_width'] = int(self.editor_width)
         except (TypeError, ValueError):
-            results['editor_width'] = 600
+            results['theme_advanced_source_editor_width'] = 600
 
         try:
-            results['editor_height'] = int(self.editor_height)
+            results['theme_advanced_source_editor_height'] = int(self.editor_height)
         except (TypeError, ValueError):
-            results['editor_height'] = 400
+            results['theme_advanced_source_editor_height'] = 400
 
         try:
             results['toolbar_width'] = int(toolbar_width)
@@ -747,6 +839,8 @@ class TinyMCE(SimpleItem):
 
         results['link_using_uids'] = self.link_using_uids
         results['contextmenu'] = self.contextmenu
+        if script_url:
+            results['script_url'] = script_url
 
         if self.allow_captioned_images:
             results['allow_captioned_images'] = True
@@ -754,9 +848,9 @@ class TinyMCE(SimpleItem):
             results['allow_captioned_images'] = False
 
         if self.rooted or rooted:
-            results['rooted'] = "true"
+            results['rooted'] = True
         else:
-            results['rooted'] = "false"
+            results['rooted'] = False
 
         results['customplugins'] = []
         if self.customplugins is not None:
@@ -765,16 +859,19 @@ class TinyMCE(SimpleItem):
         results['entity_encoding'] = self.entity_encoding
 
         portal = getUtility(ISiteRoot)
-        results['portal_url'] = aq_inner(portal).absolute_url()
+        plone_portal_state = getMultiAdapter(
+                (context, request), name="plone_portal_state")
+        results['portal_url'] = plone_portal_state.portal_url()
+        #results['portal_url'] = aq_inner(portal).absolute_url()
         nav_root = getNavigationRootObject(context, portal)
         results['navigation_root_url'] = nav_root.absolute_url()
 
         props = getToolByName(self, 'portal_properties')
         livesearch = props.site_properties.getProperty('enable_livesearch', False)
         if livesearch:
-            results['livesearch'] = "true"
+            results['livesearch'] = True
         else:
-            results['livesearch'] = "true"
+            results['livesearch'] = False
 
         AVAILABLE_LANGUAGES = set(
         'sq ar hy az eu be bn nb bs br bg ca ch zh hr cs da dv nl en et fi fr gl '
@@ -794,21 +891,20 @@ class TinyMCE(SimpleItem):
                 parent = aq_parent(aq_inner(context))
                 if context.checkCreationFlag():
                     parent = aq_parent(aq_parent(parent))
-                    results['parent'] = parent.absolute_url() + "/"
+                    results['document_base_url'] = parent.absolute_url() + "/"
                 else:
                     if IFolderish.providedBy(context):
-                        results['parent'] = context.absolute_url() + "/"
+                        results['document_base_url'] = context.absolute_url() + "/"
                     else:
-                        results['parent'] = parent.absolute_url() + "/"
+                        results['document_base_url'] = parent.absolute_url() + "/"
             else:
-                results['parent'] = results['portal_url'] + "/"
+                results['document_base_url'] = results['portal_url'] + "/"
         except AttributeError:
-            results['parent'] = results['portal_url'] + "/"
+            results['document_base_url'] = results['portal_url'] + "/"
             results['document_url'] = results['portal_url']
 
         # Get Library options
-        results['libraries_spellchecker_choice'] = \
-                                        self.libraries_spellchecker_choice
+        results['gecko_spellcheck'] = self.libraries_spellchecker_choice == 'browser'
 
         # Content Browser
         shortcuts_dict = dict(getUtilitiesFor(ITinyMCEShortcut))
@@ -830,10 +926,25 @@ class TinyMCE(SimpleItem):
         results['atd_show_types'] = self.libraries_atd_show_types.strip().replace('\n', ',')
         results['atd_ignore_strings'] = self.libraries_atd_ignore_strings.strip().replace('\n', ',')
 
-        if as_json:
-            return json.dumps(results)
-        else:
-            return results
+        # generic configuration
+        results['mode'] = "exact"
+        results['theme'] = "advanced"
+        results['skin'] = "plone"
+        results['inlinepopups_skin'] = "plonepopup"
+        results['body_class'] = "documentContent"
+        results['body_id'] = "content"
+        results['table_firstline_th'] = True
+        results['force_span_wrappers'] = True
+        results['fix_list_elements'] = False
+        results['theme_advanced_path'] = False
+        results['theme_advanced_toolbar_align'] = "left"
+
+        results['plugins'] = self.getPlugins(results)
+        results['theme_advanced_styles'] = self.getStyles(results)
+        results['theme_advanced_buttons1'], results['theme_advanced_buttons2'], \
+            results['theme_advanced_buttons3'], results['theme_advanced_buttons4'] = self.getToolbars(results)
+
+        return json.dumps(results)
 
 
 class ImageCaptioningEnabler(object):
