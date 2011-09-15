@@ -7,84 +7,26 @@
   <script type="text/javascript" src="../../utils/form_utils.js"></script>
   <script type="text/javascript" src="js/plonelink.js"></script>
   <link rel="stylesheet" type="text/css" href="css/plonelink.css" />
+
 </head>
 <body id="plonelink"
   tal:define="portal_url context/portal_url">
   <div class="dialog-wrapper" id="content">
+		<div class="tabs">
+			<ul class="formTabs">
+				<li id="general_tab" class="formTab firstFormTab"><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;" class="selected"><span i18n:translate="plonelink_dlg_general_tab"></span></a></li>
+				<li id="advanced_tab" class="formTab lastFormTab"><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;"><span i18n:translate="plonelink_dlg_advanced_tab"></span></a></li>
+			</ul>
+		</div>
+
 		<div class="panel_wrapper">
-			<div id="addlink_panel" class="column">
-				<h2>Link type</h2>
-				<p><a href="#" class="current">Internal</a></p>
-				<p>External</p>
-				<p><strong><a href="/todo">Advanced options »</a></strong></p>
-			</div>
-			<div class="verticalborder column"></div>
-			<div id="browselink_panel" class="column">
-				<h2>Internal link browser</h2>
-				<div class="formHelp">
-					<strong>Current folder:</strong>
-					<span id="internalpath"></span>
-				</div>
-				<div id="internallinkcontainer" class="column widget radioscrolllist input-border">
-				</div>
-				<div class="visualClear">
-				</div>
-				<form onsubmit="insertAction();return false;" action="#">
-					<div class="mceActionPanel formControls">
-						<span class="actionButtons">
-							<input type="submit" id="insert" class="context" name="insert" i18n:attributes="value common_insert" />
-							<input type="button" id="cancel" class="standalone" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
-						</span>
-					</div>
-				</form>
-			</div>
-			<div class="verticalborder column hide"></div>
-			<div id="uploadfile_panel" class="column hide">
-				<h2>Upload a file</h2>
-				<form name="upload_form" id="upload_form" method="post" target="upload_iframe" enctype="multipart/form-data">
-					<div class="field">
-						<label for="uploadtitle" i18n:translate="ploneimage_dlg_title"></label>
-						<div class="widget">
-							<input type="text" name="uploadtitle" id="uploadtitle" value="" />
-						</div>
-					</div>
-
-					<div class="field">
-						<label for="uploaddescription" i18n:domain="plone.tinymce" i18n:translate="">Description</label>
-						<div class="widget">
-							<textarea wrap="soft" cols="10" rows="6" id="uploaddescription" name="uploaddescription"></textarea>
-						</div>
-					</div>
-
-					<div class="field">
-						<label for="uploadfile" i18n:domain="plone.tinymce" i18n:translate="">Upload File</label>
-						<div class="widget">
-							<input type="file" name="uploadfile" id="uploadfile" />
-						</div>
-					</div>
-
-					<input type="button" id="uploadbutton" class="context plonebutton" name="uploadbutton" value="Upload a file*"
-						i18n:domain="plone.tinymce"
-						i18n:attributes="value"
-						onclick="document.forms[1].submit();"/>
-					<p class="formHelp">*Your file will be uploaded to <strong>current folder</strong> selected in the browser.</p>
-				</form>
-				<iframe width="0" scrolling="off" height="0" frameborder="0" id="upload_iframe" name="upload_iframe" src="javascript:"></iframe>
-			</div>
-			<div class="field" style="display: none">
-				<label for="searchtext" i18n:domain="plone.tinymce" i18n:translate="">Search</label>
-				<div class="widget">
-					<input type="text" name="searchtext" id="searchtext" value="" onkeyup="ImageDialog.checkSearch(event);" size="12"/>
-					<input type="button" value="Search" i18n:domain="plone.tinymce" i18n:attributes="value" class="searchButton" onclick="ImageDialog.getFolderListing(tinyMCEPopup.editor.settings.navigation_root_url, 'tinymce-jsonimagesearch');"/>
-				</div>
-			</div>
-<!--				
 			<div id="general_panel" class="panel current">
 				<fieldset class="formPanel">
 					<div id="internalpath" class="formHelp"></div>
 					<form>
 						<input type="hidden" name="href" id="href"/>
 						<fieldset class="column columnlibraries">
+							<legend i18n:domain="plone.tinymce" i18n:translate="">Libraries</legend>
 										<ul class="configlets">
 												<li id="home">
 									<a href="javascript:displayPanel('internal_panel'); getFolderListing(tinyMCEPopup.editor.settings.navigation_root_url, 'tinymce-jsonlinkablefolderlisting');">
@@ -96,9 +38,11 @@
 											<img alt="" tal:attributes="src string:$portal_url/site_icon.gif"/> <span i18n:domain="plone.tinymce" i18n:translate="">Current Folder</span>
 									</a>
 								</li>
+												<!-- li>
 									<a href="javascript:displayPanel('internal_panel');">
 											<img alt="" tal:attributes="src string:$portal_url/popup_calendar.gif"/> <span i18n:domain="plone.tinymce" i18n:translate="">Recent Items</span>
 									</a>
+								</li -->
 												<li>
 									<a href="javascript:displayPanel('external_panel');">
 													<img alt="" tal:attributes="src string:$portal_url/link_icon.gif"/> <span i18n:domain="plone.tinymce" i18n:translate="">External</span>
@@ -243,7 +187,7 @@
 									<option value="_blank" i18n:translate="plonelink_dlg_target_blank"></option>
 									<option value="_parent" i18n:translate="plonelink_dlg_target_parent"></option>
 									<option value="_top" i18n:translate="plonelink_dlg_target_top"></option>
-									<option value="popup" i18n:translate="plonelink_dlg_popup"></option>
+									<!--option value="popup" i18n:translate="plonelink_dlg_popup"></option-->
 								</select>
 							</div>
 						</div>
@@ -345,8 +289,18 @@
 					</form>
 				</fieldset>
 			</div>
--->
 		</div>
+
+    <div class="visualClear"><!-- --></div>
+
+		<form onsubmit="insertAction();return false;" action="#">
+      <div class="mceActionPanel formControls">
+        <span class="actionButtons">
+          <input type="submit" id="insert" class="context" name="insert" i18n:attributes="value common_insert" />
+          <input type="button" id="cancel" class="standalone" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
+        </span>
+      </div>
+    </form>
   </div>
 </body>
 </html>

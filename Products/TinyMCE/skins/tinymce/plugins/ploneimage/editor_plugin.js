@@ -1,23 +1,27 @@
+/*jslint sloppy: true, maxerr: 50, indent: 4 */
+/*global tinymce */
+
 /**
  * Plone image plugin based on advimage plugin.
  *
  * @author Rob Gietema
  */
 
-(function() {
+(function () {
     tinymce.create('tinymce.plugins.PloneImagePlugin', {
-        init : function(ed, url) {
+        init : function (ed, url) {
             // Register commands
-            ed.addCommand('mcePloneImage', function() {
+            ed.addCommand('mcePloneImage', function () {
                 // Internal image object like a flash placeholder
                 var class_name = ed.dom.getAttrib(ed.selection.getNode(), 'class');
-                if (class_name && class_name.indexOf('mceItem') != -1)
+                if (class_name && class_name.indexOf('mceItem') !== -1) {
                     return;
+                }
 
                 ed.windowManager.open({
                     file : url + '/ploneimage.htm',
-                    width : 820 + parseInt(ed.getLang('ploneimage.delta_width', 0)),
-                    height : 500 + parseInt(ed.getLang('ploneimage.delta_height', 0)),
+                    width : 820 + parseInt(ed.getLang('ploneimage.delta_width', 0), 10),
+                    height : 500 + parseInt(ed.getLang('ploneimage.delta_height', 0), 10),
                     inline : 1
                 }, {
                     plugin_url : url
@@ -31,7 +35,7 @@
             });
         },
 
-        getInfo : function() {
+        getInfo : function () {
             return {
                 longname : 'Plone image',
                 author : 'Rob Gietema',
@@ -44,4 +48,4 @@
 
     // Register plugin
     tinymce.PluginManager.add('ploneimage', tinymce.plugins.PloneImagePlugin);
-})();
+}());

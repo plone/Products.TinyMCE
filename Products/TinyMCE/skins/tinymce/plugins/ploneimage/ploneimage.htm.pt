@@ -81,36 +81,36 @@
 			 <h2 i18n="translate">Add an image</h2>
 			 <form name="upload_form" id="upload_form" method="post" target="upload_iframe" enctype="multipart/form-data">
 				 <div class="field">
-								 <label for="uploadtitle" i18n:translate="ploneimage_dlg_title"></label>
-								 <div class="widget">
-												 <input type="text" name="uploadtitle" id="uploadtitle" value="" />
-								 </div>
+						 <label for="uploadtitle" i18n:translate="ploneimage_dlg_title"></label>
+						 <div class="widget">
+										 <input type="text" name="uploadtitle" id="uploadtitle" value="" />
+						 </div>
 				 </div>
 
 				 <div class="field">
-								 <label for="uploaddescription" i18n:domain="plone.tinymce" i18n:translate="">Description</label>
-								 <div class="widget">
-												 <textarea wrap="soft" cols="10" rows="6" id="uploaddescription" name="uploaddescription"></textarea>
-								 </div>
+						 <label for="uploaddescription" i18n:domain="plone.tinymce" i18n:translate="">Description</label>
+						 <div class="widget">
+										 <textarea wrap="soft" cols="10" rows="6" id="uploaddescription" name="uploaddescription"></textarea>
+						 </div>
 				 </div>
 
 				 <div class="field">
-								 <label for="uploadfile" i18n:domain="plone.tinymce" i18n:translate="">Upload File</label>
-								 <div class="widget">
-												 <input type="file" name="uploadfile" id="uploadfile" />
-								 </div>
+						 <label for="uploadfile" i18n:domain="plone.tinymce" i18n:translate="">Upload File</label>
+						 <div class="widget">
+										 <input type="file" name="uploadfile" id="uploadfile" />
+						 </div>
 				 </div>
 
-				 <div class="field">
-								 <label for="uploadurl" i18n:domain="plone.tinymce" i18n:translate="">or External URL</label>
-								 <div class="widget">
-												 <input type="text" name="uploadurl" id="uploadurl" />
-								 </div>
+				 <div class="field hide">
+						 <label for="uploadurl" i18n:domain="plone.tinymce" i18n:translate="">or External URL</label>
+						 <div class="widget">
+										 <input type="text" name="uploadurl" id="uploadurl" />
+						 </div>
 				 </div>
 
 				 <input type="button" id="uploadbutton" class="context plonebutton" name="uploadbutton" value="Upload image"
 								 i18n:domain="plone.tinymce"
-								 i18n:attributes="value" onclick="document.forms[1].submit();"/>
+								 i18n:attributes="value" />
 			 </form>
 			 <iframe width="0" scrolling="off" height="0" frameborder="0" id="upload_iframe" name="upload_iframe" src="javascript:"></iframe>
 		</div>
