@@ -15,6 +15,12 @@ directlyProvides(shortcuts_vocabulary, IContextSourceBinder)
 
 
 def thumbnail_sizes_vocabulary(context):
+    """Builds a vocabulary of thumbnail sizes. An example item in vocabulary
+    would have title set to "tile (64, 64)" and value to ('tile', 64, 64).
+
+    :returns: Vocabulary items for each allowed thumbnail size."
+    rtype: SimpleVocabulary
+    """
     terms = []
     # TODO: we should query utility, but it's not certain it will be there
     for name, size in getAllowedSizes().iteritems():
