@@ -429,7 +429,7 @@ class ITinyMCEContentBrowser(Interface):
         title=_(u'Thumbnail size in thumbnails mode'),
         #description=_(u""),
         source=thumbnail_sizes_vocabulary,
-        default=(64, 64),
+        default=('tile', 64, 64),
     )
 
     num_of_thumb_columns = schema.Choice(
