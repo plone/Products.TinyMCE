@@ -5,7 +5,7 @@ except ImportError:
     import json
 from types import StringTypes
 
-from zope.component import getUtilitiesFor, getUtility, queryUtility, getMultiAdapter
+from zope.component import getUtilitiesFor, getUtility, queryUtility
 from zope.i18n import translate
 from zope.i18nmessageid import MessageFactory
 from zope.interface import classProvides, implements
@@ -859,10 +859,7 @@ class TinyMCE(SimpleItem):
         results['entity_encoding'] = self.entity_encoding
 
         portal = getUtility(ISiteRoot)
-        plone_portal_state = getMultiAdapter(
-                (context, request), name="plone_portal_state")
-        results['portal_url'] = plone_portal_state.portal_url()
-        #results['portal_url'] = aq_inner(portal).absolute_url()
+        results['portal_url'] = aq_inner(portal).absolute_url()
         nav_root = getNavigationRootObject(context, portal)
         results['navigation_root_url'] = nav_root.absolute_url()
 
