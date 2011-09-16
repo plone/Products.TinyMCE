@@ -51,6 +51,7 @@ then
     done
     python generate-po.py
     python compile-mo.py
+    rm $root/tinymce_language_pack.zip
 else
     echo "*** Translations already there. ***"
 fi
