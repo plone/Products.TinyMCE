@@ -593,7 +593,7 @@ function setAllAttribs(elm) {
         setAttrib(elm, 'href', href, 0);
     }
     setAttrib(elm, 'title', formAdvancedObj.title.value, 2);
-    if ((target != '_self') && (target != 'popup')) {
+    if (target != 'popup') {
         setAttrib(elm, 'target', target, 2);
     }
 

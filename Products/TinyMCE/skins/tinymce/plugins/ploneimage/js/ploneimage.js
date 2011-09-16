@@ -692,6 +692,7 @@ ImageDialog.prototype.getAbsoluteUrl = function (base, link) {
 
 ImageDialog.prototype.displayUploadPanel = function() {
     jq('#general_panel', document).width(530);
+    jq('#general_panel #searchtext', document).width(526);
     jq('#addimage_panel', document).removeClass('hide');
     jq('#details_panel', document).addClass("hide");
     jq('#internallinkcontainer input', document).attr('checked', false);
@@ -700,6 +701,7 @@ ImageDialog.prototype.displayUploadPanel = function() {
 
 ImageDialog.prototype.displayPreviewPanel = function() {
     jq('#general_panel', document).width(530);
+    jq('#general_panel #searchtext', document).width(526);
     jq('#addimage_panel', document).addClass('hide');
     jq('#details_panel', document).removeClass("hide");
     if (this.is_search_activated !== true) {
@@ -710,6 +712,7 @@ ImageDialog.prototype.displayPreviewPanel = function() {
 
 ImageDialog.prototype.hidePanels = function() {
     jq('#general_panel', document).width(790);
+    jq('#general_panel #searchtext', document).width(786);
     jq('#addimage_panel', document).addClass('hide');
     jq('#details_panel', document).addClass("hide");
 };
