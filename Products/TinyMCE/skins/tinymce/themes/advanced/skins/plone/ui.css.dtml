@@ -1,4 +1,4 @@
-/* <dtml-with base_properties> */
+/* <dtml-with base_properties><dtml-with portal_tinymce> */
 
 /* Save message */
 .mceSaveMessage {
@@ -37,7 +37,8 @@
 .ploneSkin .mceExternalClose {position:absolute; top:1px; right:0px; width:22px; height:17px; background:url(../../plugins/inlinepopups/skins/plonepopup/img/buttons.gif) -66px 0;}
 
 /* Layout */
-.ploneSkin table.mceLayout {border: none; <dtml-with portal_tinymce><dtml-if "_.string.find(editor_width,'%') != -1">width: <dtml-var editor_width> !important</dtml-if></dtml-with>}
+.ploneSkin div#text_toolbargroup { width: <dtml-if "_.string.find(toolbar_width,'%') != -1"><dtml-var toolbar_width><dtml-else><dtml-var expr="_.string.replace(toolbar_width, 'px', '')">px</dtml-if>; }
+.ploneSkin table.mceLayout {border: none; width: <dtml-if "_.string.find(editor_width,'%') != -1"><dtml-var editor_width><dtml-else><dtml-var expr="_.string.replace(editor_width, 'px', '')">px</dtml-if>!important;}
 .ploneSkin table.mceLayout td.mceToolbar {border: none; padding: 0}
 .ploneSkin table.mceLayout td.mceStatusbar {border: 1px solid #444;	border-top: 0}
 .ploneSkin table.mceToolbar, .ploneSkin tr.mceFirst .mceToolbar tr td, .ploneSkin tr.mceLast .mceToolbar tr td {border: none; margin:0; padding:0;}
@@ -243,4 +244,4 @@
 /* Fullscreen editing */
 #mce_fullscreen_container {background-color: #fff}
 
-/* </dtml-with> */
+/* </dtml-with> </dtml-with> */

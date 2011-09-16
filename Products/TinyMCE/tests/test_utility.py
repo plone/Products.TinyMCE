@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os
 
 import transaction
@@ -155,3 +156,47 @@ class UtilityTestCase(IntegrationTestCase):
             {'size': [400, 400], 'title': 'Preview', 'value': '@@images/image/preview'},
             {'size': [768, 768], 'title': 'Large', 'value': '@@images/image/large'}]
         )
+
+    def _get_config(self):
+        return {
+            'libraries_spellchecker_choice': 'browser',
+             'customplugins': '',
+             'contextmenu': False,
+             'autoresize': False,
+             'labels': {'label_paragraph': 'Paragraph',
+                      'label_styles': u'Styles with an ü',
+                      'label_plain_cell': 'Plain Cell',
+                      'label_lists': 'Lists',
+              },
+             'styles': ['a|class|y', 'foo|bar|x'],
+             'buttons': ['style', 'tablecontrol', 'forecolor', ] + ['a'] * 30,
+             'toolbar_width': '440',
+        }
+
+    def test_getPlugins(self):
+        config = self._get_config()
+        self.assertTrue('table' in self.utility.getPlugins(config))
+        self.assertFalse('contextmenu' in self.utility.getPlugins(config))
+        self.assertFalse('autoresize' in self.utility.getPlugins(config))
+
+        config['contextmenu'] = True
+        self.assertTrue('table' in self.utility.getPlugins(config))
+        self.assertTrue('contextmenu' in self.utility.getPlugins(config))
+        self.assertFalse('autoresize' in self.utility.getPlugins(config))
+
+        config['contextmenu'] = False
+        config['autoresize'] = True
+        self.assertTrue('table' in self.utility.getPlugins(config))
+        self.assertFalse('contextmenu' in self.utility.getPlugins(config))
+        self.assertTrue('autoresize' in self.utility.getPlugins(config))
+
+        config['customplugins'] = ['plugin1', 'plugin2|Title of P2']
+        self.assertTrue('plugin1,plugin2' in self.utility.getPlugins(config))
+
+    def test_getStyles(self):
+        self.utility.getStyles(self._get_config())
+        # XXX
+
+    def test_getToolbars(self):
+        toolbars = self.utility.getToolbars(self._get_config())
+        self.assertEqual(toolbars, ['style,tablecontrol,forecolor,a,a,a,a,a,a,a,a,a,a', 'a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a', 'a', ''])

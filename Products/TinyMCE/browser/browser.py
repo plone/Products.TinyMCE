@@ -142,12 +142,12 @@ class ATDProxyView(object):
             '>  ', '>')
         return xml
 
+
 class ConfigurationViewlet(ViewletBase):
     """ A viewlet which includes the TinyMCE configuration JavaScript
-    
+
     This can not be done in the portal_javascript Tool because it needs to be
     relative to the context path.
     """
-    
-    index = ViewPageTemplateFile('configuration.pt')
 
+    index = ViewPageTemplateFile('configuration.pt')
