@@ -22,11 +22,6 @@ class ITinyMCELayout(Interface):
         description=_(u"This option gives you the ability to enable/disable auto resizing the editor window depending on the content."),
         required=False)
 
-    compress = schema.Bool(
-        title=_(u"Enable compression of editor."),
-        description=_(u"This option gives you the ability to enable/disable the compression of the editor and the plugins."),
-        required=False)
-
     # TODO: add validation to assert % and px in the value
     editor_width = schema.TextLine(
         title=_(u"Editor width"),

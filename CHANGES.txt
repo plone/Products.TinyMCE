@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.2.7 (unreleased)
+1.3 (unreleased)
 ------------------
 
 - Do not give a TypeError 'Could not adapt' when trying to adapt a
@@ -19,6 +19,11 @@ HISTORY
 - Add hook to JSONDetails to allow subclasses to supplement or override the results
   [anthonygerrard]
 
+- Use TinyMCE compressor to provide editor and plugins
+  [tom_gross]
+
+- Fixed http://dev.plone.org/plone/ticket/11681
+  [tom_gross]
 
 1.2.6 (2011-05-12)
 ------------------

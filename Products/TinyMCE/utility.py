@@ -59,7 +59,6 @@ class TinyMCE(SimpleItem):
 
     resizing = FieldProperty(ITinyMCELayout['resizing'])
     autoresize = FieldProperty(ITinyMCELayout['autoresize'])
-    compress = FieldProperty(ITinyMCELayout['compress'])
     editor_width = FieldProperty(ITinyMCELayout['editor_width'])
     editor_height = FieldProperty(ITinyMCELayout['editor_height'])
     directionality = FieldProperty(ITinyMCELayout['directionality'])
