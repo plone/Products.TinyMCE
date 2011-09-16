@@ -444,9 +444,43 @@ class ITinyMCE(
     ):
     """This interface defines the Utility."""
 
-    def getContentType(self, object=None, fieldname=None):
-        """Get the content type of the field."""
+    def getContentType(object=None, fieldname=None):
+        """ Get the content type of the field.
+        """
 
-    def getConfiguration(self, context=None, field=None, request=None):
-        """Get the configuration based on the control panel settings and the field settings.
-        request can be provide for translation purpose."""
+    def getConfiguration(context=None, field=None, request=None):
+        """ Get the configuration based on the control panel and field settings.
+
+            The request can be provided for translation purpose.
+        """
+
+    def getImageScales(field=None, context=None):
+        """
+        """
+
+    def getEnabledButtons(context):
+        """
+        """
+
+    def translateButtonsFromKupu(context, buttons):
+        """
+        """
+
+    def getValidElements():
+        """ Return valid (X)HTML elements and their attributes.
+        """
+
+    def getPlugins(config):
+        """ Return a comma seperated list of TinyMCE plugins
+        """
+
+    def getStyles(config):
+        """ Return a list of styles for the use with TinyMCE
+        """
+
+    def getToolbars(config):
+        """ Get toolbar buttons for the editor
+
+            Calculate the number of toolbar rows from the length
+            of the buttons.
+        """

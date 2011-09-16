@@ -576,6 +576,8 @@ class TinyMCE(SimpleItem):
 
     security.declarePrivate('getPlugins')
     def getPlugins(self, config):
+        """ See ITinyMCE interface 
+        """
         plugins = "pagebreak,table,save,advhr,emotions,insertdatetime,preview,media,searchreplace,print,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups,plonestyle,tabfocus,definitionlist,ploneinlinestyles"
         sp = self.libraries_spellchecker_choice
         sp = sp != "browser" and sp or ""
@@ -597,6 +599,8 @@ class TinyMCE(SimpleItem):
 
     security.declarePrivate('getStyles')
     def getStyles(self, config):
+        """ See ITinyMCE interface 
+        """
         h = {'Text': [], 'Selection': [], 'Tables': [], 'Lists': [], 'Print': []}
         styletype = ""
 
