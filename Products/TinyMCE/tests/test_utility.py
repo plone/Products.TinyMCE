@@ -174,24 +174,22 @@ class UtilityTestCase(IntegrationTestCase):
         }
 
     def test_getPlugins(self):
-        config = self._get_config()
-        self.assertTrue('table' in self.utility.getPlugins(config))
-        self.assertFalse('contextmenu' in self.utility.getPlugins(config))
-        self.assertFalse('autoresize' in self.utility.getPlugins(config))
+        self.assertTrue('table' in self.utility.getPlugins())
+        self.assertTrue('contextmenu' in self.utility.getPlugins())
+        self.assertFalse('autoresize' in self.utility.getPlugins())
 
-        config['contextmenu'] = True
-        self.assertTrue('table' in self.utility.getPlugins(config))
-        self.assertTrue('contextmenu' in self.utility.getPlugins(config))
-        self.assertFalse('autoresize' in self.utility.getPlugins(config))
+        self.utility.contextmenu = False
+        self.assertTrue('table' in self.utility.getPlugins())
+        self.assertFalse('contextmenu' in self.utility.getPlugins())
+        self.assertFalse('autoresize' in self.utility.getPlugins())
 
-        config['contextmenu'] = False
-        config['autoresize'] = True
-        self.assertTrue('table' in self.utility.getPlugins(config))
-        self.assertFalse('contextmenu' in self.utility.getPlugins(config))
-        self.assertTrue('autoresize' in self.utility.getPlugins(config))
+        self.utility.autoresize = True
+        self.assertTrue('table' in self.utility.getPlugins())
+        self.assertFalse('contextmenu' in self.utility.getPlugins())
+        self.assertTrue('autoresize' in self.utility.getPlugins())
 
-        config['customplugins'] = ['plugin1', 'plugin2|Title of P2']
-        self.assertTrue('plugin1,plugin2' in self.utility.getPlugins(config))
+        self.utility.customplugins = u'plugin1\nplugin2|Title of P2'
+        self.assertTrue('plugin1,plugin2' in self.utility.getPlugins())
 
     def test_getStyles(self):
         self.utility.getStyles(self._get_config())

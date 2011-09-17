@@ -27,3 +27,12 @@ def thumbnail_sizes_vocabulary(context):
         terms.append(SimpleVocabulary.createTerm(tuple((name,) + size), str(name), u"%s %s" % (name, size)))
     return SimpleVocabulary(terms)
 directlyProvides(thumbnail_sizes_vocabulary, IContextSourceBinder)
+
+def plugins_vocabulary(context):
+    """ A vocabulary containing all the allowed plugins for TinyMCE
+    """
+    from Products.TinyMCE.interfaces.utility import DEFAULT_PLUGINS
+    plugins = DEFAULT_PLUGINS[:]
+    plugins.sort()
+    return SimpleVocabulary.fromValues(plugins)
+directlyProvides(plugins_vocabulary, IContextSourceBinder)

@@ -3,11 +3,17 @@ from zope.interface import Interface
 from zope.i18nmessageid import MessageFactory
 from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
 
-from Products.TinyMCE.vocabularies import shortcuts_vocabulary, thumbnail_sizes_vocabulary
+from Products.TinyMCE.vocabularies import (
+        shortcuts_vocabulary, thumbnail_sizes_vocabulary, plugins_vocabulary)
 
 
 _ = MessageFactory('plone.tinymce')
 
+DEFAULT_PLUGINS = ['advhr', 'definitionlist', 'directionality', 'emotions',
+ 'fullscreen', 'inlinepopups', 'insertdatetime', 'media', 'nonbreaking',
+ 'noneditable', 'pagebreak', 'paste', 'ploneimage', 'plonelink',
+ 'ploneinlinestyles', 'plonestyle', 'preview', 'print', 'save',
+ 'searchreplace', 'tabfocus', 'table', 'visualchars', 'xhtmlxtras']
 
 class ITinyMCELayout(Interface):
     """This interface defines the layout properties."""
@@ -388,6 +394,16 @@ class ITinyMCEResourceTypes(Interface):
         description=_(u"Enter a list of content types which can be used as images. Format is one contenttype per line."),
         required=False)
 
+    plugins = schema.List(
+        title=_("label_tinymce_plugins", default=u"Editor Plugins"),
+        description=_("help_tinymce_plugins", default=(
+            u"Enter a list of custom plugins which will be loaded in the "
+            u"editor. Format is pluginname or pluginname|location, one per "
+            u"line.")),
+        value_type=schema.Choice(source=plugins_vocabulary,),
+        default=DEFAULT_PLUGINS,
+        required=False)
+ 
     customplugins = schema.Text(
         title=_(u"Custom Plugins"),
         description=_(u"Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."),
@@ -470,7 +486,7 @@ class ITinyMCE(
         """ Return valid (X)HTML elements and their attributes.
         """
 
-    def getPlugins(config):
+    def getPlugins():
         """ Return a comma seperated list of TinyMCE plugins
         """
 

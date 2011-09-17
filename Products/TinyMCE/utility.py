@@ -148,6 +148,7 @@ class TinyMCE(SimpleItem):
     containsanchors = FieldProperty(ITinyMCEResourceTypes['containsanchors'])
     linkable = FieldProperty(ITinyMCEResourceTypes['linkable'])
     imageobjects = FieldProperty(ITinyMCEResourceTypes['imageobjects'])
+    plugins = FieldProperty(ITinyMCEResourceTypes['plugins'])
     customplugins = FieldProperty(ITinyMCEResourceTypes['customplugins'])
 
     link_shortcuts = FieldProperty(ITinyMCEContentBrowser['link_shortcuts'])
@@ -575,27 +576,27 @@ class TinyMCE(SimpleItem):
         return valid_elements
 
     security.declarePrivate('getPlugins')
-    def getPlugins(self, config):
+    def getPlugins(self):
         """ See ITinyMCE interface 
         """
-        plugins = "pagebreak,table,save,advhr,emotions,insertdatetime,preview,media,searchreplace,print,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups,plonestyle,tabfocus,definitionlist,ploneinlinestyles"
+        plugins = self.plugins[:]
         sp = self.libraries_spellchecker_choice
-        sp = sp != "browser" and sp or ""
-        if sp:
-            plugins += ',' + sp
+        if sp and sp != "browser":
+            plugins.append(sp)
 
-        for plugin in config['customplugins']:
-            if '|' not in plugin:
-                plugins += ',' + plugin
-            else:
-                plugins += ',' + plugin.split('|')[0]
+        if self.customplugins is not None:
+            for plugin in self.customplugins.splitlines():
+                if '|' not in plugin:
+                    plugins.append(plugin)
+                else:
+                    plugins.append(plugin.split('|')[0])
 
-        if config['contextmenu']:
-            plugins += ',contextmenu'
+        if self.contextmenu:
+            plugins.append('contextmenu')
 
-        if config['autoresize']:
-            plugins += ',autoresize'
-        return plugins
+        if self.autoresize:
+            plugins.append('autoresize')
+        return ','.join(plugins)
 
     security.declarePrivate('getStyles')
     def getStyles(self, config):
@@ -855,9 +856,6 @@ class TinyMCE(SimpleItem):
         else:
             results['rooted'] = False
 
-        results['customplugins'] = []
-        if self.customplugins is not None:
-            results['customplugins'].extend(self.customplugins.split('\n'))
 
         results['entity_encoding'] = self.entity_encoding
 
@@ -939,7 +937,7 @@ class TinyMCE(SimpleItem):
         results['theme_advanced_path'] = False
         results['theme_advanced_toolbar_align'] = "left"
 
-        results['plugins'] = self.getPlugins(results)
+        results['plugins'] = self.getPlugins()
         results['theme_advanced_styles'] = self.getStyles(results)
         results['theme_advanced_buttons1'], results['theme_advanced_buttons2'], \
             results['theme_advanced_buttons3'], results['theme_advanced_buttons4'] = self.getToolbars(results)
