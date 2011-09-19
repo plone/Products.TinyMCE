@@ -91,13 +91,14 @@ ImageDialog.prototype.init = function () {
     // handle different folder listing view types
     jq('#general_panel .legend a', document).click(function (e) {
         e.preventDefault();
+        self.editing_existing_image = true;
         jq('#general_panel .legend a', document).removeClass('current');
         jq(this).addClass('current');
         // refresh listing with new view settings
         self.getFolderListing(self.folderlisting_context_url, self.folderlisting_method);
     });
 
-    if (!this.editor.settings.allow_captioned_images) {
+    if (this.editor.settings.allow_captioned_images === false) {
         jq('#caption', document).parent().parent().hide();
     }
     if (this.editor.settings.rooted === true) {
@@ -105,7 +106,7 @@ ImageDialog.prototype.init = function () {
     }
 
     if (selected_node.get(0).tagName && selected_node.get(0).tagName.toUpperCase() === 'IMG') {
-        /** The image dialog was opened to edit an existing image element. **/
+        // The image dialog was opened to edit an existing image element. 
         this.editing_existing_image = true;
 
         // Manage the CSS classes defined in the <img/> element. We handle the
@@ -490,7 +491,7 @@ ImageDialog.prototype.getFolderListing = function (context_url, method) {
                                     '<div class="item list ' + (i % 2 === 0 ? 'even' : 'odd') + '" title="' + item.description + '">',
                                         '<input href="' + item.url + '" ',
                                             'type="radio" class="noborder" style="margin: 0; width: 16px" name="internallink" value="',
-                                            self.editor.settings.link_using_uids ? 'resolveuid/' + item.uid : item.url,
+                                            'resolveuid/' + item.uid,
                                             '"/> ',
                                         '<img src="' + item.icon + '" /> ',
                                         '<span class="contenttype-' + item.normalized_type + '">' + item.title + '</span>',
@@ -510,7 +511,7 @@ ImageDialog.prototype.getFolderListing = function (context_url, method) {
                                             '<p>' + item.title + '</p>',
                                             '<input href="' + item.url + '" ',
                                                 'type="radio" class="noborder" name="internallink" value="',
-                                                self.editor.settings.link_using_uids ? 'resolveuid/' + item.uid : item.url,
+                                                'resolveuid/' + item.uid,
                                                 '"/> ',
                                         '</div>',
                                     '</div>'
@@ -601,7 +602,10 @@ ImageDialog.prototype.getFolderListing = function (context_url, method) {
             // Make the image upload form upload the image into the current container.
             jq('#upload_form', document).attr('action', context_url + '/tinymce-upload');
 
-            // Select image if we are updating existing one
+            // Select image if:
+            // a) we are updating existing one
+            // b) we are switching view mode
+            // c) we are uploading an image
             if (self.editing_existing_image) {
                 self.editing_existing_image = false;
                 if (self.current_link.indexOf('resolveuid/') > -1) {
@@ -726,6 +730,7 @@ tinyMCEPopup.onInit.add(imgdialog.init, imgdialog);
  */
 var uploadOk = function uploadOk(current_link) {
     imgdialog.current_link = current_link;
+    imgdialog.editing_existing_image = true;
     imgdialog.getFolderListing(imgdialog.getParentUrl(current_link), 'tinymce-jsonimagefolderlisting');
     imgdialog.displayPreviewPanel();
 };
