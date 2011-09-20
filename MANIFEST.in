@@ -1,2 +1,6 @@
 recursive-include Products *
+recursive-include docs *
+include CHANGES.txt
+include RELEASE.txt
+include README.txt
 global-exclude *pyc
