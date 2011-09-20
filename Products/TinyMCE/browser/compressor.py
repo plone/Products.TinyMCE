@@ -8,6 +8,7 @@ Licensed under the terms of the MIT License (see LICENSE.txt)
 """
 
 from datetime import datetime
+import os.path
 
 from zope.component import queryUtility
 from Products.Five import BrowserView
@@ -16,6 +17,11 @@ from Products.ResourceRegistries.tools.packer import JavascriptPacker
 
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 
+try:
+    import simplejson as json
+    json  # Pyflakes
+except ImportError:
+    import json
 
 class TinyMCECompressorView(BrowserView):
     tiny_mce_gzip = ViewPageTemplateFile('tiny_mce_gzip.js')
@@ -31,13 +37,13 @@ class TinyMCECompressorView(BrowserView):
         response.headers["Content-Type"] = "text/javascript"
         base_url = '/'.join([self.context.absolute_url(), self.__name__])
 
-        if not isJS:
-            config = queryUtility(ITinyMCE).getConfiguration(
+        config = queryUtility(ITinyMCE).getConfiguration(
                 context=self.context,
                 request=self.request,
                 script_url=base_url,
             )
 
+        if not isJS:
             tiny_mce_gzip = self.tiny_mce_gzip(tinymce_json_config=config)
             return JavascriptPacker('full').pack(tiny_mce_gzip)
 
@@ -53,6 +59,17 @@ class TinyMCECompressorView(BrowserView):
                 "tinymce.baseURL='%s';tinymce._init();" % base_url)
         ]
 
+        # add custom plugins
+        config = json.loads(config)
+        customplugins = {}
+        for plugin in config['customplugins']:
+            if '|' in plugin:
+                name, path = plugin.split('|', 1)
+                customplugins[name] = path
+
+            content.append('tinymce.PluginManager.load("%s", "%s/%s");' % (
+                name, config['portal_url'], path));
+
         # Add core languages
         # TODO: we have our own translations
         for lang in languages:
@@ -65,12 +82,20 @@ class TinyMCECompressorView(BrowserView):
             for lang in languages:
                 content.append(traverse("themes/%s/langs/%s.js" % (theme, lang)))
 
+
         # Add plugins
         for plugin in plugins:
-            content.append(traverse("plugins/%s/editor_plugin%s.js" % (plugin, suffix)))
+            if plugin in customplugins:
+                script = customplugins[plugin]
+                path, bn = os.path.split(customplugins[plugin])
+            else:
+                script = "plugins/%s/editor_plugin%s.js" % (plugin, suffix)
+                path = 'plugins/%s' % plugin
+
+            content.append(traverse(script))
 
             for lang in languages:
-                content.append(traverse("plugins/%s/langs/%s.js" % (plugin, lang)))
+                content.append(traverse("%s/langs/%s.js" % (path, lang)))
 
         # TODO: add aditional javascripts in plugins
 

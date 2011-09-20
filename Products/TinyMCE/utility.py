@@ -586,10 +586,10 @@ class TinyMCE(SimpleItem):
 
         if self.customplugins is not None:
             for plugin in self.customplugins.splitlines():
-                if '|' not in plugin:
+                if '|' in plugin:
+                    plugin = plugin.split('|', 1)[0]
+                if plugin not in plugins:
                     plugins.append(plugin)
-                else:
-                    plugins.append(plugin.split('|')[0])
 
         if self.contextmenu:
             plugins.append('contextmenu')
@@ -786,6 +786,8 @@ class TinyMCE(SimpleItem):
         # Get valid html elements
         valid_elements = self.getValidElements()
         results['valid_elements'] = ','.join(["%s[%s]" % (key, '|'.join(value)) for key, value in valid_elements.iteritems()])
+
+	results['customplugins'] = self.customplugins.splitlines()
 
         # Set toolbar_location
         if self.toolbar_external:
