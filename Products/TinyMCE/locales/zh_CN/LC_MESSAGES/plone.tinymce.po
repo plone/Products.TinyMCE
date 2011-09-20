@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TinyMCE\n"
 "POT-Creation-Date: 2011-06-21 13:31+0000\n"
-"PO-Revision-Date: 2011-08-19 18:00+0800\n"
+"PO-Revision-Date: 2011-09-20 16:11+0800\n"
 "Last-Translator: Jian Aijun <jianaijun@gmail.com>\n"
 "Language-Team: plone <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -401,30 +401,30 @@ msgstr "电子邮件"
 
 #: ../interfaces/utility.py:395
 msgid "Named"
-msgstr ""
+msgstr "命名"
 
 #: ../utility.py:634
 msgid "No anchors in this page"
-msgstr ""
+msgstr "此页面无锚点"
 
 #: ../utility.py:633
 msgid "No items in this folder"
-msgstr ""
+msgstr "此文件夹无条目"
 
 #: ../utility.py:625
 msgid "Normal paragraph"
-msgstr ""
+msgstr "普通段落"
 
 #: ../adapters/Upload.py:88
 msgid "Not allowed to upload a file of this type to this folder"
-msgstr ""
+msgstr "不允许将这种类型的文件上传到此文件夹"
 
 msgid "Numbers"
-msgstr ""
+msgstr "数字"
 
 #: ../interfaces/utility.py:395
 msgid "Numeric"
-msgstr ""
+msgstr "数字的"
 
 msgid "Odd row"
 msgstr "奇数行"
@@ -467,11 +467,11 @@ msgid "Print"
 msgstr "打印"
 
 msgid "Pull-quote"
-msgstr ""
+msgstr "引用"
 
 #: ../interfaces/utility.py:395
 msgid "Raw"
-msgstr ""
+msgstr "原始格式"
 
 #: ../interfaces/utility.py:106
 msgid "Redo"
@@ -516,11 +516,11 @@ msgstr "TinyMCE 可视化编辑器设置。"
 
 #: ../interfaces/utility.py:254
 msgid "Spellchecker"
-msgstr ""
+msgstr "拼写检查"
 
 #: ../interfaces/utility.py:295
 msgid "Spellchecker plugin to use"
-msgstr ""
+msgstr "使用拼写检查插件"
 
 msgid "Square"
 msgstr "方块"
@@ -545,15 +545,15 @@ msgstr "副标题"
 
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:124
 msgid "Subject"
-msgstr ""
+msgstr "主题"
 
 #: ../interfaces/utility.py:138
 msgid "Subscript"
-msgstr ""
+msgstr "下标"
 
 #: ../interfaces/utility.py:142
 msgid "Superscript"
-msgstr ""
+msgstr "上标"
 
 #: ../interfaces/utility.py:190
 msgid "Table controls"
@@ -569,7 +569,7 @@ msgstr "表格"
 
 #: ../utility.py:628
 msgid "Text"
-msgstr ""
+msgstr "文本"
 
 #: ../interfaces/utility.py:296
 msgid "This option allows you to choose the spellchecker for TinyMCE. If you want the spellchecker button to be visible, make sure it is enabled in the toolbar settings."
@@ -638,7 +638,7 @@ msgstr "全屏"
 
 #: ../interfaces/utility.py:266
 msgid "Toggle guidelines/invisible objects"
-msgstr ""
+msgstr "开启/关闭 辅助线/不可见对象"
 
 #: ../browser/controlpanel.py:25
 msgid "Toolbar"
@@ -667,7 +667,7 @@ msgstr "无序列表"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:51
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:68
 msgid "Up one level"
-msgstr ""
+msgstr "上一级"
 
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:129
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:165
@@ -687,7 +687,7 @@ msgstr "大写罗马数字"
 
 #: ../interfaces/utility.py:270
 msgid "Visual control characters on/off"
-msgstr ""
+msgstr "打开/关闭 可视化控制字符"
 
 #: ../interfaces/utility.py:363
 msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
@@ -695,7 +695,7 @@ msgstr ""
 
 #: ../interfaces/utility.py:33
 msgid "Writing direction"
-msgstr "语言方向"
+msgstr "文字方向"
 
 #: ../adapters/Upload.py:92
 msgid "You do not have permission to upload files in this folder"
@@ -713,7 +713,7 @@ msgstr ""
 
 #: ../interfaces/utility.py:305
 msgid "ieSpell (free for personal use)"
-msgstr ""
+msgstr "ieSpell （个人版免费使用）"
 
 #. Default: "A list of strings which the \"After the Deadline\"spellchecker should ignore. Note: This option is only applicable when the appropriate spellchecker has been chosen above."
 #: ../interfaces/utility.py:314
