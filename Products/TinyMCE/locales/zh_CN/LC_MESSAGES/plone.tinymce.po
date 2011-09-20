@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TinyMCE\n"
 "POT-Creation-Date: 2011-06-21 13:31+0000\n"
-"PO-Revision-Date: 2011-09-20 16:11+0800\n"
+"PO-Revision-Date: 2011-09-20 16:25+0800\n"
 "Last-Translator: Jian Aijun <jianaijun@gmail.com>\n"
 "Language-Team: plone <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -187,7 +187,7 @@ msgstr "启用上下文菜单"
 
 #: ../interfaces/utility.py:13
 msgid "Enable resizing the editor window."
-msgstr "启用调整编辑器窗口大小"
+msgstr "启用调整编辑器窗口大小。"
 
 #: ../interfaces/utility.py:378
 msgid "Enter a list of content types which can be linked. Format is one contenttype per line."
@@ -699,7 +699,7 @@ msgstr "文字方向"
 
 #: ../adapters/Upload.py:92
 msgid "You do not have permission to upload files in this folder"
-msgstr ""
+msgstr "您没有在此文件夹中上传文件的权限"
 
 #. Default: "The URL of the \"After the Deadline\" grammar and spell checking server. The default value is the public server, but ideally you should download and install your own and specify its address here."
 #: ../interfaces/utility.py:338
