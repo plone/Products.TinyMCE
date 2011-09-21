@@ -11,9 +11,10 @@ _ = MessageFactory('plone.tinymce')
 
 DEFAULT_PLUGINS = ['advhr', 'definitionlist', 'directionality', 'emotions',
  'fullscreen', 'inlinepopups', 'insertdatetime', 'media', 'nonbreaking',
- 'noneditable', 'pagebreak', 'paste', 'ploneimage', 'plonelink',
+ 'noneditable', 'pagebreak', 'paste', 'plonebrowser',
  'ploneinlinestyles', 'plonestyle', 'preview', 'print', 'save',
  'searchreplace', 'tabfocus', 'table', 'visualchars', 'xhtmlxtras']
+
 
 class ITinyMCELayout(Interface):
     """This interface defines the layout properties."""
@@ -403,7 +404,7 @@ class ITinyMCEResourceTypes(Interface):
         value_type=schema.Choice(source=plugins_vocabulary,),
         default=DEFAULT_PLUGINS,
         required=False)
- 
+
     customplugins = schema.Text(
         title=_(u"Custom Plugins"),
         description=_(u"Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."),
