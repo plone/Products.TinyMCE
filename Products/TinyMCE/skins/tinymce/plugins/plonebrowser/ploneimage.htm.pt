@@ -1,0 +1,330 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" i18n:domain="tinymce"
+	tal:define="portal_url context/portal_url; portal_tinymce context/portal_tinymce;">
+<head>
+  <title>Insert/Edit</title>
+  <script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+  <script type="text/javascript" src="../../utils/mctabs.js"></script>
+  <script type="text/javascript" src="../../utils/form_utils.js"></script>
+  <script type="text/javascript" src="js/ploneimage.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/ploneimage.css" />
+  <link rel="stylesheet" type="text/css" tal:attributes="href string:${portal_url}/portal_css/columns.css" />
+</head>
+<body id="ploneimage">
+  <div class="dialog-wrapper" id="content">
+		<div id="linktype_panel" class="column hide">
+			<h2 i18n:translate="">Type of link</h2>
+			<div id="linktype">
+				<p id="internal_link" class="current">
+					<img src="img/internal_link.png" />
+					<a href="#internal" i18n:translate="">Internal</a>
+				</p>
+				<p id="external_link">
+					<img src="img/external_link.png" />
+					<a href="#external" i18n:translate="">External</a>
+				</p>
+				<p id="email_link">
+					<img src="img/email_link.png" />
+					<a href="#email" i18n:translate="">Email</a>
+				</p>
+				<p id="anchor_link">
+					<img src="img/anchor_link.png" />
+					<a href="#anchor" i18n:translate="">Anchor</a>
+				</p>
+			</div>
+			<a id="advanced_options" href="#">
+				<strong>Advanced options &raquo;</strong>
+			</a>
+	  </div>
+		<div id="browseimage_panel" class="column">
+			<h2></h2>
+			<div class="formHelp">
+				<strong i18n:translate="">You are here:</strong>
+				<span id="internalpath"></span>
+			</div>
+			<div id="general_panel" class="column">
+				<div class="field">
+					<div class="widget">
+						<input type="text" name="searchtext" id="searchtext" title="Search Site" placeholder="Search Site" value="" i18n:attributes="placeholder, title"/>
+					</div>
+				</div>
+				<div id="internallinkcontainer" class="widget radioscrolllist input-border"></div>
+				<p class="legend">
+					<img src="img/display_list.png" /> <a id="listview" href="" i18n:translate="">List</a>
+					<img src="img/display_thumbs.png" /> <a id="thumbview" href="" class="current" i18n:translate="">Thumbnails</a>
+				</p>
+			</div>
+		</div>
+		<div id="details_panel" class="column hide">
+			<h2 i18n:translate="ploneimage_dlg_preview"></h2>
+			<div class="widget radioscrolllist input-border">
+				<div class="field">
+					<div class="widget">
+						<div id="previewimagecontainer">
+						</div>
+					</div>
+				</div>
+				<div class="field">
+					<label id="titlelabel" i18n:translate="">Title</label>
+					<div class="widget">
+						<p id="titledetails"></p>
+					</div>
+				</div>
+
+				<div class="field">
+					<label id="descriptionlabel" for="description" i18n:translate="">Description</label>
+					<div class="widget">
+						<input id="description_href" name="description_href" type="hidden" value="" />
+						<input id="description" name="description" type="text" value="" size="20" />
+					</div>
+				</div>
+
+				<div class="field">
+					<div class="widget">
+						<input type="checkbox" name="caption" id="caption"/> <label for="caption" i18n:domain="plone.tinymce" i18n:translate="">Caption</label>
+					</div>
+				</div>
+
+				<div class="field">
+					<label id="alignlabel" for="align" i18n:translate="ploneimage_dlg_align"></label>
+					<div class="widget">
+						<select id="classes" name="classes">
+							<option value="image-inline" i18n:domain="plone.tinymce" i18n:translate="">Inline</option>
+							<option value="image-left" i18n:translate="ploneimage_dlg_align_left"></option>
+							<option value="image-right" i18n:translate="ploneimage_dlg_align_right"></option>
+						</select>
+					</div>
+				</div>
+
+				<div class="field">
+					<label id="dimensionslabel" for="dimensions" i18n:translate="ploneimage_dlg_dimensions"></label>
+					<div class="widget">
+						<select id="dimensions" name="dimensions">
+							<option tal:repeat="item portal_tinymce/getImageScales" tal:attributes="value item/value"
+								tal:content="item/title" />
+						</select>
+					</div>
+				</div>
+
+				<div class="field">
+					<label id="pageanchorlabel" for="pageanchor"  i18n:translate="plonelink_dlg_anchor_names"></label>
+					<div class="widget" id="pageanchorcontainer" >
+						<select id="pageanchor" name="pageanchor">
+							<option value="" i18n:translate="">top of page (default)</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="addimage_panel" class="column hide">
+			 <h2></h2>
+			 <form name="upload_form" id="upload_form" method="post" target="upload_iframe" enctype="multipart/form-data">
+				 <div class="field">
+						 <label for="uploadtitle" i18n:translate="ploneimage_dlg_title"></label>
+						 <div class="widget">
+										 <input type="text" name="uploadtitle" id="uploadtitle" value="" />
+						 </div>
+				 </div>
+
+				 <div class="field">
+						 <label for="uploaddescription" i18n:domain="plone.tinymce" i18n:translate="">Description</label>
+						 <div class="widget">
+										 <textarea wrap="soft" cols="10" rows="6" id="uploaddescription" name="uploaddescription"></textarea>
+						 </div>
+				 </div>
+
+				 <div class="field">
+						 <label for="uploadfile" i18n:domain="plone.tinymce" i18n:translate="">Upload File</label>
+						 <div class="widget">
+										 <input type="file" name="uploadfile" id="uploadfile" />
+						 </div>
+				 </div>
+
+				 <div class="field hide">
+						 <label for="uploadurl" i18n:domain="plone.tinymce" i18n:translate="">or External URL</label>
+						 <div class="widget">
+										 <input type="text" name="uploadurl" id="uploadurl" />
+						 </div>
+				 </div>
+
+				 <input type="button" id="uploadbutton" class="context plonebutton" name="uploadbutton" value="Begin upload"
+								 i18n:attributes="value" />
+			 </form>
+			 <iframe width="0" scrolling="off" height="0" frameborder="0" id="upload_iframe" name="upload_iframe" src="javascript:"></iframe>
+		</div>
+
+		<!-- link panels -->
+		<div id="external_panel" class="column hide">
+			<h2 i18n:domain="plone.tinymce" i18n:translate="">External link</h2>
+			<div class="field">
+				<label for="externalurl" i18n:translate="plonelink_dlg_url"></label>
+				<div class="widget">
+					<select id="externalurlprefix" name="externalurlprefix">
+						<option value="http://">http://</option>
+						<option value="https://">https://</option>
+						<option value="ftp://">ftp://</option>
+					</select>
+					<input type="text" name="externalurl" id="externalurl" value="" size="30"/>
+					<input type="button" id="previewexternalurl" class="context" name="previewexternalurl" value="Preview" i18n:domain="plone.tinymce" i18n:attributes="value" />
+				</div>
+			</div>
+
+			<div class="field">
+				<label for="preview" i18n:translate="preview_preview_desc"></label>
+				<div class="widget">
+					<iframe id="previewexternal" width="100%" height="360" frameborder="0" wrap="soft" dir="ltr" src="" class="input-border" name="previewexternal"></iframe>
+				</div>
+			</div>
+		</div>
+
+		<div id="email_panel" class="column hide">
+			<h2 i18n:domain="plone.tinymce" i18n:translate="">Email</h2>
+			<div class="field">
+				<label for="mailaddress" i18n:domain="plone.tinymce" i18n:translate="">E-mail</label>
+				<div class="widget">
+					<input type="text" name="mailaddress" id="mailaddress" value="" size="40" />
+				</div>
+			</div>
+
+			<div class="field">
+				<label for="mailsubject" i18n:domain="plone.tinymce" i18n:translate="">Subject</label>
+				<div class="widget">
+					<input type="text" name="mailsubject" id="mailsubject" value="" size="40" />
+				</div>
+			</div>
+		</div>
+
+		<div id="anchor_panel" class="column hide">
+			<h2 i18n:domain="plone.tinymce" i18n:translate="">Link to anchor</h2>
+			<div class="field">
+				<label i18n:translate="plonelink_dlg_anchor_names"></label>
+				<div id="anchorlinkcontainer" class="widget radioscrolllist input-border">
+				</div>
+			</div>
+		</div>
+
+		<div id="advanced_panel" class="column hide">
+			<fieldset class="formPanel">
+				<form>
+					<div class="field">
+						<label id="targetlistlabel" for="targetlist" i18n:translate="plonelink_dlg_target"></label>
+						<div class="widget">
+							<select id="targetlist" name="targetlist">
+								<option value="_self" i18n:translate="plonelink_dlg_target_same"></option>
+								<option value="_blank" i18n:translate="plonelink_dlg_target_blank"></option>
+								<option value="_parent" i18n:translate="plonelink_dlg_target_parent"></option>
+								<option value="_top" i18n:translate="plonelink_dlg_target_top"></option>
+								<!--option value="popup" i18n:translate="plonelink_dlg_popup"></option-->
+							</select>
+						</div>
+					</div>
+
+					<fieldset id="popup_panel" class="hide">
+						<legend i18n:translate="plonelink_dlg_popup"></legend>
+						<div class="column">
+							<div class="field">
+								<label for="popupname" i18n:translate="plonelink_dlg_popup_name"></label>
+								<div class="widget">
+									<input type="text" name="popupname" id="popupname" value="" size="20" />
+								</div>
+							</div>
+
+							<div class="field">
+								<label i18n:translate="plonelink_dlg_popup_size"></label>
+								<div class="widget">
+									<input type="text" id="popupwidth" name="popupwidth" value="" size="4" /> x
+									<input type="text" id="popupheight" name="popupheight" value="" size="4" /> px
+								</div>
+							</div>
+
+							<div class="field">
+								<label i18n:translate="plonelink_dlg_popup_position"></label>
+								<div class="widget">
+									<input type="text" id="popupleft" name="popupleft" value="" size="4" /> /
+									<input type="text" id="popuptop" name="popuptop" value="" size="4" /> (c / c = center)
+								</div>
+							</div>
+						</div>
+
+						<div class="column">
+							<div class="field">
+								<div class="widget">
+									<input type="checkbox" id="popuplocation" name="popuplocation" class="checkbox" />
+									<label id="popuplocationlabel" for="popuplocation" i18n:translate="plonelink_dlg_popup_location"></label>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="widget">
+									<input type="checkbox" id="popupscrollbars" name="popupscrollbars" class="checkbox" />
+									<label id="popupscrollbarslabel" for="popupscrollbars" i18n:translate="plonelink_dlg_popup_scrollbars"></label>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="widget">
+									<input type="checkbox" id="popupmenubar" name="popupmenubar" class="checkbox" />
+									<label id="popupmenubarlabel" for="popupmenubar" i18n:translate="plonelink_dlg_popup_menubar"></label>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="widget">
+									<input type="checkbox" id="popupresizable" name="popupresizable" class="checkbox" />
+									<label id="popupresizablelabel" for="popupresizable" i18n:translate="plonelink_dlg_popup_resizable"></label>
+								</div>
+							</div>
+						</div>
+
+						<div class="column">
+							<div class="field">
+								<div class="widget">
+									<input type="checkbox" id="popuptoolbar" name="popuptoolbar" class="checkbox" />
+									<label id="popuptoolbarlabel" for="popuptoolbar" i18n:translate="plonelink_dlg_popup_toolbar"></label>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="widget">
+									<input type="checkbox" id="popupdependent" name="popupdependent" class="checkbox" />
+									<label id="popupdependentlabel" for="popupdependent" i18n:translate="plonelink_dlg_popup_dependent"></label>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="widget">
+									<input type="checkbox" id="popupstatus" name="popupstatus" class="checkbox" />
+									<label id="popupstatuslabel" for="popupstatus" i18n:translate="plonelink_dlg_popup_statusbar"></label>
+								</div>
+							</div>
+
+							<div class="field">
+								<div class="widget">
+									<input type="checkbox" id="popupreturn" name="popupreturn" class="checkbox" checked="checked" />
+									<label id="popupreturnlabel" for="popupreturn" i18n:translate="plonelink_dlg_popup_return"></label>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+
+					<div class="field">
+						<label for="title" i18n:domain="plone.tinymce" i18n:translate="">Title</label>
+						<div class="widget">
+							<input type="text" name="title" id="title" value="" size="30" />
+						</div>
+					</div>
+				</form>
+			</fieldset>
+		</div>
+	
+		<div class="visualClear"><!-- --></div>
+		<form action="#" id="action_form">
+			<div class="mceActionPanel">
+				<input type="submit" id="insert" class="context plonebutton" name="insert" i18n:attributes="value common_insert" />
+				<input type="button" id="upload" class="context plonebutton" name="upload" i18n:attributes="value" value="Upload into current folder" />
+				<input type="button" id="cancel" class="standalone plonebutton" name="cancel" i18n:attributes="value common_cancel" />
+			</div>
+		</form>
+  </div>
+</body>
+</html>

@@ -52,8 +52,13 @@ class TinyMCEBrowserView(BrowserView):
         object = IJSONFolderListing(self.context, None)
         if object is None:
             return ''
-        results = object.getListing(linkable_portal_types, rooted,
-                                    document_base_url, 'File')
+        results = object.getListing(
+            linkable_portal_types,
+            rooted,
+            document_base_url,
+            'File',
+            utility.imageobjects.split('\n'),
+        )
         return results
 
     def jsonImageFolderListing(self, rooted, document_base_url):
@@ -66,8 +71,13 @@ class TinyMCEBrowserView(BrowserView):
         object = IJSONFolderListing(self.context, None)
         if object is None:
             return ''
-        results = object.getListing(image_portal_types, rooted,
-                                    document_base_url, 'Image')
+        results = object.getListing(
+            image_portal_types,
+            rooted,
+            document_base_url,
+            'Image',
+            utility.imageobjects.split('\n'),
+        )
         return results
 
     def jsonLinkableSearch(self, searchtext):

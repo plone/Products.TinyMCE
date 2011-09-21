@@ -1,26 +1,27 @@
 #ploneimage .formHelp { height: 2em; }
 #ploneimage .field { margin-bottom: 0; }
 #ploneimage p { margin-bottom: 0; }
-#ploneimage .formHelp { margin: 0};
-#general_panel { width: 790px }
-#internallinkcontainer { width: 100%; height: 310px;  }
+#ploneimage .formHelp { margin: 0}
 #details_panel, #addimage_panel { width: 230px; margin-left: 7px }
 #details_panel h2 { margin-bottom: 26px }
 #addimage_panel h2 { margin-bottom: 6px }
 #addimage_panel #uploadtitle { height: 20px; margin-bottom: 2px;}
 #addimage_panel #uploaddescription { padding-left: 4px; }
-#details_panel div.radioscrolllist { height: 333px; padding: 4px }
+#details_panel div.radioscrolllist { height: 347px; padding: 4px }
 #addimage_panel input, #addimage_panel textarea { width: 100%; }
 #addimage_panel #upload_iframe { display: none; }
 #searchtext { width: 100%; height: 20px; border: 1px solid #CCC; margin-bottom: 5px; }
 #description { border: 1px solid #CCC }
-#previewimagecontainer { text-align: center;}
+#general_panel { width: 100% }
+#uploadbutton { margin-top: 10px }
+#previewimagecontainer { text-align: center }
+#internallinkcontainer { width: 100%; height: 330px }
 #internallinkcontainer div.item:hover { cursor: pointer; background-color: #EEE }
 #internalpath { margin-left: 5px }
 .legend { margin: 5px 0 }
 .legend a { margin-right: 5px }
 .legend .current { font-weight: bold; border: none!important; color: #000!important; cursor: default }
-.input-border {border: 0.1em solid #CCC!important}
+.input-border { border: 0.1em solid #CCC!important }
 .browser-separator { background-color: #DDD }
 .thumbnail { text-align: center; margin-top: 3px; }
 .thumbnail p { margin-bottom: 0 }
@@ -28,3 +29,12 @@
 .thumbnail.current { border: 1px solid #DDD }
 .thumbnail .thumb { margin: 3px auto; position: relative }
 .thumbnail .thumb img { bottom: 0; margin-top: 3px }
+
+/* image plugin css */
+
+/* link plugin css */
+#linktype_panel { line-height: 25px; width: 135px; margin-right: 10px; border-right: 0.1em solid #329FD7; height: 450px }
+#linktype { margin: 15px 0; }
+#linktype .current a { font-weight: bold; color: #000; border: none; cursor: default }
+#anchorlinkcontainer { height: 350px; }
+#external_panel, #mail_panel, #anchor_panel, #advanced_panel { width: 640px }

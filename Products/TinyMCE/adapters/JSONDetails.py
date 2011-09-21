@@ -6,6 +6,7 @@ except ImportError:
 
 from zope.interface import implements
 from zope.component import getUtility
+from zope.component import getMultiAdapter
 
 from Products.CMFCore.utils import getToolByName
 
@@ -34,12 +35,13 @@ class JSONDetails(object):
 
         results = {}
         results['title'] = self.context.title_or_id()
+        #results['url'] = self.getSiteRootRelativePath()
         results['url'] = self.context.absolute_url()
         results['description'] = self.context.Description()
+        results['uid_relative_url'] = 'resolveuid/' + uuidFor(self.context)
+        results['uid_url'] = self._getPloneUrl() + '/resolveuid/' + uuidFor(self.context)
 
         if self.context.portal_type in image_portal_types:
-            results['uid_url'] = self._getPloneUrl() + '/resolveuid/' + uuidFor(self.context)
-            results['uid_relative_url'] = 'resolveuid/' + uuidFor(self.context)
             images = self.context.restrictedTraverse('@@images')
 
             # TODO: support other contenttypes
@@ -80,3 +82,20 @@ class JSONDetails(object):
         portal_url = getToolByName(self.context, 'portal_url')
         portal = portal_url.getPortalObject()
         return portal.absolute_url()
+
+    def getSiteRootRelativePath(self):
+        """ Get site root relative path to an item
+
+        @return: Path to the context object, relative to site root, prefixed with a slash.
+        """
+
+        portal_state = getMultiAdapter((self.context, self.context.REQUEST), name=u'plone_portal_state')
+        site = portal_state.portal()
+
+        # Both of these are tuples
+        site_path = site.getPhysicalPath()
+        context_path = self.context.getPhysicalPath()
+
+        relative_path = context_path[len(site_path):]
+
+        return "/" + "/".join(relative_path)

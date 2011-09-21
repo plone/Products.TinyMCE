@@ -1,51 +1,23 @@
-/* Functions for the plonelink plugin popup */
-
-tinyMCEPopup.requireLangPack();
-
-var templates = {
-    "window.open" : "window.open('${url}','${target}','${options}')"
-};
-
 var current_path;
 var current_link = "";
 var current_url = "";
 var current_pageanchor = "";
-var labels = "";
-
-function preinit() {
-    var url;
-
-    if (url = tinyMCEPopup.getParam("external_link_list_url"))
-        document.write('<script language="javascript" type="text/javascript" src="' + tinyMCEPopup.editor.documentBaseURI.toAbsolute(url) + '"></script>');
-}
 
 function init() {
-    tinyMCEPopup.resizeToInnerSize();
-
     var formGeneralObj = document.forms[0];
     var formUploadObj = document.forms[1];
     var formAdvancedObj = document.forms[2];
     var formButtonsObj = document.forms[3];
     var inst = tinyMCEPopup.editor;
     var elm = inst.selection.getNode();
-    var action = "insert";
     var html;
-    labels = eval(inst.getParam('labels'));
-
-    document.getElementById('anchorlinkcontainer').innerHTML = getAnchorListHTML();
 
     // Check if update or insert
     elm = inst.dom.getParent(elm, "A");
     if (elm != null && elm.nodeName == "A")
-        action = "update";
-
-    // Set button caption
-    formButtonsObj.insert.value = tinyMCEPopup.getLang(action, 'Insert', true); 
-
-    // Check if rooted
-    if (tinyMCEPopup.editor.settings.rooted) {
-        document.getElementById('home').style.display = 'none';
-    }
+        var action = "update";
+    else
+        var action = "insert";
 
     if (action == "update") {
         var href = inst.dom.getAttrib(elm, 'href');
@@ -57,11 +29,12 @@ function init() {
             setFormValue('title', inst.dom.getAttrib(elm, 'title'), 2);
         }
 
-        // Check if anchor
         if (href.charAt(0) == '#') {
+            // Check if anchor
             displayPanel('anchors_panel');
             setRadioValue('anchorlink', href, 0);
         } else if (href.indexOf('mailto:') != -1) {
+            // email
             displayPanel('mail_panel');
             var mailaddress = href.split('mailto:')[1];
             var mailsubject = "";
@@ -74,6 +47,7 @@ function init() {
             setFormValue('mailaddress', mailaddress, 0);
             setFormValue('mailsubject', mailsubject, 0);
         } else if ((href.indexOf('http://') == 0) || (href.indexOf('https://') == 0) || (href.indexOf('ftp://') == 0)) {
+            // checkExternalURL
             displayPanel('external_panel');
             if (href.indexOf('http://') == 0) {
                 href = href.substr(7,href.length);
@@ -89,6 +63,7 @@ function init() {
                 setFormValue('externalurl', href, 0);
             }
         } else {
+            // internal
             if (href.indexOf('#') != -1) {
                 current_pageanchor = href.split('#')[1];
                 href = href.split('#')[0];
@@ -113,9 +88,9 @@ function init() {
 
         selectByValue(formAdvancedObj, 'targetlist', inst.dom.getAttrib(elm, 'target'), true);
     } else {
-
         href = inst.selection.getContent();
         href = tinymce.trim(href)
+        // external
         if ((href.indexOf('http://') == 0) || (href.indexOf('https://') == 0) || (href.indexOf('ftp://') == 0)) {
             displayPanel('external_panel');
             if (href.indexOf('http://') == 0) {
@@ -137,188 +112,8 @@ function init() {
     }
 }
 
-function checkSearch(e) {
-    if (document.getElementById('searchtext').value.length >= 3 && (tinyMCEPopup.editor.settings.livesearch || e.keyCode == 13)) {
-        getFolderListing(tinyMCEPopup.editor.settings.navigation_root_url, 'tinymce-jsonlinkablesearch');
-    }
-}
-
-function checkExternalUrl() {
-    var formGeneralObj = document.forms[0];
-    href = document.getElementById('externalurl').value;
-    href = tinymce.trim(href)
-    if ((href.indexOf('http://') == 0) || (href.indexOf('https://') == 0) || (href.indexOf('ftp://') == 0)) {
-        if (href.indexOf('http://') == 0) {
-            href = href.substr(7,href.length);
-            selectByValue(formGeneralObj, 'externalurlprefix', 'http://', true);
-            setFormValue('externalurl', href, 0);
-        } else if (href.indexOf('https://') == 0) {
-            href = href.substr(8,href.length);
-            selectByValue(formGeneralObj, 'externalurlprefix', 'https://', true);
-            setFormValue('externalurl', href, 0);
-        } else if (href.indexOf('ftp://') == 0) {
-            href = href.substr(6,href.length);
-            selectByValue(formGeneralObj, 'externalurlprefix', 'ftp://', true);
-            setFormValue('externalurl', href, 0);
-        }
-    }
-}
-function getParentUrl(url) {
-    var url_array = url.split('/');
-    url_array.pop();
-    return url_array.join('/');
-}
-
-function getAbsoluteUrl(base, link) {
-    if ((link.indexOf('http://') != -1) || (link.indexOf('https://') != -1) || (link.indexOf('ftp://') != -1)) {
-        return link;
-    }
-    
-    var base_array = base.split('/');
-    var link_array = link.split('/');
-    
-    // Remove document from base url
-    base_array.pop();
-    
-    while (link_array.length != 0) {
-        var item = link_array.shift();
-        if (item == ".") {
-            // Do nothing
-        } else if (item == "..") {
-            // Remove leave node from base
-            base_array.pop();
-        } else {
-            // Push node to base_array
-            base_array.push(item);
-        }
-    }
-    return (base_array.join('/'));
-}
-
-function setFormValue(name, value, formnr) {
-    document.forms[formnr].elements[name].value = value;
-}
-
-function parseWindowOpen(onclick) {
-    var formGeneralObj = document.forms[0];
-    var formUploadObj = document.forms[1];
-    var formAdvancedObj = document.forms[2];
-    var formButtonsObj = document.forms[3];
-
-    // Preprocess center code
-    if (onclick.indexOf('return false;') != -1) {
-        formAdvancedObj.popupreturn.checked = true;
-        onclick = onclick.replace('return false;', '');
-    } else
-        formAdvancedObj.popupreturn.checked = false;
-
-    var onClickData = parseLink(onclick);
-
-    if (onClickData != null) {
-        formAdvancedObj.ispopup.checked = true;
-
-        var onClickWindowOptions = parseOptions(onClickData['options']);
-        var url = onClickData['url'];
-
-        formAdvancedObj.popupname.value = onClickData['target'];
-        formAdvancedObj.popupwidth.value = getOption(onClickWindowOptions, 'width');
-        formAdvancedObj.popupheight.value = getOption(onClickWindowOptions, 'height');
-
-        formAdvancedObj.popupleft.value = getOption(onClickWindowOptions, 'left');
-        formAdvancedObj.popuptop.value = getOption(onClickWindowOptions, 'top');
-
-        if (formAdvancedObj.popupleft.value.indexOf('screen') != -1)
-            formAdvancedObj.popupleft.value = "c";
-
-        if (formAdvancedObj.popuptop.value.indexOf('screen') != -1)
-            formAdvancedObj.popuptop.value = "c";
-
-        formAdvancedObj.popuplocation.checked = getOption(onClickWindowOptions, 'location') == "yes";
-        formAdvancedObj.popupscrollbars.checked = getOption(onClickWindowOptions, 'scrollbars') == "yes";
-        formAdvancedObj.popupmenubar.checked = getOption(onClickWindowOptions, 'menubar') == "yes";
-        formAdvancedObj.popupresizable.checked = getOption(onClickWindowOptions, 'resizable') == "yes";
-        formAdvancedObj.popuptoolbar.checked = getOption(onClickWindowOptions, 'toolbar') == "yes";
-        formAdvancedObj.popupstatus.checked = getOption(onClickWindowOptions, 'status') == "yes";
-        formAdvancedObj.popupdependent.checked = getOption(onClickWindowOptions, 'dependent') == "yes";
-    }
-}
-
-function parseFunction(onclick) {
-    var onClickData = parseLink(onclick);
-
-    // TODO: Add stuff here
-}
-
 function getOption(opts, name) {
     return typeof(opts[name]) == "undefined" ? "" : opts[name];
-}
-
-function parseLink(link) {
-    link = link.replace(new RegExp('&#39;', 'g'), "'");
-
-    var fnName = link.replace(new RegExp("\\s*([A-Za-z0-9\.]*)\\s*\\(.*", "gi"), "$1");
-
-    // Is function name a template function
-    var template = templates[fnName];
-    if (template) {
-        // Build regexp
-        var variableNames = template.match(new RegExp("'?\\$\\{[A-Za-z0-9\.]*\\}'?", "gi"));
-        var regExp = "\\s*[A-Za-z0-9\.]*\\s*\\(";
-        var replaceStr = "";
-        for (var i=0; i<variableNames.length; i++) {
-            // Is string value
-            if (variableNames[i].indexOf("'${") != -1)
-                regExp += "'(.*)'";
-            else // Number value
-                regExp += "([0-9]*)";
-
-            replaceStr += "$" + (i+1);
-
-            // Cleanup variable name
-            variableNames[i] = variableNames[i].replace(new RegExp("[^A-Za-z0-9]", "gi"), "");
-
-            if (i != variableNames.length-1) {
-                regExp += "\\s*,\\s*";
-                replaceStr += "<delim>";
-            } else
-                regExp += ".*";
-        }
-
-        regExp += "\\);?";
-
-        // Build variable array
-        var variables = [];
-        variables["_function"] = fnName;
-        var variableValues = link.replace(new RegExp(regExp, "gi"), replaceStr).split('<delim>');
-        for (var i=0; i<variableNames.length; i++)
-            variables[variableNames[i]] = variableValues[i];
-
-        return variables;
-    }
-
-    return null;
-}
-
-function parseOptions(opts) {
-    if (opts == null || opts == "")
-        return [];
-
-    // Cleanup the options
-    opts = opts.toLowerCase();
-    opts = opts.replace(/;/g, ",");
-    opts = opts.replace(/[^0-9a-z=,]/g, "");
-
-    var optionChunks = opts.split(',');
-    var options = [];
-
-    for (var i=0; i<optionChunks.length; i++) {
-        var parts = optionChunks[i].split('=');
-
-        if (parts.length == 2)
-            options[parts[0]] = parts[1];
-    }
-
-    return options;
 }
 
 function getPopupHref(href) {
@@ -393,58 +188,6 @@ function setAttrib(elm, attrib, value, formnr) {
     }
 
     dom.setAttrib(elm, attrib, value);
-}
-
-function previewExternalLink() {
-    var url = "";
-    var externalurlprefix = document.getElementById('externalurlprefix');
-    url = externalurlprefix.options[externalurlprefix.selectedIndex].value;
-    
-    if (document.getElementById('externalurl').value == "") {
-        url = "";
-    } else {
-        url += document.getElementById('externalurl').value;
-    }
-    
-    if (url == "") {
-        document.getElementById('previewexternal').src = "about:blank";
-    } else {
-        document.getElementById('previewexternal').src = url;
-    }
-}
-
-function getAnchorListHTML() {
-    var inst = tinyMCEPopup.editor;
-    var nodes = inst.dom.select('a.mceItemAnchor,img.mceItemAnchor'), name, title, i;
-    var html = "";
-    var divclass ="even";
-
-    for (i=0; i<nodes.length; i++) {
-        if ((name = inst.dom.getAttrib(nodes[i], "name")) != "") {
-            html += '<div class="' + divclass + '"><input type="radio" class="noborder" name="anchorlink" value="#' + name + '"/> ' + name + '</div>';
-            divclass = divclass == "even" ? "odd" : "even";
-        }
-    }
-
-    nodes = inst.dom.select('h2,h3');
-    if (nodes.length > 0) {
-        for (i=0; i<nodes.length; i++) {
-            title = nodes[i].innerHTML;
-            title_match = title.match(/mceItemAnchor/);
-            if (title_match == null) {
-                name = title.toLowerCase();
-                name = name.replace(/[^a-z]/g, '-');
-                html += '<div class="' + divclass + '"><input type="radio" class="noborder" name="anchorlink" value="#mce-new-anchor-' + name + '"/> ' + title + '</div>';
-                divclass = divclass == "even" ? "odd" : "even";
-            }
-        }
-    }
-
-    if (html == "") {
-        html = '<div class="odd">'+ labels['label_no_anchors'] +'</div>';
-    }
-
-    return html;
 }
 
 function getInputValue(name, formnr) {
@@ -612,90 +355,6 @@ function setAllAttribs(elm) {
     } else {
         dom.addClass(elm, 'internal-link');
     }
-
-    // Refresh in old MSIE
-    if (tinyMCE.isMSIE5)
-        elm.outerHTML = elm.outerHTML;
-}
-
-function getSelectValue(form_obj, field_name) {
-    var elm = form_obj.elements[field_name];
-
-    if (!elm || elm.options == null || elm.selectedIndex == -1)
-        return "";
-
-    return elm.options[elm.selectedIndex].value;
-}
-
-function getLinkListHTML(elm_id, target_form_element, onchange_func) {
-    if (typeof(tinyMCELinkList) == "undefined" || tinyMCELinkList.length == 0)
-        return "";
-
-    var html = "";
-
-    html += '<select id="' + elm_id + '" name="' + elm_id + '"';
-    html += ' class="mceLinkList" onfocus="tinyMCE.addSelectAccessibility(event, this, window);" onchange="this.form.' + target_form_element + '.value=';
-    html += 'this.options[this.selectedIndex].value;';
-
-    if (typeof(onchange_func) != "undefined")
-        html += onchange_func + '(\'' + target_form_element + '\',this.options[this.selectedIndex].text,this.options[this.selectedIndex].value);';
-
-    html += '"><option value="">---</option>';
-
-    for (var i=0; i<tinyMCELinkList.length; i++)
-        html += '<option value="' + tinyMCELinkList[i][1] + '">' + tinyMCELinkList[i][0] + '</option>';
-
-    html += '</select>';
-
-    return html;
-
-    // tinyMCE.debug('-- image list start --', html, '-- image list end --');
-}
-
-function setPopupVisibility() {
-    var targetlist = document.getElementById('targetlist');    
-    if (targetlist.options[targetlist.selectedIndex].value == 'popup') {
-        document.getElementById('popup_panel').style.display = 'block';
-    } else {
-        document.getElementById('popup_panel').style.display = 'none';
-    }
-}
-
-function getTargetListHTML(elm_id, target_form_element) {
-    var targets = tinyMCEPopup.getParam('theme_advanced_link_targets', '').split(';');
-    var html = '';
-
-    html += '<select id="' + elm_id + '" name="' + elm_id + '" onf2ocus="tinyMCE.addSelectAccessibility(event, this, window);" onchange="this.form.' + target_form_element + '.value=';
-    html += 'this.options[this.selectedIndex].value;">';
-    html += '<option value="_self">' + tinyMCEPopup.getLang('plonelink_dlg.target_same') + '</option>';
-    html += '<option value="_blank">' + tinyMCEPopup.getLang('plonelink_dlg.target_blank') + ' (_blank)</option>';
-    html += '<option value="_parent">' + tinyMCEPopup.getLang('plonelink_dlg.target_parent') + ' (_parent)</option>';
-    html += '<option value="_top">' + tinyMCEPopup.getLang('plonelink_dlg.target_top') + ' (_top)</option>';
-
-    for (var i=0; i<targets.length; i++) {
-        var key, value;
-
-        if (targets[i] == "")
-            continue;
-
-        key = targets[i].split('=')[0];
-        value = targets[i].split('=')[1];
-
-        html += '<option value="' + key + '">' + value + ' (' + key + ')</option>';
-    }
-
-    html += '</select>';
-
-    return html;
-}
-
-function displayPanel(elm_id) {
-    document.getElementById ('internal_panel').style.display = elm_id == 'internal_panel' || elm_id == 'upload_panel' ? 'block' : 'none';
-    document.getElementById ('internal_details_panel').style.display = elm_id == 'internal_panel' ? 'block' : 'none';
-    document.getElementById ('external_panel').style.display = elm_id == 'external_panel' ? 'block' : 'none';
-    document.getElementById ('mail_panel').style.display = elm_id == 'mail_panel' ? 'block' : 'none';
-    document.getElementById ('anchors_panel').style.display = elm_id == 'anchors_panel' ? 'block' : 'none';
-    document.getElementById ('upload_panel').style.display = elm_id == 'upload_panel' ? 'block' : 'none';
 }
 
 function setDetails(path, pageanchor) {
@@ -741,10 +400,6 @@ function setDetails(path, pageanchor) {
             document.getElementById('upload_panel').style.display = 'none';
         }
     });
-}
-
-function getCurrentFolderListing() {
-    getFolderListing(tinyMCEPopup.editor.settings.document_base_url, 'tinymce-jsonlinkablefolderlisting'); 
 }
 
 function getFolderListing(path, method) {
@@ -838,17 +493,3 @@ function getFolderListing(path, method) {
         }
     });
 }
-
-function uploadOk(ok_msg) {
-    current_link = ok_msg;
-    displayPanel('internal_panel');
-    getFolderListing(current_path,'tinymce-jsonlinkablefolderlisting');
-}
-
-function uploadError(error_msg) {
-    alert (error_msg);
-}
-
-// While loading
-preinit();
-tinyMCEPopup.onInit.add(init);

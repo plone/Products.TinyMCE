@@ -577,7 +577,7 @@ class TinyMCE(SimpleItem):
 
     security.declarePrivate('getPlugins')
     def getPlugins(self):
-        """ See ITinyMCE interface 
+        """ See ITinyMCE interface
         """
         plugins = self.plugins[:]
         sp = self.libraries_spellchecker_choice
@@ -717,6 +717,10 @@ class TinyMCE(SimpleItem):
 
         # Replacing some hardcoded translations
         labels = {}
+        labels['label_browseimage'] = translate(_('Image Browser'), context=request)
+        labels['label_browselink'] = translate(_('Link Browser'), context=request)
+        labels['label_addnewimage'] = translate(_('Add new Image'), context=request)
+        labels['label_addnewfile'] = translate(_('Add new File'), context=request)
         labels['label_styles'] = translate(_('(remove style)'), context=request)
         labels['label_paragraph'] = translate(_('Normal paragraph'), context=request)
         labels['label_plain_cell'] = translate(_('Plain cell'), context=request)

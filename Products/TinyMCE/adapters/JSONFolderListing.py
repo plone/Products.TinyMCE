@@ -24,6 +24,7 @@ class JSONFolderListing(object):
     root_icon = "img/home.png"
     folder_icon = "img/folder.png"
     picture_icon = "img/picture.png"
+    linkable_icon = "img/linkable.png"
 
     def __init__(self, context):
         """Constructor"""
@@ -67,11 +68,11 @@ class JSONFolderListing(object):
                     })
         return result
 
-    def getListing(self, filter_portal_types, rooted, document_base_url, upload_type=None):
+    def getListing(self, filter_portal_types, rooted, document_base_url, upload_type=None, image_types=None):
         """Returns the actual listing"""
-
         catalog_results = []
         results = {}
+        image_types = image_types or []
 
         object = aq_inner(self.context)
         portal_catalog = getToolByName(object, 'portal_catalog')
@@ -97,8 +98,10 @@ class JSONFolderListing(object):
         for brain in portal_catalog(portal_type=filter_portal_types, sort_on='getObjPositionInParent', path={'query': path, 'depth': 1}):
             if brain.is_folderish:
                 icon = self.folder_icon
-            else:
+            elif brain.portal_type in image_types:
                 icon = self.picture_icon
+            else:
+                icon = self.linkable_icon
 
             catalog_results.append({
                 'id': brain.getId,
