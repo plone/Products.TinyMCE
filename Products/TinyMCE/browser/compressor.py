@@ -67,8 +67,8 @@ class TinyMCECompressorView(BrowserView):
                 name, path = plugin.split('|', 1)
                 customplugins[name] = path
 
-            content.append('tinymce.PluginManager.load("%s", "%s/%s");' % (
-                name, config['portal_url'], path));
+                content.append('tinymce.PluginManager.load("%s", "%s/%s");' % (
+                    name, config['portal_url'], path));
 
         # Add core languages
         # TODO: we have our own translations
