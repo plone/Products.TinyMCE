@@ -3,9 +3,6 @@ High priority
 
 * add 1.3 GS profile to plone.app.upgrades for Plone 4.3
 
-* Merge
-  https://github.com/plone/Products.TinyMCE/commit/6aaf14e7e66592fce118d2050e699d66e14b201c
-
 * We should probably forward-port
   https://github.com/plone/Products.TinyMCE/commit/4937f74b8485c5800347c204385c3f0923b45e81
   and

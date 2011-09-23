@@ -127,6 +127,8 @@ class Upload(object):
                 break
             except ValueError:
                 continue
+            except BadRequest:
+                return self.errorMessage(_("Bad filename, please rename."))
         else:
             return self.errorMessage(_("Not allowed to upload a file of this type to this folder"))
 

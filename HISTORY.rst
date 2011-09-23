@@ -147,6 +147,11 @@ HISTORY
 1.2.9 (2011-11-24)
 ------------------
 
+- Display error message when uploading a file with a name consisting
+  only of spaces.
+  Fixes http://dev.plone.org/plone/ticket/10394
+  [maurits]
+
 - Fixed content_css when the Plone Site id is 'plone'.  This is used
   to display the text during editing in the same layout as it appears
   when viewing.
