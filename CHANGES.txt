@@ -5,8 +5,14 @@ HISTORY
 1.1.12 (unreleased)
 -------------------
 
+- Display error message when uploading a file with a name consisting
+  only of spaces.
+  Fixes http://dev.plone.org/plone/ticket/10394
+  [maurits]
+
 - Backport fix: Set text/css content type on tinymce-getstyle.
   [elro] [toutpt]
+
 
 1.1.11 (2011-07-05)
 -------------------

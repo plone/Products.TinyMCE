@@ -1,3 +1,4 @@
+from zExceptions import BadRequest
 from zope.interface import implements
 from zope.component import adapts
 from Products.CMFCore.utils import getToolByName
@@ -5,11 +6,14 @@ from Products.PythonScripts.standard import html_quote, newline_to_br
 
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from zope.component import getUtility
+from zope.i18nmessageid import MessageFactory
 from Products.TinyMCE.adapters.interfaces.Upload import IUpload
 from Products.CMFCore.interfaces._content import IContentish, IFolderish
 from Products.CMFPlone.interfaces.siteroot import IPloneSiteRoot
 from Products.CMFPlone import utils
 from Acquisition import aq_inner
+
+_ = MessageFactory('plone.tinymce')
 
 TEMPLATE = """
 <html>
@@ -97,7 +101,10 @@ class Upload(object):
         title = request['uploadtitle']
         description = request['uploaddescription']
         
-        newid = context.invokeFactory(type_name=typename, id=id)
+        try:
+            newid = context.invokeFactory(type_name=typename, id=id)
+        except BadRequest:
+            return self.errorMessage(_("Bad filename, please rename."))
 
         if newid is None or newid == '':
             newid = id 
