@@ -1,5 +1,5 @@
 from Acquisition import aq_inner
-from AccessControl.unauthorized import Unauthorized
+from zExceptions import BadRequest
 from zope.interface import implements
 from zope.component import getUtility
 
@@ -124,6 +124,8 @@ class Upload(object):
 
             except ValueError:
                 continue
+            except BadRequest:
+                return self.errorMessage(_("Bad filename, please rename."))
         else:
             return self.errorMessage(_("Not allowed to upload a file of this type to this folder"))
 
