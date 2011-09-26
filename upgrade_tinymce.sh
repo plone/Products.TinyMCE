@@ -49,6 +49,9 @@ then
             cp -R $f/langs/* $plugin_dest/langs/
         fi
     done
+    # some files have wrong encoding
+    sed -i 's/encoding=".*"/encoding="utf-8"/' xml/*
+
     python generate-po.py
     python compile-mo.py
     rm $root/tinymce_language_pack.zip
