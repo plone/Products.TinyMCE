@@ -23,19 +23,16 @@ class Upload(object):
 
     def __init__(self, context):
         """Constructor"""
-
         self.context = context
 
     def errorMessage(self, msg):
         """Returns an error message"""
-
         script = TEMPLATE % ("window.parent.uploadError('" + msg.replace("'", "\\'") + "');")
         return script
 
-    def okMessage(self, msg):
+    def okMessage(self, path, folder):
         """Returns an ok message"""
-
-        script = TEMPLATE % ("window.parent.uploadOk('" + msg.replace("'", "\\'") + "');")
+        script = TEMPLATE % ("window.parent.uploadOk('" + path.replace("'", "\\'") + "', '" + folder.replace("'", "\\'") + "');")
         return script
 
     def cleanupFilename(self, name):
@@ -126,11 +123,14 @@ class Upload(object):
             return self.errorMessage("Could not upload the file")
 
         obj.reindexObject()
+        folder = obj.aq_parent.absolute_url()
 
         utility = getUtility(ITinyMCE)
         if utility.link_using_uids:
-            return self.okMessage("resolveuid/%s" % (uuidFor(obj)))
-        return self.okMessage("%s" % (obj.absolute_url()))
+            path = "resolveuid/%s" % (uuidFor(obj))
+        else:
+            path = obj.absolute_url()
+        return self.okMessage(path, folder)
 
     def setDescription(self, description):
         self.context.setDescription(description)
