@@ -54,16 +54,18 @@ border-width:1px;
 
 /* Panels */
 .panel_wrapper div.panel {display:none;}
-.panel_wrapper div.current {display:block; width:100%; height:300px; overflow:visible;}
+.panel_wrapper div.current {display:block; width:100%; overflow:visible;}
 
-#colorpicker #namedcolors a {
-display:block;
-float:left;
-height:10px;
-margin:1px 1px 0pt 0pt;
-overflow:hidden;
-width:10px;
-}
+#colorpicker #preview {float:right; width:50px; height:14px;line-height:1px; border:1px solid black; margin-left:5px;}
+#colorpicker #colors {float:left; border:1px solid gray; cursor:crosshair;}
+#colorpicker #light {border:1px solid gray; margin-left:5px; float:left;width:15px; height:150px; cursor:crosshair;}
+#colorpicker #light div {overflow:hidden;}
+#colorpicker #previewblock {float:right; padding-left:10px; height:20px;}
+#colorpicker .panel_wrapper div.current {height:175px;}
+#colorpicker #namedcolors {width:150px;}
+#colorpicker #namedcolors a {display:block; float:left; width:10px; height:10px; margin:1px 1px 0 0; overflow:hidden;}
+#colorpicker #colornamecontainer {margin-top:5px;}
+#colorpicker #picker_panel fieldset {margin:auto;width:325px;}
 
 .subPanel {
 margin-left: 1em;
