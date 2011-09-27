@@ -23,6 +23,7 @@ try:
 except ImportError:
     import json
 
+
 class TinyMCECompressorView(BrowserView):
     tiny_mce_gzip = ViewPageTemplateFile('tiny_mce_gzip.js')
 
@@ -34,7 +35,7 @@ class TinyMCECompressorView(BrowserView):
         isJS = self.request.get("js", "") == "true"
         suffix = self.request.get("suffix", "") == "_src" and "_src" or ""
         response = self.request.response
-        response.headers["Content-Type"] = "text/javascript"
+        response.setHeader('Content-type', 'application/javascript')
         base_url = '/'.join([self.context.absolute_url(), self.__name__])
 
         config = queryUtility(ITinyMCE).getConfiguration(
@@ -81,7 +82,6 @@ class TinyMCECompressorView(BrowserView):
 
             for lang in languages:
                 content.append(traverse("themes/%s/langs/%s.js" % (theme, lang)))
-
 
         # Add plugins
         for plugin in plugins:
