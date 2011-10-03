@@ -10,7 +10,7 @@ Licensed under the terms of the MIT License (see LICENSE.txt)
 from datetime import datetime
 import os.path
 
-from zope.component import queryUtility
+from zope.component import queryUtility, getMultiAdapter
 from Products.Five import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.ResourceRegistries.tools.packer import JavascriptPacker
@@ -37,6 +37,10 @@ class TinyMCECompressorView(BrowserView):
         response = self.request.response
         response.setHeader('Content-type', 'application/javascript')
         base_url = '/'.join([self.context.absolute_url(), self.__name__])
+        if 'portal_factory' in base_url:
+            portal_state = getMultiAdapter((self.context, self.request),
+			    name="plone_portal_state")
+            base_url = '/'.join([portal_state.portal_url(), self.__name__])
 
         config = queryUtility(ITinyMCE).getConfiguration(
                 context=self.context,
