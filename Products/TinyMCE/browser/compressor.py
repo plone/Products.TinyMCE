@@ -37,6 +37,7 @@ class TinyMCECompressorView(BrowserView):
         response = self.request.response
         response.setHeader('Content-type', 'application/javascript')
         base_url = '/'.join([self.context.absolute_url(), self.__name__])
+	# fix for Plone <4.1 http://dev.plone.org/plone/changeset/48436
         if 'portal_factory' in base_url:
             portal_state = getMultiAdapter((self.context, self.request),
 			    name="plone_portal_state")
