@@ -51,6 +51,7 @@ class TinyMCECompressorView(BrowserView):
 
         if not isJS:
             tiny_mce_gzip = self.tiny_mce_gzip(tinymce_json_config=config)
+	    # XXX don't do this in debug mode
             return JavascriptPacker('full').pack(tiny_mce_gzip)
 
         now = datetime.utcnow()
