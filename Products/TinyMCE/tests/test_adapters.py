@@ -3,6 +3,12 @@ This functionality is added to plone content types using adapters.
 """
 import os
 
+try:
+    import simplejson as json
+    json  # Pyflakes
+except ImportError:
+    import json
+
 from zope.component import getUtility
 
 from Products.TinyMCE.adapters.interfaces.JSONDetails import IJSONDetails
@@ -28,16 +34,21 @@ class AdaptersTestCase(FunctionalTestCase):
 
         # The basic details should return the following.
         obj = IJSONDetails(self.portal[self.document])
-        self.assertEqual(obj.getDetails(),
-                         '{"url": "http://nohost/plone/document", "thumb": "", "description": "", "anchors": [], "title": "document"}')
+	details = json.loads(obj.getDetails())
+        should = {"url": "http://nohost/plone/document", "thumb": "", "description": "", "anchors": [], "title": "document"}
+	for key, val in should.iteritems():
+            self.assertEqual(details[key], val)
+
 
         # Let's set some more details like description and body text.
         self.portal[self.document].setDescription('Test')
         self.portal[self.document].setText(u'<p><a name="anchor">anchor</a></p>', mimetype='text/html')
 
         # The details will now contain a bit more info.
-        self.assertEqual(obj.getDetails(),
-                         '{"url": "http://nohost/plone/document", "thumb": "", "description": "Test", "anchors": ["anchor"], "title": "document"}')
+	details = json.loads(obj.getDetails())
+        should = {"url": "http://nohost/plone/document", "thumb": "", "description": "Test", "anchors": ["anchor"], "title": "document"}
+	for key, val in should.iteritems():
+            self.assertEqual(details[key], val)
 
     def test_json_details_image(self):
         # We can also get the details of an image object.
