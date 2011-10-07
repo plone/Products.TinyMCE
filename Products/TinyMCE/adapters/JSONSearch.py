@@ -27,7 +27,7 @@ class JSONSearch(object):
         query = {
             'portal_type': filter_portal_types,
             'sort_on': 'sortable_title',
-            'path': self.context.absolute_url_path(),
+            'path': '/'.join(self.context.getPhysicalPath()),
             'SearchableText': searchtext,
         }
         if searchtext:

@@ -11,7 +11,13 @@ HISTORY
 - Fixed http://dev.plone.org/plone/ticket/11681
   [tom_gross]
 
-1.2.8 (unreleased)
+1.2.9 (unreleased)
+------------------
+
+- Search does not work with Virtual Hosting (close #10308)
+  [keul] [mamico]
+
+1.2.8 (2011-09-19)
 ------------------
 
 - Support RichTextValues from plone.app.textfield when determining the mimetype
