@@ -62,3 +62,4 @@ def upgrade_11_to_2(setuptool):
 def upgrade_12_to_13(setuptool): 
     # Unregister old js and kss and register new js
     setuptool.runAllImportStepsFromProfile('profile-Products.TinyMCE:upgrade_12_to_13')
+    setuptool.runImportStepFromProfile('profile-Products.TinyMCE.skin:default', 'viewlets')
