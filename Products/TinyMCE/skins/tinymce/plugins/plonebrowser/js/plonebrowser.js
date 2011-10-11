@@ -3,7 +3,8 @@
          sloppy: true,
          white: true,
          plusplus: true,
-         indent: 4 */
+         indent: 4,
+         maxlen: 200 */
 /*global jq, tinymce, tinyMCEPopup, alert */
 /**
  * Image selection dialog.
@@ -374,12 +375,8 @@ BrowserDialog.prototype.setAnchorAttributes = function (node, link) {
     var target = jq('#targetlist', document).val(),
         panelname = jq('#linktype .current a', document).attr('href');
 
-    if (target === 'popup') {
-        // TODO: setAttrib(elm, 'href', getPopupHref(link), 0);
-    } else {
-        jq(node).attr('href', link);
-        jq(node).attr('target', target);
-    }
+    jq(node).attr('href', link);
+    jq(node).attr('target', target);
 
     jq(node)
         .attr('title', jq('#title', document).val())
@@ -401,7 +398,8 @@ BrowserDialog.prototype.insertLink = function () {
         i,
         nodes,
         url_match,
-        link;
+        link,
+        name;
 
     if (selected_node.get(0).tagName !== "A") {
         selected_node = selected_node.parent('a');
@@ -607,11 +605,11 @@ BrowserDialog.prototype.setDetails = function (url) {
 
     jq.ajax({
         'url': url + '/tinymce-jsondetails',
-        'type': 'POST',
         'dataType': 'json',
         'success': function (data) {
             var dimension = jq('#dimensions', document).val(),
-                dimensions;
+                dimensions,
+                i;
 
             // Add the thumbnail image to the details pane.
             if (data.thumb !== "") {
@@ -666,7 +664,7 @@ BrowserDialog.prototype.setDetails = function (url) {
 
             if (data.anchors.length > 0) {
                 html = "";
-                for (var i = 0; i < data.anchors.length; i++) {
+                for (i = 0; i < data.anchors.length; i++) {
                     html += '<option value="' + data.anchors[i] + '">' + data.anchors[i] + '</option>';
                 }
                 jq('#pageanchor', document).append(html);
@@ -953,7 +951,7 @@ BrowserDialog.prototype.displayPanel = function(panel, upload_allowed) {
     var correction_length;
 
     // handle upload button
-    if ((upload_allowed === true || upload_allowed === undefined) && (panel === "browse" || panel === "details" && this.is_search_activated === false)) {
+    if ((upload_allowed === true || upload_allowed === undefined) && ((panel === "browse" || panel === "details") && this.is_search_activated === false)) {
         jq('#upload', document).attr('disabled', false).fadeTo(1, 1);
     } else {
         jq('#upload', document).attr('disabled', true).fadeTo(1, 0.5);
@@ -989,18 +987,6 @@ BrowserDialog.prototype.displayPanel = function(panel, upload_allowed) {
     } else {
         jq('#advanced_panel', document).addClass('hide');
     }
-    // handle browse panel
-    if (jq.inArray(panel, ["search", "details", "browse", "upload"]) > -1) {
-        jq('#browseimage_panel', document).removeClass("hide");
-        correction_length = this.is_link_plugin ? 145 : 0;
-        if (jq.inArray(panel, ["upload", "details"]) > -1) {
-            jq('#browseimage_panel', document).width(555 - correction_length);
-        } else {
-            jq('#browseimage_panel', document).width(790 - correction_length);
-        }
-    } else {
-        jq('#browseimage_panel', document).addClass("hide");
-    }
     // handle details/preview panel
     if (panel === 'details') {
         jq('#details_panel', document).removeClass("hide");
@@ -1012,6 +998,18 @@ BrowserDialog.prototype.displayPanel = function(panel, upload_allowed) {
         jq('#addimage_panel', document).removeClass('hide');
     } else {
         jq('#addimage_panel', document).addClass('hide');
+    }
+    // handle browse panel
+    if (jq.inArray(panel, ["search", "details", "browse", "upload"]) > -1) {
+        correction_length = this.is_link_plugin ? 150 : 0;
+        if (jq.inArray(panel, ["upload", "details"]) > -1) {
+            jq('#browseimage_panel', document).width(555 - correction_length);
+        } else {
+            jq('#browseimage_panel', document).width(790 - correction_length);
+        }
+        jq('#browseimage_panel', document).removeClass("hide");
+    } else {
+        jq('#browseimage_panel', document).addClass("hide");
     }
 };
 
