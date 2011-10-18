@@ -1,10 +1,15 @@
 import httplib
 
+from Acquisition import aq_inner
+
 from zope.interface import implements
-from zope.component import getUtility
+from zope.component import getUtility, queryUtility
+from zope.component import getMultiAdapter
 
 from Products.Five.browser import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
+
+from Products.CMFCore.utils import getToolByName
 
 from plone.app.layout.viewlets.common import ViewletBase
 
@@ -161,3 +166,17 @@ class ConfigurationViewlet(ViewletBase):
     """
 
     index = ViewPageTemplateFile('configuration.pt')
+
+    def show(self):
+        tinymce = queryUtility(ITinyMCE, context=self.context)
+        if tinymce is None:
+            return False
+        context = aq_inner(self.context)
+        factory = getToolByName(context, 'portal_factory', None)
+        if factory is not None and factory.isTemporary(context):
+            # Always include TinyMCE on temporary pages
+            # These are ment for editing and get false positives
+            # with the showEditableBorder-method
+            return True
+        plone_view = getMultiAdapter((self.context, self.request), name="plone")
+        return plone_view.showEditableBorder()
