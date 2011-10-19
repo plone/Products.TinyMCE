@@ -376,6 +376,7 @@ BrowserDialog.prototype.setAnchorAttributes = function (node, link) {
         panelname = jq('#linktype .current a', document).attr('href');
 
     jq(node).attr('href', link);
+    jq(node).attr('data-mce-href', link);
     jq(node).attr('target', target);
 
     jq(node)
@@ -460,8 +461,6 @@ BrowserDialog.prototype.insertLink = function () {
 
     this.tinyMCEPopup.execCommand("mceBeginUndoLevel");
 
-    console.log(selected_node);
-    console.log(link);
     if (selected_node === null) {
         // Create new anchor elements
         // no idea what this does, yet.
