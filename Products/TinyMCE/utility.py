@@ -866,7 +866,15 @@ class TinyMCE(SimpleItem):
         results['entity_encoding'] = self.entity_encoding
 
         portal = getUtility(ISiteRoot)
-        results['portal_url'] = aq_inner(portal).absolute_url()
+        # absolute_url only works, if the request is in the
+        # acquisition chain. this is not always the case, if we are
+        # called from an utility.
+        # Try hard to mimic the absolute_url behaviour
+        if not hasattr(portal, 'REQUEST') and request is not None:
+            portal_url = request.physicalPathToURL(portal.getPhysicalPath())
+        else:
+            portal_url = portal.absolute_url()
+        results['portal_url'] = portal_url
         nav_root = getNavigationRootObject(context, portal)
         results['navigation_root_url'] = nav_root.absolute_url()
 
