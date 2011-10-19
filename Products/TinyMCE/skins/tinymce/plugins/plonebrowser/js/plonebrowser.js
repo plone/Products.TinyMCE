@@ -160,7 +160,7 @@ BrowserDialog.prototype.init = function () {
             e.preventDefault();
         });
         jq('#externalurl', document).keyup(function (e) {
-            self.checkExternalURL(jq(this).text());
+            self.checkExternalURL(this.value);
         });
         jq('#targetlist', document).change(this.setupPopupVisibility);
         jq('#previewexternalurl', document).click(function (e) {
@@ -195,17 +195,22 @@ BrowserDialog.prototype.init = function () {
                 jq('#mailaddress', document).val(mailaddress);
                 jq('#mailsubject', document).val(mailsubject);
                 jq('#linktype a[href=#email]', document).click();
-            } else if ((href.indexOf('http://') === 0) || (href.indexOf('https://') === 0) || (href.indexOf('ftp://') === 0)) {
+            } else if ((href.indexOf(this.editor.settings.portal_url) === -1) &&
+                ((href.indexOf('http://') === 0) || (href.indexOf('https://') === 0) || (href.indexOf('ftp://') === 0))) {
                 this.checkExternalURL(href);
                 jq('#linktype a[href=#external]', document).click();
             } else {
                 if (href.indexOf('#') !== -1) {
                     href = href.split('#')[0];
                 }
+                // mark we are selecting an item in browser
+                this.editing_existing_image = true;
+
                 if (href.indexOf('resolveuid') !== -1) {
                     current_uid = href.split('resolveuid/')[1];
-                    tinymce.util.XHR.send({
+                    jq.ajax({
                         url: this.editor.settings.portal_url + '/portal_tinymce/tinymce-getpathbyuid?uid=' + current_uid,
+                        dataType: 'text',
                         type: 'GET',
                         success: function(text) {
                             self.current_url = self.getAbsoluteUrl(self.editor.settings.document_base_url, text);
@@ -214,7 +219,7 @@ BrowserDialog.prototype.init = function () {
                         }
                     });
                 } else {
-                    self.current_link = this.getAbsoluteUrl(this.editor.settings.document_base_url, href);
+                    this.current_link = this.getAbsoluteUrl(this.editor.settings.document_base_url, href);
                     this.getFolderListing(this.getParentUrl(this.current_link), 'tinymce-jsonlinkablefolderlisting');
                 }
             }
@@ -1002,9 +1007,9 @@ BrowserDialog.prototype.displayPanel = function(panel, upload_allowed) {
     if (jq.inArray(panel, ["search", "details", "browse", "upload"]) > -1) {
         correction_length = this.is_link_plugin ? 150 : 0;
         if (jq.inArray(panel, ["upload", "details"]) > -1) {
-            jq('#browseimage_panel', document).width(555 - correction_length);
+            jq('#browseimage_panel', document).width(545 - correction_length);
         } else {
-            jq('#browseimage_panel', document).width(790 - correction_length);
+            jq('#browseimage_panel', document).width(780 - correction_length);
         }
         jq('#browseimage_panel', document).removeClass("hide");
     } else {
