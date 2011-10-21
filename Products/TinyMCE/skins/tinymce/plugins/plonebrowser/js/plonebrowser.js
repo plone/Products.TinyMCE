@@ -741,7 +741,7 @@ BrowserDialog.prototype.getFolderListing = function (context_url, method) {
                             folder_html.push('<img src="img/arrow_right.png" />');
                         }
                         jq.merge(folder_html, [
-                                '<img src="' + item.icon +  '"/>',
+                                item.icon,
                                 '<a href="' + item.url + '" class="folderlink contenttype-' + item.normalized_type + '">',
                                     item.title,
                                 '</a>',
@@ -757,7 +757,7 @@ BrowserDialog.prototype.getFolderListing = function (context_url, method) {
                                             'type="radio" class="noborder" style="margin: 0; width: 16px" name="internallink" value="',
                                             'resolveuid/' + item.uid ,
                                             '"/> ',
-                                        '<img src="' + item.icon + '" /> ',
+                                        item.icon,
                                         '<span class="contenttype-' + item.normalized_type + '">' + item.title + '</span>',
                                     '</div>'
                                 ]);
@@ -838,7 +838,7 @@ BrowserDialog.prototype.getFolderListing = function (context_url, method) {
                 if (i > 0) {
                     html.push(" &rarr; ");
                 }
-                html.push('<img src="' + item.icon + '" /> ');
+                html.push(item.icon);
                 if (i === len - 1) {
                     html.push(item.title);
                 } else {

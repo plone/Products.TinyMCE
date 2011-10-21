@@ -11,7 +11,7 @@
   <link rel="stylesheet" type="text/css" tal:attributes="href string:${portal_url}/portal_css/columns.css" />
 </head>
 <body id="plonebrowser">
-  <div class="dialog-wrapper" id="content">
+  <div class="dialog-wrapper icons-on" id="content">
 		<div id="linktype_panel" class="column hide">
 			<h2 i18n:domain="plone.tinymce" i18n:translate="">Type of link</h2>
 			<div id="linktype">

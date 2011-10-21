@@ -23,8 +23,6 @@ class JSONFolderListing(object):
 
     root_icon = "img/home.png"
     folder_icon = "img/folder.png"
-    picture_icon = "img/picture.png"
-    linkable_icon = "img/linkable.png"
 
     def __init__(self, context):
         """Constructor"""
@@ -93,16 +91,18 @@ class JSONFolderListing(object):
             # get all items from siteroot to context (title and url)
             results['path'] = self.getBreadcrumbs()
 
+        plone_layout = self.context.restrictedTraverse('@@plone_layout', None)
+        if plone_layout is None:
+            # Plone 3
+            plone_view = self.context.restrictedTraverse('@@plone')
+            getIcon = lambda brain: plone_view.getIcon(brain)()
+        else:
+            # Plone >= 4
+            getIcon = lambda brain: plone_layout.getIcon(brain)()
+
         # get all portal types and get information from brains
         path = '/'.join(object.getPhysicalPath())
         for brain in portal_catalog(portal_type=filter_portal_types, sort_on='getObjPositionInParent', path={'query': path, 'depth': 1}):
-            if brain.is_folderish:
-                icon = self.folder_icon
-            elif brain.portal_type in image_types:
-                icon = self.picture_icon
-            else:
-                icon = self.linkable_icon
-
             catalog_results.append({
                 'id': brain.getId,
                 'uid': brain.UID or None,  # Maybe Missing.Value
@@ -110,7 +110,7 @@ class JSONFolderListing(object):
                 'portal_type': brain.portal_type,
                 'normalized_type': normalizer.normalize(brain.portal_type),
                 'title': brain.Title == "" and brain.id or brain.Title,
-                'icon': icon,
+                'icon': getIcon(brain),
                 'description': brain.Description,
                 'is_folderish': brain.is_folderish,
                 })
