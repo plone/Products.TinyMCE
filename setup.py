@@ -36,7 +36,7 @@ setup(name='Products.TinyMCE',
           'plone.outputfilters',
           'Products.ResourceRegistries',
           'Products.Archetypes',
-	  'zope.schema>=3.6.0'
+	      'zope.schema>=3.5.4'
       ] + requires,
       extras_require={
             'test': ['plone.app.testing', 'unittest2'],
