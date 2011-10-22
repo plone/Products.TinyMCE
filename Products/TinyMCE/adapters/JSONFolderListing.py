@@ -50,7 +50,7 @@ class JSONFolderListing(object):
             result.append({
                 'title': root.title_or_id(),
                 'url': '/'.join(root.getPhysicalPath()),
-                'icon': icon,
+                'icon': '<img src="%s" width="16" height="16" />' % icon,
             })
 
         for i in range(len(relative)):
@@ -62,7 +62,7 @@ class JSONFolderListing(object):
                     result.append({
                         'title': obj.title_or_id(),
                         'url': root_url + '/' + '/'.join(now),
-                        'icon': self.folder_icon,
+                        'icon': '<img src="%s" width="16" height="16" />' % self.folder_icon,
                     })
         return result
 
