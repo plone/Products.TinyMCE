@@ -95,7 +95,7 @@ class JSONFolderListing(object):
         if plone_layout is None:
             # Plone 3
             plone_view = self.context.restrictedTraverse('@@plone')
-            getIcon = lambda brain: plone_view.getIcon(brain)()
+            getIcon = lambda brain: plone_view.getIcon(brain).html_tag()
         else:
             # Plone >= 4
             getIcon = lambda brain: plone_layout.getIcon(brain)()
