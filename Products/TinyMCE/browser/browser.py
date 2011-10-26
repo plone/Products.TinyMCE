@@ -121,7 +121,7 @@ class TinyMCEBrowserView(BrowserView):
 
     def jsonConfiguration(self, fieldname):
         """Return the configuration in JSON"""
-        utility = getUtility(ITinyMCE)
+        utility = getToolByName(self.context, 'portal_tinymce')
         return utility.getConfiguration(context=self.context,
                                         field=fieldname,
                                         request=self.request)

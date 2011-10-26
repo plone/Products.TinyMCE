@@ -16,6 +16,7 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.ResourceRegistries.tools.packer import JavascriptPacker
 
 from Products.TinyMCE.interfaces.utility import ITinyMCE
+from Products.CMFCore.utils import getToolByName
 
 try:
     import simplejson as json
@@ -43,7 +44,7 @@ class TinyMCECompressorView(BrowserView):
 			    name="plone_portal_state")
             base_url = '/'.join([portal_state.portal_url(), self.__name__])
 
-        config = queryUtility(ITinyMCE).getConfiguration(
+        config = getToolByName(self.context,'portal_tinymce').getConfiguration(
                 context=self.context,
                 request=self.request,
                 script_url=base_url,
