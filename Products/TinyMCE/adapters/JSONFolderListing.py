@@ -13,6 +13,7 @@ from Products.TinyMCE.adapters.interfaces.JSONFolderListing import IJSONFolderLi
 from Products.CMFCore.interfaces._content import IFolderish
 from Products.CMFCore.utils import getToolByName
 from Acquisition import aq_inner
+from Acquisition import aq_parent
 
 
 class JSONFolderListing(object):
@@ -63,12 +64,12 @@ class JSONFolderListing(object):
 
         # check if object is a folderish object, if not, get it's parent.
         if not IFolderish.providedBy(object):
-            object = object.getParentNode()
+            object = aq_parent(object)
 
         if INavigationRoot.providedBy(object) or (rooted == "True" and document_base_url[:-1] == object.absolute_url()):
             results['parent_url'] = ''
         else:
-            results['parent_url'] = object.getParentNode().absolute_url()
+            results['parent_url'] = aq_parent(object).absolute_url()
 
         if rooted == "True":
             results['path'] = self.getBreadcrumbs(results['parent_url'])

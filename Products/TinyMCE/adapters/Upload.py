@@ -1,4 +1,5 @@
 from Acquisition import aq_inner
+from Acquisition import aq_parent
 from zExceptions import BadRequest
 from zope.interface import implements
 from zope.component import getUtility
@@ -72,7 +73,7 @@ class Upload(object):
 
         object = aq_inner(self.context)
         if not IFolderish.providedBy(object):
-            object = object.getParentNode()
+            object = aq_parent(object)
 
         context = self.context
         request = context.REQUEST
