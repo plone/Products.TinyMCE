@@ -12,7 +12,11 @@ class ATAnchorView(BrowserView):
         """Return a list of Anchor names"""
         results = []
         tree = HTMLTreeBuilder.TreeBuilder()
-        tree.feed('<root>%s</root>' % self.context.getPrimaryField().getAccessor(self.context)())
+        htmlsnippet = self.context.getPrimaryField().getAccessor(self.context)()
+        try:
+            tree.feed('<root>%s</root>' % htmlsnippet)
+        except AssertionError:
+            return results
         rootnode = tree.close()
         for x in rootnode.getiterator():
             if x.tag == "a":

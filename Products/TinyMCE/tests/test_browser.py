@@ -1,6 +1,9 @@
+# -*- coding: utf-8 -*-
 from Products.TinyMCE.utility import form_adapter
+from Products.TinyMCE.tests.base import IntegrationTestCase
 from Products.TinyMCE.tests.base import FunctionalTestCase
 
+from Products.TinyMCE.browser.atanchors import ATAnchorView
 
 class BrowserTestCase(FunctionalTestCase):
 
@@ -86,3 +89,17 @@ class BrowserTestCase(FunctionalTestCase):
         self.assertIn('"directionality": "rtl"', output)
 
         # TODO: upload
+
+class AnchorTestCase(IntegrationTestCase):
+
+    def setUp(self):
+        super(AnchorTestCase, self).setUp()
+        self.document = self.portal.invokeFactory('Document', id='document')
+
+    def test_brokenxml(self):
+        context = self.portal['document']
+        context.setText('''<p><div></p>''')
+        view = ATAnchorView(context, self.app.REQUEST)
+        self.assertEqual(view.listAnchorNames(), [])
+
+
