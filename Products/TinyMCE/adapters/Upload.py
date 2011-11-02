@@ -1,10 +1,12 @@
+from Acquisition import aq_inner
+from Acquisition import aq_parent
+from zExceptions import BadRequest
 from zope.interface import implements
 from Products.CMFCore.utils import getToolByName
 
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.adapters.interfaces.Upload import IUpload
 from Products.CMFCore.interfaces._content import IFolderish
-from Acquisition import aq_inner
 from plone.outputfilters.browser.resolveuid import uuidFor
 
 
@@ -64,6 +66,10 @@ class Upload(object):
     def upload(self):
         """Adds uploaded file"""
         context = aq_inner(self.context)
+        if not IFolderish.providedBy(context):
+            context = aq_parent(context)
+
+        context = self.context
         request = context.REQUEST
         ctr_tool = getToolByName(context, 'content_type_registry')
         id = request['uploadfile'].filename

@@ -5,6 +5,7 @@ HISTORY
 1.3 (unreleased)
 ------------------
 
+<<<<<<< HEAD
 - Use TinyMCE compressor to provide editor and plugins
   [tom_gross]
 
@@ -13,6 +14,14 @@ HISTORY
 
 1.2.9 (unreleased)
 ------------------
+
+- Use aq_parent instead of getParentNode for Zope trunk compatibility.
+  [elro]
+
+- Display error message when uploading a file with a name consisting
+  only of spaces.
+  Fixes http://dev.plone.org/plone/ticket/10394
+  [maurits]
 
 - Search does not work with Virtual Hosting (close #10308)
   [keul] [mamico]
