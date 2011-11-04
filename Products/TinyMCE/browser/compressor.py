@@ -24,6 +24,20 @@ try:
 except ImportError:
     import json
 
+def isContextUrl(url):
+    """Some url do not represent context. Check is based on url. If 
+    fragment are detected, this method return False
+    fragments are portal_factory, ++contextportlets++, ++groupportlets++,
+    ++contenttypeportlets++
+    """
+    fragments = ('portal_factory', '++contextportlets++', '++groupportlets++', 
+                '++contenttypeportlets++')
+
+    for fragment in fragments:
+        if fragment in url:
+            return False
+
+    return True
 
 class TinyMCECompressorView(BrowserView):
     tiny_mce_gzip = ViewPageTemplateFile('tiny_mce_gzip.js')
@@ -40,7 +54,7 @@ class TinyMCECompressorView(BrowserView):
         base_url = '/'.join([self.context.absolute_url(), self.__name__])
         # fix for Plone <4.1 http://dev.plone.org/plone/changeset/48436
         # only portal_factory part of condition!
-        if 'portal_factory' or '++contextportlets++' in base_url:
+        if not isContextUrl(base_url):
             portal_state = getMultiAdapter((self.context, self.request),
 			    name="plone_portal_state")
             base_url = '/'.join([portal_state.portal_url(), self.__name__])
