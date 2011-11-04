@@ -40,6 +40,8 @@
 						</div>
 
 						<div class="field">
+                                                        <!-- align is not used in form but the JS depends on it -->
+                              				<input id="align" name="align" type="hidden" value="" />
 							<label for="valign" i18n:translate="table_dlg_valign"></label>
 							<div class="widget">
 								<select id="valign" name="valign">
