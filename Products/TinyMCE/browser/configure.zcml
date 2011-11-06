@@ -47,6 +47,8 @@
         <browser:page attribute="jsonConfiguration" name="tinymce-jsonconfiguration" />
     </browser:pages>
 
+    <include package="Products.CMFCore" file="permissions.zcml" />
+
     <browser:pages
         for="*"
         class=".browser.TinyMCEBrowserView"

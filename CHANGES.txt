@@ -5,6 +5,9 @@ HISTORY
 1.2.9 (unreleased)
 ------------------
 
+- Include Products.CMFCore's permissions.zcml to ensure Plone 4.1 compatibility.
+  [thomasdesvenain]
+
 - Use aq_parent instead of getParentNode for Zope trunk compatibility.
   [elro]
 
