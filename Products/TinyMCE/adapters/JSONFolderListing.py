@@ -23,6 +23,7 @@ class JSONFolderListing(object):
 
     root_icon = "img/home.png"
     folder_icon = "img/folder.png"
+    listing_base_query = {}
 
     def __init__(self, context):
         """Constructor"""
@@ -102,7 +103,11 @@ class JSONFolderListing(object):
 
         # get all portal types and get information from brains
         path = '/'.join(object.getPhysicalPath())
-        for brain in portal_catalog(portal_type=filter_portal_types, sort_on='getObjPositionInParent', path={'query': path, 'depth': 1}):
+        query = self.listing_base_query.copy()
+        query.update({'portal_type': filter_portal_types,
+                      'sort_on': 'getObjPositionInParent',
+                      'path': {'query': path, 'depth': 1}})
+        for brain in portal_catalog(**query):
             catalog_results.append({
                 'id': brain.getId,
                 'uid': brain.UID or None,  # Maybe Missing.Value
