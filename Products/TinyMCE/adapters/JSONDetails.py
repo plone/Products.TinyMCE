@@ -4,6 +4,8 @@ try:
 except ImportError:
     import json
 
+from Acquisition import aq_inner
+
 from zope.interface import implements
 from zope.component import getUtility
 from zope.component import getMultiAdapter
@@ -29,7 +31,7 @@ class JSONDetails(object):
            of this object.
         """
 
-        utility = getUtility(ITinyMCE)
+        utility = getToolByName(aq_inner(self.context), 'portal_tinymce')
         anchor_portal_types = utility.containsanchors.split('\n')
         image_portal_types = utility.imageobjects.split('\n')
 

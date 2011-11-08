@@ -2,7 +2,6 @@ from zope.interface import implements
 from Products.CMFCore.utils import getToolByName
 
 from Products.TinyMCE.interfaces.utility import ITinyMCE
-from zope.component import getUtility
 from Products.TinyMCE.adapters.interfaces.Upload import IUpload
 from Products.CMFCore.interfaces._content import IFolderish
 from Acquisition import aq_inner
@@ -64,14 +63,9 @@ class Upload(object):
 
     def upload(self):
         """Adds uploaded file"""
-
-        object = aq_inner(self.context)
-        if not IFolderish.providedBy(object):
-            object = object.getParentNode()
-
-        context = self.context
+        context = aq_inner(self.context)
         request = context.REQUEST
-        ctr_tool = getToolByName(self.context, 'content_type_registry')
+        ctr_tool = getToolByName(context, 'content_type_registry')
         id = request['uploadfile'].filename
 
         content_type = request['uploadfile'].headers["Content-Type"]
@@ -125,7 +119,7 @@ class Upload(object):
         obj.reindexObject()
         folder = obj.aq_parent.absolute_url()
 
-        utility = getUtility(ITinyMCE)
+        utility = getToolByName(context, 'portal_tinymce')
         if utility.link_using_uids:
             path = "resolveuid/%s" % (uuidFor(obj))
         else:

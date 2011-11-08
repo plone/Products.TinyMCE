@@ -31,8 +31,8 @@ class TinyMCEBrowserView(BrowserView):
     def upload(self):
         """Upload a file to the zodb"""
 
-        object = IUpload(self.context)
-        return object.upload()
+        context = IUpload(self.context)
+        return context.upload()
 
     def save(self, text, fieldname):
         """Saves the specified richedit field"""
@@ -51,7 +51,7 @@ class TinyMCEBrowserView(BrowserView):
     def jsonLinkableFolderListing(self, rooted, document_base_url):
         """Returns the folderlisting of linkable objects in JSON"""
 
-        utility = getUtility(ITinyMCE)
+        utility = getToolByName(aq_inner(self.context), 'portal_tinymce')
         linkable_portal_types = utility.linkable.split('\n')
 
         object = IJSONFolderListing(self.context, None)
@@ -69,7 +69,7 @@ class TinyMCEBrowserView(BrowserView):
     def jsonImageFolderListing(self, rooted, document_base_url):
         """Returns the folderlisting of image objects in JSON"""
 
-        utility = getUtility(ITinyMCE)
+        utility = getToolByName(aq_inner(self.context), 'portal_tinymce')
         image_portal_types = utility.imageobjects.split('\n')
         image_portal_types.extend(utility.containsobjects.split('\n'))
 
@@ -88,7 +88,7 @@ class TinyMCEBrowserView(BrowserView):
     def jsonLinkableSearch(self, searchtext):
         """Returns the search results of linkable objects in JSON"""
 
-        utility = getUtility(ITinyMCE)
+        utility = getToolByName(aq_inner(self.context), 'portal_tinymce')
         linkable_portal_types = utility.linkable.split('\n')
         linkable_portal_types.extend(utility.containsobjects.split('\n'))
 
@@ -101,7 +101,7 @@ class TinyMCEBrowserView(BrowserView):
     def jsonImageSearch(self, searchtext):
         """Returns the search results of image objects in JSON"""
 
-        utility = getUtility(ITinyMCE)
+        utility = getToolByName(aq_inner(self.context), 'portal_tinymce')
         image_portal_types = utility.imageobjects.split('\n')
         image_portal_types.extend(utility.containsobjects.split('\n'))
 
