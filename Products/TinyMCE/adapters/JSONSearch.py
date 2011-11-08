@@ -25,8 +25,10 @@ class JSONSearch(object):
         query['portal_type'] = filter_portal_types
         query['sort_on'] = 'sortable_title'
         query['path'] = self.context.absolute_url_path()
-        query['SearchableText'] = '%s' % searchtext
-
+        #query['SearchableText'] = searchtext
+        #weird , need to cleanup searchable text
+        query['SearchableText'] = searchtext.replace('%20', ' ')
+        
         results['parent_url'] = ''
         results['path'] = []
         if searchtext:
