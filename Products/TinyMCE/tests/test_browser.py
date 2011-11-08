@@ -102,4 +102,16 @@ class AnchorTestCase(IntegrationTestCase):
         view = ATAnchorView(context, self.app.REQUEST)
         self.assertEqual(view.listAnchorNames(), [])
 
+    def test_primaryfield(self):
+        context = self.portal['document']
+        context.setText('''<p><a name="foobar"></a></p>''')
+        view = ATAnchorView(context, self.app.REQUEST)
+        self.assertEqual(view.listAnchorNames(), ['foobar'])
 
+    def test_notprimaryfield(self):
+        context = self.portal['document']
+        context.setLocation('''<p><a name="foobar"></a></p>''')
+        context.setText('')
+        view = ATAnchorView(context, self.app.REQUEST)
+        self.assertEqual(view.listAnchorNames(), [])
+        self.assertEqual(view.listAnchorNames('location'), ['foobar'])
