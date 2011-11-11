@@ -59,15 +59,17 @@ class TinyMCECompressorView(BrowserView):
 			    name="plone_portal_state")
             base_url = '/'.join([portal_state.portal_url(), self.__name__])
 
-        config = getToolByName(self.context,'portal_tinymce').getConfiguration(
-                context=self.context,
-                request=self.request,
-                script_url=base_url,
-            )
-
         if not isJS:
-            tiny_mce_gzip = self.tiny_mce_gzip(tinymce_json_config=config)
-	    # XXX don't do this in debug mode
+            tinymce_config = []
+            for field in self.context.schema.filterFields(type='text'):
+                if field.widget.getName() == 'RichWidget':
+                    fieldname = field.getName()
+                    jsonconfig = getMultiAdapter((self.context, self.request),
+                                             name="tinymce-jsonconfiguration")
+                    tinymce_config.append({'fieldname': fieldname,
+                                           'config': jsonconfig(fieldname, base_url)})
+            tiny_mce_gzip = self.tiny_mce_gzip(tinymce_json_config=tinymce_config)
+	        # XXX don't do this in debug mode
             return JavascriptPacker('full').pack(tiny_mce_gzip)
 
         now = datetime.utcnow()
@@ -83,6 +85,14 @@ class TinyMCECompressorView(BrowserView):
         ]
 
         # add custom plugins
+        # this needs to call the utility method directly because we are
+        # in an AJAX call and tinymce-jsonconfiguration is on too.
+        # This results in a conflict
+        config = getToolByName(self.context,'portal_tinymce').getConfiguration(
+                context=self.context,
+                request=self.request,
+                script_url=base_url)
+
         config = json.loads(config)
         customplugins = {}
         for plugin in config['customplugins']:
