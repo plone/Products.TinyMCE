@@ -61,6 +61,8 @@ class TinyMCECompressorView(BrowserView):
 
         if not isJS:
             tinymce_config = []
+            if not hasattr(self.context, 'schema'):
+                return ''
             for field in self.context.schema.filterFields(type='text'):
                 if field.widget.getName() == 'RichWidget':
                     fieldname = field.getName()
