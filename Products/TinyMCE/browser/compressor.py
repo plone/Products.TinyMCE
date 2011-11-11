@@ -85,17 +85,9 @@ class TinyMCECompressorView(BrowserView):
         ]
 
         # add custom plugins
-        # this needs to call the utility method directly because we are
-        # in an AJAX call and tinymce-jsonconfiguration is on too.
-        # This results in a conflict
-        config = getToolByName(self.context,'portal_tinymce').getConfiguration(
-                context=self.context,
-                request=self.request,
-                script_url=base_url)
-
-        config = json.loads(config)
+        portal_tinymce = getToolByName(self.context,'portal_tinymce')
         customplugins = {}
-        for plugin in config['customplugins']:
+        for plugin in portal_tinymce.customplugins.splitlines():
             if '|' in plugin:
                 name, path = plugin.split('|', 1)
                 customplugins[name] = path
