@@ -21,11 +21,19 @@ class JSONSearch(object):
 
         catalog_results = []
         results = {}
-
+        query = {}
+        query['portal_type'] = filter_portal_types
+        query['sort_on'] = 'sortable_title'
+        query['path'] = self.context.absolute_url_path()
+        #query['SearchableText'] = searchtext
+        #weird , need to cleanup searchable text
+        query['SearchableText'] = searchtext.replace('%20', ' ')
+        
         results['parent_url'] = ''
         results['path'] = []
         if searchtext:
-            plone_layout = self.context.restrictedTraverse('@@plone_layout', None)
+            plone_layout = self.context.restrictedTraverse('@@plone_layout', 
+                                                           None)
             if plone_layout is None:
                 # Plone 3
                 plone_view = self.context.restrictedTraverse('@@plone')
@@ -33,7 +41,10 @@ class JSONSearch(object):
             else:
                 # Plone >= 4
                 getIcon = lambda brain: plone_layout.getIcon(brain)()
-            for brain in self.context.portal_catalog.searchResults({'SearchableText': '%s*' % searchtext, 'portal_type': filter_portal_types, 'sort_on': 'sortable_title', 'path': self.context.absolute_url_path()}):
+            
+            brains = self.context.portal_catalog.searchResults(**query)
+
+            for brain in brains:
                 catalog_results.append({
                     'id': brain.getId,
                     'uid': brain.UID,
@@ -52,5 +63,6 @@ class JSONSearch(object):
         results['upload_allowed'] = False
 
         # return results in JSON format
-        self.context.REQUEST.response.setHeader("Content-type", "application/json")
+        self.context.REQUEST.response.setHeader("Content-type",
+                                                "application/json")
         return json.dumps(results)
