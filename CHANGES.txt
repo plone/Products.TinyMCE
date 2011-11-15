@@ -5,6 +5,12 @@ HISTORY
 1.2.9 (unreleased)
 ------------------
 
+- Fixed content_css when the Plone Site id is 'plone'.  This is used
+  to display the text during editing in the same layout as it appears
+  when viewing.
+  Fixes http://dev.plone.org/plone/ticket/11430
+  [maurits]
+
 - Add value attributes to Insert and Cancel input tags for the ploneimage popup
   template.  When Chameleon is installed attributes that don't already exist on
   a tag don't get translated.

@@ -5,6 +5,11 @@ except ImportError:
     import simplejson as json
 from types import StringTypes
 from zope.component import getUtility, queryUtility
+try:
+    from zope.component.hooks import getSite
+    getSite  #Pyflakes
+except ImportError:
+    from zope.app.component.hooks import getSite
 from zope.i18n import translate
 from zope.i18nmessageid import MessageFactory
 from zope.interface import classProvides
@@ -20,7 +25,6 @@ from Products.Archetypes.interfaces import IBaseObject
 from Products.Archetypes.interfaces.field import IImageField
 from Products.CMFCore.interfaces._content import IFolderish
 from Products.CMFCore.utils import getToolByName
-from Products.CMFCore.interfaces import ISiteRoot
 try:
     from plone.app.layout.globals.portal import RIGHT_TO_LEFT
 except ImportError:
@@ -750,10 +754,18 @@ class TinyMCE(SimpleItem):
         else:
             results['contextmenu'] = False
 
+        portal = getSite()
+        results['portal_url'] = aq_inner(portal).absolute_url()
+        nav_root = getNavigationRootObject(context, portal)
+        results['navigation_root_url'] = nav_root.absolute_url()
+
         if self.content_css and self.content_css.strip() != "":
             results['content_css'] = self.content_css
         else:
-            results['content_css'] = self.absolute_url() + """/@@tinymce-getstyle"""
+            results['content_css'] = '/'.join([
+                results['portal_url'],
+                self.getId(),
+                "@@tinymce-getstyle"])
 
         if self.link_using_uids:
             results['link_using_uids'] = True
@@ -775,11 +787,6 @@ class TinyMCE(SimpleItem):
             results['customplugins'].extend(self.customplugins.split('\n'))
 
         results['entity_encoding'] = self.entity_encoding
-
-        portal = getUtility(ISiteRoot)
-        results['portal_url'] = aq_inner(portal).absolute_url()
-        nav_root = getNavigationRootObject(context, portal)
-        results['navigation_root_url'] = nav_root.absolute_url()
 
         props = getToolByName(self, 'portal_properties')
         livesearch = props.site_properties.getProperty('enable_livesearch', False)
