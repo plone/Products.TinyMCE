@@ -7,6 +7,7 @@ Copyright (c) 2008 Jason Davies
 Licensed under the terms of the MIT License (see LICENSE.txt)
 """
 
+from Acquisition import aq_inner
 from datetime import datetime
 import os.path
 
@@ -71,8 +72,11 @@ class TinyMCECompressorView(BrowserView):
                     tinymce_config.append({'fieldname': fieldname,
                                            'config': jsonconfig(fieldname, base_url)})
             tiny_mce_gzip = self.tiny_mce_gzip(tinymce_json_config=tinymce_config)
-	        # XXX don't do this in debug mode
-            return JavascriptPacker('full').pack(tiny_mce_gzip)
+            js_tool = getToolByName(aq_inner(self.context), 'portal_javascripts')
+            if js_tool.getDebugMode():
+                return tiny_mce_gzip
+            else:
+                return JavascriptPacker('safe').pack(tiny_mce_gzip)
 
         now = datetime.utcnow()
         response['Date'] = now.strftime('%a, %d %b %Y %H:%M:%S GMT')
