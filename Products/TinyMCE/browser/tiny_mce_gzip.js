@@ -11,11 +11,10 @@
  */
 
 jQuery(function($) {
-    var conf = $.extend({
-            elements: this.id
-        },
-        <tal:url tal:content="structure options/tinymce_json_config" />);
-    $('textarea.mce_editable').tinymce(conf);
+  <tal:loop repeat="conf options/tinymce_json_config">
+    $('textarea#<tal:fieldname tal:replace="conf/fieldname" />').tinymce(
+      <tal:url tal:replace="structure conf/config" />);
+  </tal:loop>
 
     // set Text Format dropdown untabbable for better UX
     // TODO: find a better way to fix this
