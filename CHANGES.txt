@@ -5,7 +5,6 @@ HISTORY
 1.3 (unreleased)
 ------------------
 
-<<<<<<< HEAD
 - Use TinyMCE compressor to provide editor and plugins
   [tom_gross]
 
@@ -15,16 +14,17 @@ HISTORY
 1.2.9 (unreleased)
 ------------------
 
+- Fixed content_css when the Plone Site id is 'plone'.  This is used
+  to display the text during editing in the same layout as it appears
+  when viewing.
+  Fixes http://dev.plone.org/plone/ticket/11430
+  [maurits]
+
 - Include Products.CMFCore's permissions.zcml to ensure Plone 4.1 compatibility.
   [thomasdesvenain]
 
 - Use aq_parent instead of getParentNode for Zope trunk compatibility.
   [elro]
-
-- Display error message when uploading a file with a name consisting
-  only of spaces.
-  Fixes http://dev.plone.org/plone/ticket/10394
-  [maurits]
 
 - Search does not work with Virtual Hosting (close #10308)
   [keul] [mamico]

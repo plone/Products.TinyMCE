@@ -6,6 +6,11 @@ except ImportError:
 from types import StringTypes
 
 from zope.component import getUtilitiesFor, getUtility, queryUtility, getMultiAdapter
+try:
+    from zope.component.hooks import getSite
+    getSite  #Pyflakes
+except ImportError:
+    from zope.app.component.hooks import getSite
 from zope.i18n import translate
 from zope.i18nmessageid import MessageFactory
 from zope.interface import classProvides, implements
@@ -16,7 +21,6 @@ from OFS.SimpleItem import SimpleItem
 from Products.Archetypes.Field import ImageField
 from Products.Archetypes.interfaces import IBaseObject
 from Products.Archetypes.interfaces.field import IImageField
-from Products.CMFCore.interfaces import ISiteRoot
 from Products.CMFCore.interfaces._content import IFolderish
 from Products.CMFCore.utils import getToolByName
 try:
@@ -843,10 +847,18 @@ class TinyMCE(SimpleItem):
             portal_state = getMultiAdapter((context, request), name=u'plone_portal_state')
             results['directionality'] = portal_state.is_rtl() and 'rtl' or 'ltr'
 
+        portal = getSite()
+        results['portal_url'] = aq_inner(portal).absolute_url()
+        nav_root = getNavigationRootObject(context, portal)
+        results['navigation_root_url'] = nav_root.absolute_url()
+
         if self.content_css and self.content_css.strip() != "":
             results['content_css'] = self.content_css
         else:
-            results['content_css'] = self.absolute_url() + """/@@tinymce-getstyle"""
+            results['content_css'] = '/'.join([
+                results['portal_url'],
+                self.getId(),
+                "@@tinymce-getstyle"])
 
         results['link_using_uids'] = self.link_using_uids
         results['contextmenu'] = self.contextmenu
@@ -865,19 +877,6 @@ class TinyMCE(SimpleItem):
 
 
         results['entity_encoding'] = self.entity_encoding
-
-        portal = getUtility(ISiteRoot)
-        # absolute_url only works, if the request is in the
-        # acquisition chain. this is not always the case, if we are
-        # called from an utility.
-        # Try hard to mimic the absolute_url behaviour
-        if not hasattr(portal, 'REQUEST') and request is not None:
-            portal_url = request.physicalPathToURL(portal.getPhysicalPath())
-        else:
-            portal_url = portal.absolute_url()
-        results['portal_url'] = portal_url
-        nav_root = getNavigationRootObject(context, portal)
-        results['navigation_root_url'] = nav_root.absolute_url()
 
         props = getToolByName(self, 'portal_properties')
         livesearch = props.site_properties.getProperty('enable_livesearch', False)
