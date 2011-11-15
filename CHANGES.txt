@@ -5,6 +5,12 @@ HISTORY
 1.1.12 (unreleased)
 -------------------
 
+- Backport fix: fixed content_css when the Plone Site id is 'plone'.
+  This is used to display the text during editing in the same layout
+  as it appears when viewing.
+  Fixes http://dev.plone.org/plone/ticket/11430
+  [maurits]
+
 - Display error message when uploading a file with a name consisting
   only of spaces.
   Fixes http://dev.plone.org/plone/ticket/10394
@@ -15,6 +21,7 @@ HISTORY
 
 - Backport fix: search does not work with Virtual Hosting (see #10308)
   [keul] [mamico]  
+
 
 1.1.11 (2011-07-05)
 -------------------
