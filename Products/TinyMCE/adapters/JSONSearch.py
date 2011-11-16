@@ -20,19 +20,18 @@ class JSONSearch(object):
         """Returns the actual search result"""
 
         catalog_results = []
-        results = {}
-        query = {}
-        query['portal_type'] = filter_portal_types
-        query['sort_on'] = 'sortable_title'
-        query['path'] = self.context.absolute_url_path()
-        #query['SearchableText'] = searchtext
-        #weird , need to cleanup searchable text
-        query['SearchableText'] = searchtext.replace('%20', ' ')
-        
-        results['parent_url'] = ''
-        results['path'] = []
+        results = {
+            'parent_url': '',
+            'path': [],
+        }
+        query = {
+            'portal_type': filter_portal_types,
+            'sort_on': 'sortable_title',
+            'path': self.context.absolute_url_path(),
+            'SearchableText': searchtext,
+        }
         if searchtext:
-            plone_layout = self.context.restrictedTraverse('@@plone_layout', 
+            plone_layout = self.context.restrictedTraverse('@@plone_layout',
                                                            None)
             if plone_layout is None:
                 # Plone 3
@@ -41,7 +40,7 @@ class JSONSearch(object):
             else:
                 # Plone >= 4
                 getIcon = lambda brain: plone_layout.getIcon(brain)()
-            
+
             brains = self.context.portal_catalog.searchResults(**query)
 
             for brain in brains:
