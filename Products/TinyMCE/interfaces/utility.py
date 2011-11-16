@@ -82,7 +82,7 @@ class ITinyMCEToolbar(Interface):
         required=False)
 
     toolbar_external = schema.Bool(
-        title=_(u"External"),
+        title=_(u"Place toolbar on top of the page"),
         description=_(u"This option enables the external toolbar which will be placed at the top of the page."),
         required=False)
 
