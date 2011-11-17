@@ -945,6 +945,8 @@ class TinyMCE(SimpleItem):
         results['inlinepopups_skin'] = "plonepopup"
         results['body_class'] = "documentContent"
         results['body_id'] = "content"
+        results['remove_linebreaks'] = False
+        results['convert_newlines_to_brs'] = True
         results['table_firstline_th'] = True
         results['force_span_wrappers'] = True
         results['fix_list_elements'] = False
