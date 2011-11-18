@@ -41,17 +41,6 @@ class ITinyMCELayout(Interface):
         description=_(u"This option gives you the ability to specify the height of the editor in pixels. If auto resize is enabled this value is used as minimum height."),
         required=False)
 
-    directionality = schema.Choice(
-        title=_(u"Writing direction"),
-        description=_(u"This option specifies the default writing direction, some languages (Like Hebrew, Arabic, Urdu...) write from right to left instead of left to right."),
-        missing_value=set(),
-        vocabulary=SimpleVocabulary([
-            SimpleTerm('auto', 'auto',
-                       _(u'Auto detect from content language')),
-            SimpleTerm('ltr', 'ltr', _(u"Left to right")),
-            SimpleTerm('rtl', 'rtl', _(u"Right to left"))]),
-        required=False)
-
     contextmenu = schema.Bool(
         title=_(u"Enable contextmenu."),
         description=_(u"This option gives you the ability to enable/disable the use of the contextmenu."),

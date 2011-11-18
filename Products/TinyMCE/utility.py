@@ -5,7 +5,7 @@ except ImportError:
     import json
 from types import StringTypes
 
-from zope.component import getUtilitiesFor, getUtility, queryUtility
+from zope.component import getUtilitiesFor, getUtility, queryUtility, getMultiAdapter
 from zope.i18n import translate
 from zope.i18nmessageid import MessageFactory
 from zope.interface import classProvides, implements
@@ -61,7 +61,6 @@ class TinyMCE(SimpleItem):
     autoresize = FieldProperty(ITinyMCELayout['autoresize'])
     editor_width = FieldProperty(ITinyMCELayout['editor_width'])
     editor_height = FieldProperty(ITinyMCELayout['editor_height'])
-    directionality = FieldProperty(ITinyMCELayout['directionality'])
     contextmenu = FieldProperty(ITinyMCELayout['contextmenu'])
     content_css = FieldProperty(ITinyMCELayout['content_css'])
     styles = FieldProperty(ITinyMCELayout['styles'])
@@ -830,17 +829,11 @@ class TinyMCE(SimpleItem):
         except (TypeError, ValueError):
             results['toolbar_width'] = 440
 
-        if self.directionality == 'auto':
-            language = context.Language()
-            if not language:
-                portal_properties = getToolByName(context, "portal_properties")
-                site_properties = portal_properties.site_properties
-                language = site_properties.getProperty('default_language',
-                                                       None)
-            directionality = (language[:2] in RIGHT_TO_LEFT) and 'rtl' or 'ltr'
-        else:
-            directionality = self.directionality
-        results['directionality'] = directionality
+	# is_rtl handles every possible setting as far as RTL/LTR is concerned
+	# pass that to tinmyce
+	if request:
+            portal_state = getMultiAdapter((context, request), name=u'plone_portal_state')
+            results['directionality'] = portal_state.is_rtl() and 'rtl' or 'ltr'
 
         if self.content_css and self.content_css.strip() != "":
             results['content_css'] = self.content_css

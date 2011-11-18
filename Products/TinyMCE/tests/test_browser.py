@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from Products.TinyMCE.utility import form_adapter
 from Products.TinyMCE.tests.base import IntegrationTestCase
 from Products.TinyMCE.tests.base import FunctionalTestCase
 
@@ -78,8 +77,6 @@ class BrowserTestCase(FunctionalTestCase):
 
         # If we configure directivity to 'auto', the directivity is set depending
         # on the content language.
-        utility = form_adapter(self.portal)
-        utility.directionality = 'auto'
         doc = self.portal[self.document]
         self.assertEqual(doc.Language(), 'en')
         output = self.portal.restrictedTraverse(document_jsonconfig_url)('text')

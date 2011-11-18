@@ -15,7 +15,6 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
             'autoresize': {'type': 'Bool', 'default': False},
             'editor_width': {'type': 'Text', 'default': u'100%'},
             'editor_height': {'type': 'Text', 'default': u'400'},
-            'directionality': {'type': 'Text', 'default': u'ltr'},
             'contextmenu': {'type': 'Bool', 'default': True},
             'content_css': {'type': 'Text', 'default': u''},
             'styles': {'type': 'List', 'default': u'Heading|h2\nSubheading|h3\nLiteral|pre\nDiscreet|p|discreet\nPull-quote|div|pullquote\nCall-out|p|callout\nHighlight|span|visualHighlight\nOdd row|tr|odd\nEven row|tr|even\nHeading cell|th|\nPage break (print only)|div|pageBreak\nClear floats|div|visualClear'},
