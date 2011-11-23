@@ -36,23 +36,25 @@
 						</div>
 
 						<div class="field">
-							<label id="colslabel" for="cols" i18n:translate="table_dlg_cols"></label>
-							<div class="widget">
-								<input id="cols" name="cols" type="text" value="" size="3" maxlength="3" class="required number min1" />
+							<div class="col-row">
+    							<label id="colslabel" for="cols" i18n:translate="table_dlg_cols"></label>
+    							<div class="widget">
+    								<input id="cols" name="cols" type="text" value="" size="3" maxlength="3" class="required number min1" />
+    							</div>
 							</div>
-						</div>
-
-						<div class="field">
-							<label id="rowslabel" for="rows" i18n:translate="table_dlg_rows"></label>
-							<div class="widget">
-								<input id="rows" name="rows" type="text" value="" size="3" maxlength="3" class="required number min1" />
-							</div>
+                            &nbsp;x&nbsp;
+                            <div class="col-row">
+                                <label id="rowslabel" for="rows" i18n:translate="table_dlg_rows"></label>
+    							<div class="widget">
+    								<input id="rows" name="rows" type="text" value="" size="3" maxlength="3" class="required number min1" />
+    							</div>
+    						</div>
 						</div>
 
 						<div class="field">
 							<label for="summary" i18n:translate="table_dlg_summary"></label>
 							<div class="widget">
-								<input id="summary" name="summary" type="text" value="" size="30" />
+								<input id="summary" name="summary" type="text" value="" />
 							</div>
 						</div>
 					</fieldset>

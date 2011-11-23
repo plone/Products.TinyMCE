@@ -7,15 +7,10 @@
 </head>
 <body style="display: none" role="application" aria-labelledby="app_title">
 <form onsubmit="AnchorDialog.update();return false;" action="#">
-	<table border="0" cellpadding="4" cellspacing="0" role="presentation">
-		<tr>
-			<td colspan="2" class="title" id="app_title">{#advanced_dlg.anchor_title}</td>
-		</tr>
-		<tr>
-			<td class="nowrap"><label for="anchorName">{#advanced_dlg.anchor_name}:</label></td>
-			<td><input name="anchorName" type="text" class="mceFocus" id="anchorName" value="" style="width: 200px" aria-required="true" /></td>
-		</tr>
-	</table>
+	<div class="mceInputPanel">
+		<label for="anchorName">{#advanced_dlg.anchor_name}:</label>
+		<input name="anchorName" type="text" class="mceFocus" id="anchorName" value="" style="width: 200px" aria-required="true" />
+	</div>
 
 	<div class="mceActionPanel">
 		<input type="submit" id="insert" name="insert" value="{#update}" />

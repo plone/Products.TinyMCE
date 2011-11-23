@@ -26,17 +26,19 @@
 				<div id="general_panel" class="panel current">
 					<fieldset class="formPanel" role="application">
 						<div class="field">
-							<label for="width" i18n:translate="table_dlg_width"></label>
-							<div class="widget">
-								<input id="width" name="width" type="text" value="" size="4" maxlength="4" onchange="changedSize();" />
+						    <div class="width-height">
+    							<label for="width" i18n:translate="table_dlg_width"></label>
+    							<div class="widget">
+    								<input id="width" name="width" type="text" value="" size="4" maxlength="4" onchange="changedSize();" />
+    							</div>
 							</div>
-						</div>
-
-						<div class="field">
-							<label for="height" i18n:translate="table_dlg_height"></label>
-							<div class="widget">
-								<input id="height" name="height" type="text" value="" size="4" maxlength="4" onchange="changedSize();" />
-							</div>
+                            &nbsp;x&nbsp;
+						    <div class="width-height">
+    							<label for="height" i18n:translate="table_dlg_height"></label>
+    							<div class="widget">
+    								<input id="height" name="height" type="text" value="" size="4" maxlength="4" onchange="changedSize();" />
+    							</div>
+    						</div>
 						</div>
 
 						<div class="field">

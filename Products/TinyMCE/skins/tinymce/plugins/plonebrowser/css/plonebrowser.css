@@ -8,6 +8,7 @@
 #addimage_panel #uploadtitle { height: 20px; margin-bottom: 2px;}
 #addimage_panel #uploaddescription { padding-left: 4px; }
 #details_panel div.radioscrolllist { height: 347px; padding: 4px }
+#details_panel div.radioscrolllist #titledetails { overflow: hidden; text-overflow: ellipsis; white-space:nowrap; }
 #addimage_panel input, #addimage_panel textarea { width: 100%; }
 #addimage_panel #upload_iframe { display: none; }
 #searchtext { width: 100%; height: 20px; border: 1px solid #CCC; margin-bottom: 5px; }
@@ -15,7 +16,7 @@
 #general_panel { width: 100% }
 #uploadbutton { margin-top: 10px }
 #previewimagecontainer { text-align: center }
-#internallinkcontainer { width: 100%; height: 330px; position: relative }
+#internallinkcontainer { width: 100%; height: 330px; position: relative; }
 #internallinkcontainer div.item:hover { cursor: pointer; background-color: #EEE }
 #internalpath { margin-left: 5px }
 .legend { margin: 5px 0 }
@@ -23,12 +24,14 @@
 .legend .current { font-weight: bold; border: none!important; color: #000!important; cursor: default }
 .input-border { border: 0.1em solid #CCC!important }
 .browser-separator { background-color: #DDD }
+.shortcuts strong { cursor: pointer; }
 
 /* image plugin css */
 .thumbnail { overflow: hidden; }
-.thumbnail:hover { overflow: visible }
-.thumbnail:hover p { position: absolute; background: #EEE; z-index: 2; min-width: 100% }
-.thumbnail p { margin-bottom: 0; text-align: center; }
+.thumbnail:hover { position:absolute; width: 100%; z-index:2; }
+*+html .thumbnail:hover { position:relative; width: 100%; z-index:2; }
+.thumbnail:hover p { word-wrap: break-word; overflow:visible; text-overflow: visible; white-space:normal; }
+.thumbnail p { overflow: hidden; text-overflow: ellipsis; white-space:nowrap; margin-bottom: 0; text-align: center; padding:0 5px; }
 .thumbnail input { display: none }
 .thumbnail.current { border: 0.1em solid #DDD; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .thumbnail .thumb { margin: 0 auto; padding: 3px 0; position: relative }

@@ -120,7 +120,7 @@
 			 <h2></h2>
 			 <form name="upload_form" id="upload_form" method="post" target="upload_iframe" enctype="multipart/form-data">
 				 <div class="field">
-						 <label for="uploadtitle" i18n:translate="plonebrowser_dlg_title"></label>
+						 <label for="uploadtitle" i18n:domain="plone.tinymce" i18n:translate="">Title</label>
 						 <div class="widget">
 										 <input type="text" name="uploadtitle" id="uploadtitle" value="" />
 						 </div>

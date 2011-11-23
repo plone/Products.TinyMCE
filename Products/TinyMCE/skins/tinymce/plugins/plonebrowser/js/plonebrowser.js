@@ -124,6 +124,8 @@ BrowserDialog.prototype.init = function () {
 
     // setup UI depending on plugin type
     if (this.is_link_plugin === true) {
+        // we may have image selected and anchor is the wrapping node
+        selected_node = selected_node.closest('a');
         jq('#browseimage_panel h2', document).text(this.labels.label_browselink);
         jq('#addimage_panel h2', document).text(this.labels.label_addnewfile);
         jq('#linktype_panel', document).removeClass('hide');
@@ -709,10 +711,10 @@ BrowserDialog.prototype.getFolderListing = function (context_url, method) {
         'type': 'POST',
         'dataType': 'json',
         'data': {
-            'searchtext': encodeURIComponent(jq('#searchtext', document).val()),
+            'searchtext': jq('#searchtext', document).val(),
             'rooted': this.editor.settings.rooted ? 'True' : 'False',
-            'document_base_url': encodeURIComponent(this.editor.settings.document_base_url)
-            },
+            'document_base_url': this.editor.settings.document_base_url
+        },
         'success': function (data) {
             var html = [],
                 len,
@@ -1040,7 +1042,7 @@ BrowserDialog.prototype.populateAnchorList = function () {
     nodes_length = nodes.length;
     for (i = 0; i < nodes_length; i++) {
         if ((name = this.editor.dom.getAttrib(nodes[i], "name")) !== "") {
-            html += '<div class="' + divclass + '"><input type="radio" class="noborder" name="anchorlink" value="#' + name + '"/> ' + name + '</div>';
+            html += '<div class="' + divclass + '"><input type="radio" class="noborder" name="anchorlink" id="#' + name + '" value="#' + name + '"/> <label for="#' + name + '">' + name + '</label></div>';
             divclass = divclass === "even" ? "odd" : "even";
         }
     }
@@ -1054,7 +1056,7 @@ BrowserDialog.prototype.populateAnchorList = function () {
             if (title_match === null) {
                 name = title.toLowerCase();
                 name = name.replace(/[^a-z]/g, '-');
-                html += '<div class="' + divclass + '"><input type="radio" class="noborder" name="anchorlink" value="#mce-new-anchor-' + name + '"/> ' + title + '</div>';
+                html += '<div class="' + divclass + '"><input type="radio" class="noborder" name="anchorlink" id="#mce-new-anchor-' + name + '" value="#mce-new-anchor-' + name + '"/><label for="#mce-new-anchor-' + name + '"> ' + title + '</label></div>';
                 divclass = divclass === "even" ? "odd" : "even";
             }
         }
@@ -1099,20 +1101,6 @@ BrowserDialog.prototype.previewExternalURL = function () {
         return urlprefix + url;
     }
 };
-
-/**
- * Currently disabled functionality
- */
-BrowserDialog.prototype.setPopupVisibility = function (e) {
-    e.preventDefault();
-    //var targetlist = document.getElementById('targetlist');    
-    //if (targetlist.options[targetlist.selectedIndex].value == 'popup') {
-    //    document.getElementById('popup_panel').style.display = 'block';
-    //} else {
-    //    document.getElementById('popup_panel').style.display = 'none';
-    //}
-};
-
 
 var bwrdialog = new BrowserDialog(tinyMCEPopup);
 tinyMCEPopup.onInit.add(bwrdialog.init, bwrdialog);

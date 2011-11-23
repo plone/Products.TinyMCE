@@ -51,7 +51,7 @@ function resizeInputs() {
 	el = document.getElementById('htmlSource');
 
 	if (el) {
-		el.style.width = (vp.w - 20) + 'px';
-		el.style.height = (vp.h - 65) + 'px';
+		el.style.width = (vp.w) + 'px';
+		el.style.height = (vp.h - 75) + 'px';
 	}
 }

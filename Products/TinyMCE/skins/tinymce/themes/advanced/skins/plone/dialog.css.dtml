@@ -95,6 +95,15 @@ padding-left: 0.5em;
 margin-left: 0.5em;
 }
 
+.contenttype-image {
+position: absolute;
+}
+
+/* InputPanel */
+.mceInputPanel {
+margin:10px 0 15px 0;
+}
+
 /* ActionPanel */
 .mceActionPanel {
 margin-top: 10px;
@@ -118,7 +127,9 @@ font-size: 1.0em;
 width: 200px;
 }
 .mceActionPanel #cancel {
+background: transparent;
 color: inherit;
+font-weight: normal;
 }
 /* </dtml-with> */
 
