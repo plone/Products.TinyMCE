@@ -17,14 +17,15 @@
 #uploadbutton { margin-top: 10px }
 #previewimagecontainer { text-align: center }
 #internallinkcontainer { width: 100%; height: 330px; position: relative; }
-#internallinkcontainer div.item:hover { cursor: pointer; background-color: #EEE }
+#internallinkcontainer div.item:hover { cursor: pointer; background-color: #EEE;}
 #internalpath { margin-left: 5px }
 .legend { margin: 5px 0 }
 .legend a { margin-right: 5px }
 .legend .current { font-weight: bold; border: none!important; color: #000!important; cursor: default }
 .input-border { border: 0.1em solid #CCC!important }
-.browser-separator { background-color: #DDD }
+.browser-separator { background-color: #f6f6f6; margin-bottom: 0.5em; }
 .shortcuts strong { cursor: pointer; }
+#insert-selection { margin: 0.7em auto; display: block; width: 70%; }
 
 /* image plugin css */
 .thumbnail { overflow: hidden; }
@@ -33,9 +34,12 @@
 .thumbnail:hover p { word-wrap: break-word; overflow:visible; text-overflow: visible; white-space:normal; }
 .thumbnail p { overflow: hidden; text-overflow: ellipsis; white-space:nowrap; margin-bottom: 0; text-align: center; padding:0 5px; }
 .thumbnail input { display: none }
-.thumbnail.current { border: 0.1em solid #DDD; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.thumbnail:hover { border: 0.1em solid #ddd; }
+.thumbnail.current { border: 0.1em solid #daa239; background-color: #f8e694; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.thumbnail.current:hover { background-color: #f8e694 ! important; border: 0.1em solid #daa239 ! important; }
 .thumbnail .thumb { margin: 0 auto; padding: 3px 0; position: relative }
 .thumbnail .thumb img { bottom: 0; margin-top: 3px }
+
 
 /* link plugin css */
 #linktype_panel { line-height: 25px; width: 135px; margin-right: 10px; border-right: 0.1em solid #329FD7; height: 450px }

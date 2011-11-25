@@ -77,7 +77,7 @@ BrowserDialog.prototype.init = function () {
     this.shortcuts_html = this.is_link_plugin ? self.editor.settings.link_shortcuts_html : self.editor.settings.image_shortcuts_html;
 
     // Setup events
-    jq('#action_form', document).submit(function (e) {
+    jq('#insert-selection', document).die().live('click', function (e) {
         e.preventDefault();
         if (self.is_link_plugin === true) {
             self.insertLink();
@@ -129,6 +129,8 @@ BrowserDialog.prototype.init = function () {
         jq('#browseimage_panel h2', document).text(this.labels.label_browselink);
         jq('#addimage_panel h2', document).text(this.labels.label_addnewfile);
         jq('#linktype_panel', document).removeClass('hide');
+        jq('#plonebrowser', document).removeClass('image-browser').addClass('link-browser');
+
         this.populateAnchorList();
 
         // display results as list and disable thumbs view
@@ -241,6 +243,7 @@ BrowserDialog.prototype.init = function () {
         /* handle image plugin startup */
         jq('#browseimage_panel h2', document).text(this.labels.label_browseimage);
         jq('#addimage_panel h2', document).text(this.labels.label_addnewimage);
+        jq('#plonebrowser', document).removeClass('link-browser').addClass('image-browser');
 
         if (selected_node.get(0).tagName && selected_node.get(0).tagName.toUpperCase() === 'IMG') {
             /** The image dialog was opened to edit an existing image element. **/
@@ -611,6 +614,9 @@ BrowserDialog.prototype.setDetails = function (url) {
                 return scale.title;
             }
         };
+    if (jq.trim(url).length === 0) {
+        return;
+    }
 
     jq.ajax({
         'url': url + '/tinymce-jsondetails',
@@ -950,7 +956,7 @@ BrowserDialog.prototype.getAbsoluteUrl = function (base, link) {
     return base_array.join('/');
 };
 /*
- * Switch different panels and buttons 
+ * Switch different panels and buttons
  *
  * @param panel Name of the panel to show
  * @param upload_allowed Boolean indication upload rights in current context
@@ -969,6 +975,9 @@ BrowserDialog.prototype.displayPanel = function(panel, upload_allowed) {
     // handle insert button
     if (jq.inArray(panel, ["details", "external", "email", "anchor", "advanced"]) > -1) {
         jq('#insert', document).attr('disabled', false).fadeTo(1, 1);
+    } else if (jq("input:radio[name=internallink]:checked", document).length === 1) {
+        jq('#insert', document).attr('disabled', false).fadeTo(1, 1);
+
     } else {
         jq('#insert', document).attr('disabled', true).fadeTo(1, 0.5);
     }
@@ -1108,6 +1117,11 @@ tinyMCEPopup.onInit.add(bwrdialog.init, bwrdialog);
  * after uploadbutton was pressed
  */
 var uploadOk = function uploadOk(current_link, folder) {
+    var filefield = jq('#uploadfile', document).parent();
+
+    // redraw input selection for better UX feeling after successful upload
+    filefield.html(filefield.html());
+
     bwrdialog.editing_existing_image = true;
     bwrdialog.current_link = current_link;
     bwrdialog.getFolderListing(folder, bwrdialog.method_folderlisting);
