@@ -695,7 +695,7 @@ class TinyMCE(SimpleItem):
         return 'text/html'
 
     security.declareProtected('View', 'getConfiguration')
-    def getConfiguration(self, context=None, field=None, request=None, script_url=None):
+    def getConfiguration(self, context=None, field=None, request=None):
         """Return JSON configuration that is passed to javascript tinymce constructor"""
         results = {}
 
@@ -862,8 +862,6 @@ class TinyMCE(SimpleItem):
 
         results['link_using_uids'] = self.link_using_uids
         results['contextmenu'] = self.contextmenu
-        if script_url:
-            results['script_url'] = script_url
 
         if self.allow_captioned_images:
             results['allow_captioned_images'] = True
