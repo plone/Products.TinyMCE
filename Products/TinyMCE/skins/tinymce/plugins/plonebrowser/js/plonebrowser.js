@@ -77,7 +77,7 @@ BrowserDialog.prototype.init = function () {
     this.shortcuts_html = this.is_link_plugin ? self.editor.settings.link_shortcuts_html : self.editor.settings.image_shortcuts_html;
 
     // Setup events
-    jq('#insert-selection', document).die().live('click', function (e) {
+    jq('#insert-selection', document).click( function (e) {
         e.preventDefault();
         if (self.is_link_plugin === true) {
             self.insertLink();
@@ -972,15 +972,6 @@ BrowserDialog.prototype.displayPanel = function(panel, upload_allowed) {
         jq('#upload', document).attr('disabled', true).fadeTo(1, 0.5);
     }
 
-    // handle insert button
-    if (jq.inArray(panel, ["details", "external", "email", "anchor", "advanced"]) > -1) {
-        jq('#insert', document).attr('disabled', false).fadeTo(1, 1);
-    } else if (jq("input:radio[name=internallink]:checked", document).length === 1) {
-        jq('#insert', document).attr('disabled', false).fadeTo(1, 1);
-
-    } else {
-        jq('#insert', document).attr('disabled', true).fadeTo(1, 0.5);
-    }
     // handle email panel
     if (panel === "email") {
         jq('#email_panel', document).removeClass('hide');
@@ -1004,6 +995,12 @@ BrowserDialog.prototype.displayPanel = function(panel, upload_allowed) {
         jq('#advanced_panel', document).removeClass('hide');
     } else {
         jq('#advanced_panel', document).addClass('hide');
+    }
+    // show details panel, if an entry is selected and we
+    // return from the advanced panel
+    checkedlink = jq("input:radio[name=internallink]:checked", document);
+    if ((checkedlink.length === 1) && (panel === "browse")) {
+      this.setDetails(jq(checkedlink).attr('value'));
     }
     // handle details/preview panel
     if (panel === 'details') {
