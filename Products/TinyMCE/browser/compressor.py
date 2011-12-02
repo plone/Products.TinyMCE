@@ -7,13 +7,6 @@ Copyright (c) 2008 Jason Davies
 Licensed under the terms of the MIT License (see LICENSE.txt)
 """
 
-try:
-    import simplejson as json
-    json  # Pyflakes
-except ImportError:
-    import json
-from datetime import datetime
-
 from Acquisition import aq_inner
 from Products.CMFCore.utils import getToolByName
 from Products.Five import BrowserView
@@ -23,12 +16,12 @@ from zope.component import getMultiAdapter
 
 
 def isContextUrl(url):
-    """Some url do not represent context. Check is based on url. If 
+    """Some url do not represent context. Check is based on url. If
     fragment are detected, this method return False
     fragments are portal_factory, ++contextportlets++, ++groupportlets++,
     ++contenttypeportlets++
     """
-    fragments = ('portal_factory', '++contextportlets++', '++groupportlets++', 
+    fragments = ('portal_factory', '++contextportlets++', '++groupportlets++',
                 '++contenttypeportlets++')
 
     for fragment in fragments:
@@ -43,6 +36,7 @@ class TinyMCECompressorView(BrowserView):
 
     # TODO: cache?
     def __call__(self):
+        """Parameters are parsed from url query as defined by tinymce"""
         plugins = self.request.get("plugins", "").split(',')
         languages = self.request.get("languages", "").split(',')
         themes = self.request.get("themes", "").split(',')
@@ -53,7 +47,15 @@ class TinyMCECompressorView(BrowserView):
         response = self.request.response
         response.setHeader('Content-type', 'application/javascript')
 
-        # TODO: rename this parameter
+        # get base_url
+        base_url = '/'.join([self.context.absolute_url(), self.__name__])
+        # fix for Plone <4.1 http://dev.plone.org/plone/changeset/48436
+        # only portal_factory part of condition!
+        if not isContextUrl(base_url):
+            portal_state = getMultiAdapter((self.context, self.request),
+                name="plone_portal_state")
+            base_url = '/'.join([portal_state.portal_url(), self.__name__])
+
         if not isJS:
             tinymce_config = []
             if not hasattr(self.context, 'schema'):
@@ -66,7 +68,7 @@ class TinyMCECompressorView(BrowserView):
             # TODO: following generates whole config each time for all fields,
             # we might simplify to pass fields as parameter and act with logic
                     tinymce_config.append({'fieldname': fieldname,
-                                           'config': jsonconfig(fieldname)})
+                                           'config': jsonconfig(fieldname, script_url=base_url)})
             tiny_mce_gzip = self.tiny_mce_gzip(tinymce_json_config=tinymce_config)
 
             js_tool = getToolByName(aq_inner(self.context), 'portal_javascripts')
@@ -75,27 +77,14 @@ class TinyMCECompressorView(BrowserView):
             else:
                 return JavascriptPacker('safe').pack(tiny_mce_gzip)
 
-        # comment why we need this
-        now = datetime.utcnow()
-        response['Date'] = now.strftime('%a, %d %b %Y %H:%M:%S GMT')
-
-        # TODO: rather use simple os access
+        # use traverse so developers can override tinymce through skins
         traverse = lambda name: str(self.context.restrictedTraverse(name, ''))
 
-        # get base_url
-        base_url = '/'.join([self.context.absolute_url(), self.__name__])
-        # fix for Plone <4.1 http://dev.plone.org/plone/changeset/48436
-        # only portal_factory part of condition!
-        if not isContextUrl(base_url):
-            portal_state = getMultiAdapter((self.context, self.request),
-                name="plone_portal_state")
-            base_url = '/'.join([portal_state.portal_url(), self.__name__])
-
-        # Add core, with baseURL added
+        # add core javascript file with configure ajax call
         content = [
             traverse("tiny_mce%s.js" % suffix).replace(
                 "tinymce._init();",
-                "tinymce.baseURL='%s';tinymce._init();" % base_url)  # TODO: why do we need to set baseURL?
+                "tinymce.baseURL='%s';tinymce._init();" % base_url)
         ]
 
         # Add custom plugins
@@ -106,10 +95,9 @@ class TinyMCECompressorView(BrowserView):
                 name, path = plugin.split('|', 1)
                 customplugins[name] = path
                 content.append('tinymce.PluginManager.load("%s", "%s/%s");' % (
-                    name, config['portal_url'], path));
+                    name, config['portal_url'], path))
             else:
                 plugins.append(plugin)
- 
 
         # Add plugins
         for plugin in set(plugins):
