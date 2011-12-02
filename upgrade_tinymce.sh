@@ -55,9 +55,19 @@ then
     python generate-po.py
     python compile-mo.py
     rm $root/tinymce_language_pack.zip
-    rm -rf $root/tinymce_language_pack
 else
-    echo "*** Translations already there. ***"
+    echo "*** Translations already there, copy them over ***"
+    # we erase translations on each update, so we have to copy them to tinymce source
+    cp -R $root/tinymce_language_pack/langs/* $tinymce_root/langs/
+    cp -R $root/tinymce_language_pack/themes/advanced/langs/* $tinymce_root/themes/advanced/langs/
+    for f in $root/tinymce_language_pack/plugins/*
+    do
+        plugin_dest=$tinymce_root/plugins/`basename $f`
+        if [ -d $plugin_dest ]
+        then
+            cp -R $f/langs/* $plugin_dest/langs/
+        fi
+    done
 fi
 cd $root
 
