@@ -39,7 +39,6 @@ class AdaptersTestCase(FunctionalTestCase):
         for key, val in should.iteritems():
             self.assertEqual(details[key], val)
 
-
         # Let's set some more details like description and body text.
         self.portal[self.document].setDescription('Test')
         self.portal[self.document].setText(u'<p><a name="anchor">anchor</a></p>', mimetype='text/html')
@@ -81,7 +80,6 @@ class AdaptersTestCase(FunctionalTestCase):
             '\{"parent_url": "", "path": \[.+],.+"items": \[.+]}')
         # no icon for regular contenttypes
         self.assertRegexpMatches(listing, '"icon": null, "id": "folder"')
-
 
         # Let's create some more content to get breadcrumbs.
         document = self.folder_object.invokeFactory('Document', id='document')
@@ -145,6 +143,19 @@ class AdaptersTestCase(FunctionalTestCase):
                                          searchtext='somefile')
         self.assertRegexpMatches(results,
             r'"id": "somefile.bin", "icon": "<img width=\\"16\\" height=\\"16\\" src=\\"http://nohost/plone/application.png\\" alt=\\"File\\" />"')
+
+    def test_json_search_wildcard_whitespace(self):
+        self.portal.invokeFactory('File', id='somefile bin')
+        linkable_portal_types = self.utility.linkable.split('\n')
+        linkable_portal_types.extend(self.utility.containsobjects.split('\n'))
+
+        obj = IJSONSearch(self.portal)
+        results = obj.getSearchResults(
+            filter_portal_types=linkable_portal_types,
+            searchtext='somefile bi'
+        )
+        self.assertRegexpMatches(results,
+            r'"id": "somefile bin", "icon": "<img width=\\"16\\" height=\\"16\\" src=\\"http://nohost/plone/application.png\\" alt=\\"File\\" />"')
 
     def test_json_save(self):
         # This class is used to save a document using json. Let's try and set some value.
