@@ -19,6 +19,9 @@ class JSONSearch(object):
     def getSearchResults(self, filter_portal_types, searchtext):
         """Returns the actual search result"""
 
+        if '*' not in searchtext:
+            searchtext += '*'
+
         catalog_results = []
         results = {
             'parent_url': '',
