@@ -95,7 +95,7 @@ class TinyMCECompressorView(BrowserView):
                 name, path = plugin.split('|', 1)
                 customplugins[name] = path
                 content.append('tinymce.PluginManager.load("%s", "%s/%s");' % (
-                    name, config['portal_url'], path))
+                    name, getToolByName(self.context, 'portal_url')(), path))
             else:
                 plugins.append(plugin)
 

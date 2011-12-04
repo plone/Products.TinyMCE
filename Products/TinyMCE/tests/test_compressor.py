@@ -12,13 +12,19 @@ class ViewTestCase(IntegrationTestCase):
 
     def test_compressorview_basic(self):
         view = TinyMCECompressorView(self.portal.foobar, self.portal.REQUEST)
+        view.__name__ = 'tiny_mce_gzip.js'
         self.assertTrue(view().startswith(
             "jQuery(function($){"))
 
     def test_compressorview_customplugins(self):
-        self.portal.portal_tinymce.customplugins = "plonebrowser,plonelink|"
+        self.portal.foobar.REQUEST['js'] = 'true'
+        self.portal.portal_tinymce.customplugins = u"plonebrowser\nplonelink|path\nploneimage"
         view = TinyMCECompressorView(self.portal.foobar, self.portal.REQUEST)
+        view.__name__ = 'tiny_mce_gzip.js'
         self.assertIn('plonelink', view())
 
     def test_compressorview_dexterity(self):
+        pass  # TODO
+
+    def test_compressorview_multiple_widgets(self):
         pass  # TODO
