@@ -173,6 +173,11 @@ class ConfigurationViewlet(ViewletBase):
             return False
         context = aq_inner(self.context)
         factory = getToolByName(context, 'portal_factory', None)
+
+        if '++add++' in self.request.getURL():
+            # dexterity support for it's portal factory
+            return True
+
         if factory is not None and factory.isTemporary(context):
             # Always include TinyMCE on temporary pages
             # These are ment for editing and get false positives
