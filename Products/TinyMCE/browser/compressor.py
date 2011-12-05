@@ -56,20 +56,12 @@ class TinyMCECompressorView(BrowserView):
                 name="plone_portal_state")
             base_url = '/'.join([portal_state.portal_url(), self.__name__])
 
+        config = getMultiAdapter((self.context, self.request),
+            name="tinymce-jsonconfiguration")
+
         if not isJS:
-            tinymce_config = []
-            if not hasattr(self.context, 'schema'):
-                return ''
-            for field in self.context.schema.filterFields(type='text'):
-                if field.widget.getName() == 'RichWidget':
-                    fieldname = field.getName()
-                    jsonconfig = getMultiAdapter((self.context, self.request),
-                                             name="tinymce-jsonconfiguration")
-            # TODO: following generates whole config each time for all fields,
-            # we might simplify to pass fields as parameter and act with logic
-                    tinymce_config.append({'fieldname': fieldname,
-                                           'config': jsonconfig(fieldname, script_url=base_url)})
-            tiny_mce_gzip = self.tiny_mce_gzip(tinymce_json_config=tinymce_config)
+            # TODO: pass fieldname to allow field specific configuration
+            tiny_mce_gzip = self.tiny_mce_gzip(tinymce_json_config=config(fieldname=None, script_url=base_url))
 
             js_tool = getToolByName(aq_inner(self.context), 'portal_javascripts')
             if js_tool.getDebugMode():
@@ -87,7 +79,6 @@ class TinyMCECompressorView(BrowserView):
                 "tinymce.baseURL='%s';tinymce._init();" % base_url)
         ]
 
-        # Add custom plugins
         portal_tinymce = getToolByName(self.context, 'portal_tinymce')
         customplugins = {}
         for plugin in portal_tinymce.customplugins.splitlines():
