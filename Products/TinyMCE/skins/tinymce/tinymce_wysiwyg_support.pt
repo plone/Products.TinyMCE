@@ -30,6 +30,14 @@
       Edit without visual editor
     </a>
   </div>
+  <div tal:condition="not: wysiwyg"
+       class="discreet suppressVisualEditor">
+    <a i18n:translate="suppress_visual_editor_with"
+       i18n:domain="plone.tinymce"
+       tal:attributes="href string:${request/URL0}">
+      Edit with visual editor
+    </a>
+  </div>
 
   </tal:block>
 </div>
