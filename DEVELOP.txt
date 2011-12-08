@@ -91,11 +91,8 @@ folder in utils and re-run the script::
     $ ./upgrade_tinymce.sh
 
 
-Releasing TinyMCE
-=================
-
 Getting a new upstream version
--------------------------------
+===============================
 
 Let's say current version in Products.TinyMCE is 3.4.3 and upstream is 3.4.7::
 
@@ -110,20 +107,6 @@ PS: It is highly recommended to use meld for merging::
 
     $ git config --global merge.tool meld
 
-
-Known local fixes which need to be merged
------------------------------------------
-
-- fixes in skins/tinymce/tiny_mce_src.js
-- fixes in skins/tinymce/plugins/paste/pastetext.html.pt and
-  skins/tinymce/plugins/paste/js/pastetext.js
-- others?
-
-Refreshing translation files
-----------------------------
-
-todo
-
 Set new branch in buildout
 --------------------------
 
@@ -131,13 +114,32 @@ Open up ``buildout.cfg`` and fix the ``tinymce`` directive in ``[sources]``
 section to use the new plone branch of tinymce.
 
 
+Releasing TinyMCE
+=================
+
+* run ./upgrade_tinymce.sh
+* commit all changes in skins directory with message like "sync with tinymce at revision x"
+* increment version in setup.py
+* run python setup.py sdist
+
+
+
+Known local fixes which need to be merged
+=========================================
+
+- fixes in skins/tinymce/tiny_mce_src.js
+- fixes in skins/tinymce/plugins/paste/pastetext.html.pt and
+  skins/tinymce/plugins/paste/js/pastetext.js
+- others?
+
+
 Javascript coding standards
----------------------------
+===========================
 
 - use jslint, if you don't have it integrated with editor yet, use http://www.jslint.com/
 
 Prerequisites
--------------
+=============
 
 If you are on a Mac, install `apache-ant` from macports. Otherwise:
 
