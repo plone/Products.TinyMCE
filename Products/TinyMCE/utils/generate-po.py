@@ -64,14 +64,6 @@ for x in AVAILABLE_LANGUAGES:
     for group in language.getiterator('group'):
         for item in group.getiterator('item'):
             domain = group.attrib['target']
-            if domain == 'advlink':
-                domain = 'plonebrowser'
-            if domain == 'advimage':
-                domain = 'plonebrowser'
-            if domain == 'advlink_dlg':
-                domain = 'plonebrowser_dlg'
-            if domain == 'advimage_dlg':
-                domain = 'plonebrowser_dlg'
             FILE.write('msgid "%s_%s"\n' % (domain, item.attrib['name']))
             if item.text:
                 msg = item.text.replace('"', '\\"')
