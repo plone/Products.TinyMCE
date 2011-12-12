@@ -92,6 +92,21 @@ TinyMCE forked from the master repo for Plone
 
 * https://github.com/collective/tinymce 
 
+Updating translations
+---------------------
+
+We use two domains of translations:
+
+ * tinymce.po files which contain TinyMCE core translations and which are only
+   updated when we upgrade to a new version of TinyMCE (see below) - no touchy!
+ * plone.tinymce.po files which contain translations for our custom code: if you
+   change some of our template or control panels, make sure you rebuild our
+   plone.tinymce.pot file and re-sync all language files::
+
+       $ i18ndude rebuild-pot --pot plone.tinymce.pot --merge plone.tinymce-manual.pot --create plone.tinymce ../
+       $ i18ndude sync --pot plone.tinymce.pot ./*/LC_MESSAGES/plone.tinymce.po
+
+
 Common pitfalls
 ---------------
 
@@ -157,6 +172,27 @@ Set new branch in buildout
 
 Open up ``buildout.cfg`` and fix the ``tinymce`` directive in ``[sources]``
 section to use the new plone branch of tinymce.
+
+Update language files for TinyMCE core
+--------------------------------------
+
+Whenever we upgrade to a new version of TinyMCE, we also need to fetch
+the latest language files for TinyMCE core and convert them to .po files,
+that Plone can use. You do that by using the scripts in
+``Products/TinyMCE/utils``::
+
+    # download XML language files
+    $ cd Products/TinyMCE/utils
+    $ python wget-xml.py
+
+    # convert downloaded xml files into .po files
+    $ python generate-po.py
+
+    # compile .mo files out of .po files
+    $ python compile-po.py
+
+    # create tinymce.pot which is needed for pobuddy.py support
+    $ cp ../locales/en/LC_MESSAGES/tinymce.po ../locales/tinymce.pot
 
 
 Releasing TinyMCE
