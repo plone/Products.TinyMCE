@@ -1,5 +1,6 @@
-recursive-include Products *
-recursive-include docs *
-include CHANGES.txt
-include README.txt
+include *.txt
+graft Products
+graft docs
+prune Products/TinyMCE/tests
+prune Products/TinyMCE/utils/xml
 global-exclude *pyc
