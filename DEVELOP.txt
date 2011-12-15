@@ -99,13 +99,20 @@ We use two domains of translations:
 
  * tinymce.po files which contain TinyMCE core translations and which are only
    updated when we upgrade to a new version of TinyMCE (see below) - no touchy!
- * plone.tinymce.po files which contain translations for our custom code: if you
-   change some of our templates or control panels, make sure you rebuild our
-   plone.tinymce.pot file and re-sync all language files::
+ * plone.tinymce.po files which contain translations for our custom code.
 
-       $ cd Products/TinyMCE/locales
-       $ i18ndude rebuild-pot --pot plone.tinymce.pot --merge plone.tinymce-manual.pot --create plone.tinymce ../
-       $ i18ndude sync --pot plone.tinymce.pot ./*/LC_MESSAGES/plone.tinymce.po
+If you change some of our templates or control panels, make sure you rebuild our
+plone.tinymce.pot file and re-sync all language files::
+
+   $ cd Products/TinyMCE/locales
+   $ i18ndude rebuild-pot --pot plone.tinymce.pot --merge plone.tinymce-manual.pot --create plone.tinymce ../
+   $ i18ndude sync --pot plone.tinymce.pot ./*/LC_MESSAGES/plone.tinymce.po
+
+After this (or if you only change a translation string itself), you need to
+recompile .mo files::
+
+    $ cd Products/TinyMCE/locales/<your_language>/LC_MESSAGES
+    $ msgfmt -o plone.tinymce.mo plone.tinymce.po
 
 
 Common pitfalls
