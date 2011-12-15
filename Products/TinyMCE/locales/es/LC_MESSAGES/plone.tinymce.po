@@ -1,10 +1,11 @@
+# Diego Municio <dmunicio@gmail.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: plone.tinymce\n"
+"Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2011-06-21 13:31+0000\n"
-"PO-Revision-Date: 2010-05-03 14:03 +ZONE\n"
-"Last-Translator: Diego Municio <dmunicio@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2011-12-15 12:25-0600\n"
+"Last-Translator: Héctor Velarde <hector.velarde@gmail.com>\n"
+"Language-Team: Spanish <https://github.com/plone>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -20,7 +21,7 @@ msgstr "(eliminar estilo)"
 
 #: ../interfaces/utility.py:307
 msgid "After the deadline (FLOSS)"
-msgstr ""
+msgstr "After the deadline (FLOSS)"
 
 #: ../interfaces/utility.py:158
 msgid "Align center"
@@ -49,19 +50,19 @@ msgstr "Anclas"
 
 #: ../interfaces/utility.py:324
 msgid "AtD Error types to show"
-msgstr ""
+msgstr "Tipos de error de AtD que se mostrarán"
 
 #: ../interfaces/utility.py:313
 msgid "AtD Ignore strings"
-msgstr ""
+msgstr "Cadenas a ignorar en AtD"
 
 #: ../interfaces/utility.py:337
 msgid "AtD Service URL"
-msgstr ""
+msgstr "URL de servicio de AtD"
 
 #: ../interfaces/utility.py:38
 msgid "Auto detect from content language"
-msgstr ""
+msgstr "Detección automática del idioma del contenido"
 
 #: ../interfaces/utility.py:150
 msgid "Backcolor"
@@ -84,7 +85,7 @@ msgid "Choose the CSS used in WYSIWYG Editor Area"
 msgstr "Elegir la CSS empleada en el área del editor WYSIWYG"
 
 msgid "Circle"
-msgstr ""
+msgstr "Circulo"
 
 #: ../interfaces/utility.py:262
 msgid "Cleanup messy code"
@@ -107,7 +108,7 @@ msgstr "Copiar"
 
 #: ../adapters/Upload.py:127
 msgid "Could not upload the file"
-msgstr ""
+msgstr "No se pudo cargar el archivo"
 
 #. Default: "Current Folder"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:30
@@ -129,17 +130,17 @@ msgstr "Cortar"
 
 #: ../interfaces/utility.py:303
 msgid "Default browser spellchecker"
-msgstr ""
+msgstr "Corrector ortográfrico predeterminado"
 
 msgid "Definition description"
-msgstr ""
+msgstr "Descripción de la definición"
 
 #: ../interfaces/utility.py:178
 msgid "Definition list"
 msgstr "Lista de definición"
 
 msgid "Definition term"
-msgstr ""
+msgstr "Término de la definición"
 
 #. Default: "Description"
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:123
@@ -153,7 +154,7 @@ msgid "Details"
 msgstr "Detalles"
 
 msgid "Disc"
-msgstr ""
+msgstr "Disco"
 
 msgid "Discreet"
 msgstr "Discreto"
@@ -394,16 +395,16 @@ msgstr "Enlaces a los objetos en este sitio web pueden usar los identificadores 
 
 #: ../utility.py:631
 msgid "Lists"
-msgstr ""
+msgstr "Listas"
 
 msgid "Literal"
 msgstr "Literal"
 
 msgid "Lower Alpha"
-msgstr ""
+msgstr "Letras del alfabeto en minúsculas"
 
 msgid "Lower Roman"
-msgstr ""
+msgstr "Números romanos en minúsculas"
 
 #. Default: "Mail"
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:46
@@ -428,10 +429,10 @@ msgstr "Párrafo normal"
 
 #: ../adapters/Upload.py:88
 msgid "Not allowed to upload a file of this type to this folder"
-msgstr ""
+msgstr "No se permite cargar un archivo de este tipo en esta carpeta"
 
 msgid "Numbers"
-msgstr ""
+msgstr "Números"
 
 #: ../interfaces/utility.py:395
 msgid "Numeric"
@@ -533,10 +534,10 @@ msgstr "Corrector ortográfico"
 
 #: ../interfaces/utility.py:295
 msgid "Spellchecker plugin to use"
-msgstr ""
+msgstr "Plugin de corrección ortográfica a emplear"
 
 msgid "Square"
-msgstr ""
+msgstr "Cuadrado"
 
 #: ../interfaces/utility.py:134
 msgid "Strikethrough"
@@ -587,7 +588,7 @@ msgstr "Texto"
 
 #: ../interfaces/utility.py:296
 msgid "This option allows you to choose the spellchecker for TinyMCE. If you want the spellchecker button to be visible, make sure it is enabled in the toolbar settings."
-msgstr ""
+msgstr "Esta opción le permite seleccionar el corrector ortográfico para TinyMCE. Si desea que el botón de corrección ortográfica esté visible, asegúrese de que está habilitado en la configuración de la barra de herramientas."
 
 #: ../interfaces/utility.py:393
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
@@ -599,7 +600,7 @@ msgstr "Esta opción habilita la barra de herramientas externa que se posicionar
 
 #: ../interfaces/utility.py:50
 msgid "This option enables you to specify a custom CSS file that replaces the theme content CSS. This CSS file is the one used within the editor (the editable area)."
-msgstr ""
+msgstr "Esta opción le permite seleccionar un archivo CSS personalizado que reemplaza el del tema. Este archivo CSS es utilizado dentro del editor (en el área editable)."
 
 #: ../interfaces/utility.py:19
 msgid "This option gives you the ability to enable/disable auto resizing the editor window depending on the content."
@@ -700,10 +701,10 @@ msgid "Upload file"
 msgstr "Subir fichero"
 
 msgid "Upper Alpha"
-msgstr ""
+msgstr "Letras del alfabeto en mayúsculas"
 
 msgid "Upper Roman"
-msgstr ""
+msgstr "Números romanos en mayúsculas"
 
 #: ../interfaces/utility.py:270
 msgid "Visual control characters on/off"
@@ -719,29 +720,29 @@ msgstr "Dirección de escritura"
 
 #: ../adapters/Upload.py:92
 msgid "You do not have permission to upload files in this folder"
-msgstr ""
+msgstr "No tiene permiso de cargar archivo en esta carpeta"
 
 #. Default: "The URL of the \"After the Deadline\" grammar and spell checking server. The default value is the public server, but ideally you should download and install your own and specify its address here."
 #: ../interfaces/utility.py:338
 msgid "help_atd_service_url"
-msgstr ""
+msgstr "El URL del servidor de gramática y corrección ortográfica \"After the Deadline\". El valor por omisión es el servidor público, pero idealmente usted debería bajar e instalar su propio servidor y especificar su dirección aquí."
 
 #. Default: "A list of error types which the \"After the Deadline\" spellchecker should check for. By default, all the available error type will be listed here."
 #: ../interfaces/utility.py:325
 msgid "help_atderrortypes_to_show"
-msgstr ""
+msgstr "Una lista de tipos de error que \"After the Deadline\" debe observar. Si se omite, todos los tipos de error disponibles serán listados aquí."
 
 #: ../interfaces/utility.py:305
 msgid "ieSpell (free for personal use)"
-msgstr ""
+msgstr "ieSpell (gratis para uso personal)"
 
 #. Default: "A list of strings which the \"After the Deadline\"spellchecker should ignore. Note: This option is only applicable when the appropriate spellchecker has been chosen above."
 #: ../interfaces/utility.py:314
 msgid "label_atd_ignore_strings"
-msgstr ""
+msgstr "Una lista de cadenas que el corrector ortográfico \"After the Deadline\" debe ignorar. Nota: esta opción sólo es aplicable cuando el corrector ortográfico apropiado ha sido seleccionado."
 
 #. Default: "Edit without visual editor"
 #: ../skins/tinymce/tinymce_wysiwyg_support.pt:35
 msgid "suppress_visual_editor"
-msgstr ""
+msgstr "Editar sin el editor visual"
 
