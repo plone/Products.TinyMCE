@@ -42,7 +42,7 @@ class ITinyMCELayout(Interface):
         required=False)
 
     contextmenu = schema.Bool(
-        title=_(u"Enable contextmenu."),
+        title=_(u"Enable contextmenu"),
         description=_(u"This option gives you the ability to enable/disable the use of the contextmenu."),
         required=False)
 
