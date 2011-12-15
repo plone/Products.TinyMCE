@@ -103,6 +103,7 @@ We use two domains of translations:
    change some of our templates or control panels, make sure you rebuild our
    plone.tinymce.pot file and re-sync all language files::
 
+       $ cd Products/TinyMCE/locales
        $ i18ndude rebuild-pot --pot plone.tinymce.pot --merge plone.tinymce-manual.pot --create plone.tinymce ../
        $ i18ndude sync --pot plone.tinymce.pot ./*/LC_MESSAGES/plone.tinymce.po
 
