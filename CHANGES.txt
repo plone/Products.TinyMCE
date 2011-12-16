@@ -11,7 +11,17 @@ HISTORY
 - Fixed http://dev.plone.org/plone/ticket/11681
   [tom_gross]
 
-1.2.9 (unreleased)
+
+1.2.10 (unreleased)
+------------------
+
+- Initialize TinyMCE with "media_strict: false" to allow embed tags if
+  they are removed from the list of nasty tags.
+  Fixeѕ https://dev.plone.org/ticket/10681
+  [rochecompaan]
+
+
+1.2.9 (2011-11-24)
 ------------------
 
 - Fixed content_css when the Plone Site id is 'plone'.  This is used

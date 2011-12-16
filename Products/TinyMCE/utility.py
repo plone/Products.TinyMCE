@@ -947,6 +947,9 @@ class TinyMCE(SimpleItem):
         results['table_firstline_th'] = True
         results['force_span_wrappers'] = True
         results['fix_list_elements'] = False
+        # allow embed tag if user removes it from
+        # list of nasty tags - see #10681
+        results['media_strict'] = False
         results['theme_advanced_path'] = False
         results['theme_advanced_toolbar_align'] = "left"
 
