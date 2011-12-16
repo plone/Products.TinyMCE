@@ -87,7 +87,10 @@ function TinyMCEConfig(id) {
             allow_captioned_images : this.getAllowCaptionedImages(),
             rooted : this.getRooted(),
             force_span_wrappers : true,
-            fix_list_elements : false
+            fix_list_elements : false,
+            // allow embed tag if user removes it from
+            // list of nasty tags - see #10681
+            media_strict: false,
         };
 
         window.tinyMCE.init(init_dict);
