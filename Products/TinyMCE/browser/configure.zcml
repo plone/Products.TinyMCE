@@ -47,7 +47,9 @@
         <browser:page attribute="jsonConfiguration" name="tinymce-jsonconfiguration" />
     </browser:pages>
 
-    <include package="Products.CMFCore" file="permissions.zcml" />
+    <include package="Products.CMFCore" file="permissions.zcml"
+        xmlns:zcml="http://namespaces.zope.org/zcml"
+        zcml:condition="have plone-41" />
 
     <browser:pages
         for="*"
