@@ -2,6 +2,7 @@
 
 from Products.TinyMCE.interfaces.utility import _
 from plone.app.layout.navigation.root import getNavigationRoot
+from zope.i18n import translate
 
 
 class CurrentFolderShortcut(object):
@@ -12,7 +13,7 @@ class CurrentFolderShortcut(object):
         return ["""
         <img src="img/folder_current.png" />
         <a id="currentfolder" href="%s">%s</a>
-        """ % (context.absolute_url(), self.title)]
+        """ % (context.absolute_url(), translate(self.title, context=context.REQUEST))]
 
 
 class HomeShortcut(object):
@@ -23,4 +24,4 @@ class HomeShortcut(object):
         return ["""
         <img src="img/home.png" />
         <a id="home" href="%s">%s</a>
-        """ % (getNavigationRoot(context), self.title)]
+        """ % (getNavigationRoot(context), translate(self.title, context=context.REQUEST))]
