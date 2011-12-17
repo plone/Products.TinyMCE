@@ -6,6 +6,8 @@ except ImportError:
 
 from zope.interface import implements
 from zope.component import getUtility
+from zope.i18n import translate
+from zope.i18nmessageid import MessageFactory
 from plone.i18n.normalizer.interfaces import IIDNormalizer
 from plone.app.layout.navigation.root import getNavigationRoot
 from plone.app.layout.navigation.interfaces import INavigationRoot
@@ -50,7 +52,7 @@ class JSONFolderListing(object):
             else:
                 icon = self.folder_icon
             result.append({
-                'title': root.title_or_id(),
+                'title': translate(MessageFactory('plone')('Home'), context=self.context.REQUEST),
                 'url': '/'.join(root.getPhysicalPath()),
                 'icon': '<img src="%s" width="16" height="16" />' % icon,
             })
