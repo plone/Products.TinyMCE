@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.0\n"
-"POT-Creation-Date: 2011-12-15 10:34+0000\n"
+"POT-Creation-Date: 2011-12-19 15:23+0000\n"
 "PO-Revision-Date: 2010-06-25 10:24+0000\n"
 "Last-Translator: giorgio borelli\n"
 "Language-Team: http://www.coactivate.org/projects/plone-italian-translation\n"
@@ -80,7 +80,7 @@ msgstr "Grassetto"
 msgid "Browser"
 msgstr ""
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:231
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:274
 msgid "CSS Style"
 msgstr ""
 
@@ -103,6 +103,10 @@ msgstr "Cerchio"
 msgid "Cleanup messy code"
 msgstr "Pulisci il codice html"
 
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:43
+msgid "Clear"
+msgstr ""
+
 msgid "Clear floats"
 msgstr ""
 
@@ -123,7 +127,7 @@ msgid "Copy"
 msgstr "Copia"
 
 #. Default: "Current Folder"
-#: ../shortcut.py:9
+#: ../shortcut.py:10
 msgid "Current Folder"
 msgstr "Cartella corrente"
 
@@ -158,6 +162,10 @@ msgstr "Termine (DT)"
 msgid "Description"
 msgstr "Descrizione"
 
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:67
+msgid "Details"
+msgstr ""
+
 msgid "Disc"
 msgstr "Punto"
 
@@ -165,7 +173,7 @@ msgid "Discreet"
 msgstr "Nota (testo piccolo)"
 
 #. Default: "E-mail"
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:244
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:207
 msgid "E-mail"
 msgstr ""
 
@@ -194,8 +202,8 @@ msgid "Enable auto resizing of the editor window."
 msgstr "Abilita il ridimensionamento automatico della finestra dell'editor"
 
 #: ../interfaces/utility.py:45
-msgid "Enable contextmenu."
-msgstr "Abilita il menu contestuale."
+msgid "Enable contextmenu"
+msgstr ""
 
 #: ../interfaces/utility.py:23
 msgid "Enable resizing the editor window."
@@ -246,7 +254,7 @@ msgid "External"
 msgstr "Esterno"
 
 #. Default: "External link"
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:185
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:172
 msgid "External link"
 msgstr "Collegamento esterno"
 
@@ -285,7 +293,7 @@ msgid "Highlight"
 msgstr "Evidenziato"
 
 #. Default: "Home"
-#: ../shortcut.py:20
+#: ../shortcut.py:21
 msgid "Home"
 msgstr ""
 
@@ -394,8 +402,12 @@ msgstr ""
 msgid "Link Shortcuts"
 msgstr ""
 
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:254
+msgid "Link Title"
+msgstr ""
+
 #. Default: "Link to anchor"
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:279
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:225
 msgid "Link to anchor"
 msgstr "Collega ad un'àncora "
 
@@ -409,6 +421,10 @@ msgstr ""
 
 #: ../interfaces/utility.py:410
 msgid "List of shortcuts to appear in link browser for quick navigation."
+msgstr ""
+
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:48
+msgid "List view"
 msgstr ""
 
 #: ../utility.py:746
@@ -455,12 +471,20 @@ msgstr "Numeri"
 msgid "Numeric"
 msgstr "Numerica"
 
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:244
+msgid "OK"
+msgstr ""
+
 msgid "Odd row"
 msgstr "Riga dispari"
 
 #: ../interfaces/utility.py:175
 msgid "Ordered list"
 msgstr "Lista ordinata"
+
+#: ../utility.py:188
+msgid "Original"
+msgstr ""
 
 #: ../interfaces/utility.py:183
 msgid "Outdent"
@@ -494,6 +518,10 @@ msgstr "Contenuto tabella"
 msgid "Preview"
 msgstr "Anteprima"
 
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:192
+msgid "Preview URL"
+msgstr ""
+
 #: ../interfaces/utility.py:247
 #: ../utility.py:747
 msgid "Print"
@@ -525,6 +553,10 @@ msgstr "Fissa la posizione sul contenuto."
 #: ../interfaces/utility.py:79
 msgid "Save"
 msgstr "Salva"
+
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:44
+msgid "Search"
+msgstr ""
 
 #: ../utility.py:752
 msgid "Search results:"
@@ -569,6 +601,7 @@ msgstr "Stili..."
 msgid "Styles"
 msgstr "Stili"
 
+#: ../skins/tinymce/plugins/table/table.htm.pt:33
 msgid "Subdued grid"
 msgstr ""
 
@@ -576,7 +609,7 @@ msgid "Subheading"
 msgstr "Sottotitolo"
 
 #. Default: "Subject"
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:251
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:214
 msgid "Subject"
 msgstr "Oggetto"
 
@@ -700,7 +733,11 @@ msgstr "Cancella collegamento"
 msgid "Unordered list"
 msgstr "Lista non ordinata"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:146
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:160
+msgid "Upload"
+msgstr ""
+
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:133
 msgid "Upload File"
 msgstr ""
 
@@ -718,6 +755,7 @@ msgstr "Visualizza/nascondi caratteri di controllo"
 msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
 msgstr "Se abilitato la posizione dell'utente sarà fissata sull'oggetto corrente. Non sarà possibile aggiungere immagini e link posizionati in altre parti del sito."
 
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:58
 #: ../utility.py:753
 msgid "You are here:"
 msgstr ""
@@ -751,7 +789,7 @@ msgstr ""
 msgid "label_tinymce_plugins"
 msgstr ""
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:167
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:154
 msgid "or External URL"
 msgstr ""
 

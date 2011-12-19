@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-12-15 10:34+0000\n"
+"POT-Creation-Date: 2011-12-19 15:23+0000\n"
 "PO-Revision-Date: 2010-08-30 15:46+0300\n"
 "Last-Translator: Olha <olha.pelishok@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,7 +81,7 @@ msgstr "Напівжирний"
 msgid "Browser"
 msgstr ""
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:231
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:274
 msgid "CSS Style"
 msgstr ""
 
@@ -103,6 +103,10 @@ msgstr "Коло"
 msgid "Cleanup messy code"
 msgstr "Очистити брудний код"
 
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:43
+msgid "Clear"
+msgstr ""
+
 msgid "Clear floats"
 msgstr "Очистити стилі"
 
@@ -122,7 +126,7 @@ msgstr ""
 msgid "Copy"
 msgstr "Копіювати"
 
-#: ../shortcut.py:9
+#: ../shortcut.py:10
 msgid "Current Folder"
 msgstr "Поточна тека"
 
@@ -156,13 +160,17 @@ msgstr "Термін визначення"
 msgid "Description"
 msgstr "Опис"
 
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:67
+msgid "Details"
+msgstr ""
+
 msgid "Disc"
 msgstr "Диск"
 
 msgid "Discreet"
 msgstr ""
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:244
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:207
 msgid "E-mail"
 msgstr "Електронна пошта"
 
@@ -191,8 +199,8 @@ msgid "Enable auto resizing of the editor window."
 msgstr "Увімкнути можливість автоматичної зміни розміру вікна редактора."
 
 #: ../interfaces/utility.py:45
-msgid "Enable contextmenu."
-msgstr "Увімкнути контекстне меню."
+msgid "Enable contextmenu"
+msgstr ""
 
 #: ../interfaces/utility.py:23
 msgid "Enable resizing the editor window."
@@ -241,7 +249,7 @@ msgstr "Парний рядок"
 msgid "External"
 msgstr "Зовнішній"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:185
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:172
 msgid "External link"
 msgstr "Зовнішнє посилання"
 
@@ -281,7 +289,7 @@ msgstr "Комірка-заголовок"
 msgid "Highlight"
 msgstr "Виділити"
 
-#: ../shortcut.py:20
+#: ../shortcut.py:21
 msgid "Home"
 msgstr "Головна"
 
@@ -388,7 +396,11 @@ msgstr ""
 msgid "Link Shortcuts"
 msgstr ""
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:279
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:254
+msgid "Link Title"
+msgstr ""
+
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:225
 msgid "Link to anchor"
 msgstr "Посилання на якір"
 
@@ -402,6 +414,10 @@ msgstr ""
 
 #: ../interfaces/utility.py:410
 msgid "List of shortcuts to appear in link browser for quick navigation."
+msgstr ""
+
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:48
+msgid "List view"
 msgstr ""
 
 #: ../utility.py:746
@@ -448,12 +464,20 @@ msgstr "Цифри"
 msgid "Numeric"
 msgstr "Числовий"
 
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:244
+msgid "OK"
+msgstr ""
+
 msgid "Odd row"
 msgstr "Непарний рядок"
 
 #: ../interfaces/utility.py:175
 msgid "Ordered list"
 msgstr "Пронумерований  список"
+
+#: ../utility.py:188
+msgid "Original"
+msgstr ""
 
 #: ../interfaces/utility.py:183
 msgid "Outdent"
@@ -486,6 +510,10 @@ msgstr "Звичайна комірка"
 msgid "Preview"
 msgstr "Перегляд"
 
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:192
+msgid "Preview URL"
+msgstr ""
+
 #: ../interfaces/utility.py:247
 #: ../utility.py:747
 msgid "Print"
@@ -517,6 +545,10 @@ msgstr "Прив'язати до поточного об'єкту"
 #: ../interfaces/utility.py:79
 msgid "Save"
 msgstr "Зберегти"
+
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:44
+msgid "Search"
+msgstr ""
 
 #: ../utility.py:752
 msgid "Search results:"
@@ -561,6 +593,7 @@ msgstr "Стиль..."
 msgid "Styles"
 msgstr "Стилі"
 
+#: ../skins/tinymce/plugins/table/table.htm.pt:33
 #, fuzzy
 msgid "Subdued grid"
 msgstr "Слабка сітка"
@@ -568,7 +601,7 @@ msgstr "Слабка сітка"
 msgid "Subheading"
 msgstr "Підзаголовок"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:251
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:214
 msgid "Subject"
 msgstr ""
 
@@ -689,7 +722,11 @@ msgstr "Видалити посилання"
 msgid "Unordered list"
 msgstr "Ненумерований список"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:146
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:160
+msgid "Upload"
+msgstr ""
+
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:133
 msgid "Upload File"
 msgstr ""
 
@@ -707,6 +744,7 @@ msgstr "Увімкнути/вимкнути візуальний контрол�
 msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
 msgstr "Якщо увімкнено, то користувача буде прив'язано до поточного об'єкту і не буде можливості додати посилання та зображення з інших частин сайту."
 
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:58
 #: ../utility.py:753
 msgid "You are here:"
 msgstr ""
@@ -740,7 +778,7 @@ msgstr ""
 msgid "label_tinymce_plugins"
 msgstr ""
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:167
+#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:154
 msgid "or External URL"
 msgstr ""
 
