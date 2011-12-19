@@ -178,7 +178,7 @@ class TinyMCE(SimpleItem):
                    'title': key.capitalize()} for key, value in sizes.items()]
         scales.sort(key=lambda x: x['size'][0])
         scales.insert(0, {'value': '',
-                          'title': 'Original',
+                          'title': _(u'Original'),
                           'size': [width, height]})
         return scales
 
