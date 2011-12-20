@@ -22,6 +22,11 @@ HISTORY
 - Fixed a few test failures in combination with five.pt.
   [maurits]
 
+- Do not fail with an AttributeError when the member has no
+  wysiwyg_editor property.
+  Fixes http://dev.plone.org/ticket/12406
+  [maurits]
+
 - Initialize TinyMCE with "media_strict: false" to allow embed tags if
   they are removed from the list of nasty tags.
   Fixeѕ https://dev.plone.org/ticket/10681
