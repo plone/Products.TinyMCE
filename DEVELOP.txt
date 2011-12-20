@@ -202,16 +202,6 @@ that Plone can use. You do that by using the scripts in
     # create tinymce.pot which is needed for pobuddy.py support
     $ cp ../locales/en/LC_MESSAGES/tinymce.po ../locales/tinymce.pot
 
-
-Releasing TinyMCE
-=================
-
-* compile translation files (look below)
-* run ./upgrade_tinymce.sh
-* commit all changes in skins directory with message like "sync with tinymce at revision x"
-* increment version in setup.py
-* run python setup.py sdist
-
 Compile translation files
 -------------------------
 
@@ -219,6 +209,17 @@ A one-liner to compile all translation files goes a little something like this::
 
     $ cd Products/TinyMCE/locales
     $ for po in `find . -name "*.po"` ; do msgfmt -o `dirname $po`/`basename $po .po`.mo $po; done
+
+
+Releasing TinyMCE
+=================
+
+* run ./upgrade_tinymce.sh
+* rebuild pot and sync (look above)
+* compile translation files (look above)
+* commit all changes in skins directory with message like "sync with tinymce at revision x"
+* increment version in setup.py
+* run python setup.py sdist
 
 
 Known local fixes which need to be merged
