@@ -571,6 +571,8 @@ class TinyMCE(SimpleItem):
         for valid_element in valid_elements.keys():
             valid_elements[valid_element] = sorted(valid_elements[valid_element])
 
+        # p needs to be prepended with # to allow empty p tags http://www.tinymce.com/wiki.php/Configuration:valid_elements
+        valid_elements['#p'] = valid_elements.pop('p')
         return valid_elements
 
     security.declarePrivate('getPlugins')
@@ -942,7 +944,6 @@ class TinyMCE(SimpleItem):
         results['body_class'] = "documentContent"
         results['body_id'] = "content"
         results['table_firstline_th'] = True
-        results['force_span_wrappers'] = True
         results['fix_list_elements'] = False
         # allow embed tag if user removes it from
         # list of nasty tags - see #10681
