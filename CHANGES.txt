@@ -5,7 +5,10 @@ HISTORY
 1.1.13 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Backport fix: Do not fail with an AttributeError when the member has
+  no wysiwyg_editor property.
+  Fixes http://dev.plone.org/ticket/12406
+  [maurits]
 
 
 1.1.12 (2011-12-01)
