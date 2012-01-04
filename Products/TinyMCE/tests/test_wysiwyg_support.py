@@ -1,3 +1,5 @@
+import re
+
 import transaction
 from plone.testing.z2 import Browser
 
@@ -74,7 +76,12 @@ class WysiwygSupportTestCase(IntegrationTestCase):
 
         # We should get just a textarea:
         browser.open(testpage)
-        self.assertIn('<textarea name="text" rows="25" id="text"', browser.contents)
+        # The '[\W]*' means: any number and type of white space.  We
+        # do this because in combination with five.pt the html can be
+        # slightly different.
+        self.assertTrue(
+            re.search('<textarea name="text"[\W]*rows="25"[\W]id="text"',
+                       browser.contents) is not None)
 
         # If the user sets 'TinyMCE'...
         browser.open(personalizer)
@@ -99,7 +106,9 @@ class WysiwygSupportTestCase(IntegrationTestCase):
 
         # we should get just a textarea:
         browser.open(testpage)
-        self.assertIn('<textarea name="text" rows="25" id="text"', browser.contents)
+        self.assertTrue(
+            re.search('<textarea name="text"[\W]*rows="25"[\W]id="text"',
+                       browser.contents) is not None)
 
         # If the user sets 'None'...
         browser.open(personalizer)
@@ -109,7 +118,9 @@ class WysiwygSupportTestCase(IntegrationTestCase):
 
         # we should get just a textarea:
         browser.open(testpage)
-        self.assertIn('<textarea name="text" rows="25" id="text"', browser.contents)
+        self.assertTrue(
+            re.search('<textarea name="text"[\W]*rows="25"[\W]id="text"',
+                       browser.contents) is not None)
 
         # If the user sets 'TinyMCE'...
         browser.open(personalizer)

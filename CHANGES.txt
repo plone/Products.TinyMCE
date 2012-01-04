@@ -18,6 +18,8 @@ HISTORY
 - Fixed AttributeError: 'ATDocumentFieldsView' object has no attribute
   'absolute_url' when using inline editing.  Inline editing then still
   does not work though (checked on Plone 4.2 dev).
+
+- Fixed a few test failures in combination with five.pt.
   [maurits]
 
 - Initialize TinyMCE with "media_strict: false" to allow embed tags if
