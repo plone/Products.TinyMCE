@@ -5,6 +5,9 @@ HISTORY
 1.2.10 (unreleased)
 -------------------
 
+- Fixed a few test failures in combination with five.pt.
+  [maurits]
+
 - Do not fail with an AttributeError when the member has no
   wysiwyg_editor property.
   Fixes http://dev.plone.org/ticket/12406
