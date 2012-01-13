@@ -15,6 +15,11 @@ HISTORY
 1.2.10 (unreleased)
 ------------------
 
+- Fixed AttributeError: 'ATDocumentFieldsView' object has no attribute
+  'absolute_url' when using inline editing.  Inline editing then still
+  does not work though (checked on Plone 4.2 dev).
+  [maurits]
+
 - Initialize TinyMCE with "media_strict: false" to allow embed tags if
   they are removed from the list of nasty tags.
   Fixeѕ https://dev.plone.org/ticket/10681

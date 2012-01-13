@@ -4,13 +4,7 @@ try:
 except ImportError:
     import json
 from types import StringTypes
-
 from zope.component import getUtilitiesFor, getUtility, queryUtility, getMultiAdapter
-try:
-    from zope.component.hooks import getSite
-    getSite  # Pyflakes
-except ImportError:
-    from zope.app.component.hooks import getSite
 from zope.i18n import translate
 from zope.i18nmessageid import MessageFactory
 from zope.interface import classProvides, implements
@@ -848,7 +842,7 @@ class TinyMCE(SimpleItem):
             portal_state = getMultiAdapter((context, request), name=u'plone_portal_state')
             results['directionality'] = portal_state.is_rtl() and 'rtl' or 'ltr'
 
-        portal = getSite()
+        portal = getToolByName(self, 'portal_url').getPortalObject()
         results['portal_url'] = aq_inner(portal).absolute_url()
         nav_root = getNavigationRootObject(context, portal)
         results['navigation_root_url'] = nav_root.absolute_url()
