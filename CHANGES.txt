@@ -5,6 +5,11 @@ HISTORY
 1.2.10 (unreleased)
 -------------------
 
+- Fixed AttributeError: 'ATDocumentFieldsView' object has no attribute
+  'absolute_url' when using inline editing.  Inline editing then still
+  does not work though (checked on Plone 4.2 dev).
+  [maurits]
+
 - Fixed a few test failures in combination with five.pt.
   [maurits]
 

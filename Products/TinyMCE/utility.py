@@ -5,11 +5,6 @@ except ImportError:
     import simplejson as json
 from types import StringTypes
 from zope.component import getUtility, queryUtility
-try:
-    from zope.component.hooks import getSite
-    getSite  #Pyflakes
-except ImportError:
-    from zope.app.component.hooks import getSite
 from zope.i18n import translate
 from zope.i18nmessageid import MessageFactory
 from zope.interface import classProvides
@@ -754,7 +749,7 @@ class TinyMCE(SimpleItem):
         else:
             results['contextmenu'] = False
 
-        portal = getSite()
+        portal = getToolByName(self, 'portal_url').getPortalObject()
         results['portal_url'] = aq_inner(portal).absolute_url()
         nav_root = getNavigationRootObject(context, portal)
         results['navigation_root_url'] = nav_root.absolute_url()
