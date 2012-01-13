@@ -1,8 +1,3 @@
-try:
-    from zope.component.hooks import getSite
-    getSite  #Pyflakes
-except ImportError:
-    from zope.app.component.hooks import getSite
 from zope.interface import implements
 from zope.schema.fieldproperty import FieldProperty
 from zope.component import getUtility
@@ -721,7 +716,7 @@ class TinyMCE(SimpleItem):
         else:
             results['contextmenu'] = False
 
-        portal = getSite()
+        portal = getToolByName(self, 'portal_url').getPortalObject()
         results['portal_url'] = aq_inner(portal).absolute_url()
         nav_root = getNavigationRootObject(context, portal)
         results['navigation_root_url'] = nav_root.absolute_url()

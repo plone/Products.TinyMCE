@@ -5,6 +5,10 @@ HISTORY
 1.1.13 (unreleased)
 -------------------
 
+- Fixed AttributeError: 'ATDocumentFieldsView' object has no attribute
+  'absolute_url' when using inline editing.
+  [maurits]
+
 - Backport fix: Do not fail with an AttributeError when the member has
   no wysiwyg_editor property.
   Fixes http://dev.plone.org/ticket/12406
