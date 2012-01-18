@@ -87,6 +87,7 @@
         />
 
     <browser:view
+        zcml:condition="installed Products.Archetypes"
         name="content_anchors"
         for="Products.Archetypes.interfaces.IBaseObject"
         class=".atanchors.ATAnchorView"

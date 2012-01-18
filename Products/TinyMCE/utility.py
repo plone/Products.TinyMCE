@@ -7,14 +7,12 @@ from types import StringTypes
 from zope.component import getUtilitiesFor, queryUtility
 from zope.i18n import translate
 from zope.i18nmessageid import MessageFactory
-from zope.interface import classProvides, implements
+from zope.interface import classProvides
+from zope.interface import implements, Interface
 from zope.schema.fieldproperty import FieldProperty
 from AccessControl import ClassSecurityInfo
 from Acquisition import aq_base, aq_inner, aq_parent
 from OFS.SimpleItem import SimpleItem
-from Products.Archetypes.Field import ImageField
-from Products.Archetypes.interfaces import IBaseObject
-from Products.Archetypes.interfaces.field import IImageField
 from Products.CMFCore.interfaces._content import IFolderish
 from Products.CMFCore.utils import getToolByName
 try:
@@ -36,6 +34,18 @@ from Products.TinyMCE.interfaces.utility import ITinyMCEContentBrowser
 
 _ = MessageFactory('plone.tinymce')
 BUTTON_WIDTHS = {'style': 150, 'forecolor': 32, 'backcolor': 32, 'tablecontrols': 285}
+
+# handle missing Archetypes
+try:
+    from Products.Archetypes.Field import ImageField
+    from Products.Archetypes.interfaces import IBaseObject
+    from Products.Archetypes.interfaces.field import IImageField
+except ImportError:
+    ImageField = None
+    class IImageField(Interface):
+        pass
+    class IBaseObject(Interface):
+        pass
 
 
 def form_adapter(context):
