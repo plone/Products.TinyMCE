@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>Moxiecode Systems AB</author>
+    <version major="1" minor="4" releasedate="2010-11-12" />
+    <description>This is the Basque language pack for TinyMCE.</description>
+  </header>
+  <language code="eu" title="Basque" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">Testu-kutxa hau WYSIWYG editorea izatea nahi duzu?</item>
+      <item name="apply">Aplikatu</item>
+      <item name="insert">Txertatu</item>
+      <item name="update">Eguneratu</item>
+      <item name="cancel">Utzi</item>
+      <item name="close">Itxi</item>
+      <item name="browse">Arakatu</item>
+      <item name="class_name">Klasea</item>
+      <item name="not_set">-- Bat ere ez --</item>
+      <item name="clipboard_msg">Kopiatu/Ebaki/Itsatsi ez dago Mozilla eta Firefoxen.\nHonen inguruko informazioa nahi duzu??</item>
+      <item name="clipboard_no_support">Zure nabigatzailean ez dabil, erabili teklatuko laster-teklak honetarako..</item>
+      <item name="popup_blocked">Ups, zure popup blokeatzaileak funtzionalitate bat eskaintzen duen leihoa blokeatu du. Blokeatzailea desgaitu beharko duzu tresna hau erabiltzeko.</item>
+      <item name="invalid_data">Errorea: baliogabeak diren aukerak sartu dituzu, gorriz agertzen dira.</item>
+      <item name="more_colors">Kolore gehiago</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">Beltza (Ctrl+B)</item>
+      <item name="italic_desc">Etzana (Ctrl+I)</item>
+      <item name="underline_desc">Azpimarratua (Ctrl+U)</item>
+      <item name="striketrough_desc">Gainetik marra duena</item>
+      <item name="bullist_desc">Zerrenda</item>
+      <item name="numlist_desc">Zerrenda ordenatua</item>
+      <item name="undo_desc">Desegin (Ctrl+Z)</item>
+      <item name="redo_desc">Berregin (Ctrl+Y)</item>
+      <item name="cleanup_desc">Kode zikina garbitu</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">Estiloak</item>
+      <item name="font_size">Letra-tamaina</item>
+      <item name="fontdefault">Letra-mota</item>
+      <item name="block">Formatua</item>
+      <item name="paragraph">Parrafoa</item>
+      <item name="div">Div</item>
+      <item name="address">Helbidea</item>
+      <item name="pre">Aurreformateatua</item>
+      <item name="h1">1. goiburua</item>
+      <item name="h2">2. goiburua</item>
+      <item name="h3">3. goiburua</item>
+      <item name="h4">4. goiburua</item>
+      <item name="h5">5. goiburua</item>
+      <item name="h6">6. goiburua</item>
+      <item name="blockquote">Zita</item>
+      <item name="code">Kodea</item>
+      <item name="samp">Kode adibidea</item>
+      <item name="dt">Definizio terminoa (dt) </item>
+      <item name="dd">Definizioa (dd)</item>
+      <!-- Buttons -->
+      <item name="bold_desc">Beltza (Ctrl+B)</item>
+      <item name="italic_desc">Etzana (Ctrl+I)</item>
+      <item name="underline_desc">Azpimarratua (Ctrl+U)</item>
+      <item name="striketrough_desc">Gainetik marra duena</item>
+      <item name="justifyleft_desc">Ezkerrean alineatu</item>
+      <item name="justifycenter_desc">Erdian zentratu</item>
+      <item name="justifyright_desc">Eskuinean alineatu</item>
+      <item name="justifyfull_desc">Testua justifikatu</item>
+      <item name="bullist_desc">Zerrenda</item>
+      <item name="numlist_desc">Zerrenda ordenatua</item>
+      <item name="outdent_desc">Koska kendu</item>
+      <item name="indent_desc">Koska gehitu</item>
+      <item name="undo_desc">Desegin (Ctrl+Z)</item>
+      <item name="redo_desc">Berregin (Ctrl+Y)</item>
+      <item name="link_desc">Lotura txertatu/editatu</item>
+      <item name="unlink_desc">Lotura kendu</item>
+      <item name="image_desc">Irudia txertatu/editatu</item>
+      <item name="cleanup_desc">Kode zikina garbitu</item>
+      <item name="code_desc">HTML kodea editatu</item>
+      <item name="sub_desc">Azpi-indizea</item>
+      <item name="sup_desc">Goi-indizea</item>
+      <item name="hr_desc">Lerro horizontala gehitu</item>
+      <item name="removeformat_desc">Formatua kendu</item>
+      <item name="custom1_desc">Nahi duzun deskribapena hemen idatzi</item>
+      <item name="forecolor_desc">Testuaren kolorea aukeratu</item>
+      <item name="backcolor_desc">Atzeko kolorea aukeratu</item>
+      <item name="charmap_desc">Karaktere berezia txertatu</item>
+      <item name="visualaid_desc">Elementu ikustezinak ikustarazi/ezkutatu</item>
+      <item name="anchor_desc">Aingura txertatu/editatu</item>
+      <item name="cut_desc">Ebaki</item>
+      <item name="copy_desc">Kopiatu</item>
+      <item name="paste_desc">Itsatsi</item>
+      <item name="image_props_desc">Irudiaren aukerak</item>
+      <item name="newdocument_desc">Dokumentu berria</item>
+      <item name="help_desc">Laguntza</item>
+      <item name="blockquote_desc">Zita</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">Kopiatu/Ebaki/Itsatsi ez dago Mozilla eta Firefoxen.\nHonen inguruko informazioa nahi duzu??</item>
+      <item name="path">Bidea</item>
+      <item name="newdocument">Eduki guztia kendu nahi duzu?</item>
+      <item name="toolbar_focus">Tresnaren botoietara joan - Alt+Q, Editorera joan - Alt-Z, Elementuaren bidera joan - Alt-X</item>
+      <item name="more_colors">Kolore gehiago</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width">Irudiaren zabalera</item>
+      <item name="image_delta_height">Irudiaren altuera</item>
+      <item name="link_delta_width">Loturaren zabalera</item>
+      <item name="link_delta_height">Loturaren altuera</item>
+      <item name="colorpicker_delta_width">Kolore hautatzailearen zabalera</item>
+      <item name="colorpicker_delta_height">Kolore hautatzailearen altuera</item>
+      <item name="charmap_delta_width">Karaktere maparen zabalera</item>
+      <item name="charmap_delta_height">Karaktere maparen altuera</item>
+      <item name="anchor_delta_width">Ainguraren zabalera</item>
+      <item name="anchor_delta_height">Ainguraren altuera</item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">TinyMCEri buruz</item>
+      <item name="about_general">Honi buruz</item>
+      <item name="about_help">Laguntza</item>
+      <item name="about_license">Lizentzia</item>
+      <item name="about_plugins">Gehigarriak</item>
+      <item name="about_plugin">Gehiagarria</item>
+      <item name="about_author">Egilea</item>
+      <item name="about_version">Bertsioa</item>
+      <item name="about_loaded">Kargatutako gehigarriak</item>
+      <!-- Anchor -->
+      <item name="anchor_title">Aingura txertatu/editatu</item>
+      <item name="anchor_name">Ainguraren izena</item>
+      <!-- Source -->
+      <item name="code_title">HTML kodearen editorea</item>
+      <item name="code_wordwrap">Itzulbiratu</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">Kolorea aukeratu</item>
+      <item name="colorpicker_picker_tab">Aukeratu</item>
+      <item name="colorpicker_picker_title">Kolore aukeratzailea</item>
+      <item name="colorpicker_palette_tab">Paleta</item>
+      <item name="colorpicker_palette_title">Kolore paleta</item>
+      <item name="colorpicker_named_tab">Izendunak</item>
+      <item name="colorpicker_named_title">Izendun koloreak</item>
+      <item name="colorpicker_color">Kolorea:</item>
+      <item name="colorpicker_name">Izena:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">Karaktere berezia aukeratu</item>
+      <!-- Image -->
+      <item name="image_title">Irudia txertatu/editatu</item>
+      <item name="image_src">Irudiaren URL helbidea</item>
+      <item name="image_alt">Irudiaren deskribapena</item>
+      <item name="image_list">Irudi zerrenda</item>
+      <item name="image_border">Inguruko marra</item>
+      <item name="image_dimensions">Tamaina</item>
+      <item name="image_vspace">Tarte bertikala</item>
+      <item name="image_hspace">Tarte horizontala</item>
+      <item name="image_align">Alineazioa</item>
+      <item name="image_align_baseline">Oinarriko marra</item>
+      <item name="image_align_top">Goian</item>
+      <item name="image_align_middle">Tartean</item>
+      <item name="image_align_bottom">Behean</item>
+      <item name="image_align_texttop">Testua goian</item>
+      <item name="image_align_textbottom">Testua behean</item>
+      <item name="image_align_left">Ezkerrean</item>
+      <item name="image_align_right">Eskuinean</item>
+      <!-- Link -->
+      <item name="link_title">Lotura txertatu/editatu</item>
+      <item name="link_url">Loturaren URLa</item>
+      <item name="link_target">Helburua</item>
+      <item name="link_target_same">Lotura leiho berean ireki</item>
+      <item name="link_target_blank">Lotura leiho berrian ireki</item>
+      <item name="link_titlefield">Izenburua</item>
+      <item name="link_is_email">Sartutako helbideak e-posta bat dirudi, aurretik mailto: gehitzea nahi duzu?</item>
+      <item name="link_is_external">Sartutako helbideak kanpoko webgune batena dirudi, aurretik http:// gehitzea nahi duzu?</item>
+      <item name="link_list">Lotura zerrenda</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">Alineazioa</item>
+      <item name="left">Ezkerrean</item>
+      <item name="center">Zentratuta</item>
+      <item name="right">Eskuinean</item>
+      <item name="full">Justifikatuta</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%Y-%m-%d</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">Data txertatu</item>
+      <item name="inserttime_desc">Ordua txertatu</item>
+      <item name="months_long">Urtarrila,Otsaila,Martxoa,Apirila,Maiatza,Ekaina,Uztaila,Abuztua,Iraila,Urria,Azaroa,Abendua</item>
+      <item name="months_short">Urt,Ots,Mar,Api,Mai,Eka,Uzt,Abu,Ira,Urr,Aza,Abe</item>
+      <item name="day_long">Igandea,Astelehena,Asteartea,Asteazkena,Osteguna,Ostirala,Larunbata,Igandea</item>
+      <item name="day_short">Ig,Al,As,Az,Og,Or,Lr,Ig</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">Inprimatu</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">Aurreikusi</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">Ezkerretik eskumara</item>
+      <item name="rtl_desc">Eskuinatik ezkerrera</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">Kapa berria txertatu</item>
+      <item name="forward_desc">Aurrera joan</item>
+      <item name="backward_desc">Atzera joan</item>
+      <item name="absolute_desc">Posizionatze-absolutua aktibatu/desaktibatu</item>
+      <item name="content">Kapa berria...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">Gorde</item>
+      <item name="cancel_desc">Aldaketak bertan behera utzi</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">Espazioa txertatu</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">Hizkuntza zuzendu</item>
+      <item name="download">ieSpell ez da aurkitu. Instalatu egin nahi duzu?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">Marra horizontala</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">Zabalera</item>
+      <item name="delta_height">Altuera</item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">Zabalera</item>
+      <item name="size">Altuera</item>
+      <item name="noshade">Itzalik gabe</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">Ikonotxoak</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">Zabalera</item>
+      <item name="delta_height">Altuera</item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">Ikonotxoa sartu</item>
+      <item name="desc">Ikonotsoak</item>
+      <item name="cool">Ondo</item>
+      <item name="cry">Negarrez</item>
+      <item name="embarassed">Lotsatuta</item>
+      <item name="foot_in_mouth">Hanka ahoan</item>
+      <item name="frown">Desadostasuna</item>
+      <item name="innocent">Ni ez naiz izan</item>
+      <item name="kiss">Muxua</item>
+      <item name="laughing">Barrez</item>
+      <item name="money_mouth">Ahoa diruz beteta</item>
+      <item name="sealed">Ixilik</item>
+      <item name="smile">Irriparra</item>
+      <item name="surprised">Harrituta</item>
+      <item name="tongue_out">Mihia atera</item>
+      <item name="undecided">Zalantzan</item>
+      <item name="wink">Keinua</item>
+      <item name="yell">Oihua</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">Bilatu</item>
+      <item name="replace_desc">Bilatu/Ordeztu</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">Zabalera</item>
+      <item name="delta_height">Altuera</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">Berriz bilatu</item>
+      <item name="notfound">Bilaketa bukatu da. Bilatutakoa ez da aurkitu.</item>
+      <item name="search_title">Bilatu</item>
+      <item name="replace_title">Bilatu/Ordezkatu</item>
+      <item name="allreplaced">Bilatutakoaren agerpen guztiak ordezkatu dira.</item>
+      <item name="findwhat">Zer bilatu</item>
+      <item name="replacewith">Zerekin ordezkatu</item>
+      <item name="direction">Norabidea</item>
+      <item name="up">Gorantz</item>
+      <item name="down">Beherantz</item>
+      <item name="mcase">Maiuskulak eta minuskulak kontuan hartu</item>
+      <item name="findnext">Hurrengoa</item>
+      <item name="replace">Ordezkatu</item>
+      <item name="replaceall">Ordezkatu guztiak</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">Irudia txertatu/editatu</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">Zabalera</item>
+      <item name="delta_height">Altuera</item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">Orokorra</item>
+      <item name="tab_appearance">Itxura</item>
+      <item name="tab_advanced">Aurreratua</item>
+      <item name="general">Orokorra</item>
+      <item name="title">Izenburua</item>
+      <item name="preview">Aurrebista</item>
+      <item name="constrain_proportions">Proportzioak mantendu</item>
+      <item name="langdir">Hizkuntzaren norabidea</item>
+      <item name="langcode">Hizkuntza-kodea</item>
+      <item name="long_desc">Deskribaepn luzearen lotura</item>
+      <item name="style">Estiloa</item>
+      <item name="classes">Klaseak</item>
+      <item name="ltr">Ezkerretik eskuinera</item>
+      <item name="rtl">Eskuinetik ezkerrera</item>
+      <item name="id">Id</item>
+      <item name="map">Irudi-mapa</item>
+      <item name="swap_image">Irudia ordezkatu</item>
+      <item name="alt_image">Ordezko irudia</item>
+      <item name="mouseover">xagua gainean dagoenean</item>
+      <item name="mouseout">xagua kentzen denean</item>
+      <item name="misc">Bestelakoak</item>
+      <item name="example_img">Nola ikusiko den</item>
+      <item name="missing_alt">Irudiaren deskribapena gehitu gabe jarraitu nahi duzu? Hau horrela, ezgaitasunak dituztenentzat edo testu nabigatzaile bat darabiltenentzat ez da irisgarria izango.</item>
+      <item name="dialog_title">Irudia txertatu/editatu</item>
+      <item name="src">Irudiaren URL helbidea</item>
+      <item name="alt">Irudiaren deskribapena</item>
+      <item name="list">Irudi-zerrenda</item>
+      <item name="border">Inguruko marra</item>
+      <item name="dimensions">Tamaina</item>
+      <item name="vspace">Tarte bertikala</item>
+      <item name="hspace">Tarte horizontala</item>
+      <item name="align">Alineazioa</item>
+      <item name="align_baseline">Oinarri-marra</item>
+      <item name="align_top">Goian</item>
+      <item name="align_middle">Tartean</item>
+      <item name="align_bottom">Behean</item>
+      <item name="align_texttop">Testua goian</item>
+      <item name="align_textbottom">Testua behean</item>
+      <item name="align_left">Ezkerrean</item>
+      <item name="align_right">Eskuinean</item>
+      <item name="image_list">Irudi-zerrenda</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">Lotura txertatu/editatu</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">Zabalera</item>
+      <item name="delta_height">Altuera</item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">Lotura txertatu/editatu</item>
+      <item name="url">Loturaren URL helbidea</item>
+      <item name="target">Helburua</item>
+      <item name="titlefield">Izenburua</item>
+      <item name="is_email">Sartutako helbideak e-posta bat dirudi, aurretik mailto: gehitzea nahi duzu?</item>
+      <item name="is_external">Sartutako helbideak kanpoko webgune batena dirudi, aurretik http:// gehitzea nahi duzu?</item>
+      <item name="list">Lotura-zerrenda</item>
+      <item name="general_tab">Orokorra</item>
+      <item name="popup_tab">Popupa</item>
+      <item name="events_tab">Ebentuak</item>
+      <item name="advanced_tab">Gehigarriak</item>
+      <item name="general_props">Aukera orokorrak</item>
+      <item name="popup_props">Popuparen aukerak</item>
+      <item name="event_props">Ebentuak</item>
+      <item name="advanced_props">Aukera aurreratuak</item>
+      <item name="popup_opts">Aukerak</item>
+      <item name="anchor_names">Aingurak</item>
+      <item name="target_same">Leiho/marko honetan ireki</item>
+      <item name="target_parent">Leiho/marko gurasoan ireki</item>
+      <item name="target_top">Gorengo markoan ireki (marko guztiak ordezkatzen ditu)</item>
+      <item name="target_blank">Leiho berrian ireki</item>
+      <item name="popup">Javascript popupa</item>
+      <item name="popup_url">Popuparen URL helbidea</item>
+      <item name="popup_name">Leihoaren izena</item>
+      <item name="popup_return">'return false' txertatu</item>
+      <item name="popup_scrollbars">Gora-behera barra erakutsi</item>
+      <item name="popup_statusbar">Egoera-barra erakutsi</item>
+      <item name="popup_toolbar">Tresna-barrak erakutsi</item>
+      <item name="popup_menubar">Menu-barra erakutsi</item>
+      <item name="popup_location">Helbide-barra erakutsi</item>
+      <item name="popup_resizable">Leihoaren tamaina aldatzea aktibatu</item>
+      <item name="popup_dependent">Menpekoa (Mozilla/Firefoxen bakarrik)</item>
+      <item name="popup_size">Tamaina</item>
+      <item name="popup_position">Kokapena (X/Y)</item>
+      <item name="id">Id</item>
+      <item name="style">Estiloa</item>
+      <item name="classes">Klaseak</item>
+      <item name="target_name">Helburuaren izena</item>
+      <item name="langdir">Hizkuntzaren norabidea</item>
+      <item name="target_langcode">Helburu-hizkuntza</item>
+      <item name="langcode">Hizkuntza-kodea</item>
+      <item name="encoding">Helburuaren karaktere-kodeketa</item>
+      <item name="mime">Helburuaren MIME mota</item>
+      <item name="rel">Orrialdearen eta helburuaren arteko erlazioa</item>
+      <item name="rev">Helburuaren eta orrialdearen arteko erlazioa</item>
+      <item name="tabindex">Tabulazio ordena</item>
+      <item name="accesskey">Laster-tekla</item>
+      <item name="ltr">Ezkerretik eskuinera</item>
+      <item name="rtl">Eskuinetik ezkerrera</item>
+      <item name="link_list">Lotura-zerrenda</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">Zita</item>
+      <item name="abbr_desc">Laburdura</item>
+      <item name="acronym_desc">Akronimoa</item>
+      <item name="del_desc">Ezabaketa</item>
+      <item name="ins_desc">Txertaketa</item>
+      <item name="attribs_desc">Atributuak txertatu/editatu</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width">Ziten zabalera</item>
+      <item name="cite_delta_height">Ziten altuera</item>
+      <item name="abbr_delta_width">Laburduren zabalera</item>
+      <item name="abbr_delta_height">Laburduren altuera</item>
+      <item name="acronym_delta_width">Akronimoen zabalera</item>
+      <item name="acronym_delta_height">Akronimoen altuera</item>
+      <item name="del_delta_width">Ezabaketaren zabalera</item>
+      <item name="del_delta_height">Ezabaketaren altuera</item>
+      <item name="ins_delta_width">Txertaketaren zabalera</item>
+      <item name="ins_delta_height">Txertaketaren altuera</item>
+      <item name="attribs_delta_width">Atributuen zabalera</item>
+      <item name="attribs_delta_height">Atributuen altuera</item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">Izenburua</item>
+      <item name="attribute_label_id">ID</item>
+      <item name="attribute_label_class">Klasea</item>
+      <item name="attribute_label_style">Estiloa</item>
+      <item name="attribute_label_cite">Zita</item>
+      <item name="attribute_label_datetime">Data/Ordua</item>
+      <item name="attribute_label_langdir">Testuaren norabidea</item>
+      <item name="attribute_option_ltr">Ezkerretik eskuinera</item>
+      <item name="attribute_option_rtl">Eskuinetik ezkerrera</item>
+      <item name="attribute_label_langcode">Hizkuntza</item>
+      <item name="attribute_label_tabindex">Tabulazio ordena</item>
+      <item name="attribute_label_accesskey">Laster-tekla</item>
+      <item name="attribute_events_tab">Ebentuak</item>
+      <item name="attribute_attrib_tab">Atributuak</item>
+      <item name="general_tab">Orokorra</item>
+      <item name="attrib_tab">Atributuak</item>
+      <item name="events_tab">Ebentuak</item>
+      <item name="fieldset_general_tab">Aukera orokorrak</item>
+      <item name="fieldset_attrib_tab">Elementuen atributuak</item>
+      <item name="fieldset_events_tab">Elementuen ebentuak</item>
+      <item name="title_ins_element">Elementuaren txertaketa</item>
+      <item name="title_del_element">Elementuaren ezabaketa</item>
+      <item name="title_acronym_element">Elementuaren akronimoa</item>
+      <item name="title_abbr_element">Elementuaren laburdura</item>
+      <item name="title_cite_element">Elementuaren zita</item>
+      <item name="remove">Ezabatu</item>
+      <item name="insert_date">Data/ordua txertatu</item>
+      <item name="option_ltr">Ezkerretik eskuinera</item>
+      <item name="option_rtl">Eskuinetik ezkerrera</item>
+      <item name="attribs_title">Atributuak txertatu/editatu</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">Aldatu CSS estiloa</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">Zabalera</item>
+      <item name="delta_height">Altuera</item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">Aldatu CSS estiloa</item>
+      <item name="apply">Apikatu</item>
+      <item name="text_tab">Testua</item>
+      <item name="background_tab">Atzea</item>
+      <item name="block_tab">Block</item>
+      <item name="box_tab">Box</item>
+      <item name="border_tab">Border</item>
+      <item name="list_tab">Zerrenda</item>
+      <item name="positioning_tab">Kokapena</item>
+      <item name="text_props">Testua</item>
+      <item name="text_font">Letra-tipoa</item>
+      <item name="text_size">Tamaina</item>
+      <item name="text_weight">Weight</item>
+      <item name="text_style">Estiloa</item>
+      <item name="text_variant">Aldaera</item>
+      <item name="text_lineheight">Lerro garaiera</item>
+      <item name="text_case">Minus./Maius.</item>
+      <item name="text_color">Kolorea</item>
+      <item name="text_decoration">Apaingarriak</item>
+      <item name="text_overline">Goimarra</item>
+      <item name="text_underline">Azpimarra</item>
+      <item name="text_striketrough">Marratua</item>
+      <item name="text_blink">Keinada</item>
+      <item name="text_none">Bat ere ez</item>
+      <item name="background_color">Atzeko kolorea</item>
+      <item name="background_image">Atzeko irudia</item>
+      <item name="background_repeat">Errepikatu</item>
+      <item name="background_attachment">Eranskina</item>
+      <item name="background_hpos">Posizio horizontala</item>
+      <item name="background_vpos">Posizio bertikala</item>
+      <item name="block_wordspacing">Hitz banaketa</item>
+      <item name="block_letterspacing">Letra banaketa</item>
+      <item name="block_vertical_alignment">Lerrokatze bertikala</item>
+      <item name="block_text_align">Testu lerrokatzea</item>
+      <item name="block_text_indent">Koska</item>
+      <item name="block_whitespace">Zuriunea</item>
+      <item name="block_display">Erakutsi</item>
+      <item name="box_width">Zabalera</item>
+      <item name="box_height">Altuera</item>
+      <item name="box_float">Float</item>
+      <item name="box_clear">Clear</item>
+      <item name="padding">Padding</item>
+      <item name="same">Guztientzat berdina</item>
+      <item name="top">Gora</item>
+      <item name="right">Eskuina</item>
+      <item name="bottom">Behera</item>
+      <item name="left">Ezkerra</item>
+      <item name="margin">Margina</item>
+      <item name="style">Estiloa</item>
+      <item name="width">Zabalera</item>
+      <item name="height">Altuera</item>
+      <item name="color">Kolorea</item>
+      <item name="list_type">Mota</item>
+      <item name="bullet_image">Bulet-irudia</item>
+      <item name="position">Kokapena</item>
+      <item name="positioning_type">Mora</item>
+      <item name="visibility">Ikusgarritasuna</item>
+      <item name="zindex">Z-index</item>
+      <item name="overflow">Overflow</item>
+      <item name="placement">Placement</item>
+      <item name="clip">Klip</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">Testu gisa itsatsi</item>
+      <item name="paste_word_desc">Word-etik itsatsi</item>
+      <item name="selectall_desc">Aukeratu guztia</item>
+      <item name="plaintext_mode_sticky">Itsasketa testu moduan dago orain. Egin klik itsasketa arruntera itzultzeko. Zerbait itsatsi ostean, modu arruntera pasatuko zara automatikoki.</item>
+      <item name="plaintext_mode">Itsasketa testu moduan dago orain. Egin klik itsasketa arruntera itzultzeko.</item>
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">Erabili CTRL+V testua lehioan itsasteko.</item>
+      <item name="text_linebreaks">Mantendu lerro-jauziak</item>
+      <item name="word_title">Erabili CTRL+V testua lehioan itsasteko.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">Taula berri bat txertatu</item>
+      <item name="row_before_desc">Txertatu lerroa aurretik</item>
+      <item name="row_after_desc">Txertatu lerroa ondoren</item>
+      <item name="delete_row_desc">Ezabatu lerroa</item>
+      <item name="col_before_desc">Txertatu zutabea aurretik</item>
+      <item name="col_after_desc">Txertatu zutabea ondoren</item>
+      <item name="delete_col_desc">Ezabatu zutabea</item>
+      <item name="split_cells_desc">Banatu bateratutako gelaxkak</item>
+      <item name="merge_cells_desc">Bateratu gelaxkak</item>
+      <item name="row_desc">Lerro ezaugarriak</item>
+      <item name="cell_desc">Gelaxka ezaugarriak</item>
+      <item name="props_desc">Taula ezaugarriak</item>
+      <item name="paste_row_before_desc">Itsatsi lerroa aurretik</item>
+      <item name="paste_row_after_desc">Itsatsi lerroa ondoren</item>
+      <item name="cut_row_desc">Moztu lerroa</item>
+      <item name="copy_row_desc">Kopiatu lerroa</item>
+      <item name="del">Ezabatu taula</item>
+      <item name="row">Lerroa</item>
+      <item name="col">Zutabea</item>
+      <item name="cell">Gelaxka</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width">Lerroen propietateen zabalera</item>
+      <item name="rowprops_delta_height">Lerroen propietateen altuera</item>
+      <item name="cellprops_delta_width">Gelaxken propietateen zabalera</item>
+      <item name="cellprops_delta_height">Gelaxken propietateen altuera</item>
+      <item name="table_delta_width">Taularen zabalera</item>
+      <item name="table_delta_height">Taularen altuera</item>
+      <item name="merge_cells_delta_width">Gelaxkak batzearen zabalera</item>
+      <item name="merge_cells_delta_height">Gelaxkak batzearen altuera</item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">Orokorra</item>
+      <item name="advanced_tab">Aurreratua</item>
+      <item name="general_props">Ezaugarri orokorrak</item>
+      <item name="advanced_props">Ezaugarri aurreratuak</item>
+      <item name="rowtype">Lerro mota</item>
+      <item name="title">Txertatu/Aldatu taula</item>
+      <item name="width">Zabalera</item>
+      <item name="height">Altuera</item>
+      <item name="cols">Zutabeak</item>
+      <item name="rows">Lerroak</item>
+      <item name="cellspacing">Gelaxkaren tartea</item>
+      <item name="cellpadding">Gelaxkaren betegarria</item>
+      <item name="border">Ertza</item>
+      <item name="align">Lerrokatzea</item>
+      <item name="align_default">Lehenetsia</item>
+      <item name="align_left">Ezkerrera</item>
+      <item name="align_right">Eskuinera</item>
+      <item name="align_middle">Erdian</item>
+      <item name="row_title">Lerro ezaugarriak</item>
+      <item name="cell_title">Gelaxka ezaugarriak</item>
+      <item name="cell_type">Gelaxka mota</item>
+      <item name="valign">Lerrokatze bertikala</item>
+      <item name="align_top">Goian</item>
+      <item name="align_bottom">Behean</item>
+      <item name="bordercolor">Ertz kolorea</item>
+      <item name="bgcolor">Atzeko kolorea</item>
+      <item name="merge_cells_title">Bateratu gelaxkak</item>
+      <item name="id">Id</item>
+      <item name="style">Estiloa</item>
+      <item name="langdir">Hizkuntza norabidea</item>
+      <item name="langcode">Hizkuntza kodea</item>
+      <item name="mime">Helburuareb MIME mota</item>
+      <item name="ltr">Ezkerretik eskuinera</item>
+      <item name="rtl">Eskuinetik ezkerrera</item>
+      <item name="bgimage">Atzeko irudia</item>
+      <item name="summary">Laburpena</item>
+      <item name="td">Datuak</item>
+      <item name="th">Goiburua</item>
+      <item name="cell_cell">Eguneratu uneko gelaxka</item>
+      <item name="cell_row">Eguneratu lerroko gelaxka guztiak</item>
+      <item name="cell_all">Eguneratu gelaxka guztiak</item>
+      <item name="row_row">Eguneratu uneko lerroa</item>
+      <item name="row_odd">Eguneratu lerro bikoitiak</item>
+      <item name="row_even">Eguneratu lerro bakoitiak</item>
+      <item name="row_all">Eguneratu lerro guztiak</item>
+      <item name="thead">Taularen Goiburukoa</item>
+      <item name="tbody">Taularen Gorputza</item>
+      <item name="tfoot">Taularen Oina</item>
+      <item name="scope">Eremua</item>
+      <item name="rowgroup">Lerro Taldea</item>
+      <item name="colgroup">Zutabe Taldea</item>
+      <item name="col_limit">Zutabe kopuru maximoa ({$cols}) gainditu duzu.</item>
+      <item name="row_limit">Lerro kopuru maximoa ({$rows}) gainditu duzu.</item>
+      <item name="cell_limit">Gelaxka kopuru maximoa ({$cells}) gainditu duzu..</item>
+      <item name="missing_scope">Taularen goiburukoari eremu bat zehaztu gabe jarritu nahi duzula ziur zaude? Eremu hori gabe, ezintasunak dituzten erabiltzaileentzat zaila izango da taularen datuak ulertzea.</item>
+      <item name="caption">Taularen azpititulua</item>
+      <item name="frame">Markoa</item>
+      <item name="frame_none">Bat ere ez</item>
+      <item name="frame_groups">taldeak</item>
+      <item name="frame_rows">lerroak</item>
+      <item name="frame_cols">zutabeak</item>
+      <item name="frame_all">guztiak</item>
+      <item name="rules">Erregelak</item>
+      <item name="rules_void">hutsa</item>
+      <item name="rules_above">gainean</item>
+      <item name="rules_below">azpian</item>
+      <item name="rules_hsides">hsides</item>
+      <item name="rules_lhs">lhs</item>
+      <item name="rules_rhs">rhs</item>
+      <item name="rules_vsides">vsides</item>
+      <item name="rules_box">box</item>
+      <item name="rules_border">border</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">Egindako aldaketak galdu egingo dira orri honetatik kanpona nabigatzen baldin baduzu.</item>
+      <item name="restore_content">Automatikoki gordetako edukia errekuperatu.</item>
+      <item name="warning_message">Gordetako edukia errekuperatzen baduzu, orain editorean dagoena galdu egingo duzu.\n\nZiur zaude gordetakoa errekuperatzea nahi duzula?</item>
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">Aldatu pantaila osoko modura</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">Sartu / editatu ahokatutako euskarria</item>
+      <item name="edit">Editatu ahokatutako euskarria</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">Zabalera</item>
+      <item name="delta_height">Altuera</item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">Sartu / editatu ahokatutako euskarria</item>
+      <item name="general">Orokorra</item>
+      <item name="advanced">Aurreratua</item>
+      <item name="file">Fitxategia/URL</item>
+      <item name="list">Zerrenda</item>
+      <item name="size">Tamaina</item>
+      <item name="preview">Aurrebista</item>
+      <item name="constrain_proportions">Itxura erlazioa blokeatu</item>
+      <item name="type">Mota</item>
+      <item name="id">Id</item>
+      <item name="name">Izena</item>
+      <item name="class_name">Klasea</item>
+      <item name="vspace">V-Space</item>
+      <item name="hspace">H-Space</item>
+      <item name="play">Auto play</item>
+      <item name="loop">Begizta</item>
+      <item name="menu">Erakutsi menua</item>
+      <item name="quality">Kalitatea</item>
+      <item name="scale">Eskalatu</item>
+      <item name="align">Lerrokatu</item>
+      <item name="salign">SAlign</item>
+      <item name="wmode">WMode</item>
+      <item name="bgcolor">Atzea</item>
+      <item name="base">Oinarria</item>
+      <item name="flashvars">Flashvars</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">AutoHREF</item>
+      <item name="cache">Katxea</item>
+      <item name="hidden">Ezkutuan</item>
+      <item name="controller">Controller</item>
+      <item name="kioskmode">Kiosko modua</item>
+      <item name="playeveryframe">Marko guztiak erreproduzitu</item>
+      <item name="targetcache">Helburu katxea</item>
+      <item name="correction">Zuzenketarik ez</item>
+      <item name="enablejavascript">Gaitu JavaScript</item>
+      <item name="starttime">Noiz hasi</item>
+      <item name="endtime">Noiz bukatu</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">Talka abiadura</item>
+      <item name="target">Helburua</item>
+      <item name="volume">Bolumena</item>
+      <item name="autostart">Automatikoki hasi</item>
+      <item name="enabled">Gaituta</item>
+      <item name="fullscreen">Pantaila osoa</item>
+      <item name="invokeurls">URLa deitu</item>
+      <item name="mute">Ixilik</item>
+      <item name="stretchtofit">Neurrikoa izateko zabaldu</item>
+      <item name="windowlessvideo">Lehiogabeko bideoa</item>
+      <item name="balance">Balanzea</item>
+      <item name="baseurl">Base URL</item>
+      <item name="captioningid">Captioning id</item>
+      <item name="currentmarker">Current marker</item>
+      <item name="currentposition">Uneko posizioa</item>
+      <item name="defaultframe">Default frame</item>
+      <item name="playcount">Play count</item>
+      <item name="rate">Rate</item>
+      <item name="uimode">UI Modua</item>
+      <item name="flash_options">Flash aukerak</item>
+      <item name="qt_options">Quicktime aukerak</item>
+      <item name="wmp_options">Windows media player aukerak</item>
+      <item name="rmp_options">Real media player aukerak</item>
+      <item name="shockwave_options">Shockwave aukerak</item>
+      <item name="autogotourl">Automatikoi joan URLra</item>
+      <item name="center">Erdian</item>
+      <item name="imagestatus">Irudi edoera</item>
+      <item name="maintainaspect">Maintain aspect</item>
+      <item name="nojava">Java ez</item>
+      <item name="prefetch">Prefetch</item>
+      <item name="shuffle">Shuffle</item>
+      <item name="console">Konsola</item>
+      <item name="numloop">Begizta kopurua</item>
+      <item name="controls">Kontrolak</item>
+      <item name="scriptcallbacks">Script callbacks</item>
+      <item name="swstretchstyle">Stretch style</item>
+      <item name="swstretchhalign">Stretch H-Align</item>
+      <item name="swstretchvalign">Stretch V-Align</item>
+      <item name="sound">Soinua</item>
+      <item name="progress">Aurrerapena</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn">Streaming bidez ematen diren rtsp baliabideak aurreratuak fitxa n dagoen QT Src eremuan gehitu behar dira.\n Streaming gabeko bertsio bat ere gehitu beharko zenuke.</item>
+      <item name="align_top">Goian</item>
+      <item name="align_right">Eskuinean</item>
+      <item name="align_bottom">Behean</item>
+      <item name="align_left">Ezkerrean</item>
+      <item name="align_center">Erdian</item>
+      <item name="align_top_left">Goian ezkerran</item>
+      <item name="align_top_right">Goian eskuinean</item>
+      <item name="align_bottom_left">Behean ezkerrean</item>
+      <item name="align_bottom_right">Behean eskuinean</item>
+      <item name="flv_options">Flash bideo aukerak</item>
+      <item name="flv_scalemode">Eskala modua</item>
+      <item name="flv_buffer">Buffer</item>
+      <item name="flv_startimage">Hasiera irudia</item>
+      <item name="flv_starttime">Noiz hasi</item>
+      <item name="flv_defaultvolume">Bolumen lehenetsia</item>
+      <item name="flv_hiddengui">Ezkutuko GUI</item>
+      <item name="flv_autostart">Auto start</item>
+      <item name="flv_loop">Begizta</item>
+      <item name="flv_showscalemodes">Erakutsi eskala moduak</item>
+      <item name="flv_smoothvideo">Bideo leuna</item>
+      <item name="flv_jscallback">JS Callback</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">Dokumentuaren ezaugarriak</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">Zabalera</item>
+      <item name="delta_height">Altuera</item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Dokumentuaren ezaugarriak</item>
+      <item name="meta_tab">Orokorra</item>
+      <item name="appearance_tab">Itxura</item>
+      <item name="advanced_tab">Aurreratua</item>
+      <item name="meta_props">Meta datuak</item>
+      <item name="langprops">Hizkuntza eta kodeketa</item>
+      <item name="meta_title">Izenburua</item>
+      <item name="meta_keywords">Hitz-gakoak</item>
+      <item name="meta_description">Deskribapena</item>
+      <item name="meta_robots">Robotak</item>
+      <item name="doctypes">Dokumentu mota</item>
+      <item name="langcode">Hizkuntza kodea</item>
+      <item name="langdir">Hizkuntza norabidea</item>
+      <item name="ltr">Ezkerretik eskuinera</item>
+      <item name="rtl">Eskuinetik ezkerrera</item>
+      <item name="xml_pi">XML zehaztapena</item>
+      <item name="encoding">Karaktere kodeketa</item>
+      <item name="appearance_bgprops">Atzeko ezaugarriak</item>
+      <item name="appearance_marginprops">Gorputzaren marginak</item>
+      <item name="appearance_linkprops">Lotura koloreak</item>
+      <item name="appearance_textprops">Testu ezaugarriak</item>
+      <item name="bgcolor">Atzeko kolorea</item>
+      <item name="bgimage">Atzeko irudia</item>
+      <item name="left_margin">Ezker margina</item>
+      <item name="right_margin">Eskuin margina</item>
+      <item name="top_margin">Goiko margina</item>
+      <item name="bottom_margin">Beheko margina</item>
+      <item name="text_color">Testu kolorea</item>
+      <item name="font_size">Letra tamaina</item>
+      <item name="font_face">Letra mota</item>
+      <item name="link_color">Loturaren kolorea</item>
+      <item name="hover_color">Lotura gainean kolorea</item>
+      <item name="visited_color">Bisitatutako lotura kolorea</item>
+      <item name="active_color">Loruta aktiboaren kolorea</item>
+      <item name="textcolor">Kolorea</item>
+      <item name="fontsize">Letra tamaina</item>
+      <item name="fontface">Letra mota</item>
+      <item name="meta_index_follow">Indexatu eta jarraitu loturak</item>
+      <item name="meta_index_nofollow">Indexatu eta ez jarraitu loturak</item>
+      <item name="meta_noindex_follow">Ez indexatu, baina jarraitu loturak</item>
+      <item name="meta_noindex_nofollow">Ez indexatu eta ez jarraitu loturak</item>
+      <item name="appearance_style">Estilo orri eta estilo ezaugarriak</item>
+      <item name="stylesheet">Estilo orria</item>
+      <item name="style">Estiloa</item>
+      <item name="author">Egilea</item>
+      <item name="copyright">Copyright</item>
+      <item name="add">Gehitu elementua</item>
+      <item name="remove">Ezabatu aukeratutako elementua</item>
+      <item name="moveup">Mugitu aukeratutako elementua gora</item>
+      <item name="movedown">Mugitu aukeratutako elementua behera</item>
+      <item name="head_elements">Goiburuko elementuak</item>
+      <item name="info">Informazioa</item>
+      <item name="add_title">Title elementua</item>
+      <item name="add_meta">Meta elementua</item>
+      <item name="add_script">Script elementua</item>
+      <item name="add_style">Style elementua</item>
+      <item name="add_link">Link elementua</item>
+      <item name="add_base">Base elementua</item>
+      <item name="add_comment">Comment nodoa</item>
+      <item name="title_element">Title elementua</item>
+      <item name="script_element">Script elementua</item>
+      <item name="style_element">Style elementua</item>
+      <item name="base_element">Base elementua</item>
+      <item name="link_element">Link elementua</item>
+      <item name="meta_element">Meta elementua</item>
+      <item name="comment_element">Iruzkina</item>
+      <item name="src">Src</item>
+      <item name="language">Hizkuntza</item>
+      <item name="href">Href</item>
+      <item name="target">Helburua</item>
+      <item name="type">Mota</item>
+      <item name="charset">Karaktereak</item>
+      <item name="defer">Defer</item>
+      <item name="media">Media</item>
+      <item name="properties">Ezaugarriak</item>
+      <item name="name">Izena</item>
+      <item name="value">Balioa</item>
+      <item name="content">Edukia</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href hizkuntza</item>
+      <item name="general_props">Orokorra</item>
+      <item name="advanced_props">Aurreratua</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Txertatu aurredefinitutako txantiloiaren edukia</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">Txantiloiak</item>
+      <item name="label">Txantiloia</item>
+      <item name="desc_label">Deskribapena</item>
+      <item name="desc">Txertatu aurredefinitutako txantiloi edukia</item>
+      <item name="select">Aukeratu txantiloia</item>
+      <item name="preview">Aurreikusi</item>
+      <item name="warning">Kontuz: Txantiloi bat beste batekin eguneratzeak data galera sor dezake.</item>
+      <item name="mdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="cdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="months_long">Urtarrila,Otsaila,Martxoa,Apirila,Maiatza,Ekaina,Uztaila,Abuztua,Iraila,Urria,Azaroa,Abendua</item>
+      <item name="months_short">Urt,Ots,Mar,Apr,Mai,Eka,Uzt,Abu,Ira,Urr,Aza,Abe</item>
+      <item name="day_long">Igandea,Astelehena,Asteartea,Asteazkena,Osteguna,Ostirala,Larunbata,Igandea</item>
+      <item name="day_short">Ig,Al,As,Az,Og,Or,Lr,Ig</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Begi kontrol karaktereak gaitu/ezgaitu.</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">Ortografia zuzentzaile modura aldatu</item>
+      <item name="menu">Ortografia zuzentzailearen doikuntza</item>
+      <item name="ignore_word">Ezikusi hitza</item>
+      <item name="ignore_words">Ezikusi guztiak</item>
+      <item name="langs">Hizkuntzak</item>
+      <item name="wait">Itxaron mesedez...</item>
+      <item name="sug">Gomendioa</item>
+      <item name="no_sug">Gomendiorik ez</item>
+      <item name="no_mpell">Ez da akatsik aurkitu</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">Txertatu orri jauzia.</item>
+    </group>
+    <group target="advlist">
+      <item name="types">Motak</item>
+      <item name="def">Lehenetsiak</item>
+      <item name="lower_alpha">Hizki xeheak</item>
+      <item name="lower_greek">Hizki greko xeheak</item>
+      <item name="lower_roman">Zenbaki erromatar xeheak</item>
+      <item name="upper_alpha">Hizki larriak</item>
+      <item name="upper_roman">Zenbaki erromatar larriak</item>
+      <item name="circle">Borobila</item>
+      <item name="disc">Diskoa</item>
+      <item name="square">Karratua</item>
+    </group>
+  </language>
+</language-pack>

@@ -1,0 +1,925 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>Tak tahu apa</author>
+    <version major="1" minor="5" releasedate="2009-10-26" />
+    <description>Ini adalah pek Bahasa Melayu untuk TinyMCE.</description>
+  </header>
+  <language code="ms" title="Malay" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">Guna WYSIWYG mod untuk "textarea" ini?</item>
+      <item name="apply">Guna</item>
+      <item name="insert">Sisip</item>
+      <item name="update">Kemaskini</item>
+      <item name="cancel">Batal</item>
+      <item name="close">Tutup</item>
+      <item name="browse">Semak seimbas</item>
+      <item name="class_name">Kelas</item>
+      <item name="not_set">-- Tidak set --</item>
+      <item name="clipboard_msg">Salin/Potong/Tempel tidak disediakan untuk Mozilla dan Firefox.\nAdakah anda mahu informasi lanjut tentang isu ini?</item>
+      <item name="clipboard_no_support">Perisian browser anda tidak disokong pada masa ini, sila guna papan kekunci.</item>
+      <item name="popup_blocked">Maaf, kami dapati "popup-blocker" telah melumpuhkan tetingkap yang memberikan fungsi kepada perisian anda. Anda perlu mematikan "popup-blocker" untuk laman web ini bagi menggunakan semua alatan.</item>
+      <item name="invalid_data">Ralat: Nilai dimasukkan tidak sah, lihat tanda merah.</item>
+      <item name="more_colors">Warna lain-lain</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">Tebal (Ctrl+B)</item>
+      <item name="italic_desc">Condong (Ctrl+I)</item>
+      <item name="underline_desc">Garis bawah (Ctrl+U)</item>
+      <item name="striketrough_desc">Garis tengah</item>
+      <item name="bullist_desc">Senarai tidak tertib</item>
+      <item name="numlist_desc">Senarai tertib</item>
+      <item name="undo_desc">Buat asal (Ctrl+Z)</item>
+      <item name="redo_desc">Buat semula (Ctrl+Y)</item>
+      <item name="cleanup_desc">Bersihkan kod yang bersepah</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">Gaya</item>
+      <item name="font_size">Saiz Huruf</item>
+      <item name="fontdefault">Jenis Huruf</item>
+      <item name="block">Format</item>
+      <item name="paragraph">Perenggan</item>
+      <item name="div">Div</item>
+      <item name="address">Alamat</item>
+      <item name="pre">Telah diformatkan</item>
+      <item name="h1">Tajuk 1</item>
+      <item name="h2">Tajuk 2</item>
+      <item name="h3">Tajuk 3</item>
+      <item name="h4">Tajuk 4</item>
+      <item name="h5">Tajuk 5</item>
+      <item name="h6">Tajuk 6</item>
+      <item name="blockquote">Petikan blok</item>
+      <item name="code">Kod</item>
+      <item name="samp">Contoh kod</item>
+      <item name="dt">Maksud terma</item>
+      <item name="dd">Maksud huraian</item>
+      <!-- Buttons -->
+      <item name="bold_desc">Tebal (Ctrl+B)</item>
+      <item name="italic_desc">Condong (Ctrl+I)</item>
+      <item name="underline_desc">Garis bawah (Ctrl+U)</item>
+      <item name="striketrough_desc">Garis tengah</item>
+      <item name="justifyleft_desc">Selari kekiri</item>
+      <item name="justifycenter_desc">Selari ketengah</item>
+      <item name="justifyright_desc">Selari kekanan</item>
+      <item name="justifyfull_desc">Selari penuh</item>
+      <item name="bullist_desc">Senarai tidak tertib</item>
+      <item name="numlist_desc">Senarai tertib</item>
+      <item name="outdent_desc">Lekuk kebelakang</item>
+      <item name="indent_desc">Lekuk kedepan</item>
+      <item name="undo_desc">Undur (Ctrl+Z)</item>
+      <item name="redo_desc">Maju (Ctrl+Y)</item>
+      <item name="link_desc">Sisip/sunting pautan</item>
+      <item name="unlink_desc">Tiada pautan</item>
+      <item name="image_desc">Sisip/sunting imej</item>
+      <item name="cleanup_desc">Bersihkan kod</item>
+      <item name="code_desc">Sunting kod HTML</item>
+      <item name="sub_desc">Subskrip</item>
+      <item name="sup_desc">Superskrip</item>
+      <item name="hr_desc">Sisip pembaris mengufuk</item>
+      <item name="removeformat_desc">Alih format</item>
+      <item name="custom1_desc">Huraian anda di sini</item>
+      <item name="forecolor_desc">Pilih warna teks</item>
+      <item name="backcolor_desc">Pilih warna latar belakang</item>
+      <item name="charmap_desc">Sisip aksara</item>
+      <item name="visualaid_desc">Alih garis panduan/unsur tak nampak</item>
+      <item name="anchor_desc">Sisip/sunting anchor</item>
+      <item name="cut_desc">Potong</item>
+      <item name="copy_desc">Salin</item>
+      <item name="paste_desc">Tempel</item>
+      <item name="image_props_desc">Alatan imej</item>
+      <item name="newdocument_desc">Dokumen baru</item>
+      <item name="help_desc">Bantuan</item>
+      <item name="blockquote_desc">Petikan blok</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">Salin/Potong/Tempel tidak disokong dalam Mozilla dan Firefox.
+Adakah anda mahu informasi lanjut tentang isu ini?</item>
+      <item name="path">Laluan</item>
+      <item name="newdocument">Hapus semua kandungan?</item>
+      <item name="toolbar_focus">Lompat ke butang alatan - Alt+Q, Lompat ke editor - Alt-Z, Lompat ke unsur laluan - Alt-X</item>
+      <item name="more_colors">Warna lain</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">Perihal TinyMCE</item>
+      <item name="about_general">Perihal</item>
+      <item name="about_help">Bantuan</item>
+      <item name="about_license">Lesen</item>
+      <item name="about_plugins">Plugins</item>
+      <item name="about_plugin">Plugin</item>
+      <item name="about_author">Pengarang</item>
+      <item name="about_version">Versi</item>
+      <item name="about_loaded">Muatan plugins</item>
+      <!-- Anchor -->
+      <item name="anchor_title">Sisip/sunting sauh</item>
+      <item name="anchor_name">Nama sauh</item>
+      <!-- Source -->
+      <item name="code_title">Penyunting HTML</item>
+      <item name="code_wordwrap">Sisip perkataan</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">Pilih warna</item>
+      <item name="colorpicker_picker_tab">Pemungut</item>
+      <item name="colorpicker_picker_title">Pemungut warna</item>
+      <item name="colorpicker_palette_tab">Palet</item>
+      <item name="colorpicker_palette_title">Palet warna</item>
+      <item name="colorpicker_named_tab">Dinamakan</item>
+      <item name="colorpicker_named_title">Warna telah dinamakan</item>
+      <item name="colorpicker_color">Warna:</item>
+      <item name="colorpicker_name">Nama:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">Pilih aksara sendiri</item>
+      <!-- Image -->
+      <item name="image_title">Sisip/sunting imej</item>
+      <item name="image_src">Imej URL</item>
+      <item name="image_alt">Huraian imej</item>
+      <item name="image_list">Senarai imej</item>
+      <item name="image_border">Sempadan</item>
+      <item name="image_dimensions">Dimensi</item>
+      <item name="image_vspace">Ruangan tegak</item>
+      <item name="image_hspace">Ruangan ufuk</item>
+      <item name="image_align">Penyelarian</item>
+      <item name="image_align_baseline">Garis pangkal</item>
+      <item name="image_align_top">Atas</item>
+      <item name="image_align_middle">Tengah</item>
+      <item name="image_align_bottom">Bawah</item>
+      <item name="image_align_texttop">Teks atas</item>
+      <item name="image_align_textbottom">Teks bawah</item>
+      <item name="image_align_left">Kiri</item>
+      <item name="image_align_right">Kanan</item>
+      <!-- Link -->
+      <item name="link_title">Sisip/sunting pautan</item>
+      <item name="link_url">Pautan URL</item>
+      <item name="link_target">Sasaran</item>
+      <item name="link_target_same">Buka pautan dalam tetingkap yang sama</item>
+      <item name="link_target_blank">Buka pautan dalam tetingkap yang sama</item>
+      <item name="link_titlefield">Tajuk</item>
+      <item name="link_is_email">URL yang anda masukkan adalah alamat emel, tambah "mailto": di awalan?</item>
+      <item name="link_is_external">URL yang anda masukkan adalah pautan luar, tambah "http://" di awalan?</item>
+      <item name="link_list">Senarai pautan</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">Penyelarian</item>
+      <item name="left">Kiri</item>
+      <item name="center">Tengah</item>
+      <item name="right">Kanan</item>
+      <item name="full">Penuh</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%Y-%m-%d</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">Sisip tarikh</item>
+      <item name="inserttime_desc">Sisip masa</item>
+      <item name="months_long">Januari,Febuari,Mac,April,Mei,Jun,Julai,Ogos,September,Oktober,November,Disember</item>
+      <item name="months_short">Jan,Feb,Mac,Apr,Mei,Jun,Jul,Ogo,Sep,Okt,Nov,Dis</item>
+      <item name="day_long">Ahad,Isnin,Selasa,Rabu,Khamis,Jumaat,Sabtu,Ahad</item>
+      <item name="day_short">Aha,Isn,Sel,Rab,Kha,Jum,Sab,Aha</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">Cetak</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">Pratonton</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">Arah kiri ke kanan</item>
+      <item name="rtl_desc">Arah kanan ke kiri</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">Sisip lapisan baru</item>
+      <item name="forward_desc">Gerak kehadapan</item>
+      <item name="backward_desc">Gerak kebelakang</item>
+      <item name="absolute_desc">Alih posisi mutlak</item>
+      <item name="content">Lapisan baru...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">Simpan</item>
+      <item name="cancel_desc">Batal semua pertukaran</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">Masukkan aksara ruang [nbsp]</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">Larikan pembetulan ejaan</item>
+      <item name="download">ieSpell tiada. Pasang sekarang?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">Garis mengufuk</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">Lebar</item>
+      <item name="size">Tinggi</item>
+      <item name="noshade">Tanpa bayang</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">Simbol Emosi</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">Masukkan emosi</item>
+      <item name="desc">Simbol Emosi</item>
+      <item name="cool">Tampan</item>
+      <item name="cry">Menangis</item>
+      <item name="embarassed">Malu</item>
+      <item name="foot_in_mouth">Kaki dalam mulut</item>
+      <item name="frown">Mengerut</item>
+      <item name="innocent">Tidak bersalah</item>
+      <item name="kiss">Cium</item>
+      <item name="laughing">Gelak</item>
+      <item name="money_mouth">Duit mulut</item>
+      <item name="sealed">Kacip</item>
+      <item name="smile">Senyum</item>
+      <item name="surprised">Terkejut</item>
+      <item name="tongue_out">Jelir lidah</item>
+      <item name="undecided">Tak pasti</item>
+      <item name="wink">Kenyit</item>
+      <item name="yell">Menguap</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">Cari</item>
+      <item name="replace_desc">Cari/Ganti</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">Cari lagi</item>
+      <item name="notfound">Carian tamat. Perkataan yang dicari tiada.</item>
+      <item name="search_title">Cari</item>
+      <item name="replace_title">Cari/Ganti</item>
+      <item name="allreplaced">Kesemua perkataan telah digantikan.</item>
+      <item name="findwhat">Cari apa</item>
+      <item name="replacewith">Ganti dengan</item>
+      <item name="direction">Arah</item>
+      <item name="up">Atas</item>
+      <item name="down">Bawah</item>
+      <item name="mcase">Samakan kes</item>
+      <item name="findnext">Carian seterusnya</item>
+      <item name="replace">Ganti</item>
+      <item name="replaceall">Ganti kesemuanya</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">Sisip/sunting imej</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">Am</item>
+      <item name="tab_appearance">Penglihatan</item>
+      <item name="tab_advanced">Lanjutan</item>
+      <item name="general">Am</item>
+      <item name="title">Tajuk</item>
+      <item name="preview">Pratonton</item>
+      <item name="constrain_proportions">Kadar tahanan</item>
+      <item name="langdir">Arah bahasa</item>
+      <item name="langcode">Kod bahasa</item>
+      <item name="long_desc">Pautan huraian panjang</item>
+      <item name="style">Gaya</item>
+      <item name="classes">Kelas-kelas</item>
+      <item name="ltr">Kiri ke kanan</item>
+      <item name="rtl">Kanan ke kiri</item>
+      <item name="id">Id</item>
+      <item name="map">Imej map</item>
+      <item name="swap_image">Tukar imej</item>
+      <item name="alt_image">Imej alternatif</item>
+      <item name="mouseover">untuk tetikus di atas</item>
+      <item name="mouseout">untuk tetikus di luar</item>
+      <item name="misc">Pelbagai</item>
+      <item name="example_img">Penglihatan pratonton imej</item>
+      <item name="missing_alt">Adakah anda pasti untuk teruskan tanpa masukkan huraian imej? Tanpa huraian, imej mungkin tidak dapat difahami oleh orang yang kurang upaya, orang yang menggunakan pelayaran teks.</item>
+      <item name="dialog_title">Sisip/sunting imej</item>
+      <item name="src">URL imej</item>
+      <item name="alt">Huraian imej</item>
+      <item name="list">Senarai imej</item>
+      <item name="border">Sempadan</item>
+      <item name="dimensions">Dimensi</item>
+      <item name="vspace">Ruangan tegak</item>
+      <item name="hspace">Ruangan ufuk</item>
+      <item name="align">Penyelarian</item>
+      <item name="align_baseline">Garis pangkal</item>
+      <item name="align_top">Atas</item>
+      <item name="align_middle">Tengah</item>
+      <item name="align_bottom">Bawah</item>
+      <item name="align_texttop">Teks atas</item>
+      <item name="align_textbottom">Teks bawah</item>
+      <item name="align_left">Kiri</item>
+      <item name="align_right">Kanan</item>
+      <item name="image_list">Senarai imej</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">Sisip/sunting pautan</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">Sisip/sunting pautan</item>
+      <item name="url">Pautan URL</item>
+      <item name="target">Sasaran</item>
+      <item name="titlefield">Tajuk</item>
+      <item name="is_email">URL yang dimasukkan adalah alamat emel, tambah "mailto": di awalan?</item>
+      <item name="is_external">URL yang dimasukkan adalah pautan luar, tambah "http://" di awalan?</item>
+      <item name="list">Senarai pautan</item>
+      <item name="general_tab">Am</item>
+      <item name="popup_tab">Popup</item>
+      <item name="events_tab">Peristiwa</item>
+      <item name="advanced_tab">Lanjutan</item>
+      <item name="general_props">Alatan am</item>
+      <item name="popup_props">Alatan Popup</item>
+      <item name="event_props">Peristiwa</item>
+      <item name="advanced_props">Alatan lanjutan</item>
+      <item name="popup_opts">Pilihan</item>
+      <item name="anchor_names">Sauh</item>
+      <item name="target_same">Buka tetingkap ini</item>
+      <item name="target_parent">Buka dalam tetingkap yang lain</item>
+      <item name="target_top">Buka bingkaian atas (gantikan kesemua bingkai)</item>
+      <item name="target_blank">Buka dalam tetingkap baru.</item>
+      <item name="popup">Popup Javascript </item>
+      <item name="popup_url">Popup URL</item>
+      <item name="popup_name">Nama tetingkap</item>
+      <item name="popup_return">Masukkan 'return false'</item>
+      <item name="popup_scrollbars">Tunjuk bar gulung</item>
+      <item name="popup_statusbar">Tunjuk bar status</item>
+      <item name="popup_toolbar">Tunjuk bar alatan</item>
+      <item name="popup_menubar">Tunjuk bar menu</item>
+      <item name="popup_location">Tunjuk bar lokasi</item>
+      <item name="popup_resizable">Jadikan tetingkap boleh diubahsuai</item>
+      <item name="popup_dependent">Tanggungan (Hanya Mozilla/Firefox)</item>
+      <item name="popup_size">Saiz</item>
+      <item name="popup_position">Posisi (X/Y)</item>
+      <item name="id">Id</item>
+      <item name="style">Gaya</item>
+      <item name="classes">Kelas-kelas</item>
+      <item name="target_name">Nama sasaran</item>
+      <item name="langdir">Arah bahasa</item>
+      <item name="target_langcode">Bahasa sasaran</item>
+      <item name="langcode">Kod bahasa</item>
+      <item name="encoding">Sasaran enkod perkataan</item>
+      <item name="mime">Sasaran jenis MIME</item>
+      <item name="rel">Kaitan halaman kepada sasaran</item>
+      <item name="rev">Kaitan sasaran kepada halaman</item>
+      <item name="tabindex">Tanda indeks</item>
+      <item name="accesskey">Kunci akses</item>
+      <item name="ltr">Kiri ke kanan</item>
+      <item name="rtl">Kanan ke kiri</item>
+      <item name="link_list">Senarai pautan</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">Kutipan</item>
+      <item name="abbr_desc">Singkatan</item>
+      <item name="acronym_desc">Akronim</item>
+      <item name="del_desc">Pemadaman</item>
+      <item name="ins_desc">Kemasukan</item>
+      <item name="attribs_desc">Masukkan/Sunting Ciri-ciri</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">Tajuk</item>
+      <item name="attribute_label_id">ID</item>
+      <item name="attribute_label_class">Kelas</item>
+      <item name="attribute_label_style">Gaya</item>
+      <item name="attribute_label_cite">Cuplik</item>
+      <item name="attribute_label_datetime">Tarikh/Masa</item>
+      <item name="attribute_label_langdir">Arah Teks</item>
+      <item name="attribute_option_ltr">Kiri ke kanan</item>
+      <item name="attribute_option_rtl">Kanan ke kiri</item>
+      <item name="attribute_label_langcode">Bahasa</item>
+      <item name="attribute_label_tabindex">Tanda indeks</item>
+      <item name="attribute_label_accesskey">Kunci akses</item>
+      <item name="attribute_events_tab">Peristiwa</item>
+      <item name="attribute_attrib_tab">Ciri-ciri</item>
+      <item name="general_tab">Am</item>
+      <item name="attrib_tab">Ciri-ciri</item>
+      <item name="events_tab">Peristiwa</item>
+      <item name="fieldset_general_tab">Susunan Am</item>
+      <item name="fieldset_attrib_tab">Unsur Ciri-ciri</item>
+      <item name="fieldset_events_tab">Unsur Peristiwa</item>
+      <item name="title_ins_element">Kemasukkan Unsur</item>
+      <item name="title_del_element">Pemadaman Unsur</item>
+      <item name="title_acronym_element">Akronim Unsur</item>
+      <item name="title_abbr_element">Singkatan Unsur</item>
+      <item name="title_cite_element">Kutipan Unsur</item>
+      <item name="remove">Alih</item>
+      <item name="insert_date">Masukkan tarikh/masa sekarang</item>
+      <item name="option_ltr">Kiri ke kanan</item>
+      <item name="option_rtl">Kanan ke kiri</item>
+      <item name="attribs_title">Masukkan/Sunting Ciri-ciri</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">Sunting Gaya CSS</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">Sunting Gaya CSS</item>
+      <item name="apply">Guna</item>
+      <item name="text_tab">Teks</item>
+      <item name="background_tab">Latar belakang</item>
+      <item name="block_tab">Landasan</item>
+      <item name="box_tab">Kotak</item>
+      <item name="border_tab">Sempadan</item>
+      <item name="list_tab">Senarai</item>
+      <item name="positioning_tab">Kedudukan</item>
+      <item name="text_props">Teks</item>
+      <item name="text_font">Huruf</item>
+      <item name="text_size">Saiz</item>
+      <item name="text_weight">Beban</item>
+      <item name="text_style">Gaya</item>
+      <item name="text_variant">Varian</item>
+      <item name="text_lineheight">Tinggi garisan</item>
+      <item name="text_case">Kes</item>
+      <item name="text_color">Warna</item>
+      <item name="text_decoration">Dekorasi</item>
+      <item name="text_overline">garis atas</item>
+      <item name="text_underline">garis bawah</item>
+      <item name="text_striketrough">garis tengah</item>
+      <item name="text_blink">kelip</item>
+      <item name="text_none">tiada</item>
+      <item name="background_color">Warna Latar</item>
+      <item name="background_image">Imej Latar</item>
+      <item name="background_repeat">Ulangan</item>
+      <item name="background_attachment">Sisipan</item>
+      <item name="background_hpos">Posisi mengufuk</item>
+      <item name="background_vpos">Posisi tegak</item>
+      <item name="block_wordspacing">Jarak perkataan</item>
+      <item name="block_letterspacing">Jarak huruf</item>
+      <item name="block_vertical_alignment">Penjajaran tegak</item>
+      <item name="block_text_align">Penjajaran teks</item>
+      <item name="block_text_indent">Takukan teks</item>
+      <item name="block_whitespace">Ruangan putih</item>
+      <item name="block_display">Pamer</item>
+      <item name="box_width">Lebar</item>
+      <item name="box_height">Tinggi</item>
+      <item name="box_float">Apungan</item>
+      <item name="box_clear">Ruangan jelas</item>
+      <item name="padding">Lapisan</item>
+      <item name="same">Samakan kesemuanya</item>
+      <item name="top">Atas</item>
+      <item name="right">Kanan</item>
+      <item name="bottom">Bawah</item>
+      <item name="left">Kiri</item>
+      <item name="margin">Ruangan tepi</item>
+      <item name="style">Gaya</item>
+      <item name="width">Lebar</item>
+      <item name="height">Tinggi</item>
+      <item name="color">Warna</item>
+      <item name="list_type">Jenis</item>
+      <item name="bullet_image">Imej peluru</item>
+      <item name="position">Posisi</item>
+      <item name="positioning_type">Jenis</item>
+      <item name="visibility">Kelihatan</item>
+      <item name="zindex">Indeks-Z</item>
+      <item name="overflow">Limpahan</item>
+      <item name="placement">Penempatan</item>
+      <item name="clip">Klip</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">Tempel sebagai teks</item>
+      <item name="paste_word_desc">Tempel dari Word</item>
+      <item name="selectall_desc">Pilih semua</item>
+      <!--<item name="plaintext_mode_sticky">Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode.</item>-->
+      <!--<item name="plaintext_mode">Paste is now in plain text mode. Click again to toggle back to regular paste mode.</item>-->
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">Guna CTRL+V pada papan kekunci anda untuk Tempel teks ke dalam tetingkap.</item>
+      <item name="text_linebreaks">Biarkan garisan pemisah</item>
+      <item name="word_title">Guna CTRL+V pada papan kekunci anda untuk teks ke dalam tetingkap.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">Masukkan jadual baru</item>
+      <item name="row_before_desc">Masukkan row sebelumnya</item>
+      <item name="row_after_desc">Masukkan row selepasnya</item>
+      <item name="delete_row_desc">Padam row</item>
+      <item name="col_before_desc">Masukkan kolum sebelumnya</item>
+      <item name="col_after_desc">Masukkan kolum selepasnya</item>
+      <item name="delete_col_desc">Alih kolum</item>
+      <item name="split_cells_desc">Bahagi sel jadual</item>
+      <item name="merge_cells_desc">Gabung sel jadual</item>
+      <item name="row_desc">Alatan jadual row</item>
+      <item name="cell_desc">Alatan jadual sel</item>
+      <item name="props_desc">Alatan jadual</item>
+      <item name="paste_row_before_desc">Tempel jadual row sebelumnya</item>
+      <item name="paste_row_after_desc">Tempel jadual row selepasnya</item>
+      <item name="cut_row_desc">Potong jadual row</item>
+      <item name="copy_row_desc">Salin jadual row</item>
+      <item name="del">Padam jadual</item>
+      <item name="row">Row</item>
+      <item name="col">Kolum</item>
+      <item name="cell">Sel</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width"></item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">Am</item>
+      <item name="advanced_tab">Lanjutan</item>
+      <item name="general_props">Alatan am</item>
+      <item name="advanced_props">Alatan lanjutan</item>
+      <item name="rowtype">Row dalam jadual</item>
+      <item name="title">Masuk/Ubah jadual</item>
+      <item name="width">Lebar</item>
+      <item name="height">Tinggi</item>
+      <item name="cols">Kol</item>
+      <item name="rows">Row</item>
+      <item name="cellspacing">Ruang sel</item>
+      <item name="cellpadding">Lapisan sel</item>
+      <item name="border">Sempadan</item>
+      <item name="align">Penyelarian</item>
+      <item name="align_default">Asal</item>
+      <item name="align_left">Kiri</item>
+      <item name="align_right">Kanan</item>
+      <item name="align_middle">Tengah</item>
+      <item name="row_title">Alatan row jadual</item>
+      <item name="cell_title">Alatan sel jadual</item>
+      <item name="cell_type">Jenis sel</item>
+      <item name="valign">Penjajaran tegak</item>
+      <item name="align_top">Atas</item>
+      <item name="align_bottom">Bawah</item>
+      <item name="bordercolor">Warna sempadan</item>
+      <item name="bgcolor">Warna latar</item>
+      <item name="merge_cells_title">Gabung sel jadual</item>
+      <item name="id">Id</item>
+      <item name="style">Gaya</item>
+      <item name="langdir">Arah bahasa</item>
+      <item name="langcode">Kod bahasa</item>
+      <item name="mime">Sasaran jenis MIME</item>
+      <item name="ltr">Kiri ke kanan</item>
+      <item name="rtl">Kanan ke kiri</item>
+      <item name="bgimage">Imej latar</item>
+      <item name="summary">Kesimpulan</item>
+      <item name="td">Data</item>
+      <item name="th">Kepala</item>
+      <item name="cell_cell">Baharui sel ini</item>
+      <item name="cell_row">Baharui semua sel dalam row</item>
+      <item name="cell_all">Baharui semua sel dalam jadual</item>
+      <item name="row_row">Baharui row semasa</item>
+      <item name="row_odd">Baharui row ganjil dalam jadual</item>
+      <item name="row_even">Baharui row genap dalam jadual</item>
+      <item name="row_all">Baharui semua row dalam jadual</item>
+      <item name="thead">Pembuka jadual</item>
+      <item name="tbody">Isi jadual</item>
+      <item name="tfoot">Penutup jadual Foot</item>
+      <item name="scope">Skop</item>
+      <item name="rowgroup">Kumpulan row</item>
+      <item name="colgroup">Kumpulan kol</item>
+      <item name="col_limit">Anda telah melebihi maxima kolum dibenarkan iaitu {$cols}.</item>
+      <item name="row_limit">Anda telah melebihi maxima row dibenarkan iaitu {$rows}.</item>
+      <item name="cell_limit">Anda telah melebihi maxima sel dibenarkan iaitu {$cells}.</item>
+      <item name="missing_scope">Adakah anda pasti terhadap skop sel jadual ini. Ia mungkin memberi kesan kepada OKU memahami isi jadual.</item>
+      <item name="caption">Tajuk jadual</item>
+      <item name="frame">Bingkai</item>
+      <item name="frame_none">tiada</item>
+      <item name="frame_groups">kumpulan</item>
+      <item name="frame_rows">row</item>
+      <item name="frame_cols">kol</item>
+      <item name="frame_all">semua</item>
+      <item name="rules">Peraturan</item>
+      <item name="rules_void">batal</item>
+      <item name="rules_above">atas</item>
+      <item name="rules_below">bawah</item>
+      <item name="rules_hsides">tepian datar</item>
+      <item name="rules_lhs">hs-kiri</item>
+      <item name="rules_rhs">hs-kanan</item>
+      <item name="rules_vsides">tepian tegak</item>
+      <item name="rules_box">kotak</item>
+      <item name="rules_border">sempadan</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">Pertukaran akan terbatal sekiranya anda meninggalkan halaman ini.</item>
+      <!--<item name="restore_content">Restore auto-saved content.</item>-->
+      <!--<item name="warning_message">If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?.</item>-->
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">Alih mod skrin penuh</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">Masukkan / sunting media</item>
+      <item name="edit">Sunting media</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">Masukkan / sunting media</item>
+      <item name="general">Am</item>
+      <item name="advanced">Lanjutan</item>
+      <item name="file">Fail/URL</item>
+      <item name="list">Senarai</item>
+      <item name="size">Dimensi</item>
+      <item name="preview">Pratonton</item>
+      <item name="constrain_proportions">Kadar tahanan</item>
+      <item name="type">Jenis</item>
+      <item name="id">Id</item>
+      <item name="name">Nama</item>
+      <item name="class_name">Kelas</item>
+      <item name="vspace">Ruangan-Tegak</item>
+      <item name="hspace">Ruangan-Datar</item>
+      <item name="play">Auto main</item>
+      <item name="loop">Gelung</item>
+      <item name="menu">Tunjuk menu</item>
+      <item name="quality">Kualiti</item>
+      <item name="scale">Ukuran</item>
+      <item name="align">Luruskan</item>
+      <item name="salign">SLuruskan</item>
+      <item name="wmode">WMod</item>
+      <item name="bgcolor">Latar belakang</item>
+      <item name="base">Dasar</item>
+      <item name="flashvars">Flashvars</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">AutoHREF</item>
+      <item name="cache">Tempat menyembunyikan</item>
+      <item name="hidden">Tersorok</item>
+      <item name="controller">Kendali</item>
+      <item name="kioskmode">Mode toko</item>
+      <item name="playeveryframe">Main setiap bingkai</item>
+      <item name="targetcache">Sasaran tersembunyi</item>
+      <item name="correction">Tiada pembetulan</item>
+      <item name="enablejavascript">Bolehkan JavaScript</item>
+      <item name="starttime">Masa bermula</item>
+      <item name="endtime">Masa tamat</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">Kelajuan sumbatan</item>
+      <item name="target">Sasaran</item>
+      <item name="volume">Ketinggian suara</item>
+      <item name="autostart">Auto mula</item>
+      <item name="enabled">Dibolehkan</item>
+      <item name="fullscreen">Skrin penuh</item>
+      <item name="invokeurls">Panggil URL</item>
+      <item name="mute">Bisu</item>
+      <item name="stretchtofit">Bujurkan supaya sesuai</item>
+      <item name="windowlessvideo">Tetingkap tanpa video</item>
+      <item name="balance">Baki</item>
+      <item name="baseurl">URL dasar</item>
+      <item name="captioningid">Tajuk id</item>
+      <item name="currentmarker">Penanda semasa</item>
+      <item name="currentposition">Posisi semasa</item>
+      <item name="defaultframe">Bingkai asal</item>
+      <item name="playcount">Kira</item>
+      <item name="rate">Undi</item>
+      <item name="uimode">Mod Grafik</item>
+      <item name="flash_options">Flash</item>
+      <item name="qt_options">Quicktime</item>
+      <item name="wmp_options">Pemain Windows media</item>
+      <item name="rmp_options">Pemain Real media</item>
+      <item name="shockwave_options">Shockwave</item>
+      <item name="autogotourl">Auto pergi-ke URL</item>
+      <item name="center">Tengah</item>
+      <item name="imagestatus">Status imej</item>
+      <item name="maintainaspect">Pelihara aspek</item>
+      <item name="nojava">Java tidak dibenarkan</item>
+      <item name="prefetch">Preambilan</item>
+      <item name="shuffle">Merangkak</item>
+      <item name="console">Konsol</item>
+      <item name="numloop">Nombor gelungan</item>
+      <item name="controls">Kendali</item>
+      <item name="scriptcallbacks">Panggilan balik skrip</item>
+      <item name="swstretchstyle">Gaya bentangan</item>
+      <item name="swstretchhalign">Bentangan Selarian-Ufuk</item>
+      <item name="swstretchvalign">Stretch Selarian-Tegak</item>
+      <item name="sound">Sound</item>
+      <item name="progress">Progress</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn"></item>
+      <item name="align_top">Atas</item>
+      <item name="align_right">Kanan</item>
+      <item name="align_bottom">Bawah</item>
+      <item name="align_left">Kiri</item>
+      <item name="align_center">Tengah</item>
+      <item name="align_top_left">Kiri atas</item>
+      <item name="align_top_right">Kanan atas</item>
+      <item name="align_bottom_left">Bawah kiri</item>
+      <item name="align_bottom_right">Bawah kanan</item>
+      <item name="flv_options">Alatan flash video</item>
+      <item name="flv_scalemode">Skala mod</item>
+      <item name="flv_buffer">Buffer</item>
+      <item name="flv_startimage">Start imej</item>
+      <item name="flv_starttime">Masa mula</item>
+      <item name="flv_defaultvolume">Bunyi asal</item>
+      <item name="flv_hiddengui">GUI tersorok</item>
+      <item name="flv_autostart">Auto mula</item>
+      <item name="flv_loop">Gegelung</item>
+      <item name="flv_showscalemodes">Tunjuk skala mod</item>
+      <item name="flv_smoothvideo">Perlahankan video</item>
+      <item name="flv_jscallback">JS Callback</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">Alatan dokumen</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Alatan dokumen</item>
+      <item name="meta_tab">Am</item>
+      <item name="appearance_tab">Penglihatan</item>
+      <item name="advanced_tab">Lanjutan</item>
+      <item name="meta_props">Meta informasi</item>
+      <item name="langprops">Bahasa dan enkod</item>
+      <item name="meta_title">Tajuk</item>
+      <item name="meta_keywords">Kata kunci</item>
+      <item name="meta_description">Huraian</item>
+      <item name="meta_robots">Robot</item>
+      <item name="doctypes">Doctype</item>
+      <item name="langcode">Kod bahasa</item>
+      <item name="langdir">Arah bahasa</item>
+      <item name="ltr">Kiri ke kanan</item>
+      <item name="rtl">Kanan ke kiri</item>
+      <item name="xml_pi">XML deklarasi</item>
+      <item name="encoding">PengKod aksara</item>
+      <item name="appearance_bgprops">Alatan latar belakang</item>
+      <item name="appearance_marginprops">Ruangan tepi isi kandungan</item>
+      <item name="appearance_linkprops">Pautan warna</item>
+      <item name="appearance_textprops">Alatan teks</item>
+      <item name="bgcolor">Warna latar belakang</item>
+      <item name="bgimage">Imej latar belakang</item>
+      <item name="left_margin">Ruangan tepi kiri</item>
+      <item name="right_margin">Ruangan tepi kanan</item>
+      <item name="top_margin">Ruangan tepi atas</item>
+      <item name="bottom_margin">Ruangan tepi bawah</item>
+      <item name="text_color">Warna teks</item>
+      <item name="font_size">Saiz Huruf</item>
+      <item name="font_face">Jenis Huruf</item>
+      <item name="link_color">Pautan Warna</item>
+      <item name="hover_color">Warna di atas</item>
+      <item name="visited_color">Warna telah lawat</item>
+      <item name="active_color">Warna aktif</item>
+      <item name="textcolor">Warna</item>
+      <item name="fontsize">Saiz huruf</item>
+      <item name="fontface">Keluarga huruf</item>
+      <item name="meta_index_follow">Indeks dan ikut pautan</item>
+      <item name="meta_index_nofollow">Indeks dan jangan ikut pautan</item>
+      <item name="meta_noindex_follow">Jangan indeks tapi ikut pautan</item>
+      <item name="meta_noindex_nofollow">Jangan indeks dan ikut pautan</item>
+      <item name="appearance_style">Stylesheet dan alatan gaya</item>
+      <item name="stylesheet">Stylesheet</item>
+      <item name="style">Gaya</item>
+      <item name="author">Pengarang</item>
+      <item name="copyright">Hakcipta</item>
+      <item name="add">Tambah unsur baru</item>
+      <item name="remove">Alih unsur yang dipilih</item>
+      <item name="moveup">Alih unsur yang dipilih ke atas</item>
+      <item name="movedown">Alih unsur yang dipilih ke bawah</item>
+      <item name="head_elements">Unsur pembuka</item>
+      <item name="info">Informasi</item>
+      <item name="add_title">Unsur tajuk</item>
+      <item name="add_meta">Unsur meta</item>
+      <item name="add_script">Unsur skrip</item>
+      <item name="add_style">Unsur gaya</item>
+      <item name="add_link">Unsur pautan</item>
+      <item name="add_base">Unsur dasar</item>
+      <item name="add_comment">Nod komen</item>
+      <item name="title_element">Unsur tajuk</item>
+      <item name="script_element">Unsur skrip</item>
+      <item name="style_element">Unsur gaya</item>
+      <item name="base_element">Unsur dasar</item>
+      <item name="link_element">Unsur pautan</item>
+      <item name="meta_element">Unsur meta</item>
+      <item name="comment_element">Komen</item>
+      <item name="src">Src</item>
+      <item name="language">Bahasa</item>
+      <item name="href">Href</item>
+      <item name="target">Sasaran</item>
+      <item name="type">Jenis</item>
+      <item name="charset">Set huruf</item>
+      <item name="defer">Menangguhkan</item>
+      <item name="media">Media</item>
+      <item name="properties">Alatan</item>
+      <item name="name">Nama</item>
+      <item name="value">Nilai</item>
+      <item name="content">Isi kandungan</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href lang</item>
+      <item name="general_props">Am</item>
+      <item name="advanced_props">Lanjutan</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Masukkan pra takrifan kandungan templet</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">Templet</item>
+      <item name="label">Templet</item>
+      <item name="desc_label">Huraian</item>
+      <item name="desc">Masukkan pra takrifan kandungan templet</item>
+      <item name="select">Pilih templet</item>
+      <item name="preview">Pratonton</item>
+      <item name="warning">Amaran: Memperbaharui template dengan yang lain akan menyebabkan kehilangan data.</item>
+      <item name="mdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="cdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="months_long">Januari,Febuari,Mac,April,Mei,Jun,Julai,Ogos,September,Oktober,November,Disember</item>
+      <item name="months_short">Jan,Feb,Mac,Apr,Mei,Jun,Jul,Ogo,Sep,Okt,Nov,Dis</item>
+      <item name="day_long">Ahad,Isnin,Selasa,Rabu,Khamis,Jumaat,Sabtu,Ahad</item>
+      <item name="day_short">Aha,Isn,Sel,Rab,Kha,Jum,Sab,Aha</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Pengendali grafik huruf Buka/Tutup.</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">Alih pembetul perkataan</item>
+      <item name="menu">Alatan pembetul perkataan</item>
+      <item name="ignore_word">Endahkan perkataan</item>
+      <item name="ignore_words">Endahkan kesemuanya</item>
+      <item name="langs">Bahasa-bahasa</item>
+      <item name="wait">Sila tunggu...</item>
+      <item name="sug">Cadangan</item>
+      <item name="no_sug">Tiada cadangan</item>
+      <item name="no_mpell">Tiada kesalahan ejaan.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">Masukkan penghenti-halaman.</item>
+    </group>
+    <group target="advlist">
+      <!--<item name="types">Types</item>-->
+      <!--<item name="def">Default</item>-->
+      <!--<item name="lower_alpha">Lower alpha</item>-->
+      <!--<item name="lower_greek">Lower greek</item>-->
+      <!--<item name="lower_roman">Lower roman</item>-->
+      <!--<item name="upper_alpha">Upper alpha</item>-->
+      <!--<item name="upper_roman">Upper roman</item>-->
+      <!--<item name="circle">Circle</item>-->
+      <!--<item name="disc">Disc</item>-->
+      <!--<item name="square">Square</item>-->
+    </group>
+  </language>
+</language-pack>

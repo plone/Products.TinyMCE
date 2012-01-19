@@ -1,10 +1,17 @@
 import httplib
 
+from Acquisition import aq_inner
+
 from zope.interface import implements
-from zope.component import getUtility
+from zope.component import getUtility, queryUtility
+from zope.component import getMultiAdapter
 
 from Products.Five.browser import BrowserView
+from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
+from Products.CMFCore.utils import getToolByName
+
+from plone.app.layout.viewlets.common import ViewletBase
 from Products.TinyMCE.adapters.interfaces.JSONFolderListing import \
      IJSONFolderListing
 from Products.TinyMCE.adapters.interfaces.JSONSearch import IJSONSearch
@@ -23,8 +30,8 @@ class TinyMCEBrowserView(BrowserView):
     def upload(self):
         """Upload a file to the zodb"""
 
-        object = IUpload(self.context)
-        return object.upload()
+        context = IUpload(self.context)
+        return context.upload()
 
     def save(self, text, fieldname):
         """Saves the specified richedit field"""
@@ -43,34 +50,44 @@ class TinyMCEBrowserView(BrowserView):
     def jsonLinkableFolderListing(self, rooted, document_base_url):
         """Returns the folderlisting of linkable objects in JSON"""
 
-        utility = getUtility(ITinyMCE)
+        utility = getToolByName(aq_inner(self.context), 'portal_tinymce')
         linkable_portal_types = utility.linkable.split('\n')
 
         object = IJSONFolderListing(self.context, None)
         if object is None:
             return ''
-        results = object.getListing(linkable_portal_types, rooted,
-                                    document_base_url, 'File')
+        results = object.getListing(
+            linkable_portal_types,
+            rooted,
+            document_base_url,
+            'File',
+            utility.imageobjects.split('\n'),
+        )
         return results
 
     def jsonImageFolderListing(self, rooted, document_base_url):
         """Returns the folderlisting of image objects in JSON"""
 
-        utility = getUtility(ITinyMCE)
+        utility = getToolByName(aq_inner(self.context), 'portal_tinymce')
         image_portal_types = utility.imageobjects.split('\n')
         image_portal_types.extend(utility.containsobjects.split('\n'))
 
         object = IJSONFolderListing(self.context, None)
         if object is None:
             return ''
-        results = object.getListing(image_portal_types, rooted,
-                                    document_base_url, 'Image')
+        results = object.getListing(
+            image_portal_types,
+            rooted,
+            document_base_url,
+            'Image',
+            utility.imageobjects.split('\n'),
+        )
         return results
 
     def jsonLinkableSearch(self, searchtext):
         """Returns the search results of linkable objects in JSON"""
 
-        utility = getUtility(ITinyMCE)
+        utility = getToolByName(aq_inner(self.context), 'portal_tinymce')
         linkable_portal_types = utility.linkable.split('\n')
         linkable_portal_types.extend(utility.containsobjects.split('\n'))
 
@@ -83,7 +100,7 @@ class TinyMCEBrowserView(BrowserView):
     def jsonImageSearch(self, searchtext):
         """Returns the search results of image objects in JSON"""
 
-        utility = getUtility(ITinyMCE)
+        utility = getToolByName(aq_inner(self.context), 'portal_tinymce')
         image_portal_types = utility.imageobjects.split('\n')
         image_portal_types.extend(utility.containsobjects.split('\n'))
 
@@ -101,12 +118,13 @@ class TinyMCEBrowserView(BrowserView):
             return ''
         return object.getDetails()
 
-    def jsonConfiguration(self, fieldname):
+    def jsonConfiguration(self, fieldname, script_url=None):
         """Return the configuration in JSON"""
-        utility = getUtility(ITinyMCE)
+        utility = getToolByName(self.context, 'portal_tinymce')
         return utility.getConfiguration(context=self.context,
                                         field=fieldname,
-                                        request=self.request)
+                                        request=self.request,
+                                        script_url=script_url)
 
 
 class ATDProxyView(object):
@@ -138,3 +156,32 @@ class ATDProxyView(object):
         xml = respxml.strip().replace("\r", '').replace("\n", '').replace(
             '>  ', '>')
         return xml
+
+
+class ConfigurationViewlet(ViewletBase):
+    """ A viewlet which includes the TinyMCE configuration JavaScript
+
+    This can not be done in the portal_javascript Tool because it needs to be
+    relative to the context path.
+    """
+
+    index = ViewPageTemplateFile('configuration.pt')
+
+    def show(self):
+        tinymce = queryUtility(ITinyMCE, context=self.context)
+        if tinymce is None:
+            return False
+        context = aq_inner(self.context)
+        factory = getToolByName(context, 'portal_factory', None)
+
+        if '++add++' in self.request.getURL():
+            # dexterity support for it's portal factory
+            return True
+
+        if factory is not None and factory.isTemporary(context):
+            # Always include TinyMCE on temporary pages
+            # These are ment for editing and get false positives
+            # with the showEditableBorder-method
+            return True
+        plone_view = getMultiAdapter((self.context, self.request), name="plone")
+        return plone_view.showEditableBorder()

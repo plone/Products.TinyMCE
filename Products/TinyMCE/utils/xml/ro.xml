@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>fester&amp;&amp;Andreiz&amp;&amp;Nicu</author>
+    <version major="3" minor="2" releasedate="2010-12-05" />
+    <description>Traducerea în română, cu diacritice, pentru TinyMCE.</description>
+  </header>
+  <language code="ro" title="Română" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">Doriţi să folosiţi un editor avansat pentru această zonă de text?</item>
+      <item name="apply">Aplică</item>
+      <item name="insert">Inserează</item>
+      <item name="update">Actualizează</item>
+      <item name="cancel">Anulare</item>
+      <item name="close">Închide</item>
+      <item name="browse">Răsfoieşte</item>
+      <item name="class_name">Clasă</item>
+      <item name="not_set">-- Nestată --</item>
+      <item name="clipboard_msg">Copiere/Tăiere/Lipire nu sunt disponibile în  Mozilla şi Firefox.\nDoriţi mai multe informaţii despre această problemă?</item>
+      <item name="clipboard_no_support">Deocamdată nu este suportată de browser. Vă rugăm să folosiţi combinaţii de taste.</item>
+      <item name="popup_blocked">Ne pare rău, dar un popup-blocker a dezativat o fereastră care dă funcţionalitate aplicaţiei.Trebuie să dezactivaţi acel popup-blocker pentru acest site pentru a folosi aplicaţia la capacitate maximă.</item>
+      <item name="invalid_data">Aveţi erori. Datele greşite sunt în roşu.</item>
+      <item name="more_colors">Mai multe culori</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">Îngroşat (Ctrl+B)</item>
+      <item name="italic_desc">Italic (Ctrl+I)</item>
+      <item name="underline_desc">Subliniat (Ctrl+U)</item>
+      <item name="striketrough_desc">Tăiat</item>
+      <item name="bullist_desc">Listă neordonată</item>
+      <item name="numlist_desc">Listă ordonată</item>
+      <item name="undo_desc">Undo (Ctrl+Z)</item>
+      <item name="redo_desc">Refă (Ctrl+Y)</item>
+      <item name="cleanup_desc">Curăţă cod invalid</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">Stiluri</item>
+      <item name="font_size">Mărime font</item>
+      <item name="fontdefault">Font</item>
+      <item name="block">Format</item>
+      <item name="paragraph">Paragraf</item>
+      <item name="div">Div</item>
+      <item name="address">Adresă</item>
+      <item name="pre">Preformatat</item>
+      <item name="h1">Titlu 1</item>
+      <item name="h2">Titlu 2</item>
+      <item name="h3">Titlu 3</item>
+      <item name="h4">Titlu 4</item>
+      <item name="h5">Titlu 5</item>
+      <item name="h6">Titlu 6</item>
+      <item name="blockquote">Citat</item>
+      <item name="code">Cod</item>
+      <item name="samp">Mostră de cod</item>
+      <item name="dt">Termen definit </item>
+      <item name="dd">Definiţie</item>
+      <!-- Buttons -->
+      <item name="bold_desc">Îngroşat (Ctrl+B)</item>
+      <item name="italic_desc">Italic (Ctrl+I)</item>
+      <item name="underline_desc">Subliniat (Ctrl+U)</item>
+      <item name="striketrough_desc">Tăiat</item>
+      <item name="justifyleft_desc">Aliniere la stânga</item>
+      <item name="justifycenter_desc">Centrare</item>
+      <item name="justifyright_desc">Aliniere la dreapta</item>
+      <item name="justifyfull_desc">Aliniere pe toată lăţimea</item>
+      <item name="bullist_desc">Listă neordonată</item>
+      <item name="numlist_desc">Listă ordonată</item>
+      <item name="outdent_desc">De-indentează</item>
+      <item name="indent_desc">Indentează</item>
+      <item name="undo_desc">Undo (Ctrl+Z)</item>
+      <item name="redo_desc">Refă (Ctrl+Y)</item>
+      <item name="link_desc">Inserare/editare legătură</item>
+      <item name="unlink_desc">Şterge legătura</item>
+      <item name="image_desc">Inserare/editare imagine</item>
+      <item name="cleanup_desc">Curăţare cod</item>
+      <item name="code_desc">Editare sursă HTML</item>
+      <item name="sub_desc">Subscript</item>
+      <item name="sup_desc">Superscript</item>
+      <item name="hr_desc">Inserează linie orizontală</item>
+      <item name="removeformat_desc">Anulează formatarea</item>
+      <item name="custom1_desc">Descriere ...</item>
+      <item name="forecolor_desc">Culoare text</item>
+      <item name="backcolor_desc">Culoare fundal</item>
+      <item name="charmap_desc">Inserare caracter special</item>
+      <item name="visualaid_desc">Comută ghidajele/elementele invizibile</item>
+      <item name="anchor_desc">Inserare/editare ancoră</item>
+      <item name="cut_desc">Taie</item>
+      <item name="copy_desc">Copiază</item>
+      <item name="paste_desc">Lipeşte</item>
+      <item name="image_props_desc">Detalii imagine</item>
+      <item name="newdocument_desc">Document nou</item>
+      <item name="help_desc">Autor</item>
+      <item name="blockquote_desc">Citat</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">Copierea/Tăierea/Lipirea nu sunt disponibile în Mozilla şi Firefox.\nDoriţi mai multe informaţii despre această problemă?</item>
+      <item name="path">Cale</item>
+      <item name="newdocument">Sigur doriţi să ştergeţi tot?</item>
+      <item name="toolbar_focus">Săriţi la instrumente - Alt+Q, Săriţi la editor - Alt-Z, Săriţi la cale - Alt-X</item>
+      <item name="more_colors">Mai multe culori</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">Despre TinyMCE</item>
+      <item name="about_general">Despre</item>
+      <item name="about_help">Ajutor</item>
+      <item name="about_license">Licenţă</item>
+      <item name="about_plugins">Module</item>
+      <item name="about_plugin">Modul</item>
+      <item name="about_author">Autor</item>
+      <item name="about_version">Versiune</item>
+      <item name="about_loaded">Module încărcate</item>
+      <!-- Anchor -->
+      <item name="anchor_title">Inserare/editare ancoră</item>
+      <item name="anchor_name">Nume ancoră</item>
+      <!-- Source -->
+      <item name="code_title">Editor sursă HTML</item>
+      <item name="code_wordwrap">Word wrap</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">Alegeţi o culoare</item>
+      <item name="colorpicker_picker_tab">Pipetă</item>
+      <item name="colorpicker_picker_title">Pipetă de culori</item>
+      <item name="colorpicker_palette_tab">Paletă</item>
+      <item name="colorpicker_palette_title">Paletă de culori</item>
+      <item name="colorpicker_named_tab">Denumite</item>
+      <item name="colorpicker_named_title">Culori denumite</item>
+      <item name="colorpicker_color">Culoare:</item>
+      <item name="colorpicker_name">Nume:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">Alegeţi un caracter special</item>
+      <!-- Image -->
+      <item name="image_title">Inserează/editează o imagine</item>
+      <item name="image_src">URL imagine</item>
+      <item name="image_alt">Descriere imagine</item>
+      <item name="image_list">Listă de imagini</item>
+      <item name="image_border">Bordură</item>
+      <item name="image_dimensions">Dimensiuni</item>
+      <item name="image_vspace">Spaţiu vertical</item>
+      <item name="image_hspace">Spaţiu orizontal</item>
+      <item name="image_align">Aliniere</item>
+      <item name="image_align_baseline">Baseline</item>
+      <item name="image_align_top">Sus</item>
+      <item name="image_align_middle">La mijloc</item>
+      <item name="image_align_bottom">Jos</item>
+      <item name="image_align_texttop">Textul sus</item>
+      <item name="image_align_textbottom">Textul la mijloc</item>
+      <item name="image_align_left">Stânga</item>
+      <item name="image_align_right">Dreapta</item>
+      <!-- Link -->
+      <item name="link_title">Inserare/editare legătură</item>
+      <item name="link_url">URL legătură</item>
+      <item name="link_target">Ţintă</item>
+      <item name="link_target_same">Deschide legătura în aceeaşi fereastră</item>
+      <item name="link_target_blank">Deschide legătura într-o fereastră nouă</item>
+      <item name="link_titlefield">Titlu</item>
+      <item name="link_is_email">URL-ul pe care l-aţi introdus pare a fi o adresă de e-mail. Doriţi să adaug şi prefixul mailto: necesar?</item>
+      <item name="link_is_external">URL-ul pe care l-aţi introdus pare a fi o legătură externă. Doriţi să adaug şi prefixul http:// necesar?</item>
+      <item name="link_list">Lista de legături</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">Aliniere</item>
+      <item name="left">Stânga</item>
+      <item name="center">Centru</item>
+      <item name="right">Dreapta</item>
+      <item name="full">Justify</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%Y-%m-%d</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">Inserează dată</item>
+      <item name="inserttime_desc">Inserează oră</item>
+      <item name="months_long">Ianuarie,Februarie,Martie,Aprilie,Mai,Iunie,Iulie,August,Septembrie,Octombrie,Noiembrie,Decembrie </item>
+      <item name="months_short">Ian,Feb,Mar,Apr,Mai,Iun,Iul,Aug,Sep,Oct,Noi,Dec</item>
+      <item name="day_long">Duminică,Luni,Marţi,Miercuri,Joi,Vineri,Sâmbătă,Duminică</item>
+      <item name="day_short">Dum,Lun,Mar,Mie,Joi,Vin,Sâm,Dum</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">Imprimare</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">Previzualizare</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">Direcţia de la stânga la dreapta</item>
+      <item name="rtl_desc">Direcţia de la dreapta la stânga</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">Inserează stat nou</item>
+      <item name="forward_desc">Mută înainte</item>
+      <item name="backward_desc">Mută înapoi</item>
+      <item name="absolute_desc">Poziţionare absolută</item>
+      <item name="content">Strat nou ...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">Salvează</item>
+      <item name="cancel_desc">Anulează toate schimbările</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">Inserează caracterul spaţiu</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">Rulează corectorul de limbă</item>
+      <item name="download">ieSpell nu a fost detectat. Doriţi să-l instalaţi?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">Linie orizontală</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">Lăţime</item>
+      <item name="size">Înălţime</item>
+      <item name="noshade">Fără umbre</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">Figurine</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">Inserează o figurină</item>
+      <item name="desc">Figurine emotive</item>
+      <item name="cool">Cool</item>
+      <item name="cry">Trist</item>
+      <item name="embarassed">Ruşinat</item>
+      <item name="foot_in_mouth">Picior în gură</item>
+      <item name="frown">Încruntat</item>
+      <item name="innocent">Nevinovat</item>
+      <item name="kiss">Pupic</item>
+      <item name="laughing">Râde</item>
+      <item name="money_mouth">Bani în gură</item>
+      <item name="sealed">Sigilat</item>
+      <item name="smile">Zâmbet</item>
+      <item name="surprised">Surprins</item>
+      <item name="tongue_out">Cu limba afară</item>
+      <item name="undecided">Indecis</item>
+      <item name="wink">Face cu ochiul</item>
+      <item name="yell">Ţipă</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">Caută</item>
+      <item name="replace_desc">Caută/Înlocuieşte</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">Caută din nou</item>
+      <item name="notfound">Căutarea a fost terminată. Nu am găsit termenul căutat.</item>
+      <item name="search_title">Caută</item>
+      <item name="replace_title">Caută/înlocuieşte</item>
+      <item name="allreplaced">Toate instanţele termenului căutat au fost înlocuite.</item>
+      <item name="findwhat">Termen căutat:</item>
+      <item name="replacewith">Înlocuieşte cu:</item>
+      <item name="direction">Direcţia</item>
+      <item name="up">În sus</item>
+      <item name="down">În jos</item>
+      <item name="mcase">Contează litere mici/mari?</item>
+      <item name="findnext">Caută următorul</item>
+      <item name="replace">Înlocuieşte</item>
+      <item name="replaceall">Înlocuieşte toate</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">Inserare/editare imagine</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">General</item>
+      <item name="tab_appearance">Afişare</item>
+      <item name="tab_advanced">Avansat</item>
+      <item name="general">General</item>
+      <item name="title">Titlu</item>
+      <item name="preview">Previzualizare</item>
+      <item name="constrain_proportions">Menţine proporţii</item>
+      <item name="langdir">Direcţie limbă</item>
+      <item name="langcode">Cod limbă</item>
+      <item name="long_desc">Descriere legătură</item>
+      <item name="style">Stil</item>
+      <item name="classes">Clase</item>
+      <item name="ltr">De la stânga la dreapta</item>
+      <item name="rtl">De la dreapta la stânga</item>
+      <item name="id">Id</item>
+      <item name="map">Hartă imagine</item>
+      <item name="swap_image">Schimbă imaginea</item>
+      <item name="alt_image">Imagine alternativă</item>
+      <item name="mouseover">Pentru maus deasupra</item>
+      <item name="mouseout">Pentru maus în afară</item>
+      <item name="misc">Diverse</item>
+      <item name="example_img">Imagine mică</item>
+      <item name="missing_alt">Sigur doriţi să continuaţi fără a introduce o descriere a imaginii?</item>
+      <item name="dialog_title">Inserare/editare imagine</item>
+      <item name="src">URL imagine</item>
+      <item name="alt">Descriere imagine</item>
+      <item name="list">Listă imagini</item>
+      <item name="border">Bordură</item>
+      <item name="dimensions">Dimensiuni</item>
+      <item name="vspace">Spaţiu vertical</item>
+      <item name="hspace">Spaţiu orizontal</item>
+      <item name="align">Aliniere</item>
+      <item name="align_baseline">Baseline</item>
+      <item name="align_top">Sus</item>
+      <item name="align_middle">La mijloc</item>
+      <item name="align_bottom">Jos</item>
+      <item name="align_texttop">Textul sus</item>
+      <item name="align_textbottom">Textul jos</item>
+      <item name="align_left">Stânga</item>
+      <item name="align_right">Dreapta</item>
+      <item name="image_list">Listă de imagini</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">Inserare/editare legătură</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">Inserează/editează link</item>
+      <item name="url">URL legătură</item>
+      <item name="target">Ţintă</item>
+      <item name="titlefield">Titlu</item>
+      <item name="is_email">URL-ul pe care l-aţi introdus pare a fi o adresă de e-mail. Doriţi să adaug şi prefixul mailto: necesar?</item>
+      <item name="is_external">URL-ul pe care l-aţi introdus pare a fi o legătură externă. Doriţi să adaug şi prefixul http:// necesar?</item>
+      <item name="list">Listă de legături</item>
+      <item name="general_tab">General</item>
+      <item name="popup_tab">Popup</item>
+      <item name="events_tab">Evenimente</item>
+      <item name="advanced_tab">Avansat</item>
+      <item name="general_props">Proprietăţi generale</item>
+      <item name="popup_props">Proprietăţi popup</item>
+      <item name="event_props">Evenimente</item>
+      <item name="advanced_props">Proprietăţi avansate</item>
+      <item name="popup_opts">Opţiuni</item>
+      <item name="anchor_names">Ancore</item>
+      <item name="target_same">Deschide legătura în aceeaşi fereastră/acelaşi cadru</item>
+      <item name="target_parent">Deschide legătura în fereastra/cadrul părinte</item>
+      <item name="target_top">Deschide în frame-ul cel mai mare (înlocuieşte celelalte frame-uri)</item>
+      <item name="target_blank">Deschide în fereastră nouă</item>
+      <item name="popup">Javascript Popup</item>
+      <item name="popup_url">URL Popup</item>
+      <item name="popup_name">Nume fereastră</item>
+      <item name="popup_return">Inserează 'return false'</item>
+      <item name="popup_scrollbars">Arată barele de derulare</item>
+      <item name="popup_statusbar">Arată bara de stare</item>
+      <item name="popup_toolbar">Arată toolbar-uri</item>
+      <item name="popup_menubar">Arată meniul</item>
+      <item name="popup_location">Arată bara de adrese</item>
+      <item name="popup_resizable">Fereastră redimensionabilă?</item>
+      <item name="popup_dependent">Dependent (Mozilla/Firefox)?</item>
+      <item name="popup_size">Mărime</item>
+      <item name="popup_position">Poziţie (X/Y)</item>
+      <item name="id">Id</item>
+      <item name="style">Stil</item>
+      <item name="classes">Clase</item>
+      <item name="target_name">Nume ţintă</item>
+      <item name="langdir">Direcţie limbă</item>
+      <item name="target_langcode">Limbă</item>
+      <item name="langcode">Cod limbă</item>
+      <item name="encoding">Set de caractere ţintă</item>
+      <item name="mime">MIME type ţintă</item>
+      <item name="rel">Relaţia paginii cu ţinta</item>
+      <item name="rev">Relaţia ţintei cu pagina</item>
+      <item name="tabindex">Tabindex</item>
+      <item name="accesskey">Cheie de acces</item>
+      <item name="ltr">Stânga la dreapta</item>
+      <item name="rtl">Dreapta la stânga</item>
+      <item name="link_list">Listă legături</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">Citat</item>
+      <item name="abbr_desc">Abreviere</item>
+      <item name="acronym_desc">Acronim</item>
+      <item name="del_desc">Ştergere</item>
+      <item name="ins_desc">Inserare</item>
+      <item name="attribs_desc">Inserează/editează atribute</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">Titlu</item>
+      <item name="attribute_label_id">ID</item>
+      <item name="attribute_label_class">Clasă</item>
+      <item name="attribute_label_style">Stil</item>
+      <item name="attribute_label_cite">Citat</item>
+      <item name="attribute_label_datetime">Dată/oră</item>
+      <item name="attribute_label_langdir">Direcţie text</item>
+      <item name="attribute_option_ltr">De la stânga la dreapta</item>
+      <item name="attribute_option_rtl">De la dreapta la stânga</item>
+      <item name="attribute_label_langcode">Limbă</item>
+      <item name="attribute_label_tabindex">TabIndex</item>
+      <item name="attribute_label_accesskey">Tastă de acces</item>
+      <item name="attribute_events_tab">Evenimente</item>
+      <item name="attribute_attrib_tab">Atribute</item>
+      <item name="general_tab">General</item>
+      <item name="attrib_tab">Atribute</item>
+      <item name="events_tab">Evenimente</item>
+      <item name="fieldset_general_tab">Setări generale</item>
+      <item name="fieldset_attrib_tab">Atribute element</item>
+      <item name="fieldset_events_tab">Evenimente element</item>
+      <item name="title_ins_element">Inserare element</item>
+      <item name="title_del_element">Ştergere element</item>
+      <item name="title_acronym_element">Acronim</item>
+      <item name="title_abbr_element">Abreviere</item>
+      <item name="title_cite_element">Citare</item>
+      <item name="remove">Scoate</item>
+      <item name="insert_date">Inserare dată/oră curentă</item>
+      <item name="option_ltr">De la stânga la dreapta</item>
+      <item name="option_rtl">De la dreapta la stânga</item>
+      <item name="attribs_title">Inserare atribute</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">Editare CSS</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">Editare CSS</item>
+      <item name="apply">Aplică</item>
+      <item name="text_tab">Text</item>
+      <item name="background_tab">Fundal</item>
+      <item name="block_tab">Block</item>
+      <item name="box_tab">Box</item>
+      <item name="border_tab">Bordură</item>
+      <item name="list_tab">Listă</item>
+      <item name="positioning_tab">Poziţionare</item>
+      <item name="text_props">Text</item>
+      <item name="text_font">Font</item>
+      <item name="text_size">Mărime</item>
+      <item name="text_weight">Greutate</item>
+      <item name="text_style">Stil</item>
+      <item name="text_variant">Variantă</item>
+      <item name="text_lineheight">Înălţime linie</item>
+      <item name="text_case">Caz</item>
+      <item name="text_color">Culoare</item>
+      <item name="text_decoration">Decoraţii</item>
+      <item name="text_overline">Peste linie</item>
+      <item name="text_underline">Sub linie</item>
+      <item name="text_striketrough">Tăiere</item>
+      <item name="text_blink">Clipire</item>
+      <item name="text_none">Nici unul</item>
+      <item name="background_color">Culoare fundal</item>
+      <item name="background_image">Imagine fundal</item>
+      <item name="background_repeat">Repetă</item>
+      <item name="background_attachment">Ataşament</item>
+      <item name="background_hpos">Poziţionare orizontală</item>
+      <item name="background_vpos">Poziţionare verticală</item>
+      <item name="block_wordspacing">Spaţiere cuvinte</item>
+      <item name="block_letterspacing">Spaţiere litere</item>
+      <item name="block_vertical_alignment">Aliniere verticală</item>
+      <item name="block_text_align">Aliniere text</item>
+      <item name="block_text_indent">Indentare text</item>
+      <item name="block_whitespace">Spaţiu alb</item>
+      <item name="block_display">Afişare</item>
+      <item name="box_width">Lăţime</item>
+      <item name="box_height">Înălţime</item>
+      <item name="box_float">Plutitoare</item>
+      <item name="box_clear">Normală</item>
+      <item name="padding">Margini interne</item>
+      <item name="same">La fel pentru toate</item>
+      <item name="top">Sus</item>
+      <item name="right">Dreapta</item>
+      <item name="bottom">Jos</item>
+      <item name="left">Stânga</item>
+      <item name="margin">Margini</item>
+      <item name="style">Stil</item>
+      <item name="width">Lăţime</item>
+      <item name="height">Înălţime</item>
+      <item name="color">Culoare</item>
+      <item name="list_type">Tip</item>
+      <item name="bullet_image">Imagine</item>
+      <item name="position">Poziţionare</item>
+      <item name="positioning_type">Tip</item>
+      <item name="visibility">Vizibilitate</item>
+      <item name="zindex">Z-index</item>
+      <item name="overflow">Overflow</item>
+      <item name="placement">Plasament</item>
+      <item name="clip">Clip</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">Lipire ca text simplu</item>
+      <item name="paste_word_desc">Lipire din Word</item>
+      <item name="selectall_desc">Selectează tot</item>
+      <item name="plaintext_mode_sticky">Lipirea este acum în modul text simplu. Apăsaţi aici pentru comutarea la modul normal de lipire. După ce veţi lipi ceva veţi reveni la modul normal de lipire.</item>
+      <item name="plaintext_mode">Lipirea este acum în modul text simplu. Apăsaţi din nou pentru comutarea la modul normal de lipire.</item>
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">Folosiţi CTRL+V pentru a lipi în această zonă.</item>
+      <item name="text_linebreaks">Păstrează separatoarele de linii.</item>
+      <item name="word_title">Folosiţi CTRL+V pentru a lipi în această zonă.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">Inserează tabel nou</item>
+      <item name="row_before_desc">Inserare rând înainte</item>
+      <item name="row_after_desc">Inserare rând după</item>
+      <item name="delete_row_desc">Şterge rând</item>
+      <item name="col_before_desc">Inserare coloană înainte</item>
+      <item name="col_after_desc">Inserare coloană după</item>
+      <item name="delete_col_desc">Şterge coloană</item>
+      <item name="split_cells_desc">Separaţi celule unite</item>
+      <item name="merge_cells_desc">Uniţi celule</item>
+      <item name="row_desc">Proprietăţi rând</item>
+      <item name="cell_desc">Proprietăţi celulă</item>
+      <item name="props_desc">Proprietăţi tabel</item>
+      <item name="paste_row_before_desc">Lipeşte rând înainte</item>
+      <item name="paste_row_after_desc">Lipeşte rând după</item>
+      <item name="cut_row_desc">Taie rând</item>
+      <item name="copy_row_desc">Copiază rând</item>
+      <item name="del">Şterge tabel</item>
+      <item name="row">Rând</item>
+      <item name="col">Coloană</item>
+      <item name="cell">Celulă</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width"></item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">General</item>
+      <item name="advanced_tab">Avansat</item>
+      <item name="general_props">Proprietăţi generale</item>
+      <item name="advanced_props">Proprietăţi avansate</item>
+      <item name="rowtype">Rănd în tabel</item>
+      <item name="title">Inserare/modificare tabel</item>
+      <item name="width">Lăţime</item>
+      <item name="height">Înălţime</item>
+      <item name="cols">Coloane</item>
+      <item name="rows">Rânduri</item>
+      <item name="cellspacing">Spaţiu între celule</item>
+      <item name="cellpadding">Spaţiu în celule</item>
+      <item name="border">Bordură</item>
+      <item name="align">Aliniere</item>
+      <item name="align_default">Implicită</item>
+      <item name="align_left">Stânga</item>
+      <item name="align_right">Dreapta</item>
+      <item name="align_middle">Centru</item>
+      <item name="row_title">Proprietăţi rând</item>
+      <item name="cell_title">Proprietăţi celulă</item>
+      <item name="cell_type">Tip celulă</item>
+      <item name="valign">Aliniere verticală</item>
+      <item name="align_top">Sus</item>
+      <item name="align_bottom">Jos</item>
+      <item name="bordercolor">Culoare bordură</item>
+      <item name="bgcolor">Culoare fundal</item>
+      <item name="merge_cells_title">Uniţi celulele</item>
+      <item name="id">Id</item>
+      <item name="style">Stil</item>
+      <item name="langdir">Direcţie limbă</item>
+      <item name="langcode">Cod limbă</item>
+      <item name="mime">MIME type ţintă</item>
+      <item name="ltr">De la stânga la dreapta</item>
+      <item name="rtl">De la dreapta la stânga</item>
+      <item name="bgimage">Imagine de fundal</item>
+      <item name="summary">Sumar</item>
+      <item name="td">Date</item>
+      <item name="th">Antet</item>
+      <item name="cell_cell">Actualizează celula curentă</item>
+      <item name="cell_row">Actualizează toate celulele din rând</item>
+      <item name="cell_all">Actualizează toate celulele din tabel</item>
+      <item name="row_row">Actualizează rând curent</item>
+      <item name="row_odd">Actualizează rândurile impare</item>
+      <item name="row_even">Actualizează rândurile pare</item>
+      <item name="row_all">Actualizează toate rândurile</item>
+      <item name="thead">Antet tabel</item>
+      <item name="tbody">Corp tabel</item>
+      <item name="tfoot">Subsol tabel</item>
+      <item name="scope">Scop</item>
+      <item name="rowgroup">Grupează rânduri</item>
+      <item name="colgroup">Grupează celule</item>
+      <item name="col_limit">Aţi depăşit numărul maxim de coloane: {$cols}.</item>
+      <item name="row_limit">Aţi depăşit numărul maxim de rânduri: {$rows}.</item>
+      <item name="cell_limit">Aţi depăşit numărul maxim de celule: {$cells}.</item>
+      <item name="missing_scope">Sigur doriţi să lăsaţi scopul necompletat? </item>
+      <item name="caption">Titlu tabel</item>
+      <item name="frame">Frame</item>
+      <item name="frame_none">niciuna</item>
+      <item name="frame_groups">grupuri</item>
+      <item name="frame_rows">rânduri</item>
+      <item name="frame_cols">coloane</item>
+      <item name="frame_all">toate</item>
+      <item name="rules">Reguli</item>
+      <item name="rules_void">gol</item>
+      <item name="rules_above">deasupra</item>
+      <item name="rules_below">dedesubt</item>
+      <item name="rules_hsides">hsides</item>
+      <item name="rules_lhs">lhs</item>
+      <item name="rules_rhs">rhs</item>
+      <item name="rules_vsides">vsides</item>
+      <item name="rules_box">box</item>
+      <item name="rules_border">border</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">Modificările nu vor fi salvate.</item>
+      <item name="restore_content">Restaurează conţinutul salvat automat.</item>
+      <item name="warning_message">Daca restaurati continutul salvat vei pierde tot continutul existent din editor.\n\nSigur doriti sa restaurati continutul salvat?.</item>
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">Mod ecran complet</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">Inserează / editează media</item>
+      <item name="edit">Editează media</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">Inserează / editează media</item>
+      <item name="general">General</item>
+      <item name="advanced">Avansată</item>
+      <item name="file">Fişier/URL</item>
+      <item name="list">Listă</item>
+      <item name="size">Dimensiuni</item>
+      <item name="preview">Previzualizare</item>
+      <item name="constrain_proportions">Menţinere proporţii</item>
+      <item name="type">Tip</item>
+      <item name="id">Id</item>
+      <item name="name">Nume</item>
+      <item name="class_name">Clasă</item>
+      <item name="vspace">V-Space</item>
+      <item name="hspace">H-Space</item>
+      <item name="play">Redare automată</item>
+      <item name="loop">Repetare</item>
+      <item name="menu">Arată meniu</item>
+      <item name="quality">Calitate</item>
+      <item name="scale">Scară</item>
+      <item name="align">Aliniere</item>
+      <item name="salign">SAlign</item>
+      <item name="wmode">WMode</item>
+      <item name="bgcolor">Fundal</item>
+      <item name="base">URL de baza</item>
+      <item name="flashvars">Variabile Flash</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">AutoHREF</item>
+      <item name="cache">Cache</item>
+      <item name="hidden">Ascuns</item>
+      <item name="controller">Controler</item>
+      <item name="kioskmode">Mod Kiosk</item>
+      <item name="playeveryframe">Redă fiecare frame</item>
+      <item name="targetcache">Target cache</item>
+      <item name="correction">Fără corecturi</item>
+      <item name="enablejavascript">Activează JavaScript</item>
+      <item name="starttime">Timp de început</item>
+      <item name="endtime">Timp de sfârşit</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">Choke speed</item>
+      <item name="target">Tinţa</item>
+      <item name="volume">Volum</item>
+      <item name="autostart">Pornire automată</item>
+      <item name="enabled">Activat</item>
+      <item name="fullscreen">Ecran complet</item>
+      <item name="invokeurls">Invocă URL-uri</item>
+      <item name="mute">Mut</item>
+      <item name="stretchtofit">Întinde pentru a se încadra</item>
+      <item name="windowlessvideo">Video fără fereastră</item>
+      <item name="balance">Balanţă</item>
+      <item name="baseurl">URL bază</item>
+      <item name="captioningid">Titlu id</item>
+      <item name="currentmarker">Marcator curent</item>
+      <item name="currentposition">Poziţie curentă</item>
+      <item name="defaultframe">Frame implicit</item>
+      <item name="playcount">Numar redări</item>
+      <item name="rate">Vot</item>
+      <item name="uimode">Mod UI</item>
+      <item name="flash_options">Opţiuni Flash</item>
+      <item name="qt_options">Opţiuni QuickTime</item>
+      <item name="wmp_options">Opţiuni Windows media player</item>
+      <item name="rmp_options">Opţiuni Real media player</item>
+      <item name="shockwave_options">Opţiuni Shockwave</item>
+      <item name="autogotourl">Auto goto URL</item>
+      <item name="center">Centru</item>
+      <item name="imagestatus">Status imagine</item>
+      <item name="maintainaspect">Menţine aspect</item>
+      <item name="nojava">Fără java</item>
+      <item name="prefetch">Prefetch</item>
+      <item name="shuffle">Aleator</item>
+      <item name="console">Consola</item>
+      <item name="numloop">Număr de repetări</item>
+      <item name="controls">Controale</item>
+      <item name="scriptcallbacks">Script callback</item>
+      <item name="swstretchstyle">Stil strech</item>
+      <item name="swstretchhalign">Stretch H-Aliniere</item>
+      <item name="swstretchvalign">Stretch V-Aliniere</item>
+      <item name="sound">Sunet</item>
+      <item name="progress">Progres</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn">Streamed rtsp resources should be added to the QT Src field under the advanced tab.\nYou should also add a non streamed version to the Src field..</item>
+      <item name="align_top">Sus</item>
+      <item name="align_right">Dreapta</item>
+      <item name="align_bottom">Jos</item>
+      <item name="align_left">Stânga</item>
+      <item name="align_center">Centru</item>
+      <item name="align_top_left">Stânga sus</item>
+      <item name="align_top_right">Dreapta sus</item>
+      <item name="align_bottom_left">Stânga jos</item>
+      <item name="align_bottom_right">Dreapta jos</item>
+      <item name="flv_options">Opţiuni Flash video</item>
+      <item name="flv_scalemode">Moduri scală</item>
+      <item name="flv_buffer">Buffer</item>
+      <item name="flv_startimage">Imagine start </item>
+      <item name="flv_starttime">Timp start</item>
+      <item name="flv_defaultvolume">Volum implicit</item>
+      <item name="flv_hiddengui">GUI ascuns</item>
+      <item name="flv_autostart">Auto pornire</item>
+      <item name="flv_loop">Repetare</item>
+      <item name="flv_showscalemodes">Afişare moduri scalare</item>
+      <item name="flv_smoothvideo">Smooth video</item>
+      <item name="flv_jscallback">JS Callback</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">Proprietăţi document</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Proprietăţi document</item>
+      <item name="meta_tab">General</item>
+      <item name="appearance_tab">Aparenţă</item>
+      <item name="advanced_tab">Avansat</item>
+      <item name="meta_props">Meta informaţii</item>
+      <item name="langprops">Limbă şi codare</item>
+      <item name="meta_title">Titlu</item>
+      <item name="meta_keywords">Cuvinte cheie</item>
+      <item name="meta_description">Descriere</item>
+      <item name="meta_robots">Roboţi</item>
+      <item name="doctypes">Doctype</item>
+      <item name="langcode">Cod limbă</item>
+      <item name="langdir">Direcţie limbă</item>
+      <item name="ltr">De la stânga la dreapta</item>
+      <item name="rtl">De la dreapta la stânga</item>
+      <item name="xml_pi">Declaraţie XML</item>
+      <item name="encoding">Cod caractere</item>
+      <item name="appearance_bgprops">Proprietăţi fundal</item>
+      <item name="appearance_marginprops">Margini corp</item>
+      <item name="appearance_linkprops">Culoare legături</item>
+      <item name="appearance_textprops">Proprietăţi text</item>
+      <item name="bgcolor">Culoare de fundal</item>
+      <item name="bgimage">Imagine de fundal</item>
+      <item name="left_margin">Margine stânga</item>
+      <item name="right_margin">Margine dreapta</item>
+      <item name="top_margin">Margine sus</item>
+      <item name="bottom_margin">Margine jos</item>
+      <item name="text_color">Culoare text</item>
+      <item name="font_size">Dimensiune font</item>
+      <item name="font_face">Tip font</item>
+      <item name="link_color">Culoare legătură</item>
+      <item name="hover_color">Culoare legătură la maus deasupra</item>
+      <item name="visited_color">Legătură vizitată</item>
+      <item name="active_color">Legătură activă</item>
+      <item name="textcolor">Culoare</item>
+      <item name="fontsize">Dimensiune font</item>
+      <item name="fontface">Tip font</item>
+      <item name="meta_index_follow">Indexează şi urmăreşte aceste legături</item>
+      <item name="meta_index_nofollow">Indexează şi nu urmări aceste legături</item>
+      <item name="meta_noindex_follow">Nu indexa, dar urmăreşte aceste legături</item>
+      <item name="meta_noindex_nofollow">Nu indexa şi nu urmări aceste legături</item>
+      <item name="appearance_style">Stil</item>
+      <item name="stylesheet">Foaie de stil</item>
+      <item name="style">Stil</item>
+      <item name="author">Autor</item>
+      <item name="copyright">Copyright</item>
+      <item name="add">Adaugă un element</item>
+      <item name="remove">Şterge element selectat</item>
+      <item name="moveup">Mută elementul selectat în sus</item>
+      <item name="movedown">Mută elementul selectat în jos</item>
+      <item name="head_elements">Elemente de antet</item>
+      <item name="info">Informaţii</item>
+      <item name="add_title">Titlu</item>
+      <item name="add_meta">Meta</item>
+      <item name="add_script">Script</item>
+      <item name="add_style">Stil</item>
+      <item name="add_link">Link</item>
+      <item name="add_base">Base</item>
+      <item name="add_comment">Comentariu</item>
+      <item name="title_element">Title</item>
+      <item name="script_element">Script</item>
+      <item name="style_element">Stil</item>
+      <item name="base_element">Base</item>
+      <item name="link_element">Link</item>
+      <item name="meta_element">Meta</item>
+      <item name="comment_element">Comentariu</item>
+      <item name="src">Src</item>
+      <item name="language">Limbă</item>
+      <item name="href">Href</item>
+      <item name="target">Ţintă</item>
+      <item name="type">Tip</item>
+      <item name="charset">Set de caractere</item>
+      <item name="defer">Defer</item>
+      <item name="media">Media</item>
+      <item name="properties">Proprietăţi</item>
+      <item name="name">Nume</item>
+      <item name="value">Valoare</item>
+      <item name="content">Conţinut</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href lang</item>
+      <item name="general_props">General</item>
+      <item name="advanced_props">Avansat</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Inserează un şablon predefinit</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">Şabloane</item>
+      <item name="label">Şablon</item>
+      <item name="desc_label">Descriere</item>
+      <item name="desc">Inserează şablon</item>
+      <item name="select">Selectează şablon</item>
+      <item name="preview">Previzualizare</item>
+      <item name="warning">Atenţie: Schimbarea şablonului poate provoca pierderi de date</item>
+      <item name="mdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="cdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="months_long">Ianuarie,Februarie,Martie,Aprilie,Mai,Iunie,Iulie,August,Septembrie,Octombrie,Noiembrie,Decembrie</item>
+      <item name="months_short">Ian,Feb,Mar,Apr,Mai,Iun,Iul,Aug,Sep,Oct,Noi,Dec</item>
+      <item name="day_long">Duminică,Luni,Marţi,Miercuri,Joi,Vineri,Sâmbătă,Duminică</item>
+      <item name="day_short">Dum,Lun,Mar,Mie,Joi,Vin,Sâm,Dum</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Comută caracterele vizuale de control</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">Activare/dezactivare dicţionar</item>
+      <item name="menu">Setări dicţionar</item>
+      <item name="ignore_word">Ignoră cuvânt</item>
+      <item name="ignore_words">Ignoră toate</item>
+      <item name="langs">Limbi</item>
+      <item name="wait">Vă rog aşteptaţi...</item>
+      <item name="sug">Sugestii</item>
+      <item name="no_sug">Nu sunt sugestii.</item>
+      <item name="no_mpell">Nu sunt greşeli.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">Inserează un separator de pagină</item>
+    </group>
+    <group target="advlist">
+      <item name="types">Tipuri</item>
+      <item name="def">Implicit</item>
+      <item name="lower_alpha">Minuscule alfabetice</item>
+      <item name="lower_greek">Minuscule greceşti</item>
+      <item name="lower_roman">Minuscule romane</item>
+      <item name="upper_alpha">Majuscule alfabetice</item>
+      <item name="upper_roman">Majuscule romane</item>
+      <item name="circle">Cerc</item>
+      <item name="disc">Disc</item>
+      <item name="square">Pătrat</item>
+    </group>
+  </language>
+</language-pack>

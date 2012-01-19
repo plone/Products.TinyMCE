@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>corean (http://corean.biz/)</author>
+    <version major="5" minor="5" releasedate="2010-12-06" />
+    <description>This is the Korean language pack for TinyMCE.</description>
+  </header>
+  <language code="ko" title="Korean" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">WYSIWYG모드로 전환합니까?</item>
+      <item name="apply">적용</item>
+      <item name="insert">삽입</item>
+      <item name="update">갱신</item>
+      <item name="cancel">취소</item>
+      <item name="close">닫기</item>
+      <item name="browse">브라우즈</item>
+      <item name="class_name">클래스</item>
+      <item name="not_set">-- 없음 --</item>
+      <item name="clipboard_msg">복사/잘라내기/붙이기는 Mozilla 및Firefox 에서 사용되지 않습니다.\n상세정보를 표시합니까?</item>
+      <item name="clipboard_no_support">이 기능은 브라우저에 의해 제한되고 있습니다. 단축키을 이용하십시오.</item>
+      <item name="popup_blocked">팝업이 차단되었습니다. 모든 기능을 이용하시기 위해서는 팝업차단을 해제해 주세요.</item>
+      <item name="invalid_data">에러: 유효하지 않는 글자가 있습니다. 빨간색으로 표시됩니다.</item>
+      <item name="more_colors">그 외의 색</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">굵은 글씨(Ctrl+B)</item>
+      <item name="italic_desc">이탤릭(Ctrl+I)</item>
+      <item name="underline_desc">밑줄(Ctrl+U)</item>
+      <item name="striketrough_desc">취소선</item>
+      <item name="bullist_desc">비순차목록</item>
+      <item name="numlist_desc">순차목록</item>
+      <item name="undo_desc">실행취소(Ctrl+Z)</item>
+      <item name="redo_desc">다시실행(Ctrl+Y)</item>
+      <item name="cleanup_desc">지저분한 코드 삭제</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">스타일</item>
+      <item name="font_size">글꼴 크기</item>
+      <item name="fontdefault">글꼴</item>
+      <item name="block">포맷</item>
+      <item name="paragraph">단락</item>
+      <item name="div">Div</item>
+      <item name="address">주소</item>
+      <item name="pre">pre</item>
+      <item name="h1">표제1</item>
+      <item name="h2">표제2</item>
+      <item name="h3">표제3</item>
+      <item name="h4">표제4</item>
+      <item name="h5">표제5</item>
+      <item name="h6">표제6</item>
+      <item name="blockquote">인용문</item>
+      <item name="code">코드</item>
+      <item name="samp">샘플코드</item>
+      <item name="dt">어구 정의</item>
+      <item name="dd">정의 설명</item>
+      <!-- Buttons -->
+      <item name="bold_desc">굵은 글씨(Ctrl+B)</item>
+      <item name="italic_desc">이탤릭(Ctrl+I)</item>
+      <item name="underline_desc">밑줄(Ctrl+U)</item>
+      <item name="striketrough_desc">취소선</item>
+      <item name="justifyleft_desc">왼쪽 정렬</item>
+      <item name="justifycenter_desc">가운데 정렬</item>
+      <item name="justifyright_desc">오른쪽 정렬</item>
+      <item name="justifyfull_desc">배분 정렬</item>
+      <item name="bullist_desc">비순차목록</item>
+      <item name="numlist_desc">순차목록</item>
+      <item name="outdent_desc">내어쓰기</item>
+      <item name="indent_desc">들여쓰기</item>
+      <item name="undo_desc">실행취소(Ctrl+Z)</item>
+      <item name="redo_desc">다시실행(Ctrl+Y)</item>
+      <item name="link_desc">링크의 삽입/편집</item>
+      <item name="unlink_desc">링크 삭제</item>
+      <item name="image_desc">이미지 삽입/편집</item>
+      <item name="cleanup_desc">지저분한 코드 삭제</item>
+      <item name="code_desc">HTML 편집</item>
+      <item name="sub_desc">아래첨자</item>
+      <item name="sup_desc">위첨자</item>
+      <item name="hr_desc">구분선</item>
+      <item name="removeformat_desc">서식 해제</item>
+      <item name="custom1_desc">커스텀 설명</item>
+      <item name="forecolor_desc">글자색</item>
+      <item name="backcolor_desc">배경색</item>
+      <item name="charmap_desc">특수 문자</item>
+      <item name="visualaid_desc">가이드라인 표시/비표시</item>
+      <item name="anchor_desc">엥커 삽입/편집</item>
+      <item name="cut_desc">잘라내기</item>
+      <item name="copy_desc">복사</item>
+      <item name="paste_desc">붙이기</item>
+      <item name="image_props_desc">이미지속성</item>
+      <item name="newdocument_desc">신규글 작성</item>
+      <item name="help_desc">도움말</item>
+      <item name="blockquote_desc">인용문</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">복사/잘라내기/붙이기는 Mozilla 및Firefox 에서 사용되지 않습니다.\n상세정보를 표시합니까?</item>
+      <item name="path">Path</item>
+      <item name="newdocument">편집중의 데이터를 모두 잃어도 괜찮습니까?</item>
+      <item name="toolbar_focus">버튼으로 점프 - Alt+Q, 에디터로 점프 - Alt-Z, Jump to element path - Alt-X</item>
+      <item name="more_colors">그 외의 색</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">TinyMCE에 대하여</item>
+      <item name="about_general">About</item>
+      <item name="about_help">도움말</item>
+      <item name="about_license">라이센스</item>
+      <item name="about_plugins">플러그인</item>
+      <item name="about_plugin">플러그인</item>
+      <item name="about_author">제작자</item>
+      <item name="about_version">버젼</item>
+      <item name="about_loaded">실행된 플러그인</item>
+      <!-- Anchor -->
+      <item name="anchor_title">엥커 삽입/편집</item>
+      <item name="anchor_name">엥커명</item>
+      <!-- Source -->
+      <item name="code_title">소스 편집</item>
+      <item name="code_wordwrap">워드랩</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">색을 선택</item>
+      <item name="colorpicker_picker_tab">픽커</item>
+      <item name="colorpicker_picker_title">컬러 픽커</item>
+      <item name="colorpicker_palette_tab">팔레트</item>
+      <item name="colorpicker_palette_title">팔레트 색</item>
+      <item name="colorpicker_named_tab">색 이름</item>
+      <item name="colorpicker_named_title">색</item>
+      <item name="colorpicker_color">Color:</item>
+      <item name="colorpicker_name">색 이름:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">특수 문자</item>
+      <!-- Image -->
+      <item name="image_title">이미지의 삽입/편집</item>
+      <item name="image_src">이미지 URL</item>
+      <item name="image_alt">이미지 설명</item>
+      <item name="image_list">이미지 목록</item>
+      <item name="image_border">테두리선</item>
+      <item name="image_dimensions">크기</item>
+      <item name="image_vspace">상하 여백</item>
+      <item name="image_hspace">좌우 여백</item>
+      <item name="image_align">정렬</item>
+      <item name="image_align_baseline">기준선</item>
+      <item name="image_align_top">Top</item>
+      <item name="image_align_middle">Middle</item>
+      <item name="image_align_bottom">Bottom</item>
+      <item name="image_align_texttop">Text top</item>
+      <item name="image_align_textbottom">Text bottom</item>
+      <item name="image_align_left">Left</item>
+      <item name="image_align_right">Right</item>
+      <!-- Link -->
+      <item name="link_title">링크의 삽입/편집</item>
+      <item name="link_url">링크 URL</item>
+      <item name="link_target">Target</item>
+      <item name="link_target_same">같은창</item>
+      <item name="link_target_blank">새창</item>
+      <item name="link_titlefield">제목</item>
+      <item name="link_is_email">메일주소가 입력되었습니다.\n메일주소의 앞에 mailto:를 붙입니까?</item>
+      <item name="link_is_external">외부URL이 입력되었습니다.\nURL의 앞에 http://를 붙입니까?</item>
+      <item name="link_list">링크 목록</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">정렬</item>
+      <item name="left">왼쪽 정렬</item>
+      <item name="center">가운데 정렬</item>
+      <item name="right">오른쪽 정렬</item>
+      <item name="full">배분 정렬</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%Y-%m-%d</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">날짜 삽입</item>
+      <item name="inserttime_desc">시간 삽입</item>
+      <item name="months_long">1월,2월,3월,4월,5월,6월,7월,8월,9월,10월,11월,12월</item>
+      <item name="months_short">1,2,3,4,5,6,7,8,9,10,11,12</item>
+      <item name="day_long">일요일,월요일,화요일,수요일,목요일,금요일,토요일,일요일</item>
+      <item name="day_short">일,월,화,수,목,금,토,일</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">인쇄</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">미리보기</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">문자방향을 왼쪽에서 오른쪽으로</item>
+      <item name="rtl_desc">문자방향을 오른쪽에서 왼쪽으로</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">새 레이어</item>
+      <item name="forward_desc">앞으로 이동</item>
+      <item name="backward_desc">뒤로 이동</item>
+      <item name="absolute_desc">절대위치로 전환</item>
+      <item name="content">새 레이어...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">저장</item>
+      <item name="cancel_desc">모두 취소</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">빈칸 삽입</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">철자 검사</item>
+      <item name="download">ieSpell이 발견되지 않았습니다.\n인스톨 하시겠습니까?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">구분선</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">폭</item>
+      <item name="size">높이</item>
+      <item name="noshade">그림자없음</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">이모티콘</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">이모티콘 삽입</item>
+      <item name="desc">이모티콘</item>
+      <item name="cool">쿨</item>
+      <item name="cry">울음</item>
+      <item name="embarassed">부끄러움</item>
+      <item name="foot_in_mouth">실언</item>
+      <item name="frown">찡그린 얼굴</item>
+      <item name="innocent">천진난만</item>
+      <item name="kiss">Kiss</item>
+      <item name="laughing">웃음</item>
+      <item name="money_mouth">돈</item>
+      <item name="sealed">봉인</item>
+      <item name="smile">스마일</item>
+      <item name="surprised">놀라움</item>
+      <item name="tongue_out">메롱</item>
+      <item name="undecided">고민한다</item>
+      <item name="wink">윙크</item>
+      <item name="yell">외친다</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">검색</item>
+      <item name="replace_desc">검색/치환</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">재검색</item>
+      <item name="notfound">검색이 완료했습니다. 검색 문자열은 발견되지 않았습니다.</item>
+      <item name="search_title">검색</item>
+      <item name="replace_title">검색/치환</item>
+      <item name="allreplaced">모두 치환되었습니다.</item>
+      <item name="findwhat">검색 문자열</item>
+      <item name="replacewith">치환 문자열</item>
+      <item name="direction">방향</item>
+      <item name="up">위에</item>
+      <item name="down">아래에</item>
+      <item name="mcase">대문자/소문자를 구별</item>
+      <item name="findnext">검색</item>
+      <item name="replace">치환</item>
+      <item name="replaceall">모두 치환</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">이미지의 삽입/편집</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">일반</item>
+      <item name="tab_appearance">표시</item>
+      <item name="tab_advanced">고급</item>
+      <item name="general">일반</item>
+      <item name="title">제목</item>
+      <item name="preview">미리보기</item>
+      <item name="constrain_proportions">종횡비 보존</item>
+      <item name="langdir">문자 방향</item>
+      <item name="langcode">언어 코드</item>
+      <item name="long_desc">설명 링크</item>
+      <item name="style">스타일</item>
+      <item name="classes">클래스</item>
+      <item name="ltr">왼쪽에서 오른쪽</item>
+      <item name="rtl">오른쪽에서 왼쪽</item>
+      <item name="id">Id</item>
+      <item name="map">이미지 맵</item>
+      <item name="swap_image">롤 오버 효과</item>
+      <item name="alt_image">대체 이미지</item>
+      <item name="mouseover">마우스 오버 이미지</item>
+      <item name="mouseout">마우스 아웃 이미지</item>
+      <item name="misc">그 외</item>
+      <item name="example_img">미리보기 이미지</item>
+      <item name="missing_alt">이미지 설명이 없습니다만 좋습니까? 이미지 설명이 없는 경우, 맹인이나 텍스트 브라우저를 이용하고 있는 분, 또 이미지 표시를 OFF(으)로 하고 있는 유저의 접근성이 저하됩니다.</item>
+      <item name="dialog_title">이미지의 삽입/편집</item>
+      <item name="src">이미지 URL</item>
+      <item name="alt">이미지 설명</item>
+      <item name="list">이미지 목록</item>
+      <item name="border">테두리선</item>
+      <item name="dimensions">크기</item>
+      <item name="vspace">상하 여백</item>
+      <item name="hspace">좌우 여백</item>
+      <item name="align">정렬</item>
+      <item name="align_baseline">기준선</item>
+      <item name="align_top">상</item>
+      <item name="align_middle">중앙</item>
+      <item name="align_bottom">하</item>
+      <item name="align_texttop">문자열 위로</item>
+      <item name="align_textbottom">문자열 아래로</item>
+      <item name="align_left">좌</item>
+      <item name="align_right">우</item>
+      <item name="image_list">이미지 목록</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">링크의 삽입/편집</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">링크의 삽입/편집</item>
+      <item name="url">링크 URL</item>
+      <item name="target">Target</item>
+      <item name="titlefield">제목</item>
+      <item name="is_email">메일주소가 입력되었습니다. 메일주소의 앞에 mailto:를 붙입니까?</item>
+      <item name="is_external">외부URL이 입력되었습니다.URL의 앞에http://를 붙입니까?</item>
+      <item name="list">링크 목록</item>
+      <item name="general_tab">일반</item>
+      <item name="popup_tab">팝업</item>
+      <item name="events_tab">이벤트</item>
+      <item name="advanced_tab">고급</item>
+      <item name="general_props">일반 설정</item>
+      <item name="popup_props">팝업 설정</item>
+      <item name="event_props">이벤트</item>
+      <item name="advanced_props">고급의 설정</item>
+      <item name="popup_opts">옵션</item>
+      <item name="anchor_names">엥커</item>
+      <item name="target_same">이 창/프레임으로 열린다</item>
+      <item name="target_parent">부모창/프레임으로 열린다</item>
+      <item name="target_top">최상위 프레임으로 열린다 (모든 프레임 변경)</item>
+      <item name="target_blank">새창으로 열린다</item>
+      <item name="popup">Javascript 팝업</item>
+      <item name="popup_url">팝업 URL</item>
+      <item name="popup_name">Window 이름</item>
+      <item name="popup_return">'return false'를 삽입</item>
+      <item name="popup_scrollbars">스크롤바를 표시</item>
+      <item name="popup_statusbar">상태줄을 표시</item>
+      <item name="popup_toolbar">툴바를 표시</item>
+      <item name="popup_menubar">메뉴를 표시</item>
+      <item name="popup_location">주소바를 표시</item>
+      <item name="popup_resizable">크기변경 가능</item>
+      <item name="popup_dependent">연동 (Mozilla/Firefox만)</item>
+      <item name="popup_size">크기</item>
+      <item name="popup_position">위치(X/Y)</item>
+      <item name="id">Id</item>
+      <item name="style">스타일</item>
+      <item name="classes">클래스</item>
+      <item name="target_name">Target 이름</item>
+      <item name="langdir">페이지 문자 방향</item>
+      <item name="target_langcode">페이지 언어</item>
+      <item name="langcode">언어 코드</item>
+      <item name="encoding">문자 인코딩</item>
+      <item name="mime">MIME타입</item>
+      <item name="rel">링크에 관계</item>
+      <item name="rev">링크로부터의 관계</item>
+      <item name="tabindex">탭 인덱스</item>
+      <item name="accesskey">액세스 키</item>
+      <item name="ltr">왼쪽에서 오른쪽</item>
+      <item name="rtl">오른쪽에서 왼쪽</item>
+      <item name="link_list">링크 목록</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">인용처</item>
+      <item name="abbr_desc">약기</item>
+      <item name="acronym_desc">머리 글자어</item>
+      <item name="del_desc">삭제</item>
+      <item name="ins_desc">삽입</item>
+      <item name="attribs_desc">속성 삽입/편집</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">제목</item>
+      <item name="attribute_label_id">ID</item>
+      <item name="attribute_label_class">클래스</item>
+      <item name="attribute_label_style">스타일</item>
+      <item name="attribute_label_cite">인용</item>
+      <item name="attribute_label_datetime">날짜/시간</item>
+      <item name="attribute_label_langdir">문자 방향</item>
+      <item name="attribute_option_ltr">왼쪽에서 오른쪽</item>
+      <item name="attribute_option_rtl">오른쪽에서 왼쪽</item>
+      <item name="attribute_label_langcode">언어</item>
+      <item name="attribute_label_tabindex">탭 인덱스</item>
+      <item name="attribute_label_accesskey">액세스 키</item>
+      <item name="attribute_events_tab">이벤트</item>
+      <item name="attribute_attrib_tab">속성</item>
+      <item name="general_tab">일반</item>
+      <item name="attrib_tab">속성</item>
+      <item name="events_tab">이벤트</item>
+      <item name="fieldset_general_tab">일반 설정</item>
+      <item name="fieldset_attrib_tab">요소의 속성</item>
+      <item name="fieldset_events_tab">요소의 이벤트</item>
+      <item name="title_ins_element">요소의 삽입</item>
+      <item name="title_del_element">요소의 삭제</item>
+      <item name="title_acronym_element">머리 글자어 요소</item>
+      <item name="title_abbr_element">약기 요소</item>
+      <item name="title_cite_element">인용 요소</item>
+      <item name="remove">삭제</item>
+      <item name="insert_date">현재의 날짜/시간을 삽입</item>
+      <item name="option_ltr">왼쪽에서 오른쪽</item>
+      <item name="option_rtl">오른쪽에서 왼쪽</item>
+      <item name="attribs_title">속성의 삽입/편집</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">CSS편집</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">CSS편집</item>
+      <item name="apply">적용</item>
+      <item name="text_tab">텍스트</item>
+      <item name="background_tab">배경</item>
+      <item name="block_tab">블록</item>
+      <item name="box_tab">박스</item>
+      <item name="border_tab">테두리선</item>
+      <item name="list_tab">리스트</item>
+      <item name="positioning_tab">위치</item>
+      <item name="text_props">텍스트</item>
+      <item name="text_font">폰트</item>
+      <item name="text_size">크기</item>
+      <item name="text_weight">굵기</item>
+      <item name="text_style">스타일</item>
+      <item name="text_variant">Variant</item>
+      <item name="text_lineheight">행 높이</item>
+      <item name="text_case">대/소문자</item>
+      <item name="text_color">색</item>
+      <item name="text_decoration">장식</item>
+      <item name="text_overline">윗줄</item>
+      <item name="text_underline">밑줄</item>
+      <item name="text_striketrough">취소선</item>
+      <item name="text_blink">점멸</item>
+      <item name="text_none">없음</item>
+      <item name="background_color">배경색</item>
+      <item name="background_image">배경 이미지</item>
+      <item name="background_repeat">반복</item>
+      <item name="background_attachment">첨부</item>
+      <item name="background_hpos">수평 위치</item>
+      <item name="background_vpos">수직 위치</item>
+      <item name="block_wordspacing">단어 간격</item>
+      <item name="block_letterspacing">문자 간격</item>
+      <item name="block_vertical_alignment">수직 위치</item>
+      <item name="block_text_align">텍스트 정렬</item>
+      <item name="block_text_indent">들여쓰기</item>
+      <item name="block_whitespace">공백 문자</item>
+      <item name="block_display">표시</item>
+      <item name="box_width">폭</item>
+      <item name="box_height">높이</item>
+      <item name="box_float">float</item>
+      <item name="box_clear">Clear</item>
+      <item name="padding">padding</item>
+      <item name="same">모두 똑같이</item>
+      <item name="top">상</item>
+      <item name="right">우</item>
+      <item name="bottom">하</item>
+      <item name="left">좌</item>
+      <item name="margin">마진</item>
+      <item name="style">스타일</item>
+      <item name="width">폭</item>
+      <item name="height">높이</item>
+      <item name="color">색</item>
+      <item name="list_type">목록종류</item>
+      <item name="bullet_image">블릿 이미지</item>
+      <item name="position">위치</item>
+      <item name="positioning_type">타입</item>
+      <item name="visibility">가시성</item>
+      <item name="zindex">Z-index</item>
+      <item name="overflow">오버플로우</item>
+      <item name="placement">위치(placement)</item>
+      <item name="clip">Clip</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">텍스트처럼 붙여넣기</item>
+      <item name="paste_word_desc">Word로부터 붙여넣기</item>
+      <item name="selectall_desc">모두 선택</item>
+      <item name="plaintext_mode_sticky">일반 텍스트 모드에서 붙여넣기. 클릭하면 일반 붙여넣기 모드로 다시 변경됩니다. After you paste something you will be returned to regular paste mode.</item>
+      <item name="plaintext_mode">일반 텍스트 모드에서 붙여넣기. 클릭하면 일반 붙여넣기 모드로 다시 변경됩니다.</item>
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">윈도우에 텍스트를 붙이려면 키보드로 Ctrl+V를 입력해 주세요.</item>
+      <item name="text_linebreaks">개행을 보관 유지</item>
+      <item name="word_title">윈도우에 텍스트를 붙이려면 키보드로Ctrl+V를 입력해 주세요.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">새 테이블 삽입</item>
+      <item name="row_before_desc">앞에 행 삽입</item>
+      <item name="row_after_desc">뒤에 행 삽입</item>
+      <item name="delete_row_desc">행 삭제</item>
+      <item name="col_before_desc">앞에 열삽입</item>
+      <item name="col_after_desc">뒤에 열삽입</item>
+      <item name="delete_col_desc">열삭제</item>
+      <item name="split_cells_desc">결합된 셀을 분할</item>
+      <item name="merge_cells_desc">셀을 결합</item>
+      <item name="row_desc">행의 속성</item>
+      <item name="cell_desc">셀의 속성</item>
+      <item name="props_desc">테이블 속성</item>
+      <item name="paste_row_before_desc">앞에 행을 붙여넣기</item>
+      <item name="paste_row_after_desc">뒤로 행을 붙여넣기</item>
+      <item name="cut_row_desc">행을 잘라내기</item>
+      <item name="copy_row_desc">행을 복사</item>
+      <item name="del">테이블 삭제</item>
+      <item name="row">행</item>
+      <item name="col">열</item>
+      <item name="cell">셀</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width"></item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">일반</item>
+      <item name="advanced_tab">고급</item>
+      <item name="general_props">일반 설정</item>
+      <item name="advanced_props">고급 설정</item>
+      <item name="rowtype">행</item>
+      <item name="title">테이블의 삽입/편집</item>
+      <item name="width">폭</item>
+      <item name="height">높이</item>
+      <item name="cols">렬</item>
+      <item name="rows">행</item>
+      <item name="cellspacing">셀 간격</item>
+      <item name="cellpadding">셀내 여백</item>
+      <item name="border">테두리선</item>
+      <item name="align">정렬</item>
+      <item name="align_default">기본값</item>
+      <item name="align_left">왼쪽 맞춤</item>
+      <item name="align_right">오른쪽 맞춤</item>
+      <item name="align_middle">가운데 맞춤</item>
+      <item name="row_title">행 설정</item>
+      <item name="cell_title">셀 설정</item>
+      <item name="cell_type">셀 종류</item>
+      <item name="valign">수직 위치</item>
+      <item name="align_top">상</item>
+      <item name="align_bottom">하</item>
+      <item name="bordercolor">테두리선색</item>
+      <item name="bgcolor">배경색</item>
+      <item name="merge_cells_title">셀 결합</item>
+      <item name="id">Id</item>
+      <item name="style">스타일</item>
+      <item name="langdir">문자 방향</item>
+      <item name="langcode">언어 코드</item>
+      <item name="mime">Target MIME 타입</item>
+      <item name="ltr">왼쪽에서 오른쪽</item>
+      <item name="rtl">오른쪽에서 왼쪽</item>
+      <item name="bgimage">배경 이미지</item>
+      <item name="summary">요약</item>
+      <item name="td">Data</item>
+      <item name="th">Header</item>
+      <item name="cell_cell">현재의 셀을 갱신</item>
+      <item name="cell_row">행의 전셀을 갱신</item>
+      <item name="cell_all">테이블의 모든 셀을 갱신</item>
+      <item name="row_row">현재의 행을 갱신</item>
+      <item name="row_odd">홀수행을 갱신</item>
+      <item name="row_even">짝수행을 갱신</item>
+      <item name="row_all">전행을 갱신</item>
+      <item name="thead">Table Head</item>
+      <item name="tbody">Table Body</item>
+      <item name="tfoot">테이블 풋터</item>
+      <item name="scope">Scope</item>
+      <item name="rowgroup">행그룹</item>
+      <item name="colgroup">열그룹</item>
+      <item name="col_limit">렬수의 상한{$cols}를 넘었습니다.</item>
+      <item name="row_limit">행수의 상한{$rows}를 넘었습니다.</item>
+      <item name="cell_limit">셀수의 상한{$cells}를 넘었습니다.</item>
+      <item name="missing_scope">이 표 헤더셀에 scope속성을 지정하지않아도 괜찮습니까? 지정하지 않는 경우, 시간적으로 테이블의 구조를 파악하는 것이 어려운 분의 접근성이 저하합니다.</item>
+      <item name="caption">표제</item>
+      <item name="frame">Frame</item>
+      <item name="frame_none">없음</item>
+      <item name="frame_groups">그룹</item>
+      <item name="frame_rows">행</item>
+      <item name="frame_cols">열</item>
+      <item name="frame_all">모두</item>
+      <item name="rules">Rules</item>
+      <item name="rules_void">Void</item>
+      <item name="rules_above">위</item>
+      <item name="rules_below">아래</item>
+      <item name="rules_hsides">상하범위만</item>
+      <item name="rules_lhs">좌측 범위만</item>
+      <item name="rules_rhs">우측 범위만</item>
+      <item name="rules_vsides">좌우범위만</item>
+      <item name="rules_box">box</item>
+      <item name="rules_border">border</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">다른 페이지로 이동하면 편집한 내용이 취소됩니다.</item>
+      <item name="restore_content">자동 저장된 내용 복구</item>
+      <item name="warning_message">저장된 내용을 복구하면 현재의 내용은 삭제됩니다.\n\n정말 저장된 내용을 복구하시겠습니까?</item>
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">전체화면</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">미디어의 삽입/편집</item>
+      <item name="edit">미디어의 편집</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">미디어의 삽입/편집</item>
+      <item name="general">일반</item>
+      <item name="advanced">고급</item>
+      <item name="file">파일/URL</item>
+      <item name="list">목록</item>
+      <item name="size">크기</item>
+      <item name="preview">미리보기</item>
+      <item name="constrain_proportions">종횡비 유지</item>
+      <item name="type">타입</item>
+      <item name="id">Id</item>
+      <item name="name">Name</item>
+      <item name="class_name">Class</item>
+      <item name="vspace">상하 여백</item>
+      <item name="hspace">좌우 여백</item>
+      <item name="play">자동 재생</item>
+      <item name="loop">연속 재생</item>
+      <item name="menu">메뉴 표시</item>
+      <item name="quality">품질</item>
+      <item name="scale">스케일</item>
+      <item name="align">Align</item>
+      <item name="salign">SAlign</item>
+      <item name="wmode">WMode</item>
+      <item name="bgcolor">Background</item>
+      <item name="base">Base</item>
+      <item name="flashvars">Flashvars</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">AutoHREF</item>
+      <item name="cache">Cache</item>
+      <item name="hidden">Hidden</item>
+      <item name="controller">Controller</item>
+      <item name="kioskmode">Kiosk mode</item>
+      <item name="playeveryframe">Play every frame</item>
+      <item name="targetcache">Target cache</item>
+      <item name="correction">No correction</item>
+      <item name="enablejavascript">JavaScript를 허가</item>
+      <item name="starttime">Start time</item>
+      <item name="endtime">End time</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">Choke speed</item>
+      <item name="target">Target</item>
+      <item name="volume">Volume</item>
+      <item name="autostart">Auto start</item>
+      <item name="enabled">Enabled</item>
+      <item name="fullscreen">Fullscreen</item>
+      <item name="invokeurls">Invoke URLs</item>
+      <item name="mute">Mute</item>
+      <item name="stretchtofit">Stretch to fit</item>
+      <item name="windowlessvideo">Windowless video</item>
+      <item name="balance">Balance</item>
+      <item name="baseurl">Base URL</item>
+      <item name="captioningid">Captioning id</item>
+      <item name="currentmarker">Current marker</item>
+      <item name="currentposition">Current position</item>
+      <item name="defaultframe">Default frame</item>
+      <item name="playcount">Play count</item>
+      <item name="rate">Rate</item>
+      <item name="uimode">UI Mode</item>
+      <item name="flash_options">Flash options</item>
+      <item name="qt_options">Quicktime options</item>
+      <item name="wmp_options">Windows media player options</item>
+      <item name="rmp_options">Real media player options</item>
+      <item name="shockwave_options">Shockwave options</item>
+      <item name="autogotourl">Auto goto URL</item>
+      <item name="center">Center</item>
+      <item name="imagestatus">Image status</item>
+      <item name="maintainaspect">Maintain aspect</item>
+      <item name="nojava">No java</item>
+      <item name="prefetch">Prefetch</item>
+      <item name="shuffle">Shuffle</item>
+      <item name="console">Console</item>
+      <item name="numloop">Num loops</item>
+      <item name="controls">Controls</item>
+      <item name="scriptcallbacks">Script callbacks</item>
+      <item name="swstretchstyle">Stretch style</item>
+      <item name="swstretchhalign">Stretch H-Align</item>
+      <item name="swstretchvalign">Stretch V-Align</item>
+      <item name="sound">Sound</item>
+      <item name="progress">Progress</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn">Streamed rtsp resources should be added to the QT Src field under the advanced tab.nYou should also add a non streamed version to the Src field..</item>
+      <item name="align_top">Top</item>
+      <item name="align_right">Right</item>
+      <item name="align_bottom">Bottom</item>
+      <item name="align_left">Left</item>
+      <item name="align_center">Center</item>
+      <item name="align_top_left">Top left</item>
+      <item name="align_top_right">Top right</item>
+      <item name="align_bottom_left">Bottom left</item>
+      <item name="align_bottom_right">Bottom right</item>
+      <item name="flv_options">Flash video options</item>
+      <item name="flv_scalemode">Scale mode</item>
+      <item name="flv_buffer">Buffer</item>
+      <item name="flv_startimage">Start image</item>
+      <item name="flv_starttime">Start time</item>
+      <item name="flv_defaultvolume">Default volumne</item>
+      <item name="flv_hiddengui">Hidden GUI</item>
+      <item name="flv_autostart">Auto start</item>
+      <item name="flv_loop">Loop</item>
+      <item name="flv_showscalemodes">Show scale modes</item>
+      <item name="flv_smoothvideo">Smooth video</item>
+      <item name="flv_jscallback">JS Callback</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">페이지의 속성</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">페이지의 속성</item>
+      <item name="meta_tab">일반</item>
+      <item name="appearance_tab">표시</item>
+      <item name="advanced_tab">고급</item>
+      <item name="meta_props">메타 정보</item>
+      <item name="langprops">언어와 인코딩</item>
+      <item name="meta_title">Title</item>
+      <item name="meta_keywords">Keywords</item>
+      <item name="meta_description">Description</item>
+      <item name="meta_robots">Robots</item>
+      <item name="doctypes">Doctype</item>
+      <item name="langcode">언어 코드</item>
+      <item name="langdir">문자 방향</item>
+      <item name="ltr">왼쪽에서 오른쪽</item>
+      <item name="rtl">오른쪽에서 왼쪽</item>
+      <item name="xml_pi">XML선언</item>
+      <item name="encoding">문자 인코딩</item>
+      <item name="appearance_bgprops">배경 설정</item>
+      <item name="appearance_marginprops">Body 마진</item>
+      <item name="appearance_linkprops">링크색</item>
+      <item name="appearance_textprops">텍스트 설정</item>
+      <item name="bgcolor">배경색</item>
+      <item name="bgimage">배경 이미지</item>
+      <item name="left_margin">왼쪽 마진</item>
+      <item name="right_margin">오른쪽 마진</item>
+      <item name="top_margin">위 마진</item>
+      <item name="bottom_margin">아래 마진</item>
+      <item name="text_color">문자색</item>
+      <item name="font_size">문자 크기</item>
+      <item name="font_face">글꼴</item>
+      <item name="link_color">링크색</item>
+      <item name="hover_color">링크색(hover)</item>
+      <item name="visited_color">링크색(visited)</item>
+      <item name="active_color">링크색(active)</item>
+      <item name="textcolor">색</item>
+      <item name="fontsize">문자 크기</item>
+      <item name="fontface">폰트</item>
+      <item name="meta_index_follow">모두 허가</item>
+      <item name="meta_index_nofollow">페이지를 허가하지만 링크 금지</item>
+      <item name="meta_noindex_follow">페이지를 금지하고 링크 허가</item>
+      <item name="meta_noindex_nofollow">모두 금지</item>
+      <item name="appearance_style">스타일시트 설정</item>
+      <item name="stylesheet">스타일시트</item>
+      <item name="style">스타일</item>
+      <item name="author">필자</item>
+      <item name="copyright">Copyright</item>
+      <item name="add">요소 추가</item>
+      <item name="remove">선택 요소를 삭제</item>
+      <item name="moveup">선택 요소를 위에 이동</item>
+      <item name="movedown">선택 요소를 아래에 이동</item>
+      <item name="head_elements">Head elements</item>
+      <item name="info">Information</item>
+      <item name="add_title">Title element</item>
+      <item name="add_meta">Meta element</item>
+      <item name="add_script">Script element</item>
+      <item name="add_style">Style element</item>
+      <item name="add_link">Link element</item>
+      <item name="add_base">Base element</item>
+      <item name="add_comment">Comment node</item>
+      <item name="title_element">Title element</item>
+      <item name="script_element">Script element</item>
+      <item name="style_element">Style element</item>
+      <item name="base_element">Base element</item>
+      <item name="link_element">Link element</item>
+      <item name="meta_element">Meta element</item>
+      <item name="comment_element">Comment</item>
+      <item name="src">Src</item>
+      <item name="language">Language</item>
+      <item name="href">Href</item>
+      <item name="target">Target</item>
+      <item name="type">Type</item>
+      <item name="charset">Charset</item>
+      <item name="defer">Defer</item>
+      <item name="media">Media</item>
+      <item name="properties">Properties</item>
+      <item name="name">Name</item>
+      <item name="value">Value</item>
+      <item name="content">Content</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href lang</item>
+      <item name="general_props">General</item>
+      <item name="advanced_props">Advanced</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">정의가 끝난 템플릿의 삽입</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">템플릿</item>
+      <item name="label">템플릿</item>
+      <item name="desc_label">설명</item>
+      <item name="desc">템플릿의 삽입</item>
+      <item name="select">템플릿 선택</item>
+      <item name="preview">미리보기</item>
+      <item name="warning">경고: 템플릿을 갱신하면 이전의 데이터는 없어집니다.</item>
+      <item name="mdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="cdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="months_long">1월,2월,3월,4월,5월,6월,7월,8월,9월,10월,11월,12월</item>
+      <item name="months_short">1,2,3,4,5,6,7,8,9,10,11,12</item>
+      <item name="day_long">일요일,월요일,화요일,수요일,목요일,금요일,토요일,일요일</item>
+      <item name="day_short">일,월,화,수,목,금,토,일</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">제어 문자의 표시 전환</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">스펠링 전환</item>
+      <item name="menu">스펠링 설정</item>
+      <item name="ignore_word">이 어구를 무시</item>
+      <item name="ignore_words">모두 무시</item>
+      <item name="langs">언어</item>
+      <item name="wait">기다려 주세요...</item>
+      <item name="sug">후보</item>
+      <item name="no_sug">후보 없음</item>
+      <item name="no_mpell">오탈자가 발견되지 않았습니다.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">새페이지 삽입</item>
+    </group>
+    <group target="advlist">
+      <item name="types">타입</item>
+      <item name="def">기본</item>
+      <item name="lower_alpha">알파벳 소문자</item>
+      <item name="lower_greek">그리스어 소문자</item>
+      <item name="lower_roman">로마 소문자</item>
+      <item name="upper_alpha">대문자 알파벳</item>
+      <item name="upper_roman">대문자 로마</item>
+      <item name="circle">원</item>
+      <item name="disc">원형</item>
+      <item name="square">사격형</item>
+    </group>
+  </language>
+</language-pack>

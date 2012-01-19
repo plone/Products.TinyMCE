@@ -1,19 +1,16 @@
 try:
-    import json
-    json = json  # Pyflakes
-except ImportError:
     import simplejson as json
+    json  # Pyflakes
+except ImportError:
+    import json
 from types import StringTypes
-from zope.component import getUtility, queryUtility
+from zope.component import getUtilitiesFor, getUtility, queryUtility, getMultiAdapter
 from zope.i18n import translate
 from zope.i18nmessageid import MessageFactory
-from zope.interface import classProvides
-from zope.interface import implements
+from zope.interface import classProvides, implements
 from zope.schema.fieldproperty import FieldProperty
 from AccessControl import ClassSecurityInfo
-from Acquisition import aq_base
-from Acquisition import aq_inner
-from Acquisition import aq_parent
+from Acquisition import aq_base, aq_inner, aq_parent
 from OFS.SimpleItem import SimpleItem
 from Products.Archetypes.Field import ImageField
 from Products.Archetypes.interfaces import IBaseObject
@@ -22,19 +19,24 @@ from Products.CMFCore.interfaces._content import IFolderish
 from Products.CMFCore.utils import getToolByName
 try:
     from plone.app.layout.globals.portal import RIGHT_TO_LEFT
+    RIGHT_TO_LEFT    # pyflakes
 except ImportError:
     RIGHT_TO_LEFT = ['ar', 'fa', 'he', 'ps']  # not available in plone 3
 from plone.app.layout.navigation.root import getNavigationRootObject
-from plone.outputfilters.filters.resolveuid_and_caption import IImageCaptioningEnabler
-from plone.outputfilters.filters.resolveuid_and_caption import IResolveUidsEnabler
+from plone.outputfilters.filters.resolveuid_and_caption import IImageCaptioningEnabler, IResolveUidsEnabler
 
 from Products.TinyMCE.bbb import implementedOrProvidedBy
+from Products.TinyMCE.interfaces.shortcut import ITinyMCEShortcut
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.interfaces.utility import ITinyMCELayout
 from Products.TinyMCE.interfaces.utility import ITinyMCEToolbar
 from Products.TinyMCE.interfaces.utility import ITinyMCELibraries
 from Products.TinyMCE.interfaces.utility import ITinyMCEResourceTypes
-from Products.TinyMCE import TMCEMessageFactory as _
+from Products.TinyMCE.interfaces.utility import ITinyMCEContentBrowser
+
+
+_ = MessageFactory('plone.tinymce')
+BUTTON_WIDTHS = {'style': 150, 'forecolor': 32, 'backcolor': 32, 'tablecontrols': 285}
 
 
 def form_adapter(context):
@@ -57,7 +59,6 @@ class TinyMCE(SimpleItem):
     autoresize = FieldProperty(ITinyMCELayout['autoresize'])
     editor_width = FieldProperty(ITinyMCELayout['editor_width'])
     editor_height = FieldProperty(ITinyMCELayout['editor_height'])
-    directionality = FieldProperty(ITinyMCELayout['directionality'])
     contextmenu = FieldProperty(ITinyMCELayout['contextmenu'])
     content_css = FieldProperty(ITinyMCELayout['content_css'])
     styles = FieldProperty(ITinyMCELayout['styles'])
@@ -144,7 +145,13 @@ class TinyMCE(SimpleItem):
     containsanchors = FieldProperty(ITinyMCEResourceTypes['containsanchors'])
     linkable = FieldProperty(ITinyMCEResourceTypes['linkable'])
     imageobjects = FieldProperty(ITinyMCEResourceTypes['imageobjects'])
+    plugins = FieldProperty(ITinyMCEResourceTypes['plugins'])
     customplugins = FieldProperty(ITinyMCEResourceTypes['customplugins'])
+
+    link_shortcuts = FieldProperty(ITinyMCEContentBrowser['link_shortcuts'])
+    image_shortcuts = FieldProperty(ITinyMCEContentBrowser['image_shortcuts'])
+    num_of_thumb_columns = FieldProperty(ITinyMCEContentBrowser['num_of_thumb_columns'])
+    thumbnail_size = FieldProperty(ITinyMCEContentBrowser['thumbnail_size'])
 
     def getImageScales(self, field=None, context=None):
         """Return the image sizes for the drawer"""
@@ -165,10 +172,10 @@ class TinyMCE(SimpleItem):
         else:
             width, height = 0, 0
 
-        scales = [{'value': '%s_%s' % (field_name, key),
+        scales = [{'value': '@@images/%s/%s' % (field_name, key),
                    'size': [value[0], value[1]],
                    'title': key.capitalize()} for key, value in sizes.items()]
-        scales.sort(lambda x, y: cmp(x['size'][0], y['size'][0]))
+        scales.sort(key=lambda x: x['size'][0])
         scales.insert(0, {'value': '',
                           'title': 'Original',
                           'size': [width, height]})
@@ -190,25 +197,20 @@ class TinyMCE(SimpleItem):
             buttons.append('copy')
         if self.toolbar_paste:
             buttons.append('paste')
-
         if self.toolbar_pastetext:
             buttons.append('pastetext')
         if self.toolbar_pasteword:
             buttons.append('pasteword')
-
         if self.toolbar_undo:
             buttons.append('undo')
         if self.toolbar_redo:
             buttons.append('redo')
-
         if self.toolbar_search:
             buttons.append('search')
         if self.toolbar_replace:
             buttons.append('replace')
-
         if self.toolbar_style:
             buttons.append('style')
-
         if self.toolbar_bold:
             buttons.append('bold')
         if self.toolbar_italic:
@@ -221,12 +223,10 @@ class TinyMCE(SimpleItem):
             buttons.append('sub')
         if self.toolbar_sup:
             buttons.append('sup')
-
         if self.toolbar_forecolor:
             buttons.append('forecolor')
         if self.toolbar_backcolor:
             buttons.append('backcolor')
-
         if self.toolbar_justifyleft:
             buttons.append('justifyleft')
         if self.toolbar_justifycenter:
@@ -235,7 +235,6 @@ class TinyMCE(SimpleItem):
             buttons.append('justifyright')
         if self.toolbar_justifyfull:
             buttons.append('justifyfull')
-
         if self.toolbar_bullist:
             buttons.append('bullist')
         if self.toolbar_numlist:
@@ -246,22 +245,18 @@ class TinyMCE(SimpleItem):
             buttons.append('outdent')
         if self.toolbar_indent:
             buttons.append('indent')
-
         if self.toolbar_image:
             buttons.append('image')
         if self.toolbar_media:
             buttons.append('media')
-
         if self.toolbar_link:
             buttons.append('link')
         if self.toolbar_unlink:
             buttons.append('unlink')
         if self.toolbar_anchor:
             buttons.append('anchor')
-
         if self.toolbar_tablecontrols:
             buttons.append('tablecontrols')
-
         if self.toolbar_charmap:
             buttons.append('charmap')
         if self.toolbar_hr:
@@ -278,15 +273,12 @@ class TinyMCE(SimpleItem):
             buttons.append('nonbreaking')
         if self.toolbar_pagebreak:
             buttons.append('pagebreak')
-
         if self.toolbar_print:
             buttons.append('print')
         if self.toolbar_preview:
             buttons.append('preview')
-
         if self.toolbar_spellchecker:
             buttons.append(self.libraries_spellchecker_choice)
-
         if self.toolbar_removeformat:
             buttons.append('removeformat')
         if self.toolbar_cleanup:
@@ -310,7 +302,9 @@ class TinyMCE(SimpleItem):
 
     security.declarePrivate('translateButtonsFromKupu')
     def translateButtonsFromKupu(self, context, buttons):
-
+        """Given a set of buttons in Kupu, translate them to
+        a set for TinyMCE toolbar
+        """
         return_buttons = []
 
         for button in buttons:
@@ -403,6 +397,9 @@ class TinyMCE(SimpleItem):
 
     security.declarePrivate('getValidElements')
     def getValidElements(self):
+        """Return valid (X)HTML elements and their attributes
+        that can be used within TinyMCE
+        """
         XHTML_TAGS = set(
             'a abbr acronym address area b base bdo big blockquote body br '
             'button caption cite code col colgroup dd del div dfn dl dt em '
@@ -478,7 +475,7 @@ class TinyMCE(SimpleItem):
             'ol': COMMON_ATTRS | set('compact type'.split()),
             'optgroup': COMMON_ATTRS | set('disabled label'.split()),
             'option': COMMON_ATTRS | set('selected disabled label value'.split()),
-            'p': COMMON_ATTRS | set('align'.split()),
+            '#p': COMMON_ATTRS | set('align'.split()),
             'param': set('id name value valuetype type'.split()),
             'pre': COMMON_ATTRS | set('width'.split()),
             'q': COMMON_ATTRS | set('cite'.split()),
@@ -545,14 +542,14 @@ class TinyMCE(SimpleItem):
         # Remove to be stripped attributes
         try:
             stripped_attributes = set(safe_html.get_parameter_value('stripped_attributes'))
-            style_whitelist = safe_html.get_parameter_value('style_whitelist')
+            #style_whitelist = safe_html.get_parameter_value('style_whitelist')
         except (KeyError, AttributeError):
             if kupu_library_tool is not None:
                 stripped_attributes = set(kupu_library_tool.get_stripped_attributes())
-                style_whitelist = kupu_library_tool.getStyleWhitelist()
+                #style_whitelist = kupu_library_tool.getStyleWhitelist()
             else:
                 stripped_attributes = set()
-                style_whitelist = ()
+                #style_whitelist = ()
 
         #style_attribute = "style"
         #if len(style_whitelist) > 0:
@@ -575,6 +572,102 @@ class TinyMCE(SimpleItem):
 
         return valid_elements
 
+    security.declarePrivate('getPlugins')
+    def getPlugins(self):
+        """ See ITinyMCE interface
+        """
+        plugins = self.plugins[:]
+        sp = self.libraries_spellchecker_choice
+        if sp and sp != "browser":
+            plugins.append(sp)
+
+        if self.customplugins is not None:
+            for plugin in self.customplugins.splitlines():
+                if '|' in plugin:
+                    plugin = plugin.split('|', 1)[0]
+                if plugin not in plugins:
+                    plugins.append(plugin)
+
+        if self.contextmenu:
+            plugins.append('contextmenu')
+
+        if self.autoresize:
+            plugins.append('autoresize')
+        return ','.join(plugins)
+
+    security.declarePrivate('getStyles')
+    def getStyles(self, config):
+        """ See ITinyMCE interface
+        """
+        h = {'Text': [], 'Selection': [], 'Tables': [], 'Lists': [], 'Print': []}
+        styletype = ""
+
+        # Push title
+        h['Text'].append('{ title: "Text", tag: "", className: "-", type: "Text" }')
+        h['Selection'].append('{ title: "Selection", tag: "", className: "-", type: "Selection" }')
+        h['Tables'].append('{ title: "Tables", tag: "table", className: "-", type: "Tables" }')
+        h['Lists'].append('{ title: "Lists", tag: "ul", className: "-", type: "Lists" }')
+        h['Lists'].append('{ title: "Lists", tag: "ol", className: "-", type: "Lists" }')
+        h['Lists'].append('{ title: "Lists", tag: "dl", className: "-", type: "Lists" }')
+        h['Print'].append('{ title: "Print", tag: "", className: "-", type: "Print" }')
+
+        # Add defaults
+        h['Text'].append('{ title: "' + config['labels']['label_paragraph'] + '", tag: "p", className: "", type: "Text" }')
+        h['Selection'].append('{ title: "' + config['labels']['label_styles'] + '", tag: "", className: "", type: "Selection" }')
+        h['Tables'].append('{ title: "' + config['labels']['label_plain_cell'] + '", tag: "td", className: "", type: "Tables" }')
+        h['Lists'].append('{ title: "' + config['labels']['label_lists'] + '", tag: "dl", className: "", type: "Lists" }')
+
+        for i in config['styles']:
+            e = i.split('|')
+            while len(e) <= 2:
+                e.append("")
+            if e[1].lower() in ('del', 'ins', 'span'):
+                    styletype = "Selection"
+            elif e[1].lower() in ('table', 'tr', 'td', 'th'):
+                    styletype = "Tables"
+            elif e[1].lower() in ('ul', 'ol', 'li', 'dt', 'dd', 'dl'):
+                    styletype = "Lists"
+            else:
+                    styletype = "Text"
+
+            if e[2] == "pageBreak":
+                    styletype = "Print"
+            h[styletype].append('{ title: "' + e[0] + '", tag: "' + e[1] + '", className: "' + e[2] + '", type: "' + styletype + '" }')
+
+            # Add items to list
+            a = []
+            if len(h['Text']) > 1:
+                a.extend(h['Text'])
+            if len(h['Selection']) > 1:
+                a.extend(h['Selection'])
+            if len(h['Tables']) > 1:
+                a.extend(h['Tables'])
+            if len(h['Lists']) > 1:
+                a.extend(h['Lists'])
+            if len(h['Print']) > 1:
+                a.extend(h['Print'])
+
+        return '[' + ','.join(a) + ']'
+
+    security.declarePrivate('getToolbars')
+    def getToolbars(self, config):
+        """Calculate number of toolbar rows from length of buttons"""
+        t = [[], [], [], []]
+        cur_toolbar = 0
+        cur_x = 0
+
+        for i in config['buttons']:
+            button_width = BUTTON_WIDTHS.get(i, 23)
+            if cur_x + button_width > int(config['toolbar_width']):
+                cur_x = button_width
+                cur_toolbar += 1
+            else:
+                cur_x += button_width
+            if cur_toolbar <= 3:
+                t[cur_toolbar].append(i)
+
+        return [','.join(toolbar) for toolbar in t]
+
     security.declareProtected('View', 'getContentType')
     def getContentType(self, object=None, fieldname=None):
         context = aq_base(object)
@@ -596,7 +689,9 @@ class TinyMCE(SimpleItem):
         return 'text/html'
 
     security.declareProtected('View', 'getConfiguration')
-    def getConfiguration(self, context=None, field=None, request=None):
+    def getConfiguration(self, context=None, field=None, request=None, script_url=None):
+        """Return JSON configuration that is passed to javascript tinymce constructor
+    """
         results = {}
 
         # Get widget attributes
@@ -624,10 +719,14 @@ class TinyMCE(SimpleItem):
                 style_whitelist = kupu_library_tool.getStyleWhitelist()
             else:
                 style_whitelist = []
-        results['valid_inline_styles'] = style_whitelist
+        results['valid_inline_styles'] = ','.join(style_whitelist)  # tinymce format
 
         # Replacing some hardcoded translations
         labels = {}
+        labels['label_browseimage'] = translate(_('Image Browser'), context=request)
+        labels['label_browselink'] = translate(_('Link Browser'), context=request)
+        labels['label_addnewimage'] = translate(_('Add new Image'), context=request)
+        labels['label_addnewfile'] = translate(_('Add new File'), context=request)
         labels['label_styles'] = translate(_('(remove style)'), context=request)
         labels['label_paragraph'] = translate(_('Normal paragraph'), context=request)
         labels['label_plain_cell'] = translate(_('Plain cell'), context=request)
@@ -639,11 +738,15 @@ class TinyMCE(SimpleItem):
         labels['label_print'] = translate(_('Print'), context=request)
         labels['label_no_items'] = translate(_('No items in this folder'), context=request)
         labels['label_no_anchors'] = translate(_('No anchors in this page'), context=request)
+        labels['label_browser'] = translate(_('Browser'), context=request)
+        labels['label_shortcuts'] = translate(_('Shortcuts'), context=request)
+        labels['label_search_results'] = translate(_('Search results:'), context=request)
+        labels['label_internal_path'] = translate(_('You are here:'), context=request)
         results['labels'] = labels
 
         # Add styles to results
         results['styles'] = []
-        results['table_styles'] = []
+        table_styles = []
         if not redefine_parastyles:
             if isinstance(self.tablestyles, StringTypes):
                 for tablestyle in self.tablestyles.split('\n'):
@@ -660,7 +763,7 @@ class TinyMCE(SimpleItem):
                     if request is not None:
                         tablestyletitle = translate(_(tablestylefields[0]), context=request)
                     results['styles'].append(tablestyletitle + '|table|' + tablestyleid)
-                    results['table_styles'].append(tablestyletitle + '=' + tablestyleid)
+                    table_styles.append(tablestyletitle + '=' + tablestyleid)
             if isinstance(self.styles, StringTypes):
                 styles = []
                 for style in self.styles.split('\n'):
@@ -674,6 +777,7 @@ class TinyMCE(SimpleItem):
                     merge = styletitle + '|' + '|'.join(stylefields[1:])
                     styles.append(merge)
                 results['styles'].extend(styles)
+        results['table_styles'] = ';'.join(table_styles)  # tinymce config
 
         if parastyles is not None:
             results['styles'].extend(parastyles)
@@ -690,64 +794,53 @@ class TinyMCE(SimpleItem):
             results['buttons'] = filter(lambda x: x not in filter_buttons, results['buttons'])
 
         # Get valid html elements
-        results['valid_elements'] = self.getValidElements()
+        valid_elements = self.getValidElements()
+        results['valid_elements'] = ','.join(["%s[%s]" % (key, '|'.join(value)) for key, value in valid_elements.iteritems()])
+
+        results['customplugins'] = self.customplugins.splitlines()
 
         # Set toolbar_location
         if self.toolbar_external:
-            results['toolbar_location'] = 'external'
+            results['theme_advanced_toolbar_location'] = 'external'
         else:
-            results['toolbar_location'] = 'top'
+            results['theme_advanced_toolbar_location'] = 'top'
 
         if self.autoresize:
-            results['path_location'] = 'none'
-            results['resizing_use_cookie'] = False
-            results['resizing'] = False
+            results['theme_advanced_path_location'] = 'none'
+            results['theme_advanced_resizing_use_cookie'] = False
+            results['theme_advanced_resizing'] = False
             results['autoresize'] = True
         else:
-            results['path_location'] = 'bottom'
-            results['resizing_use_cookie'] = True
-            if self.resizing:
-                results['resizing'] = True
-            else:
-                results['resizing'] = False
+            results['theme_advanced_path_location'] = 'bottom'
+            results['theme_advanced_resizing_use_cookie'] = True
+            results['theme_advanced_resizing'] = self.resizing
             results['autoresize'] = False
 
         if '%' in self.editor_width:
-            results['resize_horizontal'] = False
+            results['theme_advanced_resize_horizontal'] = False
         else:
-            results['resize_horizontal'] = True
+            results['theme_advanced_resize_horizontal'] = True
 
         try:
-            results['editor_width'] = int(self.editor_width)
+            results['theme_advanced_source_editor_width'] = int(self.editor_width)
         except (TypeError, ValueError):
-            results['editor_width'] = 600
+            results['theme_advanced_source_editor_width'] = 600
 
         try:
-            results['editor_height'] = int(self.editor_height)
+            results['theme_advanced_source_editor_height'] = int(self.editor_height)
         except (TypeError, ValueError):
-            results['editor_height'] = 400
+            results['theme_advanced_source_editor_height'] = 400
 
         try:
             results['toolbar_width'] = int(toolbar_width)
         except (TypeError, ValueError):
             results['toolbar_width'] = 440
 
-        if self.directionality == 'auto':
-            language = context.Language()
-            if not language:
-                portal_properties = getToolByName(context, "portal_properties")
-                site_properties = portal_properties.site_properties
-                language = site_properties.getProperty('default_language',
-                                                       None)
-            directionality = (language[:2] in RIGHT_TO_LEFT) and 'rtl' or 'ltr'
-        else:
-            directionality = self.directionality
-        results['directionality'] = directionality
-
-        if self.contextmenu:
-            results['contextmenu'] = True
-        else:
-            results['contextmenu'] = False
+        # is_rtl handles every possible setting as far as RTL/LTR is concerned
+        # pass that to tinmyce
+        if request:
+            portal_state = getMultiAdapter((context, request), name=u'plone_portal_state')
+            results['directionality'] = portal_state.is_rtl() and 'rtl' or 'ltr'
 
         portal = getToolByName(self, 'portal_url').getPortalObject()
         results['portal_url'] = aq_inner(portal).absolute_url()
@@ -762,10 +855,11 @@ class TinyMCE(SimpleItem):
                 self.getId(),
                 "@@tinymce-getstyle"])
 
-        if self.link_using_uids:
-            results['link_using_uids'] = True
-        else:
-            results['link_using_uids'] = False
+        results['link_using_uids'] = self.link_using_uids
+        results['contextmenu'] = self.contextmenu
+        results['entity_encoding'] = self.entity_encoding
+        if script_url:
+            results['script_url'] = script_url
 
         if self.allow_captioned_images:
             results['allow_captioned_images'] = True
@@ -776,12 +870,6 @@ class TinyMCE(SimpleItem):
             results['rooted'] = True
         else:
             results['rooted'] = False
-
-        results['customplugins'] = []
-        if self.customplugins is not None:
-            results['customplugins'].extend(self.customplugins.split('\n'))
-
-        results['entity_encoding'] = self.entity_encoding
 
         props = getToolByName(self, 'portal_properties')
         livesearch = props.site_properties.getProperty('enable_livesearch', False)
@@ -804,22 +892,36 @@ class TinyMCE(SimpleItem):
 
         try:
             results['document_url'] = context.absolute_url()
-            parent = aq_parent(aq_inner(context))
-            if getattr(aq_base(context), 'checkCreationFlag', None) and context.checkCreationFlag():
-                parent = aq_parent(aq_parent(parent))
-                results['parent'] = parent.absolute_url() + "/"
-            else:
-                if IFolderish.providedBy(context):
-                    results['parent'] = context.absolute_url() + "/"
+            if getattr(aq_base(context), 'checkCreationFlag', None):
+                parent = aq_parent(aq_inner(context))
+                if context.checkCreationFlag():
+                    parent = aq_parent(aq_parent(parent))
+                    results['document_base_url'] = parent.absolute_url() + "/"
                 else:
-                    results['parent'] = parent.absolute_url() + "/"
+                    if IFolderish.providedBy(context):
+                        results['document_base_url'] = context.absolute_url() + "/"
+                    else:
+                        results['document_base_url'] = parent.absolute_url() + "/"
+            else:
+                results['document_base_url'] = results['portal_url'] + "/"
         except AttributeError:
-            results['parent'] = results['portal_url'] + "/"
+            results['document_base_url'] = results['portal_url'] + "/"
             results['document_url'] = results['portal_url']
 
         # Get Library options
-        results['libraries_spellchecker_choice'] = \
-                                        self.libraries_spellchecker_choice
+        results['gecko_spellcheck'] = self.libraries_spellchecker_choice == 'browser'
+
+        # Content Browser
+        shortcuts_dict = dict(getUtilitiesFor(ITinyMCEShortcut))
+        results['link_shortcuts_html'] = []
+        results['image_shortcuts_html'] = []
+        results['num_of_thumb_columns'] = self.num_of_thumb_columns
+        results['thumbnail_size'] = self.thumbnail_size
+
+        for name in self.link_shortcuts:
+            results['link_shortcuts_html'].extend(shortcuts_dict.get(name).render(context))
+        for name in self.image_shortcuts:
+            results['image_shortcuts_html'].extend(shortcuts_dict.get(name).render(context))
 
         # init vars specific for "After the Deadline" spellchecker
         mtool = getToolByName(portal, 'portal_membership')
@@ -828,6 +930,27 @@ class TinyMCE(SimpleItem):
         results['atd_rpc_url'] = "%s/@@" % portal.absolute_url()
         results['atd_show_types'] = self.libraries_atd_show_types.strip().replace('\n', ',')
         results['atd_ignore_strings'] = self.libraries_atd_ignore_strings.strip().replace('\n', ',')
+
+        # generic configuration
+        results['mode'] = "exact"
+        results['theme'] = "advanced"
+        results['skin'] = "plone"
+        results['inlinepopups_skin'] = "plonepopup"
+        results['body_class'] = "documentContent"
+        results['body_id'] = "content"
+        results['table_firstline_th'] = True
+        results['force_span_wrappers'] = True
+        results['fix_list_elements'] = False
+        # allow embed tag if user removes it from
+        # list of nasty tags - see #10681
+        results['media_strict'] = False
+        results['theme_advanced_path'] = False
+        results['theme_advanced_toolbar_align'] = "left"
+
+        results['plugins'] = self.getPlugins()
+        results['theme_advanced_styles'] = self.getStyles(results)
+        results['theme_advanced_buttons1'], results['theme_advanced_buttons2'], \
+            results['theme_advanced_buttons3'], results['theme_advanced_buttons4'] = self.getToolbars(results)
 
         return json.dumps(results)
 

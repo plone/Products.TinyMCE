@@ -17,6 +17,13 @@ class TransformsTestCase(FunctionalTestCase):
         # compatibility they can be enabled via settings in the TinyMCE control panel.
 
     def test_filters(self):
+        try:
+            from plone.scale.scale import scaleImage
+            scaleImage   # pyflakes
+        except ImportError:
+            print "scaling images not available. skipping test"
+            return
+
         # Let's turn these filters on first.
         tinymce_utility = getUtility(ITinyMCE)
         tinymce_utility.link_using_uids = True
@@ -61,5 +68,6 @@ class TransformsTestCase(FunctionalTestCase):
         tinymce_utility.allow_captioned_images = False
 
         # Now the filters should not be applied.
+
         transformed_text_2 = self.portal.portal_transforms.convertTo('text/x-html-safe', text, mimetype='text/html', context=self.portal)
         self.assertNotEqual(unicode(transformed_text_2).replace(' ', ''), unicode(transformed_text).replace(' ', ''))

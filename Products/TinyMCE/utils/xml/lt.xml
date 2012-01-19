@@ -1,0 +1,925 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>Laurynas Karvelis, Aurimas Fišeras</author>
+    <version major="5" minor="7" releasedate="2010-11-23" />
+    <description>Tai yra lietuvių kalbos vertimas TinyMCE redaktoriui.</description>
+  </header>
+  <language code="lt" title="lietuvių kalba" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">Ar norite naudoti tekstų redaktoriaus režimą šiam teksto redagavimo langui?</item>
+      <item name="apply">Taikyti</item>
+      <item name="insert">Įterpti</item>
+      <item name="update">Atnaujinti</item>
+      <item name="cancel">Atsisakyti</item>
+      <item name="close">Užverti</item>
+      <item name="browse">Naršyti</item>
+      <item name="class_name">Klasė</item>
+      <item name="not_set">-- Nenurodyta --</item>
+      <item name="clipboard_msg">Kopijavimas/iškirpimas/įdėjimas paspaudus šį mygtuką negalimas Mozilla ir Firefox naršyklėse.\nNukopijuoti galima paspaudus: Ctrl + C, iškirpti: Ctrl + X, įdėti: Ctrl + V.\nAr norite daugiau informacijos apie šią problemą?</item>
+      <item name="clipboard_no_support">Ši naršyklė nepalaiko šio veikimo, todėl naudokite klaviatūros sparčiuosius klavišus.</item>
+      <item name="popup_blocked">Atsiprašome, tačiau pastebėjome, kad jūsų iškylančių langų blokavimo programa išjungė langą, kuris teikia aplikacijai funkcionalumą. Turėtumėte atjungti iškylančių langų blokavimą šiam tinklalapiui, kad išnaudotumėte visas galimybes.</item>
+      <item name="invalid_data">Klaida: Blogai įvestos reikšmės, kurios pažymėtos raudonai.</item>
+      <item name="more_colors">Daugiau spalvų</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">Pusjuodis (Ctrl+B)</item>
+      <item name="italic_desc">Kursyvas (Ctrl+I)</item>
+      <item name="underline_desc">Pabrauktas (Ctrl+U)</item>
+      <item name="striketrough_desc">Perbrauktas</item>
+      <item name="bullist_desc">Nesunumeruotas sąrašas</item>
+      <item name="numlist_desc">Sunumeruotas sąrašas</item>
+      <item name="undo_desc">Atšaukti (Ctrl+Z)</item>
+      <item name="redo_desc">Grąžinti (Ctrl+Y)</item>
+      <item name="cleanup_desc">Išvalyti netvarkingą kodą</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">Stiliai</item>
+      <item name="font_size">Šrifto dydis</item>
+      <item name="fontdefault">Šrifto šeima</item>
+      <item name="block">Formatas</item>
+      <item name="paragraph">Paragrafas</item>
+      <item name="div">Div žymė</item>
+      <item name="address">Adresas</item>
+      <item name="pre">Iš anksto formatuotas</item>
+      <item name="h1">Antraštė 1</item>
+      <item name="h2">Antraštė 2</item>
+      <item name="h3">Antraštė 3</item>
+      <item name="h4">Antraštė 4</item>
+      <item name="h5">Antraštė 5</item>
+      <item name="h6">Antraštė 6</item>
+      <item name="blockquote">Citatos blokas</item>
+      <item name="code">Kodas</item>
+      <item name="samp">Kodo pavyzdys</item>
+      <item name="dt">Apibrėžimo terminas</item>
+      <item name="dd">Apibrėžimo aprašas</item>
+      <!-- Buttons -->
+      <item name="bold_desc">Pusjuodis (Ctrl+B)</item>
+      <item name="italic_desc">Kursyvas (Ctrl+I)</item>
+      <item name="underline_desc">Pabrauktas (Ctrl+U)</item>
+      <item name="striketrough_desc">Perbrauktas</item>
+      <item name="justifyleft_desc">Lygiuoti pagal kairę</item>
+      <item name="justifycenter_desc">Centruoti</item>
+      <item name="justifyright_desc">Lygiuoti pagal dešinę</item>
+      <item name="justifyfull_desc">Lygiuoti pagal abu kraštus</item>
+      <item name="bullist_desc">Nesunumeruotas sąrašas</item>
+      <item name="numlist_desc">Sunumeruotas sąrašas</item>
+      <item name="outdent_desc">Atvirkštinė įtrauka</item>
+      <item name="indent_desc">Įtrauka</item>
+      <item name="undo_desc">Atšaukti (Ctrl+Z)</item>
+      <item name="redo_desc">Grąžinti (Ctrl+Y)</item>
+      <item name="link_desc">Įterpti/redaguoti nuorodą</item>
+      <item name="unlink_desc">Pašalinti nuorodą</item>
+      <item name="image_desc">Įterpti/redaguoti paveikslėlį</item>
+      <item name="cleanup_desc">Išvalyti netvarkingą kodą</item>
+      <item name="code_desc">Redaguoti HTML išeities kodą</item>
+      <item name="sub_desc">Apatinis indeksas</item>
+      <item name="sup_desc">Viršutinis indeksas</item>
+      <item name="hr_desc">Įterpti horizontalią liniją</item>
+      <item name="removeformat_desc">Pašalinti formatavimą</item>
+      <item name="custom1_desc">Jūsų aprašas čia</item>
+      <item name="forecolor_desc">Parinkti teksto spalvą</item>
+      <item name="backcolor_desc">Parinkti fono spalvą</item>
+      <item name="charmap_desc">Įterpti nestandartinį simbolį</item>
+      <item name="visualaid_desc">Kaitalioti gaires/nematomų elementų rodymą</item>
+      <item name="anchor_desc">Įterpti/redaguoti prieraišą</item>
+      <item name="cut_desc">Iškirpti</item>
+      <item name="copy_desc">Kopijuoti</item>
+      <item name="paste_desc">Įdėti</item>
+      <item name="image_props_desc">Paveikslėlio nustatymai</item>
+      <item name="newdocument_desc">Naujas dokumentas</item>
+      <item name="help_desc">Pagalba</item>
+      <item name="blockquote_desc">Citatos blokas</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">Kopijavimas/Iškirpimas/Įdėjimas negalimas Mozilla ir Firefox naršyklėse.
+Ar norite daugiau informacijos apie šią problemą?</item>
+      <item name="path">Kelias</item>
+      <item name="newdocument">Ar tikrai norite išvalyti visą turinį?</item>
+      <item name="toolbar_focus">Peršokimas prie įrankių juostos mygtukų - Alt+Q, Peršokimas prie redaktoriaus - Alt-Z, Peršokimas prie elementų kelio - Alt-X</item>
+      <item name="more_colors">Daugiau spalvų</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width">70</item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">Apie TinyMCE</item>
+      <item name="about_general">Apie</item>
+      <item name="about_help">Pagalba</item>
+      <item name="about_license">Licencija</item>
+      <item name="about_plugins">Papildiniai</item>
+      <item name="about_plugin">Papildinys</item>
+      <item name="about_author">Autorius</item>
+      <item name="about_version">Versija</item>
+      <item name="about_loaded">Įkelti papildiniai</item>
+      <!-- Anchor -->
+      <item name="anchor_title">Įterpti/redaguoti prieraišą</item>
+      <item name="anchor_name">Prieraišo vardas</item>
+      <!-- Source -->
+      <item name="code_title">HTML išeities kodo redaktorius</item>
+      <item name="code_wordwrap">Skaidyti tekstą</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">Pasirinkti spalvą</item>
+      <item name="colorpicker_picker_tab">Parinkiklis</item>
+      <item name="colorpicker_picker_title">Spalvos parinkiklis</item>
+      <item name="colorpicker_palette_tab">Paletė</item>
+      <item name="colorpicker_palette_title">Paletės spalvos</item>
+      <item name="colorpicker_named_tab">Įvardintosios</item>
+      <item name="colorpicker_named_title">Įvardintosios spalvos</item>
+      <item name="colorpicker_color">Spalva:</item>
+      <item name="colorpicker_name">Pavadinimas:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">Pasirinkti nestandartinį simbolį</item>
+      <!-- Image -->
+      <item name="image_title">Įterpti/redaguoti paveikslėlį</item>
+      <item name="image_src">Paveikslėlio URL adresas</item>
+      <item name="image_alt">Paveikslėlio aprašas</item>
+      <item name="image_list">Paveikslėlių sąrašas</item>
+      <item name="image_border">Rėmelis</item>
+      <item name="image_dimensions">Išmatavimai</item>
+      <item name="image_vspace">Vertikalus tarpas</item>
+      <item name="image_hspace">Horizontalus tarpas</item>
+      <item name="image_align">Lygiavimas</item>
+      <item name="image_align_baseline">Pradiniame taške</item>
+      <item name="image_align_top">Viršuje</item>
+      <item name="image_align_middle">Viduryje</item>
+      <item name="image_align_bottom">Apačioje</item>
+      <item name="image_align_texttop">Teksto viršuje</item>
+      <item name="image_align_textbottom">Teksto apačioje</item>
+      <item name="image_align_left">Kairėje</item>
+      <item name="image_align_right">Dešinėje</item>
+      <!-- Link -->
+      <item name="link_title">Įterpti/redaguoti nuorodą</item>
+      <item name="link_url">Nuorodos URL adresas</item>
+      <item name="link_target">Paskirtis</item>
+      <item name="link_target_same">Atverti tame pačiame lange</item>
+      <item name="link_target_blank">Atverti naujame lange</item>
+      <item name="link_titlefield">Pavadinimas</item>
+      <item name="link_is_email">URL adresas, kurį įvedėte yra el. pašto adresas, ar norite pridėti reikalingą mailto: prefiksą?</item>
+      <item name="link_is_external">URL adresas, kurį įvedėte yra išorinė nuoroda, ar norite pridėti reikalingą http:// prefiksą?</item>
+      <item name="link_list">Nuorodų sąrašas</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">Lygiavimas</item>
+      <item name="left">Kairėje</item>
+      <item name="center">Centre</item>
+      <item name="right">Dešinėje</item>
+      <item name="full">Iš abiejų pusių</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%Y-%m-%d</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">Įterpti datą</item>
+      <item name="inserttime_desc">Įterpti laiką</item>
+      <item name="months_long">Sausis,Vasaris,Kovas,Balandis,Gegužė,Birželis,Liepa,Rugpjūtis,Rugsėjis,Spalis,Lapkritis,Gruodis</item>
+      <item name="months_short">Sau,Vas,Kov,Bal,Geg,Bir,Lie,Rugpj,Rugs,Spa,Lapkr,Gruo</item>
+      <item name="day_long">Sekmadienis,Pirmadienis,Antradienis,Trečiadienis,Ketvirtadienis,Penktadienis,Šeštadienis,Sekmadienis</item>
+      <item name="day_short">Sekm,Pirm,Antr,Treč,Ketv,Penk,Šešt,Sekm</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">Spausdinti</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">Peržiūra</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">Kryptis iš kairės į dešinę</item>
+      <item name="rtl_desc">Kryptis iš dešinės į kairę</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">Įterpti naują sluoksnį</item>
+      <item name="forward_desc">Perkelti į priekį</item>
+      <item name="backward_desc">Perkelti atgal</item>
+      <item name="absolute_desc">Perjungti absoliutų pozicionavimą</item>
+      <item name="content">Naujas sluoksnis...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">Išsaugoti</item>
+      <item name="cancel_desc">Atsisakyti visų pakeitimų</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">Įterpti jungiamojo tarpo simbolį</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">Paleisti rašybos tikrintuvę</item>
+      <item name="download">ieSpell neaptiktas. Ar norite dabar jį įdiegti?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">Horizontali linija</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">10</item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">Ilgis</item>
+      <item name="size">Aukštis</item>
+      <item name="noshade">Be šešėlio</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">Jaustukai</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">Įterpti jaustuką</item>
+      <item name="desc">Jaustukai</item>
+      <item name="cool">Jėga</item>
+      <item name="cry">Verksmas</item>
+      <item name="embarassed">Susigėdęs</item>
+      <item name="foot_in_mouth">Koja burnoje</item>
+      <item name="frown">Susiraukęs</item>
+      <item name="innocent">Nekaltas</item>
+      <item name="kiss">Bučinys</item>
+      <item name="laughing">Juokimasis</item>
+      <item name="money_mouth">Piniginga burna</item>
+      <item name="sealed">Sandarus</item>
+      <item name="smile">Šypsena</item>
+      <item name="surprised">Nustebęs</item>
+      <item name="tongue_out">Iškištas liežuvis</item>
+      <item name="undecided">Neapsisprendęs</item>
+      <item name="wink">Mirkčiojimas</item>
+      <item name="yell">Klyksmas</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">Ieškoti</item>
+      <item name="replace_desc">Ieškoti/Pakeisti</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">10</item>
+      <item name="delta_height">20</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">Ieškoti dar kartą</item>
+      <item name="notfound">Paieška baigta. Paieškos frazė nerasta.</item>
+      <item name="search_title">Ieškoti</item>
+      <item name="replace_title">Ieškoti/Pakeisti</item>
+      <item name="allreplaced">Visi paieškos frazės pasikartojimai pakeisti.</item>
+      <item name="findwhat">Ko ieškoti</item>
+      <item name="replacewith">Kuo pakeisti</item>
+      <item name="direction">Kryptis</item>
+      <item name="up">Į viršų</item>
+      <item name="down">Į apačią</item>
+      <item name="mcase">Visiškas atitikimas</item>
+      <item name="findnext">Ieškoti sek.</item>
+      <item name="replace">Pakeisti</item>
+      <item name="replaceall">Pakeisti visus</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">Įterpti/Redaguoti paveikslėlį</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">10</item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">Bendra</item>
+      <item name="tab_appearance">Išvaizda</item>
+      <item name="tab_advanced">Išplėsta</item>
+      <item name="general">Bendra</item>
+      <item name="title">Pavadinimas</item>
+      <item name="preview">Peržiūra</item>
+      <item name="constrain_proportions">Priverstinės proporcijos</item>
+      <item name="langdir">Kalbos teksto kryptis</item>
+      <item name="langcode">Kalbos kodas</item>
+      <item name="long_desc">Ilgo aprašo nuoroda</item>
+      <item name="style">Stilius</item>
+      <item name="classes">Klasės</item>
+      <item name="ltr">Iš kairės į dešinę</item>
+      <item name="rtl">Iš dešinės į kairę</item>
+      <item name="id">Id</item>
+      <item name="map">Paveikslėlio planas</item>
+      <item name="swap_image">Sukeisti paveikslėlį</item>
+      <item name="alt_image">Alternatyvus paveikslėlis</item>
+      <item name="mouseover">užvedant pele</item>
+      <item name="mouseout">nuvedant pelę</item>
+      <item name="misc">Įvairūs</item>
+      <item name="example_img">Išvaizdos peržiūros paveikslėlis</item>
+      <item name="missing_alt">Ar norite tęsti neįvedę paveikslėlio aprašo? Be aprašo jo neatpažins žmonės su negalia, tie kurie naudoja tekstines naršykles, arba tie, kurie naršo internetą išjungę paveikslėlių rodymą.</item>
+      <item name="dialog_title">Įterpti/redaguoti paveikslėlį</item>
+      <item name="src">Paveikslėlio URL adresas</item>
+      <item name="alt">Paveikslėlio aprašas</item>
+      <item name="list">Paveikslėlių sąrašas</item>
+      <item name="border">Rėmelis</item>
+      <item name="dimensions">Išmatavimai</item>
+      <item name="vspace">Vertikalus tarpas</item>
+      <item name="hspace">Horizontalus tarpas</item>
+      <item name="align">Lygiavimas</item>
+      <item name="align_baseline">Pradiniame taške</item>
+      <item name="align_top">Viršuje</item>
+      <item name="align_middle">Viduryje</item>
+      <item name="align_bottom">Apačioje</item>
+      <item name="align_texttop">Teksto viršuje</item>
+      <item name="align_textbottom">Teksto apačioje</item>
+      <item name="align_left">Kairėje</item>
+      <item name="align_right">Dešinėje</item>
+      <item name="image_list">Paveikslėlių sąrašas</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">Įterpti/Redaguoti nuorodą</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">10</item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">Įterpti/Redaguoti nuorodą</item>
+      <item name="url">Nuorodos URL adresas</item>
+      <item name="target">Paskirtis</item>
+      <item name="titlefield">Pavadinimas</item>
+      <item name="is_email">URL adresas, kurį įvedėte yra el. pašto adresas, ar norite pridėti reikalingą mailto: prefiksą?</item>
+      <item name="is_external">URL adresas, kurį įvedėte yra išorinė nuoroda, ar norite pridėti reikalingą http:// prefiksą?</item>
+      <item name="list">Nuorodų sąrašas</item>
+      <item name="general_tab">Bendra</item>
+      <item name="popup_tab">Iškylantis langas</item>
+      <item name="events_tab">Įvykiai</item>
+      <item name="advanced_tab">Išplėsta</item>
+      <item name="general_props">Bendri nustatymai</item>
+      <item name="popup_props">Iškylančio lango nustatymai</item>
+      <item name="event_props">Įvykiai</item>
+      <item name="advanced_props">Išplėstiniai nustatymai</item>
+      <item name="popup_opts">Nustatymai</item>
+      <item name="anchor_names">Prieraišai</item>
+      <item name="target_same">Atverti tame pačiame lange</item>
+      <item name="target_parent">Atverti tėviniame lange</item>
+      <item name="target_top">Atverti viršutiniame lange (pakeičia visus langus)</item>
+      <item name="target_blank">Atverti naujame lange</item>
+      <item name="popup">Javascript iškylantis langas</item>
+      <item name="popup_url">Iškylančio lango URL adresas</item>
+      <item name="popup_name">Lango vardas</item>
+      <item name="popup_return">Įterpti „return false“</item>
+      <item name="popup_scrollbars">Rodyti slankjuostes</item>
+      <item name="popup_statusbar">Rodyti būsenos juostą</item>
+      <item name="popup_toolbar">Rodyti įrankių juostą</item>
+      <item name="popup_menubar">Rodyti meniu juostą</item>
+      <item name="popup_location">Rodyti adresų juostą</item>
+      <item name="popup_resizable">Galima koreguoti lango išmatavimus</item>
+      <item name="popup_dependent">Proporcionaliai (tik Mozilla/Firefox)</item>
+      <item name="popup_size">Dydis</item>
+      <item name="popup_position">Pozicija (X/Y)</item>
+      <item name="id">Id</item>
+      <item name="style">Stilius</item>
+      <item name="classes">Klasės</item>
+      <item name="target_name">Paskirties vardas</item>
+      <item name="langdir">Kalbos kryptis</item>
+      <item name="target_langcode">Paskirties kalba</item>
+      <item name="langcode">Kalbos kodas</item>
+      <item name="encoding">Kalbos koduotė</item>
+      <item name="mime">Paskirties MIME tipas</item>
+      <item name="rel">Ryšys puslapio su paskirtimi</item>
+      <item name="rev">Ryšys paskirties su puslapiu</item>
+      <item name="tabindex">Tabuliavimo indeksas</item>
+      <item name="accesskey">Prieigos klavišas</item>
+      <item name="ltr">Iš kairės į dešinę</item>
+      <item name="rtl">Iš dešinės į kairę</item>
+      <item name="link_list">Nuorodų sąrašas</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">Citavimas</item>
+      <item name="abbr_desc">Santrumpa</item>
+      <item name="acronym_desc">Akronimas</item>
+      <item name="del_desc">Panaikinimas</item>
+      <item name="ins_desc">Įterpimas</item>
+      <item name="attribs_desc">Įterpti/Redaguoti atributus</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width">10</item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width">10</item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width">10</item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width">10</item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width">10</item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width">10</item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">Pavadinimas</item>
+      <item name="attribute_label_id">ID</item>
+      <item name="attribute_label_class">Klasė</item>
+      <item name="attribute_label_style">Stilius</item>
+      <item name="attribute_label_cite">Citata</item>
+      <item name="attribute_label_datetime">Data/Laikas</item>
+      <item name="attribute_label_langdir">Kalbos teksto kryptis</item>
+      <item name="attribute_option_ltr">Iš kairės į dešinę</item>
+      <item name="attribute_option_rtl">Iš dešinės į kairę</item>
+      <item name="attribute_label_langcode">Kalba</item>
+      <item name="attribute_label_tabindex">Tabuliavimo indeksas</item>
+      <item name="attribute_label_accesskey">Prieigos klavišas</item>
+      <item name="attribute_events_tab">Įvykiai</item>
+      <item name="attribute_attrib_tab">Atributai</item>
+      <item name="general_tab">Bendra</item>
+      <item name="attrib_tab">Atributai</item>
+      <item name="events_tab">Įvykiai</item>
+      <item name="fieldset_general_tab">Bendri nustatymai</item>
+      <item name="fieldset_attrib_tab">Elemento atributai</item>
+      <item name="fieldset_events_tab">Elemento įvykiai</item>
+      <item name="title_ins_element">Įterpimo elementas</item>
+      <item name="title_del_element">Pašalinimo elementas</item>
+      <item name="title_acronym_element">Akronimo elementas</item>
+      <item name="title_abbr_element">Santrumpos elementas</item>
+      <item name="title_cite_element">Citatos elementas</item>
+      <item name="remove">Pašalinti</item>
+      <item name="insert_date">Įterpti dabartinę datą/laiką</item>
+      <item name="option_ltr">Iš kairės į dešinę</item>
+      <item name="option_rtl">Iš dešinės į kairę</item>
+      <item name="attribs_title">Įterpti/Redaguoti atributus</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">Redaguoti CSS stilių</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">40</item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">Redaguoti CSS stilių</item>
+      <item name="apply">Taikyti</item>
+      <item name="text_tab">Tekstas</item>
+      <item name="background_tab">Fonas</item>
+      <item name="block_tab">Blokas</item>
+      <item name="box_tab">Dėžutė</item>
+      <item name="border_tab">Rėmelis</item>
+      <item name="list_tab">Sąrašas</item>
+      <item name="positioning_tab">Pozicionavimas</item>
+      <item name="text_props">Tekstas</item>
+      <item name="text_font">Šriftas</item>
+      <item name="text_size">Dydis</item>
+      <item name="text_weight">Storis</item>
+      <item name="text_style">Stilius</item>
+      <item name="text_variant">Variantas</item>
+      <item name="text_lineheight">Eilutės aukštis</item>
+      <item name="text_case">Mažosios/didžiosios raidės</item>
+      <item name="text_color">Spalva</item>
+      <item name="text_decoration">Dekoracija</item>
+      <item name="text_overline">pabraukta viršuje</item>
+      <item name="text_underline">pabraukta apačioje</item>
+      <item name="text_striketrough">perbraukta</item>
+      <item name="text_blink">mirksėjimas</item>
+      <item name="text_none">joks</item>
+      <item name="background_color">Fono spalva</item>
+      <item name="background_image">Fono paveikslėlis</item>
+      <item name="background_repeat">Kartoti</item>
+      <item name="background_attachment">Priedas</item>
+      <item name="background_hpos">Horizontali pozicija</item>
+      <item name="background_vpos">Vertikali pozicija</item>
+      <item name="block_wordspacing">Tarpai tarp žodžių</item>
+      <item name="block_letterspacing">Tarpai tarp raidžių</item>
+      <item name="block_vertical_alignment">Vertikalus lygiavimas</item>
+      <item name="block_text_align">Teksto lygiavimas</item>
+      <item name="block_text_indent">Teksto atitraukimas</item>
+      <item name="block_whitespace">Tarpai</item>
+      <item name="block_display">Rodymas</item>
+      <item name="box_width">Ilgis</item>
+      <item name="box_height">Aukštis</item>
+      <item name="box_float">Slankus</item>
+      <item name="box_clear">Išvalyti</item>
+      <item name="padding">Užpildymas</item>
+      <item name="same">Tas pats visiems</item>
+      <item name="top">Viršuje</item>
+      <item name="right">Dešinėje</item>
+      <item name="bottom">Apačioje</item>
+      <item name="left">Kairėje</item>
+      <item name="margin">Paraštė</item>
+      <item name="style">Stilius</item>
+      <item name="width">Ilgis</item>
+      <item name="height">Aukštis</item>
+      <item name="color">Spalva</item>
+      <item name="list_type">Tipas</item>
+      <item name="bullet_image">Ženklelio paveikslėlis</item>
+      <item name="position">Pozicija</item>
+      <item name="positioning_type">Tipas</item>
+      <item name="visibility">Matomumas</item>
+      <item name="zindex">Z-indeksas</item>
+      <item name="overflow">Perpildymas</item>
+      <item name="placement">Talpinimas</item>
+      <item name="clip">Įrašas</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">Įdėti kaip paprastą tekstą</item>
+      <item name="paste_word_desc">Įdėti iš Word</item>
+      <item name="selectall_desc">Viską pažymėti</item>
+      <item name="plaintext_mode_sticky">Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode.</item>
+      <item name="plaintext_mode">Paste is now in plain text mode. Click again to toggle back to regular paste mode.</item>
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">Naudokite CTRL+V tekstui įdėti į šį langą.</item>
+      <item name="text_linebreaks">Palikti eilučių lūžius</item>
+      <item name="word_title">Naudokite CTRL+V tekstui įdėti į šį langą.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">Įterpti/Redaguoti lentelę</item>
+      <item name="row_before_desc">Įterpti eilutę prieš</item>
+      <item name="row_after_desc">Įterpti eilutę po</item>
+      <item name="delete_row_desc">Šalinti eilutę</item>
+      <item name="col_before_desc">Įterpti stulpelį prieš</item>
+      <item name="col_after_desc">Įterpti stulpelį po</item>
+      <item name="delete_col_desc">Šalinti stulpelį</item>
+      <item name="split_cells_desc">Skaidyti sulietus lentelės langelius</item>
+      <item name="merge_cells_desc">Sujungti lentelės langelius</item>
+      <item name="row_desc">Lentelės eilutės nustatymai</item>
+      <item name="cell_desc">Lentelės langelio nustatymai</item>
+      <item name="props_desc">Lentelės nustatymai</item>
+      <item name="paste_row_before_desc">Įdėti lentelės eilutę prieš</item>
+      <item name="paste_row_after_desc">Įdėti lentelės eilutę po</item>
+      <item name="cut_row_desc">Iškirpti lentelės eilutę</item>
+      <item name="copy_row_desc">Kopijuoti lentelės eilutę</item>
+      <item name="del">Šalinti lentelę</item>
+      <item name="row">Eilutė</item>
+      <item name="col">Stulpelis</item>
+      <item name="cell">Langelis</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width">10</item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width">10</item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width">10</item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width">10</item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">Bendra</item>
+      <item name="advanced_tab">Išplėsta</item>
+      <item name="general_props">Bendri nustatymai</item>
+      <item name="advanced_props">Išplėstiniai nustatymai</item>
+      <item name="rowtype">Eilutė lentelės dalyje</item>
+      <item name="title">Įterpti/modifikuoti lentelę</item>
+      <item name="width">Ilgis</item>
+      <item name="height">Aukštis</item>
+      <item name="cols">Stulpeliai</item>
+      <item name="rows">Eilutės</item>
+      <item name="cellspacing">Tarpas tarp langelių</item>
+      <item name="cellpadding">Tarpas langelio viduje</item>
+      <item name="border">Rėmelis</item>
+      <item name="align">Lygiavimas</item>
+      <item name="align_default">Standartinis</item>
+      <item name="align_left">Lygiuoti kairėje</item>
+      <item name="align_right">Lygiuoti dešinėje</item>
+      <item name="align_middle">Centruoti</item>
+      <item name="row_title">Lentelės eilutės nustatymai</item>
+      <item name="cell_title">Lentelės langelių nustatymai</item>
+      <item name="cell_type">Langelio tipas</item>
+      <item name="valign">Vertikalus lygiavimas</item>
+      <item name="align_top">Viršuje</item>
+      <item name="align_bottom">Apačioje</item>
+      <item name="bordercolor">Rėmelio spalva</item>
+      <item name="bgcolor">Fono spalva</item>
+      <item name="merge_cells_title">Sujungti lentelės langelius</item>
+      <item name="id">Id</item>
+      <item name="style">Stilius</item>
+      <item name="langdir">Kalbos kryptis</item>
+      <item name="langcode">Kalbos kodas</item>
+      <item name="mime">Paskirties MIME tipas</item>
+      <item name="ltr">Iš kairės į dešinę</item>
+      <item name="rtl">Iš dešinės į kairę</item>
+      <item name="bgimage">Fono paveikslėlis</item>
+      <item name="summary">Apibendrinimas</item>
+      <item name="td">Duomenys</item>
+      <item name="th">Antraštė</item>
+      <item name="cell_cell">Atnaujinti dabartinį langelį</item>
+      <item name="cell_row">Atnaujinti visus eilutės langelius</item>
+      <item name="cell_all">Atnaujinti visus lentelės langelius</item>
+      <item name="row_row">Atnaujinti dabartinę eilutę</item>
+      <item name="row_odd">Atnaujinti nelygines lentelės eilutes</item>
+      <item name="row_even">Atnaujinti lygines lentelės eilutes</item>
+      <item name="row_all">Atnaujinti visas lentelės eilutes</item>
+      <item name="thead">Lentelės viršus</item>
+      <item name="tbody">Lentelės vidus</item>
+      <item name="tfoot">Lentelės apačia</item>
+      <item name="scope">Galiojimo sritis</item>
+      <item name="rowgroup">Eilučių grupė</item>
+      <item name="colgroup">Stulpelių grupė</item>
+      <item name="col_limit">Viršijote didžiausią ({$cols}) stulpelių kiekį.</item>
+      <item name="row_limit">Viršijote didžiausią ({$rows}) eilučių kiekį.</item>
+      <item name="cell_limit">Viršijote didžiausią ({$cells}) langelių kiekį.</item>
+      <item name="missing_scope">Ar norite tęsti nenurodę galiojimo srities šiam lentelės viršutiniam langeliui. Be nurodymo, kai kuriems naudotojams su negalia gali būti sunku suprasti lentelėje atvaizduojamų duomenų turinį.</item>
+      <item name="caption">Lentelės antraštė</item>
+      <item name="frame">Rėmelis</item>
+      <item name="frame_none">joks</item>
+      <item name="frame_groups">grupės</item>
+      <item name="frame_rows">eilutės</item>
+      <item name="frame_cols">stulpeliai</item>
+      <item name="frame_all">visi</item>
+      <item name="rules">Taisyklės</item>
+      <item name="rules_void">negaliojantis</item>
+      <item name="rules_above">viršutinis</item>
+      <item name="rules_below">apatinis</item>
+      <item name="rules_hsides">hor. pusės</item>
+      <item name="rules_lhs">lhs</item>
+      <item name="rules_rhs">rhs</item>
+      <item name="rules_vsides">vert. pusės</item>
+      <item name="rules_box">dėžutė</item>
+      <item name="rules_border">rėmelis</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">Visi pakeitimai bus prarasti, jei išeisite iš šio puslapio.</item>
+      <item name="restore_content">Atstatyti automatiškai išsaugotą turinį.</item>
+      <item name="warning_message">Jei atstatysite išsaugotą turinį, prarasite esamą turinį redaktoriaus lange.\n\nAr tikrai norite atstatyti išsaugotą turinį?</item>
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">Perjungti viso ekrano režimą</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">Įterpti/redaguoti integruotą daugialypę terpę</item>
+      <item name="edit">Redaguoti integruotą daugialypę terpę</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">10</item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">Įterpti/redaguoti integruotą daugialypę terpę</item>
+      <item name="general">Bendra</item>
+      <item name="advanced">Išplėsta</item>
+      <item name="file">Failas/URL</item>
+      <item name="list">Sąrašas</item>
+      <item name="size">Išmatavimai</item>
+      <item name="preview">Peržiūra</item>
+      <item name="constrain_proportions">Priverstinės proporcijos</item>
+      <item name="type">Tipas</item>
+      <item name="id">Id</item>
+      <item name="name">Vardas</item>
+      <item name="class_name">Klasė</item>
+      <item name="vspace">Vertikalus tarpas</item>
+      <item name="hspace">Horizontalus tarpas</item>
+      <item name="play">Automatinis paleidimas</item>
+      <item name="loop">Kartoti</item>
+      <item name="menu">Rodyti meniu</item>
+      <item name="quality">Kokybė</item>
+      <item name="scale">Mastelis</item>
+      <item name="align">Lygiavimas</item>
+      <item name="salign">S-lygiavimas</item>
+      <item name="wmode">W-režimas</item>
+      <item name="bgcolor">Fono spalva</item>
+      <item name="base">Bazė</item>
+      <item name="flashvars">Flash kintamieji</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">AutoHREF</item>
+      <item name="cache">Laikinoji talpykla</item>
+      <item name="hidden">Paslėpta</item>
+      <item name="controller">Valdiklis</item>
+      <item name="kioskmode">Kiosko režimas</item>
+      <item name="playeveryframe">Paleisti kiekvieną kadrą</item>
+      <item name="targetcache">Paskirties laikinoji talpykla</item>
+      <item name="correction">Jokių korekcijų</item>
+      <item name="enablejavascript">Įgalinti JavaScript</item>
+      <item name="starttime">Pradžios laikas</item>
+      <item name="endtime">Pabaigos laikas</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">Dusinimo greitis</item>
+      <item name="target">Paskirtis</item>
+      <item name="volume">Garsis</item>
+      <item name="autostart">Automatinis paleidimas</item>
+      <item name="enabled">Įjungta</item>
+      <item name="fullscreen">Viso ekrano režimas</item>
+      <item name="invokeurls">Iškviesti URL adresus</item>
+      <item name="mute">Nutildyti</item>
+      <item name="stretchtofit">Ištempti iki atitikimo</item>
+      <item name="windowlessvideo">Vaizdas be lango</item>
+      <item name="balance">Balansas</item>
+      <item name="baseurl">Pradžios URL adresas</item>
+      <item name="captioningid">Antraštės id</item>
+      <item name="currentmarker">Dabartinis žymeklis</item>
+      <item name="currentposition">Dabartinė pozicija</item>
+      <item name="defaultframe">Numatytas kadras</item>
+      <item name="playcount">Grojimo kartai</item>
+      <item name="rate">Dažnis</item>
+      <item name="uimode">UI režimas</item>
+      <item name="flash_options">Flash nustatymai</item>
+      <item name="qt_options">Quicktime nustatymai</item>
+      <item name="wmp_options">Windows media player nustatymai</item>
+      <item name="rmp_options">Real media player nustatymai</item>
+      <item name="shockwave_options">Shockwave nustatymai</item>
+      <item name="autogotourl">Automatinis ėjimas URL adresu</item>
+      <item name="center">Centre</item>
+      <item name="imagestatus">Paveikslėlio būsena</item>
+      <item name="maintainaspect">Išlaikyti aspektą</item>
+      <item name="nojava">Be Java</item>
+      <item name="prefetch">Išankstinis duom. išrinkimas</item>
+      <item name="shuffle">Atsitiktinis maišymasis</item>
+      <item name="console">Konsolė</item>
+      <item name="numloop">Ciklų kiekis</item>
+      <item name="controls">Valdikliai</item>
+      <item name="scriptcallbacks">Scenarijaus atgalinis atsakas</item>
+      <item name="swstretchstyle">Ištempti stilių</item>
+      <item name="swstretchhalign">Ištempti H-lygiavimą</item>
+      <item name="swstretchvalign">Ištempti V-lygiavimą</item>
+      <item name="sound">Garsas</item>
+      <item name="progress">Progresas</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn">Transliuojami rtsp ištekliai turėtų būti pridėti prie QT Src lauko „Papildomų nustatymų“ kortelėje.\nTaip pat reiktų pridėti ir netransliuojamąją Src lauko versiją.</item>
+      <item name="align_top">Viršuje</item>
+      <item name="align_right">Dešinėje</item>
+      <item name="align_bottom">Apačioje</item>
+      <item name="align_left">Kairėje</item>
+      <item name="align_center">Centre</item>
+      <item name="align_top_left">Viršuje, kairėje</item>
+      <item name="align_top_right">Viršuje, dešinėje</item>
+      <item name="align_bottom_left">Apačioje, kairėje</item>
+      <item name="align_bottom_right">Apačioje, dešinėje</item>
+      <item name="flv_options">Flash vaizdo nustatymai</item>
+      <item name="flv_scalemode">Mastelio režimas</item>
+      <item name="flv_buffer">Buferis</item>
+      <item name="flv_startimage">Pradžios paveikslėlis</item>
+      <item name="flv_starttime">Pradžios laikas</item>
+      <item name="flv_defaultvolume">Pradinis garsis</item>
+      <item name="flv_hiddengui">Paslėpta grafinė sąsaja</item>
+      <item name="flv_autostart">Auto grojimas</item>
+      <item name="flv_loop">Kartoti</item>
+      <item name="flv_showscalemodes">Rodyti mastelio režimus</item>
+      <item name="flv_smoothvideo">Tolygus vaizdas</item>
+      <item name="flv_jscallback">JS atgalinis atsakas</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">Dokumento nustatymai</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">10</item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Dokumento nustatymai</item>
+      <item name="meta_tab">Bendra</item>
+      <item name="appearance_tab">Išvaizda</item>
+      <item name="advanced_tab">Išplėsta</item>
+      <item name="meta_props">Meta informacija</item>
+      <item name="langprops">Kalba ir koduotė</item>
+      <item name="meta_title">Pavadinimas</item>
+      <item name="meta_keywords">Raktažodžiai</item>
+      <item name="meta_description">Aprašas</item>
+      <item name="meta_robots">Robotai</item>
+      <item name="doctypes">Dokumento tipas</item>
+      <item name="langcode">Kalbos kodas</item>
+      <item name="langdir">Kalbos kryptis</item>
+      <item name="ltr">Iš kairės į dešinę</item>
+      <item name="rtl">Iš dešinės į kairę</item>
+      <item name="xml_pi">XML deklaracijos</item>
+      <item name="encoding">Simbolių koduotė</item>
+      <item name="appearance_bgprops">Fono nustatymai</item>
+      <item name="appearance_marginprops">Kūno paraštės</item>
+      <item name="appearance_linkprops">Nuorodų spalvos</item>
+      <item name="appearance_textprops">Teksto nustatymai</item>
+      <item name="bgcolor">Fono spalva</item>
+      <item name="bgimage">Fono paveikslėlis</item>
+      <item name="left_margin">Kairė paraštė</item>
+      <item name="right_margin">Dešinė paraštė</item>
+      <item name="top_margin">Viršutinė paraštė</item>
+      <item name="bottom_margin">Apatinė paraštė</item>
+      <item name="text_color">Teksto spalva</item>
+      <item name="font_size">Šrifto dydis</item>
+      <item name="font_face">Šriftas</item>
+      <item name="link_color">Nuorodos spalva</item>
+      <item name="hover_color">Užvedus pele spalva</item>
+      <item name="visited_color">Aplankytos spalva</item>
+      <item name="active_color">Aktyvios spalva</item>
+      <item name="textcolor">Spalva</item>
+      <item name="fontsize">Šrifto dydis</item>
+      <item name="fontface">Šrifto šeima</item>
+      <item name="meta_index_follow">Indeksuoti ir sekti nuorodomis</item>
+      <item name="meta_index_nofollow">Indeksuoti ir nesekti nuorodomis</item>
+      <item name="meta_noindex_follow">Neindeksuoti, bet sekti nuorodomis</item>
+      <item name="meta_noindex_nofollow">Neindeksuoti ir nesekti nuorodomis</item>
+      <item name="appearance_style">Stilių lapo ir stiliaus nustatymai</item>
+      <item name="stylesheet">Stilių lapas</item>
+      <item name="style">Stilius</item>
+      <item name="author">Autorius</item>
+      <item name="copyright">Autoriaus teisės</item>
+      <item name="add">Pridėti naują elementą</item>
+      <item name="remove">Pašalinti pažymėtą elementą</item>
+      <item name="moveup">Perkelti pažymėtą elementą į viršų</item>
+      <item name="movedown">Perkelti pažymėtą elementą į apačią</item>
+      <item name="head_elements">Antraštės elementai</item>
+      <item name="info">Informacija</item>
+      <item name="add_title">Pavadinimo elementas</item>
+      <item name="add_meta">Meta elementas</item>
+      <item name="add_script">Skripto elementas</item>
+      <item name="add_style">Stiliaus elementas</item>
+      <item name="add_link">Nuorodos elementas</item>
+      <item name="add_base">Bazinis elementas</item>
+      <item name="add_comment">Komentaro mazgas</item>
+      <item name="title_element">Pavadinimo elementas</item>
+      <item name="script_element">Skripto elementas</item>
+      <item name="style_element">Stiliaus elementas</item>
+      <item name="base_element">Bazinis elementas</item>
+      <item name="link_element">Nuorodos elementas</item>
+      <item name="meta_element">Meta elementas</item>
+      <item name="comment_element">Komentaras</item>
+      <item name="src">Šaltinis</item>
+      <item name="language">Kalba</item>
+      <item name="href">Href</item>
+      <item name="target">Paskirtis</item>
+      <item name="type">Tipas</item>
+      <item name="charset">Koduotė</item>
+      <item name="defer">Atidėti</item>
+      <item name="media">Medija</item>
+      <item name="properties">Nustatymai</item>
+      <item name="name">Vardas</item>
+      <item name="value">Reikšmė</item>
+      <item name="content">Turinys</item>
+      <item name="rel">Laida</item>
+      <item name="rev">Pataisa</item>
+      <item name="hreflang">Href kalba</item>
+      <item name="general_props">Bendra</item>
+      <item name="advanced_props">Išplėsta</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Įterpti numatytą šablono turinį</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">Šablonai</item>
+      <item name="label">Šablonas</item>
+      <item name="desc_label">Aprašas</item>
+      <item name="desc">Įterpti numatytą šablono turinį</item>
+      <item name="select">Pasirinkti šabloną</item>
+      <item name="preview">Peržiūra</item>
+      <item name="warning">Perspėjimas: Šablono pakeitimas kitu gali sukelti duomenų praradimą.</item>
+      <item name="mdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="cdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="months_long">Sausis,Vasaris,Kovas,Balandis,Gegužė,Birželis,Liepa,Rugpjūtis,Rugsėjis,Spalis,Lapkritis,Gruodis</item>
+      <item name="months_short">Sau,Vas,Kov,Bal,Geg,Bir,Lie,Rugpj,Rugs,Spa,Lapkr,Gruo</item>
+      <item name="day_long">Sekmadienis,Pirmadienis,Antradienis,Trečiadienis,Ketvirtadienis,Penktadienis,Šeštadienis,Sekmadienis</item>
+      <item name="day_short">Sekm,Pirm,Antr,Treč,Ketv,Penk,Šešt,Sekm</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Vizualiniai valdymo simboliai įjungti/išjungti.</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">Perjungti rašybos tikrintuvę</item>
+      <item name="menu">Rašybos tikrintuvės nustatymai</item>
+      <item name="ignore_word">Ignoruoti žodį</item>
+      <item name="ignore_words">Ignoruoti viską</item>
+      <item name="langs">Kalbos</item>
+      <item name="wait">Prašome palaukti...</item>
+      <item name="sug">Pasiūlymai</item>
+      <item name="no_sug">Pasiūlymų nerasta</item>
+      <item name="no_mpell">Klaidų nerasta.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">Įterpti puslapio pabaigos žymę.</item>
+    </group>
+    <group target="advlist">
+      <item name="types">Tipai</item>
+      <item name="def">Numatytasis</item>
+      <item name="lower_alpha">Mažosiomis raidėmis</item>
+      <item name="lower_greek">Mažaisiais graikų</item>
+      <item name="lower_roman">Mažaisiais romėnų</item>
+      <item name="upper_alpha">Didžiosiomis raidėmis</item>
+      <item name="upper_roman">Didžiaisiais romėnų</item>
+      <item name="circle">Apskritimas</item>
+      <item name="disc">Diskas</item>
+      <item name="square">Kvadratas</item>
+    </group>
+  </language>
+</language-pack>

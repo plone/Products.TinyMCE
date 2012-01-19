@@ -4,8 +4,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-06-21 13:31+0000\n"
-"PO-Revision-Date: 2011-08-02 15:55+0300\n"
+"POT-Creation-Date: 2011-03-17 11:01+0000\n"
+"PO-Revision-Date: 2010-08-30 15:46+0300\n"
 "Last-Translator: Olha <olha.pelishok@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -17,31 +17,31 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone.tinymce\n"
 
-#: ../utility.py:624
+#: ../utility.py:616
 msgid "(remove style)"
 msgstr "(видалити стиль)"
 
-#: ../interfaces/utility.py:307
+#: ../interfaces/utility.py:305
 msgid "After the deadline (FLOSS)"
 msgstr ""
 
-#: ../interfaces/utility.py:158
+#: ../interfaces/utility.py:156
 msgid "Align center"
 msgstr "Вирівнювання по центру"
 
-#: ../interfaces/utility.py:166
+#: ../interfaces/utility.py:164
 msgid "Align full"
 msgstr "Вирівнювання по ширині"
 
-#: ../interfaces/utility.py:154
+#: ../interfaces/utility.py:152
 msgid "Align left"
 msgstr "Вирівнювання по лівому краю"
 
-#: ../interfaces/utility.py:162
+#: ../interfaces/utility.py:160
 msgid "Align right"
 msgstr "Вирівнювання по правому краю"
 
-#: ../interfaces/utility.py:357
+#: ../interfaces/utility.py:355
 msgid "Allow captioned images"
 msgstr "Дозволити підпис зображень"
 
@@ -49,28 +49,27 @@ msgstr "Дозволити підпис зображень"
 msgid "Anchors"
 msgstr "Якорі"
 
-#: ../interfaces/utility.py:324
+#: ../interfaces/utility.py:322
 msgid "AtD Error types to show"
 msgstr ""
 
-#: ../interfaces/utility.py:313
+#: ../interfaces/utility.py:311
 msgid "AtD Ignore strings"
 msgstr ""
 
-#: ../interfaces/utility.py:337
+#: ../interfaces/utility.py:335
 msgid "AtD Service URL"
 msgstr ""
 
-#: ../interfaces/utility.py:38
-#, fuzzy
+#: ../interfaces/utility.py:37
 msgid "Auto detect from content language"
-msgstr "Автоматично визначати з мови вмісту"
+msgstr ""
 
-#: ../interfaces/utility.py:150
+#: ../interfaces/utility.py:148
 msgid "Backcolor"
 msgstr "Колір фону"
 
-#: ../interfaces/utility.py:122
+#: ../interfaces/utility.py:120
 msgid "Bold"
 msgstr "Напівжирний"
 
@@ -81,61 +80,57 @@ msgstr ""
 msgid "Caption"
 msgstr "Підпис"
 
-#: ../interfaces/utility.py:49
+#: ../interfaces/utility.py:48
 msgid "Choose the CSS used in WYSIWYG Editor Area"
 msgstr "Виберіть CSS, який використовуватиметься у вікні редактора"
 
 msgid "Circle"
 msgstr "Коло"
 
-#: ../interfaces/utility.py:262
+#: ../interfaces/utility.py:260
 msgid "Cleanup messy code"
 msgstr "Очистити брудний код"
 
 msgid "Clear floats"
 msgstr "Очистити стилі"
 
-#: ../interfaces/utility.py:372
+#: ../interfaces/utility.py:370
 msgid "Contains Anchors"
 msgstr "Містить якорі"
 
-#: ../interfaces/utility.py:367
+#: ../interfaces/utility.py:365
 msgid "Contains Objects"
 msgstr "Містить об'єкти"
 
-#: ../interfaces/utility.py:86
+#: ../interfaces/utility.py:84
 msgid "Copy"
 msgstr "Копіювати"
-
-#: ../adapters/Upload.py:127
-msgid "Could not upload the file"
-msgstr "Не можливо завантажити файл"
 
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:30
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:31
 msgid "Current Folder"
 msgstr "Поточна тека"
 
-#: ../interfaces/utility.py:387
+#: ../interfaces/utility.py:385
 msgid "Custom Plugins"
 msgstr "Спеціальні плагіни"
 
-#: ../interfaces/utility.py:286
+#: ../interfaces/utility.py:284
 msgid "Custom Toolbar Buttons"
 msgstr "Спеціальні кнопки панелі інструментів"
 
-#: ../interfaces/utility.py:82
+#: ../interfaces/utility.py:80
 msgid "Cut"
 msgstr "Вирізати"
 
-#: ../interfaces/utility.py:303
+#: ../interfaces/utility.py:301
 msgid "Default browser spellchecker"
 msgstr ""
 
 msgid "Definition description"
 msgstr "Опис визначення"
 
-#: ../interfaces/utility.py:178
+#: ../interfaces/utility.py:176
 msgid "Definition list"
 msgstr "Список визначень"
 
@@ -161,74 +156,74 @@ msgstr ""
 msgid "E-mail"
 msgstr "Електронна пошта"
 
-#: ../interfaces/utility.py:278
+#: ../interfaces/utility.py:276
 msgid "Edit HTML Source"
 msgstr "Редагувати HTML код"
 
-#: ../interfaces/utility.py:28
+#: ../interfaces/utility.py:27
 msgid "Editor height"
 msgstr "Висота редактора"
 
-#: ../interfaces/utility.py:23
+#: ../interfaces/utility.py:22
 msgid "Editor width"
 msgstr "Ширина редактора"
 
-#: ../interfaces/utility.py:234
+#: ../interfaces/utility.py:232
 msgid "Emotions"
 msgstr "Смайли"
 
-#: ../interfaces/utility.py:18
+#: ../interfaces/utility.py:17
 msgid "Enable auto resizing of the editor window."
 msgstr "Увімкнути можливість автоматичної зміни розміру вікна редактора."
 
-#: ../interfaces/utility.py:44
+#: ../interfaces/utility.py:43
 msgid "Enable contextmenu."
 msgstr "Увімкнути контекстне меню."
 
-#: ../interfaces/utility.py:13
+#: ../interfaces/utility.py:12
 msgid "Enable resizing the editor window."
 msgstr "Увімкнути можливість зміни розміру вікна редактора."
 
-#: ../interfaces/utility.py:378
+#: ../interfaces/utility.py:376
 msgid "Enter a list of content types which can be linked. Format is one contenttype per line."
 msgstr "Введіть перелік типів вмісту, до яких можна зробити посилання, кожен з нового рядка."
 
-#: ../interfaces/utility.py:383
+#: ../interfaces/utility.py:381
 msgid "Enter a list of content types which can be used as images. Format is one contenttype per line."
 msgstr "Введіть перелік типів вмісту, які можна використати як зображення, кожен з нового рядка."
 
-#: ../interfaces/utility.py:373
+#: ../interfaces/utility.py:371
 msgid "Enter a list of content types which can contain anchors. Format is one contenttype per line."
 msgstr "Введіть перелік типів вмісту, які можуть містити якорі, кожен з нового рядка."
 
-#: ../interfaces/utility.py:368
+#: ../interfaces/utility.py:366
 msgid "Enter a list of content types which can contain other objects. Format is one contenttype per line."
 msgstr "Введіть перелік типів вмісту, які можуть містити інші об'єкти, кожен з нового рядка."
 
-#: ../interfaces/utility.py:388
+#: ../interfaces/utility.py:386
 msgid "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
 msgstr "Введіть перелік додаткових плагінів, які буде завантажено в редактор, у форматі ім'я плагіна або ім'я плагіна|розміщення, по одному в рядку."
 
-#: ../interfaces/utility.py:287
+#: ../interfaces/utility.py:285
 msgid "Enter a list of custom toolbar buttons which will be loaded in the editor, one per line."
 msgstr "Введіть перелік спеціальних кнопок, які буде завантажено в панель інструментів редактора, по одній в кожному рядку."
 
-#: ../interfaces/utility.py:55
+#: ../interfaces/utility.py:54
 msgid "Enter a list of styles to appear in the style pulldown. Format is title|tag or title|tag|className, one per line."
 msgstr "Введіть список стилів, які з'являться у меню Стилів. Формат вводу: назва|теґ або назва|теґ|ім'яКласу, кожен з нового рядка."
 
-#: ../interfaces/utility.py:60
+#: ../interfaces/utility.py:59
 msgid "Enter a list of styles to appear in the table style pulldown. Format is title|class, one per line."
 msgstr "Введіть список стилів, які з'являться у меню стилів таблиці. Формат вводу: назва|клас, кожен з нового рядка."
 
-#: ../interfaces/utility.py:392
+#: ../interfaces/utility.py:390
 msgid "Entity encoding"
 msgstr ""
 
 msgid "Even row"
 msgstr "Парний рядок"
 
-#: ../interfaces/utility.py:73
+#: ../interfaces/utility.py:71
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:41
 msgid "External"
 msgstr "Зовнішній"
@@ -253,15 +248,15 @@ msgstr "Лише рядки сітки"
 msgid "File"
 msgstr "Файл"
 
-#: ../interfaces/utility.py:110
+#: ../interfaces/utility.py:108
 msgid "Find"
 msgstr "Знайти"
 
-#: ../interfaces/utility.py:114
+#: ../interfaces/utility.py:112
 msgid "Find/Replace"
 msgstr "Знайти/Замінити"
 
-#: ../interfaces/utility.py:146
+#: ../interfaces/utility.py:144
 msgid "Forecolor"
 msgstr "Колір тексту"
 
@@ -279,15 +274,15 @@ msgstr "Виділити"
 msgid "Home"
 msgstr "Головна"
 
-#: ../interfaces/utility.py:382
+#: ../interfaces/utility.py:380
 msgid "Image Objects"
 msgstr "Об'єкти-зображення"
 
-#: ../interfaces/utility.py:358
+#: ../interfaces/utility.py:356
 msgid "Images will be automatically captioned."
 msgstr "Зображення будуть автоматично отримувати підписи."
 
-#: ../interfaces/utility.py:186
+#: ../interfaces/utility.py:184
 msgid "Indent"
 msgstr "Збільшити відступ"
 
@@ -295,51 +290,51 @@ msgstr "Збільшити відступ"
 msgid "Inline"
 msgstr "Всередині"
 
-#: ../interfaces/utility.py:222
+#: ../interfaces/utility.py:220
 msgid "Insert advanced horizontal ruler"
 msgstr "Вставити розширений горизонтальний роздільник"
 
-#: ../interfaces/utility.py:214
+#: ../interfaces/utility.py:212
 msgid "Insert custom character"
 msgstr "Вставити спеціальні символи"
 
-#: ../interfaces/utility.py:226
+#: ../interfaces/utility.py:224
 msgid "Insert date"
 msgstr "Вставити дату"
 
-#: ../interfaces/utility.py:218
+#: ../interfaces/utility.py:216
 msgid "Insert horizontal ruler"
 msgstr "Вставити горизонтальний роздільник"
 
-#: ../interfaces/utility.py:238
+#: ../interfaces/utility.py:236
 msgid "Insert non-breaking space character"
 msgstr "Вставити нерозривний проміжок"
 
-#: ../interfaces/utility.py:242
+#: ../interfaces/utility.py:240
 msgid "Insert page break"
 msgstr "Вставити роздільник сторінок "
 
-#: ../interfaces/utility.py:230
+#: ../interfaces/utility.py:228
 msgid "Insert time"
 msgstr "Вставити час"
 
-#: ../interfaces/utility.py:202
+#: ../interfaces/utility.py:200
 msgid "Insert/edit anchor"
 msgstr "Вставити/редагувати якір"
 
-#: ../interfaces/utility.py:274
+#: ../interfaces/utility.py:272
 msgid "Insert/edit attributes"
 msgstr "Вставити/редагувати атрибути"
 
-#: ../interfaces/utility.py:206
+#: ../interfaces/utility.py:204
 msgid "Insert/edit image"
 msgstr "Вставити/редагувати зображення"
 
-#: ../interfaces/utility.py:194
+#: ../interfaces/utility.py:192
 msgid "Insert/edit link"
 msgstr "Вставити/редагувати посилання"
 
-#: ../interfaces/utility.py:210
+#: ../interfaces/utility.py:208
 msgid "Insert/edit media"
 msgstr "Вставити/редагувати медіа об'єкт"
 
@@ -350,19 +345,19 @@ msgstr "Внутрішнє посилання"
 msgid "Invisible grid"
 msgstr "Невидима сітка"
 
-#: ../interfaces/utility.py:126
+#: ../interfaces/utility.py:124
 msgid "Italic"
 msgstr "Курсив"
 
-#: ../browser/controlpanel.py:21
+#: ../browser/controlpanel.py:22
 msgid "Layout"
 msgstr "Вигляд"
 
-#: ../interfaces/utility.py:39
+#: ../interfaces/utility.py:38
 msgid "Left to right"
 msgstr "Зліва направо"
 
-#: ../browser/controlpanel.py:29
+#: ../browser/controlpanel.py:30
 #: ../skins/tinymce/plugins/ploneimage/ploneimage.htm.pt:21
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:22
 msgid "Libraries"
@@ -372,19 +367,19 @@ msgstr "Бібліотеки"
 msgid "Link to anchor"
 msgstr "Посилання на якір"
 
-#: ../interfaces/utility.py:352
+#: ../interfaces/utility.py:350
 msgid "Link using UIDs"
 msgstr "Створювати посилання, використовуючи UIDs"
 
-#: ../interfaces/utility.py:377
+#: ../interfaces/utility.py:375
 msgid "Linkable Objects"
 msgstr "Об'єкти-посилання"
 
-#: ../interfaces/utility.py:353
+#: ../interfaces/utility.py:351
 msgid "Links to objects on this site can use unique object ids so that the links remain valid even if the target object is renamed or moved elsewhere on the site."
 msgstr "Посилання до об'єктів на сайті можуть містити унікальні id, які допоможуть зберегти посилання робочими у випадку, якщо ці об'єкти буде перейменовано чи перенесено в інше місце сайту."
 
-#: ../utility.py:631
+#: ../utility.py:623
 msgid "Lists"
 msgstr "Списки"
 
@@ -401,101 +396,97 @@ msgstr "Маленькі римські букви"
 msgid "Mail"
 msgstr "Електронна пошта"
 
-#: ../interfaces/utility.py:395
+#: ../interfaces/utility.py:393
 msgid "Named"
 msgstr ""
 
-#: ../utility.py:634
+#: ../utility.py:626
 msgid "No anchors in this page"
 msgstr "На цій сторінці нема якорів"
 
-#: ../utility.py:633
+#: ../utility.py:625
 msgid "No items in this folder"
 msgstr "В цій теці нема жодного об'єкта."
 
-#: ../utility.py:625
+#: ../utility.py:617
 msgid "Normal paragraph"
 msgstr "Звичайний параграф"
-
-#: ../adapters/Upload.py:88
-msgid "Not allowed to upload a file of this type to this folder"
-msgstr "Не дозволено завантажувати файл такого типу до цієї теки"
 
 msgid "Numbers"
 msgstr "Цифри"
 
-#: ../interfaces/utility.py:395
+#: ../interfaces/utility.py:393
 msgid "Numeric"
 msgstr "Числовий"
 
 msgid "Odd row"
 msgstr "Непарний рядок"
 
-#: ../interfaces/utility.py:174
+#: ../interfaces/utility.py:172
 msgid "Ordered list"
 msgstr "Пронумерований  список"
 
-#: ../interfaces/utility.py:182
+#: ../interfaces/utility.py:180
 msgid "Outdent"
 msgstr "Зменшити відступ"
 
 msgid "Page break (print only)"
 msgstr "Роздільник сторінок (для друку)"
 
-#: ../interfaces/utility.py:90
+#: ../interfaces/utility.py:88
 msgid "Paste"
 msgstr "Вставити"
 
-#: ../interfaces/utility.py:94
+#: ../interfaces/utility.py:92
 msgid "Paste as Plain Text"
 msgstr "Вставити простим текстом"
 
-#: ../interfaces/utility.py:98
+#: ../interfaces/utility.py:96
 msgid "Paste from Word"
 msgstr "Вставити з Word"
 
-#: ../utility.py:626
+#: ../utility.py:618
 msgid "Plain cell"
 msgstr "Звичайна комірка"
 
-#: ../interfaces/utility.py:250
+#: ../interfaces/utility.py:248
 #: ../skins/tinymce/plugins/plonelink/plonelink.htm.pt:102
 msgid "Preview"
 msgstr "Перегляд"
 
-#: ../interfaces/utility.py:246
-#: ../utility.py:632
+#: ../interfaces/utility.py:244
+#: ../utility.py:624
 msgid "Print"
 msgstr "Друк"
 
 msgid "Pull-quote"
 msgstr "Цитата"
 
-#: ../interfaces/utility.py:395
+#: ../interfaces/utility.py:393
 msgid "Raw"
 msgstr ""
 
-#: ../interfaces/utility.py:106
+#: ../interfaces/utility.py:104
 msgid "Redo"
 msgstr "Повернути "
 
-#: ../interfaces/utility.py:258
+#: ../interfaces/utility.py:256
 msgid "Remove formatting"
 msgstr "Забрати форматування"
 
-#: ../browser/controlpanel.py:33
+#: ../browser/controlpanel.py:34
 msgid "Resource Types"
 msgstr ""
 
-#: ../interfaces/utility.py:40
+#: ../interfaces/utility.py:39
 msgid "Right to left"
 msgstr "Справа наліво"
 
-#: ../interfaces/utility.py:362
+#: ../interfaces/utility.py:360
 msgid "Rooted to current object"
 msgstr "Прив'язати до поточного об'єкту"
 
-#: ../interfaces/utility.py:78
+#: ../interfaces/utility.py:76
 msgid "Save"
 msgstr "Зберегти"
 
@@ -504,38 +495,38 @@ msgstr "Зберегти"
 msgid "Search"
 msgstr "Пошук"
 
-#: ../interfaces/utility.py:118
+#: ../interfaces/utility.py:116
 msgid "Select Style"
 msgstr "Вибрати стиль"
 
-#: ../utility.py:630
+#: ../utility.py:622
 msgid "Selection"
 msgstr "Виділення"
 
-#: ../browser/controlpanel.py:43
+#: ../browser/controlpanel.py:44
 msgid "Settings for the TinyMCE Wysiwyg editor."
 msgstr "Налаштування конфіґурації текстового редактора TinyMCE."
 
-#: ../interfaces/utility.py:254
+#: ../interfaces/utility.py:252
 msgid "Spellchecker"
 msgstr "Перевірка правопису"
 
-#: ../interfaces/utility.py:295
+#: ../interfaces/utility.py:293
 msgid "Spellchecker plugin to use"
-msgstr "Який плагін використовувати для провірки орфографії"
+msgstr ""
 
 msgid "Square"
 msgstr "Квадрат"
 
-#: ../interfaces/utility.py:134
+#: ../interfaces/utility.py:132
 msgid "Strikethrough"
 msgstr "Закреслити"
 
-#: ../utility.py:627
+#: ../utility.py:619
 msgid "Style..."
 msgstr "Стиль..."
 
-#: ../interfaces/utility.py:54
+#: ../interfaces/utility.py:53
 msgid "Styles"
 msgstr "Стилі"
 
@@ -550,71 +541,71 @@ msgstr "Підзаголовок"
 msgid "Subject"
 msgstr ""
 
-#: ../interfaces/utility.py:138
+#: ../interfaces/utility.py:136
 msgid "Subscript"
 msgstr "Нижній індекс"
 
-#: ../interfaces/utility.py:142
+#: ../interfaces/utility.py:140
 msgid "Superscript"
 msgstr "Верхній індекс"
 
-#: ../interfaces/utility.py:190
+#: ../interfaces/utility.py:188
 msgid "Table controls"
 msgstr "Властивості таблиці"
 
-#: ../interfaces/utility.py:59
+#: ../interfaces/utility.py:58
 msgid "Table styles"
 msgstr "Стилі таблиці"
 
-#: ../utility.py:629
+#: ../utility.py:621
 msgid "Tables"
 msgstr "Таблиці"
 
-#: ../utility.py:628
+#: ../utility.py:620
 msgid "Text"
 msgstr "Текст"
 
-#: ../interfaces/utility.py:296
+#: ../interfaces/utility.py:294
 msgid "This option allows you to choose the spellchecker for TinyMCE. If you want the spellchecker button to be visible, make sure it is enabled in the toolbar settings."
-msgstr "Ця опція дозволяє застосувати перевірку орфографії для TinyMCE. Якщо хочете, щоб відображалась відповідна кнопка - активуйте її в налаштуваннях панелі інструментів."
+msgstr ""
 
-#: ../interfaces/utility.py:393
+#: ../interfaces/utility.py:391
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
 msgstr ""
 
-#: ../interfaces/utility.py:74
+#: ../interfaces/utility.py:72
 msgid "This option enables the external toolbar which will be placed at the top of the page."
 msgstr "Ця опція дозволяє розмістити зовнішню панель інструментів у верхній частині сторінки."
 
-#: ../interfaces/utility.py:50
+#: ../interfaces/utility.py:49
 msgid "This option enables you to specify a custom CSS file that replaces the theme content CSS. This CSS file is the one used within the editor (the editable area)."
 msgstr "Ця опція дозволяє вказати спеціальний CSS файл, який замінить CSS даної теми. Цей CSS файл буде використовуватися в редакторі (в полі редагування)."
 
-#: ../interfaces/utility.py:19
+#: ../interfaces/utility.py:18
 msgid "This option gives you the ability to enable/disable auto resizing the editor window depending on the content."
 msgstr "Ця опція дозволяє увімкнути/вимкнути можливість автоматичної зміни розміру вікна редактора в залежності від контенту."
 
-#: ../interfaces/utility.py:14
+#: ../interfaces/utility.py:13
 msgid "This option gives you the ability to enable/disable resizing the editor window. If the editor width is set to a percentage only vertical resizing is enabled."
 msgstr "Ця опція дозволяє увімкнути/вимкнути можливість зміни розміру вікна редактора. Якщо ширина редактора встановлена у відсотках - тоді налаштувати можна лише його висоту."
 
-#: ../interfaces/utility.py:45
+#: ../interfaces/utility.py:44
 msgid "This option gives you the ability to enable/disable the use of the contextmenu."
 msgstr "Ця опція дає вам можливість включити / відключити використання контекстного меню."
 
-#: ../interfaces/utility.py:29
+#: ../interfaces/utility.py:28
 msgid "This option gives you the ability to specify the height of the editor in pixels. If auto resize is enabled this value is used as minimum height."
 msgstr "Ця опція дає вам можливість вказати висоту редактора в пікселях. Якщо увімкнена можливість автоматичної зміни розміру вінка редактора - тоді це значення буде використовуватися як значення мінімальної висоти."
 
-#: ../interfaces/utility.py:24
+#: ../interfaces/utility.py:23
 msgid "This option gives you the ability to specify the width of the editor in pixels or percent."
 msgstr "Ця опція дає вам можливість вказати ширину редактора в пікселях або у відсотках."
 
-#: ../interfaces/utility.py:69
+#: ../interfaces/utility.py:67
 msgid "This option gives you the ability to specify the width of the toolbar in pixels."
 msgstr "Ця опція дозволяє вказати ширину панелі інструментів в пікселях."
 
-#: ../interfaces/utility.py:34
+#: ../interfaces/utility.py:33
 msgid "This option specifies the default writing direction, some languages (Like Hebrew, Arabic, Urdu...) write from right to left instead of left to right."
 msgstr "Дана опція дозволяє вказати напрямок письма для сайту, адже у деяких мовах (таких як іврит, арабська, урду ...) пишуть справа наліво, а не зліва направо."
 
@@ -622,7 +613,7 @@ msgstr "Дана опція дозволяє вказати напрямок п�
 msgid "TinyMCE"
 msgstr "TinyMCE"
 
-#: ../browser/controlpanel.py:42
+#: ../browser/controlpanel.py:43
 msgid "TinyMCE Settings"
 msgstr "Налаштування TinyMCE"
 
@@ -635,35 +626,35 @@ msgstr "Візуальний редактор TinyMCE "
 msgid "Title"
 msgstr "Назва"
 
-#: ../interfaces/utility.py:282
+#: ../interfaces/utility.py:280
 msgid "Toggle fullscreen mode"
 msgstr "Включити повноекранний режим"
 
-#: ../interfaces/utility.py:266
+#: ../interfaces/utility.py:264
 msgid "Toggle guidelines/invisible objects"
 msgstr "Перемкнути основні/приховані елементи"
 
-#: ../browser/controlpanel.py:25
+#: ../browser/controlpanel.py:26
 msgid "Toolbar"
 msgstr "Панель інструментів"
 
-#: ../interfaces/utility.py:68
+#: ../interfaces/utility.py:66
 msgid "Toolbar width"
 msgstr "Ширина панелі інструментів"
 
-#: ../interfaces/utility.py:130
+#: ../interfaces/utility.py:128
 msgid "Underline"
 msgstr "Підкреслити"
 
-#: ../interfaces/utility.py:102
+#: ../interfaces/utility.py:100
 msgid "Undo"
 msgstr "Відмінити"
 
-#: ../interfaces/utility.py:198
+#: ../interfaces/utility.py:196
 msgid "Unlink"
 msgstr "Видалити посилання"
 
-#: ../interfaces/utility.py:170
+#: ../interfaces/utility.py:168
 msgid "Unordered list"
 msgstr "Ненумерований список"
 
@@ -688,43 +679,39 @@ msgstr "Великі букви"
 msgid "Upper Roman"
 msgstr "Великі римські букви"
 
-#: ../interfaces/utility.py:270
+#: ../interfaces/utility.py:268
 msgid "Visual control characters on/off"
 msgstr "Увімкнути/вимкнути візуальний контроль символів "
 
-#: ../interfaces/utility.py:363
+#: ../interfaces/utility.py:361
 msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
 msgstr "Якщо увімкнено, то користувача буде прив'язано до поточного об'єкту і не буде можливості додати посилання та зображення з інших частин сайту."
 
-#: ../interfaces/utility.py:33
+#: ../interfaces/utility.py:32
 msgid "Writing direction"
 msgstr "Напрямок письма"
 
-#: ../adapters/Upload.py:92
-msgid "You do not have permission to upload files in this folder"
-msgstr "Вам не дозволено завантажувати файли такого типу до цієї теки"
-
 #. Default: "The URL of the \"After the Deadline\" grammar and spell checking server. The default value is the public server, but ideally you should download and install your own and specify its address here."
-#: ../interfaces/utility.py:338
+#: ../interfaces/utility.py:336
 msgid "help_atd_service_url"
 msgstr ""
 
-#. Default: "A list of error types which the \"After the Deadline\" spellchecker should check for. By default, all the available error type will be listed here."
-#: ../interfaces/utility.py:325
+#. Default: "A list of erorr types which the \"After the Deadline\" spellchecker should check for. By default, all the available error type will be listed here."
+#: ../interfaces/utility.py:323
 msgid "help_atderrortypes_to_show"
 msgstr ""
 
-#: ../interfaces/utility.py:305
+#: ../interfaces/utility.py:303
 msgid "ieSpell (free for personal use)"
 msgstr ""
 
 #. Default: "A list of strings which the \"After the Deadline\"spellchecker should ignore. Note: This option is only applicable when the appropriate spellchecker has been chosen above."
-#: ../interfaces/utility.py:314
+#: ../interfaces/utility.py:312
 msgid "label_atd_ignore_strings"
 msgstr ""
 
 #. Default: "Edit without visual editor"
 #: ../skins/tinymce/tinymce_wysiwyg_support.pt:35
 msgid "suppress_visual_editor"
-msgstr "Редагувати без візуального редактора"
+msgstr ""
 

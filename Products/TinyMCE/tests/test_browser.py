@@ -1,6 +1,8 @@
-from Products.TinyMCE.utility import form_adapter
+# -*- coding: utf-8 -*-
+from Products.TinyMCE.tests.base import IntegrationTestCase
 from Products.TinyMCE.tests.base import FunctionalTestCase
 
+from Products.TinyMCE.browser.atanchors import ATAnchorView
 
 class BrowserTestCase(FunctionalTestCase):
 
@@ -75,8 +77,6 @@ class BrowserTestCase(FunctionalTestCase):
 
         # If we configure directivity to 'auto', the directivity is set depending
         # on the content language.
-        utility = form_adapter(self.portal)
-        utility.directionality = 'auto'
         doc = self.portal[self.document]
         self.assertEqual(doc.Language(), 'en')
         output = self.portal.restrictedTraverse(document_jsonconfig_url)('text')
@@ -86,3 +86,29 @@ class BrowserTestCase(FunctionalTestCase):
         self.assertIn('"directionality": "rtl"', output)
 
         # TODO: upload
+
+class AnchorTestCase(IntegrationTestCase):
+
+    def setUp(self):
+        super(AnchorTestCase, self).setUp()
+        self.document = self.portal.invokeFactory('Document', id='document')
+
+    def test_brokenxml(self):
+        context = self.portal['document']
+        context.setText('''<p><div></p>''')
+        view = ATAnchorView(context, self.app.REQUEST)
+        self.assertEqual(view.listAnchorNames(), [])
+
+    def test_primaryfield(self):
+        context = self.portal['document']
+        context.setText('''<p><a name="foobar"></a></p>''')
+        view = ATAnchorView(context, self.app.REQUEST)
+        self.assertEqual(view.listAnchorNames(), ['foobar'])
+
+    def test_notprimaryfield(self):
+        context = self.portal['document']
+        context.setLocation('''<p><a name="foobar"></a></p>''')
+        context.setText('')
+        view = ATAnchorView(context, self.app.REQUEST)
+        self.assertEqual(view.listAnchorNames(), [])
+        self.assertEqual(view.listAnchorNames('location'), ['foobar'])

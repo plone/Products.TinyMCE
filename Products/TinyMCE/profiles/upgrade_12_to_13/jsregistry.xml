@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<object name="portal_javascripts" meta_type="JavaScripts Registry">
+ <javascript id="tiny_mce.js" remove="True"/>
+ <javascript id="tiny_mce_init.js" remove="True"/>
+ 
+ <javascript cacheable="True"
+             compression="safe"
+             cookable="False"
+             enabled="True"
+             expression="not: portal/portal_membership/isAnonymousUser"
+             id="jquery.tinymce.js"
+             inline="False"/>
+</object>

@@ -7,9 +7,12 @@ from Products.TinyMCE.interfaces.utility import ITinyMCELayout
 from Products.TinyMCE.interfaces.utility import ITinyMCEToolbar
 from Products.TinyMCE.interfaces.utility import ITinyMCELibraries
 from Products.TinyMCE.interfaces.utility import ITinyMCEResourceTypes
+from Products.TinyMCE.interfaces.utility import ITinyMCEContentBrowser
 
 from Products.TinyMCE.browser.interfaces.controlpanel import ITinyMCEControlPanelForm
-from Products.TinyMCE import TMCEMessageFactory as _
+
+
+_ = MessageFactory('plone.tinymce')
 
 
 class TinyMCEControlPanelForm(ControlPanelForm):
@@ -32,11 +35,16 @@ class TinyMCEControlPanelForm(ControlPanelForm):
     tinymceresourcetypes.id = 'tinymceresourcetypes'
     tinymceresourcetypes.label = _(u'Resource Types')
 
+    tinymcecontentbrowser = FormFieldsets(ITinyMCEContentBrowser)
+    tinymcecontentbrowser.id = 'tinymcecontentbrowser'
+    tinymcecontentbrowser.label = _(u'Content Browser')
+
     form_fields = FormFieldsets(
                         tinymcelayout,
                         tinymcetoolbar,
                         tinymceresourcetypes,
-                        tinymcelibraries
+                        tinymcelibraries,
+                        tinymcecontentbrowser,
                         )
 
     label = _(u"TinyMCE Settings")

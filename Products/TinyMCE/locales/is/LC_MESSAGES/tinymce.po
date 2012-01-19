@@ -1,14 +1,14 @@
-# This is the Icelandic language pack for TinyMCE.\n      [6.8.2008] The translation is not finished yet. You are more than welcome to contibute :o)
-# Version 1.2
+# This is the Icelandic language pack for TinyMCE. [19.11.2010] The translation is not finished yet. You are more than welcome to contibute :o)
+# Version 1.5
 #
-# Einar Bragi Hauksson
+# Stefna ehf / Helgi Hrafn
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2009-02-04 00:00+0000\n"
-"Last-Translator: Einar Bragi Hauksson\n"
-"Language-Team: Einar Bragi Hauksson\n"
+"PO-Revision-Date: 2010-11-19 00:00+0000\n"
+"Last-Translator: Stefna ehf / Helgi Hrafn\n"
+"Language-Team: Stefna ehf / Helgi Hrafn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -52,7 +52,7 @@ msgid "common_clipboard_no_support"
 msgstr "Ekki stutt í þínum vefskoðara, notaður flýtilykla í staðinn."
 
 msgid "common_popup_blocked"
-msgstr "Afsakið, uppsprettuvörnin þín (popup blocker) hefur blokkað glugga sem er hluti af ritlinum. Þú verður að slökkva á uppsprettuvörn til að geta notað þennan ritil."
+msgstr "Afsakið, uppsprettuvörnin þín (popup blocker) hefur lokað á glugga sem er hluti af ritlinum. Þú verður að slökkva á uppsprettuvörn til að geta notað þennan ritil."
 
 msgid "common_invalid_data"
 msgstr "Villa: Vitlaus gildi slegin inn, þau eru merkt með rauðu."
@@ -61,16 +61,16 @@ msgid "common_more_colors"
 msgstr "Fleiri litir"
 
 msgid "simple_bold_desc"
-msgstr "Feitletra (Ctrl+B)"
+msgstr "Feitletrað (Ctrl+B)"
 
 msgid "simple_italic_desc"
-msgstr "Skáletra (Ctrl+I)"
+msgstr "Skáletrað (Ctrl+I)"
 
 msgid "simple_underline_desc"
-msgstr "Undirstrika (Ctrl+U)"
+msgstr "Undirstrikað (Ctrl+U)"
 
 msgid "simple_striketrough_desc"
-msgstr "Yfirstrika"
+msgstr "Yfirstrikað"
 
 msgid "simple_bullist_desc"
 msgstr "Bólulisti"
@@ -85,7 +85,7 @@ msgid "simple_redo_desc"
 msgstr "Endurtaka (Ctrl+Y)"
 
 msgid "simple_cleanup_desc"
-msgstr "Hreinsa skítugan kóða"
+msgstr "Hreinsa ruslkóða"
 
 msgid "advanced_style_select"
 msgstr "Stílsnið"
@@ -139,22 +139,22 @@ msgid "advanced_samp"
 msgstr "Kóðadæmi"
 
 msgid "advanced_dt"
-msgstr "Definition term "
+msgstr "Stilgreining"
 
 msgid "advanced_dd"
-msgstr "Definition description"
+msgstr "Lýsing skilgreiningar"
 
 msgid "advanced_bold_desc"
-msgstr "Feitletra (Ctrl+B)"
+msgstr "Feitletrað (Ctrl+B)"
 
 msgid "advanced_italic_desc"
-msgstr "Skáletra (Ctrl+I)"
+msgstr "Skáletrað (Ctrl+I)"
 
 msgid "advanced_underline_desc"
-msgstr "Undirstrika (Ctrl+U)"
+msgstr "Undirstrikað (Ctrl+U)"
 
 msgid "advanced_striketrough_desc"
-msgstr "Yfirstrika"
+msgstr "Yfirstrikað"
 
 msgid "advanced_justifyleft_desc"
 msgstr "Vinstrijafna"
@@ -196,7 +196,7 @@ msgid "advanced_image_desc"
 msgstr "Setja inn/breyta mynd"
 
 msgid "advanced_cleanup_desc"
-msgstr "Hreinsa skítugan kóða"
+msgstr "Hreinsa ruslkóða"
 
 msgid "advanced_code_desc"
 msgstr "Breyta HTML kóða"
@@ -217,7 +217,7 @@ msgid "advanced_custom1_desc"
 msgstr "Lýsingin þín hér"
 
 msgid "advanced_forecolor_desc"
-msgstr "Veldu lit texta"
+msgstr "Veldu textalit"
 
 msgid "advanced_backcolor_desc"
 msgstr "Veldu bakgrunnslit"
@@ -241,7 +241,7 @@ msgid "advanced_paste_desc"
 msgstr "Líma"
 
 msgid "advanced_image_props_desc"
-msgstr "Stillingar myndar"
+msgstr "Stilling myndar"
 
 msgid "advanced_newdocument_desc"
 msgstr "Nýtt skjal"
@@ -253,7 +253,7 @@ msgid "advanced_blockquote_desc"
 msgstr "Blockquote"
 
 msgid "advanced_clipboard_msg"
-msgstr "Afrita/Klippa/Líma er ekki aðgengilegt í Mozilla og Firefox eins og er.\nViltu fá nánari upplýsingar?"
+msgstr "Afrita/Klippa/Líma er ekki aðgengilegt í Mozilla og Firefox eins og er.\Viltu fá nánari upplýsingar?"
 
 msgid "advanced_path"
 msgstr "Slóð"
@@ -424,7 +424,7 @@ msgid "advanced_dlg_link_url"
 msgstr "Slóð hlekks"
 
 msgid "advanced_dlg_link_target"
-msgstr "Target"
+msgstr "Áfangastaður"
 
 msgid "advanced_dlg_link_target_same"
 msgstr "Opna hlekk í sama glugga"
@@ -505,7 +505,7 @@ msgid "layer_backward_desc"
 msgstr "Færa afturfyrir"
 
 msgid "layer_absolute_desc"
-msgstr "Taka af/setja á absolute positioning"
+msgstr "Taka af/setja á algjöra jöfnun"
 
 msgid "layer_content"
 msgstr "Nýtt lag..."
@@ -526,13 +526,13 @@ msgid "iespell_download"
 msgstr "ieSpell fannst ekki. Viltu setja það inn núna?"
 
 msgid "advhr_advhr_desc"
-msgstr "Horizontal rule"
+msgstr "Lárétt lína"
 
 msgid "advhr_delta_width"
-msgstr ""
+msgstr "Breidd"
 
 msgid "advhr_delta_height"
-msgstr ""
+msgstr "Hæð"
 
 msgid "advhr_dlg_width"
 msgstr "Breidd"
@@ -547,10 +547,10 @@ msgid "emotions_emotions_desc"
 msgstr "Broskarlar"
 
 msgid "emotions_delta_width"
-msgstr ""
+msgstr "Breidd"
 
 msgid "emotions_delta_height"
-msgstr ""
+msgstr "Hæð"
 
 msgid "emotions_dlg_title"
 msgstr "Setja inn broskall"
@@ -601,7 +601,7 @@ msgid "emotions_dlg_undecided"
 msgstr "Óákveðinn"
 
 msgid "emotions_dlg_wink"
-msgstr "Wink"
+msgstr "Blikk"
 
 msgid "emotions_dlg_yell"
 msgstr "Öskrandi"
@@ -613,10 +613,10 @@ msgid "searchreplace_replace_desc"
 msgstr "Finna/Skipta út"
 
 msgid "searchreplace_delta_width"
-msgstr ""
+msgstr "Breidd"
 
 msgid "searchreplace_delta_height"
-msgstr ""
+msgstr "Hæð"
 
 msgid "searchreplace_dlg_searchnext_desc"
 msgstr "Finna aftur"
@@ -660,314 +660,314 @@ msgstr "Skipta út"
 msgid "searchreplace_dlg_replaceall"
 msgstr "Skipta út öllu"
 
-msgid "ploneimage_image_desc"
+msgid "plonebrowser_image_desc"
 msgstr "Setja inn/breyta mynd"
 
-msgid "ploneimage_delta_width"
-msgstr ""
+msgid "plonebrowser_delta_width"
+msgstr "Breidd"
 
-msgid "ploneimage_delta_height"
-msgstr ""
+msgid "plonebrowser_delta_height"
+msgstr "Hæð"
 
-msgid "ploneimage_dlg_tab_general"
+msgid "plonebrowser_dlg_tab_general"
 msgstr "Almennt"
 
-msgid "ploneimage_dlg_tab_appearance"
+msgid "plonebrowser_dlg_tab_appearance"
 msgstr "Útlit"
 
-msgid "ploneimage_dlg_tab_advanced"
+msgid "plonebrowser_dlg_tab_advanced"
 msgstr "Nánar"
 
-msgid "ploneimage_dlg_general"
+msgid "plonebrowser_dlg_general"
 msgstr "Almennt"
 
-msgid "ploneimage_dlg_title"
+msgid "plonebrowser_dlg_title"
 msgstr "Titill"
 
-msgid "ploneimage_dlg_preview"
+msgid "plonebrowser_dlg_preview"
 msgstr "Forskoðun"
 
-msgid "ploneimage_dlg_constrain_proportions"
+msgid "plonebrowser_dlg_constrain_proportions"
 msgstr "Halda hlutföllum"
 
-msgid "ploneimage_dlg_langdir"
+msgid "plonebrowser_dlg_langdir"
 msgstr "Átt tungumáls"
 
-msgid "ploneimage_dlg_langcode"
+msgid "plonebrowser_dlg_langcode"
 msgstr "Kóði tungumáls"
 
-msgid "ploneimage_dlg_long_desc"
+msgid "plonebrowser_dlg_long_desc"
 msgstr "Löng lýsing á hlekki"
 
-msgid "ploneimage_dlg_style"
+msgid "plonebrowser_dlg_style"
 msgstr "Stíll"
 
-msgid "ploneimage_dlg_classes"
+msgid "plonebrowser_dlg_classes"
 msgstr "Klasar"
 
-msgid "ploneimage_dlg_ltr"
+msgid "plonebrowser_dlg_ltr"
 msgstr "Vinstri til hægri"
 
-msgid "ploneimage_dlg_rtl"
+msgid "plonebrowser_dlg_rtl"
 msgstr "Hægri til vinstri"
 
-msgid "ploneimage_dlg_id"
+msgid "plonebrowser_dlg_id"
 msgstr "Id"
 
-msgid "ploneimage_dlg_map"
+msgid "plonebrowser_dlg_map"
 msgstr "Image map"
 
-msgid "ploneimage_dlg_swap_image"
+msgid "plonebrowser_dlg_swap_image"
 msgstr "Skipta mynd út"
 
-msgid "ploneimage_dlg_alt_image"
+msgid "plonebrowser_dlg_alt_image"
 msgstr "Önnur mynd"
 
-msgid "ploneimage_dlg_mouseover"
+msgid "plonebrowser_dlg_mouseover"
 msgstr "þegar mús er yfir"
 
-msgid "ploneimage_dlg_mouseout"
+msgid "plonebrowser_dlg_mouseout"
 msgstr "þegar mús fer af"
 
-msgid "ploneimage_dlg_misc"
+msgid "plonebrowser_dlg_misc"
 msgstr "Ýmislegt"
 
-msgid "ploneimage_dlg_example_img"
-msgstr "Appearance preview image"
+msgid "plonebrowser_dlg_example_img"
+msgstr "Birting prufumyndar"
 
-msgid "ploneimage_dlg_missing_alt"
-msgstr "Are you sure you want to continue without including an Image Description? Without it the image may not be accessible to some users with disabilities, or to those using a text browser, or browsing the Web with images turned off."
+msgid "plonebrowser_dlg_missing_alt"
+msgstr "Ertu viss um að halda áfram án lýsingu myndar? Án hennar er myndin óaðgenginleg fyrir suma notendur með skjálesara, texta vafra eða með slökkt á birtingu mynda í vafranum sínum."
 
-msgid "ploneimage_dlg_dialog_title"
-msgstr "Insert/edit image"
+msgid "plonebrowser_dlg_dialog_title"
+msgstr "Setja inn/breyta mynd"
 
-msgid "ploneimage_dlg_src"
+msgid "plonebrowser_dlg_src"
 msgstr "Slóð á mynd"
 
-msgid "ploneimage_dlg_alt"
+msgid "plonebrowser_dlg_alt"
 msgstr "Lýsing"
 
-msgid "ploneimage_dlg_list"
+msgid "plonebrowser_dlg_list"
 msgstr "Myndalisti"
 
-msgid "ploneimage_dlg_border"
+msgid "plonebrowser_dlg_border"
 msgstr "Rammi"
 
-msgid "ploneimage_dlg_dimensions"
+msgid "plonebrowser_dlg_dimensions"
 msgstr "Stærðir"
 
-msgid "ploneimage_dlg_vspace"
+msgid "plonebrowser_dlg_vspace"
 msgstr "Lóðrétt loftun"
 
-msgid "ploneimage_dlg_hspace"
+msgid "plonebrowser_dlg_hspace"
 msgstr "Lárétt loftun"
 
-msgid "ploneimage_dlg_align"
+msgid "plonebrowser_dlg_align"
 msgstr "Jöfnun"
 
-msgid "ploneimage_dlg_align_baseline"
+msgid "plonebrowser_dlg_align_baseline"
 msgstr "Baseline"
 
-msgid "ploneimage_dlg_align_top"
+msgid "plonebrowser_dlg_align_top"
 msgstr "Top"
 
-msgid "ploneimage_dlg_align_middle"
+msgid "plonebrowser_dlg_align_middle"
 msgstr "Middle"
 
-msgid "ploneimage_dlg_align_bottom"
+msgid "plonebrowser_dlg_align_bottom"
 msgstr "Bottom"
 
-msgid "ploneimage_dlg_align_texttop"
+msgid "plonebrowser_dlg_align_texttop"
 msgstr "Text top"
 
-msgid "ploneimage_dlg_align_textbottom"
+msgid "plonebrowser_dlg_align_textbottom"
 msgstr "Text bottom"
 
-msgid "ploneimage_dlg_align_left"
+msgid "plonebrowser_dlg_align_left"
 msgstr "Left"
 
-msgid "ploneimage_dlg_align_right"
+msgid "plonebrowser_dlg_align_right"
 msgstr "Right"
 
-msgid "ploneimage_dlg_image_list"
+msgid "plonebrowser_dlg_image_list"
 msgstr "Image list"
 
-msgid "plonelink_link_desc"
-msgstr "Insert/edit link"
+msgid "plonebrowser_link_desc"
+msgstr "Setja inn/breyta hlekk"
 
-msgid "plonelink_delta_width"
-msgstr ""
+msgid "plonebrowser_delta_width"
+msgstr "Breidd"
 
-msgid "plonelink_delta_height"
-msgstr ""
+msgid "plonebrowser_delta_height"
+msgstr "Hæð"
 
-msgid "plonelink_dlg_title"
-msgstr "Insert/edit link"
+msgid "plonebrowser_dlg_title"
+msgstr "Setja inn/breyta hlekk"
 
-msgid "plonelink_dlg_url"
-msgstr "Link URL"
+msgid "plonebrowser_dlg_url"
+msgstr "Slóð"
 
-msgid "plonelink_dlg_target"
+msgid "plonebrowser_dlg_target"
 msgstr "Target"
 
-msgid "plonelink_dlg_titlefield"
-msgstr "Title"
+msgid "plonebrowser_dlg_titlefield"
+msgstr "Titill"
 
-msgid "plonelink_dlg_is_email"
-msgstr "The URL you entered seems to be an email address, do you want to add the required mailto: prefix?"
+msgid "plonebrowser_dlg_is_email"
+msgstr "Slóðin sem þú skráðir virðist vera netfang, vilt þú bæta við forskeytinu mailto:?"
 
-msgid "plonelink_dlg_is_external"
-msgstr "The URL you entered seems to external link, do you want to add the required http:// prefix?"
+msgid "plonebrowser_dlg_is_external"
+msgstr "Slóðin sem þú skráðir virðist vera slóð utan vefs, vilt þú bæta við forskeytinu http://?"
 
-msgid "plonelink_dlg_list"
-msgstr "Link list"
+msgid "plonebrowser_dlg_list"
+msgstr "Listi hlekkja"
 
-msgid "plonelink_dlg_general_tab"
-msgstr "General"
+msgid "plonebrowser_dlg_general_tab"
+msgstr "Almennt"
 
-msgid "plonelink_dlg_popup_tab"
-msgstr "Popup"
+msgid "plonebrowser_dlg_popup_tab"
+msgstr "Sprettigluggi"
 
-msgid "plonelink_dlg_events_tab"
-msgstr "Events"
+msgid "plonebrowser_dlg_events_tab"
+msgstr "Viðburðir"
 
-msgid "plonelink_dlg_advanced_tab"
-msgstr "Advanced"
+msgid "plonebrowser_dlg_advanced_tab"
+msgstr "Nánar"
 
-msgid "plonelink_dlg_general_props"
-msgstr "General properties"
+msgid "plonebrowser_dlg_general_props"
+msgstr "Almennir eiginleikar"
 
-msgid "plonelink_dlg_popup_props"
-msgstr "Popup properties"
+msgid "plonebrowser_dlg_popup_props"
+msgstr "Eiginleikar sprettiglugga"
 
-msgid "plonelink_dlg_event_props"
-msgstr "Events"
+msgid "plonebrowser_dlg_event_props"
+msgstr "Viðburðir"
 
-msgid "plonelink_dlg_advanced_props"
-msgstr "Advanced properties"
+msgid "plonebrowser_dlg_advanced_props"
+msgstr "Frekari eiginleikar"
 
-msgid "plonelink_dlg_popup_opts"
-msgstr "Options"
+msgid "plonebrowser_dlg_popup_opts"
+msgstr "Möguleikar"
 
-msgid "plonelink_dlg_anchor_names"
+msgid "plonebrowser_dlg_anchor_names"
 msgstr "Anchors"
 
-msgid "plonelink_dlg_target_same"
-msgstr "Open in this window / frame"
+msgid "plonebrowser_dlg_target_same"
+msgstr "Opna í þessum glugga / ramma"
 
-msgid "plonelink_dlg_target_parent"
-msgstr "Open in parent window / frame"
+msgid "plonebrowser_dlg_target_parent"
+msgstr "Opna í yfir glugga / ramma"
 
-msgid "plonelink_dlg_target_top"
-msgstr "Open in top frame (replaces all frames)"
+msgid "plonebrowser_dlg_target_top"
+msgstr "Opna í efsta ramma (kemur í staðinn fyrir alla ramma)"
 
-msgid "plonelink_dlg_target_blank"
-msgstr "Open in new window"
+msgid "plonebrowser_dlg_target_blank"
+msgstr "Opna í nýjum glugga"
 
-msgid "plonelink_dlg_popup"
-msgstr "Javascript popup"
+msgid "plonebrowser_dlg_popup"
+msgstr "Javascript sprettigluggi"
 
-msgid "plonelink_dlg_popup_url"
-msgstr "Popup URL"
+msgid "plonebrowser_dlg_popup_url"
+msgstr "Slóð sprettigluggans"
 
-msgid "plonelink_dlg_popup_name"
-msgstr "Window name"
+msgid "plonebrowser_dlg_popup_name"
+msgstr "Heiti gluggans"
 
-msgid "plonelink_dlg_popup_return"
-msgstr "Insert 'return false'"
+msgid "plonebrowser_dlg_popup_return"
+msgstr "Bæta við 'return false'"
 
-msgid "plonelink_dlg_popup_scrollbars"
-msgstr "Show scrollbars"
+msgid "plonebrowser_dlg_popup_scrollbars"
+msgstr "Birta runuslá"
 
-msgid "plonelink_dlg_popup_statusbar"
-msgstr "Show status bar"
+msgid "plonebrowser_dlg_popup_statusbar"
+msgstr "Birta stöðu slá"
 
-msgid "plonelink_dlg_popup_toolbar"
+msgid "plonebrowser_dlg_popup_toolbar"
 msgstr "Show toolbars"
 
-msgid "plonelink_dlg_popup_menubar"
-msgstr "Show menu bar"
+msgid "plonebrowser_dlg_popup_menubar"
+msgstr "Birta valmynd"
 
-msgid "plonelink_dlg_popup_location"
-msgstr "Show location bar"
+msgid "plonebrowser_dlg_popup_location"
+msgstr "Birta vefslóð"
 
-msgid "plonelink_dlg_popup_resizable"
-msgstr "Make window resizable"
+msgid "plonebrowser_dlg_popup_resizable"
+msgstr "Leyfa breytingu stærðar á glugga"
 
-msgid "plonelink_dlg_popup_dependent"
+msgid "plonebrowser_dlg_popup_dependent"
 msgstr "Dependent (Mozilla/Firefox only)"
 
-msgid "plonelink_dlg_popup_size"
-msgstr "Size"
+msgid "plonebrowser_dlg_popup_size"
+msgstr "Stærð"
 
-msgid "plonelink_dlg_popup_position"
-msgstr "Position (X/Y)"
+msgid "plonebrowser_dlg_popup_position"
+msgstr "Staðsetning (X/Y)"
 
-msgid "plonelink_dlg_id"
+msgid "plonebrowser_dlg_id"
 msgstr "Id"
 
-msgid "plonelink_dlg_style"
-msgstr "Style"
+msgid "plonebrowser_dlg_style"
+msgstr "Stíll"
 
-msgid "plonelink_dlg_classes"
-msgstr "Classes"
+msgid "plonebrowser_dlg_classes"
+msgstr "Klasi"
 
-msgid "plonelink_dlg_target_name"
-msgstr "Target name"
+msgid "plonebrowser_dlg_target_name"
+msgstr "Target heiti"
 
-msgid "plonelink_dlg_langdir"
-msgstr "Language direction"
+msgid "plonebrowser_dlg_langdir"
+msgstr "Átt tungumáls"
 
-msgid "plonelink_dlg_target_langcode"
-msgstr "Target language"
+msgid "plonebrowser_dlg_target_langcode"
+msgstr "Ætlað tungumál"
 
-msgid "plonelink_dlg_langcode"
-msgstr "Language code"
+msgid "plonebrowser_dlg_langcode"
+msgstr "Kóði tungumáls"
 
-msgid "plonelink_dlg_encoding"
+msgid "plonebrowser_dlg_encoding"
 msgstr "Target character encoding"
 
-msgid "plonelink_dlg_mime"
+msgid "plonebrowser_dlg_mime"
 msgstr "Target MIME type"
 
-msgid "plonelink_dlg_rel"
+msgid "plonebrowser_dlg_rel"
 msgstr "Relationship page to target"
 
-msgid "plonelink_dlg_rev"
+msgid "plonebrowser_dlg_rev"
 msgstr "Relationship target to page"
 
-msgid "plonelink_dlg_tabindex"
+msgid "plonebrowser_dlg_tabindex"
 msgstr "Tabindex"
 
-msgid "plonelink_dlg_accesskey"
-msgstr "Accesskey"
+msgid "plonebrowser_dlg_accesskey"
+msgstr "Flýtihnappur"
 
-msgid "plonelink_dlg_ltr"
-msgstr "Left to right"
+msgid "plonebrowser_dlg_ltr"
+msgstr "Vinstri til hægri"
 
-msgid "plonelink_dlg_rtl"
-msgstr "Right to left"
+msgid "plonebrowser_dlg_rtl"
+msgstr "Hægri til vinstri"
 
-msgid "plonelink_dlg_link_list"
-msgstr "Link list"
+msgid "plonebrowser_dlg_link_list"
+msgstr "Listi hlekkja"
 
 msgid "xhtmlxtras_cite_desc"
 msgstr "Citation"
 
 msgid "xhtmlxtras_abbr_desc"
-msgstr "Abbreviation"
+msgstr "Skammstöfun"
 
 msgid "xhtmlxtras_acronym_desc"
 msgstr "Acronym"
 
 msgid "xhtmlxtras_del_desc"
-msgstr "Deletion"
+msgstr "Eyða"
 
 msgid "xhtmlxtras_ins_desc"
-msgstr "Insertion"
+msgstr "Viðbót"
 
 msgid "xhtmlxtras_attribs_desc"
-msgstr "Insert/Edit Attributes"
+msgstr "Skrá/breyta gildum"
 
 msgid "xhtmlxtras_cite_delta_width"
 msgstr ""
@@ -1096,13 +1096,13 @@ msgid "xhtmlxtras_dlg_attribs_title"
 msgstr "Insert/Edit Attributes"
 
 msgid "style_desc"
-msgstr "Edit CSS Style"
+msgstr "Breyta stílsniði"
 
 msgid "style_delta_width"
-msgstr ""
+msgstr "Breidd"
 
 msgid "style_delta_height"
-msgstr ""
+msgstr "Hæð"
 
 msgid "style_dlg_title"
 msgstr "Edit CSS Style"
@@ -1288,82 +1288,88 @@ msgid "style_dlg_clip"
 msgstr "Clip"
 
 msgid "paste_paste_text_desc"
-msgstr "Paste as Plain Text"
+msgstr "Líma sem hreinn texti"
 
 msgid "paste_paste_word_desc"
-msgstr "Paste from Word"
+msgstr "Líma úr Word"
 
 msgid "paste_selectall_desc"
-msgstr "Select All"
+msgstr "Velja allt"
+
+msgid "paste_plaintext_mode_sticky"
+msgstr "Líma er nú í venjulegum textaham. Smelltu aftur til að skipta yfir í venjulegan líma ham. Eftir að þú límir eitthvað færist þú sjálfvirkt aftur í venjulegan ham."
+
+msgid "paste_plaintext_mode"
+msgstr "Líma er nú í venjulegum textaham. Smelltu aftur til að skipta aftur í venjulegan ham"
 
 msgid "paste_dlg_text_title"
-msgstr "Use CTRL+V on your keyboard to paste the text into the window."
+msgstr "Notaðu CTRL+V á lyklaborðinu til að líma textanum í ritilinn."
 
 msgid "paste_dlg_text_linebreaks"
-msgstr "Keep linebreaks"
+msgstr "Halda endingu lína"
 
 msgid "paste_dlg_word_title"
-msgstr "Use CTRL+V on your keyboard to paste the text into the window."
+msgstr "Notaðu CTRL+V á lyklaboðrinu til að líma textanum í ritilinn."
 
 msgid "table_desc"
-msgstr "Inserts a new table"
+msgstr "Setja inn nýja töflu"
 
 msgid "table_row_before_desc"
-msgstr "Insert row before"
+msgstr "Setja inn nýja röð fyrir ofan"
 
 msgid "table_row_after_desc"
-msgstr "Insert row after"
+msgstr "Setja inn nýja röð fyrir neðan"
 
 msgid "table_delete_row_desc"
-msgstr "Delete row"
+msgstr "Eyða röð"
 
 msgid "table_col_before_desc"
-msgstr "Insert column before"
+msgstr "Setja inn nýjan dálk fyrir framan"
 
 msgid "table_col_after_desc"
-msgstr "Insert column after"
+msgstr "Setja inn nýjan dálk fyrir aftan"
 
 msgid "table_delete_col_desc"
-msgstr "Remove column"
+msgstr "Eyða dálk"
 
 msgid "table_split_cells_desc"
-msgstr "Split merged table cells"
+msgstr "Sundra sameinuðum töflureitum"
 
 msgid "table_merge_cells_desc"
-msgstr "Merge table cells"
+msgstr "Sameina töflureiti"
 
 msgid "table_row_desc"
-msgstr "Table row properties"
+msgstr "Eiginleikar raðar"
 
 msgid "table_cell_desc"
-msgstr "Table cell properties"
+msgstr "Eiginleikar dálka"
 
 msgid "table_props_desc"
-msgstr "Table properties"
+msgstr "Eiginleikar töflu"
 
 msgid "table_paste_row_before_desc"
-msgstr "Paste table row before"
+msgstr "Líma töfluröð fyrir ofan"
 
 msgid "table_paste_row_after_desc"
-msgstr "Paste table row after"
+msgstr "Líma töfluröð fyrir neðan"
 
 msgid "table_cut_row_desc"
-msgstr "Cut table row"
+msgstr "Klippa röðina"
 
 msgid "table_copy_row_desc"
-msgstr "Copy table row"
+msgstr "Afrita röðina"
 
 msgid "table_del"
-msgstr "Delete table"
+msgstr "Eyða töflu"
 
 msgid "table_row"
-msgstr "Row"
+msgstr "Röð"
 
 msgid "table_col"
-msgstr "Column"
+msgstr "Dálkur"
 
 msgid "table_cell"
-msgstr "Cell"
+msgstr "Reitur"
 
 msgid "table_rowprops_delta_width"
 msgstr ""
@@ -1390,211 +1396,211 @@ msgid "table_merge_cells_delta_height"
 msgstr ""
 
 msgid "table_dlg_general_tab"
-msgstr "General"
+msgstr "Almennt"
 
 msgid "table_dlg_advanced_tab"
-msgstr "Advanced"
+msgstr "Nánar"
 
 msgid "table_dlg_general_props"
-msgstr "General properties"
+msgstr "Almennir eiginleikar"
 
 msgid "table_dlg_advanced_props"
-msgstr "Advanced properties"
+msgstr "Frekari eiginleikar"
 
 msgid "table_dlg_rowtype"
-msgstr "Row in table part"
+msgstr "Röð í töfluhluta"
 
 msgid "table_dlg_title"
-msgstr "Insert/Modify table"
+msgstr "Setja inn/Breyta töflu"
 
 msgid "table_dlg_width"
-msgstr "Width"
+msgstr "Breidd"
 
 msgid "table_dlg_height"
-msgstr "Height"
+msgstr "Hæð"
 
 msgid "table_dlg_cols"
 msgstr "Cols"
 
 msgid "table_dlg_rows"
-msgstr "Rows"
+msgstr "Raðir"
 
 msgid "table_dlg_cellspacing"
-msgstr "Cellspacing"
+msgstr "Reitabil"
 
 msgid "table_dlg_cellpadding"
-msgstr "Cellpadding"
+msgstr "Reita öndun"
 
 msgid "table_dlg_border"
-msgstr "Border"
+msgstr "Rammi"
 
 msgid "table_dlg_align"
-msgstr "Alignment"
+msgstr "Jöfnun"
 
 msgid "table_dlg_align_default"
-msgstr "Default"
+msgstr "Stöðluð"
 
 msgid "table_dlg_align_left"
-msgstr "Left"
+msgstr "Vinstri"
 
 msgid "table_dlg_align_right"
-msgstr "Right"
+msgstr "Hægri"
 
 msgid "table_dlg_align_middle"
-msgstr "Center"
+msgstr "Miðja"
 
 msgid "table_dlg_row_title"
-msgstr "Table row properties"
+msgstr "Eiginleikar raðar"
 
 msgid "table_dlg_cell_title"
-msgstr "Table cell properties"
+msgstr "Eiginleikar reits"
 
 msgid "table_dlg_cell_type"
-msgstr "Cell type"
+msgstr "Reitartegund"
 
 msgid "table_dlg_valign"
-msgstr "Vertical alignment"
+msgstr "Lóðrétt jöfnun"
 
 msgid "table_dlg_align_top"
-msgstr "Top"
+msgstr "Efst"
 
 msgid "table_dlg_align_bottom"
-msgstr "Bottom"
+msgstr "Neðst"
 
 msgid "table_dlg_bordercolor"
-msgstr "Border color"
+msgstr "Rammalitur"
 
 msgid "table_dlg_bgcolor"
-msgstr "Background color"
+msgstr "Bakgrunnslitur"
 
 msgid "table_dlg_merge_cells_title"
-msgstr "Merge table cells"
+msgstr "Sameina reiti"
 
 msgid "table_dlg_id"
-msgstr "Id"
+msgstr "id"
 
 msgid "table_dlg_style"
-msgstr "Style"
+msgstr "Stíll"
 
 msgid "table_dlg_langdir"
-msgstr "Language direction"
+msgstr "Tungumála átt"
 
 msgid "table_dlg_langcode"
-msgstr "Language code"
+msgstr "Tungumála kóði"
 
 msgid "table_dlg_mime"
-msgstr "Target MIME type"
+msgstr "Velja MIME tegund"
 
 msgid "table_dlg_ltr"
-msgstr "Left to right"
+msgstr "Frá vinstri til hægri"
 
 msgid "table_dlg_rtl"
-msgstr "Right to left"
+msgstr "Frá hægri til vinstri"
 
 msgid "table_dlg_bgimage"
-msgstr "Background image"
+msgstr "Bakgrunnsmynd"
 
 msgid "table_dlg_summary"
-msgstr "Summary"
+msgstr "Yfirlit"
 
 msgid "table_dlg_td"
-msgstr "Data"
+msgstr "Gögn"
 
 msgid "table_dlg_th"
-msgstr "Header"
+msgstr "Fyrirsögn"
 
 msgid "table_dlg_cell_cell"
-msgstr "Update current cell"
+msgstr "Uppfæra núverandi reit"
 
 msgid "table_dlg_cell_row"
-msgstr "Update all cells in row"
+msgstr "Uppfæra alla reiti í röðinni"
 
 msgid "table_dlg_cell_all"
-msgstr "Update all cells in table"
+msgstr "Uppfæra alla reiti i töflunni"
 
 msgid "table_dlg_row_row"
-msgstr "Update current row"
+msgstr "Uppfæra núverandi röð"
 
 msgid "table_dlg_row_odd"
-msgstr "Update odd rows in table"
+msgstr "Uppfæra oodaraðir"
 
 msgid "table_dlg_row_even"
-msgstr "Update even rows in table"
+msgstr "Uppfæra sléttraðir"
 
 msgid "table_dlg_row_all"
-msgstr "Update all rows in table"
+msgstr "Uppfæra allar raðir í töflunni"
 
 msgid "table_dlg_thead"
-msgstr "Table Head"
+msgstr "Fyrirsögn töflu"
 
 msgid "table_dlg_tbody"
-msgstr "Table Body"
+msgstr "Töflusvæði"
 
 msgid "table_dlg_tfoot"
-msgstr "Table Foot"
+msgstr "Töflufótur"
 
 msgid "table_dlg_scope"
-msgstr "Scope"
+msgstr "Umfang"
 
 msgid "table_dlg_rowgroup"
-msgstr "Row Group"
+msgstr "Raðarhópur"
 
 msgid "table_dlg_colgroup"
-msgstr "Col Group"
+msgstr "Dálkahópur"
 
 msgid "table_dlg_col_limit"
-msgstr "You've exceeded the maximum number of columns of {$cols}."
+msgstr "Þú ert komin yfir leyfilegan fjölda dálka {$cols}."
 
 msgid "table_dlg_row_limit"
-msgstr "You've exceeded the maximum number of rows of {$rows}."
+msgstr "Þú ert komin yfir leyfilegna fjölda raða {$rows}."
 
 msgid "table_dlg_cell_limit"
-msgstr "You've exceeded the maximum number of cells of {$cells}."
+msgstr "Þú ert komin yfir leyfilegan fjölda reita {$cells}."
 
 msgid "table_dlg_missing_scope"
-msgstr "Are you sure you want to continue without specifying a scope for this table header cell. Without it, it may be difficult for some users with disabilities to understand the content or data displayed of the table."
+msgstr "Ertu viss um að þú viljir halda áfram án þess að skilgreina innihaldið fyrir þessa töflu fyrirsögn.  Án hennar getur verið erfitt fyrir suma notendur með hömlun að skilja innihaldið eða það efni sem er til staðar í töflunni."
 
 msgid "table_dlg_caption"
-msgstr "Table caption"
+msgstr "Töfluval"
 
 msgid "table_dlg_frame"
-msgstr "Frame"
+msgstr "rammi"
 
 msgid "table_dlg_frame_none"
-msgstr "none"
+msgstr "ekkert"
 
 msgid "table_dlg_frame_groups"
-msgstr "groups"
+msgstr "hópar"
 
 msgid "table_dlg_frame_rows"
-msgstr "rows"
+msgstr "raðir"
 
 msgid "table_dlg_frame_cols"
-msgstr "cols"
+msgstr "dálkar"
 
 msgid "table_dlg_frame_all"
-msgstr "all"
+msgstr "allt"
 
 msgid "table_dlg_rules"
 msgstr "Rules"
 
 msgid "table_dlg_rules_void"
-msgstr "void"
+msgstr "ógilt"
 
 msgid "table_dlg_rules_above"
-msgstr "above"
+msgstr "ofan"
 
 msgid "table_dlg_rules_below"
-msgstr "below"
+msgstr "neðan"
 
 msgid "table_dlg_rules_hsides"
-msgstr "hsides"
+msgstr "hliðar"
 
 msgid "table_dlg_rules_lhs"
-msgstr "lhs"
+msgstr "vhl"
 
 msgid "table_dlg_rules_rhs"
-msgstr "rhs"
+msgstr "hhl"
 
 msgid "table_dlg_rules_vsides"
 msgstr "vsides"
@@ -1603,19 +1609,25 @@ msgid "table_dlg_rules_box"
 msgstr "box"
 
 msgid "table_dlg_rules_border"
-msgstr "border"
+msgstr "rammi"
 
 msgid "autosave_unload_msg"
-msgstr "The changes you made will be lost if you navigate away from this page."
+msgstr "Breytingar sem þú gerðir hafa ekki verið vistaðar"
+
+msgid "autosave_restore_content"
+msgstr "Ná í vistuð gögn"
+
+msgid "autosave_warning_message"
+msgstr "Ef þú nærð í vistuðu gögnin þá missir þú allt innihald sem er nú þegar í ritlinum.\n\nErtu viss um að þú viljir keyra vistuðu gögnin yfir?"
 
 msgid "fullscreen_desc"
-msgstr "Toggle fullscreen mode"
+msgstr "Skipta á milli heilskjás"
 
 msgid "media_desc"
-msgstr "Insert / edit embedded media"
+msgstr "Setja inn / Breyta birtingu margmiðlunar"
 
 msgid "media_edit"
-msgstr "Edit embedded media"
+msgstr "Breyta birtanlegri margmiðlun"
 
 msgid "media_delta_width"
 msgstr ""
@@ -1624,64 +1636,64 @@ msgid "media_delta_height"
 msgstr ""
 
 msgid "media_dlg_title"
-msgstr "Insert / edit embedded media"
+msgstr "Setja inn / Breyta birtingu margmiðlunar"
 
 msgid "media_dlg_general"
-msgstr "General"
+msgstr "Almennt"
 
 msgid "media_dlg_advanced"
-msgstr "Advanced"
+msgstr "Ítarlegt"
 
 msgid "media_dlg_file"
-msgstr "File/URL"
+msgstr "Skrá/Slóð"
 
 msgid "media_dlg_list"
-msgstr "List"
+msgstr "Listi"
 
 msgid "media_dlg_size"
-msgstr "Dimensions"
+msgstr "Víddir"
 
 msgid "media_dlg_preview"
-msgstr "Preview"
+msgstr "Forskoðun"
 
 msgid "media_dlg_constrain_proportions"
-msgstr "Constrain proportions"
+msgstr "Halda hlutföllum"
 
 msgid "media_dlg_type"
-msgstr "Type"
+msgstr "Gerð"
 
 msgid "media_dlg_id"
 msgstr "Id"
 
 msgid "media_dlg_name"
-msgstr "Name"
+msgstr "Nafn"
 
 msgid "media_dlg_class_name"
-msgstr "Class"
+msgstr "Flokkur"
 
 msgid "media_dlg_vspace"
-msgstr "V-Space"
+msgstr "Lóðr-bil"
 
 msgid "media_dlg_hspace"
-msgstr "H-Space"
+msgstr "Lár-bil"
 
 msgid "media_dlg_play"
-msgstr "Auto play"
+msgstr "Sjálfvirk spilun"
 
 msgid "media_dlg_loop"
-msgstr "Loop"
+msgstr "Endurtaka"
 
 msgid "media_dlg_menu"
-msgstr "Show menu"
+msgstr "Sýna valmynd"
 
 msgid "media_dlg_quality"
-msgstr "Quality"
+msgstr "Gæði"
 
 msgid "media_dlg_scale"
-msgstr "Scale"
+msgstr "Aðlögun"
 
 msgid "media_dlg_align"
-msgstr "Align"
+msgstr "Jöfnun"
 
 msgid "media_dlg_salign"
 msgstr "SAlign"
@@ -1690,7 +1702,7 @@ msgid "media_dlg_wmode"
 msgstr "WMode"
 
 msgid "media_dlg_bgcolor"
-msgstr "Background"
+msgstr "Bakgrunnur"
 
 msgid "media_dlg_base"
 msgstr "Base"
@@ -1747,25 +1759,25 @@ msgid "media_dlg_volume"
 msgstr "Volume"
 
 msgid "media_dlg_autostart"
-msgstr "Auto start"
+msgstr "Byrja sjálfvirkt"
 
 msgid "media_dlg_enabled"
-msgstr "Enabled"
+msgstr "Virkt"
 
 msgid "media_dlg_fullscreen"
-msgstr "Fullscreen"
+msgstr "Heilskjár"
 
 msgid "media_dlg_invokeurls"
-msgstr "Invoke URLs"
+msgstr "Virkja slóðir"
 
 msgid "media_dlg_mute"
-msgstr "Mute"
+msgstr "Dempa"
 
 msgid "media_dlg_stretchtofit"
-msgstr "Stretch to fit"
+msgstr "Teigja til að passa"
 
 msgid "media_dlg_windowlessvideo"
-msgstr "Windowless video"
+msgstr "Gluggalaust myndband"
 
 msgid "media_dlg_balance"
 msgstr "Balance"
@@ -1783,7 +1795,7 @@ msgid "media_dlg_currentposition"
 msgstr "Current position"
 
 msgid "media_dlg_defaultframe"
-msgstr "Default frame"
+msgstr "Upprunalegur rammi"
 
 msgid "media_dlg_playcount"
 msgstr "Play count"
@@ -1795,34 +1807,34 @@ msgid "media_dlg_uimode"
 msgstr "UI Mode"
 
 msgid "media_dlg_flash_options"
-msgstr "Flash options"
+msgstr "Flash möguleikar"
 
 msgid "media_dlg_qt_options"
-msgstr "Quicktime options"
+msgstr "Quicktime möguleikar"
 
 msgid "media_dlg_wmp_options"
-msgstr "Windows media player options"
+msgstr "Windows media player möguleikar"
 
 msgid "media_dlg_rmp_options"
-msgstr "Real media player options"
+msgstr "Real media player möguleikar"
 
 msgid "media_dlg_shockwave_options"
-msgstr "Shockwave options"
+msgstr "Shockwave möguleikar"
 
 msgid "media_dlg_autogotourl"
 msgstr "Auto goto URL"
 
 msgid "media_dlg_center"
-msgstr "Center"
+msgstr "Miðja"
 
 msgid "media_dlg_imagestatus"
-msgstr "Image status"
+msgstr "Staða myndar"
 
 msgid "media_dlg_maintainaspect"
-msgstr "Maintain aspect"
+msgstr "Halda hlutföllum"
 
 msgid "media_dlg_nojava"
-msgstr "No java"
+msgstr "Ekkert java"
 
 msgid "media_dlg_prefetch"
 msgstr "Prefetch"
@@ -1837,7 +1849,7 @@ msgid "media_dlg_numloop"
 msgstr "Num loops"
 
 msgid "media_dlg_controls"
-msgstr "Controls"
+msgstr "Stjórn"
 
 msgid "media_dlg_scriptcallbacks"
 msgstr "Script callbacks"
@@ -1852,10 +1864,10 @@ msgid "media_dlg_swstretchvalign"
 msgstr "Stretch V-Align"
 
 msgid "media_dlg_sound"
-msgstr "Sound"
+msgstr "Hljóð"
 
 msgid "media_dlg_progress"
-msgstr "Progress"
+msgstr "Staða"
 
 msgid "media_dlg_qtsrc"
 msgstr "QT Src"
@@ -1864,34 +1876,34 @@ msgid "media_dlg_qt_stream_warn"
 msgstr "Streamed rtsp resources should be added to the QT Src field under the advanced tab.\nYou should also add a non streamed version to the Src field.."
 
 msgid "media_dlg_align_top"
-msgstr "Top"
+msgstr "Efst"
 
 msgid "media_dlg_align_right"
-msgstr "Right"
+msgstr "Hægri"
 
 msgid "media_dlg_align_bottom"
-msgstr "Bottom"
+msgstr "Neðst"
 
 msgid "media_dlg_align_left"
-msgstr "Left"
+msgstr "Vinstri"
 
 msgid "media_dlg_align_center"
-msgstr "Center"
+msgstr "Miðja"
 
 msgid "media_dlg_align_top_left"
-msgstr "Top left"
+msgstr "Efst vinstri"
 
 msgid "media_dlg_align_top_right"
-msgstr "Top right"
+msgstr "Efst hægri"
 
 msgid "media_dlg_align_bottom_left"
-msgstr "Bottom left"
+msgstr "Neðst vinstri"
 
 msgid "media_dlg_align_bottom_right"
-msgstr "Bottom right"
+msgstr "Neðst hægri"
 
 msgid "media_dlg_flv_options"
-msgstr "Flash video options"
+msgstr "Flash möguleikar"
 
 msgid "media_dlg_flv_scalemode"
 msgstr "Scale mode"
@@ -1936,31 +1948,31 @@ msgid "fullpage_delta_height"
 msgstr ""
 
 msgid "fullpage_dlg_title"
-msgstr "Document properties"
+msgstr "Valmöguleikar skjals"
 
 msgid "fullpage_dlg_meta_tab"
-msgstr "General"
+msgstr "Almennt"
 
 msgid "fullpage_dlg_appearance_tab"
-msgstr "Appearance"
+msgstr "Útlit"
 
 msgid "fullpage_dlg_advanced_tab"
-msgstr "Advanced"
+msgstr "Ítarlegt"
 
 msgid "fullpage_dlg_meta_props"
-msgstr "Meta information"
+msgstr "Meta upplýsingar"
 
 msgid "fullpage_dlg_langprops"
-msgstr "Language and encoding"
+msgstr "Tungumál"
 
 msgid "fullpage_dlg_meta_title"
-msgstr "Title"
+msgstr "Titill"
 
 msgid "fullpage_dlg_meta_keywords"
-msgstr "Keywords"
+msgstr "Leitarorð"
 
 msgid "fullpage_dlg_meta_description"
-msgstr "Description"
+msgstr "Lýsing"
 
 msgid "fullpage_dlg_meta_robots"
 msgstr "Robots"
@@ -1969,82 +1981,82 @@ msgid "fullpage_dlg_doctypes"
 msgstr "Doctype"
 
 msgid "fullpage_dlg_langcode"
-msgstr "Language code"
+msgstr "Tungumála kóði"
 
 msgid "fullpage_dlg_langdir"
-msgstr "Language direction"
+msgstr "Tungumála átt"
 
 msgid "fullpage_dlg_ltr"
-msgstr "Left to right"
+msgstr "Vinstri til hægri"
 
 msgid "fullpage_dlg_rtl"
-msgstr "Right to left"
+msgstr "Hægri til vinstri"
 
 msgid "fullpage_dlg_xml_pi"
 msgstr "XML declaration"
 
 msgid "fullpage_dlg_encoding"
-msgstr "Character encoding"
+msgstr "Stafa enkóðun"
 
 msgid "fullpage_dlg_appearance_bgprops"
-msgstr "Background properties"
+msgstr "Bakgrunns möguleikar"
 
 msgid "fullpage_dlg_appearance_marginprops"
-msgstr "Body margins"
+msgstr "innihalds spássía"
 
 msgid "fullpage_dlg_appearance_linkprops"
-msgstr "Link colors"
+msgstr "Litir á hlekkjum"
 
 msgid "fullpage_dlg_appearance_textprops"
 msgstr "Text properties"
 
 msgid "fullpage_dlg_bgcolor"
-msgstr "Background color"
+msgstr "Bakgrunnslitur"
 
 msgid "fullpage_dlg_bgimage"
-msgstr "Background image"
+msgstr "Bakgrunnsmynd"
 
 msgid "fullpage_dlg_left_margin"
-msgstr "Left margin"
+msgstr "vinstri spássía"
 
 msgid "fullpage_dlg_right_margin"
-msgstr "Right margin"
+msgstr "Hægri spássía"
 
 msgid "fullpage_dlg_top_margin"
-msgstr "Top margin"
+msgstr "Top spássía"
 
 msgid "fullpage_dlg_bottom_margin"
-msgstr "Bottom margin"
+msgstr "Botn spássía"
 
 msgid "fullpage_dlg_text_color"
-msgstr "Text color"
+msgstr "Textalitur"
 
 msgid "fullpage_dlg_font_size"
-msgstr "Font size"
+msgstr "Stafastærð"
 
 msgid "fullpage_dlg_font_face"
-msgstr "Font face"
+msgstr "Stafagerð"
 
 msgid "fullpage_dlg_link_color"
-msgstr "Link color"
+msgstr "Litur á hlekk"
 
 msgid "fullpage_dlg_hover_color"
-msgstr "Hover color"
+msgstr "hover litur"
 
 msgid "fullpage_dlg_visited_color"
-msgstr "Visited color"
+msgstr "Heimsóttur litur"
 
 msgid "fullpage_dlg_active_color"
-msgstr "Active color"
+msgstr "Virkur litur"
 
 msgid "fullpage_dlg_textcolor"
-msgstr "Color"
+msgstr "Litur"
 
 msgid "fullpage_dlg_fontsize"
-msgstr "Font size"
+msgstr "Stafastærð"
 
 msgid "fullpage_dlg_fontface"
-msgstr "Font family"
+msgstr "Stafa fjölskylda"
 
 msgid "fullpage_dlg_meta_index_follow"
 msgstr "Index and follow the links"
@@ -2059,40 +2071,40 @@ msgid "fullpage_dlg_meta_noindex_nofollow"
 msgstr "Do not index and don't follow the links"
 
 msgid "fullpage_dlg_appearance_style"
-msgstr "Stylesheet and style properties"
+msgstr "Stílsnið og eiginleikar"
 
 msgid "fullpage_dlg_stylesheet"
-msgstr "Stylesheet"
+msgstr "Stílsnið"
 
 msgid "fullpage_dlg_style"
-msgstr "Style"
+msgstr "Stíll"
 
 msgid "fullpage_dlg_author"
-msgstr "Author"
+msgstr "Höfundur"
 
 msgid "fullpage_dlg_copyright"
-msgstr "Copyright"
+msgstr "Eignaréttur"
 
 msgid "fullpage_dlg_add"
-msgstr "Add new element"
+msgstr "Bæta við nýjum hlut"
 
 msgid "fullpage_dlg_remove"
-msgstr "Remove selected element"
+msgstr "Fjarlægja valinn hlut"
 
 msgid "fullpage_dlg_moveup"
-msgstr "Move selected element up"
+msgstr "Færa valinn hlut upp"
 
 msgid "fullpage_dlg_movedown"
-msgstr "Move selected element down"
+msgstr "Færa valinn hlut niður"
 
 msgid "fullpage_dlg_head_elements"
-msgstr "Head elements"
+msgstr "Aðal hlutur"
 
 msgid "fullpage_dlg_info"
-msgstr "Information"
+msgstr "Upplýsingar"
 
 msgid "fullpage_dlg_add_title"
-msgstr "Title element"
+msgstr "Titill hluts"
 
 msgid "fullpage_dlg_add_meta"
 msgstr "Meta element"
@@ -2110,10 +2122,10 @@ msgid "fullpage_dlg_add_base"
 msgstr "Base element"
 
 msgid "fullpage_dlg_add_comment"
-msgstr "Comment node"
+msgstr "Bæta við athugasemd"
 
 msgid "fullpage_dlg_title_element"
-msgstr "Title element"
+msgstr "Titill hluts"
 
 msgid "fullpage_dlg_script_element"
 msgstr "Script element"
@@ -2137,37 +2149,37 @@ msgid "fullpage_dlg_src"
 msgstr "Src"
 
 msgid "fullpage_dlg_language"
-msgstr "Language"
+msgstr "Tungumál"
 
 msgid "fullpage_dlg_href"
 msgstr "Href"
 
 msgid "fullpage_dlg_target"
-msgstr "Target"
+msgstr "Áætlunarstaður"
 
 msgid "fullpage_dlg_type"
-msgstr "Type"
+msgstr "Tegund"
 
 msgid "fullpage_dlg_charset"
-msgstr "Charset"
+msgstr "stafasett"
 
 msgid "fullpage_dlg_defer"
-msgstr "Defer"
+msgstr "Vísun"
 
 msgid "fullpage_dlg_media"
-msgstr "Media"
+msgstr "Margmiðlun"
 
 msgid "fullpage_dlg_properties"
-msgstr "Properties"
+msgstr "Eiginleikar"
 
 msgid "fullpage_dlg_name"
-msgstr "Name"
+msgstr "Nafn"
 
 msgid "fullpage_dlg_value"
 msgstr "Value"
 
 msgid "fullpage_dlg_content"
-msgstr "Content"
+msgstr "Innihald"
 
 msgid "fullpage_dlg_rel"
 msgstr "Rel"
@@ -2179,83 +2191,113 @@ msgid "fullpage_dlg_hreflang"
 msgstr "Href lang"
 
 msgid "fullpage_dlg_general_props"
-msgstr "General"
+msgstr "Almennt"
 
 msgid "fullpage_dlg_advanced_props"
-msgstr "Advanced"
+msgstr "Ítarlegt"
 
 msgid "template_desc"
-msgstr "Insert predefined template content"
+msgstr "Setja inn tilbúið snið"
 
 msgid "template_dlg_title"
-msgstr "Templates"
+msgstr "Snið"
 
 msgid "template_dlg_label"
-msgstr "Template"
+msgstr "Snið"
 
 msgid "template_dlg_desc_label"
-msgstr "Description"
+msgstr "Lýsing"
 
 msgid "template_dlg_desc"
-msgstr "Insert predefined template content"
+msgstr "Setja inn tilbúið snið"
 
 msgid "template_dlg_select"
-msgstr "Select a template"
+msgstr "Velja snið"
 
 msgid "template_dlg_preview"
-msgstr "Preview"
+msgstr "Skoða"
 
 msgid "template_dlg_warning"
-msgstr "Warning: Updating a template with a different one may cause data loss."
+msgstr "Viðvörun: Með því að uppfæra snið öðru sniði gæti leitt til þess að gögn týnist."
 
 msgid "template_dlg_mdate_format"
-msgstr "%Y-%m-%d %H:%M:%S"
+msgstr "%d. %m %Y %H:%M:%S"
 
 msgid "template_dlg_cdate_format"
-msgstr "%Y-%m-%d %H:%M:%S"
+msgstr "%d. %m %Y %H:%M:%S"
 
 msgid "template_dlg_months_long"
-msgstr "January,February,March,April,May,June,July,August,September,October,November,December"
+msgstr "janúar,febrúar,mars,apríl,maí,júní,júlí,ágúst,september,október,nóvember,desember"
 
 msgid "template_dlg_months_short"
-msgstr "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec"
+msgstr "jan,feb,mar,apr,maí,jún,júl,ágú,sep,okt,nov,des"
 
 msgid "template_dlg_day_long"
-msgstr "Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday"
+msgstr "sunnudagur,mánudagur,þriðjudagur,miðvikudagur,fimmtudagur,föstudagur,laugardagur,sunnudagur"
 
 msgid "template_dlg_day_short"
-msgstr "Sun,Mon,Tue,Wed,Thu,Fri,Sat,Sun"
+msgstr "sun,mán,þri,mið,fim,fös,lau,sun"
 
 msgid "visualchars_desc"
 msgstr "Visual control characters on/off."
 
 msgid "spellchecker_desc"
-msgstr "Toggle spellchecker"
+msgstr "Virka/óvirkja villupúka"
 
 msgid "spellchecker_menu"
-msgstr "Spellchecker settings"
+msgstr "Stillingar villupúka"
 
 msgid "spellchecker_ignore_word"
-msgstr "Ignore word"
+msgstr "Sleppa orði"
 
 msgid "spellchecker_ignore_words"
-msgstr "Ignore all"
+msgstr "Sleppa öllu"
 
 msgid "spellchecker_langs"
-msgstr "Languages"
+msgstr "Tungumál"
 
 msgid "spellchecker_wait"
-msgstr "Please wait..."
+msgstr "Augnablik..."
 
 msgid "spellchecker_sug"
-msgstr "Suggestions"
+msgstr "Tillögur"
 
 msgid "spellchecker_no_sug"
-msgstr "No suggestions"
+msgstr "Engar tillögur"
 
 msgid "spellchecker_no_mpell"
-msgstr "No misspellings found."
+msgstr "Fann engar stafsetningavillur."
 
 msgid "pagebreak_desc"
 msgstr "Insert page break."
+
+msgid "advlist_types"
+msgstr "Types"
+
+msgid "advlist_def"
+msgstr "Default"
+
+msgid "advlist_lower_alpha"
+msgstr "Lower alpha"
+
+msgid "advlist_lower_greek"
+msgstr "Lower greek"
+
+msgid "advlist_lower_roman"
+msgstr "Lower roman"
+
+msgid "advlist_upper_alpha"
+msgstr "Upper alpha"
+
+msgid "advlist_upper_roman"
+msgstr "Upper roman"
+
+msgid "advlist_circle"
+msgstr "Circle"
+
+msgid "advlist_disc"
+msgstr "Disc"
+
+msgid "advlist_square"
+msgstr "Square"
 

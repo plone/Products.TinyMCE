@@ -1,8 +1,4 @@
-.panel_wrapper {height:85px;}
-.panel_wrapper div.current {height:85px;}
+.panel_wrapper, .panel_wrapper div.current {height:200px;}
 
 /* IE */
-* html .panel_wrapper {height:100px;}
-* html .panel_wrapper div.current {height:100px;}
-
-#replace_panel { display: none; }
+* html .panel_wrapper, * html .panel_wrapper div.current {height:220px;}

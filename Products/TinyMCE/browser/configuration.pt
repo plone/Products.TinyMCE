@@ -1,0 +1,3 @@
+<script type="text/javascript"
+    tal:condition="view/show"
+    tal:attributes="src string:${context/absolute_url}/tiny_mce_gzip.js"></script>

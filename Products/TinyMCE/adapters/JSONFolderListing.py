@@ -1,24 +1,30 @@
+try:
+    import simplejson as json
+    json   # pyflakes
+except ImportError:
+    import json
+
 from zope.interface import implements
 from zope.component import getUtility
-
-try:
-    import json
-except ImportError:
-    import simplejson as json
-
 from plone.i18n.normalizer.interfaces import IIDNormalizer
 from plone.app.layout.navigation.root import getNavigationRoot
 from plone.app.layout.navigation.interfaces import INavigationRoot
-from Products.TinyMCE.adapters.interfaces.JSONFolderListing import IJSONFolderListing
 from Products.CMFCore.interfaces._content import IFolderish
+from Products.CMFPlone.interfaces.siteroot import IPloneSiteRoot
 from Products.CMFCore.utils import getToolByName
 from Acquisition import aq_inner
 from Acquisition import aq_parent
+
+from Products.TinyMCE.adapters.interfaces.JSONFolderListing import IJSONFolderListing
 
 
 class JSONFolderListing(object):
     """Returns a folderish like listing in JSON"""
     implements(IJSONFolderListing)
+
+    root_icon = "img/home.png"
+    folder_icon = "img/folder.png"
+    listing_base_query = {}
 
     def __init__(self, context):
         """Constructor"""
@@ -33,15 +39,21 @@ class JSONFolderListing(object):
         root_url = root.absolute_url()
 
         if path is not None:
-            root_abs_url = root.absolute_url()
-            path = path.replace(root_abs_url, '', 1)
-            path = path.strip('/')
+            path = path.replace(root_url, '', 1).strip('/')
             root = aq_inner(root.restrictedTraverse(path))
 
         relative = aq_inner(self.context).getPhysicalPath()[len(root.getPhysicalPath()):]
         if path is None:
             # Add siteroot
-            result.append({'title': root.title_or_id(), 'url': '/'.join(root.getPhysicalPath())})
+            if IPloneSiteRoot.providedBy(root):
+                icon = self.root_icon
+            else:
+                icon = self.folder_icon
+            result.append({
+                'title': root.title_or_id(),
+                'url': '/'.join(root.getPhysicalPath()),
+                'icon': '<img src="%s" width="16" height="16" />' % icon,
+            })
 
         for i in range(len(relative)):
             now = relative[:i + 1]
@@ -49,14 +61,18 @@ class JSONFolderListing(object):
 
             if IFolderish.providedBy(obj):
                 if not now[-1] == 'talkback':
-                    result.append({'title': obj.title_or_id(), 'url': root_url + '/' + '/'.join(now)})
+                    result.append({
+                        'title': obj.title_or_id(),
+                        'url': root_url + '/' + '/'.join(now),
+                        'icon': '<img src="%s" width="16" height="16" />' % self.folder_icon,
+                    })
         return result
 
-    def getListing(self, filter_portal_types, rooted, document_base_url, upload_type=None):
+    def getListing(self, filter_portal_types, rooted, document_base_url, upload_type=None, image_types=None):
         """Returns the actual listing"""
-
         catalog_results = []
         results = {}
+        image_types = image_types or []
 
         object = aq_inner(self.context)
         portal_catalog = getToolByName(object, 'portal_catalog')
@@ -77,9 +93,22 @@ class JSONFolderListing(object):
             # get all items from siteroot to context (title and url)
             results['path'] = self.getBreadcrumbs()
 
+        plone_layout = self.context.restrictedTraverse('@@plone_layout', None)
+        if plone_layout is None:
+            # Plone 3
+            plone_view = self.context.restrictedTraverse('@@plone')
+            getIcon = lambda brain: plone_view.getIcon(brain).html_tag()
+        else:
+            # Plone >= 4
+            getIcon = lambda brain: plone_layout.getIcon(brain)()
+
         # get all portal types and get information from brains
         path = '/'.join(object.getPhysicalPath())
-        for brain in portal_catalog(portal_type=filter_portal_types, sort_on='getObjPositionInParent', path={'query': path, 'depth': 1}):
+        query = self.listing_base_query.copy()
+        query.update({'portal_type': filter_portal_types,
+                      'sort_on': 'getObjPositionInParent',
+                      'path': {'query': path, 'depth': 1}})
+        for brain in portal_catalog(**query):
             catalog_results.append({
                 'id': brain.getId,
                 'uid': brain.UID or None,  # Maybe Missing.Value
@@ -87,8 +116,9 @@ class JSONFolderListing(object):
                 'portal_type': brain.portal_type,
                 'normalized_type': normalizer.normalize(brain.portal_type),
                 'title': brain.Title == "" and brain.id or brain.Title,
-                'icon': brain.getIcon,
-                'is_folderish': brain.is_folderish
+                'icon': getIcon(brain),
+                'description': brain.Description,
+                'is_folderish': brain.is_folderish,
                 })
 
         # add catalog_ressults
@@ -103,4 +133,5 @@ class JSONFolderListing(object):
                 results['upload_allowed'] = fti.isConstructionAllowed(object)
 
         # return results in JSON format
+        self.context.REQUEST.response.setHeader("Content-type", "application/json")
         return json.dumps(results)

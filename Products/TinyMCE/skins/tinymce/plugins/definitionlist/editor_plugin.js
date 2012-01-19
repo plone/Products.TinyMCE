@@ -1,6 +1,6 @@
 /**
  * @author Rob Gietema
- * @copyright Copyright © 2009, Four Digits, All rights reserved.
+ * @copyright Copyright ? 2009, Four Digits, All rights reserved.
  */
 
 (function() {
@@ -132,7 +132,11 @@
             a.push("body");
             var p = e;
             while (!this._inArray(p.nodeName.toLowerCase(), a)) {
-                p = p.parentNode;
+                if (p.parentNode == null) {
+                    return false;
+                } else {
+                    p = p.parentNode;
+                }
             }
             if (p.nodeName.toLowerCase() == "body") {
                 return false;

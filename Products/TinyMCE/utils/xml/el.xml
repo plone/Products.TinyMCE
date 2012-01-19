@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>Paraschos Vasilis (vaspar@vsite.gr)</author>
+    <version major="2" minor="8" releasedate="2010-03-02" />
+    <description>This is the Greek language pack (UTF-8) for TinyMCE.</description>
+  </header>
+  <language code="el" title="Greek" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">Θέλετε να χρησιμοποιήσετε την λειτουργία WYSIWYG ;</item>
+      <item name="apply">Εφαρμογή</item>
+      <item name="insert">Εισαγωγή</item>
+      <item name="update">Ενημέρωση</item>
+      <item name="cancel">Άκυρο</item>
+      <item name="close">Κλείσιμο</item>
+      <item name="browse">Εύρεση</item>
+      <item name="class_name">Κλάση</item>
+      <item name="not_set">-- Μη ορισμένο --</item>
+      <item name="clipboard_msg">Οι λειτουργίες Αντιγραφή/Αποκοπή/Επικόλληση δεν είναι διαθέσιμες σε Mozilla και Firefox.\nΘέλετε περισσότερες πληροφορίες ;</item>
+      <item name="clipboard_no_support">Δεν υποστηρίζεται από τον φυλλομετρητή σας, χρησιμοποιήστε τις συντομεύσεις πληκτρολογίου.</item>
+      <item name="popup_blocked">Ένα popup-blocker πρόγραμμα έχει απενεργοποιήσει ένα παράθυρο απαραίτητο για την εφαρμογή. Πρέπει να το απενεργοποιήσετε για την ιστοσελίδα αυτή για να χρησιμοποιήσετε πλήρως την εφαρμογή.</item>
+      <item name="invalid_data">Error: Invalid values entered, these are marked in red.</item>
+      <item name="more_colors">Περισσότερα χρώματα</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">Έντονα (Ctrl+B)</item>
+      <item name="italic_desc">Πλάγια (Ctrl+I)</item>
+      <item name="underline_desc">Υπογραμμισμένα (Ctrl+U)</item>
+      <item name="striketrough_desc">Διαγραμμισμένα</item>
+      <item name="bullist_desc">Λίστα χωρίς σειρά</item>
+      <item name="numlist_desc">Λίστα με σειρά</item>
+      <item name="undo_desc">Αναίρεση (Ctrl+Z)</item>
+      <item name="redo_desc">Επανάληψη (Ctrl+Y)</item>
+      <item name="cleanup_desc">Καθαρισμός μπερδεμένου κώδικα</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">Στυλ</item>
+      <item name="font_size">Μέγεθος Γραμμάτων</item>
+      <item name="fontdefault">Γραμματοσειρά</item>
+      <item name="block">Μορφοποίηση</item>
+      <item name="paragraph">Παράγραφος</item>
+      <item name="div">Div</item>
+      <item name="address">Διεύθυνση</item>
+      <item name="pre">Pre</item>
+      <item name="h1">Επικεφαλίδα 1</item>
+      <item name="h2">Επικεφαλίδα 2</item>
+      <item name="h3">Επικεφαλίδα 3</item>
+      <item name="h4">Επικεφαλίδα 4</item>
+      <item name="h5">Επικεφαλίδα 5</item>
+      <item name="h6">Επικεφαλίδα 6</item>
+      <item name="blockquote">Blockquote</item>
+      <item name="code">Κώδικας</item>
+      <item name="samp">Δείγμα Κώδικα</item>
+      <item name="dt">Ορισμός</item>
+      <item name="dd">Περιγραφή Ορισμού</item>
+      <!-- Buttons -->
+      <item name="bold_desc">Μαύρα (Ctrl+B)</item>
+      <item name="italic_desc">Πλάγια (Ctrl+I)</item>
+      <item name="underline_desc">Υπογραμμισμένα (Ctrl+U)</item>
+      <item name="striketrough_desc">Διαγραμμισμένα</item>
+      <item name="justifyleft_desc">Στοίχιση αριστερά</item>
+      <item name="justifycenter_desc">Στοίχιση κέντρο</item>
+      <item name="justifyright_desc">Στοίχιση δεξιά</item>
+      <item name="justifyfull_desc">Στοίχιση πλήρης</item>
+      <item name="bullist_desc">Λίστα χωρίς σειρά</item>
+      <item name="numlist_desc">Λίστα με σειρά</item>
+      <item name="outdent_desc">Προεξοχή</item>
+      <item name="indent_desc">Εσοχή</item>
+      <item name="undo_desc">Αναίρεση (Ctrl+Z)</item>
+      <item name="redo_desc">Επανάληψη (Ctrl+Y)</item>
+      <item name="link_desc">Εισαγωγή/επεξεργασία συνδέσμου</item>
+      <item name="unlink_desc">Κατάργηση συνδέσμου</item>
+      <item name="image_desc">Εισαγωγή/επεξεργασία εικόνας</item>
+      <item name="cleanup_desc">Καθαρισμός μπερδεμένου κώδικα</item>
+      <item name="code_desc">Επεξεργασία HTML Κώδικα</item>
+      <item name="sub_desc">Δείκτης</item>
+      <item name="sup_desc">Εκθέτης</item>
+      <item name="hr_desc">Εισαγωγή οριζόντιας γραμμής</item>
+      <item name="removeformat_desc">Αφαίρεση μορφοποίησης</item>
+      <item name="custom1_desc">Η περιγραφή σας εδώ</item>
+      <item name="forecolor_desc">Επιλογή χρώματος κειμένου</item>
+      <item name="backcolor_desc">Επιλογή χρώματος φόντου</item>
+      <item name="charmap_desc">Εισαγωγή χαρακτήρα</item>
+      <item name="visualaid_desc">Εμφάνιση/Απόκρυψη βοηθητικών γραμμών και αόρατων στοιχείων</item>
+      <item name="anchor_desc">Εισαγωγή/επεξεργασία anchor</item>
+      <item name="cut_desc">Αποκοπή</item>
+      <item name="copy_desc">Αντιγραφή</item>
+      <item name="paste_desc">Επικόλληση</item>
+      <item name="image_props_desc">Ιδιότητες εικόνας</item>
+      <item name="newdocument_desc">Νέο έγγραφο</item>
+      <item name="help_desc">Βοήθεια</item>
+      <item name="blockquote_desc">Blockquote</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">Οι λειτουργίες Αντιγραφή/Αποκοπή/Επικόλληση δεν είναι διαθέσιμες σε Mozilla και Firefox.\nΘέλετε περισσότερες πληροφορίες ;</item>
+      <item name="path">Διαδρομή</item>
+      <item name="newdocument">Σιίγουρα θέλετε να καθαρίσετε όλο το περιεχόμενο ;</item>
+      <item name="toolbar_focus">Μετάβαση στα κουμπιά εργαλείων - Alt+Q, Μετάβαση στον επεξεργαστή κειμένου - Alt-Z, Μετάβαση στην διαδρομή του στοιχείου - Alt-X</item>
+      <item name="more_colors">Περισσότερα χρώματα</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width">20</item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width">80</item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">Σχετικά με το TinyMCE</item>
+      <item name="about_general">Σχετικά</item>
+      <item name="about_help">Βοήθεια</item>
+      <item name="about_license">Άδεια</item>
+      <item name="about_plugins">Σχετικά με τα πρόσθετα</item>
+      <item name="about_plugin">Σχετικά με το πρόσθετο</item>
+      <item name="about_author">Συγγραφέας</item>
+      <item name="about_version">Έκδοση</item>
+      <item name="about_loaded">Φορτωμένα πρόσθετα</item>
+      <!-- Anchor -->
+      <item name="anchor_title">Εισαγωγή/επεξεργασία anchor</item>
+      <item name="anchor_name">Όνομα anchor</item>
+      <!-- Source -->
+      <item name="code_title">Επεξεργαστής κώδικα HTML</item>
+      <item name="code_wordwrap">Αναδίπλωση κειμένου</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">Διαλέξτε χρώμα</item>
+      <item name="colorpicker_picker_tab">Επιλογή</item>
+      <item name="colorpicker_picker_title">Επιλογή χρώματος</item>
+      <item name="colorpicker_palette_tab">Παλέτα</item>
+      <item name="colorpicker_palette_title">Χρώματα παλέτας</item>
+      <item name="colorpicker_named_tab">Ονομαστικά</item>
+      <item name="colorpicker_named_title">Ονομαστικά χρώματα</item>
+      <item name="colorpicker_color">Χρώμα:</item>
+      <item name="colorpicker_name">Όνομα:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">Επιλογή χαρακτήρα</item>
+      <!-- Image -->
+      <item name="image_title">Εισαγωγή/επεξεργασία εικόνας</item>
+      <item name="image_src">Διαδρομή URL Εικόνας</item>
+      <item name="image_alt">Περιγραφή εικόνας</item>
+      <item name="image_list">Λίστα εικόνων</item>
+      <item name="image_border">Πλαίσιο</item>
+      <item name="image_dimensions">Διαστάσεις</item>
+      <item name="image_vspace">Απόσταση κάθετη</item>
+      <item name="image_hspace">Απόσταση οριζόντια</item>
+      <item name="image_align">Στοίχιση</item>
+      <item name="image_align_baseline">Γραμμή στοίχισης γραμμάτων</item>
+      <item name="image_align_top">Επάνω</item>
+      <item name="image_align_middle">Μέση</item>
+      <item name="image_align_bottom">Κάτω</item>
+      <item name="image_align_texttop">Κέιμενο πάνω</item>
+      <item name="image_align_textbottom">Κείμενο κάτω</item>
+      <item name="image_align_left">Αριστερά</item>
+      <item name="image_align_right">Δεξιά</item>
+      <!-- Link -->
+      <item name="link_title">Εισαγωγή/επεξεργασία συνδέσμου</item>
+      <item name="link_url">Διαδρομή URL συνδέσμου</item>
+      <item name="link_target">Στόχος</item>
+      <item name="link_target_same">Άνοιγμα στο ίδιο παράθυρο</item>
+      <item name="link_target_blank">Άνοιγμα σε νέο παράθυρο</item>
+      <item name="link_titlefield">Τίτλος</item>
+      <item name="link_is_email">Η διαδρομή URL που εισάγατε φαίνεται να είναι email, να προστεθεί το απαραίτητο mailto: ;</item>
+      <item name="link_is_external">Η διαδρομή URL που εισάγατε φαίνεται να είναι εξωτερικός σύνδεσμος, να προστεθεί το απαραίτητο http:// ;</item>
+      <item name="link_list">Λίστα συνδέσμων</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">Στοίχιση</item>
+      <item name="left">Αριστερά</item>
+      <item name="center">Κέντρο</item>
+      <item name="right">Δεξιά</item>
+      <item name="full">Πλήρης</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%Y-%m-%d</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">Εισαγωγή ημέρας</item>
+      <item name="inserttime_desc">Εισαγωγή ώρας</item>
+      <item name="months_long">Ιανουάριος,Φεβρουάριος,Μάρτιος,Απρίλιος,Μάιος,Ιούνιος,Ιούλιος,Αύγουστος,Σεπτέμβριος,Οκτώβριος,Νοέμβριος,Δεκέμβριος</item>
+      <item name="months_short">Ιαν,Φεβ,Μάρ,Απρ,Μάι,Ιούν,Ιούλ,Αύγ,Σεπ,Οκτ,Νοέ,Δεκ</item>
+      <item name="day_long">Κυριακή,Δευτέρα,Τρίτη,Τετάρτη,Πέμπτη,Παρασκευή,Σάββατο</item>
+      <item name="day_short">Κυ,Δε,Τρ,Τετ,Πέμ,Παρ,Σαβ</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">Εκτύπωση</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">Προεπισκόπηση</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">Κατεύθυνση αριστερά προς δεξιά</item>
+      <item name="rtl_desc">Κατεύθυνση δεξιά προς αριστερά</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">Εισαγωγή νέου layer</item>
+      <item name="forward_desc">Μετακίνηση στο προσκήνιο</item>
+      <item name="backward_desc">Μετακίνηση στο παρασκήνιο</item>
+      <item name="absolute_desc">Απόλυτη/Σχετική τοποθέτηση</item>
+      <item name="content">Νέο layer...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">Αποθήκευση</item>
+      <item name="cancel_desc">Ακύρωση όλων των αλλαγών</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">Εισαγωγή non-breaking κενού χαρακτήρα</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">Εκτέλεση ελέγχου ορθογραφίας</item>
+      <item name="download">Το ieSpell δεν βρέθηκε. Να κατέβει τώρα ;</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">Οριζόντια γραμμή</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">Πλάτος</item>
+      <item name="size">Ύψος</item>
+      <item name="noshade">Χωρίς σκιά</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">Συναισθήματα</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">Εισαγωγή συναισθήματος</item>
+      <item name="desc">Συναισθήματα</item>
+      <item name="cool">Άνετος</item>
+      <item name="cry">Δακρυσμένος</item>
+      <item name="embarassed">Αμήχανος</item>
+      <item name="foot_in_mouth">Κλωτσιά στο στόμα</item>
+      <item name="frown">Κατσουφιασμένος</item>
+      <item name="innocent">Αθώος</item>
+      <item name="kiss">Φιλί</item>
+      <item name="laughing">Γέλιο</item>
+      <item name="money_mouth">Λεφτά ως στόμα</item>
+      <item name="sealed">Σφραγισμένο στόμα</item>
+      <item name="smile">Χαμόγελο</item>
+      <item name="surprised">Έκπληκτος</item>
+      <item name="tongue_out">Γλώσσα έξω</item>
+      <item name="undecided">Αναποφάσιστος</item>
+      <item name="wink">Κλείσιμο ματιού</item>
+      <item name="yell">Φωνάζω</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">Εύρεση</item>
+      <item name="replace_desc">Εύρεση/Αντικατάσταση</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">Εύρεση ξανά</item>
+      <item name="notfound">Η αναζήτηση τελείωσε. Το ζητούμενο κείμενο δεν βρέθηκε.</item>
+      <item name="search_title">Εύρεση</item>
+      <item name="replace_title">Εύρεση/Αναζήτηση</item>
+      <item name="allreplaced">Όλες οι εμφανίσεις του ζητούμενου κειμένου αντικαταστάθηκαν.</item>
+      <item name="findwhat">Εύρεση του</item>
+      <item name="replacewith">Αντικατάσταση με</item>
+      <item name="direction">Κατεύθυνση</item>
+      <item name="up">Πάνω</item>
+      <item name="down">Κάτω</item>
+      <item name="mcase">Ταίριασμα κεφαλαία/μικρά</item>
+      <item name="findnext">Βρες επόμενο</item>
+      <item name="replace">Αντικατάσταση</item>
+      <item name="replaceall">Αντικατ. όλων</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">Εισαγωγή/επεξεργασία εικόνας</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">Γενικά</item>
+      <item name="tab_appearance">Εμφάνιση</item>
+      <item name="tab_advanced">Για προχωρημένους</item>
+      <item name="general">Γενικά</item>
+      <item name="title">Τίτλος</item>
+      <item name="preview">Προεπισκόπηση</item>
+      <item name="constrain_proportions">Διατήρηση αναλογίας πλ. - ύψους</item>
+      <item name="langdir">Κατεύθυνση γλώσσας</item>
+      <item name="langcode">Κωδικός γλώσσας</item>
+      <item name="long_desc">Σύνδεσμος πλήρους περιγραφής</item>
+      <item name="style">Στυλ</item>
+      <item name="classes">Κλάσεις</item>
+      <item name="ltr">Αριστερά προς δεξιά</item>
+      <item name="rtl">Δεξιά προς αριστερά</item>
+      <item name="id">Id</item>
+      <item name="map">Χάρτης εικόνας</item>
+      <item name="swap_image">Ανταλλαγή εικόνας</item>
+      <item name="alt_image">Εναλλακτική εικόνα</item>
+      <item name="mouseover">για mouse over</item>
+      <item name="mouseout">για mouse out</item>
+      <item name="misc">Διάφορα</item>
+      <item name="example_img">Δοκιμαστική εικόνα</item>
+      <item name="missing_alt">Σίγουρα θέλετε να συνεχίσετε χωρίς περιγραφή εικόνας; Χωρίς αυτήνη εικόνα μπορεί να μην είναι προσβάσιμη σε κάποιους χρήστες με προβλήματα, ή σ'αυτούς που χρησιμοποιούν φυλλομετρητή κειμένου, ή βλέπουν το Ιντερνετ χωρίς εικόνες.</item>
+      <item name="dialog_title">Εισαγωγή/επεξεργασία εικόνας</item>
+      <item name="src">Διαδρομή URL εικόνας</item>
+      <item name="alt">Περιγραφή εικόνας</item>
+      <item name="list">Λίστα εικόνων</item>
+      <item name="border">Πλαίσιο</item>
+      <item name="dimensions">Διαστάσεις</item>
+      <item name="vspace">Απόσταση κάθετη</item>
+      <item name="hspace">Απόσταση οριζόντια</item>
+      <item name="align">Στοίχιση</item>
+      <item name="align_baseline">Γραμμή στοίχισης γραμμάτων</item>
+      <item name="align_top">Πάνω</item>
+      <item name="align_middle">Μέση</item>
+      <item name="align_bottom">Κάτω</item>
+      <item name="align_texttop">Κείμενο πάνω</item>
+      <item name="align_textbottom">Κείμενο κάτω</item>
+      <item name="align_left">Αριστερά</item>
+      <item name="align_right">Δεξιά</item>
+      <item name="image_list">Λίστα εικόνων</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">Εισαγωγή/επεξεργασία συνδέσμου</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">50</item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">Εισαγωγή/επεξεργασία συνδέσμου</item>
+      <item name="url">Διαδρομή URL συνδέσμου</item>
+      <item name="target">Στόχος</item>
+      <item name="titlefield">Τίτλος</item>
+      <item name="is_email">Η διαδρομή URL που εισάγατε φαίνεται να είναι email, να προστεθεί το απαραίτητο mailto: ;</item>
+      <item name="is_external">Η διαδρομή URL που εισάγατε φαίνεται να είναι εξωτερικός σύνδεσμος, να προστεθεί το απαραίτητο http:// ;</item>
+      <item name="list">Λίστα συνδέσμων</item>
+      <item name="general_tab">Γενικά</item>
+      <item name="popup_tab">Popup</item>
+      <item name="events_tab">Γεγονότα</item>
+      <item name="advanced_tab">Για προχωρημένους</item>
+      <item name="general_props">Γενικές ιδιότητες</item>
+      <item name="popup_props">Ιδιότητες Popup</item>
+      <item name="event_props">Γεγονότα</item>
+      <item name="advanced_props">Προχωρημένες ιδιότητες</item>
+      <item name="popup_opts">Επιλογές</item>
+      <item name="anchor_names">Anchors</item>
+      <item name="target_same">Άνοιγμα σε ίδιο παράθυρο / frame</item>
+      <item name="target_parent">Άνοιγμα στο γονικό window / frame</item>
+      <item name="target_top">Άνοιγμα στο πιο πάνω frame (αντικαθιστά όλα τα frames)</item>
+      <item name="target_blank">Άνοιγμα σε νέο παράθυρο</item>
+      <item name="popup">Javascript popup</item>
+      <item name="popup_url">Διαδρομή URL του Popup</item>
+      <item name="popup_name">Όνομα παραθύρου</item>
+      <item name="popup_return">Εισαγωγή 'return false'</item>
+      <item name="popup_scrollbars">Εμφάνιση ράβδων κύλισης</item>
+      <item name="popup_statusbar">Εμφάνιση γραμμής κατάστασης</item>
+      <item name="popup_toolbar">Εμφάνιση γραμμών εργαλείων</item>
+      <item name="popup_menubar">Εμφάνιση μενού</item>
+      <item name="popup_location">Εμφάνιση γραμμής τοποθεσίας</item>
+      <item name="popup_resizable">Να αλλάζουν οι διαστάσεις του παραθύρου</item>
+      <item name="popup_dependent">Εξαρτώμενο (μόνο για Mozilla/Firefox)</item>
+      <item name="popup_size">Μέγεθος</item>
+      <item name="popup_position">Θέση (X/Y)</item>
+      <item name="id">Id</item>
+      <item name="style">Στυλ</item>
+      <item name="classes">Κλάσεις</item>
+      <item name="target_name">Όνομα στόχου</item>
+      <item name="langdir">Κατεύθυνση γλώσσας</item>
+      <item name="target_langcode">Γλώσσα στόχου</item>
+      <item name="langcode">Κωδικός γλώσσας</item>
+      <item name="encoding">Κωδικοποίηση χαρακτήρων στόχου</item>
+      <item name="mime">Τύπος MIME στόχου</item>
+      <item name="rel">Σχέση σελίδας προς στόχο (REL)</item>
+      <item name="rev">Σχέση στόχου προς σελίδα (REV)</item>
+      <item name="tabindex">Tabindex</item>
+      <item name="accesskey">Πλήκτρο πρόσβασης</item>
+      <item name="ltr">Αριστερά προς δεξιά</item>
+      <item name="rtl">Δεξιά προς αριστερά</item>
+      <item name="link_list">Λίστα συνδέσμων</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">Citation</item>
+      <item name="abbr_desc">Συντομογραφία</item>
+      <item name="acronym_desc">Ακρονύμιο</item>
+      <item name="del_desc">Διαγραφή</item>
+      <item name="ins_desc">Εισαγωγή</item>
+      <item name="attribs_desc">Εισαγωγή/επεξεργασία ιδιοτήτων</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">Τίτλος</item>
+      <item name="attribute_label_id">ID</item>
+      <item name="attribute_label_class">Κλάση</item>
+      <item name="attribute_label_style">Στυλ</item>
+      <item name="attribute_label_cite">Cite</item>
+      <item name="attribute_label_datetime">Ημέρα/Ώρα</item>
+      <item name="attribute_label_langdir">Κατεύθυνση κειμένου</item>
+      <item name="attribute_option_ltr">Αριστερά προς δεξιά</item>
+      <item name="attribute_option_rtl">Δεξιά προς αριστερά</item>
+      <item name="attribute_label_langcode">Γλώσσα</item>
+      <item name="attribute_label_tabindex">TabIndex</item>
+      <item name="attribute_label_accesskey">Πλήκτρο πρόσβασης</item>
+      <item name="attribute_events_tab">Γεγονότα</item>
+      <item name="attribute_attrib_tab">Ιδιότητες</item>
+      <item name="general_tab">Γενικά</item>
+      <item name="attrib_tab">Ιδιότητες</item>
+      <item name="events_tab">Γεγονότα</item>
+      <item name="fieldset_general_tab">Γενικές Ρυθμίσεις</item>
+      <item name="fieldset_attrib_tab">Ιδιότητες στοιχείου</item>
+      <item name="fieldset_events_tab">Γεγονότα στοιχείου</item>
+      <item name="title_ins_element">Εισαγωγή στοιχείου</item>
+      <item name="title_del_element">Διαγραφή στοιχείου</item>
+      <item name="title_acronym_element">Ακρονύμιο στοιχείου</item>
+      <item name="title_abbr_element">Συντομογραφία στοιχείου</item>
+      <item name="title_cite_element">Citation στοιχείου</item>
+      <item name="remove">Αφαίρεση</item>
+      <item name="insert_date">Εισαγωγή τρέχουσας ημέρας/ώρας</item>
+      <item name="option_ltr">Αριστερά προς δεξιά</item>
+      <item name="option_rtl">Δεξιά προς αριστερά</item>
+      <item name="attribs_title">Εισαγωγή/επεξεργασία ιδιοτήτων</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">Επεξεργασία Στυλ CSS</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">Επεξεργασία Στυλ CSS</item>
+      <item name="apply">Εφαρμογή</item>
+      <item name="text_tab">Κείμενο</item>
+      <item name="background_tab">Φόντο</item>
+      <item name="block_tab">Μπλοκ</item>
+      <item name="box_tab">Κουτί</item>
+      <item name="border_tab">Πλαίσιο</item>
+      <item name="list_tab">Λίστα</item>
+      <item name="positioning_tab">Τοποθέτηση</item>
+      <item name="text_props">Κείμενο</item>
+      <item name="text_font">Γραμματοσειρά</item>
+      <item name="text_size">Μέγεθος γραμμάτων</item>
+      <item name="text_weight">Βάρος</item>
+      <item name="text_style">Στυλ</item>
+      <item name="text_variant">Παραλλαγή</item>
+      <item name="text_lineheight">Ύψος γραμμής</item>
+      <item name="text_case">Κεφ./Μικρά</item>
+      <item name="text_color">Χρώμα</item>
+      <item name="text_decoration">Διακόσμηση</item>
+      <item name="text_overline">Υπεργράμμιση</item>
+      <item name="text_underline">Υπογράμμιση</item>
+      <item name="text_striketrough">Διαγράμμιση</item>
+      <item name="text_blink">Να αναβοσβήνει</item>
+      <item name="text_none">Καμία</item>
+      <item name="background_color">Χρώμα φόντου</item>
+      <item name="background_image">Εικόνα φόντου</item>
+      <item name="background_repeat">Επανάληψη</item>
+      <item name="background_attachment">Προσάρτημα</item>
+      <item name="background_hpos">Οριζόντια θέση</item>
+      <item name="background_vpos">Κατακόρυφη θέση</item>
+      <item name="block_wordspacing">Απόσταση λέξεων</item>
+      <item name="block_letterspacing">Απόσταση χαρακτήρων</item>
+      <item name="block_vertical_alignment">Κατακόρυφη στοίχιση</item>
+      <item name="block_text_align">Στοίχιση κειμένου</item>
+      <item name="block_text_indent">Εσοχή κειμένου</item>
+      <item name="block_whitespace">Κενός χώρος</item>
+      <item name="block_display">Εμφάνιση</item>
+      <item name="box_width">Πλάτος</item>
+      <item name="box_height">Ύψος</item>
+      <item name="box_float">Float</item>
+      <item name="box_clear">Clear</item>
+      <item name="padding">Γέμισμα</item>
+      <item name="same">Ίδιο για όλα</item>
+      <item name="top">Πάνω</item>
+      <item name="right">Δεξιά</item>
+      <item name="bottom">Κάτω</item>
+      <item name="left">Αριστερά</item>
+      <item name="margin">Περιθώριο</item>
+      <item name="style">Στυλ</item>
+      <item name="width">Πλάτος</item>
+      <item name="height">Ύψος</item>
+      <item name="color">Χρώμα</item>
+      <item name="list_type">Τύπος</item>
+      <item name="bullet_image">Εικόνα τελείας</item>
+      <item name="position">Θέση</item>
+      <item name="positioning_type">Τύπος</item>
+      <item name="visibility">Ορατότητα</item>
+      <item name="zindex">Z-index</item>
+      <item name="overflow">Υπερχείλιση</item>
+      <item name="placement">Τοποθέτηση</item>
+      <item name="clip">Clip</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">Επικόλληση ως απλό κείμενο</item>
+      <item name="paste_word_desc">Επικόλληση από το Word</item>
+      <item name="selectall_desc">Επιλογή όλων</item>
+      <!--<item name="plaintext_mode_sticky">Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode.</item>-->
+      <!--<item name="plaintext_mode">Paste is now in plain text mode. Click again to toggle back to regular paste mode.</item>-->
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">Χρησιμοποιήστε CTRL+V για να κάνετε επικόλληση κειμένου στο παράθυρο.</item>
+      <item name="text_linebreaks">Να κρατηθούν τα linebreaks</item>
+      <item name="word_title">Χρησιμοποιήστε CTRL+V για να κάνετε επικόλληση κειμένου στο παράθυρο.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">Εισαγωγή νέου πίνακα</item>
+      <item name="row_before_desc">Εισαγωγή γραμμής πριν</item>
+      <item name="row_after_desc">Εισαγωγή γραμμής μετά</item>
+      <item name="delete_row_desc">Διαγραφή γραμμής</item>
+      <item name="col_before_desc">Εισαγωγή στήλης πριν</item>
+      <item name="col_after_desc">Εισαγωγή στήλης μετά</item>
+      <item name="delete_col_desc">Διαγραφή στήλης</item>
+      <item name="split_cells_desc">Διαχωρισμός συγχωνευμένων κελιών πίνακα</item>
+      <item name="merge_cells_desc">Συγχώνευση κελιών πίνακα</item>
+      <item name="row_desc">Ιδιότητες γραμμής πίνακα</item>
+      <item name="cell_desc">Ιδιότητες κελιού πίνακα</item>
+      <item name="props_desc">Ιδιότητες πίνακα</item>
+      <item name="paste_row_before_desc">Επικόλληση γραμμής πίνακα πριν</item>
+      <item name="paste_row_after_desc">Επικόλληση γραμμής πίνακα μετά</item>
+      <item name="cut_row_desc">Αποκοπή γραμμής πίνακα</item>
+      <item name="copy_row_desc">Αντιγραφή γραμμής πίνακα</item>
+      <item name="del">Διαγραφή πίνακα</item>
+      <item name="row">Γραμμή</item>
+      <item name="col">Στήλη</item>
+      <item name="cell">Κελί</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width">60</item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">Γενικά</item>
+      <item name="advanced_tab">Για προχωρημένους</item>
+      <item name="general_props">Γενικές ιδιότητες</item>
+      <item name="advanced_props">Προχωρημένες ιδιότητες</item>
+      <item name="rowtype">Γραμμή σε μέρος πίνακα</item>
+      <item name="title">Εισαγωγή/επεξεργασία πίνακα</item>
+      <item name="width">Πλάτος</item>
+      <item name="height">Ύψος</item>
+      <item name="cols">Στήλες</item>
+      <item name="rows">Γραμμές</item>
+      <item name="cellspacing">Απόσταση κελιών</item>
+      <item name="cellpadding">Γέμισμα κελιών</item>
+      <item name="border">Πλαίσιο</item>
+      <item name="align">Στοίχιση</item>
+      <item name="align_default">Προεπιλεγμένη</item>
+      <item name="align_left">Αριστερά</item>
+      <item name="align_right">Δεξιά</item>
+      <item name="align_middle">Κέντρο</item>
+      <item name="row_title">Ιδιότητες γραμμής πίνακα</item>
+      <item name="cell_title">Ιδιότητες κελιού πίνακα</item>
+      <item name="cell_type">Τύπος κελιού</item>
+      <item name="valign">Κατακόρυφη στοίχιση</item>
+      <item name="align_top">Πάνω</item>
+      <item name="align_bottom">Κάτω</item>
+      <item name="bordercolor">Χρώμα πλαισίου</item>
+      <item name="bgcolor">Χρώμα φόντου</item>
+      <item name="merge_cells_title">Συγχώνευση κελιών πίνακα</item>
+      <item name="id">Id</item>
+      <item name="style">Στυλ</item>
+      <item name="langdir">Κατεύθυνση γλώσσας</item>
+      <item name="langcode">Κωδικός γλώσσας</item>
+      <item name="mime">Τύπος MIME στόχου</item>
+      <item name="ltr">Αριστερά προς δεξιά</item>
+      <item name="rtl">Δεξιά προς αριστερά</item>
+      <item name="bgimage">Εικόνα φόντου</item>
+      <item name="summary">Περίληψη</item>
+      <item name="td">Δεδομένα</item>
+      <item name="th">Επικεφαλίδα</item>
+      <item name="cell_cell">Ενημέρωση τρέχοντος κελιού</item>
+      <item name="cell_row">Ενημέρωση όλων των κελιών της γραμμής</item>
+      <item name="cell_all">Ενημέρωση όλων των κελιών του πίνακα</item>
+      <item name="row_row">Ενημέρωση της τρέχουσας γραμμής</item>
+      <item name="row_odd">Ενημέρωση των μονών γραμμών του πίνακα</item>
+      <item name="row_even">Ενημέρωση των ζυγών γραμμών του πίνακα</item>
+      <item name="row_all">Ενημέρωση όλων των γραμμών του πίνακα</item>
+      <item name="thead">Κορυφή πίνακα</item>
+      <item name="tbody">Σώμα πίνακα</item>
+      <item name="tfoot">Βάση πίνακα</item>
+      <item name="scope">Εμβέλεια</item>
+      <item name="rowgroup">Ομάδα γραμμών</item>
+      <item name="colgroup">Ομάδα στηλών</item>
+      <item name="col_limit">Έχετε ξεπεράσει το όριο των στηλων που είναι {$cols}.</item>
+      <item name="row_limit">Έχετε ξεπεράσει το όριο των γραμμών που είναι {$rows}.</item>
+      <item name="cell_limit">Έχετε ξεπεράσει το όριο των κελιών που είναι {$cells}.</item>
+      <item name="missing_scope">Σίγουρα θέλετε να συνεχίσετε χωρίς να έχετε καθορίσει την εμβέλεια του κελιού της κορυφής πίνακα. Χωρίς αυτή, μπορεί να είναι δύσκολο για κάποιους χρήστες με προβλήματα να καταλάβουν το περιεχόμενο του πίνακα.</item>
+      <item name="caption">Επικεφαλίδα πίνακα</item>
+      <item name="frame">Frame</item>
+      <item name="frame_none">κανένα</item>
+      <item name="frame_groups">ομάδες</item>
+      <item name="frame_rows">γραμμές</item>
+      <item name="frame_cols">στήλες</item>
+      <item name="frame_all">όλα</item>
+      <item name="rules">Κανόνες</item>
+      <item name="rules_void">κενό</item>
+      <item name="rules_above">από πάνω</item>
+      <item name="rules_below">από κάτω</item>
+      <item name="rules_hsides">οριζόντιες πλευρές</item>
+      <item name="rules_lhs">αριστερή οριζόντια πλευρά</item>
+      <item name="rules_rhs">δεξιά οριζόντια πλευρά</item>
+      <item name="rules_vsides">κάθετες πλευρές</item>
+      <item name="rules_box">κουτί</item>
+      <item name="rules_border">πλαίσιο</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">Οι αλλαγές που κάνατε θα χαθούν αν φύγετε σε άλλη σελίδα.</item>
+      <!--<item name="restore_content">Restore auto-saved content.</item>-->
+      <!--<item name="warning_message">If you restore the saved content, you will lose all the content that is currently in the editor.\n\nAre you sure you want to restore the saved content?.</item>-->
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">Εναλλαγή πλήρους οθόνης</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">Εισαγωγή/επεξεργασία ενσωματωμένων media</item>
+      <item name="edit">Επεξεργασία ενσωματωμένων media</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">50</item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">Εισαγωγή/επεξεργασία ενσωματωμένων media</item>
+      <item name="general">Γενικά</item>
+      <item name="advanced">Για προχωρημένους</item>
+      <item name="file">Αρχείο/URL</item>
+      <item name="list">Λίστα</item>
+      <item name="size">Διαστάσεις</item>
+      <item name="preview">Προεπισκόπηση</item>
+      <item name="constrain_proportions">Διατήρηση αναλογίας πλ. - ύψους</item>
+      <item name="type">Τύπος</item>
+      <item name="id">Id</item>
+      <item name="name">Όνομα</item>
+      <item name="class_name">Κλάση</item>
+      <item name="vspace">Απόσταση κάθετη</item>
+      <item name="hspace">Απόσταση οριζόντια</item>
+      <item name="play">Αυτόματο εκκίνηση</item>
+      <item name="loop">Επανάληψη</item>
+      <item name="menu">Εμφάνιση μενού</item>
+      <item name="quality">Ποιότητα</item>
+      <item name="scale">Κλίμακα</item>
+      <item name="align">Στοίχιση</item>
+      <item name="salign">SAlign</item>
+      <item name="wmode">WMode</item>
+      <item name="bgcolor">Φόντο</item>
+      <item name="base">Βάση</item>
+      <item name="flashvars">Μεταβλητές Flash</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">AutoHREF</item>
+      <item name="cache">Μνήμη cache</item>
+      <item name="hidden">Κρυφό</item>
+      <item name="controller">Ελεγκτής</item>
+      <item name="kioskmode">Λειτουργία Kiosk</item>
+      <item name="playeveryframe">Παίξιμο όλων των καρέ</item>
+      <item name="targetcache">Μνήμη cache στόχου</item>
+      <item name="correction">Χωρίς διόρθωση</item>
+      <item name="enablejavascript">Ενεργοποίηση JavaScript</item>
+      <item name="starttime">Χρόνος έναρξης</item>
+      <item name="endtime">Χρόνος λήξης</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">Choke speed</item>
+      <item name="target">Στόχος</item>
+      <item name="volume">Ένταση</item>
+      <item name="autostart">Αυτόματη εκκίνηση</item>
+      <item name="enabled">Ενεργοποίηση</item>
+      <item name="fullscreen">Πλήρης οθόνη</item>
+      <item name="invokeurls">Κλήση URLs</item>
+      <item name="mute">Σίγαση</item>
+      <item name="stretchtofit">Επέκταση ώστε να χωρέσει</item>
+      <item name="windowlessvideo">Βίντεο χωρίς παράθυρο</item>
+      <item name="balance">Ισορροπία</item>
+      <item name="baseurl">URL βάσης</item>
+      <item name="captioningid">Captioning id</item>
+      <item name="currentmarker">Τρέχον σημάδι</item>
+      <item name="currentposition">Τρέχουσα θέση</item>
+      <item name="defaultframe">Προεπιλεγμένο καρέ</item>
+      <item name="playcount">Πόσες φορές θα παίξει</item>
+      <item name="rate">Ρυθμός</item>
+      <item name="uimode">Λειτουργία UI</item>
+      <item name="flash_options">Επιλογές Flash</item>
+      <item name="qt_options">Επιλογές Quicktime</item>
+      <item name="wmp_options">Επιλογές Windows media player</item>
+      <item name="rmp_options">Επιλογές Real media player</item>
+      <item name="shockwave_options">Επιλογές Shockwave</item>
+      <item name="autogotourl">Αυτόματη μετάβαση στο URL</item>
+      <item name="center">Κέντρο</item>
+      <item name="imagestatus">Κατάσταση εικόνας</item>
+      <item name="maintainaspect">Διατήρηση αναλογίας πλ. - ύψους</item>
+      <item name="nojava">Χωρίς java</item>
+      <item name="prefetch">Προφόρτωση</item>
+      <item name="shuffle">Τυχαία σειρά</item>
+      <item name="console">Κονσόλα</item>
+      <item name="numloop">Πόσες φορές θα παίξει</item>
+      <item name="controls">Χειριστήρια</item>
+      <item name="scriptcallbacks">Script callbacks</item>
+      <item name="swstretchstyle">Στυλ επέκτασης</item>
+      <item name="swstretchhalign">Οριζόντια επέκταση</item>
+      <item name="swstretchvalign">Κατακόρυφη επέκταση</item>
+      <item name="sound">Ήχος</item>
+      <item name="progress">Πρόοδος</item>
+      <item name="qtsrc">Πηγή αρχείου</item>
+      <item name="qt_stream_warn">Πηγές ροών rtsp θα πρέπει να προστεθούν στο πεδίο Πηγή QT κάτω από την καρτέλα Για προχωρημένους.\nΕπίσης καλό θα ήταν να προσθέσετε μια απλή (όχι ροής) πηγή..</item>
+      <item name="align_top">Πάνω</item>
+      <item name="align_right">Δεξιά</item>
+      <item name="align_bottom">Κάτω</item>
+      <item name="align_left">Αριστερά</item>
+      <item name="align_center">Κέντρο</item>
+      <item name="align_top_left">Πάνω αριστερά</item>
+      <item name="align_top_right">Πάνω δεξιά</item>
+      <item name="align_bottom_left">Κάτω αριστερά</item>
+      <item name="align_bottom_right">Κάτω δεξιά</item>
+      <item name="flv_options">Επιλογές βίντεο Flash</item>
+      <item name="flv_scalemode">Λειτουργία κλίμακας</item>
+      <item name="flv_buffer">Ενδιάμεση μνήμη</item>
+      <item name="flv_startimage">Εικόνα αρχής</item>
+      <item name="flv_starttime">Χρόνος έναρξης</item>
+      <item name="flv_defaultvolume">Προεπιλεγμένη ένταση</item>
+      <item name="flv_hiddengui">Κρυμμένο GUI</item>
+      <item name="flv_autostart">Αυτόματη εκκίνηση</item>
+      <item name="flv_loop">Επανάληψη</item>
+      <item name="flv_showscalemodes">Εμφάνιση λειτουργιών κλίμακας</item>
+      <item name="flv_smoothvideo">Ομαλοποίηση εικόνας βίντεο</item>
+      <item name="flv_jscallback">JS Callback</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">Ιδιότητες εγγράφου</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">140</item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Ιδιότητες εγγράφου</item>
+      <item name="meta_tab">Γενικά</item>
+      <item name="appearance_tab">Εμφάνιση</item>
+      <item name="advanced_tab">Για προχωρημένους</item>
+      <item name="meta_props">Μετα-πληροφορίες</item>
+      <item name="langprops">Γλώσσα και κωδικοποίηση</item>
+      <item name="meta_title">Τίτλος</item>
+      <item name="meta_keywords">Λέξεις κλειδιά</item>
+      <item name="meta_description">Περιγραφή</item>
+      <item name="meta_robots">Ρομπότ</item>
+      <item name="doctypes">Doctype</item>
+      <item name="langcode">Κωδικός γλώσσας</item>
+      <item name="langdir">Κατεύθυνση γλώσσας</item>
+      <item name="ltr">Αριστερά προς δεξιά</item>
+      <item name="rtl">Δεξιά προς αριστερά</item>
+      <item name="xml_pi">Δήλωση XML</item>
+      <item name="encoding">Κωδικοποίηση χαρακτήρων</item>
+      <item name="appearance_bgprops">Ιδιότητες φόντου</item>
+      <item name="appearance_marginprops">Περιθώρια σώματος</item>
+      <item name="appearance_linkprops">Χρώματα συνδέσμων</item>
+      <item name="appearance_textprops">Ιδιότητες κειμένου</item>
+      <item name="bgcolor">Χρώμα φόντου</item>
+      <item name="bgimage">Εικόνα φόντου</item>
+      <item name="left_margin">Αριστερό περιθώριο</item>
+      <item name="right_margin">Δεξιό περιθώριο</item>
+      <item name="top_margin">Πάνω περιθώριο</item>
+      <item name="bottom_margin">Κάτω περιθώριο</item>
+      <item name="text_color">Χρώμα κειμένου</item>
+      <item name="font_size">Μέγεθος γραμμάτων</item>
+      <item name="font_face">Γραμματοσειρά</item>
+      <item name="link_color">Χρώμα συνδέσμου</item>
+      <item name="hover_color">Χρώμα συνδέσμου (Hover)</item>
+      <item name="visited_color">Χρώμα συνδέσμου (Visited)</item>
+      <item name="active_color">Χρώμα συνδέσμου (Active)</item>
+      <item name="textcolor">Χρώμα</item>
+      <item name="fontsize">Μέγεθος γραμμάτων</item>
+      <item name="fontface">Γραμματοσειρά</item>
+      <item name="meta_index_follow">Καταχώρηση και να ακολουθηθούν οι σύνδεσμοι</item>
+      <item name="meta_index_nofollow">Καταχώρηση και να μην ακολουθηθούν οι σύνδεσμοι</item>
+      <item name="meta_noindex_follow">Χωρίς καταχώρηση και να ακολουθηθούν οι σύνδεσμοι</item>
+      <item name="meta_noindex_nofollow">Χωρίς καταχώρηση και να μην ακολουθηθούν οι σύνδεσμοι</item>
+      <item name="appearance_style">Ιδιότητες στυλ και αρχείου στυλ</item>
+      <item name="stylesheet">Αρχείο στυλ</item>
+      <item name="style">Στυλ</item>
+      <item name="author">Συγγραφέας</item>
+      <item name="copyright">Δικαίωμα κατασκευαστή</item>
+      <item name="add">Προσθήκη στοιχείου</item>
+      <item name="remove">Αφαίρεση επιλεγμένου στοιχείου</item>
+      <item name="moveup">Μετακίνηση επιλεγμένου στοιχείου πάνω</item>
+      <item name="movedown">Μετακίνηση επιλεγμένου στοιχείου κάτω</item>
+      <item name="head_elements">Στοιχεία κεφαλής</item>
+      <item name="info">Πληροφορίες</item>
+      <item name="add_title">Στοιχείο τίτλου</item>
+      <item name="add_meta">Στοιχείο μετα-πληροφορίας</item>
+      <item name="add_script">Στοιχείο Script</item>
+      <item name="add_style">Στοιχείο στυλ</item>
+      <item name="add_link">Στοιχείο συνδέσμου</item>
+      <item name="add_base">Στοιχείο βάσης</item>
+      <item name="add_comment">Κόμβος σχολίου</item>
+      <item name="title_element">Στοιχείο τίτλου</item>
+      <item name="script_element">Στοιχείο Script</item>
+      <item name="style_element">Στοιχείο στυλ</item>
+      <item name="base_element">Στοιχείο βάσης</item>
+      <item name="link_element">Στοιχείο συνδέσμου</item>
+      <item name="meta_element">Στοιχείο μετα-πληροφορίας</item>
+      <item name="comment_element">Σχόλιο</item>
+      <item name="src">Πηγή</item>
+      <item name="language">Γλώσσα</item>
+      <item name="href">Href</item>
+      <item name="target">Στόχος</item>
+      <item name="type">Τύπος</item>
+      <item name="charset">Σετ χαρακτήρων</item>
+      <item name="defer">Defer</item>
+      <item name="media">Media</item>
+      <item name="properties">Ιδιότητες</item>
+      <item name="name">Όνομα</item>
+      <item name="value">Τιμή</item>
+      <item name="content">Περιεχόμενο</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Γλώσσα Href</item>
+      <item name="general_props">Γενικά</item>
+      <item name="advanced_props">Για προχωρημένους</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Εισαγωγή περιεχομένου για προκαθορισμένο πρότυπο</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">Πρότυπα</item>
+      <item name="label">Πρότυπο</item>
+      <item name="desc_label">Περιγραφή</item>
+      <item name="desc">Εισαγωγή περιεχομένου για προκαθορισμένο πρότυπο</item>
+      <item name="select">Επιλογή προτύπου</item>
+      <item name="preview">Προεπισκόπηση</item>
+      <item name="warning">Προσοχή : Ενημερώνοντας ένα πρότυπο με ένα άλλο, μπορεί να προκαλέσει απώλεια δεδομένων.</item>
+      <item name="mdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="cdate_format">%Y-%m-%d %H:%M:%S</item>
+      <item name="months_long">Ιανουάριος,Φεβρουάριος,Μάρτιος,Απρίλιος,Μάιος,Ιούνιος,Ιούλιος,Αύγουστος,Σεπτέμβριος,Οκτώβριος,Νοέμβριος,Δεκέμβριος</item>
+      <item name="months_short">Ιαν,Φεβ,Μάρ,Απρ,Μάι,Ιούν,Ιούλ,Αύγ,Σεπ,Οκτ,Νοέ,Δεκ</item>
+      <item name="day_long">Κυριακή,Δευτέρα,Τρίτη,Τετάρτη,Πέμπτη,Παρασκευή,Σάββατο</item>
+      <item name="day_short">Κυ,Δε,Τρ,Τετ,Πέμ,Παρ,Σαβ</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Οπτικοί χαρακτήρες ελέγχου ναι/όχι.</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">Εναλλαγή ορθογραφικού ελέγχου</item>
+      <item name="menu">Ρυθμίσεις ορθογραφικού ελέγχου</item>
+      <item name="ignore_word">Παράβλεψη λέξης</item>
+      <item name="ignore_words">Παράβλεψη όλων</item>
+      <item name="langs">Γλώσσες</item>
+      <item name="wait">Παρακαλώ περιμένετε...</item>
+      <item name="sug">Προτάσεις</item>
+      <item name="no_sug">Χωρίς προτάσεις</item>
+      <item name="no_mpell">Σωστή ορθογρφία.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">Εισαγωγή αλλαγής σελίδας.</item>
+    </group>
+    <group target="advlist">
+      <!--<item name="types">Types</item>-->
+      <!--<item name="def">Default</item>-->
+      <!--<item name="lower_alpha">Lower alpha</item>-->
+      <!--<item name="lower_greek">Lower greek</item>-->
+      <!--<item name="lower_roman">Lower roman</item>-->
+      <!--<item name="upper_alpha">Upper alpha</item>-->
+      <!--<item name="upper_roman">Upper roman</item>-->
+      <!--<item name="circle">Circle</item>-->
+      <!--<item name="disc">Disc</item>-->
+      <!--<item name="square">Square</item>-->
+    </group>
+  </language>
+</language-pack>

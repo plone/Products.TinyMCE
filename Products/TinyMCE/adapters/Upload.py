@@ -2,16 +2,13 @@ from Acquisition import aq_inner
 from Acquisition import aq_parent
 from zExceptions import BadRequest
 from zope.interface import implements
-from zope.component import getUtility
-
 from Products.CMFCore.utils import getToolByName
-from Products.CMFCore.interfaces._content import IFolderish
-from plone.outputfilters.browser.resolveuid import uuidFor
 
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.adapters.interfaces.Upload import IUpload
-from Products.TinyMCE import TMCEMessageFactory as _
-from zope.i18n import translate
+from Products.CMFCore.interfaces._content import IFolderish
+from plone.outputfilters.browser.resolveuid import uuidFor
+
 
 TEMPLATE = """
 <html>
@@ -27,18 +24,16 @@ class Upload(object):
 
     def __init__(self, context):
         """Constructor"""
-
         self.context = context
 
     def errorMessage(self, msg):
         """Returns an error message"""
-        msg = translate(msg, context=self.context.REQUEST)
         script = TEMPLATE % ("window.parent.uploadError('" + msg.replace("'", "\\'") + "');")
         return script
 
-    def okMessage(self, msg):
+    def okMessage(self, path, folder):
         """Returns an ok message"""
-        script = TEMPLATE % ("window.parent.uploadOk('" + msg.replace("'", "\\'") + "');")
+        script = TEMPLATE % ("window.parent.uploadOk('" + path.replace("'", "\\'") + "', '" + folder.replace("'", "\\'") + "');")
         return script
 
     def cleanupFilename(self, name):
@@ -70,39 +65,27 @@ class Upload(object):
 
     def upload(self):
         """Adds uploaded file"""
-
-        object = aq_inner(self.context)
-        if not IFolderish.providedBy(object):
-            object = aq_parent(object)
+        context = aq_inner(self.context)
+        if not IFolderish.providedBy(context):
+            context = aq_parent(context)
 
         context = self.context
         request = context.REQUEST
-        ctr_tool = getToolByName(self.context, 'content_type_registry')
-        utility = getUtility(ITinyMCE)
-
+        ctr_tool = getToolByName(context, 'content_type_registry')
         id = request['uploadfile'].filename
+
         content_type = request['uploadfile'].headers["Content-Type"]
         typename = ctr_tool.findTypeName(id, content_type, "")
 
         # Permission checks based on code by Danny Bloemendaal
 
-        # 1) check if the current user has permissions to add stuff
+        # 1) check if we are allowed to create an Image in folder
+        if not typename in [t.id for t in context.getAllowedTypes()]:
+            return self.errorMessage("Not allowed to upload a file of this type to this folder")
+
+        # 2) check if the current user has permissions to add stuff
         if not context.portal_membership.checkPermission('Add portal content', context):
-            return self.errorMessage(_("You do not have permission to upload files in this folder"))
-
-        # 2) check image types uploadable in folder.
-        #    priority is to content_type_registry image type
-        allowed_types = [t.id for t in context.getAllowedTypes()]
-        if typename in allowed_types:
-            uploadable_types = [typename]
-        else:
-            uploadable_types = []
-
-        if content_type.split('/')[0] == 'image':
-            image_portal_types = utility.imageobjects.split('\n')
-            uploadable_types += [t for t in image_portal_types
-                                    if t in allowed_types
-                                       and t not in uploadable_types]
+            return self.errorMessage("You do not have permission to upload files in this folder")
 
         # Get an unused filename without path
         id = self.cleanupFilename(id)
@@ -110,29 +93,16 @@ class Upload(object):
         title = request['uploadtitle']
         description = request['uploaddescription']
 
-        for metatype in uploadable_types:
-            try:
-                newid = context.invokeFactory(type_name=metatype, id=id)
-                if newid is None or newid == '':
-                    newid = id
+        newid = context.invokeFactory(type_name=typename, id=id)
 
-                obj = getattr(context, newid, None)
+        if newid is None or newid == '':
+            newid = id
 
-                # set primary field
-                pf = obj.getPrimaryField()
-                pf.set(obj, request['uploadfile'])
-                break
-
-            except ValueError:
-                continue
-            except BadRequest:
-                return self.errorMessage(_("Bad filename, please rename."))
-        else:
-            return self.errorMessage(_("Not allowed to upload a file of this type to this folder"))
-
+        obj = getattr(context, newid, None)
 
         # Set title + description.
         # Attempt to use Archetypes mutator if there is one, in case it uses a custom storage
+
         if title:
             try:
                 obj.setTitle(title)
@@ -145,15 +115,22 @@ class Upload(object):
             except AttributeError:
                 obj.description = description
 
+        # set primary field
+        pf = obj.getPrimaryField()
+        pf.set(obj, request['uploadfile'])
+
         if not obj:
-            return self.errorMessage(_("Could not upload the file"))
+            return self.errorMessage("Could not upload the file")
 
         obj.reindexObject()
+        folder = obj.aq_parent.absolute_url()
 
+        utility = getToolByName(context, 'portal_tinymce')
         if utility.link_using_uids:
-            return self.okMessage("resolveuid/%s" % (uuidFor(obj)))
-
-        return self.okMessage("%s" % (obj.absolute_url()))
+            path = "resolveuid/%s" % (uuidFor(obj))
+        else:
+            path = obj.absolute_url()
+        return self.okMessage(path, folder)
 
     def setDescription(self, description):
         self.context.setDescription(description)

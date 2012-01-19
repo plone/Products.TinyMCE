@@ -9,10 +9,11 @@
 	<script type="text/javascript" src="js/attributes.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/attributes.css" />
 </head>
-<body>
+<body role="application" aria-labelledby="app_title">
+<span style="display:none;" id="app_title" i18n:translate="xhtmlxtras_dlg_attribs_title"></span>
 	<div class="dialog-wrapper" id="content">
 		<form onsubmit="insertAction();return false;" action="#">
-			<fieldset>
+			<fieldset role="presentation">
 				<legend i18n:translate="xhtmlxtras_dlg_attribute_attrib_tab"></legend>
 				<div class="field">
 					<label for="dir" i18n:translate="xhtmlxtras_dlg_attribute_label_langdir"></label>
@@ -34,11 +35,9 @@
 
 			<div class="visualClear"><!-- --></div>
 
-			<div class="mceActionPanel formControls">
-				<span class="actionButtons">
-					<input type="submit" id="insert" class="context" name="insert" i18n:attributes="value common_update" />
-					<input type="button" id="cancel" class="context" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
-				</span>
+			<div class="mceActionPanel">
+                <input type="submit" id="insert" class="context" name="insert" i18n:attributes="value common_update" />
+                <input type="button" id="cancel" class="context" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
 			</div>
 		</form>
 	</div>

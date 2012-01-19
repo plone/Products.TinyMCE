@@ -10,6 +10,11 @@ background: transparent;
 font-size: 110%;
 padding: 1em 1em 0em 1em;
 background: &dtml-backgroundColor;;
+margin: 0!important; /* override Plone css, we don't need additional margin */
+}
+
+}
+
 }
 .dialog-wrapper table.listing {
 margin: 0em;
@@ -47,14 +52,20 @@ border-style:solid;
 border-width:1px;
 }
 
-#colorpicker #namedcolors a {
-display:block;
-float:left;
-height:10px;
-margin:1px 1px 0pt 0pt;
-overflow:hidden;
-width:10px;
-}
+/* Panels */
+.panel_wrapper div.panel {display:none;}
+.panel_wrapper div.current {display:block; width:100%; overflow:visible;}
+
+#colorpicker #preview {float:right; width:50px; height:14px;line-height:1px; border:1px solid black; margin-left:5px;}
+#colorpicker #colors {float:left; border:1px solid gray; cursor:crosshair;}
+#colorpicker #light {border:1px solid gray; margin-left:5px; float:left;width:15px; height:150px; cursor:crosshair;}
+#colorpicker #light div {overflow:hidden;}
+#colorpicker #previewblock {float:right; padding-left:10px; height:20px;}
+#colorpicker .panel_wrapper div.current {height:175px;}
+#colorpicker #namedcolors {width:150px;}
+#colorpicker #namedcolors a {display:block; float:left; width:10px; height:10px; margin:1px 1px 0 0; overflow:hidden;}
+#colorpicker #colornamecontainer {margin-top:5px;}
+#colorpicker #picker_panel fieldset {margin:auto;width:325px;}
 
 .subPanel {
 margin-left: 1em;
@@ -63,6 +74,9 @@ margin-left: 1em;
 .column {
 float: left;
 }
+.hide {
+display: none;
+}
 
 fieldset .field {
 margin-right: 0em;
@@ -70,11 +84,53 @@ margin-right: 0em;
 
 .radioscrolllist {
 line-height: 2em;
-overflow-y: scroll;
+overflow-y: auto;
 overflow-x: hidden;
 }
 
-.radioscrolllist div {
+.radioscrolllist .list {
 padding-left: 0.5em;
 }
+.radioscrolllist .list a {
+margin-left: 0.5em;
+}
+
+.contenttype-image {
+position: absolute;
+}
+
+/* InputPanel */
+.mceInputPanel {
+margin:10px 0 15px 0;
+}
+
+/* ActionPanel */
+.mceActionPanel {
+margin-top: 10px;
+text-align: center;
+margin-top: 10px;
+}
+.mceActionPanel input, .plonebutton {
+padding: 5px 20px;
+margin-bottom: 2px;
+color: #305c95;
+background-color: #ededed;
+border: #B3B3B3 solid 1px;
+border-radius: 6px;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+font-weight: bold;
+cursor: pointer;
+font-size: 1.0em;
+}
+.mceActionPanel #insert {
+width: 200px;
+}
+.mceActionPanel #cancel {
+background: transparent;
+color: inherit;
+font-weight: normal;
+}
 /* </dtml-with> */
+
+.verticalborder { height: 330px; width: 0px; border-right: 0.1em solid #329FD7; margin: 10px 20px 10px 20px }

@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os
 
 import transaction
@@ -98,19 +99,6 @@ class UtilityTestCase(IntegrationTestCase):
         # Neither should iespell:
         self.assertNotIn("&quot;iespell&quot;", browser.contents)
 
-        # Now, we enable the button and set AtD as the checker:
-        self.utility.toolbar_spellchecker = True
-        self.utility.libraries_spellchecker_choice = u'AtD'
-        transaction.commit()
-        browser.open('http://nohost/plone/createObject?type_name=Document')
-        self.assertIn("&quot;AtD&quot;", browser.contents)
-
-        # Now, we set iespell as the checker:
-        self.utility.libraries_spellchecker_choice = u'iespell'
-        transaction.commit()
-        browser.open('http://nohost/plone/createObject?type_name=Document')
-        self.assertIn("&quot;iespell&quot;", browser.contents)
-
         # When we have browser as the checker, neither iespell nor AtD should load:
         self.utility.libraries_spellchecker_choice = u'browser'
         transaction.commit()
@@ -131,26 +119,26 @@ class UtilityTestCase(IntegrationTestCase):
         scales = self.utility.getImageScales(primary_field)
         self.assertEqual(scales,
             [{'size': [0, 0], 'title': 'Original', 'value': ''},
-            {'size': [16, 16], 'title': 'Listing', 'value': 'image_listing'},
-            {'size': [32, 32], 'title': 'Icon', 'value': 'image_icon'},
-            {'size': [64, 64], 'title': 'Tile', 'value': 'image_tile'},
-            {'size': [128, 128], 'title': 'Thumb', 'value': 'image_thumb'},
-            {'size': [200, 200], 'title': 'Mini', 'value': 'image_mini'},
-            {'size': [400, 400], 'title': 'Preview', 'value': 'image_preview'},
-            {'size': [768, 768], 'title': 'Large', 'value': 'image_large'}]
+            {'size': [16, 16], 'title': 'Listing', 'value': '@@images/image/listing'},
+            {'size': [32, 32], 'title': 'Icon', 'value': '@@images/image/icon'},
+            {'size': [64, 64], 'title': 'Tile', 'value': '@@images/image/tile'},
+            {'size': [128, 128], 'title': 'Thumb', 'value': '@@images/image/thumb'},
+            {'size': [200, 200], 'title': 'Mini', 'value': '@@images/image/mini'},
+            {'size': [400, 400], 'title': 'Preview', 'value': '@@images/image/preview'},
+            {'size': [768, 768], 'title': 'Large', 'value': '@@images/image/large'}]
         )
 
         # If no primary field is given, we should get the scale dimensions from ATImage:
         scales = self.utility.getImageScales()
         self.assertEqual(scales,
             [{'size': [0, 0], 'title': 'Original', 'value': ''},
-            {'size': [16, 16], 'title': 'Listing', 'value': 'image_listing'},
-            {'size': [32, 32], 'title': 'Icon', 'value': 'image_icon'},
-            {'size': [64, 64], 'title': 'Tile', 'value': 'image_tile'},
-            {'size': [128, 128], 'title': 'Thumb', 'value': 'image_thumb'},
-            {'size': [200, 200], 'title': 'Mini', 'value': 'image_mini'},
-            {'size': [400, 400], 'title': 'Preview', 'value': 'image_preview'},
-            {'size': [768, 768], 'title': 'Large', 'value': 'image_large'}]
+            {'size': [16, 16], 'title': 'Listing', 'value': '@@images/image/listing'},
+            {'size': [32, 32], 'title': 'Icon', 'value': '@@images/image/icon'},
+            {'size': [64, 64], 'title': 'Tile', 'value': '@@images/image/tile'},
+            {'size': [128, 128], 'title': 'Thumb', 'value': '@@images/image/thumb'},
+            {'size': [200, 200], 'title': 'Mini', 'value': '@@images/image/mini'},
+            {'size': [400, 400], 'title': 'Preview', 'value': '@@images/image/preview'},
+            {'size': [768, 768], 'title': 'Large', 'value': '@@images/image/large'}]
         )
 
         # We need to specify a context, if we want the dimension of the original image
@@ -160,11 +148,53 @@ class UtilityTestCase(IntegrationTestCase):
         scales = self.utility.getImageScales(context=self.portal[id])
         self.assertEqual(scales,
             [{'size': [52, 43], 'title': 'Original', 'value': ''},
-            {'size': [16, 16], 'title': 'Listing', 'value': 'image_listing'},
-            {'size': [32, 32], 'title': 'Icon', 'value': 'image_icon'},
-            {'size': [64, 64], 'title': 'Tile', 'value': 'image_tile'},
-            {'size': [128, 128], 'title': 'Thumb', 'value': 'image_thumb'},
-            {'size': [200, 200], 'title': 'Mini', 'value': 'image_mini'},
-            {'size': [400, 400], 'title': 'Preview', 'value': 'image_preview'},
-            {'size': [768, 768], 'title': 'Large', 'value': 'image_large'}]
+            {'size': [16, 16], 'title': 'Listing', 'value': '@@images/image/listing'},
+            {'size': [32, 32], 'title': 'Icon', 'value': '@@images/image/icon'},
+            {'size': [64, 64], 'title': 'Tile', 'value': '@@images/image/tile'},
+            {'size': [128, 128], 'title': 'Thumb', 'value': '@@images/image/thumb'},
+            {'size': [200, 200], 'title': 'Mini', 'value': '@@images/image/mini'},
+            {'size': [400, 400], 'title': 'Preview', 'value': '@@images/image/preview'},
+            {'size': [768, 768], 'title': 'Large', 'value': '@@images/image/large'}]
         )
+
+    def _get_config(self):
+        return {
+            'libraries_spellchecker_choice': 'browser',
+             'customplugins': '',
+             'contextmenu': False,
+             'autoresize': False,
+             'labels': {'label_paragraph': 'Paragraph',
+                      'label_styles': u'Styles with an ü',
+                      'label_plain_cell': 'Plain Cell',
+                      'label_lists': 'Lists',
+              },
+             'styles': ['a|class|y', 'foo|bar|x'],
+             'buttons': ['style', 'tablecontrol', 'forecolor', ] + ['a'] * 30,
+             'toolbar_width': '440',
+        }
+
+    def test_getPlugins(self):
+        self.assertTrue('table' in self.utility.getPlugins())
+        self.assertTrue('contextmenu' in self.utility.getPlugins())
+        self.assertFalse('autoresize' in self.utility.getPlugins())
+
+        self.utility.contextmenu = False
+        self.assertTrue('table' in self.utility.getPlugins())
+        self.assertFalse('contextmenu' in self.utility.getPlugins())
+        self.assertFalse('autoresize' in self.utility.getPlugins())
+
+        self.utility.autoresize = True
+        self.assertTrue('table' in self.utility.getPlugins())
+        self.assertFalse('contextmenu' in self.utility.getPlugins())
+        self.assertTrue('autoresize' in self.utility.getPlugins())
+
+        self.utility.customplugins = u'plugin1\nplugin2|Title of P2'
+        self.assertTrue('plugin1,plugin2' in self.utility.getPlugins())
+
+    def test_getStyles(self):
+        self.utility.getStyles(self._get_config())
+        # XXX
+
+    def test_getToolbars(self):
+        toolbars = self.utility.getToolbars(self._get_config())
+        self.assertEqual(toolbars, ['style,tablecontrol,forecolor,a,a,a,a,a,a,a,a,a,a', 'a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a', 'a', ''])

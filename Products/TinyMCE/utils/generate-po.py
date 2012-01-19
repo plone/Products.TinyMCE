@@ -4,6 +4,7 @@ import os
 
 try:
     from xml.etree import ElementTree as ET
+    ET   # pyflakes
 except ImportError:
     from elementtree import ElementTree as ET
 
@@ -30,7 +31,6 @@ for x in AVAILABLE_LANGUAGES:
 
     language = root.find('language')
     title = language.attrib['title'].encode("utf-8")
-    dir = language.attrib['dir']
 
     if not os.path.exists("../locales/%s" % x):
         os.mkdir("../locales/%s" % x)
@@ -65,14 +65,14 @@ for x in AVAILABLE_LANGUAGES:
         for item in group.getiterator('item'):
             domain = group.attrib['target']
             if domain == 'advlink':
-                domain = 'plonelink'
+                domain = 'plonebrowser'
             if domain == 'advimage':
-                domain = 'ploneimage'
+                domain = 'plonebrowser'
             if domain == 'advlink_dlg':
-                domain = 'plonelink_dlg'
+                domain = 'plonebrowser_dlg'
             if domain == 'advimage_dlg':
-                domain = 'ploneimage_dlg'
-            FILE.write("msgid \"%s_%s\"\n" % (domain, item.attrib['name']))
+                domain = 'plonebrowser_dlg'
+            FILE.write('msgid "%s_%s"\n' % (domain, item.attrib['name']))
             if item.text:
                 msg = item.text.replace('"', '\\"')
                 msg = msg.replace('\\N', '\\n')
@@ -80,9 +80,11 @@ for x in AVAILABLE_LANGUAGES:
                 msg = msg.replace('\\\'', '\'')
                 if msg.startswith('\\n'):
                     msg = msg[2:]
-                FILE.write("msgstr \"%s\"\n" % msg.encode("utf=8"))
+                if msg.endswith('\\n'):
+                    msg = msg[:-2]
+                FILE.write('msgstr "%s"\n' % msg.encode("utf-8"))
             else:
-                FILE.write("msgstr \"\"\n")
+                FILE.write('msgstr ""\n')
             FILE.write("\n")
 
     FILE.close()

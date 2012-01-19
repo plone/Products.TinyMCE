@@ -65,7 +65,8 @@ class WysiwygSupportTestCase(IntegrationTestCase):
 
         # we should get TinyMCE:
         browser.open(testpage)
-        self.assertIn('TinyMCEConfig', browser.contents)
+        self.assertIn('tiny_mce_gzip.js', browser.contents)
+        self.assertIn('jquery.tinymce', browser.contents)
 
         # If the user sets 'None'...
         browser.open(personalizer)
@@ -90,7 +91,8 @@ class WysiwygSupportTestCase(IntegrationTestCase):
 
         # we should get TinyMCE:
         browser.open(testpage)
-        self.assertIn('TinyMCEConfig', browser.contents)
+        self.assertIn('tiny_mce_gzip.js', browser.contents)
+        self.assertIn('jquery.tinymce', browser.contents)
 
         # Set the editor globally to nothing:
         self.portal.portal_properties.site_properties.default_editor = ''
@@ -128,4 +130,5 @@ class WysiwygSupportTestCase(IntegrationTestCase):
 
         # we should get TinyMCE:
         browser.open(testpage)
-        self.assertIn('TinyMCEConfig', browser.contents)
+        self.assertIn('tiny_mce_gzip.js', browser.contents)
+        self.assertIn('jquery.tinymce', browser.contents)

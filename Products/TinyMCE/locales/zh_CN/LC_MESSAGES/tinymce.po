@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2011-05-19 18:00+0800\n"
+"PO-Revision-Date: 2011-05-16 11:25+0800\n"
 "Last-Translator: Jian Aijun <jianaijun@gmail.com>\n"
 "Language-Team: plone <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -49,7 +49,7 @@ msgstr ""
 "您要查看该问题更多的信息吗？"
 
 msgid "common_clipboard_no_support"
-msgstr "您的浏览器不支持，使用键盘快捷键代替。"
+msgstr "目前不支持您的浏览器，使用键盘快捷键代替。"
 
 msgid "common_popup_blocked"
 msgstr "很抱歉，我们检测到您安装了具有弹出窗口拦截功能的软件，为了正常使用该功能，您需要对此站点关闭弹出窗口拦截功能。"
@@ -85,7 +85,7 @@ msgid "simple_redo_desc"
 msgstr "恢复 (Ctrl + Y)"
 
 msgid "simple_cleanup_desc"
-msgstr "清除无用代码"
+msgstr "清理无用代码"
 
 msgid "advanced_style_select"
 msgstr "样式"
@@ -196,7 +196,7 @@ msgid "advanced_image_desc"
 msgstr "插入/编辑图片"
 
 msgid "advanced_cleanup_desc"
-msgstr "清除无用代码"
+msgstr "清理无用代码"
 
 msgid "advanced_code_desc"
 msgstr "编辑 HTML 源代码"
@@ -214,7 +214,7 @@ msgid "advanced_removeformat_desc"
 msgstr "清除格式"
 
 msgid "advanced_custom1_desc"
-msgstr "这里是您自定义的描述"
+msgstr "您自定义说明这里"
 
 msgid "advanced_forecolor_desc"
 msgstr "选择文本颜色"
@@ -226,7 +226,7 @@ msgid "advanced_charmap_desc"
 msgstr "插入特殊符号"
 
 msgid "advanced_visualaid_desc"
-msgstr "切换 辅导线/不可见元素"
+msgstr "切换辅导线/不可见元素"
 
 msgid "advanced_anchor_desc"
 msgstr "插入/编辑锚点"
@@ -264,7 +264,7 @@ msgid "advanced_newdocument"
 msgstr "您确定要清除所有内容吗？"
 
 msgid "advanced_toolbar_focus"
-msgstr "转到工具按钮 - Alt-Q，转到编辑器 - Alt-Z，转到元素路径 - Alt-X。"
+msgstr "跳转到工具按钮-Alt + Q，跳转到编辑器-Alt-Z，跳转到元素路径-Alt X\""
 
 msgid "advanced_more_colors"
 msgstr "更多颜色"
@@ -372,94 +372,94 @@ msgid "advanced_dlg_image_title"
 msgstr "插入/编辑图片"
 
 msgid "advanced_dlg_image_src"
-msgstr "图片 URL"
+msgstr "Image URL"
 
 msgid "advanced_dlg_image_alt"
-msgstr "图片说明"
+msgstr "Image description"
 
 msgid "advanced_dlg_image_list"
-msgstr "图片列表"
+msgstr "Image list"
 
 msgid "advanced_dlg_image_border"
-msgstr "边框"
+msgstr "Border"
 
 msgid "advanced_dlg_image_dimensions"
-msgstr "尺寸"
+msgstr "Dimensions"
 
 msgid "advanced_dlg_image_vspace"
-msgstr "垂直间距"
+msgstr "Vertical space"
 
 msgid "advanced_dlg_image_hspace"
-msgstr "水平间距"
+msgstr "Horizontal space"
 
 msgid "advanced_dlg_image_align"
-msgstr "对齐方式"
+msgstr "Alignment"
 
 msgid "advanced_dlg_image_align_baseline"
-msgstr "底线"
+msgstr "Baseline"
 
 msgid "advanced_dlg_image_align_top"
-msgstr "顶端对齐"
+msgstr "Top"
 
 msgid "advanced_dlg_image_align_middle"
-msgstr "居中对齐"
+msgstr "Middle"
 
 msgid "advanced_dlg_image_align_bottom"
-msgstr "底端对齐"
+msgstr "Bottom"
 
 msgid "advanced_dlg_image_align_texttop"
-msgstr "文字上方"
+msgstr "Text top"
 
 msgid "advanced_dlg_image_align_textbottom"
-msgstr "文字下方"
+msgstr "Text bottom"
 
 msgid "advanced_dlg_image_align_left"
-msgstr "左对齐"
+msgstr "Left"
 
 msgid "advanced_dlg_image_align_right"
-msgstr "右对齐"
+msgstr "Right"
 
 msgid "advanced_dlg_link_title"
-msgstr "插入/编辑 超链接"
+msgstr "Insert/edit link"
 
 msgid "advanced_dlg_link_url"
-msgstr "超链接URL"
+msgstr "Link URL"
 
 msgid "advanced_dlg_link_target"
-msgstr "目标"
+msgstr "Target"
 
 msgid "advanced_dlg_link_target_same"
-msgstr "在当前窗口打开"
+msgstr "Open link in the same window"
 
 msgid "advanced_dlg_link_target_blank"
-msgstr "在新窗口打开"
+msgstr "Open link in a new window"
 
 msgid "advanced_dlg_link_titlefield"
-msgstr "标题"
+msgstr "Title"
 
 msgid "advanced_dlg_link_is_email"
-msgstr "您输入URL是电子邮件地址，是否需要加&quot;mailto:&quot;前缀？"
+msgstr "The URL you entered seems to be an email address, do you want to add the required mailto: prefix?"
 
 msgid "advanced_dlg_link_is_external"
-msgstr "您输入的URL是一个外部链接，是否要加上&quot;http://&quot;前缀？"
+msgstr "The URL you entered seems to external link, do you want to add the required http:// prefix?"
 
 msgid "advanced_dlg_link_list"
-msgstr "链接列表"
+msgstr "Link list"
 
 msgid "contextmenu_align"
-msgstr "对齐方式"
+msgstr "Alignment"
 
 msgid "contextmenu_left"
-msgstr "左对齐"
+msgstr "Left"
 
 msgid "contextmenu_center"
-msgstr "居中"
+msgstr "Center"
 
 msgid "contextmenu_right"
-msgstr "右对齐"
+msgstr "Right"
 
 msgid "contextmenu_full"
-msgstr "两端对齐"
+msgstr "Full"
 
 msgid "insertdatetime_date_fmt"
 msgstr "%Y-%m-%d"
@@ -468,67 +468,67 @@ msgid "insertdatetime_time_fmt"
 msgstr "%H:%M:%S"
 
 msgid "insertdatetime_insertdate_desc"
-msgstr "插入日期"
+msgstr "Insert date"
 
 msgid "insertdatetime_inserttime_desc"
-msgstr "插入时间"
+msgstr "Insert time"
 
 msgid "insertdatetime_months_long"
-msgstr "一月,二月,三月,四月,五月,六月,七月,八月,九月,十月,十一月,十二月"
+msgstr "January,February,March,April,May,June,July,August,September,October,November,December"
 
 msgid "insertdatetime_months_short"
-msgstr "1月,2月,3月,4月,5月,6月,7月,8月,9月,10月,11月,12月"
+msgstr "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec"
 
 msgid "insertdatetime_day_long"
-msgstr "星期日,星期一,星期二,星期三,星期四,星期五,星期六,星期日"
+msgstr "Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday"
 
 msgid "insertdatetime_day_short"
-msgstr "周日,周一,周二,周三,周四,周五,周六,周日"
+msgstr "Sun,Mon,Tue,Wed,Thu,Fri,Sat,Sun"
 
 msgid "print_print_desc"
-msgstr "打印"
+msgstr "Print"
 
 msgid "preview_preview_desc"
-msgstr "预览"
+msgstr "Preview"
 
 msgid "directionality_ltr_desc"
-msgstr "从左到右"
+msgstr "Direction left to right"
 
 msgid "directionality_rtl_desc"
-msgstr "从右到左"
+msgstr "Direction right to left"
 
 msgid "layer_insertlayer_desc"
-msgstr "插入新层"
+msgstr "Insert new layer"
 
 msgid "layer_forward_desc"
-msgstr "置前"
+msgstr "Move forward"
 
 msgid "layer_backward_desc"
-msgstr "置后"
+msgstr "Move backward"
 
 msgid "layer_absolute_desc"
-msgstr "切换到绝对位置"
+msgstr "Toggle absolute positioning"
 
 msgid "layer_content"
-msgstr "新建层..."
+msgstr "New layer..."
 
 msgid "save_save_desc"
-msgstr "保存"
+msgstr "Save"
 
 msgid "save_cancel_desc"
-msgstr "取消所有更改"
+msgstr "Cancel all changes"
 
 msgid "nonbreaking_nonbreaking_desc"
-msgstr "插入非中断空格符"
+msgstr "Insert non-breaking space character"
 
 msgid "iespell_iespell_desc"
-msgstr "拼写检查"
+msgstr "Run spell checking"
 
 msgid "iespell_download"
-msgstr "拼写检查未安装，是否马上安装？"
+msgstr "ieSpell not detected. Do you want to install it now?"
 
 msgid "advhr_advhr_desc"
-msgstr "水平线"
+msgstr "Horizontal rule"
 
 msgid "advhr_delta_width"
 msgstr ""
@@ -537,16 +537,16 @@ msgid "advhr_delta_height"
 msgstr ""
 
 msgid "advhr_dlg_width"
-msgstr "宽度"
+msgstr "Width"
 
 msgid "advhr_dlg_size"
-msgstr "高度"
+msgstr "Height"
 
 msgid "advhr_dlg_noshade"
-msgstr "无阴影"
+msgstr "No shadow"
 
 msgid "emotions_emotions_desc"
-msgstr "表情"
+msgstr "Emotions"
 
 msgid "emotions_delta_width"
 msgstr ""
@@ -555,64 +555,64 @@ msgid "emotions_delta_height"
 msgstr ""
 
 msgid "emotions_dlg_title"
-msgstr "插入表情"
+msgstr "Insert emotion"
 
 msgid "emotions_dlg_desc"
-msgstr "表情"
+msgstr "Emotions"
 
 msgid "emotions_dlg_cool"
-msgstr "酷"
+msgstr "Cool"
 
 msgid "emotions_dlg_cry"
-msgstr "哭"
+msgstr "Cry"
 
 msgid "emotions_dlg_embarassed"
-msgstr "尴尬"
+msgstr "Embarassed"
 
 msgid "emotions_dlg_foot_in_mouth"
-msgstr "蠢话"
+msgstr "Foot in mouth"
 
 msgid "emotions_dlg_frown"
-msgstr "皱眉"
+msgstr "Frown"
 
 msgid "emotions_dlg_innocent"
-msgstr "天真"
+msgstr "Innocent"
 
 msgid "emotions_dlg_kiss"
-msgstr "吻"
+msgstr "Kiss"
 
 msgid "emotions_dlg_laughing"
-msgstr "大笑"
+msgstr "Laughing"
 
 msgid "emotions_dlg_money_mouth"
-msgstr "发财"
+msgstr "Money mouth"
 
 msgid "emotions_dlg_sealed"
-msgstr "保密"
+msgstr "Sealed"
 
 msgid "emotions_dlg_smile"
-msgstr "微笑"
+msgstr "Smile"
 
 msgid "emotions_dlg_surprised"
-msgstr "惊讶"
+msgstr "Surprised"
 
 msgid "emotions_dlg_tongue_out"
-msgstr "吐舌头"
+msgstr "Tongue out"
 
 msgid "emotions_dlg_undecided"
-msgstr "犹豫"
+msgstr "Undecided"
 
 msgid "emotions_dlg_wink"
-msgstr "眨眼"
+msgstr "Wink"
 
 msgid "emotions_dlg_yell"
-msgstr "叫喊"
+msgstr "Yell"
 
 msgid "searchreplace_search_desc"
-msgstr "查找"
+msgstr "Find"
 
 msgid "searchreplace_replace_desc"
-msgstr "查找/替换"
+msgstr "Find/Replace"
 
 msgid "searchreplace_delta_width"
 msgstr ""
@@ -621,49 +621,49 @@ msgid "searchreplace_delta_height"
 msgstr ""
 
 msgid "searchreplace_dlg_searchnext_desc"
-msgstr "继续查找"
+msgstr "Find again"
 
 msgid "searchreplace_dlg_notfound"
-msgstr "查找完成，未找到符合的文字。"
+msgstr "The search has been completed. The search string could not be found."
 
 msgid "searchreplace_dlg_search_title"
-msgstr "查找"
+msgstr "Find"
 
 msgid "searchreplace_dlg_replace_title"
-msgstr "查找/替换"
+msgstr "Find/Replace"
 
 msgid "searchreplace_dlg_allreplaced"
-msgstr "所有出现的字符均已替换。"
+msgstr "All occurrences of the search string were replaced."
 
 msgid "searchreplace_dlg_findwhat"
-msgstr "查找目标"
+msgstr "Find what"
 
 msgid "searchreplace_dlg_replacewith"
-msgstr "替换为"
+msgstr "Replace with"
 
 msgid "searchreplace_dlg_direction"
-msgstr "查找方向"
+msgstr "Direction"
 
 msgid "searchreplace_dlg_up"
-msgstr "向上"
+msgstr "Up"
 
 msgid "searchreplace_dlg_down"
-msgstr "向下"
+msgstr "Down"
 
 msgid "searchreplace_dlg_mcase"
-msgstr "区分大小写"
+msgstr "Match case"
 
 msgid "searchreplace_dlg_findnext"
-msgstr "查找下一个"
+msgstr "Find next"
 
 msgid "searchreplace_dlg_replace"
-msgstr "替换"
+msgstr "Replace"
 
 msgid "searchreplace_dlg_replaceall"
-msgstr "全部替换"
+msgstr "Replace all"
 
 msgid "ploneimage_image_desc"
-msgstr ">插入/编辑 图片"
+msgstr "Insert/edit image"
 
 msgid "ploneimage_delta_width"
 msgstr ""
@@ -672,130 +672,130 @@ msgid "ploneimage_delta_height"
 msgstr ""
 
 msgid "ploneimage_dlg_tab_general"
-msgstr "常规"
+msgstr "General"
 
 msgid "ploneimage_dlg_tab_appearance"
-msgstr "外观"
+msgstr "Appearance"
 
 msgid "ploneimage_dlg_tab_advanced"
-msgstr "高级"
+msgstr "Advanced"
 
 msgid "ploneimage_dlg_general"
-msgstr "常规"
+msgstr "General"
 
 msgid "ploneimage_dlg_title"
-msgstr "标题"
+msgstr "Title"
 
 msgid "ploneimage_dlg_preview"
-msgstr "预览"
+msgstr "Preview"
 
 msgid "ploneimage_dlg_constrain_proportions"
-msgstr "保持比例"
+msgstr "Constrain proportions"
 
 msgid "ploneimage_dlg_langdir"
-msgstr "语言方向"
+msgstr "Language direction"
 
 msgid "ploneimage_dlg_langcode"
-msgstr "语言编码"
+msgstr "Language code"
 
 msgid "ploneimage_dlg_long_desc"
-msgstr "长描述链接"
+msgstr "Long description link"
 
 msgid "ploneimage_dlg_style"
-msgstr "样式"
+msgstr "Style"
 
 msgid "ploneimage_dlg_classes"
-msgstr "类别"
+msgstr "Classes"
 
 msgid "ploneimage_dlg_ltr"
-msgstr "从左到右"
+msgstr "Left to right"
 
 msgid "ploneimage_dlg_rtl"
-msgstr "从右到左"
+msgstr "Right to left"
 
 msgid "ploneimage_dlg_id"
 msgstr "Id"
 
 msgid "ploneimage_dlg_map"
-msgstr "图片 map"
+msgstr "Image map"
 
 msgid "ploneimage_dlg_swap_image"
-msgstr "图片切换"
+msgstr "Swap image"
 
 msgid "ploneimage_dlg_alt_image"
-msgstr "替换图片"
+msgstr "Alternative image"
 
 msgid "ploneimage_dlg_mouseover"
-msgstr "鼠标滑入"
+msgstr "for mouse over"
 
 msgid "ploneimage_dlg_mouseout"
-msgstr "鼠标滑出"
+msgstr "for mouse out"
 
 msgid "ploneimage_dlg_misc"
-msgstr "其他"
+msgstr "Miscellaneous"
 
 msgid "ploneimage_dlg_example_img"
-msgstr "外观预览图"
+msgstr "Appearance preview image"
 
 msgid "ploneimage_dlg_missing_alt"
-msgstr "图片没有说明文字，您是否要继续？没有说明文字的图片，可能给残疾人士、文本浏览器或关闭图片功能的浏览器访问造成困难。"
+msgstr "Are you sure you want to continue without including an Image Description? Without it the image may not be accessible to some users with disabilities, or to those using a text browser, or browsing the Web with images turned off."
 
 msgid "ploneimage_dlg_dialog_title"
-msgstr "插入/编辑 图片"
+msgstr "Insert/edit image"
 
 msgid "ploneimage_dlg_src"
-msgstr "图片链接"
+msgstr "Image URL"
 
 msgid "ploneimage_dlg_alt"
-msgstr "图片描述"
+msgstr "Image description"
 
 msgid "ploneimage_dlg_list"
-msgstr "图片列表"
+msgstr "Image list"
 
 msgid "ploneimage_dlg_border"
-msgstr "边框"
+msgstr "Border"
 
 msgid "ploneimage_dlg_dimensions"
-msgstr "尺寸"
+msgstr "Dimensions"
 
 msgid "ploneimage_dlg_vspace"
-msgstr "垂直间距"
+msgstr "Vertical space"
 
 msgid "ploneimage_dlg_hspace"
-msgstr "水平间距"
+msgstr "Horizontal space"
 
 msgid "ploneimage_dlg_align"
-msgstr "对齐方式"
+msgstr "Alignment"
 
 msgid "ploneimage_dlg_align_baseline"
-msgstr "底线"
+msgstr "Baseline"
 
 msgid "ploneimage_dlg_align_top"
-msgstr "顶端对齐"
+msgstr "Top"
 
 msgid "ploneimage_dlg_align_middle"
-msgstr "居中对齐"
+msgstr "Middle"
 
 msgid "ploneimage_dlg_align_bottom"
-msgstr "底端对齐"
+msgstr "Bottom"
 
 msgid "ploneimage_dlg_align_texttop"
-msgstr "文字上方"
+msgstr "Text top"
 
 msgid "ploneimage_dlg_align_textbottom"
-msgstr "文字下方"
+msgstr "Text bottom"
 
 msgid "ploneimage_dlg_align_left"
-msgstr "左对齐"
+msgstr "Left"
 
 msgid "ploneimage_dlg_align_right"
-msgstr "右对齐"
+msgstr "Right"
 
 msgid "ploneimage_dlg_image_list"
-msgstr "图片列表"
+msgstr "Image list"
 
 msgid "plonelink_link_desc"
-msgstr "插入/编辑 超链接"
+msgstr "Insert/edit link"
 
 msgid "plonelink_delta_width"
 msgstr ""
@@ -804,172 +804,172 @@ msgid "plonelink_delta_height"
 msgstr ""
 
 msgid "plonelink_dlg_title"
-msgstr "插入/编辑 超链接"
+msgstr "Insert/edit link"
 
 msgid "plonelink_dlg_url"
-msgstr "链接地址"
+msgstr "Link URL"
 
 msgid "plonelink_dlg_target"
-msgstr "目标"
+msgstr "Target"
 
 msgid "plonelink_dlg_titlefield"
-msgstr "标题"
+msgstr "Title"
 
 msgid "plonelink_dlg_is_email"
-msgstr "您输入URL是电子邮件地址，是否需要加&quot;mailto:&quot;前缀？"
+msgstr "The URL you entered seems to be an email address, do you want to add the required mailto: prefix?"
 
 msgid "plonelink_dlg_is_external"
-msgstr "您输入的URL是一个外部链接，是否要加上&quot;http://&quot;前缀？"
+msgstr "The URL you entered seems to external link, do you want to add the required http:// prefix?"
 
 msgid "plonelink_dlg_list"
-msgstr "链接列表"
+msgstr "Link list"
 
 msgid "plonelink_dlg_general_tab"
-msgstr "常规"
+msgstr "General"
 
 msgid "plonelink_dlg_popup_tab"
-msgstr "弹出"
+msgstr "Popup"
 
 msgid "plonelink_dlg_events_tab"
-msgstr "事件"
+msgstr "Events"
 
 msgid "plonelink_dlg_advanced_tab"
-msgstr "高级"
+msgstr "Advanced"
 
 msgid "plonelink_dlg_general_props"
-msgstr "常规属性"
+msgstr "General properties"
 
 msgid "plonelink_dlg_popup_props"
-msgstr "弹出属性"
+msgstr "Popup properties"
 
 msgid "plonelink_dlg_event_props"
-msgstr "事件"
+msgstr "Events"
 
 msgid "plonelink_dlg_advanced_props"
-msgstr "高级属性"
+msgstr "Advanced properties"
 
 msgid "plonelink_dlg_popup_opts"
-msgstr "选项"
+msgstr "Options"
 
 msgid "plonelink_dlg_anchor_names"
-msgstr "锚"
+msgstr "Anchors"
 
 msgid "plonelink_dlg_target_same"
-msgstr "在当前窗口/框架打开"
+msgstr "Open in this window / frame"
 
 msgid "plonelink_dlg_target_parent"
-msgstr "在父窗口/框架打开"
+msgstr "Open in parent window / frame"
 
 msgid "plonelink_dlg_target_top"
-msgstr "在顶部框架打开（重置所有框架）"
+msgstr "Open in top frame (replaces all frames)"
 
 msgid "plonelink_dlg_target_blank"
-msgstr "在新窗口打开"
+msgstr "Open in new window"
 
 msgid "plonelink_dlg_popup"
-msgstr "Javascript 弹出窗口"
+msgstr "Javascript popup"
 
 msgid "plonelink_dlg_popup_url"
-msgstr "弹出窗口 URL"
+msgstr "Popup URL"
 
 msgid "plonelink_dlg_popup_name"
-msgstr "窗口名称"
+msgstr "Window name"
 
 msgid "plonelink_dlg_popup_return"
-msgstr "插入 'return false'"
+msgstr "Insert 'return false'"
 
 msgid "plonelink_dlg_popup_scrollbars"
-msgstr "显示滚动条"
+msgstr "Show scrollbars"
 
 msgid "plonelink_dlg_popup_statusbar"
-msgstr "显示状态栏"
+msgstr "Show status bar"
 
 msgid "plonelink_dlg_popup_toolbar"
-msgstr "显示工具栏"
+msgstr "Show toolbars"
 
 msgid "plonelink_dlg_popup_menubar"
-msgstr "显示菜单栏"
+msgstr "Show menu bar"
 
 msgid "plonelink_dlg_popup_location"
-msgstr "显示地址栏"
+msgstr "Show location bar"
 
 msgid "plonelink_dlg_popup_resizable"
-msgstr "窗口可调整大小"
+msgstr "Make window resizable"
 
 msgid "plonelink_dlg_popup_dependent"
-msgstr "限制(仅支持Mozilla/Firefox)"
+msgstr "Dependent (Mozilla/Firefox only)"
 
 msgid "plonelink_dlg_popup_size"
-msgstr "大小"
+msgstr "Size"
 
 msgid "plonelink_dlg_popup_position"
-msgstr "位置 (X/Y)"
+msgstr "Position (X/Y)"
 
 msgid "plonelink_dlg_id"
 msgstr "Id"
 
 msgid "plonelink_dlg_style"
-msgstr "样式"
+msgstr "Style"
 
 msgid "plonelink_dlg_classes"
-msgstr "类别"
+msgstr "Classes"
 
 msgid "plonelink_dlg_target_name"
-msgstr "目标名称"
+msgstr "Target name"
 
 msgid "plonelink_dlg_langdir"
-msgstr "语言方向"
+msgstr "Language direction"
 
 msgid "plonelink_dlg_target_langcode"
-msgstr "目标语言"
+msgstr "Target language"
 
 msgid "plonelink_dlg_langcode"
-msgstr "语言代码"
+msgstr "Language code"
 
 msgid "plonelink_dlg_encoding"
-msgstr "目标语言编码"
+msgstr "Target character encoding"
 
 msgid "plonelink_dlg_mime"
-msgstr "目标MIME类型"
+msgstr "Target MIME type"
 
 msgid "plonelink_dlg_rel"
-msgstr "网页到目标的关系"
+msgstr "Relationship page to target"
 
 msgid "plonelink_dlg_rev"
-msgstr "目标到网页的关系"
+msgstr "Relationship target to page"
 
 msgid "plonelink_dlg_tabindex"
-msgstr "Tab索引"
+msgstr "Tabindex"
 
 msgid "plonelink_dlg_accesskey"
-msgstr "访问键"
+msgstr "Accesskey"
 
 msgid "plonelink_dlg_ltr"
-msgstr "从左到右"
+msgstr "Left to right"
 
 msgid "plonelink_dlg_rtl"
-msgstr "从右到左"
+msgstr "Right to left"
 
 msgid "plonelink_dlg_link_list"
-msgstr "链接列表"
+msgstr "Link list"
 
 msgid "xhtmlxtras_cite_desc"
-msgstr "引用"
+msgstr "Citation"
 
 msgid "xhtmlxtras_abbr_desc"
-msgstr "缩写"
+msgstr "Abbreviation"
 
 msgid "xhtmlxtras_acronym_desc"
-msgstr "首字母缩写"
+msgstr "Acronym"
 
 msgid "xhtmlxtras_del_desc"
-msgstr "删除"
+msgstr "Deletion"
 
 msgid "xhtmlxtras_ins_desc"
-msgstr "插入"
+msgstr "Insertion"
 
 msgid "xhtmlxtras_attribs_desc"
-msgstr "插入/编辑 属性"
+msgstr "Insert/Edit Attributes"
 
 msgid "xhtmlxtras_cite_delta_width"
 msgstr ""
@@ -1008,97 +1008,97 @@ msgid "xhtmlxtras_attribs_delta_height"
 msgstr ""
 
 msgid "xhtmlxtras_dlg_attribute_label_title"
-msgstr "标题"
+msgstr "Title"
 
 msgid "xhtmlxtras_dlg_attribute_label_id"
-msgstr "Id"
+msgstr "ID"
 
 msgid "xhtmlxtras_dlg_attribute_label_class"
-msgstr "类别"
+msgstr "Class"
 
 msgid "xhtmlxtras_dlg_attribute_label_style"
-msgstr "样式"
+msgstr "Style"
 
 msgid "xhtmlxtras_dlg_attribute_label_cite"
-msgstr "引用"
+msgstr "Cite"
 
 msgid "xhtmlxtras_dlg_attribute_label_datetime"
-msgstr "日期/时间"
+msgstr "Date/Time"
 
 msgid "xhtmlxtras_dlg_attribute_label_langdir"
-msgstr "文字方向"
+msgstr "Text Direction"
 
 msgid "xhtmlxtras_dlg_attribute_option_ltr"
-msgstr "从左到右"
+msgstr "Left to right"
 
 msgid "xhtmlxtras_dlg_attribute_option_rtl"
-msgstr "从右到左"
+msgstr "Right to left"
 
 msgid "xhtmlxtras_dlg_attribute_label_langcode"
-msgstr "语言"
+msgstr "Language"
 
 msgid "xhtmlxtras_dlg_attribute_label_tabindex"
-msgstr "Tab索引"
+msgstr "TabIndex"
 
 msgid "xhtmlxtras_dlg_attribute_label_accesskey"
-msgstr "访问键"
+msgstr "AccessKey"
 
 msgid "xhtmlxtras_dlg_attribute_events_tab"
-msgstr "事件"
+msgstr "Events"
 
 msgid "xhtmlxtras_dlg_attribute_attrib_tab"
-msgstr "属性"
+msgstr "Attributes"
 
 msgid "xhtmlxtras_dlg_general_tab"
-msgstr "常规"
+msgstr "General"
 
 msgid "xhtmlxtras_dlg_attrib_tab"
-msgstr "属性"
+msgstr "Attributes"
 
 msgid "xhtmlxtras_dlg_events_tab"
-msgstr "事件"
+msgstr "Events"
 
 msgid "xhtmlxtras_dlg_fieldset_general_tab"
-msgstr "常规设置"
+msgstr "General Settings"
 
 msgid "xhtmlxtras_dlg_fieldset_attrib_tab"
-msgstr "元素属性"
+msgstr "Element Attributes"
 
 msgid "xhtmlxtras_dlg_fieldset_events_tab"
-msgstr "元素事件"
+msgstr "Element Events"
 
 msgid "xhtmlxtras_dlg_title_ins_element"
-msgstr "插入元素"
+msgstr "Insertion Element"
 
 msgid "xhtmlxtras_dlg_title_del_element"
-msgstr "删除元素"
+msgstr "Deletion Element"
 
 msgid "xhtmlxtras_dlg_title_acronym_element"
 msgstr "Acronym Element"
 
 msgid "xhtmlxtras_dlg_title_abbr_element"
-msgstr "首字母缩写元素"
+msgstr "Abbreviation Element"
 
 msgid "xhtmlxtras_dlg_title_cite_element"
-msgstr "缩写元素"
+msgstr "Citation Element"
 
 msgid "xhtmlxtras_dlg_remove"
-msgstr "移除"
+msgstr "Remove"
 
 msgid "xhtmlxtras_dlg_insert_date"
-msgstr "插入当前日期/时间"
+msgstr "Insert current date/time"
 
 msgid "xhtmlxtras_dlg_option_ltr"
-msgstr "从左到右"
+msgstr "Left to right"
 
 msgid "xhtmlxtras_dlg_option_rtl"
-msgstr "从右到左"
+msgstr "Right to left"
 
 msgid "xhtmlxtras_dlg_attribs_title"
-msgstr "插入/编辑 属性"
+msgstr "Insert/Edit Attributes"
 
 msgid "style_desc"
-msgstr "编辑CSS样式"
+msgstr "Edit CSS Style"
 
 msgid "style_delta_width"
 msgstr ""
@@ -1107,271 +1107,271 @@ msgid "style_delta_height"
 msgstr ""
 
 msgid "style_dlg_title"
-msgstr "编辑CSS样式"
+msgstr "Edit CSS Style"
 
 msgid "style_dlg_apply"
-msgstr "应用"
+msgstr "Apply"
 
 msgid "style_dlg_text_tab"
-msgstr "文本"
+msgstr "Text"
 
 msgid "style_dlg_background_tab"
-msgstr "背景"
+msgstr "Background"
 
 msgid "style_dlg_block_tab"
-msgstr "区块"
+msgstr "Block"
 
 msgid "style_dlg_box_tab"
 msgstr "Box"
 
 msgid "style_dlg_border_tab"
-msgstr "边框"
+msgstr "Border"
 
 msgid "style_dlg_list_tab"
-msgstr "列表"
+msgstr "List"
 
 msgid "style_dlg_positioning_tab"
-msgstr "位置"
+msgstr "Positioning"
 
 msgid "style_dlg_text_props"
-msgstr "文本"
+msgstr "Text"
 
 msgid "style_dlg_text_font"
-msgstr "字体"
+msgstr "Font"
 
 msgid "style_dlg_text_size"
-msgstr "大小"
+msgstr "Size"
 
 msgid "style_dlg_text_weight"
-msgstr "粗细"
+msgstr "Weight"
 
 msgid "style_dlg_text_style"
-msgstr "样式"
+msgstr "Style"
 
 msgid "style_dlg_text_variant"
-msgstr "变体"
+msgstr "Variant"
 
 msgid "style_dlg_text_lineheight"
-msgstr "行高"
+msgstr "Line height"
 
 msgid "style_dlg_text_case"
-msgstr "字体形式"
+msgstr "Case"
 
 msgid "style_dlg_text_color"
-msgstr "颜色"
+msgstr "Color"
 
 msgid "style_dlg_text_decoration"
-msgstr "字体装饰"
+msgstr "Decoration"
 
 msgid "style_dlg_text_overline"
-msgstr "上划线"
+msgstr "overline"
 
 msgid "style_dlg_text_underline"
-msgstr "下划线"
+msgstr "underline"
 
 msgid "style_dlg_text_striketrough"
-msgstr "删除线"
+msgstr "strikethrough"
 
 msgid "style_dlg_text_blink"
-msgstr "闪烁"
+msgstr "blink"
 
 msgid "style_dlg_text_none"
-msgstr "无"
+msgstr "none"
 
 msgid "style_dlg_background_color"
-msgstr "背景颜色"
+msgstr "Background color"
 
 msgid "style_dlg_background_image"
-msgstr "背景图片"
+msgstr "Background image"
 
 msgid "style_dlg_background_repeat"
-msgstr "重复"
+msgstr "Repeat"
 
 msgid "style_dlg_background_attachment"
-msgstr "附件"
+msgstr "Attachment"
 
 msgid "style_dlg_background_hpos"
-msgstr "附件"
+msgstr "Horizontal position"
 
 msgid "style_dlg_background_vpos"
-msgstr "垂直位置"
+msgstr "Vertical position"
 
 msgid "style_dlg_block_wordspacing"
-msgstr "词间距"
+msgstr "Word spacing"
 
 msgid "style_dlg_block_letterspacing"
-msgstr "字间距"
+msgstr "Letter spacing"
 
 msgid "style_dlg_block_vertical_alignment"
-msgstr "垂直对齐"
+msgstr "Vertical alignment"
 
 msgid "style_dlg_block_text_align"
-msgstr "文字对齐"
+msgstr "Text align"
 
 msgid "style_dlg_block_text_indent"
-msgstr "文字缩排"
+msgstr "Text indent"
 
 msgid "style_dlg_block_whitespace"
-msgstr "空格"
+msgstr "Whitespace"
 
 msgid "style_dlg_block_display"
-msgstr "显示"
+msgstr "Display"
 
 msgid "style_dlg_box_width"
-msgstr "宽度"
+msgstr "Width"
 
 msgid "style_dlg_box_height"
-msgstr "高度"
+msgstr "Height"
 
 msgid "style_dlg_box_float"
-msgstr "浮动"
+msgstr "Float"
 
 msgid "style_dlg_box_clear"
-msgstr "清除浮动"
+msgstr "Clear"
 
 msgid "style_dlg_padding"
-msgstr "内边距"
+msgstr "Padding"
 
 msgid "style_dlg_same"
-msgstr "全部相同"
+msgstr "Same for all"
 
 msgid "style_dlg_top"
-msgstr "上"
+msgstr "Top"
 
 msgid "style_dlg_right"
-msgstr "右"
+msgstr "Right"
 
 msgid "style_dlg_bottom"
-msgstr "下"
+msgstr "Bottom"
 
 msgid "style_dlg_left"
-msgstr "左"
+msgstr "Left"
 
 msgid "style_dlg_margin"
-msgstr "外边距"
+msgstr "Margin"
 
 msgid "style_dlg_style"
-msgstr "样式"
+msgstr "Style"
 
 msgid "style_dlg_width"
-msgstr "宽度"
+msgstr "Width"
 
 msgid "style_dlg_height"
-msgstr "高度"
+msgstr "Height"
 
 msgid "style_dlg_color"
-msgstr "颜色"
+msgstr "Color"
 
 msgid "style_dlg_list_type"
-msgstr "类型"
+msgstr "Type"
 
 msgid "style_dlg_bullet_image"
-msgstr "图片项目符号"
+msgstr "Bullet image"
 
 msgid "style_dlg_position"
-msgstr "位置"
+msgstr "Position"
 
 msgid "style_dlg_positioning_type"
-msgstr "类型"
+msgstr "Type"
 
 msgid "style_dlg_visibility"
-msgstr "可见"
+msgstr "Visibility"
 
 msgid "style_dlg_zindex"
 msgstr "Z-index"
 
 msgid "style_dlg_overflow"
-msgstr "溢出"
+msgstr "Overflow"
 
 msgid "style_dlg_placement"
-msgstr "放置"
+msgstr "Placement"
 
 msgid "style_dlg_clip"
-msgstr "剪辑"
+msgstr "Clip"
 
 msgid "paste_paste_text_desc"
-msgstr "以纯文本粘贴"
+msgstr "Paste as Plain Text"
 
 msgid "paste_paste_word_desc"
-msgstr "从Word粘贴"
+msgstr "Paste from Word"
 
 msgid "paste_selectall_desc"
-msgstr "全选"
+msgstr "Select All"
 
 msgid "paste_plaintext_mode_sticky"
-msgstr "当前为纯文本模式粘贴。再次点击返回普通粘贴模式，在您粘贴内容后将返回普通粘贴模式。"
+msgstr "Paste is now in plain text mode. Click again to toggle back to regular paste mode. After you paste something you will be returned to regular paste mode."
 
 msgid "paste_plaintext_mode"
-msgstr "当前为纯文本模式粘贴，再次点击返回普通粘贴模式。"
+msgstr "Paste is now in plain text mode. Click again to toggle back to regular paste mode."
 
 msgid "paste_dlg_text_title"
-msgstr "使用CTRL V粘贴文本到窗口中。"
+msgstr "Use CTRL+V on your keyboard to paste the text into the window."
 
 msgid "paste_dlg_text_linebreaks"
-msgstr "保留断行"
+msgstr "Keep linebreaks"
 
 msgid "paste_dlg_word_title"
-msgstr "使用CTRL V粘贴文本到窗口中。"
+msgstr "Use CTRL+V on your keyboard to paste the text into the window."
 
 msgid "table_desc"
-msgstr "插入新表格"
+msgstr "Inserts a new table"
 
 msgid "table_row_before_desc"
-msgstr "在上方插入行"
+msgstr "Insert row before"
 
 msgid "table_row_after_desc"
-msgstr "在下方插入行"
+msgstr "Insert row after"
 
 msgid "table_delete_row_desc"
-msgstr "删除行"
+msgstr "Delete row"
 
 msgid "table_col_before_desc"
-msgstr "在左侧插入列"
+msgstr "Insert column before"
 
 msgid "table_col_after_desc"
-msgstr "在右侧插入列"
+msgstr "Insert column after"
 
 msgid "table_delete_col_desc"
-msgstr "删除列"
+msgstr "Remove column"
 
 msgid "table_split_cells_desc"
-msgstr "分割单元格"
+msgstr "Split merged table cells"
 
 msgid "table_merge_cells_desc"
-msgstr "合并单元格"
+msgstr "Merge table cells"
 
 msgid "table_row_desc"
-msgstr "行属性"
+msgstr "Table row properties"
 
 msgid "table_cell_desc"
-msgstr "单元格属性"
+msgstr "Table cell properties"
 
 msgid "table_props_desc"
-msgstr "表格属性"
+msgstr "Table properties"
 
 msgid "table_paste_row_before_desc"
-msgstr "在上方粘贴行"
+msgstr "Paste table row before"
 
 msgid "table_paste_row_after_desc"
-msgstr "在下方粘贴行"
+msgstr "Paste table row after"
 
 msgid "table_cut_row_desc"
-msgstr "剪切行"
+msgstr "Cut table row"
 
 msgid "table_copy_row_desc"
-msgstr "复制行"
+msgstr "Copy table row"
 
 msgid "table_del"
-msgstr "删除表格"
+msgstr "Delete table"
 
 msgid "table_row"
-msgstr "行"
+msgstr "Row"
 
 msgid "table_col"
-msgstr "列"
+msgstr "Column"
 
 msgid "table_cell"
-msgstr "单元格"
+msgstr "Cell"
 
 msgid "table_rowprops_delta_width"
 msgstr ""
@@ -1398,241 +1398,241 @@ msgid "table_merge_cells_delta_height"
 msgstr ""
 
 msgid "table_dlg_general_tab"
-msgstr "常规"
+msgstr "General"
 
 msgid "table_dlg_advanced_tab"
-msgstr "高级"
+msgstr "Advanced"
 
 msgid "table_dlg_general_props"
-msgstr "常规属性"
+msgstr "General properties"
 
 msgid "table_dlg_advanced_props"
-msgstr "高级属性"
+msgstr "Advanced properties"
 
 msgid "table_dlg_rowtype"
-msgstr "行所在的表格位置"
+msgstr "Row in table part"
 
 msgid "table_dlg_title"
-msgstr "插入/编辑 表格"
+msgstr "Insert/Modify table"
 
 msgid "table_dlg_width"
-msgstr "宽度"
+msgstr "Width"
 
 msgid "table_dlg_height"
-msgstr "高度"
+msgstr "Height"
 
 msgid "table_dlg_cols"
-msgstr "列数"
+msgstr "Cols"
 
 msgid "table_dlg_rows"
-msgstr "行数"
+msgstr "Rows"
 
 msgid "table_dlg_cellspacing"
-msgstr "单元格间距"
+msgstr "Cellspacing"
 
 msgid "table_dlg_cellpadding"
-msgstr "单元格边距"
+msgstr "Cellpadding"
 
 msgid "table_dlg_border"
-msgstr "边框"
+msgstr "Border"
 
 msgid "table_dlg_align"
-msgstr "对齐方式"
+msgstr "Alignment"
 
 msgid "table_dlg_align_default"
-msgstr "默认"
+msgstr "Default"
 
 msgid "table_dlg_align_left"
-msgstr "左对齐"
+msgstr "Left"
 
 msgid "table_dlg_align_right"
-msgstr "右对齐"
+msgstr "Right"
 
 msgid "table_dlg_align_middle"
-msgstr "居中"
+msgstr "Center"
 
 msgid "table_dlg_row_title"
-msgstr "行属性"
+msgstr "Table row properties"
 
 msgid "table_dlg_cell_title"
-msgstr "单元格属性"
+msgstr "Table cell properties"
 
 msgid "table_dlg_cell_type"
-msgstr "单元格类型"
+msgstr "Cell type"
 
 msgid "table_dlg_valign"
-msgstr "垂直对齐"
+msgstr "Vertical alignment"
 
 msgid "table_dlg_align_top"
-msgstr "靠上"
+msgstr "Top"
 
 msgid "table_dlg_align_bottom"
-msgstr "靠下"
+msgstr "Bottom"
 
 msgid "table_dlg_bordercolor"
-msgstr "边框颜色"
+msgstr "Border color"
 
 msgid "table_dlg_bgcolor"
-msgstr "背景颜色"
+msgstr "Background color"
 
 msgid "table_dlg_merge_cells_title"
-msgstr "合并单元格"
+msgstr "Merge table cells"
 
 msgid "table_dlg_id"
 msgstr "Id"
 
 msgid "table_dlg_style"
-msgstr "样式"
+msgstr "Style"
 
 msgid "table_dlg_langdir"
-msgstr "语言方向"
+msgstr "Language direction"
 
 msgid "table_dlg_langcode"
-msgstr "语言代码"
+msgstr "Language code"
 
 msgid "table_dlg_mime"
-msgstr "目标MIME类型"
+msgstr "Target MIME type"
 
 msgid "table_dlg_ltr"
-msgstr "从左到右"
+msgstr "Left to right"
 
 msgid "table_dlg_rtl"
-msgstr "从右到左"
+msgstr "Right to left"
 
 msgid "table_dlg_bgimage"
-msgstr "背景图片"
+msgstr "Background image"
 
 msgid "table_dlg_summary"
-msgstr "摘要"
+msgstr "Summary"
 
 msgid "table_dlg_td"
-msgstr "内容"
+msgstr "Data"
 
 msgid "table_dlg_th"
-msgstr "表头"
+msgstr "Header"
 
 msgid "table_dlg_cell_cell"
-msgstr "更新当前单元格"
+msgstr "Update current cell"
 
 msgid "table_dlg_cell_row"
-msgstr "更新当前行的单元格"
+msgstr "Update all cells in row"
 
 msgid "table_dlg_cell_all"
-msgstr "更新所有单元格"
+msgstr "Update all cells in table"
 
 msgid "table_dlg_row_row"
-msgstr "更新当前行"
+msgstr "Update current row"
 
 msgid "table_dlg_row_odd"
-msgstr "更新表格的奇数行"
+msgstr "Update odd rows in table"
 
 msgid "table_dlg_row_even"
-msgstr "更新表格的偶数行"
+msgstr "Update even rows in table"
 
 msgid "table_dlg_row_all"
-msgstr "更新表格的所有行"
+msgstr "Update all rows in table"
 
 msgid "table_dlg_thead"
-msgstr "表头"
+msgstr "Table Head"
 
 msgid "table_dlg_tbody"
-msgstr "表格主体"
+msgstr "Table Body"
 
 msgid "table_dlg_tfoot"
-msgstr "表尾"
+msgstr "Table Foot"
 
 msgid "table_dlg_scope"
-msgstr "范围"
+msgstr "Scope"
 
 msgid "table_dlg_rowgroup"
-msgstr "行分组"
+msgstr "Row Group"
 
 msgid "table_dlg_colgroup"
-msgstr "列分组"
+msgstr "Col Group"
 
 msgid "table_dlg_col_limit"
-msgstr "已经超出最大列数{$cols}。"
+msgstr "You've exceeded the maximum number of columns of {$cols}."
 
 msgid "table_dlg_row_limit"
-msgstr "已经超出最大行数{$rows}。"
+msgstr "You've exceeded the maximum number of rows of {$rows}."
 
 msgid "table_dlg_cell_limit"
-msgstr "已经超出最大单元格数{$cells}。"
+msgstr "You've exceeded the maximum number of cells of {$cells}."
 
 msgid "table_dlg_missing_scope"
-msgstr "您没有指定表格的标题单元，如果不设置，可能会使用户难以理解您的表格的内容。您要继续吗？"
+msgstr "Are you sure you want to continue without specifying a scope for this table header cell. Without it, it may be difficult for some users with disabilities to understand the content or data displayed of the table."
 
 msgid "table_dlg_caption"
-msgstr "表格标题"
+msgstr "Table caption"
 
 msgid "table_dlg_frame"
-msgstr "边框"
+msgstr "Frame"
 
 msgid "table_dlg_frame_none"
-msgstr "无"
+msgstr "none"
 
 msgid "table_dlg_frame_groups"
-msgstr "分组"
+msgstr "groups"
 
 msgid "table_dlg_frame_rows"
-msgstr "行"
+msgstr "rows"
 
 msgid "table_dlg_frame_cols"
-msgstr "列"
+msgstr "cols"
 
 msgid "table_dlg_frame_all"
-msgstr "全部"
+msgstr "all"
 
 msgid "table_dlg_rules"
-msgstr "规则"
+msgstr "Rules"
 
 msgid "table_dlg_rules_void"
-msgstr "空"
+msgstr "void"
 
 msgid "table_dlg_rules_above"
-msgstr "上"
+msgstr "above"
 
 msgid "table_dlg_rules_below"
-msgstr "下"
+msgstr "below"
 
 msgid "table_dlg_rules_hsides"
-msgstr "水平"
+msgstr "hsides"
 
 msgid "table_dlg_rules_lhs"
-msgstr "左边"
+msgstr "lhs"
 
 msgid "table_dlg_rules_rhs"
-msgstr "右边"
+msgstr "rhs"
 
 msgid "table_dlg_rules_vsides"
-msgstr "垂直"
+msgstr "vsides"
 
 msgid "table_dlg_rules_box"
-msgstr "框"
+msgstr "box"
 
 msgid "table_dlg_rules_border"
-msgstr "边框"
+msgstr "border"
 
 msgid "autosave_unload_msg"
-msgstr "如果退出该页，您所做的更改将丢失。"
+msgstr "The changes you made will be lost if you navigate away from this page."
 
 msgid "autosave_restore_content"
-msgstr "恢复自动保存的内容。"
+msgstr "Restore auto-saved content."
 
 msgid "autosave_warning_message"
 msgstr ""
-"如果恢复保存的内容，您当前编辑的所有的内容将丢失。\n"
+"If you restore the saved content, you will lose all the content that is currently in the editor.\n"
 "\n"
-"您确定要恢复保存的内容吗？"
+"Are you sure you want to restore the saved content?."
 
 msgid "fullscreen_desc"
-msgstr "切换全屏模式"
+msgstr "Toggle fullscreen mode"
 
 msgid "media_desc"
-msgstr "插入/编辑 嵌入式媒体"
+msgstr "Insert / edit embedded media"
 
 msgid "media_edit"
-msgstr "编辑嵌入式媒体"
+msgstr "Edit embedded media"
 
 msgid "media_delta_width"
 msgstr ""
@@ -1641,312 +1641,312 @@ msgid "media_delta_height"
 msgstr ""
 
 msgid "media_dlg_title"
-msgstr "插入/编辑 嵌入式媒体"
+msgstr "Insert / edit embedded media"
 
 msgid "media_dlg_general"
-msgstr "常规"
+msgstr "General"
 
 msgid "media_dlg_advanced"
-msgstr "高级"
+msgstr "Advanced"
 
 msgid "media_dlg_file"
-msgstr "文件/URL"
+msgstr "File/URL"
 
 msgid "media_dlg_list"
-msgstr "列表"
+msgstr "List"
 
 msgid "media_dlg_size"
-msgstr "尺寸"
+msgstr "Dimensions"
 
 msgid "media_dlg_preview"
-msgstr "预览"
+msgstr "Preview"
 
 msgid "media_dlg_constrain_proportions"
-msgstr "保持比例"
+msgstr "Constrain proportions"
 
 msgid "media_dlg_type"
-msgstr "类型"
+msgstr "Type"
 
 msgid "media_dlg_id"
 msgstr "Id"
 
 msgid "media_dlg_name"
-msgstr "名称"
+msgstr "Name"
 
 msgid "media_dlg_class_name"
-msgstr "类型"
+msgstr "Class"
 
 msgid "media_dlg_vspace"
-msgstr "垂直距离"
+msgstr "V-Space"
 
 msgid "media_dlg_hspace"
-msgstr "水平距离"
+msgstr "H-Space"
 
 msgid "media_dlg_play"
-msgstr "自动播放"
+msgstr "Auto play"
 
 msgid "media_dlg_loop"
-msgstr "循环"
+msgstr "Loop"
 
 msgid "media_dlg_menu"
-msgstr "显示菜单"
+msgstr "Show menu"
 
 msgid "media_dlg_quality"
-msgstr "画质"
+msgstr "Quality"
 
 msgid "media_dlg_scale"
-msgstr "缩放"
+msgstr "Scale"
 
 msgid "media_dlg_align"
-msgstr "对齐"
+msgstr "Align"
 
 msgid "media_dlg_salign"
-msgstr "媒体对齐"
+msgstr "SAlign"
 
 msgid "media_dlg_wmode"
-msgstr "窗体模式"
+msgstr "WMode"
 
 msgid "media_dlg_bgcolor"
-msgstr "背景"
+msgstr "Background"
 
 msgid "media_dlg_base"
-msgstr "基础路径"
+msgstr "Base"
 
 msgid "media_dlg_flashvars"
-msgstr "Flash变量"
+msgstr "Flashvars"
 
 msgid "media_dlg_liveconnect"
-msgstr "JavaScript开启"
+msgstr "SWLiveConnect"
 
 msgid "media_dlg_autohref"
-msgstr "自动跳转"
+msgstr "AutoHREF"
 
 msgid "media_dlg_cache"
-msgstr "缓存"
+msgstr "Cache"
 
 msgid "media_dlg_hidden"
-msgstr "隐藏"
+msgstr "Hidden"
 
 msgid "media_dlg_controller"
-msgstr "控制台"
+msgstr "Controller"
 
 msgid "media_dlg_kioskmode"
-msgstr "全屏模式"
+msgstr "Kiosk mode"
 
 msgid "media_dlg_playeveryframe"
-msgstr "逐帧播放"
+msgstr "Play every frame"
 
 msgid "media_dlg_targetcache"
-msgstr "目标缓存"
+msgstr "Target cache"
 
 msgid "media_dlg_correction"
-msgstr "无修正"
+msgstr "No correction"
 
 msgid "media_dlg_enablejavascript"
-msgstr "启用JavaScript"
+msgstr "Enable JavaScript"
 
 msgid "media_dlg_starttime"
-msgstr "开始时间"
+msgstr "Start time"
 
 msgid "media_dlg_endtime"
-msgstr "结束时间"
+msgstr "End time"
 
 msgid "media_dlg_href"
-msgstr "超链接"
+msgstr "Href"
 
 msgid "media_dlg_qtsrcchokespeed"
-msgstr "限制速度"
+msgstr "Choke speed"
 
 msgid "media_dlg_target"
-msgstr "目标"
+msgstr "Target"
 
 msgid "media_dlg_volume"
-msgstr "音量"
+msgstr "Volume"
 
 msgid "media_dlg_autostart"
-msgstr "自动播放"
+msgstr "Auto start"
 
 msgid "media_dlg_enabled"
-msgstr "启用"
+msgstr "Enabled"
 
 msgid "media_dlg_fullscreen"
-msgstr "全屏"
+msgstr "Fullscreen"
 
 msgid "media_dlg_invokeurls"
-msgstr "引用URL"
+msgstr "Invoke URLs"
 
 msgid "media_dlg_mute"
-msgstr "静音"
+msgstr "Mute"
 
 msgid "media_dlg_stretchtofit"
-msgstr "拉伸到适合"
+msgstr "Stretch to fit"
 
 msgid "media_dlg_windowlessvideo"
-msgstr "无边框"
+msgstr "Windowless video"
 
 msgid "media_dlg_balance"
-msgstr "平衡"
+msgstr "Balance"
 
 msgid "media_dlg_baseurl"
-msgstr "基础路径"
+msgstr "Base URL"
 
 msgid "media_dlg_captioningid"
-msgstr "字幕ID"
+msgstr "Captioning id"
 
 msgid "media_dlg_currentmarker"
-msgstr "当前标记"
+msgstr "Current marker"
 
 msgid "media_dlg_currentposition"
-msgstr "当前位置"
+msgstr "Current position"
 
 msgid "media_dlg_defaultframe"
-msgstr "默认帧"
+msgstr "Default frame"
 
 msgid "media_dlg_playcount"
-msgstr "播放次数"
+msgstr "Play count"
 
 msgid "media_dlg_rate"
-msgstr "比率"
+msgstr "Rate"
 
 msgid "media_dlg_uimode"
-msgstr "外观模式"
+msgstr "UI Mode"
 
 msgid "media_dlg_flash_options"
-msgstr "Flash 选项"
+msgstr "Flash options"
 
 msgid "media_dlg_qt_options"
-msgstr "Quicktime 选项"
+msgstr "Quicktime options"
 
 msgid "media_dlg_wmp_options"
-msgstr "Windows media player 选项"
+msgstr "Windows media player options"
 
 msgid "media_dlg_rmp_options"
-msgstr "Real media player 选项"
+msgstr "Real media player options"
 
 msgid "media_dlg_shockwave_options"
-msgstr "Shockwave 选项"
+msgstr "Shockwave options"
 
 msgid "media_dlg_autogotourl"
-msgstr "自动转到URL"
+msgstr "Auto goto URL"
 
 msgid "media_dlg_center"
-msgstr "居中"
+msgstr "Center"
 
 msgid "media_dlg_imagestatus"
-msgstr "图片状态"
+msgstr "Image status"
 
 msgid "media_dlg_maintainaspect"
-msgstr "保持外观"
+msgstr "Maintain aspect"
 
 msgid "media_dlg_nojava"
-msgstr "无java"
+msgstr "No java"
 
 msgid "media_dlg_prefetch"
-msgstr "预加载"
+msgstr "Prefetch"
 
 msgid "media_dlg_shuffle"
-msgstr "随机"
+msgstr "Shuffle"
 
 msgid "media_dlg_console"
-msgstr "控制台"
+msgstr "Console"
 
 msgid "media_dlg_numloop"
-msgstr "循环次数"
+msgstr "Num loops"
 
 msgid "media_dlg_controls"
-msgstr "控制台"
+msgstr "Controls"
 
 msgid "media_dlg_scriptcallbacks"
-msgstr "脚本回调"
+msgstr "Script callbacks"
 
 msgid "media_dlg_swstretchstyle"
-msgstr "拉伸方式"
+msgstr "Stretch style"
 
 msgid "media_dlg_swstretchhalign"
-msgstr "水平拉伸"
+msgstr "Stretch H-Align"
 
 msgid "media_dlg_swstretchvalign"
-msgstr "垂直拉伸"
+msgstr "Stretch V-Align"
 
 msgid "media_dlg_sound"
-msgstr "声音"
+msgstr "Sound"
 
 msgid "media_dlg_progress"
-msgstr "进度"
+msgstr "Progress"
 
 msgid "media_dlg_qtsrc"
-msgstr "QT资源"
+msgstr "QT Src"
 
 msgid "media_dlg_qt_stream_warn"
 msgstr ""
-"流媒体RTSP资源应添加到高级选项的QT资源中。\n"
-"同时，您也可以在这里加入一个非流媒体。"
+"Streamed rtsp resources should be added to the QT Src field under the advanced tab.\n"
+"You should also add a non streamed version to the Src field.."
 
 msgid "media_dlg_align_top"
-msgstr "居上"
+msgstr "Top"
 
 msgid "media_dlg_align_right"
-msgstr "居右"
+msgstr "Right"
 
 msgid "media_dlg_align_bottom"
-msgstr "居下"
+msgstr "Bottom"
 
 msgid "media_dlg_align_left"
-msgstr "居左"
+msgstr "Left"
 
 msgid "media_dlg_align_center"
-msgstr "居中"
+msgstr "Center"
 
 msgid "media_dlg_align_top_left"
-msgstr "左上"
+msgstr "Top left"
 
 msgid "media_dlg_align_top_right"
-msgstr "右上"
+msgstr "Top right"
 
 msgid "media_dlg_align_bottom_left"
-msgstr "左下"
+msgstr "Bottom left"
 
 msgid "media_dlg_align_bottom_right"
-msgstr "右下"
+msgstr "Bottom right"
 
 msgid "media_dlg_flv_options"
-msgstr "Flash视频选项"
+msgstr "Flash video options"
 
 msgid "media_dlg_flv_scalemode"
-msgstr "缩放模式"
+msgstr "Scale mode"
 
 msgid "media_dlg_flv_buffer"
-msgstr "缓冲"
+msgstr "Buffer"
 
 msgid "media_dlg_flv_startimage"
-msgstr "开始画面"
+msgstr "Start image"
 
 msgid "media_dlg_flv_starttime"
-msgstr "开始时间"
+msgstr "Start time"
 
 msgid "media_dlg_flv_defaultvolume"
-msgstr "默认音量"
+msgstr "Default volumne"
 
 msgid "media_dlg_flv_hiddengui"
-msgstr "隐藏GUI"
+msgstr "Hidden GUI"
 
 msgid "media_dlg_flv_autostart"
-msgstr "自动播放"
+msgstr "Auto start"
 
 msgid "media_dlg_flv_loop"
-msgstr "循环"
+msgstr "Loop"
 
 msgid "media_dlg_flv_showscalemodes"
-msgstr "显示缩放模式"
+msgstr "Show scale modes"
 
 msgid "media_dlg_flv_smoothvideo"
-msgstr "消除锯齿"
+msgstr "Smooth video"
 
 msgid "media_dlg_flv_jscallback"
-msgstr "JS回调"
+msgstr "JS Callback"
 
 msgid "fullpage_desc"
-msgstr "文档属性"
+msgstr "Document properties"
 
 msgid "fullpage_delta_width"
 msgstr ""
@@ -1955,238 +1955,238 @@ msgid "fullpage_delta_height"
 msgstr ""
 
 msgid "fullpage_dlg_title"
-msgstr "文档属性"
+msgstr "Document properties"
 
 msgid "fullpage_dlg_meta_tab"
-msgstr "常规"
+msgstr "General"
 
 msgid "fullpage_dlg_appearance_tab"
-msgstr "外观"
+msgstr "Appearance"
 
 msgid "fullpage_dlg_advanced_tab"
-msgstr "高级"
+msgstr "Advanced"
 
 msgid "fullpage_dlg_meta_props"
-msgstr "Meta信息"
+msgstr "Meta information"
 
 msgid "fullpage_dlg_langprops"
-msgstr "语言和编码"
+msgstr "Language and encoding"
 
 msgid "fullpage_dlg_meta_title"
-msgstr "标题"
+msgstr "Title"
 
 msgid "fullpage_dlg_meta_keywords"
-msgstr "关键字"
+msgstr "Keywords"
 
 msgid "fullpage_dlg_meta_description"
-msgstr "描述"
+msgstr "Description"
 
 msgid "fullpage_dlg_meta_robots"
-msgstr "搜索机器人(Robots)"
+msgstr "Robots"
 
 msgid "fullpage_dlg_doctypes"
-msgstr "文档类型(Doctype)"
+msgstr "Doctype"
 
 msgid "fullpage_dlg_langcode"
-msgstr "语言代码"
+msgstr "Language code"
 
 msgid "fullpage_dlg_langdir"
-msgstr "语言方向"
+msgstr "Language direction"
 
 msgid "fullpage_dlg_ltr"
-msgstr "从左到右"
+msgstr "Left to right"
 
 msgid "fullpage_dlg_rtl"
-msgstr "从右到左"
+msgstr "Right to left"
 
 msgid "fullpage_dlg_xml_pi"
-msgstr "XML申明"
+msgstr "XML declaration"
 
 msgid "fullpage_dlg_encoding"
-msgstr "字符编码"
+msgstr "Character encoding"
 
 msgid "fullpage_dlg_appearance_bgprops"
-msgstr "背景属性"
+msgstr "Background properties"
 
 msgid "fullpage_dlg_appearance_marginprops"
-msgstr "页边距"
+msgstr "Body margins"
 
 msgid "fullpage_dlg_appearance_linkprops"
-msgstr "超链接颜色"
+msgstr "Link colors"
 
 msgid "fullpage_dlg_appearance_textprops"
-msgstr "文本属性"
+msgstr "Text properties"
 
 msgid "fullpage_dlg_bgcolor"
-msgstr "背景颜色"
+msgstr "Background color"
 
 msgid "fullpage_dlg_bgimage"
-msgstr "背景图片"
+msgstr "Background image"
 
 msgid "fullpage_dlg_left_margin"
-msgstr "左边距"
+msgstr "Left margin"
 
 msgid "fullpage_dlg_right_margin"
-msgstr "右边距"
+msgstr "Right margin"
 
 msgid "fullpage_dlg_top_margin"
-msgstr "上边距"
+msgstr "Top margin"
 
 msgid "fullpage_dlg_bottom_margin"
-msgstr "下边距"
+msgstr "Bottom margin"
 
 msgid "fullpage_dlg_text_color"
-msgstr "文本颜色"
+msgstr "Text color"
 
 msgid "fullpage_dlg_font_size"
-msgstr "字体大小"
+msgstr "Font size"
 
 msgid "fullpage_dlg_font_face"
-msgstr "字体"
+msgstr "Font face"
 
 msgid "fullpage_dlg_link_color"
-msgstr "超链接颜色"
+msgstr "Link color"
 
 msgid "fullpage_dlg_hover_color"
-msgstr "Hover颜色"
+msgstr "Hover color"
 
 msgid "fullpage_dlg_visited_color"
-msgstr "Visited颜色"
+msgstr "Visited color"
 
 msgid "fullpage_dlg_active_color"
-msgstr "Active颜色"
+msgstr "Active color"
 
 msgid "fullpage_dlg_textcolor"
-msgstr "颜色"
+msgstr "Color"
 
 msgid "fullpage_dlg_fontsize"
-msgstr "字体大小"
+msgstr "Font size"
 
 msgid "fullpage_dlg_fontface"
-msgstr "字体"
+msgstr "Font family"
 
 msgid "fullpage_dlg_meta_index_follow"
-msgstr "索引并连结"
+msgstr "Index and follow the links"
 
 msgid "fullpage_dlg_meta_index_nofollow"
-msgstr "索引但不连结"
+msgstr "Index and don't follow the links"
 
 msgid "fullpage_dlg_meta_noindex_follow"
-msgstr "不索引但连结"
+msgstr "Do not index but follow the links"
 
 msgid "fullpage_dlg_meta_noindex_nofollow"
-msgstr "不索引也不连结"
+msgstr "Do not index and don't follow the links"
 
 msgid "fullpage_dlg_appearance_style"
-msgstr "样式表与样式属性"
+msgstr "Stylesheet and style properties"
 
 msgid "fullpage_dlg_stylesheet"
-msgstr "样式表"
+msgstr "Stylesheet"
 
 msgid "fullpage_dlg_style"
-msgstr "样式"
+msgstr "Style"
 
 msgid "fullpage_dlg_author"
-msgstr "作者"
+msgstr "Author"
 
 msgid "fullpage_dlg_copyright"
-msgstr "版权"
+msgstr "Copyright"
 
 msgid "fullpage_dlg_add"
-msgstr "添加元素"
+msgstr "Add new element"
 
 msgid "fullpage_dlg_remove"
-msgstr "删除选择元素"
+msgstr "Remove selected element"
 
 msgid "fullpage_dlg_moveup"
-msgstr "上移选择元素"
+msgstr "Move selected element up"
 
 msgid "fullpage_dlg_movedown"
-msgstr "下移选择元素"
+msgstr "Move selected element down"
 
 msgid "fullpage_dlg_head_elements"
-msgstr "Head 元素"
+msgstr "Head elements"
 
 msgid "fullpage_dlg_info"
-msgstr "信息"
+msgstr "Information"
 
 msgid "fullpage_dlg_add_title"
-msgstr "Title 元素"
+msgstr "Title element"
 
 msgid "fullpage_dlg_add_meta"
-msgstr "Meta 元素"
+msgstr "Meta element"
 
 msgid "fullpage_dlg_add_script"
-msgstr "Script 元素"
+msgstr "Script element"
 
 msgid "fullpage_dlg_add_style"
-msgstr "Style 元素"
+msgstr "Style element"
 
 msgid "fullpage_dlg_add_link"
-msgstr "Link 元素"
+msgstr "Link element"
 
 msgid "fullpage_dlg_add_base"
-msgstr "Base 元素"
+msgstr "Base element"
 
 msgid "fullpage_dlg_add_comment"
-msgstr "注释结点"
+msgstr "Comment node"
 
 msgid "fullpage_dlg_title_element"
-msgstr "Title 元素"
+msgstr "Title element"
 
 msgid "fullpage_dlg_script_element"
-msgstr "Script 元素"
+msgstr "Script element"
 
 msgid "fullpage_dlg_style_element"
-msgstr "Style 元素"
+msgstr "Style element"
 
 msgid "fullpage_dlg_base_element"
-msgstr "Base 元素"
+msgstr "Base element"
 
 msgid "fullpage_dlg_link_element"
-msgstr "Link 元素"
+msgstr "Link element"
 
 msgid "fullpage_dlg_meta_element"
-msgstr "Meta 元素"
+msgstr "Meta element"
 
 msgid "fullpage_dlg_comment_element"
-msgstr "注释"
+msgstr "Comment"
 
 msgid "fullpage_dlg_src"
-msgstr "地址"
+msgstr "Src"
 
 msgid "fullpage_dlg_language"
-msgstr "语言"
+msgstr "Language"
 
 msgid "fullpage_dlg_href"
 msgstr "Href"
 
 msgid "fullpage_dlg_target"
-msgstr "目标"
+msgstr "Target"
 
 msgid "fullpage_dlg_type"
-msgstr "类型"
+msgstr "Type"
 
 msgid "fullpage_dlg_charset"
-msgstr "字符集"
+msgstr "Charset"
 
 msgid "fullpage_dlg_defer"
-msgstr "延迟"
+msgstr "Defer"
 
 msgid "fullpage_dlg_media"
-msgstr "媒体"
+msgstr "Media"
 
 msgid "fullpage_dlg_properties"
-msgstr "属性"
+msgstr "Properties"
 
 msgid "fullpage_dlg_name"
-msgstr "属性"
+msgstr "Name"
 
 msgid "fullpage_dlg_value"
-msgstr "值"
+msgstr "Value"
 
 msgid "fullpage_dlg_content"
-msgstr "内容"
+msgstr "Content"
 
 msgid "fullpage_dlg_rel"
 msgstr "Rel"
@@ -2195,37 +2195,37 @@ msgid "fullpage_dlg_rev"
 msgstr "Rev"
 
 msgid "fullpage_dlg_hreflang"
-msgstr "Href 语言"
+msgstr "Href lang"
 
 msgid "fullpage_dlg_general_props"
-msgstr "常规"
+msgstr "General"
 
 msgid "fullpage_dlg_advanced_props"
-msgstr "高级"
+msgstr "Advanced"
 
 msgid "template_desc"
-msgstr "插入预设的模板内容"
+msgstr "Insert predefined template content"
 
 msgid "template_dlg_title"
-msgstr "模板"
+msgstr "Templates"
 
 msgid "template_dlg_label"
-msgstr "模板"
+msgstr "Template"
 
 msgid "template_dlg_desc_label"
-msgstr "说明"
+msgstr "Description"
 
 msgid "template_dlg_desc"
-msgstr "插入预设的模板内容"
+msgstr "Insert predefined template content"
 
 msgid "template_dlg_select"
-msgstr "选择模板"
+msgstr "Select a template"
 
 msgid "template_dlg_preview"
-msgstr "预览"
+msgstr "Preview"
 
 msgid "template_dlg_warning"
-msgstr "警告：更新模板可能导致数据丢失。"
+msgstr "Warning: Updating a template with a different one may cause data loss."
 
 msgid "template_dlg_mdate_format"
 msgstr "%Y-%m-%d %H:%M:%S"
@@ -2234,77 +2234,77 @@ msgid "template_dlg_cdate_format"
 msgstr "%Y-%m-%d %H:%M:%S"
 
 msgid "template_dlg_months_long"
-msgstr "一月,二月,三月,四月,五月,六月,七月,八月,九月,十月,十一月,十二月"
+msgstr "January,February,March,April,May,June,July,August,September,October,November,December"
 
 msgid "template_dlg_months_short"
-msgstr "1月,2月,3月,4月,5月,6月,7月,8月,9月,10月,11月,12月"
+msgstr "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec"
 
 msgid "template_dlg_day_long"
-msgstr "星期日,星期一,星期二,星期三,星期四,星期五,星期六,星期日"
+msgstr "Sunday,Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday"
 
 msgid "template_dlg_day_short"
-msgstr "周日,周一,周二,周三,周四,周五,周六,周日"
+msgstr "Sun,Mon,Tue,Wed,Thu,Fri,Sat,Sun"
 
 msgid "visualchars_desc"
-msgstr "显示/隐藏 非可见字符"
+msgstr "Visual control characters on/off."
 
 msgid "spellchecker_desc"
-msgstr "拼写检查"
+msgstr "Toggle spellchecker"
 
 msgid "spellchecker_menu"
-msgstr "拼写检查设置"
+msgstr "Spellchecker settings"
 
 msgid "spellchecker_ignore_word"
-msgstr "忽略"
+msgstr "Ignore word"
 
 msgid "spellchecker_ignore_words"
-msgstr "全部忽略"
+msgstr "Ignore all"
 
 msgid "spellchecker_langs"
-msgstr "语言"
+msgstr "Languages"
 
 msgid "spellchecker_wait"
-msgstr "请稍候..."
+msgstr "Please wait..."
 
 msgid "spellchecker_sug"
-msgstr "建议"
+msgstr "Suggestions"
 
 msgid "spellchecker_no_sug"
-msgstr "无建议"
+msgstr "No suggestions"
 
 msgid "spellchecker_no_mpell"
-msgstr "无拼写错误"
+msgstr "No misspellings found."
 
 msgid "pagebreak_desc"
-msgstr "插入分页符"
+msgstr "Insert page break."
 
 msgid "advlist_types"
-msgstr "样式"
+msgstr "Types"
 
 msgid "advlist_def"
-msgstr "默认"
+msgstr "Default"
 
 msgid "advlist_lower_alpha"
-msgstr "小写字母"
+msgstr "Lower alpha"
 
 msgid "advlist_lower_greek"
-msgstr "小写希腊字母"
+msgstr "Lower greek"
 
 msgid "advlist_lower_roman"
-msgstr "小写罗马数字"
+msgstr "Lower roman"
 
 msgid "advlist_upper_alpha"
-msgstr "大写字母"
+msgstr "Upper alpha"
 
 msgid "advlist_upper_roman"
-msgstr "大写罗马数字"
+msgstr "Upper roman"
 
 msgid "advlist_circle"
-msgstr "圆圈"
+msgstr "Circle"
 
 msgid "advlist_disc"
-msgstr "圆点"
+msgstr "Disc"
 
 msgid "advlist_square"
-msgstr "方块"
+msgstr "Square"
 

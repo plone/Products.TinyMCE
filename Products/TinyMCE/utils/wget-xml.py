@@ -4,12 +4,6 @@
 
 import os
 
-try:
-    import win32api
-    WIN32 = True
-except ImportError:
-    WIN32 = False
-
 __WGET = os.environ.get('WGET', 'wget')
 
 AVAILABLE_LANGUAGES = set(

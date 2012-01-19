@@ -1,12 +1,12 @@
 # This is the Basque language pack for TinyMCE.
-# Version 1.2
+# Version 1.4
 #
 # Moxiecode Systems AB
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2010-06-22 00:00+0000\n"
+"PO-Revision-Date: 2010-11-12 00:00+0000\n"
 "Last-Translator: Moxiecode Systems AB\n"
 "Language-Team: Moxiecode Systems AB\n"
 "MIME-Version: 1.0\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Domain: tinymce\n"
 
 msgid "common_edit_confirm"
-msgstr "Testu-kutxa honek WYSIWYG editorea izatea nahi duzu?"
+msgstr "Testu-kutxa hau WYSIWYG editorea izatea nahi duzu?"
 
 msgid "common_apply"
 msgstr "Aplikatu"
@@ -40,10 +40,10 @@ msgid "common_browse"
 msgstr "Arakatu"
 
 msgid "common_class_name"
-msgstr "Kalsea"
+msgstr "Klasea"
 
 msgid "common_not_set"
-msgstr "-- Ezarri gabe --"
+msgstr "-- Bat ere ez --"
 
 msgid "common_clipboard_msg"
 msgstr "Kopiatu/Ebaki/Itsatsi ez dago Mozilla eta Firefoxen.\nHonen inguruko informazioa nahi duzu??"
@@ -94,7 +94,7 @@ msgid "advanced_font_size"
 msgstr "Letra-tamaina"
 
 msgid "advanced_fontdefault"
-msgstr "Letra-tipoa"
+msgstr "Letra-mota"
 
 msgid "advanced_block"
 msgstr "Formatua"
@@ -604,7 +604,7 @@ msgid "emotions_dlg_wink"
 msgstr "Keinua"
 
 msgid "emotions_dlg_yell"
-msgstr "Ohiua"
+msgstr "Oihua"
 
 msgid "searchreplace_search_desc"
 msgstr "Bilatu"
@@ -660,295 +660,295 @@ msgstr "Ordezkatu"
 msgid "searchreplace_dlg_replaceall"
 msgstr "Ordezkatu guztiak"
 
-msgid "ploneimage_image_desc"
+msgid "plonebrowser_image_desc"
 msgstr "Irudia txertatu/editatu"
 
-msgid "ploneimage_delta_width"
+msgid "plonebrowser_delta_width"
 msgstr "Zabalera"
 
-msgid "ploneimage_delta_height"
+msgid "plonebrowser_delta_height"
 msgstr "Altuera"
 
-msgid "ploneimage_dlg_tab_general"
+msgid "plonebrowser_dlg_tab_general"
 msgstr "Orokorra"
 
-msgid "ploneimage_dlg_tab_appearance"
+msgid "plonebrowser_dlg_tab_appearance"
 msgstr "Itxura"
 
-msgid "ploneimage_dlg_tab_advanced"
+msgid "plonebrowser_dlg_tab_advanced"
 msgstr "Aurreratua"
 
-msgid "ploneimage_dlg_general"
+msgid "plonebrowser_dlg_general"
 msgstr "Orokorra"
 
-msgid "ploneimage_dlg_title"
+msgid "plonebrowser_dlg_title"
 msgstr "Izenburua"
 
-msgid "ploneimage_dlg_preview"
+msgid "plonebrowser_dlg_preview"
 msgstr "Aurrebista"
 
-msgid "ploneimage_dlg_constrain_proportions"
+msgid "plonebrowser_dlg_constrain_proportions"
 msgstr "Proportzioak mantendu"
 
-msgid "ploneimage_dlg_langdir"
+msgid "plonebrowser_dlg_langdir"
 msgstr "Hizkuntzaren norabidea"
 
-msgid "ploneimage_dlg_langcode"
+msgid "plonebrowser_dlg_langcode"
 msgstr "Hizkuntza-kodea"
 
-msgid "ploneimage_dlg_long_desc"
+msgid "plonebrowser_dlg_long_desc"
 msgstr "Deskribaepn luzearen lotura"
 
-msgid "ploneimage_dlg_style"
+msgid "plonebrowser_dlg_style"
 msgstr "Estiloa"
 
-msgid "ploneimage_dlg_classes"
+msgid "plonebrowser_dlg_classes"
 msgstr "Klaseak"
 
-msgid "ploneimage_dlg_ltr"
-msgstr "Ezkerretik eskumara"
-
-msgid "ploneimage_dlg_rtl"
-msgstr "Eskuinatik ezkerrera"
-
-msgid "ploneimage_dlg_id"
-msgstr "Id"
-
-msgid "ploneimage_dlg_map"
-msgstr "Irudi-mapa"
-
-msgid "ploneimage_dlg_swap_image"
-msgstr "Irudia ordezkatu"
-
-msgid "ploneimage_dlg_alt_image"
-msgstr "Ordezko irudia"
-
-msgid "ploneimage_dlg_mouseover"
-msgstr "xagua gainean dagoenean"
-
-msgid "ploneimage_dlg_mouseout"
-msgstr "xagua kentzen denean"
-
-msgid "ploneimage_dlg_misc"
-msgstr "Bestelakoak"
-
-msgid "ploneimage_dlg_example_img"
-msgstr "Nola ikusiko den"
-
-msgid "ploneimage_dlg_missing_alt"
-msgstr "Irudiaren deskribapena gehitu gabe jarraitu nahi duzu? Hau horrela, ezgaitasunak dituztenentzat edo testu nabigatzaile bat darabiltenentzat ez da irisgarria izango."
-
-msgid "ploneimage_dlg_dialog_title"
-msgstr "Irudia txertatu/editatu"
-
-msgid "ploneimage_dlg_src"
-msgstr "Irudiaren URL helbidea"
-
-msgid "ploneimage_dlg_alt"
-msgstr "Irudiaren deskribapena"
-
-msgid "ploneimage_dlg_list"
-msgstr "Irudi-zerrenda"
-
-msgid "ploneimage_dlg_border"
-msgstr "Inguruko marra"
-
-msgid "ploneimage_dlg_dimensions"
-msgstr "Tamaina"
-
-msgid "ploneimage_dlg_vspace"
-msgstr "Tarte bertikala"
-
-msgid "ploneimage_dlg_hspace"
-msgstr "Tarte horizontala"
-
-msgid "ploneimage_dlg_align"
-msgstr "Alineazioa"
-
-msgid "ploneimage_dlg_align_baseline"
-msgstr "Oinarri-marra"
-
-msgid "ploneimage_dlg_align_top"
-msgstr "Goian"
-
-msgid "ploneimage_dlg_align_middle"
-msgstr "Tartean"
-
-msgid "ploneimage_dlg_align_bottom"
-msgstr "Behean"
-
-msgid "ploneimage_dlg_align_texttop"
-msgstr "Testua goian"
-
-msgid "ploneimage_dlg_align_textbottom"
-msgstr "Testua behean"
-
-msgid "ploneimage_dlg_align_left"
-msgstr "Ezkerrean"
-
-msgid "ploneimage_dlg_align_right"
-msgstr "Eskuinean"
-
-msgid "ploneimage_dlg_image_list"
-msgstr "Irudi-zerrenda"
-
-msgid "plonelink_link_desc"
-msgstr "Lotura txertatu/editatu"
-
-msgid "plonelink_delta_width"
-msgstr "Zabalera"
-
-msgid "plonelink_delta_height"
-msgstr "Altuera"
-
-msgid "plonelink_dlg_title"
-msgstr "Lotura txertatu/editatu"
-
-msgid "plonelink_dlg_url"
-msgstr "Loturaren URL helbidea"
-
-msgid "plonelink_dlg_target"
-msgstr "Helburua"
-
-msgid "plonelink_dlg_titlefield"
-msgstr "Izenburua"
-
-msgid "plonelink_dlg_is_email"
-msgstr "Sartutako helbideak e-posta bat dirudi, aurretik mailto: gehitzea nahi duzu?"
-
-msgid "plonelink_dlg_is_external"
-msgstr "Sartutako helbideak kanpoko webgune batena dirudi, aurretik http:// gehitzea nahi duzu?"
-
-msgid "plonelink_dlg_list"
-msgstr "Lotura-zerrenda"
-
-msgid "plonelink_dlg_general_tab"
-msgstr "Orokorra"
-
-msgid "plonelink_dlg_popup_tab"
-msgstr "Popupa"
-
-msgid "plonelink_dlg_events_tab"
-msgstr "Ebentuak"
-
-msgid "plonelink_dlg_advanced_tab"
-msgstr "Gehigarriak"
-
-msgid "plonelink_dlg_general_props"
-msgstr "Aukera orokorrak"
-
-msgid "plonelink_dlg_popup_props"
-msgstr "Popuparen aukerak"
-
-msgid "plonelink_dlg_event_props"
-msgstr "Ebentuak"
-
-msgid "plonelink_dlg_advanced_props"
-msgstr "Aukera aurreratuak"
-
-msgid "plonelink_dlg_popup_opts"
-msgstr "Aukerak"
-
-msgid "plonelink_dlg_anchor_names"
-msgstr "Aingurak"
-
-msgid "plonelink_dlg_target_same"
-msgstr "Leiho/marko honetan ireki"
-
-msgid "plonelink_dlg_target_parent"
-msgstr "Leiho/marko gurasoan ireki"
-
-msgid "plonelink_dlg_target_top"
-msgstr "Gorengo markoan ireki (marko guztiak ordezkatzen ditu)"
-
-msgid "plonelink_dlg_target_blank"
-msgstr "Leiho berrian ireki"
-
-msgid "plonelink_dlg_popup"
-msgstr "Javascript popupa"
-
-msgid "plonelink_dlg_popup_url"
-msgstr "Popuparen URL helbidea"
-
-msgid "plonelink_dlg_popup_name"
-msgstr "Leihoaren izena"
-
-msgid "plonelink_dlg_popup_return"
-msgstr "'return false' txertatu"
-
-msgid "plonelink_dlg_popup_scrollbars"
-msgstr "Gora-behera barra erakutsi"
-
-msgid "plonelink_dlg_popup_statusbar"
-msgstr "Egoera-barra erakutsi"
-
-msgid "plonelink_dlg_popup_toolbar"
-msgstr "Tresna-barrak erakutsi"
-
-msgid "plonelink_dlg_popup_menubar"
-msgstr "Menu-barra erakutsi"
-
-msgid "plonelink_dlg_popup_location"
-msgstr "Helbide-barra erakutsi"
-
-msgid "plonelink_dlg_popup_resizable"
-msgstr "Leihoaren tamaina aldatzea aktibatu"
-
-msgid "plonelink_dlg_popup_dependent"
-msgstr "Menpekoa (Mozilla/Firefoxen bakarrik)"
-
-msgid "plonelink_dlg_popup_size"
-msgstr "Tamaina"
-
-msgid "plonelink_dlg_popup_position"
-msgstr "Kokapena (X/Y)"
-
-msgid "plonelink_dlg_id"
-msgstr "Id"
-
-msgid "plonelink_dlg_style"
-msgstr "Estiloa"
-
-msgid "plonelink_dlg_classes"
-msgstr "Klaseak"
-
-msgid "plonelink_dlg_target_name"
-msgstr "Helburuaren izena"
-
-msgid "plonelink_dlg_langdir"
-msgstr "Hizkuntzaren norabidea"
-
-msgid "plonelink_dlg_target_langcode"
-msgstr "Helburu-hizkuntza"
-
-msgid "plonelink_dlg_langcode"
-msgstr "Hizkuntza-kodea"
-
-msgid "plonelink_dlg_encoding"
-msgstr "Helburuaren karaktere-kodeketa"
-
-msgid "plonelink_dlg_mime"
-msgstr "Helburuaren MIME mota"
-
-msgid "plonelink_dlg_rel"
-msgstr "Orrialdearen eta helburuaren arteko erlazioa"
-
-msgid "plonelink_dlg_rev"
-msgstr "Helburuaren eta orrialdearen arteko erlazioa"
-
-msgid "plonelink_dlg_tabindex"
-msgstr "Tabulazio ordena"
-
-msgid "plonelink_dlg_accesskey"
-msgstr "Laster-tekla"
-
-msgid "plonelink_dlg_ltr"
+msgid "plonebrowser_dlg_ltr"
 msgstr "Ezkerretik eskuinera"
 
-msgid "plonelink_dlg_rtl"
+msgid "plonebrowser_dlg_rtl"
 msgstr "Eskuinetik ezkerrera"
 
-msgid "plonelink_dlg_link_list"
+msgid "plonebrowser_dlg_id"
+msgstr "Id"
+
+msgid "plonebrowser_dlg_map"
+msgstr "Irudi-mapa"
+
+msgid "plonebrowser_dlg_swap_image"
+msgstr "Irudia ordezkatu"
+
+msgid "plonebrowser_dlg_alt_image"
+msgstr "Ordezko irudia"
+
+msgid "plonebrowser_dlg_mouseover"
+msgstr "xagua gainean dagoenean"
+
+msgid "plonebrowser_dlg_mouseout"
+msgstr "xagua kentzen denean"
+
+msgid "plonebrowser_dlg_misc"
+msgstr "Bestelakoak"
+
+msgid "plonebrowser_dlg_example_img"
+msgstr "Nola ikusiko den"
+
+msgid "plonebrowser_dlg_missing_alt"
+msgstr "Irudiaren deskribapena gehitu gabe jarraitu nahi duzu? Hau horrela, ezgaitasunak dituztenentzat edo testu nabigatzaile bat darabiltenentzat ez da irisgarria izango."
+
+msgid "plonebrowser_dlg_dialog_title"
+msgstr "Irudia txertatu/editatu"
+
+msgid "plonebrowser_dlg_src"
+msgstr "Irudiaren URL helbidea"
+
+msgid "plonebrowser_dlg_alt"
+msgstr "Irudiaren deskribapena"
+
+msgid "plonebrowser_dlg_list"
+msgstr "Irudi-zerrenda"
+
+msgid "plonebrowser_dlg_border"
+msgstr "Inguruko marra"
+
+msgid "plonebrowser_dlg_dimensions"
+msgstr "Tamaina"
+
+msgid "plonebrowser_dlg_vspace"
+msgstr "Tarte bertikala"
+
+msgid "plonebrowser_dlg_hspace"
+msgstr "Tarte horizontala"
+
+msgid "plonebrowser_dlg_align"
+msgstr "Alineazioa"
+
+msgid "plonebrowser_dlg_align_baseline"
+msgstr "Oinarri-marra"
+
+msgid "plonebrowser_dlg_align_top"
+msgstr "Goian"
+
+msgid "plonebrowser_dlg_align_middle"
+msgstr "Tartean"
+
+msgid "plonebrowser_dlg_align_bottom"
+msgstr "Behean"
+
+msgid "plonebrowser_dlg_align_texttop"
+msgstr "Testua goian"
+
+msgid "plonebrowser_dlg_align_textbottom"
+msgstr "Testua behean"
+
+msgid "plonebrowser_dlg_align_left"
+msgstr "Ezkerrean"
+
+msgid "plonebrowser_dlg_align_right"
+msgstr "Eskuinean"
+
+msgid "plonebrowser_dlg_image_list"
+msgstr "Irudi-zerrenda"
+
+msgid "plonebrowser_link_desc"
+msgstr "Lotura txertatu/editatu"
+
+msgid "plonebrowser_delta_width"
+msgstr "Zabalera"
+
+msgid "plonebrowser_delta_height"
+msgstr "Altuera"
+
+msgid "plonebrowser_dlg_title"
+msgstr "Lotura txertatu/editatu"
+
+msgid "plonebrowser_dlg_url"
+msgstr "Loturaren URL helbidea"
+
+msgid "plonebrowser_dlg_target"
+msgstr "Helburua"
+
+msgid "plonebrowser_dlg_titlefield"
+msgstr "Izenburua"
+
+msgid "plonebrowser_dlg_is_email"
+msgstr "Sartutako helbideak e-posta bat dirudi, aurretik mailto: gehitzea nahi duzu?"
+
+msgid "plonebrowser_dlg_is_external"
+msgstr "Sartutako helbideak kanpoko webgune batena dirudi, aurretik http:// gehitzea nahi duzu?"
+
+msgid "plonebrowser_dlg_list"
+msgstr "Lotura-zerrenda"
+
+msgid "plonebrowser_dlg_general_tab"
+msgstr "Orokorra"
+
+msgid "plonebrowser_dlg_popup_tab"
+msgstr "Popupa"
+
+msgid "plonebrowser_dlg_events_tab"
+msgstr "Ebentuak"
+
+msgid "plonebrowser_dlg_advanced_tab"
+msgstr "Gehigarriak"
+
+msgid "plonebrowser_dlg_general_props"
+msgstr "Aukera orokorrak"
+
+msgid "plonebrowser_dlg_popup_props"
+msgstr "Popuparen aukerak"
+
+msgid "plonebrowser_dlg_event_props"
+msgstr "Ebentuak"
+
+msgid "plonebrowser_dlg_advanced_props"
+msgstr "Aukera aurreratuak"
+
+msgid "plonebrowser_dlg_popup_opts"
+msgstr "Aukerak"
+
+msgid "plonebrowser_dlg_anchor_names"
+msgstr "Aingurak"
+
+msgid "plonebrowser_dlg_target_same"
+msgstr "Leiho/marko honetan ireki"
+
+msgid "plonebrowser_dlg_target_parent"
+msgstr "Leiho/marko gurasoan ireki"
+
+msgid "plonebrowser_dlg_target_top"
+msgstr "Gorengo markoan ireki (marko guztiak ordezkatzen ditu)"
+
+msgid "plonebrowser_dlg_target_blank"
+msgstr "Leiho berrian ireki"
+
+msgid "plonebrowser_dlg_popup"
+msgstr "Javascript popupa"
+
+msgid "plonebrowser_dlg_popup_url"
+msgstr "Popuparen URL helbidea"
+
+msgid "plonebrowser_dlg_popup_name"
+msgstr "Leihoaren izena"
+
+msgid "plonebrowser_dlg_popup_return"
+msgstr "'return false' txertatu"
+
+msgid "plonebrowser_dlg_popup_scrollbars"
+msgstr "Gora-behera barra erakutsi"
+
+msgid "plonebrowser_dlg_popup_statusbar"
+msgstr "Egoera-barra erakutsi"
+
+msgid "plonebrowser_dlg_popup_toolbar"
+msgstr "Tresna-barrak erakutsi"
+
+msgid "plonebrowser_dlg_popup_menubar"
+msgstr "Menu-barra erakutsi"
+
+msgid "plonebrowser_dlg_popup_location"
+msgstr "Helbide-barra erakutsi"
+
+msgid "plonebrowser_dlg_popup_resizable"
+msgstr "Leihoaren tamaina aldatzea aktibatu"
+
+msgid "plonebrowser_dlg_popup_dependent"
+msgstr "Menpekoa (Mozilla/Firefoxen bakarrik)"
+
+msgid "plonebrowser_dlg_popup_size"
+msgstr "Tamaina"
+
+msgid "plonebrowser_dlg_popup_position"
+msgstr "Kokapena (X/Y)"
+
+msgid "plonebrowser_dlg_id"
+msgstr "Id"
+
+msgid "plonebrowser_dlg_style"
+msgstr "Estiloa"
+
+msgid "plonebrowser_dlg_classes"
+msgstr "Klaseak"
+
+msgid "plonebrowser_dlg_target_name"
+msgstr "Helburuaren izena"
+
+msgid "plonebrowser_dlg_langdir"
+msgstr "Hizkuntzaren norabidea"
+
+msgid "plonebrowser_dlg_target_langcode"
+msgstr "Helburu-hizkuntza"
+
+msgid "plonebrowser_dlg_langcode"
+msgstr "Hizkuntza-kodea"
+
+msgid "plonebrowser_dlg_encoding"
+msgstr "Helburuaren karaktere-kodeketa"
+
+msgid "plonebrowser_dlg_mime"
+msgstr "Helburuaren MIME mota"
+
+msgid "plonebrowser_dlg_rel"
+msgstr "Orrialdearen eta helburuaren arteko erlazioa"
+
+msgid "plonebrowser_dlg_rev"
+msgstr "Helburuaren eta orrialdearen arteko erlazioa"
+
+msgid "plonebrowser_dlg_tabindex"
+msgstr "Tabulazio ordena"
+
+msgid "plonebrowser_dlg_accesskey"
+msgstr "Laster-tekla"
+
+msgid "plonebrowser_dlg_ltr"
+msgstr "Ezkerretik eskuinera"
+
+msgid "plonebrowser_dlg_rtl"
+msgstr "Eskuinetik ezkerrera"
+
+msgid "plonebrowser_dlg_link_list"
 msgstr "Lotura-zerrenda"
 
 msgid "xhtmlxtras_cite_desc"
@@ -1108,7 +1108,7 @@ msgid "style_dlg_title"
 msgstr "Aldatu CSS estiloa"
 
 msgid "style_dlg_apply"
-msgstr "Apply"
+msgstr "Apikatu"
 
 msgid "style_dlg_text_tab"
 msgstr "Testua"
@@ -1153,28 +1153,28 @@ msgid "style_dlg_text_lineheight"
 msgstr "Lerro garaiera"
 
 msgid "style_dlg_text_case"
-msgstr "Case"
+msgstr "Minus./Maius."
 
 msgid "style_dlg_text_color"
 msgstr "Kolorea"
 
 msgid "style_dlg_text_decoration"
-msgstr "Decoration"
+msgstr "Apaingarriak"
 
 msgid "style_dlg_text_overline"
-msgstr "overline"
+msgstr "Goimarra"
 
 msgid "style_dlg_text_underline"
-msgstr "underline"
+msgstr "Azpimarra"
 
 msgid "style_dlg_text_striketrough"
-msgstr "strikethrough"
+msgstr "Marratua"
 
 msgid "style_dlg_text_blink"
-msgstr "blink"
+msgstr "Keinada"
 
 msgid "style_dlg_text_none"
-msgstr "none"
+msgstr "Bat ere ez"
 
 msgid "style_dlg_background_color"
 msgstr "Atzeko kolorea"
@@ -1207,13 +1207,13 @@ msgid "style_dlg_block_text_align"
 msgstr "Testu lerrokatzea"
 
 msgid "style_dlg_block_text_indent"
-msgstr "Text indent"
+msgstr "Koska"
 
 msgid "style_dlg_block_whitespace"
 msgstr "Zuriunea"
 
 msgid "style_dlg_block_display"
-msgstr "Display"
+msgstr "Erakutsi"
 
 msgid "style_dlg_box_width"
 msgstr "Zabalera"
@@ -1231,22 +1231,22 @@ msgid "style_dlg_padding"
 msgstr "Padding"
 
 msgid "style_dlg_same"
-msgstr "Guztientzat bera"
+msgstr "Guztientzat berdina"
 
 msgid "style_dlg_top"
-msgstr "Top"
+msgstr "Gora"
 
 msgid "style_dlg_right"
-msgstr "Right"
+msgstr "Eskuina"
 
 msgid "style_dlg_bottom"
-msgstr "Bottom"
+msgstr "Behera"
 
 msgid "style_dlg_left"
-msgstr "Ezkerrera"
+msgstr "Ezkerra"
 
 msgid "style_dlg_margin"
-msgstr "Margin"
+msgstr "Margina"
 
 msgid "style_dlg_style"
 msgstr "Estiloa"
@@ -1264,7 +1264,7 @@ msgid "style_dlg_list_type"
 msgstr "Mota"
 
 msgid "style_dlg_bullet_image"
-msgstr "Buleta irudia"
+msgstr "Bulet-irudia"
 
 msgid "style_dlg_position"
 msgstr "Kokapena"
@@ -1285,7 +1285,7 @@ msgid "style_dlg_placement"
 msgstr "Placement"
 
 msgid "style_dlg_clip"
-msgstr "Clip"
+msgstr "Klip"
 
 msgid "paste_paste_text_desc"
 msgstr "Testu gisa itsatsi"
@@ -1309,7 +1309,7 @@ msgid "paste_dlg_text_linebreaks"
 msgstr "Mantendu lerro-jauziak"
 
 msgid "paste_dlg_word_title"
-msgstr "Erabili CTRL+V testua lehioan itsasteko.."
+msgstr "Erabili CTRL+V testua lehioan itsasteko."
 
 msgid "table_desc"
 msgstr "Taula berri bat txertatu"
@@ -1408,7 +1408,7 @@ msgid "table_dlg_advanced_props"
 msgstr "Ezaugarri aurreratuak"
 
 msgid "table_dlg_rowtype"
-msgstr "Row in table part"
+msgstr "Lerro mota"
 
 msgid "table_dlg_title"
 msgstr "Txertatu/Aldatu taula"
@@ -1426,19 +1426,19 @@ msgid "table_dlg_rows"
 msgstr "Lerroak"
 
 msgid "table_dlg_cellspacing"
-msgstr "Cellspacing"
+msgstr "Gelaxkaren tartea"
 
 msgid "table_dlg_cellpadding"
-msgstr "Cellpadding"
+msgstr "Gelaxkaren betegarria"
 
 msgid "table_dlg_border"
-msgstr "Border"
+msgstr "Ertza"
 
 msgid "table_dlg_align"
 msgstr "Lerrokatzea"
 
 msgid "table_dlg_align_default"
-msgstr "Default"
+msgstr "Lehenetsia"
 
 msgid "table_dlg_align_left"
 msgstr "Ezkerrera"
@@ -1468,7 +1468,7 @@ msgid "table_dlg_align_bottom"
 msgstr "Behean"
 
 msgid "table_dlg_bordercolor"
-msgstr "Border color"
+msgstr "Ertz kolorea"
 
 msgid "table_dlg_bgcolor"
 msgstr "Atzeko kolorea"
@@ -1546,7 +1546,7 @@ msgid "table_dlg_rowgroup"
 msgstr "Lerro Taldea"
 
 msgid "table_dlg_colgroup"
-msgstr "Zut Taldea"
+msgstr "Zutabe Taldea"
 
 msgid "table_dlg_col_limit"
 msgstr "Zutabe kopuru maximoa ({$cols}) gainditu duzu."
@@ -1561,13 +1561,13 @@ msgid "table_dlg_missing_scope"
 msgstr "Taularen goiburukoari eremu bat zehaztu gabe jarritu nahi duzula ziur zaude? Eremu hori gabe, ezintasunak dituzten erabiltzaileentzat zaila izango da taularen datuak ulertzea."
 
 msgid "table_dlg_caption"
-msgstr "Table caption"
+msgstr "Taularen azpititulua"
 
 msgid "table_dlg_frame"
 msgstr "Markoa"
 
 msgid "table_dlg_frame_none"
-msgstr "none"
+msgstr "Bat ere ez"
 
 msgid "table_dlg_frame_groups"
 msgstr "taldeak"
@@ -1576,22 +1576,22 @@ msgid "table_dlg_frame_rows"
 msgstr "lerroak"
 
 msgid "table_dlg_frame_cols"
-msgstr "zurabeak"
+msgstr "zutabeak"
 
 msgid "table_dlg_frame_all"
 msgstr "guztiak"
 
 msgid "table_dlg_rules"
-msgstr "Rules"
+msgstr "Erregelak"
 
 msgid "table_dlg_rules_void"
-msgstr "void"
+msgstr "hutsa"
 
 msgid "table_dlg_rules_above"
-msgstr "above"
+msgstr "gainean"
 
 msgid "table_dlg_rules_below"
-msgstr "below"
+msgstr "azpian"
 
 msgid "table_dlg_rules_hsides"
 msgstr "hsides"
@@ -1624,10 +1624,10 @@ msgid "fullscreen_desc"
 msgstr "Aldatu pantaila osoko modura"
 
 msgid "media_desc"
-msgstr "Insert / edit embedded media"
+msgstr "Sartu / editatu ahokatutako euskarria"
 
 msgid "media_edit"
-msgstr "Edit embedded media"
+msgstr "Editatu ahokatutako euskarria"
 
 msgid "media_delta_width"
 msgstr "Zabalera"
@@ -1636,7 +1636,7 @@ msgid "media_delta_height"
 msgstr "Altuera"
 
 msgid "media_dlg_title"
-msgstr "Insert / edit embedded media"
+msgstr "Sartu / editatu ahokatutako euskarria"
 
 msgid "media_dlg_general"
 msgstr "Orokorra"
@@ -1657,7 +1657,7 @@ msgid "media_dlg_preview"
 msgstr "Aurrebista"
 
 msgid "media_dlg_constrain_proportions"
-msgstr "Constrain proportions"
+msgstr "Itxura erlazioa blokeatu"
 
 msgid "media_dlg_type"
 msgstr "Mota"
@@ -1669,7 +1669,7 @@ msgid "media_dlg_name"
 msgstr "Izena"
 
 msgid "media_dlg_class_name"
-msgstr "Class"
+msgstr "Klasea"
 
 msgid "media_dlg_vspace"
 msgstr "V-Space"
@@ -1681,7 +1681,7 @@ msgid "media_dlg_play"
 msgstr "Auto play"
 
 msgid "media_dlg_loop"
-msgstr "Loop"
+msgstr "Begizta"
 
 msgid "media_dlg_menu"
 msgstr "Erakutsi menua"
@@ -1690,7 +1690,7 @@ msgid "media_dlg_quality"
 msgstr "Kalitatea"
 
 msgid "media_dlg_scale"
-msgstr "Scale"
+msgstr "Eskalatu"
 
 msgid "media_dlg_align"
 msgstr "Lerrokatu"
@@ -1726,10 +1726,10 @@ msgid "media_dlg_controller"
 msgstr "Controller"
 
 msgid "media_dlg_kioskmode"
-msgstr "Kiosk modua"
+msgstr "Kiosko modua"
 
 msgid "media_dlg_playeveryframe"
-msgstr "Play every frame"
+msgstr "Marko guztiak erreproduzitu"
 
 msgid "media_dlg_targetcache"
 msgstr "Helburu katxea"
@@ -1750,13 +1750,13 @@ msgid "media_dlg_href"
 msgstr "Href"
 
 msgid "media_dlg_qtsrcchokespeed"
-msgstr "Choke speed"
+msgstr "Talka abiadura"
 
 msgid "media_dlg_target"
 msgstr "Helburua"
 
 msgid "media_dlg_volume"
-msgstr "Volume"
+msgstr "Bolumena"
 
 msgid "media_dlg_autostart"
 msgstr "Automatikoki hasi"
@@ -1768,19 +1768,19 @@ msgid "media_dlg_fullscreen"
 msgstr "Pantaila osoa"
 
 msgid "media_dlg_invokeurls"
-msgstr "Invoke URLs"
+msgstr "URLa deitu"
 
 msgid "media_dlg_mute"
 msgstr "Ixilik"
 
 msgid "media_dlg_stretchtofit"
-msgstr "Stretch to fit"
+msgstr "Neurrikoa izateko zabaldu"
 
 msgid "media_dlg_windowlessvideo"
 msgstr "Lehiogabeko bideoa"
 
 msgid "media_dlg_balance"
-msgstr "Balance"
+msgstr "Balanzea"
 
 msgid "media_dlg_baseurl"
 msgstr "Base URL"
@@ -1843,13 +1843,13 @@ msgid "media_dlg_shuffle"
 msgstr "Shuffle"
 
 msgid "media_dlg_console"
-msgstr "Console"
+msgstr "Konsola"
 
 msgid "media_dlg_numloop"
 msgstr "Begizta kopurua"
 
 msgid "media_dlg_controls"
-msgstr "Controls"
+msgstr "Kontrolak"
 
 msgid "media_dlg_scriptcallbacks"
 msgstr "Script callbacks"
@@ -1867,7 +1867,7 @@ msgid "media_dlg_sound"
 msgstr "Soinua"
 
 msgid "media_dlg_progress"
-msgstr "Progress"
+msgstr "Aurrerapena"
 
 msgid "media_dlg_qtsrc"
 msgstr "QT Src"
@@ -1903,22 +1903,22 @@ msgid "media_dlg_align_bottom_right"
 msgstr "Behean eskuinean"
 
 msgid "media_dlg_flv_options"
-msgstr "Flash video aukerak"
+msgstr "Flash bideo aukerak"
 
 msgid "media_dlg_flv_scalemode"
-msgstr "Scale modua"
+msgstr "Eskala modua"
 
 msgid "media_dlg_flv_buffer"
 msgstr "Buffer"
 
 msgid "media_dlg_flv_startimage"
-msgstr "Hasiera irudiae"
+msgstr "Hasiera irudia"
 
 msgid "media_dlg_flv_starttime"
 msgstr "Noiz hasi"
 
 msgid "media_dlg_flv_defaultvolume"
-msgstr "Default volumne"
+msgstr "Bolumen lehenetsia"
 
 msgid "media_dlg_flv_hiddengui"
 msgstr "Ezkutuko GUI"
@@ -1927,13 +1927,13 @@ msgid "media_dlg_flv_autostart"
 msgstr "Auto start"
 
 msgid "media_dlg_flv_loop"
-msgstr "Loop"
+msgstr "Begizta"
 
 msgid "media_dlg_flv_showscalemodes"
-msgstr "Erakutsi scale moduak"
+msgstr "Erakutsi eskala moduak"
 
 msgid "media_dlg_flv_smoothvideo"
-msgstr "Smooth video"
+msgstr "Bideo leuna"
 
 msgid "media_dlg_flv_jscallback"
 msgstr "JS Callback"
@@ -1975,10 +1975,10 @@ msgid "fullpage_dlg_meta_description"
 msgstr "Deskribapena"
 
 msgid "fullpage_dlg_meta_robots"
-msgstr "Robots"
+msgstr "Robotak"
 
 msgid "fullpage_dlg_doctypes"
-msgstr "Doctype"
+msgstr "Dokumentu mota"
 
 msgid "fullpage_dlg_langcode"
 msgstr "Hizkuntza kodea"
@@ -1996,7 +1996,7 @@ msgid "fullpage_dlg_xml_pi"
 msgstr "XML zehaztapena"
 
 msgid "fullpage_dlg_encoding"
-msgstr "Karaktere kodeketaCharacter encoding"
+msgstr "Karaktere kodeketa"
 
 msgid "fullpage_dlg_appearance_bgprops"
 msgstr "Atzeko ezaugarriak"
@@ -2035,7 +2035,7 @@ msgid "fullpage_dlg_font_size"
 msgstr "Letra tamaina"
 
 msgid "fullpage_dlg_font_face"
-msgstr "Letra tipoa"
+msgstr "Letra mota"
 
 msgid "fullpage_dlg_link_color"
 msgstr "Loturaren kolorea"
@@ -2056,13 +2056,13 @@ msgid "fullpage_dlg_fontsize"
 msgstr "Letra tamaina"
 
 msgid "fullpage_dlg_fontface"
-msgstr "Letra tipoa"
+msgstr "Letra mota"
 
 msgid "fullpage_dlg_meta_index_follow"
 msgstr "Indexatu eta jarraitu loturak"
 
 msgid "fullpage_dlg_meta_index_nofollow"
-msgstr "Index eta ez jarraitu loturak"
+msgstr "Indexatu eta ez jarraitu loturak"
 
 msgid "fullpage_dlg_meta_noindex_follow"
 msgstr "Ez indexatu, baina jarraitu loturak"
@@ -2143,7 +2143,7 @@ msgid "fullpage_dlg_meta_element"
 msgstr "Meta elementua"
 
 msgid "fullpage_dlg_comment_element"
-msgstr "Komentarioa"
+msgstr "Iruzkina"
 
 msgid "fullpage_dlg_src"
 msgstr "Src"
@@ -2242,10 +2242,10 @@ msgid "visualchars_desc"
 msgstr "Begi kontrol karaktereak gaitu/ezgaitu."
 
 msgid "spellchecker_desc"
-msgstr "Toggle spellchecker"
+msgstr "Ortografia zuzentzaile modura aldatu"
 
 msgid "spellchecker_menu"
-msgstr "Spellchecker settings"
+msgstr "Ortografia zuzentzailearen doikuntza"
 
 msgid "spellchecker_ignore_word"
 msgstr "Ezikusi hitza"
@@ -2266,7 +2266,7 @@ msgid "spellchecker_no_sug"
 msgstr "Gomendiorik ez"
 
 msgid "spellchecker_no_mpell"
-msgstr "Ez da akatsik aurkitu."
+msgstr "Ez da akatsik aurkitu"
 
 msgid "pagebreak_desc"
 msgstr "Txertatu orri jauzia."
@@ -2275,7 +2275,7 @@ msgid "advlist_types"
 msgstr "Motak"
 
 msgid "advlist_def"
-msgstr "Defektuzkoa"
+msgstr "Lehenetsiak"
 
 msgid "advlist_lower_alpha"
 msgstr "Hizki xeheak"

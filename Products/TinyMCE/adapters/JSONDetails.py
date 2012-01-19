@@ -1,10 +1,14 @@
 try:
-    import json
-except ImportError:
     import simplejson as json
+    json   # pyflakes
+except ImportError:
+    import json
+
+from Acquisition import aq_inner
 
 from zope.interface import implements
 from zope.component import getUtility
+from zope.component import getMultiAdapter
 
 from Products.CMFCore.utils import getToolByName
 
@@ -27,25 +31,37 @@ class JSONDetails(object):
            of this object.
         """
 
-        utility = getUtility(ITinyMCE)
-        anchor_portal_types = utility.containsanchors.split('\n')
-        image_portal_types = utility.imageobjects.split('\n')
+        utility = getToolByName(aq_inner(self.context), 'portal_tinymce')
+        anchor_portal_types = {}
+        for apt in utility.containsanchors.splitlines():
+            if apt and '|' in apt:
+                type_, field  = apt.split('|', 1)
+            else:
+                type_ = apt
+                field = ''
+            anchor_portal_types[type_] = field
+
+        image_portal_types = utility.imageobjects.splitlines()
 
         results = {}
         results['title'] = self.context.title_or_id()
+        #results['url'] = self.getSiteRootRelativePath()
+        results['url'] = self.context.absolute_url()
         results['description'] = self.context.Description()
+        results['uid_relative_url'] = 'resolveuid/' + uuidFor(self.context)
+        results['uid_url'] = self._getPloneUrl() + '/resolveuid/' + uuidFor(self.context)
 
         if self.context.portal_type in image_portal_types:
-            image_url = self._getPloneUrl() + '/resolveuid/' + uuidFor(self.context)
-            field_name = 'image'
             images = self.context.restrictedTraverse('@@images')
 
-            results['thumb'] = '%s/@@images/%s/%s' % (image_url, field_name, 'thumb')
+            # TODO: support other contenttypes
+            field_name = 'image'
+            results['thumb'] = '%s/@@images/%s/%s' % (results['uid_url'], field_name, 'thumb')
             sizes = images.getAvailableSizes(field_name)
             scales = [{'value': '@@images/%s/%s' % (field_name, key),
                        'size': size,
                        'title': key.capitalize()} for key, size in sizes.items()]
-            scales.sort(lambda x, y: cmp(x['size'][0], y['size'][0]))
+            scales.sort(key=lambda x: x['size'][0])
             original_size = images.getImageSize(field_name)
             if original_size[0] < 0 or original_size[1] < 0:
                 original_size = (0, 0)
@@ -58,11 +74,13 @@ class JSONDetails(object):
 
         if self.context.portal_type in anchor_portal_types:
             content_anchors = self.context.restrictedTraverse('@@content_anchors')
-            results['anchors'] = content_anchors.listAnchorNames()
+            fieldname = anchor_portal_types[self.context.portal_type]
+            results['anchors'] = content_anchors.listAnchorNames(fieldname)
         else:
             results['anchors'] = []
         results.update(self.additionalDetails())
 
+        self.context.REQUEST.response.setHeader("Content-type", "application/json")
         return json.dumps(results)
 
     def additionalDetails(self):
@@ -75,3 +93,20 @@ class JSONDetails(object):
         portal_url = getToolByName(self.context, 'portal_url')
         portal = portal_url.getPortalObject()
         return portal.absolute_url()
+
+    def getSiteRootRelativePath(self):
+        """ Get site root relative path to an item
+
+        @return: Path to the context object, relative to site root, prefixed with a slash.
+        """
+
+        portal_state = getMultiAdapter((self.context, self.context.REQUEST), name=u'plone_portal_state')
+        site = portal_state.portal()
+
+        # Both of these are tuples
+        site_path = site.getPhysicalPath()
+        context_path = self.context.getPhysicalPath()
+
+        relative_path = context_path[len(site_path):]
+
+        return "/" + "/".join(relative_path)

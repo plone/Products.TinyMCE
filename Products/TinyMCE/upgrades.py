@@ -58,3 +58,17 @@ def upgrade_11_to_2(setuptool):
     site = getSite()
     uninstall_mimetype_and_transforms(site)
     install_mimetype_and_transforms(site)
+
+
+def upgrade_12_to_13(setuptool):
+    # Unregister old js and kss and register new js
+    tinymce = getUtility(ITinyMCE)
+
+    # plonebrowser replaces ploneimage & plonelink
+    plugins = tinymce.customplugins.split()
+    plugins.append(u'plonebrowser')
+    plugins = filter(lambda x: x != u'plonelink' and x != u'ploneimage', plugins)
+    tinymce.customplugins = '\n'.join(plugins)
+
+    setuptool.runAllImportStepsFromProfile('profile-Products.TinyMCE:upgrade_12_to_13')
+    setuptool.runImportStepFromProfile('profile-Products.TinyMCE:TinyMCE', 'viewlets')

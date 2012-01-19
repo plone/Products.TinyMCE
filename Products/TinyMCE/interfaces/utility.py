@@ -1,9 +1,19 @@
-from zope.interface import Interface
 from zope import schema
+from zope.interface import Interface
 from zope.i18nmessageid import MessageFactory
 from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
 
-from Products.TinyMCE import TMCEMessageFactory as _
+from Products.TinyMCE.vocabularies import (
+        shortcuts_vocabulary, thumbnail_sizes_vocabulary, plugins_vocabulary)
+
+
+_ = MessageFactory('plone.tinymce')
+
+DEFAULT_PLUGINS = ['advhr', 'definitionlist', 'directionality', 'emotions',
+ 'fullscreen', 'inlinepopups', 'insertdatetime', 'media', 'nonbreaking',
+ 'noneditable', 'pagebreak', 'paste', 'plonebrowser',
+ 'ploneinlinestyles', 'plonestyle', 'preview', 'print', 'save',
+ 'searchreplace', 'tabfocus', 'table', 'visualchars', 'xhtmlxtras']
 
 
 class ITinyMCELayout(Interface):
@@ -19,29 +29,20 @@ class ITinyMCELayout(Interface):
         description=_(u"This option gives you the ability to enable/disable auto resizing the editor window depending on the content."),
         required=False)
 
+    # TODO: add validation to assert % and px in the value
     editor_width = schema.TextLine(
         title=_(u"Editor width"),
-        description=_(u"This option gives you the ability to specify the width of the editor in pixels or percent."),
+        description=_(u"This option gives you the ability to specify the width of the editor (like 100% or 400px)."),
         required=False)
 
+    # TODO: add validation to assert % and px in the value
     editor_height = schema.TextLine(
         title=_(u"Editor height"),
         description=_(u"This option gives you the ability to specify the height of the editor in pixels. If auto resize is enabled this value is used as minimum height."),
         required=False)
 
-    directionality = schema.Choice(
-        title=_(u"Writing direction"),
-        description=_(u"This option specifies the default writing direction, some languages (Like Hebrew, Arabic, Urdu...) write from right to left instead of left to right."),
-        missing_value=set(),
-        vocabulary=SimpleVocabulary([
-            SimpleTerm('auto', 'auto',
-                       _(u'Auto detect from content language')),
-            SimpleTerm('ltr', 'ltr', _(u"Left to right")),
-            SimpleTerm('rtl', 'rtl', _(u"Right to left"))]),
-        required=False)
-
     contextmenu = schema.Bool(
-        title=_(u"Enable contextmenu."),
+        title=_(u"Enable contextmenu"),
         description=_(u"This option gives you the ability to enable/disable the use of the contextmenu."),
         required=False)
 
@@ -70,7 +71,7 @@ class ITinyMCEToolbar(Interface):
         required=False)
 
     toolbar_external = schema.Bool(
-        title=_(u"External"),
+        title=_(u"Place toolbar on top of the page"),
         description=_(u"This option enables the external toolbar which will be placed at the top of the page."),
         required=False)
 
@@ -383,6 +384,16 @@ class ITinyMCEResourceTypes(Interface):
         description=_(u"Enter a list of content types which can be used as images. Format is one contenttype per line."),
         required=False)
 
+    plugins = schema.List(
+        title=_("label_tinymce_plugins", default=u"Editor Plugins"),
+        description=_("help_tinymce_plugins", default=(
+            u"Enter a list of custom plugins which will be loaded in the "
+            u"editor. Format is pluginname or pluginname|location, one per "
+            u"line.")),
+        value_type=schema.Choice(source=plugins_vocabulary,),
+        default=DEFAULT_PLUGINS,
+        required=False)
+
     customplugins = schema.Text(
         title=_(u"Custom Plugins"),
         description=_(u"Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."),
@@ -396,17 +407,86 @@ class ITinyMCEResourceTypes(Interface):
         required=False)
 
 
+class ITinyMCEContentBrowser(Interface):
+    """This interface defines the content browser properties."""
+
+    link_shortcuts = schema.List(
+        title=_("Link Shortcuts"),
+        description=_(u"List of shortcuts to appear in link browser for quick navigation."),
+        value_type=schema.Choice(source=shortcuts_vocabulary,),
+        default=['Home', 'Current Folder'],
+        required=False,
+    )
+
+    image_shortcuts = schema.List(
+        title=_("Image Shortcuts"),
+        description=_(u"List of shortcuts to appear in image browser for quick navigation."),
+        value_type=schema.Choice(source=shortcuts_vocabulary,),
+        default=['Home', 'Current Folder'],
+        required=False,
+    )
+
+    thumbnail_size = schema.Choice(
+        title=_(u'Thumbnail size in thumbnails mode'),
+        #description=_(u""),
+        source=thumbnail_sizes_vocabulary,
+        default=('tile', 64, 64),
+    )
+
+    num_of_thumb_columns = schema.Choice(
+        title=_(u'Number of columns in thumbnails mode'),
+        #description=_(u""),
+        values=[2, 4, 8, 16],
+        default=4,
+    )
+
+
 class ITinyMCE(
     ITinyMCELayout,
     ITinyMCEToolbar,
     ITinyMCELibraries,
-    ITinyMCEResourceTypes
+    ITinyMCEResourceTypes,
+    ITinyMCEContentBrowser,
     ):
     """This interface defines the Utility."""
 
-    def getContentType(self, object=None, fieldname=None):
-        """Get the content type of the field."""
+    def getContentType(object=None, fieldname=None):
+        """ Get the content type of the field.
+        """
 
-    def getConfiguration(self, context=None, field=None, request=None):
-        """Get the configuration based on the control panel settings and the field settings.
-        request can be provide for translation purpose."""
+    def getConfiguration(context=None, field=None, request=None):
+        """ Get the configuration based on the control panel and field settings.
+
+            The request can be provided for translation purpose.
+        """
+
+    def getImageScales(field=None, context=None):
+        """
+        """
+
+    def getEnabledButtons(context):
+        """
+        """
+
+    def translateButtonsFromKupu(context, buttons):
+        """
+        """
+
+    def getValidElements():
+        """ Return valid (X)HTML elements and their attributes.
+        """
+
+    def getPlugins():
+        """ Return a comma seperated list of TinyMCE plugins
+        """
+
+    def getStyles(config):
+        """ Return a list of styles for the use with TinyMCE
+        """
+
+    def getToolbars(config):
+        """ Get toolbar buttons for the editor
+
+            Calculate the number of toolbar rows from the length
+            of the buttons.
+        """

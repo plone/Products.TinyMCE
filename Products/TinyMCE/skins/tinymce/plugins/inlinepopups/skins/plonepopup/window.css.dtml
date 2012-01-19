@@ -14,7 +14,6 @@
 
 /* Fake Plone 4 styles */
 .plonepopup {     
-    border: 1px solid #999999;
     box-shadow:0 0 3em 0.5em #666;
     -moz-box-shadow:0 0 3em 0.5em #666;
     -webkit-box-shadow:0 0 3em #666;
@@ -33,11 +32,12 @@
 .plonepopupconfirm {width:400px; height:130px; left:420px; top:450px; }
 
 /* Top */
-.plonepopup .mceTop, .plonepopup .mceTop div {top:0; width:100%; height:19px}
-.plonepopup .mceTop .mceLeft {width:3px; height: 18px; background-color: White; }
-.plonepopup .mceTop .mceCenter {right:4px; width:100%; height:17px; background-color: White; clip:rect(auto auto auto 8px)}
-.plonepopup .mceTop .mceRight {right:0; width:3px; height: 18px; background-color: White; }
-.plonepopup .mceTop span {width:100%; text-align:center; vertical-align:middle; line-height:19px; font-weight:normal}
+.plonepopup .mceTop { background-color: #DDD; }
+.plonepopup .mceTop, .plonepopup .mceTop div {top:0; width:100%; height:25px}
+.plonepopup .mceTop .mceLeft {width:3px; height: 25px; }
+.plonepopup .mceTop .mceCenter {right:4px; width:100%; height:25px; clip:rect(auto auto auto 8px)}
+.plonepopup .mceTop .mceRight {right:0; width:3px; height: 25px; }
+.plonepopup .mceTop span {width:100%; text-align:center; vertical-align:middle; line-height:25px; font-weight:normal}
 .plonepopup .mceFocus .mceTop .mceLeft {}
 .plonepopup .mceFocus .mceTop .mceCenter {}
 .plonepopup .mceFocus .mceTop .mceRight {}
@@ -45,9 +45,9 @@
 
 /* Middle */
 .plonepopup .mceMiddle, .plonepopup .mceMiddle div {top:0}
-.plonepopup .mceMiddle {width:100%; height:100%; clip:rect(19px auto auto auto); background-color: White}
+.plonepopup .mceMiddle {width:100%; height:100%; clip:rect(25px auto auto auto); background-color: White}
 .plonepopup .mceMiddle .mceLeft {left:0; width:5px; height:100%; background-color: White; clip: rect(auto 4px auto 1px)}
-.plonepopup .mceMiddle span {top:19px; left:5px; height:100%; background:#FFF}
+.plonepopup .mceMiddle span {top:29px; left:5px; height:100%; background:#FFF}
 .plonepopup .mceMiddle .mceRight {right:0; width:5px; height:100%; background-color: White; clip: rect(auto 4px auto 1px)}
 
 /* Bottom */
@@ -65,7 +65,7 @@
 .plonepopup .mceStatusbar .mceBottom span {display:block; left:7px; font-size:100%; line-height:19px}
 
 /* Actions */
-.plonepopup a {width:22px; height:17px; top:1px;}
+.plonepopup a {width:22px; height:17px; top:4px;}
 .plonepopup .mceClose {right:0px; background:url(img/buttons.gif) -66px 0}
 .plonepopup .mceMin {display:none; right:47px; background:url(img/buttons.gif) 0 0}
 .plonepopup .mceMed {display:none; right:25px; background:url(img/buttons.gif) -22px 0}

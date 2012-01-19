@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>Gabriel Schwardy (caleydon@gmail.com); Ivan Trnka (tic@tic.sk); Jaroslav Hykyš (jaroslav.hykys@seznam.cz)</author>
+    <version major="9" minor="3" releasedate="2010-10-25" />
+    <description>Slovenský jazykový balík pre TinyMCE verze 3.0+</description>
+  </header>
+  <language code="sk" title="Slovak" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">Chcete použiť WYSIWYG režim pre tento text?</item>
+      <item name="apply">Použiť</item>
+      <item name="insert">Vložiť</item>
+      <item name="update">Aktualizovať</item>
+      <item name="cancel">Storno</item>
+      <item name="close">Zavrieť</item>
+      <item name="browse">Prechádzať</item>
+      <item name="class_name">Trieda</item>
+      <item name="not_set">-- Nezadané --</item>
+      <item name="clipboard_msg">Funkcie kopírovať/vystrihnúť/vložiť nie sú podporované v prehliadačoch Mozilla a Firefox.\nChcete viac informácií o tomto probléme?</item>
+      <item name="clipboard_no_support">Táto funkcia nie je vaším prehliadačom podporovaná. Použite namiesto toho klávesovú skratku.</item>
+      <item name="popup_blocked">Blokovanie vyskakovacích okien neumožnilo otvoriť okno, ktoré poskytuje funkčnosť aplikácie. Pre plné využitie možností aplikácie musíte vypnúť blokovanie vyskakovacích okien pre tento web.</item>
+      <item name="invalid_data">Chyba: Boli zadané neplatné hodnoty a tieto boli označené červenou farbou.</item>
+      <item name="more_colors">Ďalšie farby</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">Tučné (Ctrl+B)</item>
+      <item name="italic_desc">Kurzíva (Ctrl+I)</item>
+      <item name="underline_desc">Podčiarknuté (Ctrl+U)</item>
+      <item name="striketrough_desc">Prečiarknuté</item>
+      <item name="bullist_desc">Zoznam s odrážkami</item>
+      <item name="numlist_desc">Číslovaný zoznam</item>
+      <item name="undo_desc">Späť (Ctrl+Z)</item>
+      <item name="redo_desc">Znovu (Ctrl+Y)</item>
+      <item name="cleanup_desc">Vyčistiť kód</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">Štýly</item>
+      <item name="font_size">Veľkosť písma</item>
+      <item name="fontdefault">Písmo</item>
+      <item name="block">Formát</item>
+      <item name="paragraph">Odstavec</item>
+      <item name="div">Oddiel</item>
+      <item name="address">Adresa</item>
+      <item name="pre">Predformátované</item>
+      <item name="h1">Nadpis 1</item>
+      <item name="h2">Nadpis 2</item>
+      <item name="h3">Nadpis 3</item>
+      <item name="h4">Nadpis 4</item>
+      <item name="h5">Nadpis 5</item>
+      <item name="h6">Nadpis 6</item>
+      <item name="blockquote">Bloková citácia</item>
+      <item name="code">Kód</item>
+      <item name="samp">Ukážka kódu</item>
+      <item name="dt">Termín definície</item>
+      <item name="dd">Popis definície</item>
+      <!-- Buttons -->
+      <item name="bold_desc">Tučné (Ctrl+B)</item>
+      <item name="italic_desc">Kurzíva (Ctrl+I)</item>
+      <item name="underline_desc">Podčiarknuté (Ctrl+U)</item>
+      <item name="striketrough_desc">Prečiarknuté</item>
+      <item name="justifyleft_desc">Zarovnať doľava</item>
+      <item name="justifycenter_desc">Zarovnať na stred</item>
+      <item name="justifyright_desc">Zarovnať doprava</item>
+      <item name="justifyfull_desc">Zarovnať do bloku</item>
+      <item name="bullist_desc">Zoznam s odrážkami</item>
+      <item name="numlist_desc">Číslovaný zoznam</item>
+      <item name="outdent_desc">Zmenšiť odsadenie</item>
+      <item name="indent_desc">Zväčšiť odsadenie</item>
+      <item name="undo_desc">Späť (Ctrl+Z)</item>
+      <item name="redo_desc">Znovu (Ctrl+Y)</item>
+      <item name="link_desc">Vložiť/upraviť odkaz</item>
+      <item name="unlink_desc">Odobrať odkaz</item>
+      <item name="image_desc">Vložiť/upraviť obrázok</item>
+      <item name="cleanup_desc">Vyčistiť kód</item>
+      <item name="code_desc">Upraviť HTML zdroj</item>
+      <item name="sub_desc">Dolný index</item>
+      <item name="sup_desc">Horný index</item>
+      <item name="hr_desc">Vložiť vodorovný oddeľovač</item>
+      <item name="removeformat_desc">Odstrániť formátovanie</item>
+      <item name="custom1_desc">Ľubovolný popisok</item>
+      <item name="forecolor_desc">Farba písma</item>
+      <item name="backcolor_desc">Farba zvýraznenia textu</item>
+      <item name="charmap_desc">Vložiť špeciálny znak</item>
+      <item name="visualaid_desc">Zobraziť pomocné linky/skryté prvky</item>
+      <item name="anchor_desc">Vložiť/upraviť záložku (kotvu)</item>
+      <item name="cut_desc">Vystrihnúť</item>
+      <item name="copy_desc">Kopírovať</item>
+      <item name="paste_desc">Vložiť</item>
+      <item name="image_props_desc">Vlastnosti obrázka</item>
+      <item name="newdocument_desc">Nový dokument</item>
+      <item name="help_desc">Pomocník</item>
+      <item name="blockquote_desc">Bloková citácia</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">Funkcie kopírovať/vystrihnúť/vložiť nie sú podporované v prehliadačoch Mozilla a Firefox.\nChcete viac informácií o tomto probléme?</item>
+      <item name="path">Cesta</item>
+      <item name="newdocument">Ste si naozaj istí, že chcete odstrániť všetok obsah?</item>
+      <item name="toolbar_focus">Prechod na lištu nástrojov - Alt+Q, prechod do editora - Alt-Z, prechod na cestu k objektom - Alt-X</item>
+      <item name="more_colors">Ďalšie farby</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">O TinyMCE</item>
+      <item name="about_general">O programe</item>
+      <item name="about_help">Pomocník</item>
+      <item name="about_license">Licencia</item>
+      <item name="about_plugins">Zásuvné moduly</item>
+      <item name="about_plugin">Zásuvný modul</item>
+      <item name="about_author">Autor</item>
+      <item name="about_version">Verzia</item>
+      <item name="about_loaded">Načítané zásuvné moduly</item>
+      <!-- Anchor -->
+      <item name="anchor_title">Vložiť/upraviť záložku (kotvu)</item>
+      <item name="anchor_name">Názov záložky</item>
+      <!-- Source -->
+      <item name="code_title">Editor HTML</item>
+      <item name="code_wordwrap">Zalamovanie riadkov</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">Výber farby</item>
+      <item name="colorpicker_picker_tab">Kvapkadlo</item>
+      <item name="colorpicker_picker_title">Kvapkadlo</item>
+      <item name="colorpicker_palette_tab">Vzorkovník</item>
+      <item name="colorpicker_palette_title">Vzorkovník farieb</item>
+      <item name="colorpicker_named_tab">Názvy</item>
+      <item name="colorpicker_named_title">Pomenované farby</item>
+      <item name="colorpicker_color">Vybratá farba:</item>
+      <item name="colorpicker_name">Názov:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">Vložiť špeciálny znak</item>
+      <!-- Image -->
+      <item name="image_title">Vložiť/upraviť obrázok</item>
+      <item name="image_src">URL obrázka</item>
+      <item name="image_alt">Popis obrázka</item>
+      <item name="image_list">Zoznam obrázkov</item>
+      <item name="image_border">Orámovanie</item>
+      <item name="image_dimensions">Rozmery</item>
+      <item name="image_vspace">Vertikálne odsadenie</item>
+      <item name="image_hspace">Horizontálne odsadenie</item>
+      <item name="image_align">Zarovnanie</item>
+      <item name="image_align_baseline">Na základňu</item>
+      <item name="image_align_top">Hore</item>
+      <item name="image_align_middle">Na stred riadku</item>
+      <item name="image_align_bottom">Dole</item>
+      <item name="image_align_texttop">S vrcholom riadku</item>
+      <item name="image_align_textbottom">So spodkom riadku</item>
+      <item name="image_align_left">Vľavo</item>
+      <item name="image_align_right">Vpravo</item>
+      <!-- Link -->
+      <item name="link_title">Vložiť/upraviť odkaz</item>
+      <item name="link_url">URL odkazu</item>
+      <item name="link_target">Cieľ</item>
+      <item name="link_target_same">Otvoriť odkaz v rovnakom okne</item>
+      <item name="link_target_blank">Otvoriť odkaz v novom okne</item>
+      <item name="link_titlefield">Titulok</item>
+      <item name="link_is_email">Zadané URL vyzerá ako e-mailová adresa, chcete doplniť povinný prefix mailto:?</item>
+      <item name="link_is_external">Zadané URL vyzerá ako externý odkaz, chcete doplniť povinný prefix http://?</item>
+      <item name="link_list">Zoznam odkazov</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">Zarovnanie</item>
+      <item name="left">Doľava</item>
+      <item name="center">Na stred</item>
+      <item name="right">Doprava</item>
+      <item name="full">Do bloku</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%d.%m.%Y</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">Vložiť dátum</item>
+      <item name="inserttime_desc">Vložiť čas</item>
+      <item name="months_long">Január,Február,Marec,Apríl,Máj,Jún,Júl,August,September,Október,November,December</item>
+      <item name="months_short">Jan,Feb,Mar,Apr,Máj,Jún,Júl,Aug,Sep,Okt,Nov,Dec</item>
+      <item name="day_long">Nedeľa,Pondelok,Utorok,Streda,Štvrtok,Piatok,Sobota,Nedeľa</item>
+      <item name="day_short">Ne,Po,Ut,St,Št,Pi,So,Ne</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">Tlač</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">Náhľad</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">Smer zľava doprava</item>
+      <item name="rtl_desc">Smer sprava doľava</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">Vložiť novú vrstvu</item>
+      <item name="forward_desc">Presunúť dopredu</item>
+      <item name="backward_desc">Presunúť dozadu</item>
+      <item name="absolute_desc">Prepnúť na absolútne poziciovanie</item>
+      <item name="content">Nová vrstva...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">Uložiť</item>
+      <item name="cancel_desc">Zrušiť všetky zmeny</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">Vložiť nerozdeliteľnú medzeru</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">Spustiť kontrolu pravopisu</item>
+      <item name="download">Slovník ieSpell nebol detekovaný. Chcete ho nainštalovať?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">Vodorovný oddeľovač</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">Šírka</item>
+      <item name="size">Výška</item>
+      <item name="noshade">Bez tieňa</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">Emotikony</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">Vložiť emotikonu</item>
+      <item name="desc">Emotikony</item>
+      <item name="cool">Úžasný</item>
+      <item name="cry">Plačúci</item>
+      <item name="embarassed">Zahanbený</item>
+      <item name="foot_in_mouth">Šliapol vedľa</item>
+      <item name="frown">Zamračený</item>
+      <item name="innocent">Nevinný</item>
+      <item name="kiss">Bozkajúci</item>
+      <item name="laughing">Smejúci sa</item>
+      <item name="money_mouth">Je na prachy</item>
+      <item name="sealed">Mlčiaci</item>
+      <item name="smile">Usmiaty</item>
+      <item name="surprised">Prekvapený</item>
+      <item name="tongue_out">S vyplazeným jazykom</item>
+      <item name="undecided">Nerozhodný</item>
+      <item name="wink">Žmurkajúci</item>
+      <item name="yell">Kričiaci</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">Hľadať</item>
+      <item name="replace_desc">Hľadať a nahradiť</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">Hľadať ďalej</item>
+      <item name="notfound">Hľadanie bolo dokončené. Hľadaný text nebol nájdený.</item>
+      <item name="search_title">Hľadať</item>
+      <item name="replace_title">Hľadať a nahradiť</item>
+      <item name="allreplaced">Všetky výskyty boli nahradené.</item>
+      <item name="findwhat">Hľadať čo</item>
+      <item name="replacewith">Nahradiť čím</item>
+      <item name="direction">Smer</item>
+      <item name="up">Nahor</item>
+      <item name="down">Nadol</item>
+      <item name="mcase">Rozlišovať malé a VEĽKÉ písmená</item>
+      <item name="findnext">Hľadať dalej</item>
+      <item name="replace">Nahradiť</item>
+      <item name="replaceall">Nahradiť všetko</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">Vložiť/upraviť obrázok</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">40</item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">Obecné</item>
+      <item name="tab_appearance">Vzhľad</item>
+      <item name="tab_advanced">Rozšírené</item>
+      <item name="general">Obecné parametre</item>
+      <item name="title">Titulok</item>
+      <item name="preview">Náhľad</item>
+      <item name="constrain_proportions">Zachovať pomer strán</item>
+      <item name="langdir">Smer textu</item>
+      <item name="langcode">Kód jazyka</item>
+      <item name="long_desc">Dlhý popis</item>
+      <item name="style">Štýl</item>
+      <item name="classes">Triedy</item>
+      <item name="ltr">Zľava doprava</item>
+      <item name="rtl">Sprava doľava</item>
+      <item name="id">ID</item>
+      <item name="map">Obrázková mapa</item>
+      <item name="swap_image">Prepnutie obrázka</item>
+      <item name="alt_image">Alternatívny obrázok</item>
+      <item name="mouseover">Pri nabehnutí myši</item>
+      <item name="mouseout">Po odjazdení myši</item>
+      <item name="misc">Rôzne</item>
+      <item name="example_img">Príklad obrázka</item>
+      <item name="missing_alt">Naozaj chcete pokračovať bez vloženého popisu obrázka? Bez popisu môže byť obrázok neprístupný užívateľom so zrakovým postihnutím, užívateľom textových prehliadačov alebo užívateľom, ktorí majú vypnuté zobrazovanie obrázkov.</item>
+      <item name="dialog_title">Vložiť/upraviť obrázok</item>
+      <item name="src">URL obrázka</item>
+      <item name="alt">Popis obrázku</item>
+      <item name="list">Zoznam obrázkov</item>
+      <item name="border">Orámovanie</item>
+      <item name="dimensions">Rozmery</item>
+      <item name="vspace">Vertikálne odsadenie</item>
+      <item name="hspace">Horizontálne odsadenie</item>
+      <item name="align">Zarovnanie</item>
+      <item name="align_baseline">Na základňu</item>
+      <item name="align_top">Hore</item>
+      <item name="align_middle">Na stred riadku</item>
+      <item name="align_bottom">Dole</item>
+      <item name="align_texttop">S vrcholom riadku</item>
+      <item name="align_textbottom">So spodkom riadku</item>
+      <item name="align_left">Vľavo</item>
+      <item name="align_right">Vpravo</item>
+      <item name="image_list">Zoznam obrázkov</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">Vložiť/upraviť odkaz</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">Vložiť/upraviť odkaz</item>
+      <item name="url">URL odkazu</item>
+      <item name="target">Cieľ</item>
+      <item name="titlefield">Titulok</item>
+      <item name="is_email">Zadaná URL vyzerá ako e-mailová adresa, chcete doplniť povinný prefix mailto:?</item>
+      <item name="is_external">Zadaná URL vyzerá ako externý odkaz, chcete doplniť povinný prefix http://?</item>
+      <item name="list">Zoznam odkazov</item>
+      <item name="general_tab">Obecné</item>
+      <item name="popup_tab">Vyskakovacie okno</item>
+      <item name="events_tab">Udalosti</item>
+      <item name="advanced_tab">Rozšírené</item>
+      <item name="general_props">Obecné parametre</item>
+      <item name="popup_props">Vlastnosti vyskakovacieho okna</item>
+      <item name="event_props">Udalosti</item>
+      <item name="advanced_props">Rozšírené parametre</item>
+      <item name="popup_opts">Možnosti</item>
+      <item name="anchor_names">Záložka</item>
+      <item name="target_same">Otvoriť v rovnakom okne/ráme</item>
+      <item name="target_parent">Otvoriť v nadradenom okne/ráme</item>
+      <item name="target_top">Otvoriť v hlavnom okne/ráme (nahradiť všetky rámy)</item>
+      <item name="target_blank">Otvoriť v novom okne</item>
+      <item name="popup">JavaScriptové okno</item>
+      <item name="popup_url">URL vyskakovacieho okna</item>
+      <item name="popup_name">Názov okna</item>
+      <item name="popup_return">Vložiť 'return false'</item>
+      <item name="popup_scrollbars">Zobraziť posuvníky</item>
+      <item name="popup_statusbar">Zobraziť stavový riadok</item>
+      <item name="popup_toolbar">Zobraziť nástrojovú lištu</item>
+      <item name="popup_menubar">Zobraziť ponuku</item>
+      <item name="popup_location">Zobraziť lištu umiestnení</item>
+      <item name="popup_resizable">Umožniť zmenu veľkosti</item>
+      <item name="popup_dependent">Závislosť (iba Mozilla/Firefox)</item>
+      <item name="popup_size">Veľkosť</item>
+      <item name="popup_position">Umiestnenie (X/Y)</item>
+      <item name="id">ID</item>
+      <item name="style">Štýl</item>
+      <item name="classes">Triedy</item>
+      <item name="target_name">Názov cieľa</item>
+      <item name="langdir">Smer textu</item>
+      <item name="target_langcode">Jazyk cieľa</item>
+      <item name="langcode">Kód jazyka</item>
+      <item name="encoding">Kódovanie</item>
+      <item name="mime">MIME typ</item>
+      <item name="rel">Vzťah stránky k cieľu</item>
+      <item name="rev">Vzťah cieľa k stránke</item>
+      <item name="tabindex">Poradie pre tabulátor</item>
+      <item name="accesskey">Klávesová skratka</item>
+      <item name="ltr">Zľava doprava</item>
+      <item name="rtl">Sprava doľava</item>
+      <item name="link_list">Zoznam odkazov</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">Citácia</item>
+      <item name="abbr_desc">Skratka</item>
+      <item name="acronym_desc">Akronym</item>
+      <item name="del_desc">Odstránený text</item>
+      <item name="ins_desc">Pridaný text</item>
+      <item name="attribs_desc">Vložiť/upraviť atribúty</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">Titulok</item>
+      <item name="attribute_label_id">ID</item>
+      <item name="attribute_label_class">Trieda</item>
+      <item name="attribute_label_style">Štýl</item>
+      <item name="attribute_label_cite">Citácia</item>
+      <item name="attribute_label_datetime">Dátum/čas</item>
+      <item name="attribute_label_langdir">Smer textu</item>
+      <item name="attribute_option_ltr">Zľava doprava</item>
+      <item name="attribute_option_rtl">Sprava doľava</item>
+      <item name="attribute_label_langcode">Jazyk</item>
+      <item name="attribute_label_tabindex">Poradie pre tabulátor</item>
+      <item name="attribute_label_accesskey">Klávesová skratka</item>
+      <item name="attribute_events_tab">Udalosti</item>
+      <item name="attribute_attrib_tab">Atribúty</item>
+      <item name="general_tab">Obecné</item>
+      <item name="attrib_tab">Atribúty</item>
+      <item name="events_tab">Udalosti</item>
+      <item name="fieldset_general_tab">Obecné parametre</item>
+      <item name="fieldset_attrib_tab">Atribúty prvku</item>
+      <item name="fieldset_events_tab">Atribúty udalostí</item>
+      <item name="title_ins_element">Pridaný text</item>
+      <item name="title_del_element">Odstránený text</item>
+      <item name="title_acronym_element">Akronym</item>
+      <item name="title_abbr_element">Skratka</item>
+      <item name="title_cite_element">Citácia</item>
+      <item name="remove">Odstrániť</item>
+      <item name="insert_date">Vložiť aktuálny dátum/čas</item>
+      <item name="option_ltr">Zľava doprava</item>
+      <item name="option_rtl">Sprava doľava</item>
+      <item name="attribs_title">Vložiť/upraviť atribúty</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">Upraviť CSS štýl</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">35</item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">Upraviť CSS štýl</item>
+      <item name="apply">Použiť</item>
+      <item name="text_tab">Text</item>
+      <item name="background_tab">Pozadie</item>
+      <item name="block_tab">Blok</item>
+      <item name="box_tab">Box</item>
+      <item name="border_tab">Orámovanie</item>
+      <item name="list_tab">Zoznam</item>
+      <item name="positioning_tab">Umiesnenie</item>
+      <item name="text_props">Text</item>
+      <item name="text_font">Písmo</item>
+      <item name="text_size">Veľkosť</item>
+      <item name="text_weight">Tučnosť písma</item>
+      <item name="text_style">Štýl textu</item>
+      <item name="text_variant">Varianta</item>
+      <item name="text_lineheight">Výška riadkov</item>
+      <item name="text_case">Veľké písmená</item>
+      <item name="text_color">Farba</item>
+      <item name="text_decoration">Dekorácia</item>
+      <item name="text_overline">nadčiarknutie</item>
+      <item name="text_underline">podčiarknutie</item>
+      <item name="text_striketrough">prečiarknutie</item>
+      <item name="text_blink">blikanie</item>
+      <item name="text_none">žiadna</item>
+      <item name="background_color">Farba pozadia</item>
+      <item name="background_image">Obrázok pozadia</item>
+      <item name="background_repeat">Opakovanie</item>
+      <item name="background_attachment">Rolovanie</item>
+      <item name="background_hpos">Horizontálne umiestnenie</item>
+      <item name="background_vpos">Vertikálne umiestnenie</item>
+      <item name="block_wordspacing">Rozstup slov</item>
+      <item name="block_letterspacing">Rozstup znakov</item>
+      <item name="block_vertical_alignment">Vertikálne zarovnanie</item>
+      <item name="block_text_align">Zarovnanie textu</item>
+      <item name="block_text_indent">Odsadenie textu</item>
+      <item name="block_whitespace">Zalamovanie textu</item>
+      <item name="block_display">Blokové zobrazenie</item>
+      <item name="box_width">Šírka</item>
+      <item name="box_height">Výška</item>
+      <item name="box_float">Plávajúci</item>
+      <item name="box_clear">Vyčistiť</item>
+      <item name="padding">Odsadenie (padding)</item>
+      <item name="same">Rovnaké pre všetky</item>
+      <item name="top">Hore</item>
+      <item name="right">Vpravo</item>
+      <item name="bottom">Dole</item>
+      <item name="left">Vľavo</item>
+      <item name="margin">Okraje (margin)</item>
+      <item name="style">Štýl</item>
+      <item name="width">Šírka</item>
+      <item name="height">Výška</item>
+      <item name="color">Farba</item>
+      <item name="list_type">Typ</item>
+      <item name="bullet_image">Štýl odrážok</item>
+      <item name="position">Umiestnenie</item>
+      <item name="positioning_type">Typ</item>
+      <item name="visibility">Viditeľnosť</item>
+      <item name="zindex">Z-index</item>
+      <item name="overflow">Pretečenie (overflow)</item>
+      <item name="placement">Umiestnenie</item>
+      <item name="clip">Orezanie (clip)</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">Vložiť ako prostý text</item>
+      <item name="paste_word_desc">Vložiť z Wordu</item>
+      <item name="selectall_desc">Označiť všetko</item>
+      <item name="plaintext_mode_sticky">Funkcia vložiť je teraz v režime prostý text. Opätovné kliknutie prepne túto funkciu naspäť do normálneho režimu. Po vložení čohokoľvek bude táto funkcia navrátená späť do normálneho režimu.</item>
+      <item name="plaintext_mode">Funkcia vložiť je teraz v režime prostý text. Opätovné kliknutie prepne túto funkciu naspäť do normálneho režimu.</item>
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">Použite CTRL+V pre vloženie textu do okna.</item>
+      <item name="text_linebreaks">Zachovať zalamovanie riadkov</item>
+      <item name="word_title">Použite CTRL+V pre vloženie textu do okna.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">Vložiť novú tabuľku</item>
+      <item name="row_before_desc">Vložiť riadok pred</item>
+      <item name="row_after_desc">Vložiť riadok za</item>
+      <item name="delete_row_desc">Odstrániť riadok tabuľky</item>
+      <item name="col_before_desc">Vložiť stĺpec pred</item>
+      <item name="col_after_desc">Vložiť stĺpec za</item>
+      <item name="delete_col_desc">Odstrániť stĺpec tabuľky</item>
+      <item name="split_cells_desc">Rozdeliť bunky</item>
+      <item name="merge_cells_desc">Zlúčiť bunky</item>
+      <item name="row_desc">Vlastnosti riadky tabuľky</item>
+      <item name="cell_desc">Vlastnosti bunky</item>
+      <item name="props_desc">Vlastnosti tabuľky</item>
+      <item name="paste_row_before_desc">Vložiť riadok pred</item>
+      <item name="paste_row_after_desc">Vložiť riadok za</item>
+      <item name="cut_row_desc">Vystrihnúť riadok tabuľky</item>
+      <item name="copy_row_desc">Kopírovať riadok tabuľky</item>
+      <item name="del">Odstrániť tabuľku</item>
+      <item name="row">Riadok</item>
+      <item name="col">Stĺpec</item>
+      <item name="cell">Bunka</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width">105</item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width">50</item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">Obecné</item>
+      <item name="advanced_tab">Rozšírené</item>
+      <item name="general_props">Obecné parametre</item>
+      <item name="advanced_props">Rozšírené parametre</item>
+      <item name="rowtype">Typ riadku</item>
+      <item name="title">Vložiť/Upraviť tabuľku</item>
+      <item name="width">Šírka</item>
+      <item name="height">Výška</item>
+      <item name="cols">Stĺpce</item>
+      <item name="rows">Riadky</item>
+      <item name="cellspacing">Rozstup buniek</item>
+      <item name="cellpadding">Odsadenie obsahu</item>
+      <item name="border">Orámovanie</item>
+      <item name="align">Zarovnanie</item>
+      <item name="align_default">Predvolené</item>
+      <item name="align_left">Vľavo</item>
+      <item name="align_right">Vpravo</item>
+      <item name="align_middle">Na stred</item>
+      <item name="row_title">Vlastnosti riadkov</item>
+      <item name="cell_title">Vlastnosti bunky</item>
+      <item name="cell_type">Typ bunky</item>
+      <item name="valign">Vertikálne zarovnanie</item>
+      <item name="align_top">Hore</item>
+      <item name="align_bottom">Dolu</item>
+      <item name="bordercolor">Farba orámovania</item>
+      <item name="bgcolor">Farba pozadia</item>
+      <item name="merge_cells_title">Zlúčiť bunky</item>
+      <item name="id">ID</item>
+      <item name="style">Štýl</item>
+      <item name="langdir">Smer textu</item>
+      <item name="langcode">Kód jazyka</item>
+      <item name="mime">MIME typ cieľa</item>
+      <item name="ltr">Zľava doprava</item>
+      <item name="rtl">Sprava doľava</item>
+      <item name="bgimage">Obrázok pozadia</item>
+      <item name="summary">Obsah tabuľky</item>
+      <item name="td">Dáta</item>
+      <item name="th">Hlavička</item>
+      <item name="cell_cell">Aktualizovať aktuálnu bunku</item>
+      <item name="cell_row">Aktualizovať všetky bunky v riadku</item>
+      <item name="cell_all">Aktualizovať všetky bunky v tabuľke</item>
+      <item name="row_row">Aktualizovať aktuálny riadok</item>
+      <item name="row_odd">Aktualizovať nepárne riadky tabuľky</item>
+      <item name="row_even">Aktualizovať párne riadky tabuľky</item>
+      <item name="row_all">Aktualizovať všetky riadky tabuľky</item>
+      <item name="thead">Hlavička tabuľky</item>
+      <item name="tbody">Telo tabuľky</item>
+      <item name="tfoot">Päta tabuľky</item>
+      <item name="scope">Hlavička pre</item>
+      <item name="rowgroup">Skupina riadkov</item>
+      <item name="colgroup">Skupina stĺpcov</item>
+      <item name="col_limit">Prekročili ste maximálny počet stĺpcov {$cols}.</item>
+      <item name="row_limit">Prekročili ste maximálny počet riadkov {$rows}.</item>
+      <item name="cell_limit">Prekročili ste maximálny počet buniek {$cells}.</item>
+      <item name="missing_scope">Skutočne chcete pokračovať bez určenia oblasti hlavičky tejto tabuľky? Bez nej môže u niektorých užívateľov dochádzať k určitým problémom pri intepretácii a zobrazovaní dát v tabuľke.</item>
+      <item name="caption">Nadpis tabuľky</item>
+      <item name="frame">Orámovanie tabuľky</item>
+      <item name="frame_none">žiadna</item>
+      <item name="frame_groups">oblasti a skupiny stĺpcov</item>
+      <item name="frame_rows">riadky</item>
+      <item name="frame_cols">stĺpce</item>
+      <item name="frame_all">všetko</item>
+      <item name="rules">Vykreslenie mriežky</item>
+      <item name="rules_void">žiadne</item>
+      <item name="rules_above">hore</item>
+      <item name="rules_below">dole</item>
+      <item name="rules_hsides">hore a dole</item>
+      <item name="rules_lhs">vľavo</item>
+      <item name="rules_rhs">vpravo</item>
+      <item name="rules_vsides">vľavo a vpravo</item>
+      <item name="rules_box">box okolo</item>
+      <item name="rules_border">orámovanie okolo</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">Prevedené zmeny môžu byť stratené, ak opustíte túto stránku.</item>
+      <item name="restore_content">Obnoviť automaticky uložený obsah.</item>
+      <item name="warning_message">Pokiaľ obnovíte uložený obsah, stratíte tým všetok obsah, ktorý je práve v okne editora.\n\nSkutočne chcete obnoviť uložený obsah?.</item>
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">Prepnúť na celostránkové zobrazenie</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">Vložiť/upraviť médiá</item>
+      <item name="edit">Upraviť médiá</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">180</item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">Vložiť/upraviť vkladané médiá</item>
+      <item name="general">Obecné</item>
+      <item name="advanced">Rozšírené</item>
+      <item name="file">Súbor/URL</item>
+      <item name="list">Zoznam</item>
+      <item name="size">Rozmery</item>
+      <item name="preview">Náhľad</item>
+      <item name="constrain_proportions">Zachovať proporcie</item>
+      <item name="type">Typ</item>
+      <item name="id">ID</item>
+      <item name="name">Názov</item>
+      <item name="class_name">Trieda</item>
+      <item name="vspace">Vertikálne odsadenie</item>
+      <item name="hspace">Horizontálne odsadenie</item>
+      <item name="play">Automatické prehrávanie</item>
+      <item name="loop">Opakovanie</item>
+      <item name="menu">Zobraziť ponuku</item>
+      <item name="quality">Kvalita</item>
+      <item name="scale">Pomer</item>
+      <item name="align">Zarovnanie</item>
+      <item name="salign">Zarovnanie okna</item>
+      <item name="wmode">Režim okna</item>
+      <item name="bgcolor">Pozadie</item>
+      <item name="base">Základný priečinok</item>
+      <item name="flashvars">Parametre (Flashvars)</item>
+      <item name="liveconnect">Spustiť Javu (SWLiveConnect)</item>
+      <item name="autohref">Automatické načítanie</item>
+      <item name="cache">Medzipamäť</item>
+      <item name="hidden">Skryť</item>
+      <item name="controller">Ovládací panel</item>
+      <item name="kioskmode">Zakázať ukladanie</item>
+      <item name="playeveryframe">Prehrať každý snímok</item>
+      <item name="targetcache">Cieľová medzipamäť</item>
+      <item name="correction">Bez korekcií</item>
+      <item name="enablejavascript">Povoliť JavaScript</item>
+      <item name="starttime">Počiatočný čas</item>
+      <item name="endtime">Koncový čas</item>
+      <item name="href">Odkaz</item>
+      <item name="qtsrcchokespeed">Zníženie rýchlosti</item>
+      <item name="target">Cieľ</item>
+      <item name="volume">Hlasitosť</item>
+      <item name="autostart">Automatické spustenie</item>
+      <item name="enabled">Povoliť ovládací panel</item>
+      <item name="fullscreen">Celá obrazovka</item>
+      <item name="invokeurls">Požadovať URL</item>
+      <item name="mute">Umlčať</item>
+      <item name="stretchtofit">Roztiahnúť do okna</item>
+      <item name="windowlessvideo">Video bez okna</item>
+      <item name="balance">Rovnováha</item>
+      <item name="baseurl">Základná URL</item>
+      <item name="captioningid">ID popisku média</item>
+      <item name="currentmarker">Aktuálna záložka</item>
+      <item name="currentposition">Aktuálna pozícia</item>
+      <item name="defaultframe">Predvolený snímok</item>
+      <item name="playcount">Počítadlo prehratí</item>
+      <item name="rate">Relatívna rýchlosť</item>
+      <item name="uimode">Režim ovládacieho panelu</item>
+      <item name="flash_options">Možnosti Flashu</item>
+      <item name="qt_options">Možnosti Quicktime</item>
+      <item name="wmp_options">Možnosti prehrávača Windows media</item>
+      <item name="rmp_options">Možnosti prehrávača Real media</item>
+      <item name="shockwave_options">Možnosti Shockwave</item>
+      <item name="autogotourl">Automatický prechod na URL</item>
+      <item name="center">Na stred</item>
+      <item name="imagestatus">Stav obrazu</item>
+      <item name="maintainaspect">Zachovať pomer strán</item>
+      <item name="nojava">Nespúšťať Javu</item>
+      <item name="prefetch">Prednačítanie</item>
+      <item name="shuffle">Náhodne</item>
+      <item name="console">Konzola</item>
+      <item name="numloop">Počet opakovaní</item>
+      <item name="controls">Ovládací panel</item>
+      <item name="scriptcallbacks">Skripty spätných volaní</item>
+      <item name="swstretchstyle">Štýl roztiahnutia</item>
+      <item name="swstretchhalign">Zarovnanie horiz. roztiahnutia</item>
+      <item name="swstretchvalign">Zarovnanie vert. roztiahnutia</item>
+      <item name="sound">Zvuk</item>
+      <item name="progress">Priebeh</item>
+      <item name="qtsrc">Súbor/URL streamu pre QT</item>
+      <item name="qt_stream_warn">Streamované rtsp zdroje môžu byť pridané do polia 'Súbor/URL streamu pre QT' na záložke 'Rozšírené'.\nYMôžte tiež pridať nie streamovanú verziu do polia 'Súbor/URL'.</item>
+      <item name="align_top">Hore</item>
+      <item name="align_right">Vpravo</item>
+      <item name="align_bottom">Dolu</item>
+      <item name="align_left">Vľavo</item>
+      <item name="align_center">Na stred</item>
+      <item name="align_top_left">Hore vľavo</item>
+      <item name="align_top_right">Hore vpravo</item>
+      <item name="align_bottom_left">Dolu vľavo</item>
+      <item name="align_bottom_right">Dolu vpravo</item>
+      <item name="flv_options">Možnosti Flash video</item>
+      <item name="flv_scalemode">Zmena veľkosti</item>
+      <item name="flv_buffer">Zásobník</item>
+      <item name="flv_startimage">Počiatočný obrázok</item>
+      <item name="flv_starttime">Počiatočný čas</item>
+      <item name="flv_defaultvolume">Predvolená hlasitosť</item>
+      <item name="flv_hiddengui">Skrytý ovládací panel</item>
+      <item name="flv_autostart">Automatické spustenie</item>
+      <item name="flv_loop">Opakovanie</item>
+      <item name="flv_showscalemodes">Zobraziť voľby zmeny veľkosti</item>
+      <item name="flv_smoothvideo">Vyhladzovaný obraz</item>
+      <item name="flv_jscallback">Spätné volanie JavaScriptu</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">Vlastnosti dokumentu</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width">115</item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Vlastnosti dokumentu</item>
+      <item name="meta_tab">Obecné</item>
+      <item name="appearance_tab">Vzhľad</item>
+      <item name="advanced_tab">Rozšírené</item>
+      <item name="meta_props">Meta informácie</item>
+      <item name="langprops">Jazyk a kódovanie</item>
+      <item name="meta_title">Titulok</item>
+      <item name="meta_keywords">Kľúčové slová</item>
+      <item name="meta_description">Popis</item>
+      <item name="meta_robots">Roboti</item>
+      <item name="doctypes">Typ dokumentu</item>
+      <item name="langcode">Kód jazyka</item>
+      <item name="langdir">Smer textu</item>
+      <item name="ltr">Zľava doprava</item>
+      <item name="rtl">Sprava doľava</item>
+      <item name="xml_pi">XML deklarácia</item>
+      <item name="encoding">Kódovanie</item>
+      <item name="appearance_bgprops">Vlastnosti pozadia</item>
+      <item name="appearance_marginprops">Okraje tela dokumentu</item>
+      <item name="appearance_linkprops">Vlastnosti odkazov</item>
+      <item name="appearance_textprops">Vlastnosti textu</item>
+      <item name="bgcolor">Farba pozadia</item>
+      <item name="bgimage">Obrázok pozadia</item>
+      <item name="left_margin">Ľavý okraj</item>
+      <item name="right_margin">Pravý okraj</item>
+      <item name="top_margin">Horný okraj</item>
+      <item name="bottom_margin">Dolný okraj</item>
+      <item name="text_color">Farba textu</item>
+      <item name="font_size">Veľkosť písma</item>
+      <item name="font_face">Typ písma</item>
+      <item name="link_color">Farba odkazu</item>
+      <item name="hover_color">Farba vybratého odkazu</item>
+      <item name="visited_color">Farba navštíveného odkazu</item>
+      <item name="active_color">Farba aktívneho odkazu</item>
+      <item name="textcolor">Farba</item>
+      <item name="fontsize">Veľkosť písma</item>
+      <item name="fontface">Typ písma</item>
+      <item name="meta_index_follow">Indexovať a následovať odkazy</item>
+      <item name="meta_index_nofollow">Indexovať a nenásledovať odkazy</item>
+      <item name="meta_noindex_follow">Neindexovať, ale následovať odkazy</item>
+      <item name="meta_noindex_nofollow">Neindexovať a nenásledovať odkazy</item>
+      <item name="appearance_style">Vlastnosti štýlov</item>
+      <item name="stylesheet">Štýlopis</item>
+      <item name="style">Štýl</item>
+      <item name="author">Autor</item>
+      <item name="copyright">Autorské práva</item>
+      <item name="add">Pridať nový element</item>
+      <item name="remove">Odstrániť označený element</item>
+      <item name="moveup">Presunúť označený element vyššie </item>
+      <item name="movedown">Přesunúť označený element nižšie</item>
+      <item name="head_elements">Hlavičky</item>
+      <item name="info">Informácie</item>
+      <item name="add_title">Vložiť titulok</item>
+      <item name="add_meta">Vložiť meta informácie</item>
+      <item name="add_script">Vložiť skript</item>
+      <item name="add_style">Vložiť štýl</item>
+      <item name="add_link">Vložiť nezobrazovaný odkaz</item>
+      <item name="add_base">Vložiť základné umiestnenie</item>
+      <item name="add_comment">Vložiť komentár</item>
+      <item name="title_element">Titulok</item>
+      <item name="script_element">Skript</item>
+      <item name="style_element">Štýl</item>
+      <item name="base_element">Základné umiestnenie</item>
+      <item name="link_element">Nezobrazovaný odkaz</item>
+      <item name="meta_element">Meta informácie</item>
+      <item name="comment_element">Komentár</item>
+      <item name="src">Zdroj</item>
+      <item name="language">Jazyk</item>
+      <item name="href">Súbor/URL</item>
+      <item name="target">Cieľ</item>
+      <item name="type">Typ</item>
+      <item name="charset">Kódovanie</item>
+      <item name="defer">Odložiť (defer)</item>
+      <item name="media">Médiá</item>
+      <item name="properties">Vlastnosti</item>
+      <item name="name">Názov</item>
+      <item name="value">Hodnota</item>
+      <item name="content">Obsah</item>
+      <item name="rel">Vzťah stránky k cieľu</item>
+      <item name="rev">Vzťah cieľa k stránke</item>
+      <item name="hreflang">Jazyk odkazu</item>
+      <item name="general_props">Obecné parametre</item>
+      <item name="advanced_props">Rozšírené parametre</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Vložiť preddefinovaný obsah zo šablóny</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">Šablóny</item>
+      <item name="label">Šablóna</item>
+      <item name="desc_label">Popis</item>
+      <item name="desc">Vložiť preddefinovaný obsah zo šablóny</item>
+      <item name="select">Vyber šablónu</item>
+      <item name="preview">Náhľad</item>
+      <item name="warning">Upozornenie: Aktualizácia šablóny inou, spôsobí stratu dát.</item>
+      <item name="mdate_format">%d.%m.%Y %H:%M:%S</item>
+      <item name="cdate_format">%d.%m.%Y %H:%M:%S</item>
+      <item name="months_long">Január,Február,Marec,Apríl,Máj,Jún,Júl,August,September,Október,November,December</item>
+      <item name="months_short">Jan,Feb,Mar,Apr,Máj,Jún,Júl,Aug,Sep,Okt,Nov,Dec</item>
+      <item name="day_long">Nedeľa,Pondelok,Utorok,Streda,Štvrtok,Piatok,Sobota,Nedeľa</item>
+      <item name="day_short">Ne,Po,Ut,St,Št,Pi,So,Ne</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Zobrazenie skrytých znakov zap/vyp</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">Prepnúť kontrolu pravopisu</item>
+      <item name="menu">Nastavenie kontroly pravopisu</item>
+      <item name="ignore_word">Vynechať slovo</item>
+      <item name="ignore_words">Vynechať všetky</item>
+      <item name="langs">Jazyky</item>
+      <item name="wait">Čakajte prosím...</item>
+      <item name="sug">Ponuky</item>
+      <item name="no_sug">Žiadne ponuky</item>
+      <item name="no_mpell">Bez pravopisných chýb.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">Vložiť zalomenie stránky.</item>
+    </group>
+    <group target="advlist">
+      <item name="types">Typ</item>
+      <item name="def">Predvolený</item>
+      <item name="lower_alpha">Malé písmená</item>
+      <item name="lower_greek">Malé grécke písmená</item>
+      <item name="lower_roman">Malé rímske číslice</item>
+      <item name="upper_alpha">Veľké písmená</item>
+      <item name="upper_roman">Veľké rímske číslice</item>
+      <item name="circle">Krúžok</item>
+      <item name="disc">Plné koliesko</item>
+      <item name="square">Štvorček</item>
+    </group>
+  </language>
+</language-pack>

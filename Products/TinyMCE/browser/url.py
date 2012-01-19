@@ -10,18 +10,11 @@ class TinyMCEUrl(BrowserView):
     implements(ITinyMCEUrl)
 
     def getPathByUID(self):
-        """Returns the path of an object specified in the request by UID"""
+        """Returns the absolute url of an object specified in the request by UID"""
 
-        context = self.context
-        request = context.REQUEST
-
-        if not hasattr(request, 'uid'):
-            return ""
-
-        uid = request['uid']
-        obj = uuidToObject(uid)
-
-        if obj:
+        obj = uuidToObject(self.request.get('uid', ""))
+        if obj is not None:
             return obj.absolute_url()
-
-        return ""
+        else:
+            self.request.response.setStatus(410)
+            return ''

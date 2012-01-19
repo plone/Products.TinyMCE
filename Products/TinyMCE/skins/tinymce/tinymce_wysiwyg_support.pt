@@ -9,8 +9,6 @@
                      text_format python:here.portal_tinymce.getContentType(object=here, fieldname=fname);
                      suppressed python:request.form.get('tinymce.suppress') == fname;
                      wysiwyg python:(not suppressed and 'html' in text_format.lower()) or force_wysiwyg;
-                     configuration_method nocall:here/@@tinymce-jsonconfiguration;
-                     configuration_json python:configuration_method(fieldname=field);
                      element_id id|inputname;">
   <textarea cols="80"
             rows="25"
@@ -22,13 +20,7 @@
                             onblur onblur|nothing;
                             rows rows|default;
                             cols cols|default;
-                            title python:wysiwyg and configuration_json or None;
                             class python:wysiwyg and 'mce_editable' or None"></textarea>
-
-  <script type="text/javascript"
-      tal:condition="wysiwyg"
-      tal:content="string:
-      tinymce.dom.Event.add(window, 'load', function(e) { var config = new TinyMCEConfig('${element_id}'); config.init(); });"></script>
 
   <div tal:condition="wysiwyg"
        class="discreet suppressVisualEditor" style="margin-top: -1em;">
@@ -36,6 +28,14 @@
        i18n:domain="plone.tinymce"
        tal:attributes="href string:${request/URL0}?tinymce.suppress=${fname}&amp;${request/QUERY_STRING};">
       Edit without visual editor
+    </a>
+  </div>
+  <div tal:condition="not: wysiwyg"
+       class="discreet suppressVisualEditor">
+    <a i18n:translate="suppress_visual_editor_with"
+       i18n:domain="plone.tinymce"
+       tal:attributes="href string:${request/URL0}">
+      Edit with visual editor
     </a>
   </div>
 

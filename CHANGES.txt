@@ -2,13 +2,22 @@
 HISTORY
 =======
 
+1.3 (unreleased)
+------------------
+
+- Use TinyMCE compressor to provide editor and plugins
+  [tom_gross]
+
+- Fixed http://dev.plone.org/plone/ticket/11681
+  [tom_gross]
+
+
 1.2.10 (unreleased)
--------------------
+------------------
 
 - Fixed AttributeError: 'ATDocumentFieldsView' object has no attribute
   'absolute_url' when using inline editing.  Inline editing then still
   does not work though (checked on Plone 4.2 dev).
-  [maurits]
 
 - Fixed a few test failures in combination with five.pt.
   [maurits]
@@ -23,9 +32,6 @@ HISTORY
   Fixeѕ https://dev.plone.org/ticket/10681
   [rochecompaan]
 
-- Updated Spanish translation
-  [hvelarde]
-
 
 1.2.9 (2011-11-24)
 ------------------
@@ -36,21 +42,11 @@ HISTORY
   Fixes http://dev.plone.org/plone/ticket/11430
   [maurits]
 
-- Add value attributes to Insert and Cancel input tags for the ploneimage popup
-  template.  When Chameleon is installed attributes that don't already exist on
-  a tag don't get translated.
-  [swampmonkey]
-
 - Include Products.CMFCore's permissions.zcml to ensure Plone 4.1 compatibility.
   [thomasdesvenain]
 
 - Use aq_parent instead of getParentNode for Zope trunk compatibility.
   [elro]
-
-- Display error message when uploading a file with a name consisting
-  only of spaces.
-  Fixes http://dev.plone.org/plone/ticket/10394
-  [maurits]
 
 - Search does not work with Virtual Hosting (close #10308)
   [keul] [mamico]
@@ -58,30 +54,13 @@ HISTORY
 1.2.8 (2011-09-19)
 ------------------
 
-- Fixed js error that made alternative editors unusable.
-  Ref http://dev.plone.org/plone/ticket/12045.
-  [thomasdesvenain]
-
-- Set the parent correctly for non-Archetypes content, so that relative links
-  are generated correctly.
-  [davisagli]
-
 - Support RichTextValues from plone.app.textfield when determining the mimetype
   of the field being edited.
   [davisagli]
 
-- When user tries to upload an image,
-  if image type in content types registry is not allowed in current folder,
-  TinyMCE tries to add an image of an other content type
-  selected as an image type in TinyMCE settings.
-  [thomasdesvenain]
 
 1.2.7 (2011-07-05)
 ------------------
-
-- Internationalized js messages.
-  French translation.
-  [thomasdesvenain]
 
 - Do not give a TypeError 'Could not adapt' when trying to adapt a
   context that is not adaptable to IJSONFolderListing and friends.
@@ -97,10 +76,8 @@ HISTORY
 - Add hook to JSONDetails to allow subclasses to supplement or override the results
   [anthonygerrard]
 
-
 1.2.6 (2011-05-12)
 ------------------
-
 - Changed the color of the background on the external editor to light gray to make the buttons more visible.
   [davidjonas]
 

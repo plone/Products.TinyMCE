@@ -23,16 +23,10 @@
 		</div>
 
 		<div class="mceActionPanel">
-			<div class="left">
-				<input type="submit" id="insert" name="insert" i18n:attributes="value common_insert" />
-			</div>
-
-			<div class="right">
-				<input type="button" id="cancel" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
-			</div>
-
-			<br class="clearboth" />
+			<input type="submit" id="insert" name="insert" i18n:attributes="value common_insert" />
+			<input type="button" id="cancel" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
 		</div>
 	</form>
 </body>
 </html>
+

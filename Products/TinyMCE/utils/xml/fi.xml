@@ -1,0 +1,924 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<language-pack>
+  <!--
+		This language file gets loaded if TinyMCE is in developer mode. This XML is used to generate all <code>.js/<code_dlg>.js files.
+		Consult the Wiki for more details: http://wiki.moxiecode.com/index.php/TinyMCE:Creating_Language
+	-->
+  <header>
+    <author>Moxiecode Systems AB</author>
+    <version major="3" minor="5" releasedate="2010-12-03" />
+    <description>This is the Finnish language pack for TinyMCE.</description>
+  </header>
+  <language code="fi" title="Finnish" dir="ltr">
+    <!-- Common items, these are shared between themes and plugins -->
+    <group target="common">
+      <item name="edit_confirm">Haluatko käyttää WYSIWYG-tilaa tässä tekstikentässä?</item>
+      <item name="apply">Käytä</item>
+      <item name="insert">Lisää</item>
+      <item name="update">Päivitä</item>
+      <item name="cancel">Peru</item>
+      <item name="close">Sulje</item>
+      <item name="browse">Selaa</item>
+      <item name="class_name">Luokka</item>
+      <item name="not_set">-- Ei määritetty --</item>
+      <item name="clipboard_msg">Kopioi/Leikkaa/Liitä ei ole käytettävissä Mozilla ja Firefox -selaimilla.\nHaluatko lisätietoa tästä ongelmasta?</item>
+      <item name="clipboard_no_support">Selaimesi ei ole tuettu, käytä sen sijaan näppäinoikoteitä.</item>
+      <item name="popup_blocked">Sinulla on käytössäsi ohjelma, joka estää ponnahdusikkunoiden näytön. Sinun täytyy kytkeä ponnahdusikkunoiden esto pois päältä voidaksesi hyödyntää täysin tätä työkalua.</item>
+      <item name="invalid_data">Virhe: Syötit virheellisiä arvoja, ne näkyvät punaisina.</item>
+      <item name="more_colors">Enemmän värejä</item>
+    </group>
+    <!-- Simple theme -->
+    <group target="simple">
+      <item name="bold_desc">Lihavointi (Ctrl+B)</item>
+      <item name="italic_desc">Kursivointi (Ctrl+I)</item>
+      <item name="underline_desc">Alleviivaus (Ctrl+U)</item>
+      <item name="striketrough_desc">Yliviivaus</item>
+      <item name="bullist_desc">Järjestämätön lista</item>
+      <item name="numlist_desc">Järjestetty lista</item>
+      <item name="undo_desc">Peru (Ctrl+Z)</item>
+      <item name="redo_desc">Tee uudestaan (Ctrl+Y)</item>
+      <item name="cleanup_desc">Siisti sekainen koodi</item>
+    </group>
+    <!-- Advanced theme -->
+    <group target="advanced">
+      <!-- ListBoxes -->
+      <item name="style_select">Tyylit</item>
+      <item name="font_size">Kirjasinkoko</item>
+      <item name="fontdefault">Kirjasin</item>
+      <item name="block">Muotoilu</item>
+      <item name="paragraph">Kappale</item>
+      <item name="div">Div</item>
+      <item name="address">Osoite</item>
+      <item name="pre">Esimuotoiltu (pre)</item>
+      <item name="h1">Otsikko 1</item>
+      <item name="h2">Otsikko 2</item>
+      <item name="h3">Otsikko 3</item>
+      <item name="h4">Otsikko 4</item>
+      <item name="h5">Otsikko 5</item>
+      <item name="h6">Otsikko 6</item>
+      <item name="blockquote">Pitkä lainaus</item>
+      <item name="code">Koodi</item>
+      <item name="samp">Koodiesimerkki</item>
+      <item name="dt">Määrittelyn ehto </item>
+      <item name="dd">Määrittelyn kuvaus</item>
+      <!-- Buttons -->
+      <item name="bold_desc">Lihavoitu (Ctrl+B)</item>
+      <item name="italic_desc">Kursivoitu (Ctrl+I)</item>
+      <item name="underline_desc">Alleviivattu (Ctrl+U)</item>
+      <item name="striketrough_desc">Yliviivattu</item>
+      <item name="justifyleft_desc">Tasaus vasemmalle</item>
+      <item name="justifycenter_desc">Keskitetty</item>
+      <item name="justifyright_desc">Tasaus oikealle</item>
+      <item name="justifyfull_desc">Tasattu</item>
+      <item name="bullist_desc">Järjestämätön lista</item>
+      <item name="numlist_desc">Järjestetty lista</item>
+      <item name="outdent_desc">Loitonna</item>
+      <item name="indent_desc">Sisennä</item>
+      <item name="undo_desc">Peru (Ctrl+Z)</item>
+      <item name="redo_desc">Tee uudelleen (Ctrl+Y)</item>
+      <item name="link_desc">Lisää/muuta linkki</item>
+      <item name="unlink_desc">Poista linkki</item>
+      <item name="image_desc">Lisää/muuta kuva</item>
+      <item name="cleanup_desc">Siisti sekainen koodi</item>
+      <item name="code_desc">Muokkaa HTML-koodia</item>
+      <item name="sub_desc">Alaindeksi</item>
+      <item name="sup_desc">Yläindeksi</item>
+      <item name="hr_desc">Lisää vaakasuora viivain</item>
+      <item name="removeformat_desc">Poista muotoilu</item>
+      <item name="custom1_desc">Oma kuvauksesi tähän</item>
+      <item name="forecolor_desc">Valitse tekstin väri</item>
+      <item name="backcolor_desc">Valitse taustan väri</item>
+      <item name="charmap_desc">Lisää erikoismerkki</item>
+      <item name="visualaid_desc">Suuntaviivat/Näkymättömät elementit</item>
+      <item name="anchor_desc">Lisää/Muokkaa ankkuri</item>
+      <item name="cut_desc">Leikkaa</item>
+      <item name="copy_desc">Kopioi</item>
+      <item name="paste_desc">Liitä</item>
+      <item name="image_props_desc">Kuvan ominaisuudet</item>
+      <item name="newdocument_desc">Uusi tiedosto</item>
+      <item name="help_desc">Ohje</item>
+      <item name="blockquote_desc">Pitkä lainaus</item>
+      <!-- Misc -->
+      <item name="clipboard_msg">Kopioi/Leikkaa/Liitä -painikkeet eivät toimi Mozilla ja Firefox -selaimilla. Voit kuitenkin käyttää näppäinyhdistelmiä kopioimiseen (Ctrl+C), leikkaamiseen (Ctrl+X) ja liittämiseen (Ctrl+V). Haluatko lisää tietoa?</item>
+      <item name="path">Polku</item>
+      <item name="newdocument">Haluatko varmasti tyhjentää kaiken sisällön?</item>
+      <item name="toolbar_focus">Siirry työkaluihin - Alt+Q, Siirry tekstieditoriin - Alt-Z, Siirry elementin polkuun - Alt-X</item>
+      <item name="more_colors">Enemmän värejä</item>
+      <!-- Relative dialog sizes, example: 10 or -10 -->
+      <item name="image_delta_width"></item>
+      <item name="image_delta_height"></item>
+      <item name="link_delta_width"></item>
+      <item name="link_delta_height"></item>
+      <item name="colorpicker_delta_width"></item>
+      <item name="colorpicker_delta_height"></item>
+      <item name="charmap_delta_width"></item>
+      <item name="charmap_delta_height"></item>
+      <item name="anchor_delta_width"></item>
+      <item name="anchor_delta_height"></item>
+    </group>
+    <!-- Advanced theme dialogs -->
+    <group target="advanced_dlg">
+      <!-- About/help -->
+      <item name="about_title">Tietoja TinyMCE:stä</item>
+      <item name="about_general">Tietoja</item>
+      <item name="about_help">Ohje</item>
+      <item name="about_license">Lisenssi</item>
+      <item name="about_plugins">Lisäosat</item>
+      <item name="about_plugin">Lisäosa</item>
+      <item name="about_author">Kirjoittaja</item>
+      <item name="about_version">Versio</item>
+      <item name="about_loaded">Ladatut lisäosat</item>
+      <!-- Anchor -->
+      <item name="anchor_title">Liitä/muokkaa ankkuria</item>
+      <item name="anchor_name">Ankkurin nimi</item>
+      <!-- Source -->
+      <item name="code_title">HTML-koodin muokkaus</item>
+      <item name="code_wordwrap">Automaattinen rivinvaihto</item>
+      <!-- Color picker -->
+      <item name="colorpicker_title">Valitse väri</item>
+      <item name="colorpicker_picker_tab">Valitsin</item>
+      <item name="colorpicker_picker_title">Värin valitsin</item>
+      <item name="colorpicker_palette_tab">Paletti</item>
+      <item name="colorpicker_palette_title">Väripaletti</item>
+      <item name="colorpicker_named_tab">Nimetty</item>
+      <item name="colorpicker_named_title">Nimetyt värit</item>
+      <item name="colorpicker_color">Väri:</item>
+      <item name="colorpicker_name">Nimi:</item>
+      <!-- Charmap -->
+      <item name="charmap_title">Valitse erikoismerkki</item>
+      <!-- Image -->
+      <item name="image_title">Lisää/muokkaa kuvaa</item>
+      <item name="image_src">Kuvan osoite</item>
+      <item name="image_alt">Kuvan kuvaus</item>
+      <item name="image_list">Kuvalista</item>
+      <item name="image_border">Reunus</item>
+      <item name="image_dimensions">Mitat</item>
+      <item name="image_vspace">Pystysuuntainen tila</item>
+      <item name="image_hspace">Vaakasuuntainen tila</item>
+      <item name="image_align">Tasaus</item>
+      <item name="image_align_baseline">Tekstin tasossa</item>
+      <item name="image_align_top">Ylös</item>
+      <item name="image_align_middle">Keskelle</item>
+      <item name="image_align_bottom">Alas</item>
+      <item name="image_align_texttop">Tekstin yläosaan</item>
+      <item name="image_align_textbottom">Tekstin alaosaan</item>
+      <item name="image_align_left">Vasemmalle</item>
+      <item name="image_align_right">Oikealle</item>
+      <!-- Link -->
+      <item name="link_title">Lisää/muuta linkki</item>
+      <item name="link_url">Linkin osoite</item>
+      <item name="link_target">Kohde</item>
+      <item name="link_target_same">Avaa linkki samassa ikkunassa</item>
+      <item name="link_target_blank">Avaa linkki uuteen ikkunaan</item>
+      <item name="link_titlefield">Otsikko</item>
+      <item name="link_is_email">Antamasi osoite näyttää olevan sähköpostiosoite. Haluatko lisätä siihen mailto:-etuliitteen?</item>
+      <item name="link_is_external">Antamasi osoite näyttää johtavan ulkopuoliselle sivustolle. Haluatko lisätä linkin eteen http://-etuliitteen? (suositus)</item>
+      <item name="link_list">Linkkilista</item>
+    </group>
+    <!-- Contextmenu plugin -->
+    <group target="contextmenu">
+      <item name="align">Tasaus</item>
+      <item name="left">Vasemmalle</item>
+      <item name="center">Keskelle</item>
+      <item name="right">Oikealle</item>
+      <item name="full">Molemmille puolille</item>
+    </group>
+    <!-- Insertdatetime plugin -->
+    <group target="insertdatetime">
+      <item name="date_fmt">%d.%m.%Y</item>
+      <item name="time_fmt">%H:%M:%S</item>
+      <item name="insertdate_desc">Lisää päivämäärä</item>
+      <item name="inserttime_desc">Lisää kellonaika</item>
+      <item name="months_long">tammikuu,helmikuu,maaliskuu,huhtikuu,toukokuu,kesäkuu,heinäkuu,elokuu,syyskuu,lokakuu,marraskuu,joulukuu</item>
+      <item name="months_short">tammi,helmi,maalis,huhti,touko,kesä,heinä,elo,syys,loka,marras,joulu</item>
+      <item name="day_long">sunnuntai,maanantai,tiistai,keskiviikko,torstai,perjantai,lauantai,sunnuntai</item>
+      <item name="day_short">su,ma,ti,ke,to,pe,la,su</item>
+    </group>
+    <!-- Print plugin -->
+    <group target="print">
+      <item name="print_desc">Tulosta</item>
+    </group>
+    <!-- Preview plugin -->
+    <group target="preview">
+      <item name="preview_desc">Esikatselu</item>
+    </group>
+    <!-- Directionality plugin -->
+    <group target="directionality">
+      <item name="ltr_desc">Suunta vasemmalta oikealle</item>
+      <item name="rtl_desc">Suunta oikealta vasemmalle</item>
+    </group>
+    <!-- Layer plugin -->
+    <group target="layer">
+      <item name="insertlayer_desc">Lisää uusi taso</item>
+      <item name="forward_desc">Siirrä eteenpäin</item>
+      <item name="backward_desc">Siirrä taaksepäin</item>
+      <item name="absolute_desc">Absoluuttinen sijainti</item>
+      <item name="content">Uusi taso...</item>
+    </group>
+    <!-- Save plugin -->
+    <group target="save">
+      <item name="save_desc">Tallenna</item>
+      <item name="cancel_desc">Peru kaikki muutokset</item>
+    </group>
+    <!-- Nonbreaking plugin -->
+    <group target="nonbreaking">
+      <item name="nonbreaking_desc">Lisää tyhjä merkki (nbsp)</item>
+    </group>
+    <!-- IESpell plugin -->
+    <group target="iespell">
+      <item name="iespell_desc">Oikeinkirjoituksen tarkistus</item>
+      <item name="download">ieSpell-ohjelmaa ei havaittu. Haluatko asentaa sen nyt?</item>
+    </group>
+    <!-- advhr plugin -->
+    <group target="advhr">
+      <item name="advhr_desc">Vaakatasoviivain</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- advhr plugin dialog -->
+    <group target="advhr_dlg">
+      <item name="width">Leveys</item>
+      <item name="size">Korkeus</item>
+      <item name="noshade">Ei varjoa</item>
+    </group>
+    <!-- Emotions plugin -->
+    <group target="emotions">
+      <item name="emotions_desc">Hymiöt</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Emotions plugin dialog -->
+    <group target="emotions_dlg">
+      <item name="title">Lisää hymiö</item>
+      <item name="desc">Hymiöt</item>
+      <item name="cool">Cool</item>
+      <item name="cry">Itku</item>
+      <item name="embarassed">Nolostunut</item>
+      <item name="foot_in_mouth">Jalka suussa</item>
+      <item name="frown">Otsan rypistys</item>
+      <item name="innocent">Viaton</item>
+      <item name="kiss">Pusu</item>
+      <item name="laughing">Nauru</item>
+      <item name="money_mouth">Klink Klink (raha)</item>
+      <item name="sealed">Tukittu</item>
+      <item name="smile">Hymy</item>
+      <item name="surprised">Yllättynyt</item>
+      <item name="tongue_out">Kieli ulkona</item>
+      <item name="undecided">Päättämätön</item>
+      <item name="wink">Silmänisku</item>
+      <item name="yell">Huuto</item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace">
+      <item name="search_desc">Etsi</item>
+      <item name="replace_desc">Etsi ja korvaa</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Searchreplace plugin dialog -->
+    <group target="searchreplace_dlg">
+      <item name="searchnext_desc">Etsi uudestaan</item>
+      <item name="notfound">Haku on valmis. Haettua tekstiä ei löytynyt.</item>
+      <item name="search_title">Haku</item>
+      <item name="replace_title">Etsi ja korvaa</item>
+      <item name="allreplaced">Kaikki löydetyt merkkijonot korvattiin.</item>
+      <item name="findwhat">Etsitään</item>
+      <item name="replacewith">Korvataan</item>
+      <item name="direction">Suunta</item>
+      <item name="up">Ylös</item>
+      <item name="down">Alas</item>
+      <item name="mcase">Huomioi isot ja pienet kirjaimet</item>
+      <item name="findnext">Etsi seuraavaa</item>
+      <item name="replace">Korvaa</item>
+      <item name="replaceall">Korvaa kaikki</item>
+    </group>
+    <!-- AdvImage plugin -->
+    <group target="advimage">
+      <item name="image_desc">Lisää/muokkaa kuvaa</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- AdvImage plugin dialog -->
+    <group target="advimage_dlg">
+      <item name="tab_general">Yleiset</item>
+      <item name="tab_appearance">Näkyminen</item>
+      <item name="tab_advanced">Edistynyt</item>
+      <item name="general">Yleiset</item>
+      <item name="title">Otsikko</item>
+      <item name="preview">Esikatselu</item>
+      <item name="constrain_proportions">Säilytä mittasuhteet</item>
+      <item name="langdir">Kielen suunta</item>
+      <item name="langcode">Kielen koodi</item>
+      <item name="long_desc">Pitkän kuvauksen linkki</item>
+      <item name="style">Tyyli</item>
+      <item name="classes">Luokat</item>
+      <item name="ltr">Vasemmalta oikealle</item>
+      <item name="rtl">Oikealta vasemmalle</item>
+      <item name="id">Id</item>
+      <item name="map">Kuvakartta</item>
+      <item name="swap_image">Vaihda kuva</item>
+      <item name="alt_image">Vaihtoehtoinen kuva</item>
+      <item name="mouseover">mouseoverille</item>
+      <item name="mouseout">mouseoutille</item>
+      <item name="misc">Sekalaiset</item>
+      <item name="example_img">Ulkoasun esikatselukuva</item>
+      <item name="missing_alt">Haluatko varmasti jatkaa lisäämättä kuvausta? Kuvauksen puuttuminen saattaa häiritä sellaisia, jotka käyttävät tekstipohjaista selainta tai ovat kytkeneet kuvien näkymisen pois päältä.</item>
+      <item name="dialog_title">Lisää/muokkaa kuvaa</item>
+      <item name="src">Kuvan URL</item>
+      <item name="alt">Kuvan kuvaus</item>
+      <item name="list">Kuvalista</item>
+      <item name="border">Kehys</item>
+      <item name="dimensions">Mitat</item>
+      <item name="vspace">pystysuora tila</item>
+      <item name="hspace">vaakasuora tila</item>
+      <item name="align">Tasaus</item>
+      <item name="align_baseline">Rivillä</item>
+      <item name="align_top">Ylhäällä</item>
+      <item name="align_middle">Keskellä</item>
+      <item name="align_bottom">Alhaalla</item>
+      <item name="align_texttop">Teksti ylhäällä</item>
+      <item name="align_textbottom">Teksti alhaalla</item>
+      <item name="align_left">Vasemmalla</item>
+      <item name="align_right">Oikealla</item>
+      <item name="image_list">Kuvalista</item>
+    </group>
+    <!-- Advlink plugin -->
+    <group target="advlink">
+      <item name="link_desc">Lisää/muokkaa linkkiä</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Advlink plugin dialog -->
+    <group target="advlink_dlg">
+      <item name="title">Lisää/muokkaa linkkiä</item>
+      <item name="url">Linkin URL</item>
+      <item name="target">Kohde (target)</item>
+      <item name="titlefield">Otsikko</item>
+      <item name="is_email">Syöttämäsi URL näyttää olevan sähköpostiosoite, haluatko lisätä mailto:-etuliitteen?</item>
+      <item name="is_external">Syöttämäsi URL näyttää olevan sivuston ulkoinen osoite, haluatko lisätä http://-etuliitteen?</item>
+      <item name="list">Linkkilista</item>
+      <item name="general_tab">Yleiset</item>
+      <item name="popup_tab">Ponnahdusikkuna</item>
+      <item name="events_tab">Tapahtumat</item>
+      <item name="advanced_tab">Edistynyt</item>
+      <item name="general_props">Yleiset asetukset</item>
+      <item name="popup_props">Ponnahdusikkunan asetukset</item>
+      <item name="event_props">Tapahtumat (events)</item>
+      <item name="advanced_props">Edistyneet asetukset</item>
+      <item name="popup_opts">Valinta</item>
+      <item name="anchor_names">Ankkurit</item>
+      <item name="target_same">Avaa tässä ikkunassa</item>
+      <item name="target_parent">Avaa ylemmässä ikkunassa</item>
+      <item name="target_top">Avaa ylimmässä ruudussa (korvaa kaikki ruudut)</item>
+      <item name="target_blank">Avaa uudessa ikkunassa</item>
+      <item name="popup">JavaScript-ponnahdusikkuna</item>
+      <item name="popup_url">Ponnahdusikkunan URL</item>
+      <item name="popup_name">Ikkunan nimi</item>
+      <item name="popup_return">Lisää 'return false'</item>
+      <item name="popup_scrollbars">Näytä vierityspalkit</item>
+      <item name="popup_statusbar">Näytä tilapalkki</item>
+      <item name="popup_toolbar">Näytä työkalut</item>
+      <item name="popup_menubar">Näytä valikkopalkki</item>
+      <item name="popup_location">Näytä sijaintipalkki</item>
+      <item name="popup_resizable">Tee ikkunan koko muokattavaksi</item>
+      <item name="popup_dependent">Riippuvainen (vain Mozilla/Firefox)</item>
+      <item name="popup_size">Koko</item>
+      <item name="popup_position">Sijainti (X/Y)</item>
+      <item name="id">Id</item>
+      <item name="style">Tyyli</item>
+      <item name="classes">Luokat</item>
+      <item name="target_name">Kohteen nimi</item>
+      <item name="langdir">Kielen suunta</item>
+      <item name="target_langcode">Kohteen kieli</item>
+      <item name="langcode">Kielen koodi</item>
+      <item name="encoding">Kohteen merkistökoodaus</item>
+      <item name="mime">Kohteen MIME-tyyppi</item>
+      <item name="rel">Sivun suhde kohteeseen</item>
+      <item name="rev">Kohteen suhde sivuun</item>
+      <item name="tabindex">Tabulaattori-indeksi</item>
+      <item name="accesskey">Pikanäppäin</item>
+      <item name="ltr">Vasemmalta oikealle</item>
+      <item name="rtl">Oikealta vasemmalle</item>
+      <item name="link_list">Linkkilista</item>
+    </group>
+    <!-- XHTMLXtras plugin -->
+    <group target="xhtmlxtras">
+      <item name="cite_desc">Sitaatti</item>
+      <item name="abbr_desc">Lyhenne</item>
+      <item name="acronym_desc">Kirjainlyhenne</item>
+      <item name="del_desc">Poisto</item>
+      <item name="ins_desc">Lisäys</item>
+      <item name="attribs_desc">Lisää/muokkaa attribuutteja</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="cite_delta_width"></item>
+      <item name="cite_delta_height"></item>
+      <item name="abbr_delta_width"></item>
+      <item name="abbr_delta_height"></item>
+      <item name="acronym_delta_width"></item>
+      <item name="acronym_delta_height"></item>
+      <item name="del_delta_width"></item>
+      <item name="del_delta_height"></item>
+      <item name="ins_delta_width"></item>
+      <item name="ins_delta_height"></item>
+      <item name="attribs_delta_width"></item>
+      <item name="attribs_delta_height"></item>
+    </group>
+    <!-- XHTMLXtras plugin dialog -->
+    <group target="xhtmlxtras_dlg">
+      <item name="attribute_label_title">Otsikko</item>
+      <item name="attribute_label_id">ID</item>
+      <item name="attribute_label_class">Luokka</item>
+      <item name="attribute_label_style">Tyyli</item>
+      <item name="attribute_label_cite">Sitaatti</item>
+      <item name="attribute_label_datetime">Päivä/Aika</item>
+      <item name="attribute_label_langdir">Tekstin suunta</item>
+      <item name="attribute_option_ltr">Vasemmalta oikealle</item>
+      <item name="attribute_option_rtl">Oikealta vasemmalle</item>
+      <item name="attribute_label_langcode">Kieli</item>
+      <item name="attribute_label_tabindex">TabIndex</item>
+      <item name="attribute_label_accesskey">AccessKey</item>
+      <item name="attribute_events_tab">Tapahtumat</item>
+      <item name="attribute_attrib_tab">Attribuutit</item>
+      <item name="general_tab">Yleiset</item>
+      <item name="attrib_tab">Attribuutit</item>
+      <item name="events_tab">Tapahtumat</item>
+      <item name="fieldset_general_tab">Yleiset asetukset</item>
+      <item name="fieldset_attrib_tab">Elementin attribuutit</item>
+      <item name="fieldset_events_tab">Elementin tapahtumat</item>
+      <item name="title_ins_element">Lisäys elementit</item>
+      <item name="title_del_element">Poisto elementit</item>
+      <item name="title_acronym_element">Kirjainlyhenne elementit</item>
+      <item name="title_abbr_element">Lyhenne elementit</item>
+      <item name="title_cite_element">Sitaatti elementit</item>
+      <item name="remove">Poista</item>
+      <item name="insert_date">Lisää tämänhetkinen päivä/aika</item>
+      <item name="option_ltr">Vasemmalta oikealle</item>
+      <item name="option_rtl">Oikealta vasemmalle</item>
+      <item name="attribs_title">Lisää/muokkaa attribuutteja</item>
+    </group>
+    <!-- Style plugin -->
+    <group target="style">
+      <item name="desc">Muokkaa CSS-tyylejä</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Style plugin dialog -->
+    <group target="style_dlg">
+      <item name="title">Muokkaa CSS-tyyliä</item>
+      <item name="apply">Käytä</item>
+      <item name="text_tab">Teksti</item>
+      <item name="background_tab">Tausta</item>
+      <item name="block_tab">Palkki</item>
+      <item name="box_tab">Laatikko</item>
+      <item name="border_tab">Kehys</item>
+      <item name="list_tab">Lista</item>
+      <item name="positioning_tab">Sijainti</item>
+      <item name="text_props">Teksti</item>
+      <item name="text_font">Kirjasin</item>
+      <item name="text_size">Koko</item>
+      <item name="text_weight">Paino</item>
+      <item name="text_style">Tyyli</item>
+      <item name="text_variant">Variantti</item>
+      <item name="text_lineheight">Rivin korkeus</item>
+      <item name="text_case">Isot/pienet kirjaimet</item>
+      <item name="text_color">Väri</item>
+      <item name="text_decoration">Koristelu</item>
+      <item name="text_overline">Yliviivattu</item>
+      <item name="text_underline">Alleviivattu (Ctrl+U)</item>
+      <item name="text_striketrough">Yliviivattu</item>
+      <item name="text_blink">Välähdys</item>
+      <item name="text_none">ei mitään</item>
+      <item name="background_color">Taustaväri</item>
+      <item name="background_image">Taustakuva</item>
+      <item name="background_repeat">Toistuvuus</item>
+      <item name="background_attachment">Liite</item>
+      <item name="background_hpos">Vaaka-asettelu</item>
+      <item name="background_vpos">Pystyasettelu</item>
+      <item name="block_wordspacing">Sanojen välistys</item>
+      <item name="block_letterspacing">Kirjainten välistys</item>
+      <item name="block_vertical_alignment">Pystyasettelu</item>
+      <item name="block_text_align">Tekstin asettelu</item>
+      <item name="block_text_indent">Tekstin sisennys</item>
+      <item name="block_whitespace">Tyhjä tila</item>
+      <item name="block_display">Näyttö</item>
+      <item name="box_width">Leveys</item>
+      <item name="box_height">Korkeus</item>
+      <item name="box_float">Kellunta</item>
+      <item name="box_clear">Nollaus</item>
+      <item name="padding">Tyhjä tila</item>
+      <item name="same">Sama kaikille</item>
+      <item name="top">Ylhäällä</item>
+      <item name="right">Oikealla</item>
+      <item name="bottom">Alhaalla</item>
+      <item name="left">Vasemmalla</item>
+      <item name="margin">Marginaali</item>
+      <item name="style">Tyyli</item>
+      <item name="width">Leveys</item>
+      <item name="height">Korkeus</item>
+      <item name="color">Väri</item>
+      <item name="list_type">Tyyppi</item>
+      <item name="bullet_image">Listauskuva</item>
+      <item name="position">Sijainti</item>
+      <item name="positioning_type">Tyyppi</item>
+      <item name="visibility">Näkyvyys</item>
+      <item name="zindex">Z-indeksi</item>
+      <item name="overflow">Ylivuoto</item>
+      <item name="placement">Sijoittelu</item>
+      <item name="clip">Leike</item>
+    </group>
+    <!-- Paste plugin -->
+    <group target="paste">
+      <item name="paste_text_desc">Liitä pelkkänä tekstinä</item>
+      <item name="paste_word_desc">Liitä Wordistä</item>
+      <item name="selectall_desc">Valitse kaikki</item>
+      <item name="plaintext_mode_sticky">Liittäminen on nyt pelkkänä tekstinä. Klikkaa uudelleen vaihtaaksesi takaisin tavalliseen tilaan. Palaat takaisin tavalliseen tilaan liitettyäsi jotakin.</item>
+      <item name="plaintext_mode">Liittäminen on nyt pelkkänä tekstinä. Klikkaa uudelleen vaihtaaksesi takaisin tavalliseen tilaan.</item>
+    </group>
+    <!-- Paste plugin dialog -->
+    <group target="paste_dlg">
+      <item name="text_title">Paina Ctrl+V liittääksesi sisällön ikkunaan.</item>
+      <item name="text_linebreaks">Säilytä rivinvaihdot</item>
+      <item name="word_title">Paina Ctrl+V liittääksesi sisällön ikkunaan.</item>
+    </group>
+    <!-- Table plugin -->
+    <group target="table">
+      <item name="desc">Lisää uusi taulukko</item>
+      <item name="row_before_desc">Lisää rivi ennen</item>
+      <item name="row_after_desc">Lisää rivi jälkeen</item>
+      <item name="delete_row_desc">Poista rivi</item>
+      <item name="col_before_desc">Lisää sarake ennen</item>
+      <item name="col_after_desc">Lisää sarake jälkeen</item>
+      <item name="delete_col_desc">Poista sarake</item>
+      <item name="split_cells_desc">Jaa yhdistetyt taulukon solut</item>
+      <item name="merge_cells_desc">Yhdistä taulukon solut</item>
+      <item name="row_desc">Taulukon rivin asetukset</item>
+      <item name="cell_desc">Taulukon solun asetukset</item>
+      <item name="props_desc">Taulukon asetukset</item>
+      <item name="paste_row_before_desc">Liitä taulukon rivi ennen</item>
+      <item name="paste_row_after_desc">Liitä taulukon rivi jälkeen</item>
+      <item name="cut_row_desc">Leikkaa taulukon rivi</item>
+      <item name="copy_row_desc">Kopioi taulukon rivi</item>
+      <item name="del">Poista taulukko</item>
+      <item name="row">Rivi</item>
+      <item name="col">Sarake</item>
+      <item name="cell">Solu</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="rowprops_delta_width"></item>
+      <item name="rowprops_delta_height"></item>
+      <item name="cellprops_delta_width">80</item>
+      <item name="cellprops_delta_height"></item>
+      <item name="table_delta_width"></item>
+      <item name="table_delta_height"></item>
+      <item name="merge_cells_delta_width"></item>
+      <item name="merge_cells_delta_height"></item>
+    </group>
+    <!-- Table plugin dialog -->
+    <group target="table_dlg">
+      <item name="general_tab">Yleiset</item>
+      <item name="advanced_tab">Edistynyt</item>
+      <item name="general_props">Yleiset asetukset</item>
+      <item name="advanced_props">Edistyneet asetukset</item>
+      <item name="rowtype">Rivi taulukon osassa</item>
+      <item name="title">Lisää/muokkaa taulukkoa</item>
+      <item name="width">Leveys</item>
+      <item name="height">Korkeus</item>
+      <item name="cols">Sarakkeet</item>
+      <item name="rows">Rivit</item>
+      <item name="cellspacing">Solun väli</item>
+      <item name="cellpadding">Solun tyhjä tila</item>
+      <item name="border">Kehys</item>
+      <item name="align">Tasaus</item>
+      <item name="align_default">Oletus</item>
+      <item name="align_left">Vasen</item>
+      <item name="align_right">Oikea</item>
+      <item name="align_middle">Keskitetty</item>
+      <item name="row_title">Taulukon rivin asetukset</item>
+      <item name="cell_title">Taulukon solun asetukset</item>
+      <item name="cell_type">Solun tyyppi</item>
+      <item name="valign">Pystysuunnan tasaus</item>
+      <item name="align_top">Ylös</item>
+      <item name="align_bottom">Alas</item>
+      <item name="bordercolor">Kehyksen väri</item>
+      <item name="bgcolor">Taustan väri</item>
+      <item name="merge_cells_title">Yhdistä taulukon solut</item>
+      <item name="id">Id</item>
+      <item name="style">Tyyli</item>
+      <item name="langdir">Kielen suunta</item>
+      <item name="langcode">Kielen koodi</item>
+      <item name="mime">Kohteen MIME-tyyppi</item>
+      <item name="ltr">Vasemmalta oikealle</item>
+      <item name="rtl">Oikealta vasemmalle</item>
+      <item name="bgimage">Taustakuva</item>
+      <item name="summary">Yhteenveto</item>
+      <item name="td">Tietue</item>
+      <item name="th">Otsake</item>
+      <item name="cell_cell">Päivitä solu</item>
+      <item name="cell_row">Päivitä kaikki rivin solut</item>
+      <item name="cell_all">Päivitä kaikki taulukon solut</item>
+      <item name="row_row">Päivitä rivi</item>
+      <item name="row_odd">Päivitä taulukon parittomat rivit</item>
+      <item name="row_even">Päivitä taulukon parilliset rivit</item>
+      <item name="row_all">Päivitä kaikki taulukon rivit</item>
+      <item name="thead">Taulukon otsake</item>
+      <item name="tbody">Taulukon runko</item>
+      <item name="tfoot">Taulukon alaosa</item>
+      <item name="scope">Tila</item>
+      <item name="rowgroup">Rivi ryhmä</item>
+      <item name="colgroup">Sarake ryhmä</item>
+      <item name="col_limit">Olet ylittänyt suurimman sallitun määrän sarakkeita {$cols}.</item>
+      <item name="row_limit">Olet ylittänyt suurimman sallitun määrän rivejä {$rows}.</item>
+      <item name="cell_limit">Olet ylittänyt suurimman sallitun määrän soluja {$cells}.</item>
+      <item name="missing_scope">Haluatko varmasti jatkaa määrittämättä tilaa tälle taulukon otsakesolulle? Ilman sitä joidenkin käyttäjien voi olla vaikea ymmärtää taulukon sisältämää informaatiota.</item>
+      <item name="caption">Taulukon seloste</item>
+      <item name="frame">kehys</item>
+      <item name="frame_none">ei mitään</item>
+      <item name="frame_groups">ryhmät</item>
+      <item name="frame_rows">rivit</item>
+      <item name="frame_cols">sarakkeet</item>
+      <item name="frame_all">kaikki</item>
+      <item name="rules">Säännöt</item>
+      <item name="rules_void">tyhjä</item>
+      <item name="rules_above">yläpuoli</item>
+      <item name="rules_below">alapuoli</item>
+      <item name="rules_hsides">vaakasuorat reunat</item>
+      <item name="rules_lhs">lhs</item>
+      <item name="rules_rhs">rhs</item>
+      <item name="rules_vsides">pystysuorat reunat</item>
+      <item name="rules_box">laatikko</item>
+      <item name="rules_border">kehys</item>
+    </group>
+    <!-- Autosave plugin -->
+    <group target="autosave">
+      <item name="unload_msg">Tekemäsi muutokset menetetään jos poistut tältä sivulta.</item>
+      <item name="restore_content">Palauta automaattisesti tallennettu sisältö.</item>
+      <item name="warning_message">Jos palautat automaattisesti tallennetun sisällön, menetät tällä hetkellä editorissa olevan sisällön.\n\nHaluatko varmasti palauttaa tallennetun sisällön?</item>
+    </group>
+    <!-- Fullscreen plugin -->
+    <group target="fullscreen">
+      <item name="desc">Kokoruututila</item>
+    </group>
+    <!-- Media plugin -->
+    <group target="media">
+      <item name="desc">Lisää/muokkaa upotettua mediaa</item>
+      <item name="edit">Muokkaa upotettua mediaa</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Media plugin dialog -->
+    <group target="media_dlg">
+      <item name="title">Lisää/muokkaa upotettua mediaa</item>
+      <item name="general">Yleiset</item>
+      <item name="advanced">Edistyneet</item>
+      <item name="file">Tiedosto/URL</item>
+      <item name="list">Lista</item>
+      <item name="size">Mitat</item>
+      <item name="preview">Esikatselu</item>
+      <item name="constrain_proportions">Säilytä mittasuhteet</item>
+      <item name="type">Tyyppi</item>
+      <item name="id">Id</item>
+      <item name="name">Nimi</item>
+      <item name="class_name">Luokka</item>
+      <item name="vspace">Pystytason tila</item>
+      <item name="hspace">Vaakatason tila</item>
+      <item name="play">Automaattinen toisto</item>
+      <item name="loop">Silmukka</item>
+      <item name="menu">Näytä valikko</item>
+      <item name="quality">Laatu</item>
+      <item name="scale">Skaala</item>
+      <item name="align">Tasaus</item>
+      <item name="salign">SAlign</item>
+      <item name="wmode">WMode</item>
+      <item name="bgcolor">Tausta</item>
+      <item name="base">Perusta</item>
+      <item name="flashvars">Flash-muuttujat</item>
+      <item name="liveconnect">SWLiveConnect</item>
+      <item name="autohref">AutoHREF</item>
+      <item name="cache">Välimuisti</item>
+      <item name="hidden">Piilotettu</item>
+      <item name="controller">Ohjain</item>
+      <item name="kioskmode">Kioskitila</item>
+      <item name="playeveryframe">Toista jokainen ruutu</item>
+      <item name="targetcache">Kohteen välimuisti</item>
+      <item name="correction">Ei korjausta</item>
+      <item name="enablejavascript">Salli JavaScript</item>
+      <item name="starttime">Aloitusaika</item>
+      <item name="endtime">Lopetusaika</item>
+      <item name="href">Href</item>
+      <item name="qtsrcchokespeed">Choke-nopeus</item>
+      <item name="target">Kohde</item>
+      <item name="volume">Äänen voimakkuus</item>
+      <item name="autostart">Automaattinen aloitus</item>
+      <item name="enabled">Päällä</item>
+      <item name="fullscreen">Kokoruutu</item>
+      <item name="invokeurls">Kutsu URL-osoitteet</item>
+      <item name="mute">Hiljennys</item>
+      <item name="stretchtofit">Venytä sopimaan</item>
+      <item name="windowlessvideo">Ikkunaton video</item>
+      <item name="balance">Tasapaino</item>
+      <item name="baseurl">Perus URL-osoitteet</item>
+      <item name="captioningid">Otsikointi-id</item>
+      <item name="currentmarker">Tämänhetkinen merkki</item>
+      <item name="currentposition">Tämänhetkinen sijainti</item>
+      <item name="defaultframe">Oletusruutu</item>
+      <item name="playcount">Toistolaskin</item>
+      <item name="rate">Rate</item>
+      <item name="uimode">UI-moodi</item>
+      <item name="flash_options">Flashin asetukset</item>
+      <item name="qt_options">Quicktimen asetukset</item>
+      <item name="wmp_options">Windows media playerin asetukset</item>
+      <item name="rmp_options">Real media playerin asetukset</item>
+      <item name="shockwave_options">Shockwaven asetukset</item>
+      <item name="autogotourl">Mene automaattisesti URL:iin</item>
+      <item name="center">Keskitä</item>
+      <item name="imagestatus">Kuvan tila</item>
+      <item name="maintainaspect">Säilytä kuvasuhde</item>
+      <item name="nojava">Ei Javaa</item>
+      <item name="prefetch">Esinouda</item>
+      <item name="shuffle">Sekoita</item>
+      <item name="console">Konsoli</item>
+      <item name="numloop">Toistojen määrä</item>
+      <item name="controls">Kontrollit</item>
+      <item name="scriptcallbacks">Skriptin takaisinkutsut</item>
+      <item name="swstretchstyle">Venytystyyli</item>
+      <item name="swstretchhalign">Venytä vaakasuunnassa</item>
+      <item name="swstretchvalign">Venytä pystysuunnassa</item>
+      <item name="sound">Ääni</item>
+      <item name="progress">Eteneminen</item>
+      <item name="qtsrc">QT Src</item>
+      <item name="qt_stream_warn">Streamatut rtsp-resurssit tulisi lisätä QT Src -kenttään edistynyt-välilehdelle.\nSinun kannattaa lisätä myös ei-streamattu versio Src-kenttään.</item>
+      <item name="align_top">Ylhäällä</item>
+      <item name="align_right">Oikealla</item>
+      <item name="align_bottom">Alhaalla</item>
+      <item name="align_left">Vasemmalla</item>
+      <item name="align_center">Keskellä</item>
+      <item name="align_top_left">Ylä-vasemmalla</item>
+      <item name="align_top_right">Ylä-oikealla</item>
+      <item name="align_bottom_left">Ala-vasemmalla</item>
+      <item name="align_bottom_right">Ala-oikealla</item>
+      <item name="flv_options">Flash videon asetukset</item>
+      <item name="flv_scalemode">Skaalausmoodi</item>
+      <item name="flv_buffer">Puskuri</item>
+      <item name="flv_startimage">Aloituskuva</item>
+      <item name="flv_starttime">Aloitusaika</item>
+      <item name="flv_defaultvolume">Oletusäänenpaine</item>
+      <item name="flv_hiddengui">Piilotettu käyttöliittymä</item>
+      <item name="flv_autostart">Automaattinen aloitus</item>
+      <item name="flv_loop">Silmukka</item>
+      <item name="flv_showscalemodes">Näytä skaalausmoodit</item>
+      <item name="flv_smoothvideo">Smoothi video</item>
+      <item name="flv_jscallback">JS takaisinkutsu</item>
+    </group>
+    <!-- Fullpage plugin -->
+    <group target="fullpage">
+      <item name="desc">Tiedoston asetukset</item>
+      <!-- Language specific relative size of dialog -->
+      <item name="delta_width"></item>
+      <item name="delta_height"></item>
+    </group>
+    <!-- Fullpage plugin dialog -->
+    <group target="fullpage_dlg">
+      <item name="title">Tiedoston asetukset</item>
+      <item name="meta_tab">Yleinen</item>
+      <item name="appearance_tab">Ulkoasu</item>
+      <item name="advanced_tab">Edistynyt</item>
+      <item name="meta_props">Metatiedot</item>
+      <item name="langprops">Kieli ja koodaus</item>
+      <item name="meta_title">Otsikko</item>
+      <item name="meta_keywords">Avainsanat</item>
+      <item name="meta_description">Kuvaus</item>
+      <item name="meta_robots">Robotit</item>
+      <item name="doctypes">Dokumenttityypit</item>
+      <item name="langcode">Kielen koodi</item>
+      <item name="langdir">Kielen suunta</item>
+      <item name="ltr">Vasemmalta oikealle</item>
+      <item name="rtl">Oikealta vasemmalle</item>
+      <item name="xml_pi">XML-ilmoitus</item>
+      <item name="encoding">Tekstin koodaus</item>
+      <item name="appearance_bgprops">Taustan asetukset</item>
+      <item name="appearance_marginprops">Body-marginaalit</item>
+      <item name="appearance_linkprops">Linkkien värit</item>
+      <item name="appearance_textprops">Tekstin asetukset</item>
+      <item name="bgcolor">Taustan väri</item>
+      <item name="bgimage">Taustakuva</item>
+      <item name="left_margin">Vasen marginaali</item>
+      <item name="right_margin">Oikea marginaali</item>
+      <item name="top_margin">Ylämarginaali</item>
+      <item name="bottom_margin">Alamarginaali</item>
+      <item name="text_color">Tekstin väri</item>
+      <item name="font_size">Fonttikoko</item>
+      <item name="font_face">Fontti</item>
+      <item name="link_color">Linkin väri</item>
+      <item name="hover_color">Hover-väri</item>
+      <item name="visited_color">Vierailtu väri</item>
+      <item name="active_color">Aktiivinen väri</item>
+      <item name="textcolor">Väri</item>
+      <item name="fontsize">Fonttikoko</item>
+      <item name="fontface">Fontti</item>
+      <item name="meta_index_follow">Indeksoi ja seuraa linkkejä</item>
+      <item name="meta_index_nofollow">Indeksoi, mutta älä seuraa linkkejä</item>
+      <item name="meta_noindex_follow">Älä indeksoi, mutta seuraa linkkejä.</item>
+      <item name="meta_noindex_nofollow">Älä indeksoi, äläkä seuraa linkkejä</item>
+      <item name="appearance_style">Tyylitiedosto ja tyylin asetukset</item>
+      <item name="stylesheet">Tyylitiedosto</item>
+      <item name="style">Tyyli</item>
+      <item name="author">Kirjoittaja</item>
+      <item name="copyright">Copyright</item>
+      <item name="add">Lisää uusi elementti</item>
+      <item name="remove">Poista valittu elementti</item>
+      <item name="moveup">Siirrä valittua elementtiä ylös</item>
+      <item name="movedown">Siirrä valittua elementtiä alas</item>
+      <item name="head_elements">Pääelementti</item>
+      <item name="info">Informaatio</item>
+      <item name="add_title">Otsikkoelementti</item>
+      <item name="add_meta">Meta-elementti</item>
+      <item name="add_script">Script-elementti</item>
+      <item name="add_style">Tyylielementti</item>
+      <item name="add_link">Linkkielementti</item>
+      <item name="add_base">Base-elementti</item>
+      <item name="add_comment">Yleinen elementti</item>
+      <item name="title_element">Otsikkoelementti</item>
+      <item name="script_element">Script-elementti</item>
+      <item name="style_element">Tyylielementti</item>
+      <item name="base_element">Base-elementti</item>
+      <item name="link_element">Linkkielementti</item>
+      <item name="meta_element">Meta-elementti</item>
+      <item name="comment_element">Kommentti</item>
+      <item name="src">Lähde</item>
+      <item name="language">Kieli</item>
+      <item name="href">Href</item>
+      <item name="target">Kohde</item>
+      <item name="type">Tyyppi</item>
+      <item name="charset">Kirjasintyyppi</item>
+      <item name="defer">Mukautuminen</item>
+      <item name="media">Media</item>
+      <item name="properties">Asetukset</item>
+      <item name="name">Nimi</item>
+      <item name="value">Arvo</item>
+      <item name="content">Sisältö</item>
+      <item name="rel">Rel</item>
+      <item name="rev">Rev</item>
+      <item name="hreflang">Href-kieli</item>
+      <item name="general_props">Yleinen</item>
+      <item name="advanced_props">Edistynyt</item>
+    </group>
+    <!-- Template plugin -->
+    <group target="template">
+      <item name="desc">Lisää esimääritettyä sivupohjasisältöä</item>
+    </group>
+    <!-- Template plugin dialog -->
+    <group target="template_dlg">
+      <item name="title">Sivupohjat</item>
+      <item name="label">Sivupohja</item>
+      <item name="desc_label">Kuvaus</item>
+      <item name="desc">Lisää esimääritettyä sivupohjasisältöä</item>
+      <item name="select">Valitse sivupohja</item>
+      <item name="preview">Esikatselu</item>
+      <item name="warning">Varoitus: Sivupohjan päivittäminen toisella saattaa aiheuttaa tiedon menetyksen.</item>
+      <item name="mdate_format">%d.%m.%Y %H:%M:%S</item>
+      <item name="cdate_format">%d.%m.%Y %H:%M:%S</item>
+      <item name="months_long">Tammikuu,Helmikuu,Maaliskuu,Huhtikuu,Toukokuu,Kesäkuu,Heinäkuu,Elokuu,Syyskuu,Lokakuu,Marraskuu,Joulukuu</item>
+      <item name="months_short">Tammi,Helmi,Maalis,Huhti,Touko,Kesä,Heinä,Elo,Syys,Loka,Marras,Joulu</item>
+      <item name="day_long">sunnuntai,maanantai,tiistai,keskiviikko,torstai,perjantai,lauantai,sunnuntai</item>
+      <item name="day_short">su,ma,ti,ke,to,pe,la,su</item>
+    </group>
+    <!-- Visualchars plugin -->
+    <group target="visualchars">
+      <item name="desc">Näytä/piilota muotoilumerkit.</item>
+    </group>
+    <!-- Spellchecker plugin -->
+    <group target="spellchecker">
+      <item name="desc">Oikeinkirjoituksen tarkistus</item>
+      <item name="menu">Oikeinkirjoituksen asetukset</item>
+      <item name="ignore_word">Ohita sana</item>
+      <item name="ignore_words">Ohita kaikki</item>
+      <item name="langs">Kielet</item>
+      <item name="wait">Odota ole hyvä...</item>
+      <item name="sug">Ehdotukset</item>
+      <item name="no_sug">Ei ehdotuksia</item>
+      <item name="no_mpell">Virheitä ei löytynyt.</item>
+    </group>
+    <!-- Pagebreak plugin -->
+    <group target="pagebreak">
+      <item name="desc">Lisää sivunvaihto.</item>
+    </group>
+    <group target="advlist">
+      <item name="types">Tyypit</item>
+      <item name="def">Oletus</item>
+      <item name="lower_alpha">pienet kirjaimet: a, b, c</item>
+      <item name="lower_greek">pienet kirjaimet: α, β, γ</item>
+      <item name="lower_roman">pienet kirjaimet: i, ii, iii</item>
+      <item name="upper_alpha">isot kirjaimet: A, B, C</item>
+      <item name="upper_roman">isot kirjaimet: I, II, III</item>
+      <item name="circle">Pallo</item>
+      <item name="disc">Ympyrä</item>
+      <item name="square">Neliö</item>
+    </group>
+  </language>
+</language-pack>

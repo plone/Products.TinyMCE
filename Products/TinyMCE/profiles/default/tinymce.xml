@@ -29,8 +29,7 @@
    <element value="Image"/>
   </imageobjects>
   <customplugins>
-    <element value="ploneimage"/>
-    <element value="plonelink"/>
+    <element value="plonebrowser"/>
   </customplugins>
   <entity_encoding value="raw"/>
  </resourcetypes>
@@ -62,7 +61,6 @@
   <content_css value=""/>
   <editor_width value="100%"/>
   <editor_height value="400"/>
-  <directionality value="ltr"/>
   <contextmenu value="True"/>
   <autoresize value="False"/>
   <tablestyles>

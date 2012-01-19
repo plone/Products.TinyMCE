@@ -1,8 +1,10 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
     i18n_domain="tinymce">
 
+    <include zcml:condition="have plone-4" package="Products.CMFCore" file="permissions.zcml" />
     <browser:page
         for="..interfaces.utility.ITinyMCE"
         name="tinymce-controlpanel"
@@ -26,6 +28,15 @@
         permission="zope2.View"
         />
 
+    <!-- don't change the name of this. the gzip part is vital for the
+        identification of the file -->
+    <browser:page
+        for="*"
+        name="tiny_mce_gzip.js"
+        class=".compressor.TinyMCECompressorView"
+        permission="zope2.View"
+        />
+
     <browser:page
         for="*"
         name="checkDocument"
@@ -33,7 +44,6 @@
         permission="zope2.View"
         attribute="checkDocument"
         />
-
 
     <browser:pages
         for="*"
@@ -48,8 +58,7 @@
     </browser:pages>
 
     <include package="Products.CMFCore" file="permissions.zcml"
-        xmlns:zcml="http://namespaces.zope.org/zcml"
-        zcml:condition="have plone-41" />
+             zcml:condition="have plone-41" />
 
     <browser:pages
         for="*"
@@ -72,11 +81,6 @@
         />
 
     <browser:resourceDirectory
-        name="tinymce.kss"
-        directory="kss"
-        />
-
-    <browser:resourceDirectory
         name="tinymce.stylesheets"
         directory="stylesheets"
         />
@@ -88,4 +92,12 @@
         permission="zope2.View"
         />
 
+    <!-- TinyMCE configuration -->
+    <browser:viewlet
+        name="tinymce.configuration"
+        manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
+        class=".browser.ConfigurationViewlet"
+        permission="zope2.View"
+        />
+        
 </configure>
