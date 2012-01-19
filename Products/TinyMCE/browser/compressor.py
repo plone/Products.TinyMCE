@@ -94,7 +94,7 @@ class TinyMCECompressorView(BrowserView):
         for plugin in set(plugins):
             if plugin in customplugins:
                 script = customplugins[plugin]
-                path, bn = customplugins[plugin].split('/')
+                path, bn = customplugins[plugin].lstrip('/').split('/', 1)
             else:
                 script = "plugins/%s/editor_plugin%s.js" % (plugin, suffix)
                 path = 'plugins/%s' % plugin
