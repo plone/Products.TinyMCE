@@ -12,7 +12,8 @@ jQuery(function($) {
     var conf = $.extend({
             elements: this.id
         },
-        <tal:url tal:content="structure options/tinymce_json_config" />);
+        %(tinymce_json_config)s
+        );
     $('textarea.mce_editable').tinymce(conf);
 
     // set Text Format dropdown untabbable for better UX
