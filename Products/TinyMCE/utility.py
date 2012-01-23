@@ -596,7 +596,7 @@ class TinyMCE(SimpleItem):
         return ','.join(plugins)
 
     security.declarePrivate('getStyles')
-    def getStyles(self, config):
+    def getStyles(self, styles, labels):
         """ See ITinyMCE interface
         """
         h = {'Text': [], 'Selection': [], 'Tables': [], 'Lists': [], 'Print': []}
@@ -612,12 +612,12 @@ class TinyMCE(SimpleItem):
         h['Print'].append('{ title: "Print", tag: "", className: "-", type: "Print" }')
 
         # Add defaults
-        h['Text'].append('{ title: "' + config['labels']['label_paragraph'] + '", tag: "p", className: "", type: "Text" }')
-        h['Selection'].append('{ title: "' + config['labels']['label_styles'] + '", tag: "", className: "", type: "Selection" }')
-        h['Tables'].append('{ title: "' + config['labels']['label_plain_cell'] + '", tag: "td", className: "", type: "Tables" }')
-        h['Lists'].append('{ title: "' + config['labels']['label_lists'] + '", tag: "dl", className: "", type: "Lists" }')
+        h['Text'].append('{ title: "' + labels['label_paragraph'] + '", tag: "p", className: "", type: "Text" }')
+        h['Selection'].append('{ title: "' + labels['label_styles'] + '", tag: "", className: "", type: "Selection" }')
+        h['Tables'].append('{ title: "' + labels['label_plain_cell'] + '", tag: "td", className: "", type: "Tables" }')
+        h['Lists'].append('{ title: "' + labels['label_lists'] + '", tag: "dl", className: "", type: "Lists" }')
 
-        for i in config['styles']:
+        for i in styles:
             e = i.split('|')
             while len(e) <= 2:
                 e.append("")
@@ -781,6 +781,8 @@ class TinyMCE(SimpleItem):
 
         if parastyles is not None:
             results['styles'].extend(parastyles)
+
+        styles = results.pop('styles')
 
         # Get buttons from control panel
         results['buttons'] = self.getEnabledButtons(context=context)
@@ -948,7 +950,7 @@ class TinyMCE(SimpleItem):
         results['theme_advanced_toolbar_align'] = "left"
 
         results['plugins'] = self.getPlugins()
-        results['theme_advanced_styles'] = self.getStyles(results)
+        results['theme_advanced_styles'] = self.getStyles(styles, labels)
         results['theme_advanced_buttons1'], results['theme_advanced_buttons2'], \
             results['theme_advanced_buttons3'], results['theme_advanced_buttons4'] = self.getToolbars(results)
 

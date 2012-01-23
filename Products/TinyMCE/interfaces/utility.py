@@ -480,7 +480,7 @@ class ITinyMCE(
         """ Return a comma seperated list of TinyMCE plugins
         """
 
-    def getStyles(config):
+    def getStyles(styles, labels):
         """ Return a list of styles for the use with TinyMCE
         """
 
