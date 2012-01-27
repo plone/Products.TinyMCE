@@ -1,3 +1,11 @@
+# -*- coding: utf-8 -*-
+
+try:
+    import simplejson as json
+    json  # Pyflakes
+except ImportError:
+    import json
+
 from zope import schema
 from zope.interface import Interface
 from zope.i18nmessageid import MessageFactory
@@ -6,7 +14,6 @@ from zope.schema.vocabulary import SimpleVocabulary, SimpleTerm
 from Products.TinyMCE.vocabularies import (
         shortcuts_vocabulary, thumbnail_sizes_vocabulary, plugins_vocabulary)
 
-
 _ = MessageFactory('plone.tinymce')
 
 DEFAULT_PLUGINS = ['advhr', 'definitionlist', 'directionality', 'emotions',
@@ -14,6 +21,20 @@ DEFAULT_PLUGINS = ['advhr', 'definitionlist', 'directionality', 'emotions',
  'noneditable', 'pagebreak', 'paste', 'plonebrowser',
  'ploneinlinestyles', 'plonestyle', 'preview', 'print', 'save',
  'searchreplace', 'tabfocus', 'table', 'visualchars', 'xhtmlxtras']
+
+
+def validate_json(value):
+    try:
+        json.loads(value)
+    except ValueError, exc:
+        class JSONError(schema.ValidationError):
+            __doc__ = _(u"Must be empty or a valid JSON-formatted "
+                        u" configuration – ${message}.", mapping={
+                            'message': unicode(exc)})
+
+        raise JSONError(value)
+
+    return True
 
 
 class ITinyMCELayout(Interface):
@@ -55,6 +76,15 @@ class ITinyMCELayout(Interface):
         title=_(u"Styles"),
         description=_(u"Enter a list of styles to appear in the style pulldown. Format is title|tag or title|tag|className, one per line."),
         required=False)
+
+    formats = schema.Text(
+        title=_(u"Formats"),
+        description=_(u"Enter a JSON-formatted style format configuration. "
+                      u"A format is for example the style that get applied when "
+                      u"you press the bold button inside the editor."),
+        constraint=validate_json,
+        required=False,
+        )
 
     tablestyles = schema.Text(
         title=_(u"Table styles"),

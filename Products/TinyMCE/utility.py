@@ -62,6 +62,7 @@ class TinyMCE(SimpleItem):
     contextmenu = FieldProperty(ITinyMCELayout['contextmenu'])
     content_css = FieldProperty(ITinyMCELayout['content_css'])
     styles = FieldProperty(ITinyMCELayout['styles'])
+    formats = FieldProperty(ITinyMCELayout['formats'])
     tablestyles = FieldProperty(ITinyMCELayout['tablestyles'])
 
     toolbar_width = FieldProperty(ITinyMCEToolbar['toolbar_width'])
@@ -953,6 +954,9 @@ class TinyMCE(SimpleItem):
         results['theme_advanced_styles'] = self.getStyles(styles, labels)
         results['theme_advanced_buttons1'], results['theme_advanced_buttons2'], \
             results['theme_advanced_buttons3'], results['theme_advanced_buttons4'] = self.getToolbars(results)
+
+        if self.formats and self.formats.strip():
+            results['formats'] = json.loads(self.formats)
 
         return json.dumps(results)
 
