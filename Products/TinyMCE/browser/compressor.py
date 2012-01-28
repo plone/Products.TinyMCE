@@ -7,10 +7,11 @@ Copyright (c) 2008 Jason Davies
 Licensed under the terms of the MIT License (see LICENSE.txt)
 """
 
+import os
+
 from Acquisition import aq_inner
 from Products.CMFCore.utils import getToolByName
 from Products.Five import BrowserView
-from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.ResourceRegistries.tools.packer import JavascriptPacker
 from zope.component import getMultiAdapter
 
@@ -31,8 +32,21 @@ def isContextUrl(url):
     return True
 
 
+def stringTemplate(filename):
+    path = os.path.dirname(__file__)
+    f = open(os.path.join(path, filename), 'rb')
+    try:
+        body = f.read()
+    finally:
+        f.close()
+
+    body = body.decode('utf-8')
+    template = lambda **kwargs: body % kwargs
+    return staticmethod(template)
+
+
 class TinyMCECompressorView(BrowserView):
-    tiny_mce_gzip = ViewPageTemplateFile('tiny_mce_gzip.js')
+    tiny_mce_gzip = stringTemplate('tiny_mce_gzip.js')
 
     # TODO: cache?
     def __call__(self):

@@ -76,7 +76,7 @@
 .ploneSkin table#text_style_text td.mceFirst {background:#fff;}
 .ploneSkin table.mceListBox, .ploneSkin .mceListBox a {display:block}
 .ploneSkin table.mceListBox .mceText {padding-left:4px; width:131px; text-align:left; border:1px solid #444; border-right:0; font-size:100%; height:20px; line-height:20px; overflow:hidden}
-.ploneSkin table.mceListBox .mceOpen {width:9px; height:20px; background:url(../../img/icons.gif) -741px 0; margin-right:2px; border:1px solid #444;}
+.ploneSkin table.mceListBox .mceOpen {width:16px; height:20px; background:url(../../img/icons.gif) -738px 0; margin-right:2px; border:1px solid transparent !important;}
 .ploneSkin table.mceListBoxEnabled:hover .mceText, .ploneSkin .mceListBoxHover .mceText, .ploneSkin .mceListBoxSelected .mceText {border-right:none;}
 .ploneSkin table.mceListBoxEnabled:hover .mceOpen, .ploneSkin .mceListBoxHover .mceOpen, .ploneSkin .mceListBoxSelected .mceOpen {background-color: #ddd; border: 1px solid #444 !important;}
 .ploneSkin .mceListBoxDisabled a.mceText {color:#444; background-color:transparent;}
