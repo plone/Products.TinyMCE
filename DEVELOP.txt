@@ -49,6 +49,14 @@ restart Plone
 Debug build
 -------------
 
+You can have unobfuscated TinyMCE available for your Plone for debugging in two ways 
+
+* Separate files: TinyMCE uses internal script loader 
+
+* Merged as tiny_mce_full.js
+
+The former is recommended.
+
 Development build
 =========================
 
@@ -60,7 +68,7 @@ All TinyMCE source code modules are separate in the orignal tree and must be cop
 In *portal_javascripts* change *tiny_mce.js* -> *tiny_mce_dev.js*. 
 
 Fix definitionlist: in *skins/tinymce/plugins/definitionlist* copy *editor_plug.js* as *editor_plugin_src.js*.
-Don't know why this fucking thing is broken or what's the proper fix.
+Don't know why this thing is broken or what's the proper fix or why Sky is blue.
 
 Uncompressed jQuery adapter must be manually installed too.
 From *skins/classes/adapter/jquery* copy *adapter.js* as *skins/jquery.tinymce.js*. 
