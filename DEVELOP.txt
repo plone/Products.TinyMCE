@@ -52,7 +52,7 @@ Debug build
 Development build
 =========================
 
-All files are separate::
+All TinyMCE source code modules are separate in the orignal tree and must be copied for to *skins* structure::
 
         cd src/tinymce/jscripts/tiny_mce
         cp -r * ../../../../Products/TinyMCE/skins/tinymce 
@@ -61,6 +61,9 @@ In *portal_javascripts* change *tiny_mce.js* -> *tiny_mce_dev.js*.
 
 Fix definitionlist: in *skins/tinymce/plugins/definitionlist* copy *editor_plug.js* as *editor_plugin_src.js*.
 Don't know why this fucking thing is broken or what's the proper fix.
+
+Uncompressed jQuery adapter must be manually installed too.
+From *skins/classes/adapter/jquery* copy *adapter.js* as *skins/jquery.tinymce.js*. 
         
 Full concatenated build
 =========================
