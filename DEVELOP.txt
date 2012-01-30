@@ -46,6 +46,40 @@ restart Plone
     $ ./upgrade_tinymce.sh
     $ bin/instance fg
 
+Debug build
+-------------
+
+Development build
+=========================
+
+All files are separate::
+
+        cd src/tinymce/jscripts/tiny_mce
+        cp -r * ../../../../Products/TinyMCE/skins/tinymce 
+        
+In *portal_javascripts* change *tiny_mce.js* -> *tiny_mce_dev.js*. 
+
+Fix definitionlist: in *skins/tinymce/plugins/definitionlist* copy *editor_plug.js* as *editor_plugin_src.js*.
+Don't know why this fucking thing is broken or what's the proper fix.
+        
+Full concatenated build
+=========================
+
+Edit ``upgrade_tinymce.sh`` to do a full build::
+
+        ant -s $tinymce_git_root/build.xml build_full
+        
+This will create *skins/tinymce/tiny_mce_full.js*.
+
+Copy in jquery.tinymce.js (where?)        
+        
+More info about TinyMCE build process:
+
+* https://github.com/tinymce/tinymce        
+
+TinyMCE forked from the master repo for Plone
+
+* https://github.com/collective/tinymce 
 
 Common pitfalls
 ---------------
