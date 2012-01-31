@@ -112,8 +112,14 @@ plone.tinymce.pot file and re-sync all language files::
 
    export BIN=`pwd`/bin
    cd Products/TinyMCE/locales
-   $BIN/i18ndude rebuild-pot --exclude utils --pot plone.tinymce.pot --merge plone.tinymce-manual.pot --create plone.tinymce ../
+   $BIN/i18ndude rebuild-pot --exclude "utils support" --pot plone.tinymce.pot --merge plone.tinymce-manual.pot --create plone.tinymce ../
    $BIN/i18ndude sync --pot plone.tinymce.pot ./*/LC_MESSAGES/plone.tinymce.po
+
+.. note ::
+
+        Exclude list is based on HTML files which Zope TAL interpreter cannot can properly:
+        it gives NestingErrors becase it tries to scan HTML tags inside Javascript strings.
+        You may need update this list based on TinyMCE release.
 
 After this (or if you only change a translation string itself), you need to
 recompile .mo files::
