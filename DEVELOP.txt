@@ -101,19 +101,30 @@ We use two domains of translations:
    updated when we upgrade to a new version of TinyMCE (see below) - no touchy!
  * plone.tinymce.po files which contain translations for our custom code.
 
+Before editing translations 
+
+* install ``i18ndude`` by running buildout using instructions above.
+
+* make sure your OS has ``msgfmt`` command installed
+
 If you change some of our templates or control panels, make sure you rebuild our
 plone.tinymce.pot file and re-sync all language files::
 
-   $ cd Products/TinyMCE/locales
-   $ i18ndude rebuild-pot --exclude utils --pot plone.tinymce.pot --merge plone.tinymce-manual.pot --create plone.tinymce ../
-   $ i18ndude sync --pot plone.tinymce.pot ./*/LC_MESSAGES/plone.tinymce.po
+   export BIN=`pwd`/bin
+   cd Products/TinyMCE/locales
+   $BIN/i18ndude rebuild-pot --exclude utils --pot plone.tinymce.pot --merge plone.tinymce-manual.pot --create plone.tinymce ../
+   $BIN/i18ndude sync --pot plone.tinymce.pot ./*/LC_MESSAGES/plone.tinymce.po
 
 After this (or if you only change a translation string itself), you need to
 recompile .mo files::
 
-    $ cd Products/TinyMCE/locales/<your_language>/LC_MESSAGES
-    $ msgfmt -o plone.tinymce.mo plone.tinymce.po
+    cd Products/TinyMCE/locales/<your_language>/LC_MESSAGES
+    msgfmt -o plone.tinymce.mo plone.tinymce.po
 
+Translating style names
+==========================
+
+How????
 
 Common pitfalls
 ---------------
