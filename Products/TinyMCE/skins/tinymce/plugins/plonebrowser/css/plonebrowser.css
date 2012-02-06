@@ -25,7 +25,8 @@
 .input-border { border: 0.1em solid #CCC!important }
 .browser-separator { background-color: #f6f6f6; margin-bottom: 0.5em; }
 .shortcuts strong { cursor: pointer; }
-#insert-selection { margin: 0.7em auto; display: block; width: 70%; }
+#insert-selection { margin: 0.7em auto; }
+#externalurlprefix {vertical-align: middle !important}
 
 /* image plugin css */
 .thumbnail { overflow: hidden; }
@@ -47,3 +48,10 @@
 #linktype .current a { font-weight: bold; color: #000; border: none; cursor: default }
 #anchorlinkcontainer { height: 350px; }
 #external_panel, #mail_panel, #anchor_panel, #advanced_panel { width: 600px }
+
+#plonebrowser {font-size: 80%}
+
+#plonebrowser span {
+    display: inline;
+    padding-top: 3px;
+}
