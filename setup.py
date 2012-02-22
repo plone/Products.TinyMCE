@@ -11,23 +11,10 @@ if sys.version_info[0] == 2 and sys.version_info[1] < 6:
 else:
     requires = []
 
-long_description = """
-%s
-
-%s
-
-%s
-
-%s
-""" % (open_relative("README.rst"),
-       open_relative("docs", "source", "install.rst"),
-       open_relative("CHANGES.txt"),
-       open_relative("docs", "source", "contributors.rst"))
-
 setup(name='Products.TinyMCE',
     version='1.3-beta2',
     description="Adds support for TinyMCE, a platform independent web based Javascript HTML WYSIWYG editor, to Plone.",
-    long_description=long_description,
+    long_description=open_relative("README.rst"),
     classifiers=[
         "Framework :: Plone",
         "Programming Language :: Python",
