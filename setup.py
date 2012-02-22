@@ -1,9 +1,9 @@
-from setuptools import setup, find_packages
 import os
 import sys
 
+from setuptools import setup, find_packages
 
-version = '1.3-alpha'
+
 open_relative = lambda *x: open(os.path.join(os.path.dirname(__file__), *x)).read()
 
 if sys.version_info[0] == 2 and sys.version_info[1] < 6:
@@ -19,13 +19,13 @@ long_description = """
 %s
 
 %s
-""" % (open_relative("README.txt"),
-       open_relative("docs", "INSTALL.txt"),
+""" % (open_relative("README.rst"),
+       open_relative("docs", "source", "install.rst"),
        open_relative("CHANGES.txt"),
-       open_relative("docs", "CONTRIBUTORS.txt"))
+       open_relative("docs", "source", "contributors.rst"))
 
 setup(name='Products.TinyMCE',
-    version=version,
+    version='1.3-beta2',
     description="Adds support for TinyMCE, a platform independent web based Javascript HTML WYSIWYG editor, to Plone.",
     long_description=long_description,
     classifiers=[
@@ -52,5 +52,6 @@ setup(name='Products.TinyMCE',
     ] + requires,
     extras_require={
         'test': ['plone.app.testing', 'unittest2', 'plone.app.dexterity'],
+        'docs': ['sphinx'],
     },
 )

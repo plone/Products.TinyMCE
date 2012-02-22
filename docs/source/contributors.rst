@@ -7,12 +7,22 @@ Editor
 `TinyMCE <http://tinymce.moxiecode.com/>`_ is a product developed by Moxiecode
 Systems
 
+Plone 4
+-------
+
+- Vilmos Somogyi
+- Kai Lautaportti
+- Roel Bruggink
+- Nejc Zupan
+- Domen Kožar (GSOC 2011)
+- Maurits van Rees
+
 Plone 3
 -------
 
 - Plone 3 and TinyMCE 3 Adaption by Rob Gietema, Franklin Kingma, Ralph Jacobs,
   Martijn Jacobs, Maarten Kling and Roel Bruggink from
-  `Four Digits`_
+  `Four Digits <http://www.fourdigits.nl/>`_
 
 Plone 2
 -------

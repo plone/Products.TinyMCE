@@ -1,13 +1,25 @@
+.. developer-manual:
+
 Developing TinyMCE
-==================
+^^^^^^^^^^^^^^^^^^
+
+Prerequisites
+-------------
+
+If you are on a Mac, install `apache-ant` from macports. Otherwise:
+
+- Install the Java JDK or JRE packages
+- Install Apache Ant
+- Add Apache Ant to your systems path environment variable. This is not
+  required but makes it easier to issue commands to Ant without having to type
+  the full path for it.
+
 
 First start
 -----------
 
-Before you start, `http://help.github.com/mac-set-up-git/ <set up your git>`_.
-
-Then fork both https://github.com/iElectric/Products.TinyMCE and
-https://github.com/iElectric/Products.TinyMCE. Continue with cloning your fork
+Then fork both https://github.com/plone/Products.TinyMCE and
+https://github.com/collective/tinymce. Continue with cloning your fork
 of ``Products.TinyMCE`` to your local machine::
 
     $ git clone git@github.com:<your_git_username>/Products.TinyMCE.git
@@ -17,7 +29,7 @@ Now you need to tell buildout to use your fork of ``tinymce``. Do that by
 opening up ``buildout.cfg`` with your favorite editor and changing the
 ``tinymce = ...`` line in ``[sources]`` section so it points to your fork::
 
-    - tinymce = git https://github.com/iElectric/tinymce.git egg=false branch=3.4.7-plone
+    - tinymce = git https://github.com/collective/tinymce.git egg=false branch=3.4.7-plone
     + tinymce = git https://github.com/<your_git_username>/tinymce.git egg=false branch=3.4.7-plone
 
 Cool, you are now ready to build your development environment::
@@ -40,11 +52,16 @@ If you see ``No upgrade avaiable`` you don't need to run anything.
 After each change
 -----------------
 
-If you change something you need to rerun the tinymce builder script and
+If you change something in *src/tinymce* you need to rerun the tinymce builder script and
 restart Plone
 
     $ ./upgrade_tinymce.sh
     $ bin/instance fg
+
+
+.. warning::
+
+    Never change files directly in skins, but rather in src/tinymce/
 
 Debug build
 -------------
@@ -87,10 +104,6 @@ Copy in jquery.tinymce.js (where?)
 More info about TinyMCE build process:
 
 * https://github.com/tinymce/tinymce        
-
-TinyMCE forked from the master repo for Plone
-
-* https://github.com/collective/tinymce 
 
 Updating translations
 ---------------------
@@ -139,7 +152,7 @@ If your TinyMCE is not working as excpected or is not displayed at all,
 first check you haven't fallen in one of the following pits.
 
 Building TinyMCE failed
-"""""""""""""""""""""""
+=======================
 
 Maybe the ``upgrade_tinymce.sh`` script failed halfway through its
 process. Stop Zope and rerun the script until you see an output like this::
@@ -156,7 +169,7 @@ process. Stop Zope and rerun the script until you see an output like this::
     *** Translations already there, copy them over ***
 
 Use correct tinymce branch
-""""""""""""""""""""""""""
+==========================
 
 Go to ``src/tinymce/`` and make sure you are using the latest plone branch
 of TinyMCE. The output should look something like this, with ``*`` indicating
@@ -166,18 +179,9 @@ which branch you are on::
     * 3.4.3-plone
       master
 
-/Products.TinyMCE/tinymce_language_pack/langs/: No such file or directory
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-This happens sometimes when running ``./upgrade_tinymce.sh``. Remove the ``xml``
-folder in utils and re-run the script::
-
-    $ rm -rf Products/TinyMCE/utils/xml
-    $ ./upgrade_tinymce.sh
-
 
 Getting a new upstream version
-==============================
+------------------------------
 
 Let's say current version in Products.TinyMCE is 3.4.3 and upstream is 3.4.7::
 
@@ -192,11 +196,6 @@ PS: It is highly recommended to use meld for merging::
 
     $ git config --global merge.tool meld
 
-Set new branch in buildout
---------------------------
-
-Open up ``buildout.cfg`` and fix the ``tinymce`` directive in ``[sources]``
-section to use the new plone branch of tinymce.
 
 Update language files for TinyMCE core
 --------------------------------------
@@ -229,7 +228,7 @@ A one-liner to compile all translation files goes a little something like this::
 
 
 Releasing TinyMCE
-=================
+-----------------
 
 * run ./upgrade_tinymce.sh
 * rebuild pot and sync (look above)
@@ -239,27 +238,7 @@ Releasing TinyMCE
 * run python setup.py sdist
 
 
-Known local fixes which need to be merged
-=========================================
-
-- fixes in skins/tinymce/tiny_mce_src.js
-- fixes in skins/tinymce/plugins/paste/pastetext.html.pt and
-  skins/tinymce/plugins/paste/js/pastetext.js
-- others?
-
-
 Javascript coding standards
-===========================
+---------------------------
 
-- use jslint, if you don't have it integrated with editor yet, use http://www.jslint.com/
-
-Prerequisites
-=============
-
-If you are on a Mac, install `apache-ant` from macports. Otherwise:
-
-- Install the Java JDK or JRE packages
-- Install Apache Ant
-- Add Apache Ant to your systems path environment variable. This is not
-  required but makes it easier to issue commands to Ant without having to type
-  the full path for it.
+use jslint, if you don't have it integrated with editor yet, use http://www.jslint.com/

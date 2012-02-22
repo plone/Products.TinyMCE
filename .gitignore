@@ -1,4 +1,6 @@
 *.pyc
+*.wpr
+*.swp
 *.mo
 *.egg-info
 .installed.cfg
@@ -8,8 +10,6 @@ src
 parts
 bin
 develop-eggs
-*.wpr
-*.swp
 tmp
 coverage
 report
@@ -17,3 +17,4 @@ include
 lib
 dist
 tinymce_language_pack
+docs/build

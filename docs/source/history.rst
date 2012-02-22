@@ -16,6 +16,9 @@ HISTORY
   See http://www.tinymce.com/wiki.php/Configuration:formats.
   [malthe]
 
+1.3-beta1 (2011-10-24)
+----------------------
+
 - Use TinyMCE compressor to provide editor and plugins
   [tom_gross]
 
@@ -24,7 +27,7 @@ HISTORY
 
 
 1.2.10 (unreleased)
-------------------
+-------------------
 
 - Fixed AttributeError: 'ATDocumentFieldsView' object has no attribute
   'absolute_url' when using inline editing.  Inline editing then still
@@ -227,7 +230,7 @@ HISTORY
   for details.
   [davisagli]
 
-1.1.7 (unreleased)
+1.1.7 (2011-02-10)
 ------------------
 
 - Make sure that tinymce-jsonconfiguration is traversed as a view in
@@ -909,3 +912,285 @@ HISTORY
 
 - Fixed issue with language configuration.
   [robgietema]
+
+
+1.0 (2009-01-18)
+----------------
+
+- Fixed incorrect table classes.
+  [robgietema]
+
+- Fixed inline editing bug.
+  [robgietema]
+
+- Fixed ordered list.
+  [robgietema]
+
+- Fixed xhtml compliance.
+  [robgietema]
+
+- Fixed external link dialog.
+  [robgietema]
+
+1.0rc2 (2008-12-09)
+-------------------
+
+- Upgrade to TinyMCE 3.2.1.1.
+  [robgietema]
+
+- Added preview button for external links.
+  [robgietema]
+
+- Added auto select on upload when adding images and files.
+  [robgietema]
+
+- Fix for web-intelligent RichText fields.
+  [robgietema]
+
+- Fix for selecting links with double quote in the objectname.
+  [robgietema]
+
+- Fixed insert media dialog.
+  [robgietema]
+
+- Fixed IE7 scrolling bug, Fixed HTML Filtering settings bug.
+  [robgietema]
+
+1.0rc1 (2008-11-18)
+-------------------
+
+- Upgrade to TinyMCE 3.2.1 (and new logo).
+  [robgietema]
+
+- Merged blockformats and styles into one styles menu.
+  [robgietema]
+
+- Added support for parastyles in widget definition.
+  [robgietema]
+
+- Added link usings uids for images and internal links.
+  [robgietema, maerteijn]
+
+- Added the captioned images option.
+  [robgietema, maerteijn]
+
+- Get HTML Filtering settings from the control panel.
+  [robgietema]
+
+- Added integration tests.
+  [robgietema]
+
+- Added export/import of settings through GenericSetup (tinymce.xml).
+  [robgietema]
+
+- Added i18n support + language packs.
+  [robgietema]
+
+- Fixed inline editing.
+  [robgietema]
+
+- Moved load/save events to kss.
+  [robgietema]
+
+- Fixed save button on the toolbar, now using an ajax method.
+  [robgietema]
+
+- Moved all configuration data to json structure in page template of the widget.
+  [robgietema]
+
+- Changed toolbar save user feedback from alert message to blinking field border
+  (idea by Danny).
+  [robgietema]
+
+- Removed save button when creating a new object.
+  [robgietema]
+
+- Added bottom margin of the editor window when auto resize is enabled to the
+  control panel.
+  [robgietema]
+
+- Added condition to javascript files in portal registery.
+  [robgietema]
+
+- Fixed IE6 and 7 loading and dialog bugs.
+  [robgietema]
+
+- Fixed toolbar/statusbar backgroundcolor bug in IE6 and 7.
+  [robgietema]
+
+- Fixed width of file field in image and file upload dialog for Safari.
+  [robgietema]
+
+- Fixed inline style filtering.
+  [robgietema]
+
+- Fixed indenting/outdenting of lists.
+  [robgietema]
+
+0.96.3.1.1 (2008-10-23)
+-----------------------
+
+- Added external toolbar option.
+  [robgietema]
+
+- Autogrow option.
+  [robgietema]
+
+- Handling for allow and filter_buttons.
+  [robgietema]
+
+- Changed style of the editorfield so it matches the other widgets (gray
+  borders, blue toolbar, orange border when selected etc).
+  [robgietema]
+
+- Added javascripts to portal registery.
+  [robgietema]
+
+- Fixed bug with multiple editors on one page (issue #7).
+  [robgietema]
+
+- CSS fixes for NuPlone.
+  [robgietema]
+
+- Fixed issue with plone formgen style (issue #8).
+  [robgietema]
+
+- Fixed tablecel bug (issue #6).
+  [robgietema]
+
+- Removed dom path from location bar.
+  [robgietema]
+
+- Removed unused skins of popups.
+  [robgietema]
+
+- Fixed position of modal dialog blocker and move dialog window (backport from
+  TinyMCE 3.2).
+  [robgietema]
+
+- Fixed "jumping" issues in the link and image dialog when using Safari.
+  [robgietema]
+
+0.95.3.1.1 (2008-09-11)
+-----------------------
+
+- Eggification of TinyMCE.
+  [robgietema, kingel]
+
+- Upgrade to TinyMCE 3.1.1.
+  [robgietema]
+
+- Minor table fixes.
+  [robgietema]
+
+0.94.3.1.0.1 (2008-07-11)
+-------------------------
+
+- Upgrade to TinyMCE 3.1.0.1.
+  [robgietema]
+
+- Added support for NuPlone.
+  [robgietema]
+
+- Minor bugfixes.
+  [robgietema]
+
+0.93.3.0.8 (2008-05-17)
+-----------------------
+
+- Upgrade to TinyMCE 3.0.8.
+  [robgietema]
+
+- Upgrade to Plone 3.1.1.
+  [robgietema]
+
+- Added control panel.
+  [robgietema]
+
+0.92.2.0.6 (2006-06-02)
+-----------------------
+
+- Upgrade to TinyMCE 2.0.6.1.
+  [turgmr2]
+
+- Add separate language downloads.
+  [turgmr2]
+
+0.91.2.0.5
+----------
+
+- Bugfix for linux systems.
+  [turgmr2]
+
+0.90.2.0.5 (2006-03-31)
+-----------------------
+
+- Upgrade to TinyMCE 2.0.5.1.
+  [turgmr2]
+
+- Fix bug with relative links.
+  [turgmr2]
+
+0.90.2.0.2 (2006-01-24)
+-----------------------
+
+- Upgrade to TinyMCE 2.0.2.
+  [turgmr2]
+
+0.90.1.45 (2005-10-03)
+----------------------
+
+- Use javascript_head_slot instead of editing the header template.
+  [turgmr2]
+
+0.81.1.45 (2005-08-23)
+----------------------
+
+- Upgrade to TinyMCE 1.45 (final).
+  [turgmr2]
+
+- Optimize javascript.
+  [turgmr2]
+
+- Update the instructions.
+  [turgmr2]
+
+0.80.1.45rc1 (2005-06-07)
+-------------------------
+
+- Strip all languages except English.
+  [turgmr2]
+
+- Upgrade internally to 1.45rc1.
+  [turgmr2]
+
+0.80.1.44
+---------
+
+- Allow cohabitation with Kupu and Epoz.
+  [turgmr2]
+
+0.75.1.44
+---------
+
+- Write install documentation and notes.
+  [turgmr2]
+
+0.70.1.44
+---------
+
+- Get the rest of the features and enable plugins.
+  [turgmr2]
+
+0.50.1.44
+---------
+
+- Get installable product and some features.
+  [turgmr2]
+
+0.10.1.44
+---------
+
+- Get minimal functionality.
+  [turgmr2]
+
