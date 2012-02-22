@@ -1,1 +1,1 @@
-Documentation at http://readthedocs.org/docs/Products.TinyMCE/
+Documentation at http://readthedocs.org/docs/productstinymce/
