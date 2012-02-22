@@ -5,6 +5,9 @@ HISTORY
 1.3-beta2 (2012-02-xx)
 ----------------------
 
+- Migrated documentation to Sphinx
+  [iElectric]
+
 - Adding field to configure formats.
 
   This option enables you to override and add custom formats. A format
