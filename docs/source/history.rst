@@ -5,6 +5,15 @@ HISTORY
 1.3-beta2 (2012-02-xx)
 ----------------------
 
+- images now have title and alt attributes when rendered https://dev.plone.org/ticket/12322
+  [iElectric]
+
+- Visual editor should set writing direction based on current language, not site preference
+  [iElectric]
+
+- Added "Edit with visual editor" button
+  [iElectric]
+
 - Migrated documentation to Sphinx
   [iElectric]
 
@@ -19,8 +28,20 @@ HISTORY
   See http://www.tinymce.com/wiki.php/Configuration:formats.
   [malthe]
 
+- Initial Slovenian translation
+  [zupo]
+
 1.3-beta1 (2011-10-24)
 ----------------------
+
+- tinymce files are now pulled from upstream git repository
+  [iElectric]
+
+- Upgrade tinymce to 3.4.7
+  [iElectric]
+
+- Redesign of Image/Link browser, rewrite of javascript to use jquery
+  [iElectric, zupo]
 
 - Use TinyMCE compressor to provide editor and plugins
   [tom_gross]
