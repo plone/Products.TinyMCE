@@ -81,10 +81,11 @@ class ITinyMCELayout(Interface):
         title=_(u"Formats"),
         description=_(u"Enter a JSON-formatted style format configuration. "
                       u"A format is for example the style that get applied when "
-                      u"you press the bold button inside the editor."),
+                      u"you press the bold button inside the editor. "
+                      u"See http://www.tinymce.com/wiki.php/Configuration:formats"),
         constraint=validate_json,
         required=False,
-        )
+    )
 
     tablestyles = schema.Text(
         title=_(u"Table styles"),
