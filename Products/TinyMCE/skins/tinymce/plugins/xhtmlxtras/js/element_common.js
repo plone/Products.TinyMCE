@@ -221,11 +221,14 @@ SXE.addClass = function(elm,cl) {
 }
 
 function insertInlineElement(en) {
-	var ed = tinyMCEPopup.editor, dom = ed.dom;
+	var ed = tinyMCEPopup.editor, dom = ed.dom, elm;
 
 	ed.getDoc().execCommand('FontName', false, 'mceinline');
 	tinymce.each(dom.select('span,font'), function(n) {
-		if (n.style.fontFamily == 'mceinline' || n.face == 'mceinline')
-			dom.replace(dom.create(en), n, 1);
+		if (n.style.fontFamily == 'mceinline' || n.face == 'mceinline') {
+			elm = dom.create(en);
+			elm.setAttribute('_mce_new', 1);
+			dom.replace(elm, n, 1);
+		}
 	});
 }
