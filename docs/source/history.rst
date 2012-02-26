@@ -2,8 +2,14 @@
 HISTORY
 =======
 
+
+
+
 1.3-beta2 (2012-02-xx)
 ----------------------
+
+- more stable css class listing
+  [joka]
 
 - images now have title and alt attributes when rendered https://dev.plone.org/ticket/12322
   [iElectric]

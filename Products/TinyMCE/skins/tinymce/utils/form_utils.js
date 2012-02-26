@@ -115,34 +115,35 @@ function addSelectValue(form_obj, field_name, name, value) {
 function addClassesToList(list_id, specific_option) {
 	// Setup class droplist
 	var styleSelectElm = document.getElementById(list_id);
-	var styles = tinyMCEPopup.getParam('theme_advanced_styles', false);
-	styles = tinyMCEPopup.getParam(specific_option, styles);
-
-	if (styles) {
-		var stylesAr = styles.split(';');
-
-		for (var i=0; i<stylesAr.length; i++) {
-			if (stylesAr != "") {
-				var key, value;
-
-				key = stylesAr[i].split('=')[0];
-				value = stylesAr[i].split('=')[1];
-
-				styleSelectElm.options[styleSelectElm.length] = new Option(key, value);
+	if (styleSelectElm!=null) {
+		var styles = tinyMCEPopup.getParam('theme_advanced_styles', false);
+		styles = tinyMCEPopup.getParam(specific_option, styles);
+	
+		if (styles) {
+			var stylesAr = styles.split(';');
+	
+			for (var i=0; i<stylesAr.length; i++) {
+				if (stylesAr != "") {
+					var key, value;
+	
+					key = stylesAr[i].split('=')[0];
+					value = stylesAr[i].split('=')[1];
+	
+					styleSelectElm.options[styleSelectElm.length] = new Option(key, value);
+				}
 			}
+		} else {
+			tinymce.each(tinyMCEPopup.editor.dom.getClasses(), function(o) {
+				styleSelectElm.options[styleSelectElm.length] = new Option(o.title || o['class'], o['class']);
+			});
 		}
-	} else {
-		tinymce.each(tinyMCEPopup.editor.dom.getClasses(), function(o) {
-			styleSelectElm.options[styleSelectElm.length] = new Option(o.title || o['class'], o['class']);
-		});
 	}
 }
 
 function isVisible(element_id) {
 	var elm = document.getElementById(element_id);
 
-	// elm.style.display can be an empty string if the panel is hidden and has never been shown
-	return elm && (elm.style.display == "block" || elm.style.display == "inline" || elm.style.display == "list-element");
+	return elm && elm.style.display != "none";
 }
 
 function convertRGBToHex(col) {
