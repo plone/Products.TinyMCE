@@ -10,6 +10,9 @@
 
 function MCTabs() {
 	this.settings = [];
+	this.editor = tinyMCEPopup.editor;
+	this.tinymce = tinyMCEPopup.getWin().tinymce;
+	this.dom = tinyMCEPopup.dom;
 	this.onChange = tinyMCEPopup.editor.windowManager.createInstance('tinymce.util.Dispatcher');
 };
 
@@ -30,7 +33,12 @@ MCTabs.prototype.getParam = function(name, default_value) {
 };
 
 MCTabs.prototype.showTab =function(tab){
-	tab.firstChild.className = 'current';
+	var t = this;
+	t.dom.addClass(tab,'current');
+
+	var nodes = tab.childNodes;
+	for (var i = 0; i < nodes.length; i++) t.dom.addClass(nodes[i], 'selected');
+	
 	tab.setAttribute("aria-selected", true);
 	tab.setAttribute("aria-expanded", true);
 	tab.tabIndex = 0;
@@ -38,20 +46,27 @@ MCTabs.prototype.showTab =function(tab){
 
 MCTabs.prototype.hideTab =function(tab){
 	var t=this;
+	t.dom.removeClass(tab,'current');
 
-	tab.firstChild.className = '';
+	var nodes = tab.childNodes;
+	for (var i = 0; i < nodes.length; i++) t.dom.removeClass(nodes[i], 'selected');
+
 	tab.setAttribute("aria-selected", false);
 	tab.setAttribute("aria-expanded", false);
 	tab.tabIndex = -1;
 };
 
 MCTabs.prototype.showPanel = function(panel) {
-	panel.className = 'current'; 
+	var t = this;
+	t.dom.addClass(panel,'current');
+	t.dom.show(panel);
 	panel.setAttribute("aria-hidden", false);
 };
 
 MCTabs.prototype.hidePanel = function(panel) {
-	panel.className = 'panel';
+	var t=this;
+	t.dom.removeClass(panel,'current');
+	t.dom.hide(panel);
 	panel.setAttribute("aria-hidden", true);
 }; 
 
@@ -60,25 +75,29 @@ MCTabs.prototype.getPanelForTab = function(tabElm) {
 };
 
 MCTabs.prototype.displayTab = function(tab_id, panel_id, avoid_focus) {
-	var panelElm, panelContainerElm, tabElm, tabContainerElm, selectionClass, nodes, i, t = this;
+	var panelContainerElm, tabContainerElm, t = this;
 
-	tabElm = document.getElementById(tab_id);
+	/* tab dom node  */
+	var tabElm = document.getElementById(tab_id);
 
 	if (panel_id === undefined) {
 		panel_id = t.getPanelForTab(tabElm);
 	}
 
-	panelElm= document.getElementById(panel_id);
+	/* tab content dom node */
+	var panelElm= document.getElementById(panel_id);
 	panelContainerElm = panelElm ? panelElm.parentNode : null;
+	
 	tabContainerElm = tabElm ? tabElm.parentNode : null;
 	selectionClass = t.getParam('selection_class', 'current');
 
 	if (tabElm && tabContainerElm) {
-		nodes = tabContainerElm.childNodes;
+		var nodes = tabContainerElm.childNodes;
 
 		// Hide all other tabs
-		for (i = 0; i < nodes.length; i++) {
-			if (nodes[i].nodeName == "LI") {
+		var nn = tabElm.nodeName;
+		for (var i = 0; i < nodes.length; i++) {
+			if (nodes[i].nodeName == nn) {
 				t.hideTab(nodes[i]);
 			}
 		}
@@ -88,11 +107,12 @@ MCTabs.prototype.displayTab = function(tab_id, panel_id, avoid_focus) {
 	}
 
 	if (panelElm && panelContainerElm) {
-		nodes = panelContainerElm.childNodes;
+		var nodes = panelContainerElm.childNodes;
 
 		// Hide all other panels
-		for (i = 0; i < nodes.length; i++) {
-			if (nodes[i].nodeName == "DIV")
+		var nn = panelElm.nodeName;
+		for (var i = 0; i < nodes.length; i++) {
+			if (nodes[i].nodeName == nn)
 				t.hidePanel(nodes[i]);
 		}
 

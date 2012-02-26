@@ -8,7 +8,7 @@ HISTORY
 1.3-beta2 (2012-02-xx)
 ----------------------
 
-- more stable css class listing
+- more stable css class listing and tabbing
   [joka]
 
 - images now have title and alt attributes when rendered https://dev.plone.org/ticket/12322
