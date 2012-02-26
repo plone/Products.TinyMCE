@@ -5,7 +5,10 @@ HISTORY
 1.2.11 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fixed xhtmlxtras to mark new elements (to fill their attributes) and
+  closed-tags regexp to not mix abbr with br. 
+  This fixes https://dev.plone.org/ticket/11192
+  [datakurre]
 
 
 1.2.10 (2012-01-29)
