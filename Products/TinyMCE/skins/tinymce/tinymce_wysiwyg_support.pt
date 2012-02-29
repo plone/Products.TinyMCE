@@ -23,7 +23,7 @@
                             class python:wysiwyg and 'mce_editable' or None"></textarea>
 
   <div tal:condition="wysiwyg"
-       class="discreet suppressVisualEditor" style="margin-top: -1em;">
+       class="discreet suppressVisualEditor">
     <a i18n:translate="suppress_visual_editor"
        i18n:domain="plone.tinymce"
        tal:attributes="href string:${request/URL0}?tinymce.suppress=${fname}&amp;${request/QUERY_STRING};">
