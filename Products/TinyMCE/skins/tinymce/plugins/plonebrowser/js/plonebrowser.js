@@ -638,7 +638,7 @@ BrowserDialog.prototype.setDetails = function (url) {
                 self.thumb_url = "";
             }
 
-            jq('#description', document).val(data.description);
+            jq('#description', document).val(decodeURIComponent(data.description));
             jq('#description_href', document).val(data.url);
 
             // Repopulate the <option>s in the dimensions <select> element.
