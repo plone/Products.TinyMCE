@@ -17,7 +17,7 @@
 			<div class="tabs">
             <ul class="formTabs">
 							<li id="general_tab" class="current formTab firstFormTab" aria-controls="general_panel">
-								<span><a i18n:translate="table_dlg_general_tab" href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;"></a></span></li>
+								<span><a i18n:translate="table_dlg_general_tab" href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;" class="selected"></a></span></li>
 							<li id="advanced_tab" class="formTab lastFormTab" aria-controls="advanced_panel">
 								<span><a i18n:translate="table_dlg_advanced_tab" href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;"></a></span></li>
             </ul>

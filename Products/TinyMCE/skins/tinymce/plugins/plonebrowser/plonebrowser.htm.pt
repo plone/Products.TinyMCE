@@ -39,13 +39,13 @@
 		<div id="browseimage_panel" class="column">
 			<h2></h2>
 			<div class="formHelp">
-				<strong i18n:translate="">You are here:</strong>
+				<strong i18n:domain="plone.tinymce" i18n:translate="">You are here:</strong>
 				<span id="internalpath"></span>
 			</div>
 			<div id="general_panel" class="column">
 				<div class="field">
 					<div class="widget">
-						<input type="text" name="searchtext" id="searchtext" title="Search Site" placeholder="Search Site" value="" i18n:attributes="placeholder, title"/>
+						<input type="text" name="searchtext" id="searchtext" title="Search Site" placeholder="Search Site" value="" i18n:attributes="placeholder; title"/>
 					</div>
 				</div>
 				<div id="internallinkcontainer" class="widget radioscrolllist input-border"></div>
@@ -59,7 +59,7 @@
 			</div>
 		</div>
 		<div id="details_panel" class="column hide">
-			<h2 i18n:translate="plonebrowser_dlg_preview"></h2>
+			<h2 i18n:translate="plonebrowser_dlg_details">Details</h2>
 			<div class="widget radioscrolllist input-border">
 				<div class="field">
 					<div class="widget">
@@ -89,12 +89,12 @@
 				</div>
 
 				<div class="field">
-					<label id="alignlabel" for="align" i18n:domain="plone.tinymce" i18n:translate="plonebrowser_dlg_align"></label>
+					<label id="alignlabel" for="align" i18n:translate="plonebrowser_dlg_align"></label>
 					<div class="widget">
 						<select id="classes" name="classes">
 							<option value="image-inline" i18n:domain="plone.tinymce" i18n:translate="">Inline</option>
-							<option value="image-left" i18n:domain="plone.tinymce" i18n:translate="plonebrowser_dlg_align_left">Left</option>
-							<option value="image-right" i18n:domain="plone.tinymce" i18n:translate="plonebrowser_dlg_align_right">Right</option>
+							<option value="image-left" i18n:translate="plonebrowser_dlg_align_left"></option>
+							<option value="image-right" i18n:translate="plonebrowser_dlg_align_right"></option>
 						</select>
 					</div>
 				</div>
@@ -174,8 +174,6 @@
 					</select>
 					<input type="text" name="externalurl" id="externalurl" value="" size="30"/>
 					<input type="button" id="previewexternalurl" class="context" name="previewexternalurl" value="Preview" i18n:domain="plone.tinymce" i18n:attributes="value" />
-                    <input type="submit" id="insert-selection" class="context plonebutton" name="insert-external-link" i18n:attributes="value" value="Insert" />
-                    
 				</div>
 			</div>
 
@@ -202,10 +200,6 @@
 					<input type="text" name="mailsubject" id="mailsubject" value="" size="40" />
 				</div>
 			</div>
-                        <div class="field">
-                          <input type="submit" id="insert-selection" class="context plonebutton" name="insert-mailto" i18n:attributes="value" value="OK" />
-                        </div>
-                        
 		</div>
 
 		<div id="anchor_panel" class="column hide">

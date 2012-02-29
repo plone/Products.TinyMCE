@@ -6,9 +6,7 @@
 body {
 background: transparent;
 }
-
-/* Make sure we override #content styles from plone.css properly */
-.dialog-wrapper#content {
+.dialog-wrapper {
 font-size: 110%;
 padding: 1em 1em 0em 1em;
 background: &dtml-backgroundColor;;

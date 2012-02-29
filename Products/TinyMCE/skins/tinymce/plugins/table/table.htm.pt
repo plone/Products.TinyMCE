@@ -17,8 +17,8 @@
 		<form onsubmit="insertTable();return false;" action="#">
 			<div class="tabs">
 					<ul class="formTabs">
-							<li id="general_tab"  aria-controls="general_panel" class="current formTab firstFormTab">
-									<span><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;" i18n:translate="table_dlg_general_tab"></a></span></li>
+							<li id="general_tab"  aria-controls="general_panel" class="formTab firstFormTab">
+									<span><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;" class="selected" i18n:translate="table_dlg_general_tab"></a></span></li>
 							<li id="advanced_tab" aria-controls="advanced_panel" class="formTab lastFormTab">
 									<span><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;" i18n:translate="table_dlg_advanced_tab"></a></span></li>
 					</ul>

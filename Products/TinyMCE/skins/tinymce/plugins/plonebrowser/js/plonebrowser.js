@@ -146,6 +146,7 @@ BrowserDialog.prototype.init = function () {
             switch (jq(this).attr('href')) {
                 case "#internal":
                     self.displayPanel('browse');
+                    self.getCurrentFolderListing();
                     break;
                 case "#external":
                     self.displayPanel('external');
@@ -562,7 +563,7 @@ BrowserDialog.prototype.insertImage = function () {
         'url': jq('#description_href', document).val() + '/tinymce-setDescription',
         'type': 'POST',
         'data': {
-            'description': encodeURIComponent(jq('#description', document).val())
+            'description': jq('#description', document).val()
         }
     });
 
@@ -1020,7 +1021,7 @@ BrowserDialog.prototype.displayPanel = function(panel, upload_allowed) {
         if (jq.inArray(panel, ["upload", "details"]) > -1) {
             jq('#browseimage_panel', document).width(545 - correction_length);
         } else {
-            jq('#browseimage_panel', document).width(750 - correction_length);
+            jq('#browseimage_panel', document).width(780 - correction_length);
         }
         jq('#browseimage_panel', document).removeClass("hide");
     } else {
