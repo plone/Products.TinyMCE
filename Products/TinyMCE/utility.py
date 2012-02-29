@@ -615,10 +615,10 @@ class TinyMCE(SimpleItem):
         h['Print'].append('{ title: "Print", tag: "", className: "-", type: "Print" }')
 
         # Add defaults
-        h['Text'].append('{ title: "' + labels['label_paragraph'] + '", tag: "p", className: "", type: "Text" }')
-        h['Selection'].append('{ title: "' + labels['label_styles'] + '", tag: "", className: "", type: "Selection" }')
-        h['Tables'].append('{ title: "' + labels['label_plain_cell'] + '", tag: "td", className: "", type: "Tables" }')
-        h['Lists'].append('{ title: "' + labels['label_lists'] + '", tag: "dl", className: "", type: "Lists" }')
+        h['Text'].append('{ title: "' + labels['label_paragraph'] + '", tag: "p", className: "-", type: "Text" }')
+        h['Selection'].append('{ title: "' + labels['label_styles'] + '", tag: "", className: "-", type: "Selection" }')
+        h['Tables'].append('{ title: "' + labels['label_plain_cell'] + '", tag: "td", className: "-", type: "Tables" }')
+        h['Lists'].append('{ title: "' + labels['label_lists'] + '", tag: "dl", className: "-", type: "Lists" }')
 
         for i in styles:
             e = i.split('|')
