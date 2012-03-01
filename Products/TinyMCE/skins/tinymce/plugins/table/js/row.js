@@ -14,8 +14,10 @@ function init() {
 
 	// Get table row data
 	var rowtype = trElm.parentNode.nodeName.toLowerCase();
+	var align = dom.getAttrib(trElm, 'align');
 	var valign = dom.getAttrib(trElm, 'valign');
 	var height = trimSize(getStyle(trElm, 'height', 'height'));
+	var className = dom.getAttrib(trElm, 'class');
 	var bgcolor = convertRGBToHex(getStyle(trElm, 'bgcolor', 'backgroundColor'));
 	var backgroundimage = getStyle(trElm, 'background', 'backgroundImage').replace(new RegExp("url\\(['\"]?([^'\"]*)['\"]?\\)", 'gi'), "$1");
 	var id = dom.getAttrib(trElm, 'id');
@@ -54,7 +56,7 @@ function updateAction() {
 	var inst = tinyMCEPopup.editor, dom = inst.dom, trElm, tableElm, formObj = document.forms[0];
 	var action = getSelectValue(formObj, 'action');
 
-	if (!AutoValidator.validate(formObj)) {
+	if ( ((typeof AutoValidator)!=='undefined') && !AutoValidator.validate(formObj)) {
 		tinyMCEPopup.alert(AutoValidator.getErrorMessages(formObj).join('. ') + '.');
 		return false;
 	}

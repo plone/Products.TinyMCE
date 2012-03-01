@@ -8,11 +8,7 @@ function insertTable() {
 	var cols = 2, rows = 2, border = 0, cellpadding = -1, cellspacing = -1, align, width, height, className, caption, frame, rules;
 	var html = '', capEl, elm;
 	var cellLimit, rowLimit, colLimit;
-	if (tinyMCEPopup.getParam('table_firstline_th')) {
-		line_tag = "th";
-	} else {
-		line_tag = "td";
-	}
+
 	tinyMCEPopup.restoreSelection();
 
 	if (!AutoValidator.validate(formObj)) {
@@ -78,7 +74,7 @@ function insertTable() {
 		}
 
 		dom.setAttrib(elm, 'align', align);
-		dom.setAttrib(elm, 'tframe', frame);
+		dom.setAttrib(elm, 'frame', frame);
 		dom.setAttrib(elm, 'rules', rules);
 		dom.setAttrib(elm, 'class', className);
 		dom.setAttrib(elm, 'style', style);
@@ -165,6 +161,7 @@ function insertTable() {
 	if (!isCssSize(border)) {
 		html += makeAttrib('border', border);
 	}
+
 	html += makeAttrib('cellpadding', cellpadding);
 	html += makeAttrib('cellspacing', cellspacing);
 	html += makeAttrib('data-mce-new', '1');
@@ -213,11 +210,10 @@ function insertTable() {
 
 		for (var x=0; x<cols; x++) {
 			if (!tinymce.isIE)
-				html += '<'+line_tag+'><br data-mce-bogus="1"/></'+line_tag+'>';
+				html += '<td><br data-mce-bogus="1"/></td>';
 			else
-				html += '<'+line_tag+'></'+line_tag+'>';
+				html += '<td></td>';
 		}
-		line_tag = "td";
 
 		html += "</tr>";
 	}
@@ -247,8 +243,12 @@ function insertTable() {
 		inst.execCommand('mceInsertContent', false, html);
 
 	tinymce.each(dom.select('table[data-mce-new]'), function(node) {
-		var tdorth = dom.select('td,th', node);
+		// Fixes a bug in IE where the caret cannot be placed after the table if the table is at the end of the document
+		if (tinymce.isIE && node.nextSibling == null) {
+			dom.insertAfter(dom.create('p'), node);
+		}
 
+		var tdorth = dom.select('td,th', node);
 		try {
 			// IE9 might fail to do this selection 
 			inst.selection.setCursorLocation(tdorth[0], 0);
@@ -303,6 +303,15 @@ function init() {
 	var formObj = document.forms[0];
 	var elm = dom.getParent(inst.selection.getNode(), "table");
 
+	/*
+	 * hide class selection
+	 */
+	var classElement = dom.select('#general_panel>div:first', formObj);
+	if (classElement!=null && classElement!=undefined && classElement.length>0) {
+		dom.hide(classElement);
+	}
+	
+	
 	action = tinyMCEPopup.getWindowArg('action');
 
 	if (!action)
@@ -350,7 +359,7 @@ function init() {
 
 	// Update form
 	selectByValue(formObj, 'align', align);
-	selectByValue(formObj, 'frame', frame);
+	selectByValue(formObj, 'tframe', frame);
 	selectByValue(formObj, 'rules', rules);
 	selectByValue(formObj, 'class', className, true, true);
 	formObj.cols.value = cols;
@@ -438,6 +447,8 @@ function changedBorder() {
 			st['border-width'] = '';
 		}
 	}
+
+	formObj.style.value = dom.serializeStyle(st);
 }
 
 function changedColor() {

@@ -16,6 +16,8 @@ function init() {
 	var st = ed.dom.parseStyle(ed.dom.getAttrib(tdElm, "style"));
 
 	// Get table cell data
+	var celltype = tdElm.nodeName.toLowerCase();
+	var align = ed.dom.getAttrib(tdElm, 'align');
 	var valign = ed.dom.getAttrib(tdElm, 'valign');
 	var width = trimSize(getStyle(tdElm, 'width', 'width'));
 	var height = trimSize(getStyle(tdElm, 'height', 'height'));
@@ -29,6 +31,7 @@ function init() {
 	var scope = ed.dom.getAttrib(tdElm, 'scope');
 
 	// Setup form
+	addClassesToList('class', 'table_cell_styles');
 	TinyMCE_EditableSelects.init();
 
 	if (!ed.dom.hasClass(tdElm, 'mceSelected')) {
@@ -60,7 +63,7 @@ function init() {
 function updateAction() {
 	var el, inst = ed, tdElm, trElm, tableElm, formObj = document.forms[0];
 
-	if (!AutoValidator.validate(formObj)) {
+	if ( ((typeof AutoValidator)!=='undefined') && !AutoValidator.validate(formObj)) {
 		tinyMCEPopup.alert(AutoValidator.getErrorMessages(formObj).join('. ') + '.');
 		return false;
 	}
@@ -87,7 +90,28 @@ function updateAction() {
 
 	switch (getSelectValue(formObj, 'action')) {
 		case "cell":
+			var celltype = getSelectValue(formObj, 'celltype');
 			var scope = getSelectValue(formObj, 'scope');
+
+			function doUpdate(s) {
+				if (s) {
+					updateCell(tdElm);
+
+					ed.addVisual();
+					ed.nodeChanged();
+					inst.execCommand('mceEndUndoLevel');
+					tinyMCEPopup.close();
+				}
+			};
+
+			if (ed.getParam("accessibility_warnings", 1)) {
+				if (celltype == "th" && scope == "")
+					tinyMCEPopup.confirm(ed.getLang('table_dlg.missing_scope', '', true), doUpdate);
+				else
+					doUpdate(1);
+
+				return;
+			}
 
 			updateCell(tdElm);
 			break;
@@ -169,13 +193,15 @@ function nextCell(elm) {
 function updateCell(td, skip_id) {
 	var inst = ed;
 	var formObj = document.forms[0];
+	var curCellType = td.nodeName.toLowerCase();
+	var celltype = String(getSelectValue(formObj, 'celltype'));
 	var doc = inst.getDoc();
 	var dom = ed.dom;
 
 	if (!skip_id)
 		dom.setAttrib(td, 'id', formObj.id.value);
 
-	dom.setAttrib(td, 'align', formObj.align.value);
+//	dom.setAttrib(td, 'align', formObj.align.value);
 	dom.setAttrib(td, 'vAlign', formObj.valign.value);
 	dom.setAttrib(td, 'lang', formObj.lang.value);
 	dom.setAttrib(td, 'dir', getSelectValue(formObj, 'dir'));
@@ -206,6 +232,20 @@ function updateCell(td, skip_id) {
 		td.style.backgroundImage = "url('" + formObj.backgroundimage.value + "')";
 	else
 		td.style.backgroundImage = '';
+
+	if (curCellType != celltype && celltype!="") {
+		// changing to a different node type
+		var newCell = doc.createElement(celltype);
+
+		for (var c=0; c<td.childNodes.length; c++)
+			newCell.appendChild(td.childNodes[c].cloneNode(1));
+
+		for (var a=0; a<td.attributes.length; a++)
+			ed.dom.setAttrib(newCell, td.attributes[a].name, ed.dom.getAttrib(td, td.attributes[a].name));
+
+		td.parentNode.replaceChild(newCell, td);
+		td = newCell;
+	}
 
 	dom.setAttrib(td, 'style', dom.serializeStyle(dom.parseStyle(td.style.cssText)));
 
