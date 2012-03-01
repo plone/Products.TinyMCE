@@ -8,6 +8,9 @@ HISTORY
 1.3-beta2 (2012-02-xx)
 ----------------------
 
+- more stable table plugin, ie9 fixes
+  [joka]
+
 - more stable css class listing and tabbing
   [joka]
 
