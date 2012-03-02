@@ -16,6 +16,7 @@ Plone 4
 - Nejc Zupan
 - Domen Kožar (GSOC 2011)
 - Maurits van Rees
+- Tom Gross
 
 Plone 3
 -------
