@@ -1042,7 +1042,8 @@ BrowserDialog.prototype.populateAnchorList = function () {
         title,
         title_match,
         nodes_length,
-        i;
+        i,
+        self = this;
 
     nodes = this.editor.dom.select('a.mceItemAnchor,img.mceItemAnchor');
     nodes_length = nodes.length;
@@ -1073,6 +1074,21 @@ BrowserDialog.prototype.populateAnchorList = function () {
     }
 
     jq('#anchorlinkcontainer', document).html(html);
+    
+    jq('input:radio[name=anchorlink]', document).click(function() {
+    	var selected = jq(this);
+	
+	    // select radio button in folder listing and mark selected image
+	    jq('input:radio[name=anchorlink][value!=' + selected.val() + ']', document)
+	        .parent('.item')
+	        .removeClass('current');
+            selected
+	        .attr('checked', 'checked')
+	        .parent('.item')
+	        .addClass('current');
+	    
+	    jq('input:submit[name=insert-anchor]', document).removeClass('hide');
+    });
 };
 
 /**
