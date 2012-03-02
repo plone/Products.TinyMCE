@@ -1082,7 +1082,7 @@ BrowserDialog.prototype.populateAnchorList = function () {
 	    jq('input:radio[name=anchorlink][value!=' + selected.val() + ']', document)
 	        .parent('.item')
 	        .removeClass('current');
-	    jq('input:radio[name=anchorlink][value=' + selected.val() + ']', document)
+            selected
 	        .attr('checked', 'checked')
 	        .parent('.item')
 	        .addClass('current');
