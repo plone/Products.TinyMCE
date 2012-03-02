@@ -1057,7 +1057,10 @@ BrowserDialog.prototype.populateAnchorList = function () {
     nodes_length = nodes.length;
     if (nodes.length > 0) {
         for (i = 0; i < nodes_length; i++) {
-            title = nodes[i].innerHTML;
+            title = jq(nodes[i]).text().replace(/^\s+|\s+$/g, '');
+            if (title==='') {
+            	continue;
+            }
             title_match = title.match(/mceItemAnchor/);
             if (title_match === null) {
                 name = title.toLowerCase();
