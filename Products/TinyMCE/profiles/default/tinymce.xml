@@ -35,9 +35,9 @@
  </resourcetypes>
  <layout>
   <styles>
-   <element value="Heading|h2|-"/>
-   <element value="Subheading|h3|-"/>
-   <element value="Literal|pre|-"/>
+   <element value="Heading|h2| "/>
+   <element value="Subheading|h3| "/>
+   <element value="Literal|pre| "/>
    <element value="Discreet|span|discreet"/>
    <element value="Pull-quote|blockquote|pullquote"/>
    <element value="Call-out|p|callout"/>
@@ -50,11 +50,11 @@
    <element value="Upper Alpha|ol|listTypeUpperAlpha"/>
    <element value="Lower Roman|ol|listTypeLowerRoman"/>
    <element value="Upper Roman|ol|listTypeUpperRoman"/>
-   <element value="Definition term|dt|-"/>
-   <element value="Definition description|dd|-"/>
+   <element value="Definition term|dt| "/>
+   <element value="Definition description|dd| "/>
    <element value="Odd row|tr|odd"/>
    <element value="Even row|tr|even"/>
-   <element value="Heading cell|th|-"/>
+   <element value="Heading cell|th| "/>
    <element value="Page break (print only)|div|pageBreak"/>
    <element value="Clear floats|div|visualClear"/>
   </styles>
