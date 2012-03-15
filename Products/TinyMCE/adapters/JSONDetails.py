@@ -45,7 +45,6 @@ class JSONDetails(object):
 
         results = {}
         results['title'] = self.context.title_or_id()
-        #results['url'] = self.getSiteRootRelativePath()
         results['url'] = self.context.absolute_url()
         results['description'] = self.context.Description()
         results['uid_relative_url'] = 'resolveuid/' + uuidFor(self.context)
@@ -94,19 +93,3 @@ class JSONDetails(object):
         portal = portal_url.getPortalObject()
         return portal.absolute_url()
 
-    def getSiteRootRelativePath(self):
-        """ Get site root relative path to an item
-
-        @return: Path to the context object, relative to site root, prefixed with a slash.
-        """
-
-        portal_state = getMultiAdapter((self.context, self.context.REQUEST), name=u'plone_portal_state')
-        site = portal_state.portal()
-
-        # Both of these are tuples
-        site_path = site.getPhysicalPath()
-        context_path = self.context.getPhysicalPath()
-
-        relative_path = context_path[len(site_path):]
-
-        return "/" + "/".join(relative_path)
