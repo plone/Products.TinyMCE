@@ -9,7 +9,7 @@ from zope.component import getUtility
 from zope.i18n import translate
 from zope.i18nmessageid import MessageFactory
 from plone.i18n.normalizer.interfaces import IIDNormalizer
-from plone.app.layout.navigation.root import getNavigationRoot
+from plone.app.layout.navigation.root import getNavigationRootObject
 from plone.app.layout.navigation.interfaces import INavigationRoot
 from Products.CMFCore.interfaces._content import IFolderish
 from Products.CMFPlone.interfaces.siteroot import IPloneSiteRoot
@@ -36,8 +36,8 @@ class JSONFolderListing(object):
         """Get breadcrumbs"""
         result = []
 
-        root_url = getNavigationRoot(self.context)
-        root = aq_inner(self.context.restrictedTraverse(root_url))
+        portal_state = self.context.restrictedTraverse('@@plone_portal_state')
+        root = getNavigationRootObject(self.context, portal_state.portal())
         root_url = root.absolute_url()
 
         if path is not None:
@@ -53,7 +53,7 @@ class JSONFolderListing(object):
                 icon = self.folder_icon
             result.append({
                 'title': translate(MessageFactory('plone')('Home'), context=self.context.REQUEST),
-                'url': '/'.join(root.getPhysicalPath()),
+                'url': root_url,
                 'icon': '<img src="%s" width="16" height="16" />' % icon,
             })
 

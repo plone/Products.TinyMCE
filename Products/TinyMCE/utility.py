@@ -22,7 +22,6 @@ try:
     RIGHT_TO_LEFT    # pyflakes
 except ImportError:
     RIGHT_TO_LEFT = ['ar', 'fa', 'he', 'ps']  # not available in plone 3
-from plone.app.layout.navigation.root import getNavigationRootObject
 from plone.outputfilters.filters.resolveuid_and_caption import IImageCaptioningEnabler, IResolveUidsEnabler
 
 from Products.TinyMCE.bbb import implementedOrProvidedBy
@@ -841,16 +840,14 @@ class TinyMCE(SimpleItem):
         except (TypeError, ValueError):
             results['toolbar_width'] = 440
 
+        portal_state = context.restrictedTraverse('@@plone_portal_state')
         # is_rtl handles every possible setting as far as RTL/LTR is concerned
         # pass that to tinmyce
-        if request:
-            portal_state = getMultiAdapter((context, request), name=u'plone_portal_state')
-            results['directionality'] = portal_state.is_rtl() and 'rtl' or 'ltr'
+        results['directionality'] = portal_state.is_rtl() and 'rtl' or 'ltr'
 
-        portal = getToolByName(self, 'portal_url').getPortalObject()
-        results['portal_url'] = aq_inner(portal).absolute_url()
-        nav_root = getNavigationRootObject(context, portal)
-        results['navigation_root_url'] = nav_root.absolute_url()
+        portal = portal_state.portal()
+        results['portal_url'] = portal_state.portal_url()
+        results['navigation_root_url'] = portal_state.navigation_root_url()
 
         if self.content_css and self.content_css.strip() != "":
             results['content_css'] = self.content_css
