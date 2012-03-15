@@ -1,7 +1,6 @@
 """Shortcuts implementation for Plone"""
 
 from Products.TinyMCE.interfaces.utility import _
-from plone.app.layout.navigation.root import getNavigationRoot
 from zope.i18n import translate
 
 
@@ -21,7 +20,9 @@ class HomeShortcut(object):
     title = _(u'Home')
 
     def render(self, context):
+        portal_state = context.restrictedTraverse('@@plone_portal_state') 
         return ["""
         <img src="img/home.png" />
         <a id="home" href="%s">%s</a>
-        """ % (getNavigationRoot(context), translate(self.title, context=context.REQUEST))]
+        """ % (portal_state.navigation_root_url(),
+               translate(self.title, context=context.REQUEST))]
