@@ -90,7 +90,7 @@ function TinyMCEConfig(id) {
             fix_list_elements : false,
             // allow embed tag if user removes it from
             // list of nasty tags - see #10681
-            media_strict: false,
+            media_strict: false
         };
 
         window.tinyMCE.init(init_dict);
