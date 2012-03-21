@@ -1,4 +1,4 @@
-var InitializedTinyMCEInstances = {}
+var InitializedTinyMCEInstances = {};
 
 function TinyMCEConfig(id) {
     this.id = id;
@@ -320,26 +320,29 @@ function TinyMCEConfig(id) {
     this.getSpellchecker = function () {
         var sp = this.widget_config.libraries_spellchecker_choice;
         if ((sp != '') && (sp != 'browser')) {
-            return sp
+            return sp;
         }
         else {
-            return
+            return;
         }
     };
 
     this.geckoSpellcheckEnabled = function () {
-        if (this.widget_config.libraries_spellchecker_choice == 'browser')
-            return true
-        else
-            return false
+        if (this.widget_config.libraries_spellchecker_choice == 'browser') {
+            return true;
+        }
+        else {
+            return false;
+        }
     };
 
     this.getPlugins = function () {
         var plugins = "safari,pagebreak,table,save,advhr,emotions,insertdatetime,preview,media,searchreplace,print,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,inlinepopups,plonestyle,tabfocus,definitionlist,ploneinlinestyles";
 
-        var sp = this.getSpellchecker()
-        if (sp)
+        var sp = this.getSpellchecker();
+        if (sp) {
             plugins += ',' + sp;
+        }
 
         for (var i = 0; i < this.widget_config.customplugins.length; i++) {
             if (this.widget_config.customplugins[i].indexOf('|') == -1) {
@@ -355,19 +358,19 @@ function TinyMCEConfig(id) {
             plugins += ',autoresize';
         }
         return plugins;
-    }
+    };
 }
 
 if (typeof(kukit) != "undefined") {
     kukit.actionsGlobalRegistry.register("init-tinymce", function(oper) {
         var config = new TinyMCEConfig(oper.node.id);
-        delete InitializedTinyMCEInstances[oper.node.id]
+        delete InitializedTinyMCEInstances[oper.node.id];
         config.init();
     });
 
     kukit.actionsGlobalRegistry.register("save-tinymce", function(oper) {
-    	if(tinymce.EditorManager != undefined && tinymce.EditorManager.activeEditor != null){
-    		tinymce.EditorManager.activeEditor.save();
-    	}
+        if(tinymce.EditorManager != undefined && tinymce.EditorManager.activeEditor != null){
+            tinymce.EditorManager.activeEditor.save();
+        }
     });
 }
