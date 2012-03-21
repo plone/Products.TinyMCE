@@ -2,6 +2,15 @@
 HISTORY
 =======
 
+=======
+fix-ie7-1.2.10 branch (unreleased)
+-------------------
+
+- Removed comma at the end of a dict in tiny_mce_init.js. This fixes javascript
+  error on IE7. This was broken in 1.2.10.
+  [vincentfretin]
+
+
 1.2.10 (2012-01-29)
 -------------------
 
