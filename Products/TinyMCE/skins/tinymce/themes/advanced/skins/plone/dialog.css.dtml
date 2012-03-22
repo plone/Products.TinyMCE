@@ -6,11 +6,13 @@
 body {
 background: transparent;
 }
-.dialog-wrapper {
+
+/* Override #content styles (dialog body padding) from plone.css with more accurate selector */
+.dialog-wrapper#content {
 font-size: 110%;
 padding: 1em 1em 0em 1em;
 background: &dtml-backgroundColor;;
-margin: 0!important; /* override Plone css, we don't need additional margin */
+margin: 0!important; 
 }
 
 }

@@ -89,12 +89,12 @@
 				</div>
 
 				<div class="field">
-					<label id="alignlabel" for="align" i18n:translate="plonebrowser_dlg_align"></label>
+					<label id="alignlabel" for="align" i18n:domain="plone.tinymce" i18n:translate="plonebrowser_dlg_align"></label>
 					<div class="widget">
 						<select id="classes" name="classes">
-							<option value="image-inline" i18n:domain="plone.tinymce" i18n:translate="">Inline</option>
-							<option value="image-left" i18n:translate="plonebrowser_dlg_align_left"></option>
-							<option value="image-right" i18n:translate="plonebrowser_dlg_align_right"></option>
+							<option value="image-inline"  i18n:domain="plone.tinymce" i18n:translate="">Inline</option>
+							<option value="image-left" i18n:domain="plone.tinymce" i18n:translate="plonebrowser_dlg_align_left">Left</option>
+							<option value="image-right" i18n:domain="plone.tinymce" i18n:translate="plonebrowser_dlg_align_right">Right</option>
 						</select>
 					</div>
 				</div>
@@ -174,6 +174,7 @@
 					</select>
 					<input type="text" name="externalurl" id="externalurl" value="" size="30"/>
 					<input type="button" id="previewexternalurl" class="context" name="previewexternalurl" value="Preview" i18n:domain="plone.tinymce" i18n:attributes="value" />
+                    
 				</div>
 			</div>
 
@@ -182,6 +183,9 @@
 				<div class="widget">
 					<iframe id="previewexternal" width="100%" height="360" frameborder="0" wrap="soft" dir="ltr" src="" class="input-border" name="previewexternal"></iframe>
 				</div>
+			</div>
+			<div class="field">
+                          <input type="submit" id="insert-selection" class="context plonebutton" name="insert-external-link" i18n:attributes="value" value="OK" />
 			</div>
 		</div>
 
@@ -200,6 +204,10 @@
 					<input type="text" name="mailsubject" id="mailsubject" value="" size="40" />
 				</div>
 			</div>
+                        <div class="field">
+                          <input type="submit" id="insert-selection" class="context plonebutton" name="insert-mailto" i18n:attributes="value" value="OK" />
+                        </div>
+                        
 		</div>
 
 		<div id="anchor_panel" class="column hide">
