@@ -10,6 +10,7 @@ from zope.i18nmessageid import MessageFactory
 from zope.interface import classProvides
 from zope.interface import implements
 from zope.schema.fieldproperty import FieldProperty
+from zope.globalrequest import getRequest
 from AccessControl import ClassSecurityInfo
 from Acquisition import aq_base
 from Acquisition import aq_inner
@@ -750,7 +751,10 @@ class TinyMCE(SimpleItem):
             results['contextmenu'] = False
 
         portal = getToolByName(self, 'portal_url').getPortalObject()
-        results['portal_url'] = aq_inner(portal).absolute_url()
+        #absolute_url doesn't work because this tool is called has utility
+        request = getRequest()
+        portal_path = portal.getPhysicalPath()
+        results['portal_url'] = request.physicalPathToURL(portal_path)
         nav_root = getNavigationRootObject(context, portal)
         results['navigation_root_url'] = nav_root.absolute_url()
 
