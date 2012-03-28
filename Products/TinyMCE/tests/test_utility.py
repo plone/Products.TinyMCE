@@ -158,7 +158,6 @@ class UtilityTestCase(IntegrationTestCase):
             {'size': [768, 768], 'title': 'Large', 'value': '@@images/image/large'}]
         )
 
-<<<<<<< HEAD
     def _get_config(self):
         return {
             'libraries_spellchecker_choice': 'browser',
