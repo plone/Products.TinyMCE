@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import os
+import json
 
 import transaction
 from Products.CMFCore.utils import getToolByName
@@ -157,6 +158,7 @@ class UtilityTestCase(IntegrationTestCase):
             {'size': [768, 768], 'title': 'Large', 'value': '@@images/image/large'}]
         )
 
+<<<<<<< HEAD
     def _get_config(self):
         return {
             'libraries_spellchecker_choice': 'browser',
@@ -198,3 +200,13 @@ class UtilityTestCase(IntegrationTestCase):
     def test_getToolbars(self):
         toolbars = self.utility.getToolbars(self._get_config())
         self.assertEqual(toolbars, ['style,tablecontrol,forecolor,a,a,a,a,a,a,a,a,a,a', 'a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a', 'a', ''])
+
+    def test_content_css_url(self):
+        """https://dev.plone.org/ticket/12800"""
+
+        configuration = self.utility.getConfiguration(self.portal)
+        content_css_url = json.loads(configuration)['content_css']
+        url = '%s/portal_tinymce/@@tinymce-getstyle'%self.portal.absolute_url()
+        self.assertEqual(content_css_url,
+                         url,
+                         msg="content_css has wrong url, reported #12800")
