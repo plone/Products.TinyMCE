@@ -9,6 +9,7 @@ from zope.i18n import translate
 from zope.i18nmessageid import MessageFactory
 from zope.interface import classProvides, implements
 from zope.schema.fieldproperty import FieldProperty
+from zope.globalrequest import getRequest
 from AccessControl import ClassSecurityInfo
 from Acquisition import aq_base, aq_inner, aq_parent
 from OFS.SimpleItem import SimpleItem
@@ -846,7 +847,9 @@ class TinyMCE(SimpleItem):
         results['directionality'] = portal_state.is_rtl() and 'rtl' or 'ltr'
 
         portal = portal_state.portal()
-        results['portal_url'] = portal_state.portal_url()
+        request = getRequest()
+        portal_path = portal.getPhysicalPath()
+        results['portal_url'] = request.physicalPathToURL(portal_path)
         results['navigation_root_url'] = portal_state.navigation_root_url()
 
         if self.content_css and self.content_css.strip() != "":
