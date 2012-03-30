@@ -5,6 +5,11 @@ HISTORY
 1.2.11 (unreleased)
 -------------------
 
+- Determine mimetype correctly for plone.app.textfield RichText widgets with
+  ignoreContext = True (such as on add forms).
+  (Requires plone.app.textfield >= 1.1.1)
+  [davisagli]
+
 - Removed comma at the end of a dict in tiny_mce_init.js. This fixes javascript
   error on IE7. This was broken in 1.2.10.
   [vincentfretin]
