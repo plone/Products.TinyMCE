@@ -38,6 +38,14 @@ _ = MessageFactory('plone.tinymce')
 BUTTON_WIDTHS = {'style': 150, 'forecolor': 32, 'backcolor': 32, 'tablecontrols': 285}
 
 
+try:
+    from plone.app.textfield.interfaces import IRichText
+except ImportError:
+    from zope.interface import Interface
+    class IRichText(Interface):
+        pass
+
+
 def form_adapter(context):
     """Form Adapter"""
     return getToolByName(context, 'portal_tinymce')
@@ -671,18 +679,34 @@ class TinyMCE(SimpleItem):
         return [','.join(toolbar) for toolbar in t]
 
     security.declareProtected('View', 'getContentType')
-    def getContentType(self, object=None, fieldname=None):
+    def getContentType(self, object=None, field=None, fieldname=None):
         context = aq_base(object)
-        if IBaseObject.providedBy(context):
+        if context is not None and IBaseObject.providedBy(context):
             # support Archetypes fields
-            if fieldname is None:
-                field = context.getPrimaryField()
-            else:
+            if field is not None:
+                pass
+            elif fieldname is not None:
                 field = context.getField(fieldname) or getattr(context, fieldname, None)
+            else:
+                field = context.getPrimaryField()
             if field and hasattr(aq_base(field), 'getContentType'):
                 return field.getContentType(context)
-        elif '.widgets.' in fieldname:
+        elif IRichText.providedBy(field):
             # support plone.app.textfield RichTextValues
+
+            # First try to get a stored value and check its mimetype.
+            mimetype = None
+            if context is not None:
+                value = getattr(context, fieldname, None)
+                mimetype = getattr(value, 'mimeType', None)
+
+            # Fall back to the field's default mimetype
+            if mimetype is None:
+                mimetype = field.default_mime_type
+            return mimetype
+        elif context is not None and fieldname is not None and '.widgets.' in fieldname:
+            # We don't have the field object but we can at least try
+            # to get the mimetype from an attribute on the object
             fieldname = fieldname.split('.widgets.')[-1]
             field = getattr(context, fieldname, None)
             mimetype = getattr(field, 'mimeType', None)
