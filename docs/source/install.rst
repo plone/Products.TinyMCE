@@ -1,8 +1,8 @@
 Installation
 ============
 
-Latests version
----------------
+Latest version
+--------------
 
 - Add Products.TinyMCE in your buildout.cfg to the eggs attributes
 - Run buildout and (re)start Zope
