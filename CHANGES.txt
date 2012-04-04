@@ -5,6 +5,14 @@ HISTORY
 1.2.11 (unreleased)
 -------------------
 
+- Fix original scale (dexterity-based images need 'my_image/@@images/image' instead
+  of just 'my_image')
+  [pbauer]
+
+- Allow upload of dexterity based images. This is aimed at plone.app.contentypes 
+  but should work with all dexterity bases-images.
+  [pbauer] 
+
 - Determine mimetype correctly for plone.app.textfield RichText widgets with
   ignoreContext = True (such as on add forms).
   (Requires plone.app.textfield >= 1.1.1)
