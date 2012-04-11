@@ -1,13 +1,25 @@
 from Acquisition import aq_inner
 from Acquisition import aq_parent
 from zExceptions import BadRequest
+from zope.app.content import queryContentType
 from zope.interface import implements
 from zope.component import getUtility
+from zope.schema import getFieldsInOrder
 
 from Products.CMFCore.utils import getToolByName
 from Products.CMFCore.interfaces._content import IFolderish
 from plone.outputfilters.browser.resolveuid import uuidFor
 
+import pkg_resources
+try:
+    pkg_resources.get_distribution('plone.dexterity')
+except pkg_resources.DistributionNotFound:
+    pass
+else:
+    from plone.dexterity.interfaces import IDexterityContent
+    from plone.namedfile.interfaces import INamedImageField, INamedBlobImageField
+    from plone.rfc822.interfaces import IPrimaryFieldInfo
+    
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.adapters.interfaces.Upload import IUpload
 from Products.TinyMCE import TMCEMessageFactory as _
@@ -117,10 +129,12 @@ class Upload(object):
                     newid = id
 
                 obj = getattr(context, newid, None)
-
-                # set primary field
-                pf = obj.getPrimaryField()
-                pf.set(obj, request['uploadfile'])
+                if IDexterityContent.providedBy(obj):
+                    if not self.setDexterityImage(obj):
+                        return self.errorMessage(_("The content-type '%s' has no image-field!" % metatype))
+                else:
+                    pf = obj.getPrimaryField()
+                    pf.set(obj, request['uploadfile'])
                 break
 
             except ValueError:
@@ -154,6 +168,46 @@ class Upload(object):
             return self.okMessage("resolveuid/%s" % (uuidFor(obj)))
 
         return self.okMessage("%s" % (obj.absolute_url()))
+
+    def setDexterityImage(self, obj):
+        """ Set the image-field of dexterity-based types 
+        
+        This works with the "Image"-type of plone.app.contenttypes and has 
+        fallbacks for other implementations of image-types with dexterity.
+
+        """ 
+        request = self.context.REQUEST
+        field_name = ''
+        info = ''
+        try:
+            # Use the primary field if it's an image-field
+            info = IPrimaryFieldInfo(obj, None)
+        except TypeError:
+            # ttw-types without a primary field throw a TypeError on 
+            # IPrimaryFieldInfo(obj, None) 
+            pass
+        if info:
+            field = info.field
+            if INamedImageField.providedBy(field):
+                field_name = info.fieldname
+        if not field_name:
+            # Use the first image-field in the schema
+            obj_schema = queryContentType(obj)
+            obj_fields = getFieldsInOrder(obj_schema)
+            for field_info in obj_fields:
+                field = field_info[1]
+                field_schema = getattr(field, 'schema', None)
+                if field_schema and field_schema.getName() in ['INamedBlobImage',
+                                                               'INamedImage']:
+                     field_name = field_info[0]
+                     break
+        if not field_name:
+            return False
+        else:
+            # Create either a NamedBlobImage or a NamedImage
+            setattr(obj, field_name, field._type(request['uploadfile'].read(),
+                                                 filename=unicode(id)))
+        return True
 
     def setDescription(self, description):
         self.context.setDescription(description)
