@@ -4,7 +4,6 @@ from zExceptions import BadRequest
 from zope.app.content import queryContentType
 from zope.interface import implements
 from zope.component import getUtility
-from zope.component import getMultiAdapter
 from zope.schema import getFieldsInOrder
 
 from Products.CMFCore.utils import getToolByName
@@ -18,7 +17,6 @@ except pkg_resources.DistributionNotFound:
     pass
 else:
     from plone.dexterity.interfaces import IDexterityContent
-    from plone.namedfile import NamedBlobImage, NamedImage
     from plone.namedfile.interfaces import INamedImageField, INamedBlobImageField
     from plone.rfc822.interfaces import IPrimaryFieldInfo
     
@@ -132,7 +130,7 @@ class Upload(object):
 
                 obj = getattr(context, newid, None)
                 if IDexterityContent.providedBy(obj):
-                    if not self.setDexterityImage(obj, id, metatype):
+                    if not self.setDexterityImage(obj):
                         return self.errorMessage(_("The content-type '%s' has no image-field!" % metatype))
                 else:
                     pf = obj.getPrimaryField()
@@ -171,16 +169,18 @@ class Upload(object):
 
         return self.okMessage("%s" % (obj.absolute_url()))
 
-    def setDexterityImage(self, obj, id, metatype):
-        """ Deal with dexterity-types. This works with the "Image"-Type of 
-            plone.app.contenttypes and has fallbacks for other implementations
-            of image-types.
+    def setDexterityImage(self, obj):
+        """ Set the image-field of dexterity-based types 
+        
+        This works with the "Image"-type of plone.app.contenttypes and has 
+        fallbacks for other implementations of image-types with dexterity.
+
         """ 
         request = self.context.REQUEST
         field_name = ''
         info = ''
         try:
-            # use the primary field if it's an image-field
+            # Use the primary field if it's an image-field
             info = IPrimaryFieldInfo(obj, None)
         except TypeError:
             # ttw-types without a primary field throw a TypeError on 
@@ -191,19 +191,22 @@ class Upload(object):
             if INamedImageField.providedBy(field):
                 field_name = info.fieldname
         if not field_name:
-            # use the first image-field in the schema
+            # Use the first image-field in the schema
             obj_schema = queryContentType(obj)
             obj_fields = getFieldsInOrder(obj_schema)
             for field_info in obj_fields:
                 field = field_info[1]
                 field_schema = getattr(field, 'schema', None)
-                if field_schema and field_schema.getName() in ['INamedBlobImage', 'INamedImage']:
+                if field_schema and field_schema.getName() in ['INamedBlobImage',
+                                                               'INamedImage']:
                      field_name = field_info[0]
                      break
         if not field_name:
             return False
         else:
-            setattr(obj, field_name, field._type(request['uploadfile'].read(), filename=unicode(id)))
+            # Create either a NamedBlobImage or a NamedImage
+            setattr(obj, field_name, field._type(request['uploadfile'].read(),
+                                                 filename=unicode(id)))
         return True
 
     def setDescription(self, description):
