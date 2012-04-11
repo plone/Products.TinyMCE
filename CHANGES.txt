@@ -5,6 +5,11 @@ HISTORY
 1.2.11 (unreleased)
 -------------------
 
+- Fixed AttributeError: ``NoneType`` object has no attribute
+  ``physicalPathToURL`` when getRequest cannot get a request.  Use the
+  REQUEST from the context in that case.
+  [maurits]
+
 - Determine mimetype correctly for plone.app.textfield RichText widgets with
   ignoreContext = True (such as on add forms).
   (Requires plone.app.textfield >= 1.1.1)

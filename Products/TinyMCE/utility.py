@@ -777,6 +777,8 @@ class TinyMCE(SimpleItem):
         portal = getToolByName(self, 'portal_url').getPortalObject()
         #absolute_url doesn't work because this tool is called has utility
         request = getRequest()
+        if request is None:
+            request = context.REQUEST
         portal_path = portal.getPhysicalPath()
         results['portal_url'] = request.physicalPathToURL(portal_path)
         nav_root = getNavigationRootObject(context, portal)
