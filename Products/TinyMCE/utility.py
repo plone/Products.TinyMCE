@@ -4,12 +4,11 @@ try:
 except ImportError:
     import json
 from types import StringTypes
-from zope.component import getUtilitiesFor, getUtility, queryUtility, getMultiAdapter
+from zope.component import getUtilitiesFor, queryUtility
 from zope.i18n import translate
 from zope.i18nmessageid import MessageFactory
 from zope.interface import classProvides, implements
 from zope.schema.fieldproperty import FieldProperty
-from zope.globalrequest import getRequest
 from AccessControl import ClassSecurityInfo
 from Acquisition import aq_base, aq_inner, aq_parent
 from OFS.SimpleItem import SimpleItem
@@ -41,7 +40,7 @@ BUTTON_WIDTHS = {'style': 150, 'forecolor': 32, 'backcolor': 32, 'tablecontrols'
 
 def form_adapter(context):
     """Form Adapter"""
-    return getUtility(ITinyMCE)
+    return getToolByName(context, 'portal_tinymce')
 
 
 class TinyMCE(SimpleItem):
@@ -847,7 +846,7 @@ class TinyMCE(SimpleItem):
         results['directionality'] = portal_state.is_rtl() and 'rtl' or 'ltr'
 
         portal = portal_state.portal()
-        request = getRequest()
+        request = context.REQUEST
         portal_path = portal.getPhysicalPath()
         results['portal_url'] = request.physicalPathToURL(portal_path)
         results['navigation_root_url'] = portal_state.navigation_root_url()

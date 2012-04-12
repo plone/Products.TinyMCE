@@ -7,13 +7,10 @@ except ImportError:
 from Acquisition import aq_inner
 
 from zope.interface import implements
-from zope.component import getUtility
-from zope.component import getMultiAdapter
 
 from Products.CMFCore.utils import getToolByName
 
 from Products.TinyMCE.adapters.interfaces.JSONDetails import IJSONDetails
-from Products.TinyMCE.interfaces.utility import ITinyMCE
 
 from plone.outputfilters.browser.resolveuid import uuidFor
 
@@ -35,7 +32,7 @@ class JSONDetails(object):
         anchor_portal_types = {}
         for apt in utility.containsanchors.splitlines():
             if apt and '|' in apt:
-                type_, field  = apt.split('|', 1)
+                type_, field = apt.split('|', 1)
             else:
                 type_ = apt
                 field = ''
@@ -92,4 +89,3 @@ class JSONDetails(object):
         portal_url = getToolByName(self.context, 'portal_url')
         portal = portal_url.getPortalObject()
         return portal.absolute_url()
-

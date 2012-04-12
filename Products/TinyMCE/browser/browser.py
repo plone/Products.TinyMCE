@@ -3,7 +3,7 @@ import httplib
 from Acquisition import aq_inner
 
 from zope.interface import implements
-from zope.component import getUtility, queryUtility
+from zope.component import queryUtility
 from zope.component import getMultiAdapter
 
 from Products.Five.browser import BrowserView
@@ -138,7 +138,7 @@ class ATDProxyView(object):
         """
         data = self.request._file.read()
 
-        utility = getUtility(ITinyMCE)
+        utility = getToolByName(self.context, 'portal_tinymce')
         service_url = utility.libraries_atd_service_url
         service = httplib.HTTPConnection(service_url)
 

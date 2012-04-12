@@ -5,6 +5,11 @@ HISTORY
 1.3-beta2 (2012-02-xx)
 ----------------------
 
+- use getToolByName instead of getUtility for portal_tinymce.
+  Seems like getUtility will strip request object from context
+  when doing acqusition chain.
+  [iElectric]
+
 - images now have title and alt attributes when rendered https://dev.plone.org/ticket/12322
   [iElectric]
 
