@@ -5,6 +5,12 @@ HISTORY
 1.2.11 (unreleased)
 -------------------
 
+- Fixed support IE9 and up TinyMCE version to 3.4.9.
+  [cleberjsantos]
+
+- Added minify Js base62 encoded.
+  [cleberjsantos]
+
 - Determine mimetype correctly for plone.app.textfield RichText widgets with
   ignoreContext = True (such as on add forms).
   (Requires plone.app.textfield >= 1.1.1)
