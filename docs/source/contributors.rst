@@ -17,6 +17,7 @@ Plone 4
 - Domen Kožar (GSOC 2011)
 - Maurits van Rees
 - Tom Gross
+- Philip Bauer
 
 Plone 3
 -------
