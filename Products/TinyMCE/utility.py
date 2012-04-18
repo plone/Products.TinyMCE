@@ -35,6 +35,7 @@ from Products.TinyMCE.interfaces.utility import ITinyMCEContentBrowser
 
 
 _ = MessageFactory('plone.tinymce')
+_p = MessageFactory('plone')
 BUTTON_WIDTHS = {'style': 150, 'forecolor': 32, 'backcolor': 32, 'tablecontrols': 285}
 
 
@@ -743,7 +744,7 @@ class TinyMCE(SimpleItem):
         labels['label_browser'] = translate(_('Browser'), context=request)
         labels['label_shortcuts'] = translate(_('Shortcuts'), context=request)
         labels['label_search_results'] = translate(_('Search results:'), context=request)
-        labels['label_internal_path'] = translate(_('You are here:'), context=request)
+        labels['label_internal_path'] = translate(_p('you_are_here'), context=request)
         results['labels'] = labels
 
         # Add styles to results
