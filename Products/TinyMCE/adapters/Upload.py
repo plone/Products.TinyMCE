@@ -14,8 +14,10 @@ import pkg_resources
 try:
     pkg_resources.get_distribution('plone.dexterity')
 except pkg_resources.DistributionNotFound:
+    HAS_DEXTERITY = False
     pass
 else:
+    HAS_DEXTERITY = True
     from plone.dexterity.interfaces import IDexterityContent
     from plone.namedfile.interfaces import INamedImageField, INamedBlobImageField
     from plone.rfc822.interfaces import IPrimaryFieldInfo
@@ -129,7 +131,7 @@ class Upload(object):
                     newid = id
 
                 obj = getattr(context, newid, None)
-                if IDexterityContent.providedBy(obj):
+                if HAS_DEXTERITY and IDexterityContent.providedBy(obj):
                     if not self.setDexterityImage(obj):
                         return self.errorMessage(_("The content-type '%s' has no image-field!" % metatype))
                 else:
