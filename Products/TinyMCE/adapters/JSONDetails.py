@@ -61,7 +61,7 @@ class JSONDetails(object):
             original_size = images.getImageSize(field_name)
             if original_size[0] < 0 or original_size[1] < 0:
                 original_size = (0, 0)
-            scales.insert(0, {'value': '@@images/%s' % field_name,
+            scales.insert(0, {'value': '',
                               'title': 'Original',
                               'size': original_size})
             results['scales'] = scales
