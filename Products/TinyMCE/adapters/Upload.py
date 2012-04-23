@@ -19,7 +19,7 @@ except pkg_resources.DistributionNotFound:
 else:
     HAS_DEXTERITY = True
     from plone.dexterity.interfaces import IDexterityContent
-    from plone.namedfile.interfaces import INamedImageField, INamedBlobImageField
+    from plone.namedfile.interfaces import INamedImageField
     from plone.rfc822.interfaces import IPrimaryFieldInfo
     
 from Products.TinyMCE.interfaces.utility import ITinyMCE
