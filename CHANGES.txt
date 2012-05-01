@@ -5,7 +5,12 @@ HISTORY
 1.2.12 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Add a missing ``nocall`` to prevent accidental rendering of the
+  object passed to the widget.
+  [sunew]
+
+- Fix accidental dependency on plone.namedfile.
+  [thet]
 
 
 1.2.11 (2012-04-18)
