@@ -5,7 +5,8 @@ HISTORY
 1.2.13 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix wrong iso-8859-1 encoding of certain templates for diazo compatibility.
+  [jone]
 
 
 1.2.12 (2012-05-08)
@@ -22,13 +23,13 @@ HISTORY
 1.2.11 (2012-04-18)
 -------------------
 
-- Fix original scale (dexterity-based images need 'my_image/@@images/image' 
+- Fix original scale (dexterity-based images need 'my_image/@@images/image'
   instead of just 'my_image')
   [pbauer]
 
 - Allow upload of dexterity based images. This is aimed at
   plone.app.contentypes but should work with all dexterity bases-images.
-  [pbauer] 
+  [pbauer]
 
 - Fixed AttributeError: ``NoneType`` object has no attribute
   ``physicalPathToURL`` when getRequest cannot get a request.  Use the
