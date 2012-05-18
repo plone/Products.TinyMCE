@@ -13,16 +13,15 @@ HISTORY
   plone.app.contentypes but should work with all dexterity bases-images.
   [pbauer]
 
-- #10039: Visual editor should set writing direction based on current language,
-  not site preference
+- Set visual editor writing direction based on current language, not site preference. This closes ticket #10039.
   [iElectric]
 
-- use getToolByName instead of getUtility for portal_tinymce.
+- Use getToolByName instead of getUtility for portal_tinymce.
   Seems like getUtility will strip request object from context
   when doing acqusition chain.
   [iElectric]
 
-- images now have title and alt attributes when rendered https://dev.plone.org/ticket/12322
+- Images now have title and alt attributes when rendered. This closes ticket #12322
   [iElectric]
 
 - Visual editor should set writing direction based on current language, not site preference
