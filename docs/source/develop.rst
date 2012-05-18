@@ -1,4 +1,4 @@
-.. developer-manual:
+.. _developer-manual:
 
 Developing TinyMCE
 ^^^^^^^^^^^^^^^^^^
@@ -18,7 +18,12 @@ If you are on a Mac, install `apache-ant` from macports. Otherwise:
 First start
 -----------
 
-Then fork both https://github.com/plone/Products.TinyMCE and
+TinyMCE integration in Plone has two core packages:
+
+* `Products.TinyMCE`: Plone integration
+* `tinymce`: raw tinymce source files
+
+Fork both packages: https://github.com/plone/Products.TinyMCE and
 https://github.com/collective/tinymce. Continue with cloning your fork
 of ``Products.TinyMCE`` to your local machine::
 
@@ -37,10 +42,8 @@ Cool, you are now ready to build your development environment::
     $ python2.6 bootstrap.py
     $ bin/buildout
 
-What follows is going into src/tinymce, running some scripts to build TinyMCE
-and copy them in place where Plone can use them. Luckily, these steps are all
-covered for by a convenience script - ``upgrade_tinymce.sh`` - which you
-just need to run::
+What follows is going into src/tinymce, running a script to build TinyMCE
+and copy them in `skisn` directory where Plone can use them. To do so run::
 
     $ ./upgrade_tinymce.sh
 
@@ -48,6 +51,18 @@ Ok, ready to start Zope and apply upgrade steps to your site. Once started go to
 http://localhost:8080/Plone/portal_setup/manage_upgrades and choose
 ``Products.TinyMCE:TinyMCE`` as a profile. If upgrades are available, run them.
 If you see ``No upgrade avaiable`` you don't need to run anything.
+
+# TODO: difference using development version and developing tinymce
+
+Upgrading
+*********
+
+When you upgrade Products.TinyMCE you need to run
+the upgrade steps in portal_setup in ZMI.
+
+* Go to /Plone/portal_setup/manage_upgrades
+* Run upgrade steps for Products.TinyMCE
+
 
 After each change
 -----------------
@@ -63,8 +78,8 @@ restart Plone
 
     Never change files directly in skins, but rather in src/tinymce/
 
-Debug build
--------------
+Debugging tinymce javascript
+----------------------------
 
 You can have unobfuscated TinyMCE available for your Plone for debugging in two ways 
 
@@ -140,10 +155,39 @@ recompile .mo files::
     cd Products/TinyMCE/locales/<your_language>/LC_MESSAGES
     msgfmt -o plone.tinymce.mo plone.tinymce.po
 
-Translating style names
-==========================
+Update language files for TinyMCE core
+--------------------------------------
 
-How????
+Whenever we upgrade to a new version of TinyMCE, we also need to fetch
+the latest language files for TinyMCE core and convert them to .po files,
+that Plone can use. You do that by using the scripts in
+``Products/TinyMCE/utils``::
+
+    # download XML language files
+    $ cd Products/TinyMCE/utils
+    $ python wget-xml.py
+
+    # convert downloaded xml files into .po files
+    $ python generate-po.py
+
+    # compile .mo files out of .po files
+    $ python compile-po.py
+
+    # create tinymce.pot which is needed for pobuddy.py support
+    $ cp ../locales/en/LC_MESSAGES/tinymce.po ../locales/tinymce.pot
+
+Compile translation files
+-------------------------
+
+A one-liner to compile all translation files goes a little something like this::
+
+    $ cd Products/TinyMCE/locales
+    $ for po in `find . -name "*.po"` ; do msgfmt -o `dirname $po`/`basename $po .po`.mo $po; done
+
+Translating style names
+=======================
+
+TODO: How????
 
 Common pitfalls
 ---------------
@@ -195,36 +239,6 @@ Ignore whitespace makes sure different lineendings are not an issue while mergin
 PS: It is highly recommended to use meld for merging::
 
     $ git config --global merge.tool meld
-
-
-Update language files for TinyMCE core
---------------------------------------
-
-Whenever we upgrade to a new version of TinyMCE, we also need to fetch
-the latest language files for TinyMCE core and convert them to .po files,
-that Plone can use. You do that by using the scripts in
-``Products/TinyMCE/utils``::
-
-    # download XML language files
-    $ cd Products/TinyMCE/utils
-    $ python wget-xml.py
-
-    # convert downloaded xml files into .po files
-    $ python generate-po.py
-
-    # compile .mo files out of .po files
-    $ python compile-po.py
-
-    # create tinymce.pot which is needed for pobuddy.py support
-    $ cp ../locales/en/LC_MESSAGES/tinymce.po ../locales/tinymce.pot
-
-Compile translation files
--------------------------
-
-A one-liner to compile all translation files goes a little something like this::
-
-    $ cd Products/TinyMCE/locales
-    $ for po in `find . -name "*.po"` ; do msgfmt -o `dirname $po`/`basename $po .po`.mo $po; done
 
 
 Releasing TinyMCE
