@@ -5,6 +5,14 @@ HISTORY
 1.3-beta2 (2012-02-xx)
 ----------------------
 
+- Fix original scale (dexterity-based images need 'my_image/@@images/image'
+  instead of just 'my_image')
+  [pbauer]
+
+- Allow upload of dexterity based images. This is aimed at
+  plone.app.contentypes but should work with all dexterity bases-images.
+  [pbauer]
+
 - use getToolByName instead of getUtility for portal_tinymce.
   Seems like getUtility will strip request object from context
   when doing acqusition chain.

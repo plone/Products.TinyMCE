@@ -1,10 +1,10 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2011-12-19 15:23+0000\n"
-"PO-Revision-Date: 2011-01-05 15:28+0100\n"
+"PO-Revision-Date: 2012-04-23 15:36+0100\n"
 "Last-Translator: Mikel Larreategi <mlarreategi@codesyntax.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language-Team: eu <eu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,6 +13,7 @@ msgstr ""
 "Language-Name: Basque\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone.tinymce\n"
+"X-Poedit-Language: Basque\n"
 
 #: ../utility.py:739
 msgid "(remove style)"
@@ -20,15 +21,15 @@ msgstr "Estiloa kendua"
 
 #: ../utility.py:738
 msgid "Add new File"
-msgstr ""
+msgstr "Fitxategi berria gehitu"
 
 #: ../utility.py:737
 msgid "Add new Image"
-msgstr ""
+msgstr "Irudi berria gehitu"
 
 #: ../interfaces/utility.py:308
 msgid "After the deadline (FLOSS)"
-msgstr ""
+msgstr "After the deadline (FLOSS)"
 
 #: ../interfaces/utility.py:159
 msgid "Align center"
@@ -52,19 +53,19 @@ msgstr "Irudi-oinak sartzea aktibatu"
 
 #: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:32
 msgid "Anchor"
-msgstr ""
+msgstr "Aingura"
 
 #: ../interfaces/utility.py:325
 msgid "AtD Error types to show"
-msgstr ""
+msgstr "Erakutsiko diren AtDren erroreak"
 
 #: ../interfaces/utility.py:314
 msgid "AtD Ignore strings"
-msgstr ""
+msgstr "AtDk kasu egingo ez dien testuak"
 
 #: ../interfaces/utility.py:338
 msgid "AtD Service URL"
-msgstr ""
+msgstr "AtDren URLa"
 
 #: ../interfaces/utility.py:151
 msgid "Backcolor"
@@ -76,11 +77,11 @@ msgstr "Beltza"
 
 #: ../utility.py:750
 msgid "Browser"
-msgstr ""
+msgstr "Nabigatzailea"
 
 #: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:274
 msgid "CSS Style"
-msgstr ""
+msgstr "CSS estiloa"
 
 msgid "Call-out"
 msgstr "Zita"
@@ -103,7 +104,7 @@ msgstr "Kodea garbitu"
 
 #: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:43
 msgid "Clear"
-msgstr ""
+msgstr "Garbitu"
 
 msgid "Clear floats"
 msgstr "Float elementuak garbitu"
@@ -118,7 +119,7 @@ msgstr "Objektuak ditu"
 
 #: ../browser/controlpanel.py:40
 msgid "Content Browser"
-msgstr ""
+msgstr "Eduki-bilatzailea"
 
 #: ../interfaces/utility.py:87
 msgid "Copy"
@@ -143,7 +144,7 @@ msgstr "Moztu"
 
 #: ../interfaces/utility.py:304
 msgid "Default browser spellchecker"
-msgstr ""
+msgstr "Nabigatzaileko defektuzkoa"
 
 msgid "Definition description"
 msgstr "Definizio-deskribapena"
@@ -162,7 +163,7 @@ msgstr "Deskribapena"
 
 #: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:67
 msgid "Details"
-msgstr ""
+msgstr "Xehetasunak"
 
 msgid "Disc"
 msgstr "Diskoa"
@@ -189,7 +190,7 @@ msgstr "Editorearen zabalera"
 
 #: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:28
 msgid "Email"
-msgstr ""
+msgstr "E-posta"
 
 #: ../interfaces/utility.py:235
 msgid "Emotions"
@@ -201,7 +202,7 @@ msgstr "Editorearen leihoaren tamaina automatikoki aldatzea aktibatu."
 
 #: ../interfaces/utility.py:45
 msgid "Enable contextmenu"
-msgstr ""
+msgstr "Kontestu-menua aktibatu"
 
 #: ../interfaces/utility.py:23
 msgid "Enable resizing the editor window."
@@ -258,7 +259,7 @@ msgstr "Kanpoko lotura"
 
 #: ../interfaces/utility.py:439
 msgid "External link preview"
-msgstr ""
+msgstr "Kanpo-loturaren aurrebista"
 
 msgid "Fancy grid listing"
 msgstr "Arrunta"
@@ -297,7 +298,7 @@ msgstr "Hasiera"
 
 #: ../utility.py:735
 msgid "Image Browser"
-msgstr ""
+msgstr "Irudi-bilatzailea"
 
 #: ../interfaces/utility.py:378
 msgid "Image Objects"
@@ -305,7 +306,7 @@ msgstr "Irudiak"
 
 #: ../interfaces/utility.py:417
 msgid "Image Shortcuts"
-msgstr ""
+msgstr "Irudien-lasterbideak"
 
 #: ../interfaces/utility.py:354
 msgid "Images will be automatically captioned."
@@ -350,7 +351,7 @@ msgstr "Ordua sartu"
 
 #: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:5
 msgid "Insert/Edit"
-msgstr ""
+msgstr "Txertatu/Editatu"
 
 #: ../interfaces/utility.py:203
 msgid "Insert/edit anchor"
@@ -374,7 +375,7 @@ msgstr "Kanpoko kodea sartu/editatu"
 
 #: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:20
 msgid "Internal"
-msgstr ""
+msgstr "Barnekoa"
 
 msgid "Invisible grid"
 msgstr "Ertz gabeko taula"
@@ -394,15 +395,15 @@ msgstr "Liburutegiak"
 
 #: ../utility.py:736
 msgid "Link Browser"
-msgstr ""
+msgstr "Lotura-bilatzailea"
 
 #: ../interfaces/utility.py:409
 msgid "Link Shortcuts"
-msgstr ""
+msgstr "Loturen lasterbideak"
 
 #: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:254
 msgid "Link Title"
-msgstr ""
+msgstr "Loturaren izenburua"
 
 #. Default: "Link to anchor"
 #: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:225
@@ -415,15 +416,15 @@ msgstr "Lotura egin dakieken elementuak"
 
 #: ../interfaces/utility.py:418
 msgid "List of shortcuts to appear in image browser for quick navigation"
-msgstr ""
+msgstr "Irudi-bilatzeailean agertuko diren lasterbideak"
 
 #: ../interfaces/utility.py:410
 msgid "List of shortcuts to appear in link browser for quick navigation."
-msgstr ""
+msgstr "Lotura-bilatzeailean agertuko diren lasterbideak"
 
 #: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:48
 msgid "List view"
-msgstr ""
+msgstr "Zerrenda bista"
 
 #: ../utility.py:746
 msgid "Lists"
@@ -440,7 +441,7 @@ msgstr "Zenbaki erromatar xeheak"
 
 #: ../interfaces/utility.py:440
 msgid "Modern browsers allow webpages to block such feature. Some webpages may not be displayed in the preview."
-msgstr ""
+msgstr "Nabigatzaile berrienek webguneek ezaugarri hau blokeatzea ahalbidetzen dute. Webgune batzuk ez dira aurrebistan azalduko."
 
 #: ../interfaces/utility.py:401
 msgid "Named"
@@ -460,7 +461,7 @@ msgstr "Parrafo arrunta"
 
 #: ../interfaces/utility.py:432
 msgid "Number of columns in thumbnails mode"
-msgstr ""
+msgstr "Iruditxoen bistaren zutabe kopurua"
 
 msgid "Numbers"
 msgstr "Zenbakiak"
@@ -471,7 +472,7 @@ msgstr "Zenbakia"
 
 #: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:244
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 msgid "Odd row"
 msgstr "Lerro bakoitia"
@@ -482,7 +483,7 @@ msgstr "Ordenatutako zerrenda"
 
 #: ../utility.py:188
 msgid "Original"
-msgstr ""
+msgstr "Jatorrizkoa"
 
 #: ../interfaces/utility.py:183
 msgid "Outdent"
@@ -505,7 +506,7 @@ msgstr "Wordetik itsatsi"
 
 #: ../interfaces/utility.py:74
 msgid "Place toolbar on top of the page"
-msgstr ""
+msgstr "Tresna-barra orrialdearen goiko aldean kokatu"
 
 #: ../utility.py:741
 msgid "Plain cell"
@@ -518,7 +519,7 @@ msgstr "Aurreikusi"
 
 #: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:192
 msgid "Preview URL"
-msgstr ""
+msgstr "Weba aurreikusi"
 
 #: ../interfaces/utility.py:247
 #: ../utility.py:747
@@ -554,11 +555,11 @@ msgstr "Gorde"
 
 #: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:44
 msgid "Search"
-msgstr ""
+msgstr "Bilatu"
 
 #: ../utility.py:752
 msgid "Search results:"
-msgstr ""
+msgstr "Bilaketare emaitzak:"
 
 #: ../interfaces/utility.py:119
 msgid "Select Style"
@@ -574,7 +575,7 @@ msgstr "TinyMCE editorearen ezarpenak"
 
 #: ../utility.py:751
 msgid "Shortcuts"
-msgstr ""
+msgstr "Lasterbideak"
 
 #: ../interfaces/utility.py:255
 msgid "Spellchecker"
@@ -582,7 +583,7 @@ msgstr "Ortografia zuzentzailea"
 
 #: ../interfaces/utility.py:296
 msgid "Spellchecker plugin to use"
-msgstr ""
+msgstr "Erabiliko den ortografia zuzentzailea"
 
 msgid "Square"
 msgstr "Karratua"
@@ -637,7 +638,7 @@ msgstr "Testua"
 
 #: ../interfaces/utility.py:297
 msgid "This option allows you to choose the spellchecker for TinyMCE. If you want the spellchecker button to be visible, make sure it is enabled in the toolbar settings."
-msgstr ""
+msgstr "TinyMCEk erabiliko duen ortografia zuzentzailea aukeratu. Zuzentzailearen botoia agerrarazi nahi baduzu, aktibatu ezazu tresna-barran"
 
 #: ../interfaces/utility.py:399
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
@@ -669,7 +670,7 @@ msgstr "Aukera honek, editorearen altuera pixeletan zehazteko aukera ematen du. 
 
 #: ../interfaces/utility.py:35
 msgid "This option gives you the ability to specify the width of the editor (like 100% or 400px)."
-msgstr ""
+msgstr "Editorearen zabalera zehaztu (100% edo 400px adibidez)"
 
 #: ../interfaces/utility.py:70
 msgid "This option gives you the ability to specify the width of the toolbar in pixels."
@@ -677,7 +678,7 @@ msgstr "Aukera honek, tresna-barraren zabalera pixeletan zehazteko aukera ematen
 
 #: ../interfaces/utility.py:425
 msgid "Thumbnail size in thumbnails mode"
-msgstr ""
+msgstr "Irudi-txikiaren tamaina"
 
 #. Default: "TinyMCE"
 #: ../profiles/upgrade_10_to_11/controlpanel.xml
@@ -733,11 +734,11 @@ msgstr "Ordenatu gabeko zerrenda"
 
 #: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:160
 msgid "Upload"
-msgstr ""
+msgstr "Kargatu"
 
 #: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:133
 msgid "Upload File"
-msgstr ""
+msgstr "Fitxategia kargatu"
 
 msgid "Upper Alpha"
 msgstr "Hizki larriak"
@@ -756,48 +757,48 @@ msgstr "Aktibatuta dagoenean, erabiltzailearentzat uneko elementua izango da err
 #: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:58
 #: ../utility.py:753
 msgid "You are here:"
-msgstr ""
+msgstr "Hemen zaude:"
 
 #. Default: "The URL of the \"After the Deadline\" grammar and spell checking server. The default value is the public server, but ideally you should download and install your own and specify its address here."
 #: ../interfaces/utility.py:339
 msgid "help_atd_service_url"
-msgstr ""
+msgstr "\"After the Deadline\" gramatika eta zerbitzariaren helbidea. Defektuzko balioa zerbitzari publikoa da, baina zure zerbitzarian ere instalatu dezakezu eta helbide hori hemen idatzi."
 
 #. Default: "A list of error types which the \"After the Deadline\" spellchecker should check for. By default, all the available error type will be listed here."
 #: ../interfaces/utility.py:326
 msgid "help_atderrortypes_to_show"
-msgstr ""
+msgstr "\"After the Deadline\" zuzentzaileak detektatu behar dituen erroreak. Defektuz, dauden errore-mota guztiak agertuko dira hemen."
 
 #. Default: "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
 #: ../interfaces/utility.py:384
 msgid "help_tinymce_plugins"
-msgstr ""
+msgstr "Editorean kargatu behar diren pluginen zerrenda. Formatua 'pluginizena' edo 'pluginizena|kokapena' da. Idatzi bat lerro bakoitzean."
 
 #: ../interfaces/utility.py:306
 msgid "ieSpell (free for personal use)"
-msgstr ""
+msgstr "isSpell (doakoa erabilpen pertsonalerako)"
 
 #. Default: "A list of strings which the \"After the Deadline\"spellchecker should ignore. Note: This option is only applicable when the appropriate spellchecker has been chosen above."
 #: ../interfaces/utility.py:315
 msgid "label_atd_ignore_strings"
-msgstr ""
+msgstr "\"After the Deadline\" zuzentzaileak aztertuko ez dituen testuak. Oharra: aukera hau zuzentzaile hau aktibatuta badago bakarrik erabili daiteke."
 
 #. Default: "Editor Plugins"
 #: ../interfaces/utility.py:383
 msgid "label_tinymce_plugins"
-msgstr ""
+msgstr "Editorearen pluginak"
 
 #: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:154
 msgid "or External URL"
-msgstr ""
+msgstr "edo kanpoko helbidea"
 
 #. Default: "Edit without visual editor"
 #: ../skins/tinymce/tinymce_wysiwyg_support.pt:27
 msgid "suppress_visual_editor"
-msgstr ""
+msgstr "Editore gabe editatu"
 
 #. Default: "Edit with visual editor"
 #: ../skins/tinymce/tinymce_wysiwyg_support.pt:35
 msgid "suppress_visual_editor_with"
-msgstr ""
+msgstr "Editorearekin editatu"
 
