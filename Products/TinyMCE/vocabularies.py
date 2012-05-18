@@ -11,6 +11,8 @@ def shortcuts_vocabulary(context):
     for name, utility in getUtilitiesFor(ITinyMCEShortcut):
         terms.append(SimpleVocabulary.createTerm(name, str(name), utility.title))
     return SimpleVocabulary(terms)
+
+
 directlyProvides(shortcuts_vocabulary, IContextSourceBinder)
 
 
@@ -26,7 +28,10 @@ def thumbnail_sizes_vocabulary(context):
     for name, size in getAllowedSizes().iteritems():
         terms.append(SimpleVocabulary.createTerm(tuple((name,) + size), str(name), u"%s %s" % (name, size)))
     return SimpleVocabulary(terms)
+
+
 directlyProvides(thumbnail_sizes_vocabulary, IContextSourceBinder)
+
 
 def plugins_vocabulary(context):
     """ A vocabulary containing all the allowed plugins for TinyMCE
@@ -35,4 +40,6 @@ def plugins_vocabulary(context):
     plugins = DEFAULT_PLUGINS[:]
     plugins.sort()
     return SimpleVocabulary.fromValues(plugins)
+
+
 directlyProvides(plugins_vocabulary, IContextSourceBinder)

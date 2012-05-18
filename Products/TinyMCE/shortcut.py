@@ -20,7 +20,7 @@ class HomeShortcut(object):
     title = _(u'Home')
 
     def render(self, context):
-        portal_state = context.restrictedTraverse('@@plone_portal_state') 
+        portal_state = context.restrictedTraverse('@@plone_portal_state')
         return ["""
         <img src="img/home.png" />
         <a id="home" href="%s">%s</a>

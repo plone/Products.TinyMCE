@@ -4,7 +4,10 @@
     xmlns:zcml="http://namespaces.zope.org/zcml"
     i18n_domain="tinymce">
 
-    <include zcml:condition="have plone-4" package="Products.CMFCore" file="permissions.zcml" />
+    <include package="Products.CMFCore"
+             file="permissions.zcml"
+             zcml:condition="have plone-41" />
+
     <browser:page
         for="..interfaces.utility.ITinyMCE"
         name="tinymce-controlpanel"
@@ -57,8 +60,6 @@
         <browser:page attribute="jsonConfiguration" name="tinymce-jsonconfiguration" />
     </browser:pages>
 
-    <include package="Products.CMFCore" file="permissions.zcml"
-             zcml:condition="have plone-41" />
 
     <browser:pages
         for="*"

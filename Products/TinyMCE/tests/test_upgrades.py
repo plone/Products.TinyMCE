@@ -25,12 +25,12 @@ class UpgradesTestCase(FunctionalTestCase):
         portal_setup = getToolByName(self.portal, 'portal_setup')
         portal_jstool = getToolByName(self.portal, 'portal_javascripts')
         portal_ksstool = getToolByName(self.portal, 'portal_kss')
-        
+
         new_ids = 'jquery.tinymce.js',
         js = portal_jstool.getResourceIds()
-        for id in new_ids:    
+        for id in new_ids:
             if id in js:
-                portal_jstool.unregisterResource(id) 
+                portal_jstool.unregisterResource(id)
         upgrade_12_to_13(portal_setup)
         js = portal_jstool.getResourceIds()
         for id in new_ids:
@@ -40,4 +40,3 @@ class UpgradesTestCase(FunctionalTestCase):
 
         kss = portal_ksstool.getResourceIds()
         self.assertFalse('++resource++tinymce.kss/tinymce.kss' in kss)
-        

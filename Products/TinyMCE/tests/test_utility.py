@@ -205,7 +205,7 @@ class UtilityTestCase(IntegrationTestCase):
 
         configuration = self.utility.getConfiguration(self.portal)
         content_css_url = json.loads(configuration)['content_css']
-        url = '%s/portal_tinymce/@@tinymce-getstyle'%self.portal.absolute_url()
+        url = '%s/portal_tinymce/@@tinymce-getstyle' % self.portal.absolute_url()
         self.assertEqual(content_css_url,
                          url,
                          msg="content_css has wrong url, reported #12800")

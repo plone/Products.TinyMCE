@@ -4,6 +4,7 @@ from Products.TinyMCE.tests.base import FunctionalTestCase
 
 from Products.TinyMCE.browser.atanchors import ATAnchorView
 
+
 class BrowserTestCase(FunctionalTestCase):
 
     def setUp(self):
@@ -86,6 +87,7 @@ class BrowserTestCase(FunctionalTestCase):
         self.assertIn('"directionality": "rtl"', output)
 
         # TODO: upload
+
 
 class AnchorTestCase(IntegrationTestCase):
 

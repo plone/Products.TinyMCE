@@ -4,11 +4,14 @@ import zope.interface
 
 from Products.TinyMCE.bbb import implementedOrProvidedBy
 
+
 class TestObject(object):
     """ A simple object """
 
+
 class ITestIface(zope.interface.Interface):
     """ A simple interface """
+
 
 class BBBTests(unittest.TestCase):
 
