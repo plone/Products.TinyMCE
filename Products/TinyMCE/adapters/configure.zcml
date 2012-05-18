@@ -9,7 +9,7 @@
         />
 
     <adapter
-        for="Products.CMFCore.interfaces._content.IContentish"
+        for="Products.CMFCore.interfaces.IContentish"
         provides=".interfaces.JSONDetails.IJSONDetails"
         factory=".JSONDetails.JSONDetails"
         />
@@ -21,7 +21,7 @@
         />
 
     <adapter
-        for="Products.CMFCore.interfaces._content.IContentish"
+        for="Products.CMFCore.interfaces.IContentish"
         provides=".interfaces.JSONFolderListing.IJSONFolderListing"
         factory=".JSONFolderListing.JSONFolderListing"
         />
@@ -33,19 +33,19 @@
         />
 
     <adapter
-        for="Products.CMFCore.interfaces._content.IContentish"
+        for="Products.CMFCore.interfaces.IContentish"
         provides=".interfaces.Upload.IUpload"
         factory=".Upload.Upload"
         />
 
     <adapter
-        for="Products.CMFCore.interfaces._content.IContentish"
+        for="Products.CMFCore.interfaces.IContentish"
         provides=".interfaces.Save.ISave"
         factory=".Save.Save"
         />
 
     <adapter
-        for="Products.CMFCore.interfaces._content.IFolderish"
+        for="Products.CMFCore.interfaces.IFolderish"
         provides=".interfaces.JSONSearch.IJSONSearch"
         factory=".JSONSearch.JSONSearch"
         />
