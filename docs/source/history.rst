@@ -13,6 +13,10 @@ HISTORY
   plone.app.contentypes but should work with all dexterity bases-images.
   [pbauer]
 
+- #10039: Visual editor should set writing direction based on current language,
+  not site preference
+  [iElectric]
+
 - use getToolByName instead of getUtility for portal_tinymce.
   Seems like getUtility will strip request object from context
   when doing acqusition chain.
