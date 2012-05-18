@@ -30,8 +30,8 @@ class ControlpanelTestCase(FunctionalTestCase):
         # click the cancel button. Without the fix for #12212
         browser.open(portal_url + '/portal_tinymce/@@tinymce-controlpanel')
         browser.getControl(name='form.actions.cancel').click()
-        self.failUnless('<dd>Changes canceled.</dd>' in browser.contents)
-        self.assertEquals(browser.url,
+        self.assertTrue('<dd>Changes canceled.</dd>' in browser.contents)
+        self.assertEqual(browser.url,
             'http://nohost/plone/plone_control_panel')
 
     def test_save_button(self):
@@ -49,6 +49,6 @@ class ControlpanelTestCase(FunctionalTestCase):
         browser.getControl(name='form.contextmenu').value = False
         browser.getControl(name='form.actions.save').click()
 
-        self.failUnless('<dd>Changes saved.</dd>' in browser.contents)
-        self.assertEquals(browser.url,
+        self.assertTrue('<dd>Changes saved.</dd>' in browser.contents)
+        self.assertEqual(browser.url,
             'http://nohost/plone/portal_tinymce/@@tinymce-controlpanel')
