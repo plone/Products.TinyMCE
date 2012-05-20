@@ -5,6 +5,9 @@ HISTORY
 1.3-beta2 (2012-02-xx)
 ----------------------
 
+- Support using lxml instead of elementtree to find anchors.
+  [davisagli]
+
 - Fix original scale (dexterity-based images need 'my_image/@@images/image'
   instead of just 'my_image')
   [pbauer]
