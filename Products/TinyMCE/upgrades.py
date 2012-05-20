@@ -1,5 +1,5 @@
 from zope.component import getUtility
-from zope.app.component.hooks import getSite
+from zope.component.hooks import getSite
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.setuphandlers import uninstall_mimetype_and_transforms
 from plone.outputfilters.setuphandlers import install_mimetype_and_transforms
