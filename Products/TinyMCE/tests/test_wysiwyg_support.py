@@ -31,12 +31,13 @@ class WysiwygSupportTestCase(IntegrationTestCase):
         transaction.commit()
 
         # Set up personalize_form
-        personalizer = portal_url + '/personalize_form'
-        self.assertEqual(personalizer, 'http://nohost/plone/personalize_form')
-        browser.open(personalizer)
-        browser.getControl(name='email').value = 'test@example.org'
-        browser.getControl(name='form.button.Save').click()
-        self.assertIn('<dd>Your personal settings have been saved.</dd>', browser.contents)
+        browser.getLink('Preferences').click()
+        personalizer = browser.url
+        try:
+            browser.getControl('Email').value = 'test@example.org'
+            browser.getControl('Save').click()
+        except LookupError:
+            pass
 
         #Test different editors
         #----------------------
@@ -59,9 +60,9 @@ class WysiwygSupportTestCase(IntegrationTestCase):
 
         # If the user sets 'Use site's default'...
         browser.open(personalizer)
-        browser.getControl(name='wysiwyg_editor').value = ['']
-        browser.getControl(name='form.button.Save').click()
-        self.assertIn('<dd>Your personal settings have been saved.</dd>', browser.contents)
+        browser.getControl('Wysiwyg editor').value = ['']
+        browser.getControl('Save').click()
+        self.assertIn('saved', browser.contents)
 
         # we should get TinyMCE:
         browser.open(testpage)
@@ -70,9 +71,9 @@ class WysiwygSupportTestCase(IntegrationTestCase):
 
         # If the user sets 'None'...
         browser.open(personalizer)
-        browser.getControl(name='wysiwyg_editor').value = ['None']
-        browser.getControl(name='form.button.Save').click()
-        self.assertIn('<dd>Your personal settings have been saved.</dd>', browser.contents)
+        browser.getControl('Wysiwyg editor').value = ['None']
+        browser.getControl('Save').click()
+        self.assertIn('saved', browser.contents)
 
         # We should get just a textarea:
         browser.open(testpage)
@@ -85,9 +86,9 @@ class WysiwygSupportTestCase(IntegrationTestCase):
 
         # If the user sets 'TinyMCE'...
         browser.open(personalizer)
-        browser.getControl(name='wysiwyg_editor').value = ['TinyMCE']
-        browser.getControl(name='form.button.Save').click()
-        self.assertIn('<dd>Your personal settings have been saved.</dd>', browser.contents)
+        browser.getControl('Wysiwyg editor').value = ['TinyMCE']
+        browser.getControl('Save').click()
+        self.assertIn('saved', browser.contents)
 
         # we should get TinyMCE:
         browser.open(testpage)
@@ -100,9 +101,9 @@ class WysiwygSupportTestCase(IntegrationTestCase):
 
         # If the user sets 'Use site's default'...
         browser.open(personalizer)
-        browser.getControl(name='wysiwyg_editor').value = ['']
-        browser.getControl(name='form.button.Save').click()
-        self.assertIn('<dd>Your personal settings have been saved.</dd>', browser.contents)
+        browser.getControl('Wysiwyg editor').value = ['']
+        browser.getControl('Save').click()
+        self.assertIn('saved', browser.contents)
 
         # we should get just a textarea:
         browser.open(testpage)
@@ -112,9 +113,9 @@ class WysiwygSupportTestCase(IntegrationTestCase):
 
         # If the user sets 'None'...
         browser.open(personalizer)
-        browser.getControl(name='wysiwyg_editor').value = ['None']
-        browser.getControl(name='form.button.Save').click()
-        self.assertIn('<dd>Your personal settings have been saved.</dd>', browser.contents)
+        browser.getControl('Wysiwyg editor').value = ['None']
+        browser.getControl('Save').click()
+        self.assertIn('saved', browser.contents)
 
         # we should get just a textarea:
         browser.open(testpage)
@@ -124,9 +125,9 @@ class WysiwygSupportTestCase(IntegrationTestCase):
 
         # If the user sets 'TinyMCE'...
         browser.open(personalizer)
-        browser.getControl(name='wysiwyg_editor').value = ['TinyMCE']
-        browser.getControl(name='form.button.Save').click()
-        self.assertIn('<dd>Your personal settings have been saved.</dd>', browser.contents)
+        browser.getControl('Wysiwyg editor').value = ['TinyMCE']
+        browser.getControl('Save').click()
+        self.assertIn('saved', browser.contents)
 
         # we should get TinyMCE:
         browser.open(testpage)
