@@ -30,12 +30,13 @@ setup(name='Products.TinyMCE',
     zip_safe=False,
     install_requires=[
         'setuptools',
-        'elementtree',
         'plone.app.imaging>=1.0.2',
         'plone.outputfilters',
         'Products.ResourceRegistries',
         'Products.Archetypes',
-        'zope.schema>=3.5.4'
+        'zope.schema>=3.5.4',
+        # depends on *either* elementtree or lxml...
+        # we can expect one of those in all versions of Plone
     ] + requires,
     extras_require={
         'test': ['plone.app.testing', 'unittest2', 'plone.app.dexterity'],

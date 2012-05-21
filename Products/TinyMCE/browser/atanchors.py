@@ -1,8 +1,11 @@
 from Products.Five.browser import BrowserView
 from Products.TinyMCE.browser.interfaces.anchors import IAnchorView
-# Not available in xml.etree
-from elementtree import HTMLTreeBuilder
 from zope.interface import implements
+
+try:
+    from lxml.html import parse
+except ImportError:
+    from elementtree.HTMLTreeBuilder import parse
 
 
 class ATAnchorView(BrowserView):
@@ -11,7 +14,6 @@ class ATAnchorView(BrowserView):
     def listAnchorNames(self, fieldname=None):
         """Return a list of Anchor names"""
         results = []
-        tree = HTMLTreeBuilder.TreeBuilder()
         if not fieldname:
             field = self.context.getPrimaryField()
         else:
@@ -19,11 +21,10 @@ class ATAnchorView(BrowserView):
 
         htmlsnippet = field.getAccessor(self.context)()
         try:
-            tree.feed('<root>%s</root>' % htmlsnippet)
-        except AssertionError:
+            tree = parse('<root>%s</root>' % htmlsnippet)
+        except:
             return results
-        rootnode = tree.close()
-        for x in rootnode.getiterator():
+        for x in tree.getroot().getiterator():
             if x.tag == "a":
                 if "name" in x.keys():
                     results.append(x.attrib['name'])
