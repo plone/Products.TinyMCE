@@ -11,6 +11,7 @@ from Products.TinyMCE.utility import form_adapter
 
 
 class UtilityTestCase(IntegrationTestCase):
+    """ Test utility of TinyMCE Plone integration """
 
     def setUp(self):
         super(UtilityTestCase, self).setUp()
@@ -193,8 +194,21 @@ class UtilityTestCase(IntegrationTestCase):
         self.assertTrue('plugin1,plugin2' in self.utility.getPlugins())
 
     def test_getStyles(self):
-        self.utility.getStyles(self._get_config())
-        # XXX
+        config = self._get_config()
+        self.assertEqual(self.utility.getStyles(config['styles'],
+                                                config['labels']),
+            (u'[{ title: "Text", tag: "", className: "-", type: "Text" },'
+             u'{ title: "Paragraph", tag: "p", className: "-", type: "Text" },'
+             u'{ title: "a", tag: "class", className: "y", type: "Text" },'
+             u'{ title: "foo", tag: "bar", className: "x", type: "Text" },'
+             u'{ title: "Selection", tag: "", className: "-", type: "Selection" },'
+             u'{ title: "Styles with an ü", tag: "", className: "-", type: "Selection" },'
+             u'{ title: "Tables", tag: "table", className: "-", type: "Tables" },'
+             u'{ title: "Plain Cell", tag: "td", className: "-", type: "Tables" },'
+             u'{ title: "Lists", tag: "ul", className: "-", type: "Lists" },'
+             u'{ title: "Lists", tag: "ol", className: "-", type: "Lists" },'
+             u'{ title: "Lists", tag: "dl", className: "-", type: "Lists" },'
+             u'{ title: "Lists", tag: "dl", className: "-", type: "Lists" }]'))
 
     def test_getToolbars(self):
         toolbars = self.utility.getToolbars(self._get_config())
