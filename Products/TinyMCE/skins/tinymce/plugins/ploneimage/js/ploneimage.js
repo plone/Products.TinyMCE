@@ -496,6 +496,15 @@ var ImageDialog = {
                             ImageDialog.current_link = 'resolveuid/' + data.items[i].uid;
                         }
                         html += '<div class="' + (i % 2 == 0 ? 'even' : 'odd') + '">';
+                        html += '<input onclick="ImageDialog.setDetails(\'';
+                        html += data.items[i].url + '\',\'' + data.items[i].title.replace(/'/g, "\\'") + '\');"';
+                        html += ' type="radio" class="noborder" name="internallink" value="';
+                        if (tinyMCEPopup.editor.settings.link_using_uids) {
+                            html += "resolveuid/" + data.items[i].uid;
+                        } else {
+                            html += data.items[i].url;
+                        }
+                        html += '"/> ';                        
                         if (data.items[i].is_folderish) {
                             if (data.items[i].icon.length) {
                                 html += '<img src="' + data.items[i].icon + '" border="0" style="margin-left: 17px" /> ';
@@ -504,16 +513,7 @@ var ImageDialog = {
                             html += 'href="javascript:ImageDialog.getFolderListing(\'' + data.items[i].url + '\',\'tinymce-jsonimagefolderlisting' + '\')">';
                             html += data.items[i].title;
                             html += '</a>';
-                        } else {
-                            html += '<input onclick="ImageDialog.setDetails(\'';
-                            html += data.items[i].url + '\',\'' + data.items[i].title.replace(/'/g, "\\'") + '\');"';
-                            html += ' type="radio" class="noborder" name="internallink" value="';
-                            if (tinyMCEPopup.editor.settings.link_using_uids) {
-                                html += "resolveuid/" + data.items[i].uid;
-                            } else {
-                                html += data.items[i].url;
-                            }
-                            html += '"/> ';
+                        } else {                            
                             if (data.items[i].icon.length) {
                                 html += '<img src="' + data.items[i].icon + '" border="0"/> ';
                             }
