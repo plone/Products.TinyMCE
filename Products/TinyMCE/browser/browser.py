@@ -176,6 +176,10 @@ class ConfigurationViewlet(ViewletBase):
 
         if '++add++' in self.request.getURL():
             # dexterity support for it's portal factory
+            # put portal type to session to access it from
+            # the compressor
+            if hasattr(self.view, 'ti'):
+                self.request.SESSION['dx_add_portal_type'] = self.view.ti.getId()
             return True
 
         if factory is not None and factory.isTemporary(context):

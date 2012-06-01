@@ -15,6 +15,8 @@ from Products.Five import BrowserView
 from Products.ResourceRegistries.tools.packer import JavascriptPacker
 from zope.component import getMultiAdapter
 
+from Products.TinyMCE.adapters.interfaces import ISchema
+
 
 def isContextUrl(url):
     """Some url do not represent context. Check is based on url. If
@@ -74,8 +76,21 @@ class TinyMCECompressorView(BrowserView):
             name="tinymce-jsonconfiguration")
 
         if not isJS:
-            # TODO: pass fieldname to allow field specific configuration
-            tiny_mce_gzip = self.tiny_mce_gzip(tinymce_json_config=config(fieldname=None, script_url=base_url))
+            jsonconfig = getMultiAdapter((self.context, self.request),
+                                         name="tinymce-jsonconfiguration")
+            schema = ISchema(self.context)
+            tinymce_config = '\n'.join(
+                ["$('textarea#%s%s').tinymce(%s);" % (
+                    schema.prefix, fieldname, jsonconfig(fieldname, base_url))
+                 for fieldname in schema.getFieldNames()]
+                )
+            # remove portal type from session
+            # this was only used to exchange the dx portal type
+            # from the add view to the compressor
+            if hasattr(self.request, 'SESSION') and \
+               self.request.SESSION.has_key('dx_add_portal_type'):
+                del self.request.SESSION['dx_add_portal_type']
+            tiny_mce_gzip = self.tiny_mce_gzip(tinymce_json_config=tinymce_config)
 
             js_tool = getToolByName(aq_inner(self.context), 'portal_javascripts')
             if js_tool.getDebugMode():

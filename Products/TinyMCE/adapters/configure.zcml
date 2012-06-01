@@ -4,7 +4,7 @@
     i18n_domain="tinymce">
 
     <adapter
-        for="Products.CMFPlone.interfaces.siteroot.IPloneSiteRoot"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
         factory=".JSONDetails.JSONDetails"
         />
 
@@ -15,7 +15,7 @@
         />
 
     <adapter
-        for="Products.CMFPlone.interfaces.siteroot.IPloneSiteRoot"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
         provides=".interfaces.JSONFolderListing.IJSONFolderListing"
         factory=".JSONFolderListing.JSONFolderListing"
         />
@@ -27,7 +27,7 @@
         />
 
     <adapter
-        for="Products.CMFPlone.interfaces.siteroot.IPloneSiteRoot"
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
         provides=".interfaces.Upload.IUpload"
         factory=".Upload.Upload"
         />
@@ -48,6 +48,24 @@
         for="Products.CMFCore.interfaces.IFolderish"
         provides=".interfaces.JSONSearch.IJSONSearch"
         factory=".JSONSearch.JSONSearch"
+        />
+
+    <adapter
+        for="Products.Archetypes.interfaces.IBaseObject"
+        provides=".interfaces.ISchema"
+        factory=".schema.ATSchema"
+        />
+
+    <adapter
+        for="plone.dexterity.interfaces.IDexterityContent"
+        provides=".interfaces.ISchema"
+        factory=".schema.DXSchema"
+        />
+
+    <adapter
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        provides=".interfaces.ISchema"
+        factory=".schema.DXAddSchema"
         />
 
 </configure>

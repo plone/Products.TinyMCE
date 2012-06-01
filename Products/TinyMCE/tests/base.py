@@ -12,6 +12,32 @@ from plone.app.testing import TEST_USER_ID
 from plone.app.testing import TEST_USER_NAME
 from plone.testing import z2
 
+# Test for Archetypes
+try:
+    import Products.Archetypes
+    Products.Archetypes    # pyflakes
+    HAS_AT = True
+except ImportError:
+    HAS_AT = False
+
+# Test for Dexterity
+try:
+    import plone.app.dexterity
+    plone.app.dexterity   # pyflakes
+    HAS_DX = True
+except ImportError:
+    HAS_DX = False
+
+# register testing types in portal_setup
+from Products.GenericSetup import EXTENSION, profile_registry
+def register_test_profile():
+    profile_registry.registerProfile('tinymce_testing',
+            'TinyMCE testing profile',
+            'Extension profile for testing TinyMCE including sample content types',
+            'profiles/testing',
+            'Products.TinyMCE',
+            EXTENSION)
+
 
 class TinyMCELayer(PloneSandboxLayer):
     defaultBases = (PLONE_FIXTURE,)
@@ -21,11 +47,17 @@ class TinyMCELayer(PloneSandboxLayer):
         import Products.TinyMCE
         self.loadZCML(package=Products.TinyMCE)
         z2.installProduct(app, 'Products.TinyMCE')
+        if HAS_DX:
+            self.loadZCML(package=plone.app.dexterity)
 
     def setUpPloneSite(self, portal):
         """Set up Plone."""
         # Install into Plone site using portal_setup
         self.applyProfile(portal, 'Products.TinyMCE:TinyMCE')
+        if HAS_DX:
+            self.applyProfile(portal, 'plone.app.dexterity:default')
+            register_test_profile()
+            self.applyProfile(portal, 'Products.TinyMCE:tinymce_testing')
 
     def tearDownZope(self, app):
         """Tear down Zope."""
