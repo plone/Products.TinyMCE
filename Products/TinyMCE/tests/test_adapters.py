@@ -182,7 +182,7 @@ class SchemaAdapterTestCase(FunctionalTestCase):
     def test_atschema(self):
         self.portal.invokeFactory('Document', id='document')
         document = self.portal['document']
-        self.assertEqual(ISchema(document).getFieldNames(), ['text'])
+        self.assertEqual(ISchema(document).getRichTextFieldNames(), ['text'])
         self.assertEqual(ISchema(document).prefix, '')
 
     @unittest.skipUnless(HAS_DX,
@@ -190,12 +190,11 @@ class SchemaAdapterTestCase(FunctionalTestCase):
     def test_dxschema(self):
         fti = getUtility(IDexterityFTI, name="tinymce_test")
         content = createObject(fti.factory)
-        self.assertEqual(ISchema(content).getFieldNames(), ['text', 'suffix'])
+        self.assertEqual(ISchema(content).getRichTextFieldNames(), ['text', 'suffix'])
 
     @unittest.skipUnless(HAS_DX,
             'Dexterity is not installed. Skipping DX schema adapter test.')
     def test_dxaddschema(self):
-        request = self.portal.REQUEST
-        setattr(request, 'SESSION', {'dx_add_portal_type': 'tinymce_test'})
-        self.assertEqual(ISchema(self.portal).getFieldNames(),
+        self.portal.REQUEST.form['pt'] = "tinymce_test"
+        self.assertEqual(ISchema(self.portal).getRichTextFieldNames(),
                          ['text', 'suffix'])

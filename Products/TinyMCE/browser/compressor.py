@@ -82,14 +82,8 @@ class TinyMCECompressorView(BrowserView):
             tinymce_config = '\n'.join(
                 ["$('textarea#%s%s').tinymce(%s);" % (
                     schema.prefix, fieldname, jsonconfig(fieldname, base_url))
-                 for fieldname in schema.getFieldNames()]
+                 for fieldname in schema.getRichTextFieldNames()]
                 )
-            # remove portal type from session
-            # this was only used to exchange the dx portal type
-            # from the add view to the compressor
-            if hasattr(self.request, 'SESSION') and \
-               self.request.SESSION.has_key('dx_add_portal_type'):
-                del self.request.SESSION['dx_add_portal_type']
             tiny_mce_gzip = self.tiny_mce_gzip(tinymce_json_config=tinymce_config)
 
             js_tool = getToolByName(aq_inner(self.context), 'portal_javascripts')

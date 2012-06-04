@@ -5,5 +5,5 @@ class ISchema(zope.interface.Interface):
 
     prefix = zope.interface.Attribute("Form prefix in add/edit-view")
 
-    def getFieldNames(filter=None):
-        """ Get names of schema fields filtered by type """
+    def getRichTextFieldNames():
+        """ Get names of rich text schema fields """

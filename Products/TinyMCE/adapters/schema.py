@@ -14,7 +14,7 @@ class ATSchema(object):
         """Constructor"""
         self.context = context
 
-    def getFieldNames(self, filter_field='text', filter_widget='RichWidget'):
+    def getRichTextFieldNames(self):
         """ see ISchema interface """
         schema = self.context.Schema()
         return [field.getName()
@@ -34,7 +34,7 @@ try:
         def getportaltype(self):
             return self.context.portal_type
 
-        def getFieldNames(self, filter_field='text', filter_widget='RichWidget'):
+        def getRichTextFieldNames(self):
             """ see ISchema interface """
             schema = SCHEMA_CACHE.get(self.getportaltype())
             return [name for name, field in schema.namesAndDescriptions() if
@@ -50,7 +50,7 @@ try:
             # put portal type in session, since there is no
             # other way to access it from the compressor
             request = getRequest()
-            return request.SESSION.get('dx_add_portal_type')
+            return request.get('pt')
 
 except ImportError:
     pass

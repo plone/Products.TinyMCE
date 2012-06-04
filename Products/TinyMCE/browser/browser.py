@@ -166,6 +166,7 @@ class ConfigurationViewlet(ViewletBase):
     """
 
     index = ViewPageTemplateFile('configuration.pt')
+    suffix = ''
 
     def show(self):
         tinymce = queryUtility(ITinyMCE, context=self.context)
@@ -178,8 +179,7 @@ class ConfigurationViewlet(ViewletBase):
             # dexterity support for it's portal factory
             # put portal type to session to access it from
             # the compressor
-            if hasattr(self.view, 'ti'):
-                self.request.SESSION['dx_add_portal_type'] = self.view.ti.getId()
+            self.suffix = '?pt=%s' % self.view.ti.getId()
             return True
 
         if factory is not None and factory.isTemporary(context):
