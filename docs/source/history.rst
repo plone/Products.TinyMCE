@@ -2,8 +2,11 @@
 HISTORY
 =======
 
-1.3-beta2 (2012-02-xx)
+1.3-beta2 (2012-xx-xx)
 ----------------------
+
+- Add plone.namedfile as dependency
+  [iElectric]
 
 - Support using lxml instead of elementtree to find anchors.
   [davisagli]
