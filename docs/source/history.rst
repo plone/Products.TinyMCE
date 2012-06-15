@@ -5,6 +5,10 @@ HISTORY
 1.3-beta2 (2012-xx-xx)
 ----------------------
 
+- added zcml condition to check if plone.dexterity is installed
+  before to register dexterity releated adapters
+  [gborelli]
+
 - Add plone.namedfile as dependency
   [iElectric]
 

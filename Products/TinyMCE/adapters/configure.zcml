@@ -1,6 +1,7 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
     i18n_domain="tinymce">
 
     <adapter
@@ -56,16 +57,19 @@
         factory=".schema.ATSchema"
         />
 
-    <adapter
-        for="plone.dexterity.interfaces.IDexterityContent"
-        provides=".interfaces.ISchema"
-        factory=".schema.DXSchema"
-        />
+    <configure
+        zcml:condition="installed plone.dexterity">
+        <adapter
+            for="plone.dexterity.interfaces.IDexterityContent"
+            provides=".interfaces.ISchema"
+            factory=".schema.DXSchema"
+            />
 
-    <adapter
-        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-        provides=".interfaces.ISchema"
-        factory=".schema.DXAddSchema"
-        />
+        <adapter
+            for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+            provides=".interfaces.ISchema"
+            factory=".schema.DXAddSchema"
+            />
+    </configure>
 
 </configure>
