@@ -33,6 +33,7 @@ setup(name='Products.TinyMCE',
         'plone.app.imaging>=1.0.2',
         'plone.outputfilters',
         'plone.namedfile',
+        'plone.app.layout',
         'Products.ResourceRegistries',
         'Products.Archetypes',
         'zope.schema>=3.5.4',
@@ -40,7 +41,7 @@ setup(name='Products.TinyMCE',
         # we can expect one of those in all versions of Plone
     ] + requires,
     extras_require={
-        'test': ['plone.app.testing', 'unittest2', 'plone.app.dexterity'],
+        'test': ['plone.app.testing', 'zope.testing', 'unittest2', 'plone.app.dexterity'],
         'docs': ['sphinx'],
     },
 )

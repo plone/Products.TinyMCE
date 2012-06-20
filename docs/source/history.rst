@@ -5,6 +5,9 @@ HISTORY
 1.3-beta2 (2012-xx-xx)
 ----------------------
 
+- fix editor styles formatting
+  [mitchellrj]
+
 - added zcml condition to check if plone.dexterity is installed
   before to register dexterity releated adapters
   [gborelli]
