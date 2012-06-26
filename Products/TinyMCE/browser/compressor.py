@@ -78,14 +78,18 @@ class TinyMCECompressorView(BrowserView):
         if not isJS:
             jsonconfig = getMultiAdapter((self.context, self.request),
                                          name="tinymce-jsonconfiguration")
-            schema = ISchema(self.context)
-            tinymce_config = '\n'.join(
-                ["$('textarea#%s%s').tinymce(%s);" % (
-                    schema.prefix, fieldname, jsonconfig(fieldname, base_url))
-                 for fieldname in schema.getRichTextFieldNames()]
-                )
-            tiny_mce_gzip = self.tiny_mce_gzip(tinymce_json_config=tinymce_config)
-
+            try:
+                schema = ISchema(self.context)
+                tinymce_config = '\n'.join(
+                    ["$('textarea#%s%s').tinymce(%s);" % (
+                        schema.prefix, fieldname, jsonconfig(fieldname, base_url))
+                     for fieldname in schema.getRichTextFieldNames()]
+                    )
+                tiny_mce_gzip = self.tiny_mce_gzip(tinymce_json_config=tinymce_config)
+    
+            except TypeError:
+                # handle case when editing a portlet
+                tiny_mce_gzip = self.tiny_mce_gzip(tinymce_json_config=config(fieldname=None, script_url=base_url))
             js_tool = getToolByName(aq_inner(self.context), 'portal_javascripts')
             if js_tool.getDebugMode():
                 return tiny_mce_gzip

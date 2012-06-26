@@ -9,7 +9,12 @@
  */
 
 jQuery(function($) {
-    %(tinymce_json_config)s
+    var conf = $.extend({
+            elements: this.id
+        },
+        %(tinymce_json_config)s
+        );
+    $('textarea.mce_editable').tinymce(conf);
 
     // set Text Format dropdown untabbable for better UX
     // TODO: find a better way to fix this
