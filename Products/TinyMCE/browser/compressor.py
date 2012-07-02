@@ -89,7 +89,11 @@ class TinyMCECompressorView(BrowserView):
     
             except TypeError:
                 # handle case when editing a portlet
-                tiny_mce_gzip = self.tiny_mce_gzip(tinymce_json_config=config(fieldname=None, script_url=base_url))
+                tinymce_config = '\n'.join(
+                    ["$('textarea.mce_editable').tinymce(%s);" % (
+                        config(fieldname=None, script_url=base_url))]
+                    )
+                tiny_mce_gzip = self.tiny_mce_gzip(tinymce_json_config=tinymce_config)
             js_tool = getToolByName(aq_inner(self.context), 'portal_javascripts')
             if js_tool.getDebugMode():
                 return tiny_mce_gzip
