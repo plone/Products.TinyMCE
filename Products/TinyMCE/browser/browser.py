@@ -1,4 +1,5 @@
 import httplib
+from urllib import urlencode
 
 from Acquisition import aq_inner
 
@@ -12,6 +13,8 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from Products.CMFCore.utils import getToolByName
 
 from plone.app.layout.viewlets.common import ViewletBase
+from plone.app.portlets.browser.interfaces import IPortletForm
+
 from Products.TinyMCE.adapters.interfaces.JSONFolderListing import \
      IJSONFolderListing
 from Products.TinyMCE.adapters.interfaces.JSONSearch import IJSONSearch
@@ -22,6 +25,18 @@ from Products.TinyMCE.browser.interfaces.browser import ITinyMCEBrowserView
 from Products.TinyMCE.browser.interfaces.browser import IATDProxyView
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 
+try:
+    from Products.Archetypes.interfaces import IBaseObject
+    HAS_AT = True
+except ImportError:
+    HAS_AT = False
+try:
+    from plone.dexterity.interfaces import IDexterityContent
+    from plone.dexterity.schema import SCHEMA_CACHE
+    from plone.app.textfield import RichText
+    HAS_DX = True
+except ImportError:
+    HAS_DX = False
 
 class TinyMCEBrowserView(BrowserView):
     """TinyMCE Browser View"""
@@ -168,24 +183,62 @@ class ConfigurationViewlet(ViewletBase):
     index = ViewPageTemplateFile('configuration.pt')
     suffix = ''
 
+    def getDXRichTextFieldNames(self, pt):
+        """ Get names of Dexterity richtext fields """
+        schema = SCHEMA_CACHE.get(pt)
+        return [name for name, field in schema.namesAndDescriptions() if
+                isinstance(field, RichText)]
+
+    def getATRichTextFieldNames(self):
+        """ Get names of Archetype richtext fields """
+        schema = self.context.Schema()
+        return [field.getName()
+                for field in schema.filterFields(type='text')
+                if field.widget.getName() == 'RichWidget']
+
+    def buildsuffix(self, rtfields, prefix):
+        return '?%s' % urlencode({'f': rtfields, 'p': prefix}, doseq=True)
+
     def show(self):
-        tinymce = queryUtility(ITinyMCE, context=self.context)
+        context = aq_inner(self.context)
+        tinymce = queryUtility(ITinyMCE, context=context)
         if tinymce is None:
             return False
-        context = aq_inner(self.context)
+
+        # Dexterity add form
+        if HAS_DX and '++add++' in self.request.getURL():
+            rtfields = self.getDXRichTextFieldNames(self.view.ti.getId())
+            if rtfields:
+                prefix = 'form\\\\.widgets\\\\.'
+                self.suffix = self.buildsuffix(rtfields, prefix)
+                # we need to return here because showEditableBorder is
+                # false in this case
+                return True
+            else:
+                return False
+        # Dexterity edit form
+        elif HAS_DX and IDexterityContent.providedBy(context):
+            rtfields = self.getDXRichTextFieldNames(context.portal_type)
+            prefix = 'form\\\\.widgets\\\\.'
+        # Archetype add & edit form
+        elif HAS_AT and IBaseObject.providedBy(context):
+            rtfields = self.getATRichTextFieldNames()
+            prefix = ''
+        # Portlet add & edit form
+        elif IPortletForm.providedBy(self.view):
+            from plone.app.form.widgets.wysiwygwidget import WYSIWYGWidget
+            rtfields = [field.__name__ for field in self.view.form_fields 
+                        if field.custom_widget == WYSIWYGWidget]
+            prefix = 'form\\\\.'
+        else:
+            return False
+        self.suffix = self.buildsuffix(rtfields, prefix)
+
         factory = getToolByName(context, 'portal_factory', None)
-
-        if '++add++' in self.request.getURL():
-            # dexterity support for it's portal factory
-            # put portal type to session to access it from
-            # the compressor
-            self.suffix = '?pt=%s' % self.view.ti.getId()
-            return True
-
         if factory is not None and factory.isTemporary(context):
             # Always include TinyMCE on temporary pages
             # These are ment for editing and get false positives
             # with the showEditableBorder-method
             return True
-        plone_view = getMultiAdapter((self.context, self.request), name="plone")
-        return plone_view.showEditableBorder()
+        plone_view = getMultiAdapter((context, self.request), name="plone")
+        return plone_view.showEditableBorder() and rtfields 

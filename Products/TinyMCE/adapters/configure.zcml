@@ -51,25 +51,4 @@
         factory=".JSONSearch.JSONSearch"
         />
 
-    <adapter
-        for="Products.Archetypes.interfaces.IBaseObject"
-        provides=".interfaces.ISchema"
-        factory=".schema.ATSchema"
-        />
-
-    <configure
-        zcml:condition="installed plone.dexterity">
-        <adapter
-            for="plone.dexterity.interfaces.IDexterityContent"
-            provides=".interfaces.ISchema"
-            factory=".schema.DXSchema"
-            />
-
-        <adapter
-            for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-            provides=".interfaces.ISchema"
-            factory=".schema.DXAddSchema"
-            />
-    </configure>
-
 </configure>

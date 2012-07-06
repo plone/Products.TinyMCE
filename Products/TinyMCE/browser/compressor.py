@@ -15,8 +15,6 @@ from Products.Five import BrowserView
 from Products.ResourceRegistries.tools.packer import JavascriptPacker
 from zope.component import getMultiAdapter
 
-from Products.TinyMCE.adapters.interfaces import ISchema
-
 
 def isContextUrl(url):
     """Some url do not represent context. Check is based on url. If
@@ -78,22 +76,16 @@ class TinyMCECompressorView(BrowserView):
         if not isJS:
             jsonconfig = getMultiAdapter((self.context, self.request),
                                          name="tinymce-jsonconfiguration")
-            try:
-                schema = ISchema(self.context)
-                tinymce_config = '\n'.join(
-                    ["$('textarea#%s%s').tinymce(%s);" % (
-                        schema.prefix, fieldname, jsonconfig(fieldname, base_url))
-                     for fieldname in schema.getRichTextFieldNames()]
-                    )
-                tiny_mce_gzip = self.tiny_mce_gzip(tinymce_json_config=tinymce_config)
+            rtfields = self.request.get('f', '')
+            if isinstance(rtfields, basestring):
+                rtfields = [rtfields]
+            tinymce_config = '\n'.join(
+                ["$('textarea#%s%s').tinymce(%s);" % (
+                    self.request.get('p', ''), fieldname, jsonconfig(fieldname, base_url))
+                 for fieldname in rtfields]
+                )
+            tiny_mce_gzip = self.tiny_mce_gzip(tinymce_json_config=tinymce_config)
     
-            except TypeError:
-                # handle case when editing a portlet
-                tinymce_config = '\n'.join(
-                    ["$('textarea.mce_editable').tinymce(%s);" % (
-                        config(fieldname=None, script_url=base_url))]
-                    )
-                tiny_mce_gzip = self.tiny_mce_gzip(tinymce_json_config=tinymce_config)
             js_tool = getToolByName(aq_inner(self.context), 'portal_javascripts')
             if js_tool.getDebugMode():
                 return tiny_mce_gzip

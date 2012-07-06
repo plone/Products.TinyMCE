@@ -17,13 +17,8 @@ from Products.TinyMCE.adapters.interfaces.JSONDetails import IJSONDetails
 from Products.TinyMCE.adapters.interfaces.Save import ISave
 from Products.TinyMCE.adapters.interfaces.JSONSearch import IJSONSearch
 from Products.TinyMCE.adapters.interfaces.JSONFolderListing import IJSONFolderListing
-from Products.TinyMCE.adapters.interfaces import ISchema
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.tests.base import FunctionalTestCase
-from Products.TinyMCE.tests.base import HAS_DX, HAS_AT
-
-if HAS_DX:
-    from plone.dexterity.interfaces import IDexterityFTI
 
 
 class AdaptersTestCase(FunctionalTestCase):
@@ -173,28 +168,3 @@ class AdaptersTestCase(FunctionalTestCase):
         # The document should now contain our new text.
         self.assertEqual(self.folder_object[self.document].getText(), '<p>test</p>')
 
-
-class SchemaAdapterTestCase(FunctionalTestCase):
-    """ Test schema abstraction adapter """
-
-    @unittest.skipUnless(HAS_AT,
-            'Archetypes is not installed. Skipping AT schema adapter test.')
-    def test_atschema(self):
-        self.portal.invokeFactory('Document', id='document')
-        document = self.portal['document']
-        self.assertEqual(ISchema(document).getRichTextFieldNames(), ['text'])
-        self.assertEqual(ISchema(document).prefix, '')
-
-    @unittest.skipUnless(HAS_DX,
-            'Dexterity is not installed. Skipping DX schema adapter test.')
-    def test_dxschema(self):
-        fti = getUtility(IDexterityFTI, name="tinymce_test")
-        content = createObject(fti.factory)
-        self.assertEqual(ISchema(content).getRichTextFieldNames(), ['text', 'suffix'])
-
-    @unittest.skipUnless(HAS_DX,
-            'Dexterity is not installed. Skipping DX schema adapter test.')
-    def test_dxaddschema(self):
-        self.portal.REQUEST.form['pt'] = "tinymce_test"
-        self.assertEqual(ISchema(self.portal).getRichTextFieldNames(),
-                         ['text', 'suffix'])
