@@ -50,6 +50,10 @@ then
         fi
     done
     # some files have wrong encoding
+    # this command may not work on some (64bit) Mac systems
+    # See http://permalink.gmane.org/gmane.lisp.picolisp.general/1
+    # if you run into this issue, uncomment the following line
+    # and change the encoding for *ch, tw* manually
     sed -i 's/encoding=".*"/encoding="utf-8"/' xml/*
 
     python generate-po.py
