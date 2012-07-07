@@ -41,7 +41,10 @@ setup(name='Products.TinyMCE',
         # we can expect one of those in all versions of Plone
     ] + requires,
     extras_require={
-        'test': ['plone.app.testing', 'zope.testing', 'unittest2', 'plone.app.dexterity'],
+        'test': ['plone.app.testing',
+                 'zope.testing',
+                 'unittest2',
+                 'plone.app.dexterity'],
         'docs': ['sphinx'],
     },
 )
