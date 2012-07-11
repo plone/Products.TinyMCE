@@ -17,7 +17,6 @@ Contents:
     develop
     todo
     contributors
-    history
 
 
 Indices and tables
