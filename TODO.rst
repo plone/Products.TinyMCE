@@ -1,36 +1,14 @@
-TODO
-====
+High priority
+=============
 
-* [list: not sure if we can fix this, if domain sets x-frame-option we can't
-  preview, but we can issue an notice:
-  http://stackoverflow.com/questions/7950184/is-there-a-client-side-way-to-detect-x-frame-options]
-  external link: Refused to display document because display forbidden by
-  X-Frame-Options. Put on plone developers list discussion. solution: just add
-  a link to open the page in new window
+* add 1.3 GS profile to plone.app.upgrades for Plone 4.3
 
-* Plone-dev: ce432622ea357f426239573bf6042b8f80804393
-
-* Plone-dev: external link preview is dodgy because of X-FRAME-FORBIDDEN
-  (f15b4d1cfb66b2fb334b6c797ffbc55f455d9925,
-  0129bb74e8f8d31a738c26a8c8f27caddeb93e56,
-  99e7bdf28674193f137f5616ae0608287300d700)
-
-* Widget/field settings regression for AT/dexterity
-
-* Check all plugins/buttons
-
-* Merge (we should restrict upload of images to certian extensions and notify
+* Merge (we should restrict upload of images to certain extensions and notify
   user at wrong outcome)
   https://github.com/plone/Products.TinyMCE/commit/96d7415987bb1e2dc1283d02e8648fef85499fe7
 
 * Merge
   https://github.com/plone/Products.TinyMCE/commit/6aaf14e7e66592fce118d2050e699d66e14b201c
-
-* This one breaks image urls if we merge it
-  https://github.com/plone/Products.TinyMCE/commit/9fb8b4d9a71a7db7089758d570376cf0a52e4b0b
-
-* Bug: inserting flash video does not work
-  https://github.com/iElectric/Products.TinyMCE/issues/23
 
 * The new link/image dialog implementation seems to function fine and have
   feature paarity with the old one, but there are a number of visual glitches
@@ -58,24 +36,26 @@ TODO
   https://github.com/plone/Products.TinyMCE/commit/9fb8b4d9a71a7db7089758d570376cf0a52e4b0b
   from master
 
-* Inserting a external video (flash) does not work. Steps to reproduce:
+* "Edit without visual editor" does not work anymore
 
-    - Enable media (tinymce control panel)
+* Check all plugins/buttons
 
-    - Allow embed and object tags in the HTML filtering (and remove them from
-      not allowed tags) (HTML Filtering control panel)
+* Review everything was merged from 1.2.x branch
 
-    - Create a new page
+Normal priority
+---------------
 
-    - Click on the insert media button
+* Instead of having external tinymce repository at src/tinymce, use git submodule
 
-    - Choose Flash
+* Bug: inserting flash video does not work
+  https://github.com/iElectric/Products.TinyMCE/issues/23
 
-    - Enter the source (I used http://www.youtube.com/embed/IyxmDLnzSZA) (you
-      will see the dialog detects the width/height of the video and tries to
-      load in the flashobject)
+* External link preview throws error: Refused to display document because
+  display forbidden by X-Frame-Options.
+  Solution: just add a link to open the page in new window
 
-    - Press insert, the dialog does not close and nothing happens.
+* Always use resolveuids internally, cherry-pick from
+  hexagonit: ce432622ea357f426239573bf6042b8f80804393
 
 * Last week I discovered a problem with certain custom TinyMCE-plugins and
   Products.TinyMCE 1.3-beta1: if a custom plugin defines an alternative path
@@ -83,24 +63,17 @@ TODO
   then this plugin will not be found by TinyMCE. This feature works correctly
   in Products.TinyMCE 1.2.10. Is this a known problem?
 
-* "Edit without visual editor" does not work anymore
-
-1.3 final release
------------------
-
 * Close https://dev.plone.org/ticket/10039 (add tests),
   https://dev.plone.org/ticket/10571
 
 * Fix tests in jenkins
 
-* Instead of having external tinymce repository at src/tinymce, use git submodule
 
 * Bug: opera browser problems
 
 
 Future releases
 ---------------
-
 
 * Handle everything with UIDs internally (delete control panel option)
 
@@ -181,12 +154,7 @@ To be reported upstream
 
 * https://github.com/hexagonit/tinymce/cofeatures/mmit/f063d53f97c3afd9eb55f38d62034c50af65955e
 
-
-Known local fixes which need to be merged
------------------------------------------
-
 * fixes in skins/tinymce/tiny_mce_src.js
 
 * fixes in skins/tinymce/plugins/paste/pastetext.html.pt and
   skins/tinymce/plugins/paste/js/pastetext.js
-
