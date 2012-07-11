@@ -5,6 +5,15 @@ HISTORY
 1.3-beta2 (2012-xx-xx)
 ----------------------
 
+- Move history and todo to the main package directory and copy/merge etherpad
+  changes and history into the package so have have a single point of reference
+  for work left/done
+  [iElectric, fredvd]
+
+- Allow independent configurations for different richtext fields (Archetypes
+  and Dexterity)
+  [tom_gross]
+
 - fix editor styles formatting
   [mitchellrj]
 
@@ -26,7 +35,8 @@ HISTORY
   plone.app.contentypes but should work with all dexterity bases-images.
   [pbauer]
 
-- Set visual editor writing direction based on current language, not site preference. This closes ticket #10039.
+- Set visual editor writing direction based on current language, not site
+  preference. This closes ticket #10039.
   [iElectric]
 
 - Use getToolByName instead of getUtility for portal_tinymce.
@@ -34,10 +44,8 @@ HISTORY
   when doing acqusition chain.
   [iElectric]
 
-- Images now have title and alt attributes when rendered. This closes ticket #12322
-  [iElectric]
-
-- Visual editor should set writing direction based on current language, not site preference
+- Images now have title and alt attributes when rendered. This closes ticket
+  #12322
   [iElectric]
 
 - Added "Edit with visual editor" button
@@ -59,17 +67,50 @@ HISTORY
 
 - Initial Slovenian translation
   [zupo]
+  
+- Merge with 3.4.7 TinyMCE upstream release
+  [iElectric]
+
+- Remove URI encoding when POSTing
+  [iElectric]
+
+- Fix TinyMCE for static portlets
+  [iElectric]
+  
+- Fix external toolbar functionality from TinyMCE
+  [iElectric]
 
 1.3-beta1 (2011-10-24)
 ----------------------
 
+- ploneimage and plonelink plugins have been merged into plonebrowser
+  [iElectric]
+
+- dexterity: portal_transforms transform uids to normal links when page is
+  rendered -
+  
+- Removed KSS 
+  [tom_gross]
+
+- Reintroduce Plone 3 support
+  [tom_gross]
+
+- Use resolveuid as default
+  [iElectric]
+
+- Start of using jquery in some of the plugins. 
+  [iElectric]
+  
+- Introduction of shortcuts in browser select image/links
+  [iElectric]
+  
 - tinymce files are now pulled from upstream git repository
   [iElectric]
 
 - Upgrade tinymce to 3.4.7
   [iElectric]
 
-- Redesign of Image/Link browser, rewrite of javascript to use jquery
+- Redesign of Image/Link browser, rewrite of javascript to use jquery. Add thumbnails to browser. 
   [iElectric, zupo]
 
 - Use TinyMCE compressor to provide editor and plugins
