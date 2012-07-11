@@ -23,8 +23,7 @@ class ViewTestCase(IntegrationTestCase):
         view.__name__ = 'tiny_mce_gzip.js'
         self.assertIn('plonelink', view())
 
-    def test_compressorview_dexterity(self):
-        pass  # TODO
-
-    def test_compressorview_multiple_widgets(self):
-        pass  # TODO
+    def test_compressorview_mce_editable(self):
+        view = TinyMCECompressorView(self.portal.foobar, self.portal.REQUEST)
+        view.__name__ = 'tiny_mce_gzip.js'
+        self.assertTrue('.mce_editable' in view())

@@ -80,7 +80,7 @@ class TinyMCECompressorView(BrowserView):
             if isinstance(rtfields, basestring):
                 rtfields = [rtfields]
             tinymce_config = '\n'.join(
-                ["$('textarea#%s%s').tinymce(%s);" % (
+                ["$('textarea#%s%s.mce_editable').tinymce(%s);" % (
                     self.request.get('p', ''), fieldname, jsonconfig(fieldname, base_url))
                  for fieldname in rtfields]
                 )

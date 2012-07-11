@@ -36,8 +36,6 @@ High priority
   https://github.com/plone/Products.TinyMCE/commit/9fb8b4d9a71a7db7089758d570376cf0a52e4b0b
   from master
 
-* "Edit without visual editor" does not work anymore
-
 * Check all plugins/buttons
 
 * Review everything was merged from 1.2.x branch

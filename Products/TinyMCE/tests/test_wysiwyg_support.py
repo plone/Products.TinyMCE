@@ -68,6 +68,11 @@ class WysiwygSupportTestCase(IntegrationTestCase):
         browser.open(testpage)
         self.assertIn('tiny_mce_gzip.js', browser.contents)
         self.assertIn('jquery.tinymce', browser.contents)
+        self.assertIn('mce_editable', browser.contents)
+
+        # we should be able to supress tinymce
+        browser.open(testpage + '?tinymce.suppress=text')
+        self.assertNotIn('mce_editable', browser.contents)
 
         # If the user sets 'None'...
         browser.open(personalizer)
