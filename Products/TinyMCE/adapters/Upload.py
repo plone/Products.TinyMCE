@@ -2,13 +2,14 @@ from Acquisition import aq_inner
 from Acquisition import aq_parent
 from zExceptions import BadRequest
 from AccessControl.unauthorized import Unauthorized
-from zope.interface import implements
+from Products.CMFCore.interfaces._content import IFolderish
 from Products.CMFCore.utils import getToolByName
+from plone.outputfilters.browser.resolveuid import uuidFor
+from zope.interface import implements
+from zope.i18nmessageid import MessageFactory
 
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.adapters.interfaces.Upload import IUpload
-from Products.CMFCore.interfaces._content import IFolderish
-from plone.outputfilters.browser.resolveuid import uuidFor
 
 import pkg_resources
 try:
@@ -22,6 +23,7 @@ else:
     from plone.namedfile.interfaces import INamedImageField
     from plone.rfc822.interfaces import IPrimaryFieldInfo
 
+
 TEMPLATE = """
 <html>
 <head></head>
@@ -29,6 +31,7 @@ TEMPLATE = """
 </html>
 """
 
+_ = MessageFactory('plone.tinymce')
 
 class Upload(object):
     """Adds the uploaded file to the folder"""
@@ -76,7 +79,10 @@ class Upload(object):
             count += 1
 
     def upload(self):
-        """Adds uploaded file"""
+        """Adds uploaded file.
+
+        Required params: uploadfile, uploadtitle, uploaddescription
+        """
         context = aq_inner(self.context)
         if not IFolderish.providedBy(context):
             context = aq_parent(context)
@@ -113,15 +119,12 @@ class Upload(object):
         # Get an unused filename without path
         id = self.cleanupFilename(id)
 
-        title = request['uploadtitle']
-        description = request['uploaddescription']
-
         for metatype in uploadable_types:
             try:
                 newid = context.invokeFactory(type_name=metatype, id=id)
                 if newid is None or newid == '':
                     newid = id
-
+                break
             except ValueError:
                 continue
         else:
@@ -131,6 +134,9 @@ class Upload(object):
 
         # Set title + description.
         # Attempt to use Archetypes mutator if there is one, in case it uses a custom storage
+        title = request['uploadtitle']
+        description = request['uploaddescription']
+
         if title:
             try:
                 obj.setTitle(title)

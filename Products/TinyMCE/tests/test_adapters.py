@@ -2,6 +2,9 @@
 This functionality is added to plone content types using adapters.
 """
 import os
+from cgi import FieldStorage
+from tempfile import TemporaryFile
+import unittest2 as unittest
 
 try:
     import simplejson as json
@@ -9,15 +12,15 @@ try:
 except ImportError:
     import json
 
-import unittest2 as unittest
-
 from zope.component import getUtility, createObject
+from Products.CMFCore.utils import getToolByName
+from ZPublisher.HTTPRequest import FileUpload
 
 from Products.TinyMCE.adapters.interfaces.JSONDetails import IJSONDetails
 from Products.TinyMCE.adapters.interfaces.Save import ISave
 from Products.TinyMCE.adapters.interfaces.JSONSearch import IJSONSearch
 from Products.TinyMCE.adapters.interfaces.JSONFolderListing import IJSONFolderListing
-from Products.TinyMCE.interfaces.utility import ITinyMCE
+from Products.TinyMCE.adapters.interfaces.Upload import IUpload
 from Products.TinyMCE.tests.base import FunctionalTestCase
 
 
@@ -25,9 +28,10 @@ class AdaptersTestCase(FunctionalTestCase):
 
     def setUp(self):
         super(AdaptersTestCase, self).setUp()
-        self.utility = getUtility(ITinyMCE)
-        folder = self.portal.invokeFactory('Folder', id='folder')
+
+        self.utility = getToolByName(self.portal, 'portal_tinymce')
         self.document = self.portal.invokeFactory('Document', id='document')
+        folder = self.portal.invokeFactory('Folder', id='folder')
         self.folder_object = self.portal[folder]
 
     def test_json_details_document(self):
@@ -104,7 +108,7 @@ class AdaptersTestCase(FunctionalTestCase):
         self.assertRegexpMatches(listing,
             '\{.*"path": \[{"url": "http://nohost/plone/folder".*}')
 
-    def test_json_listing_icon(self):
+    def test_json_folder_listing_icon(self):
         self.portal.invokeFactory('File', id='somefile.bin')
         linkable_portal_types = self.utility.linkable.split('\n')
         linkable_portal_types.extend(self.utility.containsobjects.split('\n'))
@@ -168,3 +172,36 @@ class AdaptersTestCase(FunctionalTestCase):
         # The document should now contain our new text.
         self.assertEqual(self.folder_object[self.document].getText(), '<p>test</p>')
 
+    def _prepare_file(self, filename='test.bin', type_='text/plain'):
+        fp = TemporaryFile('w+b')
+        fp.write('\x00' + 'x' * (1 << 19))
+        fp.seek(0)
+        env = {'REQUEST_METHOD': 'POST'}
+        headers = {'Content-Type': type_,
+                   'content-length': 1 << 19,
+                   'content-disposition': 'attachment; filename=%s' % filename}
+        fs = FieldStorage(fp=fp, environ=env, headers=headers)
+        fu = FileUpload(fs)
+        fu.read = fp.read
+        fu.seek = fp.seek
+        fu.tell = fp.tell
+        return fu
+
+    def test_json_upload_not_allowed(self):
+        self.portal.REQUEST['uploadfile'] = self._prepare_file()
+        self.portal.REQUEST['uploadtitle'] = 'foobar'
+        self.portal.REQUEST['uploaddescription'] = 'foo'
+
+        obj = IUpload(self.folder_object)
+        msg = obj.upload()
+
+        self.assertTrue('/plone/folder/test.bin' in msg)
+
+    def test_json_upload_image(self):
+        self.portal.REQUEST['uploadfile'] = self._prepare_file('common_work.jpeg', type_='image/jpeg')
+        self.portal.REQUEST['uploadtitle'] = 'foobar'
+        self.portal.REQUEST['uploaddescription'] = 'foo'
+
+        obj = IUpload(self.folder_object)
+        msg = obj.upload()
+        self.assertTrue('/plone/folder/common_work.jpeg' in msg)
