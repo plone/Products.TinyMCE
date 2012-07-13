@@ -104,6 +104,22 @@ BrowserDialog.prototype.init = function () {
         e.stopPropagation();
         self.checkSearch(e);
     });
+    jq('#clear-btn', document).click(function (e) {
+        e.preventDefault();
+        jq('#searchtext', document).val("");
+        self.checkSearch(e);
+    });
+    jq('#search-btn', document).click(function (e) {
+        e.preventDefault();
+        self.checkSearch(e);
+    });
+    // handle shortcuts button
+    jq("#shortcutsicon", document).click(function(e) {
+        e.preventDefault();
+        jq(this).toggleClass('selected');
+        jq('#shortcutsview', document).toggle();
+    });
+    
     // handle different folder listing view types
     jq('#general_panel .legend a', document).click(function (e) {
         self.editing_existing_image = true;
@@ -121,6 +137,9 @@ BrowserDialog.prototype.init = function () {
     if (this.editor.settings.rooted === true) {
         jq('#home', document).hide();
     }
+    if (!this.editor.settings.enable_external_link_preview) {
+        jq('#preview-column', document).hide();
+    }
 
     // setup UI depending on plugin type
     if (this.is_link_plugin === true) {
@@ -137,12 +156,13 @@ BrowserDialog.prototype.init = function () {
         jq('.legend a', document).removeClass('current');
         jq('#listview', document).addClass('current');
         jq('.legend', document).hide();
+        jq('.action-icons', document).hide();
 
         // setup link buttons acions
         jq('#linktype a', document).click(function (e) {
             e.preventDefault();
-            jq('#linktype_panel p', document).removeClass('current');
-            jq(this, document).parent('p').addClass('current');
+            jq('#linktype_panel div', document).removeClass('current');
+            jq(this, document).parent('div').addClass('current');
             switch (jq(this).attr('href')) {
                 case "#internal":
                     self.displayPanel('browse');
@@ -159,16 +179,14 @@ BrowserDialog.prototype.init = function () {
                     break;
             }
         });
-        jq('#advanced_options', document).click(function (e) {
-            self.displayPanel('advanced');
-            e.preventDefault();
-        });
         jq('#externalurl', document).keyup(function (e) {
             self.checkExternalURL(this.value);
         });
         jq('#targetlist', document).change(this.setupPopupVisibility);
         jq('#previewexternalurl', document).click(function (e) {
             e.preventDefault();
+            jq('#previewexternal', document).show();
+            jq(this).text('Refresh Preview');
             self.previewExternalURL();
         });
 
@@ -184,9 +202,12 @@ BrowserDialog.prototype.init = function () {
 
             // determine link type
             if (href.indexOf('#') === 0) {
+                // anchor
                 jq('input:radio[value=' + href + ']', document).click();
                 jq('#linktype a[href=#anchor]', document).click();
+                jq('#cssstyle', document).val(selected_node.attr('style'));
             } else if (href.indexOf('mailto:') > -1) {
+                // email
                 href = href.split('mailto:')[1].split('?subject=');
                 if (href.length === 2) {
                     mailaddress = href[0];
@@ -198,12 +219,16 @@ BrowserDialog.prototype.init = function () {
 
                 jq('#mailaddress', document).val(mailaddress);
                 jq('#mailsubject', document).val(mailsubject);
+                jq('#cssstyle', document).val(selected_node.attr('style'));
                 jq('#linktype a[href=#email]', document).click();
             } else if ((href.indexOf(this.editor.settings.portal_url) === -1) &&
                 ((href.indexOf('http://') === 0) || (href.indexOf('https://') === 0) || (href.indexOf('ftp://') === 0))) {
+                // external
                 this.checkExternalURL(href);
+                jq('#cssstyle', document).val(selected_node.attr('style'));
                 jq('#linktype a[href=#external]', document).click();
             } else {
+                // internal
                 if (href.indexOf('#') !== -1) {
                     href = href.split('#')[0];
                 }
@@ -226,9 +251,11 @@ BrowserDialog.prototype.init = function () {
                     this.current_link = this.getAbsoluteUrl(this.editor.settings.document_base_url, href);
                     this.getFolderListing(this.getParentUrl(this.current_link), 'tinymce-jsonlinkablefolderlisting');
                 }
+                jq('#cssstyle', document).val(selected_node.attr('style'));
             }
 
             jq('#targetlist', document).val(selected_node.attr('target'));
+            // TODO: set the rest of the "advanced" fields that are in common for all of them
         } else {
             // plain text selection
             href = jq.trim(this.editor.selection.getContent());
@@ -242,9 +269,10 @@ BrowserDialog.prototype.init = function () {
 
     } else {
         /* handle image plugin startup */
-        jq('#browseimage_panel h2', document).text(this.labels.label_browseimage);
+        // jq('#browseimage_panel h2', document).text(this.labels.label_browseimage);
         jq('#addimage_panel h2', document).text(this.labels.label_addnewimage);
         jq('#plonebrowser', document).removeClass('link-browser').addClass('image-browser');
+        jq('#linktarget', document).hide();
 
         if (selected_node.get(0).tagName && selected_node.get(0).tagName.toUpperCase() === 'IMG') {
             /** The image dialog was opened to edit an existing image element. **/
@@ -381,16 +409,15 @@ BrowserDialog.prototype.parseImageScale = function (url) {
 /**
  * Given DOM node and href value, setup all node attributes/properies
  */
-BrowserDialog.prototype.setAnchorAttributes = function (node, link) {
-    var target = jq('#targetlist', document).val(),
-        panelname = jq('#linktype .current a', document).attr('href');
-
-    jq(node).attr('href', link);
-    jq(node).attr('data-mce-href', link);
-    jq(node).attr('target', target);
+BrowserDialog.prototype.setLinkAttributes = function (node, link) {
+    var panelname = jq('#linktype .current a', document).attr('href');
 
     jq(node)
+        .attr('href', link)
+        .attr('data-mce-href', link)
         .attr('title', jq('#title', document).val())
+        .attr('target', jq('#targetlist', document).val())
+        .attr('style', jq('#cssstyle', document).val())
         .removeClass('internal-link external-link anchor-link mail-link')
         .addClass(panelname.substr(1, panelname.length) + '-link');
 };
@@ -479,17 +506,28 @@ BrowserDialog.prototype.insertLink = function () {
         // Create new anchor elements
         // no idea what this does, yet.
         this.editor.getDoc().execCommand("unlink", false, null);
-        this.tinyMCEPopup.execCommand("CreateLink", false, "#mce_temp_url#", {skip_undo : 1});
+
+        if (tinymce.isWebKit) {
+            // https://github.com/tinymce/tinymce/pull/57#issuecomment-1771936
+            img = this.editor.dom.getParent(this.editor.selection.getNode(), 'img');
+            if (img !== null) {
+                this.editor.getDoc().execCommand("insertHTML", false, "<a href='#mce_temp_url#'>"+img.outerHTML+"</a>");
+            } else {
+                this.tinyMCEPopup.execCommand("CreateLink", false, "#mce_temp_url#", {skip_undo : 1});
+            }
+        } else {
+            this.tinyMCEPopup.execCommand("CreateLink", false, "#mce_temp_url#", {skip_undo : 1});
+        }
 
         elementArray = tinymce.grep(this.editor.dom.select("a"), function(n) {
             return self.editor.dom.getAttrib(n, 'href') === '#mce_temp_url#';
         });
         for (i = 0; i < elementArray.length; i++) {
-            this.setAnchorAttributes(selected_node = elementArray[i], link);
+            this.setLinkAttributes(selected_node = elementArray[i], link);
         }
     } else {
         // Update attributes
-        this.setAnchorAttributes(selected_node, link);
+        this.setLinkAttributes(selected_node, link);
     }
 
     // Don't move caret if selection was image
@@ -577,6 +615,11 @@ BrowserDialog.prototype.checkSearch = function (e) {
     var el = jq('#searchtext', document),
         len = el.val().length;
 
+    // Show the clear button when there is text in the search field
+    if (len > 0) {
+        jq('#clear-btn', document).show();
+    }
+    
     // Activate search when we have enough input and either livesearch is
     // enabled or the user explicitly pressed Enter.
     if (len >= 3 && (this.tinyMCEPopup.editor.settings.livesearch === true || e.which === 13)) {
@@ -590,6 +633,10 @@ BrowserDialog.prototype.checkSearch = function (e) {
         this.is_search_activated = false;
         el.val('');
         this.getCurrentFolderListing();
+    }
+    
+    if (len === 0 || e.which === 27) {
+        jq('#clear-btn', document).hide();
     }
 };
 
@@ -631,7 +678,7 @@ BrowserDialog.prototype.setDetails = function (url) {
             if (data.thumb !== "") {
                 jq('#previewimagecontainer', document)
                     .empty()
-                    .append(jq('<img/>').attr({'src': data.thumb}));
+                    .append(jq('<img/>', document).attr({'src': data.thumb}));
                 // Save the thumbnail URL for later use.
                 self.thumb_url = data.thumb;
             } else {
@@ -648,7 +695,7 @@ BrowserDialog.prototype.setDetails = function (url) {
 
                 jq.each(data.scales, function () {
                     var scale = this,
-                        option = jq('<option/>')
+                        option = jq('<option/>', document)
                             .attr({'value': scale.value})
                             .text(scale_title(scale));
 
@@ -734,53 +781,68 @@ BrowserDialog.prototype.getFolderListing = function (context_url, method) {
                 col_items_number = self.editor.settings.num_of_thumb_columns;
 
             if (data.items.length === 0) {
-                html.push(self.labels.label_no_items);
+                html.push('<div id="no-items">' + self.labels.label_no_items + '</div>');
             } else {
                 jq.each(data.items, function (i, item) {
                     if (item.url === self.current_link && self.editor.settings.link_using_uids) {
                         self.current_link = 'resolveuid/' + item.uid;
                     }
-                    if (item.is_folderish) {
-                        folder_html.push('<div class="list item folderish ' + (i % 2 === 0 ? 'even' : 'odd') + '">');
-                        if (self.is_link_plugin === true) {
-                            jq.merge(folder_html, [
-                                '<input href="' + item.url + '" ',
-                                    'type="radio" class="noborder" style="margin: 0; width: 16px" name="internallink" value="',
-                                    'resolveuid/' + item.uid ,
-                                    '"/> '
-                            ]);
-                        } else {
-                            folder_html.push('<img src="img/arrow_right.png" />');
-                        }
-                        jq.merge(folder_html, [
-                                item.icon,
-                                '<a href="' + item.url + '" class="folderlink contenttype-' + item.normalized_type + '">',
-                                    item.title,
-                                '</a>',
-                            '</div>'
-                        ]);
-                    } else {
-                        switch (jq('#general_panel .legend .current', document).attr('id')) {
-                            // TODO: use jquery dom to be sure stuff is closed
-                            case 'listview':
+                    switch (jq('#general_panel .legend .current', document).attr('id')) {
+                        // TODO: use jquery dom to be sure stuff is closed
+                        case 'listview':
+                            if (item.is_folderish) {
+                                folder_html.push('<div class="list item folderish ' + (i % 2 === 0 ? 'even' : 'odd') + '">');
+                                if (self.is_link_plugin === true) {
+                                    jq.merge(folder_html, [
+                                        '<input href="' + item.url + '" ',
+                                            'type="radio" class="noborder" style="margin: 0; width: 16px" name="internallink" value="',
+                                            'resolveuid/' + item.uid ,
+                                            '"/> '
+                                    ]);
+                                } else {
+                                    folder_html.push('<img src="img/arrow_right.png" />');
+                                }
+                                jq.merge(folder_html, [
+                                        item.icon,
+                                        '<a href="' + item.url + '" class="folderlink contenttype-' + item.normalized_type + '">',
+                                            item.title,
+                                        '</a>',
+                                    '</div>'
+                                ]);
+                            } else {
                                 jq.merge(item_html, [
                                     '<div class="item list ' + (i % 2 === 0 ? 'even' : 'odd') + '" title="' + item.description + '">',
                                         '<input href="' + item.url + '" ',
                                             'type="radio" class="noborder" style="margin: 0; width: 16px" name="internallink" value="',
                                             'resolveuid/' + item.uid ,
                                             '"/> ',
-                                        item.icon,
                                         '<span class="contenttype-' + item.normalized_type + '">' + item.title + '</span>',
                                     '</div>'
                                 ]);
-                                break;
-                            case 'thumbview':
-                                if (item_number % col_items_number === 0) {
-                                    item_html.push('<div class="row">');
-                                }
+                            }
+                            break;
+                        case 'thumbview':
+                            if (item_number % col_items_number === 0) {
+                                item_html.push('<div class="row">');
+                            }
+
+                            if (item.is_folderish) {
                                 jq.merge(item_html, [
                                     '<div class="width-1:' + col_items_number + ' cell position-' + item_number % col_items_number * (16 / col_items_number) + '">',
-                                        '<div class="thumbnail item ' + (i % 2 === 0 ? 'even' : 'odd') + '" title="' + item.description +  '">',
+                                        '<div class="thumbnail item folderish" title="' + item.description +  '">',
+                                            '<div style="width: ' + thumb_width + 'px; height: ' + thumb_height + 'px" class="thumb">',
+                                                '<img src="img/folder_big.png" alt="' + item.title + '" />',
+                                            '</div>',
+                                            '<a href="' + item.url + '">',
+                                                item.title,
+                                            '</a>',
+                                        '</div>',
+                                    '</div>'
+                                ]);
+                            } else {
+                                jq.merge(item_html, [
+                                    '<div class="width-1:' + col_items_number + ' cell position-' + item_number % col_items_number * (16 / col_items_number) + '">',
+                                        '<div class="thumbnail item" title="' + item.description +  '">',
                                             '<div style="width: ' + thumb_width + 'px; height: ' + thumb_height + 'px" class="thumb">',
                                                 '<img src="' + item.url + '/@@images/image/' + thumb_name + '" alt="' + item.title + '" />',
                                             '</div>',
@@ -792,13 +854,15 @@ BrowserDialog.prototype.getFolderListing = function (context_url, method) {
                                         '</div>',
                                     '</div>'
                                 ]);
-                                if (item_number % col_items_number === col_items_number - 1) {
-                                    item_html.push('</div>');
-                                }
-                                item_number++;
-                                break;
-                        }
+                            }
+                        
+                            if (item_number % col_items_number === col_items_number - 1) {
+                                item_html.push('</div>');
+                            }
+                            item_number++;
+                            break;
                     }
+                    
 
                 });
             }
@@ -808,40 +872,39 @@ BrowserDialog.prototype.getFolderListing = function (context_url, method) {
 
             // display shortcuts
             if (self.is_search_activated === false && self.shortcuts_html.length) {
-                html = [];
-                jq.merge(html, [
-                    '<div id="shortcuts" class="browser-separator">',
-                        '<img src="img/arrow_down.png" />',
-                        '<strong>' + self.labels.label_shortcuts + '</strong>',
-                    '</div>'
-                ]);
+                
+                jqShortcutsBtn = jq('#shortcutsicon', document);
+                jqShortcutsView = jq('#shortcutsview', document);
+                jqShortcutItem = jq('#shortcutsview #item-template', document);
+                
+                jqShortcutsBtn.attr('title', self.labels.label_shortcuts);
+                
                 jq.each(self.shortcuts_html, function () {
-                    html.push('<div class="item list shortcut">' + this + '</div>');
+                    jqItem = jqShortcutItem.clone();
+                    jqItem.append(''+this);
+                    jqItem.removeAttr('id');
+                    jqItem.appendTo(jqShortcutsView);
                 });
-                jq.merge(html, [
-                    '<div class="browser-separator">',
-                        '<img src="img/arrow_down.png" />',
-                        '<strong>' + self.labels.label_browser + '</strong>',
-                    '</div>'
-                ]);
-                jq('#internallinkcontainer', document).prepend(html.join(''));
+                jqShortcutItem.remove();
 
-                // Shortcuts listing can be hidden
-                jq('#shortcuts', document).click(function() {
-                    jq('#internallinkcontainer .shortcut', document).toggle();
-                });
             }
 
+            // Each time this function is called, a new event handler is created,
+            // so we need to unbind all of them before continueing.
+            // Namespace the events so we can unbind them easily
+
             // make rows clickable
-            jq('#internallinkcontainer div.item', document).click(function() {
-                var el = jq(this),
-                    checkbox = el.find('input');
-                if (checkbox.length > 0) {
-                    checkbox.click();
-                } else {
-                    el.find('a').click();
-                }
-            });
+            jq('#internallinkcontainer div.item', document)
+                .unbind('.imagebrowser')
+                .bind('click.imagebrowser', function() {
+                    var el = jq(this),
+                        checkbox = el.find('input');
+                    if (checkbox.length > 0) {
+                        checkbox.click();
+                    } else {
+                        el.find('a').click();
+                    }
+                });
 
             // breadcrumbs
             html = [];
@@ -852,7 +915,7 @@ BrowserDialog.prototype.getFolderListing = function (context_url, method) {
                 }
                 html.push(item.icon);
                 if (i === len - 1) {
-                    html.push(item.title);
+                    html.push('<span>' + item.title + '</span>');
                 } else {
                     html.push('<a href="' + item.url + '">' + item.title + '</a>');
                 }
@@ -860,17 +923,21 @@ BrowserDialog.prototype.getFolderListing = function (context_url, method) {
             jq('#internalpath', document).html(html.join(''));
 
             // folder link action
-            jq('#internallinkcontainer a, #internalpath a', document).click(function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                self.getFolderListing(jq(this).attr('href'), self.method_folderlisting);
-            });
+            jq('#internallinkcontainer a, #internalpath a, #shortcutsview a', document)
+                .unbind('.imagebrowser')
+                .bind('click.imagebrowser', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    self.getFolderListing(jq(this).attr('href'), self.method_folderlisting);
+                });
             // item link action
-            jq('#internallinkcontainer input:radio', document).click(function (e) {
-                e.preventDefault();
-                e.stopPropagation();
-                self.setDetails(jq(this).attr('href'));
-            });
+            jq('#internallinkcontainer input:radio', document)
+                .unbind('.imagebrowser')
+                .bind('click.imagebrowser', function (e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    self.setDetails(jq(this).attr('href'));
+                });
 
             // Make the image upload form upload the image into the current container.
             jq('#upload_form', document).attr('action', context_url + '/tinymce-upload');
@@ -976,56 +1043,68 @@ BrowserDialog.prototype.displayPanel = function(panel, upload_allowed) {
     // handle email panel
     if (panel === "email") {
         jq('#email_panel', document).removeClass('hide');
+        // move the common link fileds to appropriate location
+        jq('#email_panel', document).append(jq('#common-link-fields', document).removeClass('hide'));
+        jq('#insert-selection', document).removeAttr('disabled');
     } else {
         jq('#email_panel', document).addClass('hide');
     }
     // handle anchor panel
     if (panel === "anchor") {
         jq('#anchor_panel', document).removeClass('hide');
+        // move the common link fileds to appropriate location
+        jq('#anchorlinkcontainer', document).append(jq('#common-link-fields', document).removeClass('hide'));
+        jq('#insert-selection', document).removeAttr('disabled');
     } else {
         jq('#anchor_panel', document).addClass('hide');
     }
     // handle external panel
     if (panel === "external") {
         jq('#external_panel', document).removeClass('hide');
+        // move the common link fileds to appropriate location
+        jq('#external-column', document).append(jq('#common-link-fields', document).removeClass('hide'));
+        jq('#insert-selection', document).removeAttr('disabled');
     } else {
         jq('#external_panel', document).addClass('hide');
     }
-    // handle advanced panel
-    if (panel === "advanced") {
-        jq('#advanced_panel', document).removeClass('hide');
-    } else {
-        jq('#advanced_panel', document).addClass('hide');
-    }
-    // show details panel, if an entry is selected and we
-    // return from the advanced panel
+    // show details panel, if an entry is selected
     checkedlink = jq("input:radio[name=internallink]:checked", document);
     if ((checkedlink.length === 1) && (panel === "browse")) {
       this.setDetails(jq(checkedlink).attr('value'));
     }
+    
+    // handle browse panel
+    if (jq.inArray(panel, ["search", "details", "browse", "upload"]) > -1) {
+        if (jq.inArray(panel, ["upload", "details"]) > -1) {
+            jq('#browseimage_panel #general_panel', document).removeClass('width-full').addClass('width-3:4');
+        } else {
+            jq('#browseimage_panel #general_panel', document).removeClass('width-3:4').addClass('width-full');;
+        }
+        jq('#browseimage_panel', document).removeClass('hide').addClass('row');
+        jq('#insert-selection', document).attr('disabled','disabled');
+        jq('#upload-button', document).removeClass('hide');
+    } else {
+        jq('#browseimage_panel', document).removeClass('row').addClass('hide');
+        jq('#upload-button', document).addClass('hide');
+    }
+    
     // handle details/preview panel
     if (panel === 'details') {
-        jq('#details_panel', document).removeClass("hide");
+        jq('#details_panel', document).removeClass('hide');
+        // move the common link fileds to appropriate location but only for the
+        // internal link panel
+        if( jq('#internal_link:visible', document).length > 0) {
+            jq('#details-fields', document).append(jq('#common-link-fields', document).removeClass('hide'));            
+        }
+        jq('#insert-selection', document).removeAttr('disabled');
     } else {
-        jq('#details_panel', document).addClass("hide");
+        jq('#details_panel', document).addClass('hide');
     }
     // handle upload panel
     if (panel === "upload") {
         jq('#addimage_panel', document).removeClass('hide');
     } else {
         jq('#addimage_panel', document).addClass('hide');
-    }
-    // handle browse panel
-    if (jq.inArray(panel, ["search", "details", "browse", "upload"]) > -1) {
-        correction_length = this.is_link_plugin ? 150 : 0;
-        if (jq.inArray(panel, ["upload", "details"]) > -1) {
-            jq('#browseimage_panel', document).width(545 - correction_length);
-        } else {
-            jq('#browseimage_panel', document).width(780 - correction_length);
-        }
-        jq('#browseimage_panel', document).removeClass("hide");
-    } else {
-        jq('#browseimage_panel', document).addClass("hide");
     }
 };
 

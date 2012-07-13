@@ -41,7 +41,8 @@
     						</div>
 						</div>
 
-						<div class="field">
+						<!-- comment out due to Plone bug, fix by setting class tag -->
+						<div class="field" style="display: none">
                                                         <!-- align is not used in form but the JS depends on it -->
                               				<input id="align" name="align" type="hidden" value="" />
 							<label for="valign" i18n:translate="table_dlg_valign"></label>

@@ -33,8 +33,8 @@
 								<input name="height" type="text" id="height" value="" size="4" maxlength="4" onchange="changedSize();" />
 							</div>
 						</div>
-
-						<div class="field">
+						<!-- comment out due to Plone bug, fix by setting class tag -->
+						<div class="field" style="display: none">
 							<label for="valign" i18n:translate="table_dlg_valign"></label>
 							<div class="widget">
 								<select id="valign" name="valign">
