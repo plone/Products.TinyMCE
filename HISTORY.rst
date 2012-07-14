@@ -5,6 +5,9 @@ HISTORY
 1.3-beta2 (2012-xx-xx)
 ----------------------
 
+- Merge modified plonebrowser UI from hexagonit fork
+  [iElectric, vsomogyi]
+
 - Move history and todo to the main package directory and copy/merge etherpad
   changes and history into the package so have have a single point of reference
   for work left/done
