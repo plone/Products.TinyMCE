@@ -12,25 +12,9 @@ High priority
   https://github.com/plone/Products.TinyMCE/commit/9fb8b4d9a71a7db7089758d570376cf0a52e4b0b
   from master
 
-* The new link/image dialog implementation seems to function fine and have
-  feature paarity with the old one, but there are a number of visual glitches
-  which make it look jarring and unfinished:
-    1. Something is too wide so the Link Browser floats below, mostly off
-    screen.
-    2. The text is too big compared to elsewhere in the theme.
-    3. A different icon set is used than elsewhere in Plone. We should be
-    consistent.
-    4. The standard Plone icons for content types are not aligned with their
-    content item.
-    5. The buttons are a weird style that is different from elsewhere in
-    Plone. We should be consistent. (This is true for all tinymce dialogs,
-    not just the custom Plone ones.)
-    6. The "Advanced options" page has a blank dropdown of unclear function.
-
 * The "definition list" feature does not seem to work. It creates the list and
   One can enter the <dt>, but when we hit enter it does not switch to editing
-  a <dd> Needs to be updated to not register the old resources when a Plone
-  site is created.
+  a <dd>
 
 * We should probably forward-port
   https://github.com/plone/Products.TinyMCE/commit/4937f74b8485c5800347c204385c3f0923b45e81
