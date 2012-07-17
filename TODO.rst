@@ -15,8 +15,6 @@ High priority
 
 * Check all plugins/buttons
 
-* Review everything was merged from 1.2.x branch
-
 Normal priority
 ---------------
 
