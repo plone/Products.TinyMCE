@@ -4,6 +4,8 @@ High priority
 * add 1.3 GS profile to plone.app.upgrades for Plone 4.3
 
 * We should probably forward-port
+  https://github.com/plone/Products.TinyMCE/commit/4937f74b8485c5800347c204385c3f0923b45e81
+  and
   https://github.com/plone/Products.TinyMCE/commit/9fb8b4d9a71a7db7089758d570376cf0a52e4b0b
   from master
 
@@ -14,6 +16,8 @@ High priority
 * Review everything was merged from 1.2.x branch
 
 * Check all plugins/buttons
+
+* Review everything was merged from 1.2.x branch
 
 Normal priority
 ---------------
