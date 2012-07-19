@@ -207,7 +207,12 @@ class ConfigurationViewlet(ViewletBase):
 
         # Dexterity add form
         if HAS_DX and '++add++' in self.request.getURL():
-            rtfields = self.getDXRichTextFieldNames(self.view.ti.getId())
+            if hasattr(self.view, 'ti'):
+                portal_type = self.view.ti.getId()
+            else:
+                url = self.request.getURL()
+                portal_type = url[url.find('++add++')+7:]
+            rtfields = self.getDXRichTextFieldNames(portal_type)
             if rtfields:
                 prefix = 'form\\\\.widgets\\\\.'
                 self.suffix = self.buildsuffix(rtfields, prefix)

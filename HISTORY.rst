@@ -5,6 +5,9 @@ HISTORY
 1.3-beta2 (2012-xx-xx)
 ----------------------
 
+- Fixed viewlet error, where DX add view is not (yet) available
+  [tom_gross]
+
 - Merge modified plonebrowser UI from hexagonit fork
   [iElectric, vsomogyi]
 
