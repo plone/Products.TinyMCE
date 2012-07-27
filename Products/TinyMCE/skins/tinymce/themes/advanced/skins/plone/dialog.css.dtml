@@ -12,12 +12,19 @@ background: transparent;
 font-size: 110%;
 padding: 1em 1em 0em 1em;
 background: &dtml-backgroundColor;;
-margin: 0!important; 
+margin: 0!important;
 }
 
+/* Make sure we define dialog heading sizes in pixels as dialog sizes themselves are in pixels.
+ * Otherwise theme customizations break TinyMCE dialogs causing text clipping, mispositioned
+ * elements and scrollbars appear in wrong places.
+ */
+
+.dialog-wrapper h2 {
+    font-size: 1em;
+    font-family: Arial,FreeSans,sans-serif;
 }
 
-}
 .dialog-wrapper table.listing {
 margin: 0em;
 }
