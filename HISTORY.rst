@@ -73,7 +73,7 @@ HISTORY
 
 - Initial Slovenian translation
   [zupo]
-  
+
 - Merge with 3.4.7 TinyMCE upstream release
   [iElectric]
 
@@ -82,9 +82,12 @@ HISTORY
 
 - Fix TinyMCE for static portlets
   [iElectric]
-  
+
 - Fix external toolbar functionality from TinyMCE
   [iElectric]
+
+- Fixed issue where custom theme font breaks TinyMCE dialog layout
+  due to enlarged <h2> size [miohtama]
 
 1.3-beta1 (2011-10-24)
 ----------------------
@@ -94,8 +97,8 @@ HISTORY
 
 - dexterity: portal_transforms transform uids to normal links when page is
   rendered -
-  
-- Removed KSS 
+
+- Removed KSS
   [tom_gross]
 
 - Reintroduce Plone 3 support
@@ -104,19 +107,19 @@ HISTORY
 - Use resolveuid as default
   [iElectric]
 
-- Start of using jquery in some of the plugins. 
+- Start of using jquery in some of the plugins.
   [iElectric]
-  
+
 - Introduction of shortcuts in browser select image/links
   [iElectric]
-  
+
 - tinymce files are now pulled from upstream git repository
   [iElectric]
 
 - Upgrade tinymce to 3.4.7
   [iElectric]
 
-- Redesign of Image/Link browser, rewrite of javascript to use jquery. Add thumbnails to browser. 
+- Redesign of Image/Link browser, rewrite of javascript to use jquery. Add thumbnails to browser.
   [iElectric, zupo]
 
 - Use TinyMCE compressor to provide editor and plugins
