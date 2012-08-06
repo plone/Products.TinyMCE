@@ -82,6 +82,7 @@ class BrowserTestCase(FunctionalTestCase):
         self.assertEqual(doc.Language(), 'en')
         output = self.portal.restrictedTraverse(document_jsonconfig_url)('text')
         self.assertIn('"directionality": "ltr"', output)
+        self.layer['request'].other['LANGUAGE'] = 'ar'
         doc.setLanguage('ar')
         output = self.portal.restrictedTraverse(document_jsonconfig_url)('text')
         self.assertIn('"directionality": "rtl"', output)
