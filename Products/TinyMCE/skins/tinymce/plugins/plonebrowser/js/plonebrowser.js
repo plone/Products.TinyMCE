@@ -156,7 +156,6 @@ BrowserDialog.prototype.init = function () {
         jq('.legend a', document).removeClass('current');
         jq('#listview', document).addClass('current');
         jq('.legend', document).hide();
-        jq('.action-icons', document).hide();
 
         // setup link buttons acions
         jq('#linktype a', document).click(function (e) {
