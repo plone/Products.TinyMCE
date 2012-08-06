@@ -9,11 +9,14 @@ Licensed under the terms of the MIT License (see LICENSE.txt)
 
 import os
 
+from zope.interface import implements
 from Acquisition import aq_inner
 from Products.CMFCore.utils import getToolByName
 from Products.Five import BrowserView
 from Products.ResourceRegistries.tools.packer import JavascriptPacker
 from zope.component import getMultiAdapter
+
+from Products.TinyMCE.interfaces import ITinyMCECompressor
 
 
 def isContextUrl(url):
@@ -48,7 +51,8 @@ def stringTemplate(filename):
 class TinyMCECompressorView(BrowserView):
     tiny_mce_gzip = stringTemplate('tiny_mce_gzip.js')
 
-    # TODO: cache?
+    implements(ITinyMCECompressor)
+
     def __call__(self):
         """Parameters are parsed from url query as defined by tinymce"""
         plugins = self.request.get("plugins", "").split(',')

@@ -51,4 +51,7 @@
         factory=".JSONSearch.JSONSearch"
         />
 
+    <!-- Caching adapter -->
+    <adapter factory=".caching.TinyMCEResourceLookup" />
+
 </configure>
