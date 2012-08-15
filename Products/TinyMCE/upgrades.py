@@ -1,6 +1,6 @@
 from zope.component import getUtility
 from zope.component.hooks import getSite
-from Products.TinyMCE.interfaces.utility import ITinyMCE
+from Products.CMFCore.utils import getToolByName
 from Products.TinyMCE.setuphandlers import uninstall_mimetype_and_transforms
 from plone.outputfilters.setuphandlers import install_mimetype_and_transforms
 
@@ -22,7 +22,7 @@ def upgrade_10_to_11(setuptool):
     """Upgrade TinyMCE from 1.0 to 1.1"""
 
     # http://plone.org/products/tinymce/issues/26
-    tinymce = getUtility(ITinyMCE)
+    tinymce = getToolByName(setuptool, 'portal_tinymce')
     tinymce.styles = tinymce.styles.replace(u'Pull-quote|div|pullquote', u'Pull-quote|blockquote|pullquote')
     tinymce.styles = tinymce.styles.replace(u'Discreet|p|discreet', u'Discreet|span|discreet')
 
@@ -62,11 +62,12 @@ def upgrade_11_to_2(setuptool):
 
 def upgrade_12_to_13(setuptool):
     # Unregister old js and kss and register new js
-    tinymce = getUtility(ITinyMCE)
+    tinymce = getToolByName(setuptool, 'portal_tinymce')
 
     # plonebrowser replaces ploneimage & plonelink
     plugins = tinymce.customplugins.split()
-    plugins.append(u'plonebrowser')
+    if u'plonebrowser' not in plugins:
+        plugins.append(u'plonebrowser')
     plugins = filter(lambda x: x != u'plonelink' and x != u'ploneimage', plugins)
     tinymce.customplugins = '\n'.join(plugins)
 
