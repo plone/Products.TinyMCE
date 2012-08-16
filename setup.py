@@ -36,6 +36,7 @@ setup(name='Products.TinyMCE',
         'plone.app.layout',
         'Products.ResourceRegistries',
         'Products.Archetypes',
+        'zope.app.content',
         'zope.schema>=3.5.4',
         # depends on *either* elementtree or lxml...
         # we can expect one of those in all versions of Plone

@@ -5,6 +5,10 @@ HISTORY
 1.3-beta2 (2012-xx-xx)
 ----------------------
 
+- Fixed two undefined names in Upload.py.  Added dependency on
+  zope.app.content.
+  [maurits]
+
 - Fixed viewlet error, where DX add view is not (yet) available
   [tom_gross]
 
