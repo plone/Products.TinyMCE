@@ -34,6 +34,7 @@ setup(name='Products.TinyMCE',
           'elementtree',
           'plone.app.imaging>=1.0.2',
           'plone.outputfilters',
+          'zope.app.content',
       ] + requires,
       extras_require={
             'test': ['plone.app.testing', 'unittest2'],
