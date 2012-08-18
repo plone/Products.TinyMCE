@@ -2,8 +2,8 @@
 HISTORY
 =======
 
-1.3-beta2 (2012-xx-xx)
-----------------------
+1.3b2 (2012-08-18)
+------------------
 
 - Fixed two undefined names in Upload.py.  Added dependency on
   zope.app.content.
