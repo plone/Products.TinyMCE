@@ -13,7 +13,25 @@ High priority
 
 * Review everything was merged from 1.2.x branch
 
-* Check all plugins/buttons
+Align full does not work
+
+Select special character: not sure if the current selected camera should
+get a highlight or other visual cue.
+
+pagebreak is only inserting <!-- pagebreak -->
+
+show/hide visual control characters (the pi) doesn't do anything
+
+insert/edit attributes. left to right/right to left adds dir attribute to
+a paragraph, but language doesn't do anything
+
+Fonts to big in the dialogues:
+
+    Paste from word: font to big, insert/cancel buttons disappear
+
+    resize the smiley widget so it's big enough for 4x4 smileys
+
+    Insert table  Summary field is difficult to edit, wrong layout
 
 Normal priority
 ---------------
@@ -22,6 +40,9 @@ Normal priority
 
 * Bug: inserting flash video does not work
   https://github.com/iElectric/Products.TinyMCE/issues/23
+
+* Insert/embed media Type does not pull in the correct translations
+  (media_dlg.flash). Inserting iFrame does not work.
 
 * External link preview throws error: Refused to display document because
   display forbidden by X-Frame-Options.
