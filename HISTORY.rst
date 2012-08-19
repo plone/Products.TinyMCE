@@ -5,7 +5,8 @@ HISTORY
 1.3b3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add dependency on plone.caching
+  [iElectric]
 
 
 1.3b2 (2012-08-18)
