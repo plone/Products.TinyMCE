@@ -1,7 +1,7 @@
 High priority
 =============
 
-* add 1.3 GS profile to plone.app.upgrades for Plone 4.3
+* https://github.com/collective/tinymce/commit/91143d72a32dd80aa4dfcbae305875c79d849be0
 
 * We should probably forward-port
   https://github.com/plone/Products.TinyMCE/commit/9fb8b4d9a71a7db7089758d570376cf0a52e4b0b
