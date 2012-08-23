@@ -1,7 +1,11 @@
 High priority
 =============
 
-* https://github.com/collective/tinymce/commit/91143d72a32dd80aa4dfcbae305875c79d849be0
+* https://dev.plone.org/ticket/13121
+
+* https://dev.plone.org/ticket/13120
+
+* https://dev.plone.org/ticket/13076
 
 * We should probably forward-port
   https://github.com/plone/Products.TinyMCE/commit/9fb8b4d9a71a7db7089758d570376cf0a52e4b0b
@@ -13,25 +17,25 @@ High priority
 
 * Review everything was merged from 1.2.x branch
 
-Align full does not work
+* Align full does not work
 
-Select special character: not sure if the current selected camera should
+* Select special character: not sure if the current selected camera should
 get a highlight or other visual cue.
 
-pagebreak is only inserting <!-- pagebreak -->
+* pagebreak is only inserting <!-- pagebreak -->
 
-show/hide visual control characters (the pi) doesn't do anything
+* show/hide visual control characters (the pi) doesn't do anything
 
-insert/edit attributes. left to right/right to left adds dir attribute to
-a paragraph, but language doesn't do anything
+* insert/edit attributes. left to right/right to left adds dir attribute to
+  a paragraph, but language doesn't do anything
 
-Fonts to big in the dialogues:
+* Fonts to big in the dialogues:
 
-    Paste from word: font to big, insert/cancel buttons disappear
+  *  Paste from word: font to big, insert/cancel buttons disappear
 
-    resize the smiley widget so it's big enough for 4x4 smileys
+  *  resize the smiley widget so it's big enough for 4x4 smileys
 
-    Insert table  Summary field is difficult to edit, wrong layout
+  *  Insert table  Summary field is difficult to edit, wrong layout
 
 Normal priority
 ---------------
