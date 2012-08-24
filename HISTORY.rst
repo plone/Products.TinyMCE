@@ -5,6 +5,9 @@ HISTORY
 1.3b3 (unreleased)
 ------------------
 
+- Link by UID by default
+  [jaroel]
+
 - Add dependency on plone.caching
   [iElectric]
 
