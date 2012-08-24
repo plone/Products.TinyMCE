@@ -66,6 +66,7 @@ Normal priority
 
 * Fix tests in jenkins
 
+* https://dev.plone.org/ticket/11973
 
 * Bug: opera browser problems
 
