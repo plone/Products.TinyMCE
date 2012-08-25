@@ -64,7 +64,7 @@ Normal priority
 * Close https://dev.plone.org/ticket/10039 (add tests),
   https://dev.plone.org/ticket/10571
 
-* Fix tests in jenkins
+* configure Jenkins tests with Plone 3.3, 4.1, 4.2 and 4.3
 
 * https://dev.plone.org/ticket/11973
 
