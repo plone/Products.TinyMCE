@@ -195,7 +195,7 @@ class AdaptersTestCase(FunctionalTestCase):
         obj = IUpload(self.folder_object)
         msg = obj.upload()
 
-        self.assertTrue('/plone/folder/test.bin' in msg)
+        self.assertTrue('resolveuid/' in msg)
 
     def test_json_upload_image(self):
         self.portal.REQUEST['uploadfile'] = self._prepare_file('common_work.jpeg', type_='image/jpeg')
@@ -204,4 +204,4 @@ class AdaptersTestCase(FunctionalTestCase):
 
         obj = IUpload(self.folder_object)
         msg = obj.upload()
-        self.assertTrue('/plone/folder/common_work.jpeg' in msg)
+        self.assertTrue('resolveuid/' in msg)
