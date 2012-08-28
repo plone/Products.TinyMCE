@@ -14,6 +14,8 @@ AVAILABLE_LANGUAGES = set(
     'ka de el gu he hi hu is id ia it ja ko lv lt lb mk ms ml mn se no nn fa '
     'pl pt ps ro ru sc sr ii si sk sl es sv ta tt te th tr tw uk ur cy vi zu'.split())
 
+LANG_MAPPING = {'zh': 'zh_CN'}
+
 for x in AVAILABLE_LANGUAGES:
     print "Parsing xml/%s.xml" % (x)
     tree = ET.parse("xml/%s.xml" % (x))
@@ -30,6 +32,7 @@ for x in AVAILABLE_LANGUAGES:
     description = description.encode("utf-8")
 
     language = root.find('language')
+    x = LANG_MAPPING.get(x, x)
     title = language.attrib['title'].encode("utf-8")
 
     if not os.path.exists("../locales/%s" % x):

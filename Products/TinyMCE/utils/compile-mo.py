@@ -3,7 +3,7 @@
 import os
 
 AVAILABLE_LANGUAGES = set(
-    'sq ar hy az eu be bn nb bs br bg ca ch zh hr cs da dv nl en et fi fr gl '
+    'sq ar hy az eu be bn nb bs br bg ca ch zh_CN zh_TW hr cs da dv nl en et fi fr gl '
     'ka de el gu he hi hu is id ia it ja ko lv lt lb mk ms ml mn se no nn fa '
     'pl pt ps ro ru sc sr ii si sk sl es sv ta tt te th tr tw uk ur cy vi zu'.split())
 
