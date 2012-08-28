@@ -222,24 +222,13 @@ class ConfigurationViewlet(ViewletBase):
                 return True
             else:
                 return False
-        # Dexterity custom add form
-        elif HAS_DX and IAddForm.providedBy(self.__parent__):
-            portal_type = self.__parent__.portal_type
-            rtfields = self.getDXRichTextFieldNames(portal_type)
-            if rtfields:
-                prefix = 'form\\\\.widgets\\\\.'
-                self.suffix = self.buildsuffix(rtfields, prefix)
-                # we need to return here because showEditableBorder is
-                # false in this case
-                return True
-            else:
-                return False
         # Dexterity edit form
         elif HAS_DX and IDexterityContent.providedBy(context):
             rtfields = self.getDXRichTextFieldNames(context.portal_type)
             prefix = 'form\\\\.widgets\\\\.'
-        # Dexterity custom edit form
-        elif HAS_DX and IEditForm.providedBy(self.__parent__):
+        # Dexterity custom add and edit form
+        elif HAS_DX and (IAddForm.providedBy(self.__parent__) or
+                         IEditForm.providedBy(self.__parent__)):
             portal_type = self.__parent__.portal_type
             rtfields = self.getDXRichTextFieldNames(portal_type)
             if rtfields:
