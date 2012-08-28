@@ -31,7 +31,8 @@ try:
 except ImportError:
     HAS_AT = False
 try:
-    from z3c.form.interfaces import IAddForm, IEditForm
+    from z3c.form.interfaces import IForm
+    from plone.z3cform.interfaces import IFormWrapper
     from plone.dexterity.interfaces import IDexterityContent
     from plone.dexterity.schema import SCHEMA_CACHE
     from plone.app.textfield import RichText
@@ -206,43 +207,39 @@ class ConfigurationViewlet(ViewletBase):
         if tinymce is None:
             return False
 
-        # Dexterity add form
-        if HAS_DX and '++add++' in self.request.getURL():
+        if HAS_DX:
+            form = self.__parent__
+            if IFormWrapper.providedBy(form):
+                form = form.form_instance
+
+        # Dexterity (z3c.form)
+        if HAS_DX and IForm.providedBy(form):
+            portal_type = None
             if hasattr(self.view, 'ti'):
                 portal_type = self.view.ti.getId()
-            else:
-                url = self.request.getURL()
-                portal_type = url[url.find('++add++')+7:]
-            rtfields = self.getDXRichTextFieldNames(portal_type)
-            if rtfields:
-                prefix = 'form\\\\.widgets\\\\.'
-                self.suffix = self.buildsuffix(rtfields, prefix)
-                # we need to return here because showEditableBorder is
-                # false in this case
-                return True
-            else:
-                return False
-        # Dexterity edit form
-        elif HAS_DX and IDexterityContent.providedBy(context):
-            rtfields = self.getDXRichTextFieldNames(context.portal_type)
-            prefix = 'form\\\\.widgets\\\\.'
-        # Dexterity custom add and edit form
-        elif HAS_DX and (IAddForm.providedBy(self.__parent__) or
-                         IEditForm.providedBy(self.__parent__)):
-            portal_type = self.__parent__.portal_type
-            rtfields = self.getDXRichTextFieldNames(portal_type)
-            if rtfields:
-                prefix = 'form\\\\.widgets\\\\.'
-                self.suffix = self.buildsuffix(rtfields, prefix)
-                # we need to return here because showEditableBorder is
-                # false in this case
-                return True
-            else:
-                return False
+
+            elif hasattr(self.view, 'portal_type'):
+                portal_type = self.view.portal_type
+                
+                if not portal_type and IDexterityContent.providedBy(context):
+                    rtfields = self.getDXRichTextFieldNames(context.portal_type)
+                    prefix = 'form\\\\.widgets\\\\.'
+                else:
+                    rtfields = self.getDXRichTextFieldNames(portal_type)
+                    if rtfields:
+                        prefix = 'form\\\\.widgets\\\\.'
+                        self.suffix = self.buildsuffix(rtfields, prefix)
+                        # we need to return here because showEditableBorder is
+                        # false in this case
+                        return True
+                    else:
+                        return False
+
         # Archetype add & edit form
         elif HAS_AT and IBaseObject.providedBy(context):
             rtfields = self.getATRichTextFieldNames()
             prefix = ''
+
         # Portlet add & edit form
         elif IPortletForm.providedBy(self.view):
             from plone.app.form.widgets.wysiwygwidget import WYSIWYGWidget
@@ -251,6 +248,7 @@ class ConfigurationViewlet(ViewletBase):
             prefix = 'form\\\\.'
         else:
             return False
+
         self.suffix = self.buildsuffix(rtfields, prefix)
 
         factory = getToolByName(context, 'portal_factory', None)
