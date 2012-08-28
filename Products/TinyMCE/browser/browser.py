@@ -206,8 +206,6 @@ class ConfigurationViewlet(ViewletBase):
         if tinymce is None:
             return False
 
-        import pdb; pdb.set_trace()
-
         # Dexterity add form
         if HAS_DX and '++add++' in self.request.getURL():
             if hasattr(self.view, 'ti'):
