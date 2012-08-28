@@ -3,8 +3,6 @@ High priority
 
 * https://dev.plone.org/ticket/13121
 
-* https://dev.plone.org/ticket/13120
-
 * https://dev.plone.org/ticket/13076
 
 * We should probably forward-port
