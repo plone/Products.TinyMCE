@@ -11,9 +11,14 @@ HISTORY
 - Add dependency on plone.caching
   [iElectric]
 
+- Fixed UID linked images after returning from fullscreen in Chrome
+  [tom_gross]
 
 1.3b2 (2012-08-18)
 ------------------
+
+- Cache TinyMCE with plone.caching
+  [tom_gross]
 
 - Fixed two undefined names in Upload.py.  Added dependency on
   zope.app.content.

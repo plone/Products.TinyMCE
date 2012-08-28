@@ -1,7 +1,10 @@
 from zope.interface import Interface
 from zope.interface import implements
 from zope.component import adapts
-from plone.caching.interfaces import IRulesetLookup
+try:
+    from plone.caching.interfaces import IRulesetLookup
+except ImportError:
+    IRulesetLookup = Interface
 from Products.TinyMCE.interfaces import ITinyMCECompressor
 from zope.publisher.interfaces.browser import IBrowserRequest
 
