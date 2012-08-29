@@ -119,7 +119,7 @@ class JSONFolderListing(object):
                 'normalized_type': normalizer.normalize(brain.portal_type),
                 'title': brain.Title == "" and brain.id or brain.Title,
                 'icon': getIcon(brain),
-                'description': brain.Description,
+                'description': unicode(brain.Description, 'utf-8', 'ignore'),
                 'is_folderish': brain.is_folderish,
                 })
 
