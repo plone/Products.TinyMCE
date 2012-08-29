@@ -220,20 +220,20 @@ class ConfigurationViewlet(ViewletBase):
 
             elif hasattr(self.view, 'portal_type'):
                 portal_type = self.view.portal_type
-                
-                if not portal_type and IDexterityContent.providedBy(context):
-                    rtfields = self.getDXRichTextFieldNames(context.portal_type)
+
+            if not portal_type and IDexterityContent.providedBy(context):
+                rtfields = self.getDXRichTextFieldNames(context.portal_type)
+                prefix = 'form\\\\.widgets\\\\.'
+            else:
+                rtfields = self.getDXRichTextFieldNames(portal_type)
+                if rtfields:
                     prefix = 'form\\\\.widgets\\\\.'
+                    self.suffix = self.buildsuffix(rtfields, prefix)
+                    # we need to return here because showEditableBorder is
+                    # false in this case
+                    return True
                 else:
-                    rtfields = self.getDXRichTextFieldNames(portal_type)
-                    if rtfields:
-                        prefix = 'form\\\\.widgets\\\\.'
-                        self.suffix = self.buildsuffix(rtfields, prefix)
-                        # we need to return here because showEditableBorder is
-                        # false in this case
-                        return True
-                    else:
-                        return False
+                    return False
 
         # Archetype add & edit form
         elif HAS_AT and IBaseObject.providedBy(context):

@@ -73,7 +73,6 @@ class ConfigurationViewletTestCase(FunctionalTestCase):
             'Dexterity is not installed. Skipping DX schema adapter test.')
     def test_dxadd(self):
         view = DummyAddView(self.portal, self.app.REQUEST)
-        setattr(self.app.REQUEST, 'URL', 'http://nohost/++add++tinymce_test')
         viewlet = self.makeone(view=view)
         self.assertFalse(viewlet.suffix)
         self.assertTrue(viewlet.show())
