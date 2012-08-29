@@ -120,7 +120,7 @@ class AdaptersTestCase(FunctionalTestCase):
                         document_base_url='http://nohost/plone',
                         upload_type='File')
         self.assertRegexpMatches(listing,
-            r'"icon": "<img width=\\"16\\" height=\\"16\\" src=\\"http://nohost/plone/application.png\\" alt=\\"File\\" />", "id": "somefile.bin"')
+            r'"icon": "<img width=\\"16\\" height=\\"16\\" src=\\"http://nohost/plone/application.png\\" alt=\\"File.*?\\" />", "id": "somefile.bin"')
 
     def test_json_search(self):
         # Create an Event
@@ -148,7 +148,7 @@ class AdaptersTestCase(FunctionalTestCase):
         results = obj.getSearchResults(filter_portal_types=linkable_portal_types,
                                          searchtext='somefile')
         self.assertRegexpMatches(results,
-            r'"id": "somefile.bin", "icon": "<img width=\\"16\\" height=\\"16\\" src=\\"http://nohost/plone/application.png\\" alt=\\"File\\" />"')
+            r'"id": "somefile.bin", "icon": "<img width=\\"16\\" height=\\"16\\" src=\\"http://nohost/plone/application.png\\" alt=\\"File.*?\\" />"')
 
     def test_json_search_wildcard_whitespace(self):
         self.portal.invokeFactory('File', id='somefile bin')
@@ -161,7 +161,7 @@ class AdaptersTestCase(FunctionalTestCase):
             searchtext='somefile bi'
         )
         self.assertRegexpMatches(results,
-            r'"id": "somefile bin", "icon": "<img width=\\"16\\" height=\\"16\\" src=\\"http://nohost/plone/application.png\\" alt=\\"File\\" />"')
+            r'"id": "somefile bin", "icon": "<img width=\\"16\\" height=\\"16\\" src=\\"http://nohost/plone/application.png\\" alt=\\"File.*?\\" />"')
 
     def test_json_save(self):
         # This class is used to save a document using json. Let's try and set some value.
