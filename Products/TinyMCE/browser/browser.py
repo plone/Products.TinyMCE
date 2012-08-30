@@ -36,6 +36,7 @@ try:
     from plone.dexterity.interfaces import IDexterityContent
     from plone.dexterity.schema import SCHEMA_CACHE
     from plone.app.textfield import RichText
+    from plone.app.textfield.widget import IRichTextWidget
     HAS_DX = True
 except ImportError:
     HAS_DX = False
@@ -214,7 +215,9 @@ class ConfigurationViewlet(ViewletBase):
 
         # Dexterity (z3c.form)
         if HAS_DX and IForm.providedBy(form):
+            prefix = 'form\\\\.widgets\\\\.'
             portal_type = None
+
             if hasattr(self.view, 'ti'):
                 portal_type = self.view.ti.getId()
 
@@ -222,18 +225,22 @@ class ConfigurationViewlet(ViewletBase):
                 portal_type = self.view.portal_type
 
             if not portal_type and IDexterityContent.providedBy(context):
-                rtfields = self.getDXRichTextFieldNames(context.portal_type)
-                prefix = 'form\\\\.widgets\\\\.'
-            else:
+                portal_type = context.portal_type
+
+            if portal_type:
                 rtfields = self.getDXRichTextFieldNames(portal_type)
-                if rtfields:
-                    prefix = 'form\\\\.widgets\\\\.'
-                    self.suffix = self.buildsuffix(rtfields, prefix)
-                    # we need to return here because showEditableBorder is
-                    # false in this case
-                    return True
-                else:
-                    return False
+            else:
+                widgets = self.__parent__.widgets.values()
+                rtfields = [widget.__name__ for widget in widgets if IRichTextWidget.providedBy(widget)]
+
+            if rtfields:
+                prefix = 'form\\\\.widgets\\\\.'
+                self.suffix = self.buildsuffix(rtfields, prefix)
+                # we need to return here because showEditableBorder is
+                # false in this case
+                return True
+            else:
+                return False
 
         # Archetype add & edit form
         elif HAS_AT and IBaseObject.providedBy(context):
