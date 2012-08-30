@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.3b3 (unreleased)
+1.3b3 (2012-08-30)
 ------------------
 
 - Link by UID by default
