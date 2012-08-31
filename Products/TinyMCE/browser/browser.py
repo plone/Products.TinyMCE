@@ -231,13 +231,11 @@ class ConfigurationViewlet(ViewletBase):
         # Dexterity (z3c.form)
         if HAS_DX and IForm.providedBy(form):
             prefix = 'form\\\\.widgets\\\\.'
-            portal_type = None
 
             if hasattr(self.view, 'ti'):
                 portal_type = self.view.ti.getId()
-
-            elif hasattr(self.view, 'portal_type'):
-                portal_type = self.view.portal_type
+            else:
+                portal_type = getattr(self.view, 'portal_type', None)
 
             if portal_type:
                 rtfields = self.getDXRichTextFieldNames(portal_type)
