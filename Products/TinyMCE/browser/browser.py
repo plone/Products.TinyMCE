@@ -239,9 +239,6 @@ class ConfigurationViewlet(ViewletBase):
             elif hasattr(self.view, 'portal_type'):
                 portal_type = self.view.portal_type
 
-            if not portal_type and IDexterityContent.providedBy(context):
-                portal_type = context.portal_type
-
             if portal_type:
                 rtfields = self.getDXRichTextFieldNames(portal_type)
             else:
