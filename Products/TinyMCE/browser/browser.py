@@ -7,6 +7,8 @@ from zope.interface import implements
 from zope.component import queryUtility
 from zope.component import getMultiAdapter
 
+from zope.formlib import interfaces as formlib
+
 from Products.Five.browser import BrowserView
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
@@ -14,7 +16,6 @@ from Products.CMFCore.utils import getToolByName
 
 from plone.app.form.widgets.wysiwygwidget import WYSIWYGWidget
 from plone.app.layout.viewlets.common import ViewletBase
-from plone.app.portlets.browser.interfaces import IPortletForm
 
 from Products.TinyMCE.adapters.interfaces.JSONFolderListing import \
      IJSONFolderListing
@@ -32,11 +33,8 @@ try:
 except ImportError:
     HAS_AT = False
 try:
-    from z3c.form.interfaces import IForm
+    from z3c.form import interfaces as z3cform
     from plone.z3cform.interfaces import IFormWrapper
-    from plone.dexterity.interfaces import IDexterityContent
-    from plone.dexterity.schema import SCHEMA_CACHE
-    from plone.app.textfield import RichText
     from plone.app.textfield.widget import IRichTextWidget
     HAS_DX = True
 except ImportError:
@@ -188,11 +186,6 @@ class ConfigurationViewlet(ViewletBase):
     index = ViewPageTemplateFile('configuration.pt')
     suffix = ''
 
-    def getDXRichTextFieldNames(self, pt):
-        """ Get names of Dexterity richtext fields """
-        schema = SCHEMA_CACHE.get(pt)
-        return self.getRichWidgetFieldNames(schema)
-
     def getATRichTextFieldNames(self):
         """ Get names of Archetype richtext fields """
         schema = self.context.Schema()
@@ -202,24 +195,13 @@ class ConfigurationViewlet(ViewletBase):
             if field.widget.getName() == 'RichWidget'
             ]
 
-    def getRichWidgetFieldNames(self, fields):
-        return [
-            getattr(field, '__name__', None) or field.getName()
-            for field in self.filterFieldsWithRichWidget(fields)
-            ]
-
-    def filterFieldsWithRichWidget(self, fields):
-        return [
-            field for field in fields if
-            IRichTextWidget.providedBy(field.widget)
-            ]
-
     def buildsuffix(self, rtfields, prefix):
         return '?%s' % urlencode({'f': rtfields, 'p': prefix}, doseq=True)
 
     def show(self):
         context = aq_inner(self.context)
         tinymce = queryUtility(ITinyMCE, context=context)
+
         if tinymce is None:
             return False
 
@@ -228,49 +210,46 @@ class ConfigurationViewlet(ViewletBase):
             if IFormWrapper.providedBy(form):
                 form = form.form_instance
 
-        # Dexterity (z3c.form)
-        if HAS_DX and IForm.providedBy(form):
-            prefix = 'form\\\\.widgets\\\\.'
+        # Case 1: Dexterity and z3c.form
+        if HAS_DX and z3cform.IForm.providedBy(form):
+            rtfields = [
+                widget.field.__name__ for widget
+                in form.widgets.values() if IRichTextWidget.providedBy(
+                    widget)
+                ]
 
-            if hasattr(self.view, 'ti'):
-                portal_type = self.view.ti.getId()
-            else:
-                portal_type = getattr(self.view, 'portal_type', None)
-
-            if portal_type:
-                rtfields = self.getDXRichTextFieldNames(portal_type)
-            else:
-                rtfields = self.getRichWidgetFieldNames(form.fields)
-
-            if rtfields:
-                prefix = 'form\\\\.widgets\\\\.'
-                self.suffix = self.buildsuffix(rtfields, prefix)
-                # we need to return here because showEditableBorder is
-                # false in this case
-                return True
-            else:
+            if not rtfields:
                 return False
 
-        # Archetype add & edit form
+            prefix = form.prefix
+
+        # Case 2: Archetypes
         elif HAS_AT and IBaseObject.providedBy(context):
             rtfields = self.getATRichTextFieldNames()
             prefix = ''
 
-        # Portlet add & edit form
-        elif IPortletForm.providedBy(self.view):
+        # Case 3: Formlib
+        elif formlib.IForm.providedBy(self.view):
             rtfields = [field.__name__ for field in self.view.form_fields
                         if field.custom_widget == WYSIWYGWidget]
             prefix = 'form\\\\.'
+
+        # Case 4: Everything else!
         else:
             return False
 
         self.suffix = self.buildsuffix(rtfields, prefix)
 
-        factory = getToolByName(context, 'portal_factory', None)
-        if factory is not None and factory.isTemporary(context):
-            # Always include TinyMCE on temporary pages
-            # These are ment for editing and get false positives
-            # with the showEditableBorder-method
-            return True
-        plone_view = getMultiAdapter((context, self.request), name="plone")
-        return plone_view.showEditableBorder() and rtfields
+        # Handle Archetypes factory pages.
+        if IBaseObject.providedBy(context):
+            factory = getToolByName(context, 'portal_factory', None)
+            if factory is not None and factory.isTemporary(context):
+                # Always include TinyMCE on temporary pages These are
+                # meant for editing and get false positives with
+                # the `showEditableBorder` method.
+                return True
+
+            plone_view = getMultiAdapter((context, self.request), name="plone")
+            return plone_view.showEditableBorder() and rtfields
+
+        return rtfields
