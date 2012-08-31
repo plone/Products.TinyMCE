@@ -12,6 +12,7 @@ from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
 from Products.CMFCore.utils import getToolByName
 
+from plone.app.form.widgets.wysiwygwidget import WYSIWYGWidget
 from plone.app.layout.viewlets.common import ViewletBase
 from plone.app.portlets.browser.interfaces import IPortletForm
 
@@ -40,6 +41,7 @@ try:
     HAS_DX = True
 except ImportError:
     HAS_DX = False
+
 
 class TinyMCEBrowserView(BrowserView):
     """TinyMCE Browser View"""
@@ -195,9 +197,16 @@ class ConfigurationViewlet(ViewletBase):
     def getATRichTextFieldNames(self):
         """ Get names of Archetype richtext fields """
         schema = self.context.Schema()
-        return [field.getName()
-                for field in schema.filterFields(type='text')
-                if field.widget.getName() == 'RichWidget']
+        return self.getRichWidgetFieldNames(
+            schema.filterFields(type='text')
+            )
+
+    def getRichWidgetFieldNames(self, fields):
+        fields = self.filterFieldsWithRichWidget(fields)
+        return [field.getName() for field in fields]
+
+    def filterFieldsWithRichWidget(self, fields):
+        return map(IRichTextWidget.providedBy, fields)
 
     def buildsuffix(self, rtfields, prefix):
         return '?%s' % urlencode({'f': rtfields, 'p': prefix}, doseq=True)
@@ -230,12 +239,7 @@ class ConfigurationViewlet(ViewletBase):
             if portal_type:
                 rtfields = self.getDXRichTextFieldNames(portal_type)
             else:
-                if hasattr(self.__parent__, 'form_instance'):
-                    widgets = self.__parent__.form_instance.widgets.values()
-                else:
-                    widgets = self.__parent__.widgets.values()
-
-                rtfields = [widget.__name__ for widget in widgets if IRichTextWidget.providedBy(widget)]
+                rtfields = self.getRichWidgetFieldNames(form.fields)
 
             if rtfields:
                 prefix = 'form\\\\.widgets\\\\.'
@@ -253,8 +257,7 @@ class ConfigurationViewlet(ViewletBase):
 
         # Portlet add & edit form
         elif IPortletForm.providedBy(self.view):
-            from plone.app.form.widgets.wysiwygwidget import WYSIWYGWidget
-            rtfields = [field.__name__ for field in self.view.form_fields 
+            rtfields = [field.__name__ for field in self.view.form_fields
                         if field.custom_widget == WYSIWYGWidget]
             prefix = 'form\\\\.'
         else:
@@ -269,4 +272,4 @@ class ConfigurationViewlet(ViewletBase):
             # with the showEditableBorder-method
             return True
         plone_view = getMultiAdapter((context, self.request), name="plone")
-        return plone_view.showEditableBorder() and rtfields 
+        return plone_view.showEditableBorder() and rtfields
