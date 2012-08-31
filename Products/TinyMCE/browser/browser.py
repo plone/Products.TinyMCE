@@ -191,22 +191,28 @@ class ConfigurationViewlet(ViewletBase):
     def getDXRichTextFieldNames(self, pt):
         """ Get names of Dexterity richtext fields """
         schema = SCHEMA_CACHE.get(pt)
-        return [name for name, field in schema.namesAndDescriptions() if
-                isinstance(field, RichText)]
+        return self.getRichWidgetFieldNames(schema)
 
     def getATRichTextFieldNames(self):
         """ Get names of Archetype richtext fields """
         schema = self.context.Schema()
-        return self.getRichWidgetFieldNames(
-            schema.filterFields(type='text')
-            )
+        return [
+            field.getName()
+            for field in schema.filterFields(type='text')
+            if field.widget.getName() == 'RichWidget'
+            ]
 
     def getRichWidgetFieldNames(self, fields):
-        fields = self.filterFieldsWithRichWidget(fields)
-        return [field.getName() for field in fields]
+        return [
+            getattr(field, '__name__', None) or field.getName()
+            for field in self.filterFieldsWithRichWidget(fields)
+            ]
 
     def filterFieldsWithRichWidget(self, fields):
-        return map(IRichTextWidget.providedBy, fields)
+        return [
+            field for field in fields if
+            IRichTextWidget.providedBy(field.widget)
+            ]
 
     def buildsuffix(self, rtfields, prefix):
         return '?%s' % urlencode({'f': rtfields, 'p': prefix}, doseq=True)
