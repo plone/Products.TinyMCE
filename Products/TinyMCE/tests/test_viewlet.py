@@ -12,6 +12,9 @@ except ImportError:
 import unittest2 as unittest
 
 from zope.component import getUtility, createObject, getMultiAdapter
+from zope.interface import implementsOnly
+
+from z3c.form import interfaces as z3cform
 
 from Products.TinyMCE.adapters.interfaces.JSONDetails import IJSONDetails
 from Products.TinyMCE.adapters.interfaces.Save import ISave
@@ -21,19 +24,31 @@ from Products.TinyMCE.browser.browser import ConfigurationViewlet
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.tests.base import FunctionalTestCase
 from Products.TinyMCE.tests.base import HAS_DX, HAS_AT
+from Products.Five import BrowserView
 
 if HAS_DX:
     from plone.dexterity.interfaces import IDexterityFTI
+    from plone.app.textfield.widget import IRichTextWidget
 
-from Products.Five import BrowserView
-class DummyAddView(BrowserView):
+    class DummyRichTextField(object):
+        __name__ = "text"
 
-    @property
-    def ti(self):
-        class DummyTi(object):
-            def getId(self):
-                return "tinymce_test"
-        return DummyTi()
+
+    class DummyRichTextWidget(object):
+        implementsOnly(IRichTextWidget)
+
+        field = DummyRichTextField()
+
+
+    class DummyFormView(BrowserView):
+        implementsOnly(z3cform.IForm)
+
+        widgets = {
+            '': DummyRichTextWidget()
+            }
+
+        prefix = 'form\\\\.widgets\\\\.'
+
 
 class ConfigurationViewletTestCase(FunctionalTestCase):
     """ Test schema abstraction adapter """
@@ -59,20 +74,8 @@ class ConfigurationViewletTestCase(FunctionalTestCase):
 
     @unittest.skipUnless(HAS_DX,
             'Dexterity is not installed. Skipping DX schema adapter test.')
-    def test_dxedit(self):
-        fti = getUtility(IDexterityFTI, name="tinymce_test")
-        content = createObject(fti.factory)
-        content = content.__of__(self.portal)
-        viewlet = self.makeone(content)
-        self.assertFalse(viewlet.suffix)
-        self.assertTrue(viewlet.show())
-        self.assertEqual(viewlet.suffix,
-                '?p=form%5C%5C.widgets%5C%5C.&f=text&f=suffix')
-
-    @unittest.skipUnless(HAS_DX,
-            'Dexterity is not installed. Skipping DX schema adapter test.')
-    def test_dxadd(self):
-        view = DummyAddView(self.portal, self.app.REQUEST)
+    def test_z3cform(self):
+        view = DummyFormView(self.portal, self.app.REQUEST)
         viewlet = self.makeone(view=view)
         self.assertFalse(viewlet.suffix)
         self.assertTrue(viewlet.show())
