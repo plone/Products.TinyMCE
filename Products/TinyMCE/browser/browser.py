@@ -230,7 +230,11 @@ class ConfigurationViewlet(ViewletBase):
             if portal_type:
                 rtfields = self.getDXRichTextFieldNames(portal_type)
             else:
-                widgets = self.__parent__.widgets.values()
+                if hasattr(self.__parent__, 'form_instance'):
+                    widgets = self.__parent__.form_instance.widgets.values()
+                else:
+                    widgets = self.__parent__.widgets.values()
+
                 rtfields = [widget.__name__ for widget in widgets if IRichTextWidget.providedBy(widget)]
 
             if rtfields:
