@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.3b4 (unreleased)
+1.3b4 (2012-08-31)
 ------------------
 
 - Hide upgrade steps from @@plone-addsite view.
