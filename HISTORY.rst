@@ -5,7 +5,8 @@ HISTORY
 1.3b4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Hide upgrade steps from @@plone-addsite view.
+  [esteele]
 
 
 1.3b3 (2012-08-30)
