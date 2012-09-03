@@ -1,39 +1,42 @@
 """
 This functionality is added to plone content types using adapters.
 """
-import os
-
-try:
-    import simplejson as json
-    json  # Pyflakes
-except ImportError:
-    import json
-
 import unittest2 as unittest
 
-from zope.component import getUtility, createObject, getMultiAdapter
+from zope.component import getMultiAdapter
+from zope.interface import implementsOnly
 
-from Products.TinyMCE.adapters.interfaces.JSONDetails import IJSONDetails
-from Products.TinyMCE.adapters.interfaces.Save import ISave
-from Products.TinyMCE.adapters.interfaces.JSONSearch import IJSONSearch
-from Products.TinyMCE.adapters.interfaces.JSONFolderListing import IJSONFolderListing
+from z3c.form import interfaces as z3cform
+
 from Products.TinyMCE.browser.browser import ConfigurationViewlet
-from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.tests.base import FunctionalTestCase
 from Products.TinyMCE.tests.base import HAS_DX, HAS_AT
+from Products.Five import BrowserView
 
 if HAS_DX:
-    from plone.dexterity.interfaces import IDexterityFTI
+    from plone.app.textfield.widget import IRichTextWidget
 
-from Products.Five import BrowserView
-class DummyAddView(BrowserView):
+    class DummyRichTextField(object):
+        __name__ = "text"
 
-    @property
-    def ti(self):
-        class DummyTi(object):
-            def getId(self):
-                return "tinymce_test"
-        return DummyTi()
+    class DummyRichTextWidget(object):
+        implementsOnly(IRichTextWidget)
+
+        field = DummyRichTextField()
+
+    class DummyWidgets(object):
+        prefix = 'widgets.'
+
+        @staticmethod
+        def values():
+            return [DummyRichTextWidget()]
+
+    class DummyFormView(BrowserView):
+        implementsOnly(z3cform.IForm)
+
+        widgets = DummyWidgets()
+        prefix = 'form.'
+
 
 class ConfigurationViewletTestCase(FunctionalTestCase):
     """ Test schema abstraction adapter """
@@ -44,7 +47,9 @@ class ConfigurationViewletTestCase(FunctionalTestCase):
         if request is None:
             request = self.app.REQUEST
         if view is None:
-            plone_view = getMultiAdapter((context, request), name="plone")
+            view = getMultiAdapter(
+                (context, request), name="plone"
+                )
         return ConfigurationViewlet(context, request, view)
 
     @unittest.skipUnless(HAS_AT,
@@ -59,29 +64,29 @@ class ConfigurationViewletTestCase(FunctionalTestCase):
 
     @unittest.skipUnless(HAS_DX,
             'Dexterity is not installed. Skipping DX schema adapter test.')
-    def test_dxedit(self):
-        fti = getUtility(IDexterityFTI, name="tinymce_test")
-        content = createObject(fti.factory)
-        content = content.__of__(self.portal)
-        viewlet = self.makeone(content)
-        self.assertFalse(viewlet.suffix)
-        self.assertTrue(viewlet.show())
-        self.assertEqual(viewlet.suffix,
-                '?p=form%5C%5C.widgets%5C%5C.&f=text&f=suffix')
-
-    @unittest.skipUnless(HAS_DX,
-            'Dexterity is not installed. Skipping DX schema adapter test.')
-    def test_dxadd(self):
-        view = DummyAddView(self.portal, self.app.REQUEST)
-        setattr(self.app.REQUEST, 'URL', 'http://nohost/++add++tinymce_test')
+    def test_z3cform(self):
+        view = DummyFormView(self.portal, self.app.REQUEST)
         viewlet = self.makeone(view=view)
         self.assertFalse(viewlet.suffix)
         self.assertTrue(viewlet.show())
         self.assertEqual(viewlet.suffix,
-                '?p=form%5C%5C.widgets%5C%5C.&f=text&f=suffix')
+                '?p=form%5C%5C.widgets%5C%5C.&f=text')
 
-    def test_portlet(self):
-        from plone.portlet.static.static import EditForm
+    def test_formlib(self):
+        from five.formlib import formbase
+        from zope.formlib import form
+        from zope.interface import Interface
+        from zope import schema
+
+        class IEditing(Interface):
+            text = schema.Text()
+
+        from plone.app.form.widgets.wysiwygwidget import WYSIWYGWidget
+
+        class EditForm(formbase.EditFormBase):
+            form_fields = form.Fields(IEditing)
+            form_fields['text'].custom_widget = WYSIWYGWidget
+
         view = EditForm(self.portal, self.app.REQUEST)
         viewlet = self.makeone(view=view)
         self.assertFalse(viewlet.suffix)
