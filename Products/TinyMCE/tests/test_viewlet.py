@@ -80,7 +80,7 @@ class ConfigurationViewletTestCase(FunctionalTestCase):
         self.assertFalse(viewlet.suffix)
         self.assertTrue(viewlet.show())
         self.assertEqual(viewlet.suffix,
-                '?p=form%5C%5C.widgets%5C%5C.&f=text&f=suffix')
+                '?p=form%5C%5C.widgets%5C%5C.&f=text')
 
     def test_portlet(self):
         from plone.portlet.static.static import EditForm
