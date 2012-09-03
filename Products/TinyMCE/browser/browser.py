@@ -221,7 +221,9 @@ class ConfigurationViewlet(ViewletBase):
             if not rtfields:
                 return False
 
-            prefix = form.prefix
+            prefix = (form.prefix + form.widgets.prefix).replace(
+                '.', '\\\\.'
+                )
 
         # Case 2: Archetypes
         elif HAS_AT and IBaseObject.providedBy(context):
