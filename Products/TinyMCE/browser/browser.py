@@ -243,7 +243,7 @@ class ConfigurationViewlet(ViewletBase):
         self.suffix = self.buildsuffix(rtfields, prefix)
 
         # Handle Archetypes factory pages.
-        if IBaseObject.providedBy(context):
+        if not prefix:
             factory = getToolByName(context, 'portal_factory', None)
             if factory is not None and factory.isTemporary(context):
                 # Always include TinyMCE on temporary pages These are
