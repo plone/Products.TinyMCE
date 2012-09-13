@@ -5,6 +5,9 @@ HISTORY
 1.3b5 (unreleased)
 ------------------
 
+- Prevent acquisition in setDescription.
+  [pjstevns]
+
 - Fix accidental reset of variable in Upload.py.
   [pjstevns]
 

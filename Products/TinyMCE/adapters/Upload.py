@@ -213,4 +213,4 @@ class Upload(object):
         return True
 
     def setDescription(self, description):
-        self.context.setDescription(description)
+        aq_inner(self.context).setDescription(description)
