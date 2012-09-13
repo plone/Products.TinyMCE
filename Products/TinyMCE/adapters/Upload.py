@@ -89,7 +89,6 @@ class Upload(object):
         if not IFolderish.providedBy(context):
             context = aq_parent(context)
 
-        context = self.context
         request = context.REQUEST
         ctr_tool = getToolByName(context, 'content_type_registry')
         utility = getToolByName(context, 'portal_tinymce')

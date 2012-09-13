@@ -5,7 +5,8 @@ HISTORY
 1.3b5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix accidental reset of variable in Upload.py.
+  [pjstevns]
 
 
 1.3b4 (2012-08-31)
