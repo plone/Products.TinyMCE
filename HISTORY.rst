@@ -5,6 +5,9 @@ HISTORY
 1.3b5 (unreleased)
 ------------------
 
+- PEP8 and pyflakes cleanup of Upload.py.
+  [pjstevns]
+
 - Prevent acquisition in setDescription.
   [pjstevns]
 

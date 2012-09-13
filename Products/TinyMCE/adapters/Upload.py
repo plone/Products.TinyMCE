@@ -3,14 +3,12 @@ from Acquisition import aq_parent
 from zExceptions import BadRequest
 from zope.app.content import queryContentType
 from zope.schema import getFieldsInOrder
-from AccessControl.unauthorized import Unauthorized
 from Products.CMFCore.interfaces._content import IFolderish
 from Products.CMFCore.utils import getToolByName
 from plone.outputfilters.browser.resolveuid import uuidFor
 from zope.interface import implements
 from zope.i18nmessageid import MessageFactory
 
-from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.adapters.interfaces.Upload import IUpload
 
 import pkg_resources
@@ -35,6 +33,7 @@ TEMPLATE = """
 
 _ = MessageFactory('plone.tinymce')
 
+
 class Upload(object):
     """Adds the uploaded file to the folder"""
     implements(IUpload)
@@ -45,12 +44,16 @@ class Upload(object):
 
     def errorMessage(self, msg):
         """Returns an error message"""
-        script = TEMPLATE % ("window.parent.uploadError('" + msg.replace("'", "\\'") + "');")
+        script = TEMPLATE % (
+            "window.parent.uploadError('" + msg.replace("'", "\\'") + "');")
         return script
 
     def okMessage(self, path, folder):
         """Returns an ok message"""
-        script = TEMPLATE % ("window.parent.uploadOk('" + path.replace("'", "\\'") + "', '" + folder.replace("'", "\\'") + "');")
+        script = TEMPLATE % (
+            "window.parent.uploadOk('" + \
+            path.replace("'", "\\'") + "', '" + \
+            folder.replace("'", "\\'") + "');")
         return script
 
     def cleanupFilename(self, name):
@@ -76,7 +79,8 @@ class Upload(object):
             else:
                 sc = str(count)
             newid = "copy%s_of_%s" % (sc, id)
-            if context.check_id(newid) is None and getattr(context, newid, None) is None:
+            if context.check_id(newid) is None and \
+               getattr(context, newid, None) is None:
                 return newid
             count += 1
 
@@ -100,8 +104,10 @@ class Upload(object):
         # Permission checks based on code by Danny Bloemendaal
 
         # 1) check if the current user has permissions to add stuff
-        if not context.portal_membership.checkPermission('Add portal content', context):
-            return self.errorMessage("You do not have permission to upload files in this folder")
+        if not context.portal_membership.checkPermission(
+            'Add portal content', context):
+            return self.errorMessage(
+                "You do not have permission to upload files in this folder")
 
         # 2) check image types uploadable in folder.
         #    priority is to content_type_registry image type
@@ -131,12 +137,14 @@ class Upload(object):
             except BadRequest:
                 return self.errorMessage(_("Bad filename, please rename."))
         else:
-            return self.errorMessage(_("Not allowed to upload a file of this type to this folder"))
+            return self.errorMessage(
+                _("Not allowed to upload a file of this type to this folder"))
 
         obj = getattr(context, newid, None)
 
         # Set title + description.
-        # Attempt to use Archetypes mutator if there is one, in case it uses a custom storage
+        # Attempt to use Archetypes mutator if there is one, in case it uses
+        # a custom storage
         title = request['uploadtitle']
         description = request['uploaddescription']
 
@@ -154,7 +162,8 @@ class Upload(object):
 
         if HAS_DEXTERITY and IDexterityContent.providedBy(obj):
             if not self.setDexterityImage(obj):
-                return self.errorMessage(_("The content-type '%s' has no image-field!" % metatype))
+                return self.errorMessage(
+                    _("The content-type '%s' has no image-field!" % metatype))
         else:
             # set primary field
             pf = obj.getPrimaryField()
@@ -173,12 +182,12 @@ class Upload(object):
         return self.okMessage(path, folder)
 
     def setDexterityImage(self, obj):
-        """ Set the image-field of dexterity-based types 
+        """ Set the image-field of dexterity-based types
 
-        This works with the "Image"-type of plone.app.contenttypes and has 
+        This works with the "Image"-type of plone.app.contenttypes and has
         fallbacks for other implementations of image-types with dexterity.
 
-        """ 
+        """
         request = self.context.REQUEST
         field_name = ''
         info = ''
@@ -186,8 +195,8 @@ class Upload(object):
             # Use the primary field if it's an image-field
             info = IPrimaryFieldInfo(obj, None)
         except TypeError:
-            # ttw-types without a primary field throw a TypeError on 
-            # IPrimaryFieldInfo(obj, None) 
+            # ttw-types without a primary field throw a TypeError on
+            # IPrimaryFieldInfo(obj, None)
             pass
         if info:
             field = info.field
@@ -200,10 +209,10 @@ class Upload(object):
             for field_info in obj_fields:
                 field = field_info[1]
                 field_schema = getattr(field, 'schema', None)
-                if field_schema and field_schema.getName() in ['INamedBlobImage',
-                                                               'INamedImage']:
-                     field_name = field_info[0]
-                     break
+                if field_schema and field_schema.getName() in [
+                    'INamedBlobImage', 'INamedImage']:
+                    field_name = field_info[0]
+                    break
         if not field_name:
             return False
         else:
