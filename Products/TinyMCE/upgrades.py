@@ -1,8 +1,11 @@
 from zope.component import getUtility
-from zope.component.hooks import getSite
 from Products.CMFCore.utils import getToolByName
 from Products.TinyMCE.setuphandlers import uninstall_mimetype_and_transforms
 from plone.outputfilters.setuphandlers import install_mimetype_and_transforms
+try:
+    from zope.component.hooks import getSite
+except ImportError:
+    from zope.app.component.hooks import getSite
 
 
 def meta_types_to_portal_types(meta_types):
