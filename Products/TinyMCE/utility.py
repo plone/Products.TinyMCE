@@ -717,8 +717,18 @@ class TinyMCE(SimpleItem):
 
     security.declareProtected('View', 'getConfiguration')
     def getConfiguration(self, context=None, field=None, request=None, script_url=None):
-        """Return JSON configuration that is passed to javascript tinymce constructor
-    """
+        """Return JSON configuration that is passed to javascript tinymce constructor.
+
+        :param field: Dexterity or Archetypes Field instance
+
+        :param context: The TinyMCE editor content items
+
+        :param script_url: tinymce.jquery.js plug-in TinyMCE script parameter.
+                           For more details see
+                           http://www.tinymce.com/wiki.php/jQuery_Plugin
+
+        :return: JSON string of the TinyMCE configuration for this field
+        """
         results = {}
 
         # Get widget attributes
