@@ -21,7 +21,8 @@ Widget configuration
 
 You can configure TinyMCE per-widget level for different fields.
 
-`TinyMCE's utility.getConfiguration() looks for a widget specific configuration <https://github.com/plone/Products.TinyMCE/blob/master/Products/TinyMCE/utility.py#L719>_`.
+TinyMCE's `utility.getConfiguration() looks for a widget specific configuration 
+<https://github.com/plone/Products.TinyMCE/blob/master/Products/TinyMCE/utility.py#L719>`_.
 The options below are provided. Please check the source code of ``getConfiguration()`` 
 above for the full list.
 
