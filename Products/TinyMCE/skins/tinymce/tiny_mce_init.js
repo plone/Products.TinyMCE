@@ -45,6 +45,15 @@ function TinyMCEConfig(id) {
             skin : "plone",
             inlinepopups_skin : "plonepopup",
             plugins : this.getPlugins(),
+            // Remove images in data URIs
+            setup : function(ed) {
+               ed.onSaveContent.add(function(ed, o) {
+                   // find all img's with src=data:image
+                   var pattern=/\<img[^>]*src=[^>]*data:image[^>]*\>/g;
+                   var filtered=o.content.replace(pattern, '');
+                   o.content=filtered;
+               });
+            },
             // Find out if ieSpell requires gecko spellchecker...
             gecko_spellcheck : this.geckoSpellcheckEnabled(),
 
