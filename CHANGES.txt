@@ -5,6 +5,10 @@ HISTORY
 1.2.14 (unreleased)
 -------------------
 
+- Remove images in data URIs on save.
+  Fixes https://dev.plone.org/ticket/13199
+  [khink]
+
 - Declare dependency on zope.app.component.
   [maurits]
 
