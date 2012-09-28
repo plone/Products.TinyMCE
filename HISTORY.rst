@@ -8,7 +8,12 @@ HISTORY
 1.3b5 (2012-09-28)
 ------------------
 
-- Improve z3c.form / formlib support.
+- Determine whether to include WYSIWYG-support based on a check
+  on the form widgets, in the case of z3c.form. Previously, we
+  would have a special case for a Dexterity-based context, looking
+  up form fields based on the FTI. This should be unnecessary
+  because the parent (i.e. the form) already has its widgets set 
+  up and this is a much more robust check.
   [malthe]
 
 - PEP8 and pyflakes cleanup of Upload.py.
