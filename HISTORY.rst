@@ -5,6 +5,8 @@ HISTORY
 1.3b5 (unreleased)
 ------------------
 
+- Added support for Archetypes widget specific configuration overrides [miohtama]
+
 - PEP8 and pyflakes cleanup of Upload.py.
   [pjstevns]
 
