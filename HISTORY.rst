@@ -5,6 +5,9 @@ HISTORY
 1.3b5 (unreleased)
 ------------------
 
+- Improve z3c.form / formlib support.
+  [malthe]
+
 - PEP8 and pyflakes cleanup of Upload.py.
   [pjstevns]
 
