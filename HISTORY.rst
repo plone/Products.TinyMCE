@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.3b5 (unreleased)
+1.3b5 (2012-09-28)
 ------------------
 
 - Improve z3c.form / formlib support.
