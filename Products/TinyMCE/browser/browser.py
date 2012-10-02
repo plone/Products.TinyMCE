@@ -136,11 +136,36 @@ class TinyMCEBrowserView(BrowserView):
             return ''
         return object.getDetails()
 
+    def resolveField(self, context, fieldname):
+        """
+        Look up a field on the context by the field name.
+        """
+        if HAS_AT and IBaseObject.providedBy(context):
+            schema = context.Schema()
+            field = schema.get(fieldname, None)
+            if field:
+                return field
+        elif HAS_DX:
+            # TODO: Implement Dexterity specific field look-up
+            # Not Implemented for Dexterity yet
+            pass
+
+        # Unknown - pass forward as string
+        # but will result to defunct widget level config overrides
+        return fieldname
+
     def jsonConfiguration(self, fieldname, script_url=None):
-        """Return the configuration in JSON"""
+        """Return the configuration in JSON"
+
+        """
         utility = getToolByName(self.context, 'portal_tinymce')
+
+        # jsonConfiguration needs to pass the full field instance,
+        # not field name, to getConfiguration() so that
+        # we can load widget-specific configuration overrides
+        field = self.resolveField(self.context, fieldname)
         return utility.getConfiguration(context=self.context,
-                                        field=fieldname,
+                                        field=field,
                                         request=self.request,
                                         script_url=script_url)
 

@@ -5,6 +5,8 @@ HISTORY
 1.3b6 (unreleased)
 ------------------
 
+- Added support for Archetypes widget specific configuration overrides [miohtama]
+
 1.3b5 (2012-09-28)
 ------------------
 
