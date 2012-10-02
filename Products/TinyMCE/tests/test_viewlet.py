@@ -61,6 +61,11 @@ class ConfigurationViewletTestCase(FunctionalTestCase):
         self.assertFalse(viewlet.suffix)
         self.assertTrue(viewlet.show())
         self.assertEqual(viewlet.suffix, '?p=&f=text')
+        # make sure the full context path is in the URL to support
+        # independent field configurations
+        self.assertEqual(viewlet.render().strip(),
+             ('<script type="text/javascript" src="http://nohost/plone/'
+              'document/tiny_mce_gzip.js?p=&amp;f=text"></script>'))
 
     @unittest.skipUnless(HAS_DX,
             'Dexterity is not installed. Skipping DX schema adapter test.')
