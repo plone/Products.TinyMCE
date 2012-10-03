@@ -836,7 +836,10 @@ class TinyMCE(SimpleItem):
         valid_elements = self.getValidElements()
         results['valid_elements'] = ','.join(["%s[%s]" % (key, '|'.join(value)) for key, value in valid_elements.iteritems()])
 
-        results['customplugins'] = self.customplugins.splitlines()
+        if self.customplugins:
+            results['customplugins'] = self.customplugins.splitlines()
+        else:
+            results['customplugins'] = None
 
         # Set toolbar_location
         if self.toolbar_external:

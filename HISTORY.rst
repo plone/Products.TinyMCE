@@ -5,6 +5,9 @@ HISTORY
 1.3b6 (unreleased)
 ------------------
 
+- Fix the case where on the migrated site customplugins setting can be None, causing
+  jsonConfiguration view to raise an exception [miohtama]
+
 - Added support for Archetypes widget specific configuration overrides [miohtama]
 
 1.3b5 (2012-09-28)
@@ -14,7 +17,7 @@ HISTORY
   on the form widgets, in the case of z3c.form. Previously, we
   would have a special case for a Dexterity-based context, looking
   up form fields based on the FTI. This should be unnecessary
-  because the parent (i.e. the form) already has its widgets set 
+  because the parent (i.e. the form) already has its widgets set
   up and this is a much more robust check.
   [malthe]
 
