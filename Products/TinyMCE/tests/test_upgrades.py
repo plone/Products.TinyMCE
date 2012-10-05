@@ -24,7 +24,6 @@ class UpgradesTestCase(FunctionalTestCase):
     def test_upgrade_profile_12_13(self):
         portal_setup = getToolByName(self.portal, 'portal_setup')
         portal_jstool = getToolByName(self.portal, 'portal_javascripts')
-        portal_ksstool = getToolByName(self.portal, 'portal_kss')
 
         new_ids = 'jquery.tinymce.js',
         js = portal_jstool.getResourceIds()
@@ -38,5 +37,7 @@ class UpgradesTestCase(FunctionalTestCase):
         self.assertFalse('tiny_mce.js' in js)
         self.assertFalse('tiny_mce_init.js' in js)
 
-        kss = portal_ksstool.getResourceIds()
-        self.assertFalse('++resource++tinymce.kss/tinymce.kss' in kss)
+        portal_ksstool = getToolByName(self.portal, 'portal_kss', None)
+        if portal_ksstool is not None:
+            kss = portal_ksstool.getResourceIds()
+            self.assertFalse('++resource++tinymce.kss/tinymce.kss' in kss)
