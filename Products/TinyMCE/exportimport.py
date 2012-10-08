@@ -159,7 +159,7 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
                             if type(string) == str:
                                 # On Plone 4.1 this should not be reached
                                 # as string is unicode in any case
-                                string = string.decode("utf-8", errors="ignore")
+                                string = string.decode("utf-8", "ignore")
 
                             setattr(self.context, fieldnode.nodeName, string)
 
