@@ -5,6 +5,9 @@ HISTORY
 1.3b6 (unreleased)
 ------------------
 
+- Don't break when running portal_setup > import on non-English sites having international
+  characters in TinyMCE settings [miohtama]
+
 - Try harder to make the new TinyMCE configuration viewlet visible on the migrated sites [miohtama]
 
 - Fix the case where on the migrated site customplugins setting can be None, causing

@@ -153,7 +153,16 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
                                     if element.getAttribute('value') not in items:
                                         items.append(element.getAttribute('value'))
                             string = '\n'.join(items)
-                            setattr(self.context, fieldnode.nodeName, string.decode())
+
+                            # Don't break on international characters or otherwise
+                            # funky data -
+                            if type(string) == str:
+                                # On Plone 4.1 this should not be reached
+                                # as string is unicode in any case
+                                string = string.decode("utf-8", errors="ignore")
+
+                            setattr(self.context, fieldnode.nodeName, string)
+
         self._logger.info('TinyMCE Settings imported.')
 
     def _purgeAttributes(self):
