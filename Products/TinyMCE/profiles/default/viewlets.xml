@@ -3,5 +3,10 @@
     <viewlet name="plone.resourceregistries" />
     <viewlet name="tinymce.configuration" insert-after="*"/>
   </order>
+
+  <hidden manager="plone.htmlhead" skinname="*">
+    <viewlet name="plone.resourceregistries" remove="True" />
+    <viewlet name="tinymce.configuration" remover="True"/>
+  </hidden>
 </object>
 
