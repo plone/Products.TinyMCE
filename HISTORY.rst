@@ -5,6 +5,8 @@ HISTORY
 1.3b6 (unreleased)
 ------------------
 
+- Try harder to make the new TinyMCE configuration viewlet visible on the migrated sites [miohtama]
+
 - Fix the case where on the migrated site customplugins setting can be None, causing
   jsonConfiguration view to raise an exception [miohtama]
 
