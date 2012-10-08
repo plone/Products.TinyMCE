@@ -6,7 +6,7 @@
 
   <hidden manager="plone.htmlhead" skinname="*">
     <viewlet name="plone.resourceregistries" remove="True" />
-    <viewlet name="tinymce.configuration" remover="True"/>
+    <viewlet name="tinymce.configuration" remove="True"/>
   </hidden>
 </object>
 
