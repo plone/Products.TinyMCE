@@ -211,6 +211,16 @@ class ConfigurationViewlet(ViewletBase):
     index = ViewPageTemplateFile('configuration.pt')
     suffix = ''
 
+    def get_context_url(self):
+        """ return the context, but take portal_factory into account """
+        context = aq_inner(self.context)
+        factory = getToolByName(context, 'portal_factory', None)
+        # Are we in an archetype factory context?
+        if factory is not None and factory.isTemporary(context):
+            return context.aq_parent.aq_parent.aq_parent.absolute_url()
+
+        return context.absolute_url()
+
     def getATRichTextFieldNames(self):
         """ Get names of Archetype richtext fields """
         schema = self.context.Schema()
