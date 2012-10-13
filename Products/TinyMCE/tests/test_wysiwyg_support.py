@@ -66,7 +66,7 @@ class WysiwygSupportTestCase(IntegrationTestCase):
 
         # we should get TinyMCE:
         browser.open(testpage)
-        self.assertIn('tiny_mce_gzip.js', browser.contents)
+        self.assertIn('tiny_mce_gzip', browser.contents)
         self.assertIn('jquery.tinymce', browser.contents)
         self.assertIn('mce_editable', browser.contents)
 
@@ -97,7 +97,7 @@ class WysiwygSupportTestCase(IntegrationTestCase):
 
         # we should get TinyMCE:
         browser.open(testpage)
-        self.assertIn('tiny_mce_gzip.js', browser.contents)
+        self.assertIn('tiny_mce_gzip', browser.contents)
         self.assertIn('jquery.tinymce', browser.contents)
 
         # Set the editor globally to nothing:
@@ -136,5 +136,5 @@ class WysiwygSupportTestCase(IntegrationTestCase):
 
         # we should get TinyMCE:
         browser.open(testpage)
-        self.assertIn('tiny_mce_gzip.js', browser.contents)
+        self.assertIn('tiny_mce_gzip', browser.contents)
         self.assertIn('jquery.tinymce', browser.contents)

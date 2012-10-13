@@ -74,21 +74,8 @@ class TinyMCECompressorView(BrowserView):
                 name="plone_portal_state")
             base_url = '/'.join([portal_state.portal_url(), self.__name__])
 
-        config = getMultiAdapter((self.context, self.request),
-            name="tinymce-jsonconfiguration")
-
         if not isJS:
-            jsonconfig = getMultiAdapter((self.context, self.request),
-                                         name="tinymce-jsonconfiguration")
-            rtfields = self.request.get('f', '')
-            if isinstance(rtfields, basestring):
-                rtfields = [rtfields]
-            tinymce_config = '\n'.join(
-                ["$('textarea#%s%s.mce_editable').tinymce(%s);" % (
-                    self.request.get('p', ''), fieldname, jsonconfig(fieldname, base_url))
-                 for fieldname in rtfields]
-                )
-            tiny_mce_gzip = self.tiny_mce_gzip(tinymce_json_config=tinymce_config)
+            tiny_mce_gzip = self.tiny_mce_gzip()
     
             js_tool = getToolByName(aq_inner(self.context), 'portal_javascripts')
             if js_tool.getDebugMode():

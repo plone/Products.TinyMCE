@@ -1,4 +1,3 @@
-from zope.component import getUtility
 from Products.CMFCore.utils import getToolByName
 from Products.TinyMCE.setuphandlers import uninstall_mimetype_and_transforms
 from plone.outputfilters.setuphandlers import install_mimetype_and_transforms
@@ -75,4 +74,4 @@ def upgrade_12_to_13(setuptool):
     tinymce.customplugins = '\n'.join(plugins)
 
     setuptool.runAllImportStepsFromProfile('profile-Products.TinyMCE:upgrade_12_to_13')
-    setuptool.runImportStepFromProfile('profile-Products.TinyMCE:TinyMCE', 'viewlets')
+    

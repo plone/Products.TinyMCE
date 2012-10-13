@@ -55,6 +55,15 @@
         sortkey="15"
         profile="Products.TinyMCE:TinyMCE" />
 
+   <genericsetup:upgradeDepends
+        title="Upgrade TinyMCE 1.3b6 to 1.3b7"
+        description="This changes how the TinyMCE resources are registered to improve cachability."
+        source="4"
+        destination="5"
+        profile="Products.TinyMCE:TinyMCE"
+        import_steps="jsregistry"
+        />
+
     <genericsetup:upgradeStep
         title="Install plone.outputfilters"
         description="This replaces the old TinyMCE-specific resolveuid and captioning transform."

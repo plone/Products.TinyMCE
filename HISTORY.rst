@@ -5,10 +5,13 @@ HISTORY
 1.3b6 (unreleased)
 ------------------
 
+- Simplify how TinyMCE's javascript is included. It is now always served
+  at the portal root for improved cacheability. This also fixes some
+  regressions where TinyMCE was not getting initialized for some fields.
+  [davisagli]
+
 - Don't break when running portal_setup > import on non-English sites having international
   characters in TinyMCE settings [miohtama]
-
-- Try harder to make the new TinyMCE configuration viewlet visible on the migrated sites [miohtama]
 
 - Fix the case where on the migrated site customplugins setting can be None, causing
   jsonConfiguration view to raise an exception [miohtama]
