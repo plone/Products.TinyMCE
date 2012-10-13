@@ -10,6 +10,9 @@ HISTORY
   regressions where TinyMCE was not getting initialized for some fields.
   [davisagli]
 
+- Take context into account so breadcrumbs work e.g. for internal links and
+  images [huubbouma]
+
 - Don't break when running portal_setup > import on non-English sites having international
   characters in TinyMCE settings [miohtama]
 

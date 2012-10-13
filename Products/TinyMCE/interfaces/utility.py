@@ -481,7 +481,7 @@ class ITinyMCE(
     ):
     """This interface defines the Utility."""
 
-    def getContentType(object=None, fieldname=None):
+    def getContentType(object=None, field=None, fieldname=None):
         """ Get the content type of the field.
         """
 
