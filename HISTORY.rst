@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.3b6 (unreleased)
+1.3b6 (2012-10-16)
 ------------------
 
 - Take context into account so breadcrumbs work e.g. for internal links and
