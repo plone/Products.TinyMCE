@@ -93,6 +93,14 @@
         permission="zope2.View"
         />
 
+
+    <browser:view
+         name="content_anchors"
+         for="plone.dexterity.interfaces.IDexterityContent"
+         class=".dxanchors.DexterityAnchorView"
+         permission="zope2.View"
+         />
+
     <!-- TinyMCE configuration -->
     <browser:viewlet
         name="tinymce.configuration"
