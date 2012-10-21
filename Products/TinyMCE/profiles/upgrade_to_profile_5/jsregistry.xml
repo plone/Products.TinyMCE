@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<object name="portal_javascripts" meta_type="JavaScripts Registry">
+ <javascript id="jquery.tinymce.js" remove="True"/>
+ <javascript cacheable="True"
+             compression="safe"
+             cookable="False"
+             enabled="True"
+             authenticated="True"
+             id="tiny_mce_gzip.js"
+             insert-after="jquery-integration.js"
+             inline="False"
+             />
+</object>
