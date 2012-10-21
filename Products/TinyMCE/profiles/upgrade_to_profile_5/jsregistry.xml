@@ -1,13 +1,9 @@
 <?xml version="1.0"?>
 <object name="portal_javascripts" meta_type="JavaScripts Registry">
  <javascript id="jquery.tinymce.js" remove="True"/>
- <javascript cacheable="True"
-             compression="safe"
-             cookable="False"
-             enabled="True"
+ <javascript compression="safe"
              authenticated="True"
              id="tiny_mce_gzip.js"
              insert-after="unlockOnFormUnload.js"
-             inline="False"
              />
 </object>
