@@ -5,16 +5,8 @@
              cookable="False"
              enabled="True"
              authenticated="True"
-             id="jquery.tinymce.js"
-             insert-after="jquery.js"
-             inline="False"/> 
-<javascript cacheable="True"
-             compression="safe"
-             cookable="False"
-             enabled="True"
-             authenticated="True"
              id="tiny_mce_gzip.js"
-             insert-after="jquery.tinymce.js"
+             insert-after="jquery-integration.js"
              inline="False"
              />
 </object>
