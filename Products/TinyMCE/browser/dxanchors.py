@@ -17,7 +17,7 @@ class DexterityAnchorView(BrowserView):
     """
     implements(IAnchorView)
 
-    def listAnchorNames(self):
+    def listAnchorNames(self, fieldname=None):
         """Return a list of Anchor names"""
         results = []
         tree = HTMLTreeBuilder.TreeBuilder()
@@ -26,7 +26,7 @@ class DexterityAnchorView(BrowserView):
             if content_field is not None:
                 break
             for name, field in getFieldsInOrder(schema):
-                if IPrimaryField.providedBy(field):
+                if (not fieldname and IPrimaryField.providedBy(field)) or name == fieldname:
                     content_field = field
                     break
         if content_field is None:
