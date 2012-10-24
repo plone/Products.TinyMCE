@@ -19,6 +19,9 @@ class WysiwygSupportTestCase(IntegrationTestCase):
         browser = Browser(self.app)
         portal_url = self.portal.absolute_url()
 
+        # turn on debug mode so we can check for the js
+        self.portal.portal_javascripts.setDebugMode(True)
+
         # Get an account and login via the login form.
         browser.open(portal_url + '/login_form')
         browser.getControl(name='__ac_name').value = TEST_USER_NAME
@@ -67,7 +70,6 @@ class WysiwygSupportTestCase(IntegrationTestCase):
         # we should get TinyMCE:
         browser.open(testpage)
         self.assertIn('tiny_mce_gzip.js', browser.contents)
-        self.assertIn('jquery.tinymce', browser.contents)
         self.assertIn('mce_editable', browser.contents)
 
         # we should be able to supress tinymce
@@ -98,7 +100,6 @@ class WysiwygSupportTestCase(IntegrationTestCase):
         # we should get TinyMCE:
         browser.open(testpage)
         self.assertIn('tiny_mce_gzip.js', browser.contents)
-        self.assertIn('jquery.tinymce', browser.contents)
 
         # Set the editor globally to nothing:
         self.portal.portal_properties.site_properties.default_editor = ''
@@ -137,4 +138,3 @@ class WysiwygSupportTestCase(IntegrationTestCase):
         # we should get TinyMCE:
         browser.open(testpage)
         self.assertIn('tiny_mce_gzip.js', browser.contents)
-        self.assertIn('jquery.tinymce', browser.contents)

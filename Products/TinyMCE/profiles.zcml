@@ -30,6 +30,15 @@
         />
 
     <genericsetup:registerProfile
+        name="upgrade_to_profile_5"
+        title="Upgrade TinyMCE 1.3b6 to 1.3b7"
+        directory="profiles/upgrade_to_profile_5"
+        description="Upgrades the TinyMCE editor from version 1.3b6 to 1.3b7"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        />
+
+    <genericsetup:registerProfile
         name="uninstall"
         title="Remove TinyMCE Editor Support"
         directory="profiles/uninstall"
@@ -54,6 +63,15 @@
         handler=".upgrades.upgrade_12_to_13"
         sortkey="15"
         profile="Products.TinyMCE:TinyMCE" />
+
+   <genericsetup:upgradeStep
+        title="Upgrade TinyMCE 1.3b6 to 1.3b7"
+        description="This changes how the TinyMCE resources are registered to improve cachability."
+        source="4"
+        destination="5"
+        profile="Products.TinyMCE:TinyMCE"
+        handler=".upgrades.upgrade_to_profile_5"
+        />
 
     <genericsetup:upgradeStep
         title="Install plone.outputfilters"

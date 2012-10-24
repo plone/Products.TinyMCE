@@ -58,7 +58,6 @@ class TinyMCECompressorView(BrowserView):
         plugins = self.request.get("plugins", "").split(',')
         languages = self.request.get("languages", "").split(',')
         themes = self.request.get("themes", "").split(',')
-        isJS = self.request.get("js", "") == "true"
         suffix = self.request.get("suffix", "") == "_src" and "_src" or ""
 
         # set correct content type
@@ -74,28 +73,6 @@ class TinyMCECompressorView(BrowserView):
                 name="plone_portal_state")
             base_url = '/'.join([portal_state.portal_url(), self.__name__])
 
-        config = getMultiAdapter((self.context, self.request),
-            name="tinymce-jsonconfiguration")
-
-        if not isJS:
-            jsonconfig = getMultiAdapter((self.context, self.request),
-                                         name="tinymce-jsonconfiguration")
-            rtfields = self.request.get('f', '')
-            if isinstance(rtfields, basestring):
-                rtfields = [rtfields]
-            tinymce_config = '\n'.join(
-                ["$('textarea#%s%s.mce_editable').tinymce(%s);" % (
-                    self.request.get('p', ''), fieldname, jsonconfig(fieldname, base_url))
-                 for fieldname in rtfields]
-                )
-            tiny_mce_gzip = self.tiny_mce_gzip(tinymce_json_config=tinymce_config)
-    
-            js_tool = getToolByName(aq_inner(self.context), 'portal_javascripts')
-            if js_tool.getDebugMode():
-                return tiny_mce_gzip
-            else:
-                return JavascriptPacker('safe').pack(tiny_mce_gzip)
-
         # use traverse so developers can override tinymce through skins
         traverse = lambda name: str(self.context.restrictedTraverse(name, ''))
 
@@ -105,6 +82,8 @@ class TinyMCECompressorView(BrowserView):
                 "tinymce._init();",
                 "tinymce.baseURL='%s';tinymce._init();" % base_url)
         ]
+
+        content.append(traverse('jquery.tinymce.js'))
 
         portal_tinymce = getToolByName(self.context, 'portal_tinymce')
         customplugins = {}
@@ -143,5 +122,12 @@ class TinyMCECompressorView(BrowserView):
                 content.append(traverse("themes/%s/langs/%s.js" % (theme, lang)))
 
         # TODO: add additional javascripts in plugins
+
+        tiny_mce_gzip = self.tiny_mce_gzip()
+        js_tool = getToolByName(aq_inner(self.context), 'portal_javascripts')
+        if js_tool.getDebugMode():
+            content.append(tiny_mce_gzip)
+        else:
+            content.append(JavascriptPacker('safe').pack(tiny_mce_gzip))
 
         return ''.join(content)
