@@ -5,6 +5,10 @@ HISTORY
 1.2.14 (unreleased)
 -------------------
 
+- Escape double quote to so images preview keeps working when having quote
+  in tilte
+  [maartenkling]
+
 - Declare dependency on zope.app.component.
   [maurits]
 
