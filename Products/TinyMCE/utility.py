@@ -949,7 +949,7 @@ class TinyMCE(SimpleItem):
                     # is Folderish, so can add images there.
                     results['document_base_url'] = context.absolute_url() + "/"
                 else:
-                    results['document_base_url'] = results['portal_url'] + "/"
+                    results['document_base_url'] = parent.absolute_url() + "/"
         except AttributeError:
             results['document_base_url'] = results['portal_url'] + "/"
             results['document_url'] = results['portal_url']
