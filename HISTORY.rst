@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.3b7 (unreleased)
+1.3b7 (2012-10-29)
 ------------------
 
 - If the context isn't IFolderish, then the parent really should be,
