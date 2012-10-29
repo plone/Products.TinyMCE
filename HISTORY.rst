@@ -5,7 +5,13 @@ HISTORY
 1.3b7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- If the context isn't IFolderish, then the parent really should be,
+  since it's got the context in it.
+  [lentinj]
+
+- Check if the context is IFolderish even when checkCreationFlag isn't
+  available, i.e. when it's a Dexterity content type
+  [lentinj]
 
 
 1.3b6 (2012-10-16)
