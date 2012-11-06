@@ -5,6 +5,8 @@ HISTORY
 1.3b8 (unreleased)
 ------------------
 
+- Fixed UnboundLocalError if the context of the editor is neither IFolderish nor Archetypes
+
 1.3b7 (2012-10-29)
 ------------------
 

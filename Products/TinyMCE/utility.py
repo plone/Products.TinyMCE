@@ -932,9 +932,9 @@ class TinyMCE(SimpleItem):
 
         try:
             results['document_url'] = context.absolute_url()
+            parent = aq_parent(aq_inner(context))
             if getattr(aq_base(context), 'checkCreationFlag', None):
                 # Work out if it's an archetypes add form or not
-                parent = aq_parent(aq_inner(context))
                 if context.checkCreationFlag():
                     parent = aq_parent(aq_parent(parent))
                     results['document_base_url'] = parent.absolute_url() + "/"
