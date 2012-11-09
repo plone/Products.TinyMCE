@@ -7,6 +7,9 @@ HISTORY
 
 - Fixed UnboundLocalError if the context of the editor is neither IFolderish nor Archetypes
 
+- Fixed inclusion of external CSS resources.
+  [tom_gross]
+
 1.3b7 (2012-10-29)
 ------------------
 
