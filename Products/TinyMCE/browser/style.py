@@ -25,7 +25,11 @@ class TinyMCEStyle(BrowserView):
 
         for style in styles:
             if style.getMedia() not in ('print', 'projection') and style.getRel() == 'stylesheet':
-                src = "<!-- @import url(%s/%s/%s); -->" % (registry_url, skinname, style.getId())
+                if style.isExternalResource():
+                    src = style.getId()
+                else:
+                    src = "<!-- @import url(%s/%s/%s); -->" % (
+                        registry_url, skinname, style.getId())
                 result.append(src)
 
         # BBB 2010-07-24 Support Plone 3
