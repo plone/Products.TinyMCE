@@ -7,13 +7,9 @@ Copyright (c) 2008 Jason Davies
 Licensed under the terms of the MIT License (see LICENSE.txt)
 """
 
-import os
-
 from zope.interface import implements
-from Acquisition import aq_inner
 from Products.CMFCore.utils import getToolByName
 from Products.Five import BrowserView
-from Products.ResourceRegistries.tools.packer import JavascriptPacker
 from zope.component import getMultiAdapter
 
 from Products.TinyMCE.interfaces import ITinyMCECompressor
@@ -35,21 +31,22 @@ def isContextUrl(url):
     return True
 
 
-def stringTemplate(filename):
-    path = os.path.dirname(__file__)
-    f = open(os.path.join(path, filename), 'rb')
-    try:
-        body = f.read()
-    finally:
-        f.close()
+TINY_MCE_GZIP = """
+jQuery(function($) {
+    $('textarea.mce_editable').each(function() {
+        var config = $.parseJSON($(this).attr('data-mce-config'));
+        $(this).tinymce(config);
+    });
 
-    body = body.decode('utf-8')
-    template = lambda **kwargs: body % kwargs
-    return staticmethod(template)
+    // set Text Format dropdown untabbable for better UX
+    // TODO: find a better way to fix this
+    $('#text_text_format').attr('tabindex', '-1');
+});
+"""
 
 
 class TinyMCECompressorView(BrowserView):
-    tiny_mce_gzip = stringTemplate('tiny_mce_gzip.js')
+    """ Bundle TinyMCE editor and all resources """
 
     implements(ITinyMCECompressor)
 
@@ -123,11 +120,5 @@ class TinyMCECompressorView(BrowserView):
 
         # TODO: add additional javascripts in plugins
 
-        tiny_mce_gzip = self.tiny_mce_gzip()
-        js_tool = getToolByName(aq_inner(self.context), 'portal_javascripts')
-        if js_tool.getDebugMode():
-            content.append(tiny_mce_gzip)
-        else:
-            content.append(JavascriptPacker('safe').pack(tiny_mce_gzip))
-
+        content.append(TINY_MCE_GZIP)
         return ''.join(content)

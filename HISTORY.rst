@@ -10,6 +10,9 @@ HISTORY
 - Fixed inclusion of external CSS resources.
   [tom_gross]
 
+- Fixed bundeling of editor with and without JS debug mode
+  [tom_gross]
+
 1.3b7 (2012-10-29)
 ------------------
 
