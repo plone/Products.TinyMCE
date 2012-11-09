@@ -934,22 +934,16 @@ class TinyMCE(SimpleItem):
         try:
             results['document_url'] = context.absolute_url()
             parent = aq_parent(aq_inner(context))
-            if getattr(aq_base(context), 'checkCreationFlag', None):
-                # Work out if it's an archetypes add form or not
-                if context.checkCreationFlag():
-                    parent = aq_parent(aq_parent(parent))
-                    results['document_base_url'] = parent.absolute_url() + "/"
-                else:
-                    if IFolderish.providedBy(context):
-                        results['document_base_url'] = context.absolute_url() + "/"
-                    else:
-                        results['document_base_url'] = parent.absolute_url() + "/"
+            if getattr(aq_base(context), 'checkCreationFlag', lambda: None)():
+                # An archetypes add form, navigate outside the portal_factory
+                parent = aq_parent(aq_parent(parent))
+                results['document_base_url'] = parent.absolute_url() + "/"
             else:
                 if IFolderish.providedBy(context):
-                    # Either the current item or the parent (if in add form)
-                    # is Folderish, so can add images there.
+                    # Current item is folderish (or parent, if a dexterity add form)
                     results['document_base_url'] = context.absolute_url() + "/"
                 else:
+                    # Parent must be folderish, since it contains context
                     results['document_base_url'] = parent.absolute_url() + "/"
         except AttributeError:
             results['document_base_url'] = results['portal_url'] + "/"
