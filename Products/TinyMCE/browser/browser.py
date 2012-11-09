@@ -17,19 +17,6 @@ from Products.TinyMCE.adapters.interfaces.Save import ISave
 from Products.TinyMCE.browser.interfaces.browser import ITinyMCEBrowserView
 from Products.TinyMCE.browser.interfaces.browser import IATDProxyView
 
-try:
-    from Products.Archetypes.interfaces import IBaseObject
-    HAS_AT = True
-except ImportError:
-    HAS_AT = False
-try:
-    from z3c.form import interfaces as z3cform
-    from plone.z3cform.interfaces import IFormWrapper
-    from plone.app.textfield.widget import IRichTextWidget
-    HAS_DX = True
-except ImportError:
-    HAS_DX = False
-
 
 class TinyMCEBrowserView(BrowserView):
     """TinyMCE Browser View"""

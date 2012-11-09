@@ -3,6 +3,7 @@ from Products.TinyMCE.setuphandlers import uninstall_mimetype_and_transforms
 from plone.outputfilters.setuphandlers import install_mimetype_and_transforms
 try:
     from zope.component.hooks import getSite
+    getSite   # pyflakes
 except ImportError:
     from zope.app.component.hooks import getSite
 

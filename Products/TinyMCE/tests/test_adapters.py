@@ -4,7 +4,6 @@ This functionality is added to plone content types using adapters.
 import os
 from cgi import FieldStorage
 from tempfile import TemporaryFile
-import unittest2 as unittest
 
 try:
     import simplejson as json
@@ -12,7 +11,6 @@ try:
 except ImportError:
     import json
 
-from zope.component import getUtility, createObject
 from Products.CMFCore.utils import getToolByName
 from ZPublisher.HTTPRequest import FileUpload
 

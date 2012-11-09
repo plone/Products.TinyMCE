@@ -5,8 +5,10 @@ from zope.interface import implements
 try:
     try:
         from Products.PortalTransforms.interfaces import ITransform
+        ITransform   # pyflakes
     except ImportError:
         from Products.PortalTransforms.z3.interfaces import ITransform
+        ITransform   # pyflakes
 except ImportError:
     ITransform = None
 from Products.PortalTransforms.interfaces import itransform

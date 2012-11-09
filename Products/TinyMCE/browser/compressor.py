@@ -32,7 +32,7 @@ def isContextUrl(url):
 
 
 TINY_MCE_GZIP = """
-jQuery(function($) {
+jQuery(function($){
     $('textarea.mce_editable').each(function() {
         var config = $.parseJSON($(this).attr('data-mce-config'));
         $(this).tinymce(config);

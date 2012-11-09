@@ -41,6 +41,7 @@ BUTTON_WIDTHS = {'style': 150, 'forecolor': 32, 'backcolor': 32, 'tablecontrols'
 
 try:
     from plone.app.textfield.interfaces import IRichText
+    IRichText    # pyflakes
 except ImportError:
     from zope.interface import Interface
     class IRichText(Interface):
