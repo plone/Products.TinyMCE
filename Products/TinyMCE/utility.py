@@ -41,6 +41,7 @@ BUTTON_WIDTHS = {'style': 150, 'forecolor': 32, 'backcolor': 32, 'tablecontrols'
 
 try:
     from plone.app.textfield.interfaces import IRichText
+    IRichText    # pyflakes
 except ImportError:
     from zope.interface import Interface
     class IRichText(Interface):
@@ -932,18 +933,18 @@ class TinyMCE(SimpleItem):
 
         try:
             results['document_url'] = context.absolute_url()
-            if getattr(aq_base(context), 'checkCreationFlag', None):
-                parent = aq_parent(aq_inner(context))
-                if context.checkCreationFlag():
-                    parent = aq_parent(aq_parent(parent))
-                    results['document_base_url'] = parent.absolute_url() + "/"
-                else:
-                    if IFolderish.providedBy(context):
-                        results['document_base_url'] = context.absolute_url() + "/"
-                    else:
-                        results['document_base_url'] = parent.absolute_url() + "/"
+            parent = aq_parent(aq_inner(context))
+            if getattr(aq_base(context), 'checkCreationFlag', lambda: None)():
+                # An archetypes add form, navigate outside the portal_factory
+                parent = aq_parent(aq_parent(parent))
+                results['document_base_url'] = parent.absolute_url() + "/"
             else:
-                results['document_base_url'] = results['portal_url'] + "/"
+                if IFolderish.providedBy(context):
+                    # Current item is folderish (or parent, if a dexterity add form)
+                    results['document_base_url'] = context.absolute_url() + "/"
+                else:
+                    # Parent must be folderish, since it contains context
+                    results['document_base_url'] = parent.absolute_url() + "/"
         except AttributeError:
             results['document_base_url'] = results['portal_url'] + "/"
             results['document_url'] = results['portal_url']

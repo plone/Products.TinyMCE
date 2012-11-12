@@ -2,22 +2,42 @@
 HISTORY
 =======
 
-1.3b7 (unreleased)
+1.3b8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fixed UnboundLocalError if the context of the editor is neither IFolderish nor Archetypes
+
+- Fixed inclusion of external CSS resources.
+  [tom_gross]
+
+- Fixed bundeling of editor with and without JS debug mode
+  [tom_gross]
+
+1.3b7 (2012-10-29)
+------------------
+
+- If the context isn't IFolderish, then the parent really should be,
+  since it's got the context in it.
+  [lentinj]
+
+- Check if the context is IFolderish even when checkCreationFlag isn't
+  available, i.e. when it's a Dexterity content type
+  [lentinj]
 
 
 1.3b6 (2012-10-16)
 ------------------
+
+- Simplify how TinyMCE's javascript is included. It is now always served
+  at the portal root for improved cacheability. This also fixes some
+  regressions where TinyMCE was not getting initialized for some fields.
+  [davisagli]
 
 - Take context into account so breadcrumbs work e.g. for internal links and
   images [huubbouma]
 
 - Don't break when running portal_setup > import on non-English sites having international
   characters in TinyMCE settings [miohtama]
-
-- Try harder to make the new TinyMCE configuration viewlet visible on the migrated sites [miohtama]
 
 - Fix the case where on the migrated site customplugins setting can be None, causing
   jsonConfiguration view to raise an exception [miohtama]

@@ -3,6 +3,7 @@ from zope.interface import implements
 from zope.component import adapts
 try:
     from plone.caching.interfaces import IRulesetLookup
+    IRulesetLookup    # pyflakes
 except ImportError:
     IRulesetLookup = Interface
 from Products.TinyMCE.interfaces import ITinyMCECompressor

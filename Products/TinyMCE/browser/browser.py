@@ -1,21 +1,12 @@
 import httplib
-from urllib import urlencode
 
 from Acquisition import aq_inner
 
 from zope.interface import implements
-from zope.component import queryUtility
-from zope.component import getMultiAdapter
-
-from zope.formlib import interfaces as formlib
 
 from Products.Five.browser import BrowserView
-from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 
 from Products.CMFCore.utils import getToolByName
-
-from plone.app.form.widgets.wysiwygwidget import WYSIWYGWidget
-from plone.app.layout.viewlets.common import ViewletBase
 
 from Products.TinyMCE.adapters.interfaces.JSONFolderListing import \
      IJSONFolderListing
@@ -25,20 +16,6 @@ from Products.TinyMCE.adapters.interfaces.Upload import IUpload
 from Products.TinyMCE.adapters.interfaces.Save import ISave
 from Products.TinyMCE.browser.interfaces.browser import ITinyMCEBrowserView
 from Products.TinyMCE.browser.interfaces.browser import IATDProxyView
-from Products.TinyMCE.interfaces.utility import ITinyMCE
-
-try:
-    from Products.Archetypes.interfaces import IBaseObject
-    HAS_AT = True
-except ImportError:
-    HAS_AT = False
-try:
-    from z3c.form import interfaces as z3cform
-    from plone.z3cform.interfaces import IFormWrapper
-    from plone.app.textfield.widget import IRichTextWidget
-    HAS_DX = True
-except ImportError:
-    HAS_DX = False
 
 
 class TinyMCEBrowserView(BrowserView):
@@ -136,34 +113,11 @@ class TinyMCEBrowserView(BrowserView):
             return ''
         return object.getDetails()
 
-    def resolveField(self, context, fieldname):
-        """
-        Look up a field on the context by the field name.
-        """
-        if HAS_AT and IBaseObject.providedBy(context):
-            schema = context.Schema()
-            field = schema.get(fieldname, None)
-            if field:
-                return field
-        elif HAS_DX:
-            # TODO: Implement Dexterity specific field look-up
-            # Not Implemented for Dexterity yet
-            pass
-
-        # Unknown - pass forward as string
-        # but will result to defunct widget level config overrides
-        return fieldname
-
-    def jsonConfiguration(self, fieldname, script_url=None):
+    def jsonConfiguration(self, field, script_url=None):
         """Return the configuration in JSON"
 
         """
         utility = getToolByName(self.context, 'portal_tinymce')
-
-        # jsonConfiguration needs to pass the full field instance,
-        # not field name, to getConfiguration() so that
-        # we can load widget-specific configuration overrides
-        field = self.resolveField(self.context, fieldname)
         return utility.getConfiguration(context=self.context,
                                         field=field,
                                         request=self.request,
@@ -199,94 +153,3 @@ class ATDProxyView(object):
         xml = respxml.strip().replace("\r", '').replace("\n", '').replace(
             '>  ', '>')
         return xml
-
-
-class ConfigurationViewlet(ViewletBase):
-    """ A viewlet which includes the TinyMCE configuration JavaScript
-
-    This can not be done in the portal_javascript Tool because it needs to be
-    relative to the context path.
-    """
-
-    index = ViewPageTemplateFile('configuration.pt')
-    suffix = ''
-
-    def get_context_url(self):
-        """ return the context, but take portal_factory into account """
-        context = aq_inner(self.context)
-        factory = getToolByName(context, 'portal_factory', None)
-        # Are we in an archetype factory context?
-        if factory is not None and factory.isTemporary(context):
-            return context.aq_parent.aq_parent.aq_parent.absolute_url()
-
-        return context.absolute_url()
-
-    def getATRichTextFieldNames(self):
-        """ Get names of Archetype richtext fields """
-        schema = self.context.Schema()
-        return [
-            field.getName()
-            for field in schema.filterFields(type='text')
-            if field.widget.getName() == 'RichWidget'
-            ]
-
-    def buildsuffix(self, rtfields, prefix):
-        return '?%s' % urlencode({'f': rtfields, 'p': prefix}, doseq=True)
-
-    def show(self):
-        context = aq_inner(self.context)
-        tinymce = queryUtility(ITinyMCE, context=context)
-
-        if tinymce is None:
-            return False
-
-        if HAS_DX:
-            form = self.__parent__
-            if IFormWrapper.providedBy(form):
-                form = form.form_instance
-
-        # Case 1: Dexterity and z3c.form
-        if HAS_DX and z3cform.IForm.providedBy(form):
-            rtfields = [
-                widget.field.__name__ for widget
-                in form.widgets.values() if IRichTextWidget.providedBy(
-                    widget)
-                ]
-
-            if not rtfields:
-                return False
-
-            prefix = (form.prefix + form.widgets.prefix).replace(
-                '.', '\\\\.'
-                )
-
-        # Case 2: Archetypes
-        elif HAS_AT and IBaseObject.providedBy(context):
-            rtfields = self.getATRichTextFieldNames()
-            prefix = ''
-
-        # Case 3: Formlib
-        elif formlib.IForm.providedBy(self.view):
-            rtfields = [field.__name__ for field in self.view.form_fields
-                        if field.custom_widget == WYSIWYGWidget]
-            prefix = 'form\\\\.'
-
-        # Case 4: Everything else!
-        else:
-            return False
-
-        self.suffix = self.buildsuffix(rtfields, prefix)
-
-        # Handle Archetypes factory pages.
-        if not prefix:
-            factory = getToolByName(context, 'portal_factory', None)
-            if factory is not None and factory.isTemporary(context):
-                # Always include TinyMCE on temporary pages These are
-                # meant for editing and get false positives with
-                # the `showEditableBorder` method.
-                return True
-
-            plone_view = getMultiAdapter((context, self.request), name="plone")
-            return plone_view.showEditableBorder() and rtfields
-
-        return rtfields

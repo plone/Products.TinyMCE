@@ -63,9 +63,9 @@ class WidgetSettingTestCase(FunctionalTestCase):
         view = view.__of__(dummy)
 
         # Settings output as JSON
-        output = view("testfield")
+        output = view(field=dummy.getField('testfield'))
 
         data = json.loads(output)
 
-        # Mo other buttons should be available
+        # No other buttons should be available
         self.assertEqual(data[u"buttons"], [u'bold'])

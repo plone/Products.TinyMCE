@@ -7,13 +7,9 @@ Copyright (c) 2008 Jason Davies
 Licensed under the terms of the MIT License (see LICENSE.txt)
 """
 
-import os
-
 from zope.interface import implements
-from Acquisition import aq_inner
 from Products.CMFCore.utils import getToolByName
 from Products.Five import BrowserView
-from Products.ResourceRegistries.tools.packer import JavascriptPacker
 from zope.component import getMultiAdapter
 
 from Products.TinyMCE.interfaces import ITinyMCECompressor
@@ -35,21 +31,22 @@ def isContextUrl(url):
     return True
 
 
-def stringTemplate(filename):
-    path = os.path.dirname(__file__)
-    f = open(os.path.join(path, filename), 'rb')
-    try:
-        body = f.read()
-    finally:
-        f.close()
+TINY_MCE_GZIP = """
+jQuery(function($){
+    $('textarea.mce_editable').each(function() {
+        var config = $.parseJSON($(this).attr('data-mce-config'));
+        $(this).tinymce(config);
+    });
 
-    body = body.decode('utf-8')
-    template = lambda **kwargs: body % kwargs
-    return staticmethod(template)
+    // set Text Format dropdown untabbable for better UX
+    // TODO: find a better way to fix this
+    $('#text_text_format').attr('tabindex', '-1');
+});
+"""
 
 
 class TinyMCECompressorView(BrowserView):
-    tiny_mce_gzip = stringTemplate('tiny_mce_gzip.js')
+    """ Bundle TinyMCE editor and all resources """
 
     implements(ITinyMCECompressor)
 
@@ -58,7 +55,6 @@ class TinyMCECompressorView(BrowserView):
         plugins = self.request.get("plugins", "").split(',')
         languages = self.request.get("languages", "").split(',')
         themes = self.request.get("themes", "").split(',')
-        isJS = self.request.get("js", "") == "true"
         suffix = self.request.get("suffix", "") == "_src" and "_src" or ""
 
         # set correct content type
@@ -74,28 +70,6 @@ class TinyMCECompressorView(BrowserView):
                 name="plone_portal_state")
             base_url = '/'.join([portal_state.portal_url(), self.__name__])
 
-        config = getMultiAdapter((self.context, self.request),
-            name="tinymce-jsonconfiguration")
-
-        if not isJS:
-            jsonconfig = getMultiAdapter((self.context, self.request),
-                                         name="tinymce-jsonconfiguration")
-            rtfields = self.request.get('f', '')
-            if isinstance(rtfields, basestring):
-                rtfields = [rtfields]
-            tinymce_config = '\n'.join(
-                ["$('textarea#%s%s.mce_editable').tinymce(%s);" % (
-                    self.request.get('p', ''), fieldname, jsonconfig(fieldname, base_url))
-                 for fieldname in rtfields]
-                )
-            tiny_mce_gzip = self.tiny_mce_gzip(tinymce_json_config=tinymce_config)
-    
-            js_tool = getToolByName(aq_inner(self.context), 'portal_javascripts')
-            if js_tool.getDebugMode():
-                return tiny_mce_gzip
-            else:
-                return JavascriptPacker('safe').pack(tiny_mce_gzip)
-
         # use traverse so developers can override tinymce through skins
         traverse = lambda name: str(self.context.restrictedTraverse(name, ''))
 
@@ -105,6 +79,8 @@ class TinyMCECompressorView(BrowserView):
                 "tinymce._init();",
                 "tinymce.baseURL='%s';tinymce._init();" % base_url)
         ]
+
+        content.append(traverse('jquery.tinymce.js'))
 
         portal_tinymce = getToolByName(self.context, 'portal_tinymce')
         customplugins = {}
@@ -144,4 +120,5 @@ class TinyMCECompressorView(BrowserView):
 
         # TODO: add additional javascripts in plugins
 
+        content.append(TINY_MCE_GZIP)
         return ''.join(content)

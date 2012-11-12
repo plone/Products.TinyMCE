@@ -1,9 +1,9 @@
-from zope.component import getUtility
 from Products.CMFCore.utils import getToolByName
 from Products.TinyMCE.setuphandlers import uninstall_mimetype_and_transforms
 from plone.outputfilters.setuphandlers import install_mimetype_and_transforms
 try:
     from zope.component.hooks import getSite
+    getSite   # pyflakes
 except ImportError:
     from zope.app.component.hooks import getSite
 
@@ -64,15 +64,17 @@ def upgrade_11_to_2(setuptool):
 
 
 def upgrade_12_to_13(setuptool):
-    # Unregister old js and kss and register new js
-    tinymce = getToolByName(setuptool, 'portal_tinymce')
-
     # plonebrowser replaces ploneimage & plonelink
+    tinymce = getToolByName(setuptool, 'portal_tinymce')
     plugins = tinymce.customplugins.split()
     if u'plonebrowser' not in plugins:
         plugins.append(u'plonebrowser')
     plugins = filter(lambda x: x != u'plonelink' and x != u'ploneimage', plugins)
     tinymce.customplugins = '\n'.join(plugins)
 
+    # Unregister old js and kss and register new js
     setuptool.runAllImportStepsFromProfile('profile-Products.TinyMCE:upgrade_12_to_13')
-    setuptool.runImportStepFromProfile('profile-Products.TinyMCE:TinyMCE', 'viewlets')
+
+
+def upgrade_to_profile_5(setuptool):
+    setuptool.runAllImportStepsFromProfile('profile-Products.TinyMCE:upgrade_to_profile_5')

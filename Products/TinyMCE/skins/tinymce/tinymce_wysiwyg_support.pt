@@ -10,6 +10,8 @@
                      text_format python:here.portal_tinymce.getContentType(object=object, field=field, fieldname=fname);
                      suppressed python:request.form.get('tinymce.suppress') == fname;
                      wysiwyg python:(not suppressed and 'html' in text_format.lower()) or force_wysiwyg;
+                     configuration_method nocall:here/@@tinymce-jsonconfiguration;
+                     configuration_json python:configuration_method(field=field);
                      element_id id|inputname;">
   <textarea cols="80"
             rows="25"
@@ -21,6 +23,7 @@
                             onblur onblur|nothing;
                             rows rows|default;
                             cols cols|default;
+                            data-mce-config configuration_json;
                             class python:wysiwyg and 'mce_editable' or None"></textarea>
 
   <div tal:condition="wysiwyg"
