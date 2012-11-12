@@ -101,11 +101,11 @@
          />
 
     <!-- TinyMCE configuration -->
-    <browser:viewlet
+    <!-- <browser:viewlet
         name="tinymce.configuration"
         manager="plone.app.layout.viewlets.interfaces.IHtmlHead"
         class=".browser.ConfigurationViewlet"
         permission="zope2.View"
-        />
+        /> -->
         
 </configure>
