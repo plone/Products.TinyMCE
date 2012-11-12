@@ -223,3 +223,64 @@ class UtilityTestCase(IntegrationTestCase):
         self.assertEqual(content_css_url,
                          url,
                          msg="content_css has wrong url, reported #12800")
+
+    def test_config_document_base_url(self):
+        portal = self.portal
+
+        configuration = json.loads(self.utility.getConfiguration(portal))
+        self.assertEqual(configuration['document_url'], 'http://nohost/plone')
+        self.assertEqual(configuration['document_base_url'], 'http://nohost/plone/')
+
+        # Check AT document after creation
+        portal.invokeFactory(id='doc', type_name='Document')
+        portal['doc'].unmarkCreationFlag()
+        self.assertEqual(portal['doc'].checkCreationFlag(), False)
+        configuration = json.loads(self.utility.getConfiguration(portal['doc']))
+        self.assertEqual(configuration['document_url'], 'http://nohost/plone/doc')
+        self.assertEqual(configuration['document_base_url'], 'http://nohost/plone/')
+
+        # Check AT folder after creation
+        portal.invokeFactory(id='folder', type_name='Folder')
+        portal['folder'].unmarkCreationFlag()
+        self.assertEqual(portal['folder'].checkCreationFlag(), False)
+        configuration = json.loads(self.utility.getConfiguration(portal['folder']))
+        self.assertEqual(configuration['document_url'], 'http://nohost/plone/folder')
+        self.assertEqual(configuration['document_base_url'], 'http://nohost/plone/folder/')
+
+        # Check AT doc within AT folder after creation
+        portal['folder'].invokeFactory(id='doc', type_name='Document')
+        portal['folder']['doc'].unmarkCreationFlag()
+        self.assertEqual(portal['folder']['doc'].checkCreationFlag(), False)
+        configuration = json.loads(self.utility.getConfiguration(portal['folder']['doc']))
+        self.assertEqual(configuration['document_url'], 'http://nohost/plone/folder/doc')
+        self.assertEqual(configuration['document_base_url'], 'http://nohost/plone/folder/')
+
+    def test_config_document_base_url_during_creation(self):
+        portal = self.portal
+
+        # Browse to an add form and read the JSON from it
+        browser = Browser(self.app)
+        self.app.acl_users.userFolderAddUser('root', 'secret', ['Manager'], [])
+        transaction.commit()
+        browser.addHeader('Authorization', 'Basic root:secret')
+        browser.open('http://nohost/plone/createObject?type_name=Document')
+        configuration = self._parsePageConfiguration(browser)
+        self.assertIn('http://nohost/plone/portal_factory/Document/document.', configuration['document_url'])
+        self.assertEqual(configuration['document_base_url'], 'http://nohost/plone/')
+
+        # Calling getConfiguration direcly on a not-yet-created document
+        # breaks, and we fall back to the portal URL. This is possibly a bug.
+        portal.invokeFactory(id='doc', type_name='Document')
+        self.assertEqual(portal['doc'].checkCreationFlag(), True)
+        configuration = json.loads(self.utility.getConfiguration(portal['doc']))
+        self.assertEqual(configuration['document_url'], 'http://nohost/plone')
+        self.assertEqual(configuration['document_base_url'], 'http://nohost/plone/')
+
+    def _parsePageConfiguration(self, browser):
+        """Find the TinyMCE config on the current page and parse it
+        """
+        for form in browser.mech_browser.forms():
+            for control in form.controls:
+                if 'data-mce-config' in getattr(control, 'attrs', {}):
+                    return json.loads(control.attrs['data-mce-config'])
+        raise ValueError('No control had data-mce-config attribute')
