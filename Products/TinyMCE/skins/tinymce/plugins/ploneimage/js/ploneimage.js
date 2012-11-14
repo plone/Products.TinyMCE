@@ -506,7 +506,7 @@ var ImageDialog = {
                             html += '</a>';
                         } else {
                             html += '<input onclick="ImageDialog.setDetails(\'';
-                            html += data.items[i].url + '\',\'' + data.items[i].title.replace(/'/g, "\\'") + '\');"';
+                            html += data.items[i].url + '\',\'' + data.items[i].title.replace(/'/g, "\\'").replace(/"/g, "\\'") + '\');"';
                             html += ' type="radio" class="noborder" name="internallink" value="';
                             if (tinyMCEPopup.editor.settings.link_using_uids) {
                                 html += "resolveuid/" + data.items[i].uid;
