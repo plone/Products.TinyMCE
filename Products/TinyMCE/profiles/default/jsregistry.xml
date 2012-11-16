@@ -2,7 +2,12 @@
 <object name="portal_javascripts" meta_type="JavaScripts Registry">
 <javascript compression="safe"
             authenticated="True"
-            id="tiny_mce_gzip.js"
+            id="jquery.tinymce.js"
             insert-after="unlockOnFormUnload.js"
+            />
+<javascript compression="safe"
+            authenticated="True"
+            id="tiny_mce_gzip.js"
+            insert-after="jquery.tinymce.js"
             />
 </object>
