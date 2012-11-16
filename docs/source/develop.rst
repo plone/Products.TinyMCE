@@ -55,7 +55,7 @@ If you see ``No upgrade avaiable`` you don't need to run anything.
 # TODO: difference using development version and developing tinymce
 
 Upgrading
-*********
+-----------
 
 When you upgrade Products.TinyMCE you need to run
 the upgrade steps in portal_setup in ZMI.
@@ -81,9 +81,9 @@ restart Plone
 Debugging tinymce javascript
 ----------------------------
 
-You can have unobfuscated TinyMCE available for your Plone for debugging in two ways 
+You can have unobfuscated TinyMCE available for your Plone for debugging in two ways
 
-* Separate files: TinyMCE uses internal script loader 
+* Separate files: TinyMCE uses internal script loader
 
 * Merged as tiny_mce_full.js
 
@@ -95,30 +95,30 @@ Development build
 All TinyMCE source code modules are separate in the orignal tree and must be copied for to *skins* structure::
 
         cd src/tinymce/jscripts/tiny_mce
-        cp -r * ../../../../Products/TinyMCE/skins/tinymce 
-        
-In *portal_javascripts* change *tiny_mce.js* -> *tiny_mce_dev.js*. 
+        cp -r * ../../../../Products/TinyMCE/skins/tinymce
+
+In *portal_javascripts* change *tiny_mce.js* -> *tiny_mce_dev.js*.
 
 Fix definitionlist: in *skins/tinymce/plugins/definitionlist* copy *editor_plug.js* as *editor_plugin_src.js*.
 Don't know why this thing is broken or what's the proper fix or why Sky is blue.
 
 Uncompressed jQuery adapter must be manually installed too.
-From *skins/classes/adapter/jquery* copy *adapter.js* as *skins/jquery.tinymce.js*. 
-        
+From *skins/classes/adapter/jquery* copy *adapter.js* as *skins/jquery.tinymce.js*.
+
 Full concatenated build
 =========================
 
 Edit ``upgrade_tinymce.sh`` to do a full build::
 
         ant -s $tinymce_git_root/build.xml build_full
-        
+
 This will create *skins/tinymce/tiny_mce_full.js*.
 
-Copy in jquery.tinymce.js (where?)        
-        
+Copy in jquery.tinymce.js (where?)
+
 More info about TinyMCE build process:
 
-* https://github.com/tinymce/tinymce        
+* https://github.com/tinymce/tinymce
 
 Updating translations
 ---------------------
@@ -129,7 +129,7 @@ We use two domains of translations:
    updated when we upgrade to a new version of TinyMCE (see below) - no touchy!
  * plone.tinymce.po files which contain translations for our custom code.
 
-Before editing translations 
+Before editing translations
 
 * install ``i18ndude`` by running buildout using instructions above.
 
