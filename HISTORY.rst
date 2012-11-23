@@ -5,6 +5,15 @@ HISTORY
 1.3b8 (unreleased)
 ------------------
 
+- textarea for tiles is differently configurated then rest of tinymce instances
+  [garbas]
+
+- works with or without plone.init.js (from plone.app.toolbar)
+  [garbas]
+
+- works when initialized inside bootstrap moda 
+  [garbas]
+
 - Fixed UnboundLocalError if the context of the editor is neither IFolderish nor Archetypes
 
 - Fixed inclusion of external CSS resources.
