@@ -122,12 +122,16 @@ class TinyMCECompressorView(BrowserView):
         """Parameters are parsed from url query as defined by tinymce"""
         plugins = self.request.get("plugins", "").split(',')
         languages = self.request.get("languages", "").split(',')
+        isJS = self.request.get("js", "") == "true"
         themes = self.request.get("themes", "").split(',')
         suffix = self.request.get("suffix", "") == "_src" and "_src" or ""
 
         # set correct content type
         response = self.request.response
         response.setHeader('Content-type', 'application/javascript')
+
+        if not isJS:
+            return TINY_MCE_GZIP
 
         # get base_url
         base_url = '/'.join([self.context.absolute_url(), self.__name__])
@@ -147,8 +151,6 @@ class TinyMCECompressorView(BrowserView):
                 "tinymce._init();",
                 "tinymce.baseURL='%s';tinymce._init();" % base_url)
         ]
-
-        content.append(traverse('jquery.tinymce.js'))
 
         portal_tinymce = getToolByName(self.context, 'portal_tinymce')
         customplugins = {}
@@ -188,5 +190,4 @@ class TinyMCECompressorView(BrowserView):
 
         # TODO: add additional javascripts in plugins
 
-        content.append(TINY_MCE_GZIP)
         return ''.join(content)

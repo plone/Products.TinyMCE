@@ -717,16 +717,12 @@ class TinyMCE(SimpleItem):
         return 'text/html'
 
     security.declareProtected('View', 'getConfiguration')
-    def getConfiguration(self, context=None, field=None, request=None, script_url=None):
+    def getConfiguration(self, context=None, field=None, request=None):
         """Return JSON configuration that is passed to javascript tinymce constructor.
 
         :param field: Dexterity or Archetypes Field instance
 
         :param context: The TinyMCE editor content items
-
-        :param script_url: tinymce.jquery.js plug-in TinyMCE script parameter.
-                           For more details see
-                           http://www.tinymce.com/wiki.php/jQuery_Plugin
 
         :return: JSON string of the TinyMCE configuration for this field
         """
@@ -883,9 +879,8 @@ class TinyMCE(SimpleItem):
         results['directionality'] = portal_state.is_rtl() and 'rtl' or 'ltr'
 
         portal = portal_state.portal()
-        request = context.REQUEST
-        portal_path = portal.getPhysicalPath()
-        results['portal_url'] = request.physicalPathToURL(portal_path)
+        portal_url = portal_state.portal_url()
+        results['portal_url'] = portal_url
         results['navigation_root_url'] = portal_state.navigation_root_url()
 
         if self.content_css and self.content_css.strip() != "":
@@ -899,25 +894,13 @@ class TinyMCE(SimpleItem):
         results['link_using_uids'] = self.link_using_uids
         results['contextmenu'] = self.contextmenu
         results['entity_encoding'] = self.entity_encoding
-        if script_url:
-            results['script_url'] = script_url
+        results['script_url'] = portal_url + '/tiny_mce_gzip.js'
+        results['allow_captioned_images'] = bool(self.allow_captioned_images)
+        results['rooted'] = bool(self.rooted or rooted)
 
-        if self.allow_captioned_images:
-            results['allow_captioned_images'] = True
-        else:
-            results['allow_captioned_images'] = False
-
-        if self.rooted or rooted:
-            results['rooted'] = True
-        else:
-            results['rooted'] = False
-
-        props = getToolByName(self, 'portal_properties')
+        props = getToolByName(portal, 'portal_properties')
         livesearch = props.site_properties.getProperty('enable_livesearch', False)
-        if livesearch:
-            results['livesearch'] = True
-        else:
-            results['livesearch'] = False
+        results['livesearch'] = bool(livesearch)
 
         AVAILABLE_LANGUAGES = set(
         'sq ar hy az eu be bn nb bs br bg ca ch zh hr cs da dv nl en et fi fr gl '
@@ -946,8 +929,8 @@ class TinyMCE(SimpleItem):
                     # Parent must be folderish, since it contains context
                     results['document_base_url'] = parent.absolute_url() + "/"
         except AttributeError:
-            results['document_base_url'] = results['portal_url'] + "/"
-            results['document_url'] = results['portal_url']
+            results['document_base_url'] = portal_url + "/"
+            results['document_url'] = portal_url
 
         # Get Library options
         results['gecko_spellcheck'] = self.libraries_spellchecker_choice == 'browser'
@@ -968,7 +951,7 @@ class TinyMCE(SimpleItem):
         mtool = getToolByName(portal, 'portal_membership')
         member = mtool.getAuthenticatedMember()
         results['atd_rpc_id'] = 'Products.TinyMCE-' + (member.getId() or '')  # None when Anonymous User
-        results['atd_rpc_url'] = "%s/@@" % portal.absolute_url()
+        results['atd_rpc_url'] = "%s/@@" % portal_url
         results['atd_show_types'] = self.libraries_atd_show_types.strip().replace('\n', ',')
         results['atd_ignore_strings'] = self.libraries_atd_ignore_strings.strip().replace('\n', ',')
 
