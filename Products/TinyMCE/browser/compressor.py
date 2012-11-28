@@ -6,6 +6,7 @@ http://tinymce.moxiecode.com/
 Copyright (c) 2008 Jason Davies
 Licensed under the terms of the MIT License (see LICENSE.txt)
 """
+import os.path
 
 from zope.interface import implements
 from Products.CMFCore.utils import getToolByName
@@ -31,25 +32,25 @@ def isContextUrl(url):
     return True
 
 
-TINY_MCE_GZIP = """
-jQuery(function($){
+def string_template(filename):
+    path = os.path.dirname(__file__)
+    f = open(os.path.join(path, filename), 'rb')
+    try:
+        body = f.read()
+    finally:
+        f.close()
 
-    $('textarea.mce_editable').each(function() {
-        var config = $.parseJSON($(this).attr('data-mce-config'));
-        $(this).tinymce(config);
-    });
-
-    // set Text Format dropdown untabbable for better UX
-    // TODO: find a better way to fix this
-    $('#text_text_format').attr('tabindex', '-1');
-});
-"""
+    body = body.decode('utf-8')
+    template = lambda **kwargs: body % kwargs
+    return staticmethod(template)
 
 
 class TinyMCECompressorView(BrowserView):
     """ Bundle TinyMCE editor and all resources """
 
     implements(ITinyMCECompressor)
+
+    tiny_mce_gzip = string_template('tiny_mce_gzip.js')
 
     def __call__(self):
         """Parameters are parsed from url query as defined by tinymce"""
@@ -64,7 +65,7 @@ class TinyMCECompressorView(BrowserView):
         response.setHeader('Content-type', 'application/javascript')
 
         if not isJS:
-            return TINY_MCE_GZIP
+            return self.tiny_mce_gzip()
 
         # get base_url
         base_url = '/'.join([self.context.absolute_url(), self.__name__])

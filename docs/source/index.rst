@@ -15,6 +15,5 @@ Contents:
     install
     usage
     develop
-    todo
     contributors
 

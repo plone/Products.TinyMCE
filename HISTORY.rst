@@ -5,12 +5,25 @@ HISTORY
 1.3b8 (unreleased)
 ------------------
 
+- textarea for tiles is differently configurated then rest of tinymce instances
+  [garbas]
+
+- works with or without plone.init.js (from plone.app.toolbar)
+  [garbas]
+
+- works when initialized inside bootstrap moda 
+  [garbas]
+
 - Fixed UnboundLocalError if the context of the editor is neither IFolderish nor Archetypes
 
 - Fixed inclusion of external CSS resources.
   [tom_gross]
 
 - Fixed bundeling of editor with and without JS debug mode
+  [tom_gross]
+
+- moved tiny_mce_gzip.js to file rather than having it in a long string
+  in the compressor Python module
   [tom_gross]
 
 1.3b7 (2012-10-29)
