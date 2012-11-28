@@ -22,6 +22,10 @@ HISTORY
 - Fixed bundeling of editor with and without JS debug mode
   [tom_gross]
 
+- moved tiny_mce_gzip.js to file rather than having it in a long string
+  in the compressor Python module
+  [tom_gross]
+
 1.3b7 (2012-10-29)
 ------------------
 

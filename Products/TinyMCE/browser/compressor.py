@@ -6,6 +6,7 @@ http://tinymce.moxiecode.com/
 Copyright (c) 2008 Jason Davies
 Licensed under the terms of the MIT License (see LICENSE.txt)
 """
+import os.path
 
 from zope.interface import implements
 from Products.CMFCore.utils import getToolByName
@@ -31,92 +32,25 @@ def isContextUrl(url):
     return True
 
 
-TINY_MCE_GZIP = """
-jQuery(function($){
+def string_template(filename):
+    path = os.path.dirname(__file__)
+    f = open(os.path.join(path, filename), 'rb')
+    try:
+        body = f.read()
+    finally:
+        f.close()
 
-  function initTinyMCE(context) {
-    $('textarea.mce_editable', context).each(function() {
-      var el = $(this),
-          config = $.parseJSON(el.attr('data-mce-config'));
-
-      // not the nicest way to put this here as usuall kittens will die
-      // and ponies stop flying
-      //
-      // only relevant to tiles
-      if (el.parents('form#add_tile').size() === 1 ||
-          el.parents('form#edit_tile').size() === 1) {
-
-        // filter out buttons we dont allow
-        var buttons = [];
-        $.each(config.buttons, function(i, button) {
-          // probably it would be nice that the list of buttons below would be
-          // possible to configure
-          if ($.inArray(button, ["style", "bold", "italic", "justifyleft",
-              "justifycenter", "justifyright", "justifyfull", "bullist",
-              "numlist", "definitionlist", "outdent", "indent", "link",
-              "unlink", "code"]) !== -1) {
-              // not sure about "anchor", "fullscreen"
-              buttons.push(button);
-          }
-        });
-        config.buttons = buttons;
-        config.theme_advanced_buttons1 = buttons.join(',');
-        config.theme_advanced_buttons2 = '';
-        config.theme_advanced_buttons3 = '';
-
-        // copy css from top frame to content frame of tinymce
-        // FIXME: its not copying style elements with css using @import
-        var content_css = [];
-        $('link,style', window.parent.document).each(function(i, item) {
-          if ($.nodeName(item, 'link') && $(item).attr('href')) {
-            content_css += ',' + $(item).attr('href');
-          } else if ($.nodeName(item, 'style') && $(item).attr('src')) {
-            content_css += ',' + $(item).attr('src');
-          }
-        });
-        config.content_css = content_css;
-
-        // max height is 8 rows
-        el.attr('rows', '8');
-
-      }
-
-      // make initialization work in bootstrap modal
-      var modal = el.parents('.modal');
-      if (modal.size() !== 0) {
-
-        modal.on('shown', function() {
-          el.tinymce(config);
-        });
-        modal.on('hide', function() {
-          tinyMCE.execCommand('mceRemoveControl', false, el.attr('id'));
-        });
-
-      // initialize tinymce outside modal
-      } else {
-        el.tinymce(config);
-      }
-
-    });
-
-    // set Text Format dropdown untabbable for better UX
-    // TODO: find a better way to fix this
-    $('#text_text_format', context).attr('tabindex', '-1');
-  }
-  if ($.plone && $.plone.init) {
-    $.plone.init.register(initTinyMCE);
-  } else {
-    initTinyMCE(document);
-  }
-
-});
-"""
+    body = body.decode('utf-8')
+    template = lambda **kwargs: body % kwargs
+    return staticmethod(template)
 
 
 class TinyMCECompressorView(BrowserView):
     """ Bundle TinyMCE editor and all resources """
 
     implements(ITinyMCECompressor)
+
+    tiny_mce_gzip = string_template('tiny_mce_gzip.js')
 
     def __call__(self):
         """Parameters are parsed from url query as defined by tinymce"""
@@ -188,5 +122,5 @@ class TinyMCECompressorView(BrowserView):
 
         # TODO: add additional javascripts in plugins
 
-        content.append(TINY_MCE_GZIP)
+        content.append(self.tiny_mce_gzip())
         return ''.join(content)
