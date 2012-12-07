@@ -39,6 +39,15 @@
         />
 
     <genericsetup:registerProfile
+        name="upgrade_to_profile_6"
+        title="Upgrade TinyMCE 1.3b7 to 1.3b8"
+        directory="profiles/upgrade_to_profile_6"
+        description="Upgrades the TinyMCE editor from version 1.3b7 to 1.3b8"
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        for="Products.CMFPlone.interfaces.IMigratingPloneSiteRoot"
+        />
+
+    <genericsetup:registerProfile
         name="uninstall"
         title="Remove TinyMCE Editor Support"
         directory="profiles/uninstall"
