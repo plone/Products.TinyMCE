@@ -478,7 +478,7 @@ BrowserDialog.prototype.insertLink = function () {
                 nodes = this.editor.dom.select('h2,h3');
                 for (i = 0; i < nodes.length; i++) {
                     name = nodes[i].innerHTML.toLowerCase();
-                    name = name.replace(/[^a-z]/g, '-');
+                    name = name.replace(/[^a-z0-9]/g, '-');
                     if (name === url_match[1]) {
                         nodes[i].innerHTML = '<a name="' + name + '" class="mceItemAnchor"></a>' + nodes[i].innerHTML;
                     }
@@ -1142,7 +1142,7 @@ BrowserDialog.prototype.populateAnchorList = function () {
             title_match = title.match(/mceItemAnchor/);
             if (title_match === null) {
                 name = title.toLowerCase();
-                name = name.replace(/[^a-z]/g, '-');
+                name = name.replace(/[^a-z0-9]/g, '-');
                 html += '<div class="' + divclass + '"><input type="radio" class="noborder" name="anchorlink" id="#mce-new-anchor-' + name + '" value="#mce-new-anchor-' + name + '"/><label for="#mce-new-anchor-' + name + '"> ' + title + '</label></div>';
                 divclass = divclass === "even" ? "odd" : "even";
             }
