@@ -5,6 +5,9 @@ HISTORY
 1.3b8 (unreleased)
 ------------------
 
+- Support passing a maxlength attribute to tinymce_wysiwyg_support.
+  [davisagli]
+
 - textarea for tiles is differently configurated then rest of tinymce instances
   [garbas]
 
