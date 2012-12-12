@@ -23,6 +23,7 @@
                             onblur onblur|nothing;
                             rows rows|default;
                             cols cols|default;
+                            maxlength maxlength|nothing;
                             title python:wysiwyg and configuration_json or None;
                             class python:wysiwyg and 'mce_editable' or None"></textarea>
 
