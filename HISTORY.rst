@@ -26,6 +26,9 @@ HISTORY
   in the compressor Python module
   [tom_gross]
 
+- Allow arabic numbers in anchor names
+  [tom_gross]
+
 1.3b7 (2012-10-29)
 ------------------
 
