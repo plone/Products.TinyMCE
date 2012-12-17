@@ -5,6 +5,10 @@ HISTORY
 1.2.15 (unreleased)
 -------------------
 
+- Remove images in data URIs on save.
+  Fixes https://dev.plone.org/ticket/13199
+  [khink]
+
 - Support passing a maxlength attribute to tinymce_wysiwyg_support.
   [davisagli]
 
