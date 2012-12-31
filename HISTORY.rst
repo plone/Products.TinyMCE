@@ -5,6 +5,9 @@ HISTORY
 1.3b8 (unreleased)
 ------------------
 
+- Added support for images with external URL
+  [iElectric]
+
 - Support passing a maxlength attribute to tinymce_wysiwyg_support.
   [davisagli]
 
