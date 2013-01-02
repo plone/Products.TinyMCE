@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.3b8 (unreleased)
+1.3b8 (2013-01-01)
 ------------------
 
 - Support passing a maxlength attribute to tinymce_wysiwyg_support.
