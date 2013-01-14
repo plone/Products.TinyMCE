@@ -25,6 +25,7 @@
                             cols cols|default;
                             maxlength maxlength|nothing;
                             data-mce-config configuration_json;
+                            data-pattern string:plone-tinymce;
                             class python:wysiwyg and 'mce_editable' or None"></textarea>
 
   <div tal:condition="wysiwyg"
