@@ -3,11 +3,6 @@
 <javascript compression="safe"
             authenticated="True"
             id="jquery.tinymce.js"
-            insert-after="unlockOnFormUnload.js"
-            />
-<javascript compression="safe"
-            authenticated="True"
-            id="tiny_mce_gzip.js"
-            insert-after="jquery.tinymce.js"
+            insert-before="tiny_mce_gzip.js"
             />
 </object>

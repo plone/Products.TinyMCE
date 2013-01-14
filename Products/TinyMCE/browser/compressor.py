@@ -6,6 +6,7 @@ http://tinymce.moxiecode.com/
 Copyright (c) 2008 Jason Davies
 Licensed under the terms of the MIT License (see LICENSE.txt)
 """
+import os.path
 
 from zope.interface import implements
 from Products.CMFCore.utils import getToolByName
@@ -31,18 +32,17 @@ def isContextUrl(url):
     return True
 
 
-TINY_MCE_GZIP = """
-jQuery(function($){
-    $('textarea.mce_editable').each(function() {
-        var config = $.parseJSON($(this).attr('data-mce-config'));
-        $(this).tinymce(config);
-    });
+def string_template(filename):
+    path = os.path.dirname(__file__)
+    f = open(os.path.join(path, filename), 'rb')
+    try:
+        body = f.read()
+    finally:
+        f.close()
 
-    // set Text Format dropdown untabbable for better UX
-    // TODO: find a better way to fix this
-    $('#text_text_format').attr('tabindex', '-1');
-});
-"""
+    body = body.decode('utf-8')
+    template = lambda **kwargs: body % kwargs
+    return staticmethod(template)
 
 
 class TinyMCECompressorView(BrowserView):
@@ -50,16 +50,22 @@ class TinyMCECompressorView(BrowserView):
 
     implements(ITinyMCECompressor)
 
+    tiny_mce_gzip = string_template('tiny_mce_gzip.js')
+
     def __call__(self):
         """Parameters are parsed from url query as defined by tinymce"""
         plugins = self.request.get("plugins", "").split(',')
         languages = self.request.get("languages", "").split(',')
+        isJS = self.request.get("js", "") == "true"
         themes = self.request.get("themes", "").split(',')
         suffix = self.request.get("suffix", "") == "_src" and "_src" or ""
 
         # set correct content type
         response = self.request.response
         response.setHeader('Content-type', 'application/javascript')
+
+        if not isJS:
+            return self.tiny_mce_gzip()
 
         # get base_url
         base_url = '/'.join([self.context.absolute_url(), self.__name__])
@@ -79,8 +85,6 @@ class TinyMCECompressorView(BrowserView):
                 "tinymce._init();",
                 "tinymce.baseURL='%s';tinymce._init();" % base_url)
         ]
-
-        content.append(traverse('jquery.tinymce.js'))
 
         portal_tinymce = getToolByName(self.context, 'portal_tinymce')
         customplugins = {}
@@ -120,5 +124,4 @@ class TinyMCECompressorView(BrowserView):
 
         # TODO: add additional javascripts in plugins
 
-        content.append(TINY_MCE_GZIP)
         return ''.join(content)

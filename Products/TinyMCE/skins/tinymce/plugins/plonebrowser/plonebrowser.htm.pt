@@ -13,7 +13,7 @@
 <body id="plonebrowser">
   <div class="dialog-wrapper icons-on" id="content">
 
-        <div id="linktype_panel" class="hide">
+        <div id="linktype_panel">
             <div id="linktype">
                 <div id="internal_link" class="current">
                     <img src="img/internal_link.png" />
@@ -98,8 +98,8 @@
                         <div class="widget">
                             <select id="classes" name="classes">
                                 <option value="image-inline" i18n:domain="plone.tinymce" i18n:translate="">Inline</option>
-                                <option value="image-left" i18n:translate="advimage_dlg_align_left"></option>
-                                <option value="image-right" i18n:translate="advimage_dlg_align_right"></option>
+                                <option value="image-left" i18n:translate="advimage_dlg_align_left">Left</option>
+                                <option value="image-right" i18n:translate="advimage_dlg_align_right">Right</option>
                             </select>
                         </div>
                     </div>
@@ -163,6 +163,35 @@
                  <iframe width="0" scrolling="off" height="0" frameborder="0" id="upload_iframe" name="upload_iframe" src="javascript:"></iframe>
             </div>
 
+        </div>
+
+        <div id="externalimage_panel" class="cell width-full position-0 hide">
+             <form name="externalimage_form" id="externalimage_form">
+                 <div class="field">
+                        <label for="imageurl" i18n:domain="plone.tinymce" i18n:translate="">Insert image from URL</label>
+                        <div class="widget">
+                            <input type="text" name="imageurl" id="imageurl" value="" />
+                        </div>
+                 </div>
+
+                 <div class="field">
+                         <label for="imagetitle" i18n:domain="plone.tinymce" i18n:translate="">Title</label>
+                         <div class="widget">
+                            <input type="text" name="imagetitle" id="imagetitle" value="" />
+                         </div>
+                 </div>
+
+                 <button type="previewimage"
+                         id="previewimagebutton"
+                         class="context plonebutton"
+                         name="previewimagebutton"
+                         value="Preview"
+                         i18n:translate=""
+                         i18n:domain="plone.tinymce">Preview</button>
+             </form>
+
+             <div id="imgpreview">
+             </div>
         </div>
 
         <!-- link panels -->

@@ -2,8 +2,28 @@
 HISTORY
 =======
 
-1.3b8 (unreleased)
+1.3b9 (unreleased)
 ------------------
+
+- Added support for images with external URL
+  [iElectric]
+
+
+1.3b8 (2013-01-01)
+------------------
+
+
+- Support passing a maxlength attribute to tinymce_wysiwyg_support.
+  [davisagli]
+
+- textarea for tiles is differently configurated then rest of tinymce instances
+  [garbas]
+
+- works with or without plone.init.js (from plone.app.toolbar)
+  [garbas]
+
+- works when initialized inside bootstrap moda 
+  [garbas]
 
 - Fixed UnboundLocalError if the context of the editor is neither IFolderish nor Archetypes
 
@@ -11,6 +31,13 @@ HISTORY
   [tom_gross]
 
 - Fixed bundeling of editor with and without JS debug mode
+  [tom_gross]
+
+- moved tiny_mce_gzip.js to file rather than having it in a long string
+  in the compressor Python module
+  [tom_gross]
+
+- Allow arabic numbers in anchor names
   [tom_gross]
 
 1.3b7 (2012-10-29)

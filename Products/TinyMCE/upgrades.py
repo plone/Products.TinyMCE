@@ -78,3 +78,7 @@ def upgrade_12_to_13(setuptool):
 
 def upgrade_to_profile_5(setuptool):
     setuptool.runAllImportStepsFromProfile('profile-Products.TinyMCE:upgrade_to_profile_5')
+
+
+def upgrade_to_profile_6(setuptool):
+    setuptool.runAllImportStepsFromProfile('profile-Products.TinyMCE:upgrade_to_profile_6')
