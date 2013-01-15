@@ -471,6 +471,17 @@ class ITinyMCEContentBrowser(Interface):
         default=4,
     )
 
+    anchor_selector = schema.TextLine(
+        title=_(u"Anchor selector expression"),
+        description=_(
+            'help_anchor_selector',
+            default=u"A CSS level 3 pattern used to match elements "
+                    u"that can serve as anchors. The default value "
+                    u"is to match headings."),
+        required=True,
+        default=u"h2,h3",
+    )
+
 
 class ITinyMCE(
     ITinyMCELayout,

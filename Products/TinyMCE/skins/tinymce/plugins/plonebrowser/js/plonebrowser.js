@@ -505,7 +505,7 @@ BrowserDialog.prototype.insertLink = function () {
             url_match = link.match(/^#mce-new-anchor-(.*)$/);
             if (url_match !== null) {
                 // create anchor link
-                nodes = this.editor.dom.select('h2,h3');
+                nodes = this.editor.dom.select(this.editor.settings.anchor_selector);
                 for (i = 0; i < nodes.length; i++) {
                     name = nodes[i].innerHTML.toLowerCase();
                     name = name.replace(/[^a-z0-9]/g, '-');
@@ -1193,7 +1193,7 @@ BrowserDialog.prototype.populateAnchorList = function () {
         }
     }
 
-    nodes = this.editor.dom.select('h2,h3');
+    nodes = this.editor.dom.select(this.editor.settings.anchor_selector);
     nodes_length = nodes.length;
     if (nodes.length > 0) {
         for (i = 0; i < nodes_length; i++) {
