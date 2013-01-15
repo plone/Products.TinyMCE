@@ -87,6 +87,9 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
             'customplugins': {'type': 'List', 'default': u''},
             'entity_encoding': {'type': 'Text', 'default': u'raw'},
             'rooted': {'type': 'Bool', 'default': False},
+        },
+        'contentbrowser': {
+            'anchor_selector': {'type': 'Text', 'default': u'h2,h3'},
         }
     }
 
