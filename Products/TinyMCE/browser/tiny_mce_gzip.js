@@ -52,9 +52,13 @@
       var modal = el.parents('.modal');
       if (modal.size() !== 0) {
 
-        modal.on('shown', function() {
+        if (modal.is(':visible')) {
           el.tinymce(config);
-        });
+        } else {
+          modal.on('shown', function() {
+            el.tinymce(config);
+          });
+        }
         modal.on('hide', function() {
           tinyMCE.execCommand('mceRemoveControl', false, el.attr('id'));
         });
