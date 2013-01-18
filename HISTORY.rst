@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.3b9 (unreleased)
+1.3b9 (2013-01-17)
 ------------------
 
 - Added support for images with external URL
