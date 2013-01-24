@@ -5,7 +5,9 @@ HISTORY
 1.3b10 (unreleased)
 -------------------
 
-- Allow text other than headings to be used as anchors in the link plugin
+- Allow text other than headings to be used as anchors in the link plugin.
+- Removing elements in importhandler is now possible. This closes ticket
+  #11481.
   [izak]
 
 
