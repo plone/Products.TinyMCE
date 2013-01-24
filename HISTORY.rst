@@ -5,7 +5,8 @@ HISTORY
 1.3b10 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Allow text other than headings to be used as anchors in the link plugin
+  [izak]
 
 
 1.3b9 (2013-01-17)
