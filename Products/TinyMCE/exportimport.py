@@ -156,7 +156,8 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
                                     if element.getAttribute('remove').lower() == 'true' and \
                                             element.getAttribute('value') in items:
                                         del(items[element.getAttribute('value')])
-                                    elif element.getAttribute('value') not in items:
+                                    elif element.getAttribute('remove').lower() != 'true' and \
+                                            element.getAttribute('value') not in items:
                                         items[element.getAttribute('value')] = None
                             string = '\n'.join(sorted(items.keys()))
 
