@@ -8,6 +8,8 @@ HISTORY
 - Allow text other than headings to be used as anchors in the link plugin.
 - Removing elements in importhandler is now possible. This closes ticket
   #11481.
+- Use consistent method to calculate anchor ids, to allow for markup in
+  headers.
   [izak]
 
 
