@@ -57,7 +57,7 @@ class UtilityTestCase(IntegrationTestCase):
         self.utility.resizing = False
 
         # The result should at least contain the new buttons we added.
-        self.assertRegexpMatches(self.utility.getConfiguration(self.portal), '\{.+attribs.+}')
+        self.assertRegexpMatches(str(self.utility.getConfiguration(self.portal)), '\{.+attribs.+}')
 
         # Let's change some more settings.
         self.utility.toolbar_external = True
@@ -77,7 +77,7 @@ class UtilityTestCase(IntegrationTestCase):
         livesearch  # pep8
 
         # The result should contain the settings specified.
-        self.assertRegexpMatches(self.utility.getConfiguration(self.portal), '\{.+external.+}')
+        self.assertRegexpMatches(str(self.utility.getConfiguration(self.portal)), '\{.+external.+}')
 
         # Let's call the portal_factory of a document and make sure the configuration
         # doesn't contain the save button:
@@ -218,7 +218,7 @@ class UtilityTestCase(IntegrationTestCase):
         """https://dev.plone.org/ticket/12800"""
 
         configuration = self.utility.getConfiguration(self.portal)
-        content_css_url = json.loads(configuration)['content_css']
+        content_css_url = configuration['content_css']
         url = '%s/portal_tinymce/@@tinymce-getstyle' % self.portal.absolute_url()
         self.assertEqual(content_css_url,
                          url,
@@ -227,7 +227,7 @@ class UtilityTestCase(IntegrationTestCase):
     def test_config_document_base_url(self):
         portal = self.portal
 
-        configuration = json.loads(self.utility.getConfiguration(portal))
+        configuration = self.utility.getConfiguration(portal)
         self.assertEqual(configuration['document_url'], 'http://nohost/plone')
         self.assertEqual(configuration['document_base_url'], 'http://nohost/plone/')
 
@@ -235,7 +235,7 @@ class UtilityTestCase(IntegrationTestCase):
         portal.invokeFactory(id='doc', type_name='Document')
         portal['doc'].unmarkCreationFlag()
         self.assertEqual(portal['doc'].checkCreationFlag(), False)
-        configuration = json.loads(self.utility.getConfiguration(portal['doc']))
+        configuration = self.utility.getConfiguration(portal['doc'])
         self.assertEqual(configuration['document_url'], 'http://nohost/plone/doc')
         self.assertEqual(configuration['document_base_url'], 'http://nohost/plone/')
 
@@ -243,7 +243,7 @@ class UtilityTestCase(IntegrationTestCase):
         portal.invokeFactory(id='folder', type_name='Folder')
         portal['folder'].unmarkCreationFlag()
         self.assertEqual(portal['folder'].checkCreationFlag(), False)
-        configuration = json.loads(self.utility.getConfiguration(portal['folder']))
+        configuration = self.utility.getConfiguration(portal['folder'])
         self.assertEqual(configuration['document_url'], 'http://nohost/plone/folder')
         self.assertEqual(configuration['document_base_url'], 'http://nohost/plone/folder/')
 
@@ -251,7 +251,7 @@ class UtilityTestCase(IntegrationTestCase):
         portal['folder'].invokeFactory(id='doc', type_name='Document')
         portal['folder']['doc'].unmarkCreationFlag()
         self.assertEqual(portal['folder']['doc'].checkCreationFlag(), False)
-        configuration = json.loads(self.utility.getConfiguration(portal['folder']['doc']))
+        configuration = self.utility.getConfiguration(portal['folder']['doc'])
         self.assertEqual(configuration['document_url'], 'http://nohost/plone/folder/doc')
         self.assertEqual(configuration['document_base_url'], 'http://nohost/plone/folder/')
 
@@ -272,7 +272,7 @@ class UtilityTestCase(IntegrationTestCase):
         # breaks, and we fall back to the portal URL. This is possibly a bug.
         portal.invokeFactory(id='doc', type_name='Document')
         self.assertEqual(portal['doc'].checkCreationFlag(), True)
-        configuration = json.loads(self.utility.getConfiguration(portal['doc']))
+        configuration = self.utility.getConfiguration(portal['doc'])
         self.assertEqual(configuration['document_url'], 'http://nohost/plone')
         self.assertEqual(configuration['document_base_url'], 'http://nohost/plone/')
 
