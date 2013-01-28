@@ -1,6 +1,7 @@
-jQuery(function($){
+(function($, Patterns, undefined) {
 
   function initTinyMCE(context) {
+
     $('textarea.mce_editable', context).each(function() {
       var el = $(this),
           config = $.parseJSON(el.attr('data-mce-config'));
@@ -51,9 +52,13 @@ jQuery(function($){
       var modal = el.parents('.modal');
       if (modal.size() !== 0) {
 
-        modal.on('shown', function() {
+        if (modal.is(':visible')) {
           el.tinymce(config);
-        });
+        } else {
+          modal.on('shown', function() {
+            el.tinymce(config);
+          });
+        }
         modal.on('hide', function() {
           tinyMCE.execCommand('mceRemoveControl', false, el.attr('id'));
         });
@@ -69,10 +74,21 @@ jQuery(function($){
     // TODO: find a better way to fix this
     $('#text_text_format', context).attr('tabindex', '-1');
   }
-  if ($.plone && $.plone.init) {
-    $.plone.init.register(initTinyMCE);
+
+  if (Patterns) {
+    var PloneTinyMCE = Patterns.Base.extend({
+      name: 'plone-tinymce',
+      jqueryPlugin: 'ploneTinymce',
+      init: function() {
+        initTinyMCE(this.$el.parent());
+      }
+    });
+    Patterns.register(PloneTinyMCE);
+
   } else {
-    initTinyMCE(document);
+    $(document).ready(function() {
+      initTinyMCE(document);
+    });
   }
 
-});
+}(window.jQuery, window.Patterns));

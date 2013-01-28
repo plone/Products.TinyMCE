@@ -2,8 +2,27 @@
 HISTORY
 =======
 
-1.3b8 (unreleased)
+1.3b10 (unreleased)
+-------------------
+
+- Allow text other than headings to be used as anchors in the link plugin.
+- Removing elements in importhandler is now possible. This closes ticket
+  #11481.
+- Use consistent method to calculate anchor ids, to allow for markup in
+  headers.
+  [izak]
+
+
+1.3b9 (2013-01-17)
 ------------------
+
+- Added support for images with external URL
+  [iElectric]
+
+
+1.3b8 (2013-01-01)
+------------------
+
 
 - Support passing a maxlength attribute to tinymce_wysiwyg_support.
   [davisagli]

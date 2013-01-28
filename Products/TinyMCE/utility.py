@@ -162,6 +162,7 @@ class TinyMCE(SimpleItem):
     image_shortcuts = FieldProperty(ITinyMCEContentBrowser['image_shortcuts'])
     num_of_thumb_columns = FieldProperty(ITinyMCEContentBrowser['num_of_thumb_columns'])
     thumbnail_size = FieldProperty(ITinyMCEContentBrowser['thumbnail_size'])
+    anchor_selector = FieldProperty(ITinyMCEContentBrowser['anchor_selector'])
 
     def getImageScales(self, field=None, context=None):
         """Return the image sizes for the drawer"""
@@ -941,6 +942,7 @@ class TinyMCE(SimpleItem):
         results['image_shortcuts_html'] = []
         results['num_of_thumb_columns'] = self.num_of_thumb_columns
         results['thumbnail_size'] = self.thumbnail_size
+        results['anchor_selector'] = self.anchor_selector
 
         for name in self.link_shortcuts:
             results['link_shortcuts_html'].extend(shortcuts_dict.get(name).render(context))
