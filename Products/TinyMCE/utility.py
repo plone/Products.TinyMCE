@@ -719,7 +719,7 @@ class TinyMCE(SimpleItem):
 
     security.declareProtected('View', 'getConfiguration')
     def getConfiguration(self, context=None, field=None, request=None):
-        """Return JSON configuration that is passed to javascript tinymce constructor.
+        """Return configuration as a dictionary
 
         :param field: Dexterity or Archetypes Field instance
 
@@ -980,7 +980,7 @@ class TinyMCE(SimpleItem):
         if self.formats and self.formats.strip():
             results['formats'] = json.loads(self.formats)
 
-        return json.dumps(results)
+        return results
 
 
 class ImageCaptioningEnabler(object):
