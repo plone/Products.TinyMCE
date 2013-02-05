@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<object name="portal_javascripts" meta_type="JavaScripts Registry">
+
+ <javascript cacheable="True"
+             compression="none"
+             cookable="True"
+             enabled="True"
+             expression="not: portal/portal_membership/isAnonymousUser"
+             id="tiny_mce_javascript_variables.js"
+             insert-after="plone_javascript_variables.js"
+             inline="False"/>
+ 
+</object>
