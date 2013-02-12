@@ -760,10 +760,10 @@ BrowserDialog.prototype.setDetails = function (url) {
             self.displayPanel('details');
 
             // select radio button in folder listing and mark selected image
-            jq('input:radio[name=internallink][value!=' + data.uid_relative_url + ']', document)
+            jq('input:radio[name=internallink][value!="' + data.uid_relative_url + '"]', document)
                 .parent('.item')
                 .removeClass('current');
-            jq('input:radio[name=internallink][value=' + data.uid_relative_url + ']', document)
+            jq('input:radio[name=internallink][value="' + data.uid_relative_url + '"]', document)
                 .attr('checked', 'checked')
                 .parent('.item')
                 .addClass('current');

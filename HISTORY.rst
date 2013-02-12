@@ -5,6 +5,9 @@ HISTORY
 1.3b10 (unreleased)
 -------------------
 
+- Fixed selection of an item in the home folder.
+  [vincentpretre]
+
 - Removed use of base_properties from css.dtml files.
   [maurits+thomvl]
 
