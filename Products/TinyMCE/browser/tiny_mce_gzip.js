@@ -1,6 +1,6 @@
 (function($, Patterns, undefined) {
 
-  function initTinyMCE(context) {
+  window.initTinyMCE = function(context) {
 
     $('textarea.mce_editable', context).each(function() {
       var el = $(this),
@@ -73,22 +73,10 @@
     // set Text Format dropdown untabbable for better UX
     // TODO: find a better way to fix this
     $('#text_text_format', context).attr('tabindex', '-1');
-  }
+  };
 
-  if (Patterns) {
-    var PloneTinyMCE = Patterns.Base.extend({
-      name: 'plone-tinymce',
-      jqueryPlugin: 'ploneTinymce',
-      init: function() {
-        initTinyMCE(this.$el.parent());
-      }
-    });
-    Patterns.register(PloneTinyMCE);
-
-  } else {
-    $(document).ready(function() {
-      initTinyMCE(document);
-    });
-  }
+  $(document).ready(function() {
+    window.initTinyMCE(document);
+  });
 
 }(window.jQuery, window.Patterns));
