@@ -87,6 +87,9 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
             'customplugins': {'type': 'List', 'default': u''},
             'entity_encoding': {'type': 'Text', 'default': u'raw'},
             'rooted': {'type': 'Bool', 'default': False},
+        },
+        'contentbrowser': {
+            'anchor_selector': {'type': 'Text', 'default': u'h2,h3'},
         }
     }
 
@@ -145,14 +148,18 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
                         elif self.attributes[categorynode.nodeName][fieldnode.nodeName]['type'] == 'List':
                             field = getattr(self.context, fieldnode.nodeName)
                             if field is None or fieldnode.getAttribute("purge").lower() == 'true':
-                                items = []
+                                items = {}
                             else:
-                                items = field.split('\n')
+                                items = dict.fromkeys(field.split('\n'))
                             for element in fieldnode.childNodes:
                                 if element.nodeName != '#text' and element.nodeName != '#comment':
-                                    if element.getAttribute('value') not in items:
-                                        items.append(element.getAttribute('value'))
-                            string = '\n'.join(items)
+                                    if element.getAttribute('remove').lower() == 'true' and \
+                                            element.getAttribute('value') in items:
+                                        del(items[element.getAttribute('value')])
+                                    elif element.getAttribute('remove').lower() != 'true' and \
+                                            element.getAttribute('value') not in items:
+                                        items[element.getAttribute('value')] = None
+                            string = '\n'.join(sorted(items.keys()))
 
                             # Don't break on international characters or otherwise
                             # funky data -

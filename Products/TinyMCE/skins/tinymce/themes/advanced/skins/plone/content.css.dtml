@@ -1,5 +1,3 @@
-/* <dtml-with base_properties> */
-/* <dtml-call "REQUEST.set('portal_url', portal_url())"> */
 body.mceForceColors {background:#FFF; color:#000;}
 
 .mceContentBody {
@@ -7,7 +5,7 @@ body.mceForceColors {background:#FFF; color:#000;}
 }
 
 .mceContentBody a {
-    color: &dtml-linkColor; !important;
+    color: #205C90 !important;
     background-color: transparent;
     text-decoration: none !important;
     border-bottom: 1px #cccccc solid !important;
@@ -23,5 +21,3 @@ del {color:red; text-decoration:line-through}
 cite {border-bottom:1px dashed blue}
 acronym {border-bottom:1px dotted #CCC; cursor:help}
 abbr, html\:abbr {border-bottom:1px dashed #CCC; cursor:help}
-
-/* </dtml-with> */

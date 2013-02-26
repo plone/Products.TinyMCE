@@ -2,7 +2,29 @@
 HISTORY
 =======
 
-1.3b9 (unreleased)
+1.3b10 (unreleased)
+-------------------
+
+- Fixed selection of an item in the home folder.
+  [vincentpretre]
+
+- Removed use of base_properties from css.dtml files.
+  [maurits+thomvl]
+
+- Convert setting to JSON in jsonConfiguration-view not in utility
+  [tomgross]
+
+- Allow text other than headings to be used as anchors in the link plugin.
+
+- Removing elements in importhandler is now possible. This closes ticket
+  #11481.
+
+- Use consistent method to calculate anchor ids, to allow for markup in
+  headers.
+  [izak]
+
+
+1.3b9 (2013-01-17)
 ------------------
 
 - Added support for images with external URL

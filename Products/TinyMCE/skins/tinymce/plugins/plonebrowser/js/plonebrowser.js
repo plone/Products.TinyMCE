@@ -505,10 +505,11 @@ BrowserDialog.prototype.insertLink = function () {
             url_match = link.match(/^#mce-new-anchor-(.*)$/);
             if (url_match !== null) {
                 // create anchor link
-                nodes = this.editor.dom.select('h2,h3');
+                nodes = this.editor.dom.select(this.editor.settings.anchor_selector);
                 for (i = 0; i < nodes.length; i++) {
-                    name = nodes[i].innerHTML.toLowerCase();
-                    name = name.replace(/[^a-z0-9]/g, '-');
+                    name = jq(nodes[i]).text().replace(/^\s+|\s+$/g, '');
+                    name = name.toLowerCase().substring(0, 1024).replace(/[^a-z0-9]/g, '-');
+
                     if (name === url_match[1]) {
                         nodes[i].innerHTML = '<a name="' + name + '" class="mceItemAnchor"></a>' + nodes[i].innerHTML;
                     }
@@ -759,10 +760,10 @@ BrowserDialog.prototype.setDetails = function (url) {
             self.displayPanel('details');
 
             // select radio button in folder listing and mark selected image
-            jq('input:radio[name=internallink][value!=' + data.uid_relative_url + ']', document)
+            jq('input:radio[name=internallink][value!="' + data.uid_relative_url + '"]', document)
                 .parent('.item')
                 .removeClass('current');
-            jq('input:radio[name=internallink][value=' + data.uid_relative_url + ']', document)
+            jq('input:radio[name=internallink][value="' + data.uid_relative_url + '"]', document)
                 .attr('checked', 'checked')
                 .parent('.item')
                 .addClass('current');
@@ -1193,7 +1194,7 @@ BrowserDialog.prototype.populateAnchorList = function () {
         }
     }
 
-    nodes = this.editor.dom.select('h2,h3');
+    nodes = this.editor.dom.select(this.editor.settings.anchor_selector);
     nodes_length = nodes.length;
     if (nodes.length > 0) {
         for (i = 0; i < nodes_length; i++) {
@@ -1203,7 +1204,7 @@ BrowserDialog.prototype.populateAnchorList = function () {
             }
             title_match = title.match(/mceItemAnchor/);
             if (title_match === null) {
-                name = title.toLowerCase();
+                name = title.toLowerCase().substring(0,1024);
                 name = name.replace(/[^a-z0-9]/g, '-');
                 html += '<div class="' + divclass + '"><input type="radio" class="noborder" name="anchorlink" id="#mce-new-anchor-' + name + '" value="#mce-new-anchor-' + name + '"/><label for="#mce-new-anchor-' + name + '"> ' + title + '</label></div>';
                 divclass = divclass === "even" ? "odd" : "even";

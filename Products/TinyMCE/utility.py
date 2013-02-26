@@ -163,6 +163,7 @@ class TinyMCE(SimpleItem):
     image_shortcuts = FieldProperty(ITinyMCEContentBrowser['image_shortcuts'])
     num_of_thumb_columns = FieldProperty(ITinyMCEContentBrowser['num_of_thumb_columns'])
     thumbnail_size = FieldProperty(ITinyMCEContentBrowser['thumbnail_size'])
+    anchor_selector = FieldProperty(ITinyMCEContentBrowser['anchor_selector'])
 
     def getImageScales(self, field=None, context=None):
         """Return the image sizes for the drawer"""
@@ -719,7 +720,7 @@ class TinyMCE(SimpleItem):
 
     security.declareProtected('View', 'getConfiguration')
     def getConfiguration(self, context=None, field=None, request=None):
-        """Return JSON configuration that is passed to javascript tinymce constructor.
+        """Return configuration as a dictionary
 
         :param field: Dexterity or Archetypes Field instance
 
@@ -945,6 +946,7 @@ class TinyMCE(SimpleItem):
         results['image_shortcuts_html'] = []
         results['num_of_thumb_columns'] = self.num_of_thumb_columns
         results['thumbnail_size'] = self.thumbnail_size
+        results['anchor_selector'] = self.anchor_selector
 
         for name in self.link_shortcuts:
             results['link_shortcuts_html'].extend(shortcuts_dict.get(name).render(context))
@@ -982,7 +984,7 @@ class TinyMCE(SimpleItem):
         if self.formats and self.formats.strip():
             results['formats'] = json.loads(self.formats)
 
-        return json.dumps(results)
+        return results
 
 
 class ImageCaptioningEnabler(object):

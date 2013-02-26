@@ -1,4 +1,9 @@
 import httplib
+try:
+    import simplejson as json
+    json  # Pyflakes
+except ImportError:
+    import json
 
 from Acquisition import aq_inner
 
@@ -117,9 +122,9 @@ class TinyMCEBrowserView(BrowserView):
         """Return the configuration in JSON"""
 
         utility = getToolByName(aq_inner(self.context), 'portal_tinymce')
-        return utility.getConfiguration(context=self.context,
-                                        field=field,
-                                        request=self.request)
+        return json.dumps(utility.getConfiguration(context=self.context,
+                                                   field=field,
+                                                   request=self.request))
 
 
 class ATDProxyView(object):
