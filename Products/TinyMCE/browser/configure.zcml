@@ -86,19 +86,23 @@
         directory="stylesheets"
         />
 
-    <browser:view
-        name="content_anchors"
-        for="Products.Archetypes.interfaces.IBaseObject"
-        class=".atanchors.ATAnchorView"
-        permission="zope2.View"
-        />
+    <configure zcml:condition="installed Products.Archetypes">
+        <browser:view
+    	    name="content_anchors"
+            for="Products.Archetypes.interfaces.IBaseObject"
+            class=".atanchors.ATAnchorView"
+ 	    permission="zope2.View"
+	    />
+    </configure>
 
-    <browser:view
-         name="content_anchors"
-         for="plone.dexterity.interfaces.IDexterityContent"
-         class=".dxanchors.DexterityAnchorView"
-         permission="zope2.View"
-         />
+    <configure zcml:condition="installed plone.dexterity">
+        <browser:view
+             name="content_anchors"
+             for="plone.dexterity.interfaces.IDexterityContent"
+             class=".dxanchors.DexterityAnchorView"
+             permission="zope2.View"
+        />
+    </configure>
 
     <!-- TinyMCE configuration -->
     <!-- <browser:viewlet
