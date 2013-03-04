@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.3b10 (unreleased)
+1.3b10 (2013-03-04)
 -------------------
 
 - update danish translations
