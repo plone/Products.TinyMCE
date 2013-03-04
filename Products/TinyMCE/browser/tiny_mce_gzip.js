@@ -6,6 +6,10 @@
       var el = $(this),
           config = $.parseJSON(el.attr('data-mce-config'));
 
+      // TODO: for now we only hide options which are clearly not working right
+      // now. i'm not really sure how this should be working.
+      $('.suppressVisualEditor, .fieldTextFormat', el.parents('.field')).hide();
+
       // not the nicest way to put this here as usuall kittens will die
       // and ponies stop flying
       //
@@ -73,10 +77,23 @@
     // set Text Format dropdown untabbable for better UX
     // TODO: find a better way to fix this
     $('#text_text_format', context).attr('tabindex', '-1');
-  };
+  }
 
   $(document).ready(function() {
-    window.initTinyMCE(document);
+    if (Patterns) {
+      console.log('tinymce!!!');
+      var PloneTinyMCE = Patterns.extend({
+        name: 'plone-tinymce',
+        jqueryPlugin: 'ploneTinymce',
+        init: function() {
+          initTinyMCE(this.$el.parent());
+        }
+      });
+    } else {
+      $(document).ready(function() {
+        window.initTinyMCE(document);
+      });
+    }
   });
 
 }(window.jQuery, window.Patterns));
