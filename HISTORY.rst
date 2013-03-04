@@ -5,6 +5,12 @@ HISTORY
 1.3b10 (unreleased)
 -------------------
 
+- update danish translations
+  [tmog]
+
+- Fix for ajax view on content-anchors for dexterity content types
+  [bosim]
+
 - Fixes 'text format' selection. now it activates/deactivates tinymce depending
   on dropdown value (active only when 'text/html' item is selected)
   [garbas]
