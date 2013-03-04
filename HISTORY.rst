@@ -5,6 +5,11 @@ HISTORY
 1.3b10 (unreleased)
 -------------------
 
+- Remove "Fancy grid listing" and "Fancy vertical listing" table
+  styles since they don't hardly do anything and no one knows
+  what they should actually look like.
+  [vangheem]
+
 - Fixed selection of an item in the home folder.
   [vincentpretre]
 
