@@ -2,13 +2,28 @@
 HISTORY
 =======
 
-1.3b10 (unreleased)
+1.3b11 (unreleased)
 -------------------
 
 - Remove "Fancy grid listing" and "Fancy vertical listing" table
   styles since they don't hardly do anything and no one knows
   what they should actually look like.
   [vangheem]
+
+
+1.3b10 (2013-03-04)
+-------------------
+
+- update danish translations
+  [tmog]
+
+- Fix for ajax view on content-anchors for dexterity content types
+  [bosim]
+
+- Fixes 'text format' selection. now it activates/deactivates tinymce depending
+  on dropdown value (active only when 'text/html' item is selected)
+  [garbas]
+>>>>>>> b539b6f82c8a4df8a217051516d882cd8e4a345e
 
 - Fixed selection of an item in the home folder.
   [vincentpretre]
