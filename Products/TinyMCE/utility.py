@@ -16,6 +16,7 @@ from Products.Archetypes.Field import ImageField
 from Products.Archetypes.interfaces import IBaseObject
 from Products.Archetypes.interfaces.field import IImageField
 from Products.CMFCore.interfaces._content import IFolderish
+from Products.CMFCore.interfaces import ISiteRoot
 from Products.CMFCore.utils import getToolByName
 try:
     from plone.app.layout.globals.portal import RIGHT_TO_LEFT
@@ -917,18 +918,21 @@ class TinyMCE(SimpleItem):
 
         try:
             results['document_url'] = context.absolute_url()
-            parent = aq_parent(aq_inner(context))
-            if getattr(aq_base(context), 'checkCreationFlag', lambda: None)():
-                # An archetypes add form, navigate outside the portal_factory
-                parent = aq_parent(aq_parent(parent))
-                results['document_base_url'] = parent.absolute_url() + "/"
-            else:
-                if IFolderish.providedBy(context):
-                    # Current item is folderish (or parent, if a dexterity add form)
-                    results['document_base_url'] = context.absolute_url() + "/"
-                else:
-                    # Parent must be folderish, since it contains context
-                    results['document_base_url'] = parent.absolute_url() + "/"
+
+            obj = context
+            while obj is not None:
+                if IFolderish.providedBy(obj):
+                    results['document_base_url'] = obj.absolute_url() + "/"
+                    break
+
+                # We should never reach this.
+                if ISiteRoot.providedBy(obj):
+                    results['document_base_url'] = portal_url + "/"
+                    results['document_url'] = portal_url
+                    break
+
+                obj = aq_parent(aq_inner(obj))
+
         except AttributeError:
             results['document_base_url'] = portal_url + "/"
             results['document_url'] = portal_url
