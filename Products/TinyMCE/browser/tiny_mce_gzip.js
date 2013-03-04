@@ -3,11 +3,14 @@
   window.initTinyMCE = function(context) {
 
     $('textarea.mce_editable', context).each(function() {
-      var $el = $(this), tinymceActive = false;
+      var $el = $(this),
+          $field = $el.parents('.field'),
+          tinymceActive = false,
           config = $.parseJSON($el.attr('data-mce-config'));
 
-      $('.suppressVisualEditor', $el.parents('.field')).hide();
-      $('.fieldTextFormat', $el.parents('.field')).on('change', function(e) {
+      $('.suppressVisualEditor', $field).hide();
+      $('.fieldTextFormat > select', $field).on('change', function(e) {
+        e.stopPropagation();
 
         if ($(e.target).val() === 'text/html') {
           // only activate if it unactive
@@ -25,7 +28,7 @@
       // set Text Format dropdown untabbable for better UX
       }).attr('tabindex', '-1');
 
-      if ($el.val() === 'text/html') {
+      if ($('.fieldTextFormat > select', $field).val() === 'text/html') {
         $el.tinymce(config);
         tinymceActive = true;
       }
