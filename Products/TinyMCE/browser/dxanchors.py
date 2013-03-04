@@ -2,11 +2,25 @@
 
 from Products.Five.browser import BrowserView
 from Products.TinyMCE.browser.interfaces.anchors import IAnchorView
-from elementtree import HTMLTreeBuilder
 from plone.dexterity.utils import iterSchemata
 from plone.rfc822.interfaces import IPrimaryField
 from zope.interface import implements
 from zope.schema import getFieldsInOrder
+
+try:
+    from lxml.html import fromstring
+    fromstring     # pyflakes
+    SEARCHPATTERN = "a"
+except ImportError:
+    from elementtree import HTMLTreeBuilder
+
+    def fromstring(text):
+        parser = HTMLTreeBuilder.TreeBuilder()
+        text = '<root>%s</root>' % text
+        parser.feed(text)
+        return parser.close()
+
+    SEARCHPATTERN = "*/a"
 
 
 class DexterityAnchorView(BrowserView):
