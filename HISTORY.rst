@@ -23,7 +23,6 @@ HISTORY
 - Fixes 'text format' selection. now it activates/deactivates tinymce depending
   on dropdown value (active only when 'text/html' item is selected)
   [garbas]
->>>>>>> b539b6f82c8a4df8a217051516d882cd8e4a345e
 
 - Fixed selection of an item in the home folder.
   [vincentpretre]
