@@ -2,8 +2,8 @@
 HISTORY
 =======
 
-1.3b11 (unreleased)
--------------------
+1.3 (2013-03-05)
+----------------
 
 - Remove "Fancy grid listing" and "Fancy vertical listing" table
   styles since they don't hardly do anything and no one knows
