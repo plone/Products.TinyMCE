@@ -9,7 +9,7 @@
           config = $.parseJSON($el.attr('data-mce-config'));
 
       $('.suppressVisualEditor', $field).hide();
-      $('.fieldTextFormat > select', $field).on('change', function(e) {
+      $('.fieldTextFormat > select', $field).bind('change', function(e) {
         e.stopPropagation();
 
         if ($(e.target).val() === 'text/html') {
