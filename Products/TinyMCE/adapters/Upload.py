@@ -13,6 +13,7 @@ from plone.outputfilters.browser.resolveuid import uuidFor
 import pkg_resources
 try:
     pkg_resources.get_distribution('plone.dexterity')
+    pkg_resources.get_distribution('plone.namedfile')
 except pkg_resources.DistributionNotFound:
     HAS_DEXTERITY = False
     pass
