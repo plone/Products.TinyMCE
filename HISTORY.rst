@@ -5,8 +5,9 @@ HISTORY
 1.3.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- Use jQuery `bind` instead of `on` to support version 1.4.4
+  (which is included in Plone 4.2)
+  [garbas]
 
 1.3 (2013-03-05)
 ----------------
