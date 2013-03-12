@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.3.1 (unreleased)
+1.3.1 (2013-03-12)
 ------------------
 
 - Use jQuery `bind` instead of `on` to support version 1.4.4
