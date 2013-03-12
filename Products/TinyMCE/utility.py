@@ -922,8 +922,11 @@ class TinyMCE(SimpleItem):
             obj = context
             while obj is not None:
                 if IFolderish.providedBy(obj):
-                    results['document_base_url'] = obj.absolute_url() + "/"
-                    break
+                    if obj.portal_type != 'TempFolder':
+                        # do not use portal_factory generated
+                        # temporary object for base url.
+                        results['document_base_url'] = obj.absolute_url() + "/"
+                        break
 
                 # We should never reach this.
                 if ISiteRoot.providedBy(obj):

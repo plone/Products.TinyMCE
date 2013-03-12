@@ -5,7 +5,9 @@ HISTORY
 1.3.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- use correct base url for temporary portal_factory objects.
+  This fixes add image to new item https://dev.plone.org/ticket/13483
+  [vangheem]
 
 
 1.3.1 (2013-03-12)
