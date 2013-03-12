@@ -5,6 +5,10 @@ HISTORY
 1.3.1 (unreleased)
 ------------------
 
+- Load TinyMCE also if there is no text format dropdown
+  and the input type is text/html.
+  [mathias.leimgruber]
+
 - Use jQuery `bind` instead of `on` to support version 1.4.4
   (which is included in Plone 4.2)
   [garbas]

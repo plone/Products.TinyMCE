@@ -33,6 +33,12 @@
         tinymceActive = true;
       }
 
+      // Load TinyMCE also if there's no text format dropdown and the vaue is text/html
+      if ($('input[name="text_text_format"]', $field).val() === 'text/html') {
+        $el.tinymce(config);
+        tinymceActive = true;
+      }
+
     });
   };
 
