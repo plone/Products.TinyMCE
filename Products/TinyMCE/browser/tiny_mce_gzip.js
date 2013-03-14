@@ -38,7 +38,6 @@
 
   $(document).ready(function() {
     if (Patterns) {
-      console.log('tinymce!!!');
       var PloneTinyMCE = Patterns.extend({
         name: 'plone-tinymce',
         jqueryPlugin: 'ploneTinymce',
