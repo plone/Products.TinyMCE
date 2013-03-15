@@ -5,6 +5,10 @@ HISTORY
 1.2.16 (unreleased)
 -------------------
 
+- Fixed javascript error when using Firefox because of editor_plugin.js found
+  within plonestyle and definitionlist plugins. 
+  This is a backport of a solution done in master branch in changeset 8efc3145
+  [ichim-david]
 - Fixed ``plone.namedfile`` dependecy check
   [keul]
 
