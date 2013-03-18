@@ -5,7 +5,7 @@
     $('textarea.mce_editable', context).each(function() {
       var $el = $(this),
           $field = $el.parents('.field'),
-          tinymceActive = false,
+          tinymceActive = true,
           config = $.parseJSON($el.attr('data-mce-config'));
 
       $('.suppressVisualEditor', $field).hide();
@@ -28,9 +28,10 @@
       // set Text Format dropdown untabbable for better UX
       }).attr('tabindex', '-1');
 
-      if ($('.fieldTextFormat > select', $field).val() === 'text/html') {
-        $el.tinymce(config);
-        tinymceActive = true;
+      $el.tinymce(config); tinymceActive = true;
+
+      if ($('.fieldTextFormat > select', $field).val() != 'text/html') {
+        $el.tinymce(config); tinymceActive = false;
       }
 
     });
