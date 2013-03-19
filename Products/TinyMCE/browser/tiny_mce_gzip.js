@@ -6,10 +6,11 @@
       var $el = $(this),
           $field = $el.parents('.field'),
           tinymceActive = false,
-          config = $.parseJSON($el.attr('data-mce-config'));
+          config = $.parseJSON($el.attr('data-mce-config')),
+          $textFormatSelector = $('.fieldTextFormat > select', $field);
 
       $('.suppressVisualEditor', $field).hide();
-      $('.fieldTextFormat > select', $field).bind('change', function(e) {
+      $textFormatSelector.bind('change', function(e) {
         e.stopPropagation();
 
         if ($(e.target).val() === 'text/html') {
@@ -28,7 +29,14 @@
       // set Text Format dropdown untabbable for better UX
       }).attr('tabindex', '-1');
 
-      if ($('.fieldTextFormat > select', $field).val() === 'text/html') {
+      if(!$textFormatSelector.length){
+        // If there is no selector, honour the intent of the mce_editable
+        // class on this textarea.
+        $el.tinymce(config);
+        tinymceActive = true;
+      } else if ($textFormatSelector.val() === 'text/html') {
+        // If there is a format selector, only initialise when it asks
+        // for html.
         $el.tinymce(config);
         tinymceActive = true;
       }
