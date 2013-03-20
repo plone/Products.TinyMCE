@@ -33,8 +33,6 @@ class DexterityAnchorView(BrowserView):
 
     def listAnchorNames(self, fieldname=None):
         """Return a list of Anchor names"""
-        results = []
-        tree = HTMLTreeBuilder.TreeBuilder()
         content_field = None
         for schema in iterSchemata(self.context):
             if content_field is not None:
@@ -50,10 +48,11 @@ class DexterityAnchorView(BrowserView):
         except AttributeError:
             # Not a text field.
             return []
-        tree.feed('<root>%s</root>' % content)
-        rootnode = tree.close()
-        for x in rootnode.getiterator():
-            if x.tag == "a":
-                if "name" in x.keys():
-                    results.append(x.attrib['name'])
-        return results
+        try:
+            tree = fromstring(content)
+        except ConflictError:
+            raise
+        except Exception:
+            return []
+        return [anchor.get('name') for anchor in tree.findall(SEARCHPATTERN)
+                if "name" in anchor.keys()]
