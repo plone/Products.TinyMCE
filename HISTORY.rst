@@ -2,7 +2,15 @@
 HISTORY
 =======
 
-1.3.2 (unreleased)
+1.3.3 (unreleased)
+------------------
+
+- If the fieldTextFormat dropdown does not exist, tinymce failed to start.
+  This was obviously a regression, now fixed.
+  [izak]
+
+
+1.3.2 (2013-03-17)
 ------------------
 
 - use correct base url for temporary portal_factory objects.
