@@ -5,6 +5,9 @@ HISTORY
 1.3.3 (unreleased)
 ------------------
 
+- Added some missing german translations.
+  [tschanzt]
+
 - If the fieldTextFormat dropdown does not exist, tinymce failed to start.
   This was obviously a regression, now fixed.
   [izak]
