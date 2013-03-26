@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.3.3 (unreleased)
+1.3.3 (2013-03-26)
 ------------------
 
 - Added some missing german translations.
