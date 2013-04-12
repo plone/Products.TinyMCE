@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-12-19 15:23+0000\n"
+"POT-Creation-Date: 2013-04-12 11:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,150 +14,158 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#: ../utility.py:739
+#: TinyMCE/utility.py:766
 msgid "(remove style)"
 msgstr "(izbriši stil)"
 
-#: ../utility.py:738
+#: TinyMCE/utility.py:765
 msgid "Add new File"
 msgstr "Dodaj datoteko"
 
-#: ../utility.py:737
+#: TinyMCE/utility.py:764
 msgid "Add new Image"
 msgstr "Dodaj sliko"
 
-#: ../interfaces/utility.py:308
+#: TinyMCE/interfaces/utility.py:339
 msgid "After the deadline (FLOSS)"
 msgstr "After the deadline (odprto-kodni)"
 
-#: ../interfaces/utility.py:159
+#: TinyMCE/interfaces/utility.py:190
 msgid "Align center"
 msgstr "Poravnaj sredinsko"
 
-#: ../interfaces/utility.py:167
+#: TinyMCE/interfaces/utility.py:198
 msgid "Align full"
 msgstr "Poravnaj obojestransko"
 
-#: ../interfaces/utility.py:155
+#: TinyMCE/interfaces/utility.py:186
 msgid "Align left"
 msgstr "Poravnaj levo"
 
-#: ../interfaces/utility.py:163
+#: TinyMCE/interfaces/utility.py:194
 msgid "Align right"
 msgstr "Poravnaj desno"
 
-#: ../interfaces/utility.py:353
+#: TinyMCE/interfaces/utility.py:389
 msgid "Allow captioned images"
 msgstr "Omogoči opise slike"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:32
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:32
 msgid "Anchor"
 msgstr "Sidro"
 
-#: ../interfaces/utility.py:325
+#: TinyMCE/interfaces/utility.py:475
+msgid "Anchor selector expression"
+msgstr ""
+
+#: TinyMCE/interfaces/utility.py:356
 msgid "AtD Error types to show"
 msgstr ""
 
-#: ../interfaces/utility.py:314
+#: TinyMCE/interfaces/utility.py:345
 msgid "AtD Ignore strings"
 msgstr ""
 
-#: ../interfaces/utility.py:338
+#: TinyMCE/interfaces/utility.py:369
 msgid "AtD Service URL"
 msgstr ""
 
-#: ../interfaces/utility.py:151
+#: TinyMCE/interfaces/utility.py:182
 msgid "Backcolor"
 msgstr "Barva ozadja"
 
-#: ../interfaces/utility.py:123
+#: TinyMCE/adapters/Upload.py:138
+msgid "Bad filename, please rename."
+msgstr ""
+
+#: TinyMCE/interfaces/utility.py:154
 msgid "Bold"
 msgstr "Krepko"
 
-#: ../utility.py:750
+#: TinyMCE/utility.py:777
 msgid "Browser"
 msgstr "Brskalnik"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:274
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:297
 msgid "CSS Style"
 msgstr "Stil CSS"
 
 msgid "Call-out"
 msgstr "Izpostavljeno"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:92
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:92
 msgid "Caption"
 msgstr "Opis"
 
-#: ../interfaces/utility.py:50
+#: TinyMCE/interfaces/utility.py:71
 msgid "Choose the CSS used in WYSIWYG Editor Area"
 msgstr "Izberite CSS, ki se bo uporabil v načinu 'videz ne vara' (WYSIWYG)"
 
 msgid "Circle"
 msgstr "Krog"
 
-#: ../interfaces/utility.py:263
+#: TinyMCE/interfaces/utility.py:294
 msgid "Cleanup messy code"
 msgstr "Prečisti kodo"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:43
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:43
 msgid "Clear"
 msgstr "Počisti"
 
 msgid "Clear floats"
 msgstr "Počisti postavitve"
 
-#: ../interfaces/utility.py:368
+#: TinyMCE/interfaces/utility.py:404
 msgid "Contains Anchors"
 msgstr "Vsebuje sidra"
 
-#: ../interfaces/utility.py:363
+#: TinyMCE/interfaces/utility.py:399
 msgid "Contains Objects"
 msgstr "Vsebuje objekte"
 
-#: ../browser/controlpanel.py:40
+#: TinyMCE/browser/controlpanel.py:50
 msgid "Content Browser"
 msgstr "Brskalnik vsebin"
 
-#: ../interfaces/utility.py:87
+#: TinyMCE/interfaces/utility.py:118
 msgid "Copy"
 msgstr "Kopiraj"
 
-#: ../shortcut.py:10
+#: TinyMCE/shortcut.py:9
 msgid "Current Folder"
 msgstr "Trenutna mapa"
 
-#: ../interfaces/utility.py:393
+#: TinyMCE/interfaces/utility.py:429
 msgid "Custom Plugins"
 msgstr "Dodatni vtičniki"
 
-#: ../interfaces/utility.py:287
+#: TinyMCE/interfaces/utility.py:318
 msgid "Custom Toolbar Buttons"
 msgstr "Dodatni gumbi orodne vrstice"
 
-#: ../interfaces/utility.py:83
+#: TinyMCE/interfaces/utility.py:114
 msgid "Cut"
 msgstr "Izreži"
 
-#: ../interfaces/utility.py:304
+#: TinyMCE/interfaces/utility.py:335
 msgid "Default browser spellchecker"
 msgstr "Privzet črkovalnik v brskalniku"
 
 msgid "Definition description"
 msgstr "Opis seznama"
 
-#: ../interfaces/utility.py:179
+#: TinyMCE/interfaces/utility.py:210
 msgid "Definition list"
 msgstr "Seznam"
 
 msgid "Definition term"
 msgstr "Izraz na seznamu"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:83
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:83
 msgid "Description"
 msgstr "Opis"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:67
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:67
 msgid "Details"
 msgstr "Podrobnosti"
 
@@ -167,92 +175,92 @@ msgstr ""
 msgid "Discreet"
 msgstr "Diskretno"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:207
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:234
 msgid "E-mail"
 msgstr "E-mail"
 
-#: ../interfaces/utility.py:279
+#: TinyMCE/interfaces/utility.py:310
 msgid "Edit HTML Source"
 msgstr "Uredi izvorno kodo HTML"
 
-#: ../interfaces/utility.py:40
+#: TinyMCE/interfaces/utility.py:61
 msgid "Editor height"
 msgstr "Višina urejevalnika"
 
-#: ../interfaces/utility.py:34
+#: TinyMCE/interfaces/utility.py:55
 msgid "Editor width"
 msgstr "Širina urejevalnika"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:28
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:28
 msgid "Email"
 msgstr "Email"
 
-#: ../interfaces/utility.py:235
+#: TinyMCE/interfaces/utility.py:266
 msgid "Emotions"
 msgstr "Smeškoti"
 
-#: ../interfaces/utility.py:28
+#: TinyMCE/interfaces/utility.py:49
 msgid "Enable auto resizing of the editor window."
 msgstr "Omogoči samodejno prilagajanje velikosti urejevalnika"
 
-#: ../interfaces/utility.py:45
+#: TinyMCE/interfaces/utility.py:66
 msgid "Enable contextmenu"
 msgstr "Omogoči kontekstualni meni"
 
-#: ../interfaces/utility.py:23
+#: TinyMCE/interfaces/utility.py:44
 msgid "Enable resizing the editor window."
 msgstr "Omogoči prilagajanje velikosti urejevalnika"
 
-#: ../interfaces/utility.py:374
+#: TinyMCE/interfaces/utility.py:82
+msgid "Enter a JSON-formatted style format configuration. A format is for example the style that get applied when you press the bold button inside the editor. See http://www.tinymce.com/wiki.php/Configuration:formats"
+msgstr ""
+
+#: TinyMCE/interfaces/utility.py:410
 msgid "Enter a list of content types which can be linked. Format is one contenttype per line."
 msgstr "Seznam tipov vsebin, na katere lahko kažejo povezave. En tip na vrstico."
 
-#: ../interfaces/utility.py:379
+#: TinyMCE/interfaces/utility.py:415
 msgid "Enter a list of content types which can be used as images. Format is one contenttype per line."
 msgstr "Seznam tipov vsebin, ki se jih lahko uporabi kot slike. En tip na vrstico."
 
-#: ../interfaces/utility.py:369
+#: TinyMCE/interfaces/utility.py:405
 msgid "Enter a list of content types which can contain anchors. Format is one contenttype per line."
 msgstr "Seznam tipov vsebin, ki lahko vsebujejo sidra. En tip na vrstico."
 
-#: ../interfaces/utility.py:364
+#: TinyMCE/interfaces/utility.py:400
 msgid "Enter a list of content types which can contain other objects. Format is one contenttype per line."
 msgstr "Seznam tipov vsebin, ki lahko vsebujejo ostale objekte. En tip na vrstico."
 
-#: ../interfaces/utility.py:394
+#: TinyMCE/interfaces/utility.py:430
 msgid "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
 msgstr "Seznam dodatnih vtičnikov, ki naj se naložijo v urejavlnik. En vtičnik na vrstico. Pravilen format je 'ime vtičnika' ali 'ime vtičnika'|'lokacija'."
 
-#: ../interfaces/utility.py:288
+#: TinyMCE/interfaces/utility.py:319
 msgid "Enter a list of custom toolbar buttons which will be loaded in the editor, one per line."
 msgstr "Senzam dodatnih gumbov orodne vrstice, ki naj se naložijo v urejevalnik. En gumb na vrstico."
 
-#: ../interfaces/utility.py:56
+#: TinyMCE/interfaces/utility.py:77
 msgid "Enter a list of styles to appear in the style pulldown. Format is title|tag or title|tag|className, one per line."
 msgstr "Seznam stilov, ki naj bodo prisotni v meniju za stile. En stil na vrstico. Pravilen format je 'ime'|'značka' ali 'ime'|'značka'|'razred CSS'."
 
-#: ../interfaces/utility.py:61
+#: TinyMCE/interfaces/utility.py:92
 msgid "Enter a list of styles to appear in the table style pulldown. Format is title|class, one per line."
 msgstr "Seznam stilov, ki naj bodo prisotni v meniju za tabele. En stil na vrstico. Pravilen format je 'ime'|'razred CSS'."
 
-#: ../interfaces/utility.py:398
+#: TinyMCE/interfaces/utility.py:434
 msgid "Entity encoding"
 msgstr "Kodiranje znakov"
 
 msgid "Even row"
 msgstr "Soda vrstica"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:24
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:24
 msgid "External"
 msgstr "Zunanji"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:172
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:201
 msgid "External link"
 msgstr "Zunanja povezava"
-
-#: ../interfaces/utility.py:439
-msgid "External link preview"
-msgstr "Predogled zunanje povezave"
 
 msgid "Fancy grid listing"
 msgstr "Eleganten seznam z okviri"
@@ -263,17 +271,21 @@ msgstr "Eleganten seznam"
 msgid "Fancy vertical listing"
 msgstr "Eleganten vertikalni seznam"
 
-#: ../interfaces/utility.py:111
+#: TinyMCE/interfaces/utility.py:142
 msgid "Find"
 msgstr "Poišči"
 
-#: ../interfaces/utility.py:115
+#: TinyMCE/interfaces/utility.py:146
 msgid "Find/Replace"
 msgstr "Poišči in zamenjaj"
 
-#: ../interfaces/utility.py:147
+#: TinyMCE/interfaces/utility.py:178
 msgid "Forecolor"
 msgstr "Barva"
+
+#: TinyMCE/interfaces/utility.py:81
+msgid "Formats"
+msgstr ""
 
 msgid "Heading"
 msgstr "Naslov"
@@ -284,138 +296,150 @@ msgstr "Naslovna celica"
 msgid "Highlight"
 msgstr "Označi"
 
-#: ../shortcut.py:21
+#: TinyMCE/shortcut.py:20
 msgid "Home"
 msgstr "Domov"
 
-#: ../utility.py:735
+#: TinyMCE/utility.py:762
 msgid "Image Browser"
 msgstr "Brskalnik po slikah"
 
-#: ../interfaces/utility.py:378
+#: TinyMCE/interfaces/utility.py:414
 msgid "Image Objects"
 msgstr "Brskalnik po objektih"
 
-#: ../interfaces/utility.py:417
+#: TinyMCE/interfaces/utility.py:453
 msgid "Image Shortcuts"
 msgstr "Bližnjice do slik"
 
-#: ../interfaces/utility.py:354
+#: TinyMCE/interfaces/utility.py:390
 msgid "Images will be automatically captioned."
 msgstr "Slikam bo samodejno dodan opis."
 
-#: ../interfaces/utility.py:187
+#: TinyMCE/interfaces/utility.py:218
 msgid "Indent"
 msgstr "Vstavi zamik"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:100
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:100
 msgid "Inline"
 msgstr "Medvrstičen"
 
-#: ../interfaces/utility.py:223
+#: TinyMCE/interfaces/utility.py:254
 msgid "Insert advanced horizontal ruler"
 msgstr "Vstavi napredno vodoravno črto"
 
-#: ../interfaces/utility.py:215
+#: TinyMCE/interfaces/utility.py:246
 msgid "Insert custom character"
 msgstr "Vstavi posebni znak"
 
-#: ../interfaces/utility.py:227
+#: TinyMCE/interfaces/utility.py:258
 msgid "Insert date"
 msgstr "Vstavi trenutni datum"
 
-#: ../interfaces/utility.py:219
+#: TinyMCE/interfaces/utility.py:250
 msgid "Insert horizontal ruler"
 msgstr "Vstavi vodoravno črto"
 
-#: ../interfaces/utility.py:239
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:171
+msgid "Insert image from URL"
+msgstr ""
+
+#: TinyMCE/interfaces/utility.py:270
 msgid "Insert non-breaking space character"
 msgstr "Vstavi nedeljivi presledek"
 
-#: ../interfaces/utility.py:243
+#: TinyMCE/interfaces/utility.py:274
 msgid "Insert page break"
 msgstr "Vstavi prelom strani"
 
-#: ../interfaces/utility.py:231
+#: TinyMCE/interfaces/utility.py:262
 msgid "Insert time"
 msgstr "Vstavi trenutni čas"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:5
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:5
 msgid "Insert/Edit"
 msgstr "Vstavi/Uredi"
 
-#: ../interfaces/utility.py:203
+#: TinyMCE/interfaces/utility.py:234
 msgid "Insert/edit anchor"
 msgstr "Vstavi/Uredi sidro"
 
-#: ../interfaces/utility.py:275
+#: TinyMCE/interfaces/utility.py:306
 msgid "Insert/edit attributes"
 msgstr "Vstavi/Uredi atribute"
 
-#: ../interfaces/utility.py:207
+#: TinyMCE/interfaces/utility.py:238
 msgid "Insert/edit image"
 msgstr "Vstavi/Uredi sliko"
 
-#: ../interfaces/utility.py:195
+#: TinyMCE/interfaces/utility.py:226
 msgid "Insert/edit link"
 msgstr "Vstavi/Uredi povezavo"
 
-#: ../interfaces/utility.py:211
+#: TinyMCE/interfaces/utility.py:242
 msgid "Insert/edit media"
 msgstr "Vstavi/Uredi multimedijski objekt"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:20
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:20
 msgid "Internal"
 msgstr "Notranji"
 
 msgid "Invisible grid"
 msgstr "Brez okvirjev"
 
-#: ../interfaces/utility.py:127
+#: TinyMCE/interfaces/utility.py:158
 msgid "Italic"
 msgstr "Poševno"
 
-#: ../browser/controlpanel.py:24
+#: TinyMCE/browser/controlpanel.py:34
 msgid "Layout"
 msgstr "Postavitev"
 
-#: ../browser/controlpanel.py:32
+#: TinyMCE/browser/controlpanel.py:42
 msgid "Libraries"
 msgstr "Knjižnice"
 
-#: ../utility.py:736
+#: TinyMCE/utility.py:763
 msgid "Link Browser"
 msgstr "Brskalnik povezav"
 
-#: ../interfaces/utility.py:409
+#: TinyMCE/interfaces/utility.py:445
 msgid "Link Shortcuts"
 msgstr "Bližnjice do povezav"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:254
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:277
 msgid "Link Title"
 msgstr "Naslov povezave"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:225
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:250
 msgid "Link to anchor"
 msgstr "Povezava na sidro"
 
-#: ../interfaces/utility.py:373
+#: TinyMCE/interfaces/utility.py:384
+msgid "Link using UIDs"
+msgstr ""
+
+#: TinyMCE/interfaces/utility.py:409
 msgid "Linkable Objects"
 msgstr "Objekti na katere lahko kažejo povezave"
 
-#: ../interfaces/utility.py:418
-msgid "List of shortcuts to appear in image browser for quick navigation"
-msgstr "Seznam bližnjic, ki naj bodo vidne v brskalniku slik."
+#: TinyMCE/interfaces/utility.py:385
+msgid "Links to objects on this site can use unique object ids so that the links remain valid even if the target object is renamed or moved elsewhere on the site."
+msgstr ""
 
-#: ../interfaces/utility.py:410
+#: TinyMCE/interfaces/utility.py:454
+msgid "List of shortcuts to appear in image browser for quick navigation."
+msgstr ""
+
+#: TinyMCE/interfaces/utility.py:446
 msgid "List of shortcuts to appear in link browser for quick navigation."
 msgstr "Seznam bližnjic, ki naj bodo vidne v brskalniku povezav."
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:48
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:48
 msgid "List view"
 msgstr "Seznam"
 
-#: ../utility.py:746
+#: TinyMCE/utility.py:773
 msgid "Lists"
 msgstr "Seznami"
 
@@ -428,299 +452,312 @@ msgstr ""
 msgid "Lower Roman"
 msgstr ""
 
-#: ../interfaces/utility.py:440
-msgid "Modern browsers allow webpages to block such feature. Some webpages may not be displayed in the preview."
-msgstr "Moderni brskalniki omogočajo spletnim stranem, da blokirajo take zahtevke. Nekatere strani zato ne morejo biti prikazane v predogledu."
+#: TinyMCE/interfaces/utility.py:31
+msgid "Must be empty or a valid JSON-formatted  configuration – ${message}."
+msgstr ""
 
-#: ../interfaces/utility.py:401
+#: TinyMCE/interfaces/utility.py:437
 msgid "Named"
 msgstr "Poimenovano"
 
-#: ../utility.py:749
+#: TinyMCE/utility.py:776
 msgid "No anchors in this page"
 msgstr "Ta stran nima sidr"
 
-#: ../utility.py:748
+#: TinyMCE/utility.py:775
 msgid "No items in this folder"
 msgstr "Ta mapa nima vsebin"
 
-#: ../utility.py:740
+#: TinyMCE/utility.py:767
 msgid "Normal paragraph"
 msgstr "Normalni odstavek"
 
-#: ../interfaces/utility.py:432
+#: TinyMCE/adapters/Upload.py:141
+msgid "Not allowed to upload a file of this type to this folder"
+msgstr ""
+
+#: TinyMCE/interfaces/utility.py:468
 msgid "Number of columns in thumbnails mode"
 msgstr "Številko stolpcev v načinu predoglednih sličic"
 
 msgid "Numbers"
 msgstr "Številke"
 
-#: ../interfaces/utility.py:401
+#: TinyMCE/interfaces/utility.py:437
 msgid "Numeric"
 msgstr "Numeričen"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:244
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:267
 msgid "OK"
 msgstr "Potrdi"
 
 msgid "Odd row"
 msgstr "Liha vrstica"
 
-#: ../interfaces/utility.py:175
+#: TinyMCE/interfaces/utility.py:206
 msgid "Ordered list"
 msgstr "Urejen seznam"
 
-#: ../utility.py:188
+#: TinyMCE/utility.py:192
 msgid "Original"
 msgstr "Original"
 
-#: ../interfaces/utility.py:183
+#: TinyMCE/interfaces/utility.py:214
 msgid "Outdent"
 msgstr "Umakni zamik"
 
 msgid "Page break (print only)"
 msgstr "Prelom strani (samo pri tiskanju)"
 
-#: ../interfaces/utility.py:91
+#: TinyMCE/interfaces/utility.py:122
 msgid "Paste"
 msgstr "Prilepi"
 
-#: ../interfaces/utility.py:95
+#: TinyMCE/interfaces/utility.py:126
 msgid "Paste as Plain Text"
 msgstr "Prilepi kot čisto besedilo"
 
-#: ../interfaces/utility.py:99
+#: TinyMCE/interfaces/utility.py:130
 msgid "Paste from Word"
 msgstr "Prilepi iz Word-a"
 
-#: ../interfaces/utility.py:74
+#: TinyMCE/interfaces/utility.py:105
 msgid "Place toolbar on top of the page"
 msgstr "Orodno vrstico postavi na zgornji rob strani"
 
-#: ../utility.py:741
+#: TinyMCE/utility.py:768
 msgid "Plain cell"
 msgstr "Normalna celica"
 
-#: ../interfaces/utility.py:251
+#: TinyMCE/interfaces/utility.py:282
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:184
 msgid "Preview"
 msgstr "Predogled"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:192
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:220
 msgid "Preview URL"
 msgstr "Predogled izbranega URL-ja"
 
-#: ../interfaces/utility.py:247
-#: ../utility.py:747
+#: TinyMCE/interfaces/utility.py:278
+#: TinyMCE/utility.py:774
 msgid "Print"
 msgstr "Natisni"
 
 msgid "Pull-quote"
 msgstr "Izpostavljen citat"
 
-#: ../interfaces/utility.py:401
+#: TinyMCE/interfaces/utility.py:437
 msgid "Raw"
 msgstr "Neobdleano"
 
-#: ../interfaces/utility.py:107
+#: TinyMCE/interfaces/utility.py:138
 msgid "Redo"
 msgstr "Ponovi"
 
-#: ../interfaces/utility.py:259
+#: TinyMCE/interfaces/utility.py:290
 msgid "Remove formatting"
 msgstr "Počisti oblikovanje"
 
-#: ../browser/controlpanel.py:36
+#: TinyMCE/browser/controlpanel.py:46
 msgid "Resource Types"
 msgstr "Tipi sredstev"
 
-#: ../interfaces/utility.py:358
+#: TinyMCE/interfaces/utility.py:394
 msgid "Rooted to current object"
 msgstr "Omejeno na trenutni objekt"
 
-#: ../interfaces/utility.py:79
+#: TinyMCE/interfaces/utility.py:110
 msgid "Save"
 msgstr "Shrani"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:44
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:44
 msgid "Search"
 msgstr "Išči"
 
-#: ../utility.py:752
+#: TinyMCE/utility.py:779
 msgid "Search results:"
 msgstr "Rezultati iskanja:"
 
-#: ../interfaces/utility.py:119
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:42
+msgid "Search site"
+msgstr ""
+
+#: TinyMCE/interfaces/utility.py:150
 msgid "Select Style"
 msgstr "Izberi stil"
 
-#: ../utility.py:745
+#: TinyMCE/utility.py:772
 msgid "Selection"
 msgstr "Izbira"
 
-#: ../browser/controlpanel.py:51
+#: TinyMCE/browser/controlpanel.py:61
 msgid "Settings for the TinyMCE Wysiwyg editor."
 msgstr "Nastavitve za urejevalnik TinyMCE."
 
-#: ../utility.py:751
+#: TinyMCE/utility.py:778
 msgid "Shortcuts"
 msgstr "Bližnjice"
 
-#: ../interfaces/utility.py:255
+#: TinyMCE/interfaces/utility.py:286
 msgid "Spellchecker"
 msgstr "Črkovalnik"
 
-#: ../interfaces/utility.py:296
+#: TinyMCE/interfaces/utility.py:327
 msgid "Spellchecker plugin to use"
 msgstr "Kateri črkovalnik naj se uporabi"
 
 msgid "Square"
 msgstr "Kvadrat"
 
-#: ../interfaces/utility.py:135
+#: TinyMCE/interfaces/utility.py:166
 msgid "Strikethrough"
 msgstr "Prečrtano besedilo"
 
-#: ../utility.py:742
+#: TinyMCE/utility.py:769
 msgid "Style..."
 msgstr "Stil..."
 
-#: ../interfaces/utility.py:55
+#: TinyMCE/interfaces/utility.py:76
 msgid "Styles"
 msgstr "Stili"
 
-#: ../skins/tinymce/plugins/table/table.htm.pt:33
+#: TinyMCE/skins/tinymce/plugins/table/table.htm.pt:33
 msgid "Subdued grid"
 msgstr "Zakrit okvir"
 
 msgid "Subheading"
 msgstr "Podnaslov"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:214
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:241
 msgid "Subject"
 msgstr "Predmet"
 
-#: ../interfaces/utility.py:139
+#: TinyMCE/interfaces/utility.py:170
 msgid "Subscript"
 msgstr "Spuščeno besedilo"
 
-#: ../interfaces/utility.py:143
+#: TinyMCE/interfaces/utility.py:174
 msgid "Superscript"
 msgstr "Dvignjeno besedilo"
 
-#: ../interfaces/utility.py:191
+#: TinyMCE/interfaces/utility.py:222
 msgid "Table controls"
 msgstr "Upravljanje s tebelami"
 
-#: ../interfaces/utility.py:60
+#: TinyMCE/interfaces/utility.py:91
 msgid "Table styles"
 msgstr "Stili tabel"
 
-#: ../utility.py:744
+#: TinyMCE/utility.py:771
 msgid "Tables"
 msgstr "Tabele"
 
-#: ../utility.py:743
+#: TinyMCE/utility.py:770
 msgid "Text"
 msgstr "Besedilo"
 
-#: ../interfaces/utility.py:297
+#: TinyMCE/adapters/Upload.py:166
+msgid "The content-type '%s' has no image-field!"
+msgstr ""
+
+#: TinyMCE/interfaces/utility.py:328
 msgid "This option allows you to choose the spellchecker for TinyMCE. If you want the spellchecker button to be visible, make sure it is enabled in the toolbar settings."
 msgstr ""
 
-#: ../interfaces/utility.py:399
+#: TinyMCE/interfaces/utility.py:435
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
 msgstr ""
 
-#: ../interfaces/utility.py:75
+#: TinyMCE/interfaces/utility.py:106
 msgid "This option enables the external toolbar which will be placed at the top of the page."
 msgstr ""
 
-#: ../interfaces/utility.py:51
+#: TinyMCE/interfaces/utility.py:72
 msgid "This option enables you to specify a custom CSS file that replaces the theme content CSS. This CSS file is the one used within the editor (the editable area)."
 msgstr ""
 
-#: ../interfaces/utility.py:29
+#: TinyMCE/interfaces/utility.py:50
 msgid "This option gives you the ability to enable/disable auto resizing the editor window depending on the content."
 msgstr ""
 
-#: ../interfaces/utility.py:24
+#: TinyMCE/interfaces/utility.py:45
 msgid "This option gives you the ability to enable/disable resizing the editor window. If the editor width is set to a percentage only vertical resizing is enabled."
 msgstr ""
 
-#: ../interfaces/utility.py:46
+#: TinyMCE/interfaces/utility.py:67
 msgid "This option gives you the ability to enable/disable the use of the contextmenu."
 msgstr ""
 
-#: ../interfaces/utility.py:41
+#: TinyMCE/interfaces/utility.py:62
 msgid "This option gives you the ability to specify the height of the editor in pixels. If auto resize is enabled this value is used as minimum height."
 msgstr ""
 
-#: ../interfaces/utility.py:35
+#: TinyMCE/interfaces/utility.py:56
 msgid "This option gives you the ability to specify the width of the editor (like 100% or 400px)."
 msgstr ""
 
-#: ../interfaces/utility.py:70
+#: TinyMCE/interfaces/utility.py:101
 msgid "This option gives you the ability to specify the width of the toolbar in pixels."
 msgstr ""
 
-#: ../interfaces/utility.py:425
+#: TinyMCE/interfaces/utility.py:461
 msgid "Thumbnail size in thumbnails mode"
 msgstr ""
 
-#: ../profiles/upgrade_10_to_11/controlpanel.xml
+#: TinyMCE/profiles/upgrade_10_to_11/controlpanel.xml
 msgid "TinyMCE"
 msgstr "TinyMCE"
 
-#: ../browser/controlpanel.py:50
+#: TinyMCE/browser/controlpanel.py:60
 msgid "TinyMCE Settings"
 msgstr "Nastavitve TinyMCE"
 
-#: ../profiles/default/controlpanel.xml
-#: ../profiles/upgrade_10_to_11/controlpanel.xml
+#: TinyMCE/profiles/default/controlpanel.xml
+#: TinyMCE/profiles/upgrade_10_to_11/controlpanel.xml
 msgid "TinyMCE Visual Editor"
 msgstr "Vizualni urejevalnik TinyMCE"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:76
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:76
 msgid "Title"
 msgstr "Naslov"
 
-#: ../interfaces/utility.py:283
+#: TinyMCE/interfaces/utility.py:314
 msgid "Toggle fullscreen mode"
 msgstr "Vključi celozaslonski način"
 
-#: ../interfaces/utility.py:267
+#: TinyMCE/interfaces/utility.py:298
 msgid "Toggle guidelines/invisible objects"
 msgstr "Prikaži ne-vidne znake/pomagalnike"
 
-#: ../browser/controlpanel.py:28
+#: TinyMCE/browser/controlpanel.py:38
 msgid "Toolbar"
 msgstr "Orodna vrstica"
 
-#: ../interfaces/utility.py:69
+#: TinyMCE/interfaces/utility.py:100
 msgid "Toolbar width"
 msgstr "Širina orodne vrstice"
 
-#: ../interfaces/utility.py:131
+#: TinyMCE/interfaces/utility.py:162
 msgid "Underline"
 msgstr "Podčrtano"
 
-#: ../interfaces/utility.py:103
+#: TinyMCE/interfaces/utility.py:134
 msgid "Undo"
 msgstr "Razveljavi"
 
-#: ../interfaces/utility.py:199
+#: TinyMCE/interfaces/utility.py:230
 msgid "Unlink"
 msgstr "Umakni povezavo"
 
-#: ../interfaces/utility.py:171
+#: TinyMCE/interfaces/utility.py:202
 msgid "Unordered list"
 msgstr "Neurejen seznam"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:160
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:160
 msgid "Upload"
 msgstr "Naloži"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:133
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:133
 msgid "Upload File"
 msgstr "Naloži datoteko"
 
@@ -730,59 +767,59 @@ msgstr ""
 msgid "Upper Roman"
 msgstr ""
 
-#: ../interfaces/utility.py:271
+#: TinyMCE/interfaces/utility.py:302
 msgid "Visual control characters on/off"
 msgstr "Omogoči znake za vizualno kontrolo"
 
-#: ../interfaces/utility.py:359
+#: TinyMCE/interfaces/utility.py:395
 msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
 msgstr ""
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:58
-#: ../utility.py:753
-msgid "You are here:"
-msgstr "Nahajate se tu:"
+#. Default: "A CSS level 3 pattern used to match elements that can serve as anchors. The default value is to match headings."
+#: TinyMCE/interfaces/utility.py:476
+msgid "help_anchor_selector"
+msgstr ""
 
 #. Default: "The URL of the \"After the Deadline\" grammar and spell checking server. The default value is the public server, but ideally you should download and install your own and specify its address here."
-#: ../interfaces/utility.py:339
+#: TinyMCE/interfaces/utility.py:370
 msgid "help_atd_service_url"
 msgstr ""
 
 #. Default: "A list of error types which the \"After the Deadline\" spellchecker should check for. By default, all the available error type will be listed here."
-#: ../interfaces/utility.py:326
+#: TinyMCE/interfaces/utility.py:357
 msgid "help_atderrortypes_to_show"
 msgstr ""
 
 #. Default: "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
-#: ../interfaces/utility.py:384
+#: TinyMCE/interfaces/utility.py:420
 msgid "help_tinymce_plugins"
 msgstr ""
 
-#: ../interfaces/utility.py:306
+#: TinyMCE/interfaces/utility.py:337
 msgid "ieSpell (free for personal use)"
 msgstr ""
 
 #. Default: "A list of strings which the \"After the Deadline\"spellchecker should ignore. Note: This option is only applicable when the appropriate spellchecker has been chosen above."
-#: ../interfaces/utility.py:315
+#: TinyMCE/interfaces/utility.py:346
 msgid "label_atd_ignore_strings"
 msgstr ""
 
 #. Default: "Editor Plugins"
-#: ../interfaces/utility.py:383
+#: TinyMCE/interfaces/utility.py:419
 msgid "label_tinymce_plugins"
 msgstr "Vtičniki za urejevalnik"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:154
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:154
 msgid "or External URL"
 msgstr "ali zunanji URL"
 
 #. Default: "Edit without visual editor"
-#: ../skins/tinymce/tinymce_wysiwyg_support.pt:27
+#: TinyMCE/skins/tinymce/tinymce_wysiwyg_support.pt:33
 msgid "suppress_visual_editor"
 msgstr "Urejanje brez vizualnega urejevalnika"
 
 #. Default: "Edit with visual editor"
-#: ../skins/tinymce/tinymce_wysiwyg_support.pt:35
+#: TinyMCE/skins/tinymce/tinymce_wysiwyg_support.pt:41
 msgid "suppress_visual_editor_with"
 msgstr "Urejanje z vizualnim urejevalnikom"
 

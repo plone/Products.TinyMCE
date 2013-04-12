@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2011-12-19 15:23+0000\n"
+"POT-Creation-Date: 2013-04-12 11:46+0000\n"
 "PO-Revision-Date: 2010-08-21 17:33+0900\n"
 "Last-Translator: Takeshi Yamamoto (Retsu) <tyam@mac.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,71 +17,79 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone.tinymce\n"
 
-#: ../utility.py:739
+#: TinyMCE/utility.py:766
 msgid "(remove style)"
 msgstr "(スタイルを除去)"
 
-#: ../utility.py:738
+#: TinyMCE/utility.py:765
 msgid "Add new File"
 msgstr ""
 
-#: ../utility.py:737
+#: TinyMCE/utility.py:764
 msgid "Add new Image"
 msgstr ""
 
-#: ../interfaces/utility.py:308
+#: TinyMCE/interfaces/utility.py:339
 msgid "After the deadline (FLOSS)"
 msgstr ""
 
-#: ../interfaces/utility.py:159
+#: TinyMCE/interfaces/utility.py:190
 msgid "Align center"
 msgstr "中揃え"
 
-#: ../interfaces/utility.py:167
+#: TinyMCE/interfaces/utility.py:198
 msgid "Align full"
 msgstr "両揃え"
 
-#: ../interfaces/utility.py:155
+#: TinyMCE/interfaces/utility.py:186
 msgid "Align left"
 msgstr "左揃え"
 
-#: ../interfaces/utility.py:163
+#: TinyMCE/interfaces/utility.py:194
 msgid "Align right"
 msgstr "右揃え"
 
-#: ../interfaces/utility.py:353
+#: TinyMCE/interfaces/utility.py:389
 msgid "Allow captioned images"
 msgstr "キャプション付き画像を許す"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:32
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:32
 msgid "Anchor"
 msgstr ""
 
-#: ../interfaces/utility.py:325
+#: TinyMCE/interfaces/utility.py:475
+msgid "Anchor selector expression"
+msgstr ""
+
+#: TinyMCE/interfaces/utility.py:356
 msgid "AtD Error types to show"
 msgstr ""
 
-#: ../interfaces/utility.py:314
+#: TinyMCE/interfaces/utility.py:345
 msgid "AtD Ignore strings"
 msgstr ""
 
-#: ../interfaces/utility.py:338
+#: TinyMCE/interfaces/utility.py:369
 msgid "AtD Service URL"
 msgstr ""
 
-#: ../interfaces/utility.py:151
+#: TinyMCE/interfaces/utility.py:182
 msgid "Backcolor"
 msgstr "背景色"
 
-#: ../interfaces/utility.py:123
+#: TinyMCE/adapters/Upload.py:138
+msgid "Bad filename, please rename."
+msgstr ""
+
+#: TinyMCE/interfaces/utility.py:154
 msgid "Bold"
 msgstr "太字"
 
-#: ../utility.py:750
+#: TinyMCE/utility.py:777
 msgid "Browser"
 msgstr ""
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:274
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:297
 msgid "CSS Style"
 msgstr ""
 
@@ -89,69 +97,69 @@ msgid "Call-out"
 msgstr ""
 
 #. Default: "Caption"
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:92
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:92
 msgid "Caption"
 msgstr "キャプション"
 
-#: ../interfaces/utility.py:50
+#: TinyMCE/interfaces/utility.py:71
 msgid "Choose the CSS used in WYSIWYG Editor Area"
 msgstr "WYSIWYGエディタ領域で使われるCSSを選ぶ"
 
 msgid "Circle"
 msgstr "○（白丸）"
 
-#: ../interfaces/utility.py:263
+#: TinyMCE/interfaces/utility.py:294
 msgid "Cleanup messy code"
 msgstr "乱雑なコードを整頓する"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:43
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:43
 msgid "Clear"
 msgstr ""
 
 msgid "Clear floats"
 msgstr "フロートを解除"
 
-#: ../interfaces/utility.py:368
+#: TinyMCE/interfaces/utility.py:404
 msgid "Contains Anchors"
 msgstr "アンカーを含める"
 
-#: ../interfaces/utility.py:363
+#: TinyMCE/interfaces/utility.py:399
 msgid "Contains Objects"
 msgstr "オブジェクトを含める"
 
-#: ../browser/controlpanel.py:40
+#: TinyMCE/browser/controlpanel.py:50
 msgid "Content Browser"
 msgstr ""
 
-#: ../interfaces/utility.py:87
+#: TinyMCE/interfaces/utility.py:118
 msgid "Copy"
 msgstr "コピー"
 
 #. Default: "Current Folder"
-#: ../shortcut.py:10
+#: TinyMCE/shortcut.py:9
 msgid "Current Folder"
 msgstr "カレントフォルダ"
 
-#: ../interfaces/utility.py:393
+#: TinyMCE/interfaces/utility.py:429
 msgid "Custom Plugins"
 msgstr "カスタムプラグイン"
 
-#: ../interfaces/utility.py:287
+#: TinyMCE/interfaces/utility.py:318
 msgid "Custom Toolbar Buttons"
 msgstr "カスタムツールバーボタン"
 
-#: ../interfaces/utility.py:83
+#: TinyMCE/interfaces/utility.py:114
 msgid "Cut"
 msgstr "カット"
 
-#: ../interfaces/utility.py:304
+#: TinyMCE/interfaces/utility.py:335
 msgid "Default browser spellchecker"
 msgstr ""
 
 msgid "Definition description"
 msgstr "定義説明"
 
-#: ../interfaces/utility.py:179
+#: TinyMCE/interfaces/utility.py:210
 msgid "Definition list"
 msgstr "定義リスト"
 
@@ -159,11 +167,11 @@ msgid "Definition term"
 msgstr "定義語"
 
 #. Default: "Description"
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:83
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:83
 msgid "Description"
 msgstr "説明"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:67
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:67
 msgid "Details"
 msgstr ""
 
@@ -174,75 +182,79 @@ msgid "Discreet"
 msgstr "控え目"
 
 #. Default: "E-mail"
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:207
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:234
 msgid "E-mail"
 msgstr "Ｅメール"
 
-#: ../interfaces/utility.py:279
+#: TinyMCE/interfaces/utility.py:310
 msgid "Edit HTML Source"
 msgstr "HTMLソースを編集する"
 
-#: ../interfaces/utility.py:40
+#: TinyMCE/interfaces/utility.py:61
 msgid "Editor height"
 msgstr "エディタ高"
 
-#: ../interfaces/utility.py:34
+#: TinyMCE/interfaces/utility.py:55
 msgid "Editor width"
 msgstr "エディタ幅"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:28
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:28
 msgid "Email"
 msgstr ""
 
-#: ../interfaces/utility.py:235
+#: TinyMCE/interfaces/utility.py:266
 msgid "Emotions"
 msgstr "表情アイコン"
 
-#: ../interfaces/utility.py:28
+#: TinyMCE/interfaces/utility.py:49
 msgid "Enable auto resizing of the editor window."
 msgstr "エディタ枠の自動サイズ調整を有効にする"
 
-#: ../interfaces/utility.py:45
+#: TinyMCE/interfaces/utility.py:66
 msgid "Enable contextmenu"
 msgstr ""
 
-#: ../interfaces/utility.py:23
+#: TinyMCE/interfaces/utility.py:44
 msgid "Enable resizing the editor window."
 msgstr "エディタ枠のサイズ調整を有効にする"
 
-#: ../interfaces/utility.py:374
+#: TinyMCE/interfaces/utility.py:82
+msgid "Enter a JSON-formatted style format configuration. A format is for example the style that get applied when you press the bold button inside the editor. See http://www.tinymce.com/wiki.php/Configuration:formats"
+msgstr ""
+
+#: TinyMCE/interfaces/utility.py:410
 msgid "Enter a list of content types which can be linked. Format is one contenttype per line."
 msgstr "リンクされるコンテンツタイプのリストを入れてください。１行につき１コンテンツタイプを書きます。"
 
-#: ../interfaces/utility.py:379
+#: TinyMCE/interfaces/utility.py:415
 msgid "Enter a list of content types which can be used as images. Format is one contenttype per line."
 msgstr "画像として使われるコンテンツタイプのリストを入れてください。１行につき１コンテンツタイプを書きます。"
 
-#: ../interfaces/utility.py:369
+#: TinyMCE/interfaces/utility.py:405
 msgid "Enter a list of content types which can contain anchors. Format is one contenttype per line."
 msgstr "アンカーを含むコンテンツタイプのリストを入れてください。１行につき１コンテンツタイプを書きます。"
 
-#: ../interfaces/utility.py:364
+#: TinyMCE/interfaces/utility.py:400
 msgid "Enter a list of content types which can contain other objects. Format is one contenttype per line."
 msgstr "他のオブジェクトを含むコンテンツタイプのリストを入力してください。１行につき１コンテンツタイプを書きます。"
 
-#: ../interfaces/utility.py:394
+#: TinyMCE/interfaces/utility.py:430
 msgid "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
 msgstr "エディタにロードされるカスタムプラグインのリストを入れてください。１行につき１つのプラグイン名かプラグイン名|場所を書きます。"
 
-#: ../interfaces/utility.py:288
+#: TinyMCE/interfaces/utility.py:319
 msgid "Enter a list of custom toolbar buttons which will be loaded in the editor, one per line."
 msgstr "エディタにロードされるカスタムツールバーボタンのリストを入れてください。１行につき一つ書きます。"
 
-#: ../interfaces/utility.py:56
+#: TinyMCE/interfaces/utility.py:77
 msgid "Enter a list of styles to appear in the style pulldown. Format is title|tag or title|tag|className, one per line."
 msgstr "スタイルプルダウンに現れるスタイルのリストを入れてください。１行につきタイトル|タグまたはタイトル|クラス名を書きます。"
 
-#: ../interfaces/utility.py:61
+#: TinyMCE/interfaces/utility.py:92
 msgid "Enter a list of styles to appear in the table style pulldown. Format is title|class, one per line."
 msgstr "表スタイルプルダウンに現れるスタイルのリストを入力してください。１行につき１つのタイトル|クラスを書きます。"
 
-#: ../interfaces/utility.py:398
+#: TinyMCE/interfaces/utility.py:434
 msgid "Entity encoding"
 msgstr "エンコーディング"
 
@@ -250,18 +262,14 @@ msgid "Even row"
 msgstr "偶数行"
 
 #. Default: "External"
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:24
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:24
 msgid "External"
 msgstr "外部"
 
 #. Default: "External link"
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:172
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:201
 msgid "External link"
 msgstr "外部リンク"
-
-#: ../interfaces/utility.py:439
-msgid "External link preview"
-msgstr ""
 
 msgid "Fancy grid listing"
 msgstr "装飾的な枠線つき一覧"
@@ -272,17 +280,21 @@ msgstr "装飾的な一覧"
 msgid "Fancy vertical listing"
 msgstr "装飾的な縦の一覧"
 
-#: ../interfaces/utility.py:111
+#: TinyMCE/interfaces/utility.py:142
 msgid "Find"
 msgstr "検索"
 
-#: ../interfaces/utility.py:115
+#: TinyMCE/interfaces/utility.py:146
 msgid "Find/Replace"
 msgstr "検索/置換"
 
-#: ../interfaces/utility.py:147
+#: TinyMCE/interfaces/utility.py:178
 msgid "Forecolor"
 msgstr "文字色"
+
+#: TinyMCE/interfaces/utility.py:81
+msgid "Formats"
+msgstr ""
 
 msgid "Heading"
 msgstr "見出し"
@@ -294,141 +306,153 @@ msgid "Highlight"
 msgstr "ハイライト"
 
 #. Default: "Home"
-#: ../shortcut.py:21
+#: TinyMCE/shortcut.py:20
 msgid "Home"
 msgstr "ホーム"
 
-#: ../utility.py:735
+#: TinyMCE/utility.py:762
 msgid "Image Browser"
 msgstr ""
 
-#: ../interfaces/utility.py:378
+#: TinyMCE/interfaces/utility.py:414
 msgid "Image Objects"
 msgstr "画像オブジェクト"
 
-#: ../interfaces/utility.py:417
+#: TinyMCE/interfaces/utility.py:453
 msgid "Image Shortcuts"
 msgstr ""
 
-#: ../interfaces/utility.py:354
+#: TinyMCE/interfaces/utility.py:390
 msgid "Images will be automatically captioned."
 msgstr "画像にキャプションが自動的に付けられます"
 
-#: ../interfaces/utility.py:187
+#: TinyMCE/interfaces/utility.py:218
 msgid "Indent"
 msgstr "インデント"
 
 #. Default: "Inline"
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:100
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:100
 msgid "Inline"
 msgstr "インライン"
 
-#: ../interfaces/utility.py:223
+#: TinyMCE/interfaces/utility.py:254
 msgid "Insert advanced horizontal ruler"
 msgstr "カスタム水平線を挿入する"
 
-#: ../interfaces/utility.py:215
+#: TinyMCE/interfaces/utility.py:246
 msgid "Insert custom character"
 msgstr "特殊文字を挿入する"
 
-#: ../interfaces/utility.py:227
+#: TinyMCE/interfaces/utility.py:258
 msgid "Insert date"
 msgstr "日付を挿入する"
 
-#: ../interfaces/utility.py:219
+#: TinyMCE/interfaces/utility.py:250
 msgid "Insert horizontal ruler"
 msgstr "水平線を挿入する"
 
-#: ../interfaces/utility.py:239
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:171
+msgid "Insert image from URL"
+msgstr ""
+
+#: TinyMCE/interfaces/utility.py:270
 msgid "Insert non-breaking space character"
 msgstr "改行なしスペースを挿入する"
 
-#: ../interfaces/utility.py:243
+#: TinyMCE/interfaces/utility.py:274
 msgid "Insert page break"
 msgstr "改ページを挿入する"
 
-#: ../interfaces/utility.py:231
+#: TinyMCE/interfaces/utility.py:262
 msgid "Insert time"
 msgstr "時間を挿入する"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:5
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:5
 msgid "Insert/Edit"
 msgstr ""
 
-#: ../interfaces/utility.py:203
+#: TinyMCE/interfaces/utility.py:234
 msgid "Insert/edit anchor"
 msgstr "アンカーを挿入/編集する"
 
-#: ../interfaces/utility.py:275
+#: TinyMCE/interfaces/utility.py:306
 msgid "Insert/edit attributes"
 msgstr "アトリビュートを挿入/編集する"
 
-#: ../interfaces/utility.py:207
+#: TinyMCE/interfaces/utility.py:238
 msgid "Insert/edit image"
 msgstr "画像を挿入/編集する"
 
-#: ../interfaces/utility.py:195
+#: TinyMCE/interfaces/utility.py:226
 msgid "Insert/edit link"
 msgstr "リンクを挿入/編集する"
 
-#: ../interfaces/utility.py:211
+#: TinyMCE/interfaces/utility.py:242
 msgid "Insert/edit media"
 msgstr "メディアを挿入/編集する"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:20
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:20
 msgid "Internal"
 msgstr ""
 
 msgid "Invisible grid"
 msgstr "見えないグリッド"
 
-#: ../interfaces/utility.py:127
+#: TinyMCE/interfaces/utility.py:158
 msgid "Italic"
 msgstr "イタリック"
 
-#: ../browser/controlpanel.py:24
+#: TinyMCE/browser/controlpanel.py:34
 msgid "Layout"
 msgstr "レイアウト"
 
 #. Default: "Libraries"
-#: ../browser/controlpanel.py:32
+#: TinyMCE/browser/controlpanel.py:42
 msgid "Libraries"
 msgstr "ライブラリ"
 
-#: ../utility.py:736
+#: TinyMCE/utility.py:763
 msgid "Link Browser"
 msgstr ""
 
-#: ../interfaces/utility.py:409
+#: TinyMCE/interfaces/utility.py:445
 msgid "Link Shortcuts"
 msgstr ""
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:254
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:277
 msgid "Link Title"
 msgstr ""
 
 #. Default: "Link to anchor"
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:225
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:250
 msgid "Link to anchor"
 msgstr "アンカーへリンク"
 
-#: ../interfaces/utility.py:373
+#: TinyMCE/interfaces/utility.py:384
+msgid "Link using UIDs"
+msgstr ""
+
+#: TinyMCE/interfaces/utility.py:409
 msgid "Linkable Objects"
 msgstr "リンク可能なオブジェクト"
 
-#: ../interfaces/utility.py:418
-msgid "List of shortcuts to appear in image browser for quick navigation"
+#: TinyMCE/interfaces/utility.py:385
+msgid "Links to objects on this site can use unique object ids so that the links remain valid even if the target object is renamed or moved elsewhere on the site."
 msgstr ""
 
-#: ../interfaces/utility.py:410
+#: TinyMCE/interfaces/utility.py:454
+msgid "List of shortcuts to appear in image browser for quick navigation."
+msgstr ""
+
+#: TinyMCE/interfaces/utility.py:446
 msgid "List of shortcuts to appear in link browser for quick navigation."
 msgstr ""
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:48
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:48
 msgid "List view"
 msgstr ""
 
-#: ../utility.py:746
+#: TinyMCE/utility.py:773
 msgid "Lists"
 msgstr "リスト"
 
@@ -441,168 +465,177 @@ msgstr ""
 msgid "Lower Roman"
 msgstr ""
 
-#: ../interfaces/utility.py:440
-msgid "Modern browsers allow webpages to block such feature. Some webpages may not be displayed in the preview."
+#: TinyMCE/interfaces/utility.py:31
+msgid "Must be empty or a valid JSON-formatted  configuration – ${message}."
 msgstr ""
 
-#: ../interfaces/utility.py:401
+#: TinyMCE/interfaces/utility.py:437
 msgid "Named"
 msgstr ""
 
-#: ../utility.py:749
+#: TinyMCE/utility.py:776
 msgid "No anchors in this page"
 msgstr ""
 
-#: ../utility.py:748
+#: TinyMCE/utility.py:775
 msgid "No items in this folder"
 msgstr ""
 
-#: ../utility.py:740
+#: TinyMCE/utility.py:767
 msgid "Normal paragraph"
 msgstr ""
 
-#: ../interfaces/utility.py:432
+#: TinyMCE/adapters/Upload.py:141
+msgid "Not allowed to upload a file of this type to this folder"
+msgstr ""
+
+#: TinyMCE/interfaces/utility.py:468
 msgid "Number of columns in thumbnails mode"
 msgstr ""
 
 msgid "Numbers"
 msgstr ""
 
-#: ../interfaces/utility.py:401
+#: TinyMCE/interfaces/utility.py:437
 msgid "Numeric"
 msgstr ""
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:244
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:267
 msgid "OK"
 msgstr ""
 
 msgid "Odd row"
 msgstr "奇数行"
 
-#: ../interfaces/utility.py:175
+#: TinyMCE/interfaces/utility.py:206
 msgid "Ordered list"
 msgstr "順序つきリスト"
 
-#: ../utility.py:188
+#: TinyMCE/utility.py:192
 msgid "Original"
 msgstr ""
 
-#: ../interfaces/utility.py:183
+#: TinyMCE/interfaces/utility.py:214
 msgid "Outdent"
 msgstr "インデント解除"
 
 msgid "Page break (print only)"
 msgstr "改ページ（印刷時有効）"
 
-#: ../interfaces/utility.py:91
+#: TinyMCE/interfaces/utility.py:122
 msgid "Paste"
 msgstr "ペースト"
 
-#: ../interfaces/utility.py:95
+#: TinyMCE/interfaces/utility.py:126
 msgid "Paste as Plain Text"
 msgstr "プレーンテキストとしてペースト"
 
-#: ../interfaces/utility.py:99
+#: TinyMCE/interfaces/utility.py:130
 msgid "Paste from Word"
 msgstr "Wordからペースト"
 
-#: ../interfaces/utility.py:74
+#: TinyMCE/interfaces/utility.py:105
 msgid "Place toolbar on top of the page"
 msgstr ""
 
-#: ../utility.py:741
+#: TinyMCE/utility.py:768
 msgid "Plain cell"
 msgstr ""
 
 #. Default: "Preview"
-#: ../interfaces/utility.py:251
+#: TinyMCE/interfaces/utility.py:282
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:184
 msgid "Preview"
 msgstr "プレビュー"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:192
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:220
 msgid "Preview URL"
 msgstr ""
 
-#: ../interfaces/utility.py:247
-#: ../utility.py:747
+#: TinyMCE/interfaces/utility.py:278
+#: TinyMCE/utility.py:774
 msgid "Print"
 msgstr "印刷"
 
 msgid "Pull-quote"
 msgstr ""
 
-#: ../interfaces/utility.py:401
+#: TinyMCE/interfaces/utility.py:437
 msgid "Raw"
 msgstr ""
 
-#: ../interfaces/utility.py:107
+#: TinyMCE/interfaces/utility.py:138
 msgid "Redo"
 msgstr "再実行"
 
-#: ../interfaces/utility.py:259
+#: TinyMCE/interfaces/utility.py:290
 msgid "Remove formatting"
 msgstr "フォーマット解除"
 
-#: ../browser/controlpanel.py:36
+#: TinyMCE/browser/controlpanel.py:46
 msgid "Resource Types"
 msgstr "リソースタイプ"
 
-#: ../interfaces/utility.py:358
+#: TinyMCE/interfaces/utility.py:394
 msgid "Rooted to current object"
 msgstr "現在のオブジェクトをルートにする"
 
-#: ../interfaces/utility.py:79
+#: TinyMCE/interfaces/utility.py:110
 msgid "Save"
 msgstr "保存"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:44
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:44
 msgid "Search"
 msgstr ""
 
-#: ../utility.py:752
+#: TinyMCE/utility.py:779
 msgid "Search results:"
 msgstr ""
 
-#: ../interfaces/utility.py:119
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:42
+msgid "Search site"
+msgstr ""
+
+#: TinyMCE/interfaces/utility.py:150
 msgid "Select Style"
 msgstr "スタイルを選ぶ"
 
-#: ../utility.py:745
+#: TinyMCE/utility.py:772
 msgid "Selection"
 msgstr "範囲選択"
 
-#: ../browser/controlpanel.py:51
+#: TinyMCE/browser/controlpanel.py:61
 msgid "Settings for the TinyMCE Wysiwyg editor."
 msgstr "TinyMCE WYSIWYGエディタの設定"
 
-#: ../utility.py:751
+#: TinyMCE/utility.py:778
 msgid "Shortcuts"
 msgstr ""
 
-#: ../interfaces/utility.py:255
+#: TinyMCE/interfaces/utility.py:286
 msgid "Spellchecker"
 msgstr "スペルチェッカー"
 
-#: ../interfaces/utility.py:296
+#: TinyMCE/interfaces/utility.py:327
 msgid "Spellchecker plugin to use"
 msgstr ""
 
 msgid "Square"
 msgstr "■（四角）"
 
-#: ../interfaces/utility.py:135
+#: TinyMCE/interfaces/utility.py:166
 msgid "Strikethrough"
 msgstr "打ち消し線"
 
-#: ../utility.py:742
+#: TinyMCE/utility.py:769
 msgid "Style..."
 msgstr "スタイル..."
 
-#: ../interfaces/utility.py:55
+#: TinyMCE/interfaces/utility.py:76
 msgid "Styles"
 msgstr "スタイル"
 
-#: ../skins/tinymce/plugins/table/table.htm.pt:33
+#: TinyMCE/skins/tinymce/plugins/table/table.htm.pt:33
 msgid "Subdued grid"
 msgstr "落ち着いた感じの枠線"
 
@@ -610,135 +643,139 @@ msgid "Subheading"
 msgstr "副見出し"
 
 #. Default: "Subject"
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:214
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:241
 msgid "Subject"
 msgstr ""
 
-#: ../interfaces/utility.py:139
+#: TinyMCE/interfaces/utility.py:170
 msgid "Subscript"
 msgstr "下つき文字"
 
-#: ../interfaces/utility.py:143
+#: TinyMCE/interfaces/utility.py:174
 msgid "Superscript"
 msgstr "上つき文字"
 
-#: ../interfaces/utility.py:191
+#: TinyMCE/interfaces/utility.py:222
 msgid "Table controls"
 msgstr "表"
 
-#: ../interfaces/utility.py:60
+#: TinyMCE/interfaces/utility.py:91
 msgid "Table styles"
 msgstr "表スタイル"
 
-#: ../utility.py:744
+#: TinyMCE/utility.py:771
 msgid "Tables"
 msgstr ""
 
-#: ../utility.py:743
+#: TinyMCE/utility.py:770
 msgid "Text"
 msgstr "テキスト"
 
-#: ../interfaces/utility.py:297
+#: TinyMCE/adapters/Upload.py:166
+msgid "The content-type '%s' has no image-field!"
+msgstr ""
+
+#: TinyMCE/interfaces/utility.py:328
 msgid "This option allows you to choose the spellchecker for TinyMCE. If you want the spellchecker button to be visible, make sure it is enabled in the toolbar settings."
 msgstr ""
 
-#: ../interfaces/utility.py:399
+#: TinyMCE/interfaces/utility.py:435
 msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
 msgstr "このオプションはエンティティ/文字が処理される方法を制御します。Named: 文字はエンティティオプションを基にして名前つきエンティティに変換されます。Numeric: 文字は数値エンティティに変換されます。Raw: すべての文字は非エンティティ形式で格納されます。ただし次のようなXMLデフォルトエンティティは除きます: amp lt gt quot"
 
-#: ../interfaces/utility.py:75
+#: TinyMCE/interfaces/utility.py:106
 msgid "This option enables the external toolbar which will be placed at the top of the page."
 msgstr "このオプションは外部ツールバーを有効にします。外部ツールバーはページの上部に配置されます。"
 
-#: ../interfaces/utility.py:51
+#: TinyMCE/interfaces/utility.py:72
 msgid "This option enables you to specify a custom CSS file that replaces the theme content CSS. This CSS file is the one used within the editor (the editable area)."
 msgstr "エディタ領域に通常と違うスタイルを使いたい場合、以下にCSSファイル名を指定してください。このCSSファイルはエディタ（編集領域）の中でのみ有効です。"
 
-#: ../interfaces/utility.py:29
+#: TinyMCE/interfaces/utility.py:50
 msgid "This option gives you the ability to enable/disable auto resizing the editor window depending on the content."
 msgstr "このオプションを使って、エディタ枠の自動サイズ調整を有効/無効にすることができます。有効であればコンテンツに応じて枠の大きさが自動調整されます。"
 
-#: ../interfaces/utility.py:24
+#: TinyMCE/interfaces/utility.py:45
 msgid "This option gives you the ability to enable/disable resizing the editor window. If the editor width is set to a percentage only vertical resizing is enabled."
 msgstr "このオプションを使って、エディタ枠のサイズを変更可能/変更不能にすることができます。もしエディタ幅がパーセンテージに設定されているのであれば、縦のサイズ変更が有効になっています。"
 
-#: ../interfaces/utility.py:46
+#: TinyMCE/interfaces/utility.py:67
 msgid "This option gives you the ability to enable/disable the use of the contextmenu."
 msgstr "このオプションを使って、コンテクストメニューの利用を有効/無効にします。"
 
-#: ../interfaces/utility.py:41
+#: TinyMCE/interfaces/utility.py:62
 msgid "This option gives you the ability to specify the height of the editor in pixels. If auto resize is enabled this value is used as minimum height."
 msgstr "このオプションを使って、エディタの高さをピクセル単位で指定することができます。自動サイズ調整が有効になっていれば、この値は高さの最小値として使われます。"
 
-#: ../interfaces/utility.py:35
+#: TinyMCE/interfaces/utility.py:56
 msgid "This option gives you the ability to specify the width of the editor (like 100% or 400px)."
 msgstr ""
 
-#: ../interfaces/utility.py:70
+#: TinyMCE/interfaces/utility.py:101
 msgid "This option gives you the ability to specify the width of the toolbar in pixels."
 msgstr "このオプションを使って、ツールバーの幅をピクセル単位で指定することができます。"
 
-#: ../interfaces/utility.py:425
+#: TinyMCE/interfaces/utility.py:461
 msgid "Thumbnail size in thumbnails mode"
 msgstr ""
 
 #. Default: "TinyMCE"
-#: ../profiles/upgrade_10_to_11/controlpanel.xml
+#: TinyMCE/profiles/upgrade_10_to_11/controlpanel.xml
 msgid "TinyMCE"
 msgstr "TinyMCE"
 
-#: ../browser/controlpanel.py:50
+#: TinyMCE/browser/controlpanel.py:60
 msgid "TinyMCE Settings"
 msgstr "TinyMCE 設定"
 
 #. Default: "TinyMCE Visual Editor"
-#: ../profiles/default/controlpanel.xml
-#: ../profiles/upgrade_10_to_11/controlpanel.xml
+#: TinyMCE/profiles/default/controlpanel.xml
+#: TinyMCE/profiles/upgrade_10_to_11/controlpanel.xml
 msgid "TinyMCE Visual Editor"
 msgstr "TinyMCE ビジュアルエディタ"
 
 #. Default: "Title"
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:76
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:76
 msgid "Title"
 msgstr "タイトル"
 
-#: ../interfaces/utility.py:283
+#: TinyMCE/interfaces/utility.py:314
 msgid "Toggle fullscreen mode"
 msgstr "全画面モード切替"
 
-#: ../interfaces/utility.py:267
+#: TinyMCE/interfaces/utility.py:298
 msgid "Toggle guidelines/invisible objects"
 msgstr ""
 
-#: ../browser/controlpanel.py:28
+#: TinyMCE/browser/controlpanel.py:38
 msgid "Toolbar"
 msgstr "ツールバー"
 
-#: ../interfaces/utility.py:69
+#: TinyMCE/interfaces/utility.py:100
 msgid "Toolbar width"
 msgstr "ツールバー幅"
 
-#: ../interfaces/utility.py:131
+#: TinyMCE/interfaces/utility.py:162
 msgid "Underline"
 msgstr "下線"
 
-#: ../interfaces/utility.py:103
+#: TinyMCE/interfaces/utility.py:134
 msgid "Undo"
 msgstr "元に戻す"
 
-#: ../interfaces/utility.py:199
+#: TinyMCE/interfaces/utility.py:230
 msgid "Unlink"
 msgstr "リンク解除"
 
-#: ../interfaces/utility.py:171
+#: TinyMCE/interfaces/utility.py:202
 msgid "Unordered list"
 msgstr "順序なしリスト"
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:160
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:160
 msgid "Upload"
 msgstr ""
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:133
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:133
 msgid "Upload File"
 msgstr ""
 
@@ -748,59 +785,59 @@ msgstr ""
 msgid "Upper Roman"
 msgstr ""
 
-#: ../interfaces/utility.py:271
+#: TinyMCE/interfaces/utility.py:302
 msgid "Visual control characters on/off"
 msgstr ""
 
-#: ../interfaces/utility.py:359
+#: TinyMCE/interfaces/utility.py:395
 msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
 msgstr ""
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:58
-#: ../utility.py:753
-msgid "You are here:"
+#. Default: "A CSS level 3 pattern used to match elements that can serve as anchors. The default value is to match headings."
+#: TinyMCE/interfaces/utility.py:476
+msgid "help_anchor_selector"
 msgstr ""
 
 #. Default: "The URL of the \"After the Deadline\" grammar and spell checking server. The default value is the public server, but ideally you should download and install your own and specify its address here."
-#: ../interfaces/utility.py:339
+#: TinyMCE/interfaces/utility.py:370
 msgid "help_atd_service_url"
 msgstr ""
 
 #. Default: "A list of error types which the \"After the Deadline\" spellchecker should check for. By default, all the available error type will be listed here."
-#: ../interfaces/utility.py:326
+#: TinyMCE/interfaces/utility.py:357
 msgid "help_atderrortypes_to_show"
 msgstr ""
 
 #. Default: "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
-#: ../interfaces/utility.py:384
+#: TinyMCE/interfaces/utility.py:420
 msgid "help_tinymce_plugins"
 msgstr ""
 
-#: ../interfaces/utility.py:306
+#: TinyMCE/interfaces/utility.py:337
 msgid "ieSpell (free for personal use)"
 msgstr ""
 
 #. Default: "A list of strings which the \"After the Deadline\"spellchecker should ignore. Note: This option is only applicable when the appropriate spellchecker has been chosen above."
-#: ../interfaces/utility.py:315
+#: TinyMCE/interfaces/utility.py:346
 msgid "label_atd_ignore_strings"
 msgstr ""
 
 #. Default: "Editor Plugins"
-#: ../interfaces/utility.py:383
+#: TinyMCE/interfaces/utility.py:419
 msgid "label_tinymce_plugins"
 msgstr ""
 
-#: ../skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:154
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:154
 msgid "or External URL"
 msgstr ""
 
 #. Default: "Edit without visual editor"
-#: ../skins/tinymce/tinymce_wysiwyg_support.pt:27
+#: TinyMCE/skins/tinymce/tinymce_wysiwyg_support.pt:33
 msgid "suppress_visual_editor"
 msgstr ""
 
 #. Default: "Edit with visual editor"
-#: ../skins/tinymce/tinymce_wysiwyg_support.pt:35
+#: TinyMCE/skins/tinymce/tinymce_wysiwyg_support.pt:41
 msgid "suppress_visual_editor_with"
 msgstr ""
 
