@@ -5,8 +5,8 @@ HISTORY
 1.3.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- Added some missing Dutch translations
+  [maartenkling]
 
 1.3.3 (2013-03-26)
 ------------------
@@ -95,7 +95,7 @@ HISTORY
 - works with or without plone.init.js (from plone.app.toolbar)
   [garbas]
 
-- works when initialized inside bootstrap moda 
+- works when initialized inside bootstrap moda
   [garbas]
 
 - Fixed UnboundLocalError if the context of the editor is neither IFolderish nor Archetypes
@@ -1504,4 +1504,3 @@ HISTORY
 
 - Get minimal functionality.
   [turgmr2]
-
