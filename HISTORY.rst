@@ -8,6 +8,9 @@ HISTORY
 - Added some missing Dutch translations
   [maartenkling]
 
+- Fiexed chinese language variant issues
+  [jianaijun]
+
 1.3.3 (2013-03-26)
 ------------------
 
