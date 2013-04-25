@@ -5,17 +5,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "POT-Creation-Date: 2013-04-12 11:46+0000\n"
-"PO-Revision-Date: 2010-08-30 15:46+0300\n"
-"Last-Translator: Olha <olha.pelishok@gmail.com>\n"
+"PO-Revision-Date: 2013-04-25 15:31+0300\n"
+"Last-Translator: Roman Kozlovskyi <krzroman@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone.tinymce\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: TinyMCE/utility.py:766
 msgid "(remove style)"
@@ -23,15 +24,15 @@ msgstr "(видалити стиль)"
 
 #: TinyMCE/utility.py:765
 msgid "Add new File"
-msgstr ""
+msgstr "Додати новий файл"
 
 #: TinyMCE/utility.py:764
 msgid "Add new Image"
-msgstr ""
+msgstr "Додати нове зображення"
 
 #: TinyMCE/interfaces/utility.py:339
 msgid "After the deadline (FLOSS)"
-msgstr ""
+msgstr "Перевірка правопису за допомогою After the Deadline (ВВПЗ)"
 
 #: TinyMCE/interfaces/utility.py:190
 msgid "Align center"
@@ -55,11 +56,11 @@ msgstr "Дозволити підпис зображень"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:32
 msgid "Anchor"
-msgstr ""
+msgstr "Якір"
 
 #: TinyMCE/interfaces/utility.py:475
 msgid "Anchor selector expression"
-msgstr ""
+msgstr "Вираз селектора якоря"
 
 #: TinyMCE/interfaces/utility.py:356
 msgid "AtD Error types to show"
@@ -79,7 +80,7 @@ msgstr "Колір фону"
 
 #: TinyMCE/adapters/Upload.py:138
 msgid "Bad filename, please rename."
-msgstr ""
+msgstr "Не правильне ім'я файлу, перейменуйте."
 
 #: TinyMCE/interfaces/utility.py:154
 msgid "Bold"
@@ -87,14 +88,14 @@ msgstr "Напівжирний"
 
 #: TinyMCE/utility.py:777
 msgid "Browser"
-msgstr ""
+msgstr "Браузер"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:297
 msgid "CSS Style"
-msgstr ""
+msgstr "стиль CSS "
 
 msgid "Call-out"
-msgstr ""
+msgstr "Примітка"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:92
 msgid "Caption"
@@ -113,7 +114,7 @@ msgstr "Очистити брудний код"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:43
 msgid "Clear"
-msgstr ""
+msgstr "Очистити"
 
 msgid "Clear floats"
 msgstr "Очистити стилі"
@@ -128,7 +129,7 @@ msgstr "Містить об'єкти"
 
 #: TinyMCE/browser/controlpanel.py:50
 msgid "Content Browser"
-msgstr ""
+msgstr "Переглядач вмісту"
 
 #: TinyMCE/interfaces/utility.py:118
 msgid "Copy"
@@ -152,7 +153,7 @@ msgstr "Вирізати"
 
 #: TinyMCE/interfaces/utility.py:335
 msgid "Default browser spellchecker"
-msgstr ""
+msgstr "Типова програма перевірки правопису браузера"
 
 msgid "Definition description"
 msgstr "Опис визначення"
@@ -170,7 +171,7 @@ msgstr "Опис"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:67
 msgid "Details"
-msgstr ""
+msgstr "Деталі"
 
 msgid "Disc"
 msgstr "Диск"
@@ -196,7 +197,7 @@ msgstr "Ширина редактора"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:28
 msgid "Email"
-msgstr ""
+msgstr "Електронна пошта"
 
 #: TinyMCE/interfaces/utility.py:266
 msgid "Emotions"
@@ -208,7 +209,7 @@ msgstr "Увімкнути можливість автоматичної змі�
 
 #: TinyMCE/interfaces/utility.py:66
 msgid "Enable contextmenu"
-msgstr ""
+msgstr "Включити контекстне меню"
 
 #: TinyMCE/interfaces/utility.py:44
 msgid "Enable resizing the editor window."
@@ -290,7 +291,7 @@ msgstr "Колір тексту"
 
 #: TinyMCE/interfaces/utility.py:81
 msgid "Formats"
-msgstr ""
+msgstr "Формати"
 
 msgid "Heading"
 msgstr "Заголовок"
@@ -307,7 +308,7 @@ msgstr "Головна"
 
 #: TinyMCE/utility.py:762
 msgid "Image Browser"
-msgstr ""
+msgstr "Переглядач зображень"
 
 #: TinyMCE/interfaces/utility.py:414
 msgid "Image Objects"
@@ -347,7 +348,7 @@ msgstr "Вставити горизонтальний роздільник"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:171
 msgid "Insert image from URL"
-msgstr ""
+msgstr "Вставити зображення за URL"
 
 #: TinyMCE/interfaces/utility.py:270
 msgid "Insert non-breaking space character"
@@ -363,7 +364,7 @@ msgstr "Вставити час"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:5
 msgid "Insert/Edit"
-msgstr ""
+msgstr "Вставити/Редагувати"
 
 #: TinyMCE/interfaces/utility.py:234
 msgid "Insert/edit anchor"
@@ -387,7 +388,7 @@ msgstr "Вставити/редагувати медіа об'єкт"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:20
 msgid "Internal"
-msgstr ""
+msgstr "Внутрішні посилання"
 
 msgid "Invisible grid"
 msgstr "Невидима сітка"
@@ -442,7 +443,7 @@ msgstr ""
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:48
 msgid "List view"
-msgstr ""
+msgstr "Перегляд списком"
 
 #: TinyMCE/utility.py:773
 msgid "Lists"
@@ -458,7 +459,7 @@ msgid "Lower Roman"
 msgstr "Маленькі римські букви"
 
 #: TinyMCE/interfaces/utility.py:31
-msgid "Must be empty or a valid JSON-formatted  configuration – ${message}."
+msgid "Must be empty or a valid JSON-formatted configuration – ${message}."
 msgstr ""
 
 #: TinyMCE/interfaces/utility.py:437
@@ -501,7 +502,7 @@ msgstr "Непарний рядок"
 
 #: TinyMCE/interfaces/utility.py:206
 msgid "Ordered list"
-msgstr "Пронумерований  список"
+msgstr "Пронумерований список"
 
 #: TinyMCE/utility.py:192
 msgid "Original"
@@ -541,7 +542,7 @@ msgstr "Перегляд"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:220
 msgid "Preview URL"
-msgstr ""
+msgstr "Показати адресу URL"
 
 #: TinyMCE/interfaces/utility.py:278
 #: TinyMCE/utility.py:774
@@ -577,11 +578,11 @@ msgstr "Зберегти"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:44
 msgid "Search"
-msgstr ""
+msgstr "Пошук"
 
 #: TinyMCE/utility.py:779
 msgid "Search results:"
-msgstr ""
+msgstr "Результати пошуку:"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:42
 msgid "Search site"
@@ -636,7 +637,7 @@ msgstr "Підзаголовок"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:241
 msgid "Subject"
-msgstr ""
+msgstr "Предмет"
 
 #: TinyMCE/interfaces/utility.py:170
 msgid "Subscript"
@@ -700,7 +701,7 @@ msgstr "Ця опція дає вам можливість вказати вис
 
 #: TinyMCE/interfaces/utility.py:56
 msgid "This option gives you the ability to specify the width of the editor (like 100% or 400px)."
-msgstr ""
+msgstr "Цей параметр дозволяє встановити ширину вікна редактора (100% чи 400px)"
 
 #: TinyMCE/interfaces/utility.py:101
 msgid "This option gives you the ability to specify the width of the toolbar in pixels."
@@ -761,11 +762,11 @@ msgstr "Ненумерований список"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:160
 msgid "Upload"
-msgstr ""
+msgstr "Вивантажити"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:133
 msgid "Upload File"
-msgstr ""
+msgstr "Вивантажити файл"
 
 msgid "Upper Alpha"
 msgstr "Великі букви"
@@ -779,7 +780,7 @@ msgstr "Увімкнути/вимкнути візуальний контрол�
 
 #: TinyMCE/interfaces/utility.py:395
 msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
-msgstr "Якщо увімкнено, то користувача буде прив'язано до поточного об'єкту і не буде можливості додати посилання та зображення з інших частин сайту."
+msgstr "Якщо увімкнено, то користувача буде прив'язано до поточного об'єкту і він не зможе додати посилання та зображення з інших частин сайту."
 
 #. Default: "A CSS level 3 pattern used to match elements that can serve as anchors. The default value is to match headings."
 #: TinyMCE/interfaces/utility.py:476
@@ -799,33 +800,33 @@ msgstr ""
 #. Default: "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
 #: TinyMCE/interfaces/utility.py:420
 msgid "help_tinymce_plugins"
-msgstr ""
+msgstr "Введіть список власних додатків, які буде завантажено у редактор. Формат вводу назва додатка або назва додатка|розташування, кожен з нового рядка."
 
 #: TinyMCE/interfaces/utility.py:337
 msgid "ieSpell (free for personal use)"
-msgstr ""
+msgstr "перевірка правопису за допомогою ieSpell"
 
 #. Default: "A list of strings which the \"After the Deadline\"spellchecker should ignore. Note: This option is only applicable when the appropriate spellchecker has been chosen above."
 #: TinyMCE/interfaces/utility.py:346
 msgid "label_atd_ignore_strings"
-msgstr ""
+msgstr "Список слів, які під час перевірки правопису не будуть враховуватись. Примітка: Цей параметр працює лише за умови, що обрано програму After the Deadline."
 
 #. Default: "Editor Plugins"
 #: TinyMCE/interfaces/utility.py:419
 msgid "label_tinymce_plugins"
-msgstr ""
+msgstr "Додатки редактора"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:154
 msgid "or External URL"
-msgstr ""
+msgstr "або Зовнішнє посилання"
 
 #. Default: "Edit without visual editor"
 #: TinyMCE/skins/tinymce/tinymce_wysiwyg_support.pt:33
 msgid "suppress_visual_editor"
-msgstr ""
+msgstr "Редагувати без наочного редактора"
 
 #. Default: "Edit with visual editor"
 #: TinyMCE/skins/tinymce/tinymce_wysiwyg_support.pt:41
 msgid "suppress_visual_editor_with"
-msgstr ""
+msgstr "Редагувати за допомогою наочного редактора"
 
