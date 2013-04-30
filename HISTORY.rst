@@ -5,6 +5,9 @@ HISTORY
 1.3.4 (unreleased)
 ------------------
 
+- Added some missing Brazilian Portuguese translations
+  [ericof]
+
 - Added some missing Dutch translations
   [maartenkling]
 
