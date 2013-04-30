@@ -33,4 +33,4 @@ class ViewTestCase(IntegrationTestCase):
         self.portal.portal_tinymce.customplugins = u"plonebrowser\ntestplugin"
         view = TinyMCECompressorView(self.portal.foobar, self.portal.REQUEST)
         view.__name__ = u'tiny_mce_gzip.js'
-        self.assertIn('testplugin', view())
+        self.assertIn('TestPlugin', view())
