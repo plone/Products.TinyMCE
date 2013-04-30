@@ -5,6 +5,10 @@ HISTORY
 1.3.4 (unreleased)
 ------------------
 
+- use unicode to return the result of compressor view.
+  This fixes UnicodeDecodeError reported on https://dev.plone.org/ticket/13551
+  [ericof]
+
 - Added some missing Dutch translations
   [maartenkling]
 
