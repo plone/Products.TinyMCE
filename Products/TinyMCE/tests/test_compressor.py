@@ -12,17 +12,25 @@ class ViewTestCase(IntegrationTestCase):
 
     def test_compressorview_basic(self):
         view = TinyMCECompressorView(self.portal.foobar, self.portal.REQUEST)
-        view.__name__ = 'tiny_mce_gzip.js'
+        view.__name__ = u'tiny_mce_gzip.js'
         self.assertTrue("(function($, Patterns, undefined) {" in view())
 
     def test_compressorview_customplugins(self):
         self.portal.foobar.REQUEST['js'] = 'true'
         self.portal.portal_tinymce.customplugins = u"plonebrowser\nplonelink|path\nploneimage"
         view = TinyMCECompressorView(self.portal.foobar, self.portal.REQUEST)
-        view.__name__ = 'tiny_mce_gzip.js'
+        view.__name__ = u'tiny_mce_gzip.js'
         self.assertIn('plonelink', view())
 
     def test_compressorview_mce_editable(self):
         view = TinyMCECompressorView(self.portal.foobar, self.portal.REQUEST)
-        view.__name__ = 'tiny_mce_gzip.js'
+        view.__name__ = u'tiny_mce_gzip.js'
         self.assertTrue('.mce_editable' in view())
+
+    def test_compressorview_customplugins_encoding(self):
+        self.portal.foobar.REQUEST['js'] = 'true'
+        self.portal.foobar.REQUEST['plugins'] = 'testplugin'
+        self.portal.portal_tinymce.customplugins = u"plonebrowser\ntestplugin"
+        view = TinyMCECompressorView(self.portal.foobar, self.portal.REQUEST)
+        view.__name__ = u'tiny_mce_gzip.js'
+        self.assertIn('testplugin', view())
