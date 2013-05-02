@@ -5,6 +5,9 @@ HISTORY
 1.3.4 (unreleased)
 ------------------
 
+- remove patterns things and only add pat-tinymce class
+  [garbas]
+
 - Added some missing Brazilian Portuguese translations
   [ericof]
 

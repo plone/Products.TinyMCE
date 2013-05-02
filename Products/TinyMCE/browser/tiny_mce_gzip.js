@@ -1,13 +1,16 @@
-(function($, Patterns, undefined) {
+(function($, undefined) {
 
-  window.initTinyMCE = function(context) {
+  window.initTinyMCE = function(context, customConfig) {
+    customConfig = customConfig || {};
 
     $('textarea.mce_editable', context).each(function() {
       var $el = $(this),
           $field = $el.parents('.field'),
           tinymceActive = false,
-          config = $.parseJSON($el.attr('data-mce-config')),
-          $textFormatSelector = $('.fieldTextFormat > select', $field);
+          $textFormatSelector = $('.fieldTextFormat > select', $field),
+          config = $.extend(true, {},
+              $.parseJSON($el.attr('data-mce-config')),
+              customConfig);
 
       $('.suppressVisualEditor', $field).hide();
       $textFormatSelector.bind('change', function(e) {
@@ -45,19 +48,7 @@
   };
 
   $(document).ready(function() {
-    if (Patterns) {
-      var PloneTinyMCE = Patterns.extend({
-        name: 'plone-tinymce',
-        jqueryPlugin: 'ploneTinymce',
-        init: function() {
-          initTinyMCE(this.$el.parent());
-        }
-      });
-    } else {
-      $(document).ready(function() {
-        window.initTinyMCE(document);
-      });
-    }
+    window.initTinyMCE(document);
   });
 
-}(window.jQuery, window.Patterns));
+}(window.jQuery));
