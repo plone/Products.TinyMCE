@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<object name="portal_skins" meta_type="Plone Skins Tools">
+ <object name="testplugin_tinymce"
+    meta_type="Filesystem Directory View"
+    directory="Products.TinyMCE.tests:skins/tinymce"/>
+ <skin-path name="*">
+  <layer name="testplugin_tinymce"
+     insert-after="custom"/>
+ </skin-path>
+</object>
+

@@ -13,6 +13,8 @@ from Products.CMFCore.utils import getToolByName
 from Products.Five import BrowserView
 from zope.component import getMultiAdapter
 
+from Products.CMFPlone.utils import safe_unicode
+
 from Products.TinyMCE.interfaces import ITinyMCECompressor
 
 
@@ -121,6 +123,9 @@ class TinyMCECompressorView(BrowserView):
 
             for lang in languages:
                 content.append(traverse("themes/%s/langs/%s.js" % (theme, lang)))
+
+        # Make sure all scripts are unicode
+        content = [safe_unicode(c) for c in content]
 
         # TODO: add additional javascripts in plugins
 
