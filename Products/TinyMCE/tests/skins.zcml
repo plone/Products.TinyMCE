@@ -1,0 +1,8 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:cmf="http://namespaces.zope.org/cmf">
+
+   <!-- File System Directory Views registration -->
+   <cmf:registerDirectory name="skins" directory="skins" recursive="True" />
+
+</configure>

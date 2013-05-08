@@ -12,6 +12,7 @@ from plone.app.testing import TEST_USER_ID
 from plone.app.testing import TEST_USER_NAME
 from plone.testing import z2
 
+
 # Test for Archetypes
 try:
     import Products.Archetypes
@@ -46,6 +47,9 @@ class TinyMCELayer(PloneSandboxLayer):
         """Set up Zope."""
         import Products.TinyMCE
         self.loadZCML(package=Products.TinyMCE)
+        import Products.TinyMCE.tests
+        self.loadZCML(package=Products.TinyMCE.tests,
+                      name='skins.zcml')
         z2.installProduct(app, 'Products.TinyMCE')
         if HAS_DX:
             self.loadZCML(package=plone.app.dexterity)
