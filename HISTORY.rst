@@ -9,6 +9,12 @@ HISTORY
   This fixes UnicodeDecodeError reported on https://dev.plone.org/ticket/13551
   [ericof]
 
+- remove patterns things and only add pat-tinymce class
+  [garbas]
+
+- Added some missing Brazilian Portuguese translations
+  [ericof]
+
 - Added some missing Dutch translations
   [maartenkling]
 
