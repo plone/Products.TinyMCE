@@ -5,6 +5,11 @@ HISTORY
 1.3.4 (unreleased)
 ------------------
 
+- Add default translation for ``you_are_here`` label. Previously,
+  this label was displayed verbatim for English and other languages without
+  a translation.
+  [davidjb]
+
 - use unicode to return the result of compressor view.
   This fixes UnicodeDecodeError reported on https://dev.plone.org/ticket/13551
   [ericof]

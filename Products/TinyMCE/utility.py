@@ -777,7 +777,7 @@ class TinyMCE(SimpleItem):
         labels['label_browser'] = translate(_('Browser'), context=request)
         labels['label_shortcuts'] = translate(_('Shortcuts'), context=request)
         labels['label_search_results'] = translate(_('Search results:'), context=request)
-        labels['label_internal_path'] = translate(PMF("you_are_here"), context=request)
+        labels['label_internal_path'] = translate(PMF("you_are_here", default="You are here:"), context=request)
         results['labels'] = labels
 
         # Add styles to results
