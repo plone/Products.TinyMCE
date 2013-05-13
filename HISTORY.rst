@@ -5,6 +5,9 @@ HISTORY
 1.3.4 (unreleased)
 ------------------
 
+- Don't rely on jquery-integration.js being active.
+  [esteele]
+  
 - Add default translation for ``you_are_here`` label. Previously,
   this label was displayed verbatim for English and other languages without
   a translation.
