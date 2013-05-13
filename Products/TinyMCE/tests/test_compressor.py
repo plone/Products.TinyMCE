@@ -13,7 +13,7 @@ class ViewTestCase(IntegrationTestCase):
     def test_compressorview_basic(self):
         view = TinyMCECompressorView(self.portal.foobar, self.portal.REQUEST)
         view.__name__ = u'tiny_mce_gzip.js'
-        self.assertTrue("(function($, Patterns, undefined) {" in view())
+        self.assertTrue("(function($, undefined) {" in view())
 
     def test_compressorview_customplugins(self):
         self.portal.foobar.REQUEST['js'] = 'true'
