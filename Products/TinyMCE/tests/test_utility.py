@@ -273,7 +273,7 @@ class UtilityTestCase(IntegrationTestCase):
         portal.invokeFactory(id='doc', type_name='Document')
         self.assertEqual(portal['doc'].checkCreationFlag(), True)
         configuration = self.utility.getConfiguration(portal['doc'])
-        self.assertEqual(configuration['document_url'], 'http://nohost/plone')
+        self.assertEqual(configuration['document_url'], portal['doc'].absolute_url())
         self.assertEqual(configuration['document_base_url'], 'http://nohost/plone/')
 
     def _parsePageConfiguration(self, browser):
