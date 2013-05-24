@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.3.4 (unreleased)
+1.3.4 (2013-05-23)
 ------------------
 
 - Don't rely on jquery-integration.js being active.
