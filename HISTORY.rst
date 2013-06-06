@@ -5,6 +5,9 @@ HISTORY
 1.3.5 (unreleased)
 ------------------
 
+- Remove bogus 'class=" "' refs https://dev.plone.org/ticket/13458
+  [maartenkling]
+
 - Include the history on http://readthedocs.org/docs/productstinymce/
   [maurits]
 
