@@ -5,6 +5,9 @@ HISTORY
 1.3.5 (unreleased)
 ------------------
 
+- Fixed language variants Toolbar does not display issue.
+  [jianaijun] 
+
 - Remove bogus 'class=" "' refs https://dev.plone.org/ticket/13458
   [maartenkling]
 

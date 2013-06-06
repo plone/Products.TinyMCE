@@ -910,8 +910,11 @@ class TinyMCE(SimpleItem):
         'pl pt ps ro ru sc sr ii si sk sl es sv ta tt te th tr tw uk ur cy vi zu'.split())
 
         if 'LANGUAGE' in context.REQUEST:
-            results['language'] = context.REQUEST.LANGUAGE[:2]
-            if results['language'] not in AVAILABLE_LANGUAGES:
+            if context.REQUEST.LANGUAGE in AVAILABLE_LANGUAGES:
+                results['language'] = context.REQUEST.LANGUAGE
+            elif context.REQUEST.LANGUAGE[:2] in AVAILABLE_LANGUAGES:
+                results['language'] = context.REQUEST.LANGUAGE[:2]
+            else:
                 results['language'] = "en"
         else:
             results['language'] = "en"
