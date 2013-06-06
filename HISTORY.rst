@@ -5,15 +5,15 @@ HISTORY
 1.3.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- Remove bogus 'class=" "' refs https://dev.plone.org/ticket/13458
+  [maartenkling]
 
 1.3.4 (2013-05-23)
 ------------------
 
 - Don't rely on jquery-integration.js being active.
   [esteele]
-  
+
 - Add default translation for ``you_are_here`` label. Previously,
   this label was displayed verbatim for English and other languages without
   a translation.
