@@ -5,7 +5,8 @@ HISTORY
 1.3.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fixed language variants Toolbar does not display issue.
+  [jianaijun] 
 
 
 1.3.4 (2013-05-23)

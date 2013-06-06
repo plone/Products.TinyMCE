@@ -907,11 +907,14 @@ class TinyMCE(SimpleItem):
         AVAILABLE_LANGUAGES = set(
         'sq ar hy az eu be bn nb bs br bg ca ch zh hr cs da dv nl en et fi fr gl '
         'ka de el gu he hi hu is id ia it ja ko lv lt lb mk ms ml mn se no nn fa '
-        'pl pt ps ro ru sc sr ii si sk sl es sv ta tt te th tr tw uk ur cy vi zu'.split())
+        'pl pt ps ro ru sc sr ii si sk sl es sv ta tt te th tr zh-cn zh-tw uk ur cy vi zu'.split())
 
         if 'LANGUAGE' in context.REQUEST:
-            results['language'] = context.REQUEST.LANGUAGE[:2]
-            if results['language'] not in AVAILABLE_LANGUAGES:
+            if context.REQUEST.LANGUAGE in AVAILABLE_LANGUAGES:
+                results['language'] = context.REQUEST.LANGUAGE
+            elif context.REQUEST.LANGUAGE[:2] in AVAILABLE_LANGUAGES:
+                results['language'] = context.REQUEST.LANGUAGE[:2]
+            else:
                 results['language'] = "en"
         else:
             results['language'] = "en"
