@@ -115,6 +115,7 @@ class JSONFolderListing(object):
                 'id': brain.getId,
                 'uid': brain.UID or None,  # Maybe Missing.Value
                 'url': brain.getURL(),
+                'review_state': brain.review_state,
                 'portal_type': brain.portal_type,
                 'normalized_type': normalizer.normalize(brain.portal_type),
                 'title': brain.Title == "" and brain.id or brain.Title,
