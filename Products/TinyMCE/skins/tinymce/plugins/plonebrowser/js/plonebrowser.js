@@ -854,7 +854,6 @@ BrowserDialog.prototype.getFolderListing = function (context_url, method) {
                                 } else {
                                     folder_html.push('<img src="img/arrow_right.png" />');
                                 }
-                                console.log(item);
                                 jq.merge(folder_html, [
                                         item.icon,
                                         '<a href="' + item.url + '" class="folderlink contenttype-' + item.normalized_type + ' state-' + item.review_state + '">',
