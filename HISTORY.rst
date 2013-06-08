@@ -5,8 +5,8 @@ HISTORY
 1.3.5 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- Updated italian translation
+  [keul]
 
 1.3.4 (2013-05-23)
 ------------------
