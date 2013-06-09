@@ -2,17 +2,17 @@
 # Jian Aijun <jianaijun@gmail.com>, 2011.
 msgid ""
 msgstr ""
-"Project-Id-Version: Products.TinyMCE\n"
+"Project-Id-Version: tinymce\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2011-05-16 11:25+0800\n"
+"PO-Revision-Date: 2013-06-09 18:33+0800\n"
 "Last-Translator: Jian Aijun <jianaijun@gmail.com>\n"
-"Language-Team: plone <plone-i18n@lists.sourceforge.net>\n"
+"Language-Team: Plone i18n <plone-i18n@lists.sf.net>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "Language-Code: zh_CN\n"
-"Language-Name: Chinese (Simplified)\n"
+"Language-Name: Chinese Simplified\n"
 "Preferred-Encodings: utf-8\n"
 "Domain: tinymce\n"
 
@@ -426,7 +426,7 @@ msgid "advanced_dlg_link_url"
 msgstr "Link URL"
 
 msgid "advanced_dlg_link_target"
-msgstr "Target"
+msgstr "目标"
 
 msgid "advanced_dlg_link_target_same"
 msgstr "Open link in the same window"
@@ -486,10 +486,10 @@ msgid "insertdatetime_day_short"
 msgstr "Sun,Mon,Tue,Wed,Thu,Fri,Sat,Sun"
 
 msgid "print_print_desc"
-msgstr "Print"
+msgstr "打印"
 
 msgid "preview_preview_desc"
-msgstr "Preview"
+msgstr "观览"
 
 msgid "directionality_ltr_desc"
 msgstr "Direction left to right"
@@ -510,10 +510,10 @@ msgid "layer_absolute_desc"
 msgstr "Toggle absolute positioning"
 
 msgid "layer_content"
-msgstr "New layer..."
+msgstr "新层..."
 
 msgid "save_save_desc"
-msgstr "Save"
+msgstr "保存"
 
 msgid "save_cancel_desc"
 msgstr "Cancel all changes"
@@ -537,10 +537,10 @@ msgid "advhr_delta_height"
 msgstr ""
 
 msgid "advhr_dlg_width"
-msgstr "Width"
+msgstr "宽度"
 
 msgid "advhr_dlg_size"
-msgstr "Height"
+msgstr "高度"
 
 msgid "advhr_dlg_noshade"
 msgstr "No shadow"
@@ -621,13 +621,13 @@ msgid "searchreplace_delta_height"
 msgstr ""
 
 msgid "searchreplace_dlg_searchnext_desc"
-msgstr "Find again"
+msgstr "重新查找"
 
 msgid "searchreplace_dlg_notfound"
 msgstr "The search has been completed. The search string could not be found."
 
 msgid "searchreplace_dlg_search_title"
-msgstr "Find"
+msgstr "查找"
 
 msgid "searchreplace_dlg_replace_title"
 msgstr "Find/Replace"
@@ -642,13 +642,13 @@ msgid "searchreplace_dlg_replacewith"
 msgstr "Replace with"
 
 msgid "searchreplace_dlg_direction"
-msgstr "Direction"
+msgstr "方向"
 
 msgid "searchreplace_dlg_up"
-msgstr "Up"
+msgstr "向上"
 
 msgid "searchreplace_dlg_down"
-msgstr "Down"
+msgstr "向下"
 
 msgid "searchreplace_dlg_mcase"
 msgstr "Match case"
@@ -672,22 +672,22 @@ msgid "ploneimage_delta_height"
 msgstr ""
 
 msgid "ploneimage_dlg_tab_general"
-msgstr "General"
+msgstr "常规"
 
 msgid "ploneimage_dlg_tab_appearance"
 msgstr "Appearance"
 
 msgid "ploneimage_dlg_tab_advanced"
-msgstr "Advanced"
+msgstr "高级"
 
 msgid "ploneimage_dlg_general"
-msgstr "General"
+msgstr "常规"
 
 msgid "ploneimage_dlg_title"
-msgstr "Title"
+msgstr "标题"
 
 msgid "ploneimage_dlg_preview"
-msgstr "Preview"
+msgstr "预览"
 
 msgid "ploneimage_dlg_constrain_proportions"
 msgstr "Constrain proportions"
@@ -1563,7 +1563,7 @@ msgid "table_dlg_missing_scope"
 msgstr "Are you sure you want to continue without specifying a scope for this table header cell. Without it, it may be difficult for some users with disabilities to understand the content or data displayed of the table."
 
 msgid "table_dlg_caption"
-msgstr "Table caption"
+msgstr "表格标题"
 
 msgid "table_dlg_frame"
 msgstr "Frame"
@@ -1575,10 +1575,10 @@ msgid "table_dlg_frame_groups"
 msgstr "groups"
 
 msgid "table_dlg_frame_rows"
-msgstr "rows"
+msgstr "行"
 
 msgid "table_dlg_frame_cols"
-msgstr "cols"
+msgstr "列"
 
 msgid "table_dlg_frame_all"
 msgstr "all"
@@ -1626,13 +1626,13 @@ msgstr ""
 "Are you sure you want to restore the saved content?."
 
 msgid "fullscreen_desc"
-msgstr "Toggle fullscreen mode"
+msgstr "切换全屏模式"
 
 msgid "media_desc"
-msgstr "Insert / edit embedded media"
+msgstr "插入/修改嵌入式媒体"
 
 msgid "media_edit"
-msgstr "Edit embedded media"
+msgstr "编辑嵌入式媒体"
 
 msgid "media_delta_width"
 msgstr ""
@@ -1641,13 +1641,13 @@ msgid "media_delta_height"
 msgstr ""
 
 msgid "media_dlg_title"
-msgstr "Insert / edit embedded media"
+msgstr "插入/修改嵌入式媒体"
 
 msgid "media_dlg_general"
-msgstr "General"
+msgstr "常规"
 
 msgid "media_dlg_advanced"
-msgstr "Advanced"
+msgstr "高级"
 
 msgid "media_dlg_file"
 msgstr "File/URL"
@@ -1869,7 +1869,7 @@ msgid "media_dlg_swstretchvalign"
 msgstr "Stretch V-Align"
 
 msgid "media_dlg_sound"
-msgstr "Sound"
+msgstr "声音"
 
 msgid "media_dlg_progress"
 msgstr "Progress"
