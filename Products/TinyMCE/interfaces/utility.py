@@ -445,7 +445,7 @@ class ITinyMCEContentBrowser(Interface):
         title=_("Link Shortcuts"),
         description=_(u"List of shortcuts to appear in link browser for quick navigation."),
         value_type=schema.Choice(source=shortcuts_vocabulary,),
-        default=['Home', 'Current Folder'],
+        default=[_('Home'), _('Current Folder')],
         required=False,
     )
 

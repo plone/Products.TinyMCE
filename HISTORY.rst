@@ -5,6 +5,9 @@ HISTORY
 1.3.5 (unreleased)
 ------------------
 
+- Fixed i18n.
+  [jianaijun]
+
 - Fixed language variants Toolbar does not display issue.
   [jianaijun] 
 
