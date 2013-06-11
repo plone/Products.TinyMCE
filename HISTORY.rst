@@ -8,6 +8,9 @@ HISTORY
 - Fixed language variants Toolbar does not display issue.
   [jianaijun] 
 
+- Fixed i18n
+  [jianaijun]
+
 
 1.3.4 (2013-05-23)
 ------------------
