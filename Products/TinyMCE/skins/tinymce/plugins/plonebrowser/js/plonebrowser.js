@@ -331,7 +331,13 @@ BrowserDialog.prototype.init = function () {
                 }
             });
 
-            if (selected_node.get(0).classList.contains('external-image')) {
+            if (selected_node.get(0).classList) {
+                var is_external = selected_node.get(0).classList.contains('external-image');
+            }
+            else {
+                var is_external = (' ' + selected_node.get(0).className + ' ').indexOf('external-image') > -1;
+            }
+            if (is_external) {
                 self.displayPanel('externalimage');
                 jq('#linktype_panel div', document).removeClass('current');
                 jq('#external_link', document).addClass('current');
