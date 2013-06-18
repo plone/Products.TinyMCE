@@ -5,6 +5,9 @@ HISTORY
 1.3.5 (unreleased)
 ------------------
 
+- Include the history on http://readthedocs.org/docs/productstinymce/
+  [maurits]
+
 - Display workflow state information about content in popups,
   refs https://dev.plone.org/ticket/10858
   [maartenkling]

@@ -16,4 +16,5 @@ Contents:
     usage
     develop
     contributors
+    history
 
