@@ -8,6 +8,17 @@ HISTORY
 - Remove bogus 'class=" "' refs https://dev.plone.org/ticket/13458
   [maartenkling]
 
+- Display workflow state information about content in popups,
+  refs https://dev.plone.org/ticket/10858
+  [maartenkling]
+
+- Fix popup for existing image in IE8.
+  [maurits]
+
+- Updated italian translation
+  [keul]
+
+
 1.3.4 (2013-05-23)
 ------------------
 
@@ -31,6 +42,7 @@ HISTORY
 
 - Added some missing Dutch translations
   [maartenkling]
+
 
 1.3.3 (2013-03-26)
 ------------------
