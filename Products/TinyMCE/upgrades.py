@@ -82,3 +82,14 @@ def upgrade_to_profile_5(setuptool):
 
 def upgrade_to_profile_6(setuptool):
     setuptool.runAllImportStepsFromProfile('profile-Products.TinyMCE:upgrade_to_profile_6')
+
+
+def upgrade_to_profile_7(setuptool):
+    # https://dev.plone.org/ticket/13458
+    tinymce = getToolByName(setuptool, 'portal_tinymce')
+    tinymce.styles = tinymce.styles.replace(u'Heading|h2| ', u'Heading|h2|')
+    tinymce.styles = tinymce.styles.replace(u'Subheading|h3| ', u'Subheading|h3|')
+    tinymce.styles = tinymce.styles.replace(u'Literal|pre| ', u'Literal|pre|')
+    tinymce.styles = tinymce.styles.replace(u'Definition term|dt| ', u'Definition term|dt|')
+    tinymce.styles = tinymce.styles.replace(u'Definition description|dd| ', u'Definition description|dd|')
+    tinymce.styles = tinymce.styles.replace(u'Heading cell|th| ', u'Heading cell|th|')
