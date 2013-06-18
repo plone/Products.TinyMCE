@@ -335,6 +335,7 @@ BrowserDialog.prototype.init = function () {
                 var is_external = selected_node.get(0).classList.contains('external-image');
             }
             else {
+                // Needed for IE8 and IE9, which do not have 'classList'.
                 var is_external = (' ' + selected_node.get(0).className + ' ').indexOf('external-image') > -1;
             }
             if (is_external) {
