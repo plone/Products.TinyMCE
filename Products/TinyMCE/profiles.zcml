@@ -91,6 +91,15 @@
         handler=".upgrades.upgrade_to_profile_6"
         />
 
+   <genericsetup:upgradeStep
+        title="Upgrade TinyMCE 1.3.4 to 1.3.5"
+        description="Remove space from style to prevent bogus class"
+        source="6"
+        destination="7"
+        profile="Products.TinyMCE:TinyMCE"
+        handler=".upgrades.upgrade_to_profile_7"
+        />
+
     <genericsetup:upgradeStep
         title="Install plone.outputfilters"
         description="This replaces the old TinyMCE-specific resolveuid and captioning transform."
