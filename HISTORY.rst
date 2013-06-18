@@ -5,6 +5,9 @@ HISTORY
 1.3.5 (unreleased)
 ------------------
 
+- Fix popup for existing image in IE8.
+  [maurits]
+
 - Updated italian translation
   [keul]
 
