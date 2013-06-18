@@ -83,7 +83,14 @@ class AdaptersTestCase(FunctionalTestCase):
         self.assertRegexpMatches(listing,
             '\{"parent_url": "", "path": \[.+],.+"items": \[.+]}')
         # no icon for regular contenttypes
-        self.assertRegexpMatches(listing, '"icon": null, "id": "folder"')
+        self.assertRegexpMatches(listing, '"icon": null')
+        # This is easier to check more rigorously by turning the json
+        # back to a Python dict.
+        items = json.loads(listing)['items']
+        folder_item = [item for item in items if item[u'id'] == u'folder'][0]
+        doc_item = [item for item in items if item[u'id'] == u'document'][0]
+        self.assertEqual(folder_item[u'icon'], None)
+        self.assertEqual(doc_item[u'icon'], None)
 
         # Let's create some more content to get breadcrumbs.
         document = self.folder_object.invokeFactory('Document', id='document')
@@ -118,7 +125,13 @@ class AdaptersTestCase(FunctionalTestCase):
                         document_base_url='http://nohost/plone',
                         upload_type='File')
         self.assertRegexpMatches(listing,
-            r'"icon": "<img width=\\"16\\" height=\\"16\\" src=\\"http://nohost/plone/application.png\\" alt=\\"File.*?\\" />", "id": "somefile.bin"')
+            r'"icon": "<img width=\\"16\\" height=\\"16\\" src=\\"http://nohost/plone/application.png\\" alt=\\"File.*?\\" />"')
+        # This is easier to check more rigorously by turning the json
+        # back to a Python dict.
+        items = json.loads(listing)['items']
+        file_item = [item for item in items if item[u'id'] == u'somefile.bin'][0]
+        self.assertEqual(file_item[u'icon'],
+                         '<img width="16" height="16" src="http://nohost/plone/application.png" alt="File Octet Stream" />')
 
     def test_json_search(self):
         # Create an Event
