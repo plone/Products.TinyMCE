@@ -5,6 +5,9 @@ HISTORY
 1.3.5 (unreleased)
 ------------------
 
+- Remove bogus 'class=" "' refs https://dev.plone.org/ticket/13458
+  [maartenkling]
+
 - Display workflow state information about content in popups,
   refs https://dev.plone.org/ticket/10858
   [maartenkling]
