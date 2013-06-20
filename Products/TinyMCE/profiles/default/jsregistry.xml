@@ -5,6 +5,15 @@
              cookable="True"
              enabled="True"
              expression="not: portal/portal_membership/isAnonymousUser"
+             id="tiny_mce_javascript_variables.js"
+             insert-after="plone_javascript_variables.js"
+             inline="False"/>
+
+ <javascript cacheable="True"
+             compression="none"
+             cookable="True"
+             enabled="True"
+             expression="not: portal/portal_membership/isAnonymousUser"
              id="tiny_mce.js"
              inline="False"/>
 
