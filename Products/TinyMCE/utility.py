@@ -814,7 +814,8 @@ class TinyMCE(SimpleItem):
         results['entity_encoding'] = self.entity_encoding
 
         props = getToolByName(self, 'portal_properties')
-        livesearch = props.site_properties.getProperty('enable_livesearch', False)
+        plone_livesearch = props.site_properties.getProperty('enable_livesearch', False)
+        livesearch = props.site_properties.getProperty('enable_tinymce_livesearch', plone_livesearch)
         if livesearch:
             results['livesearch'] = True
         else:
