@@ -28,6 +28,9 @@ class ATAnchorView(BrowserView):
         else:
             field = self.context.getField(fieldname)
 
+        if field is None:
+            return []
+
         htmlsnippet = field.getAccessor(self.context)()
         try:
             tree = fromstring(htmlsnippet)

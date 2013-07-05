@@ -27,6 +27,8 @@ HISTORY
 - Updated italian translation
   [keul]
 
+- Make JSON-methods more failsafe
+  [tom_gross]
 
 1.3.4 (2013-05-23)
 ------------------

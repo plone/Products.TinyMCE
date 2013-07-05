@@ -46,9 +46,8 @@ class JSONSearch(object):
 
             brains = self.context.portal_catalog.searchResults(**query)
 
-            for brain in brains:
-                catalog_results.append({
-                    'id': brain.getId,
+            catalog_results = [
+                   {'id': brain.getId,
                     'uid': brain.UID,
                     'url': brain.getURL(),
                     'portal_type': brain.portal_type,
@@ -56,7 +55,7 @@ class JSONSearch(object):
                     'icon': getIcon(brain),
                     'description': brain.Description,
                     'is_folderish': brain.is_folderish,
-                    })
+                    } for brain in brains if brain]
 
         # add catalog_results
         results['items'] = catalog_results
