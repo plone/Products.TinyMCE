@@ -12,6 +12,8 @@ class JSONSearch(object):
     """Returns a list of search results in JSON"""
     implements(IJSONSearch)
 
+    listing_base_query = {}
+
     def __init__(self, context):
         """Constructor"""
         self.context = context
@@ -27,12 +29,13 @@ class JSONSearch(object):
             'parent_url': '',
             'path': [],
         }
-        query = {
+        query = self.listing_base_query.copy()
+        query.update({
             'portal_type': filter_portal_types,
             'sort_on': 'sortable_title',
             'path': '/'.join(self.context.getPhysicalPath()),
             'SearchableText': searchtext,
-        }
+        })
         if searchtext:
             plone_layout = self.context.restrictedTraverse('@@plone_layout',
                                                            None)
