@@ -5,6 +5,10 @@ HISTORY
 1.3.5 (unreleased)
 ------------------
 
+- Remove unused getImageScales method from the tinymce utility,
+  and remove the hard dependency on Archetypes.
+  [davisagli]
+
 - Added base-query for json search.  This makes it easier to override
   the search, just as was done for the folderlisting-view.
   [maurits]

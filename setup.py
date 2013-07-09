@@ -36,7 +36,6 @@ setup(name='Products.TinyMCE',
         'plone.app.layout',
         'plone.caching',
         'Products.ResourceRegistries',
-        'Products.Archetypes',
         'zope.app.content',
         'zope.schema>=3.5.4',
         # depends on *either* elementtree or lxml...

@@ -7,14 +7,11 @@ from types import StringTypes
 from zope.component import getUtilitiesFor, queryUtility
 from zope.i18n import translate
 from zope.i18nmessageid import MessageFactory
-from zope.interface import classProvides, implements
+from zope.interface import classProvides, implements, Interface
 from zope.schema.fieldproperty import FieldProperty
 from AccessControl import ClassSecurityInfo
 from Acquisition import aq_base, aq_inner, aq_parent
 from OFS.SimpleItem import SimpleItem
-from Products.Archetypes.Field import ImageField
-from Products.Archetypes.interfaces import IBaseObject
-from Products.Archetypes.interfaces.field import IImageField
 from Products.CMFCore.interfaces._content import IFolderish
 from Products.CMFCore.interfaces import ISiteRoot
 from Products.CMFCore.utils import getToolByName
@@ -25,7 +22,6 @@ except ImportError:
     RIGHT_TO_LEFT = ['ar', 'fa', 'he', 'ps']  # not available in plone 3
 from plone.outputfilters.filters.resolveuid_and_caption import IImageCaptioningEnabler, IResolveUidsEnabler
 
-from Products.TinyMCE.bbb import implementedOrProvidedBy
 from Products.TinyMCE.interfaces.shortcut import ITinyMCEShortcut
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.interfaces.utility import ITinyMCELayout
@@ -33,6 +29,12 @@ from Products.TinyMCE.interfaces.utility import ITinyMCEToolbar
 from Products.TinyMCE.interfaces.utility import ITinyMCELibraries
 from Products.TinyMCE.interfaces.utility import ITinyMCEResourceTypes
 from Products.TinyMCE.interfaces.utility import ITinyMCEContentBrowser
+
+try:
+    from Products.Archetypes.interfaces import IBaseObject
+except ImportError:
+    class IBaseObject(Interface):
+        pass
 
 
 _ = MessageFactory('plone.tinymce')
@@ -164,34 +166,6 @@ class TinyMCE(SimpleItem):
     num_of_thumb_columns = FieldProperty(ITinyMCEContentBrowser['num_of_thumb_columns'])
     thumbnail_size = FieldProperty(ITinyMCEContentBrowser['thumbnail_size'])
     anchor_selector = FieldProperty(ITinyMCEContentBrowser['anchor_selector'])
-
-    def getImageScales(self, field=None, context=None):
-        """Return the image sizes for the drawer"""
-        if field is None:
-            from Products.ATContentTypes.content.image import ATImage
-            field = ATImage.schema['image']
-
-        # in Archetypes 1.5.x ImageField doesn't actually provide IImageField o.O
-        if not isinstance(field, ImageField) and not implementedOrProvidedBy(IImageField, field):
-            raise TypeError("Can't retrieve image scale info for non-image field.")
-
-        field_name = field.getName()
-        sizes = field.getAvailableSizes(field)
-
-        # Extract image dimensions from context.
-        if context is not None:
-            width, height = context.getField(field_name).getSize(context)
-        else:
-            width, height = 0, 0
-
-        scales = [{'value': '@@images/%s/%s' % (field_name, key),
-                   'size': [value[0], value[1]],
-                   'title': key.capitalize()} for key, value in sizes.items()]
-        scales.sort(key=lambda x: x['size'][0])
-        scales.insert(0, {'value': '',
-                          'title': _(u'Original'),
-                          'size': [width, height]})
-        return scales
 
     security.declarePrivate('getEnabledButtons')
     def getEnabledButtons(self, context):

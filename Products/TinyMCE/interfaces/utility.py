@@ -502,10 +502,6 @@ class ITinyMCE(
             The request can be provided for translation purpose.
         """
 
-    def getImageScales(field=None, context=None):
-        """
-        """
-
     def getEnabledButtons(context):
         """
         """

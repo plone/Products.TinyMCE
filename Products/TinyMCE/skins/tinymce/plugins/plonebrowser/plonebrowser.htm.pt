@@ -108,8 +108,6 @@
                         <label id="dimensionslabel" for="dimensions" i18n:translate="plonebrowser_dlg_dimensions"></label>
                         <div class="widget">
                             <select id="dimensions" name="dimensions">
-                                <option tal:repeat="item portal_tinymce/getImageScales" tal:attributes="value item/value"
-                                    tal:content="item/title" />
                             </select>
                         </div>
                     </div>

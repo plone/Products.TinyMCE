@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-import os
 import json
 
 import transaction
@@ -107,57 +106,6 @@ class UtilityTestCase(IntegrationTestCase):
         browser.open('http://nohost/plone/createObject?type_name=Document')
         self.assertNotIn("&quot;iespell&quot;", browser.contents)
         self.assertNotIn("&quot;AtD&quot;", browser.contents)
-
-    def test_tinymce_configurable_image_dimensions(self):
-        # The image scale dimensions being provided to the image chooser should be
-        # gathered from the chosen AT content type. Let's begin by creating an
-        # AT image:
-        id = self.portal.invokeFactory('News Item', id='test')
-        self.assertEqual(repr(self.portal[id]), '<ATNewsItem at /plone/test>')
-
-        # Now the values being provided through JSON should be gotten from the ATNewsItem
-        # schema:
-        primary_field = self.portal.test.schema['image']
-        scales = self.utility.getImageScales(primary_field)
-        self.assertEqual(scales,
-            [{'size': [0, 0], 'title': 'Original', 'value': ''},
-            {'size': [16, 16], 'title': 'Listing', 'value': '@@images/image/listing'},
-            {'size': [32, 32], 'title': 'Icon', 'value': '@@images/image/icon'},
-            {'size': [64, 64], 'title': 'Tile', 'value': '@@images/image/tile'},
-            {'size': [128, 128], 'title': 'Thumb', 'value': '@@images/image/thumb'},
-            {'size': [200, 200], 'title': 'Mini', 'value': '@@images/image/mini'},
-            {'size': [400, 400], 'title': 'Preview', 'value': '@@images/image/preview'},
-            {'size': [768, 768], 'title': 'Large', 'value': '@@images/image/large'}]
-        )
-
-        # If no primary field is given, we should get the scale dimensions from ATImage:
-        scales = self.utility.getImageScales()
-        self.assertEqual(scales,
-            [{'size': [0, 0], 'title': 'Original', 'value': ''},
-            {'size': [16, 16], 'title': 'Listing', 'value': '@@images/image/listing'},
-            {'size': [32, 32], 'title': 'Icon', 'value': '@@images/image/icon'},
-            {'size': [64, 64], 'title': 'Tile', 'value': '@@images/image/tile'},
-            {'size': [128, 128], 'title': 'Thumb', 'value': '@@images/image/thumb'},
-            {'size': [200, 200], 'title': 'Mini', 'value': '@@images/image/mini'},
-            {'size': [400, 400], 'title': 'Preview', 'value': '@@images/image/preview'},
-            {'size': [768, 768], 'title': 'Large', 'value': '@@images/image/large'}]
-        )
-
-        # We need to specify a context, if we want the dimension of the original image
-        imgdata = open(os.path.join(os.path.dirname(__file__), 'sample.png'))
-        self.portal[id].setImage(imgdata)
-
-        scales = self.utility.getImageScales(context=self.portal[id])
-        self.assertEqual(scales,
-            [{'size': [52, 43], 'title': 'Original', 'value': ''},
-            {'size': [16, 16], 'title': 'Listing', 'value': '@@images/image/listing'},
-            {'size': [32, 32], 'title': 'Icon', 'value': '@@images/image/icon'},
-            {'size': [64, 64], 'title': 'Tile', 'value': '@@images/image/tile'},
-            {'size': [128, 128], 'title': 'Thumb', 'value': '@@images/image/thumb'},
-            {'size': [200, 200], 'title': 'Mini', 'value': '@@images/image/mini'},
-            {'size': [400, 400], 'title': 'Preview', 'value': '@@images/image/preview'},
-            {'size': [768, 768], 'title': 'Large', 'value': '@@images/image/large'}]
-        )
 
     def _get_config(self):
         return {
