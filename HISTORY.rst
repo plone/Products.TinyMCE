@@ -5,6 +5,12 @@ HISTORY
 1.3.5 (unreleased)
 ------------------
 
+- Check for a 'enable_tinymce_livesearch'property in order to override the 
+  enable_livesearch of site_properties for instances where you want to have
+  livesearch enabled on the portal_search and yet you do not want it enabled
+  within TinyMCE and the other way around
+  [ichim-david]
+
 - Remove unused getImageScales method from the tinymce utility,
   and remove the hard dependency on Archetypes.
   [davisagli]

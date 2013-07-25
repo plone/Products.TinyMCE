@@ -875,7 +875,8 @@ class TinyMCE(SimpleItem):
         results['rooted'] = bool(self.rooted or rooted)
 
         props = getToolByName(portal, 'portal_properties')
-        livesearch = props.site_properties.getProperty('enable_livesearch', False)
+        plone_livesearch = props.site_properties.getProperty('enable_livesearch', False)
+        livesearch = props.site_properties.getProperty('enable_tinymce_livesearch', plone_livesearch)
         results['livesearch'] = bool(livesearch)
 
         AVAILABLE_LANGUAGES = set(
