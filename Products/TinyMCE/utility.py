@@ -15,6 +15,7 @@ from OFS.SimpleItem import SimpleItem
 from Products.CMFCore.interfaces._content import IFolderish
 from Products.CMFCore.interfaces import ISiteRoot
 from Products.CMFCore.utils import getToolByName
+from Products.CMFDynamicViewFTI.interfaces import IBrowserDefault
 try:
     from plone.app.layout.globals.portal import RIGHT_TO_LEFT
     RIGHT_TO_LEFT    # pyflakes
@@ -947,7 +948,14 @@ class TinyMCE(SimpleItem):
         results['theme'] = "advanced"
         results['skin'] = "plone"
         results['inlinepopups_skin'] = "plonepopup"
+
         results['body_class'] = "documentContent"
+        plone_view = context.restrictedTraverse('@@plone')
+        template = None
+        if IBrowserDefault.providedBy(context):
+            template = context.unrestrictedTraverse(context.getLayout())
+        results['body_class'] += ' ' + plone_view.bodyClass(template, template)
+
         results['body_id'] = "content"
         results['table_firstline_th'] = True
         results['fix_list_elements'] = False
