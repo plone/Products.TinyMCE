@@ -111,6 +111,14 @@ class JSONFolderListing(object):
                       'sort_on': 'getObjPositionInParent',
                       'path': {'query': path, 'depth': 1}})
         for brain in portal_catalog(**query):
+
+            description = ''
+            if brain.Description:
+                if type(brain.Description) == str:
+                    description = unicode(brain.Description, 'utf-8', 'ignore')
+                elif type(brain.Description) == unicode:
+                    description = brain.Description
+
             catalog_results.append({
                 'id': brain.getId,
                 'uid': brain.UID or None,  # Maybe Missing.Value
@@ -120,7 +128,7 @@ class JSONFolderListing(object):
                 'normalized_type': normalizer.normalize(brain.portal_type),
                 'title': brain.Title == "" and brain.id or brain.Title,
                 'icon': getIcon(brain),
-                'description': unicode(brain.Description, 'utf-8', 'ignore'),
+                'description': description,
                 'is_folderish': brain.is_folderish,
                 })
 
