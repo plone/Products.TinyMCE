@@ -680,8 +680,10 @@ BrowserDialog.prototype.checkSearch = function (e) {
     }
 
     // Activate search when we have enough input and either livesearch is
-    // enabled or the user explicitly pressed Enter.
-    if (len >= 3 && (this.tinyMCEPopup.editor.settings.livesearch === true || e.which === 13)) {
+    // enabled or the user explicitly pressed Enter (which === 13), or the user 
+    // clicks (which === 1) on the search icon 
+    if (len >= 3 && (this.tinyMCEPopup.editor.settings.livesearch === true 
+                    || e.which === 13 || e.which === 1)) {
         this.is_search_activated = true;
         this.getFolderListing(this.tinyMCEPopup.editor.settings.navigation_root_url, this.method_search);
     }

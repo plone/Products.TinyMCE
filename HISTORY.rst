@@ -5,6 +5,10 @@ HISTORY
 1.3.5 (unreleased)
 ------------------
 
+- Fixed an issue where the search button wasn't doing anything when livesearch
+  is disabled since checkSearch wasn't checking for a click keycode
+  [ichim-david]
+
 - Handle brain.Description when it's ``None`` or ``unicode`` because
   decoding None or unicode is not supported.
   [saily]
