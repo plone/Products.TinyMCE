@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.3.5 (unreleased)
+1.3.5 (2013-08-14)
 ------------------
 
 - Fixed an issue where the search button wasn't doing anything when livesearch
