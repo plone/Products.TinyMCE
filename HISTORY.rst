@@ -5,7 +5,8 @@ HISTORY
 1.3.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Require ``plone.app.layout==2.3.7`` which includes bodyClass fix.
+  [saily]
 
 
 1.3.5 (2013-08-14)
