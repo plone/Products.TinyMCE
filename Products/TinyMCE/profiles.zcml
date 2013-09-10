@@ -48,6 +48,14 @@
         />
 
     <genericsetup:registerProfile
+        name="css_relative_links_optimization"
+        title="TinyMCE optimization for relative linked CSS files"
+        directory="profiles/css_relative_links_optimization"
+        description="Optimize the URLs of relative linked content."
+        provides="Products.GenericSetup.interfaces.EXTENSION"
+        />
+
+    <genericsetup:registerProfile
         name="uninstall"
         title="Remove TinyMCE Editor Support"
         directory="profiles/uninstall"
