@@ -46,7 +46,7 @@ setup(name='Products.TinyMCE',
                  'zope.testing',
                  'unittest2',
                  'Pillow',
-                 'plone.app.dexterity'],
+                 'plone.app.contenttypes'],
         'docs': ['sphinx'],
     },
 )

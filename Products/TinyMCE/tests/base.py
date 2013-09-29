@@ -23,8 +23,8 @@ except ImportError:
 
 # Test for Dexterity
 try:
-    import plone.app.dexterity
-    plone.app.dexterity   # pyflakes
+    import plone.app.contenttypes
+    plone.app.contenttypes   # pyflakes
     HAS_DX = True
 except ImportError:
     HAS_DX = False
@@ -52,14 +52,14 @@ class TinyMCELayer(PloneSandboxLayer):
                       name='skins.zcml')
         z2.installProduct(app, 'Products.TinyMCE')
         if HAS_DX:
-            self.loadZCML(package=plone.app.dexterity)
+            self.loadZCML(package=plone.app.contenttypes)
 
     def setUpPloneSite(self, portal):
         """Set up Plone."""
         # Install into Plone site using portal_setup
         self.applyProfile(portal, 'Products.TinyMCE:TinyMCE')
         if HAS_DX:
-            self.applyProfile(portal, 'plone.app.dexterity:default')
+            self.applyProfile(portal, 'plone.app.contenttypes:default')
             register_test_profile()
             self.applyProfile(portal, 'Products.TinyMCE:tinymce_testing')
 
