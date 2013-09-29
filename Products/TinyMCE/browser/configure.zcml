@@ -74,6 +74,7 @@
         class=".browser.TinyMCEBrowserView"
         permission="cmf.AddPortalContent">
         <browser:page attribute="upload" name="tinymce-upload" />
+        <browser:page attribute="replacefile" name="tinymce-replacefile" />
     </browser:pages>
 
     <browser:resourceDirectory

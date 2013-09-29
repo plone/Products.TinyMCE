@@ -21,6 +21,7 @@
 #details_panel div.radioscrolllist #cssstyle,
 #details_panel div.radioscrolllist #title { width: 100% !important; border: 1px solid #CCCCCC; font-size: 1.25em; }
 #details_panel #description { width: 100%; }
+#details_panel input, #details_panel textarea { width: 100%; }
 #addimage_panel input, #addimage_panel textarea { width: 100%; }
 #addimage_panel #upload_iframe { display: none; }
 #searchtext { float:left; width: 70%; max-width:500px; height: 20px; border: 1px solid #CCC; margin-bottom: 5px; padding-left: 4px; }

@@ -18,3 +18,6 @@ class IUpload(Interface):
 
     def upload(self):
         """Adds uploaded file"""
+
+    def replacefile(self):
+        """ Replace the binary content of a file object """

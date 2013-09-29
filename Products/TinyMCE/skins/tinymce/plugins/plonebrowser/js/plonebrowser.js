@@ -97,6 +97,10 @@ BrowserDialog.prototype.init = function () {
         e.preventDefault();
         jq('#upload_form', document).submit();
     });
+    jq('#replacebutton', document).click(function (e) {
+        e.preventDefault();
+        jq('#replacefile_form', document).submit();
+    });
     jq('#searchtext', document).keyup(function (e) {
         e.preventDefault();
         // We need to stop the event from propagating so that pressing Esc will
@@ -749,6 +753,16 @@ BrowserDialog.prototype.setDetails = function (url) {
 
             jq('#description', document).val(data.description);
             jq('#description_href', document).val(data.url);
+
+            if (data.portal_type === 'File') {
+               jq('#link-replace', document).show();
+
+                // Make the file replace form replace the file of the current file object
+               jq('#replacefile_form', document).attr('action', data.url + '/tinymce-replacefile');
+
+            } else {
+               jq('#link-replace', document).hide();
+            }
 
             // Repopulate the <option>s in the dimensions <select> element.
             if (data.scales) {

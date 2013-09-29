@@ -33,6 +33,11 @@ class TinyMCEBrowserView(BrowserView):
         context = IUpload(self.context)
         return context.upload()
 
+    def replacefile(self):
+        """ Replace the binary content of a file """
+        context = IUpload(self.context)
+        return context.replacefile()
+
     def save(self, text, fieldname):
         """Saves the specified richedit field"""
 

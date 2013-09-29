@@ -40,14 +40,17 @@ class JSONDetails(object):
 
         image_portal_types = utility.imageobjects.splitlines()
 
+        portal_type = self.context.portal_type
+
         results = {}
         results['title'] = self.context.title_or_id()
         results['url'] = self.context.absolute_url()
         results['description'] = self.context.Description()
+        results['portal_type'] = portal_type
         results['uid_relative_url'] = 'resolveuid/' + uuidFor(self.context)
         results['uid_url'] = self._getPloneUrl() + '/resolveuid/' + uuidFor(self.context)
 
-        if self.context.portal_type in image_portal_types:
+        if portal_type in image_portal_types:
             images = self.context.restrictedTraverse('@@images')
 
             # TODO: support other contenttypes
@@ -68,9 +71,9 @@ class JSONDetails(object):
         else:
             results['thumb'] = ""
 
-        if self.context.portal_type in anchor_portal_types:
+        if portal_type in anchor_portal_types:
             content_anchors = self.context.restrictedTraverse('@@content_anchors')
-            fieldname = anchor_portal_types[self.context.portal_type]
+            fieldname = anchor_portal_types[portal_type]
             results['anchors'] = content_anchors.listAnchorNames(fieldname)
         else:
             results['anchors'] = []

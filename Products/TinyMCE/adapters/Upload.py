@@ -41,6 +41,7 @@ class Upload(object):
     def __init__(self, context):
         """Constructor"""
         self.context = context
+        self.utility = getToolByName(context, 'portal_tinymce')
 
     def errorMessage(self, msg):
         """Returns an error message"""
@@ -84,6 +85,31 @@ class Upload(object):
                 return newid
             count += 1
 
+    def _setfile(self, obj):
+        if HAS_DEXTERITY and IDexterityContent.providedBy(obj):
+            if not self.setDexterityImage(obj):
+                return self.errorMessage(
+                    _("The content-type '%s' has no image-field!" % metatype))
+        else:
+            # set primary field
+            pf = obj.getPrimaryField()
+            pf.set(obj, self.context.REQUEST['uploadfile'])
+
+        if not obj:
+            return self.errorMessage("Could not upload the file")
+
+        obj.reindexObject()
+
+        if self.utility.link_using_uids:
+            path = "resolveuid/%s" % (uuidFor(obj))
+        else:
+            path = obj.absolute_url()
+        return path
+
+    def replacefile(self):
+        context = aq_inner(self.context)
+        self._setfile(context)
+
     def upload(self):
         """Adds uploaded file.
 
@@ -95,7 +121,6 @@ class Upload(object):
 
         request = context.REQUEST
         ctr_tool = getToolByName(context, 'content_type_registry')
-        utility = getToolByName(context, 'portal_tinymce')
 
         id = request['uploadfile'].filename
         content_type = request['uploadfile'].headers["Content-Type"]
@@ -118,7 +143,7 @@ class Upload(object):
             uploadable_types = []
 
         if content_type.split('/')[0] == 'image':
-            image_portal_types = utility.imageobjects.split('\n')
+            image_portal_types = self.utility.imageobjects.split('\n')
             uploadable_types += [t for t in image_portal_types
                                     if t in allowed_types
                                        and t not in uploadable_types]
@@ -160,25 +185,8 @@ class Upload(object):
             except AttributeError:
                 obj.description = description
 
-        if HAS_DEXTERITY and IDexterityContent.providedBy(obj):
-            if not self.setDexterityImage(obj):
-                return self.errorMessage(
-                    _("The content-type '%s' has no image-field!" % metatype))
-        else:
-            # set primary field
-            pf = obj.getPrimaryField()
-            pf.set(obj, request['uploadfile'])
-
-        if not obj:
-            return self.errorMessage("Could not upload the file")
-
-        obj.reindexObject()
+        path = self._setfile(obj)
         folder = obj.aq_parent.absolute_url()
-
-        if utility.link_using_uids:
-            path = "resolveuid/%s" % (uuidFor(obj))
-        else:
-            path = obj.absolute_url()
         return self.okMessage(path, folder)
 
     def setDexterityImage(self, obj):
