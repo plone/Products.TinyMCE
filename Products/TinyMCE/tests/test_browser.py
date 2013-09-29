@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 from Products.TinyMCE.tests.base import IntegrationTestCase
 from Products.TinyMCE.tests.base import FunctionalTestCase
-
 from Products.TinyMCE.browser.atanchors import ATAnchorView
+
+from plone.app.textfield.value import RichTextValue
 
 
 class BrowserTestCase(FunctionalTestCase):
@@ -98,20 +99,32 @@ class AnchorTestCase(IntegrationTestCase):
 
     def test_brokenxml(self):
         context = self.portal['document']
-        context.setText('''<p><div></p>''')
+        context.text = RichTextValue(
+            '''<p><div></p>''',
+            'text/plain',
+            'text/html'
+        )
         view = ATAnchorView(context, self.app.REQUEST)
         self.assertEqual(view.listAnchorNames(), [])
 
     def test_primaryfield(self):
         context = self.portal['document']
-        context.setText('''<p><a name="foobar"></a></p>''')
+        context.text = RichTextValue(
+            '''<p><a name="foobar"></a></p>''',
+            'text/plain',
+            'text/html'
+        )
         view = ATAnchorView(context, self.app.REQUEST)
         self.assertEqual(view.listAnchorNames(), ['foobar'])
 
     def test_notprimaryfield(self):
         context = self.portal['document']
         context.setLocation('''<p><a name="foobar"></a></p>''')
-        context.setText('')
+        context.text = RichTextValue(
+            '',
+            'text/plain',
+            'text/html'
+        )
         view = ATAnchorView(context, self.app.REQUEST)
         self.assertEqual(view.listAnchorNames(), [])
         self.assertEqual(view.listAnchorNames('location'), ['foobar'])

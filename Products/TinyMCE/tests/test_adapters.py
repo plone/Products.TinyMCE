@@ -21,6 +21,8 @@ from Products.TinyMCE.adapters.interfaces.JSONFolderListing import IJSONFolderLi
 from Products.TinyMCE.adapters.interfaces.Upload import IUpload
 from Products.TinyMCE.tests.base import FunctionalTestCase
 
+from plone.app.textfield.value import RichTextValue
+
 
 class AdaptersTestCase(FunctionalTestCase):
 
@@ -34,7 +36,7 @@ class AdaptersTestCase(FunctionalTestCase):
 
     def test_json_details_document(self):
         # This class is used to get detail from a certain object. Let's create a Document.
-        self.assertEqual(repr(self.portal[self.document]), '<ATDocument at /plone/document>')
+        self.assertEqual(repr(self.portal[self.document]), '<Document at /plone/document>')
 
         # The basic details should return the following.
         obj = IJSONDetails(self.portal[self.document])
@@ -44,8 +46,12 @@ class AdaptersTestCase(FunctionalTestCase):
             self.assertEqual(details[key], val)
 
         # Let's set some more details like description and body text.
-        self.portal[self.document].setDescription('Test')
-        self.portal[self.document].setText(u'<p><a name="anchor">anchor</a></p>', mimetype='text/html')
+        self.portal[self.document].description = 'Test'
+        self.portal[self.document].text = RichTextValue(
+            u'<p><a name="anchor">anchor</a></p>',
+            'text/plain',
+            'text/html'
+        )
 
         # The details will now contain a bit more info.
         details = json.loads(obj.getDetails())
@@ -56,7 +62,7 @@ class AdaptersTestCase(FunctionalTestCase):
     def test_json_details_image(self):
         # We can also get the details of an image object.
         image = self.portal.invokeFactory('Image', id='image')
-        self.assertEqual(repr(self.portal[image]), '<ATImage at /plone/image>')
+        self.assertEqual(repr(self.portal[image]), '<Image at /plone/image>')
 
         imgdata = open(os.path.join(os.path.dirname(__file__), 'sample.png'))
         self.portal[image].setImage(imgdata)

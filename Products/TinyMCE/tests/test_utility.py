@@ -181,24 +181,18 @@ class UtilityTestCase(IntegrationTestCase):
 
         # Check AT document after creation
         portal.invokeFactory(id='doc', type_name='Document')
-        portal['doc'].unmarkCreationFlag()
-        self.assertEqual(portal['doc'].checkCreationFlag(), False)
         configuration = self.utility.getConfiguration(portal['doc'])
         self.assertEqual(configuration['document_url'], 'http://nohost/plone/doc')
         self.assertEqual(configuration['document_base_url'], 'http://nohost/plone/')
 
         # Check AT folder after creation
         portal.invokeFactory(id='folder', type_name='Folder')
-        portal['folder'].unmarkCreationFlag()
-        self.assertEqual(portal['folder'].checkCreationFlag(), False)
         configuration = self.utility.getConfiguration(portal['folder'])
         self.assertEqual(configuration['document_url'], 'http://nohost/plone/folder')
         self.assertEqual(configuration['document_base_url'], 'http://nohost/plone/folder/')
 
         # Check AT doc within AT folder after creation
         portal['folder'].invokeFactory(id='doc', type_name='Document')
-        portal['folder']['doc'].unmarkCreationFlag()
-        self.assertEqual(portal['folder']['doc'].checkCreationFlag(), False)
         configuration = self.utility.getConfiguration(portal['folder']['doc'])
         self.assertEqual(configuration['document_url'], 'http://nohost/plone/folder/doc')
         self.assertEqual(configuration['document_base_url'], 'http://nohost/plone/folder/')
@@ -211,15 +205,13 @@ class UtilityTestCase(IntegrationTestCase):
         self.app.acl_users.userFolderAddUser('root', 'secret', ['Manager'], [])
         transaction.commit()
         browser.addHeader('Authorization', 'Basic root:secret')
-        browser.open('http://nohost/plone/createObject?type_name=Document')
+        browser.open('http://nohost/plone/++add++Document')
         configuration = self._parsePageConfiguration(browser)
-        self.assertIn('http://nohost/plone/portal_factory/Document/document.', configuration['document_url'])
         self.assertEqual(configuration['document_base_url'], 'http://nohost/plone/')
 
         # Calling getConfiguration direcly on a not-yet-created document
         # breaks, and we fall back to the portal URL. This is possibly a bug.
         portal.invokeFactory(id='doc', type_name='Document')
-        self.assertEqual(portal['doc'].checkCreationFlag(), True)
         configuration = self.utility.getConfiguration(portal['doc'])
         self.assertEqual(configuration['document_url'], portal['doc'].absolute_url())
         self.assertEqual(configuration['document_base_url'], 'http://nohost/plone/')
