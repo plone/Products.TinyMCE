@@ -964,6 +964,8 @@ class TinyMCE(SimpleItem):
         results['media_strict'] = False
         results['theme_advanced_path'] = False
         results['theme_advanced_toolbar_align'] = "left"
+        # use absolute urls instead of relative urls
+        results['relative_urls'] = False
 
         results['plugins'] = self.getPlugins()
         results['theme_advanced_styles'] = self.getStyles(styles, labels)
