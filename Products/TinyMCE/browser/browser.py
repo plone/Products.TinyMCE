@@ -123,8 +123,8 @@ class TinyMCEBrowserView(BrowserView):
 
         utility = getToolByName(aq_inner(self.context), 'portal_tinymce')
         return json.dumps(utility.getConfiguration(context=self.context,
-                                                    field=field,
-                                                    request=self.request)) 
+                                                   field=field,
+                                                   request=self.request)) 
 
 
 class ATDProxyView(object):
