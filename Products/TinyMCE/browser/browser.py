@@ -122,9 +122,11 @@ class TinyMCEBrowserView(BrowserView):
         """Return the configuration in JSON"""
 
         utility = getToolByName(aq_inner(self.context), 'portal_tinymce')
-        return json.dumps(utility.getConfiguration(context=self.context,
-                                                   field=field,
-                                                   request=self.request))
+        config = utility.getConfiguration(context=self.context,
+                                          field=field,
+                                          request=self.request)
+        config['relative_urls'] = False
+        return json.dumps(config)
 
 
 class ATDProxyView(object):
