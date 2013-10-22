@@ -12,6 +12,9 @@ HISTORY
 1.3.6 (unreleased)
 ------------------
 
+- French translations.
+  [thomasdesvenain]
+
 - Do not load styles with conditional comments if the user agent doesn't
   contain Trident when computin getStyle, otherwise we load IE styles on non
   IE browsers
