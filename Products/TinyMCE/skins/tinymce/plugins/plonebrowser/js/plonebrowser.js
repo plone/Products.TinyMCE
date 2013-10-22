@@ -680,9 +680,9 @@ BrowserDialog.prototype.checkSearch = function (e) {
     }
 
     // Activate search when we have enough input and either livesearch is
-    // enabled or the user explicitly pressed Enter (which === 13), or the user 
-    // clicks (which === 1) on the search icon 
-    if (len >= 3 && (this.tinyMCEPopup.editor.settings.livesearch === true 
+    // enabled or the user explicitly pressed Enter (which === 13), or the user
+    // clicks (which === 1) on the search icon
+    if (len >= 3 && (this.tinyMCEPopup.editor.settings.livesearch === true
                     || e.which === 13 || e.which === 1)) {
         this.is_search_activated = true;
         this.getFolderListing(this.tinyMCEPopup.editor.settings.navigation_root_url, this.method_search);
@@ -1143,10 +1143,10 @@ BrowserDialog.prototype.displayPanel = function(panel, upload_allowed) {
         }
         jq('#browseimage_panel', document).removeClass('hide').addClass('row');
         jq('#insert-selection', document).attr('disabled','disabled');
-        jq('#upload-button', document).removeClass('hide');
+        jq('#upload', document).removeClass('hide');
     } else {
         jq('#browseimage_panel', document).removeClass('row').addClass('hide');
-        jq('#upload-button', document).addClass('hide');
+        jq('#upload', document).addClass('hide');
     }
 
     // handle details/preview panel

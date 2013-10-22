@@ -23,9 +23,9 @@
 #details_panel #description { width: 100%; }
 #addimage_panel input, #addimage_panel textarea { width: 100%; }
 #addimage_panel #upload_iframe { display: none; }
-#searchtext { float:left; width: 70%; max-width:500px; height: 20px; border: 1px solid #CCC; margin-bottom: 5px; padding-left: 4px; }
+#searchtext { float:left; width: 60%; max-width:500px; height: 20px; border: 1px solid #CCC; margin-bottom: 5px; padding-left: 4px; }
 #clear-btn { display: none; margin-left: -20px; margin-top: 2px; float:left;; border: none!important; }
-#search-btn { border: none!important; margin-top: 2px; margin-left: 5px; float:left; }
+#search-btn, #upload { border: none!important; margin-top: 2px; margin-left: 5px; float:left; }
 #description { border: 1px solid #CCC; }
 #uploadbutton { margin-top: 10px; }
 #previewimagecontainer { text-align: center; }
@@ -51,7 +51,6 @@
 #insert-selection { margin: 0.7em auto; display: block; width: 70%; }
 #footer { position: absolute; bottom: 0; width: 97.75%; }
 #footer #action-button { margin-bottom: 10px; margin-left: -24.87%; }
-#footer #upload-button { margin-top: 13px; }
 input[disabled] { background: #F6F6F6; border: 1px solid #E6E6E6; color: #B2C3D9; }
 .field input[type="text"][name$=".title"], input#title { width: auto!important; }
 
