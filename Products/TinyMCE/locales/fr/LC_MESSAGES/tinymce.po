@@ -2,13 +2,14 @@
 # Version 54.0
 #
 # Samuel Guillot
+# Bitouzé Denis <dbitouze@wanadoo.fr>, 2013.
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2000-01-01 00:00+0000\n"
-"PO-Revision-Date: 2010-12-20 00:00+0000\n"
-"Last-Translator: Samuel Guillot\n"
-"Language-Team: Samuel Guillot\n"
+"PO-Revision-Date: 2013-10-23 09:31+0200\n"
+"Last-Translator: Bitouzé Denis <dbitouze@wanadoo.fr>\n"
+"Language-Team: French <>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -17,6 +18,8 @@ msgstr ""
 "Language-Name: Français\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: tinymce\n"
+"Language: fr\n"
+"X-Generator: Lokalize 1.5\n"
 
 msgid "common_edit_confirm"
 msgstr "Souhaitez-vous utiliser le mode WYSIWYG pour cette zone de texte ?"
@@ -37,7 +40,7 @@ msgid "common_close"
 msgstr "Fermer"
 
 msgid "common_browse"
-msgstr "parcourir"
+msgstr "Parcourir"
 
 msgid "common_class_name"
 msgstr "Classe"
@@ -46,16 +49,24 @@ msgid "common_not_set"
 msgstr "-- non défini --"
 
 msgid "common_clipboard_msg"
-msgstr "Les fonctions Copier/Couper/Coller ne sont pas valables sur Mozilla et Firefox.\nSouhaitez-vous avoir plus d'informations sur ce sujet ?"
+msgstr ""
+"Les fonctions Copier/Couper/Coller ne sont pas valables sur Mozilla et "
+"Firefox.\nSouhaitez-vous avoir plus d'informations sur ce sujet ?"
 
 msgid "common_clipboard_no_support"
-msgstr "Actuellement non supporté par votre navigateur.\n Veuillez utiliser les raccourcis clavier à la place."
+msgstr ""
+"Actuellement non supporté par votre navigateur.\n Veuillez utiliser les "
+"raccourcis clavier à la place."
 
 msgid "common_popup_blocked"
-msgstr "Désolé, nous avons détecté que votre bloqueur de popup a bloqué une fenêtre dont l'application a besoin. Vous devez désactiver votre bloqueur de popup pour pouvoir utiliser cet outil."
+msgstr ""
+"Désolé, nous avons détecté que votre bloqueur de popup a bloqué une fenêtre "
+"dont l'application a besoin. Vous devez désactiver votre bloqueur de popup "
+"pour pouvoir utiliser cet outil."
 
 msgid "common_invalid_data"
-msgstr "Erreur : saisie de valeurs incorrectes. Elles sont mises en évidence en rouge."
+msgstr ""
+"Erreur : saisie de valeurs incorrectes. Elles sont mises en évidence en rouge."
 
 msgid "common_more_colors"
 msgstr "Plus de couleurs"
@@ -187,13 +198,13 @@ msgid "advanced_redo_desc"
 msgstr "Rétablir (Ctrl+Y)"
 
 msgid "advanced_link_desc"
-msgstr "Insérer / éditer le lien"
+msgstr "Insérer/éditer le lien"
 
 msgid "advanced_unlink_desc"
 msgstr "Supprimer le lien"
 
 msgid "advanced_image_desc"
-msgstr "Insérer / éditer l'image"
+msgstr "Insérer/éditer l'image"
 
 msgid "advanced_cleanup_desc"
 msgstr "Nettoyer le code"
@@ -226,10 +237,10 @@ msgid "advanced_charmap_desc"
 msgstr "Insérer des caractères spéciaux"
 
 msgid "advanced_visualaid_desc"
-msgstr "Activer / désactiver les guides et les éléments invisibles"
+msgstr "Activer/désactiver les guides et les éléments invisibles"
 
 msgid "advanced_anchor_desc"
-msgstr "Insérer / éditer une ancre"
+msgstr "Insérer/éditer une ancre"
 
 msgid "advanced_cut_desc"
 msgstr "Couper"
@@ -253,7 +264,9 @@ msgid "advanced_blockquote_desc"
 msgstr "Citation"
 
 msgid "advanced_clipboard_msg"
-msgstr "Les fonctions Copier/Couper/Coller ne sont pas valables sur Mozilla et Firefox.\nSouhaitez-vous avoir plus d'informations sur ce sujet ?"
+msgstr ""
+"Les fonctions Copier/Couper/Coller ne sont pas valables sur Mozilla et "
+"Firefox.\nSouhaitez-vous avoir plus d'informations sur ce sujet ?"
 
 msgid "advanced_path"
 msgstr "Chemin"
@@ -262,7 +275,9 @@ msgid "advanced_newdocument"
 msgstr "Êtes-vous sûr de vouloir effacer l'intégralité du document ?"
 
 msgid "advanced_toolbar_focus"
-msgstr "Atteindre les boutons de l'éditeur - Alt+Q, Aller à l'éditeur - Alt-Z, Aller au chemin de l'élément - Alt-X"
+msgstr ""
+"Atteindre les boutons de l'éditeur - Alt+Q, Aller à l'éditeur - Alt-Z, Aller "
+"au chemin de l'élément - Alt-X"
 
 msgid "advanced_more_colors"
 msgstr "Plus de couleurs"
@@ -310,10 +325,10 @@ msgid "advanced_dlg_about_license"
 msgstr "Licence"
 
 msgid "advanced_dlg_about_plugins"
-msgstr "Plugins"
+msgstr "Modules complémentaires"
 
 msgid "advanced_dlg_about_plugin"
-msgstr "Plugin"
+msgstr "Module complémentaire"
 
 msgid "advanced_dlg_about_author"
 msgstr "Auteur"
@@ -322,10 +337,10 @@ msgid "advanced_dlg_about_version"
 msgstr "Version"
 
 msgid "advanced_dlg_about_loaded"
-msgstr "Plugins chargés"
+msgstr "Modules complémentaires chargés"
 
 msgid "advanced_dlg_anchor_title"
-msgstr "Insérer / éditer une ancre"
+msgstr "Insérer/éditer une ancre"
 
 msgid "advanced_dlg_anchor_name"
 msgstr "Nom de l'ancre"
@@ -367,7 +382,7 @@ msgid "advanced_dlg_charmap_title"
 msgstr "Choisir le caractère à insérer"
 
 msgid "advanced_dlg_image_title"
-msgstr "Insérer / éditer une image"
+msgstr "Insérer/éditer une image"
 
 msgid "advanced_dlg_image_src"
 msgstr "URL de l'image"
@@ -418,7 +433,7 @@ msgid "advanced_dlg_image_align_right"
 msgstr "Droite (flottant)"
 
 msgid "advanced_dlg_link_title"
-msgstr "Insérer / éditer un lien"
+msgstr "Insérer/éditer un lien"
 
 msgid "advanced_dlg_link_url"
 msgstr "URL du lien"
@@ -436,10 +451,14 @@ msgid "advanced_dlg_link_titlefield"
 msgstr "Titre"
 
 msgid "advanced_dlg_link_is_email"
-msgstr "L'URL que vous avez saisie semble être une adresse e-mail, souhaitez-vous ajouter le préfixe « mailto: » ?"
+msgstr ""
+"L'URL que vous avez saisie semble être une adresse e-mail, souhaitez-vous "
+"ajouter le préfixe « mailto: » ?"
 
 msgid "advanced_dlg_link_is_external"
-msgstr "L'URL que vous avez saisie semble être une adresse web externe. Souhaitez-vous ajouter le préfixe « http:// » ?"
+msgstr ""
+"L'URL que vous avez saisie semble être une adresse web externe. "
+"Souhaitez-vous ajouter le préfixe « http:// » ?"
 
 msgid "advanced_dlg_link_list"
 msgstr "Liste de liens"
@@ -472,16 +491,18 @@ msgid "insertdatetime_inserttime_desc"
 msgstr "Insérer l'heure"
 
 msgid "insertdatetime_months_long"
-msgstr "Janvier,Février,Mars,Avril,Mai,Juin,Juillet,Août,Septembre,Octobre,Novembre,Décembre"
+msgstr ""
+"janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,dé"
+"cembre"
 
 msgid "insertdatetime_months_short"
-msgstr "Jan,Fév,Mar,Avr,Mai,Juin,Juil,Août,Sep,Oct,Nov,Déc"
+msgstr "jan,fév,mar,avr,mai,juin,juil,août,sep,oct,nov,déc"
 
 msgid "insertdatetime_day_long"
-msgstr "Dimanche,Lundi,Mardi,Mercredi,Jeudi,Vendredi,Samedi,Dimanche"
+msgstr "dimanche,lundi,mardi,mercredi,jeudi,vendredi,samedi,dimanche"
 
 msgid "insertdatetime_day_short"
-msgstr "Dim,Lun,Mar,Mer,Jeu,Ven,Sam,Dim"
+msgstr "dim,lun,mar,mer,jeu,ven,sam,dim"
 
 msgid "print_print_desc"
 msgstr "Imprimer"
@@ -529,10 +550,10 @@ msgid "advhr_advhr_desc"
 msgstr "Insérer un trait horizontal"
 
 msgid "advhr_delta_width"
-msgstr "Ecart de largeur"
+msgstr "Écart de largeur"
 
 msgid "advhr_delta_height"
-msgstr "Ecart de hauteur"
+msgstr "Écart de hauteur"
 
 msgid "advhr_dlg_width"
 msgstr "Largeur"
@@ -610,7 +631,7 @@ msgid "searchreplace_search_desc"
 msgstr "Rechercher"
 
 msgid "searchreplace_replace_desc"
-msgstr "Rechercher / remplacer"
+msgstr "Rechercher/remplacer"
 
 msgid "searchreplace_delta_width"
 msgstr ""
@@ -628,7 +649,7 @@ msgid "searchreplace_dlg_search_title"
 msgstr "Rechercher"
 
 msgid "searchreplace_dlg_replace_title"
-msgstr "Rechercher / remplacer"
+msgstr "Rechercher/remplacer"
 
 msgid "searchreplace_dlg_allreplaced"
 msgstr "Toutes les occurrences de la chaîne recherchée ont été remplacées."
@@ -661,7 +682,7 @@ msgid "searchreplace_dlg_replaceall"
 msgstr "Tout remplacer"
 
 msgid "advimage_image_desc"
-msgstr "Insérer / éditer une image"
+msgstr "Insérer/éditer une image"
 
 msgid "advimage_delta_width"
 msgstr ""
@@ -736,10 +757,14 @@ msgid "advimage_dlg_example_img"
 msgstr "Apparence de l'image"
 
 msgid "advimage_dlg_missing_alt"
-msgstr "Êtes-vous sûr de vouloir continuer sans définir de description pour l'image ? Sans elle, l'image peut ne pas être accessible à certains utilisateurs handicapés, ceux utilisant un navigateur texte ou ceux qui naviguent sans affichage des images."
+msgstr ""
+"Êtes-vous sûr de vouloir continuer sans définir de description pour l'image ? "
+"Sans elle, l'image peut ne pas être accessible à certains utilisateurs "
+"handicapés, ceux utilisant un navigateur texte ou ceux qui naviguent sans "
+"affichage des images."
 
 msgid "advimage_dlg_dialog_title"
-msgstr "Insérer / éditer une image"
+msgstr "Insérer/éditer une image"
 
 msgid "advimage_dlg_src"
 msgstr "URL de l'image"
@@ -793,7 +818,7 @@ msgid "advimage_dlg_image_list"
 msgstr "Liste d'images"
 
 msgid "advlink_link_desc"
-msgstr "Insérer / éditer un lien"
+msgstr "Insérer/éditer un lien"
 
 msgid "advlink_delta_width"
 msgstr ""
@@ -802,7 +827,7 @@ msgid "advlink_delta_height"
 msgstr ""
 
 msgid "advlink_dlg_title"
-msgstr "Insérer / éditer un lien"
+msgstr "Insérer/éditer un lien"
 
 msgid "advlink_dlg_url"
 msgstr "URL du lien"
@@ -814,10 +839,14 @@ msgid "advlink_dlg_titlefield"
 msgstr "Titre"
 
 msgid "advlink_dlg_is_email"
-msgstr "L'URL que vous avez saisie semble être une adresse e-mail, souhaitez-vous ajouter le préfixe « mailto: » ?"
+msgstr ""
+"L'URL que vous avez saisie semble être une adresse e-mail, souhaitez-vous "
+"ajouter le préfixe « mailto: » ?"
 
 msgid "advlink_dlg_is_external"
-msgstr "L'URL que vous avez saisie semble être une adresse web externe. Souhaitez-vous ajouter le préfixe « http:// » ?"
+msgstr ""
+"L'URL que vous avez saisie semble être une adresse web externe. "
+"Souhaitez-vous ajouter le préfixe « http:// » ?"
 
 msgid "advlink_dlg_list"
 msgstr "Liste de liens"
@@ -853,10 +882,10 @@ msgid "advlink_dlg_anchor_names"
 msgstr "Ancres"
 
 msgid "advlink_dlg_target_same"
-msgstr "Ouvrir dans cette fenêtre / dans ce cadre"
+msgstr "Ouvrir dans cette fenêtre/dans ce cadre"
 
 msgid "advlink_dlg_target_parent"
-msgstr "Ouvrir dans la fenêtre / le cadre parent"
+msgstr "Ouvrir dans la fenêtre/le cadre parent"
 
 msgid "advlink_dlg_target_top"
 msgstr "Ouvrir dans le cadre principal (remplace tous les cadres)"
@@ -936,6 +965,7 @@ msgstr "Relation de la page à la cible"
 msgid "advlink_dlg_rev"
 msgstr "Relation de la cible à la page"
 
+#, fuzzy
 msgid "advlink_dlg_tabindex"
 msgstr "Tabindex"
 
@@ -967,7 +997,7 @@ msgid "xhtmlxtras_ins_desc"
 msgstr "Inséré"
 
 msgid "xhtmlxtras_attribs_desc"
-msgstr "Insérer / éditer les attributs"
+msgstr "Insérer/éditer les attributs"
 
 msgid "xhtmlxtras_cite_delta_width"
 msgstr ""
@@ -1021,7 +1051,7 @@ msgid "xhtmlxtras_dlg_attribute_label_cite"
 msgstr "Citation"
 
 msgid "xhtmlxtras_dlg_attribute_label_datetime"
-msgstr "Date / heure"
+msgstr "Date/heure"
 
 msgid "xhtmlxtras_dlg_attribute_label_langdir"
 msgstr "Sens de lecture"
@@ -1035,9 +1065,11 @@ msgstr "De droite à gauche"
 msgid "xhtmlxtras_dlg_attribute_label_langcode"
 msgstr "Langue"
 
+#, fuzzy
 msgid "xhtmlxtras_dlg_attribute_label_tabindex"
 msgstr "TabIndex"
 
+#, fuzzy
 msgid "xhtmlxtras_dlg_attribute_label_accesskey"
 msgstr "Accesskey"
 
@@ -1093,7 +1125,7 @@ msgid "xhtmlxtras_dlg_option_rtl"
 msgstr "De droite à gauche"
 
 msgid "xhtmlxtras_dlg_attribs_title"
-msgstr "Insérer / éditer les attributs"
+msgstr "Insérer/éditer les attributs"
 
 msgid "style_desc"
 msgstr "Éditer la feuille de style (CSS)"
@@ -1297,19 +1329,26 @@ msgid "paste_selectall_desc"
 msgstr "Tout sélectionner"
 
 msgid "paste_plaintext_mode_sticky"
-msgstr "Le collage est actuellement en mode texte non formaté. Cliquez à nouveau pour revenir en mode de collage ordinaire. Après avoir collé quelque chose, vous retournerez en mode de collage ordinaire."
+msgstr ""
+"Le collage est actuellement en mode texte non formaté. Cliquez à nouveau pour "
+"revenir en mode de collage ordinaire. Après avoir collé quelque chose, vous "
+"retournerez en mode de collage ordinaire."
 
 msgid "paste_plaintext_mode"
-msgstr "Le collage est actuellement en mode texte non formaté. Cliquez à nouveau pour revenir en mode de collage ordinaire."
+msgstr ""
+"Le collage est actuellement en mode texte non formaté. Cliquez à nouveau pour "
+"revenir en mode de collage ordinaire."
 
 msgid "paste_dlg_text_title"
-msgstr "Utilisez CTRL+V sur votre clavier pour coller le texte dans la fenêtre."
+msgstr ""
+"Utilisez CTRL+V sur votre clavier pour coller le texte dans la fenêtre."
 
 msgid "paste_dlg_text_linebreaks"
 msgstr "Conserver les retours à la ligne"
 
 msgid "paste_dlg_word_title"
-msgstr "Utilisez CTRL+V sur votre clavier pour coller le texte dans la fenêtre."
+msgstr ""
+"Utilisez CTRL+V sur votre clavier pour coller le texte dans la fenêtre."
 
 msgid "table_desc"
 msgstr "Insérer un nouveau tableau"
@@ -1411,7 +1450,7 @@ msgid "table_dlg_rowtype"
 msgstr "Type de ligne"
 
 msgid "table_dlg_title"
-msgstr "Insérer / modifier un tableau"
+msgstr "Insérer/modifier un tableau"
 
 msgid "table_dlg_width"
 msgstr "Largeur"
@@ -1558,7 +1597,11 @@ msgid "table_dlg_cell_limit"
 msgstr "Vous avez dépassé le nombre maximum de cellules ({$cells})."
 
 msgid "table_dlg_missing_scope"
-msgstr "Êtes-vous sûr de vouloir continuer sans spécifier de portée pour cette cellule de titre ? Sans portée, cela peut être difficile pour certains utilisateurs de comprendre le contenu ou les données affichées dans le tableau."
+msgstr ""
+"Êtes-vous sûr de vouloir continuer sans spécifier de portée pour cette "
+"cellule de titre ? Sans portée, cela peut être difficile pour certains "
+"utilisateurs de comprendre le contenu ou les données affichées dans le "
+"tableau."
 
 msgid "table_dlg_caption"
 msgstr "Afficher la légende du tableau"
@@ -1618,13 +1661,16 @@ msgid "autosave_restore_content"
 msgstr "Restaurer le contenu auto-sauvegardé."
 
 msgid "autosave_warning_message"
-msgstr "Si vous restaurez le contenu sauvé, vous perdrez le contenu qui est actuellement dans l'éditeur.\n\nÊtes-vous sûr de vouloir restaurer le contenu sauvé ?"
+msgstr ""
+"Si vous restaurez le contenu sauvé, vous perdrez le contenu qui est "
+"actuellement dans l'éditeur.\n\nÊtes-vous sûr de vouloir restaurer le contenu "
+"sauvé ?"
 
 msgid "fullscreen_desc"
 msgstr "Passer en mode plein écran"
 
 msgid "media_desc"
-msgstr "Insérer / éditer un média incorporé"
+msgstr "Insérer/éditer un média incorporé"
 
 msgid "media_edit"
 msgstr "Éditer un média incorporé"
@@ -1636,7 +1682,7 @@ msgid "media_delta_height"
 msgstr ""
 
 msgid "media_dlg_title"
-msgstr "Insérer / éditer un fichier média"
+msgstr "Insérer/éditer un fichier média"
 
 msgid "media_dlg_general"
 msgstr "Général"
@@ -1645,7 +1691,7 @@ msgid "media_dlg_advanced"
 msgstr "Avancé"
 
 msgid "media_dlg_file"
-msgstr "Fichier / URL"
+msgstr "Fichier/URL"
 
 msgid "media_dlg_list"
 msgstr "Liste"
@@ -1695,9 +1741,11 @@ msgstr "Échelle"
 msgid "media_dlg_align"
 msgstr "Alignement"
 
+#, fuzzy
 msgid "media_dlg_salign"
 msgstr "SAlign"
 
+#, fuzzy
 msgid "media_dlg_wmode"
 msgstr "WMode"
 
@@ -1785,6 +1833,7 @@ msgstr "Balance"
 msgid "media_dlg_baseurl"
 msgstr "Adresse de base"
 
+#, fuzzy
 msgid "media_dlg_captioningid"
 msgstr "Captioning id"
 
@@ -1813,7 +1862,7 @@ msgid "media_dlg_qt_options"
 msgstr "Options Quicktime"
 
 msgid "media_dlg_wmp_options"
-msgstr "Windows media player options"
+msgstr "Options Windows media player "
 
 msgid "media_dlg_rmp_options"
 msgstr "Options Real media player"
@@ -1855,13 +1904,13 @@ msgid "media_dlg_scriptcallbacks"
 msgstr "Callback de script"
 
 msgid "media_dlg_swstretchstyle"
-msgstr "Stretch style"
+msgstr "Style d'étirement"
 
 msgid "media_dlg_swstretchhalign"
-msgstr "Stretch horizontal"
+msgstr " Étirement horizontal"
 
 msgid "media_dlg_swstretchvalign"
-msgstr "Stretch vertical"
+msgstr " Étirement vertical"
 
 msgid "media_dlg_sound"
 msgstr "Son"
@@ -1873,7 +1922,10 @@ msgid "media_dlg_qtsrc"
 msgstr "Source QT"
 
 msgid "media_dlg_qt_stream_warn"
-msgstr "Les ressources rtsp en streaming doivent être ajoutées au champ « Source QT » dans l'onglet avancé.\nVous devriez aussi ajouter une version n'étant pas en streaming au champ « source QT »."
+msgstr ""
+"Les ressources rtsp en streaming doivent être ajoutées au champ « Source QT » "
+"dans l'onglet avancé.\nVous devriez aussi ajouter une version n'étant pas en "
+"streaming au champ « source QT »."
 
 msgid "media_dlg_align_top"
 msgstr "Haut"
@@ -2218,7 +2270,9 @@ msgid "template_dlg_preview"
 msgstr "Prévisualisation"
 
 msgid "template_dlg_warning"
-msgstr "Attention : Mettre à jour un modèle pour un autre peut entraîner une perte de données !"
+msgstr ""
+"Attention : mettre à jour un modèle pour un autre peut entraîner une perte de "
+"données !"
 
 msgid "template_dlg_mdate_format"
 msgstr "%d/%m/%Y %H:%M:%S"
@@ -2227,16 +2281,18 @@ msgid "template_dlg_cdate_format"
 msgstr "%d/%m/%Y %H:%M:%S"
 
 msgid "template_dlg_months_long"
-msgstr "Janvier,Février,Mars,Avril,Mai,Juin,Juillet,Août,Septembre,Octobre,Novembre,Décembre"
+msgstr ""
+"janvier,février,mars,avril,mai,juin,juillet,août,septembre,octobre,novembre,dé"
+"cembre"
 
 msgid "template_dlg_months_short"
-msgstr "Jan,Fév,Mar,Avr,Mai,Juin,Juil,Août,Sep,Oct,Nov,Déc"
+msgstr "jan,fév,mar,avr,mai,juin,juil,août,sep,oct,nov,déc"
 
 msgid "template_dlg_day_long"
-msgstr "Dimanche,Lundi,Mardi,Mercredi,Jeudi,Vendredi,Samedi,Dimanche"
+msgstr "dimanche,lundi,mardi,mercredi,jeudi,vendredi,samedi,dimanche"
 
 msgid "template_dlg_day_short"
-msgstr "Dim,Lun,Mar,Mer,Jeu,Ven,Sam,Dim"
+msgstr "dim,lun,mar,mer,jeu,ven,sam,dim"
 
 msgid "visualchars_desc"
 msgstr "Activer les caractères de mise en page."
@@ -2275,10 +2331,10 @@ msgid "advlist_types"
 msgstr "Types"
 
 msgid "advlist_def"
-msgstr "Defaut"
+msgstr "Défaut"
 
 msgid "advlist_lower_alpha"
-msgstr "Alpha minuscule"
+msgstr "Alphabétique minuscule"
 
 msgid "advlist_lower_greek"
 msgstr "Grec minuscule"
@@ -2287,7 +2343,7 @@ msgid "advlist_lower_roman"
 msgstr "Romain minuscule"
 
 msgid "advlist_upper_alpha"
-msgstr "Alpha majuscule"
+msgstr "Alphabétique majuscule"
 
 msgid "advlist_upper_roman"
 msgstr "Romain majuscule"
@@ -2300,4 +2356,3 @@ msgstr "Disque"
 
 msgid "advlist_square"
 msgstr "Carré"
-
