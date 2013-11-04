@@ -16,6 +16,10 @@ HISTORY
 1.3.6 (unreleased)
 ------------------
 
+- Move upload button of content browser on the right of search widgets
+  instead of in the footer, where user often miss it.
+  [thomasdesvenain]
+
 - French translations.
   [thomasdesvenain]
 

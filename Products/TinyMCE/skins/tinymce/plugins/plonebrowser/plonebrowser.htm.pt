@@ -42,7 +42,9 @@
                         <input type="text" name="searchtext" id="searchtext" title="Search site" placeholder="Search site" value="" i18n:attributes="placeholder; title" i18n:domain="plone.tinymce"/>
                         <a href="" id="clear-btn" title="Clear" i18n:attributes="title" i18n:domain="plone.tinymce"><img src="img/cancel.png" /></a>
                         <a href="" id="search-btn" title="Search" i18n:attributes="title" i18n:domain="plone.tinymce"><img src="img/magnifier.png" /></a>
+			            <a id="upload" href=""><img src="img/application_get.png" /> <i18n:translate translate="" domain="plone.tinymce">Upload</i18n:translate></a>
                     </div>
+
                 </div>
                 <div class="legend">
                     <a id="listview" href="" title="List view" i18n:attributes="title" i18n:domain="plone.tinymce"><img src="img/display_list.png" /></a>
@@ -258,9 +260,6 @@
         <div class="visualClear"><!-- --></div>
 
         <div id="footer" class="row">
-            <div id="upload-button" class="cell width-3:4 position-0 hide">
-                <img src="img/application_get.png" /> <a id="upload" href="" i18n:translate="" i18n:domain="plone.tinymce">Upload</a>
-            </div>
             <div id="action-button" class="cell width-1:4 position-3:4">
                 <input type="submit" id="insert-selection" class="context plonebutton" name="insert-image"
                        i18n:attributes="value" i18n:domain="plone.tinymce" value="OK" disabled="disabled" />
