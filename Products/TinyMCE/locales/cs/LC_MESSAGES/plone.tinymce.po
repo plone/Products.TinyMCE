@@ -5,17 +5,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plone.tinymce\n"
 "POT-Creation-Date: 2013-04-25 12:54+0000\n"
-"PO-Revision-Date: 2010-08-28 18:30+0100\n"
-"Last-Translator: Radim Novotny <novotny.radim@gmail.com>\n"
+"PO-Revision-Date: 2013-11-24 11:59+0100\n"
+"Last-Translator: Martin \"Snake.AAS\" Grossmann <grossmann.martin@ovacloud."
+"net>\n"
 "Language-Team: DMS4U <info@dms4u.cz>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Language-Code: cs\n"
 "Language-Name: Czech\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone.tinymce\n"
+"X-Generator: Poedit 1.5.7\n"
 
 #: TinyMCE/utility.py:766
 msgid "(remove style)"
@@ -23,11 +25,11 @@ msgstr "(odebrat styl)"
 
 #: TinyMCE/utility.py:765
 msgid "Add new File"
-msgstr ""
+msgstr "Nahrát nový soubor"
 
 #: TinyMCE/utility.py:764
 msgid "Add new Image"
-msgstr ""
+msgstr "Nahrát  nový obrázek"
 
 #: TinyMCE/interfaces/utility.py:339
 msgid "After the deadline (FLOSS)"
@@ -55,11 +57,11 @@ msgstr "Povolit obrázky s popisky"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:32
 msgid "Anchor"
-msgstr ""
+msgstr "Odkaz"
 
 #: TinyMCE/interfaces/utility.py:475
 msgid "Anchor selector expression"
-msgstr ""
+msgstr "Výraz pro výběr kotev"
 
 #: TinyMCE/interfaces/utility.py:356
 msgid "AtD Error types to show"
@@ -67,11 +69,11 @@ msgstr ""
 
 #: TinyMCE/interfaces/utility.py:345
 msgid "AtD Ignore strings"
-msgstr ""
+msgstr "AtD - ignorované řetězce"
 
 #: TinyMCE/interfaces/utility.py:369
 msgid "AtD Service URL"
-msgstr ""
+msgstr "URL AtD služby"
 
 #: TinyMCE/interfaces/utility.py:182
 msgid "Backcolor"
@@ -79,7 +81,7 @@ msgstr "Barva pozadí"
 
 #: TinyMCE/adapters/Upload.py:138
 msgid "Bad filename, please rename."
-msgstr ""
+msgstr "Název souboru obsahuje nepovolené znaky, prosím, přejmenujte jej."
 
 #: TinyMCE/interfaces/utility.py:154
 msgid "Bold"
@@ -87,11 +89,11 @@ msgstr "Tučné"
 
 #: TinyMCE/utility.py:777
 msgid "Browser"
-msgstr ""
+msgstr "Prohlížeč"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:297
 msgid "CSS Style"
-msgstr ""
+msgstr "CSS Styl"
 
 msgid "Call-out"
 msgstr "Zvýrazněné"
@@ -114,7 +116,7 @@ msgstr "Pročistit neupravený kód"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:43
 msgid "Clear"
-msgstr ""
+msgstr "Zrušit"
 
 msgid "Clear floats"
 msgstr "Odebrat plovoucí prvky"
@@ -129,7 +131,7 @@ msgstr "Obsahuje objekty"
 
 #: TinyMCE/browser/controlpanel.py:50
 msgid "Content Browser"
-msgstr ""
+msgstr "Prohlížeč obsahu"
 
 #: TinyMCE/interfaces/utility.py:118
 msgid "Copy"
@@ -154,7 +156,7 @@ msgstr "Vyjmout"
 
 #: TinyMCE/interfaces/utility.py:335
 msgid "Default browser spellchecker"
-msgstr ""
+msgstr "Výchozí kontrola pravopisu prohlížeče"
 
 msgid "Definition description"
 msgstr "Popis definičního termínu"
@@ -173,7 +175,7 @@ msgstr "Popis"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:67
 msgid "Details"
-msgstr ""
+msgstr "Detaily"
 
 msgid "Disc"
 msgstr "Disk"
@@ -212,47 +214,85 @@ msgstr "Povolit automatickou změnu velikosti okna editoru."
 
 #: TinyMCE/interfaces/utility.py:66
 msgid "Enable contextmenu"
-msgstr ""
+msgstr "Povolit kontextové menu"
 
 #: TinyMCE/interfaces/utility.py:44
 msgid "Enable resizing the editor window."
 msgstr "Povolit změnu velikosti okna editoru."
 
 #: TinyMCE/interfaces/utility.py:82
-msgid "Enter a JSON-formatted style format configuration. A format is for example the style that get applied when you press the bold button inside the editor. See http://www.tinymce.com/wiki.php/Configuration:formats"
+msgid ""
+"Enter a JSON-formatted style format configuration. A format is for example "
+"the style that get applied when you press the bold button inside the editor. "
+"See http://www.tinymce.com/wiki.php/Configuration:formats"
 msgstr ""
+"Zadejte kofiguraci formátovacích stylů v JSON formátu. Formát je například "
+"styl, který se aplikuje při stisknutí tlačítka tučně uvnitř editoru. Viz "
+"http://www.tinymce.com/wiki.php/Configuration:formats"
 
 #: TinyMCE/interfaces/utility.py:410
-msgid "Enter a list of content types which can be linked. Format is one contenttype per line."
-msgstr "Zadejte seznam typů položek, které mohou být odkazovány z editoru. Každý typ uveďte na samostatném řádku."
+msgid ""
+"Enter a list of content types which can be linked. Format is one contenttype "
+"per line."
+msgstr ""
+"Zadejte seznam typů položek, které mohou být odkazovány z editoru. Každý typ "
+"uveďte na samostatném řádku."
 
 #: TinyMCE/interfaces/utility.py:415
-msgid "Enter a list of content types which can be used as images. Format is one contenttype per line."
-msgstr "Zadejte seznam typů položek, které mohou být použity jako obrázek. Každý typ uveďte na samostatném řádku."
+msgid ""
+"Enter a list of content types which can be used as images. Format is one "
+"contenttype per line."
+msgstr ""
+"Zadejte seznam typů položek, které mohou být použity jako obrázek. Každý typ "
+"uveďte na samostatném řádku."
 
 #: TinyMCE/interfaces/utility.py:405
-msgid "Enter a list of content types which can contain anchors. Format is one contenttype per line."
-msgstr "Zadejte seznam typů položek, které mohou obsahovat kotvy. Každý typ uveďte na samostatném řádku."
+msgid ""
+"Enter a list of content types which can contain anchors. Format is one "
+"contenttype per line."
+msgstr ""
+"Zadejte seznam typů položek, které mohou obsahovat kotvy. Každý typ uveďte "
+"na samostatném řádku."
 
 #: TinyMCE/interfaces/utility.py:400
-msgid "Enter a list of content types which can contain other objects. Format is one contenttype per line."
-msgstr "Zadejte seznam typů položek, které mohou obsahovat další objektu (tzn. jsou to složky). Každý typ uveďte na samostatném řádku."
+msgid ""
+"Enter a list of content types which can contain other objects. Format is one "
+"contenttype per line."
+msgstr ""
+"Zadejte seznam typů položek, které mohou obsahovat další objektu (tzn. jsou "
+"to složky). Každý typ uveďte na samostatném řádku."
 
 #: TinyMCE/interfaces/utility.py:430
-msgid "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
-msgstr "Zadejte seznam vlastních přídavných modulů, které mají být nahrány do editoru. Formát je: plugin nebo plugin|umístění - každý na samostatném řádku."
+msgid ""
+"Enter a list of custom plugins which will be loaded in the editor. Format is "
+"pluginname or pluginname|location, one per line."
+msgstr ""
+"Zadejte seznam vlastních přídavných modulů, které mají být nahrány do "
+"editoru. Formát je: plugin nebo plugin|umístění - každý na samostatném řádku."
 
 #: TinyMCE/interfaces/utility.py:319
-msgid "Enter a list of custom toolbar buttons which will be loaded in the editor, one per line."
-msgstr "Zadejte seznam vlastních tlačítek na panelu nástrojů - každé na samostatném řádku."
+msgid ""
+"Enter a list of custom toolbar buttons which will be loaded in the editor, "
+"one per line."
+msgstr ""
+"Zadejte seznam vlastních tlačítek na panelu nástrojů - každé na samostatném "
+"řádku."
 
 #: TinyMCE/interfaces/utility.py:77
-msgid "Enter a list of styles to appear in the style pulldown. Format is title|tag or title|tag|className, one per line."
-msgstr "Zadejte seznam stylů, které se zobrazí v seznamu dostupných stylů. Formát je:  název|tag nebo název|tag|className - každý styl na samostatném řádku."
+msgid ""
+"Enter a list of styles to appear in the style pulldown. Format is title|tag "
+"or title|tag|className, one per line."
+msgstr ""
+"Zadejte seznam stylů, které se zobrazí v seznamu dostupných stylů. Formát "
+"je:  název|tag nebo název|tag|className - každý styl na samostatném řádku."
 
 #: TinyMCE/interfaces/utility.py:92
-msgid "Enter a list of styles to appear in the table style pulldown. Format is title|class, one per line."
-msgstr "Zadejte seznam stylů, které se zobrazí v seznamu stylů pro tabulky. Formát je název|class - každý styl na samostatném řádku."
+msgid ""
+"Enter a list of styles to appear in the table style pulldown. Format is "
+"title|class, one per line."
+msgstr ""
+"Zadejte seznam stylů, které se zobrazí v seznamu stylů pro tabulky. Formát "
+"je název|class - každý styl na samostatném řádku."
 
 #: TinyMCE/interfaces/utility.py:434
 msgid "Entity encoding"
@@ -294,7 +334,7 @@ msgstr "Barva popředí"
 
 #: TinyMCE/interfaces/utility.py:81
 msgid "Formats"
-msgstr ""
+msgstr "Formáty"
 
 msgid "Heading"
 msgstr "Nadpis"
@@ -312,7 +352,7 @@ msgstr "Domů"
 
 #: TinyMCE/utility.py:762
 msgid "Image Browser"
-msgstr ""
+msgstr "Prohlížeč obrázků"
 
 #: TinyMCE/interfaces/utility.py:414
 msgid "Image Objects"
@@ -320,7 +360,7 @@ msgstr "Obrázky"
 
 #: TinyMCE/interfaces/utility.py:453
 msgid "Image Shortcuts"
-msgstr ""
+msgstr "Zkratky obrázků"
 
 #: TinyMCE/interfaces/utility.py:390
 msgid "Images will be automatically captioned."
@@ -353,7 +393,7 @@ msgstr "Vložit vodorovné pravítko"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:171
 msgid "Insert image from URL"
-msgstr ""
+msgstr "Vložte URL obrázku"
 
 #: TinyMCE/interfaces/utility.py:270
 msgid "Insert non-breaking space character"
@@ -369,7 +409,7 @@ msgstr "Vložit čas"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:5
 msgid "Insert/Edit"
-msgstr ""
+msgstr "Vložit/Upravit"
 
 #: TinyMCE/interfaces/utility.py:234
 msgid "Insert/edit anchor"
@@ -393,7 +433,7 @@ msgstr "Vložit/upravit média"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:20
 msgid "Internal"
-msgstr ""
+msgstr "Interní"
 
 msgid "Invisible grid"
 msgstr "Neviditelná mřížka"
@@ -413,15 +453,15 @@ msgstr "Knihovny"
 
 #: TinyMCE/utility.py:763
 msgid "Link Browser"
-msgstr ""
+msgstr "Prohlížeč odkazů"
 
 #: TinyMCE/interfaces/utility.py:445
 msgid "Link Shortcuts"
-msgstr ""
+msgstr "Zkratky odkazů"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:277
 msgid "Link Title"
-msgstr ""
+msgstr "Titulek odkazu"
 
 #. Default: "Link to anchor"
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:250
@@ -430,27 +470,35 @@ msgstr "Odkaz na kotvu"
 
 #: TinyMCE/interfaces/utility.py:384
 msgid "Link using UIDs"
-msgstr ""
+msgstr "Odkazy používají UID"
 
 #: TinyMCE/interfaces/utility.py:409
 msgid "Linkable Objects"
 msgstr "Odkazovatelné objekty"
 
 #: TinyMCE/interfaces/utility.py:385
-msgid "Links to objects on this site can use unique object ids so that the links remain valid even if the target object is renamed or moved elsewhere on the site."
+msgid ""
+"Links to objects on this site can use unique object ids so that the links "
+"remain valid even if the target object is renamed or moved elsewhere on the "
+"site."
 msgstr ""
+"Odkazy na objekty na tomto webu mohou používat unikátní identifikátory, "
+"takže odkazy zůstanou funkční i pokud je cílový objekt přejmenován nebo "
+"přesunut na jiné místo v rámci webu."
 
 #: TinyMCE/interfaces/utility.py:454
 msgid "List of shortcuts to appear in image browser for quick navigation."
 msgstr ""
+"Seznam zkratek, které se objeví v prohlížeči obrázků pro rychlou navigaci."
 
 #: TinyMCE/interfaces/utility.py:446
 msgid "List of shortcuts to appear in link browser for quick navigation."
 msgstr ""
+"Seznam zkratek, které se objeví v prohlížeči odkazů pro rychlou navigaci."
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:48
 msgid "List view"
-msgstr ""
+msgstr "Zobrazení seznamu"
 
 #: TinyMCE/utility.py:773
 msgid "Lists"
@@ -468,6 +516,7 @@ msgstr "Malé římské"
 #: TinyMCE/interfaces/utility.py:31
 msgid "Must be empty or a valid JSON-formatted configuration – ${message}."
 msgstr ""
+"Musí být prázdné, nebo platná JSON formátovaná konfigurace - ${message}."
 
 #: TinyMCE/interfaces/utility.py:437
 msgid "Named"
@@ -487,11 +536,11 @@ msgstr "Obyčejný odstavec"
 
 #: TinyMCE/adapters/Upload.py:141
 msgid "Not allowed to upload a file of this type to this folder"
-msgstr ""
+msgstr "Tento typ souboru není možné nahrát do této složky"
 
 #: TinyMCE/interfaces/utility.py:468
 msgid "Number of columns in thumbnails mode"
-msgstr ""
+msgstr "Počet sloupců v náhledovém zobrazení"
 
 msgid "Numbers"
 msgstr "Čísla"
@@ -502,7 +551,7 @@ msgstr "Číselné"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:267
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 msgid "Odd row"
 msgstr "Lichý řádek"
@@ -513,7 +562,7 @@ msgstr "Číslovaný seznam"
 
 #: TinyMCE/utility.py:192
 msgid "Original"
-msgstr ""
+msgstr "Původní"
 
 #: TinyMCE/interfaces/utility.py:214
 msgid "Outdent"
@@ -536,7 +585,7 @@ msgstr "Vložit z Wordu"
 
 #: TinyMCE/interfaces/utility.py:105
 msgid "Place toolbar on top of the page"
-msgstr ""
+msgstr "Umístit nástrojovou lištu na vrch stránky"
 
 #: TinyMCE/utility.py:768
 msgid "Plain cell"
@@ -550,10 +599,9 @@ msgstr "Náhled"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:220
 msgid "Preview URL"
-msgstr ""
+msgstr "Náhled URL"
 
-#: TinyMCE/interfaces/utility.py:278
-#: TinyMCE/utility.py:774
+#: TinyMCE/interfaces/utility.py:278 TinyMCE/utility.py:774
 msgid "Print"
 msgstr "Tisk"
 
@@ -586,15 +634,15 @@ msgstr "Uložit"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:44
 msgid "Search"
-msgstr ""
+msgstr "Vyhledat"
 
 #: TinyMCE/utility.py:779
 msgid "Search results:"
-msgstr ""
+msgstr "Výsledky vyhledávání:"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:42
 msgid "Search site"
-msgstr ""
+msgstr "Prohledat portál"
 
 #: TinyMCE/interfaces/utility.py:150
 msgid "Select Style"
@@ -610,7 +658,7 @@ msgstr "Nastavení TinyMCE editoru"
 
 #: TinyMCE/utility.py:778
 msgid "Shortcuts"
-msgstr ""
+msgstr "Záložky"
 
 #: TinyMCE/interfaces/utility.py:286
 msgid "Spellchecker"
@@ -618,7 +666,7 @@ msgstr "Kontrola pravopisu"
 
 #: TinyMCE/interfaces/utility.py:327
 msgid "Spellchecker plugin to use"
-msgstr ""
+msgstr "Používaný doplněk pro kontrolu pravopisu"
 
 msgid "Square"
 msgstr "Čtverec"
@@ -673,51 +721,96 @@ msgstr "Text"
 
 #: TinyMCE/adapters/Upload.py:166
 msgid "The content-type '%s' has no image-field!"
-msgstr ""
+msgstr "Obsahový typ '%s' nemá žádné obrázkové pole!"
 
 #: TinyMCE/interfaces/utility.py:328
-msgid "This option allows you to choose the spellchecker for TinyMCE. If you want the spellchecker button to be visible, make sure it is enabled in the toolbar settings."
+msgid ""
+"This option allows you to choose the spellchecker for TinyMCE. If you want "
+"the spellchecker button to be visible, make sure it is enabled in the "
+"toolbar settings."
 msgstr ""
+"Zde je možné nastavit kontrolu pravopisu pro TinyMCE. Pokud chcete mít "
+"tlačítko pro kontrolu pravopisu viditelné, ujistěte se že je povoleno v "
+"nastavení nástrojové lišty"
 
 #: TinyMCE/interfaces/utility.py:435
-msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
-msgstr "Tato položka určuje, jak budou entity/znaky uloženy - Pojmenované: Znaky budou konvertovány do pojmenovaných entit podle nastavení entit. Číselné: Znaky budou konvertovány do číselných entit. Originál: Všechny znaky kromě výchozích XML entit (amp lt gt quot) budou ponechány v původní formě."
+msgid ""
+"This option controls how entities/characters get processed. Named: "
+"Characters will be converted into named entities based on the entities "
+"option. Numeric: Characters will be converted into numeric entities. Raw: "
+"All characters will be stored in non-entity form except these XML default "
+"entities: amp lt gt quot"
+msgstr ""
+"Tato položka určuje, jak budou entity/znaky uloženy - Pojmenované: Znaky "
+"budou konvertovány do pojmenovaných entit podle nastavení entit. Číselné: "
+"Znaky budou konvertovány do číselných entit. Originál: Všechny znaky kromě "
+"výchozích XML entit (amp lt gt quot) budou ponechány v původní formě."
 
 #: TinyMCE/interfaces/utility.py:106
-msgid "This option enables the external toolbar which will be placed at the top of the page."
-msgstr "Zde je možné povolit externí nástrojovou lištu, která bude umístěna k hornímu okraji stránky."
+msgid ""
+"This option enables the external toolbar which will be placed at the top of "
+"the page."
+msgstr ""
+"Zde je možné povolit externí nástrojovou lištu, která bude umístěna k "
+"hornímu okraji stránky."
 
 #: TinyMCE/interfaces/utility.py:72
-msgid "This option enables you to specify a custom CSS file that replaces the theme content CSS. This CSS file is the one used within the editor (the editable area)."
-msgstr "Tato volba umožňuje specifikovat vlastní CSS soubor, který nahradí CSS pro pole s vlastním obsahem. Tento CSS soubor se použije v oblasti pro editaci."
+msgid ""
+"This option enables you to specify a custom CSS file that replaces the theme "
+"content CSS. This CSS file is the one used within the editor (the editable "
+"area)."
+msgstr ""
+"Tato volba umožňuje specifikovat vlastní CSS soubor, který nahradí CSS pro "
+"pole s vlastním obsahem. Tento CSS soubor se použije v oblasti pro editaci."
 
 #: TinyMCE/interfaces/utility.py:50
-msgid "This option gives you the ability to enable/disable auto resizing the editor window depending on the content."
-msgstr "Zde je možné nastavit, zda se velikost okna editoru může automaticky měnit podle aktuálního obsahu."
+msgid ""
+"This option gives you the ability to enable/disable auto resizing the editor "
+"window depending on the content."
+msgstr ""
+"Zde je možné nastavit, zda se velikost okna editoru může automaticky měnit "
+"podle aktuálního obsahu."
 
 #: TinyMCE/interfaces/utility.py:45
-msgid "This option gives you the ability to enable/disable resizing the editor window. If the editor width is set to a percentage only vertical resizing is enabled."
-msgstr "Zde je možné zvolit, zda bude možné uživatelsky měnit velikost editoru. Pokud je šířka nastavena procenty, pak bude možné měnit jen výšku editoru."
+msgid ""
+"This option gives you the ability to enable/disable resizing the editor "
+"window. If the editor width is set to a percentage only vertical resizing is "
+"enabled."
+msgstr ""
+"Zde je možné zvolit, zda bude možné uživatelsky měnit velikost editoru. "
+"Pokud je šířka nastavena procenty, pak bude možné měnit jen výšku editoru."
 
 #: TinyMCE/interfaces/utility.py:67
-msgid "This option gives you the ability to enable/disable the use of the contextmenu."
-msgstr "Toto nastavení umožňuje povolit nebo zakázat použití kontextového menu (pravé tlačítko myši)."
+msgid ""
+"This option gives you the ability to enable/disable the use of the "
+"contextmenu."
+msgstr ""
+"Toto nastavení umožňuje povolit nebo zakázat použití kontextového menu "
+"(pravé tlačítko myši)."
 
 #: TinyMCE/interfaces/utility.py:62
-msgid "This option gives you the ability to specify the height of the editor in pixels. If auto resize is enabled this value is used as minimum height."
-msgstr "Zde je možné nastavit výšku editoru v pixelech. Pokud je povolena automatická změna velikosti, je tato hodnota považována za minimální výšku."
+msgid ""
+"This option gives you the ability to specify the height of the editor in "
+"pixels. If auto resize is enabled this value is used as minimum height."
+msgstr ""
+"Zde je možné nastavit výšku editoru v pixelech. Pokud je povolena "
+"automatická změna velikosti, je tato hodnota považována za minimální výšku."
 
 #: TinyMCE/interfaces/utility.py:56
-msgid "This option gives you the ability to specify the width of the editor (like 100% or 400px)."
-msgstr ""
+msgid ""
+"This option gives you the ability to specify the width of the editor (like "
+"100% or 400px)."
+msgstr "Zde je možné nastavit šířku editoru (např. 100% nebo 400px)."
 
 #: TinyMCE/interfaces/utility.py:101
-msgid "This option gives you the ability to specify the width of the toolbar in pixels."
-msgstr "Zde je možné nastavit šířku nástrojoové lišty v pixelech."
+msgid ""
+"This option gives you the ability to specify the width of the toolbar in "
+"pixels."
+msgstr "Zde je možné nastavit šířku nástrojové lišty v pixelech."
 
 #: TinyMCE/interfaces/utility.py:461
 msgid "Thumbnail size in thumbnails mode"
-msgstr ""
+msgstr "Velikost náhledů  v náhledovém zobrazení"
 
 #. Default: "TinyMCE"
 #: TinyMCE/profiles/upgrade_10_to_11/controlpanel.xml
@@ -773,11 +866,11 @@ msgstr "Nečíslovaný seznam"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:160
 msgid "Upload"
-msgstr ""
+msgstr "Nahrát"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:133
 msgid "Upload File"
-msgstr ""
+msgstr "Nahrát soubor"
 
 msgid "Upper Alpha"
 msgstr "Velké A,B,C,..."
@@ -790,18 +883,27 @@ msgid "Visual control characters on/off"
 msgstr "Zapnout/vypnout řídící znaky"
 
 #: TinyMCE/interfaces/utility.py:395
-msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
-msgstr "Je-li povoleno, uživatel nebude moci při výběru odkazovaných položek opustit aktuální složku a její podsložky."
+msgid ""
+"When enabled the user will be rooted to the current object and can't add "
+"links and images from other parts of the site."
+msgstr ""
+"Je-li povoleno, uživatel nebude moci při výběru odkazovaných položek opustit "
+"aktuální složku a její podsložky."
 
 #. Default: "A CSS level 3 pattern used to match elements that can serve as anchors. The default value is to match headings."
 #: TinyMCE/interfaces/utility.py:476
 msgid "help_anchor_selector"
 msgstr ""
+"CSS3 vzor použitý pro nalezení elementů, které mohou sloužit jako kotvy. "
+"Výchozí hodnota odpovídá nadpisům."
 
 #. Default: "The URL of the \"After the Deadline\" grammar and spell checking server. The default value is the public server, but ideally you should download and install your own and specify its address here."
 #: TinyMCE/interfaces/utility.py:370
 msgid "help_atd_service_url"
 msgstr ""
+"URL serveru \"After the Deadline\" pro kontrolu gramatiky a pravopisu. "
+"Výchozí hodnota je veřejný server, ale ideálně byste měli stáhnout a "
+"instalovat vlastní a uvést jeho adresu zde."
 
 #. Default: "A list of error types which the \"After the Deadline\" spellchecker should check for. By default, all the available error type will be listed here."
 #: TinyMCE/interfaces/utility.py:357
@@ -812,24 +914,29 @@ msgstr ""
 #: TinyMCE/interfaces/utility.py:420
 msgid "help_tinymce_plugins"
 msgstr ""
+"Zadejte seznam vlastních přídavných modulů, které mají být nahrány do "
+"editoru. Formát je: plugin nebo plugin|umístění - každý na samostatném řádku."
 
 #: TinyMCE/interfaces/utility.py:337
 msgid "ieSpell (free for personal use)"
-msgstr ""
+msgstr "ieSpell (zdarma pro osobní použití)"
 
 #. Default: "A list of strings which the \"After the Deadline\"spellchecker should ignore. Note: This option is only applicable when the appropriate spellchecker has been chosen above."
 #: TinyMCE/interfaces/utility.py:346
 msgid "label_atd_ignore_strings"
 msgstr ""
+"Seznam řetězců, které by měla kontrola pravopisu \"After the Deadline\" "
+"ignorovat. Poznámka: Tato možnost platí pouze tehdy, je-li výše vybrána "
+"vhodná kontrola pravopisu."
 
 #. Default: "Editor Plugins"
 #: TinyMCE/interfaces/utility.py:419
 msgid "label_tinymce_plugins"
-msgstr ""
+msgstr "Doplňky editoru"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:154
 msgid "or External URL"
-msgstr ""
+msgstr "nebo externí URL"
 
 #. Default: "Edit without visual editor"
 #: TinyMCE/skins/tinymce/tinymce_wysiwyg_support.pt:33
@@ -840,4 +947,3 @@ msgstr ""
 #: TinyMCE/skins/tinymce/tinymce_wysiwyg_support.pt:41
 msgid "suppress_visual_editor_with"
 msgstr ""
-
