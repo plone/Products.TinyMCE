@@ -20,7 +20,7 @@ except pkg_resources.DistributionNotFound:
 else:
     HAS_DEXTERITY = True
     from plone.dexterity.interfaces import IDexterityContent
-    from plone.namedfile.interfaces import INamedImageField
+    from plone.namedfile.interfaces import INamedField
     from plone.rfc822.interfaces import IPrimaryFieldInfo
 
 
@@ -97,8 +97,9 @@ class Upload(object):
         ctr_tool = getToolByName(context, 'content_type_registry')
         utility = getToolByName(context, 'portal_tinymce')
 
-        id = request['uploadfile'].filename
-        content_type = request['uploadfile'].headers["Content-Type"]
+        uploadfile = request['uploadfile']
+        id = uploadfile.filename
+        content_type = uploadfile.headers["Content-Type"]
         typename = ctr_tool.findTypeName(id, content_type, "")
 
         # Permission checks based on code by Danny Bloemendaal
@@ -161,13 +162,13 @@ class Upload(object):
                 obj.description = description
 
         if HAS_DEXTERITY and IDexterityContent.providedBy(obj):
-            if not self.setDexterityImage(obj):
+            if not self.setDexterityItem(obj, uploadfile):
                 return self.errorMessage(
-                    _("The content-type '%s' has no image-field!" % metatype))
+                    _("The content-type '%s' has no blob-field!" % metatype))
         else:
             # set primary field
             pf = obj.getPrimaryField()
-            pf.set(obj, request['uploadfile'])
+            pf.set(obj, uploadfile)
 
         if not obj:
             return self.errorMessage("Could not upload the file")
@@ -181,18 +182,17 @@ class Upload(object):
             path = obj.absolute_url()
         return self.okMessage(path, folder)
 
-    def setDexterityImage(self, obj):
-        """ Set the image-field of dexterity-based types
+    def setDexterityItem(self, obj, uploadfile):
+        """ Set the blob-field of dexterity-based types
 
-        This works with the "Image"-type of plone.app.contenttypes and has
-        fallbacks for other implementations of image-types with dexterity.
+        This works with blob-types of plone.app.contenttypes and has
+        fallbacks for other implementations of blob-types with dexterity.
 
         """
-        request = self.context.REQUEST
         field_name = ''
         info = ''
         try:
-            # Use the primary field if it's an image-field
+            # Use the primary field if it's an blob-field
             info = IPrimaryFieldInfo(obj, None)
         except TypeError:
             # ttw-types without a primary field throw a TypeError on
@@ -200,24 +200,22 @@ class Upload(object):
             pass
         if info:
             field = info.field
-            if INamedImageField.providedBy(field):
+            if INamedField.providedBy(field):
                 field_name = info.fieldname
         if not field_name:
-            # Use the first image-field in the schema
+            # Use the first blob-field in the schema
             obj_schema = queryContentType(obj)
             obj_fields = getFieldsInOrder(obj_schema)
             for field_info in obj_fields:
                 field = field_info[1]
-                field_schema = getattr(field, 'schema', None)
-                if field_schema and field_schema.getName() in [
-                    'INamedBlobImage', 'INamedImage']:
+                if INamedField.providedBy(field):
                     field_name = field_info[0]
                     break
         if not field_name:
             return False
         else:
             # Create either a NamedBlobImage or a NamedImage
-            setattr(obj, field_name, field._type(request['uploadfile'].read(),
+            setattr(obj, field_name, field._type(uploadfile.read(),
                                                  filename=unicode(id)))
         return True
 
