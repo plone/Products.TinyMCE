@@ -22,6 +22,11 @@ HISTORY
 - Require ``plone.app.layout==2.3.7`` which includes bodyClass fix.
   [saily]
 
+- Valid HTML 5 attribute ``start`` for ``ol`` no more removed
+  (close `#13566`__)
+  [keul]
+
+__ https://dev.plone.org/ticket/13566
 
 1.3.5 (2013-08-14)
 ------------------

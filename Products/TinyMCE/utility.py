@@ -459,7 +459,7 @@ class TinyMCE(SimpleItem):
             'meta': I18N_ATTRS | set('id http-equiv name content scheme'.split()),
             'noscript': COMMON_ATTRS.copy(),
             'object': COMMON_ATTRS | set('declare classid codebase data type codetype archive standby height width usemap name tabindex align border hspace vspace'.split()),
-            'ol': COMMON_ATTRS | set('compact type'.split()),
+            'ol': COMMON_ATTRS | set('compact type start'.split()),
             'optgroup': COMMON_ATTRS | set('disabled label'.split()),
             'option': COMMON_ATTRS | set('selected disabled label value'.split()),
             'p': COMMON_ATTRS | set('align'.split()),
