@@ -6,7 +6,7 @@ from zope.interface import implements
 try:
     from lxml.html import fromstring
     fromstring     # pyflakes
-    SEARCHPATTERN = "a"
+    SEARCHPATTERN = ".//a"
 except ImportError:
     from elementtree import HTMLTreeBuilder
 
