@@ -10,7 +10,7 @@ from zope.schema import getFieldsInOrder
 try:
     from lxml.html import fromstring
     fromstring     # pyflakes
-    SEARCHPATTERN = "a"
+    SEARCHPATTERN = ".//a"
 except ImportError:
     from elementtree import HTMLTreeBuilder
 
