@@ -4,6 +4,10 @@ HISTORY
 
 1.3.6 (unreleased)
 ------------------
+
+- Fix selector used for finding anchors
+  [vangheem]
+
 - Fixed uploading dexterity file via TinyMCE file uploader.
   [kroman0]
 
