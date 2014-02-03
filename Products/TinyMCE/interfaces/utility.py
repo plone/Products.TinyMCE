@@ -437,14 +437,6 @@ class ITinyMCEResourceTypes(Interface):
         vocabulary=SimpleVocabulary([SimpleTerm('named', 'named', _(u"Named")), SimpleTerm('numeric', 'numeric', _(u"Numeric")), SimpleTerm('raw', 'raw', _(u"Raw"))]),
         required=False)
 
-    filter_valid_html_elements = schema.Bool(
-        title=_(u"Filter valid html elements"),
-        description=_(u"Should tinymce filter for valid HTML elements. If you "
-                      u"are editing this setting, you'll likely also need to "
-                      u"modify this site's HTML Filtering settings."),
-        required=False,
-        default=True)
-
 
 class ITinyMCEContentBrowser(Interface):
     """This interface defines the content browser properties."""

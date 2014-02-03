@@ -161,7 +161,6 @@ class TinyMCE(SimpleItem):
     imageobjects = FieldProperty(ITinyMCEResourceTypes['imageobjects'])
     plugins = FieldProperty(ITinyMCEResourceTypes['plugins'])
     customplugins = FieldProperty(ITinyMCEResourceTypes['customplugins'])
-    filter_valid_html_elements = FieldProperty(ITinyMCEResourceTypes['filter_valid_html_elements'])
 
     link_shortcuts = FieldProperty(ITinyMCEContentBrowser['link_shortcuts'])
     image_shortcuts = FieldProperty(ITinyMCEContentBrowser['image_shortcuts'])
@@ -388,7 +387,9 @@ class TinyMCE(SimpleItem):
         """Return valid (X)HTML elements and their attributes
         that can be used within TinyMCE
         """
-        if not self.filter_valid_html_elements:
+        # Get safe html transform
+        safe_html = getattr(getToolByName(self, 'portal_transforms'), 'safe_html')
+        if safe_html.get_parameter_value('disable_transform'):
             return {'*': ['*']}
 
         XHTML_TAGS = set(
@@ -493,9 +494,6 @@ class TinyMCE(SimpleItem):
             'var': COMMON_ATTRS.copy(),
             'iframe': COMMON_ATTRS | set('src name scrolling frameborder longdesc align height width marginheight marginwidth'.split())
             }
-
-        # Get safe html transform
-        safe_html = getattr(getToolByName(self, 'portal_transforms'), 'safe_html')
 
         # Get custom tags
         valid_tags = set(safe_html.get_parameter_value('valid_tags'))
