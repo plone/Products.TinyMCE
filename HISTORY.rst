@@ -4,6 +4,8 @@ HISTORY
 
 1.4.0 (unreleased)
 ------------------
+- Pay attention to safe html filter being disabled for tinymce configuration
+  [vangheem]
 
 - Fix selector used for finding anchors
   [vangheem]
@@ -14,10 +16,6 @@ HISTORY
 
 - Use the PLONE_APP_CONTENTTYPES_FIXTURE test layer for Plone 5 compatibility.
   [timo]
-
-
-1.3.6 (unreleased)
-------------------
 
 - Move upload button of content browser on the right of search widgets
   instead of in the footer, where user often miss it.

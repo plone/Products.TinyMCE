@@ -387,6 +387,11 @@ class TinyMCE(SimpleItem):
         """Return valid (X)HTML elements and their attributes
         that can be used within TinyMCE
         """
+        # Get safe html transform
+        safe_html = getattr(getToolByName(self, 'portal_transforms'), 'safe_html')
+        if safe_html.get_parameter_value('disable_transform'):
+            return {'*': ['*']}
+
         XHTML_TAGS = set(
             'a abbr acronym address area b base bdo big blockquote body br '
             'button caption cite code col colgroup dd del div dfn dl dt em '
@@ -489,9 +494,6 @@ class TinyMCE(SimpleItem):
             'var': COMMON_ATTRS.copy(),
             'iframe': COMMON_ATTRS | set('src name scrolling frameborder longdesc align height width marginheight marginwidth'.split())
             }
-
-        # Get safe html transform
-        safe_html = getattr(getToolByName(self, 'portal_transforms'), 'safe_html')
 
         # Get custom tags
         valid_tags = set(safe_html.get_parameter_value('valid_tags'))

@@ -3,6 +3,7 @@ from zope.component import getUtility
 from Products.CMFPlone.tests import dummy
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.tests.base import FunctionalTestCase
+from Products.CMFCore.utils import getToolByName
 
 
 class TransformsTestCase(FunctionalTestCase):
@@ -71,3 +72,16 @@ class TransformsTestCase(FunctionalTestCase):
 
         transformed_text_2 = self.portal.portal_transforms.convertTo('text/x-html-safe', text, mimetype='text/html', context=self.portal)
         self.assertNotEqual(unicode(transformed_text_2).replace(' ', ''), unicode(transformed_text).replace(' ', ''))
+
+    def test_does_not_provide_valid_elements_when_safe_html_disabled(self):
+        safe_html = getattr(getToolByName(self.portal, 'portal_transforms'), 'safe_html')
+        safe_html._config['disable_transform'] = 1
+        tinymce = getUtility(ITinyMCE)
+        self.assertEqual(tinymce.getValidElements(), {'*': ['*']})
+        safe_html._config['disable_transform'] = 0
+
+    def test_provide_valid_elements_when_safe_html_disabled(self):
+        safe_html = getattr(getToolByName(self.portal, 'portal_transforms'), 'safe_html')
+        safe_html._config['disable_transform'] = 0
+        tinymce = getUtility(ITinyMCE)
+        self.assertNotEqual(tinymce.getValidElements(), {'*': ['*']})
