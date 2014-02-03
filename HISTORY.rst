@@ -5,6 +5,9 @@ HISTORY
 1.3.6 (unreleased)
 ------------------
 
+- Pay attention to safe html filter being disabled for tinymce configuration
+  [vangheem]
+
 - Fix selector used for finding anchors
   [vangheem]
 
