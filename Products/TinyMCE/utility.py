@@ -161,6 +161,7 @@ class TinyMCE(SimpleItem):
     imageobjects = FieldProperty(ITinyMCEResourceTypes['imageobjects'])
     plugins = FieldProperty(ITinyMCEResourceTypes['plugins'])
     customplugins = FieldProperty(ITinyMCEResourceTypes['customplugins'])
+    filter_valid_html_elements = FieldProperty(ITinyMCEResourceTypes['filter_valid_html_elements'])
 
     link_shortcuts = FieldProperty(ITinyMCEContentBrowser['link_shortcuts'])
     image_shortcuts = FieldProperty(ITinyMCEContentBrowser['image_shortcuts'])
@@ -387,6 +388,9 @@ class TinyMCE(SimpleItem):
         """Return valid (X)HTML elements and their attributes
         that can be used within TinyMCE
         """
+        if not self.filter_valid_html_elements:
+            return {'*': ['*']}
+
         XHTML_TAGS = set(
             'a abbr acronym address area b base bdo big blockquote body br '
             'button caption cite code col colgroup dd del div dfn dl dt em '
