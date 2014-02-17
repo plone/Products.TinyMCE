@@ -4,6 +4,14 @@ HISTORY
 
 1.4.0 (unreleased)
 ------------------
+
+- Reapplied fix for missing popups when zoom is applied in Chrome from pull
+  request 29. Credits go to bosim, raekjaer and jaroel for fix
+  (close `#13013`__)
+  [ichim-david]
+
+__ https://dev.plone.org/ticket/13013
+
 - Pay attention to safe html filter being disabled for tinymce configuration
   [vangheem]
 
