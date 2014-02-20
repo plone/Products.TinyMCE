@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.3.6 (unreleased)
+1.3.6 (2014-02-19)
 ------------------
 
 - Reapplied fix for missing popups when zoom is applied in Chrome from pull
