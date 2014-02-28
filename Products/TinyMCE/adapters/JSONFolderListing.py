@@ -130,6 +130,7 @@ class JSONFolderListing(object):
                 'icon': getIcon(brain),
                 'description': description,
                 'is_folderish': brain.is_folderish,
+                'is_image': brain.portal_type in image_types,
                 })
 
         # add catalog_ressults

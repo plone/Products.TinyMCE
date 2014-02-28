@@ -853,7 +853,7 @@ BrowserDialog.prototype.getFolderListing = function (context_url, method) {
                         case 'listview':
                             if (item.is_folderish) {
                                 folder_html.push('<div class="list item folderish ' + (i % 2 === 0 ? 'even' : 'odd') + '">');
-                                if (self.is_link_plugin === true) {
+                                if (self.is_link_plugin === true || item.is_image) {
                                     jq.merge(folder_html, [
                                         '<input href="' + item.url + '" ',
                                             'type="radio" class="noborder" style="margin: 0; width: 16px" name="internallink" value="',

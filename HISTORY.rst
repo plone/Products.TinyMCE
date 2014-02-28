@@ -5,6 +5,10 @@ HISTORY
 1.4.0 (unreleased)
 ------------------
 
+- Make sure folderish items can be selected as images if they are listed
+  as image types.
+  [davisagli]
+
 - Reapplied fix for missing popups when zoom is applied in Chrome from pull
   request 29. Credits go to bosim, raekjaer and jaroel for fix
   (close `#13013`__)
