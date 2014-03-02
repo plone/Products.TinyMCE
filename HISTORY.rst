@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.4.0 (unreleased)
+1.4.0 (2014-03-02)
 ------------------
 
 - Make sure folderish items can be selected as images if they are listed
