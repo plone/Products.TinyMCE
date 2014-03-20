@@ -2,10 +2,13 @@
 HISTORY
 =======
 
-1.4.1 (unreleased)
+1.5.0 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add support for inserting images and linking to objects outside of 
+  the navigation root. Configurable via a new setting in the control 
+  panel / content browser tab.
+  [anthonygerrard]
 
 
 1.4.0 (2014-03-02)

@@ -441,6 +441,11 @@ class ITinyMCEResourceTypes(Interface):
 class ITinyMCEContentBrowser(Interface):
     """This interface defines the content browser properties."""
 
+    use_plone_site_as_root = schema.Bool(
+        title=_(u"Use Plone site as root"),
+        description=_(u"Otherwise use the INavigationRoot of the page you are on"),
+        required=False)
+
     link_shortcuts = schema.List(
         title=_("Link Shortcuts"),
         description=_(u"List of shortcuts to appear in link browser for quick navigation."),

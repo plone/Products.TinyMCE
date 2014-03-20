@@ -12,7 +12,7 @@ else:
     requires = []
 
 setup(name='Products.TinyMCE',
-    version='1.4.1.dev0',
+    version='1.5.0.dev0',
     description="Adds support for TinyMCE, a platform independent web based Javascript HTML WYSIWYG editor, to Plone.",
     long_description=open_relative("README.rst"),
     classifiers=[
