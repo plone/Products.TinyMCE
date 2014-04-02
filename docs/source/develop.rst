@@ -23,9 +23,11 @@ TinyMCE integration in Plone has two core packages:
 * `Products.TinyMCE`: Plone integration
 * `tinymce`: raw tinymce source files
 
-Fork both packages: https://github.com/plone/Products.TinyMCE and
-https://github.com/collective/tinymce. Continue with cloning your fork
+Fork both packages: `https://github.com/plone/Products.TinyMCE <https://github.com/plone/Products.TinyMCE>`_ and
+`https://github.com/collective/tinymce <https://github.com/collective/tinymce>`_. Continue with cloning your fork
 of ``Products.TinyMCE`` to your local machine::
+
+
 
     $ git clone git@github.com:<your_git_username>/Products.TinyMCE.git
     $ cd Products.TinyMCE
@@ -34,10 +36,13 @@ Now you need to tell buildout to use your fork of ``tinymce``. Do that by
 opening up ``buildout.cfg`` with your favorite editor and changing the
 ``tinymce = ...`` line in ``[sources]`` section so it points to your fork::
 
+
     - tinymce = git https://github.com/collective/tinymce.git egg=false branch=3.4.7-plone
     + tinymce = git https://github.com/<your_git_username>/tinymce.git egg=false branch=3.4.7-plone
 
 Cool, you are now ready to build your development environment::
+
+
 
     $ python2.6 bootstrap.py
     $ bin/buildout
@@ -45,10 +50,12 @@ Cool, you are now ready to build your development environment::
 What follows is going into src/tinymce, running a script to build TinyMCE
 and copy them in `skisn` directory where Plone can use them. To do so run::
 
+
+
     $ ./upgrade_tinymce.sh
 
 Ok, ready to start Zope and apply upgrade steps to your site. Once started go to
-http://localhost:8080/Plone/portal_setup/manage_upgrades and choose
+`http://localhost:8080/Plone/portal_setup/manage_upgrades` and choose
 ``Products.TinyMCE:TinyMCE`` as a profile. If upgrades are available, run them.
 If you see ``No upgrade avaiable`` you don't need to run anything.
 
@@ -69,6 +76,8 @@ After each change
 
 If you change something in *src/tinymce* you need to rerun the tinymce builder script and
 restart Plone
+
+.. code-block:: console
 
     $ ./upgrade_tinymce.sh
     $ bin/instance fg
@@ -94,6 +103,8 @@ Development build
 
 All TinyMCE source code modules are separate in the orignal tree and must be copied for to *skins* structure::
 
+
+
         cd src/tinymce/jscripts/tiny_mce
         cp -r * ../../../../Products/TinyMCE/skins/tinymce
 
@@ -110,6 +121,8 @@ Full concatenated build
 
 Edit ``upgrade_tinymce.sh`` to do a full build::
 
+
+
         ant -s $tinymce_git_root/build.xml build_full
 
 This will create *skins/tinymce/tiny_mce_full.js*.
@@ -118,7 +131,7 @@ Copy in jquery.tinymce.js (where?)
 
 More info about TinyMCE build process:
 
-* https://github.com/tinymce/tinymce
+* `https://github.com/tinymce/tinymce <https://github.com/tinymce/tinymce>`_
 
 Updating translations
 ---------------------
@@ -136,21 +149,16 @@ Before editing translations
 * make sure your OS has ``msgfmt`` command installed
 
 If you change some of our templates or control panels, make sure you rebuild our
-plone.tinymce.pot file and re-sync all language files::
+plone.tinymce.pot file and re-sync all language files
 
-   export BIN=`pwd`/bin
+.. code-block:: console
+
+   export BIN=\`pwd\`/bin
    cd Products/TinyMCE/locales
    $BIN/i18ndude rebuild-pot --exclude "utils support" --pot plone.tinymce.pot --merge plone.tinymce-manual.pot --create plone.tinymce ../
    $BIN/i18ndude sync --pot plone.tinymce.pot ./*/LC_MESSAGES/plone.tinymce.po
 
-.. note ::
-
-        Exclude list is based on HTML files which Zope TAL interpreter cannot can properly:
-        it gives NestingErrors becase it tries to scan HTML tags inside Javascript strings.
-        You may need update this list based on TinyMCE release.
-
-After this (or if you only change a translation string itself), you need to
-recompile .mo files::
+.. code-block:: console
 
     cd Products/TinyMCE/locales/<your_language>/LC_MESSAGES
     msgfmt -o plone.tinymce.mo plone.tinymce.po
@@ -180,6 +188,8 @@ Compile translation files
 -------------------------
 
 A one-liner to compile all translation files goes a little something like this::
+
+
 
     $ cd Products/TinyMCE/locales
     $ for po in `find . -name "*.po"` ; do msgfmt -o `dirname $po`/`basename $po .po`.mo $po; done
@@ -255,4 +265,4 @@ Releasing TinyMCE
 Javascript coding standards
 ---------------------------
 
-use jslint, if you don't have it integrated with editor yet, use http://www.jslint.com/
+use jslint, if you don't have it integrated with editor yet, use `http://www.jslint.com/ <http://www.jslint.com/>`_
