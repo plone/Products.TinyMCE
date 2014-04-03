@@ -9,8 +9,6 @@ from zope.component import getUtility
 from zope.i18n import translate
 from zope.i18nmessageid import MessageFactory
 from plone.i18n.normalizer.interfaces import IIDNormalizer
-from plone.app.layout.navigation.root import getNavigationRootObject
-from plone.app.layout.navigation.interfaces import INavigationRoot
 from Products.CMFCore.interfaces._content import IFolderish
 from Products.CMFPlone.interfaces.siteroot import IPloneSiteRoot
 from Products.CMFCore.utils import getToolByName
@@ -18,6 +16,7 @@ from Acquisition import aq_inner
 from Acquisition import aq_parent
 
 from Products.TinyMCE.adapters.interfaces.JSONFolderListing import IJSONFolderListing
+from Products.TinyMCE.adapters.interfaces.RootFinder import IRootFinder
 
 
 class JSONFolderListing(object):
@@ -36,8 +35,8 @@ class JSONFolderListing(object):
         """Get breadcrumbs"""
         result = []
 
-        portal_state = self.context.restrictedTraverse('@@plone_portal_state')
-        root = getNavigationRootObject(self.context, portal_state.portal())
+        root_finder = IRootFinder(self.context)
+        root = root_finder.get_root_object()
         root_url = root.absolute_url()
 
         if path is not None:
@@ -83,8 +82,10 @@ class JSONFolderListing(object):
         # check if object is a folderish object, if not, get it's parent.
         if not IFolderish.providedBy(object):
             object = aq_parent(object)
-
-        if INavigationRoot.providedBy(object) or (rooted == "True" and document_base_url[:-1] == object.absolute_url()):
+        root_finder = IRootFinder(object)
+        if (root_finder.is_root_object() or 
+                (rooted == "True" and 
+                        document_base_url[:-1] == object.absolute_url())):
             results['parent_url'] = ''
         else:
             results['parent_url'] = aq_parent(object).absolute_url()

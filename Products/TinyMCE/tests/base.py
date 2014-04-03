@@ -50,6 +50,7 @@ class TinyMCELayer(PloneSandboxLayer):
         import Products.TinyMCE.tests
         self.loadZCML(package=Products.TinyMCE.tests,
                       name='skins.zcml')
+        z2.installProduct(app, 'Products.DateRecurringIndex')
         z2.installProduct(app, 'Products.TinyMCE')
         if HAS_DX:
             self.loadZCML(package=plone.app.contenttypes)
@@ -66,6 +67,7 @@ class TinyMCELayer(PloneSandboxLayer):
     def tearDownZope(self, app):
         """Tear down Zope."""
         z2.uninstallProduct(app, 'Products.TinyMCE')
+        z2.uninstallProduct(app, 'Products.DateRecurringIndex')
 
 
 FIXTURE = TinyMCELayer()

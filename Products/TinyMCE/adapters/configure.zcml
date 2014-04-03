@@ -51,6 +51,10 @@
         factory=".JSONSearch.JSONSearch"
         />
 
+    <adapter factory=".RootFinder.RootFinder" />
+
+    <adapter factory=".RootFinder.PloneSiteRootFinder" />
+
     <!-- Caching adapter -->
     <adapter factory=".caching.TinyMCEResourceLookup" />
 

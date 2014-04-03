@@ -23,6 +23,7 @@ except ImportError:
     RIGHT_TO_LEFT = ['ar', 'fa', 'he', 'ps']  # not available in plone 3
 from plone.outputfilters.filters.resolveuid_and_caption import IImageCaptioningEnabler, IResolveUidsEnabler
 
+from Products.TinyMCE.adapters.interfaces.RootFinder import IRootFinder 
 from Products.TinyMCE.interfaces.shortcut import ITinyMCEShortcut
 from Products.TinyMCE.interfaces.utility import ITinyMCE
 from Products.TinyMCE.interfaces.utility import ITinyMCELayout
@@ -163,6 +164,7 @@ class TinyMCE(SimpleItem):
     customplugins = FieldProperty(ITinyMCEResourceTypes['customplugins'])
 
     link_shortcuts = FieldProperty(ITinyMCEContentBrowser['link_shortcuts'])
+    use_plone_site_as_root = FieldProperty(ITinyMCEContentBrowser['use_plone_site_as_root'])
     image_shortcuts = FieldProperty(ITinyMCEContentBrowser['image_shortcuts'])
     num_of_thumb_columns = FieldProperty(ITinyMCEContentBrowser['num_of_thumb_columns'])
     thumbnail_size = FieldProperty(ITinyMCEContentBrowser['thumbnail_size'])
@@ -860,7 +862,8 @@ class TinyMCE(SimpleItem):
         portal = portal_state.portal()
         portal_url = portal_state.portal_url()
         results['portal_url'] = portal_url
-        results['navigation_root_url'] = portal_state.navigation_root_url()
+        results['navigation_root_url'] = \
+                IRootFinder(context).get_root_url()
 
         if self.content_css and self.content_css.strip() != "":
             results['content_css'] = self.content_css
@@ -926,6 +929,7 @@ class TinyMCE(SimpleItem):
 
         # Content Browser
         shortcuts_dict = dict(getUtilitiesFor(ITinyMCEShortcut))
+        results['use_plone_site_as_root'] = self.use_plone_site_as_root
         results['link_shortcuts_html'] = []
         results['image_shortcuts_html'] = []
         results['num_of_thumb_columns'] = self.num_of_thumb_columns
