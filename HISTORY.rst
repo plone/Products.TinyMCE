@@ -8,6 +8,9 @@ HISTORY
 - Fix i18n of upload error messages.
   [vincentfretin]
 
+- Update Traditional Chinese translations.
+  [marr]
+
 
 1.3.7 (2014-09-11)
 ------------------
