@@ -5,7 +5,8 @@ HISTORY
 1.4.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Update Traditional Chinese translations.
+  [marr]
 
 
 1.4.0 (2014-03-02)
