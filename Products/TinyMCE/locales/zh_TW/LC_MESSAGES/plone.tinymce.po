@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TinyMCE\n"
 "POT-Creation-Date: 2013-04-25 12:54+0000\n"
-"PO-Revision-Date: 2013-01-05 18:26+0800\n"
+"PO-Revision-Date: 2014-05-11 10:56+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -58,7 +58,7 @@ msgstr "錨點"
 
 #: TinyMCE/interfaces/utility.py:475
 msgid "Anchor selector expression"
-msgstr ""
+msgstr "錨點 Selector Expression"
 
 #: TinyMCE/interfaces/utility.py:356
 msgid "AtD Error types to show"
@@ -78,7 +78,7 @@ msgstr "背景色"
 
 #: TinyMCE/adapters/Upload.py:138
 msgid "Bad filename, please rename."
-msgstr ""
+msgstr "檔名不正確，請重新命名。"
 
 #: TinyMCE/interfaces/utility.py:154
 msgid "Bold"
@@ -160,10 +160,10 @@ msgstr "Definition description"
 
 #: TinyMCE/interfaces/utility.py:210
 msgid "Definition list"
-msgstr "Definition list"
+msgstr "定義列表"
 
 msgid "Definition term"
-msgstr "Definition term"
+msgstr "定義名詞"
 
 #. Default: "Description"
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:83
@@ -219,7 +219,7 @@ msgstr "啟用編輯視窗調整大小功能"
 
 #: TinyMCE/interfaces/utility.py:82
 msgid "Enter a JSON-formatted style format configuration. A format is for example the style that get applied when you press the bold button inside the editor. See http://www.tinymce.com/wiki.php/Configuration:formats"
-msgstr ""
+msgstr "輸入 JSON 格式的設定內容，請參考 http://www.tinymce.com/wiki.php/Configuration:formats 說明。"
 
 #: TinyMCE/interfaces/utility.py:410
 msgid "Enter a list of content types which can be linked. Format is one contenttype per line."
@@ -293,7 +293,7 @@ msgstr "前景顏色"
 
 #: TinyMCE/interfaces/utility.py:81
 msgid "Formats"
-msgstr ""
+msgstr "格式"
 
 msgid "Heading"
 msgstr "標題"
@@ -352,7 +352,7 @@ msgstr "插入水平隔線"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:171
 msgid "Insert image from URL"
-msgstr ""
+msgstr "使用 URL 插入圖檔"
 
 #: TinyMCE/interfaces/utility.py:270
 msgid "Insert non-breaking space character"
@@ -429,7 +429,7 @@ msgstr "Link to Anchor"
 
 #: TinyMCE/interfaces/utility.py:384
 msgid "Link using UIDs"
-msgstr ""
+msgstr "使用 UID 建立連結"
 
 #: TinyMCE/interfaces/utility.py:409
 msgid "Linkable Objects"
@@ -437,11 +437,11 @@ msgstr "可連結的物件"
 
 #: TinyMCE/interfaces/utility.py:385
 msgid "Links to objects on this site can use unique object ids so that the links remain valid even if the target object is renamed or moved elsewhere on the site."
-msgstr ""
+msgstr "站內項目可透過 UID 來存取，即使項目改名或搬移都不會影響連結關係。"
 
 #: TinyMCE/interfaces/utility.py:454
 msgid "List of shortcuts to appear in image browser for quick navigation."
-msgstr ""
+msgstr "圖檔瀏覽視窗的快速選項"
 
 #: TinyMCE/interfaces/utility.py:446
 msgid "List of shortcuts to appear in link browser for quick navigation."
@@ -466,7 +466,7 @@ msgstr "小寫羅馬字母"
 
 #: TinyMCE/interfaces/utility.py:31
 msgid "Must be empty or a valid JSON-formatted configuration – ${message}."
-msgstr ""
+msgstr "請留空或使用 JSON 格式的設定內容 - ${message}。"
 
 #: TinyMCE/interfaces/utility.py:437
 msgid "Named"
@@ -486,7 +486,7 @@ msgstr "一般段落文字"
 
 #: TinyMCE/adapters/Upload.py:141
 msgid "Not allowed to upload a file of this type to this folder"
-msgstr ""
+msgstr "這個目錄不允許上傳這類檔案。"
 
 #: TinyMCE/interfaces/utility.py:468
 msgid "Number of columns in thumbnails mode"
@@ -593,7 +593,7 @@ msgstr "搜尋結果:"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:42
 msgid "Search site"
-msgstr ""
+msgstr "站內搜尋"
 
 #: TinyMCE/interfaces/utility.py:150
 msgid "Select Style"
@@ -672,7 +672,7 @@ msgstr "文字"
 
 #: TinyMCE/adapters/Upload.py:166
 msgid "The content-type '%s' has no image-field!"
-msgstr ""
+msgstr "內容型別 '%s' 沒有圖檔欄位"
 
 #: TinyMCE/interfaces/utility.py:328
 msgid "This option allows you to choose the spellchecker for TinyMCE. If you want the spellchecker button to be visible, make sure it is enabled in the toolbar settings."
@@ -795,7 +795,7 @@ msgstr "勾選的話，只能在現行目錄裡選擇連結或圖檔。"
 #. Default: "A CSS level 3 pattern used to match elements that can serve as anchors. The default value is to match headings."
 #: TinyMCE/interfaces/utility.py:476
 msgid "help_anchor_selector"
-msgstr ""
+msgstr "使用 CSS Level 3 Pattern 來搜尋錨點候選，預設值是 Heading。"
 
 #. Default: "The URL of the \"After the Deadline\" grammar and spell checking server. The default value is the public server, but ideally you should download and install your own and specify its address here."
 #: TinyMCE/interfaces/utility.py:370
