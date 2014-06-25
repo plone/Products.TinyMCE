@@ -97,9 +97,9 @@ class Upload(object):
         ctr_tool = getToolByName(context, 'content_type_registry')
         utility = getToolByName(context, 'portal_tinymce')
 
-        id = request['uploadfile'].filename
+        file_id = request['uploadfile'].filename
         content_type = request['uploadfile'].headers["Content-Type"]
-        typename = ctr_tool.findTypeName(id, content_type, "")
+        typename = ctr_tool.findTypeName(file_id, content_type, "")
 
         # Permission checks based on code by Danny Bloemendaal
 
@@ -124,13 +124,13 @@ class Upload(object):
                                        and t not in uploadable_types]
 
         # Get an unused filename without path
-        id = self.cleanupFilename(id)
+        file_id = self.cleanupFilename(file_id)
 
         for metatype in uploadable_types:
             try:
-                newid = context.invokeFactory(type_name=metatype, id=id)
+                newid = context.invokeFactory(type_name=metatype, id=file_id)
                 if newid is None or newid == '':
-                    newid = id
+                    newid = file_id
                 break
             except ValueError:
                 continue
@@ -161,7 +161,7 @@ class Upload(object):
                 obj.description = description
 
         if HAS_DEXTERITY and IDexterityContent.providedBy(obj):
-            if not self.setDexterityImage(obj):
+            if not self.setDexterityImage(obj, file_id):
                 return self.errorMessage(
                     _("The content-type '%s' has no image-field!" % metatype))
         else:
@@ -181,7 +181,7 @@ class Upload(object):
             path = obj.absolute_url()
         return self.okMessage(path, folder)
 
-    def setDexterityImage(self, obj):
+    def setDexterityImage(self, obj, file_id):
         """ Set the image-field of dexterity-based types
 
         This works with the "Image"-type of plone.app.contenttypes and has
@@ -218,7 +218,7 @@ class Upload(object):
         else:
             # Create either a NamedBlobImage or a NamedImage
             setattr(obj, field_name, field._type(request['uploadfile'].read(),
-                                                 filename=unicode(id)))
+                                                 filename=unicode(file_id)))
         return True
 
     def setDescription(self, description):

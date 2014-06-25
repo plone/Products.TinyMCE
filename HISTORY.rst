@@ -5,10 +5,13 @@ HISTORY
 1.4.1 (unreleased)
 ------------------
 
-- Update Traditional Chinese translations. 
+- Fix the id of uploading Dexterity-images
+  [pbauer]
+
+- Update Traditional Chinese translations.
   [marr]
 
-- Fixed anchor symbol in IE8. 
+- Fixed anchor symbol in IE8.
   [snake-aas]
 
 
