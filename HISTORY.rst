@@ -5,6 +5,9 @@ HISTORY
 1.4.1 (unreleased)
 ------------------
 
+- Allow uploading Dexterity-files
+  [pbauer]
+
 - Fix the id of uploading Dexterity-images
   [pbauer]
 
