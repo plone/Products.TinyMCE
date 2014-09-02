@@ -5,7 +5,11 @@ HISTORY
 1.3.7 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Call convertURL when inserting link or image.
+  Fixes `#13721`__.
+  [maurits]
+
+__ https://dev.plone.org/ticket/13721
 
 
 1.3.6 (2014-02-19)

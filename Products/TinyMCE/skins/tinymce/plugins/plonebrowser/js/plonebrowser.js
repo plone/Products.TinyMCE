@@ -488,7 +488,8 @@ BrowserDialog.prototype.insertLink = function () {
 
     switch (active_panel) {
         case "#internal":
-            link = this.current_link;
+            link = this.editor.convertURL(this.current_link);
+
             anchor = jq('#pageanchor', document).val();
             if (anchor) {
                 link += '#' + anchor;
@@ -586,7 +587,7 @@ BrowserDialog.prototype.insertLink = function () {
 BrowserDialog.prototype.insertImage = function () {
     var attrs = {},
         selected_node = this.editor.selection.getNode(),
-        href = this.current_link,
+        href = this.editor.convertURL(this.current_link),
         active_panel = jq('#linktype .current a', document).attr('href'),
         dimension,
         classes;
