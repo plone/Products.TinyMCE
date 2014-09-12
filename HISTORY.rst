@@ -5,7 +5,8 @@ HISTORY
 1.3.8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fixes missing id for dx files - really fixes (close `#13759`__)
+  [gomez]
 
 
 1.3.7 (2014-09-11)

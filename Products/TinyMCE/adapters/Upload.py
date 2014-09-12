@@ -162,7 +162,7 @@ class Upload(object):
                 obj.description = description
 
         if HAS_DEXTERITY and IDexterityContent.providedBy(obj):
-            if not self.setDexterityItem(obj, uploadfile):
+            if not self.setDexterityItem(obj, uploadfile, id):
                 return self.errorMessage(
                     _("The content-type '%s' has no blob-field!" % metatype))
         else:
@@ -182,7 +182,7 @@ class Upload(object):
             path = obj.absolute_url()
         return self.okMessage(path, folder)
 
-    def setDexterityItem(self, obj, uploadfile):
+    def setDexterityItem(self, obj, uploadfile, id):
         """ Set the blob-field of dexterity-based types
 
         This works with blob-types of plone.app.contenttypes and has
