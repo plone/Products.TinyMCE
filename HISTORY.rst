@@ -17,6 +17,9 @@ HISTORY
 - Fixed anchor symbol in IE8.
   [snake-aas]
 
+- Don't bind to all .field elements (and their select boxes), only the one
+  closest to us. Fixes lists of RichText fields.
+  [lentinj]
 
 1.4.0 (2014-03-02)
 ------------------
