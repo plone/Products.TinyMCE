@@ -21,6 +21,10 @@ HISTORY
   closest to us. Fixes lists of RichText fields.
   [lentinj]
 
+- Allow text_format to be overridden by plone.app.textfield, it already knows
+  what the mime-type should be.
+  [lentinj]
+
 1.4.0 (2014-03-02)
 ------------------
 

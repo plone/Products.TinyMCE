@@ -7,7 +7,7 @@
                      fname fieldName|inputname|nothing;
                      force_wysiwyg force_wysiwyg|nothing;
                      object nocall:object|here;
-                     text_format python:here.portal_tinymce.getContentType(object=object, field=field, fieldname=fname);
+                     text_format text_format|python:here.portal_tinymce.getContentType(object=object, field=field, fieldname=fname);
                      suppressed python:request.form.get('tinymce.suppress') == fname;
                      wysiwyg python:(not suppressed and 'html' in text_format.lower()) or force_wysiwyg;
                      configuration_method nocall:here/@@tinymce-jsonconfiguration;
