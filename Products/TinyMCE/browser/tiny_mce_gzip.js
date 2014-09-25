@@ -5,7 +5,7 @@
 
     $('textarea.mce_editable', context).each(function() {
       var $el = $(this),
-          $field = $el.parents('.field'),
+          $field = $el.parents('.field').first(),
           tinymceActive = false,
           $textFormatSelector = $('.fieldTextFormat > select', $field),
           config = $.extend(true, {},
