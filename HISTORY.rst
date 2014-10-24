@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.4.1 (unreleased)
+1.4.1 (2014-10-23)
 ------------------
 
 - Allow uploading Dexterity-files
