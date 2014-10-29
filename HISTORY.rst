@@ -8,6 +8,8 @@ HISTORY
 - Fix i18n of upload error messages.
   [vincentfretin]
 
+- Update Italian, Czech, French translations.
+
 - Update Traditional Chinese translations.
   [marr]
 
