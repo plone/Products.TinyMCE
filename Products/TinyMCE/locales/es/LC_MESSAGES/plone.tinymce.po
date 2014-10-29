@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: plone.tinymce\n"
-"POT-Creation-Date: 2013-04-25 12:54+0000\n"
+"POT-Creation-Date: 2014-10-29 12:22+0000\n"
 "PO-Revision-Date: 2012-04-23 15:47+0100\n"
 "Last-Translator: Mikel Larreategi <mlarreategi@codesyntax.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,15 +14,15 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone.tinymce\n"
 
-#: TinyMCE/utility.py:766
+#: TinyMCE/utility.py:743
 msgid "(remove style)"
 msgstr "(eliminar estilo)"
 
-#: TinyMCE/utility.py:765
+#: TinyMCE/utility.py:742
 msgid "Add new File"
 msgstr "Añadir nuevo archivo"
 
-#: TinyMCE/utility.py:764
+#: TinyMCE/utility.py:741
 msgid "Add new Image"
 msgstr "Añadir nueva imagen"
 
@@ -74,7 +74,7 @@ msgstr ""
 msgid "Backcolor"
 msgstr "Color de fondo"
 
-#: TinyMCE/adapters/Upload.py:138
+#: TinyMCE/adapters/Upload.py:141
 msgid "Bad filename, please rename."
 msgstr ""
 
@@ -82,11 +82,11 @@ msgstr ""
 msgid "Bold"
 msgstr "Negrita"
 
-#: TinyMCE/utility.py:777
+#: TinyMCE/utility.py:754
 msgid "Browser"
 msgstr "Navegador"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:297
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:295
 msgid "CSS Style"
 msgstr "Estilo CSS"
 
@@ -132,7 +132,12 @@ msgstr "Navegador de contenido"
 msgid "Copy"
 msgstr "Copiar"
 
+#: TinyMCE/adapters/Upload.py:177
+msgid "Could not upload the file"
+msgstr ""
+
 #. Default: "Current Folder"
+#: TinyMCE/interfaces/utility.py:448
 #: TinyMCE/shortcut.py:9
 msgid "Current Folder"
 msgstr "Carpeta Actual"
@@ -179,7 +184,7 @@ msgid "Discreet"
 msgstr "Discreto"
 
 #. Default: "E-mail"
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:234
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:232
 msgid "E-mail"
 msgstr "Correo electrónico"
 
@@ -264,7 +269,7 @@ msgid "External"
 msgstr "Externo"
 
 #. Default: "External link"
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:201
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:199
 msgid "External link"
 msgstr "Enlace externo"
 
@@ -303,11 +308,12 @@ msgid "Highlight"
 msgstr "Resaltado"
 
 #. Default: "Home"
+#: TinyMCE/interfaces/utility.py:448
 #: TinyMCE/shortcut.py:20
 msgid "Home"
 msgstr "Inicio"
 
-#: TinyMCE/utility.py:762
+#: TinyMCE/utility.py:739
 msgid "Image Browser"
 msgstr "Navegador de imagen"
 
@@ -348,7 +354,7 @@ msgstr "Insertar fecha"
 msgid "Insert horizontal ruler"
 msgstr "Insertar regla horizontal"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:171
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:169
 msgid "Insert image from URL"
 msgstr ""
 
@@ -408,7 +414,7 @@ msgstr "Disposición"
 msgid "Libraries"
 msgstr "Librerías"
 
-#: TinyMCE/utility.py:763
+#: TinyMCE/utility.py:740
 msgid "Link Browser"
 msgstr "Navegador de enlace"
 
@@ -416,12 +422,12 @@ msgstr "Navegador de enlace"
 msgid "Link Shortcuts"
 msgstr ""
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:277
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:275
 msgid "Link Title"
 msgstr "Título del enlace"
 
 #. Default: "Link to anchor"
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:250
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:248
 msgid "Link to anchor"
 msgstr "Enlace a ancla"
 
@@ -449,7 +455,7 @@ msgstr ""
 msgid "List view"
 msgstr "Vista de lista"
 
-#: TinyMCE/utility.py:773
+#: TinyMCE/utility.py:750
 msgid "Lists"
 msgstr "Listas"
 
@@ -470,19 +476,19 @@ msgstr ""
 msgid "Named"
 msgstr "Con nombre"
 
-#: TinyMCE/utility.py:776
+#: TinyMCE/utility.py:753
 msgid "No anchors in this page"
 msgstr "No existen anclas en esta página"
 
-#: TinyMCE/utility.py:775
+#: TinyMCE/utility.py:752
 msgid "No items in this folder"
 msgstr "No hay elementos en esta carpeta"
 
-#: TinyMCE/utility.py:767
+#: TinyMCE/utility.py:744
 msgid "Normal paragraph"
 msgstr "Párrafo normal"
 
-#: TinyMCE/adapters/Upload.py:141
+#: TinyMCE/adapters/Upload.py:144
 msgid "Not allowed to upload a file of this type to this folder"
 msgstr ""
 
@@ -497,7 +503,7 @@ msgstr "Númerpos"
 msgid "Numeric"
 msgstr "Numérico"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:267
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:265
 msgid "OK"
 msgstr "OK"
 
@@ -507,10 +513,6 @@ msgstr "Columna impar"
 #: TinyMCE/interfaces/utility.py:206
 msgid "Ordered list"
 msgstr "Lista ordenada"
-
-#: TinyMCE/utility.py:192
-msgid "Original"
-msgstr "Original"
 
 #: TinyMCE/interfaces/utility.py:214
 msgid "Outdent"
@@ -535,22 +537,22 @@ msgstr "Pegar desde Word"
 msgid "Place toolbar on top of the page"
 msgstr ""
 
-#: TinyMCE/utility.py:768
+#: TinyMCE/utility.py:745
 msgid "Plain cell"
 msgstr "Celda sin formato"
 
 #. Default: "Preview"
 #: TinyMCE/interfaces/utility.py:282
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:184
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:182
 msgid "Preview"
 msgstr "Previsualizar"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:220
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:218
 msgid "Preview URL"
 msgstr "Previsualizar URL"
 
 #: TinyMCE/interfaces/utility.py:278
-#: TinyMCE/utility.py:774
+#: TinyMCE/utility.py:751
 msgid "Print"
 msgstr "Imprimir"
 
@@ -585,7 +587,7 @@ msgstr "Salvar"
 msgid "Search"
 msgstr "Buscar"
 
-#: TinyMCE/utility.py:779
+#: TinyMCE/utility.py:756
 msgid "Search results:"
 msgstr "Resultados de búsqueda:"
 
@@ -597,7 +599,7 @@ msgstr ""
 msgid "Select Style"
 msgstr "Seleccionar Estilo"
 
-#: TinyMCE/utility.py:772
+#: TinyMCE/utility.py:749
 msgid "Selection"
 msgstr "Selección"
 
@@ -605,7 +607,7 @@ msgstr "Selección"
 msgid "Settings for the TinyMCE Wysiwyg editor."
 msgstr "Configuración para el editor WYSIWYG TinyMCE"
 
-#: TinyMCE/utility.py:778
+#: TinyMCE/utility.py:755
 msgid "Shortcuts"
 msgstr ""
 
@@ -624,7 +626,7 @@ msgstr ""
 msgid "Strikethrough"
 msgstr "Tachado"
 
-#: TinyMCE/utility.py:769
+#: TinyMCE/utility.py:746
 msgid "Style..."
 msgstr "Estilo..."
 
@@ -640,7 +642,7 @@ msgid "Subheading"
 msgstr "Subencabezado"
 
 #. Default: "Subject"
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:241
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:239
 msgid "Subject"
 msgstr "Asunto"
 
@@ -660,16 +662,16 @@ msgstr "Controles de tabla"
 msgid "Table styles"
 msgstr "Estilos de tabla"
 
-#: TinyMCE/utility.py:771
+#: TinyMCE/utility.py:748
 msgid "Tables"
 msgstr "Tablas"
 
-#: TinyMCE/utility.py:770
+#: TinyMCE/utility.py:747
 msgid "Text"
 msgstr "Texto"
 
-#: TinyMCE/adapters/Upload.py:166
-msgid "The content-type '%s' has no image-field!"
+#: TinyMCE/adapters/Upload.py:169
+msgid "The content-type '${type}' has no image- or file-field!"
 msgstr ""
 
 #: TinyMCE/interfaces/utility.py:328
@@ -768,11 +770,11 @@ msgstr "Desenlazar"
 msgid "Unordered list"
 msgstr "Lista desordenada"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:160
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:158
 msgid "Upload"
 msgstr "Cargar"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:133
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:131
 msgid "Upload File"
 msgstr "Cargar archivo"
 
@@ -789,6 +791,10 @@ msgstr "Visualización de caracteres de control activada/desactivada"
 #: TinyMCE/interfaces/utility.py:395
 msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
 msgstr "Cuando está habilitado el usuario será enrutado al objeto actual y no podrá añadir imágenes y enlaces desde otras partes del sitio web."
+
+#: TinyMCE/adapters/Upload.py:113
+msgid "You do not have permission to upload files in this folder"
+msgstr ""
 
 #. Default: "A CSS level 3 pattern used to match elements that can serve as anchors. The default value is to match headings."
 #: TinyMCE/interfaces/utility.py:476
@@ -824,17 +830,17 @@ msgstr ""
 msgid "label_tinymce_plugins"
 msgstr ""
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:154
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:152
 msgid "or External URL"
 msgstr ""
 
 #. Default: "Edit without visual editor"
-#: TinyMCE/skins/tinymce/tinymce_wysiwyg_support.pt:33
+#: TinyMCE/skins/tinymce/tinymce_wysiwyg_support.pt:32
 msgid "suppress_visual_editor"
 msgstr ""
 
 #. Default: "Edit with visual editor"
-#: TinyMCE/skins/tinymce/tinymce_wysiwyg_support.pt:41
+#: TinyMCE/skins/tinymce/tinymce_wysiwyg_support.pt:40
 msgid "suppress_visual_editor_with"
 msgstr ""
 

@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2013-04-25 12:54+0000\n"
+"POT-Creation-Date: 2014-10-29 12:22+0000\n"
 "PO-Revision-Date: 2013-04-25 15:31+0300\n"
 "Last-Translator: Roman Kozlovskyi <krzroman@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,15 @@ msgstr ""
 "Domain: plone.tinymce\n"
 "X-Generator: Poedit 1.5.4\n"
 
-#: TinyMCE/utility.py:766
+#: TinyMCE/utility.py:743
 msgid "(remove style)"
 msgstr "(видалити стиль)"
 
-#: TinyMCE/utility.py:765
+#: TinyMCE/utility.py:742
 msgid "Add new File"
 msgstr "Додати новий файл"
 
-#: TinyMCE/utility.py:764
+#: TinyMCE/utility.py:741
 msgid "Add new Image"
 msgstr "Додати нове зображення"
 
@@ -78,7 +78,7 @@ msgstr ""
 msgid "Backcolor"
 msgstr "Колір фону"
 
-#: TinyMCE/adapters/Upload.py:138
+#: TinyMCE/adapters/Upload.py:141
 msgid "Bad filename, please rename."
 msgstr "Не правильне ім'я файлу, перейменуйте."
 
@@ -86,11 +86,11 @@ msgstr "Не правильне ім'я файлу, перейменуйте."
 msgid "Bold"
 msgstr "Напівжирний"
 
-#: TinyMCE/utility.py:777
+#: TinyMCE/utility.py:754
 msgid "Browser"
 msgstr "Браузер"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:297
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:295
 msgid "CSS Style"
 msgstr "стиль CSS "
 
@@ -135,6 +135,11 @@ msgstr "Переглядач вмісту"
 msgid "Copy"
 msgstr "Копіювати"
 
+#: TinyMCE/adapters/Upload.py:177
+msgid "Could not upload the file"
+msgstr ""
+
+#: TinyMCE/interfaces/utility.py:448
 #: TinyMCE/shortcut.py:9
 msgid "Current Folder"
 msgstr "Поточна тека"
@@ -179,7 +184,7 @@ msgstr "Диск"
 msgid "Discreet"
 msgstr ""
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:234
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:232
 msgid "E-mail"
 msgstr "Електронна пошта"
 
@@ -262,7 +267,7 @@ msgstr "Парний рядок"
 msgid "External"
 msgstr "Зовнішній"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:201
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:199
 msgid "External link"
 msgstr "Зовнішнє посилання"
 
@@ -302,11 +307,12 @@ msgstr "Комірка-заголовок"
 msgid "Highlight"
 msgstr "Виділити"
 
+#: TinyMCE/interfaces/utility.py:448
 #: TinyMCE/shortcut.py:20
 msgid "Home"
 msgstr "Головна"
 
-#: TinyMCE/utility.py:762
+#: TinyMCE/utility.py:739
 msgid "Image Browser"
 msgstr "Переглядач зображень"
 
@@ -346,7 +352,7 @@ msgstr "Вставити дату"
 msgid "Insert horizontal ruler"
 msgstr "Вставити горизонтальний роздільник"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:171
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:169
 msgid "Insert image from URL"
 msgstr "Вставити зображення за URL"
 
@@ -405,7 +411,7 @@ msgstr "Вигляд"
 msgid "Libraries"
 msgstr "Бібліотеки"
 
-#: TinyMCE/utility.py:763
+#: TinyMCE/utility.py:740
 msgid "Link Browser"
 msgstr ""
 
@@ -413,11 +419,11 @@ msgstr ""
 msgid "Link Shortcuts"
 msgstr ""
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:277
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:275
 msgid "Link Title"
 msgstr ""
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:250
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:248
 msgid "Link to anchor"
 msgstr "Посилання на якір"
 
@@ -445,7 +451,7 @@ msgstr ""
 msgid "List view"
 msgstr "Перегляд списком"
 
-#: TinyMCE/utility.py:773
+#: TinyMCE/utility.py:750
 msgid "Lists"
 msgstr "Списки"
 
@@ -466,19 +472,19 @@ msgstr ""
 msgid "Named"
 msgstr ""
 
-#: TinyMCE/utility.py:776
+#: TinyMCE/utility.py:753
 msgid "No anchors in this page"
 msgstr "На цій сторінці нема якорів"
 
-#: TinyMCE/utility.py:775
+#: TinyMCE/utility.py:752
 msgid "No items in this folder"
 msgstr "В цій теці нема жодного об'єкта."
 
-#: TinyMCE/utility.py:767
+#: TinyMCE/utility.py:744
 msgid "Normal paragraph"
 msgstr "Звичайний параграф"
 
-#: TinyMCE/adapters/Upload.py:141
+#: TinyMCE/adapters/Upload.py:144
 msgid "Not allowed to upload a file of this type to this folder"
 msgstr ""
 
@@ -493,7 +499,7 @@ msgstr "Цифри"
 msgid "Numeric"
 msgstr "Числовий"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:267
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:265
 msgid "OK"
 msgstr ""
 
@@ -503,10 +509,6 @@ msgstr "Непарний рядок"
 #: TinyMCE/interfaces/utility.py:206
 msgid "Ordered list"
 msgstr "Пронумерований список"
-
-#: TinyMCE/utility.py:192
-msgid "Original"
-msgstr ""
 
 #: TinyMCE/interfaces/utility.py:214
 msgid "Outdent"
@@ -531,21 +533,21 @@ msgstr "Вставити з Word"
 msgid "Place toolbar on top of the page"
 msgstr ""
 
-#: TinyMCE/utility.py:768
+#: TinyMCE/utility.py:745
 msgid "Plain cell"
 msgstr "Звичайна комірка"
 
 #: TinyMCE/interfaces/utility.py:282
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:184
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:182
 msgid "Preview"
 msgstr "Перегляд"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:220
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:218
 msgid "Preview URL"
 msgstr "Показати адресу URL"
 
 #: TinyMCE/interfaces/utility.py:278
-#: TinyMCE/utility.py:774
+#: TinyMCE/utility.py:751
 msgid "Print"
 msgstr "Друк"
 
@@ -580,7 +582,7 @@ msgstr "Зберегти"
 msgid "Search"
 msgstr "Пошук"
 
-#: TinyMCE/utility.py:779
+#: TinyMCE/utility.py:756
 msgid "Search results:"
 msgstr "Результати пошуку:"
 
@@ -592,7 +594,7 @@ msgstr ""
 msgid "Select Style"
 msgstr "Вибрати стиль"
 
-#: TinyMCE/utility.py:772
+#: TinyMCE/utility.py:749
 msgid "Selection"
 msgstr "Виділення"
 
@@ -600,7 +602,7 @@ msgstr "Виділення"
 msgid "Settings for the TinyMCE Wysiwyg editor."
 msgstr "Налаштування конфіґурації текстового редактора TinyMCE."
 
-#: TinyMCE/utility.py:778
+#: TinyMCE/utility.py:755
 msgid "Shortcuts"
 msgstr ""
 
@@ -619,7 +621,7 @@ msgstr "Квадрат"
 msgid "Strikethrough"
 msgstr "Закреслити"
 
-#: TinyMCE/utility.py:769
+#: TinyMCE/utility.py:746
 msgid "Style..."
 msgstr "Стиль..."
 
@@ -635,7 +637,7 @@ msgstr "Слабка сітка"
 msgid "Subheading"
 msgstr "Підзаголовок"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:241
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:239
 msgid "Subject"
 msgstr "Предмет"
 
@@ -655,16 +657,16 @@ msgstr "Властивості таблиці"
 msgid "Table styles"
 msgstr "Стилі таблиці"
 
-#: TinyMCE/utility.py:771
+#: TinyMCE/utility.py:748
 msgid "Tables"
 msgstr "Таблиці"
 
-#: TinyMCE/utility.py:770
+#: TinyMCE/utility.py:747
 msgid "Text"
 msgstr "Текст"
 
-#: TinyMCE/adapters/Upload.py:166
-msgid "The content-type '%s' has no image-field!"
+#: TinyMCE/adapters/Upload.py:169
+msgid "The content-type '${type}' has no image- or file-field!"
 msgstr ""
 
 #: TinyMCE/interfaces/utility.py:328
@@ -760,11 +762,11 @@ msgstr "Видалити посилання"
 msgid "Unordered list"
 msgstr "Ненумерований список"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:160
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:158
 msgid "Upload"
 msgstr "Вивантажити"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:133
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:131
 msgid "Upload File"
 msgstr "Вивантажити файл"
 
@@ -781,6 +783,10 @@ msgstr "Увімкнути/вимкнути візуальний контрол�
 #: TinyMCE/interfaces/utility.py:395
 msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
 msgstr "Якщо увімкнено, то користувача буде прив'язано до поточного об'єкту і він не зможе додати посилання та зображення з інших частин сайту."
+
+#: TinyMCE/adapters/Upload.py:113
+msgid "You do not have permission to upload files in this folder"
+msgstr ""
 
 #. Default: "A CSS level 3 pattern used to match elements that can serve as anchors. The default value is to match headings."
 #: TinyMCE/interfaces/utility.py:476
@@ -816,17 +822,17 @@ msgstr "Список слів, які під час перевірки прав�
 msgid "label_tinymce_plugins"
 msgstr "Додатки редактора"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:154
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:152
 msgid "or External URL"
 msgstr "або Зовнішнє посилання"
 
 #. Default: "Edit without visual editor"
-#: TinyMCE/skins/tinymce/tinymce_wysiwyg_support.pt:33
+#: TinyMCE/skins/tinymce/tinymce_wysiwyg_support.pt:32
 msgid "suppress_visual_editor"
 msgstr "Редагувати без візуального редактора"
 
 #. Default: "Edit with visual editor"
-#: TinyMCE/skins/tinymce/tinymce_wysiwyg_support.pt:41
+#: TinyMCE/skins/tinymce/tinymce_wysiwyg_support.pt:40
 msgid "suppress_visual_editor_with"
 msgstr "Редагувати за допомогою візуального редактора"
 

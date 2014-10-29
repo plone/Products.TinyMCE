@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: TinyMCE\n"
-"POT-Creation-Date: 2013-04-25 12:54+0000\n"
+"POT-Creation-Date: 2014-10-29 12:22+0000\n"
 "PO-Revision-Date: 2014-05-11 10:56+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
@@ -16,15 +16,15 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone.tinymce\n"
 
-#: TinyMCE/utility.py:766
+#: TinyMCE/utility.py:743
 msgid "(remove style)"
 msgstr "(清除格式)"
 
-#: TinyMCE/utility.py:765
+#: TinyMCE/utility.py:742
 msgid "Add new File"
 msgstr "新增檔案"
 
-#: TinyMCE/utility.py:764
+#: TinyMCE/utility.py:741
 msgid "Add new Image"
 msgstr "新增圖檔"
 
@@ -76,7 +76,7 @@ msgstr "AtD 伺服器網址"
 msgid "Backcolor"
 msgstr "背景色"
 
-#: TinyMCE/adapters/Upload.py:138
+#: TinyMCE/adapters/Upload.py:141
 msgid "Bad filename, please rename."
 msgstr "檔名不正確，請重新命名。"
 
@@ -84,11 +84,11 @@ msgstr "檔名不正確，請重新命名。"
 msgid "Bold"
 msgstr "粗體"
 
-#: TinyMCE/utility.py:777
+#: TinyMCE/utility.py:754
 msgid "Browser"
 msgstr "瀏覽"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:297
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:295
 msgid "CSS Style"
 msgstr "CSS Style"
 
@@ -134,7 +134,12 @@ msgstr "Content Browser"
 msgid "Copy"
 msgstr "複製"
 
+#: TinyMCE/adapters/Upload.py:177
+msgid "Could not upload the file"
+msgstr ""
+
 #. Default: "Current Folder"
+#: TinyMCE/interfaces/utility.py:448
 #: TinyMCE/shortcut.py:9
 msgid "Current Folder"
 msgstr "現行資料夾"
@@ -181,7 +186,7 @@ msgid "Discreet"
 msgstr "Discreet"
 
 #. Default: "E-mail"
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:234
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:232
 msgid "E-mail"
 msgstr "E-Mail"
 
@@ -266,7 +271,7 @@ msgid "External"
 msgstr "External"
 
 #. Default: "External link"
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:201
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:199
 msgid "External link"
 msgstr "外部連結"
 
@@ -305,11 +310,12 @@ msgid "Highlight"
 msgstr "高亮度"
 
 #. Default: "Home"
+#: TinyMCE/interfaces/utility.py:448
 #: TinyMCE/shortcut.py:20
 msgid "Home"
 msgstr "首頁"
 
-#: TinyMCE/utility.py:762
+#: TinyMCE/utility.py:739
 msgid "Image Browser"
 msgstr "Image Browser"
 
@@ -350,7 +356,7 @@ msgstr "插入日期"
 msgid "Insert horizontal ruler"
 msgstr "插入水平隔線"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:171
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:169
 msgid "Insert image from URL"
 msgstr "使用 URL 插入圖檔"
 
@@ -410,7 +416,7 @@ msgstr "外觀樣式"
 msgid "Libraries"
 msgstr "拼字檢查"
 
-#: TinyMCE/utility.py:763
+#: TinyMCE/utility.py:740
 msgid "Link Browser"
 msgstr "Link Browser"
 
@@ -418,12 +424,12 @@ msgstr "Link Browser"
 msgid "Link Shortcuts"
 msgstr "Link Shortcuts"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:277
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:275
 msgid "Link Title"
 msgstr "Link Title"
 
 #. Default: "Link to anchor"
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:250
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:248
 msgid "Link to anchor"
 msgstr "Link to Anchor"
 
@@ -451,7 +457,7 @@ msgstr "連結瀏覽視窗的快速選項"
 msgid "List view"
 msgstr "List View"
 
-#: TinyMCE/utility.py:773
+#: TinyMCE/utility.py:750
 msgid "Lists"
 msgstr "條列"
 
@@ -472,19 +478,19 @@ msgstr "請留空或使用 JSON 格式的設定內容 - ${message}。"
 msgid "Named"
 msgstr "Named"
 
-#: TinyMCE/utility.py:776
+#: TinyMCE/utility.py:753
 msgid "No anchors in this page"
 msgstr "這個頁面沒有錨點"
 
-#: TinyMCE/utility.py:775
+#: TinyMCE/utility.py:752
 msgid "No items in this folder"
 msgstr "這個目錄沒有項目"
 
-#: TinyMCE/utility.py:767
+#: TinyMCE/utility.py:744
 msgid "Normal paragraph"
 msgstr "一般段落文字"
 
-#: TinyMCE/adapters/Upload.py:141
+#: TinyMCE/adapters/Upload.py:144
 msgid "Not allowed to upload a file of this type to this folder"
 msgstr "這個目錄不允許上傳這類檔案。"
 
@@ -499,7 +505,7 @@ msgstr "數字"
 msgid "Numeric"
 msgstr "Numeric"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:267
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:265
 msgid "OK"
 msgstr "確定"
 
@@ -509,10 +515,6 @@ msgstr "奇數列"
 #: TinyMCE/interfaces/utility.py:206
 msgid "Ordered list"
 msgstr "排序式條列"
-
-#: TinyMCE/utility.py:192
-msgid "Original"
-msgstr "原始格式"
 
 #: TinyMCE/interfaces/utility.py:214
 msgid "Outdent"
@@ -537,22 +539,22 @@ msgstr "從 Word 貼上"
 msgid "Place toolbar on top of the page"
 msgstr "在頁面上方顯示工具列"
 
-#: TinyMCE/utility.py:768
+#: TinyMCE/utility.py:745
 msgid "Plain cell"
 msgstr "Plain Cell"
 
 #. Default: "Preview"
 #: TinyMCE/interfaces/utility.py:282
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:184
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:182
 msgid "Preview"
 msgstr "預覽"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:220
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:218
 msgid "Preview URL"
 msgstr "預覽網址"
 
 #: TinyMCE/interfaces/utility.py:278
-#: TinyMCE/utility.py:774
+#: TinyMCE/utility.py:751
 msgid "Print"
 msgstr "列印"
 
@@ -587,7 +589,7 @@ msgstr "儲存"
 msgid "Search"
 msgstr "搜尋"
 
-#: TinyMCE/utility.py:779
+#: TinyMCE/utility.py:756
 msgid "Search results:"
 msgstr "搜尋結果:"
 
@@ -599,7 +601,7 @@ msgstr "站內搜尋"
 msgid "Select Style"
 msgstr "選擇樣式"
 
-#: TinyMCE/utility.py:772
+#: TinyMCE/utility.py:749
 msgid "Selection"
 msgstr "選取"
 
@@ -607,7 +609,7 @@ msgstr "選取"
 msgid "Settings for the TinyMCE Wysiwyg editor."
 msgstr "TinyMCE 編輯器的設定值。"
 
-#: TinyMCE/utility.py:778
+#: TinyMCE/utility.py:755
 msgid "Shortcuts"
 msgstr "快速鍵"
 
@@ -626,7 +628,7 @@ msgstr "方框"
 msgid "Strikethrough"
 msgstr "刪除線"
 
-#: TinyMCE/utility.py:769
+#: TinyMCE/utility.py:746
 msgid "Style..."
 msgstr "樣式..."
 
@@ -642,7 +644,7 @@ msgid "Subheading"
 msgstr "子標題"
 
 #. Default: "Subject"
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:241
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:239
 msgid "Subject"
 msgstr "標題"
 
@@ -662,17 +664,17 @@ msgstr "表格選項"
 msgid "Table styles"
 msgstr "表格樣式"
 
-#: TinyMCE/utility.py:771
+#: TinyMCE/utility.py:748
 msgid "Tables"
 msgstr "表格"
 
-#: TinyMCE/utility.py:770
+#: TinyMCE/utility.py:747
 msgid "Text"
 msgstr "文字"
 
-#: TinyMCE/adapters/Upload.py:166
-msgid "The content-type '%s' has no image-field!"
-msgstr "內容型別 '%s' 沒有圖檔欄位"
+#: TinyMCE/adapters/Upload.py:169
+msgid "The content-type '${type}' has no image- or file-field!"
+msgstr ""
 
 #: TinyMCE/interfaces/utility.py:328
 msgid "This option allows you to choose the spellchecker for TinyMCE. If you want the spellchecker button to be visible, make sure it is enabled in the toolbar settings."
@@ -770,11 +772,11 @@ msgstr "清除連結"
 msgid "Unordered list"
 msgstr "非排序式條列"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:160
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:158
 msgid "Upload"
 msgstr "上傳"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:133
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:131
 msgid "Upload File"
 msgstr "上傳檔案"
 
@@ -791,6 +793,10 @@ msgstr "開關控制字元的顯示"
 #: TinyMCE/interfaces/utility.py:395
 msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
 msgstr "勾選的話，只能在現行目錄裡選擇連結或圖檔。"
+
+#: TinyMCE/adapters/Upload.py:113
+msgid "You do not have permission to upload files in this folder"
+msgstr ""
 
 #. Default: "A CSS level 3 pattern used to match elements that can serve as anchors. The default value is to match headings."
 #: TinyMCE/interfaces/utility.py:476
@@ -826,17 +832,17 @@ msgstr "指定 After the Deadline 伺服器的忽略字串清單，在設定拼�
 msgid "label_tinymce_plugins"
 msgstr "外掛程式"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:154
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:152
 msgid "or External URL"
 msgstr "或外部網址"
 
 #. Default: "Edit without visual editor"
-#: TinyMCE/skins/tinymce/tinymce_wysiwyg_support.pt:33
+#: TinyMCE/skins/tinymce/tinymce_wysiwyg_support.pt:32
 msgid "suppress_visual_editor"
 msgstr "停用編輯器"
 
 #. Default: "Edit with visual editor"
-#: TinyMCE/skins/tinymce/tinymce_wysiwyg_support.pt:41
+#: TinyMCE/skins/tinymce/tinymce_wysiwyg_support.pt:40
 msgid "suppress_visual_editor_with"
 msgstr "啟用編輯器"
 
