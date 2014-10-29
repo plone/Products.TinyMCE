@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
-"POT-Creation-Date: 2013-04-25 12:54+0000\n"
+"POT-Creation-Date: 2014-10-29 12:22+0000\n"
 "PO-Revision-Date: 2012-04-23 15:36+0100\n"
 "Last-Translator: Mikel Larreategi <mlarreategi@codesyntax.com>\n"
 "Language-Team: eu <eu@li.org>\n"
@@ -15,15 +15,15 @@ msgstr ""
 "Domain: plone.tinymce\n"
 "X-Poedit-Language: Basque\n"
 
-#: TinyMCE/utility.py:766
+#: TinyMCE/utility.py:743
 msgid "(remove style)"
 msgstr "Estiloa kendua"
 
-#: TinyMCE/utility.py:765
+#: TinyMCE/utility.py:742
 msgid "Add new File"
 msgstr "Fitxategi berria gehitu"
 
-#: TinyMCE/utility.py:764
+#: TinyMCE/utility.py:741
 msgid "Add new Image"
 msgstr "Irudi berria gehitu"
 
@@ -75,7 +75,7 @@ msgstr "AtDren URLa"
 msgid "Backcolor"
 msgstr "Atzeko kolorea"
 
-#: TinyMCE/adapters/Upload.py:138
+#: TinyMCE/adapters/Upload.py:141
 msgid "Bad filename, please rename."
 msgstr ""
 
@@ -83,11 +83,11 @@ msgstr ""
 msgid "Bold"
 msgstr "Beltza"
 
-#: TinyMCE/utility.py:777
+#: TinyMCE/utility.py:754
 msgid "Browser"
 msgstr "Nabigatzailea"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:297
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:295
 msgid "CSS Style"
 msgstr "CSS estiloa"
 
@@ -133,7 +133,12 @@ msgstr "Eduki-bilatzailea"
 msgid "Copy"
 msgstr "Kopiatu"
 
+#: TinyMCE/adapters/Upload.py:177
+msgid "Could not upload the file"
+msgstr ""
+
 #. Default: "Current Folder"
+#: TinyMCE/interfaces/utility.py:448
 #: TinyMCE/shortcut.py:9
 msgid "Current Folder"
 msgstr "Uneko karpeta"
@@ -180,7 +185,7 @@ msgid "Discreet"
 msgstr "Txikiz"
 
 #. Default: "E-mail"
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:234
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:232
 msgid "E-mail"
 msgstr "E-posta"
 
@@ -265,7 +270,7 @@ msgid "External"
 msgstr "Kanpokoak"
 
 #. Default: "External link"
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:201
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:199
 msgid "External link"
 msgstr "Kanpoko lotura"
 
@@ -304,11 +309,12 @@ msgid "Highlight"
 msgstr "Markatu"
 
 #. Default: "Home"
+#: TinyMCE/interfaces/utility.py:448
 #: TinyMCE/shortcut.py:20
 msgid "Home"
 msgstr "Hasiera"
 
-#: TinyMCE/utility.py:762
+#: TinyMCE/utility.py:739
 msgid "Image Browser"
 msgstr "Irudi-bilatzailea"
 
@@ -349,7 +355,7 @@ msgstr "Data sartu"
 msgid "Insert horizontal ruler"
 msgstr "Marra horizontala sartu"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:171
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:169
 msgid "Insert image from URL"
 msgstr ""
 
@@ -409,7 +415,7 @@ msgstr "Itxura"
 msgid "Libraries"
 msgstr "Liburutegiak"
 
-#: TinyMCE/utility.py:763
+#: TinyMCE/utility.py:740
 msgid "Link Browser"
 msgstr "Lotura-bilatzailea"
 
@@ -417,12 +423,12 @@ msgstr "Lotura-bilatzailea"
 msgid "Link Shortcuts"
 msgstr "Loturen lasterbideak"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:277
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:275
 msgid "Link Title"
 msgstr "Loturaren izenburua"
 
 #. Default: "Link to anchor"
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:250
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:248
 msgid "Link to anchor"
 msgstr "Aingurara lotura"
 
@@ -450,7 +456,7 @@ msgstr "Lotura-bilatzeailean agertuko diren lasterbideak"
 msgid "List view"
 msgstr "Zerrenda bista"
 
-#: TinyMCE/utility.py:773
+#: TinyMCE/utility.py:750
 msgid "Lists"
 msgstr "Zerrendak"
 
@@ -471,19 +477,19 @@ msgstr ""
 msgid "Named"
 msgstr "Izenduna"
 
-#: TinyMCE/utility.py:776
+#: TinyMCE/utility.py:753
 msgid "No anchors in this page"
 msgstr "Ez dago aingurarik orrialde honetan"
 
-#: TinyMCE/utility.py:775
+#: TinyMCE/utility.py:752
 msgid "No items in this folder"
 msgstr "Ez dago elementurik orrialde honetan"
 
-#: TinyMCE/utility.py:767
+#: TinyMCE/utility.py:744
 msgid "Normal paragraph"
 msgstr "Parrafo arrunta"
 
-#: TinyMCE/adapters/Upload.py:141
+#: TinyMCE/adapters/Upload.py:144
 msgid "Not allowed to upload a file of this type to this folder"
 msgstr ""
 
@@ -498,7 +504,7 @@ msgstr "Zenbakiak"
 msgid "Numeric"
 msgstr "Zenbakia"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:267
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:265
 msgid "OK"
 msgstr "OK"
 
@@ -508,10 +514,6 @@ msgstr "Lerro bakoitia"
 #: TinyMCE/interfaces/utility.py:206
 msgid "Ordered list"
 msgstr "Ordenatutako zerrenda"
-
-#: TinyMCE/utility.py:192
-msgid "Original"
-msgstr "Jatorrizkoa"
 
 #: TinyMCE/interfaces/utility.py:214
 msgid "Outdent"
@@ -536,22 +538,22 @@ msgstr "Wordetik itsatsi"
 msgid "Place toolbar on top of the page"
 msgstr "Tresna-barra orrialdearen goiko aldean kokatu"
 
-#: TinyMCE/utility.py:768
+#: TinyMCE/utility.py:745
 msgid "Plain cell"
 msgstr "Zelda arrunta"
 
 #. Default: "Preview"
 #: TinyMCE/interfaces/utility.py:282
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:184
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:182
 msgid "Preview"
 msgstr "Aurreikusi"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:220
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:218
 msgid "Preview URL"
 msgstr "Weba aurreikusi"
 
 #: TinyMCE/interfaces/utility.py:278
-#: TinyMCE/utility.py:774
+#: TinyMCE/utility.py:751
 msgid "Print"
 msgstr "Inprimatu"
 
@@ -586,7 +588,7 @@ msgstr "Gorde"
 msgid "Search"
 msgstr "Bilatu"
 
-#: TinyMCE/utility.py:779
+#: TinyMCE/utility.py:756
 msgid "Search results:"
 msgstr "Bilaketare emaitzak:"
 
@@ -598,7 +600,7 @@ msgstr ""
 msgid "Select Style"
 msgstr "Estiloa aukeratu"
 
-#: TinyMCE/utility.py:772
+#: TinyMCE/utility.py:749
 msgid "Selection"
 msgstr "Aukeraketa"
 
@@ -606,7 +608,7 @@ msgstr "Aukeraketa"
 msgid "Settings for the TinyMCE Wysiwyg editor."
 msgstr "TinyMCE editorearen ezarpenak"
 
-#: TinyMCE/utility.py:778
+#: TinyMCE/utility.py:755
 msgid "Shortcuts"
 msgstr "Lasterbideak"
 
@@ -625,7 +627,7 @@ msgstr "Karratua"
 msgid "Strikethrough"
 msgstr "Gainetik marra jarri"
 
-#: TinyMCE/utility.py:769
+#: TinyMCE/utility.py:746
 msgid "Style..."
 msgstr "Estiloa..."
 
@@ -641,7 +643,7 @@ msgid "Subheading"
 msgstr "2. mailako goiburua"
 
 #. Default: "Subject"
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:241
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:239
 msgid "Subject"
 msgstr "Gaia"
 
@@ -661,16 +663,16 @@ msgstr "Taularen kontrolak"
 msgid "Table styles"
 msgstr "Taularen estiloak"
 
-#: TinyMCE/utility.py:771
+#: TinyMCE/utility.py:748
 msgid "Tables"
 msgstr "Taulak"
 
-#: TinyMCE/utility.py:770
+#: TinyMCE/utility.py:747
 msgid "Text"
 msgstr "Testua"
 
-#: TinyMCE/adapters/Upload.py:166
-msgid "The content-type '%s' has no image-field!"
+#: TinyMCE/adapters/Upload.py:169
+msgid "The content-type '${type}' has no image- or file-field!"
 msgstr ""
 
 #: TinyMCE/interfaces/utility.py:328
@@ -769,11 +771,11 @@ msgstr "Lotura kendu"
 msgid "Unordered list"
 msgstr "Ordenatu gabeko zerrenda"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:160
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:158
 msgid "Upload"
 msgstr "Kargatu"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:133
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:131
 msgid "Upload File"
 msgstr "Fitxategia kargatu"
 
@@ -790,6 +792,10 @@ msgstr "Kontrol karaktereak erakutsi ala ez"
 #: TinyMCE/interfaces/utility.py:395
 msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
 msgstr "Aktibatuta dagoenean, erabiltzailearentzat uneko elementua izango da erroko elementua, eta ondorioz ezingo ditu webgunearen beste leku batzuetako elementuetarako loturak egin edo hango irudiak gehitu."
+
+#: TinyMCE/adapters/Upload.py:113
+msgid "You do not have permission to upload files in this folder"
+msgstr ""
 
 #. Default: "A CSS level 3 pattern used to match elements that can serve as anchors. The default value is to match headings."
 #: TinyMCE/interfaces/utility.py:476
@@ -825,17 +831,17 @@ msgstr "\"After the Deadline\" zuzentzaileak aztertuko ez dituen testuak. Oharra
 msgid "label_tinymce_plugins"
 msgstr "Editorearen pluginak"
 
-#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:154
+#: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:152
 msgid "or External URL"
 msgstr "edo kanpoko helbidea"
 
 #. Default: "Edit without visual editor"
-#: TinyMCE/skins/tinymce/tinymce_wysiwyg_support.pt:33
+#: TinyMCE/skins/tinymce/tinymce_wysiwyg_support.pt:32
 msgid "suppress_visual_editor"
 msgstr "Editore gabe editatu"
 
 #. Default: "Edit with visual editor"
-#: TinyMCE/skins/tinymce/tinymce_wysiwyg_support.pt:41
+#: TinyMCE/skins/tinymce/tinymce_wysiwyg_support.pt:40
 msgid "suppress_visual_editor_with"
 msgstr "Editorearekin editatu"
 
