@@ -5,7 +5,8 @@ HISTORY
 1.3.8 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fix i18n of upload error messages.
+  [vincentfretin]
 
 
 1.3.7 (2014-09-11)

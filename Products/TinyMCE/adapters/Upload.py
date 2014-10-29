@@ -2,6 +2,7 @@ from Acquisition import aq_inner
 from Acquisition import aq_parent
 from zExceptions import BadRequest
 from zope.app.content import queryContentType
+from zope.i18n import translate
 from zope.schema import getFieldsInOrder
 from Products.CMFCore.interfaces._content import IFolderish
 from Products.CMFCore.utils import getToolByName
@@ -44,6 +45,7 @@ class Upload(object):
 
     def errorMessage(self, msg):
         """Returns an error message"""
+        msg = translate(msg, context=self.context.REQUEST)
         script = TEMPLATE % (
             "window.parent.uploadError('" + msg.replace("'", "\\'") + "');")
         return script
@@ -108,7 +110,7 @@ class Upload(object):
         if not context.portal_membership.checkPermission(
             'Add portal content', context):
             return self.errorMessage(
-                "You do not have permission to upload files in this folder")
+                _("You do not have permission to upload files in this folder"))
 
         # 2) check image types uploadable in folder.
         #    priority is to content_type_registry image type
@@ -164,14 +166,15 @@ class Upload(object):
         if HAS_DEXTERITY and IDexterityContent.providedBy(obj):
             if not self.setDexterityItem(obj, uploadfile):
                 return self.errorMessage(
-                    _("The content-type '%s' has no blob-field!" % metatype))
+                        _("The content-type '${type}' has no blob-field!",
+                          mapping={'type': metatype}))
         else:
             # set primary field
             pf = obj.getPrimaryField()
             pf.set(obj, uploadfile)
 
         if not obj:
-            return self.errorMessage("Could not upload the file")
+            return self.errorMessage(_("Could not upload the file"))
 
         obj.reindexObject()
         folder = obj.aq_parent.absolute_url()
