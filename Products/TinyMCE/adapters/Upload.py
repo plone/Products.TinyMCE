@@ -166,7 +166,7 @@ class Upload(object):
         if HAS_DEXTERITY and IDexterityContent.providedBy(obj):
             if not self.setDexterityItem(obj, uploadfile):
                 return self.errorMessage(
-                        _("The content-type '${type}' has no blob-field!",
+                        _("The content-type '${type}' has no image- or file-field!",
                           mapping={'type': metatype}))
         else:
             # set primary field
