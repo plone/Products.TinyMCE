@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.3.8 (unreleased)
+1.3.8 (2014-11-05)
 ------------------
 
 - Fix i18n of upload error messages.
