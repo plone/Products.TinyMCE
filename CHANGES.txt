@@ -8,6 +8,9 @@ HISTORY
 - Valid HTML 5 attribute ``start`` for ``ol`` no more removed
   (close `#13566`__) 
   [keul]
+- Current image in folderlisting was not always selected on some
+  browsers (at least: Chrome on Windows and Fireofx 33)
+  [keul]
 
 __ https://dev.plone.org/ticket/13566
 
