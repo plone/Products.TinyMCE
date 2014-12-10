@@ -454,13 +454,15 @@ function getInputValue(name, formnr) {
 function getRadioValue(name, formnr) {
     var value = "";
     var elm = document.forms[formnr][name];
-    if (typeof(elm.value) == 'undefined') {
+    if (typeof(elm.length) !== 'undefined') {
+        // A list of radio buttons
         for (var i = 0; i < elm.length; i++) {
             if (elm[i].checked) {
                 value = elm[i].value;
             }
         }
     } else {
+        // A single radio button
         if (elm.checked) {
             value = elm.value;
         }
@@ -471,13 +473,15 @@ function getRadioValue(name, formnr) {
 
 function setRadioValue(name, value, formnr) {
     var elm = document.forms[formnr][name];
-    if (elm && typeof(elm.value) == 'undefined') {
+    if (elm && typeof(elm.length) !== 'undefined') {
+        // A list of radio buttons
         for (var i = 0; i < elm.length; i++) {
             if (elm[i].value == value) {
                 elm[i].checked = true;
             }
         }
     } else if (elm) {
+        // A single radio button
         if (elm.value == value) {
             elm.checked = true;
         }
