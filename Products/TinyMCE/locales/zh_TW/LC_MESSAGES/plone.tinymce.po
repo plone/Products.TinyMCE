@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: TinyMCE\n"
 "POT-Creation-Date: 2014-10-29 12:22+0000\n"
-"PO-Revision-Date: 2014-05-11 10:56+0800\n"
+"PO-Revision-Date: 2015-03-25 13:12+0800\n"
 "Last-Translator: TsungWei Hu <marr.tw@gmail.com>\n"
 "Language-Team: Plone i18n <plone-i18n@lists.sourceforge.net>\n"
 "MIME-Version: 1.0\n"
@@ -58,7 +58,7 @@ msgstr "錨點"
 
 #: TinyMCE/interfaces/utility.py:475
 msgid "Anchor selector expression"
-msgstr "錨點 Selector Expression"
+msgstr "錨點 Selector 表示式"
 
 #: TinyMCE/interfaces/utility.py:356
 msgid "AtD Error types to show"
@@ -120,15 +120,15 @@ msgstr "Clear Floats"
 
 #: TinyMCE/interfaces/utility.py:404
 msgid "Contains Anchors"
-msgstr "Contains Anchors"
+msgstr "可包含的錨點"
 
 #: TinyMCE/interfaces/utility.py:399
 msgid "Contains Objects"
-msgstr "Contains Objects"
+msgstr "可包含的物件"
 
 #: TinyMCE/browser/controlpanel.py:50
 msgid "Content Browser"
-msgstr "Content Browser"
+msgstr "內容瀏覽"
 
 #: TinyMCE/interfaces/utility.py:118
 msgid "Copy"
@@ -136,7 +136,7 @@ msgstr "複製"
 
 #: TinyMCE/adapters/Upload.py:177
 msgid "Could not upload the file"
-msgstr ""
+msgstr "無法上傳檔案"
 
 #. Default: "Current Folder"
 #: TinyMCE/interfaces/utility.py:448
@@ -204,7 +204,7 @@ msgstr "編輯器寬度"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:28
 msgid "Email"
-msgstr "Email"
+msgstr "電郵"
 
 #: TinyMCE/interfaces/utility.py:266
 msgid "Emotions"
@@ -268,7 +268,7 @@ msgstr "偶數列"
 #. Default: "External"
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:24
 msgid "External"
-msgstr "External"
+msgstr "外部"
 
 #. Default: "External link"
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:199
@@ -321,11 +321,11 @@ msgstr "Image Browser"
 
 #: TinyMCE/interfaces/utility.py:414
 msgid "Image Objects"
-msgstr "Image Objects"
+msgstr "圖檔物件"
 
 #: TinyMCE/interfaces/utility.py:453
 msgid "Image Shortcuts"
-msgstr "Image Shortcuts"
+msgstr "圖檔捷徑"
 
 #: TinyMCE/interfaces/utility.py:390
 msgid "Images will be automatically captioned."
@@ -398,7 +398,7 @@ msgstr "插入/編輯媒體"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:20
 msgid "Internal"
-msgstr "Internal"
+msgstr "內部"
 
 msgid "Invisible grid"
 msgstr "隱藏格線"
@@ -418,20 +418,20 @@ msgstr "拼字檢查"
 
 #: TinyMCE/utility.py:740
 msgid "Link Browser"
-msgstr "Link Browser"
+msgstr "連結瀏覽"
 
 #: TinyMCE/interfaces/utility.py:445
 msgid "Link Shortcuts"
-msgstr "Link Shortcuts"
+msgstr "連結捷徑"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:275
 msgid "Link Title"
-msgstr "Link Title"
+msgstr "連結的標題"
 
 #. Default: "Link to anchor"
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:248
 msgid "Link to anchor"
-msgstr "Link to Anchor"
+msgstr "選擇錨點來建立連結"
 
 #: TinyMCE/interfaces/utility.py:384
 msgid "Link using UIDs"
@@ -455,7 +455,7 @@ msgstr "連結瀏覽視窗的快速選項"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:48
 msgid "List view"
-msgstr "List View"
+msgstr "列表方式"
 
 #: TinyMCE/utility.py:750
 msgid "Lists"
