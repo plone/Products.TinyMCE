@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.3.9 (unreleased)
+1.3.9 (2015-04-29)
 ------------------
 
 - Update Brazilian Portuguese translation.
