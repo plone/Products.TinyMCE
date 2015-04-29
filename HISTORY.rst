@@ -5,8 +5,9 @@ HISTORY
 1.3.10 (unreleased)
 -------------------
 
-- Nothing changed yet.
-
+- Removed the ``plone.app.layout==2.3.7`` dependency so this package still
+  works with Plone 4.2
+  [frapell]
 
 1.3.9 (2015-04-29)
 ------------------
