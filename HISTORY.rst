@@ -5,7 +5,8 @@ HISTORY
 1.3.9 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Update Brazilian Portuguese translation.
+  [erico]
 
 
 1.3.8 (2014-11-05)
