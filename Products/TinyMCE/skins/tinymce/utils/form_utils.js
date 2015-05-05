@@ -76,6 +76,10 @@ function selectByValue(form_obj, field_name, value, add_custom, ignore_case) {
 
 	var sel = form_obj.elements[field_name];
 
+  if (sel.options === undefined){
+    return;
+  }
+
 	var found = false;
 	for (var i=0; i<sel.options.length; i++) {
 		var option = sel.options[i];
@@ -118,24 +122,27 @@ function addClassesToList(list_id, specific_option) {
 	var styles = tinyMCEPopup.getParam('theme_advanced_styles', false);
 	styles = tinyMCEPopup.getParam(specific_option, styles);
 
-	if (styles) {
-		var stylesAr = styles.split(';');
+  if (styleSelectElm !== null){
 
-		for (var i=0; i<stylesAr.length; i++) {
-			if (stylesAr != "") {
-				var key, value;
+    if (styles) {
+      var stylesAr = styles.split(';');
 
-				key = stylesAr[i].split('=')[0];
-				value = stylesAr[i].split('=')[1];
+      for (var i=0; i<stylesAr.length; i++) {
+        if (stylesAr != "") {
+          var key, value;
 
-				styleSelectElm.options[styleSelectElm.length] = new Option(key, value);
-			}
-		}
-	} else {
-		tinymce.each(tinyMCEPopup.editor.dom.getClasses(), function(o) {
-			styleSelectElm.options[styleSelectElm.length] = new Option(o.title || o['class'], o['class']);
-		});
-	}
+          key = stylesAr[i].split('=')[0];
+          value = stylesAr[i].split('=')[1];
+
+          styleSelectElm.options[styleSelectElm.length] = new Option(key, value);
+        }
+      }
+    } else {
+      tinymce.each(tinyMCEPopup.editor.dom.getClasses(), function(o) {
+        styleSelectElm.options[styleSelectElm.length] = new Option(o.title || o['class'], o['class']);
+      });
+    }
+  }
 }
 
 function isVisible(element_id) {

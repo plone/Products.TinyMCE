@@ -1,104 +1,100 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" i18n:domain="tinymce">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title i18n:translate="searchreplace_dlg_replace_title"></title>
-	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
-	<script type="text/javascript" src="../../utils/mctabs.js"></script>
-	<script type="text/javascript" src="../../utils/form_utils.js"></script>
-	<script type="text/javascript" src="js/searchreplace.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/searchreplace.css" />
+	<title>{#searchreplace_dlg.replace_title}</title>
+	<script type="text/javascript" src="../../tiny_mce_popup.js?v={tinymce_version}"></script>
+	<script type="text/javascript" src="../../utils/mctabs.js?v={tinymce_version}"></script>
+	<script type="text/javascript" src="../../utils/form_utils.js?v={tinymce_version}"></script>
+	<script type="text/javascript" src="js/searchreplace.js?v={tinymce_version}"></script>
+	<link rel="stylesheet" type="text/css" href="css/searchreplace.css?v={tinymce_version}" />
 </head>
-<body role="application" aria-labelledby="app_title">
-	<span id="app_title" style="display:none" i18n:translate="searchreplace_dlg_replace_title"></span>
-	<div class="dialog-wrapper" id="content">
-		<form onsubmit="SearchReplaceDialog.searchNext('none');return false;" action="#">
-			<div class="tabs">
-				<ul class="formTabs">
-					<li id="search_tab" class="current firstFormTab formTab" aria-controls="search_panel"><span><a href="javascript:SearchReplaceDialog.switchMode('search');" onmousedown="return false;" i18n:translate="searchreplace_search_desc"></a></span></li>
-					<li id="replace_tab" class="lastFormTab formTab" aria-controls="replace_panel"><span><a href="javascript:SearchReplaceDialog.switchMode('replace');" onmousedown="return false;" i18n:translate="searchreplace_dlg_replace"></a></span></li>
-				</ul>
-			</div>
-
-			<div class="panel_wrapper">
-				<div id="search_panel" class="panel current">
-					<fieldset role="presentation" class="formPanel">
-						<div class="field">
-							<label for="search_panel_searchstring" i18n:translate="searchreplace_dlg_findwhat"></label>
-							<div class="widget">
-								<input type="text" id="search_panel_searchstring" name="search_panel_searchstring" value="" aria-required="true" size="30"/>
-							</div>
-						</div>
-
-						<div class="field" class="direction">
-							<label i18n:translate="searchreplace_dlg_direction"></label>
-							<div class="widget">
-								<input type="radio" id="search_panel_backwardsu" name="search_panel_backwards" class="noborder blurrable"/>
-								<label for="search_panel_backwardsu" i18n:translate="searchreplace_dlg_up"></label>
-								<br/>
-
-								<input type="radio" id="search_panel_backwardsd" name="search_panel_backwards" checked="checked" class="noborder blurrable"/>
-								<label for="search_panel_backwardsd" i18n:translate="searchreplace_dlg_down"></label>
-								<br/>
-							</div>
-						</div>
-
-						<div class="field">
-							<div class="widget">
-								<input id="search_panel_casesensitivebox" name="search_panel_casesensitivebox" type="checkbox" />
-								<label for="search_panel_casesensitivebox" i18n:translate="searchreplace_dlg_mcase"></label>
-							</div>
-						</div>
-					</fieldset>
-				</div>
-
-				<div id="replace_panel" class="panel">
-					<fieldset class="formPanel">
-						<div class="field">
-							<label for="replace_panel_searchstring" i18n:translate="searchreplace_dlg_findwhat"></label>
-							<div class="widget">
-								<input id="replace_panel_searchstring" name="replace_panel_searchstring" type="text" value="" size="30"/>
-							</div>
-						</div>
-
-						<div class="field">
-							<label for="replace_panel_replacestring" i18n:translate="searchreplace_dlg_replacewith"></label>
-							<div class="widget">
-								<input id="replace_panel_replacestring" name="replace_panel_replacestring" type="text" value="" size="30"/>
-							</div>
-						</div>
-
-						<div class="field">
-							<label i18n:translate="searchreplace_dlg_direction"></label>
-							<div class="widget">
-								<input type="radio" id="replace_panel_backwardsu" name="replace_panel_backwards" class="noborder blurrable"/>
-								<label for="replace_panel_backwardsu" i18n:translate="searchreplace_dlg_up"></label>
-								<br/>
-
-								<input type="radio" id="replace_panel_backwardsd" name="replace_panel_backwards" checked="checked" class="noborder blurrable"/>
-								<label for="replace_panel_backwardsd" i18n:translate="searchreplace_dlg_down"></label>
-								<br/>
-							</div>
-						</div>
-
-						<div class="field">
-							<div class="widget">
-								<input id="replace_panel_casesensitivebox" name="replace_panel_casesensitivebox" type="checkbox" />
-								<label for="replace_panel_casesensitivebox" i18n:translate="searchreplace_dlg_mcase"></label>
-							</div>
-						</div>
-					</fieldset>
-				</div>
-			</div>
-
-			<div class="visualClear"><!-- --></div>
-
-			<div class="mceActionPanel">
-				<input type="submit" class="context" id="find" name="insert" i18n:attributes="value searchreplace_dlg_findnext" />
-				<input type="button" class="context" id="replaceBtn" name="replaceBtn" value="" i18n:attributes="value searchreplace_dlg_replace" onclick="SearchReplaceDialog.searchNext('current');" />
-				<input type="button" class="context" id="replaceAllBtn" name="replaceAllBtn" i18n:attributes="value searchreplace_dlg_replaceall" onclick="SearchReplaceDialog.searchNext('all');" />
-				<input type="button" class="context" id="cancel" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
-			</div>
-		</form>
+<body style="display:none;" role="application" aria-labelledby="app_title">
+<span id="app_title" style="display:none">{#searchreplace_dlg.replace_title}</span>
+<form onsubmit="SearchReplaceDialog.searchNext('none');return false;" action="#">
+	<div class="tabs">
+		<ul>
+			<li id="search_tab" aria-controls="search_panel"><span><a href="javascript:SearchReplaceDialog.switchMode('search');" onmousedown="return false;">{#searchreplace.search_desc}</a></span></li>
+			<li id="replace_tab" aria-controls="replace_panel"><span><a href="javascript:SearchReplaceDialog.switchMode('replace');" onmousedown="return false;">{#searchreplace_dlg.replace}</a></span></li>
+		</ul>
 	</div>
+
+	<div class="panel_wrapper">
+		<div id="search_panel" class="panel">
+			<table role="presentation" border="0" cellspacing="0" cellpadding="2">
+				<tr>
+					<td><label for="search_panel_searchstring">{#searchreplace_dlg.findwhat}</label></td>
+					<td><input type="text" id="search_panel_searchstring" name="search_panel_searchstring" style="width: 200px" aria-required="true" /></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<table role="presentation" border="0" cellspacing="0" cellpadding="0" class="direction">
+							<tr role="group" aria-labelledby="search_panel_backwards_label">
+								<td><label id="search_panel_backwards_label">{#searchreplace_dlg.direction}</label></td>
+								<td><input id="search_panel_backwardsu" name="search_panel_backwards" class="radio" type="radio" /></td>
+								<td><label for="search_panel_backwardsu">{#searchreplace_dlg.up}</label></td>
+								<td><input id="search_panel_backwardsd" name="search_panel_backwards" class="radio" type="radio" checked="checked" /></td>
+								<td><label for="search_panel_backwardsd">{#searchreplace_dlg.down}</label></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<table role="presentation" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td><input id="search_panel_casesensitivebox" name="search_panel_casesensitivebox" class="checkbox" type="checkbox" /></td>
+								<td><label for="search_panel_casesensitivebox">{#searchreplace_dlg.mcase}</label></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="replace_panel" class="panel">
+			<table role="presentation" border="0" cellspacing="0" cellpadding="2">
+				<tr>
+					<td><label for="replace_panel_searchstring">{#searchreplace_dlg.findwhat}</label></td>
+					<td><input type="text" id="replace_panel_searchstring" name="replace_panel_searchstring" style="width: 200px" aria-required="true" /></td>
+				</tr>
+				<tr>
+					<td><label for="replace_panel_replacestring">{#searchreplace_dlg.replacewith}</label></td>
+					<td><input type="text" id="replace_panel_replacestring" name="replace_panel_replacestring" style="width: 200px" aria-required="true" /></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<table role="presentation" border="0" cellspacing="0" cellpadding="0" class="direction">
+							<tr role="group" aria-labelledby="replace_panel_dir_label">
+								<td><label id="replace_panel_dir_label">{#searchreplace_dlg.direction}</label></td>
+								<td><input id="replace_panel_backwardsu" name="replace_panel_backwards" class="radio" type="radio" /></td>
+								<td><label for="replace_panel_backwardsu">{#searchreplace_dlg.up}</label></td>
+								<td><input id="replace_panel_backwardsd" name="replace_panel_backwards" class="radio" type="radio" checked="checked" /></td>
+								<td><label for="replace_panel_backwardsd">{#searchreplace_dlg.down}</label></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<table role="presentation" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td><input id="replace_panel_casesensitivebox" name="replace_panel_casesensitivebox" class="checkbox" type="checkbox" /></td>
+								<td><label for="replace_panel_casesensitivebox">{#searchreplace_dlg.mcase}</label></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+	</div>
+
+	<div class="mceActionPanel">
+		<input type="submit" id="insert" name="insert" value="{#searchreplace_dlg.findnext}" />
+		<input type="button" class="button" id="replaceBtn" name="replaceBtn" value="{#searchreplace_dlg.replace}" onclick="SearchReplaceDialog.searchNext('current');" />
+		<input type="button" class="button" id="replaceAllBtn" name="replaceAllBtn" value="{#searchreplace_dlg.replaceall}" onclick="SearchReplaceDialog.searchNext('all');" />
+		<input type="button" id="cancel" name="close" value="{#close}" onclick="tinyMCEPopup.close();" />
+	</div>
+</form>
 </body>
 </html>

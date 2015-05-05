@@ -13,6 +13,7 @@
  */
 var BrowserDialog = function (mcePopup) {
     var image_list_url, link_list_url;
+    var jq = top.jQuery;
 
     this.tinyMCEPopup = mcePopup;
     this.editor = mcePopup.editor;
@@ -61,6 +62,7 @@ var BrowserDialog = function (mcePopup) {
  */
 BrowserDialog.prototype.init = function () {
     var self = this,
+        jq = top.jQuery,
         selected_node = jq(this.editor.selection.getNode(), document),
         scaled_image,
         mailaddress,
@@ -446,6 +448,7 @@ BrowserDialog.prototype.parseImageScale = function (url) {
  * Given DOM node and href value, setup all node attributes/properies
  */
 BrowserDialog.prototype.setLinkAttributes = function (node, link) {
+    var jq = top.jQuery;
     var panelname = jq('#linktype .current a', document).attr('href');
 
     jq(node)
@@ -464,6 +467,7 @@ BrowserDialog.prototype.setLinkAttributes = function (node, link) {
  *
  */
 BrowserDialog.prototype.insertLink = function () {
+    var jq = top.jQuery;
     var selected_node = jq(this.editor.selection.getNode(), document),
         active_panel = jq('#linktype .current a', document).attr('href'),
         self = this,
@@ -586,6 +590,7 @@ BrowserDialog.prototype.insertLink = function () {
  */
 BrowserDialog.prototype.insertImage = function () {
     var attrs = {},
+        jq = top.jQuery,
         selected_node = this.editor.selection.getNode(),
         href = this.editor.convertURL(this.current_link),
         active_panel = jq('#linktype .current a', document).attr('href'),
@@ -672,6 +677,7 @@ BrowserDialog.prototype.insertImage = function () {
  * Activates and disables the search feature based on user input.
  */
 BrowserDialog.prototype.checkSearch = function (e) {
+    var jq = top.jQuery;
     var el = jq('#searchtext', document),
         len = el.val().length;
 
@@ -713,6 +719,7 @@ BrowserDialog.prototype.checkSearch = function (e) {
  * @param url URL of the object to fetch.
  */
 BrowserDialog.prototype.setDetails = function (url) {
+    var jq = top.jQuery;
     var self = this,
         /**
          * Pretty-prints a human readable title for a image scale.
@@ -816,6 +823,7 @@ BrowserDialog.prototype.getCurrentFolderListing = function () {
  */
 BrowserDialog.prototype.getFolderListing = function (context_url, method) {
     var self = this;
+    var jq = top.jQuery;
 
     // store this for view type refreshing
     this.folderlisting_context_url = context_url;
@@ -1057,7 +1065,9 @@ BrowserDialog.prototype.getParentUrl = function (url) {
 BrowserDialog.prototype.getAbsoluteUrl = function (base, link) {
     var base_array,
         link_array,
+        jq = top.jQuery,
         item;
+
 
     if ((link.indexOf('http://') > -1) || (link.indexOf('https://') > -1) || (link.indexOf('ftp://') > -1)) {
         return link;
@@ -1094,6 +1104,7 @@ BrowserDialog.prototype.getAbsoluteUrl = function (base, link) {
 BrowserDialog.prototype.displayPanel = function(panel, upload_allowed) {
     // handles: details, browse, search, external, email, anchor, upload, advanced
     var correction_length;
+    var jq = top.jQuery;
 
     // handle upload button
     if ((upload_allowed === true || upload_allowed === undefined) && ((panel === "browse" || panel === "details") && this.is_search_activated === false)) {
@@ -1187,6 +1198,7 @@ BrowserDialog.prototype.displayPanel = function(panel, upload_allowed) {
  */
 BrowserDialog.prototype.populateAnchorList = function () {
     var nodes,
+        jq = top.jQuery,
         html = "",
         divclass = "even",
         name,
@@ -1233,6 +1245,7 @@ BrowserDialog.prototype.populateAnchorList = function () {
  * Strip HTTP scheme from URL and set prefix accordingly
  */
 BrowserDialog.prototype.checkExternalURL = function (href) {
+    var jq = top.jQuery;
     var el = jq('#externalurl', document),
         scheme = href.split('://')[0];
 
@@ -1250,6 +1263,7 @@ BrowserDialog.prototype.checkExternalURL = function (href) {
  * Preview webpage if url is set
  */
 BrowserDialog.prototype.previewExternalURL = function () {
+    var jq = top.jQuery;
     var url = jq('#externalurl', document).val(),
         urlprefix = jq('#externalurlprefix', document).val();
 
@@ -1269,6 +1283,7 @@ tinyMCEPopup.onInit.add(bwrdialog.init, bwrdialog);
  * after uploadbutton was pressed
  */
 var uploadOk = function uploadOk(current_link, folder) {
+    var jq = top.jQuery;
     var filefield = jq('#uploadfile', document).parent();
 
     // redraw input selection for better UX feeling after successful upload
