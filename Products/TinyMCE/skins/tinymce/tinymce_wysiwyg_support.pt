@@ -23,9 +23,8 @@
                             onblur onblur|nothing;
                             rows rows|default;
                             cols cols|default;
-                            maxlength maxlength|nothing;
                             data-mce-config configuration_json;
-                            class python:wysiwyg and 'mce_editable pat-tinymce' or None"></textarea>
+                            class python:wysiwyg and 'mce_editable' or None"></textarea>
 
   <div tal:condition="wysiwyg"
        class="discreet suppressVisualEditor" style="margin-top: -1em;">

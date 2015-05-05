@@ -8,11 +8,7 @@ function insertTable() {
 	var cols = 2, rows = 2, border = 0, cellpadding = -1, cellspacing = -1, align, width, height, className, caption, frame, rules;
 	var html = '', capEl, elm;
 	var cellLimit, rowLimit, colLimit;
-	if (tinyMCEPopup.getParam('table_firstline_th')) {
-		line_tag = "th";
-	} else {
-		line_tag = "td";
-	}
+
 	tinyMCEPopup.restoreSelection();
 
 	if (!AutoValidator.validate(formObj)) {
@@ -78,7 +74,7 @@ function insertTable() {
 		}
 
 		dom.setAttrib(elm, 'align', align);
-		dom.setAttrib(elm, 'tframe', frame);
+		dom.setAttrib(elm, 'frame', frame);
 		dom.setAttrib(elm, 'rules', rules);
 		dom.setAttrib(elm, 'class', className);
 		dom.setAttrib(elm, 'style', style);
@@ -95,7 +91,7 @@ function insertTable() {
 		if (!capEl && caption) {
 			capEl = elm.ownerDocument.createElement('caption');
 
-			if (!tinymce.isIE)
+			if (!tinymce.isIE || tinymce.isIE11)
 				capEl.innerHTML = '<br data-mce-bogus="1"/>';
 
 			elm.insertBefore(capEl, elm.firstChild);
@@ -148,7 +144,7 @@ function insertTable() {
 		//elm.outerHTML = elm.outerHTML;
 
 		inst.nodeChanged();
-		inst.execCommand('mceEndUndoLevel');
+		inst.execCommand('mceEndUndoLevel', false, {}, {skip_undo: true});
 
 		// Repaint if dimensions changed
 		if (formObj.width.value != orgTableWidth || formObj.height.value != orgTableHeight)
@@ -165,6 +161,7 @@ function insertTable() {
 	if (!isCssSize(border)) {
 		html += makeAttrib('border', border);
 	}
+
 	html += makeAttrib('cellpadding', cellpadding);
 	html += makeAttrib('cellspacing', cellspacing);
 	html += makeAttrib('data-mce-new', '1');
@@ -202,7 +199,7 @@ function insertTable() {
 	html += '>';
 
 	if (caption) {
-		if (!tinymce.isIE)
+		if (!tinymce.isIE || tinymce.isIE11)
 			html += '<caption><br data-mce-bogus="1"/></caption>';
 		else
 			html += '<caption></caption>';
@@ -212,12 +209,11 @@ function insertTable() {
 		html += "<tr>";
 
 		for (var x=0; x<cols; x++) {
-			if (!tinymce.isIE)
-				html += '<'+line_tag+'><br data-mce-bogus="1"/></'+line_tag+'>';
+			if (!tinymce.isIE || tinymce.isIE11)
+				html += '<td><br data-mce-bogus="1"/></td>';
 			else
-				html += '<'+line_tag+'></'+line_tag+'>';
+				html += '<td></td>';
 		}
-		line_tag = "td";
 
 		html += "</tr>";
 	}
@@ -249,8 +245,16 @@ function insertTable() {
 	tinymce.each(dom.select('table[data-mce-new]'), function(node) {
 		var tdorth = dom.select('td,th', node);
 
+		// Fixes a bug in IE where the caret cannot be placed after the table if the table is at the end of the document
+		if (tinymce.isIE && !tinymce.isIE11 && node.nextSibling == null) {
+			if (inst.settings.forced_root_block)
+				dom.insertAfter(dom.create(inst.settings.forced_root_block), node);
+			else
+				dom.insertAfter(dom.create('br', {'data-mce-bogus': '1'}), node);
+		}
+
 		try {
-			// IE9 might fail to do this selection
+			// IE9 might fail to do this selection 
 			inst.selection.setCursorLocation(tdorth[0], 0);
 		} catch (ex) {
 			// Ignore
@@ -260,7 +264,7 @@ function insertTable() {
 	});
 
 	inst.addVisual();
-	inst.execCommand('mceEndUndoLevel');
+	inst.execCommand('mceEndUndoLevel', false, {}, {skip_undo: true});
 
 	tinyMCEPopup.close();
 }
@@ -302,6 +306,15 @@ function init() {
 	var inst = tinyMCEPopup.editor, dom = inst.dom;
 	var formObj = document.forms[0];
 	var elm = dom.getParent(inst.selection.getNode(), "table");
+
+	// Hide advanced fields that isn't available in the schema
+	tinymce.each("summary id rules dir style frame".split(" "), function(name) {
+		var tr = tinyMCEPopup.dom.getParent(name, "tr") || tinyMCEPopup.dom.getParent("t" + name, "tr");
+
+		if (tr && !tinyMCEPopup.editor.schema.isValid("table", name)) {
+			tr.style.display = 'none';
+		}
+	});
 
 	action = tinyMCEPopup.getWindowArg('action');
 
@@ -348,13 +361,9 @@ function init() {
 	addClassesToList('class', "table_styles");
 	TinyMCE_EditableSelects.init();
 
-	if (action == "insert") {
-		className = "plain";
-	}
-
 	// Update form
 	selectByValue(formObj, 'align', align);
-	selectByValue(formObj, 'frame', frame);
+	selectByValue(formObj, 'tframe', frame);
 	selectByValue(formObj, 'rules', rules);
 	selectByValue(formObj, 'class', className, true, true);
 	formObj.cols.value = cols;
@@ -442,6 +451,8 @@ function changedBorder() {
 			st['border-width'] = '';
 		}
 	}
+
+	formObj.style.value = dom.serializeStyle(st);
 }
 
 function changedColor() {
