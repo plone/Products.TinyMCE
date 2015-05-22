@@ -5,6 +5,9 @@ HISTORY
 1.4.3 (unreleased)
 ------------------
 
+- Fix Brazilam Portuguese translations (closes `#99`_).
+  [rodfersou]
+
 - Update Traditional Chinese translations.
   [marr]
 
@@ -1658,3 +1661,5 @@ __ https://dev.plone.org/ticket/13013
 
 - Get minimal functionality.
   [turgmr2]
+
+.. _`#99`: https://github.com/collective/sc.social.like/pull/99
