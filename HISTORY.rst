@@ -11,6 +11,9 @@ HISTORY
 - Update Traditional Chinese translations.
   [marr]
 
+- Fix i18n:domain for Plone Browser plugin template.
+  [marr]
+
 
 1.4.2 (2014-11-01)
 ------------------
