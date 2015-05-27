@@ -5,7 +5,8 @@ HISTORY
 1.3.10 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fix Brazilam Portuguese translations (closes `#99`_).
+  [rodfersou]
 
 
 1.3.9 (2015-04-29)
@@ -1653,3 +1654,5 @@ __ https://dev.plone.org/ticket/13566
 
 - Get minimal functionality.
   [turgmr2]
+
+.. _`#99`: https://github.com/collective/sc.social.like/pull/99
