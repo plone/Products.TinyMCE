@@ -18,6 +18,8 @@ setup(name='Products.TinyMCE',
     classifiers=[
         "Framework :: Plone",
         "Programming Language :: Python",
+        "Programming Language :: Python :: 2.6",
+        "Programming Language :: Python :: 2.7",
     ],
     keywords='editor editors tinymce wysiwyg',
     author='Four Digits',
