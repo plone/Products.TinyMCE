@@ -5,6 +5,10 @@ HISTORY
 1.4.3 (unreleased)
 ------------------
 
+- Remove simplejson from package requirements for Pythons older than
+  2.6.  This package is for Plone 5, so we already require 2.7.
+  [maurits]
+
 - Fix Brazilam Portuguese translations (closes `#99`_).
   [rodfersou]
 
