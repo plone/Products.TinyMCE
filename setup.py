@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='Products.TinyMCE',
-    version='1.4.3',
+    version='1.4.4.dev0',
     description=("Adds support for TinyMCE, a platform independent web based "
                  "Javascript HTML WYSIWYG editor, to Plone."),
     long_description=(open("README.rst").read() + '\n\n' +
