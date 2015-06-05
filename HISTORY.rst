@@ -3,7 +3,7 @@ HISTORY
 =======
 
 
-1.4.3 (unreleased)
+1.4.3 (2015-06-05)
 ------------------
 
 - Add history to PyPI page.
