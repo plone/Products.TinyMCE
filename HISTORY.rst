@@ -508,7 +508,7 @@ __ https://dev.plone.org/ticket/13013
 
 - Initialize TinyMCE with "media_strict: false" to allow embed tags if
   they are removed from the list of nasty tags.
-  Fixeѕ https://dev.plone.org/ticket/10681
+  Fixes https://dev.plone.org/ticket/10681
   [rochecompaan]
 
 
