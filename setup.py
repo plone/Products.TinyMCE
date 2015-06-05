@@ -4,7 +4,8 @@ setup(name='Products.TinyMCE',
     version='1.4.3.dev0',
     description=("Adds support for TinyMCE, a platform independent web based "
                  "Javascript HTML WYSIWYG editor, to Plone."),
-    long_description=open("README.rst").read(),
+    long_description=(open("README.rst").read() + '\n\n' +
+                      open("HISTORY.rst").read()),
     classifiers=[
         "Framework :: Plone",
         "Programming Language :: Python",

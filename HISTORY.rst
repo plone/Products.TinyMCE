@@ -2,8 +2,12 @@
 HISTORY
 =======
 
+
 1.4.3 (unreleased)
 ------------------
+
+- Add history to PyPI page.
+  [maurits]
 
 - Remove simplejson from package requirements for Pythons older than
   2.6.  This package is for Plone 5, so we already require 2.7.
