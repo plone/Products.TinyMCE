@@ -6,7 +6,8 @@ HISTORY
 1.4.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fixed current image scale in image popups
+  [huubbouma]
 
 
 1.4.3 (2015-06-05)
