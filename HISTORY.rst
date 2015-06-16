@@ -6,7 +6,9 @@ HISTORY
 1.4.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- If safe_html transform is disabled, allow other non xhtml conform tags as well.
+  For example "style tag within body tag"
+  [agitator]
 
 
 1.4.3 (2015-06-05)

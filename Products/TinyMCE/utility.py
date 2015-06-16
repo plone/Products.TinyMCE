@@ -812,6 +812,10 @@ class TinyMCE(SimpleItem):
         valid_elements = self.getValidElements()
         results['valid_elements'] = ','.join(["%s[%s]" % (key, '|'.join(value)) for key, value in valid_elements.iteritems()])
 
+        # If safe_html transform is disabled, allow other non xhtml conform tags as well
+        if results['valid_elements'] == '*[*]':
+            results['valid_children'] = "+body[style]"
+
         # self.customplugins can be None on old migrated sites
         results['customplugins'] = (self.customplugins or "").splitlines()
 
