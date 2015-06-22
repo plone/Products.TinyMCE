@@ -11,18 +11,18 @@
 	<link href="css/row.css?v={tinymce_version}" rel="stylesheet" type="text/css" />
 </head>
 <body id="tablerow" style="display: none" role="application">
+    <div id="content" class="dialog-wrapper">
 	<form onsubmit="updateAction();return false;" action="#">
 		<div class="tabs">
-			<ul>
-				<li id="general_tab" class="current" aria-controls="general_panel"><span><a href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;">{#table_dlg.general_tab}</a></span></li>
-				<li id="advanced_tab" aria-controls="advanced_panel"><span><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;">{#table_dlg.advanced_tab}</a></span></li>
+			<ul class="formTabs">
+				<li id="general_tab" class="current firstFormTab formTab" aria-controls="general_panel"><span><a class="selected" href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;">{#table_dlg.general_tab}</a></span></li>
+				<li id="advanced_tab" class="formTab lastFormTab" aria-controls="advanced_panel"><span><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;">{#table_dlg.advanced_tab}</a></span></li>
 			</ul>
 		</div>
 
 		<div class="panel_wrapper">
 			<div id="general_panel" class="panel current">
-				<fieldset>
-					<legend>{#table_dlg.general_props}</legend>
+				<fieldset class="formPanel">
 
 					<table role="presentation" border="0" cellpadding="4" cellspacing="0">
 						<tr>
@@ -78,8 +78,7 @@
 			</div>
 
 			<div id="advanced_panel" class="panel">
-				<fieldset>
-					<legend>{#table_dlg.advanced_props}</legend>
+				<fieldset class="formPanel">
 
 					<table role="presentation" border="0" cellpadding="0" cellspacing="4">
 						<tr>
@@ -150,9 +149,10 @@
 				</select>
 			</div>
 
-			<input type="submit" id="insert" name="insert" value="{#update}" />
-			<input type="button" id="cancel" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+			<input type="submit" id="insert" class="context" name="insert" value="{#update}" />
+			<input type="button" id="cancel" class="context" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
 		</div>
 	</form>
+    </div>
 </body>
 </html>
