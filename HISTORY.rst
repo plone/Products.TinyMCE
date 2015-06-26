@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.3.10 (unreleased)
+1.3.10 (2015-06-26)
 -------------------
 
 - Fix Brazilam Portuguese translations (closes `#99`_).
@@ -496,7 +496,7 @@ __ https://dev.plone.org/ticket/13566
 
 - Initialize TinyMCE with "media_strict: false" to allow embed tags if
   they are removed from the list of nasty tags.
-  Fixeѕ https://dev.plone.org/ticket/10681
+  Fixes https://dev.plone.org/ticket/10681
   [rochecompaan]
 
 
