@@ -14,8 +14,10 @@ function init() {
 
 	// Get table row data
 	var rowtype = trElm.parentNode.nodeName.toLowerCase();
+	var align = dom.getAttrib(trElm, 'align');
 	var valign = dom.getAttrib(trElm, 'valign');
 	var height = trimSize(getStyle(trElm, 'height', 'height'));
+	var className = dom.getAttrib(trElm, 'class');
 	var bgcolor = convertRGBToHex(getStyle(trElm, 'bgcolor', 'backgroundColor'));
 	var backgroundimage = getStyle(trElm, 'background', 'backgroundImage').replace(new RegExp("url\\(['\"]?([^'\"]*)['\"]?\\)", 'gi'), "$1");
 	var id = dom.getAttrib(trElm, 'id');
@@ -23,6 +25,7 @@ function init() {
 	var dir = dom.getAttrib(trElm, 'dir');
 
 	selectByValue(formObj, 'rowtype', rowtype);
+	setActionforRowType(formObj, rowtype);
 
 	// Any cells selected
 	if (dom.select('td.mceSelected,th.mceSelected', trElm).length == 0) {
@@ -232,4 +235,20 @@ function changedColor() {
 	formObj.style.value = dom.serializeStyle(st);
 }
 
+function changedRowType() {
+	var formObj = document.forms[0];
+	var rowtype = getSelectValue(formObj, 'rowtype');
+
+	setActionforRowType(formObj, rowtype);
+
+}
+
+function setActionforRowType(formObj, rowtype) {
+	if (rowtype === "tbody") {
+		formObj.action.disabled = false;
+	} else {
+		selectByValue(formObj, 'action', "row");
+		formObj.action.disabled = true;
+	}
+}
 tinyMCEPopup.onInit.add(init);

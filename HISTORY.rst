@@ -7,6 +7,8 @@ HISTORY
 
 - Fix Brazilam Portuguese translations (closes `#99`_).
   [rodfersou]
+- Update tinymce to 3.5.11.
+  [maethu]
 
 
 1.3.9 (2015-04-29)

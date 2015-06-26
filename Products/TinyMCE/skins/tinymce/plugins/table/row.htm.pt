@@ -1,99 +1,158 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" i18n:domain="tinymce">
-<head>
-	<title i18n:translate="table_dlg_row_title"></title>
-	<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
-	<script type="text/javascript" src="../../utils/mctabs.js"></script>
-	<script type="text/javascript" src="../../utils/form_utils.js"></script>
-	<script type="text/javascript" src="../../utils/validate.js"></script>
-	<script type="text/javascript" src="../../utils/editable_selects.js"></script>
-	<script type="text/javascript" src="js/row.js"></script>
-    <link href="css/row.css" rel="stylesheet" type="text/css" />
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>{#table_dlg.row_title}</title>
+    <script type="text/javascript" src="../../tiny_mce_popup.js?v={tinymce_version}"></script>
+    <script type="text/javascript" src="../../utils/mctabs.js?v={tinymce_version}"></script>
+    <script type="text/javascript" src="../../utils/form_utils.js?v={tinymce_version}"></script>
+    <script type="text/javascript" src="../../utils/validate.js?v={tinymce_version}"></script>
+    <script type="text/javascript" src="../../utils/editable_selects.js?v={tinymce_version}"></script>
+    <script type="text/javascript" src="js/row.js?v={tinymce_version}"></script>
+    <link href="css/row.css?v={tinymce_version}" rel="stylesheet" type="text/css" />
+  </head>
+  <body id="tablerow" style="display: none" role="application">
+    <div id="content" class="dialog-wrapper">
+      <form onsubmit="updateAction();return false;" action="#">
+        <div class="tabs">
+          <ul class="formTabs">
+            <li id="general_tab" class="current firstFormTab formTab" aria-controls="general_panel"><span><a class="selected" href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;">{#table_dlg.general_tab}</a></span></li>
+            <li id="advanced_tab" class="formTab lastFormTab" aria-controls="advanced_panel"><span><a href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;">{#table_dlg.advanced_tab}</a></span></li>
+          </ul>
+        </div>
 
-</head>
-<body id="tablerow" role="application">
-	<div class="dialog-wrapper" id="content">
-		<form onsubmit="updateAction();return false;" action="#">
-			<div class="tabs">
-            <ul class="formTabs">
-							<li id="general_tab" class="current formTab firstFormTab" aria-controls="general_panel">
-								<span><a i18n:translate="table_dlg_general_tab" href="javascript:mcTabs.displayTab('general_tab','general_panel');" onmousedown="return false;" class="selected"></a></span></li>
-							<li id="advanced_tab" class="formTab lastFormTab" aria-controls="advanced_panel">
-								<span><a i18n:translate="table_dlg_advanced_tab" href="javascript:mcTabs.displayTab('advanced_tab','advanced_panel');" onmousedown="return false;"></a></span></li>
-            </ul>
-			</div>
+        <div class="panel_wrapper">
+          <div id="general_panel" class="panel current">
+            <fieldset class="formPanel">
 
-			<div class="panel_wrapper">
-				<div id="general_panel" class="panel current">
-					<fieldset class="formPanel">
+              <table role="presentation" border="0" cellpadding="4" cellspacing="0">
+                <tr>
+                  <td><label for="rowtype">{#table_dlg.rowtype}</label></td>
+                  <td class="col2">
+                    <select id="rowtype" name="rowtype" class="mceFocus" onChange="changedRowType();">
+                      <option value="thead">{#table_dlg.thead}</option>
+                      <option value="tbody">{#table_dlg.tbody}</option>
+                      <option value="tfoot">{#table_dlg.tfoot}</option>
+                    </select>
+                  </td>
+                </tr>
 
-						<div class="field">
-							<label for="height" i18n:translate="table_dlg_height"></label>
-							<div class="widget">
-								<input name="height" type="text" id="height" value="" size="4" maxlength="4" onchange="changedSize();" />
-							</div>
-						</div>
-						<!-- comment out due to Plone bug, fix by setting class tag -->
-						<div class="field" style="display: none">
-							<label for="valign" i18n:translate="table_dlg_valign"></label>
-							<div class="widget">
-								<select id="valign" name="valign">
-									<option value="" i18n:translate="common_not_set"></option>
-									<option value="top" i18n:translate="table_dlg_align_top"></option>
-									<option value="middle" i18n:translate="table_dlg_align_middle"></option>
-									<option value="bottom" i18n:translate="table_dlg_align_bottom"></option>
-								</select>
-							</div>
-						</div>
-					</fieldset>
-				</div>
+                <tr>
+                  <td><label for="align">{#table_dlg.align}</label></td>
+                  <td class="col2">
+                    <select id="align" name="align">
+                      <option value="">{#not_set}</option>
+                      <option value="center">{#table_dlg.align_middle}</option>
+                      <option value="left">{#table_dlg.align_left}</option>
+                      <option value="right">{#table_dlg.align_right}</option>
+                    </select>
+                  </td>
+                </tr>
 
-			<div id="advanced_panel" class="panel">
-				<fieldset role="application" class="formPanel">
-					<div class="field" >
-						<label for="rowtype" i18n:translate="table_dlg_rowtype"></label>
-						<div class="widget">
-							<select id="rowtype" name="rowtype" class="mceFocus">
-								<option value="thead" i18n:translate="table_dlg_thead"></option>
-								<option value="tbody" i18n:translate="table_dlg_tbody"></option>
-								<option value="tfoot" i18n:translate="table_dlg_tfoot"></option>
-							</select>
-						</div>
-					</div>
+                <tr>
+                  <td><label for="valign">{#table_dlg.valign}</label></td>
+                  <td class="col2">
+                    <select id="valign" name="valign">
+                      <option value="">{#not_set}</option>
+                      <option value="top">{#table_dlg.align_top}</option>
+                      <option value="middle">{#table_dlg.align_middle}</option>
+                      <option value="bottom">{#table_dlg.align_bottom}</option>
+                    </select>
+                  </td>
+                </tr>
 
-					<div class="field">
-						<label for="action" i18n:translate="table_dlg_row_title"></label>
-						<div class="widget">
-							<select id="action" name="action">
-								<option value="row" i18n:translate="table_dlg_row_row"></option>
-								<option value="odd" i18n:translate="table_dlg_row_odd"></option>
-								<option value="even"  i18n:translate="table_dlg_row_even"></option>
-								<option value="all" i18n:translate="table_dlg_row_all"></option>
-							</select>
-						</div>
-					</div>
-				</fieldset>
-				</div>
-			</div>
+                <tr id="styleSelectRow">
+                  <td><label for="class">{#class_name}</label></td>
+                  <td class="col2">
+                    <select id="class" name="class" class="mceEditableSelect">
+                      <option value="" selected="selected">{#not_set}</option>
+                    </select>
+                  </td>
+                </tr>
 
-			<div class="hiddenset">
-				<input id="id" name="id" type="text" value="" />
-				<input type="text" id="style" name="style" value="" />
-				<select id="dir" name="dir"><option value="" i18n:translate="common_not_set"></option></select>
-				<input id="lang" name="lang" type="text" value="" />
-				<input id="backgroundimage" name="backgroundimage" type="text" value="" />
-				<div id="backgroundimagebrowsercontainer"></div>
-				<input id="bgcolor" name="bgcolor" type="text" value="" />
-				<div id="bgcolor_pickcontainer"></div>
-			</div>
+                <tr>
+                  <td><label for="height">{#table_dlg.height}</label></td>
+                  <td class="col2"><input name="height" type="text" id="height" value="" size="7" maxlength="7" onchange="changedSize();" class="size" /></td>
+                </tr>
+              </table>
+            </fieldset>
+          </div>
 
-			<div class="visualClear"><!-- --></div>
+          <div id="advanced_panel" class="panel">
+            <fieldset class="formPanel">
 
-			<div class="mceActionPanel">
-                <input type="submit" id="insert" class="context" name="insert" i18n:attributes="value common_update" />
-                <input type="button" id="cancel" class="context" name="cancel" i18n:attributes="value common_cancel" onclick="tinyMCEPopup.close();" />
-			</div>
-		</form>
-	</div>
-</body>
+              <table role="presentation" border="0" cellpadding="0" cellspacing="4">
+                <tr>
+                  <td class="column1"><label for="id">{#table_dlg.id}</label></td>
+                  <td><input id="id" name="id" type="text" value="" style="width: 200px" /></td>
+                </tr>
+
+                <tr>
+                  <td><label for="style">{#table_dlg.style}</label></td>
+                  <td><input type="text" id="style" name="style" value="" style="width: 200px;" onchange="changedStyle();" /></td>
+                </tr>
+
+                <tr>
+                  <td class="column1"><label for="dir">{#table_dlg.langdir}</label></td>
+                  <td>
+                    <select id="dir" name="dir" style="width: 200px">
+                      <option value="">{#not_set}</option>
+                      <option value="ltr">{#table_dlg.ltr}</option>
+                      <option value="rtl">{#table_dlg.rtl}</option>
+                    </select>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="column1"><label for="lang">{#table_dlg.langcode}</label></td>
+                  <td>
+                    <input id="lang" name="lang" type="text" value="" style="width: 200px" />
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="column1"><label for="backgroundimage">{#table_dlg.bgimage}</label></td>
+                  <td>
+                    <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                      <tr>
+                        <td><input id="backgroundimage" name="backgroundimage" type="text" value="" style="width: 200px" onchange="changedBackgroundImage();" /></td>
+                        <td id="backgroundimagebrowsercontainer">&nbsp;</td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td class="column1"><label for="bgcolor" id="bgcolor_label">{#table_dlg.bgcolor}</label></td>
+                  <td>
+                    <span role="group" aria-labelledby="bgcolor_label">
+                      <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td><input id="bgcolor" name="bgcolor" type="text" value="" size="9" onchange="updateColor('bgcolor_pick','bgcolor');changedColor();" /></td>
+                          <td id="bgcolor_pickcontainer">&nbsp;</td>
+                        </tr>
+                      </table>
+                    </span>
+                  </td>
+                </tr>
+              </table>
+            </fieldset>
+          </div>
+        </div>
+
+        <div class="mceActionPanel">
+          <div>
+            <select id="action" name="action">
+              <option value="row">{#table_dlg.row_row}</option>
+              <option value="odd">{#table_dlg.row_odd}</option>
+              <option value="even">{#table_dlg.row_even}</option>
+              <option value="all">{#table_dlg.row_all}</option>
+            </select>
+          </div>
+
+          <input type="submit" id="insert" class="context" name="insert" value="{#update}" />
+          <input type="button" id="cancel" class="context" name="cancel" value="{#cancel}" onclick="tinyMCEPopup.close();" />
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
