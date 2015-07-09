@@ -5,8 +5,8 @@ HISTORY
 1.3.11 (unreleased)
 -------------------
 
-- Nothing changed yet.
-
+- UI and UX improvements: Do not cover upload button.
+  Clickable icons. (fixes #106) [fRiSi]
 
 1.3.10 (2015-06-26)
 -------------------
