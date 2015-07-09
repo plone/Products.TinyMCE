@@ -5,7 +5,10 @@ HISTORY
 1.3.11 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- deactivate diazo for ``@@tinymce-upload`` view to make
+  sure ``uploadOk`` script is called to update the
+  content browser panel.
+  [fRiSi]
 
 
 1.3.10 (2015-06-26)
