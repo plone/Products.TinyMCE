@@ -5,7 +5,8 @@ HISTORY
 1.3.11 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Fixed current image scale in image popups
+  [huubbouma]
 
 
 1.3.10 (2015-06-26)
