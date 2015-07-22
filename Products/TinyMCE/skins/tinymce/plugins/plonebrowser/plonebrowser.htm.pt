@@ -14,22 +14,26 @@
   <div class="dialog-wrapper icons-on" id="content">
 
         <div id="linktype_panel">
-            <div id="linktype">
+            <div id="linktype" i18n:domain="plone.tinymce">
                 <div id="internal_link" class="current">
-                    <img src="img/internal_link.png" />
-                    <a href="#internal" i18n:translate="" i18n:domain="plone.tinymce">Internal</a>
+                    <a href="#internal">
+                      <img src="img/internal_link.png" />
+                      <span i18n:translate="">Internal</span></a>
                 </div>
                 <div id="external_link">
-                    <img src="img/external_link.png" />
-                    <a href="#external" i18n:translate="" i18n:domain="plone.tinymce">External</a>
+                    <a href="#external">
+                      <img src="img/external_link.png" />
+                      <span i18n:translate="">External</span></a>
                 </div>
                 <div id="email_link">
-                    <img src="img/email_link.png" />
-                    <a href="#email" i18n:translate="" i18n:domain="plone.tinymce">Email</a>
+                    <a href="#email">
+                      <img src="img/email_link.png" />
+                      <span i18n:translate="">Email</span></a>
                 </div>
                 <div id="anchor_link">
-                    <img src="img/anchor_link.png" />
-                    <a href="#anchor" i18n:translate="" i18n:domain="plone.tinymce">Anchor</a>
+                    <a href="#anchor">
+                      <img src="img/anchor_link.png" />
+                      <span i18n:translate="">Anchor</span></a>
                 </div>
             </div>
         </div>
@@ -259,7 +263,7 @@
 
         <div id="footer" class="row">
             <div id="upload-button" class="cell width-3:4 position-0 hide">
-                <img src="img/application_get.png" /> <a id="upload" href="" i18n:translate="" i18n:domain="plone.tinymce">Upload</a>
+                <a id="upload" href=""><img src="img/application_get.png" /> <span i18n:translate="" i18n:domain="plone.tinymce">Upload</span></a>
             </div>
             <div id="action-button" class="cell width-1:4 position-3:4">
                 <input type="submit" id="insert-selection" class="context plonebutton" name="insert-image"

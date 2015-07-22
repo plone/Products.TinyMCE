@@ -5,6 +5,9 @@ HISTORY
 1.3.11 (unreleased)
 -------------------
 
+- UI and UX improvements: Do not cover upload button.
+  Clickable icons. (fixes #106) [fRiSi]
+
 - Fixed current image scale in image popups
   [huubbouma]
 
