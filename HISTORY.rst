@@ -8,6 +8,10 @@ HISTORY
 - UI and UX improvements: Do not cover upload button.
   Clickable icons. (fixes #106) [fRiSi]
 
+- Fixed current image scale in image popups
+  [huubbouma]
+
+
 1.3.10 (2015-06-26)
 -------------------
 
