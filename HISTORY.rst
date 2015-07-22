@@ -5,6 +5,11 @@ HISTORY
 1.3.11 (unreleased)
 -------------------
 
+- deactivate diazo for ``@@tinymce-upload`` view to make
+  sure ``uploadOk`` script is called to update the
+  content browser panel.
+  [fRiSi]
+
 - UI and UX improvements: Do not cover upload button.
   Clickable icons. (fixes #106) [fRiSi]
 

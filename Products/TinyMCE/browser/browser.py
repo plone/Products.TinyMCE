@@ -30,6 +30,8 @@ class TinyMCEBrowserView(BrowserView):
     def upload(self):
         """Upload a file to the zodb"""
 
+        # keep diazo from touching this page
+        self.request.response.setHeader('X-Theme-Disabled', 'True')
         context = IUpload(self.context)
         return context.upload()
 
