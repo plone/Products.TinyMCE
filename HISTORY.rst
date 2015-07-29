@@ -6,6 +6,10 @@ HISTORY
 1.4.4 (unreleased)
 ------------------
 
+- Explicitly release as zip file.  The tar.gz file of the previous two
+  releases works fine on my Mac, but not on Linux, which is strange.
+  [maurits]
+
 - If safe_html transform is disabled, allow other non xhtml conform tags as well.
   For example "style tag within body tag"
   [agitator]
