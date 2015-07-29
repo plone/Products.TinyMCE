@@ -5,7 +5,9 @@ HISTORY
 1.3.13 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Explicitly release as zip file.  The tar.gz file of the previous two
+  releases works fine on my Mac, but not on Linux, which is strange.
+  [maurits]
 
 
 1.3.12 (2015-07-30)
