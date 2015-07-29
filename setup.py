@@ -1,10 +1,10 @@
-import os
 import sys
 
 from setuptools import setup, find_packages
 
-
-open_relative = lambda *x: open(os.path.join(os.path.dirname(__file__), *x)).read()
+long_description = open("README.rst").read()
+long_description += '\n\n'
+long_description += open("HISTORY.rst").read()
 
 if sys.version_info[0] == 2 and sys.version_info[1] < 6:
     requires = ['simplejson']
@@ -14,7 +14,7 @@ else:
 setup(name='Products.TinyMCE',
     version='1.3.11.dev0',
     description="Adds support for TinyMCE, a platform independent web based Javascript HTML WYSIWYG editor, to Plone.",
-    long_description=open_relative("README.rst"),
+    long_description=long_description,
     classifiers=[
         "Framework :: Plone",
         "Programming Language :: Python",
