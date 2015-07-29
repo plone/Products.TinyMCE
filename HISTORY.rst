@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.3.12 (unreleased)
+1.3.12 (2015-07-30)
 -------------------
 
 - Rerelease due to possible brown bag release.
