@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.3.11 (unreleased)
+1.3.11 (2015-07-29)
 -------------------
 
 - deactivate diazo for ``@@tinymce-upload`` view to make
