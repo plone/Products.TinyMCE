@@ -5,7 +5,8 @@ HISTORY
 1.3.12 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Rerelease due to possible brown bag release.
+  [maurits]
 
 
 1.3.11 (2015-07-29)
