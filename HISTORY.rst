@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.3.13 (unreleased)
+1.3.13 (2015-07-30)
 -------------------
 
 - Explicitly release as zip file.  The tar.gz file of the previous two
