@@ -20,8 +20,9 @@ HISTORY
 1.3.10 (2015-06-26)
 -------------------
 
-- Fix Brazilam Portuguese translations (closes `#99`_).
+- Fix Brazilian Portuguese translations (closes `#99`_).
   [rodfersou]
+
 - Update tinymce to 3.5.11.
   [maethu]
 
