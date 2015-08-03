@@ -25,7 +25,7 @@ HISTORY
   2.6.  This package is for Plone 5, so we already require 2.7.
   [maurits]
 
-- Fix Brazilian Portuguese translations (closes `#99`_).
+- Fix Brazilian Portuguese translations.
   [rodfersou]
 
 - Update Traditional Chinese translations.
@@ -1684,5 +1684,3 @@ __ https://dev.plone.org/ticket/13013
 
 - Get minimal functionality.
   [turgmr2]
-
-.. _`#99`: https://github.com/collective/sc.social.like/pull/99
