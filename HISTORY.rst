@@ -2,13 +2,41 @@
 HISTORY
 =======
 
-1.4.3 (unreleased)
+
+1.4.4 (unreleased)
 ------------------
 
 - Fixed an issue where TinyMCE didn't display any text on Firefox because of
   a Range.prototype error
   [ichim-david]
 
+- Explicitly release as zip file.  The tar.gz file of the previous two
+  releases works fine on my Mac, but not on Linux, which is strange.
+  [maurits]
+
+- If safe_html transform is disabled, allow other non xhtml conform tags as well.
+  For example "style tag within body tag"
+  [agitator]
+
+
+1.4.3 (2015-06-05)
+------------------
+
+- Add history to PyPI page.
+  [maurits]
+
+- Remove simplejson from package requirements for Pythons older than
+  2.6.  This package is for Plone 5, so we already require 2.7.
+  [maurits]
+
+- Fix Brazilian Portuguese translations.
+  [rodfersou]
+
+- Update Traditional Chinese translations.
+  [marr]
+
+- Fix i18n:domain for Plone Browser plugin template.
+  [marr]
 
 1.4.2 (2014-11-01)
 ------------------
@@ -499,7 +527,7 @@ __ https://dev.plone.org/ticket/13013
 
 - Initialize TinyMCE with "media_strict: false" to allow embed tags if
   they are removed from the list of nasty tags.
-  Fixeѕ https://dev.plone.org/ticket/10681
+  Fixes https://dev.plone.org/ticket/10681
   [rochecompaan]
 
 

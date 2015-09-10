@@ -1,1 +1,1 @@
-Documentation at http://readthedocs.org/docs/productstinymce/
+Documentation at https://productstinymce.readthedocs.org/en/latest/
