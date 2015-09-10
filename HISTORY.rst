@@ -6,6 +6,10 @@ HISTORY
 1.4.4 (unreleased)
 ------------------
 
+- Fixed an issue where TinyMCE didn't display any text on Firefox because of
+  a Range.prototype error
+  [ichim-david]
+
 - Explicitly release as zip file.  The tar.gz file of the previous two
   releases works fine on my Mac, but not on Linux, which is strange.
   [maurits]
