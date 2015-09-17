@@ -40,7 +40,7 @@ function init() {
         action = "update";
 
     // Set button caption
-    formButtonsObj.insert.value = tinyMCEPopup.getLang(action, 'Insert', true); 
+    formButtonsObj.insert.value = tinyMCEPopup.getLang(action, 'Insert', true);
 
     // Check if rooted
     if (tinyMCEPopup.editor.settings.rooted) {
@@ -173,13 +173,13 @@ function getAbsoluteUrl(base, link) {
     if ((link.indexOf('http://') != -1) || (link.indexOf('https://') != -1) || (link.indexOf('ftp://') != -1)) {
         return link;
     }
-    
+
     var base_array = base.split('/');
     var link_array = link.split('/');
-    
+
     // Remove document from base url
     base_array.pop();
-    
+
     while (link_array.length != 0) {
         var item = link_array.shift();
         if (item == ".") {
@@ -399,13 +399,13 @@ function previewExternalLink() {
     var url = "";
     var externalurlprefix = document.getElementById('externalurlprefix');
     url = externalurlprefix.options[externalurlprefix.selectedIndex].value;
-    
+
     if (document.getElementById('externalurl').value == "") {
         url = "";
     } else {
         url += document.getElementById('externalurl').value;
     }
-    
+
     if (url == "") {
         document.getElementById('previewexternal').src = "about:blank";
     } else {
@@ -454,13 +454,15 @@ function getInputValue(name, formnr) {
 function getRadioValue(name, formnr) {
     var value = "";
     var elm = document.forms[formnr][name];
-    if (typeof(elm.value) == 'undefined') {
+    if (typeof(elm.length) !== 'undefined') {
+        // A list of radio buttons
         for (var i = 0; i < elm.length; i++) {
             if (elm[i].checked) {
                 value = elm[i].value;
             }
         }
     } else {
+        // A single radio button
         if (elm.checked) {
             value = elm.value;
         }
@@ -471,13 +473,15 @@ function getRadioValue(name, formnr) {
 
 function setRadioValue(name, value, formnr) {
     var elm = document.forms[formnr][name];
-    if (elm && typeof(elm.value) == 'undefined') {
+    if (elm && typeof(elm.length) !== 'undefined') {
+        // A list of radio buttons
         for (var i = 0; i < elm.length; i++) {
             if (elm[i].value == value) {
                 elm[i].checked = true;
             }
         }
     } else if (elm) {
+        // A single radio button
         if (elm.value == value) {
             elm.checked = true;
         }
@@ -653,7 +657,7 @@ function getLinkListHTML(elm_id, target_form_element, onchange_func) {
 }
 
 function setPopupVisibility() {
-    var targetlist = document.getElementById('targetlist');    
+    var targetlist = document.getElementById('targetlist');
     if (targetlist.options[targetlist.selectedIndex].value == 'popup') {
         document.getElementById('popup_panel').style.display = 'block';
     } else {
@@ -707,13 +711,13 @@ function setDetails(path, pageanchor) {
             var html = "";
             var data = eval('(' + text + ')');
             document.getElementById ('internal_details_title').innerHTML = data.title;
-            
+
             if (data.thumb == "") {
                 document.getElementById ('internal_details_description').innerHTML = data.description;
             } else {
                 document.getElementById ('internal_details_description').innerHTML = '<img src="' + data.thumb + '" border="0" />';
             }
-            
+
             if (data.anchors.length == 0) {
                 document.getElementById ('pageanchorcontainer').style.display = 'none';
                 document.getElementById ('pageanchorlabel').style.display = 'none';
@@ -744,7 +748,7 @@ function setDetails(path, pageanchor) {
 }
 
 function getCurrentFolderListing() {
-    getFolderListing(tinyMCEPopup.editor.settings.document_base_url, 'tinymce-jsonlinkablefolderlisting'); 
+    getFolderListing(tinyMCEPopup.editor.settings.document_base_url, 'tinymce-jsonlinkablefolderlisting');
 }
 
 function getFolderListing(path, method) {

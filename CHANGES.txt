@@ -5,6 +5,10 @@ HISTORY
 1.1.13 (unreleased)
 -------------------
 
+- Current image and file in folderlisting was not always selected on recent
+  versions of some browsers (at least: Chrome on Windows and Firefox 33)
+  [keul]
+
 - Fixed AttributeError: 'ATDocumentFieldsView' object has no attribute
   'absolute_url' when using inline editing.
   [maurits]
@@ -33,7 +37,7 @@ HISTORY
   [elro] [toutpt]
 
 - Backport fix: search does not work with Virtual Hosting (see #10308)
-  [keul] [mamico]  
+  [keul] [mamico]
 
 
 1.1.11 (2011-07-05)
