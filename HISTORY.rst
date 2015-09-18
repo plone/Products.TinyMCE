@@ -5,7 +5,9 @@ HISTORY
 1.3.14 (unreleased)
 -------------------
 
-- Nothing changed yet.
+- Moved utility globals outside the ``getValidElements`` method.
+  This will make TinyMCE lot easyer to be customized also through simple patches
+  [keul] 
 
 
 1.3.13 (2015-07-30)

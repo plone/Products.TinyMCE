@@ -42,6 +42,23 @@ _ = MessageFactory('plone.tinymce')
 PMF = MessageFactory('plone')
 BUTTON_WIDTHS = {'style': 150, 'forecolor': 32, 'backcolor': 32, 'tablecontrols': 285}
 
+XHTML_TAGS = set(
+    'a abbr acronym address area b base bdo big blockquote body br '
+    'button caption cite code col colgroup dd del div dfn dl dt em '
+    'fieldset form h1 h2 h3 h4 h5 h6 head hr html i img input ins kbd '
+    'label legend li link map meta noscript object ol optgroup option '
+    'p param pre q samp script select small span strong style sub sup '
+    'table tbody td textarea tfoot th thead title tr tt ul var'.split())
+
+CORE_ATTRS = set(
+    'id style title class'.split())
+
+I18N_ATTRS = set(
+    'lang dir'.split())
+
+FOCUS_ATTRS = set(
+    'accesskey tabindex'.split())
+
 
 try:
     from plone.app.textfield.interfaces import IRichText
@@ -391,23 +408,6 @@ class TinyMCE(SimpleItem):
         safe_html = getattr(getToolByName(self, 'portal_transforms'), 'safe_html')
         if safe_html.get_parameter_value('disable_transform'):
             return {'*': ['*']}
-
-        XHTML_TAGS = set(
-            'a abbr acronym address area b base bdo big blockquote body br '
-            'button caption cite code col colgroup dd del div dfn dl dt em '
-            'fieldset form h1 h2 h3 h4 h5 h6 head hr html i img input ins kbd '
-            'label legend li link map meta noscript object ol optgroup option '
-            'p param pre q samp script select small span strong style sub sup '
-            'table tbody td textarea tfoot th thead title tr tt ul var'.split())
-
-        CORE_ATTRS = set(
-            'id style title class'.split())
-
-        I18N_ATTRS = set(
-            'lang dir'.split())
-
-        FOCUS_ATTRS = set(
-            'accesskey tabindex'.split())
 
         COMMON_ATTRS = CORE_ATTRS | I18N_ATTRS
 
