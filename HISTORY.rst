@@ -6,6 +6,9 @@ HISTORY
 1.4.4 (unreleased)
 ------------------
 
+- Update basque translation
+  [erral]
+
 - Explicitly release as zip file.  The tar.gz file of the previous two
   releases works fine on my Mac, but not on Linux, which is strange.
   [maurits]

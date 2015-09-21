@@ -2,18 +2,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Products.TinyMCE\n"
 "POT-Creation-Date: 2015-09-20 20:59+0000\n"
-"PO-Revision-Date: 2012-04-23 15:36+0100\n"
+"PO-Revision-Date: 2015-09-21 09:50+0100\n"
 "Last-Translator: Mikel Larreategi <mlarreategi@codesyntax.com>\n"
 "Language-Team: eu <eu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "Language-Code: eu\n"
 "Language-Name: Basque\n"
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: plone.tinymce\n"
-"X-Poedit-Language: Basque\n"
+"Language: eu\n"
+"X-Generator: Poedit 1.5.4\n"
 
 #: TinyMCE/utility.py:743
 msgid "(remove style)"
@@ -57,7 +58,7 @@ msgstr "Aingura"
 
 #: TinyMCE/interfaces/utility.py:475
 msgid "Anchor selector expression"
-msgstr ""
+msgstr "Aingurak aukeratzeko espresioa"
 
 #: TinyMCE/interfaces/utility.py:356
 msgid "AtD Error types to show"
@@ -77,7 +78,7 @@ msgstr "Atzeko kolorea"
 
 #: TinyMCE/adapters/Upload.py:141
 msgid "Bad filename, please rename."
-msgstr ""
+msgstr "Fitxategiaren izena ez da zuzena, aldatu izena mesedez."
 
 #: TinyMCE/interfaces/utility.py:154
 msgid "Bold"
@@ -135,11 +136,10 @@ msgstr "Kopiatu"
 
 #: TinyMCE/adapters/Upload.py:177
 msgid "Could not upload the file"
-msgstr ""
+msgstr "Ezin da fitxategia kargatu"
 
 #. Default: "Current Folder"
-#: TinyMCE/interfaces/utility.py:448
-#: TinyMCE/shortcut.py:9
+#: TinyMCE/interfaces/utility.py:448 TinyMCE/shortcut.py:9
 msgid "Current Folder"
 msgstr "Uneko karpeta"
 
@@ -222,40 +222,77 @@ msgid "Enable resizing the editor window."
 msgstr "Editorearen leihoaren tamaina aldatzea aktibatu."
 
 #: TinyMCE/interfaces/utility.py:82
-msgid "Enter a JSON-formatted style format configuration. A format is for example the style that get applied when you press the bold button inside the editor. See http://www.tinymce.com/wiki.php/Configuration:formats"
+msgid ""
+"Enter a JSON-formatted style format configuration. A format is for example "
+"the style that get applied when you press the bold button inside the editor. "
+"See http://www.tinymce.com/wiki.php/Configuration:formats"
 msgstr ""
+"Idatzi JSON-formatuko formatu-konfigurazio bat. Formatu bat, adibidez, letra "
+"beltzaren botoia sakatzen duzunean editorean txertatzen den kodea da. Ikusi "
+"http://www.tinymce.com/wiki.php/Configuration:formats informazio gehiago "
+"lortzeko."
 
 #: TinyMCE/interfaces/utility.py:410
-msgid "Enter a list of content types which can be linked. Format is one contenttype per line."
-msgstr "Lotura egin ahal zaien elementu-moten zerrenda. Idatzi bat lerro bakoitzean."
+msgid ""
+"Enter a list of content types which can be linked. Format is one contenttype "
+"per line."
+msgstr ""
+"Lotura egin ahal zaien elementu-moten zerrenda. Idatzi bat lerro bakoitzean."
 
 #: TinyMCE/interfaces/utility.py:415
-msgid "Enter a list of content types which can be used as images. Format is one contenttype per line."
-msgstr "Irudi gisa erabil daitezkeen elementu-motak. Idatzi bat lerro bakoitzean."
+msgid ""
+"Enter a list of content types which can be used as images. Format is one "
+"contenttype per line."
+msgstr ""
+"Irudi gisa erabil daitezkeen elementu-motak. Idatzi bat lerro bakoitzean."
 
 #: TinyMCE/interfaces/utility.py:405
-msgid "Enter a list of content types which can contain anchors. Format is one contenttype per line."
-msgstr "Aingurak izan ditzaketen elementu-moten zerrenda. Idatzi bat lerro bakoitzean."
+msgid ""
+"Enter a list of content types which can contain anchors. Format is one "
+"contenttype per line."
+msgstr ""
+"Aingurak izan ditzaketen elementu-moten zerrenda. Idatzi bat lerro "
+"bakoitzean."
 
 #: TinyMCE/interfaces/utility.py:400
-msgid "Enter a list of content types which can contain other objects. Format is one contenttype per line."
-msgstr "Beste elementu batzuk izan ditzaketen elementu-motak (karpeta erakoak). Idatzi bat lerro bakoitzean."
+msgid ""
+"Enter a list of content types which can contain other objects. Format is one "
+"contenttype per line."
+msgstr ""
+"Beste elementu batzuk izan ditzaketen elementu-motak (karpeta erakoak). "
+"Idatzi bat lerro bakoitzean."
 
 #: TinyMCE/interfaces/utility.py:430
-msgid "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
-msgstr "Editorean gehitu daitezkeen pluginak. Idatzi pluginaren-izena edo pluginaren-izena|kokapena lerro bakoitzean."
+msgid ""
+"Enter a list of custom plugins which will be loaded in the editor. Format is "
+"pluginname or pluginname|location, one per line."
+msgstr ""
+"Editorean gehitu daitezkeen pluginak. Idatzi pluginaren-izena edo pluginaren-"
+"izena|kokapena lerro bakoitzean."
 
 #: TinyMCE/interfaces/utility.py:319
-msgid "Enter a list of custom toolbar buttons which will be loaded in the editor, one per line."
-msgstr "Editorean gehitu daitezkeen tresna-barra gehigarriak. Idatzi bat lerro bakoitzean."
+msgid ""
+"Enter a list of custom toolbar buttons which will be loaded in the editor, "
+"one per line."
+msgstr ""
+"Editorean gehitu daitezkeen tresna-barra gehigarriak. Idatzi bat lerro "
+"bakoitzean."
 
 #: TinyMCE/interfaces/utility.py:77
-msgid "Enter a list of styles to appear in the style pulldown. Format is title|tag or title|tag|className, one per line."
-msgstr "Estiloen menuan agertu daitezkeen estiloak. Idatzi formatu honetan, bat lerro bakoitzean: izena|etiketa edo izena|etiketa|klaseIzena"
+msgid ""
+"Enter a list of styles to appear in the style pulldown. Format is title|tag "
+"or title|tag|className, one per line."
+msgstr ""
+"Estiloen menuan agertu daitezkeen estiloak. Idatzi formatu honetan, bat "
+"lerro bakoitzean: izena|etiketa edo izena|etiketa|klaseIzena"
 
 #: TinyMCE/interfaces/utility.py:92
-msgid "Enter a list of styles to appear in the table style pulldown. Format is title|class, one per line."
-msgstr "Tauletan aukeratu daitezkeen estiloak. Idatzi bat lerro bakoitzean eta formatu honetan: izena|klase izena"
+msgid ""
+"Enter a list of styles to appear in the table style pulldown. Format is "
+"title|class, one per line."
+msgstr ""
+"Tauletan aukeratu daitezkeen estiloak. Idatzi bat lerro bakoitzean eta "
+"formatu honetan: izena|klase izena"
 
 #: TinyMCE/interfaces/utility.py:434
 msgid "Entity encoding"
@@ -297,7 +334,7 @@ msgstr "Kolorea"
 
 #: TinyMCE/interfaces/utility.py:81
 msgid "Formats"
-msgstr ""
+msgstr "Formatuak"
 
 msgid "Heading"
 msgstr "Goiburua"
@@ -309,8 +346,7 @@ msgid "Highlight"
 msgstr "Markatu"
 
 #. Default: "Home"
-#: TinyMCE/interfaces/utility.py:448
-#: TinyMCE/shortcut.py:20
+#: TinyMCE/interfaces/utility.py:448 TinyMCE/shortcut.py:20
 msgid "Home"
 msgstr "Hasiera"
 
@@ -357,7 +393,7 @@ msgstr "Marra horizontala sartu"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:171
 msgid "Insert image from URL"
-msgstr ""
+msgstr "Irudia URL helbide batetik txertatu"
 
 #: TinyMCE/interfaces/utility.py:270
 msgid "Insert non-breaking space character"
@@ -434,19 +470,27 @@ msgstr "Aingurara lotura"
 
 #: TinyMCE/interfaces/utility.py:384
 msgid "Link using UIDs"
-msgstr ""
+msgstr "UIDak erabiliz egin lotura"
 
 #: TinyMCE/interfaces/utility.py:409
 msgid "Linkable Objects"
 msgstr "Lotura egin dakieken elementuak"
 
 #: TinyMCE/interfaces/utility.py:385
-msgid "Links to objects on this site can use unique object ids so that the links remain valid even if the target object is renamed or moved elsewhere on the site."
+msgid ""
+"Links to objects on this site can use unique object ids so that the links "
+"remain valid even if the target object is renamed or moved elsewhere on the "
+"site."
 msgstr ""
+"Webgunean zehar elementuetara egindako loturek UID identifikadore bakarrak "
+"erabili ditzakete, horrela elementua tokiz edo izenez aldatzen bada loturek "
+"funtzionatzen jarrai dezaten."
 
 #: TinyMCE/interfaces/utility.py:454
 msgid "List of shortcuts to appear in image browser for quick navigation."
 msgstr ""
+"Errazago nabigatzeko, irudien bilatzailean lotura laster batzuk agertzen "
+"dira."
 
 #: TinyMCE/interfaces/utility.py:446
 msgid "List of shortcuts to appear in link browser for quick navigation."
@@ -471,7 +515,7 @@ msgstr "Zenbaki erromatar xeheak"
 
 #: TinyMCE/interfaces/utility.py:31
 msgid "Must be empty or a valid JSON-formatted configuration – ${message}."
-msgstr ""
+msgstr "Hutsik edo JSON-formatuko konfigurazioa izan behar da – ${message}."
 
 #: TinyMCE/interfaces/utility.py:437
 msgid "Named"
@@ -491,7 +535,7 @@ msgstr "Parrafo arrunta"
 
 #: TinyMCE/adapters/Upload.py:144
 msgid "Not allowed to upload a file of this type to this folder"
-msgstr ""
+msgstr "Ezin duzu mota honetako fitxategirik karpeta honetara kargatu"
 
 #: TinyMCE/interfaces/utility.py:468
 msgid "Number of columns in thumbnails mode"
@@ -552,8 +596,7 @@ msgstr "Aurreikusi"
 msgid "Preview URL"
 msgstr "Weba aurreikusi"
 
-#: TinyMCE/interfaces/utility.py:278
-#: TinyMCE/utility.py:751
+#: TinyMCE/interfaces/utility.py:278 TinyMCE/utility.py:751
 msgid "Print"
 msgstr "Inprimatu"
 
@@ -594,7 +637,7 @@ msgstr "Bilaketare emaitzak:"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:42
 msgid "Search site"
-msgstr ""
+msgstr "Bilatu"
 
 #: TinyMCE/interfaces/utility.py:150
 msgid "Select Style"
@@ -673,47 +716,94 @@ msgstr "Testua"
 
 #: TinyMCE/adapters/Upload.py:169
 msgid "The content-type '${type}' has no image- or file-field!"
-msgstr ""
+msgstr "'${type} elementu-motak ez du irudi- edo fitxategi-eremurik!"
 
 #: TinyMCE/interfaces/utility.py:328
-msgid "This option allows you to choose the spellchecker for TinyMCE. If you want the spellchecker button to be visible, make sure it is enabled in the toolbar settings."
-msgstr "TinyMCEk erabiliko duen ortografia zuzentzailea aukeratu. Zuzentzailearen botoia agerrarazi nahi baduzu, aktibatu ezazu tresna-barran"
+msgid ""
+"This option allows you to choose the spellchecker for TinyMCE. If you want "
+"the spellchecker button to be visible, make sure it is enabled in the "
+"toolbar settings."
+msgstr ""
+"TinyMCEk erabiliko duen ortografia zuzentzailea aukeratu. Zuzentzailearen "
+"botoia agerrarazi nahi baduzu, aktibatu ezazu tresna-barran"
 
 #: TinyMCE/interfaces/utility.py:435
-msgid "This option controls how entities/characters get processed. Named: Characters will be converted into named entities based on the entities option. Numeric: Characters will be converted into numeric entities. Raw: All characters will be stored in non-entity form except these XML default entities: amp lt gt quot"
-msgstr "Aukera honek entitateak nola prozesatu kontrolatzen du: Izenduna: karaktereak izendun entitate bihurtuko dira. Zenbakizkoa: karaktereak zenbakizko entitate bihurtuko dira. Dagoen moduan: karaktere guztiak entitateak ez balira moduan gordeko dira XMLko berezko entitateak (amp, lt, gt, quot) izan ezik."
+msgid ""
+"This option controls how entities/characters get processed. Named: "
+"Characters will be converted into named entities based on the entities "
+"option. Numeric: Characters will be converted into numeric entities. Raw: "
+"All characters will be stored in non-entity form except these XML default "
+"entities: amp lt gt quot"
+msgstr ""
+"Aukera honek entitateak nola prozesatu kontrolatzen du: Izenduna: "
+"karaktereak izendun entitate bihurtuko dira. Zenbakizkoa: karaktereak "
+"zenbakizko entitate bihurtuko dira. Dagoen moduan: karaktere guztiak "
+"entitateak ez balira moduan gordeko dira XMLko berezko entitateak (amp, lt, "
+"gt, quot) izan ezik."
 
 #: TinyMCE/interfaces/utility.py:106
-msgid "This option enables the external toolbar which will be placed at the top of the page."
-msgstr "Aukera honeak, orrialdearen gainean kanpoko tresna-barra bat agertzea aktibatzen du."
+msgid ""
+"This option enables the external toolbar which will be placed at the top of "
+"the page."
+msgstr ""
+"Aukera honeak, orrialdearen gainean kanpoko tresna-barra bat agertzea "
+"aktibatzen du."
 
 #: TinyMCE/interfaces/utility.py:72
-msgid "This option enables you to specify a custom CSS file that replaces the theme content CSS. This CSS file is the one used within the editor (the editable area)."
-msgstr "Aukera honek zuk edukiak izan behar duen itxura duen CSS fitxategia gehitzen uzten dizu. CSS fitxategi hau izango da editorearen barruan erabiliko dena (inguru editagarria."
+msgid ""
+"This option enables you to specify a custom CSS file that replaces the theme "
+"content CSS. This CSS file is the one used within the editor (the editable "
+"area)."
+msgstr ""
+"Aukera honek zuk edukiak izan behar duen itxura duen CSS fitxategia gehitzen "
+"uzten dizu. CSS fitxategi hau izango da editorearen barruan erabiliko dena "
+"(inguru editagarria."
 
 #: TinyMCE/interfaces/utility.py:50
-msgid "This option gives you the ability to enable/disable auto resizing the editor window depending on the content."
-msgstr "Aukera honek, editorearen leihoaren tamaina edukiaren arabera automatikoki aldatzeko aukera aktibatzen du."
+msgid ""
+"This option gives you the ability to enable/disable auto resizing the editor "
+"window depending on the content."
+msgstr ""
+"Aukera honek, editorearen leihoaren tamaina edukiaren arabera automatikoki "
+"aldatzeko aukera aktibatzen du."
 
 #: TinyMCE/interfaces/utility.py:45
-msgid "This option gives you the ability to enable/disable resizing the editor window. If the editor width is set to a percentage only vertical resizing is enabled."
-msgstr "Aukera honek, editorearen tamaina aldatzeko aukera aktibatzen du. Editorearen zabalera ehunekotan adierazita badago, altuera bakarrik aldatuko da."
+msgid ""
+"This option gives you the ability to enable/disable resizing the editor "
+"window. If the editor width is set to a percentage only vertical resizing is "
+"enabled."
+msgstr ""
+"Aukera honek, editorearen tamaina aldatzeko aukera aktibatzen du. "
+"Editorearen zabalera ehunekotan adierazita badago, altuera bakarrik aldatuko "
+"da."
 
 #: TinyMCE/interfaces/utility.py:67
-msgid "This option gives you the ability to enable/disable the use of the contextmenu."
+msgid ""
+"This option gives you the ability to enable/disable the use of the "
+"contextmenu."
 msgstr "Aukera honek, kontestu-menua aktibatzen du."
 
 #: TinyMCE/interfaces/utility.py:62
-msgid "This option gives you the ability to specify the height of the editor in pixels. If auto resize is enabled this value is used as minimum height."
-msgstr "Aukera honek, editorearen altuera pixeletan zehazteko aukera ematen du. Tamaina automatikoki aldatzea aktibatuta badago, tamaina hau gutxieneko altuera gisa hartuko da."
+msgid ""
+"This option gives you the ability to specify the height of the editor in "
+"pixels. If auto resize is enabled this value is used as minimum height."
+msgstr ""
+"Aukera honek, editorearen altuera pixeletan zehazteko aukera ematen du. "
+"Tamaina automatikoki aldatzea aktibatuta badago, tamaina hau gutxieneko "
+"altuera gisa hartuko da."
 
 #: TinyMCE/interfaces/utility.py:56
-msgid "This option gives you the ability to specify the width of the editor (like 100% or 400px)."
+msgid ""
+"This option gives you the ability to specify the width of the editor (like "
+"100% or 400px)."
 msgstr "Editorearen zabalera zehaztu (100% edo 400px adibidez)"
 
 #: TinyMCE/interfaces/utility.py:101
-msgid "This option gives you the ability to specify the width of the toolbar in pixels."
-msgstr "Aukera honek, tresna-barraren zabalera pixeletan zehazteko aukera ematen du."
+msgid ""
+"This option gives you the ability to specify the width of the toolbar in "
+"pixels."
+msgstr ""
+"Aukera honek, tresna-barraren zabalera pixeletan zehazteko aukera ematen du."
 
 #: TinyMCE/interfaces/utility.py:461
 msgid "Thumbnail size in thumbnails mode"
@@ -721,7 +811,7 @@ msgstr "Irudi-txikiaren tamaina"
 
 #: TinyMCE/skins/tinymce/plugins/plonebrowser/plonebrowser.htm.pt:51
 msgid "Thumbnail view"
-msgstr ""
+msgstr "Irudi-txikien bista"
 
 #. Default: "TinyMCE"
 #: TinyMCE/profiles/upgrade_10_to_11/controlpanel.xml
@@ -794,32 +884,46 @@ msgid "Visual control characters on/off"
 msgstr "Kontrol karaktereak erakutsi ala ez"
 
 #: TinyMCE/interfaces/utility.py:395
-msgid "When enabled the user will be rooted to the current object and can't add links and images from other parts of the site."
-msgstr "Aktibatuta dagoenean, erabiltzailearentzat uneko elementua izango da erroko elementua, eta ondorioz ezingo ditu webgunearen beste leku batzuetako elementuetarako loturak egin edo hango irudiak gehitu."
+msgid ""
+"When enabled the user will be rooted to the current object and can't add "
+"links and images from other parts of the site."
+msgstr ""
+"Aktibatuta dagoenean, erabiltzailearentzat uneko elementua izango da erroko "
+"elementua, eta ondorioz ezingo ditu webgunearen beste leku batzuetako "
+"elementuetarako loturak egin edo hango irudiak gehitu."
 
 #: TinyMCE/adapters/Upload.py:113
 msgid "You do not have permission to upload files in this folder"
-msgstr ""
+msgstr "Ez duzu baimenik fitxategiak karpeta honetara kargatzeko"
 
 #. Default: "A CSS level 3 pattern used to match elements that can serve as anchors. The default value is to match headings."
 #: TinyMCE/interfaces/utility.py:476
 msgid "help_anchor_selector"
 msgstr ""
+"Aingura gisa balio dezaketen elementuak aurkitzeko CSS 3 mailako eredua. "
+"Defektuzkoak goiburuak bilatzen ditu (h1, h2, h3, ...)"
 
 #. Default: "The URL of the \"After the Deadline\" grammar and spell checking server. The default value is the public server, but ideally you should download and install your own and specify its address here."
 #: TinyMCE/interfaces/utility.py:370
 msgid "help_atd_service_url"
-msgstr "\"After the Deadline\" gramatika eta zerbitzariaren helbidea. Defektuzko balioa zerbitzari publikoa da, baina zure zerbitzarian ere instalatu dezakezu eta helbide hori hemen idatzi."
+msgstr ""
+"\"After the Deadline\" gramatika eta zerbitzariaren helbidea. Defektuzko "
+"balioa zerbitzari publikoa da, baina zure zerbitzarian ere instalatu "
+"dezakezu eta helbide hori hemen idatzi."
 
 #. Default: "A list of error types which the \"After the Deadline\" spellchecker should check for. By default, all the available error type will be listed here."
 #: TinyMCE/interfaces/utility.py:357
 msgid "help_atderrortypes_to_show"
-msgstr "\"After the Deadline\" zuzentzaileak detektatu behar dituen erroreak. Defektuz, dauden errore-mota guztiak agertuko dira hemen."
+msgstr ""
+"\"After the Deadline\" zuzentzaileak detektatu behar dituen erroreak. "
+"Defektuz, dauden errore-mota guztiak agertuko dira hemen."
 
 #. Default: "Enter a list of custom plugins which will be loaded in the editor. Format is pluginname or pluginname|location, one per line."
 #: TinyMCE/interfaces/utility.py:420
 msgid "help_tinymce_plugins"
-msgstr "Editorean kargatu behar diren pluginen zerrenda. Formatua 'pluginizena' edo 'pluginizena|kokapena' da. Idatzi bat lerro bakoitzean."
+msgstr ""
+"Editorean kargatu behar diren pluginen zerrenda. Formatua 'pluginizena' edo "
+"'pluginizena|kokapena' da. Idatzi bat lerro bakoitzean."
 
 #: TinyMCE/interfaces/utility.py:337
 msgid "ieSpell (free for personal use)"
@@ -828,7 +932,9 @@ msgstr "isSpell (doakoa erabilpen pertsonalerako)"
 #. Default: "A list of strings which the \"After the Deadline\"spellchecker should ignore. Note: This option is only applicable when the appropriate spellchecker has been chosen above."
 #: TinyMCE/interfaces/utility.py:346
 msgid "label_atd_ignore_strings"
-msgstr "\"After the Deadline\" zuzentzaileak aztertuko ez dituen testuak. Oharra: aukera hau zuzentzaile hau aktibatuta badago bakarrik erabili daiteke."
+msgstr ""
+"\"After the Deadline\" zuzentzaileak aztertuko ez dituen testuak. Oharra: "
+"aukera hau zuzentzaile hau aktibatuta badago bakarrik erabili daiteke."
 
 #. Default: "Editor Plugins"
 #: TinyMCE/interfaces/utility.py:419
@@ -848,4 +954,3 @@ msgstr "Editore gabe editatu"
 #: TinyMCE/skins/tinymce/tinymce_wysiwyg_support.pt:40
 msgid "suppress_visual_editor_with"
 msgstr "Editorearekin editatu"
-
