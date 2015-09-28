@@ -2,7 +2,7 @@
 HISTORY
 =======
 
-1.3.14 (unreleased)
+1.3.14 (2015-09-27)
 -------------------
 
 - Moved utility globals outside the ``getValidElements`` method.
