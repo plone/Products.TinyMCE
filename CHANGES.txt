@@ -5,6 +5,9 @@ HISTORY
 1.1.13 (unreleased)
 -------------------
 
+- fixed normalized_type in search results to get class "contenttype-undefined" no more.
+  [iham]
+
 - Current image and file in folderlisting was not always selected on recent
   versions of some browsers (at least: Chrome on Windows and Firefox 33)
   [keul]
