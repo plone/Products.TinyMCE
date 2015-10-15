@@ -17,6 +17,9 @@ HISTORY
   For example "style tag within body tag"
   [agitator]
 
+- Declares missing dependency on plone.fieldsets
+  [davilima6]
+
 
 1.4.3 (2015-06-05)
 ------------------
