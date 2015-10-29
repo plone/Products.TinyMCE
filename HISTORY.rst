@@ -20,6 +20,9 @@ HISTORY
 - Declares missing dependency on plone.fieldsets
   [davilima6]
 
+- Let upload adapter check permissions
+  [tschorr]
+
 
 1.4.3 (2015-06-05)
 ------------------
