@@ -5,7 +5,12 @@ HISTORY
 1.3.15 (unreleased)
 -------------------
 
-- Nothing changed yet.
+Fixes:
+
+- Fixed dexterity upload file from plonebrowser using tinymce-upload
+  view when uploading to a dexterity plone.app.contenttypes. default
+  file or image.
+  [sneridagh]
 
 
 1.3.14 (2015-09-27)
@@ -13,7 +18,7 @@ HISTORY
 
 - Moved utility globals outside the ``getValidElements`` method.
   This will make TinyMCE lot easyer to be customized also through simple patches
-  [keul] 
+  [keul]
 
 
 1.3.13 (2015-07-30)
