@@ -17,6 +17,7 @@ setup(name='Products.TinyMCE',
     long_description=long_description,
     classifiers=[
         "Framework :: Plone",
+        "Framework :: Plone :: 4.3",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.6",
         "Programming Language :: Python :: 2.7",
