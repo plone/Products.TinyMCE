@@ -11,6 +11,9 @@ New:
 
 Fixes:
 
+- Let upload adapter check permissions
+  [tschorr]
+
 - *add item here*
 
 

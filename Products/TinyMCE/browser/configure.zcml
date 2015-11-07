@@ -58,6 +58,7 @@
         <browser:page attribute="jsonImageSearch" name="tinymce-jsonimagesearch" />
         <browser:page attribute="jsonDetails" name="tinymce-jsondetails" />
         <browser:page attribute="jsonConfiguration" name="tinymce-jsonconfiguration" />
+        <browser:page attribute="upload" name="tinymce-upload" />
     </browser:pages>
 
 
@@ -67,13 +68,6 @@
         permission="cmf.ModifyPortalContent">
         <browser:page attribute="save" name="tinymce-save" />
         <browser:page attribute="setDescription" name="tinymce-setDescription" />
-    </browser:pages>
-
-    <browser:pages
-        for="*"
-        class=".browser.TinyMCEBrowserView"
-        permission="cmf.AddPortalContent">
-        <browser:page attribute="upload" name="tinymce-upload" />
     </browser:pages>
 
     <browser:resourceDirectory
