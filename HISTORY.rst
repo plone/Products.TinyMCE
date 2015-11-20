@@ -14,6 +14,10 @@ Fixes:
 - Let upload adapter check permissions
   [tschorr]
 
+- fix `path` expression in `wysiwyg_support`;
+  `plone.app.z3cform` support for `collective.ckeditor` where 
+  `ckeditor_wysiwyg_support` is a view rather than a skin
+
 - *add item here*
 
 
