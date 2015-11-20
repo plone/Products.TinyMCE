@@ -2,12 +2,8 @@
 HISTORY
 =======
 
-1.3.16 (unreleased)
+1.3.16 (2015-11-20)
 -------------------
-
-New:
-
-- *add item here*
 
 Fixes:
 
@@ -17,8 +13,6 @@ Fixes:
 - fix `path` expression in `wysiwyg_support`;
   `plone.app.z3cform` support for `collective.ckeditor` where 
   `ckeditor_wysiwyg_support` is a view rather than a skin
-
-- *add item here*
 
 
 1.3.15 (2015-10-30)
