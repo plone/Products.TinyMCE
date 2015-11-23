@@ -59,12 +59,18 @@ class WidgetSettingTestCase(FunctionalTestCase):
         to the generated config JSON.
         """
         dummy = self.mockAtContent()
-        view = getMultiAdapter((dummy, self.portal.REQUEST), name="tinymce-jsonconfiguration")
+        view = getMultiAdapter(
+            (dummy, self.portal.REQUEST.clone()),
+            name="tinymce-jsonconfiguration"
+        )
         view = view.__of__(dummy)
 
         # Settings output as JSON
         output = view(field=dummy.getField('testfield'))
-
+        self.assertEqual(
+            view.request.response.getHeader('content-type'),
+            'application/json;charset=utf-8',
+        )
         data = json.loads(output)
 
         # No other buttons should be available
