@@ -5,8 +5,9 @@ HISTORY
 1.3.17 (unreleased)
 -------------------
 
-- Nothing changed yet.
-
+- Fixed an issue where TinyMCE didn't display any text on Firefox because of
+   a Range.prototype error
+   [ichim-david]
 
 1.3.16 (2015-11-20)
 -------------------
