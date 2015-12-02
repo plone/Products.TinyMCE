@@ -6,6 +6,10 @@ HISTORY
 1.4.4 (unreleased)
 ------------------
 
+- Change default search method and results order used when searching for content on internal links.
+  Now we search by ``Title`` (as it is faster than ``SearchableText``) and return results sorted by relevance instead of ``sortable_title``.
+  [hvelarde]
+
 - Update basque translation
   [erral]
 

@@ -32,21 +32,14 @@ class JSONSearch(object):
         query = self.listing_base_query.copy()
         query.update({
             'portal_type': filter_portal_types,
-            'sort_on': 'sortable_title',
             'path': '/'.join(self.context.getPhysicalPath()),
-            'SearchableText': searchtext,
+            'Title': searchtext,
         })
         if searchtext:
             plone_layout = self.context.restrictedTraverse('@@plone_layout',
                                                            None)
-            if plone_layout is None:
-                # Plone 3
-                plone_view = self.context.restrictedTraverse('@@plone')
-                getIcon = lambda brain: plone_view.getIcon(brain).html_tag()
-            else:
-                # Plone >= 4
-                getIcon = lambda brain: plone_layout.getIcon(brain)()
 
+            getIcon = lambda brain: plone_layout.getIcon(brain)()
             brains = self.context.portal_catalog.searchResults(**query)
 
             catalog_results = [

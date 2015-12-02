@@ -157,7 +157,7 @@ class AdaptersTestCase(FunctionalTestCase):
         self.assertRegexpMatches(results, '"id": "events", "icon": null}')
 
     def test_json_search_icon(self):
-        self.portal.invokeFactory('File', id='somefile.bin')
+        self.portal.invokeFactory('File', id='somefile.bin', title='Somefile')
         linkable_portal_types = self.utility.linkable.split('\n')
         linkable_portal_types.extend(self.utility.containsobjects.split('\n'))
 
@@ -168,7 +168,7 @@ class AdaptersTestCase(FunctionalTestCase):
             r'"id": "somefile.bin", "icon": "<img width=\\"16\\" height=\\"16\\" src=\\"http://nohost/plone/application.png\\" alt=\\"File.*?\\" />"')
 
     def test_json_search_wildcard_whitespace(self):
-        self.portal.invokeFactory('File', id='somefile bin')
+        self.portal.invokeFactory('File', id='somefile bin', title='Somefile bin')
         linkable_portal_types = self.utility.linkable.split('\n')
         linkable_portal_types.extend(self.utility.containsobjects.split('\n'))
 
