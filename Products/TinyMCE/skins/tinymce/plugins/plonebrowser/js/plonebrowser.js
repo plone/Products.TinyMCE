@@ -1214,6 +1214,10 @@ BrowserDialog.prototype.populateAnchorList = function () {
             html += '<div class="' + divclass + '"><input type="radio" class="noborder" name="anchorlink" id="#' + name + '" value="#' + name + '"/> <label for="#' + name + '">' + name + '</label></div>';
             divclass = divclass === "even" ? "odd" : "even";
         }
+        if ((name = nodes[i].id) !== "" && !nodes[i].href) {
+            html += '<div class="' + divclass + '"><input type="radio" class="noborder" name="anchorlink" id="#' + name + '" value="#' + name + '"/> <label for="#' + name + '">' + name + '</label></div>';
+            divclass = divclass === "even" ? "odd" : "even";
+        }
     }
 
     nodes = this.editor.dom.select(this.editor.settings.anchor_selector);
