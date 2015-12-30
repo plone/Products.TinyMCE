@@ -5,7 +5,11 @@ HISTORY
 1.3.17 (unreleased)
 -------------------
 
-- Nothing changed yet.
+Fixes:
+
+- Fixed bug where the plonebrowser dialog wouldn't properly populate the
+  anchors if the HTML5 schema was used.
+  [msom]
 
 
 1.3.16 (2015-11-20)
