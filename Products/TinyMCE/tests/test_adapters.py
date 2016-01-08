@@ -28,7 +28,8 @@ class AdaptersTestCase(FunctionalTestCase):
         super(AdaptersTestCase, self).setUp()
 
         self.utility = getToolByName(self.portal, 'portal_tinymce')
-        self.document = self.portal.invokeFactory('Document', id='document')
+        self.document = self.portal.invokeFactory(
+            'Document', id='document', title='My Document')
         folder = self.portal.invokeFactory('Folder', id='folder')
         self.folder_object = self.portal[folder]
 
@@ -39,7 +40,12 @@ class AdaptersTestCase(FunctionalTestCase):
         # The basic details should return the following.
         obj = IJSONDetails(self.portal[self.document])
         details = json.loads(obj.getDetails())
-        should = {"url": "http://nohost/plone/document", "thumb": "", "description": "", "anchors": [], "title": "document"}
+        should = {
+            "url": "http://nohost/plone/document",
+            "thumb": "",
+            "description": "",
+            "anchors": [],
+            "title": "My Document"}
         for key, val in should.iteritems():
             self.assertEqual(details[key], val)
 
@@ -49,7 +55,12 @@ class AdaptersTestCase(FunctionalTestCase):
 
         # The details will now contain a bit more info.
         details = json.loads(obj.getDetails())
-        should = {"url": "http://nohost/plone/document", "thumb": "", "description": "Test", "anchors": ["anchor"], "title": "document"}
+        should = {
+            "url": "http://nohost/plone/document",
+            "thumb": "",
+            "description": "Test",
+            "anchors": ["anchor"],
+            "title": "My Document"}
         for key, val in should.iteritems():
             self.assertEqual(details[key], val)
 
@@ -151,25 +162,25 @@ class AdaptersTestCase(FunctionalTestCase):
         self.assertRegexpMatches(results, '"id": "events", "icon": null}')
 
     def test_json_search_icon(self):
-        self.portal.invokeFactory('File', id='somefile.bin')
+        self.portal.invokeFactory('File', id='somefile.bin', title='Some File')
         linkable_portal_types = self.utility.linkable.split('\n')
         linkable_portal_types.extend(self.utility.containsobjects.split('\n'))
 
         obj = IJSONSearch(self.portal)
         results = obj.getSearchResults(filter_portal_types=linkable_portal_types,
-                                         searchtext='somefile')
+                                         searchtext='some file')
         self.assertRegexpMatches(results,
             r'"id": "somefile.bin", "icon": "<img width=\\"16\\" height=\\"16\\" src=\\"http://nohost/plone/application.png\\" alt=\\"File.*?\\" />"')
 
     def test_json_search_wildcard_whitespace(self):
-        self.portal.invokeFactory('File', id='somefile bin')
+        self.portal.invokeFactory('File', id='somefile bin', title='Some File')
         linkable_portal_types = self.utility.linkable.split('\n')
         linkable_portal_types.extend(self.utility.containsobjects.split('\n'))
 
         obj = IJSONSearch(self.portal)
         results = obj.getSearchResults(
             filter_portal_types=linkable_portal_types,
-            searchtext='somefile bi'
+            searchtext='some fi'
         )
         self.assertRegexpMatches(results,
             r'"id": "somefile bin", "icon": "<img width=\\"16\\" height=\\"16\\" src=\\"http://nohost/plone/application.png\\" alt=\\"File.*?\\" />"')

@@ -9,8 +9,10 @@ class BrowserTestCase(FunctionalTestCase):
 
     def setUp(self):
         super(BrowserTestCase, self).setUp()
-        self.image = self.portal.invokeFactory('Image', id='image')
-        self.document = self.portal.invokeFactory('Document', id='document')
+        self.image = self.portal.invokeFactory(
+            'Image', id='image', title='My Image')
+        self.document = self.portal.invokeFactory(
+            'Document', id='document', title='My Document')
 
     def test_url(self):
         # We get the url by specifying the uid of the document.
