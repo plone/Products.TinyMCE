@@ -7,6 +7,10 @@ HISTORY
 
 Fixes:
 
+- Change default search method and results order used when searching for content on internal links.
+  Now we search by ``Title`` (as it is faster than ``SearchableText``) and return results sorted by relevance instead of ``sortable_title``.
+  [hvelarde]
+
 - Fixed bug where the plonebrowser dialog wouldn't properly populate the
   anchors if the HTML5 schema was used.
   [msom]
@@ -21,7 +25,7 @@ Fixes:
   [tschorr]
 
 - fix `path` expression in `wysiwyg_support`;
-  `plone.app.z3cform` support for `collective.ckeditor` where 
+  `plone.app.z3cform` support for `collective.ckeditor` where
   `ckeditor_wysiwyg_support` is a view rather than a skin
 
 
