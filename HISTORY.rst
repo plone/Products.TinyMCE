@@ -2,6 +2,18 @@
 HISTORY
 =======
 
+1.3.18 (unreleased)
+-------------------
+
+New:
+
+- *add item here*
+
+Fixes:
+
+- *add item here*
+
+
 1.3.17 (2016-01-08)
 -------------------
 
