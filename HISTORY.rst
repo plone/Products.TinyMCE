@@ -11,7 +11,8 @@ New:
 
 Fixes:
 
-- *add item here*
+- Show the anchor dropdown for internal links again if it was empty once.
+  [msom]
 
 
 1.3.17 (2016-01-08)
