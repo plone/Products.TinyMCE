@@ -11,7 +11,9 @@ New:
 
 Fixes:
 
-- *add item here*
+- Fixed bug where the plonebrowser dialog wouldn't properly populate the
+  anchors if the HTML5 schema was used.
+  [msom]
 
 
 1.3.17 (2016-01-08)
