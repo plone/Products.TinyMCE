@@ -18,6 +18,7 @@ except ImportError:
 
     SEARCHPATTERN = "*/a"
 
+
 class ATAnchorView(BrowserView):
     implements(IAnchorView)
 
@@ -38,5 +39,11 @@ class ATAnchorView(BrowserView):
             raise
         except Exception:
             return []
-        return [anchor.get('name') for anchor in tree.findall(SEARCHPATTERN)
-                if "name" in anchor.keys()]
+
+        anchors = []
+        for anchor in tree.findall(SEARCHPATTERN):
+            if "name" in anchor.keys():
+                anchors.append(anchor.get('name'))
+            if "id" in anchor.keys():
+                anchors.append(anchor.get('id'))
+        return anchors
