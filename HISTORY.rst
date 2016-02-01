@@ -11,6 +11,10 @@ New:
 
 Fixes:
 
+- Fixed bug where the plonebrowser dialog wouldn't properly populate the
+  anchors if the HTML5 schema was used.
+  [msom]
+
 - Show the anchor dropdown for internal links again if it was empty once.
   [msom]
 
