@@ -15,6 +15,9 @@ Fixes:
   anchors if the HTML5 schema was used.
   [msom]
 
+- Show the anchor dropdown for internal links again if it was empty once.
+  [msom]
+
 
 1.3.17 (2016-01-08)
 -------------------

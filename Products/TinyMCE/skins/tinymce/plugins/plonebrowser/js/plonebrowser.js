@@ -800,6 +800,7 @@ BrowserDialog.prototype.setDetails = function (url) {
                     html += '<option value="' + data.anchors[i] + '">' + data.anchors[i] + '</option>';
                 }
                 jq('#pageanchor', document).append(html);
+                jq('#pageanchorcontainer', document).parents('.field').removeClass('hide');
             } else {
                 jq('#pageanchorcontainer', document).parents('.field').addClass('hide');
             }
