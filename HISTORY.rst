@@ -5,10 +5,6 @@ HISTORY
 1.3.18 (unreleased)
 -------------------
 
-New:
-
-- *add item here*
-
 Fixes:
 
 - Fixed bug where the plonebrowser dialog wouldn't properly populate the
