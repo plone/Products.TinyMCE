@@ -2,11 +2,11 @@
 HISTORY
 =======
 
-1.2.18 (unreleased)
+1.2.18 (2016-03-07)
 -------------------
 
 - Valid HTML 5 attribute ``start`` for ``ol`` no more removed
-  (close `#13566`__) 
+  (close `#13566`__)
   [keul]
 - Current image and file in folderlisting was not always selected on recent
   versions of some browsers (at least: Chrome on Windows and Firefox 33)
@@ -17,7 +17,7 @@ __ https://dev.plone.org/ticket/13566
 1.2.17 (2013-08-14)
 -------------------
 
-- Check for a 'enable_tinymce_livesearch'property in order to override the 
+- Check for a 'enable_tinymce_livesearch'property in order to override the
   enable_livesearch of site_properties for instances where you want to have
   livesearch enabled on the portal_search and yet you do not want it enabled
   within TinyMCE and the other way around
@@ -31,7 +31,7 @@ __ https://dev.plone.org/ticket/13566
 -------------------
 
 - Fixed javascript error when using Firefox because of editor_plugin.js found
-  within plonestyle and definitionlist plugins. 
+  within plonestyle and definitionlist plugins.
   This is a backport of a solution done in master branch in changeset 8efc3145
   [ichim-david]
 - Fixed ``plone.namedfile`` dependecy check
@@ -81,13 +81,13 @@ __ https://dev.plone.org/ticket/13566
 1.2.11 (2012-04-18)
 -------------------
 
-- Fix original scale (dexterity-based images need 'my_image/@@images/image' 
+- Fix original scale (dexterity-based images need 'my_image/@@images/image'
   instead of just 'my_image')
   [pbauer]
 
 - Allow upload of dexterity based images. This is aimed at
   plone.app.contentypes but should work with all dexterity bases-images.
-  [pbauer] 
+  [pbauer]
 
 - Fixed AttributeError: ``NoneType`` object has no attribute
   ``physicalPathToURL`` when getRequest cannot get a request.  Use the
@@ -122,7 +122,7 @@ __ https://dev.plone.org/ticket/13566
 
 - Initialize TinyMCE with "media_strict: false" to allow embed tags if
   they are removed from the list of nasty tags.
-  Fixeѕ https://dev.plone.org/ticket/10681
+  Fixes https://dev.plone.org/ticket/10681
   [rochecompaan]
 
 - Updated Spanish translation
