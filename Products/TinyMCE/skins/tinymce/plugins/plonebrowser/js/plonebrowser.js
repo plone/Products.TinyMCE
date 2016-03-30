@@ -795,11 +795,11 @@ BrowserDialog.prototype.setDetails = function (url) {
             }
 
             if (data.anchors.length > 0) {
-                html = "";
+                html = '<option value="">top of page (default)</option>';
                 for (i = 0; i < data.anchors.length; i++) {
                     html += '<option value="' + data.anchors[i] + '">' + data.anchors[i] + '</option>';
                 }
-                jq('#pageanchor', document).append(html);
+                jq('#pageanchor', document).html(html);
                 jq('#pageanchorcontainer', document).parents('.field').removeClass('hide');
             } else {
                 jq('#pageanchorcontainer', document).parents('.field').addClass('hide');
