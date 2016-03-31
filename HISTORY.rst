@@ -5,13 +5,8 @@ HISTORY
 1.3.19 (unreleased)
 -------------------
 
-New:
-
-- *add item here*
-
-Fixes:
-
-- *add item here*
+- Replace anchor items in dropdown for internal links instead of appending.
+  [msom]
 
 
 1.3.18 (2016-02-15)
