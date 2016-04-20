@@ -13,9 +13,9 @@ New features:
 
 - *add item here*
 
-Bug fixes:
+Fixes:
 
-- *add item here*
+- Media button broken (issue #14249).
 
 
 1.3.19 (2016-04-15)
