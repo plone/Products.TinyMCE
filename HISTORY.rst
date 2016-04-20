@@ -2,9 +2,11 @@
 HISTORY
 =======
 
-
 1.4.4 (unreleased)
 ------------------
+
+- Media button broken (issue #14249).
+  [malthe]
 
 - Update basque translation
   [erral]
