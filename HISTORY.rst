@@ -5,14 +5,6 @@ HISTORY
 1.3.20 (unreleased)
 -------------------
 
-Breaking changes:
-
-- *add item here*
-
-New features:
-
-- *add item here*
-
 Fixes:
 
 - Media button broken (issue #14249).
