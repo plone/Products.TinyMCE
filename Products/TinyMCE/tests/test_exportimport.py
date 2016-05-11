@@ -27,7 +27,15 @@ class ImportExportTestCase(FunctionalTestCase):
             <customplugins purge="True">
               <element value="testplugin"/>
             </customplugins>
+            <plugins>
+              <element value="ploneinlinestyles"/>
+              <element value="plonebrowser"/>
+            </plugins>
           </resourcetypes>
+          <contentbrowser>
+            <anchor_selector value="h2,h3"/>
+            <link_shortcuts />
+          </contentbrowser>
         </object>
         """
 
@@ -41,6 +49,11 @@ class ImportExportTestCase(FunctionalTestCase):
 
         tinymce_utility = getUtility(ITinyMCE)
         self.assertIn('testplugin', tinymce_utility.customplugins)
+        self.assertIn('ploneinlinestyles', tinymce_utility.plugins)
+        self.assertIn('plonebrowser', tinymce_utility.plugins)
+        self.assertTrue(isinstance(tinymce_utility.plugins, (list, tuple)))
+        self.assertFalse(tinymce_utility.link_shortcuts)
+        self.assertTrue(isinstance(tinymce_utility.link_shortcuts, (list, tuple)))
 
         # Let's create a dummy export context.
         context = DummyExportContext(self.portal)
