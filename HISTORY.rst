@@ -15,6 +15,10 @@ New features:
 
 Bug fixes:
 
+- Removed ``Large Plone Folder`` from settings.  This type is no
+  longer added in Plone 4.  No migration is done, so existing sites
+  will keep it, which is harmless.  [maurits]
+
 - Synchronised list of attributes in profile and export/import.  Now
   when you export the tinymce settings of a fresh Plone Site and
   import them again in purge mode, for example with a snapshot, you no

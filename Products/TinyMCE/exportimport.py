@@ -102,7 +102,6 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
             'containsobjects': {
                 'type': 'List', 'default':
                 u'Folder\n'
-                u'Large Plone Folder\n'
                 u'Plone Site\n'
             },
             'containsanchors': {
@@ -119,7 +118,6 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
                 u'File\n'
                 u'Folder\n'
                 u'Image\n'
-                u'Large Plone Folder\n'
                 u'News Item\n'
                 u'Document\n'
             },
