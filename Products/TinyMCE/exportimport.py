@@ -106,20 +106,20 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
             },
             'containsanchors': {
                 'type': 'List', 'default':
+                u'ATRelativePathCriterion\n'
+                u'Document\n'
                 u'Event\n'
                 u'News Item\n'
-                u'Document\n'
-                u'ATRelativePathCriterion\n'
             },
             'linkable': {
                 'type': 'List', 'default':
                 u'Collection\n'
+                u'Document\n'
                 u'Event\n'
                 u'File\n'
                 u'Folder\n'
                 u'Image\n'
                 u'News Item\n'
-                u'Document\n'
             },
             'imageobjects': {'type': 'List', 'default': u'Image'},
             'plugins': {'type': 'Selection', 'default': []},
