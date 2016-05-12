@@ -113,7 +113,7 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
             },
             'linkable': {
                 'type': 'List', 'default':
-                u'Topic\n'
+                u'Collection\n'
                 u'Event\n'
                 u'File\n'
                 u'Folder\n'

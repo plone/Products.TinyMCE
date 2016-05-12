@@ -15,6 +15,11 @@ New features:
 
 Bug fixes:
 
+- Changed ``Topic`` to ``Collection`` in linkable items.  Since Plone
+  4.2 the type is called Collection.  No migration is done, because
+  existing sites may still have the old type, or may have decided not
+  to make any old- or new-style collections linkable.  [maurits]
+
 - Removed ``Large Plone Folder`` from settings.  This type is no
   longer added in Plone 4.  No migration is done, so existing sites
   will keep it, which is harmless.  [maurits]
