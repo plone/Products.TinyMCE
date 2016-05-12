@@ -15,9 +15,17 @@ New features:
 
 Bug fixes:
 
+- Synchronised list of attributes in profile and export/import.  Now
+  when you export the tinymce settings of a fresh Plone Site and
+  import them again in purge mode, for example with a snapshot, you no
+  longer get extra items.  For example, the linkable objects would get
+  an extra ``ATDocument`` next to ``Document``, and two fancy table
+  styles would be added.  [maurits]
+
 - Export and import plugins, link_shortcuts, and image_shortcuts.
   Issue https://github.com/plone/Products.TinyMCE/issues/141
   [maurits]
+
 
 1.3.20 (2016-04-25)
 -------------------

@@ -19,16 +19,16 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
             'content_css': {'type': 'Text', 'default': u''},
             'styles': {
                 'type': 'List', 'default':
-                u'Heading|h2| \n'
-                u'Subheading|h3| \n'
-                u'Literal|pre| \n'
-                u'Discreet|p|discreet\n'
-                u'Pull-quote|div|pullquote\n'
+                u'Heading|h2|\n'
+                u'Subheading|h3|\n'
+                u'Literal|pre|\n'
+                u'Discreet|span|discreet\n'
+                u'Pull-quote|blockquote|pullquote\n'
                 u'Call-out|p|callout\n'
                 u'Highlight|span|visualHighlight\n'
                 u'Odd row|tr|odd\n'
                 u'Even row|tr|even\n'
-                u'Heading cell|th| \n'
+                u'Heading cell|th|\n'
                 u'Page break (print only)|div|pageBreak\n'
                 u'Clear floats|div|visualClear\n'
             },
@@ -37,8 +37,6 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
                 u'Subdued grid|plain\n'
                 u'Invisible grid|invisible\n'
                 u'Fancy listing|listing\n'
-                u'Fancy grid listing|grid listing\n'
-                u'Fancy vertical listing|vertical listing\n'
             },
         },
         'toolbar': {
@@ -103,29 +101,29 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
             'allow_captioned_images': {'type': 'Bool', 'default': False},
             'containsobjects': {
                 'type': 'List', 'default':
-                u'ATFolder\n'
-                u'ATBTreeFolder\n'
+                u'Folder\n'
+                u'Large Plone Folder\n'
                 u'Plone Site\n'
             },
             'containsanchors': {
                 'type': 'List', 'default':
-                u'ATEvent\n'
-                u'ATNewsItem\n'
-                u'ATDocument\n'
+                u'Event\n'
+                u'News Item\n'
+                u'Document\n'
                 u'ATRelativePathCriterion\n'
             },
             'linkable': {
                 'type': 'List', 'default':
-                u'ATTopic\n'
-                u'ATEvent\n'
-                u'ATFile\n'
-                u'ATFolder\n'
-                u'ATImage\n'
-                u'ATBTreeFolder\n'
-                u'ATNewsItem\n'
-                u'ATDocument\n'
+                u'Topic\n'
+                u'Event\n'
+                u'File\n'
+                u'Folder\n'
+                u'Image\n'
+                u'Large Plone Folder\n'
+                u'News Item\n'
+                u'Document\n'
             },
-            'imageobjects': {'type': 'List', 'default': u'ATImage'},
+            'imageobjects': {'type': 'List', 'default': u'Image'},
             'plugins': {'type': 'Selection', 'default': []},
             'customplugins': {'type': 'List', 'default': u''},
             'entity_encoding': {'type': 'Text', 'default': u'raw'},
