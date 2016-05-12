@@ -15,8 +15,9 @@ New features:
 
 Bug fixes:
 
-- *add item here*
-
+- Export and import plugins, link_shortcuts, and image_shortcuts.
+  Issue https://github.com/plone/Products.TinyMCE/issues/141
+  [maurits]
 
 1.3.20 (2016-04-25)
 -------------------

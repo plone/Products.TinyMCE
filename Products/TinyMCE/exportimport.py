@@ -84,12 +84,15 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
             'containsanchors': {'type': 'List', 'default': u'ATEvent\nATNewsItem\nATDocument\nATRelativePathCriterion'},
             'linkable': {'type': 'List', 'default': u'ATTopic\nATEvent\nATFile\nATFolder\nATImage\nATBTreeFolder\nATNewsItem\nATDocument'},
             'imageobjects': {'type': 'List', 'default': u'ATImage'},
+            'plugins': {'type': 'Selection', 'default': []},
             'customplugins': {'type': 'List', 'default': u''},
             'entity_encoding': {'type': 'Text', 'default': u'raw'},
             'rooted': {'type': 'Bool', 'default': False},
         },
         'contentbrowser': {
             'anchor_selector': {'type': 'Text', 'default': u'h2,h3'},
+            'link_shortcuts': {'type': 'Selection', 'default': []},
+            'image_shortcuts': {'type': 'Selection', 'default': []},
         }
     }
 
@@ -122,6 +125,15 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
                         fieldnode.setAttribute('value', '')
                     else:
                         for value in fieldvalue.split('\n'):
+                            if value:
+                                child = self._doc.createElement('element')
+                                child.setAttribute('value', value)
+                                fieldnode.appendChild(child)
+                elif category[field]['type'] == 'Selection':
+                    if not fieldvalue:
+                        fieldnode.setAttribute('value', '')
+                    else:
+                        for value in fieldvalue:
                             if value:
                                 child = self._doc.createElement('element')
                                 child.setAttribute('value', value)
@@ -169,6 +181,30 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
                                 string = string.decode("utf-8", "ignore")
 
                             setattr(self.context, fieldnode.nodeName, string)
+                        elif self.attributes[categorynode.nodeName][fieldnode.nodeName]['type'] == 'Selection':
+                            field = getattr(self.context, fieldnode.nodeName)
+                            if field is None or fieldnode.getAttribute("purge").lower() == 'true':
+                                items = []
+                            else:
+                                items = field
+                            for element in fieldnode.childNodes:
+                                if element.nodeName != '#text' and element.nodeName != '#comment':
+                                    remove = element.getAttribute('remove').lower() == 'true'
+                                    value = element.getAttribute('value')
+                                    if remove and value in items:
+                                        items.remove(value)
+                                    if not remove and value not in items:
+                                        items.append(value)
+
+                            for index, key in enumerate(items):
+                                # Don't break on international characters or otherwise
+                                # funky data -
+                                if isinstance(key, str):
+                                    # On Plone 4.1 this should not be reached
+                                    # as string is unicode in any case
+                                    items[index] = key.decode("utf-8", "ignore")
+
+                            setattr(self.context, fieldnode.nodeName, items)
 
         self._logger.info('TinyMCE Settings imported.')
 
