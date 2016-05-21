@@ -5,25 +5,23 @@
   <allow_captioned_images value="False"/>
   <rooted value="False"/>
   <linkable>
-   <element value="Topic"/>
+   <element value="Collection"/>
+   <element value="Document"/>
    <element value="Event"/>
    <element value="File"/>
    <element value="Folder"/>
    <element value="Image"/>
-   <element value="Large Plone Folder"/>
    <element value="News Item"/>
-   <element value="Document"/>
   </linkable>
   <containsobjects>
    <element value="Folder"/>
-   <element value="Large Plone Folder"/>
    <element value="Plone Site"/>
   </containsobjects>
   <containsanchors>
+   <element value="ATRelativePathCriterion"/>
+   <element value="Document"/>
    <element value="Event"/>
    <element value="News Item"/>
-   <element value="Document"/>
-   <element value="ATRelativePathCriterion"/>
   </containsanchors>
   <imageobjects>
    <element value="Image"/>
