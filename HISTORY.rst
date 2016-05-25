@@ -5,14 +5,6 @@ HISTORY
 1.3.21 (unreleased)
 -------------------
 
-Breaking changes:
-
-- *add item here*
-
-New features:
-
-- *add item here*
-
 Bug fixes:
 
 - Changed ``Topic`` to ``Collection`` in linkable items.  Since Plone
