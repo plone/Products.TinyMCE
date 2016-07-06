@@ -11,11 +11,25 @@ function init() {
 	var trElm = dom.getParent(inst.selection.getStart(), "tr");
 	var formObj = document.forms[0];
 	var st = dom.parseStyle(dom.getAttrib(trElm, "style"));
+  var managedStyles = ['text-align', 'vertical-align']
+  var currentStyle = [];
+
+  for (var item in st) {
+    if (st.hasOwnProperty(item)) {
+      if (managedStyles.indexOf(item) < 0) {
+        currentStyle[item] = st[item];
+      }
+      else if (item === 'text-align') {
+        var align = st[item];
+      }
+      else if (item === 'vertical-align') {
+        var valign = st[item];
+      }
+    }
+  }
 
 	// Get table row data
 	var rowtype = trElm.parentNode.nodeName.toLowerCase();
-	var align = dom.getAttrib(trElm, 'align');
-	var valign = dom.getAttrib(trElm, 'valign');
 	var height = trimSize(getStyle(trElm, 'height', 'height'));
 	var className = dom.getAttrib(trElm, 'class');
 	var bgcolor = convertRGBToHex(getStyle(trElm, 'bgcolor', 'backgroundColor'));
@@ -38,7 +52,7 @@ function init() {
 		formObj.height.value = height;
 		formObj.id.value = id;
 		formObj.lang.value = lang;
-		formObj.style.value = dom.serializeStyle(st);
+		formObj.style.value = dom.serializeStyle(currentStyle);
 		selectByValue(formObj, 'align', align);
 		selectByValue(formObj, 'valign', valign);
 		selectByValue(formObj, 'class', className, true, true);
@@ -124,26 +138,26 @@ function updateRow(tr_elm, skip_id, skip_parent) {
 	var curRowType = tr_elm.parentNode.nodeName.toLowerCase();
 	var rowtype = getSelectValue(formObj, 'rowtype');
 	var doc = inst.getDoc();
-
+ 
 	// Update row element
 	if (!skip_id)
 		dom.setAttrib(tr_elm, 'id', formObj.id.value);
-
-	dom.setAttrib(tr_elm, 'align', getSelectValue(formObj, 'align'));
-	dom.setAttrib(tr_elm, 'vAlign', getSelectValue(formObj, 'valign'));
+ 
 	dom.setAttrib(tr_elm, 'lang', formObj.lang.value);
 	dom.setAttrib(tr_elm, 'dir', getSelectValue(formObj, 'dir'));
 	dom.setAttrib(tr_elm, 'style', dom.serializeStyle(dom.parseStyle(formObj.style.value)));
 	dom.setAttrib(tr_elm, 'class', getSelectValue(formObj, 'class'));
-
+ 
 	// Clear deprecated attributes
 	dom.setAttrib(tr_elm, 'background', '');
 	dom.setAttrib(tr_elm, 'bgColor', '');
 	dom.setAttrib(tr_elm, 'height', '');
-
+ 
 	// Set styles
 	tr_elm.style.height = getCSSSize(formObj.height.value);
 	tr_elm.style.backgroundColor = formObj.bgcolor.value;
+  tr_elm.style.textAlign = formObj.align.value; 
+  tr_elm.style.verticalAlign = formObj.valign.value; 
 
 	if (formObj.backgroundimage.value != "")
 		tr_elm.style.backgroundImage = "url('" + formObj.backgroundimage.value + "')";
@@ -182,7 +196,6 @@ function updateRow(tr_elm, skip_id, skip_parent) {
 		// set tr_elm to the new node
 		tr_elm = newRow;
 	}
-
 	dom.setAttrib(tr_elm, 'style', dom.serializeStyle(dom.parseStyle(tr_elm.style.cssText)));
 }
 
@@ -251,4 +264,5 @@ function setActionforRowType(formObj, rowtype) {
 		formObj.action.disabled = true;
 	}
 }
+
 tinyMCEPopup.onInit.add(init);
