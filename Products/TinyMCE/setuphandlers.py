@@ -58,6 +58,7 @@ def unregisterUtility(context):
 
     transaction.commit()
 
+
 # BBB deprecated in Plone 4.1
 deprecatedFrom("Please import from plone.outputfilters.setuphandlers instead.",
                'plone.outputfilters.setuphandlers',

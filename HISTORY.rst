@@ -15,7 +15,9 @@ New features:
 
 Bug fixes:
 
-- *add item here*
+- Changed vertical align and text align to style instead of attribute,
+  since align and vertical align are not supported in html5.
+  [lhuiskes, jladage]
 
 
 1.3.21 (2016-05-25)

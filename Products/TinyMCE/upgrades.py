@@ -93,3 +93,13 @@ def upgrade_to_profile_7(setuptool):
     tinymce.styles = tinymce.styles.replace(u'Definition term|dt| ', u'Definition term|dt|')
     tinymce.styles = tinymce.styles.replace(u'Definition description|dd| ', u'Definition description|dd|')
     tinymce.styles = tinymce.styles.replace(u'Heading cell|th| ', u'Heading cell|th|')
+
+
+def upgrade_to_profile_8(context):
+    """Update the safe_html transform, add vertical-align to style_whitelist."""
+    transform = getToolByName(context, 'portal_transforms').safe_html
+    transform._tr_init(1)  # load new config items
+    tdata = transform._config['style_whitelist']
+    tdata.append('vertical-align')
+    transform._p_changed = True
+    transform.reload()
