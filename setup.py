@@ -4,16 +4,18 @@ from setuptools import setup, find_packages
 
 long_description = open("README.rst").read()
 long_description += '\n\n'
-long_description += open("HISTORY.rst").read()
+long_description += open("CHANGES.rst").read()
 
 if sys.version_info[0] == 2 and sys.version_info[1] < 6:
     requires = ['simplejson']
 else:
     requires = []
 
-setup(name='Products.TinyMCE',
+setup(
+    name='Products.TinyMCE',
     version='1.3.22.dev0',
-    description="Adds support for TinyMCE, a platform independent web based Javascript HTML WYSIWYG editor, to Plone.",
+    description=("Adds support for TinyMCE, a platform independent "
+                 "web based Javascript HTML WYSIWYG editor, to Plone."),
     long_description=long_description,
     classifiers=[
         "Framework :: Plone",
