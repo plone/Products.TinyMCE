@@ -2,6 +2,22 @@
 HISTORY
 =======
 
+1.3.23 (unreleased)
+-------------------
+
+Breaking changes:
+
+- *add item here*
+
+New features:
+
+- *add item here*
+
+Bug fixes:
+
+- *add item here*
+
+
 1.3.22 (2016-07-08)
 -------------------
 
