@@ -5,14 +5,6 @@ HISTORY
 1.3.22 (unreleased)
 -------------------
 
-Breaking changes:
-
-- *add item here*
-
-New features:
-
-- *add item here*
-
 Bug fixes:
 
 - Changed vertical align and text align to style instead of attribute,
