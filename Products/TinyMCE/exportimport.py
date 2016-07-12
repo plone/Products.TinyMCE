@@ -38,6 +38,11 @@ class TinyMCESettingsXMLAdapter(XMLAdapterBase):
                 u'Invisible grid|invisible\n'
                 u'Fancy listing|listing\n'
             },
+            'tablerowstyles': {
+                'type': 'List', 'default':
+                u'Even|even\n'
+                u'Odd|odd\n'
+            },
         },
         'toolbar': {
             'toolbar_width': {'type': 'Text', 'default': u'440'},

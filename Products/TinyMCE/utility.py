@@ -94,6 +94,7 @@ class TinyMCE(SimpleItem):
     styles = FieldProperty(ITinyMCELayout['styles'])
     formats = FieldProperty(ITinyMCELayout['formats'])
     tablestyles = FieldProperty(ITinyMCELayout['tablestyles'])
+    tablerowstyles = FieldProperty(ITinyMCELayout['tablerowstyles'])
 
     toolbar_width = FieldProperty(ITinyMCEToolbar['toolbar_width'])
 
@@ -760,6 +761,7 @@ class TinyMCE(SimpleItem):
         # Add styles to results
         results['styles'] = []
         table_styles = []
+        table_row_styles = []
         if not redefine_parastyles:
             if isinstance(self.tablestyles, StringTypes):
                 for tablestyle in self.tablestyles.split('\n'):
@@ -777,6 +779,22 @@ class TinyMCE(SimpleItem):
                         tablestyletitle = translate(_(tablestylefields[0]), context=request)
                     results['styles'].append(tablestyletitle + '|table|' + tablestyleid)
                     table_styles.append(tablestyletitle + '=' + tablestyleid)
+            if isinstance(self.tablerowstyles, StringTypes):
+                for tablerowstyle in self.tablerowstyles.split('\n'):
+                    if not tablerowstyle:
+                        # empty line
+                        continue
+                    tablerowstylefields = tablerowstyle.split('|')
+                    tablerowstyletitle = tablerowstylefields[0]
+                    tablerowstyleid = tablerowstylefields[1]
+                    if tablerowstyleid == 'plain':
+                        # Do not duplicate the default style hardcoded in the
+                        # table.htm.pt
+                        continue
+                    if request is not None:
+                        tablerowstyletitle = translate(_(tablerowstylefields[0]), context=request)
+                    results['styles'].append(tablerowstyletitle + '|tr|' + tablerowstyleid)
+                    table_row_styles.append(tablerowstyletitle + '=' + tablerowstyleid)
             if isinstance(self.styles, StringTypes):
                 styles = []
                 for style in self.styles.split('\n'):
@@ -791,6 +809,7 @@ class TinyMCE(SimpleItem):
                     styles.append(merge)
                 results['styles'].extend(styles)
         results['table_styles'] = ';'.join(table_styles)  # tinymce config
+        results['table_row_styles'] = ';'.join(table_row_styles)
 
         if parastyles is not None:
             results['styles'].extend(parastyles)

@@ -11,7 +11,10 @@ Breaking changes:
 
 New features:
 
-- *add item here*
+- Added ``tablerowstyles`` setting in control panel.  These styles are
+  available when you are setting the table row properties.  Until now,
+  all styles were shown here, most of which are not useful for table
+  rows, and they were shown in an ugly and wrong way.  [maurits]
 
 Bug fixes:
 
