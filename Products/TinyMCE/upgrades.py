@@ -103,3 +103,13 @@ def upgrade_to_profile_8(context):
     tdata.append('vertical-align')
     transform._p_changed = True
     transform.reload()
+
+
+def upgrade_to_profile_9(context):
+    tinymce = getToolByName(context, 'portal_tinymce')
+    if tinymce.tablerowstyles:
+        return
+    tinymce.tablerowstyles = (
+        u'Even|even\n'
+        u'Odd|odd\n'
+    )
