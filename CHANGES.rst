@@ -5,20 +5,12 @@ HISTORY
 1.3.23 (unreleased)
 -------------------
 
-Breaking changes:
-
-- *add item here*
-
 New features:
 
 - Added ``tablerowstyles`` setting in control panel.  These styles are
   available when you are setting the table row properties.  Until now,
   all styles were shown here, most of which are not useful for table
   rows, and they were shown in an ugly and wrong way.  [maurits]
-
-Bug fixes:
-
-- *add item here*
 
 
 1.3.22 (2016-07-08)
