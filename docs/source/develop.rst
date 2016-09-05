@@ -43,7 +43,7 @@ Cool, you are now ready to build your development environment::
     $ bin/buildout
 
 What follows is going into src/tinymce, running a script to build TinyMCE
-and copy them in `skisn` directory where Plone can use them. To do so run::
+and copy them in `skin` directory where Plone can use them. To do so run::
 
     $ ./upgrade_tinymce.sh
 
@@ -145,7 +145,7 @@ plone.tinymce.pot file and re-sync all language files::
 
 .. note ::
 
-        Exclude list is based on HTML files which Zope TAL interpreter cannot can properly:
+        Exclude list is based on HTML files which Zope TAL interpreter cannot scan properly:
         it gives NestingErrors becase it tries to scan HTML tags inside Javascript strings.
         You may need update this list based on TinyMCE release.
 
