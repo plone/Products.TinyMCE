@@ -687,9 +687,9 @@ BrowserDialog.prototype.checkSearch = function (e) {
     }
 
     // Activate search when we have enough input and either livesearch is
-    // enabled or the user explicitly pressed Enter (which === 13), or the user 
-    // clicks (which === 1) on the search icon 
-    if (len >= 3 && (this.tinyMCEPopup.editor.settings.livesearch === true 
+    // enabled or the user explicitly pressed Enter (which === 13), or the user
+    // clicks (which === 1) on the search icon
+    if (len >= 3 && (this.tinyMCEPopup.editor.settings.livesearch === true
                     || e.which === 13 || e.which === 1)) {
         this.is_search_activated = true;
         this.getFolderListing(this.tinyMCEPopup.editor.settings.navigation_root_url, this.method_search);
@@ -988,7 +988,11 @@ BrowserDialog.prototype.getFolderListing = function (context_url, method) {
                 if (i === len - 1) {
                     html.push('<span>' + item.title + '</span>');
                 } else {
-                    html.push('<a href="' + item.url + '">' + item.title + '</a>');
+                    if (item.unaccessible) {
+                      html.push('<em>' + item.title + '</em>');
+                    } else {
+                      html.push('<a href="' + item.url + '">' + item.title + '</a>');
+                    }
                 }
             });
             jq('#internalpath', document).html(html.join(''));

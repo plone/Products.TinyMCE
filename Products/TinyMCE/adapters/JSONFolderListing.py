@@ -4,6 +4,7 @@ try:
 except ImportError:
     import json
 
+from zope.security import checkPermission
 from zope.interface import implements
 from zope.component import getUtility
 from zope.i18n import translate
@@ -11,9 +12,11 @@ from zope.i18nmessageid import MessageFactory
 from plone.i18n.normalizer.interfaces import IIDNormalizer
 from plone.app.layout.navigation.root import getNavigationRootObject
 from plone.app.layout.navigation.interfaces import INavigationRoot
+from AccessControl import getSecurityManager
 from Products.CMFCore.interfaces._content import IFolderish
 from Products.CMFPlone.interfaces.siteroot import IPloneSiteRoot
 from Products.CMFCore.utils import getToolByName
+from Products.CMFCore import permissions
 from Acquisition import aq_inner
 from Acquisition import aq_parent
 
@@ -39,10 +42,11 @@ class JSONFolderListing(object):
         portal_state = self.context.restrictedTraverse('@@plone_portal_state')
         root = getNavigationRootObject(self.context, portal_state.portal())
         root_url = root.absolute_url()
+        sm = getSecurityManager()
 
         if path is not None:
             path = path.replace(root_url, '', 1).strip('/')
-            root = aq_inner(root.restrictedTraverse(path))
+            root = aq_inner(root.unrestrictedTraverse(path))
 
         relative = aq_inner(self.context).getPhysicalPath()[len(root.getPhysicalPath()):]
         if path is None:
@@ -59,15 +63,21 @@ class JSONFolderListing(object):
 
         for i in range(len(relative)):
             now = relative[:i + 1]
-            obj = aq_inner(root.restrictedTraverse(now))
+            obj = aq_inner(root.unrestrictedTraverse(now))
 
             if IFolderish.providedBy(obj):
                 if not now[-1] == 'talkback':
-                    result.append({
-                        'title': obj.title_or_id(),
-                        'url': root_url + '/' + '/'.join(now),
-                        'icon': '<img src="%s" width="16" height="16" />' % self.folder_icon,
-                    })
+                    if not sm.checkPermission(permissions.View, obj):
+                        result.append({
+                            'title': '...',
+                            'unaccessible': True
+                        })
+                    else:
+                        result.append({
+                            'title': obj.title_or_id(),
+                            'url': root_url + '/' + '/'.join(now),
+                            'icon': '<img src="%s" width="16" height="16" />' % self.folder_icon,
+                        })
         return result
 
     def getListing(self, filter_portal_types, rooted, document_base_url, upload_type=None, image_types=None):
