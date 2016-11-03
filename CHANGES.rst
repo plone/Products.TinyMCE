@@ -15,8 +15,9 @@ New features:
 
 Bug fixes:
 
-- *add item here*
-
+- Breadcrumbs on browser plugin will not longer be emtpy when one of the parents
+  is not accessible. See `#150`_.
+  [keul]
 
 1.3.23 (2016-08-11)
 -------------------
@@ -1828,3 +1829,4 @@ __ https://dev.plone.org/ticket/13566
   [turgmr2]
 
 .. _`#99`: https://github.com/collective/sc.social.like/pull/99
+.. _`#150`: https://github.com/plone/Products.TinyMCE/issues/150
