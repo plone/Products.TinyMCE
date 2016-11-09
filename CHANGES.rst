@@ -5,14 +5,6 @@ HISTORY
 1.3.24 (unreleased)
 -------------------
 
-Breaking changes:
-
-- *add item here*
-
-New features:
-
-- *add item here*
-
 Bug fixes:
 
 - Breadcrumbs on browser plugin will not longer be emtpy when one of the parents
