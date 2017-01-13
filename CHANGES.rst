@@ -5,17 +5,11 @@ HISTORY
 1.3.25 (unreleased)
 -------------------
 
-Breaking changes:
-
-- *add item here*
-
-New features:
-
-- *add item here*
-
 Bug fixes:
 
-- *add item here*
+- Allow HTML 5.1 allowfullscreen attribute for iframe. This is needed for
+  some embed videos to allow full screen functionality.
+  [vincentfretin]
 
 
 1.3.24 (2016-11-09)
