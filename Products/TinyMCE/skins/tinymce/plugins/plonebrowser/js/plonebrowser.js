@@ -882,7 +882,7 @@ BrowserDialog.prototype.getFolderListing = function (context_url, method) {
                                 ]);
                             } else {
                                 jq.merge(item_html, [
-                                    '<div class="item list ' + (i % 2 === 0 ? 'even' : 'odd') + '" title="' + item.description + '">',
+                                    '<div class="item list ' + (i % 2 === 0 ? 'even' : 'odd') + '" title="' + item.description + ((item.description) ? '&#13;&#13;' : '') + item.path + '">',
                                         '<input href="' + item.url + '" ',
                                             'type="radio" class="noborder" style="margin: 0; width: 16px" name="internallink" value="',
                                             'resolveuid/' + item.uid ,

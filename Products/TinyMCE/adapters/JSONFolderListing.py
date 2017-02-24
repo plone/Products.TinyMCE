@@ -106,9 +106,9 @@ class JSONFolderListing(object):
             results['path'] = self.getBreadcrumbs()
 
         plone_layout = self.context.restrictedTraverse('@@plone_layout', None)
+        plone_view = self.context.restrictedTraverse('@@plone')
         if plone_layout is None:
             # Plone 3
-            plone_view = self.context.restrictedTraverse('@@plone')
             getIcon = lambda brain: plone_view.getIcon(brain).html_tag()
         else:
             # Plone >= 4
@@ -120,6 +120,7 @@ class JSONFolderListing(object):
         query.update({'portal_type': filter_portal_types,
                       'sort_on': 'getObjPositionInParent',
                       'path': {'query': path, 'depth': 1}})
+
         for brain in portal_catalog(**query):
 
             description = ''
@@ -128,6 +129,7 @@ class JSONFolderListing(object):
                     description = unicode(brain.Description, 'utf-8', 'ignore')
                 elif type(brain.Description) == unicode:
                     description = brain.Description
+                description = plone_view.cropText(description, 60)
 
             catalog_results.append({
                 'id': brain.getId,
@@ -140,6 +142,7 @@ class JSONFolderListing(object):
                 'icon': getIcon(brain),
                 'description': description,
                 'is_folderish': brain.is_folderish,
+                'path': brain.getPath(),
                 })
 
         # add catalog_ressults

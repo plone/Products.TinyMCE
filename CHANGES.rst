@@ -11,7 +11,12 @@ Breaking changes:
 
 New features:
 
-- *add item here*
+- Crop description text in link dialog to 60 chars
+  (less json data to transmit for folders containing a lot of articles)
+  [fRiSi]
+
+- Show path in alt-text of articles too (to distinguish Items having the
+  same title) [fRiSi]
 
 Bug fixes:
 
