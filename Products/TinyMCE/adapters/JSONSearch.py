@@ -51,6 +51,7 @@ class JSONSearch(object):
                     'icon': getIcon(brain),
                     'description': brain.Description,
                     'is_folderish': brain.is_folderish,
+                    'path': brain.getPath(),
                     } for brain in brains if brain]
 
         # add catalog_results
