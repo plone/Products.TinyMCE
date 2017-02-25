@@ -875,7 +875,7 @@ BrowserDialog.prototype.getFolderListing = function (context_url, method) {
                                 }
                                 jq.merge(folder_html, [
                                         item.icon,
-                                        '<a href="' + item.url + '" class="folderlink contenttype-' + item.normalized_type + ' state-' + item.review_state + '">',
+                                        '<a href="' + item.url + '" class="folderlink contenttype-' + item.normalized_type + ' state-' + item.review_state + '" title="' + item.description + ((item.description) ? '&#13;&#13;' : '') + item.path + '">',
                                             item.title,
                                         '</a>',
                                     '</div>'
