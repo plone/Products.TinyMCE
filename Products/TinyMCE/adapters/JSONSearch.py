@@ -1,11 +1,11 @@
+from Products.CMFPlone.utils import getToolByName
+from Products.TinyMCE.adapters.interfaces.JSONSearch import IJSONSearch
 from zope.interface import implements
 try:
     import simplejson as json
     json   # pyflakes
 except ImportError:
     import json
-
-from Products.TinyMCE.adapters.interfaces.JSONSearch import IJSONSearch
 
 
 class JSONSearch(object):
@@ -35,10 +35,12 @@ class JSONSearch(object):
             'path': '/'.join(self.context.getPhysicalPath()),
             'Title': searchtext,
         })
+
         if searchtext:
             plone_layout = self.context.restrictedTraverse('@@plone_layout',
                                                            None)
-
+            portal_path = getToolByName(
+                self.context, 'portal_url').getPortalPath()
             getIcon = lambda brain: plone_layout.getIcon(brain)()
             brains = self.context.portal_catalog.searchResults(**query)
 
@@ -51,7 +53,7 @@ class JSONSearch(object):
                     'icon': getIcon(brain),
                     'description': brain.Description,
                     'is_folderish': brain.is_folderish,
-                    'path': brain.getPath(),
+                    'path': brain.getPath().replace(portal_path, ''),
                     } for brain in brains if brain]
 
         # add catalog_results

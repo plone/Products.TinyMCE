@@ -120,7 +120,7 @@ class JSONFolderListing(object):
         query.update({'portal_type': filter_portal_types,
                       'sort_on': 'getObjPositionInParent',
                       'path': {'query': path, 'depth': 1}})
-
+        portal_path = getToolByName(self.context, 'portal_url').getPortalPath()
         for brain in portal_catalog(**query):
 
             description = ''
@@ -142,7 +142,7 @@ class JSONFolderListing(object):
                 'icon': getIcon(brain),
                 'description': description,
                 'is_folderish': brain.is_folderish,
-                'path': brain.getPath(),
+                'path': brain.getPath().replace(portal_path, ''),
                 })
 
         # add catalog_ressults
