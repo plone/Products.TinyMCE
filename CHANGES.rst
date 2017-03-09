@@ -5,10 +5,6 @@ HISTORY
 1.3.26 (unreleased)
 -------------------
 
-Breaking changes:
-
-- *add item here*
-
 New features:
 
 - Crop description text in link dialog to 60 chars
@@ -17,10 +13,6 @@ New features:
 
 - Show path in alt-text of articles too (to distinguish Items having the
   same title) [fRiSi]
-
-Bug fixes:
-
-- *add item here*
 
 
 1.3.25 (2017-01-17)
