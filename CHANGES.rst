@@ -15,7 +15,7 @@ New features:
 
 Bug fixes:
 
-- *add item here*
+- Add missing import in the DX anchor view module. [mbaechtold]
 
 
 1.3.26 (2017-03-09)
