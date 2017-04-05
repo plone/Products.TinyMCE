@@ -2,6 +2,7 @@
 
 from Products.Five.browser import BrowserView
 from Products.TinyMCE.browser.interfaces.anchors import IAnchorView
+from ZODB.POSException import ConflictError
 from plone.dexterity.utils import iterSchemata
 from plone.rfc822.interfaces import IPrimaryField
 from zope.interface import implements
