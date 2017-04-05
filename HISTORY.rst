@@ -5,6 +5,9 @@ HISTORY
 1.4.4 (unreleased)
 ------------------
 
+- Add missing import in the DX anchor view module.
+  [mbaechtold]
+
 - Media button broken (issue #14249).
   [malthe]
 
