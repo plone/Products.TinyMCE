@@ -37,6 +37,8 @@ INTEGRATION_TESTING = IntegrationTesting(
     bases=(FIXTURE,), name="TinyMCELayer:Integration")
 FUNCTIONAL_TESTING = FunctionalTesting(
     bases=(FIXTURE,), name="TinyMCELayer:Functional")
+SELENIUM_TESTING = FunctionalTesting(
+    bases=(FIXTURE, z2.ZSERVER_FIXTURE), name="TinyMCELayer:Selenium")
 
 
 class BaseTestCase(unittest.TestCase):
@@ -58,3 +60,9 @@ class FunctionalTestCase(BaseTestCase):
     """Base class for functional tests."""
 
     layer = FUNCTIONAL_TESTING
+
+
+class SeleniumTestCase(BaseTestCase):
+    """Base class for functional tests."""
+
+    layer = SELENIUM_TESTING

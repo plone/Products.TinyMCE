@@ -38,6 +38,10 @@ setup(name='Products.TinyMCE',
           'zope.app.component',
       ] + requires,
       extras_require={
-            'test': ['plone.app.testing', 'unittest2'],
+            'test': ['plone.app.testing',
+                     'unittest2',
+                     'robotframework-selenium2library',
+                     'robotsuite',
+                     ],
             },
       )
