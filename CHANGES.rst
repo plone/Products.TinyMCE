@@ -15,7 +15,7 @@ New features:
 
 Bug fixes:
 
-- *add item here*
+- Updated URL of sauna.reload [tobiasherp]
 
 
 1.3.27 (2017-04-08)
