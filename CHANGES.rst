@@ -5,14 +5,6 @@ HISTORY
 1.3.28 (unreleased)
 -------------------
 
-Breaking changes:
-
-- *add item here*
-
-New features:
-
-- *add item here*
-
 Bug fixes:
 
 - Updated URL of sauna.reload [tobiasherp]
