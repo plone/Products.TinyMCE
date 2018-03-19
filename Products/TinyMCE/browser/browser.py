@@ -124,6 +124,10 @@ class TinyMCEBrowserView(BrowserView):
         """Return the configuration in JSON"""
 
         utility = getToolByName(aq_inner(self.context), 'portal_tinymce')
+        self.request.RESPONSE.setHeader(
+            'content-type',
+            'application/json;charset=utf-8'
+        )
         return json.dumps(utility.getConfiguration(context=self.context,
                                                    field=field,
                                                    request=self.request))
