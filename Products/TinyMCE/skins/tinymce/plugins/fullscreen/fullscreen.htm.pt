@@ -3,6 +3,8 @@
 <head>
 	<title></title>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="X-Content-Type-Options" content="nosniff" />
+	<meta http-equiv="X-XSS-Protection" content="1; mode=block" />
 	<script type="text/javascript" src="../../tiny_mce_dev.js?v={tinymce_version}"></script>
 	<script type="text/javascript">
 		function patchCallback(settings, key) {
